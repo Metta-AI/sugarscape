@@ -1,0 +1,139 @@
+"""Run the released model and the unmodified DTL engine; retain every trajectory."""
+
+import argparse
+from concurrent.futures import ProcessPoolExecutor
+import hashlib
+import json
+import os
+from pathlib import Path
+import platform
+import statistics
+import subprocess
+import sys
+
+from pydantic import BaseModel, ConfigDict, Field
+
+from sugarscape_cg.agents import SsAgent
+from sugarscape_cg.model import SugarscapeCg
+
+STUDY = Path(__file__).resolve().parent
+ROOT = STUDY.parent.parent
+PARAMETERS = ((1, 1), (2, 10), (4, 7))
+PUBLISHED_VARIANCES = (13.0, 12.05, 18.34)
+
+
+class Run(BaseModel):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+    engine: str
+    seed: int
+    max_metabolism: int
+    max_vision: int
+    population: list[int] = Field(min_length=101, max_length=101)
+
+
+class SeededReference(SugarscapeCg):
+    """Pass a seed to Mesa's __new__ without changing the released model."""
+
+    def __init__(self, seed, max_metabolism, max_vision):
+        super().__init__(max_metabolism=max_metabolism, max_vision=max_vision)
+        self.verbose = False
+
+
+def run_reference(task):
+    seed, metabolism, vision = task
+    os.chdir(STUDY)
+    model = SeededReference(seed=seed, max_metabolism=metabolism, max_vision=vision)
+    population = [model.schedule.get_breed_count(SsAgent)]
+    for _ in range(100):
+        model.step()
+        population.append(model.schedule.get_breed_count(SsAgent))
+    return Run(engine="author-mesa", seed=seed, max_metabolism=metabolism,
+               max_vision=vision, population=population)
+
+
+def run_dtl(task):
+    seed, metabolism, vision, output = task
+    prefix = output / f"dtl-m{metabolism}-v{vision}-s{seed}"
+    config = {
+        "seed": seed, "startingAgents": 100, "timesteps": 100,
+        "headlessMode": True, "debugMode": ["none"],
+        "keepAlivePostExtinction": True,
+        "logfile": str(prefix.with_suffix(".log.json")),
+        "environmentFile": str(output / "landscape.json"),
+        "environmentWidth": 50, "environmentHeight": 50,
+        "environmentWraparound": False,
+        "agentStartingSugar": [6, 24], "agentSugarMetabolism": [1, metabolism],
+        "agentVision": [1, vision], "agentMovement": [vision, vision],
+        "agentMaxAge": [-1, -1], "environmentSugarRegrowRate": 1,
+    }
+    config_path = prefix.with_suffix(".config.json")
+    config_path.write_text(json.dumps(config, indent=2) + "\n")
+    with prefix.with_suffix(".stdout.txt").open("w") as stdout:
+        subprocess.run([sys.executable, str(ROOT / "sugarscape.py"), "--conf", str(config_path)],
+                       cwd=ROOT, stdout=stdout, stderr=subprocess.STDOUT, check=True)
+    records = json.loads(Path(config["logfile"]).read_text())
+    assert [record["timestep"] for record in records] == list(range(101))
+    return Run(engine="dtl", seed=seed, max_metabolism=metabolism,
+               max_vision=vision, population=[record["population"] for record in records])
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--reference-seeds", type=int, default=220)
+    parser.add_argument("--dtl-seeds", type=int, default=30)
+    parser.add_argument("--workers", type=int, default=4)
+    parser.add_argument("--engine", choices=("both", "author-mesa", "dtl"), default="both")
+    args = parser.parse_args()
+    assert args.reference_seeds >= 30 and args.dtl_seeds >= 30
+    assert args.workers > 0
+    assert os.environ["PYTHONHASHSEED"] == "0"
+    output = args.output.resolve()
+    output.mkdir(parents=True, exist_ok=False)
+    source_paths = sorted((STUDY / "sugarscape_cg").glob("*.py")) + sorted(ROOT.glob("*.py"))
+    source_paths += [Path(__file__), STUDY / "sugarscape_cg/sugar-map.txt", STUDY / "requirements.lock"]
+    provenance = {
+        "command": sys.argv, "python": sys.version, "platform": platform.platform(),
+        "revision": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
+        "working_tree": subprocess.check_output(["git", "status", "--porcelain"], cwd=ROOT, text=True),
+        "sha256": {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in source_paths},
+    }
+    (output / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
+    landscape = [[{"sugar": int(s), "spice": 0} for s in line.split()]
+                 for line in (STUDY / "sugarscape_cg/sugar-map.txt").read_text().splitlines()]
+    (output / "landscape.json").write_text(json.dumps(landscape) + "\n")
+    reference_tasks = [(s, m, v) for m, v in PARAMETERS for s in range(args.reference_seeds)]
+    dtl_tasks = [(s, m, v, output) for m, v in PARAMETERS for s in range(args.dtl_seeds)]
+    if args.engine == "dtl":
+        reference_tasks = []
+    if args.engine == "author-mesa":
+        dtl_tasks = []
+    runs = []
+    with (output / "runs.jsonl").open("w") as log, ProcessPoolExecutor(args.workers) as pool:
+        for runner, tasks in ((run_reference, reference_tasks), (run_dtl, dtl_tasks)):
+            for run in pool.map(runner, tasks):
+                log.write(run.model_dump_json() + "\n")
+                log.flush()
+                runs.append(run)
+                if len(runs) % 30 == 0:
+                    print(f"Completed {len(runs)}/{len(reference_tasks) + len(dtl_tasks)}", flush=True)
+    summaries = []
+    for engine in sorted({run.engine for run in runs}):
+        for (metabolism, vision), published in zip(PARAMETERS, PUBLISHED_VARIANCES):
+            group = [r for r in runs if (r.engine, r.max_metabolism, r.max_vision) == (engine, metabolism, vision)]
+            values = [r.population[30] for r in group]
+            summaries.append({
+                "engine": engine, "max_metabolism": metabolism, "max_vision": vision,
+                "seeds": len(group), "mean_population_30": statistics.mean(values),
+                "sample_variance_30": statistics.variance(values), "published_variance": published,
+                "initial_population_min": min(r.population[0] for r in group),
+                "initial_population_max": max(r.population[0] for r in group),
+                "first_30_runs_stable_after_tick_30": sum(len(set(r.population[30:])) == 1 for r in group[:30]),
+                "all_runs_stable_after_tick_30": sum(len(set(r.population[30:])) == 1 for r in group),
+            })
+    (output / "summary.json").write_text(json.dumps(summaries, indent=2) + "\n")
+    print(json.dumps(summaries, indent=2))
+
+
+if __name__ == "__main__":
+    main()
