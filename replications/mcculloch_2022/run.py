@@ -15,6 +15,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from sugarscape_cg.agents import SsAgent
 from sugarscape_cg.model import SugarscapeCg
+from independent import PaperModel
 
 STUDY = Path(__file__).resolve().parent
 ROOT = STUDY.parent.parent
@@ -51,6 +52,17 @@ def run_reference(task):
                max_vision=vision, population=population)
 
 
+def run_independent(task):
+    seed, metabolism, vision = task
+    model = PaperModel(seed=seed, max_metabolism=metabolism, max_vision=vision)
+    population = [len(model.agents)]
+    for _ in range(100):
+        model.step()
+        population.append(len(model.agents))
+    return Run(engine="independent", seed=seed, max_metabolism=metabolism,
+               max_vision=vision, population=population)
+
+
 def run_dtl(task):
     seed, metabolism, vision, output = task
     prefix = output / f"dtl-m{metabolism}-v{vision}-s{seed}"
@@ -83,7 +95,7 @@ def main():
     parser.add_argument("--reference-seeds", type=int, default=220)
     parser.add_argument("--dtl-seeds", type=int, default=30)
     parser.add_argument("--workers", type=int, default=4)
-    parser.add_argument("--engine", choices=("both", "author-mesa", "dtl"), default="both")
+    parser.add_argument("--engine", choices=("both", "author-mesa", "dtl", "independent"), default="both")
     args = parser.parse_args()
     assert args.reference_seeds >= 30 and args.dtl_seeds >= 30
     assert args.workers > 0
@@ -91,7 +103,7 @@ def main():
     output = args.output.resolve()
     output.mkdir(parents=True, exist_ok=False)
     source_paths = sorted((STUDY / "sugarscape_cg").glob("*.py")) + sorted(ROOT.glob("*.py"))
-    source_paths += [Path(__file__), STUDY / "sugarscape_cg/sugar-map.txt", STUDY / "requirements.lock"]
+    source_paths += [Path(__file__), STUDY / "independent.py", STUDY / "sugarscape_cg/sugar-map.txt", STUDY / "requirements.lock"]
     provenance = {
         "command": sys.argv, "python": sys.version, "platform": platform.platform(),
         "revision": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
@@ -106,11 +118,12 @@ def main():
     dtl_tasks = [(s, m, v, output) for m, v in PARAMETERS for s in range(args.dtl_seeds)]
     if args.engine == "dtl":
         reference_tasks = []
-    if args.engine == "author-mesa":
+    if args.engine in ("author-mesa", "independent"):
         dtl_tasks = []
     runs = []
     with (output / "runs.jsonl").open("w") as log, ProcessPoolExecutor(args.workers) as pool:
-        for runner, tasks in ((run_reference, reference_tasks), (run_dtl, dtl_tasks)):
+        reference_runner = run_independent if args.engine == "independent" else run_reference
+        for runner, tasks in ((reference_runner, reference_tasks), (run_dtl, dtl_tasks)):
             for run in pool.map(runner, tasks):
                 log.write(run.model_dump_json() + "\n")
                 log.flush()
