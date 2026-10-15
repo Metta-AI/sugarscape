@@ -67,11 +67,23 @@ The runner aborts on simulation failures or malformed/incomplete trajectories.
 
 ## Remaining work
 
-1. Compare the measured trajectories and preserve discrepancies.
-2. Specify a paper-specific engine mode only after resolving source-versus-prose ambiguities.
-3. Compare independent engine ensembles against the released model with declared uncertainty criteria.
-4. Reproduce history matching and approximate Bayesian computation for Figures 5–6.
-5. Review all four targets before counting this paper as replicated.
+1. Finish history matching and approximate Bayesian computation for Figures 5–6 under the [predeclared protocol](CALIBRATION_PROTOCOL.md).
+2. Review all four targets before counting this paper as replicated.
+
+## Independent implementation validation
+
+`independent.py` implements the released model without calling Mesa or the DTL engine.
+It preserves source behavior, including initialization collisions and inactive grid occupants.
+This study-specific implementation lives in this fork; it does not make DTL's core engine equivalent to the paper.
+
+The complete-world comparison passed for 16 experiments: four seeds and four parameter pairs over 100 steps each.
+At every step it compares agent states, all 2,500 cells, occupancy, population, and random-generator state.
+Run it with `.venv/bin/python replications/mcculloch_2022/test_equivalence.py`.
+
+An additional 660 independent runs matched **all 66,660 population observations** in the author-code ensemble exactly.
+The [comparison record](results/independent-2026-10-15/comparison.json), raw trajectories, and source provenance are retained.
+These checks reduce the risk of mistaking our implementation errors for a negative replication.
+They do not resolve differences between the paper's prose and its released source, or recover unpublished original seeds.
 
 ## Recorded outcome
 
