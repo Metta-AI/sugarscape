@@ -2,7 +2,8 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: author-model replay validated on two archived inputs, **not a completed replication**.
+Status: two author-model replays validated; all ten linear-regression Table 8 values reproduced.
+**Not a completed replication:** the other estimators and independent simulator work remain unfinished.
 
 ## Author implementation
 
@@ -67,13 +68,31 @@ python3 replications/carrella_2021/compare_replay.py /new/trajectory.csv \
 
 Both commands reject existing output files. Repeat with row 4,999 for the second recorded replay.
 
+## Linear point-estimation results
+
+The [predeclared experiment](POINT_ESTIMATION_PROTOCOL.md) independently recomputes five-fold cross-validation
+for both dataset sizes with R's ordinary linear regression.
+Using the newer `Rejection` sampling algorithm, **10/10 results match Table 8 at three-decimal precision**.
+The historical `Rounding` algorithm matches 0/10; both results are retained.
+This supports the newer sampling convention without identifying the authors' exact R installation.
+
+[Recorded results](results/linear-2026-10-15/comparison.json) include all 62,500 held-out predictions,
+fold memberships, baseline predictions, software details, and source hashes.
+No confidence-interval coverage has been reproduced by this experiment.
+The R script uses only base/recommended R functionality; the recorded runtime is R 4.6.1.
+
+```sh
+Rscript replications/carrella_2021/point_estimates.R \
+  /path/to/audit/data/sugarscape /absolute/new/linear-results
+```
+
 ## Replication work remaining
 
-1. Recover exact paper-specific numerical targets and predeclare comparison criteria.
+1. Extend the Table 8 comparison to the remaining eight estimators and interval coverage.
 2. Expand the validated author replay beyond the first and last archived inputs.
 3. Audit DTL trade, reproduction, mutation, welfare, and Gini semantics against this source.
 4. Implement and validate the required study-specific behavior in this fork.
-5. Recompute both simulation ensembles and estimator comparisons, retaining failures and uncertainty.
+5. Complete both simulation ensembles and estimator comparisons, retaining failures and uncertainty.
 
 Do not replace the traded two-resource model with the one-resource McCulloch variant.
 Do not count analysis of the archived table alone as an independent simulation replication.
