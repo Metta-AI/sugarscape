@@ -46,10 +46,40 @@ The correct fixed-reference artifact is Dataverse file 3596481, persistent ident
 Its original CSV format is fetched explicitly.
 
 The NetLogo model replaces dying agents, so population remains fixed while wealth evolves.
-Its Gini outcome averages the trajectory over 1,000 steps; this differs from a terminal-time Gini or a survival-only model.
+The current model averages Gini over the last 1,000 steps; its configured run length is also 1,000.
+Historical revisions ran 10,000 steps, so the archive horizon needs verification.
 Model setup also draws continuous metabolism and sugar endowments, with integer vision and lifetime.
 The released OpenMOLE script requests 100 repeats, whereas the archived reference has 50.
 New runs must follow the validated experiment rather than silently using a mismatched current script.
+
+## Fresh simulation pilot and provenance investigation
+
+The first archived reference input completes 1,000 steps with constant population under NetLogo 5.3.1.
+Its terminal Gini is 0.3942307692 versus archived 0.2445487365.
+Its moving-window Gini is 0.2939769248 versus archived 0.3017667641.
+[Trajectory and comparison](results/replay-pilot-2026-10-15/comparison.json) retain this unresolved mismatch.
+**This is not a negative replication.** The runtime and historical experiment have not yet been matched.
+
+The archive filename is dated March 28, 2017; that date does not prove which revision generated its contents.
+Commit `b71d1cf73f036749a83335b6a13cabf345599039` added explicit seeding and corrected resource initialization on April 3, 2017.
+Commit `74ade6eaa77af4caa65183a2eba6a3ded4708e0f` changed the horizon from 10,000 to 1,000 on September 27, 2018.
+The model header identifies NetLogo 5.1.0, while this pilot uses 5.3.1; the original execution runtime remains unverified.
+These differences require investigation before interpreting any simulation discrepancy.
+
+The Java adapter invokes the released setup and records each step without editing the model.
+Place `NetLogo.jar` before the wildcard classpath: `NetLogoLite.jar` otherwise shadows full workspace classes in this installation.
+The initial compilation failure is preserved with the successful execution log.
+
+```sh
+/path/to/jdk/bin/java -Djava.awt.headless=true \
+  -cp '/path/to/netlogo/app/NetLogo.jar:/path/to/netlogo/app/*' \
+  replications/raimbault_2019/Replay.java \
+  /path/to/SpaceMatters/sugarscape/HEADLESS_Sugarscape.nlogo \
+  /path/to/reference.csv 0 /absolute/new/trajectory.csv
+```
+
+Run from the author model directory, using absolute paths for the adapter and artifacts.
+The adapter currently records the pinned model's 1,000-step configuration, not a reconstructed historical experiment.
 
 ## Remaining work
 
