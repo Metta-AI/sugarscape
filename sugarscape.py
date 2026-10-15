@@ -371,17 +371,19 @@ class Sugarscape:
             environmentFile = open(environmentFile)
             loadEnvironment = json.loads(environmentFile.read())
             environmentFile.close()
-            height = len(loadEnvironment)
-            width = len(loadEnvironment[0])
+            width = len(loadEnvironment)
+            height = len(loadEnvironment[0])
             self.environment.height = height
             self.environment.width = width
+            self.environment.grid = [[None for j in range(height)] for i in range(width)]
+            self.environment.equator = self.configuration["environmentEquator"] if self.configuration["environmentEquator"] >= 0 else math.ceil(height / 2)
             self.environmentHeight = height
             self.environmentWidth = width
             for i in range(width):
                 for j in range(height):
                     loadSpice = loadEnvironment[i][j]["spice"]
                     loadSugar = loadEnvironment[i][j]["sugar"]
-                    newCell = cell.Cell(i, j, self.environment, loadSpice, loadSugar)
+                    newCell = cell.Cell(i, j, self.environment, maxSugar=loadSugar, maxSpice=loadSpice)
                     self.environment.setCell(newCell, i, j)
         self.environment.findCellNeighbors()
         self.environment.findCellRanges()
@@ -860,8 +862,8 @@ class Sugarscape:
             self.configureAgents(numReplacements)
 
     def runSimulation(self, timesteps=5):
-        self.startLog(self.log)
         self.updateRuntimeStats()
+        self.startLog(self.log)
         if self.gui != None:
             # Simulation begins paused until start button in GUI pressed
             self.gui.updateLabels()
