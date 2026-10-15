@@ -38,7 +38,7 @@ not an intentional correction in our reproduction. It must be distinguished from
 
 This is a model audit, not the completed calibration replication.
 Run the unmodified author model for seeds 0–219, at all three parameter pairs, for 100 steps.
-Run unmodified DTL for seeds 0–29 at each pair, with the same map, bounded world, sugar range, and unlimited lifespan.
+Run DTL for seeds 0–29 at each pair, with the same map, bounded world, sugar range, and unlimited lifespan.
 Movement is unrestricted up to maximum vision, avoiding an independent movement cap.
 Other initialization and movement differences remain explicit; this DTL run is a comparison baseline, not an equivalent model.
 
@@ -72,3 +72,30 @@ The runner aborts on simulation failures or malformed/incomplete trajectories.
 3. Compare independent engine ensembles against the released model with declared uncertainty criteria.
 4. Reproduce history matching and approximate Bayesian computation for Figures 5–6.
 5. Review all four targets before counting this paper as replicated.
+
+## Recorded outcome
+
+See [750 recorded trajectories, summary, and plot](results/audit-2026-10-15/RESULTS.md).
+The author-code run finished all 660 trajectories before the DTL stage failed its completeness check.
+Investigation found that DTL swapped imported sugar/spice and emitted an uninitialized tick-zero record.
+The prerequisite engine fix also corrects rectangular-map dimensions and allocation.
+The 90 DTL runs were then rerun against the fixed engine in a separate evidence directory.
+Both source provenances are retained; no failed run was relabeled as successful.
+`author-runner.py.txt` preserves the original runner, verified against its recorded SHA-256.
+It is an archival source snapshot; use the current `run.py` for new experiments.
+Twelve complete simulations (first and last seed for each model/parameter pair) were replayed;
+all 101-point population trajectories matched their recorded results exactly.
+
+The author's `(4,7)` population continues declining after step 30 in 27 of the first 30 seeds.
+DTL differs substantially even after the import fix; the source-audit differences remain unresolved.
+This is **partial reproduction with discrepancies**, not a completed paper replication.
+
+Regenerate the summary and figure from committed raw trajectories:
+
+```sh
+.venv/bin/python replications/mcculloch_2022/analyze.py \
+  replications/mcculloch_2022/results/audit-2026-10-15/runs.jsonl \
+  --output /absolute/new/analysis/path
+```
+
+Use `run.py --engine dtl` or `--engine author-mesa` to execute either stage separately.
