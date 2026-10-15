@@ -1,0 +1,20 @@
+{
+  "command": [
+    "replications/mcculloch_2022/calibrate.py",
+    "--output",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/mcculloch-2022-calibration-001",
+    "--workers",
+    "4"
+  ],
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "revision": "c05150ab57237a851612ce1e44210ea02a9a1a03",
+  "working_tree": "",
+  "sha256": {
+    "calibrate.py": "a3ca32144a5f68657f8fbd10f6f2066b2546b2c308c6ce03eb917e6b7e1a71fa",
+    "independent.py": "03e093abd71d949c778e2f65f94b9a554fa36ee62fae59b49eca3a18a6358945",
+    "CALIBRATION_PROTOCOL.md": "1580a55276ff7e2a2d8473032859f7e98df337639ec251d433ee1938a4f6cd2f",
+    "published_calibration.json": "6e9b3fcd7b78034d207ad8075a1f8ec283bd4f9959c1a46b21db422ccdca5b2d",
+    "requirements.lock": "2b92ad071f7638e1ddfa936faff800fc657cb8ddcc974e84cf8b9617eef5a0d1",
+    "sugarscape_cg/sugar-map.txt": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675"
+  }
+}

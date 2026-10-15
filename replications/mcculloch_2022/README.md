@@ -4,6 +4,10 @@ Source: [Calibrating Agent-Based Models Using Uncertainty Quantification Methods
 DOI `10.18564/jasss.4791`, section 4, Figures 3–6.
 Scope excludes the paper's territorial-bird and cattle-farm case studies.
 
+**Completed study with mixed results:** validated negative replication of exact step-30 stabilization,
+with agreement under the conditional-posterior distribution criterion.
+See the [claim-by-claim report and limitations](REPORT.md). This is not a wholly positive paper replication.
+
 ## Source and model audit
 
 The released source is [Urban-Analytics/uncertainty](https://github.com/Urban-Analytics/uncertainty),
@@ -65,10 +69,11 @@ DTL configurations and logs, source hashes, interpreter/platform, command, revis
 The runner aborts on simulation failures or malformed/incomplete trajectories.
 `runs.jsonl` contains one Pydantic-validated result per simulation.
 
-## Remaining work
+## Study completion
 
-1. Finish history matching and approximate Bayesian computation for Figures 5–6 under the [predeclared protocol](CALIBRATION_PROTOCOL.md).
-2. Review all four targets before counting this paper as replicated.
+All declared Sugarscape targets have been exercised and assessed in [REPORT.md](REPORT.md).
+The full Figure 4 follow-up contains 11,130 independent simulations across 51 ensembles.
+Its numerical stabilization claim remains underspecified; the report does not invent an equivalence threshold.
 
 ## Independent implementation validation
 
@@ -76,14 +81,30 @@ The runner aborts on simulation failures or malformed/incomplete trajectories.
 It preserves source behavior, including initialization collisions and inactive grid occupants.
 This study-specific implementation lives in this fork; it does not make DTL's core engine equivalent to the paper.
 
-The complete-world comparison passed for 16 experiments: four seeds and four parameter pairs over 100 steps each.
-At every step it compares agent states, all 2,500 cells, occupancy, population, and random-generator state.
+The complete-world comparison passed for 80 experiments over 100 steps each.
+It includes the original 16 checks plus all 64 calibration parameter pairs at seed 1,000,000.
+At every step it compares agent positions and sugar, all 2,500 cells, occupancy, population, and random-generator state.
 Run it with `.venv/bin/python replications/mcculloch_2022/test_equivalence.py`.
 
 An additional 660 independent runs matched **all 66,660 population observations** in the author-code ensemble exactly.
 The [comparison record](results/independent-2026-10-15/comparison.json), raw trajectories, and source provenance are retained.
 These checks reduce the risk of mistaking our implementation errors for a negative replication.
 They do not resolve differences between the paper's prose and its released source, or recover unpublished original seeds.
+
+The authors do not pin a Mesa version. Both 0.8.7 and 0.8.8 predate the February 2021 archived experiments.
+Repeating the first 30 seeds at all three parameter pairs under Mesa 0.8.7 matched all 9,090 population observations
+from Mesa 0.8.8 exactly. See [dependency validation](results/mesa087-2026-10-15/dependency-validation.json).
+This rules out that specific version difference as an explanation; it does not identify the authors' original environment.
+
+## Calibration outcome
+
+Both 10,000-particle experiments completed under the [predeclared protocol](CALIBRATION_PROTOCOL.md).
+See [raw trials, validation, and posterior comparison](results/calibration-2026-10-15/RESULTS.md).
+The fixed-prior posterior passes the distribution criterion: total variation distance 0.0198,
+with bootstrap 95% upper bound 0.0374 below 0.05.
+The modal label differs by only three particles; this is not evidence of a substantive posterior disagreement.
+History matching took eight waves and retained 21 combinations, versus ten waves and 15 in the archive.
+That stochastic path difference alone is not a negative replication.
 
 ## Recorded outcome
 
@@ -100,7 +121,7 @@ all 101-point population trajectories matched their recorded results exactly.
 
 The author's `(4,7)` population continues declining after step 30 in 27 of the first 30 seeds.
 DTL differs substantially even after the import fix; the source-audit differences remain unresolved.
-This is **partial reproduction with discrepancies**, not a completed paper replication.
+That initial audit was partial. The completed calibration, variance curve, and validation are assessed in [REPORT.md](REPORT.md).
 
 Regenerate the summary and figure from committed raw trajectories:
 
