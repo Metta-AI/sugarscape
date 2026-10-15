@@ -2,7 +2,7 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: source audit, **not a completed replication**.
+Status: author-model replay validated on two archived inputs, **not a completed replication**.
 
 ## Author implementation
 
@@ -37,10 +37,40 @@ It rejects nonfinite data, invalid parameter ranges, duplicate columns, and unex
 Raw data stay in the requested evidence directory; `audit.json` records the checks and hashes.
 Successful execution validates the input artifacts, not their generation or any paper result.
 
+## Author-model replay
+
+The first and last archived inputs (rows 0 and 4,999) each reproduce **150/150 summary statistics**
+within floating-point tolerance `rtol=1e-10, atol=1e-10`.
+Raw trajectories, comparisons, and runtime hashes are in [results/author-replay-2026-10-15](results/author-replay-2026-10-15).
+These runs validate the author model and measurement pipeline; they do not validate DTL equivalence or estimator results.
+
+The first attempt produced 126/150 matches because it used the newer connector's timing convention.
+The [pre-2020 connector](https://github.com/quaquel/pyNetLogo/blob/becbe42ad5eda943181727a92413b51f2604bf4f/pyNetLogo/core.py)
+records **before** each of 501 `go` calls: ticks 0–500.
+The [January 2020 change](https://github.com/quaquel/pyNetLogo/commit/2ac86b806d56edb8e85c675bd3c645e5079a7c7f)
+adds an extra observation by default. That explains all 24 mismatched final/aggregate statistics.
+The failed trajectory and comparison are preserved alongside the corrected runs.
+
+Download [NetLogo 6.1.1](https://www.netlogo.org/downloads/archive/6.1.1/).
+The Linux archive's platform-independent application JARs run headlessly on this macOS machine with OpenJDK 11.0.32.1.
+The archive SHA-256 is `972ea6e0e9f04988c86a92d6bae305f824487832a3fd5b27eeefbd8b8c6b08c8`.
+Use NumPy 1.26.4 for the comparison script. From the repository root:
+
+```sh
+/path/to/jdk/bin/java -Djava.awt.headless=true -cp '/path/to/NetLogo 6.1.1/app/*' \
+  replications/carrella_2021/Replay.java \
+  '/path/to/audit/data/sugarscape/Sugarscape trade.nlogo' \
+  /path/to/audit/data/sugarscape/params_sugarscape.csv 0 /new/trajectory.csv
+python3 replications/carrella_2021/compare_replay.py /new/trajectory.csv \
+  /path/to/audit/data/sugarscape/sugarscape.csv --row 0 --output /new/comparison.json
+```
+
+Both commands reject existing output files. Repeat with row 4,999 for the second recorded replay.
+
 ## Replication work remaining
 
 1. Recover exact paper-specific numerical targets and predeclare comparison criteria.
-2. Run the author model with the historical NetLogo version and validate the summary-statistic timing convention.
+2. Expand the validated author replay beyond the first and last archived inputs.
 3. Audit DTL trade, reproduction, mutation, welfare, and Gini semantics against this source.
 4. Implement and validate the required study-specific behavior in this fork.
 5. Recompute both simulation ensembles and estimator comparisons, retaining failures and uncertainty.
