@@ -39,14 +39,14 @@ Explicitly exclude unrelated case studies from papers containing several models.
 
 | ID | Paper | Initial Sugarscape target | Status |
 | --- | --- | --- | --- |
-| mcculloch-2022 | McCulloch et al., [Calibrating Agent-Based Models Using Uncertainty Quantification Methods](https://www.jasss.org/25/2/1.html) (2022) | Figures 3–6: stabilization, ensemble variance, history matching, posterior | partial; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/3), calibration running |
+| mcculloch-2022 | McCulloch et al., [Calibrating Agent-Based Models Using Uncertainty Quantification Methods](https://www.jasss.org/25/2/1.html) (2022) | Figures 3–6: stabilization, ensemble variance, history matching, posterior | completed mixed study; validated-negative exact stabilization, conditional posterior agreement; [PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/3) |
 | kremer-herman-2024 | Kremer-Herman, Gupta, Severson, [Blueprints for Machine Ethics: A Digital Terrarium for Socio-Ethical Artificial Agent Decisionmaking](https://doi.org/10.1109/ACCESS.2024.3519139) (2024) | Table 3 and homogeneous-society population/resource outcomes; 500 seeds, 5,000 steps | candidate |
 | kremer-herman-2023 | Kremer-Herman and Gupta, Replacing Sugarscape: A Comprehensive, Expansive, and Transparent Reimplementation (SimuTools 2023; proceedings 2024); [conference slides](https://simutools.eai-conferences.org/2023/static/uploads/sites/782/2024/01/Replacing-Sugarscape-EAI-SimuTools-2023.pdf) | Acquire full chapter and map its original replication claims to engine examples | candidate; full chapter needed |
 | bigbee-2007 | Bigbee, Cioffi-Revilla, Luke, [Replication of Sugarscape Using MASON](https://citeseerx.ist.psu.edu/document?doi=0e41ff02af3ab5578a925a3cf7c81f4262bbf0c0&repid=rep1&type=pdf) (2007) | Rule-set outcomes and documented replication failures | candidate |
 | kiran-2014 | Kiran, [Using FLAME Toolkit for Agent-Based Simulation: Case Study Sugarscape Model](https://arxiv.org/abs/1408.3441) (2014) | Three spatial initialization scenarios; separate behavioral results from hardware timings | candidate |
 | oremland-2014 | Oremland and Laubenbacher, [Optimization of Agent-Based Models](https://www.jasss.org/17/2/6.html) (2014) | Sugarscape taxation schedule, revenue, population, and reduced-model comparison | candidate |
 | raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | candidate |
-| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | source audit passed; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
+| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | author replay: 150/150 statistics matched on two archived inputs; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
 | stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | candidate |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | candidate |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | candidate |
@@ -59,10 +59,18 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 ## Current state
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.
-No paper is yet completed. McCulloch et al.: 660 independent runs match all 66,660 author-code population observations.
-Sixteen complete-world comparisons also pass. History matching and two 10,000-particle calibration experiments are running.
+Completed studies: **1 / at least 10**. Wholly positive paper replications: **0**.
+McCulloch et al.: validated negative finding under the declared exact-stability criterion, with conditional posterior agreement.
+The independent model matches 660 author-code trajectories and passes 80 complete-world checks across all calibration parameters.
+All 51 variance ensembles and both 10,000-particle posterior experiments completed; raw evidence and limitations are in the study PR.
+The historical seeds remain unavailable, so this does not disprove the authors' particular original runs.
+
+Carrella: two complete historical NetLogo replays each match all 150 archived statistics.
+An initial 24-statistic mismatch was resolved as connector observation timing; it is not negative paper evidence.
+Independent fork behavior and estimator comparisons remain unfinished.
+
 The [engine prerequisite PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/2) fixes resource imports and initial logging.
-DTL and the paper model still differ; the independent implementation is a study-specific variant in this fork.
+Study-specific variants remain explicit rather than claiming that DTL matches every source model.
 Nexus 0.15.1 GitHub-backed login failed twice during setup; its activity-note write also failed while signed out.
 Repository creation and public-source access succeeded independently.
 
