@@ -6,7 +6,8 @@ Engine upstream: [nkremerh/sugarscape](https://github.com/nkremerh/sugarscape), 
 The [Coworld wrapper](https://github.com/Metta-AI/coworld-sugarscape) consumes that engine separately.
 
 Goal: reproduce the Sugarscape results of at least ten distinct papers.
-Book chapters, multiple figures from one paper, and repeated versions of a paper do not count as separate papers.
+Foundational book chapters, multiple figures from one paper, and repeated versions do not count as separate papers.
+Distinct research papers published in conference proceedings do count.
 The papers below are candidates, not completed replications.
 
 ## Evidence required
@@ -25,8 +26,12 @@ Running the original code alone does not validate the fork's implementation.
 A smoke test, matching direction of effect, or hand-picked seed never counts as quantitative replication.
 Do not tune parameters, discard seeds, or widen acceptance criteria after inspecting results to manufacture agreement.
 If a source claim fails, preserve the failure and investigate the mechanism.
+Treat disagreements as possible implementation or configuration errors first. Search for author and third-party implementations.
+Validate scheduling, initialization, measurement definitions, dependencies, and statistical uncertainty before assigning a negative verdict.
+A validated negative replication counts as a completed study, as explicitly authorized by the user.
+An unexplained discrepancy or failed run does not count.
 
-Status vocabulary: candidate → specified → running → discrepancy / partial / replicated.
+Status vocabulary: candidate → specified → running → discrepancy / partial / replicated / validated-negative.
 Use `replicated` only after all declared Sugarscape targets pass their predeclared criteria.
 Explicitly exclude unrelated case studies from papers containing several models.
 
@@ -34,7 +39,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 
 | ID | Paper | Initial Sugarscape target | Status |
 | --- | --- | --- | --- |
-| mcculloch-2022 | McCulloch et al., [Calibrating Agent-Based Models Using Uncertainty Quantification Methods](https://www.jasss.org/25/2/1.html) (2022) | Figures 3–6: stabilization, ensemble variance, history matching, posterior | specified; source audit underway |
+| mcculloch-2022 | McCulloch et al., [Calibrating Agent-Based Models Using Uncertainty Quantification Methods](https://www.jasss.org/25/2/1.html) (2022) | Figures 3–6: stabilization, ensemble variance, history matching, posterior | partial; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/3), calibration running |
 | kremer-herman-2024 | Kremer-Herman, Gupta, Severson, [Blueprints for Machine Ethics: A Digital Terrarium for Socio-Ethical Artificial Agent Decisionmaking](https://doi.org/10.1109/ACCESS.2024.3519139) (2024) | Table 3 and homogeneous-society population/resource outcomes; 500 seeds, 5,000 steps | candidate |
 | kremer-herman-2023 | Kremer-Herman and Gupta, Replacing Sugarscape: A Comprehensive, Expansive, and Transparent Reimplementation (SimuTools 2023; proceedings 2024); [conference slides](https://simutools.eai-conferences.org/2023/static/uploads/sites/782/2024/01/Replacing-Sugarscape-EAI-SimuTools-2023.pdf) | Acquire full chapter and map its original replication claims to engine examples | candidate; full chapter needed |
 | bigbee-2007 | Bigbee, Cioffi-Revilla, Luke, [Replication of Sugarscape Using MASON](https://citeseerx.ist.psu.edu/document?doi=0e41ff02af3ab5578a925a3cf7c81f4262bbf0c0&repid=rep1&type=pdf) (2007) | Rule-set outcomes and documented replication failures | candidate |
@@ -45,7 +50,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | candidate |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | candidate |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | candidate |
-| pan-2019 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2019) | Published policy case studies and rebellion outcomes | candidate |
+| pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | candidate |
 
 The 1996 Epstein–Axtell book and Kehoe's [formal specification](https://arxiv.org/abs/1505.06012)
 are baseline references, outside the ten-paper count.
@@ -54,6 +59,22 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 ## Current state
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.
-No paper is yet replicated. The first study audits McCulloch et al.'s released Mesa implementation against the DTL engine.
+No paper is yet completed. McCulloch et al.: 660 independent runs match all 66,660 author-code population observations.
+Sixteen complete-world comparisons also pass. History matching and two 10,000-particle calibration experiments are running.
+The [engine prerequisite PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/2) fixes resource imports and initial logging.
+DTL and the paper model still differ; the independent implementation is a study-specific variant in this fork.
 Nexus 0.15.1 GitHub-backed login failed twice during setup; its activity-note write also failed while signed out.
 Repository creation and public-source access succeeded independently.
+
+## Implementation discovery
+
+- McCulloch: [Urban-Analytics/uncertainty](https://github.com/Urban-Analytics/uncertainty), pinned in the study.
+- Raimbault: author-linked [JusteRaimbault/SpaceMatters](https://github.com/JusteRaimbault/SpaceMatters),
+  revision `270cc7f112b3a999b10e02b0f9525038d6d4754d`. Includes NetLogo source, OpenMOLE workflows, grids, and analysis.
+  The full Sugarscape experiment specifies 2,500,000 simulations; a small pilot cannot substantiate that full result.
+- Carrella: [CarrKnight/nofreelunch](https://github.com/CarrKnight/nofreelunch),
+  revision `0400f750063215d06659a203f777b21da2e99231`. Includes the Sugarscape trade model, parameters,
+  simulation data, and R calibration notebooks. The companion [freelunch](https://github.com/CarrKnight/freelunch)
+  package provides estimators; it is not the simulation model itself.
+- Stevenson, Kiran, and Pan: initial GitHub/web searches have not established a paper-specific code repository.
+  This is a search status, not evidence that no implementation exists.
