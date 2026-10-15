@@ -2,7 +2,7 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: two author-model replays validated; all ten linear-regression Table 8 values reproduced.
+Status: two author-model replays validated; ten linear-regression and five rejection-estimation Table 8 values reproduced.
 **Not a completed replication:** the other estimators and independent simulator work remain unfinished.
 
 ## Author implementation
@@ -85,6 +85,20 @@ The R script uses only base/recommended R functionality; the recorded runtime is
 Rscript replications/carrella_2021/point_estimates.R \
   /path/to/audit/data/sugarscape /absolute/new/linear-results
 ```
+
+## Additional original-estimator runs
+
+The [estimator protocol](ESTIMATOR_PROTOCOL.md) runs the original five-fold routines with their full sampling and bootstrap settings.
+For 1,250 inputs, rejection estimation reproduces **5/5 Table 8 values at printed precision**.
+[Results](results/rejection-1250-2026-10-15/comparison.json) include fold inputs, predictions, interval endpoints, aggregate metrics, and runtime provenance.
+
+The first quantile-random-forest run differs from published performance by at most 0.002.
+[Its five comparisons](results/rf-1250-2026-10-15/comparison.json) retain the differences without declaring agreement or a negative replication.
+The isolated seed and current package versions differ from the notebook's sequential random stream.
+Repeated runs and historical dependency checks remain necessary for statistical interpretation.
+
+Two other attempts failed while saving checkpoints because the filesystem filled.
+Their partial outputs and logs remain in the local evidence directory; neither attempt counts as a scientific result.
 
 ## Replication work remaining
 
