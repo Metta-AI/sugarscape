@@ -1,0 +1,335 @@
+{
+  "pipeline": {
+    "simulator_calls": 27031,
+    "modes": [
+      [
+        4,
+        6
+      ]
+    ],
+    "rank_4_6": 1,
+    "four_seven_is_modal": false,
+    "counts": [
+      {
+        "parameters": [
+          2,
+          1
+        ],
+        "count": 288
+      },
+      {
+        "parameters": [
+          2,
+          2
+        ],
+        "count": 228
+      },
+      {
+        "parameters": [
+          2,
+          3
+        ],
+        "count": 146
+      },
+      {
+        "parameters": [
+          2,
+          4
+        ],
+        "count": 83
+      },
+      {
+        "parameters": [
+          3,
+          1
+        ],
+        "count": 825
+      },
+      {
+        "parameters": [
+          3,
+          2
+        ],
+        "count": 853
+      },
+      {
+        "parameters": [
+          3,
+          3
+        ],
+        "count": 773
+      },
+      {
+        "parameters": [
+          3,
+          4
+        ],
+        "count": 670
+      },
+      {
+        "parameters": [
+          3,
+          5
+        ],
+        "count": 543
+      },
+      {
+        "parameters": [
+          3,
+          7
+        ],
+        "count": 219
+      },
+      {
+        "parameters": [
+          4,
+          3
+        ],
+        "count": 313
+      },
+      {
+        "parameters": [
+          4,
+          4
+        ],
+        "count": 505
+      },
+      {
+        "parameters": [
+          4,
+          5
+        ],
+        "count": 698
+      },
+      {
+        "parameters": [
+          4,
+          6
+        ],
+        "count": 928
+      },
+      {
+        "parameters": [
+          4,
+          7
+        ],
+        "count": 856
+      },
+      {
+        "parameters": [
+          4,
+          8
+        ],
+        "count": 736
+      },
+      {
+        "parameters": [
+          4,
+          9
+        ],
+        "count": 532
+      },
+      {
+        "parameters": [
+          4,
+          10
+        ],
+        "count": 380
+      },
+      {
+        "parameters": [
+          4,
+          11
+        ],
+        "count": 248
+      },
+      {
+        "parameters": [
+          4,
+          13
+        ],
+        "count": 113
+      },
+      {
+        "parameters": [
+          4,
+          15
+        ],
+        "count": 63
+      }
+    ]
+  },
+  "conditional": {
+    "simulator_calls": 22022,
+    "modes": [
+      [
+        3,
+        2
+      ]
+    ],
+    "rank_4_6": 3,
+    "four_seven_is_modal": false,
+    "counts": [
+      {
+        "parameters": [
+          2,
+          1
+        ],
+        "count": 358
+      },
+      {
+        "parameters": [
+          3,
+          1
+        ],
+        "count": 888
+      },
+      {
+        "parameters": [
+          3,
+          2
+        ],
+        "count": 1027
+      },
+      {
+        "parameters": [
+          3,
+          3
+        ],
+        "count": 917
+      },
+      {
+        "parameters": [
+          3,
+          4
+        ],
+        "count": 788
+      },
+      {
+        "parameters": [
+          3,
+          5
+        ],
+        "count": 574
+      },
+      {
+        "parameters": [
+          4,
+          4
+        ],
+        "count": 565
+      },
+      {
+        "parameters": [
+          4,
+          5
+        ],
+        "count": 853
+      },
+      {
+        "parameters": [
+          4,
+          6
+        ],
+        "count": 1018
+      },
+      {
+        "parameters": [
+          4,
+          7
+        ],
+        "count": 1024
+      },
+      {
+        "parameters": [
+          4,
+          8
+        ],
+        "count": 826
+      },
+      {
+        "parameters": [
+          4,
+          9
+        ],
+        "count": 660
+      },
+      {
+        "parameters": [
+          4,
+          11
+        ],
+        "count": 302
+      },
+      {
+        "parameters": [
+          4,
+          13
+        ],
+        "count": 105
+      },
+      {
+        "parameters": [
+          4,
+          14
+        ],
+        "count": 95
+      }
+    ],
+    "total_variation_distance": 0.019799999999999998,
+    "bootstrap_95_upper": 0.037399999999999996,
+    "predeclared_distribution_bound_passed": true
+  },
+  "history_matching": {
+    "waves": 8,
+    "published_waves": 10,
+    "retained": 21,
+    "published_retained": 15,
+    "only_new": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        15
+      ]
+    ],
+    "only_published": [
+      [
+        4,
+        14
+      ]
+    ],
+    "exact_prior_match": false
+  },
+  "sha256": {
+    "complete.json": "10a1aa42269003babe39d5f14b38a72afd698f949d539928d100c44cdb928fbc",
+    "waves.json": "bf9b409e672a3e7708fc69588461520be6e1adbb13cd4c5297acfe0f6483debe",
+    "trials.jsonl": "feee36f8b6c1f7988dd5adedb666613a46f48dc91575cb6860ef962c45cca7ed",
+    "pipeline-particles.jsonl": "e9c8d3f4bc8b47e4008186e5e13e6e3d8238606f5f2d1c1fda8ddb3671af9479",
+    "conditional-particles.jsonl": "ca540f4647d914260e9dedfb71767fdf2dc4e1bc4ccd67039e383890c8dd1987",
+    "published_calibration.json": "6e9b3fcd7b78034d207ad8075a1f8ec283bd4f9959c1a46b21db422ccdca5b2d",
+    "analyze_calibration.py": "43006479a63b6b227d4bd13f2c186a31da6458b0724befe3a54ec37dadd78d1d"
+  }
+}

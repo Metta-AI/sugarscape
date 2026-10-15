@@ -1,0 +1,19 @@
+{
+  "command": [
+    "replications/mcculloch_2022/variance_curve.py",
+    "--output",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/mcculloch-2022-variance-001",
+    "--workers",
+    "4"
+  ],
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "revision": "ac8c3a1c8a0ca2e9713da96f9bfab70266f9d7d6",
+  "working_tree": " M replications/mcculloch_2022/test_equivalence.py\n?? replications/mcculloch_2022/analyze_calibration.py\n",
+  "sha256": {
+    "variance_curve.py": "5a755582de345c093bd2f39a2bd30e87e11a676d84bdd2ae3f1706b85bbca500",
+    "independent.py": "03e093abd71d949c778e2f65f94b9a554fa36ee62fae59b49eca3a18a6358945",
+    "calibrate.py": "a3ca32144a5f68657f8fbd10f6f2066b2546b2c308c6ce03eb917e6b7e1a71fa",
+    "published_variance.json": "9dcf633ff636f26ef87db318b92c77e55da6d9acaee4f8fbed306a67d1256714",
+    "VARIANCE_PROTOCOL.md": "fd00884cce30126eb7af47b0db948d7790dd09b43ecb5286209dd38cd239ba23"
+  }
+}

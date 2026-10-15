@@ -1,0 +1,33 @@
+{
+  "command": [
+    "replications/mcculloch_2022/run.py",
+    "--output",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/mcculloch-2022-audit-001",
+    "--reference-seeds",
+    "220",
+    "--dtl-seeds",
+    "30",
+    "--workers",
+    "4"
+  ],
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "revision": "ad17b3080ae793da73dcfab8b87b897bb47a8788",
+  "working_tree": "?? replications/mcculloch_2022/\n",
+  "sha256": {
+    "replications/mcculloch_2022/sugarscape_cg/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "replications/mcculloch_2022/sugarscape_cg/agents.py": "260c81dc1fb7e472134374bcd95ff1fc03cbb1c71a153ad7865a0a1cb97834d1",
+    "replications/mcculloch_2022/sugarscape_cg/model.py": "019e5bb7e88b20b0eb0c1574abfe91c266521f1af67cdd02eff99d8f243846b8",
+    "replications/mcculloch_2022/sugarscape_cg/schedule.py": "52512842a106dbd22d375af4ffdfe3b85c9e548785d1709792a7959b0bdf36bb",
+    "agent.py": "f80bd22e8cbc7562329a80e9607a8b33abcaa83cdf94c70a5de74414eb8de957",
+    "cell.py": "ea720ff1225b3a6f300e1acbc9698c9538abf2091fa4f1ef941506af30b9e572",
+    "condition.py": "b167c8547374adca884923f259b5aa9700384ee889eade3f3a51ca9812b20906",
+    "environment.py": "3046e7402631f81b2f1168784db13f31cea9bf8e4ea76151cbc44e12120b68a6",
+    "ethics.py": "158ee819591607249e602b202128f419f844a4208d190105d3a3c9c09851479d",
+    "gui.py": "9dc48377cb8f8c719ae9778ba4710879414763550c2d922741cf4b9b30251a66",
+    "sugarscape.py": "60cca0c47867b543b585ed5ada31bef530c47964974083d4729849f4c1708c80",
+    "replications/mcculloch_2022/run.py": "2233d5bb9c4d16aa9cda233f6c548ed9b123c74fd1e5c239ac831e40384d048f",
+    "replications/mcculloch_2022/sugarscape_cg/sugar-map.txt": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
+    "replications/mcculloch_2022/requirements.lock": "2b92ad071f7638e1ddfa936faff800fc657cb8ddcc974e84cf8b9617eef5a0d1"
+  }
+}
