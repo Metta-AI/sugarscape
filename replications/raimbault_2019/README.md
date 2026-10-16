@@ -198,3 +198,44 @@ Eight remote workers receive disjoint 50-row intervals covering `[54600,55000)`.
 [The handoff record](results/linux-parity-2026-10-16/handoff-confirmed.json) preserves the terminal checkpoint and commands.
 The remote batch is bounded to one hour and stops its CPU node afterward; its results remain pending and uncounted here.
 The full reference, generated landscapes, and paper replication remain incomplete.
+
+## Generated-landscape source and executable replay
+
+The [original per-run archive](https://dataverse.harvard.edu/api/access/datafile/3596486?format=original)
+contains 1,180,976,826 bytes and matches Dataverse's MD5 `7b554774a9d293b2c2ce3169c9d48dbe`.
+Its SHA-256 is `1a2cdf93167571ab2943d488017ace08945e7afd3cd8ac4d1410fb214c79c8f5`.
+The source remains outside Git, compressed losslessly; replay verifies the decompressed hash before execution.
+
+[Full archive reconstruction](results/generated-source-2026-10-16/raw-audit.json) verifies **2,727,994 runs** across 54,560 parameter groups and 50 landscape parameter sets.
+There are 54,554 groups with 50 repeats and [six groups with 49](results/generated-source-2026-10-16/underfilled-groups.json).
+No group repeats a seed. All rows request generated landscapes (`setup=1`).
+All 54,560 reconstructed moving-window Gini means agree with the released aggregate within 8.33e-16.
+The five averaged generator parameters agree within 1.01e-11; the audit's explicit aggregate tolerance is 1e-10.
+This validates the provenance of the aggregate used for Table 4, without substituting reanalysis for simulation.
+
+The author model seeds its random generator before generating each landscape and creating agents.
+Therefore, a landscape parameter set identifies a family of seeded maps, not one map reused for every repeat.
+The replay preserves every recorded seed and regenerates the corresponding map before running the original agent rules.
+
+`GeneratedReplay.java` streams the gzip archive instead of retaining its 2.7 million rows in memory.
+`run_generated.py` pins the model revision, source/dependency hashes, full raw archive, interval, Java version, and exit status.
+It records both Gini metrics and all ten native spatial morphology outputs at the validated 10,000-step horizon.
+The existing fixed-reference runner and its live simulations are unchanged.
+
+```sh
+python3 replications/raimbault_2019/audit_generated_archive.py \
+  /absolute/generated-raw.csv.gz /absolute/generated.csv /absolute/new/archive-audit
+python3 replications/raimbault_2019/run_generated.py \
+  /absolute/SpaceMatters /absolute/netlogo /absolute/jdk \
+  /absolute/generated-raw.csv.gz /absolute/new/generated-pilot --start 0 --stop 2
+```
+
+The first command reconstructs the published aggregate; `generated.csv` is the aggregate from `fetch_sources.py`.
+The second command runs the original model through the public runner; row intervals use exclusive stops.
+
+[The two-row generated-landscape pilot](results/generated-source-2026-10-16/pilot-comparison.json) completes 20,000 simulated steps with native exit zero.
+Both Gini outputs match exactly for both rows. Across all 24 output values, 23 match exactly.
+Row 1's population-distribution R² is `0.8963279972950365`, versus archived `0.8963279972950364`: one floating-point step.
+The strict exact comparison fails on that value; its discrepancy is retained, with no relaxed pass criterion.
+A repeated execution through the public runner produces byte-identical output.
+These validation probes add zero unique ensemble coverage. The full generated ensemble and fresh spatial conclusions remain pending.
