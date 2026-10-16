@@ -287,3 +287,13 @@ It does not resolve numerical runtime differences, rerun fitting, or establish a
 ```sh
 Rscript replications/carrella_2021/audit_gam_history.R /complete/gam-1250 /complete/gam-5000 /new/history-audit
 ```
+
+## Independent-model semantic boundary
+
+[The integration audit](MODEL_SEMANTICS.md) identifies differences in scheduling, reproduction, mutation, trading, and Gini definitions between the author model and this fork.
+A normal fork configuration cannot substitute for the author's asexual, two-resource model.
+[Controlled complete native ticks](results/native-semantics-2026-10-16/proof.json) confirm that cached utility controls reproduction even after holdings change.
+Identical current holdings yield one versus two agents when only cached utility differs.
+Both cases preserve total holdings after metabolism and retain the previous mean price with zero trades.
+The checks pass with trade enabled; the initial trade-disabled diagnostic produces identical output bytes.
+These results specify behavior for an independent implementation; they do not complete that implementation or add a replicated paper.
