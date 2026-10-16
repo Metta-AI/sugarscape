@@ -56,7 +56,8 @@ Disk space was constrained when the failures were observed; the underlying cause
 Their partial artifacts remain in the evidence directory and do not count as results.
 A fresh [egoist invocation](results/egoist-pilot-2026-10-15) completed all 5,000 steps with 1,188 agents remaining.
 All 5,001 observations independently pass timestamp, seed, finite-value, capacity, and trajectory-hash checks.
-The Bentham rerun remains in progress.
+The fresh [Bentham invocation](results/bentham-pilot-2026-10-15) also completed all 5,000 steps with 1,393 agents remaining.
+Its 5,001 observations independently pass the same checks. All four seed-zero pilots now have validated terminal results.
 No homogeneous-society aggregate is established.
 
 ## Required replication targets
