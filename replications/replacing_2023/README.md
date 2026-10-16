@@ -73,3 +73,14 @@ Only `meanHappiness` differs, at 2,500 observations; every other logged field ag
 Thus these December changes cannot explain the reproduction-population mismatch.
 Both runs have population 840 at timestep 60 and 1,071 at timestep 100, rather than the paper's described first major decline in that interval.
 Descriptive windows and a [comparison plot](results/preconference-2026-10-15/reproduction-comparison/revision-comparison.png) are retained without treating those windows as statistical equivalence tests.
+
+## Complete twenty-seed disease replay
+
+The [archived-release batch](results/disease-published20-2026-10-15/audit.json) completed all twenty original Table 3 seeds at the released 500-step horizon.
+Independent validation checks all 10,020 observations, native source/configuration hashes, original seed ordering, initial populations, finite metrics, and complete trajectories.
+No seed becomes extinct. The paper's reported extinction seeds, 12881 and 22744, finish with 801 and 860 agents respectively.
+Their minimum populations are 51 and 135.
+All raw trajectories, run manifests, logs, and outcomes are retained; no seed is excluded.
+
+The full twenty-seed pre-conference batch and infection-observation replays of those two seeds are running.
+The paper's exact assessment times and source revision remain unverified; this result is not yet a validated negative replication.
