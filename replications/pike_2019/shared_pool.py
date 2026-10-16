@@ -58,3 +58,20 @@ def external_traders(self, agent, meta):
 
 organization.rules.calc_accumulations = shared_accumulations
 organization.rules.find_trader = external_traders
+
+# The native network stores group objects; recursive deletion uses string IDs.
+# Remove the actual node, including incident links, before native registry cleanup.
+from multilevel_mesa.multilevel_mesa import MultiLevel_Mesa
+
+native_remove_group = MultiLevel_Mesa._remove_groups_recursion
+
+
+def remove_group_node(self, group_id, group_type):
+    group = self.groups[group_id]
+    assert group in self.net
+    self.net.remove_node(group)
+    native_remove_group(self, group_id, group_type)
+    assert group not in self.net and group_id not in self.groups
+
+
+MultiLevel_Mesa._remove_groups_recursion = remove_group_node

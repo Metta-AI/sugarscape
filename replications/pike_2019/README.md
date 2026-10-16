@@ -119,3 +119,18 @@ The multi-level run conserves resources through 65 steps, then crashes at step 6
 The native policy scheduler invokes movement on an agent whose grid position is `None`.
 The membership/death lifecycle requires investigation before any additional correction; neither pilot contributes a completed replication.
 Compressed raw records, manifests, terminal logs, and hashes preserve both outcomes.
+
+### Deleted groups remain in the native network
+
+[The lifecycle trace](results/lifecycle-diagnostic-2026-10-16/summary.json) reproduces the crash with byte-identical accounting in three passive replays.
+Recursive deletion removes group registry entries but leaves their object nodes and incident edges in the network.
+The library adds `GroupAgent` objects as nodes, then attempts removal using string group IDs.
+Deleted groups `trades_10_0` and `trades_10_2` subsequently join new parent groups.
+The latter activates dead agent 163, which has already left the live registry and grid.
+The corrective module now removes the actual group object and its incident edges before native recursive cleanup.
+This is a separate experimental change; original source and failing evidence remain preserved.
+[The combined corrective run](results/lifecycle-correction-2026-10-16/summary.json) completes 1,000 steps with 37 survivors.
+Its 2,000 independently recomputed commodity-step residuals remain below 1.82e-12.
+All 45,212 health records are finite, but 3,146 contain negative holdings.
+Removing stale network nodes resolves this crash; negative balances and starvation timing remain unresolved.
+Neither the single seed nor these experimental semantics establish a paper replication verdict.
