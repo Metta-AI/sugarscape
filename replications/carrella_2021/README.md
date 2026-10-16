@@ -495,3 +495,18 @@ The model computes utility with fractional powers before calculating wealth ineq
 These are candidate numerical paths, not an established explanation for the observed differences.
 The saved observations do not expose every agent state, so they cannot prove identical hidden-state evolution.
 No remaining production interval has launched; platform attribution and acceptance remain pending.
+
+### State trace and bounded continuation
+
+[Passive input-zero traces](results/linux-state-trace-2026-10-16) reproduce all 501 original observations independently on each platform.
+All model fields, including random state and agent iteration order, match across platforms at every observation except cached utility-derived wealth.
+There are 1,242 differing cached wealth values, with maximum absolute difference `7.105427357601002e-15`.
+A scalar fractional-power probe reproduces one discrepancy: `15.145571514632067 ** 0.5` differs by one floating-point step between the tested runtimes.
+The trace exposes no change to decisions or non-wealth state for this input; it does not prove universal platform equivalence.
+Full traces remain at the retained evidence paths; their hashes, state digests, differences, observer, and unchanged-observation validation are included here.
+
+The remaining 4,107 inputs now run on eight Linux workers in disjoint chunks of at most 25 inputs.
+The six-hour wrapper archives outputs and stops its node, bounding this batch to about $2.89 at the observed $0.4824 hourly rate, excluding setup.
+Runtime and platform provenance accompany the unchanged frozen producer.
+Existing independent statistic-recomputation tolerances (`1e-10` absolute and relative) remain unchanged; the strict cross-platform failure remains failed.
+All completed chunks still require independent trajectory and statistic audits before reconciliation and estimator analysis.
