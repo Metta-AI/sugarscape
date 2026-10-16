@@ -37,7 +37,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("archive", type=Path)
 parser.add_argument("java_home", type=Path)
 parser.add_argument("output", type=Path)
-parser.add_argument("variant", choices=["original", "controlled"])
+parser.add_argument("variant", choices=["original", "controlled", "balanced-landscape"])
 parser.add_argument("seed", type=int)
 args = parser.parse_args()
 archive = args.archive.resolve()
@@ -59,7 +59,7 @@ sources = sorted(
 )
 assert len(sources) == 78
 seed_replacements = {}
-if args.variant == "controlled":
+if args.variant in ("controlled", "balanced-landscape"):
     for source in sources:
         data = source.read_bytes()
         count = data.count(b"new Random()")
@@ -68,6 +68,26 @@ if args.variant == "controlled":
             source.write_bytes(data.replace(b"new Random()", b"nl.vu.cs.sugarland.util.ReplicationRandom.create()"))
     assert sum(seed_replacements.values()) == 7 and len(seed_replacements) == 4
     sources.append(Path(__file__).with_name("ReplicationRandom.java").resolve())
+if args.variant == "balanced-landscape":
+    source = reference / "src/nl/vu/cs/sugarland/model/SugarScape.java"
+    data = source.read_text(encoding="latin-1")
+    start = data.index("            while (numberOfSeeds > 0)")
+    stop = data.index("        else if (intProps[SUGAR_DISTRIBUTION_UNIF] == 2)", start)
+    data = data[:start] + """            int sizeSum = intProps[MAX_SUGAR_SIZE] * (intProps[MAX_SUGAR_SIZE] + 1) / 2;
+            if (numberOfSeeds % sizeSum != 0) throw new IllegalArgumentException("Unbalanced seed budget");
+            int seedsPerSize = numberOfSeeds / sizeSum;
+            for (size = 1; size <= intProps[MAX_SUGAR_SIZE]; size++)
+            {
+                for (int count = 0; count < seedsPerSize; count++)
+                {
+                    if (numberOfSeedsToDistribute >= sugarSeedsToDistribute.length) doubleSugarSeedArray();
+                    sugarSeedsToDistribute[numberOfSeedsToDistribute++] =
+                        new SugarSeed((float) size, (float) size, floatProps[SUGAR_GROWBACK_RATE]);
+                }
+            }
+        }
+""" + data[stop:]
+    source.write_text(data, encoding="latin-1")
 with (output / "compile.log").open("w") as log:
     subprocess.run(
         [str(java_home / "bin/javac"), "-encoding", "ISO-8859-1", "-cp", str(reference / "lib"),
@@ -85,6 +105,11 @@ for key, value in (("useGui", "false"), ("numberOfRuns", "1"), ("runLength", "10
 experiment.write_text(settings)
 with (output / "config/Scape/scape.cfg").open("a") as config:
     config.write(f"\nrandomSeed = {args.seed}\n")
+if args.variant == "balanced-landscape":
+    scape_config = output / "config/Scape/scape.cfg"
+    settings, replacements = re.subn(r"(?m)^sugarRichness\s*=.*$", "sugarRichness = 1.0f", scape_config.read_text())
+    assert replacements == 1
+    scape_config.write_text(settings)
 adapter = Path(__file__).with_name("Replay.java").resolve()
 command = [str(java_home / "bin/java"), "-Djava.awt.headless=true", f"-Dreplication.seed={args.seed}", "-cp",
            f"{classes}:{reference / 'lib'}", str(adapter)]

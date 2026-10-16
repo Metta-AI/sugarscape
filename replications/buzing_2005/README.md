@@ -123,3 +123,22 @@ Historical rule order and message removal semantics remain unverified. No simula
 
 A renewed source search did not recover version1.2.3. The Internet Archive index returned a temporary-offline page.
 The recovered newer source remains available, and a declared implementation of the paper specification can proceed without claiming historical byte equivalence.
+
+## Balanced landscape reconstruction
+
+`run_pilot.py ARCHIVE JDK NEW_OUTPUT balanced-landscape SEED` explicitly reconstructs the equal seed composition specified in section3.10 and note5.
+It retains the controlled random generators, sets richness1.0, and replaces only the uniform-size seed-generation branch in the extracted source.
+The size order is1,2,3,4 with250seeds each; native redistribution selects their cell locations.
+This declared ordering and its random-stream consumption are reconstruction choices, not recovered historical details.
+Other simulation rules and the default100-cycle pilot configuration remain unchanged.
+
+[Two complete native workflows](results/balanced-landscape-2026-10-16/audit.json) produce identical bytes across all ten output files and validate1,400scalar observations.
+The initialized world has exactly250seeds of each size,1,000seeds total, and2,500sugar units.
+Its157multi-seed cells and115piles above four units are permitted by the specification.
+Harvest priority, scheduling, communication semantics, other paper parameters, and full ensembles remain unfinished.
+
+The observer reads seed composition without advancing the world or drawing random numbers.
+It now belongs to the native model package to access the protected seed array without modifying source.
+Compile it with `javac -cp CLASSES:LIB -d AUDIT_CLASSES replications/buzing_2005/LandscapeAudit.java`.
+Run `java -Djava.awt.headless=true -Dreplication.seed=0 -cp AUDIT_CLASSES:CLASSES:LIB nl.vu.cs.sugarland.model.LandscapeAudit` from a fresh directory containing the retained configuration.
+Direct Java source launch uses a separate classloader and cannot access the protected field; both failed observer attempts remain in external evidence.

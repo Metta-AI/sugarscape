@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/opt/homebrew/opt/openjdk@11/bin/java",
+    "-Djava.awt.headless=true",
+    "-Dreplication.seed=0",
+    "-cp",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-balanced-landscape-audit-003/classes:/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-balanced-landscape-001/classes:/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-balanced-landscape-001/reference/JAWAS/lib",
+    "nl.vu.cs.sugarland.model.LandscapeAudit"
+  ],
+  "exit_code": 0,
+  "adapter_sha256": "58b59661500de6a4bab13eaad06d7d03cd418e93804be870a81774955aa0e003",
+  "seed_counts": {
+    "1": 250,
+    "2": 250,
+    "3": 250,
+    "4": 250
+  },
+  "total_sugar": 2500,
+  "total_seeds": 1000,
+  "repeat_output_files_byte_identical": 10,
+  "scope": "Native initialization and two 100-cycle workflows for explicitly reconstructed balanced-landscape variant. Not historical source equivalence."
+}
