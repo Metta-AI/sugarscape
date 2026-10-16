@@ -37,7 +37,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("archive", type=Path)
 parser.add_argument("java_home", type=Path)
 parser.add_argument("output", type=Path)
-parser.add_argument("variant", choices=["original", "controlled", "balanced-landscape"])
+parser.add_argument("variant", choices=["original", "controlled", "balanced-landscape", "paper-harvest"])
 parser.add_argument("seed", type=int)
 args = parser.parse_args()
 archive = args.archive.resolve()
@@ -59,7 +59,7 @@ sources = sorted(
 )
 assert len(sources) == 78
 seed_replacements = {}
-if args.variant in ("controlled", "balanced-landscape"):
+if args.variant in ("controlled", "balanced-landscape", "paper-harvest"):
     for source in sources:
         data = source.read_bytes()
         count = data.count(b"new Random()")
@@ -68,7 +68,7 @@ if args.variant in ("controlled", "balanced-landscape"):
             source.write_bytes(data.replace(b"new Random()", b"nl.vu.cs.sugarland.util.ReplicationRandom.create()"))
     assert sum(seed_replacements.values()) == 7 and len(seed_replacements) == 4
     sources.append(Path(__file__).with_name("ReplicationRandom.java").resolve())
-if args.variant == "balanced-landscape":
+if args.variant in ("balanced-landscape", "paper-harvest"):
     source = reference / "src/nl/vu/cs/sugarland/model/SugarScape.java"
     data = source.read_text(encoding="latin-1")
     start = data.index("            while (numberOfSeeds > 0)")
@@ -88,6 +88,32 @@ if args.variant == "balanced-landscape":
         }
 """ + data[stop:]
     source.write_text(data, encoding="latin-1")
+if args.variant == "paper-harvest":
+    source = reference / "src/nl/vu/cs/sugarland/model/SugarAgent.java"
+    data = source.read_text(encoding="latin-1")
+    old = "        // if more than one agent on cell, then evenly divide sugar\n        if (agentsOnCell.length > 1)"
+    new = """        // Reconstructed paper rule: accessible piles are eaten alone first.
+        float[] priorSugar = new float[agentsOnCell.length];
+        for (int i = 0; i < agentsOnCell.length; i++) priorSugar[i] = agentsOnCell[i].floatProps[SUGAR_AMOUNT];
+        if (agentsOnCell.length > 1 && localAmount > intProps[MAX_SUGAR_HARVEST])"""
+    assert data.count(old) == 1
+    data = data.replace(old, new)
+    marker = "        // flow of control will only come here if sugar has been eaten during this method invocation"
+    audit = """        if (agentsOnCell.length > 1)
+        {
+            for (int i = 0; i < agentsOnCell.length; i++)
+            {
+                float gain = localAmount > intProps[MAX_SUGAR_HARVEST] ? localAmount / (float) agentsOnCell.length : (agentsOnCell[i] == this ? localAmount : 0);
+                float expected = priorSugar[i] + gain;
+                if (agentsOnCell[i].floatProps[SUGAR_AMOUNT] != expected)
+                    throw new IllegalStateException("Paper harvest allocation violated");
+            }
+            System.out.println("paper-harvest-verified amount=" + localAmount + ",agents=" + agentsOnCell.length + ",shared=" + (localAmount > intProps[MAX_SUGAR_HARVEST]));
+        }
+
+"""
+    assert data.count(marker) == 1
+    source.write_text(data.replace(marker, audit + marker), encoding="latin-1")
 with (output / "compile.log").open("w") as log:
     subprocess.run(
         [str(java_home / "bin/javac"), "-encoding", "ISO-8859-1", "-cp", str(reference / "lib"),
@@ -105,7 +131,7 @@ for key, value in (("useGui", "false"), ("numberOfRuns", "1"), ("runLength", "10
 experiment.write_text(settings)
 with (output / "config/Scape/scape.cfg").open("a") as config:
     config.write(f"\nrandomSeed = {args.seed}\n")
-if args.variant == "balanced-landscape":
+if args.variant in ("balanced-landscape", "paper-harvest"):
     scape_config = output / "config/Scape/scape.cfg"
     settings, replacements = re.subn(r"(?m)^sugarRichness\s*=.*$", "sugarRichness = 1.0f", scape_config.read_text())
     assert replacements == 1

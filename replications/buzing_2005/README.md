@@ -142,3 +142,18 @@ It now belongs to the native model package to access the protected seed array wi
 Compile it with `javac -cp CLASSES:LIB -d AUDIT_CLASSES replications/buzing_2005/LandscapeAudit.java`.
 Run `java -Djava.awt.headless=true -Dreplication.seed=0 -cp AUDIT_CLASSES:CLASSES:LIB nl.vu.cs.sugarland.model.LandscapeAudit` from a fresh directory containing the retained configuration.
 Direct Java source launch uses a separate classloader and cannot access the protected field; both failed observer attempts remain in external evidence.
+
+## Alone-first harvesting reconstruction
+
+`run_pilot.py ARCHIVE JDK NEW_OUTPUT paper-harvest SEED` adds the paper's alone-first harvesting rule to the balanced-landscape variant.
+An acting agent consumes an accessible pile alone even when other agents occupy the cell.
+A pile above its threshold is shared equally when multiple agents are present; a lone agent still requests help.
+The threshold comparison retains the released maximum-harvest interpretation: amounts equal to the threshold are accessible.
+Native resource removal and reseeding remain in the original lifecycle.
+
+[Two full100-cycle runs](results/paper-harvest-2026-10-16/audit.json) produce identical bytes in all ten data files and validate1,400scalar observations.
+The expanded observer verifies8,233accessible-pile events and11,080shared-pile events.
+At each observed event it checks every colocated agent's exact native floating-point wealth update.
+The expanded checks preserve all trajectories from the initial observer run. Both runs end with61agents.
+This outcome uses the pilot's remaining defaults and is not a paper result or negative replication.
+Scheduling, communication removal rules, remaining Table2 settings, and full experimental ensembles still require alignment.
