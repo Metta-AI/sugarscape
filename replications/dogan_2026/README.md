@@ -160,3 +160,26 @@ The small difference remains descriptive; all three mortality rankings are uncha
 The unmodified author analysis regenerates all nine canonical text reports byte-for-byte from these fresh inputs.
 Source manifests, full native logs, exit records, all four CSVs, independent welfare analysis, and original report outputs are retained.
 Composition, displacement-levy, per-seed calibration, remaining manuscript claims, and fork integration still prevent a completed paper verdict.
+
+## Running the bundled study from this fork
+
+The `vendor/` directory contains unchanged author source, model data, experiment scripts, and original MIT/Apache notices.
+`vendor-provenance.json` pins every file to the original Git revision by SHA-256.
+This integrates the original model into the study; it does not claim the DTL engine implements the same rules independently.
+The separate reference runners remain the original-code comparison path and their evidence is preserved.
+
+Create the study environment and run a complete experiment:
+
+```sh
+uv venv --python 3.12.4 /tmp/sugarscape-dogan-env
+uv pip install --python /tmp/sugarscape-dogan-env/bin/python -r replications/dogan_2026/environment.txt
+/tmp/sugarscape-dogan-env/bin/python replications/dogan_2026/run_fork.py canonical /tmp/dogan-canonical-new
+```
+
+Exact replay has been evaluated on macOS arm64; other platforms require comparison rather than assumed numerical equivalence.
+The same command accepts `horizon`, `composition`, `levy`, and `perseed` as full original experiments.
+`multiplier` and `reports` additionally require `--canonical PATH_TO_COMPLETED_RUN` and preserve input hashes.
+Every run requires a fresh output directory, records exit status and source/environment hashes, and leaves failures visible.
+
+[Bundled report verification](results/fork-reports-2026-10-15) regenerates all nine reports identically to the separate original analysis.
+The complete bundled canonical simulation is being run separately; report agreement alone does not establish native execution equivalence.
