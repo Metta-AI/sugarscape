@@ -21,3 +21,7 @@ The last archived input is also checked before starting the ensemble.
 exports fresh summary statistics in the archive's column order, and records per-row hashes and mismatches.
 A mismatch yields a nonzero exit after saving the comparison report.
 The full-range manifest must account for every input before this experiment is considered complete.
+
+Extinction does not shorten the original 501-observation driver loop. The model stops advancing its own tick and retains its terminal state.
+Validate increments while the prior population is positive, and identical subsequent records after population reaches zero.
+Summary trends and snapshot indices use observation number, not the frozen model tick.

@@ -1,0 +1,22 @@
+{
+  "start": 3110,
+  "stop": 3111,
+  "matched_statistics": 150,
+  "total_statistics": 150,
+  "comparison": "Floating-point replay tolerance: rtol=1e-10, atol=1e-10; not a paper-level equivalence margin.",
+  "rows": [
+    {
+      "row": 3110,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 8.242295734817162e-13,
+      "trajectory_sha256": "ec0b0a154dab9af5ef828d52dfa40634ec86c7b7001b2dc76720e62b89df6a12"
+    }
+  ],
+  "sha256": {
+    "sugarscape.csv": "33845743cda8be19e6827f353fe13366c1d92fc1eb98dd617c6809874498d99a",
+    "compare_replay.py": "42797e32c73f7f31869ed16fbca60374d6f5e4e383cfb22433264ad0d616a2ff",
+    "summary_statistics.csv": "3755ee0ef305ab1c55725ba74fecfbc11cd560ae5b8cb1ac5fd0d6a6cf94f5d3"
+  }
+}

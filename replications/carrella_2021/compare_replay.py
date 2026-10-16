@@ -35,7 +35,12 @@ def main():
                 names = reader.fieldnames[1:]
                 rows = list(reader)
             assert len(rows) == 501
-            assert [float(row["tick"]) for row in rows] == list(range(501))
+            assert float(rows[0]["tick"]) == 0
+            for previous, current in zip(rows, rows[1:]):
+                if float(previous["count turtles"]) == 0:
+                    assert current == previous, "The extinct author model must remain unchanged"
+                else:
+                    assert float(current["tick"]) == float(previous["tick"]) + 1
             measured = {}
             for name in names:
                 values = np.array([float(row[name]) for row in rows])

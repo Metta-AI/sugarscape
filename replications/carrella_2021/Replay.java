@@ -44,8 +44,21 @@ public class Replay {
                 }
                 for (int tick = 0; tick <= 500; tick++) {
                     String[] fields = observations.get(tick + 1).split(",", -1);
-                    if (fields.length != 7 || Double.parseDouble(fields[0]) != tick) {
+                    if (fields.length != 7) {
                         throw new IllegalStateException("Invalid trajectory at row " + row + ", tick " + tick);
+                    }
+                    double expectedTick = 0;
+                    if (tick > 0) {
+                        String[] previous = observations.get(tick).split(",", -1);
+                        expectedTick = Double.parseDouble(previous[0]);
+                        if (Double.parseDouble(previous[1]) > 0) {
+                            expectedTick += 1;
+                        } else if (!observations.get(tick + 1).equals(observations.get(tick))) {
+                            throw new IllegalStateException("Extinct model changed at row " + row + ", observation " + tick);
+                        }
+                    }
+                    if (Double.parseDouble(fields[0]) != expectedTick) {
+                        throw new IllegalStateException("Invalid model tick at row " + row + ", observation " + tick);
                     }
                     for (String field : fields) {
                         if (!Double.isFinite(Double.parseDouble(field))) {

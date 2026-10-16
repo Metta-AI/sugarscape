@@ -2,7 +2,7 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: 1,056 fresh author-model simulations validated; ten linear-regression and ten rejection-estimation Table 8 values reproduced.
+Status: 1,399 fresh author-model simulations validated; ten linear-regression and ten rejection-estimation Table 8 values reproduced.
 **Not a completed replication:** the other estimators and independent simulator work remain unfinished.
 
 ## Author implementation
@@ -47,7 +47,7 @@ These runs validate the author model and measurement pipeline; they do not valid
 
 The first attempt produced 126/150 matches because it used the newer connector's timing convention.
 The [pre-2020 connector](https://github.com/quaquel/pyNetLogo/blob/becbe42ad5eda943181727a92413b51f2604bf4f/pyNetLogo/core.py)
-records **before** each of 501 `go` calls: ticks 0–500.
+records **before** each of 501 `go` calls. Observation indices are 0–500; model ticks stop advancing after extinction.
 The [January 2020 change](https://github.com/quaquel/pyNetLogo/commit/2ac86b806d56edb8e85c675bd3c645e5079a7c7f)
 adds an extra observation by default. That explains all 24 mismatched final/aggregate statistics.
 The failed trajectory and comparison are preserved alongside the corrected runs.
@@ -170,3 +170,14 @@ The runner was edited during execution, so source-stream interference is suspect
 [Recovered artifacts](results/loclin-5000-recovered-2026-10-15/comparison.json) independently validate all 25,000 predictions and interval metrics.
 The failed process status remains explicit; a clean invocation is still required.
 Do not edit scripts while their interpreters are executing them. Future R launches use `Rscript -e` with `source()` to parse the complete runner before execution.
+
+## Extinction timing correction
+
+Input 3,110 reaches extinction at model tick 109. The original model then returns from `go` without advancing time.
+The driver still records 501 observations, including repeated terminal states.
+Our new validation incorrectly required 501 distinct ticks and stopped this batch; the author model was unchanged.
+Validation now requires advancing ticks while agents survive and identical state after extinction.
+Summaries and snapshots remain indexed by observation, matching the original driver.
+[Evidence](results/extinction-validation-2026-10-15) reproduces 51,450/51,450 statistics for inputs 2,768–3,110 and 150/150 in a fresh extinct replay.
+The fresh trajectory is byte-identical to the initially rejected one. There are now 1,399 uniquely validated inputs and 209,850 matching statistics.
+The remaining part of this batch resumes at input 3,111 in a new directory.
