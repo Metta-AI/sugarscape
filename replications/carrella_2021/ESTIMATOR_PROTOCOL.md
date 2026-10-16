@@ -39,3 +39,7 @@ Adding `-std=gnu17` passed those files, but current R headers introduce a `true`
 All three installation attempts failed; no historical fit ran.
 [Build evidence](results/gam-historical-build-2026-10-15) preserves the source archive hash, compiler settings, logs, and historical constant definition.
 Use an older R toolchain for the next attempt instead of changing statistical source code to fit current headers.
+
+The original full-size notebook explicitly passes `hcorr=TRUE` to local-linear and neural-network ABC.
+The runner now specifies it explicitly too. The installed package already defaults to `TRUE`, so the earlier local-linear launch has identical correction settings.
+The neural-network run retains the original package's ten-network ensemble and five hidden units; no smaller network or sample has been substituted.
