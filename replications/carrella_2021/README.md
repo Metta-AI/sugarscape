@@ -183,3 +183,13 @@ Summaries and snapshots remain indexed by observation, matching the original dri
 [Evidence](results/extinction-validation-2026-10-15) reproduces 51,450/51,450 statistics for inputs 2,768–3,110 and 150/150 in a fresh extinct replay.
 The fresh trajectory is byte-identical to the initially rejected one. There are now 1,399 uniquely validated inputs and 209,850 matching statistics.
 The remaining part of this batch resumes at input 3,111 in a new directory.
+
+## Historical-runtime diagnostic
+
+[Both runtime diagnostics](results/gam-runtime-diagnostic-2026-10-15/comparison.json) completed five point fits on the identical first-fold input.
+The historical container uses unmodified R 4.0.5 and mgcv 1.8-34; the host uses R 4.6.1 and mgcv 1.9-4.
+Predictions differ, but first-fold reproduction-wealth RMSE is 6.43 on the host and 6.56 in the historical container.
+These diagnostics omit interval simulation and confound several runtime changes; they do not establish a package-specific cause.
+An audit of the full current-runtime study locates the large reproduction-wealth error in fold 2: RMSE 445.13 versus 3.55–6.43 in other folds.
+The same paired runtime diagnostic is now running on that failing fold, without changing data or model formulas.
+All five folds remain in the study; no outlier is discarded.
