@@ -170,3 +170,11 @@ No saved completed row is rerun or dropped. Seeds, adapter, model, horizon, and 
 [Initial resumed-prefix audits](results/crash-recovery-2026-10-16/coverage.json) add 13 exact matches across all five workers.
 Total unique audited coverage is 5,786 inputs and 11,572 native Gini measurements, with zero mismatches.
 Immutable saved and resumed snapshots, their checksums, and launch commands are retained. The full reference and generated-landscape studies remain incomplete.
+
+## Resumed-prefix validation
+
+[Five fresh snapshots](results/resumed-prefix-2026-10-16/coverage.json) independently validate 193 resumed inputs, including 180 beyond the recovery snapshot.
+Both Gini measurements match exactly for every input.
+Replacing the earlier overlapping prefixes gives 5,966 unique validated inputs and 11,932 exact measurements.
+Compressed native snapshots, hashes, and disjoint interval accounting are retained.
+All five workers remain active; the full 55,000-input reference and generated-landscape study remain incomplete.
