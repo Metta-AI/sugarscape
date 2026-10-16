@@ -116,7 +116,8 @@ m.datacollector.get_table_dataframe("Health").to_csv(out / "health.csv", index=F
     json.dumps(
         {
             "steps": 1000,
-            "survivors": recorder.survivors(m),
+            "native_reporter": recorder.survivors(m),
+            "individual_agents": len(registry),
             "elapsed": time.monotonic() - started,
         }
     )

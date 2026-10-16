@@ -49,3 +49,10 @@ No rules or ranges are silently changed to match the prose. This PR establishes 
 The network pilot has 47 individual survivors but a native reporter value of 2,544 at termination.
 All three observer replays match their native price and reporter outputs byte-for-byte, covering 3,000 steps and 154,898 health records.
 Notebook source excerpts are distributed under the [author's MIT license](AUTHOR_LICENSE).
+
+## Full Phase I launch
+
+[The declared protocol](PHASE1_PROTOCOL.md) specifies 300 runs: all three original approaches, NumPy seeds 0–99, fixed Mesa seed 42, and 1,000 steps each.
+`run_phase1.py ENGINE LIBRARY NEW_OUTPUT` freezes the runner and protocol, executes one worker, and records exact commands, file hashes, exit codes and all terminal outcomes.
+The live run uses the validated runtime. A free-space guard stops below 2 GiB without deleting evidence.
+The ensemble remains incomplete. No inference is made from partial seed coverage, and no failed seed is silently replaced.
