@@ -1,0 +1,99 @@
+{
+  "as_of": "2026-10-15",
+  "minimum_completed_papers": 10,
+  "completed_studies": 1,
+  "wholly_positive_papers": 0,
+  "interpretation": "Snapshot of committed studies and declared remaining scope. Parsing evidence and reading status does not independently prove scientific completion. No partial study promoted by this audit.",
+  "studies": [
+    {
+      "study": "mcculloch_2022",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/3",
+      "checked_commit": "960e703f24da4f498ca423bdaa5537c3200e5c8c",
+      "status": "completed-mixed",
+      "readme": "replications/mcculloch_2022/README.md",
+      "readme_sha256": "f752c0bc7f9285a47b906e91ae384c6eee5e0ba15d91e0366a18c49b731e8817",
+      "json_evidence_files": 16,
+      "remaining_scope": "Historical seeds unavailable; retain the declared scope and conditional interpretation."
+    },
+    {
+      "study": "carrella_2021",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
+      "checked_commit": "fe70abd6b20db7c6646271508685609833edeea0",
+      "status": "partial",
+      "readme": "replications/carrella_2021/README.md",
+      "readme_sha256": "2f9c2a18d45b74e8a28083f4b446c6b87a6c09cb20f18965522eff236c7eb86c",
+      "json_evidence_files": 42,
+      "remaining_scope": "Remaining estimators and independent fork behavior; unresolved stochastic/runtime differences."
+    },
+    {
+      "study": "raimbault_2019",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
+      "checked_commit": "93b8ab6e6bff8196d024c65c17db6f984c4b2020",
+      "status": "partial",
+      "readme": "replications/raimbault_2019/README.md",
+      "readme_sha256": "bec81eb5d5dc04a0196eea8bf96598df6a38461e1e078e893562d43d68e99b1d",
+      "json_evidence_files": 4,
+      "remaining_scope": "Full spatial-sensitivity ensemble and generated-grid validation."
+    },
+    {
+      "study": "blueprints_2024",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
+      "checked_commit": "1cc48703aa9ffd31308376b999e2b1e643d674b1",
+      "status": "running",
+      "readme": "replications/blueprints_2024/README.md",
+      "readme_sha256": "d8833a3e265fb780e12aeb881b83b89cb061b41718afde5332f129de7eada8a0",
+      "json_evidence_files": 38,
+      "remaining_scope": "Full original-seed ensembles and remaining published experiment families."
+    },
+    {
+      "study": "bigbee_2007",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/7",
+      "checked_commit": "e347d27dc6efe2ab809a87fe9431e5f6fe266468",
+      "status": "partial",
+      "readme": "replications/bigbee_2007/README.md",
+      "readme_sha256": "193ee2120d9b1b420be4ebbdf7de76e04aece367caa4e548c2618636b000f314",
+      "json_evidence_files": 9,
+      "remaining_scope": "Historical2007 protocol and source alignment;2011 operational evidence is insufficient."
+    },
+    {
+      "study": "stevenson_2021",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8",
+      "checked_commit": "b2c5012a6e4d4a8362b4851bf607b3a59b9228d2",
+      "status": "partial",
+      "readme": "replications/stevenson_2021/README.md",
+      "readme_sha256": "96e4fd32fa146a63b1d2e5b3576124b45fe2a2353ef43ffee2e868e084ef25b8",
+      "json_evidence_files": 11,
+      "remaining_scope": "Evolutionary societies, growth-rate fits, distributions, and age discrepancy."
+    },
+    {
+      "study": "buzing_2005",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/9",
+      "checked_commit": "8de10e9fa4fe5210e3bcd2cf8ccd52a3ca08baaa",
+      "status": "partial",
+      "readme": "replications/buzing_2005/README.md",
+      "readme_sha256": "e5b6e9ae2c0e3ae94677e6252ec4b7630d92f17c84a8dec381b50aa6c8a4bfd1",
+      "json_evidence_files": 9,
+      "remaining_scope": "Historical harvesting/scheduling/landscape equivalence and full communication-condition ensembles."
+    },
+    {
+      "study": "replacing_2023",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/10",
+      "checked_commit": "6f8f8e7e475251729bb0166aeb5ba9c7263ea0b6",
+      "status": "partial",
+      "readme": "replications/replacing_2023/README.md",
+      "readme_sha256": "48cb9475bfb5ef41b6eeb6d20be15f6a146b2a41750c6110d0e605bafa5aa86a",
+      "json_evidence_files": 485,
+      "remaining_scope": "Remaining reproduction ensemble, seventeen examples, trade/lending and historical alignment."
+    },
+    {
+      "study": "dogan_2026",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11",
+      "checked_commit": "753fc18d8a4e6077b3d2b71bf426330ba1cb28d3",
+      "status": "running",
+      "readme": "replications/dogan_2026/README.md",
+      "readme_sha256": "fae872f865634484d1c66f32cef887741779960a448e5db5ab1904380b79ee25",
+      "json_evidence_files": 4,
+      "remaining_scope": "Complete canonical and robustness runs, manuscript comparisons and fork integration."
+    }
+  ]
+}
