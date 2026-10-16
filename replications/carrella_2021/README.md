@@ -2,7 +2,7 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: two author-model replays validated; ten linear-regression and five rejection-estimation Table 8 values reproduced.
+Status: two author-model replays validated; ten linear-regression and ten rejection-estimation Table 8 values reproduced.
 **Not a completed replication:** the other estimators and independent simulator work remain unfinished.
 
 ## Author implementation
@@ -61,12 +61,14 @@ Use NumPy 1.26.4 for the comparison script. From the repository root:
 /path/to/jdk/bin/java -Djava.awt.headless=true -cp '/path/to/NetLogo 6.1.1/app/*' \
   replications/carrella_2021/Replay.java \
   '/path/to/audit/data/sugarscape/Sugarscape trade.nlogo' \
-  /path/to/audit/data/sugarscape/params_sugarscape.csv 0 /new/trajectory.csv
-python3 replications/carrella_2021/compare_replay.py /new/trajectory.csv \
-  /path/to/audit/data/sugarscape/sugarscape.csv --row 0 --output /new/comparison.json
+  /path/to/audit/data/sugarscape/params_sugarscape.csv 0 10 /new/trajectories
+python3 replications/carrella_2021/compare_replay.py /new/trajectories \
+  /path/to/audit/data/sugarscape/sugarscape.csv --start 0 --stop 10 --output /new/comparison
 ```
 
-Both commands reject existing output files. Repeat with row 4,999 for the second recorded replay.
+Both commands reject existing output directories. Ranges are zero-based and half-open.
+Use `4999 5000` and `--start 4999 --stop 5000` to replay the last archived input.
+The batch runner reuses one workspace and resets the seed and model for every input, as the original worker pool does.
 
 ## Linear point-estimation results
 
@@ -89,7 +91,8 @@ Rscript replications/carrella_2021/point_estimates.R \
 ## Additional original-estimator runs
 
 The [estimator protocol](ESTIMATOR_PROTOCOL.md) runs the original five-fold routines with their full sampling and bootstrap settings.
-For 1,250 inputs, rejection estimation reproduces **5/5 Table 8 values at printed precision**.
+For both dataset sizes, rejection estimation reproduces **10/10 Table 8 values at printed precision**.
+[The 5,000-input result](results/rejection-5000-2026-10-15/comparison.json) includes all 25,000 held-out parameter predictions.
 [Results](results/rejection-1250-2026-10-15/comparison.json) include fold inputs, predictions, interval endpoints, aggregate metrics, and runtime provenance.
 
 The first quantile-random-forest run differs from published performance by at most 0.002.
@@ -99,6 +102,21 @@ Repeated runs and historical dependency checks remain necessary for statistical 
 
 Two other attempts failed while saving checkpoints because the filesystem filled.
 Their partial outputs and logs remain in the local evidence directory; neither attempt counts as a scientific result.
+
+The first semi-automatic one-dimensional run also completed all five folds.
+[Its recorded comparisons](results/sabc1d-1250-2026-10-15/comparison.json) differ from published performance by up to 0.0132.
+These stochastic differences remain unresolved; no negative conclusion is assigned.
+`analyze_estimator.R INPUT_DIRECTORY NEW_OUTPUT_DIRECTORY` independently recomputes errors, coverage, and interval widths from saved fold predictions.
+It validates all 6,250 predictions for this run and all 25,000 predictions for rejection with 5,000 inputs.
+
+## Complete simulation ensemble
+
+The [declared ensemble protocol](ENSEMBLE_PROTOCOL.md) covers every one of the 5,000 archived parameter/seed inputs.
+Four fresh batches are running; no full-ensemble result is claimed yet.
+The optimized runner matches all 35,070 numeric trajectory values from the separate-call path on ten complete simulations.
+Both paths reproduce 1,500/1,500 archived statistics; the optimized last-input replay also matches 150/150.
+[Validation evidence](results/batch-validation-2026-10-15) includes trajectories, comparisons, hashes, and timing logs.
+An intentionally corrupted reference statistic yields 1,499/1,500 matches and a nonzero exit, confirming that the comparison gate detects disagreement.
 
 ## Replication work remaining
 
