@@ -103,3 +103,19 @@ Membership is unchanged. This demonstrates reaggregation of stale contributions,
 The model lacks a single authoritative shared balance; repeated accumulation of former contributions explains the resource amplification mechanism.
 `analyze_pool_trace.py NATIVE TRACE NEW_OUTPUT` verifies native parity, every recorded sum, and this concrete double-counting event.
 A corrective experiment must establish resource ownership and conservation rather than cap infinite values. No simulation correction or paper verdict is included here.
+
+### Separate corrective experiment
+
+`run_corrected.py ENGINE LIBRARY common-one|common-multi SEED NEW_OUTPUT` applies `shared_pool.py` without modifying either author checkout.
+The experiment assigns one balance to each connected group hierarchy, sums distinct contributions once, and excludes trading within the same balance.
+This changes model semantics. It is not an unchanged author replay or a validated reconstruction of the paper.
+The runner measures growth, metabolism, signed balance removal on death, and total resources at every completed timestep.
+
+[Retained corrective pilots](results/corrective-pilots-2026-10-16/summary.json) use seed zero and the existing Mesa 0.8.5 runtime.
+The one-level run completes 1,000 steps with 43 survivors and 53,823 finite health records.
+Recomputed conservation residuals are at most 1.82e-12 across 2,000 commodity-step observations.
+However, 83 health records contain negative holdings; conservation alone does not validate survival or economic semantics.
+The multi-level run conserves resources through 65 steps, then crashes at step 66.
+The native policy scheduler invokes movement on an agent whose grid position is `None`.
+The membership/death lifecycle requires investigation before any additional correction; neither pilot contributes a completed replication.
+Compressed raw records, manifests, terminal logs, and hashes preserve both outcomes.
