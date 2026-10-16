@@ -121,9 +121,22 @@ The full 55,000-input replay is now running. Generated-grid ensembles and fresh 
 
 `audit_reference.py REFERENCE_CSV RUN prefix|complete NEW_OUTPUT` reads the original hashed archive independently of the runner's copied comparison columns.
 It checks row order, original seeds, population, full horizon, finite measurements, source hashes, and both native Gini values.
-Complete mode additionally requires a successful native exit and all 55,000 rows.
+Complete mode requires a successful native exit and every row in the requested interval.
+Only an interval covering all 55,000 rows sets `complete_reference` to true.
 Prefix mode saves an immutable snapshot and never represents a completed ensemble.
 
 [The first audited prefix](results/reference-prefix-2026-10-15/audit.json) contains 15 simulations and 30 exact native measurement matches.
 A deliberately altered copy of one Gini value is rejected with exactly one reported mismatch; this negative control is labeled separately from scientific results.
 The full reference continues running. This prefix does not establish parameter-space coverage or the generated-landscape conclusions.
+
+## Interrupted reference recovery
+
+The first full replay stopped without a recorded exit status. Its cause is unknown.
+An [independent audit](results/process-recovery-2026-10-16/recovered-audit.json) validates all 2,399 preserved rows: 4,798 exact native Gini matches.
+The original directory and partial execution log remain intact.
+
+The runner accepts `--start ROW --stop ROW` with an exclusive stop, using the original archive row indices.
+A fresh two-row run spanning the restart boundary reproduces all four archived measurements exactly.
+[Its complete interval audit](results/process-recovery-2026-10-16/resume-proof-audit.json) explicitly reports that the full reference remains incomplete.
+The continuation starts at row 2,399 and requests the remaining 52,601 rows in a new directory.
+The two-row validation overlaps the continuation and must not count as additional ensemble coverage.

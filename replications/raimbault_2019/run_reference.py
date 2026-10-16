@@ -11,7 +11,10 @@ parser.add_argument("netlogo", type=Path)
 parser.add_argument("jdk", type=Path)
 parser.add_argument("reference", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--start", type=int, default=0)
+parser.add_argument("--stop", type=int, default=55000)
 args = parser.parse_args()
+assert 0 <= args.start < args.stop <= 55000
 engine = args.engine.resolve()
 assert subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=engine, text=True).strip() == "270cc7f112b3a999b10e02b0f9525038d6d4754d"
 assert not subprocess.check_output(["git", "status", "--porcelain", "--untracked-files=no"], cwd=engine, text=True).strip()
@@ -26,7 +29,7 @@ model = engine / "sugarscape/HEADLESS_Sugarscape.nlogo"
 java = args.jdk.resolve() / "bin/java"
 app = args.netlogo.resolve() / "app"
 command = [str(java), "-Djava.awt.headless=true", "-Xmx768m", "-cp", f"{app / 'NetLogo.jar'}:{app}/*",
-           str(adapter), str(model), str(reference), "0", "55000", str(output / "results.csv")]
+           str(adapter), str(model), str(reference), str(args.start), str(args.stop), str(output / "results.csv")]
 files = [model, adapter, *sorted(model.parent.glob("*.nls")), model.parent / "setup/sugar-map.txt"]
 manifest = {"command": command, "source_sha256": {str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in files},
             "java": subprocess.check_output([str(java), "-version"], stderr=subprocess.STDOUT, text=True),

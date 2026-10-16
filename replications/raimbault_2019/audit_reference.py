@@ -21,18 +21,20 @@ assert len(reference) == 55000
 manifest = json.loads((args.run / "manifest.json").read_text())
 assert manifest["reference_sha256"] == reference_hash
 assert manifest["rows"] == 55000 and manifest["steps_each"] == 10000
+start, stop = map(int, manifest["command"][-3:-1])
+assert 0 <= start < stop <= 55000
 for name, checksum in manifest["source_sha256"].items():
     assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == checksum
 snapshot = (args.run / "results.csv").read_bytes()
 assert snapshot.endswith(b"\n"), "Snapshot caught an incomplete row; retry after the writer flushes"
 rows = list(csv.DictReader(io.StringIO(snapshot.decode())))
-assert 0 < len(rows) <= 55000
+assert 0 < len(rows) <= stop - start
 if args.mode == "complete":
     assert json.loads((args.run / "exit.json").read_text())["exit_code"] == 0
-    assert len(rows) == 55000
+    assert len(rows) == stop - start
 mismatches = []
 maximum_errors = {"gini": 0.0, "mwgini": 0.0}
-for index, row in enumerate(rows):
+for index, row in enumerate(rows, start=start):
     archived = reference[index]
     assert int(row["row"]) == index
     assert int(row["seed"]) == int(archived["replication"])
@@ -47,7 +49,10 @@ for index, row in enumerate(rows):
         maximum_errors[metric] = max(maximum_errors[metric], error)
         if actual != expected:
             mismatches.append({"row": index, "metric": metric, "actual": actual, "expected": expected, "absolute_error": error})
-report = {"mode": args.mode, "rows": len(rows), "required_rows": 55000, "compared_measurements": 2 * len(rows),
+report = {"mode": args.mode, "rows": len(rows), "required_rows": 55000,
+          "requested_interval": [start, stop], "validated_interval": [start, start + len(rows)],
+          "complete_reference": args.mode == "complete" and start == 0 and stop == 55000,
+          "compared_measurements": 2 * len(rows),
           "mismatch_count": len(mismatches), "first_mismatches": mismatches[:20], "maximum_absolute_errors": maximum_errors,
           "reference_sha256": reference_hash, "snapshot_sha256": hashlib.sha256(snapshot).hexdigest(),
           "scope": "Exact native Gini replay for the recorded prefix or complete fixed reference. Generated landscapes and fresh spatial-sensitivity conclusions remain separate."}
