@@ -258,3 +258,10 @@ The [author-hosted formal-analysis paper](https://www.cs.vu.nl/~schut/pubs/Eiben
 The recovered JAWAS archive has no identified generator matching its formal predicates; literal-byte searches alone cannot prove absence.
 Visual inspection also finds temporal inequalities that differ from the prose, requiring explicit interpretation before reproducing the property results.
 Exact settings, trace boundaries, and original property files remain unresolved. No simulation or completed-study credit is claimed.
+
+The archived newscast cache defect now has [native execution evidence](source-audits/jawas-newscast-native-2026/validation.json).
+In a 100-cycle, seed-zero run using archived defaults, the selector returned the wrong message in 803,270 of 811,582 unique-oldest cases.
+Passive instrumentation preserves all ten recorded data files byte-for-byte, and the configuration is unchanged.
+Changing only the single-candidate return expression changes the final population from 90 to 148.
+This is an implementation sensitivity diagnostic, not a paper replication: the archive version, default population, horizon, and parameter grid differ from the Eiben/Schut/Vink experiment.
+The paper-level conclusion remains unresolved; these runs establish a concrete defect that must be investigated before interpreting protocol comparisons.
