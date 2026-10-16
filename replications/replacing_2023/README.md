@@ -131,3 +131,15 @@ Absence does not establish starvation: the configured maximum lifespans range fr
 Dry-half presence does not establish the paper's hibernation behavior.
 Historical revision equivalence, cause-specific mortality, and a predeclared quantitative interpretation of the paper's qualitative similarity criterion remain unresolved.
 This is additional measured evidence, not a completed paper-level replication.
+
+## Cause-specific seasonal mortality pilot
+
+The observer now copies native death records before the original statistics method clears them, without changing simulation rules or random draws.
+`audit_deaths.py BASELINE OBSERVED` first requires native trajectory parity, then reconciles disappearing identities and every native per-step cause count.
+`analyze_seasonal_deaths.py OBSERVED OUTPUT` joins those causes to original wet-half cohorts across all nine complete seasonal windows.
+
+[Seed 14133 evidence](results/seasonal-deaths-pilot-2026-10-15) preserves 501 byte-identical native observations and 4,204 individual death records.
+The full run contains 2,775 starvation deaths and 1,429 aging deaths, with no combat or disease deaths.
+Cohort results separate migration, survival, starvation, and aging without counting replacement agents as survivors.
+Native cause labels identify proximate deaths; they do not establish the causal effect of seasons.
+The complete twenty-seed cause-specific analysis remains unfinished.

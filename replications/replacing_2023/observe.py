@@ -38,13 +38,25 @@ configuration["logfile"] = str(output / "trajectory.json")
 (output / "manifest.json").write_text(json.dumps({
     "baseline": str(args.baseline.resolve()), "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
     "observer_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(), "python": sys.version,
+    "death_columns": ["id", "cause", "age", "max_age", "vision", "sugar_metabolism"],
     "agent_columns": ["id", "x", "y", "vision", "sugar_metabolism", "age", "disease_count", "season", "hemisphere"],
     "timing": "Initialization and after each native doTimestep; no sorting or random draws. Native endSimulation exits after closing its log."
 }, indent=2) + "\n")
 
 class ObservedSugarscape(sugarscape.Sugarscape):
+    def __init__(self, configuration):
+        self.observed_deaths = []
+        super().__init__(configuration)
+
+    def updateRuntimeStats(self):
+        # Copy the same native death records before the statistics method clears them.
+        self.observed_deaths = [[a.ID, a.causeOfDeath, a.age, a.maxAge, a.vision, a.sugarMetabolism]
+                                for a in self.deadAgents]
+        super().updateRuntimeStats()
+
     def snapshot(self):
         record = {"timestep": self.timestep, "population": len(self.agents),
+                  "deaths": self.observed_deaths,
                   "agents": [[a.ID, a.cell.x, a.cell.y, a.vision, a.sugarMetabolism, a.age,
                               len(a.diseases), a.cell.season, a.cell.hemisphere] for a in self.agents]}
         observations.write(json.dumps(record, separators=(",", ":")) + "\n")
