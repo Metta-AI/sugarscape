@@ -37,7 +37,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("archive", type=Path)
 parser.add_argument("java_home", type=Path)
 parser.add_argument("output", type=Path)
-parser.add_argument("variant", choices=["original", "controlled", "balanced-landscape", "paper-harvest"])
+parser.add_argument("variant", choices=["original", "controlled", "balanced-landscape", "paper-harvest", "paper-com1"])
 parser.add_argument("seed", type=int)
 args = parser.parse_args()
 archive = args.archive.resolve()
@@ -59,7 +59,7 @@ sources = sorted(
 )
 assert len(sources) == 78
 seed_replacements = {}
-if args.variant in ("controlled", "balanced-landscape", "paper-harvest"):
+if args.variant in ("controlled", "balanced-landscape", "paper-harvest", "paper-com1"):
     for source in sources:
         data = source.read_bytes()
         count = data.count(b"new Random()")
@@ -68,7 +68,7 @@ if args.variant in ("controlled", "balanced-landscape", "paper-harvest"):
             source.write_bytes(data.replace(b"new Random()", b"nl.vu.cs.sugarland.util.ReplicationRandom.create()"))
     assert sum(seed_replacements.values()) == 7 and len(seed_replacements) == 4
     sources.append(Path(__file__).with_name("ReplicationRandom.java").resolve())
-if args.variant in ("balanced-landscape", "paper-harvest"):
+if args.variant in ("balanced-landscape", "paper-harvest", "paper-com1"):
     source = reference / "src/nl/vu/cs/sugarland/model/SugarScape.java"
     data = source.read_text(encoding="latin-1")
     start = data.index("            while (numberOfSeeds > 0)")
@@ -88,7 +88,7 @@ if args.variant in ("balanced-landscape", "paper-harvest"):
         }
 """ + data[stop:]
     source.write_text(data, encoding="latin-1")
-if args.variant == "paper-harvest":
+if args.variant in ("paper-harvest", "paper-com1"):
     source = reference / "src/nl/vu/cs/sugarland/model/SugarAgent.java"
     data = source.read_text(encoding="latin-1")
     old = "        // if more than one agent on cell, then evenly divide sugar\n        if (agentsOnCell.length > 1)"
@@ -114,6 +114,26 @@ if args.variant == "paper-harvest":
 """
     assert data.count(marker) == 1
     source.write_text(data.replace(marker, audit + marker), encoding="latin-1")
+if args.variant == "paper-com1":
+    source = reference / "src/nl/vu/cs/sugarland/model/SugarAgent.java"
+    data = source.read_text(encoding="latin-1")
+    start = data.index("    private CellValueInformation listenToDirection(int dir)")
+    stop = data.index("    public ", start)
+    section = data[start:stop]
+    marker = "                    if (i == null) continue;"
+    assert section.count(marker) == 4
+    section = section.replace(marker, marker + """
+                    if (messageBoard.getRemoveAfterListening())
+                    {
+                        messageBoard.deleteMessage(i.getXcoordinate(), i.getYcoordinate());
+                        if (messageBoard.getMessage(i.getXcoordinate(), i.getYcoordinate()) != null)
+                            throw new IllegalStateException("COM1 read did not consume message");
+                        System.out.println("paper-com1-consumed");
+                    }""")
+    data = data[:start] + section + data[stop:]
+    old = "            if (messageBoard.getRemoveAfterListening()) messageBoard.deleteMessage(xBest, yBest);"
+    assert data.count(old) == 1
+    source.write_text(data.replace(old, ""), encoding="latin-1")
 with (output / "compile.log").open("w") as log:
     subprocess.run(
         [str(java_home / "bin/javac"), "-encoding", "ISO-8859-1", "-cp", str(reference / "lib"),
@@ -131,11 +151,26 @@ for key, value in (("useGui", "false"), ("numberOfRuns", "1"), ("runLength", "10
 experiment.write_text(settings)
 with (output / "config/Scape/scape.cfg").open("a") as config:
     config.write(f"\nrandomSeed = {args.seed}\n")
-if args.variant in ("balanced-landscape", "paper-harvest"):
+if args.variant in ("balanced-landscape", "paper-harvest", "paper-com1"):
     scape_config = output / "config/Scape/scape.cfg"
     settings, replacements = re.subn(r"(?m)^sugarRichness\s*=.*$", "sugarRichness = 1.0f", scape_config.read_text())
     assert replacements == 1
     scape_config.write_text(settings)
+if args.variant == "paper-com1":
+    overrides = {
+        "Experiment/experiment.cfg": {"nrOfSubcycles": "1"},
+        "Agent/agent.cfg": {"minInitialSugar": "0", "maxReproductionSugar": "0", "mutationSigma": "0.1",
+                            "mutationOperator.listenPref": "true", "mutationOperator.talkPref": "true"},
+        "Scape/scape.cfg": {"message.removeAfterNIterations": "0", "message.removeAfterListening": "true",
+                            "message.removeAfterResponse": "false"},
+    }
+    for relative, changes in overrides.items():
+        config = output / "config" / relative
+        settings = config.read_text()
+        for key, value in changes.items():
+            settings, replacements = re.subn(rf"(?m)^{re.escape(key)}\s*=.*$", f"{key} = {value}", settings)
+            assert replacements == 1, key
+        config.write_text(settings)
 adapter = Path(__file__).with_name("Replay.java").resolve()
 command = [str(java_home / "bin/java"), "-Djava.awt.headless=true", f"-Dreplication.seed={args.seed}", "-cp",
            f"{classes}:{reference / 'lib'}", str(adapter)]

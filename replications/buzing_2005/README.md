@@ -157,3 +157,17 @@ At each observed event it checks every colocated agent's exact native floating-p
 The expanded checks preserve all trajectories from the initial observer run. Both runs end with61agents.
 This outcome uses the pilot's remaining defaults and is not a paper result or negative replication.
 Scheduling, communication removal rules, remaining Table2 settings, and full experimental ensembles still require alignment.
+
+## COM1 specification reconstruction
+
+`run_pilot.py ARCHIVE JDK NEW_OUTPUT paper-com1 SEED` combines the balanced landscape and alone-first harvest with Table2 parameters and one-subcycle scheduling.
+The candidate schedule runs each agent's full rule list before the next randomized agent, consistent with notes3 and7.
+The reconstruction removes each received directional message immediately, including messages not ultimately selected as the best destination.
+The newer source instead removed only the final selected message. This distinction follows section4.5; exact historical source remains unavailable.
+Message expiry is disabled and removal on response is disabled for COM1.
+
+[Two complete100-cycle workflows](results/paper-com1-2026-10-16/audit.json) validate1,400scalar observations and produce identical bytes across all ten output files.
+The native lifecycle verifies6,459received-message deletions, each followed by an absence check.
+Configuration checks cover every Table2 numeric setting, cooperation threshold1, mutation enablement, and message-removal flags.
+Both runs end with299agents. The original seed0 here is a reconstruction seed, not an identified publication seed.
+The full experiment horizon, all thresholds, ten-seed ensembles, COM0/COM2 behavior, and the cooperation denominator remain unfinished.
