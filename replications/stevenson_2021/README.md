@@ -37,11 +37,11 @@ These are model-execution invariants, not evidence that all behavioral choices m
 ```sh
 clang++ -std=c++17 -O2 -Wall -Wextra -Werror \
   replications/stevenson_2021/simulate.cpp -o /absolute/tools/stevenson-simulate
-/absolute/tools/stevenson-simulate 0 85 0 40000 > /new/low-fertility.csv
-/absolute/tools/stevenson-simulate 0 10 40 40000 > /new/birth-cost.csv
+/absolute/tools/stevenson-simulate 0 85 0 40000 100 > /new/low-fertility.csv
+/absolute/tools/stevenson-simulate 0 10 40 40000 100 > /new/birth-cost.csv
 ```
 
-Arguments are seed, infertility denominator, birth cost, and maximum cycles.
+Arguments are seed, infertility denominator, birth cost, maximum cycles, and recording interval.
 Use fresh output files; shell redirection overwrites existing files.
 
 ## Required study targets
@@ -110,3 +110,13 @@ It cannot establish historical equivalence or resolve the remaining age discrepa
 The downloaded PDF has SHA-256 `0a3942d14aa51f0fcd3565fdc17e90b03d91f8268ec87cb14bade20ab097348e`.
 GitHub repository search for the author's name and code search for the paper's author email returned no matches.
 Those searches do not establish that author code is unavailable.
+
+## Recording-frequency verification
+
+The simulator now requires an explicit recording interval; existing ensemble calls retain100-cycle output.
+[System-level verification](results/recording-proof-2026-10-15/proof.json) runs both fixed scenarios for3000cycles with the original binary, updated sparse output, and updated per-cycle output.
+Original and updated sparse CSVs are byte-identical; all6000dense observations contain exactly the same sparse samples.
+Recording frequency does not change random draws or simulation rules.
+Historical retained commands target their original binary and remain unchanged as evidence.
+Per-cycle growth ensembles remain unlaunched because the filesystem filled during preparation.
+Renewed author/title/GitHub searches did not identify a verified implementation; that does not establish its absence.

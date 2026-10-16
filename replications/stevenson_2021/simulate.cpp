@@ -17,12 +17,13 @@ struct Agent {
 };
 
 int main(int argc, char** argv) {
-    if (argc != 5) throw std::invalid_argument("Usage: simulate seed infertility birth-cost cycles");
+    if (argc != 6) throw std::invalid_argument("Usage: simulate seed infertility birth-cost cycles record-every");
     const auto seed = std::stoull(argv[1]);
     const int infertility = std::stoi(argv[2]);
     const int birth_cost = std::stoi(argv[3]);
     const int cycles = std::stoi(argv[4]);
-    if (infertility < 1 || birth_cost < 0 || cycles < 1) throw std::invalid_argument("Invalid parameters");
+    const int record_every = std::stoi(argv[5]);
+    if (infertility < 1 || birth_cost < 0 || cycles < 1 || record_every < 1) throw std::invalid_argument("Invalid parameters");
     std::mt19937_64 random(seed);
     std::array<int, 2500> resource;
     resource.fill(4);
@@ -105,7 +106,7 @@ int main(int argc, char** argv) {
         const auto error = landscape + wealth - before - growth + metabolism + death_loss + births * birth_cost;
         if (error != 0) throw std::logic_error("Resource conservation failed");
         if (agents.size() != existing + births - deaths) throw std::logic_error("Population balance failed");
-        if (cycle % 100 == 0 || cycle == 1 || cycle == cycles || agents.empty()) {
+        if (cycle % record_every == 0 || cycle == 1 || cycle == cycles || agents.empty()) {
             std::sort(wealths.begin(), wealths.end());
             double weighted = 0;
             for (std::size_t i = 0; i < wealths.size(); ++i) weighted += (i + 1.0) * wealths[i];

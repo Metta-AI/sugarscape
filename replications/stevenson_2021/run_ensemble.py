@@ -35,7 +35,7 @@ def main():
         for seed in range(experiment.first_seed, experiment.last_seed + 1):
             started = time.monotonic()
             trajectory = args.output / f"seed-{seed}.csv"
-            command = [str(binary), str(seed), *(str(value) for value in parameters), str(experiment.cycles)]
+            command = [str(binary), str(seed), *(str(value) for value in parameters), str(experiment.cycles), "100"]
             with trajectory.open("x") as stdout, (args.output / f"seed-{seed}.stderr").open("x") as stderr:
                 subprocess.run(command, stdout=stdout, stderr=stderr, check=True)
             record = {"seed": seed, "command": command, "elapsed_seconds": time.monotonic() - started,
