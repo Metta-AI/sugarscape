@@ -135,3 +135,12 @@ It checks the common base transfer rate, mortality accounting inputs, and each f
 [Deposited-data results](results/deposited-uhi-audit-2026-10-15/multiplier-audit.json) reconcile all fifteen canonical rows.
 All twelve speed/multiplier means have higher mortality than the means-tested benchmark, with ratios from 1.541 to 1.844.
 These are descriptive means, not significance tests; the fresh sweep must pass its own source-output and interpretation audits.
+
+## Fresh transfer-multiplier replication
+
+[All sixty native runs](results/multiplier-2026-10-15/comparison.json), plus both calibration runs, complete with exit status zero.
+All 360 output cells match the author deposit, and the complete CSV is byte-identical.
+The independent fresh audit reconciles all fifteen two-times settings with the canonical sweep.
+All twelve speed/multiplier mean mortality ratios remain above the means-tested benchmark, spanning 1.541–1.844.
+Native source and benchmark hashes, exit status, log, both CSVs, and both audits are retained.
+Other robustness studies remain outstanding, so this component does not complete the full paper.
