@@ -1,0 +1,217 @@
+{
+  "revision": "2baa2e411f1be3e8da5e352de98468b42db3d75d",
+  "engine": "/Users/relh/Code/workspace/sugarscape-mason-reference",
+  "seed": 0,
+  "horizon": 1000,
+  "repetitions": 2,
+  "compile_command": [
+    "/opt/homebrew/Cellar/openjdk@11/11.0.32.1/bin/javac",
+    "-cp",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/lib/*",
+    "-d",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-2007-all-showcases-001/classes",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Agent.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/AgentPortrayal2D.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Biological.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Charts.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Culture.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Culture_K.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/DiffuserPollution.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Environment.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/EnvironmentRule.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Growback.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Histogram.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Movement.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Pollution.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/PollutionPortrayal2D.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/QuickSortTester.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Reproduction.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/ResourceDistPair.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Rule.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/RulesSequence.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Scape.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/ScapePortrayal2D.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Statistics.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Sugarscape.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/SugarscapeWithUIHigh.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/Trade.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/WelfareEstimation.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/util/Binner.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/util/DualDoubleArrayFastQSort.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/util/DuplicatesHashtable.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/util/FastQSortAlgorithm.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/util/Logger.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/util/ParamSweeper.java",
+    "/Users/relh/Code/workspace/sugarscape-mason-reference/sim/app/sugarscape/util/ResultsGrapher.java"
+  ],
+  "java": "openjdk version \"11.0.32.1\" 2026-08-18\nOpenJDK Runtime Environment Homebrew (build 11.0.32.1+0)\nOpenJDK 64-Bit Server VM Homebrew (build 11.0.32.1+0, mixed mode)\n",
+  "adapter_sha256": "2fcdb442e5124bc161908f47199fd70bf7432942526f51695a63f6da10bd15b2",
+  "source_sha256": {
+    "sim/app/sugarscape/Agent.java": "7f9355aa6f19612b17b7bb4998ad7bfe7338679b29300db7a1203ee2def4ba64",
+    "sim/app/sugarscape/AgentPortrayal2D.java": "86809061115d060b4ee7b6062fec36d7b869fd4ba965fc52bfe5ae3a8a5fc81d",
+    "sim/app/sugarscape/Biological.java": "724d8e353b214eb90b17d63c02a385eb12299996315fe6e0a426069214d45601",
+    "sim/app/sugarscape/Charts.java": "674094fc9038d239851e7e349a552921174a47c87d656bf5c60a41573a500b34",
+    "sim/app/sugarscape/Culture.java": "ecee9888234975ad0435320abbb81f4dabfb161a6bb4dd61e6856522d1f23ab4",
+    "sim/app/sugarscape/Culture_K.java": "78ccb8371c0a105c56286aab86278d72a9af846437d9589fca83154b0437d2f6",
+    "sim/app/sugarscape/DiffuserPollution.java": "4484e9b36667a537e7122ac188f80123c6078041309b327d68850698ea8d13e7",
+    "sim/app/sugarscape/Environment.java": "1855130122a175ff45ad135b53f7d8e6b30cad4a91a5cfed1794e1d0fae3edd1",
+    "sim/app/sugarscape/EnvironmentRule.java": "087b9d8c9597bb628438d149f4dd8cc20debc623a0e576d55d8112d80395a9e1",
+    "sim/app/sugarscape/Growback.java": "5dc38011cd0c3a4523bdd4c6b618e1b23db0c67bb2664e4585408083b3e4bc4c",
+    "sim/app/sugarscape/Histogram.java": "087a44473b5b29fa3df0eef071bc19fbc42cce76bfb6fe958f8d1e69aa857681",
+    "sim/app/sugarscape/Movement.java": "0d875086f03d43a87aa2bc75da1d2d16956fba915fd04bb9f6ad7ee72926de88",
+    "sim/app/sugarscape/Pollution.java": "6a1f24d990a38d85ae3cb1812b798203f59b4b2f08920aa89733601e00cb56da",
+    "sim/app/sugarscape/PollutionPortrayal2D.java": "1872af4870cc74e1d0aa6b4d8bf622dcf5a8de3736f49f04f7f5e06e98378ed2",
+    "sim/app/sugarscape/QuickSortTester.java": "27cb39f965aafe71bc2b3f1ac49186da8087da58f0ac0f44c5b34a6fdc31f656",
+    "sim/app/sugarscape/Reproduction.java": "dc6e83a013a42dbdf8085a5809f541a7fafd9a0f3f49db99aba1087c6f6fb9ea",
+    "sim/app/sugarscape/ResourceDistPair.java": "8b7aea813ed319e4e9dc8c9ed5a4ad091bec3ae919624d7522c6b98cb62f8a12",
+    "sim/app/sugarscape/Rule.java": "4195131a9e2226edb77471169679ef269a0b3b8ab91d9a4f95befe7a079cc4fd",
+    "sim/app/sugarscape/RulesSequence.java": "6bd81c76f019893c9f45d3b229a65452da24b2a7d08a2898d3b93bcf1a399912",
+    "sim/app/sugarscape/Scape.java": "68b656e46a1f1e28b2479a28398b0165a5c661bb482d5363016a2bcae308787a",
+    "sim/app/sugarscape/ScapePortrayal2D.java": "907cd75dd08b27ed3427d42406c69570b74d2aaab66a3c08e0d93c61a86bf476",
+    "sim/app/sugarscape/Statistics.java": "8d09b26bde83c6037b0c40b6ec56eefecd1dd5d4ea9dda636fb66f1729cac5f7",
+    "sim/app/sugarscape/Sugarscape.java": "11dccd22ef6545360b73e074cbdfb42c51ade46efda4a091a3aaac3df409539e",
+    "sim/app/sugarscape/SugarscapeWithUIHigh.java": "82161511abf4762640fe190248eeb322900e44bc8b727f73d139b7df64d92505",
+    "sim/app/sugarscape/Trade.java": "cf1816cb404d1a37b877ea149b16cb7c410e527189b66387bc9c22611295f2e0",
+    "sim/app/sugarscape/WelfareEstimation.java": "cbce456c72529e0897c8e82125b7f72f8cc659e42c8e30a71521aa4cbd0458d3",
+    "sim/app/sugarscape/util/Binner.java": "c39c00daee55f0c811dfd36acadd1e7f692f02316bd30809a9094c087ab80f4e",
+    "sim/app/sugarscape/util/DualDoubleArrayFastQSort.java": "3c7691ee03dc81816f8afabefa530e36909c3e7202fb214197cbcbd9a9398946",
+    "sim/app/sugarscape/util/DuplicatesHashtable.java": "ba35afd4dff4df9729fd783c5c6f8403404a16fab43d45297c48794809830323",
+    "sim/app/sugarscape/util/FastQSortAlgorithm.java": "4a9e265380138f92ca3bd293bbf8fc61596871e2d75eb1631dd86ec14ce4c0a1",
+    "sim/app/sugarscape/util/Logger.java": "d2a009c6e699407fabd6165c8ed47738ff78bc3b11c6816883db854a27c7d203",
+    "sim/app/sugarscape/util/ParamSweeper.java": "8ee69c98c8b5adf23da3c43aae6a1d2370e91f67864412922558eb69659d28d8",
+    "sim/app/sugarscape/util/ResultsGrapher.java": "be5c40f03fadf5a62d0b280e98ab1ec8dfb7975f38336922def923c6905f9c57"
+  },
+  "dependencies_sha256": {
+    "lib/iText-2.1.5.jar": "40bc530593f9173e90aff5cd000c8cb185ebf851f9617b131d43f81989a9ad41",
+    "lib/jcommon-1.0.16.jar": "2993af89ce598a1c2164dff4bc92166d8f787796a656525cf6c1f21813febeed",
+    "lib/jfreechart-1.0.13.jar": "fe5389166de53bea053d2bc414e627ef2c46677ff9c22a020060714b8f749c32",
+    "lib/jmf.jar": "4ab8cf5157d6714d44e30cc848eea8949d51e4777a9412c94c94a0d64274af90",
+    "lib/mason.jar": "2e2675130d9877d676f243ba921b21a7d661ea634efcea6fdfe1981aaa296763",
+    "lib/quaqua-colorchooser-only.jar": "4b72f5e694a577d9a7c90b15870e939f627517503e99cf3d03ae208da7f191b0"
+  },
+  "targets": [
+    {
+      "id": "anim2-2",
+      "observable": "Spatial clustering near resource peaks",
+      "configuration": "conf/anim2-2.conf",
+      "configuration_sha256": "184a1951708ac04bf51ffdf3c72205dbba7e7da83a18ed0b6f03ec4a7aab6cc1",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "fig2-5",
+      "observable": "Carrying-capacity response to vision and metabolism",
+      "configuration": "conf/fig2-5.conf",
+      "configuration_sha256": "b584d7b9e8eb57b84d8a30c4042ce5ec08950b41bab8d9df657c28501f8f3009",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "anim2-3",
+      "observable": "Wealth distribution and upper tail",
+      "configuration": "conf/anim2-3.conf",
+      "configuration_sha256": "2071e4eeead32c874e34dbac98d11d0d8a878e418d6dd099067a51bc9c2e8823",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "anim2-4",
+      "observable": "Inequality through time",
+      "configuration": "conf/anim2-4.conf",
+      "configuration_sha256": "3a8b5d80728f49cd4499b7fb4cbb06c09c307cc3d5d2f72e08bc7d59b300a84d",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "anim2-6",
+      "observable": "Traveling spatial waves",
+      "configuration": "conf/anim2-6.conf",
+      "configuration_sha256": "ee7f6dcc4af15ee07e378fee888af240501283deedee734549aecacbb78f1fc8",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "anim2-7",
+      "observable": "Seasonal spatial redistribution",
+      "configuration": "conf/anim2-7.conf",
+      "configuration_sha256": "059c2a90b937559bbc880835c323b07c1d0d81b5c3690df500d0f3e5ddbcf3fa",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "anim2-8",
+      "observable": "Pollution-driven migration",
+      "configuration": "conf/anim2-8.conf",
+      "configuration_sha256": "56b3bad3c09d75abe223991073a5cf635be7088fd38f412dba8e390ac3b34517",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "fig3-1",
+      "observable": "Population stationarity with reproduction",
+      "configuration": "conf/fig3-1.conf",
+      "configuration_sha256": "d3b0d963b0e3a8b2e77d7056921a3ba331f2d3745f21d90622609b205365650d",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "anim3-1",
+      "observable": "Age-distribution stationarity",
+      "configuration": "conf/anim3-1.conf",
+      "configuration_sha256": "f451a81eda5319e216ba48924300e779c58ef294dbe17462afb933e220322720",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "fig3-2",
+      "observable": "Evolution of vision and metabolism",
+      "configuration": "conf/fig3-2.conf",
+      "configuration_sha256": "67876b978a29771b8a23274c0a7b2385db71a4c1da019a9ac691886b9937b827",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "fig3-3",
+      "observable": "Low-amplitude population cycles",
+      "configuration": "conf/fig3-3.conf",
+      "configuration_sha256": "7f3e090ad6e81c57af02c195d005a84eb9fbb92ef199b2ef5ac2e179b4a6d487",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "fig3-4",
+      "observable": "High-amplitude population cycles",
+      "configuration": "conf/fig3-4.conf",
+      "configuration_sha256": "268d3a2f7b7285761fd49ea7bda72a5f99ce6f5e0184d9337d1d6a20dfc4a46e",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "fig3-5",
+      "observable": "Population collapse and extinction",
+      "configuration": "conf/fig3-5.conf",
+      "configuration_sha256": "db235b1c6fe6b94250199c82b7a222974e4850b2703e03687d7b0fba1686637b",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "anim3-6",
+      "observable": "Cultural homogenization",
+      "configuration": "conf/anim3-6.conf",
+      "configuration_sha256": "58413db4bc0a94145a2c0d12c3331ab9bc3e091af6399cda232d2c2ac85f4d39",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "fig3-8",
+      "observable": "Cultural group convergence and fluctuations",
+      "configuration": "conf/fig3-8.conf",
+      "configuration_sha256": "b8de7efa5fe1011def38dff2f0465bc66c183e6ddbd9798bfc3c9fb40009ba2d",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "anim4-1",
+      "observable": "Two-resource movement and population",
+      "configuration": "conf/anim4-1.conf",
+      "configuration_sha256": "e5adbb1b770077919161af9a70ad5c805c90b99dcd1157e43c13537124f1f791",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    },
+    {
+      "id": "fig4-4",
+      "observable": "Trade activity over time",
+      "configuration": "conf/fig4-4.conf",
+      "configuration_sha256": "cabbe5cfd514a4561eaa9aa381aee2959a89eea0a28fbf19572588def9788a7c",
+      "acceptance_criterion": "Unspecified: recover numerical references, horizons, seeds, and operationalize qualitative targets before confirmatory runs"
+    }
+  ],
+  "overrides": {
+    "chart_display": "false"
+  },
+  "scope": "Operational coverage and repeatability of all17draft configurations. New seed0 and common1000-step horizon are not the paper's experimental protocol."
+}

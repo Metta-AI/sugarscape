@@ -63,3 +63,24 @@ A single replacement-population pilot does not establish reproduction of the pap
 Each configuration and the draft PDF are hashed. This draft is related evidence, not a verified substitute for the published 2007 table.
 The targets cover movement, wealth, inequality, seasons, pollution, reproduction, culture, and trade.
 Numerical thresholds, ensemble sizes, and temporal sampling remain to be declared before confirmatory execution.
+
+## Complete draft-showcase execution audit
+
+All seventeen draft configurations now run twice from a fresh compilation of the unchanged author release.
+All 34 native processes exit successfully; paired logs are byte-identical across 28,466 observations.
+[Execution audit](results/all-showcases-2026-10-15/audit.json) retains invalid measurements rather than treating successful execution as scientific validation.
+Several reproduction cases emit nonfinite Gini statistics; the trade output contains an extra column absent from its header.
+These runs use new seed zero and a common 1,000 scheduled-time horizon, not a recovered paper protocol.
+
+A read-only `AuditReplay.java` inspects the live population counter, grid, and agent registry without changing native output.
+Its `fig3-5` output is byte-identical to the original run, but [population accounting](results/all-showcases-2026-10-15/population-registry-audit.json) disagrees from reported time 13.
+At that point the counter reports 413 agents, the grid contains 405 living agents, and the registry contains 400.
+At the end those counts are 689, 683, and zero.
+
+Source inspection identifies two reproduction defects in this 2011 release:
+newborns are not inserted into the registry used by statistics, and `idFreeSpace` both reverses occupancy and checks a different direction from the returned cell.
+The latter can overwrite an occupied cell. These defects must be corrected and validated before interpreting reproduction outcomes.
+The original source and all failing measurements remain retained. No defect is attributed to the 2007 paper without historical evidence.
+
+The alternative author URL `https://cs.gmu.edu/~sean/papers/Replication07.pdf` also redirects to a homepage as of this check.
+Its downloaded body is HTML, despite a search index containing the old paper text; it is not used as a recovered published PDF.
