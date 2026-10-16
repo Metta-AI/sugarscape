@@ -1,0 +1,125 @@
+* installing *source* package ‘mgcv’ ...
+** this is package ‘mgcv’ version ‘1.8-34’
+** package ‘mgcv’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘Apple clang version 17.0.0 (clang-1700.0.13.5)’
+using SDK: ‘MacOSX15.5.sdk’
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c coxph.c -o coxph.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c davies.c -o davies.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c discrete.c -o discrete.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c gdi.c -o gdi.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c init.c -o init.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c magic.c -o magic.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c mat.c -o mat.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c matrix.c -o matrix.o
+matrix.c:144:66: warning: data argument not used by format string [-Wformat-extra-args]
+  144 |       { error(_("An out of bound write to matrix has occurred!"),1);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ^
+matrix.c:249:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  249 | void matmult(C,A,B,tA,tB) matrix C,A,B;int tA,tB;
+      |      ^
+matrix.c:377:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  377 | double dot(a,b) matrix a,b;
+      |        ^
+matrix.c:390:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  390 | double enorm(d) matrix d;
+      |        ^
+matrix.c:412:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  412 | void householder(u,a,b,t1) matrix *u,a,b;int t1;
+      |      ^
+matrix.c:428:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  428 | void Hmult(C,u) matrix C,u;
+      |      ^
+matrix.c:449:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  449 | void HQmult(C,U,p,t) matrix C,U;int p,t;
+      |      ^
+matrix.c:518:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  518 | void QT(Q,A,fullQ) matrix Q,A;int fullQ;
+      |      ^
+8 warnings generated.
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c mgcv.c -o mgcv.o
+mgcv.c:66:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   66 | matrix getD(h,nak) matrix h;int nak;
+      |        ^
+1 warning generated.
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c misc.c -o misc.o
+misc.c:31:48: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+   31 |     Rprintf("adjusting %d memory allocation\n",nmemb);
+      |                        ~~                      ^~~~~
+      |                        %zu
+1 warning generated.
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c mvn.c -o mvn.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c qp.c -o qp.o
+qp.c:42:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   42 | matrix addconQT(Q,T,a,u) matrix *Q,T,a,*u;
+      |        ^
+1 warning generated.
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c soap.c -o soap.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -std=gnu17 -fPIC  -g -O2  -c sparse-smooth.c -o sparse-smooth.o
+sparse-smooth.c:1310:13: error: expected identifier or '('
+ 1310 |   int i,j,k,true=1,kk,l,i0,i1,max_nn=0,jj,di,doff;
+      |             ^
+/Library/Developer/CommandLineTools/usr/lib/clang/17/include/stdbool.h:25:14: note: expanded from macro 'true'
+   25 | #define true 1
+      |              ^
+sparse-smooth.c:1310:13: error: expected ';' at end of declaration
+ 1310 |   int i,j,k,true=1,kk,l,i0,i1,max_nn=0,jj,di,doff;
+      |             ^
+      |             ;
+sparse-smooth.c:1319:3: error: use of undeclared identifier 'i0'
+ 1319 |   i0 = 0;
+      |   ^
+sparse-smooth.c:1321:5: error: use of undeclared identifier 'i1'
+ 1321 |     i1 = off[j];
+      |     ^
+sparse-smooth.c:1322:9: error: use of undeclared identifier 'i1'
+ 1322 |     if (i1-i0>max_nn) max_nn = i1-i0; /* maximum number of neighbours */
+      |         ^
+sparse-smooth.c:1322:12: error: use of undeclared identifier 'i0'
+ 1322 |     if (i1-i0>max_nn) max_nn = i1-i0; /* maximum number of neighbours */
+      |            ^
+sparse-smooth.c:1322:15: error: use of undeclared identifier 'max_nn'
+ 1322 |     if (i1-i0>max_nn) max_nn = i1-i0; /* maximum number of neighbours */
+      |               ^
+sparse-smooth.c:1322:23: error: use of undeclared identifier 'max_nn'
+ 1322 |     if (i1-i0>max_nn) max_nn = i1-i0; /* maximum number of neighbours */
+      |                       ^
+sparse-smooth.c:1322:32: error: use of undeclared identifier 'i1'
+ 1322 |     if (i1-i0>max_nn) max_nn = i1-i0; /* maximum number of neighbours */
+      |                                ^
+sparse-smooth.c:1322:35: error: use of undeclared identifier 'i0'
+ 1322 |     if (i1-i0>max_nn) max_nn = i1-i0; /* maximum number of neighbours */
+      |                                   ^
+sparse-smooth.c:1323:5: error: use of undeclared identifier 'i0'
+ 1323 |     i0=i1;
+      |     ^
+sparse-smooth.c:1323:8: error: use of undeclared identifier 'i1'
+ 1323 |     i0=i1;
+      |        ^
+sparse-smooth.c:1325:3: error: use of undeclared identifier 'max_nn'
+ 1325 |   max_nn++; /* self! */
+      |   ^
+sparse-smooth.c:1326:7: error: use of undeclared identifier 'max_nn'
+ 1326 |   if (max_nn<6) max_nn=6;
+      |       ^
+sparse-smooth.c:1326:17: error: use of undeclared identifier 'max_nn'
+ 1326 |   if (max_nn<6) max_nn=6;
+      |                 ^
+sparse-smooth.c:1328:37: error: use of undeclared identifier 'max_nn'
+ 1328 |   M = (double *)CALLOC((size_t) 6 * max_nn,sizeof(double));
+      |                                     ^
+sparse-smooth.c:1329:38: error: use of undeclared identifier 'max_nn'
+ 1329 |   Mi = (double *)CALLOC((size_t) 6 * max_nn,sizeof(double)); 
+      |                                      ^
+sparse-smooth.c:1334:3: error: use of undeclared identifier 'di'
+ 1334 |   di = i0 = 0;
+      |   ^
+sparse-smooth.c:1334:8: error: use of undeclared identifier 'i0'
+ 1334 |   di = i0 = 0;
+      |        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [sparse-smooth.o] Error 1
+ERROR: compilation failed for package ‘mgcv’
+* removing ‘/Users/relh/Code/workspace/sugarscape-replication-tools/mgcv-1.8-34/library/mgcv’

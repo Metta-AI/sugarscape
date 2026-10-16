@@ -1,0 +1,84 @@
+* installing *source* package ‘mgcv’ ...
+** this is package ‘mgcv’ version ‘1.8-34’
+** package ‘mgcv’ successfully unpacked and MD5 sums checked
+** using staged installation
+** libs
+using C compiler: ‘Apple clang version 17.0.0 (clang-1700.0.13.5)’
+using SDK: ‘MacOSX15.5.sdk’
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -fPIC  -g -O2  -c coxph.c -o coxph.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -fPIC  -g -O2  -c davies.c -o davies.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -fPIC  -g -O2  -c discrete.c -o discrete.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -fPIC  -g -O2  -c gdi.c -o gdi.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -fPIC  -g -O2  -c init.c -o init.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -fPIC  -g -O2  -c magic.c -o magic.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -fPIC  -g -O2  -c mat.c -o mat.o
+clang -std=gnu23 -I"/opt/homebrew/Cellar/r/4.6.1_1/lib/R/include" -DNDEBUG -include float.h -DDOUBLE_EPS=DBL_EPSILON  -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/opt/readline/include -I/opt/homebrew/opt/xz/include -I/opt/homebrew/include    -fPIC  -g -O2  -c matrix.c -o matrix.o
+matrix.c:144:66: warning: data argument not used by format string [-Wformat-extra-args]
+  144 |       { error(_("An out of bound write to matrix has occurred!"),1);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ^
+matrix.c:249:14: error: unknown type name 'C'
+  249 | void matmult(C,A,B,tA,tB) matrix C,A,B;int tA,tB;
+      |              ^
+matrix.c:249:16: error: unknown type name 'A'
+  249 | void matmult(C,A,B,tA,tB) matrix C,A,B;int tA,tB;
+      |                ^
+matrix.c:249:18: error: unknown type name 'B'
+  249 | void matmult(C,A,B,tA,tB) matrix C,A,B;int tA,tB;
+      |                  ^
+matrix.c:249:20: error: unknown type name 'tA'
+  249 | void matmult(C,A,B,tA,tB) matrix C,A,B;int tA,tB;
+      |                    ^
+matrix.c:249:23: error: unknown type name 'tB'
+  249 | void matmult(C,A,B,tA,tB) matrix C,A,B;int tA,tB;
+      |                       ^
+matrix.c:249:26: error: expected ';' after top level declarator
+  249 | void matmult(C,A,B,tA,tB) matrix C,A,B;int tA,tB;
+      |                          ^
+      |                          ;
+matrix.c:254:1: error: expected identifier or '('
+  254 | { int i,j,k;
+      | ^
+matrix.c:377:12: error: unknown type name 'a'
+  377 | double dot(a,b) matrix a,b;
+      |            ^
+matrix.c:377:14: error: unknown type name 'b'
+  377 | double dot(a,b) matrix a,b;
+      |              ^
+matrix.c:377:16: error: expected ';' after top level declarator
+  377 | double dot(a,b) matrix a,b;
+      |                ^
+      |                ;
+matrix.c:379:1: error: expected identifier or '('
+  379 | { int i,k=0;double c=0.0,*p,*p1;
+      | ^
+matrix.c:390:14: error: unknown type name 'd'
+  390 | double enorm(d) matrix d;
+      |              ^
+matrix.c:390:16: error: expected ';' after top level declarator
+  390 | double enorm(d) matrix d;
+      |                ^
+      |                ;
+matrix.c:394:1: error: expected identifier or '('
+  394 | { double e=0.0,m=0.0,y,*p;
+      | ^
+matrix.c:412:18: error: unknown type name 'u'
+  412 | void householder(u,a,b,t1) matrix *u,a,b;int t1;
+      |                  ^
+matrix.c:412:20: error: unknown type name 'a'
+  412 | void householder(u,a,b,t1) matrix *u,a,b;int t1;
+      |                    ^
+matrix.c:412:22: error: unknown type name 'b'
+  412 | void householder(u,a,b,t1) matrix *u,a,b;int t1;
+      |                      ^
+matrix.c:412:24: error: unknown type name 't1'
+  412 | void householder(u,a,b,t1) matrix *u,a,b;int t1;
+      |                        ^
+matrix.c:412:27: error: expected ';' after top level declarator
+  412 | void householder(u,a,b,t1) matrix *u,a,b;int t1;
+      |                           ^
+      |                           ;
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+1 warning and 20 errors generated.
+make: *** [matrix.o] Error 1
+ERROR: compilation failed for package ‘mgcv’
+* removing ‘/Users/relh/Code/workspace/sugarscape-replication-tools/mgcv-1.8-34/library/mgcv’

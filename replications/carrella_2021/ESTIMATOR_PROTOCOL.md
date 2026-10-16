@@ -19,3 +19,23 @@ Do not replace a difficult algorithm or shrink its data, folds, or bootstrap cou
 
 Retain logs, package versions, full fold results, and failure artifacts.
 The archived paper's aggregate coverage statements span other models, so Sugarscape-only coverage cannot validate those aggregate claims.
+
+## Historical GAM version sensitivity
+
+The first `mgcv` 1.9-4 run differs from all five published small-dataset values.
+Compare the same five-fold workflow, data, seed zero, `bam=TRUE`, and original interval procedure using `mgcv` 1.8-34.
+The CRAN archive dates that release to February 16, 2021, before the pinned author's April 2, 2021 commit.
+This is a version-sensitivity experiment; no evidence identifies the authors' actual package version.
+Do not change fitting options or select versions based on whether they approach the published values.
+Retain all five comparisons, runtime information, source hashes, and installation failures.
+
+The unmodified package initially fails compilation against R 4.6.1 because `DOUBLE_EPS` is no longer defined.
+R 4.0's `R_ext/Constants.h` defines it as `DBL_EPSILON` from `float.h`.
+A second installation attempt supplies exactly that compiler definition without changing the package source.
+Even if successful, this isolates the package version under the current R runtime; it does not recreate the full historical environment.
+
+The constant-only attempt then failed on pre-C23 function definitions.
+Adding `-std=gnu17` passed those files, but current R headers introduce a `true` macro that collides with an old package variable.
+All three installation attempts failed; no historical fit ran.
+[Build evidence](results/gam-historical-build-2026-10-15) preserves the source archive hash, compiler settings, logs, and historical constant definition.
+Use an older R toolchain for the next attempt instead of changing statistical source code to fit current headers.
