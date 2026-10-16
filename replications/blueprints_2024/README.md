@@ -130,3 +130,7 @@ Both retain the original interrupted seeds, with 10,002 total observations and f
 Original partial outputs remain preserved. Neither retry is counted twice in the seed schedule.
 Raw resumes from index 66 and altruist from index 17 in fresh directories; egoist and utilitarian retries are still running.
 All recovered prefixes and remaining intervals require reconciliation before comparing the full 500-seed outcomes.
+
+The egoist retry also completes all 5,000 steps, ending with population 495.
+Its 5,001 observations pass the independent full-interval audit and are retained with the other recovered seeds.
+The remaining egoist batch resumes at index 18; the utilitarian retry is still running.
