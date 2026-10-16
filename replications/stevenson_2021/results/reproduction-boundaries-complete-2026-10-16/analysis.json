@@ -1,0 +1,3345 @@
+{
+  "mode": "complete",
+  "completed_ensemble": true,
+  "validated_runs": 80,
+  "required_runs": 80,
+  "manifest_sha256": "aa2080f906c6906fe36643b1456f95a26511b78c025063412b02e6f7e501d4d1",
+  "ledger_sha256": "9834eb9c4456e11266b22d0e123b98ade2833eeae127842e1b7f808cb232781e",
+  "analyzer_sha256": "c1d4361b17399a94e12d0eff3b67601a857d751b5ecad84fbc7edf70f89ffb83",
+  "per_run": [
+    {
+      "scenario": "low-fertility",
+      "seed": 111,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.168,
+          "wealth": 4495.096,
+          "mean_age": 433.25788897862265,
+          "gini": 0.5317142617891654
+        },
+        "later": {
+          "population": 836.876,
+          "wealth": 4541.46,
+          "mean_age": 442.15537269194573,
+          "gini": 0.5305116914742153
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 111,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.64,
+          "wealth": 4522.352,
+          "mean_age": 437.25942702211626,
+          "gini": 0.5266997184897062
+        },
+        "later": {
+          "population": 835.608,
+          "wealth": 4532.412,
+          "mean_age": 435.2897769361289,
+          "gini": 0.5285331523706173
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 111,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.012,
+          "wealth": 5155.748,
+          "mean_age": 547.0447410467863,
+          "gini": 0.5316523951143131
+        },
+        "later": {
+          "population": 836.916,
+          "wealth": 5186.936,
+          "mean_age": 560.1009239383822,
+          "gini": 0.5300130214552563
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 111,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 837.028,
+          "wealth": 5174.72,
+          "mean_age": 550.4556651652174,
+          "gini": 0.526958650566309
+        },
+        "later": {
+          "population": 836.26,
+          "wealth": 5160.996,
+          "mean_age": 555.7755782364488,
+          "gini": 0.5294237811517175
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 112,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.98,
+          "wealth": 4564.76,
+          "mean_age": 451.74339817150167,
+          "gini": 0.5317538336982008
+        },
+        "later": {
+          "population": 836.512,
+          "wealth": 4567.232,
+          "mean_age": 440.4689996672382,
+          "gini": 0.5320174698977576
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 112,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.896,
+          "wealth": 4609.808,
+          "mean_age": 450.25119806151224,
+          "gini": 0.5338397106121154
+        },
+        "later": {
+          "population": 836.796,
+          "wealth": 4582.44,
+          "mean_age": 448.6953870208388,
+          "gini": 0.5320592508381765
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 112,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 837.28,
+          "wealth": 5154.044,
+          "mean_age": 554.3499380940555,
+          "gini": 0.5281256875032643
+        },
+        "later": {
+          "population": 836.056,
+          "wealth": 5136.704,
+          "mean_age": 560.371587672538,
+          "gini": 0.5277664919264191
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 112,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.3,
+          "wealth": 5128.536,
+          "mean_age": 559.1696783425972,
+          "gini": 0.5266053445546771
+        },
+        "later": {
+          "population": 835.724,
+          "wealth": 5071.376,
+          "mean_age": 539.6747727989558,
+          "gini": 0.5240206066227325
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 113,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.764,
+          "wealth": 4559.996,
+          "mean_age": 438.65834877896634,
+          "gini": 0.5311398425021396
+        },
+        "later": {
+          "population": 836.376,
+          "wealth": 4559.752,
+          "mean_age": 438.9161774826071,
+          "gini": 0.5304984203390807
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 113,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.496,
+          "wealth": 4643.364,
+          "mean_age": 451.4655796905578,
+          "gini": 0.533608344840493
+        },
+        "later": {
+          "population": 835.92,
+          "wealth": 4598.564,
+          "mean_age": 450.3572223650898,
+          "gini": 0.5287100240939165
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 113,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.448,
+          "wealth": 5193.964,
+          "mean_age": 587.4381092818354,
+          "gini": 0.5302305825464829
+        },
+        "later": {
+          "population": 836.308,
+          "wealth": 5138.5,
+          "mean_age": 549.276772730273,
+          "gini": 0.527921607071387
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 113,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.264,
+          "wealth": 5147.0,
+          "mean_age": 567.0846351735397,
+          "gini": 0.5266888124941796
+        },
+        "later": {
+          "population": 836.412,
+          "wealth": 5184.472,
+          "mean_age": 555.3156552438221,
+          "gini": 0.5268891962184018
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 114,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.856,
+          "wealth": 4571.544,
+          "mean_age": 443.44971577438173,
+          "gini": 0.5288263819018171
+        },
+        "later": {
+          "population": 837.68,
+          "wealth": 4573.716,
+          "mean_age": 437.4726252226618,
+          "gini": 0.5317159184853126
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 114,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.324,
+          "wealth": 4565.548,
+          "mean_age": 442.33422706768596,
+          "gini": 0.5284826805669145
+        },
+        "later": {
+          "population": 836.828,
+          "wealth": 4580.096,
+          "mean_age": 450.49884576044695,
+          "gini": 0.5264963740193234
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 114,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.372,
+          "wealth": 5140.508,
+          "mean_age": 552.2709072145519,
+          "gini": 0.5284602528394473
+        },
+        "later": {
+          "population": 837.5,
+          "wealth": 5114.128,
+          "mean_age": 538.7128780396783,
+          "gini": 0.5255638255196081
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 114,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.752,
+          "wealth": 5091.356,
+          "mean_age": 543.5220580709322,
+          "gini": 0.526329659224928
+        },
+        "later": {
+          "population": 836.064,
+          "wealth": 5129.416,
+          "mean_age": 547.8187666952487,
+          "gini": 0.5267166962675509
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 115,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.212,
+          "wealth": 4569.836,
+          "mean_age": 439.43894406081847,
+          "gini": 0.5292964651461523
+        },
+        "later": {
+          "population": 836.144,
+          "wealth": 4570.572,
+          "mean_age": 438.2955230301615,
+          "gini": 0.5333726774817155
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 115,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.452,
+          "wealth": 4610.996,
+          "mean_age": 442.2735924290131,
+          "gini": 0.5306660494153925
+        },
+        "later": {
+          "population": 835.868,
+          "wealth": 4617.112,
+          "mean_age": 450.38964288064454,
+          "gini": 0.5331099554523284
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 115,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.708,
+          "wealth": 5111.344,
+          "mean_age": 527.4682362547237,
+          "gini": 0.5257893165887154
+        },
+        "later": {
+          "population": 836.376,
+          "wealth": 5095.208,
+          "mean_age": 540.6052633812536,
+          "gini": 0.5248370599001908
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 115,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 835.784,
+          "wealth": 5109.244,
+          "mean_age": 533.4523636672484,
+          "gini": 0.5257499962057436
+        },
+        "later": {
+          "population": 835.88,
+          "wealth": 5105.396,
+          "mean_age": 541.0313349559982,
+          "gini": 0.5263422121252208
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 116,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.064,
+          "wealth": 4555.58,
+          "mean_age": 442.06969126189966,
+          "gini": 0.5306187383783176
+        },
+        "later": {
+          "population": 836.656,
+          "wealth": 4530.04,
+          "mean_age": 433.74047170064085,
+          "gini": 0.5331422644885183
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 116,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.364,
+          "wealth": 4632.688,
+          "mean_age": 446.11745988467516,
+          "gini": 0.5296649122565227
+        },
+        "later": {
+          "population": 837.004,
+          "wealth": 4595.32,
+          "mean_age": 453.9466840497597,
+          "gini": 0.5326231769040525
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 116,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.06,
+          "wealth": 5101.064,
+          "mean_age": 541.8586607332486,
+          "gini": 0.5270253445580552
+        },
+        "later": {
+          "population": 836.14,
+          "wealth": 5103.24,
+          "mean_age": 533.2424918086589,
+          "gini": 0.52678719800999
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 116,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.62,
+          "wealth": 5236.624,
+          "mean_age": 557.9186608862695,
+          "gini": 0.5273849269933246
+        },
+        "later": {
+          "population": 835.828,
+          "wealth": 5093.5,
+          "mean_age": 542.4779434484698,
+          "gini": 0.5272327813379338
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 117,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.42,
+          "wealth": 4521.488,
+          "mean_age": 440.1463223913303,
+          "gini": 0.5301744764862967
+        },
+        "later": {
+          "population": 836.928,
+          "wealth": 4595.108,
+          "mean_age": 445.4178884640993,
+          "gini": 0.5329327751515711
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 117,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 837.096,
+          "wealth": 4588.776,
+          "mean_age": 450.802231748949,
+          "gini": 0.5320738268390126
+        },
+        "later": {
+          "population": 836.712,
+          "wealth": 4625.56,
+          "mean_age": 446.4830727435166,
+          "gini": 0.5327497828893207
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 117,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 837.008,
+          "wealth": 5065.12,
+          "mean_age": 546.4846323677716,
+          "gini": 0.5262004617436898
+        },
+        "later": {
+          "population": 836.684,
+          "wealth": 5114.792,
+          "mean_age": 549.2343693396308,
+          "gini": 0.5269091733773033
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 117,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.412,
+          "wealth": 5171.796,
+          "mean_age": 554.0654900160591,
+          "gini": 0.5273655774330708
+        },
+        "later": {
+          "population": 835.82,
+          "wealth": 5139.24,
+          "mean_age": 542.5679999390954,
+          "gini": 0.5273814363054082
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 118,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.456,
+          "wealth": 4539.336,
+          "mean_age": 436.29536986974216,
+          "gini": 0.5301992450136611
+        },
+        "later": {
+          "population": 836.748,
+          "wealth": 4574.932,
+          "mean_age": 445.0104360703436,
+          "gini": 0.5323495674145732
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 118,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.204,
+          "wealth": 4566.004,
+          "mean_age": 438.2229522985379,
+          "gini": 0.5276393942613007
+        },
+        "later": {
+          "population": 836.788,
+          "wealth": 4582.608,
+          "mean_age": 445.43686953039065,
+          "gini": 0.5298569617035367
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 118,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.7,
+          "wealth": 5142.744,
+          "mean_age": 549.6773514155606,
+          "gini": 0.5280032412731898
+        },
+        "later": {
+          "population": 835.608,
+          "wealth": 5149.56,
+          "mean_age": 549.5884769666377,
+          "gini": 0.52736839104424
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 118,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 835.568,
+          "wealth": 5109.624,
+          "mean_age": 540.3407625216438,
+          "gini": 0.5253696323800537
+        },
+        "later": {
+          "population": 835.304,
+          "wealth": 5134.828,
+          "mean_age": 533.3602918360417,
+          "gini": 0.525376873740012
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 119,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.072,
+          "wealth": 4530.92,
+          "mean_age": 445.7037692256777,
+          "gini": 0.5284294338729039
+        },
+        "later": {
+          "population": 836.384,
+          "wealth": 4461.216,
+          "mean_age": 430.3176323341725,
+          "gini": 0.528283206388366
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 119,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.264,
+          "wealth": 4571.244,
+          "mean_age": 441.37080411115335,
+          "gini": 0.5288719176653549
+        },
+        "later": {
+          "population": 836.492,
+          "wealth": 4580.568,
+          "mean_age": 442.02814946650136,
+          "gini": 0.5317566990479741
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 119,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 835.784,
+          "wealth": 5073.012,
+          "mean_age": 546.0456627040637,
+          "gini": 0.5262355774205686
+        },
+        "later": {
+          "population": 836.276,
+          "wealth": 5124.984,
+          "mean_age": 549.0230332392978,
+          "gini": 0.5297531439675834
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 119,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.032,
+          "wealth": 5030.672,
+          "mean_age": 539.5762852406139,
+          "gini": 0.5239597637641079
+        },
+        "later": {
+          "population": 835.568,
+          "wealth": 5116.692,
+          "mean_age": 543.2998758433167,
+          "gini": 0.525858429570738
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 120,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.968,
+          "wealth": 4548.344,
+          "mean_age": 437.66231349588384,
+          "gini": 0.5278802512996076
+        },
+        "later": {
+          "population": 836.316,
+          "wealth": 4544.7,
+          "mean_age": 442.9475971089313,
+          "gini": 0.5287329041875817
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 120,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.544,
+          "wealth": 4620.628,
+          "mean_age": 460.2708886214299,
+          "gini": 0.5315612698054497
+        },
+        "later": {
+          "population": 837.02,
+          "wealth": 4614.792,
+          "mean_age": 453.8120361555542,
+          "gini": 0.5318060254385455
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 120,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.916,
+          "wealth": 5128.476,
+          "mean_age": 550.070411459769,
+          "gini": 0.5280459001935758
+        },
+        "later": {
+          "population": 835.448,
+          "wealth": 5164.696,
+          "mean_age": 559.6612110800249,
+          "gini": 0.5287528942981421
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 120,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.312,
+          "wealth": 5073.144,
+          "mean_age": 547.937004464729,
+          "gini": 0.5243836349146468
+        },
+        "later": {
+          "population": 836.38,
+          "wealth": 5205.232,
+          "mean_age": 556.5009953165717,
+          "gini": 0.5300935603020986
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 111,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 820.896,
+          "wealth": 15902.312,
+          "mean_age": 1417.7516893492298,
+          "gini": 0.3370240666800866
+        },
+        "later": {
+          "population": 821.644,
+          "wealth": 15888.464,
+          "mean_age": 1402.8835528564823,
+          "gini": 0.3371381429999042
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 111,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 820.896,
+          "wealth": 15902.312,
+          "mean_age": 1417.7516893492298,
+          "gini": 0.3370240666800866
+        },
+        "later": {
+          "population": 821.644,
+          "wealth": 15888.464,
+          "mean_age": 1402.8835528564823,
+          "gini": 0.3371381429999042
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 111,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.068,
+          "wealth": 16274.264,
+          "mean_age": 2306.0097292254163,
+          "gini": 0.332226955728251
+        },
+        "later": {
+          "population": 824.08,
+          "wealth": 16271.536,
+          "mean_age": 2347.96181699341,
+          "gini": 0.3322490373302548
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 111,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.068,
+          "wealth": 16274.264,
+          "mean_age": 2306.0097292254163,
+          "gini": 0.332226955728251
+        },
+        "later": {
+          "population": 824.08,
+          "wealth": 16271.536,
+          "mean_age": 2347.96181699341,
+          "gini": 0.3322490373302548
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 112,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.872,
+          "wealth": 15886.652,
+          "mean_age": 1415.4856344536515,
+          "gini": 0.3378488396325599
+        },
+        "later": {
+          "population": 821.404,
+          "wealth": 15925.544,
+          "mean_age": 1439.692714795855,
+          "gini": 0.3366259032048156
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 112,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.872,
+          "wealth": 15886.652,
+          "mean_age": 1415.4856344536515,
+          "gini": 0.3378488396325599
+        },
+        "later": {
+          "population": 821.404,
+          "wealth": 15925.544,
+          "mean_age": 1439.692714795855,
+          "gini": 0.3366259032048156
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 112,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.636,
+          "wealth": 16212.18,
+          "mean_age": 2357.2391405344615,
+          "gini": 0.33355612586477434
+        },
+        "later": {
+          "population": 823.812,
+          "wealth": 16195.024,
+          "mean_age": 2363.827533491659,
+          "gini": 0.33345450217239664
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 112,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.636,
+          "wealth": 16212.18,
+          "mean_age": 2357.2391405344615,
+          "gini": 0.33355612586477434
+        },
+        "later": {
+          "population": 823.812,
+          "wealth": 16195.024,
+          "mean_age": 2363.827533491659,
+          "gini": 0.33345450217239664
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 113,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.508,
+          "wealth": 15894.572,
+          "mean_age": 1436.3910557178797,
+          "gini": 0.33701472042560204
+        },
+        "later": {
+          "population": 821.88,
+          "wealth": 15870.12,
+          "mean_age": 1439.771423033162,
+          "gini": 0.33710020356656184
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 113,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.508,
+          "wealth": 15894.572,
+          "mean_age": 1436.3910557178797,
+          "gini": 0.33701472042560204
+        },
+        "later": {
+          "population": 821.88,
+          "wealth": 15870.12,
+          "mean_age": 1439.771423033162,
+          "gini": 0.33710020356656184
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 113,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.068,
+          "wealth": 16270.092,
+          "mean_age": 2333.3276775498707,
+          "gini": 0.33221556754494996
+        },
+        "later": {
+          "population": 824.164,
+          "wealth": 16246.956,
+          "mean_age": 2314.455664527432,
+          "gini": 0.33307463652769465
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 113,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.068,
+          "wealth": 16270.092,
+          "mean_age": 2333.3276775498707,
+          "gini": 0.33221556754494996
+        },
+        "later": {
+          "population": 824.164,
+          "wealth": 16246.956,
+          "mean_age": 2314.455664527432,
+          "gini": 0.33307463652769465
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 114,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.592,
+          "wealth": 15920.456,
+          "mean_age": 1426.2050843901313,
+          "gini": 0.3358461201044298
+        },
+        "later": {
+          "population": 821.404,
+          "wealth": 15925.12,
+          "mean_age": 1417.578567001474,
+          "gini": 0.3362776615712904
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 114,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.592,
+          "wealth": 15920.456,
+          "mean_age": 1426.2050843901313,
+          "gini": 0.3358461201044298
+        },
+        "later": {
+          "population": 821.404,
+          "wealth": 15925.12,
+          "mean_age": 1417.578567001474,
+          "gini": 0.3362776615712904
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 114,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.544,
+          "wealth": 16222.808,
+          "mean_age": 2375.3874542255508,
+          "gini": 0.33313317972219825
+        },
+        "later": {
+          "population": 824.292,
+          "wealth": 16282.02,
+          "mean_age": 2382.3152303518914,
+          "gini": 0.3317627924890653
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 114,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.544,
+          "wealth": 16222.808,
+          "mean_age": 2375.3874542255508,
+          "gini": 0.33313317972219825
+        },
+        "later": {
+          "population": 824.292,
+          "wealth": 16282.02,
+          "mean_age": 2382.3152303518914,
+          "gini": 0.3317627924890653
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 115,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.208,
+          "wealth": 15899.188,
+          "mean_age": 1404.9676364628253,
+          "gini": 0.33724433206494675
+        },
+        "later": {
+          "population": 821.892,
+          "wealth": 15882.392,
+          "mean_age": 1436.23074311441,
+          "gini": 0.3373957503948169
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 115,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.208,
+          "wealth": 15899.188,
+          "mean_age": 1404.9676364628253,
+          "gini": 0.33724433206494675
+        },
+        "later": {
+          "population": 821.892,
+          "wealth": 15882.392,
+          "mean_age": 1436.23074311441,
+          "gini": 0.3373957503948169
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 115,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.072,
+          "wealth": 16242.984,
+          "mean_age": 2360.0926405643672,
+          "gini": 0.33257061702938495
+        },
+        "later": {
+          "population": 823.848,
+          "wealth": 16222.104,
+          "mean_age": 2349.463650499761,
+          "gini": 0.3333556000104424
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 115,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.072,
+          "wealth": 16242.984,
+          "mean_age": 2360.0926405643672,
+          "gini": 0.33257061702938495
+        },
+        "later": {
+          "population": 823.848,
+          "wealth": 16222.104,
+          "mean_age": 2349.463650499761,
+          "gini": 0.3333556000104424
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 116,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.284,
+          "wealth": 15869.8,
+          "mean_age": 1415.3699491523766,
+          "gini": 0.33731777445563743
+        },
+        "later": {
+          "population": 821.832,
+          "wealth": 15909.436,
+          "mean_age": 1430.5633509983852,
+          "gini": 0.3369406077927204
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 116,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.284,
+          "wealth": 15869.8,
+          "mean_age": 1415.3699491523766,
+          "gini": 0.33731777445563743
+        },
+        "later": {
+          "population": 821.832,
+          "wealth": 15909.436,
+          "mean_age": 1430.5633509983852,
+          "gini": 0.3369406077927204
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 116,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.176,
+          "wealth": 16239.632,
+          "mean_age": 2410.4672752680212,
+          "gini": 0.331868048427421
+        },
+        "later": {
+          "population": 823.972,
+          "wealth": 16257.86,
+          "mean_age": 2362.590549928217,
+          "gini": 0.3321197888125662
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 116,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.176,
+          "wealth": 16239.632,
+          "mean_age": 2410.4672752680212,
+          "gini": 0.331868048427421
+        },
+        "later": {
+          "population": 823.972,
+          "wealth": 16257.86,
+          "mean_age": 2362.590549928217,
+          "gini": 0.3321197888125662
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 117,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.488,
+          "wealth": 15883.736,
+          "mean_age": 1429.2141112745478,
+          "gini": 0.3374055252064702
+        },
+        "later": {
+          "population": 821.572,
+          "wealth": 15912.228,
+          "mean_age": 1424.1837702849373,
+          "gini": 0.33659916887386776
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 117,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.488,
+          "wealth": 15883.736,
+          "mean_age": 1429.2141112745478,
+          "gini": 0.3374055252064702
+        },
+        "later": {
+          "population": 821.572,
+          "wealth": 15912.228,
+          "mean_age": 1424.1837702849373,
+          "gini": 0.33659916887386776
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 117,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.036,
+          "wealth": 16217.192,
+          "mean_age": 2354.4926056910326,
+          "gini": 0.3328620455729164
+        },
+        "later": {
+          "population": 823.784,
+          "wealth": 16243.568,
+          "mean_age": 2356.384033389571,
+          "gini": 0.3322576751487919
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 117,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.036,
+          "wealth": 16217.192,
+          "mean_age": 2354.4926056910326,
+          "gini": 0.3328620455729164
+        },
+        "later": {
+          "population": 823.784,
+          "wealth": 16243.568,
+          "mean_age": 2356.384033389571,
+          "gini": 0.3322576751487919
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 118,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.764,
+          "wealth": 15887.696,
+          "mean_age": 1414.3682840125584,
+          "gini": 0.33738835944514445
+        },
+        "later": {
+          "population": 821.392,
+          "wealth": 15904.072,
+          "mean_age": 1384.532581480295,
+          "gini": 0.3368546537652712
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 118,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.764,
+          "wealth": 15887.696,
+          "mean_age": 1414.3682840125584,
+          "gini": 0.33738835944514445
+        },
+        "later": {
+          "population": 821.392,
+          "wealth": 15904.072,
+          "mean_age": 1384.532581480295,
+          "gini": 0.3368546537652712
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 118,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 823.784,
+          "wealth": 16277.672,
+          "mean_age": 2374.2902461501453,
+          "gini": 0.3318992047103856
+        },
+        "later": {
+          "population": 824.048,
+          "wealth": 16244.812,
+          "mean_age": 2339.8314368273363,
+          "gini": 0.33260800881903263
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 118,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 823.784,
+          "wealth": 16277.672,
+          "mean_age": 2374.2902461501453,
+          "gini": 0.3318992047103856
+        },
+        "later": {
+          "population": 824.048,
+          "wealth": 16244.812,
+          "mean_age": 2339.8314368273363,
+          "gini": 0.33260800881903263
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 119,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.296,
+          "wealth": 15885.536,
+          "mean_age": 1394.1093946556437,
+          "gini": 0.3371288433612505
+        },
+        "later": {
+          "population": 821.608,
+          "wealth": 15902.124,
+          "mean_age": 1428.0547778619718,
+          "gini": 0.3368104499443212
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 119,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.296,
+          "wealth": 15885.536,
+          "mean_age": 1394.1093946556437,
+          "gini": 0.3371288433612505
+        },
+        "later": {
+          "population": 821.608,
+          "wealth": 15902.124,
+          "mean_age": 1428.0547778619718,
+          "gini": 0.3368104499443212
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 119,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.228,
+          "wealth": 16242.268,
+          "mean_age": 2352.5222546843984,
+          "gini": 0.3323279921302345
+        },
+        "later": {
+          "population": 824.176,
+          "wealth": 16245.712,
+          "mean_age": 2303.9603644576705,
+          "gini": 0.332949257944776
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 119,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.228,
+          "wealth": 16242.268,
+          "mean_age": 2352.5222546843984,
+          "gini": 0.3323279921302345
+        },
+        "later": {
+          "population": 824.176,
+          "wealth": 16245.712,
+          "mean_age": 2303.9603644576705,
+          "gini": 0.332949257944776
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 120,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.164,
+          "wealth": 15916.6,
+          "mean_age": 1437.5627863630027,
+          "gini": 0.3357480234923916
+        },
+        "later": {
+          "population": 821.644,
+          "wealth": 15889.052,
+          "mean_age": 1427.746625997323,
+          "gini": 0.3372790520475463
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 120,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 821.164,
+          "wealth": 15916.6,
+          "mean_age": 1437.5627863630027,
+          "gini": 0.3357480234923916
+        },
+        "later": {
+          "population": 821.644,
+          "wealth": 15889.052,
+          "mean_age": 1427.746625997323,
+          "gini": 0.3372790520475463
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 120,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.48,
+          "wealth": 16228.368,
+          "mean_age": 2296.3610429408614,
+          "gini": 0.3331011531723332
+        },
+        "later": {
+          "population": 824.204,
+          "wealth": 16231.712,
+          "mean_age": 2346.1275901625268,
+          "gini": 0.33309505542303774
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "seed": 120,
+      "variant": "strict-both",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 824.48,
+          "wealth": 16228.368,
+          "mean_age": 2296.3610429408614,
+          "gini": 0.3331011531723332
+        },
+        "later": {
+          "population": 824.204,
+          "wealth": 16231.712,
+          "mean_age": 2346.1275901625268,
+          "gini": 0.33309505542303774
+        }
+      }
+    }
+  ],
+  "extinct": [],
+  "age_only_identity_checks": [
+    {
+      "seed": 111,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 111,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 112,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 112,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 113,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 113,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 114,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 114,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 115,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 115,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 116,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 116,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 117,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 117,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 118,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 118,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 119,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 119,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 120,
+      "variants": [
+        "baseline",
+        "strict-age"
+      ],
+      "byte_identical_files": 2
+    },
+    {
+      "seed": 120,
+      "variants": [
+        "strict-wealth",
+        "strict-both"
+      ],
+      "byte_identical_files": 2
+    }
+  ],
+  "statistics": [
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "baseline",
+      "mean": 836.4960000000001,
+      "seed_level_ci95": [
+        836.2325690167058,
+        836.7594309832944
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-age",
+      "mean": 836.528,
+      "seed_level_ci95": [
+        836.3255496422827,
+        836.7304503577174
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-wealth",
+      "mean": 836.5287999999998,
+      "seed_level_ci95": [
+        836.1850664287165,
+        836.8725335712832
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-both",
+      "mean": 836.3072,
+      "seed_level_ci95": [
+        835.9941040823144,
+        836.6202959176856
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.03199999999999363,
+      "seed_level_ci95": [
+        -0.25604090572958554,
+        0.32004090572957283
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "age_effect_strict_wealth",
+      "mean": -0.22159999999998944,
+      "seed_level_ci95": [
+        -0.7499848197854014,
+        0.3067848197854225
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 0.032799999999997456,
+      "seed_level_ci95": [
+        -0.22563759269039763,
+        0.2912375926903925
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "wealth_effect_strict_age",
+      "mean": -0.22079999999998562,
+      "seed_level_ci95": [
+        -0.5359723941700595,
+        0.09437239417008825
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "baseline",
+      "mean": 4545.69,
+      "seed_level_ci95": [
+        4528.28354242421,
+        4563.096457575789
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-age",
+      "mean": 4593.140799999999,
+      "seed_level_ci95": [
+        4566.538835483923,
+        4619.742764516075
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-wealth",
+      "mean": 5126.6024,
+      "seed_level_ci95": [
+        5098.253073641663,
+        5154.951726358337
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-both",
+      "mean": 5127.2716,
+      "seed_level_ci95": [
+        5085.443660204954,
+        5169.099539795046
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 47.4507999999998,
+      "seed_level_ci95": [
+        27.540031158993102,
+        67.3615688410065
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 0.6692000000000917,
+      "seed_level_ci95": [
+        -47.81325239403509,
+        49.15165239403527
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 580.9123999999998,
+      "seed_level_ci95": [
+        551.1320659051322,
+        610.6927340948674
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 534.1308000000001,
+      "seed_level_ci95": [
+        488.82579916965585,
+        579.4358008303444
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "baseline",
+      "mean": 440.8425762008825,
+      "seed_level_ci95": [
+        437.10026848843034,
+        444.58488391333464
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-age",
+      "mean": 446.036836093563,
+      "seed_level_ci95": [
+        440.920943720863,
+        451.152728466263
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-wealth",
+      "mean": 550.2708650572366,
+      "seed_level_ci95": [
+        539.5120506649197,
+        561.0296794495536
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-both",
+      "mean": 549.3522603548851,
+      "seed_level_ci95": [
+        541.9134207232152,
+        556.791099986555
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 5.194259892680611,
+      "seed_level_ci95": [
+        -0.5746646274556992,
+        10.963184412816922
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "age_effect_strict_wealth",
+      "mean": -0.9186047023516153,
+      "seed_level_ci95": [
+        -8.466707422112748,
+        6.629498017409518
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 109.42828885635417,
+      "seed_level_ci95": [
+        98.03761618140211,
+        120.81896153130623
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 103.31542426132197,
+      "seed_level_ci95": [
+        96.66997275758149,
+        109.96087576506244
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "baseline",
+      "mean": 0.5300032930088262,
+      "seed_level_ci95": [
+        0.5290317911077481,
+        0.5309747949099043
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-age",
+      "mean": 0.5303107824752262,
+      "seed_level_ci95": [
+        0.5285563982056332,
+        0.5320651667448193
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-wealth",
+      "mean": 0.5279768759781304,
+      "seed_level_ci95": [
+        0.5266550565965182,
+        0.5292986953597425
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-both",
+      "mean": 0.526079599853104,
+      "seed_level_ci95": [
+        0.5252257168707081,
+        0.5269334828355
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.00030748946640002384,
+      "seed_level_ci95": [
+        -0.0015618042095402627,
+        0.0021767831423403104
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "age_effect_strict_wealth",
+      "mean": -0.0018972761250260928,
+      "seed_level_ci95": [
+        -0.003255521633058602,
+        -0.0005390306169935834
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": -0.0020264170306959926,
+      "seed_level_ci95": [
+        -0.0031880654627066698,
+        -0.0008647685986853154
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "wealth_effect_strict_age",
+      "mean": -0.004231182622122109,
+      "seed_level_ci95": [
+        -0.006050661268562115,
+        -0.002411703975682103
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "baseline",
+      "mean": 836.662,
+      "seed_level_ci95": [
+        836.3483714909609,
+        836.9756285090392
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-age",
+      "mean": 836.5036,
+      "seed_level_ci95": [
+        836.1358166855072,
+        836.8713833144928
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-wealth",
+      "mean": 836.3312,
+      "seed_level_ci95": [
+        835.9010927484313,
+        836.7613072515686
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-both",
+      "mean": 835.924,
+      "seed_level_ci95": [
+        835.668101681645,
+        836.179898318355
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": -0.15839999999999463,
+      "seed_level_ci95": [
+        -0.5798761908473479,
+        0.26307619084735867
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "age_effect_strict_wealth",
+      "mean": -0.4071999999999889,
+      "seed_level_ci95": [
+        -0.8537819865232074,
+        0.03938198652322955
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": -0.33079999999999926,
+      "seed_level_ci95": [
+        -0.6320981987494843,
+        -0.02950180125051427
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "wealth_effect_strict_age",
+      "mean": -0.5795999999999936,
+      "seed_level_ci95": [
+        -1.095732329394302,
+        -0.06346767060568526
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "baseline",
+      "mean": 4551.8728,
+      "seed_level_ci95": [
+        4525.34024384453,
+        4578.40535615547
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-age",
+      "mean": 4590.9472000000005,
+      "seed_level_ci95": [
+        4571.987445446623,
+        4609.9069545533785
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-wealth",
+      "mean": 5132.8748,
+      "seed_level_ci95": [
+        5112.504764899415,
+        5153.244835100584
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-both",
+      "mean": 5134.1148,
+      "seed_level_ci95": [
+        5104.833672753879,
+        5163.395927246122
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 39.07439999999997,
+      "seed_level_ci95": [
+        11.716093271753074,
+        66.43270672824687
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 1.2400000000000546,
+      "seed_level_ci95": [
+        -22.60251996841087,
+        25.08251996841098
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 581.0019999999998,
+      "seed_level_ci95": [
+        546.1587974495808,
+        615.8452025504189
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 543.1676,
+      "seed_level_ci95": [
+        509.1319505272649,
+        577.203249472735
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "baseline",
+      "mean": 439.47427237728016,
+      "seed_level_ci95": [
+        436.02993237966615,
+        442.91861237489417
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-age",
+      "mean": 447.6937686908871,
+      "seed_level_ci95": [
+        443.6171185217162,
+        451.77041886005804
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-wealth",
+      "mean": 548.9817008196376,
+      "seed_level_ci95": [
+        542.2741282460623,
+        555.6892733932128
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-both",
+      "mean": 545.7823214313969,
+      "seed_level_ci95": [
+        540.1831035663403,
+        551.3815392964535
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 8.219496313606953,
+      "seed_level_ci95": [
+        2.6230454245968646,
+        13.815947202617043
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "age_effect_strict_wealth",
+      "mean": -3.1993793882406294,
+      "seed_level_ci95": [
+        -10.353357218086993,
+        3.954598441605734
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 109.50742844235734,
+      "seed_level_ci95": [
+        103.69844548242864,
+        115.31641140228604
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 98.08855274050975,
+      "seed_level_ci95": [
+        90.99323886448812,
+        105.18386661653139
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "baseline",
+      "mean": 0.5313556895308691,
+      "seed_level_ci95": [
+        0.530070053434688,
+        0.5326413256270501
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-age",
+      "mean": 0.5307701402757792,
+      "seed_level_ci95": [
+        0.5291726380933345,
+        0.5323676424582239
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-wealth",
+      "mean": 0.527567280657012,
+      "seed_level_ci95": [
+        0.5263778914842582,
+        0.5287566698297658
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-both",
+      "mean": 0.5269335573641815,
+      "seed_level_ci95": [
+        0.5256507793827397,
+        0.5282163353456232
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": -0.0005855492550900343,
+      "seed_level_ci95": [
+        -0.00241750798573959,
+        0.0012464094755595216
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "age_effect_strict_wealth",
+      "mean": -0.0006337232928305903,
+      "seed_level_ci95": [
+        -0.0020719125008448417,
+        0.000804465915183661
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": -0.003788408873857174,
+      "seed_level_ci95": [
+        -0.0061221727750626394,
+        -0.001454644972651709
+      ]
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "wealth_effect_strict_age",
+      "mean": -0.0038365829115977303,
+      "seed_level_ci95": [
+        -0.006009699347514476,
+        -0.0016634664756809843
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "baseline",
+      "mean": 821.4072,
+      "seed_level_ci95": [
+        821.1963507716612,
+        821.6180492283388
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-age",
+      "mean": 821.4072,
+      "seed_level_ci95": [
+        821.1963507716612,
+        821.6180492283388
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-wealth",
+      "mean": 824.2092,
+      "seed_level_ci95": [
+        824.0186574220807,
+        824.3997425779194
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-both",
+      "mean": 824.2092,
+      "seed_level_ci95": [
+        824.0186574220807,
+        824.3997425779194
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 2.8019999999999867,
+      "seed_level_ci95": [
+        2.5420445541540957,
+        3.0619554458458778
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 2.8019999999999867,
+      "seed_level_ci95": [
+        2.5420445541540957,
+        3.0619554458458778
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "baseline",
+      "mean": 15894.6548,
+      "seed_level_ci95": [
+        15883.574881663935,
+        15905.734718336065
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-age",
+      "mean": 15894.6548,
+      "seed_level_ci95": [
+        15883.574881663935,
+        15905.734718336065
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-wealth",
+      "mean": 16242.746,
+      "seed_level_ci95": [
+        16225.613017679545,
+        16259.878982320453
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-both",
+      "mean": 16242.746,
+      "seed_level_ci95": [
+        16225.613017679545,
+        16259.878982320453
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 348.0912,
+      "seed_level_ci95": [
+        327.06337839871514,
+        369.1190216012849
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 348.0912,
+      "seed_level_ci95": [
+        327.06337839871514,
+        369.1190216012849
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "baseline",
+      "mean": 1419.1425625831848,
+      "seed_level_ci95": [
+        1409.4037417459242,
+        1428.8813834204454
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-age",
+      "mean": 1419.1425625831848,
+      "seed_level_ci95": [
+        1409.4037417459242,
+        1428.8813834204454
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-wealth",
+      "mean": 2352.0190066834125,
+      "seed_level_ci95": [
+        2328.0297970746115,
+        2376.0082162922135
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-both",
+      "mean": 2352.0190066834125,
+      "seed_level_ci95": [
+        2328.0297970746115,
+        2376.0082162922135
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 932.8764441002279,
+      "seed_level_ci95": [
+        903.7476920582768,
+        962.005196142179
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 932.8764441002279,
+      "seed_level_ci95": [
+        903.7476920582768,
+        962.005196142179
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "baseline",
+      "mean": 0.3369966604868519,
+      "seed_level_ci95": [
+        0.33651308708401806,
+        0.33748023388968573
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-age",
+      "mean": 0.3369966604868519,
+      "seed_level_ci95": [
+        0.33651308708401806,
+        0.33748023388968573
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-wealth",
+      "mean": 0.3325760889902849,
+      "seed_level_ci95": [
+        0.3321699331465016,
+        0.3329822448340682
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-both",
+      "mean": 0.3325760889902849,
+      "seed_level_ci95": [
+        0.3321699331465016,
+        0.3329822448340682
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": -0.0044205714965670105,
+      "seed_level_ci95": [
+        -0.005127465074626343,
+        -0.003713677918507678
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "wealth_effect_strict_age",
+      "mean": -0.0044205714965670105,
+      "seed_level_ci95": [
+        -0.005127465074626343,
+        -0.003713677918507678
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "baseline",
+      "mean": 821.6272000000001,
+      "seed_level_ci95": [
+        821.4892051991096,
+        821.7651948008906
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-age",
+      "mean": 821.6272000000001,
+      "seed_level_ci95": [
+        821.4892051991096,
+        821.7651948008906
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-wealth",
+      "mean": 824.0380000000001,
+      "seed_level_ci95": [
+        823.9107227471965,
+        824.1652772528038
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-both",
+      "mean": 824.0380000000001,
+      "seed_level_ci95": [
+        823.9107227471965,
+        824.1652772528038
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 2.4107999999999947,
+      "seed_level_ci95": [
+        2.2154387779039366,
+        2.606161222096053
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 2.4107999999999947,
+      "seed_level_ci95": [
+        2.2154387779039366,
+        2.606161222096053
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "baseline",
+      "mean": 15900.8552,
+      "seed_level_ci95": [
+        15887.812828249747,
+        15913.897571750253
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-age",
+      "mean": 15900.8552,
+      "seed_level_ci95": [
+        15887.812828249747,
+        15913.897571750253
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-wealth",
+      "mean": 16244.1304,
+      "seed_level_ci95": [
+        16226.547433591866,
+        16261.713366408134
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-both",
+      "mean": 16244.1304,
+      "seed_level_ci95": [
+        16226.547433591866,
+        16261.713366408134
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 343.27519999999987,
+      "seed_level_ci95": [
+        321.2521729412071,
+        365.29822705879263
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 343.27519999999987,
+      "seed_level_ci95": [
+        321.2521729412071,
+        365.29822705879263
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "baseline",
+      "mean": 1423.1238107424294,
+      "seed_level_ci95": [
+        1410.6071790544015,
+        1435.6404424304574
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-age",
+      "mean": 1423.1238107424294,
+      "seed_level_ci95": [
+        1410.6071790544015,
+        1435.6404424304574
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-wealth",
+      "mean": 2346.6917870629472,
+      "seed_level_ci95": [
+        2330.117731334226,
+        2363.2658427916685
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-both",
+      "mean": 2346.6917870629472,
+      "seed_level_ci95": [
+        2330.117731334226,
+        2363.2658427916685
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": 923.567976320518,
+      "seed_level_ci95": [
+        902.0995344003272,
+        945.0364182407088
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "wealth_effect_strict_age",
+      "mean": 923.567976320518,
+      "seed_level_ci95": [
+        902.0995344003272,
+        945.0364182407088
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "baseline",
+      "mean": 0.33690215941611157,
+      "seed_level_ci95": [
+        0.33665771918741727,
+        0.33714659964480587
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-age",
+      "mean": 0.33690215941611157,
+      "seed_level_ci95": [
+        0.33665771918741727,
+        0.33714659964480587
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-wealth",
+      "mean": 0.3326926354678058,
+      "seed_level_ci95": [
+        0.3322810321680637,
+        0.3331042387675479
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-both",
+      "mean": 0.3326926354678058,
+      "seed_level_ci95": [
+        0.3322810321680637,
+        0.3331042387675479
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "age_effect_inclusive_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "age_effect_strict_wealth",
+      "mean": 0.0,
+      "seed_level_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "wealth_effect_inclusive_age",
+      "mean": -0.004209523948305755,
+      "seed_level_ci95": [
+        -0.004563989218478594,
+        -0.0038550586781329163
+      ]
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "wealth_effect_strict_age",
+      "mean": -0.004209523948305755,
+      "seed_level_ci95": [
+        -0.004563989218478594,
+        -0.0038550586781329163
+      ]
+    }
+  ],
+  "scope": "Independent source-variant, file-hash, scalar, timestamp, sampled accounting, and whole-trajectory age-invariance checks. Native every-cycle conservation is enforced by the pinned simulator. Observation hashes are checked but founder/elite semantics are not independently reaudited here. No historical equivalence or paper verdict. Aggregates require all 80 runs and no extinctions; failed societies are never silently excluded."
+}

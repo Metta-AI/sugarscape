@@ -1,0 +1,118 @@
+{
+  "source": "https://arxiv.org/abs/2108.11892v2",
+  "table": 1,
+  "page": 2,
+  "verified": "Visually checked PDF table, not solely extracted text",
+  "replicates": 100,
+  "uncertainty_semantics": "Unspecified percentage uncertainty; not assumed to be standard deviation or confidence interval",
+  "rows": [
+    {
+      "scenario": "low-fertility",
+      "infertility": 85,
+      "birth_cost": 0,
+      "metrics": {
+        "growth_rate": {
+          "mean": 0.018,
+          "reported_percent": 0.4
+        },
+        "population": {
+          "mean": 837,
+          "reported_percent": 0.9
+        },
+        "mean_age": {
+          "mean": 473,
+          "reported_percent": 9.7
+        },
+        "wealth": {
+          "mean": 4767,
+          "reported_percent": 4.7
+        },
+        "gini": {
+          "mean": 0.53,
+          "reported_percent": 2.8
+        }
+      }
+    },
+    {
+      "scenario": "birth-cost",
+      "infertility": 10,
+      "birth_cost": 40,
+      "metrics": {
+        "growth_rate": {
+          "mean": 0.032,
+          "reported_percent": 0.6
+        },
+        "population": {
+          "mean": 824,
+          "reported_percent": 0.4
+        },
+        "mean_age": {
+          "mean": 2264,
+          "reported_percent": 3.2
+        },
+        "wealth": {
+          "mean": 16254,
+          "reported_percent": 2.2
+        },
+        "gini": {
+          "mean": 0.33,
+          "reported_percent": 2.9
+        }
+      }
+    },
+    {
+      "scenario": "evolved-stable",
+      "infertility": 10,
+      "birth_cost": 0,
+      "metrics": {
+        "growth_rate": {
+          "mean": 0.17,
+          "reported_percent": 0.5
+        },
+        "population": {
+          "mean": 859,
+          "reported_percent": 3.9
+        },
+        "mean_age": {
+          "mean": 12.7,
+          "reported_percent": 4.2
+        },
+        "wealth": {
+          "mean": 504,
+          "reported_percent": 14
+        },
+        "gini": {
+          "mean": 0.688,
+          "reported_percent": 3.9
+        }
+      }
+    },
+    {
+      "scenario": "evolved-chaos",
+      "infertility": 1,
+      "birth_cost": 0,
+      "metrics": {
+        "growth_rate": {
+          "mean": 1.542,
+          "reported_percent": 14
+        },
+        "population": {
+          "mean": 916,
+          "reported_percent": 53
+        },
+        "mean_age": {
+          "mean": 1.41,
+          "reported_percent": 19
+        },
+        "wealth": {
+          "mean": 480,
+          "reported_percent": 79
+        },
+        "gini": {
+          "mean": 0.73,
+          "reported_percent": 14
+        }
+      }
+    }
+  ]
+}

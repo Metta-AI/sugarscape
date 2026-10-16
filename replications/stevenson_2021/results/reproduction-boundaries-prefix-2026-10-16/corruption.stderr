@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-stevenson/replications/stevenson_2021/analyze_boundaries.py", line 86, in <module>
+    np.testing.assert_array_equal(data['metabolism'], (data['population'] - data['births']) * 3)
+  File "/Users/relh/Code/workspace/sugarscape-replications/.venv/lib/python3.11/site-packages/numpy/testing/_private/utils.py", line 920, in assert_array_equal
+    assert_array_compare(operator.__eq__, x, y, err_msg=err_msg,
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/relh/Code/workspace/sugarscape-replications/.venv/lib/python3.11/site-packages/numpy/testing/_private/utils.py", line 797, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+
+Mismatched elements: 1 / 1001 (0.0999%)
+Max absolute difference: 3.
+Max relative difference: 0.5
+ x: array([   3.,    6.,   24., ..., 2478., 2475., 2505.])
+ y: array([   6.,    6.,   24., ..., 2478., 2475., 2505.])

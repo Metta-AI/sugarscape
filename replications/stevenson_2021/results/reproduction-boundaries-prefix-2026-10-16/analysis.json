@@ -1,0 +1,81 @@
+{
+  "mode": "prefix",
+  "completed_ensemble": false,
+  "validated_runs": 3,
+  "required_runs": 80,
+  "manifest_sha256": "aa2080f906c6906fe36643b1456f95a26511b78c025063412b02e6f7e501d4d1",
+  "ledger_sha256": "9fd52d537fb467aa44ae219244c9f731d7d1b57cfe854608fea7c632de61266e",
+  "analyzer_sha256": "c1d4361b17399a94e12d0eff3b67601a857d751b5ecad84fbc7edf70f89ffb83",
+  "per_run": [
+    {
+      "scenario": "low-fertility",
+      "seed": 111,
+      "variant": "baseline",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.168,
+          "wealth": 4495.096,
+          "mean_age": 433.25788897862265,
+          "gini": 0.5317142617891654
+        },
+        "later": {
+          "population": 836.876,
+          "wealth": 4541.46,
+          "mean_age": 442.15537269194573,
+          "gini": 0.5305116914742153
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 111,
+      "variant": "strict-age",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.64,
+          "wealth": 4522.352,
+          "mean_age": 437.25942702211626,
+          "gini": 0.5266997184897062
+        },
+        "later": {
+          "population": 835.608,
+          "wealth": 4532.412,
+          "mean_age": 435.2897769361289,
+          "gini": 0.5285331523706173
+        }
+      }
+    },
+    {
+      "scenario": "low-fertility",
+      "seed": 111,
+      "variant": "strict-wealth",
+      "observations": 1001,
+      "final_cycle": 100000,
+      "extinct": false,
+      "windows": {
+        "earlier": {
+          "population": 836.012,
+          "wealth": 5155.748,
+          "mean_age": 547.0447410467863,
+          "gini": 0.5316523951143131
+        },
+        "later": {
+          "population": 836.916,
+          "wealth": 5186.936,
+          "mean_age": 560.1009239383822,
+          "gini": 0.5300130214552563
+        }
+      }
+    }
+  ],
+  "extinct": [],
+  "age_only_identity_checks": [],
+  "statistics": [],
+  "scope": "Independent source-variant, file-hash, scalar, timestamp, sampled accounting, and whole-trajectory age-invariance checks. Native every-cycle conservation is enforced by the pinned simulator. Observation hashes are checked but founder/elite semantics are not independently reaudited here. No historical equivalence or paper verdict. Aggregates require all 80 runs and no extinctions; failed societies are never silently excluded."
+}
