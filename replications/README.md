@@ -252,3 +252,9 @@ Eleven distinct paper studies now have separate PRs. This is coverage of ongoing
 The completed count remains two. The 2003 VUScape study uses its own published parameters and trajectories.
 The 2005 fertility correction passes all 150 paired runs and 11,494,812 births, but changes survival in several paired seeds.
 Its COM1 threshold-one survival rises from one to three of ten; implementation sensitivity still prevents a paper-level verdict.
+
+The [author-hosted formal-analysis paper](https://www.cs.vu.nl/~schut/pubs/Eiben/2007a.pdf) provides another distinct Sugarscape-derived candidate.
+[Its source audit](source-audits/eiben-formal-2007.json) records 50 traces across five population levels and communication on/off.
+The recovered JAWAS archive has no identified generator matching its formal predicates; literal-byte searches alone cannot prove absence.
+Visual inspection also finds temporal inequalities that differ from the prose, requiring explicit interpretation before reproducing the property results.
+Exact settings, trace boundaries, and original property files remain unresolved. No simulation or completed-study credit is claimed.
