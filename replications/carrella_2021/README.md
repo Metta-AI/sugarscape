@@ -369,3 +369,17 @@ These deterministic checks strengthen model validation but do not establish stoc
 ```sh
 python replications/carrella_2021/verify_trajectories.py /native/trajectory-probes /new/comparison
 ```
+
+### Independent/native prefix comparison
+
+`compare_independent.py PARAMETERS REFERENCE RUN prefix|complete OUTPUT` first audits every completed independent trajectory and recomputes all 150 statistics.
+It verifies the original reference hash, pairs identical parameter rows, and reports means, differences, root mean squared differences, and native standard deviations.
+Different random generators preclude exact trajectory matching. These descriptive measurements impose no equivalence threshold or significance verdict.
+
+[The first 43 inputs](results/independent-comparison-2026-10-16) pass 6,450 independently recomputed statistics, with maximum absolute error 1.14e-13.
+Neither implementation becomes extinct on these inputs.
+The largest absolute mean difference divided by native standard deviation is 0.596, for mean trade price at observation 450.
+Its native and independent means are 1.03867 and 1.01747 respectively.
+This is an exploratory maximum over 150 statistics from an incomplete parameter ensemble, not evidence of equivalence or a diagnosed implementation error.
+All 43 compressed trajectories, the audit, paired statistics, and a rejected-reference corruption control are retained.
+The full 5,000-input run remains in progress; this prefix does not complete the paper replication.

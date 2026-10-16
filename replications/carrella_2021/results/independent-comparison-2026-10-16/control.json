@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "replications/carrella_2021/compare_independent.py",
+    "/Users/relh/Code/workspace/sugarscape-nofreelunch-reference/data/sugarscape/params_sugarscape.csv",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-comparison-control-001/wrong-reference.csv",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-5000-001",
+    "prefix",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-comparison-control-001/unexpected-output"
+  ],
+  "exit_code": 1,
+  "control": "Different reference bytes must be rejected before analysis or output creation."
+}
