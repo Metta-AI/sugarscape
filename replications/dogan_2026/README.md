@@ -252,3 +252,12 @@ The source manifest verifies the accounting patch is the only changed source fil
 `run_corrected_levy.py ENGINE NEW_OUTPUT` launches the declared original 75-case sweep against this isolated source.
 Its complete paired comparison remains pending; the single checked run does not establish robustness of corrected policy outcomes.
 The original and forked unmodified experiments continue independently.
+
+## Fresh composition sweep completed
+
+[All 210 alternative-composition runs](results/composition-2026-10-15) complete successfully with a byte-identical CSV to the pinned author deposit.
+Every one of its 5,040 cells matches, including identifiers, ordering, and missingness.
+Combined with 105 fresh canonical runs, the independent audit reproduces all 126 printed Table C.1 values.
+The previously documented ranking qualifications therefore also hold in fresh execution: two full mortality orderings and seven of nine increasing inequality ranks.
+The highest/lowest mortality claim still holds in all nine composition/speed settings.
+The native queue has proceeded to the original levy sweep; its later per-seed threshold study and corrected-levy comparisons remain incomplete.
