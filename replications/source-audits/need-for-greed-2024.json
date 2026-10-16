@@ -147,7 +147,156 @@
     "table_I": "Selfishness 0: extinct 67%, worse 2%, better 31%.",
     "table_II": "Selfishness 1: extinct 62%, worse 2%, better 36%.",
     "table_III": "Selfishness 0.5: extinct 0%, worse 0%, better 100%.",
-    "table_IV": "Grouped outcome proportions over all 101 selfishness values; numerical transcription and visual verification pending.",
+    "table_IV": {
+      "verification": "Visually checked against rendered PDF page 7; printed percentages preserved without inferring integer counts.",
+      "columns": [
+        "selfishness",
+        "extinct_percent",
+        "worse_percent",
+        "better_percent"
+      ],
+      "rows": [
+        [
+          "0.00",
+          67,
+          2,
+          31
+        ],
+        [
+          "0.01-0.05",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.06-0.10",
+          1.8,
+          0,
+          98.2
+        ],
+        [
+          "0.11-0.15",
+          1.8,
+          0,
+          98.2
+        ],
+        [
+          "0.16-0.20",
+          1.8,
+          0,
+          98.2
+        ],
+        [
+          "0.21-0.25",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.26-0.30",
+          1.6,
+          0,
+          98.4
+        ],
+        [
+          "0.31-0.35",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.36-0.40",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.41-0.45",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.46-0.49",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.50",
+          0,
+          0,
+          100
+        ],
+        [
+          "0.51-0.55",
+          1.8,
+          0,
+          98.2
+        ],
+        [
+          "0.56-0.60",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.61-0.65",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.66-0.70",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.71-0.75",
+          1.2,
+          0.2,
+          98.6
+        ],
+        [
+          "0.76-0.80",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.81-0.85",
+          5.2,
+          0.2,
+          94.8
+        ],
+        [
+          "0.86-0.90",
+          21,
+          1.8,
+          77.2
+        ],
+        [
+          "0.91-0.95",
+          56,
+          1.6,
+          42.4
+        ],
+        [
+          "0.96-0.99",
+          66.7,
+          0.8,
+          32.5
+        ],
+        [
+          "1.00",
+          62,
+          2,
+          36
+        ]
+      ],
+      "arithmetic_observation": "Printed 0.81-0.85 row sums to 100.2%. Rechecked against the PDF image; not corrected or treated as a simulation finding."
+    },
     "figures_2_to_6": [
       "population",
       "mean wealth",
@@ -157,10 +306,34 @@
     ]
   },
   "remaining": [
-    "Verify Table IV visually and identify plotting/aggregation semantics from released scripts.",
-    "Audit archived configuration dispatch: sweep uses agentDecisionModels none with explicit selfishness.",
+    "Resolve boxplot aggregation and denominator conventions; preserve paper and script outcome classifications separately.",
     "Revalidate matching prior runs against identical source, runtime, configuration and raw hashes before reuse.",
     "Complete and audit all 10,100 declared sweep runs; no pilot or subset is a completed paper.",
     "Keep this distinct paper separate from Blueprints; overlapping configurations do not make either study complete."
-  ]
+  ],
+  "configuration_dispatch": {
+    "status": "Static source audit; plural none does not disable the archived sweep.",
+    "archived_fields": {
+      "agentDecisionModels": [
+        "none"
+      ],
+      "agentDecisionModel": "benthamHalfLookaheadBinary"
+    },
+    "loader": "sugarscape.py verifyConfiguration replaces the plural field with the legacy singular field before construction.",
+    "construction": "configureAgents selects ethics.Bentham with halfLookahead and preserves nonnegative supplied selfishness.",
+    "adapter_requirement": "Preserve the archived field precedence. Current Blueprints baseline schema alone is insufficient for sweep configs."
+  },
+  "measurement_audit": {
+    "paper_outcome": "Extinct: zero final population. Worse: surviving final population less than or equal to initial. Better: greater than initial.",
+    "released_plot_outcome": "plots/plot.py uses strictly below initial for worse; equality is included in better.",
+    "requirement": "Retain both classifications and report equality counts.",
+    "plot_limit": "Pinned plot.py computes ensemble time-series means with post-extinction zero padding; wealth output is agentWealthTotal. This does not establish the paper boxplot aggregation.",
+    "figure5": "Paper describes starvation plus combat deaths as a percentage of population, excluding aging deaths. Exact temporal aggregation remains unresolved."
+  },
+  "inspected_source_sha256": {
+    "sugarscape.py": "d429ebabea8ea08dfdaf25faa34a409e463f97ad754e7143a23202fdd5126e81",
+    "agent.py": "5ffd9ac332159413ead96102167593d1f5a514554415fcfea39e7133fd4a25d9",
+    "ethics.py": "977ac532c7b12fdd18e5157eff2d1a3759468842a0219ebbfad992ae4651214a",
+    "plots/plot.py": "40db9cf6b8172e9fea0b3de532f541ebecd9d4b6e2724ea4ac6ee5ebf4c7d5e5"
+  }
 }
