@@ -1,0 +1,76 @@
+{
+  "conditions": [
+    {
+      "phase": 1,
+      "start": 195,
+      "stop": 300
+    },
+    {
+      "phase": 2,
+      "start": 62,
+      "stop": 331
+    },
+    {
+      "phase": 2,
+      "start": 331,
+      "stop": 600
+    },
+    {
+      "phase": 3,
+      "start": 30,
+      "stop": 264
+    },
+    {
+      "phase": 3,
+      "start": 264,
+      "stop": 498
+    },
+    {
+      "phase": 3,
+      "start": 498,
+      "stop": 732
+    },
+    {
+      "phase": 3,
+      "start": 732,
+      "stop": 966
+    },
+    {
+      "phase": 3,
+      "start": 966,
+      "stop": 1200
+    }
+  ],
+  "workers": 8,
+  "limit_seconds": 21600,
+  "total_conditions": 1813,
+  "scope": "Remaining frozen phase grids, mixed macOS/Linux provenance retained; not whole-paper completion.",
+  "dependencies": {
+    "setup_and_pilot.sh": "54b84380587725a5c152ba37671e0037fc4a2adf366e74aa418d46c4fee1b185",
+    "pilot.py": "8622f76f817e9c57b286bb970b3b4db19597ced9a6d57866be043c7da0b83559",
+    "plan.json": "a1f34562c0351bb9c1e1bc2ae7ddee1f169f80c6331e9b9458ac7be19e5db20e",
+    "audit_phase3_movement.py": "606e6279b82c35c9e10318d5b375361196a03f3ae78cd44ce9d17b403e2a9e69",
+    "audit_phase2.py": "ea672e096c8f4e3932fd058dfbb2a94660f7200a94ed02bd9784e34028ce0165",
+    "run.sh": "a944a7c53911cac427afabb4738fc9e34ee03f33575ba5a103137ef022d53d51",
+    "run_segment.py": "2a357bae6140254be5363e4e406134ae0e5473d3b97029c4a1341854cf6559f8",
+    "audit_phase1.py": "068e13bd77d0c8885bfe25ff990b10c21339ab4de0451a913b7d99484fb141e9",
+    "high_focus_source.json": "40d74c34b75c4ccfb135a4a9572c0744ee45793c36963f91e2222a785bdb137c",
+    "frozen-phase1/run.py": "9c516c54a2b2d6e2e510eac39fd4f0c0a042782f768d28a4cea46510aec016de",
+    "frozen-phase1/PHASE1_PROTOCOL.md": "79b3bcf370c8b03c4fa38b431f804ab60f47612c0592fc513549d9ac4e9e6c57",
+    "frozen-phase1/manifest.json": "1df0e4ad00e2de8b7d3e78e2184a7259af9222be6a94628f9250092d70420884",
+    "frozen-phase1/run_phase1.py": "7d6a73710d6bf7e7efe51398232ff75548e105cb9f7dcc00b2e819f4f2ef1225",
+    "frozen-phase2/run.py": "3b7700b0f079578e103de51f2ee5fca7811be577ca3e7ca5d4229d7a61117331",
+    "frozen-phase2/run_phase2.py": "7167830448d33e47d77059f1172f55bae939d804b4ba1ec77be9570ed8d2209e",
+    "frozen-phase2/run_groups.py": "c659c8aec859afc29f564e057d5ff03c520e5893335425cacf55c330d98b382b",
+    "frozen-phase2/manifest.json": "330902d98f8a117a0564ebbca8fac3ac7593d0eb1b77471c2f5be85c39c3232e",
+    "frozen-phase2/PHASE2_PROTOCOL.md": "be274303a7e2f56fa4da396116e20950c70ac4ed933dea92c36f003a721c857a",
+    "frozen-phase3/PHASE3_MOVEMENT_PROTOCOL.md": "c1d8b712491f99cb6188db0490e626c2a6a9ab15c195d662427eabc81f885bf3",
+    "frozen-phase3/run.py": "3b7700b0f079578e103de51f2ee5fca7811be577ca3e7ca5d4229d7a61117331",
+    "frozen-phase3/run_high_focus.py": "ac157302964fb7cf299c8d554decbbeeb39c0b1c524ae119d3e14d55fa4d08d2",
+    "frozen-phase3/correct_high_focus.py": "674b9329c6bd2707ccfb182f5a403a583850137b7be9c50a10cdcc1f74feb2e1",
+    "frozen-phase3/run_phase3_movement.py": "13f26fc6ff1c56da4bf5d4ecda3fdeb140d96e3a36703d7cad4b82225311e7da",
+    "frozen-phase3/run_groups.py": "c659c8aec859afc29f564e057d5ff03c520e5893335425cacf55c330d98b382b",
+    "frozen-phase3/manifest.json": "6f908a7f05628dc12267f06aa2e917e67df6b52ea3fec95b341d39192692b6de",
+    "phase23_source_hashes.json": "5cd7e4331a7ebc46739d7b51b1fa73d19c7ca0dc7bdc22ccf877a181f5e00a89"
+  }
+}

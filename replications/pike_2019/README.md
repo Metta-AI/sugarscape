@@ -326,3 +326,22 @@ All failed import attempts are preserved and completed zero simulations.
 The segment runner rejects an incorrect core runtime or empty ordinal range before creating output.
 Use Python 3.11.14, Mesa 0.8.5, NumPy 1.26.4, NetworkX 3.6.1, and SciPy 1.16.3 for this continuation; the full installed package list is retained.
 No shared environment was modified by this repair. Linux portability and the remaining 1,813 conditions still require execution and validation.
+
+## Linux portability and bounded continuation
+
+The [three-condition comparison](results/linux-portability-2026-10-16/comparison.json) retains 165,877 health records and 3,000 price-step records on Linux.
+All three independent segment audits pass. Initial agents, population histories, and observations are byte-identical to the corresponding macOS conditions.
+The largest absolute wealth difference is 9.95e-13; the largest transaction-price difference is 8.53e-14.
+These differences remain in the raw evidence; no output rounding or tolerance change was used to erase them.
+This is limited portability evidence, not proof of equivalence for every seed or identification of the numerical cause.
+
+The upload omitted `phase23_source_hashes.json`, so the first boot exited unsuccessfully after completing all three simulations.
+Uploading the pinned manifest and rerunning only the Phase II/III audits resolved that packaging failure.
+An initial relative-path audit invocation also failed its command-path invariant; the absolute-path invocations pass.
+The archive preserves the original failure logs and both repaired audits. No simulations were rerun for these repairs.
+
+The remaining 1,813 conditions are assigned to disjoint ranges on the same eight-core node.
+Each segment retains sequential execution and frozen seeds, source files, selectors, and horizons; eight separate processes run concurrently.
+The overall simulation timeout is six hours, and the 2 GiB disk guard remains enabled.
+A failure retains partial evidence; completed conditions must be reconciled before any retry.
+The continuation does not add pilot duplicates to grid coverage or claim whole-paper completion.
