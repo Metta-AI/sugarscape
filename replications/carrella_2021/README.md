@@ -138,3 +138,13 @@ An intentionally corrupted reference statistic yields 1,499/1,500 matches and a 
 
 Do not replace the traded two-resource model with the one-resource McCulloch variant.
 Do not count analysis of the archived table alone as an independent simulation replication.
+
+## Generalized additive model audit
+
+The first 1,250-input generalized additive model run completed all five folds.
+Independent recalculation validates all 6,250 held-out parameter predictions and the saved errors, interval coverage, and widths.
+[Recorded results](results/gam-1250-2026-10-15/comparison.json) differ from all five printed Table 8 values.
+Reproduction wealth performance is -3.002351 versus the published -1.329; no negative replication is assigned.
+Both original Sugarscape notebooks set `bam=TRUE`, matching our runner and the original `mgcv::bam` call.
+This estimator uses 10,000 residual/prediction-error draws per held-out observation for intervals; it does not use the other estimators’ 200-fit bootstrap.
+Historical package versions and numerical fitting behavior remain to be investigated.

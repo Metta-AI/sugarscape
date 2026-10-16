@@ -1,0 +1,53 @@
+{
+  "method": "loess (mgcv::bam)",
+  "size": 1250,
+  "seed": 0,
+  "status": "Unresolved estimator/version discrepancy; not a negative replication",
+  "comparison": [
+    {
+      "parameter": "initial.population",
+      "observed": 0.499665248447165,
+      "published": "0.528",
+      "matches_printed_precision": false
+    },
+    {
+      "parameter": "pmut",
+      "observed": 0.436193778519141,
+      "published": "0.328",
+      "matches_printed_precision": false
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "observed": 0.347443748236836,
+      "published": "0.311",
+      "matches_printed_precision": false
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "observed": 0.164329489487925,
+      "published": "0.328",
+      "matches_printed_precision": false
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "observed": -3.00235124307185,
+      "published": "-1.329",
+      "matches_printed_precision": false
+    }
+  ],
+  "files": {
+    "arguments.txt": "6b2ec1e1f5ca1a9237731513fcdea6f3759021e02ee156803c0f874546b51cb0",
+    "complete.rds": "c8bc875db9048e7568e02ad31c3ff75b60d8301b10412482db6b350aadd3cdf5",
+    "execution.log": "b14439b3df5bcf3a7faa293a1cee8093d9feb338a1ca654b769ee97453967ec4",
+    "fold-1.rds": "790a3d53d0945c595fe0026f99b53b34f4b5be79c17a964987d74df238e36838",
+    "fold-2.rds": "3e8d5adfb3dcbb516606cf8763799df04a4962aa0351f5cf5fafd53694d10777",
+    "fold-3.rds": "bba5c028104c91cd37cd1c0f516090e5a5c45c5d7bebfd7d0f6c0dd568700df2",
+    "fold-4.rds": "0407e8acea3462d7116b07dbfda86d732d295f7b8a868582a3970c238ffeca88",
+    "fold-5.rds": "13fa0a2b1ed96f4ae5c593b86760d3c84a23b47b75ab0d9e63e2ab1956ce3563",
+    "metrics.csv": "dcb3e2ce0c6754450cb8be6f787fce25d8a46428dd0a6a4f9462f298258beb57",
+    "packages.csv": "611e0146e8ca33c8ecf333b6a3259409a0f18059bf3a98a607f5e2990f6ea4ea",
+    "session.txt": "147f8bfe18562987e7c6dd1120cc45b8fb8085b4e1adc0113cca0282ae273a7a",
+    "validation/predictions.csv": "548cf5b6b27aa2735bc157533f9c7261da01341961b584b957858769bce173e3",
+    "validation/validated_metrics.csv": "77b26e5e70824d5df4362ad430bb1a0232df4c16147fcaabaf8d12e11ad8cdb7"
+  }
+}
