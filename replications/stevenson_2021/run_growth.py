@@ -32,13 +32,15 @@ with (args.output / "completed.jsonl").open("x") as completed:
             assert shutil.disk_usage(args.output).free >= 2 * 1024**3
             assert hashlib.sha256(binary.read_bytes()).hexdigest() == manifest["binary_sha256"]
             trajectory = args.output / f"{scenario}-{seed}.csv"
-            command = [str(binary), str(seed), *(str(v) for v in parameters), "3000", "1"]
+            observations = args.output / f"{scenario}-{seed}-observations.csv"
+            command = [str(binary), str(seed), *(str(v) for v in parameters), "3000", "1", str(observations.resolve())]
             started = time.monotonic()
             with trajectory.open("x") as stdout, trajectory.with_suffix(".stderr").open("x") as stderr:
                 subprocess.run(command, stdout=stdout, stderr=stderr, check=True)
             record = {"scenario": scenario, "seed": seed, "command": command,
                       "elapsed_seconds": time.monotonic() - started,
-                      "trajectory_sha256": hashlib.sha256(trajectory.read_bytes()).hexdigest()}
+                      "trajectory_sha256": hashlib.sha256(trajectory.read_bytes()).hexdigest(),
+                      "observations_sha256": hashlib.sha256(observations.read_bytes()).hexdigest()}
             completed.write(json.dumps(record) + "\n")
             completed.flush()
             print(f"Completed {scenario} seed {seed}", flush=True)

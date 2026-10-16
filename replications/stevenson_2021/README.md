@@ -37,11 +37,11 @@ These are model-execution invariants, not evidence that all behavioral choices m
 ```sh
 clang++ -std=c++17 -O2 -Wall -Wextra -Werror \
   replications/stevenson_2021/simulate.cpp -o /absolute/tools/stevenson-simulate
-/absolute/tools/stevenson-simulate 0 85 0 40000 100 > /new/low-fertility.csv
-/absolute/tools/stevenson-simulate 0 10 40 40000 100 > /new/birth-cost.csv
+/absolute/tools/stevenson-simulate 0 85 0 40000 100 /new/low-observations.csv > /new/low-fertility.csv
+/absolute/tools/stevenson-simulate 0 10 40 40000 100 /new/birth-observations.csv > /new/birth-cost.csv
 ```
 
-Arguments are seed, infertility denominator, birth cost, maximum cycles, and recording interval.
+Arguments are seed, infertility denominator, birth cost, maximum cycles, recording interval, and a new observation CSV path.
 Use fresh output files; shell redirection overwrites existing files.
 
 ## Required study targets
@@ -184,3 +184,21 @@ Different unknown seeds and sampling windows prevent a definitive consistency ju
 The birth-cost curve remains far above our 1,418.80 ensemble mean, so vector recovery does not resolve that behavioral discrepancy.
 Elite-age curves are retained as additional targets; the current simulator does not yet record the corresponding elite statistic.
 No new paper completion or negative verdict follows from this figure extraction.
+
+## Elite and founder observation coverage
+
+The simulator now emits a separate observation CSV containing elite summaries and the living members of the first thirty births.
+Elite membership uses the wealthiest ceil(population/10), with equal wealth ordered by birth identifier; this unresolved author convention is explicit.
+No observation sorts live agents, consumes random numbers, or changes movement, reproduction, death, or regrowth.
+The aggregate CSV format remains unchanged. Both ensemble runners pass the required new output path.
+
+[Complete-system verification](results/observation-proof-2026-10-16/proof.json) checks both scenarios for 3,000 cycles at per-cycle resolution.
+All 6,000 aggregate observations are byte-identical to the original binary.
+Elite counts, wealth, and age also match independent reconstruction for 598 early complete-population observations.
+Later elite results have no independent full-population oracle in this proof; that limitation is retained.
+
+The [declared observation ensemble](OBSERVATION_PROTOCOL.md) runs all 100 original seeds per scenario through 50,000 cycles.
+Each run must match its already completed same-seed aggregate prefix byte-for-byte before entering the completion ledger.
+Raw and losslessly compressed output, native exit status, and content hashes are preserved.
+The first two low-fertility runs pass this full-prefix check; the overall observation ensemble is still running.
+These measurements expand required figure coverage without resolving the model's remaining historical ambiguities.

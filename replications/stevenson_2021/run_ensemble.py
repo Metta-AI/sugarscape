@@ -35,11 +35,13 @@ def main():
         for seed in range(experiment.first_seed, experiment.last_seed + 1):
             started = time.monotonic()
             trajectory = args.output / f"seed-{seed}.csv"
-            command = [str(binary), str(seed), *(str(value) for value in parameters), str(experiment.cycles), "100"]
+            observations = args.output / f"seed-{seed}-observations.csv"
+            command = [str(binary), str(seed), *(str(value) for value in parameters), str(experiment.cycles), "100", str(observations.resolve())]
             with trajectory.open("x") as stdout, (args.output / f"seed-{seed}.stderr").open("x") as stderr:
                 subprocess.run(command, stdout=stdout, stderr=stderr, check=True)
             record = {"seed": seed, "command": command, "elapsed_seconds": time.monotonic() - started,
-                      "trajectory_sha256": hashlib.sha256(trajectory.read_bytes()).hexdigest()}
+                      "trajectory_sha256": hashlib.sha256(trajectory.read_bytes()).hexdigest(),
+                      "observations_sha256": hashlib.sha256(observations.read_bytes()).hexdigest()}
             completed.write(json.dumps(record) + "\n")
             completed.flush()
             print(f"Completed {experiment.scenario} seed {seed}", flush=True)

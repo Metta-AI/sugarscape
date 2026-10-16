@@ -1,0 +1,63 @@
+{
+  "results": [
+    {
+      "scenario": "low-fertility",
+      "commands": [
+        [
+          "/Users/relh/Code/workspace/sugarscape-replication-tools/stevenson-growth-20261015",
+          "0",
+          "85",
+          "0",
+          "3000",
+          "1"
+        ],
+        [
+          "/Users/relh/Code/workspace/sugarscape-replication-tools/stevenson-observations-20261016",
+          "0",
+          "85",
+          "0",
+          "3000",
+          "1",
+          "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-2021-observation-proof-001/low-fertility-observations.csv"
+        ]
+      ],
+      "cycles": 3000,
+      "byte_identical_original_trajectory": true,
+      "early_complete_population_elite_checks": 367,
+      "founder_records": 82209,
+      "trajectory_sha256": "92afda4ffcf3f0c253b15c94551aed525a9ef5d7a95df51b7bfdce85d8d56d40"
+    },
+    {
+      "scenario": "birth-cost",
+      "commands": [
+        [
+          "/Users/relh/Code/workspace/sugarscape-replication-tools/stevenson-growth-20261015",
+          "0",
+          "10",
+          "40",
+          "3000",
+          "1"
+        ],
+        [
+          "/Users/relh/Code/workspace/sugarscape-replication-tools/stevenson-observations-20261016",
+          "0",
+          "10",
+          "40",
+          "3000",
+          "1",
+          "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-2021-observation-proof-001/birth-cost-observations.csv"
+        ]
+      ],
+      "cycles": 3000,
+      "byte_identical_original_trajectory": true,
+      "early_complete_population_elite_checks": 231,
+      "founder_records": 44398,
+      "trajectory_sha256": "5fbe55b77cf7b6c54059eacf23d898935ab68fea20c70b2c55ad222744b0ec81"
+    }
+  ],
+  "binary_sha256": {
+    "stevenson-growth-20261015": "f6a670f3e0a4e978094222f72f291fc57b751495667474fccf3859b50db95875",
+    "stevenson-observations-20261016": "3f1bee8d6e684fcd97bf13c9a6cedd9173fd8c78a46b42ea36030cb85a4862a8"
+  },
+  "scope": "Real complete native workflows; original trajectory identity and independent elite reconstruction while founder ledger contains the whole population. Later elite observations lack an independent full-population oracle."
+}

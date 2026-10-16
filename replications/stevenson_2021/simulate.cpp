@@ -3,6 +3,8 @@
 #include <array>
 #include <cstdint>
 #include <cstdlib>
+#include <filesystem>
+#include <fstream>
 #include <iostream>
 #include <numeric>
 #include <random>
@@ -14,22 +16,29 @@ struct Agent {
     int wealth = 0;
     int age = 0;
     bool alive = true;
+    std::uint64_t id = 0;
 };
 
 int main(int argc, char** argv) {
-    if (argc != 6) throw std::invalid_argument("Usage: simulate seed infertility birth-cost cycles record-every");
+    if (argc != 7) throw std::invalid_argument("Usage: simulate seed infertility birth-cost cycles record-every observations.csv");
     const auto seed = std::stoull(argv[1]);
     const int infertility = std::stoi(argv[2]);
     const int birth_cost = std::stoi(argv[3]);
     const int cycles = std::stoi(argv[4]);
     const int record_every = std::stoi(argv[5]);
     if (infertility < 1 || birth_cost < 0 || cycles < 1 || record_every < 1) throw std::invalid_argument("Invalid parameters");
+    if (std::filesystem::exists(argv[6])) throw std::invalid_argument("Observation output already exists");
+    std::ofstream observations(argv[6]);
+    observations.exceptions(std::ios::failbit | std::ios::badbit);
+    observations.precision(17);
+    observations << "cycle,kind,agent_id,count,wealth,mean_age\n";
     std::mt19937_64 random(seed);
     std::array<int, 2500> resource;
     resource.fill(4);
     std::array<bool, 2500> occupied{};
     const int initial = std::uniform_int_distribution<int>(0, 2499)(random);
     std::vector<Agent> agents{{initial}};
+    std::uint64_t next_id = 1;
     occupied[initial] = true;
     std::array<std::array<int, 24>, 2500> visible{};
     for (int cell = 0; cell < 2500; ++cell) {
@@ -91,7 +100,7 @@ int main(int argc, char** argv) {
                     int cell = empty[std::uniform_int_distribution<std::size_t>(0, empty.size() - 1)(random)];
                     agent.wealth -= birth_cost;
                     occupied[cell] = true;
-                    agents.push_back(Agent{cell});
+                    agents.push_back(Agent{cell, 0, 0, true, next_id++});
                     ++births;
                 }
             }
@@ -107,6 +116,26 @@ int main(int argc, char** argv) {
         if (error != 0) throw std::logic_error("Resource conservation failed");
         if (agents.size() != existing + births - deaths) throw std::logic_error("Population balance failed");
         if (cycle % record_every == 0 || cycle == 1 || cycle == cycles || agents.empty()) {
+            // Observe a copy of indices; sorting must not change activation or random draws.
+            std::vector<std::size_t> ranked(agents.size());
+            std::iota(ranked.begin(), ranked.end(), 0);
+            const auto elite_count = (agents.size() + 9) / 10;
+            std::partial_sort(ranked.begin(), ranked.begin() + elite_count, ranked.end(),
+                [&agents](std::size_t left, std::size_t right) {
+                    if (agents[left].wealth != agents[right].wealth) return agents[left].wealth > agents[right].wealth;
+                    return agents[left].id < agents[right].id;
+                });
+            std::int64_t elite_age = 0, elite_wealth = 0;
+            for (std::size_t i = 0; i < elite_count; ++i) {
+                elite_age += agents[ranked[i]].age;
+                elite_wealth += agents[ranked[i]].wealth;
+            }
+            observations << cycle << ",elite,-1," << elite_count << ',' << elite_wealth << ','
+                         << (elite_count == 0 ? 0 : static_cast<double>(elite_age) / elite_count) << '\n';
+            for (const auto& agent : agents) {
+                if (agent.id < 30) observations << cycle << ",founder," << agent.id << ",1,"
+                                                << agent.wealth << ',' << agent.age << '\n';
+            }
             std::sort(wealths.begin(), wealths.end());
             double weighted = 0;
             for (std::size_t i = 0; i < wealths.size(); ++i) weighted += (i + 1.0) * wealths[i];
