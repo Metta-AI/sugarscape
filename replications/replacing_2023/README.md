@@ -99,3 +99,17 @@ Neither revision produces an extinction by the released 500-step horizon.
 Pre-conference seeds 12881 and 22744 finish at populations 801 and 984, with minima 51 and 110.
 The post-conference disease changes therefore do not explain the two reported extinction outcomes by themselves.
 Earlier source/configuration provenance and the paper's assessment horizon still require investigation.
+
+## Seasonal identity tracking and remaining seed runs
+
+All twenty published seasonal seeds and twenty reproduction seeds are now running.
+Each completed batch receives an independent full-trajectory audit.
+The seasonal batch then replays every seed with agent observations and requires byte-identical native trajectories before accepting those observations.
+The generalized batch auditor has also revalidated the completed disease batch without changing its outcomes.
+
+The [baseline seasonal cohort analysis](results/seasonal-cohort-pilot-2026-10-15/cohorts.json) verifies the actual cell-season convention at all 501 observations.
+Actual seasons follow the y-coordinate halves, despite the separate x-based hemisphere label.
+The analysis tracks the original agents in the wet half immediately before each seasonal flip, excluding replacement agents from migration counts.
+After the first flip, 100 of 199 cohort agents enter the newly wet half during the next 50 steps; 93 of those migrants are absent by the window's end.
+An endpoint-only count would miss those migrations, so both events and final survival/location are reported separately.
+Nine transition cohorts are retained. Presence in the dry half alone is not classified as hibernation, and no numerical paper-similarity threshold is inferred.

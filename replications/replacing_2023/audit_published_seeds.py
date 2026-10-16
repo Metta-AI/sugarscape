@@ -15,14 +15,16 @@ manifest = json.loads((args.batch / "manifest.json").read_text())
 target_path = root / "published_targets.json"
 assert hashlib.sha256(target_path.read_bytes()).hexdigest() == manifest["target_sha256"]
 targets = json.loads(target_path.read_text())["table3"]
-assert manifest["scenario"] == "disease_basic"
+scenario = manifest["scenario"]
+assert scenario in {"disease_basic", "seasonal_migration", "reproduction_limited"}
+horizon = 2500 if scenario == "reproduction_limited" else 500
 assert manifest["seeds"] == [row["seed"] for row in targets]
 assert len(targets) == 20
 completed = [json.loads(line) for line in (args.batch / "completed.jsonl").read_text().splitlines()]
 assert [r["seed"] for r in completed] == manifest["seeds"], "Incomplete or reordered published-seed batch"
 engine = Path(manifest["engine"])
 assert subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=engine, text=True).strip() == manifest["revision"]
-original_bytes = (engine / "examples/disease_basic.json").read_bytes()
+original_bytes = (engine / "examples" / f"{scenario}.json").read_bytes()
 original = json.loads(original_bytes)
 rows = []
 observations = 0
@@ -38,9 +40,9 @@ for completion, target in zip(completed, targets, strict=True):
     assert hashlib.sha256(config_bytes).hexdigest() == run["config_sha256"]
     config = json.loads(config_bytes)
     expected = dict(original)
-    expected.update(seed=seed, timesteps=500, headlessMode=True, debugMode=["none"], logfile=str(directory.resolve() / "trajectory.json"))
+    expected.update(seed=seed, timesteps=horizon, headlessMode=True, debugMode=["none"], logfile=str(directory.resolve() / "trajectory.json"))
     assert config == expected
-    assert completion["command"][-3:] == ["disease_basic", str(seed), str(directory.resolve())]
+    assert completion["command"][-3:] == [scenario, str(seed), str(directory.resolve())]
     data = (directory / "trajectory.json").read_bytes()
     result = json.loads((directory / "result.json").read_text())
     assert result == completion["result"]
@@ -54,19 +56,19 @@ for completion, target in zip(completed, targets, strict=True):
         for value in r.values():
             assert all(math.isfinite(v) for v in value) if isinstance(value, list) else math.isfinite(value)
     final = trajectory[-1]
-    assert final["timestep"] == 500 or final["population"] == 0
+    assert final["timestep"] == horizon or final["population"] == 0
     assert final["population"] == result["final_population"]
     assert final["timestep"] == result["final_timestep"]
     assert min(r["population"] for r in trajectory) == result["minimum_population"]
     assert max(r["population"] for r in trajectory) == result["maximum_population"]
     observations += len(trajectory)
-    rows.append({"seed": seed, "published_qualitative_outcome": target["disease_basic"],
+    rows.append({"seed": seed, "published_qualitative_outcome": target[scenario],
                  "extinct_by_executed_horizon": final["population"] == 0,
                  "final_timestep": final["timestep"], "final_population": final["population"],
                  "minimum_population": result["minimum_population"], "trajectory_sha256": result["trajectory_sha256"]})
-report = {"revision": manifest["revision"], "runs": len(rows), "observations": observations,
+report = {"scenario": scenario, "horizon": horizon, "revision": manifest["revision"], "runs": len(rows), "observations": observations,
           "extinctions": sum(r["extinct_by_executed_horizon"] for r in rows), "results": rows,
-          "limitation": "Released 500-step horizon; the paper's exact figure/seed assessment times and source revision remain unverified. Survival does not establish qualitative similarity, and a horizon mismatch can prevent a negative-replication verdict."}
+          "limitation": "Disease/seasonal use the released 500-step horizon; reproduction uses Figure 2's 2500-step horizon. Exact seed-assessment times and source revision remain unverified. Survival does not establish qualitative similarity, and a horizon mismatch can prevent a negative-replication verdict."}
 args.output.mkdir(parents=True, exist_ok=False)
 (args.output / "audit.json").write_text(json.dumps(report, indent=2) + "\n")
 print(json.dumps(report))
