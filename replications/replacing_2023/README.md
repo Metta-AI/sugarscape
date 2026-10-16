@@ -227,3 +227,16 @@ These runs use Python3.12 with Tk available; earlier replays used Python3.11.
 The historical code imports its GUI even in headless mode. No source changes or import stubs were applied.
 The runtime difference prevents attributing every trajectory difference solely to code revision.
 This source boundary does not resolve the paper pin, disease discrepancy, or qualitative seed classifications.
+
+## Matched-runtime disease comparison
+
+[Six controlled reruns](results/matched-runtime-2026-10-16/audit.json) run both historical revisions under Python3.12.4 with `PYTHONHASHSEED=0`.
+Each uses the original disease example, changing only seed, headless mode, and log destination.
+All six native commands exit successfully; their 3,009 records pass consecutive-time and population checks.
+All three early-release trajectories repeat exactly. All three archived-release trajectories match every field of the earlier Python3.11 runs.
+Thus the observed Python-version change does not explain the disease discrepancies for these seeds and releases.
+Neither historical release produces either reported extinction.
+
+Source history records changes to endowment generation, random-stream handling, and disease modifiers between these releases.
+The paired runs do not isolate those individual changes or establish the paper's exact revision.
+The historical mismatch remains unresolved; this is not a completed negative replication.
