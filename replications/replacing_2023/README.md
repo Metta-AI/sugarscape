@@ -90,3 +90,12 @@ All 1,002 native trajectory records match their original runs byte for byte.
 Infections reach zero at timesteps 30 and 42 respectively and never return through timestep 500.
 Both populations recover. Thus these released runs do not contain a continuing epidemic at the stopping horizon.
 Exact historical-rule/configuration alignment remains unresolved; this evidence alone does not establish a paper-level negative replication.
+
+## Complete pre-conference seed comparison
+
+The [pre-conference twenty-seed batch](results/preconference-disease-published20-2026-10-15/audit.json) also completed successfully and passes the independent 10,020-observation audit.
+[All forty runs](results/preconference-disease-published20-2026-10-15/revision-comparison.json) retain their original seeds, configurations, and complete trajectories.
+Neither revision produces an extinction by the released 500-step horizon.
+Pre-conference seeds 12881 and 22744 finish at populations 801 and 984, with minima 51 and 110.
+The post-conference disease changes therefore do not explain the two reported extinction outcomes by themselves.
+Earlier source/configuration provenance and the paper's assessment horizon still require investigation.
