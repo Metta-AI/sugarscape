@@ -71,6 +71,7 @@ hashes = {}
 for directory in sorted((args.run / "runs").glob("row-*")):
     index = int(directory.name.removeprefix("row-"))
     assert 0 <= index < 550
+    assert directory.name == f"row-{index:04d}"
     ref = inputs[index]
     selected = selection["rows"][index]
     assert selected["selected_row"] == index
@@ -113,7 +114,9 @@ for directory in sorted((args.run / "runs").glob("row-*")):
         hashes[str(path.relative_to(args.run))] = hashlib.sha256(
             path.read_bytes()
         ).hexdigest()
-complete = len(rows) == 550
+indices = [row["selected_row"] for row in rows]
+assert len(indices) == len(set(indices)), "Duplicate selected inputs"
+complete = indices == list(range(550))
 if args.require_complete:
     assert complete, f"Full sizing requires all 550 strata; observed {len(rows)}"
 report = {
