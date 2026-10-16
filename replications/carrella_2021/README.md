@@ -469,3 +469,15 @@ A provenance manifest distinguishes these inputs from the archived native table;
 [The actual 561-input partial ensemble is rejected](results/independent-estimator-inputs-2026-10-16/validation.json) before any output directory is created.
 **The successful preparation and independent estimator paths remain unverified until the real 5,000-input ensemble completes.**
 No partial ensemble or copied native table substitutes for that completion requirement.
+
+## Disk-guard checkpoint and cloud handoff
+
+The three independent shards exited when local free space fell below their existing 2 GiB guard.
+[Reconciliation](results/disk-stop-reconciliation-2026-10-16/provenance.json) validates 893 unique inputs and independently recomputes 133,950 summary values.
+Completed intervals are `[0,631)`, `[2005,2139)`, and `[3503,3631)`; prior published prefixes are included, not added again.
+The remaining 4,107 inputs occupy `[631,2005)`, `[2139,3503)`, and `[3631,5000)`.
+Original trajectory files and producer logs remain in the retained evidence paths recorded by the audit.
+
+A task-owned CPU node is queued for a Linux portability check using Python 3.11.14, NumPy 1.26.4, and Pydantic 2.12.3.
+Eight previously completed inputs will be compared before any remaining production range launches.
+No Linux portability result, production launch, or complete independent ensemble is claimed by this checkpoint.
