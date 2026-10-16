@@ -104,5 +104,20 @@
   "other_search_results": {
     "oremland": "Renewed exact-title, author and GitHub searches did not verify author implementation; not evidence that none exists.",
     "fonseca_2025": "Excluded: PLOS 10.1371/journal.pcbi.1012138 cites Sugarscape but reports predator-prey and metabolic-network case studies."
-  }
+  },
+  "historical_build": {
+    "revision": "e293e4af31dc1f77f9f851fa42fff08f60151bfd",
+    "status": "failed unmodified core object compilation",
+    "exit_code": 1,
+    "error": "Inheritance.cpp invokes ReadAction(World*) but the class requires ReadAction(World*, Strategy*).",
+    "warning": "NewSweepStrategy::shuffle has no return in a non-void function.",
+    "changes": "None; isolated git archive preserved, no source edits.",
+    "scope": "No GUI, linking, or simulation attempted. No result verdict."
+  },
+  "historical_findings": [
+    "June2016 e293e4a loads unscaled sugar and seeds from wall-clock time.",
+    "July2016 28899d2 forces seed zero; August2016 c6c0eef multiplies sugar by10, then48d368d changes multiplier to2.",
+    "Qt dependency first appears in2020 9fd9be9.",
+    "Raw deposited landscape spans0..4, whereas the thesis Table7.1 setup says0..3; historical experiment map still unverified."
+  ]
 }

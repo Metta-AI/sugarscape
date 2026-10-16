@@ -203,3 +203,7 @@ The thesis contains quantified comparisons of synchronous and asynchronous updat
 The current source forces seed zero and doubles landscape sugar for evolution; it is not yet a matched carrying-capacity experiment.
 The full related 2017/2019 conference papers and historical configuration still require verification.
 This lead adds no completed study and replaces no unfinished candidate.
+
+The historical audit isolates landscape scaling to August 2016 and Qt introduction to 2020.
+An unchanged June 2016 core build fails on an inheritance-constructor mismatch; the compiler logs and source hashes are retained.
+This is a build failure, not evidence against a scientific result.
