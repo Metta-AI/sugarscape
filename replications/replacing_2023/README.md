@@ -210,3 +210,20 @@ The mean increases are near the paper's descriptive 3%, while the maxima exceed 
 The diagnostic reuses Table3 seeds from other scenarios; the original trade/lending seeds, horizon, measurement window, and exact historical controls remain unknown.
 Consequently neither agreement nor disagreement constitutes a completed paper replication.
 Original configurations, full trajectories, native logs, the predeclared protocol, and paired measurements are retained without dropping unfavorable seeds.
+
+## Earliest 500-step disease release
+
+Configuration history identifies `2d439ff1a8f2fff5e35e168fb610397dc35bfcdb` (May13,2023) as the first released 500-step disease example.
+The preceding changes rename four disabled pollution options and extend the original 200-step horizon.
+The resulting configuration is identical to the November pre-conference configuration.
+This revision was selected by that historical boundary before examining outcomes, not by closeness to the paper.
+
+[Three unchanged-code runs](results/first-disease-release-2026-10-16/audit.json) complete with native exit zero and 1,506 consecutive observations.
+Seed12345 reaches a minimum population of41 and ends at687.
+The reported extinction seeds12881 and22744 reach minima91 and91, ending at1,372 and909.
+Neither becomes extinct. The historical native loop executes through timestep501 for a configured500-step run; all original records remain retained.
+
+These runs use Python3.12 with Tk available; earlier replays used Python3.11.
+The historical code imports its GUI even in headless mode. No source changes or import stubs were applied.
+The runtime difference prevents attributing every trajectory difference solely to code revision.
+This source boundary does not resolve the paper pin, disease discrepancy, or qualitative seed classifications.
