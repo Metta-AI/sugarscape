@@ -203,3 +203,11 @@ Seven of nine tested inequality ranks rise from slow to fast automation when the
 The two exceptions are low-composition levy, fifth-to-first, and high-composition wealth/means-tested, seventh-to-fifth.
 The prose's explanation that those ranks were already fixed at extremes does not match these unrounded rankings.
 These are reporting checks on deposited data; fresh composition runs remain pending and no whole-paper negative verdict is assigned.
+
+## Bundled simulation verification
+
+[The bundled Part A](results/fork-static-2026-10-15/comparison.json) completes all 25 static runs and produces a byte-identical CSV to the independent author replay.
+The full bundled canonical process continues; this component does not imply a successful final exit.
+`compare_fork.py REFERENCE_REPLAY FORK_RUN NEW_OUTPUT` requires successful complete canonical runs, matching pinned model provenance, the full four-file output ledger, and all 206,010 cells.
+Its report-only rejection was exercised through the public command: nine valid generated reports are insufficient simulation evidence.
+The full comparison remains pending native completion.
