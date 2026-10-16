@@ -339,3 +339,21 @@ This benchmark leaves the existing fixed-reference queue unchanged.
 [Downloaded initial evidence](results/generated-sizing-launch-2026-10-16/prefix-independent-validation.json) independently verifies eight completed inputs and 96 exact archived measurements.
 These early inputs establish execution, not a representative cost estimate or completion of the generated ensemble.
 The 550-input sample remains running, and no full generated-production queue has been launched.
+
+### Independent sizing audit and projection gate
+
+`analyze_sizing.py` validates the frozen input selection, completed native outputs, timings, and output hashes independently of the producer's audit verdicts.
+The [223-input snapshot](results/generated-sizing-audit-2026-10-16/analysis.json) matches all 2,676 archived measurements exactly.
+This snapshot includes the eight initially reported inputs; the counts are not additive.
+Running `--require-complete` against this real snapshot fails before creating output, because 327 selected strata remain absent.
+
+The analyzer emits a projection only when all 550 selected strata have valid results.
+It weights CPU time and elapsed time by original stratum size, then reports an ideal eight-CPU estimate and an eight-worker elapsed-time estimate.
+A supplied hourly price is an assumption, not a live quote or guaranteed budget.
+Both estimates retain per-input Java startup costs and exclude setup, retries, transfer, and idle time.
+One sampled input per stratum does not estimate within-stratum timing variance; no confidence interval is claimed.
+The complete projection path remains unverified until all benchmark outputs arrive.
+
+```bash
+python replications/raimbault_2019/analyze_sizing.py /downloaded/sizing-run /new/sizing-analysis --hourly-node-price 0.4824 --require-complete
+```
