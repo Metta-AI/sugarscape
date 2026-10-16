@@ -199,3 +199,20 @@ Both complete 1,000 steps; 102,529 health records and 2,000 price-step measureme
 All raw condition outputs, the frozen ledger, and derived measurements are retained.
 Controls reject premature full analysis and a changed policy, even when the changed configuration's recorded file hash is updated.
 The ensemble continues from its frozen sources; this prefix does not increase the completed-paper count.
+
+## Released high-focus policy selects the wrong extreme
+
+The paper says high-focus groups move using the member with the highest sugar or spice holding.
+Both released `step_high` methods instead replace their selected member when the next member's maximum holding is smaller.
+Their syntax trees are identical despite differing surrounding files.
+
+`trace_movement_policy.py` passively records original member holdings and the values perceived during movement.
+`audit_movement_policy.py NATIVE TRACE NEW_OUTPUT` requires five-file byte parity and independently checks every selected holding.
+[The network threshold-ten, seed-zero trace](results/movement-policy-diagnostic-2026-10-16/audit.json) completes 1,000 steps with 4,319 high-focus calls.
+Every call selects the member with the smallest maximum holding; all 4,319 differ from the largest member maximum.
+Initial agents, identities, health, population, and price outputs match the uninstrumented run byte-for-byte.
+The original data, passive trace, source hashes, and audit are retained.
+
+This is a confirmed released-code/paper-description discrepancy, not a verdict on the unidentified historical experiment version.
+Movement-policy ensembles must identify the released selector explicitly and keep any corrected-highest experiment separate.
+The Phase II no-policy ensemble does not invoke this policy and continues unchanged.
