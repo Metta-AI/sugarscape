@@ -481,3 +481,17 @@ Original trajectory files and producer logs remain in the retained evidence path
 A task-owned CPU node is queued for a Linux portability check using Python 3.11.14, NumPy 1.26.4, and Pydantic 2.12.3.
 Eight previously completed inputs will be compared before any remaining production range launches.
 No Linux portability result, production launch, or complete independent ensemble is claimed by this checkpoint.
+
+## Linux portability diagnostic
+
+[Eight pinned-runtime replays](results/linux-portability-2026-10-16/provenance.json) completed on Linux with the unchanged independent model.
+The strict comparison fails on input zero; its failure and original comparator remain retained.
+Across 4,008 observations, 16 Gini values differ by at most `1.1102230246251565e-16`.
+All other recorded trajectory values match exactly, including populations, patch resources, trade counts, and mean prices.
+Of 1,200 summary values, 1,157 match exactly; the maximum difference is `4.884981308350689e-15`.
+The summary comparison exposes differences without applying a new acceptance tolerance.
+
+The model computes utility with fractional powers before calculating wealth inequality, and NumPy computes fitted trend summaries.
+These are candidate numerical paths, not an established explanation for the observed differences.
+The saved observations do not expose every agent state, so they cannot prove identical hidden-state evolution.
+No remaining production interval has launched; platform attribution and acceptance remain pending.
