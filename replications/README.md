@@ -40,13 +40,13 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | ID | Paper | Initial Sugarscape target | Status |
 | --- | --- | --- | --- |
 | mcculloch-2022 | McCulloch et al., [Calibrating Agent-Based Models Using Uncertainty Quantification Methods](https://www.jasss.org/25/2/1.html) (2022) | Figures 3–6: stabilization, ensemble variance, history matching, posterior | completed mixed study; validated-negative exact stabilization, conditional posterior agreement; [PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/3) |
-| kremer-herman-2024 | Kremer-Herman, Gupta, Severson, [Blueprints for Machine Ethics: A Digital Terrarium for Socio-Ethical Artificial Agent Decisionmaking](https://doi.org/10.1109/ACCESS.2024.3519139) (2024) | Table 3 and homogeneous-society population/resource outcomes; 500 seeds, 5,000 steps | historical release pinned; deterministic full-horizon/extinction pilot validated; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6) |
-| kremer-herman-2023 | Kremer-Herman and Gupta, Replacing Sugarscape: A Comprehensive, Expansive, and Transparent Reimplementation (SimuTools 2023; proceedings 2024); [conference slides](https://simutools.eai-conferences.org/2023/static/uploads/sites/782/2024/01/Replacing-Sugarscape-EAI-SimuTools-2023.pdf) | Acquire full chapter and map its original replication claims to engine examples | candidate; full chapter needed |
+| kremer-herman-2024 | Kremer-Herman, Gupta, Severson, [Blueprints for Machine Ethics: A Digital Terrarium for Socio-Ethical Artificial Agent Decisionmaking](https://doi.org/10.1109/ACCESS.2024.3519139) (2024) | Table 3 and homogeneous-society population/resource outcomes; 500 seeds, 5,000 steps | original 2,000 configurations and 500 shared seeds recovered; corrected historical-release pilots running; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6) |
+| kremer-herman-2023 | Kremer-Herman and Gupta, Replacing Sugarscape: A Comprehensive, Expansive, and Transparent Reimplementation (SimuTools 2023; proceedings 2024); [conference slides](https://simutools.eai-conferences.org/2023/static/uploads/sites/782/2024/01/Replacing-Sugarscape-EAI-SimuTools-2023.pdf) | Acquire full chapter and map its original replication claims to engine examples | full author-hosted chapter recovered; target/configuration mapping in progress |
 | bigbee-2007 | Bigbee, Cioffi-Revilla, Luke, [Replication of Sugarscape Using MASON](https://citeseerx.ist.psu.edu/document?doi=0e41ff02af3ab5578a925a3cf7c81f4262bbf0c0&repid=rep1&type=pdf) (2007) | Rule-set outcomes and documented replication failures | 2011 author source recovered; deterministic 1,000-step pilot; historical alignment outstanding; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/7) |
 | kiran-2014 | Kiran, [Using FLAME Toolkit for Agent-Based Simulation: Case Study Sugarscape Model](https://arxiv.org/abs/1408.3441) (2014) | Three spatial initialization scenarios; separate behavioral results from hardware timings | [source audit](source-audits/kiran-2014.json): six Table 5 targets extracted; original C/XML and initialization details unresolved |
 | oremland-2014 | Oremland and Laubenbacher, [Optimization of Agent-Based Models](https://www.jasss.org/17/2/6.html) (2014) | Sugarscape taxation schedule, revenue, population, and reduced-model comparison | [source audit](source-audits/oremland-2014.json): 2014 dissertation Appendix B recovered; landscape, tax timing, and negative-wealth handling unresolved |
 | raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 24/24 archived Table 4 statistics reproduced; three simulations exactly replayed at historical horizon; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
-| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | author replay: 210,000/210,000 statistics across 1,400 inputs; 25 estimator table entries matched; full replay running; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
+| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | complete author replay: 750,000/750,000 statistics across 5,000 inputs; 25 estimator table entries matched; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
 | stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two complete 100-seed, 100,000-cycle ensembles; discrepancies and twenty-run birth-threshold sensitivity audited; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | archived author release runs; version and seed-control gaps remain; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/9) |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | candidate |
@@ -68,7 +68,7 @@ The historical seeds remain unavailable, so this does not disprove the authors' 
 Carrella: two complete historical NetLogo replays each match all 150 archived statistics.
 An initial 24-statistic mismatch was resolved as connector observation timing; it is not negative paper evidence.
 Ten linear-regression, ten rejection-estimation, and five full-size local-linear Table 8 values now match published precision.
-A validated batch runner is executing every one of the 5,000 archived parameter/seed inputs in four batches.
+The complete 5,000-input replay now matches all 750,000 archived statistics; every trajectory is retained and hash-verified.
 Its first ten complete trajectories match the separate-call reference path in all 35,070 numeric values.
 Both quantile-forest sizes and one-dimensional semiautomatic estimators completed; stochastic comparison remains unresolved.
 The small-data generalized additive model differs from the paper. One observation dominates its second-fold error.
@@ -81,10 +81,12 @@ The initial fresh-simulation mismatch was resolved by restoring the historical 1
 Both recorded Gini values now match exactly for three archived inputs; complete ensembles remain unfinished.
 This was a configuration mismatch, not a negative replication. Neither ongoing study counts toward completion.
 
-Blueprints: located the paper-linked stable release repository and pinned the last pre-submission release, `Glucose/v2024.4`.
-The exact original experiment commit remains unverified. Two altruist seed-zero processes produce identical full trajectories through extinction.
-All four seed-zero pilots completed; each of four 500-seed ensembles is running with complete losslessly compressed trajectories.
-Aggregate comparisons, numeric published targets, and the selfishness sweep remain unfinished.
+Blueprints: the separate author datasets repository supplies all 2,000 homogeneous-society configurations and 500 shared original seeds.
+These identify HalfLookaheadBinary models, unlike our provisional plain-model runs. All four provisional batches were stopped and preserved.
+Every archived configuration key and nonoperational default matches the May 2024 release; the exact author code revision remains unverified.
+Corrected original-input pilots are running. No provisional output is counted toward paper replication.
+The official lab site supplies the full Blueprints and Replacing Sugarscape PDFs.
+Published numeric targets and the remaining selfishness, mixed-society, and runtime archives are now available.
 
 Stevenson: both 100-seed fixed-society ensembles completed 100,000 cycles per seed, with 200,200 validated observations and no extinctions.
 Twenty additional predeclared sensitivity runs show that the birth-threshold comparison substantially changes mean age.
@@ -103,7 +105,8 @@ Repository creation and public-source access succeeded independently.
 ## Implementation discovery
 
 - Blueprints: paper-linked [digital-terraria-lab/sugarscape](https://github.com/digital-terraria-lab/sugarscape),
-  distinct from the development repository. Pre-submission release `651925a5f7634fa3dd0f66c0621e7118e89807f8`, September 26, 2024.
+  distinct from the development repository. Original [configuration archives](https://github.com/digital-terraria-lab/datasets) were introduced June 12, 2024.
+  Their complete schema matches release `b9ca671ab7591c7b3606f2d76c33eda344d626d1`, May 28, 2024.
   Configuration has 250 agents, 50 diseases, and three tribes; the study runner sets the paper’s 5,000-step horizon.
 
 - McCulloch: [Urban-Analytics/uncertainty](https://github.com/Urban-Analytics/uncertainty), pinned in the study.
