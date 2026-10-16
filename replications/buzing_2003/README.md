@@ -1,6 +1,6 @@
 # Buzing, Eiben and Schut (2003): Evolving Agent Societies with VUScape
 
-**Incomplete study. Five native pilot runs completed; no paper-level replication verdict.**
+**Incomplete study. The 200-run reconstruction is fully audited; no paper-level replication verdict.**
 
 [The author PDF](https://www.cs.vu.nl/~gusz/papers/ECAL2003-Buzing-Eiben-Schut.pdf) reports a distinct experiment from the 2005 paper.
 DOI: `10.1007/978-3-540-39432-7_46`. Its hash and transcribed parameters are in [specification.json](specification.json).
@@ -58,3 +58,23 @@ The grid crosses four declared policies, five thresholds, and ten seeds, each fo
 The protocol discloses the observed seed-zero pilots. All outcomes and failures enter a completion ledger; a native failure stops the grid.
 The three communicating policies bracket an unresolved setting. Choosing one after seeing agreement would not establish historical fidelity.
 The first grid is running; completion, independent auditing, and scientific comparisons remain pending.
+
+## Complete grid and initialization checks
+
+[The complete audit](results/complete-2026-10-16/audit.json) validates 200 runs, 700,000 scalar observations, and 182,401 births.
+All populations become extinct between cycles 58 and 337, across all four declared policies and all five thresholds.
+This fails to reproduce the reported survival pattern. It remains unresolved because historical source, reproduction, and scheduling fidelity are not established.
+Zero late population variation after extinction must not be interpreted as beneficial stabilization.
+
+`audit_ensemble.py ENSEMBLE complete NEW_OUTPUT` independently reads actual configurations, raw trajectories, fixed-listening values, and birth/harvest logs.
+It reports temporal variation separately from variation across seeds. Incomplete grids and altered population files are rejected before creating output.
+Four verified archives retain complete native data, configurations, manifests, and logs; original source and compiled classes are excluded.
+
+`InitializationAudit.java` observes initialized native objects without advancing time or drawing randomness.
+It verifies all 400 agents' actual sugar, metabolism, vision, communication values, age ranges, and reproduction thresholds.
+It also checks all 500 seeds' size, composition, and actual growth rate of three.
+Compile it against the run's classes and original library, then run `nl.vu.cs.sugarland.model.InitializationAudit` from a fresh directory containing the same configuration.
+The retained observer used the communicating response-policy seed-zero pilot. Its first compilation referenced the wrong seed getter; that failure is preserved separately.
+The corrected observer completes and confirms the configured initial state.
+
+Next: isolate released versus specified reproduction behavior and scheduling, while preserving the entire failed-to-match reconstruction.

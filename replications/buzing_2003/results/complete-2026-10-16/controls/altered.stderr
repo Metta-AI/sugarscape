@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-buzing-2003/replications/buzing_2003/audit_ensemble.py", line 74, in <module>
+    assert hashlib.sha256(raw).hexdigest() == checksum
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
