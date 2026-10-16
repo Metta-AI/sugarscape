@@ -1,0 +1,41 @@
+{
+  "native_exit_code": 0,
+  "held_out_predictions": 25000,
+  "paper_comparison": [
+    {
+      "parameter": "initial.population",
+      "performance": 0.509367442984335,
+      "published": "0.509",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "pmut",
+      "performance": 0.448873524689738,
+      "published": "0.449",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "performance": 0.458225459396896,
+      "published": "0.458",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "performance": 0.475952583658523,
+      "published": "0.476",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "performance": 0.624279476080748,
+      "published": "0.624",
+      "matches_printed_precision": true
+    }
+  ],
+  "byte_identical_to_recovered": {
+    "metrics.csv": true,
+    "validation/predictions.csv": true,
+    "validation/validated_metrics.csv": true
+  }
+}

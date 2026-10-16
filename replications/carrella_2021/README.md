@@ -245,3 +245,11 @@ The source rows are 675, 2856, 3852, 3388, and 2778 (zero-based).
 The largest errors in folds 1 and 4 have eight and six predictors outside their training ranges respectively.
 All five inputs belong to the completed 5,000-simulation replay, which matches every archived summary statistic.
 This audit finds no copied-input discrepancy; it does not identify the cause of the published-score difference.
+
+## Clean semi-automatic ABC 4D rerun
+
+The [clean 5,000-row rerun](results/sabc4d-5000-clean-2026-10-15/comparison.json) exits successfully and independently validates all 25,000 held-out parameter predictions.
+All five performance values match Table 8 at its printed three-decimal precision: 0.509, 0.449, 0.458, 0.476, and 0.624.
+Metrics, prediction CSVs, and validated interval statistics are byte-identical to the earlier recovered outputs.
+All five fold files, complete results, environment, warnings, and successful-run log are retained.
+This resolves the earlier post-results script parse failure; it does not complete the remaining estimators or the full paper.
