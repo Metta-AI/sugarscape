@@ -366,3 +366,11 @@ Combining these chunks with the 7,933-row local baseline yields 13,233 unique si
 The earlier 1,400-row cloud snapshot is contained in this checkpoint and is not added again.
 The native archive and independent validation script are retained beside the report.
 The 55,000-row reference ensemble remains incomplete; this checkpoint makes no generated-landscape or whole-paper replication claim.
+
+### Third remote reference checkpoint
+
+The [71-chunk audit](results/remote-reference-checkpoint-2026-10-16/checkpoint-004-independent-validation.json) verifies7,100 remote inputs against the original reference archive.
+Together with7,933 frozen local inputs, coverage reaches15,033 unique simulations and30,066 exact Gini comparisons.
+All53 source/dependency hashes match the frozen runtime; every sealed chunk exits successfully and completes its declared interval.
+This adds1,800 rows beyond checkpoint003; previous cloud checkpoints are contained here and are not added again.
+The55,000-row reference ensemble remains incomplete, and generated landscapes and fresh spatial comparisons remain separate requirements.
