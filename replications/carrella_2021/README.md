@@ -227,3 +227,14 @@ All five performance values match Table 8 at its printed three-decimal precision
 The process subsequently exited nonzero with `unexpected end of input`, following the previously documented live-script edit.
 We retain that failure and all raw outputs; this is not recorded as a successful invocation.
 A clean invocation parses the entire script before execution and is running separately.
+
+## Full 5,000-input generalized additive model run
+
+The [five-fold run](results/gam-5000-2026-10-15/comparison.json) completed successfully; independent analysis validates all 25,000 held-out parameter predictions.
+All five performance values differ from Table 8 at its printed precision.
+Reproduction-wealth performance is −0.632580 versus published −0.894.
+The [error audit](results/gam-5000-2026-10-15/error-concentration.json) identifies concentrated extrapolation errors:
+fold 1 test row 165 has truth 92 and prediction −1,775.021, accounting for 99.3262% of that fold's squared error.
+Fold 4 test row 686 has truth 55 and prediction −2,586.658, accounting for 98.0261%.
+No observations are removed. Historical-runtime sensitivity and exact author-environment alignment remain unresolved.
+Raw fold objects, predictions, intervals, package versions, logs, and comparison metrics are retained.
