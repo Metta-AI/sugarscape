@@ -547,3 +547,14 @@ The [actual4,381-input gate check](results/distribution-analysis-gate-2026-10-16
 Formatting and lint checks pass; the complete-data calculation path has not yet run.
 The cloud producer subsequently exited successfully after all4,107 reserved inputs reported completion.
 Its final619 inputs await download and independent audit; execution completion alone does not satisfy the full-ensemble evidence requirement.
+
+## Table 8 result coverage
+
+The [cell inventory](results/table8-coverage-2026-10-16/coverage.json) reconciles every printed Table8 value with the retained original-data estimator evidence.
+Of90 cells,15 are explicitlyNA,65 have computed results, and10 await the active5,000-input neural-network and regression-random-forest runs.
+At1,250 inputs, local-linear, neural-network, and four-dimensional semi-automatic methods areNA; their author notebook chunks also disable evaluation.
+They are not missing reported numerical targets, and no replacement run was launched for them.
+Of65 computed values,33 match the paper’s printed three-decimal precision.
+This inventory includes previously documented single-cell matches and supersedes lower summary counts; it creates no new estimator result.
+The32 numerical differences still require interpretation, and printed agreement alone does not complete independent-model or whole-paper replication.
+Each cell links and hashes its retained comparison artifact.
