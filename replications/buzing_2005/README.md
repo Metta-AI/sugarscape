@@ -353,3 +353,18 @@ A frozen150-run strict-sugar ensemble is now running with the same grid as the o
 It requires exact equality to baseline source, unchanged configurations, valid raw data, and positive pre-halving sugar for every birth.
 Its first seven pairs pass196,000scalar observations and33,591births. The snapshot is explicitly incomplete.
 No rule or parameter was selected by optimizing agreement with the publication.
+
+## Complete fertility-only comparison
+
+[All150paired runs](results/fertility-complete-2026-10-16/comparison.json) pass the independent source, configuration, trajectory, birth, and harvest audit.
+The audit reads4,200,000scalar observations across original and corrected conditions and11,494,812corrected births.
+No corrected birth violates either parent's own fertility range. Both complete grids retain all extinct outcomes.
+
+COM1 threshold1 survival changes from1/10to3/10. COM2 threshold3 changes from9/10to10/10.
+COM2 threshold0 stays at5/10, but four paired seeds change survival status in opposite directions.
+Other group survival counts remain unchanged. These paired differences measure implementation sensitivity, not independent additional replicates.
+The correction does not resolve all discrepancies with the publication; sugar eligibility and historical fidelity remain separate questions.
+
+Three compressed archives retain every corrected native trajectory, configuration, manifest, birth record, and event log.
+Their complete contents were verified byte-for-byte against the external run evidence. Original author sources and compiled classes are excluded.
+The original reconstruction and fertility-only evidence remain separate; the strict-sugar ensemble continues independently.
