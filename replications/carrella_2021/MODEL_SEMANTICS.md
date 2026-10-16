@@ -23,7 +23,7 @@ Movement maximizes utility after harvesting candidate resources, breaks ties by 
 The native map uses two concentric, integer-capacity peaks per resource with radii 4, 8, 12, and 16.
 Existing map and movement configuration must be compared cell-by-cell before reuse.
 The author trade procedure also retains potential-holding variables across calls; equal marginal rates do not assign new potentials.
-That edge case requires a native scenario before deciding its independent implementation.
+The constructed equal-ratio native scenario confirms reuse of retained potentials; its frequency in ordinary sampled runs remains unmeasured.
 
 ## Verified native phase behavior
 
@@ -40,7 +40,7 @@ The archived 5,000-input replay remains the source for the original parameter di
 
 ## Implementation boundary
 
-Use an explicit study-owned model and scheduler, preserving existing fork behavior for its other studies.
+`model.py` implements a study-owned model and scheduler, preserving existing fork behavior for its other studies.
 Do not silently approximate asexual cloning with the fork's sexual reproduction or change cached utility to a freshly computed value.
 A correct independent implementation must first pass native phase scenarios and map checks, then the declared ensemble/statistics comparison.
 Matching native stochastic trajectories additionally requires matching NetLogo's random generator and activation/random-draw conventions.

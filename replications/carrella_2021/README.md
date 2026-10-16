@@ -297,3 +297,25 @@ Identical current holdings yield one versus two agents when only cached utility 
 Both cases preserve total holdings after metabolism and retain the previous mean price with zero trades.
 The checks pass with trade enabled; the initial trade-disabled diagnostic produces identical output bytes.
 These results specify behavior for an independent implementation; they do not complete that implementation or add a replicated paper.
+
+## Independent study model implemented
+
+`model.py` owns a separate Carrella model and scheduler inside this fork.
+It implements the audited landscape, movement, metabolism, phased trading, asexual inheritance/mutation, cached utility, Gini, and price carry-forward behavior.
+Python's random generator and activation draw order differ from NetLogo; matching seed labels does not promise identical stochastic trajectories.
+
+[Complete-model checks](results/independent-model-2026-10-16/comparison.json) match all 5,000 native resource capacities and three controlled whole-tick scenarios.
+The equal-ratio trade scenario confirms that retained potential holdings can be reused; this constructed case does not measure its frequency in original runs.
+A deliberately changed model that refreshes utility before reproduction fails the native comparison.
+Two bounded 501-observation CLI runs complete with byte-identical trajectories and pass finite-value, population, Gini, and extinction-timestamp checks.
+These checks establish initial implementation coverage, not full model equivalence or completed paper replication.
+Independent ensemble comparison, mutation boundaries, and broader native trade scenarios remain required.
+
+```sh
+python replications/carrella_2021/model.py /parameters.json /new/trajectory.csv
+python replications/carrella_2021/verify_model.py /complete/native-semantics /new/model-comparison
+```
+
+The parameter JSON uses `population`, `mutation`, `maximum_sugar`, `maximum_spice`, `reproduction`, and integer `seed`.
+Both minimum endowments are five, matching the original experiment.
+The CLI records before each of 501 native-style steps and preserves repeated terminal states after extinction.

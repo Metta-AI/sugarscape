@@ -14,6 +14,10 @@ public class SemanticsProbe {
         HeadlessWorkspace workspace = HeadlessWorkspace.newInstance();
         try {
             workspace.open(args[0], true);
+            workspace.command("clear-all set initial-population 0 setup");
+            String mapPath = output.resolve("map.csv").toAbsolutePath().toString();
+            workspace.command("file-open \"" + mapPath + "\" file-print \"x,y,sugar,spice\" "
+                + "foreach sort patches [p -> ask p [file-print (word pxcor \",\" pycor \",\" max-psugar \",\" max-pspice)]] file-close");
             for (int cached : new int[]{1, 10}) {
                 workspace.command("clear-all random-seed 123 set initial-population 0 "
                     + "set minimum-sugar-endowment 1 set maximum-sugar-endowment 10 "
@@ -41,6 +45,21 @@ public class SemanticsProbe {
                 }
                 rows.add(row);
             }
+            workspace.command("clear-all random-seed 123 set initial-population 0 "
+                + "set minimum-sugar-endowment 1 set maximum-sugar-endowment 10 "
+                + "set minimum-spice-endowment 1 set maximum-spice-endowment 10 "
+                + "set wealth-reproduction 100 set pmut 0 set trade? true setup "
+                + "ask patches [set max-psugar 0 set max-pspice 0 set psugar 0 set pspice 0] "
+                + "create-turtles 2 [turtle-setup setxy (25 + who) 25 set sugar 10 set spice 10 "
+                + "set sugar-metabolism 1 set spice-metabolism 1 set vision 1 "
+                + "set vision-points [[0 1] [1 0] [0 -1] [-1 0]] set wealth 1 set potsugar 20 set potspice 20] "
+                + "set prices [] set mean_prices 7 go");
+            String equalRow = "equal-rates-retained-potentials";
+            for (String reporter : new String[]{"ticks", "count turtles", "sum [sugar] of turtles",
+                    "sum [spice] of turtles", "sum [wealth] of turtles", "number_of_prices", "mean_prices"}) {
+                equalRow += "," + workspace.report(reporter);
+            }
+            rows.add(equalRow);
         } finally {
             workspace.dispose();
         }
