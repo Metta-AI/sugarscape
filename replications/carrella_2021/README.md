@@ -574,3 +574,11 @@ The original five-parameter order and146 nonconstant statistics are retained, ex
 The first held-out fold matches the earlier isolated random-forest run within that tolerance.
 Because the original notebook uses a different CSV parser, any later forest changes cannot be attributed solely to random-stream order without a parser control.
 The full estimator sequence remains running; no additional Table8 match is claimed.
+
+The [completed rejection checkpoint audit](results/notebook-rf-sequence-launch-2026-10-16/rejection-audit.json) reconstructs all five held-out folds and independently recomputes error, coverage, interval width, and baseline-normalized performance.
+All 25,000 predictions are checked against the earlier isolated run; the maximum difference is 1.39e-17.
+All five printed Table 8 scores agree, as they already did in the isolated execution; this adds no target count.
+The checkpoint random state equals the data-preparation random state exactly.
+The separate setup audit also confirms that setup and data preparation retain the state from `set.seed(0)`.
+Thus this rejection stage did not advance the random stream in the observed execution; later notebook stages remain pending.
+The actual rejection checkpoint, audit script, source hashes, and arithmetic report are retained alongside the launch evidence.
