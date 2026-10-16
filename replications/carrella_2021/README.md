@@ -2,7 +2,7 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: all 5,000 fresh author-model simulations validated; 25 estimator Table 8 values reproduced.
+Status: all 5,000 fresh author-model simulations validated; 30 Table 8 values reproduced across fully matched estimator/size comparisons.
 **Not a completed replication:** the other estimators and independent simulator work remain unfinished.
 
 ## Complete simulation replay
