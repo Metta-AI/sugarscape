@@ -318,3 +318,19 @@ A separately frozen 150-condition correction ensemble now repeats the entire bas
 Its protocol discloses the observed pilots and fixes the correction before the ensemble outcomes.
 It leaves fertility-end inheritance, other model rules, and all experimental parameters unchanged.
 This diagnostic ensemble is not a completed paper replication or an additional distinct paper.
+
+## Independent correction audit and sugar eligibility
+
+`compare_parent_fertility.py ENSEMBLE prefix|complete NEW_OUTPUT` verifies paired baseline/corrected data, configurations, source hashes, fertility records, and harvest accounting.
+It reverses only the two fertility edits and observer insertion, then requires exact equality to the baseline source.
+[The retained prefix](results/parent-comparison-2026-10-16/prefix-comparison.json) validates 82 paired runs, 2,296,000 scalar observations, and 3,527,735 corrected births.
+All corrected parents satisfy their own fertility ranges. Prefix groups report actual contributing seeds, without calling partial groups complete.
+Complete mode rejects an incomplete grid. A separate altered-population control fails at its checksum before creating comparison output.
+
+`audit_parent_fertility.py BASELINE NEW_OUTPUT observe --observe-wealth` also records sugar immediately before parental endowment is halved.
+[The complete COM2 threshold1 seed0 replay](results/parent-comparison-2026-10-16/wealth-observer/audit.json) again preserves all ten baseline files exactly.
+Of 103,457 births, 25,655 involve a zero-sugar parent; 3,475 involve two zero-sugar parents.
+Both configured reproduction thresholds are zero. The recovered comparisons permit equality, while sections3.13–3.14 specify sugar above the threshold.
+This is another recovered implementation/specification mismatch to isolate before interpreting scientific disagreements.
+It does not establish that the unavailable historical implementation used this rule.
+The running fertility-only ensemble remains unchanged; no sugar-eligibility correction has yet been applied.

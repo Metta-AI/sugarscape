@@ -12,6 +12,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("baseline", type=Path)
 parser.add_argument("output", type=Path)
 parser.add_argument("mode", choices=("observe", "own-range"))
+parser.add_argument("--observe-wealth", action="store_true")
 args = parser.parse_args()
 baseline = args.baseline.resolve()
 manifest = json.loads((baseline / "manifest.json").read_text())
@@ -42,6 +43,11 @@ marker = '            child = new SugarAgent("SugarAgentChild", childProps);'
 assert data.count(marker) == 1
 insertion = '''            System.out.println("parent-eligibility," + scape.getIteration() + "," + getAge() + "," + intProps[BEGIN_CHILD_BEARING_AGE] + "," + intProps[END_CHILD_BEARING_AGE] + "," + partner.getAge() + "," + partner.intProps[BEGIN_CHILD_BEARING_AGE] + "," + partner.intProps[END_CHILD_BEARING_AGE]);
 '''
+if args.observe_wealth:
+    wealth_marker = "            floatProps[SUGAR_AMOUNT] /= 2.0f;"
+    assert data.count(wealth_marker) == 1
+    wealth_observer = '            System.out.println("birth-wealth," + scape.getIteration() + "," + floatProps[SUGAR_AMOUNT] + "," + partner.floatProps[SUGAR_AMOUNT] + "," + intProps[MIN_REPRODUCTION_SUGAR] + "," + partner.intProps[MIN_REPRODUCTION_SUGAR]);\n'
+    data = data.replace(wealth_marker, wealth_observer + wealth_marker)
 observed_source = output / "SugarAgent.java"
 observed_source.write_text(data.replace(marker, insertion + marker), encoding="latin-1")
 sources[sources.index(source)] = observed_source
@@ -52,7 +58,7 @@ with (output / "compile.log").open("w") as log:
                     "-d", str(classes), *map(str, sources)], stdout=log, stderr=subprocess.STDOUT, check=True)
 command = [str(java), "-Djava.awt.headless=true", f"-Dreplication.seed={manifest['seed']}",
            "-cp", f"{classes}:{library}", str(adapter)]
-provenance = {"mode": args.mode, "baseline": str(baseline), "baseline_manifest": manifest,
+provenance = {"mode": args.mode, "observe_wealth": args.observe_wealth, "baseline": str(baseline), "baseline_manifest": manifest,
               "observer_source_sha256": hashlib.sha256(observed_source.read_bytes()).hexdigest(),
               "command": command, "scope": "Own-range correction is specification-based, not recovered historical code. No other rule changed."}
 (output / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
@@ -90,5 +96,17 @@ report = {"mode": args.mode, "cycles": 2000, "scalar_observations": scalar_obser
           "partner_below_own_minimum": sum(r[4] < r[5] for r in rows), "partner_above_own_maximum": sum(r[4] > r[6] for r in rows),
           "matching_baseline_files": matching, "final_population": float(population[-1][1]), "output_sha256": checksums,
           "scope": "Native rule audit; no paper-level replication verdict."}
+if args.observe_wealth:
+    wealth = [list(map(float, line.split(",")[1:])) for line in (output / "run.log").read_text().splitlines()
+              if line.startswith("birth-wealth,")]
+    assert len(wealth) == len(rows) and all(r[3] == r[4] == 0 for r in wealth)
+    report["wealth_before_halving"] = {"either_parent_zero": sum(r[1] == 0 or r[2] == 0 for r in wealth),
+                                      "both_parents_zero": sum(r[1] == r[2] == 0 for r in wealth),
+                                      "initiator_zero": sum(r[1] == 0 for r in wealth),
+                                      "partner_zero": sum(r[2] == 0 for r in wealth)}
+    with gzip.open(output / "wealth.csv.gz", "wt") as stream:
+        stream.write("cycle,initiator_sugar,partner_sugar,initiator_threshold,partner_threshold\n")
+        for row in wealth:
+            stream.write(",".join(map(str, row)) + "\n")
 (output / "audit.json").write_text(json.dumps(report, indent=2) + "\n")
 print(json.dumps({k: v for k, v in report.items() if k != "output_sha256"}))
