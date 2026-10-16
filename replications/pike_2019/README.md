@@ -134,3 +134,17 @@ Its 2,000 independently recomputed commodity-step residuals remain below 1.82e-1
 All 45,212 health records are finite, but 3,146 contain negative holdings.
 Removing stale network nodes resolves this crash; negative balances and starvation timing remain unresolved.
 Neither the single seed nor these experimental semantics establish a paper replication verdict.
+
+### Negative balances can recover before death checks
+
+`trace_starvation.py` passively records metabolism and harvesting in the corrective model.
+`audit_starvation.py REFERENCE TRACE NEW_OUTPUT` requires byte-identical accounting, health, prices, and terminal population across all 1,000 steps.
+[The audited trace](results/starvation-diagnostic-2026-10-16/summary.json) contains 103 shared-balance metabolism events leaving a commodity negative.
+In 99 harvesting events, a previously negative balance returns above both death thresholds.
+At step 21, agent 133 reduces shared sugar from 4.31772 to -0.68228.
+Agent 186 then harvests two sugar, restoring the same pool to 1.31772 before its death check.
+The shared pool belongs to agents 43, 133, and 186. Raw events preserve identities and balances.
+The author policy checks death before metabolism, unlike the ordinary agent step, which checks afterward.
+This permits debt and recovery under the corrected pooling semantics; it is not simply a reporting artifact.
+Moving that check changes the model and requires a separately labeled sensitivity experiment.
+The current results retain the author order; no negative-replication verdict follows from these diagnostics.
