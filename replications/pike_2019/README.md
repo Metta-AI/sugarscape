@@ -188,3 +188,14 @@ The frozen Phase II ensemble has launched with one worker. Its 600-run result gr
 It verifies the ordered declared prefix, source and raw-file hashes, individual identities, and notebook price definitions.
 The snapshot retains the audit, exact ledger, and derived price records; its provenance identifies the retained full raw evidence directory.
 The 300-run ensemble remains incomplete. No aggregate paper comparison or equivalence conclusion is inferred from this prefix.
+
+### Phase II independent audit
+
+`audit_phase2.py RUN prefix|complete NEW_OUTPUT` validates the ordered six-condition grid and every recorded configuration, runtime, source hash, and raw-file hash.
+It reconciles per-step identities with finite health records and reconstructs native notebook price measurements without filling undefined dispersion with zero.
+Full mode requires all 600 declared runs; prefix mode makes no aggregate comparison.
+[The first two conditions](results/phase2-prefix-2026-10-16) cover explicit and network grouping at threshold one, seed zero, without movement policy.
+Both complete 1,000 steps; 102,529 health records and 2,000 price-step measurements pass the independent audit.
+All raw condition outputs, the frozen ledger, and derived measurements are retained.
+Controls reject premature full analysis and a changed policy, even when the changed configuration's recorded file hash is updated.
+The ensemble continues from its frozen sources; this prefix does not increase the completed-paper count.
