@@ -2,7 +2,7 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: two author-model replays validated; ten linear-regression and ten rejection-estimation Table 8 values reproduced.
+Status: 400 fresh author-model simulations validated; ten linear-regression and ten rejection-estimation Table 8 values reproduced.
 **Not a completed replication:** the other estimators and independent simulator work remain unfinished.
 
 ## Author implementation
@@ -113,6 +113,9 @@ It validates all 6,250 predictions for this run and all 25,000 predictions for r
 
 The [declared ensemble protocol](ENSEMBLE_PROTOCOL.md) covers every one of the 5,000 archived parameter/seed inputs.
 Four fresh batches are running; no full-ensemble result is claimed yet.
+The first 100 completed inputs from each batch reproduce **60,000/60,000 statistics across 400 simulations**.
+[Partial comparisons](results/ensemble-prefix-validation-2026-10-15) retain every row hash and all freshly calculated statistics.
+These ranges are [0,100), [1250,1350), [2500,2600), and [3750,3850); they do not represent all 5,000 inputs.
 The optimized runner matches all 35,070 numeric trajectory values from the separate-call path on ten complete simulations.
 Both paths reproduce 1,500/1,500 archived statistics; the optimized last-input replay also matches 150/150.
 [Validation evidence](results/batch-validation-2026-10-15) includes trajectories, comparisons, hashes, and timing logs.
@@ -121,7 +124,7 @@ An intentionally corrupted reference statistic yields 1,499/1,500 matches and a 
 ## Replication work remaining
 
 1. Extend the Table 8 comparison to the remaining eight estimators and interval coverage.
-2. Expand the validated author replay beyond the first and last archived inputs.
+2. Finish and validate all 5,000 author-model simulations.
 3. Audit DTL trade, reproduction, mutation, welfare, and Gini semantics against this source.
 4. Implement and validate the required study-specific behavior in this fork.
 5. Complete both simulation ensembles and estimator comparisons, retaining failures and uncertainty.
