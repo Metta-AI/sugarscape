@@ -140,3 +140,12 @@ Its 5,001 observations pass the independent audit; the remaining interval resume
 All four interrupted seeds have now been recovered and their remaining original schedules resumed.
 Utilitarian evidence spans original indices 0–3, the earlier resumed index 4, recovered index 5, and the running interval 6–499.
 No full 500-seed model ensemble is yet complete.
+
+## Process-restart recovery
+
+All four batch processes were absent on revalidation, with their original tool handles unavailable.
+[Independent prefix audits](results/process-recovery-2026-10-16) validate 104 further completed runs and 191,425 observations.
+The stop cause is not inferred from missing handles. Complete and partial native outputs remain in the external evidence directory.
+Fresh batches resume original indices 143 (raw), 29 (altruist), 28 (egoist), and 11 (utilitarian).
+No completed seed is rerun or dropped; interrupted seeds are retried in new directories.
+Full 500-seed conclusions still require reconciliation of every interval.
