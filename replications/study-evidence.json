@@ -1,7 +1,7 @@
 {
   "as_of": "2026-10-16",
   "minimum_completed_papers": 10,
-  "completed_studies": 1,
+  "completed_studies": 2,
   "wholly_positive_papers": 0,
   "interpretation": "Snapshot of committed studies and declared remaining scope. Parsing evidence and reading status does not independently prove scientific completion. No partial study promoted by this audit.",
   "studies": [
@@ -88,12 +88,14 @@
     {
       "study": "dogan_2026",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11",
-      "checked_commit": "def8ee494b413a263043d9bc6c4a3a52696b640e",
-      "status": "partial",
+      "checked_commit": "8ebc968e3a19f3abe9787f6e9881e1b8d70c406d",
+      "status": "completed-mixed",
       "readme": "replications/dogan_2026/README.md",
-      "readme_sha256": "a0a49dd1911e0c23abbaced188295c735bd24470327d8434b1d4fdd93c22fb14",
-      "json_evidence_files": 66,
-      "remaining_scope": "Full original and bundled canonical runs, every original robustness sweep, paired levy correction, and numerical table/figure audits complete. Finish claim inventory and scientific verdict; within-type equalization and absent recurring autonomous tax premises contradict fresh native evidence."
+      "readme_sha256": "516535ff4c89a1ec951af6392bf37f2fac3862257d2072562f4913a25e28ea92",
+      "json_evidence_files": 69,
+      "remaining_scope": "No unfinished reported experiment. Completed original-source fork integration and mixed claim-level verdict. Independent DTL equivalence, new causal ablations, and untested policies are not established.",
+      "verdict": "replications/dogan_2026/VERDICT.md",
+      "publication_status": "unpublished working paper"
     }
   ]
 }

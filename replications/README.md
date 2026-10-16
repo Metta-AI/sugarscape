@@ -53,7 +53,8 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | [source audit](source-audits/pan-2011.json): twelve scenario targets and explicit rules extracted; hardship mapping, scheduling, map, and original implementation unresolved |
 
 Dogan (2026), [Policy Robustness Under Accelerating Automation](https://github.com/dgnerg867-ux/sugarscape), is an additional unpublished working-paper study.
-All 205 canonical runs and horizon, composition, and multiplier experiments match deposited outputs; original/corrected levy and remaining fork/robustness experiments remain active in [PR 11](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11).
+Completed mixed replication in [PR 11](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11): all 700 original primary runs and 205 bundled canonical runs complete.
+All 653 printed cells and 42 plotted ordinates reproduce; native execution contradicts several mechanism claims.
 It supplements the existing candidates rather than replacing them.
 
 The 1996 Epstein–Axtell book and Kehoe's [formal specification](https://arxiv.org/abs/1505.06012)
@@ -63,7 +64,7 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 ## Current state
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.
-Completed studies: **1 / at least 10**. Wholly positive paper replications: **0**.
+Completed studies: **2 / at least 10**. Wholly positive paper replications: **0**.
 McCulloch et al.: validated negative finding under the declared exact-stability criterion, with conditional posterior agreement.
 The independent model matches 660 author-code trajectories and passes 80 complete-world checks across all calibration parameters.
 All 51 variance ensembles and both 10,000-particle posterior experiments completed; raw evidence and limitations are in the study PR.
@@ -125,7 +126,7 @@ The following requirements remain separate from successful execution or source-o
 | Bigbee | Published 2007 protocol and implementation alignment; corrected 2011 draft showcases alone are insufficient |
 | Stevenson | Evolutionary scenarios, distributions, and unresolved fixed-society growth-rate/mean-age discrepancies; author fitting protocol unknown |
 | Buzing | Version 1.2.3 harvesting, scheduling, landscape, communication semantics, and full ten-run condition ensembles |
-| Dogan | Full experiment execution and fork verification complete; finish manuscript claim inventory and scientific verdict, preserving supported mortality results and contradicted mechanism claims |
+| Dogan | Completed mixed study; original-source fork integration and claim-level verdict verified, with explicit limits on causal interpretation |
 | Kiran, Oremland, Pan, Flentge | Resolve original-model specification gaps and implement their full declared experiments |
 
 Replacing's twenty seasonal seeds now have 10,020 native-parity observations and individual death-cause audits.
@@ -175,7 +176,8 @@ All 570 available individual-seed mortality comparisons favor pure means-tested 
 Four of six within-type contribution comparisons contradict the manuscript's equalization claim.
 A full native tax observer confirms recurring autonomous wealth taxation, contradicting the claimed absence of that instrument.
 Both observed tax trajectories match unobserved runs byte-for-byte and reproduce canonical Gini, mortality, and revenue.
-These findings require a final claim inventory before a paper-level verdict; the study is no longer waiting for its declared native sweeps.
+The final claim inventory validates a mixed verdict: numerical replication succeeds, while several mechanism claims contradict native source and outcomes.
+This counts as one completed study, not a wholly positive paper replication.
 
 Blueprints independently audits all retained completed prefixes and recovers each of four disk-interrupted seeds without substitution.
 All four original schedules have resumed in fresh output directories. No full model ensemble is yet complete.
@@ -189,3 +191,7 @@ Carrella's full 5,000-input regression-forest workflow has launched with the nat
 Raimbault's interrupted reference retains 2,399 validated simulations and 4,798 exact native Gini matches.
 The continuation requests the remaining 52,601 rows after a two-row boundary replay passes all four archived measurements.
 The boundary check overlaps existing coverage and is not counted as additional ensemble evidence.
+
+The completed Dogan verdict also verifies mortality invariance across all four UHI multipliers in every speed/seed condition.
+It distinguishes author-source fork integration from independent engine replication, and preserves the unpublished working-paper status.
+No unfinished historical study is removed from the program.
