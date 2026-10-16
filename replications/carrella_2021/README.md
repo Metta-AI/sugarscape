@@ -450,3 +450,22 @@ A first comparison attempt with only one input was rejected by its existing mini
 
 Compressed workflow snapshots, source manifests, rejection evidence, and a repository-relative index of the required trajectories are retained.
 The successful complete-export path awaits the actual 5,000-input ensemble; no full-ensemble, estimator-equivalence, or paper-replication claim follows from these checks.
+
+### Separate independent estimator inputs
+
+After complete reconciliation, prepare a new estimator input directory:
+
+```sh
+python3 replications/carrella_2021/prepare_independent_estimator.py \
+  /absolute/author-checkout /absolute/complete-reconciliation /absolute/new/independent-inputs
+Rscript replications/carrella_2021/run_estimator.R \
+  /absolute/new/independent-inputs lm 1250 0 /absolute/new/independent-lm-results
+```
+
+The preparer checks complete original-row coverage, summary hashes, finite statistics, and pinned simulation sources.
+It copies the hash-pinned author `setup.R` and parameter table, alongside the independent statistics, into a new directory.
+A provenance manifest distinguishes these inputs from the archived native table; the author checkout remains unchanged.
+
+[The actual 561-input partial ensemble is rejected](results/independent-estimator-inputs-2026-10-16/validation.json) before any output directory is created.
+**The successful preparation and independent estimator paths remain unverified until the real 5,000-input ensemble completes.**
+No partial ensemble or copied native table substitutes for that completion requirement.

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/prepare_independent_estimator.py", line 20, in <module>
+    assert coverage["mode"] == "complete" and coverage["complete_original_ensemble"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
