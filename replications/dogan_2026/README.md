@@ -99,3 +99,12 @@ This validates the numerical decomposition; it does not by itself establish the 
 `compare_robustness.py ENGINE RUN horizon|composition|uhi NEW_OUTPUT` requires a successful native experiment before comparing every output cell with its pinned deposit.
 It verifies source hashes, row keys, missingness, native ordering, and the declared numerical tolerance.
 For the multiplier study it also checks that the verified fresh benchmark remained unchanged.
+
+## Inequality rankings and resource-exhaustion tables
+
+`audit_transition.py CSV PROVENANCE NEW_OUTPUT` reconstructs Tables 2 and 5 from all 105 native transition runs.
+[Fresh results](results/transition-tables-2026-10-15/tables2-and5.json) match all 168 printed means, coefficients of variation, death counts, fractions, and stocks at death.
+The inequality rankings change across automation speeds, as reported; this calculation does not establish statistical significance or causal attribution.
+Single-resource death fractions span 87.389–98.026% across five-seed means, but 80–100% across individual runs.
+The manuscript's 87.4–98.0% range therefore describes group means, not bounds on every seed.
+These results preserve the table's averaging convention rather than replacing mean fractions with pooled death ratios.
