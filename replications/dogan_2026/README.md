@@ -108,3 +108,12 @@ The inequality rankings change across automation speeds, as reported; this calcu
 Single-resource death fractions span 87.389–98.026% across five-seed means, but 80–100% across individual runs.
 The manuscript's 87.4–98.0% range therefore describes group means, not bounds on every seed.
 These results preserve the table's averaging convention rather than replacing mean fractions with pooled death ratios.
+
+## Fresh 600-step horizon replication
+
+[The complete horizon experiment](results/horizon-2026-10-15/comparison.json) finishes all 45 runs with native exit status zero.
+Its 360 output cells match the author deposit; the CSV is byte-identical.
+The independent Table D.1 audit also matches all 36 printed values from fresh runs.
+Means-tested mortality at 600 steps is 6.535–9.751% of the same-speed baseline across the six comparisons.
+The original log, source manifest, completion record, complete CSV, and both audits are retained.
+Composition, levy, per-seed calibration, multiplier, and welfare-sensitivity studies remain unfinished; this is not a complete paper-level verdict.
