@@ -295,3 +295,26 @@ python replications/buzing_2005/plot_ensemble.py /extracted/audit /new/plots
 
 Plotting requires NumPy and Matplotlib; retained plot metadata records the executed versions.
 The full workflow generated six plots. An incomplete 107-run audit was rejected before creating plot output.
+
+## Candidate fertility bounds: observed implementation error
+
+The recovered `SugarAgent.selectPartners` compares a candidate's age with the initiating agent's fertility bounds.
+The bundled class bytecode confirms the same receiver error; this is not merely a stale source comment.
+Section 3.14 requires both parents to be within their fertile ranges.
+
+[The native observer](results/parent-fertility-2026-10-16) records 103,457 births in COM2, threshold1, seed0, over 2,000 cycles.
+In 3,926 births, the partner is outside its own fertile range: 3,330 below its minimum and 596 above its maximum.
+All initiating parents are within their own ranges. All ten output files match the unobserved baseline exactly.
+This demonstrates a recovered implementation mismatch, not a defect established in the paper's unavailable historical version.
+
+`audit_parent_fertility.py BASELINE NEW_OUTPUT observe|own-range` verifies baseline source/configuration/data hashes and recompiles all native sources.
+The `own-range` mode changes only the two candidate-bound receivers and adds the passive observer.
+Three independent corrected COM2 workflows produce identical bytes in all ten files and final population738, versus751 in the baseline.
+The corrected observer records 113,142 births, with zero out-of-range parents.
+A corrected COM1 threshold1 seed0 workflow still becomes extinct and records 9,693 births with zero eligibility violations.
+The complete workflows retain raw birth records, native outputs, source hashes, and logs.
+
+A separately frozen 150-condition correction ensemble now repeats the entire baseline grid.
+Its protocol discloses the observed pilots and fixes the correction before the ensemble outcomes.
+It leaves fertility-end inheritance, other model rules, and all experimental parameters unchanged.
+This diagnostic ensemble is not a completed paper replication or an additional distinct paper.

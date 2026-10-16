@@ -1,0 +1,24 @@
+{
+  "mode": "own-range",
+  "cycles": 2000,
+  "scalar_observations": 14000,
+  "observed_births": 113142,
+  "partner_outside_own_range": 0,
+  "partner_below_own_minimum": 0,
+  "partner_above_own_maximum": 0,
+  "matching_baseline_files": 0,
+  "final_population": 738.0,
+  "output_sha256": {
+    "data/experiment_0_.cooperating.avg": "e7fe7b90851089c0e178324ccbb6093d135cbf1cff4bddd668ba903706641314",
+    "data/experiment_0_.cooperating.sum": "6ef64fc7f1ffa7dc4e4361c60884efc4dc115fc516230da943528e2c839a661f",
+    "data/experiment_0_.inNeedOfHelp.avg": "b2d3f09c771aa67de165877121adb71f898ef129d8415dc99ac17c9c565ae12d",
+    "data/experiment_0_.listenPref.avg": "96e16995f00257a2683e8ef25738dadd857d7917ccd0f38e2d485cd277356ebd",
+    "data/experiment_0_.listenPref.bin": "9b01008227083911d7e81feaebbc6aea547ba5908a33201716b246dc92961d93",
+    "data/experiment_0_.numberOfAgents.avg": "1e414e3debdc5f1e13b43cfef64de84e29eedd40e5d69b7b04881b8b416088ca",
+    "data/experiment_0_.numberOfBirths.avg": "8ebc9a093493f19ec802f8e0a91720249b68f388935cab8358181d4a5b81a31f",
+    "data/experiment_0_.numberOfDeaths.avg": "331ce003e308f1d477ec09112e2dd5522c383e1b63764a1e1ba467bf816f9e30",
+    "data/experiment_0_.talkPref.avg": "a823d072533ec4211aaab629b66d669f6f5cc259597b734b9760d080d1acd1d7",
+    "data/experiment_0_.talkPref.bin": "a6cf914f946da8028fc4cd0d0bccc8a9c2849884200c74f11d72422173ccf59a"
+  },
+  "scope": "Native rule audit; no paper-level replication verdict."
+}
