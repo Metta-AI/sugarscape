@@ -111,3 +111,14 @@ The audit explicitly marks the declared 500-seed interval incomplete; these four
 The default still requires the entire declared interval.
 The resumed batch uses the unchanged runner with `--start 4 --stop 500` in a fresh directory, preserving the original remaining 496 seeds.
 The first four and resumed interval must be reconciled together before any full-schedule conclusion.
+
+## Recovery after filesystem exhaustion
+
+[Four additional prefix audits](results/disk-recovery-2026-10-15/summary.json) validate 99 completed runs: raw 65, egoist 17, altruist 16, and one resumed utilitarian run.
+The previously audited four utilitarian runs remain separate, yielding five completed utilitarian seeds overall.
+All original configurations, hashes, timestamps, finite metrics, and terminal conditions pass.
+These are incomplete intervals, not estimates of the paper's full outcomes.
+
+Native processes exited 120 while the filesystem was exhausted; their empty stderr does not independently identify the cause.
+Failure logs, manifests, ledgers, and audits are retained here; complete and partial trajectories remain in the recorded external evidence directory.
+Recovery retries interrupted seeds at sorted indices 65, 17, 16, and 5, respectively, without skipping or replacing them.

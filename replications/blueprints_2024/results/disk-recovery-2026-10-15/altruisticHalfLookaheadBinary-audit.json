@@ -1,0 +1,130 @@
+{
+  "model": "altruisticHalfLookaheadBinary",
+  "start": 0,
+  "stop": 16,
+  "declared_stop": 500,
+  "complete_declared_interval": false,
+  "runs": 16,
+  "observations": 26730,
+  "counts": {
+    "dead": 11,
+    "worse": 0,
+    "better_or_equal": 5
+  },
+  "results": [
+    {
+      "seed": 158402133555746433,
+      "outcome": "better_or_equal",
+      "final_population": 1219,
+      "trajectory_sha256": "dd873c5bac4e0ff7292d021a3d133d01d177503ca4033af717b9e9c8f5b63fbc",
+      "observations": 5001
+    },
+    {
+      "seed": 175856849482260318,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f3891825a5310bb8cb6df11b760c3fb36ddb980fd2efb608409801be02411a05",
+      "observations": 187
+    },
+    {
+      "seed": 177137446849847291,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e5bebb8e0d5460984c0ed9ba6afaf3d1b037327a2aa48f028db95a8aa8a34585",
+      "observations": 136
+    },
+    {
+      "seed": 209866033564004520,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "6d038200f454f7034502a79ccab247bb4ccd796317be5d8ab572a2baed03041c",
+      "observations": 162
+    },
+    {
+      "seed": 238165197779399277,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "7ce939b1fed518570dfdc8a5351aa15cd775107a9d6ba3ebe06ff63611a6c2d5",
+      "observations": 137
+    },
+    {
+      "seed": 275110934556063992,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "8fbb07bef50dc4be890223fc059471bf8b2c27479dcb80a6c9c62e66023f09d1",
+      "observations": 157
+    },
+    {
+      "seed": 285703474179482122,
+      "outcome": "better_or_equal",
+      "final_population": 430,
+      "trajectory_sha256": "9f2fb5b35540dc861d21ae06353e6555c22eb5c897bd7658847f7c6471bb67f2",
+      "observations": 5001
+    },
+    {
+      "seed": 311115376827154686,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "2786672116b59d4915dad670280ff2eb8d16cb475b732f323f082ac702c334d5",
+      "observations": 146
+    },
+    {
+      "seed": 337899476882681052,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "90795f11b4ee1803fc998d75a507eb7405099907ac80da70f1212e81a15a2a5a",
+      "observations": 178
+    },
+    {
+      "seed": 340852978821900464,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "d11e9bff6654a79b963c8fe348d762e75d4f58ee7abdf2397f117ab0fa2a4145",
+      "observations": 149
+    },
+    {
+      "seed": 346439642185867563,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "868ef19373cc52d842cfbd8167f0125a4cd4580576dc492d65b0cc8d5c79c9d8",
+      "observations": 165
+    },
+    {
+      "seed": 349619002715725941,
+      "outcome": "better_or_equal",
+      "final_population": 989,
+      "trajectory_sha256": "243e1155a1165b3a7254ba45da8bd03f4800cde10fee99e63a4bb6feb94d8efc",
+      "observations": 5001
+    },
+    {
+      "seed": 369777682750474578,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "b33c6dd2d594a5c0f55d5580bb4da6b465dabe6e978667647c040d3f7c385e02",
+      "observations": 131
+    },
+    {
+      "seed": 380955681873155081,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "9e60ceeeaff847816e43aca02c96439e507f19f2855862ea8f96b259e88460ba",
+      "observations": 177
+    },
+    {
+      "seed": 382040834813186390,
+      "outcome": "better_or_equal",
+      "final_population": 1175,
+      "trajectory_sha256": "050188d082b5b71664241ac3933029938215f8310b9937e75697cfa19ff98e56",
+      "observations": 5001
+    },
+    {
+      "seed": 404603357698709850,
+      "outcome": "better_or_equal",
+      "final_population": 975,
+      "trajectory_sha256": "e327a915bffd9a675b4124d2bcfadb3efddd845eac620a98e75bb0123b5b5918",
+      "observations": 5001
+    }
+  ],
+  "classification_source": "Pinned author plots/plot.py lines 40\u201343 and 103: zero dead; surviving below initial worse; equality included in better.",
+  "scope": "Only the audited contiguous seed interval; an incomplete declared interval is explicitly marked. Not a full paper replication."
+}
