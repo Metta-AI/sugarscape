@@ -193,3 +193,12 @@ These diagnostics omit interval simulation and confound several runtime changes;
 An audit of the full current-runtime study locates the large reproduction-wealth error in fold 2: RMSE 445.13 versus 3.55–6.43 in other folds.
 The same paired runtime diagnostic is now running on that failing fold, without changing data or model formulas.
 All five folds remain in the study; no outlier is discarded.
+
+## Failing-observation audit
+
+[Fold 2 test observation 131](results/gam-outlier-audit-2026-10-15/audit.json) accounts for 99.9924% of that fold's reproduction-wealth squared error.
+Its true value is 92; the prediction is −6,945.81. The input is archived simulation row 675.
+Its final mean price is 20.9823, beyond the training range 0.3101–1.2538.
+A fresh author-model trajectory matches all 150 archived statistics for this input, including the extreme price.
+Thus this observation is reproducible simulation output, not an identified data-copy error.
+The estimator extrapolation and runtime comparison remain under investigation; the observation stays in every reported metric.
