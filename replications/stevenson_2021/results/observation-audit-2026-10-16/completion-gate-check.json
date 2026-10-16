@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replication-tools/automation-venv/bin/python",
+    "replications/stevenson_2021/analyze_observations.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-2021-observations-001",
+    "complete",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-2021-observation-completion-gate-001/must-not-exist"
+  ],
+  "exit_code": 1,
+  "incomplete_ensemble_rejected": true,
+  "no_complete_output_created": true
+}

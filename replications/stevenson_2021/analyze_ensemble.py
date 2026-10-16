@@ -28,7 +28,7 @@ def main():
     experiment = Experiment.model_validate(manifest["experiment"])
     completions = [Completion.model_validate_json(line) for line in (args.input / "completed.jsonl").read_text().splitlines()]
     assert [record.seed for record in completions] == list(range(1, 101)), "All 100 successful runs are required"
-    assert {p.name for p in args.input.glob("seed-*.csv")} == {f"seed-{seed}.csv" for seed in range(1, 101)}
+    assert {p.name for p in args.input.glob("seed-*.csv") if not p.name.endswith("-observations.csv")} == {f"seed-{seed}.csv" for seed in range(1, 101)}
     metrics = ("population", "wealth", "mean_age", "gini")
     columns = ("cycle", *metrics, "landscape", "births", "deaths", "growth", "metabolism", "death_loss", "birth_loss", "conservation_error")
     per_seed = []
@@ -37,7 +37,9 @@ def main():
         path = args.input / f"seed-{record.seed}.csv"
         assert hashlib.sha256(path.read_bytes()).hexdigest() == record.trajectory_sha256
         expected_parameters = ["85", "0"] if experiment.scenario == "low-fertility" else ["10", "40"]
-        assert record.command[1:] == [str(record.seed), *expected_parameters, str(experiment.cycles)]
+        assert record.command[1:5] == [str(record.seed), *expected_parameters, str(experiment.cycles)]
+        # Retained research manifests cover three recorded CLI versions. Preserve their readers.
+        assert record.command[5:] in [[], ["100"], ["100", str((args.input / f"seed-{record.seed}-observations.csv").resolve())]]
         data = np.genfromtxt(path, delimiter=",", names=True)
         assert data.dtype.names == columns
         data = np.atleast_1d(data)

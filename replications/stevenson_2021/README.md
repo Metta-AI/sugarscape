@@ -202,3 +202,15 @@ Each run must match its already completed same-seed aggregate prefix byte-for-by
 Raw and losslessly compressed output, native exit status, and content hashes are preserved.
 The first two low-fertility runs pass this full-prefix check; the overall observation ensemble is still running.
 These measurements expand required figure coverage without resolving the model's remaining historical ambiguities.
+
+## Independent observation audit
+
+`analyze_observations.py RUN prefix|complete NEW_OUTPUT` independently validates compressed and raw hashes, exit records, and the complete ordered seed ledger.
+It compares each aggregate trajectory directly with the retained original 100,000-cycle same-seed result.
+Checks cover elite counts and resource bounds, founder identifier uniqueness, continuous observation intervals, and constant inferred birth cycles.
+When the first thirty births still comprise the whole population, independent ranking reconstructs elite summaries.
+
+[The first prefix audit](results/observation-audit-2026-10-16/audit.json) passes all 24 completed runs and explicitly marks the ensemble incomplete.
+Complete mode rejects this unfinished ensemble and creates no completion report.
+The aggregate analyzer also rechecks all 100 archived low-fertility runs after its command reader update; its entire analysis remains unchanged.
+Historical stored command formats remain readable alongside the current mandatory observation-output argument.
