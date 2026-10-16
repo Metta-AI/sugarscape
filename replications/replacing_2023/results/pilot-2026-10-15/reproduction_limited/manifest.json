@@ -1,0 +1,38 @@
+{
+  "experiment": {
+    "scenario": "reproduction_limited",
+    "seed": 12345
+  },
+  "release": "032abd2d2338aadc5ad0287dae7520539f7af57b",
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-dtl-replacing-reference/sugarscape.py",
+    "--conf",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/replacing-2023-reproduction_limited-pilot-001/config.json"
+  ],
+  "pythonhashseed": "0",
+  "source_config_sha256": "1163f7212b00d0c7545ea4a73f5af6f85c42e7bcde09d5cb86a56f0aa019881c",
+  "source_sha256": {
+    "agent.py": "d64d55861d64af023075afdbd288bc46e76c0f814ac2d436201b5693771ab39f",
+    "cell.py": "dd354ca31979e9d64f49a89e44d5ec823637af67063c1c42829fd8bbfa66ecdf",
+    "disease.py": "56f1ea55511c497f1f8be836f6967ecba8641794d6ff56c01af989397eab607b",
+    "environment.py": "3297ee346a68a8bfde68fc877f1ecc220c67b5ed428e50c41e48bcd88aa53d12",
+    "ethics.py": "408ed5fab3a335f4d70d8b8ebf86b34cafa5ecc66a6c1939323b04c1c9e61121",
+    "gui.py": "1b53490d074cfbf56bf6c91a7b803f15d4c990cafc676d19333e74bf96b9bb4f",
+    "logparse.py": "8c3741af52794b3d5eb6d65015a84e7758650874e0b16fb027b754925c07c37a",
+    "setup.py": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+    "sugarscape.py": "880f449b3618aa0966fdfabf2739746b520a8f7ff619530810247c15e4a90fc7"
+  },
+  "config_sha256": "21b7d5e5a9f85ddf279045f4ba75c1d1b0c1e6c6ce6a38d6577299c55b74d303",
+  "overrides": {
+    "seed": 12345,
+    "timesteps": 2500,
+    "headlessMode": true,
+    "debugMode": [
+      "none"
+    ],
+    "logfile": "/Users/relh/Code/workspace/sugarscape-replication-evidence/replacing-2023-reproduction_limited-pilot-001/trajectory.json"
+  },
+  "limitation": "Earliest stable release, not explicitly pinned as the paper's exact code revision. Seasonal/disease pilots use released500-step horizon, not a verified figure sampling schedule."
+}

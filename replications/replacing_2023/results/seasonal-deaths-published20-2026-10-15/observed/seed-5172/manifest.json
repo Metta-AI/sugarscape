@@ -1,0 +1,26 @@
+{
+  "baseline": "/Users/relh/Code/workspace/sugarscape-replication-evidence/replacing-2023-seasonal-published20-001/seed-5172",
+  "source_sha256": "880f449b3618aa0966fdfabf2739746b520a8f7ff619530810247c15e4a90fc7",
+  "observer_sha256": "3fa39a57cc6b01ea121f41e4cee40aa29740028a8a2bc141330b17a944276d56",
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "death_columns": [
+    "id",
+    "cause",
+    "age",
+    "max_age",
+    "vision",
+    "sugar_metabolism"
+  ],
+  "agent_columns": [
+    "id",
+    "x",
+    "y",
+    "vision",
+    "sugar_metabolism",
+    "age",
+    "disease_count",
+    "season",
+    "hemisphere"
+  ],
+  "timing": "Initialization and after each native doTimestep; no sorting or random draws. Native endSimulation exits after closing its log."
+}
