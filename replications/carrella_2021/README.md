@@ -148,3 +148,11 @@ Reproduction wealth performance is -3.002351 versus the published -1.329; no neg
 Both original Sugarscape notebooks set `bam=TRUE`, matching our runner and the original `mgcv::bam` call.
 This estimator uses 10,000 residual/prediction-error draws per held-out observation for intervals; it does not use the other estimators’ 200-fit bootstrap.
 Historical package versions and numerical fitting behavior remain to be investigated.
+
+## Full-size quantile random forest
+
+The 5,000-input run completed all five folds and independently validated all 25,000 held-out parameter predictions.
+[Results](results/rf-5000-2026-10-15/comparison.json) retain raw fold outputs, interval coverage, runtime provenance, and the paper comparison.
+Maximum absolute performance difference from Table 8 is 0.002295, on reproduction wealth; one of five values matches printed precision.
+This single random realization does not establish statistical equivalence or a negative replication.
+The full-size semi-automatic one-dimensional and local-linear estimators are now running under the existing protocol.
