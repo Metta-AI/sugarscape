@@ -212,3 +212,10 @@ The September 2017 native core builds and links without modifications.
 A headless initialization returns 400 agents, and two 1,000-cycle synchronous movement pilots exit successfully.
 Despite fixed seed zero, 84 population observations differ, first at cycle 2 (392 versus 391).
 Both native outputs and the harness are retained; reference repeatability must be resolved before paper comparisons.
+
+A controlled Kehoe thread diagnostic repeats the same native binary with one, two, and four OpenMP threads.
+One-thread outputs match exactly; two-thread and four-thread pairs differ in 95 and 86 population observations.
+The parallel movement loop calls a shared unsynchronized random generator.
+Address/undefined-behavior sanitizers report no violation, but their single-thread trajectory differs from the ordinary build in 97 observations.
+Source inspection also finds uninitialized world spice-metabolism bounds read during agent construction.
+[Runtime evidence](source-audits/kehoe-runtime-diagnostics/diagnosis.json) preserves both issues; neither successful execution nor a quiet sanitizer establishes fidelity.
