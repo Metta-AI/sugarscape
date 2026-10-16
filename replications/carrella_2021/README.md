@@ -399,3 +399,26 @@ At tick 49, two transactions have prices 8.95408 and 6.32822; their arithmetic m
 Tick 50 has no transactions, so the model carries that mean forward, consistent with the author's reporter semantics.
 This explains the observed summary value, not the independent/native stochastic difference.
 The input remains included. The full 5,000-input ensemble and independent estimator comparison remain outstanding.
+
+## Partitioned independent-ensemble continuation
+
+The original independent worker was deliberately stopped after 507 completed inputs.
+[Its terminal-prefix audit](results/independent-partition-2026-10-16/checkpoint-audit/analysis.json) recomputes all 76,050 statistics with maximum absolute error 1.14e-13.
+The detached original launcher did not capture an exit code; the termination request and subsequent PID absence are recorded explicitly.
+Original files, including the interrupted next trajectory, remain intact. Only committed completion-ledger rows count.
+
+Before partitioning, input 500 was replayed through the frozen runner in a fresh process.
+Its complete trajectory is byte-identical, all 150 saved statistics match, and completion fields agree except elapsed time.
+This repeated validation input adds zero ensemble coverage.
+Each input constructs its own seeded Python random generator, so worker scheduling does not share or reorder random streams between inputs.
+
+Three workers resume disjoint intervals `[507,2005)`, `[2005,3503)`, and `[3503,5000)`.
+Together with the preserved prefix, these cover all original 5,000 inputs without gaps or overlaps.
+The frozen model, Python/runtime versions, input hashes, seed conversion, observation timing, and statistics remain unchanged.
+This uses local capacity released when the five reference JVM workers moved to remote CPU capacity.
+The original per-row free-space guard remains active.
+
+[Initial resumed-prefix audits](results/independent-partition-2026-10-16/coverage.json) validate 11 additional inputs.
+Total unique audited coverage is **518 inputs and 77,700 recomputed statistics**.
+Inputs 0–237 retain their earlier trajectory artifacts; the new directory retains the added checkpoint trajectories, manifests, ledgers, summaries, proof, and resumed-prefix evidence.
+All three workers continue. The full ensemble, independent/native distribution comparison, and remaining estimator replications are still incomplete.

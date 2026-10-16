@@ -1,0 +1,42 @@
+{
+  "workers": [
+    {
+      "shard": 1,
+      "wrapper_pid": 90610,
+      "interval": [
+        507,
+        2005
+      ],
+      "output": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-shard-1-001",
+      "job": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-partition-001/shard-1.json"
+    },
+    {
+      "shard": 2,
+      "wrapper_pid": 90611,
+      "interval": [
+        2005,
+        3503
+      ],
+      "output": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-shard-2-001",
+      "job": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-partition-001/shard-2.json"
+    },
+    {
+      "shard": 3,
+      "wrapper_pid": 90612,
+      "interval": [
+        3503,
+        5000
+      ],
+      "output": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-shard-3-001",
+      "job": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-partition-001/shard-3.json"
+    }
+  ],
+  "completed_prefix": [
+    0,
+    507
+  ],
+  "required_rows": 5000,
+  "source_manifest_sha256": "5a6db45c25787f798bef51458509778bd3177327ecd3c245627c38ef66cd2122",
+  "proof_statistics_exact": true,
+  "resource_policy": "Three local workers replace original one, after five reference JVM workers moved to remote CPU node; per-row2GiB free-space guard preserved"
+}
