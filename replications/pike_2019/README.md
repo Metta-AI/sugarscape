@@ -258,3 +258,17 @@ The snapshots include compressed audit reports, completed-run ledgers, reconstru
 Raw simulation files remain in the explicit evidence directories recorded in each provenance file; they are not duplicated in these snapshots.
 Both ensembles remain incomplete, and these prefix audits establish no aggregate paper result.
 Phase III has no completed grid condition at this snapshot; its new auditor remains unpublished pending end-to-end validation.
+
+## First completed movement-policy condition
+
+[The first grid condition](results/phase3-first-condition-2026-10-16) completes 1,000 steps for explicit grouping, threshold one, seed zero and the released selector.
+`audit_phase3_movement.py RUN prefix|complete NEW_OUTPUT` validates all 43,026 health records and reconstructs 1,000 price-step records.
+There are 37 final individual survivors; the native reporter is a different quantity and is not used as individual population.
+Four steps have undefined sample price dispersion because they contain fewer than two trades; they remain missing.
+
+The retained archive contains the complete condition, frozen sources/protocol, manifest, completion-ledger snapshot and execution logs.
+Every archived file was read back and verified against its original bytes.
+The auditor rejects the incomplete grid in complete mode and rejects an altered policy even when the configuration hash is updated.
+The full workflow has validated the released-selector path only; the corrected-selector grid path remains awaiting its first completed condition.
+Earlier corrected-pilot/source audits remain separate evidence and do not substitute for that pending grid validation.
+One of 1,200 conditions is complete at this snapshot. No selector comparison or paper-level result is inferred.
