@@ -89,5 +89,6 @@
     "Paired absolute and relative population changes versus baseline; zero baseline denominators reported undefined",
     "Paired differences between timestep1-250 and251-500 means to expose continuing drift"
   ],
-  "interpretation": "A final-window mean is not proof of carrying capacity or equilibrium. Compare descriptors with the paper reported around3percent mean and5percent maximum only after historical seeds,horizon,window and configuration equivalence are resolved. Do not use these diagnostic outcomes to invent a passing tolerance."
+  "interpretation": "A final-window mean is not proof of carrying capacity or equilibrium. Compare descriptors with the paper reported around3percent mean and5percent maximum only after historical seeds,horizon,window and configuration equivalence are resolved. Do not use these diagnostic outcomes to invent a passing tolerance.",
+  "extinction_analysis": "For population only, extend a native terminal zero through step500: all three configurations disable agent replacement, so extinction is absorbing. Preserve the unmodified native trajectory and report the extension length. Do not extend other metrics."
 }

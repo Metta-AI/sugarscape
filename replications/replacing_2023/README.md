@@ -170,3 +170,9 @@ The full example batch is running; operational completion will not imply agreeme
 The planned twenty-seed comparison uses the released 500-step horizon and a declared final-250-step window, with drift and extinction reported separately.
 The seeds are borrowed from Table 3, not claimed to be the original trade/lending seeds.
 Historical measurement details remain unresolved; a late-window population mean will not be labeled carrying capacity without further evidence.
+
+`run_trade_lending.py ENGINE NEW_OUTPUT` executes the declared sixty paired runs.
+`analyze_trade_lending.py BATCH NEW_OUTPUT` independently checks every configuration and trajectory before computing paired results.
+Population alone receives an absorbing-zero extension after extinction because all three released configurations disable replacement.
+Native data remains unchanged; extension lengths and undefined relative changes are explicit.
+The analysis reports early-to-late drift and does not infer equilibrium or a paper replication verdict.
