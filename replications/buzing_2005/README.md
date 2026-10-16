@@ -186,3 +186,21 @@ COM0 and COM2 complete1,000cycles each, with final populations0 and767.
 The corrected COM1 observer completes100cycles and reproduces all ten previous data files byte-for-byte.
 This verifies14,700scalar observations without asserting paper-level agreement from single seeds.
 The full experiment horizon, ten-seed ensembles, cooperation denominator, and remaining source-rule alignment still require validation.
+
+## Cooperation measurements and full reconstruction ensemble
+
+The released cooperation average is the mean agent flag, not the fraction of harvest actions.
+The observer now records successful harvest events, shared harvest events, consumer participations, and shared consumer participations per cycle.
+A shared event with three agents contributes one shared harvest event and three shared consumer participations.
+The native agent-flag average remains available as a separate measurement. Ratios with no harvests or consumers are undefined.
+
+[The1,000-cycle observer replay](results/metric-observer-2026-10-16/audit.json) preserves all ten native files byte-for-byte.
+It records260,828harvest events, including128,589shared events, and390,146consumer participations, including257,907shared participations.
+These are event totals, not independent samples.
+COM0 now uses an always-false comparison after the existing random draw, preventing the original `<=0` boundary from permitting communication.
+
+`run_ensemble.py ARCHIVE JDK NEW_OUTPUT` freezes its runner before executing150runs: three protocols, five thresholds, and seeds0–9, each for2,000cycles.
+The horizon follows the inspected Figure4 population axis; the original publication seeds remain unknown.
+The protocol declares comparisons before the ensemble runs and discloses that seed0 pilots were already observed.
+All outcomes and native failures are retained in a flushed completion ledger; a failed command stops the ensemble.
+Full analysis and historical-rule fidelity remain pending. This launched reconstruction is not a completed paper replication.

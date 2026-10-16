@@ -113,7 +113,7 @@ if args.variant in ("paper-harvest", "paper-com1", "paper-com0", "paper-com2"):
                 if (agentsOnCell[i].floatProps[SUGAR_AMOUNT] != expected)
                     throw new IllegalStateException("Paper harvest allocation violated");
             }
-            System.out.println("paper-harvest-verified amount=" + localAmount + ",agents=" + agentsOnCell.length + ",shared=" + (localAmount > intProps[MAX_SUGAR_HARVEST]));
+
         }
 
 """
@@ -132,11 +132,39 @@ if args.variant == "paper-com1":
                     {
                         if (messageBoard.getMessage(i.getXcoordinate(), i.getYcoordinate()) != null)
                             throw new IllegalStateException("COM1 read did not consume message");
-                        System.out.println("paper-com1-read-verified");
+
                     }""")
     data = data[:start] + section + data[stop:]
     old = "            if (messageBoard.getRemoveAfterListening()) messageBoard.deleteMessage(xBest, yBest);"
     assert data.count(old) == 1
+    source.write_text(data, encoding="latin-1")
+if args.variant in ("paper-com0", "paper-com1", "paper-com2"):
+    source = reference / "src/nl/vu/cs/sugarland/model/SugarAgent.java"
+    data = source.read_text(encoding="latin-1")
+    marker = "    public void harvest()"
+    assert data.count(marker) == 1
+    data = data.replace(marker, "    public static long meals, sharedMeals, consumers, sharedConsumers;\n\n" + marker)
+    marker = "        // flow of control will only come here if sugar has been eaten during this method invocation"
+    assert data.count(marker) == 1
+    data = data.replace(marker, """        meals++;
+        boolean shared = localAmount > intProps[MAX_SUGAR_HARVEST];
+        consumers += shared ? agentsOnCell.length : 1;
+        if (shared) { sharedMeals++; sharedConsumers += agentsOnCell.length; }
+""" + marker)
+    if args.variant == "paper-com0":
+        for preference in ("LISTEN_PREF", "TALK_PREF"):
+            old = f"rand.getFloat() <= floatProps[{preference}]"
+            assert data.count(old) == 1
+            data = data.replace(old, "rand.getFloat() < 0.0f")
+    source.write_text(data, encoding="latin-1")
+    source = reference / "src/nl/vu/cs/sugarland/model/TorusScape.java"
+    data = source.read_text(encoding="latin-1")
+    marker = "    public void executeRules()\n    {"
+    assert data.count(marker) == 1
+    data = data.replace(marker, marker + "\n        SugarAgent.meals = SugarAgent.sharedMeals = SugarAgent.consumers = SugarAgent.sharedConsumers = 0;")
+    position = data.rindex("    }")
+    data = data[:position] + """        System.out.println("harvest-counts," + getIteration() + "," + SugarAgent.meals + "," + SugarAgent.sharedMeals + "," + SugarAgent.consumers + "," + SugarAgent.sharedConsumers);
+""" + data[position:]
     source.write_text(data, encoding="latin-1")
 with (output / "compile.log").open("w") as log:
     subprocess.run(
