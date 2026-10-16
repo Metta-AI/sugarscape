@@ -142,4 +142,17 @@ The observer now copies native death records before the original statistics meth
 The full run contains 2,775 starvation deaths and 1,429 aging deaths, with no combat or disease deaths.
 Cohort results separate migration, survival, starvation, and aging without counting replacement agents as survivors.
 Native cause labels identify proximate deaths; they do not establish the causal effect of seasons.
-The complete twenty-seed cause-specific analysis remains unfinished.
+The complete twenty-seed cause-specific analysis is now available below.
+
+## Complete seasonal death analysis
+
+[All twenty seeds](results/seasonal-deaths-published20-2026-10-15/summary/summary.json) pass native trajectory parity, identity reconciliation, and per-step death-cause count checks across 10,020 observations.
+The observer records the original implementation's cause labels before statistics clears the death registry.
+Each seed is analyzed with `audit_deaths.py` and `analyze_seasonal_deaths.py`; `summarize_seasonal_deaths.py OBSERVED COHORTS OUTPUT` verifies all original seeds and evidence hashes.
+
+Across 180 windows, 33,612 original wet-half cohort memberships partition into 21,883 aging deaths, 8,140 starvation deaths, and 3,589 survivors.
+No cohort member dies of combat or disease. Aging exceeds starvation in every seed.
+These counts explain why disappearance cannot be equated with starvation in this released configuration.
+They neither rule out seasonal starvation nor estimate its causal effect.
+Memberships may repeat an agent across windows; counts are not independent samples.
+The paper's qualitative replication verdict and exact historical configuration remain unresolved.
