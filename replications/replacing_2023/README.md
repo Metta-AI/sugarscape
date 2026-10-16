@@ -269,3 +269,18 @@ The archived and pre-conference runs have minimum populations143 and136; neither
 Their minimum populations after infection clears are647 and155, respectively.
 Unlike Figure2’s timing discrepancy, this mismatch is supported by both the disease image and prose.
 The panel has no timestep label, and the historical source/configuration remains unresolved; this does not establish a completed negative replication.
+
+## Real GUI versus headless disease execution
+
+[Three graphical runs](results/gui-parity-2026-10-16/independent-audit.json) use the original Tk interface, Disease coloring menu, and Play button.
+The driver subclasses only window setup to schedule those original widget invocations; simulation source files remain unchanged and hash-verified.
+Python3.12.4 and bundled Tcl8.6.12 run seeds12345,12881,22744 for the original500 steps.
+All1,503 native observations match the previously validated headless trajectories byte for byte.
+Only headless mode and log destination differ in the configurations.
+The first launch failed before simulation because Tcl scripts were undiscovered; its error is retained, and the successful launch selects the bundled library paths.
+
+The baseline finishes with822 agents; the two reported extinction seeds finish with801 and860.
+Their minimum populations remain143,51,135.
+A separate check of both saved baseline observers finds no overlapping coordinates across1,002 observations.
+Thus ordinary GUI execution and coordinate overlap do not explain the disease-figure discrepancy for these tested runs.
+This does not establish equivalence to the paper’s unknown historical revision or exclude other interactive interventions.
