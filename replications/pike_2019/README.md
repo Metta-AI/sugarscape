@@ -247,3 +247,14 @@ This prevents matching altered original/corrected files from passing merely beca
 The syntax-tree hash uses the declared Python 3.11 runtime; other interpreter versions are explicitly rejected for this check.
 [Source-validation evidence](results/highest-source-validation-2026-10-16/audit.json) retains the passing full pilot and two rejected controls.
 Changing both saved methods or adding an extra consumption call to only the corrected method fails before output comparison.
+
+## Restored-session prefix audits
+
+Fresh process checks confirmed all three existing ensemble workers; no simulation was restarted.
+[Retained audit snapshots](results/restored-prefix-audits-2026-10-16) validate 90/300 Phase I runs and 18/600 Phase II runs.
+These cover 4,722,197 and 936,904 health records, respectively, plus 108,000 price-step records in total.
+Each audit rechecks configuration, runtime/source pins, raw-file hashes, agent identities and price definitions.
+The snapshots include compressed audit reports, completed-run ledgers, reconstructed price measurements and manifests.
+Raw simulation files remain in the explicit evidence directories recorded in each provenance file; they are not duplicated in these snapshots.
+Both ensembles remain incomplete, and these prefix audits establish no aggregate paper result.
+Phase III has no completed grid condition at this snapshot; its new auditor remains unpublished pending end-to-end validation.
