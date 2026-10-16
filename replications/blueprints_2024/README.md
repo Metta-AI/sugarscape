@@ -122,3 +122,11 @@ These are incomplete intervals, not estimates of the paper's full outcomes.
 Native processes exited 120 while the filesystem was exhausted; their empty stderr does not independently identify the cause.
 Failure logs, manifests, ledgers, and audits are retained here; complete and partial trajectories remain in the recorded external evidence directory.
 Recovery retries interrupted seeds at sorted indices 65, 17, 16, and 5, respectively, without skipping or replacing them.
+
+## First interrupted seeds recovered
+
+[Raw and altruist retries](results/disk-retry-2026-10-15) both finish 5,000 steps and pass the full-interval independent audit.
+Both retain the original interrupted seeds, with 10,002 total observations and final populations above the initial count.
+Original partial outputs remain preserved. Neither retry is counted twice in the seed schedule.
+Raw resumes from index 66 and altruist from index 17 in fresh directories; egoist and utilitarian retries are still running.
+All recovered prefixes and remaining intervals require reconciliation before comparing the full 500-seed outcomes.
