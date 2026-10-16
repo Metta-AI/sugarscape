@@ -23,3 +23,18 @@ The full study also requires growth-rate fitting, age/wealth distributions and f
 python replications/stevenson_2021/run_ensemble.py /absolute/tools/stevenson-simulate low-fertility /new/low-fertility
 python replications/stevenson_2021/run_ensemble.py /absolute/tools/stevenson-simulate birth-cost /new/birth-cost
 ```
+
+## Analysis command
+
+```sh
+python replications/stevenson_2021/analyze_ensemble.py /completed/ensemble /new/analysis
+```
+
+The command requires exactly 100 ordered completion records and 100 trajectory files.
+It checks recorded commands, hashes, complete sampling schedules, finite metrics, population bounds, and terminal states.
+Confidence intervals use Student's t with 99 degrees of freedom, applied to the 100 seed-level averages or paired changes.
+If a society becomes extinct, the analysis reports its seed and terminal outcome and withholds aggregate window statistics.
+It does not silently replace undefined mean age/Gini with zero or exclude the extinct society from the population studied.
+
+The incomplete live ensemble was rejected by the 100-run completion check, with no analysis directory created.
+Successful full-ensemble analysis remains to be executed after both batches finish.
