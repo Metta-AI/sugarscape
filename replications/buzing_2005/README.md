@@ -29,7 +29,7 @@ Requires Python 3.11, Pydantic 2.12.3, and a JDK 11 installation. Use a new outp
 
 ```sh
 curl -fL 'https://web.archive.org/web/20061013011826id_/http://www.cs.vu.nl:80/%7Eschut/jawas/JAWAS.exe' -o /absolute/JAWAS.exe
-python replications/buzing_2005/run_pilot.py /absolute/JAWAS.exe /absolute/jdk11 /new/pilot
+python replications/buzing_2005/run_pilot.py /absolute/JAWAS.exe /absolute/jdk11 /new/pilot original 0
 ```
 
 The runner verifies the archive hash, extracts it outside the repository, compiles the model,
@@ -69,3 +69,26 @@ Earlier failed launches remain in the external evidence directory.
 They include missing-config launches from incorrect working directories, the empty native CLI loop,
 and an adapter compilation error before the nested `Experiment` subclass was introduced.
 They are excluded from completed-run evidence, not erased or counted as scientific results.
+
+## Controlled random-generator variant
+
+The source audit finds seven unseeded `new Random()` constructions in four compiled files.
+They cover `RandomMethods` (including agent initialization), two torus operations, three sugar-agent communication/reproduction operations, and correspondent cache selection.
+The `controlled` runner variant replaces exactly those seven constructor expressions in the extracted experimental copy.
+`ReplicationRandom.java` derives a separate generator seed from a seeded master stream in construction order.
+The world's existing explicit seed is preserved. This is a declared experimental variant, not recovered historical source.
+
+Run `run_pilot.py ARCHIVE JDK NEW_OUTPUT controlled SEED`.
+The original variant remains available explicitly as `original SEED` for comparison.
+Manifests record every compiled source hash, exact replacement counts, seed, runtime, configuration, and output hashes.
+No source from the archive is redistributed.
+
+[Three completed workflows](results/seed-control-2026-10-15/comparison.json) validate 2,100 scalar observations.
+Two independent seed-zero processes produce identical bytes in all ten output files and final population 450.
+Seed one produces a different trajectory and final population 307.
+This establishes repeatability for the tested defaults, seed pair, runtime, and 100-cycle horizon only.
+It does not validate unused communication branches or the paper's version 1.2.3.
+
+Earlier attempts completed native simulations but failed while serializing our manifest because a local replacement-count variable was reused.
+That runner defect was fixed; fresh full workflows then completed successfully. Failure tracebacks remain retained separately.
+Paper-specific communication rules, subcycle equivalence, and full experimental settings remain unresolved.

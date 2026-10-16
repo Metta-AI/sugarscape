@@ -13,6 +13,10 @@ from pydantic import BaseModel
 
 
 class Manifest(BaseModel):
+    variant: str
+    seed: int
+    source_sha256: dict[str, str]
+    seed_control_replacements: dict[str, int]
     archive_sha256: str
     adapter_sha256: str
     source_count: int
@@ -33,6 +37,8 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("archive", type=Path)
 parser.add_argument("java_home", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("variant", choices=["original", "controlled"])
+parser.add_argument("seed", type=int)
 args = parser.parse_args()
 archive = args.archive.resolve()
 java_home = args.java_home.resolve()
@@ -52,6 +58,16 @@ sources = sorted(
     for path in (reference / "src/nl/vu/cs/sugarland" / package).rglob("*.java")
 )
 assert len(sources) == 78
+seed_replacements = {}
+if args.variant == "controlled":
+    for source in sources:
+        data = source.read_bytes()
+        count = data.count(b"new Random()")
+        if count:
+            seed_replacements[str(source.relative_to(reference))] = count
+            source.write_bytes(data.replace(b"new Random()", b"nl.vu.cs.sugarland.util.ReplicationRandom.create()"))
+    assert sum(seed_replacements.values()) == 7 and len(seed_replacements) == 4
+    sources.append(Path(__file__).with_name("ReplicationRandom.java").resolve())
 with (output / "compile.log").open("w") as log:
     subprocess.run(
         [str(java_home / "bin/javac"), "-encoding", "ISO-8859-1", "-cp", str(reference / "lib"),
@@ -68,9 +84,9 @@ for key, value in (("useGui", "false"), ("numberOfRuns", "1"), ("runLength", "10
         settings += f"\n{key} = {value}\n"
 experiment.write_text(settings)
 with (output / "config/Scape/scape.cfg").open("a") as config:
-    config.write("\nrandomSeed = 0\n")
+    config.write(f"\nrandomSeed = {args.seed}\n")
 adapter = Path(__file__).with_name("Replay.java").resolve()
-command = [str(java_home / "bin/java"), "-Djava.awt.headless=true", "-cp",
+command = [str(java_home / "bin/java"), "-Djava.awt.headless=true", f"-Dreplication.seed={args.seed}", "-cp",
            f"{classes}:{reference / 'lib'}", str(adapter)]
 with (output / "run.log").open("w") as log:
     subprocess.run(command, cwd=output, stdout=log, stderr=subprocess.STDOUT, check=True, timeout=90)
@@ -87,6 +103,8 @@ final_population = float(population.read_text().splitlines()[-1].split()[1])
 assert final_population.is_integer() and final_population > 0
 assert f"iterations=100,initial=1000,final={int(final_population)}" in (output / "run.log").read_text()
 manifest = Manifest(
+    variant=args.variant, seed=args.seed, source_sha256={str(path): digest(path) for path in sources},
+    seed_control_replacements=seed_replacements,
     archive_sha256=archive_hash, adapter_sha256=digest(adapter), source_count=len(sources),
     java_version=subprocess.run([str(java_home / "bin/java"), "-version"], capture_output=True, text=True, check=True).stderr,
     command=command,
