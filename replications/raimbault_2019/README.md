@@ -2,7 +2,7 @@
 
 Paper: [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html).
 Scope: Sugarscape results; Schelling experiments are excluded.
-Status: **24/24 Table 4 values reproduced from archived data; fresh simulations unfinished**.
+Status: **24/24 Table 4 values reproduced from archived data; first archived simulation exactly reproduced; ensemble unfinished**.
 This is not yet a completed paper replication.
 
 ## Sources and exact reanalysis
@@ -58,13 +58,13 @@ The first archived reference input completes 1,000 steps with constant populatio
 Its terminal Gini is 0.3942307692 versus archived 0.2445487365.
 Its moving-window Gini is 0.2939769248 versus archived 0.3017667641.
 [Trajectory and comparison](results/replay-pilot-2026-10-15/comparison.json) retain this unresolved mismatch.
-**This is not a negative replication.** The runtime and historical experiment have not yet been matched.
+**This was a horizon mismatch, not a negative replication.** The 10,000-step replay below resolves this input.
 
 The archive filename is dated March 28, 2017; that date does not prove which revision generated its contents.
 Commit `b71d1cf73f036749a83335b6a13cabf345599039` added explicit seeding and corrected resource initialization on April 3, 2017.
 Commit `74ade6eaa77af4caa65183a2eba6a3ded4708e0f` changed the horizon from 10,000 to 1,000 on September 27, 2018.
 The model header identifies NetLogo 5.1.0, while this pilot uses 5.3.1; the original execution runtime remains unverified.
-These differences require investigation before interpreting any simulation discrepancy.
+The historical horizon is confirmed for the first input by exact replay; additional input checks remain in progress.
 
 The Java adapter invokes the released setup and records each step without editing the model.
 Place `NetLogo.jar` before the wildcard classpath: `NetLogoLite.jar` otherwise shadows full workspace classes in this installation.
@@ -75,11 +75,22 @@ The initial compilation failure is preserved with the successful execution log.
   -cp '/path/to/netlogo/app/NetLogo.jar:/path/to/netlogo/app/*' \
   replications/raimbault_2019/Replay.java \
   /path/to/SpaceMatters/sugarscape/HEADLESS_Sugarscape.nlogo \
-  /path/to/reference.csv 0 /absolute/new/trajectory.csv
+  /path/to/reference.csv 0 10000 /absolute/new/trajectory.csv
 ```
 
 Run from the author model directory, using absolute paths for the adapter and artifacts.
-The adapter currently records the pinned model's 1,000-step configuration, not a reconstructed historical experiment.
+The adapter requires an explicit choice between the two documented horizons, 1,000 and 10,000 steps.
+It changes only `total-time-steps` after the released setup and records every simulated tick.
+
+## Historical horizon validated
+
+At 10,000 steps, the first archived input reproduces terminal Gini **0.24454873646209388**
+and last-1,000-step mean Gini **0.3017667640537167**, both exactly equal to the archive's recorded NetLogo outputs.
+Independent Python recomputation of the window mean differs by 2.22e-16 from NetLogo's summation.
+The first 1,000 trajectory rows are identical to the earlier pilot.
+[Raw trajectory, execution log, and comparison](results/horizon-validation-2026-10-15) preserve the successful replay.
+Thus the initial mismatch is explained by the later horizon change, without changing seed, behavior, parameters, or runtime.
+This proves fidelity for one archived input, not the complete ensemble. Rows 1 and 54,999 are being checked next.
 
 ## Remaining work
 

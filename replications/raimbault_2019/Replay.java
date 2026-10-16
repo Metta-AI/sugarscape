@@ -7,11 +7,15 @@ import java.util.List;
 import java.util.Map;
 import org.nlogo.headless.HeadlessWorkspace;
 
-/** Replay a complete archived 1,000-step experiment through NetLogo 5. */
+/** Replay an archived input at an explicitly selected historical horizon. */
 public class Replay {
     public static void main(String[] args) throws Exception {
-        if (args.length != 4) {
-            throw new IllegalArgumentException("Usage: Replay model reference.csv row-index output.csv");
+        if (args.length != 5) {
+            throw new IllegalArgumentException("Usage: Replay model reference.csv row-index steps output.csv");
+        }
+        int steps = Integer.parseInt(args[3]);
+        if (steps != 1000 && steps != 10000) {
+            throw new IllegalArgumentException("Choose a documented historical horizon: 1000 or 10000");
         }
         List<String> rows = Files.readAllLines(Path.of(args[1]));
         String[] names = rows.get(0).split(",");
@@ -28,11 +32,12 @@ public class Replay {
             setup.append(" ").append(input.get(parameter));
         }
         HeadlessWorkspace workspace = HeadlessWorkspace.newInstance();
-        try (BufferedWriter output = Files.newBufferedWriter(Path.of(args[3]), StandardOpenOption.CREATE_NEW)) {
+        try (BufferedWriter output = Files.newBufferedWriter(Path.of(args[4]), StandardOpenOption.CREATE_NEW)) {
             workspace.open(args[0]);
             workspace.command(setup.toString());
+            workspace.command("set total-time-steps " + steps);
             output.write("tick,gini,population\n");
-            for (int tick = 1; tick <= 1000; tick++) {
+            for (int tick = 1; tick <= steps; tick++) {
                 workspace.command("go");
                 output.write(workspace.report("ticks") + "," + workspace.report("gini") + ","
                              + workspace.report("count turtles") + "\n");
