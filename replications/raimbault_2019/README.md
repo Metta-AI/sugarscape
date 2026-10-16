@@ -257,3 +257,24 @@ Bytecode inspection traces the regression to the unchanged extension's Apache Co
 This identifies the implementation being executed; it does not establish the exact historical cause of floating-point differences.
 An independent pass through the original archive verifies all six selected indices and all 72 output comparisons.
 The full generated-landscape ensemble and spatial conclusions remain incomplete.
+
+## Remote reference validation and complete checkpoint handoff
+
+[The first remote production batch](results/remote-reference-2026-10-16/batch-400-independent-validation.json) completes original rows `[54600,55000)`.
+All 400 runs finish 10,000 steps, and all 800 native Gini measurements match the original archive exactly.
+Downloaded evidence verifies successful native exits, row identities, source/dependency hashes, interval completeness, and independent output comparisons.
+The node stops automatically after the batch; its files remain intact and were retrieved for the audit.
+
+After that audit, the five owned local reference workers were deliberately stopped and their terminal states verified.
+[The consolidated checkpoint](results/remote-reference-2026-10-16/handoff-confirmed.json) independently validates **7,933 unique runs and 15,866 exact Gini measurements**.
+Original files remain intact. The retained checkpoint snapshots include all covered rows, manifests, logs, and available terminal records.
+Earlier overlapping snapshots and validation probes are excluded; the remote 400-row interval is counted once.
+
+The remaining **47,067 original rows** are assigned to 473 disjoint intervals of at most 100 rows on eight CPU workers.
+The queue validates the frozen runtime bundle before execution and audits each completed interval against the original reference.
+A native or audit failure prevents pending intervals from starting; already-running intervals preserve their outputs.
+The launch wrapper enforces a 24-hour limit, preserves evidence, and stops the task-owned node afterward.
+A two-interval native queue proof passed before this handoff; its raw results and audits are retained with the plan.
+The production queue is running, so its unfinished outputs are not included in the checkpoint count.
+
+The full 55,000-row reference, generated-landscape ensemble, and paper replication remain incomplete.
