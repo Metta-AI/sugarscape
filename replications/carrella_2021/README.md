@@ -253,3 +253,11 @@ All five performance values match Table 8 at its printed three-decimal precision
 Metrics, prediction CSVs, and validated interval statistics are byte-identical to the earlier recovered outputs.
 All five fold files, complete results, environment, warnings, and successful-run log are retained.
 This resolves the earlier post-results script parse failure; it does not complete the remaining estimators or the full paper.
+
+## Full regression-forest workflow launched
+
+The original `randomForest_caretboot_fit` workflow is now running on all 5,000 inputs, five folds, and five parameters.
+It preserves native caret tuning, ranger fitting, jackknife standard errors, and residual-simulation intervals.
+The launch uses estimator seed zero, cross-validation seed zero, and the declared environment.
+Source/data/runner hashes are retained in the external run's `launch-provenance.json`; fold and final output audits remain pending.
+The smaller 1,250-input run and full neural-network run are still active.
