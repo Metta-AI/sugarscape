@@ -148,3 +148,22 @@ The author policy checks death before metabolism, unlike the ordinary agent step
 This permits debt and recovery under the corrected pooling semantics; it is not simply a reporting artifact.
 Moving that check changes the model and requires a separately labeled sensitivity experiment.
 The current results retain the author order; no negative-replication verdict follows from these diagnostics.
+
+### Death-order sensitivity
+
+`run_starvation_order.py` changes only the group policy's death-check order, retaining the shared-balance and network-node corrections.
+It consumes first, checks the acting member for death, then trades if alive, matching the ordinary agent order.
+Its separate `sensitivity.json` records the change, source hash, and runtime versions.
+Both seed-zero runs complete 1,000 steps; [raw outputs and comparisons](results/starvation-order-2026-10-16/comparison.json) are retained.
+
+| Configuration | Survivors before → after | Negative health records before → after |
+| --- | --- | --- |
+| One level | 43 → 45 | 83 → 9 |
+| Multi-level | 37 → 46 | 3,146 → 20 |
+
+These are single-seed sensitivities, not ensemble estimates or comparisons against the paper's survival means.
+Checking the acting member afterward does not guarantee nonnegative shared balances for every surviving member.
+Shared-pool exhaustion still requires an explicit model rule; neither clamping debt nor killing all group members is justified by this experiment.
+`audit_corrected.py RUN NEW_OUTPUT` reconstructs accounting, reconciles every timestep's individual identities with population, and checks finite health and positive prices.
+All four comparison runs pass those measurement checks; the new runs' maximum accounting residual is 3.64e-12.
+A missing-agent control fails population reconciliation. Measurement validation does not establish economic validity or historical fidelity.
