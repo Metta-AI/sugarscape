@@ -178,3 +178,23 @@ Both Gini measurements match exactly for every input.
 Replacing the earlier overlapping prefixes gives 5,966 unique validated inputs and 11,932 exact measurements.
 Compressed native snapshots, hashes, and disjoint interval accounting are retained.
 All five workers remain active; the full 55,000-input reference and generated-landscape study remain incomplete.
+
+## Linux portability and bounded CPU handoff
+
+[Three full-horizon portability probes](results/linux-parity-2026-10-16/comparison.json) reproduce rows 0, 1, and 54,999 on Ubuntu 22.04 with Java 11.0.32.1.
+All six native Gini values match the archive exactly; result CSVs are byte-identical to the macOS package proof.
+The downloaded archive was checksum-verified and compared independently against the original reference CSV.
+These repeated validation rows add **zero** unique ensemble coverage.
+
+The first packaging attempt omitted three nested `.nls` files and failed before simulation.
+Recursively including those unchanged author sources fixes packaging; model rules and parameters remain unchanged.
+The retained Linux artifact includes manifests, dependency hashes, source hashes, raw results, native logs, and complete interval audits.
+Probe timings are retained for capacity planning, but concurrent machine workloads prevent a controlled speed comparison.
+
+After parity passed, the owned local fifth shard was deliberately terminated and its exit confirmed.
+Its 142 completed rows, `[44874,45016)`, passed an independent audit with 284 exact measurements.
+Local execution resumes `[45016,54600)` in a new directory.
+Eight remote workers receive disjoint 50-row intervals covering `[54600,55000)`.
+[The handoff record](results/linux-parity-2026-10-16/handoff-confirmed.json) preserves the terminal checkpoint and commands.
+The remote batch is bounded to one hour and stops its CPU node afterward; its results remain pending and uncounted here.
+The full reference, generated landscapes, and paper replication remain incomplete.
