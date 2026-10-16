@@ -307,3 +307,19 @@ python3 replications/raimbault_2019/audit_generated.py \
 Strict zero tolerance fails on its known R-squared difference; the previously declared `1e-12` morphology tolerance passes.
 Both reports retain 23 exact comparisons out of 24, with both Gini metrics exact for each input.
 This verifies the audit workflow and adds no simulation coverage or completed-paper claim.
+
+## Linux generated-landscape portability
+
+[Independent downloaded-artifact validation](results/generated-linux-2026-10-16/independent-validation.json) checks all six previously selected probes on the task-owned Linux CPU node.
+All three sequential two-row native processes exit successfully, completing the original 10,000-step horizon.
+Frozen model, extension, dependency, adapter, input, and criteria hashes are verified before comparing outputs.
+
+**All 72 Linux measurements match the original archive exactly**, including both Gini outputs and all ten morphology outputs for every input.
+Linux and macOS agree exactly on 66 of 72 measurements; six regression outputs differ by at most `4.440892098500626e-16`.
+Every cross-platform difference remains within the previously declared `1e-12` morphology tolerance; Gini comparisons remain exact.
+The original macOS strict-exact failure is preserved and is not relabeled as an exact match.
+These observations narrow the numerical discrepancy to differences between the tested runtime environments; they do not isolate OS, architecture, or JDK effects.
+
+The three pairs took 93.41, 318.77, and 457.18 seconds on one low-priority worker sharing the eight-core reference node.
+These selected probes are not a representative throughput sample for the 2,727,994-row generated ensemble.
+The full generated ensemble and fresh spatial comparisons remain unstarted; these repeated probes add no production coverage.
