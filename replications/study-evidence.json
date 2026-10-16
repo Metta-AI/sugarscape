@@ -28,22 +28,22 @@
     {
       "study": "raimbault_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
-      "checked_commit": "fa1081cff671836c2582ef1aff5ab13c02bf1c2b",
+      "checked_commit": "4de02aac72a050cf308ed2cbd071fd52c420cc6e",
       "status": "running",
       "readme": "replications/raimbault_2019/README.md",
-      "readme_sha256": "93953b37ab6f0c2601426c3ecea86b611ea9ef63ed8e08b3cc69044b15c2b07d",
-      "json_evidence_files": 24,
-      "remaining_scope": "5,421 of 55,000 reference inputs independently audited; 10,842 exact native Gini matches. Five disjoint continuations running. Full reference and generated-landscape conclusions remain incomplete."
+      "readme_sha256": "5dfc76c1a402232497c4382b07b880db4760b89dd671d23c0e225b547c062448",
+      "json_evidence_files": 36,
+      "remaining_scope": "5,786 of 55,000 original reference inputs audited; 11,572 exact Gini matches. Five continuations resumed after crash with no duplicated completed rows. Full reference and generated-landscape conclusions remain incomplete."
     },
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "6868a961b55e66ba1d25a59e7398d89cf8439cf3",
+      "checked_commit": "318a1a4b4bf29b1e23e06eabd0f8594e85c6ac7e",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "15821baa83f30ac54954bcb43c0f8fdaa34cb943d21aa79124b471af1ec0fd67",
-      "json_evidence_files": 70,
-      "remaining_scope": "104 additional simulations independently audited across interrupted 003 prefixes; original homogeneous schedules continue from indices143/29/28/11. Full homogeneous, selfish, mixed, runtime and source-version alignment remain."
+      "readme_sha256": "e2857c8a84ee3a160a8781c9dccf9365848d299b80d4717585ef73a47d682057",
+      "json_evidence_files": 77,
+      "remaining_scope": "423 unique original homogeneous simulations independently audited (757,511 observations). Four continuations resumed from verified crash boundaries; full homogeneous, selfishness, heterogeneous results, and historical-code alignment remain incomplete."
     },
     {
       "study": "bigbee_2007",
