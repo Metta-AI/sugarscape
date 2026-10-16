@@ -422,3 +422,31 @@ The original per-row free-space guard remains active.
 Total unique audited coverage is **518 inputs and 77,700 recomputed statistics**.
 Inputs 0–237 retain their earlier trajectory artifacts; the new directory retains the added checkpoint trajectories, manifests, ledgers, summaries, proof, and resumed-prefix evidence.
 All three workers continue. The full ensemble, independent/native distribution comparison, and remaining estimator replications are still incomplete.
+
+## Reconcile independent partitions before calibration
+
+`reconcile_independent.py PARAMETERS REFERENCE prefix|complete NEW_OUTPUT RUN...` audits each supplied run before combining its completed inputs.
+It checks the pinned author data, frozen model/runner/protocol hashes, and consistent producer runtime versions.
+Original row indices determine output order; overlapping runs are rejected, including otherwise-valid repeated validation inputs.
+
+`audit_independent.py` now retains and hashes the exact summary snapshot it checked.
+Both reconciliation and the existing single-run comparison consume that snapshot, preventing a later read of an advancing live summary file.
+Each reconciled table retains its original-row index and input audit provenance.
+Prefix mode writes `partial_summary_statistics.csv` and explicit missing intervals.
+Complete mode requires every original index `[0,5000)` before writing `summary_statistics.csv` for calibration.
+It never silently fills missing rows or deduplicates overlapping simulations.
+
+```sh
+python replications/carrella_2021/reconcile_independent.py \
+  /params_sugarscape.csv /sugarscape.csv prefix /new/reconciliation \
+  /preserved-original-run /independent-shard-1 /independent-shard-2 /independent-shard-3
+```
+
+[Real workflow validation](results/independent-reconciliation-2026-10-16/validation.json) audits 561 inputs and 84,150 statistics, with independently verified table ordering.
+A complete-mode request against the unfinished original run fails without writing a calibration table.
+Combining that run with the separate input-500 validation replay also fails before writing either table.
+The existing comparison succeeds on a 24-input shard snapshot and consumes exactly the audited bytes.
+A first comparison attempt with only one input was rejected by its existing minimum-size requirement; that failure remains preserved externally.
+
+Compressed workflow snapshots, source manifests, rejection evidence, and a repository-relative index of the required trajectories are retained.
+The successful complete-export path awaits the actual 5,000-input ensemble; no full-ensemble, estimator-equivalence, or paper-replication claim follows from these checks.

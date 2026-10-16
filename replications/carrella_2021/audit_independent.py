@@ -85,9 +85,11 @@ report = {'mode': args.mode, 'validated_inputs': len(records), 'statistics_recom
           'complete_original_ensemble': args.mode == 'complete' and manifest['start'] == 0 and manifest['stop'] == 5000,
           'maximum_recomputation_absolute_error': maximum_error, 'extinct_inputs': extinct,
           'manifest_sha256': hashlib.sha256(manifest_bytes).hexdigest(), 'ledger_sha256': hashlib.sha256(ledger).hexdigest(),
+          'summary_sha256': hashlib.sha256(summary_snapshot).hexdigest(),
           'analyzer_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
           'scope': 'Independent standard-library statistic recomputation, input mapping, trajectory integrity, and timing audit. No native-distribution or paper-level equivalence verdict.'}
 args.output.mkdir(parents=True, exist_ok=False)
 (args.output / 'ledger-snapshot.jsonl').write_bytes(ledger)
+(args.output / 'summary-snapshot.csv').write_bytes(summary_snapshot)
 (args.output / 'analysis.json').write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps(report))

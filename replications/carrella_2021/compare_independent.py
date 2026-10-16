@@ -28,7 +28,8 @@ subprocess.run([sys.executable, str(Path(__file__).with_name('audit_independent.
                 str(args.parameters), str(args.run), args.mode, str(args.output / 'audit')], check=True)
 audit = json.loads((args.output / 'audit/analysis.json').read_text())
 start, stop = audit['interval']
-summary_bytes = (args.run / 'summary_statistics.csv').read_bytes()
+summary_bytes = (args.output / 'audit/summary-snapshot.csv').read_bytes()
+assert hashlib.sha256(summary_bytes).hexdigest() == audit['summary_sha256']
 independent = list(csv.DictReader(io.StringIO(summary_bytes.decode())))[:stop - start]
 assert len(independent) == stop - start and len(independent) > 1
 assert all(row.keys() == reference[0].keys() for row in independent)
