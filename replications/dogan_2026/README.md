@@ -211,3 +211,17 @@ The full bundled canonical process continues; this component does not imply a su
 `compare_fork.py REFERENCE_REPLAY FORK_RUN NEW_OUTPUT` requires successful complete canonical runs, matching pinned model provenance, the full four-file output ledger, and all 206,010 cells.
 Its report-only rejection was exercised through the public command: nine valid generated reports are insufficient simulation evidence.
 The full comparison remains pending native completion.
+
+## Independent static and Universal High Income table audit
+
+[Tables 1 and 6](results/static-uhi-2026-10-15) match all 56 printed numeric values against fresh canonical simulations.
+The auditor validates complete 25-run static and 105-run transition grids, then independently computes means, sample coefficients of variation, and baseline mortality percentages.
+Static mean rankings match for inequality and mortality: wealth/means-tested, labor/means-tested, wealth/UBI, labor/UBI, baseline.
+Universal High Income produces more deaths than either pure means-tested policy in all 30 paired transition-seed comparisons.
+These are descriptive comparisons across the published seeds, not significance tests or causal identification.
+
+The manuscript's static-results sentence says every coefficient of variation is below 0.13.
+Fresh data give a maximum of 0.1320268268 for labor/means-tested Gini, correctly printed as 0.132 in Table 1.
+All static coefficients remain below 0.15. This is a narrow prose discrepancy, not a failed numerical table replication.
+A changed-Gini copy of the complete static input is rejected; its mismatch report is retained alongside the successful audit.
+The canonical originals remain unchanged.

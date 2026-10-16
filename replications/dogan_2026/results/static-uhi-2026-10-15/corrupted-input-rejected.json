@@ -1,0 +1,756 @@
+{
+  "provenance": "fresh-replay",
+  "input_sha256": {
+    "part_a_stage4_static.csv": "3792b8d94a3c9bcf72adb304ffc9904302e1f12b83f7355deb20d10e60f89ee5",
+    "part_b_stage5_main.csv": "fc00c8fa597adeee4f8e378de9a3d7546ce9615990ee7f168fd69647ef057c99"
+  },
+  "targets_sha256": "58b30662f9617ed42f454719895fff75913334317a6bdc333c9d3181d9c38342",
+  "comparison": [
+    {
+      "table": 1,
+      "cell": "baseline",
+      "metric": "gini",
+      "measured": 0.4124791423352042,
+      "published": "0.402",
+      "matches": false
+    },
+    {
+      "table": 1,
+      "cell": "baseline",
+      "metric": "gini_cv",
+      "measured": 0.04994963415669428,
+      "published": "0.011",
+      "matches": false
+    },
+    {
+      "table": 1,
+      "cell": "baseline",
+      "metric": "deaths",
+      "measured": 347.0,
+      "published": "347.0",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "baseline",
+      "metric": "deaths_cv",
+      "measured": 0.048948956056089434,
+      "published": "0.049",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "labour/ubi",
+      "metric": "gini",
+      "measured": 0.3931639230869771,
+      "published": "0.393",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "labour/ubi",
+      "metric": "gini_cv",
+      "measured": 0.034950121633965665,
+      "published": "0.035",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "labour/ubi",
+      "metric": "deaths",
+      "measured": 194.6,
+      "published": "194.6",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "labour/ubi",
+      "metric": "deaths_cv",
+      "measured": 0.07281804556595417,
+      "published": "0.073",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "labour/means_tested",
+      "metric": "gini",
+      "measured": 0.25729752515294785,
+      "published": "0.257",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "labour/means_tested",
+      "metric": "gini_cv",
+      "measured": 0.13202682681293026,
+      "published": "0.132",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "labour/means_tested",
+      "metric": "deaths",
+      "measured": 55.6,
+      "published": "55.6",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "labour/means_tested",
+      "metric": "deaths_cv",
+      "measured": 0.08956762300711317,
+      "published": "0.090",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "wealth/ubi",
+      "metric": "gini",
+      "measured": 0.33541732512731137,
+      "published": "0.335",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "wealth/ubi",
+      "metric": "gini_cv",
+      "measured": 0.03450464976370811,
+      "published": "0.035",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "wealth/ubi",
+      "metric": "deaths",
+      "measured": 114.4,
+      "published": "114.4",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "wealth/ubi",
+      "metric": "deaths_cv",
+      "measured": 0.0341916210063076,
+      "published": "0.034",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "wealth/means_tested",
+      "metric": "gini",
+      "measured": 0.20426704136665821,
+      "published": "0.204",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "wealth/means_tested",
+      "metric": "gini_cv",
+      "measured": 0.0413339599844617,
+      "published": "0.041",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "wealth/means_tested",
+      "metric": "deaths",
+      "measured": 42.2,
+      "published": "42.2",
+      "matches": true
+    },
+    {
+      "table": 1,
+      "cell": "wealth/means_tested",
+      "metric": "deaths_cv",
+      "measured": 0.09827697323851999,
+      "published": "0.098",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "labour/means_tested",
+      "speed": "slow",
+      "metric": "gini",
+      "measured": 0.27233274321046996,
+      "published": "0.272",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "labour/means_tested",
+      "speed": "slow",
+      "metric": "deaths",
+      "measured": 31.8,
+      "published": "31.8",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "labour/means_tested",
+      "speed": "slow",
+      "metric": "baseline_percent",
+      "measured": 11.769059955588453,
+      "published": "11.8",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "wealth/means_tested",
+      "speed": "slow",
+      "metric": "gini",
+      "measured": 0.2991913278059563,
+      "published": "0.299",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "wealth/means_tested",
+      "speed": "slow",
+      "metric": "deaths",
+      "measured": 27.0,
+      "published": "27.0",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "wealth/means_tested",
+      "speed": "slow",
+      "metric": "baseline_percent",
+      "measured": 9.99259807549963,
+      "published": "10.0",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "disp_levy/means_tested",
+      "speed": "slow",
+      "metric": "gini",
+      "measured": 0.2786926960635659,
+      "published": "0.279",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "disp_levy/means_tested",
+      "speed": "slow",
+      "metric": "deaths",
+      "measured": 93.8,
+      "published": "93.8",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "disp_levy/means_tested",
+      "speed": "slow",
+      "metric": "baseline_percent",
+      "measured": 34.715025906735754,
+      "published": "34.7",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "uhi_scenario",
+      "speed": "slow",
+      "metric": "gini",
+      "measured": 0.32055446426370415,
+      "published": "0.321",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "uhi_scenario",
+      "speed": "slow",
+      "metric": "deaths",
+      "measured": 49.8,
+      "published": "49.8",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "uhi_scenario",
+      "speed": "slow",
+      "metric": "baseline_percent",
+      "measured": 18.43079200592154,
+      "published": "18.4",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "labour/means_tested",
+      "speed": "balanced",
+      "metric": "gini",
+      "measured": 0.3884306227944556,
+      "published": "0.388",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "labour/means_tested",
+      "speed": "balanced",
+      "metric": "deaths",
+      "measured": 30.4,
+      "published": "30.4",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "labour/means_tested",
+      "speed": "balanced",
+      "metric": "baseline_percent",
+      "measured": 11.674347158218128,
+      "published": "11.7",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "wealth/means_tested",
+      "speed": "balanced",
+      "metric": "gini",
+      "measured": 0.43852058702215657,
+      "published": "0.439",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "wealth/means_tested",
+      "speed": "balanced",
+      "metric": "deaths",
+      "measured": 29.2,
+      "published": "29.2",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "wealth/means_tested",
+      "speed": "balanced",
+      "metric": "baseline_percent",
+      "measured": 11.213517665130569,
+      "published": "11.2",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "disp_levy/means_tested",
+      "speed": "balanced",
+      "metric": "gini",
+      "measured": 0.31240190999533624,
+      "published": "0.312",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "disp_levy/means_tested",
+      "speed": "balanced",
+      "metric": "deaths",
+      "measured": 79.4,
+      "published": "79.4",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "disp_levy/means_tested",
+      "speed": "balanced",
+      "metric": "baseline_percent",
+      "measured": 30.4915514592934,
+      "published": "30.5",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "uhi_scenario",
+      "speed": "balanced",
+      "metric": "gini",
+      "measured": 0.38138398436965026,
+      "published": "0.381",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "uhi_scenario",
+      "speed": "balanced",
+      "metric": "deaths",
+      "measured": 45.0,
+      "published": "45.0",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "uhi_scenario",
+      "speed": "balanced",
+      "metric": "baseline_percent",
+      "measured": 17.281105990783413,
+      "published": "17.3",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "labour/means_tested",
+      "speed": "fast",
+      "metric": "gini",
+      "measured": 0.537310721700721,
+      "published": "0.537",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "labour/means_tested",
+      "speed": "fast",
+      "metric": "deaths",
+      "measured": 27.8,
+      "published": "27.8",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "labour/means_tested",
+      "speed": "fast",
+      "metric": "baseline_percent",
+      "measured": 11.173633440514468,
+      "published": "11.2",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "wealth/means_tested",
+      "speed": "fast",
+      "metric": "gini",
+      "measured": 0.5713058069076515,
+      "published": "0.571",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "wealth/means_tested",
+      "speed": "fast",
+      "metric": "deaths",
+      "measured": 25.4,
+      "published": "25.4",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "wealth/means_tested",
+      "speed": "fast",
+      "metric": "baseline_percent",
+      "measured": 10.209003215434084,
+      "published": "10.2",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "disp_levy/means_tested",
+      "speed": "fast",
+      "metric": "gini",
+      "measured": 0.48556036680701276,
+      "published": "0.486",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "disp_levy/means_tested",
+      "speed": "fast",
+      "metric": "deaths",
+      "measured": 67.4,
+      "published": "67.4",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "disp_levy/means_tested",
+      "speed": "fast",
+      "metric": "baseline_percent",
+      "measured": 27.09003215434084,
+      "published": "27.1",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "uhi_scenario",
+      "speed": "fast",
+      "metric": "gini",
+      "measured": 0.4506875174587582,
+      "published": "0.451",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "uhi_scenario",
+      "speed": "fast",
+      "metric": "deaths",
+      "measured": 39.2,
+      "published": "39.2",
+      "matches": true
+    },
+    {
+      "table": 6,
+      "cell": "uhi_scenario",
+      "speed": "fast",
+      "metric": "baseline_percent",
+      "measured": 15.755627009646304,
+      "published": "15.8",
+      "matches": true
+    }
+  ],
+  "uhi_paired_seed_comparisons": [
+    {
+      "speed": "balanced",
+      "seed": 0,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 33.0,
+      "uhi_deaths": 44.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "balanced",
+      "seed": 0,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 29.0,
+      "uhi_deaths": 44.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "balanced",
+      "seed": 1,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 25.0,
+      "uhi_deaths": 44.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "balanced",
+      "seed": 1,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 31.0,
+      "uhi_deaths": 44.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "balanced",
+      "seed": 2,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 30.0,
+      "uhi_deaths": 44.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "balanced",
+      "seed": 2,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 27.0,
+      "uhi_deaths": 44.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "balanced",
+      "seed": 3,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 28.0,
+      "uhi_deaths": 47.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "balanced",
+      "seed": 3,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 25.0,
+      "uhi_deaths": 47.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "balanced",
+      "seed": 4,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 36.0,
+      "uhi_deaths": 46.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "balanced",
+      "seed": 4,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 34.0,
+      "uhi_deaths": 46.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 0,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 25.0,
+      "uhi_deaths": 41.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 0,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 26.0,
+      "uhi_deaths": 41.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 1,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 30.0,
+      "uhi_deaths": 40.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 1,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 28.0,
+      "uhi_deaths": 40.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 2,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 30.0,
+      "uhi_deaths": 35.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 2,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 26.0,
+      "uhi_deaths": 35.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 3,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 24.0,
+      "uhi_deaths": 39.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 3,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 24.0,
+      "uhi_deaths": 39.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 4,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 30.0,
+      "uhi_deaths": 41.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "fast",
+      "seed": 4,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 23.0,
+      "uhi_deaths": 41.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 0,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 27.0,
+      "uhi_deaths": 53.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 0,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 23.0,
+      "uhi_deaths": 53.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 1,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 33.0,
+      "uhi_deaths": 55.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 1,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 31.0,
+      "uhi_deaths": 55.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 2,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 32.0,
+      "uhi_deaths": 45.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 2,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 26.0,
+      "uhi_deaths": 45.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 3,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 29.0,
+      "uhi_deaths": 42.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 3,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 25.0,
+      "uhi_deaths": 42.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 4,
+      "cell": "labour/means_tested",
+      "means_tested_deaths": 38.0,
+      "uhi_deaths": 54.0,
+      "uhi_has_more_deaths": true
+    },
+    {
+      "speed": "slow",
+      "seed": 4,
+      "cell": "wealth/means_tested",
+      "means_tested_deaths": 30.0,
+      "uhi_deaths": 54.0,
+      "uhi_has_more_deaths": true
+    }
+  ],
+  "static_rankings_lowest_first": {
+    "gini_final": [
+      "wealth/means_tested",
+      "labour/means_tested",
+      "wealth/ubi",
+      "labour/ubi",
+      "baseline"
+    ],
+    "starvation_deaths_total": [
+      "wealth/means_tested",
+      "labour/means_tested",
+      "wealth/ubi",
+      "labour/ubi",
+      "baseline"
+    ]
+  },
+  "static_cv_max": 0.13202682681293026,
+  "static_prose_all_cv_below_013": false,
+  "static_all_cv_below_015": true,
+  "scope": "Printed cells and descriptive seed comparisons; no significance, causal, or whole-paper verdict."
+}
