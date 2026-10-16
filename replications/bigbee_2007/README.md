@@ -154,3 +154,22 @@ Native Gini debug lines and nonfinite outputs are preserved.
 
 These measurements confirm population-accounting defects in the recovered release, using its original configurations.
 They do not authenticate the historical experiment version or establish a negative replication of the chapter.
+
+## MASON 10 framework comparison
+
+The [toolkit authors' release catalog](https://people.cs.gmu.edu/~eclab/projects/mason/) still provides `mason10.zip`.
+[Provenance and runtime comparison](results/mason10-runtime-2026-10-16/validated-runtime-comparison.json) pin the archive and loaded classes.
+The archive contains no Sugarscape model, so recovering it does not authenticate the missing experiment snapshot.
+
+The unchanged recovered 1.1.2 model runs with MASON 10 classes before its bundled framework on the classpath.
+Class-loading logs confirm MASON 10 scheduling, random-number generator, and simulation classes.
+Six ECJ parameter-loading classes still come from the model bundle; those fallback paths are explicitly retained.
+Three seed-zero configurations run to scheduled time 1,000, each with an exact native-output and population-observer repeat.
+All three native trajectories differ from the bundled MASON 12 runs, so framework version affects these outcomes.
+
+Replacement population accounting agrees in all 1,002 states.
+Both reproduction cases disagree in 989 states, starting at time 13.
+For `fig3-4`, final reported/grid/registry populations are 323/321/0; for `fig3-5`, they are 673/667/0.
+The earlier missing-newborn and occupied-cell defects therefore persist with the MASON 10 framework.
+This rules out upgrading the framework alone as the explanation for those defects in the recovered model.
+It does not establish that the paper used this model revision or justify a negative paper-level verdict.

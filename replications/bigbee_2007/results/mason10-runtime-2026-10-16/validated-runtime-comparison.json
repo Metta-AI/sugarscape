@@ -1,0 +1,135 @@
+[
+  {
+    "configuration": "anim2-3",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-verbose:class",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-search-003/runtime/mason:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes:lib/*:.",
+      "/Users/relh/Code/workspace/sugarscape-bigbee/replications/bigbee_2007/AuditReplay.java",
+      "conf/anim2-3.conf",
+      "0",
+      "1000",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-search-003/anim2-3-population.csv"
+    ],
+    "exit_code": 0,
+    "native_matches_bundled12": false,
+    "population_observer_matches_bundled12": true,
+    "framework_fallback_classes": [
+      "[1.024s][info][class,load] ec.util.ParameterDatabase source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.025s][info][class,load] ec.util.ParameterDatabaseTreeNode source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.026s][info][class,load] ec.util.ParameterDatabaseTreeModel source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.026s][info][class,load] ec.util.ParamClassLoadException source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.041s][info][class,load] ec.util.Parameter source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.041s][info][class,load] ec.util.BadParameterException source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/"
+    ],
+    "repeat_exit_code": 0,
+    "native_repeat_exact": true,
+    "observer_repeat_exact": true,
+    "observations": 1002,
+    "population_mismatch_states": 0,
+    "first_mismatch": [],
+    "last_state": {
+      "time": "1001.0",
+      "reported_population": "250",
+      "grid_alive": "250",
+      "registered": "250",
+      "registered_alive": "250"
+    }
+  },
+  {
+    "configuration": "fig3-4",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-verbose:class",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-search-003/runtime/mason:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes:lib/*:.",
+      "/Users/relh/Code/workspace/sugarscape-bigbee/replications/bigbee_2007/AuditReplay.java",
+      "conf/fig3-4.conf",
+      "0",
+      "1000",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-search-003/fig3-4-population.csv"
+    ],
+    "exit_code": 0,
+    "native_matches_bundled12": false,
+    "population_observer_matches_bundled12": false,
+    "framework_fallback_classes": [
+      "[1.215s][info][class,load] ec.util.ParameterDatabase source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.215s][info][class,load] ec.util.ParamClassLoadException source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.215s][info][class,load] ec.util.ParameterDatabaseTreeNode source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.216s][info][class,load] ec.util.ParameterDatabaseTreeModel source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.225s][info][class,load] ec.util.Parameter source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[1.225s][info][class,load] ec.util.BadParameterException source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/"
+    ],
+    "repeat_exit_code": 0,
+    "native_repeat_exact": true,
+    "observer_repeat_exact": true,
+    "observations": 1002,
+    "population_mismatch_states": 989,
+    "first_mismatch": [
+      {
+        "time": "13.0",
+        "reported_population": "405",
+        "grid_alive": "404",
+        "registered": "400",
+        "registered_alive": "400"
+      }
+    ],
+    "last_state": {
+      "time": "1001.0",
+      "reported_population": "323",
+      "grid_alive": "321",
+      "registered": "0",
+      "registered_alive": "0"
+    }
+  },
+  {
+    "configuration": "fig3-5",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-verbose:class",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-search-003/runtime/mason:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes:lib/*:.",
+      "/Users/relh/Code/workspace/sugarscape-bigbee/replications/bigbee_2007/AuditReplay.java",
+      "conf/fig3-5.conf",
+      "0",
+      "1000",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-search-003/fig3-5-population.csv"
+    ],
+    "exit_code": 0,
+    "native_matches_bundled12": false,
+    "population_observer_matches_bundled12": false,
+    "framework_fallback_classes": [
+      "[0.860s][info][class,load] ec.util.ParameterDatabase source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[0.861s][info][class,load] ec.util.ParamClassLoadException source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[0.862s][info][class,load] ec.util.ParameterDatabaseTreeNode source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[0.863s][info][class,load] ec.util.ParameterDatabaseTreeModel source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[0.876s][info][class,load] ec.util.Parameter source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/",
+      "[0.876s][info][class,load] ec.util.BadParameterException source: file:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-historical-native-002/classes/"
+    ],
+    "repeat_exit_code": 0,
+    "native_repeat_exact": true,
+    "observer_repeat_exact": true,
+    "observations": 1002,
+    "population_mismatch_states": 989,
+    "first_mismatch": [
+      {
+        "time": "13.0",
+        "reported_population": "406",
+        "grid_alive": "403",
+        "registered": "400",
+        "registered_alive": "400"
+      }
+    ],
+    "last_state": {
+      "time": "1001.0",
+      "reported_population": "673",
+      "grid_alive": "667",
+      "registered": "0",
+      "registered_alive": "0"
+    }
+  }
+]
