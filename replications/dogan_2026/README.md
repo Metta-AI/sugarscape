@@ -22,12 +22,16 @@ Compare every output row and column with the author's corresponding CSV before i
 Undefined statistics must retain matching missingness rather than being silently replaced or excluded.
 Validate the reported tables and policy rankings independently of the author's analysis.
 
-## Remaining scope
+## Current status and remaining scope
 
-Canonical execution alone does not complete this paper.
-The manuscript also includes composition, per-seed threshold, displacement-levy, horizon, starvation, and transfer-rate robustness analyses.
-Their exact reported targets and scripts require auditing, followed by complete executions and independent comparisons.
-An equivalent integration in the Metta-AI fork and paper-level conclusions remain unfinished.
+All original canonical and robustness experiment scripts have completed successfully.
+All six main tables, three appendix tables, and both figures have independent numerical checks against fresh results.
+The bundled original-source canonical run also matches the separate author replay byte-for-byte.
+The levy correction has a completed 75-pair sensitivity comparison.
+
+The study remains partial pending the remaining manuscript-level mechanism and interpretation audit.
+Table agreement does not validate causal claims about spatial competition, transfer targeting, or proposed untested policies.
+Sections below preserve earlier component findings; later completed-run evidence supersedes their historical pending-run statements.
 
 ## Environment recovery
 
@@ -303,3 +307,19 @@ Corrected mortality ranges are 4.946%, 8.443%, and 5.775% for slow, balanced, an
 At D=200, the corrected fast levy supplies 3.146% of mean redistribution, exceeding the stated 3% bound; the original value is 2.828%.
 Both variants retain Gini coefficients of variation below 0.04 across D-level means and equal working counts across D within each seed.
 These are descriptive sensitivity results under explicit aggregation choices; full claim interpretation remains required before assigning a paper-level verdict.
+
+## Owner exclusion and population accounting
+
+`audit_owner_exclusion.py SNAPSHOT DECOMPOSITION_AUDIT NEW_OUTPUT` checks the previously validated fresh agent snapshot.
+It independently recomputes Gini from pairwise wealth differences after excluding off-grid owners.
+[All 105 runs](results/owner-exclusion-2026-10-16/owner-exclusion.json) retain 180 on-grid agents.
+Owners number 35, 50, and 80 under slow, balanced, and fast automation; total populations are 215, 230, and 260.
+Section 4.2 instead states 200 on-grid agents and totals 235–280.
+The simulated counts agree with the stated initial 120/40/20/20 composition, which includes twenty off-grid owners in the initial total.
+This is a manuscript counting discrepancy, not evidence of agent loss in the implementation.
+
+Excluding owners preserves the slow-to-fast increase for both pure means-tested policies.
+Labor/means-tested Gini rises from 0.266333 to 0.608991, moving from second to sixth among seven policy means.
+Wealth/means-tested rises from 0.319608 to 0.657251, moving from fifth to seventh.
+Thus owner exclusion preserves deterioration, but wealth/means-tested is not among the lowest-Gini policies under slow automation in this variant.
+These descriptive results do not identify the causal contribution of spatial competition.
