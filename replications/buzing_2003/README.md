@@ -17,7 +17,7 @@ Message removal is not pinned by the inspected 2003 text, so the runner requires
 `none`, `read`, `response`, or `expiry-one`. These are disclosed reconstruction alternatives, not recovered experimental settings.
 
 The source retains balanced sugar seeds, alone-first harvesting, controlled random generators, and the declared sequential schedule from the source-recovery work.
-Candidate fertility uses each parent's own bounds. Both parents must exceed the reproduction threshold at every birth.
+By default, candidate fertility uses each parent's own bounds. Both parents must exceed the reproduction threshold at every birth.
 Eligibility is checked again for each partner because earlier births can lower the initiating parent's sugar below five.
 Newborn fertility-end age still follows the newer release's draw; historical inheritance and scheduling remain unresolved.
 The native cooperation monitor and per-cycle harvest counts are retained separately.
@@ -49,7 +49,7 @@ A read-only initialization observer verifies 2,500 cells, 500 seeds, 1,250 sugar
 All 18 Table 2 agent numeric settings were independently checked in actual configuration files.
 The retained evidence includes native data, birth/harvest logs, exact configurations, source hashes, and all completed outcomes.
 
-Remaining work: recover historical message semantics, audit scheduling and inheritance, run the full ten-seed grid, and compare population variation and cooperation curves.
+Remaining work: recover historical message semantics, audit scheduling and inheritance, and establish fidelity before interpreting the population and cooperation differences.
 
 ## Frozen grid
 
@@ -57,7 +57,7 @@ Remaining work: recover historical message semantics, audit scheduling and inher
 The grid crosses four declared policies, five thresholds, and ten seeds, each for 500 cycles.
 The protocol discloses the observed seed-zero pilots. All outcomes and failures enter a completion ledger; a native failure stops the grid.
 The three communicating policies bracket an unresolved setting. Choosing one after seeing agreement would not establish historical fidelity.
-The first grid is running; completion, independent auditing, and scientific comparisons remain pending.
+The first grid is complete and independently audited below; scientific interpretation remains limited by historical fidelity.
 
 ## Complete grid and initialization checks
 
@@ -78,3 +78,29 @@ The retained observer used the communicating response-policy seed-zero pilot. It
 The corrected observer completes and confirms the configured initial state.
 
 Next: isolate released versus specified reproduction behavior and scheduling, while preserving the entire failed-to-match reconstruction.
+
+## Reproduction and subcycle diagnostics
+
+The pilot accepts `--reproduction released` to retain recovered reproduction rules and `--subcycles 2` to select two native subcycles.
+Defaults remain specified reproduction and one subcycle. The frozen grid and its auditor cover those defaults only.
+These switches isolate candidate causes; neither setting establishes the unpublished historical schedule.
+
+[Nine bounded diagnostics](results/diagnostics-2026-10-16/comparison.json) retain 31,500 scalar observations and all native outputs.
+All use seed zero and 500 cycles; they are diagnostics, not additional independent replication seeds.
+
+| Reproduction | Subcycles | Policy | Threshold | Births | Outside own fertility range | At/below sugar threshold | Final population |
+| --- | ---: | --- | ---: | ---: | ---: | ---: | ---: |
+| Released | 1 | response | 1 | 825 | 115 | 22 | 0 |
+| Specified | 1 | response | 1 | 817 | 0 | 0 | 0 |
+| Released | 1 | none | 1 | 352 | 63 | 6 | 0 |
+| Released | 1 | response | 0 | 866 | 105 | 27 | 0 |
+| Released | 2 | response | 1 | 586 | 99 | 9 | 0 |
+| Specified | 2 | response | 1 | 530 | 0 | 0 | 0 |
+| Released | 2 | none | 1 | 362 | 78 | 8 | 0 |
+| Released | 2 | response | 0 | 613 | 114 | 16 | 0 |
+
+The first condition was repeated: all ten native data files match byte for byte.
+The specified one-subcycle run also matches all ten files from the earlier pilot, despite the added fertility observer.
+Restoring released reproduction or selecting two subcycles does not restore survival in these tested cases.
+These checks do not establish a negative replication. Historical fidelity, inheritance, and resource dynamics remain under investigation.
+Source inspection shows harvesting calls `cutAll`, followed by `takeSeeds`; the separate `cutAmount` method is not called on this path.

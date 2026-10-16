@@ -1,0 +1,20 @@
+{
+  "command": "python3 replications/buzing_2003/run_pilot.py REFERENCE NEW_OUTPUT response 1 0 --reproduction released --subcycles 2",
+  "exit_code": 0,
+  "runner_sha256": "14a42ef231522b9df3b3179904d8df116b99968d3f1c7be8fff905bcda98a298",
+  "output_sha256": {
+    "experiment_0_.cooperating.sum": "a2efc18bf6928bc0fe6b6f3c1e4e7df41b616ac98437db843172daf1eb4bb498",
+    "experiment_0_.numberOfDeaths.avg": "785f109b8da05bcf590c89bd82ff0bdf59381d10a081ddb12ec2357b0a8398c3",
+    "experiment_0_.numberOfAgents.avg": "553c59edf9e5354692bb780cb995e4c0d165dbeabcce7a141f061aea4d993285",
+    "experiment_0_.numberOfBirths.avg": "415765df1df9a52315d33df75ad021c9e14a2863b2075e389a3fd36651b5244f",
+    "experiment_0_.talkPref.avg": "8ae5a57351f14e9fe1d9d074540969dad4657e454f76778e9148cbb0fe23468c",
+    "experiment_0_.talkPref.bin": "bc5e41b86c020854e8f222626258877d5af8908478c1e1b16f012ff6d0aa0680",
+    "experiment_0_.cooperating.avg": "38389c8cd66d5632af5d1eef03ae987c6fd975db8541c316f953fe9aa6d2641d",
+    "experiment_0_.inNeedOfHelp.avg": "d421bdc2e726efde51d870c61b94dba024f59e232d6d40c0e2f2d0bb6807b97a",
+    "experiment_0_.listenPref.bin": "74cc1d8bf537a471b6587fc84c0bb936e7f4938c5b158c39af549b8d57f0872f",
+    "experiment_0_.listenPref.avg": "ca3668c05c0f3517ea2e2b973e35ddce322ffeb26e0d8ea031c9a1b2ed56073e"
+  },
+  "byte_equal_to": "buzing-2003-two-phase-released-response-ct1-001",
+  "external_run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-2003-final-runner-check-001",
+  "scope": "Additional final-runner smoke, excluded from nine-run diagnostic count."
+}
