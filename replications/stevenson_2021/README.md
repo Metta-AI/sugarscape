@@ -227,3 +227,22 @@ Integer rounding locates the event at cycle 41, but this does not select the str
 A failed fertility draw at cycle 40 followed by success at 41 also produces it under the baseline rule.
 All thirteen large wealth drops are retained, without selecting only events favorable to either interpretation.
 The unknown author seed and coordinate rounding still prevent treating these curves as exact native trajectories.
+
+## Figure 1 low-fertility ensemble comparison
+
+[Descriptive comparison](results/figure1-low-comparison-2026-10-16/comparison.json) uses all 100 declared low-fertility seeds and 499 shared times, cycles 100–49,900.
+The independent observation audit validates 153 completed runs at its snapshot; the complete 200-run ensemble is still pending.
+All low-fertility aggregate trajectories match their earlier ensemble prefixes byte-for-byte.
+Observation files, audit snapshot, comparison table, and inspected plot are retained.
+
+Published population, mean-age, Gini, and elite-age samples lie inside pointwise central 95% seed intervals at 96.6%, 97.0%, 94.0%, and 92.0% of shared times.
+These percentages are descriptive, not acceptance tests; the seed intervals are neither confidence intervals nor simultaneous bands.
+For cycles 35,100–49,900, published versus ensemble-average population is 837.328 versus 836.440.
+Mean age is 439.373 versus 456.128, Gini 0.524280 versus 0.533256, and elite age 1266.190 versus 1534.076.
+Published late elite age falls below the ensemble’s 2.5th percentile of seed means (1318.642).
+Unknown published seed, aggregation, elite conventions, and approximate vector coordinates prevent a paper-level verdict.
+The comparison does not change model parameters or acceptance criteria.
+
+Run `compare_figure1.py RUN AUDIT low-fertility NEW_OUTPUT` after `analyze_observations.py`.
+It requires all 100 audited seeds for the selected scenario and rechecks trajectory hashes and published extraction hashes.
+The final birth-cost comparison and evolutionary scenarios remain outstanding.
