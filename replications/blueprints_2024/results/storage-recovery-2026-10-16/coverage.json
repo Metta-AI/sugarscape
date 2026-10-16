@@ -1,0 +1,247 @@
+{
+  "archive_sha256": "319c38c77cdeb9f3bd618ce6c57e14e93c35e2be282c01332d42cff58327f525",
+  "inputs": [
+    {
+      "path": "replications/blueprints_2024/results/bentham-prefix-recovery-2026-10-15/audit.json",
+      "sha256": "f2cd544b996f6432d76e3726d254266b99f536f8148edc8ba331d7ae0bfa8fba",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        0,
+        4
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/disk-recovery-2026-10-15/altruisticHalfLookaheadBinary-audit.json",
+      "sha256": "59a63d2e96763f3795bf887fa34a62364173eded1c49c5387d7191efcd9af37f",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        0,
+        16
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/disk-recovery-2026-10-15/benthamHalfLookaheadBinary-audit.json",
+      "sha256": "7ed2b74060dd3a646b9881cd3e1b38d306e792775ebae9ce958c09003fabd5a6",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        4,
+        5
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/disk-recovery-2026-10-15/egoisticHalfLookaheadBinary-audit.json",
+      "sha256": "615d1256a0159d68d88640ab5d7eece14bec8795f9aa90f158c784c924b9bd0a",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        0,
+        17
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/disk-recovery-2026-10-15/rawSugarscape-audit.json",
+      "sha256": "e4d91c47395cbdac43bffa3d7a06faf2166d2cb9f43e5c09329f17ef0be6314c",
+      "model": "rawSugarscape",
+      "interval": [
+        0,
+        65
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/disk-retry-2026-10-15/altruisticHalfLookaheadBinary/audit.json",
+      "sha256": "c9bb1bfe86bfec40b101d285c79daf07040902dffb3911b4d4868147bc0c840e",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        16,
+        17
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/disk-retry-2026-10-15/benthamHalfLookaheadBinary/audit.json",
+      "sha256": "1dd0ad397344e2a5e711defc0c0cce105cc2b946fd7c0ad1ee7fb6ee79c8c8d7",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        5,
+        6
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/disk-retry-2026-10-15/egoisticHalfLookaheadBinary/audit.json",
+      "sha256": "be322d621bbf56241fe65b3d7c5251d09484c29d84e21d770094e3442e003a90",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        17,
+        18
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/disk-retry-2026-10-15/rawSugarscape/audit.json",
+      "sha256": "15a4e32587fae9c42e99f28d7405f59116189fbd5a6a0c0a96cf4eff8fbafde3",
+      "model": "rawSugarscape",
+      "interval": [
+        65,
+        66
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/original-pilot-2026-10-15/first/audit.json",
+      "sha256": "69a8d4acfc64d4176b4a8670e8792ac79d51db2f51b2ee1085433be2c94de9e2",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/original-pilot-2026-10-15/repeat/audit.json",
+      "sha256": "69a8d4acfc64d4176b4a8670e8792ac79d51db2f51b2ee1085433be2c94de9e2",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/process-recovery-2026-10-16/altruisticHalfLookaheadBinary-audit.json",
+      "sha256": "2793410e44d8a4a7f35a6c058934afae210ad259c540feaaf8a292679edb65fe",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        17,
+        29
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/process-recovery-2026-10-16/benthamHalfLookaheadBinary-audit.json",
+      "sha256": "144c3feb08e0d2ddf09bd1948ae008f903ed7f585bf1e7c1301b26abf20d3411",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        6,
+        11
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/process-recovery-2026-10-16/egoisticHalfLookaheadBinary-audit.json",
+      "sha256": "ff64d89e355df76c21de11529f73581aa7e642a33f2fe3a1a7d564bf72a76b5a",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        18,
+        28
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/process-recovery-2026-10-16/rawSugarscape-audit.json",
+      "sha256": "2afbd7264f3c565d0e27a8658280a2e294c979be50298a35e36f0aa19129c9df",
+      "model": "rawSugarscape",
+      "interval": [
+        66,
+        143
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/storage-recovery-2026-10-16/altruisticHalfLookaheadBinary-audit.json",
+      "sha256": "e28e10047b68e1e5c57dafd97748baa79b2cfd2bf666f2749365316a6fa5cc7b",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        29,
+        74
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/storage-recovery-2026-10-16/benthamHalfLookaheadBinary-audit.json",
+      "sha256": "db6a595ca1dfb75c93867d8203bdd897c84053b50ebe312f6475bec572da8cd6",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        11,
+        20
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/storage-recovery-2026-10-16/egoisticHalfLookaheadBinary-audit.json",
+      "sha256": "873ccc4ae6412491f678d3f275fb6cc8110a3d44361fc5c747b0836f9e287bd9",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        28,
+        66
+      ]
+    },
+    {
+      "path": "replications/blueprints_2024/results/storage-recovery-2026-10-16/rawSugarscape-audit.json",
+      "sha256": "96f7b52842693f8d0396b43a6ed7f5c20e9fe6040378ccfa57c050d68b0078c1",
+      "model": "rawSugarscape",
+      "interval": [
+        143,
+        263
+      ]
+    }
+  ],
+  "models": [
+    {
+      "model": "altruisticHalfLookaheadBinary",
+      "validated_interval": [
+        0,
+        74
+      ],
+      "required_runs": 500,
+      "observations": 118582,
+      "partial_counts": {
+        "better_or_equal": 22,
+        "dead": 52
+      },
+      "next_seed": [
+        1247849724732551819
+      ]
+    },
+    {
+      "model": "benthamHalfLookaheadBinary",
+      "validated_interval": [
+        0,
+        20
+      ],
+      "required_runs": 500,
+      "observations": 100020,
+      "partial_counts": {
+        "better_or_equal": 20
+      },
+      "next_seed": [
+        460149852129392939
+      ]
+    },
+    {
+      "model": "egoisticHalfLookaheadBinary",
+      "validated_interval": [
+        0,
+        66
+      ],
+      "required_runs": 500,
+      "observations": 122473,
+      "partial_counts": {
+        "better_or_equal": 22,
+        "dead": 43,
+        "worse": 1
+      },
+      "next_seed": [
+        1094233484176390113
+      ]
+    },
+    {
+      "model": "rawSugarscape",
+      "validated_interval": [
+        0,
+        263
+      ],
+      "required_runs": 500,
+      "observations": 416436,
+      "partial_counts": {
+        "better_or_equal": 73,
+        "dead": 186,
+        "worse": 4
+      },
+      "next_seed": [
+        4782127076432651114
+      ]
+    }
+  ],
+  "unique_runs": 423,
+  "excluded_duplicate_records": 2,
+  "complete_homogeneous_grid": false,
+  "scope": "Union of independently audited intervals. Partial outcome counts are not full-paper estimates. Failed, unledgered runs are excluded."
+}

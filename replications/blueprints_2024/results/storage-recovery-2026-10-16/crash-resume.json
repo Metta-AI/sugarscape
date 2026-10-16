@@ -1,0 +1,103 @@
+{
+  "reason": "User requested restoring this task after machine crash. Prior process inventory found no task workers. Completed prefixes audited before resume.",
+  "jobs": [
+    {
+      "name": "blueprints-raw",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/run_batch.py",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/blueprints-homogeneous.zip",
+        "rawSugarscape",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005",
+        "--start",
+        "263",
+        "--stop",
+        "500"
+      ],
+      "cwd": "/Users/relh/Code/workspace/sugarscape-blueprints",
+      "environment": {},
+      "resume_interval": [
+        263,
+        500
+      ],
+      "preserved_audit": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-raw-004-crash-audit-001/audit.json",
+      "audit_sha256": "96f7b52842693f8d0396b43a6ed7f5c20e9fe6040378ccfa57c050d68b0078c1",
+      "batch_runner_sha256": "0326b1ec13342f522f776ad67a4c118ea961fe154ff29da35ca3de47c47f2b03"
+    },
+    {
+      "name": "blueprints-altruistic",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/run_batch.py",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/blueprints-homogeneous.zip",
+        "altruisticHalfLookaheadBinary",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005",
+        "--start",
+        "74",
+        "--stop",
+        "500"
+      ],
+      "cwd": "/Users/relh/Code/workspace/sugarscape-blueprints",
+      "environment": {},
+      "resume_interval": [
+        74,
+        500
+      ],
+      "preserved_audit": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-altruistic-004-crash-audit-001/audit.json",
+      "audit_sha256": "e28e10047b68e1e5c57dafd97748baa79b2cfd2bf666f2749365316a6fa5cc7b",
+      "batch_runner_sha256": "0326b1ec13342f522f776ad67a4c118ea961fe154ff29da35ca3de47c47f2b03"
+    },
+    {
+      "name": "blueprints-egoistic",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/run_batch.py",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/blueprints-homogeneous.zip",
+        "egoisticHalfLookaheadBinary",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005",
+        "--start",
+        "66",
+        "--stop",
+        "500"
+      ],
+      "cwd": "/Users/relh/Code/workspace/sugarscape-blueprints",
+      "environment": {},
+      "resume_interval": [
+        66,
+        500
+      ],
+      "preserved_audit": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-egoistic-004-crash-audit-001/audit.json",
+      "audit_sha256": "873ccc4ae6412491f678d3f275fb6cc8110a3d44361fc5c747b0836f9e287bd9",
+      "batch_runner_sha256": "0326b1ec13342f522f776ad67a4c118ea961fe154ff29da35ca3de47c47f2b03"
+    },
+    {
+      "name": "blueprints-bentham",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/run_batch.py",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/blueprints-homogeneous.zip",
+        "benthamHalfLookaheadBinary",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005",
+        "--start",
+        "20",
+        "--stop",
+        "500"
+      ],
+      "cwd": "/Users/relh/Code/workspace/sugarscape-blueprints",
+      "environment": {},
+      "resume_interval": [
+        20,
+        500
+      ],
+      "preserved_audit": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-004-crash-audit-001/audit.json",
+      "audit_sha256": "db6a595ca1dfb75c93867d8203bdd897c84053b50ebe312f6475bec572da8cd6",
+      "batch_runner_sha256": "0326b1ec13342f522f776ad67a4c118ea961fe154ff29da35ca3de47c47f2b03"
+    }
+  ],
+  "wrapper": "/Users/relh/Code/workspace/sugarscape-replication-evidence/sugarscape-post-crash-resume-001/run-job.py",
+  "wrapper_sha256": "fdd7cb5b55728675de4c71cf32bdd9a62f3e274fd9e1b74dedfb543260f65b69"
+}

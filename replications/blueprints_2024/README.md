@@ -149,3 +149,26 @@ The stop cause is not inferred from missing handles. Complete and partial native
 Fresh batches resume original indices 143 (raw), 29 (altruist), 28 (egoist), and 11 (utilitarian).
 No completed seed is rerun or dropped; interrupted seeds are retried in new directories.
 Full 500-seed conclusions still require reconciliation of every interval.
+
+## Audited storage and machine-crash recovery
+
+[Four further prefix audits](results/storage-recovery-2026-10-16) validate 212 completed simulations and 368,833 observations.
+Raw and utilitarian batches stopped at the 1 GiB free-space guard. Altruistic and egoistic runs failed with incomplete diagnostics during disk pressure.
+The failed altruistic trajectory is invalid JSON and is excluded. Exact child-process failure causes remain unestablished.
+All complete and partial files remain preserved.
+
+`reconcile_coverage.py ARCHIVE NEW_OUTPUT AUDIT...` checks intervals against original sorted seeds and requires repeated records to agree.
+[Reconciled coverage](results/storage-recovery-2026-10-16/coverage.json) contains 423 unique simulations and 757,511 observations.
+Two repeated pilot records match and are counted once. A conflicting repeated trajectory hash is rejected before output creation.
+
+| Model | Audited original indices | Completed / required | Resume index |
+| --- | --- | ---: | ---: |
+| Raw | [0,263) | 263 / 500 | 263 |
+| Altruistic | [0,74) | 74 / 500 | 74 |
+| Egoistic | [0,66) | 66 / 500 | 66 |
+| Utilitarian | [0,20) | 20 / 500 | 20 |
+
+After the machine crash, process inspection found no surviving task workers. All four retained prefixes passed the full trajectory audit again.
+The unchanged original schedules resumed from these exclusive-stop boundaries in fresh `-005` directories after storage recovered.
+[The launch record](results/storage-recovery-2026-10-16/crash-resume.json) identifies commands, hashes, retained evidence, and new outputs.
+Partial counts do not establish full homogeneous results; selfishness, heterogeneous studies, and historical-code alignment remain incomplete.
