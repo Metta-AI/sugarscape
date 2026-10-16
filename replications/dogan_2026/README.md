@@ -192,3 +192,14 @@ The completed canonical sweep therefore covers this cumulative-mortality experim
 Its stock-at-death statistic differs: it averages positive per-step means equally, whereas the canonical calculation weights those means by deaths.
 The old report is not asserted reproduced, and its stock statistic must not replace the current manuscript's measurement.
 This resolves duplicated simulation scope without counting repeated settings as additional evidence.
+
+## Composition table and ranking claims
+
+`audit_composition.py COMPOSITION_CSV CANONICAL_CSV PROVENANCE NEW_OUTPUT` checks the full 315-run combined grid and reconstructs Table C.1.
+[Deposited-data results](results/deposited-composition-audit-2026-10-15/table-c1.json) match all 126 printed values.
+The baseline has highest mortality and the two pure means-tested policies lowest mortality in all nine composition/speed settings.
+There are nevertheless two distinct full mortality orderings, so that narrower result must not be restated as complete rank invariance.
+Seven of nine tested inequality ranks rise from slow to fast automation when the displacement levy is included.
+The two exceptions are low-composition levy, fifth-to-first, and high-composition wealth/means-tested, seventh-to-fifth.
+The prose's explanation that those ranks were already fixed at extremes does not match these unrounded rankings.
+These are reporting checks on deposited data; fresh composition runs remain pending and no whole-paper negative verdict is assigned.
