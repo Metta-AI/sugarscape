@@ -45,7 +45,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | bigbee-2007 | Bigbee, Cioffi-Revilla, Luke, [Replication of Sugarscape Using MASON](https://citeseerx.ist.psu.edu/document?doi=0e41ff02af3ab5578a925a3cf7c81f4262bbf0c0&repid=rep1&type=pdf) (2007) | Rule-set outcomes and documented replication failures | candidate |
 | kiran-2014 | Kiran, [Using FLAME Toolkit for Agent-Based Simulation: Case Study Sugarscape Model](https://arxiv.org/abs/1408.3441) (2014) | Three spatial initialization scenarios; separate behavioral results from hardware timings | candidate |
 | oremland-2014 | Oremland and Laubenbacher, [Optimization of Agent-Based Models](https://www.jasss.org/17/2/6.html) (2014) | Sugarscape taxation schedule, revenue, population, and reduced-model comparison | candidate |
-| raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 24/24 archived Table 4 statistics reproduced; fresh simulation provenance unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
+| raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 24/24 archived Table 4 statistics reproduced; first simulation exactly replayed at historical horizon; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
 | carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | author replay: 150/150 statistics on two inputs; 20 estimator table entries matched; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
 | stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | candidate |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | candidate |
@@ -74,8 +74,9 @@ The first quantile-forest run completed with differences below 0.002; stochastic
 Independent fork behavior, remaining estimators, and expanded simulation ensembles remain unfinished.
 
 Raimbault: independent archived-data analysis reproduces all 24 Table 4 statistics.
-The first fresh simulation does not match its archived row; historical seeding, resource setup, horizon, and runtime require verification.
-This is an unresolved provenance mismatch, not a negative replication. Neither ongoing study counts toward completion.
+The initial fresh-simulation mismatch was resolved by restoring the historical 10,000-step horizon.
+Both recorded Gini values now match exactly for the first input; further inputs and complete ensembles remain unfinished.
+This was a configuration mismatch, not a negative replication. Neither ongoing study counts toward completion.
 
 The [engine prerequisite PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/2) fixes resource imports and initial logging.
 Study-specific variants remain explicit rather than claiming that DTL matches every source model.
