@@ -45,11 +45,12 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | bigbee-2007 | Bigbee, Cioffi-Revilla, Luke, [Replication of Sugarscape Using MASON](https://citeseerx.ist.psu.edu/document?doi=0e41ff02af3ab5578a925a3cf7c81f4262bbf0c0&repid=rep1&type=pdf) (2007) | Rule-set outcomes and documented replication failures | all seventeen draft scenarios run twice; corrected reproduction invariants pass 17,034 observations; historical alignment outstanding; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/7) |
 | kiran-2014 | Kiran, [Using FLAME Toolkit for Agent-Based Simulation: Case Study Sugarscape Model](https://arxiv.org/abs/1408.3441) (2014) | Three spatial initialization scenarios; separate behavioral results from hardware timings | [source audit](source-audits/kiran-2014.json): six Table 5 targets extracted; original C/XML and initialization details unresolved |
 | oremland-2014 | Oremland and Laubenbacher, [Optimization of Agent-Based Models](https://www.jasss.org/17/2/6.html) (2014) | Sugarscape taxation schedule, revenue, population, and reduced-model comparison | [source audit](source-audits/oremland-2014.json): 2014 dissertation Appendix B recovered; landscape, tax timing, and negative-wealth handling unresolved |
-| raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 24/24 archived Table 4 statistics reproduced; three simulations exactly replayed at historical horizon; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
+| raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 24/24 archived Table 4 statistics reproduced; 5,966 reference simulations independently audited with 11,932 exact Gini matches; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
 | carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | complete author replay: 750,000/750,000 statistics across 5,000 inputs; 30 estimator table entries matched in successful runs; remaining forest/neural runs and runtime discrepancies unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
-| stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two complete 100-seed, 100,000-cycle ensembles; discrepancies and twenty-run birth-threshold sensitivity audited; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
+| stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two complete 100-seed, 100,000-cycle ensembles and all 80 boundary-sensitivity runs audited; historical semantics and remaining experiments unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | three 150-run reconstruction/correction grids fully audited; historical fidelity unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/9) |
 | buzing-2003 | Buzing, Eiben, Schut, [Evolving Agent Societies with VUScape](https://www.cs.vu.nl/~gusz/papers/ECAL2003-Buzing-Eiben-Schut.pdf) (2003) | Fixed-listening communication, population variation, and cooperation | 200-run grid and actual initialization audited; all populations extinct; historical fidelity unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/12) |
+| pike-2019 | Pike, [Multi-Level Mesa](https://arxiv.org/abs/1904.08315) (2019) | Three experimental phases: grouping, movement policies, and shared resources | Phase I 300-run and Phase II 600-run ensembles launched; author-code defects and separate corrective experiments documented; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13) |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | candidate |
 | pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | [source audit](source-audits/pan-2011.json): twelve scenario targets and explicit rules extracted; hardship mapping, scheduling, map, and original implementation unresolved |
 
@@ -63,6 +64,13 @@ are baseline references, outside the ten-paper count.
 Paper-specific variants must remain explicit: superficially similar Sugarscape implementations can implement different models.
 
 ## Current state
+
+The evidence index now includes eleven study PRs and two completed mixed studies.
+Pike adds author-code replay and parameterized grouping ensembles, not an additional completed paper.
+Its corrective experiments preserve original failures and remain separate from historical replication claims.
+Carrella's independent implementation passes deterministic native comparisons; its full stochastic and estimator validation remain unfinished.
+Stevenson's completed boundary diagnostic narrows the age discrepancy without resolving historical semantics.
+
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.
 Completed studies: **2 / at least 10**. Wholly positive paper replications: **0**.
@@ -189,9 +197,9 @@ Mean relative increases are 2.421% and 3.359%; maxima are 6.182% and 7.610%.
 Unknown historical seeds and measurement windows prevent treating these as confirmation or refutation of the reported 3%/5% claims.
 Carrella's full 5,000-input regression-forest workflow has launched with the native settings; no result is claimed before all five folds validate.
 
-Raimbault's interrupted reference retains 2,399 validated simulations and 4,798 exact native Gini matches.
-The continuation requests the remaining 52,601 rows after a two-row boundary replay passes all four archived measurements.
-The boundary check overlaps existing coverage and is not counted as additional ensemble evidence.
+Raimbault's retained audit covers 5,966 unique reference inputs and 11,932 exact Gini matches.
+Five continuations cover the remaining declared input ranges; the 55,000-run reference and generated-landscape experiment remain incomplete.
+Boundary replay overlap is excluded from coverage counts.
 
 The completed Dogan verdict also verifies mortality invariance across all four UHI multipliers in every speed/seed condition.
 It distinguishes author-source fork integration from independent engine replication, and preserves the unpublished working-paper status.
@@ -232,7 +240,7 @@ The author-hosted2003VUScape paper has been recovered and its Table2 and Figure2
 These differ materially from the2005communication experiments; existing2005runs cannot count as a second completed paper.
 The earlier text does not resolve fertility-end inheritance, historical source, or message-removal settings.
 
-Ten distinct paper studies now have separate PRs. This is coverage of ongoing work, not ten completed replications.
+Eleven distinct paper studies now have separate PRs. This is coverage of ongoing work, not eleven completed replications.
 The completed count remains two. The 2003 VUScape study uses its own published parameters and trajectories.
 The 2005 fertility correction passes all 150 paired runs and 11,494,812 births, but changes survival in several paired seeds.
 Its COM1 threshold-one survival rises from one to three of ten; implementation sensitivity still prevents a paper-level verdict.
