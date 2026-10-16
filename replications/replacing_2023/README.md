@@ -240,3 +240,18 @@ Neither historical release produces either reported extinction.
 Source history records changes to endowment generation, random-stream handling, and disease modifiers between these releases.
 The paired runs do not isolate those individual changes or establish the paper's exact revision.
 The historical mismatch remains unresolved; this is not a completed negative replication.
+
+## Disease horizon and eradication audit
+
+Sections 5.3–5.4 specify complete population extinction from sickness for seeds 12881 and 22744, but provide no numerical stopping time.
+The released 500-step horizon therefore remains an unverified paper setting.
+
+[A source audit](results/disease-eradication-source-2026-10-16/source-audit.json) records all infection-related call sites and hashes every top-level Python source in the archived revision.
+Initialization seeds diseases once. Later transmission requires an infected agent; newborns initialize an empty infection list.
+Consequently zero infections is absorbing during ordinary headless execution without external intervention.
+The existing byte-identical observer replays reach that state at steps 30 and 42 and retain positive populations through step 500.
+Extending those runs cannot create another epidemic under these rules.
+This does not prove indefinite population survival or exclude lingering modifier effects after infection clears.
+
+The stopping-time ambiguity alone cannot explain renewed transmission in these trajectories.
+Historical source and configuration differences remain unresolved, so the study remains incomplete rather than a validated negative replication.
