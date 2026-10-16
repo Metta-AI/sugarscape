@@ -162,3 +162,11 @@ The full-size semi-automatic one-dimensional and local-linear estimators are now
 The one-dimensional semi-automatic estimator completed all five folds on 5,000 inputs.
 [Recorded results](results/sabc1d-5000-2026-10-15/comparison.json) include 25,000 independently validated held-out parameter predictions and interval metrics.
 All published-score differences remain explicit; no equivalence or negative-replication verdict is assigned from a single random realization.
+
+## Recovered local-linear outputs
+
+The full-size local-linear invocation saved all five folds and final metrics, then exited with an unexpected-end-of-input parsing error.
+The runner was edited during execution, so source-stream interference is suspected; the current file parses successfully.
+[Recovered artifacts](results/loclin-5000-recovered-2026-10-15/comparison.json) independently validate all 25,000 predictions and interval metrics.
+The failed process status remains explicit; a clean invocation is still required.
+Do not edit scripts while their interpreters are executing them. Future R launches use `Rscript -e` with `source()` to parse the complete runner before execution.

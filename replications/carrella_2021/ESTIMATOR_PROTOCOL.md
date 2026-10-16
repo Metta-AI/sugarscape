@@ -43,3 +43,10 @@ Use an older R toolchain for the next attempt instead of changing statistical so
 The original full-size notebook explicitly passes `hcorr=TRUE` to local-linear and neural-network ABC.
 The runner now specifies it explicitly too. The installed package already defaults to `TRUE`, so the earlier local-linear launch has identical correction settings.
 The neural-network run retains the original package's ten-network ensemble and five hidden units; no smaller network or sample has been substituted.
+
+## Source isolation for new runs
+
+Use `Rscript -e 'source("replications/carrella_2021/run_estimator.R")' SOURCE METHOD SIZE SEED OUTPUT`.
+`source()` parses the complete file before evaluating its expressions. Preserve active source files unchanged regardless.
+A local-linear invocation ended with a parsing error after its numerical output was saved when the runner was edited during execution.
+All saved predictions validate independently, but retain the nonzero exit and rerun through the isolated launch path.
