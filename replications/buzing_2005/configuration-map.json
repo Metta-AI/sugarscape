@@ -1,0 +1,62 @@
+{
+  "paper": "https://www.jasss.org/8/1/2.html",
+  "sections": [
+    "3.8",
+    "3.10",
+    "3.14",
+    "4.5",
+    "Table2",
+    "4.7"
+  ],
+  "status": "Provisional mapping, not an executable historical-equivalence claim",
+  "table2_overrides": {
+    "Scape/scape.cfg": {
+      "sugarRichness": "1.0f"
+    },
+    "Agent/agent.cfg": {
+      "minInitialSugar": "0",
+      "maxInitialSugar": "100",
+      "minReproductionSugar": "0",
+      "maxReproductionSugar": "0",
+      "mutationSigma": "0.1",
+      "mutationOperator.listenPref": "true",
+      "mutationOperator.talkPref": "true"
+    }
+  },
+  "protocols": {
+    "COM0": {
+      "minListenPref": "0",
+      "maxListenPref": "0",
+      "minTalkPref": "0",
+      "maxTalkPref": "0",
+      "mutationOperator.listenPref": "false",
+      "mutationOperator.talkPref": "false"
+    },
+    "COM1": {
+      "message.removeAfterNIterations": "0",
+      "message.removeAfterListening": "true",
+      "message.removeAfterResponse": "false"
+    },
+    "COM2": {
+      "message.removeAfterNIterations": "0",
+      "message.removeAfterListening": "false",
+      "message.removeAfterResponse": "true"
+    }
+  },
+  "thresholds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "runs_each": 10,
+  "unresolved": [
+    "Harvest semantics changed in2.0: unconditional sharing by colocatedagents versus oldsingle-agentpriority.",
+    "Two-subcycle scheduling differs from oldexecuteAllRules path; historicaltimingrequiresvalidation.",
+    "Current initialization samplesseed sizes untiltotalwealth exhausted instead of balancingseedcounts.",
+    "Multiple seeds can occupy a cell, so size4seedlimit does not bound totalcellresources.",
+    "Cooperation monitor averages agentflags; paper descriptions reference both eatingactions and allactions. Denominator must be resolved.",
+    "COM1 currentcode deletes onlybestselectedmessage afterdirectional scans; historicalread/removal semantics needvalidation."
+  ]
+}

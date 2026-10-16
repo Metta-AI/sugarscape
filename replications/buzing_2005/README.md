@@ -92,3 +92,18 @@ It does not validate unused communication branches or the paper's version 1.2.3.
 Earlier attempts completed native simulations but failed while serializing our manifest because a local replacement-count variable was reused.
 That runner defect was fixed; fresh full workflows then completed successfully. Failure tracebacks remain retained separately.
 Paper-specific communication rules, subcycle equivalence, and full experimental settings remain unresolved.
+
+## Protocol and landscape audit
+
+[configuration-map.json](configuration-map.json) records provisional parameter and communication mappings, with unresolved semantics kept explicit.
+`LandscapeAudit.java` initializes the native model and reads its cells without advancing time or drawing random numbers.
+The [seed-zero observation](results/landscape-table2-2026-10-15) changes only sugar richness from the release default to 1.0.
+The 2,500 cells contain exactly 2,500 sugar units but 1,015 seeds; 161 cells contain multiple seeds.
+There are 102 cells above four sugar units, with a maximum of eleven.
+Thus setting the seed-size limit to four does not bound this release's cell piles at four.
+
+Source inspection finds another explicit version change in `SugarAgent.harvest`: version 2.0 shares whenever multiple agents occupy a food-bearing cell.
+The source comment describes the older behavior as consuming alone whenever possible.
+`TorusScape.executeRules` also has distinct one-subcycle and multiple-subcycle paths.
+The paper's model therefore cannot be recovered merely by applying its scalar parameter table to this newer release.
+These observations identify implementation-alignment work, not evidence against the paper's reported cooperation results.
