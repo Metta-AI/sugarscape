@@ -178,3 +178,21 @@ Historical measurement details remain unresolved; a late-window population mean 
 Population alone receives an absorbing-zero extension after extinction because all three released configurations disable replacement.
 Native data remains unchanged; extension lengths and undefined relative changes are explicit.
 The analysis reports early-to-late drift and does not infer equilibrium or a paper replication verdict.
+
+## Complete reproduction schedule and Figure 2 agreement
+
+[All twenty published seeds](results/reproduction-published20-2026-10-15/audit.json) complete the 2,500-step reproduction experiment and pass 50,020 native-observation checks, with no extinctions.
+`analyze_reproduction.py BATCH AUDIT BASELINE NEW_OUTPUT` reports exploratory population descriptors and plots all trajectories against seed 12345.
+It uses the paper's 60–100 window and an explicitly analyst-chosen late window; it does not invent a threshold for the qualitative Table 3 labels.
+The baseline population rises from 840 to 1,071 during steps 60–100.
+All twenty additional seeds also have a window minimum above their pre-step60 peak.
+
+The apparent timing discrepancy is not a failure to reproduce Figure 2.
+`audit_figure2.py PDF BASELINE NEW_OUTPUT` renders page9 with `pdftocairo`, extracts its vector curve, and calibrates against the inspected axis labels and rectangle.
+[All 2,452 represented vertices](results/figure2-vector-2026-10-15/audit.json) match the baseline's integer populations exactly after coordinate rounding.
+Maximum coordinate rounding distances are 0.077 timestep and 0.051 agent; the 49 unrepresented timesteps are explicitly listed, not treated as observed.
+Calibration uses the figure axes, not a fit to simulation outcomes.
+Thus the released implementation reproduces the plotted curve while the prose's stated first-dip timing disagrees with that curve.
+The exact historical revision and Table 3's qualitative classification remain unresolved, so this finding does not complete the paper replication.
+
+![Native reproduction trajectories](results/reproduction-published20-2026-10-15/population-trajectories.png)
