@@ -18,22 +18,22 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "9dd66bed85a40d4c4193a6fd47718bfe0a3c0430",
+      "checked_commit": "f70490e779a3876639227d1c68d668475c078039",
       "status": "running",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "822e241311e4301c45fd57fc2df630dd63dc533db77e3baec081ada7f4ff9181",
+      "readme_sha256": "33c21faf8f4ddbda0ca52afa99e437f7d9695b56abf73c68649aae9138ae55ba",
       "json_evidence_files": 45,
-      "remaining_scope": "RF1250 full predictions validated; only one of five printed scores matches. Full RF5000 and neural5000 workflows restarted after stopped processes. Other estimator and fork equivalence work remains."
+      "remaining_scope": "All 5,000 author simulations replayed. Full regression-forest and neural-network estimators continue. Fifty GAM formulas are identical across released source revisions, ruling out that code change. Runtime/stochastic alignment and fork model integration remain incomplete."
     },
     {
       "study": "raimbault_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
-      "checked_commit": "4de02aac72a050cf308ed2cbd071fd52c420cc6e",
+      "checked_commit": "b9cb3f243882750d92e117d5cb4a2229bab37cf2",
       "status": "running",
       "readme": "replications/raimbault_2019/README.md",
-      "readme_sha256": "5dfc76c1a402232497c4382b07b880db4760b89dd671d23c0e225b547c062448",
-      "json_evidence_files": 36,
-      "remaining_scope": "5,786 of 55,000 original reference inputs audited; 11,572 exact Gini matches. Five continuations resumed after crash with no duplicated completed rows. Full reference and generated-landscape conclusions remain incomplete."
+      "readme_sha256": "c4e95608a359f77ce18fb35c616b6f8f7739fcef429fffd7b8274734e29d71ed",
+      "json_evidence_files": 41,
+      "remaining_scope": "5,966 of 55,000 original reference inputs independently audited; 11,932 exact Gini matches. Five resumed continuations remain active. Full reference and generated-landscape conclusions remain incomplete."
     },
     {
       "study": "blueprints_2024",
@@ -58,12 +58,12 @@
     {
       "study": "stevenson_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8",
-      "checked_commit": "041402f5040227370c905d4bf8938472e13b0a8c",
+      "checked_commit": "3ff415c584413712e8775b239928d4c157580d44",
       "status": "partial",
       "readme": "replications/stevenson_2021/README.md",
-      "readme_sha256": "96261b1ec53e32be823b5c1437f705dacf708d4ec9130eafbe99795306078335",
-      "json_evidence_files": 31,
-      "remaining_scope": "All 200 fixed-scenario observation runs audited. Figures 1 and labelled founder zero in Figure 2 compared across all seeds; 367 founder comparison rows independently verified. Population-wide age discrepancy, historical semantics, Figure 3 sensitivity, evolving scenarios, and Appendix B remain unresolved."
+      "readme_sha256": "863e0c2bd1be6651f320a4cdc6c0a8a426134d1156ded2cf66a2369e1c53bd08",
+      "json_evidence_files": 35,
+      "remaining_scope": "All 200 fixed-scenario observation runs audited; Figure1 and labelled Figure2 founder compared. Conflicting later-author thresholds motivate running80-simulation diagnostic; first3 independently audited with incomplete/corruption rejection controls. Historical semantics, age discrepancy, evolution, Figure3 and AppendixB remain."
     },
     {
       "study": "buzing_2005",
