@@ -181,3 +181,10 @@ Full analysis requires both approaches, all three thresholds, and 100 seeds per 
 The explicit control enables the released movement policy; the network control leaves policy disabled.
 The controls cover 2,000 steps and 95,036 reconciled health records, with exactly 1,000 adapter calls per run.
 The frozen Phase II ensemble has launched with one worker. Its 600-run result grid remains incomplete; controls do not substitute for those runs.
+
+### Expanded Phase I audit
+
+[The 46-run prefix audit](results/phase1-expanded-prefix-2026-10-16/provenance.json) validates 2,364,707 health records and 46,000 price-step measurements.
+It verifies the ordered declared prefix, source and raw-file hashes, individual identities, and notebook price definitions.
+The snapshot retains the audit, exact ledger, and derived price records; its provenance identifies the retained full raw evidence directory.
+The 300-run ensemble remains incomplete. No aggregate paper comparison or equivalence conclusion is inferred from this prefix.
