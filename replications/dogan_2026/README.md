@@ -78,3 +78,12 @@ This checks reporting consistency; fresh simulation and full-paper verification 
 `run_uhi.py ENGINE FRESH_CANONICAL NEW_OUTPUT` runs the author's sixty transfer-multiplier experiments and both original calibrations.
 Before starting, it requires every fresh Part B benchmark cell to match the pinned deposit, including missing values, at the declared tolerance.
 It copies that verified fresh benchmark into the isolated output directory and records hashes, rather than using deposited outcomes as fresh results.
+
+## Fresh transition sweep
+
+[Part B evidence](results/transition-2026-10-15/comparison.json) contains all 105 native transition runs and the 24,675-row agent snapshot.
+All 201,810 cells match the author deposit at the declared tolerance, including missing values; both CSVs are also byte-identical.
+The fresh data reconstructs all 42 Table 4 values and passes per-run mortality-cause accounting.
+The native canonical process continues with Part C, so this evidence makes no claim about its eventual exit status.
+The transfer-multiplier run has started using this verified fresh benchmark.
+Full welfare sensitivity, robustness comparisons, and remaining manuscript claims still require validation before this paper can count as completed.
