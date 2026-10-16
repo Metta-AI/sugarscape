@@ -284,3 +284,20 @@ Evolution, Figure 3 sensitivity, and Appendix B remain outstanding; this study r
 ```sh
 python replications/stevenson_2021/compare_figure2.py /complete/observation-run /complete/observation-audit /new/comparison
 ```
+
+## Additional author evidence on reproduction boundaries
+
+[Local Sharing (2023), version 1](https://arxiv.org/pdf/2305.17177v1), Algorithm 1 line 17, uses strict age and wealth thresholds.
+Visual inspection of page 4 confirms both operators.
+This differs from the non-strict comparisons in the previously checked Struggle for Existence algorithm.
+These later algorithms describe different models and do not identify the 2021 implementation.
+Their disagreement prevents treating either convention as settled historical evidence.
+Source URLs, hashes, frozen runner hashes, and launch command are [retained](results/reproduction-boundaries-launch-2026-10-16/launch.json).
+
+The [predeclared reproduction-boundary diagnostic](REPRODUCTION_BOUNDARIES.md) isolates both operators in a two-by-two design across both fixed scenarios.
+It runs 80 bounded simulations using ten new seeds and preserves every outcome.
+The baseline simulator remains unchanged. No new agreement or study completion is claimed before independent analysis.
+
+```sh
+python replications/stevenson_2021/run_boundaries.py /new/boundary-diagnostic
+```
