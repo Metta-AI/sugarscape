@@ -156,3 +156,9 @@ The 5,000-input run completed all five folds and independently validated all 25,
 Maximum absolute performance difference from Table 8 is 0.002295, on reproduction wealth; one of five values matches printed precision.
 This single random realization does not establish statistical equivalence or a negative replication.
 The full-size semi-automatic one-dimensional and local-linear estimators are now running under the existing protocol.
+
+## Full-size semi-automatic estimation
+
+The one-dimensional semi-automatic estimator completed all five folds on 5,000 inputs.
+[Recorded results](results/sabc1d-5000-2026-10-15/comparison.json) include 25,000 independently validated held-out parameter predictions and interval metrics.
+All published-score differences remain explicit; no equivalence or negative-replication verdict is assigned from a single random realization.
