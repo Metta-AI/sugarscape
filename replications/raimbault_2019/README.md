@@ -102,3 +102,17 @@ These three inputs validate the corrected replay path; they do not complete the 
 4. Reproduce the phase-diagram contrasts and distance summaries from fresh simulations.
 
 Archived-data reanalysis alone does not satisfy these simulation requirements.
+
+## Full fixed-landscape reference replay
+
+`run_reference.py ENGINE NETLOGO JDK REFERENCE_CSV NEW_OUTPUT` runs all 55,000 archived reference inputs at 10,000 steps each.
+It pins the author revision and original dataset hash, records model/runtime/dependency hashes, and preserves native exit status.
+The adapter flushes each completed row with its seed, population, horizon, terminal Gini, and moving-window Gini.
+It checks fixed population at every simulated step and rejects incomplete or nonfinite runs.
+Full per-step trajectories remain available from `Replay.java`; the ensemble retains the two native measurements used in the source archive.
+
+The headless setup creates turtles without clearing the previous run.
+`BatchReplay.java` explicitly clears the workspace before each original seeded setup, preventing cross-run population contamination.
+It does not edit the author model or change the historical 10,000-step rule execution.
+[The three-row batch pilot](results/batch-pilot-2026-10-15/comparison.json) completes 30,000 steps and matches all six archived native Gini measurements exactly.
+The full 55,000-input replay is now running. Generated-grid ensembles and fresh spatial contrasts remain required afterward.
