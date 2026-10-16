@@ -134,3 +134,9 @@ All recovered prefixes and remaining intervals require reconciliation before com
 The egoist retry also completes all 5,000 steps, ending with population 495.
 Its 5,001 observations pass the independent full-interval audit and are retained with the other recovered seeds.
 The remaining egoist batch resumes at index 18; the utilitarian retry is still running.
+
+The utilitarian retry completes all 5,000 steps, ending with population 1,264.
+Its 5,001 observations pass the independent audit; the remaining interval resumes at index 6.
+All four interrupted seeds have now been recovered and their remaining original schedules resumed.
+Utilitarian evidence spans original indices 0–3, the earlier resumed index 4, recovered index 5, and the running interval 6–499.
+No full 500-seed model ensemble is yet complete.
