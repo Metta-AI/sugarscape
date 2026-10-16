@@ -261,3 +261,17 @@ Combined with 105 fresh canonical runs, the independent audit reproduces all 126
 The previously documented ranking qualifications therefore also hold in fresh execution: two full mortality orderings and seven of nine increasing inequality ranks.
 The highest/lowest mortality claim still holds in all nine composition/speed settings.
 The native queue has proceeded to the original levy sweep; its later per-seed threshold study and corrected-levy comparisons remain incomplete.
+
+## Fresh figure reconstruction
+
+[Both manuscript figures](results/figures-2026-10-15) regenerate from the completed fresh main-sweep CSV using the unchanged author plotting script.
+The manuscript references the two deposited PNGs directly.
+An independent observer checks all 42 plotted ordinates against five-seed means computed with Python's standard-library CSV and statistics modules.
+All values agree within 1e-12, and observing the plot calls leaves both generated PNGs byte-identical to their unobserved versions.
+
+The generated images are not pixel-identical to the deposit: original height is 880 pixels and fresh height is 877, with widths differing by one pixel.
+Both original and fresh images are retained; visual inspection finds the same curves, legends, and labels.
+This establishes numerical plot reconstruction from fresh simulations, not pixel-exact rendering or validation of the titles' broader claims.
+The independently audited Tables 2 and 4 supply the corresponding published numerical targets.
+
+Run `run_figures.py ENGINE COMPLETE_CANONICAL NEW_OUTPUT`, then `audit_figure_series.py FIGURE_OUTPUT NEW_AUDIT`.

@@ -1,0 +1,302 @@
+{
+  "points_checked": 42,
+  "absolute_tolerance": 1e-12,
+  "native_observed_images_byte_identical": true,
+  "points": [
+    {
+      "metric": "gini_final",
+      "cell": "baseline",
+      "speed": "slow",
+      "plotted": 0.36632377100508806,
+      "independent_mean": 0.36632377100508806
+    },
+    {
+      "metric": "gini_final",
+      "cell": "baseline",
+      "speed": "balanced",
+      "plotted": 0.3787487275901791,
+      "independent_mean": 0.3787487275901791
+    },
+    {
+      "metric": "gini_final",
+      "cell": "baseline",
+      "speed": "fast",
+      "plotted": 0.38384873648002094,
+      "independent_mean": 0.383848736480021
+    },
+    {
+      "metric": "gini_final",
+      "cell": "labour/ubi",
+      "speed": "slow",
+      "plotted": 0.38234340254648896,
+      "independent_mean": 0.38234340254648896
+    },
+    {
+      "metric": "gini_final",
+      "cell": "labour/ubi",
+      "speed": "balanced",
+      "plotted": 0.39243680857550756,
+      "independent_mean": 0.3924368085755076
+    },
+    {
+      "metric": "gini_final",
+      "cell": "labour/ubi",
+      "speed": "fast",
+      "plotted": 0.42017944818843506,
+      "independent_mean": 0.42017944818843506
+    },
+    {
+      "metric": "gini_final",
+      "cell": "wealth/ubi",
+      "speed": "slow",
+      "plotted": 0.30913790917608064,
+      "independent_mean": 0.30913790917608064
+    },
+    {
+      "metric": "gini_final",
+      "cell": "wealth/ubi",
+      "speed": "balanced",
+      "plotted": 0.32265176703134385,
+      "independent_mean": 0.3226517670313439
+    },
+    {
+      "metric": "gini_final",
+      "cell": "wealth/ubi",
+      "speed": "fast",
+      "plotted": 0.37593782986008406,
+      "independent_mean": 0.37593782986008406
+    },
+    {
+      "metric": "gini_final",
+      "cell": "uhi_scenario",
+      "speed": "slow",
+      "plotted": 0.32055446426370415,
+      "independent_mean": 0.32055446426370415
+    },
+    {
+      "metric": "gini_final",
+      "cell": "uhi_scenario",
+      "speed": "balanced",
+      "plotted": 0.38138398436965026,
+      "independent_mean": 0.38138398436965026
+    },
+    {
+      "metric": "gini_final",
+      "cell": "uhi_scenario",
+      "speed": "fast",
+      "plotted": 0.4506875174587582,
+      "independent_mean": 0.4506875174587582
+    },
+    {
+      "metric": "gini_final",
+      "cell": "disp_levy/means_tested",
+      "speed": "slow",
+      "plotted": 0.2786926960635659,
+      "independent_mean": 0.2786926960635659
+    },
+    {
+      "metric": "gini_final",
+      "cell": "disp_levy/means_tested",
+      "speed": "balanced",
+      "plotted": 0.31240190999533624,
+      "independent_mean": 0.31240190999533624
+    },
+    {
+      "metric": "gini_final",
+      "cell": "disp_levy/means_tested",
+      "speed": "fast",
+      "plotted": 0.48556036680701276,
+      "independent_mean": 0.4855603668070128
+    },
+    {
+      "metric": "gini_final",
+      "cell": "labour/means_tested",
+      "speed": "slow",
+      "plotted": 0.27233274321046996,
+      "independent_mean": 0.27233274321046996
+    },
+    {
+      "metric": "gini_final",
+      "cell": "labour/means_tested",
+      "speed": "balanced",
+      "plotted": 0.3884306227944556,
+      "independent_mean": 0.38843062279445567
+    },
+    {
+      "metric": "gini_final",
+      "cell": "labour/means_tested",
+      "speed": "fast",
+      "plotted": 0.537310721700721,
+      "independent_mean": 0.537310721700721
+    },
+    {
+      "metric": "gini_final",
+      "cell": "wealth/means_tested",
+      "speed": "slow",
+      "plotted": 0.2991913278059563,
+      "independent_mean": 0.29919132780595636
+    },
+    {
+      "metric": "gini_final",
+      "cell": "wealth/means_tested",
+      "speed": "balanced",
+      "plotted": 0.43852058702215657,
+      "independent_mean": 0.4385205870221566
+    },
+    {
+      "metric": "gini_final",
+      "cell": "wealth/means_tested",
+      "speed": "fast",
+      "plotted": 0.5713058069076515,
+      "independent_mean": 0.5713058069076515
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "baseline",
+      "speed": "slow",
+      "plotted": 270.2,
+      "independent_mean": 270.2
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "baseline",
+      "speed": "balanced",
+      "plotted": 260.4,
+      "independent_mean": 260.4
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "baseline",
+      "speed": "fast",
+      "plotted": 248.8,
+      "independent_mean": 248.8
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "labour/ubi",
+      "speed": "slow",
+      "plotted": 144.6,
+      "independent_mean": 144.6
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "labour/ubi",
+      "speed": "balanced",
+      "plotted": 114.2,
+      "independent_mean": 114.2
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "labour/ubi",
+      "speed": "fast",
+      "plotted": 80.8,
+      "independent_mean": 80.8
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "wealth/ubi",
+      "speed": "slow",
+      "plotted": 69.6,
+      "independent_mean": 69.6
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "wealth/ubi",
+      "speed": "balanced",
+      "plotted": 58.4,
+      "independent_mean": 58.4
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "wealth/ubi",
+      "speed": "fast",
+      "plotted": 46.8,
+      "independent_mean": 46.8
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "uhi_scenario",
+      "speed": "slow",
+      "plotted": 49.8,
+      "independent_mean": 49.8
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "uhi_scenario",
+      "speed": "balanced",
+      "plotted": 45.0,
+      "independent_mean": 45.0
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "uhi_scenario",
+      "speed": "fast",
+      "plotted": 39.2,
+      "independent_mean": 39.2
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "disp_levy/means_tested",
+      "speed": "slow",
+      "plotted": 93.8,
+      "independent_mean": 93.8
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "disp_levy/means_tested",
+      "speed": "balanced",
+      "plotted": 79.4,
+      "independent_mean": 79.4
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "disp_levy/means_tested",
+      "speed": "fast",
+      "plotted": 67.4,
+      "independent_mean": 67.4
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "labour/means_tested",
+      "speed": "slow",
+      "plotted": 31.8,
+      "independent_mean": 31.8
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "labour/means_tested",
+      "speed": "balanced",
+      "plotted": 30.4,
+      "independent_mean": 30.4
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "labour/means_tested",
+      "speed": "fast",
+      "plotted": 27.8,
+      "independent_mean": 27.8
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "wealth/means_tested",
+      "speed": "slow",
+      "plotted": 27.0,
+      "independent_mean": 27.0
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "wealth/means_tested",
+      "speed": "balanced",
+      "plotted": 29.2,
+      "independent_mean": 29.2
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "cell": "wealth/means_tested",
+      "speed": "fast",
+      "plotted": 25.4,
+      "independent_mean": 25.4
+    }
+  ],
+  "scope": "Fresh plotted data and observation parity; original published PNG pixels differ in this rendering environment."
+}
