@@ -269,6 +269,20 @@ Four steps have undefined sample price dispersion because they contain fewer tha
 The retained archive contains the complete condition, frozen sources/protocol, manifest, completion-ledger snapshot and execution logs.
 Every archived file was read back and verified against its original bytes.
 The auditor rejects the incomplete grid in complete mode and rejects an altered policy even when the configuration hash is updated.
-The full workflow has validated the released-selector path only; the corrected-selector grid path remains awaiting its first completed condition.
+At this first-condition snapshot, the full workflow had validated only the released-selector path.
 Earlier corrected-pilot/source audits remain separate evidence and do not substitute for that pending grid validation.
 One of 1,200 conditions is complete at this snapshot. No selector comparison or paper-level result is inferred.
+
+## First completed movement-policy pair
+
+[The first pair audit](results/phase3-first-pair-2026-10-16) now validates both released and corrected-highest grid paths for explicit grouping, threshold one and seed zero.
+Both trajectories complete 1,000 steps; the combined audit checks 80,809 health records and reconstructs 2,000 price-step records.
+The corrected trajectory ends with 32 individual survivors, compared with 37 in the released trajectory.
+It has four steps without trades and 34 steps without defined sample price dispersion; missing measurements remain missing.
+This single pair establishes no ensemble-level selector effect.
+
+The corrected-condition archive retains raw outputs, frozen sources, original and modified methods, configuration, hashes, execution logs and the two-run ledger.
+The earlier first-condition archive supplies the released raw outputs. Every new archive member was verified against its original bytes.
+An unaltered relocated copy passes the full auditor. Adding an extra consumption call to the corrected method fails despite an updated file hash.
+Changing the saved original method also fails its pinned-source check despite an updated hash. Both rejected controls fail before producing audit output.
+The complete 1,200-condition grid and paper-level comparisons remain pending.
