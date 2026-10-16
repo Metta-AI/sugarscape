@@ -306,3 +306,23 @@ Six controls reject incorrect starting ordinals and incomplete full-ensemble cla
 ```bash
 python replications/pike_2019/audit_phase1.py /downloaded/segment prefix /new/audit --start-index 194 --recorded-root /original/execution/segment
 ```
+
+## Executed segment continuation
+
+`run_segment.py FROZEN ENGINE LIBRARY PHASE START STOP NEW_OUTPUT` executes a contiguous portion of the original phase grid.
+It verifies and copies the frozen source manifest, retains the original completion-ledger schema, and writes separate segment provenance.
+Each condition keeps its original seed, grouping threshold, policy, selector, and 1,000-step horizon.
+The 2 GiB free-space guard and stop-on-failure behavior remain active.
+
+[Three newly executed conditions](results/segment-execution-2026-10-16/validation.json) exercise all phase types:
+Phase I network/seed 64; Phase II network/threshold 1/seed 10; and Phase III corrected-highest explicit/threshold 5/seed 2.
+Independent audits validate 165,877 health records and 3,000 price steps.
+Completed totals are now 195, 62, and 30; the remaining ordinal ranges are `[195,300)`, `[62,600)`, and `[30,1200)`.
+The archive retains raw trajectories, ledgers, manifests, audits, and the package list; every archived member was read back against its original bytes.
+
+Initial launches found Mesa 0.8.8 in the shared environment, rather than the required 0.8.5.
+An isolated environment restored the declared versions; its missing SciPy dependency was then installed at version 1.16.3.
+All failed import attempts are preserved and completed zero simulations.
+The segment runner rejects an incorrect core runtime or empty ordinal range before creating output.
+Use Python 3.11.14, Mesa 0.8.5, NumPy 1.26.4, NetworkX 3.6.1, and SciPy 1.16.3 for this continuation; the full installed package list is retained.
+No shared environment was modified by this repair. Linux portability and the remaining 1,813 conditions still require execution and validation.
