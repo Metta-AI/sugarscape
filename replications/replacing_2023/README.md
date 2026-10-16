@@ -284,3 +284,13 @@ Their minimum populations remain143,51,135.
 A separate check of both saved baseline observers finds no overlapping coordinates across1,002 observations.
 Thus ordinary GUI execution and coordinate overlap do not explain the disease-figure discrepancy for these tested runs.
 This does not establish equivalence to the paper’s unknown historical revision or exclude other interactive interventions.
+
+## Conference presentation provenance
+
+The [conference-hosted slides](https://simutools.eai-conferences.org/2023/static/uploads/sites/782/2024/01/Replacing-Sugarscape-EAI-SimuTools-2023.pdf) provide another primary source.
+The [source audit](results/conference-slides-2026-10-16/audit.json) records the16-page PDF hash, metadata, and inspected claims.
+Slide11 repeats the disease image without snapshot times, complete settings, or an immutable source revision.
+Slide6’s200-step seed98765 demonstration is separate from the paper’s seed12345 validation experiments; its settings are not substituted into our replays.
+Slide3’s500-step introduction demo likewise does not establish the disease experiment’s stopping time.
+Slide13 repeats the5percent maximum trade/lending claim without the original measurement protocol.
+The presentation therefore corroborates targets but does not resolve historical fidelity.
