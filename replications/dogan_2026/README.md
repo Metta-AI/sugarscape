@@ -183,3 +183,12 @@ Every run requires a fresh output directory, records exit status and source/envi
 
 [Bundled report verification](results/fork-reports-2026-10-15) regenerates all nine reports identically to the separate original analysis.
 The complete bundled canonical simulation is being run separately; report agreement alone does not establish native execution equivalence.
+
+## Legacy starvation-script scope
+
+[The source audit](legacy-starvation-protocol-audit.json) compares the older starvation runner with canonical Part B at the pinned revision.
+Both use the same seven policies, three automation speeds, five seeds, 300-step horizon, seed42 calibration, and geometric-mean welfare rule.
+The completed canonical sweep therefore covers this cumulative-mortality experiment; the older script does not supply another independent set of conditions.
+Its stock-at-death statistic differs: it averages positive per-step means equally, whereas the canonical calculation weights those means by deaths.
+The old report is not asserted reproduced, and its stock statistic must not replace the current manuscript's measurement.
+This resolves duplicated simulation scope without counting repeated settings as additional evidence.
