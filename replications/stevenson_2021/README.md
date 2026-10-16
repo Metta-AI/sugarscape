@@ -99,3 +99,14 @@ The strict variant's age interval is 2,349.81–2,413.30, still above the publis
 This identifies sensitivity to one unresolved rule; it does not identify the author's implementation or establish replication.
 Both windows, all seed-level estimates, source patches, runtime hashes, and lossless trajectories are retained.
 The original simulator and its two 100-seed ensembles remain unchanged pending stronger source evidence.
+
+### Related author specification
+
+Stevenson's [2023 paper, version 2](https://arxiv.org/pdf/2302.03096v2), Algorithm 1, line 19,
+explicitly permits reproduction when surplus equals birth cost and age equals puberty.
+That supports the baseline inequality as an author-used convention, despite the strict variant's closer population result.
+However, the algorithm describes a later genetically programmed model, not the 2021 implementation.
+It cannot establish historical equivalence or resolve the remaining age discrepancy.
+The downloaded PDF has SHA-256 `0a3942d14aa51f0fcd3565fdc17e90b03d91f8268ec87cb14bade20ab097348e`.
+GitHub repository search for the author's name and code search for the paper's author email returned no matches.
+Those searches do not establish that author code is unavailable.
