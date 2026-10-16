@@ -232,3 +232,12 @@ An initial observer launcher incorrectly omitted the correction after lint remov
 Its selection audit rejected the run despite its configuration label; the failed trace and executed source are preserved.
 The replacement launcher asserts that the corrected function is installed before execution.
 The audit checks actual selections rather than trusting labels. Both released and corrected selector modes remain available.
+
+## Full movement-policy ensemble
+
+[The Phase III movement protocol](PHASE3_MOVEMENT_PROTOCOL.md) declares 1,200 trajectories: 100 paired seeds, both grouping approaches, thresholds 1/5/10, and released versus corrected-highest selectors.
+`run_phase3_movement.py ENGINE LIBRARY NEW_OUTPUT` freezes all six source/protocol files, runs one worker, and records commands, exits, completions, and hashes.
+The original shared-resource model and its corrective experiments are outside this ensemble.
+Each corrected run retains its original and modified high-focus function, making the selector distinction reviewable.
+The ensemble has launched; full-grid independent analysis and all aggregate comparisons remain pending.
+The first seed and known pilots remain included without outcome-based selection.
