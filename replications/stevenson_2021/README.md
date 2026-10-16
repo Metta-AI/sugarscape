@@ -391,3 +391,22 @@ This sensitivity prevents interpreting late chaotic differences alone as evidenc
 A fresh original-PDF extraction followed by replay produces byte-identical comparison and report files.
 Changing a retained vector ordinate fails the input-hash check before any result directory is created.
 This advances the discrete-curve reconstruction only; panel (a), evolutionary societies and paper-level completion remain outstanding.
+
+## Observed growth flows
+
+[Population-band analysis](results/growth-flows-2026-10-16/analysis.json) checks all 600,000 observations from the completed growth ensembles.
+Bands use population before each cycle and retain every visit, including returns after declines.
+An independent NumPy calculation exactly reproduced all 1,000 seed-band records.
+The retained simulator source is revision `61c885c`, whose hash matches the original run manifest.
+
+For low fertility, births per agent-cycle were 0.011772 at population 11–100 and 0.011779 at population 101–400.
+Both bands had zero deaths; the configured fertility draw probability is 1/85, or 0.011765.
+These descriptive observations differ from the whole-trajectory logistic fit's mean rate of 0.025721.
+They support distinguishing observed birth frequency from the fitted logistic parameter; they do not resolve the author's fitting protocol.
+Birth-cost runs produced 0.016011 births per agent-cycle at population 11–100, despite a fertility draw probability of 0.1.
+Resource eligibility constrains reproduction in that scenario.
+These are exploratory summaries of existing trajectories, without confidence intervals or a new replication verdict.
+
+```bash
+python replications/stevenson_2021/analyze_growth_flows.py /complete/growth-run /new/flow-analysis replications/stevenson_2021/results/growth-flows-2026-10-16/simulate.cpp
+```
