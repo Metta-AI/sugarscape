@@ -301,3 +301,16 @@ The baseline simulator remains unchanged. No new agreement or study completion i
 ```sh
 python replications/stevenson_2021/run_boundaries.py /new/boundary-diagnostic
 ```
+
+### Independent boundary-diagnostic validation
+
+`analyze_boundaries.py RUN prefix|complete NEW_OUTPUT` checks the declared grid and generated source differences against the pinned baseline.
+It verifies native binary and trajectory hashes, successful exits, finite metrics, timestamps, resource bounds, and sampled metabolism and birth costs.
+The native simulator enforces resource and population balance every cycle; sparse output cannot independently reconstruct every transition.
+Birth-cost age-only comparisons require both aggregate and observation files to match byte-for-byte.
+Ensemble estimates require all 80 runs and retain every extinction instead of dropping failed societies.
+
+[The first prefix audit](results/reproduction-boundaries-prefix-2026-10-16/analysis.json) validates three runs and preserves their lossless trajectories.
+It contains no ensemble estimate. Complete mode rejects the unfinished run before creating an output directory.
+A corrupted population value, with its ledger hash deliberately updated, also fails sampled accounting before output creation.
+The 80-run experiment remains in progress; its full outcome and paper-level fidelity are unestablished.
