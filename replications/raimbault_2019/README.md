@@ -159,3 +159,14 @@ Neither partitioning nor matching partial outputs completes the paper replicatio
 Together with the preserved contiguous prefix, unique audited coverage is 5,421 of 55,000 inputs: 10,842 exact native Gini measurements.
 These snapshots supersede the earlier shard snapshots for coverage counting; overlapping rows are counted once.
 The processes continue. Fixed-reference completion and generated-landscape conclusions remain pending.
+
+## Machine-crash recovery
+
+All five old shard processes were absent after the machine restart. Their complete saved prefixes passed independent audits with zero mismatches.
+The original contiguous prefix plus these preserved shard outputs cover 5,773 unique inputs.
+Fresh directories resume the remaining original intervals at indices 4,445; 14,077; 24,282; 34,589; and 44,874.
+No saved completed row is rerun or dropped. Seeds, adapter, model, horizon, and memory limits are unchanged.
+
+[Initial resumed-prefix audits](results/crash-recovery-2026-10-16/coverage.json) add 13 exact matches across all five workers.
+Total unique audited coverage is 5,786 inputs and 11,572 native Gini measurements, with zero mismatches.
+Immutable saved and resumed snapshots, their checksums, and launch commands are retained. The full reference and generated-landscape studies remain incomplete.
