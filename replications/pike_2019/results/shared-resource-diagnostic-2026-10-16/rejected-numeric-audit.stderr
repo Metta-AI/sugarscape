@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/audit_observation.py", line 32, in <module>
+    assert all(math.isfinite(float(r[k])) for k in ["Sugar_Level", "Spice_Level"])
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,74 @@
+{
+  "numeric_validation": "failed",
+  "byte_identical_native_files": {
+    "prices.json": "c9d6a0cf7495c4c79fcc199ac1b350ba8d64794077a750ecb9138299504d001b",
+    "population.csv": "429db18b347fbcbeeb13135d1397461488df64744043bfc66cff7762dee6cc40",
+    "health.csv": "14be7ac0ac006ba62b8f2adfa2048b663658599b39c81c3548cfacd3af27fc28",
+    "initial-agents.json": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413"
+  },
+  "health_records": 89027,
+  "nonfinite_health_records": 61041,
+  "first_nonfinite_records": [
+    {
+      "Agent": "24",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    },
+    {
+      "Agent": "26",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    },
+    {
+      "Agent": "30",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    },
+    {
+      "Agent": "38",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    },
+    {
+      "Agent": "58",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    },
+    {
+      "Agent": "63",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    },
+    {
+      "Agent": "64",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    },
+    {
+      "Agent": "67",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    },
+    {
+      "Agent": "78",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    },
+    {
+      "Agent": "81",
+      "Step": "76",
+      "Sugar_Level": "inf",
+      "Spice_Level": "inf"
+    }
+  ],
+  "scope": "Native output parity validates observer neutrality, not numerical correctness. Nonfinite holdings prevent accepting economic outcomes. No paper-level negative verdict."
+}

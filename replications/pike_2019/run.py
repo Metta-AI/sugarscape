@@ -1,13 +1,22 @@
-import argparse, hashlib, json, platform, subprocess, sys, time
+import argparse, hashlib, json, os, platform, random, subprocess, sys, time
 from pathlib import Path
 import mesa, numpy as np, networkx
 
 parser = argparse.ArgumentParser(
-    description="Run the unchanged historical Phase I model for 1,000 steps."
+    description="Run an unchanged historical Sugarscape configuration for 1,000 steps."
 )
 parser.add_argument("engine", type=Path)
 parser.add_argument("library", type=Path)
-parser.add_argument("variant", choices=["standard", "explicit", "network"])
+directories = {
+    "standard": "Initial/NetScape_Standard",
+    "explicit": "Initial/NetScape_Brute",
+    "network": "Initial/NetScape_Elegant",
+    "groups-network": "Policy-Network",
+    "policy-explicit": "Policy-Explicit",
+    "common-one": "Common Resource- one level",
+    "common-multi": "Common Resource- multi-level",
+}
+parser.add_argument("variant", choices=list(directories))
 parser.add_argument("numpy_seed", type=int)
 parser.add_argument("output", type=Path)
 args = parser.parse_args()
@@ -27,17 +36,9 @@ for checkout, revision in [
         text=True,
     ).strip()
 assert mesa.__version__ == "0.8.5"
+assert os.environ["PYTHONHASHSEED"] == "0"
 sys.path.insert(0, str(args.library.resolve()))
-root = (
-    args.engine.resolve()
-    / "Initial"
-    / (
-        "NetScape_"
-        + {"standard": "Standard", "explicit": "Brute", "network": "Elegant"}[
-            args.variant
-        ]
-    )
-)
+root = args.engine.resolve() / directories[args.variant]
 sys.path.insert(0, str(root))
 from NetScape import NetScape
 import recorder
@@ -59,6 +60,8 @@ out.mkdir(parents=True, exist_ok=False)
                 for p in root.glob("*.py")
             },
             "numpy_seed": args.numpy_seed,
+            "policy_random_seed": args.numpy_seed,
+            "pythonhashseed": os.environ["PYTHONHASHSEED"],
             "variant": args.variant,
             "runner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
             "mesa_seed": 42,
@@ -68,6 +71,7 @@ out.mkdir(parents=True, exist_ok=False)
     )
 )
 np.random.seed(args.numpy_seed)
+random.seed(args.numpy_seed)
 m = NetScape(seed=42)
 started = time.monotonic()
 observed = []
@@ -96,12 +100,23 @@ for i in range(1000):
     )
     ids = sorted(a.unique_id for a in registry.values())
     assert len(ids) == len(set(ids)) and 0 <= len(ids) <= 200
+    if args.variant == "standard":
+        groups, nested_edges = 0, 0
+    else:
+        groups = len(m.ml.groups)
+        nested_edges = sum(
+            child.type == "group"
+            for group in m.ml.groups.values()
+            for child in group.sub_agents.values()
+        )
     observed.append(
         {
             "step": i + 1,
             "individual_agents": len(ids),
             "native_reporter": recorder.survivors(m),
             "agent_ids": ids,
+            "retained_groups": groups,
+            "nested_group_edges": nested_edges,
         }
     )
     if i % 100 == 99:

@@ -69,3 +69,25 @@ Standard seed 1 has 25 trades during steps 901–1000, each in a different step;
 This is not zero dispersion or evidence of convergence. All raw inputs and derived measurements are retained.
 Controls reject both premature complete analysis and a negative transaction price even after its file hash is updated.
 These checks validate measurements; aggregate paper comparisons await the full ensemble.
+
+## Released group and shared-resource configurations
+
+The runner also accepts `groups-network`, `policy-explicit`, `common-one` and `common-multi`, mapped to the unchanged author directories in [the source audit](PHASE23_SOURCE_AUDIT.md).
+Set `PYTHONHASHSEED=0` before launching Python. The runner records that value and seeds module-level policy randomness with the supplied NumPy seed; Mesa remains seeded at 42.
+The already-running Phase I ensemble uses its frozen original runner and remains unchanged.
+New observations count retained groups and nested group edges separately from individual population.
+These measurements do not alter grouping, policies, thresholds or resource allocation.
+
+The controlled multi-level pilot, branch observer and expanded CLI have byte-identical prices, native reporters, initial agents and health records.
+However, numerical validation **fails**: 61,041 of 89,027 health records contain nonfinite holdings, beginning at step 76.
+The earlier one-level diagnostic also contains infinite holdings, beginning at step 78.
+Operational completion and finite recorded transaction prices do not make these economic outcomes valid.
+`diagnose_resources.py NATIVE OBSERVED NEW_OUTPUT` records observer parity and explicitly reports the numerical failure; it does not convert it into a passing audit.
+
+The controlled multi-level pilot makes 71,242 resource-aggregation calls, none with nested-group children.
+Independent post-step observation finds nested-group edges on 988 of 1,000 steps, with at most seven edges and eleven retained groups.
+Therefore the type-label mismatch is not exercised by the aggregation calls in this pilot and cannot explain its immediate overflow.
+Shared-holding aggregation is under investigation. Historical fidelity and all paper-level conclusions remain unresolved.
+A second byte-identical passive replay checks object identity in all 71,242 calls and finds no shared holdings objects among direct members.
+That rules out direct dictionary aliasing in these calls; it does not rule out reaggregation of distinct copies of a prior shared pool.
+No correction has been applied based on either unexercised hypothesis.
