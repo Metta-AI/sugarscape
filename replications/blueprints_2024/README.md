@@ -54,6 +54,9 @@ The baseline seed-zero pilot completed all 5,000 steps with 491 agents remaining
 The egoist and Bentham attempts exited unsuccessfully with code 120 and empty diagnostic logs.
 Disk space was constrained when the failures were observed; the underlying cause remains unconfirmed.
 Their partial artifacts remain in the evidence directory and do not count as results.
+A fresh [egoist invocation](results/egoist-pilot-2026-10-15) completed all 5,000 steps with 1,188 agents remaining.
+All 5,001 observations independently pass timestamp, seed, finite-value, capacity, and trajectory-hash checks.
+The Bentham rerun remains in progress.
 No homogeneous-society aggregate is established.
 
 ## Required replication targets
