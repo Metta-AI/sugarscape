@@ -141,5 +141,28 @@
     "native_rules_modified": false,
     "verdict": "Execution established; deterministic repeatability fails. No paper-level inference. Investigate initialization and scheduling before reference use.",
     "configuration": "Unchanged native defaults, synchronous movement, growback, metabolism, death, garbage collection; not a recovered paper protocol."
+  },
+  "initialization_diagnostic": {
+    "source_unchanged": true,
+    "threads": 1,
+    "pattern_bytes": [
+      0,
+      1
+    ],
+    "observed_spice_bounds": [
+      [
+        0,
+        0
+      ],
+      [
+        16843009,
+        16843009
+      ]
+    ],
+    "runs": 4,
+    "cycles_each": 1000,
+    "repeats_byte_identical": true,
+    "population_difference_between_patterns": 0,
+    "interpretation": "Confirms constructor leaves both members uninitialized. Equal-bound patterns did not alter population, so this experiment does not establish causation for sanitizer/native population divergence."
   }
 }

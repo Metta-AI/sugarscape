@@ -219,3 +219,9 @@ The parallel movement loop calls a shared unsynchronized random generator.
 Address/undefined-behavior sanitizers report no violation, but their single-thread trajectory differs from the ordinary build in 97 observations.
 Source inspection also finds uninitialized world spice-metabolism bounds read during agent construction.
 [Runtime evidence](source-audits/kehoe-runtime-diagnostics/diagnosis.json) preserves both issues; neither successful execution nor a quiet sanitizer establishes fidelity.
+
+A controlled storage-pattern experiment confirms the Kehoe constructor leaves both spice-metabolism bounds uninitialized.
+Zero-filled storage yields bounds 0/0; one-filled bytes yield 16,843,009/16,843,009.
+Four complete single-thread 1,000-cycle runs repeat within each pattern, and population trajectories match across these two equal-bound patterns.
+Thus missing initialization is confirmed, but this diagnostic does not establish it as the cause of the earlier population divergence.
+All diagnostic outputs are retained without modifying the author source or treating these artificial patterns as paper settings.
