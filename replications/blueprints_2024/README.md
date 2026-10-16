@@ -172,3 +172,20 @@ After the machine crash, process inspection found no surviving task workers. All
 The unchanged original schedules resumed from these exclusive-stop boundaries in fresh `-005` directories after storage recovered.
 [The launch record](results/storage-recovery-2026-10-16/crash-resume.json) identifies commands, hashes, retained evidence, and new outputs.
 Partial counts do not establish full homogeneous results; selfishness, heterogeneous studies, and historical-code alignment remain incomplete.
+
+## Post-crash continuation audit
+
+[The expanded coverage audit](results/post-crash-prefix-2026-10-16/coverage.json) adds 47 completed original configurations without seed substitution.
+It validates 470 unique simulations and 872,046 observations across the four homogeneous models.
+Two overlapping pilot records remain counted once. No partial trajectory contributes a completed seed.
+
+| Model | Audited original indices | Completed / required |
+| --- | --- | ---: |
+| Raw | [0,283) | 283 / 500 |
+| Altruistic | [0,88) | 88 / 500 |
+| Egoistic | [0,76) | 76 / 500 |
+| Utilitarian | [0,23) | 23 / 500 |
+
+Each added trajectory passes original configuration, seed order, file hash, finite metrics, and terminal-horizon/extinction checks.
+The snapshot retains interval audits, manifests and exact audited ledgers; provenance identifies the preserved full raw trajectories.
+All four continuation workers remain active. These partial outcome counts do not establish Table 3 or the full paper's conclusions.
