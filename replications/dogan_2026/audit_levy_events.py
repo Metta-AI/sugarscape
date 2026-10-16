@@ -8,10 +8,16 @@ import sys
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("engine", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--variant", choices=["original", "conserving"], default="original")
 args = parser.parse_args()
 engine = args.engine.resolve()
 source = engine / "sugarscape_ai_tax/model.py"
-assert hashlib.sha256(source.read_bytes()).hexdigest() == "a3e264cb1640691451b2936cd85a17f21bc8b17f5a2f36977dc8ee1db698ed24"
+variants = {
+    "original": ("a3e264cb1640691451b2936cd85a17f21bc8b17f5a2f36977dc8ee1db698ed24", 700),
+    "conserving": ("4477a94906cea33d84f05015aa87a2f9b7a68555612e16c9e140e22d3e50e6f2", 701),
+}
+expected_hash, after_line = variants[args.variant]
+assert hashlib.sha256(source.read_bytes()).hexdigest() == expected_hash
 sys.path.insert(0, str(engine))
 from sugarscape_ai_tax.model import SugarscapeAITax
 
@@ -31,7 +37,7 @@ def trace(frame, event, arg):
                         "owner_before": float(frame.f_locals["new_owner"].wealth),
                         "treasury_before": float(model.treasury),
                         "tax_before": float(model.step_tax_revenue)})
-    elif event == "line" and frame.f_lineno == 700:
+    elif event == "line" and frame.f_lineno == after_line:
         model = frame.f_locals["self"]
         record = dict(pending)
         record["owner_after"] = float(frame.f_locals["new_owner"].wealth)
@@ -62,12 +68,13 @@ assert len(events) == 60 and not pending
 assert [e["event"] for e in events] == list(range(1, 61))
 assert all(abs(e["owner_deduction"] - e["paper_transfer"]) < 1e-9 for e in events)
 assert all(abs(e["treasury_credit"] - e["reported_tax"]) < 1e-9 for e in events)
-report = {"parameters": parameters, "steps": 300, "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+report = {"variant": args.variant, "parameters": parameters, "steps": 300, "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
           "native_observed_byte_identical": True, "events": events,
           "total_owner_deductions": sum(e["owner_deduction"] for e in events),
           "total_treasury_credits": sum(e["treasury_credit"] for e in events),
           "capped_events": sum(e["nominal"] > e["owner_before"] for e in events),
           "nonconserving_events": sum(abs(e["owner_deduction"] - e["treasury_credit"]) > 1e-9 for e in events),
-          "interpretation": "Original-source execution diagnostic; native model unchanged. Does not quantify effects of correcting levy accounting."}
+          "interpretation": "Pinned variant execution diagnostic; observation does not change the selected model. Full policy effects require the paired ensemble."}
 (args.output / "events.json").write_text(json.dumps(report, indent=2, allow_nan=False) + "\n")
 print(json.dumps({key: value for key, value in report.items() if key != "events"}))
+assert report["nonconserving_events"] == (60 if args.variant == "original" else 0)

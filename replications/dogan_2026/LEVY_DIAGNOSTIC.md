@@ -42,3 +42,11 @@ Before examining corrected outcomes, declare the following comparison:
 Neither a conservation defect nor successful reproduction of deposited data
 alone proves or refutes the paper's central policy ranking conclusions.
 Quantifying the corrected variant is required before interpreting its effect.
+
+## Execute the declared correction
+
+`run_corrected_levy.py ENGINE NEW_OUTPUT` extracts only the required source and license files from the pinned Git revision.
+It applies the retained patch, verifies only the model file changed, records original and corrected hashes, and runs the unchanged native sweep.
+The original checkout and bundled fork source are not edited.
+The corrected event observer uses `audit_levy_events.py NEW_OUTPUT/source NEW_AUDIT --variant conserving`.
+Both observer variants require their exact source hash and verify native/observed trajectory identity.

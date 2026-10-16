@@ -240,3 +240,15 @@ No observed event reaches the owner-wealth cap in this run; the manuscript's rou
 The [declared correction study](LEVY_DIAGNOSTIC.md) retains a separate accounting patch and specifies a paired 75-run sweep.
 Original and bundled source remain unchanged for faithful replay.
 The defect establishes a code/specification discrepancy; its impact on policy conclusions remains unmeasured.
+
+## Corrected levy execution check
+
+[The isolated correction](results/conserving-levy-events-2026-10-15) passes all 60 fast-automation levy events at D=50, seed zero.
+Owner deductions total 762.5000000000001 and treasury credits total 762.5, equal within floating-point tolerance.
+No event violates the 1e-9 transfer-conservation check.
+All 300 per-step outputs are byte-identical with and without the observer.
+The source manifest verifies the accounting patch is the only changed source file.
+
+`run_corrected_levy.py ENGINE NEW_OUTPUT` launches the declared original 75-case sweep against this isolated source.
+Its complete paired comparison remains pending; the single checked run does not establish robustness of corrected policy outcomes.
+The original and forked unmodified experiments continue independently.
