@@ -70,3 +70,11 @@ No homogeneous-society aggregate is established.
 Numeric target extraction, original-seed discovery, and uncertainty criteria remain unfinished.
 No confirmatory acceptance threshold has been chosen from pilot outcomes.
 The initial runs are implementation checks, not a smaller replacement for the paper's experiments.
+
+## Full ensemble execution
+
+[The declared protocol](ENSEMBLE_PROTOCOL.md) uses 500 new shared seeds per model, preserving complete trajectories with lossless compression.
+`run_batch.py` invokes the same pinned historical runner and records each successful seed separately.
+[An end-to-end storage check](results/batch-storage-check-2026-10-15) ran reserved seed 501 to extinction at step 159.
+Its 160-observation compressed trajectory independently passed both hashes and terminal-state validation.
+Seed 501 is excluded from the ensemble. Published numeric targets and fork behavior still require validation.
