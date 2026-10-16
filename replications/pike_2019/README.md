@@ -56,3 +56,16 @@ Notebook source excerpts are distributed under the [author's MIT license](AUTHOR
 `run_phase1.py ENGINE LIBRARY NEW_OUTPUT` freezes the runner and protocol, executes one worker, and records exact commands, file hashes, exit codes and all terminal outcomes.
 The live run uses the validated runtime. A free-space guard stops below 2 GiB without deleting evidence.
 The ensemble remains incomplete. No inference is made from partial seed coverage, and no failed seed is silently replaced.
+
+### Phase I independent audit
+
+`audit_phase1.py RUN prefix|complete NEW_OUTPUT` checks the ordered seed/variant grid, pinned source hashes, runtime, every raw file, individual identities and native health records.
+It reconstructs all 1,000 per-step price measurements per run, preserving missing prices and dispersion rather than imputing zero.
+Full mode requires all 300 declared runs; prefix mode produces descriptive records only.
+
+[The first five audited runs](results/phase1-prefix-2026-10-16) cover 259,228 health records and 5,000 price-step records.
+Between 829 and 854 steps per run have fewer than two trades, making sample log-price dispersion undefined.
+Standard seed 1 has 25 trades during steps 901–1000, each in a different step; its late-window dispersion is wholly undefined.
+This is not zero dispersion or evidence of convergence. All raw inputs and derived measurements are retained.
+Controls reject both premature complete analysis and a negative transaction price even after its file hash is updated.
+These checks validate measurements; aggregate paper comparisons await the full ensemble.
