@@ -148,3 +148,15 @@ Other robustness studies remain outstanding, so this component does not complete
 `run_reports.py ENGINE COMPLETED_CANONICAL NEW_OUTPUT` regenerates the author's nine canonical reports in an isolated directory.
 It requires a successful full canonical exit, preserves the four fresh input CSVs, verifies the pinned source and environment, and compares every generated report byte-for-byte with its deposit.
 This author-analysis replay complements the independent numerical audits; it does not replace them.
+
+## Complete canonical replay and original reports
+
+[The full canonical sweep](results/full-canonical-2026-10-15/comparison.json) completes 205 experiments and both original calibration runs with exit status zero.
+All 206,010 cells match the deposited four CSVs, including missingness; all four files are byte-identical.
+The 75-run welfare-sensitivity component reconstructs all 120 Table B.1 values from fresh results.
+Its unrounded balanced-automation baseline/UHI reversal is therefore reproduced by the fresh simulation, not only found in deposited data.
+The small difference remains descriptive; all three mortality rankings are unchanged.
+
+The unmodified author analysis regenerates all nine canonical text reports byte-for-byte from these fresh inputs.
+Source manifests, full native logs, exit records, all four CSVs, independent welfare analysis, and original report outputs are retained.
+Composition, displacement-levy, per-seed calibration, remaining manuscript claims, and fork integration still prevent a completed paper verdict.
