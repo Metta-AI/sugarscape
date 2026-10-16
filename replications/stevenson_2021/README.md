@@ -346,3 +346,31 @@ Thus wealth equality explains a large part of the birth-cost age discrepancy and
 Neither published-rule variant resolves all age results in both scenarios.
 The author's percentage uncertainties have unspecified meaning and are not treated as acceptance margins or confidence intervals.
 The original baseline remains unchanged. These exploratory diagnostics do not complete or invalidate the paper replication.
+
+## Appendix B equation and Figure 6(b) diagnostic
+
+[The retained vector extraction and audit](results/figure6-recurrence-2026-10-16) recover all 304 exported vertices for the four discrete-model curves.
+`audit_figure6.py ORIGINAL_FIGURE_PDF NEW_OUTPUT` pins the original PDF, verifies axes and line styles, and preserves exported coordinates.
+Only observed vertices within labeled cycles 1–80 enter inference; omitted collinear points are not interpolated.
+Both delay candidates use identical observed transitions, requiring coordinates at cycles t−3, t and t+1.
+
+Equation 6 prints `N(t+1) = N(t) * [1+r-N(t−tau)/K]` and the surrounding text discusses delay three.
+Its positive constant solution is `N=r*K`; thus its parameter K is not itself carrying capacity unless r=1.
+To diagnose the plot, hold each legend rate fixed and fit one coefficient b in `N(t+1)=N(t)*[1+r-b*N(t−tau)]`.
+This is descriptive fitting, not a held-out prediction or a recovered author implementation.
+
+| Legend r | Observed transitions | Zero-delay inferred r/b | Zero-delay RMS error | Delay-three RMS error |
+| --- | ---: | ---: | ---: | ---: |
+| 0.47 | 31 | 832.997 | 0.043 | 36.909 |
+| 2 | 76 | 832.991 | 0.048 | 327.133 |
+| 2.7 | 76 | 832.998 | 0.090 | 1,086.563 |
+
+Errors are population counts. These curves are consistent with a zero-delay recurrence containing `r*N/K`, with inferred K near 833.
+The printed equation can express the same zero-delay curves only by assigning different K values: approximately 1,772.334, 416.496 and 308.518.
+The r=0.025 curve stays at tiny populations; coordinate rounding prevents useful identification of its density coefficient.
+Do not interpret its fitted K as an estimate of carrying capacity.
+
+This identifies an equation/parameter ambiguity requiring an explicit choice before reproducing the discrete regimes.
+It does not establish that the author intended delay three for panel (b), nor recover the agent-based curves in panel (a).
+Original agent dynamics and evolutionary cases remain unresolved; no model rule was changed to match these fits.
+An independent standard-library calculation reproduces all eight fitted cases within 1.8e-14; a wrong source PDF is rejected before output creation.
