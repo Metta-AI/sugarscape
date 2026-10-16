@@ -46,7 +46,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | kiran-2014 | Kiran, [Using FLAME Toolkit for Agent-Based Simulation: Case Study Sugarscape Model](https://arxiv.org/abs/1408.3441) (2014) | Three spatial initialization scenarios; separate behavioral results from hardware timings | candidate |
 | oremland-2014 | Oremland and Laubenbacher, [Optimization of Agent-Based Models](https://www.jasss.org/17/2/6.html) (2014) | Sugarscape taxation schedule, revenue, population, and reduced-model comparison | candidate |
 | raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 24/24 archived Table 4 statistics reproduced; fresh simulation provenance unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
-| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | author replay: 150/150 statistics on two inputs; 15 estimator table entries matched; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
+| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | author replay: 150/150 statistics on two inputs; 20 estimator table entries matched; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
 | stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | candidate |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | candidate |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | candidate |
@@ -67,7 +67,9 @@ The historical seeds remain unavailable, so this does not disprove the authors' 
 
 Carrella: two complete historical NetLogo replays each match all 150 archived statistics.
 An initial 24-statistic mismatch was resolved as connector observation timing; it is not negative paper evidence.
-Ten linear-regression and five rejection-estimation Table 8 values now match published precision.
+Ten linear-regression and ten rejection-estimation Table 8 values now match published precision.
+A validated batch runner is executing every one of the 5,000 archived parameter/seed inputs in four batches.
+Its first ten complete trajectories match the separate-call reference path in all 35,070 numeric values.
 The first quantile-forest run completed with differences below 0.002; stochastic comparison remains unresolved.
 Independent fork behavior, remaining estimators, and expanded simulation ensembles remain unfinished.
 
