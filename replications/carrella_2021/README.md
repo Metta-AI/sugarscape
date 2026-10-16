@@ -261,3 +261,12 @@ It preserves native caret tuning, ranger fitting, jackknife standard errors, and
 The launch uses estimator seed zero, cross-validation seed zero, and the declared environment.
 Source/data/runner hashes are retained in the external run's `launch-provenance.json`; fold and final output audits remain pending.
 The smaller 1,250-input run and full neural-network run are still active.
+
+## Small regression-forest results recovered
+
+[All five 1,250-input folds](results/rfboot-1250-2026-10-16) independently validate 6,250 held-out parameter predictions, interval coverage, and interval widths.
+Mutation-probability performance rounds to the published 0.503; the other four values differ at printed precision.
+Coverage spans 0.9512–0.9640 across parameters. No observations or folds are dropped.
+The original process handle is unavailable, so its exit code is not asserted; complete numerical outputs and the final log are retained.
+The log ends with a deprecation warning and contains the final metrics.
+Stochastic random-stream and runtime alignment remain unresolved; this does not establish a negative replication.
