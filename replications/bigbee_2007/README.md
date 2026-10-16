@@ -1,7 +1,7 @@
 # Bigbee, Cioffi-Revilla, and Luke (2007): Replication of Sugarscape Using MASON
 
 Paper: [published chapter](https://doi.org/10.1007/978-4-431-71307-4_20).
-The former author-hosted PDF URL now redirects to a department homepage; the local download was HTML, not a paper.
+The [published eight-page PDF](https://people.cs.gmu.edu/~sean/papers/Replication07.pdf) was recovered from the author’s current faculty domain.
 Status: author-source discovery, compilation, and deterministic pilot. **Not a completed replication.**
 
 ## Author source and historical limits
@@ -14,7 +14,7 @@ The source and included dependencies retain their original license notices; the 
 This is a **2011 release**, not an authenticated 2007 experiment snapshot.
 The earliest mirrored commit already updates version 1.1.2 for MASON 16.
 The README explicitly warns that bug fixes after the thesis can change outcomes.
-The paper discusses MASON 8. Historical source recovery or a documented version comparison is necessary before interpreting disagreements.
+The published chapter discusses MASON 10; the earlier draft discusses MASON 8. Historical source recovery or a documented version comparison is necessary before interpreting disagreements.
 
 ## Reproducible execution
 
@@ -109,3 +109,26 @@ Across 17,034 observed states, reported population, living grid occupants, regis
 These checks establish the corrected population invariant under the tested scenarios, seed, and horizon.
 They do not establish agreement with the 2007 paper or recover its historical implementation.
 Original failing measurements remain alongside the corrected comparison.
+
+## Recovered historical release and published chapter
+
+[Source comparison](results/historical-source-2026-10-16/comparison.json) verifies the archive’s SHA-1 against the Google Code download catalog and records SHA-256 provenance.
+The archive contains MASON 12 and Sugarscape 1.1.2; its README is dated November 25, 2007.
+It still warns that post-thesis fixes can change outcomes, so it is not an authenticated experiment snapshot.
+
+Agent.java and Reproduction.java match the 2011 mirror after line-ending normalization.
+The population defects therefore occur in this older release as well; their presence in the published experiment remains unverified.
+The retained diff records changes to scheduling API calls, resource loading, statistics output, and presentation code.
+No original source was modified.
+
+Visual inspection of published Table 2 (printed page 190, PDF page 8) confirms all seventeen outcome identifiers in the draft inventory.
+The published classifications are four Exact, ten General, and three Partial.
+These are the authors’ classifications, not results of this study.
+The published chapter specifies MASON 10, correcting the prior README’s reliance on the draft’s MASON 8 description.
+Historical scheduling differences and missing quantitative criteria still prevent a completed-study verdict.
+
+Of seventeen outcome configurations, fourteen match after line-ending normalization.
+One difference is a comment; `anim3-6` removes an explicit culture-output setting.
+Crucially, `fig3-4` changes `reproduction_min` from 0 to 25.
+The 2011 high-amplitude population pilot therefore does not use the recovered 2007 release’s fertility threshold.
+Both configuration versions and their hashes remain preserved in the comparison evidence.
