@@ -1,34 +1,37 @@
-# Homogeneous-society ensemble
+# Original-input homogeneous-society ensemble
 
-Recorded before running seeds 1–500. Seed-zero pilots informed operational checks only.
+This protocol supersedes the provisional seed-1-through-500 experiment after original author configurations were recovered.
+That experiment used incorrect plain decision-model names and has been stopped; its outputs remain intact.
+The original protocol and runner remain in Git history through commit `96c7221`.
+This correction is based on archived inputs, not selecting parameters for closer numerical agreement.
 
-Run every integer seed from 1 through 500 with each of `rawSugarscape`, `egoist`, `altruist`, and `bentham`.
-These are new shared seeds, not the unavailable historical seed list.
-Use the pinned release and complete configuration enforced by `run.py`, with 5,000 steps or extinction.
-Do not change settings based on intermediate outcomes, omit extinct societies, or replace failed seeds.
-Retain failed attempts and resume only after diagnosing the failure, in a new output directory.
-A batch completion is not an ensemble completion: analysis requires exactly 500 unique successful seeds for each model.
-Seed 501 is reserved for end-to-end storage validation and is excluded from the ensemble.
-
-Retain every timestep and metric. The batch writer stores trajectories as lossless gzip files,
-verifies decompression byte-for-byte, and then removes its own redundant uncompressed copy.
-It records both uncompressed and compressed SHA-256 hashes. Existing pilot files remain unchanged.
-The writer stops before a new simulation if less than 1 GiB remains free.
-No simulation horizon or observation frequency is shortened to reduce storage or runtime.
-
-For Table 3, categorize terminal population as zero, 1–250, or greater than 250.
-Report all three counts and proportions with 95% Wilson intervals for each model.
-For time trajectories, include every seed; an extinct population remains zero through step 5,000.
-Do not impute undefined per-agent metrics after extinction; report their denominators explicitly.
-Comparisons between models must preserve seed pairing.
-
-The exact published numeric targets and historical code revision remain unresolved.
-Therefore the initial analysis is descriptive, with no equivalence or negative-replication verdict.
-Recover those targets and audit release-versus-fork behavior before declaring any paper-level result.
-This ensemble covers Table 3 and homogeneous societies; selfishness and mixed-society experiments remain separate required work.
-
-Example complete model batch:
+Replay all 2,000 configurations from the hash-pinned homogeneous archive: 500 shared original seeds for each of four models.
+Use the schema-matching v2024.1 release pinned by `run.py`. Change only the output logfile path.
+Retain all 5,000 timesteps or extinction; do not discard seeds or replace failed experiments.
+Run an operational pilot and independent-process repeat before launching full batches.
+The pilot uses an original seed and must be identified explicitly if its completed output is included in the ensemble.
 
 ```sh
-python replications/blueprints_2024/run_batch.py /path/to/reference altruist 1 500 /absolute/new/evidence
+python replications/blueprints_2024/run_batch.py /path/to/v2024.1 \
+  replications/blueprints_2024/results/archive-audit-2026-10-15/blueprints-homogeneous.zip \
+  altruisticHalfLookaheadBinary /new/ensemble
 ```
+
+Repeat for `rawSugarscape`, `egoisticHalfLookaheadBinary`, and `benthamHalfLookaheadBinary`.
+`--start` and `--stop` select half-open indices in the numerically sorted original seed list.
+These support audited resumptions; completion requires exactly 500 unique original seeds per model.
+An output directory or manifest alone does not establish successful execution.
+
+Retain every timestep and metric as lossless gzip, with original and compressed SHA-256 hashes.
+Verify decompression byte-for-byte before removing this run's redundant uncompressed copy.
+Preserve existing pilots and interrupted evidence. Stop before starting a new run if less than 1 GiB remains free.
+
+Compare the Table 3 counts directly against `published_targets.json` using terminal populations zero, 1–250, and above 250.
+Also report 95% Wilson intervals without treating overlapping intervals as proof of reproduction.
+For time trajectories, an extinct population remains zero through timestep 5,000.
+Do not impute undefined per-agent metrics after extinction; report their denominators explicitly.
+Preserve seed pairing in between-model comparisons.
+
+Exact-input agreement is the initial criterion. A mismatch triggers source-version, rule, runtime, and measurement investigation.
+The exact author code revision is still unverified; neither matching schema nor matching a pilot establishes paper-level fidelity.
+Selfishness, mixed societies, horizon analysis, and fork equivalence remain separate required comparisons.

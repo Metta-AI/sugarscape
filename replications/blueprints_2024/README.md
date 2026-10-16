@@ -1,81 +1,84 @@
-# Kremer-Herman, Gupta, and Severson (2024): Blueprints for Machine Ethics
+# Blueprints for Machine Ethics (2024)
 
-Paper: [IEEE Access, DOI 10.1109/ACCESS.2024.3519139](https://doi.org/10.1109/ACCESS.2024.3519139).
-[Public paper text](https://www.researchgate.net/publication/387167331_Blueprints_for_Machine_Ethics_A_Digital_Terrarium_for_Socio-Ethical_Artificial_Agent_Decisionmaking).
-Status: historical source/configuration audit and full-horizon pilot runs. **Not a completed replication.**
+**Incomplete replication. Original configurations recovered; historical release equivalence remains under investigation.**
 
-## Historical implementation
+[Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)
+(DOI 10.1109/ACCESS.2024.3519139). [Numeric targets](published_targets.json) were visually checked against PDF pages 12 and 15.
 
-The paper's configuration footnote points to [digital-terraria-lab/sugarscape](https://github.com/digital-terraria-lab/sugarscape), the stable release repository.
-Our fork's upstream, `nkremerh/sugarscape`, is the development repository; their current revisions are not historical experiment pins.
-The last stable release before submission was `Glucose/v2024.4`, September 26, 2024:
-`651925a5f7634fa3dd0f66c0621e7118e89807f8` (MIT license).
-The paper was received October 10 and accepted December 12, 2024.
-It does not identify an exact commit or provide the original 500 seeds in the inspected source.
-Therefore this release is a historically supported candidate, not a verified original experiment revision.
+## Original experiment inputs
 
-The release's configuration matches the paper's 250 starting agents, 50 initial diseases, three tribes,
-and disabled seasons and pollution. Trade, lending, inheritance, reproduction, combat, and cultural transmission are enabled.
-The paper's 5,000-step horizon overrides the configuration file's 1,000-step default.
-The four homogeneous decision models map to `rawSugarscape`, `egoist`, `altruist`, and `bentham`.
-The latter three use selfishness factors 1, 0, and 0.5 in the released implementation.
+The authors' separate [datasets repository](https://github.com/digital-terraria-lab/datasets)
+contains `blueprints-homogeneous.zip`, introduced June 12, 2024 in commit `9e78c44ca9cffefbb3593a0d490f1631da3239f2`.
+The [retained archive and audit](results/archive-audit-2026-10-15) pin repository revision
+`0b50404c2529aa0ab08ce14c7f7abfe30fab837e`, preserve its Unlicense, and validate:
 
-## Executable pilot
+- Exactly 2,000 configurations: four decision models and 500 identical shared seeds.
+- Every paired input differs only in decision-model name and output filename.
+- Every configuration key and nonoperational default matches the May 28, 2024 release `Glucose/v2024.1`,
+  commit `b9ca671ab7591c7b3606f2d76c33eda344d626d1`.
 
-`run.py` verifies the pinned checkout and its tracked files, saves the complete effective configuration,
-hashes the source, and invokes the unmodified simulation through its command-line interface.
-Every pilot runs to 5,000 steps or extinction. It retains stdout, stderr, and the complete trajectory.
-`result.json` is written only after successful execution and a verified terminal state.
-An output directory or `manifest.json` alone does not establish completion.
+The archive contains inputs, not result trajectories. The release predates those inputs and matches their complete schema,
+but the authors have not explicitly identified their exact experimental code revision.
+This is stronger provenance than choosing the last pre-submission release; it is not proof of code identity.
 
-Use Python 3.11.14 and Pydantic 2.12.3. Keep the original MIT license in the reference checkout.
+The original decision models are `rawSugarscape`, `altruisticHalfLookaheadBinary`,
+`egoisticHalfLookaheadBinary`, and `benthamHalfLookaheadBinary`.
+The released model dispatch selects the half-lookahead behavior from these names.
+The 500 original seeds are retained in the audit, with no substitutions.
+
+## Correction to provisional runs
+
+Our earlier runner used v2024.4 and the plain `altruist`, `egoist`, and `bentham` names.
+Those names do not select the archived decision semantics. The later release also changes the configuration schema and model code.
+All four provisional seed-1-through-500 batches were intentionally interrupted after this discovery, each exiting 130.
+Their complete and partial outputs remain in the external evidence directory; no run is counted as paper replication.
+The seed-zero pilots and storage check retained below remain operational evidence for the old setup only.
+The old runner and protocol are preserved in Git history through commit `96c7221`; current commands use original archived inputs.
+
+## Reproduce an archived input
+
+Requires Python 3.11 and Pydantic 2.12.3. Use the pinned release in a separate checkout.
+`run.py` verifies archive and source hashes, checks the complete configuration schema, and changes only the logfile path.
+The original config bytes and effective configuration are both retained.
+The complete horizon is 5,000 steps or extinction; the runner checks every timestamp, seed, finite metric, and terminal state.
 
 ```sh
-git clone --filter=blob:none https://github.com/digital-terraria-lab/sugarscape.git /path/to/reference
-git -C /path/to/reference switch --detach 651925a5f7634fa3dd0f66c0621e7118e89807f8
-python replications/blueprints_2024/run.py /path/to/reference \
-  --seed 0 --model rawSugarscape --output /absolute/new/evidence
+python replications/blueprints_2024/run.py /path/to/v2024.1 \
+  replications/blueprints_2024/results/archive-audit-2026-10-15/blueprints-homogeneous.zip \
+  altruisticHalfLookaheadBinary158402133555746433.config /new/pilot
 ```
 
-Repeat for `egoist`, `altruist`, and `bentham` using separate output directories.
-The pilot uses one fixed seed for operational validation; it cannot establish any published aggregate result.
-Python hash randomization is fixed to zero and bytecode writing is disabled for new subprocesses.
-An initial parallel-launch audit rejected an otherwise unchanged checkout because another run created `__pycache__`.
-The audit now checks tracked-file changes; generated bytecode is not treated as a modified scientific model.
+`run_batch.py` selects the original seed list in numerical order and retains complete lossless trajectories.
+It verifies decompression byte-for-byte before removing only its own newly generated redundant raw copy.
+The full protocol is in [ENSEMBLE_PROTOCOL.md](ENSEMBLE_PROTOCOL.md).
 
-## Pilot evidence
+## Required comparisons
 
-The altruist seed-zero pilot reached extinction at timestep 131.
-Two separate processes produced byte-identical 132-observation trajectories; all recorded values are finite.
-[Raw evidence and provenance](results/altruist-pilot-2026-10-15) include the configuration, source hashes, and completion result.
-This validates execution and deterministic replay for this input, not a published survival percentage.
-The baseline seed-zero pilot completed all 5,000 steps with 491 agents remaining.
-[Its raw evidence](results/baseline-pilot-2026-10-15) contains 5,001 consecutive observations, independently checked for finite metrics and consistent seed.
-The egoist and Bentham attempts exited unsuccessfully with code 120 and empty diagnostic logs.
-Disk space was constrained when the failures were observed; the underlying cause remains unconfirmed.
-Their partial artifacts remain in the evidence directory and do not count as results.
-A fresh [egoist invocation](results/egoist-pilot-2026-10-15) completed all 5,000 steps with 1,188 agents remaining.
-All 5,001 observations independently pass timestamp, seed, finite-value, capacity, and trajectory-hash checks.
-The fresh [Bentham invocation](results/bentham-pilot-2026-10-15) also completed all 5,000 steps with 1,393 agents remaining.
-Its 5,001 observations independently pass the same checks. All four seed-zero pilots now have validated terminal results.
-No homogeneous-society aggregate is established.
+Table 3 reports extinct / worse-or-equal / better counts: Raw 348/5/147; Altruist 344/10/146;
+Egoist 331/5/164; Utilitarian 0/0/500. Classification uses terminal population relative to the initial 250.
+Compare original-input counts directly, preserving all seeds and investigating every mismatch.
 
-## Required replication targets
+Table 4's printed altruist row is internally inconsistent: 68.8% + 5.0% + 29.2% = 103%.
+Its 5.0% worse category also conflicts with Table 3's 10/500 = 2.0%.
+The target file preserves the printed values. This arithmetic inconsistency does not establish a simulation result.
 
-1. Table 3: survival/outcome categories over 500 shared seeds and four homogeneous societies after 5,000 steps.
-2. Section VII-A: population, wealth, mortality, and other reported homogeneous-society trajectories.
-3. Section VII-B: validate the selfishness weighting used by the subsequent experiments.
-4. Sections VII-C–D: selfishness and mixed-society experiments. The selfishness sweep alone uses 101 factors and 500 shared seeds.
-5. Audit the fork's behavior against the historical implementation before attributing any disagreement to the paper.
+The complete study also requires homogeneous time trajectories, the 101-factor selfishness sweep,
+heterogeneous societies, computational-horizon checks, and a historical-versus-fork behavior audit.
+The authors also publish `blueprints-selfishness.zip`, `blueprints-heterogeneous.zip`, and `blueprints-runtimes.zip`.
+These must be inspected before constructing their experiment protocols.
+No unexplained discrepancy or operational pilot counts as a completed replication.
 
-Numeric target extraction, original-seed discovery, and uncertainty criteria remain unfinished.
-No confirmatory acceptance threshold has been chosen from pilot outcomes.
-The initial runs are implementation checks, not a smaller replacement for the paper's experiments.
+## Current execution evidence
 
-## Full ensemble execution
+Two original-input pilots are running as independent processes, using the same first archived seed.
+Their first 908 completed observations pass timestamp, population, and scalar/array finite-value checks.
+This is partial execution evidence; neither full-run completion nor deterministic replay has been established yet.
+Two earlier original-input attempts were intentionally stopped after discovering the old release's three array-valued log fields.
+The validator now checks those arrays and all scalar metrics explicitly; the model was not modified.
+All interrupted outputs remain preserved. Full batches await the complete pilot and repeat checks.
 
-[The declared protocol](ENSEMBLE_PROTOCOL.md) uses 500 new shared seeds per model, preserving complete trajectories with lossless compression.
-`run_batch.py` invokes the same pinned historical runner and records each successful seed separately.
-[An end-to-end storage check](results/batch-storage-check-2026-10-15) ran reserved seed 501 to extinction at step 159.
-Its 160-observation compressed trajectory independently passed both hashes and terminal-state validation.
-Seed 501 is excluded from the ensemble. Published numeric targets and fork behavior still require validation.
+The supplementary archive audit confirms 50,500 selfishness configurations, 49,500 mixed-society configurations,
+and 1,200 runtime configurations covering 100 seeds at 500, 5,000, and 50,000 timesteps.
+The selfishness archive supplies the older singular `agentDecisionModel` field alongside a default plural field.
+The original release explicitly normalizes the singular field into the plural field before simulation (`sugarscape.py:958–961`).
+Ignoring that native normalization would incorrectly classify all selfishness configurations as raw agents.

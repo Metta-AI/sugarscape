@@ -1,0 +1,187 @@
+{
+  "source": "https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf",
+  "pdf_sha256": "56f25d6c9c3947954e29689a4fbd4c2ff0c09abd6515e631311939b747d4d51d",
+  "table3": {
+    "printed_page": 195600,
+    "pdf_page_one_based": 12,
+    "columns": [
+      "extinct",
+      "worse_or_equal",
+      "better"
+    ],
+    "counts": {
+      "rawSugarscape": [
+        348,
+        5,
+        147
+      ],
+      "altruisticHalfLookaheadBinary": [
+        344,
+        10,
+        146
+      ],
+      "egoisticHalfLookaheadBinary": [
+        331,
+        5,
+        164
+      ],
+      "benthamHalfLookaheadBinary": [
+        0,
+        0,
+        500
+      ]
+    }
+  },
+  "table4": {
+    "printed_page": 195603,
+    "pdf_page_one_based": 15,
+    "columns": [
+      "selfishness",
+      "extinct_percent",
+      "worse_percent",
+      "better_percent"
+    ],
+    "rows": [
+      [
+        "0.00",
+        68.8,
+        5.0,
+        29.2
+      ],
+      [
+        "0.01-0.05",
+        1.5,
+        0.2,
+        98.3
+      ],
+      [
+        "0.06-0.10",
+        1.8,
+        0.2,
+        98.0
+      ],
+      [
+        "0.11-0.15",
+        1.6,
+        0.1,
+        98.3
+      ],
+      [
+        "0.16-0.20",
+        1.4,
+        0,
+        98.6
+      ],
+      [
+        "0.21-0.25",
+        1.3,
+        0.1,
+        98.6
+      ],
+      [
+        "0.26-0.30",
+        1.5,
+        0,
+        98.5
+      ],
+      [
+        "0.31-0.35",
+        1.3,
+        0,
+        98.7
+      ],
+      [
+        "0.36-0.40",
+        1.4,
+        0.1,
+        98.5
+      ],
+      [
+        "0.41-0.45",
+        1.4,
+        0.1,
+        98.5
+      ],
+      [
+        "0.46-0.49",
+        1.4,
+        0,
+        98.6
+      ],
+      [
+        "0.50",
+        0,
+        0,
+        100
+      ],
+      [
+        "0.51-0.55",
+        1.2,
+        0,
+        98.8
+      ],
+      [
+        "0.56-0.60",
+        1.1,
+        0,
+        98.9
+      ],
+      [
+        "0.61-0.65",
+        1.0,
+        0.1,
+        98.9
+      ],
+      [
+        "0.66-0.70",
+        0.9,
+        0.1,
+        99.0
+      ],
+      [
+        "0.71-0.75",
+        1.1,
+        0.1,
+        98.8
+      ],
+      [
+        "0.76-0.80",
+        1.6,
+        0.1,
+        98.7
+      ],
+      [
+        "0.81-0.85",
+        4.6,
+        0.2,
+        95.2
+      ],
+      [
+        "0.86-0.90",
+        19.5,
+        0.9,
+        79.6
+      ],
+      [
+        "0.91-0.95",
+        56.2,
+        1.4,
+        42.4
+      ],
+      [
+        "0.96-0.99",
+        67.2,
+        1.0,
+        31.8
+      ],
+      [
+        "1.00",
+        66.2,
+        1.0,
+        32.8
+      ]
+    ],
+    "printed_inconsistency": "The0.00row sums103.0percent; its5.0percent worse conflictswithTable3 10/500=2.0percent. Preservedprintedvalues; notsilentlycorrected."
+  },
+  "extraction": "Visually checked rendered PDF pages12and15; table text is an embedded image."
+}
