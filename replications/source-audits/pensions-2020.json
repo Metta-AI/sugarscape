@@ -84,5 +84,7 @@
     "Preserve historical standard errors and report corrected replicate-based errors separately.",
     "Declare new seeds: archived CSV contains run numbers but no random seeds.",
     "Execute complete declared experiments and validate fork behavior separately from author-code execution."
-  ]
+  ],
+  "reproduce_archive_audit": "python3 replications/source-audits/audit_pensions_workbook.py DIRECTORY_WITH_DEPOSITED_CSV_AND_XLSX NEW_AUDIT_JSON",
+  "archive_audit_validation": "pensions-workbook-validation.json"
 }
