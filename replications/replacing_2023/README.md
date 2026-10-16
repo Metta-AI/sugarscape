@@ -84,3 +84,9 @@ All raw trajectories, run manifests, logs, and outcomes are retained; no seed is
 
 The full twenty-seed pre-conference batch and infection-observation replays of those two seeds are running.
 The paper's exact assessment times and source revision remain unverified; this result is not yet a validated negative replication.
+
+[Infection observation replays](results/disease-extinction-seed-observations-2026-10-15/eradication-audit.json) for seeds 12881 and 22744 completed successfully.
+All 1,002 native trajectory records match their original runs byte for byte.
+Infections reach zero at timesteps 30 and 42 respectively and never return through timestep 500.
+Both populations recover. Thus these released runs do not contain a continuing epidemic at the stopping horizon.
+Exact historical-rule/configuration alignment remains unresolved; this evidence alone does not establish a paper-level negative replication.
