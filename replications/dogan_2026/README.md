@@ -225,3 +225,18 @@ Fresh data give a maximum of 0.1320268268 for labor/means-tested Gini, correctly
 All static coefficients remain below 0.15. This is a narrow prose discrepancy, not a failed numerical table replication.
 A changed-Gini copy of the complete static input is rejected; its mismatch report is retained alongside the successful audit.
 The canonical originals remain unchanged.
+
+## Confirmed native levy accounting defect
+
+[A traced native run and independent repeat](results/levy-events-2026-10-15) use fast automation, D=50, seed zero, and 300 steps.
+All per-step outputs are byte-identical with and without the observer.
+Final inequality, cumulative mortality, tax revenue, and redistribution match the corresponding fresh canonical run.
+
+All 60 observed levy events violate transfer conservation: owners lose 762.5 units, but the treasury receives 180.0583142.
+The original code deducts `W * min(1,L/W)` but credits `L * min(1,L/W)`, where W is incoming owner wealth and L the nominal levy.
+Equation 4 specifies the same capped amount, `min(L,W)`, deducted and credited.
+No observed event reaches the owner-wealth cap in this run; the manuscript's roughly-quarter claim is not supported by this diagnostic.
+
+The [declared correction study](LEVY_DIAGNOSTIC.md) retains a separate accounting patch and specifies a paired 75-run sweep.
+Original and bundled source remain unchanged for faithful replay.
+The defect establishes a code/specification discrepancy; its impact on policy conclusions remains unmeasured.
