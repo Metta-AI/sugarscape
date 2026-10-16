@@ -12,11 +12,15 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("archive", type=Path)
 parser.add_argument("batch", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--allow-prefix", action="store_true", help="Audit retained completed seeds without claiming the declared interval finished")
 args = parser.parse_args()
 manifest = json.loads((args.batch / "manifest.json").read_text())
 assert hashlib.sha256(args.archive.read_bytes()).hexdigest() == manifest["archive_sha256"]
 records = [json.loads(line) for line in (args.batch / "completed.jsonl").read_text().splitlines()]
-assert [r["seed"] for r in records] == manifest["seeds"], "Incomplete seed interval"
+assert records, "No completed seeds"
+expected = manifest["seeds"][:len(records)] if args.allow_prefix else manifest["seeds"]
+assert [r["seed"] for r in records] == expected, "Missing, reordered, or unexpected seeds"
+assert len(records) <= len(manifest["seeds"])
 with zipfile.ZipFile(args.archive) as archive:
     original = {name: archive.read(name) for name in archive.namelist()}
 configs = [json.loads(data) for data in original.values()]
@@ -65,10 +69,11 @@ for record in records:
     observations += len(rows)
     results.append({"seed": seed, "outcome": outcome, "final_population": final["population"],
                     "trajectory_sha256": result["trajectory_sha256"], "observations": len(rows)})
-report = {"model": manifest["model"], "start": manifest["start"], "stop": manifest["stop"],
+report = {"model": manifest["model"], "start": manifest["start"], "stop": manifest["start"] + len(records),
+          "declared_stop": manifest["stop"], "complete_declared_interval": len(records) == len(manifest["seeds"]),
           "runs": len(results), "observations": observations, "counts": dict(counts), "results": results,
           "classification_source": "Pinned author plots/plot.py lines 40–43 and 103: zero dead; surviving below initial worse; equality included in better.",
-          "scope": "Only this complete seed interval; not a full paper replication unless all required experiments are separately completed."}
+          "scope": "Only the audited contiguous seed interval; an incomplete declared interval is explicitly marked. Not a full paper replication."}
 args.output.mkdir(parents=True, exist_ok=False)
 (args.output / "audit.json").write_text(json.dumps(report, indent=2) + "\n")
 print(json.dumps(report))

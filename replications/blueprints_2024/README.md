@@ -99,3 +99,15 @@ All four original 500-seed homogeneous ensembles have now started using the corr
 Each model runs the complete sorted original seed schedule, including a fresh first seed; pilot evidence remains separate.
 The batches retain every completed trajectory and check available storage before each next simulation.
 No full-ensemble outcome is claimed until all required intervals pass the independent audit.
+
+## Utilitarian batch recovery
+
+The first full utilitarian batch stopped at the disk-space guard after four completed original seeds; no fifth run had begun.
+[Retained recovery evidence](results/bentham-prefix-recovery-2026-10-15) preserves the failure log, original manifests, native trajectories, and independent audit.
+All 20,004 observations pass configuration, trajectory, and outcome checks.
+The audit explicitly marks the declared 500-seed interval incomplete; these four successes cannot establish the paper's aggregate result.
+
+`audit_batch.py ARCHIVE BATCH NEW_OUTPUT --allow-prefix` validates a contiguous completed prefix without changing its original manifest.
+The default still requires the entire declared interval.
+The resumed batch uses the unchanged runner with `--start 4 --stop 500` in a fresh directory, preserving the original remaining 496 seeds.
+The first four and resumed interval must be reconciled together before any full-schedule conclusion.
