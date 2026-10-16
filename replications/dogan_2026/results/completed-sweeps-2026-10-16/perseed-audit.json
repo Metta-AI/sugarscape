@@ -1,0 +1,1069 @@
+{
+  "runs": 105,
+  "input_sha256": {
+    "perseed": "ca9e331bc106a1da5b3b3d34393448eea9e99445df212ef97a922c2add1bc318",
+    "canonical": "fc00c8fa597adeee4f8e378de9a3d7546ce9615990ee7f168fd69647ef057c99"
+  },
+  "thresholds": [
+    {
+      "seed": 0,
+      "income_threshold_used": 5.0,
+      "wealth_upper_used": 184.0692,
+      "uhi_transfer_rate_used": 35.78491038608204
+    },
+    {
+      "seed": 1,
+      "income_threshold_used": 5.0,
+      "wealth_upper_used": 183.0,
+      "uhi_transfer_rate_used": 36.713314536100874
+    },
+    {
+      "seed": 2,
+      "income_threshold_used": 5.0,
+      "wealth_upper_used": 191.549,
+      "uhi_transfer_rate_used": 35.803217483311144
+    },
+    {
+      "seed": 3,
+      "income_threshold_used": 5.0,
+      "wealth_upper_used": 186.2098,
+      "uhi_transfer_rate_used": 37.489561356542744
+    },
+    {
+      "seed": 4,
+      "income_threshold_used": 5.0,
+      "wealth_upper_used": 176.0,
+      "uhi_transfer_rate_used": 34.6853016333563
+    }
+  ],
+  "rank_checks": [
+    {
+      "metric": "gini_final",
+      "speed": "slow",
+      "canonical_order": [
+        "labour/means_tested",
+        "disp_levy/means_tested",
+        "wealth/means_tested",
+        "wealth/ubi",
+        "uhi_scenario",
+        "baseline",
+        "labour/ubi"
+      ],
+      "perseed_order": [
+        "labour/means_tested",
+        "disp_levy/means_tested",
+        "wealth/means_tested",
+        "wealth/ubi",
+        "uhi_scenario",
+        "baseline",
+        "labour/ubi"
+      ],
+      "ties": [],
+      "changed_pairs": [],
+      "one_adjacent_strict_swap": false
+    },
+    {
+      "metric": "gini_final",
+      "speed": "balanced",
+      "canonical_order": [
+        "disp_levy/means_tested",
+        "wealth/ubi",
+        "baseline",
+        "uhi_scenario",
+        "labour/means_tested",
+        "labour/ubi",
+        "wealth/means_tested"
+      ],
+      "perseed_order": [
+        "disp_levy/means_tested",
+        "wealth/ubi",
+        "uhi_scenario",
+        "baseline",
+        "labour/means_tested",
+        "labour/ubi",
+        "wealth/means_tested"
+      ],
+      "ties": [],
+      "changed_pairs": [
+        {
+          "cells": [
+            "baseline",
+            "uhi_scenario"
+          ],
+          "canonical_gap": 0.0026352567794711845,
+          "perseed_gap": 0.0015462186044289394,
+          "strict_reversal": true
+        }
+      ],
+      "one_adjacent_strict_swap": true
+    },
+    {
+      "metric": "gini_final",
+      "speed": "fast",
+      "canonical_order": [
+        "wealth/ubi",
+        "baseline",
+        "labour/ubi",
+        "uhi_scenario",
+        "disp_levy/means_tested",
+        "labour/means_tested",
+        "wealth/means_tested"
+      ],
+      "perseed_order": [
+        "wealth/ubi",
+        "baseline",
+        "labour/ubi",
+        "uhi_scenario",
+        "disp_levy/means_tested",
+        "labour/means_tested",
+        "wealth/means_tested"
+      ],
+      "ties": [],
+      "changed_pairs": [],
+      "one_adjacent_strict_swap": false
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "speed": "slow",
+      "canonical_order": [
+        "wealth/means_tested",
+        "labour/means_tested",
+        "uhi_scenario",
+        "wealth/ubi",
+        "disp_levy/means_tested",
+        "labour/ubi",
+        "baseline"
+      ],
+      "perseed_order": [
+        "wealth/means_tested",
+        "labour/means_tested",
+        "uhi_scenario",
+        "wealth/ubi",
+        "disp_levy/means_tested",
+        "labour/ubi",
+        "baseline"
+      ],
+      "ties": [],
+      "changed_pairs": [],
+      "one_adjacent_strict_swap": false
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "speed": "balanced",
+      "canonical_order": [
+        "wealth/means_tested",
+        "labour/means_tested",
+        "uhi_scenario",
+        "wealth/ubi",
+        "disp_levy/means_tested",
+        "labour/ubi",
+        "baseline"
+      ],
+      "perseed_order": [
+        "wealth/means_tested",
+        "labour/means_tested",
+        "uhi_scenario",
+        "wealth/ubi",
+        "disp_levy/means_tested",
+        "labour/ubi",
+        "baseline"
+      ],
+      "ties": [],
+      "changed_pairs": [],
+      "one_adjacent_strict_swap": false
+    },
+    {
+      "metric": "starvation_deaths_total",
+      "speed": "fast",
+      "canonical_order": [
+        "wealth/means_tested",
+        "labour/means_tested",
+        "uhi_scenario",
+        "wealth/ubi",
+        "disp_levy/means_tested",
+        "labour/ubi",
+        "baseline"
+      ],
+      "perseed_order": [
+        "wealth/means_tested",
+        "labour/means_tested",
+        "uhi_scenario",
+        "wealth/ubi",
+        "disp_levy/means_tested",
+        "labour/ubi",
+        "baseline"
+      ],
+      "ties": [],
+      "changed_pairs": [],
+      "one_adjacent_strict_swap": false
+    }
+  ],
+  "maximum_absolute_change_in_cell_mean_gini": 0.02226912693984895,
+  "matches_printed_0022_at_three_decimals": true,
+  "mean_changes": [
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "gini_final": -0.004181475383900124,
+      "starvation_deaths_total": 0.6000000000000014
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "gini_final": -0.005437720130014145,
+      "starvation_deaths_total": -0.3999999999999986
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "gini_final": -0.00177651677602364,
+      "starvation_deaths_total": -0.6000000000000014
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "gini_final": 0.002639847825702868,
+      "starvation_deaths_total": -2.4000000000000057
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "gini_final": 0.02226912693984895,
+      "starvation_deaths_total": -0.5999999999999979
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "gini_final": -0.005866673834284741,
+      "starvation_deaths_total": -3.1999999999999957
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0.0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "gini_final": 0.005763845159296843,
+      "starvation_deaths_total": 2.0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "gini_final": 0.0031986729580589235,
+      "starvation_deaths_total": -0.8000000000000007
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "gini_final": 0.0034565172532615707,
+      "starvation_deaths_total": -2.5999999999999943
+    }
+  ],
+  "paired_seed_changes": [
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "gini_final": -0.013846412468483893,
+      "starvation_deaths_total": 5
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "gini_final": -0.009130862549975416,
+      "starvation_deaths_total": 2
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "gini_final": -0.0059590633683281324,
+      "starvation_deaths_total": 2
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "gini_final": 0.003062914688719609,
+      "starvation_deaths_total": -5
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "gini_final": 0.00496604677856749,
+      "starvation_deaths_total": -1
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "gini_final": -0.0350407284201954,
+      "starvation_deaths_total": -1
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "gini_final": -0.02005255606197759,
+      "starvation_deaths_total": -2
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "gini_final": 0.017212809117844008,
+      "starvation_deaths_total": 1
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "gini_final": -0.002834976955551183,
+      "starvation_deaths_total": 2
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "gini_final": 0.013526851669809326,
+      "starvation_deaths_total": -2
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "gini_final": -0.0023134238639127003,
+      "starvation_deaths_total": 5
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "gini_final": 0.008099696423280789,
+      "starvation_deaths_total": 1
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "gini_final": 0.015229193029986099,
+      "starvation_deaths_total": -4
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "gini_final": -0.014352195968410697,
+      "starvation_deaths_total": -4
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "gini_final": -0.01554585350106158,
+      "starvation_deaths_total": -1
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "gini_final": 0.016123424599387703,
+      "starvation_deaths_total": -4
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "gini_final": -0.0010467665213014787,
+      "starvation_deaths_total": -1
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "gini_final": 0.006024205697322815,
+      "starvation_deaths_total": 4
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "gini_final": -0.006508216311101767,
+      "starvation_deaths_total": -4
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "gini_final": -0.0013934083357926563,
+      "starvation_deaths_total": -7
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "gini_final": 0.04394574158315845,
+      "starvation_deaths_total": -1
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "gini_final": -0.01122498100033209,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "gini_final": 0.059932296317501965,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "gini_final": 0.022421771127760448,
+      "starvation_deaths_total": -1
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "gini_final": -0.003729193328843916,
+      "starvation_deaths_total": -1
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "gini_final": -0.00864804624579213,
+      "starvation_deaths_total": -3
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "gini_final": -0.0165046748238184,
+      "starvation_deaths_total": -4
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "gini_final": 0.00013198304358197355,
+      "starvation_deaths_total": -4
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "gini_final": -0.005682213619367715,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "gini_final": 0.0013695824739727303,
+      "starvation_deaths_total": -5
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "gini_final": 0.0,
+      "starvation_deaths_total": 0
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "gini_final": 0.013821731697210182,
+      "starvation_deaths_total": -8
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "gini_final": -0.011554256288545062,
+      "starvation_deaths_total": -5
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "gini_final": 0.0041491230048184,
+      "starvation_deaths_total": 6
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "gini_final": 0.007655017192344182,
+      "starvation_deaths_total": 12
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "gini_final": 0.01474761019065668,
+      "starvation_deaths_total": 5
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "gini_final": -0.013201319688756097,
+      "starvation_deaths_total": 1
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "gini_final": -0.015282478459082482,
+      "starvation_deaths_total": 1
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "gini_final": -0.013641018678821781,
+      "starvation_deaths_total": -1
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "gini_final": 0.03446273356005958,
+      "starvation_deaths_total": -1
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "gini_final": 0.023655448056895234,
+      "starvation_deaths_total": -4
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "gini_final": 0.010027400734754499,
+      "starvation_deaths_total": -15
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "gini_final": 0.014244153104738921,
+      "starvation_deaths_total": 7
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "gini_final": -0.017824691265631798,
+      "starvation_deaths_total": -7
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "gini_final": 0.004117928676828142,
+      "starvation_deaths_total": 6
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "gini_final": 0.006717795015618033,
+      "starvation_deaths_total": -4
+    }
+  ],
+  "scope": "Descriptive means and pairwise ranking audit of manuscript section 4.3. No deposited per-seed-threshold CSV exists; not an exact author-data comparison or significance test."
+}

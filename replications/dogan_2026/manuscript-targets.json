@@ -1,0 +1,83 @@
+{
+  "source_sha256": "83716cb7e732a22c39da5120b167f2e6ac26b07a023dd5eb689c1ab87740d08b",
+  "table": "D.1",
+  "rows": [
+    {
+      "cell": "baseline",
+      "speed": "slow",
+      "gini_300": "0.366",
+      "gini_600": "0.350",
+      "deaths_300": "270",
+      "deaths_600": "416"
+    },
+    {
+      "cell": "labor/means-tested",
+      "speed": "slow",
+      "gini_300": "0.272",
+      "gini_600": "0.537",
+      "deaths_300": "32",
+      "deaths_600": "32"
+    },
+    {
+      "cell": "wealth/means-tested",
+      "speed": "slow",
+      "gini_300": "0.299",
+      "gini_600": "0.611",
+      "deaths_300": "27",
+      "deaths_600": "27"
+    },
+    {
+      "cell": "baseline",
+      "speed": "balanced",
+      "gini_300": "0.379",
+      "gini_600": "0.352",
+      "deaths_300": "260",
+      "deaths_600": "343"
+    },
+    {
+      "cell": "labor/means-tested",
+      "speed": "balanced",
+      "gini_300": "0.388",
+      "gini_600": "0.607",
+      "deaths_300": "30",
+      "deaths_600": "31"
+    },
+    {
+      "cell": "wealth/means-tested",
+      "speed": "balanced",
+      "gini_300": "0.439",
+      "gini_600": "0.636",
+      "deaths_300": "29",
+      "deaths_600": "30"
+    },
+    {
+      "cell": "baseline",
+      "speed": "fast",
+      "gini_300": "0.384",
+      "gini_600": "0.374",
+      "deaths_300": "249",
+      "deaths_600": "289"
+    },
+    {
+      "cell": "labor/means-tested",
+      "speed": "fast",
+      "gini_300": "0.537",
+      "gini_600": "0.347",
+      "deaths_300": "28",
+      "deaths_600": "28"
+    },
+    {
+      "cell": "wealth/means-tested",
+      "speed": "fast",
+      "gini_300": "0.571",
+      "gini_600": "0.346",
+      "deaths_300": "25",
+      "deaths_600": "26"
+    }
+  ],
+  "precision": {
+    "gini_decimals": 3,
+    "deaths_decimals": 0
+  },
+  "interpretation": "Compare five-seed means at printed precision; also verify complete deposited per-seed CSV before interpreting rankings."
+}

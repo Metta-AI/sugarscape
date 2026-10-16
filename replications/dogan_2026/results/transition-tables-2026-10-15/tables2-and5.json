@@ -1,0 +1,1558 @@
+{
+  "provenance": "fresh-replay",
+  "input_sha256": "fc00c8fa597adeee4f8e378de9a3d7546ce9615990ee7f168fd69647ef057c99",
+  "targets_sha256": "7f21cff56a6495182cf5658517c69c9a4269f981f02d5e50723d890623884ae4",
+  "rows": 105,
+  "comparison": [
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "mean",
+      "measured": 0.36632377100508806,
+      "published": "0.366",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "cv",
+      "measured": 0.03283166944758165,
+      "published": "0.033",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "mean",
+      "measured": 0.3787487275901791,
+      "published": "0.379",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "cv",
+      "measured": 0.030607456989719367,
+      "published": "0.031",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "mean",
+      "measured": 0.38384873648002094,
+      "published": "0.384",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "cv",
+      "measured": 0.023471408307136243,
+      "published": "0.023",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "mean",
+      "measured": 0.38234340254648896,
+      "published": "0.382",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "cv",
+      "measured": 0.022296837308499448,
+      "published": "0.022",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "mean",
+      "measured": 0.39243680857550756,
+      "published": "0.392",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "cv",
+      "measured": 0.03435194600933076,
+      "published": "0.034",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "mean",
+      "measured": 0.42017944818843506,
+      "published": "0.420",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "cv",
+      "measured": 0.007693372869180016,
+      "published": "0.008",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "mean",
+      "measured": 0.27233274321046996,
+      "published": "0.272",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "cv",
+      "measured": 0.03256009951202688,
+      "published": "0.033",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "mean",
+      "measured": 0.3884306227944556,
+      "published": "0.388",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "cv",
+      "measured": 0.04468717240341072,
+      "published": "0.045",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "mean",
+      "measured": 0.537310721700721,
+      "published": "0.537",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "cv",
+      "measured": 0.031716189652083504,
+      "published": "0.032",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "mean",
+      "measured": 0.30913790917608064,
+      "published": "0.309",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "cv",
+      "measured": 0.02728918762746196,
+      "published": "0.027",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "mean",
+      "measured": 0.32265176703134385,
+      "published": "0.323",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "cv",
+      "measured": 0.01799576515407073,
+      "published": "0.018",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "mean",
+      "measured": 0.37593782986008406,
+      "published": "0.376",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "cv",
+      "measured": 0.009195392936617886,
+      "published": "0.009",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "mean",
+      "measured": 0.2991913278059563,
+      "published": "0.299",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "cv",
+      "measured": 0.057079331680105025,
+      "published": "0.057",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "mean",
+      "measured": 0.43852058702215657,
+      "published": "0.439",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "cv",
+      "measured": 0.04953459871568389,
+      "published": "0.050",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "mean",
+      "measured": 0.5713058069076515,
+      "published": "0.571",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "cv",
+      "measured": 0.04398165777926406,
+      "published": "0.044",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "mean",
+      "measured": 0.2786926960635659,
+      "published": "0.279",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "cv",
+      "measured": 0.03223525748147314,
+      "published": "0.032",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "mean",
+      "measured": 0.31240190999533624,
+      "published": "0.312",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "cv",
+      "measured": 0.00996065630071777,
+      "published": "0.010",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "mean",
+      "measured": 0.48556036680701276,
+      "published": "0.486",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "cv",
+      "measured": 0.03706338087692711,
+      "published": "0.037",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "mean",
+      "measured": 0.32055446426370415,
+      "published": "0.321",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "cv",
+      "measured": 0.026729415771953584,
+      "published": "0.027",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "mean",
+      "measured": 0.38138398436965026,
+      "published": "0.381",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "cv",
+      "measured": 0.015965377312273255,
+      "published": "0.016",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "mean",
+      "measured": 0.4506875174587582,
+      "published": "0.451",
+      "matches": true
+    },
+    {
+      "table": 2,
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "cv",
+      "measured": 0.014095132958490648,
+      "published": "0.014",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "deaths",
+      "measured": 270.2,
+      "published": "270.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "sugar",
+      "measured": 129.6,
+      "published": "129.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "spice",
+      "measured": 133.2,
+      "published": "133.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "joint",
+      "measured": 7.4,
+      "published": "7.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "stock",
+      "measured": 14.58690037114064,
+      "published": "14.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "single_percent",
+      "measured": 97.3196205766431,
+      "published": "97.3",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "deaths",
+      "measured": 260.4,
+      "published": "260.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "sugar",
+      "measured": 130.2,
+      "published": "130.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "spice",
+      "measured": 121.8,
+      "published": "121.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "joint",
+      "measured": 8.4,
+      "published": "8.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "stock",
+      "measured": 14.920517693690039,
+      "published": "14.9",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "single_percent",
+      "measured": 96.76818254943255,
+      "published": "96.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "deaths",
+      "measured": 248.8,
+      "published": "248.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "sugar",
+      "measured": 122.0,
+      "published": "122.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "spice",
+      "measured": 120.6,
+      "published": "120.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "joint",
+      "measured": 6.2,
+      "published": "6.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "stock",
+      "measured": 15.78379366301466,
+      "published": "15.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "single_percent",
+      "measured": 97.50020240062399,
+      "published": "97.5",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "deaths",
+      "measured": 144.6,
+      "published": "144.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "sugar",
+      "measured": 62.8,
+      "published": "62.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "spice",
+      "measured": 63.8,
+      "published": "63.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "joint",
+      "measured": 18.0,
+      "published": "18.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "stock",
+      "measured": 12.247746959008605,
+      "published": "12.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "single_percent",
+      "measured": 87.38901724978423,
+      "published": "87.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "deaths",
+      "measured": 114.2,
+      "published": "114.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "sugar",
+      "measured": 53.2,
+      "published": "53.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "spice",
+      "measured": 47.2,
+      "published": "47.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "joint",
+      "measured": 13.8,
+      "published": "13.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "stock",
+      "measured": 13.048956496630344,
+      "published": "13.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "single_percent",
+      "measured": 87.76515954276974,
+      "published": "87.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "deaths",
+      "measured": 80.8,
+      "published": "80.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "sugar",
+      "measured": 35.4,
+      "published": "35.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "spice",
+      "measured": 36.2,
+      "published": "36.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "joint",
+      "measured": 9.2,
+      "published": "9.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "stock",
+      "measured": 13.939225218210714,
+      "published": "13.9",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "single_percent",
+      "measured": 88.81622196257207,
+      "published": "88.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "deaths",
+      "measured": 31.8,
+      "published": "31.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "sugar",
+      "measured": 16.0,
+      "published": "16.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "spice",
+      "measured": 13.6,
+      "published": "13.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "joint",
+      "measured": 2.2,
+      "published": "2.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "stock",
+      "measured": 20.13771522386687,
+      "published": "20.1",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "single_percent",
+      "measured": 93.4058789650895,
+      "published": "93.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "deaths",
+      "measured": 30.4,
+      "published": "30.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "sugar",
+      "measured": 13.4,
+      "published": "13.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "spice",
+      "measured": 14.2,
+      "published": "14.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "joint",
+      "measured": 2.8,
+      "published": "2.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "stock",
+      "measured": 21.0316393964708,
+      "published": "21.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "single_percent",
+      "measured": 91.26147186147186,
+      "published": "91.3",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "deaths",
+      "measured": 27.8,
+      "published": "27.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "sugar",
+      "measured": 13.0,
+      "published": "13.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "spice",
+      "measured": 12.8,
+      "published": "12.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "joint",
+      "measured": 2.0,
+      "published": "2.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "stock",
+      "measured": 20.542294561917487,
+      "published": "20.5",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "single_percent",
+      "measured": 93.03333333333333,
+      "published": "93.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "deaths",
+      "measured": 69.6,
+      "published": "69.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "sugar",
+      "measured": 35.6,
+      "published": "35.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "spice",
+      "measured": 32.0,
+      "published": "32.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "joint",
+      "measured": 2.0,
+      "published": "2.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "stock",
+      "measured": 20.630090024217154,
+      "published": "20.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "single_percent",
+      "measured": 97.20236122618061,
+      "published": "97.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "deaths",
+      "measured": 58.4,
+      "published": "58.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "sugar",
+      "measured": 28.6,
+      "published": "28.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "spice",
+      "measured": 28.2,
+      "published": "28.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "joint",
+      "measured": 1.6,
+      "published": "1.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "stock",
+      "measured": 20.455879985676372,
+      "published": "20.5",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "single_percent",
+      "measured": 97.2658396600948,
+      "published": "97.3",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "deaths",
+      "measured": 46.8,
+      "published": "46.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "sugar",
+      "measured": 23.0,
+      "published": "23.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "spice",
+      "measured": 22.4,
+      "published": "22.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "joint",
+      "measured": 1.4,
+      "published": "1.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "stock",
+      "measured": 20.1570991279545,
+      "published": "20.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "single_percent",
+      "measured": 97.08468357039786,
+      "published": "97.1",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "deaths",
+      "measured": 27.0,
+      "published": "27.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "sugar",
+      "measured": 13.2,
+      "published": "13.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "spice",
+      "measured": 13.0,
+      "published": "13.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "joint",
+      "measured": 0.8,
+      "published": "0.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "stock",
+      "measured": 20.685764688897244,
+      "published": "20.7",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "single_percent",
+      "measured": 97.1304347826087,
+      "published": "97.1",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "deaths",
+      "measured": 29.2,
+      "published": "29.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "sugar",
+      "measured": 14.0,
+      "published": "14.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "spice",
+      "measured": 14.6,
+      "published": "14.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "joint",
+      "measured": 0.6,
+      "published": "0.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "stock",
+      "measured": 23.547720353004724,
+      "published": "23.5",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "single_percent",
+      "measured": 98.02586267481902,
+      "published": "98.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "deaths",
+      "measured": 25.4,
+      "published": "25.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "sugar",
+      "measured": 12.8,
+      "published": "12.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "spice",
+      "measured": 11.8,
+      "published": "11.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "joint",
+      "measured": 0.8,
+      "published": "0.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "stock",
+      "measured": 22.9912491212321,
+      "published": "23.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "single_percent",
+      "measured": 96.72240802675586,
+      "published": "96.7",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "deaths",
+      "measured": 93.8,
+      "published": "93.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "sugar",
+      "measured": 45.8,
+      "published": "45.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "spice",
+      "measured": 44.4,
+      "published": "44.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "joint",
+      "measured": 3.6,
+      "published": "3.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "stock",
+      "measured": 19.24208496885989,
+      "published": "19.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "single_percent",
+      "measured": 96.168876855065,
+      "published": "96.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "deaths",
+      "measured": 79.4,
+      "published": "79.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "sugar",
+      "measured": 38.0,
+      "published": "38.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "spice",
+      "measured": 39.0,
+      "published": "39.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "joint",
+      "measured": 2.4,
+      "published": "2.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "stock",
+      "measured": 18.537843987225422,
+      "published": "18.5",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "single_percent",
+      "measured": 96.93507230399585,
+      "published": "96.9",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "deaths",
+      "measured": 67.4,
+      "published": "67.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "sugar",
+      "measured": 32.8,
+      "published": "32.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "spice",
+      "measured": 31.0,
+      "published": "31.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "joint",
+      "measured": 3.6,
+      "published": "3.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "stock",
+      "measured": 16.430385267066878,
+      "published": "16.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "single_percent",
+      "measured": 94.68481655812835,
+      "published": "94.7",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "deaths",
+      "measured": 49.8,
+      "published": "49.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "sugar",
+      "measured": 27.2,
+      "published": "27.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "spice",
+      "measured": 21.0,
+      "published": "21.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "joint",
+      "measured": 1.6,
+      "published": "1.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "stock",
+      "measured": 20.735152396624258,
+      "published": "20.7",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "single_percent",
+      "measured": 97.04351693030938,
+      "published": "97.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "deaths",
+      "measured": 45.0,
+      "published": "45.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "sugar",
+      "measured": 22.6,
+      "published": "22.6",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "spice",
+      "measured": 21.2,
+      "published": "21.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "joint",
+      "measured": 1.2,
+      "published": "1.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "stock",
+      "measured": 19.841461678211676,
+      "published": "19.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "single_percent",
+      "measured": 97.35177865612647,
+      "published": "97.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "deaths",
+      "measured": 39.2,
+      "published": "39.2",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "sugar",
+      "measured": 19.4,
+      "published": "19.4",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "spice",
+      "measured": 18.0,
+      "published": "18.0",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "joint",
+      "measured": 1.8,
+      "published": "1.8",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "stock",
+      "measured": 18.859525507852045,
+      "published": "18.9",
+      "matches": true
+    },
+    {
+      "table": 5,
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "single_percent",
+      "measured": 95.52613240418118,
+      "published": "95.5",
+      "matches": true
+    }
+  ],
+  "gini_rankings_lowest_first": {
+    "slow": [
+      "labour/means_tested",
+      "disp_levy/means_tested",
+      "wealth/means_tested",
+      "wealth/ubi",
+      "uhi_scenario",
+      "baseline",
+      "labour/ubi"
+    ],
+    "balanced": [
+      "disp_levy/means_tested",
+      "wealth/ubi",
+      "baseline",
+      "uhi_scenario",
+      "labour/means_tested",
+      "labour/ubi",
+      "wealth/means_tested"
+    ],
+    "fast": [
+      "wealth/ubi",
+      "baseline",
+      "labour/ubi",
+      "uhi_scenario",
+      "disp_levy/means_tested",
+      "labour/means_tested",
+      "wealth/means_tested"
+    ]
+  },
+  "single_resource_percent_per_run_range": [
+    80.0,
+    100.0
+  ],
+  "single_resource_percent_five_seed_mean_range": [
+    87.38901724978423,
+    98.02586267481902
+  ],
+  "interpretation": "Percentages average seed-specific fractions. Per-run ranges differ from five-seed means. Rankings are descriptive, not significance tests or causal proof."
+}

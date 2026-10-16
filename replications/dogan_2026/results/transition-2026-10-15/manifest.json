@@ -1,0 +1,57 @@
+{
+  "repository": "https://github.com/dgnerg867-ux/sugarscape",
+  "revision": "0b6a3df470388f60535d8ffb67c34a7f9fa0059a",
+  "installed_distributions": {
+    "ply": "3.11",
+    "kiwisolver": "1.5.1",
+    "fonttools": "4.66.1",
+    "packaging": "26.3",
+    "networkx": "3.7",
+    "pythran": "0.19.0",
+    "pytz": "2026.5",
+    "matplotlib": "3.10.8",
+    "tzdata": "2026.5",
+    "beniget": "0.5.0",
+    "contourpy": "1.4.0",
+    "tqdm": "4.70.1",
+    "setuptools": "84.0.0",
+    "python-dateutil": "2.9.0.post0",
+    "cycler": "0.12.1",
+    "pandas": "2.3.3",
+    "gast": "0.7.0",
+    "pillow": "12.3.0",
+    "Mesa": "3.5.1",
+    "pyparsing": "3.3.3",
+    "six": "1.17.0",
+    "scipy": "1.18.1",
+    "numpy": "2.4.2"
+  },
+  "python": "3.12.4 (main, Jul 25 2024, 22:11:22) [Clang 18.1.8 ]",
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "versions": {
+    "mesa": "3.5.1",
+    "numpy": "2.4.2",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.8"
+  },
+  "pythonhashseed": "0",
+  "source_sha256": {
+    "sugarscape_ai_tax/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sugarscape_ai_tax/agents.py": "eeb906b822bf9198e3842fee40eb95f6dc3cc1da22c05f804905c2628384d3bb",
+    "sugarscape_ai_tax/model.py": "a3e264cb1640691451b2936cd85a17f21bc8b17f5a2f36977dc8ee1db698ed24",
+    "sugarscape_ai_tax/sugar-map.txt": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
+    "run_canonical_sweep.py": "b64721f78612b17a9a6c2f805aac6dbe265f1bc97fce268850fcaf73a9a03aad",
+    "requirements.txt": "5064b8cc5a6c56cf9b8d8fa33f398f127a6542d2103eb206e9bb65bbeb96fe19",
+    "sugarscape_ai_tax.pdf": "128145677ffd6ae12a5506fd61871482aff5fa767957ca0f32cf5a1befc1b02f"
+  },
+  "reference_sha256": {
+    "results/canonical/composition_sweep.csv": "607423159d0746445197cca242153d150545f6013baa3cfc6a914a0aa41b286e",
+    "results/canonical/horizon_sweep.csv": "c9525984ee446221389edbfd96248f6c00cdff9c192c7384d881bc4b027f6661",
+    "results/canonical/part_a_stage4_static.csv": "56322bd8202daae3e199de11f3d11af09fc5f1098408dba9b38a269707e0d8fe",
+    "results/canonical/part_b_agent_step300.csv": "1d13c440c4abebf85e72a3a7a87c8740f519ce6ba727db4df0830fbcf639b836",
+    "results/canonical/part_b_stage5_main.csv": "fc00c8fa597adeee4f8e378de9a3d7546ce9615990ee7f168fd69647ef057c99",
+    "results/canonical/part_c_welfare_sensitivity.csv": "54c31a291a0fe2f7e2255349d7e6e2f9e0163153201f2889264605317af19ac3",
+    "results/canonical/uhi_multiplier_sweep.csv": "04d2cccb7ffbef8429b13b854eab4f95b0bd8877c3fbafb64e0a882e68e26b13"
+  },
+  "scope": "Complete original canonical sweep: 25 static, 105 transition, 75 welfare-sensitivity runs, plus two original threshold-calibration runs. Additional paper robustness experiments remain outside this batch."
+}
