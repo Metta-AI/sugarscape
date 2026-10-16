@@ -383,3 +383,19 @@ Its native and independent means are 1.03867 and 1.01747 respectively.
 This is an exploratory maximum over 150 statistics from an incomplete parameter ensemble, not evidence of equivalence or a diagnosed implementation error.
 All 43 compressed trajectories, the audit, paired statistics, and a rejected-reference corruption control are retained.
 The full 5,000-input run remains in progress; this prefix does not complete the paper replication.
+
+### Expanded independent/native comparison and price trace
+
+[The 238-input prefix](results/independent-expanded-comparison-2026-10-16/comparison.json) passes 35,700 independently recomputed statistics with maximum absolute error 1.14e-13.
+Neither implementation becomes extinct on these inputs. All 238 compressed independent trajectories and the audited ledger are retained.
+The largest absolute mean difference divided by native standard deviation is 0.2126, for mean trade price at observation 50.
+Native and independent prefix means are 1.08927 and 1.16672.
+These are descriptive statistics over a growing prefix, without a significance or equivalence verdict.
+
+Input 83 contributes the largest individual difference for that statistic: native 0.63169 versus independent 7.64115.
+`trace_prices.py ENSEMBLE ROW NEW_OUTPUT` replays the frozen model parameters, verifies all 501 observations exactly, and exposes raw transaction prices without changing the simulation.
+[Its input-83 audit](results/independent-expanded-comparison-2026-10-16/price-trace-83/audit.json) matches all 3,507 values.
+At tick 49, two transactions have prices 8.95408 and 6.32822; their arithmetic mean is 7.64115.
+Tick 50 has no transactions, so the model carries that mean forward, consistent with the author's reporter semantics.
+This explains the observed summary value, not the independent/native stochastic difference.
+The input remains included. The full 5,000-input ensemble and independent estimator comparison remain outstanding.
