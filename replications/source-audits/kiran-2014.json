@@ -58,8 +58,19 @@
       "University-hosted PDF timed out",
       "OAPEN full PDF returned 403",
       "Publisher chapter returned 403",
-      "PDFHost document page accessible but linked PDF returned 502 twice"
+      "PDFHost document page accessible but linked PDF returned 502 twice",
+      "New indexed publisher S3 signed PDF URL returned403; expiry predates current date. No source recovered. Do not repeat expired URL."
     ],
     "oapen": "https://library.oapen.org/bitstream/20.500.12657/25905/1/1004177.pdf"
+  },
+  "arxiv_source_check": {
+    "url": "https://arxiv.org/src/1408.3441v1",
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "filename": "arXiv-1408.3441v1.pdf",
+    "bytes": 918862,
+    "sha256": "e77a07c68de7c0d4f46e4169ca48f9d14e674b54f7ae692d4f4db5297a093337",
+    "same_as_paper_pdf": true,
+    "conclusion": "The source endpoint returns the same18-pagePDF, not a source archive or appended C/XML. This eliminates this specific recovery route, not all possible source availability."
   }
 }
