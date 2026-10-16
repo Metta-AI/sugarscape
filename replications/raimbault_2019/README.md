@@ -357,3 +357,12 @@ The complete projection path remains unverified until all benchmark outputs arri
 ```bash
 python replications/raimbault_2019/analyze_sizing.py /downloaded/sizing-run /new/sizing-analysis --hourly-node-price 0.4824 --require-complete
 ```
+
+### Second remote reference checkpoint
+
+The [sealed checkpoint audit](results/remote-reference-checkpoint-2026-10-16/checkpoint-003-independent-validation.json) verifies 53 completed chunks, containing 5,300 original inputs.
+All 53 recorded source and dependency files match the frozen local runtime.
+Combining these chunks with the 7,933-row local baseline yields 13,233 unique simulations and 26,466 exact archived Gini comparisons.
+The earlier 1,400-row cloud snapshot is contained in this checkpoint and is not added again.
+The native archive and independent validation script are retained beside the report.
+The 55,000-row reference ensemble remains incomplete; this checkpoint makes no generated-landscape or whole-paper replication claim.
