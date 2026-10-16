@@ -118,9 +118,9 @@ The following requirements remain separate from successful execution or source-o
 | Study | Required next evidence |
 | --- | --- |
 | Carrella | Remaining estimator ensembles, historical stochastic/runtime explanation, and independent fork behavior |
-| Raimbault | Full spatial-sensitivity ensemble and generated-grid comparison; three successful inputs are insufficient |
+| Raimbault | Full55,000-row reference replay is running; generated-grid comparison and full spatial-sensitivity results remain outstanding |
 | Blueprints | All original homogeneous seeds, selfishness and mixed-society experiments, runtime targets, and source-version alignment |
-| Replacing | Remaining reproduction seeds, seventeen-example coverage, trade/lending comparisons, and historical rule/configuration alignment |
+| Replacing | Table3 qualitative classification, trade/lending comparisons, disease discrepancy, and historical control/configuration alignment |
 | Bigbee | Published 2007 protocol and implementation alignment; corrected 2011 draft showcases alone are insufficient |
 | Stevenson | Evolutionary scenarios, growth fits, distributions, and unresolved fixed-society mean-age discrepancy |
 | Buzing | Version 1.2.3 harvesting, scheduling, landscape, communication semantics, and full ten-run condition ensembles |
@@ -157,3 +157,16 @@ It is an index into evidence, not an automated scientific completion certificate
   package provides estimators; it is not the simulation model itself.
 - Stevenson, Kiran, and Pan: initial GitHub/web searches have not established a paper-specific code repository.
   This is a search status, not evidence that no implementation exists.
+
+## Latest verified components
+
+Replacing completes all twenty reproduction seeds at 2,500 steps and all seventeen released examples.
+The baseline matches all 2,452 recoverable Figure 2 vector vertices; its prose timing discrepancy is not a failure to reproduce the plotted curve.
+Table 3 classifications and historical control conditions remain unresolved.
+
+Dogan completes the 105-run main sweep and 45-run longer-horizon study with byte-identical deposited outputs.
+Independent audits reconstruct Tables 2, 3, 4, 5, and D.1 from fresh results.
+A deposited-data audit of welfare sensitivity identifies one small unrounded inequality-ranking reversal; fresh sensitivity results remain pending.
+
+Blueprints preserves the first four utilitarian runs after a disk-guard stop and resumes at the fifth original seed in a separate batch.
+No partial run, table match, or reporting discrepancy increases the completed-paper count.

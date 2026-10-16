@@ -28,21 +28,21 @@
     {
       "study": "raimbault_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
-      "checked_commit": "93b8ab6e6bff8196d024c65c17db6f984c4b2020",
+      "checked_commit": "01f60b81b64e26e8365e29efce9d8b49e6fe7826",
       "status": "partial",
       "readme": "replications/raimbault_2019/README.md",
-      "readme_sha256": "bec81eb5d5dc04a0196eea8bf96598df6a38461e1e078e893562d43d68e99b1d",
-      "json_evidence_files": 4,
+      "readme_sha256": "611eeeec630c940ca0dfbc7f7cb5eb476f075f214bdf174126b432e13bf33d62",
+      "json_evidence_files": 7,
       "remaining_scope": "Full spatial-sensitivity ensemble and generated-grid validation."
     },
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "1cc48703aa9ffd31308376b999e2b1e643d674b1",
+      "checked_commit": "69341d620835f3d8f9e32d0d838d899c61a02cc6",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "d8833a3e265fb780e12aeb881b83b89cb061b41718afde5332f129de7eada8a0",
-      "json_evidence_files": 38,
+      "readme_sha256": "4b345d375af9c00c9f0e25ed60ef0e574831c585d4bdfb8694bd788550c9a886",
+      "json_evidence_files": 40,
       "remaining_scope": "Full original-seed ensembles and remaining published experiment families."
     },
     {
@@ -78,22 +78,22 @@
     {
       "study": "replacing_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/10",
-      "checked_commit": "6f8f8e7e475251729bb0166aeb5ba9c7263ea0b6",
+      "checked_commit": "9a48a55564bf297412be9b2afdc96f4ceddaf885",
       "status": "partial",
       "readme": "replications/replacing_2023/README.md",
-      "readme_sha256": "48cb9475bfb5ef41b6eeb6d20be15f6a146b2a41750c6110d0e605bafa5aa86a",
-      "json_evidence_files": 485,
-      "remaining_scope": "Remaining reproduction ensemble, seventeen examples, trade/lending and historical alignment."
+      "readme_sha256": "efaeaea8f2c8a94e8dda6740783e74caabe29af3e52a000012a3fb19b4d59c38",
+      "json_evidence_files": 491,
+      "remaining_scope": "Table3 qualitative classifications, disease protocol discrepancy, and trade/lending historical controls. All20 reproduction seeds and17 examples complete; Figure2 matches2452vertices."
     },
     {
       "study": "dogan_2026",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11",
-      "checked_commit": "753fc18d8a4e6077b3d2b71bf426330ba1cb28d3",
+      "checked_commit": "04117c00cbabd2f5f3d3240b588b241a770d1ef1",
       "status": "running",
       "readme": "replications/dogan_2026/README.md",
-      "readme_sha256": "fae872f865634484d1c66f32cef887741779960a448e5db5ab1904380b79ee25",
-      "json_evidence_files": 4,
-      "remaining_scope": "Complete canonical and robustness runs, manuscript comparisons and fork integration."
+      "readme_sha256": "30ba0603ce5b8e50740bc8ae6a13ac198d770ce5fcaed94cecbe6f209a4a3d41",
+      "json_evidence_files": 15,
+      "remaining_scope": "Fresh welfare/multiplier and remaining robustness, manuscript consistency and fork integration. Main105andhorizon45 matchdeposits exactly; multiple independently reconstructed tables pass."
     }
   ]
 }
