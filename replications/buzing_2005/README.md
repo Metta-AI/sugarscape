@@ -368,3 +368,18 @@ The correction does not resolve all discrepancies with the publication; sugar el
 Three compressed archives retain every corrected native trajectory, configuration, manifest, birth record, and event log.
 Their complete contents were verified byte-for-byte against the external run evidence. Original author sources and compiled classes are excluded.
 The original reconstruction and fertility-only evidence remain separate; the strict-sugar ensemble continues independently.
+
+## Complete combined correction
+
+[The strict-sugar audit](results/positive-sugar-complete-2026-10-16/comparison.json) validates all 150 runs and 9,161,420 births.
+Every observed birth satisfies both parents' own fertility range and strictly positive pre-halving sugar.
+The paired audit verifies 4,200,000 scalar observations across the original and combined-correction conditions.
+
+[The three-condition survival table](results/positive-sugar-complete-2026-10-16/three-condition-survival.csv) preserves the same ten seeds in every condition.
+COM1 threshold-one survival is 1/10 originally, 3/10 after fertility correction, and 1/10 with both corrections.
+COM2 threshold-zero survival is 5/10, 5/10, and 2/10 respectively; threshold-three survival is 9/10, 10/10, and 10/10.
+Other group survival counts are unchanged. These are implementation-sensitivity findings, not three independent paper replications.
+Historical scheduling and inheritance remain unresolved, and the paper-level study remains incomplete.
+
+Archives are split by protocol and threshold, with all ten seeds retained in each.
+Every archived member was verified against the executed run. Source/classes are excluded; raw trajectories, configurations, birth and wealth records, logs, and manifests are retained.
