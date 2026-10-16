@@ -196,3 +196,17 @@ Thus the released implementation reproduces the plotted curve while the prose's 
 The exact historical revision and Table 3's qualitative classification remain unresolved, so this finding does not complete the paper replication.
 
 ![Native reproduction trajectories](results/reproduction-published20-2026-10-15/population-trajectories.png)
+
+## Completed paired trade/lending diagnostic
+
+[All sixty native runs](results/trade-lending-paired20-2026-10-15/analysis.json) pass independent configuration, seed, trajectory, and checksum checks.
+Under the declared steps251–500 window, the twenty paired relative increases average 2.421% for trade and 3.359% for lending.
+Maximum increases are 6.182% and 7.610%, respectively; each treatment has two negative pairs.
+No run becomes extinct and no relative denominator is undefined.
+Early-to-late population mean differences span 214.212–273.560 agents across conditions, so the overall run contains a substantial transient.
+A final-window mean alone does not establish carrying capacity or equilibrium.
+
+The mean increases are near the paper's descriptive 3%, while the maxima exceed its reported 5%.
+The diagnostic reuses Table3 seeds from other scenarios; the original trade/lending seeds, horizon, measurement window, and exact historical controls remain unknown.
+Consequently neither agreement nor disagreement constitutes a completed paper replication.
+Original configurations, full trajectories, native logs, the predeclared protocol, and paired measurements are retained without dropping unfavorable seeds.
