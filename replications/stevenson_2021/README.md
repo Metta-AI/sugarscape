@@ -113,10 +113,38 @@ Those searches do not establish that author code is unavailable.
 
 ## Recording-frequency verification
 
-The simulator now requires an explicit recording interval; existing ensemble calls retain100-cycle output.
-[System-level verification](results/recording-proof-2026-10-15/proof.json) runs both fixed scenarios for3000cycles with the original binary, updated sparse output, and updated per-cycle output.
-Original and updated sparse CSVs are byte-identical; all6000dense observations contain exactly the same sparse samples.
+The simulator now requires an explicit recording interval; existing ensemble calls retain 100-cycle output.
+[System-level verification](results/recording-proof-2026-10-15/proof.json) runs both fixed scenarios for 3,000 cycles with the original binary, updated sparse output, and updated per-cycle output.
+Original and updated sparse CSVs are byte-identical; all 6,000 dense observations contain exactly the same sparse samples.
 Recording frequency does not change random draws or simulation rules.
 Historical retained commands target their original binary and remain unchanged as evidence.
-Per-cycle growth ensembles remain unlaunched because the filesystem filled during preparation.
+After storage recovered, both 100-seed per-cycle growth ensembles launched under the [declared growth protocol](GROWTH_PROTOCOL.md).
+The analysis requires exact agreement with earlier same-seed trajectories before fitting continuous logistic growth.
+The completed growth diagnostic is reported below; the study remains incomplete.
 Renewed author/title/GitHub searches did not identify a verified implementation; that does not establish its absence.
+
+## Growth-rate diagnostic completed
+
+[All 200 dense trajectories, fit attempts, and residual plots](results/growth-2026-10-15) are retained.
+All 600,000 observations pass finite-value, timestamp, population-accounting, and conservation checks.
+All 6,200 observations shared with earlier same-seed ensembles match exactly.
+The full-ensemble analyzer first rejected the incomplete run, then passed after completion.
+All 600 optimization attempts converged, with within-seed growth-rate differences below 0.000001 across starting values.
+
+| Scenario | Mean fitted growth rate | 95% interval across seeds | Published | Relative difference |
+| --- | ---: | ---: | ---: | ---: |
+| Low fertility | 0.0257210 | 0.0255210–0.0259210 | 0.018 | +42.89% |
+| Birth cost | 0.0330662 | 0.0330241–0.0331082 | 0.032 | +3.33% |
+
+Residuals show systematic structure around the growth transition.
+The largest absolute mean residual is 32.96 agents for low fertility and 80.34 for birth cost.
+Per-seed root mean squared residuals range from 17.85–22.15 and 13.38–14.93 agents, respectively.
+These fits approximate the trajectories; optimization convergence does not establish the logistic model's adequacy.
+The author fitting window and procedure remain unknown, and behavioral assumptions remain unresolved.
+These differences therefore do not establish a negative replication.
+
+Reproduce the declared analysis on a completed external run:
+
+```sh
+python replications/stevenson_2021/analyze_growth.py /complete/growth-run /new/analysis
+```
