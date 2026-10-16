@@ -338,7 +338,7 @@ This benchmark leaves the existing fixed-reference queue unchanged.
 
 [Downloaded initial evidence](results/generated-sizing-launch-2026-10-16/prefix-independent-validation.json) independently verifies eight completed inputs and 96 exact archived measurements.
 These early inputs establish execution, not a representative cost estimate or completion of the generated ensemble.
-The 550-input sample remains running, and no full generated-production queue has been launched.
+The initial snapshot was partial; the complete sizing audit below supersedes it. No full generated-production queue has been launched.
 
 ### Independent sizing audit and projection gate
 
@@ -352,7 +352,7 @@ It weights CPU time and elapsed time by original stratum size, then reports an i
 A supplied hourly price is an assumption, not a live quote or guaranteed budget.
 Both estimates retain per-input Java startup costs and exclude setup, retries, transfer, and idle time.
 One sampled input per stratum does not estimate within-stratum timing variance; no confidence interval is claimed.
-The complete projection path remains unverified until all benchmark outputs arrive.
+The complete projection path is now exercised by the full sizing audit below.
 
 ```bash
 python replications/raimbault_2019/analyze_sizing.py /downloaded/sizing-run /new/sizing-analysis --hourly-node-price 0.4824 --require-complete
@@ -374,3 +374,15 @@ Together with7,933 frozen local inputs, coverage reaches15,033 unique simulation
 All53 source/dependency hashes match the frozen runtime; every sealed chunk exits successfully and completes its declared interval.
 This adds1,800 rows beyond checkpoint003; previous cloud checkpoints are contained here and are not added again.
 The55,000-row reference ensemble remains incomplete, and generated landscapes and fresh spatial comparisons remain separate requirements.
+
+### Complete generated-landscape sizing sample
+
+The [complete audit](results/generated-sizing-complete-2026-10-16/analysis.json) validates all 550 selected inputs and 6,600 exact archived measurements.
+The retained native archive includes timings, outputs, commands, and frozen selection for independent replay of this audit.
+This supersedes the 223-input snapshot; their counts are not additive.
+
+Stratum-weighted timing projects 19,831.91 CPU-hours, or 2,494.73 elapsed hours on one eight-worker node, for all 2,727,994 inputs.
+At an assumed $0.4824 per node-hour, the elapsed projection costs $1,203.46.
+This includes per-input Java startup and excludes setup, retries, transfer, and idle time.
+One observation per stratum provides no within-stratum variance estimate or confidence interval; this is not a guaranteed budget.
+The full generated ensemble remains unstarted. Benchmarking repeated inputs within one Java process is a possible next efficiency check, subject to exact-output validation.
