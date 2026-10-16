@@ -374,3 +374,20 @@ This identifies an equation/parameter ambiguity requiring an explicit choice bef
 It does not establish that the author intended delay three for panel (b), nor recover the agent-based curves in panel (a).
 Original agent dynamics and evolutionary cases remain unresolved; no model rule was changed to match these fits.
 An independent standard-library calculation reproduces all eight fitted cases within 1.8e-14; a wrong source PDF is rejected before output creation.
+
+### Forward reconstruction of Figure 6(b)
+
+[Forward replay](results/figure6-forward-replay-2026-10-16) advances each recurrence for 80 cycles from population one at cycle one, using inferred K=833 and zero delay.
+These inputs were chosen after the vector diagnostic; this is an exploratory reconstruction, not an independently specified replication.
+`replay_figure6.py EXTRACTION NEW_OUTPUT` retains four algebraically equivalent floating-point expressions for all four legend rates.
+It compares 262 available vertices per expression, totaling 1,048 comparisons; omitted late vertices remain unmeasured.
+
+For `N*(1+r-r*N/K)`, maximum population differences are 0.075, 0.057, 0.066 and 0.759 for rates 0.025, 0.47, 2 and 2.7, respectively.
+For the chaotic rate 2.7, all expressions have maximum differences below 0.075 through cycle 40.
+Their maximum differences through cycle 80 range from 0.759 to 10.013 agents.
+Every expression is retained; no best-fitting expression is designated as the author's implementation.
+This sensitivity prevents interpreting late chaotic differences alone as evidence of a different model rule.
+
+A fresh original-PDF extraction followed by replay produces byte-identical comparison and report files.
+Changing a retained vector ordinate fails the input-hash check before any result directory is created.
+This advances the discrete-curve reconstruction only; panel (a), evolutionary societies and paper-level completion remain outstanding.
