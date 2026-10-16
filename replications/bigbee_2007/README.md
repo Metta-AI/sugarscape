@@ -132,3 +132,25 @@ One difference is a comment; `anim3-6` removes an explicit culture-output settin
 Crucially, `fig3-4` changes `reproduction_min` from 0 to 25.
 The 2011 high-amplitude population pilot therefore does not use the recovered 2007 release’s fertility threshold.
 Both configuration versions and their hashes remain preserved in the comparison evidence.
+
+## Native historical-release audit
+
+[Retained native evidence](results/historical-native-2026-10-16/audit.json) covers replacement (`anim2-3`) and reproduction (`fig3-4`, `fig3-5`).
+Each uses seed zero and a 1,000 scheduled-time limit, with two native repeats and one read-only population observer.
+All nine runs exit successfully; repeats and observer output match byte-for-byte within each configuration.
+
+Compilation uses the archive’s MASON sources and bundled libraries with OpenJDK 11.
+The unmodified build fails because modern Java introduces an ambiguous `Console` class name.
+A separate source overlay qualifies `sim.display.Console`; original files remain untouched.
+The patch, failed build, successful build, source/library hashes, and exact commands are retained.
+No agent, environment, or scheduling rule is changed.
+
+Replacement population accounting agrees in all 1,002 states.
+Both reproduction configurations disagree in 989 of 1,002 states, beginning at time 13.
+For `fig3-4`, the first reported/grid/registry counts are 408/405/400; final counts are 344/343/0.
+For `fig3-5`, those counts are 407/402/399 initially and 872/862/0 finally.
+The observer’s registered-living count also reaches zero despite living grid agents.
+Native Gini debug lines and nonfinite outputs are preserved.
+
+These measurements confirm population-accounting defects in the recovered release, using its original configurations.
+They do not authenticate the historical experiment version or establish a negative replication of the chapter.
