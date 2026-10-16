@@ -255,3 +255,17 @@ This does not prove indefinite population survival or exclude lingering modifier
 
 The stopping-time ambiguity alone cannot explain renewed transmission in these trajectories.
 Historical source and configuration differences remain unresolved, so the study remains incomplete rather than a validated negative replication.
+
+## Figure 3 survivor-panel audit
+
+The [embedded-image audit](results/figure3-panel-2026-10-16/audit.json) reads the lower-left panel of Figure3 directly from PDF page10.
+Its 50-by-50 grid contains 18 blue agent cells and no red agent cells.
+All nine center-sampling offsets within half a pixel identify the same cells; the extracted image and coordinates are retained.
+This agrees with the prose’s roughly20 survivors, independently of the replay outputs.
+The paper’s165-agent statement concerns an intermediate population, not initialization or an exact infection count.
+
+Both existing baseline observer summaries were rechecked against raw agent observations and native trajectories across1,002 records.
+The archived and pre-conference runs have minimum populations143 and136; neither contains the pictured18-agent state through step500.
+Their minimum populations after infection clears are647 and155, respectively.
+Unlike Figure2’s timing discrepancy, this mismatch is supported by both the disease image and prose.
+The panel has no timestep label, and the historical source/configuration remains unresolved; this does not establish a completed negative replication.
