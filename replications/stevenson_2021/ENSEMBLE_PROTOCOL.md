@@ -37,4 +37,5 @@ If a society becomes extinct, the analysis reports its seed and terminal outcome
 It does not silently replace undefined mean age/Gini with zero or exclude the extinct society from the population studied.
 
 The incomplete live ensemble was rejected by the 100-run completion check, with no analysis directory created.
-Successful full-ensemble analysis remains to be executed after both batches finish.
+Both complete 100-seed ensembles subsequently passed this analysis, with no extinct seeds.
+Their complete observations and descriptive comparisons are retained in the study results.

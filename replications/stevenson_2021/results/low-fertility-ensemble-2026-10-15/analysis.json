@@ -1,0 +1,2720 @@
+{
+  "experiment": {
+    "scenario": "low-fertility",
+    "first_seed": 1,
+    "last_seed": 100,
+    "cycles": 100000
+  },
+  "validated_runs": 100,
+  "extinct_seeds": [],
+  "per_seed": [
+    {
+      "seed": 1,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 849.0,
+        "wealth": 4633.0,
+        "mean_age": 432.1896348645465,
+        "gini": 0.5511228532342236
+      },
+      "trajectory_sha256": "53a0e7fd0c9dcab3a42218a5a40e670d273ccd443d7e927e7768f3010e02010d",
+      "windows": {
+        "earlier": {
+          "population": 836.56,
+          "wealth": 4555.62,
+          "mean_age": 439.20816209293537,
+          "gini": 0.5307869019967372
+        },
+        "later": {
+          "population": 837.12,
+          "wealth": 4561.596,
+          "mean_age": 439.3314768607227,
+          "gini": 0.531460034931899
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 833.0,
+        "wealth": 4207.0,
+        "mean_age": 460.67587034813926,
+        "gini": 0.5393309213392987
+      },
+      "trajectory_sha256": "abe331151461d27e4b74be03fba5c5074778f975aa325a34a6ab751c1aceb748",
+      "windows": {
+        "earlier": {
+          "population": 836.244,
+          "wealth": 4490.38,
+          "mean_age": 428.9302363657198,
+          "gini": 0.5285005202021003
+        },
+        "later": {
+          "population": 836.596,
+          "wealth": 4576.092,
+          "mean_age": 440.3957727482719,
+          "gini": 0.5338099793581411
+        }
+      }
+    },
+    {
+      "seed": 3,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 846.0,
+        "wealth": 4438.0,
+        "mean_age": 423.5898345153664,
+        "gini": 0.5368401203020976
+      },
+      "trajectory_sha256": "7539506b8126cd551fb28475a1b977b1b7a27e25a99e0f9d81202f86ace598f2",
+      "windows": {
+        "earlier": {
+          "population": 835.64,
+          "wealth": 4550.084,
+          "mean_age": 439.4007785090157,
+          "gini": 0.5298030826965199
+        },
+        "later": {
+          "population": 836.808,
+          "wealth": 4523.516,
+          "mean_age": 435.0569515454264,
+          "gini": 0.5302067192200547
+        }
+      }
+    },
+    {
+      "seed": 4,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 839.0,
+        "wealth": 4687.0,
+        "mean_age": 437.357568533969,
+        "gini": 0.5203757610187993
+      },
+      "trajectory_sha256": "b9b1de99996a27e2ae0d2b90c93f162c052ff9c6c9bf512d2f26c69b7145c377",
+      "windows": {
+        "earlier": {
+          "population": 836.5,
+          "wealth": 4602.088,
+          "mean_age": 442.23010518894205,
+          "gini": 0.5357987442015426
+        },
+        "later": {
+          "population": 836.236,
+          "wealth": 4605.588,
+          "mean_age": 452.1149333577123,
+          "gini": 0.5341477142706506
+        }
+      }
+    },
+    {
+      "seed": 5,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 844.0,
+        "wealth": 4782.0,
+        "mean_age": 428.3009478672986,
+        "gini": 0.5375242070877957
+      },
+      "trajectory_sha256": "a22ccb95686a66e97417a4ab4c0ee3af49368f8ebe76586af81192f953eeb45a",
+      "windows": {
+        "earlier": {
+          "population": 837.112,
+          "wealth": 4545.496,
+          "mean_age": 442.20791460340484,
+          "gini": 0.5289535687961184
+        },
+        "later": {
+          "population": 836.292,
+          "wealth": 4577.732,
+          "mean_age": 438.85042144637697,
+          "gini": 0.5328032766914321
+        }
+      }
+    },
+    {
+      "seed": 6,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 834.0,
+        "wealth": 4403.0,
+        "mean_age": 416.04556354916065,
+        "gini": 0.536012616207284
+      },
+      "trajectory_sha256": "3353a9fe05fc18a414099b9b902fe0efc43699a10394662748a4d8e5d8d78440",
+      "windows": {
+        "earlier": {
+          "population": 835.784,
+          "wealth": 4601.768,
+          "mean_age": 439.0194921144734,
+          "gini": 0.5310925069023924
+        },
+        "later": {
+          "population": 836.544,
+          "wealth": 4560.372,
+          "mean_age": 440.60613967638363,
+          "gini": 0.5303793051457808
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 849.0,
+        "wealth": 4734.0,
+        "mean_age": 414.55241460541816,
+        "gini": 0.517437697273514
+      },
+      "trajectory_sha256": "638f0347320cf7b387bb29632f637db31391fe78a53a5bf620789bb4fbd4a7ab",
+      "windows": {
+        "earlier": {
+          "population": 836.108,
+          "wealth": 4547.892,
+          "mean_age": 443.125324177203,
+          "gini": 0.532629234925971
+        },
+        "later": {
+          "population": 836.944,
+          "wealth": 4480.456,
+          "mean_age": 430.1705876079405,
+          "gini": 0.529510122185212
+        }
+      }
+    },
+    {
+      "seed": 8,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 829.0,
+        "wealth": 4705.0,
+        "mean_age": 418.51387213510253,
+        "gini": 0.5098690021266803
+      },
+      "trajectory_sha256": "42e9444a10fedfaa275027756de0e9685be185de882c1e889b72d2f43fac019d",
+      "windows": {
+        "earlier": {
+          "population": 837.188,
+          "wealth": 4561.732,
+          "mean_age": 441.59192216201325,
+          "gini": 0.5303704601078809
+        },
+        "later": {
+          "population": 835.7,
+          "wealth": 4534.168,
+          "mean_age": 435.37992691781056,
+          "gini": 0.5303731461820383
+        }
+      }
+    },
+    {
+      "seed": 9,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 824.0,
+        "wealth": 4324.0,
+        "mean_age": 440.9101941747573,
+        "gini": 0.5065652982226094
+      },
+      "trajectory_sha256": "bae3d0ea7b4a6d9dd9b5712aab96e43103f8470e318ead3fabe0f04ec999a07f",
+      "windows": {
+        "earlier": {
+          "population": 836.944,
+          "wealth": 4550.068,
+          "mean_age": 451.0389422667363,
+          "gini": 0.5321694136987889
+        },
+        "later": {
+          "population": 836.792,
+          "wealth": 4599.348,
+          "mean_age": 455.30133272365146,
+          "gini": 0.5325254834690799
+        }
+      }
+    },
+    {
+      "seed": 10,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 841.0,
+        "wealth": 4652.0,
+        "mean_age": 433.1034482758621,
+        "gini": 0.5289443738414839
+      },
+      "trajectory_sha256": "4aba00386da3be104edef03ac96dff05caa03ab6d504df583b2adbe0d7ed756e",
+      "windows": {
+        "earlier": {
+          "population": 836.432,
+          "wealth": 4545.06,
+          "mean_age": 437.17203661613036,
+          "gini": 0.5310802642452361
+        },
+        "later": {
+          "population": 836.88,
+          "wealth": 4554.916,
+          "mean_age": 439.1075616565245,
+          "gini": 0.53217397120645
+        }
+      }
+    },
+    {
+      "seed": 11,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 845.0,
+        "wealth": 4653.0,
+        "mean_age": 401.7301775147929,
+        "gini": 0.5396444617393881
+      },
+      "trajectory_sha256": "6efbcff6e360e1f6e07e44f0969b031347152541dec7ab25b149c95cda4523a3",
+      "windows": {
+        "earlier": {
+          "population": 836.768,
+          "wealth": 4536.324,
+          "mean_age": 443.311928345313,
+          "gini": 0.5304702505784306
+        },
+        "later": {
+          "population": 837.756,
+          "wealth": 4493.232,
+          "mean_age": 427.87265854923555,
+          "gini": 0.5279257730298513
+        }
+      }
+    },
+    {
+      "seed": 12,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 842.0,
+        "wealth": 4519.0,
+        "mean_age": 429.9560570071259,
+        "gini": 0.5423217042426831
+      },
+      "trajectory_sha256": "2cca442ec5753936caf3123fe804d22a6a265634d0f9f6f016dad522001cc29c",
+      "windows": {
+        "earlier": {
+          "population": 835.536,
+          "wealth": 4563.476,
+          "mean_age": 438.3004107123092,
+          "gini": 0.5324060484481687
+        },
+        "later": {
+          "population": 836.488,
+          "wealth": 4455.948,
+          "mean_age": 428.13302888653635,
+          "gini": 0.5269517123699177
+        }
+      }
+    },
+    {
+      "seed": 13,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 832.0,
+        "wealth": 4528.0,
+        "mean_age": 427.7512019230769,
+        "gini": 0.5296329250475673
+      },
+      "trajectory_sha256": "93af1bbb41c31a7847f6a2f62908d2b048c09c66fea4cd6179597e7858350a24",
+      "windows": {
+        "earlier": {
+          "population": 836.184,
+          "wealth": 4555.544,
+          "mean_age": 439.5485911581923,
+          "gini": 0.5304005108164613
+        },
+        "later": {
+          "population": 836.272,
+          "wealth": 4532.548,
+          "mean_age": 440.7225129667458,
+          "gini": 0.5289405549046988
+        }
+      }
+    },
+    {
+      "seed": 14,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 830.0,
+        "wealth": 4794.0,
+        "mean_age": 439.5855421686747,
+        "gini": 0.5157164326894563
+      },
+      "trajectory_sha256": "3f2072c7e708a6105db9203d9de7ed208ef1ec4bd2f837b2c445cb7e0b1f8fc5",
+      "windows": {
+        "earlier": {
+          "population": 836.356,
+          "wealth": 4550.548,
+          "mean_age": 435.8423246422039,
+          "gini": 0.531495082116951
+        },
+        "later": {
+          "population": 837.612,
+          "wealth": 4541.884,
+          "mean_age": 441.866948206078,
+          "gini": 0.5282897863463936
+        }
+      }
+    },
+    {
+      "seed": 15,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 835.0,
+        "wealth": 4782.0,
+        "mean_age": 433.2299401197605,
+        "gini": 0.5515067731538179
+      },
+      "trajectory_sha256": "ea20ddbb77b87d9e9c59c5b54db3e42df0c3a499da29a2d8a7ff5ee96c0cdb00",
+      "windows": {
+        "earlier": {
+          "population": 836.312,
+          "wealth": 4545.432,
+          "mean_age": 443.7557698933797,
+          "gini": 0.530949052867735
+        },
+        "later": {
+          "population": 836.508,
+          "wealth": 4499.732,
+          "mean_age": 435.98335797943315,
+          "gini": 0.5295797086700815
+        }
+      }
+    },
+    {
+      "seed": 16,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 833.0,
+        "wealth": 4593.0,
+        "mean_age": 443.96038415366144,
+        "gini": 0.5330262738668294
+      },
+      "trajectory_sha256": "64ea30b1134eca82b17483237bd8de7ec53acb24c5f97c3201cf72032be52570",
+      "windows": {
+        "earlier": {
+          "population": 836.352,
+          "wealth": 4521.42,
+          "mean_age": 431.0922951400964,
+          "gini": 0.5308373008455101
+        },
+        "later": {
+          "population": 835.932,
+          "wealth": 4557.104,
+          "mean_age": 447.20980076239016,
+          "gini": 0.5306241521381221
+        }
+      }
+    },
+    {
+      "seed": 17,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 829.0,
+        "wealth": 4398.0,
+        "mean_age": 406.58745476477685,
+        "gini": 0.5257697462000217
+      },
+      "trajectory_sha256": "76acb011b4f86cfae383ece3796093258d78b60c2020a61adaef2897bbd96ae2",
+      "windows": {
+        "earlier": {
+          "population": 836.56,
+          "wealth": 4519.532,
+          "mean_age": 433.64490690095437,
+          "gini": 0.528388935181164
+        },
+        "later": {
+          "population": 837.144,
+          "wealth": 4509.944,
+          "mean_age": 429.28692599317304,
+          "gini": 0.531313120951112
+        }
+      }
+    },
+    {
+      "seed": 18,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 842.0,
+        "wealth": 4366.0,
+        "mean_age": 473.3859857482185,
+        "gini": 0.5313984220542456
+      },
+      "trajectory_sha256": "f3ac3cfd4b68ea62b7cbeba8e85d432d43739721cf62b7f0362a7b1dd8314f6f",
+      "windows": {
+        "earlier": {
+          "population": 836.816,
+          "wealth": 4485.072,
+          "mean_age": 427.1560103481219,
+          "gini": 0.5264217574675137
+        },
+        "later": {
+          "population": 835.844,
+          "wealth": 4514.456,
+          "mean_age": 436.21678303305436,
+          "gini": 0.5261631218768172
+        }
+      }
+    },
+    {
+      "seed": 19,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 833.0,
+        "wealth": 4466.0,
+        "mean_age": 406.94117647058823,
+        "gini": 0.533142768975033
+      },
+      "trajectory_sha256": "e9dbc816276b9b4a6ddea19efadcb97c35e1cb1a650369186927b1251269a210",
+      "windows": {
+        "earlier": {
+          "population": 836.372,
+          "wealth": 4501.464,
+          "mean_age": 430.6020399719147,
+          "gini": 0.5265249973164018
+        },
+        "later": {
+          "population": 836.324,
+          "wealth": 4538.824,
+          "mean_age": 438.1278769452936,
+          "gini": 0.5293131870365574
+        }
+      }
+    },
+    {
+      "seed": 20,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 838.0,
+        "wealth": 4631.0,
+        "mean_age": 450.1968973747017,
+        "gini": 0.5189328016186445
+      },
+      "trajectory_sha256": "229b53e9b14c427689e4325eaa94aa174b9dd249f35f444f016d0952eb2a45f1",
+      "windows": {
+        "earlier": {
+          "population": 836.964,
+          "wealth": 4588.292,
+          "mean_age": 444.32221948376053,
+          "gini": 0.5301508191316869
+        },
+        "later": {
+          "population": 836.096,
+          "wealth": 4605.916,
+          "mean_age": 444.08324919632776,
+          "gini": 0.5335970860128985
+        }
+      }
+    },
+    {
+      "seed": 21,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 836.0,
+        "wealth": 4490.0,
+        "mean_age": 461.4377990430622,
+        "gini": 0.52351797188862
+      },
+      "trajectory_sha256": "c8f19231951429920975e0005e1076a5014b51487f26021b805db20515e0d408",
+      "windows": {
+        "earlier": {
+          "population": 836.204,
+          "wealth": 4530.316,
+          "mean_age": 434.3594584763844,
+          "gini": 0.5319311693598683
+        },
+        "later": {
+          "population": 836.032,
+          "wealth": 4506.672,
+          "mean_age": 429.0116104612448,
+          "gini": 0.5306315675608445
+        }
+      }
+    },
+    {
+      "seed": 22,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 837.0,
+        "wealth": 5177.0,
+        "mean_age": 478.7180406212664,
+        "gini": 0.5178331047466864
+      },
+      "trajectory_sha256": "cacbc01df92ff5566ef80507c6da21b09fe02c8a8367df9b479eaed8b8355d99",
+      "windows": {
+        "earlier": {
+          "population": 836.236,
+          "wealth": 4522.424,
+          "mean_age": 431.2251494541162,
+          "gini": 0.5294561417911592
+        },
+        "later": {
+          "population": 836.796,
+          "wealth": 4581.68,
+          "mean_age": 436.95439509927945,
+          "gini": 0.5292945774355425
+        }
+      }
+    },
+    {
+      "seed": 23,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 834.0,
+        "wealth": 4284.0,
+        "mean_age": 449.44484412470024,
+        "gini": 0.5345454728654051
+      },
+      "trajectory_sha256": "598297fc0c2c02e729636cc27605b0500e45f75cd1bf6f03a3fbfb1a7cb93b7a",
+      "windows": {
+        "earlier": {
+          "population": 836.892,
+          "wealth": 4498.604,
+          "mean_age": 433.44144441538793,
+          "gini": 0.5306997985241105
+        },
+        "later": {
+          "population": 836.684,
+          "wealth": 4512.324,
+          "mean_age": 435.5363007239605,
+          "gini": 0.5284444892341768
+        }
+      }
+    },
+    {
+      "seed": 24,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 827.0,
+        "wealth": 4389.0,
+        "mean_age": 458.34582829504234,
+        "gini": 0.5337533125988545
+      },
+      "trajectory_sha256": "82948b5c20c27553b89b5e1119dc240fdeb2489c586903ce68dbdd256c2eec3d",
+      "windows": {
+        "earlier": {
+          "population": 836.308,
+          "wealth": 4473.048,
+          "mean_age": 424.0167415873356,
+          "gini": 0.527095818348294
+        },
+        "later": {
+          "population": 836.636,
+          "wealth": 4531.384,
+          "mean_age": 442.0227475327941,
+          "gini": 0.5338267600996349
+        }
+      }
+    },
+    {
+      "seed": 25,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 842.0,
+        "wealth": 4765.0,
+        "mean_age": 446.98693586698334,
+        "gini": 0.513999047887282
+      },
+      "trajectory_sha256": "3afb251984934f018429da80794427d6f32a3f27ef31e3eb296a8284e0f9ef2a",
+      "windows": {
+        "earlier": {
+          "population": 837.236,
+          "wealth": 4544.816,
+          "mean_age": 437.7908808048954,
+          "gini": 0.5302151599873457
+        },
+        "later": {
+          "population": 836.392,
+          "wealth": 4512.888,
+          "mean_age": 433.68726686473155,
+          "gini": 0.5286446904143638
+        }
+      }
+    },
+    {
+      "seed": 26,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 831.0,
+        "wealth": 4787.0,
+        "mean_age": 452.1817087845969,
+        "gini": 0.5254076360540241
+      },
+      "trajectory_sha256": "18904b6d6ddc1fa7a80a4c9a6807d962c74f5f72c115002dc8130a459ba6d807",
+      "windows": {
+        "earlier": {
+          "population": 835.808,
+          "wealth": 4552.928,
+          "mean_age": 437.5005574954371,
+          "gini": 0.5287217743705933
+        },
+        "later": {
+          "population": 836.748,
+          "wealth": 4512.212,
+          "mean_age": 442.29250718438544,
+          "gini": 0.5295445306682166
+        }
+      }
+    },
+    {
+      "seed": 27,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 835.0,
+        "wealth": 4695.0,
+        "mean_age": 406.5377245508982,
+        "gini": 0.5386849304585717
+      },
+      "trajectory_sha256": "e602fcccca3cd0b9029459828fc34382e6e4e7b1d7cf4083504b00dbcaa57381",
+      "windows": {
+        "earlier": {
+          "population": 836.684,
+          "wealth": 4567.84,
+          "mean_age": 447.8161002174428,
+          "gini": 0.5315283306645832
+        },
+        "later": {
+          "population": 837.016,
+          "wealth": 4523.348,
+          "mean_age": 429.2384462227839,
+          "gini": 0.5280462148485098
+        }
+      }
+    },
+    {
+      "seed": 28,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 835.0,
+        "wealth": 4511.0,
+        "mean_age": 418.25988023952095,
+        "gini": 0.5169452715053156
+      },
+      "trajectory_sha256": "dac2f08995cb2bab8854e4a7f6bb64cdde077fc635a6aae95386468cd1311cc9",
+      "windows": {
+        "earlier": {
+          "population": 836.412,
+          "wealth": 4583.784,
+          "mean_age": 445.2646103977448,
+          "gini": 0.5325854482887987
+        },
+        "later": {
+          "population": 835.928,
+          "wealth": 4541.6,
+          "mean_age": 430.7400715891237,
+          "gini": 0.5295771673301616
+        }
+      }
+    },
+    {
+      "seed": 29,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 837.0,
+        "wealth": 4475.0,
+        "mean_age": 433.9617682198327,
+        "gini": 0.5393697896851617
+      },
+      "trajectory_sha256": "18abb4f565ef2f64d7099b734be572ad93017a91c1683327a867e1839c5eaffb",
+      "windows": {
+        "earlier": {
+          "population": 836.584,
+          "wealth": 4518.632,
+          "mean_age": 431.5744343591305,
+          "gini": 0.5280109998569966
+        },
+        "later": {
+          "population": 836.336,
+          "wealth": 4539.152,
+          "mean_age": 434.43691114505964,
+          "gini": 0.5306325939680518
+        }
+      }
+    },
+    {
+      "seed": 30,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 841.0,
+        "wealth": 4251.0,
+        "mean_age": 384.09155766944116,
+        "gini": 0.5467385305716694
+      },
+      "trajectory_sha256": "eec47b761015b485ccdc156d6b96f4a7177f1edfdf66f4c8de56fc7090fe28d6",
+      "windows": {
+        "earlier": {
+          "population": 836.164,
+          "wealth": 4565.68,
+          "mean_age": 442.7081435065584,
+          "gini": 0.5283378320884551
+        },
+        "later": {
+          "population": 835.496,
+          "wealth": 4530.824,
+          "mean_age": 437.5663405690908,
+          "gini": 0.5303349327303886
+        }
+      }
+    },
+    {
+      "seed": 31,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 822.0,
+        "wealth": 4758.0,
+        "mean_age": 489.3175182481752,
+        "gini": 0.5229098079403212
+      },
+      "trajectory_sha256": "8745459818008c2d45fb4cbffada00604330c999a4ebe7c64ecebfa673d99c81",
+      "windows": {
+        "earlier": {
+          "population": 836.72,
+          "wealth": 4552.792,
+          "mean_age": 443.62671355529557,
+          "gini": 0.530962538821765
+        },
+        "later": {
+          "population": 836.268,
+          "wealth": 4561.192,
+          "mean_age": 440.62707944216874,
+          "gini": 0.533960941657801
+        }
+      }
+    },
+    {
+      "seed": 32,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 846.0,
+        "wealth": 4437.0,
+        "mean_age": 468.40425531914894,
+        "gini": 0.5378740773774795
+      },
+      "trajectory_sha256": "8dbd2eac027d0055839dcc3db24aae6e779e9a36f54ca393d23708bcb6cb99fd",
+      "windows": {
+        "earlier": {
+          "population": 835.044,
+          "wealth": 4541.168,
+          "mean_age": 438.7681987501543,
+          "gini": 0.5316117714103284
+        },
+        "later": {
+          "population": 836.712,
+          "wealth": 4584.28,
+          "mean_age": 444.12627015925915,
+          "gini": 0.5287211685506422
+        }
+      }
+    },
+    {
+      "seed": 33,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 842.0,
+        "wealth": 4385.0,
+        "mean_age": 402.55106888361047,
+        "gini": 0.5315082999970209
+      },
+      "trajectory_sha256": "8bb6a0906e590f9d6c4c32081e5226836227133dc1b61d5f1b8484a5e98d459f",
+      "windows": {
+        "earlier": {
+          "population": 836.204,
+          "wealth": 4558.848,
+          "mean_age": 438.345235035219,
+          "gini": 0.5309954907642225
+        },
+        "later": {
+          "population": 836.552,
+          "wealth": 4537.344,
+          "mean_age": 441.1374166310553,
+          "gini": 0.5316327972298418
+        }
+      }
+    },
+    {
+      "seed": 34,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 846.0,
+        "wealth": 4676.0,
+        "mean_age": 424.33924349881795,
+        "gini": 0.5321277404663822
+      },
+      "trajectory_sha256": "514956d612a3cc0e426998747a4a0525716ddade3b85ba46dd38daa488a88675",
+      "windows": {
+        "earlier": {
+          "population": 837.184,
+          "wealth": 4531.712,
+          "mean_age": 440.34944099598425,
+          "gini": 0.5287353103775246
+        },
+        "later": {
+          "population": 836.892,
+          "wealth": 4566.928,
+          "mean_age": 439.34963624377286,
+          "gini": 0.5304416397191686
+        }
+      }
+    },
+    {
+      "seed": 35,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 837.0,
+        "wealth": 4500.0,
+        "mean_age": 434.7455197132617,
+        "gini": 0.5381266427718041
+      },
+      "trajectory_sha256": "fe462119f874cdd0e989968c66dd041ea68395c9b7e7ea289355a215172c37d9",
+      "windows": {
+        "earlier": {
+          "population": 836.712,
+          "wealth": 4554.976,
+          "mean_age": 436.0217944217995,
+          "gini": 0.530976198960549
+        },
+        "later": {
+          "population": 836.692,
+          "wealth": 4539.124,
+          "mean_age": 438.39866595031214,
+          "gini": 0.5311530931982363
+        }
+      }
+    },
+    {
+      "seed": 36,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 831.0,
+        "wealth": 4477.0,
+        "mean_age": 469.45487364620936,
+        "gini": 0.542592477610528
+      },
+      "trajectory_sha256": "d42f6f4fb4505d2dc9fcb30ff341f8f5dd877af5160acb3ece70df4e797674cf",
+      "windows": {
+        "earlier": {
+          "population": 835.936,
+          "wealth": 4493.072,
+          "mean_age": 427.4020874040263,
+          "gini": 0.5300053084975038
+        },
+        "later": {
+          "population": 836.284,
+          "wealth": 4562.852,
+          "mean_age": 436.3548461050435,
+          "gini": 0.5278921019697159
+        }
+      }
+    },
+    {
+      "seed": 37,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 840.0,
+        "wealth": 4669.0,
+        "mean_age": 464.43690476190477,
+        "gini": 0.5517544799029057
+      },
+      "trajectory_sha256": "0fbb430b6e77dcc1f0e8a59912aab0a4110cad30ccb4d891e74d52be768f8c94",
+      "windows": {
+        "earlier": {
+          "population": 836.396,
+          "wealth": 4586.288,
+          "mean_age": 448.92836618334604,
+          "gini": 0.5298830653011448
+        },
+        "later": {
+          "population": 836.404,
+          "wealth": 4525.624,
+          "mean_age": 435.099855825307,
+          "gini": 0.5304344789774935
+        }
+      }
+    },
+    {
+      "seed": 38,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 827.0,
+        "wealth": 4284.0,
+        "mean_age": 411.223700120919,
+        "gini": 0.543346802646895
+      },
+      "trajectory_sha256": "368e9bfbe7fdf60a04dba90ad83ad7fc7a481d96a69133e73fa65c36258d9caf",
+      "windows": {
+        "earlier": {
+          "population": 836.224,
+          "wealth": 4523.668,
+          "mean_age": 436.00590383641025,
+          "gini": 0.5298729566142567
+        },
+        "later": {
+          "population": 836.328,
+          "wealth": 4556.172,
+          "mean_age": 442.4674992725587,
+          "gini": 0.5318117516201228
+        }
+      }
+    },
+    {
+      "seed": 39,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 844.0,
+        "wealth": 4869.0,
+        "mean_age": 424.11611374407585,
+        "gini": 0.5135354340595644
+      },
+      "trajectory_sha256": "9e2366930ea9ea78efdb1568fe82f30e29c81aa37d9bd62815c98ae41c25cdb4",
+      "windows": {
+        "earlier": {
+          "population": 836.256,
+          "wealth": 4553.344,
+          "mean_age": 443.52273892245535,
+          "gini": 0.5307566949779297
+        },
+        "later": {
+          "population": 835.36,
+          "wealth": 4541.024,
+          "mean_age": 442.00010664623346,
+          "gini": 0.5283478506401907
+        }
+      }
+    },
+    {
+      "seed": 40,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 845.0,
+        "wealth": 4102.0,
+        "mean_age": 428.15739644970415,
+        "gini": 0.5542033183408872
+      },
+      "trajectory_sha256": "64da757c9feb580fa777ea119b3b949ebc817b5a07299450c07b211a7d321983",
+      "windows": {
+        "earlier": {
+          "population": 836.248,
+          "wealth": 4506.316,
+          "mean_age": 434.5157841373603,
+          "gini": 0.5292604510752758
+        },
+        "later": {
+          "population": 836.716,
+          "wealth": 4604.412,
+          "mean_age": 444.1378575011883,
+          "gini": 0.5326874865110984
+        }
+      }
+    },
+    {
+      "seed": 41,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 830.0,
+        "wealth": 4749.0,
+        "mean_age": 438.7843373493976,
+        "gini": 0.5207617583410078
+      },
+      "trajectory_sha256": "dccea1a9ca1c391ce076d44d7754d491b4eccad6a497a39aa4a38253e9833338",
+      "windows": {
+        "earlier": {
+          "population": 836.032,
+          "wealth": 4572.84,
+          "mean_age": 439.697718574782,
+          "gini": 0.5298463561863528
+        },
+        "later": {
+          "population": 836.688,
+          "wealth": 4534.388,
+          "mean_age": 436.50433903450977,
+          "gini": 0.5310510185833772
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 828.0,
+        "wealth": 4756.0,
+        "mean_age": 441.29227053140096,
+        "gini": 0.5147888454146909
+      },
+      "trajectory_sha256": "bd2a7858603d2e76df6fb4705ae0a08b30b693741e4b35d4c1f4892d5740f0d9",
+      "windows": {
+        "earlier": {
+          "population": 836.268,
+          "wealth": 4590.988,
+          "mean_age": 448.806124177399,
+          "gini": 0.5332079460414364
+        },
+        "later": {
+          "population": 835.956,
+          "wealth": 4586.28,
+          "mean_age": 448.47536221901316,
+          "gini": 0.5322368071594803
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 824.0,
+        "wealth": 4553.0,
+        "mean_age": 441.95631067961165,
+        "gini": 0.5442509366490462
+      },
+      "trajectory_sha256": "d606a5fb5f0afce5cb38a950113d8ef81d0c38880eb588d6c0cab6597657aee9",
+      "windows": {
+        "earlier": {
+          "population": 837.008,
+          "wealth": 4559.832,
+          "mean_age": 441.1100704771846,
+          "gini": 0.5307860654727508
+        },
+        "later": {
+          "population": 836.212,
+          "wealth": 4540.196,
+          "mean_age": 435.5653629772659,
+          "gini": 0.5304227745777949
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 842.0,
+        "wealth": 4183.0,
+        "mean_age": 441.15795724465556,
+        "gini": 0.5418575809903563
+      },
+      "trajectory_sha256": "d165b95dee8eba6798ac896a38ecea0162cb785d7b2b4dd8f007dd77e58e6354",
+      "windows": {
+        "earlier": {
+          "population": 836.184,
+          "wealth": 4498.088,
+          "mean_age": 426.49549415645373,
+          "gini": 0.5296601677011861
+        },
+        "later": {
+          "population": 835.648,
+          "wealth": 4541.172,
+          "mean_age": 439.17667278372426,
+          "gini": 0.5314063306913751
+        }
+      }
+    },
+    {
+      "seed": 45,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 842.0,
+        "wealth": 4467.0,
+        "mean_age": 420.42161520190024,
+        "gini": 0.5505608029747844
+      },
+      "trajectory_sha256": "7bc8839ddd50743f1ed0c9054d28b1e32d023e3e7c07508b383739ecc90c3db7",
+      "windows": {
+        "earlier": {
+          "population": 836.996,
+          "wealth": 4542.424,
+          "mean_age": 438.8502507577019,
+          "gini": 0.529847614937238
+        },
+        "later": {
+          "population": 836.8,
+          "wealth": 4496.44,
+          "mean_age": 430.41405392323816,
+          "gini": 0.5278455761791103
+        }
+      }
+    },
+    {
+      "seed": 46,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 846.0,
+        "wealth": 4306.0,
+        "mean_age": 429.33806146572107,
+        "gini": 0.5390499155063198
+      },
+      "trajectory_sha256": "7aea5e833e886bb978846c72cd371cd7eac92058119bd431ee1f4bb7d4f4dbbc",
+      "windows": {
+        "earlier": {
+          "population": 836.264,
+          "wealth": 4546.404,
+          "mean_age": 438.1219023472569,
+          "gini": 0.5293258737247349
+        },
+        "later": {
+          "population": 837.056,
+          "wealth": 4554.564,
+          "mean_age": 437.6809163863231,
+          "gini": 0.530479663256399
+        }
+      }
+    },
+    {
+      "seed": 47,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 825.0,
+        "wealth": 4407.0,
+        "mean_age": 426.0690909090909,
+        "gini": 0.5396951131464405
+      },
+      "trajectory_sha256": "ffa3cc4cf9210ef8415bc202ca2be39c52b02ae140a8a00e9ba9195bccda5834",
+      "windows": {
+        "earlier": {
+          "population": 836.312,
+          "wealth": 4512.292,
+          "mean_age": 435.2704565682457,
+          "gini": 0.5284657179091533
+        },
+        "later": {
+          "population": 836.056,
+          "wealth": 4548.684,
+          "mean_age": 440.5271078745762,
+          "gini": 0.5320792633349605
+        }
+      }
+    },
+    {
+      "seed": 48,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 826.0,
+        "wealth": 4756.0,
+        "mean_age": 448.046004842615,
+        "gini": 0.5104570345194144
+      },
+      "trajectory_sha256": "cd060fb4f969d3b8acc263cac1a84bac9bd319ad2d8f0dd108253b52a07654c4",
+      "windows": {
+        "earlier": {
+          "population": 836.104,
+          "wealth": 4575.584,
+          "mean_age": 442.601695757073,
+          "gini": 0.5315229614096729
+        },
+        "later": {
+          "population": 836.332,
+          "wealth": 4543.044,
+          "mean_age": 443.88397410045087,
+          "gini": 0.5311689100111537
+        }
+      }
+    },
+    {
+      "seed": 49,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 843.0,
+        "wealth": 4827.0,
+        "mean_age": 427.05100830367735,
+        "gini": 0.5419077790237348
+      },
+      "trajectory_sha256": "9ece2ded5d6642dd266ccde9a5922cdf13361287803c5c17009bac949d8ee25f",
+      "windows": {
+        "earlier": {
+          "population": 836.28,
+          "wealth": 4537.964,
+          "mean_age": 440.9536520891376,
+          "gini": 0.5315042948338107
+        },
+        "later": {
+          "population": 837.408,
+          "wealth": 4579.896,
+          "mean_age": 443.2006478269979,
+          "gini": 0.5337092637424901
+        }
+      }
+    },
+    {
+      "seed": 50,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 840.0,
+        "wealth": 4577.0,
+        "mean_age": 456.8,
+        "gini": 0.5502520365804175
+      },
+      "trajectory_sha256": "fcd3801dc84996a7ed94ce9cfb83f35fe88b7cc77d0849d7cf2c132a34a77f80",
+      "windows": {
+        "earlier": {
+          "population": 836.44,
+          "wealth": 4489.616,
+          "mean_age": 431.7497454780251,
+          "gini": 0.5274741125940191
+        },
+        "later": {
+          "population": 836.464,
+          "wealth": 4516.524,
+          "mean_age": 433.2185135674671,
+          "gini": 0.5290192637191142
+        }
+      }
+    },
+    {
+      "seed": 51,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 828.0,
+        "wealth": 4643.0,
+        "mean_age": 433.3792270531401,
+        "gini": 0.5336127524578582
+      },
+      "trajectory_sha256": "b06957753faca8f3c2bb8bc7b2243a2ce97664efca737f94cb0f90f3665a7281",
+      "windows": {
+        "earlier": {
+          "population": 836.892,
+          "wealth": 4511.984,
+          "mean_age": 435.64088585391414,
+          "gini": 0.5268877116705662
+        },
+        "later": {
+          "population": 837.324,
+          "wealth": 4532.268,
+          "mean_age": 433.5771626237262,
+          "gini": 0.5302051697681232
+        }
+      }
+    },
+    {
+      "seed": 52,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 839.0,
+        "wealth": 4567.0,
+        "mean_age": 464.18951132300356,
+        "gini": 0.5403144755361373
+      },
+      "trajectory_sha256": "3601d426d26bc59e1441b72eaf54083ed12252b08d9a3f5cde114192fe3b6293",
+      "windows": {
+        "earlier": {
+          "population": 836.748,
+          "wealth": 4565.844,
+          "mean_age": 442.8048131403932,
+          "gini": 0.5327818275583429
+        },
+        "later": {
+          "population": 836.416,
+          "wealth": 4589.528,
+          "mean_age": 444.74586725596043,
+          "gini": 0.5321546324028346
+        }
+      }
+    },
+    {
+      "seed": 53,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 838.0,
+        "wealth": 4484.0,
+        "mean_age": 464.1443914081146,
+        "gini": 0.5522387741936858
+      },
+      "trajectory_sha256": "2dfd4c4314aa63539a4618d24a2a99e16df5d28d7552cb5356bc91879407d421",
+      "windows": {
+        "earlier": {
+          "population": 837.048,
+          "wealth": 4545.02,
+          "mean_age": 446.5241907395971,
+          "gini": 0.5278928956302847
+        },
+        "later": {
+          "population": 837.024,
+          "wealth": 4531.348,
+          "mean_age": 435.50108235448016,
+          "gini": 0.5303126786229013
+        }
+      }
+    },
+    {
+      "seed": 54,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 832.0,
+        "wealth": 4680.0,
+        "mean_age": 432.61658653846155,
+        "gini": 0.5106092825443787
+      },
+      "trajectory_sha256": "99e4f129e241e568e7479cd67976f976272dfe94abfb3bafc16f0f011ae2cc7a",
+      "windows": {
+        "earlier": {
+          "population": 836.208,
+          "wealth": 4560.156,
+          "mean_age": 441.4879981481996,
+          "gini": 0.5329038524501892
+        },
+        "later": {
+          "population": 837.116,
+          "wealth": 4497.8,
+          "mean_age": 425.92427816037366,
+          "gini": 0.5275813339011379
+        }
+      }
+    },
+    {
+      "seed": 55,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 832.0,
+        "wealth": 4802.0,
+        "mean_age": 504.75721153846155,
+        "gini": 0.535838432704322
+      },
+      "trajectory_sha256": "e23eeeb4dfe04b050b3babe6680bcc6aacd9c53655ae2fb0d3f1e446da5aed0d",
+      "windows": {
+        "earlier": {
+          "population": 836.208,
+          "wealth": 4564.648,
+          "mean_age": 444.8505882966104,
+          "gini": 0.5300673581683742
+        },
+        "later": {
+          "population": 835.728,
+          "wealth": 4562.16,
+          "mean_age": 440.2719509914768,
+          "gini": 0.5331490475634081
+        }
+      }
+    },
+    {
+      "seed": 56,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 848.0,
+        "wealth": 4787.0,
+        "mean_age": 442.64622641509436,
+        "gini": 0.5250188698952747
+      },
+      "trajectory_sha256": "a40c3f6792f848995dc0f047bfcd9657d4bada4d045915a5fdec360c96aa7fca",
+      "windows": {
+        "earlier": {
+          "population": 835.976,
+          "wealth": 4593.152,
+          "mean_age": 445.91717975810354,
+          "gini": 0.5334498486521034
+        },
+        "later": {
+          "population": 836.652,
+          "wealth": 4551.172,
+          "mean_age": 436.9932504689575,
+          "gini": 0.5320365456237212
+        }
+      }
+    },
+    {
+      "seed": 57,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 840.0,
+        "wealth": 4596.0,
+        "mean_age": 456.67738095238093,
+        "gini": 0.5256226946827469
+      },
+      "trajectory_sha256": "7e5ee9502fb362a0c3e4de2ea94e0aee635036cf46a5ce35d1b1e2ea53d2bfdb",
+      "windows": {
+        "earlier": {
+          "population": 836.48,
+          "wealth": 4547.908,
+          "mean_age": 437.2659232792003,
+          "gini": 0.5289303005956946
+        },
+        "later": {
+          "population": 836.708,
+          "wealth": 4520.756,
+          "mean_age": 429.223344089512,
+          "gini": 0.5276684190261729
+        }
+      }
+    },
+    {
+      "seed": 58,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 835.0,
+        "wealth": 4546.0,
+        "mean_age": 455.3700598802395,
+        "gini": 0.5289345637804901
+      },
+      "trajectory_sha256": "384c3f7ae5fd993afcd7db4b6623ab6eaa7bfb4d9c9199ab0cf5a311a717156c",
+      "windows": {
+        "earlier": {
+          "population": 836.968,
+          "wealth": 4483.016,
+          "mean_age": 429.0043220664165,
+          "gini": 0.5293364168066305
+        },
+        "later": {
+          "population": 836.312,
+          "wealth": 4565.092,
+          "mean_age": 438.69321114949247,
+          "gini": 0.5323600439635545
+        }
+      }
+    },
+    {
+      "seed": 59,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 839.0,
+        "wealth": 4760.0,
+        "mean_age": 430.48271752085816,
+        "gini": 0.5530929177392052
+      },
+      "trajectory_sha256": "84da3b779438a5baf3327c56b3304b0ed32cca9eea0da0f03477f1716a6b51b2",
+      "windows": {
+        "earlier": {
+          "population": 836.52,
+          "wealth": 4569.856,
+          "mean_age": 441.6817201072002,
+          "gini": 0.5340989909925263
+        },
+        "later": {
+          "population": 836.524,
+          "wealth": 4537.176,
+          "mean_age": 440.15186213476926,
+          "gini": 0.5302230445680629
+        }
+      }
+    },
+    {
+      "seed": 60,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 835.0,
+        "wealth": 4529.0,
+        "mean_age": 428.5940119760479,
+        "gini": 0.5288404863930782
+      },
+      "trajectory_sha256": "83ea1d2a01639ef379abd6f8e3bced032ee104b89eea462ba719f640e43e598c",
+      "windows": {
+        "earlier": {
+          "population": 836.972,
+          "wealth": 4618.504,
+          "mean_age": 451.0176591417065,
+          "gini": 0.5313042155424949
+        },
+        "later": {
+          "population": 836.86,
+          "wealth": 4517.556,
+          "mean_age": 430.04397860327117,
+          "gini": 0.5291692212548519
+        }
+      }
+    },
+    {
+      "seed": 61,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 835.0,
+        "wealth": 4457.0,
+        "mean_age": 454.1736526946108,
+        "gini": 0.5535707136321926
+      },
+      "trajectory_sha256": "79fe5416d9af9861a74196c716955e624c71dddf3f366199b27d97eb124b6a20",
+      "windows": {
+        "earlier": {
+          "population": 836.468,
+          "wealth": 4553.228,
+          "mean_age": 436.6009515529532,
+          "gini": 0.5314375351294232
+        },
+        "later": {
+          "population": 836.528,
+          "wealth": 4547.82,
+          "mean_age": 442.4348038319367,
+          "gini": 0.5312644921820584
+        }
+      }
+    },
+    {
+      "seed": 62,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 848.0,
+        "wealth": 4572.0,
+        "mean_age": 420.38443396226415,
+        "gini": 0.5301233719605805
+      },
+      "trajectory_sha256": "577a28d77cdae2992f0e683ebf28e471e03ee247a9d7e6925c1d73ba6d799458",
+      "windows": {
+        "earlier": {
+          "population": 836.364,
+          "wealth": 4527.572,
+          "mean_age": 431.2688075968827,
+          "gini": 0.5306504537057698
+        },
+        "later": {
+          "population": 836.18,
+          "wealth": 4491.652,
+          "mean_age": 430.8677629755493,
+          "gini": 0.5295563490595045
+        }
+      }
+    },
+    {
+      "seed": 63,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 843.0,
+        "wealth": 4259.0,
+        "mean_age": 445.61209964412814,
+        "gini": 0.5345938278217337
+      },
+      "trajectory_sha256": "48778c900fad7c57063b07c1632ca64af3ac0d265ebf6e65ed019307a04b7acf",
+      "windows": {
+        "earlier": {
+          "population": 836.376,
+          "wealth": 4585.848,
+          "mean_age": 448.9461757462379,
+          "gini": 0.5313804232385487
+        },
+        "later": {
+          "population": 836.32,
+          "wealth": 4565.024,
+          "mean_age": 443.3834966328362,
+          "gini": 0.5312483655600195
+        }
+      }
+    },
+    {
+      "seed": 64,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 832.0,
+        "wealth": 4324.0,
+        "mean_age": 432.5276442307692,
+        "gini": 0.5247772939941648
+      },
+      "trajectory_sha256": "6e9c01136cf4dfa2ee23ded106d08c7b2675b39d8db3fe7eb56c6ae099563a01",
+      "windows": {
+        "earlier": {
+          "population": 836.708,
+          "wealth": 4564.648,
+          "mean_age": 439.6234973839398,
+          "gini": 0.5305640568272693
+        },
+        "later": {
+          "population": 836.96,
+          "wealth": 4514.348,
+          "mean_age": 432.56407588110886,
+          "gini": 0.5292080376325247
+        }
+      }
+    },
+    {
+      "seed": 65,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 843.0,
+        "wealth": 4636.0,
+        "mean_age": 421.4128113879004,
+        "gini": 0.5396684055977408
+      },
+      "trajectory_sha256": "dce1b17bc841cbd15612990adb3e11a410051b2ee0656654379d684c49417af3",
+      "windows": {
+        "earlier": {
+          "population": 836.608,
+          "wealth": 4557.296,
+          "mean_age": 436.3532236546552,
+          "gini": 0.5300273819916238
+        },
+        "later": {
+          "population": 837.096,
+          "wealth": 4546.524,
+          "mean_age": 434.3900480419722,
+          "gini": 0.5307813710154972
+        }
+      }
+    },
+    {
+      "seed": 66,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 824.0,
+        "wealth": 4499.0,
+        "mean_age": 452.79247572815535,
+        "gini": 0.5302540262453146
+      },
+      "trajectory_sha256": "bf88283765e858f5f95178c3addf57ffa5a1dbc5ecc9f1b4187e4e140fe364c2",
+      "windows": {
+        "earlier": {
+          "population": 836.6,
+          "wealth": 4600.704,
+          "mean_age": 460.60546937101003,
+          "gini": 0.5329454825695275
+        },
+        "later": {
+          "population": 836.496,
+          "wealth": 4514.084,
+          "mean_age": 436.4316912984355,
+          "gini": 0.5296943502355268
+        }
+      }
+    },
+    {
+      "seed": 67,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 836.0,
+        "wealth": 4511.0,
+        "mean_age": 428.39114832535887,
+        "gini": 0.5286182420643213
+      },
+      "trajectory_sha256": "be2d018d4249e6e78c8257088ed865f405131bbaa2a7048c5930a24efefa7dae",
+      "windows": {
+        "earlier": {
+          "population": 836.356,
+          "wealth": 4592.852,
+          "mean_age": 479.6565712343108,
+          "gini": 0.5357455067605897
+        },
+        "later": {
+          "population": 836.104,
+          "wealth": 4560.636,
+          "mean_age": 440.5528278083137,
+          "gini": 0.5320057897927039
+        }
+      }
+    },
+    {
+      "seed": 68,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 839.0,
+        "wealth": 4137.0,
+        "mean_age": 433.2502979737783,
+        "gini": 0.5592480199185061
+      },
+      "trajectory_sha256": "85b1f1724323daf054ca3bb7a51b967d914987cc26bfdc3fe5cc27e7ac59a961",
+      "windows": {
+        "earlier": {
+          "population": 836.484,
+          "wealth": 4542.556,
+          "mean_age": 436.65469224909987,
+          "gini": 0.5313497807573023
+        },
+        "later": {
+          "population": 836.228,
+          "wealth": 4505.3,
+          "mean_age": 434.7531125682074,
+          "gini": 0.5299773464727289
+        }
+      }
+    },
+    {
+      "seed": 69,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 828.0,
+        "wealth": 4334.0,
+        "mean_age": 426.5495169082126,
+        "gini": 0.5473511321558111
+      },
+      "trajectory_sha256": "132fdc9aebe4084cdc6f3f11091da22f245867492170c7dcdbad5c2493ac835d",
+      "windows": {
+        "earlier": {
+          "population": 835.32,
+          "wealth": 4542.092,
+          "mean_age": 435.0096924400652,
+          "gini": 0.5309186435468153
+        },
+        "later": {
+          "population": 836.908,
+          "wealth": 4573.712,
+          "mean_age": 443.7263558277325,
+          "gini": 0.5320636494398124
+        }
+      }
+    },
+    {
+      "seed": 70,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 829.0,
+        "wealth": 4221.0,
+        "mean_age": 409.1013268998794,
+        "gini": 0.5045906089061842
+      },
+      "trajectory_sha256": "fdced7e337275c6a39146cd9b00fd5139836299a804de09dd2b3daa142d80da4",
+      "windows": {
+        "earlier": {
+          "population": 835.636,
+          "wealth": 4497.86,
+          "mean_age": 432.1515998102454,
+          "gini": 0.5297335392426139
+        },
+        "later": {
+          "population": 835.792,
+          "wealth": 4537.544,
+          "mean_age": 442.82315539397126,
+          "gini": 0.5299170243251969
+        }
+      }
+    },
+    {
+      "seed": 71,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 830.0,
+        "wealth": 4353.0,
+        "mean_age": 454.9759036144578,
+        "gini": 0.5375533837624793
+      },
+      "trajectory_sha256": "766452a672b42c4d35962d68d87d1264ad64de2b2c7aa3548f5113cc832b0c9b",
+      "windows": {
+        "earlier": {
+          "population": 836.468,
+          "wealth": 4561.692,
+          "mean_age": 440.28435220575363,
+          "gini": 0.5290628715274875
+        },
+        "later": {
+          "population": 836.896,
+          "wealth": 4535.792,
+          "mean_age": 438.46469535562125,
+          "gini": 0.5289244833341704
+        }
+      }
+    },
+    {
+      "seed": 72,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 843.0,
+        "wealth": 4721.0,
+        "mean_age": 453.37841043890865,
+        "gini": 0.5343852446967852
+      },
+      "trajectory_sha256": "84547763b0d89918564df74949ba7107fbeea1f2eef87585d13c7cacebd815bf",
+      "windows": {
+        "earlier": {
+          "population": 836.532,
+          "wealth": 4592.204,
+          "mean_age": 443.66507148449693,
+          "gini": 0.5331131767989846
+        },
+        "later": {
+          "population": 836.444,
+          "wealth": 4537.98,
+          "mean_age": 441.8835800717596,
+          "gini": 0.5316089598145523
+        }
+      }
+    },
+    {
+      "seed": 73,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 857.0,
+        "wealth": 4580.0,
+        "mean_age": 433.50875145857646,
+        "gini": 0.5350644321360694
+      },
+      "trajectory_sha256": "6dd72aa1e8b54b20066a9a4f5b518721cb989d28c981b85d8cd88cf0c272e8dc",
+      "windows": {
+        "earlier": {
+          "population": 836.26,
+          "wealth": 4509.56,
+          "mean_age": 433.72441642962315,
+          "gini": 0.5298653884490541
+        },
+        "later": {
+          "population": 835.932,
+          "wealth": 4526.1,
+          "mean_age": 441.0851503866474,
+          "gini": 0.5333757265630434
+        }
+      }
+    },
+    {
+      "seed": 74,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 850.0,
+        "wealth": 4139.0,
+        "mean_age": 410.6164705882353,
+        "gini": 0.5385560592925258
+      },
+      "trajectory_sha256": "aa9210bba8a301e727491e6d7b1da8b180ae4d6f3bfbdba1c0a317acb0a83b78",
+      "windows": {
+        "earlier": {
+          "population": 836.956,
+          "wealth": 4537.032,
+          "mean_age": 436.6961441746244,
+          "gini": 0.5319934191061746
+        },
+        "later": {
+          "population": 835.836,
+          "wealth": 4566.028,
+          "mean_age": 435.8268577578822,
+          "gini": 0.5309826903441477
+        }
+      }
+    },
+    {
+      "seed": 75,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 849.0,
+        "wealth": 4730.0,
+        "mean_age": 430.2120141342756,
+        "gini": 0.5229711860988056
+      },
+      "trajectory_sha256": "38066a5d8e8139ec9ff836733c78155b0e2a2796fc1f991cf0f2fd24ce680da9",
+      "windows": {
+        "earlier": {
+          "population": 837.42,
+          "wealth": 4526.036,
+          "mean_age": 434.75200486815254,
+          "gini": 0.5312033056992372
+        },
+        "later": {
+          "population": 836.1,
+          "wealth": 4516.356,
+          "mean_age": 429.1222782570531,
+          "gini": 0.5276783535164845
+        }
+      }
+    },
+    {
+      "seed": 76,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 836.0,
+        "wealth": 4699.0,
+        "mean_age": 457.7165071770335,
+        "gini": 0.5495475979313527
+      },
+      "trajectory_sha256": "a1ff56ee9fa2a990ffcd5bdc8464e5f799084f049a3f4807fd0b23bc4f39cd0b",
+      "windows": {
+        "earlier": {
+          "population": 837.276,
+          "wealth": 4576.072,
+          "mean_age": 440.1897134761013,
+          "gini": 0.5294049480727325
+        },
+        "later": {
+          "population": 836.148,
+          "wealth": 4590.596,
+          "mean_age": 444.1379562547049,
+          "gini": 0.5325189690959629
+        }
+      }
+    },
+    {
+      "seed": 77,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 830.0,
+        "wealth": 4461.0,
+        "mean_age": 411.25060240963853,
+        "gini": 0.5297285983206532
+      },
+      "trajectory_sha256": "d52d82b1df74444f6e3d733ff29dfb4c310f493145a50ff648cc1ea0baa59d81",
+      "windows": {
+        "earlier": {
+          "population": 836.148,
+          "wealth": 4517.42,
+          "mean_age": 435.0052290443996,
+          "gini": 0.5271597641252526
+        },
+        "later": {
+          "population": 836.412,
+          "wealth": 4529.912,
+          "mean_age": 439.56541018764887,
+          "gini": 0.5314823470153529
+        }
+      }
+    },
+    {
+      "seed": 78,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 835.0,
+        "wealth": 4558.0,
+        "mean_age": 457.90179640718566,
+        "gini": 0.5361412322349597
+      },
+      "trajectory_sha256": "ea675e4e89d062fb3599da6c910b33f4264676051ab6bcc0c3ca84326fc3175d",
+      "windows": {
+        "earlier": {
+          "population": 835.608,
+          "wealth": 4527.184,
+          "mean_age": 437.857827892445,
+          "gini": 0.5280345779648085
+        },
+        "later": {
+          "population": 836.928,
+          "wealth": 4556.928,
+          "mean_age": 434.44029330624346,
+          "gini": 0.5304954010388916
+        }
+      }
+    },
+    {
+      "seed": 79,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 834.0,
+        "wealth": 4494.0,
+        "mean_age": 449.4736211031175,
+        "gini": 0.5444023953067185
+      },
+      "trajectory_sha256": "1039645e48def19be6292922a37ff74edaf55d806a4b08aca86539118b3caefe",
+      "windows": {
+        "earlier": {
+          "population": 835.956,
+          "wealth": 4530.716,
+          "mean_age": 437.75581095716075,
+          "gini": 0.5299480218441212
+        },
+        "later": {
+          "population": 837.056,
+          "wealth": 4481.1,
+          "mean_age": 430.89333981918935,
+          "gini": 0.5291201762615899
+        }
+      }
+    },
+    {
+      "seed": 80,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 839.0,
+        "wealth": 4637.0,
+        "mean_age": 457.10846245530394,
+        "gini": 0.5464806964142643
+      },
+      "trajectory_sha256": "9cba89c3e3d7b9a0586fcd87aeb41f84cac984862180798324a9b8f70e4c58e8",
+      "windows": {
+        "earlier": {
+          "population": 836.108,
+          "wealth": 4559.624,
+          "mean_age": 442.93516577610586,
+          "gini": 0.5309630980206619
+        },
+        "later": {
+          "population": 836.864,
+          "wealth": 4559.688,
+          "mean_age": 440.4333102365717,
+          "gini": 0.5324754003683022
+        }
+      }
+    },
+    {
+      "seed": 81,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 830.0,
+        "wealth": 4567.0,
+        "mean_age": 450.90481927710846,
+        "gini": 0.5372072041175431
+      },
+      "trajectory_sha256": "0fa9d64c708806108f4a9fef427f946acb6fd7ed2000bf359ee5e65822bc9746",
+      "windows": {
+        "earlier": {
+          "population": 836.976,
+          "wealth": 4545.904,
+          "mean_age": 431.1098038048387,
+          "gini": 0.5305964883455526
+        },
+        "later": {
+          "population": 835.9,
+          "wealth": 4584.484,
+          "mean_age": 443.57230907981096,
+          "gini": 0.5309170459890067
+        }
+      }
+    },
+    {
+      "seed": 82,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 830.0,
+        "wealth": 4795.0,
+        "mean_age": 440.3566265060241,
+        "gini": 0.5202736284030807
+      },
+      "trajectory_sha256": "b93b6d3699ade6639d8b0d9542c936cb430b86889597c23138df07532fd1abed",
+      "windows": {
+        "earlier": {
+          "population": 837.172,
+          "wealth": 4554.996,
+          "mean_age": 435.449578705508,
+          "gini": 0.5309982921931944
+        },
+        "later": {
+          "population": 836.184,
+          "wealth": 4550.524,
+          "mean_age": 446.3807807794539,
+          "gini": 0.5326307296561713
+        }
+      }
+    },
+    {
+      "seed": 83,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 843.0,
+        "wealth": 4216.0,
+        "mean_age": 411.01779359430606,
+        "gini": 0.5469633841368025
+      },
+      "trajectory_sha256": "140d36ece087e0d20f3f763f3c6172bb555022f5994b1c9838f6975620319f2e",
+      "windows": {
+        "earlier": {
+          "population": 836.012,
+          "wealth": 4511.544,
+          "mean_age": 430.4446267052244,
+          "gini": 0.5293768946217023
+        },
+        "later": {
+          "population": 835.988,
+          "wealth": 4550.632,
+          "mean_age": 442.9242512881773,
+          "gini": 0.5297933931436648
+        }
+      }
+    },
+    {
+      "seed": 84,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 842.0,
+        "wealth": 4433.0,
+        "mean_age": 434.9952494061758,
+        "gini": 0.555982635095347
+      },
+      "trajectory_sha256": "b46c04a961aae251935046754f46fdcea006f2c301cb90ecafec272ac0a8b0e1",
+      "windows": {
+        "earlier": {
+          "population": 837.016,
+          "wealth": 4482.956,
+          "mean_age": 432.0200380114466,
+          "gini": 0.5278425844583299
+        },
+        "later": {
+          "population": 837.068,
+          "wealth": 4526.996,
+          "mean_age": 431.988891599215,
+          "gini": 0.5281526694940606
+        }
+      }
+    },
+    {
+      "seed": 85,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 829.0,
+        "wealth": 4566.0,
+        "mean_age": 447.686369119421,
+        "gini": 0.5392413744639009
+      },
+      "trajectory_sha256": "4e477a22920b4e1e4e8d28dce86355e971d07b34454a98b2980b5b248859fa43",
+      "windows": {
+        "earlier": {
+          "population": 836.508,
+          "wealth": 4557.652,
+          "mean_age": 443.1313533435727,
+          "gini": 0.5332993354563225
+        },
+        "later": {
+          "population": 837.312,
+          "wealth": 4524.544,
+          "mean_age": 432.76320561001285,
+          "gini": 0.5300713165239012
+        }
+      }
+    },
+    {
+      "seed": 86,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 820.0,
+        "wealth": 4598.0,
+        "mean_age": 481.9573170731707,
+        "gini": 0.5250352751461398
+      },
+      "trajectory_sha256": "8e163ecdc80e768fd2cc9f24d3e9a5c02988575615373ccb07be6172d3bf758b",
+      "windows": {
+        "earlier": {
+          "population": 836.756,
+          "wealth": 4587.824,
+          "mean_age": 444.0043893720478,
+          "gini": 0.5329558970704328
+        },
+        "later": {
+          "population": 835.82,
+          "wealth": 4582.64,
+          "mean_age": 436.657760164759,
+          "gini": 0.5290396976009593
+        }
+      }
+    },
+    {
+      "seed": 87,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 834.0,
+        "wealth": 4582.0,
+        "mean_age": 440.4796163069544,
+        "gini": 0.5200047731347877
+      },
+      "trajectory_sha256": "f5bc2bb7589bc00bb6d1e20f1f2536d435df6d163cb8a53157575c1b35072094",
+      "windows": {
+        "earlier": {
+          "population": 837.608,
+          "wealth": 4549.968,
+          "mean_age": 443.7038670286331,
+          "gini": 0.5303799566667134
+        },
+        "later": {
+          "population": 836.568,
+          "wealth": 4530.612,
+          "mean_age": 435.4688279774313,
+          "gini": 0.5304962551036395
+        }
+      }
+    },
+    {
+      "seed": 88,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 841.0,
+        "wealth": 4795.0,
+        "mean_age": 437.9726516052319,
+        "gini": 0.5162100334896016
+      },
+      "trajectory_sha256": "6633c80540a8b593b1cd0f71ebaf8e49faaada1244a46f8fdb34fb3036dafbca",
+      "windows": {
+        "earlier": {
+          "population": 836.508,
+          "wealth": 4538.404,
+          "mean_age": 437.8446116388624,
+          "gini": 0.5296804415966174
+        },
+        "later": {
+          "population": 836.516,
+          "wealth": 4609.892,
+          "mean_age": 448.1430198660108,
+          "gini": 0.5315408698425634
+        }
+      }
+    },
+    {
+      "seed": 89,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 840.0,
+        "wealth": 4645.0,
+        "mean_age": 479.2035714285714,
+        "gini": 0.5377653903326669
+      },
+      "trajectory_sha256": "5ea1b8624a21ed6a1c75e7451b7e67d32c57b1b2cf8e0a3741ba922bf48f16f7",
+      "windows": {
+        "earlier": {
+          "population": 837.124,
+          "wealth": 4556.528,
+          "mean_age": 443.3878780089894,
+          "gini": 0.5320123272847093
+        },
+        "later": {
+          "population": 836.612,
+          "wealth": 4587.288,
+          "mean_age": 448.91180825723416,
+          "gini": 0.5312368864205951
+        }
+      }
+    },
+    {
+      "seed": 90,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 843.0,
+        "wealth": 4796.0,
+        "mean_age": 449.9667852906287,
+        "gini": 0.5296020705273374
+      },
+      "trajectory_sha256": "16883aaec3a278b56f75626900a581d57d6081eceee8b1c7d0edeaeabc1c4cbe",
+      "windows": {
+        "earlier": {
+          "population": 837.484,
+          "wealth": 4544.336,
+          "mean_age": 445.77787729920675,
+          "gini": 0.5287527992886187
+        },
+        "later": {
+          "population": 835.696,
+          "wealth": 4550.12,
+          "mean_age": 434.71715873255664,
+          "gini": 0.5319877975385564
+        }
+      }
+    },
+    {
+      "seed": 91,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 842.0,
+        "wealth": 4555.0,
+        "mean_age": 449.91211401425176,
+        "gini": 0.5349431988548514
+      },
+      "trajectory_sha256": "a6c132ea7ee2ccc6566155a02a4f025bd8d73ece2887deb6921efe660227e5a3",
+      "windows": {
+        "earlier": {
+          "population": 836.572,
+          "wealth": 4533.708,
+          "mean_age": 433.8665936535274,
+          "gini": 0.5325630912608162
+        },
+        "later": {
+          "population": 837.068,
+          "wealth": 4539.952,
+          "mean_age": 438.1218044215067,
+          "gini": 0.5304120911764607
+        }
+      }
+    },
+    {
+      "seed": 92,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 843.0,
+        "wealth": 4388.0,
+        "mean_age": 431.5776986951364,
+        "gini": 0.5372740927213331
+      },
+      "trajectory_sha256": "4420ced81a4541a95a1266bb0c77667be4a968ba9650ad5433a3120f0dfdd498",
+      "windows": {
+        "earlier": {
+          "population": 836.112,
+          "wealth": 4573.812,
+          "mean_age": 444.0133039795149,
+          "gini": 0.5338263594649132
+        },
+        "later": {
+          "population": 836.464,
+          "wealth": 4566.276,
+          "mean_age": 437.5605720978891,
+          "gini": 0.5298838188625479
+        }
+      }
+    },
+    {
+      "seed": 93,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 827.0,
+        "wealth": 4207.0,
+        "mean_age": 445.2539298669891,
+        "gini": 0.5411634722919623
+      },
+      "trajectory_sha256": "f11e8b6eccee9f79199d27f3960fac97746a6ce161462efe2795cd3c207642d2",
+      "windows": {
+        "earlier": {
+          "population": 835.768,
+          "wealth": 4562.82,
+          "mean_age": 448.51550134530316,
+          "gini": 0.5302458211419642
+        },
+        "later": {
+          "population": 836.036,
+          "wealth": 4551.484,
+          "mean_age": 441.8275164968471,
+          "gini": 0.5319990841244228
+        }
+      }
+    },
+    {
+      "seed": 94,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 828.0,
+        "wealth": 4492.0,
+        "mean_age": 483.05314009661834,
+        "gini": 0.520636794989267
+      },
+      "trajectory_sha256": "912ee4235285213567b843e58bf92b98dc8b89f9fd87e1c2c6e2245f942471c5",
+      "windows": {
+        "earlier": {
+          "population": 837.6,
+          "wealth": 4607.62,
+          "mean_age": 471.37244944584165,
+          "gini": 0.5325359929132675
+        },
+        "later": {
+          "population": 836.284,
+          "wealth": 4527.744,
+          "mean_age": 431.9620090609215,
+          "gini": 0.530089507790912
+        }
+      }
+    },
+    {
+      "seed": 95,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 835.0,
+        "wealth": 4689.0,
+        "mean_age": 418.51616766467066,
+        "gini": 0.5164432491383195
+      },
+      "trajectory_sha256": "5e716e01b937be38f0243a6440fcb6d622339c951f877fab22001fea9ddcacd3",
+      "windows": {
+        "earlier": {
+          "population": 836.22,
+          "wealth": 4535.144,
+          "mean_age": 440.88198411580584,
+          "gini": 0.5305775515413911
+        },
+        "later": {
+          "population": 836.744,
+          "wealth": 4557.436,
+          "mean_age": 437.7748692093622,
+          "gini": 0.5302024702804491
+        }
+      }
+    },
+    {
+      "seed": 96,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 835.0,
+        "wealth": 4575.0,
+        "mean_age": 461.42275449101794,
+        "gini": 0.5459611923693597
+      },
+      "trajectory_sha256": "d4910f9f74cd9d2a318e821fd94b949e5a75f91b0389e18c18588e9c103e236e",
+      "windows": {
+        "earlier": {
+          "population": 836.656,
+          "wealth": 4533.392,
+          "mean_age": 438.0628265314434,
+          "gini": 0.5290079317611726
+        },
+        "later": {
+          "population": 836.508,
+          "wealth": 4600.136,
+          "mean_age": 443.84031758055073,
+          "gini": 0.5338377389244443
+        }
+      }
+    },
+    {
+      "seed": 97,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 841.0,
+        "wealth": 4487.0,
+        "mean_age": 423.4934601664685,
+        "gini": 0.5233546933180198
+      },
+      "trajectory_sha256": "e4a1678a28832f6bb3ddb255d94d1a57febaec23dd82f19e9664f9ae99603e24",
+      "windows": {
+        "earlier": {
+          "population": 835.916,
+          "wealth": 4561.952,
+          "mean_age": 439.743303713581,
+          "gini": 0.5298903006497047
+        },
+        "later": {
+          "population": 836.008,
+          "wealth": 4496.26,
+          "mean_age": 433.8124507723392,
+          "gini": 0.5281936522636811
+        }
+      }
+    },
+    {
+      "seed": 98,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 838.0,
+        "wealth": 4271.0,
+        "mean_age": 451.1742243436754,
+        "gini": 0.5394166351410328
+      },
+      "trajectory_sha256": "ff79903b804731cb7ff9a8e8d0ea5a7decb556a34f2b53fbdb416f6cd9c98e9f",
+      "windows": {
+        "earlier": {
+          "population": 835.992,
+          "wealth": 4480.436,
+          "mean_age": 427.62064131495913,
+          "gini": 0.5297007201431605
+        },
+        "later": {
+          "population": 835.772,
+          "wealth": 4543.908,
+          "mean_age": 440.13302941708304,
+          "gini": 0.5300833913684833
+        }
+      }
+    },
+    {
+      "seed": 99,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 827.0,
+        "wealth": 4515.0,
+        "mean_age": 392.3506650544135,
+        "gini": 0.5282598245000878
+      },
+      "trajectory_sha256": "ff9eb511ac128717060e8dc6031c6997c1cd7d8165140e707eff2b91cc452514",
+      "windows": {
+        "earlier": {
+          "population": 836.46,
+          "wealth": 4561.396,
+          "mean_age": 437.7485473749195,
+          "gini": 0.5319638880878039
+        },
+        "later": {
+          "population": 836.428,
+          "wealth": 4518.86,
+          "mean_age": 430.7690092462349,
+          "gini": 0.5304350249260008
+        }
+      }
+    },
+    {
+      "seed": 100,
+      "observations": 1001,
+      "final_cycle": 100000,
+      "terminal": {
+        "population": 844.0,
+        "wealth": 4655.0,
+        "mean_age": 445.0367298578199,
+        "gini": 0.5426120310933054
+      },
+      "trajectory_sha256": "bffeb98ad4782cfff011507c92f4d9a7c22e3365e27b7df4d69661e59abd0fa4",
+      "windows": {
+        "earlier": {
+          "population": 836.14,
+          "wealth": 4537.244,
+          "mean_age": 437.0414371743911,
+          "gini": 0.5313901267718707
+        },
+        "later": {
+          "population": 836.856,
+          "wealth": 4541.18,
+          "mean_age": 435.7191776618277,
+          "gini": 0.5318935142989377
+        }
+      }
+    }
+  ],
+  "interpretation": "Descriptive window comparison; no paper-level equivalence criterion or historical-code validation",
+  "aggregate_status": "All 100 seeds included; Student-t intervals treat seeds, not time samples, as independent",
+  "statistics": {
+    "population": {
+      "earlier": {
+        "mean": 836.4634400000001,
+        "sd": 0.484350660183511,
+        "ci95": [
+          836.367334320959,
+          836.5595456790412
+        ]
+      },
+      "later": {
+        "mean": 836.48504,
+        "sd": 0.4739584843089938,
+        "ci95": [
+          836.3909963541123,
+          836.5790836458877
+        ]
+      },
+      "paired_change": {
+        "mean": 0.02160000000001105,
+        "sd": 0.692415709780991,
+        "ci95": [
+          -0.1157902988838248,
+          0.15899029888384691
+        ]
+      }
+    },
+    "wealth": {
+      "earlier": {
+        "mean": 4545.835,
+        "sd": 31.18992915618238,
+        "ci95": [
+          4539.646241385195,
+          4552.023758614805
+        ]
+      },
+      "later": {
+        "mean": 4543.38544,
+        "sd": 30.612257770779433,
+        "ci95": [
+          4537.3113039207265,
+          4549.459576079274
+        ]
+      },
+      "paired_change": {
+        "mean": -2.4495599999999924,
+        "sd": 41.82597275298847,
+        "ci95": [
+          -10.748740414981993,
+          5.849620414982008
+        ]
+      }
+    },
+    "mean_age": {
+      "earlier": {
+        "mean": 439.5001461547977,
+        "sd": 8.032836861204908,
+        "ci95": [
+          437.906257047927,
+          441.09403526166835
+        ]
+      },
+      "later": {
+        "mean": 438.0560598796664,
+        "sd": 5.6048970239584035,
+        "ci95": [
+          436.9439267110265,
+          439.1681930483063
+        ]
+      },
+      "paired_change": {
+        "mean": -1.4440862751314767,
+        "sd": 9.787941247783783,
+        "ci95": [
+          -3.3862261695538396,
+          0.4980536192908862
+        ]
+      }
+    },
+    "gini": {
+      "earlier": {
+        "mean": 0.5305326441759782,
+        "sd": 0.001830544418860592,
+        "ci95": [
+          0.5301694244493389,
+          0.5308958639026176
+        ]
+      },
+      "later": {
+        "mean": 0.5305770403670895,
+        "sd": 0.001736239845104505,
+        "ci95": [
+          0.5302325327138354,
+          0.5309215480203436
+        ]
+      },
+      "paired_change": {
+        "mean": 4.439619111109683e-05,
+        "sd": 0.002436832849213781,
+        "ci95": [
+          -0.00043912431362922187,
+          0.0005279166958514156
+        ]
+      }
+    }
+  }
+}

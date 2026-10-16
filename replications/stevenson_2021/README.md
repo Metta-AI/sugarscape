@@ -1,7 +1,7 @@
 # Stevenson (2021): Dynamics of Wealth Inequality in Simple Artificial Societies
 
 Source: [arXiv:2108.11892v2](https://arxiv.org/abs/2108.11892v2), October 14, 2021.
-Status: specification-based fixed-parameter pilot. **Not a completed replication.**
+Status: two complete specification-based fixed-parameter ensembles; unresolved discrepancies. **Not a completed replication.**
 No verified author implementation has been located in the searches performed so far.
 
 ## Model and explicit assumptions
@@ -69,3 +69,14 @@ Population is 821.457 versus 824, wealth 15,902.67 versus 16,254, and Gini 0.336
 These are unresolved discrepancies requiring implementation and measurement investigation, not negative-replication verdicts.
 Paired changes between the two windows have intervals containing zero; this does not prove equilibrium.
 No interpretation of the paper's percentage uncertainties or acceptance margin is inferred from these results.
+
+## Low-fertility ensemble
+
+The [low-fertility ensemble](results/low-fertility-ensemble-2026-10-15) also completed all 100 seeds and 100,000 cycles without extinction.
+All 100,100 recorded observations, trajectory hashes, and declared windows passed validation.
+Later-window means are population 836.485 versus published 837, wealth 4,543.39 versus 4,767,
+mean age 438.06 versus 473, and Gini 0.530577 versus 0.53.
+The Gini value matches printed precision; that alone does not establish agreement for this scenario or paper.
+As with birth cost, paired-window intervals contain zero but do not prove stationarity.
+The [birth-threshold diagnostic](BIRTH_THRESHOLD_DIAGNOSTIC.md) investigates one explicit implementation ambiguity using new seeds.
+Its results will not silently replace either ensemble or establish the author's unknown rule.
