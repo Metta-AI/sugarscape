@@ -55,8 +55,38 @@
     "Harvest semantics changed in2.0: unconditional sharing by colocatedagents versus oldsingle-agentpriority.",
     "Two-subcycle scheduling differs from oldexecuteAllRules path; historicaltimingrequiresvalidation.",
     "Current initialization samplesseed sizes untiltotalwealth exhausted instead of balancingseedcounts.",
-    "Multiple seeds can occupy a cell, so size4seedlimit does not bound totalcellresources.",
     "Cooperation monitor averages agentflags; paper descriptions reference both eatingactions and allactions. Denominator must be resolved.",
     "COM1 currentcode deletes onlybestselectedmessage afterdirectional scans; historicalread/removal semantics needvalidation."
-  ]
+  ],
+  "resolved_specification": {
+    "source": "https://www.jasss.org/8/1/2.html",
+    "landscape": {
+      "paper_sections": [
+        "3.10",
+        "note5"
+      ],
+      "seed_maximum_counts": {
+        "1": 250,
+        "2": 250,
+        "3": 250,
+        "4": 250
+      },
+      "total_seeds": 1000,
+      "total_sugar": 2500,
+      "multiple_seeds_per_cell": true,
+      "maximum_cell_sugar_not_bounded_by_four": true,
+      "native_seed_zero_count": 1015,
+      "conclusion": "Recovered richness-only configuration fails exact seed-count specification. Large cell piles alone are not a discrepancy."
+    },
+    "scheduling": {
+      "paper_sections": [
+        "3.8",
+        "note3",
+        "note7"
+      ],
+      "requirement": "Agent execution order is randomized between cycles. COM1 reads are sequential, so a later reader cannot receive a removed message.",
+      "native_candidate": "nrOfSubcycles=1 executes every rule for one agent before moving to the next randomized agent.",
+      "limitation": "This is a supported candidate schedule, not verified source-version equivalence. Agent rule order and all message semantics still require validation."
+    }
+  }
 }

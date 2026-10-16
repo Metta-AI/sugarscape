@@ -107,3 +107,19 @@ The source comment describes the older behavior as consuming alone whenever poss
 `TorusScape.executeRules` also has distinct one-subcycle and multiple-subcycle paths.
 The paper's model therefore cannot be recovered merely by applying its scalar parameter table to this newer release.
 These observations identify implementation-alignment work, not evidence against the paper's reported cooperation results.
+
+## Corrected landscape specification and scheduling evidence
+
+The paper's section3.10 explicitly permits multiple seeds per cell.
+Our observed piles above four units therefore do not establish a model discrepancy.
+Note5 instead specifies exactly250 seeds of each maximum size1,2,3,4: 1,000seeds and2,500sugar units.
+The observed1,015seeds fail that initialization requirement despite matching total sugar.
+The configuration map now separates this required correction from allowed multi-seed occupancy.
+
+Notes3 and7 clarify sequential execution within cycles and randomized agent ordering between cycles.
+For COM1, a later reader cannot receive a message already removed by an earlier reader.
+The recovered one-subcycle branch executes each agent's complete rule list in randomized order; it is a candidate for this documented schedule.
+Historical rule order and message removal semantics remain unverified. No simulation rules were changed by this specification correction.
+
+A renewed source search did not recover version1.2.3. The Internet Archive index returned a temporary-offline page.
+The recovered newer source remains available, and a declared implementation of the paper specification can proceed without claiming historical byte equivalence.
