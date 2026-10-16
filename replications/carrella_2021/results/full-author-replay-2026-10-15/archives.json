@@ -1,0 +1,51 @@
+{
+  "trajectory_archives": [
+    {
+      "file": "trajectories-0-999.tar.gz",
+      "sha256": "0561689acdaa28e6cf1b86b5b076fe2418615e40e58ee5c6fce76546a3069fd9",
+      "bytes": 13679163,
+      "rows": [
+        0,
+        1000
+      ]
+    },
+    {
+      "file": "trajectories-1000-1999.tar.gz",
+      "sha256": "5956b7ffffee1bd587ac3e19e72919bd90a01950d0e19bde9c70448ba1cb55cc",
+      "bytes": 13708748,
+      "rows": [
+        1000,
+        2000
+      ]
+    },
+    {
+      "file": "trajectories-2000-2999.tar.gz",
+      "sha256": "21181dfedc2d4b895f6a7a936b9bff02a1765bf4d250d74822832ad885824635",
+      "bytes": 13689578,
+      "rows": [
+        2000,
+        3000
+      ]
+    },
+    {
+      "file": "trajectories-3000-3999.tar.gz",
+      "sha256": "fb6328e721e5794c1e3440afeb089edcda297c18da5b5c52e6d73406ea3fe54a",
+      "bytes": 13691758,
+      "rows": [
+        3000,
+        4000
+      ]
+    },
+    {
+      "file": "trajectories-4000-4999.tar.gz",
+      "sha256": "2e68573642c71ea3083236dc278857f9c40e03ab12b7502285e6f0fc428dea0f",
+      "bytes": 13679797,
+      "rows": [
+        4000,
+        5000
+      ]
+    }
+  ],
+  "statistics_gzip_sha256": "cdf20d0334926bc3c4356c5da761c0d656756228051484c86816f3de4aa72c4b",
+  "validation": "Every archived trajectory hash matches the independently reconstructed statistics report. All original and interrupted files remain at their source paths."
+}

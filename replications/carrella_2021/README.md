@@ -2,8 +2,18 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: 1,399 fresh author-model simulations validated; ten linear-regression and ten rejection-estimation Table 8 values reproduced.
+Status: all 5,000 fresh author-model simulations validated; 25 estimator Table 8 values reproduced.
 **Not a completed replication:** the other estimators and independent simulator work remain unfinished.
+
+## Complete simulation replay
+
+[The complete replay](results/full-author-replay-2026-10-15) reconstructs all 750,000 archived statistics from 5,000 fresh trajectories.
+Every statistic matches the declared `rtol=1e-10, atol=1e-10` tolerance; maximum absolute error is `3.1833e-12`.
+Each input retains all 501 observations, including repeated terminal states after extinction: 2,505,000 observations in total.
+Five lossless trajectory archives preserve every raw CSV, independently verified against per-row SHA-256 hashes.
+The fresh statistics, complete comparisons, and exact source-file assembly are retained alongside them.
+The assembly explicitly records nine complete intervals spanning interrupted and resumed jobs; all interrupted evidence remains preserved.
+No input or statistic was discarded. This completes the author-model replay, not the estimator comparisons or independent fork replication.
 
 ## Author implementation
 
