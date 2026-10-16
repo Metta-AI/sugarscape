@@ -94,3 +94,8 @@ The author's `plots/plot.py` counts equal initial/final population with the bett
 The earlier runner grouped equality with worse; this boundary is now corrected before full ensembles start.
 The pilot's population increases, so its grouping is unaffected.
 `audit_batch.py` independently verifies original seed intervals, input hashes, effective configuration, compressed trajectories, every observation, and the author's classification rule.
+
+All four original 500-seed homogeneous ensembles have now started using the corrected model names and archived inputs.
+Each model runs the complete sorted original seed schedule, including a fresh first seed; pilot evidence remains separate.
+The batches retain every completed trajectory and check available storage before each next simulation.
+No full-ensemble outcome is claimed until all required intervals pass the independent audit.
