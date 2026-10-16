@@ -278,3 +278,13 @@ A two-interval native queue proof passed before this handoff; its raw results an
 The production queue is running, so its unfinished outputs are not included in the checkpoint count.
 
 The full 55,000-row reference, generated-landscape ensemble, and paper replication remain incomplete.
+
+## First running-queue checkpoint
+
+[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-002-independent-validation.json) checks 14 completed chunks covering `[5120,6520)`.
+All 1,400 runs finish 10,000 steps; all 2,800 Gini measurements match the original reference exactly.
+The downloaded archive retains native outputs, successful exits, manifests, and per-chunk audits.
+Independent checks verify original seeds, populations, row identities, source/dependency hashes, and complete disjoint intervals.
+These intervals belong to the reserved production plan and do not overlap the earlier 7,933-row checkpoint.
+Combined validated coverage is **9,333 of 55,000 reference runs**; unfinished chunks are excluded.
+This remains partial reference evidence, not completion of the paper replication.
