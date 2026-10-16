@@ -216,3 +216,19 @@ The original data, passive trace, source hashes, and audit are retained.
 This is a confirmed released-code/paper-description discrepancy, not a verdict on the unidentified historical experiment version.
 Movement-policy ensembles must identify the released selector explicitly and keep any corrected-highest experiment separate.
 The Phase II no-policy ensemble does not invoke this policy and continues unchanged.
+
+### Highest-holding correction experiment
+
+`run_high_focus.py ENGINE LIBRARY APPROACH THRESHOLD SEED NEW_OUTPUT` reverses only the high-focus comparator.
+It saves the original and corrected methods; syntax-tree comparison verifies exactly one `>` to `<` change.
+Author checkouts remain unchanged. No shared-resource corrections are loaded.
+
+[The network threshold-ten, seed-zero experiment](results/highest-correction-2026-10-16/comparison.json) completes 1,000 steps with 31 survivors, versus 35 under the released selector.
+The corrected passive replay verifies all 260 high-focus calls select the largest member maximum.
+Five complete output files match byte-for-byte, and 44,742 health records reconcile with surviving identities.
+This single-seed difference does not estimate the ensemble effect or establish historical fidelity.
+
+An initial observer launcher incorrectly omitted the correction after lint removed its side-effect import.
+Its selection audit rejected the run despite its configuration label; the failed trace and executed source are preserved.
+The replacement launcher asserts that the corrected function is installed before execution.
+The audit checks actual selections rather than trusting labels. Both released and corrected selector modes remain available.

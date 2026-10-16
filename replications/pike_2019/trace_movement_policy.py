@@ -12,6 +12,11 @@ parser.add_argument("library", type=Path)
 parser.add_argument("approach", choices=["explicit", "network"])
 parser.add_argument("seed", type=int)
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--highest",
+    action="store_true",
+    help="Observe the explicit comparator correction instead of released behavior",
+)
 args = parser.parse_args()
 source = (
     args.engine.resolve()
@@ -21,7 +26,15 @@ sys.path[:0] = [str(source), str(args.library.resolve())]
 import NetAgent
 import organization
 
+if args.highest:
+    import correct_high_focus
+
+    assert organization.rules.step_high is correct_high_focus.namespace["step_high"]
+
 args.output.mkdir(parents=True, exist_ok=False)
+(args.output / "trace-configuration.json").write_text(
+    json.dumps({"highest_correction": args.highest}) + "\n"
+)
 stream = (args.output / "high-focus.jsonl").open("x")
 active = []
 native_high = organization.rules.step_high

@@ -9,6 +9,9 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("native", type=Path)
 parser.add_argument("trace", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--highest", action="store_true", help="Require corrected highest-holding selection"
+)
 args = parser.parse_args()
 parity = {}
 for name in [
@@ -33,7 +36,10 @@ mismatches = []
 for event in events:
     members = event["members_before_policy"]
     assert len(members) >= 2
-    selected = min(members, key=lambda member: max(member["sugar"], member["spice"]))
+    selector = max if args.highest else min
+    selected = selector(
+        members, key=lambda member: max(member["sugar"], member["spice"])
+    )
     assert [event["perceived_sugar"], event["perceived_spice"]] == [
         selected["sugar"],
         selected["spice"],
@@ -41,16 +47,19 @@ for event in events:
     maximum = max(max(member["sugar"], member["spice"]) for member in members)
     if max(event["perceived_sugar"], event["perceived_spice"]) < maximum:
         mismatches.append(event)
-assert mismatches
+assert not mismatches if args.highest else mismatches
 report = {
     "steps": 1000,
     "byte_parity": parity,
     "high_focus_calls": len(events),
-    "calls_selecting_smallest_member_maximum": len(events),
+    "selection_rule": "largest-member-maximum"
+    if args.highest
+    else "smallest-member-maximum",
+    "calls_matching_selection_rule": len(events),
     "calls_below_largest_member_maximum": len(mismatches),
-    "first_mismatch": mismatches[0],
+    "first_mismatch": mismatches[0] if mismatches else None,
     "trace_sha256": hashlib.sha256(raw).hexdigest(),
-    "scope": "Released policy selects the member with the smallest maximum commodity holding. Paper describes highest holdings. Historical paper revision remains unverified; no whole-paper verdict.",
+    "scope": "Whole-model parity and explicit member-selection audit. The correction and released policy remain distinct experiments; historical paper revision is unverified. No whole-paper verdict.",
 }
 args.output.mkdir(parents=True, exist_ok=False)
 (args.output / "audit.json").write_text(json.dumps(report, indent=2) + "\n")
