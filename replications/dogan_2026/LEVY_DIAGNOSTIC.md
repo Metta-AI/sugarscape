@@ -17,7 +17,7 @@ The full per-step native outputs must be byte-identical before accepting event
 observations. It records owner deductions, treasury credits, and tax reporting.
 This is an execution diagnostic; it does not estimate corrected policy outcomes.
 
-The proposed `conserving-levy.patch` credits the amount actually charged,
+The proposed `conserving-levy.patch.gz` (lossless gzip; decompress before applying) credits the amount actually charged,
 min(L,W), to both treasury and revenue. It is a separate research variant,
 not a replacement for the author's released source or replication baseline.
 
