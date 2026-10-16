@@ -91,3 +91,15 @@ Shared-holding aggregation is under investigation. Historical fidelity and all p
 A second byte-identical passive replay checks object identity in all 71,242 calls and finds no shared holdings objects among direct members.
 That rules out direct dictionary aliasing in these calls; it does not rule out reaggregation of distinct copies of a prior shared pool.
 No correction has been applied based on either unexercised hypothesis.
+
+### Shared-pool double counting identified
+
+[The passive accounting trace](results/shared-resource-diagnostic-2026-10-16/pool-accounting-proof.json) preserves all native output bytes and verifies 300 commodity sums across 150 calls.
+At step 6, agents 100 and 108 initially contribute 59.16017 sugar and 57.83123 spice together.
+After agent 108 acts, its holdings represent the updated pool: 62.16017 sugar and 52.24344 spice.
+Agent 100 still retains its original contribution of 13.12466 sugar and 37.24246 spice.
+The next calculation adds that unchanged contribution again, producing 75.28483 sugar and 89.48590 spice.
+Membership is unchanged. This demonstrates reaggregation of stale contributions, rather than direct object aliasing or a nested-group type mismatch.
+The model lacks a single authoritative shared balance; repeated accumulation of former contributions explains the resource amplification mechanism.
+`analyze_pool_trace.py NATIVE TRACE NEW_OUTPUT` verifies native parity, every recorded sum, and this concrete double-counting event.
+A corrective experiment must establish resource ownership and conservation rather than cap infinite values. No simulation correction or paper verdict is included here.
