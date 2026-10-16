@@ -323,3 +323,19 @@ These observations narrow the numerical discrepancy to differences between the t
 The three pairs took 93.41, 318.77, and 457.18 seconds on one low-priority worker sharing the eight-core reference node.
 These selected probes are not a representative throughput sample for the 2,727,994-row generated ensemble.
 The full generated ensemble and fresh spatial comparisons remain unstarted; these repeated probes add no production coverage.
+
+## Stratified generated-ensemble sizing run
+
+[Input selection](results/generated-sizing-launch-2026-10-16/selection.json) fixes one original input for each of 50 landscape IDs and 11 population levels.
+Reservoir sampling uses seed `20261016`, independently within each stratum, before executing the selected runs.
+A second full-archive pass verifies every selected field, all original indices, and the stratum counts summing to 2,727,994 runs.
+Original stratum sizes will weight timing estimates; an early prefix cannot substitute for the complete sample.
+
+A separate eight-core CPU node runs the 550 selected inputs with a six-hour limit, captures evidence, and stops automatically afterward.
+Each native process retains wall time, CPU time, peak memory, commands, outputs, exit status, and all twelve output comparisons.
+Native or measurement failures stop pending work; already-running outputs remain intact.
+This benchmark leaves the existing fixed-reference queue unchanged.
+
+[Downloaded initial evidence](results/generated-sizing-launch-2026-10-16/prefix-independent-validation.json) independently verifies eight completed inputs and 96 exact archived measurements.
+These early inputs establish execution, not a representative cost estimate or completion of the generated ensemble.
+The 550-input sample remains running, and no full generated-production queue has been launched.
