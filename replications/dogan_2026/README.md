@@ -117,3 +117,13 @@ The independent Table D.1 audit also matches all 36 printed values from fresh ru
 Means-tested mortality at 600 steps is 6.535–9.751% of the same-speed baseline across the six comparisons.
 The original log, source manifest, completion record, complete CSV, and both audits are retained.
 Composition, levy, per-seed calibration, multiplier, and welfare-sensitivity studies remain unfinished; this is not a complete paper-level verdict.
+
+## Welfare-sensitivity audit and reporting discrepancy
+
+`audit_welfare.py MAIN_CSV SENSITIVITY_CSV PROVENANCE NEW_OUTPUT` checks all fifteen paired five-seed cells, death accounting, printed values, and unrounded policy rankings.
+[The deposited-data audit](results/deposited-welfare-audit-2026-10-15/table-b1.json) matches all 120 Table B.1 values.
+All three mortality rankings remain unchanged; two of three inequality rankings remain unchanged.
+Under balanced automation, baseline minus Universal High Income (UHI) mean Gini changes from −0.002635257 to +0.000285507.
+That small reversal contradicts the literal no-ranking-change statement, but does not establish a statistically meaningful difference or invalidate the main mortality finding.
+Cross-type trade reductions span 58.211–93.101%, clarifying the prose's approximate 60–90% range.
+Fresh welfare simulations are still running; deposited-data consistency checks are not counted as a fresh replication or completed negative study.
