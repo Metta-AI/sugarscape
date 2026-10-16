@@ -162,7 +162,9 @@ The paper's qualitative replication verdict and exact historical configuration r
 `run_examples.py ENGINE NEW_OUTPUT` executes all seventeen Table 4 configurations with their original seeds and released horizons.
 Only headless execution, debug output, and log destinations change.
 The runner retains each native exit status, complete trajectories, source/configuration hashes, extinction endpoints, and nonfinite scalar measurements.
-The full example batch is running; operational completion will not imply agreement with the paper's qualitative targets.
+All seventeen examples exited successfully and passed `audit_examples.py BATCH NEW_OUTPUT` across 6,187 native observations.
+[Retained evidence](results/all-examples-2026-10-15) includes byte-preserving compressed configurations, trajectories, logs, manifests, and an independent audit.
+Operational completion does not imply agreement with the paper's qualitative targets.
 
 [The paired trade/lending protocol](trade-lending-protocol.json) audits the exact configuration differences before the diagnostic outcomes are inspected.
 `trade_basic` differs from `spice_growback` only in trade enablement, excluding descriptive text.
