@@ -84,3 +84,28 @@ The original source and all failing measurements remain retained. No defect is a
 
 The alternative author URL `https://cs.gmu.edu/~sean/papers/Replication07.pdf` also redirects to a homepage as of this check.
 Its downloaded body is HTML, despite a search index containing the old paper text; it is not used as a recovered published PDF.
+
+## Corrected release validation
+
+`reproduction-fixes.patch.gz` records three changes against the pinned 2011 release:
+consistent empty-cell selection, newborn registration, and the missing trade column label.
+The compressed patch preserves the author’s original CRLF source bytes.
+Apply it to a separate checkout with `gzip -dc /path/to/reproduction-fixes.patch.gz | git apply`, preserving the original checkout.
+The runner requires the exact declared source diff before compiling.
+
+```sh
+python replications/bigbee_2007/run_showcases.py /path/to/corrected-reference /path/to/jdk/bin corrected /absolute/evidence/corrected
+python replications/bigbee_2007/audit_showcases.py /absolute/evidence/corrected /absolute/evidence/execution-audit
+python replications/bigbee_2007/audit_populations.py /absolute/evidence/corrected /absolute/evidence/population-audit
+```
+
+[Corrected evidence](results/corrected-showcases-2026-10-15) retains all 34 native trajectories, compilation records, manifests, and seventeen population-observer trajectories.
+All seventeen repeated pairs match byte-for-byte across 28,466 native observations.
+Core statistics are finite and every output row matches its header width.
+Average trade price remains undefined when no trades occur; no replacement value is introduced.
+
+The observer reproduces each native output byte-for-byte.
+Across 17,034 observed states, reported population, living grid occupants, registry size, and living registered agents agree exactly.
+These checks establish the corrected population invariant under the tested scenarios, seed, and horizon.
+They do not establish agreement with the 2007 paper or recover its historical implementation.
+Original failing measurements remain alongside the corrected comparison.

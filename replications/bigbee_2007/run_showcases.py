@@ -1,5 +1,6 @@
 """Compile the pinned author release and replay every draft showcase twice."""
 import argparse
+import gzip
 import hashlib
 import json
 from pathlib import Path
@@ -8,12 +9,15 @@ import subprocess
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("engine", type=Path)
 parser.add_argument("jdk", type=Path)
+parser.add_argument("variant", choices=["original", "corrected"])
 parser.add_argument("output", type=Path)
 args = parser.parse_args()
 engine = args.engine.resolve()
 assert subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=engine, text=True).strip() == "2baa2e411f1be3e8da5e352de98468b42db3d75d"
-assert not subprocess.check_output(["git", "status", "--porcelain", "--untracked-files=no"], cwd=engine, text=True).strip()
 root = Path(__file__).resolve().parent
+source_diff = subprocess.check_output(["git", "diff", "--binary", "HEAD"], cwd=engine)
+expected_diff = b"" if args.variant == "original" else gzip.decompress((root / "reproduction-fixes.patch.gz").read_bytes())
+assert source_diff == expected_diff, "Source differs from the declared experimental variant"
 targets = json.loads((root / "targets.json").read_text())["targets"]
 assert len(targets) == 17
 for target in targets:
@@ -31,6 +35,7 @@ java = str(args.jdk.resolve() / "java")
 javac = str(args.jdk.resolve() / "javac")
 compile_command = [javac, "-cp", str(engine / "lib/*"), "-d", str(classes), *map(str, sources)]
 manifest = {"revision": "2baa2e411f1be3e8da5e352de98468b42db3d75d", "engine": str(engine),
+            "variant": args.variant, "patch_sha256": hashlib.sha256(expected_diff).hexdigest(),
             "seed": 0, "horizon": 1000, "repetitions": 2, "compile_command": compile_command,
             "java": subprocess.check_output([java, "-version"], stderr=subprocess.STDOUT, text=True),
             "adapter_sha256": hashlib.sha256((root / "Replay.java").read_bytes()).hexdigest(),
