@@ -558,3 +558,12 @@ Of65 computed values,33 match the paper’s printed three-decimal precision.
 This inventory includes previously documented single-cell matches and supersedes lower summary counts; it creates no new estimator result.
 The32 numerical differences still require interpretation, and printed agreement alone does not complete independent-model or whole-paper replication.
 Each cell links and hashes its retained comparison artifact.
+
+## Sequential notebook random-stream diagnostic
+
+A [bounded fresh notebook execution](results/notebook-rf-sequence-launch-2026-10-16/manifest.json) now runs the original setup, data preparation, rejection, semi-automatic4D, linear regression, and quantile-random-forest chunks in order.
+The original chunk bodies remain unchanged; checkpoints retain all global objects and random state after each chunk.
+This follows the notebook’s estimator ordering instead of resetting the seed for every method.
+Current packages and explicit Rejection sampling remain declared runtime choices; this is not a historical-runtime reconstruction.
+The two-hour diagnostic leaves existing long-running estimators intact.
+It has started successfully; full results and independent prediction audits remain pending.
