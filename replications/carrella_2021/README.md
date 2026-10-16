@@ -534,3 +534,16 @@ Maximum absolute statistic recomputation error is 2.2737367544323206e-13, within
 Coverage is contiguous from original row0 through4380; rows4381–4999 remain reserved to the active cloud producer.
 The new native archive excludes the earlier50 cloud chunks; the reconciliation retains provenance for both checkpoints and local runs.
 The complete5,000-input gate remains unmet, so no independent estimator or scientific equivalence verdict is reported.
+
+## Full independent distribution comparison
+
+`compare_independent_ensemble.py AUTHOR_SOURCE COMPLETE_RECONCILIATION NEW_OUTPUT` implements the planned descriptive comparison of all150 statistics.
+It requires all5,000 audited inputs, original row order, frozen model hashes, and matching source-table checksums before creating output.
+It reports means, population standard deviations, quantiles, and empirical Wasserstein distances overall and within ten parameter bins for each of five parameters.
+Bins use equal widths over original input ranges; other parameters are not held fixed.
+Equal seed labels do not imply matched random streams, and no acceptance margin or replication verdict is inferred from these differences.
+
+The [actual4,381-input gate check](results/distribution-analysis-gate-2026-10-16/partial-gate.json) rejects incomplete evidence before creating output.
+Formatting and lint checks pass; the complete-data calculation path has not yet run.
+The cloud producer subsequently exited successfully after all4,107 reserved inputs reported completion.
+Its final619 inputs await download and independent audit; execution completion alone does not satisfy the full-ensemble evidence requirement.
