@@ -158,3 +158,29 @@ The TeX source does not resolve the fitting window, optimizer, weighting, or evo
 It confirms the initial single agent and 100-seed scenario protocol.
 The original vector figures are now available for quantitative target extraction; no new agreement is claimed from their recovery alone.
 Renewed title, identifier, and author searches did not identify a verified GitHub implementation.
+
+## Original Figure 1 curves recovered
+
+`extract_figure1.py ORIGINAL_FIGURE_PDF NEW_OUTPUT` pins the recovered PDF and checks its labeled-axis vector anchors.
+[Eight extracted curves and a visual reconstruction](results/figure1-vector-2026-10-16) preserve exported vertices in lossless CSVs.
+The reconstructed shapes match visual inspection of the source figure.
+The export drops collinear vertices and rounds coordinates, so these are approximate curves, not recovered raw per-cycle data.
+The plotted seed and aggregation remain unknown.
+
+Late-window summaries integrate line segments over cycles 35,000–50,000, stopping at the last available vertex.
+They do not average irregularly spaced vertices or impose exact agreement on independent-seed runs.
+
+| Extracted series | Approximate late-window mean |
+| --- | ---: |
+| Low-fertility mean age | 439.84 |
+| Birth-cost mean age | 2,245.98 |
+| Low-fertility population | 836.514 |
+| Birth-cost population | 823.906 |
+| Low-fertility Gini | 0.52398 |
+| Birth-cost Gini | 0.33200 |
+
+The plotted low-fertility mean age is closer to our ensemble's 438.06 than to Table 1's 473.
+Different unknown seeds and sampling windows prevent a definitive consistency judgment.
+The birth-cost curve remains far above our 1,418.80 ensemble mean, so vector recovery does not resolve that behavioral discrepancy.
+Elite-age curves are retained as additional targets; the current simulator does not yet record the corresponding elite statistic.
+No new paper completion or negative verdict follows from this figure extraction.

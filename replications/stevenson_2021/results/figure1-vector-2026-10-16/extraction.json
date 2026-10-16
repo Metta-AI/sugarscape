@@ -1,0 +1,112 @@
+{
+  "pdf_sha256": "794b5f8f9e26098918579fed7c3418622a078d986d5c1bc2e26597439a3f2a47",
+  "svg_sha256": "43a2c6428fe175fa1791629e2bd8d9ac3f11a123c7ff16213fd547b9519e844d",
+  "curves": [
+    {
+      "series": "elite_age_low_fertility",
+      "vertices": 45917,
+      "first_cycle": 0.0,
+      "last_cycle": 49998.16906823926,
+      "late_window": [
+        35000.0,
+        49998.16906823926
+      ],
+      "late_piecewise_linear_mean": 1267.6583046464993,
+      "terminal_value": 1249.1921206753577,
+      "csv_gzip_sha256": "aef1de414757a7697dc1acfd30bc16466f9710c79d51965a8b938fb388fa7125"
+    },
+    {
+      "series": "mean_age_low_fertility",
+      "vertices": 45115,
+      "first_cycle": 0.0,
+      "last_cycle": 49998.16906823926,
+      "late_window": [
+        35000.0,
+        49998.16906823926
+      ],
+      "late_piecewise_linear_mean": 439.83879133168426,
+      "terminal_value": 444.5257362536809,
+      "csv_gzip_sha256": "bb0144191a61d307748086d839eaed3691868be97b10c006423e3ab256ae8ee4"
+    },
+    {
+      "series": "elite_age_birth_cost",
+      "vertices": 46521,
+      "first_cycle": 0.0,
+      "last_cycle": 49998.16906823926,
+      "late_window": [
+        35000.0,
+        49998.16906823926
+      ],
+      "late_piecewise_linear_mean": 2586.9689368616423,
+      "terminal_value": 2855.4356407485225,
+      "csv_gzip_sha256": "6ff151e743dc78351f3d65b12def4b8ca34ee1222ecf330ec167d5e7fbb0c281"
+    },
+    {
+      "series": "mean_age_birth_cost",
+      "vertices": 45894,
+      "first_cycle": 0.0,
+      "last_cycle": 49998.16906823926,
+      "late_window": [
+        35000.0,
+        49998.16906823926
+      ],
+      "late_piecewise_linear_mean": 2245.9816723844433,
+      "terminal_value": 2263.1140362694928,
+      "csv_gzip_sha256": "0d2121f47a42d827a27a4495ab644a6d66a691afa74a7acdfb18cc065f51ac58"
+    },
+    {
+      "series": "population_low_fertility",
+      "vertices": 44079,
+      "first_cycle": 0.0,
+      "last_cycle": 50000.0,
+      "late_window": [
+        35000.0,
+        50000.0
+      ],
+      "late_piecewise_linear_mean": 836.5139272614597,
+      "terminal_value": 832.0092826371248,
+      "csv_gzip_sha256": "5ea293c528dbbfd48e57b607381b5dce8d7dd80f2daabf961b6ef4f6ea0652b6"
+    },
+    {
+      "series": "population_birth_cost",
+      "vertices": 36846,
+      "first_cycle": 0.0,
+      "last_cycle": 50000.0,
+      "late_window": [
+        35000.0,
+        50000.0
+      ],
+      "late_piecewise_linear_mean": 823.9055391927757,
+      "terminal_value": 824.9974099102802,
+      "csv_gzip_sha256": "3a47fd90a2fb71ee546e1fa75b19d07525cb686a1c224dc83ada102610da1df5"
+    },
+    {
+      "series": "gini_low_fertility",
+      "vertices": 46133,
+      "first_cycle": 0.0,
+      "last_cycle": 50000.0,
+      "late_window": [
+        35000.0,
+        50000.0
+      ],
+      "late_piecewise_linear_mean": 0.523978493051218,
+      "terminal_value": 0.5295604601599085,
+      "csv_gzip_sha256": "323c0751d1ffdfac898e1c3ee42e2b491ff90789cb754319e26e932c57d1ad4a"
+    },
+    {
+      "series": "gini_birth_cost",
+      "vertices": 46114,
+      "first_cycle": 0.0,
+      "last_cycle": 50000.0,
+      "late_window": [
+        35000.0,
+        50000.0
+      ],
+      "late_piecewise_linear_mean": 0.33200456678851453,
+      "terminal_value": 0.33205810221204846,
+      "csv_gzip_sha256": "28ad0e48fe909691e2b357ce0ee45fb308cf9613d331430268e5e0d78adc5fe7"
+    }
+  ],
+  "method": "Axes calibrated from inspected tick labels, not fitted to our simulations. Preserve all exported vertices and duplicated coordinates; summarize by segment integration.",
+  "limits": "Approximate vector digitization, not raw simulation data. Unknown published seed and aggregation. Collinear points omitted by export; rounded coordinates prevent exact per-cycle recovery. Late windows are descriptive, not predeclared paper acceptance criteria."
+}
