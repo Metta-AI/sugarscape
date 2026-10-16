@@ -156,3 +156,17 @@ These counts explain why disappearance cannot be equated with starvation in this
 They neither rule out seasonal starvation nor estimate its causal effect.
 Memberships may repeat an agent across windows; counts are not independent samples.
 The paper's qualitative replication verdict and exact historical configuration remain unresolved.
+
+## Complete example coverage and trade/lending design
+
+`run_examples.py ENGINE NEW_OUTPUT` executes all seventeen Table 4 configurations with their original seeds and released horizons.
+Only headless execution, debug output, and log destinations change.
+The runner retains each native exit status, complete trajectories, source/configuration hashes, extinction endpoints, and nonfinite scalar measurements.
+The full example batch is running; operational completion will not imply agreement with the paper's qualitative targets.
+
+[The paired trade/lending protocol](trade-lending-protocol.json) audits the exact configuration differences before the diagnostic outcomes are inspected.
+`trade_basic` differs from `spice_growback` only in trade enablement, excluding descriptive text.
+`lending_basic` differs only in lending enablement, interest rate, and loan duration.
+The planned twenty-seed comparison uses the released 500-step horizon and a declared final-250-step window, with drift and extinction reported separately.
+The seeds are borrowed from Table 3, not claimed to be the original trade/lending seeds.
+Historical measurement details remain unresolved; a late-window population mean will not be labeled carrying capacity without further evidence.
