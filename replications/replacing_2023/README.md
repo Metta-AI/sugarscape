@@ -82,7 +82,7 @@ No seed becomes extinct. The paper's reported extinction seeds, 12881 and 22744,
 Their minimum populations are 51 and 135.
 All raw trajectories, run manifests, logs, and outcomes are retained; no seed is excluded.
 
-The full twenty-seed pre-conference batch and infection-observation replays of those two seeds are running.
+The full twenty-seed pre-conference batch and infection-observation replays are complete; results follow below.
 The paper's exact assessment times and source revision remain unverified; this result is not yet a validated negative replication.
 
 [Infection observation replays](results/disease-extinction-seed-observations-2026-10-15/eradication-audit.json) for seeds 12881 and 22744 completed successfully.
@@ -102,7 +102,7 @@ Earlier source/configuration provenance and the paper's assessment horizon still
 
 ## Seasonal identity tracking and remaining seed runs
 
-All twenty published seasonal seeds and twenty reproduction seeds are now running.
+All twenty published seasonal seeds and their observational replays are complete. The twenty-seed reproduction batch remains in progress.
 Each completed batch receives an independent full-trajectory audit.
 The seasonal batch then replays every seed with agent observations and requires byte-identical native trajectories before accepting those observations.
 The generalized batch auditor has also revalidated the completed disease batch without changing its outcomes.
@@ -113,3 +113,21 @@ The analysis tracks the original agents in the wet half immediately before each 
 After the first flip, 100 of 199 cohort agents enter the newly wet half during the next 50 steps; 93 of those migrants are absent by the window's end.
 An endpoint-only count would miss those migrations, so both events and final survival/location are reported separately.
 Nine transition cohorts are retained. Presence in the dry half alone is not classified as hibernation, and no numerical paper-similarity threshold is inferred.
+
+## Complete seasonal ensemble
+
+[Retained evidence](results/seasonal-published20-2026-10-15) covers all twenty Table 3 seeds, with 10,020 native observations and byte-identical observer replays.
+`analyze_seasonal_ensemble.py OBSERVED OUTPUT` requires every original seed and analyzes nine complete seasonal windows per seed.
+The executable ensemble analysis reproduces the independently assembled summary byte-for-byte.
+
+Across 180 windows, 33,612 wet-half cohort memberships include 14,369 migrations; 11,852 migrant memberships are absent at the window's end.
+Memberships can include the same agent in different windows and are not independent samples.
+Migrants have higher mean vision than non-migrants in all twenty seeds.
+Pooled membership means are 4.015 versus 3.247 vision and 1.428 versus 1.741 sugar metabolism.
+Survivors ending in the dry half average 2.930 vision and 1.045 metabolism.
+These associations support the paper's directional description of vision and migration under the tested released configuration.
+
+Absence does not establish starvation: the configured maximum lifespans range from 60 to 100 steps.
+Dry-half presence does not establish the paper's hibernation behavior.
+Historical revision equivalence, cause-specific mortality, and a predeclared quantitative interpretation of the paper's qualitative similarity criterion remain unresolved.
+This is additional measured evidence, not a completed paper-level replication.

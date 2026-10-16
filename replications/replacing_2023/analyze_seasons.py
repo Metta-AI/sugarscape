@@ -41,9 +41,14 @@ for transition in range(50, 500, 50):
         else:
             groups["in_dry_half_at_end"].append(agent)
     assert sum(len(group) for group in groups.values()) == len(before)
+    migration_groups = {"ever_crossed": [a for identity, a in before.items() if identity in ever_crossed],
+                        "never_crossed": [a for identity, a in before.items() if identity not in ever_crossed]}
     cohorts.append({"transition": transition, "end": transition + 49, "initial_cohort": len(before),
                     "ever_crossed_to_wet_half": len(ever_crossed),
                     "ever_crossed_but_absent_at_end": len(ever_crossed - after.keys()),
+                    "migration_groups": {name: {"count": len(group), "vision_sum": sum(a[3] for a in group),
+                                                  "sugar_metabolism_sum": sum(a[4] for a in group)}
+                                         for name, group in migration_groups.items()},
                     "groups": {name: {"count": len(group), "vision_sum": sum(a[3] for a in group),
                                      "sugar_metabolism_sum": sum(a[4] for a in group)} for name, group in groups.items()}})
 report = {"observations": len(rows), "cohorts": cohorts,
