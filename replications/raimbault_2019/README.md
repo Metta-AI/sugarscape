@@ -140,3 +140,15 @@ A fresh two-row run spanning the restart boundary reproduces all four archived m
 [Its complete interval audit](results/process-recovery-2026-10-16/resume-proof-audit.json) explicitly reports that the full reference remains incomplete.
 The continuation starts at row 2,399 and requests the remaining 52,601 rows in a new directory.
 The two-row validation overlaps the continuation and must not count as additional ensemble coverage.
+
+## Partitioned continuation
+
+The sequential continuation was deliberately stopped after 847 additional validated rows.
+Together, the preserved runs cover original indices `[0,3246)` with 6,492 exact native measurement matches.
+The remaining inputs run in five disjoint intervals using the same adapter, seeds, model, and 10,000-step horizon.
+Their requested intervals cover `[3246,55000)` without gaps or overlaps.
+
+[Initial independent audits](results/sharded-reference-2026-10-16/coverage.json) validate another 72 rows across all five processes, with zero measurement mismatches.
+Total unique audited coverage is 3,318 of 55,000 inputs; gaps remain between these partial shard outputs.
+The launch manifest, preserved sequential prefix, and five immutable snapshots retain the partition boundaries and exact evidence.
+Neither partitioning nor matching partial outputs completes the paper replication.
