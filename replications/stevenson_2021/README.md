@@ -246,3 +246,18 @@ The comparison does not change model parameters or acceptance criteria.
 Run `compare_figure1.py RUN AUDIT low-fertility NEW_OUTPUT` after `analyze_observations.py`.
 It requires all 100 audited seeds for the selected scenario and rechecks trajectory hashes and published extraction hashes.
 The final birth-cost comparison and evolutionary scenarios remain outstanding.
+
+## Complete observation ensemble and birth-cost comparison
+
+All 200 declared observation runs completed and passed the independent audit.
+Each aggregate trajectory matches the corresponding original 100,000-cycle ensemble prefix byte-for-byte.
+[Complete audit and comparison](results/figure1-birth-comparison-2026-10-16/audit.json) retain all 200 ledger entries and the remaining 100 observation files.
+The earlier 153-run snapshot remains historical evidence; it no longer describes current completion.
+An independent standard-library calculation also confirms all four previously reported low-fertility late means within 2.3e-13.
+
+Across 499 shared birth-cost samples, the published population, mean-age, Gini, and elite-age curves lie inside pointwise seed intervals at 89.6%, 1.4%, 93.0%, and 7.6% of times.
+Late published versus replication averages are population 823.951 versus 821.532, mean age 2245.622 versus 1417.953, Gini 0.332135 versus 0.336815, and elite age 2582.855 versus 1887.566.
+The age discrepancy appears in both the figure and Table 1; it is not explained by a table transcription alone.
+The tested observer preserves aggregate model behavior, but does not establish author-model equivalence.
+Unknown historical semantics still prevent calling these disagreements validated negative replications.
+Evolutionary scenarios and additional figure coverage remain required for study completion.
