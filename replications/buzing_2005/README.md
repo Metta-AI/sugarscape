@@ -1,6 +1,6 @@
-# Buzing, Eiben and Schut (2005): source recovery and operational pilot
+# Buzing, Eiben and Schut (2005): source recovery and reconstruction
 
-**Incomplete study. No paper-level replication verdict.**
+**Incomplete study. The 150-run reconstruction is audited; historical fidelity and paper-level replication remain unresolved.**
 
 Paper: [Emerging communication and cooperation in evolving agent societies](https://www.jasss.org/8/1/2.html).
 It identifies JAWAS 1.2.3. Figures 3–5 compare communication protocols and cooperation thresholds;
@@ -258,3 +258,40 @@ Both cooperation-event and consumer-participation ratios remain separate.
 An18-run prefix is rejected before any comparison output is created.
 This completion gate has been exercised; full comparison execution awaits the completed ensemble.
 No automatic paper verdict follows from the table because historical-source and reproductive-rule questions remain.
+
+## Complete reconstruction ensemble
+
+[The complete audit](results/complete-ensemble-2026-10-16/audit.json) validates all 150 runs, 2,100,000 scalar observations, and 300,000 harvest-count records.
+Each run completed 2,000 cycles. The terminal ledger reports exit code zero and 150 completed runs.
+The compressed evidence archive retains every audited native output, configuration, manifest, and event log; its complete contents were verified against the audit snapshot.
+Earlier prefix snapshots remain historical evidence, not additional independent runs.
+
+[The survival comparison](results/complete-ensemble-2026-10-16/survival.csv) gives surviving seeds at cycle 2,000:
+
+| Protocol | CT=0 | CT=1 | CT=2 | CT=3 | CT=4 |
+| --- | --- | --- | --- | --- | --- |
+| COM0 | 0/10 | 0/10 | 0/10 | 0/10 | 10/10 |
+| COM1 | 0/10 | 1/10 | 10/10 | 10/10 | 10/10 |
+| COM2 | 5/10 | 10/10 | 10/10 | 9/10 | 10/10 |
+
+COM0 agrees with the reported survival pattern. COM1 at CT=1 and COM2 at CT=0 require further fidelity investigation.
+The paper also qualifies population recovery as occurring in most cases; our per-seed pattern comparison is not a published deterministic acceptance test.
+COM2 at CT=3 loses one seed and does not by itself establish a contradiction.
+The comparison retains approximate population and gene-level differences without manufacturing precision or confidence bounds.
+Unknown publication seeds, the newer recovered release, scheduling reconstruction, and fertility-end inheritance remain limitations.
+**This remains an incomplete study, not a validated negative replication.**
+
+[Trajectory plots](results/complete-ensemble-2026-10-16/plots) show all seeds, with extinct-agent preferences and undefined harvest ratios masked.
+Separate panels retain native agent cooperation, shared harvest events, and shared consumer participations.
+These denominators differ materially; they cannot be interchanged when comparing the publication's prose, monitor table, and figures.
+Plot bounds include zero and one visibly. Colors identify seeds consistently, without treating paired pacing runs as additional samples.
+
+To inspect the retained evidence, extract `audited-data.tar.gz` into a fresh directory, then run:
+
+```sh
+python replications/buzing_2005/compare_paper.py /extracted/audit /new/comparison
+python replications/buzing_2005/plot_ensemble.py /extracted/audit /new/plots
+```
+
+Plotting requires NumPy and Matplotlib; retained plot metadata records the executed versions.
+The full workflow generated six plots. An incomplete 107-run audit was rejected before creating plot output.
