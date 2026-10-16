@@ -1,6 +1,7 @@
 # Bigbee, Cioffi-Revilla, and Luke (2007): Replication of Sugarscape Using MASON
 
-Paper: [author-hosted PDF](https://cs.gmu.edu/~sean/papers/Replication07.pdf), DOI `10.1007/978-4-431-71307-4_20`.
+Paper: [published chapter](https://doi.org/10.1007/978-4-431-71307-4_20).
+The former author-hosted PDF URL now redirects to a department homepage; the local download was HTML, not a paper.
 Status: author-source discovery, compilation, and deterministic pilot. **Not a completed replication.**
 
 ## Author source and historical limits
@@ -55,3 +56,10 @@ Compilation and deterministic replay demonstrate execution, not agreement with a
 4. Validate equivalent behavior in the Metta-AI fork and preserve measurements sufficient to distinguish implementation errors from scientific disagreements.
 
 A single replacement-population pilot does not establish reproduction of the paper's multiple rule-set outcomes.
+
+## Provisional outcome inventory
+
+[targets.json](targets.json) maps all 17 outcomes in Table 2 of the recovered April 2006 draft to existing configuration files.
+Each configuration and the draft PDF are hashed. This draft is related evidence, not a verified substitute for the published 2007 table.
+The targets cover movement, wealth, inequality, seasons, pollution, reproduction, culture, and trade.
+Numerical thresholds, ensemble sizes, and temporal sampling remain to be declared before confirmatory execution.
