@@ -2,7 +2,7 @@
 
 Paper: [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html).
 Scope: Sugarscape results; Schelling experiments are excluded.
-Status: **24/24 Table 4 values reproduced from archived data; first archived simulation exactly reproduced; ensemble unfinished**.
+Status: **24/24 Table 4 values reproduced from archived data; three archived simulations exactly reproduced; ensemble unfinished**.
 This is not yet a completed paper replication.
 
 ## Sources and exact reanalysis
@@ -90,7 +90,9 @@ Independent Python recomputation of the window mean differs by 2.22e-16 from Net
 The first 1,000 trajectory rows are identical to the earlier pilot.
 [Raw trajectory, execution log, and comparison](results/horizon-validation-2026-10-15) preserve the successful replay.
 Thus the initial mismatch is explained by the later horizon change, without changing seed, behavior, parameters, or runtime.
-This proves fidelity for one archived input, not the complete ensemble. Rows 1 and 54,999 are being checked next.
+Rows 1 and 54,999 also reproduce both archived NetLogo Gini outputs exactly.
+[Additional comparisons](results/horizon-validation-2026-10-15/additional-comparisons.json) include complete trajectories and independently recomputed window means.
+These three inputs validate the corrected replay path; they do not complete the spatial ensemble.
 
 ## Remaining work
 
