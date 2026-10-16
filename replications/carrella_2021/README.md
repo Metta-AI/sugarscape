@@ -218,3 +218,12 @@ Its final mean price is 20.9823, beyond the training range 0.3101–1.2538.
 A fresh author-model trajectory matches all 150 archived statistics for this input, including the extreme price.
 Thus this observation is reproducible simulation output, not an identified data-copy error.
 The estimator extrapolation and runtime comparison remain under investigation; the observation stays in every reported metric.
+
+## Recovered four-dimensional semi-automatic results
+
+The [5,000-input semi-automatic 4D run](results/sabc4d-5000-recovered-2026-10-15/comparison.json) saved all five folds.
+Independent analysis validates all 25,000 held-out predictions, coverage, and interval widths.
+All five performance values match Table 8 at its printed three-decimal precision.
+The process subsequently exited nonzero with `unexpected end of input`, following the previously documented live-script edit.
+We retain that failure and all raw outputs; this is not recorded as a successful invocation.
+A clean invocation parses the entire script before execution and is running separately.
