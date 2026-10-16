@@ -337,3 +337,22 @@ Independent ensemble comparison and broader multi-step native comparisons remain
 ```sh
 python replications/carrella_2021/verify_extensions.py /native/trades.csv /native/mutations.csv /new/comparison
 ```
+
+## Full independent ensemble launched
+
+The [declared independent ensemble](INDEPENDENT_ENSEMBLE.md) covers all 5,000 original parameter rows and 501 observations per row.
+`run_independent.py` records all 150 author-defined summary statistics, native-style observation timing, original seed text, and the independent integer seed.
+Raw and losslessly compressed trajectories, source/data hashes, validation results, and per-row completions are preserved.
+The [frozen launch](results/independent-launch-2026-10-16/launch.json) uses one worker and the complete original input interval.
+The run is incomplete and does not establish model or estimator equivalence.
+Python/NetLogo random streams differ, so exact archived-trajectory agreement is not an acceptance criterion for this independent ensemble.
+
+```sh
+python replications/carrella_2021/run_independent.py /params_sugarscape.csv /sugarscape.csv 0 5000 /new/independent-run
+```
+
+The first four completed independent inputs pass a separate standard-library audit of all 600 saved statistics.
+Maximum absolute recomputation difference is 1.14e-13; input mapping, trajectory hashes, and observation timing also pass.
+Complete mode rejects the unfinished ensemble, and a deliberately changed saved statistic is rejected before report creation.
+The prefix trajectories and audit are retained with the launch evidence.
+`audit_independent.py PARAMETERS RUN prefix|complete NEW_OUTPUT` performs this validation without assuming agreement with native random trajectories.
