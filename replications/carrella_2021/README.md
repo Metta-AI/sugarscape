@@ -319,3 +319,21 @@ python replications/carrella_2021/verify_model.py /complete/native-semantics /ne
 The parameter JSON uses `population`, `mutation`, `maximum_sugar`, `maximum_spice`, `reproduction`, and integer `seed`.
 Both minimum endowments are five, matching the original experiment.
 The CLI records before each of 501 native-style steps and preserves repeated terminal states after extinction.
+
+## Trade and mutation boundary coverage
+
+[Four additional native trade ticks](results/trade-mutation-2026-10-16/comparison.json) match individual holdings, utilities, trade counts, and mean prices.
+They cover prices above and below one, reciprocal commodity quantities, symmetric trade, and rejection against cached utility.
+Resource totals are conserved in these ordinary unequal-ratio cases after metabolism.
+
+Two 16-seed mutation campaigns run complete reproductive ticks in each implementation: 32 native and 32 independent ticks.
+Checks verify inherited halves, updated child utility, empty-cell placement within radius three, and allowed trait outcomes.
+Both exhibit metabolism values above four and negative vision values; the native model lacks those opposite bounds.
+Matching observed support does not imply matching frequencies or random draws.
+Controlled reciprocal-price and vision-clamping mutations both cause the verifier to fail before reporting success.
+The independent simulator passes these checks without modification.
+Independent ensemble comparison and broader multi-step native comparisons remain outstanding.
+
+```sh
+python replications/carrella_2021/verify_extensions.py /native/trades.csv /native/mutations.csv /new/comparison
+```
