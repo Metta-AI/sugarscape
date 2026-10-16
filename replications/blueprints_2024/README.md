@@ -216,3 +216,13 @@ Changing one recorded source hash rejects the copied evidence before an output r
 [Reconciled coverage](results/source-audit-2026-10-16/coverage.json) now contains522 unique runs; two agreeing pilot duplicates remain excluded.
 The other model counts remain98 altruistic,84 egoistic,27 Bentham in this checkpoint.
 Earlier audits have not all been rerun under the new source checks, and neither the2,000-run homogeneous grid nor the full paper is complete.
+
+## Complete checkpoint source re-audit
+
+[All24 original-seed batches](results/source-reaudit-2026-10-16/coverage.json) now pass the strengthened auditor, including earlier retained prefixes and two repeated pilots.
+Every recorded Python source hash matches the pinned release; all archived configurations and compressed trajectories pass integrity and outcome checks.
+The reconciled checkpoint contains529 unique runs and1,022,241 observations, excluding two agreeing duplicate records.
+Validated prefixes are313 raw,99 altruistic,89 egoistic,28 Bentham runs, each from its original seed schedule.
+No gaps or conflicting duplicates were found.
+This supersedes the earlier limitation that old batches had not received source-hash checks.
+It does not establish that the pinned release is the paper’s exact historical revision or complete the2,000-run homogeneous experiment.
