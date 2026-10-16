@@ -82,3 +82,15 @@ and 1,200 runtime configurations covering 100 seeds at 500, 5,000, and 50,000 ti
 The selfishness archive supplies the older singular `agentDecisionModel` field alongside a default plural field.
 The original release explicitly normalizes the singular field into the plural field before simulation (`sugarscape.py:958–961`).
 Ignoring that native normalization would incorrectly classify all selfishness configurations as raw agents.
+
+## Corrected original-input pilot completed
+
+Both [independent runs](results/original-pilot-2026-10-15/repeatability.json) of original seed 158402133555746433 complete all 5,000 steps.
+The 5,001 observations are byte-identical, with final population 1,219.
+Both original configurations, compressed raw trajectories, source hashes, execution logs, and independent full-trajectory audits are retained.
+Each run took approximately 28 minutes on this machine while other studies were running.
+
+The author's `plots/plot.py` counts equal initial/final population with the better category.
+The earlier runner grouped equality with worse; this boundary is now corrected before full ensembles start.
+The pilot's population increases, so its grouping is unaffected.
+`audit_batch.py` independently verifies original seed intervals, input hashes, effective configuration, compressed trajectories, every observation, and the author's classification rule.

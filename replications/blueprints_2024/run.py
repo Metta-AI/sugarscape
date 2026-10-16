@@ -82,7 +82,7 @@ def main():
     result = {"entry": args.entry, "seed": validated.seed, "model": validated.agentDecisionModels[0],
               "elapsed_seconds": time.monotonic() - started, "observations": len(trajectory),
               "final_timestep": int(final["timestep"]), "final_population": population,
-              "outcome": "dead" if population == 0 else "better" if population > 250 else "worse_or_equal",
+              "outcome": "dead" if population == 0 else "worse" if population < 250 else "better_or_equal",
               "trajectory_sha256": hashlib.sha256((output / "trajectory.json").read_bytes()).hexdigest()}
     (output / "result.json").write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps(result))
