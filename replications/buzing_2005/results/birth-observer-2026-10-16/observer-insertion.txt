@@ -1,0 +1,8 @@
+            if (child.intProps[VISION] != intProps[VISION] && child.intProps[VISION] != partner.intProps[VISION]) throw new IllegalStateException("Vision inheritance");
+            if (child.intProps[DEATH_AGE] != intProps[DEATH_AGE] && child.intProps[DEATH_AGE] != partner.intProps[DEATH_AGE]) throw new IllegalStateException("Death age inheritance");
+            if (child.intProps[SUGAR_METABOLISM] != intProps[SUGAR_METABOLISM] && child.intProps[SUGAR_METABOLISM] != partner.intProps[SUGAR_METABOLISM]) throw new IllegalStateException("Metabolism inheritance");
+            if (child.intProps[BEGIN_CHILD_BEARING_AGE] != intProps[BEGIN_CHILD_BEARING_AGE] && child.intProps[BEGIN_CHILD_BEARING_AGE] != partner.intProps[BEGIN_CHILD_BEARING_AGE]) throw new IllegalStateException("Fertility start inheritance");
+            if (child.floatProps[SUGAR_AMOUNT] != floatProps[SUGAR_AMOUNT] + partner.floatProps[SUGAR_AMOUNT]) throw new IllegalStateException("Child endowment");
+            if (child.getAge() != 0) throw new IllegalStateException("Newborn age");
+            System.out.println("birth-observed," + scape.getIteration() + "," + intProps[END_CHILD_BEARING_AGE] + "," + partner.intProps[END_CHILD_BEARING_AGE] + "," + child.intProps[END_CHILD_BEARING_AGE]);
+

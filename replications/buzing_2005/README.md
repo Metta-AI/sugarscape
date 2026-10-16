@@ -218,3 +218,15 @@ The snapshot remains incomplete and must not be counted as150runs.
 [Negative controls](results/ensemble-prefix-2026-10-16/audit-controls/controls.json) verify rejection of both an incomplete ensemble in complete mode and a deliberately altered population file.
 These controls are explicitly separated from scientific results. Complete mode requires all150runs and a successful final native-run ledger.
 The observer validates accounting, not historical source equivalence or the paper's scientific claims.
+
+## Reproduction fidelity audit
+
+[A read-only newborn observer](results/birth-observer-2026-10-16/audit.json) completes1,000cycles and preserves all ten native data files byte-for-byte.
+It checks49,792births for parental inheritance of vision, metabolism, death age, and fertility-start age, plus newborn age and sugar endowment.
+All checks pass. Original and instrumented source hashes, the first-party observer insertion, native logs, and birth records are retained.
+
+Fertility-end age differs from both parents in44,819births.
+The source resets that attribute and draws it anew from the configured sex-specific range; reproduction passes only the fertility-start age.
+The paper describes inheritance of child-bearing properties without resolving this distinction.
+This remains a historical-fidelity question, not proof of an incorrect published conclusion.
+The frozen150-run ensemble continues unchanged; no reproductive rule was selected to improve agreement.

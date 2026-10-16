@@ -1,0 +1,79 @@
+{
+  "native_exit_code": 0,
+  "cycles": 1000,
+  "observed_births": 49792,
+  "all_ten_native_files_byte_identical": true,
+  "birth_checks": [
+    "vision from either parent",
+    "death age from either parent",
+    "metabolism from either parent",
+    "fertility-start age from either parent",
+    "child sugar equals sum of retained parental halves",
+    "newborn age zero"
+  ],
+  "fertility_end_not_equal_either_parent": 44819,
+  "examples_cycle_parent1_parent2_child": [
+    [
+      0,
+      42,
+      54,
+      58
+    ],
+    [
+      0,
+      52,
+      41,
+      51
+    ],
+    [
+      0,
+      46,
+      58,
+      48
+    ],
+    [
+      0,
+      54,
+      44,
+      52
+    ],
+    [
+      0,
+      54,
+      50,
+      53
+    ],
+    [
+      0,
+      57,
+      46,
+      47
+    ],
+    [
+      0,
+      51,
+      44,
+      54
+    ],
+    [
+      0,
+      54,
+      42,
+      40
+    ],
+    [
+      0,
+      58,
+      47,
+      51
+    ],
+    [
+      0,
+      49,
+      56,
+      44
+    ]
+  ],
+  "source_explanation": "Agent initializes END_CHILD_BEARING_AGE=-1 regardless of properties; SugarAgent draws a new sex-specific end age. Reproduction explicitly passes only fertility-start age.",
+  "scope": "Matches tested inheritance mechanics and identifies unresolved fidelity for the paper phrase child bearing. No new genetic rule chosen, no paper verdict."
+}
