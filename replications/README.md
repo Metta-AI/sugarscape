@@ -225,3 +225,8 @@ Zero-filled storage yields bounds 0/0; one-filled bytes yield 16,843,009/16,843,
 Four complete single-thread 1,000-cycle runs repeat within each pattern, and population trajectories match across these two equal-bound patterns.
 Thus missing initialization is confirmed, but this diagnostic does not establish it as the cause of the earlier population divergence.
 All diagnostic outputs are retained without modifying the author source or treating these artificial patterns as paper settings.
+
+The author-hosted2003VUScape paper has been recovered and its Table2 and Figure2 visually checked.
+[Its separate specification](source-audits/buzing-2003.json) uses400agents, richness0.5, growth3, fixed listening, and a500-cycle displayed horizon.
+These differ materially from the2005communication experiments; existing2005runs cannot count as a second completed paper.
+The earlier text does not resolve fertility-end inheritance, historical source, or message-removal settings.
