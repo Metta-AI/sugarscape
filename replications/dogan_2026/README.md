@@ -37,3 +37,22 @@ A separate retry adds NetworkX 3.7; this version is our recovery choice, not a v
 `environment.txt` records every installed distribution so transitive dependencies are explicit.
 The original Python version and four author-pinned versions remain unchanged.
 The snapshot reference has 24,675 rows; no constant-population assumption is imposed on the transition model.
+
+## First completed canonical comparison
+
+[Part A](results/static-2026-10-15/comparison.json) completes all 25 static-policy runs.
+All 1,050 cells match the original 25-row, 42-column CSV at the declared tolerance; the entire CSV is also byte-identical.
+The remaining canonical experiments are still running. This is not a complete paper replication.
+
+## Robustness execution and targets
+
+`run_robustness.py REFERENCE NEW_OUTPUT` runs four original scripts sequentially, with original seeds and full horizons.
+The queue covers 45 horizon runs at 600 steps, 210 composition runs, 75 displacement-levy runs, and 105 per-seed threshold runs.
+The latter three retain 300 steps; each script also performs its original calibration runs.
+The runner checks the complete recovered environment and source hashes, and records each native exit status.
+
+[Manuscript targets](manuscript-targets.json) preserve all nine Table D.1 rows before fresh horizon results arrive.
+The deposited horizon and composition CSVs permit full per-seed comparisons.
+The levy and per-seed threshold CSVs are absent from the public deposit; their regenerated outputs must be checked against manuscript claims.
+The transfer-multiplier script requires a canonical Part B CSV for its benchmark; it remains pending fresh canonical completion.
+The older starvation script overlaps the canonical mortality study and requires a source comparison before deciding whether it adds distinct evidence.
