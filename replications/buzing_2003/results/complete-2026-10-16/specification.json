@@ -1,0 +1,93 @@
+{
+  "title": "Evolving Agent Societies with VUScape",
+  "authors": [
+    "P.C. Buzing",
+    "A.E. Eiben",
+    "M.C. Schut"
+  ],
+  "year": 2003,
+  "doi": "10.1007/978-3-540-39432-7_46",
+  "author_pdf": "https://www.cs.vu.nl/~gusz/papers/ECAL2003-Buzing-Eiben-Schut.pdf",
+  "pdf_sha256": "535aa40281cebf2d0d6b768069445eafd5ae330cbd5e506009ee37ebcba9166a",
+  "pages": 8,
+  "visual_checks": {
+    "table2_pdf_page": 7,
+    "figure2_pdf_page": 8,
+    "figure_horizon": 500,
+    "runs_per_displayed_condition": 10,
+    "displayed_conditions": [
+      {
+        "communication": false,
+        "threshold": 0
+      },
+      {
+        "communication": false,
+        "threshold": 1
+      },
+      {
+        "communication": true,
+        "threshold": 0
+      },
+      {
+        "communication": true,
+        "threshold": 1
+      }
+    ]
+  },
+  "parameters": {
+    "width": 50,
+    "height": 50,
+    "initial_population": 400,
+    "sugar_richness": 0.5,
+    "growback_rate": 3.0,
+    "metabolism": [
+      1,
+      1
+    ],
+    "vision": [
+      1,
+      1
+    ],
+    "initial_sugar": [
+      50,
+      50
+    ],
+    "reproduction_threshold": 5,
+    "mutation_sigma": 0.01,
+    "death_age": [
+      60,
+      100
+    ],
+    "fertility_start": [
+      12,
+      15
+    ],
+    "male_fertility_end": [
+      50,
+      60
+    ],
+    "female_fertility_end": [
+      40,
+      50
+    ],
+    "sex_recovery": 0
+  },
+  "communicating_condition": {
+    "listen_probability": 1,
+    "listening_evolves": false,
+    "talking_evolves": true
+  },
+  "reported_findings": [
+    "Communication reduces population variability without establishing larger surviving populations.",
+    "Some noncommunicating runs become extinct; communicating displayed runs survive.",
+    "Lower thresholds increase cooperation.",
+    "Talking increases in preliminary analysis."
+  ],
+  "unresolved": [
+    "Historical source revision and seeds",
+    "Message expiry/removal policy not pinned by inspected text",
+    "Reproductive details defer to original Sugarscape; fertility-end inheritance unresolved",
+    "Cooperation denominator and vector-curve extraction"
+  ],
+  "status": "Distinct study: five native500cycle pilots completed, one exactrepeat; fullensemble andhistoricalfidelity incomplete."
+}
