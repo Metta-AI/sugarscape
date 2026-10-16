@@ -87,3 +87,15 @@ The fresh data reconstructs all 42 Table 4 values and passes per-run mortality-c
 The native canonical process continues with Part C, so this evidence makes no claim about its eventual exit status.
 The transfer-multiplier run has started using this verified fresh benchmark.
 Full welfare sensitivity, robustness comparisons, and remaining manuscript claims still require validation before this paper can count as completed.
+
+## Independent inequality decomposition
+
+`audit_decomposition.py SNAPSHOT MAIN_CSV PROVENANCE NEW_OUTPUT` reconstructs the inequality decomposition directly from individual wealth, using pairwise absolute differences.
+It imports no author analysis functions, checks wealth accounting and population totals, and reconciles every run's Gini with the native aggregate output.
+[Fresh evidence](results/decomposition-2026-10-15/table3.json) covers all 24,675 agent records across 105 runs and matches all 105 printed Table 3 values.
+Between-type shares are averaged per run, matching the reported five-seed means.
+This validates the numerical decomposition; it does not by itself establish the paper's causal explanation of policy rankings.
+
+`compare_robustness.py ENGINE RUN horizon|composition|uhi NEW_OUTPUT` requires a successful native experiment before comparing every output cell with its pinned deposit.
+It verifies source hashes, row keys, missingness, native ordering, and the declared numerical tolerance.
+For the multiplier study it also checks that the verified fresh benchmark remained unchanged.

@@ -1,0 +1,2008 @@
+{
+  "provenance": "fresh-replay",
+  "runs": 105,
+  "snapshot_rows": 24675,
+  "snapshot_sha256": "1d13c440c4abebf85e72a3a7a87c8740f519ce6ba727db4df0830fbcf639b836",
+  "main_sha256": "fc00c8fa597adeee4f8e378de9a3d7546ce9615990ee7f168fd69647ef057c99",
+  "targets_sha256": "54faba8e9f8e5b3e651a15866680bb5aa818e7366aba8d5e9b44c21ce69e506c",
+  "method": "Direct pairwise absolute differences; no author analysis functions imported. Between share is averaged per run, not ratio of aggregate means.",
+  "per_run": [
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 0,
+      "population": 230,
+      "total": 0.3698545949623826,
+      "between": 0.2617631149581946,
+      "within": 0.06239774067045245,
+      "residual": 0.04569373933373555,
+      "between_percent": 70.77460129563029
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 1,
+      "population": 230,
+      "total": 0.39044660323668307,
+      "between": 0.2884100416749748,
+      "within": 0.06300127587034773,
+      "residual": 0.03903528569136053,
+      "between_percent": 73.86670527650737
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 2,
+      "population": 230,
+      "total": 0.3884144631201604,
+      "between": 0.2963716383753316,
+      "within": 0.05800531533020274,
+      "residual": 0.03403750941462609,
+      "between_percent": 76.30293578528399
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 3,
+      "population": 230,
+      "total": 0.36384129478315674,
+      "between": 0.267220161987419,
+      "within": 0.05974345106484338,
+      "residual": 0.036877681730894375,
+      "between_percent": 73.4441543109277
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 4,
+      "population": 230,
+      "total": 0.38118668184851234,
+      "between": 0.27807886571445817,
+      "within": 0.0616226081864078,
+      "residual": 0.041485207947646374,
+      "between_percent": 72.95083457951705
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "population": 230,
+      "total": 0.314516738141558,
+      "between": 0.2004780301796745,
+      "within": 0.053071904013993636,
+      "residual": 0.06096680394788987,
+      "between_percent": 63.74160922699228
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "population": 230,
+      "total": 0.3095759316840245,
+      "between": 0.1982507267145153,
+      "within": 0.04995290470957896,
+      "residual": 0.06137230025993022,
+      "between_percent": 64.0394508823975
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "population": 230,
+      "total": 0.30944728625311085,
+      "between": 0.20873362202662135,
+      "within": 0.04839233446190649,
+      "residual": 0.052321329764583015,
+      "between_percent": 67.45369285801031
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "population": 230,
+      "total": 0.31190842597953067,
+      "between": 0.21507875537314028,
+      "within": 0.047579076048846536,
+      "residual": 0.04925059455754385,
+      "between_percent": 68.95573747252826
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "population": 230,
+      "total": 0.31656116791845684,
+      "between": 0.22476459911482444,
+      "within": 0.05056037587495732,
+      "residual": 0.041236192928675086,
+      "between_percent": 71.00194903650396
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "population": 230,
+      "total": 0.3946755554592931,
+      "between": 0.282574076974074,
+      "within": 0.07165645276012256,
+      "residual": 0.04044502572509656,
+      "between_percent": 71.59654887803627
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "population": 230,
+      "total": 0.3686792032574966,
+      "between": 0.2433360731914241,
+      "within": 0.06618365406310821,
+      "residual": 0.05915947600296427,
+      "between_percent": 66.00211540043688
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "population": 230,
+      "total": 0.41107117042755453,
+      "between": 0.3027878400590464,
+      "within": 0.07306344076649654,
+      "residual": 0.035219889602011584,
+      "between_percent": 73.65825235180498
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "population": 230,
+      "total": 0.37333376835825643,
+      "between": 0.27888550762731545,
+      "within": 0.06225251043824685,
+      "residual": 0.03219575029269413,
+      "between_percent": 74.7013882118729
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "population": 230,
+      "total": 0.39439341646967724,
+      "between": 0.2826283057583263,
+      "within": 0.07265688367673566,
+      "residual": 0.039108227034615264,
+      "between_percent": 71.66151714402567
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "population": 230,
+      "total": 0.3943813448574541,
+      "between": 0.2784084371766611,
+      "within": 0.06737488112455384,
+      "residual": 0.048598026556239154,
+      "between_percent": 70.5937136243829
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "population": 230,
+      "total": 0.3700482984639611,
+      "between": 0.2542137693385904,
+      "within": 0.06251561359242186,
+      "residual": 0.05331891553294882,
+      "between_percent": 68.69745662763755
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "population": 230,
+      "total": 0.3986567596365491,
+      "between": 0.28290953144231806,
+      "within": 0.06802030422880026,
+      "residual": 0.047726923965430795,
+      "between_percent": 70.96569281811338
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "population": 230,
+      "total": 0.39314295585186265,
+      "between": 0.2714501234517807,
+      "within": 0.06842219576602891,
+      "residual": 0.05327063663405303,
+      "between_percent": 69.04616232118472
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "population": 230,
+      "total": 0.40595468406771124,
+      "between": 0.3050112684066374,
+      "within": 0.06369945796001174,
+      "residual": 0.037243957701062105,
+      "between_percent": 75.13431434030775
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "population": 230,
+      "total": 0.38698353178877415,
+      "between": 0.30950380223453694,
+      "within": 0.048907369468349476,
+      "residual": 0.028572360085887732,
+      "between_percent": 79.97854606471273
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "population": 230,
+      "total": 0.37893449102773463,
+      "between": 0.31958951874839564,
+      "within": 0.04139691772058107,
+      "residual": 0.01794805455875792,
+      "between_percent": 84.33898901142904
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "population": 230,
+      "total": 0.3887425994357968,
+      "between": 0.3210599801639511,
+      "within": 0.04486745677148094,
+      "residual": 0.02281516250036477,
+      "between_percent": 82.58934848661373
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "population": 230,
+      "total": 0.3752406912298953,
+      "between": 0.3094605628838696,
+      "within": 0.04238833436051308,
+      "residual": 0.023391793985512624,
+      "between_percent": 82.46988402818904
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "population": 230,
+      "total": 0.3770186083660509,
+      "between": 0.30537079093912467,
+      "within": 0.045703056840152606,
+      "residual": 0.025944760586773613,
+      "between_percent": 80.99621190120072
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "population": 230,
+      "total": 0.4630826783129941,
+      "between": 0.3597366944722882,
+      "within": 0.07950366365965163,
+      "residual": 0.023842320181054297,
+      "between_percent": 77.68303832542509
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "population": 230,
+      "total": 0.45100867333694145,
+      "between": 0.335615933154832,
+      "within": 0.07698537381181715,
+      "residual": 0.03840736637029228,
+      "between_percent": 74.41451861039901
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "population": 230,
+      "total": 0.4381248433491425,
+      "between": 0.34631283860691153,
+      "within": 0.07088748759470241,
+      "residual": 0.020924517147528535,
+      "between_percent": 79.04432808685405
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "population": 230,
+      "total": 0.4352962163377415,
+      "between": 0.3042691813601208,
+      "within": 0.07095513201474589,
+      "residual": 0.060071902962874804,
+      "between_percent": 69.89933979211106
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "population": 230,
+      "total": 0.40509052377396354,
+      "between": 0.32454946823053715,
+      "within": 0.06363150017262703,
+      "residual": 0.016909555370799356,
+      "between_percent": 80.11776360674202
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "population": 230,
+      "total": 0.31889687031772745,
+      "between": 0.22558445555924717,
+      "within": 0.045822407881952625,
+      "residual": 0.047490006876527664,
+      "between_percent": 70.73899951871273
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "population": 230,
+      "total": 0.3196339725249331,
+      "between": 0.22465326817138212,
+      "within": 0.04607528457500363,
+      "residual": 0.048905419778547336,
+      "between_percent": 70.28454028110482
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "population": 230,
+      "total": 0.31904168199401683,
+      "between": 0.23317272099722228,
+      "within": 0.04354830363757453,
+      "residual": 0.042320657359220026,
+      "between_percent": 73.08534719974148
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "population": 230,
+      "total": 0.33257155073612404,
+      "between": 0.2505901640915183,
+      "within": 0.04610648650931207,
+      "residual": 0.03587490013529368,
+      "between_percent": 75.34924846603818
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "population": 230,
+      "total": 0.32311475958391783,
+      "between": 0.23669160070098816,
+      "within": 0.04602818083729918,
+      "residual": 0.04039497804563049,
+      "between_percent": 73.25310704029158
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 0,
+      "population": 260,
+      "total": 0.37241901025970825,
+      "between": 0.27524715057957494,
+      "within": 0.060313243160471944,
+      "residual": 0.036858616519661366,
+      "between_percent": 73.90792172172682
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 1,
+      "population": 260,
+      "total": 0.39746439982838644,
+      "between": 0.292021008474358,
+      "within": 0.06593035658491263,
+      "residual": 0.03951303476911579,
+      "between_percent": 73.47098472226548
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 2,
+      "population": 260,
+      "total": 0.385172722177127,
+      "between": 0.29096542710586204,
+      "within": 0.05990307418711985,
+      "residual": 0.034304220884145115,
+      "between_percent": 75.54154548152492
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 3,
+      "population": 260,
+      "total": 0.38270393161051297,
+      "between": 0.2745195207455477,
+      "within": 0.06563768021621479,
+      "residual": 0.04254673064875049,
+      "between_percent": 71.73156533571566
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 4,
+      "population": 260,
+      "total": 0.381483618524371,
+      "between": 0.2990734514128793,
+      "within": 0.05663850095348642,
+      "residual": 0.025771666158005316,
+      "between_percent": 78.39745585137702
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "population": 260,
+      "total": 0.4870690697583282,
+      "between": 0.37080439561937784,
+      "within": 0.06837538603965382,
+      "residual": 0.047889288099296545,
+      "between_percent": 76.12973572790445
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "population": 260,
+      "total": 0.5036742958307026,
+      "between": 0.38357295866593694,
+      "within": 0.07597705594097534,
+      "residual": 0.04412428122379028,
+      "between_percent": 76.15496002894405
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "population": 260,
+      "total": 0.46492229244149447,
+      "between": 0.3599681204885256,
+      "within": 0.06675839916963681,
+      "residual": 0.03819577278333204,
+      "between_percent": 77.42543782923117
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "population": 260,
+      "total": 0.4696567956473675,
+      "between": 0.3684675917342608,
+      "within": 0.06603077576976597,
+      "residual": 0.035158428143340734,
+      "between_percent": 78.45464925645777
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "population": 260,
+      "total": 0.5024793803571708,
+      "between": 0.39105056430852025,
+      "within": 0.07026839403510671,
+      "residual": 0.04116042201354381,
+      "between_percent": 77.82420126982224
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "population": 260,
+      "total": 0.5644539388405533,
+      "between": 0.4251000470916644,
+      "within": 0.08150884814058951,
+      "residual": 0.057845043608299396,
+      "between_percent": 75.31173366685398
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "population": 260,
+      "total": 0.5350833215653099,
+      "between": 0.44543978410711604,
+      "within": 0.07034492663465239,
+      "residual": 0.01929861082354148,
+      "between_percent": 83.2468077689369
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "population": 260,
+      "total": 0.524890138278608,
+      "between": 0.42022425031335536,
+      "within": 0.0700380289757007,
+      "residual": 0.03462785898955191,
+      "between_percent": 80.0594676233569
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "population": 260,
+      "total": 0.5407479391998554,
+      "between": 0.45125334766803593,
+      "within": 0.07262581695074029,
+      "residual": 0.0168687745810792,
+      "between_percent": 83.44985065236779
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "population": 260,
+      "total": 0.5213782706192787,
+      "between": 0.4341134227552441,
+      "within": 0.06589315557964845,
+      "residual": 0.021371692284386096,
+      "between_percent": 83.26266114612261
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "population": 260,
+      "total": 0.42040782088556133,
+      "between": 0.2995207398296567,
+      "within": 0.06691390859132998,
+      "residual": 0.05397317246457464,
+      "between_percent": 71.24528254463394
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "population": 260,
+      "total": 0.42547070780576796,
+      "between": 0.3047923420221063,
+      "within": 0.06840411717448469,
+      "residual": 0.052274248609176954,
+      "between_percent": 71.6365043304573
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "population": 260,
+      "total": 0.41680165762992893,
+      "between": 0.3010173365177689,
+      "within": 0.0671412114045073,
+      "residual": 0.04864310970765273,
+      "between_percent": 72.22076280345244
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "population": 260,
+      "total": 0.41895696340386457,
+      "between": 0.296491707168539,
+      "within": 0.06686094292762652,
+      "residual": 0.055604313307699035,
+      "between_percent": 70.7690128264387
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "population": 260,
+      "total": 0.4192600912170523,
+      "between": 0.31006779438755927,
+      "within": 0.06605792213972697,
+      "residual": 0.04313437468976608,
+      "between_percent": 73.95595261344256
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "population": 260,
+      "total": 0.44354810370831016,
+      "between": 0.3767755160623342,
+      "within": 0.04582153102992648,
+      "residual": 0.020951056616049457,
+      "between_percent": 84.94580698514552
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "population": 260,
+      "total": 0.4441382461954323,
+      "between": 0.38129835402738754,
+      "within": 0.043920172588402154,
+      "residual": 0.0189197195796426,
+      "between_percent": 85.85127655491449
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "population": 260,
+      "total": 0.4545433648490108,
+      "between": 0.37367445637535923,
+      "within": 0.05081027010864243,
+      "residual": 0.030058638365009147,
+      "between_percent": 82.20875834354894
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "population": 260,
+      "total": 0.45413034207308245,
+      "between": 0.3908666781285138,
+      "within": 0.045257366462363544,
+      "residual": 0.018006297482205127,
+      "between_percent": 86.06927173027613
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "population": 260,
+      "total": 0.45707753046795513,
+      "between": 0.3723696827959595,
+      "within": 0.053154269759427705,
+      "residual": 0.03155357791256792,
+      "between_percent": 81.46750998998532
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "population": 260,
+      "total": 0.546502334294452,
+      "between": 0.4716915000280837,
+      "within": 0.06457031517514591,
+      "residual": 0.01024051909122245,
+      "between_percent": 86.31097626271789
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "population": 260,
+      "total": 0.5980904875028774,
+      "between": 0.4959275246930201,
+      "within": 0.07603211337629734,
+      "residual": 0.026130849433559977,
+      "between_percent": 82.9184772296908
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "population": 260,
+      "total": 0.5604292280956807,
+      "between": 0.47158745221878273,
+      "within": 0.06956794576285573,
+      "residual": 0.01927383011404228,
+      "between_percent": 84.14754773251578
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "population": 260,
+      "total": 0.5985017300943751,
+      "between": 0.4873612521368573,
+      "within": 0.08166686176263348,
+      "residual": 0.029473616194884325,
+      "between_percent": 81.43021609311096
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "population": 260,
+      "total": 0.5530052545508716,
+      "between": 0.452516838477242,
+      "within": 0.07187435744301614,
+      "residual": 0.028614058630613434,
+      "between_percent": 81.82866885139416
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "population": 260,
+      "total": 0.37948854011369765,
+      "between": 0.28071405245028924,
+      "within": 0.045986507236085244,
+      "residual": 0.05278798042732316,
+      "between_percent": 73.9716810331572
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "population": 260,
+      "total": 0.37462656088247104,
+      "between": 0.2883672161787787,
+      "within": 0.0435578313266043,
+      "residual": 0.042701513377088045,
+      "between_percent": 76.97457849745099
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "population": 260,
+      "total": 0.3784050617511756,
+      "between": 0.279827608042316,
+      "within": 0.0460347804471308,
+      "residual": 0.05254267326172882,
+      "between_percent": 73.94922434370598
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "population": 260,
+      "total": 0.3764401834412038,
+      "between": 0.283490503978871,
+      "within": 0.04537938807743161,
+      "residual": 0.04757029138490118,
+      "between_percent": 75.30824721934856
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "population": 260,
+      "total": 0.37072880311187284,
+      "between": 0.28478609637831276,
+      "within": 0.04242676252499558,
+      "residual": 0.0435159442085645,
+      "between_percent": 76.8179040818618
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 0,
+      "population": 215,
+      "total": 0.36021479162692094,
+      "between": 0.23817667007562981,
+      "within": 0.07033138648824032,
+      "residual": 0.051706735063050804,
+      "between_percent": 66.12073563106549
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 1,
+      "population": 215,
+      "total": 0.3681732922257037,
+      "between": 0.2514273648987021,
+      "within": 0.07018328447842598,
+      "residual": 0.04656264284857564,
+      "between_percent": 68.29049532049378
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 2,
+      "population": 215,
+      "total": 0.38656981649236843,
+      "between": 0.27921083045159534,
+      "within": 0.06718976701729935,
+      "residual": 0.04016921902347374,
+      "between_percent": 72.2277887562666
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 3,
+      "population": 215,
+      "total": 0.3580400209376214,
+      "between": 0.2552194672207721,
+      "within": 0.06405881400320264,
+      "residual": 0.038761739713646645,
+      "between_percent": 71.28238529101111
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 4,
+      "population": 215,
+      "total": 0.3586209337428258,
+      "between": 0.24158233608193674,
+      "within": 0.06705455348093081,
+      "residual": 0.04998404417995822,
+      "between_percent": 67.36425940354621
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "population": 215,
+      "total": 0.2793523726411553,
+      "between": 0.1441572457268887,
+      "within": 0.0566140967098122,
+      "residual": 0.07858103020445441,
+      "between_percent": 51.6040885437788
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "population": 215,
+      "total": 0.2790092532428467,
+      "between": 0.15927052967940267,
+      "within": 0.05317153892853778,
+      "residual": 0.06656718463490625,
+      "between_percent": 57.08431811068835
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "population": 215,
+      "total": 0.2852762671964952,
+      "between": 0.1535147453295492,
+      "within": 0.05739196029695566,
+      "residual": 0.07436956156999032,
+      "between_percent": 53.812659159554244
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "population": 215,
+      "total": 0.2637240590610614,
+      "between": 0.13966042755825692,
+      "within": 0.04791668942315832,
+      "residual": 0.07614694207964615,
+      "between_percent": 52.95702942518438
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "population": 215,
+      "total": 0.2861015281762703,
+      "between": 0.17604181394253596,
+      "within": 0.05376907303871962,
+      "residual": 0.05629064119501475,
+      "between_percent": 61.53123860075108
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "population": 215,
+      "total": 0.279964993096171,
+      "between": 0.194812059079364,
+      "within": 0.04462055610634155,
+      "residual": 0.04053237791046546,
+      "between_percent": 69.58443515559244
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "population": 215,
+      "total": 0.26225820177311066,
+      "between": 0.1725833604149648,
+      "within": 0.043324148309522914,
+      "residual": 0.04635069304862294,
+      "between_percent": 65.80665895218526
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "population": 215,
+      "total": 0.26306329602664413,
+      "between": 0.18373377176974745,
+      "within": 0.0407734563753233,
+      "residual": 0.03855606788157338,
+      "between_percent": 69.84394042988731
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "population": 215,
+      "total": 0.2785456310763765,
+      "between": 0.18771191148158428,
+      "within": 0.044371413120128954,
+      "residual": 0.04646230647466324,
+      "between_percent": 67.39000384109926
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "population": 215,
+      "total": 0.2778315940800473,
+      "between": 0.18562572359534615,
+      "within": 0.04598636093463858,
+      "residual": 0.046219509550062585,
+      "between_percent": 66.81231636379867
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "population": 215,
+      "total": 0.3793120174428598,
+      "between": 0.26768793122254436,
+      "within": 0.06751712190081542,
+      "residual": 0.04410696431950002,
+      "between_percent": 70.57196158117223
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "population": 215,
+      "total": 0.36957034393048305,
+      "between": 0.2576796540127972,
+      "within": 0.06750011605542017,
+      "residual": 0.04439057386226569,
+      "between_percent": 69.72411565070472
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "population": 215,
+      "total": 0.3865471633837019,
+      "between": 0.2664726529715695,
+      "within": 0.07251992680823652,
+      "residual": 0.047554583603895834,
+      "between_percent": 68.93664686062081
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "population": 215,
+      "total": 0.38405681552419074,
+      "between": 0.2736622747992662,
+      "within": 0.06996323866097155,
+      "residual": 0.040431302063953,
+      "between_percent": 71.25567461307789
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "population": 215,
+      "total": 0.3922306724512096,
+      "between": 0.2906198514740226,
+      "within": 0.06885768867362074,
+      "residual": 0.0327531323035663,
+      "between_percent": 74.09411652021512
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "population": 215,
+      "total": 0.3154248875465458,
+      "between": 0.23070388940456193,
+      "within": 0.05059252934281891,
+      "residual": 0.03412846879916495,
+      "between_percent": 73.14067421852312
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "population": 215,
+      "total": 0.3273950493950503,
+      "between": 0.24830973130709066,
+      "within": 0.050977187617831925,
+      "residual": 0.02810813047012773,
+      "between_percent": 75.84407026493196
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "population": 215,
+      "total": 0.323288828888649,
+      "between": 0.23849335933817142,
+      "within": 0.053113301194082765,
+      "residual": 0.03168216835639483,
+      "between_percent": 73.7709868163481
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "population": 215,
+      "total": 0.32841133433156644,
+      "between": 0.25072434532925403,
+      "within": 0.05079693395548376,
+      "residual": 0.026890055046828655,
+      "between_percent": 76.34460784965508
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "population": 215,
+      "total": 0.3082522211567086,
+      "between": 0.22880421660903683,
+      "within": 0.05010413251328096,
+      "residual": 0.029343872034390796,
+      "between_percent": 74.22629940846974
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "population": 215,
+      "total": 0.2977505408323334,
+      "between": 0.2399696229100832,
+      "within": 0.04530780298325264,
+      "residual": 0.01247311493899754,
+      "between_percent": 80.5941854007287
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "population": 215,
+      "total": 0.3112752604323005,
+      "between": 0.24657775854282188,
+      "within": 0.05212692725900176,
+      "residual": 0.012570574630476887,
+      "between_percent": 79.2153408531001
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "population": 215,
+      "total": 0.319553531027317,
+      "between": 0.2375204354167105,
+      "within": 0.0568124200750446,
+      "residual": 0.025220675535561884,
+      "between_percent": 74.32884082147918
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "population": 215,
+      "total": 0.2758400595738924,
+      "between": 0.21474010038969438,
+      "within": 0.04370246272436012,
+      "residual": 0.01739749645983791,
+      "between_percent": 77.84949753905107
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "population": 215,
+      "total": 0.2915372471639386,
+      "between": 0.23658711191471513,
+      "within": 0.0426753020607041,
+      "residual": 0.012274833188519359,
+      "between_percent": 81.15159013684325
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "population": 215,
+      "total": 0.30143961428128463,
+      "between": 0.19747581042206536,
+      "within": 0.055599899354621736,
+      "residual": 0.04836390450459754,
+      "between_percent": 65.51090204016559
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "population": 215,
+      "total": 0.30846784751631723,
+      "between": 0.22808014978543056,
+      "within": 0.05136006434386839,
+      "residual": 0.029027633387018276,
+      "between_percent": 73.93968338089617
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "population": 215,
+      "total": 0.3235207113590695,
+      "between": 0.24881940740104258,
+      "within": 0.05002525782886135,
+      "residual": 0.02467604612916558,
+      "between_percent": 76.90988510620659
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "population": 215,
+      "total": 0.30619448822438783,
+      "between": 0.19186454660902913,
+      "within": 0.05709344031183907,
+      "residual": 0.05723650130351963,
+      "between_percent": 62.661005990553775
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "population": 215,
+      "total": 0.3060668844993439,
+      "between": 0.21664766777938094,
+      "within": 0.0523025110907697,
+      "residual": 0.037116705629193246,
+      "between_percent": 70.78441959958114
+    }
+  ],
+  "table_comparison": [
+    {
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "total",
+      "mean": 0.36632377100508806,
+      "published": "0.366",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "between",
+      "mean": 0.2531233337457272,
+      "published": "0.253",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "within",
+      "mean": 0.06776356109361982,
+      "published": "0.068",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "residual",
+      "mean": 0.04543687616574101,
+      "published": "0.045",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "baseline",
+      "metric": "between_percent",
+      "mean": 69.05713288047664,
+      "published": "69",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "total",
+      "mean": 0.378748727590179,
+      "published": "0.379",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "between",
+      "mean": 0.27836876454207565,
+      "published": "0.278",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "within",
+      "mean": 0.06095407822445083,
+      "published": "0.061",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "residual",
+      "mean": 0.039425884823652585,
+      "published": "0.039",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "baseline",
+      "metric": "between_percent",
+      "mean": 73.46784624957328,
+      "published": "73",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "total",
+      "mean": 0.3838487364800211,
+      "published": "0.384",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "between",
+      "mean": 0.2863653116636444,
+      "published": "0.286",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "within",
+      "mean": 0.06168457102044113,
+      "published": "0.062",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "residual",
+      "mean": 0.035798853795935615,
+      "published": "0.036",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "baseline",
+      "metric": "between_percent",
+      "mean": 74.60989462252198,
+      "published": "75",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "total",
+      "mean": 0.382343402546489,
+      "published": "0.382",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "between",
+      "mean": 0.27122447289603996,
+      "published": "0.271",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "within",
+      "mean": 0.06927161841981289,
+      "published": "0.069",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "residual",
+      "mean": 0.04184731123063617,
+      "published": "0.042",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/ubi",
+      "metric": "between_percent",
+      "mean": 70.91650304515815,
+      "published": "71",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "total",
+      "mean": 0.3924368085755076,
+      "published": "0.392",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "between",
+      "mean": 0.27839862596319753,
+      "published": "0.278",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "within",
+      "mean": 0.06600649053436332,
+      "published": "0.066",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "residual",
+      "mean": 0.04803169207794678,
+      "published": "0.048",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/ubi",
+      "metric": "between_percent",
+      "mean": 70.88746794632526,
+      "published": "71",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "total",
+      "mean": 0.42017944818843506,
+      "published": "0.420",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "between",
+      "mean": 0.30237798398512605,
+      "published": "0.302",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "within",
+      "mean": 0.0670756204475351,
+      "published": "0.067",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "residual",
+      "mean": 0.050725843755773894,
+      "published": "0.051",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/ubi",
+      "metric": "between_percent",
+      "mean": 71.96550302368499,
+      "published": "72",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "total",
+      "mean": 0.2723327432104699,
+      "published": "0.272",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "between",
+      "mean": 0.18489336526820135,
+      "published": "0.185",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "within",
+      "mean": 0.04381518696919106,
+      "published": "0.044",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "residual",
+      "mean": 0.04362419097307752,
+      "published": "0.044",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "labour/means_tested",
+      "metric": "between_percent",
+      "mean": 67.88747094851259,
+      "published": "68",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "total",
+      "mean": 0.38843062279445556,
+      "published": "0.388",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "between",
+      "mean": 0.27804236072203725,
+      "published": "0.278",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "within",
+      "mean": 0.06916258834094197,
+      "published": "0.069",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "residual",
+      "mean": 0.04122567373147636,
+      "published": "0.041",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "labour/means_tested",
+      "metric": "between_percent",
+      "mean": 71.52396439723535,
+      "published": "72",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "total",
+      "mean": 0.537310721700721,
+      "published": "0.537",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "between",
+      "mean": 0.4352261703870831,
+      "published": "0.435",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "within",
+      "mean": 0.07208215525626627,
+      "published": "0.072",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "residual",
+      "mean": 0.030002396057371615,
+      "published": "0.030",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "labour/means_tested",
+      "metric": "between_percent",
+      "mean": 81.06610417152764,
+      "published": "81",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "total",
+      "mean": 0.3091379091760806,
+      "published": "0.309",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "between",
+      "mean": 0.2165775163993897,
+      "published": "0.217",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "within",
+      "mean": 0.053276234585992045,
+      "published": "0.053",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "residual",
+      "mean": 0.03928415819069885,
+      "published": "0.039",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/ubi",
+      "metric": "between_percent",
+      "mean": 69.96117922348066,
+      "published": "70",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "total",
+      "mean": 0.32265176703134385,
+      "published": "0.323",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "between",
+      "mean": 0.2341384419040716,
+      "published": "0.234",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "within",
+      "mean": 0.045516132688228406,
+      "published": "0.046",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "residual",
+      "mean": 0.04299719243904384,
+      "published": "0.043",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/ubi",
+      "metric": "between_percent",
+      "mean": 72.54224850117775,
+      "published": "73",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "total",
+      "mean": 0.37593782986008417,
+      "published": "0.376",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "between",
+      "mean": 0.28343709540571355,
+      "published": "0.283",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "within",
+      "mean": 0.04467705392244951,
+      "published": "0.045",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "residual",
+      "mean": 0.04782368053192114,
+      "published": "0.048",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/ubi",
+      "metric": "between_percent",
+      "mean": 75.4043270351049,
+      "published": "75",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "total",
+      "mean": 0.29919132780595636,
+      "published": "0.299",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "between",
+      "mean": 0.23507900583480504,
+      "published": "0.235",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "within",
+      "mean": 0.04812498302047265,
+      "published": "0.048",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "residual",
+      "mean": 0.015987338950678713,
+      "published": "0.016",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "wealth/means_tested",
+      "metric": "between_percent",
+      "mean": 78.62789095024047,
+      "published": "79",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "total",
+      "mean": 0.43852058702215657,
+      "published": "0.439",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "between",
+      "mean": 0.33409682316493794,
+      "published": "0.334",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "within",
+      "mean": 0.07239263145070882,
+      "published": "0.072",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "residual",
+      "mean": 0.03203113240650986,
+      "published": "0.032",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "wealth/means_tested",
+      "metric": "between_percent",
+      "mean": 76.23179768430626,
+      "published": "76",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "total",
+      "mean": 0.5713058069076513,
+      "published": "0.571",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "between",
+      "mean": 0.47581691351079713,
+      "published": "0.476",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "within",
+      "mean": 0.07274231870398971,
+      "published": "0.073",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "residual",
+      "mean": 0.022746574692864494,
+      "published": "0.023",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "wealth/means_tested",
+      "metric": "between_percent",
+      "mean": 83.32717723388592,
+      "published": "83",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "total",
+      "mean": 0.2786926960635658,
+      "published": "0.279",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "between",
+      "mean": 0.1545289524473267,
+      "published": "0.155",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "within",
+      "mean": 0.05377267167943671,
+      "published": "0.054",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "residual",
+      "mean": 0.07039107193680237,
+      "published": "0.070",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "disp_levy/means_tested",
+      "metric": "between_percent",
+      "mean": 55.397866767991374,
+      "published": "55",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "total",
+      "mean": 0.3124019099953362,
+      "published": "0.312",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "between",
+      "mean": 0.20946114668175517,
+      "published": "0.209",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "within",
+      "mean": 0.04991131902185659,
+      "published": "0.050",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "residual",
+      "mean": 0.053029444291724404,
+      "published": "0.053",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "disp_levy/means_tested",
+      "metric": "between_percent",
+      "mean": 67.03848789528647,
+      "published": "67",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "total",
+      "mean": 0.48556036680701276,
+      "published": "0.486",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "between",
+      "mean": 0.3747727261633243,
+      "published": "0.375",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "within",
+      "mean": 0.06948200219102774,
+      "published": "0.069",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "residual",
+      "mean": 0.04130563845266068,
+      "published": "0.041",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "disp_levy/means_tested",
+      "metric": "between_percent",
+      "mean": 77.19779682247193,
+      "published": "77",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "total",
+      "mean": 0.32055446426370404,
+      "published": "0.321",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "between",
+      "mean": 0.23940710839762297,
+      "published": "0.239",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "within",
+      "mean": 0.05111681692469966,
+      "published": "0.051",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "residual",
+      "mean": 0.030030538941381392,
+      "published": "0.030",
+      "matches": true
+    },
+    {
+      "speed": "slow",
+      "cell": "uhi_scenario",
+      "metric": "between_percent",
+      "mean": 74.6653277115856,
+      "published": "75",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "total",
+      "mean": 0.3813839843696504,
+      "published": "0.381",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "between",
+      "mean": 0.3129969309939756,
+      "published": "0.313",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "within",
+      "mean": 0.04465262703221544,
+      "published": "0.045",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "residual",
+      "mean": 0.02373442634345933,
+      "published": "0.024",
+      "matches": true
+    },
+    {
+      "speed": "balanced",
+      "cell": "uhi_scenario",
+      "metric": "between_percent",
+      "mean": 82.07459589842905,
+      "published": "82",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "total",
+      "mean": 0.4506875174587582,
+      "published": "0.451",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "between",
+      "mean": 0.37899693747791086,
+      "published": "0.379",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "within",
+      "mean": 0.047792721989752464,
+      "published": "0.048",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "residual",
+      "mean": 0.02389785799109485,
+      "published": "0.024",
+      "matches": true
+    },
+    {
+      "speed": "fast",
+      "cell": "uhi_scenario",
+      "metric": "between_percent",
+      "mean": 84.10852472077408,
+      "published": "84",
+      "matches": true
+    }
+  ]
+}
