@@ -195,3 +195,11 @@ The boundary check overlaps existing coverage and is not counted as additional e
 The completed Dogan verdict also verifies mortality invariance across all four UHI multipliers in every speed/seed condition.
 It distinguishes author-source fork integration from independent engine replication, and preserves the unpublished working-paper status.
 No unfinished historical study is removed from the program.
+
+## Additional historical source lead
+
+[Kehoe source audit](source-audits/kehoe-2017-2019.json) pins the author’s Sugarscape repository and recovered 379-page 2017 thesis.
+The thesis contains quantified comparisons of synchronous and asynchronous updating.
+The current source forces seed zero and doubles landscape sugar for evolution; it is not yet a matched carrying-capacity experiment.
+The full related 2017/2019 conference papers and historical configuration still require verification.
+This lead adds no completed study and replaces no unfinished candidate.
