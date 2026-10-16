@@ -66,3 +66,15 @@ It records whether the input is the author deposit or a fresh replay; provenance
 [The deposited-data audit](results/deposited-horizon-audit-2026-10-15/table-d1.json) matches all 36 table values at printed precision.
 At 600 steps, the means-tested mortality ratios range from 0.06535 to 0.09751 of the same-speed baseline.
 This confirms internal reporting consistency only. Fresh horizon simulations are still running and must pass separate native-output and table checks.
+
+## Mortality table and transfer-multiplier coverage
+
+`audit_mortality.py CSV PROVENANCE NEW_OUTPUT` checks all 105 speed/policy/seed combinations and reconciles each run's three death categories.
+[The deposited-data audit](results/deposited-mortality-audit-2026-10-15/table4.json) reconstructs all 42 Table 4 means and coefficients of variation at printed precision.
+It explicitly reports both sample and population coefficients; the sample convention matches the table.
+The seven-policy mortality ranking is identical across the three automation speeds in these deposited data.
+This checks reporting consistency; fresh simulation and full-paper verification remain separate requirements.
+
+`run_uhi.py ENGINE FRESH_CANONICAL NEW_OUTPUT` runs the author's sixty transfer-multiplier experiments and both original calibrations.
+Before starting, it requires every fresh Part B benchmark cell to match the pinned deposit, including missing values, at the declared tolerance.
+It copies that verified fresh benchmark into the isolated output directory and records hashes, rather than using deposited outcomes as fresh results.
