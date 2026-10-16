@@ -2,7 +2,7 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: 400 fresh author-model simulations validated; ten linear-regression and ten rejection-estimation Table 8 values reproduced.
+Status: 1,056 fresh author-model simulations validated; ten linear-regression and ten rejection-estimation Table 8 values reproduced.
 **Not a completed replication:** the other estimators and independent simulator work remain unfinished.
 
 ## Author implementation
@@ -112,7 +112,14 @@ It validates all 6,250 predictions for this run and all 25,000 predictions for r
 ## Complete simulation ensemble
 
 The [declared ensemble protocol](ENSEMBLE_PROTOCOL.md) covers every one of the 5,000 archived parameter/seed inputs.
-Four fresh batches are running; no full-ensemble result is claimed yet.
+All four fresh batches stopped with confirmed disk-write failures; no full-ensemble result is claimed.
+Of 1,060 logged completions, four files were truncated or empty.
+The comparison gate rejected those files before calculating paper statistics.
+The runner now verifies all 501 rows, tick order, column count, and finite values before logging completion.
+The **1,056 intact simulations reproduce 158,400/158,400 archived statistics**.
+[Interrupted ensemble evidence](results/ensemble-interrupted-2026-10-15) retains every comparison, failure log, and truncated-file audit.
+Restart ranges are [256,1250), [1516,2500), [2768,3750), and [4016,5000), using new output directories.
+The original partial files remain preserved; infrastructure failures are not scientific disagreements.
 The first 100 completed inputs from each batch reproduce **60,000/60,000 statistics across 400 simulations**.
 [Partial comparisons](results/ensemble-prefix-validation-2026-10-15) retain every row hash and all freshly calculated statistics.
 These ranges are [0,100), [1250,1350), [2500,2600), and [3750,3850); they do not represent all 5,000 inputs.

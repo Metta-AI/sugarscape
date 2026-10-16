@@ -38,6 +38,21 @@ public class Replay {
                     command += " \",\" (" + reporter + ")";
                 }
                 workspace.command(command + ") go] file-close");
+                List<String> observations = Files.readAllLines(output);
+                if (observations.size() != 502) {
+                    throw new IllegalStateException("Incomplete trajectory for row " + row + ": " + observations.size() + " lines");
+                }
+                for (int tick = 0; tick <= 500; tick++) {
+                    String[] fields = observations.get(tick + 1).split(",", -1);
+                    if (fields.length != 7 || Double.parseDouble(fields[0]) != tick) {
+                        throw new IllegalStateException("Invalid trajectory at row " + row + ", tick " + tick);
+                    }
+                    for (String field : fields) {
+                        if (!Double.isFinite(Double.parseDouble(field))) {
+                            throw new IllegalStateException("Nonfinite trajectory at row " + row + ", tick " + tick);
+                        }
+                    }
+                }
                 System.out.println("Completed row " + row + " in " + (System.nanoTime() - started) / 1e9 + " seconds");
             }
         } finally {
