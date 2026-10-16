@@ -229,7 +229,7 @@ Fertility-end age differs from both parents in44,819births.
 The source resets that attribute and draws it anew from the configured sex-specific range; reproduction passes only the fertility-start age.
 The paper describes inheritance of child-bearing properties without resolving this distinction.
 This remains a historical-fidelity question, not proof of an incorrect published conclusion.
-The frozen150-run ensemble continues unchanged; no reproductive rule was selected to improve agreement.
+The frozen 150-run ensemble is complete; no reproductive rule was selected to improve agreement.
 
 ## Validated removal of wall-clock pacing
 
@@ -239,16 +239,16 @@ The native model sleeps10milliseconds after every cycle, independently of its lo
 The COM2 unpaced execution took2.84seconds. No simulation horizon, seed, rule, or logical clock was changed.
 These checks cover seed0 at threshold0 for COM0 and threshold1 for COM1/COM2; other conditions require overlap checks.
 
-A separately frozen accelerated150-run ensemble is now running. The original paced ensemble remains active and preserved.
+Both separately frozen 150-run ensembles are now complete and preserved.
 The retained launcher differs only by declaring and passing `--unpaced`; its hashes and command are recorded.
-Overlapping runs are paired validation data, not additional independent seeds. Neither ensemble is yet complete.
+Overlapping runs are paired validation data, not additional independent seeds. The complete comparison appears below.
 
 ## Paired pacing audit and paper comparison gate
 
 [All19completed overlapping runs](results/pacing-overlap-2026-10-16/audit.json) match exactly across all ten native output files.
 The separately audited accelerated prefix covers18runs,252,000scalar observations, and36,000harvest-count records.
 These snapshots were taken at different instants; paired duplicates do not increase unique seed coverage.
-The accelerated ensemble remains in progress.
+This historical prefix is superseded by the complete ensemble audit below.
 
 `compare_paper.py COMPLETE_AUDIT NEW_OUTPUT` requires all150audited runs and rehashes native data and event logs before producing grouped comparisons.
 It compares the reported survival pattern across ten seeds for each protocol/threshold pair.
@@ -256,7 +256,7 @@ Approximate population and communication levels receive numerical differences, w
 Late summaries use cycles1501–2000; extinct populations contribute zero population but no invented gene preferences.
 Both cooperation-event and consumer-participation ratios remain separate.
 An18-run prefix is rejected before any comparison output is created.
-This completion gate has been exercised; full comparison execution awaits the completed ensemble.
+The completion gate and full comparison have both been exercised; complete results appear below.
 No automatic paper verdict follows from the table because historical-source and reproductive-rule questions remain.
 
 ## Complete reconstruction ensemble
@@ -383,3 +383,18 @@ Historical scheduling and inheritance remain unresolved, and the paper-level stu
 
 Archives are split by protocol and threshold, with all ten seeds retained in each.
 Every archived member was verified against the executed run. Source/classes are excluded; raw trajectories, configurations, birth and wealth records, logs, and manifests are retained.
+
+## Complete pacing equivalence
+
+[The complete paired comparison](results/pacing-complete-2026-10-16/parity.json) validates all 150 paced/unpaced run pairs.
+All 1,500 native output files match byte for byte, together with 300,000 per-cycle harvest records.
+The independent paced audit validates 2,100,000 scalar observations and terminal success for all 150 runs.
+
+`audit_pacing.py PACED_GRID UNPACED_GRID NEW_OUTPUT` checks both completion ledgers, source hashes, actual configurations, native data, and harvest logs.
+Every pair has identical sources except removal of `Thread.sleep(SLEEP_TIME)` in `Scape.java`; runtime versions and model parameters also match.
+A complete-grid input with one corrupted population value is rejected before output creation.
+
+The retained provenance archive includes paced manifests, configurations, logs, and first-party frozen runners; every archive member was checksum-verified.
+Native output bytes are already retained in the complete accelerated evidence archive, and their pairwise hashes are recorded here.
+Original paced files remain preserved externally. These paired controls add no independent seeds and establish no historical-source equivalence.
+Pacing therefore does not explain the observed reconstruction discrepancies for this grid. Reproduction, inheritance, and historical protocol questions remain unresolved.
