@@ -230,3 +230,15 @@ The source resets that attribute and draws it anew from the configured sex-speci
 The paper describes inheritance of child-bearing properties without resolving this distinction.
 This remains a historical-fidelity question, not proof of an incorrect published conclusion.
 The frozen150-run ensemble continues unchanged; no reproductive rule was selected to improve agreement.
+
+## Validated removal of wall-clock pacing
+
+The native model sleeps10milliseconds after every cycle, independently of its logical iteration clock.
+`run_pilot.py ... --unpaced` removes only that sleep in the extracted experimental source.
+[Paced/unpaced comparisons](results/unpaced-validation-2026-10-16) preserve all ten native output files exactly for COM0 at2,000cycles, COM1 at100cycles, and COM2 at1,000cycles.
+The COM2 unpaced execution took2.84seconds. No simulation horizon, seed, rule, or logical clock was changed.
+These checks cover seed0 at threshold0 for COM0 and threshold1 for COM1/COM2; other conditions require overlap checks.
+
+A separately frozen accelerated150-run ensemble is now running. The original paced ensemble remains active and preserved.
+The retained launcher differs only by declaring and passing `--unpaced`; its hashes and command are recorded.
+Overlapping runs are paired validation data, not additional independent seeds. Neither ensemble is yet complete.

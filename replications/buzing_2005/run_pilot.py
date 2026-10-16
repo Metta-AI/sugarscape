@@ -16,6 +16,7 @@ class Manifest(BaseModel):
     variant: str
     seed: int
     cycles: int
+    unpaced: bool
     threshold: int
     source_sha256: dict[str, str]
     seed_control_replacements: dict[str, int]
@@ -43,6 +44,7 @@ parser.add_argument("variant", choices=["original", "controlled", "balanced-land
 parser.add_argument("seed", type=int)
 parser.add_argument("--threshold", type=int, choices=range(5), default=1)
 parser.add_argument("--cycles", type=int, default=100)
+parser.add_argument("--unpaced", action="store_true")
 args = parser.parse_args()
 assert 1 <= args.cycles <= 5000
 archive = args.archive.resolve()
@@ -166,6 +168,12 @@ if args.variant in ("paper-com0", "paper-com1", "paper-com2"):
     data = data[:position] + """        System.out.println("harvest-counts," + getIteration() + "," + SugarAgent.meals + "," + SugarAgent.sharedMeals + "," + SugarAgent.consumers + "," + SugarAgent.sharedConsumers);
 """ + data[position:]
     source.write_text(data, encoding="latin-1")
+if args.unpaced:
+    source = reference / "src/nl/vu/cs/sugarland/model/Scape.java"
+    data = source.read_bytes()
+    marker = b"Thread.sleep(SLEEP_TIME);"
+    assert data.count(marker) == 1
+    source.write_bytes(data.replace(marker, b"// Headless execution: omit wall-clock pacing only."))
 with (output / "compile.log").open("w") as log:
     subprocess.run(
         [str(java_home / "bin/javac"), "-encoding", "ISO-8859-1", "-cp", str(reference / "lib"),
@@ -225,7 +233,7 @@ final_population = float(population.read_text().splitlines()[-1].split()[1])
 assert final_population.is_integer() and final_population >= 0
 assert f"iterations={args.cycles},initial=1000,final={int(final_population)}" in (output / "run.log").read_text()
 manifest = Manifest(
-    variant=args.variant, seed=args.seed, cycles=args.cycles, threshold=args.threshold, source_sha256={str(path): digest(path) for path in sources},
+    variant=args.variant, seed=args.seed, cycles=args.cycles, threshold=args.threshold, unpaced=args.unpaced, source_sha256={str(path): digest(path) for path in sources},
     seed_control_replacements=seed_replacements,
     archive_sha256=archive_hash, adapter_sha256=digest(adapter), source_count=len(sources),
     java_version=subprocess.run([str(java_home / "bin/java"), "-version"], capture_output=True, text=True, check=True).stderr,

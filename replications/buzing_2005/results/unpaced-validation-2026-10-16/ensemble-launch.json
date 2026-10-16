@@ -1,0 +1,17 @@
+{
+  "pid": 65290,
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-unpaced-launcher-001/run_ensemble.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-tools/JAWAS-archived-2006.exe",
+    "/opt/homebrew/opt/openjdk@11",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-reconstruction-unpaced-001"
+  ],
+  "launcher_sha256": {
+    "Replay.java": "36f21be8e2d5c0f27cd67d4a72dcedd5e16c2140c3af2ab4f6d967b9e4a438c1",
+    "run_ensemble.py": "6e2620f86098dd274fcf87ebc410c4f02fc12f3b8ef52278ae2fa6857ab61f1f",
+    "ReplicationRandom.java": "068305c17ae3f0ef636c87aeacea41ecc910ec650ab56edc45c15519568e453e",
+    "run_pilot.py": "e51335138005926f494397c24fe616082d15dc33a0cc5d3ea9be2dba377bb6a8"
+  },
+  "scope": "Independent accelerated150run ensemble. Paced run remains active and preserved. Compare all overlapping completed trajectories; do not combine duplicates as independent samples."
+}
