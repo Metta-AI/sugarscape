@@ -125,7 +125,7 @@ The following requirements remain separate from successful execution or source-o
 | Bigbee | Published 2007 protocol and implementation alignment; corrected 2011 draft showcases alone are insufficient |
 | Stevenson | Evolutionary scenarios, distributions, and unresolved fixed-society growth-rate/mean-age discrepancies; author fitting protocol unknown |
 | Buzing | Version 1.2.3 harvesting, scheduling, landscape, communication semantics, and full ten-run condition ensembles |
-| Dogan | Remaining levy/per-seed robustness runs, full fork verification, and corrected-levy comparison; native tables pass but accounting and prose discrepancies require interpretation |
+| Dogan | Full experiment execution and fork verification complete; finish manuscript claim inventory and scientific verdict, preserving supported mortality results and contradicted mechanism claims |
 | Kiran, Oremland, Pan, Flentge | Resolve original-model specification gaps and implement their full declared experiments |
 
 Replacing's twenty seasonal seeds now have 10,020 native-parity observations and individual death-cause audits.
@@ -169,8 +169,13 @@ Dogan completes all 205 canonical runs, the 45-run longer horizon, 210-run compo
 Independent fresh-data audits reconstruct main Tables 1–6 and appendix Tables B.1, C.1, and D.1.
 The welfare-ranking qualification and composition-ranking exceptions persist in fresh execution.
 A native levy observer confirms 762.5 units deducted but only 180.0583 credited across 60 events; its full trajectory matches an uninstrumented run.
-A separate accounting correction passes all 60 event checks and is undergoing the declared paired 75-run comparison.
-Original and forked model sources remain unchanged for faithful reproduction; full fork canonical verification is still pending.
+Both 75-run levy sweeps and the per-seed calibration study now complete; the paired correction exposes changes in the reported sensitivity bounds.
+The full fork canonical run matches the separate original replay byte-for-byte across all 206,010 cells.
+All 570 available individual-seed mortality comparisons favor pure means-tested policies; horizon comparisons lack universal-policy arms.
+Four of six within-type contribution comparisons contradict the manuscript's equalization claim.
+A full native tax observer confirms recurring autonomous wealth taxation, contradicting the claimed absence of that instrument.
+Both observed tax trajectories match unobserved runs byte-for-byte and reproduce canonical Gini, mortality, and revenue.
+These findings require a final claim inventory before a paper-level verdict; the study is no longer waiting for its declared native sweeps.
 
 Blueprints independently audits all retained completed prefixes and recovers each of four disk-interrupted seeds without substitution.
 All four original schedules have resumed in fresh output directories. No full model ensemble is yet complete.
@@ -180,3 +185,7 @@ Replacing also completes the declared 60-run paired trade/lending diagnostic.
 Mean relative increases are 2.421% and 3.359%; maxima are 6.182% and 7.610%.
 Unknown historical seeds and measurement windows prevent treating these as confirmation or refutation of the reported 3%/5% claims.
 Carrella's full 5,000-input regression-forest workflow has launched with the native settings; no result is claimed before all five folds validate.
+
+Raimbault's interrupted reference retains 2,399 validated simulations and 4,798 exact native Gini matches.
+The continuation requests the remaining 52,601 rows after a two-row boundary replay passes all four archived measurements.
+The boundary check overlaps existing coverage and is not counted as additional ensemble evidence.
