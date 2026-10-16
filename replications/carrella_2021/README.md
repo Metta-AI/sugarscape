@@ -510,3 +510,17 @@ The six-hour wrapper archives outputs and stops its node, bounding this batch to
 Runtime and platform provenance accompany the unchanged frozen producer.
 Existing independent statistic-recomputation tolerances (`1e-10` absolute and relative) remain unchanged; the strict cross-platform failure remains failed.
 All completed chunks still require independent trajectory and statistic audits before reconciliation and estimator analysis.
+
+## Independently validated cloud checkpoint
+
+[The first sealed cloud checkpoint](results/cloud-checkpoint-2026-10-16/validation.json) contains 50 completed 25-input chunks, adding 1,250 inputs.
+Reconciliation with the four retained local runs validates 2,143 unique inputs and recomputes all 321,450 summary values.
+It checks original input mappings, runtime/source hashes, 501-observation trajectories, compressed and raw file hashes, and duplicate-free original-row ordering.
+Every captured cloud chunk has a successful exit and a matching complete-interval marker.
+Controller source, interval plan, and Linux platform provenance are retained with the native evidence.
+
+Completed ranges are `[0,1881)`, `[2005,2139)`, and `[3503,3631)`.
+Missing ranges are `[1881,2005)`, `[2139,3503)`, and `[3631,5000)`.
+The cloud producer remains active; these counts exclude in-progress and later-completed chunks.
+The retained prior local count of 893 is included, not added again to 2,143.
+The full 5,000-input gate still fails, so no complete independent calibration table or estimator result is claimed.
