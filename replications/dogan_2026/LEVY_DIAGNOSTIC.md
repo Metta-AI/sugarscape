@@ -50,3 +50,9 @@ It applies the retained patch, verifies only the model file changed, records ori
 The original checkout and bundled fork source are not edited.
 The corrected event observer uses `audit_levy_events.py NEW_OUTPUT/source NEW_AUDIT --variant conserving`.
 Both observer variants require their exact source hash and verify native/observed trajectory identity.
+
+`compare_levy.py ORIGINAL_ROBUSTNESS CORRECTED_RUN CANONICAL_RUN NEW_OUTPUT` requires both complete 75-run sweeps.
+It verifies the source manifests, complete paired grids, corrected output hash, and original D=50 agreement with canonical results before computing differences.
+It retains every paired seed change and the declared manuscript sensitivity checks.
+The native sweep exposes working and owner counts, not complete population or per-step trajectories; the comparison reports that measurement limit explicitly.
+Its incomplete-original rejection has been exercised; successful end-to-end comparison remains pending both sweeps.
