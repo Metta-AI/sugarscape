@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/audit_observation.py", line 35, in <module>
+    assert len(ids) == len(r["agent_ids"]) == r["individual_agents"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

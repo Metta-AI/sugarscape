@@ -1,0 +1,13 @@
+{
+  "native": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-explicit-pilot-001",
+  "observed": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-explicit-observed-001",
+  "byte_identical_outputs": {
+    "population.csv": "1e3fa3cc6863551b3c2c34926951b4822eea2d170bb62cb353667639c1f4716a",
+    "prices.json": "de2e24186e861e1b8bb186147053c0b813df404ff8138247762b388791147a25"
+  },
+  "observations": 1000,
+  "validated_health_rows": 51642,
+  "final_individual_agents": 47,
+  "final_native_reporter": 47,
+  "scope": "Whole-model observer parity, surviving identities, monotonic individual population and native health-record reconciliation. Native reporter may count groups; no paper replication verdict."
+}
