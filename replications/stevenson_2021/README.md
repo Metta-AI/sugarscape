@@ -58,3 +58,14 @@ The two fixed-parameter pilots do not substitute for those targets.
 Final populations are 834 and 823; all cycle-level resource and population checks pass.
 All 401 recorded observations per run have finite metrics and valid Gini values.
 The birth-cost pilot has final mean age 1,347.74; equilibrium and agreement with the published mean age remain unestablished.
+
+## Birth-cost ensemble
+
+The declared 100-seed, 100,000-cycle ensemble completed with no extinctions.
+[All trajectories and analysis](results/birth-cost-ensemble-2026-10-15) are retained; gzip decompression preserves each original CSV exactly.
+Validation checked 100,100 observations, all completion hashes, both declared windows, and recorded conservation checks.
+The later-window mean age is 1,418.80 (95% interval 1,415.50–1,422.09), compared with the published 2,264.
+Population is 821.457 versus 824, wealth 15,902.67 versus 16,254, and Gini 0.336714 versus 0.33.
+These are unresolved discrepancies requiring implementation and measurement investigation, not negative-replication verdicts.
+Paired changes between the two windows have intervals containing zero; this does not prove equilibrium.
+No interpretation of the paper's percentage uncertainties or acceptance margin is inferred from these results.
