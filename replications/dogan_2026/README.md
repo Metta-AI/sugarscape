@@ -127,3 +127,11 @@ Under balanced automation, baseline minus Universal High Income (UHI) mean Gini 
 That small reversal contradicts the literal no-ranking-change statement, but does not establish a statistically meaningful difference or invalidate the main mortality finding.
 Cross-type trade reductions span 58.211–93.101%, clarifying the prose's approximate 60–90% range.
 Fresh welfare simulations are still running; deposited-data consistency checks are not counted as a fresh replication or completed negative study.
+
+## Transfer-multiplier validation
+
+`audit_uhi.py SWEEP BENCHMARK PROVENANCE NEW_OUTPUT` requires the complete sixty-run grid and reconciles all fifteen two-times settings with canonical results.
+It checks the common base transfer rate, mortality accounting inputs, and each five-seed comparison against wealth-funded means-tested redistribution.
+[Deposited-data results](results/deposited-uhi-audit-2026-10-15/multiplier-audit.json) reconcile all fifteen canonical rows.
+All twelve speed/multiplier means have higher mortality than the means-tested benchmark, with ratios from 1.541 to 1.844.
+These are descriptive means, not significance tests; the fresh sweep must pass its own source-output and interpretation audits.
