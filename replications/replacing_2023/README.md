@@ -66,3 +66,10 @@ Both releases and their evidence remain retained. No version is selected merely 
 `run_published_seeds.py` now executes all twenty Table 3 seeds, in printed order, through the same verified runner.
 The archived-release disease batch is running. It records each complete trajectory and does not assign subjective similarity verdicts.
 The two explicitly reported extinction seeds, 12881 and 22744, provide concrete outcomes to compare once the batch completes.
+
+The pre-conference constrained-reproduction run also completes all 2,500 steps.
+[Full comparison](results/preconference-2026-10-15/reproduction-comparison/comparison.json) finds identical populations at every one of 2,501 observations.
+Only `meanHappiness` differs, at 2,500 observations; every other logged field agrees.
+Thus these December changes cannot explain the reproduction-population mismatch.
+Both runs have population 840 at timestep 60 and 1,071 at timestep 100, rather than the paper's described first major decline in that interval.
+Descriptive windows and a [comparison plot](results/preconference-2026-10-15/reproduction-comparison/revision-comparison.png) are retained without treating those windows as statistical equivalence tests.
