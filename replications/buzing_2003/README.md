@@ -104,3 +104,20 @@ The specified one-subcycle run also matches all ten files from the earlier pilot
 Restoring released reproduction or selecting two subcycles does not restore survival in these tested cases.
 These checks do not establish a negative replication. Historical fidelity, inheritance, and resource dynamics remain under investigation.
 Source inspection shows harvesting calls `cutAll`, followed by `takeSeeds`; the separate `cutAmount` method is not called on this path.
+
+## Resource accounting at native recording boundaries
+
+`audit_resources.py BASELINE_RUN NEW_OUTPUT` recompiles verified native sources with a passive seed observer.
+It checks all cell plants and the redistribution bin at each recording boundary.
+Every seed must be unique within that inventory, with 500 seeds total, 125 of each maximum size 1–4, and growth rate three.
+Each plant's reported sugar must equal the sum of its seeds' current contents; each seed remains within its capacity.
+
+[Four conditions plus a final-runner repeat](results/resource-audit-2026-10-16/comparison.json) pass 2,500 cycle-boundary checks and all 50 native-file parity comparisons.
+Conditions cover specified/released reproduction, one/two subcycles, and response/no communication, all at seed zero and threshold one.
+These are diagnostic observations, not additional independent replication seeds.
+
+Available sugar ranges from 809–1,250 across these runs. At most 169 seeds await redistribution at a recorded boundary.
+The recovered schedule executes redistribution, then cell growth, then agent actions, then data recording.
+Consequently, seeds harvested during a cycle wait for the next cycle's redistribution when `reseedPerIteration=true`.
+This accounts for the observed bin contents; it does not establish that this newer schedule matches the historical experiment.
+No seed loss or plant-accounting discrepancy appears at the checked boundaries. Intermediate-stage behavior and the survival mismatch remain unresolved.
