@@ -47,10 +47,10 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | oremland-2014 | Oremland and Laubenbacher, [Optimization of Agent-Based Models](https://www.jasss.org/17/2/6.html) (2014) | Sugarscape taxation schedule, revenue, population, and reduced-model comparison | [source audit](source-audits/oremland-2014.json): 2014 dissertation Appendix B recovered; landscape, tax timing, and negative-wealth handling unresolved |
 | raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 24/24 archived Table 4 statistics reproduced; 5,966 reference simulations independently audited with 11,932 exact Gini matches; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
 | carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | complete author replay: 750,000/750,000 statistics across 5,000 inputs; 30 estimator table entries matched in successful runs; remaining forest/neural runs and runtime discrepancies unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
-| stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two complete 100-seed, 100,000-cycle ensembles and all 80 boundary-sensitivity runs audited; historical semantics and remaining experiments unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
+| stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two complete 100-seed ensembles and all 80 boundary-sensitivity runs audited; Figure 6(b) recurrence/rounding diagnostics retained; historical semantics and remaining experiments unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | three 150-run reconstruction/correction grids fully audited; historical fidelity unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/9) |
 | buzing-2003 | Buzing, Eiben, Schut, [Evolving Agent Societies with VUScape](https://www.cs.vu.nl/~gusz/papers/ECAL2003-Buzing-Eiben-Schut.pdf) (2003) | Fixed-listening communication, population variation, and cooperation | 200-run grid and actual initialization audited; all populations extinct; historical fidelity unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/12) |
-| pike-2019 | Pike, [Multi-Level Mesa](https://arxiv.org/abs/1904.08315) (2019) | Three experimental phases: grouping, movement policies, and shared resources | Phase I 300-run and Phase II 600-run ensembles launched; author-code defects and separate corrective experiments documented; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13) |
+| pike-2019 | Pike, [Multi-Level Mesa](https://arxiv.org/abs/1904.08315) (2019) | Three experimental phases: grouping, movement policies, and shared resources | audited prefixes of 90/300 Phase I, 18/600 Phase II, and 1/1,200 movement Phase III runs; full comparisons pending; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13) |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | candidate |
 | pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | [source audit](source-audits/pan-2011.json): twelve scenario targets and explicit rules extracted; hardship mapping, scheduling, map, and original implementation unresolved |
 
@@ -65,11 +65,14 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 
 ## Current state
 
-The evidence index now includes eleven study PRs and two completed mixed studies.
+The [evidence index](study-evidence.json) pins eleven pushed study commits and their README hashes, with two completed mixed studies.
+Its JSON parsing checks artifact readability only; scientific completion remains claim-specific.
 Pike adds author-code replay and parameterized grouping ensembles, not an additional completed paper.
 Its corrective experiments preserve original failures and remain separate from historical replication claims.
 Carrella's independent implementation passes deterministic native comparisons; its full stochastic and estimator validation remain unfinished.
-Stevenson's completed boundary diagnostic narrows the age discrepancy without resolving historical semantics.
+Stevenson's boundary and discrete-curve diagnostics narrow discrepancies without resolving historical semantics.
+Blueprints now has 470 unique audited homogeneous runs; Carrella has 238 audited independent inputs.
+Pike's first complete movement-policy condition validates the released-selector audit path; corrected-grid validation remains pending.
 
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.

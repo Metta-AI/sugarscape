@@ -13,17 +13,19 @@
       "readme": "replications/mcculloch_2022/README.md",
       "readme_sha256": "f752c0bc7f9285a47b906e91ae384c6eee5e0ba15d91e0366a18c49b731e8817",
       "json_evidence_files": 18,
-      "remaining_scope": "Historical seeds unavailable; retain the declared scope and conditional interpretation."
+      "remaining_scope": "Historical seeds unavailable; retain the declared scope and conditional interpretation.",
+      "gzip_json_evidence_files": 0
     },
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "1d8c0fb362326e5c6d3653008f50f5808ad7e1e7",
+      "checked_commit": "e945a32871f15fc3aff1b0f289d5a7a058522600",
       "status": "running",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "8458d420a0b09c44868c163450675ad871884e1ebb9dfcc9b660324cfbad594a",
-      "json_evidence_files": 66,
-      "remaining_scope": "All 5,000 author simulations replayed. Thirty estimator entries match; full regression-forest/neural runs and runtime discrepancies remain. Independent model matches 25,050 deterministic native values; first 43 stochastic inputs audited, full 5,000-input run and independent estimator comparison incomplete."
+      "readme_sha256": "b1a0043ede44c8f7b0d710af59926ce1f450dfd81c223810b0b4d749088816eb",
+      "json_evidence_files": 69,
+      "remaining_scope": "All 5,000 author simulations replayed. Thirty table entries match across fully matched estimator/size comparisons; full regression-forest/neural runs and runtime discrepancies remain. Independent model matches 25,050 deterministic native values; 238 stochastic inputs and 35,700 statistics audited, full 5,000-input run and independent estimator comparison incomplete.",
+      "gzip_json_evidence_files": 0
     },
     {
       "study": "raimbault_2019",
@@ -33,17 +35,19 @@
       "readme": "replications/raimbault_2019/README.md",
       "readme_sha256": "c4e95608a359f77ce18fb35c616b6f8f7739fcef429fffd7b8274734e29d71ed",
       "json_evidence_files": 42,
-      "remaining_scope": "5,966 of 55,000 original reference inputs independently audited; 11,932 exact Gini matches. Five resumed continuations remain active. Full reference and generated-landscape conclusions remain incomplete."
+      "remaining_scope": "5,966 of 55,000 original reference inputs independently audited; 11,932 exact Gini matches. Five resumed continuations remain active. Full reference and generated-landscape conclusions remain incomplete.",
+      "gzip_json_evidence_files": 3
     },
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "318a1a4b4bf29b1e23e06eabd0f8594e85c6ac7e",
+      "checked_commit": "6d9b224d93068bce3ca6b549a8db15e9205727f2",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "e2857c8a84ee3a160a8781c9dccf9365848d299b80d4717585ef73a47d682057",
-      "json_evidence_files": 77,
-      "remaining_scope": "423 unique original homogeneous simulations independently audited (757,511 observations). Four continuations resumed from verified crash boundaries; full homogeneous, selfishness, heterogeneous results, and historical-code alignment remain incomplete."
+      "readme_sha256": "dd9cace4fbe9903a9c375793c21f5b2ed55f2d215ceaea542be2b8796063b996",
+      "json_evidence_files": 87,
+      "remaining_scope": "470 unique original homogeneous simulations independently audited (872,046 observations), excluding two duplicated pilots. Four continuations remain active; full homogeneous, selfishness, heterogeneous results, and historical-code alignment remain incomplete.",
+      "gzip_json_evidence_files": 36
     },
     {
       "study": "bigbee_2007",
@@ -53,17 +57,19 @@
       "readme": "replications/bigbee_2007/README.md",
       "readme_sha256": "7c073c7bdcb4620cddd0302e9db27d6fd7738ac1d7129beb63d1fe737e342c51",
       "json_evidence_files": 12,
-      "remaining_scope": "Original MASON archive replays repeat exactly but reproduction population accounting fails from time 13. Historical 2007 code/protocol alignment unresolved; later corrected behavior does not establish historical replication."
+      "remaining_scope": "Original MASON archive replays repeat exactly but reproduction population accounting fails from time 13. Historical 2007 code/protocol alignment unresolved; later corrected behavior does not establish historical replication.",
+      "gzip_json_evidence_files": 3
     },
     {
       "study": "stevenson_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8",
-      "checked_commit": "ac5e5bfaf708f2d9aaad94acbaf1818625d92968",
+      "checked_commit": "efe8b9118f725ae0156ba86d84741b702a21018a",
       "status": "partial",
       "readme": "replications/stevenson_2021/README.md",
-      "readme_sha256": "5a083d00085bcb110bf0646cd54a4b2ce01e1d4b4b2fef929f90af57967d02ea",
-      "json_evidence_files": 41,
-      "remaining_scope": "Two 100-seed fixed-scenario ensembles and all 80 boundary-sensitivity runs complete. Strict wealth thresholds materially change age, but neither later published rule variant resolves both scenarios. Historical semantics, evolution, Figure 3, and Appendix B remain incomplete."
+      "readme_sha256": "ca831736596a5c2c23547b1befc99b5f16bb67def3ca6df3312493835c74457d",
+      "json_evidence_files": 46,
+      "remaining_scope": "Two 100-seed fixed-scenario ensembles and all 80 boundary-sensitivity runs complete. Strict wealth thresholds change age but do not resolve both scenarios. Figure6b vector/forward diagnostics document equation normalization and chaotic rounding sensitivity, not historical replication. Historical semantics, evolution, Figure3, and AppendixB agent-model comparisons remain incomplete.",
+      "gzip_json_evidence_files": 0
     },
     {
       "study": "buzing_2005",
@@ -73,7 +79,8 @@
       "readme": "replications/buzing_2005/README.md",
       "readme_sha256": "23e6782ae4f6ef4f4833de1746d130ad622774eb51030f3bc2cc114f4d89a7d1",
       "json_evidence_files": 95,
-      "remaining_scope": "Three 150-run reproduction arms complete. Paced control complete; all 150 pairs, 1,500 native files, and 300,000 harvest records match accelerated runs exactly. Historical source, inheritance, and protocol fidelity remain unresolved; no paper-level verdict."
+      "remaining_scope": "Three 150-run reproduction arms complete. Paced control complete; all 150 pairs, 1,500 native files, and 300,000 harvest records match accelerated runs exactly. Historical source, inheritance, and protocol fidelity remain unresolved; no paper-level verdict.",
+      "gzip_json_evidence_files": 0
     },
     {
       "study": "replacing_2023",
@@ -83,7 +90,8 @@
       "readme": "replications/replacing_2023/README.md",
       "readme_sha256": "fb5e9d6e641f57b09c4fb6519bba298abb4cc35fcbcbc94ed080ed872caa245b",
       "json_evidence_files": 503,
-      "remaining_scope": "Figure 2 matches 2,452 vertices; reproduction, examples, and trade/lending diagnostics complete. Disease extinction claims remain discrepant across historical revisions. Eradication prevents renewed infection under released rules but does not establish indefinite survival. Table 3 and historical fidelity remain unresolved."
+      "remaining_scope": "Figure 2 matches 2,452 vertices; reproduction, examples, and trade/lending diagnostics complete. Disease extinction claims remain discrepant across historical revisions. Eradication prevents renewed infection under released rules but does not establish indefinite survival. Table 3 and historical fidelity remain unresolved.",
+      "gzip_json_evidence_files": 371
     },
     {
       "study": "dogan_2026",
@@ -95,7 +103,8 @@
       "json_evidence_files": 69,
       "remaining_scope": "No unfinished reported experiment. Completed original-source fork integration and mixed claim-level verdict. Independent DTL equivalence, new causal ablations, and untested policies are not established.",
       "verdict": "replications/dogan_2026/VERDICT.md",
-      "publication_status": "unpublished working paper"
+      "publication_status": "unpublished working paper",
+      "gzip_json_evidence_files": 7
     },
     {
       "study": "buzing_2003",
@@ -105,17 +114,19 @@
       "readme": "replications/buzing_2003/README.md",
       "readme_sha256": "04a9172ab5237d68e7f72164c43e00c8cab0481989d581597c6f425f24e36908",
       "json_evidence_files": 27,
-      "remaining_scope": "All 200 grid runs extinct; reproduction/subcycle diagnostics remain discrepant. Resource observer passes 2,500 cycle boundaries and 50 native-file parity checks. Historical fidelity, inheritance, and intermediate-stage dynamics remain unresolved."
+      "remaining_scope": "All 200 grid runs extinct; reproduction/subcycle diagnostics remain discrepant. Resource observer passes 2,500 cycle boundaries and 50 native-file parity checks. Historical fidelity, inheritance, and intermediate-stage dynamics remain unresolved.",
+      "gzip_json_evidence_files": 0
     },
     {
       "study": "pike_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13",
       "status": "running",
       "readme": "replications/pike_2019/README.md",
-      "remaining_scope": "Phase I 300-run and Phase II 600-run ensembles launched; full grids and Phase III remain incomplete. Native shared-resource overflow diagnosed; corrective pooling, stale-network-node repair, and death-order experiments are not paper-equivalent results. Historical source alignment and paper-level comparisons remain unresolved.",
-      "checked_commit": "6bee11b04a36016915de479168d0b045f33b9d7f",
-      "readme_sha256": "f04dcb36a442c74fea83a6445bf1777b617c409e261e11a4b9aef68739debffe",
-      "json_evidence_files": 41
+      "remaining_scope": "Audited prefixes: PhaseI90/300, PhaseII18/600, movementPhaseIII1/1200. Released-selector workflow validated; corrected-selector grid condition pending. Native shared-resource defects and corrective experiments remain separate from historical replication. Full grids, historical source alignment and paper-level comparisons remain unresolved.",
+      "checked_commit": "15ca066a38472bd66fb3ec20436060785bc6a359",
+      "readme_sha256": "0226d969ab4860cad254905f36118417e1cb2211e921419ff80c83286c0e4b8c",
+      "json_evidence_files": 57,
+      "gzip_json_evidence_files": 128
     }
   ],
   "study_prs": 11
