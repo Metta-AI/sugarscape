@@ -1,0 +1,40 @@
+{
+  "conditions": {
+    "protocol": [
+      "paper-com0",
+      "paper-com1",
+      "paper-com2"
+    ],
+    "threshold": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "seed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "cycles": 2000,
+  "runs": 150,
+  "baseline": "/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-reconstruction-unpaced-001",
+  "change": "Two fertility candidate receivers and two sugar eligibility comparisons corrected; passive fertility and pre-halving wealth observers. No other rules or parameters changed.",
+  "rationale": "Paper3.13\u20133.14 says sugar above reproduction threshold; baselinezero threshold permitted25655/103457birthswithzero-sugarparent. Own fertility requirement retained.",
+  "pilot_disclosure": "COM2ct1seed0 final648 in two byte-identical runs; COM1ct1seed0 and COM2ct0seed0 extinct. No selection of parameter values based on outcomes.",
+  "comparison": "Three retained conditions: original reconstruction, fertility-only, fertility plus strict-positive-sugar; same150seed/protocol/threshold grid. No automatic paper verdict.",
+  "runner_sha256": {
+    "Replay.java": "36f21be8e2d5c0f27cd67d4a72dcedd5e16c2140c3af2ab4f6d967b9e4a438c1",
+    "audit_parent_fertility.py": "6ff642e0a69653db0353a459c0b751eee71f030541e7712abfd2c50b00e9b87a"
+  },
+  "correction": "own-range-positive-sugar"
+}

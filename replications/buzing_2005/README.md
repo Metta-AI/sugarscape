@@ -334,3 +334,22 @@ Both configured reproduction thresholds are zero. The recovered comparisons perm
 This is another recovered implementation/specification mismatch to isolate before interpreting scientific disagreements.
 It does not establish that the unavailable historical implementation used this rule.
 The running fertility-only ensemble remains unchanged; no sugar-eligibility correction has yet been applied.
+
+## Strict positive-sugar reconstruction
+
+`audit_parent_fertility.py BASELINE NEW_OUTPUT own-range-positive-sugar` additionally excludes equality at both reproduction sugar checks.
+It retains the own-range fertility correction and observes each parent's sugar immediately before every birth endowment is halved.
+All observed parents must exceed their own threshold. Configuration, seeds, mutation, scheduling, and other model rules remain unchanged.
+This follows the paper's above-threshold requirement; it is not recovered historical code.
+
+[Three diagnostic conditions](results/positive-sugar-2026-10-16/pilot-comparison.json) complete 2,000 cycles each.
+COM2 at threshold1 ends at648agents, compared with738for fertility-only and751for the original reconstruction.
+Its86,580births satisfy both eligibility rules. An independent repeat matches all ten files byte-for-byte.
+COM1 at threshold1 and COM2 at threshold0 both become extinct, with7,789and8,244eligible births respectively.
+These seed-zero pilots do not determine a paper-level verdict.
+
+A frozen150-run strict-sugar ensemble is now running with the same grid as the original and fertility-only ensembles.
+`compare_parent_fertility.py ... --correction own-range-positive-sugar` independently reverses exactly four rule edits and removes the two passive observer lines.
+It requires exact equality to baseline source, unchanged configurations, valid raw data, and positive pre-halving sugar for every birth.
+Its first seven pairs pass196,000scalar observations and33,591births. The snapshot is explicitly incomplete.
+No rule or parameter was selected by optimizing agreement with the publication.

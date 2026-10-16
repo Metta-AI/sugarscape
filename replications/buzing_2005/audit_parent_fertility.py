@@ -11,9 +11,10 @@ import subprocess
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("baseline", type=Path)
 parser.add_argument("output", type=Path)
-parser.add_argument("mode", choices=("observe", "own-range"))
+parser.add_argument("mode", choices=("observe", "own-range", "own-range-positive-sugar"))
 parser.add_argument("--observe-wealth", action="store_true")
 args = parser.parse_args()
+observe_wealth = args.observe_wealth or args.mode == "own-range-positive-sugar"
 baseline = args.baseline.resolve()
 manifest = json.loads((baseline / "manifest.json").read_text())
 assert manifest["variant"] in ("paper-com0", "paper-com1", "paper-com2")
@@ -34,16 +35,25 @@ classes.mkdir()
 sources = [Path(name) for name in manifest["source_sha256"]]
 source = next(p for p in sources if p.name == "SugarAgent.java")
 data = source.read_text(encoding="latin-1")
-if args.mode == "own-range":
+if args.mode in ("own-range", "own-range-positive-sugar"):
     for bound, operator in (("BEGIN_CHILD_BEARING_AGE", "<"), ("END_CHILD_BEARING_AGE", ">")):
         old = f"if (a.getAge() {operator} intProps[{bound}]) continue;"
         assert data.count(old) == 1
         data = data.replace(old, f"if (a.getAge() {operator} a.intProps[{bound}]) continue;")
+if args.mode == "own-range-positive-sugar":
+    for old, new in (
+        ("if (floatProps[SUGAR_AMOUNT] < intProps[MIN_REPRODUCTION_SUGAR]) return;",
+         "if (floatProps[SUGAR_AMOUNT] <= intProps[MIN_REPRODUCTION_SUGAR]) return;"),
+        ("if (a.floatProps[SUGAR_AMOUNT] < a.intProps[MIN_REPRODUCTION_SUGAR]) continue;",
+         "if (a.floatProps[SUGAR_AMOUNT] <= a.intProps[MIN_REPRODUCTION_SUGAR]) continue;"),
+    ):
+        assert data.count(old) == 1
+        data = data.replace(old, new)
 marker = '            child = new SugarAgent("SugarAgentChild", childProps);'
 assert data.count(marker) == 1
 insertion = '''            System.out.println("parent-eligibility," + scape.getIteration() + "," + getAge() + "," + intProps[BEGIN_CHILD_BEARING_AGE] + "," + intProps[END_CHILD_BEARING_AGE] + "," + partner.getAge() + "," + partner.intProps[BEGIN_CHILD_BEARING_AGE] + "," + partner.intProps[END_CHILD_BEARING_AGE]);
 '''
-if args.observe_wealth:
+if observe_wealth:
     wealth_marker = "            floatProps[SUGAR_AMOUNT] /= 2.0f;"
     assert data.count(wealth_marker) == 1
     wealth_observer = '            System.out.println("birth-wealth," + scape.getIteration() + "," + floatProps[SUGAR_AMOUNT] + "," + partner.floatProps[SUGAR_AMOUNT] + "," + intProps[MIN_REPRODUCTION_SUGAR] + "," + partner.intProps[MIN_REPRODUCTION_SUGAR]);\n'
@@ -58,9 +68,9 @@ with (output / "compile.log").open("w") as log:
                     "-d", str(classes), *map(str, sources)], stdout=log, stderr=subprocess.STDOUT, check=True)
 command = [str(java), "-Djava.awt.headless=true", f"-Dreplication.seed={manifest['seed']}",
            "-cp", f"{classes}:{library}", str(adapter)]
-provenance = {"mode": args.mode, "observe_wealth": args.observe_wealth, "baseline": str(baseline), "baseline_manifest": manifest,
+provenance = {"mode": args.mode, "observe_wealth": observe_wealth, "baseline": str(baseline), "baseline_manifest": manifest,
               "observer_source_sha256": hashlib.sha256(observed_source.read_bytes()).hexdigest(),
-              "command": command, "scope": "Own-range correction is specification-based, not recovered historical code. No other rule changed."}
+              "command": command, "scope": "Declared fertility and optional strict sugar-eligibility corrections; not recovered historical code."}
 (output / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
 with (output / "run.log").open("w") as log:
     process = subprocess.run(command, cwd=output, stdout=log, stderr=subprocess.STDOUT, timeout=120)
@@ -71,7 +81,7 @@ rows = [list(map(int, line.split(",")[1:])) for line in (output / "run.log").rea
 assert rows
 invalid = [r for r in rows if not r[5] <= r[4] <= r[6]]
 assert all(r[2] <= r[1] <= r[3] for r in rows)
-if args.mode == "own-range":
+if args.mode in ("own-range", "own-range-positive-sugar"):
     assert not invalid
 checksums = {str(p.relative_to(output)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted((output / "data").iterdir())}
 assert checksums.keys() == manifest["output_sha256"].keys()
@@ -96,10 +106,12 @@ report = {"mode": args.mode, "cycles": 2000, "scalar_observations": scalar_obser
           "partner_below_own_minimum": sum(r[4] < r[5] for r in rows), "partner_above_own_maximum": sum(r[4] > r[6] for r in rows),
           "matching_baseline_files": matching, "final_population": float(population[-1][1]), "output_sha256": checksums,
           "scope": "Native rule audit; no paper-level replication verdict."}
-if args.observe_wealth:
+if observe_wealth:
     wealth = [list(map(float, line.split(",")[1:])) for line in (output / "run.log").read_text().splitlines()
               if line.startswith("birth-wealth,")]
     assert len(wealth) == len(rows) and all(r[3] == r[4] == 0 for r in wealth)
+    if args.mode == "own-range-positive-sugar":
+        assert all(r[1] > r[3] and r[2] > r[4] for r in wealth)
     report["wealth_before_halving"] = {"either_parent_zero": sum(r[1] == 0 or r[2] == 0 for r in wealth),
                                       "both_parents_zero": sum(r[1] == r[2] == 0 for r in wealth),
                                       "initiator_zero": sum(r[1] == 0 for r in wealth),

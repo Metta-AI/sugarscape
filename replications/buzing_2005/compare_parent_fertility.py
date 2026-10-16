@@ -11,6 +11,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("ensemble", type=Path)
 parser.add_argument("mode", choices=("prefix", "complete"))
 parser.add_argument("output", type=Path)
+parser.add_argument("--correction", choices=("own-range", "own-range-positive-sugar"), default="own-range")
 args = parser.parse_args()
 protocol = json.loads((args.ensemble / "protocol.json").read_text())
 assert protocol["cycles"] == 2000 and protocol["runs"] == 150
@@ -33,7 +34,7 @@ for entry in ledger:
     manifest = json.loads((baseline / "manifest.json").read_text())
     assert manifest["cycles"] == 2000 and manifest["unpaced"]
     assert entry["name"] == f"{manifest['variant']}-ct{manifest['threshold']}-seed{manifest['seed']}"
-    assert provenance["mode"] == "own-range" and provenance["baseline_manifest"] == manifest
+    assert provenance["mode"] == args.correction and provenance["baseline_manifest"] == manifest
     assert Path(provenance["baseline"]) == baseline
     assert json.loads((run / "exit.json").read_text()) == {"exit_code": 0}
     source = (run / "SugarAgent.java").read_bytes()
@@ -46,6 +47,18 @@ for entry in ledger:
         corrected = f"if (a.getAge() {operator} a.intProps[{bound}]) continue;"
         assert restored.count(corrected) == 1
         restored = restored.replace(corrected, f"if (a.getAge() {operator} intProps[{bound}]) continue;")
+    if args.correction == "own-range-positive-sugar":
+        wealth_lines = [line for line in restored.splitlines(keepends=True) if 'System.out.println("birth-wealth,"' in line]
+        assert len(wealth_lines) == 1
+        restored = restored.replace(wealth_lines[0], "")
+        for corrected, original in (
+            ("if (floatProps[SUGAR_AMOUNT] <= intProps[MIN_REPRODUCTION_SUGAR]) return;",
+             "if (floatProps[SUGAR_AMOUNT] < intProps[MIN_REPRODUCTION_SUGAR]) return;"),
+            ("if (a.floatProps[SUGAR_AMOUNT] <= a.intProps[MIN_REPRODUCTION_SUGAR]) continue;",
+             "if (a.floatProps[SUGAR_AMOUNT] < a.intProps[MIN_REPRODUCTION_SUGAR]) continue;"),
+        ):
+            assert restored.count(corrected) == 1
+            restored = restored.replace(corrected, original)
     original_source = next(Path(p) for p in manifest["source_sha256"] if Path(p).name == "SugarAgent.java")
     assert restored == original_source.read_text(encoding="latin-1")
     for name, checksum in manifest["source_sha256"].items():
@@ -86,6 +99,12 @@ for entry in ledger:
     assert all(0 <= r[0] < 2000 and r[2] <= r[1] <= r[3] and r[5] <= r[4] <= r[6] for r in births)
     compressed_births = gzip.decompress((run / "births.csv.gz").read_bytes()).decode().splitlines()
     assert [list(map(int, line.split(','))) for line in compressed_births[1:]] == births
+    if args.correction == "own-range-positive-sugar":
+        wealth = [list(map(float, line.split(',')[1:])) for line in log.splitlines() if line.startswith('birth-wealth,')]
+        assert len(wealth) == len(births)
+        assert all(r[1] > r[3] and r[2] > r[4] and r[3] == r[4] == 0 for r in wealth)
+        wealth_csv = gzip.decompress((run / "wealth.csv.gz").read_bytes()).decode().splitlines()
+        assert [list(map(float, line.split(','))) for line in wealth_csv[1:]] == wealth
     counts = [list(map(int, line.split(',')[1:])) for line in log.splitlines() if line.startswith('harvest-counts,')]
     assert [r[0] for r in counts] == list(range(2000))
     assert all(0 <= shared <= meals <= consumers and 2 * shared <= shared_consumers <= consumers
@@ -105,7 +124,7 @@ for model in ("paper-com0", "paper-com1", "paper-com2"):
                               "late_mean_population": statistics.mean(r[label]["late_population"] for r in group)}
         summary["changed_survival_seeds"] = [r["seed"] for r in group if (r['baseline']['final_population'] > 0) != (r['corrected']['final_population'] > 0)]
         groups.append(summary)
-report = {"mode": args.mode, "complete": args.mode == "complete", "paired_runs": len(rows),
+report = {"mode": args.mode, "correction": args.correction, "complete": args.mode == "complete", "paired_runs": len(rows),
           "scalar_observations_both_conditions": len(rows) * 28000, "corrected_births": sum(r["births"] for r in rows),
           "invalid_parent_births": 0, "ledger_sha256": hashlib.sha256(ledger_bytes).hexdigest(), "groups": groups, "runs": rows,
           "scope": "Paired specification correction; not independent additional seeds, not a historical-source or paper-level replication verdict."}
