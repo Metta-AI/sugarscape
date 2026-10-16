@@ -49,7 +49,9 @@ The altruist seed-zero pilot reached extinction at timestep 131.
 Two separate processes produced byte-identical 132-observation trajectories; all recorded values are finite.
 [Raw evidence and provenance](results/altruist-pilot-2026-10-15) include the configuration, source hashes, and completion result.
 This validates execution and deterministic replay for this input, not a published survival percentage.
-The other three decision-model pilots are still running.
+The baseline seed-zero pilot completed all 5,000 steps with 491 agents remaining.
+[Its raw evidence](results/baseline-pilot-2026-10-15) contains 5,001 consecutive observations, independently checked for finite metrics and consistent seed.
+The egoist and Bentham pilots are still running; no homogeneous-society aggregate is established.
 
 ## Required replication targets
 
