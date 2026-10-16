@@ -238,3 +238,10 @@ fold 1 test row 165 has truth 92 and prediction −1,775.021, accounting for 99.
 Fold 4 test row 686 has truth 55 and prediction −2,586.658, accounting for 98.0261%.
 No observations are removed. Historical-runtime sensitivity and exact author-environment alignment remain unresolved.
 Raw fold objects, predictions, intervals, package versions, logs, and comparison metrics are retained.
+
+The [input-source audit](results/gam-5000-2026-10-15/input-audit/source-mapping.csv) maps each fold's largest reproduction-wealth error back to the original archive.
+All 151 parameter/predictor fields match exactly for each selected input.
+The source rows are 675, 2856, 3852, 3388, and 2778 (zero-based).
+The largest errors in folds 1 and 4 have eight and six predictors outside their training ranges respectively.
+All five inputs belong to the completed 5,000-simulation replay, which matches every archived summary statistic.
+This audit finds no copied-input discrepancy; it does not identify the cause of the published-score difference.
