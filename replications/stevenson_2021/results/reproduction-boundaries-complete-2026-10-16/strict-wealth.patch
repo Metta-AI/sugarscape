@@ -1,0 +1,11 @@
+--- simulate.cpp
++++ strict-wealth.cpp
+@@ -89,7 +89,7 @@
+             }
+             agent.wealth -= 3;
+             metabolism += 3;
+-            if (agent.age >= 1 && agent.wealth >= birth_cost &&
++            if (agent.age >= 1 && agent.wealth > birth_cost &&
+                 std::uniform_int_distribution<int>(1, infertility)(random) == 1) {
+                 std::vector<int> empty;
+                 for (int direction = 0; direction < 4; ++direction) {

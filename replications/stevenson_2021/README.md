@@ -314,3 +314,35 @@ Ensemble estimates require all 80 runs and retain every extinction instead of dr
 It contains no ensemble estimate. Complete mode rejects the unfinished run before creating an output directory.
 A corrupted population value, with its ledger hash deliberately updated, also fails sampled accounting before output creation.
 The 80-run experiment remains in progress; its full outcome and paper-level fidelity are unestablished.
+
+## Complete reproduction-boundary experiment
+
+[All 80 declared runs](results/reproduction-boundaries-complete-2026-10-16) completed 100,000 cycles without extinction.
+`analyze_boundaries.py RUN complete NEW_OUTPUT` passes source-variant, command, file-hash, scalar, timestamp and sampled accounting checks.
+All 20 birth-cost age-only pairs have byte-identical aggregate and observation files.
+An independent standard-library recomputation validates all 640 seed/window metrics, with maximum absolute difference 4.55e-13.
+All generated source variants, original trajectories, manifests, paired contrasts and both declared windows are retained.
+
+For the late window, cycles 75,100–100,000, descriptive means are:
+
+| Scenario / metric | Inclusive baseline | Strict wealth only | Paper Table 1 |
+| --- | ---: | ---: | ---: |
+| Low fertility: population | 836.66 | 836.33 | 837 |
+| Low fertility: wealth | 4,551.87 | 5,132.87 | 4,767 |
+| Low fertility: mean age | 439.47 | 548.98 | 473 |
+| Low fertility: Gini | 0.53136 | 0.52757 | 0.53 |
+| Birth cost: population | 821.63 | 824.04 | 824 |
+| Birth cost: wealth | 15,900.86 | 16,244.13 | 16,254 |
+| Birth cost: mean age | 1,423.12 | 2,346.69 | 2,264 |
+| Birth cost: Gini | 0.33690 | 0.33269 | 0.33 |
+
+Strict wealth changes birth-cost mean age by 923.57 cycles, with a paired seed-level 95% interval of [902.10, 945.04].
+The strict-wealth mean-age interval is [2,330.12, 2,363.27]; the earlier window mean is 2,352.02.
+Changing puberty equality has no effect in the birth-cost scenario, as predicted from the newborn resource constraint.
+For low fertility, strict wealth increases mean age by 109.51 cycles and moves the estimate past the paper's 473.
+Strict age alone gives a low-fertility late mean age of 447.69; strict age and wealth together give 545.78.
+
+Thus wealth equality explains a large part of the birth-cost age discrepancy and improves several other birth-cost measurements, but does not establish the paper's historical rules.
+Neither published-rule variant resolves all age results in both scenarios.
+The author's percentage uncertainties have unspecified meaning and are not treated as acceptance margins or confidence intervals.
+The original baseline remains unchanged. These exploratory diagnostics do not complete or invalidate the paper replication.
