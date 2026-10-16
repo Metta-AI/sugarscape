@@ -18,10 +18,10 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "fe70abd6b20db7c6646271508685609833edeea0",
+      "checked_commit": "ac54ede011700ede5e391f173dc3e2e42cb099f0",
       "status": "partial",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "2f9c2a18d45b74e8a28083f4b446c6b87a6c09cb20f18965522eff236c7eb86c",
+      "readme_sha256": "6395b58cb6ff6bebaac4e968fc644aeaa8a47c6756c18b0784a92829672f7891",
       "json_evidence_files": 42,
       "remaining_scope": "Remaining estimators and independent fork behavior; unresolved stochastic/runtime differences."
     },
@@ -38,12 +38,12 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "69341d620835f3d8f9e32d0d838d899c61a02cc6",
+      "checked_commit": "b6b055dcbd7f6b6ee362e4e1dda7021f5f65c91d",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "4b345d375af9c00c9f0e25ed60ef0e574831c585d4bdfb8694bd788550c9a886",
-      "json_evidence_files": 40,
-      "remaining_scope": "Full original-seed ensembles and remaining published experiment families."
+      "readme_sha256": "fb171ccdedf5c2f66fce2081f2f2ff6a3276093c9ed5e8fada14d219575865be",
+      "json_evidence_files": 65,
+      "remaining_scope": "All four interrupted original seeds recovered; remaining full homogeneous schedules resumed. Full selfishness, mixed-society, runtime experiments and source-version equivalence remain."
     },
     {
       "study": "bigbee_2007",
@@ -53,17 +53,17 @@
       "readme": "replications/bigbee_2007/README.md",
       "readme_sha256": "193ee2120d9b1b420be4ebbdf7de76e04aece367caa4e548c2618636b000f314",
       "json_evidence_files": 9,
-      "remaining_scope": "Historical2007 protocol and source alignment;2011 operational evidence is insufficient."
+      "remaining_scope": "Historical 2007 protocol and source alignment; 2011 operational evidence is insufficient."
     },
     {
       "study": "stevenson_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8",
-      "checked_commit": "b2c5012a6e4d4a8362b4851bf607b3a59b9228d2",
+      "checked_commit": "3785dabb121418cb19c786f2dc93c54ccbb3b64b",
       "status": "partial",
       "readme": "replications/stevenson_2021/README.md",
-      "readme_sha256": "96e4fd32fa146a63b1d2e5b3576124b45fe2a2353ef43ffee2e868e084ef25b8",
-      "json_evidence_files": 11,
-      "remaining_scope": "Evolutionary societies, growth-rate fits, distributions, and age discrepancy."
+      "readme_sha256": "7dc45a85c3fe828d0943b332357ec646496bc945a6f1dc72d24a20670e323d0e",
+      "json_evidence_files": 15,
+      "remaining_scope": "Evolutionary societies, distributions, growth-rate and mean-age discrepancies; exact author fitting procedure unresolved. Both 100-seed dense growth ensembles completed."
     },
     {
       "study": "buzing_2005",
@@ -78,22 +78,22 @@
     {
       "study": "replacing_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/10",
-      "checked_commit": "9a48a55564bf297412be9b2afdc96f4ceddaf885",
+      "checked_commit": "6afb33141d39108b50ba2928a3a86cf88b206c55",
       "status": "partial",
       "readme": "replications/replacing_2023/README.md",
-      "readme_sha256": "efaeaea8f2c8a94e8dda6740783e74caabe29af3e52a000012a3fb19b4d59c38",
-      "json_evidence_files": 491,
-      "remaining_scope": "Table3 qualitative classifications, disease protocol discrepancy, and trade/lending historical controls. All20 reproduction seeds and17 examples complete; Figure2 matches2452vertices."
+      "readme_sha256": "e06904fc7ffa9fcc2883a83353a8ce665c8774e17a40fc71980cc601d64b2099",
+      "json_evidence_files": 493,
+      "remaining_scope": "Table 3 classification, disease discrepancy, and historical alignment. All reproduction, example, and paired trade/lending runs completed; Figure 2 matches 2452 vertices, but unknown historical trade/lending measurement prevents a verdict."
     },
     {
       "study": "dogan_2026",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11",
-      "checked_commit": "04117c00cbabd2f5f3d3240b588b241a770d1ef1",
+      "checked_commit": "d834adcde7e1c8fb390934b3aaa221e23804a667",
       "status": "running",
       "readme": "replications/dogan_2026/README.md",
-      "readme_sha256": "30ba0603ce5b8e50740bc8ae6a13ac198d770ce5fcaed94cecbe6f209a4a3d41",
-      "json_evidence_files": 15,
-      "remaining_scope": "Fresh welfare/multiplier and remaining robustness, manuscript consistency and fork integration. Main105andhorizon45 matchdeposits exactly; multiple independently reconstructed tables pass."
+      "readme_sha256": "88a05e0cf757b539e940a2594b6f53ad93fc09f02789db495caec522c2211b28",
+      "json_evidence_files": 44,
+      "remaining_scope": "Remaining levy/per-seed robustness and full bundled canonical verification; paired correction study underway. All main/appendix tables audited fresh; native levy accounting defect confirmed, policy impact unmeasured."
     }
   ]
 }

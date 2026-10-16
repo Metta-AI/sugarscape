@@ -46,14 +46,14 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | kiran-2014 | Kiran, [Using FLAME Toolkit for Agent-Based Simulation: Case Study Sugarscape Model](https://arxiv.org/abs/1408.3441) (2014) | Three spatial initialization scenarios; separate behavioral results from hardware timings | [source audit](source-audits/kiran-2014.json): six Table 5 targets extracted; original C/XML and initialization details unresolved |
 | oremland-2014 | Oremland and Laubenbacher, [Optimization of Agent-Based Models](https://www.jasss.org/17/2/6.html) (2014) | Sugarscape taxation schedule, revenue, population, and reduced-model comparison | [source audit](source-audits/oremland-2014.json): 2014 dissertation Appendix B recovered; landscape, tax timing, and negative-wealth handling unresolved |
 | raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 24/24 archived Table 4 statistics reproduced; three simulations exactly replayed at historical horizon; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
-| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | complete author replay: 750,000/750,000 statistics across 5,000 inputs; 25 estimator table entries matched in successful runs; five more matched in audited recovered outputs awaiting a clean rerun; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
+| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | complete author replay: 750,000/750,000 statistics across 5,000 inputs; 30 estimator table entries matched in successful runs; remaining forest/neural runs and runtime discrepancies unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
 | stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two complete 100-seed, 100,000-cycle ensembles; discrepancies and twenty-run birth-threshold sensitivity audited; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | controlled seed variant repeats all ten output files; harvest and landscape differences remain; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/9) |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | candidate |
 | pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | [source audit](source-audits/pan-2011.json): twelve scenario targets and explicit rules extracted; hardship mapping, scheduling, map, and original implementation unresolved |
 
 Dogan (2026), [Policy Robustness Under Accelerating Automation](https://github.com/dgnerg867-ux/sugarscape), is an additional unpublished working-paper study.
-Its 25 static runs match deposited output byte-for-byte; full canonical and robustness experiments remain active in [PR 11](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11).
+All 205 canonical runs and horizon, composition, and multiplier experiments match deposited outputs; original/corrected levy and remaining fork/robustness experiments remain active in [PR 11](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11).
 It supplements the existing candidates rather than replacing them.
 
 The 1996 Epstein–Axtell book and Kehoe's [formal specification](https://arxiv.org/abs/1505.06012)
@@ -98,7 +98,8 @@ Published numeric targets and the remaining selfishness, mixed-society, and runt
 Stevenson: both 100-seed fixed-society ensembles completed 100,000 cycles per seed, with 200,200 validated observations and no extinctions.
 Twenty additional predeclared sensitivity runs show that the birth-threshold comparison substantially changes mean age.
 A later author algorithm supports the baseline inequality; the 2021 historical rule and age discrepancy remain unresolved.
-Evolutionary scenarios, growth-rate fits, and distributional targets remain outstanding.
+Both 100-seed growth diagnostics now complete, with 600,000 validated observations and 6,200 exact shared samples against the earlier ensembles.
+Fitted growth rates differ from the paper; the author fitting protocol remains unknown. Evolutionary scenarios and distributional targets remain outstanding.
 
 Buzing: recovered and compiled 78 unchanged Java source files from the archived JAWAS release.
 The original nominal seed does not control agent-level random generators. A declared variant controls all seven unseeded constructors.
@@ -122,9 +123,9 @@ The following requirements remain separate from successful execution or source-o
 | Blueprints | All original homogeneous seeds, selfishness and mixed-society experiments, runtime targets, and source-version alignment |
 | Replacing | Table3 qualitative classification, trade/lending comparisons, disease discrepancy, and historical control/configuration alignment |
 | Bigbee | Published 2007 protocol and implementation alignment; corrected 2011 draft showcases alone are insufficient |
-| Stevenson | Evolutionary scenarios, growth fits, distributions, and unresolved fixed-society mean-age discrepancy |
+| Stevenson | Evolutionary scenarios, distributions, and unresolved fixed-society growth-rate/mean-age discrepancies; author fitting protocol unknown |
 | Buzing | Version 1.2.3 harvesting, scheduling, landscape, communication semantics, and full ten-run condition ensembles |
-| Dogan | Complete canonical/robustness runs, full table comparisons, independent interpretation, and fork integration |
+| Dogan | Remaining levy/per-seed robustness runs, full fork verification, and corrected-levy comparison; native tables pass but accounting and prose discrepancies require interpretation |
 | Kiran, Oremland, Pan, Flentge | Resolve original-model specification gaps and implement their full declared experiments |
 
 Replacing's twenty seasonal seeds now have 10,020 native-parity observations and individual death-cause audits.
@@ -164,9 +165,18 @@ Replacing completes all twenty reproduction seeds at 2,500 steps and all sevente
 The baseline matches all 2,452 recoverable Figure 2 vector vertices; its prose timing discrepancy is not a failure to reproduce the plotted curve.
 Table 3 classifications and historical control conditions remain unresolved.
 
-Dogan completes the 105-run main sweep and 45-run longer-horizon study with byte-identical deposited outputs.
-Independent audits reconstruct Tables 2, 3, 4, 5, and D.1 from fresh results.
-A deposited-data audit of welfare sensitivity identifies one small unrounded inequality-ranking reversal; fresh sensitivity results remain pending.
+Dogan completes all 205 canonical runs, the 45-run longer horizon, 210-run composition sweep, and 60-run multiplier sweep with byte-identical deposited outputs.
+Independent fresh-data audits reconstruct main Tables 1–6 and appendix Tables B.1, C.1, and D.1.
+The welfare-ranking qualification and composition-ranking exceptions persist in fresh execution.
+A native levy observer confirms 762.5 units deducted but only 180.0583 credited across 60 events; its full trajectory matches an uninstrumented run.
+A separate accounting correction passes all 60 event checks and is undergoing the declared paired 75-run comparison.
+Original and forked model sources remain unchanged for faithful reproduction; full fork canonical verification is still pending.
 
-Blueprints preserves the first four utilitarian runs after a disk-guard stop and resumes at the fifth original seed in a separate batch.
+Blueprints independently audits all retained completed prefixes and recovers each of four disk-interrupted seeds without substitution.
+All four original schedules have resumed in fresh output directories. No full model ensemble is yet complete.
 No partial run, table match, or reporting discrepancy increases the completed-paper count.
+
+Replacing also completes the declared 60-run paired trade/lending diagnostic.
+Mean relative increases are 2.421% and 3.359%; maxima are 6.182% and 7.610%.
+Unknown historical seeds and measurement windows prevent treating these as confirmation or refutation of the reported 3%/5% claims.
+Carrella's full 5,000-input regression-forest workflow has launched with the native settings; no result is claimed before all five folds validate.
