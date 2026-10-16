@@ -144,3 +144,7 @@ The independent fresh audit reconciles all fifteen two-times settings with the c
 All twelve speed/multiplier mean mortality ratios remain above the means-tested benchmark, spanning 1.541–1.844.
 Native source and benchmark hashes, exit status, log, both CSVs, and both audits are retained.
 Other robustness studies remain outstanding, so this component does not complete the full paper.
+
+`run_reports.py ENGINE COMPLETED_CANONICAL NEW_OUTPUT` regenerates the author's nine canonical reports in an isolated directory.
+It requires a successful full canonical exit, preserves the four fresh input CSVs, verifies the pinned source and environment, and compares every generated report byte-for-byte with its deposit.
+This author-analysis replay complements the independent numerical audits; it does not replace them.
