@@ -524,3 +524,13 @@ Missing ranges are `[1881,2005)`, `[2139,3503)`, and `[3631,5000)`.
 The cloud producer remains active; these counts exclude in-progress and later-completed chunks.
 The retained prior local count of 893 is included, not added again to 2,143.
 The full 5,000-input gate still fails, so no complete independent calibration table or estimator result is claimed.
+
+## Second independent cloud checkpoint
+
+The [second checkpoint](results/cloud-checkpoint-002-2026-10-16/summary.json) adds90 sealed cloud chunks containing2,238 independent inputs.
+Reconciliation combines these with the previous2,143 inputs exactly once, yielding4,381 unique original parameter rows and657,150 recomputed statistics.
+Source, runtime, input hashes, trajectory checksums, and original row order pass the existing audit.
+Maximum absolute statistic recomputation error is 2.2737367544323206e-13, within the unchanged audit tolerance.
+Coverage is contiguous from original row0 through4380; rows4381–4999 remain reserved to the active cloud producer.
+The new native archive excludes the earlier50 cloud chunks; the reconciliation retains provenance for both checkpoints and local runs.
+The complete5,000-input gate remains unmet, so no independent estimator or scientific equivalence verdict is reported.
