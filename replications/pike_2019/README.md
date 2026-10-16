@@ -241,3 +241,9 @@ The original shared-resource model and its corrective experiments are outside th
 Each corrected run retains its original and modified high-focus function, making the selector distinction reviewable.
 The ensemble has launched; full-grid independent analysis and all aggregate comparisons remain pending.
 The first seed and known pilots remain included without outcome-based selection.
+
+The highest-selector audit now also pins the original method's syntax tree to both author source files in `high_focus_source.json`.
+This prevents matching altered original/corrected files from passing merely because they differ by one operator.
+The syntax-tree hash uses the declared Python 3.11 runtime; other interpreter versions are explicitly rejected for this check.
+[Source-validation evidence](results/highest-source-validation-2026-10-16/audit.json) retains the passing full pilot and two rejected controls.
+Changing both saved methods or adding an extra consumption call to only the corrected method fails before output comparison.

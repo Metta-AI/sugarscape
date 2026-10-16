@@ -1,8 +1,10 @@
 """Verify passive movement-policy parity and audit each high-focus selection."""
 
 import argparse
+import ast
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 parser = argparse.ArgumentParser(description=__doc__)
@@ -13,6 +15,31 @@ parser.add_argument(
     "--highest", action="store_true", help="Require corrected highest-holding selection"
 )
 args = parser.parse_args()
+if args.highest:
+    assert sys.version_info[:2] == (3, 11), "Pinned AST audit requires Python 3.11"
+    configuration = json.loads((args.native / "configuration.json").read_text())
+    reference = json.loads(
+        Path(__file__).with_name("high_focus_source.json").read_text()
+    )["methods"][configuration["approach"]]
+    original = ast.parse((args.native.parent / "original-step-high.py").read_text())
+    corrected = ast.parse((args.native.parent / "corrected-step-high.py").read_text())
+    assert (
+        hashlib.sha256(
+            ast.dump(original.body[0], include_attributes=False).encode()
+        ).hexdigest()
+        == reference["original_ast_sha256"]
+    ), "Original high-focus method differs from pinned source"
+    changes = 0
+    for node in ast.walk(original):
+        if (
+            isinstance(node, ast.Compare)
+            and ast.unparse(node) == "max(highest) > max(new)"
+        ):
+            node.ops = [ast.Lt()]
+            changes += 1
+    assert changes == 1 and ast.dump(original) == ast.dump(corrected), (
+        "Correction differs from declared operator change"
+    )
 parity = {}
 for name in [
     "initial-agents.json",
