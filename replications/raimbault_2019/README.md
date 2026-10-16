@@ -116,3 +116,14 @@ The headless setup creates turtles without clearing the previous run.
 It does not edit the author model or change the historical 10,000-step rule execution.
 [The three-row batch pilot](results/batch-pilot-2026-10-15/comparison.json) completes 30,000 steps and matches all six archived native Gini measurements exactly.
 The full 55,000-input replay is now running. Generated-grid ensembles and fresh spatial contrasts remain required afterward.
+
+## Independent reference audit
+
+`audit_reference.py REFERENCE_CSV RUN prefix|complete NEW_OUTPUT` reads the original hashed archive independently of the runner's copied comparison columns.
+It checks row order, original seeds, population, full horizon, finite measurements, source hashes, and both native Gini values.
+Complete mode additionally requires a successful native exit and all 55,000 rows.
+Prefix mode saves an immutable snapshot and never represents a completed ensemble.
+
+[The first audited prefix](results/reference-prefix-2026-10-15/audit.json) contains 15 simulations and 30 exact native measurement matches.
+A deliberately altered copy of one Gini value is rejected with exactly one reported mismatch; this negative control is labeled separately from scientific results.
+The full reference continues running. This prefix does not establish parameter-space coverage or the generated-landscape conclusions.

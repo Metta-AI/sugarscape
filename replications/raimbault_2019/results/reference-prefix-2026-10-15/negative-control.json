@@ -1,0 +1,23 @@
+{
+  "purpose": "Auditor negative control using a deliberately altered copy of one completed real simulation output; not a scientific result.",
+  "modified_field": "row0 gini +0.01",
+  "exit_code": 1,
+  "mismatch_count": 1,
+  "detected": [
+    {
+      "row": 0,
+      "metric": "gini",
+      "actual": 0.25454873646209386,
+      "expected": 0.24454873646209388,
+      "absolute_error": 0.009999999999999981
+    }
+  ],
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "replications/raimbault_2019/audit_reference.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+    "/var/folders/cf/ktmpz65x29v4wfxj_s7vw_140000gn/T/sugarscape-raimbault-audit-xhs7puds",
+    "prefix",
+    "/var/folders/cf/ktmpz65x29v4wfxj_s7vw_140000gn/T/sugarscape-raimbault-audit-xhs7puds/audit"
+  ]
+}
