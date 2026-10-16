@@ -80,3 +80,22 @@ The Gini value matches printed precision; that alone does not establish agreemen
 As with birth cost, paired-window intervals contain zero but do not prove stationarity.
 The [birth-threshold diagnostic](BIRTH_THRESHOLD_DIAGNOSTIC.md) investigates one explicit implementation ambiguity using new seeds.
 Its results will not silently replace either ensemble or establish the author's unknown rule.
+
+## Birth-threshold sensitivity result
+
+The [predeclared diagnostic](results/birth-threshold-diagnostic-2026-10-15) completed all twenty runs,
+ten new seeds per variant, with 20,020 validated observations and no extinctions.
+Changing only `wealth >= birth_cost` to `wealth > birth_cost` substantially changes the outcome:
+
+| Later-window metric | Baseline | Strict threshold | Published Table 1 |
+| --- | ---: | ---: | ---: |
+| Population | 821.418 | 824.216 | 824 |
+| Wealth | 15,908.38 | 16,237.67 | 16,254 |
+| Mean age | 1,415.86 | 2,381.55 | 2,264 |
+| Gini | 0.336643 | 0.332668 | 0.33 |
+
+The paired mean-age change is +965.70 cycles (95% Student-t interval +937.02 to +994.37 across ten seeds).
+The strict variant's age interval is 2,349.81–2,413.30, still above the published mean.
+This identifies sensitivity to one unresolved rule; it does not identify the author's implementation or establish replication.
+Both windows, all seed-level estimates, source patches, runtime hashes, and lossless trajectories are retained.
+The original simulator and its two 100-seed ensembles remain unchanged pending stronger source evidence.
