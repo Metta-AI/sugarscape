@@ -22,16 +22,13 @@ Compare every output row and column with the author's corresponding CSV before i
 Undefined statistics must retain matching missingness rather than being silently replaced or excluded.
 Validate the reported tables and policy rankings independently of the author's analysis.
 
-## Current status and remaining scope
+## Current verdict
 
-All original canonical and robustness experiment scripts have completed successfully.
-All six main tables, three appendix tables, and both figures have independent numerical checks against fresh results.
-The bundled original-source canonical run also matches the separate author replay byte-for-byte.
-The levy correction has a completed 75-pair sensitivity comparison.
-
-The study remains partial pending the remaining manuscript-level mechanism and interpretation audit.
-Table agreement does not validate causal claims about spatial competition, transfer targeting, or proposed untested policies.
-Sections below preserve earlier component findings; later completed-run evidence supersedes their historical pending-run statements.
+**Completed mixed replication.** All original numerical experiments and the bundled canonical integration complete.
+The [claim-by-claim verdict](VERDICT.md) separates reproduced outcomes from validated mechanism and reporting contradictions.
+All 653 printed numerical cells and 42 plotted ordinates reproduce; this is not a wholly positive paper verdict.
+The integration uses original author source, not an independently implemented DTL variant.
+Earlier component sections below retain their historical findings; the verdict and completed-run evidence supersede pending-run statements.
 
 ## Environment recovery
 

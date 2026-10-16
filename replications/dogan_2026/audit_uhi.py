@@ -40,10 +40,16 @@ for (speed, multiplier), row in means.iterrows():
     comparisons.append({"speed": speed, "multiplier": float(multiplier), "mean_deaths": float(row.deaths),
         "means_tested_mean_deaths": float(bench.loc[speed]), "mortality_ratio": float(row.deaths / bench.loc[speed]),
         "more_deaths_than_means_tested": bool(row.deaths > bench.loc[speed]), "mean_gini": float(row.gini_final)})
+invariance = []
+for (speed, seed), group in sweep.groupby(["km_label", "seed"]):
+    invariance.append({"speed": speed, "seed": int(seed),
+                       "deaths_by_multiplier": {str(int(row.multiplier)): int(row.deaths) for row in group.itertuples()},
+                       "mortality_unchanged": bool(group.deaths.nunique() == 1)})
 report = {"provenance": args.provenance, "sweep_sha256": hashlib.sha256(args.sweep.read_bytes()).hexdigest(),
           "benchmark_sha256": hashlib.sha256(args.benchmark.read_bytes()).hexdigest(), "runs": len(sweep),
           "canonical_two_times_rows_matched": len(two), "base_transfer_rate": float(base_rates.iloc[0]),
-          "comparisons": comparisons,
+          "comparisons": comparisons, "per_seed_multiplier_invariance": invariance,
+          "invariant_seed_conditions": sum(row["mortality_unchanged"] for row in invariance),
           "interpretation": "Five-seed means and exact two-times reconciliation. Between-policy mean differences are descriptive; this is not a significance test or whole-paper verdict."}
 args.output.mkdir(parents=True, exist_ok=False)
 (args.output / "multiplier-audit.json").write_text(json.dumps(report, indent=2, allow_nan=False) + "\n")
