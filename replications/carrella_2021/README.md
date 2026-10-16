@@ -155,7 +155,7 @@ The 5,000-input run completed all five folds and independently validated all 25,
 [Results](results/rf-5000-2026-10-15/comparison.json) retain raw fold outputs, interval coverage, runtime provenance, and the paper comparison.
 Maximum absolute performance difference from Table 8 is 0.002295, on reproduction wealth; one of five values matches printed precision.
 This single random realization does not establish statistical equivalence or a negative replication.
-The full-size semi-automatic one-dimensional and local-linear estimators are now running under the existing protocol.
+The full-size semi-automatic one-dimensional and local-linear results are documented below.
 
 ## Full-size semi-automatic estimation
 
@@ -168,7 +168,9 @@ All published-score differences remain explicit; no equivalence or negative-repl
 The full-size local-linear invocation saved all five folds and final metrics, then exited with an unexpected-end-of-input parsing error.
 The runner was edited during execution, so source-stream interference is suspected; the current file parses successfully.
 [Recovered artifacts](results/loclin-5000-recovered-2026-10-15/comparison.json) independently validate all 25,000 predictions and interval metrics.
-The failed process status remains explicit; a clean invocation is still required.
+The failed process status remains explicit. A [clean invocation](results/loclin-5000-clean-2026-10-15/comparison.json) subsequently completed with exit status zero.
+All five fold objects, final metrics, and 25,000 independently checked predictions are byte-identical to the retained artifacts.
+All five Table 8 values match printed precision; this completes this estimator check, not the paper study.
 Do not edit scripts while their interpreters are executing them. Future R launches use `Rscript -e` with `source()` to parse the complete runner before execution.
 
 ## Extinction timing correction
