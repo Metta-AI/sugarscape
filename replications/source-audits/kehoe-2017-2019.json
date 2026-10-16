@@ -110,7 +110,7 @@
     "status": "failed unmodified core object compilation",
     "exit_code": 1,
     "error": "Inheritance.cpp invokes ReadAction(World*) but the class requires ReadAction(World*, Strategy*).",
-    "warning": "NewSweepStrategy::shuffle has no return in a non-void function.",
+    "warning": "NewSweepStrategy::run has no return in a non-void function.",
     "changes": "None; isolated git archive preserved, no source edits.",
     "scope": "No GUI, linking, or simulation attempted. No result verdict."
   },
@@ -119,5 +119,27 @@
     "July2016 28899d2 forces seed zero; August2016 c6c0eef multiplies sugar by10, then48d368d changes multiplier to2.",
     "Qt dependency first appears in2020 9fd9be9.",
     "Raw deposited landscape spans0..4, whereas the thesis Table7.1 setup says0..3; historical experiment map still unverified."
-  ]
+  ],
+  "native_pilot": {
+    "revision": "39300eb825190d4af45d0aa8f9bf4bdddc8cd18a",
+    "core_build_exit_code": 0,
+    "link_exit_code": 0,
+    "initialization_exit_code": 0,
+    "initial_population": 400,
+    "movement_runs_exit_codes": [
+      0,
+      0
+    ],
+    "cycles": 1000,
+    "observations_each": 1001,
+    "differing_population_rows": 84,
+    "first_population_difference": {
+      "cycle": 2,
+      "a": 392,
+      "b": 391
+    },
+    "native_rules_modified": false,
+    "verdict": "Execution established; deterministic repeatability fails. No paper-level inference. Investigate initialization and scheduling before reference use.",
+    "configuration": "Unchanged native defaults, synchronous movement, growback, metabolism, death, garbage collection; not a recovered paper protocol."
+  }
 }

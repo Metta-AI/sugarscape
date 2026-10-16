@@ -207,3 +207,8 @@ This lead adds no completed study and replaces no unfinished candidate.
 The historical audit isolates landscape scaling to August 2016 and Qt introduction to 2020.
 An unchanged June 2016 core build fails on an inheritance-constructor mismatch; the compiler logs and source hashes are retained.
 This is a build failure, not evidence against a scientific result.
+
+The September 2017 native core builds and links without modifications.
+A headless initialization returns 400 agents, and two 1,000-cycle synchronous movement pilots exit successfully.
+Despite fixed seed zero, 84 population observations differ, first at cycle 2 (392 versus 391).
+Both native outputs and the harness are retained; reference repeatability must be resolved before paper comparisons.
