@@ -202,3 +202,17 @@ After free space recovered to 12 GiB, a new `-006` directory resumed at index 29
 The three other workers remained active and were not restarted.
 No previous complete or partial evidence was removed.
 These remain partial homogeneous results; no Table 3, selfishness, mixed-population, or full-paper completion is claimed.
+
+## Source verification and relocated evidence
+
+The batch auditor now checks every recorded Python source hash against all nine files extracted from the pinned release’s Git objects.
+It also verifies archive identity, hash-seed setting, command/configuration paths, declared logfile changes, and result input identity.
+`--recorded-root ORIGINAL_BATCH_DIRECTORY` audits relocated evidence without rewriting its historical paths.
+The simulation producers are unchanged.
+
+[Fourteen new raw-model runs](results/source-audit-2026-10-16/raw006-audit.json) pass these checks across16,847 observations, extending that model’s validated interval to[0,313).
+A copied batch produces an identical audit report with its original execution root.
+Changing one recorded source hash rejects the copied evidence before an output report is created.
+[Reconciled coverage](results/source-audit-2026-10-16/coverage.json) now contains522 unique runs; two agreeing pilot duplicates remain excluded.
+The other model counts remain98 altruistic,84 egoistic,27 Bentham in this checkpoint.
+Earlier audits have not all been rerun under the new source checks, and neither the2,000-run homogeneous grid nor the full paper is complete.
