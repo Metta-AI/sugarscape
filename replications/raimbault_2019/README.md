@@ -152,3 +152,10 @@ Their requested intervals cover `[3246,55000)` without gaps or overlaps.
 Total unique audited coverage is 3,318 of 55,000 inputs; gaps remain between these partial shard outputs.
 The launch manifest, preserved sequential prefix, and five immutable snapshots retain the partition boundaries and exact evidence.
 Neither partitioning nor matching partial outputs completes the paper replication.
+
+## Later shard audit
+
+[The second shard snapshots](results/shard-progress-2026-10-16/coverage.json) validate 2,175 completed simulations across the five processes, with zero mismatches.
+Together with the preserved contiguous prefix, unique audited coverage is 5,421 of 55,000 inputs: 10,842 exact native Gini measurements.
+These snapshots supersede the earlier shard snapshots for coverage counting; overlapping rows are counted once.
+The processes continue. Fixed-reference completion and generated-landscape conclusions remain pending.
