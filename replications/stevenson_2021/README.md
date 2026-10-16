@@ -148,3 +148,13 @@ Reproduce the declared analysis on a completed external run:
 ```sh
 python replications/stevenson_2021/analyze_growth.py /complete/growth-run /new/analysis
 ```
+
+## Original arXiv source recovered
+
+The [version-two source bundle](https://arxiv.org/src/2108.11892v2) contains the LaTeX manuscript, five EPS figures, and their five converted PDFs.
+[The retained inventory](results/author-source-2026-10-16/inventory.json) records the archive and every file hash.
+The bundle contains neither simulator source nor plotting/fitting scripts. EPS headers identify R graphics output.
+The TeX source does not resolve the fitting window, optimizer, weighting, or evolutionary inheritance ambiguity.
+It confirms the initial single agent and 100-seed scenario protocol.
+The original vector figures are now available for quantitative target extraction; no new agreement is claimed from their recovery alone.
+Renewed title, identifier, and author searches did not identify a verified GitHub implementation.
