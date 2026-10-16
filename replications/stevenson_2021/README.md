@@ -214,3 +214,16 @@ When the first thirty births still comprise the whole population, independent ra
 Complete mode rejects this unfinished ensemble and creates no completion report.
 The aggregate analyzer also rechecks all 100 archived low-fertility runs after its command reader update; its entire analysis remains unchanged.
 Historical stored command formats remain readable alongside the current mandatory observation-output argument.
+
+## Founder-history vector targets
+
+`extract_figure2.py ORIGINAL_FIGURE_PDF NEW_OUTPUT` recovers the original founder curves using inspected axis anchors.
+[The retained extraction](results/figure2-vector-2026-10-16/extraction.json) contains 202,347 vertices across 44 traces, plus a visually checked reconstruction.
+Only the black curves explicitly identify founder zero. Grey path ordinals are not asserted to be agent identifiers.
+There are 31 low-fertility and 13 birth-cost paths, versus caption counts of 30 and 12; that source ambiguity is preserved.
+
+The first founder's birth-cost wealth falls from approximately 40 to 1 between cycles 40.07 and 40.87.
+Integer rounding locates the event at cycle 41, but this does not select the strict reproduction threshold.
+A failed fertility draw at cycle 40 followed by success at 41 also produces it under the baseline rule.
+All thirteen large wealth drops are retained, without selecting only events favorable to either interpretation.
+The unknown author seed and coordinate rounding still prevent treating these curves as exact native trajectories.
