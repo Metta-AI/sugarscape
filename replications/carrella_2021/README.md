@@ -356,3 +356,16 @@ Maximum absolute recomputation difference is 1.14e-13; input mapping, trajectory
 Complete mode rejects the unfinished ensemble, and a deliberately changed saved statistic is rejected before report creation.
 The prefix trajectories and audit are retained with the launch evidence.
 `audit_independent.py PARAMETERS RUN prefix|complete NEW_OUTPUT` performs this validation without assuming agreement with native random trajectories.
+
+## Complete multi-step native comparisons
+
+[Five deterministic 501-observation trajectories](results/multistep-native-2026-10-16/comparison.json) match 25,050 native values within 1e-13 relative/absolute tolerance.
+They cover resource regrowth, harvest/metabolism order, starvation from one or both resources, zero/negative/positive vision, and frozen extinction state.
+The two starvation cases stop advancing at ticks seven and ten; remaining observation rows repeat the terminal state.
+The independent model required no change. A deliberately incorrect post-extinction tick increment fails at the first affected observation.
+Lossless native trajectories, source hashes, native exit status, and comparison/control results are retained.
+These deterministic checks strengthen model validation but do not establish stochastic ensemble agreement.
+
+```sh
+python replications/carrella_2021/verify_trajectories.py /native/trajectory-probes /new/comparison
+```
