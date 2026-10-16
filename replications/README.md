@@ -40,7 +40,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | ID | Paper | Initial Sugarscape target | Status |
 | --- | --- | --- | --- |
 | mcculloch-2022 | McCulloch et al., [Calibrating Agent-Based Models Using Uncertainty Quantification Methods](https://www.jasss.org/25/2/1.html) (2022) | Figures 3–6: stabilization, ensemble variance, history matching, posterior | completed mixed study; validated-negative exact stabilization, conditional posterior agreement; [PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/3) |
-| kremer-herman-2024 | Kremer-Herman, Gupta, Severson, [Blueprints for Machine Ethics: A Digital Terrarium for Socio-Ethical Artificial Agent Decisionmaking](https://doi.org/10.1109/ACCESS.2024.3519139) (2024) | Table 3 and homogeneous-society population/resource outcomes; 500 seeds, 5,000 steps | candidate |
+| kremer-herman-2024 | Kremer-Herman, Gupta, Severson, [Blueprints for Machine Ethics: A Digital Terrarium for Socio-Ethical Artificial Agent Decisionmaking](https://doi.org/10.1109/ACCESS.2024.3519139) (2024) | Table 3 and homogeneous-society population/resource outcomes; 500 seeds, 5,000 steps | historical release pinned; deterministic full-horizon/extinction pilot validated; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6) |
 | kremer-herman-2023 | Kremer-Herman and Gupta, Replacing Sugarscape: A Comprehensive, Expansive, and Transparent Reimplementation (SimuTools 2023; proceedings 2024); [conference slides](https://simutools.eai-conferences.org/2023/static/uploads/sites/782/2024/01/Replacing-Sugarscape-EAI-SimuTools-2023.pdf) | Acquire full chapter and map its original replication claims to engine examples | candidate; full chapter needed |
 | bigbee-2007 | Bigbee, Cioffi-Revilla, Luke, [Replication of Sugarscape Using MASON](https://citeseerx.ist.psu.edu/document?doi=0e41ff02af3ab5578a925a3cf7c81f4262bbf0c0&repid=rep1&type=pdf) (2007) | Rule-set outcomes and documented replication failures | candidate |
 | kiran-2014 | Kiran, [Using FLAME Toolkit for Agent-Based Simulation: Case Study Sugarscape Model](https://arxiv.org/abs/1408.3441) (2014) | Three spatial initialization scenarios; separate behavioral results from hardware timings | candidate |
@@ -75,8 +75,12 @@ Independent fork behavior, remaining estimators, and expanded simulation ensembl
 
 Raimbault: independent archived-data analysis reproduces all 24 Table 4 statistics.
 The initial fresh-simulation mismatch was resolved by restoring the historical 10,000-step horizon.
-Both recorded Gini values now match exactly for the first input; further inputs and complete ensembles remain unfinished.
+Both recorded Gini values now match exactly for three archived inputs; complete ensembles remain unfinished.
 This was a configuration mismatch, not a negative replication. Neither ongoing study counts toward completion.
+
+Blueprints: located the paper-linked stable release repository and pinned the last pre-submission release, `Glucose/v2024.4`.
+The exact original experiment commit remains unverified. Two altruist seed-zero processes produce identical full trajectories through extinction.
+Three other homogeneous-model pilots are running; the aggregate comparisons and selfishness sweep remain unfinished.
 
 The [engine prerequisite PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/2) fixes resource imports and initial logging.
 Study-specific variants remain explicit rather than claiming that DTL matches every source model.
@@ -84,6 +88,10 @@ Nexus 0.15.1 GitHub-backed login failed twice during setup; its activity-note wr
 Repository creation and public-source access succeeded independently.
 
 ## Implementation discovery
+
+- Blueprints: paper-linked [digital-terraria-lab/sugarscape](https://github.com/digital-terraria-lab/sugarscape),
+  distinct from the development repository. Pre-submission release `651925a5f7634fa3dd0f66c0621e7118e89807f8`, September 26, 2024.
+  Configuration has 250 agents, 50 diseases, and three tribes; the study runner sets the paper’s 5,000-step horizon.
 
 - McCulloch: [Urban-Analytics/uncertainty](https://github.com/Urban-Analytics/uncertainty), pinned in the study.
 - Raimbault: author-linked [JusteRaimbault/SpaceMatters](https://github.com/JusteRaimbault/SpaceMatters),
