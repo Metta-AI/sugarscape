@@ -242,3 +242,19 @@ These checks cover seed0 at threshold0 for COM0 and threshold1 for COM1/COM2; ot
 A separately frozen accelerated150-run ensemble is now running. The original paced ensemble remains active and preserved.
 The retained launcher differs only by declaring and passing `--unpaced`; its hashes and command are recorded.
 Overlapping runs are paired validation data, not additional independent seeds. Neither ensemble is yet complete.
+
+## Paired pacing audit and paper comparison gate
+
+[All19completed overlapping runs](results/pacing-overlap-2026-10-16/audit.json) match exactly across all ten native output files.
+The separately audited accelerated prefix covers18runs,252,000scalar observations, and36,000harvest-count records.
+These snapshots were taken at different instants; paired duplicates do not increase unique seed coverage.
+The accelerated ensemble remains in progress.
+
+`compare_paper.py COMPLETE_AUDIT NEW_OUTPUT` requires all150audited runs and rehashes native data and event logs before producing grouped comparisons.
+It compares the reported survival pattern across ten seeds for each protocol/threshold pair.
+Approximate population and communication levels receive numerical differences, without inventing precision or acceptance margins.
+Late summaries use cycles1501–2000; extinct populations contribute zero population but no invented gene preferences.
+Both cooperation-event and consumer-participation ratios remain separate.
+An18-run prefix is rejected before any comparison output is created.
+This completion gate has been exercised; full comparison execution awaits the completed ensemble.
+No automatic paper verdict follows from the table because historical-source and reproductive-rule questions remain.
