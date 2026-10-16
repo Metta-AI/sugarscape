@@ -191,7 +191,13 @@ The historical container uses unmodified R 4.0.5 and mgcv 1.8-34; the host uses 
 Predictions differ, but first-fold reproduction-wealth RMSE is 6.43 on the host and 6.56 in the historical container.
 These diagnostics omit interval simulation and confound several runtime changes; they do not establish a package-specific cause.
 An audit of the full current-runtime study locates the large reproduction-wealth error in fold 2: RMSE 445.13 versus 3.55–6.43 in other folds.
-The same paired runtime diagnostic is now running on that failing fold, without changing data or model formulas.
+The [same paired diagnostic on fold 2](results/gam-fold2-runtime-diagnostic-2026-10-15/comparison.json) completed both runtimes without changing data or model formulas.
+All 2,500 prediction records and ten reported RMSE values were independently validated.
+Reproduction-wealth RMSE is 445.127 in the current runtime and 376.224 in the historical runtime.
+The same observation dominates both errors: its true value is 92, with predictions −6,945.811 and −5,856.279 respectively.
+It accounts for 99.9924% and 99.9886% of the respective fold squared errors.
+The tested historical runtime therefore does not remove the extrapolation problem.
+It remains a plausible historical environment, not a verified author package pin; multiple runtime differences remain confounded.
 All five folds remain in the study; no outlier is discarded.
 
 ## Failing-observation audit
