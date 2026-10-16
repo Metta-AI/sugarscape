@@ -288,3 +288,22 @@ Independent checks verify original seeds, populations, row identities, source/de
 These intervals belong to the reserved production plan and do not overlap the earlier 7,933-row checkpoint.
 Combined validated coverage is **9,333 of 55,000 reference runs**; unfinished chunks are excluded.
 This remains partial reference evidence, not completion of the paper replication.
+
+## Audit fresh generated intervals
+
+`audit_generated.py` checks fresh output against the full, hash-pinned original raw archive.
+It verifies source/dependency hashes, requested bounds, original identifiers/seeds/populations, the horizon, and all 12 measurements.
+Complete mode requires a successful native exit and every requested row; prefix mode labels partial coverage explicitly.
+The audit preserves an immutable output snapshot and records every non-exact measurement, including differences within tolerance.
+Gini comparisons always require exact equality. The morphology tolerance must be supplied explicitly and cannot exceed `1e-12`.
+
+```sh
+python3 replications/raimbault_2019/audit_generated.py \
+  /absolute/generated-raw.csv.gz /absolute/native-run complete /absolute/new/audit \
+  --morphology-absolute-tolerance 1e-12
+```
+
+[Real two-row workflow evidence](results/generated-auditor-2026-10-16/validation.json) exercises the existing public-runner pilot.
+Strict zero tolerance fails on its known R-squared difference; the previously declared `1e-12` morphology tolerance passes.
+Both reports retain 23 exact comparisons out of 24, with both Gini metrics exact for each input.
+This verifies the audit workflow and adds no simulation coverage or completed-paper claim.

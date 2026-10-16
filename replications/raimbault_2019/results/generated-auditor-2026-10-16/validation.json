@@ -1,0 +1,30 @@
+[
+  {
+    "case": "strict",
+    "command": [
+      "python3",
+      "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/audit_generated.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-generated-source-001/generated-raw.csv.gz",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-generated-source-001/public-runner-pilot",
+      "complete",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-generated-auditor-001/strict",
+      "--morphology-absolute-tolerance",
+      "0"
+    ],
+    "exit_code": 1
+  },
+  {
+    "case": "declared",
+    "command": [
+      "python3",
+      "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/audit_generated.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-generated-source-001/generated-raw.csv.gz",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-generated-source-001/public-runner-pilot",
+      "complete",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-generated-auditor-001/declared",
+      "--morphology-absolute-tolerance",
+      "1e-12"
+    ],
+    "exit_code": 0
+  }
+]
