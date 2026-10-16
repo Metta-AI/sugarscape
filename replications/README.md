@@ -46,9 +46,9 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | kiran-2014 | Kiran, [Using FLAME Toolkit for Agent-Based Simulation: Case Study Sugarscape Model](https://arxiv.org/abs/1408.3441) (2014) | Three spatial initialization scenarios; separate behavioral results from hardware timings | [source audit](source-audits/kiran-2014.json): six Table 5 targets extracted; original C/XML and initialization details unresolved |
 | oremland-2014 | Oremland and Laubenbacher, [Optimization of Agent-Based Models](https://www.jasss.org/17/2/6.html) (2014) | Sugarscape taxation schedule, revenue, population, and reduced-model comparison | [source audit](source-audits/oremland-2014.json): 2014 dissertation Appendix B recovered; landscape, tax timing, and negative-wealth handling unresolved |
 | raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 24/24 archived Table 4 statistics reproduced; three simulations exactly replayed at historical horizon; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
-| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | author replay: 158,400/158,400 statistics across 1,056 inputs; 20 estimator table entries matched; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
-| stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two 40,000-cycle specification-based pilots; conservation checks and deterministic replay; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
-| buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | candidate |
+| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | author replay: 210,000/210,000 statistics across 1,400 inputs; 25 estimator table entries matched; full replay running; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
+| stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two complete 100-seed, 100,000-cycle ensembles; discrepancies and twenty-run birth-threshold sensitivity audited; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
+| buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | archived author release runs; version and seed-control gaps remain; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/9) |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | candidate |
 | pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | candidate |
 
@@ -67,10 +67,13 @@ The historical seeds remain unavailable, so this does not disprove the authors' 
 
 Carrella: two complete historical NetLogo replays each match all 150 archived statistics.
 An initial 24-statistic mismatch was resolved as connector observation timing; it is not negative paper evidence.
-Ten linear-regression and ten rejection-estimation Table 8 values now match published precision.
+Ten linear-regression, ten rejection-estimation, and five full-size local-linear Table 8 values now match published precision.
 A validated batch runner is executing every one of the 5,000 archived parameter/seed inputs in four batches.
 Its first ten complete trajectories match the separate-call reference path in all 35,070 numeric values.
-The first quantile-forest run completed with differences below 0.002; stochastic comparison remains unresolved.
+Both quantile-forest sizes and one-dimensional semiautomatic estimators completed; stochastic comparison remains unresolved.
+The small-data generalized additive model differs from the paper. One observation dominates its second-fold error.
+Replaying that observation reproduces all 150 archived simulation statistics. Both current and historical fitting runtimes retain the extreme prediction.
+No observation was removed, and no negative paper verdict follows from this diagnostic.
 Independent fork behavior, remaining estimators, and expanded simulation ensembles remain unfinished.
 
 Raimbault: independent archived-data analysis reproduces all 24 Table 4 statistics.
@@ -80,7 +83,17 @@ This was a configuration mismatch, not a negative replication. Neither ongoing s
 
 Blueprints: located the paper-linked stable release repository and pinned the last pre-submission release, `Glucose/v2024.4`.
 The exact original experiment commit remains unverified. Two altruist seed-zero processes produce identical full trajectories through extinction.
-Three other homogeneous-model pilots are running; the aggregate comparisons and selfishness sweep remain unfinished.
+All four seed-zero pilots completed; each of four 500-seed ensembles is running with complete losslessly compressed trajectories.
+Aggregate comparisons, numeric published targets, and the selfishness sweep remain unfinished.
+
+Stevenson: both 100-seed fixed-society ensembles completed 100,000 cycles per seed, with 200,200 validated observations and no extinctions.
+Twenty additional predeclared sensitivity runs show that the birth-threshold comparison substantially changes mean age.
+A later author algorithm supports the baseline inequality; the 2021 historical rule and age discrepancy remain unresolved.
+Evolutionary scenarios, growth-rate fits, and distributional targets remain outstanding.
+
+Buzing: recovered and compiled 78 unchanged Java source files from the archived JAWAS release.
+Three operational pilots completed, but nominal seed zero does not control agent-level random generators.
+The recovered v2.2b also differs from the paper's v1.2.3 and published experiment defaults. These pilots are not completed replications.
 
 The [engine prerequisite PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/2) fixes resource imports and initial logging.
 Study-specific variants remain explicit rather than claiming that DTL matches every source model.
