@@ -286,3 +286,20 @@ The report checks the maximum Gini-mean change against the manuscript's printed 
 Both gaps are retained for the manuscript's less-than-0.003 statement.
 The actual unfinished queue is correctly rejected; a successful full audit remains pending native completion.
 The author repository does not deposit this experiment's output CSV, so no exact deposited-data match is claimed.
+
+## Full bundled replay and remaining native sweeps completed
+
+[Retained complete outputs and audits](results/completed-sweeps-2026-10-16) cover the bundled canonical run, both 75-case levy sweeps, and the 105-case per-seed calibration study.
+The bundled canonical process exits successfully. All four output files are byte-identical to the independent original replay: 206,010 cells match.
+This verifies the integrated original-source variant in this fork, not an independently implemented model or equivalence with the DTL engine.
+
+Per-seed calibration preserves all mortality rankings and slow/fast inequality rankings.
+Only baseline and Universal High Income exchange adjacent inequality ranks under balanced automation, with gaps below 0.003.
+The maximum cell-mean Gini change is 0.0222691, matching the reported 0.022 at three decimals.
+
+All 75 levy pairs pass the declared comparison, including 270 original D=50 values matched against canonical runs.
+Under the declared maximum/minimum definition, original fast-automation mortality varies by 6.907%, exceeding the manuscript's less-than-5% claim.
+Corrected mortality ranges are 4.946%, 8.443%, and 5.775% for slow, balanced, and fast automation.
+At D=200, the corrected fast levy supplies 3.146% of mean redistribution, exceeding the stated 3% bound; the original value is 2.828%.
+Both variants retain Gini coefficients of variation below 0.04 across D-level means and equal working counts across D within each seed.
+These are descriptive sensitivity results under explicit aggregation choices; full claim interpretation remains required before assigning a paper-level verdict.
