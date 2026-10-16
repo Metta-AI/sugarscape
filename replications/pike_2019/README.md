@@ -345,3 +345,15 @@ Each segment retains sequential execution and frozen seeds, source files, select
 The overall simulation timeout is six hours, and the 2 GiB disk guard remains enabled.
 A failure retains partial evidence; completed conditions must be reconciled before any retry.
 The continuation does not add pilot duplicates to grid coverage or claim whole-paper completion.
+
+## Reconcile independently executed segments
+
+`reconcile_segments.py PHASE NEW_OUTPUT --segment RUN START RECORDED_ROOT [--segment ...]` reruns the native phase auditor on every supplied segment.
+It requires identical frozen manifests, rejects overlapping ordinals, and verifies that ledger hashes remain unchanged during auditing.
+The report combines audited per-condition summaries in original grid order and lists every missing ordinal.
+`--require-complete` rejects missing conditions before creating output; a complete grid is not itself a paper verdict.
+
+[End-to-end validation](results/segment-reconciliation-2026-10-16/validation.json) reconciles two real adjacent conditions from each phase, including relocated historical evidence.
+The audits reconstruct 332,644 health records and 6,000 price-step records.
+Six controls reject incomplete grids and duplicate segments before creating output; a seventh rejects corrupted native health data without producing a reconciliation report.
+The complete-grid success path awaits the unfinished cloud runs. These checks add no simulation coverage.
