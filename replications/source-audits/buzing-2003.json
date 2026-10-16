@@ -89,5 +89,21 @@
     "Reproductive details defer to original Sugarscape; fertility-end inheritance unresolved",
     "Cooperation denominator and vector-curve extraction"
   ],
-  "status": "Full200-run reconstruction independently audited:700000scalar observations, allpopulations extinct. Historicalreproduction/scheduling/messagefidelity unresolved; not a completedpaper replication."
+  "status": "Full200-run reconstruction independently audited:700000scalar observations, allpopulations extinct. Historicalreproduction/scheduling/messagefidelity unresolved; not a completedpaper replication.",
+  "diagnostics": {
+    "runs": 9,
+    "scalar_observations": 31500,
+    "seed": 0,
+    "all_extinct": true,
+    "reproduction": [
+      "specified",
+      "released"
+    ],
+    "subcycles": [
+      1,
+      2
+    ],
+    "byte_equal_ten_file_pairs": 2,
+    "scope": "Candidate causes tested, not a full factorial grid or historical validation."
+  }
 }
