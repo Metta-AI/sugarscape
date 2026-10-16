@@ -13,7 +13,17 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
 parser.add_argument("mode", choices=["prefix", "complete"])
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--start-index", type=int, default=0, help="First ordinal in the declared full grid"
+)
+parser.add_argument(
+    "--recorded-root",
+    type=Path,
+    help="Original execution root when auditing relocated evidence",
+)
 args = parser.parse_args()
+recorded_root = args.run if args.recorded_root is None else args.recorded_root
+assert 0 <= args.start_index < 300
 assert not args.output.exists()
 manifest_bytes = (args.run / "manifest.json").read_bytes()
 manifest = json.loads(manifest_bytes)
@@ -25,9 +35,12 @@ for name, digest in manifest["source_hashes"].items():
 ledger = (args.run / "completed.jsonl").read_bytes()
 records = [json.loads(line) for line in ledger.splitlines()]
 expected = [(seed, variant) for seed in range(100) for variant in manifest["variants"]]
-assert [(r["numpy_seed"], r["variant"]) for r in records] == expected[: len(records)]
-assert 0 < len(records) <= 300
+assert [(r["numpy_seed"], r["variant"]) for r in records] == expected[
+    args.start_index : args.start_index + len(records)
+]
+assert 0 < len(records) <= 300 - args.start_index
 if args.mode == "complete":
+    assert args.start_index == 0, "Full-ensemble validation starts at ordinal zero"
     assert len(records) == 300, "All 300 declared runs are required"
     assert json.loads((args.run / "complete.json").read_text()) == {
         "completed_runs": 300
@@ -53,7 +66,7 @@ for record in records:
         "complete.json",
         "exit.json",
     }
-    assert record["command"][-3:] == [variant, str(seed), str(run)]
+    assert record["command"][-3:] == [variant, str(seed), str(recorded_root / stem)]
     for name, digest in record["hashes"].items():
         assert hashlib.sha256((run / name).read_bytes()).hexdigest() == digest
     metadata = json.loads((run / "manifest.json").read_text())
@@ -140,6 +153,8 @@ for record in records:
 report = {
     "mode": args.mode,
     "validated_runs": len(records),
+    "ordinal_interval": [args.start_index, args.start_index + len(records)],
+    "recorded_root": str(recorded_root),
     "complete_ensemble": len(records) == 300,
     "health_records": health_count,
     "price_step_records": len(measurements),

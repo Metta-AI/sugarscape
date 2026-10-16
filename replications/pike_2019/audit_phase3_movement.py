@@ -15,7 +15,17 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
 parser.add_argument("mode", choices=["prefix", "complete"])
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--start-index", type=int, default=0, help="First ordinal in the declared full grid"
+)
+parser.add_argument(
+    "--recorded-root",
+    type=Path,
+    help="Original execution root when auditing relocated evidence",
+)
 args = parser.parse_args()
+recorded_root = args.run if args.recorded_root is None else args.recorded_root
+assert 0 <= args.start_index < 1200
 assert sys.version_info[:2] == (3, 11), "Pinned AST audit requires Python 3.11"
 assert not args.output.exists()
 manifest_bytes = (args.run / "manifest.json").read_bytes()
@@ -46,9 +56,10 @@ expected = [
 ]
 assert [
     (r["seed"], r["threshold"], r["approach"], r["selector"]) for r in records
-] == expected[: len(records)]
-assert 0 < len(records) <= 1200
+] == expected[args.start_index : args.start_index + len(records)]
+assert 0 < len(records) <= 1200 - args.start_index
 if args.mode == "complete":
+    assert args.start_index == 0, "Full-ensemble validation starts at ordinal zero"
     assert len(records) == 1200, "All 1200 declared runs are required"
     assert json.loads((args.run / "complete.json").read_text()) == {
         "completed_runs": 1200
@@ -127,11 +138,11 @@ for record in records:
         str(threshold),
         *(["movement"] if selector == "released" else []),
         str(seed),
-        str(target),
+        str(recorded_root / stem),
     ]
     assert record["command"][-len(suffix) :] == suffix
     script = "run_groups.py" if selector == "released" else "run_high_focus.py"
-    assert record["command"][1] == str(args.run / script)
+    assert record["command"][1] == str(recorded_root / script)
     for name, digest in record["sha256"].items():
         assert hashlib.sha256((target / name).read_bytes()).hexdigest() == digest
     config = json.loads((configured / "configuration.json").read_text())
@@ -240,6 +251,8 @@ for record in records:
 report = {
     "mode": args.mode,
     "validated_runs": len(records),
+    "ordinal_interval": [args.start_index, args.start_index + len(records)],
+    "recorded_root": str(recorded_root),
     "complete_ensemble": len(records) == 1200,
     "health_records": health_count,
     "price_step_records": len(measurements),

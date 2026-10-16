@@ -286,3 +286,23 @@ The earlier first-condition archive supplies the released raw outputs. Every new
 An unaltered relocated copy passes the full auditor. Adding an extra consumption call to the corrected method fails despite an updated file hash.
 Changing the saved original method also fails its pinned-source check despite an updated hash. Both rejected controls fail before producing audit output.
 The complete 1,200-condition grid and paper-level comparisons remain pending.
+
+## Disk-stop checkpoint and portable segment audits
+
+All three ensemble workers exited at their existing 2 GiB free-space guards.
+[Independent checkpoint audits](results/disk-stop-and-segments-2026-10-16/provenance.json) validate 194/300 Phase I runs, 61/600 Phase II runs, and 29/1,200 movement-policy runs.
+They reconcile 14,775,821 health records and 284,000 price-step records; earlier published prefixes are included, not added again.
+The remaining ordinal ranges are `[194,300)`, `[61,600)`, and `[29,1200)`, totaling 1,816 conditions.
+Source manifests and original completion-ledger hashes bind the [remaining-work plan](results/disk-stop-and-segments-2026-10-16/remaining-plan.json).
+No cloud continuation has launched at this checkpoint.
+
+Each auditor now accepts `--start-index` for a contiguous portion of its original declared grid.
+`--recorded-root` validates original command paths when evidence is audited from a different location, without rewriting historical records.
+Full-ensemble mode still requires ordinal zero and every required condition.
+Real final conditions from all three stopped runs pass as relocated nonzero segments, covering 166,767 health records and 3,000 price-step records.
+These validation replays add no simulation coverage.
+Six controls reject incorrect starting ordinals and incomplete full-ensemble claims before creating audit output.
+
+```bash
+python replications/pike_2019/audit_phase1.py /downloaded/segment prefix /new/audit --start-index 194 --recorded-root /original/execution/segment
+```

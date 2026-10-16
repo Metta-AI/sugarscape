@@ -13,7 +13,17 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
 parser.add_argument("mode", choices=["prefix", "complete"])
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--start-index", type=int, default=0, help="First ordinal in the declared full grid"
+)
+parser.add_argument(
+    "--recorded-root",
+    type=Path,
+    help="Original execution root when auditing relocated evidence",
+)
 args = parser.parse_args()
+recorded_root = args.run if args.recorded_root is None else args.recorded_root
+assert 0 <= args.start_index < 600
 assert not args.output.exists()
 manifest_bytes = (args.run / "manifest.json").read_bytes()
 manifest = json.loads(manifest_bytes)
@@ -38,10 +48,11 @@ expected = [
     for approach in ["explicit", "network"]
 ]
 assert [(r["seed"], r["threshold"], r["approach"]) for r in records] == expected[
-    : len(records)
+    args.start_index : args.start_index + len(records)
 ]
-assert 0 < len(records) <= 600
+assert 0 < len(records) <= 600 - args.start_index
 if args.mode == "complete":
+    assert args.start_index == 0, "Full-ensemble validation starts at ordinal zero"
     assert len(records) == 600, "All 600 declared runs are required"
     assert json.loads((args.run / "complete.json").read_text()) == {
         "completed_runs": 600
@@ -80,7 +91,7 @@ for record in records:
         str(threshold),
         "none",
         str(seed),
-        str(configured),
+        str(recorded_root / stem),
     ]
     for name, digest in record["sha256"].items():
         assert hashlib.sha256((configured / name).read_bytes()).hexdigest() == digest
@@ -188,6 +199,8 @@ for record in records:
 report = {
     "mode": args.mode,
     "validated_runs": len(records),
+    "ordinal_interval": [args.start_index, args.start_index + len(records)],
+    "recorded_root": str(recorded_root),
     "complete_ensemble": len(records) == 600,
     "health_records": health_count,
     "price_step_records": len(measurements),
