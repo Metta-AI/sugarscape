@@ -275,3 +275,14 @@ This establishes numerical plot reconstruction from fresh simulations, not pixel
 The independently audited Tables 2 and 4 supply the corresponding published numerical targets.
 
 Run `run_figures.py ENGINE COMPLETE_CANONICAL NEW_OUTPUT`, then `audit_figure_series.py FIGURE_OUTPUT NEW_AUDIT`.
+
+## Per-seed calibration audit prepared
+
+`audit_perseed.py COMPLETE_ROBUSTNESS COMPLETE_CANONICAL NEW_OUTPUT` checks all 105 per-seed-threshold runs.
+It verifies completion, source identity, the full policy/speed/seed grid, finite outputs, death-category accounting, and constant calibration settings within each seed.
+It compares every paired result and computes the five-seed means independently of the native analysis scripts.
+Rank comparisons retain ties and all pairwise reversals instead of imposing an arbitrary order on equal values.
+The report checks the maximum Gini-mean change against the manuscript's printed 0.022 and records whether a sole reversal joins adjacent original ranks.
+Both gaps are retained for the manuscript's less-than-0.003 statement.
+The actual unfinished queue is correctly rejected; a successful full audit remains pending native completion.
+The author repository does not deposit this experiment's output CSV, so no exact deposited-data match is claimed.
