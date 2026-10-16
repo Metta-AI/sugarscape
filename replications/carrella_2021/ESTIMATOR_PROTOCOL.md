@@ -50,3 +50,19 @@ Use `Rscript -e 'source("replications/carrella_2021/run_estimator.R")' SOURCE ME
 `source()` parses the complete file before evaluating its expressions. Preserve active source files unchanged regardless.
 A local-linear invocation ended with a parsing error after its numerical output was saved when the runner was edited during execution.
 All saved predictions validate independently, but retain the nonzero exit and rerun through the isolated launch path.
+
+### Paired point-fit diagnostic
+
+`diagnose_gam.R SAVED_FOLD NEW_OUTPUT` fits the five targets using the original smooth construction and `mgcv::bam` options.
+Run it on the same saved first fold under current and historical runtimes, both seeded at zero.
+It retains predictions, formulas, coefficients, smoothing parameters, random states, and runtime details.
+This diagnostic omits interval simulation to isolate point fitting; it does not replace the original five-fold estimator/coverage workflow.
+Its random stream differs from the original function, which simulates intervals between parameter fits.
+A difference between these paired diagnostics identifies runtime sensitivity, not a refuted paper result.
+
+Rocker's R 4.0.5 image provides unmodified `mgcv` 1.8-34 and Matrix 1.3-2 directly.
+Pinned image: `rocker/r-ver@sha256:fef68eaf0e829d464697948343ac440bbc189a0592b451eb99cddb46a8c8a7e3` (`linux/amd64`).
+The diagnostic mounts the saved fold and script read-only and writes to a separate evidence directory.
+Both diagnostic launches set OpenBLAS and OpenMP thread counts to one and use `Rscript -e 'source(...)'`.
+The historical run also changes R, Matrix, BLAS, operating system, and architecture; any difference is runtime sensitivity, not an isolated `mgcv` causal effect.
+No compiler patches are used in this container.
