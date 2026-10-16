@@ -1,0 +1,39 @@
+{
+  "summaries": [
+    {
+      "scenario": "low-fertility",
+      "seeds": 100,
+      "shared_cycles": 346,
+      "published_last_path_cycle": 34661.5087040619,
+      "last_shared_cycle": 34600,
+      "survivors_at_last_shared_cycle": 55,
+      "right_censored_founders_at_50000": 8,
+      "last_observed_alive_quantiles_025_50_975": [
+        23047.5,
+        36650.0,
+        50000.0
+      ],
+      "published_fraction_inside_survivor_wealth_pointwise_95_percent_interval": 0.9826589595375722,
+      "source_csv_gzip_sha256": "b3786ec3912dd10e819fd261fe8085748ca763e789f83375343776f20e9d4399"
+    },
+    {
+      "scenario": "birth-cost",
+      "seeds": 100,
+      "shared_cycles": 21,
+      "published_last_path_cycle": 2137.0036362232386,
+      "last_shared_cycle": 2100,
+      "survivors_at_last_shared_cycle": 32,
+      "right_censored_founders_at_50000": 0,
+      "last_observed_alive_quantiles_025_50_975": [
+        400.0,
+        1300.0,
+        6200.0
+      ],
+      "published_fraction_inside_survivor_wealth_pointwise_95_percent_interval": 0.9523809523809523,
+      "source_csv_gzip_sha256": "cce675445fe1090bb7b0b364be5346b6d307173d2ec115d7ba6d0195fad15d9f"
+    }
+  ],
+  "audit_sha256": "f312200f0a8269a5e8d6995ee10773918f22107b994abf6d372f8e24761c466d",
+  "comparison_source_sha256": "9384a0f2541c5abea09b23e174d0eec429d2e40ef9fafdec4245f4791cf8839b",
+  "limits": "Descriptive comparison, not an acceptance test. Published seed is unknown. Only explicitly labelled founder zero is matched. Grey paths have no verified agent IDs. Vector coordinates are approximate; path endpoints are not exact death records. Native deaths are interval-censored by 100-cycle recording. Wealth quantiles condition on survival and are pointwise seed intervals, not confidence or simultaneous intervals. No historical model equivalence is established."
+}

@@ -261,3 +261,26 @@ The age discrepancy appears in both the figure and Table 1; it is not explained 
 The tested observer preserves aggregate model behavior, but does not establish author-model equivalence.
 Unknown historical semantics still prevent calling these disagreements validated negative replications.
 Evolutionary scenarios and additional figure coverage remain required for study completion.
+
+## Figure 2 labelled-founder comparison
+
+[The founder comparison](results/figure2-comparison-2026-10-16/comparison.json) covers all 200 audited observation runs.
+It matches only the explicitly labelled founder zero; grey path ordinals remain unidentified.
+Published wealth lies inside pointwise central 95% surviving-seed intervals at 340/346 low-fertility times and 20/21 birth-cost times.
+These descriptive intervals condition on survival; absent founders are not assigned zero wealth.
+At the final shared published samples, 55/100 low-fertility founders survive to cycle 34,600 and 32/100 birth-cost founders survive to cycle 2,100.
+
+Median last-observed-alive cycles are 36,650 and 1,300, respectively.
+Eight low-fertility founders remain alive at the 50,000-cycle horizon, so their lifetimes are right-censored.
+All other death times lie between the last observation and the next 100-cycle sample.
+Published path endpoints near 34,661.5 and 2,137.0 are approximate graphics coordinates, not exact death records.
+Unknown published seeds prevent treating these individual trajectories as population estimates.
+
+An independent standard-library calculation verifies every survival count and all 1,101 wealth quantiles across 367 comparison rows.
+The comparison rechecks all 200 native observation hashes against the completed audit ledger.
+This adds Figure 2 coverage without changing the model or resolving the population-wide age discrepancy.
+Evolution, Figure 3 sensitivity, and Appendix B remain outstanding; this study remains incomplete.
+
+```sh
+python replications/stevenson_2021/compare_figure2.py /complete/observation-run /complete/observation-audit /new/comparison
+```
