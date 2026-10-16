@@ -567,3 +567,10 @@ This follows the notebook’s estimator ordering instead of resetting the seed f
 Current packages and explicit Rejection sampling remain declared runtime choices; this is not a historical-runtime reconstruction.
 The two-hour diagnostic leaves existing long-running estimators intact.
 It has started successfully; full results and independent prediction audits remain pending.
+
+The [actual notebook data checkpoint](results/notebook-rf-sequence-launch-2026-10-16/dataprep-audit.json) passes independent base-R parsing and first-fold alignment checks.
+All755,000 numeric cells agree within1e-10; maximum parser difference is1.3877787807814457e-17.
+The original five-parameter order and146 nonconstant statistics are retained, excluding the same four constant columns.
+The first held-out fold matches the earlier isolated random-forest run within that tolerance.
+Because the original notebook uses a different CSV parser, any later forest changes cannot be attributed solely to random-stream order without a parser control.
+The full estimator sequence remains running; no additional Table8 match is claimed.
