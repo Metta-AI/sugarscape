@@ -162,8 +162,9 @@ Scheduling, communication removal rules, remaining Table2 settings, and full exp
 
 `run_pilot.py ARCHIVE JDK NEW_OUTPUT paper-com1 SEED` combines the balanced landscape and alone-first harvest with Table2 parameters and one-subcycle scheduling.
 The candidate schedule runs each agent's full rule list before the next randomized agent, consistent with notes3 and7.
-The reconstruction removes each received directional message immediately, including messages not ultimately selected as the best destination.
-The newer source instead removed only the final selected message. This distinction follows section4.5; exact historical source remains unavailable.
+The original message-board getter already removes each received message when COM1 is enabled.
+Our earlier inference from the caller alone was incorrect; the added deletion was redundant and has been removed.
+The remaining observer checks native receive-time removal. Exact historical source remains unavailable.
 Message expiry is disabled and removal on response is disabled for COM1.
 
 [Two complete100-cycle workflows](results/paper-com1-2026-10-16/audit.json) validate1,400scalar observations and produce identical bytes across all ten output files.
@@ -171,3 +172,17 @@ The native lifecycle verifies6,459received-message deletions, each followed by a
 Configuration checks cover every Table2 numeric setting, cooperation threshold1, mutation enablement, and message-removal flags.
 Both runs end with299agents. The original seed0 here is a reconstruction seed, not an identified publication seed.
 The full experiment horizon, all thresholds, ten-seed ensembles, COM0/COM2 behavior, and the cooperation denominator remain unfinished.
+
+## Protocol execution and extinction handling
+
+The runner accepts `paper-com0`, `paper-com1`, and `paper-com2`, with `--threshold 0..4` and an explicit `--cycles 1..5000` horizon.
+COM0 sets both preference ranges to zero and disables mutation. COM2 retains messages until the listener reaches the requested cell.
+All reconstructed conditions disable timed expiry and use the audited Table2 settings.
+The native runner completes its requested horizon after extinction; these records are preserved, not dropped.
+Its database writes zero for empty-population averages; those values must not be interpreted as surviving agents' gene preferences.
+
+[The protocol checks](results/protocol-checks-2026-10-16/audit.json) retain one seed per condition.
+COM0 and COM2 complete1,000cycles each, with final populations0 and767.
+The corrected COM1 observer completes100cycles and reproduces all ten previous data files byte-for-byte.
+This verifies14,700scalar observations without asserting paper-level agreement from single seeds.
+The full experiment horizon, ten-seed ensembles, cooperation denominator, and remaining source-rule alignment still require validation.

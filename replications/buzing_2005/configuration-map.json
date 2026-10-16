@@ -55,8 +55,7 @@
     "Harvest semantics changed in2.0: unconditional sharing by colocatedagents versus oldsingle-agentpriority.",
     "Two-subcycle scheduling differs from oldexecuteAllRules path; historicaltimingrequiresvalidation.",
     "Current initialization samplesseed sizes untiltotalwealth exhausted instead of balancingseedcounts.",
-    "Cooperation monitor averages agentflags; paper descriptions reference both eatingactions and allactions. Denominator must be resolved.",
-    "COM1 currentcode deletes onlybestselectedmessage afterdirectional scans; historicalread/removal semantics needvalidation."
+    "Cooperation monitor averages agentflags; paper descriptions reference both eatingactions and allactions. Denominator must be resolved."
   ],
   "resolved_specification": {
     "source": "https://www.jasss.org/8/1/2.html",
@@ -87,6 +86,11 @@
       "requirement": "Agent execution order is randomized between cycles. COM1 reads are sequential, so a later reader cannot receive a removed message.",
       "native_candidate": "nrOfSubcycles=1 executes every rule for one agent before moving to the next randomized agent.",
       "limitation": "This is a supported candidate schedule, not verified source-version equivalence. Agent rule order and all message semantics still require validation."
+    },
+    "communication": {
+      "COM1": "MessageBoard.getMessage already consumes messages when removeAfterListening=true; the final selected-message deletion is redundant. Earlier inference from SugarAgent alone was incorrect.",
+      "COM2": "Native move deletes the selected request when the listener reaches its cell, with removeAfterResponse=true.",
+      "expiry": "Zero disables age expiry in the original getter."
     }
   }
 }

@@ -15,6 +15,8 @@ from pydantic import BaseModel
 class Manifest(BaseModel):
     variant: str
     seed: int
+    cycles: int
+    threshold: int
     source_sha256: dict[str, str]
     seed_control_replacements: dict[str, int]
     archive_sha256: str
@@ -37,9 +39,12 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("archive", type=Path)
 parser.add_argument("java_home", type=Path)
 parser.add_argument("output", type=Path)
-parser.add_argument("variant", choices=["original", "controlled", "balanced-landscape", "paper-harvest", "paper-com1"])
+parser.add_argument("variant", choices=["original", "controlled", "balanced-landscape", "paper-harvest", "paper-com1", "paper-com0", "paper-com2"])
 parser.add_argument("seed", type=int)
+parser.add_argument("--threshold", type=int, choices=range(5), default=1)
+parser.add_argument("--cycles", type=int, default=100)
 args = parser.parse_args()
+assert 1 <= args.cycles <= 5000
 archive = args.archive.resolve()
 java_home = args.java_home.resolve()
 output = args.output.resolve()
@@ -59,7 +64,7 @@ sources = sorted(
 )
 assert len(sources) == 78
 seed_replacements = {}
-if args.variant in ("controlled", "balanced-landscape", "paper-harvest", "paper-com1"):
+if args.variant in ("controlled", "balanced-landscape", "paper-harvest", "paper-com1", "paper-com0", "paper-com2"):
     for source in sources:
         data = source.read_bytes()
         count = data.count(b"new Random()")
@@ -68,7 +73,7 @@ if args.variant in ("controlled", "balanced-landscape", "paper-harvest", "paper-
             source.write_bytes(data.replace(b"new Random()", b"nl.vu.cs.sugarland.util.ReplicationRandom.create()"))
     assert sum(seed_replacements.values()) == 7 and len(seed_replacements) == 4
     sources.append(Path(__file__).with_name("ReplicationRandom.java").resolve())
-if args.variant in ("balanced-landscape", "paper-harvest", "paper-com1"):
+if args.variant in ("balanced-landscape", "paper-harvest", "paper-com1", "paper-com0", "paper-com2"):
     source = reference / "src/nl/vu/cs/sugarland/model/SugarScape.java"
     data = source.read_text(encoding="latin-1")
     start = data.index("            while (numberOfSeeds > 0)")
@@ -88,7 +93,7 @@ if args.variant in ("balanced-landscape", "paper-harvest", "paper-com1"):
         }
 """ + data[stop:]
     source.write_text(data, encoding="latin-1")
-if args.variant in ("paper-harvest", "paper-com1"):
+if args.variant in ("paper-harvest", "paper-com1", "paper-com0", "paper-com2"):
     source = reference / "src/nl/vu/cs/sugarland/model/SugarAgent.java"
     data = source.read_text(encoding="latin-1")
     old = "        // if more than one agent on cell, then evenly divide sugar\n        if (agentsOnCell.length > 1)"
@@ -125,15 +130,14 @@ if args.variant == "paper-com1":
     section = section.replace(marker, marker + """
                     if (messageBoard.getRemoveAfterListening())
                     {
-                        messageBoard.deleteMessage(i.getXcoordinate(), i.getYcoordinate());
                         if (messageBoard.getMessage(i.getXcoordinate(), i.getYcoordinate()) != null)
                             throw new IllegalStateException("COM1 read did not consume message");
-                        System.out.println("paper-com1-consumed");
+                        System.out.println("paper-com1-read-verified");
                     }""")
     data = data[:start] + section + data[stop:]
     old = "            if (messageBoard.getRemoveAfterListening()) messageBoard.deleteMessage(xBest, yBest);"
     assert data.count(old) == 1
-    source.write_text(data.replace(old, ""), encoding="latin-1")
+    source.write_text(data, encoding="latin-1")
 with (output / "compile.log").open("w") as log:
     subprocess.run(
         [str(java_home / "bin/javac"), "-encoding", "ISO-8859-1", "-cp", str(reference / "lib"),
@@ -143,7 +147,7 @@ with (output / "compile.log").open("w") as log:
 shutil.copytree(reference / "lib/config", output / "config")
 experiment = output / "config/Experiment/experiment.cfg"
 settings = experiment.read_text()
-for key, value in (("useGui", "false"), ("numberOfRuns", "1"), ("runLength", "100")):
+for key, value in (("useGui", "false"), ("numberOfRuns", "1"), ("runLength", str(args.cycles))):
     settings, replacements = re.subn(rf"(?m)^{key}\s*=.*$", f"{key} = {value}", settings)
     assert replacements <= 1
     if replacements == 0:
@@ -151,19 +155,23 @@ for key, value in (("useGui", "false"), ("numberOfRuns", "1"), ("runLength", "10
 experiment.write_text(settings)
 with (output / "config/Scape/scape.cfg").open("a") as config:
     config.write(f"\nrandomSeed = {args.seed}\n")
-if args.variant in ("balanced-landscape", "paper-harvest", "paper-com1"):
+if args.variant in ("balanced-landscape", "paper-harvest", "paper-com1", "paper-com0", "paper-com2"):
     scape_config = output / "config/Scape/scape.cfg"
     settings, replacements = re.subn(r"(?m)^sugarRichness\s*=.*$", "sugarRichness = 1.0f", scape_config.read_text())
     assert replacements == 1
     scape_config.write_text(settings)
-if args.variant == "paper-com1":
+if args.variant in ("paper-com0", "paper-com1", "paper-com2"):
     overrides = {
         "Experiment/experiment.cfg": {"nrOfSubcycles": "1"},
         "Agent/agent.cfg": {"minInitialSugar": "0", "maxReproductionSugar": "0", "mutationSigma": "0.1",
-                            "mutationOperator.listenPref": "true", "mutationOperator.talkPref": "true"},
-        "Scape/scape.cfg": {"message.removeAfterNIterations": "0", "message.removeAfterListening": "true",
-                            "message.removeAfterResponse": "false"},
+                            "mutationOperator.listenPref": str(args.variant != "paper-com0").lower(),
+                            "mutationOperator.talkPref": str(args.variant != "paper-com0").lower(),
+                            "maxSugarHarvest": str(args.threshold)},
+        "Scape/scape.cfg": {"message.removeAfterNIterations": "0", "message.removeAfterListening": str(args.variant == "paper-com1").lower(),
+                            "message.removeAfterResponse": str(args.variant == "paper-com2").lower()},
     }
+    if args.variant == "paper-com0":
+        overrides["Agent/agent.cfg"].update(minListenPref="0", maxListenPref="0", minTalkPref="0", maxTalkPref="0")
     for relative, changes in overrides.items():
         config = output / "config" / relative
         settings = config.read_text()
@@ -175,21 +183,21 @@ adapter = Path(__file__).with_name("Replay.java").resolve()
 command = [str(java_home / "bin/java"), "-Djava.awt.headless=true", f"-Dreplication.seed={args.seed}", "-cp",
            f"{classes}:{reference / 'lib'}", str(adapter)]
 with (output / "run.log").open("w") as log:
-    subprocess.run(command, cwd=output, stdout=log, stderr=subprocess.STDOUT, check=True, timeout=90)
+    subprocess.run(command, cwd=output, stdout=log, stderr=subprocess.STDOUT, check=True, timeout=3660)
 observations = 0
 for path in sorted((output / "data").glob("*.avg")):
     rows = [line.split() for line in path.read_text().splitlines()]
-    assert len(rows) == 100 and all(len(row) == 2 for row in rows), path
-    assert [int(row[0]) for row in rows] == list(range(100)), path
+    assert len(rows) == args.cycles and all(len(row) == 2 for row in rows), path
+    assert [int(row[0]) for row in rows] == list(range(args.cycles)), path
     assert all(math.isfinite(float(row[1])) for row in rows), path
     observations += len(rows)
-assert observations == 700
+assert observations == 7 * args.cycles
 population = output / "data/experiment_0_.numberOfAgents.avg"
 final_population = float(population.read_text().splitlines()[-1].split()[1])
-assert final_population.is_integer() and final_population > 0
-assert f"iterations=100,initial=1000,final={int(final_population)}" in (output / "run.log").read_text()
+assert final_population.is_integer() and final_population >= 0
+assert f"iterations={args.cycles},initial=1000,final={int(final_population)}" in (output / "run.log").read_text()
 manifest = Manifest(
-    variant=args.variant, seed=args.seed, source_sha256={str(path): digest(path) for path in sources},
+    variant=args.variant, seed=args.seed, cycles=args.cycles, threshold=args.threshold, source_sha256={str(path): digest(path) for path in sources},
     seed_control_replacements=seed_replacements,
     archive_sha256=archive_hash, adapter_sha256=digest(adapter), source_count=len(sources),
     java_version=subprocess.run([str(java_home / "bin/java"), "-version"], capture_output=True, text=True, check=True).stderr,

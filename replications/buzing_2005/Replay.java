@@ -29,7 +29,7 @@ public class Replay {
         Headless experiment = new Headless();
         int initial = experiment.scape.getNumberOfAgents();
         if (!experiment.scape.start()) throw new IllegalStateException("Model did not start");
-        if (!experiment.finished.await(60, TimeUnit.SECONDS)) throw new IllegalStateException("Model did not finish within 60 seconds");
+        if (!experiment.finished.await(3600, TimeUnit.SECONDS)) throw new IllegalStateException("Model did not finish within 3600 seconds");
         int expected = experiment.getIntProperty(Experiment.RUN_LENGTH);
         if (experiment.scape.getIteration() != expected) throw new IllegalStateException("Incomplete trajectory");
         System.out.println("iterations=" + expected + ",initial=" + initial + ",final=" + experiment.scape.getNumberOfAgents());
