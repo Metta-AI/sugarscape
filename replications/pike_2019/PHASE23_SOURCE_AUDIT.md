@@ -30,3 +30,13 @@ An unchanged-code pairing of the first examples with that preceding library fail
 Therefore chronology alone does not provide a clean historical source pair.
 The failed runs and tracebacks are preserved externally; no aliases or source patches were inserted to conceal the failure.
 Current-revision and explicitly documented corrective experiments must remain separate from paper-fidelity claims.
+
+## Explicit paper-condition adapter
+
+`run_groups.py` now parameterizes Phase II/III settings without editing author checkouts.
+For `Policy-Network`, it forwards the threshold and selected policy to native `net_group`.
+For `Policy-Explicit`, it preserves ordered trade-dictionary traversal and the `>=` comparison, selecting the threshold and forwarding policy to native `form_group`.
+The explicit released default is threshold 10 with movement policy; the network released default is threshold 10 without policy.
+Default-setting controls compare five complete output files byte-for-byte against native runs.
+`configuration.json` distinguishes these declared settings from the underlying directory's native defaults.
+These runs do not import any corrective common-resource modules.

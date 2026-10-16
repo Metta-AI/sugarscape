@@ -167,3 +167,17 @@ Shared-pool exhaustion still requires an explicit model rule; neither clamping d
 `audit_corrected.py RUN NEW_OUTPUT` reconstructs accounting, reconciles every timestep's individual identities with population, and checks finite health and positive prices.
 All four comparison runs pass those measurement checks; the new runs' maximum accounting residual is 3.64e-12.
 A missing-agent control fails population reconciliation. Measurement validation does not establish economic validity or historical fidelity.
+
+## Phase II parameterization
+
+`run_groups.py ENGINE LIBRARY explicit|network THRESHOLD none|movement SEED NEW_OUTPUT` selects the paper's thresholds 1, 5, or 10 and group policy.
+It retains the original model and library rules; the explicit threshold comparison and native network threshold argument are declared configuration changes.
+Each output includes `configuration.json`; its nested runner manifest also identifies the original source directory.
+Do not infer enabled policy from that directory's name alone.
+`run_phase2.py ENGINE LIBRARY NEW_OUTPUT` executes [the declared 600-run protocol](PHASE2_PROTOCOL.md) from frozen copies.
+Full analysis requires both approaches, all three thresholds, and 100 seeds per condition.
+
+[Default-setting controls](results/group-parameterization-2026-10-16) pass five-file byte parity for both approaches: initial agents, prices, native population, health, and identity/group observations.
+The explicit control enables the released movement policy; the network control leaves policy disabled.
+The controls cover 2,000 steps and 95,036 reconciled health records, with exactly 1,000 adapter calls per run.
+The frozen Phase II ensemble has launched with one worker. Its 600-run result grid remains incomplete; controls do not substitute for those runs.
