@@ -48,3 +48,21 @@ python replications/replacing_2023/audit_observation.py OUTPUT OBSERVED
 - Define transparent qualitative assessment criteria before classifying those runs. The authors provide no numerical similarity margin.
 - Complete the seventeen example validations and trade/lending carrying-capacity comparisons.
 - Integrate validated behavior into the Metta-AI engine; these pinned-source replays establish the reference evidence first.
+
+## Pre-conference source diagnostic
+
+The conference took place December 14–15, 2023. The stable archive was created December 20.
+[Source audit](historical-source-audit.json) verifies that every top-level archived Python file matches upstream commit `955860e9b6e4d509f4e8fb19439d588659df919c`.
+That revision includes December 20 changes to disease modifiers and universal income, but precedes the separate movement/vision change.
+The [retained patch](preconference-to-archive.patch) records model changes from the last pre-conference revision, `d57d39dd034fe5926ad51ed5f3f7b6837a2210ac`.
+All three example configurations are byte-identical across these revisions.
+
+The last pre-conference revision was selected by chronology, before observing its results; it is not a verified paper pin.
+Its disease baseline completes 500 steps with minimum population 136 and final population 956.
+The observation replay is byte-identical across all 501 native records.
+This revision still does not reproduce the paper's approximately twenty survivors; chronology alone does not resolve the mismatch.
+Both releases and their evidence remain retained. No version is selected merely because it produces a closer result.
+
+`run_published_seeds.py` now executes all twenty Table 3 seeds, in printed order, through the same verified runner.
+The archived-release disease batch is running. It records each complete trajectory and does not assign subjective similarity verdicts.
+The two explicitly reported extinction seeds, 12881 and 22744, provide concrete outcomes to compare once the batch completes.

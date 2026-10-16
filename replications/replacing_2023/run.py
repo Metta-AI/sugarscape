@@ -11,7 +11,10 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
-RELEASE = "032abd2d2338aadc5ad0287dae7520539f7af57b"
+RELEASES = {
+    "032abd2d2338aadc5ad0287dae7520539f7af57b": "First stable archive, December 20, 2023",
+    "d57d39dd034fe5926ad51ed5f3f7b6837a2210ac": "Last upstream revision before December 14–15, 2023 conference; not a verified paper pin",
+}
 
 class Experiment(BaseModel):
     scenario: Literal["seasonal_migration", "reproduction_limited", "disease_basic"]
@@ -25,7 +28,8 @@ parser.add_argument("output", type=Path)
 args = parser.parse_args()
 experiment = Experiment(scenario=args.scenario, seed=args.seed)
 engine = args.engine.resolve()
-assert subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=engine, text=True).strip() == RELEASE
+release = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=engine, text=True).strip()
+assert release in RELEASES
 assert not subprocess.check_output(["git", "status", "--porcelain", "--untracked-files=no"], cwd=engine, text=True).strip()
 source = engine / "examples" / f"{experiment.scenario}.json"
 original = json.loads(source.read_text())
@@ -39,12 +43,12 @@ configuration.update(seed=experiment.seed, timesteps=horizon, headlessMode=True,
 config = output / "config.json"
 config.write_text(json.dumps(configuration, indent=2) + "\n")
 command = [sys.executable, str(engine / "sugarscape.py"), "--conf", str(config)]
-manifest = {"experiment": experiment.model_dump(), "release": RELEASE, "python": sys.version,
+manifest = {"experiment": experiment.model_dump(), "release": release, "release_selection": RELEASES[release], "python": sys.version,
             "command": command, "pythonhashseed": "0", "source_config_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
             "source_sha256": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(engine.glob("*.py"))},
             "config_sha256": hashlib.sha256(config.read_bytes()).hexdigest(),
             "overrides": {k: configuration[k] for k in ["seed", "timesteps", "headlessMode", "debugMode", "logfile"]},
-            "limitation": "Earliest stable release, not explicitly pinned as the paper's exact code revision. Seasonal/disease pilots use released500-step horizon, not a verified figure sampling schedule."}
+            "limitation": "Neither revision is explicitly pinned as the paper's exact code. Seasonal/disease pilots use the released 500-step horizon, not a verified figure sampling schedule."}
 (output / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 with (output / "stdout.log").open("x") as stdout, (output / "stderr.log").open("x") as stderr:
     subprocess.run(command, cwd=engine, env={**os.environ, "PYTHONHASHSEED": "0", "PYTHONDONTWRITEBYTECODE": "1"}, stdout=stdout, stderr=stderr, check=True)

@@ -15,7 +15,9 @@ parser.add_argument("baseline", type=Path)
 parser.add_argument("output", type=Path)
 args = parser.parse_args()
 engine = args.engine.resolve()
-assert subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=engine, text=True).strip() == "032abd2d2338aadc5ad0287dae7520539f7af57b"
+release = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=engine, text=True).strip()
+assert release in {"032abd2d2338aadc5ad0287dae7520539f7af57b", "d57d39dd034fe5926ad51ed5f3f7b6837a2210ac"}
+assert json.loads((args.baseline / "manifest.json").read_text())["release"] == release
 assert not subprocess.check_output(["git", "status", "--porcelain", "--untracked-files=no"], cwd=engine, text=True).strip()
 source = engine / "sugarscape.py"
 sys.path.insert(0, str(engine))
