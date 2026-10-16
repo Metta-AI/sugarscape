@@ -204,3 +204,17 @@ The horizon follows the inspected Figure4 population axis; the original publicat
 The protocol declares comparisons before the ensemble runs and discloses that seed0 pilots were already observed.
 All outcomes and native failures are retained in a flushed completion ledger; a failed command stops the ensemble.
 Full analysis and historical-rule fidelity remain pending. This launched reconstruction is not a completed paper replication.
+
+## Independent ensemble audit
+
+`audit_ensemble.py RUN prefix|complete NEW_OUTPUT` validates the original150-condition grid, frozen runner hashes, source hashes, configurations, and native data checksums.
+It independently reads seeds, thresholds, horizons, mutation flags, and removal settings from the actual configuration files.
+Every run must contain2,000consecutive records in all scalar outputs and harvest counts, including all post-extinction observations.
+The audit checks absorbing extinction, integer population, bounded preferences, and consistent harvest/participation accounting.
+It reports undefined cooperation ratios and excludes empty-population gene placeholders from descriptive alive-agent averages.
+
+[The first retained prefix](results/ensemble-prefix-2026-10-16/audit.json) contains four completed runs,56,000scalar observations, and8,000harvest-count records.
+The snapshot remains incomplete and must not be counted as150runs.
+[Negative controls](results/ensemble-prefix-2026-10-16/audit-controls/controls.json) verify rejection of both an incomplete ensemble in complete mode and a deliberately altered population file.
+These controls are explicitly separated from scientific results. Complete mode requires all150runs and a successful final native-run ledger.
+The observer validates accounting, not historical source equivalence or the paper's scientific claims.
