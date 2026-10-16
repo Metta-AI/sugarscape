@@ -323,3 +323,50 @@ Labor/means-tested Gini rises from 0.266333 to 0.608991, moving from second to s
 Wealth/means-tested rises from 0.319608 to 0.657251, moving from fifth to seventh.
 Thus owner exclusion preserves deterioration, but wealth/means-tested is not among the lowest-Gini policies under slow automation in this variant.
 These descriptive results do not identify the causal contribution of spatial competition.
+
+## Within-type interpretation audit
+
+`audit_within_type.py SNAPSHOT DECOMPOSITION_AUDIT NEW_OUTPUT` reconstructs each agent type's contribution and its separately normalized Gini.
+[All 420 type/run records](results/within-type-2026-10-16/within-type.json) reconcile with the previously validated full-population decomposition.
+The manuscript's claim that pure means-tested policies reduce within-type contributions at every speed fails in four of six mean comparisons.
+
+| Speed | Baseline within contribution | Labor/means-tested | Wealth/means-tested |
+| --- | ---: | ---: | ---: |
+| Slow | 0.067764 | 0.043815 | 0.048125 |
+| Balanced | 0.060954 | 0.069163 | 0.072393 |
+| Fast | 0.061685 | 0.072082 | 0.072742 |
+
+A weighted contribution differs from a type's own Gini; both measures are retained to avoid conflating them.
+Fast-automation working-human Gini is also higher: 0.448362 and 0.519557 under the two policies, versus 0.345469 in baseline.
+The reported fast-automation shift in the largest within contribution does reproduce: owners in baseline, working humans under either means-tested policy.
+The main Table 3 numerical reproduction remains exact. Its prose interpretation overstates within-type equalization.
+These comparisons describe the published five-seed outcomes; they do not isolate a causal transfer effect or estimate statistical significance.
+
+## Individual-seed mortality dominance
+
+`audit_mortality_dominance.py CANONICAL ROBUSTNESS NEW_OUTPUT` validates the full grids before comparing paired seeds.
+[All 570 available comparisons](results/mortality-dominance-2026-10-16/mortality-dominance.json) show fewer deaths under each pure means-tested policy than its baseline or universal-transfer comparator.
+Coverage includes canonical, welfare-specification, initial-composition, per-seed calibration, and 600-step horizon experiments.
+The horizon experiment includes only baseline and the two means-tested policies; it cannot establish superiority over untested universal policies at 600 steps.
+All observed comparisons are strict, with no ties. They establish robustness over these published conditions, not a significance test or a universal policy theorem.
+
+## Native recurring-tax reach
+
+`audit_tax_reach.py ENGINE COMPLETE_CANONICAL NEW_OUTPUT` repeats the original seed-42 calibration and two full fast-automation seed-zero runs.
+It observes native tax calls, verifies every step's total tax accounting, and independently repeats each trajectory without observation.
+[Both 300-step trajectories](results/tax-reach-2026-10-16/tax-reach.json) are byte-identical with and without observation.
+Their final Gini, mortality, and tax totals match the fresh canonical runs.
+
+Under labor/means-tested, owners pay 12,130.562880 units across 14,850 positive tax calls.
+Under wealth/means-tested, owners pay 35,474.348536 and autonomous agents pay 1,657.743030 units.
+All 14,910 autonomous-agent tax calls in the latter run collect positive tax.
+The native wealth-tax branch applies to every agent type, and the scheduler invokes it for every living agent each step.
+Thus the claim that the tested menu lacks direct recurring taxation of autonomous wealth contradicts the released implementation.
+The claim that only the displacement levy reaches the autonomous-owner channel also fails.
+This diagnostic establishes implemented tax reach; it does not quantify how much that channel causes any outcome.
+
+The levy-cap claim can also be bounded from the pinned source.
+A newly created owner's two endowments each lie in [25,50], giving wealth of at least 50 before the levy.
+At D=50 and fast automation, 300 steps permit at most 60 displacement events, making the largest nominal levy 25.
+The wealth cap therefore cannot bind in this protocol, consistent with the observed zero capped events.
+The manuscript's roughly-quarter assertion cannot be explained by another random seed under these settings.

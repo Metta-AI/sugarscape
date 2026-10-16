@@ -55,4 +55,4 @@ Both observer variants require their exact source hash and verify native/observe
 It verifies the source manifests, complete paired grids, corrected output hash, and original D=50 agreement with canonical results before computing differences.
 It retains every paired seed change and the declared manuscript sensitivity checks.
 The native sweep exposes working and owner counts, not complete population or per-step trajectories; the comparison reports that measurement limit explicitly.
-Its incomplete-original rejection has been exercised; successful end-to-end comparison remains pending both sweeps.
+Its incomplete-original rejection has been exercised. Both complete sweeps and the paired comparison now pass; see `results/completed-sweeps-2026-10-16`.
