@@ -1,0 +1,30 @@
+{
+  "mode": "own-range-positive-sugar",
+  "cycles": 2000,
+  "scalar_observations": 14000,
+  "observed_births": 8244,
+  "partner_outside_own_range": 0,
+  "partner_below_own_minimum": 0,
+  "partner_above_own_maximum": 0,
+  "matching_baseline_files": 0,
+  "final_population": 0.0,
+  "output_sha256": {
+    "data/experiment_0_.cooperating.avg": "a50dbbd338bddeb3076c9c73a59d02585192a90536f81979d1073ce28f7cfcd1",
+    "data/experiment_0_.cooperating.sum": "f4866a6ed3ebc047793a14b4f21ca629b91e54c05cbcdf2cac492a9c146d5bd6",
+    "data/experiment_0_.inNeedOfHelp.avg": "5f31630362373f8ca3756ede51f95d2827c256fbf75b27d15ee2690503871219",
+    "data/experiment_0_.listenPref.avg": "27944b12599ddea65b00d715df8795ad76ea378561e5045c6ad98d2bc9c2811f",
+    "data/experiment_0_.listenPref.bin": "e8d85a5e06c119b949d86942ac57fc699d2f1556febb83d9c0b7078ab8a9eff1",
+    "data/experiment_0_.numberOfAgents.avg": "b01543637b8d57ecf435bba86d0f11b714af073a0ec7f1b7696acd92526dd98f",
+    "data/experiment_0_.numberOfBirths.avg": "979d172e85fa2ad67b8c9864d4dd5c0c61037e12b29aa8030189ad8fe9b75129",
+    "data/experiment_0_.numberOfDeaths.avg": "ff9f1b80e7e5beaeafeda33b69f074c984cbab09226472ce1b4b25e1ee5141e8",
+    "data/experiment_0_.talkPref.avg": "2f0ceff7d87e4273c748dbf146dca04f94fea3eb81efa3f3338f8d9bc79e27c0",
+    "data/experiment_0_.talkPref.bin": "9c5e0f0c54756ab73390f2e6e27f40c909a047133397068c0dbb034973ecaf09"
+  },
+  "scope": "Native rule audit; no paper-level replication verdict.",
+  "wealth_before_halving": {
+    "either_parent_zero": 0,
+    "both_parents_zero": 0,
+    "initiator_zero": 0,
+    "partner_zero": 0
+  }
+}

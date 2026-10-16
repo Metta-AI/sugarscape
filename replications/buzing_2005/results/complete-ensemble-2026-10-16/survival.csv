@@ -1,0 +1,16 @@
+protocol,threshold,seeds,expected_survival,matching_survival_seeds,surviving_seeds
+paper-com0,0,10,False,10,0
+paper-com0,1,10,False,10,0
+paper-com0,2,10,False,10,0
+paper-com0,3,10,False,10,0
+paper-com0,4,10,True,10,10
+paper-com1,0,10,False,10,0
+paper-com1,1,10,True,1,1
+paper-com1,2,10,True,10,10
+paper-com1,3,10,True,10,10
+paper-com1,4,10,True,10,10
+paper-com2,0,10,False,5,5
+paper-com2,1,10,True,10,10
+paper-com2,2,10,True,10,10
+paper-com2,3,10,True,9,9
+paper-com2,4,10,True,10,10

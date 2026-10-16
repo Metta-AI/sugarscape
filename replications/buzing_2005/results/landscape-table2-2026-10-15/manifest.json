@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/opt/homebrew/opt/openjdk@11/bin/java",
+    "-Djava.awt.headless=true",
+    "-Dreplication.seed=0",
+    "-cp",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-2005-controlled-003/classes:/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-2005-controlled-003/reference/JAWAS/lib",
+    "/Users/relh/Code/workspace/sugarscape-buzing/replications/buzing_2005/LandscapeAudit.java"
+  ],
+  "source_manifest": "/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-2005-controlled-003/manifest.json",
+  "adapter_sha256": "3dc9672a0f2ff94955243bcb2dad59942e6619ffe0e147abfe41390f0afece9b",
+  "configuration_sha256": {
+    "config/Agent/agent.cfg": "71854d97d1169fa3e25025c15c93db015e34c6178b07ab820a2d6d7a7b177ec9",
+    "config/Experiment/experiment.cfg": "fbd40d09b4a256740359a6241eae4f16f3fcfd8428ff451044ff1cc742c77342",
+    "config/Scape/cell.cfg": "83673e8cfd4a052df16913e64454a7cd0f9b38be4a9b56dfe8a885dfa4a351ee",
+    "config/Scape/scape.cfg": "3bb6878288b35188ea85cced5cc386089c243cbf309323deee811dd6a3834b85",
+    "config/Scape/sugar.cfg": "281f4c6d72549f9bd0dd6a0acf49bc817ad01b982e2dbe02b26492c36638d94b"
+  },
+  "change": "Only sugarRichness1.4->1.0; initial native landscape observation, no time advancement."
+}

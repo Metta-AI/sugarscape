@@ -1,0 +1,46 @@
+{
+  "protocols": [
+    "paper-com0",
+    "paper-com1",
+    "paper-com2"
+  ],
+  "thresholds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "cycles": 2000,
+  "runs": 150,
+  "historical_seeds_known": false,
+  "unpaced": true,
+  "source": "https://www.jasss.org/8/1/2.html",
+  "horizon_evidence": "Published Figure4 CT4 population axis ends at2000; apply common2000-cycle horizon across conditions.",
+  "scope": "Declared reconstruction. All runs, extinctions, and failed commands retained. Pilot seed0 already observed; no claim of blinded validation.",
+  "comparisons": [
+    "survival and extinction timing by protocol and threshold",
+    "population, talk, and listen trajectories",
+    "shared harvest events / all harvest events",
+    "shared consumer participations / all consumer participations",
+    "native cooperating-agent average retained separately"
+  ],
+  "undefined_ratios": "No eating events gives undefined cooperation ratios; empty-population native gene zeros are not observed preferences.",
+  "runner_sha256": {
+    "Replay.java": "36f21be8e2d5c0f27cd67d4a72dcedd5e16c2140c3af2ab4f6d967b9e4a438c1",
+    "ReplicationRandom.java": "068305c17ae3f0ef636c87aeacea41ecc910ec650ab56edc45c15519568e453e",
+    "run_pilot.py": "e51335138005926f494397c24fe616082d15dc33a0cc5d3ea9be2dba377bb6a8"
+  }
+}
