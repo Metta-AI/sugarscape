@@ -189,3 +189,16 @@ Two overlapping pilot records remain counted once. No partial trajectory contrib
 Each added trajectory passes original configuration, seed order, file hash, finite metrics, and terminal-horizon/extinction checks.
 The snapshot retains interval audits, manifests and exact audited ledgers; provenance identifies the preserved full raw trajectories.
 All four continuation workers remain active. These partial outcome counts do not establish Table 3 or the full paper's conclusions.
+
+## Later checkpoint and raw-model resumption
+
+[Reconciled coverage](results/late-prefix-and-raw-resume-2026-10-16/coverage.json) validates 508 unique simulations and 980,090 observations.
+The audited original-index intervals are raw `[0,299)`, altruistic `[0,98)`, egoistic `[0,84)`, and utilitarian `[0,27)`.
+Earlier pilot overlaps are counted once; the two excluded duplicate records agree.
+The snapshot retains independent audits, source manifests, audited ledger prefixes, and raw-evidence locations.
+
+The raw-model batch exited at its existing 1 GiB disk guard after index 298; its terminal status and log were inspected.
+After free space recovered to 12 GiB, a new `-006` directory resumed at index 299 with the unchanged source and original seed order.
+The three other workers remained active and were not restarted.
+No previous complete or partial evidence was removed.
+These remain partial homogeneous results; no Table 3, selfishness, mixed-population, or full-paper completion is claimed.
