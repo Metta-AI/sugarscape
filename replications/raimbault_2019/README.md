@@ -2,7 +2,7 @@
 
 Paper: [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html).
 Scope: Sugarscape results; Schelling experiments are excluded.
-Status: **24/24 Table 4 values reproduced from archived data; three archived simulations exactly reproduced; ensemble unfinished**.
+Status: **24/24 Table 4 values reproduced from archived data; fixed-reference and generated-landscape ensembles remain unfinished**.
 This is not yet a completed paper replication.
 
 ## Sources and exact reanalysis
@@ -239,3 +239,21 @@ Row 1's population-distribution R² is `0.8963279972950365`, versus archived `0.
 The strict exact comparison fails on that value; its discrepancy is retained, with no relaxed pass criterion.
 A repeated execution through the public runner produces byte-identical output.
 These validation probes add zero unique ensemble coverage. The full generated ensemble and fresh spatial conclusions remain pending.
+
+## Generated-landscape diversity probes
+
+[Six input-selected probes](results/generated-diversity-2026-10-16/summary.json) cover landscape parameter sets 16 and 23 at populations 10, 260, and 510.
+Selection took the first recorded input in each category without consulting output values.
+Five inputs are new probes; original row 0 is a repeated control. These probes add zero production-ensemble coverage.
+Every run preserves its archived seed, full 10,000-step horizon, native model, and terminal status.
+
+Both Gini measures match exactly for all six inputs. Of 72 output values, 66 match bit-for-bit.
+The six deviations occur in regression slope or R², with maximum absolute error 4.44e-16.
+Before these runs, the campaign declared exact Gini matching and a 1e-12 absolute tolerance for morphology outputs.
+That tolerance was chosen after the initial exploratory discrepancy; it does not change the earlier strict-exact failure.
+Every deviation and the original strict comparison remain available in the evidence.
+
+Bytecode inspection traces the regression to the unchanged extension's Apache Commons Math `SimpleRegression` methods.
+This identifies the implementation being executed; it does not establish the exact historical cause of floating-point differences.
+An independent pass through the original archive verifies all six selected indices and all 72 output comparisons.
+The full generated-landscape ensemble and spatial conclusions remain incomplete.
