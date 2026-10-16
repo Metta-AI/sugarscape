@@ -56,3 +56,13 @@ The deposited horizon and composition CSVs permit full per-seed comparisons.
 The levy and per-seed threshold CSVs are absent from the public deposit; their regenerated outputs must be checked against manuscript claims.
 The transfer-multiplier script requires a canonical Part B CSV for its benchmark; it remains pending fresh canonical completion.
 The older starvation script overlaps the canonical mortality study and requires a source comparison before deciding whether it adds distinct evidence.
+
+## Independent horizon-table audit
+
+`audit_horizon.py CSV PROVENANCE NEW_OUTPUT` requires the complete 45-run speed/policy/seed grid and reconstructs Table D.1 directly.
+The validator checks finite metrics, Gini bounds, monotonic cumulative mortality, all 36 printed table cells, and six mortality ratios.
+It records whether the input is the author deposit or a fresh replay; provenance is not inferred from numerical agreement.
+
+[The deposited-data audit](results/deposited-horizon-audit-2026-10-15/table-d1.json) matches all 36 table values at printed precision.
+At 600 steps, the means-tested mortality ratios range from 0.06535 to 0.09751 of the same-speed baseline.
+This confirms internal reporting consistency only. Fresh horizon simulations are still running and must pass separate native-output and table checks.
