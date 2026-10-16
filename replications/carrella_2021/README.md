@@ -270,3 +270,20 @@ Coverage spans 0.9512–0.9640 across parameters. No observations or folds are d
 The original process handle is unavailable, so its exit code is not asserted; complete numerical outputs and the final log are retained.
 The log ends with a deprecation warning and contains the final metrics.
 Stochastic random-stream and runtime alignment remain unresolved; this does not establish a negative replication.
+
+## GAM source-history audit
+
+The author's `setup.R` changed between commits `8d53cca` and `0400f75`.
+The older formula builder counted distinct values in response columns as well as predictors.
+The newer builder excludes responses before constructing smooth terms for columns with fewer than ten distinct values.
+
+[All ten saved training folds](results/gam-source-history-2026-10-16/provenance.json) have at least 75 distinct values in every response column.
+Consequently, none enters the older low-cardinality list, and all 50 old/new formulas are identical.
+The retained audit includes the exact source diff, source and fold hashes, formulas, and runtime.
+A controlled two-value response column activates the changed branch and causes the auditor to reject formula equivalence before writing output.
+This rules out this specific source revision as an explanation for the GAM discrepancy on these folds.
+It does not resolve numerical runtime differences, rerun fitting, or establish author-environment equivalence.
+
+```sh
+Rscript replications/carrella_2021/audit_gam_history.R /complete/gam-1250 /complete/gam-5000 /new/history-audit
+```
