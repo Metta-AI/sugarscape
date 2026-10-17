@@ -276,3 +276,14 @@ Outcomes are 65 extinctions, six surviving populations below 250, and 29 above 2
 The final native archive contains only the 89 conditions absent from the earlier ten-condition archive.
 This completes one group in the deposited 1,200-input runtime archive; the other groups remain unstarted.
 The archive's 100 seeds differ from the paper's claimed 500-seed schedule, so these counts are not a direct Table 6 replication verdict.
+
+## Runtime groups and bounded intervals
+
+`run_runtime.py ENGINE ARCHIVE MODEL STEPS NEW_OUTPUT --start START --stop STOP --seconds BUDGET` runs original archived configurations in lexicographic filename order.
+It supports the four archived models and horizons of 500, 5,000 and 50,000 steps, with immutable source snapshots and a 2 GiB disk guard.
+Only the logfile changes. The supplied budget bounds the entire interval; timeout or native failure preserves partial evidence and stops execution.
+`audit_runtime.py ARCHIVE RUN NEW_OUTPUT` independently validates the declared interval; `--require-group` additionally requires all 100 inputs from index zero.
+`--allow-prefix` explicitly marks partial intervals. A completed short interval never becomes a completed group.
+[An original altruistic 500-step pilot](results/runtime-runner-2026-10-17/audit.json) reaches extinction at step 134; all 135 observations pass.
+Full-group mode rejects this one-condition interval before output creation. The source and native outputs are retained.
+The 5,000/50,000-step paths and complete-group success path remain unexercised for this new runner.
