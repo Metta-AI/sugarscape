@@ -44,6 +44,11 @@ SIR results are outside this Sugarscape-specific scope.
 - The cultural-balance Boolean expression is asymmetric. Its effect on complete
   trajectories must be measured before interpreting a pass as agreement with the prose.
 
+The [scenario catalog](scenario-catalog.json) also identifies a naming collision:
+`mkParamsFigureIV_11` is labelled `Figure IV-10`. The CLI selects the first matching
+name and reports an unknown name without failing its exit status. Confirm output
+artifacts and scenario parameters, not exit status alone.
+
 These findings are source discrepancies, not validated negative replications.
 A successful default test suite cannot establish complete paper reproduction.
 
