@@ -325,3 +325,13 @@ Outcomes are 69 extinctions, two surviving populations below 250, and 29 above 2
 All original native files, the completion ledger and archive checksum are retained.
 Audited runtime-archive coverage is now 300 of 1,200 configurations across three complete 500-step groups.
 The Bentham group remains active. These archived 100-seed results do not establish the paper's claimed 500-seed Table 6 results.
+
+## Bentham runtime prefix
+
+The [sealed 33-condition prefix](results/runtime-bentham500-prefix-2026-10-17/audit.json) adds 16,533 independently checked observations from the original 500-step runtime archive.
+Every retained run reaches step 500 with population above 250; none equals the initial population.
+The native files, frozen ledger, configurations, source hashes, and runner are retained in a portable archive.
+A second audit after extraction verifies the archived evidence against its original execution paths.
+
+The runtime archive now has 333 of 1,200 conditions audited, totaling 97,878 observations.
+The Bentham producer remains active for the remaining conditions; this prefix does not establish a full-group or Table 6 verdict.
