@@ -270,3 +270,37 @@ Its bounded boot command is registered; no timing result is claimed.
 The dedicated-core requirement remains intact. GPU-host CPU quotas are shared
 and would change the timing conditions. Historical failed allocation and command
 identifiers remain in the recovery evidence alongside the replacement identifiers.
+
+## Instrumented retry counters: complete native workflow check
+
+[Four complete 1,000-step runs](results/retry-instrumentation-2026-10-17)
+validate the original TVar and TArray instrumentation with GHC 8.4.3 and
+`stm-stats-0.2.0.0`. Each executable runs two iterations in one process, with
+seed 42, 500 initial agents, no rebirth, and one Haskell capability.
+The only model-source change enables the existing instrumentation flag.
+
+| Implementation | Iteration | Commits during iteration | Retries during iteration | Retries / commits |
+| --- | ---: | ---: | ---: | ---: |
+| TVar | 1 | 190,679 | 850 | 0.004458 |
+| TVar | 2 | 194,010 | 848 | 0.004371 |
+| TArray | 1 | 193,587 | 671 | 0.003466 |
+| TArray | 2 | 191,446 | 739 | 0.003860 |
+
+All four native reports print `0.00`, despite nonzero retry counts. The second
+report in each process contains cumulative counters; the table subtracts the first
+report to recover the second iteration. A rounded zero cannot establish zero retries.
+Fresh retry experiments must retain integer counters and process boundaries.
+
+The independent auditor verifies all pinned baseline files, the exact flag changes,
+binary hashes, commands, successful exits, report counts, and ratio rounding.
+Extracting the retained archive reproduces the complete audit byte-for-byte.
+An initial build failed because the source subset omitted LICENSE and ChangeLog.md;
+restoring and hashing those original files resolved it. Failed attempts remain retained.
+
+These runs used x86 emulation and establish instrumentation behavior, not the paper's
+multicore ratios, timing, or scaling claims. Instrumented timings remain excluded from
+the uninstrumented performance experiment.
+
+```sh
+python replications/thaler_2019/audit_retries.py EXTRACTED_ARCHIVE EXTRACTED_ARCHIVE/baseline NEW_AUDIT.json
+```

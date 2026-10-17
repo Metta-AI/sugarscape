@@ -1,0 +1,31 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "--name",
+    "relh-sugarscape-thaler-retry-library-20261017-v1",
+    "--platform",
+    "linux/amd64",
+    "--cpus",
+    "1",
+    "--memory",
+    "512m",
+    "-v",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home:/root",
+    "-w",
+    "/root/sugarscape/thaler-retries-002/tvar",
+    "relh-sugarscape-thaler-deps:20261017-001",
+    "timeout",
+    "60",
+    "stack",
+    "exec",
+    "--",
+    "ghc-pkg",
+    "field",
+    "stm-stats",
+    "version"
+  ],
+  "stdout": "version: 0.2.0.0\n",
+  "stderr": "",
+  "exit_code": 0
+}
