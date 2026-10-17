@@ -1,0 +1,130 @@
+Building all executables for `SugarScape' once. After a successful build of all of them, only specified executables will be rebuilt.
+SugarScape> configure (exe + test)
+Configuring SugarScape-0.1.0.0...
+SugarScape> build (exe + test)
+Preprocessing test suite 'sugarscape-model-test' for SugarScape-0.1.0.0..
+Building test suite 'sugarscape-model-test' for SugarScape-0.1.0.0..
+[ 1 of 25] Compiling SugarScape.Agent.Utils
+[ 2 of 25] Compiling SugarScape.Core.Common
+[ 3 of 25] Compiling SugarScape.Agent.Interface
+[ 4 of 25] Compiling SugarScape.Core.Discrete
+[ 5 of 25] Compiling SugarScape.Core.Model
+[ 6 of 25] Compiling SugarScape.Core.Random
+[ 7 of 25] Compiling SugarScape.Core.Scenario
+[ 8 of 25] Compiling SugarScape.Core.Environment
+[ 9 of 25] Compiling SugarScape.Agent.Common
+[10 of 25] Compiling SugarScape.Agent.Polution
+[11 of 25] Compiling SugarScape.Agent.Ageing
+[12 of 25] Compiling SugarScape.Core.Utils
+[13 of 25] Compiling SugarScape.Agent.Trading
+[14 of 25] Compiling SugarScape.Agent.Move
+[15 of 25] Compiling SugarScape.Agent.Metabolism
+[16 of 25] Compiling SugarScape.Agent.Mating
+[17 of 25] Compiling SugarScape.Agent.Loan
+[18 of 25] Compiling SugarScape.Agent.Dying
+[19 of 25] Compiling SugarScape.Agent.Disease
+[20 of 25] Compiling SugarScape.Agent.Culture
+[21 of 25] Compiling SugarScape.Agent.Agent
+[22 of 25] Compiling SugarScape.Core.Init
+[23 of 25] Compiling SugarScape.Core.Simulation
+[24 of 25] Compiling Utils.StatsUtils
+[25 of 25] Compiling Main
+Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.2.0.1/build/sugarscape-model-test/sugarscape-model-test ...
+Preprocessing test suite 'sugarscape-test' for SugarScape-0.1.0.0..
+Building test suite 'sugarscape-test' for SugarScape-0.1.0.0..
+[ 1 of 36] Compiling SugarScape.Agent.Utils
+[ 2 of 36] Compiling SugarScape.Core.Common
+[ 3 of 36] Compiling SugarScape.Agent.Interface
+[ 4 of 36] Compiling SugarScape.Core.Discrete
+[ 5 of 36] Compiling Discrete.Discrete
+[ 6 of 36] Compiling Discrete.Tests
+[ 7 of 36] Compiling SugarScape.Core.Model
+[ 8 of 36] Compiling SugarScape.Core.Random
+[ 9 of 36] Compiling SugarScape.Core.Scenario
+[10 of 36] Compiling SugarScape.Core.Environment
+[11 of 36] Compiling SugarScape.Agent.Common
+[12 of 36] Compiling SugarScape.Agent.Polution
+[13 of 36] Compiling SugarScape.Agent.Ageing
+[14 of 36] Compiling Agent.Agent
+[15 of 36] Compiling SugarScape.Core.Utils
+[16 of 36] Compiling SugarScape.Agent.Trading
+[17 of 36] Compiling SugarScape.Agent.Move
+[18 of 36] Compiling Agent.Move
+[19 of 36] Compiling SugarScape.Agent.Metabolism
+[20 of 36] Compiling SugarScape.Agent.Mating
+[21 of 36] Compiling SugarScape.Agent.Loan
+[22 of 36] Compiling SugarScape.Agent.Dying
+[23 of 36] Compiling SugarScape.Agent.Disease
+[24 of 36] Compiling SugarScape.Agent.Culture
+[25 of 36] Compiling SugarScape.Agent.Agent
+[26 of 36] Compiling SugarScape.Core.Init
+[27 of 36] Compiling SugarScape.Core.Simulation
+[28 of 36] Compiling Utils.Runner
+[29 of 36] Compiling Environment.Environment
+[30 of 36] Compiling Environment.Tests
+[31 of 36] Compiling Agent.Metabolism
+[32 of 36] Compiling Agent.Mating
+[33 of 36] Compiling Agent.Ageing
+[34 of 36] Compiling Agent.Tests
+[35 of 36] Compiling Main
+[36 of 36] Compiling Utils.StatsUtils
+Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.2.0.1/build/sugarscape-test/sugarscape-test ...
+Preprocessing executable 'sugarscape' for SugarScape-0.1.0.0..
+Building executable 'sugarscape' for SugarScape-0.1.0.0..
+[ 1 of 27] Compiling SugarScape.Agent.Utils
+[ 2 of 27] Compiling SugarScape.Core.Common
+[ 3 of 27] Compiling SugarScape.Agent.Interface
+[ 4 of 27] Compiling SugarScape.Core.Discrete
+[ 5 of 27] Compiling SugarScape.Core.Model
+[ 6 of 27] Compiling SugarScape.Core.Random
+[ 7 of 27] Compiling SugarScape.Core.Scenario
+[ 8 of 27] Compiling SugarScape.Core.Environment
+[ 9 of 27] Compiling SugarScape.Agent.Common
+[10 of 27] Compiling SugarScape.Agent.Polution
+[11 of 27] Compiling SugarScape.Agent.Ageing
+[12 of 27] Compiling SugarScape.Core.Utils
+[13 of 27] Compiling SugarScape.Agent.Trading
+[14 of 27] Compiling SugarScape.Agent.Move
+[15 of 27] Compiling SugarScape.Agent.Metabolism
+[16 of 27] Compiling SugarScape.Agent.Mating
+[17 of 27] Compiling SugarScape.Agent.Loan
+[18 of 27] Compiling SugarScape.Agent.Dying
+[19 of 27] Compiling SugarScape.Agent.Disease
+[20 of 27] Compiling SugarScape.Agent.Culture
+[21 of 27] Compiling SugarScape.Agent.Agent
+[22 of 27] Compiling SugarScape.Core.Init
+[23 of 27] Compiling SugarScape.Core.Simulation
+[24 of 27] Compiling SugarScape.Export.ExportRunner
+[25 of 27] Compiling SugarScape.Visual.Renderer
+[26 of 27] Compiling SugarScape.Visual.GlossRunner
+[27 of 27] Compiling Main
+Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.2.0.1/build/sugarscape/sugarscape ...
+SugarScape> copy/register
+Installing executable sugarscape in /root/sugarscape/thaler-properties-combat-reward-001/source/.stack-work/install/x86_64-linux-tinfo6/2a724e256ed1d559d6bcbb1d2583b4732cc72dcc267bba44d1f02877f61d5f9e/8.4.4/bin
+SugarScape> Test running disabled by --no-run-tests flag.
+Completed 2 action(s).
+[ 1 of 24] Compiling SugarScape.Agent.Utils ( src/SugarScape/Agent/Utils.hs, ../observer-build/SugarScape/Agent/Utils.o )
+[ 2 of 24] Compiling SugarScape.Core.Common ( src/SugarScape/Core/Common.hs, ../observer-build/SugarScape/Core/Common.o )
+[ 3 of 24] Compiling SugarScape.Agent.Interface ( src/SugarScape/Agent/Interface.hs, ../observer-build/SugarScape/Agent/Interface.o )
+[ 4 of 24] Compiling SugarScape.Core.Discrete ( src/SugarScape/Core/Discrete.hs, ../observer-build/SugarScape/Core/Discrete.o )
+[ 5 of 24] Compiling SugarScape.Core.Model ( src/SugarScape/Core/Model.hs, ../observer-build/SugarScape/Core/Model.o )
+[ 6 of 24] Compiling SugarScape.Core.Random ( src/SugarScape/Core/Random.hs, ../observer-build/SugarScape/Core/Random.o )
+[ 7 of 24] Compiling SugarScape.Core.Scenario ( src/SugarScape/Core/Scenario.hs, ../observer-build/SugarScape/Core/Scenario.o )
+[ 8 of 24] Compiling SugarScape.Core.Environment ( src/SugarScape/Core/Environment.hs, ../observer-build/SugarScape/Core/Environment.o )
+[ 9 of 24] Compiling SugarScape.Agent.Common ( src/SugarScape/Agent/Common.hs, ../observer-build/SugarScape/Agent/Common.o )
+[10 of 24] Compiling SugarScape.Agent.Polution ( src/SugarScape/Agent/Polution.hs, ../observer-build/SugarScape/Agent/Polution.o )
+[11 of 24] Compiling SugarScape.Agent.Ageing ( src/SugarScape/Agent/Ageing.hs, ../observer-build/SugarScape/Agent/Ageing.o )
+[12 of 24] Compiling SugarScape.Core.Utils ( src/SugarScape/Core/Utils.hs, ../observer-build/SugarScape/Core/Utils.o )
+[13 of 24] Compiling SugarScape.Agent.Trading ( src/SugarScape/Agent/Trading.hs, ../observer-build/SugarScape/Agent/Trading.o )
+[14 of 24] Compiling SugarScape.Agent.Move ( src/SugarScape/Agent/Move.hs, ../observer-build/SugarScape/Agent/Move.o )
+[15 of 24] Compiling SugarScape.Agent.Metabolism ( src/SugarScape/Agent/Metabolism.hs, ../observer-build/SugarScape/Agent/Metabolism.o )
+[16 of 24] Compiling SugarScape.Agent.Mating ( src/SugarScape/Agent/Mating.hs, ../observer-build/SugarScape/Agent/Mating.o )
+[17 of 24] Compiling SugarScape.Agent.Loan ( src/SugarScape/Agent/Loan.hs, ../observer-build/SugarScape/Agent/Loan.o )
+[18 of 24] Compiling SugarScape.Agent.Dying ( src/SugarScape/Agent/Dying.hs, ../observer-build/SugarScape/Agent/Dying.o )
+[19 of 24] Compiling SugarScape.Agent.Disease ( src/SugarScape/Agent/Disease.hs, ../observer-build/SugarScape/Agent/Disease.o )
+[20 of 24] Compiling SugarScape.Agent.Culture ( src/SugarScape/Agent/Culture.hs, ../observer-build/SugarScape/Agent/Culture.o )
+[21 of 24] Compiling SugarScape.Agent.Agent ( src/SugarScape/Agent/Agent.hs, ../observer-build/SugarScape/Agent/Agent.o )
+[22 of 24] Compiling SugarScape.Core.Init ( src/SugarScape/Core/Init.hs, ../observer-build/SugarScape/Core/Init.o )
+[23 of 24] Compiling SugarScape.Core.Simulation ( src/SugarScape/Core/Simulation.hs, ../observer-build/SugarScape/Core/Simulation.o )
+[24 of 24] Compiling Main             ( ../Observe.hs, ../observer-build/Main.o )
+Linking ../observe ...

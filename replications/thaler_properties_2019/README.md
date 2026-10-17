@@ -539,3 +539,46 @@ python audit_events.py /path/to/instrumented-root /path/to/original-observer /pa
 
 No new unit or integration tests were added; these checks exercise complete native
 trajectories. The event trace is not used as performance evidence.
+
+
+## Reward-only combat correction
+
+[A separate post-hoc diagnostic](results/combat-reward-diagnostic-2026-10-17) credits
+computed combat reward to stored sugar and refreshes occupier metadata before the
+victim event. These experiments use the paper's sugar-only combat configurations.
+The correction preserves the indexing and observation behavior to isolate reward
+credit. The exact two-line addition is checked against the traced historical source.
+
+All three non-combat controls remain byte-identical, covering 200,454 agent observations.
+Both combat scenarios start identically to their historical counterparts. The independent
+audit verifies 436,699 corrected/control agent observations and every-step birth/death
+accounting. All 423 attacks credit harvest plus computed reward. Historical evidence
+remains unchanged.
+
+| First-seed measurement through 1,000 | Historical | Reward corrected |
+| --- | ---: | ---: |
+| Cultural-combat kills | 16 | 28 |
+| Cultural-combat final population | 186 | 176 |
+| Cultural-combat largest individual kill count | 2 | 6 |
+| Replacement-combat kills | 389 | 395 |
+| Replacement-combat final population | 11 | 5 |
+| Replacement-combat largest individual kill count | 7 | 42 |
+
+These descriptive differences do not establish an ensemble effect or spatial invasion.
+Neither 1,000-step endpoint establishes eventual single-agent convergence.
+
+[A frozen 100-seed comparison](results/combat-ensemble-launch-2026-10-17) now runs both
+combat scenarios under historical and reward-corrected rules. Four completed first-seed
+trajectories are retained at snapshot stride one. Two workers execute only seeds 1–99
+at stride ten, preserving every event and every-step population summary. Each worker
+has one CPU, 2 GiB, a three-hour budget, and a 4 GiB free-disk guard.
+
+The 1,000-step horizon is an explicit diagnostic choice because the appendix gives no
+fixed combat horizon. Primary measurements include population trajectories, causes of
+death, replacements, kills per attacker, reward accounting, and first single-agent
+occurrence, retaining never-reached cases. All 100 seeds are required for aggregate
+comparisons. Spatial front and invasion claims require additional event analysis.
+
+`audit_correction.py ROOT ORIGINAL_OBSERVER NEW_OUTPUT HISTORICAL_TRACE` checks the
+exact correction, unchanged controls, matched initialization and corrected event
+accounting after rebuilding source trees and restoring the archived CSV files.
