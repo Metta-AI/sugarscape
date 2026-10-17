@@ -1,0 +1,17 @@
+{
+  "original_sha256": "b2daf9e6ee2b3faf4a13e30ba19f4293e1f922a993d30cb5e72fb1d4c2b8f56d",
+  "observer_sha256": "307bb4829ffef97b9eb004bdc59b58282aebd937c0bd4138581753bef711fba4",
+  "condition": {
+    "seed": 0,
+    "width": 256,
+    "occupation": 0.17,
+    "steps": 100
+  },
+  "measurement": "Initial and post-step occupied/unresolved agent states, plus global resolution counters. Full raw active records retained.",
+  "model_changes": [],
+  "parity_gate": "Exactly match all100 unmodified reported population values using status==OCCUPIED; independently report total active population including unresolved agents.",
+  "interpretation": "Inspect unique IDs, status, wealth, metabolism and net displacement; multiple bidding rounds can cause more than one cell of displacement. No negative paper verdict inferred from static evidence.",
+  "timings": "All observer timing excluded.",
+  "execution": "Wait for full original benchmark terminal receipt before any build or simulation. Maximum1800 seconds after wait; native300 seconds.",
+  "artifact_limit_bytes": 104857600
+}

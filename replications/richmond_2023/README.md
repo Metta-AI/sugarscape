@@ -248,3 +248,20 @@ After the full original benchmark finishes, a separate passive state observer mu
 agent IDs, metabolism, wealth, and movement. Its population trace must match all 100
 unmodified qualification observations before interpretation. Observer timings cannot count
 as benchmark timings. No source correction is applied to the ongoing historical replay.
+
+### Deferred passive state observer
+
+[The frozen observer launch](results/state-observer-launch-2026-10-17) records the
+initial state and all 100 post-step active-agent states for seed zero, width 256.
+Command `cmd-trijm` waits for the full benchmark's terminal receipt before building
+or executing. Its post-wait limit is 30 minutes, including a five-minute native limit.
+At the node's quoted rate, the added execution is bounded by $2.016, excluding idle time.
+The bounded wait overlaps the existing full run; it launches no concurrent GPU work.
+
+The observer uses the engine's population download API and changes no rule or random draw.
+It records IDs, positions, statuses, sugar, metabolism, and local resource values.
+A subtle measurement distinction is retained: original CSV population counts only
+status `OCCUPIED`, whereas the observer also records unresolved agents.
+Parity must compare the same status subset; total active population is a separate statistic.
+Compilation, parity, and state findings remain unverified until this deferred job finishes.
+The storage collector is capped at 100 MiB.
