@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-17T21:28:48.966258+00:00",
+  "as_of": "2026-10-17T23:06:58.782015+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -30,24 +30,26 @@
     {
       "study": "raimbault_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
-      "checked_commit": "5e4cbd7ab318e6495d8dffa77d6ae15b15e57502",
+      "checked_commit": "fc6f527652ed79870e330a88510b569577aec23a",
       "status": "running",
       "readme": "replications/raimbault_2019/README.md",
-      "readme_sha256": "fef898602b3ee7376566abba5e1c19f7ad14db838a48fd3b65484efb10f8f5b9",
-      "json_evidence_files": 85,
-      "remaining_scope": "47133/55000 reference inputs independently audited, with94266 exact Gini measurements. Batched sizing rechecks550 existing inputs with6600 exact metrics; it adds no unique coverage or revised full-grid cost estimate. Full reference replay, generated-grid production, and spatial sensitivity remain incomplete.",
-      "gzip_json_evidence_files": 3
+      "readme_sha256": "76e3d63e563756386075540429933152595245fd3cb609c79d6d71b46a554328",
+      "json_evidence_files": 105,
+      "remaining_scope": "49,366/55,000 reference inputs audited with 98,732 exact Gini measurements; the 5,634-input continuation remains running. All six archived Table2 and 24 Table4 values reproduced; morphology reanalysis confirms inconsistent reference-marker scaling, separately from simulation outputs. First 8,000 generated production inputs queued after reference completion, excluding prior inputs; full generated ensemble and fresh spatial comparison remain incomplete.",
+      "gzip_json_evidence_files": 4,
+      "checked_at": "2026-10-17T23:06:58.782015+00:00"
     },
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "e324ff27a7db111404137b830550b88d0507268c",
+      "checked_commit": "cbfeddb88a72089e3d4a17b6f00ca99151e3f1de",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "0059d0dfeb78e668de9c58e820bd3f6fe0885e3356440c10e5d08c7d265e4123",
-      "json_evidence_files": 314,
-      "remaining_scope": "1387/2000 homogeneous inputs and804/1200 deposited runtime inputs audited;1,541,060 runtime observations. All checkpoint overlap agrees exactly. Full sweeps, longer horizons, and deposited100-input versus reported500-seed runtime mismatch remain unresolved.",
-      "gzip_json_evidence_files": 37
+      "readme_sha256": "76ec374362bdf88006aa95b410117508549e8edd44d2be70635dda3650ef81ec",
+      "json_evidence_files": 326,
+      "remaining_scope": "1,387/2,000 homogeneous inputs and 811/1,200 deposited runtime inputs audited; 1,576,067 runtime observations. Overlapping trajectories agree exactly and count once. Raw 500-seed counts match printed Table3 under released plotting semantics; prose classifies equality differently. Remaining homogeneous runs, full sweeps, longer horizons and deposited100-input versus reported500-seed runtime mismatch remain unresolved. Bentham50k continuation is queued.",
+      "gzip_json_evidence_files": 37,
+      "checked_at": "2026-10-17T23:06:58.782015+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -165,35 +167,38 @@
     {
       "study": "thaler_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
-      "checked_commit": "e82a4c314f80e234e1f66044a559e1c879bd477d",
+      "checked_commit": "e1c0769a8c3a81afa8d5f44d147378a8035770bf",
       "status": "partial",
       "readme": "replications/thaler_2019/README.md",
-      "readme_sha256": "8da04ba8f61391375c352afb766debbc837d453d5ece5009448fbee73af60752",
-      "json_evidence_files": 36,
+      "readme_sha256": "54c06e603c91d155eeb247ade17d17edfb8959299f326a1566d8591c8cc15fb2",
+      "json_evidence_files": 48,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "Figure5b reproduced; Figure5a source/seed unresolved. Native45-condition timing workflow building/running after preserved DNS setup failure; no complete timing result yet. Four instrumented one-capability workflows validate cumulative retry counters. Full retry/scaling comparisons remain incomplete."
+      "remaining_scope": "Figure5b reproduced; Figure5a source/seed unresolved. All25 native Table6 timing conditions audited, with26/27 pairwise rankings matching; hardware differs and one reported interval bound is undefined. Remaining Table8 timing conditions and deferred90-run native retry grid are unfinished. No whole-paper performance verdict.",
+      "checked_at": "2026-10-17T23:06:58.782015+00:00"
     },
     {
       "study": "thaler_properties_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/17",
-      "checked_commit": "8fdd959f41a0a7c2fa0725e0971db4146f4ac769",
+      "checked_commit": "4d9521e9ac967b2c3be77fb7b34701327d989ace",
       "status": "partial",
       "readme": "replications/thaler_properties_2019/README.md",
-      "readme_sha256": "3d51965091e8e081159a8d9a4bef3bcef7f057cc3a580cafde48dfe07cbf1447",
-      "json_evidence_files": 2430,
-      "gzip_json_evidence_files": 0,
-      "remaining_scope": "Completed native validation cohorts and explicitly labeled corrections retained; inheritance continuation and original model suite remain running. Exact QuickCheck implementation audit shows cover100 records coverage without falsifying True, and expectFailure may report NoExpectedFailure. Original suite terminal outcome still required."
+      "readme_sha256": "368b70a32f6ac32d931938449dd8317eeef1cb3ce4dad2ea82fe5e1ce62ebed7",
+      "json_evidence_files": 2442,
+      "gzip_json_evidence_files": 2,
+      "remaining_scope": "Completed native validation cohorts and labeled source corrections retained. All100 inheritance/control pairs (200 trajectories) independently audited; 400 combat trajectories receive regional/event analysis without equating rebirth or culture conversion with invasion. Original model suite still running; final native coverage/expectFailure behavior and unresolved appendix claims prevent completion.",
+      "checked_at": "2026-10-17T23:06:58.782015+00:00"
     },
     {
       "study": "richmond_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/18",
       "status": "running",
-      "checked_commit": "43b12669cfbd3e0bc90a38a6257f2ad0a3aaf335",
+      "checked_commit": "1090bf7a1ea368bd399210dc690cc00d415ac335",
       "readme": "replications/richmond_2023/README.md",
-      "readme_sha256": "e7e4242bded723c35d552bca45deb2d44c95c08c22ea8d2f039a0e3960c2dbb8",
-      "json_evidence_files": 22,
+      "readme_sha256": "35051b18ee0d1d8944cfa83e919584dc405a97a7c768f7302c70eae277558c38",
+      "json_evidence_files": 25,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "Paper-linked v1 benchmark/engine pinned. Archived6600 steps/132 means audited. Native qualification10/84 conditions reproduces1000 population observations exactly; passive100-step trace confirms persistent global counter with97 single-pass steps and unchanged populations. Full84-condition original benchmark running in one process. State, visualisation, full-grid and performance claims remain incomplete."
+      "remaining_scope": "Paper-linked v1 benchmark/engine pinned. Archived6600 steps/132 means audited; native qualification10/84 conditions matches1000 population observations. Passive100-step trace confirms counter carryover. Full84-condition benchmark running; subsequent state observer queued. Static movement-transfer and neighborhood differences require native state confirmation; timings and remaining claims incomplete.",
+      "checked_at": "2026-10-17T23:06:58.782015+00:00"
     }
   ],
   "study_prs": 16,
