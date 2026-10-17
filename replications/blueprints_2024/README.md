@@ -576,3 +576,17 @@ inputs, twelve additional altruistic 5,000-step inputs, and one additional raw
 50,000-step input. Every counted trajectory reaches its declared horizon or extinction.
 Both cloud jobs continue; checkpoints are incomplete intervals, not full-ensemble results.
 The deposited runtime archive remains distinct from the paper's 500-seed Table 6 experiment.
+
+
+## Second runtime checkpoint reconciliation
+
+[The next two retained checkpoints](results/runtime-checkpoints-second-2026-10-17)
+add 11 unique original inputs and 120,931 observations. Independent
+coverage now reaches **695/1,200 inputs and 906,525 observations**.
+Every overlap agrees on seed, endpoint, outcome, observation count, and raw trajectory
+hash. All previous audit hashes were checked before combining the records.
+
+Recovery covers altruistic 5,000-step indices 17–48 and raw 50,000-step indices 0–8.
+The second runtime worker covers Bentham 5,000-step indices 26–29 and egoistic
+50,000-step indices 0–6. Early extinction is retained as a completed trajectory.
+These remain partial archive groups, with no full-paper or Table 6 verdict.
