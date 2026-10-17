@@ -90,7 +90,10 @@ Its Figure 5a screenshot does not match the sequential replay; unspecified scree
 A dedicated eight-core node has the 45-condition timing command registered, with a twelve-hour limit; no fresh performance result is claimed.
 The properties study completed all three 100-run historical ensembles across 19,634,480 agent records, with unresolved targets and six undefined trading statistics.
 Its observer matches 199,604 original agent records and 21,702 trades; spatial diagnosis preserves our corrected grid assumption and source indexing/observation issues.
-Nine full paired trajectories isolate indexing and observation changes; corrected 100-seed ensembles and additional appendix observers are running. None adds completed-study credit.
+Nine full paired trajectories isolate indexing and observation changes. Corrected wealth now has 100 audited runs.
+Terracing and disease-clearance each have 100 audited original runs and 100 corrected runs. Disease clearance matches the before-100 claim in all runs, without extinction.
+The remaining property-study outcomes are unfinished; these claim-level results add no completed-study credit.
+Carrella’s regression-forest estimator has three audited folds; its neural-network estimator has two. Aggregate Table 8 scores remain pending.
 
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.
