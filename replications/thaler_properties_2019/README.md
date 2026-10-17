@@ -908,3 +908,15 @@ These prefixes provide no confidence intervals or complete-cohort conclusion.
 Neither global predicate establishes that opposite cultures dominate separate hills.
 That spatial claim requires positions and local cultural composition; a global 50/50
 split alone is insufficient. Native runs continue toward the frozen 100-seed cohorts.
+
+## Native CPU parity gate for unfinished cohorts
+
+[The bounded cross-host check](results/native-culture-parity-launch-2026-10-17)
+packages both existing observer executables, their complete pinned source trees, and
+expected hashes for the retained culture seed's five exports. Each variant runs
+2,700 steps with a 900-second limit. Source and executable hashes are checked first.
+
+This checks whether native x86 execution can replace local emulation for unfinished
+seeds. Both controls must reproduce every retained export byte-for-byte before
+production continuation. These repeated controls add no independent samples. The
+two-core allocation is queued; no parity or speed result is claimed yet.
