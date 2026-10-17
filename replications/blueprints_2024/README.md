@@ -368,3 +368,32 @@ None of these 400 outcomes equals 250.
 Together with the raw 5,000-step group, current audited runtime coverage is 500 unique inputs and 317,949 observations.
 These are the deposited 100-seed groups. The mismatch with the paper’s claimed 500-seed Table 6 schedule remains unresolved.
 The other 5,000-step groups and raw 50,000-step group continue; no whole-paper completion is assigned.
+
+## Complete supplementary controls
+
+[Six original-input controls](results/supplement-controls-2026-10-17/verification.json) now complete all 5,000 steps, with 30,006 observations independently audited.
+The [protocol](SUPPLEMENT_PROTOCOL.md) fixes the smallest original seed, 158402133555746433, and preserves every scientific configuration field.
+Only the logfile changes; native singular-to-plural decision-model normalization is retained.
+
+| Experiment | Original setting | Final population |
+| --- | --- | ---: |
+| Selfishness | 0.0 | 1,219 |
+| Selfishness | 0.5 | 478 |
+| Selfishness | 1.0 | 759 |
+| Heterogeneous | 1 utilitarian entry / 100 | 1,128 |
+| Heterogeneous | 50 utilitarian entries / 100 | 1,376 |
+| Heterogeneous | 99 utilitarian entries / 100 | 1,249 |
+
+`run_supplement.py ENGINE AUTHOR_ARCHIVE selfishness|heterogeneous ENTRY NEW_OUTPUT` executes one unchanged original input against the pinned paper release.
+`audit_supplement.py AUTHOR_ARCHIVE RUN NEW_OUTPUT` independently checks archive/source/configuration hashes, every timestamp, seed, population, finite metric and terminal result.
+The [lossless native artifact](results/supplement-controls-2026-10-17/native.tar.gz) contains all six trajectories, configurations, manifests, receipts and logs.
+Its [export receipt](results/supplement-controls-2026-10-17/export.json) records the verified SHA-256 and 2,682,746-byte size.
+
+[Endpoint parity](results/supplement-controls-2026-10-17/homogeneous-parity.json) matches all 5,001 trajectory records byte-for-byte against the earlier homogeneous runs.
+Selfishness 0.0, 0.5 and 1.0 match altruistic, utilitarian and egoistic configurations respectively at this seed, including the local/cloud runtime difference.
+Native dispatch assigns these effective factors; the utilitarian default negative factor becomes 0.5.
+These three matches do not add independent homogeneous seeds or establish parity for unexecuted seeds.
+
+The deposited selfishness and heterogeneous sweeps still contain 50,500 and 49,500 required inputs.
+These six controls establish execution and measurement fidelity; they do not estimate either sweep's population curve or complete the paper.
+Measured control runtimes range from 302 to 1,848 seconds on shared CPU capacity, so expansion requires explicit scheduling and duplicate exclusion.
