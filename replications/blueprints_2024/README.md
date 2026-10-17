@@ -2,10 +2,10 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
-Latest audited checkpoint: **590 / 2,000 homogeneous configurations**, covering 1,134,134 observations.
-Original-seed prefixes are raw 345, altruistic 113, egoistic 102, and utilitarian 30.
-[Checkpoint evidence](results/source-checkpoint-2026-10-17) adds 61 completed runs; two agreeing pilot duplicates remain excluded.
-The four active batches pass source, configuration, seed, trajectory-hash, and terminal-state checks.
+Latest audited checkpoint: **922 / 2,000 homogeneous configurations**, covering 1,717,086 observations.
+The raw ensemble is complete at 500 inputs; original-seed prefixes are altruistic 213, egoistic 159, and utilitarian 50.
+[Checkpoint evidence](results/homogeneous-checkpoint-2026-10-17) adds 332 completed runs; two agreeing pilot duplicates remain excluded.
+All retained intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. Three batches remain active.
 Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
 
 [Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)
@@ -465,3 +465,12 @@ The earlier 86 records match exactly, including trajectory hashes and manifests;
 The 19 additional inputs contribute 22,359 observations, bringing audited runtime coverage to 611/1,200 inputs and 562,940 observations.
 Both groups remain incomplete, and the native worker continues. The complete 56,929,748-byte archive is retained off-node at the documented path and SHA-256.
 No elapsed-time comparison or completed-paper claim follows from this prefix.
+
+## Complete raw homogeneous ensemble
+
+[The complete raw comparison](results/homogeneous-checkpoint-2026-10-17/raw-table3-comparison.json) covers all 500 original seeds and 819,456 observations.
+The final resumed interval exited successfully; earlier intervals and the losslessly recovered disk-interrupted seed complete the original schedule without substitution.
+Released plotting semantics reproduce Table 3’s numerical counts exactly: 348 extinct, 5 surviving below 250, and 147 at or above 250.
+One run ends at exactly 250. Applying the paper’s prose categories instead gives 348 extinct, 6 worse-or-equal, and 146 strictly better.
+The boundary trajectory and its hash are retained; this reporting mismatch is not silently corrected.
+The three other homogeneous ensembles, temporal comparisons and broader experiments remain incomplete. This result does not complete the paper.
