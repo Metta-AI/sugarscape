@@ -228,3 +228,33 @@ python replications/thaler_2019/audit_state.py \
 
 The committed directory also contains all raw CSVs, allowing the audit to run directly
 against `replications/thaler_2019/results/state-comparison-2026-10-17`.
+
+## Fresh timing ensemble queued
+
+The [frozen protocol](timing/protocol.json) specifies all 45 Table 6 and Table 8
+conditions. It preserves the original Criterion defaults, GHC 8.4.3, and timing
+revision `f5851488bf2369e2bbdc3f2499ed69c142de9fec`.
+Conditions run serially on a dedicated provider node with eight reserved physical cores.
+This differs from the paper's four-core/eight-thread laptop; absolute seconds are
+hardware-dependent, and any resulting comparison must identify that difference.
+
+Each condition permits at most three attempts, retaining every report and selecting
+the first with regression R-squared at least 0.99. Raw iteration counts must match
+the author's four measurements: 1, 2, 3, and 4. A failed check stops the run;
+unaccepted conditions remain unresolved. Completed conditions receive sealed checkpoints.
+The measurement budget is ten hours, with a twelve-hour outer command limit.
+
+The command is registered on the queued node as of October 17, 2026; no fresh timing
+result is claimed. The driver has passed syntax and lint checks, but its full ensemble
+has not run yet. The four original native executables passed the execution proof above.
+With the retained Stack configuration installed and eight reserved cores available:
+
+```bash
+python replications/thaler_2019/timing/run_timing.py \
+  /path/to/timing-revision-checkout /path/to/new-timing-output
+```
+
+The driver requires the provider's `GMN_CPU_LIMIT` and `GMN_MEMORY_LIMIT_BYTES` resource
+metadata. It records topology, affinity, source hashes, executable hashes, commands,
+raw reports, fit decisions, and missing conditions. Table 9, retry instrumentation,
+and concurrent population dynamics remain separate outstanding targets.
