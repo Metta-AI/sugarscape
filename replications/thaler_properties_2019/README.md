@@ -66,3 +66,21 @@ stack test SugarScape:sugarscape-test --test-arguments="--quickcheck-replay=2026
 The original suites are executed unchanged. No new unit or integration tests are
 introduced. Native logs and results will be added after execution and audit;
 there is currently no completed-study credit.
+
+## Frozen quantitative ensembles
+
+The [ensemble protocol](ensemble-protocol.json) fixes 100 distinct seeds before any
+native ensemble output. The original CLI will export complete trajectories with
+unchanged model code, retaining raw files, compressed copies, logs, and checksums.
+
+| Scenario | Runs | Horizon | Measurement |
+| --- | ---: | ---: | --- |
+| Animation II-2 | 100 | 400 | Population mean over times 101–400; report both 204 and 210 targets |
+| Animation II-3 | 100 | 200 | Final sugar-wealth Gini, skewness, and excess kurtosis |
+| Figure IV-3 | 100 | 1,000 | Standard deviation of final-time observed trading prices |
+
+Confidence intervals and source-defined checks will be reported separately.
+Non-rejection is not proof of equality. Undefined statistics remain explicit;
+no missing or failed runs will be silently dropped. These 300 runs address three
+quantitative targets; the remaining case-study and appendix requirements remain.
+The protocol is frozen, but these ensembles have not started.
