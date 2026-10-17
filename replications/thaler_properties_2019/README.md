@@ -456,7 +456,8 @@ The existing `trade_off` experiment supplies the NetLogo-like comparison without
 duplicate runs. Resolved scenarios confirm that only vision and the two metabolism
 ranges differ, apart from labels. Both use the same 100-seed list and 1,000-step
 horizon. Initial agents need not match because these configuration ranges differ.
-The remaining 99 book-parameter seeds run under a one-CPU, 2 GiB, three-hour limit.
+The remaining 99 book-parameter seeds subsequently completed under a one-CPU,
+2 GiB, three-hour limit; the full comparison appears below.
 
 The appendix's approximate values of 105, below 90, and 97 remain descriptive
 references. Full ensemble results must report trajectories and uncertainty without
@@ -492,7 +493,8 @@ workers continue; records outside these matched seeds are explicitly unaudited.
 Without `--allow-prefix`, all 100 seeds must be available for each selected scenario.
 A completed trade-off cohort can be audited while its separate trade-on cohort still
 runs. The actual incomplete data is rejected before output creation in full mode.
-The 100-pair success path remains unexercised. Prefix mode emits no comparisons.
+The 100-pair spice success path is now verified by the full audit below. Prefix mode
+emits no comparisons.
 Full comparisons report population at 100, 500, and 1,000, the mean over 801–1,000,
 and same-seed book-minus-control changes, with 95% intervals across 100 runs.
 First crossings below 90 and never-crossed cases remain explicit per seed.
