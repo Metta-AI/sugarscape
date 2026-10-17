@@ -1,6 +1,31 @@
 # Multi-Level Mesa (Pike, 2019)
 
-Status: incomplete study. Phases I and II have complete audited grids and analysis. The 1,200-run movement grid is audited and compared below; common-resource experiments and source-fidelity questions remain outstanding.
+Status: **incomplete study**. All declared native experiment grids and the controlled timing ensemble have completed their audits. Numerical validity, historical source fidelity, and several published interpretations remain unresolved.
+
+## Current claim coverage
+
+Later complete analyses supersede the launch and prefix records retained below.
+
+| Paper target | Current evidence | Unresolved requirement |
+| --- | --- | --- |
+| Phase I survival and prices | [300 runs](results/phase1-analysis-2026-10-17/analysis.json); native notebook histograms independently reconstructed | Historical survivor means differ; original seeds and equivalence margin unavailable |
+| Phase II trade thresholds | [600 runs](results/phase2-analysis-2026-10-17/analysis.json), thresholds 1/5/10 | Similar means and intervals spanning zero do not prove the reported equivalence |
+| Movement policies | [1,200 runs](results/phase3-analysis-2026-10-17/movement/analysis.json), including separately labeled selector corrections | Released selector disagrees with the stated rule; corrections do not establish historical behavior |
+| Price-direction claims | [2,100-run analysis](results/convergence-2026-10-17/analysis.json) supports finite-horizon directions | Retrospective windows do not establish asymptotic convergence or recover the plotted historical trajectories |
+| Common-resource thresholds | [400 conditions](results/common-threshold-complete-2026-10-17/comparison.json), all seeds at thresholds 5/10 | Every condition contains nonfinite holdings; the approximately 400-higher central-peak claim lacks a precise comparison target |
+| Runtime comparisons | [900 controlled runs](results/timing-complete-2026-10-17), native and full-step timers | Native timing excludes network reassessment; common-resource timings accompany invalid economic trajectories |
+
+Historical source identification remains shared across these targets. The released
+shared-resource code double-counts stale contributions in a passive, byte-identical
+trace. Separately labeled conservation and lifecycle corrections change model rules;
+they cannot be substituted for a faithful historical replay. The completed grids
+therefore do not establish either a positive or validated negative whole-paper result.
+
+Direct inspection of Figure 3-9 (PDF page 26) shows only the threshold-ten comparison.
+It supplies no threshold-five histogram from which to recover the prose's central-peak
+increase. The largest bin in our histograms is not substituted for that unspecified
+central peak. This is a target-definition limitation, not an omitted ensemble.
+
 
 The [paper](https://arxiv.org/abs/1904.08315) links the author's [Sugarscape](https://github.com/tpike3/SugarScape) and [Multi-Level Mesa](https://github.com/tpike3/multilevel_mesa) implementations.
 We select their last pre-publication revisions, respectively `585e53398f4f58e89ec184c83bb20819f0e4c96a` and `99d2091721076df9fff32e8b49a0e33e98c34a6f`.
@@ -33,7 +58,7 @@ Common-resource cached means are one-level 94.35 and multi-level 92.83, matching
 The notebooks multiply SciPy's already two-sided `ttest_ind` p-values by two, including a reported value above one.
 Report the original analysis and correctly computed p-values separately; nonsignificance alone does not establish equivalence.
 
-Remaining work covers the entire paper's Sugarscape experiments:
+The full study scope covers the paper's Sugarscape experiments:
 
 - Phase I: three approaches, 100 runs of 1,000 steps each; price convergence, dispersion, trade volume and survivor distributions.
 - Phase II: explicit/network groups at thresholds of one, five and ten trades, with 100 runs per configuration.
@@ -819,7 +844,7 @@ The 132,326,408-byte native batch archive remains external, with its location an
 The export watcher completed the raw audit and archive before failing at checksum calculation under system Python3.10.
 The receipt was recovered using pinned Python3.11.14; no simulation or raw audit was restarted.
 Run `reconcile_common_ten.py NATIVE_BATCH BATCH_AUDIT SEED_ZERO_EVIDENCE NEW_OUTPUT` to regenerate the reconciliation.
-Threshold-five experiments and controlled timing remain pending; this full grid does not complete the paper.
+The threshold-five and controlled timing analyses are now complete and linked above; numerical and source-fidelity questions still prevent whole-paper completion.
 
 ## Completed controlled timing ensemble
 
