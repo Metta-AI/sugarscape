@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-runtime-001/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/run_common_resources.py",
+    "/Users/relh/Code/workspace/sugarscape-pike-reference",
+    "/Users/relh/Code/workspace/sugarscape-pike-library-reference",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-common-native-001"
+  ],
+  "timeout_seconds": 21600,
+  "source": "COMMON_RESOURCE_PROTOCOL.md",
+  "existing_seed_zero": [
+    "pike-common-one-pilot-001",
+    "pike-common-multi-fixed-observed-001"
+  ]
+}

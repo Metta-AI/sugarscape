@@ -424,3 +424,15 @@ autor cp relh-sugarscape-sizing-20261016-v1:/root/sugarscape/pike-checkpoint-002
 Verify its SHA-256 against `raw-archive.json` before extraction. `commands.json` records the complete raw-audit commands, including the immutable original execution paths required for relocated evidence. The retained `audit.py` captures extraction, reconciliation, and coverage checks. These commands refer to this workspace’s preserved local predecessor segments; the portable segment reconciler accepts their relocated paths explicitly.
 
 Both grids remain incomplete. Aggregate Phase II/III paper comparisons, unstarted common-resource ensembles, and historical source alignment remain outstanding. This checkpoint contributes zero completed papers.
+
+## Native common-resource ensemble launched
+
+[The declared common-resource protocol](COMMON_RESOURCE_PROTOCOL.md) covers the full threshold-10 comparison: 100 seeds each for one-level and multi-level groups, 200 initial agents, and 1,000 steps. `run_common_resources.py ENGINE LIBRARY NEW_OUTPUT` now executes the remaining seeds 1–99 in one sequential worker. It freezes source/protocol, retains complete raw outputs and hashes, stops below 8 GiB free space, and runs under a six-hour outer cap. No corrective resource or lifecycle code is loaded.
+
+The existing one-level seed-zero pilot lacked a recorded PYTHONHASHSEED. A separately bounded verification replay records zero and matches its health, price, initialization, and population files byte-for-byte. The fixed-observed multi-level seed-zero pilot already records zero. Preserve both original pilots; reconcile the verification replay and multi-level pilot exactly once with the 198 new conditions. The protocol addendum retains this provenance correction without rewriting the running batch’s frozen files.
+
+[The first two new conditions](results/common-resource-launch-2026-10-17/audit.json) pass structural source/file checks, reconcile all individual identities, and reconstruct all 2,000 price-step measurements from 195,894 health records. **Both fail numerical validity.** One-level seed 1 has 74,872 nonfinite health records, first at step 92; multi-level seed 1 has 76,486, first at step 86. They end with 95 and 96 individual survivors, respectively. These counts are not accepted as economically valid paper agreement.
+
+`audit_common_resources.py RUN prefix|complete NEW_OUTPUT` retains nonfinite holdings and explicitly counts failed conditions. It does not cap resources or convert successful process exits into scientific validation. Complete mode requires all 198 new conditions; it still does not substitute for the two seed-zero audits or the remaining lower-threshold comparisons. Raw first-condition outputs, frozen protocol, source, launch receipts, audit, and seed-zero parity evidence are included.
+
+Full-grid survivor/price comparisons, lower-threshold resource experiments, source fidelity, and the existing movement grids remain outstanding. No new paper completion is assigned.
