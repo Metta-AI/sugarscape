@@ -1,6 +1,6 @@
 # Multi-Level Mesa (Pike, 2019)
 
-Status: incomplete study. Native pilots and observer validation do not constitute paper replication.
+Status: incomplete study. Phase I now has 300/300 conditions independently audited. Aggregate paper comparisons and later phases remain outstanding.
 
 The [paper](https://arxiv.org/abs/1904.08315) links the author's [Sugarscape](https://github.com/tpike3/SugarScape) and [Multi-Level Mesa](https://github.com/tpike3/multilevel_mesa) implementations.
 We select their last pre-publication revisions, respectively `585e53398f4f58e89ec184c83bb20819f0e4c96a` and `99d2091721076df9fff32e8b49a0e33e98c34a6f`.
@@ -368,3 +368,14 @@ The reconciliation validates 22,726,460 health records and 445,000 price-step re
 The three cloud portability duplicates are excluded. Each phase report explicitly lists the still-missing ordinals.
 The native checkpoint archive, export script, analysis commands, and phase reports are retained for review.
 All three grids remain incomplete; this checkpoint makes no aggregate paper claim and includes the earlier local coverage rather than adding it twice.
+
+## Complete Phase I raw-output audit
+
+[The complete-grid audit](results/phase1-complete-2026-10-17/validation.json) validates all 300 original scheduled conditions.
+It reconstructs 15,972,929 health records and 300,000 price-step measurements across four disjoint segments.
+All frozen manifests agree, and no ordinal is missing or duplicated.
+The `--require-complete` success path now passes against the full real ensemble, superseding its earlier untested status.
+The final archive contains only the 59 new cloud conditions at ordinals `[241,300)`; earlier cloud evidence supplies `[195,241)`.
+Historical local evidence supplies `[0,194)` and `[194,195)`. The analysis archive retains all four fresh raw-output audits and measurements.
+These records include undefined price dispersion without replacing it with zero.
+Full phase-one aggregate comparisons remain to be computed; this does not complete the paper or the other phase grids.
