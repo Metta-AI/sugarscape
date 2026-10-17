@@ -107,9 +107,30 @@ The launch records all 522 tracked source-file hashes, toolchain/GPU details, bu
 logs, binary hash, and raw CSV/log outputs. Source modifications cause failure.
 A bounded collector exports terminal evidence to task-owned storage, capped at
 100 MiB; exported data still require download and independent hash verification.
-No successful build, native output, or performance result is yet claimed.
+The initial launch claimed no build or native result. The first successful native
+population comparison is documented below; no performance verdict is assigned.
 
 The remote source manifest now matches an independently reconstructed local
 manifest byte-for-byte by SHA-256, covering all 522 tracked files. A failed file
 export and a truncated read response remain recorded; neither triggered a model
 restart. The complete manifest and verification receipt are retained with the launch.
+
+## First native population comparison
+
+The pinned benchmark built and executed on the H100. An immutable snapshot covers
+seven complete scaling conditions: seed zero, widths 256–1792, and all 100 steps
+per condition. [All 700 native population observations](results/population-prefix-2026-10-17/population-local-audit.json)
+match the published V100 archive exactly. Timings are excluded from this comparison.
+
+The 49,143-byte snapshot archive was downloaded and SHA-256 verified. A separate
+local auditor checks the complete reference grid, exact prefix keys, population
+bounds, both input hashes, and every population difference. Its report matches
+the native comparison. Raw native/reference CSVs and the command receipt are retained.
+
+```sh
+python replications/richmond_2023/compare_population.py EXTRACTED_SNAPSHOT NEW_AUDIT.json
+```
+
+This establishes population replay for seven of 48 scaling conditions only.
+It does not validate individual state, the other conditions, resolution statistics,
+visualisation, scaling claims, or the whole paper. The bounded native run continues.
