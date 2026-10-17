@@ -229,7 +229,7 @@ python replications/thaler_2019/audit_state.py \
 The committed directory also contains all raw CSVs, allowing the audit to run directly
 against `replications/thaler_2019/results/state-comparison-2026-10-17`.
 
-## Fresh timing ensemble queued
+## Fresh timing ensemble
 
 The [frozen protocol](timing/protocol.json) specifies all 45 Table 6 and Table 8
 conditions. It preserves the original Criterion defaults, GHC 8.4.3, and timing
@@ -244,9 +244,9 @@ the author's four measurements: 1, 2, 3, and 4. A failed check stops the run;
 unaccepted conditions remain unresolved. Completed conditions receive sealed checkpoints.
 The measurement budget is ten hours, with a twelve-hour outer command limit.
 
-The command is registered on the queued node as of October 17, 2026; no fresh timing
-result is claimed. The driver has passed syntax and lint checks, but its full ensemble
-has not run yet. The four original native executables passed the execution proof above.
+The initial command failed during setup; the replacement is building as of October 17,
+2026, 21:00 UTC. No fresh timing result is claimed. The driver has passed syntax and
+lint checks, but its full ensemble has not run yet. The four original native executables passed the execution proof above.
 With the retained Stack configuration installed and eight reserved cores available:
 
 ```bash
@@ -304,3 +304,23 @@ the uninstrumented performance experiment.
 ```sh
 python replications/thaler_2019/audit_retries.py EXTRACTED_ARCHIVE EXTRACTED_ARCHIVE/baseline NEW_AUDIT.json
 ```
+
+## Source-download failure recovered
+
+[The recovered command log](timing/source-recovery-2026-10-17/failed-command-log-002.txt)
+shows that command `cmd-gjm6m` exited 128 while cloning the author repository:
+GitHub hostname resolution failed. No build or simulation had started.
+The original output directory and failure log remain retained.
+
+The replacement uses a local `git archive` of the same timing revision. Its SHA-256
+is checked on the node before extraction; an independent local audit verifies all
+61 declared model/build file hashes inside the archive. No model or timing protocol
+changed. The retained bootstrap uses a fresh output directory and preserves terminal
+logs and evidence on success or failure. Compiler and package provisioning still
+require network access.
+
+Command `cmd-if8u9` has a 43,200-second outer limit and the original ten-hour
+measurement budget. At the observed $0.0096/minute rate, the outer limit costs at
+most $6.912, excluding final idle time. A collector exports its sealed terminal
+archive to task-owned storage with a 256 MiB transfer cap. Export completion will
+require separate download and hash verification before analysis.
