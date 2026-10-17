@@ -1116,3 +1116,22 @@ python replications/thaler_properties_2019/audit_culture_regions.py \
   replications/thaler_properties_2019/results/culture-ensembles-2026-10-17/original-protocol.json \
   /path/to/new-spatial-audit.json
 ```
+
+## Original model-suite native retry
+
+[The bounded native retry](results/model-suite-native-launch-2026-10-17) runs the
+unchanged GHC 8.4.4 model-test binary with replay seed 20261017. Its SHA-256 is
+`60860b2871ea9881bc30037ed8c873ddcb4c2cbdfa6c88fca0b452f9e9f431b4`.
+Preflight verifies all 60 source files and lists exactly `Inheritance Gini` and
+`Wealth Distribution`. The six disabled properties remain disabled.
+
+The original local attempt is confirmed exited with code 124. The new native run
+keeps the default QuickCheck case count and ten simulations per inheritance case,
+with a 129,600-second limit. No predicate, seed, or simulation count is reduced.
+The binary uses the existing two-CPU node alongside the single-core inheritance
+continuation; its shared node memory limit is 8 GiB. The node's observed rate implies
+at most $5.184 over 36 hours, excluding its final idle window.
+
+The process is running and has not reported a completed assertion. A bounded
+collector exports its terminal log, original binary, manifest, and exit receipt to
+task-owned storage. This launch resolves no property or whole-paper verdict yet.
