@@ -1,0 +1,44 @@
+Validated 29/1200 runs, 1269880 health records and 29000 price-step records
+Validated 1/1200 runs, 39570 health records and 1000 price-step records
+Validated 150/1200 runs, 6448408 health records and 150000 price-step records
+Validated 84/1200 runs, 3747408 health records and 84000 price-step records
+Validated 136/1200 runs, 6287884 health records and 136000 price-step records
+Validated 98/1200 runs, 4320921 health records and 98000 price-step records
+Validated 139/1200 runs, 6354234 health records and 139000 price-step records
+Validated 95/1200 runs, 4451480 health records and 95000 price-step records
+Validated 136/1200 runs, 6299882 health records and 136000 price-step records
+Validated 98/1200 runs, 4325588 health records and 98000 price-step records
+Validated 146/1200 runs, 6461353 health records and 146000 price-step records
+Validated 88/1200 runs, 3954823 health records and 88000 price-step records
+Reconciled 1200/1200 disjoint conditions in phase 3
+{"validated_runs": 1200, "complete_grid": true, "health_records": 53961431, "price_step_records": 1200000}
+{"conditions": 18, "runs": 1800, "metrics": 12, "contrasts_per_metric": 36}
+{'timestep_records': 1800000, 'run_measurements': 21600, 'undefined_measurements': 86, 'maximum_absolute_difference': 0.0, 'scope': 'All 19800 price/count measurements independently reconstructed from audited timestep CSVs;1800 survivor measurements checked against raw-audit summaries. Statistical intervals verified separately in R. Does not establish historical source fidelity.'}
+$checked_intervals
+[1] 648
+
+$undefined_intervals
+[1] 0
+
+$scalar_comparisons
+[1] 1944
+
+$maximum_absolute_difference
+[1] 3.638345e-09
+
+$scope
+[1] "Independent R statistics over all exported complete-grid run measurements; source fidelity is not established."
+
+{"runs": 1800, "observations": 1800000}
+$intervals
+[1] 60
+
+$scalar_comparisons
+[1] 180
+
+$maximum_absolute_difference
+[1] 6.118839e-11
+
+$scope
+[1] "Independent R statistics for all complete-grid ungrouped-agent estimates and movement contrasts; reporter reconstruction validated separately."
+

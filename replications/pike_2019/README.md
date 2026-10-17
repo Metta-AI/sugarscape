@@ -1,6 +1,6 @@
 # Multi-Level Mesa (Pike, 2019)
 
-Status: incomplete study. Phase I has 300/300 audited conditions and aggregate comparisons; later phases and source-fidelity questions remain outstanding.
+Status: incomplete study. Phases I and II have complete audited grids and analysis. The 1,200-run movement grid is audited and compared below; common-resource experiments and source-fidelity questions remain outstanding.
 
 The [paper](https://arxiv.org/abs/1904.08315) links the author's [Sugarscape](https://github.com/tpike3/SugarScape) and [Multi-Level Mesa](https://github.com/tpike3/multilevel_mesa) implementations.
 We select their last pre-publication revisions, respectively `585e53398f4f58e89ec184c83bb20819f0e4c96a` and `99d2091721076df9fff32e8b49a0e33e98c34a6f`.
@@ -596,3 +596,57 @@ Final ungrouped counts are 28/24 without movement and 0/0 with movement.
 These single-seed controls validate measurement, not the paper's ensemble claim.
 The archived controls include native composition and all raw outputs; every archive member was read back and verified.
 Full-ensemble analysis must additionally check no nested groups and retain each declared seed.
+
+
+## Complete movement grid and paired comparisons
+
+[Full reconciliation](results/phase3-complete-2026-10-17/reconciliation.json)
+covers all 1,200 declared movement conditions exactly once.
+Twelve disjoint raw segments pass fresh source, configuration, seed, identity, finite-health and price audits.
+The audit checks 53,961,431 health records and reconstructs 1,200,000 price-step measurements.
+The final 463-condition native archive has SHA256 `8308b3e124391875520a3b1150ebaf3574dc57fbb427a526483931ee87206766` and 224,783,896 bytes.
+It remains in external evidence alongside the earlier 737 conditions; this PR includes the reconciled audits and measurements.
+The 27,006,984-byte audit archive was read back member-by-member against its inputs.
+An initial download hit the provider’s hourly quota; the retained failure was followed by a successful transfer of the same archive.
+
+[The complete analysis](results/phase3-analysis-2026-10-17/movement/analysis.json)
+compares the movement grid with all 600 audited no-policy Phase II runs.
+Each row below has 100 original declared seeds per configuration.
+
+| Approach | Threshold | No policy: mean survivors | Released selector | Corrected selector |
+|---|---:|---:|---:|---:|
+| Explicit | 1 | 48.21 | 34.64 | 35.50 |
+| Explicit | 5 | 48.09 | 36.87 | 37.11 |
+| Explicit | 10 | 48.33 | 35.78 | 35.43 |
+| Network | 1 | 48.23 | 35.82 | 36.58 |
+| Network | 5 | 48.31 | 36.44 | 37.51 |
+| Network | 10 | 48.28 | 36.42 | 35.99 |
+
+Released-policy paired mean differences range from −13.57 to −11.22 survivors.
+All six pointwise 95% intervals lie below zero, as do the six corrected-selector comparisons against no policy.
+This supports the reported direction of the survival effect under the declared source and seed protocol.
+Corrected-selector results remain sensitivity experiments; they are not relabeled as historical reproduction.
+
+![Survival under movement policies and no policy](results/phase3-analysis-2026-10-17/movement/plots/survivors.png)
+
+[Ungrouped-agent reconstruction](results/phase3-analysis-2026-10-17/groups/analysis.json)
+checks all 1,800,000 observations for the nonnested-group condition and valid reconstructed counts.
+At threshold ten, mean ungrouped counts change from 28.02 to 0.35 (explicit) and 28.29 to 0.93 (network) under released policies.
+At threshold five, they change from 10.03 to 0.04 and 11.25 to 0.04.
+The explicit threshold-one baseline already averages 0.01 ungrouped agents; its released-policy difference interval includes zero.
+
+[Independent measurement reconstruction](results/phase3-analysis-2026-10-17/independent-audits/measurements-audit.json)
+checks all 21,600 exported run measurements, including every price/count window, with zero difference.
+[Independent R statistics](results/phase3-analysis-2026-10-17/independent-audits/statistics-audit.json)
+verify 648 intervals and 1,944 scalar values, with maximum difference 3.64e-9.
+A separate R audit verifies all 60 group-count intervals within 6.12e-11.
+
+All intervals are pointwise, not simultaneous across the 36 contrasts per metric.
+Price and dispersion means retain undefined steps; their paired comparisons use jointly defined seed pairs.
+No timestep is treated as an independent simulation replicate.
+Historical figure/histogram alignment, convergence interpretation, common-resource results and controlled runtime comparisons remain outstanding.
+These completed analyses do not complete the whole paper.
+
+Reproduce with `analyze_phase3.py PHASE3_RECONCILIATION PHASE2_RECONCILIATION NEW_OUTPUT`.
+`analyze_group_counts.py PHASE3_RECONCILIATION PHASE2_RECONCILIATION COMPOSITION_CONTROLS NEW_OUTPUT` adds ungrouped-agent comparisons.
+`plot_phase3.py ANALYSIS NEW_OUTPUT` exports the survival figure as PNG and PDF.
