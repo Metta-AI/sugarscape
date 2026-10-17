@@ -745,7 +745,7 @@ replication verdicts; completing the estimator runs does not complete the paper.
 1,250-input GAM workflow with the notebook's `readr::read_csv` parser. Only the two
 input reads differ from the original isolated-seed runner. All five folds, five targets,
 interval draws, seed zero, observations, and fitting options remain unchanged.
-Execution is bounded to 1,800 seconds. Its results remain pending.
+Execution was bounded to 1,800 seconds and completed in 1,624.35 seconds. Full results follow below.
 
 The pre-fit audit verifies identical random states: all 626 integers agree. Parsing
 changes 2,620 of the 188,750 data cells by at most 1.3878e-17. The control uses the
@@ -767,10 +767,35 @@ to −8,152.7227; its true value is 92. Thus the notebook parser does not resolv
 this outlier. Small input differences can materially affect this fitted GAM.
 
 The pre-fit random states and relevant package versions match, as recorded in the
-launch evidence. Maximum input change remains 1.3878e-17. Three folds remain;
-these checkpoint results do not supply an aggregate Table 8 comparison or negative
+launch evidence. Maximum input change remains 1.3878e-17. At this checkpoint, three folds remained;
+these checkpoint results alone do not supply an aggregate Table 8 comparison or negative
 replication verdict. No observation or difficult fold is excluded.
 
 To verify the retained checkpoints, pass the pinned source directory, this result
 directory, the original `gam-1250-2026-10-15` directory, and a new JSON path to
 `audit_parser_prefix.R`. Readback from the published copies reproduces the audit exactly.
+
+## Complete GAM parser control
+
+[All five folds](results/gam-parser-control-complete-2026-10-17/parser-comparison.json)
+pass the independent saved-output audit: 6,250 predictions and 943,750 input cells.
+The audit reconstructs train/test membership and recomputes errors, baseline errors,
+interval coverage, interval widths, and aggregate scores. Relevant package versions match.
+
+| Parameter | Primary score | Notebook-parser control |
+| --- | ---: | ---: |
+| Initial population | 0.499665 | 0.534255 |
+| Mutation probability | 0.436194 | 0.234060 |
+| Maximum sugar endowment | 0.347444 | 0.337638 |
+| Maximum spice endowment | 0.164329 | 0.340425 |
+| Reproduction wealth | -3.002351 | -3.678426 |
+
+The maximum input change is 1.3878e-17; the maximum prediction change is 1,206.9118.
+Parsing affects the fit materially but does not resolve the reproduction-wealth outlier.
+This controlled sensitivity does not recover the authors' historical environment or
+preceding notebook random stream. Primary Table 8 results and completion status remain unchanged.
+
+The result directory retains all five fold checkpoints, complete predictions, runtime
+metadata, source pins, terminal receipt, auditor, and SHA-256 inventory. Running its
+`audit_parser_inputs.R` with the pinned source directory, result directory, primary
+`gam-1250-2026-10-15` directory, and a new JSON path reproduces the comparison exactly.
