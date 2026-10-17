@@ -316,3 +316,12 @@ Outcomes are 71 extinctions, one surviving population below 250, and 28 above 25
 The new native archive retains all 99 batch conditions, while the earlier pilot remains in its original evidence location.
 This brings audited runtime-archive coverage to 200 of 1,200 inputs across two complete groups.
 The deposited 100-seed schedule differs from the claimed 500-seed paper schedule, so no Table 6 replication verdict follows from these counts.
+
+## Complete archived egoistic 500-step group
+
+[The full-group native audit](results/runtime-egoistic500-complete-2026-10-17/audit.json) validates all 100 original egoistic inputs and 26,129 observations after the producer exits zero.
+The generic auditor's `--require-group` success path now passes on a complete real group, superseding the earlier unexercised-success-path limitation.
+Outcomes are 69 extinctions, two surviving populations below 250, and 29 above 250; none ends at exactly 250.
+All original native files, the completion ledger and archive checksum are retained.
+Audited runtime-archive coverage is now 300 of 1,200 configurations across three complete 500-step groups.
+The Bentham group remains active. These archived 100-seed results do not establish the paper's claimed 500-seed Table 6 results.
