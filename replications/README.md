@@ -265,3 +265,9 @@ Passive instrumentation preserves all ten recorded data files byte-for-byte, and
 Changing only the single-candidate return expression changes the final population from 90 to 148.
 This is an implementation sensitivity diagnostic, not a paper replication: the archive version, default population, horizon, and parameter grid differ from the Eiben/Schut/Vink experiment.
 The paper-level conclusion remains unresolved; these runs establish a concrete defect that must be investigated before interpreting protocol comparisons.
+
+The [original bundled bytecode](source-audits/jawas-newscast-native-2026/bytecode-audit.json) independently confirms both cache-selection expressions.
+Its unique-candidate branch returns the last enumerated key, and its tie branch passes `size - 1` to `Random.nextInt`.
+The class and source bytes were verified against the original archive members; neither expression originated in our recompilation or instrumentation.
+ZIP timestamps record June 2004 for the class and March 2004 for the source.
+These unauthenticated timestamps predate the 2005 paper but do not establish the authors’ experimental revision.
