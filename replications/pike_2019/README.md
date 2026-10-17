@@ -527,3 +527,19 @@ This establishes runtime arithmetic divergence before the first reported health 
 It does not prove that geometric-mean rounding alone causes the later group-count changes.
 Common-resource continuation therefore remains separate from the local ensemble while that causal check is unresolved.
 No diagnostic replay adds seed coverage or a paper-level verdict.
+
+## Causal replay and homogeneous cloud ensemble
+
+[The bounded causal diagnostic](results/common-resource-causal-2026-10-17/audit.json) records 11,135 native geometric-mean calls across 50 local steps.
+Its observations and prices exactly match the original local run.
+The cloud replay substitutes those recorded results only after requiring identical call inputs.
+It fails at call 6,574, step 13: one input differs by one unit in the last place.
+Thus replaying local geometric-mean outputs alone does not preserve the local trajectory.
+Substituted runs are diagnostics and never count as native replication evidence.
+
+[A separate cloud ensemble](results/common-resource-causal-2026-10-17/cloud-launch.json) now runs the unchanged native 198-condition grid on one x86 Linux worker.
+It has a three-hour simulation cap and retains the frozen protocol, source, per-run hashes, and failures.
+The 60 local conditions remain a separate platform-sensitivity series; their outcomes will not be pooled into this cloud grid.
+Prior cloud seed-one controls are duplicate diagnostics, never additional grid coverage.
+The cloud seed-zero runs and lower-threshold experiments remain outstanding.
+This platform separation preserves native arithmetic instead of rounding outputs to force agreement.
