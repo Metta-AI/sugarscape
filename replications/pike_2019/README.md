@@ -436,3 +436,20 @@ The existing one-level seed-zero pilot lacked a recorded PYTHONHASHSEED. A separ
 `audit_common_resources.py RUN prefix|complete NEW_OUTPUT` retains nonfinite holdings and explicitly counts failed conditions. It does not cap resources or convert successful process exits into scientific validation. Complete mode requires all 198 new conditions; it still does not substitute for the two seed-zero audits or the remaining lower-threshold comparisons. Raw first-condition outputs, frozen protocol, source, launch receipts, audit, and seed-zero parity evidence are included.
 
 Full-grid survivor/price comparisons, lower-threshold resource experiments, source fidelity, and the existing movement grids remain outstanding. No new paper completion is assigned.
+
+## Common-resource cloud portability control
+
+The local batch stopped at its 8 GiB disk guard after 60 conditions, covering seeds 1–30 for both variants.
+Completed evidence and partial logs remain intact. No failed simulation was counted as completed.
+
+[Two cloud seed-one controls](results/common-resource-portability-2026-10-17/behavior-comparison.json) completed all 1,000 steps, using matching manifests and byte-identical initial agents.
+Only four of ten selected output files match byte-for-byte.
+The one-level model preserves every observation and finishes with 95 individuals on both machines.
+The multi-level model differs in group counts from step 47; 954 observation records differ, although both finish with 96 individuals.
+Health and price outputs already differ in their least significant digits at the first step.
+This establishes runtime-dependent trajectory differences; their numerical cause remains under investigation.
+
+The remaining 138 conditions have not been launched as a cloud continuation.
+Cloud and local results cannot be treated as interchangeable merely because their final survivor counts match.
+These duplicate seed-one controls add no grid coverage and no paper-level negative verdict.
+The complete cloud archive, original local hashes, comparison reports, and launch script are retained.
