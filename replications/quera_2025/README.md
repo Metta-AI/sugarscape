@@ -135,3 +135,15 @@ python replications/quera_2025/replay_movement.py \
 ```
 
 The original forward pilot is retained in `results/native-pilot-2026-10-17`; its earlier archive remains unchanged.
+
+## Author flow workflow executed successfully
+
+[The recovered wrapper’s unmodified test suite](results/flow-validation-2026-10-17/validation.json) exits zero after 278.1 seconds, including dependency setup.
+All 18 existing author checks pass: flow sampling/densities, Zygote derivatives, and the complete normal-data inference workflow.
+The latter executes 1,000 optimization iterations and checks posterior sample means against true mean 0.5 and scale 2.0 with tolerance 0.25.
+Both posterior checks pass; the original workflow does not export its posterior samples.
+The full raw log and terminal receipt are retained, and every recorded source/project/manifest hash remains unchanged.
+
+This establishes an executable Julia–PyTorch flow and inference path with the declared runtime versions.
+It does not validate the missing Sugarscape prior, validation selection, 5,000-epoch calibration, or historical Python dependency versions.
+The calibration fidelity gaps above remain open.
