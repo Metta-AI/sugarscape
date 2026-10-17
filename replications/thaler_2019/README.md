@@ -408,3 +408,29 @@ separate requirements. This Table 6 result does not complete the paper.
 python replications/thaler_2019/timing/audit_native.py EXTRACTED_CHECKPOINT NEW_AUDIT_DIRECTORY
 python replications/thaler_2019/timing/compare_table6.py EXTRACTED_CHECKPOINT NEW_AUDIT_DIRECTORY NEW_COMPARISON.json
 ```
+
+### Deferred multicore retry experiment
+
+[The frozen protocol](results/retry-scaling-launch-2026-10-17/protocol.json) covers
+all 16 Table 7 implementation/capability combinations plus the two reported
+2,500-agent rebirth comparisons at four capabilities. Each condition receives five
+fresh processes, each running one complete 1,000-step simulation with original seed 42.
+The paper's historical retry repetition count remains unspecified; five is our declared
+replication design, not a recovered historical setting. Thread scheduling remains nondeterministic.
+
+Command `cmd-35frc` waits for `cmd-if8u9`'s terminal receipt before building or executing.
+It uses a separate extraction of the pinned source archive and enables only the existing
+instrumentation flags, with the same verified patches as the earlier workflow check.
+Original model code, compiler 8.4.3, and runtime capabilities remain pinned.
+No retry measurements or observer timings enter the uninstrumented timing experiment.
+
+The 90-process schedule is shuffled before execution. Raw integer commits, retries,
+printed ratios, commands, exits, and hashes are retained for every completed process.
+Each process starts counters afresh. The measure is retries divided by commits;
+it is not the fraction of all attempted transactions that retry.
+The analysis must retain every declared condition and report incomplete runs separately.
+
+Execution after the bounded wait is capped at 3,300 seconds, costing at most $0.528
+at the quoted $0.0096/minute rate, excluding final idle time. A 32 MiB collector
+exports the terminal archive after execution; download and independent verification
+remain required. This launch adds no completed simulation or paper coverage yet.
