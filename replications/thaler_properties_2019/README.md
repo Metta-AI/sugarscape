@@ -474,3 +474,25 @@ Keep this code/prose distinction in combat experiments. Existing summary output
 does not record death causes or attacker/victim events, so population curves alone
 cannot prove the appendix's causal or single-invader claims. No combat verdict follows
 from source inspection.
+
+
+## Spice ensemble audit and frozen prefix
+
+`audit_spice.py` accepts the frozen spice protocol, native observer/source directory,
+a new output path, `--book` run directories, and `--control` run directories.
+It verifies source and binary pins, all raw/gzip hashes, population timelines,
+snapshot totals and wealth sums, absence of trading, and the three parameter-range
+differences. Matched seeds do not imply identical initialized agents.
+
+[The frozen prefix](results/spice-prefix-audit-2026-10-17) independently validates
+17 matched seeds and 372,808 snapshot-agent observations. Published gzip-only
+exports reproduce every result exactly. Captured ledgers remain fixed while native
+workers continue; records outside these matched seeds are explicitly unaudited.
+
+Without `--allow-prefix`, all 100 seeds must be available for each selected scenario.
+A completed trade-off cohort can be audited while its separate trade-on cohort still
+runs. The actual incomplete data is rejected before output creation in full mode.
+The 100-pair success path remains unexercised. Prefix mode emits no comparisons.
+Full comparisons report population at 100, 500, and 1,000, the mean over 801–1,000,
+and same-seed book-minus-control changes, with 95% intervals across 100 runs.
+First crossings below 90 and never-crossed cases remain explicit per seed.
