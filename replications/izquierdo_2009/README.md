@@ -4,14 +4,13 @@ Study source: [Techniques to Understand Computer Simulations: Markov Chain Analy
 specifically its [Sugarscape appendix](https://www.jasss.org/12/1/6/appendixB/EpsteinAxtell1996.html).
 The other nine model case studies are outside this Sugarscape replication.
 
-**Status: partial.** Executable return paths establish aperiodicity of one reachable communicating class.
-They do not establish global irreducibility or complete this study.
-The outstanding target is the appendix's full argument for a unique, initial-state-independent limiting distribution.
-Finite simulation agreement cannot substitute for that argument.
+**Status: structural result reproduced.** The [constructive proof](PROOF.md) establishes finiteness, irreducibility, and aperiodicity for the appendix’s formal model.
+Together these imply its unique, initial-state-independent limiting and occupation distributions.
+This conclusion concerns the full Sugarscape appendix, not the paper’s other nine models or a practical mixing-time claim.
 
 ## Model and evidence
 
-`witness.py` implements the appendix's 50×50 torus with 250 agents and separate growback, movement, and replacement phases.
+`model.py`, shared by the return and regeneration runners, implements the appendix's 50×50 torus with 250 agents and separate growback, movement, and replacement phases.
 Agents see cardinal cells, choose maximum sugar and then minimum distance, harvest, metabolize, and lose one unit of remaining life.
 Starvation or exhausted life removes an agent; replacements occur after the movement phase at age zero.
 Replacement attributes retain the published ranges: vision 1–6, metabolism 1–4, wealth 5–25, and maximum age 60–100.
@@ -19,7 +18,8 @@ The state contains landscape sugar and agent position, vision, metabolism, wealt
 
 The paths deliberately select permissible random choices with positive probability.
 They are not unbiased simulation samples and do not estimate stationary probabilities or convergence times.
-Activation permutations are recorded through the seed and probability calculation; movement ties choose an eligible minimum-index cell.
+Regeneration paths record every activation permutation, movement destination, replacement order, and newborn.
+Return paths retain their seed and full states; movement ties choose an eligible minimum-index cell.
 Every replacement is checked against the vacant cells and published attribute ranges.
 
 The paper's Figure 2 has 305 interior desert sites whose cardinal neighbors also have zero capacity.
@@ -56,15 +56,33 @@ The input is pinned by SHA-256 and available at
 [the journal's Figure 2](https://www.jasss.org/12/1/6/appendixB/EpsteinAxtell1996-2.png).
 The runner needs NumPy and Pillow; the independent verifier uses only Python's standard library.
 
-[Retained evidence](results/return-witness-2026-10-17/report.json) contains all 18 full states across the two return paths and initial reachability path.
+[Retained evidence](results/full-model-return-2026-10-17/report.json) contains all 18 full states across the two return paths and initial reachability path.
 Independent arithmetic and topology checks cover 4,500 agent observations and 45,000 cell observations.
 The checker recomputes full-state hashes and verifies every wealth, lifetime, birth count, position, and landscape value.
 A complete workflow with newborn wealth increased by one fails its return assertion and creates no completion report.
 Ruff formatting and lint checks pass.
 
-## Remaining work
+## General regeneration and proof
 
-- Establish a finite state-space bound under the exact scheduling convention.
-- Construct and independently verify regeneration paths from general states, including legal replacement choices and synchronized mortality.
-- Supply the general reachability proof; selected executable paths alone do not prove irreducibility.
-- Check the resulting limiting-distribution claim without asserting a practical mixing-time bound.
+The proof bounds every reachable agent by `wealth + 3 × remaining_life ≤ 325`, making the full state space finite.
+From any reachable state, controlled desert replacements eliminate the original population within 100 steps.
+Four further growbacks restore the landscape; permitted five- and six-step lifespans synchronize mortality in another 30 steps.
+One final replacement can create any prescribed legal initial state, completing a 135-step positive-probability path.
+The five- and six-step returns then establish aperiodicity throughout the communicating state space.
+
+```bash
+python replications/izquierdo_2009/regenerate.py /new/run/capacity.csv /new/regeneration
+python replications/izquierdo_2009/verify_regeneration.py /new/regeneration /new/regeneration-verification
+```
+
+[Regeneration evidence](results/regeneration-2026-10-17/report.json) starts from three reachable states, after zero, 37, and 100 warmup steps.
+An independent geometric replay checks 545 full states, 135,500 movement decisions, and 13,910 replacements.
+All three paths reach the same prescribed legal initial state after 135 controlled steps.
+These examples validate the implementation; the general proof establishes reachability for every state.
+
+The evidence includes executed source snapshots and complete compressed choice tapes.
+A copied tape with an occupied destination and a recomputed checksum is rejected by the semantic movement check.
+Original evidence remains untouched.
+The age convention is explicit: newborn age zero, one lifetime unit consumed per movement, death at exhausted life.
+The paper does not supply age-update pseudocode; this realizes its stated maximum lifetime and remaining-life state variable.
+No empirical stationary distribution, convergence rate, or pseudorandom-generator ergodicity is claimed.
