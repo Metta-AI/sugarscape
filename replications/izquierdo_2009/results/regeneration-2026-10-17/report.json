@@ -1,0 +1,7676 @@
+{
+  "python": "3.11.14",
+  "cases": [
+    {
+      "seed": 0,
+      "warmup": 0,
+      "states": 136,
+      "starting_state_sha256": "28c5eb848f79a0becd7ac37dd2b8e3b86155c2a761c6b4afd7142a65fd682484",
+      "pristine_state_sha256": "1528b7083c3fa6fc1571428972eeef05aaa9b7cd72e76726ec5a46a2c9159c34",
+      "target_state_sha256": "89da5069967d621b458d51209031b9297da9188ec48a4d45c2ec6deee59929e9",
+      "controlled_steps": 135,
+      "synchronization_plans": [
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        }
+      ],
+      "trajectory": "case-0.jsonl.gz",
+      "trajectory_sha256": "cf174b41a82670be1db2616ebd0bf2a6ccad41204b7a65c8ddcd92b440dc45f0"
+    },
+    {
+      "seed": 1,
+      "warmup": 37,
+      "states": 173,
+      "starting_state_sha256": "7abfd7e02adb8ba71aa271f2d83ae70aef5650650161832adef76ef5b3b36d66",
+      "pristine_state_sha256": "b265f3e961cde1a5fff6d7afefce3eef132e126c2c6e774fe835e5b326b96bac",
+      "target_state_sha256": "89da5069967d621b458d51209031b9297da9188ec48a4d45c2ec6deee59929e9",
+      "controlled_steps": 135,
+      "synchronization_plans": [
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        }
+      ],
+      "trajectory": "case-1.jsonl.gz",
+      "trajectory_sha256": "94b2150f20029ed8c10b766731c9b449f9b86c9935179c7eb2ec2e97388ec79a"
+    },
+    {
+      "seed": 2,
+      "warmup": 100,
+      "states": 236,
+      "starting_state_sha256": "242e856bc1e90dbd94469058d401f31d4f31d8d14bb6d16b4232f90fd1bc358b",
+      "pristine_state_sha256": "6d2a257c250c1a22d6585e74648759a6e7b37db7fa470ff4b6ad0924df42a3b6",
+      "target_state_sha256": "89da5069967d621b458d51209031b9297da9188ec48a4d45c2ec6deee59929e9",
+      "controlled_steps": 135,
+      "synchronization_plans": [
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 1,
+          "cycles": [
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 2,
+          "cycles": [
+            6,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 3,
+          "cycles": [
+            5,
+            6,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 4,
+          "cycles": [
+            5,
+            5,
+            6,
+            6
+          ],
+          "last_birth_time": 26
+        },
+        {
+          "first_death": 5,
+          "cycles": [
+            5,
+            5,
+            5,
+            6
+          ],
+          "last_birth_time": 26
+        }
+      ],
+      "trajectory": "case-2.jsonl.gz",
+      "trajectory_sha256": "5a8a2ccf349187a0d55d1d1ded107b698f8f8384e223273a57b019133551a944"
+    }
+  ],
+  "source_sha256": {
+    "regenerate.py": "2aaf60c5ecdc386195fae1290cfeff0e221c0182a57239d6281658e861c4b1c6",
+    "model.py": "233dc44d6f176ef65e91d944ba728e8bb3968b57a0004b39810e11dbb6d1f1d6"
+  },
+  "scope": "Three reachable-state demonstrations of the135step construction, including full random-choice tapes. Universal reachability requires the separate proof."
+}
