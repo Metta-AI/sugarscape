@@ -345,3 +345,26 @@ The Bentham 500-step predecessor reached its two-hour cap with exactly 87 comple
 These latest audits cover 487 unique runtime-archive configurations and 311,436 observations: three complete 500-step groups, the 87-condition Bentham prefix, and the complete raw 5,000-step group. Earlier prefixes are included, not added twice. These remain the deposited 100-seed groups, not the paper’s claimed 500-seed Table 6 ensembles.
 
 The freed cloud worker now runs the previously unstarted raw 50,000-step group `[0,100)`, one worker with a six-hour native cap and bounded outer command. The original altruistic 5,000-step worker continues on the same two-CPU node. The other two 5,000-step groups remain active on their existing node. The new 50,000-step launch, frozen source hash, and artifact paths are recorded above; no completion is inferred from launch.
+
+## Complete archived Bentham 500-step group
+
+[The completed-group reconciliation](results/runtime-bentham500-complete-2026-10-17/reconciliation.json) covers all 100 deposited Bentham inputs and 50,100 observations.
+The continuation exited zero after completing indices `[87,100)`; the original 87-run prefix is counted once.
+The interrupted predecessor’s unfinished index 87 remains preserved outside the completed evidence archive.
+All runs reach step 500 above the initial population of 250; final populations range from 683 to 1,273.
+
+The 19,902,440-byte native archive contains every completed condition, original configuration, frozen source hash, ledger, and run receipt.
+Fresh audits of both extracted segments reproduce the original audit JSON byte-for-byte.
+The prefix remains honestly marked incomplete as a standalone interval; reconciliation proves the full group through disjoint ordinal coverage.
+
+| Archived 500-step model | Extinct | Surviving below 250 | Above 250 |
+|---|---:|---:|---:|
+| Raw | 65 | 6 | 29 |
+| Altruistic | 71 | 1 | 28 |
+| Egoistic | 69 | 2 | 29 |
+| Bentham | 0 | 0 | 100 |
+
+None of these 400 outcomes equals 250.
+Together with the raw 5,000-step group, current audited runtime coverage is 500 unique inputs and 317,949 observations.
+These are the deposited 100-seed groups. The mismatch with the paper’s claimed 500-seed Table 6 schedule remains unresolved.
+The other 5,000-step groups and raw 50,000-step group continue; no whole-paper completion is assigned.
