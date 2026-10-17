@@ -50,7 +50,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two complete 100-seed ensembles and all 80 boundary-sensitivity runs audited; Figure 6(b) recurrence/rounding diagnostics retained; historical semantics and remaining experiments unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | three 150-run reconstruction/correction grids fully audited; historical fidelity unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/9) |
 | buzing-2003 | Buzing, Eiben, Schut, [Evolving Agent Societies with VUScape](https://www.cs.vu.nl/~gusz/papers/ECAL2003-Buzing-Eiben-Schut.pdf) (2003) | Fixed-listening communication, population variation, and cooperation | 200-run grid and actual initialization audited; all populations extinct; historical fidelity unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/12) |
-| pike-2019 | Pike, [Multi-Level Mesa](https://arxiv.org/abs/1904.08315) (2019) | Three experimental phases: grouping, movement policies, and shared resources | Phase I (300/300) and Phase II (600/600) audited and analyzed; movement Phase III has 737/1,200 published audited runs; full movement and common-resource comparisons pending; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13) |
+| pike-2019 | Pike, [Multi-Level Mesa](https://arxiv.org/abs/1904.08315) (2019) | Three experimental phases: grouping, movement policies, and shared resources | All 2,100 Phase I–III runs audited and analyzed; 200 threshold-ten common-resource runs audited, all with nonfinite health; threshold-five, controlled timing and source fidelity remain unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13) |
 | need-for-greed-2024 | Kremer-Herman and Gupta, [The Need for Greed in Artificial Decisionmakers](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf) (2024) | Full selfishness sweep, outcome proportions and five agent/society measurements | [source audit](source-audits/need-for-greed-2024.json): explicit v2024.1 code pin; 10,100 sweep and 400 baseline configs verified as exact Blueprints archive subsets; simulation/measurement replication pending |
 | serrano-2020 | Serrano and Satoh, [An Agent-Based Model for Exploring Pension Law and Social Security Policies](https://doi.org/10.1007/978-3-030-58790-1_4) (2020 proceedings) | Pension sustainability, inequality and social exclusion | [source audit](source-audits/pensions-2020.json): author code and 1,280 archived runs recovered; 2,304 workbook values reconstructed; full text and paper-specific protocol pending |
 | quera-bofarull-2025 | Quera-Bofarull et al., [Automatic Differentiation of Agent-Based Models](https://arxiv.org/html/2509.03303v2) (2025) | Sugarscape gradient validation, sensitivity, and variational calibration | [source audit](source-audits/quera-bofarull-2025.json): three full forward seeds and movement replay validated; 256-seed gradient ensemble audited; flow dependency runs; initialization-law discrepancy quantified; full gradient/calibration comparisons remain incomplete; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15) |
@@ -69,16 +69,18 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 
 ## Current state
 
-The [evidence index](study-evidence.json) pins twelve pushed study commits and their README hashes: two completed mixed studies and one positive structural replication.
+The [evidence index](study-evidence.json) pins thirteen pushed study commits and their README hashes: two completed mixed studies and one positive structural replication.
 Its JSON parsing checks artifact readability only; scientific completion remains claim-specific.
 Pike adds author-code replay and parameterized grouping ensembles, not an additional completed paper.
-The Need for Greed is an additional source-audited candidate, outside the twelve study PRs and completed-study count.
+The Need for Greed is an additional source-audited candidate, outside the thirteen study PRs and completed-study count.
 Its exact configuration overlap offers future run reuse only after checking source, runtime and measurements; no duplicate ensemble was launched.
 Its corrective experiments preserve original failures and remain separate from historical replication claims.
 Carrella's independent implementation passes deterministic native comparisons; its full stochastic and estimator validation remain unfinished.
 Stevenson's boundary and discrete-curve diagnostics narrow discrepancies without resolving historical semantics.
-Blueprints now has 470 unique audited homogeneous runs; Carrella has 238 audited independent inputs.
-Pike's first complete movement-policy condition validates the released-selector audit path; corrected-grid validation remains pending.
+Blueprints has 590 audited homogeneous runs and six supplementary controls; endpoint reuse does not add independent seeds.
+Carrella has 4,381 audited independent inputs; the remaining 619-input export is pending.
+Pike’s full 1,200-run movement grid includes released and corrected selectors, with separate analyses.
+Its 200 threshold-ten common-resource runs all contain nonfinite health; execution completion does not validate their scientific outcomes.
 
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.
@@ -146,7 +148,7 @@ The following requirements remain separate from successful execution or source-o
 | Stevenson | Evolutionary scenarios, distributions, and unresolved fixed-society growth-rate/mean-age discrepancies; author fitting protocol unknown |
 | Buzing | Version 1.2.3 harvesting, scheduling, landscape, communication semantics, and full ten-run condition ensembles |
 | Dogan | Completed mixed study; original-source fork integration and claim-level verdict verified, with explicit limits on causal interpretation |
-| Pike | Full movement audit/analysis, common-resource ensembles and numerical failures, platform sensitivity, and historical source fidelity |
+| Pike | Threshold-five common-resource ensemble, numerical failures, controlled timing, platform sensitivity, and historical source fidelity |
 | Quera | Exact gradient-figure protocol, source-law discrepancy, prior/loss/validation configuration and full 5,000-epoch calibration |
 | Kiran, Oremland, Pan, Flentge | Resolve original-model specification gaps and implement their full declared experiments |
 

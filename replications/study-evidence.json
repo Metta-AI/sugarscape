@@ -41,12 +41,12 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "c43422a764eb45ed208d699e0beec827b354de65",
+      "checked_commit": "88c1987df9af30ed74cf4b88b14d874b82e1ff13",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "8bff32cfa469c9fc320e64053f0ca4168d783198ba9774972f4ebbd19107f87f",
-      "json_evidence_files": 157,
-      "remaining_scope": "590/2,000 homogeneous inputs and 500/1,200 deposited runtime inputs audited. The paper explicitly identifies the pinned v2024.1 release. Remaining homogeneous runs, full selfishness/mixed-society sweeps, longer horizons, and deposited 100-seed versus reported 500-seed runtime mismatch remain unresolved.",
+      "readme_sha256": "07265f4301ea254ecfdae8fdee375309246dd69b37c1bf00a893127bd5335192",
+      "json_evidence_files": 169,
+      "remaining_scope": "590/2,000 homogeneous inputs and 500/1,200 deposited runtime inputs audited. Six supplementary controls complete; three selfishness endpoints match same-seed homogeneous trajectories byte for byte and are not additional independent seeds. The paper explicitly identifies v2024.1. Remaining homogeneous runs, full sweeps, longer horizons, and deposited 100-seed versus reported 500-seed runtime mismatch remain unresolved.",
       "gzip_json_evidence_files": 37
     },
     {
@@ -122,10 +122,10 @@
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13",
       "status": "running",
       "readme": "replications/pike_2019/README.md",
-      "remaining_scope": "Phase I: 300/300 and Phase II: 600/600 grids audited and analyzed. Movement Phase III: 737/1,200 independently audited at this published evidence snapshot; complete-grid audit and aggregate comparisons pending. Four native group-composition controls validate 4,000 steps and 20 raw files. Common-resource threshold 10/5 ensembles, numerical failures, platform sensitivity and historical-source fidelity remain unresolved.",
-      "checked_commit": "961e2bf324c7ef0c67039116d4393b4bff30bc38",
-      "readme_sha256": "3b4bdb2a543be82f6178debd5cf97bcb95ee9b809c6663f329e50421eb4d311b",
-      "json_evidence_files": 137,
+      "remaining_scope": "Phase I: 300/300, Phase II: 600/600 and movement Phase III: 1,200/1,200 runs audited and analyzed. All 200 threshold-ten common-resource runs audited; all exhibit nonfinite health and remain numerical failures. Threshold-five common-resource ensemble, controlled timing, platform sensitivity and historical-source fidelity remain unfinished. Finite-horizon price comparisons are descriptive, not asymptotic convergence proofs.",
+      "checked_commit": "aeeeb5adba406fcbd6a5a87af6509fc896760d5c",
+      "readme_sha256": "7230ca896b5090f1a093e2b122f9661820f71405b9a0670bd055e068def99f7a",
+      "json_evidence_files": 174,
       "gzip_json_evidence_files": 129
     },
     {
