@@ -1,0 +1,19 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/run_runtime.py",
+    "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/blueprints-runtimes.zip",
+    "benthamHalfLookaheadBinary",
+    "500",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-benthamHalfLookaheadBinary-500-002",
+    "--start",
+    "87",
+    "--stop",
+    "100",
+    "--seconds",
+    "7200"
+  ],
+  "cwd": "/Users/relh/Code/workspace/sugarscape-blueprints",
+  "environment": {}
+}

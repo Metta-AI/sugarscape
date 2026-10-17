@@ -335,3 +335,13 @@ A second audit after extraction verifies the archived evidence against its origi
 
 The runtime archive now has 333 of 1,200 conditions audited, totaling 97,878 observations.
 The Bentham producer remains active for the remaining conditions; this prefix does not establish a full-group or Table 6 verdict.
+
+## Complete raw 5,000-step runtime group and disjoint continuations
+
+[The full native raw-Sugarscape group](results/runtime-raw5000-complete-2026-10-17/audit.json) passes all 100 original 5,000-step conditions and 186,504 observations. Outcomes are 65 extinctions, four surviving populations below 250, and 31 above 250; none equals 250. The 31,269,889-byte archive retains complete native files, original configurations, hashes, and terminal receipts. Linux paths are preserved in the manifest and explicitly supplied to the portable audit.
+
+The Bentham 500-step predecessor reached its two-hour cap with exactly 87 complete conditions and a partial condition at index 87. Its [terminal receipt, traceback, and fresh prefix audit](results/runtime-continuations-2026-10-17) are retained. All 87 completed runs reach step 500 above the initial population, covering 43,587 observations. After confirming both predecessor processes absent, a new bounded output directory continues only indices `[87,100)`. The interrupted original files are untouched.
+
+These latest audits cover 487 unique runtime-archive configurations and 311,436 observations: three complete 500-step groups, the 87-condition Bentham prefix, and the complete raw 5,000-step group. Earlier prefixes are included, not added twice. These remain the deposited 100-seed groups, not the paper’s claimed 500-seed Table 6 ensembles.
+
+The freed cloud worker now runs the previously unstarted raw 50,000-step group `[0,100)`, one worker with a six-hour native cap and bounded outer command. The original altruistic 5,000-step worker continues on the same two-CPU node. The other two 5,000-step groups remain active on their existing node. The new 50,000-step launch, frozen source hash, and artifact paths are recorded above; no completion is inferred from launch.
