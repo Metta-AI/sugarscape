@@ -557,3 +557,38 @@ Rscript replications/raimbault_2019/verify_convergence.R GENERATED_RAW.csv.gz NE
 
 These are complete archived-data calculations. They do not add fresh simulations,
 resolve the missing generated parameter combinations, or complete the study.
+
+### Morphology projection and reference-marker scaling
+
+[The independent reconstruction](results/morphology-2026-10-17/audit.json) reads all
+2,727,994 generated records and recomputes the four mean morphology indicators for
+each of 50 landscapes. Min-max normalization, the principal-component rotation,
+and all 200 projected coordinates match the released data within 3.31e-14.
+The first two principal components explain 91.533948% of variance, reproducing the
+paper's rounded 92%. Singular-vector signs are aligned with the released rotation;
+this does not alter the variance or geometry.
+
+The reference marker has a separate scaling problem. `comp.R` normalizes generated
+features before projection; `metaphasediagrams.R` projects the raw reference features
+without applying that normalization. The raw reference features are identical in
+all 55,000 reference archive rows. Their projection reproduces the hardcoded marker
+at `(1.130869, 0.095869)`, also visually confirmed in the published Figure 5.
+Applying the same generated-data feature scaling gives `(1.487007, 2.194472)`.
+The reference Moran statistic exceeds the generated-grid range, so its normalized
+value legitimately exceeds one; no clipping is applied.
+
+![Reference marker scaling diagnostic](results/morphology-2026-10-17/reference-scaling.png)
+
+This diagnostic preserves the author's uncentered coordinate projection. Centering
+would translate every consistently transformed point together, and would not resolve
+the unequal scaling. The marker finding does not change Table 4 distances, simulation
+outputs, or the generated-grid point cloud. It does not establish a negative verdict
+for the paper's broader spatial-sensitivity conclusion.
+
+```sh
+python replications/raimbault_2019/audit_morphology.py GENERATED_RAW.csv.gz REFERENCE.csv ORIGINAL_SOURCE NEW_OUTPUT
+```
+
+Original sources and data are pinned and hash-checked. Raw means, normalization
+ranges, variance fractions, source hashes, and both reference projections are retained.
+This completes an archived-data projection audit, not fresh generated-grid simulation.
