@@ -753,3 +753,24 @@ same mgcv 1.9-4, Matrix 1.7-5, dplyr 1.2.1, and readr 2.2.0 versions as the prim
 This isolates parser sensitivity under the current runtime; it does not reconstruct
 the authors' unknown historical environment or the notebook's preceding random stream.
 The primary results remain unchanged, and no additional Table 8 match is claimed.
+
+## GAM parser control: first two completed folds
+
+[The saved-fold audit](results/gam-parser-control-prefix-2026-10-17/prefix-audit.json)
+reconstructs both held-out partitions, verifies 377,500 input cells exactly against
+notebook-parsed inputs, and checks 2,500 predictions and their interval metrics.
+Both complete native fold checkpoints are retained.
+
+The maximum prediction change is 31.9513 in fold one and 1,206.9118 in fold two.
+The known reproduction-wealth outlier at original input 675 changes from −6,945.8109
+to −8,152.7227; its true value is 92. Thus the notebook parser does not resolve
+this outlier. Small input differences can materially affect this fitted GAM.
+
+The pre-fit random states and relevant package versions match, as recorded in the
+launch evidence. Maximum input change remains 1.3878e-17. Three folds remain;
+these checkpoint results do not supply an aggregate Table 8 comparison or negative
+replication verdict. No observation or difficult fold is excluded.
+
+To verify the retained checkpoints, pass the pinned source directory, this result
+directory, the original `gam-1250-2026-10-15` directory, and a new JSON path to
+`audit_parser_prefix.R`. Readback from the published copies reproduces the audit exactly.
