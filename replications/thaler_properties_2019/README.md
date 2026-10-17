@@ -415,3 +415,28 @@ Restore the published CSV gzip files, then audit the first pair with:
 python results/demographics-first-2026-10-17/audit_first.py \
   /path/to/first /path/to/protocol.json /path/to/new-audit.json
 ```
+
+
+## Independent paired-ensemble audit
+
+`audit_paired_observers.py` consumes the protocol, native observer/source directory,
+a new output path, and one or more disjoint run directories. It verifies all source
+and binary pins, original/gzip hashes, all summary times, snapshot populations and
+wealth sums, paired initialization, and the sole treatment parameter. It reconstructs
+Gini using ranked and pairwise formulas. Undefined outcomes remain explicit.
+
+```bash
+python audit_paired_observers.py /path/to/protocol.json /path/to/native-observer \
+  /path/to/new-audit.json /path/to/first /path/to/remaining
+```
+
+Complete inference requires 100 pairs and matching completion ledgers. `--allow-prefix`
+audits only available complete pairs, lists unpaired records as unaudited, and emits
+no aggregate comparisons. It reads the published gzip files directly.
+
+[Native first-pair audits and rejection evidence](results/paired-observer-audit-2026-10-17)
+cover both experiments. The inheritance pair has final sugar Gini 0.352099 versus
+0.222819 without inheritance. The trading pair has final sugar Gini 0.353110 versus
+0.313486 without trading. These are single-seed measurements, not ensemble conclusions.
+Both actual incomplete ensembles were rejected in full mode before output creation.
+The complete-ensemble success path awaits all 100 pairs; no synthetic completion is used.
