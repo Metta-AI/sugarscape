@@ -1135,3 +1135,26 @@ at most $5.184 over 36 hours, excluding its final idle window.
 The process is running and has not reported a completed assertion. A bounded
 collector exports its terminal log, original binary, manifest, and exit receipt to
 task-owned storage. This launch resolves no property or whole-paper verdict yet.
+
+## Original model-test coverage semantics
+
+[Source audit](results/quickcheck-semantics-2026-10-17/audit.json) records the exact
+dependency pinned by the original `stack.yaml`: stevana/quickcheck commit
+`9ccdcbb3eaad7fe96c08ea5ecbbdfe852615bd49`, reporting version 2.12.7.
+This is an experimental fork, not an interchangeable Hackage release.
+
+Both enabled properties return `cover 100 prop label True`. In the pinned
+[implementation](https://github.com/stevana/quickcheck/blob/9ccdcbb3eaad7fe96c08ea5ecbbdfe852615bd49/Test/QuickCheck/Property.hs#L588),
+`cover` records classification and a coverage requirement, preserving the underlying
+successful result. Neither property uses `checkCoverage` to enforce that requirement.
+
+Consequently, normal completion of the inheritance property's default 100 cases
+should return `NoExpectedFailure`: `expectFailure` receives no falsifying case.
+That outcome would describe the harness, not independently establish a false Gini claim.
+Each case still executes ten simulations. Wealth uses `once`, so its ten simulations
+form one successful case even when its statistical checks produce a coverage warning.
+
+These are static control-flow findings, not observed terminal results. The unchanged
+native suite remains running for confirmation. Resource failures and nontermination
+remain possible. The separately audited simulation ensembles retain their own
+statistical results; neither framework status completes this replication study.
