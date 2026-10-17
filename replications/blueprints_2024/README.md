@@ -412,7 +412,8 @@ The published archive retains all six raw outputs, configurations, logs and comp
 
 Elapsed times came from different workloads sharing the same host, so they are not controlled speedup estimates.
 One seed across six configurations does not establish universal runtime equivalence.
-Two additional original inputs have paired runtime checks in progress; no production runtime or completion status changes here.
+Two additional paired runtime checks were interrupted by provider host loss; snapshot inventory is queued before continuation.
+No production runtime or completion status changes here.
 These replays add no independent scientific seeds and do not complete either sweep or the paper.
 
 ## Runtime checkpoint preserved after provider host loss
@@ -456,3 +457,11 @@ The original interrupted files remain preserved.
 
 The local assignment is active and the cloud assignment is queued; neither launch establishes completion.
 Primary CPython 3.11.14 remains unchanged.
+
+## Second retained runtime checkpoint
+
+[The second checkpoint](results/runtime-surviving-checkpoint-002-2026-10-17) validates 85 egoistic and 20 Bentham 5,000-step inputs, with 243,990 observations.
+The earlier 86 records match exactly, including trajectory hashes and manifests; they are replaced in coverage totals, not counted twice.
+The 19 additional inputs contribute 22,359 observations, bringing audited runtime coverage to 611/1,200 inputs and 562,940 observations.
+Both groups remain incomplete, and the native worker continues. The complete 56,929,748-byte archive is retained off-node at the documented path and SHA-256.
+No elapsed-time comparison or completed-paper claim follows from this prefix.
