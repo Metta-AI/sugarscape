@@ -582,3 +582,10 @@ The checkpoint random state equals the data-preparation random state exactly.
 The separate setup audit also confirms that setup and data preparation retain the state from `set.seed(0)`.
 Thus this rejection stage did not advance the random stream in the observed execution; later notebook stages remain pending.
 The actual rejection checkpoint, audit script, source hashes, and arithmetic report are retained alongside the launch evidence.
+
+The [completed semi-automatic checkpoint audit](results/notebook-rf-sequence-launch-2026-10-16/sabc-audit.json) independently recomputes all five folds and checks 25,000 predictions.
+All five scores still match Table 8 at printed precision; these targets were already matched by the isolated execution.
+The largest prediction difference from the isolated run is 0.5, and the saved random state differs from the preceding rejection checkpoint.
+This establishes that the observed semi-automatic stage advances the random stream; it does not isolate the cause of prediction differences.
+Parser differences and execution order remain separate factors for the pending random-forest comparison.
+The actual checkpoint, audit script, hashes, and arithmetic report are retained; no new replication target or whole-study completion is claimed.
