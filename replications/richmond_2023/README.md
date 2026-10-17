@@ -1,6 +1,6 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
-Status: **incomplete; archived grid and aggregation audited, native qualification running**.
+Status: **incomplete; qualification audited, full native grid running, model fidelity under investigation**.
 No completed-study credit. This study adds to the existing replication program.
 
 Paper: [FLAME GPU 2: A framework for flexible and performant agent based simulation on GPUs](https://doi.org/10.1002/spe.3207).
@@ -220,3 +220,31 @@ The terminal evidence collector is capped at 100 MiB. Population/resolution valu
 will be compared with the archive; timing comparisons remain descriptive across
 different hardware. No acceptance margin is selected after observing differences.
 Operational completion alone will not establish full coverage or paper replication.
+
+## Agent-state fidelity: pinned-source findings
+
+The [source audit](results/model-rule-source-audit-2026-10-17/audit.json) identifies
+additional rule differences in the exact paper-linked revision. These are static findings;
+no new native state trace or effect estimate is claimed.
+
+The most consequential finding is in `movement_response` (lines 145–180).
+The winning request updates its ID and priority, but never copies sugar or metabolism
+from the incoming message. Both local values start at `-1`. Successful movement therefore
+stores metabolism `-1` and sugar equal to destination sugar minus one. The request carries
+the original values, but this handler does not read them. Exact population replay does
+not establish preservation of these agent attributes.
+
+The movement search uses the pinned engine's eight-neighbor `wrap(x,y)` iterator,
+including diagonals. Section 4.3 describes four cardinal directions. The engine also
+provides `vn_wrap`, which this benchmark does not use. Separately, death checks equality
+to zero; the paper describes removing agents with nonpositive wealth. Negative wealth
+occurrence has not yet been measured.
+
+Hotspot separation uses toroidal distance, whereas sugar influence uses direct coordinates.
+The paper's distance norm leaves boundary interpretation insufficiently explicit, so this
+is a specification question rather than an established contradiction.
+
+After the full original benchmark finishes, a separate passive state observer must inspect
+agent IDs, metabolism, wealth, and movement. Its population trace must match all 100
+unmodified qualification observations before interpretation. Observer timings cannot count
+as benchmark timings. No source correction is applied to the ongoing historical replay.

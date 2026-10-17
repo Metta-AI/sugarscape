@@ -1,0 +1,80 @@
+{
+  "status": "Static pinned-source findings; native state effects not yet measured. No completed-study credit.",
+  "benchmark_commit": "290702073492677f2fc9164419e9d5900d119e02",
+  "engine_commit": "19136c18629af0a52ac4355ff705596b22bedac1",
+  "paper_doi": "10.1002/spe.3207",
+  "paper_sha256": "30679f34e89c1d447cfac31ec814a846fb3af5b39640d19e2a36432f89dee480",
+  "source_files": {
+    "src/main.cu": "b2daf9e6ee2b3faf4a13e30ba19f4293e1f922a993d30cb5e72fb1d4c2b8f56d",
+    "include/flamegpu/runtime/messaging/MessageArray2D/MessageArray2DDevice.cuh": "a18bd23bc279700bade3d55284c7c7cad677429a4ea047bea7711701e9d02594"
+  },
+  "findings": [
+    {
+      "rule": "Movement state transfer",
+      "source_lines": [
+        145,
+        180
+      ],
+      "evidence": "Winning request stores agent ID and priority only. Sugar and metabolism local variables remain initialized to -1. Destination stores sugar=-1+cell_sugar and metabolism=-1; the request message carries original values but they are never read here.",
+      "interpretation": "This does not preserve agent wealth/metabolism on successful movement. Replaying archived population alone cannot validate those state variables.",
+      "native_validation_required": "Track agent IDs and metabolic values before and after actual successful moves; confirm observed state changes without modifying model rules."
+    },
+    {
+      "rule": "Movement neighborhood",
+      "source_lines": [
+        115,
+        156,
+        194
+      ],
+      "engine_lines": [
+        977,
+        1380,
+        1402
+      ],
+      "paper_section": "4.3, journal page15",
+      "evidence": "Benchmark uses wrap(x,y), whose default radius is1. Pinned iterator visits the square neighborhood except the origin, including diagonals. A separate vn_wrap API exists but is unused.",
+      "interpretation": "Eight-neighbor search differs from the four cardinal directions stated in the paper.",
+      "native_validation_required": "Track actual diagonal moves by stable agent ID, accounting for toroidal boundaries and multiple conflict rounds."
+    },
+    {
+      "rule": "Death predicate",
+      "source_lines": [
+        63,
+        71
+      ],
+      "paper_section": "4.3, journal page15",
+      "evidence": "After subtracting metabolism, source removes agents only when sugar_level==0. Paper describes removal when wealth is not positive.",
+      "interpretation": "Negative wealth is not caught by this condition. Occurrence and consequences are unmeasured, especially given the movement transfer issue.",
+      "native_validation_required": "Count active agents with negative wealth and trace mortality from pre-step state; do not infer occurrence from the predicate alone."
+    },
+    {
+      "rule": "Landscape boundary distances",
+      "source_lines": [
+        264,
+        280,
+        591,
+        600
+      ],
+      "paper_section": "4.3, journal pages15 and17, equation10",
+      "evidence": "Hotspot separation wraps distances across the torus. Sugar influence instead uses direct coordinate differences.",
+      "interpretation": "The implementation uses two distance conventions. The paper equation does not explicitly define its norm across boundaries, so this remains a specification question.",
+      "native_validation_required": "Reconstruct the exact initialized landscape from recorded hotspots and inspect boundary cells; compare any toroidal alternative as a separately labeled sensitivity."
+    }
+  ],
+  "next_state_observer": {
+    "condition": {
+      "seed": 0,
+      "width": 256,
+      "occupation": 0.17,
+      "steps": 100
+    },
+    "constraints": [
+      "Wait until the original full benchmark is terminal; do not overlap GPU work.",
+      "Keep source rules and random draws unchanged; passive population snapshots only.",
+      "Require all100 population observations to match the unmodified qualification prefix.",
+      "Audit unique agent IDs, valid statuses, wealth, metabolism, and position changes.",
+      "Exclude observer timings from performance comparisons.",
+      "Do not silently correct any finding in the historical replay."
+    ]
+  }
+}
