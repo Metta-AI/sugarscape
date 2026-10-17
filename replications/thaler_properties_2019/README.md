@@ -1205,3 +1205,44 @@ evidence bucket `relh-sugarscape-evidence-20261017`; its hash is
 Retained control and interrupted-run paths, all ledger hashes, protocols, and the exact
 full-audit command are included in the evidence directory. This cohort completes
 these quantitative comparisons, not the original model suite or the whole paper.
+
+## Combat peak cores and tribe disappearance
+
+[The regional audit](results/combat-regions-2026-10-17/summary.json) rechecks all 400
+completed trajectories against their frozen source audit, ledgers, and raw-file hashes.
+It adds diagnostics, not simulation coverage or a completed-paper verdict.
+Peak cores are the two connected maximum-sugar-capacity regions. This exploratory
+definition is not a threshold supplied by the paper.
+
+| Variant | Rebirth | Runs with successful enemy-core kills | Runs with a tribe absent |
+| --- | --- | --- | --- |
+| Original | No | 9/100 | 0/100 |
+| Reward corrected | No | 55/100 | 0/100 |
+| Original | Yes | 100/100 | 100/100 |
+| Reward corrected | Yes | 100/100 | 100/100 |
+
+Successful kills use every recorded combat event; tribe counts use every step through
+1,000. Separately, enemy-colored agents appear in sampled cores in 2, 19, 100, and
+100 runs, respectively. All seeds use the same ten-step sampling interval.
+The compressed audit records exact binomial intervals and each seed's evidence.
+
+Appendix A.9 describes an opposing agent invading a hill **and wiping out the tribe**.
+A kill inside that hill does not establish this stronger outcome. Without rebirth,
+neither tribe disappears in either variant. With rebirth, culture conversion and
+natural deaths prevent attributing tribe disappearance to one warrior.
+
+The original source's `Agent/Dying.hs` also places replacements at random unoccupied
+positions while retaining the deceased agent's tribe. Thus core presence can arise
+without movement into the core. Both tribes receive replacements: original runs
+record 42,450 Blue and 43,760 Red births; corrected runs record 41,985 and 43,879.
+These observations rule out a Blue-only replacement explanation for this cohort.
+Original coordinate aliasing and pre-event snapshot timing remain unchanged.
+
+Reproduce from the previously retained complete combat readback and native home:
+
+```sh
+python replications/thaler_properties_2019/audit_combat_regions.py FULL_COMBAT_READBACK NATIVE_HOME NEW_AUDIT.json
+```
+
+The complete audit ran twice; all existing measurements matched after adding the
+birth-by-tribe counts. No absence claim extends beyond the observed 1,000 steps.
