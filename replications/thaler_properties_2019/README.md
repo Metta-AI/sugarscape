@@ -887,3 +887,24 @@ The complete audit JSON is identical after extracting and decompressing the froz
 reconciliation path without rerunning simulations. The combined-correction ensemble
 is still running. Neither this sensitivity result nor its confidence interval
 establishes whole-paper replication or independently validates the disease model.
+
+## Cultural convergence: source predicate and prose differ
+
+[Thirty completed seeds per variant](results/culture-prefix-2026-10-17)
+pass independent trajectory audits and compressed-data readback, covering 679,595
+agent observations through step 2,700. No population becomes extinct.
+
+The released predicate accepts a zero-dominant fraction of at least 45%, regardless
+of the other group's share. Its equality branch uses `or` where a symmetric
+45–55% interpretation requires both bounds. The existing auditor measures both
+predicates independently from the recorded agent tags.
+
+| Variant | Released predicate passes | Symmetric prose interpretation passes |
+| --- | ---: | ---: |
+| Original | 22/30 | 16/30 |
+| Coordinate and observation corrections | 23/30 | 20/30 |
+
+These prefixes provide no confidence intervals or complete-cohort conclusion.
+Neither global predicate establishes that opposite cultures dominate separate hills.
+That spatial claim requires positions and local cultural composition; a global 50/50
+split alone is insufficient. Native runs continue toward the frozen 100-seed cohorts.
