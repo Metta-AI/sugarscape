@@ -84,7 +84,7 @@ Confidence intervals and source-defined checks will be reported separately.
 Non-rejection is not proof of equality. Undefined statistics remain explicit;
 no missing or failed runs will be silently dropped. These 300 runs address three
 quantitative targets; the remaining case-study and appendix requirements remain.
-Wealth and carrying each completed all 100 runs. Trading remains active.
+All three historical ensembles completed all 100 runs.
 Wealth index 0 and indices 1–99 ran separately; no duplicate input is counted. Each single-core worker
 has a six-hour limit and retains interrupted output without crediting completion.
 
@@ -144,6 +144,22 @@ cover 40,000 steps and 8,550,893 agent observations. Mean population over times
 Neither the code's target of 204 nor the appendix's target of 210 lies inside it.
 This is an unresolved quantitative difference, subject to the source issues below.
 
+## Complete trading ensemble
+
+[All 100 native outputs and the independent audit](results/trading-ensemble-2026-10-17)
+cover 100,000 steps and 6,083,587 agent observations. Six final snapshots have fewer
+than two prices: indices 1, 6, 11, 31, 40, and 80. Their sample standard deviations
+are undefined. The frozen audit retains all six and emits no aggregate comparison.
+
+A separately labelled replay of the author library's zero-for-small-samples convention
+uses all 100 runs. Mean standard deviation is 0.0436544; its one-sided 95% upper bound
+is 0.0507357, above the 0.05 target. The individual-run predicate passes 67/100 runs,
+including the six source-defined zero values. This does not resolve the undefined
+statistic issue or establish a full-paper negative replication.
+
+Across all three historical ensembles, 300 runs and 19,634,480 agent observations
+are independently audited. The remaining appendix claims and source diagnosis remain.
+
 ## Observer validation and spatial discrepancies
 
 [Observe.hs](Observe.hs) calls the unchanged historical simulator and exports agent,
@@ -186,3 +202,43 @@ python replications/thaler_properties_2019/audit_observer.py \
 The observer directory must contain `source/` at the pinned revision and uncompressed
 CSV files. Ensemble directories must contain the three original seed-602352629 exports.
 The independent audit checks the complete trajectories, not isolated model functions.
+
+## Paired source diagnosis
+
+[Nine complete native trajectories](results/sensitivity-2026-10-17) isolate the
+indexing correction, the observation correction, and both together. Each variant uses
+seed 602352629 for the original 200-, 400-, and 1,000-step scenarios. Source comparison
+verifies exactly the declared substitutions; the observer is unchanged.
+
+The observation-only variant preserves every population, environment-sugar,
+environment-spice, and pollution measurement at every timestep. Final coordinate
+mismatches fall from 217/187/47 to zero for wealth/carrying/trading. The indexing-only
+variant restores all 2,601 coordinates and initial occupiers, but retains the observation
+lag. Combining both corrections restores the grid and eliminates final position mismatches.
+
+These changes affect measured outcomes. For the trading trajectory, corrected indexing
+alone gives 61 surviving agents; observation-only retains the original 57. Combining
+both yields 61 agents and final observed price standard deviation 0.181524. One seed
+cannot establish a population-level result or resolve a paper claim.
+
+A [separately labelled 100-seed sensitivity ensemble](results/corrected-ensemble-recovery-2026-10-17)
+is running all three scenarios with both corrections. The [initial launch](results/corrected-ensemble-launch-2026-10-17)
+failed before producing runs because parallel Stack path resolution raced package-database
+initialization. Recovery builds the full original component set and verifies the executable
+path serially before starting workers. It retains the historical
+ensemble's seeds, horizons, targets, and statistics. Its protocol explicitly labels
+post-hoc source correction and preserves the original outputs and failures.
+The container is limited to three CPUs, 4 GiB, and 7,500 seconds; workers have 7,200-second
+limits. No corrected-ensemble result is claimed before complete independent audits.
+
+Reproduce the paired diagnosis against complete native outputs and their source trees:
+
+```bash
+python replications/thaler_properties_2019/audit_sensitivity.py \
+  /path/to/sensitivity-output /path/to/original-observer-output \
+  /path/to/protocol.json --output /path/to/new-audit.json
+```
+
+Recovery passed its serial build gate. The first three corrected CLI exports match
+the earlier corrected observer exactly across 204,191 agent records and 28,581 trades.
+Their raw files, hashes, manifests, and comparison report are retained with recovery evidence.

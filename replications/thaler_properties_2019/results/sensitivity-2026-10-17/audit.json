@@ -1,0 +1,542 @@
+{
+  "protocol_sha256": "bdd82acf93239743c65ff91bed5906112d2b971d31d8fc8a603ca13ae483f0bb",
+  "scope": "Single-seed source diagnosis; no paper-level or statistical replication verdict",
+  "variants": [
+    {
+      "variant": "index",
+      "changed_source_files": [
+        "src/SugarScape/Core/Discrete.hs"
+      ],
+      "binary_sha256": "551d87a01910c0c8ab1f289e9f15b85d002178302c156ef05c2400405535e9b4",
+      "cases": [
+        {
+          "scenario": "wealth",
+          "horizon": 200,
+          "agent_observations": 50000,
+          "summary_field_differing_timesteps": {
+            "time": 0,
+            "population": 0,
+            "infected": 0,
+            "zero_dominant": 0,
+            "red": 0,
+            "blue": 0,
+            "agent_sugar": 199,
+            "agent_spice": 0,
+            "trade_count": 0,
+            "price_sum": 0,
+            "price_sum_squares": 0,
+            "environment_sugar": 201,
+            "environment_spice": 0,
+            "pollution": 0
+          },
+          "spatial": [
+            {
+              "time": 0,
+              "cells": 2601,
+              "agents": 250,
+              "occupiers": 250,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            },
+            {
+              "time": 200,
+              "cells": 2601,
+              "agents": 250,
+              "occupiers": 250,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 211
+            }
+          ],
+          "measurements": {
+            "final_population": 250,
+            "final_sugar_gini": 0.4864322834645669,
+            "final_sugar_skewness": 1.5835808046514195,
+            "final_sugar_excess_kurtosis": 2.2088496071009978,
+            "mean_population_last300": null,
+            "final_trade_observations": 0,
+            "final_price_sample_sd": null
+          },
+          "files_sha256": {
+            "wealth.agents.csv": "b69aa08e544cabcfcd46f0503e58f5a8239b4259b245c257bff894b299052f1d",
+            "wealth.cells.csv": "8804823a16d975399f718f29447c314ad25414274429381d9486277dc027c9e1",
+            "wealth.scenario.txt": "885b256aa6f11051859343561166bdd9b75e408d1f75d513eb808e257513c403",
+            "wealth.summary.csv": "839ed03fd1d39370bfbf1044bd5fea69ab3ccb4078a84231eb7c7e51bd219056",
+            "wealth.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2"
+          }
+        },
+        {
+          "scenario": "carrying",
+          "horizon": 400,
+          "agent_observations": 87225,
+          "summary_field_differing_timesteps": {
+            "time": 0,
+            "population": 232,
+            "infected": 0,
+            "zero_dominant": 0,
+            "red": 232,
+            "blue": 0,
+            "agent_sugar": 393,
+            "agent_spice": 0,
+            "trade_count": 0,
+            "price_sum": 0,
+            "price_sum_squares": 0,
+            "environment_sugar": 401,
+            "environment_spice": 0,
+            "pollution": 0
+          },
+          "spatial": [
+            {
+              "time": 0,
+              "cells": 2601,
+              "agents": 400,
+              "occupiers": 400,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            },
+            {
+              "time": 400,
+              "cells": 2601,
+              "agents": 207,
+              "occupiers": 207,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 187
+            }
+          ],
+          "measurements": {
+            "final_population": 207,
+            "final_sugar_gini": 0.3632674505083717,
+            "final_sugar_skewness": -0.21053656529635362,
+            "final_sugar_excess_kurtosis": -1.3468722941579312,
+            "mean_population_last300": 209.75333333333333,
+            "final_trade_observations": 0,
+            "final_price_sample_sd": null
+          },
+          "files_sha256": {
+            "carrying.agents.csv": "94f2833d1b434443d78fd29b854f36aed4fc81355685dc7237be9026238c0af0",
+            "carrying.cells.csv": "d87715fcb82b75e80dc8face24e5003e7f3bca120ad26643049343d9c66ca0f3",
+            "carrying.scenario.txt": "ab5539da62d187a3f6ab2ce6dae42430d7d635b10da275534b79630c1621f0c4",
+            "carrying.summary.csv": "feb9718ca0715cb99c22f98fd61fe82cba0efec2a619bee4f1037fb077b14f24",
+            "carrying.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2"
+          }
+        },
+        {
+          "scenario": "trading",
+          "horizon": 1000,
+          "agent_observations": 66966,
+          "summary_field_differing_timesteps": {
+            "time": 0,
+            "population": 990,
+            "infected": 0,
+            "zero_dominant": 0,
+            "red": 990,
+            "blue": 0,
+            "agent_sugar": 1000,
+            "agent_spice": 999,
+            "trade_count": 967,
+            "price_sum": 999,
+            "price_sum_squares": 999,
+            "environment_sugar": 1001,
+            "environment_spice": 1001,
+            "pollution": 0
+          },
+          "spatial": [
+            {
+              "time": 0,
+              "cells": 2601,
+              "agents": 200,
+              "occupiers": 200,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            },
+            {
+              "time": 1000,
+              "cells": 2601,
+              "agents": 61,
+              "occupiers": 61,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 48
+            }
+          ],
+          "measurements": {
+            "final_population": 61,
+            "final_sugar_gini": 0.5769278573693062,
+            "final_sugar_skewness": 0.8926449494363352,
+            "final_sugar_excess_kurtosis": -0.4926258524794025,
+            "mean_population_last300": null,
+            "final_trade_observations": 33,
+            "final_price_sample_sd": 0.10658101895205997
+          },
+          "files_sha256": {
+            "trading.agents.csv": "80197bb7ca6ae743bd65009ffdea4906d8740d2d0653a2ca4f3145d4818a08ec",
+            "trading.cells.csv": "cd95c2625a86c20145957286a242b685eced663a755aacb6e347052e251329b2",
+            "trading.scenario.txt": "2530b8242533a65fae0a22cc80788f815d0cb531ecd68de723f734f154e401cc",
+            "trading.summary.csv": "715ae9026ff163c89c5cac530a6c3ae39457f545c31e2690a33da47a7c57d747",
+            "trading.trades.csv": "9763831e6e88171aae9084fe47241564a3cfc82e0daf1afc458a1f0dbe815610"
+          }
+        }
+      ]
+    },
+    {
+      "variant": "observation",
+      "changed_source_files": [
+        "src/SugarScape/Agent/Agent.hs"
+      ],
+      "binary_sha256": "23caefbdcabd7f2f056e1f542b6ed4baa264586a93ec528adac31cc6d7b5a80e",
+      "cases": [
+        {
+          "scenario": "wealth",
+          "horizon": 200,
+          "agent_observations": 50000,
+          "summary_field_differing_timesteps": {
+            "time": 0,
+            "population": 0,
+            "infected": 0,
+            "zero_dominant": 0,
+            "red": 0,
+            "blue": 0,
+            "agent_sugar": 200,
+            "agent_spice": 0,
+            "trade_count": 0,
+            "price_sum": 0,
+            "price_sum_squares": 0,
+            "environment_sugar": 0,
+            "environment_spice": 0,
+            "pollution": 0
+          },
+          "spatial": [
+            {
+              "time": 0,
+              "cells": 2551,
+              "agents": 250,
+              "occupiers": 248,
+              "missing_occupier_ids": [
+                43,
+                191
+              ],
+              "coordinate_disagreements": 2
+            },
+            {
+              "time": 200,
+              "cells": 2551,
+              "agents": 250,
+              "occupiers": 250,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            }
+          ],
+          "measurements": {
+            "final_population": 250,
+            "final_sugar_gini": 0.4931463349145262,
+            "final_sugar_skewness": 1.274144972900377,
+            "final_sugar_excess_kurtosis": 1.264641941537655,
+            "mean_population_last300": null,
+            "final_trade_observations": 0,
+            "final_price_sample_sd": null
+          },
+          "files_sha256": {
+            "wealth.agents.csv": "662184c9d7b82029aa7efe22284bebc13081c2d518c7b5870482fbef9e3bc577",
+            "wealth.cells.csv": "897976879e36777ab68417792af186d35ac67424a5a35aa5f41be896c09489ff",
+            "wealth.scenario.txt": "885b256aa6f11051859343561166bdd9b75e408d1f75d513eb808e257513c403",
+            "wealth.summary.csv": "6920d1bdbc22fdc3c370b7c645b5bbdf22b89f34249d3750ce938dcf81827ffa",
+            "wealth.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2"
+          }
+        },
+        {
+          "scenario": "carrying",
+          "horizon": 400,
+          "agent_observations": 87502,
+          "summary_field_differing_timesteps": {
+            "time": 0,
+            "population": 0,
+            "infected": 0,
+            "zero_dominant": 0,
+            "red": 0,
+            "blue": 0,
+            "agent_sugar": 400,
+            "agent_spice": 0,
+            "trade_count": 0,
+            "price_sum": 0,
+            "price_sum_squares": 0,
+            "environment_sugar": 0,
+            "environment_spice": 0,
+            "pollution": 0
+          },
+          "spatial": [
+            {
+              "time": 0,
+              "cells": 2551,
+              "agents": 400,
+              "occupiers": 394,
+              "missing_occupier_ids": [
+                43,
+                191,
+                301,
+                330,
+                360,
+                379
+              ],
+              "coordinate_disagreements": 6
+            },
+            {
+              "time": 400,
+              "cells": 2551,
+              "agents": 207,
+              "occupiers": 207,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            }
+          ],
+          "measurements": {
+            "final_population": 207,
+            "final_sugar_gini": 0.356833132990263,
+            "final_sugar_skewness": -0.21676659280950214,
+            "final_sugar_excess_kurtosis": -1.2895597259803047,
+            "mean_population_last300": 210.39333333333335,
+            "final_trade_observations": 0,
+            "final_price_sample_sd": null
+          },
+          "files_sha256": {
+            "carrying.agents.csv": "f1fa97a09d4641000a3588c1469425934c663dda6a2cb2313c0ac7dac1e4ca26",
+            "carrying.cells.csv": "623c4bb06b8d3a15db9203ea1c0a6ea4386c1870ff9b5774557f3f8d70511938",
+            "carrying.scenario.txt": "ab5539da62d187a3f6ab2ce6dae42430d7d635b10da275534b79630c1621f0c4",
+            "carrying.summary.csv": "6003d642061d98944c74adb3082f146c55750a72f0b846c73e16b2d37f7c7c27",
+            "carrying.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2"
+          }
+        },
+        {
+          "scenario": "trading",
+          "horizon": 1000,
+          "agent_observations": 62102,
+          "summary_field_differing_timesteps": {
+            "time": 0,
+            "population": 0,
+            "infected": 0,
+            "zero_dominant": 0,
+            "red": 0,
+            "blue": 0,
+            "agent_sugar": 1000,
+            "agent_spice": 1000,
+            "trade_count": 976,
+            "price_sum": 1000,
+            "price_sum_squares": 1000,
+            "environment_sugar": 0,
+            "environment_spice": 0,
+            "pollution": 0
+          },
+          "spatial": [
+            {
+              "time": 0,
+              "cells": 2551,
+              "agents": 200,
+              "occupiers": 198,
+              "missing_occupier_ids": [
+                43,
+                191
+              ],
+              "coordinate_disagreements": 2
+            },
+            {
+              "time": 1000,
+              "cells": 2551,
+              "agents": 57,
+              "occupiers": 57,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            }
+          ],
+          "measurements": {
+            "final_population": 57,
+            "final_sugar_gini": 0.5731281644145891,
+            "final_sugar_skewness": 0.8369592211775608,
+            "final_sugar_excess_kurtosis": -0.7798260906503045,
+            "mean_population_last300": null,
+            "final_trade_observations": 22,
+            "final_price_sample_sd": 0.01918670258049914
+          },
+          "files_sha256": {
+            "trading.agents.csv": "7c9d71f9e3fe9d97aec8f4bd60d95e6c3145cb8be6f631e69f57e504b5a75589",
+            "trading.cells.csv": "62541308d0bb4067b5da9fc81d670e3e1c3464cdedde960f198805af01c4b906",
+            "trading.scenario.txt": "2530b8242533a65fae0a22cc80788f815d0cb531ecd68de723f734f154e401cc",
+            "trading.summary.csv": "9d4b7506b87f18986b29dbd73b36a0fb94556a9a41dd9e445e65844ed56f7cb0",
+            "trading.trades.csv": "80f8d877c0740315cf2fbccab86ba0cad792b28b2e84885cb015598fd0b07e92"
+          }
+        }
+      ]
+    },
+    {
+      "variant": "both",
+      "changed_source_files": [
+        "src/SugarScape/Agent/Agent.hs",
+        "src/SugarScape/Core/Discrete.hs"
+      ],
+      "binary_sha256": "0fb3c7fb3513562cb1735435a17e08cc81b2b6f927206cabf4d891ebe0214630",
+      "cases": [
+        {
+          "scenario": "wealth",
+          "horizon": 200,
+          "agent_observations": 50000,
+          "summary_field_differing_timesteps": {
+            "time": 0,
+            "population": 0,
+            "infected": 0,
+            "zero_dominant": 0,
+            "red": 0,
+            "blue": 0,
+            "agent_sugar": 199,
+            "agent_spice": 0,
+            "trade_count": 0,
+            "price_sum": 0,
+            "price_sum_squares": 0,
+            "environment_sugar": 201,
+            "environment_spice": 0,
+            "pollution": 0
+          },
+          "spatial": [
+            {
+              "time": 0,
+              "cells": 2601,
+              "agents": 250,
+              "occupiers": 250,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            },
+            {
+              "time": 200,
+              "cells": 2601,
+              "agents": 250,
+              "occupiers": 250,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            }
+          ],
+          "measurements": {
+            "final_population": 250,
+            "final_sugar_gini": 0.4932332814930016,
+            "final_sugar_skewness": 1.5450593646182882,
+            "final_sugar_excess_kurtosis": 2.0666640457619936,
+            "mean_population_last300": null,
+            "final_trade_observations": 0,
+            "final_price_sample_sd": null
+          },
+          "files_sha256": {
+            "wealth.agents.csv": "2d11f1d70548e293df41217e5af5570e88cb2c2233fb237399882a5a73892f26",
+            "wealth.cells.csv": "8804823a16d975399f718f29447c314ad25414274429381d9486277dc027c9e1",
+            "wealth.scenario.txt": "885b256aa6f11051859343561166bdd9b75e408d1f75d513eb808e257513c403",
+            "wealth.summary.csv": "231d1b0269e778c4ec084d34a7943def20c9e87370dc0b75ac4af564003dd8da",
+            "wealth.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2"
+          }
+        },
+        {
+          "scenario": "carrying",
+          "horizon": 400,
+          "agent_observations": 87225,
+          "summary_field_differing_timesteps": {
+            "time": 0,
+            "population": 232,
+            "infected": 0,
+            "zero_dominant": 0,
+            "red": 232,
+            "blue": 0,
+            "agent_sugar": 400,
+            "agent_spice": 0,
+            "trade_count": 0,
+            "price_sum": 0,
+            "price_sum_squares": 0,
+            "environment_sugar": 401,
+            "environment_spice": 0,
+            "pollution": 0
+          },
+          "spatial": [
+            {
+              "time": 0,
+              "cells": 2601,
+              "agents": 400,
+              "occupiers": 400,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            },
+            {
+              "time": 400,
+              "cells": 2601,
+              "agents": 207,
+              "occupiers": 207,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            }
+          ],
+          "measurements": {
+            "final_population": 207,
+            "final_sugar_gini": 0.36325663510214823,
+            "final_sugar_skewness": -0.210660388945673,
+            "final_sugar_excess_kurtosis": -1.3466237078399539,
+            "mean_population_last300": 209.75333333333333,
+            "final_trade_observations": 0,
+            "final_price_sample_sd": null
+          },
+          "files_sha256": {
+            "carrying.agents.csv": "2046ab50df0bceba4ebad15e86ccf37d977d426def73396f3abda662b4dd303b",
+            "carrying.cells.csv": "d87715fcb82b75e80dc8face24e5003e7f3bca120ad26643049343d9c66ca0f3",
+            "carrying.scenario.txt": "ab5539da62d187a3f6ab2ce6dae42430d7d635b10da275534b79630c1621f0c4",
+            "carrying.summary.csv": "1f288e7020cc7f62823bce6e9952fffea056d9230bbd69383274fe537b7328ce",
+            "carrying.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2"
+          }
+        },
+        {
+          "scenario": "trading",
+          "horizon": 1000,
+          "agent_observations": 66966,
+          "summary_field_differing_timesteps": {
+            "time": 0,
+            "population": 990,
+            "infected": 0,
+            "zero_dominant": 0,
+            "red": 990,
+            "blue": 0,
+            "agent_sugar": 1000,
+            "agent_spice": 1000,
+            "trade_count": 979,
+            "price_sum": 1000,
+            "price_sum_squares": 1000,
+            "environment_sugar": 1001,
+            "environment_spice": 1001,
+            "pollution": 0
+          },
+          "spatial": [
+            {
+              "time": 0,
+              "cells": 2601,
+              "agents": 200,
+              "occupiers": 200,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            },
+            {
+              "time": 1000,
+              "cells": 2601,
+              "agents": 61,
+              "occupiers": 61,
+              "missing_occupier_ids": [],
+              "coordinate_disagreements": 0
+            }
+          ],
+          "measurements": {
+            "final_population": 61,
+            "final_sugar_gini": 0.5770453622051062,
+            "final_sugar_skewness": 0.8935277593756542,
+            "final_sugar_excess_kurtosis": -0.49060860430865416,
+            "mean_population_last300": null,
+            "final_trade_observations": 25,
+            "final_price_sample_sd": 0.1815242930336972
+          },
+          "files_sha256": {
+            "trading.agents.csv": "62a7f96d8323f869c318b45fb799506a7c0777e52b67fd7ad57f063032294810",
+            "trading.cells.csv": "cd95c2625a86c20145957286a242b685eced663a755aacb6e347052e251329b2",
+            "trading.scenario.txt": "2530b8242533a65fae0a22cc80788f815d0cb531ecd68de723f734f154e401cc",
+            "trading.summary.csv": "6c9686e8aa8cd0d0c68a43b6f07dac2f7106a631f29bfdd2a3150e20f726af02",
+            "trading.trades.csv": "beabaf12c6002bb9ba791e3fb97c03628f8f5b1dfc46a5ecc4f3023853e88e9a"
+          }
+        }
+      ]
+    }
+  ]
+}

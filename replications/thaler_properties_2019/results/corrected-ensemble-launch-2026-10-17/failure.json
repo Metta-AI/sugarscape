@@ -1,0 +1,6 @@
+{
+  "terminal_exit": 1,
+  "completed_runs": 0,
+  "reason": "Concurrent stack path requests raced initializing an unbuilt package database after executable-only build. No output directories created.",
+  "recovery": "v2 builds the same full component set as baseline and resolves compiler/install path serially, with executable existence gate before workers."
+}
