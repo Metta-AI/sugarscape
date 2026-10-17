@@ -51,4 +51,6 @@ fig.text(
 fig.tight_layout(rect=(0, 0.04, 1, 0.94))
 fig.savefig(root / "population.png", dpi=180)
 fig.savefig(root / "population.svg")
+svg = root / "population.svg"
+svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
 plt.close(fig)
