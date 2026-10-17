@@ -1080,3 +1080,39 @@ The interval auditor requires pinned terminal evidence for interrupted prefixes
 and rejects a missing receipt. A complete re-audit of the previously published
 count/length-only cohort preserves every scientific result and its trajectory
 audit hash. No original native output was changed.
+
+## Exploratory culture composition on individual hills
+
+[Spatial audit](results/culture-spatial-regions-2026-10-17/audit.json) reads all 200
+completed trajectories from the published culture archives. It verifies compressed and
+uncompressed file hashes, seed coverage, final population totals, and region geometry.
+
+We define two connected regions at sugar capacity ≥3 (276 cells each), and two
+peak regions at capacity 4 (69 cells each). These boundaries and the regional 95%
+check are exploratory choices, not paper-specified replication criteria.
+
+| Final spatial observation | Original | Corrected |
+| --- | ---: | ---: |
+| Global red fraction between 45% and 55% | 29/100 | 36/100 |
+| Those runs have opposite majorities in both region definitions | 29/29 | 36/36 |
+| Those runs reach 95% local dominance on both capacity ≥3 regions | 25/29 | 31/36 |
+| Those runs reach 95% local dominance on both capacity 4 regions | 24/29 | 33/36 |
+
+Thus, global balance corresponds to spatial separation in this cohort, but does not
+always imply 95% local dominance. Across all seeds, both broader regions reach 95%
+local dominance in 69/100 original and 71/100 corrected runs. This may be the same
+or different culture on the two hills. These diagnostics do not complete the paper.
+
+The original cell exports also change which boundary coordinates are represented.
+The existing coordinate alias affects x=0 and x=50; overlapping coordinates retain
+their capacities, and both high-sugar region definitions remain identical. Corrected
+exports retain all 2,601 coordinates. Original pre-event observation limitations remain.
+
+After restoring the four culture archives into the documented readback layout:
+
+```bash
+python replications/thaler_properties_2019/audit_culture_regions.py \
+  /path/to/readback \
+  replications/thaler_properties_2019/results/culture-ensembles-2026-10-17/original-protocol.json \
+  /path/to/new-spatial-audit.json
+```
