@@ -25,7 +25,7 @@ Reproduce the Sugarscape environment and agent-property demonstrations, the full
 statistical procedure, and the validation appendix's reported outcomes. Preserve all
 published positive and negative outcomes rather than counting successful checks alone.
 The appendix covers terracing, carrying capacity, wealth, migration, pollution,
-mating, inheritance, culture, combat, lending, trading, and disease.
+mating, inheritance, culture, combat, spice, trading, and disease.
 
 Each scenario needs a source-to-claim mapping, native output, independent measurement,
 and an explicit outcome. The paper's 100-run statistical comparisons must retain
@@ -84,8 +84,8 @@ Confidence intervals and source-defined checks will be reported separately.
 Non-rejection is not proof of equality. Undefined statistics remain explicit;
 no missing or failed runs will be silently dropped. These 300 runs address three
 quantitative targets; the remaining case-study and appendix requirements remain.
-All three ensembles are running. Wealth index 0 completed first, and its remaining
-worker starts at index 1; no duplicate input is counted. Each single-core worker
+Wealth and carrying each completed all 100 runs. Trading remains active.
+Wealth index 0 and indices 1–99 ran separately; no duplicate input is counted. Each single-core worker
 has a six-hour limit and retains interrupted output without crediting completion.
 
 ## Native exporter and independent audit
@@ -119,3 +119,70 @@ Without `--allow-prefix`, all 100 distinct indices and each declared interval's
 completion marker are required. Prefix audits produce no confidence-interval claims.
 The auditor preserves the source library's moment conventions and records zero/one-price
 samples as undefined alongside its zero-standard-deviation convention.
+
+## Complete wealth ensemble
+
+[All 100 native outputs and the independent audit](results/wealth-ensemble-2026-10-17)
+cover 20,000 steps and 5,000,000 agent observations. The frozen comparisons are:
+
+| Metric | Mean | 95% confidence interval | Target | Target inside interval |
+| --- | ---: | --- | ---: | --- |
+| Gini | 0.482337 | [0.479581, 0.485094] | 0.48 | Yes |
+| Skewness | 1.577782 | [1.544532, 1.611032] | 1.5 | No |
+| Excess kurtosis | 2.334721 | [2.176770, 2.492672] | 2.0 | No |
+
+These intervals concern the unchanged historical implementation and the frozen seeds.
+They do not establish equality, equivalence, or a completed negative paper replication.
+Source defects and the paper's approximate targets require investigation first.
+Compressed raw exports can be restored with `gzip -dk` and passed to `audit_ensemble.py`.
+
+## Complete carrying-capacity ensemble
+
+[All 100 native outputs and the independent audit](results/carrying-ensemble-2026-10-17)
+cover 40,000 steps and 8,550,893 agent observations. Mean population over times
+101–400 is 205.815833, with a 95% confidence interval of [204.654564, 206.977102].
+Neither the code's target of 204 nor the appendix's target of 210 lies inside it.
+This is an unresolved quantitative difference, subject to the source issues below.
+
+## Observer validation and spatial discrepancies
+
+[Observe.hs](Observe.hs) calls the unchanged historical simulator and exports agent,
+trade, disease, culture, environment, and occupancy measurements. It selects the
+scenario constructor directly, avoiding the CLI's duplicate scenario-name ambiguity.
+[Native evidence](results/observer-2026-10-17) covers three complete trajectories.
+The independent comparison matches all 199,604 shared agent records and 21,702 trades
+exactly against the original exporter. All 60 archived source files remain unchanged.
+
+The first spatial audit incorrectly assumed a 50×50 grid. That failed assumption and
+its superseded report remain preserved. The source explicitly declares 51×51.
+Two source behaviors explain why the stronger spatial check cannot pass as written:
+
+- `Discrete.coordToIdx` uses `y * (xDim - 1) + x`. On the declared grid, 2,601
+  coordinates map to 2,551 indices. Each row boundary aliases two distinct coordinates.
+  Initial occupancy omits 2 of 250 wealth agents, 6 of 400 carrying agents, and 2 of
+  200 trading agents for seed 602352629.
+- `Agent.agentMsf` constructs observables from pre-event `s`, although the event
+  returns updated `s'`. Environment occupancy and exported agent observables therefore
+  describe different moments. Comparing their positions at the same timestamp is invalid.
+
+The observer has not corrected either behavior. Disease, cultural, and spatial claims
+must distinguish original observations from actual post-event state. No spatial or
+whole-paper negative verdict follows from these checks.
+
+The terracing property has additional source/prose differences: `drop 50` chooses time
+51 as its baseline, and `onTheEdge` returns true when every neighbor has the same level.
+Preserve both the source predicate and the prose criterion in subsequent measurements.
+The appendix's A10 concerns spice. The paper separately mentions lending, but its
+`src/test/Agent/Lending.hs` contains only a TODO; no implemented lending property exists.
+
+Reproduce the observer comparison after restoring the historical source and native
+outputs into the directories used by the original launch:
+
+```bash
+python replications/thaler_properties_2019/audit_observer.py \
+  /path/to/observer-output /path/to/ensemble-outputs --output /path/to/new-audit.json
+```
+
+The observer directory must contain `source/` at the pinned revision and uncompressed
+CSV files. Ensemble directories must contain the three original seed-602352629 exports.
+The independent audit checks the complete trajectories, not isolated model functions.

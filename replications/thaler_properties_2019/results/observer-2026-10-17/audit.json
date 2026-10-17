@@ -1,0 +1,157 @@
+{
+  "source_files_unchanged": 60,
+  "cases": [
+    {
+      "scenario": "wealth",
+      "horizon": 200,
+      "matching_agent_observations": 50000,
+      "matching_trade_observations": 0,
+      "raw_sha256": "1d1623473f40846eefe0b4391f10e1cb2aa583ad700a933c3241fa7fd853f05c",
+      "observer_sha256": {
+        "wealth.agents.csv": "5cb5f83f4ab09c5d074d4d3e3a541da4d49d33b9c28e8b502ae1d6f4075100fe",
+        "wealth.cells.csv": "897976879e36777ab68417792af186d35ac67424a5a35aa5f41be896c09489ff",
+        "wealth.scenario.txt": "885b256aa6f11051859343561166bdd9b75e408d1f75d513eb808e257513c403",
+        "wealth.summary.csv": "d418c1698f48762fbe22cf9e5b42c89db8b9017bc13626f19d2df86e4da74c63",
+        "wealth.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2"
+      },
+      "spatial_discrepancies": [
+        {
+          "time": 0,
+          "cells": 2551,
+          "nominal_cells": 2601,
+          "occupiers": 248,
+          "agents": 250,
+          "coordinate_disagreements": 2,
+          "unoccupied_agent_ids": [
+            43,
+            191
+          ],
+          "declared_dimensions": [
+            51,
+            51
+          ],
+          "index_formula": "50*y+x",
+          "distinct_nominal_indices": 2551
+        },
+        {
+          "time": 200,
+          "cells": 2551,
+          "nominal_cells": 2601,
+          "occupiers": 250,
+          "agents": 250,
+          "coordinate_disagreements": 217,
+          "unoccupied_agent_ids": [],
+          "declared_dimensions": [
+            51,
+            51
+          ],
+          "index_formula": "50*y+x",
+          "distinct_nominal_indices": 2551
+        }
+      ]
+    },
+    {
+      "scenario": "carrying",
+      "horizon": 400,
+      "matching_agent_observations": 87502,
+      "matching_trade_observations": 0,
+      "raw_sha256": "257ee1849abb28e7930baf0442e37e2f21da4d6054b1c1baaefb5311353f4df9",
+      "observer_sha256": {
+        "carrying.agents.csv": "a81608ab6ec3892512bf21d1a9035b7e8c2a74222b8851a09ef6332bcf674d7e",
+        "carrying.cells.csv": "623c4bb06b8d3a15db9203ea1c0a6ea4386c1870ff9b5774557f3f8d70511938",
+        "carrying.scenario.txt": "ab5539da62d187a3f6ab2ce6dae42430d7d635b10da275534b79630c1621f0c4",
+        "carrying.summary.csv": "a4d78a6da2a4c94b4edf85656ca46617dbc493c72dfa19710f82873c5ef46b8c",
+        "carrying.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2"
+      },
+      "spatial_discrepancies": [
+        {
+          "time": 0,
+          "cells": 2551,
+          "nominal_cells": 2601,
+          "occupiers": 394,
+          "agents": 400,
+          "coordinate_disagreements": 6,
+          "unoccupied_agent_ids": [
+            43,
+            191,
+            301,
+            330,
+            360,
+            379
+          ],
+          "declared_dimensions": [
+            51,
+            51
+          ],
+          "index_formula": "50*y+x",
+          "distinct_nominal_indices": 2551
+        },
+        {
+          "time": 400,
+          "cells": 2551,
+          "nominal_cells": 2601,
+          "occupiers": 207,
+          "agents": 207,
+          "coordinate_disagreements": 187,
+          "unoccupied_agent_ids": [],
+          "declared_dimensions": [
+            51,
+            51
+          ],
+          "index_formula": "50*y+x",
+          "distinct_nominal_indices": 2551
+        }
+      ]
+    },
+    {
+      "scenario": "trading",
+      "horizon": 1000,
+      "matching_agent_observations": 62102,
+      "matching_trade_observations": 21702,
+      "raw_sha256": "a55a98e6d2b22735d458e2d89551e0147880d8de808d5e29e140e1535c48c0f1",
+      "observer_sha256": {
+        "trading.agents.csv": "0258654f2649a1ab4780b700b08f058e3baf95182ef29993ed3353f7d4b79c00",
+        "trading.cells.csv": "62541308d0bb4067b5da9fc81d670e3e1c3464cdedde960f198805af01c4b906",
+        "trading.scenario.txt": "2530b8242533a65fae0a22cc80788f815d0cb531ecd68de723f734f154e401cc",
+        "trading.summary.csv": "f02028286674b5648af7f17c668e0d58753cef4a776e4ff3824ddf1b251345f9",
+        "trading.trades.csv": "bddbeaf5ba98ad26c590631820a11112cbcfa8a24ebf6162fc1eca87c0336250"
+      },
+      "spatial_discrepancies": [
+        {
+          "time": 0,
+          "cells": 2551,
+          "nominal_cells": 2601,
+          "occupiers": 198,
+          "agents": 200,
+          "coordinate_disagreements": 2,
+          "unoccupied_agent_ids": [
+            43,
+            191
+          ],
+          "declared_dimensions": [
+            51,
+            51
+          ],
+          "index_formula": "50*y+x",
+          "distinct_nominal_indices": 2551
+        },
+        {
+          "time": 1000,
+          "cells": 2551,
+          "nominal_cells": 2601,
+          "occupiers": 57,
+          "agents": 57,
+          "coordinate_disagreements": 47,
+          "unoccupied_agent_ids": [],
+          "declared_dimensions": [
+            51,
+            51
+          ],
+          "index_formula": "50*y+x",
+          "distinct_nominal_indices": 2551
+        }
+      ]
+    }
+  ],
+  "interpretation": "Shared measurements match exactly. Spatial invariants fail in the unchanged model: coordToIdx uses width-1, aliasing 50 pairs on its declared 51x51 grid. Agent.hs additionally constructs observables from pre-event s rather than updated s-prime; same-time occupancy agreement is not a valid invariant for those observations. No corrected-model or paper-negative verdict."
+}
