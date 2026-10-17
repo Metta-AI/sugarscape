@@ -315,3 +315,23 @@ g++-16 -std=c++17 -O2 -Wall -Wextra /new/extracted/initial.cpp -o initial
 ./initial > state.csv 2> hotspots.log
 python replications/richmond_2023/audit_initial_state.py state.csv hotspots.log /new/audit
 ```
+
+## Released initial image: compiler-sensitive reproduction
+
+[The image comparison](results/initial-image-comparison-2026-10-17/image-comparison.json)
+matches all 65,536 initial landscape cell color classes using Apple Clang/libc++.
+The same extracted source and seed under GNU C++/libstdc++ matches 13,579 classes.
+Both host reconstructions pass the independent capacity audit; their occupied counts differ: 11,171 versus 11,025.
+This demonstrates runtime-sensitive initialization without changing the model, seed, or random-draw order.
+
+`compare_initial_image.py IMAGE GNU_CSV CLANG_CSV NEW_JSON` samples the released image at cell centers.
+It normalizes RGB intensity and selects the closest of five Viridis classes, using the original coordinate orientation.
+No crop, seed, palette, or model parameter is fitted.
+The original image entered the repository in February 2022.
+The January 2023 benchmark update retains a byte-identical host initialization body; hashes and commit IDs are preserved in `provenance.json`.
+Compiler output, dynamic library identities, complete compressed Clang states, hotspot coordinates, and independent audit accompany the comparison.
+
+This reproduces the initial landscape's categorical appearance, not every rendered pixel or the historical compiler identity.
+It does not establish occupied-agent image parity, GPU-state parity, or the first and fiftieth simulation states.
+The active quantitative benchmark retains its original initialization; matching an older illustration does not justify changing it.
+The original-engine observer remains necessary, and this study remains incomplete.
