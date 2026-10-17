@@ -93,10 +93,10 @@ The pinned repository head also contains later CI-only changes; it is not claime
 
 Its masked autoregressive constructor creates two blocks per layer, followed by `LULinearPermute`, with a diagonal Gaussian base.
 Calling it with six dimensions, four layers, and 32 hidden units matches the paper’s stated architecture.
-The author’s ordinary-normal inference workflow is now bootstrapping unchanged in an isolated Julia depot, under a 30-minute cap.
+The author’s ordinary-normal inference workflow completed unchanged in an isolated Julia depot; all 18 checks passed (see validation below).
 [The launch manifest](results/flow-recovery-2026-10-17/manifest.json) retains source and lockfile hashes.
 Python Torch 2.6.0 and normflows 1.7.3 are explicit reconstruction choices; the author’s CI installs these packages without version pins.
-This workflow does not yet establish successful Sugarscape calibration or even successful wrapper execution.
+This establishes wrapper execution, but does not establish Sugarscape calibration.
 
 Several settings still prevent a faithful paper-calibration claim:
 
@@ -147,3 +147,31 @@ The full raw log and terminal receipt are retained, and every recorded source/pr
 This establishes an executable Julia–PyTorch flow and inference path with the declared runtime versions.
 It does not validate the missing Sugarscape prior, validation selection, 5,000-epoch calibration, or historical Python dependency versions.
 The calibration fidelity gaps above remain open.
+
+
+## Quantified initialization-law discrepancy
+
+The pinned `DiffBeta` implementation samples
+`X = (1 - U^(1/b))^(1/a)` for uniform `U`.
+Its cumulative distribution is `1 - (1 - x^a)^b`, and its moments are `E[X^r] = b B(1+r/a, b)`.
+This differs from the Beta distribution named in the paper.
+
+[The initialization analysis](results/initialization-law-2026-10-17/analysis.json)
+holds the native offsets and scales fixed to isolate the distribution choice:
+
+| Parameter | Shapes | Native expected value | Beta expected value with same scaling |
+|---|---|---:|---:|
+| Metabolism (`2 + 2X`) | 2, 5 | 2.738817 | 2.571429 |
+| Initial wealth (`6 + 19X`) | 5, 2 | 20.393939 | 19.571429 |
+
+On a 100,001-point unit grid, maximum cumulative-distribution differences are 0.204684 and 0.115814 respectively.
+[Independent R integration](results/initialization-law-2026-10-17/independent-audit.json)
+verifies moments and reference distribution values in 2,014 comparisons, with maximum error 1.09e-12.
+The analysis checks source revision, clean tracked files, trace configuration, and all six input CSV hashes.
+Observed initialization means across 300 agents from the three validated native trajectories are 2.754051 and 20.310633.
+These observations are descriptive; no statistical rejection or calibrated-posterior claim follows.
+
+![Native initialization distributions and the stated Beta distributions](results/initialization-law-2026-10-17/initialization-cdfs.png)
+
+`analyze_initialization.py SOURCE TRACE NEW_OUTPUT` reproduces the analysis from the retained movement traces.
+The native sampler remains unchanged. Its effect on the paper’s calibration comparisons still requires investigation.
