@@ -2,9 +2,9 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
-Latest audited checkpoint: **922 / 2,000 homogeneous configurations**, covering 1,717,086 observations.
-The raw ensemble is complete at 500 inputs; original-seed prefixes are altruistic 213, egoistic 159, and utilitarian 50.
-[Checkpoint evidence](results/homogeneous-checkpoint-2026-10-17) adds 332 completed runs; two agreeing pilot duplicates remain excluded.
+Latest audited checkpoint: **1,489 / 2,000 homogeneous configurations**, covering 2,991,396 observations.
+The raw ensemble is complete at 500 inputs; original-seed prefixes are altruistic 475, egoistic 381, and Bentham 133.
+[Checkpoint evidence](results/homogeneous-checkpoint-2026-10-17-2313) adds 102 runs beyond the prior 1,387-input checkpoint; two agreeing pilot duplicates remain excluded.
 All retained intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. Three batches remain active.
 Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
 
@@ -779,3 +779,23 @@ source pin, and terminal condition. Reconciliation rechecks previous audit hashe
 Compact audits, frozen ledger, export receipts, and retrieval metadata are retained here;
 the raw archive remains in task-owned object storage and the local evidence directory.
 This checkpoint does not establish the paper's separate 500-seed timing experiment or complete the study.
+
+## Homogeneous checkpoint: 1,489 original inputs
+
+[The frozen checkpoint](results/homogeneous-checkpoint-2026-10-17-2313)
+adds 102 unique original inputs and 229,935 observations, bringing coverage to 1,489 inputs and 2,991,396 observations.
+The three native batches remain active. Their completed ledgers were frozen before auditing;
+active unledgered seeds are excluded and original completed outputs remain untouched.
+
+| Model | Audited inputs | Dead | Worse | Better or equal |
+| --- | ---: | ---: | ---: | ---: |
+| Raw | 500/500 | 348 | 5 | 147 |
+| Altruistic | 475/500 | 328 | 8 | 139 |
+| Egoistic | 381/500 | 247 | 5 | 129 |
+| Bentham | 133/500 | 0 | 0 | 133 |
+
+These use the released plotting rule, including equality with better; the paper's prose boundary differs.
+Incomplete prefixes are not full-ensemble proportions or additional completed studies.
+All recorded source pins, original configurations, compressed/raw trajectory hashes, finite observations and terminal conditions pass.
+Reconciliation verifies prior audit hashes and original seed ordering; two agreeing duplicate pilot records still count only once.
+The retained manifest, frozen ledger, audits and reconciliation command identify every included trajectory.
