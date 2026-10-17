@@ -83,3 +83,26 @@ To reproduce the retained analysis, verify `sha256.json`, extract `trajectories.
 A strict equality check on aggregate mean wealth failed by at most 2.14e-14 across three seeds. The failure and original runner are retained. A full-state follow-up found **405,000 exactly identical values** across all six histories: resources, x/y positions, individual wealth, survival, and occupancy. Thus the observed aggregate discrepancy arises during reduction, not from changed state trajectories in these three seeds. All 450 derivatives also match the earlier pilot exactly.
 
 `results/gradient-primal-control-2026-10-17` contains both complete histories and receipts. Extract `full-states.tar.gz` and run `julia --startup-file=no replications/quera_2025/verify_primal_states.jl EXTRACTED_DIRECTORY`. This verifier uses only Julia’s Serialization standard library, independently reloads both histories, and requires exact equality. It does not infer state equality for the separate 256-seed ensemble.
+
+## Recovered calibration flow dependency
+
+The author’s [PyTorchNormalizingFlows.jl repository](https://github.com/arnauqb/PyTorchNormalizingFlows.jl/tree/01438e4c95c3f924704eb85945950c6a03ab8502) supplies the separate Julia/Python flow wrapper.
+Its UUID matches the dependency in the BlackBIRDS submission Project file.
+The flow implementation was last changed in commit `3ac0bac7a80e45544e4982ebd882d784a2386a4d` on March 16, 2025.
+The pinned repository head also contains later CI-only changes; it is not claimed as the paper’s exact runtime revision.
+
+Its masked autoregressive constructor creates two blocks per layer, followed by `LULinearPermute`, with a diagonal Gaussian base.
+Calling it with six dimensions, four layers, and 32 hidden units matches the paper’s stated architecture.
+The author’s ordinary-normal inference workflow is now bootstrapping unchanged in an isolated Julia depot, under a 30-minute cap.
+[The launch manifest](results/flow-recovery-2026-10-17/manifest.json) retains source and lockfile hashes.
+Python Torch 2.6.0 and normflows 1.7.3 are explicit reconstruction choices; the author’s CI installs these packages without version pins.
+This workflow does not yet establish successful Sugarscape calibration or even successful wrapper execution.
+
+Several settings still prevent a faithful paper-calibration claim:
+
+- The appendix states AdamW, beta values 0.9/0.99, unit-gradient normalization, five Monte Carlo samples, 5,000 epochs, and MMD sample size two.
+- The released BlackBIRDS callback selects the highest reported training ELBO; its interface contains no separate validation-data evaluation.
+- The paper selects the lowest validation loss across epochs, so the released callback cannot silently stand in for that procedure.
+- Exact Sugarscape prior support, learning rate, weight decay, validation construction, and loss-kernel configuration remain unrecovered.
+
+Recover or explicitly declare these choices before fitting; a convenient alternative prior or stopping rule cannot establish the published posterior result.
