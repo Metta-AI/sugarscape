@@ -417,3 +417,23 @@ python replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-1
 
 The evidence root includes the retained local baseline, extracted checkpoint and production plan.
 The pinned runtime files remain in its sibling `remote-cpu-pilot-001/local-package-proof-002` directory.
+
+### Fifth remote reference checkpoint
+
+[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-006-independent-validation.json)
+checks 287 sealed chunks containing 28,556 remote inputs. Together with the retained
+7,933 local inputs, coverage is **36,489/55,000 unique simulations**, with **72,978
+exact Gini comparisons**. All 53 pinned source and runtime files match.
+
+This adds 8,962 unique simulations and 17,924 exact metric comparisons. Every prior
+checkpoint-five chunk's results, manifest, and independent audit remains byte-identical
+in this snapshot: 591 files checked. Earlier checkpoints are contained, not added again.
+
+The 2,192,693-byte archive retains completed chunks only. Its export exited successfully;
+the eight-worker simulation queue continues. The remaining reference inputs and generated
+landscape ensembles still prevent a whole-paper replication verdict.
+
+```sh
+python replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/validate_checkpoint_006.py \
+  /path/to/remote-reference-queue-001 /new/checkpoint-validation.json
+```
