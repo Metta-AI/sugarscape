@@ -1,0 +1,923 @@
+{
+  "validated_runs": 100,
+  "required_interval_runs": 100,
+  "complete_interval": true,
+  "complete_group": true,
+  "model": "egoisticHalfLookaheadBinary",
+  "steps": 5000,
+  "ordinal_interval": [
+    0,
+    100
+  ],
+  "counts": {
+    "dead": 69,
+    "worse": 1,
+    "better_or_equal": 30
+  },
+  "observations": 165629,
+  "results": [
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary1071049487305188627.config",
+      "seed": 1071049487305188627,
+      "observations": 118,
+      "final_population": 0,
+      "final_timestep": 117,
+      "outcome": "dead",
+      "trajectory_sha256": "b52d8d1264290863f4dfe4f1b2b6e95d20898c76fbdc4f848129a25af4e2e649"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary1134302205739354507.config",
+      "seed": 1134302205739354507,
+      "observations": 148,
+      "final_population": 0,
+      "final_timestep": 147,
+      "outcome": "dead",
+      "trajectory_sha256": "b91d7357f03406ecc56811f2a2af8274ef428faaa7716c5031ce01faa234cb14"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary1312465699454735571.config",
+      "seed": 1312465699454735571,
+      "observations": 132,
+      "final_population": 0,
+      "final_timestep": 131,
+      "outcome": "dead",
+      "trajectory_sha256": "2e1d5bcbe138727c6aa6590b38a4030861949f6de777b4fd05568eff84c0ff76"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary1626428329783443257.config",
+      "seed": 1626428329783443257,
+      "observations": 159,
+      "final_population": 0,
+      "final_timestep": 158,
+      "outcome": "dead",
+      "trajectory_sha256": "42e3f0bb4c6f5fe003ef3b81655704fd1135fe9012867b8bbbec0a4c11426f6b"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary163513919832119345.config",
+      "seed": 163513919832119345,
+      "observations": 159,
+      "final_population": 0,
+      "final_timestep": 158,
+      "outcome": "dead",
+      "trajectory_sha256": "b46477877018d3856506ba1ebe15ddee65af1570effe537e7ca765c56a93bd67"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary1833994657676604369.config",
+      "seed": 1833994657676604369,
+      "observations": 148,
+      "final_population": 0,
+      "final_timestep": 147,
+      "outcome": "dead",
+      "trajectory_sha256": "51fbfc1dadaa78b28530028596399d761587ffd7a7866db5e13344677757ec6f"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary1867017187136367179.config",
+      "seed": 1867017187136367179,
+      "observations": 127,
+      "final_population": 0,
+      "final_timestep": 126,
+      "outcome": "dead",
+      "trajectory_sha256": "c0e1c4d4b825f7184d89054c73ebc350d5826fe1f1e82007293e6e96dfeb870e"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary1911248790777082224.config",
+      "seed": 1911248790777082224,
+      "observations": 5001,
+      "final_population": 1049,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "416af84f312b91978070ff95fa7c28850f77dfd59dc1921f35a843dc2a9a82b3"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary1962672463621369878.config",
+      "seed": 1962672463621369878,
+      "observations": 251,
+      "final_population": 0,
+      "final_timestep": 250,
+      "outcome": "dead",
+      "trajectory_sha256": "06b0bc1a6fb4895520f9cf5810baef4f4fa3363581c2e4463e4e54e4e54d1c99"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary1994771685947063175.config",
+      "seed": 1994771685947063175,
+      "observations": 5001,
+      "final_population": 523,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "48323ea5377bbb714f4ec599918da2d5dfbc4570be003ec531656455e8a70ce6"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary203185877083823426.config",
+      "seed": 203185877083823426,
+      "observations": 5001,
+      "final_population": 524,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "50f3247716f2c4e6ff1df22aebf26e0925bc8ca14c775395ddf5d444a237818e"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary2055514061623047894.config",
+      "seed": 2055514061623047894,
+      "observations": 5001,
+      "final_population": 976,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "7e8ae5a4ab23bcd1cfa8fb16e94082dcc87eb216af1476feaa6703e18b16b471"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary2228866846466310541.config",
+      "seed": 2228866846466310541,
+      "observations": 134,
+      "final_population": 0,
+      "final_timestep": 133,
+      "outcome": "dead",
+      "trajectory_sha256": "48f4ed5882e67a9b6729e8540ac495088a7dde41bfa1c042dd894759f183dafd"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary2433662336288954484.config",
+      "seed": 2433662336288954484,
+      "observations": 146,
+      "final_population": 0,
+      "final_timestep": 145,
+      "outcome": "dead",
+      "trajectory_sha256": "8f582b18f18a267b85bcb1c3b03d1d8d1844407d3d981b3255a239b71ace881b"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary2434926124998512636.config",
+      "seed": 2434926124998512636,
+      "observations": 5001,
+      "final_population": 507,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "ad933ae2f99ddeec71c0f7aed3f5795d6061fde57fe62c68749c79921c944785"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary252293489594950658.config",
+      "seed": 252293489594950658,
+      "observations": 141,
+      "final_population": 0,
+      "final_timestep": 140,
+      "outcome": "dead",
+      "trajectory_sha256": "11b198f6147001056c64ff73f9c42d778b6625bb90c58a8e352d9d45cfca4b3a"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary2732067017264549820.config",
+      "seed": 2732067017264549820,
+      "observations": 5001,
+      "final_population": 1305,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "ca7ad5c8d452c2c6e1e379a33edd5da236d6914dad97a3b247323a5696f18e1d"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary2803676329200740340.config",
+      "seed": 2803676329200740340,
+      "observations": 125,
+      "final_population": 0,
+      "final_timestep": 124,
+      "outcome": "dead",
+      "trajectory_sha256": "55aaf8bb4c175eadbb69ef3a8b21121cce0d53165e37c2213c26e8efe948d6eb"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary2812980183337209316.config",
+      "seed": 2812980183337209316,
+      "observations": 143,
+      "final_population": 0,
+      "final_timestep": 142,
+      "outcome": "dead",
+      "trajectory_sha256": "87f79b5ff45713274a225d9f64328734df96565e0dd47a4679efcdaac60b35ea"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary2848282104444495269.config",
+      "seed": 2848282104444495269,
+      "observations": 5001,
+      "final_population": 365,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "ac2ab1424fb2e00c3fe67055a85fb01e2d5c48c2b3d63095c2c1c77353e898db"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary2865380092365041549.config",
+      "seed": 2865380092365041549,
+      "observations": 236,
+      "final_population": 0,
+      "final_timestep": 235,
+      "outcome": "dead",
+      "trajectory_sha256": "026e62dd44f9c8ae6a31d59e8cdf2260bb693b2f48f4726ada43f77be1dd95f5"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3106238916268054039.config",
+      "seed": 3106238916268054039,
+      "observations": 134,
+      "final_population": 0,
+      "final_timestep": 133,
+      "outcome": "dead",
+      "trajectory_sha256": "f4f697935d28986671e14628373e67f3821d014486fb60465af8554c3fc11c6d"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3331735877162924787.config",
+      "seed": 3331735877162924787,
+      "observations": 166,
+      "final_population": 0,
+      "final_timestep": 165,
+      "outcome": "dead",
+      "trajectory_sha256": "b4e0db12b4ef814f9cfab51e84d12da1c755e0433cd2df5f1afb311e703c79b2"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3366786063798218481.config",
+      "seed": 3366786063798218481,
+      "observations": 152,
+      "final_population": 0,
+      "final_timestep": 151,
+      "outcome": "dead",
+      "trajectory_sha256": "d9fa1beb0c80cca9e063c23959d96687fce17dbe97f380eedd144cb8a4a6a3f8"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3410580859196785342.config",
+      "seed": 3410580859196785342,
+      "observations": 167,
+      "final_population": 0,
+      "final_timestep": 166,
+      "outcome": "dead",
+      "trajectory_sha256": "5c7948a875c5a016be27589b677b2c4b10f9e6f9a331ff126dd0444187b78b1e"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3417618192233233395.config",
+      "seed": 3417618192233233395,
+      "observations": 156,
+      "final_population": 0,
+      "final_timestep": 155,
+      "outcome": "dead",
+      "trajectory_sha256": "cc7b055c9c54068dcb7f519edef48181888adc768e514cc560bf0324f01fe57c"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3488193512351447750.config",
+      "seed": 3488193512351447750,
+      "observations": 250,
+      "final_population": 0,
+      "final_timestep": 249,
+      "outcome": "dead",
+      "trajectory_sha256": "3e66244e5ec89956ac2dd3066b695cfc5f86edd5aad52a63e15ed87290aebf29"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3542557583478526566.config",
+      "seed": 3542557583478526566,
+      "observations": 5001,
+      "final_population": 535,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "e49f139f1debd6e0ad8a90aa20fcbd33333323d9b2f09991c73c2c5b028c169d"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3568320210672737944.config",
+      "seed": 3568320210672737944,
+      "observations": 175,
+      "final_population": 0,
+      "final_timestep": 174,
+      "outcome": "dead",
+      "trajectory_sha256": "7eb59fbae6c8c77110c9e0427773bf3e22eb8891b471fd1ef453f6d78b0b3b48"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary367278502105690691.config",
+      "seed": 367278502105690691,
+      "observations": 130,
+      "final_population": 0,
+      "final_timestep": 129,
+      "outcome": "dead",
+      "trajectory_sha256": "aa53ea4e8a244beae4ad7ec31c0b9683b0bf5c0adddaf83f6dba21196f6b0d6c"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3757797926469595546.config",
+      "seed": 3757797926469595546,
+      "observations": 209,
+      "final_population": 0,
+      "final_timestep": 208,
+      "outcome": "dead",
+      "trajectory_sha256": "ac21efe6d9e8f9090950b940834efa8dbdb2596f0737e7807b9fdd02aacc6306"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary378665755385027259.config",
+      "seed": 378665755385027259,
+      "observations": 138,
+      "final_population": 0,
+      "final_timestep": 137,
+      "outcome": "dead",
+      "trajectory_sha256": "8ae7f80896628f2fa5b6b593fb227e4f92708753d110b3a77d421d57366de236"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary3969945444094922288.config",
+      "seed": 3969945444094922288,
+      "observations": 136,
+      "final_population": 0,
+      "final_timestep": 135,
+      "outcome": "dead",
+      "trajectory_sha256": "148e8bfe7155b02793ca26a55edc63d4aa78e6cc26835417fae7496767d95221"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary403616165726776302.config",
+      "seed": 403616165726776302,
+      "observations": 133,
+      "final_population": 0,
+      "final_timestep": 132,
+      "outcome": "dead",
+      "trajectory_sha256": "7f01441f237da7a7ed888e1cad9565d58460e3c3259c5d7161876c0a89518c5d"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary412567690642541503.config",
+      "seed": 412567690642541503,
+      "observations": 5001,
+      "final_population": 983,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "429ceeb68c8a82e9db316629bc5831da32f9104df510d8dd4f60a4cd0f399001"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary4180260854678483217.config",
+      "seed": 4180260854678483217,
+      "observations": 139,
+      "final_population": 0,
+      "final_timestep": 138,
+      "outcome": "dead",
+      "trajectory_sha256": "1361a77b1eb8cac43b27231cf037c93dae7be20f01f0f30c952062c6a0476879"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary4397817119841484438.config",
+      "seed": 4397817119841484438,
+      "observations": 126,
+      "final_population": 0,
+      "final_timestep": 125,
+      "outcome": "dead",
+      "trajectory_sha256": "9d64a11b276b73141ee26449ea747f1385bf546bc1952f07ab123b3106415a11"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary4466488967710356834.config",
+      "seed": 4466488967710356834,
+      "observations": 142,
+      "final_population": 0,
+      "final_timestep": 141,
+      "outcome": "dead",
+      "trajectory_sha256": "b434395afce7d57de1bdf3a27b583d808ddc0383ad521dc5faeb9ea90683192f"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary468113397848614821.config",
+      "seed": 468113397848614821,
+      "observations": 5001,
+      "final_population": 1269,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "4f31dc9daabbe9fb120c034085fde9d8b91e3be77aaa1a2a959bfbf66c0d8e49"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary4699844682310720847.config",
+      "seed": 4699844682310720847,
+      "observations": 166,
+      "final_population": 0,
+      "final_timestep": 165,
+      "outcome": "dead",
+      "trajectory_sha256": "b4181ccf86693cf25df98fa98af095c77cf880279660b683edbec697ed59b169"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary4894597465904241773.config",
+      "seed": 4894597465904241773,
+      "observations": 5001,
+      "final_population": 295,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "82010f0618787c06b8a3a73740bdda745e105e11ccb4517bd1c57202dbb232fc"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary4918259656560877656.config",
+      "seed": 4918259656560877656,
+      "observations": 143,
+      "final_population": 0,
+      "final_timestep": 142,
+      "outcome": "dead",
+      "trajectory_sha256": "c474d8696ba0e9737465fa217506c6cd2f8030bb3da1dc9831295f450e7d08f1"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary4977441142635839516.config",
+      "seed": 4977441142635839516,
+      "observations": 5001,
+      "final_population": 470,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "2aa5f39764792d67893db86abe9a3bae28927d7a43c8acb7c5b1efbd77348782"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5052907359400664702.config",
+      "seed": 5052907359400664702,
+      "observations": 139,
+      "final_population": 0,
+      "final_timestep": 138,
+      "outcome": "dead",
+      "trajectory_sha256": "624321576193367b57ff7516b5fcde508b68807e7a4358f99b99aeb76b6bbb23"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5296105651145488969.config",
+      "seed": 5296105651145488969,
+      "observations": 5001,
+      "final_population": 1045,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "f0a893ffecadc2660523e3ec078e69b253e28d757cda1b9479a6b77ca4335952"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5451644437842578372.config",
+      "seed": 5451644437842578372,
+      "observations": 5001,
+      "final_population": 1233,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "a320181799d29af7d36011050f8727c3cb009e9f412e024060b5e6a98c7c779d"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5457138827572577247.config",
+      "seed": 5457138827572577247,
+      "observations": 167,
+      "final_population": 0,
+      "final_timestep": 166,
+      "outcome": "dead",
+      "trajectory_sha256": "e525e52f80db45a05cac055128f94ee169191e21a29b338a95fad87d34c237bf"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5466659988310099880.config",
+      "seed": 5466659988310099880,
+      "observations": 5001,
+      "final_population": 532,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "3f8d313d511aa19ca50a06a966c41df699b6a105c7365bb684a1831b7dcbf398"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5512171410036145996.config",
+      "seed": 5512171410036145996,
+      "observations": 179,
+      "final_population": 0,
+      "final_timestep": 178,
+      "outcome": "dead",
+      "trajectory_sha256": "2082fbc9a562307e04e549b1269f96a6678628a64662d601d0dabf4554925a71"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5617634043059162176.config",
+      "seed": 5617634043059162176,
+      "observations": 5001,
+      "final_population": 1151,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "27f6f8ec7c45986afd2c695b13cfe1cd577e041546c4ef8cbb9ff9075b14ef9d"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5638416334164762511.config",
+      "seed": 5638416334164762511,
+      "observations": 156,
+      "final_population": 0,
+      "final_timestep": 155,
+      "outcome": "dead",
+      "trajectory_sha256": "73529808eb1457ac0300c559d2d271258196e31f11782df6ec1121fa5bac7a68"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5640187196921781511.config",
+      "seed": 5640187196921781511,
+      "observations": 159,
+      "final_population": 0,
+      "final_timestep": 158,
+      "outcome": "dead",
+      "trajectory_sha256": "bf8324ca44b96bce4f7cceb56fa9c59e66026d397beaa71e53dbfe7dfa021693"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5706973635985741042.config",
+      "seed": 5706973635985741042,
+      "observations": 158,
+      "final_population": 0,
+      "final_timestep": 157,
+      "outcome": "dead",
+      "trajectory_sha256": "77f7e19921fa4d063f9a3cd7115fab644afdf0749da4871c44065aeaebac2705"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5751824055791891046.config",
+      "seed": 5751824055791891046,
+      "observations": 149,
+      "final_population": 0,
+      "final_timestep": 148,
+      "outcome": "dead",
+      "trajectory_sha256": "ea695d872ed5f9124ba7beb3c09e80518d4d7338c5c97190049f7fb29a99f759"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5869220180405979292.config",
+      "seed": 5869220180405979292,
+      "observations": 5001,
+      "final_population": 356,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "f5c6377bb6c8286213b343722b9fbd5b5bde221733ed9e84a6ab2cd974a910df"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary588455110223385558.config",
+      "seed": 588455110223385558,
+      "observations": 5001,
+      "final_population": 429,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "3c2f8c47a9aedb6e0c48aa14427ae4652b008d196d36f1b71458853de3ec7d0e"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5926226418024619339.config",
+      "seed": 5926226418024619339,
+      "observations": 5001,
+      "final_population": 1298,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "04e727da088591141be38a3b9359ddc9ab9bba241ca9110543d2fd08f1c85d43"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5942563981654703022.config",
+      "seed": 5942563981654703022,
+      "observations": 113,
+      "final_population": 0,
+      "final_timestep": 112,
+      "outcome": "dead",
+      "trajectory_sha256": "e529e08c2845ec9c23d3a7bed0116e175b8503469d10036da1656aded337d67b"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary5975702221209476521.config",
+      "seed": 5975702221209476521,
+      "observations": 145,
+      "final_population": 0,
+      "final_timestep": 144,
+      "outcome": "dead",
+      "trajectory_sha256": "eca5f203bdb35016a7d847fddfd275c6dd875af7df4c0fb0ad9e21fe7e152578"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6114853826594360836.config",
+      "seed": 6114853826594360836,
+      "observations": 155,
+      "final_population": 0,
+      "final_timestep": 154,
+      "outcome": "dead",
+      "trajectory_sha256": "d3693c6112017b8fd0887a1827a8f548875681033d93c68eae5aa85dd737ae98"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6215866660933582204.config",
+      "seed": 6215866660933582204,
+      "observations": 118,
+      "final_population": 0,
+      "final_timestep": 117,
+      "outcome": "dead",
+      "trajectory_sha256": "66182625bc1987b0e857d9db27c7362ac4009b3d129e3e8898ff9819a90e9acb"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6258754549787537355.config",
+      "seed": 6258754549787537355,
+      "observations": 5001,
+      "final_population": 261,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "6afef1c9af694884d8cb1d92ff571cd0e3b1c4bcab8594606db11dd6d89025fa"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6279632050221898206.config",
+      "seed": 6279632050221898206,
+      "observations": 121,
+      "final_population": 0,
+      "final_timestep": 120,
+      "outcome": "dead",
+      "trajectory_sha256": "990b6de9bfdc82fcb4ec09eb0175f83932336cb4a3afab03b93882a324c58426"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6421678520132144342.config",
+      "seed": 6421678520132144342,
+      "observations": 5001,
+      "final_population": 1052,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "12a41ca2b43b1567871327efdd330a59a481f08b50334e376e3fdd308c7f024e"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6493468082461222738.config",
+      "seed": 6493468082461222738,
+      "observations": 5001,
+      "final_population": 283,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "d2dff8843677b80807208c85b5ce28e0ceb660f7bd35d3ab6ba67041842ad9fe"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6678142733773302887.config",
+      "seed": 6678142733773302887,
+      "observations": 5001,
+      "final_population": 545,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "a1ed652caa6bbf433c20068587703c0d6a37e5cee0d2f166ed3e5fda8383c91e"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6685528179089078932.config",
+      "seed": 6685528179089078932,
+      "observations": 5001,
+      "final_population": 494,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "78a6b29789314b6023810d532d708e7d6cbc29229164754694c02e2dce145735"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6715632378988260053.config",
+      "seed": 6715632378988260053,
+      "observations": 5001,
+      "final_population": 936,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "0763036ebcd3a822face1820adc6c38a6503c76a2fca0ada7c5376d77a8506d1"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6814248761156119337.config",
+      "seed": 6814248761156119337,
+      "observations": 122,
+      "final_population": 0,
+      "final_timestep": 121,
+      "outcome": "dead",
+      "trajectory_sha256": "e867cae172d472146c04d8f47d69b59e04bb3d624f77360ba4b92fa12798df90"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary6986428459997266356.config",
+      "seed": 6986428459997266356,
+      "observations": 144,
+      "final_population": 0,
+      "final_timestep": 143,
+      "outcome": "dead",
+      "trajectory_sha256": "22f24535beed503337b26c7fdef9d427c960bbc1bdb3dbd743c8bcf9dbc28407"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary703773027493848666.config",
+      "seed": 703773027493848666,
+      "observations": 186,
+      "final_population": 0,
+      "final_timestep": 185,
+      "outcome": "dead",
+      "trajectory_sha256": "3abd035aa50b13322066051128670779f5ad519e43b4b1d7d31b067590e935a5"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7135434916913873001.config",
+      "seed": 7135434916913873001,
+      "observations": 169,
+      "final_population": 0,
+      "final_timestep": 168,
+      "outcome": "dead",
+      "trajectory_sha256": "9ad244b02466b9225899de6f91f124ec1764e2b7bd6ac717f78278707481f09c"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary724404795522924741.config",
+      "seed": 724404795522924741,
+      "observations": 136,
+      "final_population": 0,
+      "final_timestep": 135,
+      "outcome": "dead",
+      "trajectory_sha256": "3b62971aad54f5234b84adeec30a710cc5a52e6c0802d38466e93a1cb7168271"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7323237125000228961.config",
+      "seed": 7323237125000228961,
+      "observations": 145,
+      "final_population": 0,
+      "final_timestep": 144,
+      "outcome": "dead",
+      "trajectory_sha256": "2df7322113b0ce743d7ebb9833543b1ede27fffa2675249bdfc563a0a34ea641"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7345391941720082857.config",
+      "seed": 7345391941720082857,
+      "observations": 156,
+      "final_population": 0,
+      "final_timestep": 155,
+      "outcome": "dead",
+      "trajectory_sha256": "7e1fbc67534dfe531aec4b319fe83f6c46fc78b52839a8f2d9a02adc8a6e85ff"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7348491649811948687.config",
+      "seed": 7348491649811948687,
+      "observations": 149,
+      "final_population": 0,
+      "final_timestep": 148,
+      "outcome": "dead",
+      "trajectory_sha256": "5550049a21bb3c04a06829a3a3c8a9dd0463fdd3d9a0537bd69cc456272d15e4"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7405324638897054588.config",
+      "seed": 7405324638897054588,
+      "observations": 5001,
+      "final_population": 1023,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "64e7c5e5a135f20cd824f3fba619a6d3f80542a8e3d176333529a58555ac69ed"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7550970423150204555.config",
+      "seed": 7550970423150204555,
+      "observations": 5001,
+      "final_population": 560,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "2eef2283683d028eb242fede83d5015ad1eb44ff23b14246331688ee47b4e2e7"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7595852404984348561.config",
+      "seed": 7595852404984348561,
+      "observations": 151,
+      "final_population": 0,
+      "final_timestep": 150,
+      "outcome": "dead",
+      "trajectory_sha256": "a6d393cabbdf5e5df3143d1d925ddad408325fcf5379f2d31d4a03c08052fe0a"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7708279809628343301.config",
+      "seed": 7708279809628343301,
+      "observations": 135,
+      "final_population": 0,
+      "final_timestep": 134,
+      "outcome": "dead",
+      "trajectory_sha256": "29d4c0c33c44afa8f6b86635ea8ec5c1ad971cc8ff6d5084b9fdf04ec1ebb1a2"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7753991106316778181.config",
+      "seed": 7753991106316778181,
+      "observations": 138,
+      "final_population": 0,
+      "final_timestep": 137,
+      "outcome": "dead",
+      "trajectory_sha256": "6d6ad5eaa8084904f91db6138c7e283733135475feae31313c7ff5973f39d4b6"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7824891320642889108.config",
+      "seed": 7824891320642889108,
+      "observations": 174,
+      "final_population": 0,
+      "final_timestep": 173,
+      "outcome": "dead",
+      "trajectory_sha256": "84a01bcccc8901c3fa19854d3b791a8e8fb06d470e18514a694cd3d728b416ed"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7865106017708406729.config",
+      "seed": 7865106017708406729,
+      "observations": 161,
+      "final_population": 0,
+      "final_timestep": 160,
+      "outcome": "dead",
+      "trajectory_sha256": "604657a4b297c70a1a6c6b37f15e4801ec6a796770a39dc561509047b5d4f4c2"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary7899395674146559779.config",
+      "seed": 7899395674146559779,
+      "observations": 218,
+      "final_population": 0,
+      "final_timestep": 217,
+      "outcome": "dead",
+      "trajectory_sha256": "b95a88e87243495f8958b727fe74947818d7e124a7fc61ec1316718b0e92ac9f"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary797543013789675790.config",
+      "seed": 797543013789675790,
+      "observations": 171,
+      "final_population": 0,
+      "final_timestep": 170,
+      "outcome": "dead",
+      "trajectory_sha256": "68c2dee40b09fe6f3d44417d50ed8669b72745d8f1ac48f1a0913d681a62375a"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8089832324942791151.config",
+      "seed": 8089832324942791151,
+      "observations": 5001,
+      "final_population": 1288,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "2cfd482c9eae9c6616afe35766418e57441435f77929f60089daadd497242bbd"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8289106131243214398.config",
+      "seed": 8289106131243214398,
+      "observations": 122,
+      "final_population": 0,
+      "final_timestep": 121,
+      "outcome": "dead",
+      "trajectory_sha256": "527f42190fd118288d71c8df2fc8d30264af6266e171255df7205870fe8347d0"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8316010414417092566.config",
+      "seed": 8316010414417092566,
+      "observations": 124,
+      "final_population": 0,
+      "final_timestep": 123,
+      "outcome": "dead",
+      "trajectory_sha256": "e2131b102e8aa919c6e4004ae0dd21ebff635c8840702fa3b7fc877b4e174ed6"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8341355065988222378.config",
+      "seed": 8341355065988222378,
+      "observations": 151,
+      "final_population": 0,
+      "final_timestep": 150,
+      "outcome": "dead",
+      "trajectory_sha256": "993fc34445c98e15026786453cd06a5e063f8b8a7469f06716091f4dffcdb3d1"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8421612032224685866.config",
+      "seed": 8421612032224685866,
+      "observations": 5001,
+      "final_population": 66,
+      "final_timestep": 5000,
+      "outcome": "worse",
+      "trajectory_sha256": "357f15406fa31a386a744ddb239d894515f64049c3ddafe1f5ad4cd3def1af0d"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary860493042601149279.config",
+      "seed": 860493042601149279,
+      "observations": 5001,
+      "final_population": 420,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "4828755b0c7578ed1848e23dbe9ee3c086d709095bdf840efe4740fdb18547b7"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8638526220472545243.config",
+      "seed": 8638526220472545243,
+      "observations": 144,
+      "final_population": 0,
+      "final_timestep": 143,
+      "outcome": "dead",
+      "trajectory_sha256": "b5573106de7beca0421f836f754341016295659ccdef4467bace3271adcf378b"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8673327247335217934.config",
+      "seed": 8673327247335217934,
+      "observations": 173,
+      "final_population": 0,
+      "final_timestep": 172,
+      "outcome": "dead",
+      "trajectory_sha256": "eda7ad6f07b2d5cdca9876356cc26639d6bcbacde0e82bcc8f4cb46c73eb474c"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8682153779241242778.config",
+      "seed": 8682153779241242778,
+      "observations": 144,
+      "final_population": 0,
+      "final_timestep": 143,
+      "outcome": "dead",
+      "trajectory_sha256": "32b817e5a27147ad7f5a4344bb93e5deec7827864d080d7a3fd10185be4eea5e"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8853063289937435116.config",
+      "seed": 8853063289937435116,
+      "observations": 5001,
+      "final_population": 359,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "ce88b4650725afb2ed093f5abd14527edc66a55fbea1dd7ba6dc8c4d6dc8d56d"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8869255712285282232.config",
+      "seed": 8869255712285282232,
+      "observations": 156,
+      "final_population": 0,
+      "final_timestep": 155,
+      "outcome": "dead",
+      "trajectory_sha256": "b098221289930b4ed4c63ae9449c9b01ac445a1aaf10fd9ade3752bc3779ae68"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary8957538886497154271.config",
+      "seed": 8957538886497154271,
+      "observations": 135,
+      "final_population": 0,
+      "final_timestep": 134,
+      "outcome": "dead",
+      "trajectory_sha256": "0de6a5d77fa9683261b9a63661d242d6084eff7b7da310b38b2fcda6b974a684"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary9056959890853567394.config",
+      "seed": 9056959890853567394,
+      "observations": 216,
+      "final_population": 0,
+      "final_timestep": 215,
+      "outcome": "dead",
+      "trajectory_sha256": "1bf9eb086749d78fb0e4944c82a23fbb06d7e5f51ccb3e35b672fb73628f5d34"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary9086062312209706052.config",
+      "seed": 9086062312209706052,
+      "observations": 148,
+      "final_population": 0,
+      "final_timestep": 147,
+      "outcome": "dead",
+      "trajectory_sha256": "ec613ee9ea5ef42ffde82810429bf4f5f8e145b9106e6fda6d6086dde23d2fc8"
+    },
+    {
+      "entry": "5000-egoisticHalfLookaheadBinary9166351132430040556.config",
+      "seed": 9166351132430040556,
+      "observations": 142,
+      "final_population": 0,
+      "final_timestep": 141,
+      "outcome": "dead",
+      "trajectory_sha256": "9c0c69d25e5c886c06403484f49478e5f86b647f617cd021ca538295ff591faa"
+    }
+  ],
+  "ledger_sha256": "fc8994f9de83844a033262d2d624c5cce33fbc612ecc5897cbea32caa1fe6439",
+  "manifest_sha256": "4b8f77a95de14d28a6755d193822e648391379f03698ab4040403b825da81cc2",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}

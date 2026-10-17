@@ -532,7 +532,7 @@ The earlier two- and eight-input prefixes are contained exactly and receive no a
 
 [Reconciliation](results/runtime-local-recovery-complete-2026-10-17/coverage.json)
 checks duplicate trajectory hashes, observation counts and final populations across
-published runtime audits. Unique coverage is now **622/1,200 inputs and 593,809 observations**.
+published runtime audits. That checkpoint established **622/1,200 inputs and 593,809 observations**.
 This adds 11 inputs and 30,869 observations to the previously published 611-input total.
 
 The sealed 6,870,636-byte checkpoint has SHA-256
@@ -542,3 +542,25 @@ are retained. The native completion marker is retained separately because the ch
 format seals per-run outputs without that marker. The full audit also checked it directly.
 Cloud intervals `[17,100)` and raw 50,000-step `[0,100)` remain separate active work.
 This completes the assigned recovery interval, not the full 100-input group or paper.
+
+## Runtime deadline and recovered checkpoint audits
+
+[Independent archive audits](results/runtime-ensembles-2026-10-17) bring unique runtime
+coverage to **662/1,200 inputs and 712,954 observations**: 40 new inputs and 119,145 observations.
+Every repeated input agrees on raw trajectory hash, observation count, and final population.
+
+The surviving egoistic 5,000-step group completed all 100 inputs: 69 extinct, one below
+250 agents, and 30 at or above 250. Its complete trajectories contain 165,629 observations.
+The companion Bentham group completed 26 inputs and 130,026 observations before its
+six-hour deadline interrupted the next input. That incomplete trajectory is retained
+in the original archive but excluded from the audit and completion count.
+
+The first checkpoint from the separate recovery job adds 17 altruistic 5,000-step
+inputs, indices 17–33, and two raw 50,000-step inputs. These contain 17,367 and
+50,113 observations respectively. This job continues on its existing allocation.
+
+The completed node now runs disjoint remaining work: Bentham 5,000-step inputs 26–99
+and previously unstarted egoistic 50,000-step inputs 0–99. Each worker has a six-hour
+budget. The supervisor seals completed outputs every 30 minutes and preserves full-group
+completion markers. No resumed output is included in the coverage above.
+The full paper remains incomplete; deposited runtime inputs are not the complete published sweeps.
