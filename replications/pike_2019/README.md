@@ -749,3 +749,39 @@ The export watcher completed the raw audit and archive before failing at checksu
 The receipt was recovered using pinned Python3.11.14; no simulation or raw audit was restarted.
 Run `reconcile_common_ten.py NATIVE_BATCH BATCH_AUDIT SEED_ZERO_EVIDENCE NEW_OUTPUT` to regenerate the reconciliation.
 Threshold-five experiments and controlled timing remain pending; this full grid does not complete the paper.
+
+## Completed controlled timing ensemble
+
+The [complete timing evidence](results/timing-complete-2026-10-17) validates all
+900 scheduled runs: nine configurations, 100 seeds each, and 1,000 steps per run.
+Nine observer/timing controls reproduce 36 raw exports byte for byte.
+The audit recomputes all 900,000 native timing rows, verifies every recorded
+output hash, and checks source versions, seed order, and policy configuration.
+An independent R implementation reproduces all 30 paired comparisons within
+5.46e-11. Intervals are pointwise 95% intervals over seeds, not timesteps.
+
+| Comparison (first minus second) | Native timer difference, seconds | Full-step wall difference, seconds |
+| --- | ---: | ---: |
+| Phase I explicit − standard | 6.389 [6.240, 6.538] | 6.664 [6.510, 6.819] |
+| Phase I network − standard | 1.891 [1.821, 1.960] | 7.087 [6.926, 7.249] |
+| Threshold-ten explicit − network | 5.728 [5.411, 6.045] | 5.731 [5.414, 6.048] |
+| Movement explicit − network | 21.669 [20.277, 23.062] | 21.678 [20.284, 23.071] |
+| Common-resource multi − one | 0.051 [−0.336, 0.438] | 0.050 [−0.338, 0.438] |
+
+The paper reports approximately two additional native seconds for Phase I
+network groups and 14 for explicit groups. Our native measurements preserve that
+overhead ordering, but full-step measurements reverse it. Network reassessment
+occurs outside the native timer. Neither historical seconds nor cross-platform
+speed ratios are portable targets. The threshold-ten and movement comparisons
+retain the reported direction: explicit grouping costs more than network grouping.
+
+Every common-resource run contains nonfinite health values: 14,858,870 affected
+records across 200 runs. Their timing interval spans zero; this does not establish
+equivalence or validate the economic outcomes. Numerical failure, historical
+source fidelity, and remaining study claims still prevent whole-paper completion.
+
+The complete 389.8 MiB raw archive is pinned in `raw-archive.json`, retained locally
+and on the owned node. The repository includes native timing rows, manifests,
+ledgers, controls, per-seed measurements, and all output hashes. Run
+`audit_timing.py ARCHIVE ENGINE_CHECKOUT NEW_OUTPUT` on the complete archive to
+repeat the audit. No simulations need to be rerun.
