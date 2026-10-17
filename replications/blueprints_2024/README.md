@@ -661,3 +661,21 @@ the owned nodes: raw indices 27–99, Bentham 5,000-step indices 52–99, egoist
 50,000-step indices 11–99, and altruistic 50,000-step indices 0–99. These are
 registered work, not completed evidence. The 100-input deposited archive remains
 distinct from the paper's 500-seed Table 6 experiment; no whole-paper credit.
+
+## First direct-storage continuation readback
+
+[The stored checkpoint audit](results/runtime-storage-readback-2026-10-17/audit/audit.json)
+validates Bentham runtime indices 52–53: two complete 5,000-step trajectories and
+10,002 states. The object-storage download matches the sealed source SHA-256
+`dca7f451a6237e00743fe8d69934308b9a9583d35ffa958e48b9702c348f09f6`.
+The exact downloaded archive, export receipts, and frozen ledger are retained.
+
+[Reconciled coverage](results/runtime-storage-readback-2026-10-17/coverage.json) is now
+**792/1,200 runtime inputs**, with 1,465,098 states. The new records do not overlap
+previously audited inputs. Bentham 5,000-step coverage is 54/100; seven other model/horizon
+groups remain complete. This does not establish the paper's separate 500-seed timing claim.
+
+Extract the checkpoint, restore each `trajectory.json` from its adjacent gzip, and run
+`audit_runtime.py` with `--allow-prefix` and recorded root
+`/home/dev/sugarscape/blueprints-runtime-round2-002/runs/benthamHalfLookaheadBinary-5000`.
+The expected ordinal interval is `[52,54)`; the active producer continues toward index 100.
