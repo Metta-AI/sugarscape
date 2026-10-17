@@ -254,3 +254,61 @@ The original source outputs remain pre-event observations. Corrected outputs are
 sensitivity evidence. Source and prose predicates remain distinct, including disease
 majority rounding, cultural-balance asymmetry, and terracing's inverted edge predicate.
 No result or completed-study credit is claimed for these running ensembles.
+
+
+## Complete terracing ensembles
+
+[Independent audits and all native outputs](results/terracing-ensembles-2026-10-17)
+cover 100 original and 100 corrected runs, each through time 100. They verify
+2,521,229 original and 2,525,538 corrected snapshot-agent observations, including initialization.
+The original results distinguish the released predicate from the appendix prose:
+
+| Original-source measurement | Mean | 95% interval |
+| --- | ---: | --- |
+| All four neighbors have the same sugar level | 0.453547 | [0.448670, 0.458423] |
+| At least one neighbor has a lower sugar level | 0.543573 | [0.538671, 0.548475] |
+| Position stability after time 50 | 1.000000 | Zero observed variance |
+
+The 0.45 target lies inside the interval for the code's uniform-neighbor predicate,
+but outside the interval for the prose's edge predicate. Every measured agent remains
+stationary after time 50. Source stability also equals one when using its time-51 baseline.
+`StatsUtils.tValue` returns `Nothing` for zero variance; `prop_terracing` then defaults
+to pass. That is not statistical evidence for equality to its numerical target of 0.95.
+
+With both source corrections, the uniform-neighbor ratio is 0.458383 and the prose edge
+ratio is 0.538568; stability remains one. This preserves the successful stationary-agent
+behavior while identifying which measured quantity supports the paper's 45% statement.
+The remaining appendix outcomes and whole-paper verdict are still pending.
+
+`audit_observer_ensemble.py RUN PROTOCOL SCENARIO NEW_OUTPUT` independently reconstructs
+cell lookup, source/prose predicates, and statistics from raw CSV exports. Published
+folders retain gzip copies; restore their CSV files before auditing. Completion requires
+all 100 seeds for the selected scenario. `--allow-prefix` emits no confidence intervals.
+The archived runner is byte-identical to the executed version; its manifest pins its hash.
+
+
+## Complete corrected-wealth sensitivity ensemble
+
+[All 100 corrected outputs and their audit](results/corrected-wealth-ensemble-2026-10-17)
+cover another 5,000,000 agent observations. The original outputs remain unchanged.
+Both source substitutions were fixed before these runs; seeds, horizon, and targets
+match the historical ensemble. This is a source-correction diagnostic.
+
+| Metric | Corrected mean | Corrected 95% interval | Exact target inside |
+| --- | ---: | --- | --- |
+| Gini | 0.485025 | [0.482307, 0.487744] | No |
+| Skewness | 1.533518 | [1.503178, 1.563857] | No |
+| Excess kurtosis | 2.132933 | [1.990235, 2.275631] | Yes |
+
+[Paired effects](results/corrected-wealth-ensemble-2026-10-17/paired-effects.json)
+compare the same 100 seeds. Mean changes are +0.002688 Gini, −0.044265 skewness,
+and −0.201788 excess kurtosis. The Gini and kurtosis change intervals include zero.
+The skewness change interval is [−0.088059, −0.000470]. These exploratory comparisons
+do not turn the paper's approximate values into proven equivalence or a negative verdict.
+The corrections alter measurements but do not make all exact point targets agree.
+
+`compare_ensembles.py ORIGINAL_AUDIT CORRECTED_AUDIT NEW_OUTPUT` requires two complete,
+seed-aligned ensembles with every statistic defined. It rejects undefined outcomes
+instead of silently dropping paired seeds. For the corrected native audit, use the
+archived auditor beside its corrected protocol and source manifest; the historical
+auditor intentionally rejects modified source hashes.
