@@ -386,3 +386,13 @@ At an assumed $0.4824 per node-hour, the elapsed projection costs $1,203.46.
 This includes per-input Java startup and excludes setup, retries, transfer, and idle time.
 One observation per stratum provides no within-stratum variance estimate or confidence interval; this is not a guaranteed budget.
 The full generated ensemble remains unstarted. Benchmarking repeated inputs within one Java process is a possible next efficiency check, subject to exact-output validation.
+
+### Bounded batched sizing benchmark
+
+The [frozen bootstrap package](results/batched-sizing-launch-2026-10-17/plan.json) partitions the same 550 selected inputs across eight native Java processes.
+`GeneratedReplay.java` is unchanged: each input resets the model and its original random seed within a reused workspace.
+All 6,600 outputs must match their archived measurements exactly before a successful result is reported.
+The simulation limit is one hour; bootstrap setup and execution are bounded separately.
+Official NetLogo and Commons Math downloads match the pinned runtime hashes, and every packaged member passes byte-for-byte readback.
+The queued-node end-to-end bootstrap remains unverified until it executes.
+This measures sample throughput; batch-level timing does not identify per-stratum CPU costs, so it cannot alone replace the weighted full-ensemble cost projection.
