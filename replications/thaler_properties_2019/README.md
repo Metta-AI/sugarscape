@@ -338,3 +338,25 @@ pass independent audits across 8,521,865 agent observations. Mean population ove
 204 target lies inside this interval; the appendix's 210 target remains outside.
 The same-seed comparison retains the original 205.815833 mean. Source correction does
 not explain the appendix's higher target or establish a completed negative replication.
+
+
+## Seed-generator and source-history audit
+
+The original property generator draws from the full signed `Int` range, whereas our
+frozen protocol uses distinct positive 31-bit seeds. A [native generator audit](results/seed-generator-audit-2026-10-17)
+records 100 draws from the pinned QuickCheck runtime and the resulting random states.
+The source of `random-1.1` shows that `mkStdGen` converts to `Int32` and masks its sign
+bit. Both seed ranges therefore map into the same effective 31-bit input space.
+Our protocol excludes zero and samples without replacement; it does not omit a broad
+second-generator state space. All 200 recorded random states match the source formula.
+
+Two complete original 200-step simulations using a large native seed and its masked
+equivalent produce byte-identical exports, each containing 50,000 agent records.
+This closes the suspected high-bit state-space discrepancy without replacing any
+ensemble or counting the equivalent runs as independent samples. It does not claim
+that two different seed lists produce identical ensembles or explain target differences.
+
+Git history also confirms that simulator and test code are unchanged between the
+May 19 initial implementation and the pinned June 11 revision. Only the README and
+validation PDF changed. This strengthens code provenance while leaving final-proceedings
+text fidelity unverified.
