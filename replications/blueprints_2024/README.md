@@ -428,3 +428,31 @@ The previously exported complete raw 5,000-step group remains retained and is no
 Those lost unexported outputs receive no audit coverage credit.
 The main control node has a recoverable disk snapshot; its inventory is queued before resuming incomplete cross-runtime comparisons.
 A connection failure alone did not trigger any simulation restart.
+
+## Bounded replacement and durable checkpoint transfer
+
+[The recovery protocol and evidence](results/runtime-recovery-2026-10-17) preserve six original altruistic 5,000-step inputs, with 1,001 independently audited observations.
+They occupy indices `[0,1)` and `[12,17)`; repeated recovery controls are counted once.
+Audited runtime coverage is now 592/1,200 unique inputs and 540,581 observations.
+The five workflow controls were selected for short trajectories known from the completed 500-step group; they supply no ensemble estimate.
+
+The remaining altruistic inputs are partitioned without overlap: `[1,12)` runs locally, and `[17,100)` is assigned to a replacement CPU node.
+That node also receives the raw 50,000-step group `[0,100)`.
+The previously completed raw 5,000-step group is excluded.
+Every native group has a six-hour limit; the cloud workflow has an eight-hour outer limit and at most two workers.
+Incomplete intervals remain incomplete at their limits.
+
+`run_recovery.py SOURCE PLAN NEW_OUTPUT` executes the unchanged pinned native runner and seals completed-output checkpoints every 30 minutes.
+`collect_recovery.py NODE COMMAND NEW_LOCAL_OUTPUT` copies each sealed archive off the provider and checks its size and SHA-256.
+The collector reads only that command; a lost or exited command ends collection without restarting simulations.
+Both sides retain manifests and logs; native failures remain visible and do not count as completed simulations.
+Collected archives still require `audit_runtime.py` before scientific coverage credit.
+
+The complete recovery workflow was exercised with the real author engine: one input was checkpointed, the parent was terminated, and all owned worker processes exited.
+Resuming only the four missing inputs reproduced all five uninterrupted trajectories byte for byte.
+Independent audits cover the full run, the recovered prefix, and the continuation.
+A live provider export also passed the collector’s full transfer and hash checks; final checkpoints retain native exit metadata and logs.
+The original interrupted files remain preserved.
+
+The local assignment is active and the cloud assignment is queued; neither launch establishes completion.
+Primary CPython 3.11.14 remains unchanged.
