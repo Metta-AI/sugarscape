@@ -44,3 +44,13 @@ To inspect retained evidence, extract `trajectories.tar.gz` into a new directory
 Program source audits retain the original paper source, digitized vector-figure curves, historical dependency lockfile, and deleted author scripts. The recovered scripts use older configurations and do not establish the paper’s exact experiment protocol. In particular, gradient-figure metadata predates the change from initial wealth `10*sample` to `6+19*sample`; metadata alone does not identify the revision used.
 
 Completion requires quantitative comparisons against these targets and investigation of implementation/configuration errors. This pilot contributes zero completed papers.
+
+## Reconstructed gradient pilot
+
+`results/gradient-pilot-2026-10-17` records full native 25-state trajectories for seeds 0–2, with six-parameter ForwardDiff derivatives and central finite differences at steps 0.001 and 0.01. Each plus/minus pair resets the same seed. The observable is total recorded wealth divided by the initial 100 agents, with no additional time normalization. The model uses the paper’s gradient geometry (50×50, vision 1/3), calibration parameter defaults, and the unchanged submission source.
+
+The independent `audit_gradients.py RUN NEW_OUTPUT` validates all 900 records and recomputes finite differences. Initial wealth derivatives agree within 7.67e-8 at step 0.001. Initial vision/metabolism derivatives are exactly zero. Later estimates differ: the largest per-seed vision difference is 11.55 at step 0.01. These are paired trajectory diagnostics, not converged expectation estimates or a Figure 11 replication.
+
+The first runner attempt failed because separate anonymous functions supplied incompatible ForwardDiff tags. Its source and failure receipt are retained. Using the same function object corrected the runner without changing the simulation or analysis protocol.
+
+A separately declared 256-seed ensemble (seeds 3–258) evaluates steps 0.001, 0.01, and 0.05. It will report paired uncertainty and step sensitivity before any interpretation of gradient disagreement. Exact published normalization, seed counts, step sizes, and historical source remain unresolved.

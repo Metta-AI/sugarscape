@@ -1,0 +1,42 @@
+{
+  "status": "predeclared reconstructed pilot, not exact Figure 11 protocol",
+  "source": "9178eccd56dd352e3515e276239654239f8d3b41",
+  "grid": 50,
+  "agents": 100,
+  "stored_states": 25,
+  "vision": [
+    1,
+    3
+  ],
+  "parameters": [
+    "p1",
+    "p3",
+    "m_alpha",
+    "m_beta",
+    "w_alpha",
+    "w_beta"
+  ],
+  "values": [
+    0.2,
+    0.8,
+    2,
+    5,
+    5,
+    2
+  ],
+  "observable": "sum of all agent wealth / initial agent count; no time normalization; dead wealth retained exactly as author history",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "finite_difference_steps": [
+    0.001,
+    0.01
+  ],
+  "finite_difference_coupling": "reset identical random seed for each plus/minus run; common random numbers",
+  "automatic_differentiation": "ForwardDiff.jacobian; six parameters in one chunk; identical random seed",
+  "gradient_horizon": 10000,
+  "smoothing": "GaussianSmoothing(1.0)",
+  "limits": "No claim of converged expectation gradients; discrete path boundaries can invalidate small-step pathwise finite differences. Calibration parameter defaults used because exact gradient values absent."
+}
