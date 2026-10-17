@@ -589,3 +589,9 @@ The largest prediction difference from the isolated run is 0.5, and the saved ra
 This establishes that the observed semi-automatic stage advances the random stream; it does not isolate the cause of prediction differences.
 Parser differences and execution order remain separate factors for the pending random-forest comparison.
 The actual checkpoint, audit script, hashes, and arithmetic report are retained; no new replication target or whole-study completion is claimed.
+
+The [completed linear-regression checkpoint audit](results/notebook-rf-sequence-launch-2026-10-16/lm-audit.json) reconstructs all five folds and independently checks 25,000 predictions, interval coverage, interval width, and normalized errors.
+All five printed scores agree, as in the isolated point-estimate calculation; no new target is counted.
+The largest prediction difference from that calculation is 3.64e-11.
+The saved random state differs from the preceding semi-automatic checkpoint, confirming another state advance before the forest stage.
+The actual checkpoint and source hashes are retained. The random-forest checkpoint remains pending.

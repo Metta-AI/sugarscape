@@ -1,0 +1,60 @@
+{
+  "held_out_rows": 5000,
+  "predictions_audited": 25000,
+  "folds": 5,
+  "comparison": [
+    {
+      "parameter": "initial.population",
+      "rmse": 45.533512271364941,
+      "baseline_rmse": 115.48732223159247,
+      "performance": 0.60572717947296129,
+      "published": 0.60599999999999998,
+      "matches_printed_precision": true,
+      "coverage": 0.9423999999999999,
+      "interval_width": 180.4377846593446
+    },
+    {
+      "parameter": "pmut",
+      "rmse": 0.041487005775068836,
+      "baseline_rmse": 0.057521305681513812,
+      "performance": 0.27875410191876215,
+      "published": 0.27900000000000003,
+      "matches_printed_precision": true,
+      "coverage": 0.9456,
+      "interval_width": 0.13974260538071659
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "rmse": 9.8719008983046734,
+      "baseline_rmse": 21.428043584515734,
+      "performance": 0.53929994311574592,
+      "published": 0.53900000000000003,
+      "matches_printed_precision": true,
+      "coverage": 0.93940000000000001,
+      "interval_width": 37.317258101893458
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "rmse": 9.7572545683807643,
+      "baseline_rmse": 21.470549073071709,
+      "performance": 0.54555169804118886,
+      "published": 0.54600000000000004,
+      "matches_printed_precision": true,
+      "coverage": 0.93720000000000003,
+      "interval_width": 36.838911013020081
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "rmse": 6.113581764908683,
+      "baseline_rmse": 23.022774519384559,
+      "performance": 0.7344550388676564,
+      "published": 0.73399999999999999,
+      "matches_printed_precision": true,
+      "coverage": 0.9483999999999998,
+      "interval_width": 21.101093986406774
+    }
+  ],
+  "maximum_prediction_difference_from_isolated_run": 3.6351366361486726e-11,
+  "rng_state_unchanged_since_sabc": false,
+  "scope": "Sequential original notebook linear regression checkpoint only; later estimators remain running. Independent arithmetic uses saved predictions and reconstructed original folds."
+}
