@@ -360,3 +360,33 @@ Git history also confirms that simulator and test code are unchanged between the
 May 19 initial implementation and the pinned June 11 revision. Only the README and
 validation PDF changed. This strengthens code provenance while leaving final-proceedings
 text fidelity unverified.
+
+
+## Complete corrected trading ensemble
+
+[All 100 corrected trading runs](results/corrected-trading-ensemble-2026-10-17) are
+independently audited across 6,163,442 agent observations. Indices 29 and 49 have fewer
+than two final prices, so their sample standard deviations remain undefined.
+The frozen primary audit retains both and emits no aggregate comparison.
+
+Under the separately labelled author-library zero convention, mean dispersion is
+0.0509942 and the one-sided 95% upper bound is 0.0582174, above the 0.05 target.
+The individual predicate passes 64/100 runs, including source-defined zero values.
+The paired change from the historical ensemble is +0.007340 with interval
+[−0.004692, 0.019372]. This does not establish a correction effect or a paper-level verdict.
+All three corrected quantitative ensembles are now complete and independently audited.
+
+## Trade-on/off appendix comparison
+
+A [separate frozen paired experiment](results/trade-control-first-2026-10-17/protocol.json)
+uses `mkCarryingCapacityWithSpice` and `mkParamsFigureIV_6`. These original configurations
+differ only in the trading flag. The first complete 1,000-step pair verifies identical
+initial agents, cells, and summaries, plus the sole treatment difference in resolved parameters.
+It contains 24,856 snapshot-agent observations and 4,269 snapshot-trade records.
+
+The remaining 99 seeds per configuration are running separately from this first pair.
+The one-CPU, 2 GiB worker has a three-hour limit and excludes the completed seed.
+Measurements cover population, survivor vision and metabolisms, and sugar-wealth Gini.
+Combined sugar-plus-spice inequality is reported separately. The 1,000-step horizon and
+late window 801–1,000 are explicit study choices for the paper's qualitative statements.
+No ensemble conclusion is claimed from the first pair.

@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "scenario": "trade_off",
+      "horizon": 1000,
+      "snapshot_agent_observations": 11627,
+      "snapshot_trade_records": 0,
+      "final_population": 103
+    },
+    {
+      "scenario": "trade_on",
+      "horizon": 1000,
+      "snapshot_agent_observations": 13229,
+      "snapshot_trade_records": 4269,
+      "final_population": 120
+    }
+  ],
+  "initial_agents_cells_summary_exact": true,
+  "resolved_scenario_differences": [
+    {
+      "line": 1,
+      "off": "Constructor: mkCarryingCapacityWithSpice",
+      "on": "Constructor: mkParamsFigureIV_6"
+    },
+    {
+      "line": 3,
+      "off": "Scenario: \t\t\tCarrying Capacity With Spice",
+      "on": "Scenario: \t\t\tFigure IV-6"
+    },
+    {
+      "line": 34,
+      "off": "T rule active (trading): \tFalse",
+      "on": "T rule active (trading): \tTrue"
+    }
+  ],
+  "source_files_pinned": 60,
+  "scope": "Two complete first-seed workflows; initialization and sole treatment toggle verified. No ensemble or paper-level claim."
+}
