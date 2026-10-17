@@ -1,0 +1,120 @@
+{
+  "preserved_validated_prefix": [
+    0,
+    3246
+  ],
+  "previous_process": 42212,
+  "termination": "Intentional SIGTERM after fresh process identity verification; prior output preserved.",
+  "shards": [
+    {
+      "shard": 1,
+      "interval": [
+        3246,
+        13597
+      ],
+      "runner_pid": 27881,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-1-001",
+        "--start",
+        "3246",
+        "--stop",
+        "13597"
+      ],
+      "output": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-1-001"
+    },
+    {
+      "shard": 2,
+      "interval": [
+        13597,
+        23948
+      ],
+      "runner_pid": 27883,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-2-001",
+        "--start",
+        "13597",
+        "--stop",
+        "23948"
+      ],
+      "output": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-2-001"
+    },
+    {
+      "shard": 3,
+      "interval": [
+        23948,
+        34299
+      ],
+      "runner_pid": 27884,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-3-001",
+        "--start",
+        "23948",
+        "--stop",
+        "34299"
+      ],
+      "output": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-3-001"
+    },
+    {
+      "shard": 4,
+      "interval": [
+        34299,
+        44650
+      ],
+      "runner_pid": 27885,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-4-001",
+        "--start",
+        "34299",
+        "--stop",
+        "44650"
+      ],
+      "output": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-4-001"
+    },
+    {
+      "shard": 5,
+      "interval": [
+        44650,
+        55000
+      ],
+      "runner_pid": 27886,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-5-001",
+        "--start",
+        "44650",
+        "--stop",
+        "55000"
+      ],
+      "output": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-5-001"
+    }
+  ]
+}

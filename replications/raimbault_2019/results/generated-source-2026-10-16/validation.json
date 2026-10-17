@@ -1,0 +1,16 @@
+{
+  "public_archive_audit": "passed; all scientific fields and group CSV byte-identical to independent scratch reconstruction",
+  "public_runner": "exit 0; output byte-identical to initial streaming pilot",
+  "strict_metric_comparison": "23/24 exact; one R-squared value differs by 1.1102230246251565e-16; strict exact gate failed and retained",
+  "new_simulation_tests": "Real NetLogo model, Java11, complete10000-step horizon; no mocks",
+  "checks": [
+    "ruff check (two Python files)",
+    "ruff format --check (two Python files)",
+    "git diff --check"
+  ],
+  "source_sha256": {
+    "GeneratedReplay.java": "c52a4dfaec12a5db99d19ba9a49f38e20cb6e40bac97ec667b49904d577182fd",
+    "run_generated.py": "602879edcdbe971a3149266c01d79104e7bd811eff25a580d11dcf978f960b06",
+    "audit_generated_archive.py": "38f685ef9de78d250dd6ffcccc73daa7dfc8618235243bcc347ec7276fb6b0b8"
+  }
+}

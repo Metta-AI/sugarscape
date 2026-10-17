@@ -1,0 +1,45 @@
+{
+  "original_rows_verified": [
+    0,
+    1000,
+    990499,
+    1028088,
+    1366057,
+    1782120
+  ],
+  "output_values": 72,
+  "exact_values": 66,
+  "nonexact": [
+    {
+      "original_row": 1000,
+      "metric": "rsquared",
+      "absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "original_row": 1000,
+      "metric": "slope",
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "original_row": 990499,
+      "metric": "rsquaredRessource",
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "original_row": 1028088,
+      "metric": "rsquaredRessource",
+      "absolute_error": 4.440892098500626e-16
+    },
+    {
+      "original_row": 1028088,
+      "metric": "slopeRessource",
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "original_row": 1366057,
+      "metric": "rsquaredRessource",
+      "absolute_error": 2.220446049250313e-16
+    }
+  ],
+  "scope": "Independent source-index lookup and raw output comparison; declared tolerances retained"
+}

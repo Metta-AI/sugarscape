@@ -1,0 +1,72 @@
+{
+  "rows": 6,
+  "new_validation_rows": 5,
+  "repeated_control_original_row": 0,
+  "comparisons": 72,
+  "exact_comparisons": 66,
+  "within_declared_tolerance": true,
+  "nonexact": [
+    {
+      "original_row": 1000,
+      "metric": "slope",
+      "actual": -1.007394263293158,
+      "expected": -1.0073942632931583,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "exact": false,
+      "within_tolerance": true
+    },
+    {
+      "original_row": 1000,
+      "metric": "rsquared",
+      "actual": 0.9410336038854282,
+      "expected": 0.9410336038854286,
+      "absolute_error": 3.3306690738754696e-16,
+      "tolerance": 1e-12,
+      "exact": false,
+      "within_tolerance": true
+    },
+    {
+      "original_row": 990499,
+      "metric": "rsquaredRessource",
+      "actual": 0.7378666788376264,
+      "expected": 0.7378666788376262,
+      "absolute_error": 1.1102230246251565e-16,
+      "tolerance": 1e-12,
+      "exact": false,
+      "within_tolerance": true
+    },
+    {
+      "original_row": 1028088,
+      "metric": "slopeRessource",
+      "actual": -0.7508511762728527,
+      "expected": -0.7508511762728529,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "exact": false,
+      "within_tolerance": true
+    },
+    {
+      "original_row": 1028088,
+      "metric": "rsquaredRessource",
+      "actual": 0.7070625975215671,
+      "expected": 0.7070625975215675,
+      "absolute_error": 4.440892098500626e-16,
+      "tolerance": 1e-12,
+      "exact": false,
+      "within_tolerance": true
+    },
+    {
+      "original_row": 1366057,
+      "metric": "rsquaredRessource",
+      "actual": 0.5585801231471756,
+      "expected": 0.5585801231471759,
+      "absolute_error": 2.220446049250313e-16,
+      "tolerance": 1e-12,
+      "exact": false,
+      "within_tolerance": true
+    }
+  ],
+  "maximum_absolute_error": 4.440892098500626e-16,
+  "scope": "Generated-landscape fidelity probes only; no production coverage counted"
+}
