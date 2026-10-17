@@ -565,8 +565,12 @@ A [bounded fresh notebook execution](results/notebook-rf-sequence-launch-2026-10
 The original chunk bodies remain unchanged; checkpoints retain all global objects and random state after each chunk.
 This follows the notebook’s estimator ordering instead of resetting the seed for every method.
 Current packages and explicit Rejection sampling remain declared runtime choices; this is not a historical-runtime reconstruction.
-The two-hour diagnostic leaves existing long-running estimators intact.
-It has started successfully; full results and independent prediction audits remain pending.
+The two-hour diagnostic reached and audited the linear-regression checkpoint, then timed out during the forest stage.
+Its terminal traceback is retained; no forest result was produced by that attempt.
+A [bounded checkpoint continuation](results/notebook-rf-checkpoint-resume-2026-10-17/manifest.json) restores all 37 saved global objects and all 626 random-state integers exactly.
+The unchanged original forest chunk runs with a six-hour limit after both prior processes were confirmed absent.
+The restoration receipt and source hashes are retained; forest results and independent prediction audits remain pending.
+The separate regression-forest and neural-network estimators remain intact.
 
 The [actual notebook data checkpoint](results/notebook-rf-sequence-launch-2026-10-16/dataprep-audit.json) passes independent base-R parsing and first-fold alignment checks.
 All755,000 numeric cells agree within1e-10; maximum parser difference is1.3877787807814457e-17.
