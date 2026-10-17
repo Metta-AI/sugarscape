@@ -715,3 +715,27 @@ Extract the checkpoint, restore each `trajectory.json` from its adjacent gzip, a
 `audit_runtime.py` with `--allow-prefix` and recorded root
 `/home/dev/sugarscape/blueprints-runtime-round2-002/runs/benthamHalfLookaheadBinary-5000`.
 The expected ordinal interval is `[52,54)`; the active producer continues toward index 100.
+
+## Runtime archive: third restored checkpoints
+
+[The reconciled checkpoint](results/runtime-storage-readback-third-2026-10-17/coverage.json)
+contains 804 unique original inputs and 1,541,060 native observations. It adds
+12 inputs and 75,962 observations to the prior 792-input checkpoint.
+
+The two downloaded archives contain six raw 50,000-step inputs, one altruistic
+50,000-step input, and seven Bentham 5,000-step inputs. Two Bentham records overlap
+the prior checkpoint; every retained field and trajectory hash agrees exactly.
+They are counted once. The altruistic input ends in extinction at step 134; it
+is a completed original input, not a completed 50,000-step survival trajectory.
+
+Both archives pass download SHA-256/size checks and full trajectory audits against
+the original configurations, pinned source, seed intervals, native exit receipts,
+finite observations, and terminal conditions. Their 10,363,994-byte and
+8,615,540-byte raw archives remain in task-owned storage with retrieval metadata
+and hashes; compact audits and ledgers are retained here.
+
+`reconcile_runtime.py ARCHIVE PREVIOUS_COVERAGE NEW_OUTPUT AUDIT...` rechecks all
+previous audit hashes, reconstructs prior coverage, and rejects conflicting
+overlap before adding new records. The complete original grid has 1,200 inputs.
+Neither this checkpoint nor full deposited-grid completion replaces the paper's
+500-seed Table 6 experiment. The two native continuation jobs remain running.
