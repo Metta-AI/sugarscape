@@ -698,5 +698,20 @@ All 755,000 input cells match, and all 5,000 predictions are finite. Recomputed 
 interval coverage, and interval widths agree with the checkpoint within 1e-10.
 Parameter errors are 60.71296364, 0.02664347, 12.00947956, 11.65893629, and 4.66388069,
 in the parameter order above. The native checkpoint, prediction export, hashes, and
-runtime metadata are retained. Forest completion is 3/5 folds; neural-network completion
-remains 2/5. Both estimator processes remain active; aggregate Table 8 scores stay pending.
+runtime metadata are retained. At that checkpoint, forest completion was 3/5 folds
+and neural-network completion was 2/5. The neural-network update below supersedes that count.
+
+## Neural-network third fold
+
+[The third native neural-network checkpoint](results/neuralnet-5000-third-fold-2026-10-17/audit.json)
+passes the original seed-zero partition check: 4,000 training rows and 1,000 held-out
+rows, covering 755,000 input values. All 5,000 predictions are finite; independently
+recomputed error, coverage, and interval width agree with saved metrics within 1e-10.
+
+Root mean square errors are 49.608317 for initial population, 0.028831 for mutation
+probability, 10.506691 for sugar endowment, 10.347184 for spice endowment, and
+5.917523 for reproduction wealth. These are fold measurements, not aggregate Table 8 scores.
+
+Both expensive estimators have completed three of five folds. Their original processes
+remain active. The native checkpoint, compressed predictions, hashes, runtime metadata,
+and auditor are retained; no additional study completion is claimed.
