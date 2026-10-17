@@ -15,3 +15,11 @@ Numerical validity is an independent requirement: report the first nonfinite hol
 ## Provenance correction before full-grid analysis
 
 Inspection after launching seeds 1–99 found that the old one-level seed-zero manifest lacks PYTHONHASHSEED, while the multi-level fixed-observed manifest explicitly records zero. Preserve the old one-level pilot and the already-frozen production protocol. A single separately recorded one-level seed-zero replay now uses the immutable production `run.py` and explicitly records PYTHONHASHSEED=0, with a ten-minute cap. Use this new replay for full-grid reconciliation after its outputs pass audit; compare the old pilot but do not count it twice. This correction changes no active production seed or model rule.
+
+## Platform-separated cloud ensemble
+
+The native common-resource controls differ between ARM macOS and x86 Linux despite matching Python and package versions. Preserve the 60 completed local conditions and local seed-zero pilots as a separate sensitivity series. Do not pool them with cloud results.
+
+The homogeneous cloud grid uses the same frozen native runner and 198-condition schedule for seeds 1–99, plus two new native seed-zero conditions on that same cloud runtime. Existing cloud seed-one portability controls remain diagnostics and are not counted again. Archive the seed-zero commands, runtime/source manifests, complete trajectories, and terminal receipts before reconciling the full 200-condition grid.
+
+This addendum does not rewrite any launched batch's frozen protocol or change its model behavior. It changes the full-grid reconciliation choice: cloud seed-zero results accompany the cloud batch, and local seed-zero results accompany local evidence. Lower-threshold comparisons and historical-source validation remain outstanding.

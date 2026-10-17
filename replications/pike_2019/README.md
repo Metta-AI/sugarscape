@@ -543,3 +543,15 @@ The 60 local conditions remain a separate platform-sensitivity series; their out
 Prior cloud seed-one controls are duplicate diagnostics, never additional grid coverage.
 The cloud seed-zero runs and lower-threshold experiments remain outstanding.
 This platform separation preserves native arithmetic instead of rounding outputs to force agreement.
+
+## Audited cloud seed-zero common-resource conditions
+
+[Both missing cloud seed-zero conditions](results/common-cloud-zero-2026-10-17/audit.json) complete 1,000 steps using the cloud ensemble’s frozen native runner.
+The audit reconciles every agent identity against 176,152 health records and checks terminal counts and finite positive recorded prices.
+One-level groups finish with 83 individuals; multi-level groups finish with 87.
+
+Both conditions fail numerical validity.
+One-level holdings become nonfinite at step 76, affecting 58,278 health records; multi-level holdings become nonfinite at step 73, affecting 60,798 records.
+No negative holding is observed. Invalid holdings remain in the archived raw data and are not repaired or excluded.
+These outcomes supply the cloud grid’s two seed-zero slots but do not establish valid economic replication.
+The 198-condition cloud batch remains separate and active; full-grid reconciliation and aggregate price analysis remain pending.
