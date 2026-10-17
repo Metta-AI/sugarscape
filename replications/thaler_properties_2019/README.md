@@ -402,8 +402,15 @@ audit verifies 111,705 snapshot-agent observations, identical initial conditions
 inheritance as the sole differing dynamics parameter. Final populations are 264 without
 inheritance and 1,034 with inheritance; these are single-seed observations.
 
-The remaining 99 seeds per configuration run in a separate one-CPU, 2 GiB worker,
-with a three-hour limit. The frozen protocol records final sugar Gini, population, and
+The three-hour local worker completed all 100 mating seeds and 28 inheritance seeds.
+Its next inheritance simulation timed out; the retained prefix is not a negative result.
+The remaining 72 inheritance seeds now run under the same protocol on a native CPU node.
+[Native qualification evidence](results/demographics-native-qualification-2026-10-17)
+records byte-identical exports for both first-seed controls: all ten files match.
+An independent combined audit validates 29 pairs, including the first continuation seed.
+The qualification bundle contains that new trajectory, parity exports, protocols, and
+frozen ledger receipts. Earlier retained trajectories remain at the evidence paths
+listed in the audit; this interim bundle does not reproduce all 29 pairs by itself. The frozen protocol records final sugar Gini, population, and
 explicitly diagnostic late-window means. It distinguishes the book's 0.7 Gini target
 from the appendix's reported approximately 0.35 inheritance and 0.21 no-inheritance values.
 Reproducing the appendix's disagreement with the book would support this paper's result.
@@ -433,6 +440,12 @@ python audit_paired_observers.py /path/to/protocol.json /path/to/native-observer
 Complete inference requires 100 pairs and matching completion ledgers. `--allow-prefix`
 audits only available complete pairs, lists unpaired records as unaudited, and emits
 no aggregate comparisons. It reads the published gzip files directly.
+
+`--continuation-protocol PROTOCOL RUN...` accepts a scenario subset with identical
+seeds, model pins, parameters, and limits. Only the purpose and scenario selection
+may differ. Disjoint interval checks still apply. An interrupted predecessor requires
+its frozen terminal receipt through `--interrupted-ledger`; continuation cannot silently
+overwrite completed records or turn a prefix into a complete ensemble.
 
 [Native first-pair audits and rejection evidence](results/paired-observer-audit-2026-10-17)
 cover both experiments. The inheritance pair has final sugar Gini 0.352099 versus

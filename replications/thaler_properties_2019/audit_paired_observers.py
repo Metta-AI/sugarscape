@@ -61,6 +61,13 @@ parser.add_argument(
     default=[],
     help="Frozen terminal receipts for interrupted ledgers followed by disjoint continuations",
 )
+parser.add_argument(
+    "--continuation-protocol",
+    nargs="+",
+    type=Path,
+    default=[],
+    help="Scenario-subset protocol followed by disjoint continuation directories",
+)
 args = parser.parse_args()
 interrupted = {}
 for path in args.interrupted_ledger:
@@ -98,6 +105,21 @@ assert (
 )
 scenarios = protocol["scenarios"]
 inputs = [(root, protocol) for root in args.runs]
+if args.continuation_protocol:
+    continuation_path, *continuation_roots = args.continuation_protocol
+    assert continuation_roots
+    continuation = json.loads(continuation_path.read_text())
+    assert set(continuation) == set(protocol)
+    assert {
+        k: v for k, v in continuation.items() if k not in {"purpose", "scenarios"}
+    } == {k: v for k, v in protocol.items() if k not in {"purpose", "scenarios"}}
+    assert continuation["scenarios"] and all(
+        s in scenarios for s in continuation["scenarios"]
+    )
+    assert len({s["key"] for s in continuation["scenarios"]}) == len(
+        continuation["scenarios"]
+    )
+    inputs.extend((root, continuation) for root in continuation_roots)
 if args.reuse_control:
     assert variant_key == "corrected" and len(args.reuse_control) >= 2
     control_path, *control_roots = args.reuse_control
