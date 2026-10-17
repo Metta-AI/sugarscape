@@ -243,4 +243,15 @@ Paper page 19 describes the same 500 seeds, and every Table 6 group totals 500.
 [All 36 Table 6 counts](published_targets.json) are now transcribed from the rendered page 20.
 Replaying the deposited runtime archive alone cannot establish the claimed 500-seed comparison.
 Keep that archive separate from a declared reconstruction using the homogeneous seeds and changed horizons.
-Neither experiment has been run. Earlier historical-release caveats above are superseded by the paper’s explicit release statement.
+The archived runtime grid is incomplete; a first condition is recorded below. The reconstructed 500-seed experiment remains unstarted.
+Earlier historical-release caveats above are superseded by the paper’s explicit release statement.
+
+## First deposited runtime execution
+
+[The original runtime input](results/runtime-pilot-2026-10-17/audit.json) uses raw Sugarscape, seed 1071049487305188627, and 500 steps.
+The filename was selected lexicographically before outcomes; only its logfile path changed.
+The paper-named v2024.1 release completes all 500 steps with 431 agents, retaining 501 observations.
+All nine source files, original/effective configuration, finite metrics, timestamp sequence, seed and trajectory hashes pass independent checks.
+The run took 7.83 seconds on this machine; that is execution provenance, not a historical runtime comparison.
+This contributes one of the deposited runtime archive's 1,200 configurations, not a completion of Table 6 or its claimed 500-seed experiment.
+The archived runner has a 1,800-second timeout and 2 GiB preflight disk guard. Compressed output is retained alongside its audit and native logs.
