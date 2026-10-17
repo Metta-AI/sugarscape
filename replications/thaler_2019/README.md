@@ -258,3 +258,15 @@ The driver requires the provider's `GMN_CPU_LIMIT` and `GMN_MEMORY_LIMIT_BYTES` 
 metadata. It records topology, affinity, source hashes, executable hashes, commands,
 raw reports, fit decisions, and missing conditions. Table 9, retry instrumentation,
 and concurrent population dynamics remain separate outstanding targets.
+
+## Timing allocation recovery
+
+[The original allocation failed before execution](timing/provisioning-retry-2026-10-17)
+when the provider exhausted its reserved eight-core CPU slots. The provider reports
+that nothing was created or billed. A replacement allocation uses the same node
+name, unchanged protocol and bootstrap, and a four-hour queue hold.
+Its bounded boot command is registered; no timing result is claimed.
+
+The dedicated-core requirement remains intact. GPU-host CPU quotas are shared
+and would change the timing conditions. Historical failed allocation and command
+identifiers remain in the recovery evidence alongside the replacement identifiers.

@@ -1,0 +1,11 @@
+{
+  "reason": "Provider exhausted reserved8-core CPU slots; originalnode failed beforeexecution, nothing created/billed perprovider.",
+  "old_node_id": "85cd0521-676a-4ff0-8355-a62aa40f65ba",
+  "replacement_node_id": "b328b7cc-bf31-4ad3-920a-b4ab2fd99e77",
+  "old_command": "cmd-zbnrk",
+  "new_command": "cmd-gjm6m",
+  "new_queue_expires_utc": "2026-10-17T14:36:12.488764516+00:00",
+  "protocol_changed": false,
+  "bootstrap_changed": false,
+  "scope": "Provisioning retry only, no timing results. Dedicated CPUcores retained; shared-quota GPUhost CPU would change timingconditions."
+}
