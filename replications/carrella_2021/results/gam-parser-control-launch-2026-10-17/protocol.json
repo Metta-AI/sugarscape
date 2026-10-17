@@ -1,0 +1,18 @@
+{
+  "purpose": "Controlled GAM1250 CSV parser sensitivity. Only input parsing changes from primary isolated-seed workflow. Not sequential notebook replay or a replacement primary result.",
+  "method": "loess",
+  "size": 1250,
+  "seed": 0,
+  "folds": 5,
+  "limit_seconds": 1800,
+  "output_limit_bytes": 1073741824,
+  "source_sha256": {
+    "setup.R": "a013440e7b209e3cd156a65a75d5136647125aa1ae6a1fb23da932ad086ec435",
+    "sugarscape_small.Rmd": "63f303f2f7df1342f13e5d12b3eb2ded7911d18e349bf10b0d31e7d9695680d8",
+    "data/sugarscape/params_sugarscape.csv": "216a4fbfd5357d7f5c8fa0140792aaa511df224ad83f91a6cdf23758e688c9fa",
+    "data/sugarscape/sugarscape.csv": "33845743cda8be19e6827f353fe13366c1d92fc1eb98dd617c6809874498d99a"
+  },
+  "runner_sha256": "c900e71ff2278006be1f31b165d3250a5bf5a5c4a615dd9b9393d50b727fc7a0",
+  "original_runner_sha256": "18730ad5a10ddceba429880deec169f16f2e9e326983e490c3f42bc6f5d725d7",
+  "comparison": "Original 1250 GAM full workflow, all five parameters and interval procedure. Audit parsed values, folds, input delta, complete saved predictions and aggregate metrics before interpretation."
+}

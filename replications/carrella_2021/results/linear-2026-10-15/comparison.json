@@ -1,0 +1,218 @@
+{
+  "source_revision": "0400f750063215d06659a203f777b21da2e99231",
+  "implementation_revision": "ba58307d5630f917d803a313caa6643fd3befca7",
+  "predictions": 62500,
+  "metric": "1 - mean(fold RMSE) / mean(fold baseline RMSE)",
+  "matches_at_published_precision": {
+    "Rounding": 0,
+    "Rejection": 10
+  },
+  "sha256": {
+    "point_estimates.R": "31a05b63aa4a494a145c9ad31e94c113d9c7d90f309bc595048a3a205a8f52d3",
+    "POINT_ESTIMATION_PROTOCOL.md": "a6073d7261dad508d60d699bd7772afee538beb01bfab512ab2ef975003bb264",
+    "predictions.csv": "d2f495541a2a7f5a829ca38b2f73d62e885d32b2154edab617939cb893de5ec3",
+    "performance.csv": "d7435e29cc7173b860a110e3de476c879b8d0763b08d9ee7b09b1842f228c823"
+  },
+  "comparison": [
+    {
+      "sample_kind": "Rounding",
+      "size": "1250",
+      "parameter": "initial.population",
+      "rmse": "52.2435868634051",
+      "baseline_rmse": "115.37016240524",
+      "performance": "0.54716552552038",
+      "published": 0.513,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rounding",
+      "size": "1250",
+      "parameter": "pmut",
+      "rmse": "0.0507570462822107",
+      "baseline_rmse": "0.0575664353611357",
+      "performance": "0.118287488815438",
+      "published": -0.131,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rounding",
+      "size": "1250",
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "11.8594808216621",
+      "baseline_rmse": "21.2795502195816",
+      "performance": "0.442681790766943",
+      "published": 0.399,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rounding",
+      "size": "1250",
+      "parameter": "maximum.spice.endowment",
+      "rmse": "13.0236267836443",
+      "baseline_rmse": "21.2713168704461",
+      "performance": "0.387737634535497",
+      "published": 0.387,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rounding",
+      "size": "1250",
+      "parameter": "wealth.reproduction",
+      "rmse": "12.8822286558975",
+      "baseline_rmse": "23.2314411721714",
+      "performance": "0.445483017587006",
+      "published": 0.394,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rounding",
+      "size": "5000",
+      "parameter": "initial.population",
+      "rmse": "45.3136248499252",
+      "baseline_rmse": "115.442870959367",
+      "performance": "0.607480094064236",
+      "published": 0.606,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rounding",
+      "size": "5000",
+      "parameter": "pmut",
+      "rmse": "0.0429978915416603",
+      "baseline_rmse": "0.0575428194735239",
+      "performance": "0.252767036181741",
+      "published": 0.279,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rounding",
+      "size": "5000",
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "10.1745897136739",
+      "baseline_rmse": "21.4262571149136",
+      "performance": "0.525134527271589",
+      "published": 0.539,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rounding",
+      "size": "5000",
+      "parameter": "maximum.spice.endowment",
+      "rmse": "10.3257641501904",
+      "baseline_rmse": "21.472212727662",
+      "performance": "0.519110383212252",
+      "published": 0.546,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rounding",
+      "size": "5000",
+      "parameter": "wealth.reproduction",
+      "rmse": "5.94459059081099",
+      "baseline_rmse": "23.0252221001935",
+      "performance": "0.741822660170517",
+      "published": 0.734,
+      "match_at_three_decimals": false
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "1250",
+      "parameter": "initial.population",
+      "rmse": "56.064016676928",
+      "baseline_rmse": "115.185736553596",
+      "performance": "0.51327292463124",
+      "published": 0.513,
+      "match_at_three_decimals": true
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "1250",
+      "parameter": "pmut",
+      "rmse": "0.0651308030125086",
+      "baseline_rmse": "0.0575886702563154",
+      "performance": "-0.130965565320829",
+      "published": -0.131,
+      "match_at_three_decimals": true
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "1250",
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "12.7773793233908",
+      "baseline_rmse": "21.2722669488193",
+      "performance": "0.399340965674559",
+      "published": 0.399,
+      "match_at_three_decimals": true
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "1250",
+      "parameter": "maximum.spice.endowment",
+      "rmse": "13.0445003703964",
+      "baseline_rmse": "21.2718280009535",
+      "performance": "0.386771067826814",
+      "published": 0.387,
+      "match_at_three_decimals": true
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "1250",
+      "parameter": "wealth.reproduction",
+      "rmse": "14.0583690231571",
+      "baseline_rmse": "23.2101797750186",
+      "performance": "0.394301588379411",
+      "published": 0.394,
+      "match_at_three_decimals": true
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "5000",
+      "parameter": "initial.population",
+      "rmse": "45.5335122713648",
+      "baseline_rmse": "115.487322231592",
+      "performance": "0.605727179472963",
+      "published": 0.606,
+      "match_at_three_decimals": true
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "5000",
+      "parameter": "pmut",
+      "rmse": "0.0414870057750687",
+      "baseline_rmse": "0.0575213056815138",
+      "performance": "0.278754101918764",
+      "published": 0.279,
+      "match_at_three_decimals": true
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "5000",
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "9.87190089830467",
+      "baseline_rmse": "21.4280435845157",
+      "performance": "0.539299943115746",
+      "published": 0.539,
+      "match_at_three_decimals": true
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "5000",
+      "parameter": "maximum.spice.endowment",
+      "rmse": "9.75725456838077",
+      "baseline_rmse": "21.4705490730717",
+      "performance": "0.545551698041189",
+      "published": 0.546,
+      "match_at_three_decimals": true
+    },
+    {
+      "sample_kind": "Rejection",
+      "size": "5000",
+      "parameter": "wealth.reproduction",
+      "rmse": "6.11358176490869",
+      "baseline_rmse": "23.0227745193846",
+      "performance": "0.734455038867656",
+      "published": 0.734,
+      "match_at_three_decimals": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "map_cells": 2500,
+  "resource_capacities_compared": 5000,
+  "complete_tick_cases": [
+    {
+      "case": "cached-1",
+      "independent": {
+        "tick": 1,
+        "population": 1,
+        "total_sugar": 9.0,
+        "total_spice": 9.0,
+        "total_utility": 9.0,
+        "trade_count": 0,
+        "mean_price": 7
+      },
+      "native": {
+        "case": "cached-1",
+        "tick": "1.0",
+        "population": "1.0",
+        "total_sugar": "9.0",
+        "total_spice": "9.0",
+        "total_utility": "9.0",
+        "trade_count": "0.0",
+        "mean_price": "7.0"
+      }
+    },
+    {
+      "case": "cached-10",
+      "independent": {
+        "tick": 1,
+        "population": 2,
+        "total_sugar": 9.0,
+        "total_spice": 9.0,
+        "total_utility": 8.999999999999998,
+        "trade_count": 0,
+        "mean_price": 7
+      },
+      "native": {
+        "case": "cached-10",
+        "tick": "1.0",
+        "population": "2.0",
+        "total_sugar": "9.0",
+        "total_spice": "9.0",
+        "total_utility": "8.999999999999998",
+        "trade_count": "0.0",
+        "mean_price": "7.0"
+      }
+    },
+    {
+      "case": "equal-rates-retained-potentials",
+      "independent": {
+        "tick": 1,
+        "population": 2,
+        "total_sugar": 40.0,
+        "total_spice": 40.0,
+        "total_utility": 40.00000000000001,
+        "trade_count": 2,
+        "mean_price": 1.0
+      },
+      "native": {
+        "case": "equal-rates-retained-potentials",
+        "tick": "1.0",
+        "population": "2.0",
+        "total_sugar": "40.0",
+        "total_spice": "40.0",
+        "total_utility": "40.00000000000001",
+        "trade_count": "2.0",
+        "mean_price": "1.0"
+      }
+    }
+  ],
+  "native_hashes": {
+    "map.csv": "8936c17a2261fa15b1dad98864b00c3661a690cc189a834ac67914ea80eede50",
+    "results.csv": "3cb5f4f65b58cd8c19e96ef16366462addd278fbce90a6b78dc87f7bc0346978"
+  },
+  "model_sha256": "23d73549848eadf237d38534a5cdae71c240c03cc9ef0fed4655cabb615ad36a",
+  "verifier_sha256": "1f794b5a008d4c775994e2ce8e358dcb1a3d8bcd7559c5e9d3e922a61e11e536",
+  "limits": "Controlled full-model tick and map comparison only. No independent ensemble or random-stream equivalence. Equal-MRS potentials are a constructed edge case; frequency in sampled runs is unmeasured."
+}

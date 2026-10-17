@@ -1,0 +1,2 @@
+PKG_CPPFLAGS += -include float.h -DDOUBLE_EPS=DBL_EPSILON
+PKG_CFLAGS += -std=gnu17

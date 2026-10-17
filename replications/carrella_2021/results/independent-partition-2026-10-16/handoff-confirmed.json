@@ -1,0 +1,28 @@
+{
+  "old_pid": 70466,
+  "pid_absent": true,
+  "exit_status": "Original detached launcher did not capture a native exit code; termination requested with SIGTERM and PID absence verified",
+  "completed_interval": [
+    0,
+    507
+  ],
+  "completed_rows": 507,
+  "ledger_sha256": "26b700f7ebe3705982c867035d030e2f4001838b98c76c3f2c4d8b754c4cc44b",
+  "remaining_intervals": [
+    [
+      507,
+      2005
+    ],
+    [
+      2005,
+      3503
+    ],
+    [
+      3503,
+      5000
+    ]
+  ],
+  "required_inputs": 5000,
+  "proof_row": 500,
+  "scope": "Scheduling change only; original frozen model, integer seeds, observation timing, and summary statistics unchanged."
+}

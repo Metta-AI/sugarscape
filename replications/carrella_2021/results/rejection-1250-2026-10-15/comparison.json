@@ -1,0 +1,51 @@
+{
+  "method": "rejection",
+  "size": 1250,
+  "seed": 0,
+  "status": "archived-data estimator reproduction, not a completed simulation study",
+  "comparison": [
+    {
+      "parameter": "initial.population",
+      "observed": 0.170325529616799,
+      "published": "0.170",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "pmut",
+      "observed": 0.224827690482364,
+      "published": "0.225",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "observed": 0.156108949003432,
+      "published": "0.156",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "observed": 0.143698264514103,
+      "published": "0.144",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "observed": 0.598317447032841,
+      "published": "0.598",
+      "matches_printed_precision": true
+    }
+  ],
+  "files": {
+    "arguments.txt": "4687dcc2c36065d47e4c3075d8208b29ac5d98669b8f4217f8a7e00c3436b979",
+    "complete.rds": "3c29723426e1f69bbd301c819c55fdf5cd66f7a0f4f4d25fc8e2b974bd8c7aba",
+    "execution.log": "8782b6bd8541a1e317d2054d4730bd30caadd170a0a3fcd6bb68aca836dfc7e7",
+    "fold-1.rds": "7c88336e7df2df5b124931f194cd4cc4726b5f710604bbbfd5b47e2b34c178df",
+    "fold-2.rds": "7aeeedf66455110066563907c68e78a06bd5fa05b43a7939cc163b01dba1496d",
+    "fold-3.rds": "44636349f1d20190a0a74e1501e62b177896f191d20a57dc068e0ff2eaa4f137",
+    "fold-4.rds": "f3b7256b721a71b4feac54193d8db604804dece81116971597c48fb1adfe4416",
+    "fold-5.rds": "a50baf0aee3e025dbd8b7edd6185cfeaac39064ecf0770b77258c74fa1770807",
+    "metrics.csv": "94748183fdcac2d4c0c5b884ef22d481391d34fe7f3aa4de09dce9e57bdeeb5a",
+    "packages.csv": "611e0146e8ca33c8ecf333b6a3259409a0f18059bf3a98a607f5e2990f6ea4ea",
+    "session.txt": "147f8bfe18562987e7c6dd1120cc45b8fb8085b4e1adc0113cca0282ae273a7a"
+  }
+}

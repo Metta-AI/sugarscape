@@ -1,0 +1,99 @@
+{
+  "start": 0,
+  "stop": 10,
+  "matched_statistics": 1499,
+  "total_statistics": 1500,
+  "comparison": "Floating-point replay tolerance: rtol=1e-10, atol=1e-10; not a paper-level equivalence margin.",
+  "rows": [
+    {
+      "row": 0,
+      "observations": 501,
+      "matched_statistics": 149,
+      "mismatches": {
+        "mean_count turtles": {
+          "replayed": 761.2714570858284,
+          "archived": 762.2714570858284
+        }
+      },
+      "maximum_absolute_error": 1.0,
+      "trajectory_sha256": "c213d1115258ff0a91f33c091d16c8fdf0225f8bb7036b6a66f2bd3deb1c42ed"
+    },
+    {
+      "row": 1,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 1.7053025658242404e-13,
+      "trajectory_sha256": "aeaa3ae6fd84c87a5ba79207fe357fb78a51aa7d2713a8dc1353874670aaad4b"
+    },
+    {
+      "row": 2,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "trajectory_sha256": "0985c8eaf4570fc7c971d4d6d810eb49fb03d68790ed22d9f063d64cf7765b89"
+    },
+    {
+      "row": 3,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "trajectory_sha256": "80215341ef81dcf8642c20b3c118f755ded73f61a5095fbf900e0ebad67669ca"
+    },
+    {
+      "row": 4,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "trajectory_sha256": "a84080435e36e7d7f52f3b9a776ef12f06fca2a47853478da5637e6977ea042c"
+    },
+    {
+      "row": 5,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 5.684341886080802e-14,
+      "trajectory_sha256": "cd953e74e547c2583243d2ac89209cccd34028b2c2434a8049a5537df0dd651c"
+    },
+    {
+      "row": 6,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "trajectory_sha256": "a11f7fb920f32eefe09328c4b3fda9b6cac65cd60dc048da47a6336a55d9e0c8"
+    },
+    {
+      "row": 7,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "trajectory_sha256": "b94178a759703e94a8927ade292710c674a4a5aef71763578da3e5f6969310e7"
+    },
+    {
+      "row": 8,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 1.7053025658242404e-13,
+      "trajectory_sha256": "679da6a61bb8f7dab43eb6556759e75ce598df67102f2ba5a5e0cdf1b6dcf2f2"
+    },
+    {
+      "row": 9,
+      "observations": 501,
+      "matched_statistics": 150,
+      "mismatches": {},
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "trajectory_sha256": "42487c64132326e40600bd51bfa60930851bf75e2de2aadf4d8582ef8f57193f"
+    }
+  ],
+  "sha256": {
+    "carrella-2021-deliberately-corrupted-reference.csv": "c348c729842aea04657025c19d8b32ff2322f9d4e9d0ae38da5f76c140f9f8e6",
+    "compare_replay.py": "2c2bb26a429275dbcc8433eba3d7855862eaf8ddfc1be3f52f57202243303a8d",
+    "summary_statistics.csv": "aa508c8553cb9c01e3924b2a1449a7e32e714c54096dc1ae09c25c38f274903f"
+  }
+}

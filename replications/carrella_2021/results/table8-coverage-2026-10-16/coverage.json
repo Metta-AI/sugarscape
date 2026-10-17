@@ -1,0 +1,908 @@
+{
+  "cells": [
+    {
+      "size": 1250,
+      "method": "Rejection ABC",
+      "parameter": "initial.population",
+      "published": "0.170",
+      "status": "computed",
+      "measured": 0.170325529616799,
+      "evidence": "replications/carrella_2021/results/rejection-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "baa50e967c2859208f736af4dd412fcddf92a7b1d2eeb06cc6fccce4c05485ad"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "initial.population",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "initial.population",
+      "published": "0.468",
+      "status": "computed",
+      "measured": 0.463495057111922,
+      "evidence": "replications/carrella_2021/results/sabc1d-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "6b40cd4c6fc0f4de8d9cf7a8a181b03d14276841e668e32dd5170ac63ffa4219"
+    },
+    {
+      "size": 1250,
+      "method": "Local-linear ABC",
+      "parameter": "initial.population",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Neural Network ABC",
+      "parameter": "initial.population",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Linear Regression",
+      "parameter": "initial.population",
+      "published": "0.513",
+      "status": "computed",
+      "measured": 0.51327292463124,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 1250,
+      "method": "GAM",
+      "parameter": "initial.population",
+      "published": "0.528",
+      "status": "computed",
+      "measured": 0.499665248447165,
+      "evidence": "replications/carrella_2021/results/gam-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "8bc7458d88e57dbc3623a52258a856efb7f2cb8770236da7f3a859f663b5cce1"
+    },
+    {
+      "size": 1250,
+      "method": "Quantile Random Forest",
+      "parameter": "initial.population",
+      "published": "0.417",
+      "status": "computed",
+      "measured": 0.418864852912378,
+      "evidence": "replications/carrella_2021/results/rf-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "22d3243db9e832116d0ebe6cd8e8e8bcf2cb6e6d3df2ba420152f9c06c568f50"
+    },
+    {
+      "size": 1250,
+      "method": "Regression Random Forest",
+      "parameter": "initial.population",
+      "published": "0.416",
+      "status": "computed",
+      "measured": 0.413409615575155,
+      "evidence": "replications/carrella_2021/results/rfboot-1250-2026-10-16/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "54861c4e3fca598f9b371b846fdf6473abaa10ef8e8e72ee00a8834ae4c2ce8e"
+    },
+    {
+      "size": 1250,
+      "method": "Rejection ABC",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.144",
+      "status": "computed",
+      "measured": 0.143698264514103,
+      "evidence": "replications/carrella_2021/results/rejection-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "baa50e967c2859208f736af4dd412fcddf92a7b1d2eeb06cc6fccce4c05485ad"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "maximum.spice.endowment",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.423",
+      "status": "computed",
+      "measured": 0.436137524185557,
+      "evidence": "replications/carrella_2021/results/sabc1d-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "6b40cd4c6fc0f4de8d9cf7a8a181b03d14276841e668e32dd5170ac63ffa4219"
+    },
+    {
+      "size": 1250,
+      "method": "Local-linear ABC",
+      "parameter": "maximum.spice.endowment",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Neural Network ABC",
+      "parameter": "maximum.spice.endowment",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Linear Regression",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.387",
+      "status": "computed",
+      "measured": 0.386771067826814,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 1250,
+      "method": "GAM",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.328",
+      "status": "computed",
+      "measured": 0.164329489487925,
+      "evidence": "replications/carrella_2021/results/gam-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "8bc7458d88e57dbc3623a52258a856efb7f2cb8770236da7f3a859f663b5cce1"
+    },
+    {
+      "size": 1250,
+      "method": "Quantile Random Forest",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.434",
+      "status": "computed",
+      "measured": 0.434602281993468,
+      "evidence": "replications/carrella_2021/results/rf-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "22d3243db9e832116d0ebe6cd8e8e8bcf2cb6e6d3df2ba420152f9c06c568f50"
+    },
+    {
+      "size": 1250,
+      "method": "Regression Random Forest",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.441",
+      "status": "computed",
+      "measured": 0.442774753240961,
+      "evidence": "replications/carrella_2021/results/rfboot-1250-2026-10-16/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "54861c4e3fca598f9b371b846fdf6473abaa10ef8e8e72ee00a8834ae4c2ce8e"
+    },
+    {
+      "size": 1250,
+      "method": "Rejection ABC",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.156",
+      "status": "computed",
+      "measured": 0.156108949003432,
+      "evidence": "replications/carrella_2021/results/rejection-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "baa50e967c2859208f736af4dd412fcddf92a7b1d2eeb06cc6fccce4c05485ad"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "maximum.sugar.endowment",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.424",
+      "status": "computed",
+      "measured": 0.423884386703421,
+      "evidence": "replications/carrella_2021/results/sabc1d-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "6b40cd4c6fc0f4de8d9cf7a8a181b03d14276841e668e32dd5170ac63ffa4219"
+    },
+    {
+      "size": 1250,
+      "method": "Local-linear ABC",
+      "parameter": "maximum.sugar.endowment",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Neural Network ABC",
+      "parameter": "maximum.sugar.endowment",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Linear Regression",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.399",
+      "status": "computed",
+      "measured": 0.399340965674559,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 1250,
+      "method": "GAM",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.311",
+      "status": "computed",
+      "measured": 0.347443748236836,
+      "evidence": "replications/carrella_2021/results/gam-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "8bc7458d88e57dbc3623a52258a856efb7f2cb8770236da7f3a859f663b5cce1"
+    },
+    {
+      "size": 1250,
+      "method": "Quantile Random Forest",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.385",
+      "status": "computed",
+      "measured": 0.386814627667559,
+      "evidence": "replications/carrella_2021/results/rf-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "22d3243db9e832116d0ebe6cd8e8e8bcf2cb6e6d3df2ba420152f9c06c568f50"
+    },
+    {
+      "size": 1250,
+      "method": "Regression Random Forest",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.392",
+      "status": "computed",
+      "measured": 0.392754360054187,
+      "evidence": "replications/carrella_2021/results/rfboot-1250-2026-10-16/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "54861c4e3fca598f9b371b846fdf6473abaa10ef8e8e72ee00a8834ae4c2ce8e"
+    },
+    {
+      "size": 1250,
+      "method": "Rejection ABC",
+      "parameter": "pmut",
+      "published": "0.225",
+      "status": "computed",
+      "measured": 0.224827690482364,
+      "evidence": "replications/carrella_2021/results/rejection-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "baa50e967c2859208f736af4dd412fcddf92a7b1d2eeb06cc6fccce4c05485ad"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "pmut",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "pmut",
+      "published": "0.338",
+      "status": "computed",
+      "measured": 0.350284444190329,
+      "evidence": "replications/carrella_2021/results/sabc1d-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "6b40cd4c6fc0f4de8d9cf7a8a181b03d14276841e668e32dd5170ac63ffa4219"
+    },
+    {
+      "size": 1250,
+      "method": "Local-linear ABC",
+      "parameter": "pmut",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Neural Network ABC",
+      "parameter": "pmut",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Linear Regression",
+      "parameter": "pmut",
+      "published": "-0.131",
+      "status": "computed",
+      "measured": -0.130965565320829,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 1250,
+      "method": "GAM",
+      "parameter": "pmut",
+      "published": "0.328",
+      "status": "computed",
+      "measured": 0.436193778519141,
+      "evidence": "replications/carrella_2021/results/gam-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "8bc7458d88e57dbc3623a52258a856efb7f2cb8770236da7f3a859f663b5cce1"
+    },
+    {
+      "size": 1250,
+      "method": "Quantile Random Forest",
+      "parameter": "pmut",
+      "published": "0.506",
+      "status": "computed",
+      "measured": 0.507629173250911,
+      "evidence": "replications/carrella_2021/results/rf-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "22d3243db9e832116d0ebe6cd8e8e8bcf2cb6e6d3df2ba420152f9c06c568f50"
+    },
+    {
+      "size": 1250,
+      "method": "Regression Random Forest",
+      "parameter": "pmut",
+      "published": "0.503",
+      "status": "computed",
+      "measured": 0.503074313276735,
+      "evidence": "replications/carrella_2021/results/rfboot-1250-2026-10-16/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "54861c4e3fca598f9b371b846fdf6473abaa10ef8e8e72ee00a8834ae4c2ce8e"
+    },
+    {
+      "size": 1250,
+      "method": "Rejection ABC",
+      "parameter": "wealth.reproduction",
+      "published": "0.598",
+      "status": "computed",
+      "measured": 0.598317447032841,
+      "evidence": "replications/carrella_2021/results/rejection-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "baa50e967c2859208f736af4dd412fcddf92a7b1d2eeb06cc6fccce4c05485ad"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "wealth.reproduction",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "wealth.reproduction",
+      "published": "0.567",
+      "status": "computed",
+      "measured": 0.5635486458472,
+      "evidence": "replications/carrella_2021/results/sabc1d-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "6b40cd4c6fc0f4de8d9cf7a8a181b03d14276841e668e32dd5170ac63ffa4219"
+    },
+    {
+      "size": 1250,
+      "method": "Local-linear ABC",
+      "parameter": "wealth.reproduction",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Neural Network ABC",
+      "parameter": "wealth.reproduction",
+      "published": "NA",
+      "status": "not_reported"
+    },
+    {
+      "size": 1250,
+      "method": "Linear Regression",
+      "parameter": "wealth.reproduction",
+      "published": "0.394",
+      "status": "computed",
+      "measured": 0.394301588379411,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 1250,
+      "method": "GAM",
+      "parameter": "wealth.reproduction",
+      "published": "-1.329",
+      "status": "computed",
+      "measured": -3.00235124307185,
+      "evidence": "replications/carrella_2021/results/gam-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "8bc7458d88e57dbc3623a52258a856efb7f2cb8770236da7f3a859f663b5cce1"
+    },
+    {
+      "size": 1250,
+      "method": "Quantile Random Forest",
+      "parameter": "wealth.reproduction",
+      "published": "0.759",
+      "status": "computed",
+      "measured": 0.759652853571959,
+      "evidence": "replications/carrella_2021/results/rf-1250-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "22d3243db9e832116d0ebe6cd8e8e8bcf2cb6e6d3df2ba420152f9c06c568f50"
+    },
+    {
+      "size": 1250,
+      "method": "Regression Random Forest",
+      "parameter": "wealth.reproduction",
+      "published": "0.764",
+      "status": "computed",
+      "measured": 0.763443670400138,
+      "evidence": "replications/carrella_2021/results/rfboot-1250-2026-10-16/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "54861c4e3fca598f9b371b846fdf6473abaa10ef8e8e72ee00a8834ae4c2ce8e"
+    },
+    {
+      "size": 5000,
+      "method": "Rejection ABC",
+      "parameter": "initial.population",
+      "published": "0.184",
+      "status": "computed",
+      "measured": 0.18415192826655,
+      "evidence": "replications/carrella_2021/results/rejection-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "2f6df388489b3cccaad56a1cfee5627b8c0203b6f2b850441b42493a41bafb10"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "initial.population",
+      "published": "0.509",
+      "status": "computed",
+      "measured": 0.509367442984335,
+      "evidence": "replications/carrella_2021/results/sabc4d-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "1139ae59f7cca6cf00be838344d6de47d9705f817179bfc68bfc3dba138ffc46"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "initial.population",
+      "published": "0.545",
+      "status": "computed",
+      "measured": 0.546478235422702,
+      "evidence": "replications/carrella_2021/results/sabc1d-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "86d006f095b7800d2d9c200c8e96dd8020096ca732d77a8c6db56289105112a4"
+    },
+    {
+      "size": 5000,
+      "method": "Local-linear ABC",
+      "parameter": "initial.population",
+      "published": "0.579",
+      "status": "computed",
+      "measured": 0.57881157776461,
+      "evidence": "replications/carrella_2021/results/loclin-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "4f44105d052537683dfe3dd05259530892832bf57fc58cf068437fa2e94d3640"
+    },
+    {
+      "size": 5000,
+      "method": "Neural Network ABC",
+      "parameter": "initial.population",
+      "published": "0.588",
+      "status": "pending"
+    },
+    {
+      "size": 5000,
+      "method": "Linear Regression",
+      "parameter": "initial.population",
+      "published": "0.606",
+      "status": "computed",
+      "measured": 0.605727179472963,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 5000,
+      "method": "GAM",
+      "parameter": "initial.population",
+      "published": "0.651",
+      "status": "computed",
+      "measured": 0.657583320314319,
+      "evidence": "replications/carrella_2021/results/gam-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "7ae870d1bc7bfa14bff715460e1721454bd8dd978b63ae2f56abb774ae4d0191"
+    },
+    {
+      "size": 5000,
+      "method": "Quantile Random Forest",
+      "parameter": "initial.population",
+      "published": "0.475",
+      "status": "computed",
+      "measured": 0.475748972672409,
+      "evidence": "replications/carrella_2021/results/rf-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "278bfe4093d11b0a313cdbf85b3f8b1fa674ef01c47a4243f8ce1fc5ed6e7371"
+    },
+    {
+      "size": 5000,
+      "method": "Regression Random Forest",
+      "parameter": "initial.population",
+      "published": "0.474",
+      "status": "pending"
+    },
+    {
+      "size": 5000,
+      "method": "Rejection ABC",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.151",
+      "status": "computed",
+      "measured": 0.151302753863357,
+      "evidence": "replications/carrella_2021/results/rejection-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "2f6df388489b3cccaad56a1cfee5627b8c0203b6f2b850441b42493a41bafb10"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.476",
+      "status": "computed",
+      "measured": 0.475952583658523,
+      "evidence": "replications/carrella_2021/results/sabc4d-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "1139ae59f7cca6cf00be838344d6de47d9705f817179bfc68bfc3dba138ffc46"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.521",
+      "status": "computed",
+      "measured": 0.516448832224945,
+      "evidence": "replications/carrella_2021/results/sabc1d-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "86d006f095b7800d2d9c200c8e96dd8020096ca732d77a8c6db56289105112a4"
+    },
+    {
+      "size": 5000,
+      "method": "Local-linear ABC",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.281",
+      "status": "computed",
+      "measured": 0.281420749904499,
+      "evidence": "replications/carrella_2021/results/loclin-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "4f44105d052537683dfe3dd05259530892832bf57fc58cf068437fa2e94d3640"
+    },
+    {
+      "size": 5000,
+      "method": "Neural Network ABC",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.519",
+      "status": "pending"
+    },
+    {
+      "size": 5000,
+      "method": "Linear Regression",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.546",
+      "status": "computed",
+      "measured": 0.545551698041189,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 5000,
+      "method": "GAM",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.533",
+      "status": "computed",
+      "measured": 0.512286209122415,
+      "evidence": "replications/carrella_2021/results/gam-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "7ae870d1bc7bfa14bff715460e1721454bd8dd978b63ae2f56abb774ae4d0191"
+    },
+    {
+      "size": 5000,
+      "method": "Quantile Random Forest",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.463",
+      "status": "computed",
+      "measured": 0.46230707116087,
+      "evidence": "replications/carrella_2021/results/rf-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "278bfe4093d11b0a313cdbf85b3f8b1fa674ef01c47a4243f8ce1fc5ed6e7371"
+    },
+    {
+      "size": 5000,
+      "method": "Regression Random Forest",
+      "parameter": "maximum.spice.endowment",
+      "published": "0.465",
+      "status": "pending"
+    },
+    {
+      "size": 5000,
+      "method": "Rejection ABC",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.156",
+      "status": "computed",
+      "measured": 0.155540081701933,
+      "evidence": "replications/carrella_2021/results/rejection-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "2f6df388489b3cccaad56a1cfee5627b8c0203b6f2b850441b42493a41bafb10"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.458",
+      "status": "computed",
+      "measured": 0.458225459396896,
+      "evidence": "replications/carrella_2021/results/sabc4d-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "1139ae59f7cca6cf00be838344d6de47d9705f817179bfc68bfc3dba138ffc46"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.506",
+      "status": "computed",
+      "measured": 0.505361058181183,
+      "evidence": "replications/carrella_2021/results/sabc1d-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "86d006f095b7800d2d9c200c8e96dd8020096ca732d77a8c6db56289105112a4"
+    },
+    {
+      "size": 5000,
+      "method": "Local-linear ABC",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.475",
+      "status": "computed",
+      "measured": 0.474832788866809,
+      "evidence": "replications/carrella_2021/results/loclin-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "4f44105d052537683dfe3dd05259530892832bf57fc58cf068437fa2e94d3640"
+    },
+    {
+      "size": 5000,
+      "method": "Neural Network ABC",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.510",
+      "status": "pending"
+    },
+    {
+      "size": 5000,
+      "method": "Linear Regression",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.539",
+      "status": "computed",
+      "measured": 0.539299943115746,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 5000,
+      "method": "GAM",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.545",
+      "status": "computed",
+      "measured": 0.547270006799891,
+      "evidence": "replications/carrella_2021/results/gam-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "7ae870d1bc7bfa14bff715460e1721454bd8dd978b63ae2f56abb774ae4d0191"
+    },
+    {
+      "size": 5000,
+      "method": "Quantile Random Forest",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.446",
+      "status": "computed",
+      "measured": 0.446203572061522,
+      "evidence": "replications/carrella_2021/results/rf-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "278bfe4093d11b0a313cdbf85b3f8b1fa674ef01c47a4243f8ce1fc5ed6e7371"
+    },
+    {
+      "size": 5000,
+      "method": "Regression Random Forest",
+      "parameter": "maximum.sugar.endowment",
+      "published": "0.448",
+      "status": "pending"
+    },
+    {
+      "size": 5000,
+      "method": "Rejection ABC",
+      "parameter": "pmut",
+      "published": "0.227",
+      "status": "computed",
+      "measured": 0.226954514523839,
+      "evidence": "replications/carrella_2021/results/rejection-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "2f6df388489b3cccaad56a1cfee5627b8c0203b6f2b850441b42493a41bafb10"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "pmut",
+      "published": "0.449",
+      "status": "computed",
+      "measured": 0.448873524689738,
+      "evidence": "replications/carrella_2021/results/sabc4d-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "1139ae59f7cca6cf00be838344d6de47d9705f817179bfc68bfc3dba138ffc46"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "pmut",
+      "published": "0.371",
+      "status": "computed",
+      "measured": 0.372122991950614,
+      "evidence": "replications/carrella_2021/results/sabc1d-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "86d006f095b7800d2d9c200c8e96dd8020096ca732d77a8c6db56289105112a4"
+    },
+    {
+      "size": 5000,
+      "method": "Local-linear ABC",
+      "parameter": "pmut",
+      "published": "0.334",
+      "status": "computed",
+      "measured": 0.333510652224885,
+      "evidence": "replications/carrella_2021/results/loclin-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "4f44105d052537683dfe3dd05259530892832bf57fc58cf068437fa2e94d3640"
+    },
+    {
+      "size": 5000,
+      "method": "Neural Network ABC",
+      "parameter": "pmut",
+      "published": "0.502",
+      "status": "pending"
+    },
+    {
+      "size": 5000,
+      "method": "Linear Regression",
+      "parameter": "pmut",
+      "published": "0.279",
+      "status": "computed",
+      "measured": 0.278754101918764,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 5000,
+      "method": "GAM",
+      "parameter": "pmut",
+      "published": "0.428",
+      "status": "computed",
+      "measured": 0.378688525049836,
+      "evidence": "replications/carrella_2021/results/gam-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "7ae870d1bc7bfa14bff715460e1721454bd8dd978b63ae2f56abb774ae4d0191"
+    },
+    {
+      "size": 5000,
+      "method": "Quantile Random Forest",
+      "parameter": "pmut",
+      "published": "0.536",
+      "status": "computed",
+      "measured": 0.53749067964078,
+      "evidence": "replications/carrella_2021/results/rf-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "278bfe4093d11b0a313cdbf85b3f8b1fa674ef01c47a4243f8ce1fc5ed6e7371"
+    },
+    {
+      "size": 5000,
+      "method": "Regression Random Forest",
+      "parameter": "pmut",
+      "published": "0.538",
+      "status": "pending"
+    },
+    {
+      "size": 5000,
+      "method": "Rejection ABC",
+      "parameter": "wealth.reproduction",
+      "published": "0.590",
+      "status": "computed",
+      "measured": 0.589573726015395,
+      "evidence": "replications/carrella_2021/results/rejection-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "2f6df388489b3cccaad56a1cfee5627b8c0203b6f2b850441b42493a41bafb10"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 4D",
+      "parameter": "wealth.reproduction",
+      "published": "0.624",
+      "status": "computed",
+      "measured": 0.624279476080748,
+      "evidence": "replications/carrella_2021/results/sabc4d-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "1139ae59f7cca6cf00be838344d6de47d9705f817179bfc68bfc3dba138ffc46"
+    },
+    {
+      "size": 5000,
+      "method": "Semi-automatic ABC 1D",
+      "parameter": "wealth.reproduction",
+      "published": "0.605",
+      "status": "computed",
+      "measured": 0.601441907679684,
+      "evidence": "replications/carrella_2021/results/sabc1d-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "86d006f095b7800d2d9c200c8e96dd8020096ca732d77a8c6db56289105112a4"
+    },
+    {
+      "size": 5000,
+      "method": "Local-linear ABC",
+      "parameter": "wealth.reproduction",
+      "published": "0.730",
+      "status": "computed",
+      "measured": 0.730344001928697,
+      "evidence": "replications/carrella_2021/results/loclin-5000-clean-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "4f44105d052537683dfe3dd05259530892832bf57fc58cf068437fa2e94d3640"
+    },
+    {
+      "size": 5000,
+      "method": "Neural Network ABC",
+      "parameter": "wealth.reproduction",
+      "published": "0.736",
+      "status": "pending"
+    },
+    {
+      "size": 5000,
+      "method": "Linear Regression",
+      "parameter": "wealth.reproduction",
+      "published": "0.734",
+      "status": "computed",
+      "measured": 0.734455038867656,
+      "evidence": "replications/carrella_2021/results/linear-2026-10-15/comparison.json",
+      "matches_printed_precision": true,
+      "evidence_sha256": "d4341bcff71ab9d52bee86859d2801997241d12b9db017d7832e0a54485a550e"
+    },
+    {
+      "size": 5000,
+      "method": "GAM",
+      "parameter": "wealth.reproduction",
+      "published": "-0.894",
+      "status": "computed",
+      "measured": -0.632579980823452,
+      "evidence": "replications/carrella_2021/results/gam-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "7ae870d1bc7bfa14bff715460e1721454bd8dd978b63ae2f56abb774ae4d0191"
+    },
+    {
+      "size": 5000,
+      "method": "Quantile Random Forest",
+      "parameter": "wealth.reproduction",
+      "published": "0.790",
+      "status": "computed",
+      "measured": 0.787705878723856,
+      "evidence": "replications/carrella_2021/results/rf-5000-2026-10-15/comparison.json",
+      "matches_printed_precision": false,
+      "evidence_sha256": "278bfe4093d11b0a313cdbf85b3f8b1fa674ef01c47a4243f8ce1fc5ed6e7371"
+    },
+    {
+      "size": 5000,
+      "method": "Regression Random Forest",
+      "parameter": "wealth.reproduction",
+      "published": "0.797",
+      "status": "pending"
+    }
+  ],
+  "counts": {
+    "computed": 65,
+    "not_reported": 15,
+    "pending": 10
+  },
+  "printed_matches": 33,
+  "scope": "Inventory of existing original-data estimator comparisons, not new runs or equivalence verdicts. NA cells are not missing reported results. Numerical differences require investigation.",
+  "table_sha256": "dcd69fce87efa4ee6661167c6d620063ed1057e6f988031d75ee69dc7f1cd7f5",
+  "small_notebook_sha256": "63f303f2f7df1342f13e5d12b3eb2ded7911d18e349bf10b0d31e7d9695680d8",
+  "small_notebook_disabled_chunks": [
+    "rejection-sabc",
+    "neuralnet",
+    "loclin"
+  ]
+}

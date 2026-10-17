@@ -1,0 +1,34 @@
+{
+  "fold": 2,
+  "test_row_one_based": 131,
+  "source_input_zero_based": 675,
+  "source_parameters": {
+    "random-seed": "51399.59242615961",
+    "initial-population": "154.0",
+    "pmut": "0.1910385699490247",
+    "maximum-sugar-endowment": "49.0",
+    "maximum-spice-endowment": "19.0",
+    "wealth-reproduction": "92.0"
+  },
+  "worst_prediction": {
+    "fold": "2",
+    "test_row": "131",
+    "parameter": "wealth.reproduction",
+    "truth": "92",
+    "prediction": "-6945.81092674903",
+    "low": "-10403.2222281919",
+    "high": "-3447.42821939836"
+  },
+  "squared_error_share": 0.9999240281266569,
+  "fresh_simulation_matched_statistics": 150,
+  "total_statistics": 150,
+  "interpretation": "The high-price observation is reproduced by the pinned author simulator. Its prediction extrapolates far beyond training ranges. This supports investigating estimator extrapolation and runtime effects; it does not establish the cause of the paper-level difference.",
+  "exclusions": "None: retain this row in all study metrics.",
+  "files_sha256": {
+    "parameters.csv": "2474a0e1c06ae010c89f7cafd7e80d4643daf44ffb78fe8cbbb52a5050eb8d8d",
+    "predictor-ranges.csv": "7b51a1f0238f62723d7126e78c1919dda24a7b703d3c71716c6ecc8c959531ea",
+    "row-675.csv": "036cef5711706d9faf2bc464a8ca32785fd42415fab59f4972f3856297153f81",
+    "simulation-validation/comparison.json": "f8742bf792ee585e787e8dc2b0a5ce778153d2450a757d3aee0e62e07b112d51",
+    "simulation-validation/summary_statistics.csv": "2e38e2567dd7467bb89602735fae804f58da6d3e4e7bd8e1c5108cb0d5da286e"
+  }
+}

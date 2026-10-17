@@ -1,0 +1,1366 @@
+{
+  "interval": [
+    0,
+    43
+  ],
+  "complete_original_ensemble": false,
+  "native_extinct_inputs": [],
+  "independent_extinct_inputs": [],
+  "comparisons": [
+    {
+      "statistic": "mean_count turtles",
+      "native_mean": 454.6064150768231,
+      "independent_mean": 473.293320336072,
+      "mean_difference": 18.686905259248938,
+      "root_mean_squared_difference": 75.61867910190648,
+      "native_standard_deviation": 223.87107526137171,
+      "absolute_mean_difference_over_native_sd": 0.08347172691886073
+    },
+    {
+      "statistic": "mean_normalized-gini",
+      "native_mean": 0.16239150003549274,
+      "independent_mean": 0.15816537150760912,
+      "mean_difference": -0.004226128527883613,
+      "root_mean_squared_difference": 0.025631081040402074,
+      "native_standard_deviation": 0.025473848960987602,
+      "absolute_mean_difference_over_native_sd": 0.16590066677225712
+    },
+    {
+      "statistic": "mean_sum [psugar] of patches",
+      "native_mean": 1972.6958176669916,
+      "independent_mean": 1938.1439910875922,
+      "mean_difference": -34.551826579399375,
+      "root_mean_squared_difference": 141.96557081882617,
+      "native_standard_deviation": 403.84852547991414,
+      "absolute_mean_difference_over_native_sd": 0.08555640147092192
+    },
+    {
+      "statistic": "mean_sum [pspice] of patches",
+      "native_mean": 1974.8704451561991,
+      "independent_mean": 1936.9337139674142,
+      "mean_difference": -37.936731188785224,
+      "root_mean_squared_difference": 143.40374802760363,
+      "native_standard_deviation": 405.3154057125376,
+      "absolute_mean_difference_over_native_sd": 0.0935980489616305
+    },
+    {
+      "statistic": "mean_number_of_prices",
+      "native_mean": 449.1952374321125,
+      "independent_mean": 466.3365826486562,
+      "mean_difference": 17.141345216543666,
+      "root_mean_squared_difference": 80.62352089847006,
+      "native_standard_deviation": 202.1929740788379,
+      "absolute_mean_difference_over_native_sd": 0.08477715555961907
+    },
+    {
+      "statistic": "mean_mean_prices",
+      "native_mean": 1.0813237329905963,
+      "independent_mean": 1.077820095675089,
+      "mean_difference": -0.00350363731550718,
+      "root_mean_squared_difference": 0.053148862779522466,
+      "native_standard_deviation": 0.05818530603697345,
+      "absolute_mean_difference_over_native_sd": 0.060215156611547554
+    },
+    {
+      "statistic": "min_count turtles",
+      "native_mean": 49.46511627906977,
+      "independent_mean": 51.27906976744186,
+      "mean_difference": 1.813953488372093,
+      "root_mean_squared_difference": 13.509686447396799,
+      "native_standard_deviation": 36.77736212021416,
+      "absolute_mean_difference_over_native_sd": 0.04932255561023718
+    },
+    {
+      "statistic": "min_normalized-gini",
+      "native_mean": 0.11208232848306486,
+      "independent_mean": 0.11059541700539795,
+      "mean_difference": -0.0014869114776669054,
+      "root_mean_squared_difference": 0.015614218702518104,
+      "native_standard_deviation": 0.013506136031763434,
+      "absolute_mean_difference_over_native_sd": 0.11009155203013057
+    },
+    {
+      "statistic": "min_sum [psugar] of patches",
+      "native_mean": 1158.8372093023256,
+      "independent_mean": 1120.5813953488373,
+      "mean_difference": -38.25581395348837,
+      "root_mean_squared_difference": 193.6419015774004,
+      "native_standard_deviation": 406.51118753634813,
+      "absolute_mean_difference_over_native_sd": 0.0941076534334439
+    },
+    {
+      "statistic": "min_sum [pspice] of patches",
+      "native_mean": 1164.3488372093022,
+      "independent_mean": 1109.7906976744187,
+      "mean_difference": -54.55813953488372,
+      "root_mean_squared_difference": 211.53448231742817,
+      "native_standard_deviation": 421.12108868573324,
+      "absolute_mean_difference_over_native_sd": 0.12955451769264967
+    },
+    {
+      "statistic": "min_number_of_prices",
+      "native_mean": 0.0,
+      "independent_mean": 0.0,
+      "mean_difference": 0.0,
+      "root_mean_squared_difference": 0.0,
+      "native_standard_deviation": 0.0,
+      "absolute_mean_difference_over_native_sd": null
+    },
+    {
+      "statistic": "min_mean_prices",
+      "native_mean": 0.0,
+      "independent_mean": 0.0,
+      "mean_difference": 0.0,
+      "root_mean_squared_difference": 0.0,
+      "native_standard_deviation": 0.0,
+      "absolute_mean_difference_over_native_sd": null
+    },
+    {
+      "statistic": "last_count turtles",
+      "native_mean": 909.3953488372093,
+      "independent_mean": 936.3255813953489,
+      "mean_difference": 26.930232558139537,
+      "root_mean_squared_difference": 119.51685684357435,
+      "native_standard_deviation": 278.3391055040331,
+      "absolute_mean_difference_over_native_sd": 0.09675332005315121
+    },
+    {
+      "statistic": "last_normalized-gini",
+      "native_mean": 0.13857640794424037,
+      "independent_mean": 0.13749239767450586,
+      "mean_difference": -0.0010840102697344852,
+      "root_mean_squared_difference": 0.013980260045145956,
+      "native_standard_deviation": 0.012901566735753165,
+      "absolute_mean_difference_over_native_sd": 0.08402159923185508
+    },
+    {
+      "statistic": "last_sum [psugar] of patches",
+      "native_mean": 1200.8139534883721,
+      "independent_mean": 1156.5581395348838,
+      "mean_difference": -44.25581395348837,
+      "root_mean_squared_difference": 216.29302905688996,
+      "native_standard_deviation": 416.06765191263173,
+      "absolute_mean_difference_over_native_sd": 0.10636687026748587
+    },
+    {
+      "statistic": "last_sum [pspice] of patches",
+      "native_mean": 1202.7209302325582,
+      "independent_mean": 1141.2325581395348,
+      "mean_difference": -61.48837209302326,
+      "root_mean_squared_difference": 226.66941402803766,
+      "native_standard_deviation": 423.1415907719249,
+      "absolute_mean_difference_over_native_sd": 0.14531394085098515
+    },
+    {
+      "statistic": "last_number_of_prices",
+      "native_mean": 919.7441860465116,
+      "independent_mean": 939.2093023255813,
+      "mean_difference": 19.46511627906977,
+      "root_mean_squared_difference": 142.40908972818167,
+      "native_standard_deviation": 248.51008056136587,
+      "absolute_mean_difference_over_native_sd": 0.07832727040729902
+    },
+    {
+      "statistic": "last_mean_prices",
+      "native_mean": 1.0184525209037558,
+      "independent_mean": 1.0159822573889745,
+      "mean_difference": -0.002470263514781371,
+      "root_mean_squared_difference": 0.03850800243117278,
+      "native_standard_deviation": 0.034297730163031254,
+      "absolute_mean_difference_over_native_sd": 0.07202411072217287
+    },
+    {
+      "statistic": "sd_count turtles",
+      "native_mean": 297.32503004367106,
+      "independent_mean": 306.96454770827745,
+      "mean_difference": 9.639517664606348,
+      "root_mean_squared_difference": 40.990273204958854,
+      "native_standard_deviation": 102.25226245643209,
+      "absolute_mean_difference_over_native_sd": 0.09427192546192881
+    },
+    {
+      "statistic": "sd_normalized-gini",
+      "native_mean": 0.05210357061955142,
+      "independent_mean": 0.05054578608106557,
+      "mean_difference": -0.0015577845384858412,
+      "root_mean_squared_difference": 0.010829578204008707,
+      "native_standard_deviation": 0.01776783876396132,
+      "absolute_mean_difference_over_native_sd": 0.08767439637315433
+    },
+    {
+      "statistic": "sd_sum [psugar] of patches",
+      "native_mean": 557.8913156189291,
+      "independent_mean": 572.6418394776244,
+      "mean_difference": 14.75052385869538,
+      "root_mean_squared_difference": 68.82155966784151,
+      "native_standard_deviation": 142.61525505247556,
+      "absolute_mean_difference_over_native_sd": 0.10342879415857649
+    },
+    {
+      "statistic": "sd_sum [pspice] of patches",
+      "native_mean": 558.1008582351548,
+      "independent_mean": 573.51251238877,
+      "mean_difference": 15.411654153615077,
+      "root_mean_squared_difference": 75.65631356931044,
+      "native_standard_deviation": 148.3161631155276,
+      "absolute_mean_difference_over_native_sd": 0.10391082016873987
+    },
+    {
+      "statistic": "sd_number_of_prices",
+      "native_mean": 344.1352711290881,
+      "independent_mean": 353.13723443021803,
+      "mean_difference": 9.001963301129948,
+      "root_mean_squared_difference": 52.39304125726282,
+      "native_standard_deviation": 104.2331926736546,
+      "absolute_mean_difference_over_native_sd": 0.08636369154799221
+    },
+    {
+      "statistic": "sd_mean_prices",
+      "native_mean": 0.24520701650449733,
+      "independent_mean": 0.24750881592319401,
+      "mean_difference": 0.002301799418696734,
+      "root_mean_squared_difference": 0.12792696192668557,
+      "native_standard_deviation": 0.12991708240106292,
+      "absolute_mean_difference_over_native_sd": 0.01771745005472738
+    },
+    {
+      "statistic": "trend_count turtles",
+      "native_mean": 1.92708594115392,
+      "independent_mean": 1.9930995150438493,
+      "mean_difference": 0.06601357388992936,
+      "root_mean_squared_difference": 0.2917109891458952,
+      "native_standard_deviation": 0.7139442604959344,
+      "absolute_mean_difference_over_native_sd": 0.09246320412194878
+    },
+    {
+      "statistic": "trend_normalized-gini",
+      "native_mean": -0.00023468994801560488,
+      "independent_mean": -0.00022009786232574994,
+      "mean_difference": 1.4592085689854913e-05,
+      "root_mean_squared_difference": 7.8156778925694e-05,
+      "native_standard_deviation": 0.00013007818089054302,
+      "absolute_mean_difference_over_native_sd": 0.11217934929558805
+    },
+    {
+      "statistic": "trend_sum [psugar] of patches",
+      "native_mean": -3.5597326433022976,
+      "independent_mean": -3.6592098848721544,
+      "mean_difference": -0.0994772415698567,
+      "root_mean_squared_difference": 0.5007055288218606,
+      "native_standard_deviation": 1.0013711853122433,
+      "absolute_mean_difference_over_native_sd": 0.09934102661326141
+    },
+    {
+      "statistic": "trend_sum [pspice] of patches",
+      "native_mean": -3.5672736476458757,
+      "independent_mean": -3.670166809159409,
+      "mean_difference": -0.10289316151353277,
+      "root_mean_squared_difference": 0.5493343278817793,
+      "native_standard_deviation": 1.0243045610833537,
+      "absolute_mean_difference_over_native_sd": 0.10045172639347424
+    },
+    {
+      "statistic": "trend_number_of_prices",
+      "native_mean": 2.178160724044361,
+      "independent_mean": 2.2335788388015967,
+      "mean_difference": 0.05541811475723575,
+      "root_mean_squared_difference": 0.36536985206927786,
+      "native_standard_deviation": 0.703671555816929,
+      "absolute_mean_difference_over_native_sd": 0.07875565567361605
+    },
+    {
+      "statistic": "trend_mean_prices",
+      "native_mean": -0.00034116154320795885,
+      "independent_mean": -0.0003717912759720588,
+      "mean_difference": -3.0629732764099914e-05,
+      "root_mean_squared_difference": 0.00046861290051741815,
+      "native_standard_deviation": 0.000459195920532132,
+      "absolute_mean_difference_over_native_sd": 0.06670297229253502
+    },
+    {
+      "statistic": "max_count turtles",
+      "native_mean": 915.3255813953489,
+      "independent_mean": 941.5813953488372,
+      "mean_difference": 26.25581395348837,
+      "root_mean_squared_difference": 114.59260498077121,
+      "native_standard_deviation": 273.524857161332,
+      "absolute_mean_difference_over_native_sd": 0.09599059561157915
+    },
+    {
+      "statistic": "max_normalized-gini",
+      "native_mean": 0.34237102775696865,
+      "independent_mean": 0.3385627880506786,
+      "mean_difference": -0.003808239706290064,
+      "root_mean_squared_difference": 0.03589649072544617,
+      "native_standard_deviation": 0.042151086335003966,
+      "absolute_mean_difference_over_native_sd": 0.09034736794262756
+    },
+    {
+      "statistic": "max_sum [psugar] of patches",
+      "native_mean": 2968.0,
+      "independent_mean": 2968.0,
+      "mean_difference": 0.0,
+      "root_mean_squared_difference": 0.0,
+      "native_standard_deviation": 0.0,
+      "absolute_mean_difference_over_native_sd": null
+    },
+    {
+      "statistic": "max_sum [pspice] of patches",
+      "native_mean": 2968.0,
+      "independent_mean": 2968.0,
+      "mean_difference": 0.0,
+      "root_mean_squared_difference": 0.0,
+      "native_standard_deviation": 0.0,
+      "absolute_mean_difference_over_native_sd": null
+    },
+    {
+      "statistic": "max_number_of_prices",
+      "native_mean": 1067.6046511627908,
+      "independent_mean": 1095.1162790697674,
+      "mean_difference": 27.511627906976745,
+      "root_mean_squared_difference": 154.1126890630118,
+      "native_standard_deviation": 290.4526651212571,
+      "absolute_mean_difference_over_native_sd": 0.09471983290458462
+    },
+    {
+      "statistic": "max_mean_prices",
+      "native_mean": 2.830528372503061,
+      "independent_mean": 3.0690991158193626,
+      "mean_difference": 0.23857074331630151,
+      "root_mean_squared_difference": 1.3916696908388067,
+      "native_standard_deviation": 0.9273265952544217,
+      "absolute_mean_difference_over_native_sd": 0.2572672287597307
+    },
+    {
+      "statistic": "snap_25_count turtles",
+      "native_mean": 89.97674418604652,
+      "independent_mean": 90.13953488372093,
+      "mean_difference": 0.16279069767441862,
+      "root_mean_squared_difference": 13.405136120853255,
+      "native_standard_deviation": 54.723613529917486,
+      "absolute_mean_difference_over_native_sd": 0.0029747797554600572
+    },
+    {
+      "statistic": "snap_25_normalized-gini",
+      "native_mean": 0.2815530147193781,
+      "independent_mean": 0.28402348667460386,
+      "mean_difference": 0.0024704719552257576,
+      "root_mean_squared_difference": 0.03154770777996813,
+      "native_standard_deviation": 0.03531080994501255,
+      "absolute_mean_difference_over_native_sd": 0.0699636162147761
+    },
+    {
+      "statistic": "snap_25_sum [psugar] of patches",
+      "native_mean": 2663.3255813953488,
+      "independent_mean": 2664.3488372093025,
+      "mean_difference": 1.0232558139534884,
+      "root_mean_squared_difference": 57.03609628182637,
+      "native_standard_deviation": 167.42950212791507,
+      "absolute_mean_difference_over_native_sd": 0.006111562185568273
+    },
+    {
+      "statistic": "snap_25_sum [pspice] of patches",
+      "native_mean": 2670.6976744186045,
+      "independent_mean": 2667.2093023255816,
+      "mean_difference": -3.488372093023256,
+      "root_mean_squared_difference": 55.32735561247951,
+      "native_standard_deviation": 169.2407855186325,
+      "absolute_mean_difference_over_native_sd": 0.02061188786339688
+    },
+    {
+      "statistic": "snap_25_number_of_prices",
+      "native_mean": 13.186046511627907,
+      "independent_mean": 13.534883720930232,
+      "mean_difference": 0.3488372093023256,
+      "root_mean_squared_difference": 7.406785072909776,
+      "native_standard_deviation": 11.342974085931596,
+      "absolute_mean_difference_over_native_sd": 0.030753593075292268
+    },
+    {
+      "statistic": "snap_25_mean_prices",
+      "native_mean": 1.1285641953392322,
+      "independent_mean": 1.1817299253354818,
+      "mean_difference": 0.0531657299962496,
+      "root_mean_squared_difference": 0.6211320752207621,
+      "native_standard_deviation": 0.48608132119515546,
+      "absolute_mean_difference_over_native_sd": 0.10937620451147563
+    },
+    {
+      "statistic": "snap_50_count turtles",
+      "native_mean": 57.372093023255815,
+      "independent_mean": 59.093023255813954,
+      "mean_difference": 1.7209302325581395,
+      "root_mean_squared_difference": 12.641754367506596,
+      "native_standard_deviation": 39.5133320190434,
+      "absolute_mean_difference_over_native_sd": 0.043553153951398964
+    },
+    {
+      "statistic": "snap_50_normalized-gini",
+      "native_mean": 0.24633631897714517,
+      "independent_mean": 0.2320094535181833,
+      "mean_difference": -0.01432686545896186,
+      "root_mean_squared_difference": 0.05406391168747563,
+      "native_standard_deviation": 0.06743467053615418,
+      "absolute_mean_difference_over_native_sd": 0.2124554823958205
+    },
+    {
+      "statistic": "snap_50_sum [psugar] of patches",
+      "native_mean": 2772.0232558139537,
+      "independent_mean": 2773.3255813953488,
+      "mean_difference": 1.302325581395349,
+      "root_mean_squared_difference": 56.90873967294295,
+      "native_standard_deviation": 120.90366881772331,
+      "absolute_mean_difference_over_native_sd": 0.010771596876508024
+    },
+    {
+      "statistic": "snap_50_sum [pspice] of patches",
+      "native_mean": 2783.6744186046512,
+      "independent_mean": 2767.139534883721,
+      "mean_difference": -16.53488372093023,
+      "root_mean_squared_difference": 49.710557579690466,
+      "native_standard_deviation": 122.74718221181719,
+      "absolute_mean_difference_over_native_sd": 0.13470682929728692
+    },
+    {
+      "statistic": "snap_50_number_of_prices",
+      "native_mean": 15.906976744186046,
+      "independent_mean": 15.418604651162791,
+      "mean_difference": -0.4883720930232558,
+      "root_mean_squared_difference": 9.55644187945225,
+      "native_standard_deviation": 21.05012175127843,
+      "absolute_mean_difference_over_native_sd": 0.023200440301187127
+    },
+    {
+      "statistic": "snap_50_mean_prices",
+      "native_mean": 1.0577918174392715,
+      "independent_mean": 1.232352601130725,
+      "mean_difference": 0.1745607836914536,
+      "root_mean_squared_difference": 0.6533121520810268,
+      "native_standard_deviation": 0.3576476997092767,
+      "absolute_mean_difference_over_native_sd": 0.48808026399540644
+    },
+    {
+      "statistic": "snap_75_count turtles",
+      "native_mean": 69.67441860465117,
+      "independent_mean": 69.04651162790698,
+      "mean_difference": -0.627906976744186,
+      "root_mean_squared_difference": 21.03430199614706,
+      "native_standard_deviation": 61.55909277866063,
+      "absolute_mean_difference_over_native_sd": 0.010200068720990786
+    },
+    {
+      "statistic": "snap_75_normalized-gini",
+      "native_mean": 0.20650602411725688,
+      "independent_mean": 0.1960580362667638,
+      "mean_difference": -0.010447987850493083,
+      "root_mean_squared_difference": 0.05608312540083674,
+      "native_standard_deviation": 0.0783630725044714,
+      "absolute_mean_difference_over_native_sd": 0.1333279504819942
+    },
+    {
+      "statistic": "snap_75_sum [psugar] of patches",
+      "native_mean": 2741.813953488372,
+      "independent_mean": 2745.4186046511627,
+      "mean_difference": 3.604651162790698,
+      "root_mean_squared_difference": 77.25870162476319,
+      "native_standard_deviation": 175.1730381470626,
+      "absolute_mean_difference_over_native_sd": 0.020577659672514747
+    },
+    {
+      "statistic": "snap_75_sum [pspice] of patches",
+      "native_mean": 2755.6511627906975,
+      "independent_mean": 2741.7441860465115,
+      "mean_difference": -13.906976744186046,
+      "root_mean_squared_difference": 76.05077863002165,
+      "native_standard_deviation": 167.7585313008829,
+      "absolute_mean_difference_over_native_sd": 0.08289877502112379
+    },
+    {
+      "statistic": "snap_75_number_of_prices",
+      "native_mean": 34.41860465116279,
+      "independent_mean": 31.25581395348837,
+      "mean_difference": -3.1627906976744184,
+      "root_mean_squared_difference": 25.20797216090807,
+      "native_standard_deviation": 46.912205263706845,
+      "absolute_mean_difference_over_native_sd": 0.06741935664493862
+    },
+    {
+      "statistic": "snap_75_mean_prices",
+      "native_mean": 1.081557287260033,
+      "independent_mean": 1.2535902266515746,
+      "mean_difference": 0.17203293939154146,
+      "root_mean_squared_difference": 0.5867454471477876,
+      "native_standard_deviation": 0.3705182316891065,
+      "absolute_mean_difference_over_native_sd": 0.46430357450234844
+    },
+    {
+      "statistic": "snap_100_count turtles",
+      "native_mean": 97.32558139534883,
+      "independent_mean": 101.27906976744185,
+      "mean_difference": 3.953488372093023,
+      "root_mean_squared_difference": 36.46980273634486,
+      "native_standard_deviation": 94.44248180161313,
+      "absolute_mean_difference_over_native_sd": 0.04186133503350497
+    },
+    {
+      "statistic": "snap_100_normalized-gini",
+      "native_mean": 0.183494555099455,
+      "independent_mean": 0.16611202810892184,
+      "mean_difference": -0.017382526990533154,
+      "root_mean_squared_difference": 0.07301567684549559,
+      "native_standard_deviation": 0.07927694175653445,
+      "absolute_mean_difference_over_native_sd": 0.21926333944510906
+    },
+    {
+      "statistic": "snap_100_sum [psugar] of patches",
+      "native_mean": 2674.6976744186045,
+      "independent_mean": 2655.0232558139537,
+      "mean_difference": -19.674418604651162,
+      "root_mean_squared_difference": 107.70523944846491,
+      "native_standard_deviation": 239.35130694050233,
+      "absolute_mean_difference_over_native_sd": 0.08219891863611928
+    },
+    {
+      "statistic": "snap_100_sum [pspice] of patches",
+      "native_mean": 2670.9302325581393,
+      "independent_mean": 2659.3023255813955,
+      "mean_difference": -11.627906976744185,
+      "root_mean_squared_difference": 110.0931951934677,
+      "native_standard_deviation": 252.33020036496816,
+      "absolute_mean_difference_over_native_sd": 0.04608210574844265
+    },
+    {
+      "statistic": "snap_100_number_of_prices",
+      "native_mean": 60.51162790697674,
+      "independent_mean": 61.83720930232558,
+      "mean_difference": 1.3255813953488371,
+      "root_mean_squared_difference": 34.128689424888044,
+      "native_standard_deviation": 80.04747779912294,
+      "absolute_mean_difference_over_native_sd": 0.016559939573303595
+    },
+    {
+      "statistic": "snap_100_mean_prices",
+      "native_mean": 1.089326977437644,
+      "independent_mean": 1.1212055561149215,
+      "mean_difference": 0.03187857867727735,
+      "root_mean_squared_difference": 0.44228555198289227,
+      "native_standard_deviation": 0.3358604738377552,
+      "absolute_mean_difference_over_native_sd": 0.09491613679041315
+    },
+    {
+      "statistic": "snap_125_count turtles",
+      "native_mean": 141.7906976744186,
+      "independent_mean": 150.46511627906978,
+      "mean_difference": 8.674418604651162,
+      "root_mean_squared_difference": 58.475795032228184,
+      "native_standard_deviation": 140.0162047331856,
+      "absolute_mean_difference_over_native_sd": 0.0619529619530904
+    },
+    {
+      "statistic": "snap_125_normalized-gini",
+      "native_mean": 0.16725087901836058,
+      "independent_mean": 0.1568039907199123,
+      "mean_difference": -0.010446888298448294,
+      "root_mean_squared_difference": 0.05890353243669769,
+      "native_standard_deviation": 0.06305808361765132,
+      "absolute_mean_difference_over_native_sd": 0.16567088149700737
+    },
+    {
+      "statistic": "snap_125_sum [psugar] of patches",
+      "native_mean": 2555.5813953488373,
+      "independent_mean": 2529.2558139534885,
+      "mean_difference": -26.325581395348838,
+      "root_mean_squared_difference": 149.40720072308088,
+      "native_standard_deviation": 348.6830527596286,
+      "absolute_mean_difference_over_native_sd": 0.07550003129488742
+    },
+    {
+      "statistic": "snap_125_sum [pspice] of patches",
+      "native_mean": 2567.4186046511627,
+      "independent_mean": 2539.093023255814,
+      "mean_difference": -28.325581395348838,
+      "root_mean_squared_difference": 151.53017966344925,
+      "native_standard_deviation": 335.9432560444902,
+      "absolute_mean_difference_over_native_sd": 0.08431656503203498
+    },
+    {
+      "statistic": "snap_125_number_of_prices",
+      "native_mean": 108.95348837209302,
+      "independent_mean": 117.69767441860465,
+      "mean_difference": 8.744186046511627,
+      "root_mean_squared_difference": 70.65770749116459,
+      "native_standard_deviation": 135.5109115126677,
+      "absolute_mean_difference_over_native_sd": 0.06452754209165078
+    },
+    {
+      "statistic": "snap_125_mean_prices",
+      "native_mean": 1.1483965228196595,
+      "independent_mean": 1.0671717764711415,
+      "mean_difference": -0.08122474634851794,
+      "root_mean_squared_difference": 0.3857279758164963,
+      "native_standard_deviation": 0.3406416376090973,
+      "absolute_mean_difference_over_native_sd": 0.23844632417404957
+    },
+    {
+      "statistic": "snap_150_count turtles",
+      "native_mean": 200.62790697674419,
+      "independent_mean": 213.09302325581396,
+      "mean_difference": 12.465116279069768,
+      "root_mean_squared_difference": 80.30378368681394,
+      "native_standard_deviation": 188.67186024711694,
+      "absolute_mean_difference_over_native_sd": 0.06606770221453968
+    },
+    {
+      "statistic": "snap_150_normalized-gini",
+      "native_mean": 0.15557615437521782,
+      "independent_mean": 0.1471651766729441,
+      "mean_difference": -0.008410977702273734,
+      "root_mean_squared_difference": 0.053856900798525245,
+      "native_standard_deviation": 0.05446401787169029,
+      "absolute_mean_difference_over_native_sd": 0.15443182546849255
+    },
+    {
+      "statistic": "snap_150_sum [psugar] of patches",
+      "native_mean": 2416.6279069767443,
+      "independent_mean": 2398.7441860465115,
+      "mean_difference": -17.88372093023256,
+      "root_mean_squared_difference": 176.530187154334,
+      "native_standard_deviation": 438.83312626734636,
+      "absolute_mean_difference_over_native_sd": 0.040752896396744266
+    },
+    {
+      "statistic": "snap_150_sum [pspice] of patches",
+      "native_mean": 2425.5813953488373,
+      "independent_mean": 2391.906976744186,
+      "mean_difference": -33.674418604651166,
+      "root_mean_squared_difference": 192.70679016771615,
+      "native_standard_deviation": 436.6818986219826,
+      "absolute_mean_difference_over_native_sd": 0.07711429924371954
+    },
+    {
+      "statistic": "snap_150_number_of_prices",
+      "native_mean": 179.34883720930233,
+      "independent_mean": 192.48837209302326,
+      "mean_difference": 13.13953488372093,
+      "root_mean_squared_difference": 100.37870153040551,
+      "native_standard_deviation": 197.71013357249186,
+      "absolute_mean_difference_over_native_sd": 0.06645858078338318
+    },
+    {
+      "statistic": "snap_150_mean_prices",
+      "native_mean": 1.104030943015007,
+      "independent_mean": 1.0870959330015009,
+      "mean_difference": -0.016935010013506026,
+      "root_mean_squared_difference": 0.32489947552841847,
+      "native_standard_deviation": 0.2122276531816212,
+      "absolute_mean_difference_over_native_sd": 0.07979643444020607
+    },
+    {
+      "statistic": "snap_175_count turtles",
+      "native_mean": 264.2325581395349,
+      "independent_mean": 278.83720930232556,
+      "mean_difference": 14.604651162790697,
+      "root_mean_squared_difference": 89.39252348946165,
+      "native_standard_deviation": 237.04683446666235,
+      "absolute_mean_difference_over_native_sd": 0.06161082553854841
+    },
+    {
+      "statistic": "snap_175_normalized-gini",
+      "native_mean": 0.1456562389779178,
+      "independent_mean": 0.14573831539418042,
+      "mean_difference": 8.207641626263488e-05,
+      "root_mean_squared_difference": 0.039839693356053765,
+      "native_standard_deviation": 0.03307941149316794,
+      "absolute_mean_difference_over_native_sd": 0.0024811933634184074
+    },
+    {
+      "statistic": "snap_175_sum [psugar] of patches",
+      "native_mean": 2285.906976744186,
+      "independent_mean": 2258.0,
+      "mean_difference": -27.906976744186046,
+      "root_mean_squared_difference": 208.37834552496315,
+      "native_standard_deviation": 520.2222608164701,
+      "absolute_mean_difference_over_native_sd": 0.05364433405903671
+    },
+    {
+      "statistic": "snap_175_sum [pspice] of patches",
+      "native_mean": 2282.7441860465115,
+      "independent_mean": 2255.5116279069766,
+      "mean_difference": -27.232558139534884,
+      "root_mean_squared_difference": 181.32298049561714,
+      "native_standard_deviation": 517.0768506159816,
+      "absolute_mean_difference_over_native_sd": 0.052666364984418415
+    },
+    {
+      "statistic": "snap_175_number_of_prices",
+      "native_mean": 255.46511627906978,
+      "independent_mean": 266.8837209302326,
+      "mean_difference": 11.418604651162791,
+      "root_mean_squared_difference": 129.59462736495084,
+      "native_standard_deviation": 268.6772377508962,
+      "absolute_mean_difference_over_native_sd": 0.04249933766904935
+    },
+    {
+      "statistic": "snap_175_mean_prices",
+      "native_mean": 1.065607649035945,
+      "independent_mean": 1.1192300425623356,
+      "mean_difference": 0.0536223935263907,
+      "root_mean_squared_difference": 0.2881928932514314,
+      "native_standard_deviation": 0.0929196106431875,
+      "absolute_mean_difference_over_native_sd": 0.5770837087587611
+    },
+    {
+      "statistic": "snap_200_count turtles",
+      "native_mean": 331.2093023255814,
+      "independent_mean": 350.16279069767444,
+      "mean_difference": 18.953488372093023,
+      "root_mean_squared_difference": 100.07380996974416,
+      "native_standard_deviation": 276.0447855591498,
+      "absolute_mean_difference_over_native_sd": 0.0686609179510538
+    },
+    {
+      "statistic": "snap_200_normalized-gini",
+      "native_mean": 0.14503301008809216,
+      "independent_mean": 0.13976389315753032,
+      "mean_difference": -0.005269116930561846,
+      "root_mean_squared_difference": 0.04609885080793351,
+      "native_standard_deviation": 0.037422491378506076,
+      "absolute_mean_difference_over_native_sd": 0.14080080551740626
+    },
+    {
+      "statistic": "snap_200_sum [psugar] of patches",
+      "native_mean": 2154.813953488372,
+      "independent_mean": 2114.0697674418607,
+      "mean_difference": -40.74418604651163,
+      "root_mean_squared_difference": 228.0583360703195,
+      "native_standard_deviation": 572.9268493350797,
+      "absolute_mean_difference_over_native_sd": 0.07111586076616588
+    },
+    {
+      "statistic": "snap_200_sum [pspice] of patches",
+      "native_mean": 2154.6744186046512,
+      "independent_mean": 2111.860465116279,
+      "mean_difference": -42.81395348837209,
+      "root_mean_squared_difference": 207.56086246666777,
+      "native_standard_deviation": 556.8154769689002,
+      "absolute_mean_difference_over_native_sd": 0.07689073895976384
+    },
+    {
+      "statistic": "snap_200_number_of_prices",
+      "native_mean": 339.16279069767444,
+      "independent_mean": 347.69767441860466,
+      "mean_difference": 8.534883720930232,
+      "root_mean_squared_difference": 146.42570939590158,
+      "native_standard_deviation": 315.4531572665287,
+      "absolute_mean_difference_over_native_sd": 0.027055946419705813
+    },
+    {
+      "statistic": "snap_200_mean_prices",
+      "native_mean": 1.050891665254734,
+      "independent_mean": 1.0547985718395414,
+      "mean_difference": 0.0039069065848075625,
+      "root_mean_squared_difference": 0.14824578526234483,
+      "native_standard_deviation": 0.10756095280581122,
+      "absolute_mean_difference_over_native_sd": 0.036322721981284674
+    },
+    {
+      "statistic": "snap_225_count turtles",
+      "native_mean": 392.5581395348837,
+      "independent_mean": 417.3255813953488,
+      "mean_difference": 24.767441860465116,
+      "root_mean_squared_difference": 104.95081904684999,
+      "native_standard_deviation": 300.08737505317697,
+      "absolute_mean_difference_over_native_sd": 0.08253410146320285
+    },
+    {
+      "statistic": "snap_225_normalized-gini",
+      "native_mean": 0.13850379885156017,
+      "independent_mean": 0.1373558872440896,
+      "mean_difference": -0.0011479116074706002,
+      "root_mean_squared_difference": 0.03319019396414413,
+      "native_standard_deviation": 0.028046282273348235,
+      "absolute_mean_difference_over_native_sd": 0.040929189697325244
+    },
+    {
+      "statistic": "snap_225_sum [psugar] of patches",
+      "native_mean": 2034.2325581395348,
+      "independent_mean": 1982.8372093023256,
+      "mean_difference": -51.395348837209305,
+      "root_mean_squared_difference": 207.90527807432593,
+      "native_standard_deviation": 586.1708155362899,
+      "absolute_mean_difference_over_native_sd": 0.08767981529443343
+    },
+    {
+      "statistic": "snap_225_sum [pspice] of patches",
+      "native_mean": 2038.6511627906978,
+      "independent_mean": 1990.1627906976744,
+      "mean_difference": -48.48837209302326,
+      "root_mean_squared_difference": 216.21355721966512,
+      "native_standard_deviation": 585.015598429328,
+      "absolute_mean_difference_over_native_sd": 0.0828838961272258
+    },
+    {
+      "statistic": "snap_225_number_of_prices",
+      "native_mean": 404.9767441860465,
+      "independent_mean": 436.1162790697674,
+      "mean_difference": 31.13953488372093,
+      "root_mean_squared_difference": 141.41206487787122,
+      "native_standard_deviation": 334.60789189681736,
+      "absolute_mean_difference_over_native_sd": 0.09306276282725391
+    },
+    {
+      "statistic": "snap_225_mean_prices",
+      "native_mean": 1.0613663668959838,
+      "independent_mean": 1.0486688496307177,
+      "mean_difference": -0.012697517265266235,
+      "root_mean_squared_difference": 0.12159822292320305,
+      "native_standard_deviation": 0.11957183578238624,
+      "absolute_mean_difference_over_native_sd": 0.1061915390207354
+    },
+    {
+      "statistic": "snap_250_count turtles",
+      "native_mean": 454.90697674418607,
+      "independent_mean": 483.7674418604651,
+      "mean_difference": 28.86046511627907,
+      "root_mean_squared_difference": 114.63988104312301,
+      "native_standard_deviation": 321.78562949061893,
+      "absolute_mean_difference_over_native_sd": 0.08968848348499803
+    },
+    {
+      "statistic": "snap_250_normalized-gini",
+      "native_mean": 0.1384326766214315,
+      "independent_mean": 0.13359152157620466,
+      "mean_difference": -0.004841155045226829,
+      "root_mean_squared_difference": 0.02874471630323107,
+      "native_standard_deviation": 0.022338617060325642,
+      "absolute_mean_difference_over_native_sd": 0.21671686443942545
+    },
+    {
+      "statistic": "snap_250_sum [psugar] of patches",
+      "native_mean": 1926.3255813953488,
+      "independent_mean": 1872.093023255814,
+      "mean_difference": -54.23255813953488,
+      "root_mean_squared_difference": 229.48830846239255,
+      "native_standard_deviation": 600.0088263277246,
+      "absolute_mean_difference_over_native_sd": 0.09038626726786363
+    },
+    {
+      "statistic": "snap_250_sum [pspice] of patches",
+      "native_mean": 1928.2325581395348,
+      "independent_mean": 1861.906976744186,
+      "mean_difference": -66.32558139534883,
+      "root_mean_squared_difference": 208.65583100875347,
+      "native_standard_deviation": 599.4212649660136,
+      "absolute_mean_difference_over_native_sd": 0.11064936343075751
+    },
+    {
+      "statistic": "snap_250_number_of_prices",
+      "native_mean": 468.69767441860466,
+      "independent_mean": 500.4651162790698,
+      "mean_difference": 31.767441860465116,
+      "root_mean_squared_difference": 144.79881793170344,
+      "native_standard_deviation": 358.60119293720567,
+      "absolute_mean_difference_over_native_sd": 0.08858710591637067
+    },
+    {
+      "statistic": "snap_250_mean_prices",
+      "native_mean": 1.0698168763607052,
+      "independent_mean": 1.0502754547661255,
+      "mean_difference": -0.019541421594579843,
+      "root_mean_squared_difference": 0.10210782476858865,
+      "native_standard_deviation": 0.07841077287014517,
+      "absolute_mean_difference_over_native_sd": 0.2492185815709543
+    },
+    {
+      "statistic": "snap_275_count turtles",
+      "native_mean": 514.6511627906976,
+      "independent_mean": 542.1860465116279,
+      "mean_difference": 27.53488372093023,
+      "root_mean_squared_difference": 113.29299327664265,
+      "native_standard_deviation": 330.626880526304,
+      "absolute_mean_difference_over_native_sd": 0.08328083813723552
+    },
+    {
+      "statistic": "snap_275_normalized-gini",
+      "native_mean": 0.13581384899980511,
+      "independent_mean": 0.13369156221096165,
+      "mean_difference": -0.0021222867888434707,
+      "root_mean_squared_difference": 0.025373323299006535,
+      "native_standard_deviation": 0.024837238251348304,
+      "absolute_mean_difference_over_native_sd": 0.08544777673613776
+    },
+    {
+      "statistic": "snap_275_sum [psugar] of patches",
+      "native_mean": 1823.139534883721,
+      "independent_mean": 1764.5116279069769,
+      "mean_difference": -58.627906976744185,
+      "root_mean_squared_difference": 214.51118038840752,
+      "native_standard_deviation": 600.043509329245,
+      "absolute_mean_difference_over_native_sd": 0.09770609308361827
+    },
+    {
+      "statistic": "snap_275_sum [pspice] of patches",
+      "native_mean": 1823.2558139534883,
+      "independent_mean": 1767.5813953488373,
+      "mean_difference": -55.674418604651166,
+      "root_mean_squared_difference": 214.95234734216552,
+      "native_standard_deviation": 594.453123429064,
+      "absolute_mean_difference_over_native_sd": 0.09365653305595724
+    },
+    {
+      "statistic": "snap_275_number_of_prices",
+      "native_mean": 531.0,
+      "independent_mean": 564.3255813953489,
+      "mean_difference": 33.325581395348834,
+      "root_mean_squared_difference": 139.0612212509798,
+      "native_standard_deviation": 359.3558190027856,
+      "absolute_mean_difference_over_native_sd": 0.09273700224982444
+    },
+    {
+      "statistic": "snap_275_mean_prices",
+      "native_mean": 1.0537181498676544,
+      "independent_mean": 1.0527452996252125,
+      "mean_difference": -0.0009728502424418074,
+      "root_mean_squared_difference": 0.12321090877678137,
+      "native_standard_deviation": 0.0514663487763896,
+      "absolute_mean_difference_over_native_sd": 0.018902647371948533
+    },
+    {
+      "statistic": "snap_300_count turtles",
+      "native_mean": 568.7674418604652,
+      "independent_mean": 597.0232558139535,
+      "mean_difference": 28.25581395348837,
+      "root_mean_squared_difference": 112.37447777771408,
+      "native_standard_deviation": 335.3821033076114,
+      "absolute_mean_difference_over_native_sd": 0.08424961759981638
+    },
+    {
+      "statistic": "snap_300_normalized-gini",
+      "native_mean": 0.13812871720255496,
+      "independent_mean": 0.13502219890954764,
+      "mean_difference": -0.003106518293007315,
+      "root_mean_squared_difference": 0.029306407719354846,
+      "native_standard_deviation": 0.02714345439788642,
+      "absolute_mean_difference_over_native_sd": 0.1144481556205024
+    },
+    {
+      "statistic": "snap_300_sum [psugar] of patches",
+      "native_mean": 1728.1627906976744,
+      "independent_mean": 1680.6046511627908,
+      "mean_difference": -47.55813953488372,
+      "root_mean_squared_difference": 201.78015898036045,
+      "native_standard_deviation": 595.3100005501358,
+      "absolute_mean_difference_over_native_sd": 0.07988802387148622
+    },
+    {
+      "statistic": "snap_300_sum [pspice] of patches",
+      "native_mean": 1734.1162790697674,
+      "independent_mean": 1670.8837209302326,
+      "mean_difference": -63.23255813953488,
+      "root_mean_squared_difference": 222.55665596939372,
+      "native_standard_deviation": 580.8217198074708,
+      "absolute_mean_difference_over_native_sd": 0.10886741315475433
+    },
+    {
+      "statistic": "snap_300_number_of_prices",
+      "native_mean": 593.3953488372093,
+      "independent_mean": 607.4651162790698,
+      "mean_difference": 14.069767441860465,
+      "root_mean_squared_difference": 148.4932854170635,
+      "native_standard_deviation": 362.6892538552633,
+      "absolute_mean_difference_over_native_sd": 0.03879289858274991
+    },
+    {
+      "statistic": "snap_300_mean_prices",
+      "native_mean": 1.0358420271678994,
+      "independent_mean": 1.039057675527478,
+      "mean_difference": 0.0032156483595785386,
+      "root_mean_squared_difference": 0.08015096533862523,
+      "native_standard_deviation": 0.06709338184421054,
+      "absolute_mean_difference_over_native_sd": 0.04792795162785516
+    },
+    {
+      "statistic": "snap_325_count turtles",
+      "native_mean": 624.0,
+      "independent_mean": 651.9069767441861,
+      "mean_difference": 27.906976744186046,
+      "root_mean_squared_difference": 112.70500700790166,
+      "native_standard_deviation": 336.43272246347567,
+      "absolute_mean_difference_over_native_sd": 0.08294965049725722
+    },
+    {
+      "statistic": "snap_325_normalized-gini",
+      "native_mean": 0.1394127240748941,
+      "independent_mean": 0.1349900648947692,
+      "mean_difference": -0.004422659180124918,
+      "root_mean_squared_difference": 0.028165310868425265,
+      "native_standard_deviation": 0.024694766837869496,
+      "absolute_mean_difference_over_native_sd": 0.17909297176852698
+    },
+    {
+      "statistic": "snap_325_sum [psugar] of patches",
+      "native_mean": 1638.906976744186,
+      "independent_mean": 1579.1162790697674,
+      "mean_difference": -59.7906976744186,
+      "root_mean_squared_difference": 201.5716734436754,
+      "native_standard_deviation": 571.0453007710688,
+      "absolute_mean_difference_over_native_sd": 0.10470394834470165
+    },
+    {
+      "statistic": "snap_325_sum [pspice] of patches",
+      "native_mean": 1638.5348837209303,
+      "independent_mean": 1583.0,
+      "mean_difference": -55.53488372093023,
+      "root_mean_squared_difference": 228.42748582224024,
+      "native_standard_deviation": 567.0231671095459,
+      "absolute_mean_difference_over_native_sd": 0.0979411194149695
+    },
+    {
+      "statistic": "snap_325_number_of_prices",
+      "native_mean": 646.0697674418604,
+      "independent_mean": 683.5581395348837,
+      "mean_difference": 37.48837209302326,
+      "root_mean_squared_difference": 167.27084289774155,
+      "native_standard_deviation": 347.3800542766499,
+      "absolute_mean_difference_over_native_sd": 0.1079174570661098
+    },
+    {
+      "statistic": "snap_325_mean_prices",
+      "native_mean": 1.031920179266913,
+      "independent_mean": 1.0364324397640345,
+      "mean_difference": 0.004512260497121519,
+      "root_mean_squared_difference": 0.08414743356395493,
+      "native_standard_deviation": 0.06764258947071049,
+      "absolute_mean_difference_over_native_sd": 0.06670738853182648
+    },
+    {
+      "statistic": "snap_350_count turtles",
+      "native_mean": 675.6976744186046,
+      "independent_mean": 700.9302325581396,
+      "mean_difference": 25.232558139534884,
+      "root_mean_squared_difference": 110.08421723263027,
+      "native_standard_deviation": 330.5166171021333,
+      "absolute_mean_difference_over_native_sd": 0.0763427822805585
+    },
+    {
+      "statistic": "snap_350_normalized-gini",
+      "native_mean": 0.13621902613559617,
+      "independent_mean": 0.13077998928437642,
+      "mean_difference": -0.0054390368512197435,
+      "root_mean_squared_difference": 0.01957499781706385,
+      "native_standard_deviation": 0.01734304628075542,
+      "absolute_mean_difference_over_native_sd": 0.31361484961584457
+    },
+    {
+      "statistic": "snap_350_sum [psugar] of patches",
+      "native_mean": 1549.7209302325582,
+      "independent_mean": 1499.3720930232557,
+      "mean_difference": -50.348837209302324,
+      "root_mean_squared_difference": 200.97211422900048,
+      "native_standard_deviation": 545.1572986392091,
+      "absolute_mean_difference_over_native_sd": 0.09235653147262314
+    },
+    {
+      "statistic": "snap_350_sum [pspice] of patches",
+      "native_mean": 1545.9302325581396,
+      "independent_mean": 1507.2093023255813,
+      "mean_difference": -38.72093023255814,
+      "root_mean_squared_difference": 205.50046681325352,
+      "native_standard_deviation": 532.4482023218408,
+      "absolute_mean_difference_over_native_sd": 0.07272243584203726
+    },
+    {
+      "statistic": "snap_350_number_of_prices",
+      "native_mean": 698.2558139534884,
+      "independent_mean": 719.4651162790698,
+      "mean_difference": 21.209302325581394,
+      "root_mean_squared_difference": 159.34312836812114,
+      "native_standard_deviation": 329.1271114470118,
+      "absolute_mean_difference_over_native_sd": 0.06444106725919481
+    },
+    {
+      "statistic": "snap_350_mean_prices",
+      "native_mean": 1.0516064453537632,
+      "independent_mean": 1.038808667635503,
+      "mean_difference": -0.012797777718260378,
+      "root_mean_squared_difference": 0.13025738302553017,
+      "native_standard_deviation": 0.13188490878278408,
+      "absolute_mean_difference_over_native_sd": 0.09703746877770876
+    },
+    {
+      "statistic": "snap_375_count turtles",
+      "native_mean": 720.8604651162791,
+      "independent_mean": 746.3953488372093,
+      "mean_difference": 25.53488372093023,
+      "root_mean_squared_difference": 108.38969315112645,
+      "native_standard_deviation": 324.9174908786128,
+      "absolute_mean_difference_over_native_sd": 0.07858882466401265
+    },
+    {
+      "statistic": "snap_375_normalized-gini",
+      "native_mean": 0.13521279866952077,
+      "independent_mean": 0.13328068214326289,
+      "mean_difference": -0.0019321165262578697,
+      "root_mean_squared_difference": 0.020956362725974054,
+      "native_standard_deviation": 0.023055178038300688,
+      "absolute_mean_difference_over_native_sd": 0.08380401673967203
+    },
+    {
+      "statistic": "snap_375_sum [psugar] of patches",
+      "native_mean": 1462.2558139534883,
+      "independent_mean": 1430.8372093023256,
+      "mean_difference": -31.41860465116279,
+      "root_mean_squared_difference": 210.6185243294086,
+      "native_standard_deviation": 507.6973138260611,
+      "absolute_mean_difference_over_native_sd": 0.061884520157077134
+    },
+    {
+      "statistic": "snap_375_sum [pspice] of patches",
+      "native_mean": 1481.2093023255813,
+      "independent_mean": 1432.860465116279,
+      "mean_difference": -48.348837209302324,
+      "root_mean_squared_difference": 207.78124677561232,
+      "native_standard_deviation": 522.9594923233932,
+      "absolute_mean_difference_over_native_sd": 0.09245235609836462
+    },
+    {
+      "statistic": "snap_375_number_of_prices",
+      "native_mean": 748.1860465116279,
+      "independent_mean": 783.4418604651163,
+      "mean_difference": 35.25581395348837,
+      "root_mean_squared_difference": 165.00147990879665,
+      "native_standard_deviation": 297.36480264451575,
+      "absolute_mean_difference_over_native_sd": 0.11856081701651447
+    },
+    {
+      "statistic": "snap_375_mean_prices",
+      "native_mean": 1.0383311438505456,
+      "independent_mean": 1.033715466811641,
+      "mean_difference": -0.0046156770389044815,
+      "root_mean_squared_difference": 0.04843280075883589,
+      "native_standard_deviation": 0.0424066370617224,
+      "absolute_mean_difference_over_native_sd": 0.10884326979728229
+    },
+    {
+      "statistic": "snap_400_count turtles",
+      "native_mean": 763.4883720930233,
+      "independent_mean": 794.8372093023256,
+      "mean_difference": 31.348837209302324,
+      "root_mean_squared_difference": 113.96041744476915,
+      "native_standard_deviation": 316.46583063233703,
+      "absolute_mean_difference_over_native_sd": 0.09905915323200472
+    },
+    {
+      "statistic": "snap_400_normalized-gini",
+      "native_mean": 0.1353015569826155,
+      "independent_mean": 0.13497918943810766,
+      "mean_difference": -0.00032236754450783715,
+      "root_mean_squared_difference": 0.016157631621141325,
+      "native_standard_deviation": 0.017503705573805782,
+      "absolute_mean_difference_over_native_sd": 0.01841710277566933
+    },
+    {
+      "statistic": "snap_400_sum [psugar] of patches",
+      "native_mean": 1400.4651162790697,
+      "independent_mean": 1358.860465116279,
+      "mean_difference": -41.604651162790695,
+      "root_mean_squared_difference": 202.77074923219584,
+      "native_standard_deviation": 479.06732783302965,
+      "absolute_mean_difference_over_native_sd": 0.08684510244307717
+    },
+    {
+      "statistic": "snap_400_sum [pspice] of patches",
+      "native_mean": 1407.3488372093022,
+      "independent_mean": 1357.5813953488373,
+      "mean_difference": -49.76744186046512,
+      "root_mean_squared_difference": 224.75557783388126,
+      "native_standard_deviation": 506.5575512527733,
+      "absolute_mean_difference_over_native_sd": 0.09824637247512091
+    },
+    {
+      "statistic": "snap_400_number_of_prices",
+      "native_mean": 799.7674418604652,
+      "independent_mean": 806.7441860465116,
+      "mean_difference": 6.976744186046512,
+      "root_mean_squared_difference": 164.55139862881043,
+      "native_standard_deviation": 296.5186246324521,
+      "absolute_mean_difference_over_native_sd": 0.023528856558991847
+    },
+    {
+      "statistic": "snap_400_mean_prices",
+      "native_mean": 1.0396283829362347,
+      "independent_mean": 1.0270424905236473,
+      "mean_difference": -0.012585892412587424,
+      "root_mean_squared_difference": 0.11551031446951603,
+      "native_standard_deviation": 0.10615234480391944,
+      "absolute_mean_difference_over_native_sd": 0.11856443148604587
+    },
+    {
+      "statistic": "snap_425_count turtles",
+      "native_mean": 806.3023255813954,
+      "independent_mean": 835.8372093023256,
+      "mean_difference": 29.53488372093023,
+      "root_mean_squared_difference": 117.7219822984606,
+      "native_standard_deviation": 306.00125663852936,
+      "absolute_mean_difference_over_native_sd": 0.09651883147597318
+    },
+    {
+      "statistic": "snap_425_normalized-gini",
+      "native_mean": 0.138129585275451,
+      "independent_mean": 0.13518550804298807,
+      "mean_difference": -0.0029440772324629233,
+      "root_mean_squared_difference": 0.01864445521970844,
+      "native_standard_deviation": 0.017429016505929186,
+      "absolute_mean_difference_over_native_sd": 0.16891815045681874
+    },
+    {
+      "statistic": "snap_425_sum [psugar] of patches",
+      "native_mean": 1339.7209302325582,
+      "independent_mean": 1290.2558139534883,
+      "mean_difference": -49.46511627906977,
+      "root_mean_squared_difference": 217.7866995746708,
+      "native_standard_deviation": 474.5440075939435,
+      "absolute_mean_difference_over_native_sd": 0.1042371529036269
+    },
+    {
+      "statistic": "snap_425_sum [pspice] of patches",
+      "native_mean": 1339.1162790697674,
+      "independent_mean": 1300.046511627907,
+      "mean_difference": -39.06976744186046,
+      "root_mean_squared_difference": 210.15819069519767,
+      "native_standard_deviation": 467.58594331540235,
+      "absolute_mean_difference_over_native_sd": 0.08355633440312084
+    },
+    {
+      "statistic": "snap_425_number_of_prices",
+      "native_mean": 836.6279069767442,
+      "independent_mean": 859.0232558139535,
+      "mean_difference": 22.3953488372093,
+      "root_mean_squared_difference": 165.11116762478122,
+      "native_standard_deviation": 270.25096202791696,
+      "absolute_mean_difference_over_native_sd": 0.08286871087954115
+    },
+    {
+      "statistic": "snap_425_mean_prices",
+      "native_mean": 1.0291734553876943,
+      "independent_mean": 1.0213287510355902,
+      "mean_difference": -0.007844704352103942,
+      "root_mean_squared_difference": 0.041235443153819655,
+      "native_standard_deviation": 0.030864765570427204,
+      "absolute_mean_difference_over_native_sd": 0.25416374325617025
+    },
+    {
+      "statistic": "snap_450_count turtles",
+      "native_mean": 846.4418604651163,
+      "independent_mean": 870.7209302325581,
+      "mean_difference": 24.27906976744186,
+      "root_mean_squared_difference": 115.67597085202328,
+      "native_standard_deviation": 293.48953488141746,
+      "absolute_mean_difference_over_native_sd": 0.08272550425776395
+    },
+    {
+      "statistic": "snap_450_normalized-gini",
+      "native_mean": 0.13512236183857324,
+      "independent_mean": 0.1350787209637511,
+      "mean_difference": -4.364087482213446e-05,
+      "root_mean_squared_difference": 0.012259845765940745,
+      "native_standard_deviation": 0.010812730259981836,
+      "absolute_mean_difference_over_native_sd": 0.004036064321668168
+    },
+    {
+      "statistic": "snap_450_sum [psugar] of patches",
+      "native_mean": 1274.6046511627908,
+      "independent_mean": 1241.6511627906978,
+      "mean_difference": -32.95348837209303,
+      "root_mean_squared_difference": 196.95737940561045,
+      "native_standard_deviation": 445.7599280630088,
+      "absolute_mean_difference_over_native_sd": 0.07392653824960911
+    },
+    {
+      "statistic": "snap_450_sum [pspice] of patches",
+      "native_mean": 1293.6511627906978,
+      "independent_mean": 1247.093023255814,
+      "mean_difference": -46.55813953488372,
+      "root_mean_squared_difference": 195.36953655560913,
+      "native_standard_deviation": 444.593877062993,
+      "absolute_mean_difference_over_native_sd": 0.10472060443668021
+    },
+    {
+      "statistic": "snap_450_number_of_prices",
+      "native_mean": 887.0697674418604,
+      "independent_mean": 883.6279069767442,
+      "mean_difference": -3.441860465116279,
+      "root_mean_squared_difference": 148.44919262393338,
+      "native_standard_deviation": 268.31163721946126,
+      "absolute_mean_difference_over_native_sd": 0.012827846383349611
+    },
+    {
+      "statistic": "snap_450_mean_prices",
+      "native_mean": 1.038672210656008,
+      "independent_mean": 1.0174658091500592,
+      "mean_difference": -0.0212064015059489,
+      "root_mean_squared_difference": 0.057497067071263674,
+      "native_standard_deviation": 0.0355602227836711,
+      "absolute_mean_difference_over_native_sd": 0.5963517617692392
+    },
+    {
+      "statistic": "snap_475_count turtles",
+      "native_mean": 879.3255813953489,
+      "independent_mean": 905.2790697674419,
+      "mean_difference": 25.953488372093023,
+      "root_mean_squared_difference": 120.854708080059,
+      "native_standard_deviation": 287.8135476012231,
+      "absolute_mean_difference_over_native_sd": 0.09017465851903746
+    },
+    {
+      "statistic": "snap_475_normalized-gini",
+      "native_mean": 0.13686837527201762,
+      "independent_mean": 0.1362057056578212,
+      "mean_difference": -0.0006626696141964119,
+      "root_mean_squared_difference": 0.014786520011492804,
+      "native_standard_deviation": 0.011262970730594894,
+      "absolute_mean_difference_over_native_sd": 0.05883613036446297
+    },
+    {
+      "statistic": "snap_475_sum [psugar] of patches",
+      "native_mean": 1243.6976744186047,
+      "independent_mean": 1195.0,
+      "mean_difference": -48.69767441860465,
+      "root_mean_squared_difference": 207.48213708486406,
+      "native_standard_deviation": 426.8153859873398,
+      "absolute_mean_difference_over_native_sd": 0.114095405220582
+    },
+    {
+      "statistic": "snap_475_sum [pspice] of patches",
+      "native_mean": 1238.4883720930231,
+      "independent_mean": 1192.2093023255813,
+      "mean_difference": -46.27906976744186,
+      "root_mean_squared_difference": 223.3499704551706,
+      "native_standard_deviation": 444.07690367369895,
+      "absolute_mean_difference_over_native_sd": 0.10421408856121693
+    },
+    {
+      "statistic": "snap_475_number_of_prices",
+      "native_mean": 905.0697674418604,
+      "independent_mean": 921.046511627907,
+      "mean_difference": 15.976744186046512,
+      "root_mean_squared_difference": 188.89636632106593,
+      "native_standard_deviation": 256.9625251248722,
+      "absolute_mean_difference_over_native_sd": 0.0621753859956137
+    },
+    {
+      "statistic": "snap_475_mean_prices",
+      "native_mean": 1.030970267898948,
+      "independent_mean": 1.0211345650981032,
+      "mean_difference": -0.009835702800844724,
+      "root_mean_squared_difference": 0.05190661068348861,
+      "native_standard_deviation": 0.04749548526086095,
+      "absolute_mean_difference_over_native_sd": 0.20708711042373362
+    }
+  ],
+  "reference_sha256": "33845743cda8be19e6827f353fe13366c1d92fc1eb98dd617c6809874498d99a",
+  "summary_snapshot_sha256": "78347108d9e81c071fdf70f184ccc580d918aad09b1c2b5d10747c50bcb8e5dc",
+  "manifest_sha256": "5a6db45c25787f798bef51458509778bd3177327ecd3c245627c38ef66cd2122",
+  "analyzer_sha256": "eaee2665efcdfc39edc33ef025cae88b3e091c81c2a9eb04b5715aa4a3e10d4a",
+  "scope": "Descriptive paired-input diagnostic, with different random generators. No trajectory equivalence, significance, equivalence margin, or paper replication verdict. Prefixes are not the complete parameter ensemble."
+}

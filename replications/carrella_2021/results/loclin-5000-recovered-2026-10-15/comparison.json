@@ -1,0 +1,55 @@
+{
+  "method": "loclin",
+  "size": 5000,
+  "seed": 0,
+  "process_exit": 1,
+  "status": "Recovered and independently validated complete numerical artifacts; invocation ended with unexpected-end-of-input error after printing metrics",
+  "cause": "Runner was edited during execution; source-stream interference suspected, not independently proven",
+  "comparison": [
+    {
+      "parameter": "initial.population",
+      "observed": 0.57881157776461,
+      "published": "0.579",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "pmut",
+      "observed": 0.333510652224885,
+      "published": "0.334",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "observed": 0.474832788866809,
+      "published": "0.475",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "observed": 0.281420749904499,
+      "published": "0.281",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "observed": 0.730344001928697,
+      "published": "0.730",
+      "matches_printed_precision": true
+    }
+  ],
+  "files": {
+    "arguments.txt": "396aa12eb751b6dda4cdb3bb954db89c9518f2f1ea9b1cfbe4d700b50d97188a",
+    "complete.rds": "b098babbd8d02589f60ca2b752bf94ea88620cdfe6d3498e15f6e54c407eb5c2",
+    "execution.log": "e7951659f8d2b375a6bc5dbf2a0bbcc8f2cf20557f814137fd1fcf4a9fe101f0",
+    "fold-1.rds": "29dc0bedc19b444d6aea123241f63c1ecc86c40bba80b3f10c27e2e11b2695fe",
+    "fold-2.rds": "82e1fa56d353f2f1c3f0fe97e6563a10b2766df4e85902e522b69c986d6fc430",
+    "fold-3.rds": "1e1d67caad994ff44dd7ee9f92f22bff1a01a78d9ae46cd2eb4d612b81f86b21",
+    "fold-4.rds": "20c6779b6491d186cd18650594e395a0893e6e8ac5fa1e7fe26cdf11de532601",
+    "fold-5.rds": "7ec1565d8dfede9dd13e427e7df0653608b44c4ef8814905d4ca1edb5ee19876",
+    "metrics.csv": "358daa530055539bf433d0326eac5594e46d0eb1df916741a765d95e3fe83b9b",
+    "packages.csv": "611e0146e8ca33c8ecf333b6a3259409a0f18059bf3a98a607f5e2990f6ea4ea",
+    "session.txt": "147f8bfe18562987e7c6dd1120cc45b8fb8085b4e1adc0113cca0282ae273a7a",
+    "validation/predictions.csv": "6816395bd4244f3e08c333654f4c5959f3fd6f774dd555376daa0f243a7f59db",
+    "validation/validated_metrics.csv": "03192e42285f6022acaa11e9402839a40c8548ad9997330626c1738f8d464d42"
+  }
+}
