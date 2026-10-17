@@ -637,3 +637,27 @@ original full-checkpoint transfer receipts remain separate evidence.
 
 This remains coverage of the deposited 100-seed groups, not the paper's 500-seed
 Table 6 experiment. No complete runtime-table or whole-paper verdict is claimed.
+
+## Sixth runtime checkpoint audit
+
+[The latest checkpoint evidence](results/runtime-checkpoints-sixth-2026-10-17/coverage.json)
+adds 31 validated original archive inputs and 222,544 recorded states. Total
+coverage is 790/1,200 inputs and 1,455,096 states. All overlapping original ledgers
+and audit records agree exactly; no repeated prefix is counted twice.
+
+The altruistic 5,000-step group now covers all 100 archived inputs. Seven of twelve
+groups are complete. Remaining coverage is Bentham 5,000 steps (52/100), raw
+50,000 steps (27/100), egoistic 50,000 steps (11/100), and both altruistic and
+Bentham 50,000-step groups (0/100 at this audit).
+
+Four full trajectory audits verify original configurations, native source pins,
+commands, hashes, finite recorded values, and terminal outcomes. Compact deltas
+plus retained prior archives reconstruct all 1,206 files of both new checkpoints,
+including original terminal logs and receipts. Partial timed-out seeds remain
+preserved and receive no completion credit.
+
+Both remote batches ended at their six-hour limits. Bounded continuations reuse
+the owned nodes: raw indices 27–99, Bentham 5,000-step indices 52–99, egoistic
+50,000-step indices 11–99, and altruistic 50,000-step indices 0–99. These are
+registered work, not completed evidence. The 100-input deposited archive remains
+distinct from the paper's 500-seed Table 6 experiment; no whole-paper credit.
