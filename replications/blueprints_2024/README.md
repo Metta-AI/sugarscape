@@ -287,3 +287,16 @@ Only the logfile changes. The supplied budget bounds the entire interval; timeou
 [An original altruistic 500-step pilot](results/runtime-runner-2026-10-17/audit.json) reaches extinction at step 134; all 135 observations pass.
 Full-group mode rejects this one-condition interval before output creation. The source and native outputs are retained.
 The 5,000/50,000-step paths and complete-group success path remain unexercised for this new runner.
+
+## Linux portability and longer archived horizons
+
+[Two native Linux runs](results/linux-portability-2026-10-17/comparison.json) match the corresponding local raw and altruistic trajectories byte-for-byte across 636 observations.
+Both use original 500-step inputs, Python 3.11.14, and the pinned v2024.1 model. Independent source/configuration/raw-output audits pass.
+These are deliberate portability repeats, adding no ensemble coverage and proving no universal platform equivalence.
+The auditor accepts `--recorded-root ORIGINAL_PATH` for relocated evidence without changing historical configuration paths.
+Re-auditing the existing local altruistic pilot produces the identical report after this change.
+
+The same two-core node now runs the previously unstarted raw and altruistic 5,000-step groups: 100 original configurations each, two workers.
+Each interval has a six-hour budget; the outer command is bounded at 21,720 seconds and preserves evidence on disk.
+The original 500-step local assignments remain disjoint. The launch is retained; full outputs and audits are still pending.
+After normal completion, the wrapper archives the evidence and leaves the node’s ordinary idle window for retrieval.

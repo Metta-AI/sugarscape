@@ -14,7 +14,9 @@ parser.add_argument('run', type=Path)
 parser.add_argument('output', type=Path)
 parser.add_argument('--allow-prefix', action='store_true')
 parser.add_argument('--require-group', action='store_true')
+parser.add_argument('--recorded-root', type=Path, help='Original execution directory for relocated evidence')
 args = parser.parse_args()
+recorded_root = args.recorded_root if args.recorded_root else args.run.resolve()
 manifest = json.loads((args.run / 'manifest.json').read_text())
 assert manifest['archive_sha256'] == hashlib.sha256(args.archive.read_bytes()).hexdigest() == '43b1967e9af9d7aac9785258706fd5abec6257235940b85aa811519c0e6ae98a'
 assert manifest['release'] == 'b9ca671ab7591c7b3606f2d76c33eda344d626d1'
@@ -44,6 +46,7 @@ counts = Counter({'dead': 0, 'worse': 0, 'better_or_equal': 0})
 results = []
 for record in records:
     run = args.run / record['entry'].removesuffix('.config')
+    recorded_run = recorded_root / run.name
     assert record['exit_code'] == 0
     assert set(record['files_sha256']) == {'original.config', 'config.json', 'command.json', 'exit.json',
                                          'trajectory.json', 'trajectory.json.gz', 'stdout.log', 'stderr.log'}
@@ -54,8 +57,8 @@ for record in records:
     assert config['seed'] == record['seed'] and config['timesteps'] == manifest['steps']
     assert config['agentDecisionModels'] == [manifest['model']] and config['headlessMode']
     command = json.loads((run / 'command.json').read_text())
-    assert command == [manifest['python_executable'], str(Path(manifest['engine']) / 'sugarscape.py'), '--conf', str(run / 'config.json')]
-    config['logfile'] = str(run / 'trajectory.json')
+    assert command == [manifest['python_executable'], str(Path(manifest['engine']) / 'sugarscape.py'), '--conf', str(recorded_run / 'config.json')]
+    config['logfile'] = str(recorded_run / 'trajectory.json')
     assert json.loads((run / 'config.json').read_text()) == config
     assert json.loads((run / 'exit.json').read_text()) == {'exit_code': 0}
     raw = gzip.decompress((run / 'trajectory.json.gz').read_bytes())
