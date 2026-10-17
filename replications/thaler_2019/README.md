@@ -434,3 +434,17 @@ Execution after the bounded wait is capped at 3,300 seconds, costing at most $0.
 at the quoted $0.0096/minute rate, excluding final idle time. A 32 MiB collector
 exports the terminal archive after execution; download and independent verification
 remain required. This launch adds no completed simulation or paper coverage yet.
+
+### Native timing checkpoint: 30 of 45 conditions
+
+[The sealed checkpoint and audit](results/native-timing-prefix30-2026-10-17)
+validate 30 conditions and 120 raw Criterion measurements.
+All 30 pass the frozen R-squared threshold on their first attempt.
+Independent least-squares slopes differ from native reports by at most 1.43e-13 seconds; R-squared values match exactly.
+The first 25 audited records equal the earlier Table 6 audit exactly and receive no additional coverage credit.
+
+Five of the twenty Table 8 rebirth conditions are now independently audited.
+Their descriptive paper/native timings, condition identities and report hashes are retained in `table8-prefix.json`.
+The remaining fifteen conditions are still required; this prefix does not establish full population scaling.
+Hardware differences and the four-sample Criterion design retain the limitations stated above.
+The original benchmark continues; no condition was restarted for this readback.
