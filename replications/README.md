@@ -57,6 +57,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | izquierdo-2009 | Izquierdo et al., [Techniques to Understand Computer Simulations: Markov Chain Analysis](https://www.jasss.org/12/1/6.html) (2009) | Sugarscape appendix: regeneration, irreducibility and aperiodicity | Replicated structural result: finite-state bound, general 135-step regeneration proof, and five/six-step returns; 545 full states independently replayed; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/14) |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | [source audit](source-audits/flentge-2001.json): 161-page thesis and experiment appendix recovered; source ZIP, executable, landscape and seeds unresolved; no runs |
 | pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | [source audit](source-audits/pan-2011.json): twelve scenario targets and explicit rules extracted; hardship mapping, scheduling, map, and original implementation unresolved |
+| thaler-2019 | Thaler and Siebers, [A tale of lock-free agents](https://doi.org/10.1186/s40294-019-0067-9) (2019) | Sugarscape population dynamics, timing, scaling and retry ratios; Figures 5–7 and Tables 6–9 | Original code recovered; 53 archived regression estimates and 51 printed timing cells independently reconstructed; fresh simulations and performance validation pending; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16) |
 
 Dogan (2026), [Policy Robustness Under Accelerating Automation](https://github.com/dgnerg867-ux/sugarscape), is an additional unpublished working-paper study.
 Completed mixed replication in [PR 11](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11): all 700 original primary runs and 205 bundled canonical runs complete.
@@ -72,7 +73,8 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 The [evidence index](study-evidence.json) pins thirteen pushed study commits and their README hashes: two completed mixed studies and one positive structural replication.
 Its JSON parsing checks artifact readability only; scientific completion remains claim-specific.
 Pike adds author-code replay and parameterized grouping ensembles, not an additional completed paper.
-The Need for Greed is an additional source-audited candidate, outside the thirteen study PRs and completed-study count.
+Thaler adds a fourteenth study PR, outside that earlier evidence-index snapshot; it adds no completed study.
+The Need for Greed is an additional source-audited candidate, outside the fourteen study PRs and completed-study count.
 Its exact configuration overlap offers future run reuse only after checking source, runtime and measurements; no duplicate ensemble was launched.
 Its corrective experiments preserve original failures and remain separate from historical replication claims.
 Carrella's independent implementation passes deterministic native comparisons; its full stochastic and estimator validation remain unfinished.
