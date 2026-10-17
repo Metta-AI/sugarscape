@@ -705,3 +705,24 @@ They do not prove asymptotic convergence, nonconvergence, or identity with histo
 [R verification](results/convergence-2026-10-17/independent-audits/statistics.json) checks all 150 intervals and 450 scalar statistics, with maximum error 1.46e-12.
 The source notebooks' scatter selection and mislabeled statistic remain documented above; these comparisons use explicit definitions instead.
 Common-resource ensembles, numerical-failure investigation, controlled runtime comparisons and historical source fidelity still prevent whole-paper completion.
+
+## Controlled timing workflow
+
+[Native timing-source inspection](results/timing-control-2026-10-17/timing-source.json) identifies different boundaries for the published timing statistic and full model steps.
+Every native timer ends before data collection; Phase I explicit/network reassessment also happens after that timer stops.
+Native printed step lines occur inside two variants' timed sections and remain unchanged.
+
+[The timing protocol](TIMING_PROTOCOL.md) requires one dedicated serial worker, nine configurations and 100 seeds per configuration.
+It retains the author's timed-section sum alongside full-loop monotonic wall time and process CPU time.
+Initialization, exports and replication observers are excluded from the full-loop measurements.
+Order is shuffled within seed blocks using a separate fixed scheduler; missing or failed conditions cannot be silently replaced.
+
+`run_timing.py ENGINE LIBRARY VARIANT SEED OUTPUT` performs the native loop and retains raw prices, population, health, initialization and native timing rows.
+`run_timing_ensemble.py ENGINE LIBRARY OUTPUT` first requires nine paired observer/timing controls with 36 exact files, then runs the 900-condition schedule.
+It stages the unchanged group adapter beside each frozen runner, retaining the existing threshold/policy parameterization.
+
+[The completed local standard control](results/timing-control-2026-10-17/parity.json) reproduces all four original raw outputs byte-for-byte across 1,000 steps.
+Its timing is not benchmark evidence because other local workloads were active.
+The [cloud launch](results/timing-control-2026-10-17/launch.json) is queued with a 12-hour cap; cloud controls and aggregate timing results remain pending.
+The retained native archive was checked member-by-member against the original control outputs.
+Neither timings from numerically invalid common-resource runs nor historical hardware differences are treated as evidence of economic replication.
