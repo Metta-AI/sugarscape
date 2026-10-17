@@ -255,3 +255,14 @@ All nine source files, original/effective configuration, finite metrics, timesta
 The run took 7.83 seconds on this machine; that is execution provenance, not a historical runtime comparison.
 This contributes one of the deposited runtime archive's 1,200 configurations, not a completion of Table 6 or its claimed 500-seed experiment.
 The archived runner has a 1,800-second timeout and 2 GiB preflight disk guard. Compressed output is retained alongside its audit and native logs.
+
+## Runtime batch continuation
+
+The remaining 99 original raw-model 500-step inputs run sequentially in lexicographic filename order, excluding the completed pilot.
+[The frozen launch and first audit](results/runtime-batch-2026-10-17) retain the two-hour batch budget and 2 GiB disk guard.
+`audit_runtime_batch.py ARCHIVE RUN NEW_OUTPUT` requires all 99 conditions; `--allow-prefix` explicitly audits partial coverage.
+The auditor checks archived inputs, source/runner hashes, configuration changes, completion order, all native file hashes and finite trajectories.
+Ten new conditions pass across 3,087 observations; with the earlier pilot, runtime coverage is 11/1,200 configurations and 3,588 observations.
+A full-mode invocation against the incomplete live batch rejects before creating output.
+Only the ten audited native directories are archived here; active partial runs are excluded.
+The complete-batch success path remains unexercised until the producer finishes. This does not establish Table 6.
