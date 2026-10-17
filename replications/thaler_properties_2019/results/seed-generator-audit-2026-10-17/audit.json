@@ -1,0 +1,35 @@
+{
+  "source_generator": "choose(minBound,maxBound)::Gen Int",
+  "generation": "unGen(vectorOf100choose)(mkQCGen20261017)30",
+  "int_bits": 64,
+  "count": 100,
+  "native_negative_seeds": 47,
+  "source_revision": "63b3e761b9ef0d861610b7ba232978406b89585b",
+  "quickcheck_commit": "9ccdcbb3eaad7fe96c08ea5ecbbdfe852615bd49",
+  "cohorts": [
+    {
+      "name": "historical_protocol",
+      "distinct_stdgen_states": 100,
+      "distinct_second_state_components": 1,
+      "seed_min": 9315837,
+      "seed_max": 2116099927
+    },
+    {
+      "name": "native_generator",
+      "distinct_stdgen_states": 100,
+      "distinct_second_state_components": 1,
+      "seed_min": -9063295964468572488,
+      "seed_max": 9159037016372472782
+    }
+  ],
+  "interpretation": "Original model source sampled fullsignedInt; prior protocol sampled positive31bit seeds. Existing results remain retained. Native-generator cohort tests sampling fidelity, without assuming prior result differences were caused by seed range.",
+  "files_sha256": {
+    "old-seeds.json": "935aeaa23281f499bef2895227a3ba500ba8d083a5f1bfb62db457e48e60725a",
+    "run.sh": "fae63867cd5e41546f01ac531b075016cf3da0ba9b39b7c5dc71e494d278b6b1",
+    "native-seeds.json": "12fffc215efa137a17e5ef6eafe304ee798ea44aa04eb2abb8e0a616ef602c26",
+    "generation.log": "2289fa767b70f2cf80dabb1dbfac1e303f5d2adfcfc5802660acec8277fdf821",
+    "launch.json": "0c1aea20126b7adcfe14b91b265e578bb93e6eb4a7d25378cef8bae06fffcf83",
+    "states.csv": "46764f2f3d1f50ce2958a1c3a38b95dd6c20b11f9005497ef693e2894cf5ec5c",
+    "GenerateSeeds.hs": "6c8c2b606947a0011d335236282c045f769edf26d15329bcb60dc6c082f47fa0"
+  }
+}

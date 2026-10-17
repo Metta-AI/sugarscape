@@ -1,0 +1,57 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "relh-sugarscape-properties-trade-corrected-20261017-v2",
+    "--platform",
+    "linux/amd64",
+    "--cpus",
+    "1",
+    "--memory",
+    "2g",
+    "--pids-limit",
+    "256",
+    "-v",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home:/root",
+    "relh-sugarscape-thaler-deps:20261017-001",
+    "timeout",
+    "--kill-after=30",
+    "1830",
+    "python3",
+    "/root/sugarscape/thaler-properties-trade-corrected-001/run_trade_controls.py",
+    "/root/sugarscape/thaler-properties-trade-corrected-001/protocol.json",
+    "corrected",
+    "/root/sugarscape/thaler-properties-trade-corrected-001/remaining-002",
+    "--start",
+    "78",
+    "--stop",
+    "100"
+  ],
+  "stdout": "f4d20f386e4a11e49291f179b12deec5bf900f13bbf95122f3a511ab36715d9d\n",
+  "stderr": "",
+  "exit_code": 0,
+  "prior_terminal": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 1,
+    "Error": "",
+    "StartedAt": "2026-10-17T10:13:00.955777878Z",
+    "FinishedAt": "2026-10-17T11:11:04.232576746Z"
+  },
+  "retained_indices": [
+    1,
+    78
+  ],
+  "new_interval": [
+    78,
+    100
+  ],
+  "retained_ledger_sha256": "03d38fc99906ec38b12800c9ec3278024ef274602e79e198b86161bef4fadfee"
+}

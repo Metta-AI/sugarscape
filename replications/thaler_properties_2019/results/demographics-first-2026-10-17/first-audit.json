@@ -1,0 +1,38 @@
+{
+  "cases": [
+    {
+      "scenario": "mating",
+      "horizon": 1000,
+      "snapshot_agent_observations": 27637,
+      "snapshot_trade_records": 0,
+      "final_population": 264
+    },
+    {
+      "scenario": "inheritance",
+      "horizon": 1000,
+      "snapshot_agent_observations": 84068,
+      "snapshot_trade_records": 0,
+      "final_population": 1034
+    }
+  ],
+  "initial_agents_cells_summary_exact": true,
+  "resolved_scenario_differences": [
+    {
+      "line": 1,
+      "off": "Constructor: mkParamsAnimationIII_1",
+      "on": "Constructor: mkParamsFigureIII_7"
+    },
+    {
+      "line": 3,
+      "off": "Scenario: \t\t\tAnimation III-1",
+      "on": "Scenario: \t\t\tFigure III-7"
+    },
+    {
+      "line": 31,
+      "off": "I rule active (inheritance): \tFalse",
+      "on": "I rule active (inheritance): \tTrue"
+    }
+  ],
+  "source_files_pinned": 60,
+  "scope": "Two complete first-seed workflows; initialization and sole treatment toggle verified. No ensemble or paper-level claim."
+}

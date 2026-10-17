@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE experiments SYSTEM "behaviorspace.dtd">
+<experiments><experiment name="spice-first" repetitions="1" runMetricsEveryStep="true"><setup>random-seed 602352629 preset4 setup false</setup><go>go</go><timeLimit steps="1000" /><metric>ticks</metric><metric>count agents</metric><metric>observed-agent-sugar</metric><metric>observed-agent-spice</metric><metric>observed-site-sugar</metric><metric>observed-site-spice</metric><metric>observed-agent-states</metric></experiment></experiments>

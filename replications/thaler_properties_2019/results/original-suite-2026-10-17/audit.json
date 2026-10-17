@@ -1,0 +1,42 @@
+{
+  "source_revision": "63b3e761b9ef0d861610b7ba232978406b89585b",
+  "source_files_rechecked": 60,
+  "compiler": "8.4.4",
+  "tests_passed": 35,
+  "property_groups": 14,
+  "randomized_cases": 1400,
+  "replay_seed": 20261017,
+  "elapsed_test_seconds": 7.5,
+  "exit_code": 0,
+  "container_state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-17T07:13:14.075051539Z",
+    "FinishedAt": "2026-10-17T07:23:05.643948936Z"
+  },
+  "binaries": {
+    "sugarscape": {
+      "path": ".stack-work/dist/x86_64-linux-tinfo6/Cabal-2.2.0.1/build/sugarscape/sugarscape",
+      "sha256": "aad4d2d6cb3e4651c94aa36bcd0868da212ce98e783d578a2f0f538f834c412c"
+    },
+    "sugarscape-test": {
+      "path": ".stack-work/dist/x86_64-linux-tinfo6/Cabal-2.2.0.1/build/sugarscape-test/sugarscape-test",
+      "sha256": "d0d830317d746a741b13bed306ee82e44593e18d01a845c5d96b5d27dc64aadd"
+    },
+    "sugarscape-model-test": {
+      "path": ".stack-work/dist/x86_64-linux-tinfo6/Cabal-2.2.0.1/build/sugarscape-model-test/sugarscape-model-test",
+      "sha256": "60860b2871ea9881bc30037ed8c873ddcb4c2cbdfa6c88fca0b452f9e9f431b4"
+    }
+  },
+  "scope": "Unmodified original sugarscape-test suite executed. Model-test suite compiled only. No emergent model or full-paper verdict.",
+  "original_archive_sha256": "d4a12b5cce8d089037a080de2f01ef38f27815592250db2e3704eb34b1b835d7",
+  "archive_sha256": "a91f212b61caee85b88a78bd5b1e8f894f2d6bf24b9fa1292e607246edddb42d",
+  "archive_note": "Original shell trap ran inside source directory, placing exit-code there and archiving source. Preserved original archive; corrected archive002 explicitly contains native logs,versions,source manifest,original launch script and original zero exit-code bytes."
+}

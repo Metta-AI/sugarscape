@@ -1,0 +1,30 @@
+{
+  "corrected_variant": "both",
+  "source_files_verified": 60,
+  "cases": [
+    {
+      "scenario": "wealth",
+      "steps": 200,
+      "matched_agent_records": 50000,
+      "matched_trade_records": 0,
+      "raw_sha256": "c0a4a44b813574b61ac07bffb827926a1f972475593dd5a4f962c56f1aa95e5f",
+      "binary_sha256": "c720c52a9e3b909b085d892000236f7ead0c8c96c7315d7c5406d00c86b50e0a"
+    },
+    {
+      "scenario": "carrying",
+      "steps": 400,
+      "matched_agent_records": 87225,
+      "matched_trade_records": 0,
+      "raw_sha256": "61fb712c32c51cfac36d2c7088123a3013160cbecde92bd5ee0d83f13253b5cc",
+      "binary_sha256": "c720c52a9e3b909b085d892000236f7ead0c8c96c7315d7c5406d00c86b50e0a"
+    },
+    {
+      "scenario": "trading",
+      "steps": 1000,
+      "matched_agent_records": 66966,
+      "matched_trade_records": 28581,
+      "raw_sha256": "2c380809c95b58f83a5d57a161ff99c900b8b7ee4f9873c9b3af20f547f4f3c1",
+      "binary_sha256": "c720c52a9e3b909b085d892000236f7ead0c8c96c7315d7c5406d00c86b50e0a"
+    }
+  ]
+}

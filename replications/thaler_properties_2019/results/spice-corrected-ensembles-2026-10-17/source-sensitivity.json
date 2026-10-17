@@ -1,0 +1,105 @@
+{
+  "input_sha256": {
+    "original": "e4cc41ca8aeff5452f3042fa9d8dbe80e6e6c60abf057938ce8d328984d41a96",
+    "corrected": "74f3b3264cf79dae2c08ad3ea1eb747fd12c353379c906098c1dc983b7572d71"
+  },
+  "comparisons": [
+    {
+      "scenario": "spice_book",
+      "metric": "at100",
+      "n": 100,
+      "corrected_minus_original": {
+        "mean": 0.43,
+        "ci95": [
+          -0.14123327474673936,
+          1.0012332747467394
+        ]
+      }
+    },
+    {
+      "scenario": "spice_book",
+      "metric": "at500",
+      "n": 100,
+      "corrected_minus_original": {
+        "mean": 0.71,
+        "ci95": [
+          0.2378345212880889,
+          1.182165478711911
+        ]
+      }
+    },
+    {
+      "scenario": "spice_book",
+      "metric": "at1000",
+      "n": 100,
+      "corrected_minus_original": {
+        "mean": 0.39,
+        "ci95": [
+          -0.07589102626054961,
+          0.8558910262605497
+        ]
+      }
+    },
+    {
+      "scenario": "spice_book",
+      "metric": "late801_1000",
+      "n": 100,
+      "corrected_minus_original": {
+        "mean": 0.3461499999999995,
+        "ci95": [
+          -0.07575858686552356,
+          0.7680585868655225
+        ]
+      }
+    },
+    {
+      "scenario": "trade_off",
+      "metric": "at100",
+      "n": 100,
+      "corrected_minus_original": {
+        "mean": -0.39,
+        "ci95": [
+          -1.2619501386576242,
+          0.48195013865762404
+        ]
+      }
+    },
+    {
+      "scenario": "trade_off",
+      "metric": "at500",
+      "n": 100,
+      "corrected_minus_original": {
+        "mean": 0.13,
+        "ci95": [
+          -0.4600006679558718,
+          0.7200006679558718
+        ]
+      }
+    },
+    {
+      "scenario": "trade_off",
+      "metric": "at1000",
+      "n": 100,
+      "corrected_minus_original": {
+        "mean": 0.31,
+        "ci95": [
+          -0.27188321631622175,
+          0.8918832163162218
+        ]
+      }
+    },
+    {
+      "scenario": "trade_off",
+      "metric": "late801_1000",
+      "n": 100,
+      "corrected_minus_original": {
+        "mean": 0.2768000000000002,
+        "ci95": [
+          -0.30173713414234654,
+          0.855337134142347
+        ]
+      }
+    }
+  ],
+  "scope": "Same-seed source sensitivity; pointwise 95% intervals, not simultaneous intervals. No full-paper or approximate-target equivalence verdict."
+}

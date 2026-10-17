@@ -1,0 +1,38 @@
+[
+  {
+    "study": "trade-control",
+    "paired_results_and_comparisons_unchanged": true,
+    "scope": "Retained first pair only; earlier report also inventoried unpaired remaining runs.",
+    "ledger_bytes_and_hash_verified": true,
+    "full_gate_command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "replications/thaler_properties_2019/audit_paired_observers.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-trade-control-001/protocol.json",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-observer-001",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-trade-control-001/must-not-exist-ledger-snapshot-full-audit.json",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-trade-control-001/first",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-trade-control-001/remaining"
+    ],
+    "full_gate_exit_code": 1,
+    "full_gate_stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-properties/replications/thaler_properties_2019/audit_paired_observers.py\", line 106, in <module>\n    assert len(ledger) == len(expected), (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Incomplete ledger cannot support ensemble inference\n",
+    "rejected_without_output_or_sidecars": true
+  },
+  {
+    "study": "demographics",
+    "paired_results_and_comparisons_unchanged": true,
+    "scope": "Retained first pair only; earlier report also inventoried unpaired remaining runs.",
+    "ledger_bytes_and_hash_verified": true,
+    "full_gate_command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "replications/thaler_properties_2019/audit_paired_observers.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-demographics-001/protocol.json",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-observer-001",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-demographics-001/must-not-exist-ledger-snapshot-full-audit.json",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-demographics-001/first",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-demographics-001/remaining"
+    ],
+    "full_gate_exit_code": 1,
+    "full_gate_stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-properties/replications/thaler_properties_2019/audit_paired_observers.py\", line 106, in <module>\n    assert len(ledger) == len(expected), (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Incomplete ledger cannot support ensemble inference\n",
+    "rejected_without_output_or_sidecars": true
+  }
+]

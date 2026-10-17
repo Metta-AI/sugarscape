@@ -1,0 +1,30 @@
+{
+  "archive_sha256": "d0bdc825571e92147b419e48e30fc836bd6bfc2c45f8d28ca2d7bc26bc95c7c3",
+  "exact_exports_verified": 10,
+  "results": [
+    {
+      "variant": "original",
+      "elapsed_seconds": 66.48189732688479,
+      "files_sha256": {
+        "trajectory.cells.csv": "bbe00a7d9949b196f1012380500157976bd49b135ab37a70aa82f6d56eb108a9",
+        "trajectory.summary.csv": "3870a5a3a625e99248ee29c3639b4bb88fa505d4fabf90c085c789d5ddffc024",
+        "trajectory.agents.csv": "3b84839246ad8e73a81ff4d80b4af42fb28dd8ecfa51a61777c5f5d1eb073d1d",
+        "trajectory.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2",
+        "trajectory.scenario.txt": "b9fc44adf6987525dceda81ca5027344c39914bb6bffdc558498c48ad1436374"
+      },
+      "exact_retained_trajectory_match": true
+    },
+    {
+      "variant": "corrected",
+      "elapsed_seconds": 66.4712722171098,
+      "files_sha256": {
+        "trajectory.cells.csv": "9d48ba8575aa1ade4cf5b71ba14b11d4a302df62288448340d14b3dde725917e",
+        "trajectory.summary.csv": "0fd1c6dc24f4e588861d1e8c116b9a8faefc6a32424d6903706210441119e32e",
+        "trajectory.agents.csv": "20e872f01a224583cac58160ba10e957043b46c1a79dc6ac94211f033b7351e3",
+        "trajectory.trades.csv": "ddcc6488e9cb5531b18dffe80f1c4cf89f03122eefa0a713a6de3efeb45896a2",
+        "trajectory.scenario.txt": "b9fc44adf6987525dceda81ca5027344c39914bb6bffdc558498c48ad1436374"
+      },
+      "exact_retained_trajectory_match": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "relh-sugarscape-properties-native-seeds-20261017-v1",
+    "--platform",
+    "linux/amd64",
+    "--cpus",
+    "0.5",
+    "--memory",
+    "1g",
+    "--pids-limit",
+    "256",
+    "-v",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home:/root",
+    "relh-sugarscape-thaler-deps:20261017-001",
+    "timeout",
+    "--kill-after=30",
+    "300",
+    "bash",
+    "/root/sugarscape/thaler-properties-native-seeds-001/run.sh"
+  ],
+  "stdout": "57b4b35f2da43c34025c81323eada2b7dc71521cc66045fdf4dc9f0e7edc981b\n",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -1,0 +1,11 @@
+{
+  "native_execution": "terminal0",
+  "byte_identical": true,
+  "steps_each": 200,
+  "agent_records_each": 50000,
+  "raw_sha256": "14d036caa5e34c8dc06bdf1c62bd3a4f613201a831525f2e30666e3c7461ff29",
+  "native_rng_states_verified": 200,
+  "source_formula": "fromIntegral to Int32, mask sign bit, divMod2147483562; secondstate=(quotient mod2147483398)+1",
+  "interpretation": "Fullsigned64 and positive31bit seeds project into the same effective31bit input space. The historical protocol excludes zero and samples without replacement; it does not omit a broad second-generator state space. This check does not imply the two seed lists yield the same ensemble. No independent-seed or completed-paper credit.",
+  "source_file_sha256": "cf0f66a246beb70b5fec755328748c96619977e773a44b1f3f327c34716b52c6"
+}

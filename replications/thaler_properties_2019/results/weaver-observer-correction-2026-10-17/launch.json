@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "-u",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/weaver-spice-isolated-ensemble-001/run_ensemble.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/weaver-spice-isolated-ensemble-001"
+  ],
+  "pid": 22595,
+  "started_utc": "2026-10-17T10:31:18.457057+00:00",
+  "replaces_stopped_batch": "/Users/relh/Code/workspace/sugarscape-replication-evidence/weaver-spice-ensemble-001",
+  "limits": {
+    "seconds_total": 5400,
+    "seconds_per_run": 300,
+    "java_heap_mib": 512,
+    "active_processors": 1,
+    "minimum_free_bytes": 4294967296
+  }
+}

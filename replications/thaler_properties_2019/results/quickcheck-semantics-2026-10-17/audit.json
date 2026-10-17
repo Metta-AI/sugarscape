@@ -1,0 +1,57 @@
+{
+  "kind": "static_source_semantics_audit",
+  "quickcheck_commit": "9ccdcbb3eaad7fe96c08ea5ecbbdfe852615bd49",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/stevana/quickcheck/9ccdcbb3eaad7fe96c08ea5ecbbdfe852615bd49/Test/QuickCheck/Property.hs",
+      "sha256": "8661552f078ea4c87a7205312d9467a6a70ee14e4fc61ed5d8d5ae47c54d7b2d",
+      "bytes": 33538
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stevana/quickcheck/9ccdcbb3eaad7fe96c08ea5ecbbdfe852615bd49/Test/QuickCheck/Test.hs",
+      "sha256": "a248acc2bb13f390f5321bc119c8066a594b24f15c04ae05654b7cc8b524d8a6",
+      "bytes": 25676
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stevana/quickcheck/9ccdcbb3eaad7fe96c08ea5ecbbdfe852615bd49/Test/QuickCheck/State.hs",
+      "sha256": "b629ef9b1ae9eb6f5dd90f4463de7dd6fdb5e8742009e1682f749ed86a02233a",
+      "bytes": 3950
+    },
+    {
+      "model_path": "stack.yaml",
+      "sha256": "cc78df55813b1b533a44351a955f32943222c317b627f309bfe8bb43073af86b",
+      "bytes": 2451
+    },
+    {
+      "model_path": "src/test/Model/Model.hs",
+      "sha256": "91ab6366986519cdec5246a4ce2a55e1a9af5768969204b0e87ed476aa6e0b81",
+      "bytes": 13765
+    }
+  ],
+  "findings": {
+    "coverage": "cover updates classification and requiredCoverage without changing the underlying True result; no checkCoverage in model suite",
+    "inheritance": "expectFailure expects a falsifying case; normal completion of 100 successful cases returns NoExpectedFailure irrespective of coverage",
+    "wealth": "once aborts after one successful case; coverage shortfall remains a warning",
+    "scope": "Predicted control flow only; native original suite is running. Exceptions, resource limits, or nontermination remain possible. No scientific replication verdict."
+  },
+  "source_lines": {
+    "Property.hs": {
+      "expectFailure": 420,
+      "once": 425,
+      "cover": 588
+    },
+    "Test.hs": {
+      "default_count": 185,
+      "termination": 279,
+      "NoExpectedFailure": 290,
+      "successful_case": 395,
+      "coverage_warning": 521
+    },
+    "src/test/Model/Model.hs": {
+      "inheritance": 150,
+      "inheritance_return": 161,
+      "wealth": 269,
+      "wealth_return": 288
+    }
+  }
+}

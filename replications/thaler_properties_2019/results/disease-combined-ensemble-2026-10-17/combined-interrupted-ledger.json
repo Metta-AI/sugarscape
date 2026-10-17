@@ -1,0 +1,36 @@
+{
+  "container_id": "6589d6f9662cfe2f541ff9535cfd46a19f01b2b9343a4f9fe5b67fcba864b8dc",
+  "container_name": "/relh-sugarscape-properties-disease-count-ensembles-20261017-v2",
+  "state": {
+    "Status": "exited",
+    "Running": false,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 0,
+    "ExitCode": 1,
+    "Error": "",
+    "StartedAt": "2026-10-17T09:48:12.725019567Z",
+    "FinishedAt": "2026-10-17T11:11:06.215068029Z"
+  },
+  "command": [
+    "timeout",
+    "--kill-after=30",
+    "10830",
+    "bash",
+    "/root/sugarscape/thaler-properties-disease-count-ensembles-002/run.sh"
+  ],
+  "mounts": [
+    {
+      "Type": "bind",
+      "Source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home",
+      "Destination": "/root",
+      "Mode": "",
+      "RW": true,
+      "Propagation": "rprivate"
+    }
+  ],
+  "run_root": "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-disease-count-ensembles-002/combined_corrected",
+  "ledger_sha256": "0220d5fe324f400591fa483e635775e5d027aeabeb74d4b49f2b7c36a2f5d4c1"
+}

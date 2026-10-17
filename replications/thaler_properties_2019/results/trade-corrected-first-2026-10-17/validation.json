@@ -1,0 +1,28 @@
+{
+  "historical100pair_scientific_fields_exact": true,
+  "first_corrected_pair_validated": true,
+  "initial_conditions_exact": true,
+  "only_dynamics_difference": "T rule active (trading):",
+  "complete_corrected_ensemble": false,
+  "full_gate_command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "replications/thaler_properties_2019/audit_paired_observers.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-trade-corrected-001/protocol.json",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-sensitivity-001/both",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-trade-corrected-001/must-not-exist-full.json",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-trade-corrected-001/first",
+    "--reuse-control",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-spice-corrected-001/protocol.json",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-spice-corrected-001/first"
+  ],
+  "full_gate_exit": 1,
+  "full_gate_stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-properties/replications/thaler_properties_2019/audit_paired_observers.py\", line 156, in <module>\n    assert paired == list(range(100)), \"All 100 pairs required\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: All 100 pairs required\n",
+  "full_readback": "All scientific fields exact; ledger hashes match. Archive also retains excluded first spice_book run without counting it as trade evidence.",
+  "snapshot_agent_observations": 24804,
+  "raw_archive_sha256": "000b106d897a31e007d50171990b828324d2234cd416afda5c918cabd73c685a",
+  "raw_archive_bytes": 797027,
+  "historical_audit_sha256": {
+    "full-paired-audit-001.json": "1900fe96a766f1d626250577e6f456a9fe94d572d70ee1ad081b02174873e959",
+    "reuse-capable-full-audit-001.json": "8d234ac5c52450180050d283682f0cfc34dbedb22fe9e99c87c781f5e7a6ca2c"
+  }
+}

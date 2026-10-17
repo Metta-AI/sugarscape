@@ -1,0 +1,36 @@
+Constructor: mkCarryingCapacityWithSpice
+Seed: 1139277783
+Scenario: 			Carrying Capacity With Spice
+
+Agent count: 			400
+Agent distribution: 		Scatter
+
+Vision range: 			(1,6)
+Age age range: 			Forever
+
+Sugar regrow: 			Rate 1.0
+Sugar endowment range: 		(5,25)
+Sugar metabolism range: 	(1,4)
+
+Spice enabled: 			True
+Spice regrow: 			Rate 1.0
+Spice endowment range: 		(5,25)
+Spice metabolism range: 	(1,4)
+
+Polution formation: 		NoPolution
+Polution diffusion: 		Nothing
+
+Female gender ratio: 		0.0
+Fertility start-range female: 	(0,0)
+Fertility start-range male: 	(0,0)
+Fertility end-range female: 	(0,0)
+Fertility send-range male: 	(0,0)
+
+R rule active (replace): 	False
+S rule active (mating): 	False
+I rule active (inheritance): 	False
+K rule active (culture): 	Nothing
+C rule active (combat): 	Nothing
+T rule active (trading): 	False
+L rule active (loans): 		Nothing
+E rule active (disease): 	Nothing
