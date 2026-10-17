@@ -836,3 +836,34 @@ seed integers do not establish paired initial populations. Historical Java parit
 and identity with the 2009 publication remain unverified. All 100 unique inputs
 and independent trajectory audits are required before ensemble inference; source-map
 agreement alone does not establish equivalent model behavior.
+
+## NetLogo observer interference: diagnosis and correction
+
+**The earlier candidate ensemble is superseded.**
+[Native observation controls](results/weaver-observer-correction-2026-10-17)
+show that BehaviorSpace metrics evaluating agent sets consume random numbers.
+Removing individual-state measurements changes resource totals at step 1 and
+population at step 2. Removing all resource/state measurements changes population
+at 995 of 1,001 recorded steps. The same-seed replay previously demonstrated
+repeatability of the instrumented model, not absence of observer interference.
+
+The task-owned batch was stopped after 17 completed remaining inputs. All outputs,
+including the interrupted input, remain preserved as instrumentation diagnostics.
+They do not contribute to the independent model comparison.
+
+Five appended observer reporters now wrap measurements in `with-local-randomness`.
+The original model code remains an exact prefix and the other ten model sections
+are byte-identical. The isolated first run matches the population-only control at
+all 1,001 timesteps: final population is 99, superseding the earlier instrumented 104.
+The source wrapper, commands, controls, raw first trajectory, and reconstruction
+instructions are retained without redistributing the candidate's full source.
+
+[The ensemble auditor](audit_candidate_spice.py) verifies source/runtime pins,
+observer-only changes, seed-specific commands, raw hashes, unique agents and occupied
+positions, age and trait ranges, survivor identities, resource sums, and all timesteps.
+Two actual isolated inputs pass, covering 229,449 agent observations. Frozen archive
+readback reproduces the full audit exactly; incomplete full mode rejects before output.
+
+The replacement 99-input batch uses the same frozen seeds and resource limits,
+retaining its new isolated first seed. Prefixes emit no inference. The full successful
+100-input path remains pending, and historical source identity remains unverified.

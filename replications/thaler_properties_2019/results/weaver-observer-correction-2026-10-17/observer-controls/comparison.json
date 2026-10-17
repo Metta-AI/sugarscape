@@ -1,0 +1,152 @@
+[
+  {
+    "control": "summary-only",
+    "compared_fields": [
+      "[run number]",
+      "[step]",
+      "ticks",
+      "count agents",
+      "sum [sugar] of agents",
+      "sum [spice] of agents",
+      "sum [psugar] of patches",
+      "sum [pspice] of patches"
+    ],
+    "compared_timesteps": 1001,
+    "different_values": 4956,
+    "first_differences": [
+      {
+        "time": 1,
+        "field": "sum [sugar] of agents",
+        "reference": "6025",
+        "control": "6031"
+      },
+      {
+        "time": 1,
+        "field": "sum [spice] of agents",
+        "reference": "5752",
+        "control": "5748"
+      },
+      {
+        "time": 1,
+        "field": "sum [psugar] of patches",
+        "reference": "4152",
+        "control": "4145"
+      },
+      {
+        "time": 1,
+        "field": "sum [pspice] of patches",
+        "reference": "4175",
+        "control": "4178"
+      },
+      {
+        "time": 2,
+        "field": "count agents",
+        "reference": "395",
+        "control": "394"
+      },
+      {
+        "time": 2,
+        "field": "sum [sugar] of agents",
+        "reference": "5814",
+        "control": "5805"
+      },
+      {
+        "time": 2,
+        "field": "sum [spice] of agents",
+        "reference": "5449",
+        "control": "5451"
+      },
+      {
+        "time": 2,
+        "field": "sum [psugar] of patches",
+        "reference": "3995",
+        "control": "3992"
+      },
+      {
+        "time": 2,
+        "field": "sum [pspice] of patches",
+        "reference": "4021",
+        "control": "4024"
+      },
+      {
+        "time": 3,
+        "field": "sum [sugar] of agents",
+        "reference": "5360",
+        "control": "5363"
+      }
+    ]
+  },
+  {
+    "control": "population-only",
+    "compared_fields": [
+      "[run number]",
+      "[step]",
+      "ticks",
+      "count agents"
+    ],
+    "compared_timesteps": 1001,
+    "different_values": 995,
+    "first_differences": [
+      {
+        "time": 2,
+        "field": "count agents",
+        "reference": "395",
+        "control": "394"
+      },
+      {
+        "time": 4,
+        "field": "count agents",
+        "reference": "358",
+        "control": "357"
+      },
+      {
+        "time": 6,
+        "field": "count agents",
+        "reference": "308",
+        "control": "311"
+      },
+      {
+        "time": 7,
+        "field": "count agents",
+        "reference": "285",
+        "control": "288"
+      },
+      {
+        "time": 8,
+        "field": "count agents",
+        "reference": "262",
+        "control": "260"
+      },
+      {
+        "time": 9,
+        "field": "count agents",
+        "reference": "246",
+        "control": "245"
+      },
+      {
+        "time": 10,
+        "field": "count agents",
+        "reference": "232",
+        "control": "231"
+      },
+      {
+        "time": 11,
+        "field": "count agents",
+        "reference": "221",
+        "control": "218"
+      },
+      {
+        "time": 12,
+        "field": "count agents",
+        "reference": "212",
+        "control": "208"
+      },
+      {
+        "time": 13,
+        "field": "count agents",
+        "reference": "205",
+        "control": "202"
+      }
+    ]
+  }
+]
