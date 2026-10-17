@@ -522,3 +522,23 @@ Requires PyMuPDF 1.26.5 and NumPy 1.26.4. The command checks the paper and audit
 then reconstructs the additional death counts from all 500 retained trajectories.
 Compressed CSVs retain every extracted coordinate, reproduced value and initial residual.
 Only the raw homogeneous model is covered; this does not complete the paper.
+
+## Completed local runtime recovery interval
+
+The recovered altruistic 5,000-step interval `[1,12)` completed all 11 assigned inputs
+with zero exit status. The [full-interval audit](results/runtime-local-recovery-complete-2026-10-17/audit.json)
+validates 30,869 observations: five extinct populations and six at or above initial population.
+The earlier two- and eight-input prefixes are contained exactly and receive no additional credit.
+
+[Reconciliation](results/runtime-local-recovery-complete-2026-10-17/coverage.json)
+checks duplicate trajectory hashes, observation counts and final populations across
+published runtime audits. Unique coverage is now **622/1,200 inputs and 593,809 observations**.
+This adds 11 inputs and 30,869 observations to the previously published 611-input total.
+
+The sealed 6,870,636-byte checkpoint has SHA-256
+`5271402f55099c4f2835f662b2e04271d99823b37a220c5373cd09d41ef594ec`.
+Its receipt, native completion marker, supervisor exit status, manifest and audit ledger
+are retained. The native completion marker is retained separately because the checkpoint
+format seals per-run outputs without that marker. The full audit also checked it directly.
+Cloud intervals `[17,100)` and raw 50,000-step `[0,100)` remain separate active work.
+This completes the assigned recovery interval, not the full 100-input group or paper.
