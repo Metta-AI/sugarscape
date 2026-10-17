@@ -664,5 +664,26 @@ observation corrections leave this defect unchanged.
 
 [A separate bounded correction validation](results/disease-count-correction-launch-2026-10-17)
 aligns the generator with the declared field order. It must preserve the V-1 control
-byte-for-byte before the intended 25-entry experiment expands. Its results remain
-pending; the historical cohorts and unresolved whole-study status are preserved.
+byte-for-byte before the intended 25-entry experiment expands. Those controls now
+pass, as documented below; the historical cohorts remain preserved.
+
+## Disease-count correction: validated controls and retained first seeds
+
+[Four complete native runs](results/disease-count-correction-2026-10-17) verify the
+two-line generator correction. Both V-1 controls reproduce all baseline exports
+exactly. All other 59 model files and the observer remain unchanged relative to
+each baseline. The four trajectories contain 10,689 agent observations, and
+published compressed-data readback reproduces the independent audit exactly.
+
+For the first V-2 seed, both corrected configurations generate 25 entries of length
+1–10, comprising 24 distinct diseases. Infection clears by step 69 with count-only
+correction and step 61 with combined coordinate/observation/count corrections.
+Neither first-seed result establishes an ensemble outcome.
+
+[The remaining 99 seeds per version](results/disease-count-ensemble-launch-2026-10-17)
+run sequentially under one CPU, 2 GiB, and a three-hour outer cap. First-seed outputs
+are retained rather than rerun. The observer auditor accepts an explicit
+`--interval 1 100` for these remaining runs, requires the entire interval without
+`--allow-prefix`, and emits no 100-seed inference from 99 runs. Its default full-run
+mode reproduces the historical 100-seed disease audit exactly. Final inference
+still requires reconciliation with the retained first seed.

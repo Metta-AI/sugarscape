@@ -1,0 +1,101 @@
+{
+  "variant": "disease_count_corrected",
+  "scenario": "disease_persist",
+  "validated_runs": 2,
+  "complete_scenario": false,
+  "summary_observations": 2002,
+  "snapshot_agent_observations": 8981,
+  "extinction_count": 0,
+  "protocol_sha256": "4fef05887366494f9c0e3b67e8c5d1801a8eaf612a6c30c04f2ebc50e5810ea0",
+  "manifest_sha256": "8391ad6c101701f856652e788fba1b064a6bb839989912d7d0f82c2be49a508f",
+  "ledger_snapshot_sha256": "cc50aee315fcea492ca22b02453b2159cf73799f15dbbef4211ec99bcb859a89",
+  "results": [
+    {
+      "index": 1,
+      "seed": 65139475,
+      "steps": 1000,
+      "summary_observations": 1001,
+      "snapshot_agent_observations": 4350,
+      "final_population": 195,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2551,
+          "agents": 400,
+          "occupiers": 394,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [
+            12,
+            155,
+            284,
+            295,
+            305,
+            321
+          ],
+          "coordinate_disagreements": 6
+        },
+        {
+          "time": 1000,
+          "cells": 2551,
+          "agents": 195,
+          "occupiers": 195,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 173
+        }
+      ],
+      "source_record_sha256": "bce7e3b1a6b4e52b79261f2cbee59a126f7686609605b06bfd68d01246cd361a",
+      "predicates": {
+        "source_above_ceil_half": false,
+        "prose_strict_majority": false
+      }
+    },
+    {
+      "index": 2,
+      "seed": 940280112,
+      "steps": 1000,
+      "summary_observations": 1001,
+      "snapshot_agent_observations": 4631,
+      "final_population": 207,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2551,
+          "agents": 400,
+          "occupiers": 393,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [
+            3,
+            22,
+            146,
+            149,
+            329,
+            352,
+            368
+          ],
+          "coordinate_disagreements": 7
+        },
+        {
+          "time": 1000,
+          "cells": 2551,
+          "agents": 207,
+          "occupiers": 207,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 179
+        }
+      ],
+      "source_record_sha256": "f8c4fc73ca04b23c46d224fb0040c08a776f2789b9a9b8e3553656cc593ff241",
+      "predicates": {
+        "source_above_ceil_half": false,
+        "prose_strict_majority": false
+      }
+    }
+  ],
+  "comparisons": [],
+  "scope": "Source and prose predicates measured separately. Corrected variant is post-hoc sensitivity. No full-paper credit; global culture ratio does not prove spatial hill dominance."
+}

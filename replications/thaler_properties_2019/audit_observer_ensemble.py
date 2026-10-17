@@ -19,6 +19,9 @@ parser.add_argument(
 )
 parser.add_argument("output", type=Path)
 parser.add_argument("--allow-prefix", action="store_true")
+parser.add_argument(
+    "--interval", nargs=2, type=int, default=[0, 100], metavar=("START", "STOP")
+)
 args = parser.parse_args()
 protocol = json.loads(args.protocol.read_text())
 manifest = json.loads((args.run / "manifest.json").read_text())
@@ -32,14 +35,20 @@ assert (
 ledger = (args.run / "completed.jsonl").read_bytes()
 assert ledger.endswith(b"\n")
 all_records = [json.loads(line) for line in ledger.splitlines()]
-expected_order = [(s["key"], i) for s in protocol["scenarios"] for i in range(100)]
+start, stop = args.interval
+assert 0 <= start < stop <= 100
+if args.interval != [0, 100]:
+    assert manifest["interval"] == args.interval
+expected_order = [
+    (s["key"], i) for s in protocol["scenarios"] for i in range(start, stop)
+]
 assert [(r["scenario"], r["index"]) for r in all_records] == expected_order[
     : len(all_records)
 ]
 records = [r for r in all_records if r["scenario"] == args.scenario]
-assert 0 < len(records) <= 100
-assert args.allow_prefix or len(records) == 100, (
-    "All100 seeds required for a complete scenario"
+assert 0 < len(records) <= stop - start
+assert args.allow_prefix or len(records) == stop - start, (
+    "Every seed in the declared interval is required"
 )
 scenario = next(s for s in protocol["scenarios"] if s["key"] == args.scenario)
 horizon = scenario["steps"]
@@ -156,7 +165,12 @@ for record in records:
                 abs_tol=1e-9,
             )
     sites = {0: {}, horizon: {}}
-    width = 50 if variant == "original" else 51
+    width = {
+        "original": 50,
+        "corrected": 51,
+        "disease_count_corrected": 50,
+        "combined_corrected": 51,
+    }[variant]
     for r in csv.DictReader((folder / "trajectory.cells.csv").open()):
         t, x, y = int(r["time"]), int(r["x"]), int(r["y"])
         assert t in sites and 0 <= x < 51 and 0 <= y < 51
@@ -169,7 +183,7 @@ for record in records:
         sites[t][key] = r
     spatial = []
     for t, cells in sites.items():
-        assert set(cells) == set(range(2551 if variant == "original" else 2601))
+        assert set(cells) == set(range(50 * width + 51))
         for field in ["sugar", "spice", "pollution"]:
             summary_field = field if field == "pollution" else "environment_" + field
             assert math.isclose(
