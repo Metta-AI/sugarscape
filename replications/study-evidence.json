@@ -144,7 +144,22 @@
         "return_states": 18,
         "illegal_move_rejected": true
       }
+    },
+    {
+      "study": "quera_2025",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
+      "checked_commit": "f3e3331355ccd49478ac1221cb732366ff72720e",
+      "status": "partial",
+      "readme": "replications/quera_2025/README.md",
+      "readme_sha256": "1ba8ef5d044cab74a799e8c34961b0554ef07ab1b2d1f7a6c0f53865850675af",
+      "remaining_scope": "Three forward seeds audited; no completed gradient/calibration target. Movement replay, Figure 11 AD/FD protocol and estimates, Figures 17/19b/20b calibration remain.",
+      "validation": {
+        "states": 150,
+        "agent_observations": 15000,
+        "cell_observations": 93750,
+        "portable_trajectory_files_byte_identical": 9
+      }
     }
   ],
-  "study_prs": 11
+  "study_prs": 13
 }
