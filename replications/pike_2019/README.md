@@ -677,3 +677,31 @@ No timestep is treated as an independent replicate, and these descriptive window
 [Independent verification](results/price-notebook-2026-10-17/verification.json) reconstructs counts, all 1,500 histogram bins and 600 dispersion-window records from previously audited step measurements.
 Historical “Run9” seeds and raw datasets remain unavailable; these ensembles do not reproduce that exact trajectory or complete the paper.
 Run `audit_price_notebook.py ENGINE PHASE1_RECONCILIATION PHASE3_RECONCILIATION NEW_OUTPUT` to regenerate this analysis.
+
+## Finite-window price-direction results
+
+[Complete price-direction analysis](results/convergence-2026-10-17/analysis.json) covers all 2,100 Phase I–III movement and no-policy runs: 2,100,000 step measurements.
+It compares steps 1–100 with 901–1000 using absolute log geometric-mean price and the notebook's sample log-price dispersion.
+The first metric measures distance from price one; smaller values are closer to one regardless of which side the price falls.
+
+All three Phase I approaches have negative paired late-minus-early differences for both metrics, with pointwise 95% intervals below zero.
+For standard Sugarscape, mean distance decreases from 0.12393 to 0.08390, and mean dispersion from 0.27051 to 0.07634.
+Late dispersion is defined for 88 of 100 standard runs; missing outcomes are not assigned zero.
+
+At threshold ten, released explicit movement increases mean distance from 0.13348 to 0.27119; network movement increases it from 0.13279 to 0.26407.
+Relative to corresponding no-policy runs, late-window paired distance differences are 0.21424 [0.18035, 0.24813] and 0.20557 [0.17287, 0.23827].
+Those comparisons include 98 and 99 jointly defined seed pairs, respectively.
+Late dispersion differences are 0.35883 [0.31564, 0.40202] and 0.35546 [0.31536, 0.39556], each using 88 pairs.
+All six released-policy conditions across thresholds one, five and ten have positive late-policy-minus-no-policy intervals for both metrics.
+Corrected-selector sensitivity results remain separately labeled in the complete tables.
+
+![Early and late price summaries](results/convergence-2026-10-17/plots/convergence.png)
+
+These results support the paper's reported price-direction effects at its 1,000-step horizon under the declared reconstruction.
+The windows are retrospective descriptive choices; intervals are pointwise and exclude undefined outcomes, with no multiplicity adjustment or equivalence margin.
+They do not prove asymptotic convergence, nonconvergence, or identity with historical figures.
+
+[Independent measurement verification](results/convergence-2026-10-17/independent-audits/measurements.json) checks all 8,400 window records, with maximum error 1.67e-16.
+[R verification](results/convergence-2026-10-17/independent-audits/statistics.json) checks all 150 intervals and 450 scalar statistics, with maximum error 1.46e-12.
+The source notebooks' scatter selection and mislabeled statistic remain documented above; these comparisons use explicit definitions instead.
+Common-resource ensembles, numerical-failure investigation, controlled runtime comparisons and historical source fidelity still prevent whole-paper completion.
