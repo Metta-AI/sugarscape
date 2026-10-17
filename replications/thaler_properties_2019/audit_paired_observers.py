@@ -54,7 +54,23 @@ parser.add_argument(
     default=[],
     help="Pinned control protocol followed by existing control run directories",
 )
+parser.add_argument(
+    "--interrupted-ledger",
+    nargs="+",
+    type=Path,
+    default=[],
+    help="Frozen terminal receipts for interrupted ledgers followed by disjoint continuations",
+)
 args = parser.parse_args()
+interrupted = {}
+for path in args.interrupted_ledger:
+    receipt = json.loads(path.read_text())
+    assert receipt["state"]["Status"] == "exited"
+    assert receipt["state"]["Running"] is False and receipt["state"]["ExitCode"] != 0
+    digest = receipt["ledger_sha256"]
+    assert digest not in interrupted
+    interrupted[digest] = hashlib.sha256(path.read_bytes()).hexdigest()
+used_interrupted = set()
 assert not args.output.exists()
 protocol = json.loads(args.protocol.read_text())
 assert len(protocol["variants"]) == 1
@@ -121,9 +137,6 @@ for root, input_protocol in inputs:
     start, stop = manifest["interval"]
     assert 0 <= start < stop <= 100
     input_keys = [s["key"] for s in input_protocol["scenarios"]]
-    indices = {(key, index) for key in input_keys for index in range(start, stop)}
-    assert not reserved.intersection(indices), "Overlapping execution intervals"
-    reserved.update(indices)
     raw = (root / "completed.jsonl").read_bytes()
     assert raw.endswith(b"\n"), "Retry after the worker finishes its ledger append"
     ledger_bytes.append(raw)
@@ -131,7 +144,18 @@ for root, input_protocol in inputs:
     expected = [(key, index) for key in input_keys for index in range(start, stop)]
     assert [(r["scenario"], r["index"]) for r in ledger] == expected[: len(ledger)]
     assert len(ledger) <= len(expected)
-    if not args.allow_prefix:
+    digest = hashlib.sha256(raw).hexdigest()
+    if digest in interrupted:
+        assert len(ledger) < len(expected), "Interrupted receipt must describe a prefix"
+        used_interrupted.add(digest)
+        indices = {(r["scenario"], r["index"]) for r in ledger}
+    else:
+        indices = set(expected)
+    assert not reserved.intersection(indices), (
+        "Overlapping completed or reserved intervals"
+    )
+    reserved.update(indices)
+    if not args.allow_prefix and digest not in interrupted:
         assert len(ledger) == len(expected), (
             "Incomplete ledger cannot support ensemble inference"
         )
@@ -151,6 +175,7 @@ for root, input_protocol in inputs:
         assert record["steps"] == 1000 and record["summary_rows"] == 1001
         if record["scenario"] in keys:
             records[record["scenario"]][record["index"]] = (root, record)
+assert used_interrupted == set(interrupted), "Unused interrupted-ledger receipt"
 paired = sorted(set(records[keys[0]]).intersection(records[keys[1]]))
 if not args.allow_prefix:
     assert paired == list(range(100)), "All 100 pairs required"
@@ -310,6 +335,7 @@ report = {
     "protocol_sha256": hashlib.sha256(args.protocol.read_bytes()).hexdigest(),
     "auditor_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     "ledgers": ledgers,
+    "interrupted_ledger_receipts": interrupted,
     "complete_ensemble": not args.allow_prefix,
     "validated_pairs": len(paired),
     "unpaired_records_not_audited": {

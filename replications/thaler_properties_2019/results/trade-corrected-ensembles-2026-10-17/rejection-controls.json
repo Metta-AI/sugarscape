@@ -1,0 +1,12 @@
+[
+  {
+    "case": "missing-terminal-receipt",
+    "exit_code": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-properties/replications/thaler_properties_2019/audit_paired_observers.py\", line 159, in <module>\n    assert len(ledger) == len(expected), (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Incomplete ledger cannot support ensemble inference\n"
+  },
+  {
+    "case": "duplicate-completed-interval",
+    "exit_code": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-properties/replications/thaler_properties_2019/audit_paired_observers.py\", line 154, in <module>\n    assert not reserved.intersection(indices), (\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Overlapping completed or reserved intervals\n"
+  }
+]

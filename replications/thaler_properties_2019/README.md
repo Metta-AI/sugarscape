@@ -1014,3 +1014,31 @@ interpretation accepts ratios at most 0.05, at least 0.95, or between 0.45 and
 0.55. Neither global predicate establishes cultural dominance on individual
 hills. Spatial interpretation and remaining appendix claims are unresolved;
 this cohort does not complete the paper.
+
+## Complete corrected trade pairs
+
+The [corrected trade ensemble](results/trade-corrected-ensembles-2026-10-17)
+now covers all 100 paired seeds, reusing the validated corrected no-trade controls.
+The original bounded batch completed indices 1–77 before its disk guard stopped it;
+indices 78–99 completed in a disjoint continuation. Index zero was retained.
+Original ledgers and the interrupted container's terminal receipt remain unchanged.
+
+| Measure | Corrected paired change | 95% interval |
+| --- | ---: | ---: |
+| Final population | +13.790 | [12.820, 14.760] |
+| Population mean, steps 801–1000 | +13.820 | [12.868, 14.772] |
+| Final sugar-wealth Gini | +0.03110 | [0.02820, 0.03400] |
+| Final survivor vision | −0.09880 | [−0.11370, −0.08390] |
+| Final sugar metabolism | +0.03847 | [0.03124, 0.04570] |
+| Final spice metabolism | +0.04585 | [0.03812, 0.05359] |
+
+The source-direction checks agree with the qualitative appendix statements.
+These are coordinate/observation-corrected sensitivity results; the unchanged
+source's population change was +14.09. No equality between implementations is
+claimed. The 1,000-step horizon and late window remain explicit study choices,
+not a claim that the paper specified them. No whole-paper credit is added.
+
+The auditor now accepts a completed prefix only with its pinned nonzero-exit
+terminal receipt. It still rejects overlapping inputs, missing terminal evidence,
+and any inference without all 100 completed pairs. End-to-end rejection probes
+exercise the real retained datasets.
