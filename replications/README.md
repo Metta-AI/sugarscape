@@ -71,29 +71,21 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 
 ## Current state
 
-The [evidence index](study-evidence.json) pins thirteen pushed study commits and their README hashes: two completed mixed studies and one positive structural replication.
-Its JSON parsing checks artifact readability only; scientific completion remains claim-specific.
-Pike adds author-code replay and parameterized grouping ensembles, not an additional completed paper.
-The lock-free and property-testing Thaler papers add two study PRs outside that earlier evidence-index snapshot; neither is complete.
-The Need for Greed is an additional source-audited candidate, outside the fifteen study PRs and completed-study count.
-Its exact configuration overlap offers future run reuse only after checking source, runtime and measurements; no duplicate ensemble was launched.
-Its corrective experiments preserve original failures and remain separate from historical replication claims.
-Carrella's independent implementation passes deterministic native comparisons; its full stochastic and estimator validation remain unfinished.
-Stevenson's boundary and discrete-curve diagnostics narrow discrepancies without resolving historical semantics.
-Blueprints has 922 audited homogeneous runs, 684 deposited runtime runs, and six supplementary controls; endpoint reuse does not add independent seeds.
-Its complete 500-seed raw ensemble reproduces the printed 348/5/147 counts using the author’s plotting rule; one equality case differs from the paper’s prose boundary.
-Carrella has 4,381 audited independent inputs; the remaining 619-input export is pending.
-Pike’s full 1,200-run movement grid includes released and corrected selectors, with separate analyses.
-Its 200 threshold-ten common-resource runs all contain nonfinite health; execution completion does not validate their scientific outcomes.
-Thaler's two full population exports agree byte-for-byte; all 50 Figure 5b targets pass the frozen two-agent tolerance.
-Its Figure 5a screenshot does not match the sequential replay; unspecified screenshot provenance prevents a negative verdict.
-A dedicated eight-core node has the 45-condition timing command registered, with a twelve-hour limit; no fresh performance result is claimed.
-The properties study completed all three 100-run historical ensembles across 19,634,480 agent records, with unresolved targets and six undefined trading statistics.
-Its observer matches 199,604 original agent records and 21,702 trades; spatial diagnosis preserves our corrected grid assumption and source indexing/observation issues.
-Nine full paired trajectories isolate indexing and observation changes. Corrected wealth now has 100 audited runs.
-Terracing and disease-clearance each have 100 audited original runs and 100 corrected runs. Disease clearance matches the before-100 claim in all runs, without extinction.
-The remaining property-study outcomes are unfinished; these claim-level results add no completed-study credit.
-Carrella’s regression-forest estimator has three audited folds; its neural-network estimator has two. Aggregate Table 8 scores remain pending.
+The [evidence index](study-evidence.json) now pins fifteen pushed study commits and their README hashes.
+Three studies are complete: two mixed studies and one positive structural replication.
+The remaining twelve are incomplete; audited cohorts and operational launches do not add paper credit.
+Unrefreshed entries remain explicitly dated snapshots of their pinned commits.
+
+- Carrella: all 75 reported Table 8 values evaluated; 38 match printed precision and 37 discrepancies remain unresolved. Both remaining full-size estimators completed. Independent simulation coverage remains 4,381/5,000 inputs.
+- Raimbault: 36,489/55,000 reference inputs audited, with 72,978 exactly reproduced Gini measurements. Generated-grid production remains unstarted.
+- Blueprints: 922 homogeneous inputs and 790/1,200 deposited runtime inputs audited; seven runtime groups complete. The deposited 100-input groups do not establish the paper's separate 500-seed claim.
+- Pike: complete 900-run controlled timing audit. Native timing excludes operations counted by the full-step timer. All 200 threshold-ten common-resource runs still contain nonfinite health values.
+- Thaler lock-free: Figure 5b population targets reproduced; native retry instrumentation audited separately. Fresh timing/scaling and full retry-table replication remain unresolved.
+- Thaler properties: complete culture, corrected trade, corrected disease, and combat cohorts extend the earlier quantitative ensembles. Spatial interpretations, demographics, source/configuration discrepancies, and remaining whole-model requirements prevent completion.
+
+The Need for Greed remains an additional source-audited candidate outside the fifteen study PRs.
+Run overlap never adds independent seeds. Corrected-source sensitivities remain separate from historical reproduction.
+
 
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.

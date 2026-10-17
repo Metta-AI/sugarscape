@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-17",
+  "as_of": "2026-10-17T19:41:34.464406+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -19,34 +19,34 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "e937ecc01414dd259f231470955a1982cf03fd64",
-      "status": "running",
+      "checked_commit": "7c5d3fee4c45109e46c107ac56cd4d425b2f1fac",
+      "status": "partial",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "461731ae7799b80e380270f1a49f0ff4a6700db3d8aa81eb86a6551a5097a1a9",
-      "json_evidence_files": 147,
-      "remaining_scope": "All 5,000 original simulations and 750,000 statistics replayed. Table 8: 65 computed cells, 33 printed matches, 32 differences, 10 pending and 15 published NA. First full-size forest/neural folds independently validated; remaining folds and stochastic/runtime discrepancies unresolved. Independent simulation coverage: 4,381/5,000 inputs; final 619-input export and estimator comparison pending.",
+      "readme_sha256": "40bef2ce3042c134d388ba31f54784537861c71b0ac5072b08d1b7f846c690f9",
+      "json_evidence_files": 166,
+      "remaining_scope": "All 75 reported Table 8 values evaluated: 38 printed matches and 37 unresolved discrepancies; 15 cells are published NA. Both remaining 5000-input estimators completed and independently audited. All5000 author simulations replayed; independent4381/5000 inputs audited, final619 export and comparison pending.",
       "gzip_json_evidence_files": 0
     },
     {
       "study": "raimbault_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
-      "checked_commit": "45f0b712e91ddf8a71646316e0a52120b1be3f71",
+      "checked_commit": "09da428a9ca275613b4d4e68682ffef4f0b0569c",
       "status": "running",
       "readme": "replications/raimbault_2019/README.md",
-      "readme_sha256": "6fb3f852e36fd4478f6a8083eeb5152f96256e84d2b0e24b546ad650f8efc91a",
-      "json_evidence_files": 76,
-      "remaining_scope": "15,033/55,000 reference simulations independently audited with 30,066 exact Gini measurements. Full reference replay remains incomplete; generated-grid production and spatial-sensitivity comparisons remain outstanding.",
+      "readme_sha256": "57d0423a90e3c90df180684c4e7e85b93a82e8b6f8aa8c0137d71f97caeb1658",
+      "json_evidence_files": 82,
+      "remaining_scope": "36489/55000 reference inputs independently audited, with72978 exact Gini measurements. Full reference replay remains incomplete; generated-grid production and spatial-sensitivity comparisons remain outstanding.",
       "gzip_json_evidence_files": 3
     },
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "88c1987df9af30ed74cf4b88b14d874b82e1ff13",
+      "checked_commit": "37fadb553b5cd851a1a50c96c449492247a85582",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "07265f4301ea254ecfdae8fdee375309246dd69b37c1bf00a893127bd5335192",
-      "json_evidence_files": 169,
-      "remaining_scope": "590/2,000 homogeneous inputs and 500/1,200 deposited runtime inputs audited. Six supplementary controls complete; three selfishness endpoints match same-seed homogeneous trajectories byte for byte and are not additional independent seeds. The paper explicitly identifies v2024.1. Remaining homogeneous runs, full sweeps, longer horizons, and deposited 100-seed versus reported 500-seed runtime mismatch remain unresolved.",
+      "readme_sha256": "245ae09c09946b1e3a1ec710fa91fef467d55371ae495891908d2699d4cafcdc",
+      "json_evidence_files": 288,
+      "remaining_scope": "922 audited homogeneous inputs and790/1200 deposited runtime inputs, with seven complete100-input runtime groups. Remaining homogeneous runs, full sweeps, longer horizons, and deposited100-input versus reported500-seed runtime mismatch remain unresolved. Bounded disjoint continuations are operational work, not completed evidence.",
       "gzip_json_evidence_files": 37
     },
     {
@@ -120,12 +120,12 @@
     {
       "study": "pike_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13",
-      "status": "running",
+      "status": "partial",
       "readme": "replications/pike_2019/README.md",
-      "remaining_scope": "Phase I: 300/300, Phase II: 600/600 and movement Phase III: 1,200/1,200 runs audited and analyzed. All 200 threshold-ten common-resource runs audited; all exhibit nonfinite health and remain numerical failures. Threshold-five common-resource ensemble, controlled timing, platform sensitivity and historical-source fidelity remain unfinished. Finite-horizon price comparisons are descriptive, not asymptotic convergence proofs.",
-      "checked_commit": "aeeeb5adba406fcbd6a5a87af6509fc896760d5c",
-      "readme_sha256": "7230ca896b5090f1a093e2b122f9661820f71405b9a0670bd055e068def99f7a",
-      "json_evidence_files": 174,
+      "remaining_scope": "Complete PhaseI/II/movement grids and900-run controlled timing audit. Native versus full-step timer boundaries differ. All200 threshold-ten common-resource runs retain nonfinite health; threshold-five completion, historical source fidelity, and unresolved scientific targets prevent whole-study completion.",
+      "checked_commit": "76eb558228cc36db31d18429c078cfe7bc5ed628",
+      "readme_sha256": "b437ef014c9c4c86762800d88abde892d798136566c59a037d9894d0ac272a1f",
+      "json_evidence_files": 179,
       "gzip_json_evidence_files": 129
     },
     {
@@ -161,6 +161,28 @@
       },
       "json_evidence_files": 40,
       "gzip_json_evidence_files": 0
+    },
+    {
+      "study": "thaler_2019",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
+      "checked_commit": "44de0a00c1b07d05493f29a8a5fc44e41bb4340c",
+      "status": "partial",
+      "readme": "replications/thaler_2019/README.md",
+      "readme_sha256": "24052322f0611ba86ce76c33acfcb1af59b46488db9dfc6878cd3bbd06a4e358",
+      "json_evidence_files": 43,
+      "gzip_json_evidence_files": 0,
+      "remaining_scope": "Figure5b population reproduced; source/native builds, archived analysis, and separately instrumented transaction counters verified. Fresh timing/scaling ensembles, Figure5a provenance, and full retry tables remain unresolved. Native timing command exited128; no fresh hardware-performance verdict."
+    },
+    {
+      "study": "thaler_properties_2019",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/17",
+      "checked_commit": "45914552a845685c1da7349b668457095e127ea4",
+      "status": "partial",
+      "readme": "replications/thaler_properties_2019/README.md",
+      "readme_sha256": "7c9f9e3504aa0c94dfb08f0b6e0335e8fc1ee1c74c74d1283d245f6c9c3739bc",
+      "json_evidence_files": 2417,
+      "gzip_json_evidence_files": 0,
+      "remaining_scope": "Full original/corrected wealth, carrying, price, terracing, clearance, persistence, spice and culture cohorts audited;400 combat trajectories and100 corrected trade pairs audited. Generator correction restores25-entry/max-length10 pools: both100-seed variants clear infection, unlike released10-entry/max-length25 behavior. Mating/inheritance completion, spatial culture/migration/pollution interpretation, source/configuration discrepancies and whole model-suite scope remain unresolved."
     }
   ],
   "study_prs": 13,
