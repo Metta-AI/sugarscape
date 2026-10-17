@@ -1,6 +1,6 @@
 # Thaler and Siebers (2019): parallel Sugarscape
 
-Status: **partial, archived-analysis reproduction only**. No completion credit.
+Status: **partial: Figure 5b reproduced, archived analysis and native execution verified**. No full-paper completion credit.
 
 Paper: [A tale of lock-free agents](https://doi.org/10.1186/s40294-019-0067-9),
 Complex Adaptive Systems Modeling 7, 5, published December 26, 2019.
@@ -24,7 +24,8 @@ The scaling experiment replaces dead agents and varies initial population from
 
 Required fresh experiments remain:
 
-- Full population trajectory and independent state/measurement checks.
+- Figure 5a agent/environment state checks and concurrent population comparisons.
+  Figure 5b sequential population replay now passes, as documented below.
 - Sequential reference plus Lock-Based, TVar and TArray timing across 1–8 capabilities.
 - Four implementations across all five rebirthing populations, with four capabilities for concurrent variants.
 - TVar/TArray retry ratios across 1–8 capabilities, measured separately from timings.
@@ -67,8 +68,8 @@ no alternative tolerance or negative paper verdict is assigned. Table 9 parenthe
 which cannot be reconstructed from these timing samples and remain unvalidated.
 
 These are author archival measurements, not fresh simulation runs, independent
-engine validation, or a hardware performance replication. The active Linux build
-only verifies the original toolchain and executable availability.
+engine validation, or a hardware performance replication. The separate native
+execution proof below verifies full original-model runs, without a timing verdict.
 
 From this checkout, with Python 3.11, NumPy 1.26.4 and Poppler `pdftotext` installed:
 
@@ -100,7 +101,7 @@ antialiasing and axis calibration uncertainty. It was fixed before any fresh nat
 population output. These targets are digitized measurements, not author raw data.
 The caption does not specify a seed; the released population exporter uses seed 42.
 A mismatch requires checking revision, seed, time indexing and model semantics.
-No population replication result is available yet.
+The fresh Figure 5b result below now passes this unchanged protocol.
 
 Recreate the target with Python, PyMuPDF 1.26.5 and NumPy 1.26.4:
 
@@ -128,3 +129,69 @@ population exporter counts those observables. Its times 0–999 label post-step 
 using the pre-increment clock. Do not prepend an initial-state row or shift times when
 comparing the first 50 rows with Figure 5. These source findings establish measurement
 semantics, not a fresh simulation result or a negative replication verdict.
+
+## Native execution proof
+
+All four unmodified timing-revision implementations built with GHC 8.4.3 and
+completed one full 1,000-step, 500-agent, seed-42 execution. Concurrent variants used
+one Haskell capability; the sequential executable is not threaded.
+[Retained evidence](results/native-workflow-2026-10-17/provenance.json) includes all
+four zero exit statuses, commands, binary hashes, compiler versions and output logs.
+All 61 model/build source hashes were checked again after execution.
+
+Execution used emulated amd64 Linux on an ARM Mac with other experiments running.
+Elapsed times are diagnostic records, not performance replication evidence.
+Concurrent population comparisons, scaling and retry measurements remain outstanding.
+
+The build used Ubuntu 22.04, Stack 2.3.3, GCC, make, libgmp-dev, libtinfo5 and
+freeglut3-dev. Use an isolated Stack root with the retained
+[global configuration](results/native-workflow-2026-10-17/stack-global-config.yaml).
+It updates retired download/cache locations and root signing keys without changing
+the pinned compiler or packages. Three-signature verification and expiry checks remain enabled.
+
+From Linux with the timing revision checked out and Python 3.10 or later:
+
+```bash
+python replications/thaler_2019/run_native.py \
+  /path/to/haskell-stm-sugarscape \
+  replications/thaler_2019/results/archived/revision-fidelity.json \
+  /path/to/new-native-output
+```
+
+The command checks source hashes, builds each executable, verifies its exact benchmark
+name and compiler, and records each full execution. Its total budget is 1,800 seconds;
+each simulation has a 600-second limit. Provision the historical compiler and dependencies
+first on slow machines. A successful run proves execution, not the full paper's claims.
+
+## Fresh Figure 5b replication
+
+Two full native 1,000-step exports from population revision
+`2bf138a8b5f1d020f09781932e110091802f6dcc` are byte-identical.
+All 50 Figure 5b points pass the predeclared two-agent tolerance; the maximum
+absolute difference from the raster target is 0.655956 agents. No seed, time shift,
+model rule or tolerance changed after viewing the native output.
+Population is 500 at output time 0, 206 at time 49, and 192 at time 999.
+The paper only plots the first 50 points; later points are additional native output.
+
+The [independent audit](results/population-replay-2026-10-17/independent-audit.json)
+rechecks both raw CSVs, all timestamps, all 50 errors, and all 27 source files.
+[The overlay](results/population-replay-2026-10-17/population-comparison.png) was visually
+inspected against the extracted published curve. The complete trajectories, binary
+hash, compiler, commands' output logs and fixed target protocol are retained.
+This reproduces Figure 5b only; it does not establish Figure 5a state agreement,
+concurrent dynamics, performance, scaling or retry claims.
+
+Use a separate checkout of the population revision and the same Linux toolchain.
+Copy `source-manifest.json` from `results/population-replay-2026-10-17/` into that
+checkout's root. Copy `population-target.csv` and `target-protocol.json` from
+`results/population-target/` there too. Then run:
+
+```bash
+python replications/thaler_2019/run_population.py \
+  /path/to/population-checkout /path/to/new-population-output
+```
+
+The runner checks source hashes before building, requires GHC 8.4.3, checks both
+1,000-row exports and their byte identity, and reports the frozen Figure 5 comparison.
+It requires a new output directory and preserves a failed comparison rather than
+changing the tolerance. Allow 1,800 seconds total after dependencies are installed.

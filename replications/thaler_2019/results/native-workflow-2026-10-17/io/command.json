@@ -1,0 +1,17 @@
+{
+  "variant": "io",
+  "benchmark": "sugarscape-io-normal:1/500",
+  "command": [
+    "/root/sugarscape/thaler-build-001/source/criterion/sugarscape-io/.stack-work/install/x86_64-linux-tinfo6/e2bc1dd9db2af146999a044500ac583ca461a99d9ab5180dac2e1426369f76ee/8.4.3/bin/sugarscape-io",
+    "--iters",
+    "1",
+    "--match",
+    "prefix",
+    "sugarscape-io-normal:1/500",
+    "+RTS",
+    "-N1",
+    "-RTS"
+  ],
+  "binary_sha256": "253063ffc35ac3c08f33b6559778cababbd97e49dc49f809c0e767ed4fb4e8ba",
+  "compiler": "8.4.3"
+}
