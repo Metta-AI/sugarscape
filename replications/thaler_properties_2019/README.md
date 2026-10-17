@@ -966,3 +966,28 @@ one per source variant, with two CPU cores total and two-hour worker limits.
 The original scenario, 2,700-step horizon, 50-step observation stride, seeds, source,
 and executable hashes are unchanged. Final reconciliation must combine the disjoint
 33-input local prefixes with all 67 native inputs before reporting a full cohort.
+
+## Complete combat reward-correction ensembles
+
+[All 400 native trajectories](results/combat-ensembles-2026-10-17)
+pass source, initial-state, event-ledger, reward, and per-step population-accounting
+checks, covering 5,373,548 agent observations. Each scenario has 100 matched seed
+pairs. The retained first seeds count once. Both workers exited successfully;
+compressed archive readback reproduces the entire audit JSON exactly.
+
+| Scenario | Metric at 1,000 steps | Released source mean | Reward-corrected mean | Paired change, 95% interval |
+| --- | --- | ---: | ---: | --- |
+| Combat without rebirth | Population | 186.70 | 179.59 | −7.11 [−9.068, −5.152] |
+| Combat without rebirth | Combat kills | 18.82 | 27.41 | +8.59 [6.441, 10.739] |
+| Combat with rebirth | Population | 5.12 | 7.69 | +2.57 [1.098, 4.042] |
+| Combat with rebirth | Combat kills | 394.88 | 392.31 | −2.57 [−4.042, −1.098] |
+
+The correction credits the combat reward already calculated by the released code.
+Other known source defects remain unchanged. These paired sensitivity estimates show
+that the omission affects population dynamics; they do not independently establish
+which implementation matches every book rule.
+
+In the rebirth scenario, 12/100 runs in each variant reach one agent by step 1,000.
+Neither variant does so without rebirth. These finite-horizon observations do not prove
+an eventual outcome, hill invasion, or battlefront behavior. Spatial analysis and the
+remaining appendix categories still prevent whole-paper completion credit.
