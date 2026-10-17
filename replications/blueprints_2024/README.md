@@ -2,6 +2,12 @@
 
 **Incomplete replication. Original configurations recovered; historical release equivalence remains under investigation.**
 
+Latest audited checkpoint: **590 / 2,000 homogeneous configurations**, covering 1,134,134 observations.
+Original-seed prefixes are raw 345, altruistic 113, egoistic 102, and utilitarian 30.
+[Checkpoint evidence](results/source-checkpoint-2026-10-17) adds 61 completed runs; two agreeing pilot duplicates remain excluded.
+The four active batches pass source, configuration, seed, trajectory-hash, and terminal-state checks.
+Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
+
 [Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)
 (DOI 10.1109/ACCESS.2024.3519139). [Numeric targets](published_targets.json) were visually checked against PDF pages 12 and 15.
 
