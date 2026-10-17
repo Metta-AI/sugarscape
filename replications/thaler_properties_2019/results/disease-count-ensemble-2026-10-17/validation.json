@@ -1,0 +1,21 @@
+{
+  "validated_runs": 100,
+  "snapshot_agent_observations": 447362,
+  "full_readback": "Complete merged audit JSON identical after extracting and decompressing all 99 remaining inputs; retained first files rechecked against pinned published audit.",
+  "archive_sha256": "2293f0dd467266623fd5604e42f7cbc2a66a5d9684dbe1dbc510d13715558f83",
+  "archive_bytes": 5909236,
+  "distinct_disease_counts": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "first_clearance_range": [
+    19,
+    69
+  ],
+  "scope": "Corrected 25-entry disease pools, not necessarily 25 distinct diseases. Prefixes emit no inference; no full-paper verdict."
+}

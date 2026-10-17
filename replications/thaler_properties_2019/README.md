@@ -805,7 +805,7 @@ diseases. These are partial results, not a full-cohort negative replication.
 
 Frozen compressed-data readback reproduces the complete merged audit exactly.
 Full mode rejects the actual incomplete cohort before creating an output directory.
-Its successful 100-input path remains unverified until the real remaining runs finish;
+The subsequent complete 100-input audit below validates the successful full path;
 prefix mode never emits confidence intervals. The combined-correction cohort remains
 separate, and no first seed or no-trade control is rerun.
 
@@ -867,3 +867,23 @@ readback reproduces the full audit exactly; incomplete full mode rejects before 
 The replacement 99-input batch uses the same frozen seeds and resource limits,
 retaining its new isolated first seed. Prefixes emit no inference. The full successful
 100-input path remains pending, and historical source identity remains unverified.
+
+## Complete disease-count correction ensemble
+
+[All 100 count-corrected inputs](results/disease-count-ensemble-2026-10-17)
+pass the native trajectory and retained-seed reconciliation audits, covering 447,362
+agent observations. Every trajectory ends with surviving agents and zero infection
+at step 1,000. Both infected-majority predicates pass 0/100; the exact 95% binomial
+interval is [0, 0.036217].
+
+This corrects the swapped disease-count and maximum-length fields only. Coordinate
+aliasing and pre-event observations remain unchanged in this variant. Pools contain
+25 generated entries, with distinct counts recorded separately in the audit.
+The released-source cohort passed the infected-majority predicate in 81/100 runs;
+its ten-entry pools with maximum length 25 implement different settings.
+
+The complete audit JSON is identical after extracting and decompressing the frozen
+99-input archive and rechecking the retained first input. This verifies the full
+reconciliation path without rerunning simulations. The combined-correction ensemble
+is still running. Neither this sensitivity result nor its confidence interval
+establishes whole-paper replication or independently validates the disease model.
