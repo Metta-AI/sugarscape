@@ -53,7 +53,7 @@ comparison <- data.frame(parameter=parameters,rmse=colMeans(errors),baseline_rms
 report <- list(held_out_rows=5000,predictions_audited=25000,folds=5,comparison=comparison,
   maximum_prediction_difference_from_isolated_run=max_prediction_difference,
   rng_state_unchanged_since_lm=identical(x$random_state,readRDS(predecessor_path)$random_state),
-  scope="Sequential original notebook quantile random forest checkpoint; parser and random-stream order remain confounded against the isolated run. Independent arithmetic uses saved predictions and reconstructed original folds.")
+  scope="Saved quantile random forest checkpoint; independent arithmetic uses saved predictions and reconstructed original folds. Attribution requires separate data and random-state controls.")
 writeLines(jsonlite::toJSON(report,auto_unbox=TRUE,pretty=TRUE,digits=17),file.path(output,"audit.json"))
 print(report)
 

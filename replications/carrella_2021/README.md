@@ -624,9 +624,9 @@ Only maximum sugar endowment matches the paper’s printed three-decimal precisi
 
 This comparison varies both CSV parsing and the preceding random stream. A new bounded control restores the exact sequential pre-forest random state but replaces only `total_data` with base-R parsed inputs. Before fitting, it verifies exact equality with every saved isolated training/test fold. The original forest chunk and six-hour cap remain unchanged. This isolates parser effects against the completed sequential run; no negative-replication claim is assigned while the discrepancy remains unresolved.
 
-The parser control’s [setup receipt](results/notebook-rf-parser-control-launch-2026-10-17/restoration.json) confirms all five folds exactly match the isolated inputs and the sequential random state is restored. The only numerical input difference from the notebook parse is at most 1.3878e-17 over 755,000 cells. The fit remains running; source and preconditions are retained.
+The parser control’s [setup receipt](results/notebook-rf-parser-control-launch-2026-10-17/restoration.json) confirms all five folds exactly match the isolated inputs and the sequential random state is restored. The only numerical input difference from the notebook parse is at most 1.3878e-17 over 755,000 cells. The completed fit is audited below; source and preconditions are retained.
 
-The portable audit reproduces the published audit JSON and 25,000-row prediction CSV byte-for-byte:
+The portable audit reconstructs the same arithmetic and 25,000-row prediction CSV. Its scope text now covers either parser:
 
 ```sh
 Rscript replications/carrella_2021/audit_notebook_rf.R \
@@ -637,3 +637,23 @@ Rscript replications/carrella_2021/audit_notebook_rf.R \
 ```
 
 The linear checkpoint is the preserved predecessor named and hashed in the continuation manifest. No estimator is refitted by this audit.
+
+## Completed controlled parser comparison
+
+The [parser-control audit](results/notebook-rf-parser-control-completed-2026-10-17/audit.json) validates all 25,000 predictions after a successful 1,777.9-second fit.
+It uses the sequential pre-forest random state and the isolated run’s exact parsed inputs.
+
+| Parameter | Parser control | Published Table 8 |
+|---|---:|---:|
+| Initial population | 0.475589 | 0.475 |
+| Mutation probability | 0.534246 | 0.536 |
+| Maximum sugar endowment | 0.446266 | 0.446 |
+| Maximum spice endowment | 0.463117 | 0.463 |
+| Reproduction wealth | 0.788780 | 0.790 |
+
+The [controlled comparison](results/notebook-rf-parser-control-completed-2026-10-17/parser-comparison.json) finds changes in 16 input columns, each no larger than 1.39e-17.
+These changes produce individual population predictions differing by up to 36 and different final random states.
+The two fits began with the same random state, source, runtime, and fold partition.
+Thus tiny parsing changes affect this forest execution; input agreement within 1e-10 does not establish identical fitting behavior.
+Two control scores match printed precision, versus one sequential score. This diagnostic does not replace the declared primary protocol or increase replicated-target counts.
+The paper remains incomplete, with no negative verdict assigned from these differences.
