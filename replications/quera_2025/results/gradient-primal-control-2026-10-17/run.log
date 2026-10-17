@@ -1,0 +1,8 @@
+DISCRETE_STATES_EQUAL_SEED=0
+DISCRETE_STATES_EQUAL_SEED=1
+DISCRETE_STATES_EQUAL_SEED=2
+┌ Warning: Package cuDNN not found in current path.
+│ - Run `import Pkg; Pkg.add("cuDNN")` to install the cuDNN package, then restart julia.
+│ - If cuDNN is not installed, some Flux functionalities will not be available when running on the GPU.
+└ @ FluxCUDAExt ~/Code/workspace/sugarscape-replication-tools/julia-depot-1.11.3-001/packages/Flux/3711C/ext/FluxCUDAExt/FluxCUDAExt.jl:10
+COMPLETE

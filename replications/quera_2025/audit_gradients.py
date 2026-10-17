@@ -11,8 +11,10 @@ import sys
 root = Path(sys.argv[1])
 output = Path(sys.argv[2])
 protocol = json.loads((root / "protocol.json").read_text())
-assert protocol["seeds"] == [0, 1, 2]
-assert protocol["finite_difference_steps"] == [0.001, 0.01]
+assert (protocol["seeds"], protocol["finite_difference_steps"]) in (
+    ([0, 1, 2], [0.001, 0.01]),
+    (list(range(3, 259)), [0.001, 0.01, 0.05]),
+)
 assert json.loads((root / "exit.json").read_text())["exit_code"] == 0
 all_rows = []
 source_hashes = {}
@@ -24,7 +26,7 @@ for seed in protocol["seeds"]:
             {key: float(value) for key, value in row.items()}
             for row in csv.DictReader(stream)
         ]
-    assert len(rows) == 300
+    assert len(rows) == 150 * len(protocol["finite_difference_steps"])
     assert [
         (row["seed"], row["step"], row["parameter"], row["time"]) for row in rows
     ] == [
@@ -87,7 +89,7 @@ output.mkdir(exist_ok=False)
             "rows": len(all_rows),
             "source_sha256": source_hashes,
             "summary": summary,
-            "scope": "Native full-trajectory AD/FD diagnostic. Common-random-number finite differences are independently recomputed. Three seeds do not validate expectation-gradient convergence or reproduce Figure 11.",
+            "scope": "Native full-trajectory AD/FD diagnostic. Common-random-number finite differences are independently recomputed. These trajectory audits alone do not validate expectation-gradient convergence or reproduce Figure 11.",
         },
         indent=2,
     )

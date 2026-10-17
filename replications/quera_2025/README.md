@@ -53,4 +53,33 @@ The independent `audit_gradients.py RUN NEW_OUTPUT` validates all 900 records an
 
 The first runner attempt failed because separate anonymous functions supplied incompatible ForwardDiff tags. Its source and failure receipt are retained. Using the same function object corrected the runner without changing the simulation or analysis protocol.
 
-A separately declared 256-seed ensemble (seeds 3–258) evaluates steps 0.001, 0.01, and 0.05. It will report paired uncertainty and step sensitivity before any interpretation of gradient disagreement. Exact published normalization, seed counts, step sizes, and historical source remain unresolved.
+The separately declared 256-seed ensemble (seeds 3–258) completed all three steps (0.001, 0.01, 0.05). Its 115,200 records pass the independent audit. Exact published normalization, seed counts, step sizes, and historical source remain unresolved.
+
+## Expectation-gradient diagnostic ensemble
+
+`results/gradient-ensemble-2026-10-17` preserves all 256 per-seed aggregate trajectories, source, protocol, hashes, exit receipt, independent audit, pointwise intervals, and plot. Execution took 125.2 seconds on one local Julia thread. `analyze_gradients.py RUN AUDIT_JSON NEW_OUTPUT` computes paired differences across seeds, Student-t 95% intervals, and separate means for each 128-seed half. These intervals are pointwise and do not establish simultaneous coverage or a whole-paper verdict.
+
+At transition 24, step 0.01 gives:
+
+| Parameter | Mean AD | Mean FD | Paired AD−FD 95% interval |
+|---|---:|---:|---|
+| p1 | -1.09945 | -8.66722 | [6.12128, 9.01426] |
+| p3 | 0.27486 | 2.32484 | [-2.73826, -1.36170] |
+| m_alpha | -6.99431 | -7.03762 | [-0.03640, 0.12302] |
+| m_beta | 1.35341 | 1.36251 | [-0.05021, 0.03200] |
+| w_alpha | 0.64803 | 0.68633 | [-0.08695, 0.01034] |
+| w_beta | -0.97236 | -1.00543 | [-0.01652, 0.08265] |
+
+Vision discrepancies persist at step 0.05. The p1 FD means in the two halves are -9.29055 and -9.11920 at that step, versus -6.51086 and -9.84205 at step 0.001. The smallest step has greater uncertainty. Continuous-parameter differences are smaller; several pointwise intervals exclude zero at step 0.05, so this is not evidence of exact equality or unbiased AD.
+
+![All reconstructed gradient estimates and pointwise intervals](results/gradient-ensemble-2026-10-17/gradients.png)
+
+This broadly agrees with the paper’s qualitative distinction between continuous and categorical gradient quality. It does not quantitatively reproduce Figure 11: historical wealth scaling, observable normalization, and exact experiment settings remain unresolved. No new completed-paper credit is assigned.
+
+To reproduce the retained analysis, verify `sha256.json`, extract `trajectories.tar.gz` into a new directory, and copy `protocol.json` and `exit.json` there. Run `audit_gradients.py`, then `analyze_gradients.py` with that audit. Plot using `plot_gradients.py COMPARISON_JSON OUTPUT_PNG`. Analysis uses SciPy; plotting uses Matplotlib.
+
+## Ordinary-versus-differentiated trajectory control
+
+A strict equality check on aggregate mean wealth failed by at most 2.14e-14 across three seeds. The failure and original runner are retained. A full-state follow-up found **405,000 exactly identical values** across all six histories: resources, x/y positions, individual wealth, survival, and occupancy. Thus the observed aggregate discrepancy arises during reduction, not from changed state trajectories in these three seeds. All 450 derivatives also match the earlier pilot exactly.
+
+`results/gradient-primal-control-2026-10-17` contains both complete histories and receipts. Extract `full-states.tar.gz` and run `julia --startup-file=no replications/quera_2025/verify_primal_states.jl EXTRACTED_DIRECTORY`. This verifier uses only Julia’s Serialization standard library, independently reloads both histories, and requires exact equality. It does not infer state equality for the separate 256-seed ensemble.
