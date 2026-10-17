@@ -359,3 +359,52 @@ These observations substantiate the captured eight-core allocation. They do not
 prove exclusive use of shared host resources or fixed clock frequencies.
 The original laptop used four cores/eight threads, so capability scaling still
 compares different hardware topologies. No same-hardware performance claim follows.
+
+### Complete native Table 6 comparison
+
+[All 25 conditions](results/native-table6-2026-10-17/comparison.json) now have
+independently audited native results: 100 raw Criterion measurements, all first
+attempts passing the frozen R-squared threshold. The sealed checkpoint's SHA-256 is
+`abe70597f24a56d46d756930e27e73d0fe4cadde2906a4e9a5f0a7c0e440900a`.
+The independent slope reconstruction differs by at most 1.43e-14 seconds.
+
+| Capabilities | IO seconds | TVar seconds | TArray seconds |
+| --- | --- | --- | --- |
+| 1 | 12.5528 | 12.9017 | 19.1334 |
+| 2 | 9.4504 | 10.2913 | 10.2671 |
+| 3 | 7.9804 | 9.3582 | 7.6942 |
+| 4 | 7.0376 | 8.5640 | 6.6783 |
+| 5 | 6.7951 | 8.3352 | 6.3319 |
+| 6 | 6.6431 | 8.3051 | 6.0826 |
+| 7 | 6.4741 | 8.3541 | 5.5347 |
+| 8 | 6.6730 | 8.4662 | 5.8688 |
+
+The sequential baseline is 13.9448 seconds. Within each capability count, 26 of 27
+pairwise point-estimate rankings agree with the paper. The exception is TArray versus
+TVar at two capabilities: 10.2671 versus 10.2913 seconds, with overlapping reported
+intervals. This descriptive ranking count is not a statistical replication criterion.
+
+From one to eight capabilities, IO improves from 12.5528 to 6.6730 seconds and TVar
+from 12.9017 to 8.4662. The paper instead reports IO rising from 21.0 to 31.2 seconds
+and TVar from 21.1 to 49.0. TArray improves in both settings. The native fastest
+TArray point is seven capabilities, versus four in the paper. Hardware topology
+and scheduling differ; these measurements do not establish an implementation bug
+or a same-hardware negative replication.
+
+The comparison retains Criterion's original slope confidence bounds. TVar at eight
+capabilities has a null lower bound in its native HTML report; it remains explicitly
+undefined. The initial comparison failed on this actual null value; the revised
+reader preserves undefined bounds and excludes affected pairs from overlap judgments.
+No run was removed or repeated because of this missing bound. The predeclared fit
+rule concerns R-squared, not completeness of bootstrap intervals.
+
+Four increasing iteration-count samples are not four independent experiment repeats.
+The bootstrap confidence bounds have not been independently reconstructed; interval
+overlap is descriptive and speedup ratios have no derived uncertainty intervals.
+Twenty Table 8 conditions, Table 9, retry scaling, and concurrent dynamics remain
+separate requirements. This Table 6 result does not complete the paper.
+
+```sh
+python replications/thaler_2019/timing/audit_native.py EXTRACTED_CHECKPOINT NEW_AUDIT_DIRECTORY
+python replications/thaler_2019/timing/compare_table6.py EXTRACTED_CHECKPOINT NEW_AUDIT_DIRECTORY NEW_COMPARISON.json
+```
