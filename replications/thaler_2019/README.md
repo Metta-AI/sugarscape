@@ -195,3 +195,36 @@ The runner checks source hashes before building, requires GHC 8.4.3, checks both
 1,000-row exports and their byte identity, and reports the frozen Figure 5 comparison.
 It requires a new output directory and preserves a failed comparison rather than
 changing the tolerance. Allow 1,800 seconds total after dependencies are installed.
+
+## Figure 5a state comparison remains unresolved
+
+The [frozen image protocol](results/state-comparison-2026-10-17/protocol.json)
+extracts 201 occupied cells from Figure 5a. The grid and color thresholds were fixed
+before native position export; five pixel-count thresholds identify the same cells.
+The extraction overlay was visually inspected.
+
+An observational entry-point patch exports existing states at output times 49 and 50.
+All other 26 archived files remain byte-identical, and the full 1,000-step population
+CSV exactly matches the unmodified exporter. Both states contain 206 distinct agents;
+all 2,500 cell coordinates and resource bounds pass, and occupier IDs match agents exactly.
+
+The [comparison](results/state-comparison-2026-10-17/audit.json) does not match the image:
+67 occupied coordinates agree at time 49 and 57 at the primary time 50.
+The published caption does not specify the screenshot's implementation or seed.
+This is an unresolved screenshot comparison, not a negative paper verdict.
+Figure 5b's successful population comparison is unchanged.
+
+Reproduce the observer by applying the retained `observer.patch` to `Main.hs` in a
+separate population-revision checkout. Build and run that checkout's sequential exporter
+using the same GHC 8.4.3 toolchain. The patch only writes existing simulation outputs;
+it does not change initialization, update rules, step count or scheduling.
+Then audit its output, using PyMuPDF 1.26.5 and NumPy 1.26.4:
+
+```bash
+python replications/thaler_2019/audit_state.py \
+  /path/to/s40294-019-0067-9.pdf \
+  /path/to/observer-checkout/criterion/sugarscape-seq /path/to/new-state-audit
+```
+
+The committed directory also contains all raw CSVs, allowing the audit to run directly
+against `replications/thaler_2019/results/state-comparison-2026-10-17`.

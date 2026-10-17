@@ -1,0 +1,26 @@
+{
+  "figure": "5a",
+  "image_source": "thaler-population-target-001/figure5.png",
+  "image_sha256": "2dc9ba2a6256e2b206f91b7e76fef7c70cac7d53b6cd64a06c47133f87395051",
+  "geometry": {
+    "pixel_x_origin": 6,
+    "pixel_top_y_origin": 6,
+    "pitch_pixels": 15.2,
+    "x_cells": 50,
+    "y_cells": 50,
+    "image_y_inverted": true
+  },
+  "blue_mask": "B>0.6,R<0.4,G<0.4 on normalized RGB; crop first760rows/780columns",
+  "occupancy_threshold_blue_pixels": 60,
+  "count": 201,
+  "threshold_sensitivity": "Identical201 occupied cells at thresholds25,50,60,80,100. Empty-cell spillover<=8; occupied>=124.",
+  "primary_comparison_time": 50,
+  "diagnostic_comparison_time": 49,
+  "acceptance": "Exact occupied-coordinate set equality; do not shift or fit after native state output.",
+  "limitations": [
+    "Caption does not identify implementation or seed.",
+    "Raster IDs are not transcribed, so occupancy agreement alone cannot establish ID-level match.",
+    "Published image occupancy201 differs from already reproduced population curve206 near t50; could reflect different run/implementation or image extraction error."
+  ],
+  "status": "Frozen before native position export."
+}
