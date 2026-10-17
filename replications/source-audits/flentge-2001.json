@@ -60,6 +60,54 @@
     "Original Delphi4 source and executable not recovered",
     "Exact landscape matrix and random seeds",
     "Validate thesis table correspondence to journal figures before treating values as paper targets",
-    "Scheduling, movement ties, sanctions and newborn updates require implementation-level fidelity checks"
-  ]
+    "Exact scheduling and newborn updates require code confirmation; thesis Figure9 partially constrains scheduling, while zero-wealth death needs journal/thesis resolution."
+  ],
+  "implementation_followup_2026_10_17": {
+    "status": "Thesis specification evidence only; no executable recovery or replication result.",
+    "thesis_date": "1999-11-08",
+    "inspected_pdf_pages": [
+      36,
+      53,
+      54
+    ],
+    "observations": [
+      {
+        "page": 36,
+        "finding": "Movement scans four cardinal directions in randomized order after maximizing available sugar and minimizing distance. The text removes agents when wealth falls below zero."
+      },
+      {
+        "page": 53,
+        "finding": "Figure9 shuffles the agent list, captures its length, and iterates agents before growback. Death removes the current entry and decrements the captured count; survivors advance the index."
+      },
+      {
+        "page": 54,
+        "finding": "Table7 places culture transfer after movement. K+ makes the poorer agent adopt; equal wealth favors the moving agent. Sanction subtracts penalty from the violator and cost from the sanctioner."
+      }
+    ],
+    "limits": [
+      "Figure9 explicitly shows only principal operations; newborn insertion and eligibility are not established.",
+      "The 1999 thesis predates the 2001 journal; exact implementation equivalence is unverified.",
+      "Journal paragraph4.5 does not disambiguate the zero-wealth boundary as precisely as the thesis. Preserve this as a fidelity question."
+    ],
+    "renders_sha256": {
+      "page-036.png": "444ea0679b33201e5efc0351ba0678bbec92d40785fb07715c9806f5dc10608b",
+      "page-053.png": "38360e1cd5d959ae4a17af0dd1e7955df18d592ee5a76ccc77511e53e337e96b",
+      "page-054.png": "9e69f4b4366627615ae9c79810d29df49f4e714312aff3a9b6723bd33a531928"
+    },
+    "github_searches": [
+      {
+        "command": "gh search code \"norm-sim\" sugarscape",
+        "results": 0
+      },
+      {
+        "command": "gh search repos sugarscape language:Pascal",
+        "results": 0
+      },
+      {
+        "command": "gh search repos possession norms sugarscape",
+        "results": 0
+      }
+    ],
+    "search_limit": "Empty search results do not establish absence of a surviving implementation."
+  }
 }
