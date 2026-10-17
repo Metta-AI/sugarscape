@@ -453,3 +453,17 @@ The remaining 138 conditions have not been launched as a cloud continuation.
 Cloud and local results cannot be treated as interchangeable merely because their final survivor counts match.
 These duplicate seed-one controls add no grid coverage and no paper-level negative verdict.
 The complete cloud archive, original local hashes, comparison reports, and launch script are retained.
+
+## Complete Phase II raw-record audit
+
+[The complete Phase II grid](results/phase2-complete-2026-10-17/validation.json) now passes a fresh audit of all 600 conditions.
+Six disjoint segments cover every declared ordinal exactly once, with identical frozen manifests.
+The audit checks 32,046,508 individual health records and reconstructs 600,000 price-step measurements.
+The final cloud export contributes 117 conditions; the earlier 483 are reread, without duplicate counting.
+
+The reconciliation retains each run’s final individual population, undefined price statistics, and early/late transaction summaries.
+The compressed audit/measurement archive was read back and compared byte-for-byte with every local source file.
+Raw outputs remain at the local and cloud paths recorded in the receipts; they are not all included in Git.
+
+The declared survivor intervals, paired comparisons, price-distribution analysis, and comparison with Phase I remain pending.
+A complete raw audit does not establish the paper’s grouping-equivalence claim or complete its other phases.
