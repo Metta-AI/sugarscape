@@ -628,3 +628,21 @@ conclusion follows from that pair.
 The extended auditor reproduces all 100 historical results exactly in original mode.
 The archived original-only auditor is also retained beside its protocol, preserving
 its original hash. No completed-paper credit follows from this partial appendix result.
+
+## Migration and pollution spatial diagnostics
+
+[Three complete 1,000-step diagnostic trajectories](results/spatial-diagnostics-2026-10-17)
+cover original migration, migration with vision range 1–15, and original pollution.
+They contain 303 spatial snapshots, 49,526 agent observations, and 772,953 cell
+observations. Every snapshot reconciles with the corresponding summary.
+
+Two additional native controls prove that denser cell exports preserve the original
+agent records, summaries, trades, resolved parameters, and endpoint cells exactly.
+All 60 historical model files remain unchanged. The published compressed exports
+reproduce the audit exactly. The [migration figure](results/spatial-diagnostics-2026-10-17/migration.png)
+separates occupancy from pre-event agent observations; the
+[pollution figure](results/spatial-diagnostics-2026-10-17/pollution.png) uses a common scale.
+
+These first-seed diagnostics do not establish the appendix's qualitative claims.
+Coordinate aliasing remains present. Weaver implementation fidelity, corrected-source
+sensitivity, and explicit qualitative comparisons remain outstanding.
