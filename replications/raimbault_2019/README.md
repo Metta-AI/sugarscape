@@ -476,3 +476,22 @@ The complete 3,007,632-byte archive is retained in this PR. Its SHA-256 is
 Every published member matches the audited evidence. The native queue continues;
 7,867 reference inputs remain. The generated-landscape ensemble is still incomplete,
 so this checkpoint does not complete the study.
+
+### Seventh remote reference checkpoint
+
+[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-008-independent-validation.json)
+now covers 48,833 distinct reference inputs and 97,666 exact Gini comparisons.
+The sealed remote archive contains 411 completed chunks with 40,900 inputs;
+the retained local baseline contributes 7,933 different inputs.
+All 53 source/dependency files verify. All 2,760 files from checkpoint seven
+remain byte-identical; contained checkpoints never add independent observations.
+
+The 3,137,403-byte archive was downloaded and SHA-256 verified before the active
+24-hour batch deadline. Its hash is
+`bf6d5400be7ad2b9578af2f67fff79f3ac49bae5513d778014fe29de299c06a5`.
+The full reference grid still lacks 6,167 validated inputs. Generated-landscape
+and spatial-sensitivity results remain outstanding, so this does not complete the study.
+
+```sh
+python replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/validate_checkpoint_008.py /path/to/remote-reference-queue-001 /new/validation.json
+```
