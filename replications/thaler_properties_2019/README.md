@@ -312,3 +312,19 @@ seed-aligned ensembles with every statistic defined. It rejects undefined outcom
 instead of silently dropping paired seeds. For the corrected native audit, use the
 archived auditor beside its corrected protocol and source manifest; the historical
 auditor intentionally rejects modified source hashes.
+
+
+## Complete disease-clearance ensembles
+
+[All 100 original and 100 corrected trajectories](results/disease-clear-ensembles-2026-10-17)
+reproduce the stated clearance-before-100 behavior. No population becomes extinct.
+First clearance occurs at times 10–40 in the original runs and 9–46 with corrections.
+Independent inspection of the exported time-50 agent snapshots confirms zero infections
+and a surviving population in every run, without relying solely on summary counters.
+Both the code's time-100 predicate and the prose's before-100 criterion pass 100/100
+in each variant. The exact binomial 95% interval is [0.963783, 1.0]; finite sampling
+does not prove universal success. The disease-persistence scenario remains unfinished.
+
+The original enabled model-test suite is now also running with replay seed 20261017,
+using its already-verified historical binary. It covers inheritance and wealth only;
+six other model properties remain disabled in the source. Its result is still pending.
