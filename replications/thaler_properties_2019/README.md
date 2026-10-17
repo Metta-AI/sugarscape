@@ -991,3 +991,26 @@ In the rebirth scenario, 12/100 runs in each variant reach one agent by step 1,0
 Neither variant does so without rebirth. These finite-horizon observations do not prove
 an eventual outcome, hill invasion, or battlefront behavior. Spatial analysis and the
 remaining appendix categories still prevent whole-paper completion credit.
+
+## Complete culture cohort
+
+The [full culture evidence](results/culture-ensembles-2026-10-17) covers all 100
+frozen seeds per variant at 2,700 steps. Each cohort combines 33 retained local
+runs with 67 disjoint native continuations. Cross-host parity reproduced ten
+first-seed exports byte for byte before continuation. No seed was replaced.
+
+| Predicate | Original | Coordinate/observation correction |
+| --- | ---: | ---: |
+| Released asymmetric expression | 74/100 | 71/100 |
+| Symmetric global-ratio interpretation | 54/100 | 58/100 |
+
+The independent audits checked 540,200 summary rows and 2,261,458 agent
+observations, with no extinctions. All four interval audits and the merged report
+were reproduced byte for byte from the published compressed archives.
+Exact binomial confidence intervals and per-seed measurements are retained.
+
+The released expression accepts broad ratios above 0.45; the symmetric
+interpretation accepts ratios at most 0.05, at least 0.95, or between 0.45 and
+0.55. Neither global predicate establishes cultural dominance on individual
+hills. Spatial interpretation and remaining appendix claims are unresolved;
+this cohort does not complete the paper.

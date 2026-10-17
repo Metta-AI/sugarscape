@@ -1,0 +1,2428 @@
+{
+  "variant": "corrected",
+  "scenario": "culture",
+  "validated_runs": 67,
+  "complete_scenario": false,
+  "summary_observations": 180967,
+  "snapshot_agent_observations": 757424,
+  "extinction_count": 0,
+  "protocol_sha256": "54d0e3b4ce330535edd199a724bc5c2324790e68a16389a8610505241fd25994",
+  "manifest_sha256": "ebc54765862520561d364a140e43eb0a0e34993c4619cb6b4611a0e4942c7a53",
+  "ledger_snapshot_sha256": "0febf630554b4dc45bacdf12837499b70dae1b15b13ea64a6ee03b07a7726d63",
+  "results": [
+    {
+      "index": 33,
+      "seed": 542902321,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11371,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "9b541e691a542f0ee119d783cba52aec05352a66660906d929d5cdde170b7eb9",
+      "zero_dominant_ratio": 0.43,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 34,
+      "seed": 676341696,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10739,
+      "final_population": 191,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 191,
+          "occupiers": 191,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "86d9cb03cf3a028df3387473c78832a602bf3e72052f1b8ce350a212b6019cac",
+      "zero_dominant_ratio": 0.9162303664921466,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 35,
+      "seed": 1942113741,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11244,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "06aa40d9ba9b1e3e278a2d0bbc39279876400cfa0844af25dc60124048c73329",
+      "zero_dominant_ratio": 0.435,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 36,
+      "seed": 965179427,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11031,
+      "final_population": 195,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 195,
+          "occupiers": 195,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "9c6232562b700e3b6c0abd66d41d558ab833bc60e85271fb68b03ee8bdeabc9e",
+      "zero_dominant_ratio": 0.046153846153846156,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 37,
+      "seed": 1639688150,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11226,
+      "final_population": 199,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 199,
+          "occupiers": 199,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "a7eb2e34eedeeeb414d779219b6bd530c65a87de3da81d2c3b88253d4ecfd38a",
+      "zero_dominant_ratio": 0.035175879396984924,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 38,
+      "seed": 1212814574,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11178,
+      "final_population": 198,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 198,
+          "occupiers": 198,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "316d555b9ec5638a55c86fceab3410a0d0c87244fc0d49bfdc800670b8d7e7e2",
+      "zero_dominant_ratio": 0.050505050505050504,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 39,
+      "seed": 293210470,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11089,
+      "final_population": 196,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 196,
+          "occupiers": 196,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "9084063f7e50b86e590f1dcce4a670f901d02106152a1c6378ac8f88366ee196",
+      "zero_dominant_ratio": 0.030612244897959183,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 40,
+      "seed": 1523052576,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11864,
+      "final_population": 211,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 211,
+          "occupiers": 211,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "81ad3a4955cdeea5a57b218f8dd0b0d36895d0ad937cce85f1fef1cbe0fbf992",
+      "zero_dominant_ratio": 0.5165876777251185,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 41,
+      "seed": 1824038064,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11661,
+      "final_population": 207,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 207,
+          "occupiers": 207,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "1d3ab5d1e0c5e7802125e64e0ec7156172d94e3eddd9300d8e5c8375c0a7f8d8",
+      "zero_dominant_ratio": 0.8695652173913043,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 42,
+      "seed": 9315837,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11169,
+      "final_population": 198,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 198,
+          "occupiers": 198,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "a7128bc6da158f40daf035535b2c7f6067562c4047d08faefcc2ae1516964298",
+      "zero_dominant_ratio": 0.17676767676767677,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 43,
+      "seed": 701952926,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11498,
+      "final_population": 204,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 204,
+          "occupiers": 204,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "bc41e1d221b3f501a5fae95f9651fc33369be4f88cbb1af691b903be6e9b248c",
+      "zero_dominant_ratio": 0.9411764705882353,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 44,
+      "seed": 2098162536,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11278,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "1e232c70fbbe23bd6575e6aa1e60de473cf40fb356f71474d8b883201ef2b32a",
+      "zero_dominant_ratio": 0.93,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 45,
+      "seed": 382526562,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10918,
+      "final_population": 194,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 194,
+          "occupiers": 194,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "38c98a42242abfa19919b4999c8ab0eb72a43e038f9cbb3c82479189c152bf4f",
+      "zero_dominant_ratio": 0.04639175257731959,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 46,
+      "seed": 1715494055,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11356,
+      "final_population": 201,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 201,
+          "occupiers": 201,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "0739b77fd9b07b7431b7a6901108387301143358274fe14b6f99b11bab6a0c5c",
+      "zero_dominant_ratio": 0.44776119402985076,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 47,
+      "seed": 26841930,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10698,
+      "final_population": 190,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 190,
+          "occupiers": 190,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "a77fba40dd10c7ad79979b3ccd2179500cd33cb53a4d13ccdcece1d2ede0eb73",
+      "zero_dominant_ratio": 0.02631578947368421,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 48,
+      "seed": 1192008673,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11622,
+      "final_population": 206,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 206,
+          "occupiers": 206,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "dea94f357258855eea89e311854a8c661f283a3abeb222b9a970e8b61bfe78a4",
+      "zero_dominant_ratio": 0.49029126213592233,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 49,
+      "seed": 181030694,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11156,
+      "final_population": 198,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 198,
+          "occupiers": 198,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "c51b5dd8b1d52944b630e446cde3ac5937535332ca54f85e5bbce29c57c8dbbd",
+      "zero_dominant_ratio": 0.2474747474747475,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 50,
+      "seed": 1678914666,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10977,
+      "final_population": 195,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 195,
+          "occupiers": 195,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "e9dafd77668362f0ce0a27d6f9e54c312e3990b27b8f754b58551ef7637c25d1",
+      "zero_dominant_ratio": 0.49230769230769234,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 51,
+      "seed": 774229078,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11408,
+      "final_population": 202,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 202,
+          "occupiers": 202,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "9b3ac5a8d6562da79499f5c22f2199ccc7512f0c9f67f488ec92ef10ededfab4",
+      "zero_dominant_ratio": 0.9455445544554455,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 52,
+      "seed": 694346598,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 12137,
+      "final_population": 215,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 215,
+          "occupiers": 215,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "6ea7e9834d95e71e9e1f853aa5dec86399df93bdaa2f85aca855d51e39ef8fbc",
+      "zero_dominant_ratio": 0.4604651162790698,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 53,
+      "seed": 819470256,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11038,
+      "final_population": 195,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 195,
+          "occupiers": 195,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "4dcf9aaddee608c9b2ca2011c14c78f7bdd789c834960a397a0c0bb5762d34ce",
+      "zero_dominant_ratio": 0.11282051282051282,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 54,
+      "seed": 1092457941,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10424,
+      "final_population": 185,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 185,
+          "occupiers": 185,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "806cde02dde4ffadcea2c6b368949ae5e1b2bf46a75c08cca3a796bf449ea08a",
+      "zero_dominant_ratio": 0.5081081081081081,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 55,
+      "seed": 735538784,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11301,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "4ca8ca80e293a5199c2838198fc1bd3676e62bc38a343fa372bec4a85ef51604",
+      "zero_dominant_ratio": 0.05,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 56,
+      "seed": 1063144896,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11234,
+      "final_population": 199,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 199,
+          "occupiers": 199,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "2277c57bb6a8f88f83bc9f15ae6ed927d31e504b9e51e8a5017bb9caa9324a17",
+      "zero_dominant_ratio": 0.03015075376884422,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 57,
+      "seed": 1932373106,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10914,
+      "final_population": 193,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 193,
+          "occupiers": 193,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "c5c13656089468cd66ba3f347d405bb458a1eb107037348027db4909bfb97969",
+      "zero_dominant_ratio": 0.05699481865284974,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 58,
+      "seed": 2083611333,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11253,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "4dec01cd0938db83cea71fe494493850b536ec5cb95ac5a6b57e6a3786e8bc72",
+      "zero_dominant_ratio": 0.405,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 59,
+      "seed": 814273647,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11273,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "102d0bb3f6f9709448a6aa03afb7a8f68e23a488fdcc4b1eff2ed8b34a56b298",
+      "zero_dominant_ratio": 0.055,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 60,
+      "seed": 1648399594,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11528,
+      "final_population": 205,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 205,
+          "occupiers": 205,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "ac3608066347bebd784070d21660665ab0d607bd1d20d5da34b0a9064360df52",
+      "zero_dominant_ratio": 0.24390243902439024,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 61,
+      "seed": 352476472,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10863,
+      "final_population": 193,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 193,
+          "occupiers": 193,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "5e8a643aca299c95a9f54b37d60b86f37ff2c5839c4d66fd67d34c3477221197",
+      "zero_dominant_ratio": 0.03626943005181347,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 62,
+      "seed": 516746846,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11827,
+      "final_population": 210,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 210,
+          "occupiers": 210,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "103f4c230224161e907b29d81b9055c4fbe18561497939f851bfde707025f410",
+      "zero_dominant_ratio": 0.05238095238095238,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 63,
+      "seed": 661661415,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11442,
+      "final_population": 203,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 203,
+          "occupiers": 203,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "04f9212e7a848232e75e78e9915013a2394a5e4bcbce067f75fbcd7df52e2277",
+      "zero_dominant_ratio": 0.4729064039408867,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 64,
+      "seed": 692815705,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10906,
+      "final_population": 193,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 193,
+          "occupiers": 193,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "45c9ce9757ce4dc3acccffc2195e88dabd49f52533f28285212f01a7a210b756",
+      "zero_dominant_ratio": 0.03626943005181347,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 65,
+      "seed": 757639797,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11884,
+      "final_population": 211,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 211,
+          "occupiers": 211,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "3666f5543651b7945ff76869f6edf5134113b22b913be30554f5dac08bf8a7b9",
+      "zero_dominant_ratio": 0.023696682464454975,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 66,
+      "seed": 860911273,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11384,
+      "final_population": 201,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 201,
+          "occupiers": 201,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "92e4cd37b9732ceab639007797766f517c332b096a45add53903e64d4b43d36f",
+      "zero_dominant_ratio": 0.47761194029850745,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 67,
+      "seed": 1716556791,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11306,
+      "final_population": 201,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 201,
+          "occupiers": 201,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "2eb387607c3b05f9777bee3c6c50c003ef103197bbc33e9ebcdc2b98a472f072",
+      "zero_dominant_ratio": 0.12437810945273632,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 68,
+      "seed": 689303357,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10991,
+      "final_population": 195,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 195,
+          "occupiers": 195,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "a07b967004395fd67f6b7f80564da17fb31fd55abc38f9d73a2af1a162c158f9",
+      "zero_dominant_ratio": 0.5025641025641026,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 69,
+      "seed": 921672556,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10972,
+      "final_population": 195,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 195,
+          "occupiers": 195,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "80e87bd83078847c64a2963538320271df1c80fbf03761273f642d30facc8e7f",
+      "zero_dominant_ratio": 0.47692307692307695,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 70,
+      "seed": 649291334,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11312,
+      "final_population": 201,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 201,
+          "occupiers": 201,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "cbf832673c0613a3b5f22a947dc718d928f431ae5bf1b8e40ba01a0f46413140",
+      "zero_dominant_ratio": 0.03980099502487562,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 71,
+      "seed": 785928226,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10941,
+      "final_population": 194,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 194,
+          "occupiers": 194,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "2ab33263e27b55bc4370428f842a687702c05a8f5e98b55de840a3f56eced80b",
+      "zero_dominant_ratio": 0.030927835051546393,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 72,
+      "seed": 151270570,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10906,
+      "final_population": 193,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 193,
+          "occupiers": 193,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "1d05428764ae83aa4547874d1ca3dd2edc9299ca6c3a4348a1e7f8fc28ef906c",
+      "zero_dominant_ratio": 0.49222797927461137,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 73,
+      "seed": 297405791,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11246,
+      "final_population": 199,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 199,
+          "occupiers": 199,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "c7fee53a0d37d7d9c6250410ed95bb7e878a17510c52b752c8e34595bf0fc6ae",
+      "zero_dominant_ratio": 0.05025125628140704,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 74,
+      "seed": 1663191806,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11770,
+      "final_population": 209,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 209,
+          "occupiers": 209,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "956e254945d2c6f8dfae00530a0c7746f184ad4bec85ddd9f2742ed90293488a",
+      "zero_dominant_ratio": 0.5119617224880383,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 75,
+      "seed": 1699000753,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11268,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "db88db910261815b1c375a13a80846c0d8deb4f31d2498d46b8b034795df4e6f",
+      "zero_dominant_ratio": 0.025,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 76,
+      "seed": 1228827727,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11316,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "b96687a69269e1e0c7ca440599a23a19aea554d09d02585546e40254721eb9ab",
+      "zero_dominant_ratio": 0.885,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 77,
+      "seed": 373216482,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11220,
+      "final_population": 199,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 199,
+          "occupiers": 199,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "85a09c0dcce0e308ce4bea83e3a93f4eb1876e9f6f8193cb3d5bf21b328356b4",
+      "zero_dominant_ratio": 0.04522613065326633,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 78,
+      "seed": 1806498902,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 12347,
+      "final_population": 220,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 220,
+          "occupiers": 220,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "0207a97d205c2e870df20248c486fc00c818aa9582fa292adf2959660ee5c485",
+      "zero_dominant_ratio": 0.4318181818181818,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 79,
+      "seed": 1219680293,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11596,
+      "final_population": 205,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 205,
+          "occupiers": 205,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "d4406799e981f9d7521fd9356e4d828a44d5a9b40053c1f23297302764cb263d",
+      "zero_dominant_ratio": 0.48292682926829267,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 80,
+      "seed": 1548970611,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11610,
+      "final_population": 206,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 206,
+          "occupiers": 206,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "679231252f3b958bc938365e1ce5bf8930c07898adf26ff51497569f86bbc748",
+      "zero_dominant_ratio": 0.0825242718446602,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 81,
+      "seed": 1945908165,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10949,
+      "final_population": 194,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 194,
+          "occupiers": 194,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "f1d2623d296d618ec2953a676b493803dd6f64fda40f78ea26d6e418a25e8281",
+      "zero_dominant_ratio": 0.4793814432989691,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 82,
+      "seed": 2001622107,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11407,
+      "final_population": 202,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 202,
+          "occupiers": 202,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "e5eb01ef8cbea76dd40592fc3c2f2358b479c448040b1881df7337d5ef5d6c3d",
+      "zero_dominant_ratio": 0.297029702970297,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 83,
+      "seed": 756742149,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11920,
+      "final_population": 212,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 212,
+          "occupiers": 212,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "a6d9a36962116711375f45ea6b8f864721e3d0cde41711c0dd154992caf25d1d",
+      "zero_dominant_ratio": 0.4811320754716981,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 84,
+      "seed": 894713314,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11209,
+      "final_population": 199,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 199,
+          "occupiers": 199,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "ff8f39b0e63ddaee9ba9d57b8ac61fd2e583c2b8ac7e4eb7ed629b0720719885",
+      "zero_dominant_ratio": 0.02512562814070352,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 85,
+      "seed": 2083163472,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11452,
+      "final_population": 203,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 203,
+          "occupiers": 203,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "782d1a4f63a90bf6ff5a7aaefe2bdfa6994e3a2d9d317fc927b171abda9d2e8b",
+      "zero_dominant_ratio": 0.47783251231527096,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 86,
+      "seed": 810928583,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11328,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "ffafad6ba406a92608c9566df3fe3fc571c391735b151671dbc663ed855f4fd1",
+      "zero_dominant_ratio": 0.475,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 87,
+      "seed": 82979159,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11197,
+      "final_population": 198,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 198,
+          "occupiers": 198,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "471f5e5994a835d70cb2aa85ef217ecf19a01c47283d9e8ae29e3592ff1b9421",
+      "zero_dominant_ratio": 0.601010101010101,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 88,
+      "seed": 619864735,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 10926,
+      "final_population": 193,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 193,
+          "occupiers": 193,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "5b5bf69e55b5e67257738abec93eca3fd33538e64fadf7fa1ebfdf572ea32773",
+      "zero_dominant_ratio": 0.5181347150259067,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 89,
+      "seed": 1345094211,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11226,
+      "final_population": 199,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 199,
+          "occupiers": 199,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "161da3a018396e8dab3a74bd81462c6f2a8e3be4717275306368bb270336329d",
+      "zero_dominant_ratio": 0.8341708542713567,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 90,
+      "seed": 631695716,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11355,
+      "final_population": 201,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 201,
+          "occupiers": 201,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "e24245b8ed55cbd492ce0404654d8f4d343e616ed2dd074635cf92639f752095",
+      "zero_dominant_ratio": 0.29850746268656714,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 91,
+      "seed": 658892059,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11801,
+      "final_population": 209,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 209,
+          "occupiers": 209,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "3871a97f05508783ab601383a94f728b5e10f7671600a976d706e2e3379d6fba",
+      "zero_dominant_ratio": 0.4258373205741627,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 92,
+      "seed": 340376067,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11105,
+      "final_population": 196,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 196,
+          "occupiers": 196,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "996073be76b31723cb3442d4a5e53b9510d7cda9bb4052c4fc30f30a0e15e432",
+      "zero_dominant_ratio": 0.9183673469387755,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 93,
+      "seed": 654398822,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11285,
+      "final_population": 200,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 200,
+          "occupiers": 200,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "5ef97b4a91683f5fd314ada22f0d9edc5185831a77aa46d54ba904ad15c0a0ee",
+      "zero_dominant_ratio": 0.495,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 94,
+      "seed": 2000211418,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11567,
+      "final_population": 205,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 205,
+          "occupiers": 205,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "4dd8f79df3ab36ab2cab4fb79bffb28ecf754294bbe9cdf9d607daf99de6f39c",
+      "zero_dominant_ratio": 0.05853658536585366,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 95,
+      "seed": 2116099927,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11230,
+      "final_population": 199,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 199,
+          "occupiers": 199,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "c55490fb2c909d77ea60fd2a043da8a7c6286af557eb38d229b06d833842478e",
+      "zero_dominant_ratio": 0.46733668341708545,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 96,
+      "seed": 917060230,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11529,
+      "final_population": 204,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 204,
+          "occupiers": 204,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "3da8881ad270a76c121e902407e099042d78daa35fb976d3dd7b6119cd9b46b7",
+      "zero_dominant_ratio": 0.5049019607843137,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 97,
+      "seed": 1644714428,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11154,
+      "final_population": 198,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 198,
+          "occupiers": 198,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "a7d77cc87b603c2e07ed5fda1a716447fb8e14e399c939313c9891081872041e",
+      "zero_dominant_ratio": 0.0707070707070707,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    },
+    {
+      "index": 98,
+      "seed": 1454349935,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11359,
+      "final_population": 201,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 201,
+          "occupiers": 201,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "a9ca9487a9431ce4083dd186925f3f680b1de650a9159063c388fbdc9fd442d0",
+      "zero_dominant_ratio": 0.024875621890547265,
+      "predicates": {
+        "source_culture_predicate": true,
+        "prose_symmetric_global_ratio": true
+      }
+    },
+    {
+      "index": 99,
+      "seed": 2084075688,
+      "steps": 2700,
+      "summary_observations": 2701,
+      "snapshot_agent_observations": 11733,
+      "final_population": 208,
+      "final_infected": 0,
+      "extinct": false,
+      "spatial": [
+        {
+          "time": 0,
+          "cells": 2601,
+          "agents": 400,
+          "occupiers": 400,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        },
+        {
+          "time": 2700,
+          "cells": 2601,
+          "agents": 208,
+          "occupiers": 208,
+          "duplicate_occupier_ids": 0,
+          "missing_occupier_ids": [],
+          "coordinate_disagreements": 0
+        }
+      ],
+      "source_record_sha256": "45ff44bd64de674cd722e69c593449e7c6ae02cebd89cb6fe04888ee761939c2",
+      "zero_dominant_ratio": 0.27884615384615385,
+      "predicates": {
+        "source_culture_predicate": false,
+        "prose_symmetric_global_ratio": false
+      }
+    }
+  ],
+  "comparisons": [],
+  "scope": "Source and prose predicates measured separately. Corrected variant is post-hoc sensitivity. No full-paper credit; global culture ratio does not prove spatial hill dominance."
+}
