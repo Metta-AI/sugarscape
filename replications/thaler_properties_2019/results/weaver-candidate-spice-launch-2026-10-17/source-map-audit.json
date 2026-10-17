@@ -1,0 +1,33 @@
+{
+  "netlogo_sha256": "e61e2a820ea3cde7c3d2855314bf82f7a3121666345644b138be1d1d905f7645",
+  "haskell_model_sha256": "f09110cdc9a674aba9fa214424ffa2b8734240b9ba8a216dbc77bfddd10c6e0c",
+  "literal_map_rows_identical": true,
+  "rows": 51,
+  "columns": 51,
+  "verified_native_initial_cells": 2601,
+  "native_cells_sha256": "d84a2d25d4c9653a8ab9988ff0076bb0bb5645dfc351fe598783d1687e37a5dd",
+  "coordinate_mapping": "Haskell (x,y) = (25-NetLogo.pxcor, 25-NetLogo.pycor); both resource capacities agree at every site.",
+  "initial_each_resource_total": 4576,
+  "candidate_initial_summary_agrees": true,
+  "parameters": {
+    "agents": 400,
+    "vision": [
+      1,
+      6
+    ],
+    "sugar_and_spice_metabolism": [
+      1,
+      4
+    ],
+    "endowments": [
+      5,
+      25
+    ],
+    "regrowth_per_step": 1,
+    "trading": false,
+    "replacement": false,
+    "mating": false,
+    "spice": true
+  },
+  "scope": "Parameter and map equivalence only. Different random generators and scheduling remain; same integer seeds do not mean paired initial populations. Candidate identity with2009 publication unverified."
+}

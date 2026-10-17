@@ -816,3 +816,23 @@ python audit_disease_count_ensemble.py PROTOCOL NATIVE_HOME FIRST_AUDIT RUN OUTP
 Omit `--allow-prefix` only after the 99-input worker produces its completion marker.
 The retained first audit is the pinned `audit_disease_count_correction.py` output;
 its source-fidelity controls and raw files remain linked evidence.
+
+## Recovered NetLogo candidate: resource-map agreement and bounded ensemble
+
+[Resource-map validation](results/weaver-candidate-spice-launch-2026-10-17)
+checks all 2,601 corrected Haskell cells against the candidate's literal maps.
+Capacities agree under `Haskell(x,y) = (25 − NetLogo.pxcor, 25 − NetLogo.pycor)`.
+Both native initial exports contain 4,576 units of sugar and 4,576 of spice.
+Preset 4 uses 400 agents, vision 1–6, metabolism 1–4, endowments 5–25,
+and one-unit regrowth, matching the alternative spice configuration's declared ranges.
+
+The remaining 99 frozen seeds now run sequentially under unchanged NetLogo 4.0.4
+candidate code and Java 11. The existing first seed remains retained. Each Java
+process has a 512 MiB heap and one active processor; limits are 300 seconds per
+input, 90 minutes total, and a 4 GiB free-space guard. Raw outputs and hashes persist.
+
+This is a qualified independent comparison. Different random generators mean equal
+seed integers do not establish paired initial populations. Historical Java parity
+and identity with the 2009 publication remain unverified. All 100 unique inputs
+and independent trajectory audits are required before ensemble inference; source-map
+agreement alone does not establish equivalent model behavior.
