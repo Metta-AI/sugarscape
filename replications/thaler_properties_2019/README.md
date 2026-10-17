@@ -54,9 +54,9 @@ A successful default test suite cannot establish complete paper reproduction.
 
 ## Original-suite execution
 
-A bounded Linux build is running with two CPU cores, 3 GiB memory, and a 90-minute
-limit. It preserves the historical source and compiler requirements. It runs the
-released agent/environment suite with replay seed 20261017 after building both suites:
+The historical Linux build completed under a two-core, 3 GiB, 90-minute limit.
+All 35 enabled original tests passed with replay seed 20261017. Both test suites and
+the original simulator compiled with GHC 8.4.4. The commands were:
 
 ```bash
 stack build --test --no-run-tests --jobs 2
@@ -64,8 +64,9 @@ stack test SugarScape:sugarscape-test --test-arguments="--quickcheck-replay=2026
 ```
 
 The original suites are executed unchanged. No new unit or integration tests are
-introduced. Native logs and results will be added after execution and audit;
-there is currently no completed-study credit.
+introduced. [Native logs and the independent source/binary audit](results/original-suite-2026-10-17)
+are retained. All 60 archived inputs remain byte-identical. The model-level suite
+was compiled but not run, so there is no completed-study credit.
 
 ## Frozen quantitative ensembles
 
@@ -83,4 +84,38 @@ Confidence intervals and source-defined checks will be reported separately.
 Non-rejection is not proof of equality. Undefined statistics remain explicit;
 no missing or failed runs will be silently dropped. These 300 runs address three
 quantitative targets; the remaining case-study and appendix requirements remain.
-The protocol is frozen, but these ensembles have not started.
+All three ensembles are running. Wealth index 0 completed first, and its remaining
+worker starts at index 1; no duplicate input is counted. Each single-core worker
+has a six-hour limit and retains interrupted output without crediting completion.
+
+## Native exporter and independent audit
+
+The [first completed outputs](results/native-first-2026-10-17) cover all three full
+horizons: wealth 200 steps/50,000 agent observations, carrying capacity 400/87,502,
+and trading 1,000/62,102. Independent audits recheck raw hashes, commands, seeds,
+all timestamps, unique agent IDs, finite measurements, and original source pins.
+The wealth Gini agrees between ranked and pairwise formulas to less than 1e-12.
+These are execution and extraction proofs, not 100-run statistical results.
+
+`run_ensemble.py` runs a specified interval using the unmodified native CLI. Its
+protocol argument must be beside `source-manifest.json`. For example:
+
+```bash
+python replications/thaler_properties_2019/run_ensemble.py \
+  /path/to/historical-source replications/thaler_properties_2019/ensemble-protocol.json \
+  wealth /path/to/new-output --start 0 --stop 100 --seconds 21600
+```
+
+The independent auditor uses NumPy 1.26.4 and SciPy 1.16.3. Published first-output
+folders retain compressed raw exports; restore them with `gzip -dk` before auditing.
+The gzip roundtrip and raw hashes were verified. Audit separate scenarios separately:
+
+```bash
+python replications/thaler_properties_2019/audit_ensemble.py \
+  /path/to/first-interval /path/to/remaining-interval --output /path/to/new-audit
+```
+
+Without `--allow-prefix`, all 100 distinct indices and each declared interval's
+completion marker are required. Prefix audits produce no confidence-interval claims.
+The auditor preserves the source library's moment conventions and records zero/one-price
+samples as undefined alongside its zero-standard-deviation convention.
