@@ -639,3 +639,33 @@ python replications/raimbault_2019/audit_generated_batches.py \
 
 For the queued production artifact, use its recorded input archive hash, execution root
 `/root/sugarscape/generated-production-001`, 10,800-second limit and declared `1e-12` morphology tolerance.
+
+## Batched full-grid cost scenario and proposed scale-up
+
+[The allocation calculation](results/batched-cost-scenario-2026-10-17/scenario.json)
+uses all 550 frozen strata and eight measured batch totals.
+For each batch, nonnegative input times summing to its observed time imply
+`min(stratum_count) * batch_time <= weighted_sample_time <= max(stratum_count) * batch_time`.
+Summing these bounds gives 11,215.73–13,843.93 weighted sample CPU-hours.
+Extrapolating measured wall times with ideal eight-worker balancing gives 1,381.89–1,704.32 node-hours.
+At the checked $0.576/node-hour rate, the corresponding compute scenario is $795.97–$981.69.
+Eight available nodes would imply 7.20–8.88 execution days under those assumptions.
+
+These are allocation bounds for the measured sample, not confidence intervals or guaranteed bounds on future execution.
+Within-stratum variation, hardware/load differences, scheduling, setup, retries, transfer, storage and idle billing remain unmeasured or excluded.
+Batch startup time is included in the measured totals and allocated among sample inputs; its future amortization is not measured.
+The earlier separate-process estimate remains historical evidence; the new calculation is not a controlled speedup estimate.
+No new simulations are counted by this analysis.
+
+[The scale-up proposal](results/batched-cost-scenario-2026-10-17/proposal.json)
+requests an additional $1,500 cap, up to eight CPU8 nodes and leases bounded to six native hours.
+It requires independent validation of the already queued 8,000-input shard before scaling.
+Each future lease must reserve its full charge against the approved remainder; no full-grid capacity has been launched by this proposal.
+The complete original ensemble remains the target even if a spending cap is reached.
+
+```sh
+python replications/raimbault_2019/estimate_batched_cost.py \
+  replications/raimbault_2019/results/generated-sizing-complete-2026-10-16/analysis.json \
+  replications/raimbault_2019/results/batched-sizing-complete-2026-10-17/audit.json \
+  /new/batched-cost-scenario.json --node-hour-price 0.576
+```
