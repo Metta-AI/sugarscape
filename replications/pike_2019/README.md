@@ -726,3 +726,26 @@ Its timing is not benchmark evidence because other local workloads were active.
 The [cloud launch](results/timing-control-2026-10-17/launch.json) is queued with a 12-hour cap; cloud controls and aggregate timing results remain pending.
 The retained native archive was checked member-by-member against the original control outputs.
 Neither timings from numerically invalid common-resource runs nor historical hardware differences are treated as evidence of economic replication.
+
+## Complete threshold-ten common-resource grid
+
+[Full reconciliation](results/common-ten-complete-2026-10-17/reconciliation.json) combines the 198 new cloud runs with the two separately audited cloud seed-zero runs exactly once.
+All 200 declared conditions are structurally audited, covering 19,587,787 health records and 200,000 price-step records.
+Local platform-sensitivity runs and duplicate cloud portability controls are excluded.
+
+**All 200 runs fail numerical validity because resource holdings become nonfinite.**
+First nonfinite records occur at steps 52–162 for one-level groups and 52–173 for multi-level groups.
+The respective nonfinite health-record counts are 7,427,817 and 7,431,053.
+Finite recorded transaction prices and operational completion do not make these trajectories valid economic results.
+No positive or negative paper-level verdict is assigned while source fidelity and the failure mechanism remain under investigation.
+
+The [complete measurements](results/common-ten-complete-2026-10-17/measurements.tar.gz) retain every price step, including undefined prices and dispersion.
+[Independent reconciliation checks](results/common-ten-complete-2026-10-17/verification.json) preserve all 198,000 previously audited records exactly.
+They independently reconstruct the remaining 2,000 seed-zero measurements within 4.45e-16.
+The [batch audit](results/common-ten-complete-2026-10-17/batch-audit.json) and [seed-zero audit](results/common-ten-complete-2026-10-17/seed-zero-audit.json) retain all failed numerical outcomes.
+
+The 132,326,408-byte native batch archive remains external, with its location and SHA-256 recorded in the retained provenance and export receipt.
+The export watcher completed the raw audit and archive before failing at checksum calculation under system Python3.10.
+The receipt was recovered using pinned Python3.11.14; no simulation or raw audit was restarted.
+Run `reconcile_common_ten.py NATIVE_BATCH BATCH_AUDIT SEED_ZERO_EVIDENCE NEW_OUTPUT` to regenerate the reconciliation.
+Threshold-five experiments and controlled timing remain pending; this full grid does not complete the paper.
