@@ -357,3 +357,14 @@ The report combines audited per-condition summaries in original grid order and l
 The audits reconstruct 332,644 health records and 6,000 price-step records.
 Six controls reject incomplete grids and duplicate segments before creating output; a seventh rejects corrupted native health data without producing a reconciliation report.
 The complete-grid success path awaits the unfinished cloud runs. These checks add no simulation coverage.
+
+## First cloud continuation checkpoint
+
+The [sealed checkpoint](results/cloud-checkpoint-2026-10-17/validation.json) adds 158 independently audited conditions from the eight active segments.
+Only completed ledger entries were exported; active partial conditions are excluded.
+Fresh raw-output audits reconcile these with the 287 completed local conditions, yielding 445 unique conditions.
+Coverage is 241/300 in Phase I, 104/600 in Phase II, and 100/1,200 in Phase III.
+The reconciliation validates 22,726,460 health records and 445,000 price-step records, with identical frozen manifests and no overlapping ordinals.
+The three cloud portability duplicates are excluded. Each phase report explicitly lists the still-missing ordinals.
+The native checkpoint archive, export script, analysis commands, and phase reports are retained for review.
+All three grids remain incomplete; this checkpoint makes no aggregate paper claim and includes the earlier local coverage rather than adding it twice.
