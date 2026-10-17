@@ -657,3 +657,14 @@ The two fits began with the same random state, source, runtime, and fold partiti
 Thus tiny parsing changes affect this forest execution; input agreement within 1e-10 does not establish identical fitting behavior.
 Two control scores match printed precision, versus one sequential score. This diagnostic does not replace the declared primary protocol or increase replicated-target counts.
 The paper remains incomplete, with no negative verdict assigned from these differences.
+
+## Neural-network first-fold checkpoint
+
+[The first completed neural-network fold](results/neuralnet-5000-first-fold-2026-10-17/audit.json) passes independent validation of all 755,000 training/test input cells and 5,000 parameter predictions.
+The audit reconstructs the seed-zero partition: 4,000 training rows and 1,000 held-out rows.
+Root-mean-square errors, interval coverage, and interval widths agree with the checkpoint within 1e-10.
+
+The native ABC-neural-network result stores posterior medians under `medians`; the earlier forest audit expected `predictions`.
+The failed audit attempt is retained, and the corrected audit reads the native field without refitting or changing the simulation.
+The actual checkpoint, exported predictions, package versions, and hashes are included.
+The remaining four folds are still running. This checkpoint supplies no aggregate Table 8 score and adds no completed target.
