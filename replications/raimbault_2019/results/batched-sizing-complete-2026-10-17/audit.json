@@ -1,0 +1,157 @@
+{
+  "completed_inputs": 550,
+  "exact_measurements": 6600,
+  "maximum_error": 0.0,
+  "batch_count": 8,
+  "elapsed_seconds": 1638.909252424026,
+  "cpu_seconds": 9967.63,
+  "retained_model_files_verified": 14,
+  "runtime_pins": 51,
+  "runtime_qualification": "Dependency hashes are pinned in the producer manifest; dependency binaries are not contained in this result archive.",
+  "batches": [
+    {
+      "interval": [
+        0,
+        68
+      ],
+      "cpu_seconds": 460.59,
+      "wall_seconds": 463.6300538959913,
+      "peak_rss_kib": 1061676.0
+    },
+    {
+      "interval": [
+        68,
+        137
+      ],
+      "cpu_seconds": 651.59,
+      "wall_seconds": 653.1898685269989,
+      "peak_rss_kib": 1064636.0
+    },
+    {
+      "interval": [
+        137,
+        206
+      ],
+      "cpu_seconds": 978.23,
+      "wall_seconds": 971.025371561991,
+      "peak_rss_kib": 1035440.0
+    },
+    {
+      "interval": [
+        206,
+        275
+      ],
+      "cpu_seconds": 1459.33,
+      "wall_seconds": 1433.379049533978,
+      "peak_rss_kib": 1064252.0
+    },
+    {
+      "interval": [
+        275,
+        343
+      ],
+      "cpu_seconds": 1582.68,
+      "wall_seconds": 1555.1754827648401,
+      "peak_rss_kib": 1062440.0
+    },
+    {
+      "interval": [
+        343,
+        412
+      ],
+      "cpu_seconds": 1506.04,
+      "wall_seconds": 1477.817781779915,
+      "peak_rss_kib": 1055164.0
+    },
+    {
+      "interval": [
+        412,
+        481
+      ],
+      "cpu_seconds": 1656.8,
+      "wall_seconds": 1623.7534893460106,
+      "peak_rss_kib": 1084196.0
+    },
+    {
+      "interval": [
+        481,
+        550
+      ],
+      "cpu_seconds": 1672.37,
+      "wall_seconds": 1638.9057071539573,
+      "peak_rss_kib": 1066208.0
+    }
+  ],
+  "scope": "Aggregate sample throughput only; no stratum-weighted full-workload cost projection.",
+  "files_sha256": {
+    "GeneratedReplay.java": "c52a4dfaec12a5db99d19ba9a49f38e20cb6e40bac97ec667b49904d577182fd",
+    "batch-0000-0068/command.json": "fcdd5c8e791d0e07eaa1f6114589f71ee7281d2e593b667901e883bb583f8a03",
+    "batch-0000-0068/exit.json": "026aa6396e91c79136eb8685f0ef9c7a07c40a696faad0e4d5f6035aa8983589",
+    "batch-0000-0068/native.log": "9ef6725f699bbd1bd1ce23109c13b3ad1567b3b723cfe7c2a82523557afaa261",
+    "batch-0000-0068/resources.txt": "d04f500f8540a953238cd53e77fc72276848e79d4358a8e3d6c0ee578c1f3599",
+    "batch-0000-0068/results.csv": "fcbdaaf71c20f81ca15cc83c5cd4b6880a354b3d0a38b7dd173e30f35eaf6f89",
+    "batch-0068-0137/command.json": "a0641f6122dda57bf352c43962f353b727b7ba80b2087e9ef875b77a61545454",
+    "batch-0068-0137/exit.json": "c02b0967ac5f1992de96fece1d7684c2daf986a130861acea9dd3320ae110e3d",
+    "batch-0068-0137/native.log": "0de24c9203bf8081f6e123f24e911ccbf947bb7127cca822897b7215caee244f",
+    "batch-0068-0137/resources.txt": "44d0d44bad2f6dc6bd1c30fb499c9c7b983910cea5af8308fd47f8622ae23eea",
+    "batch-0068-0137/results.csv": "b9199a726e899e701917ddbf7a5451b31bb7e2bc6d065a4e9cefdd0b03f5538a",
+    "batch-0137-0206/command.json": "4ba92a4dd9b07e260b985e83a6b0946cc000d548bab459e26fdf52778b8f0a96",
+    "batch-0137-0206/exit.json": "dc38166b797b8b15665ceed28eab297c701f6b93dbed2aa2b80a9cb25a5a02b2",
+    "batch-0137-0206/native.log": "a81e2592e9a0aa0c54a6dca107ee5da463b999bc2b00453d8074d78d3fb945cf",
+    "batch-0137-0206/resources.txt": "ebd01a0fd11fb69edd5916ae31857da556826158263364cf197e1204950f63fe",
+    "batch-0137-0206/results.csv": "79cc38072b3d9f0a9bd1364fe03290fd0fcf7544b11f1e255580068e3043f0ec",
+    "batch-0206-0275/command.json": "97027f289e7e66fde177781bbe020e8a399a1db6817860fec2a1c648a9e8cb57",
+    "batch-0206-0275/exit.json": "d759c2cbcb97021be37e6953ce2cf3b08d17a8413929a5e4e39503e3b42bed0f",
+    "batch-0206-0275/native.log": "ccd184655136fe9d4474664cd343591b11fcbfff1c6d469b1d93eb2540974e82",
+    "batch-0206-0275/resources.txt": "98708e22a505df5f36e705e73d27c04e546b9a3a5a4e0029c3916afcb524cb77",
+    "batch-0206-0275/results.csv": "85b8869ceff4ec2193478717f2b3b2cda7eb5a88b603261120fb8cb1e8ed4c9d",
+    "batch-0275-0343/command.json": "f2b1800d99d8308f686b6f9ddd054b7b29d9292058b8aee416901c386eb561a3",
+    "batch-0275-0343/exit.json": "ccdbcae1990deced19934cfff7f0d1e00cc2a0712327ad7f93938f2394d31242",
+    "batch-0275-0343/native.log": "4379ad38c1c56ddb32b8ecd0088ea9c30b895ec3da6229812f5f0838b6ae23cc",
+    "batch-0275-0343/resources.txt": "618680b651176e2a14145cf89c281e3d67256a4d3647dd5e3cce5981add9125a",
+    "batch-0275-0343/results.csv": "1846a0a0a166f0d135f8f972b1ead7a6ee2cb576a6c89a049023085fcffcaa51",
+    "batch-0343-0412/command.json": "28860f793ec0ddf21155c23eb95386b0adb34637f575fb9c46552b1211152d72",
+    "batch-0343-0412/exit.json": "464fa4defff263852c9d8eb80b3c9e83b15c1607bdf2a73f2132d324d83b11c5",
+    "batch-0343-0412/native.log": "28a4106f3194bab8a10e1fe18265b1a93560a19b8283ba9578588d0fe631f468",
+    "batch-0343-0412/resources.txt": "d2411180633a958fd16552773692e919d171fc8d89bc35a1bc72fd536218287d",
+    "batch-0343-0412/results.csv": "ccfe2a8dd48a98900373334ddbc7de74f4263fde671fd8a25063379644b7f2e7",
+    "batch-0412-0481/command.json": "0a8fa6ab7440bb5800ff32a6793849e9f7e906cf42ce64011399992f52c1260a",
+    "batch-0412-0481/exit.json": "21644af17edc7056b3eef2b96869ba73bbc164b20fb6dcbc4f29925518bc7494",
+    "batch-0412-0481/native.log": "b804341d9edff828f96fa1c72cc5d13a4f5981e7881415a1522abddd792a1ba5",
+    "batch-0412-0481/resources.txt": "21fd8311f142685d79117b4d50c3eb9eaa6a1055bda3206d35782450bf677fa9",
+    "batch-0412-0481/results.csv": "f7827537cb196503db32e64ef770d4e40a707f9b050b73c472ab555670785a8e",
+    "batch-0481-0550/command.json": "7ab29ecaab840f325fe81f29f76d8c1ca2513c0db3bff412488cfcd88a06a912",
+    "batch-0481-0550/exit.json": "1aba28be0b8bef25b1d0c32ea3a53205796879f535949e5bca2de33a8c135537",
+    "batch-0481-0550/native.log": "8dad0f97d58a192ce8b1daacf3173259116f31ed855eae0f8fc974759530645e",
+    "batch-0481-0550/resources.txt": "83578f8b7931b001681910ec93f2d4f18f5cf15d401a78fe0f17d4b195b3b816",
+    "batch-0481-0550/results.csv": "a1a17f1cfee64da0ab0bc05bf08c653bc9fbd9300f692e99db859d52ff28349d",
+    "boot-run-002.sh": "d642823040659a015b8983c44547a0edd37580976c4f7665cfc5d7d32d6d3879",
+    "bootstrap-002.sh": "90505cfa91bd88af1a274e6c2f0c4fc4263c557459b74b578692610f01d3064f",
+    "bootstrap-terminal.json": "85e603f32c2a81d8a41d21397dfaae77f039c81f57eb1dd89abb98e599952f13",
+    "complete.json": "7cd147eac740cd0a42eed78899daac3135c33463b65c33a231df8405dbd34455",
+    "expected-runtime.json": "813758fa06c13c52c4fd38afd5c2f6abf62dacd799f68058b72bac0c8012f012",
+    "extract_runtime.py": "608164d7e24c11210d995b21bc91fe9168d091ef04235916df03160cdabafbdc",
+    "launcher.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run.py": "1bfb6a5edfdd3d659d7aa2809858b6ef0b4e9d8c156b59bde3c6987a83a10f2a",
+    "run.sh": "4413f6575f35ee92a458580958932238d0bb30fd83547ab534b261adfe037354",
+    "runtime/model/HEADLESS_Sugarscape.nlogo": "883f15bc759805d9cdd511644609a44e93d5bb5b728fb6835e89a094e5ee4bc7",
+    "runtime/model/display.nls": "b2b5af1d543f32be8d579725ae1cfc0d3eed09515814f2771f540624fdcd7719",
+    "runtime/model/embedded-synth-pattern.nls": "c00ef29c0cab3ea4c4137bb0384f0f97953c90d572475fa1bf070266e9129f72",
+    "runtime/model/experiments.nls": "8f6c160bfe54ca101bbb01e06cfef9b79f2961f12edf2934dd72ed7b3adf7249",
+    "runtime/model/indicators.nls": "7fdc1885257db1a6636a693535687359faa52bac8f32b76737862e1bbd2900c3",
+    "runtime/model/main.nls": "82c42d2d25dc07f78cedf73504712d11fbcf6b1e4fa01122ebef8d040f1cea6f",
+    "runtime/model/morphology/morphology.jar": "c69b406cc1bc27dda00cd8afa3d93e46f8630b9a49f179cd5dc8455a35bde00e",
+    "runtime/model/patches.nls": "7bf17b66425a90d91f3e4cd8a89fb8ef849a25eab45b285f0d3038fd6fef462a",
+    "runtime/model/setup.nls": "8253c2a78c939a1a80b2c6f39954507bf6e4105761043fc8115c5e58fe767c6c",
+    "runtime/model/synth-city-system.nls": "5ba677d054b24c23440ca34ec551690cce43650972536dc562fc258d60105b9f",
+    "runtime/model/turtles.nls": "6a1b46a519365825b72b627793904cbfefe626c8e66d773d9be7a16f630ee9f8",
+    "runtime/model/utils/List.nls": "b416c0dfce3a7e47cb2e7d19bd6b9967fad8c6658735b7ee43c7dafa5265364f",
+    "runtime/model/utils/SpatialKernels.nls": "f2860eb03a1503592eb52e642b0f9bdd24160c5022f679457fd2441c028e8fd0",
+    "runtime/model/utils/utils.nls": "36bef8892bfb822173fa86e219350274657f186e60cbfcc8ea9827f90647c285",
+    "selected.csv.gz": "7907bf23eebef6e54a2b7ee85f286368af886f9980765466a177f12181718017",
+    "selection.json": "7a9728b755a9399d3631c642bec87c833cf9e78f3565bb91e27100802f88d66e",
+    "setup.log": "b9481e86d2e206fc811f0aec9dd84df8caf3f0e90cc85079fb61999f9b8b54bb",
+    "start.json": "6282a063be63714b7f9a8dcb35514cccf843ce19e2009f2f8888045f2847808d",
+    "terminal.json": "87092ff8adf0d1b7a2539c2a66cb3a36c52c7d52e6304e47d65918f0b6e4d571"
+  }
+}

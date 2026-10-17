@@ -394,7 +394,7 @@ The [frozen bootstrap package](results/batched-sizing-launch-2026-10-17/plan.jso
 All 6,600 outputs must match their archived measurements exactly before a successful result is reported.
 The simulation limit is one hour; bootstrap setup and execution are bounded separately.
 Official NetLogo and Commons Math downloads match the pinned runtime hashes, and every packaged member passes byte-for-byte readback.
-The queued-node end-to-end bootstrap remains unverified until it executes.
+The end-to-end bootstrap and eight-process experiment completed successfully; see the full audit below.
 This measures sample throughput; batch-level timing does not identify per-stratum CPU costs, so it cannot alone replace the weighted full-ensemble cost projection.
 
 ### Fourth remote reference checkpoint
@@ -437,3 +437,28 @@ landscape ensembles still prevent a whole-paper replication verdict.
 python replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/validate_checkpoint_006.py \
   /path/to/remote-reference-queue-001 /new/checkpoint-validation.json
 ```
+
+### Completed batched sizing benchmark
+
+[Independent audit](results/batched-sizing-complete-2026-10-17/audit.json) verifies all
+550 frozen inputs, 6,600 exact measurements, eight disjoint intervals, successful exits,
+and 14 retained model files. The result archive pins 51 model/dependency hashes;
+dependency binaries are not included in this compact archive.
+
+Elapsed simulation time was 1,638.909 seconds (27.315 minutes). Summed process CPU time
+was 9,967.63 seconds, versus 14,442.73 for the earlier separate-process sizing sample.
+These were separate executions; this is a descriptive comparison, not a controlled
+speedup estimate. Batch totals do not identify per-stratum timings. The previous
+weighted projection remains unreplaced, and the full generated ensemble remains unstarted.
+The 550 inputs repeat the earlier sizing sample and do not add unique replication coverage.
+
+Extract `native-evidence.tar.gz`, then reproduce the audit:
+
+```bash
+python replications/raimbault_2019/audit_batched_sizing.py \
+  /path/to/batched-sizing-001 \
+  replications/raimbault_2019/results/batched-sizing-launch-2026-10-17/bootstrap.tar.gz \
+  /path/to/new-audit.json
+```
+
+A second audit of the published archive reproduces the complete audit byte for byte.
