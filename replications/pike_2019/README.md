@@ -1,6 +1,6 @@
 # Multi-Level Mesa (Pike, 2019)
 
-Status: incomplete study. Phase I now has 300/300 conditions independently audited. Aggregate paper comparisons and later phases remain outstanding.
+Status: incomplete study. Phase I has 300/300 audited conditions and aggregate comparisons; later phases and source-fidelity questions remain outstanding.
 
 The [paper](https://arxiv.org/abs/1904.08315) links the author's [Sugarscape](https://github.com/tpike3/SugarScape) and [Multi-Level Mesa](https://github.com/tpike3/multilevel_mesa) implementations.
 We select their last pre-publication revisions, respectively `585e53398f4f58e89ec184c83bb20819f0e4c96a` and `99d2091721076df9fff32e8b49a0e33e98c34a6f`.
@@ -379,3 +379,32 @@ The final archive contains only the 59 new cloud conditions at ordinals `[241,30
 Historical local evidence supplies `[0,194)` and `[194,195)`. The analysis archive retains all four fresh raw-output audits and measurements.
 These records include undefined price dispersion without replacing it with zero.
 Full phase-one aggregate comparisons remain to be computed; this does not complete the paper or the other phase grids.
+
+## Full Phase I ensemble analysis
+
+`analyze_phase1.py COMPLETE_RECONCILIATION NEW_OUTPUT` requires all 300 audited conditions before creating output.
+[The resulting analysis](results/phase1-analysis-2026-10-17/analysis.json) uses 100 runs per variant for uncertainty, never treating timesteps as independent replicates.
+
+| Variant | Mean individual survivors | 95% mean interval | Cached author mean |
+| --- | ---: | ---: | ---: |
+| Standard | 47.72 | 46.543–48.897 | 46.18 |
+| Explicit | 48.24 | 47.064–49.416 | 46.96 |
+| Network | 48.20 | 47.033–49.367 | 46.68 |
+
+Equal-variance independent two-sided p-values are 0.535807 for standard/explicit and 0.566091 for standard/network.
+The notebook's extra multiplication by two yields 1.071614 and 1.132182; these historical calculations are retained and explicitly invalid as p-values.
+Paired differences, using the declared shared seed labels, are standard minus explicit −0.52 (95% interval −0.739 to −0.301)
+and standard minus network −0.48 (−0.720 to −0.240).
+Shared labels do not prove that models follow identical stochastic paths, and nonsignificant independent tests do not establish equivalence.
+Original NumPy states and an author equivalence margin are unavailable; these mean differences require investigation, not a negative verdict.
+
+The original notebook function recomputes pooled per-step dispersion directly from all 300 hash-verified native price files.
+All 1,500 histogram counts and bin edges match the new analysis exactly.
+Defined dispersion exists in 18,012 standard, 16,976 explicit, and 17,059 network steps out of 100,000 each.
+Steps with fewer than two transactions remain undefined. The analysis retains no-trade counts, total trades, and early/late window denominators.
+Historical runtime comparisons remain excluded because hardware and concurrent workloads differ.
+
+An independent R calculation checks 27 survivor statistics and interval endpoints, with maximum absolute difference 4.61e-11.
+The earlier 241-condition checkpoint is rejected before output creation.
+Validation scripts, survivor rows, histogram CSV, missingness counts and the rejected invocation log are retained beside the report.
+This supersedes earlier statements that phase-one aggregation was pending; other experiment families still prevent paper-level completion.
