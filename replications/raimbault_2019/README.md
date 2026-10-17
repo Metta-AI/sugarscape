@@ -612,3 +612,30 @@ The terminal evidence archive is atomically sealed and exported to task-owned st
 Decompress `selection.json.gz` to `selection.json` before replaying the frozen launch package.
 
 The frozen runner uses 120-column formatting, matching the uploaded bytes; its formatter check passes with `ruff format --check --isolated --line-length 120`.
+
+## Independent full-source audit for native generated batches
+
+`audit_generated_batches.py RUN BOOTSTRAP ORIGINAL_GZIP NEW_JSON` independently checks completed native batches against the original 2,727,994-row archive.
+Required flags specify the bootstrap SHA-256, recorded execution root, time limit, and morphology tolerance.
+The source archive and unchanged Java adapter have fixed hashes; bootstrap members must match the retained execution files exactly.
+Every selected input column is compared directly with its original archive row, followed by all twelve native measurements.
+The audit checks ordered disjoint intervals, complete horizons, successful exits, native commands, result hashes and exact-match counts.
+Nonzero differences are retained; Gini always requires exact equality and morphology tolerance cannot exceed 1e-12.
+A discrepancy outside tolerance writes the report and exits unsuccessfully.
+Dependency binary provenance remains covered by the separate runtime preflight, rather than reconstructed by this data audit.
+
+[Validation on retained real native results](results/generated-batch-auditor-2026-10-17)
+passes all 550 sizing inputs and 6,600 measurements at zero tolerance.
+This adds no simulations or unique coverage; it prepares independent validation of the queued production shard.
+
+```sh
+python replications/raimbault_2019/audit_generated_batches.py \
+  /path/to/batched-sizing-001 /path/to/boot-upload-002.tar.gz \
+  /path/to/generated-raw.csv.gz /new/full-source-audit.json \
+  --bootstrap-sha256 4be24f5536dc76bf459f07d11791af3ccdb467bf9e75447f1ef4622736fc8f0f \
+  --recorded-root /root/sugarscape/batched-sizing-001 \
+  --seconds 3600 --morphology-absolute-tolerance 0
+```
+
+For the queued production artifact, use its recorded input archive hash, execution root
+`/root/sugarscape/generated-production-001`, 10,800-second limit and declared `1e-12` morphology tolerance.
