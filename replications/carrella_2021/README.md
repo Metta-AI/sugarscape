@@ -2,7 +2,7 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: all 5,000 fresh author-model simulations validated; 30 Table 8 values reproduced across fully matched estimator/size comparisons.
+Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
 **Not a completed replication:** the other estimators and independent simulator work remain unfinished.
 
 ## Complete simulation replay
@@ -715,3 +715,26 @@ probability, 10.506691 for sugar endowment, 10.347184 for spice endowment, and
 Both expensive estimators have completed three of five folds. Their original processes
 remain active. The native checkpoint, compressed predictions, hashes, runtime metadata,
 and auditor are retained; no additional study completion is claimed.
+
+## Completed remaining 5,000-input estimators
+
+The [neural-network workflow](results/neuralnet-5000-complete-2026-10-17) and
+[regression-forest workflow](results/rfboot-5000-complete-2026-10-17) both exited
+successfully with all five folds. Independent audits reconstructed all original
+fold memberships and checked 7,550,000 training/test cells and 50,000 predictions
+across the two methods. Errors, baseline errors, coverage, widths, and aggregate
+scores match the retained native outputs within 1e-10.
+
+| Parameter | Neural network | Paper | Regression forest | Paper |
+| --- | ---: | ---: | ---: | ---: |
+| Initial population | 0.587812 | 0.588 | 0.472824 | 0.474 |
+| Mutation probability | 0.502640 | 0.502 | 0.538378 | 0.538 |
+| Maximum sugar endowment | 0.508427 | 0.510 | 0.448165 | 0.448 |
+| Maximum spice endowment | 0.519019 | 0.519 | 0.464153 | 0.465 |
+| Reproduction wealth | 0.742542 | 0.736 | 0.796842 | 0.797 |
+
+Two neural-network and three regression-forest cells match printed precision.
+The [updated Table 8 inventory](results/table8-coverage-2026-10-17/coverage.json)
+now covers all 75 reported values: 38 match and 37 differ. The remaining 15 table
+cells are published as NA. These differences need attribution before negative
+replication verdicts; completing the estimator runs does not complete the paper.
