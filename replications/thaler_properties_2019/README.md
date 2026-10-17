@@ -65,8 +65,8 @@ stack test SugarScape:sugarscape-test --test-arguments="--quickcheck-replay=2026
 
 The original suites are executed unchanged. No new unit or integration tests are
 introduced. [Native logs and the independent source/binary audit](results/original-suite-2026-10-17)
-are retained. All 60 archived inputs remain byte-identical. The model-level suite
-was compiled but not run, so there is no completed-study credit.
+are retained. All 60 archived inputs remain byte-identical. The model-level suite later reached its execution limit; see the retained timeout
+evidence below. There is no completed-study credit.
 
 ## Frozen quantitative ensembles
 
@@ -222,7 +222,7 @@ both yields 61 agents and final observed price standard deviation 0.181524. One 
 cannot establish a population-level result or resolve a paper claim.
 
 A [separately labelled 100-seed sensitivity ensemble](results/corrected-ensemble-recovery-2026-10-17)
-is running all three scenarios with both corrections. The [initial launch](results/corrected-ensemble-launch-2026-10-17)
+completed all three scenarios with both corrections. The [initial launch](results/corrected-ensemble-launch-2026-10-17)
 failed before producing runs because parallel Stack path resolution raced package-database
 initialization. Recovery builds the full original component set and verifies the executable
 path serially before starting workers. It retains the historical
@@ -325,9 +325,11 @@ Both the code's time-100 predicate and the prose's before-100 criterion pass 100
 in each variant. The exact binomial 95% interval is [0.963783, 1.0]; finite sampling
 does not prove universal success. The disease-persistence scenario remains unfinished.
 
-The original enabled model-test suite is now also running with replay seed 20261017,
-using its already-verified historical binary. It covers inheritance and wealth only;
-six other model properties remain disabled in the source. Its result is still pending.
+The original enabled model-test suite used replay seed 20261017 and its verified
+historical binary. It reached the 1,800-second limit while displaying `Inheritance Gini`,
+with exit code 124 and no completed assertion result. [The terminal state and log](results/model-suite-timeout-2026-10-17)
+are retained. This is an incomplete execution, not a property failure. Six other model
+properties remain disabled in the source.
 
 
 ## Complete corrected carrying-capacity ensemble
@@ -390,3 +392,26 @@ Measurements cover population, survivor vision and metabolisms, and sugar-wealth
 Combined sugar-plus-spice inequality is reported separately. The 1,000-step horizon and
 late window 801–1,000 are explicit study choices for the paper's qualitative statements.
 No ensemble conclusion is claimed from the first pair.
+
+
+## Mating and inheritance comparison
+
+[Two complete first-seed trajectories](results/demographics-first-2026-10-17) use
+`mkParamsAnimationIII_1` and `mkParamsFigureIII_7` through time 1,000. Independent
+audit verifies 111,705 snapshot-agent observations, identical initial conditions, and
+inheritance as the sole differing dynamics parameter. Final populations are 264 without
+inheritance and 1,034 with inheritance; these are single-seed observations.
+
+The remaining 99 seeds per configuration run in a separate one-CPU, 2 GiB worker,
+with a three-hour limit. The frozen protocol records final sugar Gini, population, and
+explicitly diagnostic late-window means. It distinguishes the book's 0.7 Gini target
+from the appendix's reported approximately 0.35 inheritance and 0.21 no-inheritance values.
+Reproducing the appendix's disagreement with the book would support this paper's result.
+No ensemble conclusion or completed-paper credit follows from the first pair.
+
+Restore the published CSV gzip files, then audit the first pair with:
+
+```bash
+python results/demographics-first-2026-10-17/audit_first.py \
+  /path/to/first /path/to/protocol.json /path/to/new-audit.json
+```
