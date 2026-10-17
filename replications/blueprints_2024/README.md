@@ -1,6 +1,6 @@
 # Blueprints for Machine Ethics (2024)
 
-**Incomplete replication. Original configurations recovered; historical release equivalence remains under investigation.**
+**Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
 Latest audited checkpoint: **590 / 2,000 homogeneous configurations**, covering 1,134,134 observations.
 Original-seed prefixes are raw 345, altruistic 113, egoistic 102, and utilitarian 30.
@@ -23,9 +23,10 @@ The [retained archive and audit](results/archive-audit-2026-10-15) pin repositor
 - Every configuration key and nonoperational default matches the May 28, 2024 release `Glucose/v2024.1`,
   commit `b9ca671ab7591c7b3606f2d76c33eda344d626d1`.
 
-The archive contains inputs, not result trajectories. The release predates those inputs and matches their complete schema,
-but the authors have not explicitly identified their exact experimental code revision.
-This is stronger provenance than choosing the last pre-submission release; it is not proof of code identity.
+The archive contains inputs, not result trajectories. Section IX on PDF page 20 explicitly identifies v2024.1.
+The live `Glucose/v2024.1` tag resolves to our pinned commit `b9ca671ab7591c7b3606f2d76c33eda344d626d1`.
+[Release evidence](results/release-and-runtime-audit-2026-10-17/release.json) corrects earlier notes that inferred the release solely from schema.
+Historical producer manifests remain unchanged; full results and runtime equivalence remain to be validated.
 
 The original decision models are `rawSugarscape`, `altruisticHalfLookaheadBinary`,
 `egoisticHalfLookaheadBinary`, and `benthamHalfLookaheadBinary`.
@@ -232,3 +233,14 @@ Validated prefixes are313 raw,99 altruistic,89 egoistic,28 Bentham runs, each fr
 No gaps or conflicting duplicates were found.
 This supersedes the earlier limitation that old batches had not received source-hash checks.
 It does not establish that the pinned release is the paper’s exact historical revision or complete the2,000-run homogeneous experiment.
+
+## Runtime experiment inputs
+
+[The runtime archive audit](results/release-and-runtime-audit-2026-10-17/runtime-inputs.json) checks all 1,200 configurations.
+It contains 100 shared seeds per model at 500, 5,000 and 50,000 steps; none overlaps the homogeneous archive’s 500 seeds.
+Within each model and seed, only the horizon and logfile differ.
+Paper page 19 describes the same 500 seeds, and every Table 6 group totals 500.
+[All 36 Table 6 counts](published_targets.json) are now transcribed from the rendered page 20.
+Replaying the deposited runtime archive alone cannot establish the claimed 500-seed comparison.
+Keep that archive separate from a declared reconstruction using the homogeneous seeds and changed horizons.
+Neither experiment has been run. Earlier historical-release caveats above are superseded by the paper’s explicit release statement.

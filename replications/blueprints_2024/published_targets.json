@@ -183,5 +183,84 @@
     ],
     "printed_inconsistency": "The0.00row sums103.0percent; its5.0percent worse conflictswithTable3 10/500=2.0percent. Preservedprintedvalues; notsilentlycorrected."
   },
-  "extraction": "Visually checked rendered PDF pages12and15; table text is an embedded image."
+  "extraction": "Visually checked rendered PDF pages12,15and20; tables are embedded images.",
+  "table6": {
+    "printed_page": 195608,
+    "pdf_page_one_based": 20,
+    "columns": [
+      "extinct",
+      "worse_or_equal",
+      "better"
+    ],
+    "seeds_per_model_per_horizon": 500,
+    "counts": {
+      "500": {
+        "rawSugarscape": [
+          346,
+          8,
+          146
+        ],
+        "altruisticHalfLookaheadBinary": [
+          343,
+          13,
+          144
+        ],
+        "egoisticHalfLookaheadBinary": [
+          329,
+          7,
+          164
+        ],
+        "benthamHalfLookaheadBinary": [
+          0,
+          0,
+          500
+        ]
+      },
+      "5000": {
+        "rawSugarscape": [
+          348,
+          5,
+          147
+        ],
+        "altruisticHalfLookaheadBinary": [
+          344,
+          10,
+          146
+        ],
+        "egoisticHalfLookaheadBinary": [
+          331,
+          5,
+          164
+        ],
+        "benthamHalfLookaheadBinary": [
+          0,
+          0,
+          500
+        ]
+      },
+      "50000": {
+        "rawSugarscape": [
+          348,
+          5,
+          147
+        ],
+        "altruisticHalfLookaheadBinary": [
+          344,
+          8,
+          148
+        ],
+        "egoisticHalfLookaheadBinary": [
+          331,
+          4,
+          165
+        ],
+        "benthamHalfLookaheadBinary": [
+          0,
+          0,
+          500
+        ]
+      }
+    },
+    "archive_discrepancy": "Runtime archive has100sharedseeds, none in the500seed homogeneous archive. Paper page19 sayssame500seeds. Preserve separate protocols; do not treat1200 archived runs as the6000 claimed combinations."
+  }
 }

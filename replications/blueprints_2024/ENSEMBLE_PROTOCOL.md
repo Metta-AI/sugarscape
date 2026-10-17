@@ -33,5 +33,10 @@ Do not impute undefined per-agent metrics after extinction; report their denomin
 Preserve seed pairing in between-model comparisons.
 
 Exact-input agreement is the initial criterion. A mismatch triggers source-version, rule, runtime, and measurement investigation.
-The exact author code revision is still unverified; neither matching schema nor matching a pilot establishes paper-level fidelity.
+Section IX explicitly identifies v2024.1, whose current tag matches our pinned revision. Full result and runtime fidelity still require validation.
 Selfishness, mixed societies, horizon analysis, and fork equivalence remain separate required comparisons.
+
+The deposited runtime archive has 100 seeds per model and horizon, disjoint from the homogeneous 500 seeds.
+Table 6 reports 500 seeds and the prose says they are the same seeds as before.
+Archive replay and reconstruction from homogeneous inputs must remain distinct, with changed horizons declared explicitly.
+Use `audit_runtime_inputs.py ARCHIVE_DIRECTORY NEW_JSON` to verify this input discrepancy.
