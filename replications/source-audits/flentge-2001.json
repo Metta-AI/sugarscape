@@ -1,0 +1,65 @@
+{
+  "paper": "https://www.jasss.org/4/4/3.html",
+  "status": "Source recovery and protocol audit only; no simulation result.",
+  "archived_project_page": "https://web.archive.org/web/20060811022302id_/http://www.informatik.uni-mainz.de:80/%7Eflentge/norm-sim_eng.html",
+  "thesis_url": "https://web.archive.org/web/20040204222933id_/http://www.informatik.uni-mainz.de:80/~flentge/norm-sim/norm-sim.pdf",
+  "thesis_pages": 161,
+  "visually_inspected_pdf_pages": [
+    141,
+    142
+  ],
+  "thesis_appendix": "C: experiment overview, PDF pages 141\u2013161. Page 141 states complete logs were on an accompanying CD, not in the thesis.",
+  "sha256": {
+    "paper.txt": "ae968b84fc1a9c54fccfdd37761d38b8a45b075a4a579fe1620934075d4f0ac1",
+    "archived-page.html": "9541518cf405bc714071a5740aa449d636c324afe649211c725c79111d563469",
+    "thesis.pdf": "cafd6e4cf5b7ccd87127a427e8d47f4d140442024844cfb16703fd5aee890962",
+    "source-cdx.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "source-availability.json": "2af44a45df50a4ffe4cc1f0fae3074c2cc982f39fcb77d04d0be13e0cb4f6b7f",
+    "executable-availability.json": "1547eb72f21ea00efd0d2e6236f11bf7f7dc51cd1431a16cc476cef7d7dbaf42"
+  },
+  "specification": {
+    "replicates_per_configuration": 100,
+    "steps": 2000,
+    "initial_agents": 400,
+    "metabolism_values": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "vision_values": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "capacity_multiplier": 10,
+    "growback": 1,
+    "initial_endowment_range": [
+      50,
+      100
+    ],
+    "lifespan_range": [
+      60,
+      100
+    ],
+    "initial_age": "Uniform from zero through individual maximum age",
+    "memes": 11
+  },
+  "source_search": {
+    "source_relative_url": "norm-sim/source.zip",
+    "executable_relative_url": "norm-sim/sugarscape.zip",
+    "source_cdx_records": 0,
+    "source_availability_snapshots": {},
+    "executable_availability_snapshots": {},
+    "limitation": "These archive queries do not prove that no copy exists elsewhere."
+  },
+  "unresolved": [
+    "Original Delphi4 source and executable not recovered",
+    "Exact landscape matrix and random seeds",
+    "Validate thesis table correspondence to journal figures before treating values as paper targets",
+    "Scheduling, movement ties, sanctions and newborn updates require implementation-level fidelity checks"
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "as_of": "2026-10-17T20:20:00.931269+00:00",
+  "minimum_completed_papers": 10,
+  "completed_studies": 3,
+  "wholly_positive_papers": 1,
+  "interpretation": "Three completed studies: McCulloch mixed, Dogan mixed unpublished working paper, and Izquierdo positive structural Sugarscape-appendix replication. Other study entries remain dated snapshots of their pinned commits; incomplete studies receive no completion credit.",
+  "studies": [
+    {
+      "study": "mcculloch_2022",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/3",
+      "checked_commit": "960e703f24da4f498ca423bdaa5537c3200e5c8c",
+      "status": "completed-mixed",
+      "readme": "replications/mcculloch_2022/README.md",
+      "readme_sha256": "f752c0bc7f9285a47b906e91ae384c6eee5e0ba15d91e0366a18c49b731e8817",
+      "json_evidence_files": 18,
+      "remaining_scope": "Historical seeds unavailable; retain the declared scope and conditional interpretation.",
+      "gzip_json_evidence_files": 0
+    },
+    {
+      "study": "carrella_2021",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
+      "checked_commit": "bbe444578e0e6518ec3240f6aa4bb8f5a8086ef4",
+      "status": "partial",
+      "readme": "replications/carrella_2021/README.md",
+      "readme_sha256": "b5aca375fec1fa6876d33f1a40012ebc02435555074ec1d8e0b099753e43289a",
+      "json_evidence_files": 170,
+      "remaining_scope": "All 75 reported Table 8 values evaluated: 38 printed matches and 37 unresolved discrepancies; 15 cells are published NA. All5000 author simulations replayed; independent4381/5000 inputs audited, final619 comparison pending. Two audited parser-control folds do not resolve the largest GAM outlier; full control still running.",
+      "gzip_json_evidence_files": 0
+    },
+    {
+      "study": "raimbault_2019",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
+      "checked_commit": "5e4cbd7ab318e6495d8dffa77d6ae15b15e57502",
+      "status": "running",
+      "readme": "replications/raimbault_2019/README.md",
+      "readme_sha256": "fef898602b3ee7376566abba5e1c19f7ad14db838a48fd3b65484efb10f8f5b9",
+      "json_evidence_files": 85,
+      "remaining_scope": "47133/55000 reference inputs independently audited, with94266 exact Gini measurements. Batched sizing rechecks550 existing inputs with6600 exact metrics; it adds no unique coverage or revised full-grid cost estimate. Full reference replay, generated-grid production, and spatial sensitivity remain incomplete.",
+      "gzip_json_evidence_files": 3
+    },
+    {
+      "study": "blueprints_2024",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
+      "checked_commit": "5f230321fdfa39d83a43844bd437f66551832334",
+      "status": "running",
+      "readme": "replications/blueprints_2024/README.md",
+      "readme_sha256": "3e06f6027bf5d7165b63630605c4b10b5eb2dc730d022471417ffcc411156ff1",
+      "json_evidence_files": 297,
+      "remaining_scope": "1387/2000 original homogeneous inputs and792/1200 deposited runtime inputs audited; seven runtime groups complete. Homogeneous coverage is raw500, altruistic424, egoistic345, Bentham118. Full sweeps, longer horizons, and deposited100-input versus reported500-seed runtime mismatch remain unresolved.",
+      "gzip_json_evidence_files": 37
+    },
+    {
+      "study": "bigbee_2007",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/7",
+      "checked_commit": "455e361ff77e707671e942d1ff8195065a1bf48b",
+      "status": "partial",
+      "readme": "replications/bigbee_2007/README.md",
+      "readme_sha256": "7c073c7bdcb4620cddd0302e9db27d6fd7738ac1d7129beb63d1fe737e342c51",
+      "json_evidence_files": 12,
+      "remaining_scope": "Original MASON archive replays repeat exactly but reproduction population accounting fails from time 13. Historical 2007 code/protocol alignment unresolved; later corrected behavior does not establish historical replication.",
+      "gzip_json_evidence_files": 3
+    },
+    {
+      "study": "stevenson_2021",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8",
+      "checked_commit": "efe8b9118f725ae0156ba86d84741b702a21018a",
+      "status": "partial",
+      "readme": "replications/stevenson_2021/README.md",
+      "readme_sha256": "ca831736596a5c2c23547b1befc99b5f16bb67def3ca6df3312493835c74457d",
+      "json_evidence_files": 46,
+      "remaining_scope": "Two 100-seed fixed-scenario ensembles and all 80 boundary-sensitivity runs complete. Strict wealth thresholds change age but do not resolve both scenarios. Figure6b vector/forward diagnostics document equation normalization and chaotic rounding sensitivity, not historical replication. Historical semantics, evolution, Figure3, and AppendixB agent-model comparisons remain incomplete.",
+      "gzip_json_evidence_files": 0
+    },
+    {
+      "study": "buzing_2005",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/9",
+      "checked_commit": "bcddb198efdd372fbc16f168cf3229da0836a488",
+      "status": "partial",
+      "readme": "replications/buzing_2005/README.md",
+      "readme_sha256": "23e6782ae4f6ef4f4833de1746d130ad622774eb51030f3bc2cc114f4d89a7d1",
+      "json_evidence_files": 95,
+      "remaining_scope": "Three 150-run reproduction arms complete. Paced control complete; all 150 pairs, 1,500 native files, and 300,000 harvest records match accelerated runs exactly. Historical source, inheritance, and protocol fidelity remain unresolved; no paper-level verdict.",
+      "gzip_json_evidence_files": 0
+    },
+    {
+      "study": "replacing_2023",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/10",
+      "checked_commit": "c356637cccd9d0e0cdb162640b76b5fd82435127",
+      "status": "partial",
+      "readme": "replications/replacing_2023/README.md",
+      "readme_sha256": "fb5e9d6e641f57b09c4fb6519bba298abb4cc35fcbcbc94ed080ed872caa245b",
+      "json_evidence_files": 503,
+      "remaining_scope": "Figure 2 matches 2,452 vertices; reproduction, examples, and trade/lending diagnostics complete. Disease extinction claims remain discrepant across historical revisions. Eradication prevents renewed infection under released rules but does not establish indefinite survival. Table 3 and historical fidelity remain unresolved.",
+      "gzip_json_evidence_files": 371
+    },
+    {
+      "study": "dogan_2026",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11",
+      "checked_commit": "8ebc968e3a19f3abe9787f6e9881e1b8d70c406d",
+      "status": "completed-mixed",
+      "readme": "replications/dogan_2026/README.md",
+      "readme_sha256": "516535ff4c89a1ec951af6392bf37f2fac3862257d2072562f4913a25e28ea92",
+      "json_evidence_files": 69,
+      "remaining_scope": "No unfinished reported experiment. Completed original-source fork integration and mixed claim-level verdict. Independent DTL equivalence, new causal ablations, and untested policies are not established.",
+      "verdict": "replications/dogan_2026/VERDICT.md",
+      "publication_status": "unpublished working paper",
+      "gzip_json_evidence_files": 7
+    },
+    {
+      "study": "buzing_2003",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/12",
+      "checked_commit": "e952b1a3c3cb5749cea08bafd3a63e734535e855",
+      "status": "partial",
+      "readme": "replications/buzing_2003/README.md",
+      "readme_sha256": "04a9172ab5237d68e7f72164c43e00c8cab0481989d581597c6f425f24e36908",
+      "json_evidence_files": 27,
+      "remaining_scope": "All 200 grid runs extinct; reproduction/subcycle diagnostics remain discrepant. Resource observer passes 2,500 cycle boundaries and 50 native-file parity checks. Historical fidelity, inheritance, and intermediate-stage dynamics remain unresolved.",
+      "gzip_json_evidence_files": 0
+    },
+    {
+      "study": "pike_2019",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13",
+      "status": "partial",
+      "readme": "replications/pike_2019/README.md",
+      "remaining_scope": "Complete PhaseI/II/movement grids and900-run controlled timing audit. Native versus full-step timer boundaries differ. All200 threshold-ten common-resource runs retain nonfinite health; threshold-five completion, historical source fidelity, and unresolved scientific targets prevent whole-study completion.",
+      "checked_commit": "76eb558228cc36db31d18429c078cfe7bc5ed628",
+      "readme_sha256": "b437ef014c9c4c86762800d88abde892d798136566c59a037d9894d0ac272a1f",
+      "json_evidence_files": 179,
+      "gzip_json_evidence_files": 129
+    },
+    {
+      "study": "izquierdo_2009",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/14",
+      "checked_commit": "91441ad4115b0c351a654127acc29cc16ab3ea0c",
+      "status": "replicated",
+      "readme": "replications/izquierdo_2009/README.md",
+      "readme_sha256": "2f62aa8d8fce5659ce96b46fa217aca2a060d0c81e62b95db9d6c2b2f94df152",
+      "scope": "Complete Sugarscape appendix structural result; excludes the paper\u2019s other nine models. General finite-state/irreducibility/aperiodicity proof plus independently replayed executable witnesses.",
+      "remaining_scope": "No outstanding declared structural target. Does not estimate practical mixing time or assert pseudorandom-generator ergodicity.",
+      "validation": {
+        "regeneration_states": 545,
+        "movement_decisions": 135500,
+        "replacement_decisions": 13910,
+        "return_states": 18,
+        "illegal_move_rejected": true
+      }
+    },
+    {
+      "study": "quera_2025",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
+      "checked_commit": "814dcaf01bbe53b4af5cc2403e14cfc25eae6612",
+      "status": "partial",
+      "readme": "replications/quera_2025/README.md",
+      "readme_sha256": "3d7f61cdcfa485c99b2a53269741f3d87a8737c1f2e6d35f8c3c229560d93e17",
+      "remaining_scope": "Native forward, independent movement/resource, 256-seed gradients, initialization-law and flow-wrapper audits retained. Author issue3 requests a Sugarscape training example and remains open. Figure filenames suggest a learning rate but do not establish optimizer settings. Exact prior, optimizer/loss/validation choices and full5000-epoch calibration remain outstanding.",
+      "validation": {
+        "states": 150,
+        "agent_observations": 15000,
+        "cell_observations": 93750,
+        "portable_trajectory_files_byte_identical": 9
+      },
+      "json_evidence_files": 45,
+      "gzip_json_evidence_files": 0
+    },
+    {
+      "study": "thaler_2019",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
+      "checked_commit": "44de0a00c1b07d05493f29a8a5fc44e41bb4340c",
+      "status": "partial",
+      "readme": "replications/thaler_2019/README.md",
+      "readme_sha256": "24052322f0611ba86ce76c33acfcb1af59b46488db9dfc6878cd3bbd06a4e358",
+      "json_evidence_files": 43,
+      "gzip_json_evidence_files": 0,
+      "remaining_scope": "Figure5b population reproduced; source/native builds, archived analysis, and separately instrumented transaction counters verified. Fresh timing/scaling ensembles, Figure5a provenance, and full retry tables remain unresolved. Native timing command exited128; no fresh hardware-performance verdict."
+    },
+    {
+      "study": "thaler_properties_2019",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/17",
+      "checked_commit": "8fdd959f41a0a7c2fa0725e0971db4146f4ac769",
+      "status": "partial",
+      "readme": "replications/thaler_properties_2019/README.md",
+      "readme_sha256": "3d51965091e8e081159a8d9a4bef3bcef7f057cc3a580cafde48dfe07cbf1447",
+      "json_evidence_files": 2430,
+      "gzip_json_evidence_files": 0,
+      "remaining_scope": "Original/corrected quantitative cohorts and400 combat trajectories audited. All200 culture trajectories have exploratory regional audits, not paper-specified spatial pass criteria. Native inheritance continuation and original model suite remain running. Exact pinned QuickCheck fork makes cover a warning; static harness semantics cannot establish a scientific negative. Migration/pollution, demographics completion and source/configuration discrepancies remain unresolved."
+    }
+  ],
+  "study_prs": 15,
+  "snapshot_method": "Selected updated entries pin current GitHub PR heads, committed README hashes and parsed tracked JSON evidence files under results. Scientific status derives from the linked study audits; file counts do not certify completion."
+}
