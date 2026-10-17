@@ -134,3 +134,29 @@ python replications/richmond_2023/compare_population.py EXTRACTED_SNAPSHOT NEW_A
 This establishes population replay for seven of 48 scaling conditions only.
 It does not validate individual state, the other conditions, resolution statistics,
 visualisation, scaling claims, or the whole paper. The bounded native run continues.
+
+## Resolution-counter lifecycle investigation
+
+The global `exit_condition_iterations` increments in `MovementExitCondition`.
+The histogram loop resets it before each timestep; the scaling and occupation
+loops reset only `occupied`. The reset inside the exit condition is commented out.
+The continuation check requires the counter to remain below nine. Therefore
+condition splitting cannot assume a fresh host counter reproduces the original
+sequential experiment. No split continuation is launched on that assumption.
+
+[A separately frozen observer](results/resolution-observer-launch-2026-10-17) logs
+the counter immediately before and after each step, then returns after the first
+complete 100-step, seed-zero, width-256 condition. It changes no model rule or
+random draw. All 100 population observations must match the unmodified prefix
+before interpreting the counter trace. Instrumented timings remain excluded.
+
+Command `cmd-k4iae` waits for the original qualification's terminal receipt before
+building or simulating. Its total bound is 1,800 seconds including the wait; native
+execution is limited to 120 seconds. The original source checkout remains intact
+and the observer uses a separate worktree. At the quoted rate, the command's bound
+is $2.016, excluding idle time and overlapping wait time already billed to the
+qualification run. No diagnostic outcome is yet claimed.
+
+`instrument_resolution.py ORIGINAL_MAIN NEW_OUTPUT` produces the exact observer,
+patch, and protocol after checking the original source hash. The published launch
+passed shell syntax and Python lint checks; native parity remains to be measured.

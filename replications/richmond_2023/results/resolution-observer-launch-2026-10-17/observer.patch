@@ -1,0 +1,30 @@
+--- original/src/main.cu
++++ observer/src/main.cu
+@@ -630,7 +630,9 @@
+                         for (unsigned int i = 0; i < experiment.steps; i++) {
+                             exit_condition_iterations = 0;  // reset the counter used in the exit condition
+                             std::fill(std::begin(step_unresolved_count), std::end(step_unresolved_count), 0);
++                            const unsigned int counter_before = exit_condition_iterations;
+                             cudaSimulation.step();
++                            std::cerr << "RESOLUTION_TRACE," << experiment.title << "," << repetition << "," << gridWidth << "," << i << "," << counter_before << "," << exit_condition_iterations << std::endl;
+                             // accumulate the number of unresolved at each step
+                             for (unsigned int j = 0; j < 9; j++) {
+                                 mean_unresolved_count[j] += step_unresolved_count[j];
+@@ -653,7 +655,9 @@
+                         double sum_step_time = 0;
+                         for (unsigned int i = 0; i < experiment.steps; i++) {
+                             occupied = 0;  // reset the counter used in the exit condition
++                            const unsigned int counter_before = exit_condition_iterations;
+                             cudaSimulation.step();
++                            std::cerr << "RESOLUTION_TRACE," << experiment.title << "," << repetition << "," << gridWidth << "," << i << "," << counter_before << "," << exit_condition_iterations << std::endl;
+                             unsigned int step_pop_count = occupied;
+                             double step_time = cudaSimulation.getElapsedTimeStep(i);
+                             // write step csv
+@@ -669,6 +673,7 @@
+                         const double averagePopCount = static_cast<double>(sum_pop_count) / static_cast<double>(BENCHMARK_STEPS);
+                         // log timings to csv (repetition,grid_width,pop_size,s_step_mean)
+                         csv << repetition << "," << gridWidth << "," << popSize << "," << pOccupation << "," << averageStepTime << "," << averagePopCount << std::endl;
++                        return 0;  // Diagnostic ends after the first complete 100-step condition.
+                     }
+ #endif
+                 }
