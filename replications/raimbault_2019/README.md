@@ -495,3 +495,28 @@ and spatial-sensitivity results remain outstanding, so this does not complete th
 ```sh
 python replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/validate_checkpoint_008.py /path/to/remote-reference-queue-001 /new/validation.json
 ```
+
+### Terminal prefix recovery and disjoint continuation
+
+The 24-hour command ended with exit 124. Its complete terminal archive was recovered
+and independently hash-verified after the node stopped. [The terminal audit](results/terminal-reference-2026-10-17/audit.json)
+checks all 411 sealed chunks and complete rows in eight interrupted chunks. The latter
+retain their missing exit receipts and are explicitly treated as prefixes, not successful jobs.
+
+Those prefixes contain 533 additional completed 10,000-step simulations. With the retained
+baseline, **49,366 distinct inputs reproduce 98,732 Gini measurements exactly**.
+All 53 source/dependency hashes verify. Every row's index, seed, population, horizon,
+and both Gini values match the original reference. No interrupted row is discarded
+or counted twice; no incomplete row receives credit.
+
+The auditor derives the exact complement of validated indices. The [frozen continuation](results/terminal-reference-2026-10-17/production-plan.json)
+contains only those 5,634 inputs and uses the same pinned native runner and eight workers.
+Command `cmd-tzgty` is bounded by five hours including dependency restoration; native
+execution is capped at 4.5 hours. Maximum compute at the quoted $0.0096/minute is $2.88,
+excluding idle time. Terminal evidence is archived before the provider's idle shutdown.
+This continuation is not yet validated. The full generated-landscape and spatial-sensitivity
+requirements remain outstanding even if the reference grid completes.
+
+```sh
+python replications/raimbault_2019/audit_terminal_reference.py /path/to/remote-reference-queue-001 /new/terminal-audit.json
+```
