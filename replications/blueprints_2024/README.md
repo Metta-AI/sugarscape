@@ -618,3 +618,22 @@ runs, and two Bentham 5,000-step runs. Coverage now reaches altruistic index 82,
 raw index 10, and Bentham index 35. Egoistic 50,000-step coverage remains nine inputs.
 All counted trajectories finish their configured horizon or become extinct.
 These remain incomplete groups, distinct from the paper's 500-seed Table 6 experiment.
+
+## Fifth runtime checkpoint: 759 inputs validated
+
+[Recovery checkpoint eight and round-two checkpoint seven](results/runtime-checkpoints-fifth-2026-10-17)
+add 20 distinct deposited inputs and 146,617 observations. Deduplicated coverage is
+**759/1,200 inputs and 1,232,552 observations**. Every prior audit hash and overlapping
+result row agrees exactly.
+
+All four native trajectory audits pass. Recovery covers altruistic 5,000-step indices
+17–95 and raw 50,000-step indices 0–12. Round two covers Bentham 5,000-step indices
+26–39 and egoistic 50,000-step indices 0–9. These are incomplete declared intervals.
+
+The two new-input archives retain only newly completed trajectories and current metadata.
+Overlaying them on the preceding published checkpoint archives reproduces all four
+full audit JSONs exactly. Reconstruction manifests pin both base and new archives;
+original full-checkpoint transfer receipts remain separate evidence.
+
+This remains coverage of the deposited 100-seed groups, not the paper's 500-seed
+Table 6 experiment. No complete runtime-table or whole-paper verdict is claimed.
