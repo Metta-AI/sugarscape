@@ -758,3 +758,34 @@ checks the pinned control protocol and preserves original manifests and ledgers.
 It explicitly excludes the spice-book scenario from trade inference. Full mode
 requires all 100 pairs. The actual first-pair full-mode invocation rejects incomplete
 coverage, while the historical original 100-pair scientific report remains identical.
+
+## Corrected spice: complete cohorts and source sensitivity
+
+[Both corrected 100-seed cohorts](results/spice-corrected-ensembles-2026-10-17)
+are complete: 200 trajectories and 2,231,185 snapshot agent observations.
+The full independent audit and compressed archive readback agree exactly.
+
+| Population | Book settings, mean [95% interval] | Alternative settings, mean [95% interval] |
+| --- | --- | --- |
+| Step 100 | 107.62 [106.33, 108.91] | 126.83 [125.41, 128.25] |
+| Step 500 | 96.60 [95.61, 97.59] | 111.25 [109.76, 112.74] |
+| Step 1,000 | 92.23 [91.24, 93.22] | 108.32 [106.70, 109.94] |
+| Steps 801–1,000 | 92.8656 [91.8785, 93.8527] | 108.6096 [107.0125, 110.2068] |
+
+The final paired book-minus-control change is −16.09 agents [−17.97, −14.21].
+Thirty-one book-setting runs cross below 90 by step 1,000; no alternative-setting
+run does. Neither configuration becomes extinct. The
+[population figure](results/spice-corrected-ensembles-2026-10-17/population.png)
+shows the full and late trajectories with pointwise intervals.
+
+[Same-seed source comparisons](results/spice-corrected-ensembles-2026-10-17/source-sensitivity.json)
+estimate the combined coordinate/observation corrections. Final population changes
+by +0.39 [−0.076, 0.856] under book settings and +0.31 [−0.272, 0.892]
+under alternative settings. At step 500, the book-setting change is +0.71
+[0.238, 1.182]. These are pointwise intervals, not simultaneous or equivalence tests.
+
+The corrections do not bring the alternative-setting mean near the appendix's
+approximately 97-agent description. No numerical equivalence tolerance was supplied,
+so these measurements remain explicit rather than inventing a pass/fail boundary.
+Independent reference fidelity and other appendix categories still prevent a whole-paper verdict.
+The completed alternative-setting outputs also supply all corrected trade-off controls.
