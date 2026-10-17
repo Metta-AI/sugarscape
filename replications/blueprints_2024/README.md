@@ -799,3 +799,20 @@ Incomplete prefixes are not full-ensemble proportions or additional completed st
 All recorded source pins, original configurations, compressed/raw trajectory hashes, finite observations and terminal conditions pass.
 Reconciliation verifies prior audit hashes and original seed ordering; two agreeing duplicate pilot records still count only once.
 The retained manifest, frozen ledger, audits and reconciliation command identify every included trajectory.
+
+## Runtime recovery checkpoint seven
+
+[The downloaded recovery checkpoint](results/runtime-storage-recovery-seventh-2026-10-17)
+validates 20 original raw 50,000-step inputs, indices `[27,47)`, and three altruistic 50,000-step inputs, indices `[0,3)`.
+The checkpoint contains 352,836 observations. Seven inputs overlap prior evidence and match exactly.
+The remaining 16 add 301,879 observations, bringing coverage to **827/1,200 unique runtime inputs and 1,877,946 observations**.
+Raw 50,000-step coverage reaches 47/100; altruistic 50,000-step coverage reaches 3/100.
+Seven other model/horizon groups remain complete.
+
+The 69,593,761-byte archive matches its sealed SHA-256
+`c71d02f5a694854a8645c1d2b5cc5ae550a91e7a4efe725218fca743a4f31d01`.
+Every completed run passes original configuration, source pin, native exit, full trajectory hash, finite observation and terminal-condition checks.
+Reconciliation verifies prior audit hashes and all overlapping record fields, including raw trajectory hashes.
+Compact audits, frozen ledgers and export receipts accompany the readback record; full native outputs remain preserved locally and in object storage.
+These are completed deposited runtime inputs, not validation of the paper's separate 500-seed timing experiment.
+The study remains incomplete.
