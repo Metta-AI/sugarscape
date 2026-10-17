@@ -396,3 +396,24 @@ The simulation limit is one hour; bootstrap setup and execution are bounded sepa
 Official NetLogo and Commons Math downloads match the pinned runtime hashes, and every packaged member passes byte-for-byte readback.
 The queued-node end-to-end bootstrap remains unverified until it executes.
 This measures sample throughput; batch-level timing does not identify per-stratum CPU costs, so it cannot alone replace the weighted full-ensemble cost projection.
+
+### Fourth remote reference checkpoint
+
+[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-005-independent-validation.json) checks 197 sealed chunks containing 19,594 remote inputs.
+Combined with the retained 7,933 local inputs, coverage is **27,527/55,000 unique simulations**, with 55,054 exact Gini comparisons.
+All 53 source and dependency files match their pinned hashes.
+Earlier remote checkpoints are contained in this snapshot and are not added again.
+
+The complete 1,506,165-byte checkpoint archive is retained in this PR.
+Its SHA-256 is `8847b24c02ded37e190060ccf2d681c901de94c0a163642a0756cde65cbe30bc`.
+The native worker remains active; incomplete chunks were excluded from the export.
+This checkpoint protects completed evidence after a different provider host failed.
+Generated landscapes, fresh spatial comparisons and paper-level replication remain incomplete.
+
+```sh
+python replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/validate_checkpoint_005.py \
+  /path/to/remote-reference-queue-001 /new/checkpoint-validation.json
+```
+
+The evidence root includes the retained local baseline, extracted checkpoint and production plan.
+The pinned runtime files remain in its sibling `remote-cpu-pilot-001/local-package-proof-002` directory.
