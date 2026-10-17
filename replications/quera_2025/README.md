@@ -175,3 +175,19 @@ These observations are descriptive; no statistical rejection or calibrated-poste
 
 `analyze_initialization.py SOURCE TRACE NEW_OUTPUT` reproduces the analysis from the retained movement traces.
 The native sampler remains unchanged. Its effect on the paper’s calibration comparisons still requires investigation.
+
+## Refreshed calibration-source search
+
+[The source inventory](results/calibration-fidelity-2026-10-17/audit.json) records freshly
+fetched main/submission revisions for DiffABM and BlackBIRDS. DiffABM's author-opened
+[issue to add a Sugarscape training example](https://github.com/arnauqb/DiffABM.jl/issues/3)
+remains open, without comments. The repository has no release assets supplying an
+experiment package. This supports a specific missing-artifact finding, not a claim
+that no implementation exists elsewhere.
+
+The paper source references figure filenames containing
+`calibration_sugarscape_w_0.0001_lr_0.0005`. This suggests a learning-rate value of
+0.0005, but filenames do not establish the optimizer configuration or the meaning
+of `w`. In particular, `w` is not evidence of optimizer weight decay. The appendix
+still omits the exact prior, loss-kernel settings, and validation-data construction.
+These hints do not justify labeling a reconstructed calibration as the paper's run.
