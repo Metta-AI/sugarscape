@@ -599,3 +599,11 @@ All five printed scores agree, as in the isolated point-estimate calculation; no
 The largest prediction difference from that calculation is 3.64e-11.
 The saved random state differs from the preceding semi-automatic checkpoint, confirming another state advance before the forest stage.
 The actual checkpoint and source hashes are retained. The random-forest checkpoint remains pending.
+
+## Regression-forest first-fold checkpoint
+
+The [first completed 5,000-input regression-forest fold](results/rfboot-5000-first-fold-2026-10-17/audit.json) passes independent validation.
+Reconstructing the original seed-zero partition matches all 755,000 training/test input cells exactly, after normalizing row labels reset by the author’s filtering.
+All 5,000 held-out parameter predictions reproduce the saved root-mean-square errors, interval coverage, and interval widths within 1e-10.
+The actual fold, predictions, audit script, package versions, and hashes are retained.
+The remaining four folds are still computing; this checkpoint supplies no aggregate Table 8 score and adds no completed target.
