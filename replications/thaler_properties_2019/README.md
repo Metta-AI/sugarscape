@@ -789,3 +789,30 @@ approximately 97-agent description. No numerical equivalence tolerance was suppl
 so these measurements remain explicit rather than inventing a pass/fail boundary.
 Independent reference fidelity and other appendix categories still prevent a whole-paper verdict.
 The completed alternative-setting outputs also supply all corrected trade-off controls.
+
+## Disease-count reconciliation: retained seed plus remaining inputs
+
+[The reconciliation auditor](audit_disease_count_ensemble.py) verifies pinned native
+sources and binaries, rechecks the retained first-seed files, and invokes the independent
+trajectory auditor for indices 1–99. It checks every resolved pool has 25 entries
+of length 1–10 and reports distinct counts separately. It recomputes final infection
+predicates and clearance times from complete summary trajectories.
+
+[Validation on 62 actual inputs](results/disease-count-reconciliation-2026-10-17)
+reconciles 276,344 agent observations. All 62 count-corrected trajectories end with
+zero infected agents and surviving populations. Their pools contain 19–25 distinct
+diseases. These are partial results, not a full-cohort negative replication.
+
+Frozen compressed-data readback reproduces the complete merged audit exactly.
+Full mode rejects the actual incomplete cohort before creating an output directory.
+Its successful 100-input path remains unverified until the real remaining runs finish;
+prefix mode never emits confidence intervals. The combined-correction cohort remains
+separate, and no first seed or no-trade control is rerun.
+
+```sh
+python audit_disease_count_ensemble.py PROTOCOL NATIVE_HOME FIRST_AUDIT RUN OUTPUT --allow-prefix
+```
+
+Omit `--allow-prefix` only after the 99-input worker produces its completion marker.
+The retained first audit is the pinned `audit_disease_count_correction.py` output;
+its source-fidelity controls and raw files remain linked evidence.
