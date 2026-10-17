@@ -1,0 +1,80 @@
+{
+  "source_revision": "f5851488bf2369e2bbdc3f2499ed69c142de9fec",
+  "method": "Manual full-call-path inspection of hash-verified original source. No simulated outcomes inferred.",
+  "source_files": [
+    {
+      "path": "criterion/sugarscape-seq/src/Init.hs",
+      "sha256": "3ae5a4f24a656e2380e244e7c82872ac2b7e90205c86fca9a54dec16aebfabad",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-seq/src/Init.hs"
+    },
+    {
+      "path": "criterion/sugarscape-seq/src/Simulation.hs",
+      "sha256": "6fdaff56fde21e4340a6549bf968688ec7c349e887a89934bff8fc94ee6e8f7a",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-seq/src/Simulation.hs"
+    },
+    {
+      "path": "criterion/sugarscape-seq/src/Environment.hs",
+      "sha256": "7245ee03b694a48dc06044efdd250b9c8f4a8042342f041703c25bae9cdfb196",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-seq/src/Environment.hs"
+    },
+    {
+      "path": "criterion/sugarscape-seq/src/Agent.hs",
+      "sha256": "41235bb97921044a1eb0e441b0f35de1896bbda3e72fb05a638ac225fae35b8c",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-seq/src/Agent.hs"
+    },
+    {
+      "path": "criterion/sugarscape-seq/src/AgentMonad.hs",
+      "sha256": "2024f694cac93340fbbbe682e6bc470d02a10ecf764c3054a1e2fe18ca9db20b",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-seq/src/AgentMonad.hs"
+    },
+    {
+      "path": "criterion/sugarscape-io/src/Main.hs",
+      "sha256": "ee8a421e5db22fe42c601d16154cf2bf582307ca10c5cd522836c536fb83c6ce",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-io/src/Main.hs"
+    },
+    {
+      "path": "criterion/sugarscape-io/src/Simulation.hs",
+      "sha256": "b1ac620f16faee305ab82161527208926aee743f63085858d7473c3c8f994b5c",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-io/src/Simulation.hs"
+    },
+    {
+      "path": "criterion/sugarscape-tvar/src/Main.hs",
+      "sha256": "a71f5f7d3e478c92317404c1505a4fae586d9a719560f2b3d225a9779c47c338",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-tvar/src/Main.hs"
+    },
+    {
+      "path": "criterion/sugarscape-tvar/src/Simulation.hs",
+      "sha256": "ecb3e8e141ff542d8e2dd25bd3ec1e4c4d774c9e0d48283d53c84bc50d8fee67",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-tvar/src/Simulation.hs"
+    },
+    {
+      "path": "criterion/sugarscape-tarray/src/Main.hs",
+      "sha256": "4555ebea810468a502dac191fde74c947a3f3224a026df9e64fa09ec87676c9d",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-tarray/src/Main.hs"
+    },
+    {
+      "path": "criterion/sugarscape-tarray/src/Simulation.hs",
+      "sha256": "7e396334956c00bb75e30478b55e7bfb1b3f5cce9e006cfcdc3ddabd76917274",
+      "url": "https://github.com/thalerjonathan/haskell-stm-sugarscape/blob/f5851488bf2369e2bbdc3f2499ed69c142de9fec/criterion/sugarscape-tarray/src/Simulation.hs"
+    }
+  ],
+  "findings": [
+    {
+      "variant": "seq",
+      "finding": "Init adds environment behavior as ID0 to agent list. Simulation shuffles complete behavior list each step and executes it sequentially. Regrowth therefore occurs at its shuffled position, not necessarily after population."
+    },
+    {
+      "variant": "io,tvar,tarray",
+      "finding": "Main sets envConc=False. Simulation waits for all agent outputs before stepping the separate environment behavior."
+    },
+    {
+      "variant": "seq",
+      "finding": "chapterII subtracts metabolism and removes starved agents before movement/harvest. Surviving agents then emit observables; the environment emits none. Population exporter length counts living agents, excluding environment."
+    },
+    {
+      "variant": "seq",
+      "finding": "simulationStep returns the pre-increment clock paired with post-step outputs. The 1000-row exporter therefore labels processed steps0..999; do not prepend an initial-state row."
+    }
+  ],
+  "consequence": "Preserve released model for Figure5 replay. Do not claim all variants share the same environment schedule. Compare dynamics before attributing timing differences solely to synchronization. No negative replication verdict."
+}

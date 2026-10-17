@@ -1,0 +1,20 @@
+{
+  "scope": "Fresh Tables6/8 original Criterion measurements on reserved8physical-core CPU node. Table9 16/32/64conditions remain pending larger hardware.",
+  "source_revision": "f5851488bf2369e2bbdc3f2499ed69c142de9fec",
+  "compiler": "8.4.3",
+  "criterion": "1.4.1.0",
+  "conditions": 45,
+  "phase_order": "Table6 first, then Table8; each phase shuffled with local Random20261017 before measurements.",
+  "sampling": "Unmodified Criterion defaults and original benchmark names, HTML output. Require raw iteration counts1,2,3,4 as in author reports.",
+  "fit_rule": "R-squared>=0.99. At most3 attempts per condition. Preserve all attempts and choose first passing fit. A condition with no passing fit remains unresolved.",
+  "comparison": "Absolute seconds are hardware-dependent, reported descriptively. Compare all original per-condition relative rankings and confidence intervals, preserving contrary results. No new tolerance applied to timing values.",
+  "hardware": "Record provider resource limits, CPU topology, cgroups, affinity, platform and clock info before measurements. No other workload on this task node. Eight reserved physical cores differ from original four-core/eight-thread i7-8550U; results establish cross-hardware replication only.",
+  "limits": {
+    "native_seconds": 36000,
+    "max_seconds_per_attempt": 3600,
+    "node_outer_minutes": 720,
+    "build_jobs": 4
+  },
+  "completeness": "All45conditions needed for local-machine table coverage; retries/Table9/concurrent-dynamics remain separate full-study targets. Partial deadline results retain missing conditions.",
+  "status": "Frozen before any native non-emulated timing measurement."
+}
