@@ -90,19 +90,20 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("protocol", type=Path)
 parser.add_argument("native", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--variant", choices=["original", "corrected"], default="original")
 parser.add_argument("--book", type=Path, nargs="+", required=True)
 parser.add_argument("--control", type=Path, nargs="+", required=True)
 parser.add_argument("--allow-prefix", action="store_true")
 args = parser.parse_args()
 protocol = json.loads(args.protocol.read_text())
-variant = protocol["variants"]["original"]
+variant = protocol["variants"][args.variant]
 assert (
     protocol["replications"]
     == len(protocol["seeds"])
     == len(set(protocol["seeds"]))
     == 100
 )
-assert protocol["scenarios"] == [
+assert [s for s in protocol["scenarios"] if s["key"] == "spice_book"] == [
     {
         "key": "spice_book",
         "constructor": "mkParamsAnimationIV_1",
@@ -135,8 +136,8 @@ for key, constructor, roots in [
     for root in roots:
         manifest = json.loads((root / "manifest.json").read_text())
         run_protocol = manifest["protocol"]
-        assert manifest["variant"] == "original"
-        assert run_protocol["variants"]["original"] == variant
+        assert manifest["variant"] == args.variant
+        assert run_protocol["variants"][args.variant] == variant
         assert run_protocol["seeds"] == protocol["seeds"]
         scenario = [s for s in run_protocol["scenarios"] if s["key"] == key]
         assert scenario == [
@@ -176,7 +177,7 @@ for key, constructor, roots in [
         )
         for record in selected:
             assert (
-                record["variant"] == "original"
+                record["variant"] == args.variant
                 and record["steps"] == 1000
                 and record["summary_rows"] == 1001
             )
@@ -229,6 +230,7 @@ if not args.allow_prefix:
             estimates[label] = {"mean": mean, "ci95": [mean - margin, mean + margin]}
         comparisons.append({"metric": metric, "n": 100, "estimates": estimates})
 report = {
+    "source_variant": args.variant,
     "protocol_sha256": hashlib.sha256(args.protocol.read_bytes()).hexdigest(),
     "auditor_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
     "complete_ensemble": not args.allow_prefix,
@@ -240,7 +242,7 @@ report = {
     },
     "results": results,
     "comparisons": comparisons,
-    "scope": "Original A10 configurations,100seed cohorts. Initial agents can differ. Population endpoints and late windows remain explicit; no exact-point or invented-equivalence verdict for approximate appendix values. Prefixes emit no inference.",
+    "scope": "A10 configurations,100seed cohorts; corrected source is diagnostic. Initial agents can differ. Population endpoints and late windows remain explicit; no exact-point or invented-equivalence verdict for approximate appendix values. Prefixes emit no inference.",
 }
 assert not args.output.exists()
 snapshot_dir = args.output.with_name(args.output.stem + "-ledgers")

@@ -582,3 +582,39 @@ comparisons. Spatial front and invasion claims require additional event analysis
 `audit_correction.py ROOT ORIGINAL_OBSERVER NEW_OUTPUT HISTORICAL_TRACE` checks the
 exact correction, unchanged controls, matched initialization and corrected event
 accounting after rebuilding source trees and restoring the archived CSV files.
+
+
+## Complete original spice comparison
+
+[All 100 matched seeds](results/spice-ensembles-2026-10-17) now pass independent
+audit: 200 runs and 2,223,578 snapshot-agent observations. The extracted gzip-only
+archive reproduces every result and aggregate comparison exactly.
+
+| Population measurement | Book settings, mean [95% interval] | NetLogo-like settings, mean [95% interval] |
+| --- | --- | --- |
+| Time 100 | 107.19 [105.93, 108.45] | 127.22 [125.76, 128.68] |
+| Time 500 | 95.89 [94.87, 96.91] | 111.12 [109.71, 112.53] |
+| Time 1,000 | 91.84 [90.82, 92.86] | 108.01 [106.46, 109.56] |
+| Within-run mean, 801–1,000 | 92.52 [91.50, 93.54] | 108.33 [106.81, 109.86] |
+
+At time 1,000, the same-seed book-minus-control mean difference is −16.17, with
+95% interval [−18.01, −14.33]. No population becomes extinct. Only 26/100 book-setting
+runs fall below 90 by time 1,000; none of the control runs do. The remaining cases
+stay explicit rather than being dropped from crossing-time analysis.
+
+The [population figure](results/spice-ensembles-2026-10-17/population.png) shows means
+and pointwise intervals. These measurements differ from the appendix's approximate
+below-90 and near-97 descriptions. They do not establish equivalence or a validated
+negative replication. The initial source defects and independent implementation
+fidelity still require investigation. The original dataset remains unchanged.
+
+A [separate source-correction cohort](results/spice-corrected-first-2026-10-17) uses
+the previously validated coordinate-index and observation corrections. The first
+full pair passes the same audit with `--variant corrected`; the remaining 99 seeds
+per configuration run under one CPU, 2 GiB, and a three-hour cap. Its first-seed final
+populations are 82 and 102, compared with historical 85 and 103. No corrected ensemble
+conclusion follows from that pair.
+
+The extended auditor reproduces all 100 historical results exactly in original mode.
+The archived original-only auditor is also retained beside its protocol, preserving
+its original hash. No completed-paper credit follows from this partial appendix result.
