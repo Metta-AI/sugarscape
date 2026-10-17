@@ -606,7 +606,7 @@ The [first completed 5,000-input regression-forest fold](results/rfboot-5000-fir
 Reconstructing the original seed-zero partition matches all 755,000 training/test input cells exactly, after normalizing row labels reset by the author’s filtering.
 All 5,000 held-out parameter predictions reproduce the saved root-mean-square errors, interval coverage, and interval widths within 1e-10.
 The actual fold, predictions, audit script, package versions, and hashes are retained.
-The remaining four folds are still computing; this checkpoint supplies no aggregate Table 8 score and adds no completed target.
+Four folds remained at this checkpoint. The second-fold update below supersedes that count; no aggregate Table 8 score is claimed.
 
 ## Completed sequential quantile-random-forest diagnostic
 
@@ -667,4 +667,24 @@ Root-mean-square errors, interval coverage, and interval widths agree with the c
 The native ABC-neural-network result stores posterior medians under `medians`; the earlier forest audit expected `predictions`.
 The failed audit attempt is retained, and the corrected audit reads the native field without refitting or changing the simulation.
 The actual checkpoint, exported predictions, package versions, and hashes are included.
-The remaining four folds are still running. This checkpoint supplies no aggregate Table 8 score and adds no completed target.
+Four folds remained at this checkpoint. The second-fold update below supersedes that count; no aggregate Table 8 score is claimed.
+
+## Second-fold checkpoints
+
+The neural-network and regression-forest estimators have each completed two of five folds.
+Their second folds pass independent reconstruction of the original seed-zero partition:
+4,000 training rows, 1,000 held-out rows, and all 755,000 input cells match exactly.
+Each audit checks 5,000 predictions and recomputes errors, coverage and interval widths
+within 1e-10 of the native checkpoint.
+
+[Neural-network fold two](results/neuralnet-5000-second-fold-2026-10-17/audit.json)
+has parameter errors 46.85941829, 0.02945162, 10.30926337, 10.56059195 and 6.18819910.
+[Regression-forest fold two](results/rfboot-5000-second-fold-2026-10-17/audit.json)
+has errors 59.95620953, 0.02618469, 11.43422205, 11.23398809 and 5.00277238.
+Parameter order is initial population, mutation probability, maximum sugar endowment,
+maximum spice endowment and reproduction wealth. These are root-mean-square errors,
+not the paper's aggregate cross-validation scores.
+
+Both checkpoints, prediction exports, runtime metadata and hashes are retained.
+Three folds remain for each estimator. No aggregate Table 8 score or additional
+completed study is claimed.
