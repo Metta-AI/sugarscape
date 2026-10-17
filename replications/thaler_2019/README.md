@@ -448,3 +448,16 @@ Their descriptive paper/native timings, condition identities and report hashes a
 The remaining fifteen conditions are still required; this prefix does not establish full population scaling.
 Hardware differences and the four-sample Criterion design retain the limitations stated above.
 The original benchmark continues; no condition was restarted for this readback.
+
+### Table 9 source and hardware preflight
+
+[The source-verified preflight](timing/table9-preflight.json) retains all six original launch conditions:
+500 agents without rebirth and 2,500 with rebirth, each at 16, 32 and 64 Haskell capabilities.
+The pinned timing revision disables statistics instrumentation. Retry measurements must use separate instrumented processes.
+
+The paper identifies `m5ad.16xlarge`. [AWS documents this instance](https://docs.aws.amazon.com/ec2/latest/instancetypes/gp.html)
+as 64 logical CPUs on 32 physical cores, with two threads per core and an AMD EPYC 7571 processor.
+Thus, the paper's core labels must not be interpreted as evidence of 64 physical cores.
+Its historical process affinity remains unknown.
+A future allocation must record actual CPU quota, affinity and topology; the current eight-core allocation cannot substitute.
+The six timings, six retry ratios and scaling comparison remain required. This preflight adds no completed experiment.
