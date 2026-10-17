@@ -567,3 +567,15 @@ The ten exact file comparisons validate the default parameterization path over 2
 The existing homogeneous cloud threshold-ten ensemble supplies the comparator; local runs remain separate sensitivity evidence.
 The new runner freezes source and protocol, records every exit and file hash, and fails below 8 GiB free space.
 All numerical failures remain in raw outputs. Completion requires independent audits and declared paired/distribution analyses; launch alone supplies no result.
+
+## Threshold-five raw-output audit
+
+`audit_common_resources.py RUN prefix|complete OUTPUT --threshold 5` now validates the distinct 200-condition threshold-five protocol and adapter layout.
+It checks frozen source hashes, the configured threshold/seed/variant, exactly 1,000 grouping calls, every retained file hash, and individual identities against native health records.
+The existing threshold-ten path still reproduces its two earlier per-run summaries and 2,000-row price-measurement CSV exactly.
+Complete mode rejects the one-condition prefix before creating an output directory.
+
+[The first completed threshold-five condition](results/common-five-prefix-2026-10-17/audit/audit.json), one-level seed zero, contains 181,317 independently checked health records and 1,000 reconstructed price-step measurements.
+It finishes with 181 individuals, but 131,177 health records contain nonfinite holdings, starting at step 69.
+Its numerical validation fails. The higher survivor count therefore does not establish the paper’s economic survival claim.
+The raw archive, source/configuration receipts, numerical diagnosis, and completeness rejection are retained; the full grid remains pending.

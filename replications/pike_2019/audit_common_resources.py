@@ -13,6 +13,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
 parser.add_argument("mode", choices=["prefix", "complete"])
 parser.add_argument("output", type=Path)
+parser.add_argument("--threshold", type=int, choices=[5, 10], default=10)
 parser.add_argument(
     "--start-index", type=int, default=0, help="First ordinal in the declared full grid"
 )
@@ -23,42 +24,59 @@ parser.add_argument(
 )
 args = parser.parse_args()
 recorded_root = args.run if args.recorded_root is None else args.recorded_root
-assert 0 <= args.start_index < 198
+required = 200 if args.threshold == 5 else 198
+seeds = list(range(100)) if args.threshold == 5 else list(range(1, 100))
+seed_key = "seed" if args.threshold == 5 else "numpy_seed"
+assert 0 <= args.start_index < required
 assert not args.output.exists()
 manifest_bytes = (args.run / "manifest.json").read_bytes()
 manifest = json.loads(manifest_bytes)
-assert manifest["required_runs"] == 198 and manifest["steps"] == 1000
-assert manifest["numpy_seeds"] == list(range(1, 100)) and manifest["mesa_seed"] == 42
+assert manifest["required_runs"] == required and manifest["steps"] == 1000
+if args.threshold == 5:
+    assert manifest["seeds"] == seeds and manifest["threshold"] == 5
+    source_hashes = manifest["source_sha256"]
+    assert set(source_hashes) == {
+        "run.py",
+        "run_common_threshold.py",
+        "run_common_five.py",
+        "COMMON_THRESHOLD_PROTOCOL.md",
+    }
+else:
+    assert manifest["numpy_seeds"] == seeds and manifest["mesa_seed"] == 42
+    source_hashes = manifest["source_hashes"]
+    assert set(source_hashes) == {
+        "run.py",
+        "run_common_resources.py",
+        "COMMON_RESOURCE_PROTOCOL.md",
+    }
 assert manifest["variants"] == ["common-one", "common-multi"]
-for name, digest in manifest["source_hashes"].items():
+for name, digest in source_hashes.items():
     assert hashlib.sha256((args.run / name).read_bytes()).hexdigest() == digest
 ledger = (args.run / "completed.jsonl").read_bytes()
 records = [json.loads(line) for line in ledger.splitlines()]
-expected = [
-    (seed, variant) for seed in range(1, 100) for variant in manifest["variants"]
-]
-assert [(r["numpy_seed"], r["variant"]) for r in records] == expected[
+expected = [(seed, variant) for seed in seeds for variant in manifest["variants"]]
+assert [(r[seed_key], r["variant"]) for r in records] == expected[
     args.start_index : args.start_index + len(records)
 ]
-assert 0 < len(records) <= 198 - args.start_index
+assert 0 < len(records) <= required - args.start_index
 if args.mode == "complete":
     assert args.start_index == 0, "Full-ensemble validation starts at ordinal zero"
-    assert len(records) == 198, "All 198 declared runs are required"
+    assert len(records) == required, f"All {required} declared runs are required"
     assert json.loads((args.run / "complete.json").read_text()) == {
-        "completed_runs": 198
+        "completed_runs": required
     }
 measurements = []
 summaries = []
 health_count = 0
 for record in records:
-    seed, variant = record["numpy_seed"], record["variant"]
+    seed, variant = record[seed_key], record["variant"]
     stem = f"{variant}-{seed}"
     run = args.run / stem
     assert record["exit_code"] == 0
     assert json.loads((args.run / (stem + ".exit.json")).read_text()) == {
         "exit_code": 0
     }
-    assert set(record["hashes"]) == {
+    native_files = {
         "manifest.json",
         "initial-agents.json",
         "prices.json",
@@ -68,9 +86,36 @@ for record in records:
         "complete.json",
         "exit.json",
     }
-    assert record["command"][-3:] == [variant, str(seed), str(recorded_root / stem)]
-    for name, digest in record["hashes"].items():
-        assert hashlib.sha256((run / name).read_bytes()).hexdigest() == digest
+    if args.threshold == 5:
+        assert record["threshold"] == 5
+        assert record["command"][-4:] == [
+            variant,
+            "5",
+            str(seed),
+            str(recorded_root / stem),
+        ]
+        assert set(record["sha256"]) == {"run/" + name for name in native_files} | {
+            "configuration.json",
+            "parameterization-complete.json",
+        }
+        for name, digest in record["sha256"].items():
+            assert hashlib.sha256((run / name).read_bytes()).hexdigest() == digest
+        configuration = json.loads((run / "configuration.json").read_text())
+        assert [
+            configuration[k] for k in ["variant", "threshold", "seed", "steps"]
+        ] == [variant, 5, seed, 1000]
+        assert (
+            configuration["adapter_sha256"] == source_hashes["run_common_threshold.py"]
+        )
+        assert json.loads((run / "parameterization-complete.json").read_text()) == {
+            "grouping_calls": 1000
+        }
+        run = run / "run"
+    else:
+        assert set(record["hashes"]) == native_files
+        assert record["command"][-3:] == [variant, str(seed), str(recorded_root / stem)]
+        for name, digest in record["hashes"].items():
+            assert hashlib.sha256((run / name).read_bytes()).hexdigest() == digest
     metadata = json.loads((run / "manifest.json").read_text())
     assert (
         metadata["variant"],
@@ -81,7 +126,7 @@ for record in records:
     assert metadata["revision"] == "585e53398f4f58e89ec184c83bb20819f0e4c96a"
     assert metadata["library_revision"] == "99d2091721076df9fff32e8b49a0e33e98c34a6f"
     assert metadata["pythonhashseed"] == "0" and metadata["policy_random_seed"] == seed
-    assert metadata["runner_sha256"] == manifest["source_hashes"]["run.py"]
+    assert metadata["runner_sha256"] == source_hashes["run.py"]
     assert [metadata[k] for k in ["python", "mesa", "numpy", "networkx"]] == [
         "3.11.14",
         "0.8.5",
@@ -163,21 +208,23 @@ for record in records:
     )
 report = {
     "mode": args.mode,
+    "threshold": args.threshold,
+    "required_runs": required,
     "structurally_audited_runs": len(records),
     "numerically_failed_runs": sum(
         r["numeric_validation"] == "failed" for r in summaries
     ),
     "ordinal_interval": [args.start_index, args.start_index + len(records)],
     "recorded_root": str(recorded_root),
-    "complete_new_seed_batch": len(records) == 198,
-    "full_grid_includes_two_separate_seed_zero_runs": True,
+    "complete_new_seed_batch": len(records) == required,
+    "full_grid_includes_two_separate_seed_zero_runs": args.threshold == 10,
     "health_records": health_count,
     "price_step_records": len(measurements),
     "runs": summaries,
     "manifest_sha256": hashlib.sha256(manifest_bytes).hexdigest(),
     "ledger_sha256": hashlib.sha256(ledger).hexdigest(),
     "analyzer_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-    "scope": "Structural source/file/identity audit plus explicit numerical-failure diagnosis. Infinite holdings are retained and counted as failures, not converted into passing economic results. Price/dispersion remain undefined where mathematically undefined. The complete new-seed batch still requires two separately audited seed-zero runs. No paper verdict.",
+    "scope": "Structural source/file/identity audit plus explicit numerical-failure diagnosis. Infinite holdings are retained and counted as failures, not converted into passing economic results. Price/dispersion remain undefined where mathematically undefined. Threshold ten additionally requires two separately audited seed-zero runs. No paper verdict.",
 }
 args.output.mkdir(parents=True, exist_ok=False)
 (args.output / "ledger-snapshot.jsonl").write_bytes(ledger)
@@ -189,5 +236,5 @@ with (args.output / "price-measurements.csv").open("x", newline="") as stream:
     writer.writeheader()
     writer.writerows(measurements)
 print(
-    f"Structurally audited {len(records)}/198 runs, {health_count} health records and {len(measurements)} price-step records"
+    f"Structurally audited {len(records)}/{required} runs, {health_count} health records and {len(measurements)} price-step records"
 )

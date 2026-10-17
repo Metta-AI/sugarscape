@@ -1,0 +1,58 @@
+{
+  "mode": "prefix",
+  "threshold": 5,
+  "required_runs": 200,
+  "structurally_audited_runs": 1,
+  "numerically_failed_runs": 1,
+  "ordinal_interval": [
+    0,
+    1
+  ],
+  "recorded_root": "/root/sugarscape/pike-common-five-001",
+  "complete_new_seed_batch": false,
+  "full_grid_includes_two_separate_seed_zero_runs": false,
+  "health_records": 181317,
+  "price_step_records": 1000,
+  "runs": [
+    {
+      "variant": "common-one",
+      "numpy_seed": 0,
+      "final_individual_agents": 181,
+      "extinct": false,
+      "nonfinite_health_records": 131177,
+      "first_nonfinite_step": 69,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 776,
+      "undefined_dispersion_steps": 548,
+      "windows": {
+        "early": {
+          "trades": 33691,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.9724115747772863
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.6704860440286072
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    }
+  ],
+  "manifest_sha256": "dd56639462a988f3476f5e802e310e822f7b294a623133ea9c6d5bb3c7a78f8b",
+  "ledger_sha256": "a6c5be39fcc3f6fc4d7e73f88f45394fe51a1a2806d6fd4d5c78fa0a25772eb3",
+  "analyzer_sha256": "ebe2ccce6c936ea0d91f27c1a8f83832dcbed690812c72296d5c6c95a4c6f674",
+  "scope": "Structural source/file/identity audit plus explicit numerical-failure diagnosis. Infinite holdings are retained and counted as failures, not converted into passing economic results. Price/dispersion remain undefined where mathematically undefined. Threshold ten additionally requires two separately audited seed-zero runs. No paper verdict."
+}
