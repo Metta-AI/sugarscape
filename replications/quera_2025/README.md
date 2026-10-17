@@ -39,7 +39,7 @@ To inspect retained evidence, extract `trajectories.tar.gz` into a new directory
 
 - Figure 11: automatic-differentiation and finite-difference gradients for six parameters, 100 agents, a 50×50 landscape, and vision 1/3. Recover or explicitly reconstruct the finite-difference step sizes, replicate counts, normalization, seeds, and historical source revision.
 - Figures 17, 19b, and 20b: calibration predictive behavior, loss, and posterior. Recover the exact prior and training protocol; reproduce the stated five Monte Carlo samples, 5,000 epochs, validation selection, and flow architecture.
-- Independently replay movement and resource/occupancy changes before interpreting discrepancies as model failures.
+- Extend the three-seed independent movement/resource replay below to calibration and gradient ensembles before assigning broad model-fidelity conclusions.
 
 Program source audits retain the original paper source, digitized vector-figure curves, historical dependency lockfile, and deleted author scripts. The recovered scripts use older configurations and do not establish the paper’s exact experiment protocol. In particular, gradient-figure metadata predates the change from initial wealth `10*sample` to `6+19*sample`; metadata alone does not identify the revision used.
 
@@ -106,3 +106,32 @@ Several settings still prevent a faithful paper-calibration claim:
 - Exact Sugarscape prior support, learning rate, weight decay, validation construction, and loss-kernel configuration remain unrecovered.
 
 Recover or explicitly declare these choices before fitting; a convenient alternative prior or stopping rule cannot establish the published posterior result.
+
+## Independent movement, resource, and occupancy replay
+
+[The independent replay](results/movement-replay-2026-10-17/audit.json) reconstructs 14,700 agent updates and 91,875 cell updates from the three calibration-configuration pilots.
+A passive Julia trace records activation order and initial metabolic/vision parameters while retaining the native step body.
+All six agent/cell trajectory CSVs match the original uninstrumented pilots byte-for-byte.
+
+The Python replay checks that each realized live destination maximizes the native masked score, then reconstructs harvesting, metabolism, prior-wealth survival, occupancy, and regeneration.
+Every reconstructed state matches exactly, with maximum absolute error zero across all three seeds.
+This is a replay of realized choices; it does not reproduce the random tie-selection probabilities.
+
+Across 13,316 live-agent moves, seven land outside the vision mask.
+Every such choice occurs when all candidate scores are zero.
+Because unavailable cells receive zero rather than exclusion, they can tie with allowed cells and be selected.
+One of these seven destinations is already marked occupied.
+The report retains each transition, agent, origin, destination, mask value, score, and occupancy.
+These are verified behaviors of the pinned release, not yet a paper-level negative verdict or a corrected model.
+
+The native trace archive was read back and compared with every source file.
+Reproduce the audit with:
+
+```sh
+python replications/quera_2025/replay_movement.py \
+  /path/to/extracted-native-trace \
+  /path/to/original-forward-pilot \
+  /new/replay-audit
+```
+
+The original forward pilot is retained in `results/native-pilot-2026-10-17`; its earlier archive remains unchanged.
