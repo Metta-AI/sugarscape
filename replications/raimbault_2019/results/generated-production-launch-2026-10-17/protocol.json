@@ -1,0 +1,20 @@
+{
+  "node": "relh-sugarscape-cpu-20261016-v1",
+  "command": "cmd-ne87k",
+  "prerequisite": "/root/sugarscape/reference-continuation-001/terminal.json; require exit_code 0 or 124",
+  "source_adapter_sha256": "c52a4dfaec12a5db99d19ba9a49f38e20cb6e40bac97ec667b49904d577182fd",
+  "inputs": 8000,
+  "workers": 8,
+  "steps_per_input": 10000,
+  "production_seconds": 10800,
+  "wait_seconds": 18000,
+  "outer_seconds": 29400,
+  "maximum_added_execution_cost_usd_at_current_rate": 1.728,
+  "rate_usd_per_minute": 0.0096,
+  "idle_excluded_usd": 0.144,
+  "criteria": "Both Gini values exact; ten morphology outputs absolute tolerance 1e-12, fixed before production. Preserve every deviation. Independent downloaded-output audit still required.",
+  "remote_runtime_preflight": "All 51 pinned assets matched; Java11.0.32.1; shell syntax and Python compile/lint pass. Previous full native sizing workflow validates unchanged Java adapter, not this new shard.",
+  "storage": "relh-sugarscape-evidence-20261017/raimbault-generated-production-001/generated-production-evidence-001.tar.gz",
+  "input_tar_sha256": "0db88573aec84209498a733c3c1c5485e754d39a15350d9c95141767d6f3d78b",
+  "first_launch_failure": "Provider rejected max_duration_minutes without on_wake, request req_089cd7bb6b674eda9268a73b36c4cfeb. No command launched. Corrected request uses GNU timeout and returned cmd-ne87k."
+}

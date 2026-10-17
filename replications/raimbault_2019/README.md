@@ -592,3 +592,23 @@ python replications/raimbault_2019/audit_morphology.py GENERATED_RAW.csv.gz REFE
 Original sources and data are pinned and hash-checked. Raw means, normalization
 ranges, variance fractions, source hashes, and both reference projections are retained.
 This completes an archived-data projection audit, not fresh generated-grid simulation.
+
+## First bounded generated-ensemble production shard
+
+[The frozen production plan](results/generated-production-launch-2026-10-17) selects the first 8,000 original inputs after excluding 550 sizing inputs and seven prior probes.
+All original columns and selection identities pass an independent source readback; original indices span 2–8,004 with excluded rows omitted.
+All selected inputs have population 10. This ordered shard is not representative of other populations or a substitute for the full 2,727,994-input ensemble.
+
+The existing CPU node waits for the reference continuation's terminal receipt before starting eight native Java batches.
+The unchanged Java adapter preserves original seeds and 10,000 steps per input.
+Both Gini measurements require exact agreement; ten morphology outputs retain the previously declared absolute tolerance of 1e-12.
+Raw outputs and every accepted nonzero difference are retained for independent audit.
+The new shard has not yet completed or passed its scientific audit.
+
+Production is capped at three hours, costing at most $1.728 at the checked $0.0096/minute rate, excluding idle time.
+Waiting overlaps the existing reference job; no extra node is provisioned.
+All 51 runtime pins and uploaded input hashes match; shell syntax, Python compilation, and Ruff checks pass.
+The terminal evidence archive is atomically sealed and exported to task-owned storage by the registered collector.
+Decompress `selection.json.gz` to `selection.json` before replaying the frozen launch package.
+
+The frozen runner uses 120-column formatting, matching the uploaded bytes; its formatter check passes with `ruff format --check --isolated --line-length 120`.
