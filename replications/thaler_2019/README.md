@@ -84,3 +84,29 @@ revision above. Download the publisher PDF from
 The command requires a new output directory and rejects changed paper/report bytes.
 Committed results retain individual raw-report paths, recomputed slopes, paper
 cells, and limitations. Full raw HTML remains in the pinned original repository.
+
+## Population target fixed before native execution
+
+Figure 5b contains a raster curve rather than vector coordinates or raw measurements.
+The pinned PDF embeds a 1412×830 image on page 18. We visually checked the plot,
+calibrated both axes from tick centers, and extracted the blue curve separately
+from axes and labels. The resulting 50 targets span times 0–49, falling from
+approximately 500 to 206 agents.
+
+The [frozen protocol](results/population-target/target-protocol.json) accepts a maximum
+absolute difference of two agents at every time point. This allows raster line width,
+antialiasing and axis calibration uncertainty. It was fixed before any fresh native
+population output. These targets are digitized measurements, not author raw data.
+The caption does not specify a seed; the released population exporter uses seed 42.
+A mismatch requires checking revision, seed, time indexing and model semantics.
+No population replication result is available yet.
+
+Recreate the target with Python, PyMuPDF 1.26.5 and NumPy 1.26.4:
+
+```bash
+python replications/thaler_2019/extract_population_target.py \
+  /path/to/s40294-019-0067-9.pdf /path/to/new-target-directory
+```
+
+The output includes the original embedded figure, every extracted pixel-column
+measurement, interpolated population targets, calibration and artifact hashes.
