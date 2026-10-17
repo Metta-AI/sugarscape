@@ -187,3 +187,36 @@ python replications/richmond_2023/audit_native.py EXTRACTED_EVIDENCE NEW_AUDIT
 
 The passive counter observer started building only after this command's terminal
 receipt appeared. Its population-parity and counter results remain pending.
+
+## Counter trace confirmed with population parity
+
+[The complete native diagnostic](results/resolution-observer-complete-2026-10-17/audit.json)
+exited successfully. All 100 population observations exactly match the unmodified
+qualification. The counter persists without reset through all 100 steps and ends
+at 106. Starting at step 3, its value is already at least nine; each of the remaining
+97 steps executes exactly one resolution iteration.
+
+This confirms the counter behavior in the released scaling experiment. It does
+not demonstrate that every remaining movement conflict is resolved in one pass.
+No counter correction or whole-paper negative verdict is assigned.
+The downloaded 11,934-byte archive retains the observer source, native logs and
+outputs, patch, build logs, and exit code. Its hash and independent audit are retained.
+
+```sh
+python replications/richmond_2023/audit_resolution.py EXTRACTED_OBSERVER UNMODIFIED_PREFIX NEW_AUDIT
+```
+
+## Full unchanged native benchmark launched
+
+[The frozen full-run protocol](results/full-native-launch-2026-10-17/protocol.json)
+runs all 84 original conditions in one process, preserving the native counter
+lifecycle. It reuses the verified unmodified executable and checks its hash before
+execution. The prior qualification and observer remain separate evidence and are
+excluded from this ensemble's coverage.
+
+Command `cmd-8h5jk` has a six-hour outer limit and a 21,300-second native limit.
+At the quoted rate, six hours costs at most $24.192, excluding final idle time.
+The terminal evidence collector is capped at 100 MiB. Population/resolution values
+will be compared with the archive; timing comparisons remain descriptive across
+different hardware. No acceptance margin is selected after observing differences.
+Operational completion alone will not establish full coverage or paper replication.
