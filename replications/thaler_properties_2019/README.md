@@ -713,3 +713,30 @@ immutable copies of the exact completion ledgers alongside their hashes. Trade a
 inheritance results match the earlier audits. Full-mode checks reject both incomplete
 cohorts before writing reports or ledger snapshots. No simulation settings changed;
 full 100-pair results remain pending.
+
+## Trade controls: complete 100-pair ensemble
+
+[All 200 original-source trajectories](results/trade-paired-ensembles-2026-10-17)
+complete 1,000 steps with matched initial conditions and trading as the only
+configuration difference. The full audit reconciles hashes, sampled agents,
+resource totals, trade records, and independent Gini calculations. Compressed-data
+readback reproduces every scientific report field exactly.
+
+| Step-1,000 measurement | Trade off | Trade on | Paired change, 95% interval |
+| --- | ---: | ---: | --- |
+| Population | 108.01 | 122.10 | +14.09 [13.24, 14.94] |
+| Mean vision | 3.9710 | 3.8770 | −0.0940 [−0.1073, −0.0807] |
+| Mean sugar metabolism | 1.5870 | 1.6336 | +0.0466 [0.0385, 0.0546] |
+| Mean spice metabolism | 1.5769 | 1.6211 | +0.0442 [0.0368, 0.0515] |
+| Sugar Gini | 0.3057 | 0.3383 | +0.0326 [0.0294, 0.0358] |
+| Combined-wealth Gini | 0.2582 | 0.2958 | +0.0376 [0.0346, 0.0405] |
+
+Late population, averaged over steps 801–1,000, increases by 14.0946 agents
+[13.2368, 14.9524]. The [population figure](results/trade-paired-ensembles-2026-10-17/population.png)
+shows complete trajectories and their paired differences with pointwise intervals.
+
+Population and survivor-trait directions agree with appendix A.11 under the released
+Figure IV-6 configuration. Inequality increases under both recorded definitions,
+but these are diagnostics: the source has no distinct Figure IV-13 constructor.
+Original coordinate and observation defects remain, and corrected-source sensitivity
+is still needed. These results do not complete the entire paper.
