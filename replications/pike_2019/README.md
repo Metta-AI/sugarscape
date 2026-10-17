@@ -650,3 +650,30 @@ These completed analyses do not complete the whole paper.
 Reproduce with `analyze_phase3.py PHASE3_RECONCILIATION PHASE2_RECONCILIATION NEW_OUTPUT`.
 `analyze_group_counts.py PHASE3_RECONCILIATION PHASE2_RECONCILIATION COMPOSITION_CONTROLS NEW_OUTPUT` adds ungrouped-agent comparisons.
 `plot_phase3.py ANALYSIS NEW_OUTPUT` exports the survival figure as PNG and PDF.
+
+## Price notebook definitions and selection
+
+[Native notebook replay](results/price-notebook-2026-10-17/audit.json) covers 100 standard runs and 100 released movement runs per grouping approach at threshold ten.
+It executes the inspected author functions against hashed raw prices, then independently reconstructs their outputs; maximum numerical difference is 4.45e-16.
+
+The notebook histogram uses sample standard deviations of log prices, pooling steps with at least two trades across runs.
+Its single-run scatter instead plots individual **absolute log prices**, again excluding steps with fewer than two trades.
+The computed standard deviation of absolute log prices is not plotted: those plotting calls are commented out.
+Therefore the scatter title's “SDLM” does not identify the plotted statistic.
+
+| Configuration | All steps | Histogram steps | Omitted single-trade steps | No-trade steps |
+| --- | ---: | ---: | ---: | ---: |
+| Standard | 100,000 | 18,012 | 24,760 | 57,228 |
+| Explicit movement | 100,000 | 91,966 | 4,810 | 3,224 |
+| Network movement | 100,000 | 90,533 | 5,059 | 4,408 |
+
+The two standard-deviation definitions differ on 9,814, 71,930 and 71,045 eligible steps, respectively.
+Neither missing prices nor omitted singleton trades imply zero dispersion or equilibrium convergence.
+The [500-bin histograms](results/price-notebook-2026-10-17/histograms.csv) retain the author's separate bin ranges for each configuration.
+[Window measurements](results/price-notebook-2026-10-17/run-measurements.csv) retain defined-step counts for retrospective per-run summaries over steps 1–100 and 901–1000.
+These summaries distinguish absolute log geometric-mean price, mean absolute log transaction price, and sample log-price dispersion.
+No timestep is treated as an independent replicate, and these descriptive windows are not confirmatory convergence criteria.
+
+[Independent verification](results/price-notebook-2026-10-17/verification.json) reconstructs counts, all 1,500 histogram bins and 600 dispersion-window records from previously audited step measurements.
+Historical “Run9” seeds and raw datasets remain unavailable; these ensembles do not reproduce that exact trajectory or complete the paper.
+Run `audit_price_notebook.py ENGINE PHASE1_RECONCILIATION PHASE3_RECONCILIATION NEW_OUTPUT` to regenerate this analysis.
