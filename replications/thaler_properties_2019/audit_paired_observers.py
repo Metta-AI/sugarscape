@@ -48,6 +48,7 @@ parser.add_argument("output", type=Path)
 parser.add_argument("runs", nargs="+", type=Path)
 parser.add_argument("--allow-prefix", action="store_true")
 args = parser.parse_args()
+assert not args.output.exists()
 protocol = json.loads(args.protocol.read_text())
 variant = protocol["variants"]["original"]
 assert (
@@ -81,6 +82,7 @@ assert all(s["steps"] == 1000 and s["stride"] == 10 for s in scenarios)
 records = {key: {} for key in keys}
 reserved = set()
 ledgers = []
+ledger_bytes = []
 for root in args.runs:
     manifest = json.loads((root / "manifest.json").read_text())
     assert manifest["protocol"] == protocol and manifest["variant"] == "original"
@@ -94,6 +96,8 @@ for root in args.runs:
     assert not reserved.intersection(indices), "Overlapping execution intervals"
     reserved.update(indices)
     raw = (root / "completed.jsonl").read_bytes()
+    assert raw.endswith(b"\n"), "Retry after the worker finishes its ledger append"
+    ledger_bytes.append(raw)
     ledger = [json.loads(line) for line in raw.splitlines()]
     expected = [(key, index) for key in keys for index in range(start, stop)]
     assert [(r["scenario"], r["index"]) for r in ledger] == expected[: len(ledger)]
@@ -266,6 +270,12 @@ if not args.allow_prefix:
         comparisons.append(
             {"metric": metric, "status": "defined", "n": 100, "estimates": estimates}
         )
+sidecars = args.output.with_name(args.output.stem + "-ledgers")
+sidecars.mkdir(exist_ok=False)
+for index, raw in enumerate(ledger_bytes):
+    snapshot = sidecars / f"{index:03d}.jsonl"
+    snapshot.write_bytes(raw)
+    ledgers[index]["snapshot"] = str(snapshot.relative_to(args.output.parent))
 report = {
     "protocol_sha256": hashlib.sha256(args.protocol.read_bytes()).hexdigest(),
     "auditor_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),

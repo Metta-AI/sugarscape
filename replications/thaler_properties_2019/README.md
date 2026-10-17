@@ -705,3 +705,11 @@ Source URLs, hashes, runtime pins, commands, and the failed initial XML attempt
 are retained in the evidence. Byte identity with the 2009 publication and historical
 Java-runtime parity remain unverified. This execution proof is not a completed
 independent replication or an additional paper.
+
+## Paired-observer ledger preservation
+
+[Native first-pair audits](results/paired-ledger-snapshots-2026-10-17) now retain
+immutable copies of the exact completion ledgers alongside their hashes. Trade and
+inheritance results match the earlier audits. Full-mode checks reject both incomplete
+cohorts before writing reports or ledger snapshots. No simulation settings changed;
+full 100-pair results remain pending.
