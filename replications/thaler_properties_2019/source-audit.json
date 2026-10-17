@@ -1,0 +1,54 @@
+{
+  "paper": "Show me your properties: the potential of property-based testing in agent-based simulation",
+  "authors": [
+    "Jonathan Thaler",
+    "Peer-Olaf Siebers"
+  ],
+  "year": 2019,
+  "publication": "SummerSim 2019, article1, pp1-12",
+  "source_url": "https://github.com/thalerjonathan/haskell-sugarscape",
+  "paper_url": "https://www.researchgate.net/publication/333198243_SHOW_ME_YOUR_PROPERTIES_THE_POTENTIAL_OF_PROPERTY-BASED_TESTING_IN_AGENT-BASED_SIMULATION",
+  "artifact_status": "Author-uploaded preprint text and repository validation appendix recovered; publisher PDF access returned403. Final proceedings text not verified.",
+  "revision": "63b3e761b9ef0d861610b7ba232978406b89585b",
+  "later_revision": "2d7ab195942485c7a1d3281b00d8331437a7cef5",
+  "later_changes": "Resolver changed to lts17.11 and one comment typo fixed. Historical run uses unchanged lts12.16/GHC8.4.4.",
+  "appendix_sha256": "d91d43627390ea81e711e9a1ec12bfc4c96c9bbc1f863a474f05474eb6281515",
+  "enabled_model_properties": [
+    "Inheritance Gini",
+    "Wealth Distribution"
+  ],
+  "disabled_existing_model_properties": [
+    "Disease Dynamics All Recover",
+    "Disease Dynamics Minority Recover",
+    "Trading Dynamics",
+    "Cultural Dynamics",
+    "Carrying Capacity",
+    "Terracing"
+  ],
+  "differences": [
+    {
+      "claim": "Carrying-capacity mean",
+      "source_value": 204,
+      "appendix_value": 210,
+      "status": "Unresolved; preserve both targets before output."
+    },
+    {
+      "claim": "Replication count",
+      "registered_model_runner_replicates_per_case": 10,
+      "appendix_replications": 100,
+      "status": "Full model evidence must distinguish these designs."
+    },
+    {
+      "claim": "Trading statistical comparison",
+      "paper": "100 whole-model runs and a one-sided t-test against0.05",
+      "source": "Disabled prop_trading evaluates one trajectory and a coverage assertion.",
+      "status": "Do not equate enabling this property with reproducing Algorithm6."
+    },
+    {
+      "claim": "Cultural balance",
+      "source_condition": "zeroRatio >= ratioEqual || (1-zeroRatio) <= ratioEqual, with ratioEqual0.45",
+      "status": "Asymmetric Boolean condition; analyze independently before a paper verdict."
+    }
+  ],
+  "completion": "Incomplete. Build running; no fresh results. SIR-only2020paper excluded. Distinct from lock-free2019study."
+}
