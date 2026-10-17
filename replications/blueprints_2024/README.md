@@ -590,3 +590,17 @@ Recovery covers altruistic 5,000-step indices 17–48 and raw 50,000-step indice
 The second runtime worker covers Bentham 5,000-step indices 26–29 and egoistic
 50,000-step indices 0–6. Early extinction is retained as a completed trajectory.
 These remain partial archive groups, with no full-paper or Table 6 verdict.
+
+## Third runtime checkpoint reconciliation
+
+[Recovery checkpoint five and round-two checkpoint four](results/runtime-checkpoints-third-2026-10-17)
+add 35 unique inputs and 103,941 observations. Verified coverage reaches
+**730/1,200 deposited runtime inputs and 1,010,466 observations**.
+Every previous audit hash and every overlapping result record matches exactly.
+Native archive sizes and SHA-256 hashes match the download receipts.
+
+The new coverage extends altruistic 5,000-step inputs through index 77, Bentham
+5,000-step inputs through index 33, and egoistic 50,000-step inputs through index 8.
+Raw 50,000-step coverage remains nine inputs. Each trajectory reaches its horizon
+or extinction. The four active groups remain incomplete, and these deposited
+100-seed groups do not establish the paper's 500-seed Table 6 results.
