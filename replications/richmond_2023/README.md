@@ -1,6 +1,6 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
-Status: **incomplete; archived grid and aggregation audited, native replay unstarted**.
+Status: **incomplete; archived grid and aggregation audited, native qualification running**.
 No completed-study credit. This study adds to the existing replication program.
 
 Paper: [FLAME GPU 2: A framework for flexible and performant agent based simulation on GPUs](https://doi.org/10.1002/spe.3207).
@@ -85,6 +85,31 @@ Figure 11D–F and audit the movement dependency graph against Figure 6.
 
 Before performance interpretation, specify hardware comparisons and seed-level
 uncertainty. Historical absolute seconds are not portable acceptance criteria.
-No GPU allocation or native run has started. A bounded toolchain and full-workflow
-qualification must precede the complete benchmark; shortened runs receive no
-full-study credit. Existing study ensembles remain unchanged.
+A bounded toolchain and full-workflow qualification precedes the complete benchmark;
+shortened runs receive no full-study credit. Existing study ensembles remain unchanged.
+
+## Bounded GPU qualification
+
+[The frozen launch](results/native-qualification-launch-2026-10-17) uses one H100,
+CUDA 11.8.0, architecture 90, and the pinned benchmark/engine sources without edits.
+The engine's own architecture configuration explicitly supports CUDA 11.8/Hopper.
+[NVIDIA's compatibility guide](https://docs.nvidia.com/cuda/archive/12.8.0/hopper-compatibility-guide/index.html)
+confirms that CUDA 11.8 supports native Hopper kernels. This differs from the
+published V100/CUDA 11.0 environment and cannot recover its absolute timings.
+
+Command `cmd-yjge7` started October 17, 2026, at 21:08:52 UTC. The 92-minute
+provider limit bounds cost to $6.1824 at the quoted $0.0672/minute, excluding idle time.
+An inner timeout bounds native execution to 600 seconds after configuration/build.
+It invokes the unchanged complete benchmark; any prefix left at the timeout is
+qualification evidence only. A timeout is retained as exit 124, not relabeled success.
+
+The launch records all 522 tracked source-file hashes, toolchain/GPU details, build
+logs, binary hash, and raw CSV/log outputs. Source modifications cause failure.
+A bounded collector exports terminal evidence to task-owned storage, capped at
+100 MiB; exported data still require download and independent hash verification.
+No successful build, native output, or performance result is yet claimed.
+
+The remote source manifest now matches an independently reconstructed local
+manifest byte-for-byte by SHA-256, covering all 522 tracked files. A failed file
+export and a truncated read response remain recorded; neither triggered a model
+restart. The complete manifest and verification receipt are retained with the launch.
