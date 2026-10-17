@@ -16,8 +16,9 @@ The separate SIR epidemic case study is outside this Sugarscape study.
 The native model uses a 50×50 toroidal landscape, initial population 500,
 endowment 5–25, metabolism 1–5, vision 1–6, and growback one per step.
 Agents die from starvation, without ageing. Sequential execution shuffles agents;
-concurrent execution delegates ordering to the scheduler. Growback runs synchronously
-following the population. Performance runs use 1,000 steps and seed 42.
+concurrent execution delegates ordering to the scheduler. The sequential implementation
+shuffles the environment behavior together with agents. Concurrent implementations
+run growback synchronously after the population. Performance runs use 1,000 steps and seed 42.
 The scaling experiment replaces dead agents and varies initial population from
 500 to 2,500 in increments of 500. Preserve the released landscape and random initialization.
 
@@ -110,3 +111,20 @@ python replications/thaler_2019/extract_population_target.py \
 
 The output includes the original embedded figure, every extracted pixel-column
 measurement, interpolated population targets, calibration and artifact hashes.
+
+## Scheduling and population measurement audit
+
+The [source audit](results/archived/scheduling-audit.json) checks 11 files against the
+pinned timing revision. Sequential `Init` inserts the environment as behavior ID 0;
+`Simulation` shuffles that behavior with agents. Concurrent `Main` sets `envConc=False`,
+and `Simulation` waits for all agents before stepping the separate environment.
+Thus the released variants do not share the same growback schedule. Preserve this
+difference for faithful replay; investigate its effect before attributing performance
+changes solely to synchronization.
+
+Sequential agents consume metabolism and die, if necessary, before moving and
+harvesting. Surviving agents emit observables; the environment emits none. The released
+population exporter counts those observables. Its times 0–999 label post-step outputs
+using the pre-increment clock. Do not prepend an initial-state row or shift times when
+comparing the first 50 rows with Figure 5. These source findings establish measurement
+semantics, not a fresh simulation result or a negative replication verdict.
