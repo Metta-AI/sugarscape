@@ -324,3 +324,23 @@ measurement budget. At the observed $0.0096/minute rate, the outer limit costs a
 most $6.912, excluding final idle time. A collector exports its sealed terminal
 archive to task-owned storage with a 256 MiB transfer cap. Export completion will
 require separate download and hash verification before analysis.
+
+### Native timing prefix: 13 of 45 conditions
+
+The sealed [checkpoint and independent audit](results/native-timing-prefix-2026-10-17/audit.json)
+cover 13 completed conditions and 52 raw Criterion measurements. All 13 first attempts pass the frozen
+R-squared threshold of 0.99. Independent least-squares slopes differ from reported values by at most
+1.07e-14 seconds; recomputed R-squared values agree exactly. Sample standard deviations also agree.
+The auditor checks the full 45-condition schedule, pinned source manifest, benchmark commands,
+exit statuses, report hashes, attempt ledger, and missing conditions. Binary hashes record provenance;
+they do not independently prove binary/source equivalence.
+
+The original job continues. These results do not establish the full timing tables or their relative rankings.
+The reserved CPU differs from the paper's hardware; absolute runtime comparisons need that qualification.
+
+Reproduce the audit in a new output directory:
+
+```sh
+tar -xzf replications/thaler_2019/results/native-timing-prefix-2026-10-17/checkpoint-12.tar.gz -C /path/to/checkpoint
+python replications/thaler_2019/timing/audit_native.py /path/to/checkpoint /path/to/new-audit
+```
