@@ -564,3 +564,15 @@ and previously unstarted egoistic 50,000-step inputs 0–99. Each worker has a s
 budget. The supervisor seals completed outputs every 30 minutes and preserves full-group
 completion markers. No resumed output is included in the coverage above.
 The full paper remains incomplete; deposited runtime inputs are not the complete published sweeps.
+
+
+### Audited resumed-worker checkpoints
+
+[Two retained cloud checkpoints](results/runtime-checkpoints-2026-10-17) add 22 unique
+runtime inputs and 72,640 observations. Reconciliation now covers **684/1,200 inputs
+and 785,594 observations**, requiring every overlapping raw-trajectory hash to agree.
+The new data include Bentham 5,000-step indices 26–27, seven egoistic 50,000-step
+inputs, twelve additional altruistic 5,000-step inputs, and one additional raw
+50,000-step input. Every counted trajectory reaches its declared horizon or extinction.
+Both cloud jobs continue; checkpoints are incomplete intervals, not full-ensemble results.
+The deposited runtime archive remains distinct from the paper's 500-seed Table 6 experiment.
