@@ -23,6 +23,23 @@ assert (
     == json.loads((assets / "revision-fidelity.json").read_text())["hashes"]["timing"]
 )
 assert float(manifest["hardware"]["cpu_limit"]) == 8
+hardware = manifest["hardware"]
+affinity = hardware["affinity"]
+assert len(affinity) == len(set(affinity)) == 8
+allocated = set()
+for segment in (
+    hardware["cgroups"]["/sys/fs/cgroup/cpuset.cpus.effective"].strip().split(",")
+):
+    endpoints = [int(value) for value in segment.split("-")]
+    assert 1 <= len(endpoints) <= 2
+    allocated.update(range(endpoints[0], endpoints[-1] + 1))
+assert allocated == set(affinity)
+quota, period = hardware["cgroups"]["/sys/fs/cgroup/cpu.max"].split()
+assert int(period) > 0
+assert quota == "max" or int(quota) / int(period) >= 8
+cpu_fields = {row["field"]: row["data"] for row in hardware["lscpu"]["lscpu"]}
+assert int(cpu_fields["Thread(s) per core:"]) == 1
+
 assert set(manifest["binary_sha256"]) == {"seq", "io", "tvar", "tarray"}
 assert all(
     re.fullmatch(r"[0-9a-f]{64}", digest)
@@ -153,6 +170,14 @@ summary = {
     "max_slope_error": max(row["slope_error"] for row in rows),
     "max_r_squared_error": max(row["r_squared_error"] for row in rows),
     "missing_conditions": schedule[len(progress) :],
+    "hardware_allocation": {
+        "affinity": affinity,
+        "effective_cpuset": sorted(allocated),
+        "cpu_max": hardware["cgroups"]["/sys/fs/cgroup/cpu.max"].strip(),
+        "model": cpu_fields["Model name:"],
+        "threads_per_core": int(cpu_fields["Thread(s) per core:"]),
+        "limitation": "OS-reported topology and allocation only. This does not prove exclusive host use or fixed clock frequency.",
+    },
     "scope": "Independent raw-measurement audit on different hardware; not a paper performance verdict. Source and binary hashes are recorded provenance, not independent binary reconstruction.",
     "rows": rows,
 }

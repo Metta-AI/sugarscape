@@ -344,3 +344,18 @@ Reproduce the audit in a new output directory:
 tar -xzf replications/thaler_2019/results/native-timing-prefix-2026-10-17/checkpoint-12.tar.gz -C /path/to/checkpoint
 python replications/thaler_2019/timing/audit_native.py /path/to/checkpoint /path/to/new-audit
 ```
+
+### Native allocation verification
+
+[The allocation-aware audit](results/native-timing-prefix-2026-10-17/allocation-audit.json)
+reprocesses the same 13-condition checkpoint without adding replication coverage.
+It verifies affinity and effective CPU set both equal CPUs 88–95; `cpu.max` is
+`max 100000`, so this captured container has no additional CPU-time quota.
+The operating system reports an AMD EPYC 9R45 and one thread per core.
+The auditor now requires eight allocated CPUs, matching affinity, no quota below
+eight CPU-equivalents, and the recorded single-thread-per-core topology.
+
+These observations substantiate the captured eight-core allocation. They do not
+prove exclusive use of shared host resources or fixed clock frequencies.
+The original laptop used four cores/eight threads, so capability scaling still
+compares different hardware topologies. No same-hardware performance claim follows.
