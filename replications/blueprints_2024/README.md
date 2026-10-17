@@ -739,3 +739,27 @@ previous audit hashes, reconstructs prior coverage, and rejects conflicting
 overlap before adding new records. The complete original grid has 1,200 inputs.
 Neither this checkpoint nor full deposited-grid completion replaces the paper's
 500-seed Table 6 experiment. The two native continuation jobs remain running.
+
+## Deferred Bentham 50,000-step group
+
+[Two disjoint plans](results/bentham50000-launch-2026-10-17) cover original deposited
+Bentham runtime indices `[0,50)` and `[50,100)`. This previously unstarted group
+retains all 100 original configurations and seeds. No new horizon or acceptance
+criterion is introduced. The known 100-input versus 500-seed paper discrepancy remains.
+
+Commands `cmd-2ypbn` and `cmd-52ges` wait for the existing runtime batch `cmd-byham`
+to write its terminal receipt. They then reuse its owned CPU2 node, Python 3.11.14,
+pinned original engine, configuration archive, and unchanged validated runners.
+Both runner hashes are checked before execution; each shard has a new output root.
+The two shards run concurrently after the earlier batch, with one native process each.
+
+Each shard permits six hours of simulation, with a 22,000-second execution bound
+including checkpoint completion. At $0.0024 per node-minute, the shared node's added
+execution costs at most $0.88, excluding idle time. Each storage collector has a
+2 GiB cumulative transfer cap and a ten-hour deadline. Completed seeds are sealed
+in half-hour checkpoints; incomplete seeds remain retained without completion credit.
+
+Inputs passed shell syntax checks and remote SHA-256 verification before launch.
+The commands are currently waiting: no new completed input or replication is claimed.
+Recorded wall times remain hardware/workload-qualified; this launch does not
+establish equivalence to the paper's timing experiment.
