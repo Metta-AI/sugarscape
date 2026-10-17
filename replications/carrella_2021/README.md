@@ -569,7 +569,7 @@ The two-hour diagnostic reached and audited the linear-regression checkpoint, th
 Its terminal traceback is retained; no forest result was produced by that attempt.
 A [bounded checkpoint continuation](results/notebook-rf-checkpoint-resume-2026-10-17/manifest.json) restores all 37 saved global objects and all 626 random-state integers exactly.
 The unchanged original forest chunk runs with a six-hour limit after both prior processes were confirmed absent.
-The restoration receipt and source hashes are retained; forest results and independent prediction audits remain pending.
+The continuation completed successfully; its full checkpoint and independent prediction audit are retained below.
 The separate regression-forest and neural-network estimators remain intact.
 
 The [actual notebook data checkpoint](results/notebook-rf-sequence-launch-2026-10-16/dataprep-audit.json) passes independent base-R parsing and first-fold alignment checks.
@@ -598,7 +598,7 @@ The [completed linear-regression checkpoint audit](results/notebook-rf-sequence-
 All five printed scores agree, as in the isolated point-estimate calculation; no new target is counted.
 The largest prediction difference from that calculation is 3.64e-11.
 The saved random state differs from the preceding semi-automatic checkpoint, confirming another state advance before the forest stage.
-The actual checkpoint and source hashes are retained. The random-forest checkpoint remains pending.
+The actual checkpoint and source hashes are retained. The random-forest continuation is now audited below.
 
 ## Regression-forest first-fold checkpoint
 
@@ -607,3 +607,19 @@ Reconstructing the original seed-zero partition matches all 755,000 training/tes
 All 5,000 held-out parameter predictions reproduce the saved root-mean-square errors, interval coverage, and interval widths within 1e-10.
 The actual fold, predictions, audit script, package versions, and hashes are retained.
 The remaining four folds are still computing; this checkpoint supplies no aggregate Table 8 score and adds no completed target.
+
+## Completed sequential quantile-random-forest diagnostic
+
+The [original notebook continuation](results/notebook-rf-completed-2026-10-17/audit.json) exited successfully after 1,937.6 seconds. Its complete 7.5 MB checkpoint preserves predictions, preceding notebook objects, and the final random state. The audit reconstructs all five held-out folds and independently verifies all 25,000 predictions, root-mean-square errors, interval coverage, interval widths, and baseline-normalized performance.
+
+| Parameter | Sequential notebook | Earlier isolated run | Published Table 8 |
+|---|---:|---:|---:|
+| Initial population | 0.476062 | 0.475749 | 0.475 |
+| Mutation probability | 0.535328 | 0.537491 | 0.536 |
+| Maximum sugar endowment | 0.445939 | 0.446204 | 0.446 |
+| Maximum spice endowment | 0.462287 | 0.462307 | 0.463 |
+| Reproduction wealth | 0.788391 | 0.787706 | 0.790 |
+
+Only maximum sugar endowment matches the paper’s printed three-decimal precision in either run. The sequential workflow therefore does not resolve the four existing differences or add any newly covered Table 8 cell. Individual predictions differ by up to 36.5 from the isolated run. The random state advanced during the forest stage.
+
+This comparison varies both CSV parsing and the preceding random stream. A new bounded control restores the exact sequential pre-forest random state but replaces only `total_data` with base-R parsed inputs. Before fitting, it verifies exact equality with every saved isolated training/test fold. The original forest chunk and six-hour cap remain unchanged. This isolates parser effects against the completed sequential run; no negative-replication claim is assigned while the discrepancy remains unresolved.
