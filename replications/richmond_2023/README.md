@@ -284,3 +284,34 @@ The complete study also still requires native Figure 11A–C comparisons and Fig
 The queued observer records active agents only; it does not retain the full unoccupied-cell landscape needed for Figure 11D.
 Full-landscape capture or independently verified reconstruction remains necessary, along with the declared movement/state checks.
 A completed 84-condition timing grid alone will not complete this study.
+
+## Extracted host initialization for the full landscape
+
+[The standalone initialization evidence](results/initial-state-extraction-2026-10-17)
+contains all 65,536 cells for seed zero and width 256, including 11,025 occupied agents.
+`prepare_initial_state.py PINNED_MAIN_CU NEW_OUTPUT` extracts the original hotspot-spacing helper,
+constants, random draws, loop order and landscape arithmetic; engine storage writes become local integers and CSV output.
+No simulation step or GPU engine is replaced by this extraction.
+GNU C++ 16.2.0 builds the extracted host program without warnings on this Mac.
+The compiler/library differs from the GPU benchmark, so native-state parity remains unverified.
+
+`audit_initial_state.py STATE_CSV HOTSPOT_LOG NEW_OUTPUT` checks every cell position,
+initial agent identifier, wealth/metabolism bound and empty-cell record.
+It independently reconstructs the landscape from 54 retained hotspot coordinates using NumPy.
+All 65,536 capacity values match exactly; minimum wrapped hotspot separation is 20 cells.
+Hotspot spacing wraps, while the source's resource-distance calculation does not; both behaviors are preserved.
+Adding coordinate logging leaves the entire state CSV byte-identical to the first extracted execution.
+
+The rendered landscape and complete compressed state table are retained, with compiler, source, binary and data hashes.
+This prepares the missing full-landscape evidence. It does not yet establish Figure 11D parity:
+compare its occupied initial records against the pending unmodified-engine state capture before accepting that interpretation.
+The first and fiftieth simulation states and remaining paper claims are still outstanding.
+
+```sh
+python replications/richmond_2023/prepare_initial_state.py \
+  /path/to/pinned-benchmark/src/main.cu /new/extracted
+# Run inside a new evidence directory; retain the exact compiler version.
+g++-16 -std=c++17 -O2 -Wall -Wextra /new/extracted/initial.cpp -o initial
+./initial > state.csv 2> hotspots.log
+python replications/richmond_2023/audit_initial_state.py state.csv hotspots.log /new/audit
+```
