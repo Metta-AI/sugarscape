@@ -1,0 +1,12 @@
+{
+  "prior_reconstruction": "replications/blueprints_2024/results/runtime-checkpoints-fifth-2026-10-17/round2/reconstruction.json",
+  "prior_delta": "replications/blueprints_2024/results/runtime-checkpoints-fifth-2026-10-17/round2/new-inputs.tar.gz",
+  "prior_delta_sha256": "5a541e334653c7e5b55cb09ed181a79d80f2e94e29422b557fbc3b627d820882",
+  "new_inputs": 13,
+  "delta_sha256": "f5a5ac20191996d6eb2018d113405f030910e1fceec5299c722c8260f0bdcdd2",
+  "delta_bytes": 9350432,
+  "procedure": "Reconstruct previous checkpoint using its published reconstruction.json, then overlay this delta. Restore missing raw trajectories from gzip. Original ledgers retained, not rewritten. Overlay checkpoint-metadata.tar.gz last for terminal and snapshot receipts. Overlay checkpoint-metadata.tar.gz last for terminal and snapshot receipts.",
+  "full_checkpoint_files_equal_after_archive_overlay": 311,
+  "metadata_archive": "checkpoint-metadata.tar.gz",
+  "metadata_sha256": "6da41ea0a0bf0ec9eef89cb2833ad7699b287eeb67f68eb70641506d90a20815"
+}

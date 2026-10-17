@@ -1,0 +1,32 @@
+{
+  "paper_url": "https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf",
+  "paper_sha256": "56f25d6c9c3947954e29689a4fbd4c2ff0c09abd6515e631311939b747d4d51d",
+  "pymupdf": "1.26.5",
+  "numpy": "1.26.4",
+  "model": "rawSugarscape",
+  "runs": 500,
+  "directly_matching_figures": [
+    4,
+    5,
+    7,
+    8,
+    9
+  ],
+  "directly_matching_vertices": 24370,
+  "death_diagnostic_vertices": 4996,
+  "threshold_pdf_points": 0.005,
+  "max_direct_error_pdf_points": 0.004317300219724984,
+  "scope": "One-model curve reproduction only. All-cause death definition diagnosed after observing released-plotter mismatch; not predeclared confirmation. Other models and experiment families remain incomplete.",
+  "coordinate_method": "Visually checked black Raw Sugarscape legend, linear axes and rectangles on PDF pages13/14. Recover integer timesteps from vector x coordinates; compare ordinate in PDF point units. Threshold fixed before initial vector comparison; unchanged for diagnostic.",
+  "files": {
+    "figure-7-raw.csv.gz": "a26a0ed4b1fd0877962b7e3da8799cee84475daeb4c5c4e5401c5897cf979ae0",
+    "death-definition-diagnostic.json": "3426e01e6113577b31b429170886297edfe4c22342c8f56d754b2112d0158851",
+    "figure-8-raw.csv.gz": "1131efc6846ba539b2907f3b44fa013701bc3b0b28931bc85cac985e982bcca2",
+    "figure-5-raw.csv.gz": "beb927ccd66f4ecad2fde3c641f388fac4c71fe0715a39be18291ba97d768f31",
+    "figure-6-raw.csv.gz": "e4f2018de7bcae5c0be61f6909735232d85ae6f32d0f3561a0b36555a0c00fb1",
+    "all-cause-deaths.csv.gz": "5f4ee1ef0326607ea20c2c3744abe0086c1ea92cf05ded0db6a3ae83ae57a619",
+    "figure-9-raw.csv.gz": "b6a53e97795ac2038af7c9222f6b1a804aae2ba3c9a8413a1d946711ecebfbb4",
+    "figure-4-raw.csv.gz": "ed7db159602246d12ea039e4ff43d8d9040f97f48786e4aa7bcc84e612b77f70",
+    "initial-comparison.json": "2652727cf29aa4da40b8249236d9aa2cb66b82b2b6064bb3720818e4dc18bcd5"
+  }
+}

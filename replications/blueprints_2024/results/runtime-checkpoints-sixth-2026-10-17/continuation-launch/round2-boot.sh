@@ -1,0 +1,10 @@
+set -eu
+/home/dev/sugarscape/blueprints-runtime2-source-001/venv/bin/python -c 'import hashlib,json,shutil
+from pathlib import Path
+pins={'"'"'/home/dev/sugarscape/blueprints-runtime-round2-001/runs/run_recovery.py'"'"': '"'"'9ea2faf63c401d270726e6acc3df9986a1d7c2b9c1b6235fd5372a652a5d2ea9'"'"', '"'"'/home/dev/sugarscape/blueprints-runtime-round2-001/runs/terminal.json'"'"': '"'"'e0d2908d14955740ed446329a1cd6bdd1d75b99ccaee0a583b961112a76d7006'"'"', '"'"'/home/dev/sugarscape/blueprints-runtime-round2-001/runs/egoisticHalfLookaheadBinary-50000/completed.jsonl'"'"': '"'"'1e8eecccc18309905ce562d59cc140870ada85a0320e3bd834a953bf4287dfad'"'"', '"'"'/home/dev/sugarscape/blueprints-runtime-round2-001/runs/benthamHalfLookaheadBinary-5000/completed.jsonl'"'"': '"'"'1f4bc426fc36dea4781b68d1b1083082f1b342a83bd1bc87080f4fb9431bb4e1'"'"'}
+for path,digest in pins.items():assert hashlib.sha256(Path(path).read_bytes()).hexdigest()==digest,path
+assert shutil.disk_usage('"'"'/home/dev'"'"').free >= 8*1024**3
+root=Path('"'"'/home/dev/sugarscape/blueprints-runtime-round2-002'"'"');root.mkdir(exist_ok=False)
+(root/'"'"'plan.json'"'"').write_text('"'"'{"groups": [{"model": "benthamHalfLookaheadBinary", "steps": 5000, "start": 52, "stop": 100}, {"model": "egoisticHalfLookaheadBinary", "steps": 50000, "start": 11, "stop": 100}], "seconds_per_group": 21600, "checkpoint_seconds": 1800}'"'"'+'"'"'\n'"'"')
+'
+exec timeout 23400 /home/dev/sugarscape/blueprints-runtime2-source-001/venv/bin/python /home/dev/sugarscape/blueprints-runtime-round2-001/runs/run_recovery.py /home/dev/sugarscape/blueprints-runtime2-source-001 /home/dev/sugarscape/blueprints-runtime-round2-002/plan.json /home/dev/sugarscape/blueprints-runtime-round2-002/runs

@@ -1,0 +1,25 @@
+{
+  "model": "altruisticHalfLookaheadBinary",
+  "start": 16,
+  "stop": 17,
+  "declared_stop": 17,
+  "complete_declared_interval": true,
+  "runs": 1,
+  "observations": 5001,
+  "counts": {
+    "dead": 0,
+    "worse": 0,
+    "better_or_equal": 1
+  },
+  "results": [
+    {
+      "seed": 419262194845335739,
+      "outcome": "better_or_equal",
+      "final_population": 891,
+      "trajectory_sha256": "205eff20a7b2836c13fe25f7b8361a915fac1524d8d7f3e94171601063a5dd0f",
+      "observations": 5001
+    }
+  ],
+  "classification_source": "Pinned author plots/plot.py lines 40\u201343 and 103: zero dead; surviving below initial worse; equality included in better.",
+  "scope": "Only the audited contiguous seed interval; an incomplete declared interval is explicitly marked. Not a full paper replication."
+}

@@ -1,0 +1,122 @@
+{
+  "validated_runs": 11,
+  "required_interval_runs": 11,
+  "complete_interval": true,
+  "complete_group": false,
+  "model": "altruisticHalfLookaheadBinary",
+  "steps": 5000,
+  "ordinal_interval": [
+    1,
+    12
+  ],
+  "counts": {
+    "dead": 5,
+    "worse": 0,
+    "better_or_equal": 6
+  },
+  "observations": 30869,
+  "results": [
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary1134302205739354507.config",
+      "seed": 1134302205739354507,
+      "observations": 5001,
+      "final_population": 532,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "de7b4d6d0f880a1dbc8fc0134f290ebcd57039ea7e1a47ec52a65b2363fe6af6"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary1312465699454735571.config",
+      "seed": 1312465699454735571,
+      "observations": 225,
+      "final_population": 0,
+      "final_timestep": 224,
+      "outcome": "dead",
+      "trajectory_sha256": "68a1fcf0c9d25e831d4d6bc5f03385fcfd0f74197c8c5cf44f548463935c0181"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary1626428329783443257.config",
+      "seed": 1626428329783443257,
+      "observations": 5001,
+      "final_population": 985,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "165b7319d2a0c6f2e8ba6d421e557abd02b1e0c2250ee20ee93f25b7e2d60056"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary163513919832119345.config",
+      "seed": 163513919832119345,
+      "observations": 5001,
+      "final_population": 335,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "16ebc6ffc74ebb3e7b649fe0c0b58fe0614654cae384351f73c62c45e367f65c"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary1833994657676604369.config",
+      "seed": 1833994657676604369,
+      "observations": 189,
+      "final_population": 0,
+      "final_timestep": 188,
+      "outcome": "dead",
+      "trajectory_sha256": "ab9c60ad1a0f8d7d9347bc4543c1cd36331ef926420f45b01f4b60567417e597"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary1867017187136367179.config",
+      "seed": 1867017187136367179,
+      "observations": 5001,
+      "final_population": 1055,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "a31d4ab2d4b632bd0ca07d43e072eced1e119bfcd73f4ea49247f5bb44aa1a9d"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary1911248790777082224.config",
+      "seed": 1911248790777082224,
+      "observations": 135,
+      "final_population": 0,
+      "final_timestep": 134,
+      "outcome": "dead",
+      "trajectory_sha256": "aafcdbd22e8b38fbafaaaa3af469d9e448ab65ac0e540add0ff511365d78eb2a"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary1962672463621369878.config",
+      "seed": 1962672463621369878,
+      "observations": 146,
+      "final_population": 0,
+      "final_timestep": 145,
+      "outcome": "dead",
+      "trajectory_sha256": "f24b82bd05e73f1173c1b7e43d1707da04354929d7b01895be9443f1400a0af6"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary1994771685947063175.config",
+      "seed": 1994771685947063175,
+      "observations": 5001,
+      "final_population": 405,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "9278b882084fdd2c725efb6112a6febd5f5658612a46abf4332f8188e98ce765"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary203185877083823426.config",
+      "seed": 203185877083823426,
+      "observations": 168,
+      "final_population": 0,
+      "final_timestep": 167,
+      "outcome": "dead",
+      "trajectory_sha256": "cc24e5712e6599c6999765d5bc3b3de7790ef0b7f58ee78f883d6c748b95813a"
+    },
+    {
+      "entry": "5000-altruisticHalfLookaheadBinary2055514061623047894.config",
+      "seed": 2055514061623047894,
+      "observations": 5001,
+      "final_population": 491,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "437c8f2b11fea187891b8ee707c1d4cca69311967f207ab24e46655abc83af1a"
+    }
+  ],
+  "ledger_sha256": "6f070046032c2bc724cc6588048c412a74e0201beff20c4332f3dedb71eff409",
+  "manifest_sha256": "7984387b73a478dc4160c1070e6c7248f85460997ff3b80d7746caa847a0d159",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}

@@ -1,0 +1,20 @@
+{
+  "archive": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-surviving-checkpoint-002/checkpoint.tar.gz",
+  "remote_archive": "/home/dev/sugarscape/blueprints-long5000-checkpoint-002.tar.gz",
+  "bytes": 56929748,
+  "sha256": "a55ba55894a937f1c26fc2dfabb1e6ba63f986fd20cd43e317235a8aece8563a",
+  "export_command": "cmd-cjbvc",
+  "native_command": "cmd-cuu4b",
+  "node": "relh-sugarscape-runtime2-cpu2-20261017-v1",
+  "prefix_runs": 105,
+  "observations": 243990,
+  "previous_prefix_runs": 86,
+  "previous_prefix_observations": 221631,
+  "new_unique_runs": 19,
+  "new_observations": 22359,
+  "total_audited_runtime_inputs": 611,
+  "required_runtime_inputs": 1200,
+  "total_audited_runtime_observations": 562940,
+  "deduplication": "Earlier86 records match current prefix exactly, including trajectory hashes and manifests. Count105 instead of86, never both. Existing500 earlier inputs and6 disjoint altruistic inputs unchanged.",
+  "scope": "Completed prefix only; both100-input groups remain incomplete. Local unsealed completions excluded."
+}

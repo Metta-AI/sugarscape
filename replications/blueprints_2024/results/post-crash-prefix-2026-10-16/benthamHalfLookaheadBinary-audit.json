@@ -1,0 +1,39 @@
+{
+  "model": "benthamHalfLookaheadBinary",
+  "start": 20,
+  "stop": 23,
+  "declared_stop": 500,
+  "complete_declared_interval": false,
+  "runs": 3,
+  "observations": 15003,
+  "counts": {
+    "dead": 0,
+    "worse": 0,
+    "better_or_equal": 3
+  },
+  "results": [
+    {
+      "seed": 460149852129392939,
+      "outcome": "better_or_equal",
+      "final_population": 999,
+      "trajectory_sha256": "d191dbe7daa4e1aafd807d727c1eee48288c08436c0104f822b79c0b985bbebb",
+      "observations": 5001
+    },
+    {
+      "seed": 468785931549304338,
+      "outcome": "better_or_equal",
+      "final_population": 991,
+      "trajectory_sha256": "02a838cf5dfb6663c957ae6076b0ac6e6c89d898dd2226c209404659549f6050",
+      "observations": 5001
+    },
+    {
+      "seed": 490047438642249340,
+      "outcome": "better_or_equal",
+      "final_population": 1127,
+      "trajectory_sha256": "9ac682e4e9fe405648d7bf649dc9381d0fd518577f97a1091df6a4afae37caca",
+      "observations": 5001
+    }
+  ],
+  "classification_source": "Pinned author plots/plot.py lines 40\u201343 and 103: zero dead; surviving below initial worse; equality included in better.",
+  "scope": "Only the audited contiguous seed interval; an incomplete declared interval is explicitly marked. Not a full paper replication."
+}

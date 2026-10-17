@@ -1,0 +1,46 @@
+{
+  "model": "benthamHalfLookaheadBinary",
+  "start": 0,
+  "stop": 4,
+  "declared_stop": 500,
+  "complete_declared_interval": false,
+  "runs": 4,
+  "observations": 20004,
+  "counts": {
+    "dead": 0,
+    "worse": 0,
+    "better_or_equal": 4
+  },
+  "results": [
+    {
+      "seed": 158402133555746433,
+      "outcome": "better_or_equal",
+      "final_population": 478,
+      "trajectory_sha256": "d15f5aaf113d3d234b6a81cc20e3bd083d3b9342a3b05531742f4f007f64f355",
+      "observations": 5001
+    },
+    {
+      "seed": 175856849482260318,
+      "outcome": "better_or_equal",
+      "final_population": 1340,
+      "trajectory_sha256": "628df84b4ff945241a482d5df09359f3b43234805666599c0e2d4b83a017a6df",
+      "observations": 5001
+    },
+    {
+      "seed": 177137446849847291,
+      "outcome": "better_or_equal",
+      "final_population": 1270,
+      "trajectory_sha256": "9256f60acb84762093c1d301450488c12d51c0871a01cdc0f3973671b6d575d2",
+      "observations": 5001
+    },
+    {
+      "seed": 209866033564004520,
+      "outcome": "better_or_equal",
+      "final_population": 1334,
+      "trajectory_sha256": "382fb408930475e36e42f5219bcbd5f1b317e7e08ddaaba99ec8ba2b6b6dd1a0",
+      "observations": 5001
+    }
+  ],
+  "classification_source": "Pinned author plots/plot.py lines 40\u201343 and 103: zero dead; surviving below initial worse; equality included in better.",
+  "scope": "Only the audited contiguous seed interval; an incomplete declared interval is explicitly marked. Not a full paper replication."
+}

@@ -1,0 +1,95 @@
+{
+  "validated_runs": 8,
+  "required_interval_runs": 74,
+  "complete_interval": false,
+  "complete_group": false,
+  "model": "benthamHalfLookaheadBinary",
+  "steps": 5000,
+  "ordinal_interval": [
+    26,
+    34
+  ],
+  "counts": {
+    "dead": 0,
+    "worse": 0,
+    "better_or_equal": 8
+  },
+  "observations": 40008,
+  "results": [
+    {
+      "entry": "5000-benthamHalfLookaheadBinary3488193512351447750.config",
+      "seed": 3488193512351447750,
+      "observations": 5001,
+      "final_population": 1261,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "4bec66bdf0fd280f5ca8727044f1242cd4b0ff8b0a2ee3a08ccf4892e351a7f9"
+    },
+    {
+      "entry": "5000-benthamHalfLookaheadBinary3542557583478526566.config",
+      "seed": 3542557583478526566,
+      "observations": 5001,
+      "final_population": 1013,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "896016d27a843f2dce57606aaf2edc790ab42f9323995ff24cd42c242f23534e"
+    },
+    {
+      "entry": "5000-benthamHalfLookaheadBinary3568320210672737944.config",
+      "seed": 3568320210672737944,
+      "observations": 5001,
+      "final_population": 1276,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "11b69730691af347eca940dd56280f74dc23f21fa3cd487b1602e087f41629ab"
+    },
+    {
+      "entry": "5000-benthamHalfLookaheadBinary367278502105690691.config",
+      "seed": 367278502105690691,
+      "observations": 5001,
+      "final_population": 1044,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "1f4e921f3fbdaef1a6eb685a4c14ac889486f4ec5e98c8bf285d1bb336455d3e"
+    },
+    {
+      "entry": "5000-benthamHalfLookaheadBinary3757797926469595546.config",
+      "seed": 3757797926469595546,
+      "observations": 5001,
+      "final_population": 1334,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "86d2fe80ee704ba1677a3dea117a124ecf4b85f2d8022da326a326db641516bd"
+    },
+    {
+      "entry": "5000-benthamHalfLookaheadBinary378665755385027259.config",
+      "seed": 378665755385027259,
+      "observations": 5001,
+      "final_population": 1132,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "3bd74eba517cd05c030cf05f74860a855d5dbcda7f4c3bc0a1ef0b036acc4628"
+    },
+    {
+      "entry": "5000-benthamHalfLookaheadBinary3969945444094922288.config",
+      "seed": 3969945444094922288,
+      "observations": 5001,
+      "final_population": 1291,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "bbeecb1363f6f9c1fd07cefaa81e4b4dde2934cb5e8b0bd82f18a913615718a0"
+    },
+    {
+      "entry": "5000-benthamHalfLookaheadBinary403616165726776302.config",
+      "seed": 403616165726776302,
+      "observations": 5001,
+      "final_population": 1232,
+      "final_timestep": 5000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "fd498f1904e9f0367d85c9790c9b7f12f4f9708fe23aa9f047317eb10ea5e9e7"
+    }
+  ],
+  "ledger_sha256": "938e7130a1a9e662f699cd00d332339db88c3986a09832cce8ab60f0acdcb3cd",
+  "manifest_sha256": "7442b6e6d933371c5be85d83fe7ab1e1b7ad5d90d03d44f142709c9645d9c873",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}

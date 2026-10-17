@@ -1,0 +1,25 @@
+{
+  "model": "benthamHalfLookaheadBinary",
+  "start": 4,
+  "stop": 5,
+  "declared_stop": 500,
+  "complete_declared_interval": false,
+  "runs": 1,
+  "observations": 5001,
+  "counts": {
+    "dead": 0,
+    "worse": 0,
+    "better_or_equal": 1
+  },
+  "results": [
+    {
+      "seed": 238165197779399277,
+      "outcome": "better_or_equal",
+      "final_population": 978,
+      "trajectory_sha256": "d2f922e3f14470666d6fcd648407b2f006cfddf1e021fb9d9c6d25d2e6e8516b",
+      "observations": 5001
+    }
+  ],
+  "classification_source": "Pinned author plots/plot.py lines 40\u201343 and 103: zero dead; surviving below initial worse; equality included in better.",
+  "scope": "Only the audited contiguous seed interval; an incomplete declared interval is explicitly marked. Not a full paper replication."
+}
