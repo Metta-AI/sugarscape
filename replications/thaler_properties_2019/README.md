@@ -496,3 +496,46 @@ The 100-pair success path remains unexercised. Prefix mode emits no comparisons.
 Full comparisons report population at 100, 500, and 1,000, the mean over 801–1,000,
 and same-seed book-minus-control changes, with 95% intervals across 100 runs.
 First crossings below 90 and never-crossed cases remain explicit per seed.
+
+
+## Combat event-trace diagnostic
+
+[A separately instrumented diagnostic build](results/event-trace-diagnostic-2026-10-17)
+logs attacks, delivered combat events, deaths, and births. The only source changes
+add observations in `Agent/Common.hs` and `Agent/Move.hs`; all 58 other archived files
+and the observer remain unchanged. Original outputs remain preserved.
+
+Five complete paired controls use seed 602352629: wealth through 200, carrying
+capacity through 400, trading through 1,000, and both combat scenarios through 1,000.
+All 25 exported reference/trace files are byte-identical, including 445,491 agent
+observations. The independent audit reconstructs active agent IDs from events and
+checks every step against original trajectories. Event time precedes the simulator's
+time increment, so events at time t account for the population at time t+1.
+
+The cultural-combat trajectory has 16 kills and ends with 186 agents. The replacement
+trajectory has 389 combat kills and ends with 11 agents. It replaces 435 starvation
+deaths and 476 age deaths, confirming the code/prose replacement distinction. This
+1,000-step diagnostic does not establish or refute eventual convergence to one agent.
+
+All 405 attacks have positive computed combat rewards. In every case, the attacker's
+wealth rises only by the harvested resource, never by harvest plus the computed
+reward. The culture scenario computes 6,168 reward units; the replacement scenario
+computes 773. `agentCombat` returns this reward in its income value, but does not add
+it to the attacker's stored sugar. `handleTick` uses the returned value for net income
+and pollution accounting. Neither combat configuration enables loans or pollution.
+
+This is a released-source defect that can affect the claimed combat dynamics. It is
+not a validated negative replication or evidence that a corrected model produces
+single-agent invasions. Preserve the historical runs and compare any correction
+separately, using the same seeds and independently verified event accounting.
+
+The diagnostic contains the exact source overrides, diff, protocol, compiler log,
+launch command, raw gzip exports, event logs, and auditor. Restore CSV files from gzip
+and rebuild the pinned original and instrumented source directories before running:
+
+```bash
+python audit_events.py /path/to/instrumented-root /path/to/original-observer /path/to/new-audit.json
+```
+
+No new unit or integration tests were added; these checks exercise complete native
+trajectories. The event trace is not used as performance evidence.

@@ -1,0 +1,22 @@
+{
+  "shared_agent_observations": 445491,
+  "cases": [
+    {
+      "case": "combat_culture",
+      "attacks": 16,
+      "positive_rewards": 16,
+      "harvest_only": 16,
+      "harvest_plus_reward": 0,
+      "computed_reward_total": 6168.0
+    },
+    {
+      "case": "combat_rebirth",
+      "attacks": 389,
+      "positive_rewards": 389,
+      "harvest_only": 389,
+      "harvest_plus_reward": 0,
+      "computed_reward_total": 773.0
+    }
+  ],
+  "interpretation": "All recorded attacks increase wealth only by harvested resource, despite a positive computed reward. Source returns reward into income/pollution accounting but never credits resource stock. Diagnostic source discrepancy, not whole-paper negative verdict."
+}

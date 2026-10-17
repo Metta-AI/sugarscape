@@ -1,0 +1,80 @@
+--- a/src/SugarScape/Agent/Common.hs
++++ b/src/SugarScape/Agent/Common.hs
+@@ -51,6 +51,8 @@
+   ) where
+ 
+ import Data.Maybe
++import Data.List (intercalate)
++import Debug.Trace (traceM)
+ 
+ import Control.Monad.State.Strict
+ import Control.Monad.Random
+@@ -110,10 +112,26 @@
+ sendEventTo receiver e = tell $ sendEventToAo receiver e
+ 
+ kill :: AgentLocalMonad g ()
+-kill = tell killAo
++kill = do
++  aid <- myId
++  t <- absStateLift getSimTime
++  s <- agentState
++  spiceEnabled <- spSpiceEnabled <$> scenario
++  let (x, y) = sugAgCoord s
++  traceM $ intercalate "," ["death", show t, show aid, show (sugAgAge s),
++    show (fromMaybe (-1) (sugAgMaxAge s)), show (sugAgSugarLevel s),
++    show (sugAgSpiceLevel s), show spiceEnabled, show x, show y, show (sugAgTribe s)]
++  tell killAo
+ 
+ newAgent :: SugAgentDef g -> AgentLocalMonad g ()
+-newAgent adef = tell $ newAgentAo adef 
++newAgent adef = do
++  parent <- myId
++  t <- absStateLift getSimTime
++  let obs = adInitObs adef
++      (x, y) = sugObsCoord obs
++  traceM $ intercalate "," ["birth", show t, show parent, show (adId adef),
++    show x, show y, show (sugObsTribe obs)]
++  tell $ newAgentAo adef 
+ 
+ neighbourAgentIds :: AgentLocalMonad g [AgentId]
+ neighbourAgentIds = do
+--- a/src/SugarScape/Agent/Move.hs
++++ b/src/SugarScape/Agent/Move.hs
+@@ -9,6 +9,7 @@
+ 
+ import Data.List
+ import Data.Maybe
++import Debug.Trace (traceM)
+ 
+ import Control.Monad.Random
+ 
+@@ -94,6 +95,16 @@
+             combatWealth = min victimWealth combatReward
+ 
+         let victimId = sugEnvOccId (fromJust $ sugEnvSiteOccupier site)
++        attacker <- myId
++        t <- absStateLift getSimTime
++        after <- agentState
++        let (fromX, fromY) = myCoord
++            (toX, toY) = siteCoord
++        traceM $ intercalate "," ["attack", show t, show attacker, show victimId,
++          show fromX, show fromY, show toX, show toY, show myTribe,
++          show (sugEnvOccTribe victim), show myWealth, show victimWealth,
++          show harvestAmount, show combatWealth,
++          show (sugAgSugarLevel after + sugAgSpiceLevel after)]
+         sendEventTo victimId KilledInCombat
+ 
+         return (harvestAmount + combatWealth)
+@@ -131,7 +142,11 @@
+ handleKilledInCombat :: RandomGen g
+                      => AgentId
+                      -> AgentLocalMonad g ()
+-handleKilledInCombat _killerId = kill
++handleKilledInCombat killerId = do
++  victim <- myId
++  t <- absStateLift getSimTime
++  traceM $ intercalate "," ["combat", show t, show killerId, show victim]
++  kill
+ 
+ agentLookout :: RandomGen g => AgentLocalMonad g [(Discrete2dCoord, SugEnvSite)]
+ agentLookout = do
