@@ -740,3 +740,21 @@ Figure IV-6 configuration. Inequality increases under both recorded definitions,
 but these are diagnostics: the source has no distinct Figure IV-13 constructor.
 Original coordinate and observation defects remain, and corrected-source sensitivity
 is still needed. These results do not complete the entire paper.
+
+## Corrected trade sensitivity with reused controls
+
+[The first corrected pair](results/trade-corrected-first-2026-10-17) validates
+matched initial states, the sole trading-flag difference, and all recorded outputs.
+Population at step 1,000 is 102 without trade and 121 with trade. This single pair
+supports no ensemble inference. Compressed-data readback reproduces the audit.
+
+The remaining 99 trade-on inputs run under one CPU, 2 GiB, and a three-hour cap.
+No-trade outputs come from the already running corrected spice cohort, avoiding
+100 duplicate simulations. Both cohorts use the same frozen seeds and corrected
+coordinate/observation implementation; source, observer, and binary hashes must match.
+
+`audit_paired_observers.py --reuse-control CONTROL_PROTOCOL CONTROL_RUNS...`
+checks the pinned control protocol and preserves original manifests and ledgers.
+It explicitly excludes the spice-book scenario from trade inference. Full mode
+requires all 100 pairs. The actual first-pair full-mode invocation rejects incomplete
+coverage, while the historical original 100-pair scientific report remains identical.

@@ -47,10 +47,20 @@ parser.add_argument(
 parser.add_argument("output", type=Path)
 parser.add_argument("runs", nargs="+", type=Path)
 parser.add_argument("--allow-prefix", action="store_true")
+parser.add_argument(
+    "--reuse-control",
+    nargs="+",
+    type=Path,
+    default=[],
+    help="Pinned control protocol followed by existing control run directories",
+)
 args = parser.parse_args()
 assert not args.output.exists()
 protocol = json.loads(args.protocol.read_text())
-variant = protocol["variants"]["original"]
+assert len(protocol["variants"]) == 1
+variant_key = next(iter(protocol["variants"]))
+assert variant_key in ["original", "corrected"]
+variant = protocol["variants"][variant_key]
 assert (
     protocol["replications"]
     == len(protocol["seeds"])
@@ -71,6 +81,24 @@ assert (
     == variant["observer_sha256"]
 )
 scenarios = protocol["scenarios"]
+inputs = [(root, protocol) for root in args.runs]
+if args.reuse_control:
+    assert variant_key == "corrected" and len(args.reuse_control) >= 2
+    control_path, *control_roots = args.reuse_control
+    control = json.loads(control_path.read_text())
+    reuse = protocol["reused_control"]
+    assert (
+        hashlib.sha256(control_path.read_bytes()).hexdigest()
+        == reuse["protocol_sha256"]
+    )
+    assert control["seeds"] == protocol["seeds"]
+    assert control["replications"] == protocol["replications"]
+    assert control["variants"] == protocol["variants"]
+    assert reuse["scenario"] in control["scenarios"]
+    assert [s["key"] for s in scenarios] == ["trade_on"]
+    assert reuse["scenario"]["key"] == "trade_off"
+    scenarios = [reuse["scenario"], *scenarios]
+    inputs.extend((root, control) for root in control_roots)
 keys = [scenario["key"] for scenario in scenarios]
 assert keys in [["trade_off", "trade_on"], ["mating", "inheritance"]]
 toggle = (
@@ -83,23 +111,24 @@ records = {key: {} for key in keys}
 reserved = set()
 ledgers = []
 ledger_bytes = []
-for root in args.runs:
+for root, input_protocol in inputs:
     manifest = json.loads((root / "manifest.json").read_text())
-    assert manifest["protocol"] == protocol and manifest["variant"] == "original"
+    assert manifest["protocol"] == input_protocol and manifest["variant"] == variant_key
     assert (
         hashlib.sha256((root / "run_observer_ensemble.py").read_bytes()).hexdigest()
         == manifest["runner_sha256"]
     )
     start, stop = manifest["interval"]
     assert 0 <= start < stop <= 100
-    indices = set(range(start, stop))
+    input_keys = [s["key"] for s in input_protocol["scenarios"]]
+    indices = {(key, index) for key in input_keys for index in range(start, stop)}
     assert not reserved.intersection(indices), "Overlapping execution intervals"
     reserved.update(indices)
     raw = (root / "completed.jsonl").read_bytes()
     assert raw.endswith(b"\n"), "Retry after the worker finishes its ledger append"
     ledger_bytes.append(raw)
     ledger = [json.loads(line) for line in raw.splitlines()]
-    expected = [(key, index) for key in keys for index in range(start, stop)]
+    expected = [(key, index) for key in input_keys for index in range(start, stop)]
     assert [(r["scenario"], r["index"]) for r in ledger] == expected[: len(ledger)]
     assert len(ledger) <= len(expected)
     if not args.allow_prefix:
@@ -117,10 +146,11 @@ for root in args.runs:
         }
     )
     for record in ledger:
-        assert record["variant"] == "original"
+        assert record["variant"] == variant_key
         assert record["seed"] == protocol["seeds"][record["index"]]
         assert record["steps"] == 1000 and record["summary_rows"] == 1001
-        records[record["scenario"]][record["index"]] = (root, record)
+        if record["scenario"] in keys:
+            records[record["scenario"]][record["index"]] = (root, record)
 paired = sorted(set(records[keys[0]]).intersection(records[keys[1]]))
 if not args.allow_prefix:
     assert paired == list(range(100)), "All 100 pairs required"
@@ -292,6 +322,17 @@ report = {
     "comparisons": comparisons,
     "scope": "Original-source paired trajectories. Prefix mode emits no inference. Undefined outcomes remain explicit; no complete-paper verdict.",
 }
+if args.reuse_control:
+    report["variant"] = variant_key
+    report["reused_control_protocol_sha256"] = reuse["protocol_sha256"]
+    report["excluded_control_scenarios"] = [
+        s["key"] for s in control["scenarios"] if s["key"] not in keys
+    ]
+    report["scope"] = (
+        "Coordinate/observation-corrected paired trade sensitivity; reused controls. "
+        "Only listed paired scenarios audited, not excluded control scenarios. "
+        "Prefix mode emits no inference. No complete-paper verdict."
+    )
 with args.output.open("x") as stream:
     stream.write(json.dumps(report, indent=2, allow_nan=False) + "\n")
 print(
