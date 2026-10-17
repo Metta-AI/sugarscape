@@ -1,0 +1,28 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replication-tools/julia-1.11.3-runtime-001/julia-1.11.3/bin/julia",
+    "--startup-file=no",
+    "--project=/Users/relh/Code/workspace/sugarscape-pytorch-flows-reference/test",
+    "-e",
+    "using Pkg; Pkg.instantiate(;allow_autoprecomp=false); Pkg.build(\"PyCall\"); include(\"test/runtests.jl\")"
+  ],
+  "cwd": "/Users/relh/Code/workspace/sugarscape-pytorch-flows-reference",
+  "revision": "01438e4c95c3f924704eb85945950c6a03ab8502",
+  "source_sha256": {
+    "Project.toml": "87793699847d42cd9ae782eeb79c38cf3b59ac881fcf250a83d43cdba2165441",
+    "test/Project.toml": "ee8f6f164e902225a26197ada7622305ffa2091e77faa83fb2c58446574ffd93",
+    "test/Manifest.toml": "01bcfe79175be84780b6964361462b6d7c93110ae348a8ac20fc40b90b81bd08",
+    "src/flows.jl": "d8cd4137966be7d19489339e51d351b3b4cc402095f3fe679c3cc00cdfd4dccd",
+    "src/wrapper.py": "231de45efe995fcb374049c3aca43dae7c7c5f82b4370fa84fa56f95f9b4c2ca",
+    "test/vi_tests.jl": "cc1359d27a2cd8680dcf2e096c9e42ae13c9792a84ee57a384fa7c0c7bc51928"
+  },
+  "env": {
+    "PYTHON": "/Users/relh/Code/workspace/sugarscape-replication-tools/quera-flow-python-001/bin/python",
+    "JULIA_DEPOT_PATH": "/Users/relh/Code/workspace/sugarscape-replication-tools/julia-flow-depot-001",
+    "JULIA_NUM_THREADS": "1",
+    "JULIA_PKG_PRECOMPILE_AUTO": "0",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "scope": "Unmodified author wrapper variational-inference workflow on normal synthetic data; infrastructure proof only, not Sugarscape calibration. Python Torch2.6.0 andnormflows1.7.3 are declared reconstruction choices, not recovered paperpins.",
+  "timeout_seconds": 1800
+}

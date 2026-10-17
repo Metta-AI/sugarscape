@@ -1,0 +1,119 @@
+{
+  "rows": 900,
+  "source_sha256": {
+    "seed-0.csv": "a5a366530807c58ed866b33f4dc1f41209125ab4ae9db00b6047099142c54d46",
+    "seed-1.csv": "728aa8aaeda08f4d6e85d2cffe16c659eec7d1affbd8d2c79b4314ba7cb19051",
+    "seed-2.csv": "2560182d12ace4543f3e7c6a4982898cf1912f3d8a1d886ba9b424e50ef88770"
+  },
+  "summary": [
+    {
+      "parameter": "p1",
+      "step": 0.001,
+      "initial_mean_ad": 0.0,
+      "initial_mean_fd": 0.0,
+      "initial_max_absolute_difference": 0.0,
+      "later_mean_absolute_difference": 0.6314673576471369,
+      "later_max_absolute_difference": 1.1142150025046202
+    },
+    {
+      "parameter": "p1",
+      "step": 0.01,
+      "initial_mean_ad": 0.0,
+      "initial_mean_fd": 0.0,
+      "initial_max_absolute_difference": 0.0,
+      "later_mean_absolute_difference": 2.734857446714137,
+      "later_max_absolute_difference": 11.548593796433861
+    },
+    {
+      "parameter": "p3",
+      "step": 0.001,
+      "initial_mean_ad": 0.0,
+      "initial_mean_fd": 0.0,
+      "initial_max_absolute_difference": 0.0,
+      "later_mean_absolute_difference": 0.1578668394117842,
+      "later_max_absolute_difference": 0.27855375062615506
+    },
+    {
+      "parameter": "p3",
+      "step": 0.01,
+      "initial_mean_ad": 0.0,
+      "initial_mean_fd": 0.0,
+      "initial_max_absolute_difference": 0.0,
+      "later_mean_absolute_difference": 1.1242799890168613,
+      "later_max_absolute_difference": 5.812031741930825
+    },
+    {
+      "parameter": "m_alpha",
+      "step": 0.001,
+      "initial_mean_ad": 0.0,
+      "initial_mean_fd": 0.0,
+      "initial_max_absolute_difference": 0.0,
+      "later_mean_absolute_difference": 0.24757590233575272,
+      "later_max_absolute_difference": 1.1698534844677662
+    },
+    {
+      "parameter": "m_alpha",
+      "step": 0.01,
+      "initial_mean_ad": 0.0,
+      "initial_mean_fd": 0.0,
+      "initial_max_absolute_difference": 0.0,
+      "later_mean_absolute_difference": 0.14864391574617403,
+      "later_max_absolute_difference": 0.8836646934147447
+    },
+    {
+      "parameter": "m_beta",
+      "step": 0.001,
+      "initial_mean_ad": 0.0,
+      "initial_mean_fd": 0.0,
+      "initial_max_absolute_difference": 0.0,
+      "later_mean_absolute_difference": 0.06210075641171527,
+      "later_max_absolute_difference": 0.34436228780765643
+    },
+    {
+      "parameter": "m_beta",
+      "step": 0.01,
+      "initial_mean_ad": 0.0,
+      "initial_mean_fd": 0.0,
+      "initial_max_absolute_difference": 0.0,
+      "later_mean_absolute_difference": 0.062102151591269875,
+      "later_max_absolute_difference": 0.344364976093517
+    },
+    {
+      "parameter": "w_alpha",
+      "step": 0.001,
+      "initial_mean_ad": 0.7490662301584903,
+      "initial_mean_fd": 0.7490662491604164,
+      "initial_max_absolute_difference": 1.979337616031529e-08,
+      "later_mean_absolute_difference": 0.07889028058296726,
+      "later_max_absolute_difference": 0.500306331539914
+    },
+    {
+      "parameter": "w_alpha",
+      "step": 0.01,
+      "initial_mean_ad": 0.7490662301584903,
+      "initial_mean_fd": 0.7490681302913416,
+      "initial_max_absolute_difference": 1.9794403985917697e-06,
+      "later_mean_absolute_difference": 0.07889210977855979,
+      "later_max_absolute_difference": 0.5003082012110874
+    },
+    {
+      "parameter": "w_beta",
+      "step": 0.001,
+      "initial_mean_ad": -1.1033968292517435,
+      "initial_mean_fd": -1.1033968987958314,
+      "initial_max_absolute_difference": 7.660492618022374e-08,
+      "later_mean_absolute_difference": 0.06714806658211407,
+      "later_max_absolute_difference": 0.22521811704058525
+    },
+    {
+      "parameter": "w_beta",
+      "step": 0.01,
+      "initial_mean_ad": -1.1033968292517435,
+      "initial_mean_fd": -1.103403783625841,
+      "initial_max_absolute_difference": 7.660561855304948e-06,
+      "later_mean_absolute_difference": 0.10006501894103739,
+      "later_max_absolute_difference": 0.4249355676298786
+    }
+  ],
+  "scope": "Native full-trajectory AD/FD diagnostic. Common-random-number finite differences are independently recomputed. Three seeds do not validate expectation-gradient convergence or reproduce Figure 11."
+}

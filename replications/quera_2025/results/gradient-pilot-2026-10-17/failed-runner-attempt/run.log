@@ -1,0 +1,17 @@
+┌ Warning: Package cuDNN not found in current path.
+│ - Run `import Pkg; Pkg.add("cuDNN")` to install the cuDNN package, then restart julia.
+│ - If cuDNN is not installed, some Flux functionalities will not be available when running on the GPU.
+└ @ FluxCUDAExt ~/Code/workspace/sugarscape-replication-tools/julia-depot-1.11.3-001/packages/Flux/3711C/ext/FluxCUDAExt/FluxCUDAExt.jl:10
+ERROR: LoadError: Invalid Tag object:
+  Expected ForwardDiff.Tag{var"#6#9"{Int64}, Float64},
+  Observed ForwardDiff.Tag{var"#5#8"{Int64}, Float64}.
+Stacktrace:
+ [1] checktag(::Type{ForwardDiff.Tag{var"#5#8"{Int64}, Float64}}, f::var"#6#9"{Int64}, x::Vector{Float64})
+   @ ForwardDiff ~/Code/workspace/sugarscape-replication-tools/julia-depot-1.11.3-001/packages/ForwardDiff/UBbGT/src/config.jl:34
+ [2] jacobian(f::var"#6#9"{Int64}, x::Vector{Float64}, cfg::ForwardDiff.JacobianConfig{ForwardDiff.Tag{var"#5#8"{Int64}, Float64}, Float64, 6, Vector{ForwardDiff.Dual{ForwardDiff.Tag{var"#5#8"{Int64}, Float64}, Float64, 6}}}, ::Val{true})
+   @ ForwardDiff ~/Code/workspace/sugarscape-replication-tools/julia-depot-1.11.3-001/packages/ForwardDiff/UBbGT/src/jacobian.jl:20
+ [3] jacobian(f::var"#6#9"{Int64}, x::Vector{Float64}, cfg::ForwardDiff.JacobianConfig{ForwardDiff.Tag{var"#5#8"{Int64}, Float64}, Float64, 6, Vector{ForwardDiff.Dual{ForwardDiff.Tag{var"#5#8"{Int64}, Float64}, Float64, 6}}})
+   @ ForwardDiff ~/Code/workspace/sugarscape-replication-tools/julia-depot-1.11.3-001/packages/ForwardDiff/UBbGT/src/jacobian.jl:19
+ [4] top-level scope
+   @ ~/Code/workspace/sugarscape-replication-evidence/quera-gradient-pilot-001/run.jl:21
+in expression starting at /Users/relh/Code/workspace/sugarscape-replication-evidence/quera-gradient-pilot-001/run.jl:18

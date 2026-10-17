@@ -1,0 +1,125 @@
+{
+  "seeds": [
+    {
+      "seed": 0,
+      "states": 50,
+      "transitions": 49,
+      "agent_observations": 5000,
+      "cell_observations": 31250,
+      "final_population": 75.0,
+      "initial_duplicate_live_positions": 6,
+      "maximum_duplicate_live_positions": 6,
+      "occupancy_count_mismatches": 31,
+      "old_wealth_survival_mismatches": 0,
+      "post_metabolism_nonpositive_but_alive": 25,
+      "positive_after_harvest_but_died": 1,
+      "first_post_metabolism_violations": [
+        {
+          "time": 9.0,
+          "agent": 78.0,
+          "x": 16.0,
+          "y": 21.0,
+          "wealth": -0.49781301638995723,
+          "alive": 1.0
+        },
+        {
+          "time": 16.0,
+          "agent": 23.0,
+          "x": 7.0,
+          "y": 14.0,
+          "wealth": -0.450452460084549,
+          "alive": 1.0
+        },
+        {
+          "time": 17.0,
+          "agent": 8.0,
+          "x": 25.0,
+          "y": 17.0,
+          "wealth": -1.0168123732548109,
+          "alive": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "states": 50,
+      "transitions": 49,
+      "agent_observations": 5000,
+      "cell_observations": 31250,
+      "final_population": 78.0,
+      "initial_duplicate_live_positions": 11,
+      "maximum_duplicate_live_positions": 11,
+      "occupancy_count_mismatches": 33,
+      "old_wealth_survival_mismatches": 0,
+      "post_metabolism_nonpositive_but_alive": 22,
+      "positive_after_harvest_but_died": 0,
+      "first_post_metabolism_violations": [
+        {
+          "time": 10.0,
+          "agent": 45.0,
+          "x": 9.0,
+          "y": 4.0,
+          "wealth": -0.47290292964371616,
+          "alive": 1.0
+        },
+        {
+          "time": 12.0,
+          "agent": 10.0,
+          "x": 8.0,
+          "y": 20.0,
+          "wealth": -0.42216587313381027,
+          "alive": 1.0
+        },
+        {
+          "time": 14.0,
+          "agent": 58.0,
+          "x": 16.0,
+          "y": 16.0,
+          "wealth": -0.49130190857646383,
+          "alive": 1.0
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "states": 50,
+      "transitions": 49,
+      "agent_observations": 5000,
+      "cell_observations": 31250,
+      "final_population": 75.0,
+      "initial_duplicate_live_positions": 8,
+      "maximum_duplicate_live_positions": 8,
+      "occupancy_count_mismatches": 34,
+      "old_wealth_survival_mismatches": 0,
+      "post_metabolism_nonpositive_but_alive": 27,
+      "positive_after_harvest_but_died": 1,
+      "first_post_metabolism_violations": [
+        {
+          "time": 18.0,
+          "agent": 24.0,
+          "x": 5.0,
+          "y": 23.0,
+          "wealth": -0.5642562797310449,
+          "alive": 1.0
+        },
+        {
+          "time": 20.0,
+          "agent": 11.0,
+          "x": 5.0,
+          "y": 17.0,
+          "wealth": -0.6769772275222041,
+          "alive": 1.0
+        },
+        {
+          "time": 21.0,
+          "agent": 70.0,
+          "x": 13.0,
+          "y": 11.0,
+          "wealth": -0.0668248481449929,
+          "alive": 1.0
+        }
+      ]
+    }
+  ],
+  "scope": "Complete native forward-run file integrity and state/survival audit; no independent movement replay, gradient validation, or calibration verdict."
+}

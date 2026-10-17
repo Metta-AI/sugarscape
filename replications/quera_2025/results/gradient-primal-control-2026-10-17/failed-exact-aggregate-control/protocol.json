@@ -1,0 +1,9 @@
+{
+  "purpose": "Native complete-trajectory control: forward values extracted during AD must equal ordinary simulation at identical seeds; compare all derivatives to retained pilot",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "model_unchanged": true
+}
