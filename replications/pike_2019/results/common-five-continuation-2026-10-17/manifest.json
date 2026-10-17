@@ -1,0 +1,22 @@
+{
+  "retained_interval": [
+    0,
+    119
+  ],
+  "missing_interval": [
+    119,
+    200
+  ],
+  "first_condition": {
+    "index": 119,
+    "seed": 59,
+    "variant": "common-multi"
+  },
+  "source_sha256": {
+    "run.py": "3b7700b0f079578e103de51f2ee5fca7811be577ca3e7ca5d4229d7a61117331",
+    "run_common_threshold.py": "366a45f09fa4de1f31839205a0264446224479423d0ec51cdc5434f08df30f22",
+    "run_common_five.py": "d8f867a1a5acfef28e0696f21ba7fa93dbf5f06eddaac28484c922712983b47f",
+    "COMMON_THRESHOLD_PROTOCOL.md": "dcbc82a1bc7edec63ed40b512839a26ae714a59bf23547f5c75f046fb47d3020"
+  },
+  "scope": "Unchanged original native adapter and protocol; driver adds explicit disjoint ordinal bounds. Retain interrupted outputs separately."
+}

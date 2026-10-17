@@ -727,6 +727,40 @@ The [cloud launch](results/timing-control-2026-10-17/launch.json) is queued with
 The retained native archive was checked member-by-member against the original control outputs.
 Neither timings from numerically invalid common-resource runs nor historical hardware differences are treated as evidence of economic replication.
 
+## Recovered threshold-five common-resource prefix
+
+The separately [recovered threshold-five prefix](results/common-five-recovered-2026-10-17)
+passes structural checks for 119/200 conditions, 22,531,469 health records, and
+119,000 price-step records. All 119 conditions contain nonfinite health values.
+Structural success therefore does not establish valid economic trajectories.
+
+The 192,524,899-byte native archive was exported, downloaded, and SHA-256 verified.
+Its storage address and retained-file audit are recorded in the result directory.
+This prefix includes the previously audited seed-zero condition; it is not 119 additional runs.
+The remaining ordinal interval is [119, 200): multi-level seed 59, then both variants
+for seeds 60–99. Interrupted files remain separate from new continuation outputs.
+
+`run_common_five.py` now accepts explicit `--start-index` and `--stop-index` bounds
+within the unchanged 200-condition schedule. It records the requested interval and
+its actual completion count. The simulator adapter, seed rules, and protocol are unchanged.
+
+[The first resumed condition](results/common-five-continuation-2026-10-17) completes
+ordinal 119, multi-level seed 59. Native and downloaded audit reports and ledgers match
+exactly across 194,073 health records and 1,000 price-step records. Eight derived
+geometric means differ by one floating-point unit between Linux and macOS; both
+measurement files and their comparison are retained. The retained prefix plus this
+condition covers 120/200 conditions without duplication; numerical failures remain.
+
+The first attempt stopped before simulation because Git was absent after node restore.
+Installing Git and using a fresh output directory resolved the provenance-check failure.
+The failed directory and logs remain in the qualification archive.
+
+The remaining 80 conditions run in eight disjoint ten-condition intervals, using the
+same Python 3.11.14 and pinned numerical packages. Execution is bounded to one hour;
+the observed node rate implies at most $0.576 for that hour, excluding final idle time.
+Each interval receives a native structural audit before export. Launching these runs
+does not establish their completion or validate their economic trajectories.
+
 ## Complete threshold-ten common-resource grid
 
 [Full reconciliation](results/common-ten-complete-2026-10-17/reconciliation.json) combines the 198 new cloud runs with the two separately audited cloud seed-zero runs exactly once.
