@@ -328,3 +328,13 @@ does not prove universal success. The disease-persistence scenario remains unfin
 The original enabled model-test suite is now also running with replay seed 20261017,
 using its already-verified historical binary. It covers inheritance and wealth only;
 six other model properties remain disabled in the source. Its result is still pending.
+
+
+## Complete corrected carrying-capacity ensemble
+
+[All 100 corrected carrying trajectories](results/corrected-carrying-ensemble-2026-10-17)
+pass independent audits across 8,521,865 agent observations. Mean population over times
+101–400 is 204.921500, with a 95% interval of [203.705042, 206.137958]. The code's
+204 target lies inside this interval; the appendix's 210 target remains outside.
+The same-seed comparison retains the original 205.815833 mean. Source correction does
+not explain the appendix's higher target or establish a completed negative replication.
