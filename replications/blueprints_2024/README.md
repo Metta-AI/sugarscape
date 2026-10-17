@@ -763,3 +763,19 @@ Inputs passed shell syntax checks and remote SHA-256 verification before launch.
 The commands are currently waiting: no new completed input or replication is claimed.
 Recorded wall times remain hardware/workload-qualified; this launch does not
 establish equivalence to the paper's timing experiment.
+
+## Bentham runtime checkpoint six
+
+[The downloaded checkpoint](results/runtime-storage-readback-sixth-2026-10-17)
+validates 14 original Bentham 5,000-step inputs, indices `[52,66)`, and 70,014 observations.
+Seven inputs overlap previously audited trajectories and agree exactly; seven add 35,007 observations.
+Reconciled coverage is **811/1,200 unique runtime inputs and 1,576,067 observations**.
+Bentham 5,000-step coverage is now 66/100. Seven other model/horizon groups remain complete.
+
+The 17,215,267-byte storage download matches its sealed SHA-256
+`da540b50a75ba63c6c7612e7ea5af2a4b1d950910898732d8c483c4b9169e1dc`.
+The existing auditor verifies every raw trajectory, native exit receipt, original configuration,
+source pin, and terminal condition. Reconciliation rechecks previous audit hashes and rejects conflicting overlaps.
+Compact audits, frozen ledger, export receipts, and retrieval metadata are retained here;
+the raw archive remains in task-owned object storage and the local evidence directory.
+This checkpoint does not establish the paper's separate 500-seed timing experiment or complete the study.
