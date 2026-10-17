@@ -2,6 +2,7 @@
   "reports": 53,
   "raw_measurements": 212,
   "max_ols_error": 1.9895196601282805e-13,
+  "max_standard_deviation_error": 4.440892098500626e-16,
   "scope": "Independent reanalysis of author archived timings only; no new simulation or hardware replication",
   "paper_sha256": "1cdff1a896e4c36e2247a726a9acb27a09ee491cecdc60cab17c4f85f9aa6916",
   "rows": [
@@ -10,371 +11,530 @@
       "samples": 4,
       "ols_seconds": 38.09924349910142,
       "archived_seconds": 38.09924349910139,
-      "absolute_error": 2.842170943040401e-14
+      "absolute_error": 2.842170943040401e-14,
+      "standard_deviation_seconds": 0.6176939819820062,
+      "archived_standard_deviation_seconds": 0.6176939819820063,
+      "standard_deviation_error": 1.1102230246251565e-16
     },
     {
       "path": "criterion/sugarscape-io/results/amazon/sugarscape-io-normal_amazon_500_32.html",
       "samples": 4,
       "ols_seconds": 39.67193140300077,
       "archived_seconds": 39.67193140300074,
-      "absolute_error": 2.842170943040401e-14
+      "absolute_error": 2.842170943040401e-14,
+      "standard_deviation_seconds": 0.697363907375208,
+      "archived_standard_deviation_seconds": 0.697363907375208,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-normal_500_1.html",
       "samples": 4,
       "ols_seconds": 20.99479774800129,
       "archived_seconds": 20.994797748001275,
-      "absolute_error": 1.4210854715202004e-14
+      "absolute_error": 1.4210854715202004e-14,
+      "standard_deviation_seconds": 0.12726316436791013,
+      "archived_standard_deviation_seconds": 0.12726316436791013,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-normal_500_2.html",
       "samples": 4,
       "ols_seconds": 20.000926486501697,
       "archived_seconds": 20.00092648650168,
-      "absolute_error": 1.7763568394002505e-14
+      "absolute_error": 1.7763568394002505e-14,
+      "standard_deviation_seconds": 0.12315585161843683,
+      "archived_standard_deviation_seconds": 0.12315585161843683,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-normal_500_3.html",
       "samples": 4,
       "ols_seconds": 21.929144869695296,
       "archived_seconds": 21.92914486969528,
-      "absolute_error": 1.7763568394002505e-14
+      "absolute_error": 1.7763568394002505e-14,
+      "standard_deviation_seconds": 0.19238257225752203,
+      "archived_standard_deviation_seconds": 0.19238257225752203,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-normal_500_4.html",
       "samples": 4,
       "ols_seconds": 24.049599000104347,
       "archived_seconds": 24.049599000104333,
-      "absolute_error": 1.4210854715202004e-14
+      "absolute_error": 1.4210854715202004e-14,
+      "standard_deviation_seconds": 0.1681434228485108,
+      "archived_standard_deviation_seconds": 0.1681434228485108,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-normal_500_5.html",
       "samples": 4,
       "ols_seconds": 26.7498626030021,
       "archived_seconds": 26.74986260300208,
-      "absolute_error": 2.1316282072803006e-14
+      "absolute_error": 2.1316282072803006e-14,
+      "standard_deviation_seconds": 0.1708148960147459,
+      "archived_standard_deviation_seconds": 0.1708148960147459,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-normal_500_6.html",
       "samples": 4,
       "ols_seconds": 29.276184592500783,
       "archived_seconds": 29.276184592500762,
-      "absolute_error": 2.1316282072803006e-14
+      "absolute_error": 2.1316282072803006e-14,
+      "standard_deviation_seconds": 0.5754192569372959,
+      "archived_standard_deviation_seconds": 0.575419256937296,
+      "standard_deviation_error": 1.1102230246251565e-16
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-normal_500_7.html",
       "samples": 4,
       "ols_seconds": 29.999985468387592,
       "archived_seconds": 29.999985468387578,
-      "absolute_error": 1.4210854715202004e-14
+      "absolute_error": 1.4210854715202004e-14,
+      "standard_deviation_seconds": 0.1271991398649721,
+      "archived_standard_deviation_seconds": 0.1271991398649721,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-normal_500_8.html",
       "samples": 4,
       "ols_seconds": 31.220324450801122,
       "archived_seconds": 31.220324450801098,
-      "absolute_error": 2.4868995751603507e-14
+      "absolute_error": 2.4868995751603507e-14,
+      "standard_deviation_seconds": 0.2989238510028423,
+      "archived_standard_deviation_seconds": 0.29892385100284224,
+      "standard_deviation_error": 5.551115123125783e-17
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-rebirthing_1000_4.html",
       "samples": 4,
       "ols_seconds": 130.31929577329717,
       "archived_seconds": 130.31929577329706,
-      "absolute_error": 1.1368683772161603e-13
+      "absolute_error": 1.1368683772161603e-13,
+      "standard_deviation_seconds": 0.2796717534254951,
+      "archived_standard_deviation_seconds": 0.2796717534254951,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-rebirthing_1500_4.html",
       "samples": 4,
       "ols_seconds": 182.61435257170226,
       "archived_seconds": 182.61435257170214,
-      "absolute_error": 1.1368683772161603e-13
+      "absolute_error": 1.1368683772161603e-13,
+      "standard_deviation_seconds": 0.8371376054022709,
+      "archived_standard_deviation_seconds": 0.8371376054022708,
+      "standard_deviation_error": 1.1102230246251565e-16
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-rebirthing_2000_4.html",
       "samples": 4,
       "ols_seconds": 181.23200250499644,
       "archived_seconds": 181.2320025049963,
-      "absolute_error": 1.4210854715202004e-13
+      "absolute_error": 1.4210854715202004e-13,
+      "standard_deviation_seconds": 0.8339220427709274,
+      "archived_standard_deviation_seconds": 0.8339220427709274,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-rebirthing_2500_4.html",
       "samples": 4,
       "ols_seconds": 272.0128201910963,
       "archived_seconds": 272.0128201910961,
-      "absolute_error": 1.7053025658242404e-13
+      "absolute_error": 1.7053025658242404e-13,
+      "standard_deviation_seconds": 0.8061471291634636,
+      "archived_standard_deviation_seconds": 0.8061471291634636,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-io/results/local/sugarscape-io-rebirthing_500_4.html",
       "samples": 4,
       "ols_seconds": 67.87967159910184,
       "archived_seconds": 67.87967159910178,
-      "absolute_error": 5.684341886080802e-14
+      "absolute_error": 5.684341886080802e-14,
+      "standard_deviation_seconds": 0.13319877434190414,
+      "archived_standard_deviation_seconds": 0.13319877434190414,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-seq/results/local/sugarscape-seq-rebirthing_1000.html",
       "samples": 4,
       "ols_seconds": 144.93623294778803,
       "archived_seconds": 144.93623294778794,
-      "absolute_error": 8.526512829121202e-14
+      "absolute_error": 8.526512829121202e-14,
+      "standard_deviation_seconds": 0.10903526779886047,
+      "archived_standard_deviation_seconds": 0.10903526779886047,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-seq/results/local/sugarscape-seq-rebirthing_1500.html",
       "samples": 4,
       "ols_seconds": 219.60097674310083,
       "archived_seconds": 219.6009767431007,
-      "absolute_error": 1.4210854715202004e-13
+      "absolute_error": 1.4210854715202004e-13,
+      "standard_deviation_seconds": 0.14655310103249572,
+      "archived_standard_deviation_seconds": 0.14655310103249572,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-seq/results/local/sugarscape-seq-rebirthing_2000.html",
       "samples": 4,
       "ols_seconds": 212.8793735350103,
       "archived_seconds": 212.87937353501016,
-      "absolute_error": 1.4210854715202004e-13
+      "absolute_error": 1.4210854715202004e-13,
+      "standard_deviation_seconds": 0.6906457286924887,
+      "archived_standard_deviation_seconds": 0.6906457286924887,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-seq/results/local/sugarscape-seq-rebirthing_2500.html",
       "samples": 4,
       "ols_seconds": 192.77486767040094,
       "archived_seconds": 192.77486767040074,
-      "absolute_error": 1.9895196601282805e-13
+      "absolute_error": 1.9895196601282805e-13,
+      "standard_deviation_seconds": 0.16152556360737705,
+      "archived_standard_deviation_seconds": 0.16152556360737705,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-seq/results/local/sugarscape-seq-rebirthing_500.html",
       "samples": 4,
       "ols_seconds": 70.0543351103959,
       "archived_seconds": 70.05433511039584,
-      "absolute_error": 5.684341886080802e-14
+      "absolute_error": 5.684341886080802e-14,
+      "standard_deviation_seconds": 0.40511721076149054,
+      "archived_standard_deviation_seconds": 0.40511721076149054,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-seq/results/local/sugarscape-seq-singlecore_500.html",
       "samples": 4,
       "ols_seconds": 25.238476341406923,
       "archived_seconds": 25.238476341406905,
-      "absolute_error": 1.7763568394002505e-14
+      "absolute_error": 1.7763568394002505e-14,
+      "standard_deviation_seconds": 0.35969071872607894,
+      "archived_standard_deviation_seconds": 0.35969071872607894,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/amazon/sugarscape-tarray-normal_amazon_500_16.html",
       "samples": 4,
       "ols_seconds": 11.878056451096194,
       "archived_seconds": 11.878056451096187,
-      "absolute_error": 7.105427357601002e-15
+      "absolute_error": 7.105427357601002e-15,
+      "standard_deviation_seconds": 0.13182633067310706,
+      "archived_standard_deviation_seconds": 0.13182633067310703,
+      "standard_deviation_error": 2.7755575615628914e-17
     },
     {
       "path": "criterion/sugarscape-tarray/results/amazon/sugarscape-tarray-normal_amazon_500_32.html",
       "samples": 4,
       "ols_seconds": 12.76185820240207,
       "archived_seconds": 12.76185820240206,
-      "absolute_error": 1.0658141036401503e-14
+      "absolute_error": 1.0658141036401503e-14,
+      "standard_deviation_seconds": 0.24844950033932345,
+      "archived_standard_deviation_seconds": 0.24844950033932345,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/amazon/sugarscape-tarray-normal_amazon_500_64.html",
       "samples": 4,
       "ols_seconds": 14.55221481289772,
       "archived_seconds": 14.552214812897713,
-      "absolute_error": 7.105427357601002e-15
+      "absolute_error": 7.105427357601002e-15,
+      "standard_deviation_seconds": 0.5421078539298566,
+      "archived_standard_deviation_seconds": 0.5421078539298566,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/amazon/sugarscape-tarray-rebirthing_amazon_2500_16.html",
       "samples": 4,
       "ols_seconds": 46.56871552819938,
       "archived_seconds": 46.56871552819934,
-      "absolute_error": 3.552713678800501e-14
+      "absolute_error": 3.552713678800501e-14,
+      "standard_deviation_seconds": 0.8787412776963515,
+      "archived_standard_deviation_seconds": 0.8787412776963514,
+      "standard_deviation_error": 1.1102230246251565e-16
     },
     {
       "path": "criterion/sugarscape-tarray/results/amazon/sugarscape-tarray-rebirthing_amazon_2500_32.html",
       "samples": 4,
       "ols_seconds": 76.41398439810142,
       "archived_seconds": 76.41398439810138,
-      "absolute_error": 4.263256414560601e-14
+      "absolute_error": 4.263256414560601e-14,
+      "standard_deviation_seconds": 0.44921935056751605,
+      "archived_standard_deviation_seconds": 0.44921935056751605,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/amazon/sugarscape-tarray-rebirthing_amazon_2500_64.html",
       "samples": 4,
       "ols_seconds": 99.092387548901,
       "archived_seconds": 99.09238754890092,
-      "absolute_error": 8.526512829121202e-14
+      "absolute_error": 8.526512829121202e-14,
+      "standard_deviation_seconds": 0.9387875279978779,
+      "archived_standard_deviation_seconds": 0.9387875279978779,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-normal_500_1.html",
       "samples": 4,
       "ols_seconds": 42.04233087239552,
       "archived_seconds": 42.042330872395496,
-      "absolute_error": 2.1316282072803006e-14
+      "absolute_error": 2.1316282072803006e-14,
+      "standard_deviation_seconds": 2.19726259915061,
+      "archived_standard_deviation_seconds": 2.1972625991506094,
+      "standard_deviation_error": 4.440892098500626e-16
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-normal_500_2.html",
       "samples": 4,
       "ols_seconds": 24.49073809799738,
       "archived_seconds": 24.490738097997355,
-      "absolute_error": 2.4868995751603507e-14
+      "absolute_error": 2.4868995751603507e-14,
+      "standard_deviation_seconds": 1.0709138773339426,
+      "archived_standard_deviation_seconds": 1.0709138773339426,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-normal_500_3.html",
       "samples": 4,
       "ols_seconds": 19.664659433107584,
       "archived_seconds": 19.66465943310757,
-      "absolute_error": 1.4210854715202004e-14
+      "absolute_error": 1.4210854715202004e-14,
+      "standard_deviation_seconds": 1.0492398104497944,
+      "archived_standard_deviation_seconds": 1.0492398104497944,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-normal_500_4.html",
       "samples": 4,
       "ols_seconds": 18.92745277269277,
       "archived_seconds": 18.927452772692757,
-      "absolute_error": 1.4210854715202004e-14
+      "absolute_error": 1.4210854715202004e-14,
+      "standard_deviation_seconds": 0.5835990082862156,
+      "archived_standard_deviation_seconds": 0.5835990082862156,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-normal_500_5.html",
       "samples": 4,
       "ols_seconds": 20.253186682000518,
       "archived_seconds": 20.253186682000504,
-      "absolute_error": 1.4210854715202004e-14
+      "absolute_error": 1.4210854715202004e-14,
+      "standard_deviation_seconds": 0.8703490386661439,
+      "archived_standard_deviation_seconds": 0.8703490386661439,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-normal_500_6.html",
       "samples": 4,
       "ols_seconds": 21.169239302913766,
       "archived_seconds": 21.169239302913752,
-      "absolute_error": 1.4210854715202004e-14
+      "absolute_error": 1.4210854715202004e-14,
+      "standard_deviation_seconds": 1.4935317774609536,
+      "archived_standard_deviation_seconds": 1.4935317774609536,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-normal_500_7.html",
       "samples": 4,
       "ols_seconds": 20.957678971998387,
       "archived_seconds": 20.957678971998373,
-      "absolute_error": 1.4210854715202004e-14
+      "absolute_error": 1.4210854715202004e-14,
+      "standard_deviation_seconds": 0.4153361253155064,
+      "archived_standard_deviation_seconds": 0.41533612531550634,
+      "standard_deviation_error": 5.551115123125783e-17
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-normal_500_8.html",
       "samples": 4,
       "ols_seconds": 21.11860757991089,
       "archived_seconds": 21.118607579910872,
-      "absolute_error": 1.7763568394002505e-14
+      "absolute_error": 1.7763568394002505e-14,
+      "standard_deviation_seconds": 0.6445280313795875,
+      "archived_standard_deviation_seconds": 0.6445280313795875,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-rebirthing_1000_4.html",
       "samples": 4,
       "ols_seconds": 38.82489437050242,
       "archived_seconds": 38.8248943705024,
-      "absolute_error": 2.1316282072803006e-14
+      "absolute_error": 2.1316282072803006e-14,
+      "standard_deviation_seconds": 1.4286733461282075,
+      "archived_standard_deviation_seconds": 1.4286733461282077,
+      "standard_deviation_error": 2.220446049250313e-16
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-rebirthing_1500_4.html",
       "samples": 4,
       "ols_seconds": 40.1427278385032,
       "archived_seconds": 40.14272783850315,
-      "absolute_error": 4.973799150320701e-14
+      "absolute_error": 4.973799150320701e-14,
+      "standard_deviation_seconds": 0.25862068503955743,
+      "archived_standard_deviation_seconds": 0.25862068503955743,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-rebirthing_2000_4.html",
       "samples": 4,
       "ols_seconds": 49.86158146120722,
       "archived_seconds": 49.861581461207194,
-      "absolute_error": 2.842170943040401e-14
+      "absolute_error": 2.842170943040401e-14,
+      "standard_deviation_seconds": 0.8211507277842858,
+      "archived_standard_deviation_seconds": 0.8211507277842859,
+      "standard_deviation_error": 1.1102230246251565e-16
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-rebirthing_2500_4.html",
       "samples": 4,
       "ols_seconds": 55.19115495000149,
       "archived_seconds": 55.191154950001454,
-      "absolute_error": 3.552713678800501e-14
+      "absolute_error": 3.552713678800501e-14,
+      "standard_deviation_seconds": 1.03845033991292,
+      "archived_standard_deviation_seconds": 1.03845033991292,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tarray/results/local/sugarscape-tarray-rebirthing_500_4.html",
       "samples": 4,
       "ols_seconds": 25.67715631610189,
       "archived_seconds": 25.67715631610187,
-      "absolute_error": 2.1316282072803006e-14
+      "absolute_error": 2.1316282072803006e-14,
+      "standard_deviation_seconds": 0.42864774551032114,
+      "archived_standard_deviation_seconds": 0.42864774551032114,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-normal_500_1.html",
       "samples": 4,
       "ols_seconds": 21.059364773309785,
       "archived_seconds": 21.059364773309767,
-      "absolute_error": 1.7763568394002505e-14
+      "absolute_error": 1.7763568394002505e-14,
+      "standard_deviation_seconds": 0.25020192701834243,
+      "archived_standard_deviation_seconds": 0.25020192701834243,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-normal_500_2.html",
       "samples": 4,
       "ols_seconds": 22.241824853696738,
       "archived_seconds": 22.241824853696716,
-      "absolute_error": 2.1316282072803006e-14
+      "absolute_error": 2.1316282072803006e-14,
+      "standard_deviation_seconds": 0.2129848640882518,
+      "archived_standard_deviation_seconds": 0.2129848640882518,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-normal_500_3.html",
       "samples": 4,
       "ols_seconds": 23.561246821601518,
       "archived_seconds": 23.5612468216015,
-      "absolute_error": 1.7763568394002505e-14
+      "absolute_error": 1.7763568394002505e-14,
+      "standard_deviation_seconds": 0.12857451469432268,
+      "archived_standard_deviation_seconds": 0.12857451469432268,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-normal_500_4.html",
       "samples": 4,
       "ols_seconds": 25.213013502897223,
       "archived_seconds": 25.2130135028972,
-      "absolute_error": 2.1316282072803006e-14
+      "absolute_error": 2.1316282072803006e-14,
+      "standard_deviation_seconds": 0.16390283118697038,
+      "archived_standard_deviation_seconds": 0.16390283118697038,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-normal_500_5.html",
       "samples": 4,
       "ols_seconds": 30.957562872709232,
       "archived_seconds": 30.95756287270921,
-      "absolute_error": 2.1316282072803006e-14
+      "absolute_error": 2.1316282072803006e-14,
+      "standard_deviation_seconds": 0.2415024533356273,
+      "archived_standard_deviation_seconds": 0.2415024533356273,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-normal_500_6.html",
       "samples": 4,
       "ols_seconds": 35.153739986199064,
       "archived_seconds": 35.153739986199035,
-      "absolute_error": 2.842170943040401e-14
+      "absolute_error": 2.842170943040401e-14,
+      "standard_deviation_seconds": 0.12228645655251669,
+      "archived_standard_deviation_seconds": 0.12228645655251669,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-normal_500_7.html",
       "samples": 4,
       "ols_seconds": 38.705429734499184,
       "archived_seconds": 38.705429734499155,
-      "absolute_error": 2.842170943040401e-14
+      "absolute_error": 2.842170943040401e-14,
+      "standard_deviation_seconds": 0.42593437607303936,
+      "archived_standard_deviation_seconds": 0.42593437607303936,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-normal_500_8.html",
       "samples": 4,
       "ols_seconds": 48.963958761392846,
       "archived_seconds": 48.9639587613928,
-      "absolute_error": 4.263256414560601e-14
+      "absolute_error": 4.263256414560601e-14,
+      "standard_deviation_seconds": 0.4163651527941639,
+      "archived_standard_deviation_seconds": 0.41636515279416386,
+      "standard_deviation_error": 5.551115123125783e-17
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-rebirthing_1000_4.html",
       "samples": 4,
       "ols_seconds": 136.14802428229888,
       "archived_seconds": 136.1480242822987,
-      "absolute_error": 1.7053025658242404e-13
+      "absolute_error": 1.7053025658242404e-13,
+      "standard_deviation_seconds": 0.1678109627833436,
+      "archived_standard_deviation_seconds": 0.1678109627833436,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-rebirthing_1500_4.html",
       "samples": 4,
       "ols_seconds": 191.76809869810813,
       "archived_seconds": 191.76809869810802,
-      "absolute_error": 1.1368683772161603e-13
+      "absolute_error": 1.1368683772161603e-13,
+      "standard_deviation_seconds": 0.7320576341217581,
+      "archived_standard_deviation_seconds": 0.7320576341217581,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-rebirthing_2000_4.html",
       "samples": 4,
       "ols_seconds": 214.37083483978927,
       "archived_seconds": 214.37083483978907,
-      "absolute_error": 1.9895196601282805e-13
+      "absolute_error": 1.9895196601282805e-13,
+      "standard_deviation_seconds": 0.5389834984905016,
+      "archived_standard_deviation_seconds": 0.5389834984905016,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-rebirthing_2500_4.html",
       "samples": 4,
       "ols_seconds": 147.3839424155012,
       "archived_seconds": 147.38394241550108,
-      "absolute_error": 1.1368683772161603e-13
+      "absolute_error": 1.1368683772161603e-13,
+      "standard_deviation_seconds": 0.32197772229389887,
+      "archived_standard_deviation_seconds": 0.32197772229389887,
+      "standard_deviation_error": 0.0
     },
     {
       "path": "criterion/sugarscape-tvar/results/local/sugarscape-tvar-rebirthing_500_4.html",
       "samples": 4,
       "ols_seconds": 69.10938632709438,
       "archived_seconds": 69.10938632709433,
-      "absolute_error": 5.684341886080802e-14
+      "absolute_error": 5.684341886080802e-14,
+      "standard_deviation_seconds": 0.34027244459165656,
+      "archived_standard_deviation_seconds": 0.34027244459165656,
+      "standard_deviation_error": 0.0
     }
   ]
 }

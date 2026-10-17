@@ -59,7 +59,11 @@ The audit reads 53 complete author Criterion HTML reports, checks their SHA-256
 hashes, and independently fits ordinary least squares to 212 raw measurements.
 All regression slopes match within 1.99e-13 seconds. All 51 printed timing cells
 in Tables 6, 8 and 9 match after rounding to three significant digits.
-Parenthesized standard deviations and retry ratios are retained but not validated.
+All 53 archived sample standard deviations also reproduce from the raw per-iteration timings.
+Of 45 printed standard deviations, 30 match rounding to the nearest hundredth; 15 differ.
+The largest absolute difference is 0.008984 seconds. These reporting differences remain explicit;
+no alternative tolerance or negative paper verdict is assigned. Table 9 parentheses are retry ratios,
+which cannot be reconstructed from these timing samples and remain unvalidated.
 
 These are author archival measurements, not fresh simulation runs, independent
 engine validation, or a hardware performance replication. The active Linux build

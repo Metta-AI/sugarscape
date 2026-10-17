@@ -63,6 +63,9 @@ for report in reports:
     intercept, slope = np.linalg.lstsq(design, observations[:, 1], rcond=None)[0]
     published = report["analysis"]["anRegress"][0]["regCoeffs"]["iters"]["estPoint"]
     assert abs(slope - published) < 1e-9, report["path"]
+    standard_deviation = float(np.std(observations[:, 1] / observations[:, 0], ddof=1))
+    archived_std = report["analysis"]["anStdDev"]["estPoint"]
+    assert abs(standard_deviation - archived_std) < 1e-9, report["path"]
     rows.append(
         {
             "path": report["path"],
@@ -70,12 +73,18 @@ for report in reports:
             "ols_seconds": float(slope),
             "archived_seconds": published,
             "absolute_error": abs(float(slope) - published),
+            "standard_deviation_seconds": standard_deviation,
+            "archived_standard_deviation_seconds": archived_std,
+            "standard_deviation_error": abs(standard_deviation - archived_std),
         }
     )
 summary = {
     "reports": len(rows),
     "raw_measurements": sum(row["samples"] for row in rows),
     "max_ols_error": max(row["absolute_error"] for row in rows),
+    "max_standard_deviation_error": max(
+        row["standard_deviation_error"] for row in rows
+    ),
     "scope": "Independent reanalysis of author archived timings only; no new simulation or hardware replication",
     "paper_sha256": hashlib.sha256(args.paper.read_bytes()).hexdigest(),
     "rows": rows,
@@ -86,6 +95,7 @@ text = (root / "paper.txt").read_text()
 rows = json.loads((root / "archived-ols-audit.json").read_text())["rows"]
 reports = {r["path"].split("/")[-1]: r for r in rows}
 comparisons = []
+variability = []
 for table, start, end in [
     (6, "Table 6 Performance comparison", "Best performance indicated"),
     (8, "Table 8 Performance comparison", "Best performance indicated"),
@@ -118,6 +128,21 @@ for table, start, end in [
                 filename = f"sugarscape-tarray-{variant}_amazon_{agents}_{index}.html"
             seconds = reports[filename]["ols_seconds"]
             rounded = float(format(seconds, ".3g"))
+            if table != 9:
+                deviation = reports[filename]["standard_deviation_seconds"]
+                variability.append(
+                    {
+                        "table": table,
+                        "index": index,
+                        "variant": variant,
+                        "paper_seconds": float(bracket),
+                        "recomputed_seconds": deviation,
+                        "nearest_hundredth": round(deviation, 2),
+                        "nearest_hundredth_matches": round(deviation, 2)
+                        == float(bracket),
+                        "absolute_difference": abs(float(bracket) - deviation),
+                    }
+                )
             comparisons.append(
                 {
                     "table": table,
@@ -138,7 +163,7 @@ result = {
     "matches": sum(r["match"] for r in comparisons),
     "interpretation": (
         "Author timings compared to OLS slope rounded to three significant digits. "
-        "Archive reanalysis only; parentheses not validated."
+        "Archive reanalysis only; standard deviations compared separately, retry ratios unvalidated."
     ),
     "rows": comparisons,
 }
@@ -151,3 +176,18 @@ print(
         {"reports": 53, "timings": result["timings"], "matches": result["matches"]}
     )
 )
+
+assert len(variability) == 45
+variability_summary = {
+    "cells": len(variability),
+    "nearest_hundredth_matches": sum(
+        r["nearest_hundredth_matches"] for r in variability
+    ),
+    "max_absolute_difference": max(r["absolute_difference"] for r in variability),
+    "scope": "Descriptive comparison with printed standard deviations. No adjusted tolerance, acceptance claim, or retry-ratio validation.",
+    "rows": variability,
+}
+(root / "paper-variability-comparison.json").write_text(
+    json.dumps(variability_summary, indent=2) + "\n"
+)
+print(json.dumps({k: v for k, v in variability_summary.items() if k != "rows"}))
