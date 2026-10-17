@@ -462,3 +462,17 @@ python replications/raimbault_2019/audit_batched_sizing.py \
 ```
 
 A second audit of the published archive reproduces the complete audit byte for byte.
+
+### Sixth remote reference checkpoint
+
+[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-007-independent-validation.json)
+checks 394 sealed chunks containing 39,200 remote inputs. Combined with 7,933 retained
+local inputs, coverage is **47,133/55,000 unique simulations**, with 94,266 exact Gini
+comparisons. All 53 pinned source and dependency files verify. The previous checkpoint
+is fully contained and unchanged; these counts are cumulative, not additive.
+
+The complete 3,007,632-byte archive is retained in this PR. Its SHA-256 is
+`ec2b3af14f0cb9fdc9cc1e945fbe08e3a5368b4bdfd0e8e155adfd81ad839806`.
+Every published member matches the audited evidence. The native queue continues;
+7,867 reference inputs remain. The generated-landscape ensemble is still incomplete,
+so this checkpoint does not complete the study.
