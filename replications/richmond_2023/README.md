@@ -265,3 +265,22 @@ status `OCCUPIED`, whereas the observer also records unresolved agents.
 Parity must compare the same status subset; total active population is a separate statistic.
 Compilation, parity, and state findings remain unverified until this deferred job finishes.
 The storage collector is capped at 100 MiB.
+
+## Figure 6 dependency-structure comparison
+
+[The pinned-source comparison](results/figure6-structure-2026-10-17/audit.json)
+checks Figure 6 on printed page 11, physical PDF page 12, by visual inspection and source extraction.
+The parent model orders metabolism/growback before the movement submodel.
+Its four submodel layers match the diagram: output cell status, request movement, respond to requests, then transact movement.
+All six message input/output links across the three named channels match the diagram.
+The agent mapping and registered exit condition are retained with source locations and hashes.
+
+This establishes structural correspondence only. The exit predicate increments a global counter and tests unresolved agents only below nine.
+At nine or above it returns without testing whether unresolved agents remain.
+The existing passive trace establishes counter carryover; the pending state observer must measure actual unresolved-agent outcomes.
+The figure caption's all-resolved guarantee is therefore not established by a matching dependency graph.
+
+The complete study also still requires native Figure 11A–C comparisons and Figure 11D–F visual states.
+The queued observer records active agents only; it does not retain the full unoccupied-cell landscape needed for Figure 11D.
+Full-landscape capture or independently verified reconstruction remains necessary, along with the declared movement/state checks.
+A completed 84-condition timing grid alone will not complete this study.
