@@ -440,3 +440,37 @@ cover both experiments. The inheritance pair has final sugar Gini 0.352099 versu
 0.313486 without trading. These are single-seed measurements, not ensemble conclusions.
 Both actual incomplete ensembles were rejected in full mode before output creation.
 The complete-ensemble success path awaits all 100 pairs; no synthetic completion is used.
+
+
+## Spice configuration comparison
+
+[The first native book-parameter trajectory](results/spice-first-2026-10-17) uses
+`mkParamsAnimationIV_1`, with vision 1–10 and sugar/spice metabolisms 1–5. Its
+1,000-step audit verifies 9,511 snapshot-agent observations and all 60 source pins.
+Population is 400 initially, 97 at time 100, 87 at time 500, and 85 at time 1,000.
+It first falls below 90 at time 268. These are single-seed observations.
+The [population plot](results/spice-first-2026-10-17/population.png) compares both
+audited trajectories; its script and control-reuse receipt are included.
+
+The existing `trade_off` experiment supplies the NetLogo-like comparison without
+duplicate runs. Resolved scenarios confirm that only vision and the two metabolism
+ranges differ, apart from labels. Both use the same 100-seed list and 1,000-step
+horizon. Initial agents need not match because these configuration ranges differ.
+The remaining 99 book-parameter seeds run under a one-CPU, 2 GiB, three-hour limit.
+
+The appendix's approximate values of 105, below 90, and 97 remain descriptive
+references. Full ensemble results must report trajectories and uncertainty without
+inventing an equivalence tolerance. This first trajectory does not complete A10.
+
+## Combat replacement fidelity
+
+The appendix describes age-death replacement in Animation III-11. The pinned
+`Agent.handleTick` sends both starvation and old age to `agentDies` (Agent.hs:116).
+That function invokes `birthNewAgent` whenever replacement is enabled (Dying.hs:24).
+`handleKilledInCombat` instead calls `kill` directly (Move.hs:134). Thus combat deaths
+bypass replacement, while both starvation and age deaths permit it.
+
+Keep this code/prose distinction in combat experiments. Existing summary output
+does not record death causes or attacker/victim events, so population curves alone
+cannot prove the appendix's causal or single-invader claims. No combat verdict follows
+from source inspection.
