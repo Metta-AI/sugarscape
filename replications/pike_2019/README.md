@@ -509,3 +509,21 @@ python replications/pike_2019/analyze_phase2.py \
 
 This completes the declared Phase II analysis for these released-source configurations.
 It does not resolve historical source fidelity, Phase III movement, or common-resource claims; the paper remains incomplete.
+
+## Common-resource arithmetic divergence
+
+[The native first-step trace](results/common-resource-math-2026-10-17/comparison.json) narrows the cloud/local discrepancy.
+Both environments have Python 3.11.14, SciPy 1.16.3, NumPy 1.26.4, Mesa 0.8.5, and NetworkX 3.6.1.
+Their native agent and geometric-mean function source hashes agree.
+The platforms differ: ARM macOS versus x86 Linux.
+
+The first geometric-mean call receives identical binary inputs and computes identical logarithms and their mean.
+Its returned prices differ by one unit in the last place: `0x1.666bb825c5173p+0` locally versus `0x1.666bb825c5172p+0` in the cloud.
+Across 460 first-step calls, 135 have identical inputs but different returned values.
+All 393 recorded trade prices match each platform’s uninstrumented run exactly.
+The observer returns the native result unchanged and introduces no rounding or replacement arithmetic.
+
+This establishes runtime arithmetic divergence before the first reported health discrepancy.
+It does not prove that geometric-mean rounding alone causes the later group-count changes.
+Common-resource continuation therefore remains separate from the local ensemble while that causal check is unresolved.
+No diagnostic replay adds seed coverage or a paper-level verdict.
