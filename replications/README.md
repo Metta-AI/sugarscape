@@ -58,6 +58,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | [source audit](source-audits/flentge-2001.json): 161-page thesis and experiment appendix recovered; source ZIP, executable, landscape and seeds unresolved; no runs |
 | pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | [source audit](source-audits/pan-2011.json): twelve scenario targets and explicit rules extracted; hardship mapping, scheduling, map, and original implementation unresolved |
 | thaler-2019 | Thaler and Siebers, [A tale of lock-free agents](https://doi.org/10.1186/s40294-019-0067-9) (2019) | Sugarscape population dynamics, timing, scaling and retry ratios; Figures 5–7 and Tables 6–9 | Original code recovered; 53 archived regression estimates and 51 printed timing cells independently reconstructed; Figure 5b reproduced across 50 frozen targets; Figure 5a provenance unresolved; fresh 45-condition timing ensemble queued; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16) |
+| thaler-properties-2019 | Thaler and Siebers, [Show me your properties: the potential of property-based testing in agent-based simulation](https://www.researchgate.net/publication/333198243_SHOW_ME_YOUR_PROPERTIES_THE_POTENTIAL_OF_PROPERTY-BASED_TESTING_IN_AGENT-BASED_SIMULATION) (2019) | Sugarscape property demonstrations and full validation appendix | Historical 60-file source pinned; GHC 8.4.4 build running; disabled properties and code/report discrepancies preserved; no fresh verdict; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/17) |
 
 Dogan (2026), [Policy Robustness Under Accelerating Automation](https://github.com/dgnerg867-ux/sugarscape), is an additional unpublished working-paper study.
 Completed mixed replication in [PR 11](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11): all 700 original primary runs and 205 bundled canonical runs complete.
@@ -73,8 +74,8 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 The [evidence index](study-evidence.json) pins thirteen pushed study commits and their README hashes: two completed mixed studies and one positive structural replication.
 Its JSON parsing checks artifact readability only; scientific completion remains claim-specific.
 Pike adds author-code replay and parameterized grouping ensembles, not an additional completed paper.
-Thaler adds a fourteenth study PR, outside that earlier evidence-index snapshot; it adds no completed study.
-The Need for Greed is an additional source-audited candidate, outside the fourteen study PRs and completed-study count.
+The lock-free and property-testing Thaler papers add two study PRs outside that earlier evidence-index snapshot; neither is complete.
+The Need for Greed is an additional source-audited candidate, outside the fifteen study PRs and completed-study count.
 Its exact configuration overlap offers future run reuse only after checking source, runtime and measurements; no duplicate ensemble was launched.
 Its corrective experiments preserve original failures and remain separate from historical replication claims.
 Carrella's independent implementation passes deterministic native comparisons; its full stochastic and estimator validation remain unfinished.
@@ -260,7 +261,7 @@ The author-hosted2003VUScape paper has been recovered and its Table2 and Figure2
 These differ materially from the2005communication experiments; existing2005runs cannot count as a second completed paper.
 The earlier text does not resolve fertility-end inheritance, historical source, or message-removal settings.
 
-Fourteen distinct paper studies now have separate PRs; three meet their declared completion criteria.
+Fifteen distinct paper studies now have separate PRs; three meet their declared completion criteria.
 The remaining nine are unfinished. The 2003 VUScape study uses its own published parameters and trajectories.
 The 2005 fertility correction passes all 150 paired runs and 11,494,812 births, but changes survival in several paired seeds.
 Its COM1 threshold-one survival rises from one to three of ten; implementation sensitivity still prevents a paper-level verdict.
