@@ -920,3 +920,49 @@ This checks whether native x86 execution can replace local emulation for unfinis
 seeds. Both controls must reproduce every retained export byte-for-byte before
 production continuation. These repeated controls add no independent samples. The
 two-core allocation is queued; no parity or speed result is claimed yet.
+
+## Complete RNG-isolated NetLogo candidate ensemble
+
+[All 100 candidate inputs](results/weaver-isolated-ensemble-2026-10-17)
+pass the full trajectory audit, covering 11,783,266 agent observations. The retained
+first seed counts once. The remaining 99 trajectories produce identical audit JSON
+after extraction from the frozen compressed archive.
+
+[The cross-implementation comparison](results/weaver-isolated-ensemble-2026-10-17/comparison/comparison.json)
+uses the previously validated matching resource maps and alternative spice settings.
+Each implementation has 100 inputs. Matching integer seeds do not produce paired
+initial states across NetLogo and Haskell random-number generators; differences use
+independent-cohort Welch intervals.
+
+| Population metric | NetLogo candidate | Released Haskell | Corrected Haskell |
+| --- | ---: | ---: | ---: |
+| Step 100 | 128.59 | 127.22 | 126.83 |
+| Step 500 | 111.35 | 111.12 | 111.25 |
+| Step 1,000 | 108.54 | 108.01 | 108.32 |
+| Mean over steps 801–1,000 | 108.8001 | 108.33285 | 108.60965 |
+
+At step 1,000, corrected Haskell minus the candidate is −0.22 agents, with a
+95% interval of [−2.2402, 1.8002]. This is not an equivalence test or a
+simultaneous confidence statement. The [trajectory plot](results/weaver-isolated-ensemble-2026-10-17/comparison/population.svg)
+shows the early and late horizons separately, with pointwise 95% intervals.
+
+These data support similar population behavior under the recovered matching settings,
+while neither implementation approaches the appendix's approximately 97-agent value
+at this horizon. The candidate's byte identity with the 2009 reference remains
+unverified, and Java 11 differs from its historical runtime. This comparison adds
+cross-implementation evidence, not a completed paper or an exact historical replication.
+
+## Native CPU parity passed; culture continuation launched
+
+[Both native controls](results/native-culture-parity-2026-10-17)
+reproduce all ten retained exports byte-for-byte. Downloaded evidence independently
+passes every expected file hash. The controls took 66.48 and 66.47 seconds;
+these single observations are not a performance benchmark.
+
+Both local workers terminated at their three-hour limits after completing culture
+indices 0–32. Their interrupted index-33 attempts, terminal errors, and completed
+ledgers remain preserved. Two bounded native workers now execute only indices 33–99,
+one per source variant, with two CPU cores total and two-hour worker limits.
+The original scenario, 2,700-step horizon, 50-step observation stride, seeds, source,
+and executable hashes are unchanged. Final reconciliation must combine the disjoint
+33-input local prefixes with all 67 native inputs before reporting a full cohort.

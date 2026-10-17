@@ -1,0 +1,30 @@
+{"variant": "original", "scenario": "culture", "index": 17, "seed": 1837463652, "steps": 2700, "summary_rows": 2701, "final_population": 203, "elapsed_seconds": 138.96736654599954}
+{"variant": "original", "scenario": "culture", "index": 18, "seed": 708252033, "steps": 2700, "summary_rows": 2701, "final_population": 210, "elapsed_seconds": 138.67169092000404}
+{"variant": "original", "scenario": "culture", "index": 19, "seed": 1260839010, "steps": 2700, "summary_rows": 2701, "final_population": 205, "elapsed_seconds": 135.9700774899975}
+{"variant": "original", "scenario": "culture", "index": 20, "seed": 378625981, "steps": 2700, "summary_rows": 2701, "final_population": 208, "elapsed_seconds": 136.84382142999675}
+{"variant": "original", "scenario": "culture", "index": 21, "seed": 1025675068, "steps": 2700, "summary_rows": 2701, "final_population": 203, "elapsed_seconds": 137.77688480000506}
+{"variant": "original", "scenario": "culture", "index": 22, "seed": 1986939261, "steps": 2700, "summary_rows": 2701, "final_population": 198, "elapsed_seconds": 133.6763579729959}
+{"variant": "original", "scenario": "culture", "index": 23, "seed": 2101745476, "steps": 2700, "summary_rows": 2701, "final_population": 196, "elapsed_seconds": 131.01743944600457}
+{"variant": "original", "scenario": "culture", "index": 24, "seed": 1101638802, "steps": 2700, "summary_rows": 2701, "final_population": 195, "elapsed_seconds": 135.43123080399528}
+{"variant": "original", "scenario": "culture", "index": 25, "seed": 852257609, "steps": 2700, "summary_rows": 2701, "final_population": 192, "elapsed_seconds": 131.35187125399534}
+{"variant": "original", "scenario": "culture", "index": 26, "seed": 1181016799, "steps": 2700, "summary_rows": 2701, "final_population": 198, "elapsed_seconds": 136.80632847599918}
+{"variant": "original", "scenario": "culture", "index": 27, "seed": 1209997793, "steps": 2700, "summary_rows": 2701, "final_population": 198, "elapsed_seconds": 135.11609534000308}
+{"variant": "original", "scenario": "culture", "index": 28, "seed": 185525540, "steps": 2700, "summary_rows": 2701, "final_population": 209, "elapsed_seconds": 141.00418526800058}
+{"variant": "original", "scenario": "culture", "index": 29, "seed": 383133977, "steps": 2700, "summary_rows": 2701, "final_population": 208, "elapsed_seconds": 139.0719826640052}
+{"variant": "original", "scenario": "culture", "index": 30, "seed": 1522658335, "steps": 2700, "summary_rows": 2701, "final_population": 194, "elapsed_seconds": 128.36369945800107}
+{"variant": "original", "scenario": "culture", "index": 31, "seed": 397911668, "steps": 2700, "summary_rows": 2701, "final_population": 194, "elapsed_seconds": 121.53745895799511}
+{"variant": "original", "scenario": "culture", "index": 32, "seed": 351301334, "steps": 2700, "summary_rows": 2701, "final_population": 202, "elapsed_seconds": 126.87989095099329}
+Traceback (most recent call last):
+  File "/root/sugarscape/thaler-properties-observer-ensembles-001/run_observer_ensemble.py", line 59, in <module>
+    result = subprocess.run(
+  File "/usr/lib/python3.10/subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1154, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 2047, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+  File "/usr/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/lib/python3.10/subprocess.py", line 1951, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/root/sugarscape/thaler-properties-observer-001/observe', 'mkParamsAnimationIII_6', '542902321', '2700', '50', '/root/sugarscape/thaler-properties-observer-ensembles-001/original/culture/033-542902321/trajectory']' timed out after 87.92715665399737 seconds

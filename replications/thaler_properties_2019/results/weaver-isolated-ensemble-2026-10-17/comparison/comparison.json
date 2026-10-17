@@ -1,0 +1,198 @@
+{
+  "input_sha256": {
+    "candidate": "c739038eae65a287aa6f777588d9a7f82c7965bacb385f54ff4b4ccff1dd51e5",
+    "original": "e4cc41ca8aeff5452f3042fa9d8dbe80e6e6c60abf057938ce8d328984d41a96",
+    "corrected": "74f3b3264cf79dae2c08ad3ea1eb747fd12c353379c906098c1dc983b7572d71"
+  },
+  "comparisons": [
+    {
+      "metric": "at100",
+      "estimates": {
+        "candidate": {
+          "n": 100,
+          "mean": 128.59,
+          "ci95": [
+            127.32840369161987,
+            129.85159630838012
+          ]
+        },
+        "original": {
+          "n": 100,
+          "mean": 127.22,
+          "ci95": [
+            125.76420260471468,
+            128.67579739528531
+          ]
+        },
+        "corrected": {
+          "n": 100,
+          "mean": 126.83,
+          "ci95": [
+            125.40778769252968,
+            128.25221230747033
+          ]
+        }
+      },
+      "differences": {
+        "original_minus_candidate": {
+          "mean": -1.3700000000000045,
+          "welch_degrees_of_freedom": 194.0753261186356,
+          "ci95": [
+            -3.284782324176666,
+            0.5447823241766567
+          ]
+        },
+        "corrected_minus_candidate": {
+          "mean": -1.7600000000000051,
+          "welch_degrees_of_freedom": 195.22309927535852,
+          "ci95": [
+            -3.6496113001948776,
+            0.12961130019486733
+          ]
+        }
+      }
+    },
+    {
+      "metric": "at500",
+      "estimates": {
+        "candidate": {
+          "n": 100,
+          "mean": 111.35,
+          "ci95": [
+            110.20012387805116,
+            112.49987612194883
+          ]
+        },
+        "original": {
+          "n": 100,
+          "mean": 111.12,
+          "ci95": [
+            109.7069821794087,
+            112.53301782059131
+          ]
+        },
+        "corrected": {
+          "n": 100,
+          "mean": 111.25,
+          "ci95": [
+            109.76477977607603,
+            112.73522022392397
+          ]
+        }
+      },
+      "differences": {
+        "original_minus_candidate": {
+          "mean": -0.22999999999998977,
+          "welch_degrees_of_freedom": 190.14833150410695,
+          "ci95": [
+            -2.041025998557375,
+            1.5810259985573951
+          ]
+        },
+        "corrected_minus_candidate": {
+          "mean": -0.09999999999999432,
+          "welch_degrees_of_freedom": 186.31213623220376,
+          "ci95": [
+            -1.9674941541936706,
+            1.767494154193682
+          ]
+        }
+      }
+    },
+    {
+      "metric": "at1000",
+      "estimates": {
+        "candidate": {
+          "n": 100,
+          "mean": 108.54,
+          "ci95": [
+            107.30828644139615,
+            109.77171355860386
+          ]
+        },
+        "original": {
+          "n": 100,
+          "mean": 108.01,
+          "ci95": [
+            106.4592521651706,
+            109.56074783482941
+          ]
+        },
+        "corrected": {
+          "n": 100,
+          "mean": 108.32,
+          "ci95": [
+            106.70410156561987,
+            109.93589843438012
+          ]
+        }
+      },
+      "differences": {
+        "original_minus_candidate": {
+          "mean": -0.5300000000000011,
+          "welch_degrees_of_freedom": 188.35063326495168,
+          "ci95": [
+            -2.4988324206510644,
+            1.4388324206510619
+          ]
+        },
+        "corrected_minus_candidate": {
+          "mean": -0.22000000000001307,
+          "welch_degrees_of_freedom": 185.00728706128632,
+          "ci95": [
+            -2.240188875904357,
+            1.8001888759043307
+          ]
+        }
+      }
+    },
+    {
+      "metric": "late801_1000",
+      "estimates": {
+        "candidate": {
+          "n": 100,
+          "mean": 108.80010000000001,
+          "ci95": [
+            107.57745386246145,
+            110.02274613753858
+          ]
+        },
+        "original": {
+          "n": 100,
+          "mean": 108.33284999999998,
+          "ci95": [
+            106.80921065032096,
+            109.856489349679
+          ]
+        },
+        "corrected": {
+          "n": 100,
+          "mean": 108.60964999999999,
+          "ci95": [
+            107.01252238073525,
+            110.20677761926473
+          ]
+        }
+      },
+      "differences": {
+        "original_minus_candidate": {
+          "mean": -0.46725000000003547,
+          "welch_degrees_of_freedom": 189.12712491095337,
+          "ci95": [
+            -2.4093449715399133,
+            1.4748449715398426
+          ]
+        },
+        "corrected_minus_candidate": {
+          "mean": -0.19045000000002688,
+          "welch_degrees_of_freedom": 185.37157309083037,
+          "ci95": [
+            -2.190308855677352,
+            1.8094088556772983
+          ]
+        }
+      }
+    }
+  ],
+  "scope": "Independent-cohort Welch intervals; identical integer seeds are not paired initial states across RNG implementations. Pointwise, not simultaneous or equivalence intervals. Candidate 2009 source identity unverified; no whole-paper verdict."
+}
