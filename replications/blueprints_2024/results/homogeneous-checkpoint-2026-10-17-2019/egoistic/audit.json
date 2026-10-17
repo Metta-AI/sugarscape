@@ -1,0 +1,1983 @@
+{
+  "model": "egoisticHalfLookaheadBinary",
+  "start": 66,
+  "stop": 345,
+  "recorded_root": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005",
+  "source_sha256": {
+    "agent.py": "5ffd9ac332159413ead96102167593d1f5a514554415fcfea39e7133fd4a25d9",
+    "cell.py": "f1c64eebfdf8b170880f79211310ad1162f4dacafb5b26df93512d3c551f3dfd",
+    "disease.py": "56f1ea55511c497f1f8be836f6967ecba8641794d6ff56c01af989397eab607b",
+    "environment.py": "3a07b8c8c08ab7fd5ecadb67e24dbe3409f574fe3a729330d35c0716e6f7fc50",
+    "ethics.py": "977ac532c7b12fdd18e5157eff2d1a3759468842a0219ebbfad992ae4651214a",
+    "gui.py": "80eff045d436fa3c62e61287adbceab5816646421617abf2625beb9251be02b5",
+    "logparse.py": "8c3741af52794b3d5eb6d65015a84e7758650874e0b16fb027b754925c07c37a",
+    "setup.py": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+    "sugarscape.py": "d429ebabea8ea08dfdaf25faa34a409e463f97ad754e7143a23202fdd5126e81"
+  },
+  "declared_stop": 500,
+  "complete_declared_interval": false,
+  "runs": 279,
+  "observations": 527415,
+  "counts": {
+    "dead": 180,
+    "worse": 3,
+    "better_or_equal": 96
+  },
+  "results": [
+    {
+      "seed": 1094233484176390113,
+      "outcome": "better_or_equal",
+      "final_population": 1095,
+      "trajectory_sha256": "2bba604324692a721a0863c397afc8df889e35f45566d8c8cc584ac07faad1ba",
+      "observations": 5001
+    },
+    {
+      "seed": 1109860648199565578,
+      "outcome": "better_or_equal",
+      "final_population": 419,
+      "trajectory_sha256": "5976a4e4b27d50d321c028639889f62c862bd3f1045dc13a6366a54ff84c75e6",
+      "observations": 5001
+    },
+    {
+      "seed": 1113456709891828571,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "db1d5c4e94f4240df3b0e4c715d0b9656343402af1bf3bf7986701a3d68c6b0b",
+      "observations": 245
+    },
+    {
+      "seed": 1139514586838715191,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a0545a546f186166b83148db1af797421bbad4d65578f99338eb4ab70cdef5b0",
+      "observations": 157
+    },
+    {
+      "seed": 1153924273002767570,
+      "outcome": "better_or_equal",
+      "final_population": 320,
+      "trajectory_sha256": "bc131742058f6a5cc3da26c3e2c32b06117867fdbb96745a74dc25db2b9483dd",
+      "observations": 5001
+    },
+    {
+      "seed": 1193247888052221378,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "8524b6a5dfbe4798728b223a9e5c77614f4fa0d641cf3a96846da4ea3098caf4",
+      "observations": 129
+    },
+    {
+      "seed": 1233067699360264716,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f3071d0d63897f2f48f0db891f6aef918d00046efaf8949d1f91dc0ebe6d8be5",
+      "observations": 205
+    },
+    {
+      "seed": 1235083787285745207,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "554d9e921604487646e67d697db51b0d650d2b496bcfd3e088b52b3c2351bf69",
+      "observations": 176
+    },
+    {
+      "seed": 1247849724732551819,
+      "outcome": "better_or_equal",
+      "final_population": 496,
+      "trajectory_sha256": "919fed48a7c32dfb5932a3f9259a7cee7a545a062ad68db934c2c7e910df5b95",
+      "observations": 5001
+    },
+    {
+      "seed": 1254106714873597359,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "8de32f6a6c2dbc9f09d0e89fe8014e901d430c5b11389fb9fc72e195468b3848",
+      "observations": 163
+    },
+    {
+      "seed": 1270184133690992322,
+      "outcome": "better_or_equal",
+      "final_population": 1065,
+      "trajectory_sha256": "23673c7b071cbb6edd81014dd6f28b26ee12488c2dae706a31bcf64bd20a64ca",
+      "observations": 5001
+    },
+    {
+      "seed": 1280901202859883429,
+      "outcome": "better_or_equal",
+      "final_population": 1270,
+      "trajectory_sha256": "61243fd0806ec349f89c23c8162b2fc4ed0e8bb286ffc3c79e41092332e3eedc",
+      "observations": 5001
+    },
+    {
+      "seed": 1288598867396776898,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e4b9aac2dbc2db894aef565caca08476bcb64b24fb4d8067645d7952fdcf294d",
+      "observations": 181
+    },
+    {
+      "seed": 1291904393419366296,
+      "outcome": "better_or_equal",
+      "final_population": 402,
+      "trajectory_sha256": "70769510782cfcdef5f729a937d8cfcd92753cf76fae8b3764bd76b68e25811d",
+      "observations": 5001
+    },
+    {
+      "seed": 1297493895380503287,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "3aa2595fc1f57d8ec603975049de28da542d806cc223c8d33b8ae6f2704628b5",
+      "observations": 125
+    },
+    {
+      "seed": 1298266412039602124,
+      "outcome": "better_or_equal",
+      "final_population": 314,
+      "trajectory_sha256": "6b967e62449582143d90e8c0022c773b55b023a322e9cc8a8a5dba614aa391b2",
+      "observations": 5001
+    },
+    {
+      "seed": 1319252082315724448,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "4c3d17e51dcc30bca06508f81b98915d18dd6277f85bd729aef1da7383067b2d",
+      "observations": 171
+    },
+    {
+      "seed": 1319948328544017925,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "fc6af407e0235a232bf64b48dda3e05bb8cf7b27a592e3c9b660b4673db4ada2",
+      "observations": 237
+    },
+    {
+      "seed": 1334731553345852678,
+      "outcome": "better_or_equal",
+      "final_population": 1152,
+      "trajectory_sha256": "bd8a2ce5f06edf39322d3c45646721c587e34371f11f5b288d6a944dc5466f38",
+      "observations": 5001
+    },
+    {
+      "seed": 1348390354187324392,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "5f64e560692e6ce42c47b2fdc857f2056ce9b3c5237a78c03e4f81dad8e4696a",
+      "observations": 145
+    },
+    {
+      "seed": 1359404949007720544,
+      "outcome": "worse",
+      "final_population": 205,
+      "trajectory_sha256": "56c6bb77293374a184102ce11dcccf9ce1b4e26570789b86e61003c4b0871541",
+      "observations": 5001
+    },
+    {
+      "seed": 1363447806151512002,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "d998200e9bfa0456ad80b2dc3f46d715c83a27fb4e2462ba9dd766fe9ab8a97f",
+      "observations": 154
+    },
+    {
+      "seed": 1380635906299364845,
+      "outcome": "better_or_equal",
+      "final_population": 326,
+      "trajectory_sha256": "895c87bbdfec0ae087857aaa156201bb35cc5d0ad0bd0110619498f16ff1c849",
+      "observations": 5001
+    },
+    {
+      "seed": 1440437373991260400,
+      "outcome": "better_or_equal",
+      "final_population": 433,
+      "trajectory_sha256": "23ab7708b60df8749171da13456006234bce440cc8a85651fbbb78281492b761",
+      "observations": 5001
+    },
+    {
+      "seed": 1463712356189053169,
+      "outcome": "better_or_equal",
+      "final_population": 482,
+      "trajectory_sha256": "a4302a6339e36636cf8551abab78c440bde9a954fe5c99ccbb8e53c413b8ab75",
+      "observations": 5001
+    },
+    {
+      "seed": 1468503979880031072,
+      "outcome": "better_or_equal",
+      "final_population": 373,
+      "trajectory_sha256": "3147be33521d269e2f6048aa5e6acc401530a4c46ddff437a44f1e87b17a8d65",
+      "observations": 5001
+    },
+    {
+      "seed": 1470653421161831391,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "058ed8c79e5ecb816e4bf45edaa1703fce773a8c48f1adecf56247aef7674e1b",
+      "observations": 165
+    },
+    {
+      "seed": 1512545940192165467,
+      "outcome": "better_or_equal",
+      "final_population": 1046,
+      "trajectory_sha256": "5550a4c7c10dfbf10a268aabc4684993f44f4d4d002b5b3e6172f34c65e8d1c8",
+      "observations": 5001
+    },
+    {
+      "seed": 1530994343071641336,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "53b99d59c6bf41cc198210fd5414b3ae366ee1c35fd9b52f10da13d5a2837c1c",
+      "observations": 127
+    },
+    {
+      "seed": 1536791303376280255,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c1d3c6282a60fce09f53c106d214b644288b5b74500d76d5ae5935d0b77e829e",
+      "observations": 150
+    },
+    {
+      "seed": 1555657386466497304,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "2fe8547e9502e32b7f94af015f1ada454f5f9d9c207bf173a0861a9d32f8802d",
+      "observations": 156
+    },
+    {
+      "seed": 1592542449511139932,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "b31f91088b8a8bede5ce6af24a9b92ecb7d9bf9fc04e0dbd933f73dbbfbe1fdb",
+      "observations": 229
+    },
+    {
+      "seed": 1609969291442293190,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "edd1817a0b43b1877e06f8d0d17cf3a9eb2c54d044b414007fd1d40d94005b12",
+      "observations": 182
+    },
+    {
+      "seed": 1675981611313432253,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "0d121307099fec007a1e31fcb8a78eafc361d284cb9e9625915d52b02e7ef851",
+      "observations": 137
+    },
+    {
+      "seed": 1699493264997127801,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "afd04fe196fcdfb8b0db02fc18f689636c2887b4575199b99f08e1a2f1c3449c",
+      "observations": 139
+    },
+    {
+      "seed": 1709423058422636144,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "b738b2f5bb7f20eca634069d04f57c31051dae2813cae0331e35389295d4b93f",
+      "observations": 169
+    },
+    {
+      "seed": 1715589679358392957,
+      "outcome": "better_or_equal",
+      "final_population": 1124,
+      "trajectory_sha256": "96679ee1e16345964bf900fb01e965fa61e0cdc08f91bf2c3fb1bec7d0130ea2",
+      "observations": 5001
+    },
+    {
+      "seed": 1729487573377343100,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "42c9c3ae214015cc1438f2b203350d07975f5ae8c3e55b6f5bb33083a30f13fa",
+      "observations": 148
+    },
+    {
+      "seed": 1733922351158320141,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "75f6f156b96226ecd903e0142791de8aff505f7af1592787c98af92ceb843a99",
+      "observations": 482
+    },
+    {
+      "seed": 1735937440315396203,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c67c61733c4cf5cf4249451b4b3f8166f0fdeac9d2f8227d70d1ff4323715661",
+      "observations": 130
+    },
+    {
+      "seed": 1758318642328596812,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "7802b942394fb21e8b27478c58970f9fe129caccf928f683b7ce02683f7e1db9",
+      "observations": 362
+    },
+    {
+      "seed": 1802411219399068431,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "481535fb8ec2f0e8030e9c2da67a1e9b0e579a121d59e0048e63bffe6100d76d",
+      "observations": 135
+    },
+    {
+      "seed": 1823687216165022946,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "4d9accf0104e326f650e23378f33e391e5816ea2c1a00c1f3c46f667362052b7",
+      "observations": 162
+    },
+    {
+      "seed": 1824130813090282559,
+      "outcome": "better_or_equal",
+      "final_population": 514,
+      "trajectory_sha256": "2e13ab4f7de9cee90321ff8774f549dfe1fc3fa0b4ef9c3187fa58521cb2e052",
+      "observations": 5001
+    },
+    {
+      "seed": 1859274993552365414,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c6169e8536a177220bae5a63156eefae1022946274f1a56e82a1e82be24f0567",
+      "observations": 159
+    },
+    {
+      "seed": 1877734808722157172,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e43e496b4e9fd191fffb352b4c18eb3839b0e52d9ee06a8bf16ba137a9c6db29",
+      "observations": 150
+    },
+    {
+      "seed": 1889951933564338114,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c162357bbd6a1a0d0d2adbf012f9dd95dc4d8e31418bee744dddd902ce855c1d",
+      "observations": 132
+    },
+    {
+      "seed": 1901155764328466682,
+      "outcome": "worse",
+      "final_population": 58,
+      "trajectory_sha256": "b242da364db9ecce5462b335eca26d748e8bebb20d75929403d80681a339a3d8",
+      "observations": 5001
+    },
+    {
+      "seed": 1939733711502684468,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "14288e6ccb551c573fec4502c3b8e1f39a800ace53072a67793ad36dad6ac65a",
+      "observations": 169
+    },
+    {
+      "seed": 1940916411417830863,
+      "outcome": "better_or_equal",
+      "final_population": 1298,
+      "trajectory_sha256": "6253a643d50794f8b1935ff1dbcae3e5881aacca32c59974447e64aa6bc5dd8a",
+      "observations": 5001
+    },
+    {
+      "seed": 1969904073141498978,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c4413b6a0f91c16d20c76247004a9516ff6485c04c2a63fcce836eec4b129ae7",
+      "observations": 182
+    },
+    {
+      "seed": 1996241008433945587,
+      "outcome": "better_or_equal",
+      "final_population": 890,
+      "trajectory_sha256": "fa89e66b2d1d8d3b7a7994deed86a221ef3813c503d73e72d32911763be7c696",
+      "observations": 5001
+    },
+    {
+      "seed": 2009581725043069747,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "5a7dc82c518c0c393ad8829493287fc7b087261bfc57446ad89110261e6a2fa8",
+      "observations": 162
+    },
+    {
+      "seed": 2060968127868463485,
+      "outcome": "better_or_equal",
+      "final_population": 534,
+      "trajectory_sha256": "ca03527cf0339f6c854fbe06b5f05a0313057ec48d10f2bf333dce4e1506a8ad",
+      "observations": 5001
+    },
+    {
+      "seed": 2077165266000589833,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a6e161f49c9746844b69bf4864ef96b52f8b42f280a06a5725b52100454a6b2e",
+      "observations": 224
+    },
+    {
+      "seed": 2157651943410725453,
+      "outcome": "better_or_equal",
+      "final_population": 1087,
+      "trajectory_sha256": "dcdb24d125aa29fd506d0cbb4405e442c3824b20d925c7f1d29ada538ed106a5",
+      "observations": 5001
+    },
+    {
+      "seed": 2170005679457195708,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "cec2509470ed6a521710a7f45fe3d7b24573e9bfa144b9f52f107a25c02ef7fa",
+      "observations": 178
+    },
+    {
+      "seed": 2183727325420396370,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "6de50a2d6fadda442614e2766538255fcc486e9261da9815d8abe615f7a57f78",
+      "observations": 164
+    },
+    {
+      "seed": 2185482684782988612,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "656d9d71c9c34eb343a06c814a9caba61a8312b2515a293187485aac8088338a",
+      "observations": 167
+    },
+    {
+      "seed": 2208631987014131776,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a928b9f0d1ef9f8e816d658201a2dc334983d69974ce4a95d10f9dc4c26474e3",
+      "observations": 144
+    },
+    {
+      "seed": 2214172059989836120,
+      "outcome": "better_or_equal",
+      "final_population": 1114,
+      "trajectory_sha256": "5876aee8ed56c8c81d0e1535c4109326c5b03074d73e3436f022e763b64568c4",
+      "observations": 5001
+    },
+    {
+      "seed": 2229221462438655705,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "b96cc52352e7c50645f2212f25e9d5eb86bedb9a4395cdf52d183b4cf87f83cf",
+      "observations": 149
+    },
+    {
+      "seed": 2289603482179039710,
+      "outcome": "better_or_equal",
+      "final_population": 506,
+      "trajectory_sha256": "0af67a01047bcc41978886aac326d481525086bf24acfe30cc28e7a41f20c7fe",
+      "observations": 5001
+    },
+    {
+      "seed": 2291145593174368950,
+      "outcome": "better_or_equal",
+      "final_population": 428,
+      "trajectory_sha256": "87d4b2fe7fcca9a29ccd7243382815ceb187e37d5088bf84c07e47492262e2de",
+      "observations": 5001
+    },
+    {
+      "seed": 2361390333587256182,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "01303219f8f0e8881b8b96ebad01ee9e48ca427b57100585386e85ac436c0ab4",
+      "observations": 168
+    },
+    {
+      "seed": 2369574832526434850,
+      "outcome": "better_or_equal",
+      "final_population": 478,
+      "trajectory_sha256": "526ebf6973cbc3626f1a760c23a5cbee433080e73b1e4c3dcd6f29a469857a5a",
+      "observations": 5001
+    },
+    {
+      "seed": 2370010444570231369,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c419267bad70970fa32c2e49b4f2ac67178265361c72405b5cd8b28551d44bcf",
+      "observations": 194
+    },
+    {
+      "seed": 2381485344872413711,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "3b4d9f8bc2df10ac03aeb71f6d7b4aa716c142e763bffe74055ea4abfd96b9cf",
+      "observations": 154
+    },
+    {
+      "seed": 2387650022012358909,
+      "outcome": "better_or_equal",
+      "final_population": 373,
+      "trajectory_sha256": "b500d3204c25ed729d9ce82b22d8215645f976763ff674c57c98c55d995123bf",
+      "observations": 5001
+    },
+    {
+      "seed": 2388936107119140191,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "8b7cfcd52058081b98bcd344472cf2ea7e3395256224b92ceb9d864348aaa2b3",
+      "observations": 111
+    },
+    {
+      "seed": 2420744157521560887,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "1a9fe63963b8c78fa94943d2659ec2e3a43ffed8693065a4a4075e8ff6c77d6c",
+      "observations": 193
+    },
+    {
+      "seed": 2483216780622132986,
+      "outcome": "better_or_equal",
+      "final_population": 422,
+      "trajectory_sha256": "b551ccae085264ee37a3ca0e7085f9ca5b70e6e3e4a48c3d78a15dbebeb1b898",
+      "observations": 5001
+    },
+    {
+      "seed": 2513573707559938025,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e808b4273cfb02054223d2eec6e7e94a88616d1f33fcfdecfbcceafaa7076e8a",
+      "observations": 223
+    },
+    {
+      "seed": 2577648585074031495,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "0c87d39fccbcd1073c6798de70bb141ba07d51e3aa47cae11a9a6d5cfd96ddf6",
+      "observations": 219
+    },
+    {
+      "seed": 2619307628467993945,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "bb3b65cbfe15feb52318b6e205c3335871f20099c56fac8ec9b15e7518be6162",
+      "observations": 129
+    },
+    {
+      "seed": 2627344384652811600,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c5d9136150f7d3800b1e6684ba803ec7f1f7acdfae8e91c0c8172a149bf97e07",
+      "observations": 186
+    },
+    {
+      "seed": 2633622880550445485,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "1d97b098d155ceaaad63594b33e2bce8b7f6e774285c05dadcef70f6f0afdc25",
+      "observations": 165
+    },
+    {
+      "seed": 2656982685209633033,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "cded6572ee4a01594fafda3799e23afb9b70d3931d111d8a2ac6f73791c7413a",
+      "observations": 129
+    },
+    {
+      "seed": 2664542518672722136,
+      "outcome": "better_or_equal",
+      "final_population": 1017,
+      "trajectory_sha256": "bebcd395d961d12de5ac1ab4c04f0335cd8329f4ed158ca1574befe15b0d907a",
+      "observations": 5001
+    },
+    {
+      "seed": 2681981469776546748,
+      "outcome": "better_or_equal",
+      "final_population": 1230,
+      "trajectory_sha256": "206e8bbbbe7acb4bdd263c6ce3376f83c51db2907a8eb4bf6b7fd1e06fed5df5",
+      "observations": 5001
+    },
+    {
+      "seed": 2756918492959522804,
+      "outcome": "better_or_equal",
+      "final_population": 1118,
+      "trajectory_sha256": "3375adc0f9128b3d18c61cc546b25b24616c7d652f92ec50924d78750c161df9",
+      "observations": 5001
+    },
+    {
+      "seed": 2776046745237740637,
+      "outcome": "better_or_equal",
+      "final_population": 1175,
+      "trajectory_sha256": "76beb86a4250827a63a38cc76bb1cc9aa9955cb0d5cc9b0af6f2eb317679cbf2",
+      "observations": 5001
+    },
+    {
+      "seed": 2805327632841556872,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e45cd8d3320fd44555e32845ac06d7633ac2cfc49b5f502cdcd952d028574972",
+      "observations": 229
+    },
+    {
+      "seed": 2847467790966455473,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "bde46760cd6e7f6af81676b300ac30d576e816b558976935d29f672d301cc8f5",
+      "observations": 186
+    },
+    {
+      "seed": 2894409412357526145,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "52f2371e7722ec0326f126bc93c4784e38b28eceffc9040afab3391b65b4bb70",
+      "observations": 180
+    },
+    {
+      "seed": 2928919948642262303,
+      "outcome": "better_or_equal",
+      "final_population": 1269,
+      "trajectory_sha256": "2ede80942801c57fb0be5cd5a89351e5cbf2885c087e3d40d7dd8f0663517487",
+      "observations": 5001
+    },
+    {
+      "seed": 2950576839187693085,
+      "outcome": "better_or_equal",
+      "final_population": 531,
+      "trajectory_sha256": "4806d05a05da94115f200de46aa50130bc36cb46ddabd870146e4e4bcb7cbb09",
+      "observations": 5001
+    },
+    {
+      "seed": 2978767121380349240,
+      "outcome": "better_or_equal",
+      "final_population": 462,
+      "trajectory_sha256": "1132dd13d80ef4c598a8a3c5875f5ce04088880f65ad291db6ff62effee7e274",
+      "observations": 5001
+    },
+    {
+      "seed": 3029592770614318108,
+      "outcome": "better_or_equal",
+      "final_population": 1073,
+      "trajectory_sha256": "1ec657ec48b991cc001f837742fd0a2dd11f40835eb74baf99e297eded651e6f",
+      "observations": 5001
+    },
+    {
+      "seed": 3031959061600682352,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "d73f5207a291a54438ecd9b957487b92bff509f4c23bf0e7db858ecb1a0010d1",
+      "observations": 116
+    },
+    {
+      "seed": 3037731887305531318,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a68143596b7ea8e67cf51d93694a46e1291c8e7f7e0bc78ceb28ccbc7d206a9a",
+      "observations": 180
+    },
+    {
+      "seed": 3080447128953811521,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f2923b57b8546458a1f762acce09d1830f1743de44faf871f4f5b907d0a2e814",
+      "observations": 125
+    },
+    {
+      "seed": 3083379455419391971,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a8b4d681010e7f7e9f07cb1e63584346ba85d93c3a469bbe5a183ffaf9f58e6f",
+      "observations": 169
+    },
+    {
+      "seed": 3100771709220344633,
+      "outcome": "better_or_equal",
+      "final_population": 1177,
+      "trajectory_sha256": "0e965278fefda457a16652eda86a5109d24e1b2b3d41af3b424eb42f6ee1bdee",
+      "observations": 5001
+    },
+    {
+      "seed": 3130560300212625915,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "519b716b1a63e17df0d1bd27db960f8f1ebaf0cd042fdb72481d1640af076a42",
+      "observations": 156
+    },
+    {
+      "seed": 3179381068919553722,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "d8bf0ba244213ce94698372794b3d3a7e49ce2f8b940cc5a39dfb7b88a0d8325",
+      "observations": 155
+    },
+    {
+      "seed": 3212903396888577867,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a837c1ae881044501f99ac5b749a8217d0c14ee8a6b97526f06df6befbc4edb6",
+      "observations": 136
+    },
+    {
+      "seed": 3241066983949209131,
+      "outcome": "better_or_equal",
+      "final_population": 358,
+      "trajectory_sha256": "fe7adc8749e55323a87e690e096fd483ee2e69697503650dba1c374c8a52df5d",
+      "observations": 5001
+    },
+    {
+      "seed": 3254269434043330167,
+      "outcome": "better_or_equal",
+      "final_population": 326,
+      "trajectory_sha256": "b055c55a271a8a5e73367e4d963f200c9ad5c276e3d9f9dbb1f737daa3065965",
+      "observations": 5001
+    },
+    {
+      "seed": 3279236007363554868,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "2b29c7c3e8c7a75133ac2d0a76ba13ab6c6474f1c86bfe064f3bcb2a2754423a",
+      "observations": 284
+    },
+    {
+      "seed": 3280897779537085950,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "7ee39e4e17614a52af4ca56d62b927d9c30e585d68400565a83caf2a430f0064",
+      "observations": 128
+    },
+    {
+      "seed": 3286628165250219210,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f6a63247e3bc08395814ee18a8f42b41e8c9c4ac1f1ab665995858799bc9dec9",
+      "observations": 167
+    },
+    {
+      "seed": 3291190799162476839,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "afd4ca607b18d412ebe9c717f0efb1a0d7389c5c201e9f508f3f4d179ad46666",
+      "observations": 177
+    },
+    {
+      "seed": 3313297389939560696,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f17211cdb1987654d94df434106094ee210e472d1b8c76f7b29dfa1845d8b234",
+      "observations": 183
+    },
+    {
+      "seed": 3313592225750345245,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "783ca97711b8748c5da1897b11beeae7dc1d9ef7ff5cd41760586ac96d149f85",
+      "observations": 149
+    },
+    {
+      "seed": 3351642915356722722,
+      "outcome": "better_or_equal",
+      "final_population": 1310,
+      "trajectory_sha256": "84e030c573499943f2d8845d537f381c1eebb0ff1aa5d65792ba322e2bb4d888",
+      "observations": 5001
+    },
+    {
+      "seed": 3366708669395618643,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a400be83fead4feabf767993f4f8191cc3d08fedad1667013637981cc9ac93f7",
+      "observations": 154
+    },
+    {
+      "seed": 3408059079860468147,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "7f0b79c8d084d88e3adaf2460488c45099a6d6b860907185984a660b44927d0c",
+      "observations": 225
+    },
+    {
+      "seed": 3440737680066606591,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "887adb71b026fd66aec790228e67ce711298f0751f9d93c2ba8117f803cda58e",
+      "observations": 167
+    },
+    {
+      "seed": 3458965655990623631,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "009c18077a1fd02e2dd98b8ec4625ad39fcbf91b8b57d6dcbd0ebc9ad886aef9",
+      "observations": 142
+    },
+    {
+      "seed": 3465535345500700256,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f170e995cf58bbb8df40a326aad0f85c965bce789931b459360a2bd5f009afda",
+      "observations": 168
+    },
+    {
+      "seed": 3488041093975898946,
+      "outcome": "better_or_equal",
+      "final_population": 1004,
+      "trajectory_sha256": "e6d39a9fe0503d77e45351c6dd6d66e918accdd22a0538619d8a032e0eee571c",
+      "observations": 5001
+    },
+    {
+      "seed": 3539323447380265440,
+      "outcome": "better_or_equal",
+      "final_population": 997,
+      "trajectory_sha256": "834f994f89bce9f0e20ebe66e911ad8843575cde1257985e0d9f44194e82a8db",
+      "observations": 5001
+    },
+    {
+      "seed": 3565338351810780878,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "dac4f29d31e5dbb432b9f0fc7680d7bdcd370e2db69d8045ea01e03ba6bae90b",
+      "observations": 261
+    },
+    {
+      "seed": 3570908860894484402,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "94270acc8bc3709ed2545d5369f5aabd1457a3b180ecfc6ab0cb566ce6d1fa3d",
+      "observations": 157
+    },
+    {
+      "seed": 3573723820242427017,
+      "outcome": "better_or_equal",
+      "final_population": 1200,
+      "trajectory_sha256": "dded2466cb662abea246777015580f302f3268cc2bd370a6ddb2fdac566336a6",
+      "observations": 5001
+    },
+    {
+      "seed": 3573933913596124850,
+      "outcome": "better_or_equal",
+      "final_population": 490,
+      "trajectory_sha256": "e2c5dbc30eb438e6cc70abce291d54d9a8f6dbde5d500acbda73748eeec0a266",
+      "observations": 5001
+    },
+    {
+      "seed": 3579894407993171827,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "50c1d0f1f7a8d334f206077c9ec90a15038fbbf4e4c4b0c1109f1b26558cbfb5",
+      "observations": 165
+    },
+    {
+      "seed": 3584062345757521995,
+      "outcome": "better_or_equal",
+      "final_population": 1300,
+      "trajectory_sha256": "e98a62eef50d982e57a312beec8a2a7b74f77b2fd8bcafaed26226645258bbd0",
+      "observations": 5001
+    },
+    {
+      "seed": 3588015731084150522,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "730bda2688357fa3c8729b095423a90e23f503799407a274c96ad981f815bfb3",
+      "observations": 172
+    },
+    {
+      "seed": 3592399515945518777,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "5924702cb2fa9d31d0f7897a8a29cfc257af7093b38d0bbc5c416acc906ba8d6",
+      "observations": 172
+    },
+    {
+      "seed": 3607651362576730995,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "1cca8a23ca5c5c64843e12bafe24a8f677f696c7e2d98e2fd3a75cd9e62fbb1f",
+      "observations": 134
+    },
+    {
+      "seed": 3616167824915624028,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "b3ba6f22d3fc6d8e853d176c6575cba3821548aa48e67198ae416f7572e8993d",
+      "observations": 170
+    },
+    {
+      "seed": 3618253521922326876,
+      "outcome": "better_or_equal",
+      "final_population": 481,
+      "trajectory_sha256": "daa3facf6ce09d09520ec5787ff1d785e9aa00302930fc9cfaacee14ced9d286",
+      "observations": 5001
+    },
+    {
+      "seed": 3647330525768885984,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "87c2a19daac07ba31b484e3a641266cfb42f385bf19316bd63838dbf2531b701",
+      "observations": 169
+    },
+    {
+      "seed": 3648104118796151117,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "2c960d3f64df48a7afc1ce67362123f69f32fa6c7ff0a23dafaedf383f0cf12b",
+      "observations": 166
+    },
+    {
+      "seed": 3654058214302781386,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "0c468488eb7e00e3a0176e552df85cc156cb08c9c63c1fedf20f4ce9a3687e02",
+      "observations": 150
+    },
+    {
+      "seed": 3686749064656266026,
+      "outcome": "better_or_equal",
+      "final_population": 1073,
+      "trajectory_sha256": "b0ebc97cdf5178fadc0bfadada6c95fea7c72b337820d9a49f9d6ed1df6b2c91",
+      "observations": 5001
+    },
+    {
+      "seed": 3702722406025063529,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "425ad968bed6b352f015be1e96bc503c2f5625887f7df6bb134ad09ccfd4740b",
+      "observations": 145
+    },
+    {
+      "seed": 3714702612667776603,
+      "outcome": "better_or_equal",
+      "final_population": 918,
+      "trajectory_sha256": "20338e376ad561d9ad56d09407313b30e2a59960eef4f3c0eea3aa07dfc5bca9",
+      "observations": 5001
+    },
+    {
+      "seed": 3729824025252728098,
+      "outcome": "better_or_equal",
+      "final_population": 1024,
+      "trajectory_sha256": "bce3dc12b88d9ad57003fe92d22d6d1ecbdbd5e9971710233a0b9b712f76dedc",
+      "observations": 5001
+    },
+    {
+      "seed": 3782800091293713213,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "0845905b00ad8487d39c9aa670cdaa94298773222d7c4f11af5597047d02360e",
+      "observations": 113
+    },
+    {
+      "seed": 3824571603106069952,
+      "outcome": "better_or_equal",
+      "final_population": 1214,
+      "trajectory_sha256": "556790ed5e7c3cfb088112c246f8a632972d9695ac48175b10b9873dbdd07a08",
+      "observations": 5001
+    },
+    {
+      "seed": 3847019377264748987,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "1b8fe9aafb271aee9f915c3ed62d89242a5f0eef38e298d1547cf28022df77b9",
+      "observations": 195
+    },
+    {
+      "seed": 3870084188950811967,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "656066d74bf699686ee7569724daf0be9da264d4be247ef6c83b2e7723521ec9",
+      "observations": 237
+    },
+    {
+      "seed": 3891569450635021708,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "acaf8771b8b9080ff83d6525b2afb35cd794da159820ae4be248aad7e29b0a16",
+      "observations": 176
+    },
+    {
+      "seed": 3911178782231082823,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "2373f022844212836438b3470c984f14ff436bd6019bb2cb2d1ea9f84876beb5",
+      "observations": 154
+    },
+    {
+      "seed": 3916759863802903962,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f271f2f3eab69c74b8e1cd724763c6fe26ab16b93b4effc0916cd71715d8273b",
+      "observations": 155
+    },
+    {
+      "seed": 3932893849138539905,
+      "outcome": "better_or_equal",
+      "final_population": 1205,
+      "trajectory_sha256": "3a1967c5cb284942140b34bf03104d87567c9a5cab5b0a3812c7632e207e8e96",
+      "observations": 5001
+    },
+    {
+      "seed": 3936646431813069552,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "46a18c96cc201db2da0d08eb17512c0023ef60218f18a0a3e140888e933e8829",
+      "observations": 162
+    },
+    {
+      "seed": 3959066368858068159,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f194301bcf74b1cc6b31bdad83343282226ef985ef28c0afc82fa4b1242c7ea8",
+      "observations": 132
+    },
+    {
+      "seed": 3979900374252519060,
+      "outcome": "better_or_equal",
+      "final_population": 1305,
+      "trajectory_sha256": "50eb3ceb89ed20f07cc556c0ee10c9fd4e02b1893f198926ae346714d8d163cd",
+      "observations": 5001
+    },
+    {
+      "seed": 3980819237122592643,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "d613ae5c2b1bb78309224cf8df9deab09c442d9e90e964dd26054ab2f53152e3",
+      "observations": 126
+    },
+    {
+      "seed": 4012090281180847108,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "8c7ac4012fdc58a5e6909072a78ac5ae85115f2f90e9d66fd799268809870865",
+      "observations": 139
+    },
+    {
+      "seed": 4050445856966198186,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "4ef40c6cc85ddb781462e07545311eb6c0e7a0885222b9bbaa244b47f0a79f8a",
+      "observations": 124
+    },
+    {
+      "seed": 4073812963572136710,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "705cd9f52b654029cd17a2ef31e0b4a7d5945955ef06988c8aa20cc2310f976f",
+      "observations": 160
+    },
+    {
+      "seed": 4120068986275141671,
+      "outcome": "better_or_equal",
+      "final_population": 464,
+      "trajectory_sha256": "3d25a4f9da0439608dd928c48937907554f29454122e179e3eb3b3b2e7c4720e",
+      "observations": 5001
+    },
+    {
+      "seed": 4137951150182024287,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "9fa9e75fd143ac5dae79d321de5dd550e5b349b4a0592375963e3c1d116e7c01",
+      "observations": 182
+    },
+    {
+      "seed": 4151619118342789587,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "42124a0976297f2782e2b8b602d9b9b19c31cc2fda0d32640d911e7b2853ab05",
+      "observations": 183
+    },
+    {
+      "seed": 4156474589021464271,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "540c1f6924b41cb10fd54348b973aa6438233c654fecd6216329779249293c59",
+      "observations": 180
+    },
+    {
+      "seed": 4191298840464005437,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c191018fd76c5b0bca3c0524e73222cc8b5e782b1a42aa452e0339e206a5979c",
+      "observations": 124
+    },
+    {
+      "seed": 4192925732238570134,
+      "outcome": "better_or_equal",
+      "final_population": 497,
+      "trajectory_sha256": "a5b82d6395315bfcbd40107c67d10260c31d8ab8a341407b7f21203f34e309a7",
+      "observations": 5001
+    },
+    {
+      "seed": 4208064564498143183,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "eb451d2e7ebabfe0701ed54634fc86d26a798abb9eb3b607a97117d0f9b7e74e",
+      "observations": 215
+    },
+    {
+      "seed": 4212066701122151273,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "9cf341e430ad0e9ad096dd516f74815de90f694267607218f1c3d425b4c9d688",
+      "observations": 139
+    },
+    {
+      "seed": 4212262627839727271,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "4b646a78075b6d789e719509fc512c34a28a373d178ec56cd2607191c6f02748",
+      "observations": 152
+    },
+    {
+      "seed": 4220987686023315387,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "5f3610c5a1e1f2436d3560c092fe7915412b1ca1d093cd22ec120b141641afea",
+      "observations": 156
+    },
+    {
+      "seed": 4260884763858895255,
+      "outcome": "better_or_equal",
+      "final_population": 478,
+      "trajectory_sha256": "50a2055667cd5b6b1cf081cb15fc35c14d71d683a1e57fe071790aefbd5c6736",
+      "observations": 5001
+    },
+    {
+      "seed": 4283649128375280212,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "7a85565c1a972a04562f4f5bfd982ee4a857765b0da358f8626946f1db15a2ee",
+      "observations": 128
+    },
+    {
+      "seed": 4290660761210829058,
+      "outcome": "better_or_equal",
+      "final_population": 426,
+      "trajectory_sha256": "30af9bc00e2ca19247b4befc55426886df765fa1af977848469fbb3d220909e4",
+      "observations": 5001
+    },
+    {
+      "seed": 4305319044412515626,
+      "outcome": "better_or_equal",
+      "final_population": 472,
+      "trajectory_sha256": "6eff067d13466486d3e47d2ef0cb2f35a5aea307f1ea5caf3a7b5559919198b0",
+      "observations": 5001
+    },
+    {
+      "seed": 4318391225590412394,
+      "outcome": "better_or_equal",
+      "final_population": 1339,
+      "trajectory_sha256": "8abce7532090ccb2a410d7ebab5ca15d08739061f154be201dcba6c8a53fc130",
+      "observations": 5001
+    },
+    {
+      "seed": 4322857474273933961,
+      "outcome": "better_or_equal",
+      "final_population": 1135,
+      "trajectory_sha256": "39f8ac18fdcaa5c784185784c82d75942580fda140a62a98fd7745a4f4fd27d9",
+      "observations": 5001
+    },
+    {
+      "seed": 4335070638830477102,
+      "outcome": "better_or_equal",
+      "final_population": 1326,
+      "trajectory_sha256": "4fd9fd7f23f1660b69847d0401e6a808ce3770ba2b5db3ab3f3a64821ab14630",
+      "observations": 5001
+    },
+    {
+      "seed": 4335335063942041261,
+      "outcome": "better_or_equal",
+      "final_population": 1141,
+      "trajectory_sha256": "7b8094c941b2a284ff4fd3e2664022970cb7d3dd23c0767e48172208d2434980",
+      "observations": 5001
+    },
+    {
+      "seed": 4348769395949157104,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "9500967a302082da9614fd0b91256bb876c39b7e7e90b7723eb1be0bc98fb575",
+      "observations": 194
+    },
+    {
+      "seed": 4349919276059682151,
+      "outcome": "better_or_equal",
+      "final_population": 1271,
+      "trajectory_sha256": "81a29abf5509e3800f96f2c13219b6096f0b8c90fc1cd05cce019c6f05bf51b9",
+      "observations": 5001
+    },
+    {
+      "seed": 4358394366500297905,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e201774bab52a803b2f24c59601e4c37813479d836e89c9934ff7be7ab6f986c",
+      "observations": 161
+    },
+    {
+      "seed": 4367580375900955609,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a66a1aea45e5e83fe7d65c217809c743e5a300b038e88e89fae28915f526dd5a",
+      "observations": 179
+    },
+    {
+      "seed": 4372043094673445202,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e4670a2ee0ccd53252795c5b356cfcaefa8fdc8589fed909e373a74fb9989e49",
+      "observations": 134
+    },
+    {
+      "seed": 4375818342599997359,
+      "outcome": "better_or_equal",
+      "final_population": 903,
+      "trajectory_sha256": "a224df02f7a561a379be1f42a0b24872a6363f53bf465b3c1815e39f6309810a",
+      "observations": 5001
+    },
+    {
+      "seed": 4377311383712979620,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "cd3556cf19db53996a882b575f919f4f47270bc9d507454d6f3d31ef967d4978",
+      "observations": 175
+    },
+    {
+      "seed": 4393139615085228943,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "558cdf29781de1b01ee79f61a6642af459ec4183595084fd4a57296c5eb7e264",
+      "observations": 135
+    },
+    {
+      "seed": 4405708370898770069,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "940b6a624c61d95ca633c2ff14431bef36c2f6a904098a85a45cef950fca0e19",
+      "observations": 199
+    },
+    {
+      "seed": 4414529524700146287,
+      "outcome": "better_or_equal",
+      "final_population": 1292,
+      "trajectory_sha256": "620cae5ea61d30cf955751a5de3bfcb469a31fbc7d45389d01a638269857d706",
+      "observations": 5001
+    },
+    {
+      "seed": 4419331102752867088,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "528329011dc5baecdd5992a50bf085699cbdf3e2e8adc2b960eb9226ad4ae18f",
+      "observations": 201
+    },
+    {
+      "seed": 4435721289466590190,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e716d51586bef3607ea61b7f45f91aaee0de8e18444de21f4a143cdb228a7fe5",
+      "observations": 210
+    },
+    {
+      "seed": 4439543845877460037,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "801936a39da95e50c981a78e58c018f128453ba29fafb7bc52f99949c0662f06",
+      "observations": 243
+    },
+    {
+      "seed": 4471367600967201477,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c29085312bc24a99ff375a6c53322254df43d89e82aea4dab8f058960840ef69",
+      "observations": 139
+    },
+    {
+      "seed": 4485825966651883613,
+      "outcome": "better_or_equal",
+      "final_population": 467,
+      "trajectory_sha256": "d43f12d5044963034b466e2bee534b7219486ebdb9a426e382f1d011888af74e",
+      "observations": 5001
+    },
+    {
+      "seed": 4519066998061466887,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "2ab1df425c2e8ba158cccb3c7eaa58318693fd573085e2f7b3b1b22cc105768a",
+      "observations": 135
+    },
+    {
+      "seed": 4536837957959267379,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "53756aebc83040df2053887c798c743bbd09ec8396dc1e9c74d664b0263f60ea",
+      "observations": 183
+    },
+    {
+      "seed": 4545923693926126457,
+      "outcome": "better_or_equal",
+      "final_population": 485,
+      "trajectory_sha256": "1cb7d67bbb68949454eab330cfcaae38fd799bcb88a50c9526e28bda6d2c0957",
+      "observations": 5001
+    },
+    {
+      "seed": 4553116222169214413,
+      "outcome": "better_or_equal",
+      "final_population": 426,
+      "trajectory_sha256": "ed5d434ab12a9a910e9c055b9470716bd1b3f661a28124e229b853133fdbd8ca",
+      "observations": 5001
+    },
+    {
+      "seed": 4585561232174947619,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "5ba143ccc8128fecfb96835926068cca238e4b0c61e6dcfd0d286165f118582a",
+      "observations": 241
+    },
+    {
+      "seed": 4592104806555126190,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "530d6939823d22360044438d05e5380d84de7472fa8de0be48ea4cdf7bc0a05d",
+      "observations": 140
+    },
+    {
+      "seed": 4627406532021948174,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "18d14ad360c1cc5adb326c665b7918abb25ecf8c058440c96b9b25c4891b17fd",
+      "observations": 500
+    },
+    {
+      "seed": 4651346501679702951,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "db5a25333d27951a266bc1e99cc1a72373e5c444d730c6bb423fc96fe6b94454",
+      "observations": 190
+    },
+    {
+      "seed": 4668356957415451449,
+      "outcome": "better_or_equal",
+      "final_population": 1118,
+      "trajectory_sha256": "495c907e8a96ead0b1464001e107ad9967f21566b057717f7d06e04436458dcf",
+      "observations": 5001
+    },
+    {
+      "seed": 4680530929482761719,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a09bfde1125691bc2e4094b50fbd6e76c19262ed88b19886e29c2e4ebef4766d",
+      "observations": 167
+    },
+    {
+      "seed": 4705595955654730755,
+      "outcome": "better_or_equal",
+      "final_population": 487,
+      "trajectory_sha256": "325e6cda5c6fffb34eab73f43bfa4fe1c19514cc15494052ad110b309b6250b9",
+      "observations": 5001
+    },
+    {
+      "seed": 4709405610235404168,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "9dcc886bcfce1892c1c1d554354f66e5096e8945cc00ffa6a747bbd6be594886",
+      "observations": 169
+    },
+    {
+      "seed": 4725912836415925128,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "336d48acd6b49ad9635b92b50cceb4995fcda5ab25b8ceae3e2259ac427ae8df",
+      "observations": 171
+    },
+    {
+      "seed": 4746469224097112843,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "98af9db426da4fd3c9c781b4fd00b71044b3c89367ba44299a593a783e4738e9",
+      "observations": 174
+    },
+    {
+      "seed": 4749878934219475975,
+      "outcome": "better_or_equal",
+      "final_population": 500,
+      "trajectory_sha256": "eef4c1708cd2093b8f06eafe07c00ea6fc8b4f6c7ca58c5d2274eaa57c7e1a1b",
+      "observations": 5001
+    },
+    {
+      "seed": 4755779252370120351,
+      "outcome": "better_or_equal",
+      "final_population": 484,
+      "trajectory_sha256": "2938615b1c97fb8e0fd3915c1e6a463f87645d1a6225cb35801fcdc697796212",
+      "observations": 5001
+    },
+    {
+      "seed": 4773507270191285072,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f4883a97f20a8caab98cb37d7d89b3f44617047109a7355bdf5a1c036e6a75a6",
+      "observations": 233
+    },
+    {
+      "seed": 4779321687271683802,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "9fd85e77fc40925f74438f21f05a5295682b2b9d61345f81b67fe35c8d38ddfb",
+      "observations": 144
+    },
+    {
+      "seed": 4782127076432651114,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "74fd086fa63d3035373220d3b2bad0ed3ba5c1684fad24ce7d015c621eb2d284",
+      "observations": 163
+    },
+    {
+      "seed": 4812550299643995444,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f90e7aacc20ac933d1bb72a658cb47d13689cdec669689a0868424acc4b26f18",
+      "observations": 132
+    },
+    {
+      "seed": 4832144598789677445,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e227e71e6de1faee3920f4c50884a40c90d869bfc72cf7fc662453a1d98efdbd",
+      "observations": 167
+    },
+    {
+      "seed": 4841724115181814440,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "b74a425cae1b189ee1dbdf13a4187834f2210bdd1ea391f6a9266688a6177cc1",
+      "observations": 133
+    },
+    {
+      "seed": 4865385569843070049,
+      "outcome": "better_or_equal",
+      "final_population": 521,
+      "trajectory_sha256": "b9316aef02e744931c61d3e3ed3cf3d737d3a55e7c0c87ad4db0ae0af1abe66e",
+      "observations": 5001
+    },
+    {
+      "seed": 4865572446744984131,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "00e920d4aaf6279962c56f3ee73c027c0543edd44d16af7b62f375c2705adb4c",
+      "observations": 197
+    },
+    {
+      "seed": 4886005596606838496,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "54714ac21fcc8ac33e8606cbdb286161c071d416564d48bfdc22a0d510f64cc2",
+      "observations": 224
+    },
+    {
+      "seed": 4893200983412371952,
+      "outcome": "better_or_equal",
+      "final_population": 469,
+      "trajectory_sha256": "8645eafa42fb644d16ca042cf05380d70c27c264b7de9553190f15eada59b954",
+      "observations": 5001
+    },
+    {
+      "seed": 4893720129238770169,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "343eaa020be54204d43fdd643b24bd00084fa74083e1fc838abb695b37344e3f",
+      "observations": 154
+    },
+    {
+      "seed": 4898347074412332614,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "6324048e47e535e1f9884f1ae88771d82900f213afda14329df5e8350ca4f6f9",
+      "observations": 151
+    },
+    {
+      "seed": 4903442537013278109,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "78196be725d605aa590d599c04e35a60687e0ec5b3c43060b06c1f5476e9202d",
+      "observations": 196
+    },
+    {
+      "seed": 4911447754346305614,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "dab76daf6a298bd1d2d1a4eb8302e4fea67002b3944331f419d9601b3b7d8fe0",
+      "observations": 173
+    },
+    {
+      "seed": 4917277954810708288,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "1c9184d19a82cd4fa5d90c2365bbce23eba784978db5cf241396e13df694fd18",
+      "observations": 129
+    },
+    {
+      "seed": 4924450696684077960,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e9a1fafbd2ce908582ac460e71ebb3a8032c07a140c957b1dd35a505ef9293cc",
+      "observations": 143
+    },
+    {
+      "seed": 4939630820525923844,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "4ddfa31a3acd0acd4086a17128eeb2b8c62b3d9bc4e09d115e6132f9134e4242",
+      "observations": 145
+    },
+    {
+      "seed": 4949093510471888483,
+      "outcome": "better_or_equal",
+      "final_population": 1118,
+      "trajectory_sha256": "0c1bb03b2130a61ad4a62a5f993f6050c625ba0bb4b2c3e1c1d852a0daa35b5f",
+      "observations": 5001
+    },
+    {
+      "seed": 4986374456977238187,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "9553445f0d700822b2864888b45f3441bb8a0e59ce414c22eb4789d56cb3607f",
+      "observations": 160
+    },
+    {
+      "seed": 5008653198738249826,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "5188abb2b73474903a0d00725ac9225fa2face3b4253ec3df993c15dd2b94c3c",
+      "observations": 238
+    },
+    {
+      "seed": 5015081772822206471,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f6d8f6775bae61ecfde2763a56b2f6d17f335f356240c4d7cef035878e1dcec9",
+      "observations": 174
+    },
+    {
+      "seed": 5049060952899332926,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "54c8b85a6e57073966af7bc4eedd5a18c643bfcc5843bb0f92eb5105dba7f4fe",
+      "observations": 136
+    },
+    {
+      "seed": 5071557610835901109,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f173341cc1bec93fcf13cb067afe8bf4682e520c830534702daef3c159fe0130",
+      "observations": 151
+    },
+    {
+      "seed": 5079288152843007892,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "e6cbefb187a7e60ec1072dfdb123f9f13558c7beb8bd45489687ad63d6349a64",
+      "observations": 211
+    },
+    {
+      "seed": 5169423246726545646,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "82d8dbd93c8913c66622e6bf42c86323c5a66dc03552aa10f00dd9fc508eb448",
+      "observations": 218
+    },
+    {
+      "seed": 5193952046582346415,
+      "outcome": "better_or_equal",
+      "final_population": 946,
+      "trajectory_sha256": "97874580400615761b59bad2979d4fc9c7496626bedaf9f11393aed144207653",
+      "observations": 5001
+    },
+    {
+      "seed": 5200749333348563875,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "5b80a217813521fce933154942d24a14f07e127787489e59740aac8072e9b37f",
+      "observations": 172
+    },
+    {
+      "seed": 5214892100153966662,
+      "outcome": "better_or_equal",
+      "final_population": 403,
+      "trajectory_sha256": "8ce4cd32b1ec4dd47735e6fc5d21a92948cbabf3d86a827b7236f4b14325f09d",
+      "observations": 5001
+    },
+    {
+      "seed": 5226174062342390640,
+      "outcome": "better_or_equal",
+      "final_population": 940,
+      "trajectory_sha256": "f86f1bdaf698c8f6d58560317f760e75f4f2150dd86e323873285b0192fc6e57",
+      "observations": 5001
+    },
+    {
+      "seed": 5258544719101233365,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "0f282ee151d5f1dccde27fb7fd28d4ca7007df2c8f8d494a2aadde20f4c9fc19",
+      "observations": 145
+    },
+    {
+      "seed": 5262752621655686340,
+      "outcome": "worse",
+      "final_population": 238,
+      "trajectory_sha256": "232d69fbc6343f6e85ce26be0718f862dcddb1ad4aa2a0bf4542c23b058236be",
+      "observations": 5001
+    },
+    {
+      "seed": 5299921647111273341,
+      "outcome": "better_or_equal",
+      "final_population": 742,
+      "trajectory_sha256": "2e8b6afdb6c7335ec0e475fd6e4e11f4ffd3deeb1fb28cabb41dafbd2e114fb8",
+      "observations": 5001
+    },
+    {
+      "seed": 5306209880964937036,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "7abfa940155ddc72a865b8dd5619837785fc5c4a34ae80e6759cd94a8c8d6d63",
+      "observations": 139
+    },
+    {
+      "seed": 5315768207953620733,
+      "outcome": "better_or_equal",
+      "final_population": 436,
+      "trajectory_sha256": "981aa9aaa1556397c13f1d2202a725fc7930b3b75746a1ae6bbca9d71562a2d5",
+      "observations": 5001
+    },
+    {
+      "seed": 5322047387230311691,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "b8a24f3cc50d412712a6ff644d4e682f90a0fd93a94603f347b9bc5fb98396a9",
+      "observations": 155
+    },
+    {
+      "seed": 5322088368832454314,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "a4132ca291df0fe4075fd0c7f40db52f5d0deb37110793b65053dc5b5fc4fd20",
+      "observations": 147
+    },
+    {
+      "seed": 5358781984101459954,
+      "outcome": "better_or_equal",
+      "final_population": 502,
+      "trajectory_sha256": "c374eb9123ee6d56ad29480fc171ddc9c408f1387460df80df5fe2946ec1c2ca",
+      "observations": 5001
+    },
+    {
+      "seed": 5375629497885114591,
+      "outcome": "better_or_equal",
+      "final_population": 1053,
+      "trajectory_sha256": "03855dc617a6f668357bc8148a53b56d0f7eb31fdae688190f57866ffbd0284a",
+      "observations": 5001
+    },
+    {
+      "seed": 5379436640924162905,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "4cabd11cc635c20db5b26e55ae44ce067dc0eec1ca31f6af4a3d83998a8c7c4a",
+      "observations": 265
+    },
+    {
+      "seed": 5454050486209463229,
+      "outcome": "better_or_equal",
+      "final_population": 457,
+      "trajectory_sha256": "7c87414f0fdef68a60973c0c6b94c0e82385cfa1ad83bf2a24a5ed4ddbd453bd",
+      "observations": 5001
+    },
+    {
+      "seed": 5535352732677322983,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "fdb52ee79bf3623967d167ced816765fd28255dba480fe23c3da4e38fa5d4c6c",
+      "observations": 150
+    },
+    {
+      "seed": 5546605841926489529,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "5f3a65907509a918918c1d20c5b0d2f3bba49a8f646009c13a78481d54c693c4",
+      "observations": 148
+    },
+    {
+      "seed": 5570603644478252598,
+      "outcome": "better_or_equal",
+      "final_population": 1164,
+      "trajectory_sha256": "14b925cfed16888cac46b79074e7581941910f682bfc0848f8eff12aa719f5c0",
+      "observations": 5001
+    },
+    {
+      "seed": 5574324921041524767,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "61bd91a867b48374ea3ac20027841fb3a58a9746c16d151d52766976f82fdbc3",
+      "observations": 185
+    },
+    {
+      "seed": 5595639686588143465,
+      "outcome": "better_or_equal",
+      "final_population": 415,
+      "trajectory_sha256": "4a59e2ee68b5cf5f4316cf8378a9b6a4732c4ead3659f4ed65c61dbd6ee88f9d",
+      "observations": 5001
+    },
+    {
+      "seed": 5630534955583856302,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "10f50dc2be2cbd5918d07462e94863968adb351236a178c27111ba0612868f77",
+      "observations": 137
+    },
+    {
+      "seed": 5651411263657809755,
+      "outcome": "better_or_equal",
+      "final_population": 1154,
+      "trajectory_sha256": "071661729a8424ade3959ef910ba144e0473a1715d5c20657915d1cbc36d00f7",
+      "observations": 5001
+    },
+    {
+      "seed": 5652233604721026317,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f64d5b042d88a54f5cfbf20e316258a641900584a978a70fa75a71868cb40ba6",
+      "observations": 180
+    },
+    {
+      "seed": 5656508181500331405,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "51eb04341128c26d4b2668d81afeef2212d5dd07981e88db66be9cdc437ce87f",
+      "observations": 190
+    },
+    {
+      "seed": 5691372494368594869,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "509e51eed21dfee0dd9d9772fd0d6ae80a7ca03de23f5a6397a223664f7f3f98",
+      "observations": 127
+    },
+    {
+      "seed": 5702307015667554484,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "43d3290509a9504f7e4df0c6bda96d07aca00ddfacca71682c13b905c359f55f",
+      "observations": 174
+    },
+    {
+      "seed": 5766482427597575012,
+      "outcome": "better_or_equal",
+      "final_population": 471,
+      "trajectory_sha256": "821e7d0687f7d11b8f26d25216c159614af0364da0b3e26473c73028382ce222",
+      "observations": 5001
+    },
+    {
+      "seed": 5792095584643019201,
+      "outcome": "better_or_equal",
+      "final_population": 521,
+      "trajectory_sha256": "0fb3958909354c69be29de565e22694bbafe44d0bab2423051b50d1f61c92d52",
+      "observations": 5001
+    },
+    {
+      "seed": 5797448636817404900,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "d659af72072fc6c9ef1a6ef571ff7d39d2ea48cb692f66d273078a1273d0441b",
+      "observations": 166
+    },
+    {
+      "seed": 5823505566249108022,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "85d8a040167546c66e2bf79ded0b1e99c3747340b35709ba3508331f11bf5161",
+      "observations": 212
+    },
+    {
+      "seed": 5844435284596351540,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "d22d7bb40b50f9adee1179adef02cf2e10da4017ddfb998e0927837fb9f70c15",
+      "observations": 754
+    },
+    {
+      "seed": 5868518227874682112,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "97f002bdf8a990cea87752329a106f0e8dc9b6f2db74f88c4da03ec2ea4fe796",
+      "observations": 191
+    },
+    {
+      "seed": 5937141646423353942,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "f23860c9760951e00f2d0c7c82d57cd4f293b84365bce17299214a62b1ab7936",
+      "observations": 229
+    },
+    {
+      "seed": 5938522328610785098,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "47ba37b3d7bcc207cf961c4f4db0cbd6355ab22fd630fc8d018f0d82f75cef3a",
+      "observations": 213
+    },
+    {
+      "seed": 5959830965944758536,
+      "outcome": "better_or_equal",
+      "final_population": 381,
+      "trajectory_sha256": "6445648c634f5ba404a20360d4ec4183871162f85f12b2937434840691d47bac",
+      "observations": 5001
+    },
+    {
+      "seed": 5992670776461100323,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "1ccd132a995752abfaf35181c6bf5d69c427acb5f24eb89cb392979cc31d56e1",
+      "observations": 561
+    },
+    {
+      "seed": 5998099875664109620,
+      "outcome": "better_or_equal",
+      "final_population": 1027,
+      "trajectory_sha256": "f46c1978476f3a5e3ecf32dc2db40b4ec04a0787695679b7acbda4a8230772d4",
+      "observations": 5001
+    },
+    {
+      "seed": 6000259499143367293,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "7aa3f4cda81a362975a5a3249b9d1f9f335079e97591b38109f3a049c64d70ef",
+      "observations": 127
+    },
+    {
+      "seed": 6050197700377984538,
+      "outcome": "better_or_equal",
+      "final_population": 1228,
+      "trajectory_sha256": "79a2410a4dbef6fa84dc240aff5ffaf74e6dd8b11b668a6398b259d7276daf4d",
+      "observations": 5001
+    },
+    {
+      "seed": 6091892141399416760,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "1fb7203c053c3d255ef8d827915df4a983d2fc89c446e97901b3e558f62e2ab4",
+      "observations": 152
+    },
+    {
+      "seed": 6093846047672736498,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "42114e6b43a20e684339bf24e9e638d2a4d2e52f5328b9b60ba77c1db9b2f5b9",
+      "observations": 124
+    },
+    {
+      "seed": 6137628971395194419,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "2aa411b4ee61a0502005ba7386f37f26bbfccf155f007080d56f529f3cafd8da",
+      "observations": 165
+    },
+    {
+      "seed": 6144005185935343913,
+      "outcome": "better_or_equal",
+      "final_population": 527,
+      "trajectory_sha256": "ef6ec0133455342db19c5032c791a211f024f5eb9c1868ab32c37503a5002afa",
+      "observations": 5001
+    },
+    {
+      "seed": 6148427743218987401,
+      "outcome": "better_or_equal",
+      "final_population": 1284,
+      "trajectory_sha256": "edca0b2cbacd8f647209d0e094acea59f52b36a5ac9e26a0d550bedfa9662d30",
+      "observations": 5001
+    },
+    {
+      "seed": 6153852370960353609,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "7382ecda4edc6428ffdba2da02a57127bdd2bd5d9f64a0f54c4b1d765d6b59e2",
+      "observations": 197
+    },
+    {
+      "seed": 6158128826727768255,
+      "outcome": "better_or_equal",
+      "final_population": 1068,
+      "trajectory_sha256": "5c15b97f5d0064efcc4557003739d0e60a07ac85bca4949c135dec582211e334",
+      "observations": 5001
+    },
+    {
+      "seed": 6167067325050248690,
+      "outcome": "better_or_equal",
+      "final_population": 1352,
+      "trajectory_sha256": "7477114ad28ff29559b606df831c0a4e39a0a5d6ca77ea3ab7756af36bab26c7",
+      "observations": 5001
+    },
+    {
+      "seed": 6173648424707615686,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "af8218cb4585e7f01b0e36f63d3bb443a8749d4b3eb0b1cbae993b5aebf2e53c",
+      "observations": 195
+    },
+    {
+      "seed": 6179414898995988742,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "189e7389fac277ddec5b9aeb9bafcdb95f4e519e71946eb7ffcbf2433b1e7d5e",
+      "observations": 157
+    },
+    {
+      "seed": 6220214936262116752,
+      "outcome": "better_or_equal",
+      "final_population": 509,
+      "trajectory_sha256": "3d9dd52893fc12376e37645d76eb4342f8f780d660372f7ba341b641e91bf9c1",
+      "observations": 5001
+    },
+    {
+      "seed": 6261077808091577057,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "b68dc61f97c68c129b7f4dcc8b4e2ada53d0372cd7ffb99882965f3188c4fe72",
+      "observations": 183
+    },
+    {
+      "seed": 6280406712694327752,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "c280761ca21045cd3755f9075ab52ad5a470bba316356c04362d69cd38ce3a1d",
+      "observations": 228
+    },
+    {
+      "seed": 6286188884552127069,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "9ac79e6ed8d2736026cf576651805291ceb4c568123690aa6cbfe79c10ef6110",
+      "observations": 128
+    },
+    {
+      "seed": 6306594374393076945,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "504fb56f3679e7bb1768be47b9117aaed33310a0381c7f0b925486ee1fccad6a",
+      "observations": 237
+    },
+    {
+      "seed": 6324878210949152277,
+      "outcome": "better_or_equal",
+      "final_population": 1010,
+      "trajectory_sha256": "b7a5e575554f6397152c07d4531c197796ff33841314f7bb6ee29be006cb40de",
+      "observations": 5001
+    },
+    {
+      "seed": 6386837576402374403,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "1b7643a5d4ea44aa8e86956dc471a331ab3c55e4f57ea4c52c5b1dde047fd17e",
+      "observations": 157
+    },
+    {
+      "seed": 6440149902611521794,
+      "outcome": "better_or_equal",
+      "final_population": 1309,
+      "trajectory_sha256": "b65e89708c00ca654fdb568ba66ad1497b00c70e844bfa68271a318857aa3b1c",
+      "observations": 5001
+    },
+    {
+      "seed": 6455409540992560137,
+      "outcome": "better_or_equal",
+      "final_population": 476,
+      "trajectory_sha256": "64ff641988c4da0d93cfe8f613245220eaa8418263361330e9d792dd145a6dff",
+      "observations": 5001
+    },
+    {
+      "seed": 6457943928766880712,
+      "outcome": "dead",
+      "final_population": 0,
+      "trajectory_sha256": "08e256b44dc9a5f84a576acf9113d2be064d4c676eeb3d6af61312ebd11ee084",
+      "observations": 233
+    }
+  ],
+  "classification_source": "Pinned author plots/plot.py lines 40\u201343 and 103: zero dead; surviving below initial worse; equality included in better.",
+  "scope": "Only the audited contiguous seed interval; an incomplete declared interval is explicitly marked. Not a full paper replication."
+}

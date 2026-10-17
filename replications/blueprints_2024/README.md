@@ -468,6 +468,23 @@ No elapsed-time comparison or completed-paper claim follows from this prefix.
 
 ## Complete raw homogeneous ensemble
 
+The [later audited checkpoint](results/homogeneous-checkpoint-2026-10-17-2019/coverage.json)
+validates 1,387 unique original-seed runs and 2,761,461 observations. The three active
+batch audits verify source pins, archived configurations, compressed trajectory hashes,
+and every retained observation. Coverage reconciliation excludes two duplicate records.
+
+| Model | Validated original seeds | Required |
+| --- | ---: | ---: |
+| Raw Sugarscape | 500 | 500 |
+| Altruistic | 424 | 500 |
+| Egoistic | 345 | 500 |
+| Bentham | 118 | 500 |
+
+The published checkpoint contains audit reports and their hashes. Raw trajectories
+remain in the retained evidence directories named by those reports. The earlier
+completed intervals remain referenced in the coverage manifest. These partial counts
+do not establish the remaining Table 3 proportions or complete the paper.
+
 [The complete raw comparison](results/homogeneous-checkpoint-2026-10-17/raw-table3-comparison.json) covers all 500 original seeds and 819,456 observations.
 The final resumed interval exited successfully; earlier intervals and the losslessly recovered disk-interrupted seed complete the original schedule without substitution.
 Released plotting semantics reproduce Table 3’s numerical counts exactly: 348 extinct, 5 surviving below 250, and 147 at or above 250.
