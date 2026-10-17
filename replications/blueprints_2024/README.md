@@ -466,6 +466,25 @@ The 19 additional inputs contribute 22,359 observations, bringing audited runtim
 Both groups remain incomplete, and the native worker continues. The complete 56,929,748-byte archive is retained off-node at the documented path and SHA-256.
 No elapsed-time comparison or completed-paper claim follows from this prefix.
 
+## Additional runtime controls
+
+[Two recovered paired controls](results/runtime-pairs-2026-10-17/audit/audit.json)
+use original selfishness inputs 0.37 and 0.73 with seed 175856849482260318.
+All 10,002 trajectory observations match byte-for-byte between CPython 3.11.14
+and PyPy 7.3.20 / Python 3.11.13. Final populations are 1,252 and 1,287.
+
+The audit verifies original archive configurations, source pins, both interpreters'
+exit receipts, complete ledger membership, and every native trajectory byte. The existing
+supplementary auditor independently checks each CPython trajectory and all finite measurements.
+Re-extracting the published archive reproduces all audit reports exactly.
+
+These extend the earlier six controls to a second seed and two nonbinary settings.
+They do not establish universal runtime equivalence, complete a supplementary sweep,
+or add homogeneous seeds. Shared-host elapsed times remain descriptive.
+
+Run `audit_runtime_pairs.py EXTRACTED_ARCHIVE BLUEPRINTS_SELFISHNESS_ZIP NEW_OUTPUT`
+to reproduce the audit. The complete native archive and its storage hash are retained.
+
 ## Complete raw homogeneous ensemble
 
 The [later audited checkpoint](results/homogeneous-checkpoint-2026-10-17-2019/coverage.json)
