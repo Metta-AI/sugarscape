@@ -300,3 +300,10 @@ The same two-core node now runs the previously unstarted raw and altruistic 5,00
 Each interval has a six-hour budget; the outer command is bounded at 21,720 seconds and preserves evidence on disk.
 The original 500-step local assignments remain disjoint. The launch is retained; full outputs and audits are still pending.
 After normal completion, the wrapper archives the evidence and leaves the node’s ordinary idle window for retrieval.
+
+A [second two-core launch](results/runtime-long5000-second-launch-2026-10-17/summary.json) assigns the remaining egoistic and Bentham 5,000-step groups, 100 original configurations each.
+Both worker manifests are read back from the active node; original runner, source and archive hashes pass setup verification.
+Each worker has a six-hour limit, with a seven-hour bound covering setup and execution.
+The first bootstrap failed before simulation because the image uses an unprivileged account; the corrected bootstrap uses its persistent home directory.
+Both launch records are retained. These assignments are disjoint from all earlier 500-step and 5,000-step groups.
+All four archived 5,000-step groups are now assigned, but execution and independent full-output validation remain incomplete.
