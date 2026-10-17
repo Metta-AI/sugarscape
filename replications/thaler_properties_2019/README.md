@@ -646,3 +646,23 @@ separates occupancy from pre-event agent observations; the
 These first-seed diagnostics do not establish the appendix's qualitative claims.
 Coordinate aliasing remains present. Weaver implementation fidelity, corrected-source
 sensitivity, and explicit qualitative comparisons remain outstanding.
+
+## Disease persistence: completed source runs expose a configuration mismatch
+
+[Both 100-seed persistence cohorts](results/disease-persistence-ensembles-2026-10-17)
+are complete and independently audited. At step 1,000, each version has 81 infected-majority
+runs and 16 runs with no infected agents. No population becomes extinct. Both source
+and prose majority criteria pass 81/100, with exact binomial 95% interval [0.7193, 0.8816].
+The 200 trajectories contain 894,627 snapshot agent observations; compressed-data
+readback reproduces both complete audits exactly.
+
+These are not faithful 25-disease negative replications. The scenario declares
+25 diseases of maximum length 10, but `generateDiseaseMasterList` reverses those
+tuple fields. All 400 saved disease configurations confirm that both V-1 and V-2
+generate ten entries; V-2 increases maximum length to 25. The coordinate and
+observation corrections leave this defect unchanged.
+
+[A separate bounded correction validation](results/disease-count-correction-launch-2026-10-17)
+aligns the generator with the declared field order. It must preserve the V-1 control
+byte-for-byte before the intended 25-entry experiment expands. Its results remain
+pending; the historical cohorts and unresolved whole-study status are preserved.

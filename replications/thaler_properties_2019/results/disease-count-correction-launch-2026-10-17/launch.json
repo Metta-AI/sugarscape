@@ -1,0 +1,28 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "relh-sugarscape-properties-disease-count-20261017-v1",
+    "--platform",
+    "linux/amd64",
+    "--cpus",
+    "1",
+    "--memory",
+    "3g",
+    "--pids-limit",
+    "512",
+    "-v",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home:/root",
+    "relh-sugarscape-thaler-deps:20261017-001",
+    "timeout",
+    "--kill-after=30",
+    "1800",
+    "bash",
+    "/root/sugarscape/thaler-properties-disease-count-001/run.sh"
+  ],
+  "stdout": "7fb7163db0fdacd52dceb6e806abcc142019ca421cb907989b42cdc8ff92f0bd\n",
+  "stderr": "",
+  "exit_code": 0
+}
