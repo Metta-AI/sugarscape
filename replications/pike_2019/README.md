@@ -579,3 +579,20 @@ Complete mode rejects the one-condition prefix before creating an output directo
 It finishes with 181 individuals, but 131,177 health records contain nonfinite holdings, starting at step 69.
 Its numerical validation fails. The higher survivor count therefore does not establish the paper’s economic survival claim.
 The raw archive, source/configuration receipts, numerical diagnosis, and completeness rejection are retained; the full grid remains pending.
+
+## Recovering ungrouped-agent counts
+
+`trace_group_membership.py ENGINE LIBRARY APPROACH THRESHOLD POLICY SEED OUTPUT`
+retains the native `meta_type` records after the unchanged model finishes.
+For nonnested groups, ungrouped agents equal the active schedule count minus
+2,500 permanent resource agents and retained groups.
+The schedule reporter alone includes all three categories.
+
+[Four native controls](results/composition-control-2026-10-17/complete.json)
+cover explicit/network grouping with and without movement at threshold ten, seed zero.
+The reconstruction matches native composition at all 4,000 timesteps.
+All 20 initial-agent, observation, health, price and population files match the earlier runs byte-for-byte.
+Final ungrouped counts are 28/24 without movement and 0/0 with movement.
+These single-seed controls validate measurement, not the paper's ensemble claim.
+The archived controls include native composition and all raw outputs; every archive member was read back and verified.
+Full-ensemble analysis must additionally check no nested groups and retain each declared seed.

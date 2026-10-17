@@ -1,0 +1,131 @@
+{
+  "validated_runs": 4,
+  "validated_steps": 4000,
+  "exact_raw_files": 20,
+  "runs": [
+    {
+      "approach": "explicit",
+      "policy": "none",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-runtime-001/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/trace_group_membership.py",
+        "/Users/relh/Code/workspace/sugarscape-pike-reference",
+        "/Users/relh/Code/workspace/sugarscape-pike-library-reference",
+        "explicit",
+        "10",
+        "none",
+        "0",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-composition-control-001/explicit-none"
+      ],
+      "elapsed_seconds": 23.384747743606567,
+      "baseline": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-phase2-001/explicit-10-0/run",
+      "exact_raw_sha256": {
+        "initial-agents.json": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413",
+        "observations.json": "04b6cb43ce7b716a7cd4d43853b35469ee3b7b6fab56b78c15c7ab52d654eff2",
+        "health.csv": "a8a90e69b7d36c9ad1e3823364908be52f6f423b856afe7205f3d767d8647007",
+        "prices.json": "507a28f09a0ddc5176b33d1e97aee627c21c8616f6ff10310eaf7918c5667045",
+        "population.csv": "fecb338eefc4e0db4bd4d125a74b263bef43633a1d184b27fc0da5b57b07ecda"
+      },
+      "composition": {
+        "validated_steps": 1000,
+        "resource_agents": 2500,
+        "final_independent_agents": 28,
+        "observer_sha256": "30321c5bb86f625fd9fa2b0bf83e2ffb23ba8b1289e1c4d1ef7b0dd8f2830659",
+        "scope": "Native schedule composition equals retained reporter minus resources and groups at all1000steps. Trajectory parity must be verified separately."
+      }
+    },
+    {
+      "approach": "network",
+      "policy": "none",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-runtime-001/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/trace_group_membership.py",
+        "/Users/relh/Code/workspace/sugarscape-pike-reference",
+        "/Users/relh/Code/workspace/sugarscape-pike-library-reference",
+        "network",
+        "10",
+        "none",
+        "0",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-composition-control-001/network-none"
+      ],
+      "elapsed_seconds": 14.36412000656128,
+      "baseline": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-phase2-001/network-10-0/run",
+      "exact_raw_sha256": {
+        "initial-agents.json": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413",
+        "observations.json": "6260ad61ad4c6470d2637581de396056541c10ceedbdcb61abfa2e76a107a1ea",
+        "health.csv": "83297300755954190b32d53a20e2e32118405ae1313b71ac9b906f94d62e9d83",
+        "prices.json": "0690e40d56d6f8b721c46085db680df823a84305fb1a4213135cee9137ccd347",
+        "population.csv": "fda8c3ef1a644462f90d7583c6a80299f0c6762f77fcdeb0f724f73239bbf846"
+      },
+      "composition": {
+        "validated_steps": 1000,
+        "resource_agents": 2500,
+        "final_independent_agents": 24,
+        "observer_sha256": "30321c5bb86f625fd9fa2b0bf83e2ffb23ba8b1289e1c4d1ef7b0dd8f2830659",
+        "scope": "Native schedule composition equals retained reporter minus resources and groups at all1000steps. Trajectory parity must be verified separately."
+      }
+    },
+    {
+      "approach": "explicit",
+      "policy": "movement",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-runtime-001/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/trace_group_membership.py",
+        "/Users/relh/Code/workspace/sugarscape-pike-reference",
+        "/Users/relh/Code/workspace/sugarscape-pike-library-reference",
+        "explicit",
+        "10",
+        "movement",
+        "0",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-composition-control-001/explicit-movement"
+      ],
+      "elapsed_seconds": 43.16889405250549,
+      "baseline": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-phase3-movement-001/explicit-10-0-released/run",
+      "exact_raw_sha256": {
+        "initial-agents.json": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413",
+        "observations.json": "0098e4b8cea386c866137b27fc811f0964700117379a7ffa85cc129fc8018b43",
+        "health.csv": "03ab1e6ccc8d2e4aa20a10a1f3bd1c6d8e78e3cafd75e7ac9464ec1126dd52a6",
+        "prices.json": "7f97d8cf3ef7d90bb068da142bc61cf7c502dbac8ecc9c1b328c28ab0701ddff",
+        "population.csv": "053cbf64cf3e60cbd0cdeccd4c1f4b0ba3f5bf41d9c9509dd9f71aab1b33d707"
+      },
+      "composition": {
+        "validated_steps": 1000,
+        "resource_agents": 2500,
+        "final_independent_agents": 0,
+        "observer_sha256": "30321c5bb86f625fd9fa2b0bf83e2ffb23ba8b1289e1c4d1ef7b0dd8f2830659",
+        "scope": "Native schedule composition equals retained reporter minus resources and groups at all1000steps. Trajectory parity must be verified separately."
+      }
+    },
+    {
+      "approach": "network",
+      "policy": "movement",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-runtime-001/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/trace_group_membership.py",
+        "/Users/relh/Code/workspace/sugarscape-pike-reference",
+        "/Users/relh/Code/workspace/sugarscape-pike-library-reference",
+        "network",
+        "10",
+        "movement",
+        "0",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-composition-control-001/network-movement"
+      ],
+      "elapsed_seconds": 13.117392778396606,
+      "baseline": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-phase3-movement-001/network-10-0-released/run",
+      "exact_raw_sha256": {
+        "initial-agents.json": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413",
+        "observations.json": "e2f46d3eed71596dba50bbf5d6bc20cd5f4436d62324c2c2d7daf3c28c0579c3",
+        "health.csv": "05803c1ca8b81a36d3335197d3f4e35a0e9afa372a4800b031f2923cb3485c55",
+        "prices.json": "f0d0b685f623e91df16c7f909b759222a3f53139e1603c0e59b6b2af3a25d801",
+        "population.csv": "074af955e28e1c1a270477a8c8fa97b139ecc21cc03a944e969fb2831c4b1ec6"
+      },
+      "composition": {
+        "validated_steps": 1000,
+        "resource_agents": 2500,
+        "final_independent_agents": 0,
+        "observer_sha256": "30321c5bb86f625fd9fa2b0bf83e2ffb23ba8b1289e1c4d1ef7b0dd8f2830659",
+        "scope": "Native schedule composition equals retained reporter minus resources and groups at all1000steps. Trajectory parity must be verified separately."
+      }
+    }
+  ]
+}
