@@ -160,6 +160,46 @@
     "paper_calibration": "Section6.3.2:vision1and6; appendix100agents25x25grid50steps",
     "released_demo": "100agents50x50grid100steps; vision_spacing1 with2probabilities selects1and2; probabilities.5/.5",
     "missing_from_checked_trees": "Sugarscape calibration and paperfigure scripts; dependency lockfiles",
-    "requirements": "Separate gradient-validation and calibration configs; resolve seeds/finite-difference samplecounts/epsilon and learningrate; run on case-sensitive filesystem. No Julia executable found locally; do not install large localruntime with~4GiBfree."
+    "requirements": "Historical DiffABM jmlr_submission lockfile recovered (Julia1.11.3,348packages); dependency bootstrap active with30min/8GiB guards. Main-branch missing-manifest observation remains historical. Separate gradient/calibration configs; resolve seeds/FDsamplecounts/epsilon/learningrate and absent calibration scripts. No gradients or calibration completed."
+  },
+  "historical_branch_recovery": {
+    "diffabm_commit": "9178eccd56dd352e3515e276239654239f8d3b41",
+    "branch": "jmlr_submission",
+    "julia_version": "1.11.3",
+    "packages": 348,
+    "source_sha256": {
+      "Project.toml": "9be969f00b3b28bb99985b55205413c8d13f091edc5a827f6d260e08b552ba58",
+      "Manifest.toml": "3b1cdef37a183be5822a4e3032fa3125ad3dee70ec231c387791c036bdbd2f81",
+      "src/SugarScape.jl": "d75bdd16ca51dd30851e794a490531c960a0445ccb44153b4ad624882f5b4959",
+      "scripts/run_sugarscape.jl": "5854deefc2a1cb49aeb12a55f61a56512df4cfd62b8522cde431cf36419a079f"
+    },
+    "sugarscape_matches_prepublication_commit_93c538c": true,
+    "blackbirds_jmlr_commit": "277bc7e99df581f0e73de9d7a63ad1ccc81dd833",
+    "blackbirds_manifest": false,
+    "scope": "Recovered historical dependency manifest and exact Sugarscape source agreement; no gradients or calibration yet.",
+    "diffabm_url": "https://github.com/arnauqb/DiffABM.jl/tree/9178eccd56dd352e3515e276239654239f8d3b41",
+    "blackbirds_url": "https://github.com/arnauqb/BlackBIRDS.jl/tree/277bc7e99df581f0e73de9d7a63ad1ccc81dd833",
+    "runtime": {
+      "version": "1.11.3",
+      "platform": "aarch64-apple-darwin14",
+      "url": "https://julialang-s3.julialang.org/bin/mac/aarch64/1.11/julia-1.11.3-macaarch64.tar.gz",
+      "bytes": 213835057,
+      "sha256": "554fb0ddb4d94d623c83ca5e9d309fe1a7a0924445cb18ec3b863fb3367b0ba8",
+      "verification": "Downloaded archive matches official release catalog SHA256 and length; binary reports julia version1.11.3."
+    },
+    "bootstrap": {
+      "status": "running",
+      "evidence_directory": "quera-julia-bootstrap-001",
+      "wrapper_pid": 3546,
+      "julia_pid": 3548,
+      "timeout_seconds": 1800,
+      "free_disk_guard_gib": 8,
+      "automatic_precompile_tasks": 1,
+      "scope": "Instantiate exact historical manifest and import DiffABM; no simulation or calibration yet."
+    },
+    "source_semantics_to_check": [
+      "abm_run stores initial state and iterates2:n_timesteps, producing n_timesteps stored states and n_timesteps-1 transitions.",
+      "The step computes new_wealth but calls compute_alive with the old agent; survival uses old wealth>=0. This differs from paper wording of death at post-metabolism holdings<=0. Validate on full trajectories before drawing a conclusion."
+    ]
   }
 }
