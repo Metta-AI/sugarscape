@@ -160,3 +160,30 @@ qualification run. No diagnostic outcome is yet claimed.
 `instrument_resolution.py ORIGINAL_MAIN NEW_OUTPUT` produces the exact observer,
 patch, and protocol after checking the original source hash. The published launch
 passed shell syntax and Python lint checks; native parity remains to be measured.
+
+## Sealed qualification outcome
+
+The original native command ended with its declared timeout, exit 124, at
+21:20:23 UTC. [The complete qualification evidence](results/native-qualification-complete-2026-10-17)
+contains ten completed scaling conditions, seed zero at widths 256–2560.
+The width-2816 condition started but produced no recorded timestep before timeout.
+It is retained as unfinished and receives no completed-condition credit.
+
+All 1,000 native step records pass the independent receipt, source-manifest,
+coverage, finite-timing, population-bound, and aggregate-reconstruction audit.
+Every recorded population matches the author archive exactly. This covers ten
+of 84 total conditions; occupation and resolution grids remain unexecuted.
+No timing-equivalence, individual-state, or whole-paper verdict follows.
+
+The 51,504-byte terminal archive was downloaded from task-owned storage and
+verified against SHA-256 `51e69cbd7de87c97b349d8e3137896da3c3071fb695baa5f7fba7e0ca5d8ed31`.
+It retains raw outputs, GPU/toolchain details, build logs, the source manifest,
+execution exit code, and the native receipt. The public auditor preserves the
+failed completion status rather than converting operational timeout to success.
+
+```sh
+python replications/richmond_2023/audit_native.py EXTRACTED_EVIDENCE NEW_AUDIT
+```
+
+The passive counter observer started building only after this command's terminal
+receipt appeared. Its population-parity and counter results remain pending.
