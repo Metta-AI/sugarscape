@@ -1042,3 +1042,28 @@ The auditor now accepts a completed prefix only with its pinned nonzero-exit
 terminal receipt. It still rejects overlapping inputs, missing terminal evidence,
 and any inference without all 100 completed pairs. End-to-end rejection probes
 exercise the real retained datasets.
+
+## Complete combined disease correction
+
+The [combined-correction ensemble](results/disease-combined-ensemble-2026-10-17)
+now contains all 100 frozen seeds and 446,138 independently checked agent
+observations. It combines the disease generator correction with the coordinate
+and observation corrections. The retained first seed and two disjoint intervals
+reproduce a byte-identical merged audit after compressed archive readback.
+
+All 100 runs end with zero infected agents and surviving populations. First
+clearance occurs between steps 22 and 90. Neither the released majority predicate
+nor the strict-majority interpretation passes any run: 0/100, with an exact 95%
+binomial interval of [0, 0.036217]. The count/length-only correction also cleared
+infection in all 100 runs, without the coordinate/observation changes.
+
+The generator fix restores a 25-entry pool with maximum disease length 10; the
+released implementation instead used a 10-entry pool with maximum length 25.
+It changes both quantities, so clearance cannot be attributed to disease count
+alone. Generated pools contain 19–25 distinct entries. These results preserve
+the discrepancy with the persistence claim, but do not complete the paper.
+
+The interval auditor requires pinned terminal evidence for interrupted prefixes
+and rejects a missing receipt. A complete re-audit of the previously published
+count/length-only cohort preserves every scientific result and its trajectory
+audit hash. No original native output was changed.

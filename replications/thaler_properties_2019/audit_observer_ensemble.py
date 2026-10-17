@@ -22,6 +22,10 @@ parser.add_argument("--allow-prefix", action="store_true")
 parser.add_argument(
     "--interval", nargs=2, type=int, default=[0, 100], metavar=("START", "STOP")
 )
+parser.add_argument(
+    "--recorded-run-name",
+    help="Original run directory name when it differs from the model variant",
+)
 args = parser.parse_args()
 protocol = json.loads(args.protocol.read_text())
 manifest = json.loads((args.run / "manifest.json").read_text())
@@ -109,7 +113,7 @@ for record in records:
     assert (
         expected_parent.name == folder.name
         and expected_parent.parent.name == args.scenario
-        and expected_parent.parent.parent.name == variant
+        and expected_parent.parent.parent.name == (args.recorded_run_name or variant)
     )
     assert Path(command[5]).name == "trajectory"
     assert (
