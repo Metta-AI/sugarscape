@@ -465,5 +465,47 @@ The reconciliation retains each run’s final individual population, undefined p
 The compressed audit/measurement archive was read back and compared byte-for-byte with every local source file.
 Raw outputs remain at the local and cloud paths recorded in the receipts; they are not all included in Git.
 
-The declared survivor intervals, paired comparisons, price-distribution analysis, and comparison with Phase I remain pending.
+The declared survivor intervals, paired comparisons, price distributions, and Phase I survivor comparison are reported below.
 A complete raw audit does not establish the paper’s grouping-equivalence claim or complete its other phases.
+
+## Phase II analysis of the complete grid
+
+[The analysis](results/phase2-analysis-2026-10-17/analysis.json) uses 100 runs per condition and retains undefined transaction statistics.
+
+| Approach | Trade threshold | Mean survivors | Pointwise 95% interval |
+|---|---:|---:|---:|
+| Explicit | 1 | 48.21 | 47.032–49.388 |
+| Explicit | 5 | 48.09 | 46.916–49.264 |
+| Explicit | 10 | 48.33 | 47.159–49.501 |
+| Network | 1 | 48.23 | 47.032–49.428 |
+| Network | 5 | 48.31 | 47.131–49.489 |
+| Network | 10 | 48.28 | 47.105–49.455 |
+
+Three of fifteen paired, pointwise intervals exclude zero: explicit-five minus explicit-ten, network-five, and network-ten.
+Their mean differences are −0.24, −0.22, and −0.19 individuals, respectively.
+These intervals are not adjusted for multiple comparisons and do not establish a family-wide finding.
+
+The independent Phase I standard mean is 47.72.
+All six grouping-minus-standard Welch intervals include zero; estimated differences range from 0.37 to 0.61 individuals.
+Neither these intervals nor similar means establish equivalence: the author supplied no equivalence margin, original seeds, or verified historical source pin.
+
+Log-price dispersion is undefined in 82,107–83,078 of 100,000 steps per condition because fewer than two trades occur.
+The median over defined steps ranges from 0.0763 to 0.0793.
+The retained 500-bin histograms describe defined step observations; they do not treat timesteps as independent uncertainty units.
+Early and late price summaries retain defined-run counts and use runs for intervals.
+
+Independent R calculations validate all 27 survivor intervals across 93 scalar comparisons, with maximum difference 4.70e-11.
+All 36 price-window means and undefined counts agree exactly with the separate raw-record audit summaries.
+The reports retain per-run survivors, histogram counts, input hashes, and verification scripts.
+
+Reproduce the analysis with:
+
+```sh
+python replications/pike_2019/analyze_phase2.py \
+  /path/to/complete-phase2-reconciliation \
+  /path/to/complete-phase1-reconciliation \
+  /new/analysis-output
+```
+
+This completes the declared Phase II analysis for these released-source configurations.
+It does not resolve historical source fidelity, Phase III movement, or common-resource claims; the paper remains incomplete.
