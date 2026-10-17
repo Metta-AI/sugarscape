@@ -307,3 +307,12 @@ Each worker has a six-hour limit, with a seven-hour bound covering setup and exe
 The first bootstrap failed before simulation because the image uses an unprivileged account; the corrected bootstrap uses its persistent home directory.
 Both launch records are retained. These assignments are disjoint from all earlier 500-step and 5,000-step groups.
 All four archived 5,000-step groups are now assigned, but execution and independent full-output validation remain incomplete.
+
+## Complete archived altruistic 500-step group
+
+[Fresh native audits and reconciliation](results/runtime-altruistic500-complete-2026-10-17/reconciliation.json) validate all 100 original altruistic 500-step inputs across 26,212 observations.
+The 99-condition producer exited zero; its complete-interval audit and a fresh pilot audit cover indices `[0,100)` without duplicates or gaps.
+Outcomes are 71 extinctions, one surviving population below 250, and 28 above 250; none ends at exactly 250.
+The new native archive retains all 99 batch conditions, while the earlier pilot remains in its original evidence location.
+This brings audited runtime-archive coverage to 200 of 1,200 inputs across two complete groups.
+The deposited 100-seed schedule differs from the claimed 500-seed paper schedule, so no Table 6 replication verdict follows from these counts.
