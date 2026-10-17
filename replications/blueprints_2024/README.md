@@ -604,3 +604,17 @@ The new coverage extends altruistic 5,000-step inputs through index 77, Bentham
 Raw 50,000-step coverage remains nine inputs. Each trajectory reaches its horizon
 or extinction. The four active groups remain incomplete, and these deposited
 100-seed groups do not establish the paper's 500-seed Table 6 results.
+
+## Fourth runtime checkpoint reconciliation
+
+[Recovery checkpoint six and round-two checkpoint five](results/runtime-checkpoints-fourth-2026-10-17)
+add nine unique inputs and 75,469 observations. Verified coverage reaches
+**739/1,200 deposited runtime inputs and 1,085,935 observations**.
+All earlier audit hashes and every overlapping result record match exactly.
+Downloaded archive sizes and SHA-256 hashes match their receipts.
+
+The added inputs comprise five altruistic 5,000-step runs, two raw 50,000-step
+runs, and two Bentham 5,000-step runs. Coverage now reaches altruistic index 82,
+raw index 10, and Bentham index 35. Egoistic 50,000-step coverage remains nine inputs.
+All counted trajectories finish their configured horizon or become extinct.
+These remain incomplete groups, distinct from the paper's 500-seed Table 6 experiment.
