@@ -266,3 +266,13 @@ Ten new conditions pass across 3,087 observations; with the earlier pilot, runti
 A full-mode invocation against the incomplete live batch rejects before creating output.
 Only the ten audited native directories are archived here; active partial runs are excluded.
 The complete-batch success path remains unexercised until the producer finishes. This does not establish Table 6.
+
+## Complete archived raw-model 500-step group
+
+[Full-mode auditing and reconciliation](results/runtime-raw500-complete-2026-10-17/reconciliation.json) now cover all 100 deposited raw-model 500-step inputs.
+The 99-condition producer exited zero; full validation passes, superseding the earlier unexercised-success-path limitation.
+The earlier pilot is counted once, giving 100 unique seeds and 29,004 observations without gaps or overlaps.
+Outcomes are 65 extinctions, six surviving populations below 250, and 29 above 250; none ends at exactly 250.
+The final native archive contains only the 89 conditions absent from the earlier ten-condition archive.
+This completes one group in the deposited 1,200-input runtime archive; the other groups remain unstarted.
+The archive's 100 seeds differ from the paper's claimed 500-seed schedule, so these counts are not a direct Table 6 replication verdict.
