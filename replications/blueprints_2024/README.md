@@ -474,3 +474,25 @@ Released plotting semantics reproduce Table 3’s numerical counts exactly: 348 
 One run ends at exactly 250. Applying the paper’s prose categories instead gives 348 extinct, 6 worse-or-equal, and 146 strictly better.
 The boundary trajectory and its hash are retained; this reporting mismatch is not silently corrected.
 The three other homogeneous ensembles, temporal comparisons and broader experiments remain incomplete. This result does not complete the paper.
+
+## Complete raw time-series reconstruction
+
+[The raw time-series evidence](results/raw-timeseries-2026-10-17) reconstructs all 500 original inputs and 819,456 observations.
+The unmodified v2024.1 parser and an independent NumPy aggregation agree on all 30,006 scalar values across 5,001 timesteps.
+Population agrees exactly; maximum floating-point error is 5.83e-11, from summation order in total wealth.
+The source parser pads missing post-extinction timesteps with zeros and divides by all 500 seeds.
+Normalized deaths and wealth divide ensemble means; they do not average per-seed ratios.
+
+At timestep 5,000, mean population is 242.964, mean time to live is 4.87384, total wealth is 35,906.5932,
+and wealth per population is 147.785652. These describe the complete raw ensemble, not the other models.
+[The six-panel figure](results/raw-timeseries-2026-10-17/timeseries.pdf) retains this limited scope.
+Paper curve agreement and cross-model comparisons remain unvalidated until their full ensembles and figure extraction are available.
+
+```sh
+python replications/blueprints_2024/audit_timeseries.py /path/to/coverage.json /path/to/v2024.1 rawSugarscape /new/timeseries
+python replications/blueprints_2024/plot_timeseries.py /new/timeseries
+```
+
+The first command requires a complete audited 500-seed interval, its referenced raw evidence, NumPy and the pinned author checkout.
+It stages lossless inputs for the original parser, retaining them outside Git, with a 4 GiB free-space guard.
+The plot command requires Matplotlib. Full parser logs, input hashes, numerical series and plots are retained.

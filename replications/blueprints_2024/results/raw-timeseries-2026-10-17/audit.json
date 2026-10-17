@@ -1,0 +1,44 @@
+{
+  "model": "rawSugarscape",
+  "runs": 500,
+  "observations": 819456,
+  "timesteps": 5001,
+  "metrics": [
+    "population",
+    "agentMeanTimeToLive",
+    "agentStarvationDeaths",
+    "agentCombatDeaths",
+    "agentWealthTotal",
+    "meanAgeAtDeath"
+  ],
+  "compared_scalars": 30006,
+  "max_absolute_error_by_metric": {
+    "population": 0.0,
+    "agentMeanTimeToLive": 5.684341886080802e-14,
+    "agentStarvationDeaths": 0.0,
+    "agentCombatDeaths": 0.0,
+    "agentWealthTotal": 5.820766091346741e-11,
+    "meanAgeAtDeath": 3.197442310920451e-14
+  },
+  "population_exact": true,
+  "floating_comparison": {
+    "rtol": 1e-12,
+    "atol": 1e-08
+  },
+  "final_means": {
+    "population": 242.964,
+    "agentMeanTimeToLive": 4.873840000000001,
+    "agentStarvationDeaths": 0.302,
+    "agentCombatDeaths": 0.0,
+    "agentWealthTotal": 35906.5932,
+    "meanAgeAtDeath": 20.577479999999994
+  },
+  "final_derived": {
+    "starvation_plus_combat_per_population": 0.0012429824994649413,
+    "wealth_per_population": 147.78565219538697
+  },
+  "parser_sha256": "40db9cf6b8172e9fea0b3de532f541ebecd9d4b6e2724ea4ac6ee5ebf4c7d5e5",
+  "coverage_sha256": "c4e4ffe72a3255968a2c59fb2ca09cad227403b52beb1fb330ac4836965a7b80",
+  "semantics": "Absent post-extinction rows contribute zero; denominator remains500. Derived ratios divide ensemble means, not per-run ratios.",
+  "scope": "Complete one-model author-parser reproduction. Cross-model paper curves and graphical agreement remain unvalidated."
+}
