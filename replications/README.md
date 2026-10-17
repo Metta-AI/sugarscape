@@ -8,7 +8,7 @@ The [Coworld wrapper](https://github.com/Metta-AI/coworld-sugarscape) consumes t
 Goal: reproduce the Sugarscape results of at least ten distinct papers.
 Foundational book chapters, multiple figures from one paper, and repeated versions do not count as separate papers.
 Distinct research papers published in conference proceedings do count.
-The papers below are candidates, not completed replications.
+The table distinguishes candidates, unfinished studies, and completed replications.
 
 ## Evidence required
 
@@ -54,7 +54,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | need-for-greed-2024 | Kremer-Herman and Gupta, [The Need for Greed in Artificial Decisionmakers](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf) (2024) | Full selfishness sweep, outcome proportions and five agent/society measurements | [source audit](source-audits/need-for-greed-2024.json): explicit v2024.1 code pin; 10,100 sweep and 400 baseline configs verified as exact Blueprints archive subsets; simulation/measurement replication pending |
 | serrano-2020 | Serrano and Satoh, [An Agent-Based Model for Exploring Pension Law and Social Security Policies](https://doi.org/10.1007/978-3-030-58790-1_4) (2020 proceedings) | Pension sustainability, inequality and social exclusion | [source audit](source-audits/pensions-2020.json): author code and 1,280 archived runs recovered; 2,304 workbook values reconstructed; full text and paper-specific protocol pending |
 | quera-bofarull-2025 | Quera-Bofarull et al., [Automatic Differentiation of Agent-Based Models](https://arxiv.org/html/2509.03303v2) (2025) | Sugarscape gradient validation, sensitivity, and variational calibration | [source audit](source-audits/quera-bofarull-2025.json): both author repositories pinned; demo differs from paper experiment settings; experiment scripts and numerical protocol unresolved; no runs |
-| izquierdo-2009 | Izquierdo et al., [Techniques to Understand Computer Simulations: Markov Chain Analysis](https://www.jasss.org/12/1/6.html) (2009) | Sugarscape appendix: regeneration, irreducibility and aperiodicity | [source audit](source-audits/izquierdo-2009.json): figure2’s305 desert sites verified; figure/map discrepancies retained; constructive proof and model witnesses pending |
+| izquierdo-2009 | Izquierdo et al., [Techniques to Understand Computer Simulations: Markov Chain Analysis](https://www.jasss.org/12/1/6.html) (2009) | Sugarscape appendix: regeneration, irreducibility and aperiodicity | Replicated structural result: finite-state bound, general 135-step regeneration proof, and five/six-step returns; 545 full states independently replayed; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/14) |
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | [source audit](source-audits/flentge-2001.json): 161-page thesis and experiment appendix recovered; source ZIP, executable, landscape and seeds unresolved; no runs |
 | pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | [source audit](source-audits/pan-2011.json): twelve scenario targets and explicit rules extracted; hardship mapping, scheduling, map, and original implementation unresolved |
 
@@ -69,10 +69,10 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 
 ## Current state
 
-The [evidence index](study-evidence.json) pins eleven pushed study commits and their README hashes, with two completed mixed studies.
+The [evidence index](study-evidence.json) pins twelve pushed study commits and their README hashes: two completed mixed studies and one positive structural replication.
 Its JSON parsing checks artifact readability only; scientific completion remains claim-specific.
 Pike adds author-code replay and parameterized grouping ensembles, not an additional completed paper.
-The Need for Greed is an additional source-audited candidate, outside the eleven study PRs and completed-study count.
+The Need for Greed is an additional source-audited candidate, outside the twelve study PRs and completed-study count.
 Its exact configuration overlap offers future run reuse only after checking source, runtime and measurements; no duplicate ensemble was launched.
 Its corrective experiments preserve original failures and remain separate from historical replication claims.
 Carrella's independent implementation passes deterministic native comparisons; its full stochastic and estimator validation remain unfinished.
@@ -82,7 +82,8 @@ Pike's first complete movement-policy condition validates the released-selector 
 
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.
-Completed studies: **2 / at least 10**. Wholly positive paper replications: **0**.
+Completed studies: **3 / at least 10**: two published papers and one unpublished working paper.
+Positive replication: Izquierdo’s full Sugarscape appendix; mixed outcomes: McCulloch and Dogan.
 McCulloch et al.: validated negative finding under the declared exact-stability criterion, with conditional posterior agreement.
 The independent model matches 660 author-code trajectories and passes 80 complete-world checks across all calibration parameters.
 All 51 variance ensembles and both 10,000-particle posterior experiments completed; raw evidence and limitations are in the study PR.
@@ -249,8 +250,8 @@ The author-hosted2003VUScape paper has been recovered and its Table2 and Figure2
 These differ materially from the2005communication experiments; existing2005runs cannot count as a second completed paper.
 The earlier text does not resolve fertility-end inheritance, historical source, or message-removal settings.
 
-Eleven distinct paper studies now have separate PRs. This is coverage of ongoing work, not eleven completed replications.
-The completed count remains two. The 2003 VUScape study uses its own published parameters and trajectories.
+Twelve distinct paper studies now have separate PRs; three meet their declared completion criteria.
+The remaining nine are unfinished. The 2003 VUScape study uses its own published parameters and trajectories.
 The 2005 fertility correction passes all 150 paired runs and 11,494,812 births, but changes survival in several paired seeds.
 Its COM1 threshold-one survival rises from one to three of ten; implementation sensitivity still prevents a paper-level verdict.
 

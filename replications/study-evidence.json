@@ -1,9 +1,9 @@
 {
-  "as_of": "2026-10-16",
+  "as_of": "2026-10-17",
   "minimum_completed_papers": 10,
-  "completed_studies": 2,
-  "wholly_positive_papers": 0,
-  "interpretation": "Snapshot of committed studies and declared remaining scope. Parsing evidence and reading status does not independently prove scientific completion. No partial study promoted by this audit.",
+  "completed_studies": 3,
+  "wholly_positive_papers": 1,
+  "interpretation": "Three completed studies: McCulloch mixed, Dogan mixed unpublished working paper, and Izquierdo positive structural Sugarscape-appendix replication. Other study entries remain dated snapshots of their pinned commits; incomplete studies receive no completion credit.",
   "studies": [
     {
       "study": "mcculloch_2022",
@@ -127,6 +127,23 @@
       "readme_sha256": "0226d969ab4860cad254905f36118417e1cb2211e921419ff80c83286c0e4b8c",
       "json_evidence_files": 57,
       "gzip_json_evidence_files": 128
+    },
+    {
+      "study": "izquierdo_2009",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/14",
+      "checked_commit": "91441ad4115b0c351a654127acc29cc16ab3ea0c",
+      "status": "replicated",
+      "readme": "replications/izquierdo_2009/README.md",
+      "readme_sha256": "2f62aa8d8fce5659ce96b46fa217aca2a060d0c81e62b95db9d6c2b2f94df152",
+      "scope": "Complete Sugarscape appendix structural result; excludes the paper\u2019s other nine models. General finite-state/irreducibility/aperiodicity proof plus independently replayed executable witnesses.",
+      "remaining_scope": "No outstanding declared structural target. Does not estimate practical mixing time or assert pseudorandom-generator ergodicity.",
+      "validation": {
+        "regeneration_states": 545,
+        "movement_decisions": 135500,
+        "replacement_decisions": 13910,
+        "return_states": 18,
+        "illegal_move_rejected": true
+      }
     }
   ],
   "study_prs": 11
