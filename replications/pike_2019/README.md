@@ -555,3 +555,15 @@ One-level holdings become nonfinite at step 76, affecting 58,278 health records;
 No negative holding is observed. Invalid holdings remain in the archived raw data and are not repaired or excluded.
 These outcomes supply the cloud grid’s two seed-zero slots but do not establish valid economic replication.
 The 198-condition cloud batch remains separate and active; full-grid reconciliation and aggregate price analysis remain pending.
+
+## Common-resource five-versus-ten comparison
+
+[The declared protocol](COMMON_THRESHOLD_PROTOCOL.md) follows the paper’s page-23 comparison: lower the grouping threshold from ten trades to five, for both one-level and multi-level shared resources.
+`run_common_threshold.py` changes only the native grouping call’s threshold and preserves its policy object and resource rules.
+Both threshold-ten seed-zero controls reproduce initialization, observations, health, population, and prices byte-for-byte against the native cloud runs.
+The ten exact file comparisons validate the default parameterization path over 2,000 model steps.
+
+`run_common_five.py` now executes the 200 new conditions: seeds 0–99 for both variants, one worker, with per-condition and three-hour batch limits.
+The existing homogeneous cloud threshold-ten ensemble supplies the comparator; local runs remain separate sensitivity evidence.
+The new runner freezes source and protocol, records every exit and file hash, and fails below 8 GiB free space.
+All numerical failures remain in raw outputs. Completion requires independent audits and declared paired/distribution analyses; launch alone supplies no result.
