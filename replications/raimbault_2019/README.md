@@ -520,3 +520,40 @@ requirements remain outstanding even if the reference grid completes.
 ```sh
 python replications/raimbault_2019/audit_terminal_reference.py /path/to/remote-reference-queue-001 /new/terminal-audit.json
 ```
+
+### Complete Table 2 convergence reconstruction
+
+[The convergence audit](results/convergence-2026-10-17/audit.json) reconstructs all six
+Sugarscape entries in Table 2 from all 2,727,994 archived generated-landscape runs.
+Every value matches at the published three-decimal precision.
+
+| Statistic | Reconstructed terminal-Gini ratio | Published |
+| --- | --- | --- |
+| Minimum | 2.342811 | 2.343 |
+| First quartile | 14.412785 | 14.413 |
+| Median | 20.992606 | 20.993 |
+| Mean | 20.097784 | 20.098 |
+| Third quartile | 26.208276 | 26.208 |
+| Maximum | 49.807882 | 49.808 |
+
+The released `comp.R` groups by landscape ID, population, and endowment bounds,
+then divides mean terminal Gini by its sample standard deviation. All 54,560
+available groups have defined ratios; none are omitted. This differs from the
+time-averaged Gini used for phase-diagram comparisons. The separately labeled
+moving-window diagnostic has mean ratio 88.330084 and median 88.677708.
+It is not substituted for the paper's convergence statistic.
+
+[Independent base-R validation](results/convergence-2026-10-17/independent-validation.json)
+reads the same raw individual observations independently of Python's group outputs.
+All group counts agree; all 327,360 means, standard deviations, and ratios agree
+within 1.26e-12, below the numerical tolerance of 1e-10. This checks calculation
+implementations, not scientific equivalence. Both complete group tables are retained
+as compressed CSVs, with hashes and the original dataset hash.
+
+```sh
+python replications/raimbault_2019/audit_convergence.py GENERATED_RAW.csv.gz ORIGINAL_SOURCE NEW_OUTPUT
+Rscript replications/raimbault_2019/verify_convergence.R GENERATED_RAW.csv.gz NEW_R_GROUPS.csv
+```
+
+These are complete archived-data calculations. They do not add fresh simulations,
+resolve the missing generated parameter combinations, or complete the study.
