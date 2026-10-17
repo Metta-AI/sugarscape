@@ -623,3 +623,17 @@ The [original notebook continuation](results/notebook-rf-completed-2026-10-17/au
 Only maximum sugar endowment matches the paper’s printed three-decimal precision in either run. The sequential workflow therefore does not resolve the four existing differences or add any newly covered Table 8 cell. Individual predictions differ by up to 36.5 from the isolated run. The random state advanced during the forest stage.
 
 This comparison varies both CSV parsing and the preceding random stream. A new bounded control restores the exact sequential pre-forest random state but replaces only `total_data` with base-R parsed inputs. Before fitting, it verifies exact equality with every saved isolated training/test fold. The original forest chunk and six-hour cap remain unchanged. This isolates parser effects against the completed sequential run; no negative-replication claim is assigned while the discrepancy remains unresolved.
+
+The parser control’s [setup receipt](results/notebook-rf-parser-control-launch-2026-10-17/restoration.json) confirms all five folds exactly match the isolated inputs and the sequential random state is restored. The only numerical input difference from the notebook parse is at most 1.3878e-17 over 755,000 cells. The fit remains running; source and preconditions are retained.
+
+The portable audit reproduces the published audit JSON and 25,000-row prediction CSV byte-for-byte:
+
+```sh
+Rscript replications/carrella_2021/audit_notebook_rf.R \
+  replications/carrella_2021/results/notebook-rf-completed-2026-10-17/rf.rds \
+  /path/to/sequential-lm-checkpoint.rds \
+  replications/carrella_2021/results/rf-5000-2026-10-15 \
+  /new/audit-output
+```
+
+The linear checkpoint is the preserved predecessor named and hashed in the continuation manifest. No estimator is refitted by this audit.
