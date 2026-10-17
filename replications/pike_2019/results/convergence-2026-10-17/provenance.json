@@ -1,0 +1,9 @@
+{
+  "script_sha256": {
+    "replications/pike_2019/analyze_convergence.py": "28182c937d6207632d717f535d20eb7597bf2c06d52fe3b8a0a5f438a8627f68",
+    "replications/pike_2019/plot_convergence.py": "64efb3d913bfabdc1aefec5983c80150998e9a493c97ad92ec326f7a32aeba1a"
+  },
+  "source": "Complete previously audited PhaseI300,PhaseII600,PhaseIII1200. CLI analyze_convergence.py PHASE1_RECON PHASE2_RECON PHASE3_RECON NEWOUT; plot_convergence.py ANALYSIS NEWOUT.",
+  "validation": "All8400run-window measurements independently verified max1.67e-16; R150intervals450scalars max1.46e-12. PNG inspected; PDF exported. Ruff passed.",
+  "interpretation": "Retrospective finite-window support for reported price-direction effects, not asymptotic convergence, historical trajectory identity, statistical equivalence or whole-paper completion."
+}

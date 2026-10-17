@@ -1,0 +1,9 @@
+{
+  "price_step_records": 300000,
+  "count_fields": 15,
+  "histogram_bins": 1500,
+  "window_measurements": 600,
+  "defined_window_measurements": 588,
+  "max_window_error": 1.1102230246251565e-16,
+  "scope": "Independent previously audited per-step CSVs reproduce all count fields, histogram bins and600 SD(log price) window records. No unit tests or new simulations."
+}

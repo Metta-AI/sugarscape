@@ -1,0 +1,114 @@
+{
+  "revision": "585e53398f4f58e89ec184c83bb20819f0e4c96a",
+  "cells": [
+    {
+      "notebook": "Data Analysis-Common Resource.ipynb",
+      "sha256": "42b9e4d03f91f02765ef3f6000483db3d299eedf46b8185583c57732c6f96a26",
+      "cell_index": 19,
+      "source": "net_mean, net_g_mean",
+      "cached_text_outputs": [
+        "(94.35, 92.83)"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Common Resource.ipynb",
+      "sha256": "42b9e4d03f91f02765ef3f6000483db3d299eedf46b8185583c57732c6f96a26",
+      "cell_index": 20,
+      "source": "\nt2,  p2 = stats.ttest_ind(net_multi_s,net_multi_s_g)\nnet_p = p2 * 2\nt3, p3 = stats.ttest_ind(net_multi_t, net_multi_t_g)\nalt_p = round(p3 *2, 8)\nprint (\"Net-Group t_test: \", net_p)\nprint (\"Net-Group time t_test: \",alt_p)\n",
+      "cached_text_outputs": [
+        "Net-Group t_test:  0.905484346068\nNet-Group time t_test:  0.11538153\n"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Common Resource.ipynb",
+      "sha256": "42b9e4d03f91f02765ef3f6000483db3d299eedf46b8185583c57732c6f96a26",
+      "cell_index": 22,
+      "source": "t, p = stats.ttest_ind(stan_multi_t,net_multi_t_g)\nbrute_t_p = (p * 2,10)\nt2,  p2 = stats.ttest_ind(stan_multi_t,net_multi_t)\nnet_t_p = (p2 * 2, 10)\nbrute_t_p, net_t_p",
+      "cached_text_outputs": [
+        "((2.4843908420241848e-56, 10), (6.0032961184504405e-66, 10))"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Groups-Policy.ipynb",
+      "sha256": "aeb94655914854410d2ea08c44d162da3d82dd54a3181c3ba07f2d1275b2510e",
+      "cell_index": 19,
+      "source": "\n\nt, p = stats.ttest_ind(stan_multi_s,brute_multi_s)\nbrute_p = p * 2\nt2,  p2 = stats.ttest_ind(stan_multi_s,net_multi_s)\nnet_p = p2 * 2\n#t3, p3 = stats.ttest_ind(net_multi_s[0:35], stan_multi_s[0:35])\n#alt_p = round(p3 *2, 8)\nprint (\"Net-Stan t_test: \", net_p)\nprint (\"Explixit_Stan t_test: \",brute_p)",
+      "cached_text_outputs": [
+        "Net-Stan t_test:  2.65406654569e-33\nExplixit_Stan t_test:  1.44650461266e-32\n"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Groups-Policy.ipynb",
+      "sha256": "aeb94655914854410d2ea08c44d162da3d82dd54a3181c3ba07f2d1275b2510e",
+      "cell_index": 21,
+      "source": "t, p = stats.ttest_ind(stan_multi_t,brute_multi_t)\nbrute_t_p = (p * 2,10)\nt2,  p2 = stats.ttest_ind(stan_multi_t,net_multi_t)\nnet_t_p = (p2 * 2, 10)\nbrute_t_p, net_t_p",
+      "cached_text_outputs": [
+        "((1.7208315936619708e-59, 10), (0.0136515206567376, 10))"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Groups.ipynb",
+      "sha256": "f26e29404dfd60e9c13122a95ab10749225eb0d8bdd475a61bb5d91b28ca0c6b",
+      "cell_index": 19,
+      "source": "\n\nt, p = stats.ttest_ind(stan_multi_s,brute_multi_s)\nbrute_p = p * 2\nt2,  p2 = stats.ttest_ind(stan_multi_s,net_multi_s)\nnet_p = p2 * 2\n#t3, p3 = stats.ttest_ind(net_multi_s[0:35], stan_multi_s[0:35])\n#alt_p = round(p3 *2, 8)\nprint (\"Net-Stan t_test: \", net_p)\nprint (\"Explixit_Stan t_test: \",brute_p)",
+      "cached_text_outputs": [
+        "Net-Stan t_test:  1.6079982167\nExplixit_Stan t_test:  0.62505566283\n"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Groups.ipynb",
+      "sha256": "f26e29404dfd60e9c13122a95ab10749225eb0d8bdd475a61bb5d91b28ca0c6b",
+      "cell_index": 21,
+      "source": "t, p = stats.ttest_ind(stan_multi_t,brute_multi_t)\nbrute_t_p = (p * 2,10)\nt2,  p2 = stats.ttest_ind(stan_multi_t,net_multi_t)\nnet_t_p = (p2 * 2, 10)\nbrute_t_p, net_t_p",
+      "cached_text_outputs": [
+        "((8.1772301222416819e-38, 10), (0.00025955266148038552, 10))"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Initial.ipynb",
+      "sha256": "4dff915e0804daf58da435db05ed8d8027423e024a737d13f9642b5fc5298e8f",
+      "cell_index": 19,
+      "source": "brute_mean, net_mean, stan_mean",
+      "cached_text_outputs": [
+        "(46.96, 46.68, 46.18)"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Initial.ipynb",
+      "sha256": "4dff915e0804daf58da435db05ed8d8027423e024a737d13f9642b5fc5298e8f",
+      "cell_index": 20,
+      "source": "\n\nt, p = stats.ttest_ind(stan_multi_s,brute_multi_s)\nbrute_p = p * 2\nt2,  p2 = stats.ttest_ind(stan_multi_s,net_multi_s)\nnet_p = p2 * 2\n#t3, p3 = stats.ttest_ind(net_multi_s[0:35], stan_multi_s[0:35])\n#alt_p = round(p3 *2, 8)\nprint (\"Net-Stan t_test: \", net_p)\nprint (\"Explixit_Stan t_test: \",brute_p)\nprint ()",
+      "cached_text_outputs": [
+        "Net-Stan t_test:  1.09391235424\nExplixit_Stan t_test:  0.674904844494\n\n"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Initial.ipynb",
+      "sha256": "4dff915e0804daf58da435db05ed8d8027423e024a737d13f9642b5fc5298e8f",
+      "cell_index": 22,
+      "source": "t, p = stats.ttest_ind(stan_multi_t,brute_multi_t)\nbrute_t_p = (p * 2,10)\nt2,  p2 = stats.ttest_ind(stan_multi_t,net_multi_t)\nnet_t_p = (p2 * 2, 10)\nbrute_t_p, net_t_p",
+      "cached_text_outputs": [
+        "((1.5656314141782622e-32, 10), (0.045396010085582181, 10))"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Policy.ipynb",
+      "sha256": "794b5d9231ac162ca54a708f11afe59b2e9c053f1a5a635549a4698c220e4d73",
+      "cell_index": 19,
+      "source": "\nt2,  p2 = stats.ttest_ind(brute_multi_s_5,net_multi_s_5)\nnet_p = p2 * 2\n#t3, p3 = stats.ttest_ind(net_multi_s[0:35], stan_multi_s[0:35])\n#alt_p = round(p3 *2, 8)\nprint (\"Net-Stan t_test: \", net_p)\n#print (\"Explixit_Stan t_test: \",brute_p)\n",
+      "cached_text_outputs": [
+        "Net-Stan t_test:  0.787566616992\n"
+      ]
+    },
+    {
+      "notebook": "Data Analysis-Policy.ipynb",
+      "sha256": "794b5d9231ac162ca54a708f11afe59b2e9c053f1a5a635549a4698c220e4d73",
+      "cell_index": 21,
+      "source": "t, p = stats.ttest_ind(stan_multi_t,brute_multi_t)\nbrute_t_p = (p * 2,10)\nt2,  p2 = stats.ttest_ind(stan_multi_t,net_multi_t)\nnet_t_p = (p2 * 2, 10)\nbrute_t_p, net_t_p",
+      "cached_text_outputs": [
+        "((3.1001834002255972e-54, 10), (4.1919918092019561e-07, 10))"
+      ]
+    }
+  ],
+  "limitation": "Cached original outputs, not regenerated results. Notebook doubles scipy.stats.ttest_ind two-sided p-values; report native and corrected values separately. Raw original arrays not present."
+}

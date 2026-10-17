@@ -1,0 +1,92 @@
+{
+  "mode": "prefix",
+  "structurally_audited_runs": 2,
+  "numerically_failed_runs": 2,
+  "ordinal_interval": [
+    0,
+    2
+  ],
+  "recorded_root": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-common-native-001",
+  "complete_new_seed_batch": false,
+  "full_grid_includes_two_separate_seed_zero_runs": true,
+  "health_records": 195894,
+  "price_step_records": 2000,
+  "runs": [
+    {
+      "variant": "common-one",
+      "numpy_seed": 1,
+      "final_individual_agents": 95,
+      "extinct": false,
+      "nonfinite_health_records": 74872,
+      "first_nonfinite_step": 92,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 316,
+      "undefined_dispersion_steps": 810,
+      "windows": {
+        "early": {
+          "trades": 6572,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.9564460308934888
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.6328648422310916
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-multi",
+      "numpy_seed": 1,
+      "final_individual_agents": 96,
+      "extinct": false,
+      "nonfinite_health_records": 76486,
+      "first_nonfinite_step": 86,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 221,
+      "undefined_dispersion_steps": 779,
+      "windows": {
+        "early": {
+          "trades": 6720,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.8358195790901025
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.703175225997294
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    }
+  ],
+  "manifest_sha256": "98dd84690d857a511a015c33bfcc59701e0b4b8d8fe5c4dcd6d1ab8a53003ea1",
+  "ledger_sha256": "ef80899b6b92160247c74144714c1225c065587d7dcc3b835d716dee33cefbe4",
+  "analyzer_sha256": "5adf70d94581852a10da20655c14d4a968216ebd0edec13a49fe7235c5e1b35d",
+  "scope": "Structural source/file/identity audit plus explicit numerical-failure diagnosis. Infinite holdings are retained and counted as failures, not converted into passing economic results. Price/dispersion remain undefined where mathematically undefined. The complete new-seed batch still requires two separately audited seed-zero runs. No paper verdict."
+}

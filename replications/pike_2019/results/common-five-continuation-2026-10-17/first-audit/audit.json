@@ -1,0 +1,58 @@
+{
+  "mode": "prefix",
+  "threshold": 5,
+  "required_runs": 200,
+  "structurally_audited_runs": 1,
+  "numerically_failed_runs": 1,
+  "ordinal_interval": [
+    119,
+    120
+  ],
+  "recorded_root": "/root/sugarscape/pike-common-five-continuation-001/first-002",
+  "complete_new_seed_batch": false,
+  "full_grid_includes_two_separate_seed_zero_runs": false,
+  "health_records": 194073,
+  "price_step_records": 1000,
+  "runs": [
+    {
+      "variant": "common-multi",
+      "numpy_seed": 59,
+      "final_individual_agents": 194,
+      "extinct": false,
+      "nonfinite_health_records": 148916,
+      "first_nonfinite_step": 92,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 413,
+      "undefined_dispersion_steps": 587,
+      "windows": {
+        "early": {
+          "trades": 37799,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 1.1299334115449988
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.5980401982631769
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    }
+  ],
+  "manifest_sha256": "d13db3b6285033404d36211981907c09f40a702dd4d5dbbabe947b34720b23ba",
+  "ledger_sha256": "683e4907f31b527c7588f07efec6f44e073e4fffb4e682dfad0d0e184e706972",
+  "analyzer_sha256": "ebe2ccce6c936ea0d91f27c1a8f83832dcbed690812c72296d5c6c95a4c6f674",
+  "scope": "Structural source/file/identity audit plus explicit numerical-failure diagnosis. Infinite holdings are retained and counted as failures, not converted into passing economic results. Price/dispersion remain undefined where mathematically undefined. Threshold ten additionally requires two separately audited seed-zero runs. No paper verdict."
+}

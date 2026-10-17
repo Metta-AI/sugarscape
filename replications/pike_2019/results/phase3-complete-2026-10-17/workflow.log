@@ -1,0 +1,9 @@
+exporting relh-sugarscape-sizing-20261016-v1:/root/sugarscape/pike-phase3-final-delta-001.json…
+error: over the artifact export rate (30/hour); wait and retry, or export a directory in one call instead of file-by-file; an operator can raise artifact_exports_per_hour
+  (request-id req_14d296e0cf524e8699a420ca3ed62d5d - quote it when reporting a problem)
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-phase3-complete-001/finish.py", line 20, in <module>
+    subprocess.run(["autor","cp",node+":/root/sugarscape/"+remote,str(root/local)],check=True,timeout=300)
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['autor', 'cp', 'relh-sugarscape-sizing-20261016-v1:/root/sugarscape/pike-phase3-final-delta-001.json', '/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-phase3-complete-001/export.json']' returned non-zero exit status 1.

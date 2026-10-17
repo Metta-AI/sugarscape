@@ -1,0 +1,13 @@
+{
+  "native": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-highest-network-001/configured/run",
+  "observed": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-highest-network-trace-002/configured/run",
+  "byte_identical_outputs": {
+    "population.csv": "cf798f04df7095804aec99ea705dfb74b2da8503ee6a726159ea037d71900338",
+    "prices.json": "c946e69fe5f38e40c27cfce2d7f55f836598e7fce8641434ec65f1c700dcdd93"
+  },
+  "observations": 1000,
+  "validated_health_rows": 44742,
+  "final_individual_agents": 31,
+  "final_native_reporter": 2502,
+  "scope": "Whole-model observer parity, surviving identities, monotonic individual population and native health-record reconciliation. Native reporter may count groups; no paper replication verdict."
+}

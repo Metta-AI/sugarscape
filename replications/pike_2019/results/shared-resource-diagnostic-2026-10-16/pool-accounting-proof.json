@@ -1,0 +1,27 @@
+{
+  "verified_calls": 150,
+  "verified_commodity_sums": 300,
+  "step": 6,
+  "group": "trades_10_0",
+  "unchanged_members": [
+    100,
+    108
+  ],
+  "initial_pool": {
+    "1.0": 59.16016770293944,
+    "2.0": 57.831228896988954
+  },
+  "pool_after_first_agent_acts": {
+    "1.0": 62.16016770293944,
+    "2.0": 52.24344287965714
+  },
+  "unchanged_holdings_counted_again": {
+    "1.0": 13.124661646478195,
+    "2.0": 37.2424590428063
+  },
+  "next_calculated_pool": {
+    "1.0": 75.28482934941763,
+    "2.0": 89.48590192246344
+  },
+  "interpretation": "Both initial holdings enter the first pool. After one member acts, its holdings contain the current pool, while the other retains its original contribution. The next native calculation adds that original contribution to the current pool again. Distinct dictionaries therefore double-count resources without object aliasing. Full native outputs remain byte-identical and numerically invalid."
+}

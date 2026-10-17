@@ -1,0 +1,140 @@
+{
+  "files": [
+    {
+      "phase": 1,
+      "file": "network-64/health.csv",
+      "local_sha256": "945e205842d2aefc9e9d703675f9a4e25349ab12f46a251244b79e321ba19db0",
+      "cloud_sha256": "691d31cd6798adb6ad6337673a79a71892882c8670c0a56c9e9813333de16a7d",
+      "equal_leaves": 222569,
+      "different_numeric_leaves": 16275,
+      "max_absolute_difference": 5.684341886080802e-14
+    },
+    {
+      "phase": 1,
+      "file": "network-64/population.csv",
+      "local_sha256": "6622e88ee4063c522ba8429ce468fb5bad8845bdf08de9c3739d155e0afa3850",
+      "cloud_sha256": "6622e88ee4063c522ba8429ce468fb5bad8845bdf08de9c3739d155e0afa3850",
+      "equal_leaves": 1001,
+      "different_numeric_leaves": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "phase": 1,
+      "file": "network-64/prices.json",
+      "local_sha256": "aa9942913ebda267063167f7bc334cfcb5b99f70963dcbe70c35da161828da1d",
+      "cloud_sha256": "a3360970cf989e86ce90aa41a7a13a81326a1526a35167a9a5dacb5c8dfeb660",
+      "equal_leaves": 1495,
+      "different_numeric_leaves": 1090,
+      "max_absolute_difference": 1.4432899320127035e-15
+    },
+    {
+      "phase": 1,
+      "file": "network-64/initial-agents.json",
+      "local_sha256": "3c963c5e16b099c80f8dce8f5df6cad9640e0f413eeb514b4db585671fd43a9e",
+      "cloud_sha256": "3c963c5e16b099c80f8dce8f5df6cad9640e0f413eeb514b4db585671fd43a9e",
+      "equal_leaves": 1400,
+      "different_numeric_leaves": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "phase": 1,
+      "file": "network-64/observations.json",
+      "local_sha256": "c297a2f7a9a1028a2f670da0a8f9f61d66150a28531ebb01c1da245398512222",
+      "cloud_sha256": "c297a2f7a9a1028a2f670da0a8f9f61d66150a28531ebb01c1da245398512222",
+      "equal_leaves": 62710,
+      "different_numeric_leaves": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "phase": 2,
+      "file": "network-1-10/run/health.csv",
+      "local_sha256": "e14f3ad2eae2f8831ae30afcf8ca174c2217dd2e5e4f4fd9638343dc0430c847",
+      "cloud_sha256": "08134bcf691f22700a04d1dd7f4b3e163c1b83459e38ac6de11a9c2562dd3db6",
+      "equal_leaves": 255261,
+      "different_numeric_leaves": 11131,
+      "max_absolute_difference": 1.1368683772161603e-13
+    },
+    {
+      "phase": 2,
+      "file": "network-1-10/run/population.csv",
+      "local_sha256": "0546daa630af14fd62db3c2373279cdc30b2dfbaf2f139f4c58312ee259488cf",
+      "cloud_sha256": "0546daa630af14fd62db3c2373279cdc30b2dfbaf2f139f4c58312ee259488cf",
+      "equal_leaves": 1001,
+      "different_numeric_leaves": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "phase": 2,
+      "file": "network-1-10/run/prices.json",
+      "local_sha256": "beb0bb2148d09f7e59e4eefb092313c1576bfd21a4000ee66e90d537eff105a4",
+      "cloud_sha256": "e2f9564f885bb6d8dfc0fc4a2dec8980d53bb2b3d2cb816227aba779258dd122",
+      "equal_leaves": 2276,
+      "different_numeric_leaves": 1403,
+      "max_absolute_difference": 1.1102230246251565e-15
+    },
+    {
+      "phase": 2,
+      "file": "network-1-10/run/initial-agents.json",
+      "local_sha256": "23c5ec5e4a2cbd8319da5dd7662cc21e26d1b06654a8fb21f93b849313be350c",
+      "cloud_sha256": "23c5ec5e4a2cbd8319da5dd7662cc21e26d1b06654a8fb21f93b849313be350c",
+      "equal_leaves": 1400,
+      "different_numeric_leaves": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "phase": 2,
+      "file": "network-1-10/run/observations.json",
+      "local_sha256": "5ea8ea2268207018df42091508ed60b168d6adf6c06e684cbd8e8235526efd16",
+      "cloud_sha256": "5ea8ea2268207018df42091508ed60b168d6adf6c06e684cbd8e8235526efd16",
+      "equal_leaves": 71597,
+      "different_numeric_leaves": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "phase": 3,
+      "file": "explicit-5-2-corrected-highest/configured/run/health.csv",
+      "local_sha256": "eed7976beac0888929d24d10d91fa8cf1021d9604e46fe34941396a0108776c0",
+      "cloud_sha256": "145713a9f941040be0f8fad1a83f0848036c34011dab6357404ee4841c4c083a",
+      "equal_leaves": 115253,
+      "different_numeric_leaves": 43031,
+      "max_absolute_difference": 9.947598300641403e-13
+    },
+    {
+      "phase": 3,
+      "file": "explicit-5-2-corrected-highest/configured/run/population.csv",
+      "local_sha256": "1a07dd3e29d8ed2673f53a2039b0ec97b4346cc8c55ac9a23b31d1e83292030d",
+      "cloud_sha256": "1a07dd3e29d8ed2673f53a2039b0ec97b4346cc8c55ac9a23b31d1e83292030d",
+      "equal_leaves": 1001,
+      "different_numeric_leaves": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "phase": 3,
+      "file": "explicit-5-2-corrected-highest/configured/run/prices.json",
+      "local_sha256": "776215b1bb94bdc7cbe4e8f39ab86795d3c788bd99e1d1643964677372b102ea",
+      "cloud_sha256": "a83b3bfc2e53f8ac08ca3017583d8517468ea5ec989b6f803b336edf117d2262",
+      "equal_leaves": 2432,
+      "different_numeric_leaves": 5525,
+      "max_absolute_difference": 8.526512829121202e-14
+    },
+    {
+      "phase": 3,
+      "file": "explicit-5-2-corrected-highest/configured/run/initial-agents.json",
+      "local_sha256": "d21a3c9cd8978e19a0f19e9a3690daa68c73f4148525a37b3113506ac81a5464",
+      "cloud_sha256": "d21a3c9cd8978e19a0f19e9a3690daa68c73f4148525a37b3113506ac81a5464",
+      "equal_leaves": 1400,
+      "different_numeric_leaves": 0,
+      "max_absolute_difference": 0
+    },
+    {
+      "phase": 3,
+      "file": "explicit-5-2-corrected-highest/configured/run/observations.json",
+      "local_sha256": "05e159839c0471e9fc56af1d79cbcf2c17c661d478da1e2137dbc914a8609761",
+      "cloud_sha256": "05e159839c0471e9fc56af1d79cbcf2c17c661d478da1e2137dbc914a8609761",
+      "equal_leaves": 44570,
+      "different_numeric_leaves": 0,
+      "max_absolute_difference": 0
+    }
+  ],
+  "scope": "Three duplicate conditions, no added coverage. Numeric differences reported without assuming tolerance."
+}

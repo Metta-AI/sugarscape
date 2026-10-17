@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/root/sugarscape/pike-common-cloud-final-export.py", line 27, in <module>
+    digest=hashlib.file_digest(stream,'sha256').hexdigest()
+AttributeError: module 'hashlib' has no attribute 'file_digest'

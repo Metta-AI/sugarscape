@@ -1,0 +1,78 @@
+{
+  "one": {
+    "before": {
+      "variant": "common-one",
+      "seed": 0,
+      "completed_steps": 1000,
+      "final_population": 43,
+      "max_accounting_error": 1.8189894035458565e-12,
+      "health_records": 53823,
+      "negative_health_records": 83,
+      "transactions": 14353,
+      "sha256": {
+        "manifest.json": "f1f485a37dff8c2d6dc9c88c7084684c63310807183bd219a8b32b164c3c8961",
+        "complete.json": "829602d9fc514894376e36f9fa039f58c6c02ddc90f7a137361ab5c86532cfb3",
+        "accounting.csv": "4ce79afb86c6ed3f8da14f827225427761aa1412533fe91e0325dc3509eaef0d",
+        "health.csv": "9b50bca4b0bf69e2ea7855ac39dfc5948f2c8985ecd56b013392ddbdfedf0eba",
+        "prices.json": "946951c65525cc10852599b8b686db1b6e23cc329c6ea8653ac633157d87db87"
+      },
+      "scope": "Measurement audit only; negative holdings and death accounting require model interpretation. No paper verdict."
+    },
+    "after": {
+      "variant": "common-one",
+      "seed": 0,
+      "completed_steps": 1000,
+      "final_population": 45,
+      "max_accounting_error": 3.637978807091713e-12,
+      "health_records": 50866,
+      "negative_health_records": 9,
+      "transactions": 14792,
+      "sha256": {
+        "manifest.json": "8647c0bc3c836c3c0128f6e46d3f8ea6788ac493e70d4ed181d84c910a551947",
+        "complete.json": "f0daaafbe3b10a26590cae522a26198a96a52727bd70fa663c94c8b63e0b9d79",
+        "accounting.csv": "6940967317e7764e33b60f22fb4c5ec3aac5573bcd2d57de70e9c16745b4a9e8",
+        "health.csv": "035c91b04289b6788a62b6780018dcfa1c82962f68cbdb31f5885c563ddd8af6",
+        "prices.json": "14bf641030637350c231065a96005a9a1d3e312371ff384f9af1bb14b162b8ec"
+      },
+      "scope": "Measurement audit only; negative holdings and death accounting require model interpretation. No paper verdict."
+    }
+  },
+  "multi": {
+    "before": {
+      "variant": "common-multi",
+      "seed": 0,
+      "completed_steps": 1000,
+      "final_population": 37,
+      "max_accounting_error": 1.8189894035458565e-12,
+      "health_records": 45212,
+      "negative_health_records": 3146,
+      "transactions": 3337,
+      "sha256": {
+        "manifest.json": "1e8e1c9b2470528418bda978c158a858920beacd0121989c19d58cb9451d463f",
+        "complete.json": "6749cafb83ec85ba9894778f818c2bd1c68a00929cb686a8856ae0f484431a56",
+        "accounting.csv": "6fbd5b27e1c3a5638a795edf2cfaf2fb821305acfbcbe2723ae313daa0a81f26",
+        "health.csv": "20c74150eca254a67d679872689bb0a7851b51a8a52758cf71b89365a507fc55",
+        "prices.json": "f6d8288fe8a43a217385534a71e8c2cba89562139440b97aca19b9d74527d886"
+      },
+      "scope": "Measurement audit only; negative holdings and death accounting require model interpretation. No paper verdict."
+    },
+    "after": {
+      "variant": "common-multi",
+      "seed": 0,
+      "completed_steps": 1000,
+      "final_population": 46,
+      "max_accounting_error": 3.637978807091713e-12,
+      "health_records": 53560,
+      "negative_health_records": 20,
+      "transactions": 7011,
+      "sha256": {
+        "manifest.json": "1e8e1c9b2470528418bda978c158a858920beacd0121989c19d58cb9451d463f",
+        "complete.json": "306ffda50fee62e6145d013958535ca202507f92a830daba2e6707c0067303db",
+        "accounting.csv": "44a8643a848df570bace9562908e8845045c7700787c2afc8afc68678866a64b",
+        "health.csv": "79dee29530794528c9fd1ae4a3ea49334d8c95bd173568fe00d9719090bc80ff",
+        "prices.json": "bf3980913f081ca0f9010ca82e8a1fdcac89958b0ad2277ea76438a1ed361672"
+      },
+      "scope": "Measurement audit only; negative holdings and death accounting require model interpretation. No paper verdict."
+    }
+  }
+}

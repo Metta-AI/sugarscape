@@ -1,0 +1,9 @@
+{
+  "local_steps": 50,
+  "local_calls": 11135,
+  "local_observations_and_prices_exact_uninstrumented": true,
+  "cloud_replayed_calls_before_input_mismatch": 6574,
+  "cloud_failure_step": 13,
+  "cloud_exit_code": 1,
+  "scope": "Causal diagnostic: substituting local geometric-mean outputs with exact input checks did not maintain local trajectory. At least another numerical path differs. No substituted run is native replication coverage."
+}
