@@ -1158,3 +1158,50 @@ These are static control-flow findings, not observed terminal results. The uncha
 native suite remains running for confirmation. Resource failures and nontermination
 remain possible. The separately audited simulation ensembles retain their own
 statistical results; neither framework status completes this replication study.
+
+## Complete inheritance and mating cohort
+
+[The complete audit](results/demographics-ensembles-2026-10-17/summary.json) validates all
+100 paired seeds, combining retained controls and inheritance runs with the disjoint
+72-run native continuation. The continuation exited zero. Its 199,160,888-byte archive
+was downloaded from task storage and SHA-256 verified; the raw evidence remains retained.
+
+The audit verifies 11,094,091 snapshot-agent observations, all original source and observer
+pins, exact paired initialization, and inheritance as the sole dynamics difference.
+Both ranked and pairwise formulas agree on every measured Gini. No metric is undefined.
+
+| At step 1,000 | Without inheritance, mean [95% interval] | With inheritance, mean [95% interval] | Paired change [95% interval] |
+| --- | --- | --- | --- |
+| Population | 276.90 [270.94, 282.86] | 1,032.50 [1,025.28, 1,039.72] | +755.60 [746.99, 764.21] |
+| Sugar-wealth Gini | 0.21808 [0.21633, 0.21984] | 0.35789 [0.35578, 0.36000] | +0.13980 [0.13698, 0.14263] |
+
+Diagnostic late-window Gini means are 0.21745 and 0.35587. The full trajectories show
+the initial rise, decline, and recovery described in appendix A.6. The inheritance
+comparison reproduces the direction and approximate population pattern in A.7.
+The appendix's approximate Gini points 0.21 and 0.35 lie below our endpoint intervals;
+we do not treat those approximate numbers as equivalence bounds or exact matches.
+The book's 0.7 value is the appendix's explicitly unsuccessful replication target,
+so remaining below it is consistent with this paper's reported result.
+
+![Complete original-source inheritance cohort](results/demographics-ensembles-2026-10-17/demographics.png)
+
+R's `stats::t.test` independently reconstructs all 12 mean/interval triplets from
+100 run-level observations each. Its maximum absolute difference from SciPy is
+3.38e-10, below the declared numerical comparison tolerance of 1e-9.
+That numerical tolerance checks implementations of the interval calculation; it is
+not a scientific equivalence threshold. Population bands show run percentiles,
+not uncertainty intervals.
+
+Reproduce the figure and independent interval check after decompressing the full audit:
+
+```sh
+python replications/thaler_properties_2019/plot_demographics.py complete-paired-audit.json NEW_FIGURE_DIRECTORY
+Rscript replications/thaler_properties_2019/verify_demographics.R paired-metrics.csv NEW_R_INTERVALS.csv
+```
+
+The raw continuation is `demographics-native-001/complete-evidence.tar.gz` in the task
+evidence bucket `relh-sugarscape-evidence-20261017`; its hash is
+`d52917f13d851114ac1536addcb33c73f89391cbbecaeb155d6140ac8baf78bc`.
+Retained control and interrupted-run paths, all ledger hashes, protocols, and the exact
+full-audit command are included in the evidence directory. This cohort completes
+these quantitative comparisons, not the original model suite or the whole paper.
