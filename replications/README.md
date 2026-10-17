@@ -58,7 +58,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | flentge-2001 | Flentge, Polani, Uthmann, [Modelling the Emergence of Possession Norms using Memes](https://www.jasss.org/4/4/3.html) (2001) | Possession norms, aggression, and population outcomes | [source audit](source-audits/flentge-2001.json): 161-page thesis and experiment appendix recovered; source ZIP, executable, landscape and seeds unresolved; no runs |
 | pan-2011 | Pan, [Rebellion on Sugarscape: Case Studies for Greed and Grievance Theory of Civil Conflicts using Agent-Based Models](https://arxiv.org/abs/1908.06883) (2011 proceedings; 2019 arXiv upload) | Published policy case studies and rebellion outcomes | [source audit](source-audits/pan-2011.json): twelve scenario targets and explicit rules extracted; hardship mapping, scheduling, map, and original implementation unresolved |
 | thaler-2019 | Thaler and Siebers, [A tale of lock-free agents](https://doi.org/10.1186/s40294-019-0067-9) (2019) | Sugarscape population dynamics, timing, scaling and retry ratios; Figures 5–7 and Tables 6–9 | Original code recovered; 53 archived regression estimates and 51 printed timing cells independently reconstructed; Figure 5b reproduced across 50 frozen targets; Figure 5a provenance unresolved; fresh 45-condition timing ensemble queued; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16) |
-| thaler-properties-2019 | Thaler and Siebers, [Show me your properties: the potential of property-based testing in agent-based simulation](https://www.researchgate.net/publication/333198243_SHOW_ME_YOUR_PROPERTIES_THE_POTENTIAL_OF_PROPERTY-BASED_TESTING_IN_AGENT-BASED_SIMULATION) (2019) | Sugarscape property demonstrations and full validation appendix | Historical 60-file source unchanged; 35 original tests passed; 100-run wealth and carrying ensembles audited across 13,550,893 agent records; trading active; observer and source discrepancies documented; full verdict pending; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/17) |
+| thaler-properties-2019 | Thaler and Siebers, [Show me your properties: the potential of property-based testing in agent-based simulation](https://www.researchgate.net/publication/333198243_SHOW_ME_YOUR_PROPERTIES_THE_POTENTIAL_OF_PROPERTY-BASED_TESTING_IN_AGENT-BASED_SIMULATION) (2019) | Sugarscape property demonstrations and full validation appendix | Historical 60-file source unchanged; 35 original tests passed; three100-run historical ensembles audited across19,634,480 agent records; undefined trading statistics and source corrections investigated; full verdict pending; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/17) |
 
 Dogan (2026), [Policy Robustness Under Accelerating Automation](https://github.com/dgnerg867-ux/sugarscape), is an additional unpublished working-paper study.
 Completed mixed replication in [PR 11](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/11): all 700 original primary runs and 205 bundled canonical runs complete.
@@ -80,7 +80,7 @@ Its exact configuration overlap offers future run reuse only after checking sour
 Its corrective experiments preserve original failures and remain separate from historical replication claims.
 Carrella's independent implementation passes deterministic native comparisons; its full stochastic and estimator validation remain unfinished.
 Stevenson's boundary and discrete-curve diagnostics narrow discrepancies without resolving historical semantics.
-Blueprints has 922 audited homogeneous runs, 662 deposited runtime runs, and six supplementary controls; endpoint reuse does not add independent seeds.
+Blueprints has 922 audited homogeneous runs, 684 deposited runtime runs, and six supplementary controls; endpoint reuse does not add independent seeds.
 Its complete 500-seed raw ensemble reproduces the printed 348/5/147 counts using the author’s plotting rule; one equality case differs from the paper’s prose boundary.
 Carrella has 4,381 audited independent inputs; the remaining 619-input export is pending.
 Pike’s full 1,200-run movement grid includes released and corrected selectors, with separate analyses.
@@ -88,9 +88,9 @@ Its 200 threshold-ten common-resource runs all contain nonfinite health; executi
 Thaler's two full population exports agree byte-for-byte; all 50 Figure 5b targets pass the frozen two-agent tolerance.
 Its Figure 5a screenshot does not match the sequential replay; unspecified screenshot provenance prevents a negative verdict.
 A dedicated eight-core node has the 45-condition timing command registered, with a twelve-hour limit; no fresh performance result is claimed.
-The properties study completed 100-run wealth and carrying ensembles, with unresolved target differences.
+The properties study completed all three100-run historical ensembles across19,634,480 agent records, with unresolved targets and six undefined trading statistics.
 Its observer matches 199,604 original agent records and 21,702 trades; spatial diagnosis preserves our corrected grid assumption and source indexing/observation issues.
-A bounded, single-seed sensitivity experiment separates indexing and observable-state changes; it does not add completed-study credit.
+Nine full paired trajectories isolate indexing and observation changes; corrected100-seed ensembles and additional appendix observers are running. None adds completed-study credit.
 
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.
