@@ -486,7 +486,7 @@ Normalized deaths and wealth divide ensemble means; they do not average per-seed
 At timestep 5,000, mean population is 242.964, mean time to live is 4.87384, total wealth is 35,906.5932,
 and wealth per population is 147.785652. These describe the complete raw ensemble, not the other models.
 [The six-panel figure](results/raw-timeseries-2026-10-17/timeseries.pdf) retains this limited scope.
-Paper curve agreement and cross-model comparisons remain unvalidated until their full ensembles and figure extraction are available.
+The raw curves are compared with the paper below. Other models’ curves and cross-model comparisons remain unvalidated until their full ensembles are available.
 
 ```sh
 python replications/blueprints_2024/audit_timeseries.py /path/to/coverage.json /path/to/v2024.1 rawSugarscape /new/timeseries
@@ -496,3 +496,29 @@ python replications/blueprints_2024/plot_timeseries.py /new/timeseries
 The first command requires a complete audited 500-seed interval, its referenced raw evidence, NumPy and the pinned author checkout.
 It stages lossless inputs for the original parser, retaining them outside Git, with a 4 GiB free-space guard.
 The plot command requires Matplotlib. Full parser logs, input hashes, numerical series and plots are retained.
+
+## Raw curves compared with published vector figures
+
+[The vector audit](results/raw-figures-2026-10-17) extracts the black Raw Sugarscape paths from PDF pages 13–14.
+Axes, legends and panel bounds were visually checked. Integer timesteps are recovered from the horizontal coordinates.
+The comparison tolerance is 0.005 PDF points, fixed before the initial comparison and retained for the diagnostic below.
+Figures 4, 5, 7, 8 and 9 match all 24,370 extracted vertices; maximum ordinate error is 0.004318 PDF points.
+This covers population, time to live, age at death, total wealth and wealth per population for the complete raw ensemble.
+
+Figure 6 exposes a measurement-definition difference. The released plotter uses only starvation and combat deaths.
+That definition fails at 4,936 of 4,996 vertices, with maximum ordinate error 45.6583 PDF points.
+Adding the already-recorded disease and aging deaths reproduces all 4,996 vertices within the unchanged tolerance;
+maximum error is 0.003699 PDF points. No simulation inputs, trajectories or models were changed.
+At timestep 5,000, the rates are 0.00124298 for starvation plus combat and 0.01555786 for all four causes.
+Aging contributes 3.478 deaths per seed, explaining the gap from the original plotter's 0.302 starvation deaths.
+The broader death definition was investigated after observing the mismatch; it is reported as a diagnostic, not a preregistered confirmatory result.
+Both the failing comparison and the matching diagnostic are preserved.
+
+```sh
+python replications/blueprints_2024/audit_raw_figures.py /path/to/paper.pdf /path/to/raw-timeseries /new/figure-audit
+```
+
+Requires PyMuPDF 1.26.5 and NumPy 1.26.4. The command checks the paper and audited input hashes,
+then reconstructs the additional death counts from all 500 retained trajectories.
+Compressed CSVs retain every extracted coordinate, reproduced value and initial residual.
+Only the raw homogeneous model is covered; this does not complete the paper.
