@@ -761,6 +761,43 @@ the observed node rate implies at most $0.576 for that hour, excluding final idl
 Each interval receives a native structural audit before export. Launching these runs
 does not establish their completion or validate their economic trajectories.
 
+## Complete threshold-five versus threshold-ten comparison
+
+[The full comparison](results/common-threshold-complete-2026-10-17/comparison.json)
+covers 100 seeds for each variant at each threshold: 400 conditions total.
+The 80-condition continuation completed in its one-hour bound; its 135 MB archive
+was exported, downloaded, and hash-verified. The analyzer checks gap-free, disjoint
+coverage and all retained threshold-five file hashes before pairing seed/variant keys.
+
+| Variant | Survivors, threshold 5 | Survivors, threshold 10 | Paired difference, 95% interval |
+| --- | ---: | ---: | ---: |
+| One level | 189.11 | 95.18 | 93.93 [91.216367, 96.643633] |
+| Multiple levels | 189.32 | 95.27 | 94.05 [91.229140, 96.870860] |
+
+Intervals use seeds as units and are pointwise, not simultaneous. Independent R
+paired tests reproduce the displayed six-decimal bounds. Their unrounded bounds
+differ by at most 1.106e-10, traced to the Student-t quantile implementations;
+the initial 1e-10 numerical guard and its failure remain recorded.
+
+The notebook's histogram construction pools defined per-step sample deviations of
+log prices into 500 bins. Threshold five has 59,235/62,805 defined steps for
+one/multiple levels, versus 28,007/27,362 at threshold ten. Undefined steps remain
+undefined. Separate-range and common-edge counts are both retained.
+
+![Complete common-resource threshold histograms](results/common-threshold-complete-2026-10-17/histograms.png)
+
+All 400 conditions contain nonfinite holdings. These survivor and histogram results
+describe the released implementation; they do not establish valid economic behavior.
+The paper's approximately 400-higher central peak lacks an exact bin definition;
+our maximum-bin counts are not substituted for that target. No shape-equivalence
+or whole-paper verdict follows from this comparison.
+
+Run `compare_common_thresholds.py TEN_RECONCILIATION OUTPUT --five RUN AUDIT ...`
+with the recovered prefix, first continuation, and eight remaining intervals.
+`plot_common_thresholds.py COMPARISON_JSON OUTPUT_PNG` regenerates the figure.
+Raw archive locations, hashes, native terminal receipt, segment audits, and the
+original failed row-order check are retained with the result.
+
 ## Complete threshold-ten common-resource grid
 
 [Full reconciliation](results/common-ten-complete-2026-10-17/reconciliation.json) combines the 198 new cloud runs with the two separately audited cloud seed-zero runs exactly once.

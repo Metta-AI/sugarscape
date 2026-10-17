@@ -1,0 +1,382 @@
+{
+  "mode": "prefix",
+  "threshold": 5,
+  "required_runs": 200,
+  "structurally_audited_runs": 10,
+  "numerically_failed_runs": 10,
+  "ordinal_interval": [
+    140,
+    150
+  ],
+  "recorded_root": "/root/sugarscape/pike-common-five-continuation-001/rows-140-150",
+  "complete_new_seed_batch": false,
+  "full_grid_includes_two_separate_seed_zero_runs": false,
+  "health_records": 1893552,
+  "price_step_records": 10000,
+  "runs": [
+    {
+      "variant": "common-one",
+      "numpy_seed": 70,
+      "final_individual_agents": 192,
+      "extinct": false,
+      "nonfinite_health_records": 141571,
+      "first_nonfinite_step": 103,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 775,
+      "undefined_dispersion_steps": 226,
+      "windows": {
+        "early": {
+          "trades": 39161,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.9677054536201257
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.6146544771796386
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-multi",
+      "numpy_seed": 70,
+      "final_individual_agents": 194,
+      "extinct": false,
+      "nonfinite_health_records": 139303,
+      "first_nonfinite_step": 113,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 775,
+      "undefined_dispersion_steps": 225,
+      "windows": {
+        "early": {
+          "trades": 42793,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.929326890849876
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.5923890744734511
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-one",
+      "numpy_seed": 71,
+      "final_individual_agents": 178,
+      "extinct": false,
+      "nonfinite_health_records": 135291,
+      "first_nonfinite_step": 87,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 775,
+      "undefined_dispersion_steps": 225,
+      "windows": {
+        "early": {
+          "trades": 32293,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 1.0859252209009471
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.6613080441407146
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-multi",
+      "numpy_seed": 71,
+      "final_individual_agents": 177,
+      "extinct": false,
+      "nonfinite_health_records": 134308,
+      "first_nonfinite_step": 86,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 778,
+      "undefined_dispersion_steps": 223,
+      "windows": {
+        "early": {
+          "trades": 26976,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.9282085076063286
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.69684840043621
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-one",
+      "numpy_seed": 72,
+      "final_individual_agents": 193,
+      "extinct": false,
+      "nonfinite_health_records": 147016,
+      "first_nonfinite_step": 65,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 773,
+      "undefined_dispersion_steps": 584,
+      "windows": {
+        "early": {
+          "trades": 33861,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 1.1143558640579179
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.6522031325307307
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-multi",
+      "numpy_seed": 72,
+      "final_individual_agents": 188,
+      "extinct": false,
+      "nonfinite_health_records": 144496,
+      "first_nonfinite_step": 64,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 775,
+      "undefined_dispersion_steps": 225,
+      "windows": {
+        "early": {
+          "trades": 31252,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 1.0641208243412132
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.6516748304797301
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-one",
+      "numpy_seed": 73,
+      "final_individual_agents": 194,
+      "extinct": false,
+      "nonfinite_health_records": 147857,
+      "first_nonfinite_step": 67,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 772,
+      "undefined_dispersion_steps": 228,
+      "windows": {
+        "early": {
+          "trades": 34937,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 1.1991209428333511
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.6895894017870016
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-multi",
+      "numpy_seed": 73,
+      "final_individual_agents": 195,
+      "extinct": false,
+      "nonfinite_health_records": 149734,
+      "first_nonfinite_step": 86,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 778,
+      "undefined_dispersion_steps": 587,
+      "windows": {
+        "early": {
+          "trades": 43307,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 1.1907723534390886
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.7075717848421225
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-one",
+      "numpy_seed": 74,
+      "final_individual_agents": 188,
+      "extinct": false,
+      "nonfinite_health_records": 149648,
+      "first_nonfinite_step": 69,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 774,
+      "undefined_dispersion_steps": 226,
+      "windows": {
+        "early": {
+          "trades": 34648,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.8099249284418797
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.6855933652294027
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    },
+    {
+      "variant": "common-multi",
+      "numpy_seed": 74,
+      "final_individual_agents": 193,
+      "extinct": false,
+      "nonfinite_health_records": 154152,
+      "first_nonfinite_step": 68,
+      "negative_health_records": 0,
+      "numeric_validation": "failed",
+      "price_steps": 775,
+      "undefined_dispersion_steps": 225,
+      "windows": {
+        "early": {
+          "trades": 28387,
+          "geometric_mean_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.8441213781951314
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 100,
+            "mean_over_defined_steps": 0.675183023853696
+          }
+        },
+        "late": {
+          "trades": 0,
+          "geometric_mean_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 0,
+            "mean_over_defined_steps": null
+          }
+        }
+      }
+    }
+  ],
+  "manifest_sha256": "8652e8d484c0f8c4889e0a4831eac13aae4d1db2c43738c6b05c28af1b8d6adc",
+  "ledger_sha256": "7d274044fb24d6e7eaa38499965f0e884ff3a6db059eb432530b0b1f8874ce50",
+  "analyzer_sha256": "ebe2ccce6c936ea0d91f27c1a8f83832dcbed690812c72296d5c6c95a4c6f674",
+  "scope": "Structural source/file/identity audit plus explicit numerical-failure diagnosis. Infinite holdings are retained and counted as failures, not converted into passing economic results. Price/dispersion remain undefined where mathematically undefined. Threshold ten additionally requires two separately audited seed-zero runs. No paper verdict."
+}
