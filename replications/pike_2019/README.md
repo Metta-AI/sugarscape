@@ -408,3 +408,19 @@ An independent R calculation checks 27 survivor statistics and interval endpoint
 The earlier 241-condition checkpoint is rejected before output creation.
 Validation scripts, survivor rows, histogram CSV, missingness counts and the rejected invocation log are retained beside the report.
 This supersedes earlier statements that phase-one aggregation was pending; other experiment families still prevent paper-level completion.
+
+## Second cloud checkpoint: complete raw-output re-audit
+
+The [second checkpoint](results/cloud-checkpoint2-2026-10-17/validation.json) independently audits **483/600 Phase II conditions** and **737/1,200 Phase III movement conditions**. These include 92 completed local conditions and 1,128 cloud conditions. Earlier prefixes are included, not added again. Phase I remains separately complete at 300/300.
+
+The audit verifies 59,007,115 health records and 1,220,000 price-step records, with identical frozen manifests, disjoint condition ordinals, and full recorded commands. Each phase reconciliation lists every missing ordinal. The original cloud producer continues on its existing intervals; no conditions were restarted for this checkpoint.
+
+`audits-and-measurements.tar.gz` retains all segment audits and reconstructed price measurements. `raw-archive.json` identifies the checksum-verified 492,991,240-byte native snapshot retained locally and on the owned compute node. That interim raw archive is not embedded in git. Retrieve it with:
+
+```sh
+autor cp relh-sugarscape-sizing-20261016-v1:/root/sugarscape/pike-checkpoint-002.tar.gz /new/checkpoint.tar.gz
+```
+
+Verify its SHA-256 against `raw-archive.json` before extraction. `commands.json` records the complete raw-audit commands, including the immutable original execution paths required for relocated evidence. The retained `audit.py` captures extraction, reconciliation, and coverage checks. These commands refer to this workspace’s preserved local predecessor segments; the portable segment reconciler accepts their relocated paths explicitly.
+
+Both grids remain incomplete. Aggregate Phase II/III paper comparisons, unstarted common-resource ensembles, and historical source alignment remain outstanding. This checkpoint contributes zero completed papers.
