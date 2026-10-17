@@ -201,5 +201,12 @@
       "abm_run stores initial state and iterates2:n_timesteps, producing n_timesteps stored states and n_timesteps-1 transitions.",
       "The step computes new_wealth but calls compute_alive with the old agent; survival uses old wealth>=0. This differs from paper wording of death at post-metabolism holdings<=0. Validate on full trajectories before drawing a conclusion."
     ]
+  },
+  "paper_source_recovery": {
+    "audit": "quera-2025-figures/source-audit.json",
+    "published_fd_points": 150,
+    "gradient_horizon_in_figure": 25,
+    "calibration_filename_learning_rate_hint": 0.0005,
+    "status": "Plotted-reference extraction and historical-version lead only; no simulation/gradient/calibration conclusion."
   }
 }
