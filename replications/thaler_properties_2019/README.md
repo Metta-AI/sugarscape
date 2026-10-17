@@ -242,3 +242,15 @@ python replications/thaler_properties_2019/audit_sensitivity.py \
 Recovery passed its serial build gate. The first three corrected CLI exports match
 the earlier corrected observer exactly across 204,191 agent records and 28,581 trades.
 Their raw files, hashes, manifests, and comparison report are retained with recovery evidence.
+
+
+## Remaining observer ensembles
+
+A [frozen protocol](results/observer-ensemble-launch-2026-10-17/protocol.json) now covers
+100 seeds each for terracing, disease clearance, disease persistence, and cultural dynamics.
+Two independent workers run the original and corrected variants, respectively. Each
+worker has one CPU, 2 GiB, and a three-hour limit; completed-run ledgers retain hashes.
+The original source outputs remain pre-event observations. Corrected outputs are labelled
+sensitivity evidence. Source and prose predicates remain distinct, including disease
+majority rounding, cultural-balance asymmetry, and terracing's inverted edge predicate.
+No result or completed-study credit is claimed for these running ensembles.
