@@ -1,0 +1,44 @@
+Building all executables for `sugarscape-seq' once. After a successful build of all of them, only specified executables will be rebuilt.
+sugarscape-seq> configure (exe)
+Configuring sugarscape-seq-0.1.0.0...
+Warning: The 'license-file' field refers to the file 'LICENSE' which does not
+exist.
+
+Warning: File listed in sugarscape-seq.cabal file does not exist: ChangeLog.md
+sugarscape-seq> build (exe)
+Preprocessing executable 'sugarscape-seq' for sugarscape-seq-0.1.0.0..
+Building executable 'sugarscape-seq' for sugarscape-seq-0.1.0.0..
+[ 1 of 13] Compiling AgentMonad
+[ 2 of 13] Compiling Discrete
+[ 3 of 13] Compiling Model
+[ 4 of 13] Compiling Environment
+[ 5 of 13] Compiling Common
+[ 6 of 13] Compiling Random
+[ 7 of 13] Compiling Renderer
+[ 8 of 13] Compiling Simulation
+[ 9 of 13] Compiling GlossRunner
+[10 of 13] Compiling Utils
+[11 of 13] Compiling Agent
+[12 of 13] Compiling Init
+[13 of 13] Compiling Main
+
+/work/prepared/criterion/sugarscape-seq/src/Main.hs:13:1: error: [-Wunused-imports, -Werror=unused-imports]
+    The qualified import of `Criterion.Main' is redundant
+      except perhaps to import instances from `Criterion.Main'
+    To import instances alone, use: import Criterion.Main()
+   |
+13 | import qualified Criterion.Main as Crit
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+/work/prepared/criterion/sugarscape-seq/src/Main.hs:37:14: error: [-Wname-shadowing, -Werror=name-shadowing]
+    This binding for `time' shadows the existing binding
+      imported from `FRP.BearRiver' at src/Main.hs:12:1-20
+   |
+37 |     mapM_ (\(time, _, agents) -> putStrLn (show time ++ "," ++ show (length agents))) (reverse forced)
+   |              ^^^^
+
+Warning: File listed in sugarscape-seq.cabal file does not exist: ChangeLog.md
+
+--  While building package sugarscape-seq-0.1.0.0 using:
+      /root/.stack/setup-exe-cache/x86_64-linux-tinfo6/Cabal-simple_mPHDZzAJ_2.2.0.1_ghc-8.4.3 --builddir=.stack-work/dist/x86_64-linux-tinfo6/Cabal-2.2.0.1 build exe:sugarscape-seq --ghc-options ""
+    Process exited with code: ExitFailure 1

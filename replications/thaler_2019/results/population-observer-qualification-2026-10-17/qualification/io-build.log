@@ -1,0 +1,21 @@
+Building all executables for `sugarscape-io' once. After a successful build of all of them, only specified executables will be rebuilt.
+sugarscape-io> configure (exe)
+Configuring sugarscape-io-0.1.0.0...
+sugarscape-io> build (exe)
+Preprocessing executable 'sugarscape-io' for sugarscape-io-0.1.0.0..
+Building executable 'sugarscape-io' for sugarscape-io-0.1.0.0..
+[ 1 of 12] Compiling Discrete
+[ 2 of 12] Compiling Model
+[ 3 of 12] Compiling Common
+[ 4 of 12] Compiling Environment
+[ 5 of 12] Compiling Random
+[ 6 of 12] Compiling Renderer
+[ 7 of 12] Compiling Simulation
+[ 8 of 12] Compiling GlossRunner
+[ 9 of 12] Compiling Utils
+[10 of 12] Compiling Agent
+[11 of 12] Compiling Init
+[12 of 12] Compiling Main
+Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.2.0.1/build/sugarscape-io/sugarscape-io ...
+sugarscape-io> copy/register
+Installing executable sugarscape-io in /work/prepared/criterion/sugarscape-io/.stack-work/install/x86_64-linux-tinfo6/e2bc1dd9db2af146999a044500ac583ca461a99d9ab5180dac2e1426369f76ee/8.4.3/bin

@@ -461,3 +461,32 @@ Thus, the paper's core labels must not be interpreted as evidence of 64 physical
 Its historical process affinity remains unknown.
 A future allocation must record actual CPU quota, affinity and topology; the current eight-core allocation cannot substitute.
 The six timings, six retry ratios and scaling comparison remain required. This preflight adds no completed experiment.
+
+### Original-engine population exporter qualification
+
+[Eight full 1,000-step runs](results/population-observer-qualification-2026-10-17)
+qualify a population exporter for all four original implementations at seed 42, 500 agents, no rebirth and one capability.
+`prepare_population_observers.py SOURCE NEW_OUTPUT` verifies 61 source/build files at the timing revision.
+It changes only the four entry points: run the existing initializer once, force the returned states as Criterion does, then export chronological populations.
+Initialization, random draws, model rules and simulation loops remain unchanged. Original packaging licenses are retained.
+No output operation is added inside simulation steps. Counts describe returned observable agents.
+
+All four compile under the original GHC 8.4.3 warning/error settings.
+`audit_population_observers.py RUN REFERENCE_CSV NEW_OUTPUT` verifies source and binary hashes, compiler receipts, all 8,000 observations and terminal success.
+Every trajectory has times 0–999, bounded population and no population increase without rebirth.
+Both sequential runs exactly match the earlier unmodified author's exporter after numeric CSV parsing.
+The author's extra comma whitespace is a formatting difference; no numerical tolerance is used.
+
+| Implementation | Terminal population, repeat 1 | Repeat 2 |
+| --- | ---: | ---: |
+| Sequential | 192 | 192 |
+| Lock-based | 186 | 186 |
+| TVar | 185 | 186 |
+| TArray | 187 | 186 |
+
+These executions use local Linux amd64 emulation, one CPU and a 3 GiB memory bound.
+They qualify the end-to-end exporter, not native timing, multicore dynamics, or statistical equivalence.
+The differing concurrent trajectories are preserved without a paper-level verdict.
+The full native capability/scenario comparison and spatial-state evidence remain outstanding.
+Two failed preparation attempts are retained: compiler warnings and an invalid threaded-runtime flag on the sequential executable.
+Both were exporter/launcher errors and were corrected without changing the author model or build settings.
