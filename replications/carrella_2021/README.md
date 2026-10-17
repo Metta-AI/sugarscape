@@ -686,5 +686,17 @@ maximum spice endowment and reproduction wealth. These are root-mean-square erro
 not the paper's aggregate cross-validation scores.
 
 Both checkpoints, prediction exports, runtime metadata and hashes are retained.
-Three folds remain for each estimator. No aggregate Table 8 score or additional
-completed study is claimed.
+At this checkpoint, three folds remained for each estimator. The third-fold update
+below supersedes the forest count; no aggregate Table 8 score is claimed.
+
+
+## Third regression-forest fold
+
+[The third native forest checkpoint](results/rfboot-5000-third-fold-2026-10-17/audit.json)
+passes independent reconstruction of the original seed-zero held-out rows 2001–3000.
+All 755,000 input cells match, and all 5,000 predictions are finite. Recomputed errors,
+interval coverage, and interval widths agree with the checkpoint within 1e-10.
+Parameter errors are 60.71296364, 0.02664347, 12.00947956, 11.65893629, and 4.66388069,
+in the parameter order above. The native checkpoint, prediction export, hashes, and
+runtime metadata are retained. Forest completion is 3/5 folds; neural-network completion
+remains 2/5. Both estimator processes remain active; aggregate Table 8 scores stay pending.
