@@ -1,0 +1,6 @@
+{
+  "request_id": "req_90b31e5d6630468290e54ec8af5c379e",
+  "rejection": "CLI timeout41400 exceeds300second transport/wake ceiling; detached timeout does not bound command execution. No command launched.",
+  "correction": "Use explicit remote timeout41400 with30second kill grace; omit transport timeout.",
+  "maximum_outer_plus_grace_and_idle_cost": 6.7728
+}

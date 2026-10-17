@@ -490,3 +490,26 @@ The differing concurrent trajectories are preserved without a paper-level verdic
 The full native capability/scenario comparison and spatial-state evidence remain outstanding.
 Two failed preparation attempts are retained: compiler warnings and an invalid threaded-runtime flag on the sequential executable.
 Both were exporter/launcher errors and were corrected without changing the author model or build settings.
+
+### Deferred native population comparison
+
+[The frozen launch and qualification](results/population-grid-launch-2026-10-17)
+cover all 45 original timing conditions, with five fresh population-export processes each: 225 runs and 225,000 expected observations.
+The original seed 42 stays fixed; repeated concurrent processes measure scheduler variation.
+Five repeats are our declared design, not a recovered historical visual-comparison count.
+No statistical equivalence margin is inferred from these outputs.
+
+`run_population_grid.py SOURCE PROTOCOL NEW_OUTPUT` validates the prepared sources, compiles original settings,
+and records each command, exit, raw trajectory and file hash before counting completion.
+`audit_population_grid.py RUN NEW_OUTPUT` independently rechecks every declared condition and trajectory.
+The full runner passed two local emulated 1,000-step qualification cases: sequential 500-agent carrying capacity and TArray 2,500-agent rebirth.
+All 2,000 observations pass; the sequential case matches the earlier author-exporter reference numerically.
+These qualification runs are separate from native-grid coverage and are not timing evidence.
+
+Command `cmd-ichdg` uses the existing eight-core timing node and waits for the separate retry experiment's terminal archive.
+Its limits are eight hours waiting, three hours native execution, and 11.5 hours overall plus a 30-second kill grace.
+The worst-case quoted cost, including the entire wait and 15-minute idle allowance, is $6.7728 at $0.576/hour.
+The collector has a 12-hour deadline and 32 MiB transfer bound.
+An initial CLI request rejected an oversized transport timeout before launch; the corrected command applies the timeout remotely.
+The rejected receipt is preserved. No duplicate command or new node was created.
+The native grid remains pending; Table 9 and spatial-state requirements remain separate.

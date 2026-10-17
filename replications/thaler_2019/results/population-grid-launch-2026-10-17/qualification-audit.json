@@ -1,0 +1,47 @@
+{
+  "phase": "qualification",
+  "validated_runs": 2,
+  "observations": 2000,
+  "records": [
+    {
+      "index": 0,
+      "condition": {
+        "variant": "seq",
+        "caps": 1,
+        "agents": 500,
+        "rebirth": false,
+        "repetition": 0
+      },
+      "observations": 1000,
+      "first": 500,
+      "last": 192,
+      "files_sha256": {
+        "command.json": "45e602040431508778c218d05422b1add03e749f2fff00498dc79ef2c18a86de",
+        "exit.json": "f545fe193312f9fa5f594e2b22601c1d47bb37a93686f8da9ef2edcff8a2a676",
+        "population.csv": "f37f59ce772248c4c3630311a48a3a10bc9f3ec942009e6a087ba52ba1bac925",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "index": 1,
+      "condition": {
+        "variant": "tarray",
+        "caps": 1,
+        "agents": 2500,
+        "rebirth": true,
+        "repetition": 0
+      },
+      "observations": 1000,
+      "first": 2500,
+      "last": 2320,
+      "files_sha256": {
+        "command.json": "2cbfe8f613120179e92832653e15fb75898e636fc0e1d3e3365e6ce644e3de63",
+        "exit.json": "3a35dde93b5c928702a56df46a8dc59dc5471ab4f0f479156a71326408aa7fc2",
+        "population.csv": "412d1ec6945f5713785b5b0de1f346883741ab59ebd645d7949f031d03cac066",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "reference_sha256": "7041966cfe7bd056e64a49174535cc4ef793d4f5022abaf6f64e77b692b98704",
+  "scope": "All declared process records, original condition identities, command/exit and trajectory hashes verified. Binary and hardware metadata are recorded provenance, not independent binary reconstruction. Qualification is not full-native coverage; no statistical equivalence claim."
+}
