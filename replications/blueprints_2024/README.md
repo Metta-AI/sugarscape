@@ -397,3 +397,20 @@ These three matches do not add independent homogeneous seeds or establish parity
 The deposited selfishness and heterogeneous sweeps still contain 50,500 and 49,500 required inputs.
 These six controls establish execution and measurement fidelity; they do not estimate either sweep's population curve or complete the paper.
 Measured control runtimes range from 302 to 1,848 seconds on shared CPU capacity, so expansion requires explicit scheduling and duplicate exclusion.
+
+## Alternate-runtime fidelity controls
+
+[Six complete PyPy controls](results/runtime-controls-2026-10-17) reproduce all 30,006 retained CPython observations byte for byte.
+The unchanged v2024.1 engine replayed selfishness 0, 0.5 and 1, plus heterogeneous Bentham counts 1, 50 and 99.
+All six use original seed 158402133555746433 and 5,000 steps.
+Only output paths changed; source hashes and original configuration values were independently checked.
+
+The alternate runtime is PyPy 7.3.20, Python 3.11.13; the reference is CPython 3.11.14.
+This environment change is explicit and is not an author-specified runtime.
+`audit_runtime_controls.py PYPY_EXTRACTED CPYTHON_EXTRACTED NEW_REPORT` independently verifies the complete archive against the previously audited supplementary controls.
+The published archive retains all six raw outputs, configurations, logs and completion records.
+
+Elapsed times came from different workloads sharing the same host, so they are not controlled speedup estimates.
+One seed across six configurations does not establish universal runtime equivalence.
+Two additional original inputs have paired runtime checks in progress; no production runtime or completion status changes here.
+These replays add no independent scientific seeds and do not complete either sweep or the paper.
