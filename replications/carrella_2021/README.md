@@ -3,7 +3,7 @@
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
-**Not a completed replication:** the other estimators and independent simulator work remain unfinished.
+**Not a completed replication:** estimator discrepancies and the final independent-simulator audit remain unresolved.
 
 ## Complete simulation replay
 
@@ -738,3 +738,18 @@ The [updated Table 8 inventory](results/table8-coverage-2026-10-17/coverage.json
 now covers all 75 reported values: 38 match and 37 differ. The remaining 15 table
 cells are published as NA. These differences need attribution before negative
 replication verdicts; completing the estimator runs does not complete the paper.
+
+## Controlled GAM input-parser experiment
+
+[The frozen control](results/gam-parser-control-launch-2026-10-17) repeats the complete
+1,250-input GAM workflow with the notebook's `readr::read_csv` parser. Only the two
+input reads differ from the original isolated-seed runner. All five folds, five targets,
+interval draws, seed zero, observations, and fitting options remain unchanged.
+Execution is bounded to 1,800 seconds. Its results remain pending.
+
+The pre-fit audit verifies identical random states: all 626 integers agree. Parsing
+changes 2,620 of the 188,750 data cells by at most 1.3878e-17. The control uses the
+same mgcv 1.9-4, Matrix 1.7-5, dplyr 1.2.1, and readr 2.2.0 versions as the primary run.
+This isolates parser sensitivity under the current runtime; it does not reconstruct
+the authors' unknown historical environment or the notebook's preceding random stream.
+The primary results remain unchanged, and no additional Table 8 match is claimed.
