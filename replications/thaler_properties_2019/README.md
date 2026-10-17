@@ -581,6 +581,14 @@ death, replacements, kills per attacker, reward accounting, and first single-age
 occurrence, retaining never-reached cases. All 100 seeds are required for aggregate
 comparisons. Spatial front and invasion claims require additional event analysis.
 
+The [independent cohort audit](results/combat-ensemble-prefix-2026-10-17) passes on
+24 matched cultural-combat pairs and the retained replacement-combat pair: 50 runs
+and 1,410,778 snapshot agent observations. It reconstructs population at every step,
+checks IDs at every exported snapshot, and verifies reward accounting and paired
+initial conditions. Frozen ledger copies prevent later worker progress from changing
+the audited input set. Prefix mode emits no aggregate comparisons. Full mode rejects
+the actual unfinished cohorts; its success path awaits all 100 pairs per scenario.
+
 `audit_correction.py ROOT ORIGINAL_OBSERVER NEW_OUTPUT HISTORICAL_TRACE` checks the
 exact correction, unchanged controls, matched initialization and corrected event
 accounting after rebuilding source trees and restoring the archived CSV files.
