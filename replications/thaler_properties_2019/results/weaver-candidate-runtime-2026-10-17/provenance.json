@@ -1,0 +1,32 @@
+{
+  "model": "/Users/relh/Code/workspace/sugarscape-weaver-candidate/sugarscape.nlogo",
+  "model_sha256": "e61e2a820ea3cde7c3d2855314bf82f7a3121666345644b138be1d1d905f7645",
+  "runtime_download": "https://downloads.netlogo.org/4.0.4/netlogo-4.0.4.tar.gz",
+  "runtime_archive_sha256": "678b66951cdd1b4768c464d9a37278251708da8d4c0049bacdc573df4d7dd537",
+  "jar_sha256": "6794cf2f71091471ca77379846f114402f0571af4c7b7d2dc3cdacdb914c430f",
+  "version": "NetLogo 4.0.4\nNovember 24, 2008\nNetLogo 4.0\nNetLogo 3.\nNetLogo 2.\nNetLogo 1.\n",
+  "java": "/opt/homebrew/opt/openjdk@11/bin/java",
+  "java_version": "OpenJDK11.0.32.1 Homebrew",
+  "seed": 602352629,
+  "steps": 1000,
+  "scenario": "Unmodified preset4 (spice), externalBehaviorSpace experiment only",
+  "limits": {
+    "steps": 1000,
+    "heap_mb": 512,
+    "wall_timeout_seconds": 300,
+    "active_processors": 1
+  },
+  "scope": "Runtime/sourcecandidate execution proof, not yet authenticatedWeaverpaperreplication. HistoricalJava1.5runtimeparity notproven.",
+  "gist": "https://gist.github.com/rht/65c3f0819e92ed9d8419429a12718d07",
+  "gist_revision": "9ac24cd0e55a8ec6b78c6db4fce2cf45d3e462ed",
+  "weaver_attribution_catalog": "https://www.cs.unibo.it/fioretti/CODE/GAS/index.html",
+  "catalog_model_url": "https://ccl.northwestern.edu/netlogo/models/community/Sugarscape",
+  "colgate_page": "https://math.colgate.edu/math312/sugarscape/",
+  "colgate_file_sha256": "7315173df6bd65c302b3a1ad5a7e018445db857505960c6bbe16c5706ca62479",
+  "colgate_embedded_version": "NetLogo6.0.1",
+  "colgate_status": "Modifiedport; not substitutedfor4.0.4candidate",
+  "candidate_identity": "CatalogattributesexactgistcommentURLtoIainWeaver;byteidentitywith2009publicationnotindependentlyverified",
+  "unique_inputs": 1,
+  "replay_runs": 1,
+  "model_unchanged_after_execution": true
+}

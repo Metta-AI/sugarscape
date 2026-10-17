@@ -687,3 +687,21 @@ are retained rather than rerun. The observer auditor accepts an explicit
 `--allow-prefix`, and emits no 100-seed inference from 99 runs. Its default full-run
 mode reproduces the historical 100-seed disease audit exactly. Final inference
 still requires reconciliation with the retained first seed.
+
+## Independent NetLogo candidate: historical runtime execution
+
+[The recovered candidate and exact replay](results/weaver-candidate-runtime-2026-10-17)
+complete 1,000 steps using unchanged model code under NetLogo 4.0.4 and OpenJDK 11.
+The external experiment selects spice preset 4 and seed 602352629. Population is
+123 at step 100, 111 at step 500, and 104 at step 1,000.
+
+Independent checks reconcile all 1,001 timestep records and 115,703 agent observations.
+Both runs agree exactly except for timestamp metadata, and compressed-data readback
+reproduces the audit. This is one unique input plus a replay.
+
+The University of Bologna catalog attributes the gist's original community URL to
+Iain Weaver, while Colgate preserves a later modified port linked to Leicester.
+Source URLs, hashes, runtime pins, commands, and the failed initial XML attempt
+are retained in the evidence. Byte identity with the 2009 publication and historical
+Java-runtime parity remain unverified. This execution proof is not a completed
+independent replication or an additional paper.
