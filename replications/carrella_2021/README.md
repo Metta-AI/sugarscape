@@ -799,3 +799,32 @@ The result directory retains all five fold checkpoints, complete predictions, ru
 metadata, source pins, terminal receipt, auditor, and SHA-256 inventory. Running its
 `audit_parser_inputs.R` with the pinned source directory, result directory, primary
 `gam-1250-2026-10-15` directory, and a new JSON path reproduces the comparison exactly.
+
+## GAM outlier term decomposition
+
+[The point-fit diagnostic](results/gam-term-decomposition-2026-10-17) refits only
+fold two's reproduction-wealth response with unchanged inputs, formula, and fitting options.
+Both parser variants reproduce all 250 retained point predictions exactly.
+Summing their 146 smooth terms and fitted intercept reconstructs predictions within 3.13e-13.
+
+| Quantity at held-out row 131 | Primary | Notebook parser |
+| --- | ---: | ---: |
+| True reproduction wealth | 92 | 92 |
+| Predicted reproduction wealth | -6,945.811 | -8,152.723 |
+| Contribution from `snap.450.mean.prices` | -7,104.840 | -8,334.386 |
+
+That price input is 17.7618, beyond its training range of 0.3101–1.3947.
+Its term supplies the largest absolute contribution under both parsers. The remaining
+terms and intercept offset part of its negative contribution. This identifies the
+dominant extrapolating term; it does not establish why the published table differs.
+
+`diagnose_gam_terms.R FOLD_RDS REFERENCE_FIT_RDS VARIANT OUTPUT` reproduces this
+diagnostic. The reference formula comes from the earlier fold-two current-runtime
+`wealth.reproduction.rds`. Native models remain in the retained paths recorded by
+`provenance.json`; compact predictions, contributions, and audit reports are published.
+
+Both R fits completed and passed their checks. The enclosing wrapper then failed
+its 100 MiB aggregate storage guard: retained evidence totals 118,476,107 bytes.
+That operational failure remains recorded separately from the successful numerical checks.
+An earlier diagnostic incorrectly expected an intercept attribute from `predict.bam`;
+the corrected diagnostic uses the fitted intercept coefficient. No observations were excluded.

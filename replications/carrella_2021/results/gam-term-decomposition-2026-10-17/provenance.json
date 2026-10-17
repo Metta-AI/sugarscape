@@ -1,0 +1,76 @@
+{
+  "native_R_fits_completed": 2,
+  "native_prediction_checks": 500,
+  "wrapper_exit_code": 1,
+  "wrapper_failure": "Post-fit aggregate evidence size exceeded the declared 100 MiB guard. Both R subprocesses returned zero before this guard. Full models remain retained externally; not a failed fitting assertion.",
+  "retained_root": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-term-diagnostic-002",
+  "retained_files": {
+    "parser-control/audit.json": {
+      "bytes": 602,
+      "sha256": "a8bb21cfe54622aa8bc848bdabbcbda7cf90291d8d250002c8c78a9de5e75494"
+    },
+    "parser-control/contributions.csv": {
+      "bytes": 19309,
+      "sha256": "ea14b425c7793c1ba8b09101fee8865f817271502b0ccf696bdf581fd16fb56d"
+    },
+    "parser-control/model.rds": {
+      "bytes": 59199537,
+      "sha256": "d65bf9f26f49fb50714aea30e285745fdfbd20402a1473c647a6dbf4d3923c00"
+    },
+    "parser-control/predictions.csv": {
+      "bytes": 13471,
+      "sha256": "b148a0e63dc5fcebac4ec44333eb521e8021d28df974386b0b116a679d480e91"
+    },
+    "parser-control/session.txt": {
+      "bytes": 675,
+      "sha256": "bf42840ca2158930f62338c801465f61a13a9270297a381b7279d36ea829e9a1"
+    },
+    "parser-control-command.json": {
+      "bytes": 530,
+      "sha256": "a46ea9860f7b7d3a301b3ba68f7b0eea83d5b9ccd1f7f221dc6378e61aa84ada"
+    },
+    "parser-control.log": {
+      "bytes": 2519,
+      "sha256": "4a76e2ba31564dbde7c43fa0bd889fb396509554e466a0db18fd9dd1860b329f"
+    },
+    "primary/audit.json": {
+      "bytes": 595,
+      "sha256": "c4ea126b6720368a95c40b79ebdda94fe7be23fb6b69a9422aeb0c69cceaa2cf"
+    },
+    "primary/contributions.csv": {
+      "bytes": 19343,
+      "sha256": "e5d7d94c5a46daa0ec7c286cdec0c3b654c1b2dd9cc6a0e948aa6cb9ffb8f2dc"
+    },
+    "primary/model.rds": {
+      "bytes": 59201262,
+      "sha256": "7fb2d49ad096d68cb8b71b2a683584382ff43bf06ccde69abea46c51d0ed4488"
+    },
+    "primary/predictions.csv": {
+      "bytes": 13480,
+      "sha256": "7626979a012b8926a1e216f380a446e8b86495ba25c7d2e54d3ac5a65e338471"
+    },
+    "primary/session.txt": {
+      "bytes": 675,
+      "sha256": "bf42840ca2158930f62338c801465f61a13a9270297a381b7279d36ea829e9a1"
+    },
+    "primary-command.json": {
+      "bytes": 497,
+      "sha256": "6f7ebd6c9449566040f5f6651832896fe0aa2441a4176b21a4a6fa5f9ac9312f"
+    },
+    "primary.log": {
+      "bytes": 2489,
+      "sha256": "4bf38409515850f0fdaad5b334623fb88a35297cc9ea0c36f36e597ff41ae5e4"
+    },
+    "run.py": {
+      "bytes": 1123,
+      "sha256": "62a2f11ad734fcf19fbdbfe1dd95541fedd3a6469273b87c0a84494b641285dc"
+    }
+  },
+  "runner_sha256": "e944cde3d618641cdcc60667eb412202a0c0ee2cb42b2d8feffc30f6ccb66f3a",
+  "scope": "Diagnostic decomposition, not replacement primary results or scientific replication verdict.",
+  "input_sha256": {
+    "results/gam-1250-2026-10-15/fold-2.rds": "3e8d5adfb3dcbb516606cf8763799df04a4962aa0351f5cf5fafd53694d10777",
+    "results/gam-parser-control-complete-2026-10-17/fold-2.rds": "829aff230ebfcff6f19cf633f210fe5f7f753e04a045b15bd934a35296ed06a5",
+    "results/gam-fold2-runtime-diagnostic-2026-10-15/current/wealth.reproduction.rds": "8ef21ae61ad0be52016d84c6302fbd56b877b297e13c53366a42d60d64e9bfb7"
+  }
+}
