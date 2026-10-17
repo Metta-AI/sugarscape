@@ -414,3 +414,17 @@ Elapsed times came from different workloads sharing the same host, so they are n
 One seed across six configurations does not establish universal runtime equivalence.
 Two additional original inputs have paired runtime checks in progress; no production runtime or completion status changes here.
 These replays add no independent scientific seeds and do not complete either sweep or the paper.
+
+## Runtime checkpoint preserved after provider host loss
+
+[The surviving node’s checkpoint](results/runtime-surviving-checkpoint-2026-10-17) independently validates 67 egoistic and 19 Bentham 5,000-step inputs.
+All 221,631 observations pass original-input, command, source, file-hash, finite-value and terminal-condition checks.
+These disjoint prefixes bring audited runtime coverage to 586/1,200 inputs and 539,580 observations.
+The native worker remains active; these prefixes are not complete groups.
+The complete 51,728,473-byte raw archive is retained outside Git at the path and SHA-256 in `provenance.json`.
+
+The provider declared the first runtime node lost on October 17 at 05:26 UTC; its unexported altruistic 5,000-step and raw 50,000-step outputs are unavailable.
+The previously exported complete raw 5,000-step group remains retained and is not rerun.
+Those lost unexported outputs receive no audit coverage credit.
+The main control node has a recoverable disk snapshot; its inventory is queued before resuming incomplete cross-runtime comparisons.
+A connection failure alone did not trigger any simulation restart.
