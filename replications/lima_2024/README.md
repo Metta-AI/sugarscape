@@ -22,3 +22,27 @@ The isolated container scenario retains all nine author services and unmodified
 model source. Its private project uses loopback ports and fresh data, with a
 7.5 GiB aggregate container-memory limit and a one-hour execution deadline.
 Service startup alone does not validate model execution or agent transfer.
+
+## First native transfer snapshot
+
+[The consistent database snapshot](results/native-snapshot-2026-10-18) contains
+2,142 rows. Independent reconciliation matches all 665 processed router deliveries
+to destination records, including identity, data, history and ASL-path strings.
+Two return records originate from JaCaMo. Its file-watcher exception did not stop
+startup: the native Gold Miners model subsequently created and processed agents.
+
+Initialization registers 799 unique agents: 399 in model 1 and 400 in model 2.
+The released API uses Python's exclusive upper range bound; the model requests
+IDs 1–399 and 400–799. This is observed source behavior, not an adjusted population.
+There are 220 queued JaCaMo records, eight queued model-2 records and 13 router
+records awaiting processing at this snapshot. These are unfinished transfers.
+
+All ASL-path fields in this snapshot are empty, so matching them establishes no
+file-payload preservation. Native attribute reconstruction, complete 1,000-step
+runs, dashboard observation and the host-GUI scenario remain unvalidated.
+
+```sh
+python replications/lima_2024/audit_snapshot.py \
+  replications/lima_2024/results/native-snapshot-2026-10-18/snapshot-001.jsonl \
+  /new/audit.json
+```
