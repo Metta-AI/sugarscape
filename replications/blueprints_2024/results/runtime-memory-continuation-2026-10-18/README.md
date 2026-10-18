@@ -14,3 +14,8 @@ Before waking, the first registration was cancelled to restore GNU time, which r
 A collector initialized for old checkpoint ordinals was also stopped before new checkpoint production.
 Its replacement begins with an empty receipt set and retains a twelve-hour, one-GiB export bound.
 Source-model rules, inputs, and scientific termination conditions are unchanged.
+
+The first `run --max-wait 8h` request did not extend the existing queue entry: its receipt still expired at 12:44 UTC.
+A same-name node request extended that existing node to **19:47:34 UTC on October 18**.
+Readback confirms the same node ID, preserved disk, and registered `cmd-8y9yk`; no duplicate node or simulation was created.
+The twelve-hour collector may need a verified continuation if the queue consumes most of its allowance.
