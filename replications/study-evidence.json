@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T22:50:30.789619+00:00",
+  "as_of": "2026-10-18T22:56:46.495851+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -156,20 +156,20 @@
     {
       "study": "quera_2025",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
-      "checked_commit": "0c0cfb505ab445ff6a1bb5d3fec434e552584634",
+      "checked_commit": "5dd1887663a229b7e07679b8001f2ada0c6a589a",
       "status": "partial",
       "readme": "replications/quera_2025/README.md",
-      "readme_sha256": "15a5a3860cc20cd8ada613611fdbc26efbd67a7e0f4a589ff830a251b315914e",
-      "remaining_scope": "All256 diagnostic baseline seeds pass independent movement/resource replay:614400 agent and15360000 cell updates, zero state error. All34560000 ordinary/differentiated state values match;38400 derivatives match115200 archived records. Aggregate differences are exactly explained by reduction order. Exact Figure11 protocol, perturbed-trajectory replay, prior/loss/validation settings and full5000-epoch calibration remain unresolved.",
+      "readme_sha256": "f7ff478b69eebe3a822d9a42ac81b8c6116956cfd48867c5935fdf8936c578f4",
+      "remaining_scope": "All 256 diagnostic baseline seeds pass independent movement/resource replay; all 34,560,000 ordinary/differentiated state values match. Perturbed seed3 qualification covers all 36 parameter/step/sign cases: 86,400 agent and 2,160,000 cell updates with zero state error, all 900 archived aggregate values exact. Buffered/unbuffered writers match 144 compressed CSVs exactly. New baseline mode matches original CSVs, and updated auditor preserves all256 previous per-seed results. Disjoint seeds4:258 (9180 cases) running under two-hour/2GiB-free-space limits, with independent audit queued. Full perturbed ensemble, exact Figure11 protocol, prior/loss/validation settings and full5000-epoch calibration remain unresolved.",
       "validation": {
         "states": 150,
         "agent_observations": 15000,
         "cell_observations": 93750,
         "portable_trajectory_files_byte_identical": 9
       },
-      "json_evidence_files": 64,
+      "json_evidence_files": 70,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T09:41:41.228118+00:00",
+      "checked_at": "2026-10-18T22:56:46.495851+00:00",
       "gradient_baseline_validation": {
         "seeds": 256,
         "agent_updates": 614400,
