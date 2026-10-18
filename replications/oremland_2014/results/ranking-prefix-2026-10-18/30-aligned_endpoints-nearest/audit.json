@@ -1,0 +1,44 @@
+{
+  "model": "30-aligned_endpoints-nearest",
+  "width": 30,
+  "initial_population": 72,
+  "policies": 100,
+  "clock_phases": [
+    0,
+    4
+  ],
+  "seeds_per_policy_phase": 173,
+  "seed_range": [
+    1,
+    173
+  ],
+  "complete_native_runs": 34600,
+  "validated_jsonl_lines": 69200,
+  "objective_array_shape": [
+    100,
+    2,
+    173,
+    3
+  ],
+  "objective_order": [
+    "deaths",
+    "literal_revenue",
+    "derived_clipped_revenue"
+  ],
+  "objectives_npz_sha256": "e0d06d05d2add93de0bfec6daeadf71684aa8de562bc715d941195665d6d727c",
+  "protocol_sha256": "96d792aa778b6977a0b3d9724f492f9eba45a03be8c0be59d030e3cf90134858",
+  "policies_sha256": "584c7a595c7fb8b0563fb1c5406899cca06e1df62d17ce019e673945402888b6",
+  "model_sha256": "dbaf8d1f3ba95bab26e0753f646097a150ebe48c59cb4357c0c94646db9e0554",
+  "landscape_sha256": "69b86102493a30bd34a23209eaf8ff3b49ed675512aa82c54fa0289b893108cc",
+  "file_hashes": {
+    "execution/30-aligned_endpoints-nearest-shard-0.results.jsonl": "269f81d84a74c0174d501f9ed79d70435c81eeedf02cc3bb9fc509060ea7ed18",
+    "30-aligned_endpoints-nearest/requests-0.jsonl.gz": "a532985cf49bd8a46e2cdcdd1fae0fb8cf5edfe2a3a4e50ee2b10e064a362770",
+    "execution/30-aligned_endpoints-nearest-shard-1.results.jsonl": "9bc19dc686892dd3a79e4144b20378373571c25fe4f8e9b417a276a1cf64e832",
+    "30-aligned_endpoints-nearest/requests-1.jsonl.gz": "65bb43ec8cd932bb38095de2f1a1f4d0a8978427ec3db79ff08984bcb76a25a7",
+    "execution/30-aligned_endpoints-nearest-shard-2.results.jsonl": "395bbff82a8470b009dea8bf9a8b78ce37372a87d1130da9d3d5600e35467c57",
+    "30-aligned_endpoints-nearest/requests-2.jsonl.gz": "1dc32143ed1d6d52e0822c87be5258bd328ce478c944784446365da63aa95de9",
+    "execution/30-aligned_endpoints-nearest-shard-3.results.jsonl": "61e36b12f6ce6b7d02425c44e2d80271a09ce13f892e3e52b69e20e4919b924b",
+    "30-aligned_endpoints-nearest/requests-3.jsonl.gz": "67c871ba11668c32ee49498dea0574274f72a3e80423514d13e4a381f0604f20"
+  },
+  "scope": "Complete per-model execution audit. This is not a whole-experiment completion claim or a policy-ranking conclusion; other models and scientific analysis remain separate."
+}

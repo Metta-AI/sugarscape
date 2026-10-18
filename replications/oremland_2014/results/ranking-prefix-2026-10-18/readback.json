@@ -1,0 +1,16 @@
+{
+  "native_runs": 172200,
+  "validated_jsonl_lines": 344400,
+  "ranking_rows": 1920,
+  "rank_value_checks": 96000,
+  "exact_rational_kappa_checks": 1920,
+  "models": [
+    "40-pixel_centers-nearest",
+    "30-pixel_centers-nearest",
+    "30-aligned_endpoints-nearest",
+    "20-pixel_centers-nearest"
+  ],
+  "native_archive_files_byte_identical": 99,
+  "archive_sha256": "ae05781d45e5402f655741bb5e09ea2ee81588009f0762d9127242231a0825d5",
+  "scope": "Four complete model cases only; the overall ranking ensemble is still incomplete."
+}

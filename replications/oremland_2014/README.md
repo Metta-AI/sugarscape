@@ -166,6 +166,36 @@ python prepare_rankings.py /path/to/audited-reductions /path/to/completed-conver
 Run the independent full-size batch after the reduced batch to preserve the four-worker limit.
 The new inputs and runtime pipeline are qualified; full ranking results and original uncertainty bars remain outstanding.
 
+## Audited ranking results and seed-design diagnostic
+
+[The first ranking snapshot](results/ranking-prefix-2026-10-18) contains four complete model cases and 172,200 native runs.
+All 344,400 input/output records pass coverage and provenance checks.
+Every declared analysis convention is retained in 1,920 ranking rows, verified with 96,000 independent rank checks and exact rational kappa calculations.
+
+At 40×40, the pooled full-budget death ranking under the first tax clock has linear kappa 0.933 and quadratic kappa 0.995.
+The discrepancy from Figure 10 remains unresolved. Passing arithmetic checks does not establish fidelity of the reconstructed controls, model, or random-stream design.
+
+```sh
+python audit_ranking_model.py /path/to/rankings 40-pixel_centers-nearest /path/to/new-model-audit
+python analyze_ranking_model.py /path/to/completed-convergence /path/to/new-model-audit /path/to/new-model-analysis
+```
+
+The auditor requires all four terminal shards for the selected model; it never silently analyzes a partial model.
+The analyzer retains pooled and each fixed-mean-rate stratum, average and ordinal ties, linear and quadratic weights, and both integer budget roundings.
+Raw integer objective sums determine ranks, avoiding floating-point tie artifacts from means.
+
+[A post hoc independent-stream diagnostic](results/independent-streams-protocol-2026-10-18) addresses shared-seed coupling.
+Its 37,600 frozen requests have unique seeds across all policies, phases, runs, and reference/comparison groups.
+It compares independent 50×50 and 40×40 samples with its own independent full-size reference, preserving the other declared choices.
+It is queued after the existing batches; no native diagnostic results or completion credit are claimed yet.
+
+```sh
+python prepare_independent_streams.py /path/to/qualified-reductions /path/to/completed-convergence /path/to/new-stream-diagnostic
+```
+
+Use `run_rankings.py` only after the preceding batch terminates to retain the four-worker limit.
+The ordinary ranking auditor's consecutive-seed contract does not apply to this diagnostic; its unique-seed outputs require a separate audit.
+
 ## Remaining paper scope
 
 The original author implementation, original 100 controls and random streams, model-reduction conventions, and optimizer implementation remain unavailable.

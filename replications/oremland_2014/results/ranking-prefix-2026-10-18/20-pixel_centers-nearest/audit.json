@@ -1,0 +1,44 @@
+{
+  "model": "20-pixel_centers-nearest",
+  "width": 20,
+  "initial_population": 32,
+  "policies": 100,
+  "clock_phases": [
+    0,
+    4
+  ],
+  "seeds_per_policy_phase": 427,
+  "seed_range": [
+    1,
+    427
+  ],
+  "complete_native_runs": 85400,
+  "validated_jsonl_lines": 170800,
+  "objective_array_shape": [
+    100,
+    2,
+    427,
+    3
+  ],
+  "objective_order": [
+    "deaths",
+    "literal_revenue",
+    "derived_clipped_revenue"
+  ],
+  "objectives_npz_sha256": "0601ec9fe02bcedd339a46a4c60fd357ab5be67648dad5765361407d73056077",
+  "protocol_sha256": "96d792aa778b6977a0b3d9724f492f9eba45a03be8c0be59d030e3cf90134858",
+  "policies_sha256": "584c7a595c7fb8b0563fb1c5406899cca06e1df62d17ce019e673945402888b6",
+  "model_sha256": "a68836e398f1c284f2a44fc86464267703871002f5d294b3124d24b7c6ef5417",
+  "landscape_sha256": "e6fab257a93a79f98e38ae3110ef0c56132f60b2e372b37935bfedff1b1775c1",
+  "file_hashes": {
+    "execution/20-pixel_centers-nearest-shard-0.results.jsonl": "3c0366d588b321e2bbc7d7fe094a323e53ae400a184beec022f5598aa05eab12",
+    "20-pixel_centers-nearest/requests-0.jsonl.gz": "50eb7713524efc527954422d5c4123c17cbded0e1ad1aeb08a841945d12670e7",
+    "execution/20-pixel_centers-nearest-shard-1.results.jsonl": "268d2f643b8c2c0ec12ef0f71f84cdbf46bc1fec1f9ee1787db87ef3f51781de",
+    "20-pixel_centers-nearest/requests-1.jsonl.gz": "ce45100b09b0028134813f813685965690e5935e1586549c19dd9fd53e67e5fc",
+    "execution/20-pixel_centers-nearest-shard-2.results.jsonl": "1923416c6095d25a2f2f3ac71e5c7769d16954a277cfe754fe8d39d345aad97d",
+    "20-pixel_centers-nearest/requests-2.jsonl.gz": "e8dd3c2620d1b3bcfdd2adac8ed2ea0e1e6cd668d0b2e16c1fa4edfdbcf21289",
+    "execution/20-pixel_centers-nearest-shard-3.results.jsonl": "0fd689f85e6a248e8d6d99664f48a2561278eef612f1886e4c4be50a1ef5e552",
+    "20-pixel_centers-nearest/requests-3.jsonl.gz": "de7b5c2769a53f410849707992171b790b1db74f3f4b1cad762fa8b67a265094"
+  },
+  "scope": "Complete per-model execution audit. This is not a whole-experiment completion claim or a policy-ranking conclusion; other models and scientific analysis remain separate."
+}
