@@ -1,0 +1,167 @@
+{
+  "complete_native_runs": 20000,
+  "qualified_reference_manifest_sha256": "e4d438e698b64bc06ff984e128c6b66d5559b694873f68ccbacccc5f1b729160",
+  "validated_request_result_lines": 40000,
+  "policies": 100,
+  "seeds_per_policy_phase": 100,
+  "prefix_summary_rows": 59400,
+  "refund_minimum": 0,
+  "refund_maximum": 15,
+  "aggregates": [
+    {
+      "phase": 0,
+      "metric": "deaths",
+      "mean_100": {
+        "minimum": 82.43,
+        "median": 100.35499999999999,
+        "maximum": 112.08
+      },
+      "mean_change_50_to_100": {
+        "minimum": -0.7399999999999949,
+        "median": -0.17499999999999716,
+        "maximum": 0.37000000000000455
+      },
+      "sample_sd_change_50_to_100": {
+        "minimum": 0.0740371241357014,
+        "median": 0.7504755974947188,
+        "maximum": 1.4472099961401454
+      },
+      "half_difference_standard_error": {
+        "minimum": 1.060034654805094,
+        "median": 1.2189221675547115,
+        "maximum": 1.36373137578708
+      }
+    },
+    {
+      "phase": 0,
+      "metric": "literal_revenue",
+      "mean_100": {
+        "minimum": 2832.7,
+        "median": 6884.995,
+        "maximum": 8503.79
+      },
+      "mean_change_50_to_100": {
+        "minimum": -31.949999999999818,
+        "median": 12.454999999999927,
+        "maximum": 32.63000000000011
+      },
+      "sample_sd_change_50_to_100": {
+        "minimum": -11.168032791288965,
+        "median": 39.59087506340239,
+        "maximum": 71.92421286956255
+      },
+      "half_difference_standard_error": {
+        "minimum": 46.71752631835425,
+        "median": 82.2384405255444,
+        "maximum": 101.78891359383027
+      }
+    },
+    {
+      "phase": 0,
+      "metric": "derived_clipped_revenue",
+      "mean_100": {
+        "minimum": 2835.8,
+        "median": 6888.27,
+        "maximum": 8505.42
+      },
+      "mean_change_50_to_100": {
+        "minimum": -31.659999999999854,
+        "median": 12.750000000000455,
+        "maximum": 32.85999999999967
+      },
+      "sample_sd_change_50_to_100": {
+        "minimum": -10.859687453817173,
+        "median": 39.60769013715276,
+        "maximum": 72.3495078859143
+      },
+      "half_difference_standard_error": {
+        "minimum": 46.633381141996274,
+        "median": 82.13979533707462,
+        "maximum": 101.74441126907067
+      }
+    },
+    {
+      "phase": 4,
+      "metric": "deaths",
+      "mean_100": {
+        "minimum": 81.87,
+        "median": 98.7,
+        "maximum": 110.34
+      },
+      "mean_change_50_to_100": {
+        "minimum": -0.9099999999999966,
+        "median": -0.23499999999999943,
+        "maximum": 0.3299999999999983
+      },
+      "sample_sd_change_50_to_100": {
+        "minimum": -0.006787274230847018,
+        "median": 0.6415206847940937,
+        "maximum": 1.4892120819400247
+      },
+      "half_difference_standard_error": {
+        "minimum": 1.0946996606096009,
+        "median": 1.2265114340333572,
+        "maximum": 1.3596788336266197
+      }
+    },
+    {
+      "phase": 4,
+      "metric": "literal_revenue",
+      "mean_100": {
+        "minimum": 2923.61,
+        "median": 7324.915,
+        "maximum": 8846.14
+      },
+      "mean_change_50_to_100": {
+        "minimum": -29.960000000000036,
+        "median": 12.384999999999764,
+        "maximum": 57.850000000000364
+      },
+      "sample_sd_change_50_to_100": {
+        "minimum": -4.913102204920847,
+        "median": 46.01678157113636,
+        "maximum": 76.17586701407043
+      },
+      "half_difference_standard_error": {
+        "minimum": 52.86155657247813,
+        "median": 91.47247612372477,
+        "maximum": 112.75933591829411
+      }
+    },
+    {
+      "phase": 4,
+      "metric": "derived_clipped_revenue",
+      "mean_100": {
+        "minimum": 2927.85,
+        "median": 7328.765,
+        "maximum": 8849.61
+      },
+      "mean_change_50_to_100": {
+        "minimum": -30.0,
+        "median": 12.230000000000018,
+        "maximum": 57.86999999999989
+      },
+      "sample_sd_change_50_to_100": {
+        "minimum": -4.939798400775146,
+        "median": 45.885288108239365,
+        "maximum": 75.92971491067561
+      },
+      "half_difference_standard_error": {
+        "minimum": 52.782127850326034,
+        "median": 91.36695063945628,
+        "maximum": 112.64988611097806
+      }
+    }
+  ],
+  "scope": "Conditional reconstruction, not exact original Figure 9. No pass threshold or whole-paper completion assigned. Clipped revenue is derived, not an additional simulation. Half-difference standard errors describe within-policy seed variation; policies share seeds and are not independent replicates.",
+  "inputs_sha256": {
+    "protocol.json": "c4e4b1ab2dd7ac91cd769605b85f22662b4e4541bf388f65093e5b40badce7de",
+    "policies.json": "584c7a595c7fb8b0563fb1c5406899cca06e1df62d17ce019e673945402888b6",
+    "execution/manifest.json": "538122cdb63c99a6c962b2a5fcbf9ae2a9c24670c03b2b9ed821494dc13fe3dd",
+    "execution/exit.json": "9f6231875b6813ffa1d6477cabf055cd1bc4fe30def256c27c552a3cd815ef88",
+    "execution/results-0.jsonl": "40aa2a5cc2e2d80daf18dd3bbe9c82e5d1f092ca0070489befc70fd1cdb441c1",
+    "execution/results-1.jsonl": "b1cc38c3cfe801ea5bb10b7df61cc4861a8519bea538042d6bb28f86e1790328",
+    "execution/results-2.jsonl": "6ceb5b194d081703d97f301e82f15d3315fb0237171a99719826aaedc92d02fe",
+    "execution/results-3.jsonl": "748d135cd5697629475ecd7afa75b51cf46b893acd77235e243aeb34ac8fbed9"
+  }
+}

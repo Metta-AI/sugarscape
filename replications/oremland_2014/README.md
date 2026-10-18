@@ -106,6 +106,34 @@ The retained manifest supplies the exact bounded Java command, compilation comma
 
 [The optimizer specification audit](results/optimizer-specification-2026-10-18) records the printed rules, missing choices, and dissertation attachment inventory.
 
+## Full-size convergence reconstruction
+
+[The completed ensemble](results/convergence-2026-10-18) contains 20,000 native runs and 59,400 prefix summaries.
+All 40,000 request/result lines pass the audit; 2,400 independently recomputed means and sample standard deviations agree within 1e-10.
+From 50 to 100 seeds, mean deaths change by at most 0.91 agents; death sample standard deviations change by up to 24.00% of their 100-seed values.
+These are conditional measurements, not a numerical pass/fail criterion or a validated negative replication.
+
+`prepare_convergence.py` freezes 100 heterogeneous policies before execution: 34 with mean rate 0.125, 33 with 0.25, and 33 with 0.375.
+Each policy is uniform over quarter-rate vectors conditional on its exact total; integer dynamic-program counts are checked against inclusion-exclusion coefficients.
+The original vectors, generating distribution, and group allocation are unavailable. These are declared reconstruction choices.
+
+Each policy runs on 100 common seeds under both clock phases: 20,000 native 50-step runs.
+Four disjoint workers have 512 MiB Java heaps and 1,800-second limits each.
+The launcher freezes the model and its hash-checked landscape together, records runtime hashes, and refuses an existing execution directory.
+
+```sh
+python prepare_convergence.py /path/to/new-convergence
+python run_convergence.py /path/to/java-home /path/to/NetLogo-5.3.1/app \
+  /path/to/new-model/oremland.nlogo /path/to/new-convergence --timeout /path/to/timeout
+python analyze_convergence.py /path/to/new-convergence /path/to/new-analysis
+```
+
+The auditor requires every request/result pair, seed, policy, phase, terminal status, and frozen input hash.
+It exports all prefix means and both standard-deviation conventions, every policy's 50-versus-100 changes, and first-half/second-half differences with standard errors.
+Mortality is measured as deaths among the original 200 agents. Clipped revenue is derived from recorded refunds; it is not another simulation.
+Policies share seeds, so uncertainty summaries describe variation within each policy, not 100 independent policy replications.
+No numerical pass threshold is inferred after seeing the results. Agreement remains conditional on the reconstructed controls and model.
+
 ## Remaining paper scope
 
 The original author implementation, original 100 controls and random streams, model-reduction conventions, and optimizer implementation remain unavailable.

@@ -1,0 +1,44 @@
+{
+  "paper_url": "https://www.jasss.org/17/2/6.html",
+  "paper_target": "Figure 9 and section 4.22: convergence of mortality and tax-income summaries with repeated simulation",
+  "policy_generation_seed": 20261019,
+  "policies": 100,
+  "mean_rate_counts": {
+    "0.125": 34,
+    "0.25": 33,
+    "0.375": 33
+  },
+  "sampling": "Uniform over all 200-entry quarter-rate vectors conditional on exact total 100, 200, or 300 quarter units; dynamic-program completion counts independently checked by inclusion-exclusion coefficients.",
+  "assumptions": [
+    "The original 100 vectors and their generating distribution are unavailable.",
+    "The 34/33/33 allocation and conditional-uniform distribution are declared reconstruction choices, not recovered author settings.",
+    "Use the already qualified native 50x50 model; retain both first-tax-step interpretations.",
+    "Use common simulation seeds 1..100 across policies. These are reconstructed seeds, not original author random streams."
+  ],
+  "clock_phases": [
+    0,
+    4
+  ],
+  "initial_population": 200,
+  "horizon": 50,
+  "runs": 20000,
+  "workers": 4,
+  "maximum_seconds_per_worker": 1800,
+  "heap_mib_per_worker": 512,
+  "analysis_declared_before_execution": [
+    "Report every policy and both clock phases; do not select favorable curves.",
+    "Compute mortality and literal tax-income mean/standard-deviation curves for prefixes 2..100.",
+    "Report 50-versus-100 changes and first-half/second-half sampling uncertainty; no post hoc paper-pass threshold.",
+    "Derive clipped revenue as literal revenue plus recorded negative-wealth refunds, using the proven fixed-policy survivor invariant; label these as derived outcomes, not additional runs.",
+    "Keep population-standard-deviation and sample-standard-deviation conventions distinguishable.",
+    "Treat findings as conditional on the declared reconstruction; original Figure 9 curves, reduced-model rankings, and optimization remain separate requirements."
+  ],
+  "generator_sha256": "305903a70f9566227c613041a3766daac915b0dcb6abb4a5a625f05ccb504d20",
+  "files_sha256": {
+    "policies.json": "584c7a595c7fb8b0563fb1c5406899cca06e1df62d17ce019e673945402888b6",
+    "requests-0.jsonl": "9b27b042915618b8d55fd2f5ab7c1e9a879f0708abd6429ad350734d1ff804a6",
+    "requests-1.jsonl": "7dde8e34c3e18642bcc0901986af1784043a211b981d329347fb02ee9a532ed4",
+    "requests-2.jsonl": "9517d0f0bc21cdea51abba177651b8008a1731000e871a996c2138fcea645727",
+    "requests-3.jsonl": "076d688c17d4ded8b990dbef78d09660f991c0701a97a1f2a66160c6e570e413"
+  }
+}
