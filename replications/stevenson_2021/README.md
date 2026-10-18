@@ -455,3 +455,7 @@ Full growth-rate coverage is now executed under a declared convention; historica
 Two 5,000-cycle native observer pairs pass exact output comparisons. The initial four long runs complete with exact shared-prefix matches and accounting checks.
 The bounded 200-run ensemble is active; its late-window comparisons and historical interpretation remain pending.
 The sparse observer changes exports only. Prior dense inheritance evidence remains retained, and no paper-completion credit is assigned.
+
+[The independent long-run prefix audit](results/long-evolution-prefix-audit-2026-10-18) validates 52 complete runs and 52,052 observations.
+Full-mode analysis rejects incomplete ensembles before writing output; prefix mode withholds across-seed statistics.
+The final analysis is queued after all 200 runs complete, using the frozen windows and explicit extinction handling.
