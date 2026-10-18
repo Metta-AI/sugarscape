@@ -332,3 +332,13 @@ database identities, incoming attributes and paths. Existing trajectory and
 conservation checks also pass. The incoming sugar tuple is observed; newly
 randomized sugar remains source-supported, not directly printed. Paper page 51
 explicitly specifies that sugar adaptation.
+
+### Complete visually observed host scenario
+
+[The fresh GUI scenario](results/host-visual-complete-2026-10-18) now completes
+both 1,000-step trajectories. All 934 deliveries reconcile; native logs verify
+1,423 NetLogo creations and 11 JaCaMo creations. All 799 identities are conserved
+once at shutdown. The 36-file archive includes the observed window, native logs
+and auditors; both audit reports reproduce byte-for-byte after fresh extraction.
+The owned host processes and containers are stopped. Historical dependency
+equivalence remains unproven; no additional completed-study credit is assigned.
