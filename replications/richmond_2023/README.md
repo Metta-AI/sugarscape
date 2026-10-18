@@ -335,3 +335,29 @@ This reproduces the initial landscape's categorical appearance, not every render
 It does not establish occupied-agent image parity, GPU-state parity, or the first and fiftieth simulation states.
 The active quantitative benchmark retains its original initialization; matching an older illustration does not justify changing it.
 The original-engine observer remains necessary, and this study remains incomplete.
+
+## Full benchmark scaling prefix: 31 of 48 conditions
+
+[The sealed live snapshot](results/full-scaling-prefix31-2026-10-18)
+contains 3,100 steps from 31 complete scaling conditions in the original full benchmark.
+These cover repetition zero at all 16 widths and repetition one at widths 256–3840.
+All 3,100 integer population observations exactly match the pinned author archive.
+All 62 population and timing means reconcile with their raw rows within decimal CSV rounding bounds.
+The auditor requires complete 100-step conditions and consistent keys across both files.
+Files were copied sequentially while the benchmark continued; their exact alignment passed before analysis.
+
+The first 1,000 population values also match the earlier qualification run exactly.
+That overlap receives no additional grid coverage: this snapshot adds 21 unique conditions and 2,100 unique condition observations.
+Seventeen scaling conditions, all occupation and resolution conditions, and the individual-state checks remain outstanding.
+Timing values describe the H100 run; they do not establish equivalence with the paper's V100.
+The original command remains active. This snapshot supplies neither a terminal-success receipt nor whole-paper completion.
+
+```sh
+python replications/richmond_2023/audit_scaling_snapshot.py \
+  replications/richmond_2023/results/full-scaling-prefix31-2026-10-18 \
+  replications/richmond_2023/results/full-scaling-prefix31-2026-10-18/reference.csv \
+  /path/to/new-audit.json
+```
+
+The public snapshot retains both raw native CSVs, the pinned reference, file hashes,
+the download receipt, and every recomputed mean with its rounding bound.
