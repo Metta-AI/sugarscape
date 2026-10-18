@@ -638,3 +638,11 @@ At 2,500 rebirthing agents, means are 2.802528 and 0.012419, versus reported 3.2
 These are descriptive cross-hardware comparisons; five repeats do not establish historical equivalence.
 All ten single-capability processes print zero despite positive raw retry counts.
 This completes the declared retry ensemble, not the full paper.
+
+### Matching-instance Table 9 attempt timed out
+
+[The retained terminal evidence](results/table9-timeout-2026-10-18) records a successful build
+and a 1,200-second timeout on the first 32-capability, 2,500-agent rebirthing benchmark.
+No complete timing samples or retry measurements were produced.
+The archive is independently hash-verified; the instance is confirmed stopped with its disk retained.
+All Table 9 conditions remain required. This execution failure is not a scientific negative replication.
