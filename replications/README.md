@@ -62,6 +62,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | thaler-2019 | Thaler and Siebers, [A tale of lock-free agents](https://doi.org/10.1186/s40294-019-0067-9) (2019) | Sugarscape population dynamics, timing, scaling and retry ratios; Figures 5–7 and Tables 6–9 | Original code recovered; 53 archived regression estimates and 51 printed timing cells independently reconstructed; Figure 5b reproduced across 50 frozen targets; Figure 5a occupancy matches all 201 positions at step 83 despite its step-50 caption; 45/45 native Table 6/8 timing conditions audited; all six Table 9 timings and thirty retry processes audited; graphical-source control matches benchmark states; full 225-process population and 90-process retry ensembles audited; high-core retry and historical performance interpretation unfinished; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16) |
 | thaler-properties-2019 | Thaler and Siebers, [Show me your properties: the potential of property-based testing in agent-based simulation](https://www.researchgate.net/publication/333198243_SHOW_ME_YOUR_PROPERTIES_THE_POTENTIAL_OF_PROPERTY-BASED_TESTING_IN_AGENT-BASED_SIMULATION) (2019) | Sugarscape property demonstrations and full validation appendix | Historical 60-file source unchanged; 35 original tests passed; historical and corrected cohorts audited, including 100 inheritance/control pairs; regional analysis covers 400 combat trajectories; full-resolution migration controls reproduce 2,002 summary rows; recovered NetLogo migration preset exposes four configuration differences; pollution diagnostic validates 262,701 cell records and identifies different diffusion neighborhoods; original model suite and whole-paper verdict pending; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/17) |
 | richmond-2023 | Richmond et al., [FLAME GPU 2: A framework for flexible and performant agent based simulation on GPUs](https://doi.org/10.1002/spe.3207) (2023) | Sugarscape Section 4.3, Figures 6 and 11 | All 84 native conditions audited, with 6,600 exact population records and 162 exact resolution rows; state-transition audit complete for observed destinations; historical illustration provenance unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/18) |
+| springer-2019 | Springer and Masuhara, [DynaSOAr](https://doi.org/10.4230/LIPIcs.ECOOP.2019.17) (2019) | Sugarscape Figures 10–11: allocator performance and capacity | Official artifact pinned; three implementations pass six GPU qualification executions after documented compiler syntax fixes. Full-size benchmarks, equal-heap capacity and independent state validation remain incomplete; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/22) |
 | openabl-2021 | Cosenza et al., [Easy and efficient agent-based simulations with the OpenABL language and compiler](https://doi.org/10.1016/j.future.2020.10.014) (2021) | Sugarscape code size, cross-backend performance, and distributed scaling | C, MASON and FLAME grids audited; all 13 GPU sizes executed with structural and initialization audits; message-order sensitivity retained; historical timings and distributed scaling incomplete; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/20) |
 
 Dogan (2026), [Policy Robustness Under Accelerating Automation](https://github.com/dgnerg867-ux/sugarscape), is an additional unpublished working-paper study.
@@ -69,7 +70,7 @@ Completed mixed replication in [PR 11](https://app.graphite.dev/github/pr/Metta-
 All 653 printed cells and 42 plotted ordinates reproduce; native execution contradicts several mechanism claims.
 It supplements the existing candidates rather than replacing them.
 
-A separate [2024 pension-model thesis, deposited in 2025](https://arxiv.org/abs/2504.01242), now has a [source audit](source-audits/firouzian-pensions-2025.json). Its recovered model predates the thesis and disagrees on sampling and experiment settings. It remains a candidate outside the eighteen study PRs.
+A separate [2024 pension-model thesis, deposited in 2025](https://arxiv.org/abs/2504.01242), now has a [source audit](source-audits/firouzian-pensions-2025.json). Its recovered model predates the thesis and disagrees on sampling and experiment settings. It remains a candidate outside the nineteen study PRs.
 
 The 1996 Epstein–Axtell book and Kehoe's [formal specification](https://arxiv.org/abs/1505.06012)
 are baseline references, outside the ten-paper count.
@@ -77,7 +78,7 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 
 ## Current state
 
-The [evidence index](study-evidence.json) now pins eighteen pushed study commits and their README hashes.
+The [evidence index](study-evidence.json) now pins nineteen pushed study commits and their README hashes.
 Four studies are complete: two mixed studies, one positive structural replication, and one qualified author-code feasibility reproduction.
 The remaining fourteen are incomplete; audited cohorts and operational launches do not add paper credit.
 The latest refresh verifies pushed Carrella, Blueprints and Lima heads, README hashes, and their committed JSON evidence files.
@@ -94,7 +95,7 @@ Evidence-file counts are inventory checks, not scientific acceptance criteria.
 
 - Richmond: all 84 native conditions audited; 6,600 population records and 162 resolution rows match the author archive exactly. The state audit reconciles 893,017 observations and 615,829 movements given observed destinations. Figures 11A–C are replotted; native illustrations differ from the released historical images. Original compiler provenance and source-rule fidelity remain unresolved. H100 performance does not establish V100 timing equivalence.
 
-The Need for Greed remains an additional source-audited candidate outside the eighteen study PRs.
+The Need for Greed remains an additional source-audited candidate outside the nineteen study PRs.
 Run overlap never adds independent seeds. Corrected-source sensitivities remain separate from historical reproduction.
 
 
