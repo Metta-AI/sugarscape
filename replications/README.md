@@ -307,3 +307,5 @@ All 953 router deliveries reconcile and all 799 identities are conserved. Visibl
 ## Additional candidate qualification
 
 [SocioVerse2 (2026)](source-audits/socioverse-2026-qualification/README.md) supplies a runnable Sugarscape benchmark. Ten reconstructed-seed rule controls execute, but the released evaluator and LLM settings need reconciliation with the paper before inference. This source qualification does not change the 18 study PRs or three completed studies.
+
+[The candidate's legacy comparison](source-audits/socioverse-legacy-comparison-2026-10-18/README.md) executes ten original Mesa controls and independently checks their metrics and movement/resource bounds. It identifies 134 changed capacity cells and different initialization/scheduling, so the rewrite is not treated as a historical model substitute.
