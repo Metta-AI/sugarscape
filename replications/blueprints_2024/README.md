@@ -936,3 +936,7 @@ rate, plus at most the normal 15-minute idle window ($0.144).
 Its collector is bounded separately and preserves sealed outputs.
 The existing [50,100) command remains live; no intervals overlap.
 The retry is pending capacity, so no new scientific outcome is claimed.
+
+### Bentham retry rebuilt after unrecoverable provider disk loss
+
+[The replacement record](results/runtime-bentham50k-replacement-2026-10-18) preserves the provider terminal state and corrects a runner-schema omission found during fresh setup. The original low50,000-step interval now executes on a fresh32GiB node. No completed input is credited before collection and audit.
