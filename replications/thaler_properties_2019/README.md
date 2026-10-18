@@ -1304,3 +1304,14 @@ zero metabolism. Population-only and isolated-observer executions agree at
 all 1,001 frames. The audit validates 456,185 individual agent observations;
 archive readback reproduces it exactly. No wave threshold was fitted and no
 additional paper or qualitative claim is counted as replicated.
+
+## Full temporal resolution of migration
+
+[Every-step profiles](results/migration-full-resolution-2026-10-18/README.md)
+show travelling bands in the recovered NetLogo captures that the ten-step plots obscure.
+The two Haskell controls were repeated with observation stride one; all 2,002 summary
+rows and 202 prior spatial frames agree exactly with the earlier runs.
+The full audit checks 294,792 agent and 5,207,202 cell observations without occupancy disagreements.
+The figures retain both the first 200 steps and the complete 1,000-step interval.
+Configuration and historical-source uncertainties remain; visual bands alone do not
+establish the appendix's comparative persistence claim or a completed study.
