@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T10:30:31.805291+00:00",
+  "as_of": "2026-10-18T10:53:43.354261+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -43,14 +43,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "22eeaca39ffee2293cb622843c73a40ecaeb69db",
+      "checked_commit": "e428e92e50f537982d85a01b3ca18b0eb092077b",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "6834b3f5c1b71b6a9aefb3eef567ceca3693e764df54b4263182147c1f68edad",
-      "json_evidence_files": 738,
-      "remaining_scope": "1,836/2,000 homogeneous and 868/1,200 deposited runtime inputs audited. Bentham 336/500 leaves 164 original homogeneous inputs. Runtime adds five inputs and 100,546 observations to 2,650,189 total. Full sweeps, longer horizons, remaining 332 deposited runtime inputs and the 100-input versus reported 500-input runtime schedule remain incomplete.",
+      "readme_sha256": "0afeddf653b140c6dc5b0068850d4581006234d2fe13cacd8f014a245a0ce222",
+      "json_evidence_files": 751,
+      "remaining_scope": "1,841/2,000 homogeneous and 868/1,200 runtime inputs audited. Bentham 341/500 leaves 159 original homogeneous inputs. Local retry supervisor stopped at its disk guard after 14 completions; 7 assigned inputs never started. Other bounded remote ensembles continue. Full sweeps, longer horizons, 332 remaining runtime inputs and the 100-input versus reported 500-input schedule remain incomplete.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T10:18:59.821665+00:00"
+      "checked_at": "2026-10-18T10:53:43.354261+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -206,13 +206,13 @@
       "study": "richmond_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/18",
       "status": "partial",
-      "checked_commit": "bcffbc82893df0985ddea11611eca0397394686a",
+      "checked_commit": "efea61e862346aed0b8a24a9dee677662ee2b0b5",
       "readme": "replications/richmond_2023/README.md",
-      "readme_sha256": "e835acd6e3eaa3f04ebb481971826057f26a7178884a430b594abdf5aebe64a6",
-      "json_evidence_files": 52,
-      "gzip_json_evidence_files": 1,
-      "remaining_scope": "All84native conditions audited:6600population records and162resolution rows exactly match author archive.893017state observations and615829moves reconcile given observed destinations after matching Linux initializer; source-winning movement omits wealth/metabolism transfer. Figure11A-C replotted; D-F native images differ from released historical images, whose original compiler/engine provenance remains incomplete. H100 timings do not establish V100 timing equivalence; full-paper completion remains unproven.",
-      "checked_at": "2026-10-18T02:28:25.414718+00:00"
+      "readme_sha256": "4c30b7046a2ad9f58a87f88a50e4a5b9b3a204f7a427babfca9c92d0ea04f1dc",
+      "json_evidence_files": 70,
+      "gzip_json_evidence_files": 2,
+      "remaining_scope": "All 84 native conditions and original archive comparisons retained. Paired input controls reproduce the GNU state file byte-for-byte. Clang 100-step accounting covers 888,920 observations and 617,910 moves; initial historical illustration matches 65,536/65,536 cells but later frames differ. Historical engine, visualization timing and GPU random streams remain unresolved. H100 timings do not establish V100 equivalence; no whole-paper verdict.",
+      "checked_at": "2026-10-18T10:53:43.354261+00:00"
     },
     {
       "study": "lima_2024",

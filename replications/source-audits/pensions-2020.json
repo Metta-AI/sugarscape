@@ -77,13 +77,12 @@
     "native_to_replicate_se_ratio": 0.2795084971874737,
     "finding": "Deposited workbook reproduces the script divisor based on128 conditions rather than10 replicate runs. This is an archived-analysis finding, not evidence about paper claims without the full text."
   },
-  "scope": "Archived-data reconstruction plus one completed native execution qualification. Full deposited 1280-input grid now running with explicit new seeds. Full paper remains unrecovered; no study completion or paper-level negative finding.",
+  "scope": "Archived-data reconstruction plus complete native execution of all1280 deposited inputs. Full paper remains unrecovered; no study completion or paper-level negative finding.",
   "remaining": [
     "Recover full paper and enumerate exact targets and model scope. Publisher note4 excludes social-services experiments from the paper.",
     "Verify source revision alignment and extract the full initialization, scheduling and measurement semantics.",
     "Preserve historical standard errors and report corrected replicate-based errors separately.",
-    "Declare new seeds: archived CSV contains run numbers but no random seeds.",
-    "Execute complete declared experiments and validate fork behavior separately from author-code execution."
+    "Validate independent fork behavior separately from the now-complete author-code execution."
   ],
   "reproduce_archive_audit": "python3 replications/source-audits/audit_pensions_workbook.py DIRECTORY_WITH_DEPOSITED_CSV_AND_XLSX NEW_AUDIT_JSON",
   "archive_audit_validation": "pensions-workbook-validation.json",
@@ -108,8 +107,8 @@
     "steps": 1000,
     "records_audited": 1003,
     "repeat_and_dense_endpoints_exact": true,
-    "full_ensemble": "128 conditions x 10 repetitions, 1000 steps; seeds20261018+run_number; one CPU,7200 seconds,512MiB Java heap; running, no credit.",
-    "active_ensemble_evidence": "pensions-native-ensemble-002",
-    "failed_ensemble_launch": "pensions-native-ensemble-001: XML metric ordering rejected before simulation; preserved, not counted."
+    "full_ensemble": "Complete:128 conditions x10 repetitions,1000 steps, seed20261018+run_number. All1280 runs and768 condition/metric comparisons audited; new seeds do not establish historical agreement.",
+    "failed_ensemble_launch": "pensions-native-ensemble-001: XML metric ordering rejected before simulation; preserved, not counted.",
+    "completed_ensemble_evidence": "pensions-native-complete-2026-10-18"
   }
 }
