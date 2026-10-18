@@ -856,3 +856,17 @@ replays one completed original seed and requires an exact full-trajectory hash m
 The local producer remains unchanged; no new seed interval has been assigned.
 A future parallel handoff must freeze disjoint inputs after rechecking the local producer.
 The qualification repeat itself adds no coverage or completion credit.
+
+### Prepared parallel-handoff safeguards
+
+`run_parallel_handoff.py` requires a typed handoff plan, local stop receipt, sealed completed ledger,
+and a successful cloud qualification whose actual compressed trajectory matches the pinned original hash.
+It verifies the local completed seed prefix and permits only its exact complement through index 499.
+The original single-seed runner and batch runner must match the qualified hashes.
+Thirty-two workers write separate one-input batches and preserve every process exit and log.
+Nonzero exits remain explicit, and the enclosing workflow fails if any input is unfinished.
+Execution receipts alone do not add coverage; existing trajectory auditors must validate every completed batch.
+
+The production launcher must impose an outer deadline before the instance lease expires,
+leaving time to seal and collect evidence. No production interval has been assigned or launched.
+Ruff and CLI checks pass; the actual parallel workflow remains unvalidated until qualification and handoff complete.
