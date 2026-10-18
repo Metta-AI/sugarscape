@@ -1,0 +1,41 @@
+{
+  "validated_runs": 2,
+  "required_interval_runs": 50,
+  "complete_interval": false,
+  "complete_group": false,
+  "model": "benthamHalfLookaheadBinary",
+  "steps": 50000,
+  "ordinal_interval": [
+    50,
+    52
+  ],
+  "counts": {
+    "dead": 0,
+    "worse": 0,
+    "better_or_equal": 2
+  },
+  "observations": 100002,
+  "results": [
+    {
+      "entry": "50000-benthamHalfLookaheadBinary5638416334164762511.config",
+      "seed": 5638416334164762511,
+      "observations": 50001,
+      "final_population": 1143,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "c12bf9c6016d6d3c34bb73455876f4cf5717500c7392e4c3536ec49e9a034225"
+    },
+    {
+      "entry": "50000-benthamHalfLookaheadBinary5640187196921781511.config",
+      "seed": 5640187196921781511,
+      "observations": 50001,
+      "final_population": 1353,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "af1bce817ad25eae39448ba9c0a3c1c4ea5729ec2d266ce923e766f915577f30"
+    }
+  ],
+  "ledger_sha256": "4f10faed3b2818758deeaf79f1065ae1382572bc2bfd08fefb29d1aebf89174e",
+  "manifest_sha256": "22d66a22ab38590cf668d0a83dbc13b8f38d9ec42c8801625decc30b127bad7c",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}

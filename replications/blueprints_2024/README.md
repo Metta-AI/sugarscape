@@ -10,8 +10,8 @@ The complete altruistic Table 3 row matches exactly: 344 extinct, 10 worse, and 
 also matches all 24,392 extracted vertices in Figures 4, 5, 7, 8 and 9.
 Figure 6 matches all 4,995 vertices under all-cause deaths; the released plotter's narrower definition does not match.
 All counted intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. The remaining homogeneous inputs are still required.
-Latest deposited-runtime coverage is **854/1,200 inputs and 2,199,311 observations**;
-[the terminal checkpoint](results/runtime-round2-terminal-2026-10-18/README.md) preserves both time-limit failures and all completed inputs.
+Latest deposited-runtime coverage is **856/1,200 inputs and 2,299,313 observations**;
+[the latest audited runtime prefix](results/runtime-bentham50k-high-2026-10-18/README.md) adds two complete 50,000-step Bentham inputs. Earlier terminal checkpoints retain their failures.
 Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
 
 [Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)
@@ -940,3 +940,7 @@ The retry is pending capacity, so no new scientific outcome is claimed.
 ### Bentham retry rebuilt after unrecoverable provider disk loss
 
 [The replacement record](results/runtime-bentham50k-replacement-2026-10-18) preserves the provider terminal state and corrects a runner-schema omission found during fresh setup. The original low50,000-step interval now executes on a fresh32GiB node. No completed input is credited before collection and audit.
+
+### Two complete Bentham 50,000-step runtime inputs
+
+[The recovered high-interval checkpoint](results/runtime-bentham50k-high-2026-10-18/README.md) adds 100,002 validated observations from original inputs [50,52). Exact reconciliation reaches 856/1,200 deposited runtime inputs without counting overlapping prefixes twice. The rest of [50,100) remains required.
