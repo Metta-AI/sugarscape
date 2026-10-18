@@ -1009,3 +1009,7 @@ Both workers reached their time limits; partial trajectories receive no credit. 
 [All 2,000 original homogeneous inputs](results/homogeneous-complete-2026-10-18) now pass audit, with 5,063,268 observations and no missing seeds.
 Bentham reaches at least the initial population in all 500 runs. Every original model retains its full seed schedule and extinction outcomes.
 Sweeps, longer horizons, runtime requirements, and remaining figure analysis still prevent whole-paper completion.
+
+## Runtime environment recovery
+
+[The restored-environment recovery](results/runtime-environment-recovery-2026-10-18) preserves the previous missing-Git failure and restores all required command-line dependencies before unchanged simulations. The fresh bounded continuation targets only unfinished original inputs. No new runtime completion is claimed until checkpoint audit.
