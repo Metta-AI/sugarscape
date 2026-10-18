@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T00:56:51.004696+00:00",
+  "as_of": "2026-10-18T01:19:28.825327+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -42,14 +42,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "512cb37ff649f8db6cf00344dd36eee79bf97ba3",
+      "checked_commit": "a532a8d72444ce28b177d8f7343ed78ea09ebb61",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "e4eb3b9b387efc57e9ac8199f0850ccda27df6accefbadcf1e949c6f1c8aa28a",
-      "json_evidence_files": 363,
-      "remaining_scope": "1,489/2,000 homogeneous inputs and849/1,200 deposited runtime inputs audited, with2,174,306 runtime observations. All overlaps match exactly and count once. Three homogeneous batches and bounded runtime continuations remain active. Full selfishness/heterogeneous sweeps, remaining homogeneous/runtime inputs, and deposited100-input versus reported500-seed timing mismatch remain unresolved.",
+      "readme_sha256": "98b69d16e1857023b62b750bba2f797f4b94f3a07c120cfe3c8ffac6c88fde68",
+      "json_evidence_files": 379,
+      "remaining_scope": "1,514/2,000 homogeneous inputs and 849/1,200 deposited runtime inputs audited. Complete Raw and Altruist Table3 rows reproduce; Altruist five figure paths match all24,392 vertices, and Figure6 matches all4,995 vertices only under all-cause deaths. Two homogeneous batches and bounded runtime continuations remain active. Full selfishness/heterogeneous sweeps, remaining homogeneous/runtime inputs, and deposited100-input versus reported500-seed timing mismatch remain unresolved.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T00:56:51.004696+00:00"
+      "checked_at": "2026-10-18T01:19:28.825327+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -180,26 +180,26 @@
     {
       "study": "thaler_properties_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/17",
-      "checked_commit": "5274356eec5d8283e9ccbe131c485d933877bb2b",
+      "checked_commit": "2328fc96844270bf6d5ac5ecc0c659464e7618c7",
       "status": "partial",
       "readme": "replications/thaler_properties_2019/README.md",
-      "readme_sha256": "83b41d98f0c2b73131eee288e22335a71e46ad6dc82b82033baea987a11b0c83",
-      "json_evidence_files": 2447,
+      "readme_sha256": "05ede5674de46b43d181994f739f939131db506d232ce81ac29e59251d5444b5",
+      "json_evidence_files": 2452,
       "gzip_json_evidence_files": 2,
-      "remaining_scope": "Historical and corrected full cohorts include100 inheritance pairs,400combat trajectories and200culture runs. Three corrected migration/pollution controls verify303frames with exact agent-cell alignment, but do not establish published qualitative claims. Original model suite remains running. Weaver comparison, approximate quantitative targets, scenario fidelity and whole-paper claim outcomes remain unresolved.",
-      "checked_at": "2026-10-18T00:56:51.004696+00:00"
+      "remaining_scope": "Historical and corrected full cohorts include100 inheritance pairs,400combat trajectories and200culture runs. Three corrected migration/pollution controls verify303frames with exact agent-cell alignment, but do not establish published qualitative claims. Original model suite remains running. Weaver comparison, approximate quantitative targets, scenario fidelity and whole-paper claim outcomes remain unresolved. Recovered NetLogo migration candidate qualified under unchanged preset2; differences from Haskell include population, metabolism, cluster size, and growback interval. Three runs audit456,185 agent observations with population-observer parity; historical2009 identity and wave claim unresolved.",
+      "checked_at": "2026-10-18T01:19:28.825327+00:00"
     },
     {
       "study": "richmond_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/18",
       "status": "running",
-      "checked_commit": "0421efd7a91919712b2e6cee054750dee70e5878",
+      "checked_commit": "dfbbe291702f81d5e32f0701e9b323b3e63e9876",
       "readme": "replications/richmond_2023/README.md",
-      "readme_sha256": "346a5f5f18ff7df4493d19f8b8649148dc482056e0e67f01aeac2a2eb0efaa38",
-      "json_evidence_files": 35,
+      "readme_sha256": "79e7fedd8a3aaba0c821b825ded63d9bcb55cc106de8f56e4f90c83d81d1a176",
+      "json_evidence_files": 39,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "Native full-grid sealed prefix matches3100author population observations across31/48scaling conditions; earlier qualification is not additional coverage. Full84-condition grid and queued state observer remain pending. State auditor is prepared but not yet qualified on complete capture. Initial resource geometry matches Clang generation; source-rule, state, hardware and timing comparisons remain incomplete.",
-      "checked_at": "2026-10-18T00:56:51.004696+00:00"
+      "remaining_scope": "47/48 full-grid scaling conditions audited with4,700/4,700 exact author population matches and94 reconciled means; previous31 conditions unchanged. Last scaling, occupation/resolution conditions, queued individual-state observer and Figure11/source-rule fidelity remain incomplete. H100 performance does not establish V100 timing equivalence.",
+      "checked_at": "2026-10-18T01:19:28.825327+00:00"
     }
   ],
   "study_prs": 16,
