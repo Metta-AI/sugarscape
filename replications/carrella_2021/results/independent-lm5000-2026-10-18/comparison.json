@@ -1,0 +1,37 @@
+{
+  "metric": "1 - mean fold RMSE / mean fold baseline RMSE",
+  "rows": [
+    {
+      "parameter": "initial.population",
+      "author_data_performance": 0.605727179472963,
+      "independent_data_performance": 0.608121356012328,
+      "same_baseline_rmse": true
+    },
+    {
+      "parameter": "pmut",
+      "author_data_performance": 0.278754101918764,
+      "independent_data_performance": 0.361315039351889,
+      "same_baseline_rmse": true
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "author_data_performance": 0.539299943115746,
+      "independent_data_performance": 0.554947743867318,
+      "same_baseline_rmse": true
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "author_data_performance": 0.545551698041189,
+      "independent_data_performance": 0.560681771013502,
+      "same_baseline_rmse": true
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "author_data_performance": 0.734455038867656,
+      "independent_data_performance": 0.754932798776968,
+      "same_baseline_rmse": true
+    }
+  ],
+  "scope": "Same original parameters and fold allocation; independent simulation statistics. Different random streams; no equivalence claim or whole-paper verdict.",
+  "completed_study": false
+}

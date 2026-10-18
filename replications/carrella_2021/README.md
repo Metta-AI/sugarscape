@@ -900,3 +900,26 @@ The replay emits five legacy `unnest()` interface warnings and one deprecated
 This identifies the first-fold warnings without changing the author estimator.
 It does not recover individual messages from the other four original folds
 or resolve independent-versus-author simulation differences.
+
+### Independent 5,000-input linear regression audited
+
+[The full-size workflow](results/independent-lm5000-2026-10-18) completes all
+five folds and validates 25,000 held-out parameter predictions, intervals and
+metrics. Its provenance audit checks 3,775,000 training/testing cells and
+recomputes baseline errors against the independent input table. Both audits
+reproduce byte-for-byte from the public native archive.
+
+| Parameter | Author-data performance | Independent-data performance |
+| --- | ---: | ---: |
+| Initial population | 0.605727 | 0.608121 |
+| Mutation probability | 0.278754 | 0.361315 |
+| Maximum sugar endowment | 0.539300 | 0.554948 |
+| Maximum spice endowment | 0.545552 | 0.560682 |
+| Reproduction wealth | 0.734455 | 0.754933 |
+
+Both required linear-regression sizes are now audited. Performance remains
+a descriptive comparison across different simulation random streams; no
+new acceptance margin is introduced. The original 200-bootstrap interval
+procedure is retained. Rejection-ABC estimation on the same independent table
+is running at both sizes with immediate warning capture and one-hour bounds
+per size. Other estimator methods and paper-level interpretation remain open.
