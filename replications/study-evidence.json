@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T23:45:52.989618+00:00",
+  "as_of": "2026-10-18T23:52:52.035761+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -43,14 +43,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "72468cffea7c5ef71a2ef87ed608afc1fb77d45c",
+      "checked_commit": "c840c9b2315c259f48ad146168ac518aef4b011c",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "f7a0fd1d6f4baa096351a025d2518529751e388ce07f68e29af44c35f63568a2",
-      "json_evidence_files": 1097,
-      "remaining_scope": "All 2,000 homogeneous inputs and four Table3 count rows audited. Deposited runtime coverage now 880/1,200 inputs and 2,951,160 observations; distinct from paper Table6 500-seed schedule. Supplement inventory now 60 distinct inputs, 99,940 remaining; selfishness0.37 is53/500. Latest25 supplementary inputs validate120,191 observations, including native extinction at166. Planner now recognizes audited extinction and checks contiguous times and native terminal population; prior35-input inventory and remaining CSV unchanged except planner hash. Runtime checkpoint7 adds three inputs/100,172 observations after exact overlap reconciliation. Existing bounded producers continue. Full mixed/selfishness sweeps, long horizons, runtime claims and nonhomogeneous figures remain incomplete; no new completion credit.",
+      "readme_sha256": "ddde2f7285f358760a38f3d83bda853ccd0f972f3645a6e044dbe929f06a4d1e",
+      "json_evidence_files": 1136,
+      "remaining_scope": "All 2,000 homogeneous inputs and four Table3 count rows audited. Deposited runtime coverage now 880/1,200 inputs and 2,951,160 observations; distinct from paper Table6 500-seed schedule. Supplement inventory now 60 distinct inputs, 99,940 remaining; selfishness0.37 is53/500. Latest25 supplementary inputs validate120,191 observations, including native extinction at166. Planner now recognizes audited extinction and checks contiguous times and native terminal population; prior35-input inventory and remaining CSV unchanged except planner hash. Runtime checkpoint7 adds three inputs/100,172 observations after exact overlap reconciliation. Existing bounded producers continue. Full mixed/selfishness sweeps, long horizons, runtime claims and nonhomogeneous figures remain incomplete; no new completion credit. Latest checkpoints add 25 disjoint supplementary inputs (120190 observations, one native extinction) and one runtime input (50001 observations); seven runtime overlaps match exactly. Supplementary coverage now85/100000 and condition0.37 78/500. Runtime coverage now881/1200,3001161 observations. Full sweeps and paper500-seed runtime protocol remain incomplete.",
       "gzip_json_evidence_files": 38,
-      "checked_at": "2026-10-18T23:30:43.688549+00:00",
+      "checked_at": "2026-10-18T23:52:52.035761+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/blueprints_2024"
     },
     {
@@ -260,15 +260,15 @@
     {
       "study": "springer_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/22",
-      "checked_commit": "aff558f52f1067ebcf79fe75722282c45c2d01e4",
+      "checked_commit": "5d6d684258ade61a39575959c831246e73dbb27d",
       "status": "partial",
       "readme": "replications/springer_2019/README.md",
-      "readme_sha256": "a0aeef8dd265e5dcd63c982f1ecd856a7113fa5e4a577c8ab768d7654770366e",
-      "json_evidence_files": 66,
+      "readme_sha256": "fc04cd4e461b1568d15f28062c72ed020147185cc9bbb915fdf2ec8e154562b6",
+      "json_evidence_files": 79,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T23:45:52.989618+00:00",
+      "checked_at": "2026-10-18T23:52:52.035761+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/springer_2019",
-      "remaining_scope": "Publisher artifact checksum verified. Four attempts and 18 native executions audited; final H100/CUDA11.8 qualification builds all three implementations and completes six 10,000-step executions on a 32x32 grid. Archived library conflicts and compiler failures preserved. Four author-derived template keywords and two explicit template arguments change allocator headers only; model files remain unchanged. Native checksum is not full-state validation. Independent state checks, all allocator variants, full 1700x1700 timing, matched-heap capacity searches and published claim comparisons remain outstanding. Bounded progress diagnostics finished; no completion credit. Heap-source audit confirms nominal 8GiB allocates 6GiB BitmapAlloc data storage; DynaSOAr uses object capacity and compiled block size. Qualification layout extrapolates 1,627,389,952 default data-buffer bytes, with additional metadata; full default allocation not measured. Artifact Figure11 instructions use DynaSOAr total allocator memory as comparator budget. Match actual budgets before capacity claims. Published Figure10 seven total times and Figure11 six capacity ratios now extracted from pinned vector geometry. Full-size debug execution timed out at 600 seconds; no release timing started. Raw archive and audit preserved. Corrected external adapter qualification builds all four variants: CUDA and Bitmap each pass two executions; mallocMC asserts and Halloc segfaults twice. Exactly eight dependent-template keywords added; runtime failures remain unresolved. Progress diagnostic cmd-cyq9u completed: small control passes; full debug and release each time out at agent-creation synchronization before timestep zero. Compute90 comparison cmd-fkcmt fails small-control active-mask assertion and gates full-size probes. Both archives downloaded, 511 qualified source hashes and all binary hashes audited. Our Python3.8 runner syntax failure remains preserved. Diagnostic output is not benchmark evidence. Author arXiv source supplies exact plotted timings and baseline raw repeats; baseline plots use minimum. Capacity script requires explicit normalization to match the published plot. No completion credit."
+      "remaining_scope": "Publisher artifact checksum verified. Four attempts and 18 native executions audited; final H100/CUDA11.8 qualification builds all three implementations and completes six 10,000-step executions on a 32x32 grid. Archived library conflicts and compiler failures preserved. Four author-derived template keywords and two explicit template arguments change allocator headers only; model files remain unchanged. Native checksum is not full-state validation. Independent state checks, all allocator variants, full 1700x1700 timing, matched-heap capacity searches and published claim comparisons remain outstanding. Bounded progress diagnostics finished; no completion credit. Heap-source audit confirms nominal 8GiB allocates 6GiB BitmapAlloc data storage; DynaSOAr uses object capacity and compiled block size. Qualification layout extrapolates 1,627,389,952 default data-buffer bytes, with additional metadata; full default allocation not measured. Artifact Figure11 instructions use DynaSOAr total allocator memory as comparator budget. Match actual budgets before capacity claims. Published Figure10 seven total times and Figure11 six capacity ratios now extracted from pinned vector geometry. Full-size debug execution timed out at 600 seconds; no release timing started. Raw archive and audit preserved. Corrected external adapter qualification builds all four variants: CUDA and Bitmap each pass two executions; mallocMC asserts and Halloc segfaults twice. Exactly eight dependent-template keywords added; runtime failures remain unresolved. Progress diagnostic cmd-cyq9u completed: small control passes; full debug and release each time out at agent-creation synchronization before timestep zero. Compute90 comparison cmd-fkcmt fails small-control active-mask assertion and gates full-size probes. Both archives downloaded, 511 qualified source hashes and all binary hashes audited. Our Python3.8 runner syntax failure remains preserved. Diagnostic output is not benchmark evidence. Author arXiv source supplies exact plotted timings and baseline raw repeats; baseline plots use minimum. Capacity script requires explicit normalization to match the published plot. No completion credit. Original native90 release control completes32x32 but full1700 release times out at agent creation; full debug asserts. Command cmd-3ga3h complete and sealed archive hash-verified; no allocator edits. Small-grid control and allocator capacity remain confounded. First wake missing-Python failure preserved; setup restored before simulation."
     }
   ],
   "study_prs": 19,
