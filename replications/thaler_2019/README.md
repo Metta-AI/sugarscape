@@ -817,3 +817,9 @@ Time83 is the only exact match in the declared 0–100 diagnostic window; repeat
 All 2,299 visible unoccupied cells separate exactly by native sugar level, and the original MATLAB vector independently matches all 50 Figure 5b values.
 The caption names time 50. This resolves the previous population-count disagreement as a temporal-alignment issue, with limits on original capture provenance.
 Earlier unresolved Figure 5a sections above describe historical evidence. Retry-ratio and performance interpretation remain required before a whole-paper verdict.
+
+### Original Criterion retry-collection control
+
+[A bounded protocol comparison](results/criterion-retry-control-launch-2026-10-18) tests the author's repeated Criterion workflow against fresh single-iteration processes at 32 capabilities.
+It reuses the audited instrumented binary on the matching instance class and preserves every cumulative and per-simulation counter.
+The six-process diagnostic is ongoing; it does not yet change the retry verdict or add timing evidence.
