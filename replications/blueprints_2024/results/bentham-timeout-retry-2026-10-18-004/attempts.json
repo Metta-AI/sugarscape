@@ -1,0 +1,26 @@
+[
+  {
+    "index": 216,
+    "seed": 4191298840464005437,
+    "command": [
+      "/opt/homebrew/bin/gtimeout",
+      "--signal=TERM",
+      "--kill-after=30",
+      "7200",
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/run_batch.py",
+      "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/blueprints-homogeneous.zip",
+      "benthamHalfLookaheadBinary",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-timeout-retry-001/input-216",
+      "--start",
+      "216",
+      "--stop",
+      "217"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1404.1386804160138,
+    "completed_ledger_sha256": "07192f720d816606980e09345b29dd4d125fc9f9cb51a8f6ce82c55deaa7782e",
+    "audit_sha256": "688b15a380359a8d5d08fb3e2647c909b81975358e41bb5346ec880e32b7e3a9"
+  }
+]

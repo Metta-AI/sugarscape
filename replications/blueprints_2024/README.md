@@ -2,9 +2,9 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
-Latest audited checkpoint: **1,835 / 2,000 homogeneous configurations**.
+Latest audited checkpoint: **1,836 / 2,000 homogeneous configurations**.
 The raw, altruistic, and egoistic ensembles each contain all 500 inputs; Bentham has 335.
-[The latest union](results/bentham-timeout-retry-2026-10-18-003) reconciles overlapping evidence without double counting.
+[The latest union](results/bentham-timeout-retry-2026-10-18-004) reconciles overlapping evidence without double counting.
 The complete egoistic Table 3 row matches exactly: 331 extinct, 5 worse, and 164 better.
 [Its full figure comparison](results/egoistic-figures-2026-10-18/README.md) matches 24,432 vertices in five figures and 4,992 Figure 6 vertices under all-cause deaths.
 The released plotter death-definition mismatch remains documented.
@@ -971,3 +971,9 @@ An incomplete allocation exits 124 and preserves all partial outputs. Historical
 ### Two additional original Bentham retries
 
 [Inputs 197 and 203](results/bentham-timeout-retry-2026-10-18-003) add 10,002 audited observations and complete all 5,000 steps. Exact deduplication reaches 1,835/2,000 homogeneous inputs, including Bentham 335/500. All remaining inputs and other paper experiments remain required.
+
+## Ninth original-input timeout recovery
+
+[Input 216](results/bentham-timeout-retry-2026-10-18-004) adds 5,001 independently audited observations over the unchanged 5,000-step horizon.
+The deduplicated ensemble now contains 1,836/2,000 inputs, including Bentham 336/500.
+All 164 missing Bentham inputs and the remaining paper experiments are still required.
