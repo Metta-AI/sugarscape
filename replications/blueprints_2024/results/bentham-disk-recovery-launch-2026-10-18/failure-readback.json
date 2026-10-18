@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "stderr": "",
+  "stdout": "Prepared 5 packages in 61ms\nInstalled 5 packages in 0.95ms\n + annotated-types==0.8.0\n + pydantic==2.12.3\n + pydantic-core==2.41.4\n + typing-extensions==4.16.0\n + typing-inspection==0.4.4\nCloning into 'engine'...\nHEAD is now at b9ca671 v2024.1 release\nTraceback (most recent call last):\n  File \"/root/sugarscape/blueprints-bentham-disk-recovery-001/audit_batch.py\", line 41, in <module>\n    assert source[\"source_sha256\"] == source_pins[\"source_sha256\"], \"Recorded source differs from pinned release\"\n                                      ~~~~~~~~~~~^^^^^^^^^^^^^^^^^\nKeyError: 'source_sha256'\nTraceback (most recent call last):\n  File \"/root/sugarscape/blueprints-bentham-disk-recovery-001/qualify.py\", line 14, in <module>\n    subprocess.run([sys.executable,'audit_batch.py','blueprints-homogeneous.zip','qualification/complete-final/input-60','qualification/complete-audit'],check=True)\n  File \"/root/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['/root/sugarscape/blueprints-bentham-disk-recovery-001/venv/bin/python', 'audit_batch.py', 'blueprints-homogeneous.zip', 'qualification/complete-final/input-60', 'qualification/complete-audit']' returned non-zero exit status 1.\n",
+  "timing_ms": {
+    "exec": 204
+  },
+  "truncated": false
+}

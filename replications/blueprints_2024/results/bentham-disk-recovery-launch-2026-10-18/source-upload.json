@@ -1,0 +1,11 @@
+{
+  "bytes_written": 855,
+  "note": "files under ~ survive stop_node and wake (the tmux contract). The file was hashed on the node and matched sha256 before it landed - compare that digest with your local one to prove the transfer was clean.",
+  "path": "/root/correct-source-sha256.json",
+  "sha256": "1991484a4be6cbccfb57c29efa2c5aaa5f173882a4d795ae226122c3f8b964b8",
+  "sha256_verified": true,
+  "timing_ms": {
+    "exec": 124
+  },
+  "written": true
+}
