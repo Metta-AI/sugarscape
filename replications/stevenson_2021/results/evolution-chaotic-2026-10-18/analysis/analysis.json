@@ -1,0 +1,72 @@
+{
+  "scenario": "chaotic",
+  "minimum_infertility": 1,
+  "complete_runs": 100,
+  "native_cycles": 50000,
+  "audited_inheritance_events": 20018826,
+  "comparison_vertices": 0,
+  "cycle499_summary": {
+    "population": {
+      "cycle": 499,
+      "mean": 888.74,
+      "minimum": 178.0,
+      "maximum": 1839.0,
+      "p2_5": 214.25,
+      "p97_5": 1754.2249999999995
+    },
+    "wealth": {
+      "cycle": 499,
+      "mean": 438.42,
+      "minimum": 6.0,
+      "maximum": 1234.0,
+      "p2_5": 13.95,
+      "p97_5": 1193.3
+    },
+    "gini": {
+      "cycle": 499,
+      "mean": 0.7391732179495564,
+      "minimum": 0.5940767114419809,
+      "maximum": 0.981159420289855,
+      "p2_5": 0.6146826374402545,
+      "p97_5": 0.948535621875869
+    },
+    "minimum_infertility": {
+      "cycle": 499,
+      "mean": 888.74,
+      "minimum": 178.0,
+      "maximum": 1839.0,
+      "p2_5": 214.25,
+      "p97_5": 1754.2249999999995
+    },
+    "birth_cost_0": {
+      "cycle": 499,
+      "mean": 888.74,
+      "minimum": 178.0,
+      "maximum": 1839.0,
+      "p2_5": 214.25,
+      "p97_5": 1754.2249999999995
+    },
+    "joint_optimum": {
+      "cycle": 499,
+      "mean": 888.74,
+      "minimum": 178.0,
+      "maximum": 1839.0,
+      "p2_5": 214.25,
+      "p97_5": 1754.2249999999995
+    },
+    "mean_age": {
+      "cycle": 499,
+      "mean": 1.3944007627475288,
+      "minimum": 1.0266666666666666,
+      "maximum": 2.220125786163522,
+      "p2_5": 1.0729057988317843,
+      "p97_5": 2.0012425644415064
+    }
+  },
+  "all_optimal_at_cycle499": 100,
+  "scope": "Conditional reconstruction with declared inheritance and initialization assumptions. Pointwise central ensemble ranges are descriptive, not simultaneous confidence intervals or paper acceptance criteria. Generation equals action cycle only by assumption. No steady-state or whole-paper replication claim.",
+  "sha256": {
+    "ensemble.npz": "6b2be84c98c1c293dd11b97a8749ff23522d428a0531274e2c51b256bcd38db4",
+    "comparison.csv": "66c003796c3cd7fb83b8c4d3b4112ad6c725efee6f7bcc8e34d0fc49ec595581"
+  }
+}

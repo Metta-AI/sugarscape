@@ -20,7 +20,7 @@ The following operational choices require comparison against author code or sens
 - Use `std::mt19937_64` and the standard-library shuffle/distributions. Replay identity is limited to the recorded compiler/library environment.
 
 The fixed-parameter simulator adds no mutation, inheritance changes, age-based mortality, or maximum lifespan.
-A separate conditional inherited-trait extension now implements the stable evolutionary scenario; historical rules and the chaotic scenario remain unresolved.
+A separate conditional inherited-trait extension now implements both evolutionary parameter cases; historical rules, growth-rate and steady-state targets remain unresolved.
 
 ## Pilot protocol
 
@@ -431,3 +431,12 @@ All runs select infertility 10 and birth cost zero by cycle 499 under the declar
 Mean population, age, wealth, and Gini at that cycle are 856.38, 12.7652, 492.55, and 0.693396.
 The four labelled Figure 4 curves supply 1,988 comparison vertices; pointwise ranges remain descriptive.
 This implements one evolutionary scenario conditionally. It does not establish the original inheritance rules, steady-state sampling, chaotic scenario, or whole-paper replication.
+
+## Conditional chaotic-parameter evolution
+
+[The second 100-seed ensemble](results/evolution-chaotic-2026-10-18) completes another 50,000 cycles and audits 20,018,826 inheritance events.
+Infertility initially ranges from 1–10; birth costs range from 0–90 in tens. Both pass unchanged to offspring.
+All runs select infertility1/birthcost0 by cycle499 under the declared assumptions.
+Cycle499 population ranges from 178 to 1,839, with means population888.74, age1.39440, wealth438.42, and Gini0.739173.
+The original stable figure is not treated as a numerical target for this case.
+Both evolutionary cases are now conditionally implemented; historical settings, sampling, intrinsic growth rates and full paper-level agreement remain unresolved.

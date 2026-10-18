@@ -11,18 +11,22 @@ import time
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("experiment", type=Path)
+parser.add_argument("--scenario", choices=["stable", "chaotic"], default="stable")
 args = parser.parse_args()
+fertility_step = 10 if args.scenario == "stable" else 1
 root = args.experiment.resolve()
 repo = Path(__file__).resolve().parent
 protocol = {
-    "scope": "Conditional Figure 4 reconstruction, not recovered author code or Table 1 steady-state replication.",
+    "scope": "Conditional inherited-trait reconstruction, not recovered author code or Table 1 steady-state replication.",
+    "scenario": args.scenario,
+    "infertility_values": [fertility_step * i for i in range(1, 11)],
     "initial_population": 830,
     "cycles": 500,
     "record_every": 1,
     "seeds": list(range(100)),
     "workers": 2,
     "per_run_timeout_seconds": 60,
-    "initialization": "Distinct uniformly sampled cells by rejection sampling; zero wealth and age; independently uniform infertility in 10,20,...100 and birth cost in 0,10,...90.",
+    "initialization": "Distinct uniformly sampled cells by rejection sampling; zero wealth and age; independently uniform infertility over the declared ten values and birth cost in 0,10,...90. The chaotic case reuses the stable initial population as an unverified sensitivity choice.",
     "inheritance": "Newborn inherits both exact parental traits; no mutation, no trait reassignment, zero newborn wealth and age.",
     "conventions": "All fixed-model movement, scheduling, reproduction equality and regrowth rules retained. One recorded generation is assumed to be one action cycle for this reconstruction only.",
     "remaining_uncertainty": "Author initialization, joint trait assignment, inheritance/mutation and generation meaning unresolved. No fitted seeds or paper agreement threshold.",
@@ -109,7 +113,7 @@ def execute(seed):
     command = [
         str(root / "model/evolution"),
         str(seed),
-        "10",
+        str(fertility_step),
         "10",
         "500",
         "1",
@@ -152,7 +156,9 @@ def execute(seed):
             identity = int(r["id"])
             pair = (int(r["infertility"]), int(r["birth_cost"]))
             count = int(r["count"])
-            assert pair[0] in range(10, 101, 10) and pair[1] in range(0, 91, 10)
+            assert pair[0] in protocol["infertility_values"] and pair[1] in range(
+                0, 91, 10
+            )
             if r["kind"] == "initial":
                 assert cycle == 0 and identity not in traits and count == 1
                 traits[identity] = pair

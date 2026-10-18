@@ -13,7 +13,9 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("experiment", type=Path)
 parser.add_argument("figure", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--scenario", choices=["stable", "chaotic"], default="stable")
 args = parser.parse_args()
+minimum_fertility = 10 if args.scenario == "stable" else 1
 protocol = json.loads((args.experiment / "protocol.json").read_text())
 assert protocol["seeds"] == list(range(100)) and protocol["cycles"] == 500
 manifest = json.loads((args.experiment / "manifest.json").read_text())
@@ -33,6 +35,8 @@ for record in ledger:
     seed = record["seed"]
     root = args.experiment / "runs" / str(seed)
     assert record["cycles"] == 500
+    command = json.loads((root / "exit.json").read_text())["command"]
+    assert command[2:6] == [str(minimum_fertility), "10", "500", "1"]
     for name, digest in record["sha256"].items():
         assert hashlib.sha256((root / name).read_bytes()).hexdigest() == digest
     with (root / "aggregate.csv").open() as stream:
@@ -52,11 +56,11 @@ for record in ledger:
             f = int(r["infertility"])
             cost = int(r["birth_cost"])
             n = int(r["count"])
-            if f == 10:
+            if f == minimum_fertility:
                 values[seed, t, 3] += n
             if cost == 0:
                 values[seed, t, 4] += n
-            if f == 10 and cost == 0:
+            if f == minimum_fertility and cost == 0:
                 values[seed, t, 5] += n
 assert np.isfinite(values).all()
 args.output.mkdir(parents=True, exist_ok=False)
@@ -65,12 +69,17 @@ with np.load(args.output / "ensemble.npz") as restored:
     assert np.array_equal(restored["values"], values)
 figure = json.loads((args.figure / "audit.json").read_text())
 rows = []
-for name, column in [
-    ("infertility_10", 3),
-    ("birth_cost_0", 4),
-    ("wealth", 1),
-    ("gini", 2),
-]:
+comparison_series = (
+    [
+        ("infertility_10", 3),
+        ("birth_cost_0", 4),
+        ("wealth", 1),
+        ("gini", 2),
+    ]
+    if args.scenario == "stable"
+    else []
+)
+for name, column in comparison_series:
     entry = next(r for r in figure["series"] if r["series"] == name)
     path = args.figure / (name + ".csv.gz")
     assert hashlib.sha256(path.read_bytes()).hexdigest() == entry["sha256"]
@@ -95,7 +104,19 @@ for name, column in [
                 }
             )
 with (args.output / "comparison.csv").open("x", newline="") as stream:
-    writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
+    writer = csv.DictWriter(
+        stream,
+        fieldnames=[
+            "series",
+            "approximate_published_generation",
+            "assumed_action_cycle",
+            "published_value",
+            "ensemble_mean",
+            "ensemble_p2_5",
+            "ensemble_p97_5",
+        ],
+        lineterminator="\n",
+    )
     writer.writeheader()
     writer.writerows(rows)
 summary = {}
@@ -103,7 +124,7 @@ for name, column in [
     ("population", 0),
     ("wealth", 1),
     ("gini", 2),
-    ("infertility_10", 3),
+    ("minimum_infertility", 3),
     ("birth_cost_0", 4),
     ("joint_optimum", 5),
     ("mean_age", 6),
@@ -118,6 +139,8 @@ for name, column in [
         "p97_5": float(np.percentile(samples, 97.5)),
     }
 report = {
+    "scenario": args.scenario,
+    "minimum_infertility": minimum_fertility,
     "complete_runs": 100,
     "native_cycles": 50000,
     "audited_inheritance_events": sum(r["inheritance_events"] for r in ledger),
