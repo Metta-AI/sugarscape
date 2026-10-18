@@ -19,14 +19,14 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "1ba097490261934fb3430cebac5d6e008ccb25af",
+      "checked_commit": "ec6c55647153f906129d233f72333b3d92012bd7",
       "status": "partial",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "f2bd7473c56529af0b80cde52e798209ff9392b2ff8b6fd96c23c857042a89a3",
-      "json_evidence_files": 260,
-      "remaining_scope": "All 5000 independent simulations and 750000 statistics audited. Six estimator families complete required sizes. GAM1250 completes all five folds and 6250 predictions; paired author/independent comparison reproduces neither set of five printed targets. GAM5000, neural-network and bootstrap-forest workflows remain unfinished; historical discrepancies remain unresolved.",
+      "readme_sha256": "a378e8a4969b585d85918b64e68f3041455a516c457be65274597ecc3a74e34c",
+      "json_evidence_files": 270,
+      "remaining_scope": "All 5,000 independent simulations and 750,000 statistics audited. Seven estimator families complete required sizes, including GAM at 1,250 and 5,000 inputs. GAM 5,000 has 25,000 paired predictions; neither dataset matches the five printed targets. Bootstrap-forest at 1,250 inputs completes 6,250 predictions and matches one of five printed scores. Neural-network and bootstrap-forest at 5,000 inputs remain active; historical discrepancies remain unresolved.",
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T09:17:19.383961+00:00"
+      "checked_at": "2026-10-18T10:18:52.467820+00:00"
     },
     {
       "study": "raimbault_2019",
@@ -43,14 +43,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "b1813eb261180f41c8b8f6251a5bfbd4d81d3ced",
+      "checked_commit": "22eeaca39ffee2293cb622843c73a40ecaeb69db",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "0d54f85b9738413d463450162217c78399693d4bc950ba78e902d173d37db688",
-      "json_evidence_files": 730,
-      "remaining_scope": "1836/2000 homogeneous and 863/1200 deposited runtime inputs audited. Bentham 336/500 leaves 164 original homogeneous inputs. Full selfishness/mixed-society sweeps, longer horizons, remaining runtime inputs and deposited 100-input versus reported 500-input runtime schedule remain incomplete.",
+      "readme_sha256": "6834b3f5c1b71b6a9aefb3eef567ceca3693e764df54b4263182147c1f68edad",
+      "json_evidence_files": 738,
+      "remaining_scope": "1,836/2,000 homogeneous and 868/1,200 deposited runtime inputs audited. Bentham 336/500 leaves 164 original homogeneous inputs. Runtime adds five inputs and 100,546 observations to 2,650,189 total. Full sweeps, longer horizons, remaining 332 deposited runtime inputs and the 100-input versus reported 500-input runtime schedule remain incomplete.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T09:57:08.109954+00:00"
+      "checked_at": "2026-10-18T10:18:59.821665+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -218,13 +218,13 @@
       "study": "lima_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/19",
       "status": "partial",
-      "checked_commit": "043d70331d49a79c1eb10631b7ae86e8bade204c",
+      "checked_commit": "e4424274f553a7a69f7a4cbaa49a246d24f3204e",
       "readme": "replications/lima_2024/README.md",
-      "readme_sha256": "459ae8a7691143ac833240f487136349d2ebd226395a54bd69a4c216296ef005",
-      "json_evidence_files": 50,
+      "readme_sha256": "e7c1110fce3d625179dd88097ff7795deede64c641f1bdfcb3099155791a027f",
+      "json_evidence_files": 60,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "Original and portable container, host-native and checkpoint-control trajectories audited. Portable control:953 deliveries,799 conserved identities,39 preserved plans; score remains1 instead of2. Portable execution verified. Visible GUI, historical runtime fidelity and lifecycle interpretation remain unresolved; failed collection gets no trajectory credit.",
-      "checked_at": "2026-10-18T05:12:48.530539+00:00"
+      "remaining_scope": "Original and portable container, host-native and checkpoint-control trajectories audited. Portable control preserves 953 deliveries, 799 identities and 39 plans; score remains 1 instead of 2. Native GUI now directly observed with two screenshots and process provenance. Fresh visual scenario still running; full-run reconciliation, historical runtime fidelity and lifecycle interpretation remain unresolved.",
+      "checked_at": "2026-10-18T10:19:00.439186+00:00"
     },
     {
       "study": "openabl_2021",
