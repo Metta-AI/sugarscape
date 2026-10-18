@@ -24,7 +24,7 @@ public class RunEnsemble {
                 for (double rate : new double[]{0, 0.25, 0.5, 0.75}) {
                     for (int phase : new int[]{0, 4}) {
                         for (boolean clipped : new boolean[]{false, true}) {
-                            workspace.command("setup-experiment " + seed + " " + rate + " " + phase + " " + clipped);
+                            workspace.command("setup-experiment " + seed + " (n-values 200 [" + rate + "]) " + phase + " " + clipped);
                             for (int step = 0; step <= 50; step++) {
                                 String state = workspace.report("survivor-state").toString();
                                 byte[] hash = digest.digest(state.getBytes(StandardCharsets.UTF_8));

@@ -26,6 +26,10 @@ The adaptation changes the bundled model's growback-before-movement and immediat
 5. Advance time.
 
 The model runs all 50 steps, including after extinction.
+A policy has 200 entries, indexed by `20 * cycle + 5 * class + capacity`.
+Cycles are 0–9; classes are LL, LH, HL, HH; capacities are 0–4.
+Low vision is 1–3 and low metabolism is 1–2, following Appendix B.
+The native model selects the current patch capacity and agent class at each tax step.
 Literal payment is `min(wealth, ceiling(rate * wealth))`.
 A separate clipping sensitivity changes only payment to its maximum with zero.
 Two clock phases are explicit: phase 0 taxes after moves 1, 6, ..., 46; phase 4 taxes after moves 5, 10, ..., 50.
@@ -60,9 +64,33 @@ python build_model.py \
   /path/to/verified/sugar-map.txt /path/to/new-model
 python run_ensemble.py /path/to/java-home /path/to/NetLogo-5.3.1/app \
   /path/to/new-model/oremland.nlogo /path/to/new-run \
-  --seeds 100 --seconds 1800 --timeout /path/to/timeout
+  --seeds 100 --seconds 1800 --timeout /path/to/timeout uniform
 python audit_ensemble.py /path/to/new-run/runs/trajectory.csv 100 /path/to/new-run/audit.json
 ```
+
+## Heterogeneous-policy execution
+
+`RunPolicy.java` executes a supplied 200-line rate file and records every native tax event.
+The launcher selects it with the `policy` subcommand:
+
+```sh
+python run_ensemble.py /path/to/java-home /path/to/NetLogo-5.3.1/app \
+  /path/to/new-model/oremland.nlogo /path/to/new-policy-run \
+  --seeds 100 --seconds 1800 --timeout /path/to/timeout policy /path/to/policy.txt
+python audit_policy.py /path/to/new-policy-run 100 /path/to/new-policy-run/audit.json
+```
+
+[The policy-indexing evidence](results/policy-indexing-2026-10-18) includes a full 1,600-run uniform regression: all 81,600 observations are byte-identical to the earlier scalar-tax implementation.
+
+One generated policy completed 400 full runs across 100 seeds, both clock phases, and both payment treatments.
+The independent audit reconstructs all 500,936 tax events from agent attributes, patch capacity, cycle, and supplied rates.
+It checks every payment, per-step event count, aggregate revenue, and 10,200 paired survivor states.
+The native runs also verify a 50×50 torus through distance queries across both boundaries.
+
+The runs visited 139 of 200 policy entries. The remaining 61 are explicitly listed in the audit; no event-level coverage is claimed for them.
+The policy uses Python `random.Random(20261018)` with 200 draws of `randrange(4) / 4`; its actual rate vector and hash are retained.
+This is a generated diagnostic policy, not one of the paper's original controls.
+The public launcher repeats seed 1 exactly: 204 state observations and 4,846 tax events agree with the larger ensemble.
 
 ## Remaining paper scope
 
