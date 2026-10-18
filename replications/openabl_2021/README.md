@@ -149,3 +149,21 @@ This resolves how a historical reference can yield the published345-line value;
 it does not establish the exact author checkout. OpenABL's154-line value remains
 unresolved. The manual FLAME GPU reference is separate from OpenABL-generated
 FLAME GPU benchmark code, so its behavior does not determine those timings.
+
+## Independent initialization reconstruction
+
+`initialize.py` reconstructs the released C generator's seeded xorshift sequence,
+integer sampling, Gaussian resource map, occupancy, and initial wealth. It matches
+all1,800 native initialization fields for the225-cell condition, consuming481
+random draws. [The audit](native-condition/initialization-audit.json) records the
+final generator state and input/source hashes.
+
+```sh
+python3 initialize.py evidence/threads-1/initial.json initialization.json --requested-cells 250
+```
+
+Together with the four-stage replay, this validates the complete initial-to-final
+path for this condition. It does not establish equivalence at other sizes or
+with MASON's different generator. The released integer generator omits the lower
+offset for power-of-two ranges; that defect does not affect these default calls,
+whose power-of-two ranges all begin at zero. The reconstruction preserves it.
