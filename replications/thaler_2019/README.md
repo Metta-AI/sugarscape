@@ -667,3 +667,10 @@ All four native measurements reconstruct R-squared 0.999874136128 and pass the f
 Source, binary and archive hashes pass; a fresh extraction reproduces the audit byte-for-byte.
 Five timing conditions and all thirty retry processes remain required.
 This does not establish historical hardware isolation, full scaling or paper completion.
+
+### Table 9: second sealed timing condition
+
+[Two-condition evidence](results/table9-two-conditions-2026-10-18) verifies eight
+raw measurements. The 16-capability rebirth fit is 66.010451 seconds, with
+R-squared 0.999935623439. Both completed conditions pass their first fit attempt.
+Four timing conditions and thirty retry processes remain outstanding.
