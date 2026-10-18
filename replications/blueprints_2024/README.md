@@ -2,9 +2,10 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
-Latest audited checkpoint: **1,489 / 2,000 homogeneous configurations**, covering 2,991,396 observations.
-The raw ensemble is complete at 500 inputs; original-seed prefixes are altruistic 475, egoistic 381, and Bentham 133.
-[Checkpoint evidence](results/homogeneous-checkpoint-2026-10-17-2313) adds 102 runs beyond the prior 1,387-input checkpoint; two agreeing pilot duplicates remain excluded.
+Latest audited checkpoint: **1,514 / 2,000 homogeneous configurations**, covering 3,038,827 observations.
+The raw and altruistic ensembles each contain all 500 inputs; audited prefixes remain egoistic 381 and Bentham 133.
+[Completed altruistic evidence](results/altruistic-complete-2026-10-18) adds 25 inputs beyond the prior 1,489-input checkpoint; two agreeing pilot duplicates remain excluded.
+The complete altruistic Table 3 row matches exactly: 344 extinct, 10 worse, and 146 better.
 All retained intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. Three batches remain active.
 Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
 
