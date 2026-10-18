@@ -98,6 +98,12 @@ with tarfile.open(args.archive) as archive:
         )
 summary = {
     v: {
+        "minimum_total_seconds": min(
+            r["total_microseconds"]
+            for r in audited
+            if r["variant"] == v and r["mode"] == "release"
+        )
+        / 1e6,
         "median_total_seconds": statistics.median(
             r["total_microseconds"]
             for r in audited

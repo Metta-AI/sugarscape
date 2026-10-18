@@ -84,3 +84,13 @@ Command `cmd-7k3hf` is registered on the owned H100 with a 45-minute execution b
 `qualify_remaining_allocators.py` compiles CUDA, BitmapAlloc, mallocMC and Halloc from a separate copy of the qualified artifact source. External allocator adapters remain unchanged in this first attempt. Successful builds receive two 32×32, 10,000-iteration debug executions. Failed builds remain recorded and prevent a successful qualification verdict.
 
 [The bounded protocol](results/remaining-allocators-2026-10-18/protocol.json) waits for the full-size timing batch to exit and its sealed export to complete. It requires the owned node to remain awake. The qualification has a 20-minute outer limit and $3 budget, including the idle window. Its compiler dependencies and outputs will be retained; scheduling is not evidence of execution.
+
+## Recovered author figure source
+
+[The arXiv source bundle](https://arxiv.org/src/1810.11765) supplies the original plotting scripts and baseline timing CSV. [The retained audit](results/author-figure-source-2026-10-18/audit.json) records every source member hash and reconciles the plotting values with the independently digitized publisher chart.
+
+Figure 10’s source totals are 85.704 s (DynaSOAr), 128.306 s (mallocMC), 128.282 s (Halloc), 93.760 s (BitmapAlloc), 857.074 s (CUDA), 62.597 s (SOA), and 253.198 s (AOS). The CUDA comment recovers 36.435 s of enumeration time, unavailable from its clipped bar.
+
+The five baseline repeats reveal that plotted AOS/SOA values are their minima, not medians. Their medians are 253.369 s and 62.805 s respectively. Future batch audits retain every repeat and report both minimum and median; the historical baseline comparison uses the evidenced statistic. Raw dynamic-allocator repetition identities remain unestablished.
+
+The capacity script contains unnormalized arrays and commented-out divisions for all series except AOS. Explicitly normalizing its Sugarscape values by 1.6099131 reconstructs the published ratios to graphical precision. Executing the script unchanged would not reproduce Figure 11. This is a recovered plotting-source discrepancy, not evidence against the allocator result. The original square-grid problem-size convention remains unresolved.
