@@ -1,0 +1,16 @@
+{
+  "definition": "Sum starvation, combat, disease and aging deaths, divide by500 then divide by mean population. Same native trajectories; no simulation modification.",
+  "vertices": 4992,
+  "max_error_pdf_points": 0.0039215612954421886,
+  "within_0_005_point": 4992,
+  "threshold_pdf_points": 0.005,
+  "final_deaths_by_cause": {
+    "agentStarvationDeaths": 0.32,
+    "agentCombatDeaths": 0.0,
+    "agentDiseaseDeaths": 0.0,
+    "agentAgingDeaths": 3.792
+  },
+  "final_all_cause_death_rate": 0.015011024633850735,
+  "original_plotter_rate": 0.0011681731232568665,
+  "interpretation": "All-cause alternative fixed before Egoist curve comparison based on prior Raw discrepancy; neither historical plotting identity nor an independent preregistered claim."
+}
