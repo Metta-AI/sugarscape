@@ -2,14 +2,14 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
-Latest audited checkpoint: **1,586 / 2,000 homogeneous configurations**, covering 3,171,642 observations.
-The raw and altruistic ensembles each contain all 500 inputs; audited prefixes are egoistic 440 and Bentham 146.
-[The latest union](results/homogeneous-prefix1586-2026-10-18) adds 72 unique inputs beyond the prior 1,514-input checkpoint; overlapping evidence is reconciled and excluded from coverage.
+Latest audited checkpoint: **1,700 / 2,000 homogeneous configurations**.
+The raw and altruistic ensembles each contain all 500 inputs; egoistic has 487 and Bentham has 213.
+[The latest union](results/homogeneous-prefix-2026-10-18-003) reconciles overlapping evidence without double counting.
 The complete altruistic Table 3 row matches exactly: 344 extinct, 10 worse, and 146 better.
 [Its complete figure comparison](results/altruistic-figures-2026-10-18/README.md)
 also matches all 24,392 extracted vertices in Figures 4, 5, 7, 8 and 9.
 Figure 6 matches all 4,995 vertices under all-cause deaths; the released plotter's narrower definition does not match.
-All counted intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. Two homogeneous batches remain active.
+All counted intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. The remaining homogeneous inputs are still required.
 Latest deposited-runtime coverage is **854/1,200 inputs and 2,199,311 observations**;
 [the terminal checkpoint](results/runtime-round2-terminal-2026-10-18/README.md) preserves both time-limit failures and all completed inputs.
 Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
