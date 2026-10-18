@@ -1,0 +1,24 @@
+{
+  "terminal_command": "cmd-52ges",
+  "ended_at": "2026-10-18T07:28:31.159496+00:00",
+  "exit_code": 1,
+  "declared_interval": [
+    50,
+    100
+  ],
+  "completed_interval": [
+    50,
+    52
+  ],
+  "failed_input_index": 52,
+  "failed_seed": 5706973635985741042,
+  "failure": "TimeoutExpired at remaining group budget1993.8253778290018 seconds; six-hour total bound.",
+  "completed_files_byte_identical_to_audited_checkpoint11": 20,
+  "remaining_required_interval": [
+    52,
+    100
+  ],
+  "partial_native_path": "/home/dev/sugarscape/blueprints-bentham50k-001/high/benthamHalfLookaheadBinary-50000/50000-benthamHalfLookaheadBinary5706973635985741042",
+  "terminal_archive_sha256": "07aa29891fd49a68f10735cb00b0f663e6596073adb049289eae72d6e3cfa015",
+  "completed_study": false
+}

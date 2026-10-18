@@ -14,3 +14,10 @@ Exact original-input reconciliation raises deposited runtime coverage from
 854 to 856 of 1,200 configurations, with 2,299,313 observations. This is the
 deposited 100-seed runtime grid, not the paper's claimed 500-seed Table 6 ensemble.
 Remaining inputs and the full paper remain incomplete.
+
+The producer ended at 07:28:31 UTC on October 18 after exhausting its six-hour
+group budget. Input 52 timed out with 1,993.83 seconds remaining when it started.
+The terminal checkpoint preserves exactly the same 20 completed-run files as
+the audited prior checkpoint. Inputs [52,100) remain required; the timeout is
+an execution failure and receives no scientific credit. Raw partial output
+remains at the recorded worker path. Terminal metadata and traceback are retained.
