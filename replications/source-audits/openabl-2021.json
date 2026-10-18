@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-18T05:59:41.192615+00:00",
+  "paper": "Easy and efficient agent-based simulations with the OpenABL language and compiler",
+  "year": 2021,
+  "doi": "10.1016/j.future.2020.10.014",
+  "paper_url": "https://eprints.whiterose.ac.uk/id/eprint/167728/1/_FGCS_5882__OpenABL__Cosenza_et_al__2020.pdf",
+  "repository": "https://github.com/OpenABL/OpenABL",
+  "source_commit": "eb08ef86df0b9c0532cb8fd6b714bde5e8551923",
+  "files": {
+    "examples/sugarscape.abl": {
+      "url": "https://raw.githubusercontent.com/OpenABL/OpenABL/eb08ef86df0b9c0532cb8fd6b714bde5e8551923/examples/sugarscape.abl",
+      "sha256": "46071f6c6b1523d1627298f2fa5094833db15597b6d065bc135f20e4b43d8e39",
+      "bytes": 5792
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/OpenABL/OpenABL/eb08ef86df0b9c0532cb8fd6b714bde5e8551923/README.md",
+      "sha256": "6cecb8f8df6f4220f8a664d2df1c466baf82ecf706f9ad96f6d2bce6454e7bf1",
+      "bytes": 7061
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/OpenABL/OpenABL/eb08ef86df0b9c0532cb8fd6b714bde5e8551923/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    }
+  },
+  "status": "candidate-source-recovered",
+  "completed_study": false,
+  "paper_targets": [
+    "Sugarscape code-size comparison:154 OpenABL lines versus345 FLAME GPU lines.",
+    "Figure4 cross-backend runtime curves.",
+    "Figure5 distributed strong scaling:1000000 agents,1000 timesteps,2 through128 cores."
+  ],
+  "source_observations": [
+    "Cell-based four-stage movement protocol; defaults10000 cells,100 timesteps,0.1 occupied fraction.",
+    "Radius1.5 includes diagonal neighbors; source explicitly questions this choice.",
+    "Winning movement copies sugar and metabolism; no missing-field transfer equivalent to the previously diagnosed Richmond source path."
+  ],
+  "remaining": [
+    "Pin historical source used for the paper, including benchmark scripts and dependencies.",
+    "Inspect figure images and extract full Sugarscape conditions and numeric targets before confirmatory runs.",
+    "Verify code-size counting convention.",
+    "Do not double-count2018 conference and2021 journal versions without establishing distinct results.",
+    "No compiler build or simulation run yet."
+  ]
+}
