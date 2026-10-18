@@ -361,3 +361,21 @@ python replications/richmond_2023/audit_scaling_snapshot.py \
 
 The public snapshot retains both raw native CSVs, the pinned reference, file hashes,
 the download receipt, and every recomputed mean with its rounding bound.
+
+## Prepared passive-state audit
+
+`audit_agent_states.py CAPTURE GNU_INITIAL_CSV BENCHMARK_CSV NEW_REPORT` is prepared for the queued 100-step observer.
+It requires the exact observer source and protocol, terminal success, the pinned GNU host initialization,
+and the immutable scaling-prefix CSV published above.
+It compares all initial active fields and all 100 occupied-population counts before reporting state diagnostics.
+Each captured cell retains its host landscape capacity; resource bounds include the original occupied-cell sentinel of minus one.
+
+The report separates occupied, requested, and unresolved statuses; counts nonpositive wealth and altered metabolism;
+and records duplicate IDs and wrapped displacement between consecutive unique-ID records.
+Duplicate IDs remain visible and are excluded from displacement pairing.
+Multiple resolution rounds can produce displacement greater than one, so that alone is not classified as a rule violation.
+Matching population counts cannot prove that instrumentation leaves every internal state unchanged.
+
+This auditor has passed formatting, lint, and command-interface checks only.
+The native state capture remains queued; its complete workflow and scientific findings are unvalidated.
+No new simulation or completed-study credit follows from preparing this analysis.
