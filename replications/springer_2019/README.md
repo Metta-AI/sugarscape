@@ -138,3 +138,10 @@ Use `diagnose_progress.py QUALIFICATION NEW_OUTPUT --architecture 61 --control-m
 [The bounded release-control protocol](results/release-control-2026-10-18) uses `--architecture 90 --control-mode release` without changing allocator or model code. Completing a release control would establish execution only, not correctness after assertions are disabled. The author benchmark already uses release builds. The full-size debug probe remains in the diagnostic sequence and retains its failures.
 
 The first resumed attempt failed before simulation because the container reset removed system Python. Its exit-127 archive is preserved and hash-checked. Command `cmd-3ga3h` explicitly restores Python before execution, with a 20-minute outer limit including setup and a $3 budget. Its sealed-evidence collector is active; pending outputs receive no completion credit. The auditor records observed outcomes without requiring the earlier timeout to recur; both earlier archive audits reproduce byte-identically.
+
+
+### Completed native release control
+
+[The complete release-control audit](results/release-control-complete-2026-10-18) confirms a successful 32×32 release run, the full-size debug active-mask assertion, and a full-size release timeout during agent creation. Disabling debug assertions in the author’s release mode does not resolve the initialization failure. All 511 qualified source hashes and three binary hashes pass.
+
+The small control reduces both grid size and allocator capacity. Those factors still need separating before attributing the timeout to population, allocator size, scheduling or an implementation error. No benchmark or paper-completion claim follows from these diagnostics.

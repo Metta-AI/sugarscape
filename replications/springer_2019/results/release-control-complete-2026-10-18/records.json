@@ -1,0 +1,81 @@
+[
+  {
+    "mode": "release",
+    "grid_side": 32,
+    "limit_seconds": 60,
+    "returncode": 0,
+    "command": [
+      "nvcc",
+      "-O3",
+      "-DNDEBUG",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_90,code=compute_90",
+      "-maxrregcount=64",
+      "-Iexample/configuration/dynasoar",
+      "-I.",
+      "-DPARAM_SIZE=32",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-release-runtime-005/diagnostic/native/release-32",
+      "-DPARAM_MAX_OBJ=262144"
+    ],
+    "binary_sha256": "e6d73dbdd547ba5ac610f53d2a1775f73663e358c2c203b7b0f7657326d4b705"
+  },
+  {
+    "mode": "debug",
+    "grid_side": 1700,
+    "limit_seconds": 120,
+    "returncode": 198,
+    "command": [
+      "nvcc",
+      "-O3",
+      "-g",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_90,code=compute_90",
+      "-maxrregcount=64",
+      "-Iexample/configuration/dynasoar",
+      "-I.",
+      "-DPARAM_SIZE=1700",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-release-runtime-005/diagnostic/native/debug-1700"
+    ],
+    "binary_sha256": "520a337a2a2efb81c83661a03b2b61c634125e90f06a5abf74a95f4926936b6d"
+  },
+  {
+    "mode": "release",
+    "grid_side": 1700,
+    "limit_seconds": 120,
+    "returncode": 124,
+    "command": [
+      "nvcc",
+      "-O3",
+      "-DNDEBUG",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_90,code=compute_90",
+      "-maxrregcount=64",
+      "-Iexample/configuration/dynasoar",
+      "-I.",
+      "-DPARAM_SIZE=1700",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-release-runtime-005/diagnostic/native/release-1700"
+    ],
+    "binary_sha256": "6216d75f1fca7ab435bcfa71d48bfd3c63591a0372e086bff06ec88fbf4dfd87"
+  }
+]
