@@ -72,3 +72,9 @@ These are digitized graphical targets, not recovered raw measurements or newly r
 | Baseline AOS | 253.2 |
 
 The extracted bars qualify Section 6.1’s general statement that baseline versions are faster: SOA is faster than DynaSOAr, but AOS is slower in this Sugarscape chart. Preserve this distinction in claim-level comparisons. These historical totals are graphical targets, not measurements on the qualification H100. Native benchmark runs must report enumeration and total timing separately and retain hardware provenance.
+
+## Full-size native-default batch
+
+[The registered batch](results/full-native-defaults-2026-10-18/protocol.json) uses the original 1,700×1,700 grid, 10,000 iterations and seed 42. One DynaSOAr debug execution records allocator layout and assertions; five release executions each measure DynaSOAr, AOS and SOA. Every input source hash is checked against the successful qualification. No size or capacity macros override archived defaults.
+
+Command `cmd-7k3hf` is registered on the owned H100 with a 45-minute execution bound and $5 budget. It is pending execution, not completed evidence. Four allocator variants remain outside this first batch; all seven variants, independent model validation and capacity searches remain required. New-hardware timings cannot establish historical absolute timing equivalence.
