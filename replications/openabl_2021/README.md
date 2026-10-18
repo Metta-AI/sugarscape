@@ -90,3 +90,20 @@ objects. Its retained initial malformed output comes from the controlled start;
 the preceding unseeded initial file was overwritten. The observer snapshots are
 valid JSON and their225 initial cells match C exactly after sorting by position.
 The jar URL/hash, generated Java, observer, logs and snapshots are retained.
+
+## Neighbor-order control resolves this condition
+
+[The separate ordering control](mason-order-control/comparison.json) sorts each
+of the three MASON neighbor-query results by fixed cell coordinates. That
+reproduces C array order. No stage rules, initial values, or scheduler settings
+change. The original MASON run remains preserved.
+
+All1,800 initial and all1,800 final fields now match corrected C after100 steps.
+Neighbor ordering therefore accounts for the previous final-state mismatch in
+this condition. The source chooses the first maximum-sugar neighbor and first
+competing claimant, so traversal order affects ties. This is an experimental
+control, not evidence that native backends are generally equivalent.
+
+Both buffer copying and neighbor-order semantics must be addressed before
+interpreting cross-backend timings. Historical workload reconstruction and all
+other declared paper targets remain outstanding.
