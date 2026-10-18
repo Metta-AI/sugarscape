@@ -610,3 +610,18 @@ This is an execution failure, not a negative replication verdict.
 the population experiment before running ordinals 41–44 on the same allocation.
 It retains the original failed attempt and uses unchanged model source and GHC 8.4.3.
 Results remain pending; the continuation alone cannot establish full-grid completion.
+
+### Independent full retry-ensemble audit prepared
+
+`audit_retry_scaling.py` checks all 90 processes across eighteen conditions,
+including source pins, exact instrumentation changes, binary hashes, scheduler order,
+CPU allocation, commands, exits, integer counters and rounding.
+`retry-targets.json` transcribes all sixteen Table 7 values and the two
+2,500-agent ratios from pages 21 and 23 of the pinned paper.
+Five-process means, ranges and deviations are descriptive; no new acceptance tolerance is introduced.
+The live ensemble and its source/binary supplement must complete before this audit can run.
+Ruff and CLI checks pass; raw-data validation remains pending.
+
+```sh
+python replications/thaler_2019/audit_retry_scaling.py EXTRACTED_RUN EXTRACTED_PROVENANCE NEW_AUDIT.json
+```
