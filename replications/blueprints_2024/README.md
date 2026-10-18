@@ -862,7 +862,7 @@ The qualification repeat itself adds no coverage or completion credit.
 
 ### Prepared parallel-handoff safeguards
 
-`run_parallel_handoff.py` requires a typed handoff plan, local stop receipt, sealed completed ledger,
+The historical `run_parallel_handoff.py` required a typed handoff plan, local stop receipt, sealed completed ledger,
 and a successful cloud qualification whose actual compressed trajectory matches the pinned original hash.
 It verifies the local completed seed prefix and permits only its exact complement through index 499.
 The original single-seed runner and batch runner must match the qualified hashes.
@@ -947,3 +947,13 @@ The retry is pending capacity, so no new scientific outcome is claimed.
 ### Two complete Bentham 50,000-step runtime inputs
 
 [The recovered high-interval checkpoint](results/runtime-bentham50k-high-2026-10-18/README.md) adds 100,002 validated observations from original inputs [50,52). Exact reconciliation reaches 856/1,200 deposited runtime inputs without counting overlapping prefixes twice. The rest of [50,100) remains required.
+
+### Process ownership for new selected-input batches
+
+`run_selected.py` replaces the historical parallel handoff runner after its terminal child-process escape.
+It launches each input in its own process group and stops all group members before returning.
+[Native workflow controls](results/selected-runner-lifecycle-2026-10-18) cover deadlines, external interruption, and a completed original trajectory.
+Its typed JSON plan declares the model, exact original indices, worker count, per-input seconds, and total seconds.
+Allocations must be disjoint from live producers and already audited inputs.
+Run `python run_selected.py ENGINE ARCHIVE PLAN NEW_OUTPUT`; audit every completed batch before counting it.
+An incomplete allocation exits 124 and preserves all partial outputs. Historical code remains in Git and sealed evidence.
