@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T01:19:28.825327+00:00",
+  "as_of": "2026-10-18T02:28:25.414718+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -42,14 +42,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "a532a8d72444ce28b177d8f7343ed78ea09ebb61",
+      "checked_commit": "e5f76e4495a41dbb4ad8e9cb5b89279b65655221",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "98b69d16e1857023b62b750bba2f797f4b94f3a07c120cfe3c8ffac6c88fde68",
-      "json_evidence_files": 379,
-      "remaining_scope": "1,514/2,000 homogeneous inputs and 849/1,200 deposited runtime inputs audited. Complete Raw and Altruist Table3 rows reproduce; Altruist five figure paths match all24,392 vertices, and Figure6 matches all4,995 vertices only under all-cause deaths. Two homogeneous batches and bounded runtime continuations remain active. Full selfishness/heterogeneous sweeps, remaining homogeneous/runtime inputs, and deposited100-input versus reported500-seed timing mismatch remain unresolved.",
+      "readme_sha256": "7a5bda2ce6132de6da81d4d2c66d0708542e4c1eae3a13e8e582ac2d54950aaf",
+      "json_evidence_files": 412,
+      "remaining_scope": "1,586/2,000 homogeneous inputs and 854/1,200 deposited runtime inputs audited. Raw and Altruist Table3 rows reproduce. Full selfishness/heterogeneous sweeps and remaining homogeneous/runtime inputs remain incomplete; deposited100-input versus reported500-seed timing mismatch unresolved. Larger-memory continuation is queued after an archived OOM failure; no failed input receives credit.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T01:19:28.825327+00:00"
+      "checked_at": "2026-10-18T02:28:25.414718+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -168,38 +168,38 @@
     {
       "study": "thaler_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
-      "checked_commit": "f9b1cf9ca6b51518e37fe9da84ed4c43f89c37cc",
-      "status": "partial",
+      "checked_commit": "89cab857729080df51179ecc0043384b343a1f46",
+      "status": "running",
       "readme": "replications/thaler_2019/README.md",
-      "readme_sha256": "7d705ca18ec0d0b51df0807b70a35c461fcf79f86ea7c9385f9f883a3ea965c2",
-      "json_evidence_files": 86,
+      "readme_sha256": "e84493e70579fdafc6798f7781d08c3ed206f2b2f6db065c5fb408ff0031f47b",
+      "json_evidence_files": 115,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "Figure5b reproduced. All33/45 native timing conditions audited from132raw measurements;12 Table8 conditions remain. Original graphical sequential model control matches1000population rows and49/50states exactly, leaving Figure5a screenshot provenance unresolved. Deferred retry and225run population ensembles remain pending. Table9 needs a single64-logical-CPU allocation; all timing/retry/scaling claims remain required.",
-      "checked_at": "2026-10-18T00:56:51.004696+00:00"
+      "remaining_scope": "41/45 native timing conditions and164raw measurements audited, all25 Table6 and16/20 Table8 cells. Original TVar executable segfaulted; failure retained, four-condition continuation queued behind population ensemble.90-process retry ensemble running; independent audit prepared. Matching m5ad.16xlarge Table9 run underway. Figure5b passes; Figure5a provenance, concurrent population, relative-performance claims and whole-paper verdict remain unresolved.",
+      "checked_at": "2026-10-18T02:28:25.414718+00:00"
     },
     {
       "study": "thaler_properties_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/17",
-      "checked_commit": "2328fc96844270bf6d5ac5ecc0c659464e7618c7",
+      "checked_commit": "28fea36840c79676b9192148ecddc121c0341f44",
       "status": "partial",
       "readme": "replications/thaler_properties_2019/README.md",
-      "readme_sha256": "05ede5674de46b43d181994f739f939131db506d232ce81ac29e59251d5444b5",
-      "json_evidence_files": 2452,
-      "gzip_json_evidence_files": 2,
-      "remaining_scope": "Historical and corrected full cohorts include100 inheritance pairs,400combat trajectories and200culture runs. Three corrected migration/pollution controls verify303frames with exact agent-cell alignment, but do not establish published qualitative claims. Original model suite remains running. Weaver comparison, approximate quantitative targets, scenario fidelity and whole-paper claim outcomes remain unresolved. Recovered NetLogo migration candidate qualified under unchanged preset2; differences from Haskell include population, metabolism, cluster size, and growback interval. Three runs audit456,185 agent observations with population-observer parity; historical2009 identity and wave claim unresolved.",
-      "checked_at": "2026-10-18T01:19:28.825327+00:00"
+      "readme_sha256": "2b37730b12c6a449e7190db3a4c27fe1e30896b363218bcb06250b80d8098124",
+      "json_evidence_files": 2461,
+      "gzip_json_evidence_files": 4,
+      "remaining_scope": "Historical and corrected full cohorts include100 inheritance pairs,400combat trajectories and200culture runs. Full-resolution migration controls reproduce2002summary rows and validate294792agent/5207202cell observations; recovered NetLogo candidate differs in several settings and lacks authenticated2009provenance. Original model suite, qualitative wave claim, approximate targets, scenario fidelity and whole-paper verdict remain unresolved.",
+      "checked_at": "2026-10-18T02:28:25.414718+00:00"
     },
     {
       "study": "richmond_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/18",
-      "status": "running",
-      "checked_commit": "dfbbe291702f81d5e32f0701e9b323b3e63e9876",
+      "status": "partial",
+      "checked_commit": "bcffbc82893df0985ddea11611eca0397394686a",
       "readme": "replications/richmond_2023/README.md",
-      "readme_sha256": "79e7fedd8a3aaba0c821b825ded63d9bcb55cc106de8f56e4f90c83d81d1a176",
-      "json_evidence_files": 39,
-      "gzip_json_evidence_files": 0,
-      "remaining_scope": "47/48 full-grid scaling conditions audited with4,700/4,700 exact author population matches and94 reconciled means; previous31 conditions unchanged. Last scaling, occupation/resolution conditions, queued individual-state observer and Figure11/source-rule fidelity remain incomplete. H100 performance does not establish V100 timing equivalence.",
-      "checked_at": "2026-10-18T01:19:28.825327+00:00"
+      "readme_sha256": "e835acd6e3eaa3f04ebb481971826057f26a7178884a430b594abdf5aebe64a6",
+      "json_evidence_files": 52,
+      "gzip_json_evidence_files": 1,
+      "remaining_scope": "All84native conditions audited:6600population records and162resolution rows exactly match author archive.893017state observations and615829moves reconcile given observed destinations after matching Linux initializer; source-winning movement omits wealth/metabolism transfer. Figure11A-C replotted; D-F native images differ from released historical images, whose original compiler/engine provenance remains incomplete. H100 timings do not establish V100 timing equivalence; full-paper completion remains unproven.",
+      "checked_at": "2026-10-18T02:28:25.414718+00:00"
     }
   ],
   "study_prs": 16,
