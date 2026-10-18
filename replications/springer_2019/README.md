@@ -155,3 +155,10 @@ Command `cmd-263ke` uses compute61, debug mode, a 32×32 grid and native capacit
 
 
 The next bounded control, `cmd-c66px`, uses `--control-size 128 --control-capacity native --control-mode debug --architecture 61 --control-only`. Its 16,384 cells equal the native agent-creation launch’s 128 blocks × 128 threads, so each thread handles one cell. This separates increased population from repeated initialization-loop iterations. [The exact protocol and runner](results/grid128-control-2026-10-18) are retained; pending output earns no credit.
+
+
+### Grid128 initialization timeout
+
+[The audited 128×128 control](results/grid128-complete-2026-10-18) times out at agent-creation synchronization after 60 seconds. It retains native allocator capacity and changes only the grid-size compile parameter relative to the passing 32×32 control. All 511 qualified source hashes and the binary hash pass audit. Each launch thread handles at most one cell, so repeated initialization-loop iterations are not required to trigger the stall.
+
+[Command cmd-9e7tt](results/synccheck128-2026-10-18) runs NVIDIA Compute Sanitizer 2022.3.0 synchronization checking on that exact binary under a 90-second bound. No source or compile flags change. Pending or incomplete sanitizer output is not a clean synchronization verdict.

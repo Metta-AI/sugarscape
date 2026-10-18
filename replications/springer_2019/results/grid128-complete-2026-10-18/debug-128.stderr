@@ -1,0 +1,7 @@
+PROGRESS -1 8413661810 before allocator_handle = new AllocatorHandle<AllocatorT>();
+PROGRESS -1 8417733678 after allocator_handle = new AllocatorHandle<AllocatorT>();
+PROGRESS -1 8417733967 before initialize_simulation();
+PROGRESS -1 8417733970 before create_cells<<<128, 128>>>();
+PROGRESS -1 8417734003 after create_cells<<<128, 128>>>();
+PROGRESS -1 8417734131 before create_agents<<<128, 128>>>();
+PROGRESS -1 8417734270 after create_agents<<<128, 128>>>();
