@@ -1,5 +1,7 @@
 # Remaining original sweep inputs
 
+Superseded by the [corrected eight-input exclusion inventory](../supplement-inventory-complete-controls-2026-10-18). This original worklist missed two completed paired-runtime inputs; retain it only as historical evidence.
+
 Both original archives contain a complete Cartesian grid over the same 500 seeds.
 Selfishness has 101 conditions, from 0.00 through 1.00 in increments of 0.01.
 Mixed societies have 99 conditions, with 1 through 99 utilitarian entries in each original 100-entry model list.

@@ -8,7 +8,8 @@ import gzip
 import hashlib
 import io
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
+import tarfile
 from typing import Literal
 import zipfile
 
@@ -27,42 +28,83 @@ class InputRow(BaseModel):
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("archives", type=Path)
-parser.add_argument(
-    "controls", type=Path, help="Extracted complete six-control evidence"
-)
-parser.add_argument("audits", type=Path, help="Independent per-control audit directory")
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--completed-source",
+    nargs=2,
+    type=Path,
+    action="append",
+    required=True,
+    metavar=("AUDITS", "NATIVE_ARCHIVE"),
+    help="Independent per-input audits and their complete native evidence archive; repeat for every completed source",
+)
 args = parser.parse_args()
 excluded = {}
-for path in sorted(args.audits.glob("*/audit.json")):
-    audit = json.loads(path.read_bytes())
-    result = audit["validated"]
-    entry = result["entry"]
-    run = args.controls / "runs" / Path(entry).stem
-    manifest_raw = (run / "manifest.json").read_bytes()
-    assert hashlib.sha256(manifest_raw).hexdigest() == audit["manifest_sha256"]
-    manifest = json.loads(manifest_raw)
-    assert manifest["release"] == RELEASE
-    assert manifest["entry"] == entry
-    assert manifest["experiment"] == result["experiment"]
-    assert manifest["archive_sha256"] == ARCHIVE_SHA256[result["experiment"]]
-    assert (
-        hashlib.sha256((run / "trajectory.json").read_bytes()).hexdigest()
-        == result["trajectory_sha256"]
+completed_sources = []
+for audits, native_archive in args.completed_source:
+    paths = sorted(audits.glob("*/audit.json"))
+    assert paths
+    with tarfile.open(native_archive, "r:gz") as native:
+        manifests = defaultdict(list)
+        for member in native.getmembers():
+            if member.isfile() and PurePosixPath(member.name).name == "manifest.json":
+                raw = native.extractfile(member).read()
+                manifests[hashlib.sha256(raw).hexdigest()].append((member.name, raw))
+        for path in paths:
+            audit = json.loads(path.read_bytes())
+            result = audit["validated"]
+            entry = result["entry"]
+            matches = manifests[audit["manifest_sha256"]]
+            assert matches, (path, "No byte-matching producer manifest")
+            assert result["final_timestep"] == 5000 and result["observations"] == 5001
+            for member_name, manifest_raw in matches:
+                manifest = json.loads(manifest_raw)
+                assert manifest["release"] == RELEASE
+                assert manifest["entry"] == entry
+                assert manifest["experiment"] == result["experiment"]
+                assert (
+                    manifest["archive_sha256"] == ARCHIVE_SHA256[result["experiment"]]
+                )
+                parent = PurePosixPath(member_name).parent
+                trajectory = native.extractfile(str(parent / "trajectory.json")).read()
+                assert (
+                    hashlib.sha256(trajectory).hexdigest()
+                    == result["trajectory_sha256"]
+                )
+                raw = native.extractfile(str(parent / "original.config")).read()
+                digest = hashlib.sha256(raw).hexdigest()
+                assert digest == manifest["original_config_sha256"]
+                assert json.loads(raw)["seed"] == result["seed"]
+            key = (result["experiment"], entry)
+            identity = {
+                "configuration_sha256": digest,
+                "trajectory_sha256": result["trajectory_sha256"],
+            }
+            if key in excluded:
+                assert all(
+                    excluded[key][name] == value for name, value in identity.items()
+                )
+            else:
+                excluded[key] = identity | {"audit_sources": []}
+            excluded[key]["audit_sources"].append(
+                {
+                    "audit": str(path),
+                    "audit_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                    "native_archive": str(native_archive),
+                    "manifest_members": [name for name, raw in matches],
+                }
+            )
+    completed_sources.append(
+        {
+            "audit_directory": str(audits),
+            "native_archive": str(native_archive),
+            "native_archive_sha256": hashlib.sha256(
+                native_archive.read_bytes()
+            ).hexdigest(),
+            "audited_inputs": len(paths),
+        }
     )
-    assert result["final_timestep"] == 5000 and result["observations"] == 5001
-    raw = (run / "original.config").read_bytes()
-    digest = hashlib.sha256(raw).hexdigest()
-    assert digest == manifest["original_config_sha256"]
-    assert json.loads(raw)["seed"] == result["seed"]
-    key = (result["experiment"], entry)
-    assert key not in excluded
-    excluded[key] = {
-        "configuration_sha256": digest,
-        "audit_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
-        "trajectory_sha256": result["trajectory_sha256"],
-    }
-assert len(excluded) == 6
+assert excluded
 
 rows = []
 groups = defaultdict(set)
@@ -138,7 +180,7 @@ assert matched == set(excluded)
 assert len(groups) == 200
 seeds = groups[("selfishness", 0)]
 assert len(seeds) == 500 and all(group == seeds for group in groups.values())
-assert len(rows) == 99994
+assert len(rows) == 100000 - len(excluded)
 rows.sort(key=lambda row: (row.experiment, row.condition, row.seed))
 args.output.mkdir(parents=True, exist_ok=False)
 with (args.output / "remaining.csv.gz").open("xb") as target:
@@ -151,6 +193,7 @@ report = {
     "release": RELEASE,
     "archive_sha256": archive_evidence,
     "required_inputs": 100000,
+    "completed_sources": completed_sources,
     "remaining_inputs": len(rows),
     "shared_seeds": sorted(seeds),
     "conditions": [
@@ -173,7 +216,7 @@ report = {
         (args.output / "remaining.csv.gz").read_bytes()
     ).hexdigest(),
     "planner_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-    "scope": "Exact unexecuted-input inventory after six independently audited controls; no new simulations or aggregate results. Selfishness condition is hundredths; heterogeneous condition is utilitarian entries in the original 100-entry list. Runtime qualification and bounded capacity planning remain prerequisites to dispatch.",
+    "scope": "Exact remaining-input inventory after all supplied independently audited inputs; no new simulations or aggregate results. Selfishness condition is hundredths; heterogeneous condition is utilitarian entries in the original 100-entry list. Runtime qualification and bounded capacity planning remain prerequisites to dispatch.",
 }
 (args.output / "inventory.json").write_text(json.dumps(report, indent=2) + "\n")
 print(

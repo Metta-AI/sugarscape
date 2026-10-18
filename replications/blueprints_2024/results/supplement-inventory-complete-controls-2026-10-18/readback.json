@@ -1,0 +1,23 @@
+{
+  "remaining_rows": 99992,
+  "unique_remaining_identities": 99992,
+  "excluded_original_inputs": 8,
+  "exact_archive_union": true,
+  "prior_inventory_rows": 99994,
+  "removed_already_completed_inputs": [
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary175856849482260318.config"
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.73-benthamHalfLookaheadBinary175856849482260318.config"
+    }
+  ],
+  "all_other_rows_unchanged": true,
+  "remaining_by_experiment": {
+    "heterogeneous": 49497,
+    "selfishness": 50495
+  },
+  "scope": "Complete original ZIP identity coverage, disjoint completed-input exclusions, and exact correction of the two missed paired-control inputs. No simulations dispatched or new completion credit."
+}

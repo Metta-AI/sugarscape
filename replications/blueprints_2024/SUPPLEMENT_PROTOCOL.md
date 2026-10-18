@@ -20,3 +20,7 @@ A homogeneous endpoint comparison requires native trajectory parity; do not assu
 Use four workers on existing CPU capacity with a two-hour overall cap and an eight-GiB initial free-space guard.
 Record partial or failed runs without substituting another seed or shortening the horizon.
 Additional disjoint batches must exclude these completed inputs and retain all interrupted evidence.
+
+Construct new worklists from every published per-input audit and its native archive.
+The corrected inventory includes six initial controls plus the two paired-runtime inputs at factors 0.37 and 0.73.
+Use repeated `--completed-source AUDITS NATIVE_ARCHIVE` arguments to `plan_supplement.py`; repeated evidence for one original input must agree and excludes that input only once.

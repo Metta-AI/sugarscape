@@ -15,7 +15,7 @@ Latest deposited-runtime coverage is **873/1,200 inputs and 2,800,520 observatio
 [The terminal Bentham audit](results/runtime-bentham-terminal-2026-10-18) retains the six-hour timeout and excludes the interrupted input.
 [The restored-environment continuation](results/runtime-environment-recovery-2026-10-18) has passed setup and started both native workers.
 The selfishness and mixed-society sweeps, longer horizons, remaining figure analysis beyond the homogeneous curves, and historical runtime claims remain incomplete.
-[The exact remaining-input inventory](results/supplement-inventory-2026-10-18) contains 99,994 original inputs after excluding six audited controls. No new sweep jobs have been dispatched.
+[The corrected remaining-input inventory](results/supplement-inventory-complete-controls-2026-10-18) contains 99,992 original inputs after excluding eight audited inputs. It includes two paired-runtime controls missed by the earlier inventory. No new sweep jobs have been dispatched.
 Earlier sections retain dated execution history and superseded checkpoint counts.
 
 [Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)
