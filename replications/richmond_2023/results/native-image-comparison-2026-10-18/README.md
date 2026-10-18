@@ -38,3 +38,14 @@ python replications/richmond_2023/compare_native_images.py NEW_REPORT.snapshots.
 
 The complete three class grids, source hashes, confusion matrices and sampling margins are retained.
 The six-panel PNG was visually inspected; it labels archived versus reconstructed views explicitly.
+
+## Source-history control
+
+All three images entered the repository in commit
+`b70568e77b50f119d75838db32f19c3790cbd0cf` on February 2, 2022.
+Their bytes are unchanged in the paper-linked v1 release.
+The image-introduction commit selected engine `v2.0.0-alpha.2`; v1 selected `v2.0.0-rc`.
+The entire extracted initialization block is byte-identical between these commits.
+This rules out edits to that block between the two commits as the landscape explanation.
+It does not identify the compiler, standard library or actual executable used to create the images.
+`history-audit.json` pins the comparison and image hashes.
