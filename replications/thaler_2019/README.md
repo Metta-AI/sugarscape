@@ -513,3 +513,20 @@ The collector has a 12-hour deadline and 32 MiB transfer bound.
 An initial CLI request rejected an oversized transport timeout before launch; the corrected command applies the timeout remotely.
 The rejected receipt is preserved. No duplicate command or new node was created.
 The native grid remains pending; Table 9 and spatial-state requirements remain separate.
+
+### Native timing checkpoint: 33 of 45 conditions
+
+[The sealed checkpoint and audit](results/native-timing-prefix33-2026-10-18)
+validate 33 conditions and 132 raw Criterion measurements.
+All prior 30 published records and the separately audited 31-condition prefix match exactly.
+The three newly published conditions add twelve raw measurements:
+TVar with 2,500 agents takes 50.012244 seconds per iteration;
+sequential with 2,000 takes 129.450456; IO with 2,500 takes 79.452583.
+These are original rebirth benchmarks; parallel implementations use four capabilities.
+
+All 33 conditions pass the frozen R-squared threshold on their first attempt.
+Independent slopes differ from native reports by at most 1.43e-13 seconds;
+R-squared values match exactly. Table 8 coverage is eight of twenty conditions.
+The remaining twelve are still required. Hardware and sampling limitations remain unchanged;
+this prefix does not establish population scaling or a whole-paper result.
+The original process continues without restarting completed conditions.

@@ -1,0 +1,117 @@
+{
+  "previous_published_conditions_unchanged": 30,
+  "previous_local_conditions_unchanged": 31,
+  "new_published_conditions": [
+    {
+      "ordinal": 30,
+      "condition": {
+        "table": 8,
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 2500,
+        "benchmark": "sugarscape-tvar-rebirthing:4/2500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          49.80307576316409
+        ],
+        [
+          2.0,
+          99.59994891285896
+        ],
+        [
+          3.0,
+          149.9944115690887
+        ],
+        [
+          4.0,
+          199.71240220987238
+        ]
+      ],
+      "ols_seconds": 50.01224419963545,
+      "r_squared": 0.999993385903486,
+      "sample_standard_deviation_seconds": 0.09758742749486979,
+      "slope_error": 4.263256414560601e-14,
+      "r_squared_error": 0.0,
+      "report_sha256": "0554d65ba95b64975cadab431d8b3f437c09d285ec202f67b806851e8aae99e1"
+    },
+    {
+      "ordinal": 31,
+      "condition": {
+        "table": 8,
+        "variant": "seq",
+        "caps": 1,
+        "agents": 2000,
+        "benchmark": "sugarscape-seq-rebirthing/2000"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          129.57908139401115
+        ],
+        [
+          2.0,
+          259.16365441982634
+        ],
+        [
+          3.0,
+          388.1058646540623
+        ],
+        [
+          4.0,
+          518.0998640379403
+        ]
+      ],
+      "ols_seconds": 129.4504558166023,
+      "r_squared": 0.9999977870745055,
+      "sample_standard_deviation_seconds": 0.10015105185943289,
+      "slope_error": 1.1368683772161603e-13,
+      "r_squared_error": 0.0,
+      "report_sha256": "a450357bf94a873a511c437758677a45dc6d3e68ada5eddbc8600a0a3635736a"
+    },
+    {
+      "ordinal": 32,
+      "condition": {
+        "table": 8,
+        "variant": "io",
+        "caps": 4,
+        "agents": 2500,
+        "benchmark": "sugarscape-io-rebirthing:4/2500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          79.43255575909279
+        ],
+        [
+          2.0,
+          159.07836255803704
+        ],
+        [
+          3.0,
+          238.64544760109857
+        ],
+        [
+          4.0,
+          317.7521377990488
+        ]
+      ],
+      "ols_seconds": 79.45258311629296,
+      "r_squared": 0.9999974671684682,
+      "sample_standard_deviation_seconds": 0.0628185271730397,
+      "slope_error": 7.105427357601002e-14,
+      "r_squared_error": 0.0,
+      "report_sha256": "390bb2df66ee90f99d170755a7d15d9b5dc54577fb4d8c9d9c51846be9e0ea74"
+    }
+  ],
+  "new_raw_measurements_since_published": 12,
+  "remaining_conditions": 12,
+  "scope": "Incremental raw-measurement verification only. No complete scaling or paper verdict."
+}
