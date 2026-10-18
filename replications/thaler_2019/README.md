@@ -530,3 +530,35 @@ R-squared values match exactly. Table 8 coverage is eight of twenty conditions.
 The remaining twelve are still required. Hardware and sampling limitations remain unchanged;
 this prefix does not establish population scaling or a whole-paper result.
 The original process continues without restarting completed conditions.
+
+### Figure 5a graphical-source control
+
+[A completed 1,000-step control](results/graphical-model-control-2026-10-18)
+uses the original `SugarScapePure/src` model modules rather than the benchmark modules.
+The existing observational entry point preserves seed 42, 500 agents, no rebirth,
+and the same initialization and simulation-step calls. Criterion packaging supplies
+GHC 8.4.3 and the original dependency resolver. This is a headless model control,
+not a GUI rendering reproduction or proof of the historical screenshot configuration.
+
+The graphical sources omit the benchmark's strict-evaluation pragma and deep-evaluation
+type derivations. Full source differences and all 18 prepared source/build hashes are retained.
+All 1,000 population observations match the prior benchmark observer byte-for-byte.
+Both 206-agent states and both 2,500-cell states at times 49 and 50 also match byte-for-byte.
+The unchanged raster audit therefore still finds 201 published occupied cells,
+with 67 shared coordinates at time 49 and 57 at time 50.
+These graphical-source differences do not explain the snapshot discrepancy for this configuration.
+The actual image implementation, source revision and seed remain unresolved.
+
+The execution archive contains source/build inputs, native CSVs, compiler and binary
+receipts, the bounded execution script, and `compare.py`. To recheck the outputs:
+
+```sh
+mkdir NEW_GRAPHICAL_READBACK
+tar -xzf replications/thaler_2019/results/graphical-model-control-2026-10-18/execution-evidence.tar.gz -C NEW_GRAPHICAL_READBACK
+python NEW_GRAPHICAL_READBACK/compare.py NEW_GRAPHICAL_READBACK replications/thaler_2019/results/state-comparison-2026-10-17 NEW_COMPARISON.json
+python replications/thaler_2019/audit_state.py PAPER_PDF NEW_GRAPHICAL_READBACK/project NEW_STATE_AUDIT
+```
+
+The image audit requires the previously documented PyMuPDF/NumPy environment.
+The native control ran under Linux amd64 emulation with one CPU, 3 GiB RAM,
+and a 1,200-second outer bound. No timing evidence is inferred from it.

@@ -1,0 +1,113 @@
+{
+  "revision": "2bf138a8b5f1d020f09781932e110091802f6dcc",
+  "scope": "Graphical sequential source versus benchmark model. Existing observation entry point uses published500-agent/no-rebirth configuration, seed42,1000steps,states49and50. Not a GUI rendering reproduction or authenticated screenshot configuration.",
+  "comparison": [
+    {
+      "name": "Agent.hs",
+      "graphical_sha256": "41235bb97921044a1eb0e441b0f35de1896bbda3e72fb05a638ac225fae35b8c",
+      "benchmark_sha256": "41235bb97921044a1eb0e441b0f35de1896bbda3e72fb05a638ac225fae35b8c",
+      "identical": true
+    },
+    {
+      "name": "AgentMonad.hs",
+      "graphical_sha256": "1e70f7164423e5707b2b9d42b4878697f76acff1563204099c17e487dbc58bfa",
+      "benchmark_sha256": "2024f694cac93340fbbbe682e6bc470d02a10ecf764c3054a1e2fe18ca9db20b",
+      "identical": false
+    },
+    {
+      "name": "Common.hs",
+      "graphical_sha256": "d98e3fafbffa2149d6c92ae79a9f5e6895b658187e479898657127310eef1b91",
+      "benchmark_sha256": "c04e361d5943d6b3df4bd561c46f8d3948578bc74d0456bbd7f77b41c737ed7e",
+      "identical": false
+    },
+    {
+      "name": "Discrete.hs",
+      "graphical_sha256": "5ea2e8ab13c3c553419444e782772913640126521d747f410adfd9139c0452bf",
+      "benchmark_sha256": "59fb483ce48c7c46f08fc079e27e86d9572db2a71f8f3941fadf32ced406eb9a",
+      "identical": false
+    },
+    {
+      "name": "Environment.hs",
+      "graphical_sha256": "82d10f4b31a9c6b818efa73f46de0c069c77c822b4de42a442853bd56cb86b8b",
+      "benchmark_sha256": "7245ee03b694a48dc06044efdd250b9c8f4a8042342f041703c25bae9cdfb196",
+      "identical": false
+    },
+    {
+      "name": "GlossRunner.hs",
+      "graphical_sha256": "724e2ac45eda0305fdc615c8246794f38b1afcaff8f6ae60807b0934757507f0",
+      "benchmark_sha256": "724e2ac45eda0305fdc615c8246794f38b1afcaff8f6ae60807b0934757507f0",
+      "identical": true
+    },
+    {
+      "name": "Init.hs",
+      "graphical_sha256": "e09729606e68b9165e1f10c09db60ee3d3bad433440b8d18c0992822d3f5d225",
+      "benchmark_sha256": "3ae5a4f24a656e2380e244e7c82872ac2b7e90205c86fca9a54dec16aebfabad",
+      "identical": false
+    },
+    {
+      "name": "Main.hs",
+      "graphical_sha256": "77380738a0598921ebad30311b5d6013ec51b18725c68105b97056f3f9c37d55",
+      "benchmark_sha256": "5a40e928900b964627d8f91b53d748632677a5b195be206999da5d7a5512c25f",
+      "identical": false
+    },
+    {
+      "name": "Model.hs",
+      "graphical_sha256": "e0469bc5dd24f8f6e85bcc91f77d82d62cb2afdafe05e2f6205d6be258f0598b",
+      "benchmark_sha256": "f67c4a224892c95f959395bf887e4597e2426087dc64298b1673956fc7a66296",
+      "identical": false
+    },
+    {
+      "name": "Random.hs",
+      "graphical_sha256": "e3e64496d7c779d3bafb48d78be85237b6a0ced0b9b00f4a78022100d52cd52c",
+      "benchmark_sha256": "e3e64496d7c779d3bafb48d78be85237b6a0ced0b9b00f4a78022100d52cd52c",
+      "identical": true
+    },
+    {
+      "name": "Renderer.hs",
+      "graphical_sha256": "d7dd11fb19a8c4afb0188ccd0aa7ccf8d45a5756768dbe55603c1c5bc6418bca",
+      "benchmark_sha256": "d7dd11fb19a8c4afb0188ccd0aa7ccf8d45a5756768dbe55603c1c5bc6418bca",
+      "identical": true
+    },
+    {
+      "name": "Simulation.hs",
+      "graphical_sha256": "aa3e705cb751d296ab32b60bd00acb97fae719863748c73cd7a78dc5ea85b8a5",
+      "benchmark_sha256": "6fdaff56fde21e4340a6549bf968688ec7c349e887a89934bff8fc94ee6e8f7a",
+      "identical": false
+    },
+    {
+      "name": "Utils.hs",
+      "graphical_sha256": "c396c1a2182cf76e69935b227f4367d3bbc80902dee626cd48916c85c5a88c1c",
+      "benchmark_sha256": "c396c1a2182cf76e69935b227f4367d3bbc80902dee626cd48916c85c5a88c1c",
+      "identical": true
+    }
+  ],
+  "source_sha256": {
+    "ChangeLog.md": "258108df4dcfb8ebcbf76ad7952fe0540a9bfe0412d86aeb679271108d296d44",
+    "LICENSE": "6e5b5ab7c598aea79cc0a6975df203d14cb678fd022172971082be4dfd60f0e9",
+    "Setup.hs": "5066653559d4d6134b022d66a634a17fdcf8db35d28b447e581fec284afa4689",
+    "src/Agent.hs": "41235bb97921044a1eb0e441b0f35de1896bbda3e72fb05a638ac225fae35b8c",
+    "src/AgentMonad.hs": "1e70f7164423e5707b2b9d42b4878697f76acff1563204099c17e487dbc58bfa",
+    "src/Common.hs": "d98e3fafbffa2149d6c92ae79a9f5e6895b658187e479898657127310eef1b91",
+    "src/Discrete.hs": "5ea2e8ab13c3c553419444e782772913640126521d747f410adfd9139c0452bf",
+    "src/Environment.hs": "82d10f4b31a9c6b818efa73f46de0c069c77c822b4de42a442853bd56cb86b8b",
+    "src/GlossRunner.hs": "724e2ac45eda0305fdc615c8246794f38b1afcaff8f6ae60807b0934757507f0",
+    "src/Init.hs": "e09729606e68b9165e1f10c09db60ee3d3bad433440b8d18c0992822d3f5d225",
+    "src/Main.hs": "d414fc279458175668cbdeb551992ebc502af33b852f838218918361523df7bb",
+    "src/Model.hs": "e0469bc5dd24f8f6e85bcc91f77d82d62cb2afdafe05e2f6205d6be258f0598b",
+    "src/Random.hs": "e3e64496d7c779d3bafb48d78be85237b6a0ced0b9b00f4a78022100d52cd52c",
+    "src/Renderer.hs": "d7dd11fb19a8c4afb0188ccd0aa7ccf8d45a5756768dbe55603c1c5bc6418bca",
+    "src/Simulation.hs": "aa3e705cb751d296ab32b60bd00acb97fae719863748c73cd7a78dc5ea85b8a5",
+    "src/Utils.hs": "c396c1a2182cf76e69935b227f4367d3bbc80902dee626cd48916c85c5a88c1c",
+    "stack.yaml": "3ae3e887dd6e7421542699d1bd110083ad368abe1a1acafccffefc1c50ffe11d",
+    "sugarscape-seq.cabal": "bfd7e145ed183a7cc1e45529dffba264750f3e64edc0b019c254755dce58c8b6"
+  },
+  "expected_compiler": "8.4.3",
+  "bounds": {
+    "cpu": 1,
+    "memory_bytes": 3221225472,
+    "workflow_seconds": 1200,
+    "build_seconds": 900,
+    "run_seconds": 240
+  },
+  "acceptance": "Compare all1000population rows and state49/50 CSVs byte-for-byte with previously validated benchmark observer. Retain any difference; do not select alternative seeds or times to match image."
+}
