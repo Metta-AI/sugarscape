@@ -209,7 +209,7 @@ outputs, patch, build logs, and exit code. Its hash and independent audit are re
 python replications/richmond_2023/audit_resolution.py EXTRACTED_OBSERVER UNMODIFIED_PREFIX NEW_AUDIT
 ```
 
-## Full unchanged native benchmark launched
+## Full unchanged native benchmark
 
 [The frozen full-run protocol](results/full-native-launch-2026-10-17/protocol.json)
 runs all 84 original conditions in one process, preserving the native counter
@@ -220,7 +220,7 @@ excluded from this ensemble's coverage.
 Command `cmd-8h5jk` has a six-hour outer limit and a 21,300-second native limit.
 At the quoted rate, six hours costs at most $24.192, excluding final idle time.
 The terminal evidence collector is capped at 100 MiB. Population/resolution values
-will be compared with the archive; timing comparisons remain descriptive across
+match the archive exactly; timing comparisons remain descriptive across
 different hardware. No acceptance margin is selected after observing differences.
 Operational completion alone will not establish full coverage or paper replication.
 
@@ -367,7 +367,7 @@ the download receipt, and every recomputed mean with its rounding bound.
 
 ## Prepared passive-state audit
 
-`audit_agent_states.py CAPTURE GNU_INITIAL_CSV BENCHMARK_CSV NEW_REPORT` is prepared for the queued 100-step observer.
+`audit_agent_states.py CAPTURE GNU_INITIAL_CSV BENCHMARK_CSV NEW_REPORT` validates the completed 100-step observer.
 It requires the exact observer source and protocol, terminal success, the pinned GNU host initialization,
 and the immutable scaling-prefix CSV published above.
 It compares all initial active fields and all 100 occupied-population counts before reporting state diagnostics.
@@ -379,9 +379,8 @@ Duplicate IDs remain visible and are excluded from displacement pairing.
 Multiple resolution rounds can produce displacement greater than one, so that alone is not classified as a rule violation.
 Matching population counts cannot prove that instrumentation leaves every internal state unchanged.
 
-This auditor has passed formatting, lint, and command-interface checks only.
-The native state capture remains queued; its complete workflow and scientific findings are unvalidated.
-No new simulation or completed-study credit follows from preparing this analysis.
+The [complete native capture and readback](results/state-observer-complete-2026-10-18) pass the audit after matching the initializer toolchain.
+All 893,017 observations are validated for the stated checks; whole-study completion remains outstanding.
 
 ## Full benchmark scaling prefix: 47 of 48 conditions
 
@@ -400,3 +399,12 @@ and the queued individual-state observer remain outstanding.
 The H100 timings do not establish equivalence with the historical V100 hardware.
 The original full-grid command remains active, so this is not terminal-success evidence
 or a whole-paper verdict. Original source-rule and Figure 11 provenance questions remain open.
+
+## Complete population, resolution and scaling plots
+
+[The reconstructed Figure 11 A-C data](results/native-figures-2026-10-18) use the full original benchmark.
+Population and resolution curves agree exactly with the author archive.
+H100 timing scales approximately linearly across all sixteen widths: descriptive R² 0.999705,
+versus 0.999422 in the archived V100 data. Seed ranges and all fit residuals are retained.
+Different hardware/toolchains prevent interpreting this as historical absolute-timing reproduction.
+Earlier partial-prefix sections preserve their acquisition-time status; they are superseded by the complete audit.
