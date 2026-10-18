@@ -585,3 +585,11 @@ The remaining six timing conditions, subsequent population/retry ensembles,
 Table 9 and the unresolved graphical-source questions remain required.
 This is partial timing coverage on different hardware, not whole-paper completion.
 The live original process was checked without restarting any condition.
+
+### Table 9 launched on matching instance class
+
+[The bounded native launch](results/table9-launch-2026-10-18) uses the paper's AWS m5ad.16xlarge type.
+Live hardware reports AMD EPYC 7571, 32 physical cores and 64 logical CPUs.
+All six timing conditions and thirty separately instrumented retry processes retain the full scope.
+The original eight-core ensemble continues separately; no conditions were restarted.
+Timing results and independent audits remain pending.
