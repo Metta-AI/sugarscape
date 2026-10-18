@@ -16,6 +16,7 @@ parser.add_argument(
     "--control-capacity", choices=("qualified", "native"), required=True
 )
 parser.add_argument("--control-only", action="store_true")
+parser.add_argument("--control-size", type=int, choices=(32, 128, 256), required=True)
 args = parser.parse_args()
 root = args.output.resolve()
 root.mkdir(parents=True, exist_ok=False)
@@ -93,7 +94,7 @@ path.write_text(after)
     + "\n"
 )
 records = []
-probes = [(args.control_mode, 32, 60)]
+probes = [(args.control_mode, args.control_size, 60)]
 if not args.control_only:
     probes += [("debug", 1700, 120), ("release", 1700, 120)]
 for mode, size, limit in probes:
@@ -118,7 +119,7 @@ for mode, size, limit in probes:
         "-o",
         str(binary),
     ]
-    if size == 32 and args.control_capacity == "qualified":
+    if size == args.control_size and args.control_capacity == "qualified":
         command.append("-DPARAM_MAX_OBJ=262144")
     with (root / f"{label}-build.log").open("x") as log:
         subprocess.run(
@@ -150,5 +151,5 @@ for mode, size, limit in probes:
         )
     )
     (root / "records.json").write_text(json.dumps(records, indent=2) + "\n")
-    if size == 32:
+    if size == args.control_size:
         assert result.returncode == 0
