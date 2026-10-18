@@ -981,3 +981,23 @@ public archive member matches its audited native file byte-for-byte.
 Both degree-one sample sizes are now audited. These descriptive comparisons
 use separate simulation random streams and do not establish equivalence.
 Other independent estimators and historical Table 8 discrepancies remain open.
+
+### Independent 5,000-input rejection ABC audited
+
+[The full-size rejection workflow](results/independent-rejection5000-2026-10-18)
+validates all five folds, 25,000 held-out parameter predictions and 3,775,000
+exact input cells. Baseline errors match the author-data run exactly. Every
+public archive member matches its audited native file byte-for-byte.
+
+| Parameter | Author-data performance | Independent-data performance |
+| --- | ---: | ---: |
+| initial.population | 0.184152 | 0.189731 |
+| pmut | 0.226955 | 0.221429 |
+| maximum.sugar.endowment | 0.155540 | 0.156684 |
+| maximum.spice.endowment | 0.151303 | 0.151013 |
+| wealth.reproduction | 0.589574 | 0.599636 |
+
+Linear regression, rejection ABC and degree-one ABC now complete both
+required sample sizes on the independent ensemble. Other independent
+estimators and historical Table 8 discrepancies remain open. Cross-stream
+comparisons do not establish equivalence or complete the paper.
