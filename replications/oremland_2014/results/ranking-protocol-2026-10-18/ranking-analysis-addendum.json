@@ -1,0 +1,15 @@
+{
+  "declared_at": "2026-10-18T21:08:55.560080+00:00",
+  "source": "https://www.jasss.org/17/2/6.html, Figure 10",
+  "analysis_before_ranking_results": true,
+  "nominal_runtime_fractions": [
+    0.02,
+    0.1,
+    1.0
+  ],
+  "integer_budget_handling": "Report both floor and ceiling of fraction times Table 2 maximum N, each with minimum 1; retain both interpretations when distinct. These are nominal historical budgets, not claims of equal wall time on current hardware.",
+  "ranking_scope": "Report pooled controls and each of the three fixed-mean-rate strata. Do not select the aggregation yielding the closest published value; the author aggregation is not recovered.",
+  "rankings": "Rank each policy by its objective, with average ranks for exact ties as primary and stable policy-ID tie breaking as sensitivity. Compute both linear and quadratic weighted kappa from paired rank vectors and their empirical marginal distributions.",
+  "reference": "Existing full-size seeds 1..50; independent full-size comparison seeds 101..150. Never use an identical reference as the full-size experimental point.",
+  "limits": "Common seeds couple policies. No original outer replication count or uncertainty-bar construction has been recovered; reconstructed point estimates alone do not reproduce Figure 10 error bars."
+}

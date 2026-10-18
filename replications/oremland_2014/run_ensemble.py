@@ -82,7 +82,7 @@ manifest = {
     "seeds": args.seeds,
     "seconds_limit": args.seconds,
     "mode": args.mode,
-    "scope": "Native reconstructed 50x50 diagnostic ensemble; not original published controls or whole-paper replication.",
+    "scope": "Native reconstructed diagnostic ensemble; model dimensions and reduction assumptions must be audited separately. Not original published controls or whole-paper replication.",
 }
 if args.mode == "policy":
     manifest["policy_sha256"] = hashlib.sha256(

@@ -27,16 +27,32 @@ public class RunPolicy {
         MessageDigest digest = MessageDigest.getInstance("SHA-256");
         BufferedWriter states = Files.newBufferedWriter(output.resolve("trajectory.csv"));
         BufferedWriter events = Files.newBufferedWriter(output.resolve("tax-events.csv"));
+        BufferedWriter initial = Files.newBufferedWriter(output.resolve("initial-agents.csv"));
+        BufferedWriter patches = Files.newBufferedWriter(output.resolve("initial-patches.csv"));
         try {
             workspace.open(model.toString());
             states.write("seed,phase,clipped,step,population,total_tax,debt_refund,state_sha256\n");
             events.write("seed,phase,clipped,step,agent,vision,metabolism,capacity,cycle,policy_index,rate,before,paid,after\n");
+            initial.write("seed,phase,clipped,agent,x,y,sugar,metabolism,vision,original_vision,vision_point_count\n");
+            patches.write("seed,phase,clipped,x,y,capacity,sugar\n");
             for (int seed = 1; seed <= seeds; seed++) {
                 for (int phase : new int[]{0, 4}) {
                     for (boolean clipped : new boolean[]{false, true}) {
                         workspace.command("setup-experiment " + seed + " [" + String.join(" ", rates) + "] " + phase + " " + clipped);
-                        if (!Boolean.TRUE.equals(workspace.report("world-width = 50 and world-height = 50 and ([distance patch 49 0] of patch 0 0) = 1 and ([distance patch 0 49] of patch 0 0) = 1")))
-                            throw new IllegalStateException("Expected 50x50 torus");
+                        int width = ((Number) workspace.report("world-width")).intValue();
+                        if (!Boolean.TRUE.equals(workspace.report("member? world-width [5 10 20 30 40 50] and world-width = world-height and min-pxcor = 0 and min-pycor = 0 and ([distance patch (world-width - 1) 0] of patch 0 0) = 1 and ([distance patch 0 (world-height - 1)] of patch 0 0) = 1")))
+                            throw new IllegalStateException("Expected declared square torus");
+                        String originalVision = width == 50 ? "vision" : "original-vision";
+                        for (Object entry : (LogoList) workspace.report("map [(list [who] of ? [xcor] of ? [ycor] of ? [sugar] of ? [metabolism] of ? [vision] of ? [" + originalVision + "] of ? [length vision-points] of ?)] sort turtles")) {
+                            initial.write(seed + "," + phase + "," + clipped);
+                            for (Object value : (LogoList) entry) initial.write("," + value);
+                            initial.write("\n");
+                        }
+                        for (Object entry : (LogoList) workspace.report("map [(list [pxcor] of ? [pycor] of ? [max-psugar] of ? [psugar] of ?)] sort patches")) {
+                            patches.write(seed + "," + phase + "," + clipped);
+                            for (Object value : (LogoList) entry) patches.write("," + value);
+                            patches.write("\n");
+                        }
                         for (int step = 0; step <= 50; step++) {
                             byte[] hash = digest.digest(workspace.report("survivor-state").toString().getBytes(StandardCharsets.UTF_8));
                             StringBuilder hex = new StringBuilder();
@@ -60,6 +76,8 @@ public class RunPolicy {
         } finally {
             states.close();
             events.close();
+            initial.close();
+            patches.close();
             ((org.nlogo.job.JobManager) workspace.jobManager).die();
         }
     }

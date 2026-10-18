@@ -134,12 +134,44 @@ Mortality is measured as deaths among the original 200 agents. Clipped revenue i
 Policies share seeds, so uncertainty summaries describe variation within each policy, not 100 independent policy replications.
 No numerical pass threshold is inferred after seeing the results. Agreement remains conditional on the reconstructed controls and model.
 
+## Reduced-model sensitivity experiments
+
+[Native qualification](results/reduction-qualification-2026-10-18) covers all six widths and two map/vision-rounding conventions.
+Twenty-four parameter cases produce 12 distinct model/landscape pairs.
+All 96 complete workflows pass audits of 4,896 states, every initial patch, retained tax classes, and 30,976 tax events.
+The full-size model and its earlier seed-1/2 detailed results remain exact.
+
+Population scales with area; low vision maps to one cell in reduced models, while tax class remains based on original vision.
+High vision uses the declared nearest/floor scaling, with the paper's radius-two assignment at widths 10 and 5.
+The protocol lists each source-coordinate mapping and radius; these alternatives are not recovered author settings.
+
+```sh
+python build_reduced_models.py /path/to/qualified-full/oremland.nlogo /path/to/new-reductions
+python run_ensemble.py /path/to/java-home /path/to/NetLogo-5.3.1/app \
+  /path/to/new-reductions/20-pixel_centers-nearest/oremland.nlogo /path/to/new-run \
+  --seeds 2 --seconds 120 --timeout /path/to/timeout policy /path/to/policy.txt
+```
+
+The archive includes the executed qualification launcher for all distinct models and the independent `audit_reductions.py` workflow.
+[The frozen ranking experiments](results/ranking-protocol-2026-10-18) contain 2,538,400 reduced runs and 10,000 separate full-size runs.
+Their inputs reuse the declared convergence policies; full-size comparison seeds are independent of the reference.
+
+```sh
+python prepare_rankings.py /path/to/audited-reductions /path/to/completed-convergence /path/to/new-rankings reduced
+python run_rankings.py /path/to/java-home /path/to/NetLogo-5.3.1/app /path/to/new-rankings \
+  --timeout /path/to/timeout --gzip /path/to/gzip
+python prepare_rankings.py /path/to/audited-reductions /path/to/completed-convergence /path/to/new-full-rankings independent-full
+```
+
+Run the independent full-size batch after the reduced batch to preserve the four-worker limit.
+The new inputs and runtime pipeline are qualified; full ranking results and original uncertainty bars remain outstanding.
+
 ## Remaining paper scope
 
 The original author implementation, original 100 controls and random streams, model-reduction conventions, and optimizer implementation remain unavailable.
 Uniform-rate controls do not establish Figure 9's convergence claim, Figure 10's policy-ranking agreement, Figure 11's Pareto-frontier transfer, or Table 2's historical timings.
 These figures and the optimization experiments remain required; no paper-completion credit is assigned.
 
-The full-size landscape is resolved, but smaller-grid nearest-neighbor coordinates, population scaling, and vision/class mapping still need explicit treatment.
+The full-size landscape is resolved. Reduced-grid conventions now have explicit, qualified sensitivity cases; their agreement with the original author implementation remains unproven.
 Negative-payment clipping cannot explain a population mismatch when it is the only changed rule and random draws remain coupled.
 The clock-phase ambiguity can affect population and must be considered separately.
