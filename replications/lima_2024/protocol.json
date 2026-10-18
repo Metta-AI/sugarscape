@@ -1,0 +1,28 @@
+{
+  "status": "source_audit_only",
+  "completed_study": false,
+  "scenarios": [
+    "all-container",
+    "host-GUI JaCaMo with container services and NetLogo"
+  ],
+  "required": [
+    "Execute actual two NetLogo models and actual JaCaMo model.",
+    "Complete both 1000-step NetLogo experiment1 runs.",
+    "Verify unique registration, transfers through all three models, attributes and AgentSpeak payload preservation.",
+    "Reconcile database and native histories, reporting loss, duplication and queue residence.",
+    "Observe dashboard and native GUI in applicable scenarios.",
+    "Record all configurations, dependency versions, randomization and adaptations."
+  ],
+  "bounds": {
+    "seconds_per_scenario": 3600,
+    "memory_gib": 8,
+    "isolation": "Fresh project and volumes per attempt; unique loopback ports; retain previous outputs."
+  },
+  "fidelity_gaps": [
+    "Exact author revision and dependency digests unknown.",
+    "Original openjdk:8-jdk manifest unavailable. Replacement must preserve Java 8 and NetLogo 6.0.4 and be disclosed.",
+    "Released experiments stop at 1000 steps; paper describes indefinite operation.",
+    "Seeds unspecified; no trajectory fitting."
+  ],
+  "claim": "Architecture feasibility and state transfer; no invented population or timing targets."
+}

@@ -1,0 +1,24 @@
+{
+  "snapshot_sha256": "e279a8f1599646d1c7937e3a6dd873ba73e6f45a5960eb6d77acf655b0c4814a",
+  "snapshot_rows": 2837,
+  "initial_unique_agents": 799,
+  "initial_agents_by_model": {
+    "m1": 399,
+    "m2": 400
+  },
+  "exact_router_deliveries": 1019,
+  "unmatched_deliveries": 0,
+  "rows_by_table": {
+    "m1": 748,
+    "m2": 745,
+    "m3": 325,
+    "router": 1019
+  },
+  "queued_rows_by_table": {
+    "m3": 314
+  },
+  "returns_from_jacamo": 10,
+  "nonempty_asl_paths": 0,
+  "scope": "Consistent database snapshot: exact identity, data, path and ASL-path multiset equality for processed router deliveries. This does not prove native model attribute reconstruction, ASL file-byte preservation, complete trajectories, dashboard behavior or the host-GUI scenario.",
+  "completed_study": false
+}

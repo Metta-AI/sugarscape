@@ -1,0 +1,21 @@
+{
+  "native_saved_file_selected": true,
+  "retained_belief_preserved": true,
+  "plans_preserved": 39,
+  "normalization": "Remove only the additional saved-file URL source annotation.",
+  "score_before": 1,
+  "expected_score_after": 2,
+  "observed_score_after": 1,
+  "score_increment_passed": false,
+  "saved_departure_trigger_present": true,
+  "native_mining_completion_messages": 0,
+  "reexport_and_departure_observed": true,
+  "files_sha256": {
+    "agent-399-input.asl": "25e449c5aca31e02f5f402c380362aa067a0e567ffc64b7c454c6c406dd5903c",
+    "399.asl": "53bc3c18088e227fbbbbfceeed978ff90acc54b1711b02e990ce20dde176fc8c",
+    "native.log": "5a4491e26ca510f94799f3b9c6240bed1e7e364bcde19c1d9c526167e1ca938e",
+    "protocol.json": "d63ac65f3b99fdeee9e5055acb83d980f0f00b2bcb64801338ca0aa4d1e3dd36"
+  },
+  "scope": "Additional checkpoint-reentry control. Evaluate the declared score criterion without changing it. Full trajectories and identity conservation are audited separately; this is not a whole-paper negative verdict.",
+  "completed_study": false
+}

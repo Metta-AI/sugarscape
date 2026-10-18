@@ -1,0 +1,23 @@
+{
+  "ticks_per_netlogo_model": 1000,
+  "ordered_ticks_and_final_markers_verified": true,
+  "netlogo_survivors": {
+    "m1": 249,
+    "m2": 235
+  },
+  "queued_agents": 314,
+  "active_jacamo_agents": {
+    "161": 1
+  },
+  "registered_agents_accounted_for_once": 799,
+  "jacamo_native_attribute_reconstructions": 11,
+  "jacamo_returns": 10,
+  "native_file_sha256": {
+    "shared_volume/netlogo_output/m1_output.txt": "14a3a5068432418339dd97c289e4f63d1bbf02294934ca4fe1d08d7183f90085",
+    "shared_volume/netlogo_output/m1_alive.txt": "30a91a84aa934fef73ea9b22bd1d624311f31c15d343e71f1bb38d0c059364bc",
+    "shared_volume/netlogo_output/m2_output.txt": "f89e1ff3fac611415505a94e75ef40935f40490926244070e97974d62b6baafb",
+    "shared_volume/netlogo_output/m2_alive.txt": "9bf96878162f00d61db60263395121d447c2efe7aef5a5db6e20836a30f20029"
+  },
+  "scope": "Complete native trajectories and identity conservation at shutdown; native JaCaMo creation attributes match consumed database records. This does not establish AgentSpeak reload or host-GUI scenario completion.",
+  "completed_study": false
+}
