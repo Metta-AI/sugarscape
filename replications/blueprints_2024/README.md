@@ -995,3 +995,5 @@ reaches 1,839/2,000 homogeneous inputs, including Bentham 339/500. The remaining
 Final local retry evidence in `results/bentham-timeout-retry-2026-10-18-006` adds original inputs 232 and 237: 1,841/2,000 homogeneous inputs, Bentham 341/500. The supervisor stopped at its disk-space guard; seven assigned inputs never started. No restart or completion credit for those inputs.
 
 The seven local inputs blocked by disk space are assigned to a separate bounded two-CPU execution in `results/bentham-disk-recovery-launch-2026-10-18`. They are disjoint from the existing 152-input queue. Completion counts remain unchanged pending audited outputs.
+
+Three additional Raw runtime inputs in `results/runtime-memory-prefix3-2026-10-18` raise coverage to 871/1,200 and 2,700,518 observations. One completes 50,000 steps; two end in natural extinction. The verified delta and previous checkpoint reconstruct the full sealed evidence exactly.
