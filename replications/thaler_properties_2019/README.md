@@ -1276,7 +1276,8 @@ The inspected figure uses shared axes and a common color scale.
 It preserves the original pre-event observation view beside corrected post-event observations.
 No wave-presence threshold was fitted to these outputs. These first-seed controls
 resolve the spatial-consistency diagnostic, not the appendix's qualitative claims.
-A faithful Weaver comparison and published migration/pollution outcomes remain unresolved.
+A recovered-preset qualification follows below. Published migration/pollution
+outcomes and historical Weaver implementation identity remain unresolved.
 
 The archive retains all source/build inputs, observer, native CSVs, scripts and execution receipts.
 After extracting it into a new directory, recheck against the retained original spatial run:
@@ -1288,3 +1289,18 @@ python CORRECTED_READBACK/plot.py replications/thaler_properties_2019/results/sp
 
 Local Linux amd64 emulation used one CPU, 3 GiB RAM and a 1,800-second outer bound.
 Elapsed time supplies no performance-replication evidence.
+
+## Recovered Weaver migration preset
+
+[Native preset qualification](results/weaver-migration-candidate-2026-10-18/README.md)
+adds a Leicester guide archived in 2016 and three bounded NetLogo executions.
+The recovered preset uses 400 agents, metabolism 0–4, a 23×23 corner cluster,
+and one sugar unit every two ticks. Haskell uses 300 agents, metabolism 1–4,
+a 20×20 cluster, and half a unit each tick. These are multiple confounds.
+
+At seed 602352629, the native preset ends with 217 agents after 1,000 steps;
+our maximum-vision-15 diagnostic ends with 234. Both start with 91 agents of
+zero metabolism. Population-only and isolated-observer executions agree at
+all 1,001 frames. The audit validates 456,185 individual agent observations;
+archive readback reproduces it exactly. No wave threshold was fitted and no
+additional paper or qualitative claim is counted as replicated.
