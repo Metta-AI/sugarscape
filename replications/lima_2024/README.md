@@ -73,3 +73,19 @@ Extract `native-evidence.tar.gz` to a fresh directory, then run both auditors:
 python replications/lima_2024/audit_snapshot.py /run/snapshot-final.jsonl /new/snapshot-audit.json
 python replications/lima_2024/audit_native.py /run /new/native-audit.json
 ```
+
+## Host scenario and entry-state fidelity
+
+[Host preparation evidence](results/host-runtime-2026-10-18) records a successful
+Java 15.0.2 / Gradle 7.4.2 compilation. Three exact source substitutions enable
+the original GUI flag and use isolated loopback API port 25001. Hash checks
+verify that these are the only changes in those source files. The separate
+host scenario is running; compilation and process startup do not prove completion.
+The UI automation tool lists JaCaMoLauncher but cannot select it by name or bundle
+identifier, so visual confirmation remains outstanding.
+
+The original NetLogo entry procedure deliberately redraws sugar in 5–25, while
+copying incoming metabolism and vision. Incoming sugar remains accessible in
+the API history. Our exact-delivery audit therefore covers the transported data,
+not unchanged native sugar. The paper permits adaptation on entry; this source
+finding alone does not establish a failed replication.
