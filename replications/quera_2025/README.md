@@ -196,4 +196,10 @@ These hints do not justify labeling a reconstructed calibration as the paper's r
 
 [All 256 original diagnostic seeds](results/gradient-movement-replay-2026-10-18) pass independent replay of 614,400 agent updates and 15,360,000 cell updates with zero state error. Passive tracing preserves all native state hashes and matches every retained aggregate baseline record.
 
-The trace records 4,020 outside-mask moves and 223 moves to cells marked occupied; all occur at zero-score ties. Every seed contains an outside-mask move. This extends the source-behavior finding beyond the three calibration pilots. Perturbed trajectories, differentiated full states and the paper’s missing calibration protocol remain separate requirements.
+The trace records 4,020 outside-mask moves and 223 moves to cells marked occupied; all occur at zero-score ties. Every seed contains an outside-mask move. This extends the source-behavior finding beyond the three calibration pilots. Perturbed trajectories and the paper’s missing calibration protocol remain separate requirements. The full differentiated-baseline control below extends this replay to differentiated baseline states.
+
+## Complete differentiated-baseline state control
+
+[All 256 seeds](results/gradient-state-control-2026-10-18) produce exactly equal ordinary and differentiated states across 34,560,000 values. Independent readback also matches the earlier movement trace and all 38,400 derivatives against 115,200 archived records.
+
+A failed aggregate-equality assumption exposed 4,632 differences no larger than 3.20e-14. The verifier reproduces both totals exactly using their respective reduction orders; no tolerance was fitted. This validates the diagnostic baseline, while exact published experiment settings and calibration remain unresolved.
