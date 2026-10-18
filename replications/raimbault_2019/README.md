@@ -679,3 +679,10 @@ A bounded continuation now runs that complement; no unfinished input receives cr
 The earlier baseline audit reproduces byte-for-byte after checksum-verified restoration of one missing local map.
 The generated 8,000-input shard failed before launch because GNU time was missing; that failure is preserved.
 Full reference completion, the generated shard and the complete generated ensemble remain required.
+
+### Generated-production dependency repair
+
+[The bounded recovery](results/generated-production-recovery-2026-10-18) installs and checks GNU time before launching workers.
+Command `cmd-sij2u` waits for the 823-input reference continuation, then executes the unchanged 8,000-input generated shard.
+The source, selected inputs, metrics and tolerances remain frozen; the original launch failure is retained.
+No generated output is credited until the new command completes and its raw results pass independent audit.
