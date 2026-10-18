@@ -12,7 +12,7 @@
     "warning": "Appendices G and I describe different Sugarscape variants; do not substitute them for Appendix B."
   },
   "specification": {
-    "landscape": "50 by 50 torus; capacity 0 to 4; original matrix file required",
+    "landscape": "50 by 50 torus; capacity 0 to 4. Published Figure 8 recovers all 2,500 cells, exactly matching retained NetLogo 5.3.1 and 6.1.1 sugar-map.txt files; original author file identity remains unverified.",
     "initial_population": 200,
     "initial_sugar": "Uniform integer 5 through 25 inclusive",
     "vision": "Random integer 1 through 5; low vision 1 through 3",
@@ -31,7 +31,7 @@
     "reduction": "Nearest-neighbor landscape resampling; population scaled; vision scaled with grid size, but high vision fixed to 2 for sizes 10 and 5; metabolism unchanged"
   },
   "unresolved": [
-    "Original landscape matrix and exact resampling coordinate convention",
+    "Exact nearest-neighbor resampling coordinate convention; original author matrix file identity remains unverified, but published capacity layout is resolved.",
     "Taxation before death allows negative sugar to produce negative paid amounts under literal Algorithm 6; author implementation needed",
     "Initial time value and first tax cycle: prose and modulo pseudocode do not establish whether taxation starts at time 0 or 5",
     "Integer rounding for scaled population and vision, and low/high class mapping after scaling",
@@ -51,5 +51,12 @@
     "date": "2026-10-15",
     "finding": "Only matrasmus/Sugarscape_tax_system returned for tax; no established author provenance. No repository returned for optimization.",
     "interpretation": "Limited search evidence, not proof of absence."
+  },
+  "landscape_concordance": {
+    "evidence": "oremland-landscape-2026-10-18/result/comparison.json",
+    "matching_cells": 2500,
+    "total_cells": 2500,
+    "capacity_matrix_sha256": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
+    "interpretation": "Direct published-figure recovery; no simulation or completion credit."
   }
 }
