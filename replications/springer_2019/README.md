@@ -77,7 +77,7 @@ The extracted bars qualify Section 6.1’s general statement that baseline versi
 
 [The registered batch](results/full-native-defaults-2026-10-18/protocol.json) uses the original 1,700×1,700 grid, 10,000 iterations and seed 42. One DynaSOAr debug execution records allocator layout and assertions; five release executions each measure DynaSOAr, AOS and SOA. Every input source hash is checked against the successful qualification. No size or capacity macros override archived defaults.
 
-Command `cmd-7k3hf` is registered on the owned H100 with a 45-minute execution bound and $5 budget. It is pending execution, not completed evidence. Four allocator variants remain outside this first batch; all seven variants, independent model validation and capacity searches remain required. New-hardware timings cannot establish historical absolute timing equivalence.
+Command `cmd-7k3hf` is registered on the owned H100 with a 45-minute execution bound and $5 budget. It exited after the full-size debug process hit its 600-second limit, before any release run started; the failure is retained below. Four allocator variants remain outside this first batch; all seven variants, independent model validation and capacity searches remain required. New-hardware timings cannot establish historical absolute timing equivalence.
 
 ## Remaining allocator qualification
 
@@ -94,3 +94,9 @@ Figure 10’s source totals are 85.704 s (DynaSOAr), 128.306 s (mallocMC), 128.2
 The five baseline repeats reveal that plotted AOS/SOA values are their minima, not medians. Their medians are 253.369 s and 62.805 s respectively. Future batch audits retain every repeat and report both minimum and median; the historical baseline comparison uses the evidenced statistic. Raw dynamic-allocator repetition identities remain unestablished.
 
 The capacity script contains unnormalized arrays and commented-out divisions for all series except AOS. Explicitly normalizing its Sugarscape values by 1.6099131 reconstructs the published ratios to graphical precision. Executing the script unchanged would not reproduce Figure 11. This is a recovered plotting-source discrepancy, not evidence against the allocator result. The original square-grid problem-size convention remains unresolved.
+
+## Full-size debug timeout
+
+[The first full-size batch](results/full-native-defaults-timeout-2026-10-18) compiled successfully but its debug process exceeded the 600-second limit. No execution completed and no release timing started. The sealed failure archive matches its export hash and preserves the executed runner, binary, log, compiler/device provenance and source manifest.
+
+This is incomplete execution, not a 600-second timing measurement or negative paper replication. The native program prints no per-step progress; slow execution and a stalled kernel remain unresolved. A bounded progress-observed control is needed before extending run limits or interpreting hardware performance. The remaining-allocator qualification started separately as `cmd-89573` after this failure’s evidence export.
