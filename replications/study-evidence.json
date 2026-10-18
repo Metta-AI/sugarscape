@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T05:12:48.530539+00:00",
+  "as_of": "2026-10-18T05:55:34.659957+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -19,37 +19,38 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "9f0965042d98639894be225cc2209e70d8440b45",
+      "checked_commit": "bbc2b02f8d3f68219b3e3b530beee1a4469b89cc",
       "status": "partial",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "b23525d1524a7aa80bf690db8ba5071052d641b087c7cac667a7d6294ac53ac3",
-      "json_evidence_files": 180,
-      "remaining_scope": "All 75 reported Table8 values evaluated:38 printed matches,37 unresolved discrepancies;15 cells published NA. All5000 author simulations replayed; independent4381/5000 audited, final619 awaiting evidence recovery. Full five-fold GAM parser control validated; term decomposition reproduces all250 fold-two wealth predictions and identifies extrapolation by snap.450.mean.prices. Historical estimator fidelity remains unresolved.",
-      "gzip_json_evidence_files": 0
+      "readme_sha256": "72c210fcd59d29ae95343ff96c81c58013b71fab9ea0fa663d0213bf08f88a6e",
+      "json_evidence_files": 208,
+      "remaining_scope": "All 5000 independent inputs audited with 750000 recomputed statistics. Independent linear regression at both sizes, rejection ABC1250 and degree-one ABC1250 validated. Remaining independent estimators and interpretation are unfinished. Table8 retains38 printed matches and37 unresolved discrepancies among75 computed values;15 cells published NA. Historical estimator fidelity remains unresolved.",
+      "gzip_json_evidence_files": 0,
+      "checked_at": "2026-10-18T05:55:34.659957+00:00"
     },
     {
       "study": "raimbault_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
-      "checked_commit": "e677dcb62ca3634479b41849582c784cd5812a4e",
+      "checked_commit": "66218934e74f3a120eaba1f3f3f292b7e5bf1626",
       "status": "running",
       "readme": "replications/raimbault_2019/README.md",
-      "readme_sha256": "c97e6a3257eb4403192cbb1d54f79617e869c88b180ebfa6bde2f2e1965da7f8",
-      "json_evidence_files": 124,
-      "remaining_scope": "All 55,000 reference inputs audited: 110,000 exact Gini comparisons. Generated-landscape and spatial-sensitivity ensembles remain incomplete.",
+      "readme_sha256": "d148799932214804e81ae7098436b787e9beb3a8796236c2f22b1e18eccce795",
+      "json_evidence_files": 130,
+      "remaining_scope": "All55000 reference inputs audited with110000 exact Gini comparisons. Another8000 generated inputs audited with16000 exact Gini comparisons and31 morphology differences within the predeclared1e-12 tolerance. This prefix covers population10 only; full2727994-input generated grid and spatial sensitivity remain incomplete.",
       "gzip_json_evidence_files": 4,
-      "checked_at": "2026-10-18T03:15:11.427696+00:00"
+      "checked_at": "2026-10-18T05:55:34.659957+00:00"
     },
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "d68cdbf2093e4ee9fd8aa3a2662e610bf566b3ee",
+      "checked_commit": "ce0b24fe51094aab2d0c43650c9e2e7660d9aaef",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "727a3fc546bc10932c8fe1b0b62bb4e44215e50667ace54adfc5923926db9cc3",
-      "json_evidence_files": 469,
-      "remaining_scope": "1,621/2,000 homogeneous inputs and 854/1,200 runtime inputs audited. Parallel Bentham adds 29 full inputs; five timeouts retained without credit. Full remaining ensembles, sweeps and runtime schedule discrepancy remain.",
+      "readme_sha256": "424a90e4de1ed2e497fdbab50f3f65ab8a44c52105fc9c4ef2679da486ac0f00",
+      "json_evidence_files": 513,
+      "remaining_scope": "1694/2000 homogeneous inputs and854/1200 runtime inputs audited. Homogeneous coverage:500 Altruist,500 Raw,481 Egoistic,213 Bentham. Eight parallel Bentham timeouts retained without credit. Low-half Bentham50000 failed with SIGKILL; cause unproven and retry pending. Full remaining ensembles, sweeps and runtime schedule discrepancy remain.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T05:12:48.530539+00:00"
+      "checked_at": "2026-10-18T05:55:34.659957+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -169,14 +170,14 @@
     {
       "study": "thaler_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
-      "checked_commit": "05644f7500e9e4ca23e0fae02e4fabb16adff81c",
+      "checked_commit": "63b0faf3b4b0842907cdad09ba61028124fff6bd",
       "status": "running",
       "readme": "replications/thaler_2019/README.md",
-      "readme_sha256": "2a8818de1cb2700bf5f8dab2d4852c8d423680e2f24d350721573adb60e27521",
-      "json_evidence_files": 148,
+      "readme_sha256": "ac760611d8e12c215f33a8c6d6012c1aaa4bcfaf660ec10f5c4d936a35f302ea",
+      "json_evidence_files": 156,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "All225 population and90 original retry processes audited. Tables6/8:43/45 timings audited. Table9:all6 timings and30 retry processes audited. Normal32 retry ratio .086126 versus published .29 remains unexplained after counter-source inspection. Two Table8 conditions, Figure5a fidelity and discrepancy interpretation remain.",
-      "checked_at": "2026-10-18T05:12:48.530539+00:00"
+      "remaining_scope": "All51 native timing conditions across Tables6,8,9 audited, with204 raw measurements. Population225 processes and retry90 processes audited; Table9 adds30 retry processes. Hardware differs from publication. Figure5a provenance and normal32 retry discrepancy remain unresolved; prior TVar segfault retained.",
+      "checked_at": "2026-10-18T05:55:34.659957+00:00"
     },
     {
       "study": "thaler_properties_2019",
