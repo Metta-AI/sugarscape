@@ -1055,3 +1055,9 @@ all outliers and leaves historical and implementation discrepancies unresolved.
 Linear regression recomputes three folds; bootstrap forest replays five completed folds.
 The runner verifies input hashes and writes new folds atomically. Fresh forest fitting after recovery remains unqualified.
 Both live 5,000-input producers remain unchanged; this adds no paper completion credit.
+
+## Independent neural-network first completed fold
+
+[The first fold](results/independent-neuralnet-first-fold-2026-10-18) validates all 755,000 input cells and 5,000 held-out predictions.
+Errors, interval coverage, and widths reconstruct within 1e-10; baseline errors equal the author-data fold.
+Archive readback reproduces the audit exactly. Four folds remain, so no aggregate score or new study completion is claimed.
