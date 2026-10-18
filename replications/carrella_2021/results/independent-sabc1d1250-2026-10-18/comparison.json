@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "parameter": "initial.population",
+      "author_data_performance": 0.463495057111922,
+      "independent_data_performance": 0.481085268025557,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "pmut",
+      "author_data_performance": 0.350284444190329,
+      "independent_data_performance": 0.359729392202255,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "author_data_performance": 0.423884386703421,
+      "independent_data_performance": 0.443672638781126,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "author_data_performance": 0.436137524185557,
+      "independent_data_performance": 0.445263880939288,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "author_data_performance": 0.5635486458472,
+      "independent_data_performance": 0.577929868109691,
+      "baseline_error_difference": 0.0
+    }
+  ],
+  "scope": "Complete five-fold semi-automatic ABC degree-one estimation on independent simulation statistics; same original parameter inputs and CV seed. Different simulation random streams prevent direct equivalence interpretation.",
+  "completed_study": false
+}

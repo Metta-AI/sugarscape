@@ -943,3 +943,22 @@ These are descriptive cross-simulation comparisons, without an equivalence
 margin or paper-level verdict. The full-size rejection workflow and both
 semi-automatic one-degree estimator sizes are active under one-hour-per-size
 bounds, using frozen author functions and immediate warning capture.
+
+### Independent 1,250-input semi-automatic ABC audited
+
+[The degree-one workflow](results/independent-sabc1d1250-2026-10-18) validates
+all five folds, 6,250 held-out parameter predictions and 943,750 exact input
+cells. Baseline errors match the author-data run exactly. Every public archive
+member matches its audited native file byte-for-byte.
+
+| Parameter | Author-data performance | Independent-data performance |
+| --- | ---: | ---: |
+| initial.population | 0.463495 | 0.481085 |
+| pmut | 0.350284 | 0.359729 |
+| maximum.sugar.endowment | 0.423884 | 0.443673 |
+| maximum.spice.endowment | 0.436138 | 0.445264 |
+| wealth.reproduction | 0.563549 | 0.577930 |
+
+These comparisons describe separate simulation random streams; they do not
+establish equivalence or complete the paper. The 5,000-input degree-one and
+rejection workflows remain active under their existing one-hour bounds.
