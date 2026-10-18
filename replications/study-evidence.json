@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T11:32:40.225122+00:00",
+  "as_of": "2026-10-18T11:36:10.294087+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -206,13 +206,13 @@
       "study": "richmond_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/18",
       "status": "partial",
-      "checked_commit": "fbeabc585280b523b31e8e482d6b7c935b772751",
+      "checked_commit": "359a4eb753c4ab3f944658597ae0577b327fd746",
       "readme": "replications/richmond_2023/README.md",
-      "readme_sha256": "49a512f6e135ed019a86ab9247f420f65f11573a62ea7406cd9753a6c2e4804c",
-      "json_evidence_files": 87,
+      "readme_sha256": "c3e10371affd66116f6352a463dfa5b26aca39cab4084ba5815fdfee24ce2a26",
+      "json_evidence_files": 89,
       "gzip_json_evidence_files": 5,
-      "remaining_scope": "All 84 native conditions and archived comparisons retained. GNU replay and paired Clang controls pass state accounting. Historical XORWOW restoration alone does not recover later illustrations. All 606 comparisons over both 101-frame captures find no exact later-image match. Historical engine/visualization fidelity and hardware-qualified timing remain unresolved. No whole-paper verdict.",
-      "checked_at": "2026-10-18T11:22:50.237965+00:00"
+      "remaining_scope": "All 84 native conditions and archived comparisons retained. GNU replay and paired Clang controls pass state accounting. Historical XORWOW restoration alone does not recover later illustrations. All 606 comparisons over both 101-frame captures find no exact later-image match. Historical engine/visualization fidelity and hardware-qualified timing remain unresolved. No whole-paper verdict. Historical source audit finds matching seed/sequence-offset arithmetic and float-draw calls; no evidence supports another seed-offset variant. Execution ordering and CUDA behavior remain unverified.",
+      "checked_at": "2026-10-18T11:36:10.294087+00:00"
     },
     {
       "study": "lima_2024",
