@@ -7,6 +7,8 @@ Status: all 5,000 fresh author-model simulations validated. All 75 reported Tabl
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.
 
+The [independent 1,250-input bootstrap forest](results/independent-rfboot1250-2026-10-18) completes all five folds and 6,250 audited predictions. One of five scores matches printed precision; its 5,000-input batch remains running.
+
 ## Complete simulation replay
 
 [The complete replay](results/full-author-replay-2026-10-15) reconstructs all 750,000 archived statistics from 5,000 fresh trajectories.
