@@ -115,3 +115,19 @@ IDs and the total of 799 agents. Both NetLogo trajectories still require 1,000
 steps. The control must verify native file selection, retained beliefs and plans,
 a second export, and final conservation. It supplements the original scenarios;
 it does not establish a natural repeat visit under their original scheduling.
+
+### First observed reload event
+
+[The retained control event](results/reload-first-event-2026-10-18) confirms
+that native JaCaMo selects `list/399.asl`, preserves the previous random belief,
+and exports all 39 saved plans again. Plan text matches after removing only the
+additional saved-file URL annotation. Both file hashes and the native log are
+retained; the full generated AgentSpeak files remain in external run evidence.
+
+The predeclared score-increment criterion **fails**: score remains 1, not 2.
+The saved file contains `initial_print1`, whose initial-belief event invokes
+the departure plan immediately on reload. Native logs show export and departure
+without another mining completion. This behavior comes from the unmodified
+author agent program, not a replication patch. It demonstrates file persistence
+with a lifecycle caveat; it is not a whole-paper negative verdict. The full
+control trajectories and final conservation audit are still pending.
