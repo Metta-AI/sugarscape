@@ -6,6 +6,9 @@ Latest audited checkpoint: **1,514 / 2,000 homogeneous configurations**, coverin
 The raw and altruistic ensembles each contain all 500 inputs; audited prefixes remain egoistic 381 and Bentham 133.
 [Completed altruistic evidence](results/altruistic-complete-2026-10-18) adds 25 inputs beyond the prior 1,489-input checkpoint; two agreeing pilot duplicates remain excluded.
 The complete altruistic Table 3 row matches exactly: 344 extinct, 10 worse, and 146 better.
+[Its complete figure comparison](results/altruistic-figures-2026-10-18/README.md)
+also matches all 24,392 extracted vertices in Figures 4, 5, 7, 8 and 9.
+Figure 6 matches all 4,995 vertices under all-cause deaths; the released plotter's narrower definition does not match.
 All retained intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. Three batches remain active.
 Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
 

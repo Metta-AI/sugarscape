@@ -1,0 +1,44 @@
+{
+  "model": "altruisticHalfLookaheadBinary",
+  "runs": 500,
+  "observations": 840379,
+  "timesteps": 5001,
+  "metrics": [
+    "population",
+    "agentMeanTimeToLive",
+    "agentStarvationDeaths",
+    "agentCombatDeaths",
+    "agentWealthTotal",
+    "meanAgeAtDeath"
+  ],
+  "compared_scalars": 30006,
+  "max_absolute_error_by_metric": {
+    "population": 0.0,
+    "agentMeanTimeToLive": 4.973799150320701e-14,
+    "agentStarvationDeaths": 0.0,
+    "agentCombatDeaths": 0.0,
+    "agentWealthTotal": 5.093170329928398e-11,
+    "meanAgeAtDeath": 2.842170943040401e-14
+  },
+  "population_exact": true,
+  "floating_comparison": {
+    "rtol": 1e-12,
+    "atol": 1e-08
+  },
+  "final_means": {
+    "population": 226.876,
+    "agentMeanTimeToLive": 4.812540000000001,
+    "agentStarvationDeaths": 0.252,
+    "agentCombatDeaths": 0.0,
+    "agentWealthTotal": 34771.27718,
+    "meanAgeAtDeath": 21.490580000000005
+  },
+  "final_derived": {
+    "starvation_plus_combat_per_population": 0.001110738905834024,
+    "wealth_per_population": 153.26115225938398
+  },
+  "parser_sha256": "40db9cf6b8172e9fea0b3de532f541ebecd9d4b6e2724ea4ac6ee5ebf4c7d5e5",
+  "coverage_sha256": "1f219ee570382679c0f859501850bab4161830bd6fddb3c117958c20b124383e",
+  "semantics": "Absent post-extinction rows contribute zero; denominator remains500. Derived ratios divide ensemble means, not per-run ratios.",
+  "scope": "Complete one-model author-parser reproduction. Cross-model paper curves and graphical agreement remain unvalidated."
+}
