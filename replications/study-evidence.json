@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T19:42:46.537254+00:00",
+  "as_of": "2026-10-18T19:46:20.258653+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -43,12 +43,12 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "ddf9787d22efacbf6b465f0753999564e50fcc3c",
+      "checked_commit": "9594e9d9bbc71375e9520fde66d0214b1481e05e",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "4f82ccbf8bd72f18fdabd7274ea99dcb5640186902e8ddab332e705bc37094f5",
-      "json_evidence_files": 965,
-      "remaining_scope": "All 2,000 original homogeneous inputs complete and audited (5,063,268 observations); no missing seeds. Runtime coverage remains 872/1200. Continuation cmd-8y9yk failed before simulation because Git was absent after restoration; failure archive preserved. Full selfishness and mixed-society sweeps, longer horizons, runtime claims and remaining figure analysis are incomplete.",
+      "readme_sha256": "fab3e06b9cfdacbae60afd647ab440735000bcabe408e2616757c7da747e23fd",
+      "json_evidence_files": 977,
+      "remaining_scope": "All 2,000 original homogeneous inputs complete and audited (5,063,268 observations); no missing seeds. Runtime coverage remains 873/1200. Continuation cmd-8y9yk failed before simulation because Git was absent after restoration; failure archive preserved. Full selfishness and mixed-society sweeps, longer horizons, runtime claims and remaining figure analysis are incomplete. Final Bentham checkpoint adds one audited 50,000-step input; runtime coverage is 873/1,200. Missing-Git setup failure retained; replacement cmd-y47e9 restores Git/time and both original native workers confirmed running, bounded to six hours per group. No completion credit for interrupted inputs or merely running jobs.",
       "gzip_json_evidence_files": 37,
       "checked_at": "2026-10-18T19:38:27.136465+00:00"
     },
