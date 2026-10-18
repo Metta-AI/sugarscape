@@ -185,3 +185,7 @@ whose power-of-two ranges all begin at zero. The reconstruction preserves it.
 ## Complete published MASON grid controls
 
 [All11 paired conditions](mason-grid/README.md) now execute100 steps. Each variant matches4,072,272 initial fields against the C initializer; the ordered-neighbor control matches4,072,272 independently replayed final fields. Native-order differences remain recorded at every size. Historical timings and other paper targets remain incomplete.
+
+## Complete published FLAME grid behavior
+
+[All five native FLAME sizes](flame-grid/README.md) now execute100 steps. Independent checks match60,600 initial and final fields; all765,075 native agent observations pass structural/resource audits. Pinned dependency reconstruction and the GCC16 common-symbol build flag are explicit. Historical performance and GPU/distributed validation remain outstanding.
