@@ -38,7 +38,10 @@ All 408 paired survivor-state hashes match, across 816 observations.
 Paired revenue differences equal recorded negative-wealth refunds, ranging from 0 to 7 sugar units.
 The survivor state includes each agent's identity, position, wealth, metabolism, and vision, plus every patch's position, current sugar, and capacity.
 
-The 100-seed extension uses the same full workflows and is bounded to 1,800 seconds, one active JVM processor, and 512 MiB heap.
+[The 100-seed extension](results/100-seed-controls-2026-10-18) completed all 1,600 runs in 228.50 seconds under a 1,800-second bound, one active JVM processor, and 512 MiB heap.
+All 40,800 paired survivor-state hashes match across 81,600 observations. Revenue differences equal recorded refunds and range from 0 to 12 sugar units.
+Literal zero-rate taxation produces negative revenue in 193 of 200 runs; its range is −12 to 0. Clipped zero-rate revenue is zero throughout.
+The seed-1 trajectory is byte-identical to the earlier qualification, and compressed evidence passes lossless readback.
 It is a diagnostic ensemble, not the paper's 100 heterogeneous control schedules.
 The separate auditor requires every seed, condition, and timestep, exact paired state hashes, monotone population, and the analytical revenue identity.
 
