@@ -1,0 +1,24 @@
+{
+  "title": "Exploring Income and Wealth Distributions using Agent-Based Modelling: How does Taxation Impact Economic Inequality?",
+  "authors": [
+    "Achraf Azzaoui",
+    "William Kennedy"
+  ],
+  "doi": "10.13021/jssr2022.3413",
+  "source": "https://journals.gmu.edu/index.php/jssr/article/view/3413",
+  "published": "2022-12-13",
+  "observed_material": "Journal landing page contains an abstract; no full methods, downloadable paper or implementation was exposed in the retrieved page.",
+  "reported_claims": [
+    "A wealth-tax rate around 15 percent maximizes marginal revenue.",
+    "Wealth tax and Gini index have an approximately linear association.",
+    "Lending produces four lender/borrower categories."
+  ],
+  "basis": "NetLogo Sugarscape 3 Wealth Distribution, extended with taxation, lending, trade and reproduction.",
+  "fidelity_gaps": [
+    "Tax timing, redistribution, horizons, seeds, replication counts and measurement definitions unavailable.",
+    "No paper-specific implementation recovered by targeted title/author/GitHub web searches.",
+    "Name-matched GitHub account repository request returned HTTP403 rate-limit exceeded; contents and author identity unverified."
+  ],
+  "status": "Abstract-only lead; not accepted as a full paper study and no replication credit.",
+  "checked_date": "2026-10-18"
+}
