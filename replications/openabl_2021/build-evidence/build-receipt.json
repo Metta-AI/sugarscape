@@ -1,0 +1,34 @@
+{
+  "source_commit": "eb08ef86df0b9c0532cb8fd6b714bde5e8551923",
+  "compiler_build_completed": true,
+  "generated_c_build_completed": true,
+  "simulation_executed": false,
+  "completed_study": false,
+  "platform": "macOS arm64",
+  "tools": {
+    "bison": "3.8.2",
+    "cmake": "4.0.3",
+    "compiler": "AppleClang17",
+    "generated_code_compiler": "gcc-16 (Homebrew GCC 16.2.0) 16.2.0"
+  },
+  "portability_change": "Replace fixed-width printer overloads with native signed/unsigned int,long,long long overloads. Avoid ambiguous conversions for macOS long and size_t. No model edits.",
+  "failures_preserved": [
+    "Original compiler integer overload ambiguity.",
+    "Literal-only attempt exposed the same issue in Mason printer.",
+    "Generated build.sh invokes macOS gcc alias, which rejects -fopenmp. Explicit GCC16 with unchanged build flags succeeds."
+  ],
+  "commands": [
+    "cmake -S SOURCE -B BUILD -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -DBISON_EXECUTABLE=/opt/homebrew/opt/bison/bin/bison",
+    "cmake --build BUILD -j 2",
+    "BUILD/OpenABL -i examples/sugarscape.abl -o BUILD/generated-c -b c -A asset -B",
+    "/opt/homebrew/bin/gcc-16 -O2 -std=c99 main.c libabl.c -lm -fopenmp -o main"
+  ],
+  "sha256": {
+    "OpenABL": "841bc2ee2faa26afcc14a3bf036119cf4d2444b4436085cf9e95aed9a865e01d",
+    "generated-c/main": "a949fb2b784bdd2be725a46340c559b7f916a3848b2bd240b1eb62a939272160",
+    "generated-c/main.c": "3e9ced14a3c60fca14702a5b801ceee571e850c46fe15556fa4f3deb1f1d3c39",
+    "generated-c/libabl.c": "4c9917528420d2eadd91d1bdefc233afd2cb782d98cc8beac7d41eecea6c2ebc",
+    "native-integer-overloads.patch": "c4e68def0e68489d379e8d6f48ab35a5c3f8122f847d7b1c924385f690352eae"
+  },
+  "remaining": "No behavioral or performance validation. Historical dependencies, benchmark settings and paper comparisons remain required."
+}
