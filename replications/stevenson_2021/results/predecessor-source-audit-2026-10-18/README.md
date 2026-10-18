@@ -4,7 +4,7 @@ The author's [publication index](https://longbeachinstitute.org/) links [Populat
 
 Page 3 confirms random action order, nearest-richest movement with random tie breaking, consumption before reproduction, delayed newborn activation for positive puberty, zero endowment, and regrowth after agent actions. These agree with the corresponding implemented conventions. They do not settle equality thresholds, age-update timing, or historical random-stream identity.
 
-The preceding paper's Figure 13 caption, page 19, uses cycles 130,000–150,000 for birth-cost sensitivity at infertility 10 and puberty 1. Page 20 uses 40,000–50,000 for infertility sensitivity. These are different experiments, so neither window is silently assigned to the target paper. Our existing 100,000-cycle birth-cost ensemble cannot be claimed to cover the former window.
+The preceding paper's Figure 14 caption, page 19, uses cycles 130,000–150,000 for birth-cost sensitivity at infertility 10 and puberty 1. Page 20 uses 40,000–50,000 for infertility sensitivity. These are different experiments, so neither window is silently assigned to the target paper. Our existing 100,000-cycle birth-cost ensemble cannot be claimed to cover the former window.
 
 Four bounded GitHub repository-metadata searches returned zero results. This does not exclude code under another name or in unsearched repositories. No verified author implementation was recovered.
 
