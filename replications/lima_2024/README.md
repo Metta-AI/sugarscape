@@ -173,3 +173,31 @@ author-generated AgentSpeak code and should remain external to the public PR.
 ```sh
 python replications/lima_2024/collect_completed.py /completed/run /new/collection
 ```
+
+## Runnable container workflow
+
+Requirements: Docker Compose, Git, Python 3.10 or later, and Pydantic 2 for the
+auditors. Supply a clean author checkout at the revision in `source-pins.json`
+and the official [NetLogo 6.0.4 archive](https://downloads.netlogo.org/6.0.4/NetLogo-6.0.4-64.tgz).
+Preparation verifies both source hashes and the archive checksum. It copies
+source into a fresh run directory and changes no model rules. The replacement
+NetLogo Dockerfile matches the qualified runtime; other author dependencies
+remain historically unpinned, so fresh builds need their own runtime evidence.
+
+```sh
+python replications/lima_2024/prepare_container.py /author/checkout /downloads/NetLogo-6.0.4-64.tgz /new/run --project sugarscape-lima-replay-001
+docker compose -f /new/run/compose.json build
+python replications/lima_2024/run_container.py /new/run
+python replications/lima_2024/collect_completed.py /new/run /new/run/collection
+cp /new/run/collection/snapshot-final.jsonl /new/run/snapshot-final.jsonl
+python replications/lima_2024/audit_snapshot.py /new/run/snapshot-final.jsonl /new/run/snapshot-audit.json
+python replications/lima_2024/audit_native.py /new/run /new/run/native-audit.json
+```
+
+The default port offset is 20,000; choose another with `--port-offset` when
+occupied. The runner refuses existing project containers, stops its own services
+within the one-hour protocol bound, and retains terminal states and logs.
+Preparation and all nine image builds have passed. A fresh complete execution
+with automatic collection and both auditors is in progress; no result is claimed
+until those audits pass. This workflow covers the container scenario, while the
+host-GUI setup and visual confirmation remain separate requirements.
