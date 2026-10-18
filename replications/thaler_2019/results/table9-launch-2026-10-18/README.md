@@ -29,3 +29,13 @@ Only this new task-owned instance was created; no shared fleet workload was chan
 The collector targets this instance and process, validates the archive, downloads at most 100 MiB,
 and verifies its byte count and SHA-256. The remote disk remains intact if collection is interrupted.
 This launch establishes execution and hardware evidence, not Table 9 completion or a paper verdict.
+
+## Independent complete-grid auditor
+
+`timing/audit_table9.py EXTRACTED_TERMINAL_ARCHIVE NEW_OUTPUT` is prepared for the terminal capture.
+It requires all six timings, thirty retry processes, exact frozen schedules, source-archive hashes,
+separate executable hashes, successful native exits and matching allocation records.
+It independently reconstructs timing slopes, R-squared and sample dispersion from the raw measurements;
+retry ratios are recomputed from each original transaction-counter log.
+Only formatting, lint and command-interface checks have run so far.
+The full audit remains unvalidated until real terminal evidence arrives.
