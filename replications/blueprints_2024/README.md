@@ -1039,4 +1039,4 @@ Sweeps, longer horizons, runtime requirements, and remaining figure analysis sti
 
 ### Bounded 0.37 cohort launched
 
-[The frozen protocol](results/selfishness037-protocol-2026-10-18/README.md) requests the remaining 499 original seeds at selfishness 0.37. Two full CPython/PyPy pairs gate eight-worker bulk execution; all original horizons remain intact. The 9.5-hour simulation budget is bounded to roughly $8. Bootstrap and the first pilot are running; no additional completed inputs are claimed yet.
+[The frozen protocol](results/selfishness037-protocol-2026-10-18/README.md) requests the remaining 499 original seeds at selfishness 0.37. Two full CPython/PyPy pairs gate eight-worker bulk execution; all original horizons remain intact. The 9.5-hour simulation budget is bounded to roughly $8. [Both complete runtime qualification pairs](results/selfishness037-pilots-2026-10-18) now pass byte-exact trajectory comparison and local audit. Two new unique inputs add 10,002 observations; the original supplementary sweep has ten completed inputs and 99,990 remaining. No condition aggregate or paper completion is claimed.
