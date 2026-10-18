@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T10:53:43.354261+00:00",
+  "as_of": "2026-10-18T11:22:50.237965+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -43,14 +43,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "e428e92e50f537982d85a01b3ca18b0eb092077b",
+      "checked_commit": "7bec1f04d3bd21a9e11e5a193f66d8578c59a2e3",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "0afeddf653b140c6dc5b0068850d4581006234d2fe13cacd8f014a245a0ce222",
-      "json_evidence_files": 751,
-      "remaining_scope": "1,841/2,000 homogeneous and 868/1,200 runtime inputs audited. Bentham 341/500 leaves 159 original homogeneous inputs. Local retry supervisor stopped at its disk guard after 14 completions; 7 assigned inputs never started. Other bounded remote ensembles continue. Full sweeps, longer horizons, 332 remaining runtime inputs and the 100-input versus reported 500-input schedule remain incomplete.",
+      "readme_sha256": "f893738fd93d9b6bb5b6d64c58fe209136709755d944c344ad19b2d6bd22791f",
+      "json_evidence_files": 775,
+      "remaining_scope": "1,841/2,000 homogeneous and 871/1,200 runtime inputs audited; 2,700,518 runtime observations. Bentham 341/500 leaves 159 original homogeneous inputs. Seven disk-blocked inputs now run on a separate bounded CPU2 job, disjoint from the queued 152. Full sweeps, longer horizons, 329 remaining runtime inputs and the 100-input versus reported 500-input schedule remain incomplete.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T10:53:43.354261+00:00"
+      "checked_at": "2026-10-18T11:22:50.237965+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -206,13 +206,13 @@
       "study": "richmond_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/18",
       "status": "partial",
-      "checked_commit": "efea61e862346aed0b8a24a9dee677662ee2b0b5",
+      "checked_commit": "fbeabc585280b523b31e8e482d6b7c935b772751",
       "readme": "replications/richmond_2023/README.md",
-      "readme_sha256": "4c30b7046a2ad9f58a87f88a50e4a5b9b3a204f7a427babfca9c92d0ea04f1dc",
-      "json_evidence_files": 70,
-      "gzip_json_evidence_files": 2,
-      "remaining_scope": "All 84 native conditions and original archive comparisons retained. Paired input controls reproduce the GNU state file byte-for-byte. Clang 100-step accounting covers 888,920 observations and 617,910 moves; initial historical illustration matches 65,536/65,536 cells but later frames differ. Historical engine, visualization timing and GPU random streams remain unresolved. H100 timings do not establish V100 equivalence; no whole-paper verdict.",
-      "checked_at": "2026-10-18T10:53:43.354261+00:00"
+      "readme_sha256": "49a512f6e135ed019a86ab9247f420f65f11573a62ea7406cd9753a6c2e4804c",
+      "json_evidence_files": 87,
+      "gzip_json_evidence_files": 5,
+      "remaining_scope": "All 84 native conditions and archived comparisons retained. GNU replay and paired Clang controls pass state accounting. Historical XORWOW restoration alone does not recover later illustrations. All 606 comparisons over both 101-frame captures find no exact later-image match. Historical engine/visualization fidelity and hardware-qualified timing remain unresolved. No whole-paper verdict.",
+      "checked_at": "2026-10-18T11:22:50.237965+00:00"
     },
     {
       "study": "lima_2024",
