@@ -1077,3 +1077,7 @@ The full estimator and paper remain incomplete.
 [Fold 4](results/independent-neuralnet-fold4-2026-10-18) passes exact train/test alignment, 755,000 input-cell checks, and 5,000 prediction checks.
 Four completed folds now cover 20,000 held-out predictions and 3,020,000 input-cell checks; the fifth remains active.
 No partial aggregate estimator score or new study-completion credit is claimed.
+
+## Independent bootstrap-forest second completed fold
+
+[The second fold](results/independent-rfboot-fold2-2026-10-18) verifies 755,000 input cells and 5,000 held-out predictions against the original seed-zero partition. All reported errors, coverage, and interval widths reconstruct within 1e-10. Archive readback reproduces the audit and prediction CSV exactly. Two of five folds are audited; the remaining three continue under the existing bound. No aggregate score or paper completion is claimed.
