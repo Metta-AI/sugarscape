@@ -448,3 +448,10 @@ All 600,000 native observations pass accounting checks; the unchanged declared f
 Independent residual recomputation validates all 600 optimizer attempts. Mean root-mean-square residuals are 34.73 and 464.14 agents.
 The unknown author fitting protocol and poor chaotic-case logistic residuals prevent interpreting these discrepancies as validated negative replications.
 Full growth-rate coverage is now executed under a declared convention; historical agreement and steady-state sampling remain unresolved.
+
+## Long-run evolutionary ensembles
+
+[The qualified extension](results/long-evolution-qualification-2026-10-18) runs both evolutionary scenarios for 100,000 cycles across the same 100 seeds each.
+Two 5,000-cycle native observer pairs pass exact output comparisons. The initial four long runs complete with exact shared-prefix matches and accounting checks.
+The bounded 200-run ensemble is active; its late-window comparisons and historical interpretation remain pending.
+The sparse observer changes exports only. Prior dense inheritance evidence remains retained, and no paper-completion credit is assigned.
