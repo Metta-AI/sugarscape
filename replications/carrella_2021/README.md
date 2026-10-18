@@ -923,3 +923,23 @@ new acceptance margin is introduced. The original 200-bootstrap interval
 procedure is retained. Rejection-ABC estimation on the same independent table
 is running at both sizes with immediate warning capture and one-hour bounds
 per size. Other estimator methods and paper-level interpretation remain open.
+
+### Independent 1,250-input rejection ABC audited
+
+[The completed workflow](results/independent-rejection1250-2026-10-18) validates
+all five folds, 6,250 held-out parameter predictions and 943,750 exact input
+cells. Baseline errors match the author-data run exactly. Every public archive
+member is read back and compared byte-for-byte with the audited native files.
+
+| Parameter | Author-data performance | Independent-data performance |
+| --- | ---: | ---: |
+| Initial population | 0.170326 | 0.147350 |
+| Mutation probability | 0.224828 | 0.232909 |
+| Maximum sugar endowment | 0.156109 | 0.160068 |
+| Maximum spice endowment | 0.143698 | 0.128314 |
+| Reproduction wealth | 0.598317 | 0.594002 |
+
+These are descriptive cross-simulation comparisons, without an equivalence
+margin or paper-level verdict. The full-size rejection workflow and both
+semi-automatic one-degree estimator sizes are active under one-hour-per-size
+bounds, using frozen author functions and immediate warning capture.
