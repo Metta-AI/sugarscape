@@ -1246,3 +1246,45 @@ python replications/thaler_properties_2019/audit_combat_regions.py FULL_COMBAT_R
 
 The complete audit ran twice; all existing measurements matched after adding the
 birth-by-tribe counts. No absence claim extends beyond the observed 1,000 steps.
+
+## Corrected migration and pollution controls
+
+[Three completed controls](results/spatial-corrected-2026-10-18/summary.json)
+repeat the earlier diagnostic seed 602352629 and 1,000-step horizon with the
+already documented coordinate-index and post-event-observation corrections.
+All other historical source files and the spatial observer remain unchanged.
+Each case's initial agent records exactly match its corresponding original run.
+These combined corrections change both dynamics and observation timing; their
+individual effects cannot be inferred from this comparison.
+
+| Scenario | Original final population | Corrected final population |
+| --- | ---: | ---: |
+| Migration, vision range 1–10 | 139 | 139 |
+| Migration, vision range 1–15 | 146 | 148 |
+| Pollution | 191 | 184 |
+
+The complete audit verifies 3,003 summary rows, 48,982 sampled agent observations,
+and 788,103 cell observations. Every one of the 303 sampled frames contains all
+2,601 distinct coordinates. Agent identities and positions match cell occupancy
+exactly in every frame, with no missing agents or duplicate occupier IDs.
+All recorded numeric values are finite; agent, resource, and pollution totals
+reconcile with the corresponding summaries. Native execution exits zero under GHC 8.4.4.
+
+![Original and corrected migration profiles](results/spatial-corrected-2026-10-18/migration.png)
+
+The inspected figure uses shared axes and a common color scale.
+It preserves the original pre-event observation view beside corrected post-event observations.
+No wave-presence threshold was fitted to these outputs. These first-seed controls
+resolve the spatial-consistency diagnostic, not the appendix's qualitative claims.
+A faithful Weaver comparison and published migration/pollution outcomes remain unresolved.
+
+The archive retains all source/build inputs, observer, native CSVs, scripts and execution receipts.
+After extracting it into a new directory, recheck against the retained original spatial run:
+
+```sh
+python CORRECTED_READBACK/audit.py CORRECTED_READBACK ORIGINAL_SPATIAL_RUN NEW_AUDIT.json
+python CORRECTED_READBACK/plot.py replications/thaler_properties_2019/results/spatial-diagnostics-2026-10-17/audit.json NEW_AUDIT.json NEW_MIGRATION.png
+```
+
+Local Linux amd64 emulation used one CPU, 3 GiB RAM and a 1,800-second outer bound.
+Elapsed time supplies no performance-replication evidence.
