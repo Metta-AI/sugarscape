@@ -1003,3 +1003,9 @@ Three additional Raw runtime inputs in `results/runtime-memory-prefix3-2026-10-1
 [The final bounded batch audit](results/runtime-memory-terminal-2026-10-18) adds one original 50,000-step trajectory.
 Exact coverage reaches 872/1,200 deposited runtime inputs and 2,750,519 observations.
 Both workers reached their time limits; partial trajectories receive no credit. Final evidence is exported, and the node is stopped with disk intact.
+
+## Complete homogeneous experiment grid
+
+[All 2,000 original homogeneous inputs](results/homogeneous-complete-2026-10-18) now pass audit, with 5,063,268 observations and no missing seeds.
+Bentham reaches at least the initial population in all 500 runs. Every original model retains its full seed schedule and extinction outcomes.
+Sweeps, longer horizons, runtime requirements, and remaining figure analysis still prevent whole-paper completion.
