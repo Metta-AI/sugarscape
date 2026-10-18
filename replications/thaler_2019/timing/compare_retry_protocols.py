@@ -12,6 +12,9 @@ import time
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("binary", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--mode", choices=["both", "single", "criterion_default"], default="both"
+)
 args = parser.parse_args()
 assert (
     hashlib.sha256(args.binary.read_bytes()).hexdigest()
@@ -24,23 +27,27 @@ schedule = [
     for repetition in range(3)
 ]
 random.Random(20261018).shuffle(schedule)
+if args.mode != "both":
+    schedule = [row for row in schedule if row[0] == args.mode]
 (args.output / "schedule.json").write_text(json.dumps(schedule, indent=2) + "\n")
 with (args.output / "completed.jsonl").open("x") as ledger:
     for index, (mode, repetition) in enumerate(schedule):
         folder = args.output / f"{index:02d}-{mode}-{repetition}"
         folder.mkdir()
-        command = [
-            str(args.binary.resolve()),
-            "--match",
-            "prefix",
-            "sugarscape-tarray-normal:32/500",
-        ]
+        command = [str(args.binary.resolve())]
         command += (
             ["--iters", "1"]
             if mode == "single"
             else ["--output", str((folder / "criterion.html").resolve())]
         )
-        command += ["+RTS", "-N32", "-RTS"]
+        command += [
+            "--match",
+            "prefix",
+            "sugarscape-tarray-normal:32/500",
+            "+RTS",
+            "-N32",
+            "-RTS",
+        ]
         (folder / "command.json").write_text(json.dumps(command, indent=2) + "\n")
         started = time.monotonic()
         with (
