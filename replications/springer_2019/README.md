@@ -78,3 +78,9 @@ The extracted bars qualify Section 6.1’s general statement that baseline versi
 [The registered batch](results/full-native-defaults-2026-10-18/protocol.json) uses the original 1,700×1,700 grid, 10,000 iterations and seed 42. One DynaSOAr debug execution records allocator layout and assertions; five release executions each measure DynaSOAr, AOS and SOA. Every input source hash is checked against the successful qualification. No size or capacity macros override archived defaults.
 
 Command `cmd-7k3hf` is registered on the owned H100 with a 45-minute execution bound and $5 budget. It is pending execution, not completed evidence. Four allocator variants remain outside this first batch; all seven variants, independent model validation and capacity searches remain required. New-hardware timings cannot establish historical absolute timing equivalence.
+
+## Remaining allocator qualification
+
+`qualify_remaining_allocators.py` compiles CUDA, BitmapAlloc, mallocMC and Halloc from a separate copy of the qualified artifact source. External allocator adapters remain unchanged in this first attempt. Successful builds receive two 32×32, 10,000-iteration debug executions. Failed builds remain recorded and prevent a successful qualification verdict.
+
+[The bounded protocol](results/remaining-allocators-2026-10-18/protocol.json) waits for the full-size timing batch to exit and its sealed export to complete. It requires the owned node to remain awake. The qualification has a 20-minute outer limit and $3 budget, including the idle window. Its compiler dependencies and outputs will be retained; scheduling is not evidence of execution.
