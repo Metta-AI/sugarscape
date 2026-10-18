@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T23:17:43.425599+00:00",
+  "as_of": "2026-10-18T23:23:26.900282+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -259,15 +259,15 @@
     {
       "study": "springer_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/22",
-      "checked_commit": "6d631201ce901f2cba15fccaad1d7f36ff093c55",
-      "status": "partial",
+      "checked_commit": "de3fc533a521a53e638cf3e32ddb68bd79cf8c0c",
+      "status": "running",
       "readme": "replications/springer_2019/README.md",
-      "readme_sha256": "0a490014f39d7879998a548d33fa4b50b1d391cd5d642df92bb11e7f17273989",
-      "json_evidence_files": 29,
+      "readme_sha256": "0cf45007fa4964f014cdfa3eb1ba41d9ccade153cd74f724c8a3d952bc4304ec",
+      "json_evidence_files": 33,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T23:17:43.425599+00:00",
+      "checked_at": "2026-10-18T23:23:26.900282+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/springer_2019",
-      "remaining_scope": "Publisher artifact checksum verified. Four attempts and 18 native executions audited; final H100/CUDA11.8 qualification builds all three implementations and completes six 10,000-step executions on a 32x32 grid. Archived library conflicts and compiler failures preserved. Four author-derived template keywords and two explicit template arguments change allocator headers only; model files remain unchanged. Native checksum is not full-state validation. Independent state checks, all allocator variants, full 1700x1700 timing, matched-heap capacity searches and published claim comparisons remain outstanding. GPU stopped after verified exports; no completion credit. Heap-source audit confirms nominal 8GiB allocates 6GiB BitmapAlloc data storage; DynaSOAr uses object capacity and compiled block size. Qualification layout extrapolates 1,627,389,952 default data-buffer bytes, with additional metadata; full default allocation not measured. Artifact Figure11 instructions use DynaSOAr total allocator memory as comparator budget. Match actual budgets before capacity claims."
+      "remaining_scope": "Publisher artifact checksum verified. Four attempts and 18 native executions audited; final H100/CUDA11.8 qualification builds all three implementations and completes six 10,000-step executions on a 32x32 grid. Archived library conflicts and compiler failures preserved. Four author-derived template keywords and two explicit template arguments change allocator headers only; model files remain unchanged. Native checksum is not full-state validation. Independent state checks, all allocator variants, full 1700x1700 timing, matched-heap capacity searches and published claim comparisons remain outstanding. GPU stopped after verified exports; no completion credit. Heap-source audit confirms nominal 8GiB allocates 6GiB BitmapAlloc data storage; DynaSOAr uses object capacity and compiled block size. Qualification layout extrapolates 1,627,389,952 default data-buffer bytes, with additional metadata; full default allocation not measured. Artifact Figure11 instructions use DynaSOAr total allocator memory as comparator budget. Match actual budgets before capacity claims. Published Figure10 seven total times and Figure11 six capacity ratios now extracted from pinned vector geometry. Full-size native-default cmd-7k3hf is verified running: 1700x1700,10000steps,seed42, one debug control and fifteen release timings planned. Forty-five-minute execution/$5 bound; exact-command sealed-evidence collector active. Source/binary/timing audit prepared but not executed against unfinished batch. Pending runs receive no credit."
     }
   ],
   "study_prs": 19,
