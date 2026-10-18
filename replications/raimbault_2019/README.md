@@ -721,3 +721,26 @@ reference completion only when the checked disjoint union leaves zero missing in
 This completes the reference replay, not the paper. Generated landscapes and spatial
 sensitivity remain required. The queued 8,000-input generated shard receives no credit
 until its native results pass independent audit.
+
+## First 8,000-input generated production batch audited
+
+[The completed batch](results/generated-production-complete-2026-10-18)
+passes all 8,000 inputs at the original 10,000-step horizon. The audit compares
+every selected input column directly against the original 2,727,994-row archive,
+then checks native commands, runtime pins, successful exits and all 96,000
+measurements. Fresh public-archive extraction reproduces the audit byte-for-byte.
+
+All 16,000 Gini comparisons match exactly. Of 80,000 morphology comparisons,
+31 differ by at most 4.440892098500626e-16, below the predeclared absolute
+tolerance of 1e-12. The differences remain recorded individually; no tolerance
+was changed after observing results. All 95,969 remaining measurements are exact.
+
+The selected original rows are disjoint from the 557 excluded sizing/probe
+inputs. Every input in this batch has population 10; this ordered batch is
+not a representative sample of the generated landscape ensemble. It does not
+complete the 2,727,994-input experiment or establish fresh spatial conclusions.
+The earlier dependency-launch failure remains retained separately.
+
+The terminal archive is exported and verified, and the dedicated node is
+confirmed stopped with its disk intact. Full generated-ensemble and spatial
+sensitivity work remain required; no completed-paper credit is added.
