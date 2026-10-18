@@ -1,0 +1,60 @@
+{
+  "rows": [
+    {
+      "capabilities": 16,
+      "scenario": "normal",
+      "paper_ratio": 0.21,
+      "native_mean_ratio": 0.20811350787103214,
+      "native_min_ratio": 0.20432679833528794,
+      "native_max_ratio": 0.21170586179739534,
+      "repetitions": 5
+    },
+    {
+      "capabilities": 16,
+      "scenario": "rebirthing",
+      "paper_ratio": 0.07,
+      "native_mean_ratio": 0.05867868852459016,
+      "native_min_ratio": 0.05757217113154738,
+      "native_max_ratio": 0.06009036385445821,
+      "repetitions": 5
+    },
+    {
+      "capabilities": 32,
+      "scenario": "normal",
+      "paper_ratio": 0.29,
+      "native_mean_ratio": 0.08612607361815779,
+      "native_min_ratio": 0.08361082395233221,
+      "native_max_ratio": 0.08781380644356164,
+      "repetitions": 5
+    },
+    {
+      "capabilities": 32,
+      "scenario": "rebirthing",
+      "paper_ratio": 0.01,
+      "native_mean_ratio": 0.014426389444222311,
+      "native_min_ratio": 0.014238704518192723,
+      "native_max_ratio": 0.014515393842463014,
+      "repetitions": 5
+    },
+    {
+      "capabilities": 64,
+      "scenario": "normal",
+      "paper_ratio": 0.09,
+      "native_mean_ratio": 0.08836090353631061,
+      "native_min_ratio": 0.08519575497350743,
+      "native_max_ratio": 0.0903542982130329,
+      "repetitions": 5
+    },
+    {
+      "capabilities": 64,
+      "scenario": "rebirthing",
+      "paper_ratio": 0.01,
+      "native_mean_ratio": 0.014296361455417832,
+      "native_min_ratio": 0.01407157137145142,
+      "native_max_ratio": 0.014522990803678528,
+      "repetitions": 5
+    }
+  ],
+  "interpretation": "Five fresh processes per condition; means/ranges are descriptive. Historical repetition count unknown.",
+  "completed_study": false
+}

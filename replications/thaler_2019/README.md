@@ -743,3 +743,28 @@ without inventing a numerical equivalence threshold.
 correctly rejects 48/51 cells and identifies three missing Table 8 conditions:
 sequential 500, sequential 2,500 and TArray 2,000. No final comparison was created.
 The successful complete-data path remains unvalidated until those runs finish.
+
+### Complete matching-instance Table 9 experiment
+
+[Terminal evidence](results/table9-complete-2026-10-18) passes the full audit:
+six timing conditions, 24 raw measurements and all thirty retry processes.
+The prior timing records are unchanged. Each retry process has verified source
+instrumentation, executable hash, command, successful exit, integer counters and
+printed ratio. Fresh extraction reproduces the entire audit byte-for-byte.
+
+| Capabilities | Normal: mean / published retry ratio | Rebirth: mean / published retry ratio |
+| --- | --- | --- |
+| 16 | 0.208114 / 0.21 | 0.058679 / 0.07 |
+| 32 | 0.086126 / 0.29 | 0.014426 / 0.01 |
+| 64 | 0.088361 / 0.09 | 0.014296 / 0.01 |
+
+Each mean uses five fresh processes; ranges are retained in `retry-comparison.json`.
+The 32-capability normal ratios span 0.083611–0.087814, distinct from the
+published 0.29. Historical repetition count, scheduling and isolation remain
+unknown. This discrepancy needs investigation; it is not automatically a
+negative paper verdict. The separately audited timing slowdown remains reproduced.
+
+The experiment exited zero and its complete archive was collected and verified.
+The dedicated instance is confirmed stopped, with its disk retained. Remaining
+Table 8 conditions, Figure 5a fidelity and discrepancy interpretation still
+prevent whole-paper completion.
