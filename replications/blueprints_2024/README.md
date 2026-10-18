@@ -816,3 +816,29 @@ Reconciliation verifies prior audit hashes and all overlapping record fields, in
 Compact audits, frozen ledgers and export receipts accompany the readback record; full native outputs remain preserved locally and in object storage.
 These are completed deposited runtime inputs, not validation of the paper's separate 500-seed timing experiment.
 The study remains incomplete.
+
+## Runtime recovery checkpoint ten
+
+[Two sealed checkpoint audits](results/runtime-checkpoint10-2026-10-18)
+validate 59 completed trajectories. All 37 overlaps match prior observations,
+endpoints, outcomes, seeds and raw trajectory hashes exactly.
+The 22 new unique inputs add 296,360 observations, bringing deposited runtime
+coverage to **849/1,200 inputs and 2,174,306 observations**.
+
+| Model and horizon | Audited input indices in checkpoint | Total unique coverage |
+| --- | --- | ---: |
+| Raw, 50,000 steps | `[27,55)` | 55/100 |
+| Altruistic, 50,000 steps | `[0,3)` | 3/100 |
+| Bentham, 5,000 steps | `[52,75)` | 75/100 |
+| Egoistic, 50,000 steps | `[11,16)` | 16/100 |
+
+Seven other model/horizon groups remain complete.
+Both archives match producer-sealed hashes: 99,304,134 bytes for the recovery
+checkpoint and 48,581,048 bytes for the second node's checkpoint.
+Readback receipts retain paths and SHA256 hashes; source manifests, frozen ledgers,
+exact audit commands and reconciliation results accompany the compact evidence.
+Full native trajectories remain retained locally and at their recorded remote paths.
+Every completed trajectory passes original configuration, source pin, native exit,
+finite observation, full trajectory hash and terminal-condition checks.
+The original processes continue; no incomplete trajectory receives coverage credit.
+This does not validate the paper's separate 500-seed timing experiment or complete the study.
