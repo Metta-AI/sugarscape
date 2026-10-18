@@ -12,6 +12,10 @@ parser.add_argument("qualification", type=Path)
 parser.add_argument("output", type=Path)
 parser.add_argument("--architecture", choices=("61", "90"), required=True)
 parser.add_argument("--control-mode", choices=("debug", "release"), required=True)
+parser.add_argument(
+    "--control-capacity", choices=("qualified", "native"), required=True
+)
+parser.add_argument("--control-only", action="store_true")
 args = parser.parse_args()
 root = args.output.resolve()
 root.mkdir(parents=True, exist_ok=False)
@@ -89,11 +93,10 @@ path.write_text(after)
     + "\n"
 )
 records = []
-for mode, size, limit in [
-    (args.control_mode, 32, 60),
-    ("debug", 1700, 120),
-    ("release", 1700, 120),
-]:
+probes = [(args.control_mode, 32, 60)]
+if not args.control_only:
+    probes += [("debug", 1700, 120), ("release", 1700, 120)]
+for mode, size, limit in probes:
     label = f"{mode}-{size}"
     binary = root / label
     command = [
@@ -115,7 +118,7 @@ for mode, size, limit in [
         "-o",
         str(binary),
     ]
-    if size == 32:
+    if size == 32 and args.control_capacity == "qualified":
         command.append("-DPARAM_MAX_OBJ=262144")
     with (root / f"{label}-build.log").open("x") as log:
         subprocess.run(

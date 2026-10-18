@@ -1,0 +1,13 @@
+{
+  "outer_seconds": 900,
+  "execution_limit_seconds": 60,
+  "budget_usd": 2,
+  "grid_side": 32,
+  "allocator_capacity": 16777216,
+  "architecture": "compute61",
+  "mode": "debug",
+  "iterations": 10000,
+  "seed": 42,
+  "scope": "Small-grid original-capacity diagnostic; sole changed simulation/allocator compile parameter versus prior compute61 debug32 is removal of PARAM_MAX_OBJ override. No performance claim.",
+  "runner_sha256": "ee32a110f427d187a3bc0ca78721067c982ef2be9dbb47b3b5fd9efd968b2575"
+}
