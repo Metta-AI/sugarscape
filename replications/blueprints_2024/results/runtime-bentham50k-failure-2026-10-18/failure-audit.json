@@ -1,0 +1,22 @@
+{
+  "command_id": "cmd-2ypbn",
+  "command_exit": 1,
+  "native_exit": -9,
+  "seed": 1071049487305188627,
+  "completed_inputs": 0,
+  "interval": [
+    0,
+    50
+  ],
+  "archive_sha256": "2286dd885f7e38f060bedd2e59f73c56a6f99aebce92257923ab9ded2622b931",
+  "native_partial_bytes_observed": 47608503,
+  "native_partial_retained_on": "relh-sugarscape-runtime2-cpu2-20261017-v1",
+  "cause": "Unresolved SIGKILL; absence of exposed memory-event counters prevents attribution to out-of-memory.",
+  "retry_command_id": "cmd-utvgx",
+  "retry_state": "queued for 32GiB capacity; same source/configurations and interval",
+  "other_active_interval": [
+    50,
+    100
+  ],
+  "completed_study": false
+}

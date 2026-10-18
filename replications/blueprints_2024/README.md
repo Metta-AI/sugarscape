@@ -920,3 +920,19 @@ Eight Bentham attempts have timed out: indices 157, 159, 165, 177, 181, 196,
 index remains required. This checkpoint does not substitute seeds or shrink
 the ensemble. Production remains active under the existing deadline; the
 full homogeneous grid and whole-paper study remain incomplete.
+
+### Bentham 50,000-step failure and bounded retry
+
+[The retained failure](results/runtime-bentham50k-failure-2026-10-18) shows
+`cmd-2ypbn` exited one after its first native process received SIGKILL.
+The interval [0,50) completed no inputs. Its 47,608,503-byte partial trajectory
+remains on the original node and receives no completion credit. Memory-event
+counters were not exposed; this is not a confirmed out-of-memory diagnosis.
+
+The unchanged interval is registered as `cmd-utvgx` on the former Thaler
+CPU8 node with 32 GiB memory. An explicit wake request queued that node.
+The run is bounded to 390 minutes, about $3.744 of compute at the observed
+rate, plus at most the normal 15-minute idle window ($0.144).
+Its collector is bounded separately and preserves sealed outputs.
+The existing [50,100) command remains live; no intervals overlap.
+The retry is pending capacity, so no new scientific outcome is claimed.
