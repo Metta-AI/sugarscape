@@ -1,0 +1,1479 @@
+{
+  "execution_exit_code": 0,
+  "completed_conditions": 84,
+  "required_conditions": 84,
+  "complete_grid": true,
+  "step_rows": 6600,
+  "resolution_rows": 162,
+  "experiments": [
+    {
+      "experiment": "performance_scaling",
+      "completed_conditions": 48,
+      "required_conditions": 48,
+      "step_rows": 4800,
+      "measurements": [
+        {
+          "key": [
+            0,
+            256,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00032836764",
+          "recorded": "0.000328368",
+          "rounding_bound": "8.56E-9"
+        },
+        {
+          "key": [
+            0,
+            256,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "6158.32",
+          "recorded": "6158.32",
+          "rounding_bound": "0.005"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0004437328",
+          "recorded": "0.000443733",
+          "rounding_bound": "5.311E-8"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "25022.75",
+          "recorded": "25022.8",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            0,
+            768,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00076905724",
+          "recorded": "0.000769057",
+          "rounding_bound": "4.825E-9"
+        },
+        {
+          "key": [
+            0,
+            768,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "57078.95",
+          "recorded": "57078.9",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            0,
+            1024,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0011784814",
+          "recorded": "0.00117848",
+          "rounding_bound": "1.45E-8"
+        },
+        {
+          "key": [
+            0,
+            1024,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "101629.39",
+          "recorded": "101629",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            1280,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0017278699",
+          "recorded": "0.00172787",
+          "rounding_bound": "1.855E-8"
+        },
+        {
+          "key": [
+            0,
+            1280,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "159002.38",
+          "recorded": "159002",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            1536,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0023227867",
+          "recorded": "0.00232279",
+          "rounding_bound": "1.81E-8"
+        },
+        {
+          "key": [
+            0,
+            1536,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "230721.67",
+          "recorded": "230722",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            1792,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0030494022",
+          "recorded": "0.0030494",
+          "rounding_bound": "5.815E-8"
+        },
+        {
+          "key": [
+            0,
+            1792,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "314441.91",
+          "recorded": "314442",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            2048,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0037365345",
+          "recorded": "0.00373653",
+          "rounding_bound": "2.26E-8"
+        },
+        {
+          "key": [
+            0,
+            2048,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "409362.3",
+          "recorded": "409362",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            2304,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0047754081",
+          "recorded": "0.00477541",
+          "rounding_bound": "6.445E-8"
+        },
+        {
+          "key": [
+            0,
+            2304,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "518970.76",
+          "recorded": "518971",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            2560,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0057904181",
+          "recorded": "0.00579042",
+          "rounding_bound": "7.21E-8"
+        },
+        {
+          "key": [
+            0,
+            2560,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "640463.59",
+          "recorded": "640464",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            2816,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0069453174",
+          "recorded": "0.00694532",
+          "rounding_bound": "1.405E-8"
+        },
+        {
+          "key": [
+            0,
+            2816,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "774680.67",
+          "recorded": "774681",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            3072,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0083134558",
+          "recorded": "0.00831346",
+          "rounding_bound": "1.495E-8"
+        },
+        {
+          "key": [
+            0,
+            3072,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "922128.54",
+          "recorded": "922129",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            3328,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0096371502",
+          "recorded": "0.00963715",
+          "rounding_bound": "1.63E-8"
+        },
+        {
+          "key": [
+            0,
+            3328,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1082850.82",
+          "recorded": "1.08285E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            0,
+            3584,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.011150537",
+          "recorded": "0.0111505",
+          "rounding_bound": "2.035E-7"
+        },
+        {
+          "key": [
+            0,
+            3584,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1255713.11",
+          "recorded": "1.25571E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            0,
+            3840,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.012546651",
+          "recorded": "0.0125467",
+          "rounding_bound": "1.945E-7"
+        },
+        {
+          "key": [
+            0,
+            3840,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1442592.07",
+          "recorded": "1.44259E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            0,
+            4096,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.014632795",
+          "recorded": "0.0146328",
+          "rounding_bound": "6.85E-7"
+        },
+        {
+          "key": [
+            0,
+            4096,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1641874.53",
+          "recorded": "1.64187E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            1,
+            256,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00030372226",
+          "recorded": "0.000303722",
+          "rounding_bound": "3.745E-9"
+        },
+        {
+          "key": [
+            1,
+            256,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "6294.4",
+          "recorded": "6294.4",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00043472866",
+          "recorded": "0.000434729",
+          "rounding_bound": "2.35E-9"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "25029.32",
+          "recorded": "25029.3",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            1,
+            768,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0007585952",
+          "recorded": "0.000758595",
+          "rounding_bound": "5.2885E-8"
+        },
+        {
+          "key": [
+            1,
+            768,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "57294.55",
+          "recorded": "57294.6",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            1,
+            1024,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0011649756",
+          "recorded": "0.00116498",
+          "rounding_bound": "1.495E-8"
+        },
+        {
+          "key": [
+            1,
+            1024,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "101536.34",
+          "recorded": "101536",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            1280,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0017142312",
+          "recorded": "0.00171423",
+          "rounding_bound": "1.72E-8"
+        },
+        {
+          "key": [
+            1,
+            1280,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "160115.23",
+          "recorded": "160115",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            1536,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0023160363",
+          "recorded": "0.00231604",
+          "rounding_bound": "6.4E-8"
+        },
+        {
+          "key": [
+            1,
+            1536,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "231049.34",
+          "recorded": "231049",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            1792,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0030374376",
+          "recorded": "0.00303744",
+          "rounding_bound": "0.0000050149"
+        },
+        {
+          "key": [
+            1,
+            1792,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "314853.02",
+          "recorded": "314853",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            2048,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0037361961",
+          "recorded": "0.0037362",
+          "rounding_bound": "6.13E-8"
+        },
+        {
+          "key": [
+            1,
+            2048,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "410716.65",
+          "recorded": "410717",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            2304,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0047744251",
+          "recorded": "0.00477443",
+          "rounding_bound": "2.26E-8"
+        },
+        {
+          "key": [
+            1,
+            2304,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "520562.96",
+          "recorded": "520563",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            2560,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0057880604",
+          "recorded": "0.00578806",
+          "rounding_bound": "2.26E-8"
+        },
+        {
+          "key": [
+            1,
+            2560,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "641397.52",
+          "recorded": "641398",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            2816,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.006939785",
+          "recorded": "0.00693978",
+          "rounding_bound": "2.08E-8"
+        },
+        {
+          "key": [
+            1,
+            2816,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "776075",
+          "recorded": "776075",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            3072,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0083120264",
+          "recorded": "0.00831203",
+          "rounding_bound": "2.035E-8"
+        },
+        {
+          "key": [
+            1,
+            3072,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "925085.27",
+          "recorded": "925085",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            3328,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0096369944",
+          "recorded": "0.00963699",
+          "rounding_bound": "1.315E-8"
+        },
+        {
+          "key": [
+            1,
+            3328,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1086266.86",
+          "recorded": "1.08627E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            1,
+            3584,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.011147499",
+          "recorded": "0.0111475",
+          "rounding_bound": "1.855E-7"
+        },
+        {
+          "key": [
+            1,
+            3584,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1258297.03",
+          "recorded": "1.2583E+6",
+          "rounding_bound": "50"
+        },
+        {
+          "key": [
+            1,
+            3840,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.012543759",
+          "recorded": "0.0125438",
+          "rounding_bound": "1.405E-7"
+        },
+        {
+          "key": [
+            1,
+            3840,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1445255.57",
+          "recorded": "1.44526E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            1,
+            4096,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.014635131",
+          "recorded": "0.0146351",
+          "rounding_bound": "2.89E-7"
+        },
+        {
+          "key": [
+            1,
+            4096,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1646050.88",
+          "recorded": "1.64605E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            2,
+            256,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00030288414",
+          "recorded": "0.000302884",
+          "rounding_bound": "5.4955E-8"
+        },
+        {
+          "key": [
+            2,
+            256,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "6414.98",
+          "recorded": "6414.98",
+          "rounding_bound": "0.005"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00043438974",
+          "recorded": "0.00043439",
+          "rounding_bound": "8.695E-9"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "25266",
+          "recorded": "25266",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            768,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0007603142",
+          "recorded": "0.000760314",
+          "rounding_bound": "6.418E-8"
+        },
+        {
+          "key": [
+            2,
+            768,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "57057.75",
+          "recorded": "57057.8",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            2,
+            1024,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0011655791",
+          "recorded": "0.00116558",
+          "rounding_bound": "1.54E-8"
+        },
+        {
+          "key": [
+            2,
+            1024,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "102193.75",
+          "recorded": "102194",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            1280,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0017126168",
+          "recorded": "0.00171262",
+          "rounding_bound": "6.67E-8"
+        },
+        {
+          "key": [
+            2,
+            1280,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "158982.49",
+          "recorded": "158982",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            1536,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0023130154",
+          "recorded": "0.00231302",
+          "rounding_bound": "1.81E-8"
+        },
+        {
+          "key": [
+            2,
+            1536,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "229759.7",
+          "recorded": "229760",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            1792,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0030358792",
+          "recorded": "0.00303588",
+          "rounding_bound": "1.945E-8"
+        },
+        {
+          "key": [
+            2,
+            1792,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "314703.15",
+          "recorded": "314703",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            2048,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0037340378",
+          "recorded": "0.00373404",
+          "rounding_bound": "2.35E-8"
+        },
+        {
+          "key": [
+            2,
+            2048,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "410765.74",
+          "recorded": "410766",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            2304,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.004774503",
+          "recorded": "0.0047745",
+          "rounding_bound": "1.144E-7"
+        },
+        {
+          "key": [
+            2,
+            2304,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "520112.59",
+          "recorded": "520113",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            2560,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0057895148",
+          "recorded": "0.00578951",
+          "rounding_bound": "1.45E-8"
+        },
+        {
+          "key": [
+            2,
+            2560,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "643195.3",
+          "recorded": "643195",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            2816,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0069427057",
+          "recorded": "0.00694271",
+          "rounding_bound": "3.475E-8"
+        },
+        {
+          "key": [
+            2,
+            2816,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "778966.96",
+          "recorded": "778967",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            3072,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0083112745",
+          "recorded": "0.00831127",
+          "rounding_bound": "6.67E-8"
+        },
+        {
+          "key": [
+            2,
+            3072,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "926967.9",
+          "recorded": "926968",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            3328,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0096405082",
+          "recorded": "0.00964051",
+          "rounding_bound": "1.765E-8"
+        },
+        {
+          "key": [
+            2,
+            3328,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1083876.62",
+          "recorded": "1.08388E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            2,
+            3584,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.011150972",
+          "recorded": "0.011151",
+          "rounding_bound": "6.715E-7"
+        },
+        {
+          "key": [
+            2,
+            3584,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1256492.83",
+          "recorded": "1.25649E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            2,
+            3840,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.012544954",
+          "recorded": "0.012545",
+          "rounding_bound": "6.76E-7"
+        },
+        {
+          "key": [
+            2,
+            3840,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1443955.09",
+          "recorded": "1.44396E+6",
+          "rounding_bound": "5"
+        },
+        {
+          "key": [
+            2,
+            4096,
+            "0.17"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.014637641",
+          "recorded": "0.0146376",
+          "rounding_bound": "2.665E-7"
+        },
+        {
+          "key": [
+            2,
+            4096,
+            "0.17"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "1644330.06",
+          "recorded": "1.64433E+6",
+          "rounding_bound": "5"
+        }
+      ]
+    },
+    {
+      "experiment": "occupation",
+      "completed_conditions": 18,
+      "required_conditions": 18,
+      "step_rows": 1800,
+      "measurements": [
+        {
+          "key": [
+            0,
+            512,
+            "0.02"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0004224976",
+          "recorded": "0.000422498",
+          "rounding_bound": "3.475E-9"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.02"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "4036.35",
+          "recorded": "4036.35",
+          "rounding_bound": "0.005"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.04"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00042582404",
+          "recorded": "0.000425824",
+          "rounding_bound": "5.365E-9"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.04"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "7615.58",
+          "recorded": "7615.58",
+          "rounding_bound": "0.005"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.08"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00043140836",
+          "recorded": "0.000431408",
+          "rounding_bound": "5.545E-9"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.08"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "14039.47",
+          "recorded": "14039.5",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.16"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00043610526",
+          "recorded": "0.000436105",
+          "rounding_bound": "7.795E-9"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.16"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "24019.14",
+          "recorded": "24019.1",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.32"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00044143132",
+          "recorded": "0.000441431",
+          "rounding_bound": "3.34E-9"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.32"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "38035",
+          "recorded": "38035",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.64"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00044695164",
+          "recorded": "0.000446952",
+          "rounding_bound": "3.7E-9"
+        },
+        {
+          "key": [
+            0,
+            512,
+            "0.64"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "55127.18",
+          "recorded": "55127.2",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.02"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0004206016",
+          "recorded": "0.000420602",
+          "rounding_bound": "4.87E-9"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.02"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "3983.68",
+          "recorded": "3983.68",
+          "rounding_bound": "0.005"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.04"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00042596924",
+          "recorded": "0.000425969",
+          "rounding_bound": "1.675E-9"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.04"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "7563.91",
+          "recorded": "7563.91",
+          "rounding_bound": "0.005"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.08"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0004281517",
+          "recorded": "0.000428152",
+          "rounding_bound": "9.055E-9"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.08"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "13859.74",
+          "recorded": "13859.7",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.16"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00043291172",
+          "recorded": "0.000432912",
+          "rounding_bound": "8.02E-9"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.16"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "23936.05",
+          "recorded": "23936",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.32"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00043988156",
+          "recorded": "0.000439882",
+          "rounding_bound": "3.475E-9"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.32"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "37541.04",
+          "recorded": "37541",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.64"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00044525564",
+          "recorded": "0.000445256",
+          "rounding_bound": "7.165E-9"
+        },
+        {
+          "key": [
+            1,
+            512,
+            "0.64"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "54145.85",
+          "recorded": "54145.8",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.02"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00042083484",
+          "recorded": "0.000420835",
+          "rounding_bound": "3.835E-9"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.02"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "4011.03",
+          "recorded": "4011.03",
+          "rounding_bound": "0.005"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.04"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00042508544",
+          "recorded": "0.000425085",
+          "rounding_bound": "6.283E-8"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.04"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "7693.6",
+          "recorded": "7693.6",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.08"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00042837886",
+          "recorded": "0.000428379",
+          "rounding_bound": "2.845E-9"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.08"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "13852.02",
+          "recorded": "13852",
+          "rounding_bound": "0.5"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.16"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.0004312346",
+          "recorded": "0.000431235",
+          "rounding_bound": "3.655E-9"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.16"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "24131.26",
+          "recorded": "24131.3",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.32"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00043994914",
+          "recorded": "0.000439949",
+          "rounding_bound": "3.61E-9"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.32"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "38392.36",
+          "recorded": "38392.4",
+          "rounding_bound": "0.05"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.64"
+          ],
+          "metric": "s_step_mean",
+          "recomputed": "0.00044503424",
+          "recorded": "0.000445034",
+          "rounding_bound": "3.115E-9"
+        },
+        {
+          "key": [
+            2,
+            512,
+            "0.64"
+          ],
+          "metric": "pop_count_mean",
+          "recomputed": "55665.95",
+          "recorded": "55665.9",
+          "rounding_bound": "0.05"
+        }
+      ]
+    }
+  ],
+  "scope": "Native source, receipt, coverage and aggregate audit. No independent agent-state, historical-equivalence, or performance verdict."
+}

@@ -1,8 +1,9 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
-Status: **incomplete; qualification audited, full native grid running, model fidelity under investigation**.
+Status: **incomplete; full native grid audited, model fidelity under investigation**.
 No completed-study credit. This study adds to the existing replication program.
-Latest sealed scaling prefix: **47/48 conditions**, with all **4,700 population observations** matching the author archive exactly.
+[Complete native benchmark](results/full-native-complete-2026-10-18): **84/84 conditions**; all **6,600 population records** and **162 resolution rows** match the author archive exactly.
+The separate state observer completed, but its host initializer reference differs and remains under investigation.
 
 Paper: [FLAME GPU 2: A framework for flexible and performant agent based simulation on GPUs](https://doi.org/10.1002/spe.3207).
 Scope: the complete Sugarscape case study, Section 4.3 and Figures 6/11.
