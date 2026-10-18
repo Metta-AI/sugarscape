@@ -10,16 +10,24 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
 parser.add_argument("runtime", type=Path)
 parser.add_argument("output", type=Path)
-args = parser.parse_args()
-assets = Path(__file__).resolve().parent
-prior = json.loads(
-    (assets / "results/terminal-reference-2026-10-17/audit.json").read_text()
+parser.add_argument(
+    "--prior-audit",
+    type=Path,
+    default=Path(__file__).resolve().parent
+    / "results/terminal-reference-2026-10-17/audit.json",
+    help="Previously validated union audit defining the disjoint remaining inputs",
 )
-assert prior["cumulative_unique_rows"] == 49366
+args = parser.parse_args()
+prior = json.loads(args.prior_audit.read_text())
+baseline = prior["cumulative_unique_rows"]
+assert 0 <= baseline < 55000
+prior_ranges = prior["remaining_disjoint_ranges"]
+assert all(0 <= start < stop <= 55000 for start, stop in prior_ranges)
+assert all(left[1] <= right[0] for left, right in zip(prior_ranges, prior_ranges[1:]))
 remaining = {
     i for start, stop in prior["remaining_disjoint_ranges"] for i in range(start, stop)
 }
-assert len(remaining) == 5634
+assert len(remaining) == 55000 - baseline
 reference_bytes = (args.runtime / "reference.csv").read_bytes()
 reference_hash = hashlib.sha256(reference_bytes).hexdigest()
 assert (
@@ -30,7 +38,8 @@ assert len(reference) == 55000
 plan = json.loads((args.run / "production-plan.json").read_text())
 assert plan == json.loads((args.run / "results/plan.json").read_text())
 assert plan["ranges"] == prior["remaining_disjoint_ranges"]
-assert json.loads((args.run / "terminal.json").read_text()) == {"exit_code": 124}
+terminal = json.loads((args.run / "terminal.json").read_text())
+assert terminal in ({"exit_code": 0}, {"exit_code": 124})
 seen = set()
 verified = {}
 intervals = []
@@ -60,6 +69,7 @@ for chunk in sorted((args.run / "results").glob("rows-*")):
         assert len(rows) == stop - start
         assert raw == (chunk / "audit/results.csv").read_bytes()
     else:
+        assert terminal["exit_code"] == 124
         assert not (chunk / "exit.json").exists()
         partial.append([start, start + len(rows)])
     for index, row in enumerate(rows, start):
@@ -76,6 +86,8 @@ for chunk in sorted((args.run / "results").glob("rows-*")):
     intervals.append([start, start + len(rows)])
 assert len(verified) == 53
 missing = sorted(remaining - seen)
+if terminal["exit_code"] == 0:
+    assert not missing and not partial
 ranges = []
 for index in missing:
     if ranges and ranges[-1][1] == index and ranges[-1][1] - ranges[-1][0] < 100:
@@ -83,10 +95,10 @@ for index in missing:
     else:
         ranges.append([index, index + 1])
 report = {
-    "baseline_unique_rows": 49366,
+    "baseline_unique_rows": baseline,
     "new_unique_rows": len(seen),
-    "cumulative_unique_rows": 49366 + len(seen),
-    "exact_gini_comparisons": 2 * (49366 + len(seen)),
+    "cumulative_unique_rows": baseline + len(seen),
+    "exact_gini_comparisons": 2 * (baseline + len(seen)),
     "remaining_rows": len(missing),
     "remaining_disjoint_ranges": ranges,
     "intervals": intervals,

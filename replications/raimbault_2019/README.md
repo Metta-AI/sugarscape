@@ -686,3 +686,21 @@ Full reference completion, the generated shard and the complete generated ensemb
 Command `cmd-sij2u` waits for the 823-input reference continuation, then executes the unchanged 8,000-input generated shard.
 The source, selected inputs, metrics and tolerances remain frozen; the original launch failure is retained.
 No generated output is credited until the new command completes and its raw results pass independent audit.
+
+### Auditing successive reference continuations
+
+`audit_reference_continuation.py` accepts `--prior-audit` for the previously validated union.
+Its missing ranges must be ordered, nonoverlapping, within the 55,000-input reference,
+and agree with both the baseline count and the continuation's frozen plan.
+A zero-exit continuation must seal every planned input; timeouts may retain only complete native rows.
+The updated auditor reproduces the published 54,177-input audit byte-for-byte.
+The running 823-input continuation has not received additional credit.
+
+```sh
+python replications/raimbault_2019/audit_reference_continuation.py \
+  EXTRACTED_CONTINUATION_002 RUNTIME NEW_AUDIT.json \
+  --prior-audit replications/raimbault_2019/results/reference-continuation-terminal-2026-10-18/audit.json
+```
+
+Revalidate the prior audit from its raw evidence before using it as a baseline.
+The command validates the new continuation; it does not reread every ancestor archive automatically.
