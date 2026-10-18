@@ -30,7 +30,7 @@ class Result(BaseModel):
     steps: Literal[50]
     population: int = Field(ge=0, le=200)
     total_tax: int
-    debt_refund: int = Field(ge=0, le=600)
+    debt_refund: int = Field(ge=0, le=8000)
     state_sha256: str = Field(pattern="^[a-f0-9]{64}$")
     elapsed_seconds: float = Field(gt=0, allow_inf_nan=False)
 
@@ -41,6 +41,9 @@ parser.add_argument("model")
 parser.add_argument("output", type=Path)
 parser.add_argument(
     "--seed-design", choices=["common", "independent"], default="common"
+)
+parser.add_argument(
+    "--death-boundary", choices=["nonpositive", "negative"], default="nonpositive"
 )
 args = parser.parse_args()
 root = args.experiment
@@ -86,6 +89,7 @@ assert len(jobs) == 4 and {job["shard"] for job in jobs} == set(range(4))
 width = jobs[0]["width"]
 n = jobs[0]["seeds_per_policy_phase"]
 population = 200 * width * width // 2500
+refund_bound = (3 if args.death_boundary == "nonpositive" else 40) * population
 seed_offset = 100 if width == 50 else 0
 first_id = jobs[0]["first_model_id"]
 if args.seed_design == "independent":
@@ -115,6 +119,8 @@ for job in jobs:
     )
     model = root / job["model"] / "oremland.nlogo"
     assert hashlib.sha256(model.read_bytes()).hexdigest() == job["model_sha256"]
+    death_rule = "sugar <= 0" if args.death_boundary == "nonpositive" else "sugar < 0"
+    assert model.read_text().count("ask turtles with [" + death_rule + "] [die]") == 1
     assert (
         hashlib.sha256(model.with_name("sugar-map.txt").read_bytes()).hexdigest()
         == job["landscape_sha256"]
@@ -157,7 +163,7 @@ for job in jobs:
             ]
             assert (
                 0 <= result.population <= population
-                and 0 <= result.debt_refund <= 3 * population
+                and 0 <= result.debt_refund <= refund_bound
             )
             assert result.total_tax + result.debt_refund >= 0
             values[policy_id, phase_index, seed_index] = [
@@ -190,7 +196,14 @@ report = {
     "complete_native_runs": int(seen.sum()),
     "validated_jsonl_lines": 2 * int(seen.sum()),
     "objective_array_shape": list(values.shape),
-    "objective_order": ["deaths", "literal_revenue", "derived_clipped_revenue"],
+    "death_boundary": args.death_boundary,
+    "objective_order": [
+        "deaths",
+        "literal_revenue",
+        "derived_clipped_revenue"
+        if args.death_boundary == "nonpositive"
+        else "positive_payments_on_literal_path",
+    ],
     "objectives_npz_sha256": hashlib.sha256(
         (args.output / "objectives.npz").read_bytes()
     ).hexdigest(),

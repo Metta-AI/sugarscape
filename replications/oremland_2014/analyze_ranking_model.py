@@ -46,6 +46,7 @@ if args.reference_kind == "independent":
     assert reference_report["seeds_per_policy_phase"] == 50
     assert reference_report["complete_native_runs"] == 10000
     assert reference_report["policies_sha256"] == model_report["policies_sha256"]
+    assert reference_report["objective_order"] == model_report["objective_order"]
     assert (
         hashlib.sha256((args.reference / "objectives.npz").read_bytes()).hexdigest()
         == reference_report["objectives_npz_sha256"]
@@ -60,6 +61,11 @@ if args.reference_kind == "independent":
     assert baseline.shape == (100, 2, 50, 3) and baseline.dtype == np.int64
     reference_totals = baseline.sum(axis=2)
 else:
+    assert model_report["objective_order"] == [
+        "deaths",
+        "literal_revenue",
+        "derived_clipped_revenue",
+    ]
     published = Path(__file__).parent / "results/convergence-2026-10-18/audit.json"
     reference_report = json.loads(published.read_text())
     for name, digest in reference_report["inputs_sha256"].items():
@@ -92,7 +98,8 @@ else:
     )
     reference_totals = baseline[:, :, :50].sum(axis=2)
 policy_means = np.array([row["mean_rate"] for row in policies])
-metrics = ["deaths", "literal_revenue", "derived_clipped_revenue"]
+metrics = model_report["objective_order"]
+assert metrics[:2] == ["deaths", "literal_revenue"]
 scopes = [
     ("pooled", np.arange(100)),
     *[

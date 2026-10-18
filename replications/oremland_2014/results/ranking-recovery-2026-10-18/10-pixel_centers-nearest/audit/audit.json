@@ -1,0 +1,49 @@
+{
+  "model": "10-pixel_centers-nearest",
+  "width": 10,
+  "initial_population": 8,
+  "policies": 100,
+  "clock_phases": [
+    0,
+    4
+  ],
+  "seeds_per_policy_phase": 1375,
+  "seed_range": [
+    1,
+    1375
+  ],
+  "seed_design": "common",
+  "request_id_range": [
+    428400,
+    703399
+  ],
+  "complete_native_runs": 275000,
+  "validated_jsonl_lines": 550000,
+  "objective_array_shape": [
+    100,
+    2,
+    1375,
+    3
+  ],
+  "objective_order": [
+    "deaths",
+    "literal_revenue",
+    "derived_clipped_revenue"
+  ],
+  "objectives_npz_sha256": "f9b23b0ca8486bac98187ef752573e66d95d12b42cc39ac1843b9be5ed687745",
+  "protocol_sha256": "5806b2ae69b531e615dbb0ed1644b469f03a3949b1dee9ed01ff15cf2aecc80d",
+  "policies_sha256": "584c7a595c7fb8b0563fb1c5406899cca06e1df62d17ce019e673945402888b6",
+  "model_sha256": "e94d2a3cc56e7c7c93dd95e68cae9e8ac1943c2f186b5ff72c5af9ee109ff494",
+  "landscape_sha256": "7227034e08e4eecd25450f96a217c16d4f7c2c5f96f481d358e0b542386d2024",
+  "file_hashes": {
+    "execution/10-pixel_centers-nearest-shard-0.results.jsonl": "e1cb12cad6e94b55e0301cdac48eee46fb1e411a2f04a27339eb74b7e0c76303",
+    "10-pixel_centers-nearest/requests-0.jsonl.gz": "6f1c864d0420e247980838b2718faac8d8f3b674d537f1f63a4ff08e4cc600af",
+    "execution/10-pixel_centers-nearest-shard-1.results.jsonl": "a14083d919c9ccbcd477d8ce56436c4c6a517a200c6327c23d414045b385f3d4",
+    "10-pixel_centers-nearest/requests-1.jsonl.gz": "2ea719596a43ed1449d3fc9e57f6670b62a81913534eca6268c71146a397e22d",
+    "execution/10-pixel_centers-nearest-shard-2.results.jsonl": "9fe2b9e48d056d1cf31108abe16f4df512bce29fc7d4a2f435435a5f7f8d0e60",
+    "10-pixel_centers-nearest/requests-2.jsonl.gz": "f69e029596b51180122a4ed8066a7f0055295ac7474f0c8788bdbb9276a0caec",
+    "execution/10-pixel_centers-nearest-shard-3.results.jsonl": "dab123575e09d8c514d011e5981e2edf98ceed762d6c1aa25b786c29603276a2",
+    "10-pixel_centers-nearest/requests-3.jsonl.gz": "315ffa03e440d2bac3525b9795fb73cb94b083de1e2b69bbda24a7e855cdde10"
+  },
+  "scope": "Complete per-model execution audit. This is not a whole-experiment completion claim or a policy-ranking conclusion; other models and scientific analysis remain separate."
+}

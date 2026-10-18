@@ -22,7 +22,7 @@ The adaptation changes the bundled model's growback-before-movement and immediat
 1. All agents move, harvest, and metabolize.
 2. All patches regrow by one, up to capacity.
 3. Collect scheduled taxes.
-4. Remove agents with nonpositive wealth.
+4. Remove agents with nonpositive wealth, following Appendix B prose. Algorithm 3 instead specifies negative wealth; see the paired diagnostic below.
 5. Advance time.
 
 The model runs all 50 steps, including after extinction.
@@ -164,7 +164,7 @@ python prepare_rankings.py /path/to/audited-reductions /path/to/completed-conver
 ```
 
 Run the independent full-size batch after the reduced batch to preserve the four-worker limit.
-The new inputs and runtime pipeline are qualified; full ranking results and original uncertainty bars remain outstanding.
+The inputs and runtime pipeline are qualified. Completed ranking snapshots follow; original uncertainty bars remain outstanding.
 
 ## Audited ranking results and seed-design diagnostic
 
@@ -187,7 +187,7 @@ Raw integer objective sums determine ranks, avoiding floating-point tie artifact
 [A post hoc independent-stream diagnostic](results/independent-streams-protocol-2026-10-18) addresses shared-seed coupling.
 Its 37,600 frozen requests have unique seeds across all policies, phases, runs, and reference/comparison groups.
 It compares independent 50×50 and 40×40 samples with its own independent full-size reference, preserving the other declared choices.
-It is queued after the existing batches; no native diagnostic results or completion credit are claimed yet.
+Its completed results and independent audit are reported below; no paper completion credit is claimed.
 
 ```sh
 python prepare_independent_streams.py /path/to/qualified-reductions /path/to/completed-convergence /path/to/new-stream-diagnostic
@@ -203,7 +203,7 @@ Uniform-rate controls do not establish Figure 9's convergence claim, Figure 10's
 These figures and the optimization experiments remain required; no paper-completion credit is assigned.
 
 The full-size landscape is resolved. Reduced-grid conventions now have explicit, qualified sensitivity cases; their agreement with the original author implementation remains unproven.
-Negative-payment clipping cannot explain a population mismatch when it is the only changed rule and random draws remain coupled.
+Under the prose death rule, negative-payment clipping leaves paired survivor states unchanged. This does not extend to the algorithm’s negative-only death rule.
 The clock-phase ambiguity can affect population and must be considered separately.
 
 ## Extinction failure and qualified recovery
@@ -213,7 +213,7 @@ The first small-grid ranking batch failed because an inherited GUI histogram eva
 All 400 full-size reference results remain exact; the original failed 5x5 input now completes all 50 steps with zero survivors.
 The original evaluator reproduces the failure on that same input. Failed prefixes and logs are retained.
 
-The four incomplete 10x10 and 5x5 model ensembles are being rerun under the qualified adapter, preserving their original policies, seeds, maps, and horizons.
+[All four 10x10 and 5x5 ensembles have completed under the qualified adapter](results/ranking-recovery-2026-10-18), preserving their original policies, seeds, maps, and horizons.
 This repeats retained prefixes under the corrected evaluator rather than combining different evaluator versions within an ensemble.
 The 2,110,000-run recovery has four workers, a one-hour global bound, and 30-minute shard bounds.
 Its actual compressed-input pipeline passed all 400 reference comparisons before starting scientific work.
@@ -232,3 +232,11 @@ The auditor reconstructs the frozen seed assignment and validates 75,200 request
 For pooled average ranks with linear weights, independent-seed 40x40 mortality concordance is 0.8686/0.8695 for clock phases 0/4.
 Within mean-tax-rate strata, it ranges from 0.5285 to 0.7844.
 This post hoc sensitivity changes observed agreement but does not establish author conventions, reproduce uncertainty bars, or validate a negative replication.
+
+## Death-boundary source conflict
+
+Appendix B prose specifies death at zero sugar; Algorithm 3, line 19 specifies death only below zero.
+All preceding ensembles follow the prose. Their conclusions remain conditional on that choice.
+[The paired diagnostic](results/death-boundary-protocol-2026-10-18) preserves the original 37,600 independent-stream requests and changes only the comparison.
+Its native qualification verifies 408 states and confirms surviving zero-sugar agents under the algorithm rule.
+The full paired ensemble is running; no new aggregate result or completion credit is assigned before audit.

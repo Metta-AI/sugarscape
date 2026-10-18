@@ -1,0 +1,15 @@
+{
+  "pid": 12994,
+  "producer_pid": 9975,
+  "models": [
+    "10-pixel_centers-nearest",
+    "10-aligned_endpoints-nearest",
+    "5-pixel_centers-nearest",
+    "5-aligned_endpoints-nearest"
+  ],
+  "source_sha256": {
+    "audit_ranking_model.py": "c8100108f809561cd5b555d86a21e576c25285c935a13aa40a424c7cf0675e9e",
+    "analyze_ranking_model.py": "42b293d98abf3a60d4e22d35b615d336a985aeb3088c554631762cf3aac87b95"
+  },
+  "wait_seconds": 4000
+}
