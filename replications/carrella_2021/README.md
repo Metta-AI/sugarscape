@@ -887,3 +887,16 @@ retained by the original runner. Finite-value, interval and prediction audits
 pass, but the warning count remains disclosed. The initial missing-library
 failure is also retained. The 5,000-input workflow is still running.
 No estimator or paper scope has been reduced.
+
+### First-fold warning control reproduces the complete result
+
+[An unchanged first-fold replay](results/independent-lm-warning-control-2026-10-18)
+uses immediate warning reporting and all 200 bootstrap fits for each of five
+parameters. Its complete result and final random state are identical to the
+saved native fold, including predictions, interval bounds and metrics.
+
+The replay emits five legacy `unnest()` interface warnings and one deprecated
+`as_data_frame()` warning. No numerical warning appears in this replay.
+This identifies the first-fold warnings without changing the author estimator.
+It does not recover individual messages from the other four original folds
+or resolve independent-versus-author simulation differences.
