@@ -7,7 +7,7 @@ OpenABL language and compiler](https://doi.org/10.1016/j.future.2020.10.014).
 Status: incomplete. This study covers the paper's Sugarscape results, including
 code size, cross-backend performance, and distributed scaling. Other models are
 outside its scope. The 2018 conference version does not receive separate credit.
-Full figure extraction and historical dependency reconstruction remain required.
+Historical dependency reconstruction and quantitative benchmark runs remain required.
 
 ## Source and workload
 
@@ -70,7 +70,7 @@ execution audits, not isolated-function tests.
 - Identify historical compiler and backend dependency revisions.
 - Independently validate initialization and all stages across the declared workloads.
 - Resolve buffer semantics across C, MASON, FLAME and FLAME GPU before timing comparisons.
-- Extract every Sugarscape figure target and its experiment configuration.
+- Reconcile extracted Sugarscape targets with historical experiment configurations.
 - Reproduce code-size, cross-backend and distributed results with uncertainty and hardware limits stated.
 
 ## Native MASON control
@@ -120,3 +120,19 @@ model revisions. The released source has156 effective lines versus154 in
 Table1. No recorded revision gives154 after removing comments and blank lines.
 Exact author files and counting-tool behavior remain unresolved; no negative
 verdict is assigned. The FLAME GPU345-line reference still requires provenance.
+
+## Figure4 vector targets
+
+[All36 curve points](paper-targets/figure4.json) are extracted from the pinned
+PDF vector paths using `extract_figure4.py`. Legend identities and logarithmic
+axes were visually checked. Every inferred input size lies within0.03% of a
+250-times-power-of-two workload; nominal counts are retained alongside raw values.
+
+MASON has11 points through256,000 cells, exceeding the released128,000 default.
+C has7 points beginning at500 cells, omitting the released250-cell starting point.
+FLAME has5 points and FLAME GPU13. These differences remain explicit; defaults
+do not substitute for the published benchmark coverage.
+
+Recorded coordinate sensitivity perturbs each y-coordinate and calibration tick
+by0.001 PDF points. It is neither statistical uncertainty nor a new acceptance
+margin. Extracted runtimes approximate the published plot, not original raw data.

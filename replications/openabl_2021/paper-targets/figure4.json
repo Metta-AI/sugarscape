@@ -1,0 +1,560 @@
+{
+  "paper_sha256": "fd54ec061d5022e0f816f7982a6fac0d3ef6d3c93e548a79a00e20e807a7fe96",
+  "figure": 4,
+  "pdf_page_index": 17,
+  "curve_identity": "Visually matched legend markers: MASON triangle, FLAME GPU open circle, FLAME filled circle, C square.",
+  "calibration": {
+    "x1000": 159.7729949951172,
+    "x1000000": 228.3419952392578,
+    "y001": 325.14300537109375,
+    "y100": 257.02703857421875
+  },
+  "points": [
+    {
+      "backend": "mason",
+      "requested_cells": 250,
+      "digitized_requested_cells": 249.99742025415011,
+      "runtime_seconds": 0.1469951008524512,
+      "pdf_point": [
+        146.0120086669922,
+        305.2650146484375
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        0.1469553541696394,
+        0.1470348582854584
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 500,
+      "digitized_requested_cells": 499.9728258461485,
+      "runtime_seconds": 0.20400884645633327,
+      "pdf_point": [
+        152.8920135498047,
+        302.84100341796875
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        0.20395368356407442,
+        0.204064024268375
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 1000,
+      "digitized_requested_cells": 1000.0,
+      "runtime_seconds": 0.34098854622814884,
+      "pdf_point": [
+        159.7729949951172,
+        299.0419921875
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        0.3408963447635368,
+        0.3410807726302824
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 2000,
+      "digitized_requested_cells": 1999.7121237673332,
+      "runtime_seconds": 0.6279630243262232,
+      "pdf_point": [
+        166.65200805664062,
+        294.5260009765625
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        0.6277932265098287,
+        0.6281328680674496
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 4000,
+      "digitized_requested_cells": 4000.047425210993,
+      "runtime_seconds": 1.2370058873962269,
+      "pdf_point": [
+        173.53399658203125,
+        289.51202392578125
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        1.2366714076730418,
+        1.237340457585388
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 8000,
+      "digitized_requested_cells": 7999.742608016575,
+      "runtime_seconds": 2.832131524275939,
+      "pdf_point": [
+        180.41400146484375,
+        283.385986328125
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        2.8313657311799494,
+        2.8328975244942582
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 16000,
+      "digitized_requested_cells": 15998.756169000575,
+      "runtime_seconds": 6.6907529599818,
+      "pdf_point": [
+        187.2939910888672,
+        277.02801513671875
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        6.688943816451629,
+        6.6925625928269366
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 32000,
+      "digitized_requested_cells": 31996.103494615752,
+      "runtime_seconds": 16.825535544492798,
+      "pdf_point": [
+        194.1739959716797,
+        270.2080078125
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        16.820986010388943,
+        16.83008630909889
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 64000,
+      "digitized_requested_cells": 63995.88179451583,
+      "runtime_seconds": 41.44582754900889,
+      "pdf_point": [
+        201.0550079345703,
+        263.54095458984375
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        41.4346208206763,
+        41.45703730839999
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 128000,
+      "digitized_requested_cells": 127999.11362165776,
+      "runtime_seconds": 95.1209588041624,
+      "pdf_point": [
+        207.93601989746094,
+        257.39697265625
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        95.09523860970384,
+        95.1466859551038
+      ]
+    },
+    {
+      "backend": "mason",
+      "requested_cells": 256000,
+      "digitized_requested_cells": 255986.16869508885,
+      "runtime_seconds": 209.9997402266571,
+      "pdf_point": [
+        214.8159942626953,
+        251.53997802734375
+      ],
+      "drawing_index": 167,
+      "coordinate_sensitivity_seconds": [
+        209.93838577788023,
+        210.06111621088482
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 250,
+      "digitized_requested_cells": 249.99742025415011,
+      "runtime_seconds": 1.402959111250213,
+      "pdf_point": [
+        146.0120086669922,
+        288.58099365234375
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        1.4025797586699604,
+        1.4033385664331024
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 500,
+      "digitized_requested_cells": 499.9728258461485,
+      "runtime_seconds": 1.1960569311226428,
+      "pdf_point": [
+        152.8920135498047,
+        289.760986328125
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        1.1957335237764761,
+        1.1963804259400646
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 1000,
+      "digitized_requested_cells": 1000.0,
+      "runtime_seconds": 1.3099995318506368,
+      "pdf_point": [
+        159.7729949951172,
+        289.0880126953125
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        1.3096453150395042,
+        1.3103538444659912
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 2000,
+      "digitized_requested_cells": 1999.7121237673332,
+      "runtime_seconds": 1.5657740421655566,
+      "pdf_point": [
+        166.65200805664062,
+        287.76898193359375
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        1.5653506653057279,
+        1.566197533535168
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 4000,
+      "digitized_requested_cells": 4000.047425210993,
+      "runtime_seconds": 2.09686281894053,
+      "pdf_point": [
+        173.53399658203125,
+        285.6090087890625
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        2.0962958385385893,
+        2.097429952692379
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 8000,
+      "digitized_requested_cells": 7999.742608016575,
+      "runtime_seconds": 2.923949718031077,
+      "pdf_point": [
+        180.41400146484375,
+        283.1500244140625
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        2.923159097790493,
+        2.9247405521089327
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 16000,
+      "digitized_requested_cells": 15998.756169000575,
+      "runtime_seconds": 4.820908128324104,
+      "pdf_point": [
+        187.2939910888672,
+        279.4520263671875
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        4.819604580755979,
+        4.822212028459796
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 32000,
+      "digitized_requested_cells": 31996.103494615752,
+      "runtime_seconds": 8.991794531331015,
+      "pdf_point": [
+        194.1739959716797,
+        274.84197998046875
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        8.98936319856499,
+        8.994226521694122
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 64000,
+      "digitized_requested_cells": 63995.88179451583,
+      "runtime_seconds": 17.02921570620642,
+      "pdf_point": [
+        201.0550079345703,
+        270.1190185546875
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        17.02461109808488,
+        17.033821559725922
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 128000,
+      "digitized_requested_cells": 127999.11362165776,
+      "runtime_seconds": 32.62415568602816,
+      "pdf_point": [
+        207.93601989746094,
+        265.31097412109375
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        32.61533429020922,
+        32.6329794677501
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 256000,
+      "digitized_requested_cells": 255986.16869508885,
+      "runtime_seconds": 64.72738366354375,
+      "pdf_point": [
+        214.8159942626953,
+        260.2440185546875
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        64.70988172794985,
+        64.7448903328466
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 512000,
+      "digitized_requested_cells": 512001.73782406363,
+      "runtime_seconds": 128.87458333874866,
+      "pdf_point": [
+        221.69700622558594,
+        255.1510009765625
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        128.83877778114348,
+        128.9104009506306
+      ]
+    },
+    {
+      "backend": "flamegpu",
+      "requested_cells": 1024000,
+      "digitized_requested_cells": 1023958.3890017639,
+      "runtime_seconds": 256.0038556974543,
+      "pdf_point": [
+        228.57701110839844,
+        250.07501220703125
+      ],
+      "drawing_index": 168,
+      "coordinate_sensitivity_seconds": [
+        255.9275720109264,
+        256.08016660343924
+      ]
+    },
+    {
+      "backend": "flame",
+      "requested_cells": 250,
+      "digitized_requested_cells": 249.99742025415011,
+      "runtime_seconds": 0.5389846079210179,
+      "pdf_point": [
+        146.0120086669922,
+        295.656005859375
+      ],
+      "drawing_index": 169,
+      "coordinate_sensitivity_seconds": [
+        0.5388388693887317,
+        0.5391303858708757
+      ]
+    },
+    {
+      "backend": "flame",
+      "requested_cells": 500,
+      "digitized_requested_cells": 499.9728258461485,
+      "runtime_seconds": 2.3570303337342513,
+      "pdf_point": [
+        152.8920135498047,
+        284.7440185546875
+      ],
+      "drawing_index": 169,
+      "coordinate_sensitivity_seconds": [
+        2.3563930054388877,
+        2.3576678344063597
+      ]
+    },
+    {
+      "backend": "flame",
+      "requested_cells": 1000,
+      "digitized_requested_cells": 1000.0,
+      "runtime_seconds": 9.052777090334356,
+      "pdf_point": [
+        159.7729949951172,
+        274.7919921875
+      ],
+      "drawing_index": 169,
+      "coordinate_sensitivity_seconds": [
+        9.050329268213137,
+        9.055225574512496
+      ]
+    },
+    {
+      "backend": "flame",
+      "requested_cells": 2000,
+      "digitized_requested_cells": 1999.7121237673332,
+      "runtime_seconds": 35.974438293639295,
+      "pdf_point": [
+        166.65200805664062,
+        264.5880126953125
+      ],
+      "drawing_index": 169,
+      "coordinate_sensitivity_seconds": [
+        35.964710999464806,
+        35.98416821873308
+      ]
+    },
+    {
+      "backend": "flame",
+      "requested_cells": 4000,
+      "digitized_requested_cells": 4000.047425210993,
+      "runtime_seconds": 148.4139960718182,
+      "pdf_point": [
+        173.53399658203125,
+        254.10699462890625
+      ],
+      "drawing_index": 169,
+      "coordinate_sensitivity_seconds": [
+        148.37214686226906,
+        148.45585954381454
+      ]
+    },
+    {
+      "backend": "c",
+      "requested_cells": 500,
+      "digitized_requested_cells": 499.9728258461485,
+      "runtime_seconds": 0.024001371261633396,
+      "pdf_point": [
+        152.8920135498047,
+        318.66796875
+      ],
+      "drawing_index": 170,
+      "coordinate_sensitivity_seconds": [
+        0.023994881420237018,
+        0.02400786285832255
+      ]
+    },
+    {
+      "backend": "c",
+      "requested_cells": 1000,
+      "digitized_requested_cells": 1000.0,
+      "runtime_seconds": 0.08100464896559952,
+      "pdf_point": [
+        159.7729949951172,
+        309.6719970703125
+      ],
+      "drawing_index": 170,
+      "coordinate_sensitivity_seconds": [
+        0.08098274574521984,
+        0.08102655811009375
+      ]
+    },
+    {
+      "backend": "c",
+      "requested_cells": 2000,
+      "digitized_requested_cells": 1999.7121237673332,
+      "runtime_seconds": 0.33599934166955253,
+      "pdf_point": [
+        166.65200805664062,
+        299.1510009765625
+      ],
+      "drawing_index": 170,
+      "coordinate_sensitivity_seconds": [
+        0.33590848925895644,
+        0.3360902186527953
+      ]
+    },
+    {
+      "backend": "c",
+      "requested_cells": 4000,
+      "digitized_requested_cells": 4000.047425210993,
+      "runtime_seconds": 1.3169262013556402,
+      "pdf_point": [
+        173.53399658203125,
+        289.04901123046875
+      ],
+      "drawing_index": 170,
+      "coordinate_sensitivity_seconds": [
+        1.3165701116104147,
+        1.3172823874116542
+      ]
+    },
+    {
+      "backend": "c",
+      "requested_cells": 8000,
+      "digitized_requested_cells": 7999.742608016575,
+      "runtime_seconds": 4.9470622202115475,
+      "pdf_point": [
+        180.41400146484375,
+        279.260986328125
+      ],
+      "drawing_index": 170,
+      "coordinate_sensitivity_seconds": [
+        4.94572456125708,
+        4.948400240959612
+      ]
+    },
+    {
+      "backend": "c",
+      "requested_cells": 16000,
+      "digitized_requested_cells": 15998.756169000575,
+      "runtime_seconds": 20.345903006246445,
+      "pdf_point": [
+        187.2939910888672,
+        268.802978515625
+      ],
+      "drawing_index": 170,
+      "coordinate_sensitivity_seconds": [
+        20.340401583759412,
+        20.351405916690798
+      ]
+    },
+    {
+      "backend": "c",
+      "requested_cells": 32000,
+      "digitized_requested_cells": 31996.103494615752,
+      "runtime_seconds": 83.24796310097919,
+      "pdf_point": [
+        194.1739959716797,
+        258.38299560546875
+      ],
+      "drawing_index": 170,
+      "coordinate_sensitivity_seconds": [
+        83.22545330055084,
+        83.2704789895824
+      ]
+    }
+  ],
+  "uncertainty": "Coordinate sensitivity independently perturbs vertex y and both y-axis calibration ticks by0.001 PDF points. This is not statistical uncertainty, recovered raw timing precision, or an acceptance margin.",
+  "script_discrepancies": [
+    "MASON includes256000 cells, beyond released128000 default maximum.",
+    "C starts at500 cells; the released default starts at250."
+  ],
+  "completed_study": false
+}
