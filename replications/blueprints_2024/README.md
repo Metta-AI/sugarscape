@@ -1050,3 +1050,9 @@ The deposited 100-seed schedule still does not fulfill the paper's 500-seed Tabl
 ## First bulk selfishness-0.37 checkpoint
 
 [The first 25 bulk inputs](results/selfishness037-prefix-2026-10-18) pass independent local audit for all 125,025 observations. All reach 5,000 steps. The archive matches its sealed export hash; all member hashes and producer/local audit pairs match. The reconciled inventory now counts 35 unique completed supplementary inputs and 99,965 remaining. Condition 0.37 has 28 of 500 completed inputs. This completion-order prefix supplies no condition aggregate or paper completion credit; the bounded batch continues.
+
+### Second selfishness-0.37 checkpoint
+
+[Another 25 inputs](results/selfishness037-second-prefix-2026-10-18) pass independent audits covering 120,191 observations. Twenty-four finish 5,000 steps; one ends naturally in extinction at step 166. The inventory now recognizes audited native extinction and verifies contiguous trajectory times and terminal population. The previous inventory and remaining-input CSV reproduce exactly, except for the recorded planner source hash.
+
+Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishness 0.37 has 53/500 completed inputs. No completion-order aggregate or whole-paper completion is claimed.

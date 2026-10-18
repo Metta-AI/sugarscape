@@ -56,7 +56,9 @@ for audits, native_archive in args.completed_source:
             entry = result["entry"]
             matches = manifests[audit["manifest_sha256"]]
             assert matches, (path, "No byte-matching producer manifest")
-            assert result["final_timestep"] == 5000 and result["observations"] == 5001
+            assert 0 <= result["final_timestep"] <= 5000
+            assert result["observations"] == result["final_timestep"] + 1
+            assert result["final_timestep"] == 5000 or result["final_population"] == 0
             for member_name, manifest_raw in matches:
                 manifest = json.loads(manifest_raw)
                 assert manifest["release"] == RELEASE
@@ -71,6 +73,10 @@ for audits, native_archive in args.completed_source:
                     hashlib.sha256(trajectory).hexdigest()
                     == result["trajectory_sha256"]
                 )
+                rows = json.loads(trajectory)
+                assert len(rows) == result["observations"]
+                assert [row["timestep"] for row in rows] == list(range(len(rows)))
+                assert rows[-1]["population"] == result["final_population"]
                 raw = native.extractfile(str(parent / "original.config")).read()
                 digest = hashlib.sha256(raw).hexdigest()
                 assert digest == manifest["original_config_sha256"]
