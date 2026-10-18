@@ -203,3 +203,16 @@ The trace records 4,020 outside-mask moves and 223 moves to cells marked occupie
 [All 256 seeds](results/gradient-state-control-2026-10-18) produce exactly equal ordinary and differentiated states across 34,560,000 values. Independent readback also matches the earlier movement trace and all 38,400 derivatives against 115,200 archived records.
 
 A failed aggregate-equality assumption exposed 4,632 differences no larger than 3.20e-14. The verifier reproduces both totals exactly using their respective reduction orders; no tolerance was fitted. This validates the diagnostic baseline, while exact published experiment settings and calibration remain unresolved.
+
+## Perturbed gradient trajectory replay
+
+[The complete seed-3 qualification](results/perturbed-movement-qualification-2026-10-18) validates all 36 parameter/step/sign cases. Native passive-state hashes and all 900 archived plus/minus aggregate values match exactly. Independent replay checks 86,400 agent updates and 2,160,000 cell updates with zero state error. All 256 previous baseline results also reproduce exactly. The disjoint remaining seeds 4–258 are running under a two-hour limit and 2 GiB free-space guard; no unfinished case receives credit.
+
+The trace command now requires an explicit profile and inclusive seed bounds, and writes compressed CSVs:
+
+```sh
+julia --startup-file=no --project=DIFFABM trace_gradient_movement.jl DIFFABM NEW_TRACE ORIGINAL_GRADIENT_ENSEMBLE perturbed 3 258
+python replay_movement.py NEW_TRACE ORIGINAL_GRADIENT_ENSEMBLE NEW_AUDIT --profile gradient-trace
+```
+
+Use `baseline` instead of `perturbed` for unperturbed cases. The auditor preserves its existing `gradient-ensemble` profile for retained historical uncompressed evidence. Neither profile establishes the paper's missing experiment settings or calibration result.
