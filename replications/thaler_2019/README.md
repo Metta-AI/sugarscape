@@ -674,3 +674,22 @@ This does not establish historical hardware isolation, full scaling or paper com
 raw measurements. The 16-capability rebirth fit is 66.010451 seconds, with
 R-squared 0.999935623439. Both completed conditions pass their first fit attempt.
 Four timing conditions and thirty retry processes remain outstanding.
+
+### Full population ensemble complete
+
+[Native trajectories and independent audit](results/population-grid-complete-2026-10-18)
+cover all 45 declared conditions with five processes each: 225,000 population
+observations. Every trajectory contains times 0–999, valid population bounds,
+the prescribed command and a successful exit. All five normal sequential runs
+match the previously validated population reference exactly.
+
+At the final recorded time, normal concurrent runs contain 179–189 agents;
+the sequential runs contain 192. With 2,500 initial agents and rebirth,
+final populations are 2,293 sequentially, 2,353–2,363 for IO, and 2,320 for
+both TVar and TArray. These are descriptive observations, not a new equivalence
+tolerance or a whole-paper negative verdict. Recorded population follows the
+previously audited occupied-cell observer.
+
+The evidence archive receipt and fresh public extraction reproduce the audit
+byte-for-byte. This completes the population ensemble. Figure 5a state fidelity
+and the outstanding timing work remain required for the full study.

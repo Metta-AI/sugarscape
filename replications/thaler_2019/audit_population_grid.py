@@ -1,6 +1,7 @@
 """Independently verify complete population-grid records against original conditions."""
 
 import argparse
+from collections import defaultdict
 import csv
 import hashlib
 import json
@@ -60,6 +61,7 @@ assert len(records) == len(schedule)
 reference_path = assets / "results/population-replay-2026-10-17/population-1.csv"
 with reference_path.open() as stream:
     reference = [(float(r["T"]), int(r["PopSize"])) for r in csv.DictReader(stream)]
+terminal_populations = defaultdict(list)
 for index, (record, condition) in enumerate(zip(records, schedule, strict=True)):
     assert record["index"] == index and record["condition"] == condition
     folder = root / f"run-{index:03d}"
@@ -88,6 +90,8 @@ for index, (record, condition) in enumerate(zip(records, schedule, strict=True))
     assert all(0 <= r[1] <= condition["agents"] for r in rows)
     assert record["observations"] == 1000
     assert (record["first"], record["last"]) == (rows[0][1], rows[-1][1])
+    key = tuple(condition[field] for field in ("variant", "caps", "agents", "rebirth"))
+    terminal_populations[key].append(rows[-1][1])
     if not condition["rebirth"]:
         assert all(a[1] >= b[1] for a, b in zip(rows[:-1], rows[1:], strict=True))
         if variant == "seq":
@@ -102,6 +106,21 @@ report = {
     "observations": len(records) * 1000,
     "records": records,
     "reference_sha256": hashlib.sha256(reference_path.read_bytes()).hexdigest(),
+    "terminal_population_summary": [
+        {
+            "variant": variant,
+            "caps": caps,
+            "agents": agents,
+            "rebirth": rebirth,
+            "repetitions": len(values),
+            "minimum": min(values),
+            "maximum": max(values),
+            "mean": sum(values) / len(values),
+        }
+        for (variant, caps, agents, rebirth), values in sorted(
+            terminal_populations.items()
+        )
+    ],
     "scope": "All declared process records, original condition identities, command/exit and trajectory hashes verified. Binary and hardware metadata are recorded provenance, not independent binary reconstruction. Qualification is not full-native coverage; no statistical equivalence claim.",
 }
 args.output.mkdir(exist_ok=False)
