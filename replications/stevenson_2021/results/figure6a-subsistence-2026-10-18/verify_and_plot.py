@@ -1,6 +1,9 @@
 from pathlib import Path
 from decimal import Decimal
-import csv, json, re, xml.etree.ElementTree as ET
+import csv
+import json
+import re
+import xml.etree.ElementTree as ET
 import numpy as np
 import matplotlib
 
