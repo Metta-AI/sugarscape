@@ -181,3 +181,7 @@ whose power-of-two ranges all begin at zero. The reconstruction preserves it.
 ## Native MASON random initialization
 
 [All11 published grid sizes](mason-initialization/README.md) pass independent reconstruction of4,072,272 native initial-state fields at seed zero. `initialize_mason.py` reproduces the pinned MT19937 generator and1,249-draw MASON startup. These observations retain MASON's own initialization; the separate C-initialized trajectory controls remain distinct.
+
+## Complete published MASON grid controls
+
+[All11 paired conditions](mason-grid/README.md) now execute100 steps. Each variant matches4,072,272 initial fields against the C initializer; the ordered-neighbor control matches4,072,272 independently replayed final fields. Native-order differences remain recorded at every size. Historical timings and other paper targets remain incomplete.

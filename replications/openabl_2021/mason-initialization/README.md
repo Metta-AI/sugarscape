@@ -7,3 +7,5 @@ All11 published MASON input sizes,250 through256,000 requested cells, match an i
 The native observer only calls `Sim(0).start()` and reads the resulting states. It performs no model steps. Every native initial snapshot, generated Java/class file, observer, validator, command, and audit is archived and byte-verified. The MASON dependency remains pinned by hash rather than bundled.
 
 This validates seed-zero initialization under the reconstructed runtime. It neither recovers historical benchmark seeds nor establishes timing equivalence or complete model dynamics.
+
+A complete225-cell comparison with an intentionally incorrect1,248-draw startup fails on five fields. This confirms that the audit detects a wrong startup random stream. The production validator retains1,249 draws.
