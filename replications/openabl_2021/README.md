@@ -72,3 +72,21 @@ execution audits, not isolated-function tests.
 - Resolve buffer semantics across C, MASON, FLAME and FLAME GPU before timing comparisons.
 - Extract every Sugarscape figure target and its experiment configuration.
 - Reproduce code-size, cross-backend and distributed results with uncertainty and hardware limits stated.
+
+## Native MASON control
+
+[Native MASON19 evidence](mason-condition/comparison.json) uses the same225-cell
+initialization as C, with both MASON state buffers explicitly initialized before
+scheduling. The original four generated stages run unchanged for400 scheduler
+steps, corresponding to100 model steps. A read-only observer captures live fields.
+
+MASON finishes with25 occupied cells, matching corrected C in count, but48 agent
+IDs and125 environment-sugar fields differ. Native neighbor traversal can change
+first-candidate tie resolution; this remains an explanation to verify. Population
+agreement alone does not establish backend equivalence.
+
+The released MASON snapshot helper produces malformed JSON for nested state
+objects. Its retained initial malformed output comes from the controlled start;
+the preceding unseeded initial file was overwritten. The observer snapshots are
+valid JSON and their225 initial cells match C exactly after sorting by position.
+The jar URL/hash, generated Java, observer, logs and snapshots are retained.

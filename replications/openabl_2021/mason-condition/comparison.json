@@ -1,0 +1,38 @@
+{
+  "cells": 225,
+  "steps": 100,
+  "common_initialization_exact": true,
+  "native_mason_final_occupied": 25,
+  "copy_control_c_final_occupied": 25,
+  "mason_vs_corrected_c_field_differences": {
+    "pos": 0,
+    "target_pos": 129,
+    "agent_id": 48,
+    "state": 40,
+    "sugar_level": 45,
+    "metabolism": 40,
+    "env_sugar_level": 125,
+    "max_env_sugar_level": 0
+  },
+  "mason_vs_initial_field_differences": {
+    "pos": 0,
+    "target_pos": 165,
+    "agent_id": 171,
+    "state": 52,
+    "sugar_level": 54,
+    "metabolism": 52,
+    "env_sugar_level": 157,
+    "max_env_sugar_level": 0
+  },
+  "mason_jar": {
+    "url": "https://people.cs.gmu.edu/~eclab/projects/mason/mason.19.jar",
+    "sha256": "5575345e8800a089f4673ebbfc6929956b0a9e86fb7a65422312748399ede08f"
+  },
+  "control_changes": "Seed0 MASON scheduler; overwrite both agent-state buffers with saved C initialization before scheduling. Read-only observer serializes getInState after400 scheduler steps. Native stage code unchanged.",
+  "limitations": [
+    "Released Util.save emits malformed JSON for nested states. Initial saver output was overwritten by the seed0 observer start; retained initial malformed output belongs to that controlled start.",
+    "Native MASON spatial-query order may differ from C flat-array order; tie resolution requires further audit.",
+    "No backend or paper-level equivalence established."
+  ],
+  "completed_study": false
+}
