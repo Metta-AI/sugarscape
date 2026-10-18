@@ -107,3 +107,16 @@ control, not evidence that native backends are generally equivalent.
 Both buffer copying and neighbor-order semantics must be addressed before
 interpreting cross-backend timings. Historical workload reconstruction and all
 other declared paper targets remain outstanding.
+
+## Published target extraction
+
+[Figure5 targets](paper-targets/targets.json) preserve seven printed Sugarscape
+runtimes, visually checked against the accepted manuscript. Figure4 curves were
+visually inspected but have not been digitized. Hardware differences require
+separate interpretation; these values are not new-run acceptance margins.
+
+[Code-size history](paper-targets/code-size-history.json) checks all14 recorded
+model revisions. The released source has156 effective lines versus154 in
+Table1. No recorded revision gives154 after removing comments and blank lines.
+Exact author files and counting-tool behavior remain unresolved; no negative
+verdict is assigned. The FLAME GPU345-line reference still requires provenance.
