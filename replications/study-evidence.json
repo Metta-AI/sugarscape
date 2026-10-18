@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T05:55:34.659957+00:00",
+  "as_of": "2026-10-18T06:07:39.119101+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -214,6 +214,19 @@
       "gzip_json_evidence_files": 0,
       "remaining_scope": "Original and portable container, host-native and checkpoint-control trajectories audited. Portable control:953 deliveries,799 conserved identities,39 preserved plans; score remains1 instead of2. Portable execution verified. Visible GUI, historical runtime fidelity and lifecycle interpretation remain unresolved; failed collection gets no trajectory credit.",
       "checked_at": "2026-10-18T05:12:48.530539+00:00"
+    },
+    {
+      "study": "openabl_2021",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/20",
+      "checked_commit": "a02bb6783f23998fecb08ab4b74c35f39f8565e2",
+      "status": "partial",
+      "readme": "replications/openabl_2021/README.md",
+      "readme_sha256": "c34150874312bb1193fce550d4908f703a930b0ca55d4e5bfdd10fc75618020f",
+      "json_evidence_files": 7,
+      "gzip_json_evidence_files": 0,
+      "checked_at": "2026-10-18T06:07:39.119101+00:00",
+      "evidence_scan_scope": "All JSON files under replications/openabl_2021",
+      "remaining_scope": "Compiler and generated C build;225-cell100-step native/control runs replay1800 fields exactly each. Released C stale-buffer behavior diagnosed. Historical revision, dependencies, initialization, remaining backends, figure targets and full performance/scaling remain unverified."
     }
   ],
   "study_prs": 17,
