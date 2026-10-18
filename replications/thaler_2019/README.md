@@ -716,3 +716,16 @@ unknown. These measurements establish the scaling direction, not timing equivale
 This completes Table 9's timing grid. Its separate thirty-process retry ensemble
 is still running. Remaining Table 8 conditions and Figure 5a state fidelity
 also prevent a whole-paper verdict.
+
+### First successful timing continuation
+
+[The sealed continuation checkpoint](results/timing-continuation-first-2026-10-18)
+validates the four-capability TVar condition with 500 rebirthing agents:
+24.530530 seconds, R-squared 0.999937805373. All four raw measurements reconstruct
+the accepted fit. A fresh archive extraction reproduces the audit byte-for-byte.
+
+Combined with the original 41 audited conditions, coverage is now 42/45:
+25/25 Table 6 conditions and 17/20 Table 8 conditions, with 168 measurements.
+The original SIGSEGV remains preserved. This fresh successful process does not
+explain that failure or establish historical performance equivalence. The three
+remaining conditions continue on the same allocation without duplicate work.
