@@ -315,3 +315,11 @@ assistance. It does not yet establish completion of this new scenario: its
 1000-step trajectories and state-transfer reconciliation remain under execution
 and audit. Earlier completed scenarios and their evidence remain unchanged.
 Historical revision and dependency equivalence also remain unproven.
+
+### Historical lifecycle cross-check
+
+[The October-2022 citation-date source audit](results/historical-lifecycle-2026-10-18)
+finds the same save-and-depart trigger in the earlier miner. The paper claims
+restored information, not a second mining score. The additional score criterion
+remains failed, but does not independently contradict that published claim.
+Complete historical runtime equivalence remains unproven.
