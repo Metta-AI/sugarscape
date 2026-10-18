@@ -1,0 +1,32 @@
+{
+  "requested_cells": 250,
+  "actual_cells": 225,
+  "timesteps": 100,
+  "native_one_two_thread_snapshots_byte_identical": true,
+  "control_initial_state_byte_identical": true,
+  "native_changed_cells_by_field": {
+    "pos": 0,
+    "target_pos": 25,
+    "agent_id": 0,
+    "state": 0,
+    "sugar_level": 0,
+    "metabolism": 0,
+    "env_sugar_level": 0,
+    "max_env_sugar_level": 0
+  },
+  "copy_control_changed_cells_by_field": {
+    "pos": 0,
+    "target_pos": 163,
+    "agent_id": 171,
+    "state": 48,
+    "sugar_level": 52,
+    "metabolism": 48,
+    "env_sugar_level": 157,
+    "max_env_sugar_level": 0
+  },
+  "native_final_occupied": 31,
+  "control_final_occupied": 25,
+  "control": "Only four generated-C assignments copy current input cell into output before each stage. No rule/configuration/random-initialization changes.",
+  "interpretation": "Evidence of stale output-buffer fields in this released C backend; not a verdict on historical paper benchmarks or other backends.",
+  "completed_study": false
+}

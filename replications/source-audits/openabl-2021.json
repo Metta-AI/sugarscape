@@ -65,7 +65,8 @@
     "Inspect figure images and extract full Sugarscape conditions and numeric targets before confirmatory runs.",
     "Verify code-size counting convention.",
     "Do not double-count2018 conference and2021 journal versions without establishing distinct results.",
-    "No compiler build or simulation run yet."
+    "No compiler build or simulation run yet.",
+    "Resolve released C backend stale-buffer semantics before performance comparisons; control restores field copies used by MASON backend."
   ],
   "history_check": {
     "head_date": "2019-08-12",
@@ -77,5 +78,6 @@
     "Cross-backend script requests36 conditions across C,MASON,FLAME,FLAMEGPU at100 steps; requested sizes round down to square grids.",
     "Each timing call reads one Execution time value; no repetition or uncertainty aggregation appears in bench.py or openabl.py.",
     "Dependencies mix pinned MASON19/D-MASON3.2 with mutable FLAME/FLAMEGPU branches. Reconstruct exact dependency revisions before confirmatory comparisons."
-  ]
+  ],
+  "native_diagnostic": "openabl-native-condition-2026-10-18/comparison.json"
 }
