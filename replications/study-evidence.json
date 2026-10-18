@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T20:34:20.564814+00:00",
+  "as_of": "2026-10-18T20:40:38.714555+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -243,15 +243,15 @@
     {
       "study": "oremland_2014",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
-      "checked_commit": "1f4fedfceaf20816fd742681e0910144fdc72551",
+      "checked_commit": "4a2040e8cc7c553227b6d805c05c86df5689f08c",
       "status": "partial",
       "readme": "replications/oremland_2014/README.md",
-      "readme_sha256": "710188d1d787dedf03829b7f183878047b9a3fc4973c9eec084840f302b70fbb",
-      "json_evidence_files": 21,
+      "readme_sha256": "fdaa19fce305817c8377a728a69043b68cd799c342745fbadfa40496fbdf1315",
+      "json_evidence_files": 33,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T20:34:20.564814+00:00",
+      "checked_at": "2026-10-18T20:40:38.714555+00:00",
       "evidence_scan_scope": "All JSON files under replications/oremland_2014",
-      "remaining_scope": "Independent native reconstruction completes 1,600 uniform-tax controls and 400 generated heterogeneous-policy controls. All 500,936 heterogeneous tax events and 10,200 paired states audited; 139/200 policy entries observed, 61 explicitly uncovered. The full uniform regression preserves all 81,600 prior observations byte-for-byte. Original control ensemble, reduced-grid conventions, policy-ranking agreement, optimization, and historical timings remain incomplete. No completion credit."
+      "remaining_scope": "Independent native reconstruction completes 1,600 uniform-tax controls and 400 generated heterogeneous-policy controls. All 500,936 heterogeneous tax events and 10,200 paired states audited; 139/200 policy entries observed, 61 explicitly uncovered. The full uniform regression preserves all 81,600 prior observations byte-for-byte. Original control ensemble, reduced-grid conventions, policy-ranking agreement, optimization, and historical timings remain incomplete. No completion credit. Batch evaluation matches all 400 rich-workflow final states and objectives; 17.12 seconds versus 68.31 with detailed observation. Optimizer choices remain underspecified; public dissertation bundles contain only PDF, text, and thumbnail."
     }
   ],
   "study_prs": 18,
