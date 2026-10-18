@@ -1,0 +1,2314 @@
+{
+  "processes_audited": 90,
+  "conditions_audited": 18,
+  "model_steps_per_process": 1000,
+  "hardware": {
+    "affinity": [
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+    ],
+    "cpu_max": "max 100000\n",
+    "cpuset": "88-95\n",
+    "lscpu": {
+      "lscpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU op-mode(s):",
+          "data": "32-bit, 64-bit"
+        },
+        {
+          "field": "Address sizes:",
+          "data": "46 bits physical, 57 bits virtual"
+        },
+        {
+          "field": "Byte Order:",
+          "data": "Little Endian"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "96"
+        },
+        {
+          "field": "On-line CPU(s) list:",
+          "data": "0-95"
+        },
+        {
+          "field": "Vendor ID:",
+          "data": "AuthenticAMD"
+        },
+        {
+          "field": "Model name:",
+          "data": "AMD EPYC 9R45 96-Core Processor"
+        },
+        {
+          "field": "CPU family:",
+          "data": "26"
+        },
+        {
+          "field": "Model:",
+          "data": "2"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "1"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "96"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Stepping:",
+          "data": "1"
+        },
+        {
+          "field": "Frequency boost:",
+          "data": "enabled"
+        },
+        {
+          "field": "CPU max MHz:",
+          "data": "4510.2051"
+        },
+        {
+          "field": "CPU min MHz:",
+          "data": "1220.4091"
+        },
+        {
+          "field": "BogoMIPS:",
+          "data": "5199.84"
+        },
+        {
+          "field": "Flags:",
+          "data": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpuid_fault cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local avx_vnni avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid bus_lock_detect movdiri movdir64b overflow_recov succor smca fsrm avx512_vp2intersect flush_l1d sev sev_es debug_swap amd_lbr_pmc_freeze"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "AMD-V"
+        },
+        {
+          "field": "L1d cache:",
+          "data": "4.5 MiB (96 instances)"
+        },
+        {
+          "field": "L1i cache:",
+          "data": "3 MiB (96 instances)"
+        },
+        {
+          "field": "L2 cache:",
+          "data": "96 MiB (96 instances)"
+        },
+        {
+          "field": "L3 cache:",
+          "data": "384 MiB (12 instances)"
+        },
+        {
+          "field": "NUMA node(s):",
+          "data": "1"
+        },
+        {
+          "field": "NUMA node0 CPU(s):",
+          "data": "0-95"
+        },
+        {
+          "field": "Vulnerability Gather data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Ghostwrite:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Indirect target selection:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Itlb multihit:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability L1tf:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Meltdown:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mmio stale data:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Old microcode:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Reg file data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Retbleed:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Spec rstack overflow:",
+          "data": "Mitigation; Reduced Speculation"
+        },
+        {
+          "field": "Vulnerability Spec store bypass:",
+          "data": "Mitigation; Speculative Store Bypass disabled via prctl"
+        },
+        {
+          "field": "Vulnerability Spectre v1:",
+          "data": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization"
+        },
+        {
+          "field": "Vulnerability Spectre v2:",
+          "data": "Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP disabled; PBRSB-eIBRS Not affected; BHI Not affected"
+        },
+        {
+          "field": "Vulnerability Srbds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsa:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsx async abort:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Vmscape:",
+          "data": "Mitigation; IBPB before exit to userspace"
+        }
+      ]
+    }
+  },
+  "conditions": [
+    {
+      "condition": {
+        "variant": "tvar",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 0,
+      "mean_minus_paper": 0.0025247877980431803,
+      "ratio_mean": 0.0025247877980431803,
+      "ratio_min": 0.0024470500031238936,
+      "ratio_max": 0.0025782226475679466,
+      "ratio_sample_sd": 5.53487881322133e-05,
+      "pooled_ratio": 0.0025246573828239874,
+      "rounded_zero_with_nonzero_retries": 5
+    },
+    {
+      "condition": {
+        "variant": "tvar",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 1.04,
+      "mean_minus_paper": -0.004813019339071634,
+      "ratio_mean": 1.0351869806609284,
+      "ratio_min": 1.034452954560838,
+      "ratio_max": 1.0363559172853696,
+      "ratio_sample_sd": 0.0007881813631916504,
+      "pooled_ratio": 1.0351888368027555,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tvar",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 2.15,
+      "mean_minus_paper": 0.02628778861013714,
+      "ratio_mean": 2.176287788610137,
+      "ratio_min": 2.173678825715658,
+      "ratio_max": 2.179784538694461,
+      "ratio_sample_sd": 0.0025441891843722506,
+      "pooled_ratio": 2.1762893248754343,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 3.2,
+      "mean_minus_paper": 0.14034409657433722,
+      "ratio_mean": 3.3403440965743374,
+      "ratio_min": 3.338715123886708,
+      "ratio_max": 3.3423283945647744,
+      "ratio_sample_sd": 0.001323816285642769,
+      "pooled_ratio": 3.3403521050028915,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tvar",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 4.06,
+      "mean_minus_paper": 0.4703198058753886,
+      "ratio_mean": 4.530319805875388,
+      "ratio_min": 4.526849100535686,
+      "ratio_max": 4.533757215761733,
+      "ratio_sample_sd": 0.0026652653586003226,
+      "pooled_ratio": 4.530311917598509,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tvar",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 5.02,
+      "mean_minus_paper": 0.7925097312613181,
+      "ratio_mean": 5.812509731261318,
+      "ratio_min": 5.805589738241736,
+      "ratio_max": 5.824698785839446,
+      "ratio_sample_sd": 0.007721727703608574,
+      "pooled_ratio": 5.812546993266387,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tvar",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 6.09,
+      "mean_minus_paper": 0.8198716264895296,
+      "ratio_mean": 6.9098716264895295,
+      "ratio_min": 6.9022960635897865,
+      "ratio_max": 6.920121386688613,
+      "ratio_sample_sd": 0.006594205113975416,
+      "pooled_ratio": 6.909916533412257,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tvar",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 8.45,
+      "mean_minus_paper": -0.25573083220143644,
+      "ratio_mean": 8.194269167798563,
+      "ratio_min": 8.167232329303742,
+      "ratio_max": 8.215472964983265,
+      "ratio_sample_sd": 0.020842863985466597,
+      "pooled_ratio": 8.194324881785619,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tarray",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 0,
+      "mean_minus_paper": 0.0012867568441248733,
+      "ratio_mean": 0.0012867568441248733,
+      "ratio_min": 0.0012089873291847447,
+      "ratio_max": 0.0013814395227754377,
+      "ratio_sample_sd": 7.505375828171464e-05,
+      "pooled_ratio": 0.001286515565378761,
+      "rounded_zero_with_nonzero_retries": 5
+    },
+    {
+      "condition": {
+        "variant": "tarray",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 0.02,
+      "mean_minus_paper": 3.468672523147462e-05,
+      "ratio_mean": 0.020034686725231475,
+      "ratio_min": 0.019455130226398436,
+      "ratio_max": 0.020535904538674623,
+      "ratio_sample_sd": 0.00043916845813623043,
+      "pooled_ratio": 0.02003316199987466,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tarray",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 0.04,
+      "mean_minus_paper": -0.0005094479496385446,
+      "ratio_mean": 0.039490552050361456,
+      "ratio_min": 0.03874015421391866,
+      "ratio_max": 0.04026732265591182,
+      "ratio_sample_sd": 0.0005996701551762985,
+      "pooled_ratio": 0.0394892077676214,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 0.06,
+      "mean_minus_paper": -0.0037439343966793534,
+      "ratio_mean": 0.056256065603320644,
+      "ratio_min": 0.0553713268125062,
+      "ratio_max": 0.05707042312177245,
+      "ratio_sample_sd": 0.0006284828458562274,
+      "pooled_ratio": 0.056256141157778106,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tarray",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 0.07,
+      "mean_minus_paper": 0.0033617911853114912,
+      "ratio_mean": 0.0733617911853115,
+      "ratio_min": 0.07240835469043444,
+      "ratio_max": 0.0745129056922144,
+      "ratio_sample_sd": 0.0008854154415622441,
+      "pooled_ratio": 0.07335654379680065,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tarray",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 0.09,
+      "mean_minus_paper": 8.121097603482064e-05,
+      "ratio_mean": 0.09008121097603482,
+      "ratio_min": 0.08915215258510649,
+      "ratio_max": 0.09104927749075556,
+      "ratio_sample_sd": 0.0008724945446913201,
+      "pooled_ratio": 0.0900805242173579,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tarray",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 0.1,
+      "mean_minus_paper": 0.006497355622733514,
+      "ratio_mean": 0.10649735562273352,
+      "ratio_min": 0.10474361776306888,
+      "ratio_max": 0.10787110070058585,
+      "ratio_sample_sd": 0.0012932318986000955,
+      "pooled_ratio": 0.10649028227964948,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tarray",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false
+      },
+      "processes": 5,
+      "paper_ratio": 0.11,
+      "mean_minus_paper": 0.01119074648992853,
+      "ratio_mean": 0.12119074648992853,
+      "ratio_min": 0.11912351219106353,
+      "ratio_max": 0.12299185611257514,
+      "ratio_sample_sd": 0.001794480047736664,
+      "pooled_ratio": 0.12119115230812294,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true
+      },
+      "processes": 5,
+      "paper_ratio": 3.28,
+      "mean_minus_paper": -0.47747237105157936,
+      "ratio_mean": 2.8025276289484204,
+      "ratio_min": 2.798402638944422,
+      "ratio_max": 2.804516593362655,
+      "ratio_sample_sd": 0.00244621031284179,
+      "pooled_ratio": 2.8025276289484204,
+      "rounded_zero_with_nonzero_retries": 0
+    },
+    {
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true
+      },
+      "processes": 5,
+      "paper_ratio": 0.01,
+      "mean_minus_paper": 0.002419192323070772,
+      "ratio_mean": 0.012419192323070772,
+      "ratio_min": 0.012299880047980808,
+      "ratio_max": 0.012590563774490204,
+      "ratio_sample_sd": 0.00011330602517786007,
+      "pooled_ratio": 0.012419192323070772,
+      "rounded_zero_with_nonzero_retries": 0
+    }
+  ],
+  "rows": [
+    {
+      "index": 0,
+      "condition": {
+        "variant": "tarray",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 189471,
+      "retries": 13872,
+      "ratio": 0.07321437053691594,
+      "printed_ratio": "0.07",
+      "files_sha256": {
+        "stderr.log": "2aa7da8b81dc5e2816d4615de8523dc769a515400638067febb67e7834081eca",
+        "stdout.log": "7a3dc086b979f356030f26293ab3ff93ac84c3d0f5d71d81668557b091403d64",
+        "command.json": "c970db5e05a5b638cc0d273b59631c782666e8ebb3d2a81711be8c622f141ead",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 1,
+      "condition": {
+        "variant": "tvar",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 190682,
+      "retries": 1317727,
+      "ratio": 6.910599846865462,
+      "printed_ratio": "6.91",
+      "files_sha256": {
+        "stderr.log": "cdb074c0f8382e107701003a316c52895c943961007c94cd9d6d6807b1cae95e",
+        "stdout.log": "cf677f044620ab6db004772cbff44d222d6c1dc34d9db39f16814be079bea191",
+        "command.json": "aa3ad02b3eab494c9d51a1094ea9bca77d23374082c6fe2cdcbd8fb49732615d",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 2,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 193773,
+      "retries": 647653,
+      "ratio": 3.3423283945647744,
+      "printed_ratio": "3.34",
+      "files_sha256": {
+        "stderr.log": "61ed4e6a3a92739083fd2351ce372cced9f2086cb82f2323ffaf98aa33366a11",
+        "stdout.log": "4b382cd0a484c2bbc812ae968bc17719b133a0b4974c669dd670802730c2c8b7",
+        "command.json": "2c43a6a0504dc39eb74016bb2f46b0b899a6c06abc6d60d6e6c1acf61945462f",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 3,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 3
+      },
+      "commits": 2501000,
+      "retries": 31182,
+      "ratio": 0.01246781287485006,
+      "printed_ratio": "0.01",
+      "files_sha256": {
+        "stderr.log": "56e3486f7646e4a60f97254cfc372f2cdf913370078585184385b24db0166189",
+        "stdout.log": "893b3843e0c81d5b21c9bc9c83844904c43392bd2a22e54134993823e87707e9",
+        "command.json": "a7dfff8b9382137706a5892daa351a7cc22d2b523fa3ef17d16011c14807f56a",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 4,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 189528,
+      "retries": 632780,
+      "ratio": 3.338715123886708,
+      "printed_ratio": "3.34",
+      "files_sha256": {
+        "stderr.log": "aed5608e12de3e0627bf39313323ebf13ab52385143d08c220cab3e93061ade0",
+        "stdout.log": "4b382cd0a484c2bbc812ae968bc17719b133a0b4974c669dd670802730c2c8b7",
+        "command.json": "cef3ab8e7ca85bdbd9fdd6d77816ebe0d3ce26b1fb4ac618f505f641617a7716",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 5,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 3
+      },
+      "commits": 2501000,
+      "retries": 7008522,
+      "ratio": 2.8022878848460615,
+      "printed_ratio": "2.80",
+      "files_sha256": {
+        "stderr.log": "6f1a10f7fb25b629b82688063460d75d25f8e304755076ba10fd1010b27245f9",
+        "stdout.log": "f3ad8f177cfeaf016c12195fa5133ca01ba5604f3a5ef8f60ef4471118705e0c",
+        "command.json": "cab816f9a6ed7cf541defd1d79c6cdd87a44eeeef8624f6e0613597e1c865d92",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 6,
+      "condition": {
+        "variant": "tvar",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 194420,
+      "retries": 1345410,
+      "ratio": 6.920121386688613,
+      "printed_ratio": "6.92",
+      "files_sha256": {
+        "stderr.log": "00746732c89f4586a2c632ac419d379479ed18334fbd22298486b79cc9e01591",
+        "stdout.log": "cf677f044620ab6db004772cbff44d222d6c1dc34d9db39f16814be079bea191",
+        "command.json": "17d4d0e549a3c0fd9ecad1d0ce0f22b66274303641219dc10f2c5e07395d5e57",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 7,
+      "condition": {
+        "variant": "tvar",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 192059,
+      "retries": 198676,
+      "ratio": 1.034452954560838,
+      "printed_ratio": "1.03",
+      "files_sha256": {
+        "stderr.log": "71b148a2da77df4210febe8672154b6a8ddd2f09577bc8a5ba9a1dbb086a4938",
+        "stdout.log": "3d05f9712e4332e9f75e21f76a99d51046effcfea2ea21950d7290f71c280dc7",
+        "command.json": "88a094c75e255a3bd212800007d4e101de87d48e0f22b664c92e25647fbe002d",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 8,
+      "condition": {
+        "variant": "tarray",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 191069,
+      "retries": 231,
+      "ratio": 0.0012089873291847447,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "6e913c7a65eea9ab5fd7a16a2d3d666fecf12e185c5177653676eb7a2712620f",
+        "stdout.log": "e334ac204dd2f5bf0cdc2d8b3d2d68dc3ab87e21b2c11e7e30f529d415b5ddea",
+        "command.json": "6928afd44dd15da2056c0b874ed274ce8a505894bd84443de6faa9d348f188e4",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 9,
+      "condition": {
+        "variant": "tvar",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 191098,
+      "retries": 1110124,
+      "ratio": 5.8091869093344775,
+      "printed_ratio": "5.81",
+      "files_sha256": {
+        "stderr.log": "4a0a17b1cb6b1523e3e9b8797441ae560adea2ce7662aaea9e4954437b75bbde",
+        "stdout.log": "3213d6190053ce9c7ae0a7d8e5ae290c45e70d51246e264d347c01934d80eaf9",
+        "command.json": "900e029dc60aaece1bf65903d85279a7402ee68aa40e21bce51125990428e0c2",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 10,
+      "condition": {
+        "variant": "tvar",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 193845,
+      "retries": 1592311,
+      "ratio": 8.214351672728212,
+      "printed_ratio": "8.21",
+      "files_sha256": {
+        "stderr.log": "cf9926b82717395bdabbb33104fe7178cf636c99a45ecd7b394f42220f0bb525",
+        "stdout.log": "cc84277752e23e197d112e95085ac522a577b1dc0c7e9acc533bfad3b5bc2b0e",
+        "command.json": "d7a11a01ca1fcb6ebf408116d495601cf2ed30fd7e3e5b7e1b1bfaea28958624",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 11,
+      "condition": {
+        "variant": "tarray",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 190284,
+      "retries": 3702,
+      "ratio": 0.019455130226398436,
+      "printed_ratio": "0.02",
+      "files_sha256": {
+        "stderr.log": "31784378804687eb4b329e15266614807b7c681f88126fbcc06d47e93ac5f727",
+        "stdout.log": "59a4a90ee15efb1dad9081104508ec73f8eb0531d2285a7039548b52c2aa26c5",
+        "command.json": "3856f8a2685d41956b488fd65a2b2620027fc6e0dfd47705656b94ba7714b171",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 12,
+      "condition": {
+        "variant": "tvar",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 194507,
+      "retries": 1597967,
+      "ratio": 8.215472964983265,
+      "printed_ratio": "8.22",
+      "files_sha256": {
+        "stderr.log": "a9ee015d067712feb2bcc3ffaf43aace0e4fe835f2877e945e4769de26076631",
+        "stdout.log": "cc84277752e23e197d112e95085ac522a577b1dc0c7e9acc533bfad3b5bc2b0e",
+        "command.json": "013e8854ee5887777ff024c64d2242d0db67310ea29df407d398a0e073bde9cb",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 13,
+      "condition": {
+        "variant": "tvar",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 191519,
+      "retries": 1322738,
+      "ratio": 6.9065627953362325,
+      "printed_ratio": "6.91",
+      "files_sha256": {
+        "stderr.log": "80e3512e0728f737c8ee75d2ad601892393f28961c09177d13a7e561e1f11230",
+        "stdout.log": "cf677f044620ab6db004772cbff44d222d6c1dc34d9db39f16814be079bea191",
+        "command.json": "6507fb9a5649aa58e9082e903df1e3325536afa8497c28de76fa86d46a9e1586",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 14,
+      "condition": {
+        "variant": "tvar",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 190840,
+      "retries": 197604,
+      "ratio": 1.0354433032907147,
+      "printed_ratio": "1.04",
+      "files_sha256": {
+        "stderr.log": "8c24176963f1ec6dd83349a4396910e32acbca788db6fcc7a31db372eee2d337",
+        "stdout.log": "3d05f9712e4332e9f75e21f76a99d51046effcfea2ea21950d7290f71c280dc7",
+        "command.json": "af3d76b50389d1b9dfff3c5526ddf5dfdf21cf14b8a0e2fc9562f1c9a381169f",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 15,
+      "condition": {
+        "variant": "tvar",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 192989,
+      "retries": 1576186,
+      "ratio": 8.167232329303742,
+      "printed_ratio": "8.17",
+      "files_sha256": {
+        "stderr.log": "505229bc4c0b8a6062c093fcac03b209fdfb3cbb5b95ec59cb2e298baff82ca8",
+        "stdout.log": "cc84277752e23e197d112e95085ac522a577b1dc0c7e9acc533bfad3b5bc2b0e",
+        "command.json": "87430b7c6c86098da5b195a31c98e0699f8ba3f5bb0eb6a9bf271272de68f7bf",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 16,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 2
+      },
+      "commits": 2501000,
+      "retries": 30966,
+      "ratio": 0.012381447421031587,
+      "printed_ratio": "0.01",
+      "files_sha256": {
+        "stderr.log": "d709f450de2cfb25af491621552346e7f26d2c0dbf99737e748e9cd527ad6c99",
+        "stdout.log": "893b3843e0c81d5b21c9bc9c83844904c43392bd2a22e54134993823e87707e9",
+        "command.json": "8a15d46cd2e66922861cd11d4d0e39c03390c4c174e52d24bf6cbfd01f52e356",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 17,
+      "condition": {
+        "variant": "tarray",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 187699,
+      "retries": 3700,
+      "ratio": 0.019712411893510355,
+      "printed_ratio": "0.02",
+      "files_sha256": {
+        "stderr.log": "2ac92df17ca7ab58eee6da6b714d62bdac408e8d2b5168aff5290116e82e2a88",
+        "stdout.log": "59a4a90ee15efb1dad9081104508ec73f8eb0531d2285a7039548b52c2aa26c5",
+        "command.json": "7d9753972c67cdc965527e87210f36b7116d3ae0b2d97853d4dbdbb06feb998d",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 18,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 191280,
+      "retries": 10721,
+      "ratio": 0.05604872438310331,
+      "printed_ratio": "0.06",
+      "files_sha256": {
+        "stderr.log": "67184cd0b75319887c0da08566ae269ee8dd423cdc36c650407a17e1b9728a44",
+        "stdout.log": "48dd56de45ede8be74c9d5a0be4713613176b6873eddfada4fcb471f9bc677ea",
+        "command.json": "cf1a52b337614eccf9e70cf3ee7fd1cd9c3cbae7567f1493f2d837fe88ee2e2b",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 19,
+      "condition": {
+        "variant": "tvar",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 193002,
+      "retries": 480,
+      "ratio": 0.0024870208598874624,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "34594c5669d143da9779b8549b5d773b6cc75b474718a2ff79b40128ea55b52d",
+        "stdout.log": "8646e5b9ebd81243efa3d37220612aa9e7f8b253cd08152dc2b7171845dda7b4",
+        "command.json": "3b73674acf96c964bcde5d69d804ef5f78c8f9e7d70fbab2d6b271bdfb08dc10",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 20,
+      "condition": {
+        "variant": "tvar",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 194188,
+      "retries": 423288,
+      "ratio": 2.179784538694461,
+      "printed_ratio": "2.18",
+      "files_sha256": {
+        "stderr.log": "d65a072767a5c0347f055c59f697d78e90b2bb733f9c5fb88624f6aba2e5bbc3",
+        "stdout.log": "e923b855f75b67cdd7d08ffc9890c272cfe7f49cab7160a8771106bf93bf2104",
+        "command.json": "d92063f2021bb8874c528d724d137d2eebbd27f39e6da2b2043385332b5a1068",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 21,
+      "condition": {
+        "variant": "tarray",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 188543,
+      "retries": 3813,
+      "ratio": 0.02022350339179922,
+      "printed_ratio": "0.02",
+      "files_sha256": {
+        "stderr.log": "8ed38a92311b48b6a4e3d4bea3f2e549fd4fe77d8b00a8937f4b9836fc2646a4",
+        "stdout.log": "59a4a90ee15efb1dad9081104508ec73f8eb0531d2285a7039548b52c2aa26c5",
+        "command.json": "d5867d91a338b133fd2187aa40890721ab13a385b51e78428f5a0b09fc24c89d",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 22,
+      "condition": {
+        "variant": "tvar",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 192598,
+      "retries": 419121,
+      "ratio": 2.1761440928773923,
+      "printed_ratio": "2.18",
+      "files_sha256": {
+        "stderr.log": "ff380eea47aef153217a901c249c2007a51bd2d58de9e0f867530ff34b8c1baa",
+        "stdout.log": "e923b855f75b67cdd7d08ffc9890c272cfe7f49cab7160a8771106bf93bf2104",
+        "command.json": "50e7cfd871135fcb1fefe7b5db0477d061644fee1d2a83d16ee82f679a52ea06",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 23,
+      "condition": {
+        "variant": "tarray",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 189645,
+      "retries": 20397,
+      "ratio": 0.10755358696511903,
+      "printed_ratio": "0.11",
+      "files_sha256": {
+        "stderr.log": "141b18e09b8a43a6abbff3b50529d1cd691ad4522e52a08a3ff30f67ccf4881e",
+        "stdout.log": "ff2d2249be2dc89eaf9327ccf828c1e68114bb1a8979de8850dcdc0b3f0591c1",
+        "command.json": "672ad88ebc41b9c02e7fdcf1dcc99fe2e4d4b2736b3c3c59ec7b493eb69f1dc5",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 24,
+      "condition": {
+        "variant": "tarray",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 188271,
+      "retries": 20309,
+      "ratio": 0.10787110070058585,
+      "printed_ratio": "0.11",
+      "files_sha256": {
+        "stderr.log": "dd65f8379ecab660ce869effaccd1c5a598a9e631125e7189e7f6f65ff3d6fc6",
+        "stdout.log": "ff2d2249be2dc89eaf9327ccf828c1e68114bb1a8979de8850dcdc0b3f0591c1",
+        "command.json": "b21653f1128fccbb1b64c532696a0fe55ac24ce14ba5bc9004513e6b941ce5e5",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 25,
+      "condition": {
+        "variant": "tarray",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 187193,
+      "retries": 3790,
+      "ratio": 0.020246483575774736,
+      "printed_ratio": "0.02",
+      "files_sha256": {
+        "stderr.log": "a8a430047471daf00ecba5ba773db15ef9979e2bfaf76753176370b7fc5c02ab",
+        "stdout.log": "59a4a90ee15efb1dad9081104508ec73f8eb0531d2285a7039548b52c2aa26c5",
+        "command.json": "50ddfe84747bfe993161098d0a84d8afdb65c6aae271104318b7d0c38a48baa7",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 26,
+      "condition": {
+        "variant": "tvar",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 189231,
+      "retries": 1099001,
+      "ratio": 5.807721779201082,
+      "printed_ratio": "5.81",
+      "files_sha256": {
+        "stderr.log": "43a43a3eb52ff4008f557190763cff0a5805ea8c35553061e57eb6689f6c4a2c",
+        "stdout.log": "3213d6190053ce9c7ae0a7d8e5ae290c45e70d51246e264d347c01934d80eaf9",
+        "command.json": "34ac9848f80af36a61aa98bf1877cb49688cea7d1d420577eba4f622257bb368",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 27,
+      "condition": {
+        "variant": "tvar",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 192763,
+      "retries": 1577193,
+      "ratio": 8.182031821459512,
+      "printed_ratio": "8.18",
+      "files_sha256": {
+        "stderr.log": "d00cb721ae0ed1eebaf43197135ceb89b8a5b5499396f0ea6f808ad026555f57",
+        "stdout.log": "cc84277752e23e197d112e95085ac522a577b1dc0c7e9acc533bfad3b5bc2b0e",
+        "command.json": "03f76b9e725dddd56fd788b4a1656151580f9faf82254f9c1cb6abd613c7f08b",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 28,
+      "condition": {
+        "variant": "tvar",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 193995,
+      "retries": 200826,
+      "ratio": 1.0352122477383439,
+      "printed_ratio": "1.04",
+      "files_sha256": {
+        "stderr.log": "56b546563774c6d5c220e11eca5aa6bcac507281389100e347d5f038d07bd6ca",
+        "stdout.log": "3d05f9712e4332e9f75e21f76a99d51046effcfea2ea21950d7290f71c280dc7",
+        "command.json": "321c541185953005c4018dc350a20d1ff56482750beb1c121f560e0f161a3aaf",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 29,
+      "condition": {
+        "variant": "tvar",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 192068,
+      "retries": 470,
+      "ratio": 0.0024470500031238936,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "bc802ffc94b35566dbd1a7cc10f0dbe6cc529489a180d09ae5658c18ffc8c5ee",
+        "stdout.log": "8646e5b9ebd81243efa3d37220612aa9e7f8b253cd08152dc2b7171845dda7b4",
+        "command.json": "98711729eeccb209e02175fe6ee5b69c1189583f9b45d6fdde11029407ce2a91",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 30,
+      "condition": {
+        "variant": "tvar",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 191572,
+      "retries": 416416,
+      "ratio": 2.173678825715658,
+      "printed_ratio": "2.17",
+      "files_sha256": {
+        "stderr.log": "060178de2a34d0cbb94dd15abd16daf31a20fb8fc1bc45b326b4c1bfea27fb3e",
+        "stdout.log": "e923b855f75b67cdd7d08ffc9890c272cfe7f49cab7160a8771106bf93bf2104",
+        "command.json": "b83bbe0f66e0d8c66b7c38dec285f7af610137637c50c24eb7fcc7ff2cf1f676",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 31,
+      "condition": {
+        "variant": "tvar",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 192008,
+      "retries": 1116594,
+      "ratio": 5.815351443689846,
+      "printed_ratio": "5.82",
+      "files_sha256": {
+        "stderr.log": "63ce6ed98da4fd38236dbf7ddf9c5e7d1b860fce7920b3146daad9145f086376",
+        "stdout.log": "3213d6190053ce9c7ae0a7d8e5ae290c45e70d51246e264d347c01934d80eaf9",
+        "command.json": "175217ca28c8fab016d2b157c276e33b227b3b520677b9dc55ce4364bf39e388",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 32,
+      "condition": {
+        "variant": "tarray",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 190231,
+      "retries": 257,
+      "ratio": 0.0013509890606683453,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "a09ee01890053b1266ff5c97ec2ec8a87b6e4c132c4c8a5c2a3d5b620862ee45",
+        "stdout.log": "e334ac204dd2f5bf0cdc2d8b3d2d68dc3ab87e21b2c11e7e30f529d415b5ddea",
+        "command.json": "049f5f88956d8d3fedcec98fe42512baaf90580b1e644ff927ece8621835f7d6",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 33,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 192096,
+      "retries": 10963,
+      "ratio": 0.05707042312177245,
+      "printed_ratio": "0.06",
+      "files_sha256": {
+        "stderr.log": "39506409584392a592d7e15a5c2ddef1c80b3c14b213759b6bac13cd9d92702f",
+        "stdout.log": "48dd56de45ede8be74c9d5a0be4713613176b6873eddfada4fcb471f9bc677ea",
+        "command.json": "290ee94671de4c3d1264a57580bdab4d8f61a9aa4b2814467a710292c0c224fa",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 34,
+      "condition": {
+        "variant": "tvar",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 193146,
+      "retries": 200168,
+      "ratio": 1.0363559172853696,
+      "printed_ratio": "1.04",
+      "files_sha256": {
+        "stderr.log": "2fb30ca9a0905de43549d40c3560ed7cf48fcff90583132bc79cddfe38b283c0",
+        "stdout.log": "3d05f9712e4332e9f75e21f76a99d51046effcfea2ea21950d7290f71c280dc7",
+        "command.json": "f6db1169445ca5a5261768d056ce451c3b3645d8a1ccd03d2b5eb1bd4a0ec546",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 35,
+      "condition": {
+        "variant": "tvar",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 190634,
+      "retries": 487,
+      "ratio": 0.002554633486156719,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "2b3eba1800d3be8abd1c57aadd4d539656a1a9fd2dd464cbd505fa944dce4828",
+        "stdout.log": "8646e5b9ebd81243efa3d37220612aa9e7f8b253cd08152dc2b7171845dda7b4",
+        "command.json": "097ea26eb961c06f502e5ec075233daa676a62319a8a64de62e95ad6284cbd5e",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 36,
+      "condition": {
+        "variant": "tarray",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 190456,
+      "retries": 7600,
+      "ratio": 0.03990422984836393,
+      "printed_ratio": "0.04",
+      "files_sha256": {
+        "stderr.log": "5b1eba6a8f5792c149564a0c42e9361f4843ddde56279217470df1b57c9f2c6a",
+        "stdout.log": "852d727b44a59273ddb8f8c599a71d53e1076eace8f19ed791143bd34ac6610b",
+        "command.json": "8ee35abd321a220bc60f6150f5d062e0892be6aa13c5ae9985d1881d95dceb4a",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 37,
+      "condition": {
+        "variant": "tarray",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 193888,
+      "retries": 243,
+      "ratio": 0.0012533008747318039,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "47df808a6a1536d0dc709423ef88c88fd968dad5cf9459c048bafa1aebc239fa",
+        "stdout.log": "e334ac204dd2f5bf0cdc2d8b3d2d68dc3ab87e21b2c11e7e30f529d415b5ddea",
+        "command.json": "8b6050679b8041305c14f038d144cd232ef4fc7cbfdfa3e18ef0b9c196a0e228",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 38,
+      "condition": {
+        "variant": "tvar",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 193467,
+      "retries": 1126887,
+      "ratio": 5.824698785839446,
+      "printed_ratio": "5.82",
+      "files_sha256": {
+        "stderr.log": "ea859c3b4935919508f37f053d372f9e1e056ef0fae3686c10bef946be1071f9",
+        "stdout.log": "3213d6190053ce9c7ae0a7d8e5ae290c45e70d51246e264d347c01934d80eaf9",
+        "command.json": "e43f3ed0f45cfb32d55eb3407373ffe0fcb8feef6a053fb50793846a1995dd89",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 39,
+      "condition": {
+        "variant": "tarray",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 193151,
+      "retries": 23756,
+      "ratio": 0.12299185611257514,
+      "printed_ratio": "0.12",
+      "files_sha256": {
+        "stderr.log": "a726ebd90a429bfb3d4439860bc999ec4c3dd5e7a8781218f381aa35b23eb99c",
+        "stdout.log": "41d58eece5ad8f458b80ed5beaffb58270c9db407fac7592d2ce0ce8e03ceb33",
+        "command.json": "098559284a821070c766c6dfab7b0d389d78564c8edfd0edb2cbb5837ca3c8ba",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 40,
+      "condition": {
+        "variant": "tvar",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 191780,
+      "retries": 1113396,
+      "ratio": 5.805589738241736,
+      "printed_ratio": "5.81",
+      "files_sha256": {
+        "stderr.log": "f2515fb6537211bac68d400144f434dd7e8d53991d776c5aa62858b2c89cc4c3",
+        "stdout.log": "3213d6190053ce9c7ae0a7d8e5ae290c45e70d51246e264d347c01934d80eaf9",
+        "command.json": "8653714de61500c3e5bc10c32235f99eeb345721c92666f1e6cb93099188b9b0",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 41,
+      "condition": {
+        "variant": "tarray",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 190655,
+      "retries": 17359,
+      "ratio": 0.09104927749075556,
+      "printed_ratio": "0.09",
+      "files_sha256": {
+        "stderr.log": "9db8e3c16238b6ca2cba8cd660f71c9434b7b7afebd656d5be6da0d2ff8b0f70",
+        "stdout.log": "863cdd27ad0691c15157cf7d9eeccb54b41a78c24bc9987801ffa7661c9dbd6f",
+        "command.json": "8328532ec83f7b837c3ce79251f7f5fa532c9f6e64a48b7a047c4a26bebec8f7",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 42,
+      "condition": {
+        "variant": "tarray",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 191816,
+      "retries": 13940,
+      "ratio": 0.0726738124035534,
+      "printed_ratio": "0.07",
+      "files_sha256": {
+        "stderr.log": "51e37ab4f558af498d9508eac143d54adef9bbdae05fbb34f1138e36ad748b9e",
+        "stdout.log": "7a3dc086b979f356030f26293ab3ff93ac84c3d0f5d71d81668557b091403d64",
+        "command.json": "1e7fd4bbeda9a7cb12cc5f666c75e35812735ae0ff567d604b4600d1d08e4ee9",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 43,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 189825,
+      "retries": 634151,
+      "ratio": 3.3407138153562492,
+      "printed_ratio": "3.34",
+      "files_sha256": {
+        "stderr.log": "18dc71331c1d558d24027bc0082dba3915b157b51e088f67fc6052a1076d905a",
+        "stdout.log": "4b382cd0a484c2bbc812ae968bc17719b133a0b4974c669dd670802730c2c8b7",
+        "command.json": "ed6572f53b0ff7108b761bb7cf69cb26f4586514a84803dfc779d20f0d860d7b",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 44,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 0
+      },
+      "commits": 2501000,
+      "retries": 31489,
+      "ratio": 0.012590563774490204,
+      "printed_ratio": "0.01",
+      "files_sha256": {
+        "stderr.log": "70f0f296741ec614ab4a840d6e6eca98020e3682cecc0668184ccf11da082544",
+        "stdout.log": "893b3843e0c81d5b21c9bc9c83844904c43392bd2a22e54134993823e87707e9",
+        "command.json": "33c8264d1adb3ada81870facc799be4447a2a2aa4e32f2b08a7fe55ff30ffda6",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 45,
+      "condition": {
+        "variant": "tvar",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 194699,
+      "retries": 423296,
+      "ratio": 2.174104643578036,
+      "printed_ratio": "2.17",
+      "files_sha256": {
+        "stderr.log": "a4fdb1c46fef318ff67dab0fe7ee5ef5724832a53444cce50aaba6f00e509a2c",
+        "stdout.log": "e923b855f75b67cdd7d08ffc9890c272cfe7f49cab7160a8771106bf93bf2104",
+        "command.json": "62cf3302b1d11a686b712c15827da2e6c618ac85ea07d7a4a715b967bd64a679",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 46,
+      "condition": {
+        "variant": "tarray",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 187332,
+      "retries": 7365,
+      "ratio": 0.039315226442892835,
+      "printed_ratio": "0.04",
+      "files_sha256": {
+        "stderr.log": "3251c61874b518a160b3034bedec48f216ace607016ca83b3eb64a10220d36b1",
+        "stdout.log": "852d727b44a59273ddb8f8c599a71d53e1076eace8f19ed791143bd34ac6610b",
+        "command.json": "a3dc87cf0336c88fbbfc396135641497e519f5cbd3f546b7dddd675ebaefcf27",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 47,
+      "condition": {
+        "variant": "tvar",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 189716,
+      "retries": 1309476,
+      "ratio": 6.9022960635897865,
+      "printed_ratio": "6.90",
+      "files_sha256": {
+        "stderr.log": "0e638bb62931fabbf9dfc63e1288945d038f37beee369db1c72f83b5d17eca03",
+        "stdout.log": "cf677f044620ab6db004772cbff44d222d6c1dc34d9db39f16814be079bea191",
+        "command.json": "519803f617c8630596b1aff122f553ca7823b50f3be7699ff534a7896ecc6cb2",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 48,
+      "condition": {
+        "variant": "tvar",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 191248,
+      "retries": 867072,
+      "ratio": 4.533757215761733,
+      "printed_ratio": "4.53",
+      "files_sha256": {
+        "stderr.log": "b4f6608ae9ba799a0c11b0017947d31eee95ee3b2a71cc102da21a58eb664f88",
+        "stdout.log": "6c7158e7c7d62ead5b145bf6adddf14dab18a95891d93ea330d193df1c53f1e8",
+        "command.json": "d1b5a75a5199698c644941f694d16c5ac8074f55b46113e4fc0875d4398b9813",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 49,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 0
+      },
+      "commits": 2501000,
+      "retries": 6998805,
+      "ratio": 2.798402638944422,
+      "printed_ratio": "2.80",
+      "files_sha256": {
+        "stderr.log": "0396259d5cb4028af0442d8386e08a4b33e96ecfbc4ffa361ba0bf353a9a3675",
+        "stdout.log": "f3ad8f177cfeaf016c12195fa5133ca01ba5604f3a5ef8f60ef4471118705e0c",
+        "command.json": "8262bc4d12c13aa62d9435177b2ef47e64133c8d9ef2c37ec421d20deb2438f9",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 50,
+      "condition": {
+        "variant": "tvar",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 192837,
+      "retries": 872944,
+      "ratio": 4.526849100535686,
+      "printed_ratio": "4.53",
+      "files_sha256": {
+        "stderr.log": "2e37c60786bbf1934bc89a28b16be8f31db9fc5c54b0d41b377286eb172f0258",
+        "stdout.log": "6c7158e7c7d62ead5b145bf6adddf14dab18a95891d93ea330d193df1c53f1e8",
+        "command.json": "f333486567df01b00ed994f92669ceee68163605aaf2a7a1e4b0325f7da6805b",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 51,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 189968,
+      "retries": 10744,
+      "ratio": 0.05655689379263876,
+      "printed_ratio": "0.06",
+      "files_sha256": {
+        "stderr.log": "18f59c1e297f78b8cd39af71b9cb3cc4afdcf5608f018eb55f553521770a7517",
+        "stdout.log": "48dd56de45ede8be74c9d5a0be4713613176b6873eddfada4fcb471f9bc677ea",
+        "command.json": "0956f927fe8939881b2d851587e0c3ae92b1db8a2a51c62f841ccd9e2d7a7658",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 52,
+      "condition": {
+        "variant": "tarray",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 191378,
+      "retries": 17340,
+      "ratio": 0.09060602577098727,
+      "printed_ratio": "0.09",
+      "files_sha256": {
+        "stderr.log": "851c17c27e1895f48bdf9e693dec045edd8c70465f915a8f43db4d444c209a3e",
+        "stdout.log": "863cdd27ad0691c15157cf7d9eeccb54b41a78c24bc9987801ffa7661c9dbd6f",
+        "command.json": "3d86c83bb37a3fe98aa847342b2064124c5c25c551861d421ee784f6487d0105",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 53,
+      "condition": {
+        "variant": "tarray",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 188852,
+      "retries": 20131,
+      "ratio": 0.10659670006142376,
+      "printed_ratio": "0.11",
+      "files_sha256": {
+        "stderr.log": "0281954e2ada058e304f7c52319eff8e65c5b2803aade4cd2350b170b80c17e4",
+        "stdout.log": "ff2d2249be2dc89eaf9327ccf828c1e68114bb1a8979de8850dcdc0b3f0591c1",
+        "command.json": "2d10683dd2fc4cc49c47a74263cb7cfdbc28e137ca83f7c80f3d394e8771a87b",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 54,
+      "condition": {
+        "variant": "tvar",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 190975,
+      "retries": 197558,
+      "ratio": 1.0344704804293756,
+      "printed_ratio": "1.03",
+      "files_sha256": {
+        "stderr.log": "0c43b2f37c8c58494f884ab9b8c54766c3193868c471d90e51a5ced1bb6cfbdb",
+        "stdout.log": "3d05f9712e4332e9f75e21f76a99d51046effcfea2ea21950d7290f71c280dc7",
+        "command.json": "772aeb73de3dfa38bab816f2b6f8c325d667a42fa0c21fdd24d957841a7e3d1b",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 55,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 4
+      },
+      "commits": 2501000,
+      "retries": 30762,
+      "ratio": 0.012299880047980808,
+      "printed_ratio": "0.01",
+      "files_sha256": {
+        "stderr.log": "3089c62bd9c1d8687396e5a82e9aeabbd324d408ba3f56e734703695d8432889",
+        "stdout.log": "893b3843e0c81d5b21c9bc9c83844904c43392bd2a22e54134993823e87707e9",
+        "command.json": "d6161b158b286891837a4bfa87c3ed7b1331711edb56d46b00dc8d2ddb71aab6",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 56,
+      "condition": {
+        "variant": "tarray",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 192754,
+      "retries": 13957,
+      "ratio": 0.07240835469043444,
+      "printed_ratio": "0.07",
+      "files_sha256": {
+        "stderr.log": "0215130ebfc08ca4cf9a98a502bbdeae6bccea0909dd0b0f6584aa95fd7d5d67",
+        "stdout.log": "7a3dc086b979f356030f26293ab3ff93ac84c3d0f5d71d81668557b091403d64",
+        "command.json": "db0aefbfea92bd92bf9e8bf13ce78ef87860e751d21e4782902c59daed9f250f",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 57,
+      "condition": {
+        "variant": "tarray",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 187555,
+      "retries": 7357,
+      "ratio": 0.039225827090720054,
+      "printed_ratio": "0.04",
+      "files_sha256": {
+        "stderr.log": "eeab2684609b9a06908efadf66299e4b14deb5b0451a53bf74d1c878162319dc",
+        "stdout.log": "852d727b44a59273ddb8f8c599a71d53e1076eace8f19ed791143bd34ac6610b",
+        "command.json": "23cf3950253a5f398310e3b5bf003c1141711093c1481f706969fcea4d303367",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 58,
+      "condition": {
+        "variant": "tarray",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 192762,
+      "retries": 23497,
+      "ratio": 0.12189643186935184,
+      "printed_ratio": "0.12",
+      "files_sha256": {
+        "stderr.log": "d210c3cb32d706491afa806cf3c9cb0647bc92084e14e1e0124b6e1fc4066c29",
+        "stdout.log": "41d58eece5ad8f458b80ed5beaffb58270c9db407fac7592d2ce0ce8e03ceb33",
+        "command.json": "8fc4d7280cd343203f73a1c58217e867e37e4dd928602703a5c580a825022fa2",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 59,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 1
+      },
+      "commits": 2501000,
+      "retries": 7014096,
+      "ratio": 2.804516593362655,
+      "printed_ratio": "2.80",
+      "files_sha256": {
+        "stderr.log": "5e4c905db5416149ff8242dd072be11fba81288f946e08c43c8c366837b1193c",
+        "stdout.log": "f3ad8f177cfeaf016c12195fa5133ca01ba5604f3a5ef8f60ef4471118705e0c",
+        "command.json": "bb4c551ad7af61913577c81e66bdfe8ccb7f3ac138155027514136ff62b98f41",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 60,
+      "condition": {
+        "variant": "tvar",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 191217,
+      "retries": 493,
+      "ratio": 0.0025782226475679466,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "31c416741c1c8b5ed365d5fc1e989a1730ed6f703105e78203b147bd418ba82f",
+        "stdout.log": "8646e5b9ebd81243efa3d37220612aa9e7f8b253cd08152dc2b7171845dda7b4",
+        "command.json": "e401a1382f768eab0d7f8774db822b76f357e1cb9be8c274ff375434f6f182a0",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 61,
+      "condition": {
+        "variant": "tarray",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 4
+      },
+      "commits": 192849,
+      "retries": 7471,
+      "ratio": 0.03874015421391866,
+      "printed_ratio": "0.04",
+      "files_sha256": {
+        "stderr.log": "f13974b43468615df4b2e833033fcd844c9504d88b45ac113dd40c5acf62f82d",
+        "stdout.log": "852d727b44a59273ddb8f8c599a71d53e1076eace8f19ed791143bd34ac6610b",
+        "command.json": "db04e73999b65ce55dbfd9a83d91e5171112d0418d43e36934d0cfd8bf8fd7a4",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 62,
+      "condition": {
+        "variant": "tarray",
+        "caps": 2,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 187720,
+      "retries": 3855,
+      "ratio": 0.020535904538674623,
+      "printed_ratio": "0.02",
+      "files_sha256": {
+        "stderr.log": "1f15512b0fd25e39e0daf748ae9a7d857cd40c08cb35025ac0e7478e9f04f3f0",
+        "stdout.log": "59a4a90ee15efb1dad9081104508ec73f8eb0531d2285a7039548b52c2aa26c5",
+        "command.json": "760df83831c8ed8144e253a7bf7ad71501307c0d206db3318fb56228d25edc96",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 63,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 190951,
+      "retries": 637754,
+      "ratio": 3.33988300663521,
+      "printed_ratio": "3.34",
+      "files_sha256": {
+        "stderr.log": "2fb46afe84d20ecb9b10649a51a491bd55066cf92d801b170fe2c3929d2981a5",
+        "stdout.log": "4b382cd0a484c2bbc812ae968bc17719b133a0b4974c669dd670802730c2c8b7",
+        "command.json": "10eab5338677c2c10c291b72ea0df95cc9f77e5e611414ccb05912845d4efd95",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 64,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 191827,
+      "retries": 10787,
+      "ratio": 0.056232959906582496,
+      "printed_ratio": "0.06",
+      "files_sha256": {
+        "stderr.log": "4d2fc90601e0f7bfa36ea38c8bd64ebff59606bf53fea7d47fb3148070adb86a",
+        "stdout.log": "48dd56de45ede8be74c9d5a0be4713613176b6873eddfada4fcb471f9bc677ea",
+        "command.json": "746f595a90fdd4a73af2cca025fbee11ba5164c1fcef6ef4cfaed99d73808f85",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 65,
+      "condition": {
+        "variant": "tarray",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 192887,
+      "retries": 239,
+      "ratio": 0.0012390674332640355,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "bceb7d085b7e8467baec5f5caf7bdc2998027fd3f921353b01b7f87e533b134a",
+        "stdout.log": "e334ac204dd2f5bf0cdc2d8b3d2d68dc3ab87e21b2c11e7e30f529d415b5ddea",
+        "command.json": "ee1b9d2fcc4ca6799716e8505bdd00edd6adaf9a27d8ea1e959164db4a50e511",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 66,
+      "condition": {
+        "variant": "tvar",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 189854,
+      "retries": 1311849,
+      "ratio": 6.909778039967554,
+      "printed_ratio": "6.91",
+      "files_sha256": {
+        "stderr.log": "c038fcf478afdc58af9fc7337b2cec81097d9ba46eb054c618b58967c1f24027",
+        "stdout.log": "cf677f044620ab6db004772cbff44d222d6c1dc34d9db39f16814be079bea191",
+        "command.json": "73759a983e47d32591e0155b1ab932c8fd33913f1efd4ee1032f2fbc05bc8feb",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 67,
+      "condition": {
+        "variant": "tvar",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 193506,
+      "retries": 876317,
+      "ratio": 4.528629603216438,
+      "printed_ratio": "4.53",
+      "files_sha256": {
+        "stderr.log": "ef0b0808a217f4ce9a1dc39ecb5ce5162c54caf9d9a00214fbab145e1a7a3abc",
+        "stdout.log": "6c7158e7c7d62ead5b145bf6adddf14dab18a95891d93ea330d193df1c53f1e8",
+        "command.json": "5cae6afe9b0030e1cc37e8a962161162f47f7f558b016bad97c8db566005df56",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 68,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 1
+      },
+      "commits": 2501000,
+      "retries": 30903,
+      "ratio": 0.0123562574970012,
+      "printed_ratio": "0.01",
+      "files_sha256": {
+        "stderr.log": "d4ce03f2767af91bf88bf3007e5d489bc828678b07676dfc97ed63f0712c9cd0",
+        "stdout.log": "893b3843e0c81d5b21c9bc9c83844904c43392bd2a22e54134993823e87707e9",
+        "command.json": "8fdf013a445a179584b20ce3791963edd5afe69f87f7098f01051fe85bf47353",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 69,
+      "condition": {
+        "variant": "tarray",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 191992,
+      "retries": 22929,
+      "ratio": 0.11942685111879661,
+      "printed_ratio": "0.12",
+      "files_sha256": {
+        "stderr.log": "e81a1501bb1c5da7a10a9cad6211e4eff6dc4cbd7a71ac0969a68fc4d77423c9",
+        "stdout.log": "41d58eece5ad8f458b80ed5beaffb58270c9db407fac7592d2ce0ce8e03ceb33",
+        "command.json": "a10dc1364f756d4678d7e0f0bf5d2e3340b057cc4425164b1269859bf9e2e91c",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 70,
+      "condition": {
+        "variant": "tvar",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 191091,
+      "retries": 416144,
+      "ratio": 2.177726842185137,
+      "printed_ratio": "2.18",
+      "files_sha256": {
+        "stderr.log": "eee4f68d3359e987151f7e61ed86b49e2204178268ee9dc2372727b83aa396d0",
+        "stdout.log": "e923b855f75b67cdd7d08ffc9890c272cfe7f49cab7160a8771106bf93bf2104",
+        "command.json": "ac2f9cc40b8b8f6edd2f5470f7416788b402932e8a3044a0fc85ffe63ab6737e",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 71,
+      "condition": {
+        "variant": "tarray",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 192313,
+      "retries": 22909,
+      "ratio": 0.11912351219106353,
+      "printed_ratio": "0.12",
+      "files_sha256": {
+        "stderr.log": "a3f01c1620bc705e102088a89ca9706f9d1391b468539193041d8ff797c1b6cf",
+        "stdout.log": "41d58eece5ad8f458b80ed5beaffb58270c9db407fac7592d2ce0ce8e03ceb33",
+        "command.json": "ecf78bc03eea3aaadeaf9c72168ad621526223afbe5af52eb50a6db88c647dd3",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 72,
+      "condition": {
+        "variant": "tarray",
+        "caps": 3,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 189434,
+      "retries": 7628,
+      "ratio": 0.04026732265591182,
+      "printed_ratio": "0.04",
+      "files_sha256": {
+        "stderr.log": "320afd0062b9a6fa074e3fe709c8cbb3fee3c1e1d4fc43c1402cb0bf8c33b0a8",
+        "stdout.log": "852d727b44a59273ddb8f8c599a71d53e1076eace8f19ed791143bd34ac6610b",
+        "command.json": "151c9ad532dd91aa8e865c9a600080b738ad56153236cf6b9ccefab8f623988d",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 73,
+      "condition": {
+        "variant": "tarray",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 191893,
+      "retries": 17354,
+      "ratio": 0.0904358157931764,
+      "printed_ratio": "0.09",
+      "files_sha256": {
+        "stderr.log": "ae72e8c48b2e62e0d6ade2db694461d2cf6c92dec96332cff45e033f3c7b47f2",
+        "stdout.log": "863cdd27ad0691c15157cf7d9eeccb54b41a78c24bc9987801ffa7661c9dbd6f",
+        "command.json": "eb6e5205c016bb8233b32e40d81a98cba6630bbec3ce7bb3f3b431a661d035b1",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 74,
+      "condition": {
+        "variant": "tarray",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 188758,
+      "retries": 13968,
+      "ratio": 0.07399951260343933,
+      "printed_ratio": "0.07",
+      "files_sha256": {
+        "stderr.log": "82af87a69338f2beb87471b6f4378a9a650e41194e1792d9e73b020c52f1ac64",
+        "stdout.log": "7a3dc086b979f356030f26293ab3ff93ac84c3d0f5d71d81668557b091403d64",
+        "command.json": "99608495ba43bf6f7928ccd43fcf0d53dd8ef7c3ca8bee0571587a8f810805d5",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 75,
+      "condition": {
+        "variant": "tvar",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 191206,
+      "retries": 866327,
+      "ratio": 4.530856772277021,
+      "printed_ratio": "4.53",
+      "files_sha256": {
+        "stderr.log": "c360bfd29cefb124840e6b41cad9e1023fff76cb56c4ce7bcdc8bf5e78392519",
+        "stdout.log": "6c7158e7c7d62ead5b145bf6adddf14dab18a95891d93ea330d193df1c53f1e8",
+        "command.json": "b4197c7193791656a26bbcbb4ee47c95a2e3c8eb219e03313490ee43ec148070",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 76,
+      "condition": {
+        "variant": "tarray",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 190801,
+      "retries": 23376,
+      "ratio": 0.12251508115785556,
+      "printed_ratio": "0.12",
+      "files_sha256": {
+        "stderr.log": "e721dabb1714a417cf047f11131433cea303d00cf4b3c5b1a5cd7eef87e1454e",
+        "stdout.log": "41d58eece5ad8f458b80ed5beaffb58270c9db407fac7592d2ce0ce8e03ceb33",
+        "command.json": "0aeea0a377d91f40b4dd37013290de87e526a8f401c7efa501a19e4378a40a42",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 77,
+      "condition": {
+        "variant": "tarray",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 191105,
+      "retries": 264,
+      "ratio": 0.0013814395227754377,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "869da08ef1ad5037487adf77db66b99c2615463878b5af092dd41b632f303dce",
+        "stdout.log": "e334ac204dd2f5bf0cdc2d8b3d2d68dc3ab87e21b2c11e7e30f529d415b5ddea",
+        "command.json": "3507f1a76213be4d529057d0fe1546605ea67cd4d7e306bec46a8d9774fd4ee3",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 78,
+      "condition": {
+        "variant": "tarray",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 190046,
+      "retries": 20092,
+      "ratio": 0.1057217726234701,
+      "printed_ratio": "0.11",
+      "files_sha256": {
+        "stderr.log": "9ecb2ebe825fc933d53ea35cc7516be61d2a732c412d43859d855bfa3c0e4630",
+        "stdout.log": "ff2d2249be2dc89eaf9327ccf828c1e68114bb1a8979de8850dcdc0b3f0591c1",
+        "command.json": "03d851a23dc95d7fd905706e415b8c1a3d601fc85bd034f7ac608438c778858f",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 79,
+      "condition": {
+        "variant": "tarray",
+        "caps": 7,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 192174,
+      "retries": 20129,
+      "ratio": 0.10474361776306888,
+      "printed_ratio": "0.10",
+      "files_sha256": {
+        "stderr.log": "c7b40cb359aa8658a09f0f11327a3e8a4d163ff6665577d3dfbae840da1d439f",
+        "stdout.log": "ff2d2249be2dc89eaf9327ccf828c1e68114bb1a8979de8850dcdc0b3f0591c1",
+        "command.json": "970615c37fb637318906b1d52dcfdffa5f7c551c30edc8fa57ac3848f197d699",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 80,
+      "condition": {
+        "variant": "tarray",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 193343,
+      "retries": 17239,
+      "ratio": 0.08916278324014834,
+      "printed_ratio": "0.09",
+      "files_sha256": {
+        "stderr.log": "1dc21bfdb80eef8b54cece4346bca638ed6007d49e9a6d1cb8308133ff4804a7",
+        "stdout.log": "863cdd27ad0691c15157cf7d9eeccb54b41a78c24bc9987801ffa7661c9dbd6f",
+        "command.json": "e10836f3a1a5457a2f6006b3986e171e9cc6fa1c87fc8186d5ee5ad8d2dc0002",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 81,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 2
+      },
+      "commits": 2501000,
+      "retries": 7011578,
+      "ratio": 2.8035097960815674,
+      "printed_ratio": "2.80",
+      "files_sha256": {
+        "stderr.log": "95878a27d096284c18701fc8fbc9b77329c8fa0b7a9b0d53ba20e420a5abda14",
+        "stdout.log": "f3ad8f177cfeaf016c12195fa5133ca01ba5604f3a5ef8f60ef4471118705e0c",
+        "command.json": "dde5dea538b9d397b1c0886234c5e1f3425d09b78deea16e8c3209b0626e0e76",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 82,
+      "condition": {
+        "variant": "tarray",
+        "caps": 6,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 189586,
+      "retries": 16902,
+      "ratio": 0.08915215258510649,
+      "printed_ratio": "0.09",
+      "files_sha256": {
+        "stderr.log": "5a4b7faa187b3406d743936fb8c0ba86ef4141982f8240bc4ed25c536eb6b012",
+        "stdout.log": "863cdd27ad0691c15157cf7d9eeccb54b41a78c24bc9987801ffa7661c9dbd6f",
+        "command.json": "0f3481a54eee7fb10bb87f45ce6723eac864e7d9facee36ef2026f0e8eb57402",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 83,
+      "condition": {
+        "variant": "tarray",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 2
+      },
+      "commits": 189645,
+      "retries": 14131,
+      "ratio": 0.0745129056922144,
+      "printed_ratio": "0.07",
+      "files_sha256": {
+        "stderr.log": "c8dcb17ae8f6d85a30c848f19a0fb023520be1f171b7876795e67029e2891c38",
+        "stdout.log": "7a3dc086b979f356030f26293ab3ff93ac84c3d0f5d71d81668557b091403d64",
+        "command.json": "f14b2553499b3b87052a43562e3a208c27a40e8f4d25f2f1910d75108f49ff46",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 84,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 190411,
+      "retries": 635988,
+      "ratio": 3.340080142428746,
+      "printed_ratio": "3.34",
+      "files_sha256": {
+        "stderr.log": "051aa10fdbc843ef8845851038d8748fe4a6e6f179956d42cd539c04cd0639bf",
+        "stdout.log": "4b382cd0a484c2bbc812ae968bc17719b133a0b4974c669dd670802730c2c8b7",
+        "command.json": "2dacee366e4dcb38ac59f70eded23a3601934928aafc702dc9179374f0288279",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 85,
+      "condition": {
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 2500,
+        "rebirthing": true,
+        "repetition": 4
+      },
+      "commits": 2501000,
+      "retries": 7012607,
+      "ratio": 2.803921231507397,
+      "printed_ratio": "2.80",
+      "files_sha256": {
+        "stderr.log": "1dc43281cb9cbac4dabe05be466e4715e9b36d00ff1a4860e11c608db7ac629e",
+        "stdout.log": "f3ad8f177cfeaf016c12195fa5133ca01ba5604f3a5ef8f60ef4471118705e0c",
+        "command.json": "63bde93dff968a7ebd933e0cda195fd5f3161f5e48f93afe37fe83919abb241d",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 86,
+      "condition": {
+        "variant": "tvar",
+        "caps": 5,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 192739,
+      "retries": 873398,
+      "ratio": 4.531506337586062,
+      "printed_ratio": "4.53",
+      "files_sha256": {
+        "stderr.log": "9a2bbe403a28c9425872f1b8ad0c36a3d3cfa3a962f749f19c2c6bc477656cdd",
+        "stdout.log": "6c7158e7c7d62ead5b145bf6adddf14dab18a95891d93ea330d193df1c53f1e8",
+        "command.json": "c8514ccfc28cc8e0d950d9b696ffecb08ad9ccf951be7c8da2f31616a3594682",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 87,
+      "condition": {
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 1
+      },
+      "commits": 191489,
+      "retries": 10603,
+      "ratio": 0.0553713268125062,
+      "printed_ratio": "0.06",
+      "files_sha256": {
+        "stderr.log": "af688b462556098614220820cf729a6cfdcce6d87f64113c36058d6a4549889a",
+        "stdout.log": "48dd56de45ede8be74c9d5a0be4713613176b6873eddfada4fcb471f9bc677ea",
+        "command.json": "8a3a5ca4f71dd374ecff0e0156cafc86acd45f2aaa45285ee0488c74d4c359f1",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 88,
+      "condition": {
+        "variant": "tvar",
+        "caps": 1,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 3
+      },
+      "commits": 192021,
+      "retries": 491,
+      "ratio": 0.0025570119934798796,
+      "printed_ratio": "0.00",
+      "files_sha256": {
+        "stderr.log": "a3b62001bd6d7dad12fcd0d6deaac036ea4b9fa62fdde3066dcaf78a587f4b5c",
+        "stdout.log": "8646e5b9ebd81243efa3d37220612aa9e7f8b253cd08152dc2b7171845dda7b4",
+        "command.json": "cf5186e9881f54f61062b53722813d0bdb4ce3e11c1c70bc5f2dcfa20530a611",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    },
+    {
+      "index": 89,
+      "condition": {
+        "variant": "tvar",
+        "caps": 8,
+        "agents": 500,
+        "rebirthing": false,
+        "repetition": 0
+      },
+      "commits": 192149,
+      "retries": 1574134,
+      "ratio": 8.192257050518087,
+      "printed_ratio": "8.19",
+      "files_sha256": {
+        "stderr.log": "ab72af878b25ebb07b4ff44a9305b3e010604ad07eb7784b910c7343e973d5bc",
+        "stdout.log": "cc84277752e23e197d112e95085ac522a577b1dc0c7e9acc533bfad3b5bc2b0e",
+        "command.json": "54d424d5278b3b721cdfabd7e981a371279f435fcc531fdaa6df9943f667e100",
+        "exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+      }
+    }
+  ],
+  "scope": "Full declared retry ensemble on different hardware; five fresh processes per condition are our protocol, not an authenticated paper repetition count. Ratios are retries/commits. No timing or whole-paper verdict."
+}

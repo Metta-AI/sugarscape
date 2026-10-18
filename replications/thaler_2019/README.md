@@ -625,3 +625,16 @@ Ruff and CLI checks pass; raw-data validation remains pending.
 ```sh
 python replications/thaler_2019/audit_retry_scaling.py EXTRACTED_RUN EXTRACTED_PROVENANCE NEW_AUDIT.json
 ```
+
+### Full native retry ensemble complete
+
+[All 90 processes across eighteen conditions](results/retry-scaling-complete-2026-10-18)
+pass independent source, executable and raw-counter audits.
+TArray has fewer retries than TVar at every tested capability count, with disjoint observed ranges.
+Both normal-scenario mean ratios increase with capability count, consistent with Table 7.
+At eight capabilities, means are 8.194269 for TVar and 0.121191 for TArray,
+compared with reported 8.45 and 0.11.
+At 2,500 rebirthing agents, means are 2.802528 and 0.012419, versus reported 3.28 and 0.01.
+These are descriptive cross-hardware comparisons; five repeats do not establish historical equivalence.
+All ten single-capability processes print zero despite positive raw retry counts.
+This completes the declared retry ensemble, not the full paper.
