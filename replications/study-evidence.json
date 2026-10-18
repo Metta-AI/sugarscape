@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T22:34:58.268925+00:00",
+  "as_of": "2026-10-18T22:39:51.585652+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -68,14 +68,14 @@
     {
       "study": "stevenson_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8",
-      "checked_commit": "ea2568af462c850a396e02abe6c332a45e90391a",
+      "checked_commit": "8834efc1591d52f6ad4e1bb5433f4a55b989fb71",
       "status": "partial",
       "readme": "replications/stevenson_2021/README.md",
-      "readme_sha256": "4ad5608a9f8b63d8f4fc8894579bf8e255cc17ef76883ff1979e87aafff59882",
-      "json_evidence_files": 92,
-      "remaining_scope": "Both fixed-society and conditional evolutionary scenarios now have complete 100-seed,100000-cycle ensembles. Evolutionary runs total20M cycles/200200 observations without extinction; all shared500-cycle prefixes match. Independent native audits,96 statistics recomputed using standard-library Python and R, and archive readback pass. All20 Table1 means now compared with source-extracted targets; stable/chaotic late populations858.774/919.125 and Gini.689854/.728303. All four growth scenarios executed; original fitting procedure unresolved and chaotic logistic residuals poor. Original initialization/inheritance/generation meaning, steady-state sampling and percentage uncertainty remain unresolved. Fixed-society age discrepancies and remaining figure/AppendixB requirements prevent whole-paper completion. No validated negative or completion credit.",
+      "readme_sha256": "38fb6e0f6b7db483bde68a64f63a563d697d4b2b0aea43527ee89eadaed57e65",
+      "json_evidence_files": 100,
+      "remaining_scope": "Both fixed-society and conditional evolutionary scenarios now have complete 100-seed,100000-cycle ensembles. Evolutionary runs total20M cycles/200200 observations without extinction; all shared500-cycle prefixes match. Independent native audits,96 statistics recomputed using standard-library Python and R, and archive readback pass. All20 Table1 means now compared with source-extracted targets; stable/chaotic late populations858.774/919.125 and Gini.689854/.728303. All four growth scenarios executed; original fitting procedure unresolved and chaotic logistic residuals poor. Original initialization/inheritance/generation meaning, steady-state sampling and percentage uncertainty remain unresolved. Fixed-society age discrepancies and remaining figure/AppendixB requirements prevent whole-paper completion. No validated negative or completion credit. Figure6(a) printed metabolism4 cases now executed:200 runs,101000 cycles,995 actual-vector comparisons and2330 Decimal coordinate checks. Metabolism3 parity passes both cases. Visible pointwise band coverage171/190 and168/195 does not establish equivalence; original author seed, phase and fitting conventions remain unresolved.",
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T22:34:58.268925+00:00",
+      "checked_at": "2026-10-18T22:39:51.585652+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/stevenson_2021"
     },
     {
