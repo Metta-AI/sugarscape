@@ -2,7 +2,7 @@
 
 “Towards a Docker-based architecture for open multi-agent systems,” IAES International Journal of Artificial Intelligence 13(1), 45–56. [Paper](https://doi.org/10.11591/ijai.v13.i1.pp45-56); [author code](https://github.com/GustavoLLima/open_mas_docker_opt).
 
-Status: runtime qualification in progress. No replication credit is claimed.
+Status: completed qualified author-code feasibility reproduction. [The claim-level audit](results/claim-audit-2026-10-18) verifies all six original protocol requirements. This is not an independent engine replication or proof of historical binary equivalence. Earlier sections retain their dated partial assessments.
 
 The architecture connects two NetLogo Sugarscape models and a JaCaMo Gold Miners model through registration, routing, persistence and reporting services. Both container-only and host-GUI scenarios are required. `protocol.json` freezes observations and execution bounds. The study tests feasibility and state transfer; it invents no numerical benchmark target.
 
