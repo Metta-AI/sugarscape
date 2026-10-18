@@ -1013,3 +1013,7 @@ Sweeps, longer horizons, runtime requirements, and remaining figure analysis sti
 ## Runtime environment recovery
 
 [The restored-environment recovery](results/runtime-environment-recovery-2026-10-18) preserves the previous missing-Git failure and restores all required command-line dependencies before unchanged simulations. The fresh bounded continuation targets only unfinished original inputs. No new runtime completion is claimed until checkpoint audit.
+
+## Bentham terminal runtime audit
+
+[The final Bentham checkpoint](results/runtime-bentham-terminal-2026-10-18) adds one complete original 50,000-step input. Exact reconciliation reaches 873/1,200 deposited runtime inputs and 2,800,520 observations. The six-hour timeout and unfinished fourth input remain retained without completion credit.
