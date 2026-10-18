@@ -303,3 +303,7 @@ The corrected collector preserves native files in a verified end-to-end collecti
 Portable Lima container, host-native and saved-agent workflows now also complete with independently audited trajectories and conservation.
 The portable saved-agent control preserves 39 plans and the retained belief, but again departs with score 1 rather than the declared target 2.
 All 953 router deliveries reconcile and all 799 identities are conserved. Visible GUI proof and historical-runtime fidelity remain open.
+
+## Additional candidate qualification
+
+[SocioVerse2 (2026)](source-audits/socioverse-2026-qualification/README.md) supplies a runnable Sugarscape benchmark. Ten reconstructed-seed rule controls execute, but the released evaluator and LLM settings need reconciliation with the paper before inference. This source qualification does not change the 18 study PRs or three completed studies.
