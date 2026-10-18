@@ -957,3 +957,5 @@ Its typed JSON plan declares the model, exact original indices, worker count, pe
 Allocations must be disjoint from live producers and already audited inputs.
 Run `python run_selected.py ENGINE ARCHIVE PLAN NEW_OUTPUT`; audit every completed batch before counting it.
 An incomplete allocation exits 124 and preserves all partial outputs. Historical code remains in Git and sealed evidence.
+
+[The next disjoint Bentham allocation](results/bentham-remaining-launch-2026-10-18) assigns 152 required inputs to a bounded CPU-only node. It was queued at registration; Linux qualification gates production.
