@@ -242,3 +242,43 @@ byte-for-byte. The archive includes the frozen executed harness, including its
 original `run_container.py` filename, so the subsequent shared-runner refactor
 is not silently substituted into this evidence. Host execution and visual GUI
 confirmation remain separate; this does not complete the paper.
+
+### Portable host execution verified
+
+[The completed host workflow](results/portable-host-complete-2026-10-18) verifies
+both 1,000-step trajectories, 1,019 exact router deliveries and conservation of
+all 799 identities: 249 model-1 survivors, 235 model-2 survivors, 314 queued
+agents and one active miner. Eleven native creations match incoming attributes;
+ten return records remain. Both audits reproduce byte-for-byte from a fresh
+public extraction, and the owned host processes and containers are stopped.
+
+The GUI-enabled model logs successful world creation without an initialization
+exception. The UI tool lists JaCaMoLauncher but cannot select it by either name
+or reported bundle identifier. This establishes no visible-rendering result.
+The host-native execution is validated; the GUI observation requirement remains open.
+
+### Runnable saved-agent control
+
+In another fresh prepared container directory, supply the exact retained
+`agent-399-input.asl` checkpoint. `prepare_reload.py` checks its frozen SHA-256,
+excludes identity 399 from model-1 registration, and writes the explicit initial
+checkpoint fixture. The input remains in external evidence because it contains
+the author's AgentSpeak plans; its required hash is in the frozen protocol.
+
+```sh
+python replications/lima_2024/prepare_reload.py /new/control /retained/agent-399-input.asl
+docker compose -f /new/control/compose.json build
+python replications/lima_2024/run_scenario.py /new/control --reload
+python replications/lima_2024/collect_completed.py /new/control /new/control/collection
+cp /new/control/collection/snapshot-final.jsonl /new/control/snapshot-final.jsonl
+python replications/lima_2024/audit_snapshot.py /new/control/snapshot-final.jsonl /new/control/snapshot-audit.json --initial-checkpoints /new/control/initial-checkpoints.json
+python replications/lima_2024/audit_native.py /new/control /new/control/native-audit.json --initial-checkpoints /new/control/initial-checkpoints.json
+python replications/lima_2024/audit_reload.py /new/control /new/control/reload-audit.json --native-log native.log --reexport shared_volume/jacamo/jacamo_model/src/agt/list/399.asl
+```
+
+The runner first starts cleanup, database and API, verifies cleanup completion,
+then installs the checkpoint and seeds the database. Remaining services start
+without restarting dependencies. [Preparation evidence](results/portable-reload-preparation-2026-10-18)
+checks the same source substitution and nine image builds. Re-auditing the prior
+control preserves every metric, including its failed score criterion. The fresh
+control is running; no new outcome is claimed before its audits finish.

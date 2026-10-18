@@ -9,10 +9,12 @@ import re
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--native-log", default="jacamo-live-001.log")
+parser.add_argument("--reexport", default="agent-399-reexport-001.asl")
 args = parser.parse_args()
 original = args.run / "agent-399-input.asl"
-reexport = args.run / "agent-399-reexport-001.asl"
-native = args.run / "jacamo-live-001.log"
+reexport = args.run / args.reexport
+native = args.run / args.native_log
 protocol = json.loads((args.run / "protocol.json").read_text())
 assert hashlib.sha256(original.read_bytes()).hexdigest() == protocol["saved_asl_sha256"]
 before = original.read_text()
@@ -51,9 +53,8 @@ report = {
         for path in (original, reexport, native, args.run / "protocol.json")
     },
     "scope": (
-        "Additional checkpoint-reentry control. Report the failed score criterion "
-        "without changing it: preserved departure belief fires on reload, before "
-        "another mining completion. Full trajectories and identity conservation "
+        "Additional checkpoint-reentry control. Evaluate the declared score criterion "
+        "without changing it. Full trajectories and identity conservation "
         "are audited separately; this is not a whole-paper negative verdict."
     ),
     "completed_study": False,

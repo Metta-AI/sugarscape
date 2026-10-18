@@ -6,17 +6,21 @@ import os
 from pathlib import Path
 import json
 import signal
+import shutil
 import subprocess
 import time
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
-parser.add_argument("--host", action="store_true")
+mode = parser.add_mutually_exclusive_group()
+mode.add_argument("--host", action="store_true")
+mode.add_argument("--reload", action="store_true")
 args = parser.parse_args()
 root = args.run.resolve()
 config = json.loads((root / "compose.json").read_text())
 project = config["name"]
 assert ("jacamo" not in config["services"]) == args.host
+assert (root / "protocol.json").exists() == args.reload
 existing = subprocess.run(
     [
         "docker",
@@ -44,13 +48,59 @@ host_processes = []
 host_logs = ExitStack()
 try:
     with (root / "up.log").open("x") as stream:
+        initial_services = ["clear_files", "db", "api"] if args.reload else []
         subprocess.run(
-            [*compose, "up", "-d", "--no-build"],
+            [*compose, "up", "-d", "--no-build", *initial_services],
             stdout=stream,
             stderr=subprocess.STDOUT,
             check=True,
             timeout=180,
         )
+        if args.reload:
+            cleanup_id = subprocess.check_output(
+                [*compose, "ps", "-a", "-q", "clear_files"], text=True
+            ).strip()
+            cleanup = json.loads(
+                subprocess.check_output(
+                    ["docker", "inspect", cleanup_id, "--format", "{{json .State}}"],
+                    text=True,
+                )
+            )
+            assert cleanup["Status"] == "exited" and cleanup["ExitCode"] == 0
+            shutil.copyfile(
+                root / "agent-399-input.asl",
+                root / "shared_volume/jacamo/jacamo_model/src/agt/list/399.asl",
+            )
+            sql = "INSERT INTO m3 (agent_id,data,path) VALUES (399,'[0 3 6]','1-3');"
+            (root / "seed.sql").write_text(sql + "\n")
+            subprocess.run(
+                [
+                    *compose,
+                    "exec",
+                    "-T",
+                    "db",
+                    "mysql",
+                    "-uroot",
+                    "-proot",
+                    "MYSQL_DATABASE",
+                    "-e",
+                    sql,
+                ],
+                stdout=stream,
+                stderr=subprocess.STDOUT,
+                check=True,
+                timeout=30,
+            )
+            remaining = [
+                name for name in config["services"] if name not in initial_services
+            ]
+            subprocess.run(
+                [*compose, "up", "-d", "--no-build", "--no-deps", *remaining],
+                stdout=stream,
+                stderr=subprocess.STDOUT,
+                check=True,
+                timeout=120,
+            )
     if args.host:
         runtime = json.loads((root / "runtime.json").read_text())
         env = os.environ.copy()
