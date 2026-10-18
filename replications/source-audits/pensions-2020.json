@@ -110,5 +110,9 @@
     "full_ensemble": "Complete:128 conditions x10 repetitions,1000 steps, seed20261018+run_number. All1280 runs and768 condition/metric comparisons audited; new seeds do not establish historical agreement.",
     "failed_ensemble_launch": "pensions-native-ensemble-001: XML metric ordering rejected before simulation; preserved, not counted.",
     "completed_ensemble_evidence": "pensions-native-complete-2026-10-18"
+  },
+  "source_chronology": {
+    "evidence": "pensions-source-chronology-2026-10-18.json",
+    "finding": "All14 currently visible commits predate the cited September2019 repository access. Executed pin is the latest visible commit, August13,2019. This supports chronological compatibility, not exact experimental-revision identification."
   }
 }
