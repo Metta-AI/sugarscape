@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T02:28:25.414718+00:00",
+  "as_of": "2026-10-18T03:15:11.427696+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -30,37 +30,38 @@
     {
       "study": "raimbault_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
-      "checked_commit": "fc6f527652ed79870e330a88510b569577aec23a",
+      "checked_commit": "4842e616bebcfd1169cbcbd6082498c210316750",
       "status": "running",
       "readme": "replications/raimbault_2019/README.md",
-      "readme_sha256": "76e3d63e563756386075540429933152595245fd3cb609c79d6d71b46a554328",
-      "json_evidence_files": 105,
-      "remaining_scope": "49,366/55,000 reference inputs audited with 98,732 exact Gini measurements; the 5,634-input continuation remains running. All six archived Table2 and 24 Table4 values reproduced; morphology reanalysis confirms inconsistent reference-marker scaling, separately from simulation outputs. First 8,000 generated production inputs queued after reference completion, excluding prior inputs; full generated ensemble and fresh spatial comparison remain incomplete.",
+      "readme_sha256": "26efda004142f59da4916e5e83c8d77c40bf93eedc7f0c4b5635bab82ae7a3fa",
+      "json_evidence_files": 117,
+      "remaining_scope": "54,177/55,000 reference inputs audited,108,354 exact Gini comparisons.823 remaining inputs continue. First generated8000-input launch failed before simulations due to missing GNU time; repaired launch waits behind reference continuation. Full generated ensemble and fresh spatial comparison remain incomplete.",
       "gzip_json_evidence_files": 4,
-      "checked_at": "2026-10-17T23:06:58.782015+00:00"
+      "checked_at": "2026-10-18T03:15:11.427696+00:00"
     },
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "e5f76e4495a41dbb4ad8e9cb5b89279b65655221",
+      "checked_commit": "5a3f0bf081fa77bc964e912b9226c994df3447a3",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "7a5bda2ce6132de6da81d4d2c66d0708542e4c1eae3a13e8e582ac2d54950aaf",
-      "json_evidence_files": 412,
-      "remaining_scope": "1,586/2,000 homogeneous inputs and 854/1,200 deposited runtime inputs audited. Raw and Altruist Table3 rows reproduce. Full selfishness/heterogeneous sweeps and remaining homogeneous/runtime inputs remain incomplete; deposited100-input versus reported500-seed timing mismatch unresolved. Larger-memory continuation is queued after an archived OOM failure; no failed input receives credit.",
+      "readme_sha256": "1070d812978b20919c1525af32244721cee603dfe3306c6448b0c77c0c3bd6b0",
+      "json_evidence_files": 419,
+      "remaining_scope": "1,586/2,000 homogeneous and854/1,200 deposited runtime inputs audited. Raw/Altruist Table3 rows reproduce. Exact-trajectory qualification pending before parallel Bentham handoff; out-of-order coverage excludes repeats and exposes gaps. Full selfishness/heterogeneous sweeps, remaining homogeneous/runtime inputs and100-versus500-seed timing discrepancy remain unresolved.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T02:28:25.414718+00:00"
+      "checked_at": "2026-10-18T03:15:11.427696+00:00"
     },
     {
       "study": "bigbee_2007",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/7",
-      "checked_commit": "455e361ff77e707671e942d1ff8195065a1bf48b",
+      "checked_commit": "7980335a7e93d7f6a5fc76a1901143e2f7bc9dbe",
       "status": "partial",
       "readme": "replications/bigbee_2007/README.md",
-      "readme_sha256": "7c073c7bdcb4620cddd0302e9db27d6fd7738ac1d7129beb63d1fe737e342c51",
-      "json_evidence_files": 12,
-      "remaining_scope": "Original MASON archive replays repeat exactly but reproduction population accounting fails from time 13. Historical 2007 code/protocol alignment unresolved; later corrected behavior does not establish historical replication.",
-      "gzip_json_evidence_files": 3
+      "readme_sha256": "e18f1e6f01a89525c096dc1baac688074822c67d23a8cb76947985c522fe2962",
+      "json_evidence_files": 17,
+      "remaining_scope": "Original MASON10/1.1.2 reproduction fails population accounting from time13. Official GoogleCode catalog confirms recovered1.1.2 checksum and lists only1.1.2/1.1.3. Historical paper revision/protocol alignment remains unresolved; corrected17-scenario behavior is not historical replication.",
+      "gzip_json_evidence_files": 3,
+      "checked_at": "2026-10-18T03:15:11.427696+00:00"
     },
     {
       "study": "stevenson_2021",
@@ -168,14 +169,14 @@
     {
       "study": "thaler_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
-      "checked_commit": "89cab857729080df51179ecc0043384b343a1f46",
+      "checked_commit": "6c0e47eb23209540a7f89d6183d1a5dae570bee5",
       "status": "running",
       "readme": "replications/thaler_2019/README.md",
-      "readme_sha256": "e84493e70579fdafc6798f7781d08c3ed206f2b2f6db065c5fb408ff0031f47b",
+      "readme_sha256": "a260ade6a6ef4a339c777b70a06d3840bad035e932e15eefa973cbc1ccc1fcfb",
       "json_evidence_files": 115,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "41/45 native timing conditions and164raw measurements audited, all25 Table6 and16/20 Table8 cells. Original TVar executable segfaulted; failure retained, four-condition continuation queued behind population ensemble.90-process retry ensemble running; independent audit prepared. Matching m5ad.16xlarge Table9 run underway. Figure5b passes; Figure5a provenance, concurrent population, relative-performance claims and whole-paper verdict remain unresolved.",
-      "checked_at": "2026-10-18T02:28:25.414718+00:00"
+      "remaining_scope": "41/45 Table6/Table8 timings audited; four-condition continuation waits behind population ensemble after preserved TVar segfault. All90 retry processes across18conditions audited. First matching-instance Table9 timing audited:32-capability/2500-rebirth89.962304s,R2=.999874136128; five timings and30retry processes remain. Figure5a provenance, full concurrent population/scaling and historical isolation remain unresolved.",
+      "checked_at": "2026-10-18T03:15:11.427696+00:00"
     },
     {
       "study": "thaler_properties_2019",
