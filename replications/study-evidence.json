@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T11:22:50.237965+00:00",
+  "as_of": "2026-10-18T11:32:40.225122+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -19,14 +19,14 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "ec6c55647153f906129d233f72333b3d92012bd7",
+      "checked_commit": "0ce6c1c9a3656214eed2b1dc471696499b6c6b80",
       "status": "partial",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "a378e8a4969b585d85918b64e68f3041455a516c457be65274597ecc3a74e34c",
-      "json_evidence_files": 270,
-      "remaining_scope": "All 5,000 independent simulations and 750,000 statistics audited. Seven estimator families complete required sizes, including GAM at 1,250 and 5,000 inputs. GAM 5,000 has 25,000 paired predictions; neither dataset matches the five printed targets. Bootstrap-forest at 1,250 inputs completes 6,250 predictions and matches one of five printed scores. Neural-network and bootstrap-forest at 5,000 inputs remain active; historical discrepancies remain unresolved.",
+      "readme_sha256": "8d7e06cea16cc5f80caee8c767e3c905b5a2902ac712d169cf574e229967f927",
+      "json_evidence_files": 278,
+      "remaining_scope": "All 5,000 independent simulations and 750,000 statistics audited. Seven estimator families complete required sizes, including GAM at 1,250 and 5,000 inputs. GAM 5,000 has 25,000 paired predictions; neither dataset matches the five printed targets. Bootstrap-forest at 1,250 inputs completes 6,250 predictions and matches one of five printed scores. Neural-network and bootstrap-forest at 5,000 inputs remain active; historical discrepancies remain unresolved. Completed-fold recovery qualifies ten identical fold objects and 12,500 predictions; three LM folds recomputed and five bootstrap-forest folds replayed. Fresh forest fitting after recovery remains unqualified.",
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T10:18:52.467820+00:00"
+      "checked_at": "2026-10-18T11:32:40.225122+00:00"
     },
     {
       "study": "raimbault_2019",
