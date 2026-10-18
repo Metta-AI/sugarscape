@@ -828,3 +828,34 @@ its 100 MiB aggregate storage guard: retained evidence totals 118,476,107 bytes.
 That operational failure remains recorded separately from the successful numerical checks.
 An earlier diagnostic incorrectly expected an intercept attribute from `predict.bam`;
 the corrected diagnostic uses the fitted intercept coefficient. No observations were excluded.
+
+### Complete independent ensemble recovered and audited
+
+[The final evidence](results/independent-ensemble-complete-2026-10-18) recovers
+all 619 remaining inputs across 25 successfully completed native chunks.
+Complete reconciliation re-audits all 5,000 original parameter rows and
+recomputes all 750,000 statistics from retained trajectories. No indices are
+missing or duplicated. The complete table has SHA-256
+`ca4125920859ddbfb528ef9d7ae7ec8c635804a8eaba45069fa8578e37cb2f9f`.
+
+The full-data paths now pass for reconciliation, independent estimator-input
+preparation and distribution comparison. The published audit archive extracts
+byte-for-byte to the verified records. Earlier incomplete-data rejection
+evidence remains retained. Original author parameters and estimator source
+are unchanged; only the simulation-statistics table is independent.
+
+All 150 statistics are compared globally and across ten bins of each of five
+parameters, producing 7,650 descriptive comparison rows. For example, average
+population is 452.096687 in the author table and 451.959111 independently.
+These values do not establish equivalence: the random streams differ, and no
+post-hoc tolerance or paired-randomness assumption is introduced.
+
+The independent five-fold linear-regression workflows for 1,250 and 5,000
+inputs are launched in sequence with the original estimator and interval
+procedures. Their results require separate held-out prediction audits. An
+initial invocation failed before fitting because it omitted the installed R
+library path; that attempt is retained, and the corrected invocation uses
+the existing library without changing statistical source.
+
+Full independent estimator comparisons and interpretation of the published
+Table 8 discrepancies remain required. This does not complete the paper.

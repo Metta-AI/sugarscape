@@ -1,0 +1,1884 @@
+{
+  "mode": "complete",
+  "validated_inputs": 5000,
+  "required_inputs": 5000,
+  "statistics_recomputed": 750000,
+  "complete_original_ensemble": true,
+  "missing_intervals": [],
+  "summary_file": "summary_statistics.csv",
+  "parameter_sha256": "216a4fbfd5357d7f5c8fa0140792aaa511df224ad83f91a6cdf23758e688c9fa",
+  "reference_sha256": "33845743cda8be19e6827f353fe13366c1d92fc1eb98dd617c6809874498d99a",
+  "source_sha256": {
+    "model.py": "23d73549848eadf237d38534a5cdae71c240c03cc9ef0fed4655cabb615ad36a",
+    "run_independent.py": "72998c2ce2927a2cdc95b9159055ff91b7f91fdd7afb70f52c7889d5584f5759",
+    "INDEPENDENT_ENSEMBLE.md": "257d0411b19370c8e4c68cafe8a010aa781ecdef0fd83afacbe0ca8e11158aa1"
+  },
+  "runtime": {
+    "python": "3.11.14",
+    "numpy": "1.26.4",
+    "pydantic": "2.12.3"
+  },
+  "inputs": [
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-5000-001",
+      "audit": "audit-0",
+      "interval": [
+        0,
+        507
+      ],
+      "manifest_sha256": "5a6db45c25787f798bef51458509778bd3177327ecd3c245627c38ef66cd2122",
+      "ledger_sha256": "26b700f7ebe3705982c867035d030e2f4001838b98c76c3f2c4d8b754c4cc44b",
+      "summary_sha256": "4662db8327b6fb45a1688ae56972eb5ef90fd6330fa5874848ae57bf373ec8f3"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-shard-1-001",
+      "audit": "audit-1",
+      "interval": [
+        507,
+        631
+      ],
+      "manifest_sha256": "4f793855ddc3ee25c545d379c40e26cfc1774a49f55d88b780fd15043286f841",
+      "ledger_sha256": "f1ea8d60b9116505d1bc2541a8f03ed557809fc06dc8c27737ce7c901e556c6a",
+      "summary_sha256": "2c39a295a56866e9e357f9cbd9ca3fda9fb68b9f2f8a2dc673c62ab752b499c2"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-shard-2-001",
+      "audit": "audit-2",
+      "interval": [
+        2005,
+        2139
+      ],
+      "manifest_sha256": "15bd750644262af61d8c866908171142f25e17f79ebec7a9e1e30d1fc42b6794",
+      "ledger_sha256": "2df19cd10e9533781ca6f76edb90179f38f1f433a0318886617a9ba0bb5dee15",
+      "summary_sha256": "ff3e185703ff20f22f4509bab3977f6ea768151a297147301a670774084f3c0d"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-shard-3-001",
+      "audit": "audit-3",
+      "interval": [
+        3503,
+        3631
+      ],
+      "manifest_sha256": "4caa71a84bebd1370b591579ece2e713b12cc7072f046a18345c3bbcfac9877f",
+      "ledger_sha256": "b307b4d3563e7716135e1ef63a6c1f4acb105c4451e58347c0eadfe0b183f417",
+      "summary_sha256": "ae274f7915c90b421c51baeb7bf61bbf7e748adc186e749f577d87470ac91655"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-631-656",
+      "audit": "audit-4",
+      "interval": [
+        631,
+        656
+      ],
+      "manifest_sha256": "05c4d60d5a5a77e5295bcb4e71be624e2601f112a64c88ab2806e5f6c6288a8d",
+      "ledger_sha256": "85112f3d1288011a30c460f6aa4f82fb486e4b8001893867efd0ea4bbb6cca35",
+      "summary_sha256": "e01ff933212eb123d350f92728951ecafa91cde5c09276d2f492a4d36d3ee936"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-656-681",
+      "audit": "audit-5",
+      "interval": [
+        656,
+        681
+      ],
+      "manifest_sha256": "b7a15624631ab44a597d2b061c7fbca9e7fd9cbba37e2bc44d498de8dea83709",
+      "ledger_sha256": "b2dbff8cd0b9dfd6cb998a0bbc12a68d7b9ef82459f77466d4bb7e2199926323",
+      "summary_sha256": "a9c4b95a4535184a557aed5b4c506dab345850fc0f2b5f3ec4b1bc6687a0a067"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-681-706",
+      "audit": "audit-6",
+      "interval": [
+        681,
+        706
+      ],
+      "manifest_sha256": "089c22a1a24dd66ab2ab289635788ff3d34494590787ffb005962957ca4beb0b",
+      "ledger_sha256": "f119d6961e37b2a273daedfdfe20c56c2dd62de35fb5ab460e470f5f308c338b",
+      "summary_sha256": "13f1859bfe911a75b7e21ecac74a0c23d528708b94393bb00a4142c5ce714b13"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-706-731",
+      "audit": "audit-7",
+      "interval": [
+        706,
+        731
+      ],
+      "manifest_sha256": "2ed9892842d1d551168670ccf66b07571f367f87124911cc30153036af04c512",
+      "ledger_sha256": "5ff03bade353d9a241497499f6c4276a372cb1db60fe65e9ac8d2fd6ea6e7000",
+      "summary_sha256": "9d536bbf5eb06114f17bc0f97768cfe778977aef1fae81a0b6b93c39b6715e90"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-731-756",
+      "audit": "audit-8",
+      "interval": [
+        731,
+        756
+      ],
+      "manifest_sha256": "00745a7cecbce28e754148854bbe4076684f7315c87344a81470818c6c3e92fe",
+      "ledger_sha256": "f7ea74d6538c685ad643770b1eb91c36bf6fb8fdfaf85da259a72e6d03e06388",
+      "summary_sha256": "78d8e9b6b69ee6cac5d11023f1242cd634f8ac350c4e16395916f10d9e56524c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-756-781",
+      "audit": "audit-9",
+      "interval": [
+        756,
+        781
+      ],
+      "manifest_sha256": "ad039cc39a3be354afcc399d3f28c37cac60dba4236135afdea6e202496cacda",
+      "ledger_sha256": "06e3c9e0999daa5143e1f2e5398333e1887fb3518a13411596913850abb0705f",
+      "summary_sha256": "ec0f1533416d8d07baaf8b5ae22f851b68c58c382d4cb8cd20bd42b940475ba0"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-781-806",
+      "audit": "audit-10",
+      "interval": [
+        781,
+        806
+      ],
+      "manifest_sha256": "fbf1efb9a9d8c53bdea2039c1094b4ca55f3ebdbb9d04128e0f730a138e3a56b",
+      "ledger_sha256": "c1d7bcb3f3e9531796db01a7aa66d204ca7381c3621908acd50e391b349e976d",
+      "summary_sha256": "75689b2708411573136c36c2e1d4620e39fcea96e3dabedbd04b68ea764edbbb"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-806-831",
+      "audit": "audit-11",
+      "interval": [
+        806,
+        831
+      ],
+      "manifest_sha256": "b9af74cc41434895324822938121949930f72b5ed881a75b458d13fcd95c96b6",
+      "ledger_sha256": "7b0671fe591483d52cab1a137d0ab111db8be71341e527ec311015de00b8109b",
+      "summary_sha256": "869696d0aea5489c2af8bea3ad1579fe0b96d52d4b5c6456a5d156cd6a421dfd"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-831-856",
+      "audit": "audit-12",
+      "interval": [
+        831,
+        856
+      ],
+      "manifest_sha256": "a39709cd296fb2046e5ae30ecf8f206a1270487da8723af8a472d2da408e94e5",
+      "ledger_sha256": "b32c53cf9ab3a136c37411e5b62bea5593fee1f4168fc0939d71f5f24a096aa3",
+      "summary_sha256": "63c58110b1bc45c2c8bede2075330e1878dd80a8df1aded15811dcf28fc0ac96"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-856-881",
+      "audit": "audit-13",
+      "interval": [
+        856,
+        881
+      ],
+      "manifest_sha256": "feaefdceb979cfebcb7fb451efad03051f0034518d2f41ae6e2a78de76a2a7ea",
+      "ledger_sha256": "c441b981eacbd2b9907844834ac1ee824c0d747c8f474015a527549f09bcd460",
+      "summary_sha256": "a6c768c6e57255f7cbf85ef08dfe2307b8d6f2dfde14a4807f6635d6903f48b1"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-881-906",
+      "audit": "audit-14",
+      "interval": [
+        881,
+        906
+      ],
+      "manifest_sha256": "d3bffaa1416266283c4ad1f111bd264f83866524cb0eee584e34ed810f47b221",
+      "ledger_sha256": "338cc59c5076a144f8bf1c55fb7d650fbf50b716f16f245d9f520669291e1c18",
+      "summary_sha256": "6d8e016c8c90f63712f4638453286316d10442da2cdbddc6d9b3dc3037642a63"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-906-931",
+      "audit": "audit-15",
+      "interval": [
+        906,
+        931
+      ],
+      "manifest_sha256": "e50de41f74bcc7754b209ded8dfea6367cfb8491eae651d1c82ebfaa8565ef8d",
+      "ledger_sha256": "9a7b24f7109b861a80fc38f7b4338ec16cf5f30705af5323744741f536dee862",
+      "summary_sha256": "598d6cc18d46dbdea448fe45d8ad440bb0909d8f76ae7e3962bc3f38479cc17a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-931-956",
+      "audit": "audit-16",
+      "interval": [
+        931,
+        956
+      ],
+      "manifest_sha256": "07a854cd352b8424e7ee54cf2acc222579c7b6333c261864dfb865f13bfde105",
+      "ledger_sha256": "30c5cc769c3b39b86ed700c63c45a799207a003444009e4fa375160e50305524",
+      "summary_sha256": "d4ce5b1ba7f464391ac2fd9b46ac9d54f788fa039126f2c7ea8ed74d48f80594"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-956-981",
+      "audit": "audit-17",
+      "interval": [
+        956,
+        981
+      ],
+      "manifest_sha256": "0d70f4517a16e327b86ee13cba7e017da6ba8c23ab366ab1f706931ac458365d",
+      "ledger_sha256": "9f931780adfffb0b03c06bce17bf846e35c40c143d328863b85c5260915498d5",
+      "summary_sha256": "4382c7af28fa261db8aab1fbc29be92d41fa81bd95ecd8c167503aa9753920a0"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-981-1006",
+      "audit": "audit-18",
+      "interval": [
+        981,
+        1006
+      ],
+      "manifest_sha256": "776051944e5a4c70b4bdab12a2abf684b458868ace16b4b4017f16ce20bf973e",
+      "ledger_sha256": "4bb0ee7492d24bcc08a323e4442e6ed951f4cc10f6e9e19a802fdc35c2d327d0",
+      "summary_sha256": "6e22becfc663b8b3fe6dcd93f236fb5573f99d6d452ba5b1562942e40d126ea9"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1006-1031",
+      "audit": "audit-19",
+      "interval": [
+        1006,
+        1031
+      ],
+      "manifest_sha256": "722e15cc6aaca3af0ed7cf28d685a5960b1d77b8c86d3cfcf2a243817cb1d422",
+      "ledger_sha256": "1f03ffe3fdc5cf626ef09638cba04306f83065d20f87289e5539db59cbc1770e",
+      "summary_sha256": "f236e7b1fa757406af49e85ce313c043b3e205a1c1d0bd363a36155ccf8b3c2b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1031-1056",
+      "audit": "audit-20",
+      "interval": [
+        1031,
+        1056
+      ],
+      "manifest_sha256": "b2c6e9551a6f2b1296152907a5b207107128b85d120b53069b3dacf56aeaddf6",
+      "ledger_sha256": "3b947daa4f5e87662a14d059f372c882cfa373a2326fe3d1fb047599ec74b24d",
+      "summary_sha256": "6948723210b30ad44b5f0291184d3f363614a1b913d7aa8cf248dea92b446371"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1056-1081",
+      "audit": "audit-21",
+      "interval": [
+        1056,
+        1081
+      ],
+      "manifest_sha256": "c770f681c677dffdf9f67cabdc1a8b15b49d025564ea4e78fecea3f9ffcd0333",
+      "ledger_sha256": "8d0783bf57e9b564a7fa0f316e5d81ce84ef5c29f35abfae604930d64566f4d3",
+      "summary_sha256": "22c4840f93c7b7ee7ccd1f7a8d6d5edb456283b80019cdda90b655f44691795f"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1081-1106",
+      "audit": "audit-22",
+      "interval": [
+        1081,
+        1106
+      ],
+      "manifest_sha256": "82c1c27ba1f2057f597267ab7a5e7b6e1947f9978771cbd79e44ff934815bf49",
+      "ledger_sha256": "e2678db46632de7f9e1d544973827ae7b437205d5a846f301b4597bdcc8df1ed",
+      "summary_sha256": "b0e78257f833ed96c98eb1e9a39632ec508da77e3b9793783faf1eb7677ed4c1"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1106-1131",
+      "audit": "audit-23",
+      "interval": [
+        1106,
+        1131
+      ],
+      "manifest_sha256": "25f13c05c81d17068cc621d282f21cf583a423c59d5669ce6aadf5453dd7fccd",
+      "ledger_sha256": "8f62e45e885426eb4af6a23cfe47e54c6aa4024908d986eeb5c6eaffebd3fa41",
+      "summary_sha256": "452bf5e0c2e1e6690ef9b93d12994e7c61dd185449915e8e5f2eceedd19ae43a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1131-1156",
+      "audit": "audit-24",
+      "interval": [
+        1131,
+        1156
+      ],
+      "manifest_sha256": "e9058cabeb0ce777a546cb77bf70bc4ae75413b6c2d868805c4137710aace7a7",
+      "ledger_sha256": "2f29417057f2a645129e4087617d80dbf5e7ba0604dc10f39b2bbb6a9500184f",
+      "summary_sha256": "9cf844ced666f5182a62684ce82b57c7b47505e871af955df8e18cf73e839eeb"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1156-1181",
+      "audit": "audit-25",
+      "interval": [
+        1156,
+        1181
+      ],
+      "manifest_sha256": "6a541e06df05e95efe6ef47546599b0cdcb3e041e75f0de0e227199a60cc0642",
+      "ledger_sha256": "0a46705b0c61a27767d76c3d73d8336ce2ad3cfc746277636c9c4d3abc815c5d",
+      "summary_sha256": "930ac87943eb0b12d5f29af47ee04c0d3eb85f22328ca540e517d008c57ea11c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1181-1206",
+      "audit": "audit-26",
+      "interval": [
+        1181,
+        1206
+      ],
+      "manifest_sha256": "32e911d86634ffa991ce106459e845c32a4cddfea446691e6a3684f5f4a5f35e",
+      "ledger_sha256": "b6d08104c9f8f8e5afae895d356145004f099641ea8bcde6c9dfe3818268c9ca",
+      "summary_sha256": "98d3878a851a915a28da52e5eb32d6dd4483728b662c3c177d875ef67e0f4c2e"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1206-1231",
+      "audit": "audit-27",
+      "interval": [
+        1206,
+        1231
+      ],
+      "manifest_sha256": "cb05693da3fbad3888d1f83424aa4ad5c898bc045942097adcc02eee95c0e781",
+      "ledger_sha256": "f6213163165068db32a028a037b7f314a92f602b97d310dc903fec63b218f7bf",
+      "summary_sha256": "31996c9d890b2decfa0163a95c95cca27335e10b7f79d8bead344237d41cdcb1"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1231-1256",
+      "audit": "audit-28",
+      "interval": [
+        1231,
+        1256
+      ],
+      "manifest_sha256": "d2c1cd7acaf1012c055359a8937cd9396955e92099eda616746b770ac375c1ff",
+      "ledger_sha256": "bda94f8cba8c68da8122211ef1def7344bf54124639f34d0a5d8f0b2a8531df2",
+      "summary_sha256": "fa193784d10547cfb1ce7d505eb663ba1c7cd690c5ac5f6710202929cce0e09f"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1256-1281",
+      "audit": "audit-29",
+      "interval": [
+        1256,
+        1281
+      ],
+      "manifest_sha256": "337fe6736581a94db7096696b15f4048c6365abbe494baad909f7ae02de87b36",
+      "ledger_sha256": "c85e45875d28576de0b6e420c476fb4924fa712bd3e1083445a5a8cd87ddd8ef",
+      "summary_sha256": "5b2a36266aebf4a6473934b6169026d0a2cddfa5f7b652096fe2b8b5df870d8c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1281-1306",
+      "audit": "audit-30",
+      "interval": [
+        1281,
+        1306
+      ],
+      "manifest_sha256": "6bff91de109d122cac3b75da15a0c123802f4c89b4b31b76c060d3b32a8468c8",
+      "ledger_sha256": "82e0ee4e309d2a9bd04a7e5dbb1de8c9db9a365dce424ec7bdff147710b9a228",
+      "summary_sha256": "c465f13c4582f7800759448a409a55e6107ebc5fcbd46d04614f1b23ddb66552"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1306-1331",
+      "audit": "audit-31",
+      "interval": [
+        1306,
+        1331
+      ],
+      "manifest_sha256": "09942a36b23c17dd1051245acffc80baa7d698ca4549bc2bc91c354c323921b9",
+      "ledger_sha256": "e833ffe53cc18dd55d94675914d3a4e6560188fbddcf9a0baa2ad146d53cbe17",
+      "summary_sha256": "1b3e3852077719b51ebd59c1775a2d79809f8ec203ace7c2cb3232d98013a76a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1331-1356",
+      "audit": "audit-32",
+      "interval": [
+        1331,
+        1356
+      ],
+      "manifest_sha256": "2951d53ce5f1f637dd25549131631aab200b4f1391dabaedc3d39eabeb290b63",
+      "ledger_sha256": "7a1c482e4ad304a212f1b529408e29ec0063c05f7a5390e0b1de58326f2c668e",
+      "summary_sha256": "e2082f573797056f8fe3839b63857f6eecb73cce01b178bea648e5c2d7076b3b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1356-1381",
+      "audit": "audit-33",
+      "interval": [
+        1356,
+        1381
+      ],
+      "manifest_sha256": "ad27f40c490e24b6f904633418114988b955b11f6e90b194164ef7bd9d1b44c0",
+      "ledger_sha256": "0f78b482b396b30fbc32f29785904d0b0ac2c750ec27fd143394de3f5d67fcd4",
+      "summary_sha256": "b2e0b47d14b6162ee10a833495982892625508da04236cc17784374307eabda0"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1381-1406",
+      "audit": "audit-34",
+      "interval": [
+        1381,
+        1406
+      ],
+      "manifest_sha256": "2113e9a3a9ab8e503c9644a8bce7a2ecfefcad84973dc9c686b8c68033c4a278",
+      "ledger_sha256": "c02a62f242644be2315bb29770df5de5f84d537fdb43a32437ac17c78b3f77c7",
+      "summary_sha256": "baaefcb836a0c036db5a919e57ba83b60c2d0ae739dccfb3800c8c78edf8f230"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1406-1431",
+      "audit": "audit-35",
+      "interval": [
+        1406,
+        1431
+      ],
+      "manifest_sha256": "bbe7e7f7bbda2a15eb89fca965bda1d59b95987b71b44c314d4d16301766122d",
+      "ledger_sha256": "efdca0e1ac5409939720c6003f47443d188e98d475c679780eed985d2ef6b5be",
+      "summary_sha256": "99f883b6a661f13662d4613a746ed279a01b021a39b9e372b9cc9210850e549a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1431-1456",
+      "audit": "audit-36",
+      "interval": [
+        1431,
+        1456
+      ],
+      "manifest_sha256": "75e3d532354d27ec34b513b47643c21a2c841680951fa04512e448b57fa5414b",
+      "ledger_sha256": "7265387f4e2923bfebea6adf4637a023108863b639ad79c981ba3eb1ff32919c",
+      "summary_sha256": "c6019641c511cbda4c3779330e09cc16e99ae86b56f8e1baa55ca9084294fe8e"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1456-1481",
+      "audit": "audit-37",
+      "interval": [
+        1456,
+        1481
+      ],
+      "manifest_sha256": "dcf0c2e46414bc01e1fd0b0e553642ac738f4245ee2067d34eb59a325516342a",
+      "ledger_sha256": "254e3e80acd53e32c10ec571a573ebd55a9aedb763ab888f31b102ef8fbcf7ed",
+      "summary_sha256": "81c6dcd4743fa0cf7e2000376100e8b2cc2a2eddaf2b54597a01d5172309a468"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1481-1506",
+      "audit": "audit-38",
+      "interval": [
+        1481,
+        1506
+      ],
+      "manifest_sha256": "c0e8b742684a2ddd779dab59e8ea6c4043b1027c3e86d6fafc08bd64ee53b355",
+      "ledger_sha256": "649edb6fe6f8f030f21f3aa815b40ca7e98d5b46699363a6e6ff6866f55bb14c",
+      "summary_sha256": "647cbcbeb8ebafe0d5af69b08b755ed4bda8106fa42776068582000fcaf8bf47"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1506-1531",
+      "audit": "audit-39",
+      "interval": [
+        1506,
+        1531
+      ],
+      "manifest_sha256": "f41aa7f0a3a865c68450daa1f0d006a9ca538985a1dc25f49789d99d4a9c793a",
+      "ledger_sha256": "46012563be24d7d868950eda32f70a5d02fa71790b8e898cc175839a52af1549",
+      "summary_sha256": "76a3f31c3ad14953c9b3fa3eeb12c99a491e60f1a9935135c7b5afaa35210f0f"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1531-1556",
+      "audit": "audit-40",
+      "interval": [
+        1531,
+        1556
+      ],
+      "manifest_sha256": "a116c957851c4f9efaffdef217cfa3930ded8a927a6e81924c69c6a0f1f29a3b",
+      "ledger_sha256": "39ff940c6bf08203027155e4286a929b95918a3d16fbecd4f1d94ec95058daec",
+      "summary_sha256": "606add3970f3c4c77e5e53da66549e46a5276a05c5f621484e64cbcbe0f7d0bf"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1556-1581",
+      "audit": "audit-41",
+      "interval": [
+        1556,
+        1581
+      ],
+      "manifest_sha256": "07c196915194e277bd723d72bbb7b5e497343ace1dfe6a796cb8c6acbb806886",
+      "ledger_sha256": "8bdab79b8c4996eba1f32f9bf4cd4840c41d040554034367660306904414ba28",
+      "summary_sha256": "3b8c2057573dbef71f63ae68d9732fe0d156bc6c61e06f90da146ad3c97a6d52"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1581-1606",
+      "audit": "audit-42",
+      "interval": [
+        1581,
+        1606
+      ],
+      "manifest_sha256": "1de08040b18b8384d00bc136a145d3ba5fb9f27e8cd1a6d55cc93dfacd62b39c",
+      "ledger_sha256": "237a5bd8e98eb4f1e1ff43b00fbbec1feef257c8b822b47c07879826ba404ed1",
+      "summary_sha256": "dc3889bb8c7b122cde8449eeb1cbc5ebaff1450ce69c6e8ff7ad946118bbd1f5"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1606-1631",
+      "audit": "audit-43",
+      "interval": [
+        1606,
+        1631
+      ],
+      "manifest_sha256": "cb9dc2bedc5ae7cb10b5d3fabdd1ca6ac720c95bc7fb321dc5d4cee7c40799bc",
+      "ledger_sha256": "1dcc2b790ba9eae3f146ad5d5114bff0fd26907a8ebb01172f54d1c13214bd5d",
+      "summary_sha256": "17ccd41f7aed84ff1f9487735ee2aa51d1f696575b8baa819b9723d5e89c1a2c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1631-1656",
+      "audit": "audit-44",
+      "interval": [
+        1631,
+        1656
+      ],
+      "manifest_sha256": "59be6b398f1aede101f2c5096ffadab60912a0864da9eb8c98e31e58298b00ed",
+      "ledger_sha256": "586567d5cc6cdeb4d9a89fe1091902dad0314bf7dc36095b2224896fbcb17ac7",
+      "summary_sha256": "0867f93959ee91b6b070bc50a39623f47017700f019477af37f6fa2946d60e42"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1656-1681",
+      "audit": "audit-45",
+      "interval": [
+        1656,
+        1681
+      ],
+      "manifest_sha256": "28f5518d4f968ec8f2bf37f43d1da98ecfe00ea6fc2d778e53d8ca7b469ee1bd",
+      "ledger_sha256": "ab95a64b2572a4f476465be2c08dc6845291a9e9f125ba485a7bef2b542c93cf",
+      "summary_sha256": "b347a64b82eb05674b00f7b571e877739a8a324c6a9dfffb889a14e4f607a9a3"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1681-1706",
+      "audit": "audit-46",
+      "interval": [
+        1681,
+        1706
+      ],
+      "manifest_sha256": "7b0b8fa4b3518bcceb6d3d89e3c8d1e84eb699fd4a4b9ce603b250640eb03adb",
+      "ledger_sha256": "b98cc6c0f12ab8531754ed53324cd9cd7ea667777eb54696398e3a120897ea64",
+      "summary_sha256": "e7d3d7c03394a82bdef1165a7661e5310cd693aa42bceaf87a8b7c5e018160d5"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1706-1731",
+      "audit": "audit-47",
+      "interval": [
+        1706,
+        1731
+      ],
+      "manifest_sha256": "06c4af46b85674f43f01da69cdaabd04b1ec7287c629aa750caf868bde044181",
+      "ledger_sha256": "f7aa092cafd2c1d226fa8b56293d58e23be43ed256d8f63351364d254e4cc381",
+      "summary_sha256": "4e2fbdd5c79eebceb9ff5db1900aa6781d1ace06e918be9bcc0ee8b4441b067e"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1731-1756",
+      "audit": "audit-48",
+      "interval": [
+        1731,
+        1756
+      ],
+      "manifest_sha256": "f8a7597572e4cf95fc0a726ea95ca38ac3b7efb20e4c51e8b2bbb29076c281c4",
+      "ledger_sha256": "f2d083bd00c9431b110516db7ce93013bde34e8a2a153da7aef987af2f04b9fa",
+      "summary_sha256": "885b0749d4851702b3f7c8c9d67be00bd40662c3314ea0fa3b06a05e8b9f275d"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1756-1781",
+      "audit": "audit-49",
+      "interval": [
+        1756,
+        1781
+      ],
+      "manifest_sha256": "dfc0e3aa70382027c3a624e04019271cbef6e28b3f3ad4887303774bb77ad98a",
+      "ledger_sha256": "851033c5917c763f58ef3735a5aa8d89e25966e060dc1489b6032d0e2ee404d5",
+      "summary_sha256": "ae53faaa721120a0b99f389c256ddcc67e7ad5e9f5c331f3cd0ab34a2dd441ab"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1781-1806",
+      "audit": "audit-50",
+      "interval": [
+        1781,
+        1806
+      ],
+      "manifest_sha256": "f467a255c88223a17aa2d769d60635682e54cf008ada217123b3135f1b04b02f",
+      "ledger_sha256": "56bfc11d046156ca08597001edf431ef366453320f34f3d239c0160fab426b7d",
+      "summary_sha256": "ffb7a1d1135712270856209002cb7cd073e06db57e2b76865a79661933b85a8e"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1806-1831",
+      "audit": "audit-51",
+      "interval": [
+        1806,
+        1831
+      ],
+      "manifest_sha256": "ab011810083a05ba2537eb6f809c80bd013aef0dff1c2feabf8af37ac245c930",
+      "ledger_sha256": "f0b409825ad68892b705f6d8dddf3ae7083e653872eac694488bdc75bd5aaf64",
+      "summary_sha256": "2733ef751f5ebf58c9be07b13aedf7c26eb9ab2acac74e59aee764f7afb496e7"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1831-1856",
+      "audit": "audit-52",
+      "interval": [
+        1831,
+        1856
+      ],
+      "manifest_sha256": "359a6b8066e3fe34b500eeaade33758c7efcb23ddc11436d6dd3bfcfaaa1b4c7",
+      "ledger_sha256": "d08b10601978dcdbf4466a196bef18a17391594a199d293f382f5a8a65764709",
+      "summary_sha256": "9b3bda57d4b81abd9044d25c765261fc73b5857d60459760527fda5655fe7c28"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-001/download/runs/rows-1856-1881",
+      "audit": "audit-53",
+      "interval": [
+        1856,
+        1881
+      ],
+      "manifest_sha256": "c5e72a1b6d39dcc4073211c5ad4226057651261fcd90d52e1d68f10737d0f29e",
+      "ledger_sha256": "0751647a7fe8f4d5d12fc298ebf0f7df7939cdbd445a0c02b19c08f8f9e0497d",
+      "summary_sha256": "ebaf6c59ec8276f76c27d0314b302bc314f304b8321dff6ab031770d21b5a698"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-1881-1906",
+      "audit": "audit-54",
+      "interval": [
+        1881,
+        1906
+      ],
+      "manifest_sha256": "c8b351d3dd144b6e9102dde8e1277e90448c02ea1a36f1f1b9d26cdab708e5e8",
+      "ledger_sha256": "a78b54fd65924e7e1ee44f9b90933bc9d9aa31118db74d336255857f93b31da6",
+      "summary_sha256": "17f665a8d7a0d0291532470660792689a4bcfc65856167615f2075ea83c3b900"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-1906-1931",
+      "audit": "audit-55",
+      "interval": [
+        1906,
+        1931
+      ],
+      "manifest_sha256": "0b7beeb94fbbe177773d93ce747d88bb2262f37de4403ef4080162c4dd58e976",
+      "ledger_sha256": "c1f1b7d32bd94ea26de01e13d8ac0571db8cfb189c1a7316c0954a74d880c185",
+      "summary_sha256": "1fd96d1246152ca561f39e9f338c6639650f1e9c7f89629f42bb828da515d8e9"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-1931-1956",
+      "audit": "audit-56",
+      "interval": [
+        1931,
+        1956
+      ],
+      "manifest_sha256": "f1e42469c82ba0c3a6e602856b5c2e82a969db19034173a5458868340ff20654",
+      "ledger_sha256": "c2ce8261a89230dc5806f8e480622d212f7919514f269c3cd79908097d944238",
+      "summary_sha256": "39e2c564abe0e53a116f174f5fea57c957276c7a53d9695890fd23c3b1f4d8a4"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-1956-1981",
+      "audit": "audit-57",
+      "interval": [
+        1956,
+        1981
+      ],
+      "manifest_sha256": "d8c7261f485d79382f8f03813014b65504bd2cc0c277eec0f969ab6c9fa4485a",
+      "ledger_sha256": "a2a394bfab853fe4bacbbd94ada8851716bb4a26708fa4a9bab6625b6a8dbf0e",
+      "summary_sha256": "3f4713b92c774e3d833b6cd2c883d33db9fab81471cf5425b59319e5966ac4c3"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-1981-2005",
+      "audit": "audit-58",
+      "interval": [
+        1981,
+        2005
+      ],
+      "manifest_sha256": "ac23869dafec239ae110a63fba3f819b1c96bafdec64d21bda6c05d15b4be517",
+      "ledger_sha256": "96d8c0d141ef33c82eb333630cb44ce14028e02b007321ade19e3866d500835b",
+      "summary_sha256": "222d32cd91a911329e646af70eeae338741d337cd20f77b345dda2687e0ea602"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2139-2164",
+      "audit": "audit-59",
+      "interval": [
+        2139,
+        2164
+      ],
+      "manifest_sha256": "2361172f2906a9070d8c8fdf1d491cab9580d187f737714051d3d103bac3b343",
+      "ledger_sha256": "804bbcf13380f2b0020000add707d416e2e098577fc5c1ce1bde2c7691ca71bc",
+      "summary_sha256": "770c20d3a442a15ff162d171e8ee24cceae153fa8941dcfefc0575c8e30ee8e4"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2164-2189",
+      "audit": "audit-60",
+      "interval": [
+        2164,
+        2189
+      ],
+      "manifest_sha256": "04584caf1e74f195a5e539f21d15c26e475343076343ab91d43864deb4922b6d",
+      "ledger_sha256": "c305f0ef6d5ff3ee82941e7aa8995be264a6d12ee93e80d9525c467a26004a81",
+      "summary_sha256": "276af82fa6399ea1350a9d32dd3540ba9d58545f7d48af4830c329f18fbc11f4"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2189-2214",
+      "audit": "audit-61",
+      "interval": [
+        2189,
+        2214
+      ],
+      "manifest_sha256": "adc5734d4975c85592ab84b514b244684415ca9778ac8e1b850c8be695cce458",
+      "ledger_sha256": "33491dc9058f353f5700646421d75fac846cb262b319ae9b012986e53a33b844",
+      "summary_sha256": "8db6093e071d12cd2db75cb4b9fc5f0d97c81cd9aab2b13e14748e2e36a320d2"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2214-2239",
+      "audit": "audit-62",
+      "interval": [
+        2214,
+        2239
+      ],
+      "manifest_sha256": "234d997688da85d8529a167053a51dc3afe75fdc3e6f60a8b1e82a0bbe6b21ae",
+      "ledger_sha256": "a89c5b2d42ff5bd2746c6afef2f618c2ed95ddbec35c3f51e7e174444d83ffda",
+      "summary_sha256": "7a094a734ce6d1a60fb8fd590a5306bffc7e7a2f38adfddc81027ddef5107f5a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2239-2264",
+      "audit": "audit-63",
+      "interval": [
+        2239,
+        2264
+      ],
+      "manifest_sha256": "2aa0f37723a6eb63e23401893ab8289dc719410cc5ed903657033b9e223c77bf",
+      "ledger_sha256": "05d601798f225226f56431bf23ba9c22c1f9f175945540dbe98b69fd3c88afee",
+      "summary_sha256": "39ebf9ead146e1b394c3126b6ba95755473731f039f39fa72096dec13e8ffa2a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2264-2289",
+      "audit": "audit-64",
+      "interval": [
+        2264,
+        2289
+      ],
+      "manifest_sha256": "1491b50cdec8ee69d3c3d5e7e42a07f3a7525e056e37b9c155154e4c75266324",
+      "ledger_sha256": "f8dddd50f100d0e76854c4e89b8ed896926f7b0ccc35dffc28ef194c2a71b96c",
+      "summary_sha256": "5e3e5364f9e8e2b2b3a8704caec29bcb5b454a78d67f44506445da2c41c8c4de"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2289-2314",
+      "audit": "audit-65",
+      "interval": [
+        2289,
+        2314
+      ],
+      "manifest_sha256": "c18a2ed38dd6c8d672aecffd06eb76d2e2316c1da53e6d9e9e59c0641818a549",
+      "ledger_sha256": "cf9058f6d342bee8ee720ca89673e3be77be7457fcf50f4bf2b51b75fced7b0c",
+      "summary_sha256": "b91a39d4c8cc819e97f6ccee097445f6069fbe317bc5d6607c0a9e9a57330fc6"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2314-2339",
+      "audit": "audit-66",
+      "interval": [
+        2314,
+        2339
+      ],
+      "manifest_sha256": "8c89ea26af2d4fb1ca4e923e21194878aacfa4611a1d6dcc00543f0de473fd1a",
+      "ledger_sha256": "778c9f1e83928c8aee87a1066cba6362089ca0a1604db23cc8c8016fb306041b",
+      "summary_sha256": "e84b1659cee13e4f7a087beb52423305fa9594841c352807990aa08d5a9268a3"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2339-2364",
+      "audit": "audit-67",
+      "interval": [
+        2339,
+        2364
+      ],
+      "manifest_sha256": "272f5b437a474beebed7c253330c945f5a59412bf5400c25b5db23bc6ce337f3",
+      "ledger_sha256": "cdd47324052fdb00eae899a5e23b2e8cd8dd21ad4c645fbb9fdb4f89217a5dc0",
+      "summary_sha256": "16110e50074fbee822e5f8e1fbb9f1d88a89e054b2c1e80a7347860dbf3a9dab"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2364-2389",
+      "audit": "audit-68",
+      "interval": [
+        2364,
+        2389
+      ],
+      "manifest_sha256": "c027e9bca0042b1c1f98112b4a265d3ab8f6496278a8fee31ed95a667eb8c6ec",
+      "ledger_sha256": "626a716567d5471f13de6598417951dd49f47dd81af438e0eb26d96be6b6051d",
+      "summary_sha256": "ce1d00d683d0276b36a14299abcb381d3f1d622e7957d49100539efcd839558f"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2389-2414",
+      "audit": "audit-69",
+      "interval": [
+        2389,
+        2414
+      ],
+      "manifest_sha256": "135dc7b95c5a9e419705217ed1cfc5091584df74a39ad653eaaa21df780b29ce",
+      "ledger_sha256": "b920165b4a95a7e8855fd855fce82621bd0e59693f43a714167929332c074327",
+      "summary_sha256": "d9445a828257ef6ab7f9ffb74899974953cf2f8520c85a49835f01a6f36f00dd"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2414-2439",
+      "audit": "audit-70",
+      "interval": [
+        2414,
+        2439
+      ],
+      "manifest_sha256": "a592fd6d744f6326ed3f2c5063612e4c90a043dadb191b58ebfbbab9b504def3",
+      "ledger_sha256": "a6b364ffdb36e8ff62e0d0b36c74623308337d4df7d4cb0a09e5c455782b01d1",
+      "summary_sha256": "5c1abc1170314f2097b52eda3bd90678504277e67597ed8ce8633a93d8b70f4d"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2439-2464",
+      "audit": "audit-71",
+      "interval": [
+        2439,
+        2464
+      ],
+      "manifest_sha256": "7b923d03f7cf2aa689dbce2a872dbf050e98e094df996403ca6e6d62ae5d6f51",
+      "ledger_sha256": "08284f01aa586355b8595f38c7d300482c8d141dd7f261149a525d4cce130c7c",
+      "summary_sha256": "2335328337c0a04ac48864782883a6aae16e8bb9e1385d862ab592b2ec9ded4b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2464-2489",
+      "audit": "audit-72",
+      "interval": [
+        2464,
+        2489
+      ],
+      "manifest_sha256": "ddf684883ac8a5bcfe60ce5ac6f64ce9b3bc69946270ef08c160afae3db028cd",
+      "ledger_sha256": "d77baba7e3ba736a0a9bbf095d9929996739466d8673d8ab6725b2b53e8565e5",
+      "summary_sha256": "81392374a5a8c5874284bcb4ad4ded00cd11c894bbb566c44d82ab9b6946af32"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2489-2514",
+      "audit": "audit-73",
+      "interval": [
+        2489,
+        2514
+      ],
+      "manifest_sha256": "04fb5c1aec6aa951e859a05fe2520beaec2b78f0bc3114a8779710020626e53e",
+      "ledger_sha256": "3273d69bbf72ff2cee8eb9ca7a42e2ea569327ffcb71bcc16f2ea1fbcdf68ed7",
+      "summary_sha256": "d0dbbfe73da2a6db99493c06199feaffbdae75a1dad7cdc245d070293473d527"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2514-2539",
+      "audit": "audit-74",
+      "interval": [
+        2514,
+        2539
+      ],
+      "manifest_sha256": "811a8278f2969473bde0ed47aeb5192f46da9a6d87951e60be6d87247d4322f9",
+      "ledger_sha256": "3c6043eb0cb71aaee062151ba339a36377248f7149a42906334cc72894f4dcc6",
+      "summary_sha256": "dfe5a8ace9d7a4888055d2f3db9c71ae811b9e2e2868655ba8920339d45919c1"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2539-2564",
+      "audit": "audit-75",
+      "interval": [
+        2539,
+        2564
+      ],
+      "manifest_sha256": "733db99f14bcfbb4f4273127d6292e92e7778f8f51ee7cef92281bc2bd9c7815",
+      "ledger_sha256": "5a2416db9ac570c2cf263cbd1fa7632c4bcfb3193961257e6d48ca4fb1712a75",
+      "summary_sha256": "87d73c842571d609090542265b037a72479f5de0b5100af3a8ba56613a50135a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2564-2589",
+      "audit": "audit-76",
+      "interval": [
+        2564,
+        2589
+      ],
+      "manifest_sha256": "10b0af9b520c962fc5261796cf65d8a3183a8be77d9ccb203ce73c18e85dca9a",
+      "ledger_sha256": "0cc2288e84600065612da684bf9468b8742b57bffc598b8ac97d0f8b7b8fa3fa",
+      "summary_sha256": "12a846c5d55a502819822cef2a0a7639d1f773a82face2a40a45fba7f2f3722b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2589-2614",
+      "audit": "audit-77",
+      "interval": [
+        2589,
+        2614
+      ],
+      "manifest_sha256": "9b28fb956a4c3c8f1f8e813c36a633ef6e7b1e56a95dc4196d67c152381626bb",
+      "ledger_sha256": "4f52272067b3cc8666387e3cd1d5c0bab4257e34e834426f1d9d5b86c1299b2b",
+      "summary_sha256": "5cc90ff27a52a0ce0e16e8351ef85075651763832fa193bb3415c9fad6e401ff"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2614-2639",
+      "audit": "audit-78",
+      "interval": [
+        2614,
+        2639
+      ],
+      "manifest_sha256": "2d8120737ff919408bbd46c94fec782d295497aa84d9ac9ba6896877fa162d12",
+      "ledger_sha256": "eaa5012407401d556d17f5e45623f654b9e646ccf8428f4e11af29abba5e2da6",
+      "summary_sha256": "09801c5f7fc26be903c4e9775e8e06f0720e79dcb9e332c6850488c24fcd099d"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2639-2664",
+      "audit": "audit-79",
+      "interval": [
+        2639,
+        2664
+      ],
+      "manifest_sha256": "14077d6a7978f2746fe8fdb5b875869922fd8a565fa0d583e6c0791b77267cb4",
+      "ledger_sha256": "6886327684a8517ad04eb410ef08423a663fce2d46c5b00f1a9ea64882e01075",
+      "summary_sha256": "16788a7650a6f8db1936c5a9ba74e5375e4c309b807d13b1b953f65efd4009bd"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2664-2689",
+      "audit": "audit-80",
+      "interval": [
+        2664,
+        2689
+      ],
+      "manifest_sha256": "f17a99b8843b131c7d3b614f9c33d57c69ae444ef22145b4aa6da6abac64f2cf",
+      "ledger_sha256": "2229ab59b47b922b4b6613221dd8a8a00105ebde1cce652e835f57769101a21f",
+      "summary_sha256": "512c909b617e9fdf6a8bf8c35c1c6f7bdd0883b5a819ed39a348e208deccb9ea"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2689-2714",
+      "audit": "audit-81",
+      "interval": [
+        2689,
+        2714
+      ],
+      "manifest_sha256": "aa1fced6b0cd35321d94ee61bb99025a0bad98037c3b785fdd70d45c7dc7de69",
+      "ledger_sha256": "91444c52ad558c25f427bf560ee848b6af23710ac2e4a7d801928bbd62222c64",
+      "summary_sha256": "6cd5cb6141f6c5790d4c6b05d9e4dcaec1d5661528b4ea4701f1158e1f0e3c02"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2714-2739",
+      "audit": "audit-82",
+      "interval": [
+        2714,
+        2739
+      ],
+      "manifest_sha256": "b739c0e596f8148f68bcee2d2a74e8cb9696b2a22780cc4ed428d571e164b3c0",
+      "ledger_sha256": "f855417b3762f3cbc10028edde3aa04f8bc6398d69ea59b30ef81e6947a9da93",
+      "summary_sha256": "303fb5483ed586331526fec96c89adaab20f9fecbe77d9f14b1c3ad3dedce4a9"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2739-2764",
+      "audit": "audit-83",
+      "interval": [
+        2739,
+        2764
+      ],
+      "manifest_sha256": "0f4324f94875fe612d68df57bf872730884e798233737fc2d879d8f9847acd69",
+      "ledger_sha256": "283203fcd26b084a8e087a099d301e4e106452273436e914aa63e676d3fa0f49",
+      "summary_sha256": "18e961539beb3b6773f80db461baf6b668cfd0e2bc1dc9d35918f52e2f8c9524"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2764-2789",
+      "audit": "audit-84",
+      "interval": [
+        2764,
+        2789
+      ],
+      "manifest_sha256": "4e1143572fe04d01768145798cdf4feb30c9836490c57e080f3928de9dadfe55",
+      "ledger_sha256": "07ecad6ff1d1d82a0002a602141198dbe7151c1679871b3554d4229f56125dd6",
+      "summary_sha256": "4368a091cc27e1d6aaf77c91c3ceeb8f194d4c5cc817dbe769636da1d546225e"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2789-2814",
+      "audit": "audit-85",
+      "interval": [
+        2789,
+        2814
+      ],
+      "manifest_sha256": "a96655a4a640a424cceaf19ea682569ed7c5e6b54eb06f6a93cbbe662e5cc4e5",
+      "ledger_sha256": "27697d6bbcd8024bd049ffe7179604265cb1f534e18fd6f1930e52e779c8b5e8",
+      "summary_sha256": "7ae55b33125970b0c4028579a4a1663bedb8e81073fb158fc4de19633b31e78f"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2814-2839",
+      "audit": "audit-86",
+      "interval": [
+        2814,
+        2839
+      ],
+      "manifest_sha256": "645e339053cc8528da54babd8f8e79e6f1fb8c4d891ff8f19b2f98397458370e",
+      "ledger_sha256": "99f3934921642732f6c84acc18d49e73496b725ce38d258ceb07d688c1dfa769",
+      "summary_sha256": "bc16b3698815d3505991d394530b2bc0cf0b9785e181445d6d22c1226eba45d9"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2839-2864",
+      "audit": "audit-87",
+      "interval": [
+        2839,
+        2864
+      ],
+      "manifest_sha256": "2156388aa1cc45fbe502d0ef25b16daba8dd703a56641139f10bc832af9a2ce4",
+      "ledger_sha256": "f1cfe1b0c4ce02c572e72d1a479b3ee420d12f2c3b0a7d2d50cd8fb866736a01",
+      "summary_sha256": "6e5b58b415b27f512c1ea7f3bbfd1fbed9f0deeae66e311190b1ca3fcff1204a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2864-2889",
+      "audit": "audit-88",
+      "interval": [
+        2864,
+        2889
+      ],
+      "manifest_sha256": "dda762618532ca256f4f7e2a61812618e28b593ffe045a204dfb8d078c4b729e",
+      "ledger_sha256": "b86a8ab46b4d2d8adddab643f2e5ae3b1201060ca423bae29f6a72a7958d5d07",
+      "summary_sha256": "2d4a981d24abcfc684dad1a52a24e0ae52cb6e51356bb52de2a97112ba172e4b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2889-2914",
+      "audit": "audit-89",
+      "interval": [
+        2889,
+        2914
+      ],
+      "manifest_sha256": "e39037171160533d96a23edb05f602331b1819bd3afbd77e7a4bbb86082f3435",
+      "ledger_sha256": "0dcdc30900e12fdaa49aa83e3579154918970b9d85932755dc885c63ae89b632",
+      "summary_sha256": "991918e9f605dfc0c5095b4d80c45b31c3d4a7048814ff224e7e145569f0ff24"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2914-2939",
+      "audit": "audit-90",
+      "interval": [
+        2914,
+        2939
+      ],
+      "manifest_sha256": "5d35cba464b5ff08fb761634bdc1c42dfb36dcddaf7170a1859cd7c9a6ab8929",
+      "ledger_sha256": "9375bc5104845c2c6d3a00137fb1500209e6e4e69a607d8480425409a0d8c4e4",
+      "summary_sha256": "c99238c327cad2f0589a2a87be03a104994fa726d71294613f6757258ee769e1"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2939-2964",
+      "audit": "audit-91",
+      "interval": [
+        2939,
+        2964
+      ],
+      "manifest_sha256": "36520bd9121582b1f9dc739a7c3102af4d1b761ffdc00823c2e1a5082af6efd0",
+      "ledger_sha256": "1aa40774791603fe0ffbf03e7e8c8193032196f791ce0929c82a0983262e0531",
+      "summary_sha256": "1c66ee5616a70c14a434d6643ade6b50dd33ae4b5903b1a73d5f10f405d08d92"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2964-2989",
+      "audit": "audit-92",
+      "interval": [
+        2964,
+        2989
+      ],
+      "manifest_sha256": "2b13eb693b8e267e1273347945a43f0f5b528ced7390a0dcced61280dee82400",
+      "ledger_sha256": "7fea363066a5ba4d389611daa3f2f8d77f78ee2ad08f161208d33a372e9221b8",
+      "summary_sha256": "b2450e9ed340a2d8a9e06bce216baf36b97a500ce3d0fb5e5145e1a1684c0a69"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-2989-3014",
+      "audit": "audit-93",
+      "interval": [
+        2989,
+        3014
+      ],
+      "manifest_sha256": "baac409abafbccc03bcc530f3681e7cefb01fc481bc36566bf9d9875561a2e17",
+      "ledger_sha256": "368c6ea6425ef6c5bd0c73487eb586a33d2281f013ca42f99744a4e79a4e717d",
+      "summary_sha256": "85663fcdce038ecd2b6038971e00d16f929bb732f842d92066635df01817e996"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3014-3039",
+      "audit": "audit-94",
+      "interval": [
+        3014,
+        3039
+      ],
+      "manifest_sha256": "ad602e4978c4bdd3152afa1222b45f350167942d7c0308f182cae778d5991dd2",
+      "ledger_sha256": "005c64b54be27fc3f65a2f0cb3f5520390769514df768e76b4ab1c5d18b5ce12",
+      "summary_sha256": "50d9e6b50c2abe43937a8f59aaa00da169d516e3c8498a32741175f4251b4c2b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3039-3064",
+      "audit": "audit-95",
+      "interval": [
+        3039,
+        3064
+      ],
+      "manifest_sha256": "b91b05bdda91b8d0917cc7671bbf4b9e5a1d9f544ead2e98e8d9d512e4aa66f6",
+      "ledger_sha256": "d46448110fb07b9eba1349cbf8a5a829869f73155fdbeadaec067d537530f682",
+      "summary_sha256": "f64527fcd7bcce8ebb2f612b4a924a1858c0076a1da61dcea695d05fc61f3536"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3064-3089",
+      "audit": "audit-96",
+      "interval": [
+        3064,
+        3089
+      ],
+      "manifest_sha256": "4d64d3b448eb10a9c9f3543d55a765838a7b82fc4267929b8b1047148718715e",
+      "ledger_sha256": "dec00f91ba1603ca09f4001406ee2976cdb38ec73c0a882ed7a094e6dbded7ef",
+      "summary_sha256": "1862786f3e4357ee6bed3af8680860acef2062b5d4e2f1c68bf93ab23ecbbc51"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3089-3114",
+      "audit": "audit-97",
+      "interval": [
+        3089,
+        3114
+      ],
+      "manifest_sha256": "25a7319c1d486a127500c214322bae01112095b9d0082523547a9ed68be01c5a",
+      "ledger_sha256": "34f53250271b97d7e6d76707b2b1301c3a2823aa0385912e6dd1f80746ed6c75",
+      "summary_sha256": "25affa35225941a7803ae339d376567106990d9788e730e0d2bd020d1a8c09d3"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3114-3139",
+      "audit": "audit-98",
+      "interval": [
+        3114,
+        3139
+      ],
+      "manifest_sha256": "472c7c7caf118145b6714408b6bcb1da233420001c3c81b6fa64b918ac3c6a7e",
+      "ledger_sha256": "bc4ebf1879e15e8dc47341726bfa2a0c0c6980bcc7711f2dca21a076d7c30a4c",
+      "summary_sha256": "ac0a99bedf2461a562cd4156e10c3176c23fe0386efe6816aad3b68f67b44c5a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3139-3164",
+      "audit": "audit-99",
+      "interval": [
+        3139,
+        3164
+      ],
+      "manifest_sha256": "f45367e080d961f058c809e2c166d4b2f2c47ac58ec30f491e002225c75238c2",
+      "ledger_sha256": "fda886bff28eebc7fcd4f2ae887f01e637c1247399f2b3c5d0e193612aa34f79",
+      "summary_sha256": "52ae37c814ec4abe3db27be62b82caf29c68d20bb2ef6280cd8cf2b20e8a1093"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3164-3189",
+      "audit": "audit-100",
+      "interval": [
+        3164,
+        3189
+      ],
+      "manifest_sha256": "ef728ee380eaa80feeaa5b8bc0a82bea53bc9ecd7df2905dc22f1ba74cfab766",
+      "ledger_sha256": "42a0f11f689fba06ff39c5e1488fffecda29f7c9f30840aeb8e3bdadc286c7cc",
+      "summary_sha256": "3c599300d8dd0ef02c986a0bd15d1863e95996374de2be2664bf63d0d8346d6b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3189-3214",
+      "audit": "audit-101",
+      "interval": [
+        3189,
+        3214
+      ],
+      "manifest_sha256": "17f2bb259de4691428558404c8ad7a0beca6aa2fea5b17b426c4c4221bda7de9",
+      "ledger_sha256": "672e157db70f5aaa0e4addc7c7e5fbb6a08aac213463ccc46ad41c8bf097652b",
+      "summary_sha256": "1559a0937b17bbfeae9c126c3ca8b5b57cd65681a41313d1c545da982b8fb8d3"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3214-3239",
+      "audit": "audit-102",
+      "interval": [
+        3214,
+        3239
+      ],
+      "manifest_sha256": "4dd9cbc5e91aa671c147a2dfacbf8019347b69fd3ae7e0958405a78922a97f39",
+      "ledger_sha256": "23d645a266847b49b54404223ce3b69e151b8ca83fce302de673a5383bc9ca9b",
+      "summary_sha256": "5761f9287c9e2c7e981f157a7f5b22737ff9a291eb1a1512ecfd7b06fd452fd6"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3239-3264",
+      "audit": "audit-103",
+      "interval": [
+        3239,
+        3264
+      ],
+      "manifest_sha256": "7f1cac67e41ccffa53a112e611a1b8773ee27e945ca46ee062a2ac91d87f3419",
+      "ledger_sha256": "55253259676155ed75f1d7c398f34c99690e3ed79c1634da4857fa65c7fedec5",
+      "summary_sha256": "4129b7f27e2af93f025e84a0620170ee9407aedcacdaef7458a0f95022cb25f5"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3264-3289",
+      "audit": "audit-104",
+      "interval": [
+        3264,
+        3289
+      ],
+      "manifest_sha256": "d6993e267ac07069379562de5e1199bd59a6f85281ddf482e95accab1cfee17c",
+      "ledger_sha256": "5e0e49df7afc5240388e4ba5f6d025f13bd25c57b4d58b4e75f3a39f77736d25",
+      "summary_sha256": "44e8f515661fc1f12d536c6490ab1768491c972951242ea4d44ac709d82c1ce4"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3289-3314",
+      "audit": "audit-105",
+      "interval": [
+        3289,
+        3314
+      ],
+      "manifest_sha256": "ec43e891ad7dd528217069021bc5b49bb5db3643becb557867ac732a43aeec38",
+      "ledger_sha256": "e1c97ad2166a6249b66153fd25980f02e80c463ff13ef778741830b048fdaaa2",
+      "summary_sha256": "59689288ee805799f6252f7524c55050b2e51f5e5e0325cd8e0d8d0412d27f65"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3314-3339",
+      "audit": "audit-106",
+      "interval": [
+        3314,
+        3339
+      ],
+      "manifest_sha256": "fce09ec7f04ec0285ec52a3761132958ed362532f194d041cb9253658d6e35cc",
+      "ledger_sha256": "409cddc9e536be753ae25b64c675deeaa639857dc315e6b68fd5a1235f9c7572",
+      "summary_sha256": "36f9273e958d4be7702b9246af94d1128c64adc006d8939442fbeed28755c4fc"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3339-3364",
+      "audit": "audit-107",
+      "interval": [
+        3339,
+        3364
+      ],
+      "manifest_sha256": "83661273ef633f7d23f7736344973ab2e9465f4de98fecf1782048d997d3d6cf",
+      "ledger_sha256": "14322d0cd8e54d2973afb8b4bd987c7f5d35b7a336be7dad90404b21bbb935c5",
+      "summary_sha256": "9d9abb3b921b03abfccbff12a8dc962ba20543caa0b3d14f40be8f21af746f90"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3364-3389",
+      "audit": "audit-108",
+      "interval": [
+        3364,
+        3389
+      ],
+      "manifest_sha256": "62f41679e2cf4e330d42518ad93220ca0cd8923b6a66902bc71aa83eec33384c",
+      "ledger_sha256": "2d2bf8c0b0721ebc64cde421ee684b3d0e392f864fb664367547925c53ced2fd",
+      "summary_sha256": "65d91126cdd32d2d26a97d4f09be5b04099531030e49facca8d1af3d82f9a5aa"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3389-3414",
+      "audit": "audit-109",
+      "interval": [
+        3389,
+        3414
+      ],
+      "manifest_sha256": "57adce5b559bca307ccb00381e82753362e2483f37551eae1ed68ce218eb813a",
+      "ledger_sha256": "445755f7b7e2c69447124bf851e3c8d29ced1956ac54fc4a1506b115ac634085",
+      "summary_sha256": "87fbc59a3512b90e620fcd61130f3e6d982e6b4345b8fcf0f9ced8a84edb3087"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3414-3439",
+      "audit": "audit-110",
+      "interval": [
+        3414,
+        3439
+      ],
+      "manifest_sha256": "a6b60c94c0fb12d63bdd5d0a830323c32edcdc698173b44261902048c7fd773e",
+      "ledger_sha256": "215c3cebc5f7b3eda427d4b14b5af0fc520936d28a2f3dec913c8a743ba85c5d",
+      "summary_sha256": "4fbcfffee86cd5fdddc0110fa13a6d9b8e9e90731cc87927636560f56604b6ea"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3439-3464",
+      "audit": "audit-111",
+      "interval": [
+        3439,
+        3464
+      ],
+      "manifest_sha256": "d3948dfb076b3354698266a1e1afbfd2fcd4da6f7c867e128177d5fa98f6ba7a",
+      "ledger_sha256": "2af9745721e9351a9faf7cab1824e8eae3563d7797bb42a7900ee4d63b9a3fb3",
+      "summary_sha256": "86e83592cd7a3cdc68cfd7bc33714229c4779593b9d07f1fcc2c7b84187571c0"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3464-3489",
+      "audit": "audit-112",
+      "interval": [
+        3464,
+        3489
+      ],
+      "manifest_sha256": "dd462c04781611fc8bff1dbf2591a28dbe613d63e431b2c9754aeb6dfcd6e5d2",
+      "ledger_sha256": "3b7d8948d2e911eb1f184f5dd5a3b11dff0ab110c0040021896e4f7f1d3bad97",
+      "summary_sha256": "17bf0e0f2aff57bb397b3bcb743a69d221b4d2a3ad2c6c2ddc90259193633b28"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3489-3503",
+      "audit": "audit-113",
+      "interval": [
+        3489,
+        3503
+      ],
+      "manifest_sha256": "569a7399164537ebe93a98de4ffeab2978bd2d62a051f4e02386273fd527f2c3",
+      "ledger_sha256": "cd10ac9bc1b2312209aa281b53fe710cc320321dae41def58e2565f3f05bf2fa",
+      "summary_sha256": "85989ec6267e84ec8ba384ceb18e21fa6386efdc30ff3748e544e82cf24c0f2c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3631-3656",
+      "audit": "audit-114",
+      "interval": [
+        3631,
+        3656
+      ],
+      "manifest_sha256": "00bd28fae5d694298d67205018671ceff0cb8dab44fa2982ef9d955ae70b348e",
+      "ledger_sha256": "9eebbd15c96f43401e564ff6a7384d470219c84dd597df66bddcb770c668f196",
+      "summary_sha256": "8e25a128e59345d90a2e6b133e5fcf3350aadea821125cf00b5f7bb755626dc3"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3656-3681",
+      "audit": "audit-115",
+      "interval": [
+        3656,
+        3681
+      ],
+      "manifest_sha256": "f3be23666c93a6fbf85546a0f9ca9c66d51a5f6a75ee769130185e43a6302c99",
+      "ledger_sha256": "42b2089b4e0204d8af71fdd69a57db4b47b500aa39fc7f7351d4de77b467c436",
+      "summary_sha256": "89ccd5d6ff00a69b9fe8d643819de79dfde5ee7143af0c9b8967884485fee282"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3681-3706",
+      "audit": "audit-116",
+      "interval": [
+        3681,
+        3706
+      ],
+      "manifest_sha256": "3aacb30946b59e41072e5d6ac308d2346af2e7c1ecee7a9038acb664b6cfd83e",
+      "ledger_sha256": "5e7ee412b9e6de8e4322b7f63a3be2636ed4fd03b32020bd8165bb4af3e1f0a5",
+      "summary_sha256": "9f5233b75428b02f574a7a6462e4c53b0b3799faa5607f2c01b3d09acb9f1081"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3706-3731",
+      "audit": "audit-117",
+      "interval": [
+        3706,
+        3731
+      ],
+      "manifest_sha256": "5fdb1f13c5ede562e4468b308f397c268454404bfffabde1713f74350d530aad",
+      "ledger_sha256": "4ee63dd9df64221ecade5ceca440144b5436b17c3b2d6dd77dfb99cc2e926e51",
+      "summary_sha256": "f19c157523012cd2f199aa494d85a7e12d5a219b9ac77f7988ef280c72df1b5d"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3731-3756",
+      "audit": "audit-118",
+      "interval": [
+        3731,
+        3756
+      ],
+      "manifest_sha256": "be92350e9fa7d75bcf0dd5f76d5579ade4df1db90c6c7610319d1560c667fd69",
+      "ledger_sha256": "606f67dbf9046fb3a69f19f0bbc9b883b0aa3822791335f7053adf1552c09087",
+      "summary_sha256": "9f6ae484547a0345fdf879bc65a679c373f3737696f97f7dd351682220952e0c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3756-3781",
+      "audit": "audit-119",
+      "interval": [
+        3756,
+        3781
+      ],
+      "manifest_sha256": "f3ec8598d6f9e31529f6cc98ae01fea54a2fab9a672e87963466943e3697c0cc",
+      "ledger_sha256": "b36708e26315d898ca5a0817554611e07e98404c3ef0128cd404dbca42b3be4b",
+      "summary_sha256": "fe9c5379562713dada5fe45a8dc22675056240b45a9c0762e3626b6c464cc8dc"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3781-3806",
+      "audit": "audit-120",
+      "interval": [
+        3781,
+        3806
+      ],
+      "manifest_sha256": "a0a60b27986a9758dbe3e87e45f715bd8df939d971a8a4411b3b32bb7ba92a8c",
+      "ledger_sha256": "c8fddbf6c4e62c956916fbdfe8ed9484858b9d918ed53d4e69288705128c01c6",
+      "summary_sha256": "e43752027ec051f0d4a428b47f72021edb3dd71eb44bd5f0cbcf49c66acf3c48"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3806-3831",
+      "audit": "audit-121",
+      "interval": [
+        3806,
+        3831
+      ],
+      "manifest_sha256": "45759fa5e5d0037cfcb949ee6f6a8c97808b3185702f6b81321b6674dd858992",
+      "ledger_sha256": "4a7910a1fb25a7f3269fa1b41cf2367856102bcaf65f191665f12b37ebf97d35",
+      "summary_sha256": "4b4792ec50b40f85e65e9f14cfa8931f6e18679f61abb97383eaf34ce0ad5903"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3831-3856",
+      "audit": "audit-122",
+      "interval": [
+        3831,
+        3856
+      ],
+      "manifest_sha256": "955e27a8e2c8dce10f21d60881537e5910eb5635bd3d328458a1c4b5853170b7",
+      "ledger_sha256": "aa69c2ce7e40b8f6420d772b4b147793e0b617379f839677ad2b2b4347d76bef",
+      "summary_sha256": "8a3a6c0bd40f9a02c94ec1f07f58d9c42479065fde1521eb162d0cce6203dea0"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3856-3881",
+      "audit": "audit-123",
+      "interval": [
+        3856,
+        3881
+      ],
+      "manifest_sha256": "d700c37705d4665b7aee71fa89343555d5940e4480affb070bfede5f2053df82",
+      "ledger_sha256": "aa0345b726d63e7e1a6af7e81eddf0744462e9c30236a878950512425caad12a",
+      "summary_sha256": "39638a3a191b87065fd8798ba74940eeccc054ca710e36d0f5cec0651a5fa107"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3881-3906",
+      "audit": "audit-124",
+      "interval": [
+        3881,
+        3906
+      ],
+      "manifest_sha256": "c5187bc2ed02d0a75f57be7855ee2b78d7d294740929677a548a639c65286a5b",
+      "ledger_sha256": "1f548a6bb13df3c4ad00c0c8fdb01db7fc796f3a844f7b4cff57ec63f0a69abc",
+      "summary_sha256": "c44e07db8e34a17ce9de9e8e584068593e5440688cdfbfc0cd350069001680b0"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3906-3931",
+      "audit": "audit-125",
+      "interval": [
+        3906,
+        3931
+      ],
+      "manifest_sha256": "772aeb31157a306f971301e46cf313c745f2b29850631b37d51a5052d64c6d0d",
+      "ledger_sha256": "c66b2f23057f2ece422da0673d171833d21e68cb6c6c801b02e7eb905b65078e",
+      "summary_sha256": "c31899294f7cb7e74f233bcf21d1a25d533adb8e29ece545a1d40b13cd2df44e"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3931-3956",
+      "audit": "audit-126",
+      "interval": [
+        3931,
+        3956
+      ],
+      "manifest_sha256": "84fb1af19dee60ec7f0b6d8f19db09237419bd6461bdc8105ee5f843be6a5c77",
+      "ledger_sha256": "1a85fd2e12bac02870a0817193dadbf71f8f904821540d7cacb0d170073ffbb5",
+      "summary_sha256": "31a002f47696dd54135994b071f25da57fc34e5b2d32ef6ee212c87c9c4bb44c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3956-3981",
+      "audit": "audit-127",
+      "interval": [
+        3956,
+        3981
+      ],
+      "manifest_sha256": "37d46740834b8de9f1052733db200de322a7474944c457c5fabb2f0c94eca362",
+      "ledger_sha256": "323a230aad616f00328978004048ca62de2cbcbfa4ad6d52f8c8d1adbdc1ba83",
+      "summary_sha256": "e006f5ccb7c34f97932cddeda2fd96a3a4bf93dfa064bba6feb0fd3f1be23bbb"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-3981-4006",
+      "audit": "audit-128",
+      "interval": [
+        3981,
+        4006
+      ],
+      "manifest_sha256": "6a13cd688fa8a3a9b732a72a4fa9423ea5b19546a2f379ce0252511b4774a107",
+      "ledger_sha256": "19ed04ca9c312ea8b2c27e2926729a33b65936a2ae2c834d422802abf907c7a8",
+      "summary_sha256": "c9786b10e40d3c867623770a751318d63b2cd978bef11a2a0bcbe0d54a3c80c7"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4006-4031",
+      "audit": "audit-129",
+      "interval": [
+        4006,
+        4031
+      ],
+      "manifest_sha256": "8d91331b91ea1a52fdcf8e077d2c19330352001affdacca326954a43352ffe39",
+      "ledger_sha256": "7adaf9143a51062c9df440b2db86c9624dad0295099f35090ab16932c3dc0d1c",
+      "summary_sha256": "3fe190cd700f87fe1c89208ef685a3317fb861801b67ac453c742557cfa0f6a3"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4031-4056",
+      "audit": "audit-130",
+      "interval": [
+        4031,
+        4056
+      ],
+      "manifest_sha256": "e4ca328874f8ae0431ee738da6ddcb82520251b768c2f19f6e457962aa8aa17b",
+      "ledger_sha256": "d059e60ab2a39cb76f542b9eeee88c65d2a96d06d22ef572b4ae3717d651b0a1",
+      "summary_sha256": "cb7512e7b0af654e05cfd7427a9b6a79f2fb438240aeb9c02a73c0a2bfe3289c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4056-4081",
+      "audit": "audit-131",
+      "interval": [
+        4056,
+        4081
+      ],
+      "manifest_sha256": "c29600fe0d6c7c8d8a440f0e2e8d75f7b08ca479c3f4aba12f4f1e9095b1380b",
+      "ledger_sha256": "0d1cd409888381eab62cf9d582bdccb689e7cfd18315d3ad8947845a77ae546b",
+      "summary_sha256": "6c57b2f37db33b6640be9ea651f568517af8aee6f9333bccb225780d388da4b4"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4081-4106",
+      "audit": "audit-132",
+      "interval": [
+        4081,
+        4106
+      ],
+      "manifest_sha256": "32c1ea1f7b87626fe803698d8e4b38570180a3a6021cc8c252eb6afb9f05baa9",
+      "ledger_sha256": "1a6d7bd5fbed11af8bdb397d6f0c1d2ff85aec715b4c55bc0ebb4253fcc062a9",
+      "summary_sha256": "f7740da9865c63e322735cbc6533f1e5f31ba662fd39eb60e553062e88ef311f"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4106-4131",
+      "audit": "audit-133",
+      "interval": [
+        4106,
+        4131
+      ],
+      "manifest_sha256": "11cb0e23609798c835e93d44b7954c3fd5aaf0e45d8ae6a2bd6345697b6e323c",
+      "ledger_sha256": "bada90bc4bba33b0b4ba74fb6e953f16158c8cfdee45777412e78a74a7584bce",
+      "summary_sha256": "97fd953c51154a545f4538c36b0e721592a19c87c76349a4afbd7d72db0cbdf4"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4131-4156",
+      "audit": "audit-134",
+      "interval": [
+        4131,
+        4156
+      ],
+      "manifest_sha256": "9efb332e1c684fd193eb9066e111bb1cb6dced5b9548f893c69e8fc305eae13d",
+      "ledger_sha256": "a8cbb88b8507a5c795424f8e79e7d341c16dbfb9dc75326d71de86ddf932e1cc",
+      "summary_sha256": "873440c37cff905c137c14067c79986e6d20a3667498a21eb35b5377888d58e0"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4156-4181",
+      "audit": "audit-135",
+      "interval": [
+        4156,
+        4181
+      ],
+      "manifest_sha256": "6131eaef837a93fa433203644fda76aef5d7ad453664e9672108263ce689f872",
+      "ledger_sha256": "7a7995da265d38c8ac2486a5016da83cdf970deaaad37179942ea6665384053e",
+      "summary_sha256": "0d3d05e7cff36f62a2d59666785e8002124ad525d9cc4b85ad90ed734dc75b4a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4181-4206",
+      "audit": "audit-136",
+      "interval": [
+        4181,
+        4206
+      ],
+      "manifest_sha256": "8de0377e267aeb41590aee3f3e3bd8bcc94a69f7344be498ffc985d3506bb008",
+      "ledger_sha256": "838f8a7930fd04578007b848b1edeaf7b03903e25dea5c82fb7e4c3b1dc44666",
+      "summary_sha256": "be19efb41b76d14c78a4d8787110c1b14e8127065d16bb64d7cf672eb459cf1b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4206-4231",
+      "audit": "audit-137",
+      "interval": [
+        4206,
+        4231
+      ],
+      "manifest_sha256": "047df2dcafcc11dcb15895fc4ac499361f539acaec77e15e89de7b533851b6d8",
+      "ledger_sha256": "812bf807ee6e18522bb3513854f18703b9f8c9e4cc9093617912cd3521b7d5d7",
+      "summary_sha256": "0aaf110c46dd048bced45873b239794aefed4561b2e5db9c6363fe7c39da584d"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4231-4256",
+      "audit": "audit-138",
+      "interval": [
+        4231,
+        4256
+      ],
+      "manifest_sha256": "dd250095157904391c6f46c9b17c37f67050d44b52e20abec4861cc5cba9f56a",
+      "ledger_sha256": "ca2ceb3b9d156c575536b56d785b453988873d93b9eb66123081f75bdd3b5f3a",
+      "summary_sha256": "1ea7bd53cb8c8692d02d6f2694b87cbe71bf867c74456c773fc65672c139c58e"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4256-4281",
+      "audit": "audit-139",
+      "interval": [
+        4256,
+        4281
+      ],
+      "manifest_sha256": "97f6aac7bb969ef83fbb8ac76423a9eb6a7cf9ad92cee583e4497916e911329f",
+      "ledger_sha256": "3f1fe0d755c31264fe7b0e4e6f0dc7c81fff4466bb572a73cfb05f4fc424f335",
+      "summary_sha256": "efa595edbdfd243291c6239728de81c33ccde7b53a18b72ad03e2b198bbaeece"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4281-4306",
+      "audit": "audit-140",
+      "interval": [
+        4281,
+        4306
+      ],
+      "manifest_sha256": "0c3056d8027816fb1f300ca46416a67edc466b92afad9af42133b2e973e52e78",
+      "ledger_sha256": "ded938ba1bf7893d48e74c3f4b9a65f7b093835f7e39c4428fe37918c845c59f",
+      "summary_sha256": "c05118ecfbc9df56fd194ef7630c834584663ee06910151ceea71726ff495623"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4306-4331",
+      "audit": "audit-141",
+      "interval": [
+        4306,
+        4331
+      ],
+      "manifest_sha256": "7546b1acbabfca09330ee7f35282751b82c003393e2b3a00fd0706e2ee38907d",
+      "ledger_sha256": "e733a1e13e2c6ffab8da0e9496a8b64ffe29f8a7c32fa5f4f7c90f31fbc595ab",
+      "summary_sha256": "ac66f9e9224a15a02337177c2b62b332fa96982269bbdb02b812996f854f0437"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4331-4356",
+      "audit": "audit-142",
+      "interval": [
+        4331,
+        4356
+      ],
+      "manifest_sha256": "d0b7cc5484efdf25f3c53ffe549b1c64afc7c5509d582150c9c548dc74c0fbd0",
+      "ledger_sha256": "03ef59aee0930b26ae7698ff669663af8e101fc02c7060a87c8866f08d1f2f2e",
+      "summary_sha256": "c1382ab8d2c4af05688bb285683267e547af519b267ce54ddf4a930a1ba18689"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-checkpoint-002/download/runs/rows-4356-4381",
+      "audit": "audit-143",
+      "interval": [
+        4356,
+        4381
+      ],
+      "manifest_sha256": "d7277bacf676115b9a39406097a178449eb1cea51414ba3939932d2b13d3a788",
+      "ledger_sha256": "f8ba47edb4c71225c4de8764399a5988f118cb537334e4b40888cd2ad1c59534",
+      "summary_sha256": "2e3fc37c892829819c6586e9201deebaff51c5a32d2846ea93729659d6979a7e"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4381-4406",
+      "audit": "audit-144",
+      "interval": [
+        4381,
+        4406
+      ],
+      "manifest_sha256": "37b491ac472af68b40b2d3ddc1bcd193466842075e4bd7b04c7b87b909f8a518",
+      "ledger_sha256": "af595c96b8c4b4ca969a4b80867c39c114cd88e078339d8026dd5cf4b4ee2b98",
+      "summary_sha256": "9db43d38d2cd8120515e9541304afbe4383e05cb81736a9674a59d3ca089eb3c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4406-4431",
+      "audit": "audit-145",
+      "interval": [
+        4406,
+        4431
+      ],
+      "manifest_sha256": "36b4928a61117667e2e3f1f3b30b632df63bd7972abf0be091e08a128d759dfb",
+      "ledger_sha256": "c791e5c3918d5487f7abf66c193f812e53354b931ac2ddd997a83b32bc5b713b",
+      "summary_sha256": "d6da81bdb695d659cb72350ed5070590a9bc562390e914069c95eb18f2850b5c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4431-4456",
+      "audit": "audit-146",
+      "interval": [
+        4431,
+        4456
+      ],
+      "manifest_sha256": "2c31b6dca4b40bafb49198b34faed468b3dae0cffef32a89f38d0d00a236179d",
+      "ledger_sha256": "b4f6d4af362ac7b315ecb5b7210b842566409cb79ebb23d40119cf0b95ae8355",
+      "summary_sha256": "4b386daf9c5ae2e931aecb6ae75a4fd2d110f68aa73217ca94bc34ac3f459289"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4456-4481",
+      "audit": "audit-147",
+      "interval": [
+        4456,
+        4481
+      ],
+      "manifest_sha256": "3d9012e595a4aeb496836f2009292b62e697b9b16c1cd379453bfbecf83f4664",
+      "ledger_sha256": "87156073c797fb57ecdaa239a2f42bfbb21c5aff00bda0f626868a927251c5ca",
+      "summary_sha256": "d1a5ae00bafbafbfcf830da039be3cfa8e9db84b179558e169e7deb910b64984"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4481-4506",
+      "audit": "audit-148",
+      "interval": [
+        4481,
+        4506
+      ],
+      "manifest_sha256": "72d639d592cf723aa6e13ec780701625df689c56ce73e22f9a6f1f064d101df0",
+      "ledger_sha256": "088d73d1dca515bb2e26195bda36a20d432f089fed533ef0eee905109d7efdf8",
+      "summary_sha256": "6531b9b4703e8cb4005f176b68296f955221f516a666586a11e770973a645b4c"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4506-4531",
+      "audit": "audit-149",
+      "interval": [
+        4506,
+        4531
+      ],
+      "manifest_sha256": "63da5f022c5eb6a24fb26a4511d90df4c1aba298792946acca584139ce4e9665",
+      "ledger_sha256": "92990414fbff8dd25e682c4ad7564075b1eb3f2a27ddbc4ba9e0fa9d26d6ed26",
+      "summary_sha256": "edd025607de250843c8e4bc9b0b5259ffd30d1b1c58620c2343d70d75cfdd34b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4531-4556",
+      "audit": "audit-150",
+      "interval": [
+        4531,
+        4556
+      ],
+      "manifest_sha256": "e9dee0e011cd382e64f969aa2209875161bc6c9115ac15cdc61ceb2fe7d8fe10",
+      "ledger_sha256": "c69bad23e0b37f8a7092344a9ecc73a69b30bb76b0064b0c05f3c425ca921623",
+      "summary_sha256": "de2ca58347e71ed4a8243641fe2f2e2ea2dcade69f78e96b403d7386bc3fb439"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4556-4581",
+      "audit": "audit-151",
+      "interval": [
+        4556,
+        4581
+      ],
+      "manifest_sha256": "5f6fca87dcb79ffc0d702c59732b41882bc88869c39417e79157b72580605302",
+      "ledger_sha256": "15fa4292374a3c8cd9a42875ea6217e5aedd685c73dddb55f8d0d333d9c166e9",
+      "summary_sha256": "7701c85fecf3545e46c088da1342e35dc811e4a4f8e20208b689452e74d70b97"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4581-4606",
+      "audit": "audit-152",
+      "interval": [
+        4581,
+        4606
+      ],
+      "manifest_sha256": "3394ddf1788af20af30ef3d8e27ac1551023024ebcbd2f5dec19fb71828291cd",
+      "ledger_sha256": "c42b2e114cd1f04b590a3789e098dec984c9a1d6ca19aa1fa2fa2db50a164ae7",
+      "summary_sha256": "4b7203d246a01babe3eb3a7ea0cd46fa8bf0fb22ce0d759763c4fed67fe054aa"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4606-4631",
+      "audit": "audit-153",
+      "interval": [
+        4606,
+        4631
+      ],
+      "manifest_sha256": "e324f3b22d3867de30486d428ae8d8b915eb0d52f1ec415216e81e314045ce4d",
+      "ledger_sha256": "1b417b0b4ae49eb679c347a91ec2a3a758afbe00e36136ed50a0d7ae718dd6ae",
+      "summary_sha256": "9c3318b11e07b6573024053d4141697bfb075f859ed8cd2f4309f54f6c5c4a2d"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4631-4656",
+      "audit": "audit-154",
+      "interval": [
+        4631,
+        4656
+      ],
+      "manifest_sha256": "1ea5072b164e279071fe72e3dc461c31106c02a8f967be7eef507fc5adeef736",
+      "ledger_sha256": "27dddb84a9d3e19ae8c52611125fd6f171d2c91ed3d69c13e89f4026999a6ea1",
+      "summary_sha256": "1705205cc27b3eee3068073cf7273886e404e847db00aedab001fd336d6431e5"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4656-4681",
+      "audit": "audit-155",
+      "interval": [
+        4656,
+        4681
+      ],
+      "manifest_sha256": "25d4f32db050b6aebd3e9494b204fe5b09e030b06ff81f74803c63ffcbcb4c3f",
+      "ledger_sha256": "886d2862ac144ae3cbbebad9e87a4737020de5ccce4a3bee2ab0e7b0a0da5363",
+      "summary_sha256": "195961077096cd5c06ccd73a46f7222ee6ce0f15f55cb3f1ac16a0b84d7b4839"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4681-4706",
+      "audit": "audit-156",
+      "interval": [
+        4681,
+        4706
+      ],
+      "manifest_sha256": "52b4b29bec4a44ca2a1ddab8ee587d3a76bc51cc3c5233ea3544bbdc158b564d",
+      "ledger_sha256": "66d72224a35cb4423a8ba76cfd7e82609a28df2e0d349a5d0cedca9e38ffbf3f",
+      "summary_sha256": "f291e74c685990aeff2687b942c8752ba08d27c5937cdb646f0c684eca914a47"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4706-4731",
+      "audit": "audit-157",
+      "interval": [
+        4706,
+        4731
+      ],
+      "manifest_sha256": "37957cb661714922c9595d69954ce389d22e616e7efbc170d089d8215582024d",
+      "ledger_sha256": "f739a4fffb09fb1e75382249d0c5cbe88023ef53888f2b20e293d0f2c54cdeac",
+      "summary_sha256": "0ad992a8cd9bf2be7fda190c255024d400b6859ad3c699479d17734e88869516"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4731-4756",
+      "audit": "audit-158",
+      "interval": [
+        4731,
+        4756
+      ],
+      "manifest_sha256": "580beb1a556b174eb17b0bdba478f42861db6ad5097739415b571915f549945d",
+      "ledger_sha256": "5c3df09ac00c27a91fc29ca0b3d56b6b2a209cf7f4eac7eb89a508a142c7b4b5",
+      "summary_sha256": "59d3daa7410175720b8c51131af2dd1f4d0f8388f1216f2b8f225d86ad342fe5"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4756-4781",
+      "audit": "audit-159",
+      "interval": [
+        4756,
+        4781
+      ],
+      "manifest_sha256": "027a8e53e72a62acce1ba336c8a62cbabf8b50345a8b0a3090d3515b40200604",
+      "ledger_sha256": "d4463229d25fc83af3fb7aa8b660f1ee100cb9d8a40aff410a34e8240faba6ac",
+      "summary_sha256": "981fee3df9943f119e76e226f22247b35d07d8a6a650f56b0abf7d4ef8ed267f"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4781-4806",
+      "audit": "audit-160",
+      "interval": [
+        4781,
+        4806
+      ],
+      "manifest_sha256": "4fec2e39a775856bc7c2a5164be8ad7d84cfa7d1e37459dc4404ec058faa884a",
+      "ledger_sha256": "70b9309576f49c7807aac3cac7ade2bcd5bb29abd8f10cbc0d464a2a45faa9ee",
+      "summary_sha256": "9550a5c328ea3837ed77fb4330141d987d533fe7e4cdf00f58179dc556a364dd"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4806-4831",
+      "audit": "audit-161",
+      "interval": [
+        4806,
+        4831
+      ],
+      "manifest_sha256": "cf3085d92e7884f94ca4294126db473579e7445d2aadc68fa70865fa72602e12",
+      "ledger_sha256": "63b7b569d47ee9339d4a92fc7c869760ab0a672f8d6a2fd1106b67919165754f",
+      "summary_sha256": "877bea300b6f003613f48aac0209caf01b8611f1e867c142c5c5b4f5436ed246"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4831-4856",
+      "audit": "audit-162",
+      "interval": [
+        4831,
+        4856
+      ],
+      "manifest_sha256": "4993b06281d9875249a6bb0a757582979dbf09b5582de83d962a644fec0ef309",
+      "ledger_sha256": "dd7847b42c9234556e0fad9a35f04a7ca4c5a774f3324e21c43108a5a8de7e30",
+      "summary_sha256": "dc5326aa56287cfff44d4249563aa46bdb8845c4b5ebe9ff2391084f02fe030b"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4856-4881",
+      "audit": "audit-163",
+      "interval": [
+        4856,
+        4881
+      ],
+      "manifest_sha256": "a9722d971eb559c059d27ca8660a10efbe8ebad0e217a476d9e7df236d69a71f",
+      "ledger_sha256": "c7814dbbc1e3c8c68cd9997fc4f468dabb7ec546449317b727cfdd11234b7a38",
+      "summary_sha256": "02371f91706604a421002a07adf6fbe54fd62f2d12c4d0deac4538a930f3009a"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4881-4906",
+      "audit": "audit-164",
+      "interval": [
+        4881,
+        4906
+      ],
+      "manifest_sha256": "82ca9dfddcf98a09e5fef58c65b7a3bc171a59d83e29fa979315ce8692f17be9",
+      "ledger_sha256": "f67e7862865d0bfe9d62d7184e0fe72e9d3911f2c3b1ea05fda4001927f87ecc",
+      "summary_sha256": "5f1928ddd76cf9d643bf8b86df6be1c04c8cd77bb5ab4d4f3db3c55d9a987b5e"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4906-4931",
+      "audit": "audit-165",
+      "interval": [
+        4906,
+        4931
+      ],
+      "manifest_sha256": "3de07bba77c0e89ab865b83b120854b9fffc1622eea30632261f779aa3626b97",
+      "ledger_sha256": "871afd5c483227ef247e5e3ea4472c0cb1a54b405c6cc8c7843b7b41ff1ccf35",
+      "summary_sha256": "26d8ed034ac9851a79c78f9fa4c00a06500c5c0bcc69d91cde06f73e9c785fce"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4931-4956",
+      "audit": "audit-166",
+      "interval": [
+        4931,
+        4956
+      ],
+      "manifest_sha256": "7006613ad479ebab0e3c871101c1e0c806eb2dff7cea1bc77b0f67c51029ed75",
+      "ledger_sha256": "0aa7ec61484339faa56323ec8e30aa952ca43164902844c6e38723c895249182",
+      "summary_sha256": "aadab5b4edf33454488b8c1ac3aefd52259dae86a99e58608c1106d54618ae34"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4956-4981",
+      "audit": "audit-167",
+      "interval": [
+        4956,
+        4981
+      ],
+      "manifest_sha256": "5ad16e77a9cd3161dc1ddbdf567e156f3de16246c08bfb5d8123c21e538006d5",
+      "ledger_sha256": "49b2cdac6b4c780f1fe19c92e2ddae78cb480323668472a6f45cb6a79934bebc",
+      "summary_sha256": "64e240724b45b827e6f0e7218a3b592f2d8cb8cd9d3a45dea4553dbb7a7df026"
+    },
+    {
+      "run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-final-delta-002/download/runs/rows-4981-5000",
+      "audit": "audit-168",
+      "interval": [
+        4981,
+        5000
+      ],
+      "manifest_sha256": "95a246b8428f1f7d1df6df84f66c78605dd881226df1fbc52cbad160530bef14",
+      "ledger_sha256": "f0418a7cfd216b42e2c1d9d6574c7bc42fb699aa893a37d431803fb9ee11833f",
+      "summary_sha256": "c250118e3d0f84bae4ea7c457e3a1cf13cce3da5a94263f8281c2b07db835a27"
+    }
+  ],
+  "scope": "Audited independent-run integrity and original-row ordering. No native-distribution, estimator, or paper-equivalence verdict.",
+  "summary_sha256": "ca4125920859ddbfb528ef9d7ae7ec8c635804a8eaba45069fa8578e37cb2f9f"
+}
