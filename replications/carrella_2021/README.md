@@ -1025,3 +1025,8 @@ comparisons do not establish equivalence or complete the paper.
 ### Validated observation-level checkpoint recovery
 
 [The complete interruption/recovery control](results/checkpoint-recovery-2026-10-18) preserves all five degree-one fold objects and random states exactly. It supports the long independent neural-network workflow without changing estimator settings. The former non-checkpointed attempt was stopped before its first fold completed; its evidence remains retained. The new full workload is running and is not counted as a completed result.
+
+## Completed-fold recovery
+
+[The full-workflow recovery control](results/fold-recovery-2026-10-18/README.md) reuses three saved folds and recomputes two with identical predictions, random states, aggregate objects, and metrics.
+The live forest and generalized additive model runs remain unchanged; their incomplete results receive no replication credit.

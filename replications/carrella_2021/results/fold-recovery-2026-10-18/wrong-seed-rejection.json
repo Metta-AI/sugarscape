@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/homebrew/bin/Rscript",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-fold-resume-001/resume_folds.R",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-estimator-inputs-complete-001",
+    "sabc_1d",
+    "1250",
+    "1",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-fold-resume-001/wrong-seed",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-fold-resume-001/first-three-folds"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Error: identical(readLines(file.path(checkpoint_dir, \"arguments.txt\")),  .... is not TRUE\nExecution halted\n"
+}
