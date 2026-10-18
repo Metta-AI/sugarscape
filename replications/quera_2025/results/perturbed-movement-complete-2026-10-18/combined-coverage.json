@@ -1,0 +1,20 @@
+{
+  "cases": 9216,
+  "seeds": 256,
+  "seed_bounds_inclusive": [
+    3,
+    258
+  ],
+  "agent_updates": 22118400,
+  "cell_updates": 552960000,
+  "maximum_state_error": 0,
+  "outside_mask_moves": 144536,
+  "occupied_destination_moves": 8001,
+  "qualification_cases": 36,
+  "continuation_cases": 9180,
+  "continuation_audit_sha256": "fbd9ad1ab54c13e4e12f4542da9b4edbf9e68f6a03de70f7b4c0768ee7311c57",
+  "native_trace_local": "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-perturbed-movement-ensemble-001/native",
+  "native_trace_storage": "relh-sugarscape-evidence-20261017/quera-perturbed-movement-ensemble-001/native/",
+  "storage_status": "Upload in progress; successful local audit is established independently. Do not infer remote readback from this manifest.",
+  "scope": "Complete diagnostic perturbation grid, not the missing historical gradient experiment or calibration protocol."
+}

@@ -206,7 +206,7 @@ A failed aggregate-equality assumption exposed 4,632 differences no larger than 
 
 ## Perturbed gradient trajectory replay
 
-[The complete seed-3 qualification](results/perturbed-movement-qualification-2026-10-18) validates all 36 parameter/step/sign cases. Native passive-state hashes and all 900 archived plus/minus aggregate values match exactly. Independent replay checks 86,400 agent updates and 2,160,000 cell updates with zero state error. All 256 previous baseline results also reproduce exactly. The disjoint remaining seeds 4–258 are running under a two-hour limit and 2 GiB free-space guard; no unfinished case receives credit.
+[The complete seed-3 qualification](results/perturbed-movement-qualification-2026-10-18) validates all 36 parameter/step/sign cases. Native passive-state hashes and all 900 archived plus/minus aggregate values match exactly. Independent replay checks 86,400 agent updates and 2,160,000 cell updates with zero state error. All 256 previous baseline results also reproduce exactly. The disjoint remaining seeds 4–258 have now completed; the complete audit is described below.
 
 The trace command now requires an explicit profile and inclusive seed bounds, and writes compressed CSVs:
 
@@ -216,3 +216,11 @@ python replay_movement.py NEW_TRACE ORIGINAL_GRADIENT_ENSEMBLE NEW_AUDIT --profi
 ```
 
 Use `baseline` instead of `perturbed` for unperturbed cases. The auditor preserves its existing `gradient-ensemble` profile for retained historical uncompressed evidence. Neither profile establishes the paper's missing experiment settings or calibration result.
+
+## Complete perturbed trajectory replay
+
+[All 9,216 diagnostic cases](results/perturbed-movement-complete-2026-10-18) now pass independent replay: 256 seeds × six parameters × three finite-difference step sizes × two directions. The 36 qualification cases and 9,180 continuation cases are disjoint and exhaust this declared grid. Replay verifies **22,118,400 agent updates and 552,960,000 cell updates with zero state error**.
+
+The continuation exited zero in 866.5 seconds; its separate replay also exited zero. Compressed per-case audits, native manifests, passive parity records, executed Julia source, Python auditor and exact commands are retained. The 1.91 GB native trace remains local while its object-storage upload runs; the coverage manifest distinguishes upload status from local audit evidence.
+
+This validates the reconstructed diagnostic trajectories. It does not recover Figure 11’s historical experiment settings or the missing prior/loss/validation configuration and 5,000-epoch calibration. No whole-paper completion is claimed.
