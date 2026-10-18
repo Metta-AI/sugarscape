@@ -1,0 +1,16 @@
+{
+  "dependency_archive_sha256": "0a4f39b1e9fffe50d6dfaa9c0b04977e510fae8b6bd3d7abb7076e8aa8f01345",
+  "stats_source_sha256": "8db95a0192cfbbe316b6ba7f02da7fbdb4041883a416d5ae52163f46ffda4285",
+  "simulation_revision": "f5851488bf2369e2bbdc3f2499ed69c142de9fec",
+  "simulation_source_sha256": "7e396334956c00bb75e30478b55e7bfb1b3f5cce9e006cfcdc3ddabd76917274",
+  "observations": [
+    "Each tracked transaction increments its attempt counter through atomicModifyIORef before executing the STM action.",
+    "After atomically returns, global counts atomically add one commit and attempt count minus one retries.",
+    "Printed ratio is floating-point retries divided by commits, rounded to two decimal places.",
+    "No capability-dependent branch exists in this counter implementation.",
+    "Simulation posts each agent result after runAgentStep returns, and the step waits for all agent results.",
+    "Instrumentation adds shared-counter operations and the author source explicitly warns of performance impact."
+  ],
+  "interpretation": "Source inspection does not identify a 32-capability arithmetic or aggregation special case. It does not establish historical runtime/scheduling equivalence or explain the published discrepancy.",
+  "completed_study": false
+}

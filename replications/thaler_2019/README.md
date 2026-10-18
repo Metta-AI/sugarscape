@@ -768,3 +768,18 @@ The experiment exited zero and its complete archive was collected and verified.
 The dedicated instance is confirmed stopped, with its disk retained. Remaining
 Table 8 conditions, Figure 5a fidelity and discrepancy interpretation still
 prevent whole-paper completion.
+
+### Second continuation timing and counter inspection
+
+[The next sealed checkpoint](results/timing-continuation-second-2026-10-18)
+adds sequential rebirth with 500 agents: 41.621252 seconds, R² 0.9999954294.
+Its four raw samples independently reproduce the fit; the earlier continuation
+row remains identical. Tables 6 and 8 now cover 43/45 conditions and 172 raw
+measurements. Sequential 2,500 and TArray 2,000 remain outstanding.
+
+[Counter-source inspection](results/table9-complete-2026-10-18/counter-source-inspection.json)
+confirms floating-point retries/commits and atomic count aggregation, with no
+capability-specific branch. Agent results are posted after counter updates, and
+the simulation waits for all agent results each step. This identifies no
+32-capability arithmetic explanation. Instrumentation affects scheduling;
+historical runtime equivalence and the published discrepancy remain unresolved.
