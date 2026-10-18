@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T21:37:24.467992+00:00",
+  "as_of": "2026-10-18T21:41:23.212312+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -243,15 +243,15 @@
     {
       "study": "oremland_2014",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
-      "checked_commit": "7906fcbc2d899acd85ed7b4355551d137683d810",
+      "checked_commit": "d85d63eb0ff3232568620e113ff8cca34acba803",
       "status": "running",
       "readme": "replications/oremland_2014/README.md",
-      "readme_sha256": "1f152f96c5ad020496c0ff44ed3d923d2c65e662d552f70c22f5d638276defd8",
-      "json_evidence_files": 61,
+      "readme_sha256": "6aaed6598aa3d6a9e606255a13e35b610b77005042862f8ff28687e275a0d512",
+      "json_evidence_files": 78,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T21:21:30.047897+00:00",
+      "checked_at": "2026-10-18T21:41:23.212312+00:00",
       "evidence_scan_scope": "All JSON files under replications/oremland_2014",
-      "remaining_scope": "Full-size diagnostics and the 20,000-run convergence reconstruction are audited. Reduced-model qualification covers 12 distinct models; full-size reference trajectories remain exact. The first four ranking cases complete 172,200 native runs and 344,400 input/output records, with 1,920 kappa values verified using exact rational arithmetic. The initial 40x40 ranking differs from Figure 10; no validated negative-replication claim is assigned. The 2,538,400-run reduced ensemble remains active, followed by 10,000 independent full-size comparisons. A post hoc 37,600-run diagnostic with globally unique seeds is queued afterward to isolate shared-seed coupling; it uses its own independent reference. All batches preserve four-worker limits. Original controls, stream design, reduction conventions, ranking/error-bar procedures, optimization and transfer remain unresolved. No new completion credit."
+      "remaining_scope": "Seven reduced models now audit 428,400 complete native ranking runs; independent full-size comparison adds 10,000. Small-grid GUI extinction crash reproduced and repaired by removing plot callbacks from headless adapter; all 400 reference results remain exact and extinct case completes 50 steps. Four incomplete small-grid models rerunning under qualified adapter (2,110,000 runs, four workers, one-hour bound). Separate 37,600-run unique-stream diagnostic exited zero but awaits its design-specific audit. Original controls, code, reduction and ranking choices, uncertainty bars, optimizer and transfer remain unresolved; no completion credit."
     }
   ],
   "study_prs": 18,
