@@ -2,7 +2,7 @@
 
 Paper: [published chapter](https://doi.org/10.1007/978-4-431-71307-4_20).
 The [published eight-page PDF](https://people.cs.gmu.edu/~sean/papers/Replication07.pdf) was recovered from the author’s current faculty domain.
-Status: author-source discovery, compilation, and deterministic pilot. **Not a completed replication.**
+Status: historical releases and all seventeen showcase configurations executed; source and population-accounting discrepancies remain unresolved. **Not a completed replication.**
 
 ## Author source and historical limits
 
@@ -11,7 +11,7 @@ Pin: `2baa2e411f1be3e8da5e352de98468b42db3d75d`.
 Its README identifies Tony Bigbee as the author and includes the thesis, conference draft, outcome configurations, and runtime dependencies.
 The source and included dependencies retain their original license notices; the README identifies Academic Free License 3.0 for the main implementation.
 
-This is a **2011 release**, not an authenticated 2007 experiment snapshot.
+The mirror is a **2011 release**. The separately recovered 1.1.2 archive is described as a 2007 release, but neither authenticates the paper’s experiment snapshot.
 The earliest mirrored commit already updates version 1.1.2 for MASON 16.
 The README explicitly warns that bug fixes after the thesis can change outcomes.
 The published chapter discusses MASON 10; the earlier draft discusses MASON 8. Historical source recovery or a documented version comparison is necessary before interpreting disagreements.
@@ -173,3 +173,12 @@ For `fig3-4`, final reported/grid/registry populations are 323/321/0; for `fig3-
 The earlier missing-newborn and occupied-cell defects therefore persist with the MASON 10 framework.
 This rules out upgrading the framework alone as the explanation for those defects in the recovered model.
 It does not establish that the paper used this model revision or justify a negative paper-level verdict.
+
+## Historical download catalog recheck
+
+[The complete Google Code download catalog](results/source-catalog-2026-10-18) lists only versions 1.1.2 and 1.1.3.
+The 1.1.2 checksum matches the previously recovered and executed archive.
+Its description dates the release to 2007; the catalog upload occurred in 2011.
+Those dates are not interchangeable and neither proves which revision produced the paper’s results.
+The bundled MASON 12 versus reported MASON 10 mismatch remains, as do the native accounting defects.
+No earlier experiment snapshot was recovered from this catalog; other historical distribution sites remain possible.
