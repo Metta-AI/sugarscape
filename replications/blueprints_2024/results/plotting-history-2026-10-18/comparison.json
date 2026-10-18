@@ -1,0 +1,59 @@
+{
+  "historical_definition_commit": "cc0408afbb09d8d124ce6f7e6b1844d202d0f8b6",
+  "date": "2024-08-23",
+  "source_sha256": "dded8a707026aca8a07e55f72594b199cbfc939aabd9bdf7b4ae573997d7ae67",
+  "verified_source_expression": "dataset[model]['metrics']['agentStarvationDeaths'][i] + dataset[model]['metrics']['agentCombatDeaths'][i] + dataset[model]['metrics']['agentAgingDeaths'][i]",
+  "definition": "(starvation + combat + aging) / population * 100",
+  "all_four_match": true,
+  "comparisons": [
+    {
+      "model": "raw",
+      "source": "replications/blueprints_2024/results/raw-figures-2026-10-17",
+      "deaths_csv_sha256": "4f5c8c9010d5b1aa339f86e7d7514bacb6d5bba1d16514b6dd4e6ac63580dceb",
+      "means_csv_sha256": "008e6e07cd37638985e95fb716aa55afccc724429fc59a7f46b3c1f895bfaf9e",
+      "timesteps": 5001,
+      "disease_deaths_zero_at_every_timestep": true,
+      "matched_vertices": 4996,
+      "maximum_error_pdf_points": 0.0036989506330655786,
+      "threshold_pdf_points": 0.005,
+      "final_ratio": 0.015557860423766485
+    },
+    {
+      "model": "altruistic",
+      "source": "replications/blueprints_2024/results/altruistic-figures-2026-10-18",
+      "deaths_csv_sha256": "72fb8c0b03dec585b7e65a0d706d9b7a8d1fc7770d0ee39511f651c270d2afc4",
+      "means_csv_sha256": "56aca9e8fc2090fba610c0ae72ca9407f5aedbae7e72783b0c7dee82978f1e4f",
+      "timesteps": 5001,
+      "disease_deaths_zero_at_every_timestep": true,
+      "matched_vertices": 4995,
+      "maximum_error_pdf_points": 0.0037003333032998853,
+      "threshold_pdf_points": 0.005,
+      "final_ratio": 0.014280928789294593
+    },
+    {
+      "model": "egoistic",
+      "source": "replications/blueprints_2024/results/egoistic-figures-2026-10-18",
+      "deaths_csv_sha256": "941116dd8036f166d3cc0b3da9099ae1c62dea5b5fa313b2132d6900aa7449cb",
+      "means_csv_sha256": "9a85777a999e7aff67a786f6f209cf93b9b16d0995d6c9042073d3b6a3bec4d2",
+      "timesteps": 5001,
+      "disease_deaths_zero_at_every_timestep": true,
+      "matched_vertices": 4992,
+      "maximum_error_pdf_points": 0.0039215612954421886,
+      "threshold_pdf_points": 0.005,
+      "final_ratio": 0.015011024633850735
+    },
+    {
+      "model": "bentham",
+      "source": "replications/blueprints_2024/results/bentham-figures-2026-10-18",
+      "deaths_csv_sha256": "586bc31e7d589b6d76fbe90c0d29b152466dd1731bfe7ebe6b1b931fb9521491",
+      "means_csv_sha256": "ad67ce45eb0b35bf1823c4d2924ce8291e513dc15464cf50a5f0f5cbffeb3a9d",
+      "timesteps": 5001,
+      "disease_deaths_zero_at_every_timestep": true,
+      "matched_vertices": 4987,
+      "maximum_error_pdf_points": 0.004066644004637965,
+      "threshold_pdf_points": 0.005,
+      "final_ratio": 0.016826258856599
+    }
+  ],
+  "scope": "Released definition predates paper submission and is numerically consistent with all four Figure6 curves. Exact historical plotting revision remains unidentified; disease is omitted in this release but is zero throughout these ensembles."
+}

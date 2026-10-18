@@ -7,7 +7,8 @@ All **2,000/2,000 original homogeneous configurations** are complete and audited
 All four Table 3 rows match the published counts exactly under the released plotter's classification.
 All four models now have complete published-curve comparisons; [Bentham](results/bentham-figures-2026-10-18) adds 24,229 vertices across five figures.
 Figure 6 matches all-cause deaths for all four models, while the released plotter counts only starvation and combat.
-The historical plotting discrepancy remains unresolved.
+[The pre-submission v2024.3 plotter](results/plotting-history-2026-10-18) adds aging deaths and matches all 19,970 Figure 6 vertices across four models.
+This explains a released definition consistent with the paper; the exact historical plotting revision remains unidentified.
 [The Bentham released-parser check](results/bentham-parser-2026-10-18) also matches all 30,006 independently aggregated values.
 
 Latest deposited-runtime coverage is **873/1,200 inputs and 2,800,520 observations**.
