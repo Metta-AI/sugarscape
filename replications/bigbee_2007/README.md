@@ -186,3 +186,7 @@ No earlier experiment snapshot was recovered from this catalog; other historical
 ## Archived author download page
 
 [The December 2008 author-page snapshot](results/author-download-page-2026-10-18) pairs release 1.1.2 with MASON 12 and displays a November 25, 2007 release date. This corroborates the framework pairing before the 2011 mirror. Links to versions 1 and 1.1.1 were recovered, but their package bytes were not. The paper’s MASON 10 experiment snapshot remains unidentified.
+
+## Archived source working copy
+
+[The Google Code source snapshot audit](results/source-working-copy-2026-10-18) verifies all 870 ZIP entries and retains Subversion metadata plus core sources. Revision 24 has 2011 directory-change dates and identifies bundled MASON 16. Trunk and branch core files are identical; agent and reproduction rules match release 1.1.2 after newline normalization. This working-copy snapshot does not recover the historical paper revision or provide completion credit.
