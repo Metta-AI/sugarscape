@@ -1,0 +1,60 @@
+{
+  "title": "An Overview of the Quartz Modelling and Simulation Framework",
+  "year": 2018,
+  "doi": "10.5220/0006864201200127",
+  "paper": "https://www.scitepress.org/PublishedPapers/2018/68642/68642.pdf",
+  "framework": "https://github.com/RomainFranceschini/quartz",
+  "status": "Candidate source discovery only; Sugarscape implementation and experimental configuration unrecovered. No execution or completed replication.",
+  "paper_evidence": "Publisher-indexed text identifies Figure 6 as a Sugarscape demonstration using DPDEMAS. Full PDF retrieval returned HTTP403; no complete claim inventory yet.",
+  "current_revision": "752645b19c6dd8fd78ec39d6d190bf3cb6f0a06e",
+  "historical_candidate_revision": "2c320961151bfc53c0e77606e5ac1c0f308a40e3",
+  "historical_selection": "Last repository commit on or before July31,2018; chronology only, not paper-version proof.",
+  "tree_audit": [
+    {
+      "name": "tree",
+      "sha256": "eaa84b1205d6f55fa378042ed7619305d78d37db5f4f5d431eab55844beacf35",
+      "blob_count": 217,
+      "filename_matches": [],
+      "examples": [
+        "examples/dyn_traffic_light.cr",
+        "examples/dynamic_structure.cr",
+        "examples/firespread_multipdevs.cr",
+        "examples/game_of_life.cr",
+        "examples/gen_buf_proc.cr",
+        "examples/init/fire25_25.txt",
+        "examples/init/frog.txt",
+        "examples/init/gosper_glider_gun.txt",
+        "examples/lotka_volterra.cr",
+        "examples/runtime_check.cr",
+        "examples/send_custom_types.cr",
+        "examples/sinus_signal.cr",
+        "examples/traffic_light.cr"
+      ],
+      "scope": "Filename inventory only; does not rule out differently named content, branches, deleted history, or external repositories."
+    },
+    {
+      "name": "historical-tree",
+      "sha256": "96263d829c731ca7973cad335f99dc2a26439445eae15097517ec0b54b07518c",
+      "blob_count": 108,
+      "filename_matches": [],
+      "examples": [
+        "examples/dyn_traffic_light.cr",
+        "examples/fire25_25.txt",
+        "examples/firespread_multipdevs.cr",
+        "examples/frog.txt",
+        "examples/game_of_life.cr",
+        "examples/gosper_glider_gun.txt",
+        "examples/lotka_volterra.cr",
+        "examples/simple_dsde.cr",
+        "examples/traffic_light.cr"
+      ],
+      "scope": "Filename inventory only; does not rule out differently named content, branches, deleted history, or external repositories."
+    }
+  ],
+  "remaining": [
+    "Recover original DPDEMAS Sugarscape source, including configuration and observer.",
+    "Read full paper and define its complete Sugarscape claim scope.",
+    "Pin compatible Crystal/framework dependencies before a native execution."
+  ],
+  "as_of": "2026-10-18T11:52:06.589377+00:00"
+}
