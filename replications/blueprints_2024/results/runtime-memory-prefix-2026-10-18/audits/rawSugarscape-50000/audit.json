@@ -1,0 +1,59 @@
+{
+  "validated_runs": 4,
+  "required_interval_runs": 45,
+  "complete_interval": false,
+  "complete_group": false,
+  "model": "rawSugarscape",
+  "steps": 50000,
+  "ordinal_interval": [
+    55,
+    59
+  ],
+  "counts": {
+    "dead": 2,
+    "worse": 0,
+    "better_or_equal": 2
+  },
+  "observations": 100327,
+  "results": [
+    {
+      "entry": "50000-rawSugarscape588455110223385558.config",
+      "seed": 588455110223385558,
+      "observations": 50001,
+      "final_population": 1194,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "a25e1bf931b172cc6cf098b95d6490bca8e33bd7f748e9436c532293ce076bc8"
+    },
+    {
+      "entry": "50000-rawSugarscape5926226418024619339.config",
+      "seed": 5926226418024619339,
+      "observations": 135,
+      "final_population": 0,
+      "final_timestep": 134,
+      "outcome": "dead",
+      "trajectory_sha256": "80d27385d2bff07d46069f1ad44eeee59587ae6b6b589664d5163cdedb42ca93"
+    },
+    {
+      "entry": "50000-rawSugarscape5942563981654703022.config",
+      "seed": 5942563981654703022,
+      "observations": 190,
+      "final_population": 0,
+      "final_timestep": 189,
+      "outcome": "dead",
+      "trajectory_sha256": "e9ca219bf446a2751633a6ce8143de89bc76d4527fdb7ab7a70049a467fe7459"
+    },
+    {
+      "entry": "50000-rawSugarscape5975702221209476521.config",
+      "seed": 5975702221209476521,
+      "observations": 50001,
+      "final_population": 1323,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "c948a7b56e877e8832f9229fa198b715bde95775f28500d07e58569ce084ccae"
+    }
+  ],
+  "ledger_sha256": "2ee211cd3c3f3c24cbd28c07a3cc9967f151b9bb7556cd514abdb37b55ecd489",
+  "manifest_sha256": "1eb3e8d09c49e4deac4a925242ec02552612acc8ba2f4fe42207da426875a20b",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}
