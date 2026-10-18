@@ -962,3 +962,22 @@ member matches its audited native file byte-for-byte.
 These comparisons describe separate simulation random streams; they do not
 establish equivalence or complete the paper. The 5,000-input degree-one and
 rejection workflows remain active under their existing one-hour bounds.
+
+### Independent 5,000-input semi-automatic ABC audited
+
+[The full-size degree-one workflow](results/independent-sabc1d5000-2026-10-18)
+validates all five folds, 25,000 held-out parameter predictions and 3,775,000
+exact input cells. Baseline errors match the author-data run exactly. Every
+public archive member matches its audited native file byte-for-byte.
+
+| Parameter | Author-data performance | Independent-data performance |
+| --- | ---: | ---: |
+| initial.population | 0.546478 | 0.543322 |
+| pmut | 0.372123 | 0.388448 |
+| maximum.sugar.endowment | 0.505361 | 0.507500 |
+| maximum.spice.endowment | 0.516449 | 0.513282 |
+| wealth.reproduction | 0.601442 | 0.603185 |
+
+Both degree-one sample sizes are now audited. These descriptive comparisons
+use separate simulation random streams and do not establish equivalence.
+Other independent estimators and historical Table 8 discrepancies remain open.
