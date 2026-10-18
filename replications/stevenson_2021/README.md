@@ -410,3 +410,7 @@ These are exploratory summaries of existing trajectories, without confidence int
 ```bash
 python replications/stevenson_2021/analyze_growth_flows.py /complete/growth-run /new/flow-analysis replications/stevenson_2021/results/growth-flows-2026-10-16/simulate.cpp
 ```
+
+## Earlier author specification recovered
+
+[The August 2021 predecessor audit](results/predecessor-source-audit-2026-10-18) supports the implemented action order and delayed newborn activation. Its birth-cost sensitivity uses a later 130,000–150,000-cycle window, outside our existing ensembles. This does not establish the target paper’s sampling protocol. Evolutionary inheritance/update rules and historical implementation remain unresolved; no acceptance rule or simulator behavior changed.
