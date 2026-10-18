@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T03:40:36.736820+00:00",
+  "as_of": "2026-10-18T04:20:24.302863+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -169,14 +169,14 @@
     {
       "study": "thaler_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
-      "checked_commit": "6c0e47eb23209540a7f89d6183d1a5dae570bee5",
+      "checked_commit": "7a76c1a50ef877917275e10eb0b49440d914e5e7",
       "status": "running",
       "readme": "replications/thaler_2019/README.md",
-      "readme_sha256": "a260ade6a6ef4a339c777b70a06d3840bad035e932e15eefa973cbc1ccc1fcfb",
-      "json_evidence_files": 115,
+      "readme_sha256": "00b12699a144fe427d5fdb907b27ab5cdfb931dfc46458e78beaaf208b21e454",
+      "json_evidence_files": 124,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "41/45 Table6/Table8 timings audited; four-condition continuation waits behind population ensemble after preserved TVar segfault. All90 retry processes across18conditions audited. First matching-instance Table9 timing audited:32-capability/2500-rebirth89.962304s,R2=.999874136128; five timings and30retry processes remain. Figure5a provenance, full concurrent population/scaling and historical isolation remain unresolved.",
-      "checked_at": "2026-10-18T03:15:11.427696+00:00"
+      "remaining_scope": "All 225 population processes across 45 conditions and all 90 retry processes across 18 conditions audited. Table6 complete; 16/20 Table8 timings audited, continuation active. Two of six Table9 timings audited; remaining timings and thirty retry processes required. Figure5a state fidelity remains unresolved.",
+      "checked_at": "2026-10-18T04:20:24.302863+00:00"
     },
     {
       "study": "thaler_properties_2019",
@@ -205,15 +205,16 @@
     {
       "study": "lima_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/19",
-      "status": "specified",
-      "checked_commit": "65d36b58d1344767a384890e1dee41d85638a5a7",
+      "status": "partial",
+      "checked_commit": "2593c1a684e4d293eccd28985a2ef9bd7ab01d04",
       "readme": "replications/lima_2024/README.md",
-      "readme_sha256": "baaa7774c7a421cf0deb88dd0f97e5c5da146faf539bba55d90cebf730ce459b",
-      "json_evidence_files": 3,
+      "readme_sha256": "ae8e03820022492a6fa0d75d9c9d16deca3726052e1365c4e737dbeff7f314f1",
+      "json_evidence_files": 26,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "Source pinned and protocol frozen; dependency repair and both architecture scenarios still require validation."
+      "remaining_scope": "Original container and host-native 1000-step trajectories and checkpoint-control conservation audited. Native reload preserves beliefs/plans but fails the predeclared score increment through author departure-trigger behavior. GUI visual proof and portable execution setup remain outstanding. Packaged host attempt002 lost unarchived trajectories through a collector error; no credit. Corrected collection verified.",
+      "checked_at": "2026-10-18T04:20:24.302863+00:00"
     }
   ],
-  "study_prs": 16,
+  "study_prs": 17,
   "snapshot_method": "Selected updated entries pin fetched remote study-branch commits, committed README hashes and parsed tracked JSON evidence files under results. Other entries remain dated snapshots. Scientific status derives from study audits; file counts do not certify completion."
 }
