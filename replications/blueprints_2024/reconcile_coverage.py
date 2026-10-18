@@ -48,11 +48,20 @@ for path in args.audits:
 coverage = []
 for model in models:
     rows = covered[model]
-    assert sorted(rows) == list(range(len(rows))), (model, "Gap in audited prefix")
-    coverage.append({"model": model, "validated_interval": [0, len(rows)], "required_runs": 500,
+    intervals = []
+    for index in sorted(rows):
+        if intervals and intervals[-1][1] == index:
+            intervals[-1][1] += 1
+        else:
+            intervals.append([index, index + 1])
+    missing = [index for index in range(500) if index not in rows]
+    prefix_end = missing[0] if missing else 500
+    coverage.append({"model": model, "validated_interval": [0, prefix_end],
+                     "validated_intervals": intervals, "validated_runs": len(rows), "missing_indices": missing,
+                     "required_runs": 500,
                      "observations": sum(r["observations"] for r in rows.values()),
                      "partial_counts": dict(Counter(r["outcome"] for r in rows.values())),
-                     "next_seed": schedules[model][len(rows):len(rows) + 1]})
+                     "next_seed": [schedules[model][index] for index in missing[:1]]})
 report = {"archive_sha256": archive_hash, "inputs": inputs, "models": coverage,
           "unique_runs": sum(len(rows) for rows in covered.values()), "excluded_duplicate_records": duplicates,
           "complete_homogeneous_grid": all(len(rows) == 500 for rows in covered.values()),

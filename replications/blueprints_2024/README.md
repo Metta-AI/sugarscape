@@ -870,3 +870,11 @@ Execution receipts alone do not add coverage; existing trajectory auditors must 
 The production launcher must impose an outer deadline before the instance lease expires,
 leaving time to seal and collect evidence. No production interval has been assigned or launched.
 Ruff and CLI checks pass; the actual parallel workflow remains unvalidated until qualification and handoff complete.
+
+### Coverage when parallel inputs finish out of order
+
+`reconcile_coverage.py` reports every `validated_intervals` range and every `missing_indices` entry.
+`validated_runs` counts the union; `validated_interval` remains only its contiguous prefix from zero.
+`next_seed` identifies the first missing input, including a gap before later completed inputs.
+Duplicate inputs still require identical trajectory results and receive no extra credit.
+The full-grid flag requires all 500 inputs in each of the four models.
