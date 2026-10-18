@@ -434,3 +434,13 @@ qualified Linux extraction. All 11,264 initial active records match the prior
 native capture exactly. The provider confirms the superseded command never ran.
 The replacement retains all comparison gates and execution bounds; results remain
 pending.
+
+### Native initialization controls complete
+
+[Both controls complete](results/clang-input-control-complete-2026-10-18). GNU
+input-file replay exactly reproduces the earlier native state file and all
+100 population values. Clang passes 888,920 post-step state-accounting records.
+It matches all 65,536 initial image classes, but only 34,820 and 41,095 at the
+first and fiftieth iterations. Initialization alone does not resolve later
+illustrations; historical engine, visualization timing and GPU random-stream
+provenance remain open. The GPU is stopped; no study credit is added.

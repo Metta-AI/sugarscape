@@ -1,0 +1,15 @@
+{
+  "id": "d9dda3a4-023d-4fa6-a096-ca7c49ca9042",
+  "name": "relh-sugarscape-richmond-h100-20261017-v1",
+  "note": "billing ended. The node is still shutting down: it saves the disk's last writes to durable storage first, which after a large write takes some minutes. get_node reads stopped when the disk is parked. snapshot_node needs the parked disk, so wait for stopped before you call it. run_command wakes the node at once.",
+  "object": "node",
+  "status": "stopping",
+  "wake_estimate": {
+    "assumes_contested": true,
+    "estimate_basis": "queue from 13 recent h100 wake departures over 1d; spin-up from 17 h100 wake samples; no recent wake history for this shape; no new capacity is being added for this shape right now",
+    "estimated_ready_seconds": 4233,
+    "estimated_ready_seconds_p90": 5892,
+    "note": "what a wake requested right now would be quoted, from the wake queue as it stands - a reading, not a reservation; conditions at your actual wake may differ, and a wake when the shape has capacity free is near-immediate. Wakes are served before creates. If this disk holds the only copy of files you will need soon, weigh this number before relying on a stop/wake round trip - snapshot_node or export_data keeps a durable copy a wake never has to wait for.",
+    "queued_wakes": 0
+  }
+}
