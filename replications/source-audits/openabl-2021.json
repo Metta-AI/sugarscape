@@ -21,6 +21,31 @@
       "url": "https://raw.githubusercontent.com/OpenABL/OpenABL/eb08ef86df0b9c0532cb8fd6b714bde5e8551923/LICENSE",
       "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
       "bytes": 11358
+    },
+    "bench/bench.py": {
+      "url": "https://github.com/OpenABL/OpenABL/blob/eb08ef86df0b9c0532cb8fd6b714bde5e8551923/bench/bench.py",
+      "sha256": "1ce716052ade1d0e173e89cffa4404e236a1342d56a3acb522cca6ef0da0f629",
+      "bytes": 4651
+    },
+    "bench/bench_dmason.py": {
+      "url": "https://github.com/OpenABL/OpenABL/blob/eb08ef86df0b9c0532cb8fd6b714bde5e8551923/bench/bench_dmason.py",
+      "sha256": "51a3ede84e5e13d344de8d3e8b91a112a6069511280435e27c28aa68a20d5b8b",
+      "bytes": 3150
+    },
+    "bench/openabl.py": {
+      "url": "https://github.com/OpenABL/OpenABL/blob/eb08ef86df0b9c0532cb8fd6b714bde5e8551923/bench/openabl.py",
+      "sha256": "298b6efe890f480bc89a1936328ab221b6fd43afb47fab508da8b15932695e5b",
+      "bytes": 2991
+    },
+    "bench/plot.py": {
+      "url": "https://github.com/OpenABL/OpenABL/blob/eb08ef86df0b9c0532cb8fd6b714bde5e8551923/bench/plot.py",
+      "sha256": "2cbfa28fe3b7a23b5cb9a09c4e9d7d26d10d2b2afd88e07330c9769bb52f5b46",
+      "bytes": 2980
+    },
+    "deps/Makefile": {
+      "url": "https://github.com/OpenABL/OpenABL/blob/eb08ef86df0b9c0532cb8fd6b714bde5e8551923/deps/Makefile",
+      "sha256": "c29c0e6102c68515716f8465601d7b52f2e160a43271909497c11c1c4b661804",
+      "bytes": 2407
     }
   },
   "status": "candidate-source-recovered",
@@ -41,5 +66,16 @@
     "Verify code-size counting convention.",
     "Do not double-count2018 conference and2021 journal versions without establishing distinct results.",
     "No compiler build or simulation run yet."
+  ],
+  "history_check": {
+    "head_date": "2019-08-12",
+    "last_model_change": "a1933c6f6faa0c6966698837640b32abf32f5add 2017-11-07T21:26:28+01:00 Trim trailing whitespace",
+    "interpretation": "Model predates both papers; this does not identify the authors exact compiler or benchmark revision."
+  },
+  "benchmark_findings": [
+    "Distributed script defaults100000 cell agents and100 timesteps, whereas the journal Figure5 workload specifies1000000 and1000; explicit overrides required.",
+    "Cross-backend script requests36 conditions across C,MASON,FLAME,FLAMEGPU at100 steps; requested sizes round down to square grids.",
+    "Each timing call reads one Execution time value; no repetition or uncertainty aggregation appears in bench.py or openabl.py.",
+    "Dependencies mix pinned MASON19/D-MASON3.2 with mutable FLAME/FLAMEGPU branches. Reconstruct exact dependency revisions before confirmatory comparisons."
   ]
 }
