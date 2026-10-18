@@ -977,3 +977,10 @@ An incomplete allocation exits 124 and preserves all partial outputs. Historical
 [Input 216](results/bentham-timeout-retry-2026-10-18-004) adds 5,001 independently audited observations over the unchanged 5,000-step horizon.
 The deduplicated ensemble now contains 1,836/2,000 inputs, including Bentham 336/500.
 All 164 missing Bentham inputs and the remaining paper experiments are still required.
+
+## Further runtime checkpoint
+
+[Five more original inputs](results/runtime-memory-prefix2-2026-10-18) add
+100,546 audited observations after exact deduplication. Runtime coverage reaches
+868/1,200 deposited inputs and 2,650,189 observations. Three new inputs become
+extinct; two complete 50,000 steps. The full paper remains incomplete.

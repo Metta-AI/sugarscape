@@ -1,0 +1,86 @@
+{
+  "validated_runs": 7,
+  "required_interval_runs": 45,
+  "complete_interval": false,
+  "complete_group": false,
+  "model": "rawSugarscape",
+  "steps": 50000,
+  "ordinal_interval": [
+    55,
+    62
+  ],
+  "counts": {
+    "dead": 4,
+    "worse": 0,
+    "better_or_equal": 3
+  },
+  "observations": 150683,
+  "results": [
+    {
+      "entry": "50000-rawSugarscape588455110223385558.config",
+      "seed": 588455110223385558,
+      "observations": 50001,
+      "final_population": 1194,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "a25e1bf931b172cc6cf098b95d6490bca8e33bd7f748e9436c532293ce076bc8"
+    },
+    {
+      "entry": "50000-rawSugarscape5926226418024619339.config",
+      "seed": 5926226418024619339,
+      "observations": 135,
+      "final_population": 0,
+      "final_timestep": 134,
+      "outcome": "dead",
+      "trajectory_sha256": "80d27385d2bff07d46069f1ad44eeee59587ae6b6b589664d5163cdedb42ca93"
+    },
+    {
+      "entry": "50000-rawSugarscape5942563981654703022.config",
+      "seed": 5942563981654703022,
+      "observations": 190,
+      "final_population": 0,
+      "final_timestep": 189,
+      "outcome": "dead",
+      "trajectory_sha256": "e9ca219bf446a2751633a6ce8143de89bc76d4527fdb7ab7a70049a467fe7459"
+    },
+    {
+      "entry": "50000-rawSugarscape5975702221209476521.config",
+      "seed": 5975702221209476521,
+      "observations": 50001,
+      "final_population": 1323,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "c948a7b56e877e8832f9229fa198b715bde95775f28500d07e58569ce084ccae"
+    },
+    {
+      "entry": "50000-rawSugarscape6114853826594360836.config",
+      "seed": 6114853826594360836,
+      "observations": 50001,
+      "final_population": 1315,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "e1bb677169a42ec7bc699121d9742e4cf06474a2133e1e1bff6d354402240bbc"
+    },
+    {
+      "entry": "50000-rawSugarscape6215866660933582204.config",
+      "seed": 6215866660933582204,
+      "observations": 171,
+      "final_population": 0,
+      "final_timestep": 170,
+      "outcome": "dead",
+      "trajectory_sha256": "4a0312b4ca134b1fcac08d1bb85f4aca8b917249c57424fad6292bd749817421"
+    },
+    {
+      "entry": "50000-rawSugarscape6258754549787537355.config",
+      "seed": 6258754549787537355,
+      "observations": 184,
+      "final_population": 0,
+      "final_timestep": 183,
+      "outcome": "dead",
+      "trajectory_sha256": "694af1dc4eba4671da33f33890c5e6c958d309070004b47ee4aa0a6d19cbe53e"
+    }
+  ],
+  "ledger_sha256": "5dc7889ae37c836f1e4c634ad482a391701d1833da796ffee3d1cc2f46c10ee0",
+  "manifest_sha256": "1eb3e8d09c49e4deac4a925242ec02552612acc8ba2f4fe42207da426875a20b",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}

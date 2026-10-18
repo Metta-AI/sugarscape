@@ -1,0 +1,22 @@
+[
+  [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "replications/blueprints_2024/audit_runtime.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/blueprints-runtimes.zip",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-002/extracted/rawSugarscape-50000",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-002/audits/rawSugarscape-50000",
+    "--allow-prefix",
+    "--recorded-root",
+    "/root/sugarscape/blueprints-runtime-memory-001/runs/rawSugarscape-50000"
+  ],
+  [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "replications/blueprints_2024/audit_runtime.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/blueprints-runtimes.zip",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-002/extracted/altruisticHalfLookaheadBinary-50000",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-002/audits/altruisticHalfLookaheadBinary-50000",
+    "--allow-prefix",
+    "--recorded-root",
+    "/root/sugarscape/blueprints-runtime-memory-001/runs/altruisticHalfLookaheadBinary-50000"
+  ]
+]
