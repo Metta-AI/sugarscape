@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T21:09:52.604151+00:00",
+  "as_of": "2026-10-18T21:21:30.047897+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -243,15 +243,15 @@
     {
       "study": "oremland_2014",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
-      "checked_commit": "33ea7a98af231472a2b3734154d45b1cf28af1e0",
+      "checked_commit": "7906fcbc2d899acd85ed7b4355551d137683d810",
       "status": "running",
       "readme": "replications/oremland_2014/README.md",
-      "readme_sha256": "22f5e4e41ff9f7f708eac59f4486a639335c069616f6d420dcffbcfe1619231a",
-      "json_evidence_files": 49,
+      "readme_sha256": "1f152f96c5ad020496c0ff44ed3d923d2c65e662d552f70c22f5d638276defd8",
+      "json_evidence_files": 61,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T21:09:52.604151+00:00",
+      "checked_at": "2026-10-18T21:21:30.047897+00:00",
       "evidence_scan_scope": "All JSON files under replications/oremland_2014",
-      "remaining_scope": "Independent full-size reconstruction completes 2,000 uniform/heterogeneous diagnostic runs, with 500,936 audited tax events and 51,000 paired survivor states. A further 20,000-run convergence ensemble covers 100 generated policies, 100 common seeds, and both tax clocks; 40,000 request/result lines and 2,400 independent summary calculations validated. Mean deaths change by at most 0.91 agents from 50 to 100 seeds, while death sample SD changes reach 24.00% of the 100-seed estimate. Original control distribution is unavailable; declared conditional-uniform reconstruction and shared-seed limitations preclude an exact Figure 9 or validated negative-replication claim. Reduced grids, policy rankings, optimization, transfer, and historical timings remain incomplete. No completion credit. Reduced-model qualification now completes 96 full workflows across 12 distinct model/landscape pairs (24 declared cases), validating 4,896 states and 30,976 tax events; full-size reference trajectories and events remain exact. A 2,538,400-run ranking batch is active under a four-worker, one-hour cap; 10,000 independent full-size comparisons are queued afterward. The compressed-input pipeline exactly matches 400 reference runs. Original reduction choices, ranking/error-bar procedures, optimization and transfer remain unresolved; running batches receive no completion credit."
+      "remaining_scope": "Full-size diagnostics and the 20,000-run convergence reconstruction are audited. Reduced-model qualification covers 12 distinct models; full-size reference trajectories remain exact. The first four ranking cases complete 172,200 native runs and 344,400 input/output records, with 1,920 kappa values verified using exact rational arithmetic. The initial 40x40 ranking differs from Figure 10; no validated negative-replication claim is assigned. The 2,538,400-run reduced ensemble remains active, followed by 10,000 independent full-size comparisons. A post hoc 37,600-run diagnostic with globally unique seeds is queued afterward to isolate shared-seed coupling; it uses its own independent reference. All batches preserve four-worker limits. Original controls, stream design, reduction conventions, ranking/error-bar procedures, optimization and transfer remain unresolved. No new completion credit."
     }
   ],
   "study_prs": 18,
