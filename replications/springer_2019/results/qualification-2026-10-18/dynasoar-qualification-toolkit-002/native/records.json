@@ -1,0 +1,112 @@
+[
+  {
+    "kind": "build",
+    "variant": "dynasoar_no_cell",
+    "command": [
+      "nvcc",
+      "-g",
+      "-O3",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_61,code=compute_61",
+      "-maxrregcount=64",
+      "-Iexample/configuration/dynasoar",
+      "-I.",
+      "-DPARAM_SIZE=32",
+      "-DPARAM_MAX_OBJ=262144",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-qualification-toolkit-002/qualification/native/dynasoar_no_cell"
+    ],
+    "returncode": 1,
+    "seconds": 0.9658908869996594
+  },
+  {
+    "kind": "build",
+    "variant": "baseline_aos",
+    "command": [
+      "nvcc",
+      "-g",
+      "-O3",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_61,code=compute_61",
+      "-maxrregcount=64",
+      "-Iexample/configuration/dynasoar",
+      "-I.",
+      "-DPARAM_SIZE=32",
+      "-DPARAM_MAX_OBJ=262144",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/baseline_aos/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-qualification-toolkit-002/qualification/native/baseline_aos"
+    ],
+    "returncode": 0,
+    "seconds": 2.1679476319995956
+  },
+  {
+    "kind": "execution",
+    "variant": "baseline_aos",
+    "repeat": 0,
+    "binary_sha256": "c24becbe27d401478f2ec68c53196bec033cfc5cdccd495f268795277be27734",
+    "returncode": 0,
+    "seconds": 2.020710734000204
+  },
+  {
+    "kind": "execution",
+    "variant": "baseline_aos",
+    "repeat": 1,
+    "binary_sha256": "c24becbe27d401478f2ec68c53196bec033cfc5cdccd495f268795277be27734",
+    "returncode": 0,
+    "seconds": 1.7202498389997345
+  },
+  {
+    "kind": "build",
+    "variant": "baseline_soa",
+    "command": [
+      "nvcc",
+      "-g",
+      "-O3",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_61,code=compute_61",
+      "-maxrregcount=64",
+      "-Iexample/configuration/dynasoar",
+      "-I.",
+      "-DPARAM_SIZE=32",
+      "-DPARAM_MAX_OBJ=262144",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/baseline_soa/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-qualification-toolkit-002/qualification/native/baseline_soa"
+    ],
+    "returncode": 0,
+    "seconds": 2.1680860870001197
+  },
+  {
+    "kind": "execution",
+    "variant": "baseline_soa",
+    "repeat": 0,
+    "binary_sha256": "3a4ea4c28ca8545b89d4b7e3512e72dff740fc35b0e4babdaa6ecd36f4f269dd",
+    "returncode": 0,
+    "seconds": 1.970688770000379
+  },
+  {
+    "kind": "execution",
+    "variant": "baseline_soa",
+    "repeat": 1,
+    "binary_sha256": "3a4ea4c28ca8545b89d4b7e3512e72dff740fc35b0e4babdaa6ecd36f4f269dd",
+    "returncode": 0,
+    "seconds": 1.6704029610000362
+  }
+]

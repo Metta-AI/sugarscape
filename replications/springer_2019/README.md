@@ -1,6 +1,6 @@
 # DynaSOAr Sugarscape benchmarks (Springer and Masuhara, 2019)
 
-Status: source recovered; native qualification pending. No paper completion credit.
+Status: three native implementations complete debug execution qualification after declared compiler-portability changes. The paper replication remains incomplete.
 
 The [ECOOP paper](https://doi.org/10.4230/LIPIcs.ECOOP.2019.17) benchmarks a Sugarscape model with movement, resource consumption, ageing, and mating. Its [official artifact](https://doi.org/10.4230/DARTS.5.2.2) contains the model, allocator implementations, dependencies, and archived reproduction instructions. The artifact is the source of truth for this study; the framework's other applications are outside its Sugarscape scope.
 
@@ -23,3 +23,15 @@ Before full benchmarking, build the unchanged archived static-cell DynaSOAr impl
 The original CUDA 9.1 Docker tag is unavailable. Qualification therefore uses the pinned CUDA 11.8 Ubuntu 20.04 image recorded in the protocol, with compute-6.1 PTX for driver compilation. This changes compilation/runtime provenance; model sources remain unchanged. No timings from this small qualification grid count toward Figure 10.
 
 Full-grid timing, matched-heap capacity searches, independent state/conservation checks, published-bar extraction, and claim-level analysis remain outstanding. Keep source defects, failed builds, allocator failures, and hardware differences visible before assigning any verdict.
+
+## Native qualification and preserved failures
+
+The artifact-library attempt fails because the archived CUB conflicts with CUDA 11.8's Thrust. Selecting the toolkit's matching CUB/Thrust exposes missing dependent-template syntax. The author's [2021 fix](https://github.com/prg-titech/dynasoar/commit/2bede5fc9ec715e13be6a77e12f758a4549c815b) supplies four `template` keywords for existing allocator calls. Two bitmap member-function pointers additionally require explicit `<S>` template arguments with this compiler. Both allocator edits are recorded separately from the unchanged Sugarscape model files.
+
+The final qualification uses the matching toolkit libraries and these syntax edits. All three builds and six 10,000-iteration executions exit zero. These are compiler/runtime qualification repeats on one 32×32 input, not independent scientific seeds. The native checksum sums agent type codes only; it does not validate the complete state or economic trajectories.
+
+```sh
+python qualify.py NEW_OUTPUT --cub toolkit --source-mode portable-syntax
+```
+
+Use `--cub artifact --source-mode archived` to preserve the initial artifact-library attempt. Every attempt remains retained; a failed build is not a negative replication. Independent model validation and all full-size paper targets remain outstanding.

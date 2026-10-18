@@ -27,5 +27,16 @@
     "all compiler and runtime exit statuses",
     "debug assertions active",
     "native checksums retained without claiming full-state equivalence"
-  ]
+  ],
+  "portable_followup": {
+    "cub": "CUDA11.8 toolkit CUB/Thrust",
+    "allocator_syntax_changes": [
+      "four dependent-template keywords from author commit2bede5fc9ec715e13be6a77e12f758a4549c815b",
+      "two explicit bitmap member-template specializations using surrounding S"
+    ],
+    "simulation_source_changes": [],
+    "followup_max_seconds_each": 600,
+    "budget_usd_total": 5,
+    "reason": "Each followup follows a terminal compiler failure; never restart a live run."
+  }
 }

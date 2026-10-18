@@ -11,6 +11,10 @@ import zipfile
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("output", type=Path)
+parser.add_argument("--cub", choices=["artifact", "toolkit"], required=True)
+parser.add_argument(
+    "--source-mode", choices=["archived", "portable-syntax"], required=True
+)
 args = parser.parse_args()
 root = args.output.resolve()
 root.mkdir(parents=True, exist_ok=False)
@@ -35,6 +39,62 @@ with zipfile.ZipFile(root / "artifact.zip") as archive:
     }
     archive.extractall(root / "source")
 (root / "source-sha256.json").write_text(json.dumps(source_hashes, indent=2) + "\n")
+effective_hashes = source_hashes.copy()
+if args.source_mode == "portable-syntax":
+    name = "dynasoar/allocator/allocator_handle.h"
+    path = root / "source" / name
+    original = path.read_text()
+    assert original.count("allocator_->parallel_do<") == 4
+    corrected = original.replace(
+        "allocator_->parallel_do<", "allocator_->template parallel_do<"
+    )
+    (root / "original-allocator_handle.h").write_text(original)
+    path.write_text(corrected)
+    effective_hashes[name] = hashlib.sha256(path.read_bytes()).hexdigest()
+    (root / "source-change.json").write_text(
+        json.dumps(
+            {
+                "author_fix_commit": "2bede5fc9ec715e13be6a77e12f758a4549c815b",
+                "file": name,
+                "inserted_template_keywords": 4,
+                "original_sha256": source_hashes[name],
+                "effective_sha256": effective_hashes[name],
+                "scope": "Apply the author's dependent-template syntax correction to four existing calls; no model rules changed.",
+            },
+            indent=2,
+        )
+        + "\n"
+    )
+    name = "dynasoar/bitmap/bitmap.h"
+    path = root / "source" / name
+    original = path.read_text()
+    corrected = original
+    for method in ["atomic_add_scan_init", "atomic_add_scan"]:
+        old = f"&ThisClass::{method}>"
+        assert corrected.count(old) == 1
+        corrected = corrected.replace(old, f"&ThisClass::template {method}<S>>")
+    (root / "original-bitmap.h").write_text(original)
+    path.write_text(corrected)
+    effective_hashes[name] = hashlib.sha256(path.read_bytes()).hexdigest()
+    (root / "bitmap-source-change.json").write_text(
+        json.dumps(
+            {
+                "file": name,
+                "explicit_template_arguments": 2,
+                "original_sha256": source_hashes[name],
+                "effective_sha256": effective_hashes[name],
+                "scope": "Explicitly select the surrounding scan<S> specialization for two member-function pointers; no bitmap algorithm change. This is a local compiler-portability edit, not an authenticated historical source revision.",
+            },
+            indent=2,
+        )
+        + "\n"
+    )
+(root / "effective-source-sha256.json").write_text(
+    json.dumps(effective_hashes, indent=2) + "\n"
+)
+for name in ["cub/version.cuh", "thrust/version.h"]:
+    raw = (Path("/usr/local/cuda/include") / name).read_bytes()
+    (root / name.replace("/", "-")).write_bytes(raw)
 for name, command in [
     ("gpu", ["nvidia-smi", "-q"]),
     ("compiler", ["nvcc", "--version"]),
@@ -62,7 +122,6 @@ for variant in ["dynasoar_no_cell", "baseline_aos", "baseline_soa"]:
         "-maxrregcount=64",
         "-Iexample/configuration/dynasoar",
         "-I.",
-        "-Ilib/cub",
         "-DPARAM_SIZE=32",
         "-DPARAM_MAX_OBJ=262144",
         "-Xcudafe",
@@ -71,6 +130,8 @@ for variant in ["dynasoar_no_cell", "baseline_aos", "baseline_soa"]:
         "-o",
         str(binary),
     ]
+    if args.cub == "artifact":
+        command.insert(1, "-Ilib/cub")
     started = time.monotonic()
     with (root / f"{variant}-build.log").open("x") as log:
         result = subprocess.run(
@@ -110,13 +171,15 @@ for variant in ["dynasoar_no_cell", "baseline_aos", "baseline_soa"]:
         )
         (root / "records.json").write_text(json.dumps(records, indent=2) + "\n")
 
-for name, digest in source_hashes.items():
+for name, digest in effective_hashes.items():
     assert hashlib.sha256((root / "source" / name).read_bytes()).hexdigest() == digest
 assert len(records) == 9 and all(row["returncode"] == 0 for row in records), records
 (root / "complete.json").write_text(
     json.dumps(
         {
-            "source_unchanged": True,
+            "model_source_unchanged": True,
+            "allocator_source_mode": args.source_mode,
+            "cub": args.cub,
             "builds": 3,
             "executions": 6,
             "scope": "Debug qualification only. No full-state or paper-result equivalence established.",
