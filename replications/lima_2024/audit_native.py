@@ -31,6 +31,7 @@ initial = Counter(row.agent_id for row in initial_rows(rows, checkpoints))
 assert initial and all(count == 1 for count in initial.values())
 locations = Counter()
 model_counts = {}
+netlogo_creations = {}
 hashes = {}
 for model in ("m1", "m2"):
     path = args.run / f"shared_volume/netlogo_output/{model}_output.txt"
@@ -41,6 +42,28 @@ for model in ("m1", "m2"):
     assert ticks == list(range(1000))
     assert log.count("NL: ---------- FIM DA SIMULACAO...") == 1
     assert log.count("NL: ---------- FIM!") == 1
+    creation_pattern = (
+        r"NL: agent_id:\n(\d+)\nNL: tupla interna:\n([^\n]+)\n"
+        r"NL: path:\n([^\n]*)\nNL: tupla interna 0 - sugar:\n(-?\d+)\n"
+        r"NL: tupla interna 1 - metabolism:\n(\d+)\n"
+        r"NL: tupla interna 2 - vision:\n(\d+)\nhistoric:\n([^\n]*)\n"
+        r"new agent created from previous model"
+    )
+    reconstructed = Counter()
+    for agent, data, path, sugar, metabolism, vision, historic in re.findall(
+        creation_pattern, log
+    ):
+        assert data == f"[{sugar} {metabolism} {vision}]"
+        assert historic == path
+        reconstructed[(int(agent), path, data)] += 1
+    consumed = Counter(
+        (row.agent_id, row.path, row.data)
+        for row in rows
+        if row.table == model and row.processed
+    )
+    assert reconstructed == consumed
+    assert reconstructed.total() == log.count("new agent created from previous model")
+    netlogo_creations[model] = reconstructed.total()
     alive = args.run / f"shared_volume/netlogo_output/{model}_alive.txt"
     ids = list(map(int, alive.read_text().split()))
     assert len(ids) == len(set(ids))
@@ -84,6 +107,7 @@ report = {
     "ticks_per_netlogo_model": 1000,
     "ordered_ticks_and_final_markers_verified": True,
     "netlogo_survivors": model_counts,
+    "netlogo_native_creation_records": netlogo_creations,
     "queued_agents": queued.total(),
     "active_jacamo_agents": dict(active),
     "registered_agents_accounted_for_once": initial.total(),
@@ -92,7 +116,9 @@ report = {
     "native_file_sha256": hashes,
     "scope": (
         "Complete native trajectories and identity conservation at "
-        "shutdown; native JaCaMo creation attributes match consumed database records. "
+        "shutdown; native NetLogo incoming tuples/paths and JaCaMo creation attributes "
+        "match every consumed database record. NetLogo logs do not expose the newly "
+        "drawn sugar value or prove unchanged native sugar state. "
         "This does not establish AgentSpeak reload or host-GUI scenario completion."
     ),
     "completed_study": False,

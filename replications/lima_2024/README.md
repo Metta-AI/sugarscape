@@ -323,3 +323,12 @@ finds the same save-and-depart trigger in the earlier miner. The paper claims
 restored information, not a second mining score. The additional score criterion
 remains failed, but does not independently contradict that published claim.
 Complete historical runtime equivalence remains unproven.
+
+### Native NetLogo creation reconciliation
+
+[All three completed portable scenarios](results/native-creation-reconciliation-2026-10-18)
+pass the strengthened auditor: 4,282 native creation records match consumed
+database identities, incoming attributes and paths. Existing trajectory and
+conservation checks also pass. The incoming sugar tuple is observed; newly
+randomized sugar remains source-supported, not directly printed. Paper page 51
+explicitly specifies that sugar adaptation.
