@@ -1,7 +1,7 @@
 # Stevenson (2021): Dynamics of Wealth Inequality in Simple Artificial Societies
 
 Source: [arXiv:2108.11892v2](https://arxiv.org/abs/2108.11892v2), October 14, 2021.
-Status: two complete specification-based fixed-parameter ensembles; unresolved discrepancies. **Not a completed replication.**
+Status: complete fixed-parameter and conditional evolutionary ensembles; unresolved discrepancies. **Not a completed replication.**
 No verified author implementation has been located in the searches performed so far.
 
 ## Model and explicit assumptions
@@ -453,9 +453,16 @@ Full growth-rate coverage is now executed under a declared convention; historica
 
 [The qualified extension](results/long-evolution-qualification-2026-10-18) runs both evolutionary scenarios for 100,000 cycles across the same 100 seeds each.
 Two 5,000-cycle native observer pairs pass exact output comparisons. The initial four long runs complete with exact shared-prefix matches and accounting checks.
-The bounded 200-run ensemble is active; its late-window comparisons and historical interpretation remain pending.
+[The full 200-run ensemble and its late-window analysis are complete](results/long-evolution-complete-2026-10-18); historical interpretation remains unresolved.
 The sparse observer changes exports only. Prior dense inheritance evidence remains retained, and no paper-completion credit is assigned.
 
 [The independent long-run prefix audit](results/long-evolution-prefix-audit-2026-10-18) validates 52 complete runs and 52,052 observations.
 Full-mode analysis rejects incomplete ensembles before writing output; prefix mode withholds across-seed statistics.
-The final analysis is queued after all 200 runs complete, using the frozen windows and explicit extinction handling.
+The final analysis passes all 200 runs, using the frozen windows and explicit extinction handling. No run became extinct.
+
+## Complete Table 1 comparison
+
+[All twenty printed means](results/long-evolution-complete-2026-10-18/table1/comparison.csv) now have descriptive reconstruction estimates from the declared ensembles and growth fits.
+The new evolutionary late-window population means are 858.774/919.125 and Gini means are 0.689854/0.728303 for stable/chaotic scenarios.
+All 200 long runs complete 100,000 cycles; 200,200 observations pass audit, and an independent calculation confirms all 96 statistical quantities.
+This completes execution of the declared long ensembles, not the paper replication. Original conventions, fixed-society age discrepancies, growth fits and remaining figure/Appendix B scope remain unresolved.
