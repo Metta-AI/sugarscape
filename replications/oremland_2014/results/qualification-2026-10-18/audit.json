@@ -1,0 +1,84 @@
+{
+  "trajectory_sha256": "63d6e97d9d54011bc0d4a9f31d154f33e1f37c7f9a2833d32020c0145d9dff5a",
+  "seeds": 1,
+  "complete_50_step_runs": 16,
+  "observations": 816,
+  "exact_paired_survivor_states": 408,
+  "minimum_refund": 0.0,
+  "maximum_refund": 7.0,
+  "finals": [
+    {
+      "seed": 1,
+      "rate": 0,
+      "phase": 0,
+      "population": 121,
+      "literal_revenue": -4.0,
+      "clipped_revenue": 0.0,
+      "refund": 4.0
+    },
+    {
+      "seed": 1,
+      "rate": 0,
+      "phase": 4,
+      "population": 119,
+      "literal_revenue": -7.0,
+      "clipped_revenue": 0.0,
+      "refund": 7.0
+    },
+    {
+      "seed": 1,
+      "rate": 0.25,
+      "phase": 0,
+      "population": 95,
+      "literal_revenue": 6332.0,
+      "clipped_revenue": 6336.0,
+      "refund": 4.0
+    },
+    {
+      "seed": 1,
+      "rate": 0.25,
+      "phase": 4,
+      "population": 101,
+      "literal_revenue": 6723.0,
+      "clipped_revenue": 6728.0,
+      "refund": 5.0
+    },
+    {
+      "seed": 1,
+      "rate": 0.5,
+      "phase": 0,
+      "population": 79,
+      "literal_revenue": 7817.0,
+      "clipped_revenue": 7821.0,
+      "refund": 4.0
+    },
+    {
+      "seed": 1,
+      "rate": 0.5,
+      "phase": 4,
+      "population": 87,
+      "literal_revenue": 8178.0,
+      "clipped_revenue": 8182.0,
+      "refund": 4.0
+    },
+    {
+      "seed": 1,
+      "rate": 0.75,
+      "phase": 0,
+      "population": 63,
+      "literal_revenue": 8409.0,
+      "clipped_revenue": 8409.0,
+      "refund": 0.0
+    },
+    {
+      "seed": 1,
+      "rate": 0.75,
+      "phase": 4,
+      "population": 69,
+      "literal_revenue": 8651.0,
+      "clipped_revenue": 8655.0,
+      "refund": 4.0
+    }
+  ],
+  "scope": "Native NetLogo reconstruction controls: four uniform tax rates, two clock phases, literal versus clipped payment. Original 100 control schedules, reduced grids, and optimizer not reproduced. No whole-paper completion claim."
+}

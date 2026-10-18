@@ -1,0 +1,22 @@
+{
+  "failures_before_success": [
+    {
+      "stage": "Java compilation",
+      "reason": "Assumed HeadlessWorkspace.dispose method does not exist in the pinned NetLogo 5.3.1 API."
+    },
+    {
+      "stage": "Java compilation",
+      "reason": "JobManagerInterface does not expose die; the concrete JobManager exposes lifecycle shutdown."
+    },
+    {
+      "stage": "Native workspace construction with wildcard classpath",
+      "reason": "Unsatisfied RendererInterface dependency; no simulation completed. Explicit application classpath from NetLogo.cfg completed all 16 workflows."
+    },
+    {
+      "stage": "100-seed launch manifest generation",
+      "reason": "NetLogo.cfg declares absent hamcrest-core-1.1.jar. No ensemble launched under oremland-native-100seed-001. Present jar hashes and missing declared jars are now recorded separately."
+    }
+  ],
+  "trajectory_uncompressed_sha256": "63d6e97d9d54011bc0d4a9f31d154f33e1f37c7f9a2833d32020c0145d9dff5a",
+  "scope": "Preserved failed setup stages are not simulation evidence. Successful complete qualification is separate."
+}
