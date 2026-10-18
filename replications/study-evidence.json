@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T09:17:19.383961+00:00",
+  "as_of": "2026-10-18T09:41:41.228118+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -43,14 +43,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "76e83025b2f88b1dc017862bdde7747dc9034c78",
+      "checked_commit": "e4d9eb224de88823d4cb1693f2cdef71b47feba4",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "3766185c6c8258c0e3af14bc2d80388330b1990e31ae155e420b131dcae80d89",
-      "json_evidence_files": 701,
-      "remaining_scope": "1833/2000 homogeneous inputs and 856/1200 deposited runtime inputs audited. Bentham333/500 leaves167 original inputs. Full selfishness/mixed-society sweeps, longer horizons and deposited100-input versus reported500-input runtime schedule remain incomplete.",
+      "readme_sha256": "1a2022479920b73375dcb5470b83e42d08de93104272774c7b6cd62bf09b8dbf",
+      "json_evidence_files": 721,
+      "remaining_scope": "1835/2000 homogeneous and863/1200 deposited runtime inputs audited. Bentham335/500 leaves165 original homogeneous inputs. Full selfishness/mixed-society sweeps, longer horizons, remaining runtime inputs and deposited100-input versus reported500-input runtime schedule remain incomplete.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T09:17:58.986857+00:00"
+      "checked_at": "2026-10-18T09:41:41.228118+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -153,31 +153,42 @@
     {
       "study": "quera_2025",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
-      "checked_commit": "814dcaf01bbe53b4af5cc2403e14cfc25eae6612",
+      "checked_commit": "0c0cfb505ab445ff6a1bb5d3fec434e552584634",
       "status": "partial",
       "readme": "replications/quera_2025/README.md",
-      "readme_sha256": "3d7f61cdcfa485c99b2a53269741f3d87a8737c1f2e6d35f8c3c229560d93e17",
-      "remaining_scope": "Native forward, independent movement/resource, 256-seed gradients, initialization-law and flow-wrapper audits retained. Author issue3 requests a Sugarscape training example and remains open. Figure filenames suggest a learning rate but do not establish optimizer settings. Exact prior, optimizer/loss/validation choices and full5000-epoch calibration remain outstanding.",
+      "readme_sha256": "15a5a3860cc20cd8ada613611fdbc26efbd67a7e0f4a589ff830a251b315914e",
+      "remaining_scope": "All256 diagnostic baseline seeds pass independent movement/resource replay:614400 agent and15360000 cell updates, zero state error. All34560000 ordinary/differentiated state values match;38400 derivatives match115200 archived records. Aggregate differences are exactly explained by reduction order. Exact Figure11 protocol, perturbed-trajectory replay, prior/loss/validation settings and full5000-epoch calibration remain unresolved.",
       "validation": {
         "states": 150,
         "agent_observations": 15000,
         "cell_observations": 93750,
         "portable_trajectory_files_byte_identical": 9
       },
-      "json_evidence_files": 45,
-      "gzip_json_evidence_files": 0
+      "json_evidence_files": 64,
+      "gzip_json_evidence_files": 0,
+      "checked_at": "2026-10-18T09:41:41.228118+00:00",
+      "gradient_baseline_validation": {
+        "seeds": 256,
+        "agent_updates": 614400,
+        "cell_updates": 15360000,
+        "ordinary_ad_state_values": 34560000,
+        "unique_derivatives": 38400,
+        "archived_derivative_records": 115200,
+        "maximum_state_error": 0,
+        "aggregate_reductions_exact": true
+      }
     },
     {
       "study": "thaler_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
-      "checked_commit": "68b24a6c32fdbcbae93bda4e90ae973f09cebc14",
-      "status": "running",
+      "checked_commit": "4add40147c2dc557185601115f134deab70bb4a6",
+      "status": "partial",
       "readme": "replications/thaler_2019/README.md",
-      "readme_sha256": "e06a2a06238e7643af4a46859d3d1bba591696f701d6ff33d60fe33804207bf5",
-      "json_evidence_files": 168,
+      "readme_sha256": "64b310db9f96a978acba57febc180c1e25a348ef4f03c119378279ba34cbcee3",
+      "json_evidence_files": 179,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "All51 timing cells,225 population processes and90 retry processes audited. Author Figure5a image matches all201 occupied positions uniquely at exported step83, rather than caption step50, in two identical native replays. Resource/label interpretation and historical performance remain limited. Normal32 retry discrepancy remains unresolved; six-process Criterion-versus-single control is active, with no terminal verdict.",
-      "checked_at": "2026-10-18T09:17:19.383961+00:00"
+      "remaining_scope": "All51 timing cells,225 population processes and90 retry processes audited. Figure5a occupancy matches all201 positions at step83 rather than caption50. Completed six-process control audits51 simulations: Criterion defaults mean0.0871433 versus fresh single0.0894201 and published0.29. Argument-order harness failure preserved and corrected. Retry discrepancy, historical performance and remaining image resource/label interpretation remain unresolved; no whole-paper verdict.",
+      "checked_at": "2026-10-18T09:41:41.228118+00:00"
     },
     {
       "study": "thaler_properties_2019",
