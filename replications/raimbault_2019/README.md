@@ -669,3 +669,13 @@ python replications/raimbault_2019/estimate_batched_cost.py \
   replications/raimbault_2019/results/batched-sizing-complete-2026-10-17/audit.json \
   /new/batched-cost-scenario.json --node-hour-price 0.576
 ```
+
+### Second terminal reference audit: 54,177 of 55,000 inputs
+
+[The retained continuation](results/reference-continuation-terminal-2026-10-18) adds 4,811 disjoint inputs
+and brings the union to 108,354 exactly reproduced Gini measurements.
+Eight interrupted batches contribute only complete validated rows. The exact complement contains 823 inputs.
+A bounded continuation now runs that complement; no unfinished input receives credit.
+The earlier baseline audit reproduces byte-for-byte after checksum-verified restoration of one missing local map.
+The generated 8,000-input shard failed before launch because GNU time was missing; that failure is preserved.
+Full reference completion, the generated shard and the complete generated ensemble remain required.
