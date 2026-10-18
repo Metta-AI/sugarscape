@@ -1038,3 +1038,11 @@ The live forest and generalized additive model runs remain unchanged; their inco
 [All 6,250 paired held-out predictions](results/independent-gam-comparison-2026-10-18) preserve identical parameter rows and folds across author and independent simulation statistics.
 The fixed reproduction-wealth outlier changes from -6,945.811 to 92.356097 against truth 92; its price summary moves inside the corresponding training range.
 Neither dataset matches any of the five published GAM1250 scores. This demonstrates dataset sensitivity, without establishing simulator equivalence or a negative replication.
+
+## Complete 5,000-input GAM dataset comparison
+
+[All 25,000 paired predictions](results/independent-gam5000-comparison-2026-10-18)
+reconcile with the author-data and independent-data fold metrics. Reproduction-wealth
+performance changes from -0.632580 to +0.662000, compared with the paper's -0.894.
+Neither dataset matches any of the five printed GAM scores. The comparison retains
+all outliers and leaves historical and implementation discrepancies unresolved.
