@@ -1002,9 +1002,9 @@ required sample sizes on the independent ensemble. Other independent
 estimators and historical Table 8 discrepancies remain open. Cross-stream
 comparisons do not establish equivalence or complete the paper.
 
-### Independent degree-four estimator in progress
+### Independent degree-four estimator launch
 
-[The recorded launch and scope correction](results/independent-sabc4d-launch-2026-10-18) retain an erroneous 1,250-input attempt and its native failure. That paper cell is NA. The required 5,000-input workflow now runs unchanged with a four-hour bound and post-run prediction and input audits. No additional completed study or estimator result is claimed.
+[The recorded launch and scope correction](results/independent-sabc4d-launch-2026-10-18) retain an erroneous 1,250-input attempt and its native failure. That paper cell is NA. The required 5,000-input workflow subsequently completed; its audited results are linked below. The failed small-cell attempt remains preserved.
 
 ### Independent 1,250-input quantile random forest audited
 
@@ -1017,3 +1017,7 @@ comparisons do not establish equivalence or complete the paper.
 ### Independent 5,000-input local-linear estimator audited
 
 [All five folds](results/independent-loclin5000-2026-10-18) validate 25,000 held-out parameter predictions and 3,775,000 exact training/test cells. Baseline errors match the author-data workflow. Native outputs, warnings, commands, and estimator sources are retained in a byte-verified archive. The published 1,250-input cell is NA and was not run. Other independent estimators and historical discrepancies remain unresolved; this does not complete the paper.
+
+### Independent 5,000-input degree-four estimator audited
+
+[All five degree-four folds](results/independent-sabc4d5000-2026-10-18) validate 25,000 held-out parameter predictions and 3,775,000 exact training/test cells. Baseline errors match the author-data workflow. Every native archive member matches its audited original. Other independent estimators and historical Table 8 discrepancies remain unresolved; cross-stream performance differences do not complete the study.
