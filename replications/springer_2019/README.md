@@ -35,3 +35,9 @@ python qualify.py NEW_OUTPUT --cub toolkit --source-mode portable-syntax
 ```
 
 Use `--cub artifact --source-mode archived` to preserve the initial artifact-library attempt. Every attempt remains retained; a failed build is not a negative replication. Independent model validation and all full-size paper targets remain outstanding.
+
+## Heap accounting before paper comparisons
+
+[The archived-source audit](results/heap-source-audit-2026-10-18/audit.json) shows that the nominal heap parameter does not mean equal allocations across implementations. BitmapAlloc allocates `3*kMallocHeapSize/4`: 6 GiB at the nominal 8 GiB default. DynaSOAr uses object capacity divided by 64, multiplied by its compiled block size; its allocator metadata is additional. The CUDA 11.8 qualification reports 6,208-byte blocks. Applying that layout to the archived default capacity implies a 1,627,389,952-byte data buffer, not 8 GiB. This is a source-derived extrapolation, not a full-capacity execution measurement.
+
+The artifact’s Figure 11 instructions include DynaSOAr allocator metadata in its reference budget. Their worked example uses the reported total memory usage, then passes that byte budget to mallocMC. The paper separately excludes enumeration arrays. Consequently, capacity comparisons must record heap, metadata, enumeration and static-cell allocations separately. Preserve native-default results alongside explicitly matched-budget controls; neither successful compilation nor matching nominal flags establishes equal memory budgets.
