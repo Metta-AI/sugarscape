@@ -11,12 +11,21 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("archive", type=Path)
 parser.add_argument("run", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--expected-runtime", choices=["cpython", "pypy"], default="cpython"
+)
 args = parser.parse_args()
 manifest = json.loads((args.run / "manifest.json").read_text())
 assert manifest["release"] == "b9ca671ab7591c7b3606f2d76c33eda344d626d1"
 pins = json.loads(Path(__file__).with_name("source-sha256.json").read_text())
 assert manifest["source_sha256"] == pins["source_sha256"]
-assert manifest["pythonhashseed"] == "0" and manifest["python"].startswith("3.11.14")
+assert manifest["pythonhashseed"] == "0"
+if args.expected_runtime == "cpython":
+    assert manifest["python"].startswith("3.11.14") and "PyPy" not in manifest["python"]
+else:
+    assert (
+        manifest["python"].startswith("3.11.13") and "PyPy 7.3.20" in manifest["python"]
+    )
 expected_archives = {
     "selfishness": "e2016f36a9728c23cee025d7a2e63cd2feffe4c36fbd62970e3a7792cb4d19e7",
     "heterogeneous": "c37aa109e59ca8b96cd295b7f022d6bf56f413aabbf246ca432ff5d4360de91a",

@@ -46,6 +46,7 @@ def main():
     parser.add_argument("experiment", choices=["selfishness", "heterogeneous"])
     parser.add_argument("entry")
     parser.add_argument("output", type=Path)
+    parser.add_argument("--interpreter", type=Path, default=Path(sys.executable))
     args = parser.parse_args()
     engine = args.engine.resolve()
     assert (
@@ -107,7 +108,7 @@ def main():
     config_path = output / "config.json"
     config_path.write_text(json.dumps(configuration, indent=2) + "\n")
     command = [
-        sys.executable,
+        str(args.interpreter.resolve()),
         str(engine / "sugarscape.py"),
         "--conf",
         str(config_path),
@@ -120,7 +121,10 @@ def main():
         "entry": args.entry,
         "original_config_sha256": hashlib.sha256(original).hexdigest(),
         "command": command,
-        "python": sys.version,
+        "python": subprocess.check_output(
+            [str(args.interpreter.resolve()), "-c", "import sys; print(sys.version)"],
+            text=True,
+        ).strip(),
         "pythonhashseed": "0",
         "engine": str(engine),
         "source_sha256": {

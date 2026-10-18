@@ -426,6 +426,24 @@ Two additional paired runtime checks were interrupted by provider host loss; sna
 No production runtime or completion status changes here.
 These replays add no independent scientific seeds and do not complete either sweep or the paper.
 
+## Sequential runtime and memory comparison
+
+[Eight completed sequential controls](results/sequential-runtime-complete-2026-10-18) reproduce all 40,008 original-control observations byte for byte.
+At selfishness 0 and 0.5, PyPy mean elapsed times are 398.89 and 85.46 seconds, versus CPython's 1,248.79 and 280.27 seconds.
+The measured mean speedups are 3.13× and 3.28×; maximum resident memory ranges from 168,280–356,764 KiB for PyPy, versus 34,240–87,052 KiB for CPython.
+Each condition has two repetitions per runtime, ordered CPython / PyPy / PyPy / CPython on the same two-CPU allocation.
+
+```sh
+python audit_sequential_runtime.py \
+  results/sequential-runtime-complete-2026-10-18/native.tar.gz \
+  results/supplement-controls-2026-10-17/native.tar.gz /path/to/new-audit.json
+```
+
+These results support bounded supplementary scheduling, with the measured memory increase accounted for.
+They are not universal runtime equivalence or historical-paper timing claims.
+The archive is preserved locally and in external storage; the completed owned node is stopped.
+These are repeated inputs, so the remaining supplementary worklist stays at 99,992.
+
 ## Runtime checkpoint preserved after provider host loss
 
 [The surviving node’s checkpoint](results/runtime-surviving-checkpoint-2026-10-17) independently validates 67 egoistic and 19 Bentham 5,000-step inputs.
@@ -1018,3 +1036,7 @@ Sweeps, longer horizons, runtime requirements, and remaining figure analysis sti
 ## Bentham terminal runtime audit
 
 [The final Bentham checkpoint](results/runtime-bentham-terminal-2026-10-18) adds one complete original 50,000-step input. Exact reconciliation reaches 873/1,200 deposited runtime inputs and 2,800,520 observations. The six-hour timeout and unfinished fourth input remain retained without completion credit.
+
+### Bounded 0.37 cohort launched
+
+[The frozen protocol](results/selfishness037-protocol-2026-10-18/README.md) requests the remaining 499 original seeds at selfishness 0.37. Two full CPython/PyPy pairs gate eight-worker bulk execution; all original horizons remain intact. The 9.5-hour simulation budget is bounded to roughly $8. Bootstrap and the first pilot are running; no additional completed inputs are claimed yet.
