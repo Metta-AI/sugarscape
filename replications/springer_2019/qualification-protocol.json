@@ -1,0 +1,31 @@
+{
+  "scope": "GPU execution qualification only; no paper claim",
+  "artifact_sha256": "75421734305809c5999904082616996a904a19a5e43466cf076ec10660e559a1",
+  "image": "nvidia/cuda@sha256:be2096fa6eac084b3b040369cc59af328eaecf5eedb45a65bfda96b24245fef1",
+  "cuda": "11.8",
+  "original_cuda": "9.1",
+  "hardware": "one H100",
+  "variants": [
+    "dynasoar_no_cell",
+    "baseline_aos",
+    "baseline_soa"
+  ],
+  "grid": 32,
+  "iterations": 10000,
+  "seed": 42,
+  "repeats": 2,
+  "max_objects": 262144,
+  "debug_assertions": true,
+  "architecture": "compute_61 PTX, driver JIT on modern GPU",
+  "simulation_source_changes": [],
+  "command_bound_seconds": 2700,
+  "compute_budget_usd": 5,
+  "prerequisite": "Current node hourly rate must fit the budget with provisioning/export allowance.",
+  "checks": [
+    "archive publisher MD5 and SHA256",
+    "all source member hashes",
+    "all compiler and runtime exit statuses",
+    "debug assertions active",
+    "native checksums retained without claiming full-state equivalence"
+  ]
+}

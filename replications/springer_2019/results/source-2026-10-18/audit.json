@@ -1,0 +1,84 @@
+{
+  "artifact_url": "https://drops.dagstuhl.de/storage/artifacts/darts-vol005/darts-vol005-issue002_ecoop2019/658/DARTS-5-2-2-artifact-e7b8bb33961ae66209581e2c58c6cad3.zip",
+  "artifact_doi": "10.4230/DARTS.5.2.2",
+  "paper_doi": "10.4230/LIPIcs.ECOOP.2019.17",
+  "md5": "e7b8bb33961ae66209581e2c58c6cad3",
+  "sha256": "75421734305809c5999904082616996a904a19a5e43466cf076ec10660e559a1",
+  "archive_entries": 640,
+  "files": 511,
+  "current_github_commit": "a4f956cd13160eb566e8a0caef6aad1e59c26da9",
+  "comparison": [
+    {
+      "path": "dynasoar/example/sugarscape/dynasoar/sugarscape.cu",
+      "artifact_sha256": "d6c8e5b3b336cc2c673cbd2845257ab071cc9c7119f0326b759e74ee2ceacf0f",
+      "current_github_sha256": "d6c8e5b3b336cc2c673cbd2845257ab071cc9c7119f0326b759e74ee2ceacf0f",
+      "exact": true
+    },
+    {
+      "path": "dynasoar/example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "artifact_sha256": "13a370352bff1e5eb81dea4ccc9e070dc4955663ab3bd71755a0ff511dd2ef4e",
+      "current_github_sha256": "13a370352bff1e5eb81dea4ccc9e070dc4955663ab3bd71755a0ff511dd2ef4e",
+      "exact": true
+    },
+    {
+      "path": "dynasoar/example/sugarscape/baseline_aos/sugarscape.cu",
+      "artifact_sha256": "8f0a906469aff9ee65259ebeb68aeb92c3498458a4026293c2e11bf35bca890b",
+      "current_github_sha256": "8f0a906469aff9ee65259ebeb68aeb92c3498458a4026293c2e11bf35bca890b",
+      "exact": true
+    },
+    {
+      "path": "dynasoar/example/sugarscape/baseline_soa/sugarscape.cu",
+      "artifact_sha256": "ca1481f743e81f355e962f00de8a354ce8bcd43fd54cfe2a9d92b107d3cf5699",
+      "current_github_sha256": "ca1481f743e81f355e962f00de8a354ce8bcd43fd54cfe2a9d92b107d3cf5699",
+      "exact": true
+    },
+    {
+      "path": "dynasoar/example/sugarscape/configuration.h",
+      "artifact_sha256": "2dfeddf32b97e7515719763416740fcb560ea5f0777388143ca86913e23e85de",
+      "current_github_sha256": "2dfeddf32b97e7515719763416740fcb560ea5f0777388143ca86913e23e85de",
+      "exact": true
+    },
+    {
+      "path": "dynasoar/build_scripts/build_sugarscape.sh",
+      "artifact_sha256": "9549cd3911f8e1b06cae9249749c78fb0e4bee7d3e03dd2a1e1adb1d8696a3ef",
+      "current_github_sha256": "9549cd3911f8e1b06cae9249749c78fb0e4bee7d3e03dd2a1e1adb1d8696a3ef",
+      "exact": true
+    },
+    {
+      "path": "dynasoar/benchmark_scripts/run_benchmarks.py",
+      "artifact_sha256": "9a3710aa9a01649efcddd91eedb9874221c47c28521b166dddff3c6b755ab37f",
+      "current_github_sha256": "9a3710aa9a01649efcddd91eedb9874221c47c28521b166dddff3c6b755ab37f",
+      "exact": true
+    }
+  ],
+  "full_horizon": 10000,
+  "grid_width": 1700,
+  "seed": 42,
+  "repeat_count": 5,
+  "allocator_names": [
+    "dynasoar",
+    "mallocmc",
+    "halloc",
+    "bitmap",
+    "cuda"
+  ],
+  "static_baselines": [
+    "baseline_aos",
+    "baseline_soa"
+  ],
+  "reproduction_targets": [
+    "Figure10 Sugarscape total and enumeration timings",
+    "Figure11 Sugarscape maximum problem size at equal allocator heap",
+    "Section6.1 performance interpretations for Sugarscape",
+    "Section6.2 memory-efficiency interpretations for Sugarscape"
+  ],
+  "source_defects": [
+    "benchmark_scripts/run_benchmarks.py requests sugarscape_no_cell; archived CMake target is sugarscape_soa_no_cell and shell-build output is sugarscape_dynasoar_no_cell. Do not run stale driver without checking executable identity."
+  ],
+  "limits": [
+    "No simulation run performed yet.",
+    "Artifact provenance authenticates this archive, not unknown original RNG execution states.",
+    "Historical TitanXp/CUDA9.1 absolute timings cannot be assigned to a modern GPU.",
+    "Paper provides bars, not machine-readable Sugarscape timing/space measurements in this artifact."
+  ]
+}
