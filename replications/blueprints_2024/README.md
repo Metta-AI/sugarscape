@@ -886,3 +886,18 @@ After independent audit, the local producer was stopped with its completed ledge
 Its final prefix is 152/500 Bentham inputs, bringing the homogeneous union to 1,592/2,000.
 The remaining 348 inputs run on 32 workers with disjoint directories and an outer deadline before lease expiry.
 The interrupted local input remains preserved and uncredited; cloud execution alone adds no coverage.
+
+### First audited parallel Bentham outputs
+
+[The sealed partial ensemble](results/bentham-parallel-prefix-2026-10-18)
+adds 29 distinct original inputs and 145,029 native observations. Every trajectory
+passes configuration, source-pin, exit, hash and outcome checks. Fresh extraction
+reproduces all 29 audits byte-for-byte. Union reconciliation raises Bentham
+coverage to 181/500 and homogeneous coverage to 1,621/2,000.
+
+Inputs finish out of order; missing indices remain explicit. Five other attempts
+(indices 157, 159, 165, 177 and 181) exited 124 at the frozen one-hour limit.
+Those are execution failures, receive no simulation or scientific credit, and
+remain required. Their partial outputs stay on the original worker disk.
+The archive contains the sealed attempt ledger and completed inputs only.
+Other workers continue under the existing deadline; no inputs were restarted.
