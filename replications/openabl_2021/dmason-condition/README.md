@@ -35,3 +35,7 @@ The archive retains generated Java, compiled classes, observers and all executio
 logs. Every member was compared byte-for-byte with the retained native file.
 The large dependency bundle is identified by its source URL and checksum rather
 than duplicated in Git. Three study completions remain unchanged.
+
+## Paired follow-up
+
+[Seeded and ordered controls](paired-seeded/README.md) independently validate all 31,752 initial fields. Once neighbor order is fixed, both identity variants match all 31,752 final replay fields. The duplicate field representation alone does not change the checked scientific result under that control.

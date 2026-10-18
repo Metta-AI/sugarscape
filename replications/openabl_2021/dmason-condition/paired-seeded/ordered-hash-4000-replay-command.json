@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-dmason-qualification-001/ordered-hash-4000-initial.json",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-dmason-qualification-001/ordered-hash-4000-final.json",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-dmason-qualification-001/ordered-hash-4000-replay.json",
+    "--steps",
+    "100",
+    "--buffer",
+    "copy"
+  ],
+  "exit_code": 0,
+  "stdout": "Matched 31752 fields after 100 steps (copy buffers)\n",
+  "stderr": ""
+}
