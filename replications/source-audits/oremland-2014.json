@@ -1,6 +1,6 @@
 {
   "paper": "https://www.jasss.org/17/2/6.html",
-  "status": "Specification and source audit only; no simulation result",
+  "status": "Source audit and independent native full-size reconstruction; paper results remain unreplicated",
   "companion_dissertation": {
     "url": "https://vtechworks.lib.vt.edu/handle/10919/25138",
     "pdf_url": "https://vtechworks.lib.vt.edu/bitstreams/1bf9f9b2-b5ea-4988-aabc-75970ce94bcd/download",
@@ -63,5 +63,12 @@
     "evidence": "oremland-tax-semantics-2026-10-18/README.md",
     "finding": "Journal Algorithm 3 and dissertation Algorithm 6 agree. Literal negative payment is independent of the rate, including zero. Clipping only that payment leaves fixed-schedule survivor states unchanged but can increase total revenue by at most 600 for the original 200-agent model.",
     "scope": "Analytical bound, no simulation or author-executable validation."
+  },
+  "native_reconstruction": {
+    "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
+    "complete_control_runs": 1600,
+    "paired_state_matches": 40800,
+    "observations": 81600,
+    "scope": "Uniform-tax diagnostic controls across 100 seeds. No original heterogeneous control, reduction, or optimization result claimed."
   }
 }

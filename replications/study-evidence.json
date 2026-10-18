@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T20:12:52.163139+00:00",
+  "as_of": "2026-10-18T20:28:00.592615+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -239,6 +239,19 @@
       "checked_at": "2026-10-18T09:17:19.383961+00:00",
       "evidence_scan_scope": "All JSON files under replications/openabl_2021",
       "remaining_scope": "All13 GPU size conditions executed and audited. Whole-runner timing comparison is descriptive: different hardware, one observation per size and XML I/O included. Historical performance, native transition equivalence, distributed1M-cell1000-step scaling and exact154-line claim remain incomplete."
+    },
+    {
+      "study": "oremland_2014",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
+      "checked_commit": "08e77c538e58cc4cf86c5d29f2c51ac2ed546d59",
+      "status": "partial",
+      "readme": "replications/oremland_2014/README.md",
+      "readme_sha256": "f19b8cd85f945460cd92115d227dc222065cbd2802ad2410a7317a3066469357",
+      "json_evidence_files": 10,
+      "gzip_json_evidence_files": 0,
+      "checked_at": "2026-10-18T20:28:00.592615+00:00",
+      "evidence_scan_scope": "All JSON files under replications/oremland_2014",
+      "remaining_scope": "Independent native NetLogo full-size reconstruction executes 1,600 uniform-tax controls across 100 seeds; all 40,800 paired survivor states match and revenue differences equal negative-wealth refunds. Original heterogeneous controls, clock convention, reduced-grid conventions, policy-ranking agreement, optimization, and historical timings remain incomplete. No completion credit."
     }
   ],
   "study_prs": 18,
