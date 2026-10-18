@@ -1,0 +1,39 @@
+--- simulate.cpp
++++ simulate_subsistence.cpp
+@@ -20,7 +20,7 @@
+ };
+ 
+ int main(int argc, char** argv) {
+-    if (argc != 7) throw std::invalid_argument("Usage: simulate seed infertility birth-cost cycles record-every observations.csv");
++    if (argc != 8) throw std::invalid_argument("Usage: simulate seed infertility birth-cost cycles record-every observations.csv metabolism");
+     const auto seed = std::stoull(argv[1]);
+     const int infertility = std::stoi(argv[2]);
+     const int birth_cost = std::stoi(argv[3]);
+@@ -32,6 +32,8 @@
+     observations.exceptions(std::ios::failbit | std::ios::badbit);
+     observations.precision(17);
+     observations << "cycle,kind,agent_id,count,wealth,mean_age\n";
++    const int metabolism_rate = std::stoi(argv[7]);
++    if (metabolism_rate != 3 && metabolism_rate != 4) throw std::invalid_argument("Invalid metabolism");
+     std::mt19937_64 random(seed);
+     std::array<int, 2500> resource;
+     resource.fill(4);
+@@ -80,15 +82,15 @@
+             occupied[agent.cell] = true;
+             agent.wealth += resource[agent.cell];
+             resource[agent.cell] = 0;
+-            if (agent.wealth < 3) {
++            if (agent.wealth < metabolism_rate) {
+                 death_loss += agent.wealth;
+                 agent.alive = false;
+                 occupied[agent.cell] = false;
+                 ++deaths;
+                 continue;
+             }
+-            agent.wealth -= 3;
+-            metabolism += 3;
++            agent.wealth -= metabolism_rate;
++            metabolism += metabolism_rate;
+             if (agent.age >= 1 && agent.wealth >= birth_cost &&
+                 std::uniform_int_distribution<int>(1, infertility)(random) == 1) {
+                 std::vector<int> empty;

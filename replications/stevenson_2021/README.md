@@ -466,3 +466,10 @@ The final analysis passes all 200 runs, using the frozen windows and explicit ex
 The new evolutionary late-window population means are 858.774/919.125 and Gini means are 0.689854/0.728303 for stable/chaotic scenarios.
 All 200 long runs complete 100,000 cycles; 200,200 observations pass audit, and an independent calculation confirms all 96 statistical quantities.
 This completes execution of the declared long ensembles, not the paper replication. Original conventions, fixed-society age discrepancies, growth fits and remaining figure/Appendix B scope remain unresolved.
+
+## Figure 6(a) subsistence societies
+
+[Both printed parameter cases](results/figure6a-subsistence-2026-10-18) now complete 100 seeds over 505 cycles, using metabolism four.
+Two metabolism-three parity checks preserve the original engine outputs exactly; all 101,000 new cycles pass independent resource/population checks.
+Original vectors provide 995 actual-curve comparisons, separating the visible 200-cycle axes from exported vertices through 505.
+The unknown author seed, phase and fitting procedure prevent an exact-trajectory claim; pointwise seed bands are descriptive and no paper-completion credit is assigned.
