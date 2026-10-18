@@ -300,3 +300,18 @@ Fresh public-archive extraction reproduces the snapshot and native audits
 byte-for-byte. Author AgentSpeak input and reexport remain external; the
 reload audit records their hashes. Visible host-GUI validation and historical
 runtime fidelity remain unresolved. This study is not counted as completed.
+
+### Native GUI observed
+
+[Window evidence](results/host-gui-observation-2026-10-18) captures the actual
+JaCaMo Mining World during a fresh, isolated host scenario. Two screenshots
+show the agent at different grid positions, gold cells, the speed control and
+the collected-gold counter. The capture targets window 3082, owned by Java
+process 95799; retained parent-process provenance connects it to this run's
+Gradle launcher. No interface input was injected.
+
+This resolves the earlier native-window observation gap without manual user
+assistance. It does not yet establish completion of this new scenario: its
+1000-step trajectories and state-transfer reconciliation remain under execution
+and audit. Earlier completed scenarios and their evidence remain unchanged.
+Historical revision and dependency equivalence also remain unproven.
