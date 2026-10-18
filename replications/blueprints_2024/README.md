@@ -9,7 +9,9 @@ The complete altruistic Table 3 row matches exactly: 344 extinct, 10 worse, and 
 [Its complete figure comparison](results/altruistic-figures-2026-10-18/README.md)
 also matches all 24,392 extracted vertices in Figures 4, 5, 7, 8 and 9.
 Figure 6 matches all 4,995 vertices under all-cause deaths; the released plotter's narrower definition does not match.
-All retained intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. Three batches remain active.
+All counted intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. Two homogeneous batches remain active.
+Latest deposited-runtime coverage is **854/1,200 inputs and 2,199,311 observations**;
+[the terminal checkpoint](results/runtime-round2-terminal-2026-10-18/README.md) preserves both time-limit failures and all completed inputs.
 Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
 
 [Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)
