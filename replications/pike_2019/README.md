@@ -950,3 +950,22 @@ python replications/pike_2019/recover_deleted_data.py AUTHOR_CHECKOUT NEW_OUTPUT
 
 The recovery command needs the original Git history and retains all twelve raw blobs.
 Model-version alignment, final experiment provenance, and the remaining paper claims stay unresolved.
+
+### Source comparison across the deleted-data interval
+
+[The pinned source audit](results/deleted-source-2026-10-18) compares all 22 Python files in the two policy directories.
+Twenty are byte-identical between the data-bearing commit and the selected prepublication release.
+The two `NetScape.py` files differ only in the library import/constructor name and removal of one unused `itertools` import.
+Applying those exact textual edits reproduces the selected files byte-for-byte; no simulation files are modified.
+
+The latest available library source before the data commit is revision `9c0cf5f`, dated January 31, 2019.
+Its core file matches the selected `99d2091` core exactly after renaming the main class and its subclass reference.
+The report retains both revisions and every compared source hash.
+This rules out additional code edits in these compared files as an explanation for changed cached notebook outputs.
+It does not establish which installed library, dependencies, random states or recorder version generated the historical data.
+The archived datasets remain labeled earlier outputs, and numerical replay across runtimes remains unproven.
+
+```sh
+python replications/pike_2019/audit_deleted_source.py \
+  AUTHOR_MODEL_CHECKOUT AUTHOR_LIBRARY_CHECKOUT NEW_REPORT.json
+```
