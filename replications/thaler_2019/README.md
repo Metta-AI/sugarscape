@@ -593,3 +593,13 @@ Live hardware reports AMD EPYC 7571, 32 physical cores and 64 logical CPUs.
 All six timing conditions and thirty separately instrumented retry processes retain the full scope.
 The original eight-core ensemble continues separately; no conditions were restarted.
 Timing results and independent audits remain pending.
+
+### Native timing stopped after 41 of 45 conditions
+
+[Terminal evidence and independent audit](results/native-timing-terminal-2026-10-18)
+validate 164 measurements, preserving all 39 previously published conditions.
+Table 6 is complete; Table 8 covers sixteen of twenty conditions.
+The original TVar executable segfaulted for four capabilities and 500 rebirthing agents.
+The failed attempt remains archived; its cause is unresolved.
+Four timing conditions remain required, alongside the population, retry, Table 9 and graphical-source work.
+This is an execution failure, not a negative replication verdict.

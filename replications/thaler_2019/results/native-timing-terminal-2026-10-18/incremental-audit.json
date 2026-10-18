@@ -1,0 +1,111 @@
+{
+  "previous_published_conditions_unchanged": 39,
+  "new_conditions": [
+    {
+      "ordinal": 39,
+      "condition": {
+        "table": 8,
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 1500,
+        "benchmark": "sugarscape-tvar-rebirthing:4/1500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          64.14107771590352
+        ],
+        [
+          2.0,
+          128.30256450991146
+        ],
+        [
+          3.0,
+          192.73891658918
+        ],
+        [
+          4.0,
+          257.22285535000265
+        ]
+      ],
+      "ols_seconds": 64.36816849815658,
+      "r_squared": 0.9999986205766089,
+      "sample_standard_deviation_seconds": 0.0788933676035308,
+      "slope_error": 5.684341886080802e-14,
+      "r_squared_error": 0.0,
+      "report_sha256": "f67316ee46405509259ea021d21ce2f5019c2c73ea199d97d9ca76f0a46b642a"
+    },
+    {
+      "ordinal": 40,
+      "condition": {
+        "table": 8,
+        "variant": "io",
+        "caps": 4,
+        "agents": 500,
+        "benchmark": "sugarscape-io-rebirthing:4/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          20.57580334902741
+        ],
+        [
+          2.0,
+          40.98053547600284
+        ],
+        [
+          3.0,
+          62.22380984714255
+        ],
+        [
+          4.0,
+          82.82954200496897
+        ]
+      ],
+      "ols_seconds": 20.800449033896438,
+      "r_squared": 0.9999449751156585,
+      "sample_standard_deviation_seconds": 0.11665468561995464,
+      "slope_error": 2.1316282072803006e-14,
+      "r_squared_error": 0.0,
+      "report_sha256": "7d5f487a9fcd27c9715249b94b2e78f0d9bd0c218e4baa5efab90a892d666c6c"
+    }
+  ],
+  "missing_conditions": [
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-rebirthing:4/500"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-seq-rebirthing/500"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 2500,
+      "benchmark": "sugarscape-seq-rebirthing/2500"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 2000,
+      "benchmark": "sugarscape-tarray-rebirthing:4/2000"
+    }
+  ],
+  "terminal_exit": 1,
+  "failed_condition_ordinal": 41,
+  "failed_native_exit": -11,
+  "archive_sha256": "509a441228bc919da4bd91e25186e31d9d061cfe548524913ab536453ef7aa45"
+}
