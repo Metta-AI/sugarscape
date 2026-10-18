@@ -417,3 +417,11 @@ at initialization, iteration one and iteration fifty respectively.
 The initial landscape differs before simulation; historical visualization provenance remains unresolved.
 The quantitative benchmark remains unchanged. Empty-cell resource reconstruction and renderer limits
 are explicit, and these differences do not yet constitute a completed negative paper verdict.
+
+## Paired native initialization control
+
+[The frozen control](results/clang-input-control-preparation-2026-10-18) supplies
+complete GNU and Clang initial states through the original JSON input interface.
+It requires GNU trajectory parity before interpreting the Clang comparison.
+The GPU functions are identical across the image and release commits, but engine
+versions differ. Execution is bounded and pending; no result is inferred yet.

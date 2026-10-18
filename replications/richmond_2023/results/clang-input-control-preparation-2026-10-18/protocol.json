@@ -1,0 +1,41 @@
+{
+  "purpose": "Native visualization initialization control; not a replacement quantitative benchmark",
+  "source_revision": "290702073492677f2fc9164419e9d5900d119e02",
+  "engine_revision": "19136c18629af0a52ac4355ff705596b22bedac1",
+  "image_engine_tag": "v2.0.0-alpha.2",
+  "current_engine_tag": "v2.0.0-rc",
+  "gpu_functions_and_exit_condition_byte_identical_between_image_and_release": true,
+  "gpu_source_prefix_sha256": "cd4393af30062688cf044f5e547c27d7e90f6e4714f544933790dde75eb47c69",
+  "input_mechanism": "Original --in JSON reader; original benchmark skips host initialization when input file is supplied. No simulation source changes. Reuse previously qualified passive observer binary.",
+  "conditions": [
+    {
+      "initializer": "gnu",
+      "seed": 0,
+      "width": 256,
+      "occupation": 0.17,
+      "steps": 100,
+      "input_sha256": "ba57ee3cc51c9bcd5e90e9b8dee12892f655c733d142250996f79e303c3357ae"
+    },
+    {
+      "initializer": "clang",
+      "seed": 0,
+      "width": 256,
+      "occupation": 0.17,
+      "steps": 100,
+      "input_sha256": "62a9f82739e4f479ae19830b660e51b94aab8946fc667df93245ef1bb2c6112a"
+    }
+  ],
+  "gates": [
+    "GNU input-file replay must match earlier original-initializer population and active-state trajectories before interpreting the Clang control.",
+    "Both native initial active states must match the corresponding complete supplied state.",
+    "Use unchanged fixed image grid, palette and orientation; no fitting of seed or thresholds."
+  ],
+  "bound": {
+    "boot_minutes": 15,
+    "native_seconds_each": 300,
+    "max_artifact_bytes": 104857600,
+    "maximum_node_plus_idle_minutes": 30,
+    "maximum_cost_usd_at_observed_rate": 2.016
+  },
+  "historical_image_equivalence_unproven": true
+}
