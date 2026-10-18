@@ -859,3 +859,31 @@ the existing library without changing statistical source.
 
 Full independent estimator comparisons and interpretation of the published
 Table 8 discrepancies remain required. This does not complete the paper.
+
+### Independent 1,250-input linear regression audited
+
+[The completed five-fold workflow](results/independent-lm1250-2026-10-18)
+validates all 6,250 held-out parameter predictions, intervals and aggregate
+metrics. `audit_independent_folds.R INPUTS RUN NEW_OUTPUT` additionally verifies
+the hash-pinned independent input table, all 943,750 training/testing cells,
+original fold allocation and baseline errors. Public-archive extraction
+reproduces both audits byte-for-byte.
+
+| Parameter | Author-data performance | Independent-data performance |
+| --- | ---: | ---: |
+| Initial population | 0.513273 | 0.578945 |
+| Mutation probability | -0.130966 | 0.412859 |
+| Maximum sugar endowment | 0.399341 | 0.519539 |
+| Maximum spice endowment | 0.386771 | 0.529832 |
+| Reproduction wealth | 0.394302 | 0.763990 |
+
+Performance is one minus mean fold error divided by mean fold baseline error.
+Baseline errors agree because parameters and fold allocation are identical.
+Simulation statistics differ, including their random streams; these differences
+require interpretation rather than an automatic negative verdict.
+
+The native run reports 26 R warnings whose individual messages were not
+retained by the original runner. Finite-value, interval and prediction audits
+pass, but the warning count remains disclosed. The initial missing-library
+failure is also retained. The 5,000-input workflow is still running.
+No estimator or paper scope has been reduced.
