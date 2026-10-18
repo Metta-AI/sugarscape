@@ -197,10 +197,9 @@ python replications/lima_2024/audit_native.py /new/run /new/run/native-audit.jso
 The default port offset is 20,000; choose another with `--port-offset` when
 occupied. The runner refuses existing project containers, stops its own services
 within the one-hour protocol bound, and retains terminal states and logs.
-Preparation and all nine image builds have passed. A fresh complete execution
-with automatic collection and both auditors is in progress; no result is claimed
-until those audits pass. This workflow covers the container scenario, while the
-host-GUI setup and visual confirmation remain separate requirements.
+Preparation, all nine image builds, native execution, collection and both auditors
+have passed, as documented below. This workflow covers the container scenario;
+host-GUI execution and visual confirmation remain separate requirements.
 
 ### Host-JaCaMo workflow
 
@@ -227,3 +226,19 @@ The shared runner launches host JaCaMo and stops its process group at terminatio
 successful compilation and eight image builds. All three adaptations match the
 earlier host run exactly. Full execution is queued behind the container validation;
 compilation alone establishes neither native trajectories nor visible GUI behavior.
+
+### Portable container workflow verified end to end
+
+[The completed fresh execution](results/portable-container-complete-2026-10-18)
+passes preparation, nine-image build, native execution, automatic collection and
+both independent audits. Both NetLogo models complete all 1,000 ordered steps.
+All 883 router deliveries reconcile, and all 799 identities are accounted for:
+246 model-1 survivors, 245 model-2 survivors, 307 queued agents and one active miner.
+Eleven JaCaMo creations reconstruct incoming attributes; ten agents return.
+
+Collection preserves every backed-up native file and leaves all containers
+stopped. Fresh extraction of the public archive reproduces both audits
+byte-for-byte. The archive includes the frozen executed harness, including its
+original `run_container.py` filename, so the subsequent shared-runner refactor
+is not silently substituted into this evidence. Host execution and visual GUI
+confirmation remain separate; this does not complete the paper.
