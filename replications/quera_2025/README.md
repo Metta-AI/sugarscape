@@ -221,6 +221,6 @@ Use `baseline` instead of `perturbed` for unperturbed cases. The auditor preserv
 
 [All 9,216 diagnostic cases](results/perturbed-movement-complete-2026-10-18) now pass independent replay: 256 seeds × six parameters × three finite-difference step sizes × two directions. The 36 qualification cases and 9,180 continuation cases are disjoint and exhaust this declared grid. Replay verifies **22,118,400 agent updates and 552,960,000 cell updates with zero state error**.
 
-The continuation exited zero in 866.5 seconds; its separate replay also exited zero. Compressed per-case audits, native manifests, passive parity records, executed Julia source, Python auditor and exact commands are retained. The 1.91 GB native trace remains local while its object-storage upload runs; the coverage manifest distinguishes upload status from local audit evidence.
+The continuation exited zero in 866.5 seconds; its separate replay also exited zero. Compressed per-case audits, native manifests, passive parity records, executed Julia source, Python auditor and exact commands are retained. The 1.91 GB native trace upload exited zero. The remote checksum manifest matches local bytes; individual remote trace objects have not been independently read back.
 
 This validates the reconstructed diagnostic trajectories. It does not recover Figure 11’s historical experiment settings or the missing prior/loss/validation configuration and 5,000-epoch calibration. No whole-paper completion is claimed.
