@@ -1,0 +1,127 @@
+Current Device Number: 0
+  Device name: NVIDIA H100 80GB HBM3
+  Memory Clock Rate (KHz): 2619000
+  Memory Bus Width (bits): 5120
+  Peak Memory Bandwidth (GB/s): 3352.320000
+  Total global memory: 85019.590656 MB
+  Available (free) global memory: 84467.187712 MB
+
+┌───────────────────────────────────────────────────────────────────────┐
+│ Smallest block type:                                          6Female │
+│ Max. #objects:             262144                                     │
+│ Block size:                  6208 bytes                               │
+│ #Blocks:                     4096                                     │
+│ #Bitmap levels:                 2                                     │
+│ Data buffer size:     000024.250000 MB                                │
+│ Allocator overead:    000000.114670 MB + block overhead               │
+│ Total memory usage:   000024.364670 MB                                │
+└───────────────────────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────────────────┐
+│ Block stats for                                5Agent (type ID     0) │
+├────────────────────┬──────────────────────────────────────────────────┤
+│ #fields            │       10                                         │
+│ #objects / block   │       64                                         │
+│ block size         │     5248 bytes                                   │
+│ base class         │                                                v │
+│ is abstract        │        1                                         │
+│ data seg. [64] sz  │     5184 bytes                                   │
+│         (unpadded) │     5184 bytes                                   │
+│        (simple sz) │     5184 bytes                                   │
+│    (padding waste) │        0 bytes                                   │
+│ data seg. [ 1] sz  │      128 bytes                                   │
+│         (unpadded) │       81 bytes                                   │
+│ data seg. [64] sz  │     5184 bytes                                   │
+│         (unpadded) │     5184 bytes                                   │
+├────────────────────┴──────────────────────────────────────────────────┤
+│ Fields                                                                │
+├───────┬─────────────────┬───────────────────────┬──────────┬──────────┤
+│ Index │ Def. Class      │ Type                  │ Size     │ Offset   │
+├───────┼─────────────────┼───────────────────────┼──────────┼──────────┤
+│     9 │          5Agent │                     b │        1 │       80 │
+│     8 │          5Agent │                     i │        4 │       76 │
+│     7 │          5Agent │                     i │        4 │       72 │
+│     6 │          5Agent │                     i │        4 │       68 │
+│     5 │          5Agent │                     i │        4 │       64 │
+│     4 │          5Agent │                     i │        4 │       60 │
+│     3 │          5Agent │                     i │        4 │       56 │
+│     2 │          5Agent │                     i │        4 │       52 │
+│     1 │          5Agent │                     i │        4 │       48 │
+│     0 │          5Agent │   17curandStateXORWOW │       48 │        0 │
+├───────┼─────────────────┼───────────────────────┼──────────┼──────────┤
+│     Σ │                 │                       │       81 │          │
+└───────┴─────────────────┴───────────────────────┴──────────┴──────────┘
+┌───────────────────────────────────────────────────────────────────────┐
+│ Block stats for                                 4Male (type ID     1) │
+├────────────────────┬──────────────────────────────────────────────────┤
+│ #fields            │       12                                         │
+│ #objects / block   │       63                                         │
+│ block size         │     6208 bytes                                   │
+│ base class         │                                           5Agent │
+│ is abstract        │        0                                         │
+│ data seg. [63] sz  │     6144 bytes                                   │
+│         (unpadded) │     6111 bytes                                   │
+│        (simple sz) │     5670 bytes                                   │
+│    (padding waste) │      474 bytes                                   │
+│ data seg. [ 1] sz  │      128 bytes                                   │
+│         (unpadded) │       97 bytes                                   │
+│ data seg. [64] sz  │     6208 bytes                                   │
+│         (unpadded) │     6208 bytes                                   │
+├────────────────────┴──────────────────────────────────────────────────┤
+│ Fields                                                                │
+├───────┬─────────────────┬───────────────────────┬──────────┬──────────┤
+│ Index │ Def. Class      │ Type                  │ Size     │ Offset   │
+├───────┼─────────────────┼───────────────────────┼──────────┼──────────┤
+│     1 │           4Male │                     b │        1 │       96 │
+│     0 │           4Male │              P6Female │        8 │       88 │
+│     9 │          5Agent │                     b │        1 │       80 │
+│     8 │          5Agent │                     i │        4 │       76 │
+│     7 │          5Agent │                     i │        4 │       72 │
+│     6 │          5Agent │                     i │        4 │       68 │
+│     5 │          5Agent │                     i │        4 │       64 │
+│     4 │          5Agent │                     i │        4 │       60 │
+│     3 │          5Agent │                     i │        4 │       56 │
+│     2 │          5Agent │                     i │        4 │       52 │
+│     1 │          5Agent │                     i │        4 │       48 │
+│     0 │          5Agent │   17curandStateXORWOW │       48 │        0 │
+├───────┼─────────────────┼───────────────────────┼──────────┼──────────┤
+│     Σ │                 │                       │       90 │          │
+└───────┴─────────────────┴───────────────────────┴──────────┴──────────┘
+┌───────────────────────────────────────────────────────────────────────┐
+│ Block stats for                               6Female (type ID     2) │
+├────────────────────┬──────────────────────────────────────────────────┤
+│ #fields            │       12                                         │
+│ #objects / block   │       64                                         │
+│ block size         │     6208 bytes                                   │
+│ base class         │                                           5Agent │
+│ is abstract        │        0                                         │
+│ data seg. [64] sz  │     6144 bytes                                   │
+│         (unpadded) │     6144 bytes                                   │
+│        (simple sz) │     5696 bytes                                   │
+│    (padding waste) │      448 bytes                                   │
+│ data seg. [ 1] sz  │      128 bytes                                   │
+│         (unpadded) │       96 bytes                                   │
+│ data seg. [64] sz  │     6144 bytes                                   │
+│         (unpadded) │     6144 bytes                                   │
+├────────────────────┴──────────────────────────────────────────────────┤
+│ Fields                                                                │
+├───────┬─────────────────┬───────────────────────┬──────────┬──────────┤
+│ Index │ Def. Class      │ Type                  │ Size     │ Offset   │
+├───────┼─────────────────┼───────────────────────┼──────────┼──────────┤
+│     1 │         6Female │                     i │        4 │       92 │
+│     0 │         6Female │                     i │        4 │       88 │
+│     9 │          5Agent │                     b │        1 │       80 │
+│     8 │          5Agent │                     i │        4 │       76 │
+│     7 │          5Agent │                     i │        4 │       72 │
+│     6 │          5Agent │                     i │        4 │       68 │
+│     5 │          5Agent │                     i │        4 │       64 │
+│     4 │          5Agent │                     i │        4 │       60 │
+│     3 │          5Agent │                     i │        4 │       56 │
+│     2 │          5Agent │                     i │        4 │       52 │
+│     1 │          5Agent │                     i │        4 │       48 │
+│     0 │          5Agent │   17curandStateXORWOW │       48 │        0 │
+├───────┼─────────────────┼───────────────────────┼──────────┼──────────┤
+│     Σ │                 │                       │       89 │          │
+└───────┴─────────────────┴───────────────────────┴──────────┴──────────┘
+  Data buffer:  0x7fe3de000000
+  Available (free) global memory after init: 84437.827584 MB
+

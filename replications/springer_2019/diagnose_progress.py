@@ -10,6 +10,7 @@ import subprocess
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("qualification", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--architecture", choices=("61", "90"), required=True)
 args = parser.parse_args()
 root = args.output.resolve()
 root.mkdir(parents=True, exist_ok=False)
@@ -102,7 +103,7 @@ for mode, size, limit in [
         "-lineinfo",
         "--expt-extended-lambda",
         "-gencode",
-        "arch=compute_61,code=compute_61",
+        f"arch=compute_{args.architecture},code=compute_{args.architecture}",
         "-maxrregcount=64",
         "-Iexample/configuration/dynasoar",
         "-I.",

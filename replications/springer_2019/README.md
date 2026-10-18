@@ -118,3 +118,14 @@ A separate attempt inserts eight `template` keywords into existing shared-adapte
 [All four corrected builds](results/remaining-allocator-runtime-2026-10-18) pass compilation. CUDA and BitmapAlloc each complete two debug executions. mallocMC fails twice with a `Cell_leave` occupancy assertion (exit 198); Halloc segfaults twice (signal 11). The complete native archive, source-change reconstruction, per-file hashes, binary hashes and all eight execution records are audited. These failures require implementation/toolchain investigation before any paper verdict.
 
 The initial progress diagnostic failed before compilation because its Python runner used syntax unsupported by Python 3.8. Its sealed failure remains retained. The runner now passes Python 3.8 grammar validation; corrected command `cmd-cyq9u` uses the same bounded protocol.
+
+
+### Initialization and architecture diagnostics
+
+[The corrected compute-61 diagnostic](results/progress-compute61-2026-10-18) completes its 32×32 debug control through 10,000 steps. Both 1700×1700 builds time out after 120 seconds. Their final host record follows the agent-creation launch; neither returns from the subsequent existing CUDA synchronization. No simulation timestep starts. This localizes the full-size failure to initialization, without proving its underlying cause.
+
+[The compute-90 comparison](results/progress-compute90-2026-10-18) changes only the target architecture in the diagnostic compilation. Its 32×32 control fails during agent creation with the allocator's `__activemask() == active` assertion. The gate prevents full-size probes. This is evidence of a target-dependent allocator failure, not proof that it explains the compute-61 timeout. Synchronization assumptions require investigation before any algorithm change or performance comparison.
+
+`audit_progress.py` verifies both sealed archives, original qualified source hashes and compiled binary hashes. Removing the declared observer restores the original statement sequence. Logs, source differences, exact compile flags and failures remain archived. The first auditor's line-diff check misclassified an unchanged synchronization statement because of diff alignment; the statement-sequence check resolves that without changing simulation code.
+
+Use `diagnose_progress.py QUALIFICATION NEW_OUTPUT --architecture 61` or `--architecture 90`. Both diagnostics retain seed 42 and 10,000 steps; the full-size probes retain the original 1700×1700 grid and object capacity. Instrumented timings cannot count toward published benchmark claims. The owned GPU was stopped after both exports completed and downloaded archives passed audits.

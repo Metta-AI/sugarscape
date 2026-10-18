@@ -1,0 +1,21 @@
+{
+  "predecessor": {
+    "command_id": "cmd-cyq9u",
+    "ended_at": "2026-10-18T23:42:24.605584+00:00",
+    "env": [],
+    "exit_code": 0,
+    "object": "command",
+    "started_at": "2026-10-18T23:37:54.542753+00:00",
+    "state": "exited"
+  },
+  "outer_seconds": 600,
+  "per_probe_seconds": [
+    60,
+    120,
+    120
+  ],
+  "budget_usd": 2,
+  "architecture": "compute_90 PTX",
+  "scope": "Architecture-only diagnostic comparison to compute_61; no performance or full-state equivalence claim",
+  "runner_sha256": "3e011dfdeef6d607ae3434f16f14f040b652c2c9f38847d2b8b1f7163e553aa8"
+}
