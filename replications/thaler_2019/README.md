@@ -729,3 +729,17 @@ Combined with the original 41 audited conditions, coverage is now 42/45:
 The original SIGSEGV remains preserved. This fresh successful process does not
 explain that failure or establish historical performance equivalence. The three
 remaining conditions continue on the same allocation without duplicate work.
+
+### Complete timing comparison gate
+
+`timing/compare_complete_grid.py OUTPUT AUDIT_JSON...` combines independently
+audited timing records and requires all 51 published cells across Tables 6, 8
+and 9. Repeated records must agree exactly; missing conditions stop comparison
+before an output file is written. Native audits remain prerequisite evidence.
+The output reports descriptive runtime ratios with the existing hardware limits,
+without inventing a numerical equivalence threshold.
+
+[Execution against the current real evidence](results/complete-comparison-gate-2026-10-18)
+correctly rejects 48/51 cells and identifies three missing Table 8 conditions:
+sequential 500, sequential 2,500 and TArray 2,000. No final comparison was created.
+The successful complete-data path remains unvalidated until those runs finish.
