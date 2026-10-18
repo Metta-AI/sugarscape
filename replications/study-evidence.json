@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T21:41:23.212312+00:00",
+  "as_of": "2026-10-18T21:44:01.484650+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -243,15 +243,15 @@
     {
       "study": "oremland_2014",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
-      "checked_commit": "d85d63eb0ff3232568620e113ff8cca34acba803",
+      "checked_commit": "91e4ffe89cd358f8a05de8b43e25fa58cec527d4",
       "status": "running",
       "readme": "replications/oremland_2014/README.md",
-      "readme_sha256": "6aaed6598aa3d6a9e606255a13e35b610b77005042862f8ff28687e275a0d512",
-      "json_evidence_files": 78,
+      "readme_sha256": "dce2269d5ec06d6f6b60672e47120dc7bd11e200adea64b4666d1b9a8f3bf510",
+      "json_evidence_files": 87,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T21:41:23.212312+00:00",
+      "checked_at": "2026-10-18T21:44:01.484650+00:00",
       "evidence_scan_scope": "All JSON files under replications/oremland_2014",
-      "remaining_scope": "Seven reduced models now audit 428,400 complete native ranking runs; independent full-size comparison adds 10,000. Small-grid GUI extinction crash reproduced and repaired by removing plot callbacks from headless adapter; all 400 reference results remain exact and extinct case completes 50 steps. Four incomplete small-grid models rerunning under qualified adapter (2,110,000 runs, four workers, one-hour bound). Separate 37,600-run unique-stream diagnostic exited zero but awaits its design-specific audit. Original controls, code, reduction and ranking choices, uncertainty bars, optimizer and transfer remain unresolved; no completion credit."
+      "remaining_scope": "Seven reduced models now audit 428,400 complete native ranking runs; independent full-size comparison adds 10,000. Small-grid GUI extinction crash reproduced and repaired by removing plot callbacks from headless adapter; all 400 reference results remain exact and extinct case completes 50 steps. Four incomplete small-grid models rerunning under qualified adapter (2,110,000 runs, four workers, one-hour bound). Separate 37,600-run unique-stream diagnostic fully audited, including 75,200 input/output lines, 38,400 rank checks, and 768 exact-rational concordance checks against its own new reference. Independent-seed 40x40 pooled mortality linear concordance is .8686/.8695; within-stratum range .5285\u2013.7844. This sensitivity does not resolve author conventions or validate a negative replication. Original controls, code, reduction and ranking choices, uncertainty bars, optimizer and transfer remain unresolved; no completion credit."
     }
   ],
   "study_prs": 18,
