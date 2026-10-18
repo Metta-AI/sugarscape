@@ -89,3 +89,19 @@ copying incoming metabolism and vision. Incoming sugar remains accessible in
 the API history. Our exact-delivery audit therefore covers the transported data,
 not unchanged native sugar. The paper permits adaptation on entry; this source
 finding alone does not establish a failed replication.
+
+## Complete host-native trajectories
+
+[The host-scenario evidence](results/host-native-complete-2026-10-18) verifies
+both 1,000-step NetLogo trajectories with JaCaMo running outside Docker.
+All 942 router deliveries reconcile. Every registered identity is accounted
+for once: 244 model-1 survivors, 251 model-2 survivors, 303 queued agents and
+one active miner. Twelve native JaCaMo creations match incoming attributes;
+eleven agents returned. No incomplete transfer is counted as a completed one.
+
+The GUI flag was enabled, but the UI tool could not select the Java application.
+Visual GUI confirmation and native AgentSpeak reload remain outstanding. This
+is not a completed-paper verdict.
+
+After extracting the host archive, pass `--jacamo-log jacamo-host.log` to
+`audit_native.py`; the host log is separate from Docker's service logs.

@@ -12,6 +12,7 @@ from audit_snapshot import Row
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--jacamo-log", default="native.log")
 args = parser.parse_args()
 rows = [
     Row.model_validate_json(line)
@@ -57,7 +58,7 @@ assert locations == initial, {
     "missing": initial - locations,
     "extra": locations - initial,
 }
-native = (args.run / "native.log").read_text()
+native = (args.run / args.jacamo_log).read_text()
 pattern = (
     r'Vai criar o agente com os beliefs: agent_id\((\d+)\),path\("([^"]*)"\), '
     r"sugar\((-?\d+)\), metabolism\((\d+)\), vision\((\d+)\)"
@@ -83,7 +84,7 @@ report = {
     "jacamo_returns": left.total(),
     "native_file_sha256": hashes,
     "scope": (
-        "Complete container-scenario trajectories and identity conservation at "
+        "Complete native trajectories and identity conservation at "
         "shutdown; native JaCaMo creation attributes match consumed database records. "
         "This does not establish AgentSpeak reload or host-GUI scenario completion."
     ),
