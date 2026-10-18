@@ -408,3 +408,12 @@ H100 timing scales approximately linearly across all sixteen widths: descriptive
 versus 0.999422 in the archived V100 data. Seed ranges and all fit residuals are retained.
 Different hardware/toolchains prevent interpreting this as historical absolute-timing reproduction.
 Earlier partial-prefix sections preserve their acquisition-time status; they are superseded by the complete audit.
+
+## Native initial, first and fiftieth image comparisons
+
+[The fixed-grid comparison](results/native-image-comparison-2026-10-18) reconstructs all three views
+from the audited native capture. It matches 13,579, 14,295 and 16,454 of 65,536 released image classes
+at initialization, iteration one and iteration fifty respectively.
+The initial landscape differs before simulation; historical visualization provenance remains unresolved.
+The quantitative benchmark remains unchanged. Empty-cell resource reconstruction and renderer limits
+are explicit, and these differences do not yet constitute a completed negative paper verdict.

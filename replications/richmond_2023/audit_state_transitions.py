@@ -6,6 +6,7 @@ choices, conflict winners, or the order of within-step resolution rounds.
 
 import argparse
 import csv
+import gzip
 import hashlib
 import itertools
 import json
@@ -33,6 +34,7 @@ assert len(cells) == 65536
 sugar = {p: r["cell_sugar"] for p, r in cells.items()}
 previous = {r["id"]: r for r in cells.values() if r["status"] != 0}
 reports = []
+snapshots = [{"step": -1, "environment_sugar": list(sugar.values())}]
 with args.states.open() as stream:
     for step, group in itertools.groupby(
         csv.DictReader(stream), key=lambda r: int(r["step"])
@@ -100,6 +102,8 @@ with args.states.open() as stream:
                 "unresolved": sum(r["status"] == 3 for r in rows),
             }
         )
+        if step in (0, 49):
+            snapshots.append({"step": step, "environment_sugar": list(sugar.values())})
         previous = current
 assert len(reports) == 100
 report = {
@@ -110,6 +114,10 @@ report = {
     "scope": __doc__,
     "observations": reports,
 }
+with gzip.open(args.output.with_suffix(".snapshots.json.gz"), "xt") as stream:
+    json.dump(
+        {"coordinate_order": "x major, ascending y", "snapshots": snapshots}, stream
+    )
 with args.output.open("x") as stream:
     stream.write(json.dumps(report, indent=2) + "\n")
 print(json.dumps({k: v for k, v in report.items() if k != "observations"}))
