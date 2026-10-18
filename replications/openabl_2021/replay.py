@@ -29,14 +29,23 @@ args = parser.parse_args()
 assert args.steps > 0
 current = [Cell(**row) for row in json.loads(args.initial.read_text())["Agent"]]
 other = [dataclasses.replace(cell) for cell in current]
+# Released Sugarscape cells have fixed, unique half-integer grid centers. At radius
+# 1.5, exactly the nine adjacent offsets qualify; preserve native array order.
+positions = [tuple(cell.pos) for cell in current]
+assert all(
+    len(pos) == 2 and all(value - 0.5 == int(value - 0.5) for value in pos)
+    for pos in positions
+)
+indices = {pos: i for i, pos in enumerate(positions)}
+assert len(indices) == len(current)
 neighbors = [
-    [
-        j
-        for j, candidate in enumerate(current)
-        if sum((a - b) ** 2 for a, b in zip(cell.pos, candidate.pos, strict=True))
-        <= 1.5**2
-    ]
-    for cell in current
+    sorted(
+        indices[(x + dx, y + dy)]
+        for dx in (-1, 0, 1)
+        for dy in (-1, 0, 1)
+        if (x + dx, y + dy) in indices
+    )
+    for x, y in positions
 ]
 for _ in range(args.steps):
     for stage in range(4):

@@ -167,3 +167,7 @@ path for this condition. It does not establish equivalence at other sizes or
 with MASON's different generator. The released integer generator omits the lower
 offset for power-of-two ranges; that defect does not affect these default calls,
 whose power-of-two ranges all begin at zero. The reconstruction preserves it.
+
+## Complete published C grid behavior
+
+[All seven C sizes](c-grid/README.md) execute100 steps and pass independent initialization and 100-step replay with endpoint comparison:502,648 fields at each endpoint. `replay.py` uses exact half-integer grid lookup while retaining native neighbor order. This removes the quadratic neighbor scan. Historical timing and other backend scopes remain incomplete.
