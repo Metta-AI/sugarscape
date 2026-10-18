@@ -281,4 +281,22 @@ then installs the checkpoint and seeds the database. Remaining services start
 without restarting dependencies. [Preparation evidence](results/portable-reload-preparation-2026-10-18)
 checks the same source substitution and nine image builds. Re-auditing the prior
 control preserves every metric, including its failed score criterion. The fresh
-control is running; no new outcome is claimed before its audits finish.
+control is complete; its results follow below.
+
+### Portable saved-agent control completed
+
+[The completed control](results/portable-reload-complete-2026-10-18) verifies
+both 1,000-step trajectories and 953 exact router deliveries. All 799 identities
+remain accounted for: 238 model-1 survivors, 245 model-2 survivors, 315 queued
+agents and one active miner. Twelve native creations match incoming attributes;
+eleven agents return. Collection leaves all containers stopped.
+
+The checkpoint preserves its retained belief and all 39 plans. Its saved
+departure trigger again causes reexport without a mining completion: score
+remains 1, failing the declared increment-to-2 criterion. This repeats the
+first control's discrepancy, without establishing a whole-paper negative result.
+
+Fresh public-archive extraction reproduces the snapshot and native audits
+byte-for-byte. Author AgentSpeak input and reexport remain external; the
+reload audit records their hashes. Visible host-GUI validation and historical
+runtime fidelity remain unresolved. This study is not counted as completed.
