@@ -1,0 +1,129 @@
+{
+  "figure": 10,
+  "page": 23,
+  "paper_doi": "10.4230/LIPIcs.ECOOP.2019.17",
+  "svg_sha256": "969fbcc9a247ccc58cbf73bae461fec6278634a65c897617d25f999a9166fe4d",
+  "axis_grid_y": [
+    110.21483976604999,
+    94.3320194194,
+    78.44529262609998,
+    62.56247227945,
+    46.675746053699996,
+    30.79292570704999,
+    14.906198913750003
+  ],
+  "svg_units_per_second": 0.31769546950766664,
+  "method": "Seven horizontal grid lines map to 0:50:300 seconds. Colored heights plus adjoining white caps give total duration. CUDA uses its printed overflow annotation.",
+  "scope": "Digitized historical Titan Xp timing targets. No cross-hardware acceptance tolerance or uncertainty inferred.",
+  "targets": [
+    {
+      "allocator": "DynaSOAr",
+      "pattern": 5,
+      "colored_path": "M 260.390625 110.214844 L 265.554688 110.214844 L 265.554688 85.683594 L 260.390625 85.683594 Z M 260.390625 110.214844 ",
+      "enumeration_path": {
+        "fill-rule": "nonzero",
+        "fill": "rgb(100%, 100%, 100%)",
+        "fill-opacity": "1",
+        "stroke-width": "0.24",
+        "stroke-linecap": "butt",
+        "stroke-linejoin": "miter",
+        "stroke": "rgb(0%, 0%, 0%)",
+        "stroke-opacity": "1",
+        "stroke-miterlimit": "4",
+        "d": "M 457.742829 63.352648 L 466.841701 63.352648 L 466.841701 58.603614 L 457.742829 58.603614 Z M 457.742829 63.352648 ",
+        "transform": "matrix(0.56755, 0, 0, -0.56755, 0.59881, 118.944059)"
+      },
+      "non_enumeration_seconds": 77.21624119480246,
+      "enumeration_seconds": 8.483955565614272,
+      "total_seconds": 85.70019676041674
+    },
+    {
+      "allocator": "mallocMC",
+      "pattern": 13,
+      "colored_path": "M 265.554688 110.214844 L 270.714844 110.214844 L 270.714844 81.777344 L 265.554688 81.777344 Z M 265.554688 110.214844 ",
+      "enumeration_path": {
+        "fill-rule": "nonzero",
+        "fill": "rgb(100%, 100%, 100%)",
+        "fill-opacity": "1",
+        "stroke-width": "0.24",
+        "stroke-linecap": "butt",
+        "stroke-linejoin": "miter",
+        "stroke": "rgb(0%, 0%, 0%)",
+        "stroke-opacity": "1",
+        "stroke-miterlimit": "4",
+        "d": "M 466.841701 87.201054 L 475.933691 87.201054 L 475.933691 65.486271 L 466.841701 65.486271 Z M 466.841701 87.201054 ",
+        "transform": "matrix(0.56755, 0, 0, -0.56755, 0.59881, 118.944059)"
+      },
+      "non_enumeration_seconds": 89.51182100289203,
+      "enumeration_seconds": 38.792574255934056,
+      "total_seconds": 128.3043952588261
+    },
+    {
+      "allocator": "Halloc",
+      "pattern": 21,
+      "colored_path": "M 270.714844 110.214844 L 275.875 110.214844 L 275.875 81.761719 L 270.714844 81.761719 Z M 270.714844 110.214844 ",
+      "enumeration_path": {
+        "fill-rule": "nonzero",
+        "fill": "rgb(100%, 100%, 100%)",
+        "fill-opacity": "1",
+        "stroke-width": "0.24",
+        "stroke-linecap": "butt",
+        "stroke-linejoin": "miter",
+        "stroke": "rgb(0%, 0%, 0%)",
+        "stroke-opacity": "1",
+        "stroke-miterlimit": "4",
+        "d": "M 475.933691 87.187288 L 485.025681 87.187288 L 485.025681 65.513802 L 475.933691 65.513802 Z M 475.933691 87.187288 ",
+        "transform": "matrix(0.56755, 0, 0, -0.56755, 0.59881, 118.944059)"
+      },
+      "non_enumeration_seconds": 89.56100332212439,
+      "enumeration_seconds": 38.71879884961078,
+      "total_seconds": 128.27980217173518
+    },
+    {
+      "allocator": "BitmapAlloc",
+      "pattern": 29,
+      "colored_path": "M 275.875 110.214844 L 281.035156 110.214844 L 281.035156 84.054688 L 275.875 84.054688 Z M 275.875 110.214844 ",
+      "enumeration_path": {
+        "fill-rule": "nonzero",
+        "fill": "rgb(100%, 100%, 100%)",
+        "fill-opacity": "1",
+        "stroke-width": "0.24",
+        "stroke-linecap": "butt",
+        "stroke-linejoin": "miter",
+        "stroke": "rgb(0%, 0%, 0%)",
+        "stroke-opacity": "1",
+        "stroke-miterlimit": "4",
+        "d": "M 485.025681 67.860788 L 494.11767 67.860788 L 494.11767 61.473682 L 485.025681 61.473682 Z M 485.025681 67.860788 ",
+        "transform": "matrix(0.56755, 0, 0, -0.56755, 0.59881, 118.944059)"
+      },
+      "non_enumeration_seconds": 82.34349718785872,
+      "enumeration_seconds": 11.410304389664988,
+      "total_seconds": 93.7538015775237
+    },
+    {
+      "allocator": "CUDA Allocator",
+      "pattern": 37,
+      "colored_path": "M 281.035156 110.214844 L 286.199219 110.214844 L 286.199219 27.613281 L 281.035156 27.613281 Z M 281.035156 110.214844 ",
+      "total_seconds": 857.1,
+      "source": "Printed overflow annotation above the Sugarscape CUDA bar",
+      "enumeration_seconds": null,
+      "limitation": "Clipped bar does not expose separate enumeration duration"
+    },
+    {
+      "allocator": "Baseline SOA",
+      "pattern": 43,
+      "colored_path": "M 286.199219 110.214844 L 291.359375 110.214844 L 291.359375 90.328125 L 286.199219 90.328125 Z M 286.199219 110.214844 ",
+      "non_enumeration_seconds": 62.59679758990108,
+      "enumeration_seconds": 0.0,
+      "total_seconds": 62.59679758990108
+    },
+    {
+      "allocator": "Baseline AOS",
+      "pattern": 49,
+      "colored_path": "M 291.359375 110.214844 L 296.519531 110.214844 L 296.519531 29.773438 L 291.359375 29.773438 Z M 291.359375 110.214844 ",
+      "non_enumeration_seconds": 253.2028742010713,
+      "enumeration_seconds": 0.0,
+      "total_seconds": 253.2028742010713
+    }
+  ]
+}

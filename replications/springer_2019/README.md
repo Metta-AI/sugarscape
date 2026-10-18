@@ -55,4 +55,20 @@ The artifact’s Figure 11 instructions include DynaSOAr allocator metadata in i
 | Baseline SOA | 0.641 |
 | Baseline AOS | 0.621 |
 
-These are digitized graphical targets, not recovered raw measurements or newly replicated capacity results. Coordinate precision does not establish an experimental acceptance tolerance. The archived worked example varies one wa-tor dimension; Sugarscape exposes a square-grid side length. Resolve the paper’s problem-size convention before comparing side-length or cell-count ratios. Figure 10 timing targets still require extraction.
+These are digitized graphical targets, not recovered raw measurements or newly replicated capacity results. Coordinate precision does not establish an experimental acceptance tolerance. The archived worked example varies one wa-tor dimension; Sugarscape exposes a square-grid side length. Resolve the paper’s problem-size convention before comparing side-length or cell-count ratios. Figure 10 timing targets are recorded below.
+
+## Published timing targets
+
+[Figure 10 timing extraction](results/published-capacity-targets-2026-10-18/timing-targets.json) uses seven axis grid lines and the colored bars plus white enumeration caps. The CUDA bar exceeds the axis; its printed 857.1-second annotation supplies the total. Its separate enumeration time cannot be recovered from this clipped bar.
+
+| Implementation | Total seconds, published Titan Xp |
+| --- | ---: |
+| DynaSOAr | 85.7 |
+| mallocMC | 128.3 |
+| Halloc | 128.3 |
+| BitmapAlloc | 93.8 |
+| CUDA Allocator | 857.1 |
+| Baseline SOA | 62.6 |
+| Baseline AOS | 253.2 |
+
+The extracted bars qualify Section 6.1’s general statement that baseline versions are faster: SOA is faster than DynaSOAr, but AOS is slower in this Sugarscape chart. Preserve this distinction in claim-level comparisons. These historical totals are graphical targets, not measurements on the qualification H100. Native benchmark runs must report enumeration and total timing separately and retain hardware provenance.
