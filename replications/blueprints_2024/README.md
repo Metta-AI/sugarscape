@@ -901,3 +901,22 @@ Those are execution failures, receive no simulation or scientific credit, and
 remain required. Their partial outputs stay on the original worker disk.
 The archive contains the sealed attempt ledger and completed inputs only.
 Other workers continue under the existing deadline; no inputs were restarted.
+
+### Second parallel prefix and current Egoist prefix
+
+[The new audited evidence](results/homogeneous-prefix-2026-10-18-002) adds
+32 completed Bentham inputs and 41 completed Egoist inputs to the prior union.
+Coverage is now 1,694/2,000: Altruist 500, Raw 500, Egoist 481 and Bentham 213.
+Overlapping prior prefixes agree exactly and receive no duplicate credit.
+
+The 32 remote inputs each contain all 5,001 observations. Fresh extraction
+of their public archive reproduces every audit byte-for-byte. The local Egoist
+prefix rechecks 415 completed inputs from its declared interval [66,500),
+covering [66,481) and 733,793 observations from retained native trajectories.
+Its active next input is excluded.
+
+Eight Bentham attempts have timed out: indices 157, 159, 165, 177, 181, 196,
+197 and 203. Their partial trajectories remain retained remotely, and every
+index remains required. This checkpoint does not substitute seeds or shrink
+the ensemble. Production remains active under the existing deadline; the
+full homogeneous grid and whole-paper study remain incomplete.
