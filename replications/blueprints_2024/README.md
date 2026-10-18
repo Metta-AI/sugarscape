@@ -991,3 +991,5 @@ extinct; two complete 50,000 steps. The full paper remains incomplete.
 complete 5,000 steps and add 15,003 audited observations. Exact reconciliation
 reaches 1,839/2,000 homogeneous inputs, including Bentham 339/500. The remaining
 161 original Bentham inputs and other paper experiments remain incomplete.
+
+Final local retry evidence in `results/bentham-timeout-retry-2026-10-18-006` adds original inputs 232 and 237: 1,841/2,000 homogeneous inputs, Bentham 341/500. The supervisor stopped at its disk-space guard; seven assigned inputs never started. No restart or completion credit for those inputs.
