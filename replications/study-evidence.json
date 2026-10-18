@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T19:38:27.136465+00:00",
+  "as_of": "2026-10-18T19:42:46.537254+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -19,12 +19,12 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "d8afc1af69d4e17ae51c6fba213e78f96a1c6785",
+      "checked_commit": "2d435fc861656e7291416f81d24ad05735022ce6",
       "status": "partial",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "8d664b0ef393cccd87b2bef830e6c28261be92383191d51ab40ee248b3305851",
-      "json_evidence_files": 283,
-      "remaining_scope": "All 5,000 independent simulations and 750,000 statistics audited. Seven estimator families complete required sizes, including GAM at 1,250 and 5,000 inputs. GAM 5,000 has 25,000 paired predictions; neither dataset matches the five printed targets. Bootstrap-forest at 1,250 inputs completes 6,250 predictions and matches one of five printed scores. Neural-network and bootstrap-forest at 5,000 inputs remain active; historical discrepancies remain unresolved. Completed-fold recovery qualifies ten identical fold objects and 12,500 predictions; three LM folds recomputed and five bootstrap-forest folds replayed. Fresh forest fitting after recovery remains unqualified. Independent neural-network fold1 now audits 755,000 input cells and 5,000 predictions with interval metrics and exact archive readback. Four folds remain; no aggregate score yet.",
+      "readme_sha256": "4e570c9334c6a93d87ef7722224a816668c2d083c55283a6d18955db1123f955",
+      "json_evidence_files": 290,
+      "remaining_scope": "All 5,000 independent simulations and 750,000 statistics audited. Seven estimator families complete required sizes. Independent neural-network folds 1\u20133 validate 15,000 predictions and 2,265,000 input cells; two folds remain. Bootstrap-forest 5,000-input first fold audited after original four-hour timeout; unchanged folds 2\u20135 continue from saved random state under a 20-hour bound. Table 8 historical discrepancies and full independent estimator comparison remain unresolved; no new completion credit.",
       "gzip_json_evidence_files": 0,
       "checked_at": "2026-10-18T11:46:47.865693+00:00"
     },
