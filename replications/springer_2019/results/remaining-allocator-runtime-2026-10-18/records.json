@@ -1,0 +1,172 @@
+[
+  {
+    "kind": "build",
+    "allocator": "cuda",
+    "command": [
+      "nvcc",
+      "-O3",
+      "-g",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_61,code=compute_61",
+      "-maxrregcount=64",
+      "-Iexample/configuration/cuda",
+      "-I.",
+      "-DPARAM_SIZE=32",
+      "-DPARAM_MAX_OBJ=262144",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-remaining-allocators-syntax-002/qualification/native/cuda"
+    ],
+    "returncode": 0,
+    "seconds": 4.521989808999933
+  },
+  {
+    "kind": "execution",
+    "allocator": "cuda",
+    "repeat": 0,
+    "returncode": 0,
+    "seconds": 3.820276413999636,
+    "binary_sha256": "a27c7402c3bb97002c84e8383da2ac3ad5a7555fcdc351b5c63521d92899fc9b"
+  },
+  {
+    "kind": "execution",
+    "allocator": "cuda",
+    "repeat": 1,
+    "returncode": 0,
+    "seconds": 2.818667720999656,
+    "binary_sha256": "a27c7402c3bb97002c84e8383da2ac3ad5a7555fcdc351b5c63521d92899fc9b"
+  },
+  {
+    "kind": "build",
+    "allocator": "bitmap",
+    "command": [
+      "nvcc",
+      "-O3",
+      "-g",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_61,code=compute_61",
+      "-maxrregcount=64",
+      "-Iexample/configuration/bitmap",
+      "-I.",
+      "-DPARAM_SIZE=32",
+      "-DPARAM_MAX_OBJ=262144",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-remaining-allocators-syntax-002/qualification/native/bitmap"
+    ],
+    "returncode": 0,
+    "seconds": 4.772831240999949
+  },
+  {
+    "kind": "execution",
+    "allocator": "bitmap",
+    "repeat": 0,
+    "returncode": 0,
+    "seconds": 10.330887853000604,
+    "binary_sha256": "f4e93f738306950affbf6d80cc7e156d32f9a06561241a833f402a9f0abc85ca"
+  },
+  {
+    "kind": "execution",
+    "allocator": "bitmap",
+    "repeat": 1,
+    "returncode": 0,
+    "seconds": 8.32687941200038,
+    "binary_sha256": "f4e93f738306950affbf6d80cc7e156d32f9a06561241a833f402a9f0abc85ca"
+  },
+  {
+    "kind": "build",
+    "allocator": "mallocmc",
+    "command": [
+      "nvcc",
+      "-O3",
+      "-g",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_61,code=compute_61",
+      "-maxrregcount=64",
+      "-Iexample/configuration/mallocmc",
+      "-I.",
+      "-DPARAM_SIZE=32",
+      "-DPARAM_MAX_OBJ=262144",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-remaining-allocators-syntax-002/qualification/native/mallocmc",
+      "-Iexample/configuration/mallocmc/mallocMC"
+    ],
+    "returncode": 0,
+    "seconds": 5.773827947999962
+  },
+  {
+    "kind": "execution",
+    "allocator": "mallocmc",
+    "repeat": 0,
+    "returncode": 198,
+    "seconds": 1.767177401000481,
+    "binary_sha256": "9ccfabc8d7c9bfaf24449be7c284f94b6ff925adbb4c50dbf243bdedbf34ace1"
+  },
+  {
+    "kind": "execution",
+    "allocator": "mallocmc",
+    "repeat": 1,
+    "returncode": 198,
+    "seconds": 0.6656743160001497,
+    "binary_sha256": "9ccfabc8d7c9bfaf24449be7c284f94b6ff925adbb4c50dbf243bdedbf34ace1"
+  },
+  {
+    "kind": "build",
+    "allocator": "halloc",
+    "command": [
+      "nvcc",
+      "-O3",
+      "-g",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_61,code=compute_61",
+      "-maxrregcount=64",
+      "-Iexample/configuration/halloc",
+      "-I.",
+      "-DPARAM_SIZE=32",
+      "-DPARAM_MAX_OBJ=262144",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/root/sugarscape/dynasoar-remaining-allocators-syntax-002/qualification/native/halloc",
+      "-Iexample/configuration/halloc/halloc/src"
+    ],
+    "returncode": 0,
+    "seconds": 5.022413712000343
+  },
+  {
+    "kind": "execution",
+    "allocator": "halloc",
+    "repeat": 0,
+    "returncode": -11,
+    "seconds": 1.6681911200003015,
+    "binary_sha256": "881cb9f25b43e098a89cae49ab43f7a5dc1632bf028801b3ffe8dff8f8411ad8"
+  },
+  {
+    "kind": "execution",
+    "allocator": "halloc",
+    "repeat": 1,
+    "returncode": -11,
+    "seconds": 0.8662077429999044,
+    "binary_sha256": "881cb9f25b43e098a89cae49ab43f7a5dc1632bf028801b3ffe8dff8f8411ad8"
+  }
+]

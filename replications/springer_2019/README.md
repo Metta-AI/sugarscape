@@ -112,3 +112,9 @@ A separate attempt inserts eight `template` keywords into existing shared-adapte
 `diagnose_progress.py` adds host-side stderr records around initialization and simulation phases. It preserves model rules, random calls, kernel ordering, synchronization calls and the original 10,000-step horizon. Logs cover the first two iterations and every hundredth thereafter. Post-launch host records do not alone prove kernel completion; the next record after an existing synchronization supplies that boundary.
 
 [Command cmd-9vcwk](results/progress-diagnostic-2026-10-18/protocol.json) first checks the observer on the qualified 32×32 input, then probes full-size debug and release builds for 120 seconds each. It has a ten-minute outer bound and $2 budget. It is diagnostic instrumentation, not a timing benchmark or independent state-validation claim.
+
+### External allocator runtime audit
+
+[All four corrected builds](results/remaining-allocator-runtime-2026-10-18) pass compilation. CUDA and BitmapAlloc each complete two debug executions. mallocMC fails twice with a `Cell_leave` occupancy assertion (exit 198); Halloc segfaults twice (signal 11). The complete native archive, source-change reconstruction, per-file hashes, binary hashes and all eight execution records are audited. These failures require implementation/toolchain investigation before any paper verdict.
+
+The initial progress diagnostic failed before compilation because its Python runner used syntax unsupported by Python 3.8. Its sealed failure remains retained. The runner now passes Python 3.8 grammar validation; corrected command `cmd-cyq9u` uses the same bounded protocol.

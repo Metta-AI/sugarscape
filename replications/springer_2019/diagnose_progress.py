@@ -124,10 +124,9 @@ for mode, size, limit in [
             check=True,
             timeout=600,
         )
-    with (
-        (root / f"{label}.stdout").open("x") as out,
-        (root / f"{label}.stderr").open("x") as err,
-    ):
+    with (root / f"{label}.stdout").open("x") as out, (root / f"{label}.stderr").open(
+        "x"
+    ) as err:
         result = subprocess.run(
             ["timeout", str(limit), str(binary)],
             cwd=source,
