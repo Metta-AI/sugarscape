@@ -105,7 +105,11 @@ report = {
     "interrupted_intervals": partial,
     "source_dependency_files_verified": len(verified),
     "reference_sha256": reference_hash,
-    "scope": "Complete native rows from terminal chunks only; disjoint from the previously re-audited baseline. Interrupted simulations receive no credit. Full reference and generated ensembles remain required.",
+    "scope": (
+        "Complete native rows from terminal chunks only; disjoint from the previously re-audited baseline. Interrupted simulations receive no credit. Full reference and generated ensembles remain required."
+        if missing
+        else "All 55,000 reference inputs are validated across disjoint audited batches. Generated-landscape and spatial-sensitivity requirements remain outstanding."
+    ),
 }
 with args.output.open("x") as stream:
     stream.write(json.dumps(report, indent=2) + "\n")

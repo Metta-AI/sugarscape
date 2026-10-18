@@ -694,7 +694,7 @@ Its missing ranges must be ordered, nonoverlapping, within the 55,000-input refe
 and agree with both the baseline count and the continuation's frozen plan.
 A zero-exit continuation must seal every planned input; timeouts may retain only complete native rows.
 The updated auditor reproduces the published 54,177-input audit byte-for-byte.
-The running 823-input continuation has not received additional credit.
+This was the pre-execution state; the completed continuation is audited below.
 
 ```sh
 python replications/raimbault_2019/audit_reference_continuation.py \
@@ -704,3 +704,20 @@ python replications/raimbault_2019/audit_reference_continuation.py \
 
 Revalidate the prior audit from its raw evidence before using it as a baseline.
 The command validates the new continuation; it does not reread every ancestor archive automatically.
+
+### Complete 55,000-input reference replay
+
+[The final native archive and independent audits](results/reference-complete-2026-10-18)
+add exactly 823 disjoint inputs. Command `cmd-6wygn` exited zero. All 55,000
+reference inputs now reproduce both archived Gini measurements exactly: 110,000
+comparisons after 10,000 steps per input. All 53 source/dependency hashes verify.
+
+Both prior raw-evidence audits were rerun and reproduce their published reports
+byte-for-byte. The final archive is 63,630 bytes, SHA-256
+`eb3ff1684b18e39db0ad02d53489699d04bf322592d534bad14f644d1951f926`.
+No incomplete simulation or duplicate index receives credit. The auditor reports
+reference completion only when the checked disjoint union leaves zero missing inputs.
+
+This completes the reference replay, not the paper. Generated landscapes and spatial
+sensitivity remain required. The queued 8,000-input generated shard receives no credit
+until its native results pass independent audit.
