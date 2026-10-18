@@ -1067,3 +1067,7 @@ Archive readback reproduces the audit exactly. Four folds remain, so no aggregat
 [The saved first fold and bounded continuation](results/independent-rfboot-recovery-2026-10-18) follow the original four-hour timeout.
 All 755,000 input cells and 5,000 predictions pass audit. Folds 2–5 continue from the verified saved random state, with no change to estimator settings.
 The full estimator and paper remain incomplete.
+
+## Independent neural-network folds 2 and 3
+
+[Two additional completed folds](results/independent-neuralnet-folds23-2026-10-18) validate 1,510,000 input cells and 10,000 held-out predictions. Native archive readback reproduces both audits and prediction tables exactly. Three of five folds are audited; aggregate results and paper completion remain outstanding.
