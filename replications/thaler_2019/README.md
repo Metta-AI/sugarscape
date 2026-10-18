@@ -1,6 +1,6 @@
 # Thaler and Siebers (2019): parallel Sugarscape
 
-Status: **partial: Figure 5b reproduced, archived analysis and native execution verified**. No full-paper completion credit.
+Status: **partial: Figure 5b reproduced; Figure 5a occupancy reproduced at exported time 83, contradicting its time-50 caption; complete native timing grid audited**. No full-paper completion credit.
 
 Paper: [A tale of lock-free agents](https://doi.org/10.1186/s40294-019-0067-9),
 Complex Adaptive Systems Modeling 7, 5, published December 26, 2019.
@@ -809,3 +809,11 @@ Table 9 matches instance class but lacks historical clock/isolation evidence.
 Thus complete execution does not establish historical timing equivalence.
 Figure 5a provenance and retry-discrepancy interpretation still prevent a
 whole-paper verdict. No additional study is counted as completed.
+
+### Original Figure 5a asset and temporal alignment
+
+[Recovered author-source evidence](results/figure-source-resolution-2026-10-18) identifies the original image and reproduces all 201 occupied cells at exported time 83.
+Time83 is the only exact match in the declared 0–100 diagnostic window; repeated native runs reproduce all 203 output files byte-for-byte.
+All 2,299 visible unoccupied cells separate exactly by native sugar level, and the original MATLAB vector independently matches all 50 Figure 5b values.
+The caption names time 50. This resolves the previous population-count disagreement as a temporal-alignment issue, with limits on original capture provenance.
+Earlier unresolved Figure 5a sections above describe historical evidence. Retry-ratio and performance interpretation remain required before a whole-paper verdict.
