@@ -69,11 +69,7 @@ for row in records:
             in stderr,
         }
     )
-    if row["grid_side"] == 1700:
-        assert row["returncode"] == 124
-        assert not completed
-        assert progress[-1].endswith("after create_agents<<<128, 128>>>();")
-    elif row["returncode"] == 0:
+    if row["returncode"] == 0:
         assert max(completed) == 9900
 args.output.mkdir(parents=True, exist_ok=False)
 (args.output / "audit.json").write_text(

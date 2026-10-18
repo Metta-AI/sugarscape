@@ -128,4 +128,13 @@ The initial progress diagnostic failed before compilation because its Python run
 
 `audit_progress.py` verifies both sealed archives, original qualified source hashes and compiled binary hashes. Removing the declared observer restores the original statement sequence. Logs, source differences, exact compile flags and failures remain archived. The first auditor's line-diff check misclassified an unchanged synchronization statement because of diff alignment; the statement-sequence check resolves that without changing simulation code.
 
-Use `diagnose_progress.py QUALIFICATION NEW_OUTPUT --architecture 61` or `--architecture 90`. Both diagnostics retain seed 42 and 10,000 steps; the full-size probes retain the original 1700×1700 grid and object capacity. Instrumented timings cannot count toward published benchmark claims. The owned GPU was stopped after both exports completed and downloaded archives passed audits.
+Use `diagnose_progress.py QUALIFICATION NEW_OUTPUT --architecture 61 --control-mode debug` or `--architecture 90 --control-mode debug`. Both diagnostics retain seed 42 and 10,000 steps; the full-size probes retain the original 1700×1700 grid and object capacity. Instrumented timings cannot count toward published benchmark claims. The owned GPU was stopped after both exports completed and downloaded archives passed audits.
+
+
+### Separate release-mode control
+
+[NVIDIA's warp-primitive documentation](https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/) does not guarantee active-mask equality across instructions under independent thread scheduling. The author allocator checks that equality before synchronized shuffles. Its failure may therefore reflect a debug assumption; this remains distinct from the compute-61 initialization timeout.
+
+[The bounded release-control protocol](results/release-control-2026-10-18) uses `--architecture 90 --control-mode release` without changing allocator or model code. Completing a release control would establish execution only, not correctness after assertions are disabled. The author benchmark already uses release builds. The full-size debug probe remains in the diagnostic sequence and retains its failures.
+
+The first resumed attempt failed before simulation because the container reset removed system Python. Its exit-127 archive is preserved and hash-checked. Command `cmd-3ga3h` explicitly restores Python before execution, with a 20-minute outer limit including setup and a $3 budget. Its sealed-evidence collector is active; pending outputs receive no completion credit. The auditor records observed outcomes without requiring the earlier timeout to recur; both earlier archive audits reproduce byte-identically.

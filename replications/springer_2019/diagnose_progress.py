@@ -11,6 +11,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("qualification", type=Path)
 parser.add_argument("output", type=Path)
 parser.add_argument("--architecture", choices=("61", "90"), required=True)
+parser.add_argument("--control-mode", choices=("debug", "release"), required=True)
 args = parser.parse_args()
 root = args.output.resolve()
 root.mkdir(parents=True, exist_ok=False)
@@ -89,7 +90,7 @@ path.write_text(after)
 )
 records = []
 for mode, size, limit in [
-    ("debug", 32, 60),
+    (args.control_mode, 32, 60),
     ("debug", 1700, 120),
     ("release", 1700, 120),
 ]:
