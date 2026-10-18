@@ -693,3 +693,26 @@ previously audited occupied-cell observer.
 The evidence archive receipt and fresh public extraction reproduce the audit
 byte-for-byte. This completes the population ensemble. Figure 5a state fidelity
 and the outstanding timing work remain required for the full study.
+
+### All six Table 9 timing conditions audited
+
+[The sealed complete timing grid](results/table9-timings-complete-2026-10-18)
+passes independent reconstruction of all 24 raw measurements. Every condition
+passes the frozen R-squared threshold on its first attempt. Source, binary and
+CPU-allocation checks pass; fresh archive extraction reproduces the audit exactly.
+
+| Haskell capabilities | Normal: observed / published seconds | Rebirth: observed / published seconds |
+| --- | --- | --- |
+| 16 | 15.992 / 11.9 | 66.010 / 46.6 |
+| 32 | 17.786 / 12.8 | 89.962 / 76.4 |
+| 64 | 18.783 / 14.6 | 106.142 / 99.1 |
+
+Both scenarios become slower as capabilities increase, matching the published
+direction. The observed 64-to-16 ratios are 1.1745 and 1.6080, compared with
+1.2269 and 2.1266 from published times. Absolute times differ by 7.1–41.7%.
+The instance class matches, but historical clock and host isolation remain
+unknown. These measurements establish the scaling direction, not timing equivalence.
+
+This completes Table 9's timing grid. Its separate thirty-process retry ensemble
+is still running. Remaining Table 8 conditions and Figure 5a state fidelity
+also prevent a whole-paper verdict.
