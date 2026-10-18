@@ -1,0 +1,15 @@
+[
+  "/opt/homebrew/bin/gtimeout",
+  "--signal=TERM",
+  "--kill-after=30",
+  "72000",
+  "/opt/homebrew/bin/Rscript",
+  "--vanilla",
+  "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-rfboot-resume-001/resume_estimator.R",
+  "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-estimator-inputs-complete-001",
+  "rfboot",
+  "5000",
+  "0",
+  "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-rfboot-resume-001/rfboot-5000",
+  "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-rfboot-001/rfboot-5000"
+]

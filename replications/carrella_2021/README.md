@@ -1061,3 +1061,9 @@ Both live 5,000-input producers remain unchanged; this adds no paper completion 
 [The first fold](results/independent-neuralnet-first-fold-2026-10-18) validates all 755,000 input cells and 5,000 held-out predictions.
 Errors, interval coverage, and widths reconstruct within 1e-10; baseline errors equal the author-data fold.
 Archive readback reproduces the audit exactly. Four folds remain, so no aggregate score or new study completion is claimed.
+
+## Independent bootstrap-forest recovery
+
+[The saved first fold and bounded continuation](results/independent-rfboot-recovery-2026-10-18) follow the original four-hour timeout.
+All 755,000 input cells and 5,000 predictions pass audit. Folds 2–5 continue from the verified saved random state, with no change to estimator settings.
+The full estimator and paper remain incomplete.
