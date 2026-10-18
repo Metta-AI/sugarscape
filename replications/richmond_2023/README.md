@@ -2,6 +2,7 @@
 
 Status: **incomplete; qualification audited, full native grid running, model fidelity under investigation**.
 No completed-study credit. This study adds to the existing replication program.
+Latest sealed scaling prefix: **47/48 conditions**, with all **4,700 population observations** matching the author archive exactly.
 
 Paper: [FLAME GPU 2: A framework for flexible and performant agent based simulation on GPUs](https://doi.org/10.1002/spe.3207).
 Scope: the complete Sugarscape case study, Section 4.3 and Figures 6/11.
@@ -379,3 +380,21 @@ Matching population counts cannot prove that instrumentation leaves every intern
 This auditor has passed formatting, lint, and command-interface checks only.
 The native state capture remains queued; its complete workflow and scientific findings are unvalidated.
 No new simulation or completed-study credit follows from preparing this analysis.
+
+## Full benchmark scaling prefix: 47 of 48 conditions
+
+[The next sealed snapshot](results/full-scaling-prefix47-2026-10-18)
+adds sixteen complete conditions and 1,600 observations to the earlier prefix.
+It covers all widths in repetitions zero and one, and widths 256–3840 in repetition two.
+All 4,700 integer population observations exactly match the pinned author archive.
+All 94 timing and population means reconcile with the raw rows within CSV rounding bounds.
+Both files contain complete matching condition keys; their sequential capture passes the same alignment audit.
+Every row overlapping the previous snapshot is identical, including recorded timings.
+The downloaded 45,616-byte archive matches its remote SHA-256 receipt.
+Auditing the public copy reproduces the complete audit byte-for-byte.
+
+One scaling condition, eighteen occupation conditions, eighteen resolution conditions,
+and the queued individual-state observer remain outstanding.
+The H100 timings do not establish equivalence with the historical V100 hardware.
+The original full-grid command remains active, so this is not terminal-success evidence
+or a whole-paper verdict. Original source-rule and Figure 11 provenance questions remain open.
