@@ -69,6 +69,8 @@ Completed mixed replication in [PR 11](https://app.graphite.dev/github/pr/Metta-
 All 653 printed cells and 42 plotted ordinates reproduce; native execution contradicts several mechanism claims.
 It supplements the existing candidates rather than replacing them.
 
+A separate [2024 pension-model thesis, deposited in 2025](https://arxiv.org/abs/2504.01242), now has a [source audit](source-audits/firouzian-pensions-2025.json). Its recovered model predates the thesis and disagrees on sampling and experiment settings. It remains a candidate outside the eighteen study PRs.
+
 The 1996 Epstein–Axtell book and Kehoe's [formal specification](https://arxiv.org/abs/1505.06012)
 are baseline references, outside the ten-paper count.
 Paper-specific variants must remain explicit: superficially similar Sugarscape implementations can implement different models.

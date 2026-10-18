@@ -86,5 +86,13 @@
     "Execute complete declared experiments and validate fork behavior separately from author-code execution."
   ],
   "reproduce_archive_audit": "python3 replications/source-audits/audit_pensions_workbook.py DIRECTORY_WITH_DEPOSITED_CSV_AND_XLSX NEW_AUDIT_JSON",
-  "archive_audit_validation": "pensions-workbook-validation.json"
+  "archive_audit_validation": "pensions-workbook-validation.json",
+  "access_search_2026_10_18": {
+    "author_page": "https://research.nii.ac.jp/~ksatoh/",
+    "institutional_catalog": "https://portalinvestigacion.consorciomadrono.es/authors/17816.html?page=2&pageType=article&sortBy=dateDesc",
+    "conference": "https://www.niit.ac.jp/jurisin2019/",
+    "finding": "Author page identifies2019 preliminary proceedings pages103-116 and2020 revised chapter pages50-63; these inspected pages did not provide the full paper. Institutional entry links the publisher DOI.",
+    "related_candidate": "firouzian-pensions-2025.json",
+    "distinction": "Related2024 thesis is a separate work and does not replace the missing2020 paper."
+  }
 }
