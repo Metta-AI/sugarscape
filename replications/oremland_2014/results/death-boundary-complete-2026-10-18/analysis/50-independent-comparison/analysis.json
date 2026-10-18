@@ -1,0 +1,20 @@
+{
+  "model": "50-independent-comparison",
+  "reference_kind": "independent",
+  "width": 50,
+  "complete_native_runs_in_model": 10000,
+  "ranking_rows": 288,
+  "objective_rows": 1800,
+  "independent_rank_value_checks": 14400,
+  "exact_rational_kappa_checks": 288,
+  "numpy_version": "1.26.4",
+  "scipy_version": "1.16.3",
+  "kappa_definition": "1 - paired mean rank-distance penalty / mean penalty under the product of empirical rank marginals; distance exponent 1 or 2. Average ranks retain half-rank spacing. Ordinal ties use stable policy-ID order.",
+  "scope": "Point estimates for this complete declared model, retaining all predeclared analysis choices. Not original-author settings, uncertainty-bar reproduction, whole-experiment completion, or a validated negative replication.",
+  "sha256": {
+    "model_audit": "0721f4ef555086e6712defcfecbfc1b103055f0a4d32d2af0897cf157ceec3be",
+    "reference_audit": "7fb3fb6ea62734430dc008e68e57f0a8ed5a999f2695554e1038cc81efd69401",
+    "rankings.csv": "a958f81ebf7f0733e989a70a71bc2112f36166c29783f619ac53b3a1a48c235d",
+    "objective-totals.csv": "3f7247b05b3936dde7652e1ddf7837d874517c20df555e553da9f050de491b89"
+  }
+}

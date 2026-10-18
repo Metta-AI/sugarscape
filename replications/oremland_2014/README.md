@@ -239,4 +239,6 @@ Appendix B prose specifies death at zero sugar; Algorithm 3, line 19 specifies d
 All preceding ensembles follow the prose. Their conclusions remain conditional on that choice.
 [The paired diagnostic](results/death-boundary-protocol-2026-10-18) preserves the original 37,600 independent-stream requests and changes only the comparison.
 Its native qualification verifies 408 states and confirms surviving zero-sugar agents under the algorithm rule.
-The full paired ensemble is running; no new aggregate result or completion credit is assigned before audit.
+[All 37,600 paired runs now pass audit](results/death-boundary-complete-2026-10-18). Mortality changes in 37,223 pairs.
+Algorithm-rule 40x40 pooled average-rank linear mortality concordance is 0.5854/0.5511, versus 0.8686/0.8695 under the prose rule.
+The source ambiguity remains unresolved; neither sensitivity earns paper-completion or validated-negative credit.
