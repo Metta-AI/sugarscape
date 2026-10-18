@@ -17,3 +17,9 @@ The first detached command exited 1 during qualification, before any assigned Be
 Recovery preserves the failed manifest, original logs and failed qualification directory. It restores the unchanged CPU8 source manifest and reruns all four lifecycle controls. These pass; the completed control reproduces its original trajectory hash exactly. Replacement command `cmd-msyhs` is verified running inputs 254 and 255. The recovery collector is session 49698, storage prefix `blueprints-bentham-disk-recovery-cpu2-002`; the original collector failed because no terminal artifact existed.
 
 `recovery.sh` and hash-verified upload receipts document the correction. The original boot payload remains failed evidence, not a runnable corrected recipe. Apply the retained recovery sequence after that failed bootstrap to reproduce the executed workflow. No study input completed in the failed attempt.
+
+## Corrected package for a fresh run
+
+`corrected-payload.tar.gz` retains the failed package's runners, bootstrap, and plan byte-for-byte. It restores the original nine-file source-pin manifest and stores payload hashes separately in `payload-sha256.json`. Every member was rehashed after archive readback.
+
+For a new, isolated execution directory, extract the corrected package and run `bash bootstrap.sh` under the documented time/resource bounds. Do not run it over an existing study directory. The active recovery uses these same scientific files and passed native qualification; the corrected archive itself has not received a second fresh bootstrap execution. It does not replace the failed evidence or add study completion credit.

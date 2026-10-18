@@ -1,0 +1,15 @@
+{
+  "failed_archive_sha256": "abf25eaddaceaaa2dc1d088cdb874fe67447b152041630b7d637263a923897c6",
+  "corrected_archive_sha256": "25015b7d2543616fbffa6cf27689ddc5dd1bf1ec6b07fb22265b17fd592741ad",
+  "corrected_archive_bytes": 8661,
+  "changed_existing_members": [
+    "source-sha256.json"
+  ],
+  "added_members": [
+    "payload-sha256.json"
+  ],
+  "source_pin_count": 9,
+  "all_payload_members_rehashed_after_archive_readback": true,
+  "native_recovery_qualification_controls": 4,
+  "scope": "Corrected package contains the same runner, bootstrap, plan and source manifest used by the verified recovery. Fresh corrected-package bootstrap has not been separately executed; active study job is unchanged."
+}
