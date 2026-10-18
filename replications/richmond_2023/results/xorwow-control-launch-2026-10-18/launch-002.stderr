@@ -1,0 +1,2 @@
+error: relh-sugarscape-richmond-h100-20261017-v1 is running; on_wake registers a command for the NEXT time a stopped node comes up, and would not run now. Drop on_wake to run this command now, or stop_node first if you meant to queue it for the next wake
+  (request-id req_61df461ed3cb4366b39bd335a485720e - quote it when reporting a problem)

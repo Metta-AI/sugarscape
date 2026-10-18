@@ -444,3 +444,5 @@ It matches all 65,536 initial image classes, but only 34,820 and 41,095 at the
 first and fiftieth iterations. Initialization alone does not resolve later
 illustrations; historical engine, visualization timing and GPU random-stream
 provenance remain open. The GPU is stopped; no study credit is added.
+
+The historical engine used XORWOW while the executed release defaults to Philox. A frozen paired control is running; see `results/xorwow-control-launch-2026-10-18`. It requires exact baseline replay before interpreting the RNG variant and does not yet resolve the historical illustrations.
