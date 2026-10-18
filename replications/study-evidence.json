@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T03:15:11.427696+00:00",
+  "as_of": "2026-10-18T03:40:36.736820+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -30,24 +30,24 @@
     {
       "study": "raimbault_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5",
-      "checked_commit": "4842e616bebcfd1169cbcbd6082498c210316750",
+      "checked_commit": "e677dcb62ca3634479b41849582c784cd5812a4e",
       "status": "running",
       "readme": "replications/raimbault_2019/README.md",
-      "readme_sha256": "26efda004142f59da4916e5e83c8d77c40bf93eedc7f0c4b5635bab82ae7a3fa",
-      "json_evidence_files": 117,
-      "remaining_scope": "54,177/55,000 reference inputs audited,108,354 exact Gini comparisons.823 remaining inputs continue. First generated8000-input launch failed before simulations due to missing GNU time; repaired launch waits behind reference continuation. Full generated ensemble and fresh spatial comparison remain incomplete.",
+      "readme_sha256": "c97e6a3257eb4403192cbb1d54f79617e869c88b180ebfa6bde2f2e1965da7f8",
+      "json_evidence_files": 124,
+      "remaining_scope": "All 55,000 reference inputs audited: 110,000 exact Gini comparisons. Generated-landscape and spatial-sensitivity ensembles remain incomplete.",
       "gzip_json_evidence_files": 4,
       "checked_at": "2026-10-18T03:15:11.427696+00:00"
     },
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "5a3f0bf081fa77bc964e912b9226c994df3447a3",
+      "checked_commit": "2a4094cc04e0ca38690835a551011aebba720ebd",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "1070d812978b20919c1525af32244721cee603dfe3306c6448b0c77c0c3bd6b0",
-      "json_evidence_files": 419,
-      "remaining_scope": "1,586/2,000 homogeneous and854/1,200 deposited runtime inputs audited. Raw/Altruist Table3 rows reproduce. Exact-trajectory qualification pending before parallel Bentham handoff; out-of-order coverage excludes repeats and exposes gaps. Full selfishness/heterogeneous sweeps, remaining homogeneous/runtime inputs and100-versus500-seed timing discrepancy remain unresolved.",
+      "readme_sha256": "b4ead219ab9c61a56a58ece69fee5c465f8884876bdf909045a06f50689fe290",
+      "json_evidence_files": 437,
+      "remaining_scope": "1,592/2,000 homogeneous inputs and 854/1,200 runtime inputs audited. Qualified 32-worker Bentham continuation active. Full sweeps and runtime schedule discrepancy remain.",
       "gzip_json_evidence_files": 37,
       "checked_at": "2026-10-18T03:15:11.427696+00:00"
     },
@@ -201,6 +201,17 @@
       "gzip_json_evidence_files": 1,
       "remaining_scope": "All84native conditions audited:6600population records and162resolution rows exactly match author archive.893017state observations and615829moves reconcile given observed destinations after matching Linux initializer; source-winning movement omits wealth/metabolism transfer. Figure11A-C replotted; D-F native images differ from released historical images, whose original compiler/engine provenance remains incomplete. H100 timings do not establish V100 timing equivalence; full-paper completion remains unproven.",
       "checked_at": "2026-10-18T02:28:25.414718+00:00"
+    },
+    {
+      "study": "lima_2024",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/19",
+      "status": "specified",
+      "checked_commit": "65d36b58d1344767a384890e1dee41d85638a5a7",
+      "readme": "replications/lima_2024/README.md",
+      "readme_sha256": "baaa7774c7a421cf0deb88dd0f97e5c5da146faf539bba55d90cebf730ce459b",
+      "json_evidence_files": 3,
+      "gzip_json_evidence_files": 0,
+      "remaining_scope": "Source pinned and protocol frozen; dependency repair and both architecture scenarios still require validation."
     }
   ],
   "study_prs": 16,
