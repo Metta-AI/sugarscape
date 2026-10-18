@@ -1048,3 +1048,10 @@ reconcile with the author-data and independent-data fold metrics. Reproduction-w
 performance changes from -0.632580 to +0.662000, compared with the paper's -0.894.
 Neither dataset matches any of the five printed GAM scores. The comparison retains
 all outliers and leaves historical and implementation discrepancies unresolved.
+
+## Independent-data fold recovery qualification
+
+[Two complete recovery workflows](results/independent-fold-recovery-2026-10-18) preserve all ten fold objects and 12,500 predictions exactly.
+Linear regression recomputes three folds; bootstrap forest replays five completed folds.
+The runner verifies input hashes and writes new folds atomically. Fresh forest fitting after recovery remains unqualified.
+Both live 5,000-input producers remain unchanged; this adds no paper completion credit.
