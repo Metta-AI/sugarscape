@@ -1012,4 +1012,8 @@ comparisons do not establish equivalence or complete the paper.
 
 ### Independent 5,000-input quantile random forest audited
 
-[All five full-size folds](results/independent-rf5000-2026-10-18) validate25,000 predictions, interval metrics, and3,775,000 exact training/test cells. Baseline errors agree with the author-data workflow. Both published quantile-forest sizes are now audited on independent statistics. The native archive is byte-verified; cross-random-stream performance differences remain descriptive. Other estimators and paper-level interpretation are unfinished.
+[All five full-size folds](results/independent-rf5000-2026-10-18) validate 25,000 predictions, interval metrics, and 3,775,000 exact training/test cells. Baseline errors agree with the author-data workflow. Both published quantile-forest sizes are now audited on independent statistics. The native archive is byte-verified; cross-random-stream performance differences remain descriptive. Other estimators and paper-level interpretation are unfinished.
+
+### Independent 5,000-input local-linear estimator audited
+
+[All five folds](results/independent-loclin5000-2026-10-18) validate 25,000 held-out parameter predictions and 3,775,000 exact training/test cells. Baseline errors match the author-data workflow. Native outputs, warnings, commands, and estimator sources are retained in a byte-verified archive. The published 1,250-input cell is NA and was not run. Other independent estimators and historical discrepancies remain unresolved; this does not complete the paper.
