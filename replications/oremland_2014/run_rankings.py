@@ -63,7 +63,7 @@ java_prefix = [
     classpath,
     "RunPolicyBatch",
 ]
-reference = Path(__file__).parent / "results/batch-evaluator-2026-10-18"
+reference = Path(__file__).parent / "results/headless-batch-evaluator-2026-10-18"
 reference_manifest = json.loads((reference / "manifest.json").read_text())
 jar_hashes = {
     path.name: hashlib.sha256(path.read_bytes()).hexdigest()
@@ -96,7 +96,7 @@ manifest = {
 
 
 def execute_pipeline(requests, model, output, seconds, prefix):
-    """Stream retained gzip inputs through the unchanged native evaluator."""
+    """Stream retained gzip inputs through the qualified native evaluator."""
     command = [
         str(args.timeout),
         "--signal=TERM",

@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "seconds": 16.315986833011266,
+  "command": [
+    "/opt/homebrew/bin/gtimeout",
+    "--signal=TERM",
+    "--kill-after=30",
+    "1800",
+    "/opt/homebrew/opt/openjdk@11/bin/java",
+    "-Xmx512m",
+    "-XX:ActiveProcessorCount=1",
+    "-Djava.awt.headless=true",
+    "-Dfile.encoding=UTF-8",
+    "-cp",
+    "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/NetLogo.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/scala-library-2.9.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-all-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/picocontainer-2.13.6.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/log4j-1.2.16.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/jmf-2.1.1e.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/pegdown-1.1.0.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/parboiled-core-1.0.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/parboiled-java-1.0.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-util-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-tree-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-analysis-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/jhotdraw-6.0b1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/quaqua-9.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/swing-layout-9.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/jogl-2.3.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/gluegen-rt-2.3.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/httpclient-4.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/httpcore-4.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/commons-logging-1.1.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/commons-codec-1.6.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/httpmime-4.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/json-simple-1.1.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/junit-4.10.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/hamcrest-core-1.1.jar:/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-headless-extinction-001",
+    "RunPolicyBatch",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-policy-model-001/oremland.nlogo",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-headless-extinction-001/requests.jsonl",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-headless-extinction-001/results.jsonl"
+  ]
+}

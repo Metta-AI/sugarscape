@@ -62,12 +62,14 @@ for name in ["RunPolicyBatch.java", "RunPolicyBatch.class", "run_rankings.py"]:
         hashlib.sha256((run / name).read_bytes()).hexdigest()
         == manifest["sha256"][name]
     )
-reference = json.loads(
-    (
-        Path(__file__).parent / "results/batch-evaluator-2026-10-18/manifest.json"
-    ).read_text()
-)
-assert manifest["sha256"]["RunPolicyBatch.java"] == reference["source_sha256"]
+# Retained experiments use either of two independently qualified evaluator revisions.
+references = [
+    json.loads((Path(__file__).parent / "results" / name / "manifest.json").read_text())
+    for name in ["batch-evaluator-2026-10-18", "headless-batch-evaluator-2026-10-18"]
+]
+reference = {item["source_sha256"]: item for item in references}[
+    manifest["sha256"]["RunPolicyBatch.java"]
+]
 assert manifest["jars"] == reference["jars"]
 assert (
     json.loads((run / "pipeline-audit.json").read_text())[

@@ -205,3 +205,22 @@ These figures and the optimization experiments remain required; no paper-complet
 The full-size landscape is resolved. Reduced-grid conventions now have explicit, qualified sensitivity cases; their agreement with the original author implementation remains unproven.
 Negative-payment clipping cannot explain a population mismatch when it is the only changed rule and random draws remain coupled.
 The clock-phase ambiguity can affect population and must be considered separately.
+
+## Extinction failure and qualified recovery
+
+The first small-grid ranking batch failed because an inherited GUI histogram evaluates maximum wealth on an empty population.
+[The plot-free headless evaluator](results/headless-batch-evaluator-2026-10-18) removes GUI callbacks after loading the unchanged model.
+All 400 full-size reference results remain exact; the original failed 5x5 input now completes all 50 steps with zero survivors.
+The original evaluator reproduces the failure on that same input. Failed prefixes and logs are retained.
+
+The four incomplete 10x10 and 5x5 model ensembles are being rerun under the qualified adapter, preserving their original policies, seeds, maps, and horizons.
+This repeats retained prefixes under the corrected evaluator rather than combining different evaluator versions within an ensemble.
+The 2,110,000-run recovery has four workers, a one-hour global bound, and 30-minute shard bounds.
+Its actual compressed-input pipeline passed all 400 reference comparisons before starting scientific work.
+No failed or pending run receives completion credit.
+
+[The ranking extension](results/ranking-extension-2026-10-18) independently audits another 256,200 reduced-model runs and 10,000 full-size runs.
+Together with the earlier prefix, seven reduced models cover 428,400 audited runs.
+The independent full-size comparison uses seeds 101–150 against reference seeds 1–50.
+At full budget, pooled average-rank death concordance is 0.9481/0.9520 with linear weights for phases 0/4; quadratic weights give 0.9963/0.9972.
+These are conditional reconstruction results. The original policy distribution, implementation, reduction choices, and published error bars remain unresolved.

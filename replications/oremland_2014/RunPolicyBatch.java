@@ -21,6 +21,8 @@ public class RunPolicyBatch {
         JSONParser parser = new JSONParser();
         try {
             workspace.open(Paths.get(args[0]).toAbsolutePath().toString());
+            // GUI histogram callbacks cannot represent extinction and are not model dynamics.
+            workspace.plotManager().forgetAll();
             String line;
             while ((line = input.readLine()) != null) {
                 JSONObject request = (JSONObject) parser.parse(line);
