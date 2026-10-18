@@ -149,3 +149,27 @@ The default original-scenario audits still use only fresh registration records.
 
 Extract the control archive and pass `--initial-checkpoints /run/initial-checkpoints.json`
 to both `audit_snapshot.py` and `audit_native.py`.
+
+## Packaged host attempt and collection failure
+
+[Retained evidence](results/packaged-host-collection-failure-2026-10-18) records
+a separate signed macOS application attempt. Both NetLogo processes exited zero,
+and the database reconciles 969 router deliveries. Visual GUI confirmation remains
+unavailable. Process exits alone do not establish complete trajectories.
+
+The collector mistakenly used `docker compose start db`, which also restarted
+the author's `clear_files` dependency. It deleted this attempt's trajectory,
+survivor and exported AgentSpeak files before they were archived. Consequently,
+this attempt receives no full-trajectory credit. Its surviving database and logs
+are retained; earlier published scenario archives remain intact.
+
+`collect_completed.py` now backs up native files before accessing the database,
+starts its existing container directly, and verifies unchanged native hashes.
+The complete collection workflow was exercised against the earlier host run:
+all 15 native files remained unchanged, its snapshot matched the previous capture
+byte-for-byte, and all containers were stopped afterward. The backup can contain
+author-generated AgentSpeak code and should remain external to the public PR.
+
+```sh
+python replications/lima_2024/collect_completed.py /completed/run /new/collection
+```
