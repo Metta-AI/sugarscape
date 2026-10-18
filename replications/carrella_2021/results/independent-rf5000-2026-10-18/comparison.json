@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "parameter": "initial.population",
+      "author_data_performance": 0.475748972672409,
+      "independent_data_performance": 0.479198919122717,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "pmut",
+      "author_data_performance": 0.53749067964078,
+      "independent_data_performance": 0.534446906547525,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "author_data_performance": 0.446203572061522,
+      "independent_data_performance": 0.437576868475293,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "author_data_performance": 0.46230707116087,
+      "independent_data_performance": 0.461958415537183,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "author_data_performance": 0.787705878723856,
+      "independent_data_performance": 0.78416146789034,
+      "baseline_error_difference": 0.0
+    }
+  ],
+  "scope": "Complete five-fold quantile random forest on independent simulation statistics. Original parameters and fold seed preserved. Descriptive comparison across different simulation random streams.",
+  "completed_study": false
+}

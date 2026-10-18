@@ -1009,3 +1009,7 @@ comparisons do not establish equivalence or complete the paper.
 ### Independent 1,250-input quantile random forest audited
 
 [The completed workflow](results/independent-rf1250-2026-10-18) validates all five folds, 6,250 held-out parameter predictions, and 943,750 exact training/test cells. Baseline errors agree with the author-data workflow. The native archive is byte-verified against audited originals. The 5,000-input workflow remains running; performance differences across simulation random streams are descriptive, not a negative-replication verdict.
+
+### Independent 5,000-input quantile random forest audited
+
+[All five full-size folds](results/independent-rf5000-2026-10-18) validate25,000 predictions, interval metrics, and3,775,000 exact training/test cells. Baseline errors agree with the author-data workflow. Both published quantile-forest sizes are now audited on independent statistics. The native archive is byte-verified; cross-random-stream performance differences remain descriptive. Other estimators and paper-level interpretation are unfinished.
