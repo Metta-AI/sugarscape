@@ -425,3 +425,12 @@ complete GNU and Clang initial states through the original JSON input interface.
 It requires GNU trajectory parity before interpreting the Clang comparison.
 The GPU functions are identical across the image and release commits, but engine
 versions differ. Execution is bounded and pending; no result is inferred yet.
+
+### Correct native initialization reference
+
+[The preparation correction](results/clang-input-control-correction-2026-10-18)
+replaces a mistakenly selected macOS GNU extraction with the previously
+qualified Linux extraction. All 11,264 initial active records match the prior
+native capture exactly. The provider confirms the superseded command never ran.
+The replacement retains all comparison gates and execution bounds; results remain
+pending.
