@@ -1071,3 +1071,9 @@ The full estimator and paper remain incomplete.
 ## Independent neural-network folds 2 and 3
 
 [Two additional completed folds](results/independent-neuralnet-folds23-2026-10-18) validate 1,510,000 input cells and 10,000 held-out predictions. Native archive readback reproduces both audits and prediction tables exactly. Three of five folds are audited; aggregate results and paper completion remain outstanding.
+
+### Fourth independent neural-network fold
+
+[Fold 4](results/independent-neuralnet-fold4-2026-10-18) passes exact train/test alignment, 755,000 input-cell checks, and 5,000 prediction checks.
+Four completed folds now cover 20,000 held-out predictions and 3,020,000 input-cell checks; the fifth remains active.
+No partial aggregate estimator score or new study-completion credit is claimed.
