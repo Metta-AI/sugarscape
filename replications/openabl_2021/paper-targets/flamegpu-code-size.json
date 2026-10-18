@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/FLAMEGPU/FLAMEGPU",
+  "historical_commit": "a9451facf34b067ec970ab23bc52960f37f22dc0",
+  "formatting_commit": "1c84a66c7c79f5f84bd0ec1043b01d545326af6a",
+  "files": {
+    "examples/Sugarscape/src/model/functions.c": "8cbc5f1de442b25258fb4f918c60b6669e73ec120690061182d8bc773dfa45c8",
+    "examples/Sugarscape/src/model/XMLModelFile.xml": "f4a5729e12e4f3a1aa1d1cd2002fae9624efb99ca8803c2845eee11fef5663a3"
+  },
+  "published_reference_effective_lines": 345,
+  "c_effective_lines": 134,
+  "xml_effective_lines": 211,
+  "total_effective_lines": 345,
+  "formatted_xml_effective_lines": 226,
+  "formatted_total_effective_lines": 360,
+  "xml_canonical_equal_after_strip_text": true,
+  "count_rule": "Exclude C block/line comments and XML comments, then count nonblank physical lines. Include functions.c and XMLModelFile.xml.",
+  "interpretation": "Historical reference files match the reported345-line count. This does not prove the exact author checkout or timing backend dependency. Generated OpenABL FLAME GPU code is distinct from this manual reference.",
+  "source_observations": [
+    "Reference movement_response initializes best-request sugar/metabolism to-1 but never copies selected request values before assigning them to destination. This resembles the independently observed Richmond2023 failure, but no new native GPU run was performed here."
+  ],
+  "completed_study": false
+}

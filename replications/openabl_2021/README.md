@@ -136,3 +136,16 @@ do not substitute for the published benchmark coverage.
 Recorded coordinate sensitivity perturbs each y-coordinate and calibration tick
 by0.001 PDF points. It is neither statistical uncertainty nor a new acceptance
 margin. Extracted runtimes approximate the published plot, not original raw data.
+
+## Historical FLAME GPU code-size match
+
+[The reference count](paper-targets/flamegpu-code-size.json) reproduces345 lines:
+134 in `functions.c` plus211 in `XMLModelFile.xml`, excluding comments and blanks.
+Both files are pinned to the2016 commit `a9451facf34b067ec970ab23bc52960f37f22dc0`.
+The2018 XML-formatting commit increases the total to360 lines. Canonical XML
+comparison after whitespace removal finds identical model content.
+
+This resolves how a historical reference can yield the published345-line value;
+it does not establish the exact author checkout. OpenABL's154-line value remains
+unresolved. The manual FLAME GPU reference is separate from OpenABL-generated
+FLAME GPU benchmark code, so its behavior does not determine those timings.
