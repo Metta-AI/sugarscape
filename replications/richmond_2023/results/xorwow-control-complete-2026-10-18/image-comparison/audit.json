@@ -1,0 +1,187 @@
+{
+  "snapshot_sha256": "2318f2b2fd4ac0bba849f9ebf02bb2cbed25d0ac77b6c5879100d2c9dd96eac7",
+  "method": "Same fixed1359-square image grid, 256 cell centers, normalizedRGB and source Viridis5/red palette for every panel. Native x-major grid transposed and y reversed. No fitted crop,seed,orientation or palette.",
+  "scope": "Native first/fiftieth active states audited; empty-cell resource values reconstructed from source accounting and observed movements, not directly GPU-captured. This does not reproduce OpenGL lighting or establish the historical visualization toolchain.",
+  "comparisons": [
+    {
+      "iteration": 0,
+      "source_image_sha256": "cfe36ea4a245d8ba382e5131b974db4c40b411e577f07530637bf3fa2d8d9ebe",
+      "exact_cell_color_class_matches": 65536,
+      "different_cell_color_classes": 0,
+      "author_red_cells": 0,
+      "native_red_cells": 0,
+      "shared_red_coordinates": 0,
+      "confusion_rows_author_columns_native_classes_0to4_then_red": [
+        [
+          16560,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12082,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          14047,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          13859,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          8988,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "minimum_squared_distance_margin": 0.039321567034440015
+    },
+    {
+      "iteration": 1,
+      "source_image_sha256": "e88b0f556e50e01b7d3c6372df8e2e27e77a9419c29d417ad0105cd5d7836e42",
+      "exact_cell_color_class_matches": 34929,
+      "different_cell_color_classes": 30607,
+      "author_red_cells": 8885,
+      "native_red_cells": 11171,
+      "shared_red_coordinates": 1880,
+      "confusion_rows_author_columns_native_classes_0to4_then_red": [
+        [
+          15846,
+          1205,
+          1338,
+          1388,
+          1171,
+          4493
+        ],
+        [
+          2401,
+          5723,
+          1521,
+          1518,
+          842,
+          2211
+        ],
+        [
+          1277,
+          0,
+          4855,
+          0,
+          0,
+          1001
+        ],
+        [
+          1117,
+          0,
+          0,
+          4529,
+          0,
+          904
+        ],
+        [
+          533,
+          0,
+          0,
+          0,
+          2096,
+          682
+        ],
+        [
+          1524,
+          1208,
+          1471,
+          1627,
+          1175,
+          1880
+        ]
+      ],
+      "minimum_squared_distance_margin": 0.039321567034440015
+    },
+    {
+      "iteration": 50,
+      "source_image_sha256": "57c16ca3b821013b0997ff81c0c1cfb3f24d0e693d168d165befd93dd4e7d55e",
+      "exact_cell_color_class_matches": 41016,
+      "different_cell_color_classes": 24520,
+      "author_red_cells": 8869,
+      "native_red_cells": 8869,
+      "shared_red_coordinates": 2542,
+      "confusion_rows_author_columns_native_classes_0to4_then_red": [
+        [
+          17605,
+          1170,
+          1613,
+          500,
+          26,
+          1587
+        ],
+        [
+          1113,
+          12727,
+          1534,
+          505,
+          35,
+          1731
+        ],
+        [
+          1687,
+          1594,
+          7671,
+          494,
+          30,
+          2163
+        ],
+        [
+          499,
+          506,
+          439,
+          465,
+          18,
+          807
+        ],
+        [
+          21,
+          28,
+          39,
+          15,
+          6,
+          39
+        ],
+        [
+          1607,
+          1705,
+          2194,
+          775,
+          46,
+          2542
+        ]
+      ],
+      "minimum_squared_distance_margin": 0.039321567034440015
+    }
+  ]
+}
