@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T23:41:25.765616+00:00",
+  "as_of": "2026-10-18T23:45:52.989618+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -260,15 +260,15 @@
     {
       "study": "springer_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/22",
-      "checked_commit": "55f5282a578fe4e9b6a79431445fa14d09904e52",
-      "status": "running",
+      "checked_commit": "aff558f52f1067ebcf79fe75722282c45c2d01e4",
+      "status": "partial",
       "readme": "replications/springer_2019/README.md",
-      "readme_sha256": "b074fb7af2b1455499a87fdaf77e71d17d49fd942ad6299bd0609edb7dc845b1",
-      "json_evidence_files": 49,
+      "readme_sha256": "a0aeef8dd265e5dcd63c982f1ecd856a7113fa5e4a577c8ab768d7654770366e",
+      "json_evidence_files": 66,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T23:41:25.765616+00:00",
+      "checked_at": "2026-10-18T23:45:52.989618+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/springer_2019",
-      "remaining_scope": "Publisher artifact checksum verified. Four attempts and 18 native executions audited; final H100/CUDA11.8 qualification builds all three implementations and completes six 10,000-step executions on a 32x32 grid. Archived library conflicts and compiler failures preserved. Four author-derived template keywords and two explicit template arguments change allocator headers only; model files remain unchanged. Native checksum is not full-state validation. Independent state checks, all allocator variants, full 1700x1700 timing, matched-heap capacity searches and published claim comparisons remain outstanding. GPU currently runs bounded progress diagnostic; no completion credit. Heap-source audit confirms nominal 8GiB allocates 6GiB BitmapAlloc data storage; DynaSOAr uses object capacity and compiled block size. Qualification layout extrapolates 1,627,389,952 default data-buffer bytes, with additional metadata; full default allocation not measured. Artifact Figure11 instructions use DynaSOAr total allocator memory as comparator budget. Match actual budgets before capacity claims. Published Figure10 seven total times and Figure11 six capacity ratios now extracted from pinned vector geometry. Full-size debug execution timed out at 600 seconds; no release timing started. Raw archive and audit preserved. Corrected external adapter qualification builds all four variants: CUDA and Bitmap each pass two executions; mallocMC asserts and Halloc segfaults twice. Exactly eight dependent-template keywords added; runtime failures remain unresolved. Progress diagnostic cmd-cyq9u running with 120-second full-size probes after correcting our Python3.8 runner syntax failure. Diagnostic output is not benchmark evidence. Author arXiv source supplies exact plotted timings and baseline raw repeats; baseline plots use minimum. Capacity script requires explicit normalization to match the published plot. No completion credit."
+      "remaining_scope": "Publisher artifact checksum verified. Four attempts and 18 native executions audited; final H100/CUDA11.8 qualification builds all three implementations and completes six 10,000-step executions on a 32x32 grid. Archived library conflicts and compiler failures preserved. Four author-derived template keywords and two explicit template arguments change allocator headers only; model files remain unchanged. Native checksum is not full-state validation. Independent state checks, all allocator variants, full 1700x1700 timing, matched-heap capacity searches and published claim comparisons remain outstanding. Bounded progress diagnostics finished; no completion credit. Heap-source audit confirms nominal 8GiB allocates 6GiB BitmapAlloc data storage; DynaSOAr uses object capacity and compiled block size. Qualification layout extrapolates 1,627,389,952 default data-buffer bytes, with additional metadata; full default allocation not measured. Artifact Figure11 instructions use DynaSOAr total allocator memory as comparator budget. Match actual budgets before capacity claims. Published Figure10 seven total times and Figure11 six capacity ratios now extracted from pinned vector geometry. Full-size debug execution timed out at 600 seconds; no release timing started. Raw archive and audit preserved. Corrected external adapter qualification builds all four variants: CUDA and Bitmap each pass two executions; mallocMC asserts and Halloc segfaults twice. Exactly eight dependent-template keywords added; runtime failures remain unresolved. Progress diagnostic cmd-cyq9u completed: small control passes; full debug and release each time out at agent-creation synchronization before timestep zero. Compute90 comparison cmd-fkcmt fails small-control active-mask assertion and gates full-size probes. Both archives downloaded, 511 qualified source hashes and all binary hashes audited. Our Python3.8 runner syntax failure remains preserved. Diagnostic output is not benchmark evidence. Author arXiv source supplies exact plotted timings and baseline raw repeats; baseline plots use minimum. Capacity script requires explicit normalization to match the published plot. No completion credit."
     }
   ],
   "study_prs": 19,
