@@ -783,3 +783,29 @@ capability-specific branch. Agent results are posted after counter updates, and
 the simulation waits for all agent results each step. This identifies no
 32-capability arithmetic explanation. Instrumentation affects scheduling;
 historical runtime equivalence and the published discrepancy remain unresolved.
+
+### All 51 native timing cells audited
+
+[The complete timing grid](results/timing-grid-complete-2026-10-18) combines
+25 Table 6, 20 Table 8 and six Table 9 conditions. All 204 raw measurements
+pass their native audits. The complete-grid comparison now passes its positive
+path, having previously rejected incomplete coverage. The continuation exits
+zero without out-of-memory events, and fresh public extraction reproduces its
+audit byte-for-byte. Earlier successful rows are unchanged.
+
+The last two fitted times are 118.697172 seconds for sequential rebirth with
+2,500 agents and 16.035396 seconds for TArray rebirth with 2,000 agents.
+Their R² values are 0.9999564886 and 0.9998154039. The original TVar segmentation
+fault remains preserved; successful continuation does not explain that failure.
+
+Table 8 preserves 28/30 pairwise orderings of fitted means versus printed times.
+The exceptions are sequential versus TVar at 2,000 agents and IO versus
+sequential at 2,500 agents. These are descriptive comparisons without a
+new significance test or acceptance tolerance.
+
+Native/published timing ratios span 0.1728–0.6115 in Table 6, 0.2921–0.6150
+in Table 8, and 1.0711–1.4165 in Table 9. Tables 6/8 use different hardware;
+Table 9 matches instance class but lacks historical clock/isolation evidence.
+Thus complete execution does not establish historical timing equivalence.
+Figure 5a provenance and retry-discrepancy interpretation still prevent a
+whole-paper verdict. No additional study is counted as completed.

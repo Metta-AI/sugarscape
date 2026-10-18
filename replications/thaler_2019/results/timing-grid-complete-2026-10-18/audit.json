@@ -1,0 +1,472 @@
+{
+  "conditions_audited": 4,
+  "conditions_required": 45,
+  "attempts_audited": 4,
+  "raw_measurements": 16,
+  "conditions_accepted": 4,
+  "complete_grid": false,
+  "max_slope_error": 7.105427357601002e-14,
+  "max_r_squared_error": 0.0,
+  "missing_conditions": [
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 7,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:7/500"
+    },
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:4/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 4,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:4/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:4/500"
+    },
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 3,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:3/500"
+    },
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 6,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:6/500"
+    },
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 5,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:5/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 5,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:5/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:1/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 3,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:3/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 6,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:6/500"
+    },
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 8,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:8/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 7,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:7/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 2,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:2/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:1/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 2,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:2/500"
+    },
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:1/500"
+    },
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 2,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:2/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 8,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:8/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 7,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:7/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 3,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:3/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 5,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:5/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 6,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:6/500"
+    },
+    {
+      "table": 6,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-seq-singlecore/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 8,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:8/500"
+    },
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 2000,
+      "benchmark": "sugarscape-tvar-rebirthing:4/2000"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 1500,
+      "benchmark": "sugarscape-seq-rebirthing/1500"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 1500,
+      "benchmark": "sugarscape-io-rebirthing:4/1500"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 2500,
+      "benchmark": "sugarscape-tarray-rebirthing:4/2500"
+    },
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 1000,
+      "benchmark": "sugarscape-tvar-rebirthing:4/1000"
+    },
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 2500,
+      "benchmark": "sugarscape-tvar-rebirthing:4/2500"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 2000,
+      "benchmark": "sugarscape-seq-rebirthing/2000"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 2500,
+      "benchmark": "sugarscape-io-rebirthing:4/2500"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 1000,
+      "benchmark": "sugarscape-io-rebirthing:4/1000"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 1000,
+      "benchmark": "sugarscape-tarray-rebirthing:4/1000"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-rebirthing:4/500"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 1000,
+      "benchmark": "sugarscape-seq-rebirthing/1000"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 2000,
+      "benchmark": "sugarscape-io-rebirthing:4/2000"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 1500,
+      "benchmark": "sugarscape-tarray-rebirthing:4/1500"
+    },
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 1500,
+      "benchmark": "sugarscape-tvar-rebirthing:4/1500"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 500,
+      "benchmark": "sugarscape-io-rebirthing:4/500"
+    }
+  ],
+  "hardware_allocation": {
+    "affinity": [
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+    ],
+    "effective_cpuset": [
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+    ],
+    "cpu_max": "max 100000",
+    "model": "AMD EPYC 9R45 96-Core Processor",
+    "threads_per_core": 1,
+    "limitation": "OS-reported topology and allocation only. This does not prove exclusive host use or fixed clock frequency."
+  },
+  "scope": "Independent raw-measurement audit on different hardware; not a paper performance verdict. Source and binary hashes are recorded provenance, not independent binary reconstruction.",
+  "rows": [
+    {
+      "ordinal": 41,
+      "condition": {
+        "table": 8,
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 500,
+        "benchmark": "sugarscape-tvar-rebirthing:4/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          24.009544569067657
+        ],
+        [
+          2.0,
+          48.15515814605169
+        ],
+        [
+          3.0,
+          72.61852929415181
+        ],
+        [
+          4.0,
+          97.62352174893022
+        ]
+      ],
+      "ols_seconds": 24.530530268768768,
+      "r_squared": 0.9999378053734114,
+      "sample_standard_deviation_seconds": 0.17430233782843105,
+      "slope_error": 1.0658141036401503e-14,
+      "r_squared_error": 0.0,
+      "report_sha256": "437905e8fd4477c8a2943260d01319f6f442784a8f59de762a205a13f720fd08"
+    },
+    {
+      "ordinal": 42,
+      "condition": {
+        "table": 8,
+        "variant": "seq",
+        "caps": 1,
+        "agents": 500,
+        "benchmark": "sugarscape-seq-rebirthing/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          41.49787792889401
+        ],
+        [
+          2.0,
+          82.90913129108958
+        ],
+        [
+          3.0,
+          124.79322148906067
+        ],
+        [
+          4.0,
+          166.27402044879273
+        ]
+      ],
+      "ols_seconds": 41.621251775766716,
+      "r_squared": 0.9999954293906242,
+      "sample_standard_deviation_seconds": 0.06530226702426545,
+      "slope_error": 4.263256414560601e-14,
+      "r_squared_error": 0.0,
+      "report_sha256": "697ac8d6c781ba48c8486bf26d73ee249d50fd1a7f703935ce2d5f4faaf691d3"
+    },
+    {
+      "ordinal": 43,
+      "condition": {
+        "table": 8,
+        "variant": "seq",
+        "caps": 1,
+        "agents": 2500,
+        "benchmark": "sugarscape-seq-rebirthing/2500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          116.92198945698328
+        ],
+        [
+          2.0,
+          233.2752626989968
+        ],
+        [
+          3.0,
+          353.4203617731109
+        ],
+        [
+          4.0,
+          472.53086471999995
+        ]
+      ],
+      "ols_seconds": 118.69717248631635,
+      "r_squared": 0.9999564886237203,
+      "sample_standard_deviation_seconds": 0.7093435774100803,
+      "slope_error": 7.105427357601002e-14,
+      "r_squared_error": 0.0,
+      "report_sha256": "8513866cae3a65f258f2f7c4d9afdf2cac7288b16395bcc49e70fbdf159f389c"
+    },
+    {
+      "ordinal": 44,
+      "condition": {
+        "table": 8,
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 2000,
+        "benchmark": "sugarscape-tarray-rebirthing:4/2000"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          15.620857883011922
+        ],
+        [
+          2.0,
+          32.30023265304044
+        ],
+        [
+          3.0,
+          47.822764297015965
+        ],
+        [
+          4.0,
+          63.89800104312599
+        ]
+      ],
+      "ols_seconds": 16.035396112431766,
+      "r_squared": 0.9998154038804644,
+      "sample_standard_deviation_seconds": 0.22048226516051636,
+      "slope_error": 7.105427357601002e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "0909fced9673e0fe35ec09114f5669695c7b75da06268c344f4dfc2c1ac422a0"
+    }
+  ]
+}
