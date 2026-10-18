@@ -19,8 +19,8 @@ The following operational choices require comparison against author code or sens
 - Select among empty birth locations uniformly; initial location is uniform.
 - Use `std::mt19937_64` and the standard-library shuffle/distributions. Replay identity is limited to the recorded compiler/library environment.
 
-No mutation, evolving inheritance, age-based mortality, or maximum lifespan is added.
-The evolving societies in the paper remain unimplemented and are required before completing this study.
+The fixed-parameter simulator adds no mutation, inheritance changes, age-based mortality, or maximum lifespan.
+A separate conditional inherited-trait extension now implements the stable evolutionary scenario; historical rules and the chaotic scenario remain unresolved.
 
 ## Pilot protocol
 
@@ -422,3 +422,12 @@ Both ten-trait marginal count sets independently imply 830 initial agents, with 
 This differs from the one-agent fixed-society growth initialization; that initialization cannot be reused unchanged for Figure 4.
 The exported observations cover approximately generations 0–499. Gray curves do not individually label their alternative trait values.
 Joint trait assignments, inheritance, mutation, placement, ages, and generation-to-cycle mapping remain unresolved; these constraints do not complete the study.
+
+## Conditional inherited-trait evolution implemented
+
+[The 100-seed stable reconstruction](results/evolution-stable-2026-10-18) completes 50,000 cycles and audits 3,194,850 inheritance events.
+Two full homogeneous controls preserve the original simulator's aggregate and individual observations byte-for-byte.
+All runs select infertility 10 and birth cost zero by cycle 499 under the declared initialization and exact-inheritance assumptions.
+Mean population, age, wealth, and Gini at that cycle are 856.38, 12.7652, 492.55, and 0.693396.
+The four labelled Figure 4 curves supply 1,988 comparison vertices; pointwise ranges remain descriptive.
+This implements one evolutionary scenario conditionally. It does not establish the original inheritance rules, steady-state sampling, chaotic scenario, or whole-paper replication.
