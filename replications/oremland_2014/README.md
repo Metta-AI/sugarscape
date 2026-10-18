@@ -92,6 +92,20 @@ The policy uses Python `random.Random(20261018)` with 200 draws of `randrange(4)
 This is a generated diagnostic policy, not one of the paper's original controls.
 The public launcher repeats seed 1 exactly: 204 state observations and 4,846 tax events agree with the larger ensemble.
 
+## Batch evaluation for optimization
+
+[The batch evaluator](results/batch-evaluator-2026-10-18) executes each full 50-step request without per-step observation and event exports.
+All 400 final survivor states, populations, tax totals, and refund totals exactly match the previously audited heterogeneous workflows.
+The final implementation took 17.12 seconds; the detailed-observation run took 68.31 seconds.
+This comparison includes observation/export overhead and is not a reproduction of Table 2 timings.
+
+`RunPolicyBatch.java` takes the model path, a JSON Lines request file, and a fresh JSON Lines output path.
+Each request provides `id`, integer `seed`, `phase` (0 or 4), Boolean `clipped`, and 200 `policy` rates.
+The retained manifest supplies the exact bounded Java command, compilation command, classpath, and source/runtime hashes.
+`audit_policy_batch.py` validates every input and output line against the rich-workflow reference.
+
+[The optimizer specification audit](results/optimizer-specification-2026-10-18) records the printed rules, missing choices, and dissertation attachment inventory.
+
 ## Remaining paper scope
 
 The original author implementation, original 100 controls and random streams, model-reduction conventions, and optimizer implementation remain unavailable.

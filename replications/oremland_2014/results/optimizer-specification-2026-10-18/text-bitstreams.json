@@ -1,0 +1,69 @@
+{
+  "_embedded" : {
+    "bitstreams" : [ {
+      "id" : "7075367e-fc44-4b79-a4ad-e7d23431d9d4",
+      "uuid" : "7075367e-fc44-4b79-a4ad-e7d23431d9d4",
+      "name" : "Oremland_MS_D_2014.pdf.txt",
+      "handle" : null,
+      "metadata" : {
+        "dc.description" : [ {
+          "value" : "Extracted text",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ],
+        "dc.source" : [ {
+          "value" : "Written by FormatFilter org.dspace.app.mediafilter.PDFFilter on 2014-01-25T07:00:31Z (GMT).",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ],
+        "dc.title" : [ {
+          "value" : "Oremland_MS_D_2014.pdf.txt",
+          "language" : null,
+          "authority" : null,
+          "confidence" : -1,
+          "place" : 0
+        } ]
+      },
+      "bundleName" : "TEXT",
+      "sizeBytes" : 299140,
+      "checkSum" : {
+        "checkSumAlgorithm" : "MD5",
+        "value" : "f16adad86c5625d0c38fffafb033b193"
+      },
+      "sequenceId" : 2,
+      "type" : "bitstream",
+      "_links" : {
+        "content" : {
+          "href" : "https://vtechworks.lib.vt.edu/server/api/core/bitstreams/7075367e-fc44-4b79-a4ad-e7d23431d9d4/content"
+        },
+        "bundle" : {
+          "href" : "https://vtechworks.lib.vt.edu/server/api/core/bitstreams/7075367e-fc44-4b79-a4ad-e7d23431d9d4/bundle"
+        },
+        "format" : {
+          "href" : "https://vtechworks.lib.vt.edu/server/api/core/bitstreams/7075367e-fc44-4b79-a4ad-e7d23431d9d4/format"
+        },
+        "thumbnail" : {
+          "href" : "https://vtechworks.lib.vt.edu/server/api/core/bitstreams/7075367e-fc44-4b79-a4ad-e7d23431d9d4/thumbnail"
+        },
+        "self" : {
+          "href" : "https://vtechworks.lib.vt.edu/server/api/core/bitstreams/7075367e-fc44-4b79-a4ad-e7d23431d9d4"
+        }
+      }
+    } ]
+  },
+  "page" : {
+    "number" : 0,
+    "size" : 20,
+    "totalPages" : 1,
+    "totalElements" : 1
+  },
+  "_links" : {
+    "self" : {
+      "href" : "https://vtechworks.lib.vt.edu/server/api/core/bundles/36d01d62-ce29-4cc1-9e07-2596a2411376/bitstreams"
+    }
+  }
+}
