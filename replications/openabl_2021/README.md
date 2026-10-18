@@ -193,3 +193,7 @@ whose power-of-two ranges all begin at zero. The reconstruction preserves it.
 ## GPU execution and tie-order diagnosis
 
 [The 225-cell GPU qualification](gpu-condition/README.md) completes 100 steps. Native repeats diverge despite identical initialization. Fixed-position tie-breaking matches all 180,000 independently replayed transition fields. Native results, failed attempts and the diagnostic patch are retained separately. Larger GPU conditions and historical timings remain incomplete.
+
+## Distributed backend qualification
+
+[The released D-MASON bundle compiles and executes](dmason-condition/README.md). Both observed partitions reach 400 scheduler steps. Native field census duplicates disappear under a matching identity hash control. These diagnostics do not establish changed scientific outcomes or reproduce the full distributed scaling experiment.

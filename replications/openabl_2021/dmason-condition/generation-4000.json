@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-build-001/OpenABL",
+    "-i",
+    "/Users/relh/Code/workspace/sugarscape-openabl-reference/examples/sugarscape.abl",
+    "-o",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-dmason-qualification-001/observed-4000",
+    "-b",
+    "dmason",
+    "-A",
+    "/Users/relh/Code/workspace/sugarscape-openabl-reference/asset",
+    "-P",
+    "num_agents=4000",
+    "-P",
+    "num_timesteps=100",
+    "-C",
+    "dmason.grid_rows=1",
+    "-C",
+    "dmason.grid_cols=2"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

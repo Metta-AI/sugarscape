@@ -1,0 +1,160 @@
+{
+  "conditions": [
+    {
+      "variant": "observed",
+      "requested_cells": 250,
+      "partitions": 2,
+      "timesteps": 100,
+      "stages": {
+        "initial": {
+          "records": 225,
+          "unique_positions": 225,
+          "duplicate_positions": 0,
+          "conflicting_duplicate_positions": 0
+        },
+        "final": {
+          "records": 375,
+          "unique_positions": 225,
+          "duplicate_positions": 75,
+          "conflicting_duplicate_positions": 0
+        }
+      },
+      "snapshots": [
+        [
+          "SNAP",
+          "0-0",
+          "initial",
+          "120",
+          "0"
+        ],
+        [
+          "SNAP",
+          "0-1",
+          "initial",
+          "105",
+          "0"
+        ],
+        [
+          "SNAP",
+          "0-0",
+          "final",
+          "200",
+          "400"
+        ],
+        [
+          "SNAP",
+          "0-1",
+          "final",
+          "175",
+          "400"
+        ]
+      ],
+      "log_sha256": "6923d343036c727c180824836ca94c69cd1de2207b3ab3aa00177cbced53cfeb"
+    },
+    {
+      "variant": "observed-4000",
+      "requested_cells": 4000,
+      "partitions": 2,
+      "timesteps": 100,
+      "stages": {
+        "initial": {
+          "records": 3969,
+          "unique_positions": 3969,
+          "duplicate_positions": 0,
+          "conflicting_duplicate_positions": 0
+        },
+        "final": {
+          "records": 4999,
+          "unique_positions": 3969,
+          "duplicate_positions": 630,
+          "conflicting_duplicate_positions": 0
+        }
+      },
+      "snapshots": [
+        [
+          "SNAP",
+          "0-0",
+          "initial",
+          "2016",
+          "0"
+        ],
+        [
+          "SNAP",
+          "0-1",
+          "initial",
+          "1953",
+          "0"
+        ],
+        [
+          "SNAP",
+          "0-1",
+          "final",
+          "2463",
+          "400"
+        ],
+        [
+          "SNAP",
+          "0-0",
+          "final",
+          "2536",
+          "400"
+        ]
+      ],
+      "log_sha256": "03530d663ee903bafe7aa464fe9b22da0defd78d7f7c082413a994d1fccfb0de"
+    },
+    {
+      "variant": "hash-control-4000",
+      "requested_cells": 4000,
+      "partitions": 2,
+      "timesteps": 100,
+      "stages": {
+        "initial": {
+          "records": 3969,
+          "unique_positions": 3969,
+          "duplicate_positions": 0,
+          "conflicting_duplicate_positions": 0
+        },
+        "final": {
+          "records": 3969,
+          "unique_positions": 3969,
+          "duplicate_positions": 0,
+          "conflicting_duplicate_positions": 0
+        }
+      },
+      "snapshots": [
+        [
+          "SNAP",
+          "0-0",
+          "initial",
+          "2016",
+          "0"
+        ],
+        [
+          "SNAP",
+          "0-1",
+          "initial",
+          "1953",
+          "0"
+        ],
+        [
+          "SNAP",
+          "0-0",
+          "final",
+          "2016",
+          "400"
+        ],
+        [
+          "SNAP",
+          "0-1",
+          "final",
+          "1953",
+          "400"
+        ]
+      ],
+      "log_sha256": "7166265a18fc1f3d042c21e64bd07e290eed235ff62053935e4506aa6fbee5b7"
+    }
+  ],
+  "dependency_sha256": "96cc3453709bc9c48a16e12bcbc68f54c4e52dcdbabe7edcd15b1243f74f8af7",
+  "scope": "Distributed backend qualification and identity-hash control; initialization RNG differs across runs and is not claimed equivalent. No full million-cell scaling or timing replication.",
+  "completed_study": false
+}

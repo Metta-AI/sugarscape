@@ -1,0 +1,10 @@
+--- native/RemoteAgent.java
++++ control/RemoteAgent.java
+@@ -14,6 +14,7 @@
+     public void setPos(E pos) { this.pos = pos; }
+     public String getId() {return id;}
+     public void setId(String id) {this.id = id;}
++    public int hashCode() { return java.util.Objects.hash(id, pos); }
+     public boolean equals(Object obj) {
+         if (this == obj) return true;
+         if (obj == null) return false;
