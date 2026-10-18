@@ -20,3 +20,9 @@ using seed `20261018 + behaviorspace-run-number` and the original 1,000-step hor
 Its protocol is frozen here. The native process has a two-hour limit; an outer guard
 allows five minutes for shutdown. It has no completion credit while running.
 The full paper remains unrecovered, so its exact claims and experiment alignment remain open.
+
+The initial full-grid launcher also failed before simulation: added metrics followed
+parameter declarations, violating the native experiment schema. `failed-ensemble-launch/`
+retains that failure. The corrected `ensemble-recovery-protocol.json` and
+`ensemble-recovery.xml` preserve all 128 conditions and ten repetitions. The replacement
+process was verified live and had produced completed input rows before this update.

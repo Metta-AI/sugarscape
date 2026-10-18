@@ -108,6 +108,8 @@
     "steps": 1000,
     "records_audited": 1003,
     "repeat_and_dense_endpoints_exact": true,
-    "full_ensemble": "128 conditions x 10 repetitions, 1000 steps; seeds20261018+run_number; one CPU,7200 seconds,512MiB Java heap; running, no credit."
+    "full_ensemble": "128 conditions x 10 repetitions, 1000 steps; seeds20261018+run_number; one CPU,7200 seconds,512MiB Java heap; running, no credit.",
+    "active_ensemble_evidence": "pensions-native-ensemble-002",
+    "failed_ensemble_launch": "pensions-native-ensemble-001: XML metric ordering rejected before simulation; preserved, not counted."
   }
 }
