@@ -100,3 +100,9 @@ The capacity script contains unnormalized arrays and commented-out divisions for
 [The first full-size batch](results/full-native-defaults-timeout-2026-10-18) compiled successfully but its debug process exceeded the 600-second limit. No execution completed and no release timing started. The sealed failure archive matches its export hash and preserves the executed runner, binary, log, compiler/device provenance and source manifest.
 
 This is incomplete execution, not a 600-second timing measurement or negative paper replication. The native program prints no per-step progress; slow execution and a stalled kernel remain unresolved. A bounded progress-observed control is needed before extending run limits or interpreting hardware performance. The remaining-allocator qualification started separately as `cmd-89573` after this failure’s evidence export.
+
+### External allocator compiler failures
+
+[All four archived adapters](results/remaining-allocator-failures-2026-10-18) fail compilation under CUDA 11.8; no simulation starts. Diagnostics identify dependent-template calls in the shared adapter. The complete failure archive and four compiler logs are retained.
+
+A separate attempt inserts eight `template` keywords into existing shared-adapter calls, recording original and effective hashes. This is a local syntax correction, not an authenticated historical revision. Use `qualify_remaining_allocators.py QUALIFICATION NEW_OUTPUT --adapter-source archived` for the unchanged adapter, or `--adapter-source portable-syntax` for the declared correction. Model source and allocator algorithms remain unchanged.

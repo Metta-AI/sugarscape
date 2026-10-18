@@ -1,0 +1,63 @@
+In file included from /usr/local/cuda/bin/../targets/x86_64-linux/include/cub/util_arch.cuh:36,
+                 from /usr/local/cuda/bin/../targets/x86_64-linux/include/cub/config.cuh:35,
+                 from /usr/local/cuda/bin/../targets/x86_64-linux/include/cub/cub.cuh:37,
+                 from example/configuration/halloc/../allocator_interface_adapter.h:6,
+                 from example/configuration/halloc/allocator_config.h:10,
+                 from example/sugarscape/dynasoar_no_cell/sugarscape.h:6,
+                 from example/sugarscape/dynasoar_no_cell/sugarscape.cu:9:
+/usr/local/cuda/bin/../targets/x86_64-linux/include/cub/util_cpp_dialect.cuh:142:13: warning: CUB requires at least C++14. C++11 is deprecated but still supported. C++11 support will be removed in a future release. Define CUB_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+  142 |      CUB_COMPILER_DEPRECATION_SOFT(C++14, C++11);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                        
+In file included from /usr/local/cuda/bin/../targets/x86_64-linux/include/thrust/detail/config/config.h:27,
+                 from /usr/local/cuda/bin/../targets/x86_64-linux/include/thrust/detail/config.h:23,
+                 from /usr/local/cuda/bin/../targets/x86_64-linux/include/thrust/system/cuda/detail/core/util.h:30,
+                 from /usr/local/cuda/bin/../targets/x86_64-linux/include/cub/device/dispatch/../../agent/agent_merge_sort.cuh:37,
+                 from /usr/local/cuda/bin/../targets/x86_64-linux/include/cub/device/dispatch/dispatch_merge_sort.cuh:33,
+                 from /usr/local/cuda/bin/../targets/x86_64-linux/include/cub/device/device_merge_sort.cuh:32,
+                 from /usr/local/cuda/bin/../targets/x86_64-linux/include/cub/cub.cuh:53,
+                 from example/configuration/halloc/../allocator_interface_adapter.h:6,
+                 from example/configuration/halloc/allocator_config.h:10,
+                 from example/sugarscape/dynasoar_no_cell/sugarscape.h:6,
+                 from example/sugarscape/dynasoar_no_cell/sugarscape.cu:9:
+/usr/local/cuda/bin/../targets/x86_64-linux/include/thrust/detail/config/cpp_dialect.h:131:13: warning: Thrust requires at least C++14. C++11 is deprecated but still supported. C++11 support will be removed in a future release. Define THRUST_IGNORE_DEPRECATED_CPP_DIALECT to suppress this message.
+  131 |      THRUST_COMPILER_DEPRECATION_SOFT(C++14, C++11);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                           
+example/configuration/halloc/halloc/src/utils.h(130): warning #1444-D: function "__shfl(int, int, int)"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/sm_30_intrinsics.hpp(147): here was declared deprecated ("__shfl() is deprecated in favor of __shfl_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/halloc/src/slab.cuh(131): warning #1444-D: function "__ballot"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h(405): here was declared deprecated ("__ballot() is deprecated in favor of __ballot_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/halloc/src/slab.cuh(136): warning #1444-D: function "__ballot"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h(405): here was declared deprecated ("__ballot() is deprecated in favor of __ballot_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/halloc/src/slab.cuh(164): warning #1444-D: function "__ballot"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h(405): here was declared deprecated ("__ballot() is deprecated in favor of __ballot_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/halloc/src/slab.cuh(175): warning #1444-D: function "__ballot"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h(405): here was declared deprecated ("__ballot() is deprecated in favor of __ballot_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/halloc/src/halloc.cu(80): warning #1444-D: function "__ballot"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h(405): here was declared deprecated ("__ballot() is deprecated in favor of __ballot_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/halloc/src/halloc.cu(84): warning #1444-D: function "__ballot"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h(405): here was declared deprecated ("__ballot() is deprecated in favor of __ballot_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/halloc/src/halloc.cu(153): warning #1444-D: function "__any"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/device_atomic_functions.h(178): here was declared deprecated ("__any() is deprecated in favor of __any_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/halloc/src/halloc.cu(154): warning #1444-D: function "__ballot"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/sm_20_intrinsics.h(405): here was declared deprecated ("__ballot() is deprecated in favor of __ballot_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/halloc/src/halloc.cu(179): warning #1444-D: function "__any"
+/usr/local/cuda/bin/../targets/x86_64-linux/include/device_atomic_functions.h(178): here was declared deprecated ("__any() is deprecated in favor of __any_sync() and may be removed in a future release (Use -Wno-deprecated-declarations to suppress this warning).")
+
+example/configuration/halloc/../allocator_interface_adapter.h(438): error: type name is not allowed
+          detected during instantiation of "void SoaAllocatorAdapter<AllocatorStateT, N_Objects, Types...>::free(T *) [with AllocatorStateT=AllocatorState, N_Objects=262144U, Types=<Agent, Male, Female>, T=Agent]" 
+example/sugarscape/dynasoar_no_cell/sugarscape.h(21): here
+
+example/configuration/halloc/../allocator_interface_adapter.h(641): error: type name is not allowed
+
+example/configuration/halloc/../allocator_interface_adapter.h(641): error: expected an expression
+
+3 errors detected in the compilation of "example/sugarscape/dynasoar_no_cell/sugarscape.cu".

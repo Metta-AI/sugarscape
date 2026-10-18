@@ -11,6 +11,9 @@ import time
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("qualification", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--adapter-source", choices=["archived", "portable-syntax"], required=True
+)
 args = parser.parse_args()
 root = args.output.resolve()
 root.mkdir(parents=True, exist_ok=False)
@@ -23,6 +26,44 @@ for name, digest in hashes.items():
 shutil.copytree(args.qualification / "source", root / "source")
 (root / "effective-source-sha256.json").write_text(json.dumps(hashes, indent=2) + "\n")
 source = root / "source/dynasoar"
+if args.adapter_source == "portable-syntax":
+    name = "dynasoar/example/configuration/allocator_interface_adapter.h"
+    path = root / "source" / name
+    before = path.read_text()
+    after = before
+    changes = {
+        "allocator_->parallel_do<": 4,
+        "allocator_state_.parallel_do_single_type<": 2,
+        "allocator_state_.device_do<": 1,
+        "allocator_state_.free<": 1,
+    }
+    for old, count in changes.items():
+        assert after.count(old) == count
+        new = (
+            old.replace("->", "->template ")
+            if "->" in old
+            else old.replace(".", ".template ")
+        )
+        after = after.replace(old, new)
+    (root / "original-allocator_interface_adapter.h").write_text(before)
+    path.write_text(after)
+    hashes[name] = hashlib.sha256(path.read_bytes()).hexdigest()
+    (root / "adapter-source-change.json").write_text(
+        json.dumps(
+            dict(
+                file=name,
+                inserted_template_keywords=8,
+                original_sha256=hashlib.sha256(before.encode()).hexdigest(),
+                effective_sha256=hashes[name],
+                scope="Local dependent-template syntax correction only; no allocator or model algorithm change.",
+            ),
+            indent=2,
+        )
+        + "\n"
+    )
+    (root / "effective-source-sha256.json").write_text(
+        json.dumps(hashes, indent=2) + "\n"
+    )
 for name, command in [
     ("gpu", ["nvidia-smi", "-q"]),
     ("compiler", ["nvcc", "--version"]),
