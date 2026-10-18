@@ -1,6 +1,6 @@
 # Quera-Bofarull et al. (2025): Automatic Differentiation of Agent-Based Models
 
-**Status: incomplete.** Three native forward simulations pass the recorded state audit. The paper’s gradient and calibration results remain unreplicated.
+**Status: incomplete.** Three calibration pilots and all 256 gradient-baseline trajectories pass independent state replay. The paper’s gradient and calibration results remain unreplicated.
 
 Paper: https://arxiv.org/html/2509.03303v2
 Author implementation: https://github.com/arnauqb/DiffABM.jl/tree/9178eccd56dd352e3515e276239654239f8d3b41
@@ -191,3 +191,9 @@ The paper source references figure filenames containing
 of `w`. In particular, `w` is not evidence of optimizer weight decay. The appendix
 still omits the exact prior, loss-kernel settings, and validation-data construction.
 These hints do not justify labeling a reconstructed calibration as the paper's run.
+
+## Full gradient-baseline movement replay
+
+[All 256 original diagnostic seeds](results/gradient-movement-replay-2026-10-18) pass independent replay of 614,400 agent updates and 15,360,000 cell updates with zero state error. Passive tracing preserves all native state hashes and matches every retained aggregate baseline record.
+
+The trace records 4,020 outside-mask moves and 223 moves to cells marked occupied; all occur at zero-score ties. Every seed contains an outside-mask move. This extends the source-behavior finding beyond the three calibration pilots. Perturbed trajectories, differentiated full states and the paper’s missing calibration protocol remain separate requirements.

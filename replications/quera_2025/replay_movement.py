@@ -2,6 +2,7 @@
 
 import argparse
 import csv
+import hashlib
 import json
 from pathlib import Path
 
@@ -11,16 +12,42 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("trace", type=Path)
 parser.add_argument("original", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--profile",
+    choices=["calibration-pilot", "gradient-ensemble"],
+    default="calibration-pilot",
+)
 args = parser.parse_args()
+gradient = args.profile == "gradient-ensemble"
+states, width, radius, seeds = (
+    (25, 50, 3, range(3, 259)) if gradient else (50, 25, 6, range(3))
+)
+if gradient:
+    for line in (args.trace / "sha256.txt").read_text().splitlines():
+        digest, name = line.split("  ", 1)
+        assert Path(name).name == name
+        assert hashlib.sha256((args.trace / name).read_bytes()).hexdigest() == digest
+    with (args.trace / "passive-parity.csv").open() as handle:
+        parity = list(csv.DictReader(handle))
+    assert len(parity) == 1536
+    assert {(int(row["seed"]), int(row["component"])) for row in parity} == {
+        (seed, component) for seed in seeds for component in range(1, 7)
+    }
+    assert all(
+        int(row["observations"])
+        == states * (width * width if int(row["component"]) in [1, 6] else 100)
+        for row in parity
+    )
+
 reports = []
-for seed in range(3):
+for seed in seeds:
     prefix = f"seed-{seed}"
-    for kind in ["agents", "cells"]:
+    for kind in [] if gradient else ["agents", "cells"]:
         assert (args.trace / f"{prefix}-{kind}.csv").read_bytes() == (
             args.original / f"{prefix}-{kind}.csv"
         ).read_bytes()
-    agents = np.full((50, 100, 4), np.nan)
-    boards = np.full((50, 25, 25), np.nan)
+    agents = np.full((states, 100, 4), np.nan)
+    boards = np.full((states, width, width), np.nan)
     occupancy = np.full_like(boards, np.nan)
     with (args.trace / f"{prefix}-agents.csv").open() as f:
         for r in csv.DictReader(f):
@@ -32,7 +59,7 @@ for seed in range(3):
             index = (int(r["time"]), int(r["x"]) - 1, int(r["y"]) - 1)
             boards[index] = float(r["sugar"])
             occupancy[index] = float(r["occupied"])
-    masks = np.full((100, 13, 13), np.nan)
+    masks = np.full((100, 2 * radius + 1, 2 * radius + 1), np.nan)
     metabolism = np.full(100, np.nan)
     with (args.trace / f"{prefix}-parameters.csv").open() as f:
         for r in csv.DictReader(f):
@@ -43,7 +70,18 @@ for seed in range(3):
         np.all(np.isfinite(v)) for v in [agents, boards, occupancy, masks, metabolism]
     )
     assert set(np.unique(masks)) <= {0.0, 1.0}
-    orders = np.full((49, 100), -1, dtype=int)
+    if gradient:
+        with (args.original / f"seed-{seed}.csv").open() as handle:
+            original = list(csv.DictReader(handle))
+        assert len(original) == 450
+        for row in original:
+            assert int(row["seed"]) == seed
+            assert (
+                abs(float(row["primal"]) - agents[int(row["time"]), :, 2].sum() / 100)
+                < 1e-10
+            )
+
+    orders = np.full((states - 1, 100), -1, dtype=int)
     with (args.trace / f"{prefix}-orders.csv").open() as f:
         for r in csv.DictReader(f):
             orders[int(r["transition"]) - 1, int(r["position"]) - 1] = (
@@ -52,7 +90,7 @@ for seed in range(3):
     assert all(sorted(row) == list(range(100)) for row in orders)
     board = boards[0].copy()
     cap = board.copy()
-    occupied = np.zeros((25, 25))
+    occupied = np.zeros((width, width))
     state = agents[0].copy()
     for x, y, _, _ in state:
         occupied[int(x) - 1, int(y) - 1] = 1.0
@@ -70,9 +108,9 @@ for seed in range(3):
             y = int(y)
             if alive:
                 destinations = [
-                    ((x + di - 1) % 25, (y + dj - 1) % 25)
-                    for di in range(-6, 7)
-                    for dj in range(-6, 7)
+                    ((x + di - 1) % width, (y + dj - 1) % width)
+                    for di in range(-radius, radius + 1)
+                    for dj in range(-radius, radius + 1)
                 ]
                 scores = [
                     board[i, j] * (1 - occupied[i, j]) * m
@@ -98,13 +136,13 @@ for seed in range(3):
                             "destination_occupancy": float(occupied[target]),
                         }
                     )
-                occupied[(x - 1) % 25, (y - 1) % 25] = 0.0
+                occupied[(x - 1) % width, (y - 1) % width] = 0.0
                 occupied[target] += 1.0
                 new_wealth = wealth + board[target] - metabolism[a]
                 board[target] = 0.0
                 state[a] = [nx, ny, new_wealth, float(wealth >= 0)]
             else:
-                occupied[(x - 1) % 25, (y - 1) % 25] = 0.0
+                occupied[(x - 1) % width, (y - 1) % width] = 0.0
                 state[a] = [0, 0, wealth, 0]
             error = float(np.max(np.abs(state[a] - agents[time, a])))
             max_error = max(max_error, error)
@@ -117,8 +155,8 @@ for seed in range(3):
     reports.append(
         {
             "seed": seed,
-            "agent_updates": 4900,
-            "cell_updates": 30625,
+            "agent_updates": (states - 1) * 100,
+            "cell_updates": (states - 1) * width * width,
             "living_moves": living_moves,
             "all_zero_maximum_choices": int(zero_score),
             "moves_outside_vision_mask": int(outside),
@@ -129,8 +167,20 @@ for seed in range(3):
     )
 args.output.mkdir(parents=True, exist_ok=False)
 report = {
+    "profile": args.profile,
     "runs": reports,
-    "scope": "Independent replay using recorded activation order and realized destinations. Every live destination must maximize native masked score; random tie-selection probabilities are not reproduced. State, resource and occupancy updates are reconstructed. Trace CSVs exactly match original uninstrumented pilots. Not a paper-level verdict.",
+    "scope": "Independent replay using recorded activation order and realized destinations. Every live destination must maximize native masked score; random tie-selection probabilities are not reproduced. State, resource and occupancy updates are reconstructed. Calibration-pilot CSVs match original uninstrumented pilots; gradient baseline aggregates match all retained ensemble records and native passive-trace hashes match the ordinary histories. Not a paper-level verdict.",
 }
 (args.output / "audit.json").write_text(json.dumps(report, indent=2) + "\n")
-print(json.dumps(report))
+print(
+    json.dumps(
+        {
+            "profile": args.profile,
+            "runs": len(reports),
+            "agent_updates": sum(row["agent_updates"] for row in reports),
+            "cell_updates": sum(row["cell_updates"] for row in reports),
+            "outside_moves": sum(row["moves_outside_vision_mask"] for row in reports),
+            "max_error": max(row["maximum_absolute_state_error"] for row in reports),
+        }
+    )
+)
