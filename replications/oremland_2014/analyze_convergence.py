@@ -170,7 +170,9 @@ with gzip.open(args.output / "prefix-curves.csv.gz", "wt", newline="") as stream
                     }
                 )
 with (args.output / "policy-summaries.csv").open("x", newline="") as stream:
-    writer = csv.DictWriter(stream, fieldnames=list(summary_rows[0]))
+    writer = csv.DictWriter(
+        stream, fieldnames=list(summary_rows[0]), lineterminator="\n"
+    )
     writer.writeheader()
     writer.writerows(summary_rows)
 aggregates = []
