@@ -1,0 +1,2 @@
+error: relh-sugarscape-bentham-disk-cpu2-20261018-v1 is running; on_wake registers a command for the NEXT time a stopped node comes up, and would not run now. Drop on_wake to run this command now, or stop_node first if you meant to queue it for the next wake
+  (request-id req_b4bf3bf78a314b31a75c79f6b7a1ee5f - quote it when reporting a problem)
