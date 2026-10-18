@@ -1,0 +1,158 @@
+{
+  "conditions": [
+    {
+      "requested_cells": 500,
+      "actual_cells": 484,
+      "snapshots": 101,
+      "agent_observations": 48884,
+      "initialization_fields": 3872,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-500-evidence.tar.gz",
+        "bytes": 6197937,
+        "sha256": "494993e6b8506fc8c059616e55947e3f0c9e4ef35d3efbfb4d2b03cd83109955"
+      }
+    },
+    {
+      "requested_cells": 1000,
+      "actual_cells": 961,
+      "snapshots": 101,
+      "agent_observations": 97061,
+      "initialization_fields": 7688,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-1000-evidence.tar.gz",
+        "bytes": 6774373,
+        "sha256": "8a3b3c9911e7d0ecc4b133b88aff7d6ee3091b076fb8be0bddbac59934cce95a"
+      }
+    },
+    {
+      "requested_cells": 2000,
+      "actual_cells": 1936,
+      "snapshots": 101,
+      "agent_observations": 195536,
+      "initialization_fields": 15488,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-2000-evidence.tar.gz",
+        "bytes": 7886871,
+        "sha256": "86523818806cd273a6aeaad97c0d3fa82a7aa06488b8cc5c5379d7fc896351f0"
+      }
+    },
+    {
+      "requested_cells": 4000,
+      "actual_cells": 3969,
+      "snapshots": 101,
+      "agent_observations": 400869,
+      "initialization_fields": 31752,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-4000-evidence.tar.gz",
+        "bytes": 10231737,
+        "sha256": "1ab6af52019682fdf51f91f0b9474e5689c0c04104604b840eb11aa701ad089d"
+      }
+    },
+    {
+      "requested_cells": 8000,
+      "actual_cells": 7921,
+      "snapshots": 101,
+      "agent_observations": 800021,
+      "initialization_fields": 63368,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-8000-evidence.tar.gz",
+        "bytes": 14612129,
+        "sha256": "c95ae812ee6f5d9f92c5ea2b298d13f7fe260cfa93eb2136fcebc4232b5084b0"
+      }
+    },
+    {
+      "requested_cells": 16000,
+      "actual_cells": 15876,
+      "snapshots": 101,
+      "agent_observations": 1603476,
+      "initialization_fields": 127008,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-16000-evidence.tar.gz",
+        "bytes": 23536667,
+        "sha256": "2e8a0429e4cba3650239ce8be1343f5bedf77c52024f8bf2d917b78dbbac67a9"
+      }
+    },
+    {
+      "requested_cells": 32000,
+      "actual_cells": 31684,
+      "snapshots": 101,
+      "agent_observations": 3200084,
+      "initialization_fields": 253472,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-32000-evidence.tar.gz",
+        "bytes": 40655932,
+        "sha256": "30bbd6b09dbdbe10c86df174b034754ec516e6d9eb13b9366e11a8ef622b3d75"
+      }
+    },
+    {
+      "requested_cells": 64000,
+      "actual_cells": 63504,
+      "snapshots": 101,
+      "agent_observations": 6413904,
+      "initialization_fields": 508032,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-64000-evidence.tar.gz",
+        "bytes": 73044620,
+        "sha256": "ca84a27336dc16be935f33904fc6b066e17142f4084312274b9d72773e0b1c71"
+      }
+    },
+    {
+      "requested_cells": 128000,
+      "actual_cells": 127449,
+      "snapshots": 101,
+      "agent_observations": 12872349,
+      "initialization_fields": 1019592,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-128000-evidence.tar.gz",
+        "bytes": 136894974,
+        "sha256": "edd6523898bb52084dfb8b4a2510ad1f6e7dc2ed2a4a3b8509822bab97f6261e"
+      }
+    },
+    {
+      "requested_cells": 256000,
+      "actual_cells": 255025,
+      "snapshots": 101,
+      "agent_observations": 25757525,
+      "initialization_fields": 2040200,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-256000-evidence.tar.gz",
+        "bytes": 260616239,
+        "sha256": "043f34aba08873de5adb46dedc4170aea67a860810e8c950161c6b6da390fe3b"
+      }
+    },
+    {
+      "requested_cells": 512000,
+      "actual_cells": 511225,
+      "snapshots": 101,
+      "agent_observations": 51633725,
+      "initialization_fields": 4089800,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-512000-evidence.tar.gz",
+        "bytes": 507194964,
+        "sha256": "fdc0831cf9b727c7ebc4f825ee049a7c4ed15bbf40c7049026876faca410ccb6"
+      }
+    },
+    {
+      "requested_cells": 1024000,
+      "actual_cells": 1022121,
+      "snapshots": 101,
+      "agent_observations": 103234221,
+      "initialization_fields": 8176968,
+      "archive": {
+        "storage": "s3://relh-sugarscape-evidence-20261017/openabl-gpu-grid-recovery-001/cells-1024000-evidence.tar.gz",
+        "bytes": 990616434,
+        "sha256": "4eba9b52858ef3de615e10b586f2110813568f9d320ae8773199a223549f548e"
+      }
+    }
+  ],
+  "new_conditions": 12,
+  "prior_qualification_requested_cells": 250,
+  "published_gpu_conditions_executed": 13,
+  "new_native_agent_observations": 206257655,
+  "new_initialization_fields": 16337240,
+  "combined_single_native_grid_observations": 206280380,
+  "combined_initialization_fields": 16339040,
+  "archive_bytes": 2078262877,
+  "completed_study": false,
+  "scope": "Full published GPU size grid at100steps, native structural invariants and independent initialization; not full transition equivalence, historical performance, or distributed scaling."
+}

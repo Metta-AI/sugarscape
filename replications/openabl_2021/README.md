@@ -197,3 +197,8 @@ whose power-of-two ranges all begin at zero. The reconstruction preserves it.
 ## Distributed backend qualification
 
 [The released D-MASON bundle compiles and executes](dmason-condition/README.md). Both observed partitions reach 400 scheduler steps. Native field census duplicates disappear under a matching identity hash control. These diagnostics do not establish changed scientific outcomes or reproduce the full distributed scaling experiment.
+
+## Full native GPU size grid
+
+[All 13 published GPU sizes](gpu-grid/README.md) have executed for 100 steps. The 12 added conditions pass structural checks across 206,257,655 native observations and exact independent reconstruction of 16,337,240 initial fields.
+Raw archives are retained in durable storage with checksums and export receipts. Historical performance and distributed scaling remain incomplete; native transition equivalence is not inferred from structural checks.
