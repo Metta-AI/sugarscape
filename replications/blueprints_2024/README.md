@@ -2,9 +2,10 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
-Latest audited checkpoint: **1,700 / 2,000 homogeneous configurations**.
-The raw and altruistic ensembles each contain all 500 inputs; egoistic has 487 and Bentham has 213.
-[The latest union](results/homogeneous-prefix-2026-10-18-003) reconciles overlapping evidence without double counting.
+Latest audited checkpoint: **1,713 / 2,000 homogeneous configurations**.
+The raw, altruistic, and egoistic ensembles each contain all 500 inputs; Bentham has 213.
+[The latest union](results/egoistic-complete-2026-10-18) reconciles overlapping evidence without double counting.
+The complete egoistic Table 3 row matches exactly: 331 extinct, 5 worse, and 164 better.
 The complete altruistic Table 3 row matches exactly: 344 extinct, 10 worse, and 146 better.
 [Its complete figure comparison](results/altruistic-figures-2026-10-18/README.md)
 also matches all 24,392 extracted vertices in Figures 4, 5, 7, 8 and 9.
