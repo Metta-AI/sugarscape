@@ -1315,3 +1315,14 @@ The full audit checks 294,792 agent and 5,207,202 cell observations without occu
 The figures retain both the first 200 steps and the complete 1,000-step interval.
 Configuration and historical-source uncertainties remain; visual bands alone do not
 establish the appendix's comparative persistence claim or a completed study.
+
+## Pollution candidate and diffusion gap
+
+[The complete native diagnostic](results/weaver-pollution-candidate-2026-10-18/README.md)
+validates 183,170 agent records and 262,701 cell records over 1,000 steps.
+The added observers preserve all 1,001 population values; the final population is 175.
+Haskell uses self plus four-neighbor averaging, while the recovered candidate uses
+eight-neighbor diffusion. No pollution-enabled candidate preset was recovered.
+The initial pollution offset alone is not a discrepancy because movement denominators
+account for it. These configuration findings prevent treating the diagnostic as
+an authenticated reproduction of appendix A.5; the study remains incomplete.
