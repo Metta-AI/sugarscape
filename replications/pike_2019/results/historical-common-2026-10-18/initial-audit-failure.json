@@ -1,0 +1,25 @@
+{
+  "exit_code": 1,
+  "failed_assertion": "len(ids) == len(set(ids)) == survivors[index]",
+  "native_archive_discrepancies": [
+    {
+      "run": 18,
+      "member_records": 101,
+      "unique_members": 100,
+      "reported_survivors": 100,
+      "duplicates": {
+        "161": 2
+      }
+    },
+    {
+      "run": 22,
+      "member_records": 75,
+      "unique_members": 74,
+      "reported_survivors": 74,
+      "duplicates": {
+        "120": 2
+      }
+    }
+  ],
+  "resolution": "Retain membership discrepancies as findings rather than assuming they cannot exist."
+}

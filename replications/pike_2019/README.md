@@ -52,7 +52,9 @@ The standard pilot repeats byte-identically in a separate process. Observer vali
 ## Targets and full scope
 
 [Extracted notebook targets](notebook_targets.json) retain source cells, cached outputs and notebook hashes.
-Original raw datasets were omitted from the author's repository; cached outputs are reference evidence, not regenerated results.
+Five original multi-level common-resource data files are retained in the author's repository and audited below.
+The earlier claim that all original raw datasets were omitted was incorrect.
+Other experiment datasets remain unrecovered; cached outputs are reference evidence, not regenerated results.
 Phase I cached mean survivors are standard 46.18, explicit 46.96 and network 46.68.
 Common-resource cached means are one-level 94.35 and multi-level 92.83, matching the paper.
 The notebooks multiply SciPy's already two-sided `ttest_ind` p-values by two, including a reported value above one.
@@ -881,3 +883,40 @@ and on the owned node. The repository includes native timing rows, manifests,
 ledgers, controls, per-seed measurements, and all output hashes. Run
 `audit_timing.py ARCHIVE ENGINE_CHECKOUT NEW_OUTPUT` on the complete archive to
 repeat the audit. No simulations need to be rerun.
+
+## Recovered original common-resource data
+
+[The archival audit](results/historical-common-2026-10-18) reads five hash-pinned data files from the author's repository.
+All five are byte-identical at the February 2, 2019 commit titled `completed reruns and analysis` and our selected prepublication revision.
+The reader permits only the NumPy scalar/dtype and collection constructors required by these files.
+These are historical author outputs, not 100 new simulation runs.
+
+The 100 survivor counts average **92.83**, exactly matching the cached notebook and paper's multi-level common-resource result.
+Their sample standard deviation is 15.042737; counts range from 55 to 131.
+The archived native timer averages 68.609592 seconds; hardware and timer limitations still prohibit a direct contemporary speed comparison.
+
+All 100 final group trees contain exactly the reported number of distinct individual IDs.
+Two trees contain duplicate membership: ID 161 appears twice in Run18 and ID 120 twice in Run22.
+The first audit incorrectly asserted that no duplicates could exist; that failure and its source are preserved.
+The revised analysis reports duplicates while checking deduplicated population counts.
+
+The 100,000 recorded metadata rows all contain empty group lists, despite nonempty final group trees in every run.
+The retained recorder checks the type label `meta` in its time-series path and `group` in its final-tree path.
+The empty lists therefore cannot be treated as evidence that groups were absent.
+This finding concerns archived author measurements, independently of our fresh simulations.
+
+The recovered price archive contains 884,283 positive finite transaction prices.
+Exactly 26,632 of 100,000 steps have at least two trades and a defined sample standard deviation of log prices.
+The remaining 73,368 steps stay undefined. The original 500-bin histogram construction is reconstructed without changing its range.
+An independent R check verifies all 500 bin counts, observation totals, and survivor moments.
+Survivors are also decoded directly from primitive pickle opcodes, independently of the restricted unpickler.
+
+```sh
+python replications/pike_2019/audit_historical_common.py AUTHOR_CHECKOUT NEW_OUTPUT
+```
+
+The public results retain every derived price-step measurement, per-run summaries, histogram, input hashes, and independent verification.
+This corrects our source inventory and supplies an exact historical survivor target.
+These files contain neither individual health holdings nor random-generator states; finite prices do not establish finite holdings.
+The one-level and threshold-five historical datasets remain unrecovered.
+Historical model/dependency fidelity and the other claim-level gaps remain unresolved; the paper is still incomplete.
