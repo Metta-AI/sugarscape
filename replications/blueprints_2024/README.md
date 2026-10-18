@@ -2,20 +2,18 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
-Latest audited checkpoint: **1,836 / 2,000 homogeneous configurations**.
-The raw, altruistic, and egoistic ensembles each contain all 500 inputs; Bentham has 335.
-[The latest union](results/bentham-timeout-retry-2026-10-18-004) reconciles overlapping evidence without double counting.
-The complete egoistic Table 3 row matches exactly: 331 extinct, 5 worse, and 164 better.
-[Its full figure comparison](results/egoistic-figures-2026-10-18/README.md) matches 24,432 vertices in five figures and 4,992 Figure 6 vertices under all-cause deaths.
-The released plotter death-definition mismatch remains documented.
-The complete altruistic Table 3 row matches exactly: 344 extinct, 10 worse, and 146 better.
-[Its complete figure comparison](results/altruistic-figures-2026-10-18/README.md)
-also matches all 24,392 extracted vertices in Figures 4, 5, 7, 8 and 9.
-Figure 6 matches all 4,995 vertices under all-cause deaths; the released plotter's narrower definition does not match.
-All counted intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. The remaining homogeneous inputs are still required.
-Latest deposited-runtime coverage is **863/1,200 inputs and 2,549,643 observations**;
-[the latest audited runtime prefix](results/runtime-bentham50k-low-2026-10-18/README.md) adds two complete 50,000-step Bentham inputs. Earlier terminal checkpoints retain their failures.
-Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
+All **2,000/2,000 original homogeneous configurations** are complete and audited, with 5,063,268 observations.
+[The complete union](results/homogeneous-complete-2026-10-18) validates all 500 seeds for each model without double counting.
+All four Table 3 rows match the published counts exactly under the released plotter's classification.
+All four models now have complete published-curve comparisons; [Bentham](results/bentham-figures-2026-10-18) adds 24,229 vertices across five figures.
+Figure 6 matches all-cause deaths for all four models, while the released plotter counts only starvation and combat.
+The historical plotting discrepancy remains unresolved.
+
+Latest deposited-runtime coverage is **873/1,200 inputs and 2,800,520 observations**.
+[The terminal Bentham audit](results/runtime-bentham-terminal-2026-10-18) retains the six-hour timeout and excludes the interrupted input.
+[The restored-environment continuation](results/runtime-environment-recovery-2026-10-18) has passed setup and started both native workers.
+The selfishness and mixed-society sweeps, longer horizons, remaining figure analysis beyond the homogeneous curves, and historical runtime claims remain incomplete.
+Earlier sections retain dated execution history and superseded checkpoint counts.
 
 [Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)
 (DOI 10.1109/ACCESS.2024.3519139). [Numeric targets](published_targets.json) were visually checked against PDF pages 12 and 15.

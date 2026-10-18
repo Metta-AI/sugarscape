@@ -1,0 +1,18 @@
+{
+  "model": "benthamHalfLookaheadBinary",
+  "runs": 500,
+  "observations": 2500500,
+  "metrics": [
+    "population",
+    "agentMeanTimeToLive",
+    "agentStarvationDeaths",
+    "agentCombatDeaths",
+    "agentWealthTotal",
+    "meanAgeAtDeath",
+    "agentDiseaseDeaths",
+    "agentAgingDeaths"
+  ],
+  "coverage_sha256": "56ebccbc4175fad23daf9a1fc408b77248e127d2d2faadc2f2be4bc99b7dcb31",
+  "all_native_trajectory_hashes_verified": true,
+  "scope": "Independent complete ensemble aggregation. Released parser equivalence and published figure comparison remain unverified."
+}
