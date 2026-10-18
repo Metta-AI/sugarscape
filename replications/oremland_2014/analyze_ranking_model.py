@@ -14,9 +14,12 @@ import scipy
 from scipy.stats import rankdata
 
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument("convergence", type=Path)
+parser.add_argument("reference", type=Path)
 parser.add_argument("model_audit", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--reference-kind", choices=["convergence", "independent"], default="convergence"
+)
 args = parser.parse_args()
 model_report = json.loads((args.model_audit / "audit.json").read_text())
 assert (
@@ -31,35 +34,63 @@ assert (
     values.shape[3] == 3 and values.shape[2] == model_report["seeds_per_policy_phase"]
 )
 assert model_report["complete_native_runs"] == values.shape[2] * 200
-published = Path(__file__).parent / "results/convergence-2026-10-18/audit.json"
-reference_report = json.loads(published.read_text())
-for name, digest in reference_report["inputs_sha256"].items():
-    assert hashlib.sha256((args.convergence / name).read_bytes()).hexdigest() == digest
-assert (
-    hashlib.sha256((args.convergence / "policies.json").read_bytes()).hexdigest()
-    == model_report["policies_sha256"]
-)
-policies = json.loads((args.convergence / "policies.json").read_text())
-baseline = np.full((100, 2, 100, 3), -1, dtype=np.int64)
-seen = np.zeros((100, 2, 100), dtype=np.bool_)
-for path in sorted((args.convergence / "execution").glob("results-*.jsonl")):
-    for line in path.read_text().splitlines():
-        row = json.loads(line)
-        policy_id, offset = divmod(row["id"], 200)
-        phase_index, seed_index = divmod(offset, 100)
-        assert row["seed"] == seed_index + 1 and row["phase"] == [0, 4][phase_index]
-        assert not seen[policy_id, phase_index, seed_index]
-        baseline[policy_id, phase_index, seed_index] = [
-            200 - row["population"],
-            row["total_tax"],
-            row["total_tax"] + row["debt_refund"],
-        ]
-        seen[policy_id, phase_index, seed_index] = True
-assert seen.all()
-assert model_report["seed_range"] == (
-    [101, 150] if model_report["width"] == 50 else [1, values.shape[2]]
-)
-reference_totals = baseline[:, :, :50].sum(axis=2)
+if args.reference_kind == "independent":
+    published = args.reference / "audit.json"
+    reference_report = json.loads(published.read_text())
+    assert reference_report["model"] == "50-independent-reference"
+    assert (
+        reference_report["seed_design"] == model_report["seed_design"] == "independent"
+    )
+    assert reference_report["protocol_sha256"] == model_report["protocol_sha256"]
+    assert reference_report["request_id_range"][1] < model_report["request_id_range"][0]
+    assert reference_report["seeds_per_policy_phase"] == 50
+    assert reference_report["complete_native_runs"] == 10000
+    assert reference_report["policies_sha256"] == model_report["policies_sha256"]
+    assert (
+        hashlib.sha256((args.reference / "objectives.npz").read_bytes()).hexdigest()
+        == reference_report["objectives_npz_sha256"]
+    )
+    assert (
+        hashlib.sha256((args.reference / "policies.json").read_bytes()).hexdigest()
+        == reference_report["policies_sha256"]
+    )
+    policies = json.loads((args.reference / "policies.json").read_text())
+    with np.load(args.reference / "objectives.npz") as archive:
+        baseline = archive["objectives"]
+    assert baseline.shape == (100, 2, 50, 3) and baseline.dtype == np.int64
+    reference_totals = baseline.sum(axis=2)
+else:
+    published = Path(__file__).parent / "results/convergence-2026-10-18/audit.json"
+    reference_report = json.loads(published.read_text())
+    for name, digest in reference_report["inputs_sha256"].items():
+        assert (
+            hashlib.sha256((args.reference / name).read_bytes()).hexdigest() == digest
+        )
+    assert (
+        hashlib.sha256((args.reference / "policies.json").read_bytes()).hexdigest()
+        == model_report["policies_sha256"]
+    )
+    policies = json.loads((args.reference / "policies.json").read_text())
+    baseline = np.full((100, 2, 100, 3), -1, dtype=np.int64)
+    seen = np.zeros((100, 2, 100), dtype=np.bool_)
+    for path in sorted((args.reference / "execution").glob("results-*.jsonl")):
+        for line in path.read_text().splitlines():
+            row = json.loads(line)
+            policy_id, offset = divmod(row["id"], 200)
+            phase_index, seed_index = divmod(offset, 100)
+            assert row["seed"] == seed_index + 1 and row["phase"] == [0, 4][phase_index]
+            assert not seen[policy_id, phase_index, seed_index]
+            baseline[policy_id, phase_index, seed_index] = [
+                200 - row["population"],
+                row["total_tax"],
+                row["total_tax"] + row["debt_refund"],
+            ]
+            seen[policy_id, phase_index, seed_index] = True
+    assert seen.all()
+    assert model_report["seed_range"] == (
+        [101, 150] if model_report["width"] == 50 else [1, values.shape[2]]
+    )
+    reference_totals = baseline[:, :, :50].sum(axis=2)
 policy_means = np.array([row["mean_rate"] for row in policies])
 metrics = ["deaths", "literal_revenue", "derived_clipped_revenue"]
 scopes = [
@@ -214,6 +245,7 @@ for filename, records in [
         writer.writerows(records)
 report = {
     "model": model_report["model"],
+    "reference_kind": args.reference_kind,
     "width": model_report["width"],
     "complete_native_runs_in_model": model_report["complete_native_runs"],
     "ranking_rows": len(rows),

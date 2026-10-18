@@ -224,3 +224,11 @@ Together with the earlier prefix, seven reduced models cover 428,400 audited run
 The independent full-size comparison uses seeds 101–150 against reference seeds 1–50.
 At full budget, pooled average-rank death concordance is 0.9481/0.9520 with linear weights for phases 0/4; quadratic weights give 0.9963/0.9972.
 These are conditional reconstruction results. The original policy distribution, implementation, reduction choices, and published error bars remain unresolved.
+
+## Independent random-stream diagnostic
+
+[All 37,600 diagnostic runs](results/independent-streams-2026-10-18) pass audit with globally unique seeds and a separate 50x50 reference ensemble.
+The auditor reconstructs the frozen seed assignment and validates 75,200 request/result lines.
+For pooled average ranks with linear weights, independent-seed 40x40 mortality concordance is 0.8686/0.8695 for clock phases 0/4.
+Within mean-tax-rate strata, it ranges from 0.5285 to 0.7844.
+This post hoc sensitivity changes observed agreement but does not establish author conventions, reproduce uncertainty bars, or validate a negative replication.

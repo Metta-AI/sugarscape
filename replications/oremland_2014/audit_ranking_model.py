@@ -5,6 +5,7 @@ import gzip
 import hashlib
 import json
 from pathlib import Path
+import random
 from typing import Literal
 
 import numpy as np
@@ -38,6 +39,9 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("experiment", type=Path)
 parser.add_argument("model")
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--seed-design", choices=["common", "independent"], default="common"
+)
 args = parser.parse_args()
 root = args.experiment
 run = root / "execution"
@@ -84,6 +88,22 @@ n = jobs[0]["seeds_per_policy_phase"]
 population = 200 * width * width // 2500
 seed_offset = 100 if width == 50 else 0
 first_id = jobs[0]["first_model_id"]
+if args.seed_design == "independent":
+    generation = protocol["seed_generation"]
+    assert generation["method"] == "sample without replacement"
+    assert generation["unique_seeds"] == protocol["native_runs"] == 37600
+    assert generation["python_random_seed"] == 20261018
+    assert (
+        generation["range_start_inclusive"],
+        generation["range_stop_exclusive"],
+    ) == (10000000, 2147483647)
+    independent_seeds = random.Random(20261018).sample(
+        range(10000000, 2147483647), 37600
+    )
+    assert len(set(independent_seeds)) == 37600
+    seed_values = independent_seeds[first_id : first_id + 200 * n]
+else:
+    seed_values = list(range(seed_offset + 1, seed_offset + n + 1))
 values = np.full((100, 2, n, 3), -1, dtype=np.int64)
 seen = np.zeros((100, 2, n), dtype=np.bool_)
 file_hashes = {}
@@ -124,10 +144,12 @@ for job in jobs:
             assert 0 <= offset < 200 * n
             policy_id, remainder = divmod(offset, 2 * n)
             phase_index, seed_index = divmod(remainder, n)
-            assert (
-                result.seed == seed_offset + seed_index + 1
-                and result.phase == [0, 4][phase_index]
+            expected_seed = (
+                independent_seeds[request.id]
+                if args.seed_design == "independent"
+                else seed_offset + seed_index + 1
             )
+            assert result.seed == expected_seed and result.phase == [0, 4][phase_index]
             assert not seen[policy_id, phase_index, seed_index]
             assert policies[policy_id]["id"] == policy_id
             assert request.policy == [
@@ -151,6 +173,7 @@ for job in jobs:
     file_hashes[str(inputs.relative_to(root))] = job["requests_gz_sha256"]
 assert seen.all() and int(seen.sum()) == 200 * n
 args.output.mkdir(parents=True, exist_ok=False)
+(args.output / "policies.json").write_bytes((root / "policies.json").read_bytes())
 np.savez_compressed(args.output / "objectives.npz", objectives=values)
 with np.load(args.output / "objectives.npz") as restored:
     assert np.array_equal(restored["objectives"], values)
@@ -161,7 +184,9 @@ report = {
     "policies": 100,
     "clock_phases": [0, 4],
     "seeds_per_policy_phase": n,
-    "seed_range": [seed_offset + 1, seed_offset + n],
+    "seed_range": [min(seed_values), max(seed_values)],
+    "seed_design": args.seed_design,
+    "request_id_range": [first_id, first_id + 200 * n - 1],
     "complete_native_runs": int(seen.sum()),
     "validated_jsonl_lines": 2 * int(seen.sum()),
     "objective_array_shape": list(values.shape),
