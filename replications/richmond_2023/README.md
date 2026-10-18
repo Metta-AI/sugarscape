@@ -448,3 +448,5 @@ provenance remain open. The GPU is stopped; no study credit is added.
 The historical engine used XORWOW while the executed release defaults to Philox. A frozen paired control is running; see `results/xorwow-control-launch-2026-10-18`. It requires exact baseline replay before interpreting the RNG variant and does not yet resolve the historical illustrations.
 
 The completed XORWOW diagnostic in `results/xorwow-control-complete-2026-10-18` passes all 100 steps of state accounting (889,233 observations). RNG-family restoration alone does not recover later illustrations. Iteration 50 matches the red-cell total but only 2,542 occupied coordinates. Historical illustration fidelity remains unresolved; no completion credit is added.
+
+The full captured-frame timing diagnostic (`results/frame-timing-diagnostic-2026-10-18`) compares all 101 frames of both RNG controls. Neither later author illustration matches any captured frame exactly. This excludes a simple index mismatch within these runs, without identifying historical visualization behavior or completing the study.
