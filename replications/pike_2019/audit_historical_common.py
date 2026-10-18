@@ -1,7 +1,7 @@
 """Reconstruct the author's retained 100-run multi-level common-resource archive."""
 
 import argparse
-from collections import Counter, defaultdict
+from collections import Counter
 import csv
 import gzip
 import hashlib
@@ -9,21 +9,11 @@ import io
 import json
 import math
 from pathlib import Path
-import pickle
 import statistics
 import subprocess
 
 import numpy as np
-
-
-class ArchiveReader(pickle.Unpickler):
-    def find_class(self, module, name):
-        return {
-            ("collections", "defaultdict"): defaultdict,
-            ("builtins", "list"): list,
-            ("numpy.core.multiarray", "scalar"): np.core.multiarray.scalar,
-            ("numpy", "dtype"): np.dtype,
-        }[module, name]
+from historical_pickle import ArchiveReader
 
 
 parser = argparse.ArgumentParser(description=__doc__)

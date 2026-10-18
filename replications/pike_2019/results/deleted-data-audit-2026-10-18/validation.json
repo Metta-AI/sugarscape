@@ -1,0 +1,19 @@
+{
+  "datasets": 3,
+  "runs": 300,
+  "metadata_steps": 300000,
+  "trade_records": 2146409,
+  "independent_R_histogram_cells": 1500,
+  "independent_R_terminal_metadata_population_checks": 300,
+  "repeat_analysis_and_step_files_byte_identical": true,
+  "shared_reader_prior_common_archive_outputs_byte_identical": true,
+  "first_attempt": {
+    "exit_code": 1,
+    "failure": "NumPy boolean summation produced an int64 invalid-price count, which JSON cannot encode. Count now increments Python integer1 per invalid value. Input data and numeric findings unchanged.",
+    "retained": "pike-deleted-audit-001"
+  },
+  "scope": "Archive replay and independent derived-data checks, not additional simulations or final-paper identification.",
+  "complete_archive_audit_exit_code": 0,
+  "independent_R_max_mean_error": 3.552713678800501e-14,
+  "independent_R_mean_tolerance": 1e-12
+}

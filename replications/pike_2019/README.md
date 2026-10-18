@@ -936,7 +936,7 @@ Three survivor arrays decode directly from primitive pickle opcodes, without exe
 | `Policy-Explicit/brute_multi_sur_10_policy.p` | 100 | 35.09 | 5.410605 |
 
 Independent R analysis verifies all three sets of summary statistics within 1e-12.
-The associated timing, price, and metadata files are recovered and hash-verified; their scientific contents have not yet been audited.
+The associated timing, price, and metadata files are recovered, hash-verified, and audited in the follow-up below.
 These are archival observations, not 300 new simulation runs.
 
 The corresponding grouping notebooks' cached statistical outputs change between this commit and the selected prepublication revision.
@@ -969,3 +969,31 @@ The archived datasets remain labeled earlier outputs, and numerical replay acros
 python replications/pike_2019/audit_deleted_source.py \
   AUTHOR_MODEL_CHECKOUT AUTHOR_LIBRARY_CHECKOUT NEW_REPORT.json
 ```
+
+### Complete audit of the three deleted datasets
+
+[The full archival analysis](results/deleted-data-audit-2026-10-18) checks all twelve input hashes and all three 100-run datasets.
+It validates 300,000 consecutive metadata records and 2,146,409 positive finite transaction prices.
+Final recorded group-member totals plus independents match the survivor arrays in all 300 runs.
+No timestep contains a repeated group ID. Individual membership identities are absent, so these totals cannot prove unique individual membership.
+
+| Dataset label | Trade records | Defined log-price dispersion steps | Undefined steps | Mean native seconds |
+| --- | ---: | ---: | ---: | ---: |
+| `network-10` | 281,852 | 17,481 | 82,519 | 49.131361 |
+| `network-10-policy` | 899,775 | 89,736 | 10,264 | 38.374839 |
+| `explicit-10-policy` | 964,782 | 90,925 | 9,075 | 86.875737 |
+
+Dispersion uses the notebook's sample standard deviation of log prices and remains undefined with fewer than two trades.
+Independent R checks reproduce all 1,500 histogram cells, per-run trade totals, survivor means, timer means, and terminal metadata totals.
+A second complete audit produces byte-identical analyses and compressed step measurements.
+The shared restricted pickle reader also reproduces the earlier common-resource audit and all its step measurements byte-for-byte.
+
+```sh
+python replications/pike_2019/audit_deleted_datasets.py RECOVERED_DATA NEW_OUTPUT
+Rscript replications/pike_2019/results/deleted-data-audit-2026-10-18/verify.R NEW_OUTPUT
+```
+
+These archived timings retain their original timer boundaries and unknown hardware.
+The earlier-output provenance remains unchanged; they are not relabeled as the paper's final experiments.
+Finite transaction prices and consistent metadata totals do not resolve the separate nonfinite-holdings finding.
+The initial analysis failed while serializing a NumPy integer count; its source and correction are retained.
