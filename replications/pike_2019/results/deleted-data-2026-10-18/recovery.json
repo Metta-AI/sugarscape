@@ -1,0 +1,137 @@
+{
+  "data_commit": "26df7d9cbcd75bb8f87b860a593dbd626af0d25e",
+  "deletion_commit": "de1882e66f58c578fe2908fe354e209332379f02",
+  "selected_revision": "585e53398f4f58e89ec184c83bb20819f0e4c96a",
+  "files": [
+    {
+      "path": "Policy Network/net_multi_sur_10.p",
+      "git_blob": "cfec2b5e52e5ea5c28a0dd6a01ddaecfe809337c",
+      "bytes": 208,
+      "sha256": "bb5c9f994221d6f5df30c5c05243751bf8a3f092b3185a8d6663bc678e1b2be7"
+    },
+    {
+      "path": "Policy Network/net_multi_sur_10_policy.p",
+      "git_blob": "a82657ddd7a5f8faa904259079b121d14c8490d6",
+      "bytes": 208,
+      "sha256": "2bd0315a02ea0af8d6c8a6c8418b40f7496ee478a2d563d13c19af692c9055d3"
+    },
+    {
+      "path": "Policy Network/net_multi_time_10.p",
+      "git_blob": "937a077734efc410474126c4de0f97007adfc92c",
+      "bytes": 2456,
+      "sha256": "960f20932e9b16999bab15459284c675efc6c1ba3031f7401f8cd45208fccfee"
+    },
+    {
+      "path": "Policy Network/net_multi_time_10_policy.p",
+      "git_blob": "57f1b99632c75aa4bb3f952d29760846f6d9e8e0",
+      "bytes": 2456,
+      "sha256": "236c5fae00dfca2e7ba6d59ac5b5a41a7a5e0d2e338c91558b5a4a69b691107b"
+    },
+    {
+      "path": "Policy Network/total_price_10.p",
+      "git_blob": "a4ffbbaa81801be0030761795f4472121bece02c",
+      "bytes": 9158019,
+      "sha256": "92642abaafde8391a1be5cd7ebc4b755989b268c9dd15c1ab563055586b60576"
+    },
+    {
+      "path": "Policy Network/total_price_10_policy.p",
+      "git_blob": "33f130d5104857419e2b5952ccb5bbba50aa0028",
+      "bytes": 28915319,
+      "sha256": "54556d1f1ec64b0f068b72be5ede3d65d4a49b0a7bd89d3cf86f8263cbaa8a7f"
+    },
+    {
+      "path": "Policy Network/type_df_10.p",
+      "git_blob": "ad594d932372621271b536973c3d4fb71f327f8b",
+      "bytes": 8839909,
+      "sha256": "108bdd3d942a894f7151967f665b47bae967b9b9d8e9559bc482832d0ac5b651"
+    },
+    {
+      "path": "Policy Network/type_df_10_policy.p",
+      "git_blob": "786c8a3760f470635b143b6e2135f0ae1c4c9893",
+      "bytes": 10414523,
+      "sha256": "c4e25b986b30fc7ce6b8d124f3c8bdc5eb4cdf707eb3e0763261090b20282e8e"
+    },
+    {
+      "path": "Policy-Explicit/brute_multi_sur_10_policy.p",
+      "git_blob": "636d83e52ddb420376de7c7cf804231931e51b98",
+      "bytes": 208,
+      "sha256": "9a1f85f766f72fcb0952b43954fd6bbe1fdf38753358f32feb2ef15c267165f2"
+    },
+    {
+      "path": "Policy-Explicit/brute_multi_time_10_policy.p",
+      "git_blob": "e91f1801b1fec2b40f2990effc49da5091f9a497",
+      "bytes": 2456,
+      "sha256": "31009de66543842847aa585fd4d208aaf3086a6571fab913371ef44f71357bf1"
+    },
+    {
+      "path": "Policy-Explicit/brute_total_price_10_policy.p",
+      "git_blob": "b275296026ac0bd48bb35dc5039d88e2f2ab592d",
+      "bytes": 30938110,
+      "sha256": "ebc77cae04a51fdd82ffb8e0d2536af559889284a04444e75e2c60688b1079cb"
+    },
+    {
+      "path": "Policy-Explicit/brute_type_df_10_policy.p",
+      "git_blob": "61f572db1f70e1bc5e2b5ee8c0e6ffa20ee420ca",
+      "bytes": 10462201,
+      "sha256": "a7434ab447c82ca24c62dc6baeed78dfd6c23094872ac008f75f8ad6d90d55af"
+    }
+  ],
+  "total_bytes": 98736073,
+  "survivor_summaries": [
+    {
+      "file": "Policy Network/net_multi_sur_10.p",
+      "runs": 100,
+      "mean": 47.41,
+      "sample_sd": 5.492133952621272,
+      "minimum": 35,
+      "maximum": 63
+    },
+    {
+      "file": "Policy Network/net_multi_sur_10_policy.p",
+      "runs": 100,
+      "mean": 33.71,
+      "sample_sd": 6.510744809912149,
+      "minimum": 21,
+      "maximum": 52
+    },
+    {
+      "file": "Policy-Explicit/brute_multi_sur_10_policy.p",
+      "runs": 100,
+      "mean": 35.09,
+      "sample_sd": 5.410604999872608,
+      "minimum": 25,
+      "maximum": 48
+    }
+  ],
+  "notebook_comparison": [
+    {
+      "revision": "26df7d9cbcd75bb8f87b860a593dbd626af0d25e",
+      "path": "Analysis Code/Data Analysis-Groups.ipynb",
+      "sha256": "5192251551aba34aa9a0eab89123f6dba712609505930e9a61b9ce34c4758d84",
+      "cell_index": 19,
+      "cached_text": "Net-Stan t_test:  1.85991277518\nExplixit_Stan t_test:  0.62505566283\n"
+    },
+    {
+      "revision": "26df7d9cbcd75bb8f87b860a593dbd626af0d25e",
+      "path": "Analysis Code/Data Analysis-Groups-Policy.ipynb",
+      "sha256": "95e8b3c090b9f5f38d50dece7a5c5059e5f68960a13de61282f7192573fb6da2",
+      "cell_index": 19,
+      "cached_text": "Net-Stan t_test:  3.36205112848e-31\nExplixit_Stan t_test:  1.76450510948e-28\n"
+    },
+    {
+      "revision": "585e53398f4f58e89ec184c83bb20819f0e4c96a",
+      "path": "Results Analysis Code/Data Analysis-Groups.ipynb",
+      "sha256": "f26e29404dfd60e9c13122a95ab10749225eb0d8bdd475a61bb5d91b28ca0c6b",
+      "cell_index": 19,
+      "cached_text": "Net-Stan t_test:  1.6079982167\nExplixit_Stan t_test:  0.62505566283\n"
+    },
+    {
+      "revision": "585e53398f4f58e89ec184c83bb20819f0e4c96a",
+      "path": "Results Analysis Code/Data Analysis-Groups-Policy.ipynb",
+      "sha256": "aeb94655914854410d2ea08c44d162da3d82dd54a3181c3ba07f2d1275b2510e",
+      "cell_index": 19,
+      "cached_text": "Net-Stan t_test:  2.65406654569e-33\nExplixit_Stan t_test:  1.44650461266e-32\n"
+    }
+  ],
+  "scope": "Deleted pre-rerun author data. Three survivor arrays decoded from primitive opcodes; timing, price and metadata blobs recovered but not scientifically audited. Cached analyses changed after this snapshot; these data are not asserted to be the final published experiments. No new native runs or completed-paper credit."
+}

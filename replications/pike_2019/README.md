@@ -920,3 +920,33 @@ This corrects our source inventory and supplies an exact historical survivor tar
 These files contain neither individual health holdings nor random-generator states; finite prices do not establish finite holdings.
 The one-level and threshold-five historical datasets remain unrecovered.
 Historical model/dependency fidelity and the other claim-level gaps remain unresolved; the paper is still incomplete.
+
+## Deleted pre-rerun datasets recovered
+
+[The historical inventory](results/deleted-data-2026-10-18) recovers twelve more data files from commit `26df7d9`, dated February 1, 2019.
+The next commit, `de1882e`, deletes them. Recovery verifies every Git object ID, byte count and SHA-256 without changing either checkout.
+The twelve files total 98,736,073 bytes and remain in retained external evidence and the author's Git history.
+
+Three survivor arrays decode directly from primitive pickle opcodes, without executing pickle constructors:
+
+| Original file | Runs | Mean survivors | Sample standard deviation |
+| --- | ---: | ---: | ---: |
+| `Policy Network/net_multi_sur_10.p` | 100 | 47.41 | 5.492134 |
+| `Policy Network/net_multi_sur_10_policy.p` | 100 | 33.71 | 6.510745 |
+| `Policy-Explicit/brute_multi_sur_10_policy.p` | 100 | 35.09 | 5.410605 |
+
+Independent R analysis verifies all three sets of summary statistics within 1e-12.
+The associated timing, price, and metadata files are recovered and hash-verified; their scientific contents have not yet been audited.
+These are archival observations, not 300 new simulation runs.
+
+The corresponding grouping notebooks' cached statistical outputs change between this commit and the selected prepublication revision.
+Both versions' hashes and cached text are retained. A later commit explicitly records reruns and analysis.
+These earlier datasets therefore cannot silently replace the final paper targets.
+The missing original standard comparator also prevents reconstructing those cached comparisons from these files alone.
+
+```sh
+python replications/pike_2019/recover_deleted_data.py AUTHOR_CHECKOUT NEW_OUTPUT
+```
+
+The recovery command needs the original Git history and retains all twelve raw blobs.
+Model-version alignment, final experiment provenance, and the remaining paper claims stay unresolved.
