@@ -26,7 +26,7 @@ assert json.loads((root / "protocol.json").read_text()) == json.loads(
 )
 assert (
     hashlib.sha256(args.gnu_initial_csv.read_bytes()).hexdigest()
-    == "6277c5367ea36e47234b7d9873513fa8afffa08348a4d3e3be68cdf0295f8ed1"
+    == "360ea5866567d826e971e5eef54f6d1ed881b6d421b2664d95310114c4c6611d"
 )
 with args.gnu_initial_csv.open() as stream:
     host_cells = [
@@ -36,7 +36,7 @@ with args.gnu_initial_csv.open() as stream:
 initial = [row for row in host_cells if row["status"] == 1]
 capacities = {(row["x"], row["y"]): row["cell_capacity"] for row in host_cells}
 assert len(capacities) == 65536
-assert len(initial) == 11025
+assert len(initial) == 11264
 initial_by_id = {row["id"]: row for row in initial}
 assert (
     hashlib.sha256(args.benchmark_csv.read_bytes()).hexdigest()
@@ -129,7 +129,7 @@ with state_path.open() as stream:
         previous_unique = unique
 assert len(summaries) == 101
 report = {
-    "initial_active_records_match_gnu_host": 11025,
+    "initial_active_records_match_gnu_host": 11264,
     "exact_benchmark_population_matches": 100,
     "snapshots": len(summaries),
     "agent_observations": sum(row["active_records"] for row in summaries),

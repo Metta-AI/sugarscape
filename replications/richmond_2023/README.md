@@ -3,7 +3,8 @@
 Status: **incomplete; full native grid audited, model fidelity under investigation**.
 No completed-study credit. This study adds to the existing replication program.
 [Complete native benchmark](results/full-native-complete-2026-10-18): **84/84 conditions**; all **6,600 population records** and **162 resolution rows** match the author archive exactly.
-The separate state observer completed, but its host initializer reference differs and remains under investigation.
+[The complete state audit](results/state-observer-complete-2026-10-18) reconciles 893,017 observations after resolving a cross-toolchain initializer mismatch.
+It confirms lost wealth/metabolism transfers and unresolved agents omitted from reported population.
 
 Paper: [FLAME GPU 2: A framework for flexible and performant agent based simulation on GPUs](https://doi.org/10.1002/spe.3207).
 Scope: the complete Sugarscape case study, Section 4.3 and Figures 6/11.
@@ -226,8 +227,8 @@ Operational completion alone will not establish full coverage or paper replicati
 ## Agent-state fidelity: pinned-source findings
 
 The [source audit](results/model-rule-source-audit-2026-10-17/audit.json) identifies
-additional rule differences in the exact paper-linked revision. These are static findings;
-no new native state trace or effect estimate is claimed.
+additional rule differences in the exact paper-linked revision. The subsequent
+[complete native state audit](results/state-observer-complete-2026-10-18) validates transfer defects and diagonal movement.
 
 The most consequential finding is in `movement_response` (lines 145–180).
 The winning request updates its ID and priority, but never copies sugar or metabolism
@@ -240,7 +241,7 @@ The movement search uses the pinned engine's eight-neighbor `wrap(x,y)` iterator
 including diagonals. Section 4.3 describes four cardinal directions. The engine also
 provides `vn_wrap`, which this benchmark does not use. Separately, death checks equality
 to zero; the paper describes removing agents with nonpositive wealth. Negative wealth
-occurrence has not yet been measured.
+occurs after movement in the native capture; no negative-wealth-after-metabolism survivors were observed.
 
 Hotspot separation uses toroidal distance, whereas sugar influence uses direct coordinates.
 The paper's distance norm leaves boundary interpretation insufficiently explicit, so this
@@ -265,7 +266,7 @@ It records IDs, positions, statuses, sugar, metabolism, and local resource value
 A subtle measurement distinction is retained: original CSV population counts only
 status `OCCUPIED`, whereas the observer also records unresolved agents.
 Parity must compare the same status subset; total active population is a separate statistic.
-Compilation, parity, and state findings remain unverified until this deferred job finishes.
+The job completed successfully; [state findings and the corrected initializer control](results/state-observer-complete-2026-10-18) are now audited.
 The storage collector is capped at 100 MiB.
 
 ## Figure 6 dependency-structure comparison
@@ -279,7 +280,7 @@ The agent mapping and registered exit condition are retained with source locatio
 
 This establishes structural correspondence only. The exit predicate increments a global counter and tests unresolved agents only below nine.
 At nine or above it returns without testing whether unresolved agents remain.
-The existing passive trace establishes counter carryover; the pending state observer must measure actual unresolved-agent outcomes.
+The existing passive trace establishes counter carryover; the completed state observer records 3,065 unresolved agents at the final step.
 The figure caption's all-resolved guarantee is therefore not established by a matching dependency graph.
 
 The complete study also still requires native Figure 11A–C comparisons and Figure 11D–F visual states.
