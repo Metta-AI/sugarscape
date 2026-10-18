@@ -997,3 +997,51 @@ These archived timings retain their original timer boundaries and unknown hardwa
 The earlier-output provenance remains unchanged; they are not relabeled as the paper's final experiments.
 Finite transaction prices and consistent metadata totals do not resolve the separate nonfinite-holdings finding.
 The initial analysis failed while serializing a NumPy integer count; its source and correction are retained.
+
+## Historical-runtime sensitivity control
+
+[Two completed seed-zero controls](results/historical-runtime-2026-10-18/audit.json)
+use Python 3.6.8, NumPy 1.16.0, SciPy 1.2.0, pandas 0.24.0,
+NetworkX 2.2, and Mesa 0.8.5. These are reconstructed dependency choices,
+not an authenticated author environment. Linux amd64 runs locally under emulation;
+its timings are not performance evidence.
+
+| Variant | Health records | Nonfinite records | First nonfinite step | Final individuals |
+| --- | ---: | ---: | ---: | ---: |
+| Common, one level | 86,143 | 58,278 | 76 | 83 |
+| Common, multiple levels | 89,027 | 61,041 | 76 | 86 |
+
+All 2,000 steps reconcile observed identities with native health records.
+All 13,020 recorded transaction prices remain positive and finite despite invalid holdings.
+Independent R checks reproduce both health counts, nonfinite counts, first failure steps, and terminal populations.
+An archive readback reproduces the complete Python audit byte-for-byte.
+
+Both controls have exactly the same initial agent records and native source hashes
+as their Python 3.11 pilots. The newer-runtime one-level pilot first fails at step 78;
+the multi-level pilot first fails at step 76. Dependency versions and architecture
+change together, so this is not a single-variable attribution experiment.
+Overflow persists in this older stack; it cannot be explained solely by requiring
+our newer Python/NumPy versions. This does not establish a whole-paper negative replication.
+
+The [execution archive](results/historical-runtime-2026-10-18/execution-evidence.tar.gz)
+retains raw output, the executed runner, dependency pins, source proof, audit script,
+and the failed first setup attempt. Its old Git rejected modern `worktreeconfig`
+metadata before simulation. The successful attempt instead verifies pinned revisions
+and clean tracked status with host Git, then verifies all 172 materialized tracked
+files by SHA256 inside read-only container mounts. The simulation and observation
+body remains byte-identical to `run.py` from its Mesa-version assertion onward.
+The container uses one CPU, 3 GiB RAM, and a 600-second limit per simulation.
+
+To audit the retained archive into a new directory:
+
+```sh
+mkdir NEW_READBACK
+tar -xzf replications/pike_2019/results/historical-runtime-2026-10-18/execution-evidence.tar.gz --exclude=runtime002/audit.json -C NEW_READBACK
+python NEW_READBACK/runtime002/audit.py
+Rscript NEW_READBACK/runtime002/verify.R NEW_READBACK/runtime002
+```
+
+The archive includes `execute.sh`, `run.py`, `requirements.txt`, and `protocol.json`
+for execution reconstruction. Install the pinned requirements in the pinned base image;
+the successful execution script reuses dependencies installed by the retained first attempt.
+Source paths and `/evidence` mounts follow the recorded protocol and script.
