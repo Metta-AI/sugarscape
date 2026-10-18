@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T22:47:44.970783+00:00",
+  "as_of": "2026-10-18T22:50:30.789619+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -19,14 +19,14 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "589186fd7f852775217b292b1c62fb0706b270b4",
+      "checked_commit": "c710f03fa8b2254f9eb39e2ddac7d13a3ca1f5b1",
       "status": "partial",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "9091fc0046f271f34ffd374ee6af38f339ea4dd6b7d443952e353739e1cf6879",
-      "json_evidence_files": 292,
-      "remaining_scope": "All 5,000 independent simulations and 750,000 statistics audited. Seven estimator families complete required sizes. Independent neural-network folds 1\u20134 validate 20,000 predictions and 3,020,000 input cells; one fold remains. Bootstrap-forest 5,000-input first fold audited after original four-hour timeout; unchanged folds 2\u20135 continue from saved random state under a 20-hour bound. Table 8 historical discrepancies and full independent estimator comparison remain unresolved; no new completion credit.",
+      "readme_sha256": "583389d2834d71fdd1c6f021b029ec6d414ae9d376e7aed936f3a866fcc1b675",
+      "json_evidence_files": 294,
+      "remaining_scope": "All 5,000 independent simulations and 750,000 statistics audited. Seven estimator families complete required sizes. Independent neural-network folds 1\u20134 validate 20,000 predictions and 3,020,000 input cells; one fold remains. Bootstrap-forest 5,000-input folds 1\u20132 now audited: 10,000 predictions and 1,510,000 input-cell checks. Second-fold input provenance, original partition, errors, coverage and widths pass; archive readback reproduces audit and predictions exactly. Remaining folds 3\u20135 continue from saved random state under the existing 20-hour bound. Historical Table 8 discrepancies and full independent estimator comparison remain unresolved; no new completion credit.",
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T22:02:24.073168+00:00"
+      "checked_at": "2026-10-18T22:50:30.789619+00:00"
     },
     {
       "study": "raimbault_2019",
@@ -56,14 +56,14 @@
     {
       "study": "bigbee_2007",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/7",
-      "checked_commit": "a480e2a0444ca62dc0c1741952a7b3201d48bcbe",
+      "checked_commit": "fb45af8b17f9a407528ecf129385bcc40ba4f3fd",
       "status": "partial",
       "readme": "replications/bigbee_2007/README.md",
-      "readme_sha256": "eeaee9a38183849e6e931cb8e8e4cd02a83e566b745fe31023912da2a0249153",
-      "json_evidence_files": 25,
-      "remaining_scope": "Original MASON10/1.1.2 reproduction fails population accounting from time13. Official GoogleCode catalog confirms recovered1.1.2 checksum and lists only1.1.2/1.1.3. Historical paper revision/protocol alignment remains unresolved; corrected17-scenario behavior is not historical replication. December2008 author-page capture corroborates release1.1.2/MASON12 pairing and displays Nov25,2007 release date. Earlier1/1.1.1 download links recovered, but exact-URL archive availability yielded no package snapshots. Paper-specific MASON10 source remains unidentified.",
+      "readme_sha256": "47c097f5f99bb8f061c772d5b5bcb9b1cf34f47b0b603a89556a04a2aab096a8",
+      "json_evidence_files": 27,
+      "remaining_scope": "Original MASON10/1.1.2 reproduction fails population accounting from time13. Official GoogleCode catalog confirms recovered1.1.2 checksum and lists only1.1.2/1.1.3. Historical paper revision/protocol alignment remains unresolved; corrected17-scenario behavior is not historical replication. December2008 author-page capture corroborates release1.1.2/MASON12 pairing and displays Nov25,2007 release date. Earlier1/1.1.1 download links recovered, but exact-URL archive availability yielded no package snapshots. Paper-specific MASON10 source remains unidentified. Official archived source working copy now audited: revision24, 2011 metadata, MASON16 news. Trunk and branch core files identical; agent/reproduction match1.1.2 after newline normalization. This snapshot is not full SVN history and does not establish the historical model revision.",
       "gzip_json_evidence_files": 3,
-      "checked_at": "2026-10-18T03:15:11.427696+00:00"
+      "checked_at": "2026-10-18T22:50:30.789619+00:00"
     },
     {
       "study": "stevenson_2021",
