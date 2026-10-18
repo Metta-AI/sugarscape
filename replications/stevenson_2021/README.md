@@ -414,3 +414,11 @@ python replications/stevenson_2021/analyze_growth_flows.py /complete/growth-run 
 ## Earlier author specification recovered
 
 [The August 2021 predecessor audit](results/predecessor-source-audit-2026-10-18) supports the implemented action order and delayed newborn activation. Its birth-cost sensitivity uses a later 130,000–150,000-cycle window, outside our existing ensembles. This does not establish the target paper’s sampling protocol. Evolutionary inheritance/update rules and historical implementation remain unresolved; no acceptance rule or simulator behavior changed.
+
+## Evolutionary initialization constrained by the original figure
+
+[Figure 4 vector extraction](results/figure4-vector-constraints-2026-10-18) retains 22 curves and 4,015 vertices.
+Both ten-trait marginal count sets independently imply 830 initial agents, with unequal per-trait counts and plotted zero initial wealth.
+This differs from the one-agent fixed-society growth initialization; that initialization cannot be reused unchanged for Figure 4.
+The exported observations cover approximately generations 0–499. Gray curves do not individually label their alternative trait values.
+Joint trait assignments, inheritance, mutation, placement, ages, and generation-to-cycle mapping remain unresolved; these constraints do not complete the study.
