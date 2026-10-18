@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T06:07:39.119101+00:00",
+  "as_of": "2026-10-18T06:43:00.265536+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -19,14 +19,14 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "bbc2b02f8d3f68219b3e3b530beee1a4469b89cc",
+      "checked_commit": "06a7b5b3bf382b6f5da75e8d4655088c8b4acd9b",
       "status": "partial",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "72c210fcd59d29ae95343ff96c81c58013b71fab9ea0fa663d0213bf08f88a6e",
-      "json_evidence_files": 208,
-      "remaining_scope": "All 5000 independent inputs audited with 750000 recomputed statistics. Independent linear regression at both sizes, rejection ABC1250 and degree-one ABC1250 validated. Remaining independent estimators and interpretation are unfinished. Table8 retains38 printed matches and37 unresolved discrepancies among75 computed values;15 cells published NA. Historical estimator fidelity remains unresolved.",
+      "readme_sha256": "b15087d5e2c376c97ddcaf2a18b6257de73155434596c57a457e330725ff357e",
+      "json_evidence_files": 231,
+      "remaining_scope": "All5000 independent simulations and750000 statistics audited. Independent LM, rejection ABC and degree-one ABC at both sizes, plus RF1250 audited. RF5000 and degree-four ABC5000 running; other estimators and historical Table8 discrepancy attribution remain. A mistaken1250 degree-four launch is preserved separately; that paper cell is NA.",
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T05:55:34.659957+00:00"
+      "checked_at": "2026-10-18T06:43:00.265536+00:00"
     },
     {
       "study": "raimbault_2019",
@@ -43,14 +43,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "ce0b24fe51094aab2d0c43650c9e2e7660d9aaef",
+      "checked_commit": "446696a92fc902651afb7c66fb5ce5a80597d684",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "424a90e4de1ed2e497fdbab50f3f65ab8a44c52105fc9c4ef2679da486ac0f00",
-      "json_evidence_files": 513,
-      "remaining_scope": "1694/2000 homogeneous inputs and854/1200 runtime inputs audited. Homogeneous coverage:500 Altruist,500 Raw,481 Egoistic,213 Bentham. Eight parallel Bentham timeouts retained without credit. Low-half Bentham50000 failed with SIGKILL; cause unproven and retry pending. Full remaining ensembles, sweeps and runtime schedule discrepancy remain.",
+      "readme_sha256": "7fc6f1f5850f9f94b2461fa895944d3f83e12bcd74e7272618a83f514d8dcfcd",
+      "json_evidence_files": 522,
+      "remaining_scope": "1700/2000 homogeneous and854/1200 runtime inputs audited:500 Altruist,500 Raw,487 Egoistic,213 Bentham. Remaining13 Egoistic inputs running. Bentham low50000 retry rebuilt on fresh32GiB node after unrecoverable provider disk loss and correcting an omitted runner-schema model. No unaudited or timed-out output counted. Full ensembles, sweeps and runtime schedule discrepancy remain.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T05:55:34.659957+00:00"
+      "checked_at": "2026-10-18T06:43:00.265536+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -218,15 +218,15 @@
     {
       "study": "openabl_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/20",
-      "checked_commit": "a02bb6783f23998fecb08ab4b74c35f39f8565e2",
+      "checked_commit": "cc7a6c410d4afaacf4eeeba41d543a06d3f545a6",
       "status": "partial",
       "readme": "replications/openabl_2021/README.md",
-      "readme_sha256": "c34150874312bb1193fce550d4908f703a930b0ca55d4e5bfdd10fc75618020f",
-      "json_evidence_files": 7,
+      "readme_sha256": "f75544b631c244359bb13242a52fc2c825816736f8b1426a48b22b4c500a4d23",
+      "json_evidence_files": 23,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T06:07:39.119101+00:00",
+      "checked_at": "2026-10-18T06:43:00.265536+00:00",
       "evidence_scan_scope": "All JSON files under replications/openabl_2021",
-      "remaining_scope": "Compiler and generated C build;225-cell100-step native/control runs replay1800 fields exactly each. Released C stale-buffer behavior diagnosed. Historical revision, dependencies, initialization, remaining backends, figure targets and full performance/scaling remain unverified."
+      "remaining_scope": "All seven published C sizes execute100 steps;502648 initial and final fields independently match. All seven copy-buffer controls match another502648 final fields. Compiler constant-precision correction validates2032072 initialization fields across ten sizes. Historical FLAME GPU345-line count reproduced; OpenABL154 unresolved. Full native MASON initialization, remaining backend validation, historical timing and distributed scaling remain. Ongoing MASON controls are not included in this pinned snapshot."
     }
   ],
   "study_prs": 17,
