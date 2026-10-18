@@ -46,3 +46,30 @@ python replications/lima_2024/audit_snapshot.py \
   replications/lima_2024/results/native-snapshot-2026-10-18/snapshot-001.jsonl \
   /new/audit.json
 ```
+
+## Complete container scenario
+
+[Native evidence and audits](results/container-complete-2026-10-18) verify both
+NetLogo trajectories: ticks 0–999 in order, with final-output markers. Every one
+of 799 registered agents is accounted for exactly once at shutdown: 243 model-1
+survivors, 240 model-2 survivors, 315 queued agents and one active miner.
+All 1,013 router deliveries match their destination records. All 12 JaCaMo
+creation messages reconstruct the exact incoming identity, history, sugar,
+metabolism and vision; 11 agents returned from JaCaMo.
+
+The dashboard was opened at `http://127.0.0.1:20080/dashboard/` using the named
+agent-browser session `sugarscape-lima-001`. Searching model 1 for agent 399 and
+clicking its file button displayed the exported 9,491-byte AgentSpeak file
+exactly. Its hash and a screenshot are retained. Empty database ASL-path fields
+do not mean the separately stored file is absent.
+
+The host-GUI scenario remains separate and incomplete. AgentSpeak file reload
+after a return to JaCaMo is also unvalidated: this run's 12 creations all used
+the default file. These observations do not complete the paper.
+
+Extract `native-evidence.tar.gz` to a fresh directory, then run both auditors:
+
+```sh
+python replications/lima_2024/audit_snapshot.py /run/snapshot-final.jsonl /new/snapshot-audit.json
+python replications/lima_2024/audit_native.py /run /new/native-audit.json
+```
