@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T04:20:24.302863+00:00",
+  "as_of": "2026-10-18T05:12:48.530539+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -42,14 +42,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "2a4094cc04e0ca38690835a551011aebba720ebd",
+      "checked_commit": "d68cdbf2093e4ee9fd8aa3a2662e610bf566b3ee",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "b4ead219ab9c61a56a58ece69fee5c465f8884876bdf909045a06f50689fe290",
-      "json_evidence_files": 437,
-      "remaining_scope": "1,592/2,000 homogeneous inputs and 854/1,200 runtime inputs audited. Qualified 32-worker Bentham continuation active. Full sweeps and runtime schedule discrepancy remain.",
+      "readme_sha256": "727a3fc546bc10932c8fe1b0b62bb4e44215e50667ace54adfc5923926db9cc3",
+      "json_evidence_files": 469,
+      "remaining_scope": "1,621/2,000 homogeneous inputs and 854/1,200 runtime inputs audited. Parallel Bentham adds 29 full inputs; five timeouts retained without credit. Full remaining ensembles, sweeps and runtime schedule discrepancy remain.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T03:15:11.427696+00:00"
+      "checked_at": "2026-10-18T05:12:48.530539+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -169,14 +169,14 @@
     {
       "study": "thaler_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
-      "checked_commit": "7a76c1a50ef877917275e10eb0b49440d914e5e7",
+      "checked_commit": "05644f7500e9e4ca23e0fae02e4fabb16adff81c",
       "status": "running",
       "readme": "replications/thaler_2019/README.md",
-      "readme_sha256": "00b12699a144fe427d5fdb907b27ab5cdfb931dfc46458e78beaaf208b21e454",
-      "json_evidence_files": 124,
+      "readme_sha256": "2a8818de1cb2700bf5f8dab2d4852c8d423680e2f24d350721573adb60e27521",
+      "json_evidence_files": 148,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "All 225 population processes across 45 conditions and all 90 retry processes across 18 conditions audited. Table6 complete; 16/20 Table8 timings audited, continuation active. Two of six Table9 timings audited; remaining timings and thirty retry processes required. Figure5a state fidelity remains unresolved.",
-      "checked_at": "2026-10-18T04:20:24.302863+00:00"
+      "remaining_scope": "All225 population and90 original retry processes audited. Tables6/8:43/45 timings audited. Table9:all6 timings and30 retry processes audited. Normal32 retry ratio .086126 versus published .29 remains unexplained after counter-source inspection. Two Table8 conditions, Figure5a fidelity and discrepancy interpretation remain.",
+      "checked_at": "2026-10-18T05:12:48.530539+00:00"
     },
     {
       "study": "thaler_properties_2019",
@@ -206,13 +206,13 @@
       "study": "lima_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/19",
       "status": "partial",
-      "checked_commit": "2593c1a684e4d293eccd28985a2ef9bd7ab01d04",
+      "checked_commit": "043d70331d49a79c1eb10631b7ae86e8bade204c",
       "readme": "replications/lima_2024/README.md",
-      "readme_sha256": "ae8e03820022492a6fa0d75d9c9d16deca3726052e1365c4e737dbeff7f314f1",
-      "json_evidence_files": 26,
+      "readme_sha256": "459ae8a7691143ac833240f487136349d2ebd226395a54bd69a4c216296ef005",
+      "json_evidence_files": 50,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "Original container and host-native 1000-step trajectories and checkpoint-control conservation audited. Native reload preserves beliefs/plans but fails the predeclared score increment through author departure-trigger behavior. GUI visual proof and portable execution setup remain outstanding. Packaged host attempt002 lost unarchived trajectories through a collector error; no credit. Corrected collection verified.",
-      "checked_at": "2026-10-18T04:20:24.302863+00:00"
+      "remaining_scope": "Original and portable container, host-native and checkpoint-control trajectories audited. Portable control:953 deliveries,799 conserved identities,39 preserved plans; score remains1 instead of2. Portable execution verified. Visible GUI, historical runtime fidelity and lifecycle interpretation remain unresolved; failed collection gets no trajectory credit.",
+      "checked_at": "2026-10-18T05:12:48.530539+00:00"
     }
   ],
   "study_prs": 17,
