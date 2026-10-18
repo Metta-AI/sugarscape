@@ -5,6 +5,8 @@ Scope: Sugarscape case study only; conclusions across all 41 models are outside 
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
 **Not a completed replication:** estimator discrepancies and the final independent-simulator audit remain unresolved.
 
+The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. Its 5,000-input counterpart remains ongoing.
+
 ## Complete simulation replay
 
 [The complete replay](results/full-author-replay-2026-10-15) reconstructs all 750,000 archived statistics from 5,000 fresh trajectories.
