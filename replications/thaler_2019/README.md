@@ -562,3 +562,26 @@ python replications/thaler_2019/audit_state.py PAPER_PDF NEW_GRAPHICAL_READBACK/
 The image audit requires the previously documented PyMuPDF/NumPy environment.
 The native control ran under Linux amd64 emulation with one CPU, 3 GiB RAM,
 and a 1,200-second outer bound. No timing evidence is inferred from it.
+
+### Native timing checkpoint: 39 of 45 conditions
+
+[The sealed checkpoint and independent audit](results/native-timing-prefix39-2026-10-18)
+validate 39 conditions and 156 raw Criterion measurements.
+All 33 previously published conditions and all 36 previously audited conditions match exactly.
+The six newly published conditions add 24 raw measurements, all accepted on their first attempt.
+Independent slopes differ from native reports by at most 1.43e-13 seconds; R-squared values match exactly.
+
+| Rebirth implementation | Agents | Seconds per iteration |
+| --- | ---: | ---: |
+| IO, four capabilities | 1,000 | 39.174976 |
+| TArray, four capabilities | 1,000 | 12.010648 |
+| TArray, four capabilities | 500 | 8.910838 |
+| Sequential | 1,000 | 87.681205 |
+| IO, four capabilities | 2,000 | 54.788658 |
+| TArray, four capabilities | 1,500 | 12.941219 |
+
+Table 6 remains fully covered; Table 8 now covers fourteen of twenty conditions.
+The remaining six timing conditions, subsequent population/retry ensembles,
+Table 9 and the unresolved graphical-source questions remain required.
+This is partial timing coverage on different hardware, not whole-paper completion.
+The live original process was checked without restarting any condition.
