@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T21:47:00.671510+00:00",
+  "as_of": "2026-10-18T21:52:33.309273+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -67,14 +67,14 @@
     {
       "study": "stevenson_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8",
-      "checked_commit": "cad0f681dce296149b163671087671e3d7f49973",
+      "checked_commit": "55f503c1ad880ce1ae6b27a11b34d96b62d5dfa2",
       "status": "partial",
       "readme": "replications/stevenson_2021/README.md",
-      "readme_sha256": "c5159396ca527c998d79bf40056c269dd6de2ebfab66f1cc70d813cd4c6ebce6",
-      "json_evidence_files": 55,
-      "remaining_scope": "Two 100-seed fixed-scenario ensembles and all 80 boundary-sensitivity runs complete. Strict wealth thresholds change age but do not resolve both scenarios. Figure6b vector/forward diagnostics document equation normalization and chaotic rounding sensitivity, not historical replication. Historical semantics, evolution, Figure3, and AppendixB agent-model comparisons remain incomplete. Preceding arXiv2101.09817v2 supports action order and delayed newborn activation, but uses 130000\u2013150000 cycles for related birth-cost sensitivity. This is not adopted as the target window. Four GitHub metadata queries recovered no author implementation; evolutionary rules remain unresolved. Original Figure 4 extraction now retains 22 curves and 4,015 vertices. Both trait-count marginals independently imply 830 initial agents, unlike the one-agent fixed-society growth initialization. Gray-curve trait identities, joint assignments, inheritance, mutation and generation-to-cycle mapping remain unresolved.",
+      "readme_sha256": "26dd2af3dc8af6ce2fec6ac721e70c1b910b443238d7fe095e3d289d9407e2bc",
+      "json_evidence_files": 62,
+      "remaining_scope": "Two 100-seed fixed-scenario ensembles and all 80 boundary-sensitivity runs complete. Strict wealth thresholds change age but do not resolve both scenarios. Figure6b vector/forward diagnostics document equation normalization and chaotic rounding sensitivity, not historical replication. Historical semantics, evolution, Figure3, and AppendixB agent-model comparisons remain incomplete. Preceding arXiv2101.09817v2 supports action order and delayed newborn activation, but uses 130000\u2013150000 cycles for related birth-cost sensitivity. This is not adopted as the target window. Four GitHub metadata queries recovered no author implementation; evolutionary rules remain unresolved. Original Figure 4 extraction now retains 22 curves and 4,015 vertices. Both trait-count marginals independently imply 830 initial agents, unlike the one-agent fixed-society growth initialization. Gray-curve trait identities, joint assignments, inheritance, mutation and generation-to-cycle mapping remain unresolved. Conditional stable evolution now implemented: 100 seeds, 50,000 cycles, 3,194,850 audited inheritance events, two byte-exact homogeneous parity gates. All runs fix infertility10/birthcost0 by cycle499; means population856.38, age12.7652, wealth492.55, Gini.693396. Original rules, chaotic evolution, growth-rate and steady-state replication remain unresolved; no completion credit.",
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T21:47:00.671510+00:00"
+      "checked_at": "2026-10-18T21:52:33.309273+00:00"
     },
     {
       "study": "buzing_2005",
