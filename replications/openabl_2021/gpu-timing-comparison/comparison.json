@@ -1,0 +1,170 @@
+{
+  "conditions": [
+    {
+      "requested_cells": 250,
+      "published_seconds": 1.402959111250213,
+      "native_wall_seconds": 0.58,
+      "engine_reported_seconds": 0.09598076600000001,
+      "native_over_published": 0.41341190584175114
+    },
+    {
+      "requested_cells": 500,
+      "published_seconds": 1.1960569311226428,
+      "native_wall_seconds": 0.6,
+      "engine_reported_seconds": 0.152232452,
+      "native_over_published": 0.5016483617020037
+    },
+    {
+      "requested_cells": 1000,
+      "published_seconds": 1.3099995318506368,
+      "native_wall_seconds": 0.69,
+      "engine_reported_seconds": 0.246878723,
+      "native_over_published": 0.5267177454828833
+    },
+    {
+      "requested_cells": 2000,
+      "published_seconds": 1.5657740421655566,
+      "native_wall_seconds": 0.9,
+      "engine_reported_seconds": 0.447645477,
+      "native_over_published": 0.5747955808203639
+    },
+    {
+      "requested_cells": 4000,
+      "published_seconds": 2.09686281894053,
+      "native_wall_seconds": 1.31,
+      "engine_reported_seconds": 0.835337769,
+      "native_over_published": 0.6247428244552004
+    },
+    {
+      "requested_cells": 8000,
+      "published_seconds": 2.923949718031077,
+      "native_wall_seconds": 2.15,
+      "engine_reported_seconds": 1.635927124,
+      "native_over_published": 0.7353067621996462
+    },
+    {
+      "requested_cells": 16000,
+      "published_seconds": 4.820908128324104,
+      "native_wall_seconds": 3.86,
+      "engine_reported_seconds": 3.2542983399999996,
+      "native_over_published": 0.8006790208926579
+    },
+    {
+      "requested_cells": 32000,
+      "published_seconds": 8.991794531331015,
+      "native_wall_seconds": 7.22,
+      "engine_reported_seconds": 6.459838867,
+      "native_over_published": 0.8029542906972158
+    },
+    {
+      "requested_cells": 64000,
+      "published_seconds": 17.02921570620642,
+      "native_wall_seconds": 13.87,
+      "engine_reported_seconds": 12.789342773,
+      "native_over_published": 0.8144826067911618
+    },
+    {
+      "requested_cells": 128000,
+      "published_seconds": 32.62415568602816,
+      "native_wall_seconds": 27.81,
+      "engine_reported_seconds": 26.086669922000002,
+      "native_over_published": 0.8524358535939092
+    },
+    {
+      "requested_cells": 256000,
+      "published_seconds": 64.72738366354375,
+      "native_wall_seconds": 58.45,
+      "engine_reported_seconds": 55.444558594,
+      "native_over_published": 0.9030181152358342
+    },
+    {
+      "requested_cells": 512000,
+      "published_seconds": 128.87458333874866,
+      "native_wall_seconds": 114.75,
+      "engine_reported_seconds": 108.986984375,
+      "native_over_published": 0.890400550885802
+    },
+    {
+      "requested_cells": 1024000,
+      "published_seconds": 256.0038556974543,
+      "native_wall_seconds": 230.14,
+      "engine_reported_seconds": 218.78653125,
+      "native_over_published": 0.898970835314214
+    }
+  ],
+  "input_logs": [
+    {
+      "requested_cells": 250,
+      "log": "gpu-condition/native-evidence.tar.gz:qualification.log",
+      "sha256": "2ea7c0a3fca76e8d5d2492106347175adf391d1508c1140d92150f197e746edc"
+    },
+    {
+      "requested_cells": 500,
+      "log": "gpu-grid/native-source-readback/cells-500/run.log",
+      "sha256": "03c495954b3125a330239a1892f658d862ab45841a23189bb43244ea23905035"
+    },
+    {
+      "requested_cells": 1000,
+      "log": "gpu-grid/native-source-readback/cells-1000/run.log",
+      "sha256": "a26c95b8e81a3f643ddf72d7947fb98a8d50f59db2f8b59c5f3ba833e02cd8cb"
+    },
+    {
+      "requested_cells": 2000,
+      "log": "gpu-grid/native-source-readback/cells-2000/run.log",
+      "sha256": "b0f9f37f2c319a8522fe214c858324a81a8f43e4b632ebf209c53264bb97b6b1"
+    },
+    {
+      "requested_cells": 4000,
+      "log": "gpu-grid/native-source-readback/cells-4000/run.log",
+      "sha256": "b7d9e7b0b056a60cc7b36c61256c61e5e965176f25c96380db60de0e32805767"
+    },
+    {
+      "requested_cells": 8000,
+      "log": "gpu-grid/native-source-readback/cells-8000/run.log",
+      "sha256": "8054a39a411f9fc896098d751021c2471531ad380c7c686dc499fd71f56e1d14"
+    },
+    {
+      "requested_cells": 16000,
+      "log": "gpu-grid/native-source-readback/cells-16000/run.log",
+      "sha256": "e0abfab531e135f8aaa4e4add7eac647a5ec807e41fa2f679b0f6a6fa38dd4d6"
+    },
+    {
+      "requested_cells": 32000,
+      "log": "gpu-grid/native-source-readback/cells-32000/run.log",
+      "sha256": "42b08837931a93dea09af21a42b337a102eeb06e309f7676c6a94c96ccac27f2"
+    },
+    {
+      "requested_cells": 64000,
+      "log": "gpu-grid/native-source-readback/cells-64000/run.log",
+      "sha256": "aad4f7ea55733bc680ed9e338f53de27628882598e2fd806c19e8f8a5a894f51"
+    },
+    {
+      "requested_cells": 128000,
+      "log": "gpu-grid/native-source-readback/cells-128000/run.log",
+      "sha256": "30cf1f303643f05c6d453040c6fa2916da5a429ff5bc830cced5f26eaa8939e0"
+    },
+    {
+      "requested_cells": 256000,
+      "log": "gpu-grid/native-source-readback/cells-256000/run.log",
+      "sha256": "34acfcec1a10db0069ddfd494778e903973e9f352b31989c7da01d2bf76a1767"
+    },
+    {
+      "requested_cells": 512000,
+      "log": "gpu-grid/native-source-readback/cells-512000/run.log",
+      "sha256": "7af83b9cd1c7e3af92621c678bcd6fd65207095625bda3d2dbe7e2f16a2e8001"
+    },
+    {
+      "requested_cells": 1024000,
+      "log": "gpu-grid/native-source-readback/cells-1024000/run.log",
+      "sha256": "f3b3a510d06d25c97391b430b52025cea834a3ec7354438c697cc974dafdc81b"
+    }
+  ],
+  "paper_targets_sha256": "ebcb21ea65010a4b2e2b2012ebc992d8882ed8482e8f8c57a21eece66356b56e",
+  "qualification_archive_sha256": "ddf8a17a1503424fba48ff105f1691089feb503bc709bff9ca458f423cd4323e",
+  "historical_hardware": "Intel i5-4690K / Titan Xp; paper configuration",
+  "native_hardware": "H100; retained CPU and storage runtime differ from the paper",
+  "native_repetitions_per_condition": 1,
+  "timing_scope": "Whole runner subprocess, including initialization and per-step XML. Engine-reported CUDA-event span also encloses the XML-writing loop; it is not kernel-only time.",
+  "limitations": "Different hardware/toolchain; source revision not proven historical; no timing uncertainty estimated from one observation; ratios are descriptive, not a replication verdict.",
+  "completed_study": false
+}

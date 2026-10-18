@@ -1,0 +1,32 @@
+--- native/Agent.java
++++ ordered/Agent.java
+@@ -122,6 +122,9 @@
+             int best_sugar_level = (-1);
+             Double2D best_pos = new Double2D(0, 0);
+             Bag _bag = _sim.env.getNeighborsExactlyWithinDistance(in.pos, Sim.radius);
++            java.util.Arrays.sort(_bag.objs, 0, _bag.numObjs,
++                java.util.Comparator.comparingDouble((Object a) -> ((Agent) a).getInState().pos.x)
++                    .thenComparingDouble(a -> ((Agent) a).getInState().pos.y));
+             for (int _var0 = 0; _var0 < _bag.size(); _var0++) {
+                 Object _agent = _bag.get(_var0);
+                 Agent.State nx = ((Agent) _agent).getState(currentState);
+@@ -159,6 +162,9 @@
+             int best_sugar_level = (-1);
+             int best_metabolism = (-1);
+             Bag _bag = _sim.env.getNeighborsExactlyWithinDistance(in.pos, Sim.radius);
++            java.util.Arrays.sort(_bag.objs, 0, _bag.numObjs,
++                java.util.Comparator.comparingDouble((Object a) -> ((Agent) a).getInState().pos.x)
++                    .thenComparingDouble(a -> ((Agent) a).getInState().pos.y));
+             for (int _var1 = 0; _var1 < _bag.size(); _var1++) {
+                 Object _agent = _bag.get(_var1);
+                 Agent.State nx = ((Agent) _agent).getState(currentState);
+@@ -197,6 +203,9 @@
+         if ((in.state == Sim.AGENT_STATE_MOVEMENT_REQUESTED)) {
+             boolean moved = false;
+             Bag _bag = _sim.env.getNeighborsExactlyWithinDistance(in.pos, Sim.radius);
++            java.util.Arrays.sort(_bag.objs, 0, _bag.numObjs,
++                java.util.Comparator.comparingDouble((Object a) -> ((Agent) a).getInState().pos.x)
++                    .thenComparingDouble(a -> ((Agent) a).getInState().pos.y));
+             for (int _var2 = 0; _var2 < _bag.size(); _var2++) {
+                 Object _agent = _bag.get(_var2);
+                 Agent.State nx = ((Agent) _agent).getState(currentState);

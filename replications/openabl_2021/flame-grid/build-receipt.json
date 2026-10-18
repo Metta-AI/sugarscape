@@ -1,0 +1,17 @@
+{
+  "xparser_commit": "a6239f90b42beb34352486e638a4332cf83e97fb",
+  "libmboard_commit": "5fd34e83b932dcda5bb6c177277b8557fbe01229",
+  "selection": "Latest source commits before paper acceptance, not verified author dependency revisions.",
+  "portability": "GCC16-fcommon preserves historical tentative-definition linking; no scientific model edits.",
+  "failures": [
+    "Missing FLAME_XPARSER_DIR caused template lookup failure.",
+    "GCC16 default linking rejected41 duplicate common symbols."
+  ],
+  "completed_study": false,
+  "sha256": {
+    "/Users/relh/Code/workspace/sugarscape-openabl-xparser-reference/xparser": "d27d85bcb8e04405c93584e050e68409db1f9334fb1edf1c3c174fcf0f72c20c",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-flame-build-001/libmboard-install/lib/libmboard_s.a": "f45dbbced41dca345f46ddb05beb6d3a48a20d0aebe8adaae5f9a40888260aae",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-flame-build-001/generated-common/main": "cbd9b0f4896088d8a78b18e86c38aac977ddcc271e4ce07adf9648b3f6574d7b",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-flame-build-001/generated-common/runner": "9d525b36d9af5f7e79c54f8c73c04f5dfb5fe579dbb8580073f7e8a4ba949e53"
+  }
+}

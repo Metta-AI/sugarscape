@@ -1,0 +1,37 @@
+--- native/LocalTestSim.java
++++ observed/LocalTestSim.java
+@@ -21,7 +21,7 @@
+     private static String port="61616"; //port of activemq
+     private static String topicPrefix="SIM-NAME"; //unique string to identify topics for this simulation 
+     private static int MODE = DistributedField2D.UNIFORM_PARTITIONING_MODE;
+-    public static void main(String[] args) {
++    public static void main(String[] args) throws InterruptedException {
+         ActiveMQStarter starter = new ActiveMQStarter();
+         starter.startActivemq();
+         System.setProperty("org.apache.activemq.SERIALIZABLE_PACKAGES", "*");
+@@ -30,6 +30,7 @@
+             public worker(Sim sim) {
+                 this.sim = sim;
+                 sim.start();
++                Observer.snapshot(sim, "initial");
+             }
+             public void run() {
+                 if (graphicsOn) {
+@@ -37,7 +38,7 @@
+                 } else {
+                     sim.run();
+                 }
+-                System.exit(0);
++                Observer.snapshot(sim, "final");
+             }
+         }
+         ArrayList<worker> myWorker = new ArrayList<worker>();
+@@ -68,6 +69,8 @@
+             for (worker w : myWorker) {
+                 w.start();
+             }
++            for (worker w : myWorker) w.join();
++            System.exit(0);
+         }
+     }
+     

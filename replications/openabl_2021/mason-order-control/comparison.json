@@ -1,0 +1,17 @@
+{
+  "steps": 100,
+  "cells": 225,
+  "control": "Sort each of three MASON near-query results by fixed cell x,y before traversing; all stage rules and shared initialization remain unchanged.",
+  "results": {
+    "initial": {
+      "fields_compared": 1800,
+      "differences": []
+    },
+    "final": {
+      "fields_compared": 1800,
+      "differences": []
+    }
+  },
+  "interpretation": "If all fields match, traversal order accounts for the observed final-state mismatch in this controlled condition only. No historical timing or full-study verdict.",
+  "completed_study": false
+}

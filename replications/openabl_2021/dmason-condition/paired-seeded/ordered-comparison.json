@@ -1,0 +1,32 @@
+{
+  "counts": {
+    "ordered-native-4000": {
+      "initial": {
+        "records": 3969,
+        "unique_cells": 3969,
+        "occupied_cells": 387
+      },
+      "final": {
+        "records": 4999,
+        "unique_cells": 3969,
+        "occupied_cells": 297
+      }
+    },
+    "ordered-hash-4000": {
+      "initial": {
+        "records": 3969,
+        "unique_cells": 3969,
+        "occupied_cells": 387
+      },
+      "final": {
+        "records": 3969,
+        "unique_cells": 3969,
+        "occupied_cells": 297
+      }
+    }
+  },
+  "initial_fields_matched_per_condition": 31752,
+  "ordered_final_field_differences": 0,
+  "scope": "Seed-matched and position-ordered diagnostic controls; no historical timing verdict.",
+  "completed_study": false
+}

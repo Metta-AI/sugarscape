@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/opt/homebrew/bin/gtimeout",
+    "--signal=TERM",
+    "--kill-after=10",
+    "45",
+    "bash",
+    "run.sh"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 3.066648666979745,
+  "java": "/opt/homebrew/opt/openjdk@17/bin",
+  "jar": "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-dmason-qualification-001/dependency/DMASON-3.2.jar",
+  "resources": "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-dmason-qualification-001/dependency/resources"
+}

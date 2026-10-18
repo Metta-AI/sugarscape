@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/initialize.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-gpu-published-grid-001/audit-1024000/initial.json",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-gpu-published-grid-001/audit-1024000/initialization-audit.json",
+    "--requested-cells",
+    "1024000"
+  ],
+  "exit_code": 0,
+  "stdout": "Matched 8176968 initialization fields using 2146751 draws\n",
+  "stderr": ""
+}

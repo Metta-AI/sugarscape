@@ -1,0 +1,14 @@
+{
+  "bytes": 30015,
+  "sha256": "9b72e71087d5425d3f66a1d555413a8acbffc6003124d8a02942d594d5436ebf",
+  "members_byte_verified": 25,
+  "dependency": "MASON19 jar retained externally; URL and hash in comparison.json.",
+  "java": "/opt/homebrew/opt/openjdk@17/bin/java",
+  "commands": [
+    "javac -cp MASON_JAR:. *.java",
+    "java -cp MASON_JAR:. Sim",
+    "javac -cp MASON_JAR:. Replay.java",
+    "java -cp MASON_JAR:. Replay"
+  ],
+  "completed_study": false
+}

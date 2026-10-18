@@ -1,0 +1,210 @@
+{
+  "workflows": [
+    {
+      "mode": "stale",
+      "requested_cells": 500,
+      "fields": 3872,
+      "seconds": 0.14982574997702613,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/500/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/500/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/stale-500.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "stale"
+      ]
+    },
+    {
+      "mode": "stale",
+      "requested_cells": 1000,
+      "fields": 7688,
+      "seconds": 0.20436608299496584,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/1000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/1000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/stale-1000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "stale"
+      ]
+    },
+    {
+      "mode": "stale",
+      "requested_cells": 2000,
+      "fields": 15488,
+      "seconds": 0.2554485000146087,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/2000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/2000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/stale-2000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "stale"
+      ]
+    },
+    {
+      "mode": "stale",
+      "requested_cells": 4000,
+      "fields": 31752,
+      "seconds": 0.49439545802306384,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/4000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/4000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/stale-4000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "stale"
+      ]
+    },
+    {
+      "mode": "stale",
+      "requested_cells": 8000,
+      "fields": 63368,
+      "seconds": 0.9785074999963399,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/8000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/8000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/stale-8000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "stale"
+      ]
+    },
+    {
+      "mode": "stale",
+      "requested_cells": 16000,
+      "fields": 127008,
+      "seconds": 1.8706707920064218,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/16000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/16000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/stale-16000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "stale"
+      ]
+    },
+    {
+      "mode": "stale",
+      "requested_cells": 32000,
+      "fields": 253472,
+      "seconds": 3.6973499589948915,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/32000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-published-grid-001/32000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/stale-32000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "stale"
+      ]
+    },
+    {
+      "mode": "copy",
+      "requested_cells": 500,
+      "fields": 3872,
+      "seconds": 0.3125240829831455,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/500/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/500/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/copy-500.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "copy"
+      ]
+    },
+    {
+      "mode": "copy",
+      "requested_cells": 1000,
+      "fields": 7688,
+      "seconds": 0.5098750409961212,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/1000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/1000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/copy-1000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "copy"
+      ]
+    },
+    {
+      "mode": "copy",
+      "requested_cells": 2000,
+      "fields": 15488,
+      "seconds": 0.9945289580209646,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/2000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/2000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/copy-2000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "copy"
+      ]
+    },
+    {
+      "mode": "copy",
+      "requested_cells": 4000,
+      "fields": 31752,
+      "seconds": 1.9794075000099838,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/4000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/4000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/copy-4000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "copy"
+      ]
+    },
+    {
+      "mode": "copy",
+      "requested_cells": 8000,
+      "fields": 63368,
+      "seconds": 3.995053666003514,
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-openabl/replications/openabl_2021/replay.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/8000/initial.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-c-copy-grid-001/8000/final.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/openabl-grid-replay-validation-002/copy-8000.json",
+        "--steps",
+        "100",
+        "--buffer",
+        "copy"
+      ]
+    }
+  ],
+  "scope": "Complete 100-step replay against native snapshots. No timing equivalence claim.",
+  "completed_study": false
+}

@@ -1,0 +1,11 @@
+{
+  "openabl_revision": "eb08ef86df0b9c0532cb8fd6b714bde5e8551923",
+  "flamegpu_candidate_revision": "71ed81b1045581698f3618c585ee78ca0128c537",
+  "timing_scope": "src/main.cpp lines300-309 measures whole run.sh subprocess; initialization and XML output are included.",
+  "released_runner": "./main iterations/0.xml 100; no XML output frequency argument",
+  "flamegpu_default": "OUTPUT_TO_XML 1; output every iteration by default",
+  "qualification_decision": "Preserve default XML output for initial 250-requested-cell,100-step qualification. Do not silently suppress output in historical timing comparison.",
+  "historical_author_engine_revision_verified": false,
+  "gpu_job_launched": false,
+  "completed_study": false
+}

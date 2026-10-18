@@ -1,0 +1,29 @@
+--- native/functions.c
++++ ordered/functions.c
+@@ -131,7 +131,7 @@
+             if (glm::distance(nx_pos, in_pos) >= radius) continue;
+             {
+                 if ((nx_pos == in_pos)) continue;
+-                if (((movement_request_message_message->state == AGENT_STATE_UNOCCUPIED) && (movement_request_message_message->env_sugar_level > best_sugar_level))) {
++                if (((movement_request_message_message->state == AGENT_STATE_UNOCCUPIED) && ((movement_request_message_message->env_sugar_level > best_sugar_level) || ((movement_request_message_message->env_sugar_level == best_sugar_level) && ((nx_pos.x < best_pos.x) || ((nx_pos.x == best_pos.x) && (nx_pos.y < best_pos.y))))))) {
+                     best_sugar_level = movement_request_message_message->env_sugar_level;
+                     best_pos = nx_pos;
+                 }
+@@ -159,6 +159,7 @@
+     glm::dvec2 in_target_pos = glm::dvec2(in->target_pos_x, in->target_pos_y);
+     if ((in->state == AGENT_STATE_UNOCCUPIED)) {
+         int best_priority = (-1);
++        glm::dvec2 best_source_pos = glm::dvec2(0);
+         int best_agent_id = (-1);
+         int best_sugar_level = (-1);
+         int best_metabolism = (-1);
+@@ -174,7 +175,8 @@
+             {
+                 if (((movement_response_message_message->state == AGENT_STATE_MOVEMENT_REQUESTED) && (nx_target_pos == in_pos))) {
+                     int message_priority = 0;
+-                    if ((message_priority > best_priority)) {
++                    if ((message_priority > best_priority) || ((message_priority == best_priority) && ((nx_pos.x < best_source_pos.x) || ((nx_pos.x == best_source_pos.x) && (nx_pos.y < best_source_pos.y))))) {
++                        best_source_pos = nx_pos;
+                         best_priority = message_priority;
+                         best_agent_id = movement_response_message_message->agent_id;
+                         best_sugar_level = movement_response_message_message->sugar_level;
