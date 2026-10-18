@@ -58,5 +58,10 @@
     "total_cells": 2500,
     "capacity_matrix_sha256": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
     "interpretation": "Direct published-figure recovery; no simulation or completion credit."
+  },
+  "tax_semantics": {
+    "evidence": "oremland-tax-semantics-2026-10-18/README.md",
+    "finding": "Journal Algorithm 3 and dissertation Algorithm 6 agree. Literal negative payment is independent of the rate, including zero. Clipping only that payment leaves fixed-schedule survivor states unchanged but can increase total revenue by at most 600 for the original 200-agent model.",
+    "scope": "Analytical bound, no simulation or author-executable validation."
   }
 }
