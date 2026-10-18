@@ -13,8 +13,8 @@ The complete altruistic Table 3 row matches exactly: 344 extinct, 10 worse, and 
 also matches all 24,392 extracted vertices in Figures 4, 5, 7, 8 and 9.
 Figure 6 matches all 4,995 vertices under all-cause deaths; the released plotter's narrower definition does not match.
 All counted intervals pass source, configuration, seed, trajectory-hash, and terminal-state checks. The remaining homogeneous inputs are still required.
-Latest deposited-runtime coverage is **861/1,200 inputs and 2,449,641 observations**;
-[the latest audited runtime prefix](results/runtime-bentham50k-high-2026-10-18/README.md) adds two complete 50,000-step Bentham inputs. Earlier terminal checkpoints retain their failures.
+Latest deposited-runtime coverage is **863/1,200 inputs and 2,549,643 observations**;
+[the latest audited runtime prefix](results/runtime-bentham50k-low-2026-10-18/README.md) adds two complete 50,000-step Bentham inputs. Earlier terminal checkpoints retain their failures.
 Earlier checkpoint sections below retain their historical counts. Full homogeneous and other paper experiments remain incomplete.
 
 [Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)
@@ -963,3 +963,7 @@ An incomplete allocation exits 124 and preserves all partial outputs. Historical
 ### Additional Raw and Altruist runtime inputs
 
 [Five original inputs](results/runtime-memory-prefix-2026-10-18) add 150,328 independently audited observations. Exact reconciliation reaches 861/1,200 deposited runtime inputs. Two Raw inputs end in natural extinction; the other three complete 50,000 steps. The producer continues, and the full paper remains incomplete.
+
+### Bentham runtime low interval
+
+[Two original Bentham inputs](results/runtime-bentham50k-low-2026-10-18) add 100,002 independently audited observations. Both complete 50,000 steps. Exact reconciliation reaches 863/1,200 deposited runtime inputs; the full paper remains incomplete.
