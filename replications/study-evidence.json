@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T22:14:10.538452+00:00",
+  "as_of": "2026-10-18T22:19:27.437394+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -43,14 +43,15 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "33e3bec7cc1126567af9b444e77018e138a8db84",
+      "checked_commit": "1e7b867612fe488cbd8b5363d0bd1ac5bf81d900",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "c79cc14d4d33a318b526c53a1b92c16968cb1875dcc062e8e940ea87f160b989",
-      "json_evidence_files": 1014,
-      "remaining_scope": "All 2,000 original homogeneous inputs audited (5,063,268 observations); all four Table 3 count rows match. Bentham independently aggregated 2,500,500 observations and matches all 24,229 vertices in Figures 4,5,7,8,9. All-cause deaths match all 4,987 Figure 6 vertices; released narrow death definition differs. All four models now have complete homogeneous-curve comparisons. Bentham unchanged released-parser equivalence now passes all 30,006 metrics over 500 native runs; population exact, maximum floating difference 4.95e-10. August 23, 2024 author release v2024.3 adds aging deaths before paper submission; its source formula matches all 19,970 Figure6 vertices across four models. Disease deaths are zero throughout these ensembles. Exact historical plotting identity remains unproven. Runtime coverage 873/1,200; cmd-y47e9 continues unfinished original inputs. Full selfishness and mixed-society sweeps, longer horizons, runtime claims, and remaining nonhomogeneous figures are incomplete. Sequential CPython/PyPy control cmd-vkkmk is running eight full original-input workflows after verified removal of overlapped partial attempts. Three-hour simulation bound; approx $0.55 compute/idle cap. Exact hashes gate every trajectory; no speedup or universal-equivalence claim yet. Corrected supplementary inventory validates 100,000 original configurations and a disjoint 99,992-input worklist after eight audited inputs. The earlier inventory missed two completed paired-runtime inputs; no sweep jobs used it. Exact ZIP coverage, unchanged remaining rows, and duplicate-source invariance verified. Sequential eight-run controls audit 40,008 exact observations and measure 3.13\u20133.28x PyPy speedups. A bounded eight-CPU, roughly $8 batch requests 499 remaining original selfishness-0.37 inputs, with two complete parity gates before bulk work. No new unique inputs are counted until results pass audit.",
+      "readme_sha256": "094ddfc5cbdfbf8cce96efa76c4dac3e5482afe160a62197d5eeb13a1eebb12e",
+      "json_evidence_files": 1023,
+      "remaining_scope": "All 2,000 original homogeneous inputs audited (5,063,268 observations); all four Table 3 count rows match. Bentham independently aggregated 2,500,500 observations and matches all 24,229 vertices in Figures 4,5,7,8,9. All-cause deaths match all 4,987 Figure 6 vertices; released narrow death definition differs. All four models now have complete homogeneous-curve comparisons. Bentham unchanged released-parser equivalence now passes all 30,006 metrics over 500 native runs; population exact, maximum floating difference 4.95e-10. August 23, 2024 author release v2024.3 adds aging deaths before paper submission; its source formula matches all 19,970 Figure6 vertices across four models. Disease deaths are zero throughout these ensembles. Exact historical plotting identity remains unproven. Runtime coverage 873/1,200; cmd-y47e9 continues unfinished original inputs. Full selfishness and mixed-society sweeps, longer horizons, runtime claims, and remaining nonhomogeneous figures are incomplete. Sequential CPython/PyPy control cmd-vkkmk is running eight full original-input workflows after verified removal of overlapped partial attempts. Three-hour simulation bound; approx $0.55 compute/idle cap. Exact hashes gate every trajectory; no speedup or universal-equivalence claim yet. Corrected supplementary inventory validates 100,000 original configurations and a disjoint 99,992-input worklist after eight audited inputs. The earlier inventory missed two completed paired-runtime inputs; no sweep jobs used it. Exact ZIP coverage, unchanged remaining rows, and duplicate-source invariance verified. Sequential eight-run controls audit 40,008 exact observations and measure 3.13\u20133.28x PyPy speedups. A bounded eight-CPU, roughly $8 batch requests 499 remaining original selfishness-0.37 inputs, with two complete parity gates before bulk work. No new unique inputs are counted until results pass audit. Two newly audited original selfishness-0.37 inputs each have byte-exact complete CPython/PyPy trajectories (10,002 unique observations). All four native runs locally reaudited; sealed download verified. Reconciled supplementary inventory now excludes ten unique inputs, leaving 99,990; condition 0.37 has three completed and 497 remaining. Cohort cmd-vbtw7 remains running under original budget.",
       "gzip_json_evidence_files": 38,
-      "checked_at": "2026-10-18T21:37:24.467992+00:00"
+      "checked_at": "2026-10-18T22:17:20.650679+00:00",
+      "evidence_scan_scope": "All tracked JSON files under replications/blueprints_2024"
     },
     {
       "study": "bigbee_2007",
@@ -244,15 +245,15 @@
     {
       "study": "oremland_2014",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
-      "checked_commit": "cc3a01628def6fd50dbb0951d4e24638dab9f805",
-      "status": "running",
+      "checked_commit": "9ffd5539b30794c0bc72cd23d91057b8a65a4fa1",
+      "status": "partial",
       "readme": "replications/oremland_2014/README.md",
-      "readme_sha256": "34472fd9ae9057fb0f355417b879f14f1d330e793a5c0daef2b734407b4aa6d1",
-      "json_evidence_files": 115,
+      "readme_sha256": "57f461c28bab49a4e0dc0396eb696abd074a6c7fad13a188d9636f03f9b25a49",
+      "json_evidence_files": 129,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T22:14:10.538452+00:00",
+      "checked_at": "2026-10-18T22:19:27.437394+00:00",
       "evidence_scan_scope": "All JSON files under replications/oremland_2014",
-      "remaining_scope": "All eleven reduced models now audit 2,538,400 runs; four small-grid recovery models add 2,110,000, with 405,245 exact retained-prefix comparisons. Independent full-size and 37,600 unique-stream diagnostics remain audited. Source conflict identified: Appendix B prose removes zero-sugar agents, while Algorithm 3 removes only negative-sugar agents. Existing results follow prose. Native 408-state probe confirms survival difference; paired 37,600-request negative-death diagnostic running with four workers and one-hour limit. No validated negative or completion credit. Original controls, implementation, reduction/ranking conventions, uncertainty bars, optimizer and transfer remain unresolved."
+      "remaining_scope": "All eleven reduced models now audit 2,538,400 runs; four small-grid recovery models add 2,110,000, with 405,245 exact retained-prefix comparisons. Independent full-size and 37,600 unique-stream diagnostics remain audited. Source conflict identified: Appendix B prose removes zero-sugar agents, while Algorithm 3 removes only negative-sugar agents. Existing results follow prose. Native 408-state probe confirms survival difference; paired 37,600-request negative-death diagnostic completed and audited. Mortality changes in 37,223 pairs; 40x40 mortality ranking concordance .5854/.5511 versus prose-rule .8686/.8695. All 768 ranking rows checked and paired summaries independently recomputed from native records. No validated negative or completion credit. Original controls, implementation, reduction/ranking conventions, uncertainty bars, optimizer and transfer remain unresolved."
     }
   ],
   "study_prs": 18,
