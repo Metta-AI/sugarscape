@@ -202,3 +202,6 @@ whose power-of-two ranges all begin at zero. The reconstruction preserves it.
 
 [All 13 published GPU sizes](gpu-grid/README.md) have executed for 100 steps. The 12 added conditions pass structural checks across 206,257,655 native observations and exact independent reconstruction of 16,337,240 initial fields.
 Raw archives are retained in durable storage with checksums and export receipts. Historical performance and distributed scaling remain incomplete; native transition equivalence is not inferred from structural checks.
+
+[The full GPU timing comparison](gpu-timing-comparison/README.md) retains all 13 published/native points, whole-runner timings, and engine spans.
+The largest native run is 230.14 seconds versus the digitized 256.003856 seconds; different hardware and one observation per size prevent an exact historical timing verdict.
