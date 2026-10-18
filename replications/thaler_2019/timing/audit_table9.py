@@ -1,4 +1,4 @@
-"""Audit the complete six-condition Table9 timings and thirty native retry processes."""
+"""Audit Table9 native evidence; an explicit prefix mode excludes retry completion."""
 
 import argparse
 import hashlib
@@ -15,6 +15,11 @@ parser.add_argument(
     "checkpoint", type=Path, help="Extracted checkpoint containing results/"
 )
 parser.add_argument("output", type=Path, help="New audit directory")
+parser.add_argument(
+    "--timing-prefix",
+    action="store_true",
+    help="Audit a sealed timing checkpoint without claiming full Table9 completion",
+)
 args = parser.parse_args()
 root = args.checkpoint / "results"
 assets = Path(__file__).resolve().parent
@@ -70,13 +75,16 @@ assert len(schedule) == len(expected) == 6
 assert {
     (c["table"], c["variant"], c["caps"], c["agents"]) for c in schedule
 } == expected
-assert int((args.checkpoint / "exit-code.txt").read_text()) == 0
+if not args.timing_prefix:
+    assert int((args.checkpoint / "exit-code.txt").read_text()) == 0
 assert (
     hashlib.sha256((root / "tarray-timing-binary").read_bytes()).hexdigest()
     == manifest["binary_sha256"]["tarray"]
 )
 progress = json.loads((root / "progress.json").read_text())
-assert 0 < len(progress) == 6
+assert 0 < len(progress) <= 6
+if not args.timing_prefix:
+    assert len(progress) == 6
 ledger = [
     json.loads(line) for line in (root / "attempts.jsonl").read_text().splitlines()
 ]
@@ -84,7 +92,7 @@ assert ledger == [
     attempt for condition in progress for attempt in condition["attempts"]
 ]
 rows = []
-files = {"manifest.json", "progress.json", "attempts.jsonl"}
+files = {"manifest.json", "progress.json", "attempts.jsonl", "tarray-timing-binary"}
 for ordinal, condition in enumerate(progress):
     spec = schedule[ordinal]
     assert condition["ordinal"] == ordinal and condition["condition"] == spec
@@ -182,86 +190,100 @@ summary = {
         "threads_per_core": int(cpu_fields["Thread(s) per core:"]),
         "limitation": "OS-reported topology and allocation only. This does not prove exclusive host use or fixed clock frequency.",
     },
-    "scope": "Independent raw-measurement audit on different hardware; not a paper performance verdict. Source and binary hashes are recorded provenance, not independent binary reconstruction.",
+    "retry_processes_audited": 0,
+    "full_table9_audited": False,
+    "scope": "Timing-prefix raw-measurement audit on matching instance class. No retry-counter coverage, historical clock/isolation equivalence, or whole-paper verdict. Source/binary hashes are provenance, not independent binary reconstruction.",
     "rows": rows,
 }
-terminal = json.loads((root / "terminal.json").read_text())
-assert terminal == {
-    "timing_conditions_accepted": 6,
-    "timing_conditions_required": 6,
-    "retry_processes_completed": 30,
-    "retry_processes_required": 30,
-    "complete": True,
-}
-assert summary["complete_grid"]
-assert (
-    hashlib.sha256((root / "retry-Main.hs").read_bytes()).hexdigest()
-    == "cdea6f017ef1b91b4a1d6dd8590f4afc1c18b96694c57f612b7dae15d11b3b3f"
-)
-retry_digest = hashlib.sha256((root / "tarray-retry-binary").read_bytes()).hexdigest()
-assert retry_digest == (root / "retry-binary-sha256.txt").read_text().strip()
-assert retry_digest != manifest["binary_sha256"]["tarray"]
-retry_schedule = json.loads((root / "retry-schedule.json").read_text())
-assert len(retry_schedule) == 30
-expected_retry_order = [dict(c, repetition=r) for c in schedule for r in range(5)]
-random.Random(20261019).shuffle(expected_retry_order)
-assert retry_schedule == expected_retry_order
-expected_retries = {(c["benchmark"], rep) for c in schedule for rep in range(5)}
-assert {(c["benchmark"], c["repetition"]) for c in retry_schedule} == expected_retries
-retry_ledger = [
-    json.loads(line)
-    for line in (root / "retry-completed.jsonl").read_text().splitlines()
-]
-assert len(retry_ledger) == 30
-for index, record in enumerate(retry_ledger):
-    condition = retry_schedule[index]
-    assert record["index"] == index and record["condition"] == condition
-    folder = root / f"retry-{index:02d}"
-    for filename, digest in record["files_sha256"].items():
-        assert hashlib.sha256((folder / filename).read_bytes()).hexdigest() == digest
-    assert int((folder / "exit-code.txt").read_text()) == 0
-    command = json.loads((folder / "command.json").read_text())
-    assert Path(command[0]).name == "tarray-retry-binary"
-    assert command[1:] == [
-        "--iters",
-        "1",
-        "--match",
-        "prefix",
-        condition["benchmark"],
-        "+RTS",
-        f"-N{condition['caps']}",
-        "-RTS",
+if not args.timing_prefix:
+    terminal = json.loads((root / "terminal.json").read_text())
+    assert terminal == {
+        "timing_conditions_accepted": 6,
+        "timing_conditions_required": 6,
+        "retry_processes_completed": 30,
+        "retry_processes_required": 30,
+        "complete": True,
+    }
+    assert summary["complete_grid"]
+    assert (
+        hashlib.sha256((root / "retry-Main.hs").read_bytes()).hexdigest()
+        == "cdea6f017ef1b91b4a1d6dd8590f4afc1c18b96694c57f612b7dae15d11b3b3f"
+    )
+    retry_digest = hashlib.sha256(
+        (root / "tarray-retry-binary").read_bytes()
+    ).hexdigest()
+    assert retry_digest == (root / "retry-binary-sha256.txt").read_text().strip()
+    assert retry_digest != manifest["binary_sha256"]["tarray"]
+    retry_schedule = json.loads((root / "retry-schedule.json").read_text())
+    assert len(retry_schedule) == 30
+    expected_retry_order = [dict(c, repetition=r) for c in schedule for r in range(5)]
+    random.Random(20261019).shuffle(expected_retry_order)
+    assert retry_schedule == expected_retry_order
+    expected_retries = {(c["benchmark"], rep) for c in schedule for rep in range(5)}
+    assert {
+        (c["benchmark"], c["repetition"]) for c in retry_schedule
+    } == expected_retries
+    retry_ledger = [
+        json.loads(line)
+        for line in (root / "retry-completed.jsonl").read_text().splitlines()
     ]
-    assert (
-        folder / "stdout.log"
-    ).read_text().strip() == f"benchmarking {condition['benchmark']}"
-    stderr = (folder / "stderr.log").read_text()
-    counters = re.findall(
-        r"^SugarScape\s+(\d+)\s+(\d+)\s+(\d+\.\d+)\s*$", stderr, re.MULTILINE
+    assert len(retry_ledger) == 30
+    for index, record in enumerate(retry_ledger):
+        condition = retry_schedule[index]
+        assert record["index"] == index and record["condition"] == condition
+        folder = root / f"retry-{index:02d}"
+        for filename, digest in record["files_sha256"].items():
+            assert (
+                hashlib.sha256((folder / filename).read_bytes()).hexdigest() == digest
+            )
+        assert int((folder / "exit-code.txt").read_text()) == 0
+        command = json.loads((folder / "command.json").read_text())
+        assert Path(command[0]).name == "tarray-retry-binary"
+        assert command[1:] == [
+            "--iters",
+            "1",
+            "--match",
+            "prefix",
+            condition["benchmark"],
+            "+RTS",
+            f"-N{condition['caps']}",
+            "-RTS",
+        ]
+        assert (
+            folder / "stdout.log"
+        ).read_text().strip() == f"benchmarking {condition['benchmark']}"
+        stderr = (folder / "stderr.log").read_text()
+        counters = re.findall(
+            r"^SugarScape\s+(\d+)\s+(\d+)\s+(\d+\.\d+)\s*$", stderr, re.MULTILINE
+        )
+        assert len(counters) == stderr.count("STM transaction statistics (") == 1
+        commits, retries, printed = counters[0]
+        commits, retries = int(commits), int(retries)
+        assert (
+            commits > 0
+            and commits == record["commits"]
+            and retries == record["retries"]
+        )
+        assert (
+            retries / commits == record["ratio"]
+            and f"{retries / commits:.2f}" == printed == record["printed_ratio"]
+        )
+    files |= {str(p.relative_to(root)) for p in root.glob("retry-*/*") if p.is_file()}
+    files |= {
+        "retry-Main.hs",
+        "tarray-timing-binary",
+        "tarray-retry-binary",
+        "retry-binary-sha256.txt",
+        "retry-schedule.json",
+        "retry-completed.jsonl",
+        "terminal.json",
+    }
+    summary["retry_processes_audited"] = 30
+    summary["retry_records"] = retry_ledger
+    summary["scope"] = (
+        "Complete Table9 raw-measurement and retry-counter audit on matching instance class. No historical clock/isolation equivalence or whole-paper verdict."
     )
-    assert len(counters) == stderr.count("STM transaction statistics (") == 1
-    commits, retries, printed = counters[0]
-    commits, retries = int(commits), int(retries)
-    assert commits > 0 and commits == record["commits"] and retries == record["retries"]
-    assert (
-        retries / commits == record["ratio"]
-        and f"{retries / commits:.2f}" == printed == record["printed_ratio"]
-    )
-files |= {str(p.relative_to(root)) for p in root.glob("retry-*/*") if p.is_file()}
-files |= {
-    "retry-Main.hs",
-    "tarray-timing-binary",
-    "tarray-retry-binary",
-    "retry-binary-sha256.txt",
-    "retry-schedule.json",
-    "retry-completed.jsonl",
-    "terminal.json",
-}
-summary["retry_processes_audited"] = 30
-summary["retry_records"] = retry_ledger
-summary["scope"] = (
-    "Complete Table9 raw-measurement and retry-counter audit on matching instance class. No historical clock/isolation equivalence or whole-paper verdict."
-)
+    summary["full_table9_audited"] = True
 args.output.mkdir(parents=True, exist_ok=False)
 (args.output / "audit.json").write_text(json.dumps(summary, indent=2) + "\n")
 (args.output / "input-sha256.json").write_text(

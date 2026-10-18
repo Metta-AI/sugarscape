@@ -658,3 +658,12 @@ All original conditions, sampling and fit criteria remain unchanged.
 The corrected run is now launched in a separate directory on the retained m5ad.16xlarge instance.
 Its frozen six-hour lease and 18,600-second execution bound preserve all six timing and thirty retry conditions.
 Original timeout evidence remains intact; independent result validation is pending.
+
+### Table 9: first independently audited timing
+
+[The sealed first condition](results/table9-first-condition-2026-10-18) yields 89.962304 seconds
+at 32 capabilities with 2,500 agents and rebirth, versus the paper's 76.4 seconds.
+All four native measurements reconstruct R-squared 0.999874136128 and pass the frozen fit rule.
+Source, binary and archive hashes pass; a fresh extraction reproduces the audit byte-for-byte.
+Five timing conditions and all thirty retry processes remain required.
+This does not establish historical hardware isolation, full scaling or paper completion.
