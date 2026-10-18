@@ -106,3 +106,9 @@ This is incomplete execution, not a 600-second timing measurement or negative pa
 [All four archived adapters](results/remaining-allocator-failures-2026-10-18) fail compilation under CUDA 11.8; no simulation starts. Diagnostics identify dependent-template calls in the shared adapter. The complete failure archive and four compiler logs are retained.
 
 A separate attempt inserts eight `template` keywords into existing shared-adapter calls, recording original and effective hashes. This is a local syntax correction, not an authenticated historical revision. Use `qualify_remaining_allocators.py QUALIFICATION NEW_OUTPUT --adapter-source archived` for the unchanged adapter, or `--adapter-source portable-syntax` for the declared correction. Model source and allocator algorithms remain unchanged.
+
+### Bounded host-progress diagnostic
+
+`diagnose_progress.py` adds host-side stderr records around initialization and simulation phases. It preserves model rules, random calls, kernel ordering, synchronization calls and the original 10,000-step horizon. Logs cover the first two iterations and every hundredth thereafter. Post-launch host records do not alone prove kernel completion; the next record after an existing synchronization supplies that boundary.
+
+[Command cmd-9vcwk](results/progress-diagnostic-2026-10-18/protocol.json) first checks the observer on the qualified 32×32 input, then probes full-size debug and release builds for 120 seconds each. It has a ten-minute outer bound and $2 budget. It is diagnostic instrumentation, not a timing benchmark or independent state-validation claim.
