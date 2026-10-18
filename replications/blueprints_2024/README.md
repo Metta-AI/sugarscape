@@ -1056,3 +1056,7 @@ The deposited 100-seed schedule still does not fulfill the paper's 500-seed Tabl
 [Another 25 inputs](results/selfishness037-second-prefix-2026-10-18) pass independent audits covering 120,191 observations. Twenty-four finish 5,000 steps; one ends naturally in extinction at step 166. The inventory now recognizes audited native extinction and verifies contiguous trajectory times and terminal population. The previous inventory and remaining-input CSV reproduce exactly, except for the recorded planner source hash.
 
 Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishness 0.37 has 53/500 completed inputs. No completion-order aggregate or whole-paper completion is claimed.
+
+### Second runtime continuation checkpoint
+
+[Seven cumulative inputs](results/runtime-continuation-second-prefix-2026-10-18) pass the runtime audit, matching all four earlier inputs exactly. Three new inputs add 100,172 observations. Coverage reaches **880/1,200 deposited runtime inputs and 2,951,160 observations**. The paper’s different 500-seed timing schedule remains unresolved.
