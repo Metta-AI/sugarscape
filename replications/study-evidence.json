@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T11:46:47.865693+00:00",
+  "as_of": "2026-10-18T19:38:27.136465+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -43,14 +43,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "dc52da2516166a286b1ba8bcd8349681712504a9",
+      "checked_commit": "ddf9787d22efacbf6b465f0753999564e50fcc3c",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "47b2cc025d6b0f97c5f143c14ac4a38dfaea7f80e6b2f87f8b8ca6d63d1a846e",
-      "json_evidence_files": 800,
-      "remaining_scope": "1,841/2,000 homogeneous and 872/1,200 runtime inputs audited; 2,750,519 runtime observations. Bentham 341/500 leaves 159 original homogeneous inputs. Seven disk-blocked inputs now run on a separate bounded CPU2 job, disjoint from the queued 152. Full sweeps, longer horizons, 329 remaining runtime inputs and the 100-input versus reported 500-input schedule remain incomplete. Six-hour runtime batch terminal, both workers timed out; final checkpoint fully audited. Remaining Raw 66\u201399 and altruistic 6\u201399 queued as cmd-8y9yk with six-hour group bounds and $3.90 estimated cap. No new paper completion.",
+      "readme_sha256": "4f82ccbf8bd72f18fdabd7274ea99dcb5640186902e8ddab332e705bc37094f5",
+      "json_evidence_files": 965,
+      "remaining_scope": "All 2,000 original homogeneous inputs complete and audited (5,063,268 observations); no missing seeds. Runtime coverage remains 872/1200. Continuation cmd-8y9yk failed before simulation because Git was absent after restoration; failure archive preserved. Full selfishness and mixed-society sweeps, longer horizons, runtime claims and remaining figure analysis are incomplete.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T11:45:08.026314+00:00"
+      "checked_at": "2026-10-18T19:38:27.136465+00:00"
     },
     {
       "study": "bigbee_2007",
