@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T20:28:00.592615+00:00",
+  "as_of": "2026-10-18T20:34:20.564814+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -243,15 +243,15 @@
     {
       "study": "oremland_2014",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
-      "checked_commit": "08e77c538e58cc4cf86c5d29f2c51ac2ed546d59",
+      "checked_commit": "1f4fedfceaf20816fd742681e0910144fdc72551",
       "status": "partial",
       "readme": "replications/oremland_2014/README.md",
-      "readme_sha256": "f19b8cd85f945460cd92115d227dc222065cbd2802ad2410a7317a3066469357",
-      "json_evidence_files": 10,
+      "readme_sha256": "710188d1d787dedf03829b7f183878047b9a3fc4973c9eec084840f302b70fbb",
+      "json_evidence_files": 21,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T20:28:00.592615+00:00",
+      "checked_at": "2026-10-18T20:34:20.564814+00:00",
       "evidence_scan_scope": "All JSON files under replications/oremland_2014",
-      "remaining_scope": "Independent native NetLogo full-size reconstruction executes 1,600 uniform-tax controls across 100 seeds; all 40,800 paired survivor states match and revenue differences equal negative-wealth refunds. Original heterogeneous controls, clock convention, reduced-grid conventions, policy-ranking agreement, optimization, and historical timings remain incomplete. No completion credit."
+      "remaining_scope": "Independent native reconstruction completes 1,600 uniform-tax controls and 400 generated heterogeneous-policy controls. All 500,936 heterogeneous tax events and 10,200 paired states audited; 139/200 policy entries observed, 61 explicitly uncovered. The full uniform regression preserves all 81,600 prior observations byte-for-byte. Original control ensemble, reduced-grid conventions, policy-ranking agreement, optimization, and historical timings remain incomplete. No completion credit."
     }
   ],
   "study_prs": 18,

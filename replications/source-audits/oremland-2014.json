@@ -66,9 +66,11 @@
   },
   "native_reconstruction": {
     "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
-    "complete_control_runs": 1600,
-    "paired_state_matches": 40800,
-    "observations": 81600,
-    "scope": "Uniform-tax diagnostic controls across 100 seeds. No original heterogeneous control, reduction, or optimization result claimed."
+    "complete_control_runs": 2000,
+    "paired_state_matches": 51000,
+    "observations": 102000,
+    "scope": "Four uniform policies and one generated heterogeneous policy across 100 seeds, two clock phases, and two payment treatments. Repeated qualification and parity executions excluded from these counts. No original paper control, reduction, or optimization result claimed.",
+    "heterogeneous_tax_events": 500936,
+    "observed_policy_entries": 139
   }
 }
