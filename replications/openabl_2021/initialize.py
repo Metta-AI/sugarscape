@@ -41,6 +41,9 @@ def integer(low, high):
     return low + value % size
 
 
+# The released printer emits folded floating constants with six significant
+# digits. Reconstruct the generated C value, including that precision loss.
+variance = float(format(0.025 * width * width, ".6g"))
 cells = []
 for x in range(width):
     for y in range(width):
@@ -51,8 +54,7 @@ for x in range(width):
                 (x - fraction * width) ** 2 + (y - fraction * width) ** 2
             )
             capacity = int(
-                capacity
-                + 50 * math.exp(-distance * distance / (2 * 0.025 * width * width))
+                capacity + 50 * math.exp(-distance * distance / (2 * variance))
             )
         wealth = integer(1, 10) if occupied else 0
         cells.append(
@@ -82,6 +84,7 @@ args.output.write_text(
             "actual_cells": len(cells),
             "fields_compared": len(cells) * 8,
             "random_draws": draws,
+            "generated_variance": variance,
             "final_rng_state": state,
             "differences": differences,
             "native_sha256": hashlib.sha256(args.native.read_bytes()).hexdigest(),

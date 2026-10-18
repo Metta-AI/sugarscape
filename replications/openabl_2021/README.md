@@ -171,3 +171,9 @@ whose power-of-two ranges all begin at zero. The reconstruction preserves it.
 ## Complete published C grid behavior
 
 [All seven C sizes](c-grid/README.md) execute100 steps and pass independent initialization and 100-step replay with endpoint comparison:502,648 fields at each endpoint. `replay.py` uses exact half-integer grid lookup while retaining native neighbor order. This removes the quadratic neighbor scan. Historical timing and other backend scopes remain incomplete.
+
+## Complete C buffer-copy controls and initialization precision
+
+[All seven copy-buffer controls](c-copy-grid/comparison.json) retain byte-identical native initial states and match502,648 independently replayed final fields. Only four buffer assignments differ from generated C.
+
+[The precision investigation](initialization-precision/README.md) resolves22 initializer discrepancies at128,000 cells by preserving six-significant-digit generated constants. Ten retained initial-state conditions pass after the validator correction. No scientific model or acceptance tolerance changes. MASON comparisons at the two largest sizes remain running.
