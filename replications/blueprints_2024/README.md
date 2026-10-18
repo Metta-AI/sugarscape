@@ -848,3 +848,11 @@ Every completed trajectory passes original configuration, source pin, native exi
 finite observation, full trajectory hash and terminal-condition checks.
 The original processes continue; no incomplete trajectory receives coverage credit.
 This does not validate the paper's separate 500-seed timing experiment or complete the study.
+
+### Qualification for parallel homogeneous Bentham execution
+
+[The bounded cloud qualification](results/bentham-parallel-qualification-launch-2026-10-18)
+replays one completed original seed and requires an exact full-trajectory hash match.
+The local producer remains unchanged; no new seed interval has been assigned.
+A future parallel handoff must freeze disjoint inputs after rechecking the local producer.
+The qualification repeat itself adds no coverage or completion credit.
