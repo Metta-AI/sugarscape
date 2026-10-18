@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T20:00:23.576137+00:00",
+  "as_of": "2026-10-18T20:03:21.329496+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -67,12 +67,12 @@
     {
       "study": "stevenson_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8",
-      "checked_commit": "efe8b9118f725ae0156ba86d84741b702a21018a",
+      "checked_commit": "8a851b3cdf2564795e5a9e07c7f1435ea77a3cce",
       "status": "partial",
       "readme": "replications/stevenson_2021/README.md",
-      "readme_sha256": "ca831736596a5c2c23547b1befc99b5f16bb67def3ca6df3312493835c74457d",
-      "json_evidence_files": 46,
-      "remaining_scope": "Two 100-seed fixed-scenario ensembles and all 80 boundary-sensitivity runs complete. Strict wealth thresholds change age but do not resolve both scenarios. Figure6b vector/forward diagnostics document equation normalization and chaotic rounding sensitivity, not historical replication. Historical semantics, evolution, Figure3, and AppendixB agent-model comparisons remain incomplete.",
+      "readme_sha256": "db9c72a7db318f875f2c972e9012c3424cc47bdff7ddc98cba1b0cb748459ad1",
+      "json_evidence_files": 53,
+      "remaining_scope": "Two 100-seed fixed-scenario ensembles and all 80 boundary-sensitivity runs complete. Strict wealth thresholds change age but do not resolve both scenarios. Figure6b vector/forward diagnostics document equation normalization and chaotic rounding sensitivity, not historical replication. Historical semantics, evolution, Figure3, and AppendixB agent-model comparisons remain incomplete. Preceding arXiv2101.09817v2 supports action order and delayed newborn activation, but uses 130000\u2013150000 cycles for related birth-cost sensitivity. This is not adopted as the target window. Four GitHub metadata queries recovered no author implementation; evolutionary rules remain unresolved.",
       "gzip_json_evidence_files": 0
     },
     {
