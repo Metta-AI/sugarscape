@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T23:23:26.900282+00:00",
+  "as_of": "2026-10-18T23:30:43.688549+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -43,14 +43,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "4dbb1a8617eaf7ed6b84f71af7e2ac5ca36a84e0",
+      "checked_commit": "72468cffea7c5ef71a2ef87ed608afc1fb77d45c",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "680afb064237d7feff064443805852153454b6f504884e30c08ac9c628f939a1",
-      "json_evidence_files": 1059,
-      "remaining_scope": "All 2,000 original homogeneous inputs audited (5,063,268 observations); all four Table 3 count rows match. All four models have complete homogeneous-curve comparisons. The author release before submission includes aging deaths, matching all 19,970 Figure 6 vertices; exact historical plotting identity remains unproven. Deposited runtime coverage is 877/1,200 inputs and 2,850,988 observations, distinct from the paper Table 6 500-seed schedule. Supplementary inventory reconciles 35 unique completed inputs and 99,965 remaining. Selfishness 0.37 has 28/500 complete: an earlier control, two full CPython/PyPy parity pairs, and 25 new bulk inputs (125,025 observations). Local audits match producer audits; sealed export and archive-member hashes verify. Completion-order prefixes do not establish condition aggregates. Existing bounded cmd-vbtw7 and cmd-y47e9 continue. Full selfishness and mixed-society sweeps, longer horizons, runtime claims, and remaining nonhomogeneous figures are incomplete. No new study completion credit.",
+      "readme_sha256": "f7a0fd1d6f4baa096351a025d2518529751e388ce07f68e29af44c35f63568a2",
+      "json_evidence_files": 1097,
+      "remaining_scope": "All 2,000 homogeneous inputs and four Table3 count rows audited. Deposited runtime coverage now 880/1,200 inputs and 2,951,160 observations; distinct from paper Table6 500-seed schedule. Supplement inventory now 60 distinct inputs, 99,940 remaining; selfishness0.37 is53/500. Latest25 supplementary inputs validate120,191 observations, including native extinction at166. Planner now recognizes audited extinction and checks contiguous times and native terminal population; prior35-input inventory and remaining CSV unchanged except planner hash. Runtime checkpoint7 adds three inputs/100,172 observations after exact overlap reconciliation. Existing bounded producers continue. Full mixed/selfishness sweeps, long horizons, runtime claims and nonhomogeneous figures remain incomplete; no new completion credit.",
       "gzip_json_evidence_files": 38,
-      "checked_at": "2026-10-18T22:47:44.970783+00:00",
+      "checked_at": "2026-10-18T23:30:43.688549+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/blueprints_2024"
     },
     {
@@ -156,20 +156,20 @@
     {
       "study": "quera_2025",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
-      "checked_commit": "5dd1887663a229b7e07679b8001f2ada0c6a589a",
+      "checked_commit": "8ad487fd2398a5dbbb25b6f1d3c0ab00cd5c9f75",
       "status": "partial",
       "readme": "replications/quera_2025/README.md",
-      "readme_sha256": "f7ff478b69eebe3a822d9a42ac81b8c6116956cfd48867c5935fdf8936c578f4",
-      "remaining_scope": "All 256 diagnostic baseline seeds pass independent movement/resource replay; all 34,560,000 ordinary/differentiated state values match. Perturbed seed3 qualification covers all 36 parameter/step/sign cases: 86,400 agent and 2,160,000 cell updates with zero state error, all 900 archived aggregate values exact. Buffered/unbuffered writers match 144 compressed CSVs exactly. New baseline mode matches original CSVs, and updated auditor preserves all256 previous per-seed results. Disjoint seeds4:258 (9180 cases) running under two-hour/2GiB-free-space limits, with independent audit queued. Full perturbed ensemble, exact Figure11 protocol, prior/loss/validation settings and full5000-epoch calibration remain unresolved.",
+      "readme_sha256": "86d3966f8a1cb1dfba2f4899e48ec25c311d2cf73aa07b12882b9d2545237d85",
+      "remaining_scope": "All 256 baseline seeds and 9,216 perturbed diagnostic cases independently replayed. Perturbed grid exhausts six parameters, three finite-difference steps and two signs: 22,118,400 agent updates and 552,960,000 cell updates, zero state error. Native passive parity and archived aggregate comparisons pass. Full 1.91GB trace remains local and uploads to task object storage; no remote readback claimed. 144,536 outside-mask and 8,001 occupied-destination moves retained as source behavior. Historical Figure11 protocol, prior/loss/validation configuration and full 5,000-epoch calibration remain unresolved. No completion credit.",
       "validation": {
         "states": 150,
         "agent_observations": 15000,
         "cell_observations": 93750,
         "portable_trajectory_files_byte_identical": 9
       },
-      "json_evidence_files": 70,
-      "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T22:56:46.495851+00:00",
+      "json_evidence_files": 76,
+      "gzip_json_evidence_files": 1,
+      "checked_at": "2026-10-18T23:30:43.688549+00:00",
       "gradient_baseline_validation": {
         "seeds": 256,
         "agent_updates": 614400,
@@ -179,7 +179,8 @@
         "archived_derivative_records": 115200,
         "maximum_state_error": 0,
         "aggregate_reductions_exact": true
-      }
+      },
+      "evidence_scan_scope": "All tracked JSON files under replications/quera_2025"
     },
     {
       "study": "thaler_2019",
@@ -259,15 +260,15 @@
     {
       "study": "springer_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/22",
-      "checked_commit": "de3fc533a521a53e638cf3e32ddb68bd79cf8c0c",
+      "checked_commit": "42027e754870b7f656a5712daa24f3373c0697e8",
       "status": "running",
       "readme": "replications/springer_2019/README.md",
-      "readme_sha256": "0cf45007fa4964f014cdfa3eb1ba41d9ccade153cd74f724c8a3d952bc4304ec",
-      "json_evidence_files": 33,
+      "readme_sha256": "006ce8ba25eea8da5c0534f8b749e9850b97ec9437f6894e05dcc60825a2119d",
+      "json_evidence_files": 34,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T23:23:26.900282+00:00",
+      "checked_at": "2026-10-18T23:30:43.688549+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/springer_2019",
-      "remaining_scope": "Publisher artifact checksum verified. Four attempts and 18 native executions audited; final H100/CUDA11.8 qualification builds all three implementations and completes six 10,000-step executions on a 32x32 grid. Archived library conflicts and compiler failures preserved. Four author-derived template keywords and two explicit template arguments change allocator headers only; model files remain unchanged. Native checksum is not full-state validation. Independent state checks, all allocator variants, full 1700x1700 timing, matched-heap capacity searches and published claim comparisons remain outstanding. GPU stopped after verified exports; no completion credit. Heap-source audit confirms nominal 8GiB allocates 6GiB BitmapAlloc data storage; DynaSOAr uses object capacity and compiled block size. Qualification layout extrapolates 1,627,389,952 default data-buffer bytes, with additional metadata; full default allocation not measured. Artifact Figure11 instructions use DynaSOAr total allocator memory as comparator budget. Match actual budgets before capacity claims. Published Figure10 seven total times and Figure11 six capacity ratios now extracted from pinned vector geometry. Full-size native-default cmd-7k3hf is verified running: 1700x1700,10000steps,seed42, one debug control and fifteen release timings planned. Forty-five-minute execution/$5 bound; exact-command sealed-evidence collector active. Source/binary/timing audit prepared but not executed against unfinished batch. Pending runs receive no credit."
+      "remaining_scope": "Publisher artifact checksum verified. Four attempts and 18 native executions audited; final H100/CUDA11.8 qualification builds all three implementations and completes six 10,000-step executions on a 32x32 grid. Archived library conflicts and compiler failures preserved. Four author-derived template keywords and two explicit template arguments change allocator headers only; model files remain unchanged. Native checksum is not full-state validation. Independent state checks, all allocator variants, full 1700x1700 timing, matched-heap capacity searches and published claim comparisons remain outstanding. GPU stopped after verified exports; no completion credit. Heap-source audit confirms nominal 8GiB allocates 6GiB BitmapAlloc data storage; DynaSOAr uses object capacity and compiled block size. Qualification layout extrapolates 1,627,389,952 default data-buffer bytes, with additional metadata; full default allocation not measured. Artifact Figure11 instructions use DynaSOAr total allocator memory as comparator budget. Match actual budgets before capacity claims. Published Figure10 seven total times and Figure11 six capacity ratios now extracted from pinned vector geometry. Full-size native-default cmd-7k3hf is verified running: 1700x1700,10000steps,seed42, one debug control and fifteen release timings planned. Forty-five-minute execution/$5 bound; exact-command sealed-evidence collector active. Source/binary/timing audit prepared but not executed against unfinished batch. Pending runs receive no credit. Remaining four allocator qualification is prepared under separate20-minute/$3 bound; coordinator waits for timing termination and completed sealed export, requires node still running, and does not automatically wake it. Compiler/runtime attempts remain pending."
     }
   ],
   "study_prs": 19,
