@@ -1021,3 +1021,7 @@ comparisons do not establish equivalence or complete the paper.
 ### Independent 5,000-input degree-four estimator audited
 
 [All five degree-four folds](results/independent-sabc4d5000-2026-10-18) validate 25,000 held-out parameter predictions and 3,775,000 exact training/test cells. Baseline errors match the author-data workflow. Every native archive member matches its audited original. Other independent estimators and historical Table 8 discrepancies remain unresolved; cross-stream performance differences do not complete the study.
+
+### Validated observation-level checkpoint recovery
+
+[The complete interruption/recovery control](results/checkpoint-recovery-2026-10-18) preserves all five degree-one fold objects and random states exactly. It supports the long independent neural-network workflow without changing estimator settings. The former non-checkpointed attempt was stopped before its first fold completed; its evidence remains retained. The new full workload is running and is not counted as a completed result.
