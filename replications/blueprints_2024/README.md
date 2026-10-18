@@ -8,6 +8,7 @@ All four Table 3 rows match the published counts exactly under the released plot
 All four models now have complete published-curve comparisons; [Bentham](results/bentham-figures-2026-10-18) adds 24,229 vertices across five figures.
 Figure 6 matches all-cause deaths for all four models, while the released plotter counts only starvation and combat.
 The historical plotting discrepancy remains unresolved.
+[The Bentham released-parser check](results/bentham-parser-2026-10-18) also matches all 30,006 independently aggregated values.
 
 Latest deposited-runtime coverage is **873/1,200 inputs and 2,800,520 observations**.
 [The terminal Bentham audit](results/runtime-bentham-terminal-2026-10-18) retains the six-hour timeout and excludes the interrupted input.

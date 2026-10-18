@@ -18,7 +18,7 @@ The all-cause definition was motivated by prior model comparisons, not selected 
 
 ![Bentham curves and published paths](comparison.png)
 
-The six-panel comparison was visually inspected. This verifies the Bentham plotted curves against independent aggregation. Equivalence with the unchanged released parser remains a separate pending check. Other paper experiments remain incomplete.
+The six-panel comparison was visually inspected. This verifies the Bentham plotted curves against independent aggregation. [The subsequent full parser check](../bentham-parser-2026-10-18) now verifies all 30,006 values against the unchanged release. Other paper experiments remain incomplete.
 
 `timeseries/aggregate.py` reconstructs the ensemble from retained native outputs, checking every input against coverage and trajectory hashes. Its retained candidate inventory locates relocated evidence without modifying it. Decompress `candidate-inputs.json.gz` before rerunning with the original coverage and evidence paths available.
 

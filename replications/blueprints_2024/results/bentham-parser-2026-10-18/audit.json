@@ -1,0 +1,20 @@
+{
+  "runs": 500,
+  "observations": 2500500,
+  "compared_values": 30006,
+  "population_exact": true,
+  "rtol": 1e-12,
+  "atol": 1e-08,
+  "max_absolute_errors": [
+    0.0,
+    5.684341886080802e-14,
+    0.0,
+    0.0,
+    4.94765117764473e-10,
+    1.4210854715202004e-13
+  ],
+  "parser_sha256": "40db9cf6b8172e9fea0b3de532f541ebecd9d4b6e2724ea4ac6ee5ebf4c7d5e5",
+  "input_bytes_delivered": 2635068222,
+  "transport": "One named pipe per original native JSON file; full hash-verified bytes, unchanged parser and CLI, no substituted JSON fields. Each pipe closes at EOF.",
+  "scope": "Complete Bentham released-parser equivalence for six exported metrics. Historical Figure6 death-definition discrepancy remains."
+}
