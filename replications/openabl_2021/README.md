@@ -177,3 +177,7 @@ whose power-of-two ranges all begin at zero. The reconstruction preserves it.
 [All seven copy-buffer controls](c-copy-grid/comparison.json) retain byte-identical native initial states and match502,648 independently replayed final fields. Only four buffer assignments differ from generated C.
 
 [The precision investigation](initialization-precision/README.md) resolves22 initializer discrepancies at128,000 cells by preserving six-significant-digit generated constants. Ten retained initial-state conditions pass after the validator correction. No scientific model or acceptance tolerance changes. MASON comparisons at the two largest sizes remain running.
+
+## Native MASON random initialization
+
+[All11 published grid sizes](mason-initialization/README.md) pass independent reconstruction of4,072,272 native initial-state fields at seed zero. `initialize_mason.py` reproduces the pinned MT19937 generator and1,249-draw MASON startup. These observations retain MASON's own initialization; the separate C-initialized trajectory controls remain distinct.
