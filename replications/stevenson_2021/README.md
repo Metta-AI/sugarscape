@@ -440,3 +440,11 @@ All runs select infertility1/birthcost0 by cycle499 under the declared assumptio
 Cycle499 population ranges from 178 to 1,839, with means population888.74, age1.39440, wealth438.42, and Gini0.739173.
 The original stable figure is not treated as a numerical target for this case.
 Both evolutionary cases are now conditionally implemented; historical settings, sampling, intrinsic growth rates and full paper-level agreement remain unresolved.
+
+## Growth rates of the selected traits
+
+[Two additional 100-seed growth ensembles](results/selected-growth-2026-10-18) cover infertility/birth cost 10/0 and 1/0 from one founder for 3,000 cycles.
+All 600,000 native observations pass accounting checks; the unchanged declared fitting convention yields mean logistic rates 0.238694 and 0.972369 versus Table 1's 0.170 and 1.542.
+Independent residual recomputation validates all 600 optimizer attempts. Mean root-mean-square residuals are 34.73 and 464.14 agents.
+The unknown author fitting protocol and poor chaotic-case logistic residuals prevent interpreting these discrepancies as validated negative replications.
+Full growth-rate coverage is now executed under a declared convention; historical agreement and steady-state sampling remain unresolved.

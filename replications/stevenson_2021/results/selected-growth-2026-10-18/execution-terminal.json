@@ -1,0 +1,6 @@
+{
+  "launcher_exit_code": 0,
+  "complete_native_runs": 200,
+  "native_observations": 600000,
+  "bounded_command": "gtimeout --signal=TERM --kill-after=30 900 python3 run_evolved_growth.py QUALIFIED_FIXED_BINARY NEW_OUTPUT"
+}
