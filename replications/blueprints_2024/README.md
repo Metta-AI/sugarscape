@@ -853,7 +853,7 @@ This does not validate the paper's separate 500-seed timing experiment or comple
 
 [The bounded cloud qualification](results/bentham-parallel-qualification-launch-2026-10-18)
 replays one completed original seed and requires an exact full-trajectory hash match.
-The local producer remains unchanged; no new seed interval has been assigned.
+At qualification launch the local producer remained unchanged; the later handoff is documented below.
 A future parallel handoff must freeze disjoint inputs after rechecking the local producer.
 The qualification repeat itself adds no coverage or completion credit.
 
@@ -868,8 +868,8 @@ Nonzero exits remain explicit, and the enclosing workflow fails if any input is 
 Execution receipts alone do not add coverage; existing trajectory auditors must validate every completed batch.
 
 The production launcher must impose an outer deadline before the instance lease expires,
-leaving time to seal and collect evidence. No production interval has been assigned or launched.
-Ruff and CLI checks pass; the actual parallel workflow remains unvalidated until qualification and handoff complete.
+leaving time to seal and collect evidence. The subsequent qualified production launch is documented below.
+Ruff and CLI checks passed before launch. Qualification and handoff execution evidence follows below.
 
 ### Coverage when parallel inputs finish out of order
 
@@ -878,3 +878,11 @@ Ruff and CLI checks pass; the actual parallel workflow remains unvalidated until
 `next_seed` identifies the first missing input, including a gap before later completed inputs.
 Duplicate inputs still require identical trajectory results and receive no extra credit.
 The full-grid flag requires all 500 inputs in each of the four models.
+
+### Qualified parallel Bentham handoff
+
+[The cloud qualification](results/bentham-parallel-handoff-2026-10-18) exactly reproduces all 5,001 reference observations.
+After independent audit, the local producer was stopped with its completed ledger preserved.
+Its final prefix is 152/500 Bentham inputs, bringing the homogeneous union to 1,592/2,000.
+The remaining 348 inputs run on 32 workers with disjoint directories and an outer deadline before lease expiry.
+The interrupted local input remains preserved and uncredited; cloud execution alone adds no coverage.
