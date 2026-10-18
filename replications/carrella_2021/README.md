@@ -1005,3 +1005,7 @@ comparisons do not establish equivalence or complete the paper.
 ### Independent degree-four estimator in progress
 
 [The recorded launch and scope correction](results/independent-sabc4d-launch-2026-10-18) retain an erroneous 1,250-input attempt and its native failure. That paper cell is NA. The required 5,000-input workflow now runs unchanged with a four-hour bound and post-run prediction and input audits. No additional completed study or estimator result is claimed.
+
+### Independent 1,250-input quantile random forest audited
+
+[The completed workflow](results/independent-rf1250-2026-10-18) validates all five folds, 6,250 held-out parameter predictions, and 943,750 exact training/test cells. Baseline errors agree with the author-data workflow. The native archive is byte-verified against audited originals. The 5,000-input workflow remains running; performance differences across simulation random streams are descriptive, not a negative-replication verdict.
