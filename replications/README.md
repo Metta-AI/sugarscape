@@ -46,7 +46,7 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | kiran-2014 | Kiran, [Using FLAME Toolkit for Agent-Based Simulation: Case Study Sugarscape Model](https://arxiv.org/abs/1408.3441) (2014) | Three spatial initialization scenarios; separate behavioral results from hardware timings | [source audit](source-audits/kiran-2014.json): six Table 5 targets extracted; original C/XML and initialization details unresolved |
 | oremland-2014 | Oremland and Laubenbacher, [Optimization of Agent-Based Models](https://www.jasss.org/17/2/6.html) (2014) | Sugarscape taxation schedule, revenue, population, and reduced-model comparison | [source audit](source-audits/oremland-2014.json): 2014 dissertation Appendix B recovered; landscape, tax timing, and negative-wealth handling unresolved |
 | christley-2017 | Christley et al., [Optimal control of sugarscape agent-based model via a PDE approximation model](https://doi.org/10.1002/oca.2265) (2017; online 2016) | Tax revenue, survival, and PDE-derived controls | [source audit](source-audits/christley-2017.json): coauthor slides recovered; distinct nondepleting strip model; journal text, original implementation, and control solver unresolved; no runs |
-| lima-2024 | Lima and Aguiar, [Towards a Docker-based architecture for open multi-agent systems](https://doi.org/10.11591/ijai.v13.i1.pp45-56) (2024) | Two NetLogo Sugarscape models exchanging agents with JaCaMo; both container-only and host-GUI scenarios | complete native container, host and reload-control trajectories audited; native GUI now observed; fresh visual-scenario audit, historical runtime fidelity and lifecycle interpretation remain; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/19) |
+| lima-2024 | Lima and Aguiar, [Towards a Docker-based architecture for open multi-agent systems](https://doi.org/10.11591/ijai.v13.i1.pp45-56) (2024) | Two NetLogo Sugarscape models exchanging agents with JaCaMo; both container-only and host-GUI scenarios | completed qualified author-code feasibility reproduction; both full scenarios, saved state, native GUI and conservation verified; historical binary equivalence unproven; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/19) |
 | raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 6/6 archived Table 2 and 24/24 Table 4 statistics reproduced; 55,000/55,000 reference simulations audited with 110,000 exact Gini matches; 8,000 generated inputs also audited with 16,000 exact Gini matches; full generated landscapes and spatial sensitivity remain incomplete; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
 | carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | complete author replay: 750,000/750,000 statistics across 5,000 inputs; 38 of all 75 computed Table 8 cells match printed precision; 37 discrepancies unresolved, 15 published NA; parser/runtime sensitivity remains under investigation; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
 | stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | two complete 100-seed ensembles and all 80 boundary-sensitivity runs audited; Figure 6(b) recurrence/rounding diagnostics retained; historical semantics and remaining experiments unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8) |
@@ -78,8 +78,8 @@ Paper-specific variants must remain explicit: superficially similar Sugarscape i
 ## Current state
 
 The [evidence index](study-evidence.json) now pins eighteen pushed study commits and their README hashes.
-Three studies are complete: two mixed studies and one positive structural replication.
-The remaining fifteen are incomplete; audited cohorts and operational launches do not add paper credit.
+Four studies are complete: two mixed studies, one positive structural replication, and one qualified author-code feasibility reproduction.
+The remaining fourteen are incomplete; audited cohorts and operational launches do not add paper credit.
 The latest refresh verifies pushed Carrella, Blueprints and Lima heads, README hashes, and their committed JSON evidence files.
 Earlier checked entries retain their recorded dates; other entries remain dated snapshots of their pinned commits.
 Evidence-file counts are inventory checks, not scientific acceptance criteria.
@@ -100,8 +100,8 @@ Run overlap never adds independent seeds. Corrected-source sensitivities remain 
 
 
 2026-10-15: created the organization-owned engine fork and candidate inventory.
-Completed studies: **3 / at least 10**: two published papers and one unpublished working paper.
-Positive replication: Izquierdo’s full Sugarscape appendix; mixed outcomes: McCulloch and Dogan.
+Completed studies: **4 / at least 10**: three published papers and one unpublished working paper.
+Positive structural replication: Izquierdo’s full Sugarscape appendix; mixed outcomes: McCulloch and Dogan. Lima completes a qualified author-code architecture-feasibility reproduction, with explicit historical-runtime limits.
 McCulloch et al.: validated negative finding under the declared exact-stability criterion, with conditional posterior agreement.
 The independent model matches 660 author-code trajectories and passes 80 complete-world checks across all calibration parameters.
 All 51 variance ensembles and both 10,000-particle posterior experiments completed; raw evidence and limitations are in the study PR.
@@ -169,7 +169,7 @@ The following requirements remain separate from successful execution or source-o
 | Thaler lock-free | Table 9 retry discrepancy, historical performance interpretation, and remaining image resource/label limitations |
 | Thaler properties | Original model-suite outcome, faithful Weaver migration/pollution comparison, qualitative appendix outcomes, and remaining source/configuration discrepancies |
 | Richmond | Historical illustration/source fidelity, hardware-qualified timing comparisons, resolution histogram interpretation, and source/prose discrepancies |
-| Lima | Fresh visual-scenario completion audit, historical runtime fidelity, and interpretation of preserved-state lifecycle behavior |
+| Lima | Completed qualified author-code feasibility reproduction; all six original protocol requirements pass. Exact historical binaries and independent-engine replication are not claimed. |
 | Kiran, Oremland, Pan, Flentge | Resolve original-model specification gaps and implement their full declared experiments |
 
 Replacing's twenty seasonal seeds now have 10,020 native-parity observations and individual death-cause audits.
@@ -305,10 +305,10 @@ The corrected collector preserves native files in a verified end-to-end collecti
 
 Portable Lima container, host-native and saved-agent workflows now also complete with independently audited trajectories and conservation.
 The portable saved-agent control preserves 39 plans and the retained belief, but again departs with score 1 rather than the declared target 2.
-All 953 router deliveries reconcile and all 799 identities are conserved. Two screenshots now show the native Mining World agent moving. The fresh visual scenario still requires its full-run audit; historical-runtime fidelity remains open.
+All 953 router deliveries reconcile and all 799 identities are conserved. Two screenshots now show the native Mining World agent moving. The full visual scenario now completes 1,000 steps, 934 transfers and conservation of all 799 identities. Its claim-level audit completes the protocol; exact historical-runtime equivalence remains unproven.
 
 ## Additional candidate qualification
 
-[SocioVerse2 (2026)](source-audits/socioverse-2026-qualification/README.md) supplies a runnable Sugarscape benchmark. Ten reconstructed-seed rule controls execute, but the released evaluator and LLM settings need reconciliation with the paper before inference. This source qualification does not change the 18 study PRs or three completed studies.
+[SocioVerse2 (2026)](source-audits/socioverse-2026-qualification/README.md) supplies a runnable Sugarscape benchmark. Ten reconstructed-seed rule controls execute, but the released evaluator and LLM settings need reconciliation with the paper before inference. This source qualification does not change the 18 study PRs or four completed studies.
 
 [The candidate's legacy comparison](source-audits/socioverse-legacy-comparison-2026-10-18/README.md) executes ten original Mesa controls and independently checks their metrics and movement/resource bounds. It identifies 134 changed capacity cells and different initialization/scheduling, so the rewrite is not treated as a historical model substitute.

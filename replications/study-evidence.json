@@ -1,9 +1,9 @@
 {
-  "as_of": "2026-10-18T09:57:08.109954+00:00",
+  "as_of": "2026-10-18T10:30:31.805291+00:00",
   "minimum_completed_papers": 10,
-  "completed_studies": 3,
+  "completed_studies": 4,
   "wholly_positive_papers": 1,
-  "interpretation": "Three completed studies: McCulloch mixed, Dogan mixed unpublished working paper, and Izquierdo positive structural Sugarscape-appendix replication. Other study entries remain dated snapshots of their pinned commits; incomplete studies receive no completion credit.",
+  "interpretation": "Four completed studies: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural replication, and Lima qualified author-code architecture-feasibility reproduction. Lima does not establish independent-engine replication or exact historical binary equivalence; its supplemental score test remains failed. Other entries retain dated evidence and receive no completion credit.",
   "studies": [
     {
       "study": "mcculloch_2022",
@@ -217,14 +217,15 @@
     {
       "study": "lima_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/19",
-      "status": "partial",
-      "checked_commit": "e4424274f553a7a69f7a4cbaa49a246d24f3204e",
+      "status": "completed-qualified-author-code",
+      "checked_commit": "363175bde20af32cda1530af8f95bf7809f57c43",
       "readme": "replications/lima_2024/README.md",
-      "readme_sha256": "e7c1110fce3d625179dd88097ff7795deede64c641f1bdfcb3099155791a027f",
-      "json_evidence_files": 60,
+      "readme_sha256": "12e8bd687390cdc7420a2cd646e4bff4a8f5feff96e6fb6b9397b65126c138f7",
+      "json_evidence_files": 70,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "Original and portable container, host-native and checkpoint-control trajectories audited. Portable control preserves 953 deliveries, 799 identities and 39 plans; score remains 1 instead of 2. Native GUI now directly observed with two screenshots and process provenance. Fresh visual scenario still running; full-run reconciliation, historical runtime fidelity and lifecycle interpretation remain unresolved.",
-      "checked_at": "2026-10-18T10:19:00.439186+00:00"
+      "remaining_scope": "All six original protocol requirements pass for both complete native scenarios, saved state, conservation and interfaces. Qualified architecture-feasibility author-code reproduction; no independent-engine or exact historical-binary equivalence claim. Supplemental score-increment test remains failed and explained; it is not a published numerical target.",
+      "checked_at": "2026-10-18T10:30:31.805291+00:00",
+      "completion_audit": "replications/lima_2024/results/claim-audit-2026-10-18/verdict.json"
     },
     {
       "study": "openabl_2021",
