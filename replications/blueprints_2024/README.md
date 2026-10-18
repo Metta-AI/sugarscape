@@ -997,3 +997,9 @@ Final local retry evidence in `results/bentham-timeout-retry-2026-10-18-006` add
 The seven local inputs blocked by disk space are assigned to a separate bounded two-CPU execution in `results/bentham-disk-recovery-launch-2026-10-18`. They are disjoint from the existing 152-input queue. Completion counts remain unchanged pending audited outputs.
 
 Three additional Raw runtime inputs in `results/runtime-memory-prefix3-2026-10-18` raise coverage to 871/1,200 and 2,700,518 observations. One completes 50,000 steps; two end in natural extinction. The verified delta and previous checkpoint reconstruct the full sealed evidence exactly.
+
+## Runtime batch terminal audit
+
+[The final bounded batch audit](results/runtime-memory-terminal-2026-10-18) adds one original 50,000-step trajectory.
+Exact coverage reaches 872/1,200 deposited runtime inputs and 2,750,519 observations.
+Both workers reached their time limits; partial trajectories receive no credit. Final evidence is exported, and the node is stopped with disk intact.
