@@ -13,6 +13,7 @@ parser.add_argument(
     "checkpoint", type=Path, help="Extracted checkpoint containing results/"
 )
 parser.add_argument("output", type=Path, help="New audit directory")
+parser.add_argument("--start-ordinal", type=int, default=0, choices=range(45))
 args = parser.parse_args()
 root = args.checkpoint / "results"
 assets = Path(__file__).resolve().parent
@@ -63,7 +64,7 @@ assert {
 } == expected
 assert [c["table"] for c in schedule] == [6] * 25 + [8] * 20
 progress = json.loads((root / "progress.json").read_text())
-assert 0 < len(progress) <= 45
+assert 0 < len(progress) <= 45 - args.start_ordinal
 ledger = [
     json.loads(line) for line in (root / "attempts.jsonl").read_text().splitlines()
 ]
@@ -72,7 +73,7 @@ assert ledger == [
 ]
 rows = []
 files = {"manifest.json", "progress.json", "attempts.jsonl"}
-for ordinal, condition in enumerate(progress):
+for ordinal, condition in enumerate(progress, args.start_ordinal):
     spec = schedule[ordinal]
     assert condition["ordinal"] == ordinal and condition["condition"] == spec
     variant, caps, agents = spec["variant"], spec["caps"], spec["agents"]
@@ -169,7 +170,9 @@ summary = {
     "complete_grid": len(progress) == 45 and all(c["accepted"] for c in progress),
     "max_slope_error": max(row["slope_error"] for row in rows),
     "max_r_squared_error": max(row["r_squared_error"] for row in rows),
-    "missing_conditions": schedule[len(progress) :],
+    "missing_conditions": (
+        schedule[: args.start_ordinal] + schedule[args.start_ordinal + len(progress) :]
+    ),
     "hardware_allocation": {
         "affinity": affinity,
         "effective_cpuset": sorted(allocated),

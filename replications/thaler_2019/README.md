@@ -603,3 +603,10 @@ The original TVar executable segfaulted for four capabilities and 500 rebirthing
 The failed attempt remains archived; its cause is unresolved.
 Four timing conditions remain required, alongside the population, retry, Table 9 and graphical-source work.
 This is an execution failure, not a negative replication verdict.
+
+### Bounded continuation of the four missing timings
+
+[The frozen continuation](results/timing-continuation-launch-2026-10-18) waits for
+the population experiment before running ordinals 41–44 on the same allocation.
+It retains the original failed attempt and uses unchanged model source and GHC 8.4.3.
+Results remain pending; the continuation alone cannot establish full-grid completion.
