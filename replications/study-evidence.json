@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-18T08:09:59.182216+00:00",
+  "as_of": "2026-10-18T09:17:19.383961+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 3,
   "wholly_positive_papers": 1,
@@ -19,14 +19,14 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "affcef8a99ff7a4717a027961a24b99d9e5f3ce7",
+      "checked_commit": "1ba097490261934fb3430cebac5d6e008ccb25af",
       "status": "partial",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "a07d07fb52b56da5ed0b2880b354783576dea5b1072c13be6b1f4dd890f21526",
-      "json_evidence_files": 256,
-      "remaining_scope": "All 5000 independent simulations and 750000 statistics audited. LM, rejection ABC, degree-one ABC and quantile forest complete both required sizes; degree-four and local-linear ABC complete 5000. Observation and completed-fold recovery controls preserve exact results and RNG states. Neural-network, GAM and bootstrap-forest workflows remain unfinished; historical Table 8 discrepancies unresolved.",
+      "readme_sha256": "f2bd7473c56529af0b80cde52e798209ff9392b2ff8b6fd96c23c857042a89a3",
+      "json_evidence_files": 260,
+      "remaining_scope": "All 5000 independent simulations and 750000 statistics audited. Six estimator families complete required sizes. GAM1250 completes all five folds and 6250 predictions; paired author/independent comparison reproduces neither set of five printed targets. GAM5000, neural-network and bootstrap-forest workflows remain unfinished; historical discrepancies remain unresolved.",
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T08:05:24.633995+00:00"
+      "checked_at": "2026-10-18T09:17:19.383961+00:00"
     },
     {
       "study": "raimbault_2019",
@@ -43,14 +43,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "c52feb590239bbd59a561423ef5e6473599966f3",
+      "checked_commit": "76e83025b2f88b1dc017862bdde7747dc9034c78",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "08ce95784556603fc2c1745a2435522da4aafb6a4a3c3d8824f2e8125a1a6a29",
-      "json_evidence_files": 643,
-      "remaining_scope": "1805/2000 homogeneous and 856/1200 deposited runtime inputs audited. Raw, Altruist and Egoist complete 500 inputs each; Bentham305. Egoist Table3 matches331/5/164; five figure paths match24432 vertices and all-cause Figure6 matches4992. Released death-definition discrepancy retained. Snapshot preserves21 Bentham timeouts, all required. Full Bentham ensemble, other sweeps and runtime schedule discrepancy remain incomplete.",
+      "readme_sha256": "3766185c6c8258c0e3af14bc2d80388330b1990e31ae155e420b131dcae80d89",
+      "json_evidence_files": 701,
+      "remaining_scope": "1833/2000 homogeneous inputs and 856/1200 deposited runtime inputs audited. Bentham333/500 leaves167 original inputs. Full selfishness/mixed-society sweeps, longer horizons and deposited100-input versus reported500-input runtime schedule remain incomplete.",
       "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-18T08:05:24.633995+00:00"
+      "checked_at": "2026-10-18T09:17:58.986857+00:00"
     },
     {
       "study": "bigbee_2007",
@@ -170,14 +170,14 @@
     {
       "study": "thaler_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
-      "checked_commit": "63b0faf3b4b0842907cdad09ba61028124fff6bd",
+      "checked_commit": "68b24a6c32fdbcbae93bda4e90ae973f09cebc14",
       "status": "running",
       "readme": "replications/thaler_2019/README.md",
-      "readme_sha256": "ac760611d8e12c215f33a8c6d6012c1aaa4bcfaf660ec10f5c4d936a35f302ea",
-      "json_evidence_files": 156,
+      "readme_sha256": "e06a2a06238e7643af4a46859d3d1bba591696f701d6ff33d60fe33804207bf5",
+      "json_evidence_files": 168,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "All51 native timing conditions across Tables6,8,9 audited, with204 raw measurements. Population225 processes and retry90 processes audited; Table9 adds30 retry processes. Hardware differs from publication. Figure5a provenance and normal32 retry discrepancy remain unresolved; prior TVar segfault retained.",
-      "checked_at": "2026-10-18T05:55:34.659957+00:00"
+      "remaining_scope": "All51 timing cells,225 population processes and90 retry processes audited. Author Figure5a image matches all201 occupied positions uniquely at exported step83, rather than caption step50, in two identical native replays. Resource/label interpretation and historical performance remain limited. Normal32 retry discrepancy remains unresolved; six-process Criterion-versus-single control is active, with no terminal verdict.",
+      "checked_at": "2026-10-18T09:17:19.383961+00:00"
     },
     {
       "study": "thaler_properties_2019",
@@ -218,15 +218,15 @@
     {
       "study": "openabl_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/20",
-      "checked_commit": "d981235833ec07b6e44c48d320a71e29ea098138",
+      "checked_commit": "acf37262740cf14092345caac51d5a004d6f40a3",
       "status": "partial",
       "readme": "replications/openabl_2021/README.md",
-      "readme_sha256": "ae763508dd6e38e7b244e6c6552c671b7e897fb2c226cd2e06aaa605d346a2b4",
-      "json_evidence_files": 126,
+      "readme_sha256": "57a23adea788550ea5407b33ccff56f0ff44d6a203b688431b4d9a47ea964c3e",
+      "json_evidence_files": 129,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T08:09:59.182216+00:00",
+      "checked_at": "2026-10-18T09:17:19.383961+00:00",
       "evidence_scan_scope": "All JSON files under replications/openabl_2021",
-      "remaining_scope": "All13 GPU size conditions executed. Twelve new sizes pass structural checks across206257655 observations and exact16337240-field initialization reconstruction; archived model-source hashes and exit-zero logs verified. Earlier C/MASON/FLAME grids and paired D-MASON controls retained. Historical performance, native transition equivalence, distributed1M-cell1000-step scaling and exact154-line claim remain incomplete."
+      "remaining_scope": "All13 GPU size conditions executed and audited. Whole-runner timing comparison is descriptive: different hardware, one observation per size and XML I/O included. Historical performance, native transition equivalence, distributed1M-cell1000-step scaling and exact154-line claim remain incomplete."
     }
   ],
   "study_prs": 18,
