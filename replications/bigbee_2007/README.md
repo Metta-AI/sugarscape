@@ -182,3 +182,7 @@ Its description dates the release to 2007; the catalog upload occurred in 2011.
 Those dates are not interchangeable and neither proves which revision produced the paper’s results.
 The bundled MASON 12 versus reported MASON 10 mismatch remains, as do the native accounting defects.
 No earlier experiment snapshot was recovered from this catalog; other historical distribution sites remain possible.
+
+## Archived author download page
+
+[The December 2008 author-page snapshot](results/author-download-page-2026-10-18) pairs release 1.1.2 with MASON 12 and displays a November 25, 2007 release date. This corroborates the framework pairing before the 2011 mirror. Links to versions 1 and 1.1.1 were recovered, but their package bytes were not. The paper’s MASON 10 experiment snapshot remains unidentified.
