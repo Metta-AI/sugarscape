@@ -1001,3 +1001,7 @@ Linear regression, rejection ABC and degree-one ABC now complete both
 required sample sizes on the independent ensemble. Other independent
 estimators and historical Table 8 discrepancies remain open. Cross-stream
 comparisons do not establish equivalence or complete the paper.
+
+### Independent degree-four estimator in progress
+
+[The recorded launch and scope correction](results/independent-sabc4d-launch-2026-10-18) retain an erroneous 1,250-input attempt and its native failure. That paper cell is NA. The required 5,000-input workflow now runs unchanged with a four-hour bound and post-run prediction and input audits. No additional completed study or estimator result is claimed.
