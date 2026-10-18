@@ -1046,3 +1046,7 @@ Sweeps, longer horizons, runtime requirements, and remaining figure analysis sti
 [Four more original runtime inputs](results/runtime-continuation-prefix-2026-10-18) add 50,468 audited observations: one full 50,000-step trajectory and three native extinctions.
 Exact deduplication reaches 877/1,200 deposited inputs and 2,850,988 observations. The bounded producer continues; unfinished inputs receive no credit.
 The deposited 100-seed schedule still does not fulfill the paper's 500-seed Table 6 experiment.
+
+## First bulk selfishness-0.37 checkpoint
+
+[The first 25 bulk inputs](results/selfishness037-prefix-2026-10-18) pass independent local audit for all 125,025 observations. All reach 5,000 steps. The archive matches its sealed export hash; all member hashes and producer/local audit pairs match. The reconciled inventory now counts 35 unique completed supplementary inputs and 99,965 remaining. Condition 0.37 has 28 of 500 completed inputs. This completion-order prefix supplies no condition aggregate or paper completion credit; the bounded batch continues.

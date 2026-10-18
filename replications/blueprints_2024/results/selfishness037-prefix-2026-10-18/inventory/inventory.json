@@ -1,0 +1,2320 @@
+{
+  "release": "b9ca671ab7591c7b3606f2d76c33eda344d626d1",
+  "archive_sha256": {
+    "selfishness": "e2016f36a9728c23cee025d7a2e63cd2feffe4c36fbd62970e3a7792cb4d19e7",
+    "heterogeneous": "c37aa109e59ca8b96cd295b7f022d6bf56f413aabbf246ca432ff5d4360de91a"
+  },
+  "required_inputs": 100000,
+  "completed_sources": [
+    {
+      "audit_directory": "replications/blueprints_2024/results/supplement-controls-2026-10-17/audits",
+      "native_archive": "replications/blueprints_2024/results/supplement-controls-2026-10-17/native.tar.gz",
+      "native_archive_sha256": "a47c912d3f0807229e9ce3db4dfb0b101bae5000de61e7ea308a5cd85abca5e4",
+      "audited_inputs": 6
+    },
+    {
+      "audit_directory": "replications/blueprints_2024/results/runtime-pairs-2026-10-17/audit",
+      "native_archive": "replications/blueprints_2024/results/runtime-pairs-2026-10-17/native.tar.gz",
+      "native_archive_sha256": "6342d5c647d7ef151adf253241b883465896522d1a9b88f6a35c5cc2452f809f",
+      "audited_inputs": 2
+    },
+    {
+      "audit_directory": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/audits",
+      "native_archive": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/checkpoint-pilots.tar.gz",
+      "native_archive_sha256": "946c721d23a587d5efff4180a0aa0876208203df4dca8a0930d6e36d21b4e9fd",
+      "audited_inputs": 4
+    },
+    {
+      "audit_directory": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits",
+      "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+      "native_archive_sha256": "912538b378d2ad5a623ec62240469224a567f8855166b49e4724128a12d0578b",
+      "audited_inputs": 25
+    }
+  ],
+  "remaining_inputs": 99965,
+  "shared_seeds": [
+    158402133555746433,
+    175856849482260318,
+    177137446849847291,
+    209866033564004520,
+    238165197779399277,
+    275110934556063992,
+    285703474179482122,
+    311115376827154686,
+    337899476882681052,
+    340852978821900464,
+    346439642185867563,
+    349619002715725941,
+    369777682750474578,
+    380955681873155081,
+    382040834813186390,
+    404603357698709850,
+    419262194845335739,
+    440566039967529741,
+    450748597033432720,
+    457361431569965817,
+    460149852129392939,
+    468785931549304338,
+    490047438642249340,
+    498783583481262546,
+    519156578215194730,
+    530238075247992587,
+    570853383711153723,
+    584545844672932717,
+    601747005843301610,
+    613381239513683363,
+    624457554156745065,
+    635676272904926704,
+    655552548709813922,
+    663700773870722021,
+    668711073846793172,
+    680129577361409712,
+    689681424439763653,
+    689902557931148885,
+    703598546753609220,
+    731799750051967672,
+    765101977723530109,
+    773420515702318362,
+    784673131426145754,
+    785416830398779692,
+    835765861021016659,
+    846762535874553816,
+    848508507343171767,
+    859182242037618418,
+    872461401220666624,
+    901278515096465478,
+    902530528031319436,
+    920057750098825653,
+    956193024206524442,
+    959953450200331363,
+    977868131476438614,
+    983401245759257068,
+    986217164246675057,
+    1044932834802521814,
+    1047840195371099687,
+    1052444976753030140,
+    1053314377464247423,
+    1063579143837049677,
+    1070491396471055707,
+    1072909028581963138,
+    1079897331949952922,
+    1082393941172830200,
+    1094233484176390113,
+    1109860648199565578,
+    1113456709891828571,
+    1139514586838715191,
+    1153924273002767570,
+    1193247888052221378,
+    1233067699360264716,
+    1235083787285745207,
+    1247849724732551819,
+    1254106714873597359,
+    1270184133690992322,
+    1280901202859883429,
+    1288598867396776898,
+    1291904393419366296,
+    1297493895380503287,
+    1298266412039602124,
+    1319252082315724448,
+    1319948328544017925,
+    1334731553345852678,
+    1348390354187324392,
+    1359404949007720544,
+    1363447806151512002,
+    1380635906299364845,
+    1440437373991260400,
+    1463712356189053169,
+    1468503979880031072,
+    1470653421161831391,
+    1512545940192165467,
+    1530994343071641336,
+    1536791303376280255,
+    1555657386466497304,
+    1592542449511139932,
+    1609969291442293190,
+    1675981611313432253,
+    1699493264997127801,
+    1709423058422636144,
+    1715589679358392957,
+    1729487573377343100,
+    1733922351158320141,
+    1735937440315396203,
+    1758318642328596812,
+    1802411219399068431,
+    1823687216165022946,
+    1824130813090282559,
+    1859274993552365414,
+    1877734808722157172,
+    1889951933564338114,
+    1901155764328466682,
+    1939733711502684468,
+    1940916411417830863,
+    1969904073141498978,
+    1996241008433945587,
+    2009581725043069747,
+    2060968127868463485,
+    2077165266000589833,
+    2157651943410725453,
+    2170005679457195708,
+    2183727325420396370,
+    2185482684782988612,
+    2208631987014131776,
+    2214172059989836120,
+    2229221462438655705,
+    2289603482179039710,
+    2291145593174368950,
+    2361390333587256182,
+    2369574832526434850,
+    2370010444570231369,
+    2381485344872413711,
+    2387650022012358909,
+    2388936107119140191,
+    2420744157521560887,
+    2483216780622132986,
+    2513573707559938025,
+    2577648585074031495,
+    2619307628467993945,
+    2627344384652811600,
+    2633622880550445485,
+    2656982685209633033,
+    2664542518672722136,
+    2681981469776546748,
+    2756918492959522804,
+    2776046745237740637,
+    2805327632841556872,
+    2847467790966455473,
+    2894409412357526145,
+    2928919948642262303,
+    2950576839187693085,
+    2978767121380349240,
+    3029592770614318108,
+    3031959061600682352,
+    3037731887305531318,
+    3080447128953811521,
+    3083379455419391971,
+    3100771709220344633,
+    3130560300212625915,
+    3179381068919553722,
+    3212903396888577867,
+    3241066983949209131,
+    3254269434043330167,
+    3279236007363554868,
+    3280897779537085950,
+    3286628165250219210,
+    3291190799162476839,
+    3313297389939560696,
+    3313592225750345245,
+    3351642915356722722,
+    3366708669395618643,
+    3408059079860468147,
+    3440737680066606591,
+    3458965655990623631,
+    3465535345500700256,
+    3488041093975898946,
+    3539323447380265440,
+    3565338351810780878,
+    3570908860894484402,
+    3573723820242427017,
+    3573933913596124850,
+    3579894407993171827,
+    3584062345757521995,
+    3588015731084150522,
+    3592399515945518777,
+    3607651362576730995,
+    3616167824915624028,
+    3618253521922326876,
+    3647330525768885984,
+    3648104118796151117,
+    3654058214302781386,
+    3686749064656266026,
+    3702722406025063529,
+    3714702612667776603,
+    3729824025252728098,
+    3782800091293713213,
+    3824571603106069952,
+    3847019377264748987,
+    3870084188950811967,
+    3891569450635021708,
+    3911178782231082823,
+    3916759863802903962,
+    3932893849138539905,
+    3936646431813069552,
+    3959066368858068159,
+    3979900374252519060,
+    3980819237122592643,
+    4012090281180847108,
+    4050445856966198186,
+    4073812963572136710,
+    4120068986275141671,
+    4137951150182024287,
+    4151619118342789587,
+    4156474589021464271,
+    4191298840464005437,
+    4192925732238570134,
+    4208064564498143183,
+    4212066701122151273,
+    4212262627839727271,
+    4220987686023315387,
+    4260884763858895255,
+    4283649128375280212,
+    4290660761210829058,
+    4305319044412515626,
+    4318391225590412394,
+    4322857474273933961,
+    4335070638830477102,
+    4335335063942041261,
+    4348769395949157104,
+    4349919276059682151,
+    4358394366500297905,
+    4367580375900955609,
+    4372043094673445202,
+    4375818342599997359,
+    4377311383712979620,
+    4393139615085228943,
+    4405708370898770069,
+    4414529524700146287,
+    4419331102752867088,
+    4435721289466590190,
+    4439543845877460037,
+    4471367600967201477,
+    4485825966651883613,
+    4519066998061466887,
+    4536837957959267379,
+    4545923693926126457,
+    4553116222169214413,
+    4585561232174947619,
+    4592104806555126190,
+    4627406532021948174,
+    4651346501679702951,
+    4668356957415451449,
+    4680530929482761719,
+    4705595955654730755,
+    4709405610235404168,
+    4725912836415925128,
+    4746469224097112843,
+    4749878934219475975,
+    4755779252370120351,
+    4773507270191285072,
+    4779321687271683802,
+    4782127076432651114,
+    4812550299643995444,
+    4832144598789677445,
+    4841724115181814440,
+    4865385569843070049,
+    4865572446744984131,
+    4886005596606838496,
+    4893200983412371952,
+    4893720129238770169,
+    4898347074412332614,
+    4903442537013278109,
+    4911447754346305614,
+    4917277954810708288,
+    4924450696684077960,
+    4939630820525923844,
+    4949093510471888483,
+    4986374456977238187,
+    5008653198738249826,
+    5015081772822206471,
+    5049060952899332926,
+    5071557610835901109,
+    5079288152843007892,
+    5169423246726545646,
+    5193952046582346415,
+    5200749333348563875,
+    5214892100153966662,
+    5226174062342390640,
+    5258544719101233365,
+    5262752621655686340,
+    5299921647111273341,
+    5306209880964937036,
+    5315768207953620733,
+    5322047387230311691,
+    5322088368832454314,
+    5358781984101459954,
+    5375629497885114591,
+    5379436640924162905,
+    5454050486209463229,
+    5535352732677322983,
+    5546605841926489529,
+    5570603644478252598,
+    5574324921041524767,
+    5595639686588143465,
+    5630534955583856302,
+    5651411263657809755,
+    5652233604721026317,
+    5656508181500331405,
+    5691372494368594869,
+    5702307015667554484,
+    5766482427597575012,
+    5792095584643019201,
+    5797448636817404900,
+    5823505566249108022,
+    5844435284596351540,
+    5868518227874682112,
+    5937141646423353942,
+    5938522328610785098,
+    5959830965944758536,
+    5992670776461100323,
+    5998099875664109620,
+    6000259499143367293,
+    6050197700377984538,
+    6091892141399416760,
+    6093846047672736498,
+    6137628971395194419,
+    6144005185935343913,
+    6148427743218987401,
+    6153852370960353609,
+    6158128826727768255,
+    6167067325050248690,
+    6173648424707615686,
+    6179414898995988742,
+    6220214936262116752,
+    6261077808091577057,
+    6280406712694327752,
+    6286188884552127069,
+    6306594374393076945,
+    6324878210949152277,
+    6386837576402374403,
+    6440149902611521794,
+    6455409540992560137,
+    6457943928766880712,
+    6463423271901259552,
+    6470221526393475915,
+    6472332735662369594,
+    6508047737494326992,
+    6510614758213865323,
+    6536173931345365789,
+    6541028918202606172,
+    6562124879500985245,
+    6589873606324423751,
+    6596648333047620229,
+    6631427774681279428,
+    6631602690175826146,
+    6642782534902193019,
+    6665981418661599640,
+    6671406243506061991,
+    6676516733472316028,
+    6712575527833568135,
+    6723191778994568217,
+    6730017930750525344,
+    6736589560860251274,
+    6760081042280090997,
+    6766255802373522058,
+    6814117811123736432,
+    6820616087728165556,
+    6832841485660408195,
+    6857570390509942007,
+    6891026741706763747,
+    6911300150526407226,
+    6958041507654698457,
+    6960814613782451654,
+    6967018226380173105,
+    6976379517588623376,
+    6976775203994786460,
+    7068591249382591025,
+    7071828415583913229,
+    7074104263051287352,
+    7076017018358237849,
+    7076397680518457822,
+    7098977597691133660,
+    7111011986894041215,
+    7124910836039807453,
+    7186796730385414917,
+    7205697508760572550,
+    7212550407938738440,
+    7220913985823835302,
+    7238524028304106244,
+    7249381021204602523,
+    7251226561263318269,
+    7260110885204953945,
+    7264863590420636840,
+    7335946278858441728,
+    7341244910264625673,
+    7354737296530814198,
+    7367293677457600217,
+    7382679039913839491,
+    7382846066072756711,
+    7466483049178075658,
+    7473241030743128168,
+    7499017764600412633,
+    7509330297217916356,
+    7520745169988957885,
+    7534463729209292032,
+    7545760728218103928,
+    7559427772210667942,
+    7585095854682772808,
+    7611145716764182231,
+    7611596554808117923,
+    7652226925133459783,
+    7654486604332580157,
+    7657372700650035207,
+    7663797091213918951,
+    7667839213189356757,
+    7705165015753540619,
+    7730607098056285168,
+    7771494938550934711,
+    7774344035470231058,
+    7839180315996281567,
+    7853914801418268465,
+    7868719439272011025,
+    7872239467240732219,
+    7877561896058630824,
+    7884981989525576001,
+    7920473864506472639,
+    7935043809970132554,
+    7937478540093586704,
+    7944652168385909221,
+    7982415766439510532,
+    7990668540495452526,
+    7993184258000224018,
+    7995749961418922652,
+    8002654488081595615,
+    8006371235992066174,
+    8006986510311734812,
+    8013429722769035261,
+    8067600475740748688,
+    8100043345116563091,
+    8119859726557158697,
+    8141848663143288595,
+    8149629752604643258,
+    8172106296556986560,
+    8183373166552857609,
+    8208977990247045451,
+    8211121220723923521,
+    8264002104079766253,
+    8266698178000332942,
+    8303265161711135825,
+    8325267989456925514,
+    8338163462517962044,
+    8354463434896959425,
+    8366504338797883575,
+    8385145430811555002,
+    8443748817866679480,
+    8467415830491622997,
+    8523521939041977275,
+    8525419003965527765,
+    8539697944784643463,
+    8540077219743426761,
+    8611853178106367524,
+    8618954401327858930,
+    8628716532290168066,
+    8657437855355526257,
+    8663311444148041087,
+    8665784923025720778,
+    8700221970125091462,
+    8717061493801092575,
+    8751114965364183489,
+    8754360493150801493,
+    8755249704926934192,
+    8762603510423388675,
+    8788866356414928290,
+    8794371152358105441,
+    8797133113997785948,
+    8814752676882130582,
+    8835135395631634572,
+    8858110728461947163,
+    8863020487347487138,
+    8877038468309280736,
+    8892664387611295885,
+    8925916630004990709,
+    8927322354812584041,
+    8980456150572989187,
+    8987908268059460980,
+    8990896505696034960,
+    9035328790603082415,
+    9037703132083266402,
+    9058024766655513111,
+    9060839096101387427,
+    9063303646255022585,
+    9070319726214578321,
+    9077614460338874204,
+    9086011986168642316,
+    9142261509055007660,
+    9174134269944612860,
+    9194507009404838026,
+    9194601115904245429
+  ],
+  "conditions": [
+    {
+      "experiment": "heterogeneous",
+      "condition": 1,
+      "required": 500,
+      "remaining": 499
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 2,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 3,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 4,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 5,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 6,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 7,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 8,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 9,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 10,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 11,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 12,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 13,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 14,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 15,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 16,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 17,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 18,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 19,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 20,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 21,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 22,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 23,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 24,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 25,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 26,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 27,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 28,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 29,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 30,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 31,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 32,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 33,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 34,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 35,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 36,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 37,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 38,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 39,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 40,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 41,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 42,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 43,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 44,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 45,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 46,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 47,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 48,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 49,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 50,
+      "required": 500,
+      "remaining": 499
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 51,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 52,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 53,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 54,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 55,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 56,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 57,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 58,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 59,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 60,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 61,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 62,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 63,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 64,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 65,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 66,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 67,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 68,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 69,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 70,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 71,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 72,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 73,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 74,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 75,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 76,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 77,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 78,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 79,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 80,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 81,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 82,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 83,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 84,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 85,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 86,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 87,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 88,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 89,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 90,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 91,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 92,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 93,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 94,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 95,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 96,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 97,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 98,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "heterogeneous",
+      "condition": 99,
+      "required": 500,
+      "remaining": 499
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 0,
+      "required": 500,
+      "remaining": 499
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 1,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 2,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 3,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 4,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 5,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 6,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 7,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 8,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 9,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 10,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 11,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 12,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 13,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 14,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 15,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 16,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 17,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 18,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 19,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 20,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 21,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 22,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 23,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 24,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 25,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 26,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 27,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 28,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 29,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 30,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 31,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 32,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 33,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 34,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 35,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 36,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 37,
+      "required": 500,
+      "remaining": 472
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 38,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 39,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 40,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 41,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 42,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 43,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 44,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 45,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 46,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 47,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 48,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 49,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 50,
+      "required": 500,
+      "remaining": 499
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 51,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 52,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 53,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 54,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 55,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 56,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 57,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 58,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 59,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 60,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 61,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 62,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 63,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 64,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 65,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 66,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 67,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 68,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 69,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 70,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 71,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 72,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 73,
+      "required": 500,
+      "remaining": 499
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 74,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 75,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 76,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 77,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 78,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 79,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 80,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 81,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 82,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 83,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 84,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 85,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 86,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 87,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 88,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 89,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 90,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 91,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 92,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 93,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 94,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 95,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 96,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 97,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 98,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 99,
+      "required": 500,
+      "remaining": 500
+    },
+    {
+      "experiment": "selfishness",
+      "condition": 100,
+      "required": 500,
+      "remaining": 499
+    }
+  ],
+  "excluded_controls": [
+    {
+      "experiment": "heterogeneous",
+      "entry": "1-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433.config",
+      "configuration_sha256": "2ef394dd05492c4eab64c9f9461075e330b9cd83f37d5a97c17affeefcbf75d6",
+      "trajectory_sha256": "0be99e8b57d11657f01a93bb60bdddbcd79d0f61c6e66735f8af6735dea48c75",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/supplement-controls-2026-10-17/audits/1-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433/audit.json",
+          "audit_sha256": "f62e8be7b9e6e0639b5d80cc79cc7da78e205a2eef7b116dacc5d9aee0a8d9fe",
+          "native_archive": "replications/blueprints_2024/results/supplement-controls-2026-10-17/native.tar.gz",
+          "manifest_members": [
+            "runs/1-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "heterogeneous",
+      "entry": "50-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433.config",
+      "configuration_sha256": "bda9fffdc06a7dc6c669c17ff220fce98d11bcc539f973108db920695dc4de12",
+      "trajectory_sha256": "513dda7af8b05f36ad3dae2e0309b762b5e981f7f688a46d0ffc4d9b47554086",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/supplement-controls-2026-10-17/audits/50-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433/audit.json",
+          "audit_sha256": "11562d2d9a2195e1a8afb3638f1af9de394bd461d96ce779709941ec26fdf16d",
+          "native_archive": "replications/blueprints_2024/results/supplement-controls-2026-10-17/native.tar.gz",
+          "manifest_members": [
+            "runs/50-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "heterogeneous",
+      "entry": "99-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433.config",
+      "configuration_sha256": "a116bb0ff96bf6c531137edb86ae0345cf635b630907fdc16e31c6e8207ff4ac",
+      "trajectory_sha256": "fe7ef9a73d3ae3879b30e6735814baebdc70b4f29bfa45d01de19a65234c4b81",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/supplement-controls-2026-10-17/audits/99-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433/audit.json",
+          "audit_sha256": "80507947bb75ae9b3fea259a7b18a55a04b1bbc4d21fbf8ff79910dd09f50a48",
+          "native_archive": "replications/blueprints_2024/results/supplement-controls-2026-10-17/native.tar.gz",
+          "manifest_members": [
+            "runs/99-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.0-benthamHalfLookaheadBinary158402133555746433.config",
+      "configuration_sha256": "dd1c57289c7d57d86a0e487002cf83c9df2bfc056032e40a668fd29a95d06831",
+      "trajectory_sha256": "dd873c5bac4e0ff7292d021a3d133d01d177503ca4033af717b9e9c8f5b63fbc",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/supplement-controls-2026-10-17/audits/0.0-benthamHalfLookaheadBinary158402133555746433/audit.json",
+          "audit_sha256": "387d2c7258783d78dde47459bb08d9100333f5b52bdec4e61d759f0e87464d94",
+          "native_archive": "replications/blueprints_2024/results/supplement-controls-2026-10-17/native.tar.gz",
+          "manifest_members": [
+            "runs/0.0-benthamHalfLookaheadBinary158402133555746433/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary158402133555746433.config",
+      "configuration_sha256": "304662155f2e1149444801d4a4948a7b76776e3573da3619adf66eaeb4357301",
+      "trajectory_sha256": "6cd233dc1f4a30f0237e7d5c60774a74ceed7a78bbb4ed34e87c5b67232d7979",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/audits/0.37-benthamHalfLookaheadBinary158402133555746433-cpython/audit.json",
+          "audit_sha256": "e87ef1219819da563b9ad47a5510c7e4e0a5dc74322a3e6bd280e49f42ed7667",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/checkpoint-pilots.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary158402133555746433-cpython/manifest.json"
+          ]
+        },
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/audits/0.37-benthamHalfLookaheadBinary158402133555746433-pypy/audit.json",
+          "audit_sha256": "2e4d114f999d0578b5760e686e37e1e57e6bfa8ba246794dcba76fe8f72f93a1",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/checkpoint-pilots.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary158402133555746433-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary175856849482260318.config",
+      "configuration_sha256": "e3034c77d5ad21b1aa2b4355da8a99e16cac2f8569c88a0f18b7a73f45d40c11",
+      "trajectory_sha256": "9779bf8fbfdeac8017364d65d26dc557b660a7d1892255e1d11dc011a0a89221",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/runtime-pairs-2026-10-17/audit/0.37-benthamHalfLookaheadBinary175856849482260318/audit.json",
+          "audit_sha256": "819217c770185b9969ca05cd7121eb63bd3b28c519e4ab9961fa668cf26c7c4a",
+          "native_archive": "replications/blueprints_2024/results/runtime-pairs-2026-10-17/native.tar.gz",
+          "manifest_members": [
+            "cpython-0.37-benthamHalfLookaheadBinary175856849482260318/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary177137446849847291.config",
+      "configuration_sha256": "441e2da73a933f49fc6313b41c3371dafd75e8e4f49a299b1b6b90acc9aab0b4",
+      "trajectory_sha256": "a429e02091bed3e70a13827d87e09f96fe6940c821713ab0b5222c31f8812616",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/audits/0.37-benthamHalfLookaheadBinary177137446849847291-cpython/audit.json",
+          "audit_sha256": "49671c5c8ee84cde1592b645cdc2b532c25194c7fc3383ad8f8bd68bb8f7e253",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/checkpoint-pilots.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary177137446849847291-cpython/manifest.json"
+          ]
+        },
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/audits/0.37-benthamHalfLookaheadBinary177137446849847291-pypy/audit.json",
+          "audit_sha256": "86f9086da3d97efb436fa176a04c05202253d410fc4419dd02a4ea14fd813cd9",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-pilots-2026-10-18/checkpoint-pilots.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary177137446849847291-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary209866033564004520.config",
+      "configuration_sha256": "721e5ceb9c92ebbd3c0f2e5501728ae7f2bdaac387d0decfa68253969984b100",
+      "trajectory_sha256": "f4d53ff8b249c4cd08e4c4fd6b9f801ac99cc6b40af61b8c18d0b1cdada172a4",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary209866033564004520-pypy/audit.json",
+          "audit_sha256": "98ac22958a53eedf9792a68226bc5b24124d5dcd6dc07560d257688bbc4dd488",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary209866033564004520-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary238165197779399277.config",
+      "configuration_sha256": "6384c7d49555a4efed1ccc5da4b5dc2e42a3ccf38df2198cec058831a3214ad7",
+      "trajectory_sha256": "20bf221eddc9c6a4c7ac935607807f1db2528f9d25f78a5ce2084150f1239b91",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary238165197779399277-pypy/audit.json",
+          "audit_sha256": "945d3ace88e82a4c7d0bd7eaa6f6c7bbaa9f5b0b673a704c46886a6a2a0f6b4d",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary238165197779399277-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary275110934556063992.config",
+      "configuration_sha256": "d0b134b072d4a295a16a81c7bbfe838c2838145cc47bfe08533419ad5fcc6fd5",
+      "trajectory_sha256": "fe0dca81d0e9fb60a9ac9becdde10d86ee6a464aa58acaebb29a19a68c4242d1",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary275110934556063992-pypy/audit.json",
+          "audit_sha256": "b8dd6d54690f320709a72653dcf35df878c827d71d2eb0a742a0c19d47218e56",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary275110934556063992-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary285703474179482122.config",
+      "configuration_sha256": "0b903eab99e850591560cb0a5b24332959e9879f2a83ead19c3e1aba16fadefd",
+      "trajectory_sha256": "c0a1ea165c630b29d239503342d9cd4d2c4b14ebd9f801e5b4bfdf66804f83bf",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary285703474179482122-pypy/audit.json",
+          "audit_sha256": "0e233c20ad26fb2a8d68eab4bac055da11d30403eeb6ba980a3e68faec609242",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary285703474179482122-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary311115376827154686.config",
+      "configuration_sha256": "6878f5ab777d2b57856e826ae74e5793d4e72167cbf36a37c970e2ceee657800",
+      "trajectory_sha256": "6a16e25d758025bc393dfe811b3d1e8fba2f3941eeee0c8f55ba55e7c692d37b",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary311115376827154686-pypy/audit.json",
+          "audit_sha256": "d0b381a9c2e81a73a8eeef0a93ae1eb3fb597e7561403287c0061a91389b14d6",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary311115376827154686-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary337899476882681052.config",
+      "configuration_sha256": "5808f5e06d519ee938a215d706086005524fce899aed05601c4ac717007f6f84",
+      "trajectory_sha256": "57090c21f7ea96a6ec30ad0547ebc3ef1995b9f6532527f4737df9a30ce795bf",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary337899476882681052-pypy/audit.json",
+          "audit_sha256": "f5f92455c791cf2f64416fd61c6e548fd985fadc3d6e8c05616ca46de92aab9a",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary337899476882681052-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary340852978821900464.config",
+      "configuration_sha256": "59a7be9c23e9436e277091abfcda5df4a2ce1e672452016bfe8f2ea4ae4410a9",
+      "trajectory_sha256": "9c6b46a3702848c004e59f4521291f9c9d46bbf07c94feae355b0286512c6a67",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary340852978821900464-pypy/audit.json",
+          "audit_sha256": "48757182e11333500ae5d4fc67f9c5152e7d0a435e62a0e317787423d56f3252",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary340852978821900464-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary346439642185867563.config",
+      "configuration_sha256": "89f54aef65d7dd6d50f025057854c2ba03bba0b2e69e9ae6d7d631fc65950b3c",
+      "trajectory_sha256": "257e0637200b2dae85f193faf34439c9ab71f59224704db0797a13661717d8f2",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary346439642185867563-pypy/audit.json",
+          "audit_sha256": "5f4254d83e970a95ec51854a0d8db1d396cb946307a73a8ecbc2354d399c2a5c",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary346439642185867563-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary349619002715725941.config",
+      "configuration_sha256": "1e150c18bcf7a21a3dac15d4b32780ba2487dc446f6494db8d1d86b2f96ff684",
+      "trajectory_sha256": "b24d76008487686d9a509de2e84e1e77bc71e34fc2d0e66bca452cb9ffd38ed3",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary349619002715725941-pypy/audit.json",
+          "audit_sha256": "78b3f086017d89a7b1ab95187f4e162af0b2f92bc411c309ea194a5fb6cb201d",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary349619002715725941-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary369777682750474578.config",
+      "configuration_sha256": "1c5f2683fffd4dcffc4eda18ea0582e615c554d38ee7ccd590720c44e46f7dd6",
+      "trajectory_sha256": "29d45c7243fcbe4389034caa3e8f72d49fd156583ac1abeb0d1c4ff3370811b3",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary369777682750474578-pypy/audit.json",
+          "audit_sha256": "ff6c64a8a10691cc45ad5a3c500183febd5f7c1894552a9066467ce8e299a87d",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary369777682750474578-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary380955681873155081.config",
+      "configuration_sha256": "7716f6fad514163e443a5a05b48b48ff5c85dc5bed95b0fdae43363ef3e53a9d",
+      "trajectory_sha256": "ae811fb95a71f1480804e0eb8aab54090cecb6b490f0d41cf37e686c8876f35d",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary380955681873155081-pypy/audit.json",
+          "audit_sha256": "64245cde843570571f658e1ec90a8ab867c5a7d87b7bf7ef41f4f292d2478116",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary380955681873155081-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary382040834813186390.config",
+      "configuration_sha256": "3a92f7a8331ce041d03e19ce81fcd6fb835c3acf205824ce492c5a9daf67a9be",
+      "trajectory_sha256": "d0e9654658e0d0f7dd9f1da538ed802cebabad0d43fc2c723f47c1fd9cb39d53",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary382040834813186390-pypy/audit.json",
+          "audit_sha256": "a89d81affa5c757deecc1c7201850ce2a64cd3514fc94aaa6da34879abeeff0a",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary382040834813186390-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary404603357698709850.config",
+      "configuration_sha256": "db319f42f39d9e7aececb71bbaa0aca903fb38ea695dde367d2d7fc8968c04bd",
+      "trajectory_sha256": "74a4032f1d5e69c56adc7dc76a371565eeabfb152a372d29239e46282f5c2504",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary404603357698709850-pypy/audit.json",
+          "audit_sha256": "d1a128942d6c0684a7c3a861788d5ae4b5594e2948e6f6c5469b7affd8625c95",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary404603357698709850-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary419262194845335739.config",
+      "configuration_sha256": "52170d6ecc1353dc699c5af0012bc3f7f129bf190008cbbf06d5774781ffe036",
+      "trajectory_sha256": "d399901edb11abffd2c570a279930dc74011e40394748346fc6b59e7eeb296a6",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary419262194845335739-pypy/audit.json",
+          "audit_sha256": "cc42b26690b04f7f1e5a0a74cce0abc38070bf1b536bcaaedc8d24d28bf17119",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary419262194845335739-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary440566039967529741.config",
+      "configuration_sha256": "12731967fb36c1ec4041a450d4ea7350f6b07b434d4e98aa3ef077f9f610e735",
+      "trajectory_sha256": "c276a6c865f9cae99cd429ee4d953690598986dd7018e3a8688647f60b2795b4",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary440566039967529741-pypy/audit.json",
+          "audit_sha256": "f971b503394885e5f08cc1e8b480193e71e6fb36003bbccc94986395fec896f2",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary440566039967529741-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary450748597033432720.config",
+      "configuration_sha256": "4d75fec97d50054ee3f3b39774d5c5ec5fbe00bfdab736281e2358efe703ebe3",
+      "trajectory_sha256": "cda21486c7bfb7af5dc6a6c68dad1f18f8c4e60cf4e9d71b8e80f0bcaf835bbc",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary450748597033432720-pypy/audit.json",
+          "audit_sha256": "f7aaf96a1ace282b3969877f05e275a6b1a629ac012f3889616012e3bc7837e5",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary450748597033432720-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary457361431569965817.config",
+      "configuration_sha256": "469a267c0178e5586a12a8716269ee7bc2bac41cef05fe89b21a808efc8bcb0a",
+      "trajectory_sha256": "e69b2cdeb24eef65593d73dba669188396f3c17b37a0aa56c4897fd4e48a88cd",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary457361431569965817-pypy/audit.json",
+          "audit_sha256": "2f89a5c5caeaacc80ee8c615d909fe4b64046ce43f0d85f9fb73f2bffe40aa1d",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary457361431569965817-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary460149852129392939.config",
+      "configuration_sha256": "c5533e1565c0a5b29ed57eb275782fd5a2b13f58f7d9cd516900010a9a9f3bb4",
+      "trajectory_sha256": "6ee585ab067b991e14a2300742bc143dcaf9ee8ea732bffaabf4d3f26ad08393",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary460149852129392939-pypy/audit.json",
+          "audit_sha256": "d96ec2fd4e619a96b59770c3f8b1b44136460943a7fea1e2b96e28bd4db18308",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary460149852129392939-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary468785931549304338.config",
+      "configuration_sha256": "7d8b7dcff3ef4da18fcc10d7768141cf49c2cb332609e2f0940444c74ab2a2ba",
+      "trajectory_sha256": "f820b449831b1fe94605c047da7a1ac29cc01bc0d9d1182993c5f47ca8e9eb9e",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary468785931549304338-pypy/audit.json",
+          "audit_sha256": "026807d7c9d83d4ce09ed920cedda33de4f40b63665dde75be8ef957fd842b9e",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary468785931549304338-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary490047438642249340.config",
+      "configuration_sha256": "1159c2c93e908e186683aa1f30a590cbd68f5b15d6b4b20f164f4460de2ed3ed",
+      "trajectory_sha256": "f528a94f800ca15c546b9b45b0093d3b0192c2cdee4054ba27c8ebbdf54c751c",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary490047438642249340-pypy/audit.json",
+          "audit_sha256": "37584668bcb5bcd0839179ca40cbd178c934b3da76e683fe2625c07d191207a8",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary490047438642249340-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary498783583481262546.config",
+      "configuration_sha256": "08f81be70e00f008ce8625aeff32b73b0e2ad31a802012b399253c8d988e7c9f",
+      "trajectory_sha256": "a68bda8473a292bdfe773d79186cdaf7d9d20d4307b929792524d0bc43e25bb0",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary498783583481262546-pypy/audit.json",
+          "audit_sha256": "e06257a9fd65153459261bad2e738eeffbc6cd86376bc24acdfa0dde3083c171",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary498783583481262546-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary519156578215194730.config",
+      "configuration_sha256": "bb2306c8f1f928bd7f3310b5463f028ec830e1cb59d1c5525b7d963394a1e8d1",
+      "trajectory_sha256": "bd14c69840b07651553e0ae88a58b0abfdae8f4a22c8fe11d45bd79619189e65",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary519156578215194730-pypy/audit.json",
+          "audit_sha256": "32f9a8efd138a4102773111dc363784d8e76d1eaa05710d88f4f49506cb88ea1",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary519156578215194730-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary530238075247992587.config",
+      "configuration_sha256": "efac8261b59948baf2cbc577713475118e9680dc57369b984b338246e747d86c",
+      "trajectory_sha256": "f43ee9bddbe42561e0abf6670bfc46b7cce28a26ceab7961a71ce5ff67ea6498",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary530238075247992587-pypy/audit.json",
+          "audit_sha256": "7ee8273ac6341a6ea8ad0719cb365f45532fa8f358b92d176eeb2da4e4fb2c05",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary530238075247992587-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary570853383711153723.config",
+      "configuration_sha256": "f3865af6dd676e6c75910ac39830d1c9dc05ae6a253b51a2329b98a786b5a2da",
+      "trajectory_sha256": "97c4c6fa93cd4d78029dd809020ca966c2bc9b53c680a74ebaa70081455fed3c",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary570853383711153723-pypy/audit.json",
+          "audit_sha256": "eb115c097dd6cd47d29ec2c449e988af7a589ee21e44459d157d0807a6842993",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary570853383711153723-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.37-benthamHalfLookaheadBinary584545844672932717.config",
+      "configuration_sha256": "cbe7fa63f3d4e8d92e1612ca164da47151ae49273a6b976905f4a41af3caa8d9",
+      "trajectory_sha256": "fd43bee914beea5b2017ec6d5a999347df14887ccc63f009abd6da2f48915c0b",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/audits/0.37-benthamHalfLookaheadBinary584545844672932717-pypy/audit.json",
+          "audit_sha256": "2b7e77d04b79978ac72d2b82e662c1eaf80d7113cd1ca39f5de48b1fc4ac7154",
+          "native_archive": "replications/blueprints_2024/results/selfishness037-prefix-2026-10-18/native.tar.gz",
+          "manifest_members": [
+            "runs/0.37-benthamHalfLookaheadBinary584545844672932717-pypy/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.5-benthamHalfLookaheadBinary158402133555746433.config",
+      "configuration_sha256": "0aa2f8b7c68acf8b0f03fba30d923f32e0c5fd7fa30740c44ea16fb673741446",
+      "trajectory_sha256": "d15f5aaf113d3d234b6a81cc20e3bd083d3b9342a3b05531742f4f007f64f355",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/supplement-controls-2026-10-17/audits/0.5-benthamHalfLookaheadBinary158402133555746433/audit.json",
+          "audit_sha256": "13306c378624d72df81903319617fc7701a2618971d502f270389f5cdef0d718",
+          "native_archive": "replications/blueprints_2024/results/supplement-controls-2026-10-17/native.tar.gz",
+          "manifest_members": [
+            "runs/0.5-benthamHalfLookaheadBinary158402133555746433/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "0.73-benthamHalfLookaheadBinary175856849482260318.config",
+      "configuration_sha256": "f87f4db7499c652c0140a93eb63ddd09c5670fedd8e089c1ba743e3be10960cf",
+      "trajectory_sha256": "819fbc262a1b27b3584a1e407551aaf861c2d960e3ea3fc17f18aaa044072371",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/runtime-pairs-2026-10-17/audit/0.73-benthamHalfLookaheadBinary175856849482260318/audit.json",
+          "audit_sha256": "13e128b617a62a12a76448b3266ed517a1a27d9ef3579adc8c887377f47e7585",
+          "native_archive": "replications/blueprints_2024/results/runtime-pairs-2026-10-17/native.tar.gz",
+          "manifest_members": [
+            "cpython-0.73-benthamHalfLookaheadBinary175856849482260318/manifest.json"
+          ]
+        }
+      ]
+    },
+    {
+      "experiment": "selfishness",
+      "entry": "1.0-benthamHalfLookaheadBinary158402133555746433.config",
+      "configuration_sha256": "82989b021492ffdac49e25b9bcf598b295962344f62854ab756ba996b9d9404c",
+      "trajectory_sha256": "544a5b25938d0316866ee4176b6f9ee8c77bd36f1a12dbc8f0b132fc97da0d14",
+      "audit_sources": [
+        {
+          "audit": "replications/blueprints_2024/results/supplement-controls-2026-10-17/audits/1.0-benthamHalfLookaheadBinary158402133555746433/audit.json",
+          "audit_sha256": "cef633a3514592693b38d35b02d035efb5a67c0d82f5c80ef6e66e57bdfc73df",
+          "native_archive": "replications/blueprints_2024/results/supplement-controls-2026-10-17/native.tar.gz",
+          "manifest_members": [
+            "runs/1.0-benthamHalfLookaheadBinary158402133555746433/manifest.json"
+          ]
+        }
+      ]
+    }
+  ],
+  "remaining_csv_gz_sha256": "fc17566381d06920f112dc1b2f49295b0a843ec3629d38b89537974532bf8407",
+  "planner_sha256": "794f04dd0da7936dabdf1e8ed950e76749d340d25cd36c7270190c70e9a44e3a",
+  "scope": "Exact remaining-input inventory after all supplied independently audited inputs; no new simulations or aggregate results. Selfishness condition is hundredths; heterogeneous condition is utilitarian entries in the original 100-entry list. Runtime qualification and bounded capacity planning remain prerequisites to dispatch."
+}
