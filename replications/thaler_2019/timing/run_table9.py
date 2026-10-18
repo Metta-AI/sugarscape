@@ -90,7 +90,10 @@ manifest = {
 started = time.monotonic()
 completed = []
 for ordinal, condition in enumerate(schedule):
-    if 7200 - (time.monotonic() - started) < 1200:
+    if (
+        protocol["timing_budget_seconds"] - (time.monotonic() - started)
+        < protocol["timing_attempt_limit_seconds"]
+    ):
         break
     variant = condition["variant"]
     runtime = [] if variant == "seq" else ["+RTS", f"-N{condition['caps']}", "-RTS"]
@@ -100,7 +103,10 @@ for ordinal, condition in enumerate(schedule):
     assert condition["benchmark"] in names, condition
     attempts = []
     for attempt in range(1, 4):
-        if 7200 - (time.monotonic() - started) < 1200:
+        if (
+            protocol["timing_budget_seconds"] - (time.monotonic() - started)
+            < protocol["timing_attempt_limit_seconds"]
+        ):
             break
         folder = (
             root
@@ -126,7 +132,7 @@ for ordinal, condition in enumerate(schedule):
                 cwd=source / "criterion" / f"sugarscape-{variant}",
                 stdout=log,
                 stderr=subprocess.STDOUT,
-                timeout=1200,
+                timeout=protocol["timing_attempt_limit_seconds"],
             )
         (folder / "exit.json").write_text(
             json.dumps(
@@ -233,7 +239,11 @@ random.Random(20261019).shuffle(retry_schedule)
 (root / "retry-schedule.json").write_text(json.dumps(retry_schedule, indent=2) + "\n")
 retry_records = []
 for index, condition in enumerate(retry_schedule):
-    if 9000 - (time.monotonic() - started) < 300:
+    if (
+        protocol["native_total_budget_after_build_seconds"]
+        - (time.monotonic() - started)
+        < protocol["retry_process_limit_seconds"]
+    ):
         break
     folder = root / f"retry-{index:02d}"
     folder.mkdir()
@@ -254,7 +264,11 @@ for index, condition in enumerate(retry_schedule):
         (folder / "stderr.log").open("wb") as stderr,
     ):
         result = subprocess.run(
-            command, cwd=project, stdout=stdout, stderr=stderr, timeout=300
+            command,
+            cwd=project,
+            stdout=stdout,
+            stderr=stderr,
+            timeout=protocol["retry_process_limit_seconds"],
         )
     (folder / "exit-code.txt").write_text(str(result.returncode) + "\n")
     result.check_returncode()

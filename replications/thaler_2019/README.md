@@ -646,3 +646,11 @@ and a 1,200-second timeout on the first 32-capability, 2,500-agent rebirthing be
 No complete timing samples or retry measurements were produced.
 The archive is independently hash-verified; the instance is confirmed stopped with its disk retained.
 All Table 9 conditions remain required. This execution failure is not a scientific negative replication.
+
+### Criterion budget correction
+
+[The pinned Criterion source](results/table9-budget-correction-2026-10-18) shows that four reported samples require sixteen model iterations, including warmup and a discarded fifth batch.
+Using the paper's 32-capability rebirth timing yields an estimated 1,222.4 seconds before overhead, exceeding our old 1,200-second cap.
+This identifies a budget error in our launcher; it does not establish the timeout's sole cause.
+The revised runner reads one-hour attempt and bounded total limits from the frozen protocol.
+All original conditions, sampling and fit criteria remain unchanged.
