@@ -131,3 +131,21 @@ without another mining completion. This behavior comes from the unmodified
 author agent program, not a replication patch. It demonstrates file persistence
 with a lifecycle caveat; it is not a whole-paper negative verdict. The full
 control trajectories and final conservation audit are still pending.
+
+### Complete reload-control trajectories
+
+[The complete control evidence](results/reload-complete-2026-10-18) verifies
+both 1,000-step NetLogo trajectories and 944 exact router deliveries. All 799
+identities are accounted for once: 261 model-1 survivors, 242 model-2 survivors,
+295 queued agents and one active miner. Thirteen JaCaMo creations reconstruct
+their incoming attributes, and twelve return records are retained. The failed
+score-increment criterion remains failed.
+
+The auditors now accept explicit checkpoint records. Each must match an actual
+initial database row in all declared fields; it contributes one initial identity
+and is excluded from subsequent-delivery counts. Agent 399's fixture follows
+the frozen protocol and executed seed SQL. It is not a new router delivery.
+The default original-scenario audits still use only fresh registration records.
+
+Extract the control archive and pass `--initial-checkpoints /run/initial-checkpoints.json`
+to both `audit_snapshot.py` and `audit_native.py`.

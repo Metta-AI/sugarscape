@@ -7,20 +7,27 @@ import json
 from pathlib import Path
 import re
 
-from audit_snapshot import Row
+from audit_snapshot import Checkpoint, Row, initial_rows
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
 parser.add_argument("output", type=Path)
 parser.add_argument("--jacamo-log", default="native.log")
+parser.add_argument("--initial-checkpoints", default="")
 args = parser.parse_args()
+checkpoints = (
+    [
+        Checkpoint.model_validate(row)
+        for row in json.loads(Path(args.initial_checkpoints).read_text())
+    ]
+    if args.initial_checkpoints
+    else []
+)
 rows = [
     Row.model_validate_json(line)
     for line in (args.run / "snapshot-final.jsonl").read_bytes().splitlines()
 ]
-initial = Counter(
-    row.agent_id for row in rows if row.table != "router" and not row.path
-)
+initial = Counter(row.agent_id for row in initial_rows(rows, checkpoints))
 assert initial and all(count == 1 for count in initial.values())
 locations = Counter()
 model_counts = {}
@@ -90,6 +97,8 @@ report = {
     ),
     "completed_study": False,
 }
+if checkpoints:
+    report["initial_checkpoints"] = [row.model_dump() for row in checkpoints]
 with args.output.open("x") as stream:
     stream.write(json.dumps(report, indent=2) + "\n")
 print(json.dumps(report))
