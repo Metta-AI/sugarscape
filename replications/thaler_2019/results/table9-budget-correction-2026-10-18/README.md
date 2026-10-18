@@ -14,4 +14,6 @@ The revised protocol permits 3,600 seconds per attempt, 14,400 seconds for timin
 A six-hour instance lease caps nominal compute at $19.776, excluding retained disk.
 The runner now reads these bounds from the frozen protocol instead of duplicating them in code.
 All six conditions, raw sampling, first-passing-fit rule and thirty retry processes remain unchanged.
-The failed attempt remains retained. No new native run or completion is claimed by this correction.
+The failed attempt remains retained. A corrected run subsequently launched in `sugarscape-table9-002` on the same retained instance.
+Its original process identifier is 1865, with a 18,600-second outer timeout.
+Collection is bounded at 100 MiB and 22,000 seconds. No result or completion is credited yet.

@@ -654,3 +654,7 @@ Using the paper's 32-capability rebirth timing yields an estimated 1,222.4 secon
 This identifies a budget error in our launcher; it does not establish the timeout's sole cause.
 The revised runner reads one-hour attempt and bounded total limits from the frozen protocol.
 All original conditions, sampling and fit criteria remain unchanged.
+
+The corrected run is now launched in a separate directory on the retained m5ad.16xlarge instance.
+Its frozen six-hour lease and 18,600-second execution bound preserve all six timing and thirty retry conditions.
+Original timeout evidence remains intact; independent result validation is pending.
