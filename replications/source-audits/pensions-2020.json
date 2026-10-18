@@ -77,7 +77,7 @@
     "native_to_replicate_se_ratio": 0.2795084971874737,
     "finding": "Deposited workbook reproduces the script divisor based on128 conditions rather than10 replicate runs. This is an archived-analysis finding, not evidence about paper claims without the full text."
   },
-  "scope": "Archived-data reconstruction only. No simulations launched, no study completion, no paper-level negative finding.",
+  "scope": "Archived-data reconstruction plus one completed native execution qualification. Full deposited 1280-input grid now running with explicit new seeds. Full paper remains unrecovered; no study completion or paper-level negative finding.",
   "remaining": [
     "Recover full paper and enumerate exact targets and model scope. Publisher note4 excludes social-services experiments from the paper.",
     "Verify source revision alignment and extract the full initialization, scheduling and measurement semantics.",
@@ -94,5 +94,20 @@
     "finding": "Author page identifies2019 preliminary proceedings pages103-116 and2020 revised chapter pages50-63; these inspected pages did not provide the full paper. Institutional entry links the publisher DOI.",
     "related_candidate": "firouzian-pensions-2025.json",
     "distinction": "Related2024 thesis is a separate work and does not replace the missing2020 paper."
+  },
+  "native_qualification": {
+    "evidence": "pensions-native-qualification-2026-10-18",
+    "runtime": "NetLogo 6.1.0, Java 11",
+    "condition": {
+      "population": 400,
+      "retirement_age": 65,
+      "tax": 4.7,
+      "fixed_fee": 0.1
+    },
+    "seed": 20261018,
+    "steps": 1000,
+    "records_audited": 1003,
+    "repeat_and_dense_endpoints_exact": true,
+    "full_ensemble": "128 conditions x 10 repetitions, 1000 steps; seeds20261018+run_number; one CPU,7200 seconds,512MiB Java heap; running, no credit."
   }
 }
