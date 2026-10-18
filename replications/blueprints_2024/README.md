@@ -984,3 +984,10 @@ All 164 missing Bentham inputs and the remaining paper experiments are still req
 100,546 audited observations after exact deduplication. Runtime coverage reaches
 868/1,200 deposited inputs and 2,650,189 observations. Three new inputs become
 extinct; two complete 50,000 steps. The full paper remains incomplete.
+
+## Further original Bentham retries
+
+[Three further original inputs](results/bentham-timeout-retry-2026-10-18-005)
+complete 5,000 steps and add 15,003 audited observations. Exact reconciliation
+reaches 1,839/2,000 homogeneous inputs, including Bentham 339/500. The remaining
+161 original Bentham inputs and other paper experiments remain incomplete.
