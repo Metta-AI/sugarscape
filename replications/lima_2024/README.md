@@ -105,3 +105,13 @@ is not a completed-paper verdict.
 
 After extracting the host archive, pass `--jacamo-log jacamo-host.log` to
 `audit_native.py`; the host log is separate from Docker's service logs.
+
+## Checkpoint reentry control
+
+`reload-control-protocol.json` was frozen before execution. A separate full
+architecture run relocates agent 399 into JaCaMo's initial queue with its saved
+AgentSpeak file. Model 1 omits that identity from registration, preserving unique
+IDs and the total of 799 agents. Both NetLogo trajectories still require 1,000
+steps. The control must verify native file selection, retained beliefs and plans,
+a second export, and final conservation. It supplements the original scenarios;
+it does not establish a natural repeat visit under their original scheduling.
