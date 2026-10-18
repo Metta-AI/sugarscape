@@ -1032,3 +1032,9 @@ comparisons do not establish equivalence or complete the paper.
 
 [The full-workflow recovery control](results/fold-recovery-2026-10-18/README.md) reuses three saved folds and recomputes two with identical predictions, random states, aggregate objects, and metrics.
 The live forest and generalized additive model runs remain unchanged; their incomplete results receive no replication credit.
+
+## Independent GAM comparison
+
+[All 6,250 paired held-out predictions](results/independent-gam-comparison-2026-10-18) preserve identical parameter rows and folds across author and independent simulation statistics.
+The fixed reproduction-wealth outlier changes from -6,945.811 to 92.356097 against truth 92; its price summary moves inside the corresponding training range.
+Neither dataset matches any of the five published GAM1250 scores. This demonstrates dataset sensitivity, without establishing simulator equivalence or a negative replication.
