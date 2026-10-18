@@ -22,3 +22,5 @@ All 23 archived files were checked byte-for-byte against retained evidence.
 To reproduce, extract the archive and run `audit_batch.py` on each input directory,
 then reconcile with the prior audits using `reconciliation-command.json`.
 This snapshot excludes later outputs from the ongoing retry producer.
+
+When extracting elsewhere, pass `--recorded-root ORIGINAL_INPUT_PATH` to `audit_batch.py`. The original path is retained in each attempt command and audit report.

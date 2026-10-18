@@ -17,3 +17,5 @@ Every member was checked byte-for-byte; `archive.json` records size, SHA-256, an
 `audit-commands.json` records fresh full audits; `coverage.json` reconciles them with earlier evidence.
 To reproduce, extract the native archive, relocate the input paths in the recorded audit commands,
 and reconcile the fresh reports using the retained reconciliation command.
+
+When extracting elsewhere, pass `--recorded-root ORIGINAL_INPUT_PATH` to `audit_batch.py`. The original path is retained in each attempt command and audit report.
