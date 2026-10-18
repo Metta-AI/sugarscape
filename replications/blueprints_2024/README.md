@@ -1060,3 +1060,10 @@ Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishn
 ### Second runtime continuation checkpoint
 
 [Seven cumulative inputs](results/runtime-continuation-second-prefix-2026-10-18) pass the runtime audit, matching all four earlier inputs exactly. Three new inputs add 100,172 observations. Coverage reaches **880/1,200 deposited runtime inputs and 2,951,160 observations**. The paper’s different 500-seed timing schedule remains unresolved.
+
+
+### Additional audited supplementary and runtime checkpoints
+
+[The third selfishness-0.37 prefix](results/selfishness037-third-prefix-2026-10-18) adds 25 disjoint inputs and 120,190 observations. Twenty-four reach step 5,000; one ends naturally in extinction at step 165. Supplementary coverage reaches 85 original inputs; condition 0.37 reaches 78 of 500.
+
+[The third runtime prefix](results/runtime-continuation-third-prefix-2026-10-18) adds one input and 50,001 observations after matching seven overlapping trajectories exactly. Runtime coverage reaches 881 of 1,200 deposited inputs and 3,001,161 observations. The complete archive is hash-verified and retained in task object storage and local evidence. Neither prefix completes a paper result.
