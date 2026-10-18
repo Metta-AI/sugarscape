@@ -187,7 +187,7 @@ remain historically unpinned, so fresh builds need their own runtime evidence.
 ```sh
 python replications/lima_2024/prepare_container.py /author/checkout /downloads/NetLogo-6.0.4-64.tgz /new/run --project sugarscape-lima-replay-001
 docker compose -f /new/run/compose.json build
-python replications/lima_2024/run_container.py /new/run
+python replications/lima_2024/run_scenario.py /new/run
 python replications/lima_2024/collect_completed.py /new/run /new/run/collection
 cp /new/run/collection/snapshot-final.jsonl /new/run/snapshot-final.jsonl
 python replications/lima_2024/audit_snapshot.py /new/run/snapshot-final.jsonl /new/run/snapshot-audit.json
@@ -201,3 +201,29 @@ Preparation and all nine image builds have passed. A fresh complete execution
 with automatic collection and both auditors is in progress; no result is claimed
 until those audits pass. This workflow covers the container scenario, while the
 host-GUI setup and visual confirmation remain separate requirements.
+
+### Host-JaCaMo workflow
+
+Prepare a separate fresh directory with `prepare_container.py`, a unique project,
+and a free port offset. Before building or launching it, run:
+
+```sh
+python replications/lima_2024/prepare_host.py /new/host-run --java-home /jdk15/Contents/Home --gradle-home /gradle-7.4.2 --gradle-cache /external/gradle-cache
+docker compose -f /new/host-run/compose.json build
+python replications/lima_2024/run_scenario.py /new/host-run --host
+python replications/lima_2024/collect_completed.py /new/host-run /new/host-run/collection
+cp /new/host-run/collection/snapshot-final.jsonl /new/host-run/snapshot-final.jsonl
+python replications/lima_2024/audit_snapshot.py /new/host-run/snapshot-final.jsonl /new/host-run/snapshot-audit.json
+python replications/lima_2024/audit_native.py /new/host-run /new/host-run/native-audit.json --jacamo-log jacamo-host.log
+```
+
+`prepare_host.py` verifies Java 15.0.2+7 and Gradle 7.4.2, removes the JaCaMo
+container, enables the original GUI flag and redirects its two API callers to
+the configured loopback port. It checks original source hashes before applying
+the three substitutions, records resulting hashes, and compiles the model.
+The shared runner launches host JaCaMo and stops its process group at termination.
+
+[Preparation evidence](results/portable-host-preparation-2026-10-18) verifies
+successful compilation and eight image builds. All three adaptations match the
+earlier host run exactly. Full execution is queued behind the container validation;
+compilation alone establishes neither native trajectories nor visible GUI behavior.

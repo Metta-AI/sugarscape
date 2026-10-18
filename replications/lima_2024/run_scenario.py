@@ -1,16 +1,22 @@
-"""Run the prepared author container scenario with a one-hour bound."""
+"""Run either prepared author scenario with a one-hour bound."""
 
 import argparse
+from contextlib import ExitStack
+import os
 from pathlib import Path
 import json
+import signal
 import subprocess
 import time
 
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
+parser.add_argument("--host", action="store_true")
 args = parser.parse_args()
 root = args.run.resolve()
-project = json.loads((root / "compose.json").read_text())["name"]
+config = json.loads((root / "compose.json").read_text())
+project = config["name"]
+assert ("jacamo" not in config["services"]) == args.host
 existing = subprocess.run(
     [
         "docker",
@@ -34,6 +40,8 @@ started = time.time()
 (root / "launch.json").write_text(
     json.dumps({"unix": started, "deadline_seconds": 3600, "project": project}) + "\n"
 )
+host_processes = []
+host_logs = ExitStack()
 try:
     with (root / "up.log").open("x") as stream:
         subprocess.run(
@@ -42,6 +50,34 @@ try:
             stderr=subprocess.STDOUT,
             check=True,
             timeout=180,
+        )
+    if args.host:
+        runtime = json.loads((root / "runtime.json").read_text())
+        env = os.environ.copy()
+        env.update(
+            JAVA_HOME=runtime["java_home"],
+            GRADLE_USER_HOME=runtime["gradle_cache"],
+            JAVA_TOOL_OPTIONS="-Xmx512m",
+            host="127.0.0.1",
+        )
+        host_log = host_logs.enter_context((root / "jacamo-host.log").open("x"))
+        process = subprocess.Popen(
+            [
+                runtime["gradle_home"] + "/bin/gradle",
+                "--no-daemon",
+                "--no-watch-fs",
+                "--console=plain",
+                "run",
+            ],
+            cwd=root / "shared_volume/jacamo/jacamo_model",
+            env=env,
+            stdout=host_log,
+            stderr=subprocess.STDOUT,
+            start_new_session=True,
+        )
+        host_processes.append(process)
+        (root / "host-launch.json").write_text(
+            json.dumps({"pid": process.pid, "unix": time.time()}) + "\n"
         )
     with (root / "states.jsonl").open("x") as stream:
         while time.time() - started < 3600:
@@ -63,8 +99,10 @@ try:
                 and s["ExitCode"] != 0
             ]
             models = [s for s in states if s["Service"] in ["modelo_1", "modelo_2"]]
-            if failed or (
-                len(models) == 2 and all(s["State"] == "exited" for s in models)
+            if (
+                any(process.poll() is not None for process in host_processes)
+                or failed
+                or (len(models) == 2 and all(s["State"] == "exited" for s in models))
             ):
                 (root / "observed-stop.json").write_text(
                     json.dumps({"failed": failed, "models": models}, indent=2) + "\n"
@@ -76,6 +114,11 @@ try:
                 json.dumps({"elapsed": time.time() - started}) + "\n"
             )
 finally:
+    for process in host_processes:
+        if process.poll() is None:
+            os.killpg(process.pid, signal.SIGTERM)
+            process.wait(timeout=30)
+    host_logs.close()
     with (root / "stop.log").open("x") as stream:
         subprocess.run(
             [*compose, "stop", "--timeout", "20"],
