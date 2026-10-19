@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[Cross-host qualification](results/existing-host-qualification-launch-2026-10-19) now runs on spare capacity of the existing owned runtime node. The queued attempt was canceled before starting. A launcher PATH failure is retained; recovery uses the existing Python interpreter. No cloud ensemble is launched.
+
 [Both paper-table pilot inputs](results/second-paper-table-input-2026-10-19) pass all 20,001 observation checks and fresh archive readback. Coverage is 15 released-code inputs and two paper-table inputs; no pairing is complete.
 
 [The released-code prefix](results/rule-m-prefix-2026-10-19) now has 15 audited inputs and 300,015 observations. RuleM/RuleM covers 14/50 seeds; no pairing is complete.
