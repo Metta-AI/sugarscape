@@ -1,6 +1,6 @@
 # Thaler and Siebers (2019): parallel Sugarscape
 
-Status: **partial: Figure 5b reproduced; Figure 5a occupancy reproduced at exported time 83, contradicting its time-50 caption; complete native timing grid audited**. No full-paper completion credit.
+Status: **completed qualified author-code method reproduction** under the user’s October 19 criterion. [Evidence and qualifications](results/method-verdict-2026-10-19) separate complete execution from historical numerical agreement. Figure 5a requires time 83 rather than caption time 50; timing and retry discrepancies remain explicit.
 
 Paper: [A tale of lock-free agents](https://doi.org/10.1186/s40294-019-0067-9),
 Complex Adaptive Systems Modeling 7, 5, published December 26, 2019.
@@ -35,7 +35,7 @@ and Stack resolver lts-12.4. Tables 6/8 use different hardware in our runs.
 Table 9 matches instance class, but historical clock and scheduling conditions remain unknown.
 The fixed execution protocols and source checks support descriptive comparisons.
 No numerical equivalence threshold or post-hoc significance criterion is introduced.
-Historical performance interpretation and retry-discrepancy resolution still prevent whole-paper completion.
+Historical performance interpretation and retry-discrepancy resolution remain open numerical-provenance questions. They do not prevent the qualified method verdict above; earlier dated verdicts remain unchanged.
 
 ## Source fidelity
 

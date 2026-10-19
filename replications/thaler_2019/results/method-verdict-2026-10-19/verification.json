@@ -1,0 +1,28 @@
+{
+  "fresh_reports": [
+    {
+      "name": "timing_comparison",
+      "sha256": "4d2e33dcf60e5f4d589336b177c44302ac08435483fe42193b326d5cae34746c",
+      "matches_retained_report": true
+    },
+    {
+      "name": "retry_audit",
+      "sha256": "575dbb583e0050bf55b26b60702073739a10beef59fc67c5d0b0e06bd0b7299c",
+      "matches_retained_report": true
+    },
+    {
+      "name": "member-sha256.json",
+      "sha256": "79dbca05c7864f43b1d71f2c884aa035eb136bf8bb7e7567c3b34b3d09595eb1",
+      "matches_retained_report": true
+    },
+    {
+      "name": "audit.json",
+      "sha256": "27103e0a96e48757e19e6fdb61899f50ef1a03ac6ab3bb3badbbfe6e7452dc67",
+      "matches_retained_report": true
+    }
+  ],
+  "timing_conditions": 51,
+  "retry_processes_reaudited": 90,
+  "population_observations_reaudited": 4000,
+  "scope": "Re-audit retained raw counters and trajectories; reconcile timing audits. No new native execution."
+}
