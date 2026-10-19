@@ -1194,3 +1194,10 @@ No estimator folds remain pending. Historical score discrepancies and independen
 All runs pass exact input and prediction audits: 62,500 predictions and 9,437,500 input cells.
 Four published scores fall within the observed ranges. Spice endowment remains outside: published 0.423 versus 0.424633–0.443223.
 These ranges measure seed sensitivity, not confidence intervals or historical-RNG agreement. Primary comparisons and paper status remain unchanged.
+
+### Exploratory distribution comparison of the fixed-parameter ensemble
+
+[The retained 64+64 runs](results/seed-distribution-diagnostic-2026-10-19) receive an unpaired label-permutation comparison across six population/price metrics.
+The largest empirical cumulative-distribution difference is 0.1875; the joint plus-one Monte Carlo p-value is 0.69325 over 19,999 shared permutations.
+This post-hoc diagnostic provides no evidence here for a broad distribution shift, but cannot establish equivalence or equal rare-event rates.
+Further stochastic validation needs additional declared seeds or mechanism-level diagnosis; no paper-completion credit is added.
