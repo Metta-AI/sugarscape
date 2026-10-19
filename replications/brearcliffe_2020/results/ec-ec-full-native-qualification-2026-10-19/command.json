@@ -1,0 +1,18 @@
+[
+  "/usr/bin/java",
+  "-Xmx1g",
+  "-Djava.awt.headless=true",
+  "-cp",
+  "/root/sugarscape/brearcliffe-existing-host-qualification-001/payload/app/*",
+  "org.nlogo.headless.Main",
+  "--model",
+  "/root/sugarscape/brearcliffe-existing-host-ensemble-001/batch/runs/released-code-pair-05-repeat-00/model.nlogo",
+  "--setup-file",
+  "/root/sugarscape/brearcliffe-ec-ec-native-full-001/experiment.xml",
+  "--experiment",
+  "recorder-qualification",
+  "--table",
+  "/root/sugarscape/brearcliffe-ec-ec-native-full-001/native-table.csv",
+  "--threads",
+  "1"
+]

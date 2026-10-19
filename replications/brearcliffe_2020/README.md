@@ -114,3 +114,5 @@ Current validation covers two real-PDF extractions, pre-change endpoint executio
 The [complete Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) now passes the full summary, independent R, and curve-comparison workflows. The Rule M/Rule M cohort now also passes those complete workflows.
 
 [The additional 50 EC/EC inputs are durably preserved](results/ec-ec-durable-evidence-2026-10-19): a fresh storage import verifies 502 file hashes. Both disjoint backups together cover all 303 audited inputs.
+
+[Full-horizon EC/EC recorder qualification](results/ec-ec-full-native-qualification-2026-10-19) matches native BehaviorSpace exactly on 320,016 values for seed 381016329. Fresh local readback passes; the paper discrepancy remains unresolved.
