@@ -1111,3 +1111,28 @@ python replications/carrella_2021/reconcile_estimator_comparisons.py \
 
 The explicit input manifest prevents selecting partial outputs or replacing the primary author-data runs with sensitivity controls.
 Add completed estimator evidence to this manifest only after its input and prediction audits pass.
+
+## Linear mutation discrepancy traced to source row676
+
+[Ten complete point fits](results/linear-mutation-diagnostic-2026-10-19/audit.json)
+reproduce all2,500 retained mutation-probability predictions across both1,250-input datasets.
+Maximum prediction difference is4.885e-15; no rows are excluded.
+A separate Python calculation verifies all ten fold errors and1,460 selected term contributions.
+The selected observation in each fold is its largest author-data error; this selection is diagnostic.
+
+Source row676 (one-based; original input675) contributes90.175% of fold two's author-data squared error.
+Its true mutation probability is0.191039, versus predicted2.441759 on author data and0.156721 on independent data.
+This is the same original simulation previously identified in the GAM reproduction-wealth diagnostic.
+The largest positive linear term is `snap.475.mean.prices`, contributing2.583323:
+its observed price19.37736 exceeds the training range0.31014–1.71664.
+Other terms offset this contribution; it is not the entire prediction.
+
+This explains a concentrated estimator failure on the author trajectory.
+It does not establish why independent simulation produces a different trajectory, or justify clipping predictions or excluding the observation.
+A repeated-seed comparison at this fixed parameter setting remains needed to distinguish rare-event sampling from implementation differences.
+
+```sh
+Rscript replications/carrella_2021/diagnose_linear_mutation.R \
+  /author/gam-1250-folds /independent/lm-1250-folds \
+  /author/linear/predictions.csv /independent/prediction-audit/predictions.csv /new/output
+```

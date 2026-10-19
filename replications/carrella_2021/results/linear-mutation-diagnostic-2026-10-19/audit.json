@@ -1,0 +1,31 @@
+{
+  "native_R_exit": 0,
+  "refitted_predictions": 2500,
+  "folds": 10,
+  "selected_term_contributions": 1460,
+  "excluded_observations": 0,
+  "input_sha256": {
+    "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/diagnose_linear_mutation.R": "526a3c8b464777c44f200a90039a7e3a1c0c42d60fa4198067b81200fc8c96cb",
+    "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/linear-2026-10-15/predictions.csv": "d2f495541a2a7f5a829ca38b2f73d62e885d32b2154edab617939cb893de5ec3",
+    "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/linear-2026-10-15/performance.csv": "d7435e29cc7173b860a110e3de476c879b8d0763b08d9ee7b09b1842f228c823",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-lm-002/public-lm1250-readback/prediction-audit/predictions.csv": "78a1ad785fefa47f20964fc9fa7d49e8fb632e487fa602d9a715eff02917e419",
+    "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/gam-1250-2026-10-15/fold-1.rds": "790a3d53d0945c595fe0026f99b53b34f4b5be79c17a964987d74df238e36838",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-lm-002/public-lm1250-readback/lm-1250/fold-1.rds": "e802569dd6ad8938f27446af27a7969ffe1edbf00341dde7467a1cdca5cf0dd7",
+    "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/gam-1250-2026-10-15/fold-2.rds": "3e8d5adfb3dcbb516606cf8763799df04a4962aa0351f5cf5fafd53694d10777",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-lm-002/public-lm1250-readback/lm-1250/fold-2.rds": "15b22b5eac3a2d18d3d639c4fd8070a41bb9d68f65ec296daeb9739c7f763944",
+    "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/gam-1250-2026-10-15/fold-3.rds": "bba5c028104c91cd37cd1c0f516090e5a5c45c5d7bebfd7d0f6c0dd568700df2",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-lm-002/public-lm1250-readback/lm-1250/fold-3.rds": "c8c4eb639d626da0e96b8cc8ef39bb228859ee896ebd415032153dccdade9963",
+    "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/gam-1250-2026-10-15/fold-4.rds": "0407e8acea3462d7116b07dbfda86d732d295f7b8a868582a3970c238ffeca88",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-lm-002/public-lm1250-readback/lm-1250/fold-4.rds": "d97cdf441d75746f3e130465b4ed0501e4abeee2a2c7746a12cd0f18e31812a6",
+    "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/gam-1250-2026-10-15/fold-5.rds": "13fa0a2b1ed96f4ae5c593b86760d3c84a23b47b75ab0d9e63e2ab1956ce3563",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-lm-002/public-lm1250-readback/lm-1250/fold-5.rds": "bf9c3efc97803cd0c059f92d35cae16371ad990f3b37db4adbe1db518201091f"
+  },
+  "output_sha256": {
+    "session.txt": "6a7e6c59b570ae9ee04420c4caec992ef29babfb2f8c48885bdcd94960120f05",
+    "predictions.csv": "01f91275db29cb1d17ca8d1bfe534f23ae04b4970b900af29c4de8022b8abced",
+    "terms.csv": "dad5a36131bda9b50d15adde9bcda0ad77fb2a5936b4efa298b1245a20186e8e",
+    "folds.csv": "8f3ad9c852310f109872cd4c2b9824ac75ac5ab8444db1565a2a35afa614a047"
+  },
+  "python_recomputed_fold_RMSE_and_term_sums": true,
+  "scope": "Full mutation point-estimation refit for both 1250-input datasets, all five folds. Retained predictions agree within4.885e-15. Selected rows are the largest author-data errors, and the same rows are retained for independent comparisons. This is retrospective diagnostic selection, not a confirmatory experiment or simulator equivalence verdict."
+}
