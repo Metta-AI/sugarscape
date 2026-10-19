@@ -1281,3 +1281,10 @@ The original timeout remains preserved; archive readback repeats all audits and 
 Independent R checks confirm six distribution statistics and both Fisher tests.
 The maximum difference is0.21875, with unadjusted joint permutation p0.4305.
 Three of ten settings are audited, totaling384 runs and192,384 observations; the full30-test correction remains pending.
+
+### Fourth parameter cohort audited
+
+[Original input348](results/parameter-fourth-cohort-complete-2026-10-19) completes all128 runs within its original bound and passes64,128 observation checks.
+Archive readback reproduces full audits and comparisons exactly; independent R checks confirm six distribution statistics and two Fisher tests.
+Maximum difference is0.15625, with unadjusted joint permutation p0.93715.
+Four of ten settings are audited, totaling512 runs and256,512 observations; six settings and the combined analysis remain.
