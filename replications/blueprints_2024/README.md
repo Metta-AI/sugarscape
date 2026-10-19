@@ -11,11 +11,11 @@ Figure 6 matches all-cause deaths for all four models, while the released plotte
 This explains a released definition consistent with the paper; the exact historical plotting revision remains unidentified.
 [The Bentham released-parser check](results/bentham-parser-2026-10-18) also matches all 30,006 independently aggregated values.
 
-Latest deposited-runtime coverage is **873/1,200 inputs and 2,800,520 observations**.
-[The terminal Bentham audit](results/runtime-bentham-terminal-2026-10-18) retains the six-hour timeout and excludes the interrupted input.
-[The restored-environment continuation](results/runtime-environment-recovery-2026-10-18) has passed setup and started both native workers.
-The selfishness and mixed-society sweeps, longer horizons, remaining figure analysis beyond the homogeneous curves, and historical runtime claims remain incomplete.
-[The corrected remaining-input inventory](results/supplement-inventory-complete-controls-2026-10-18) contains 99,992 original inputs after excluding eight audited inputs. It includes two paired-runtime controls missed by the earlier inventory. No new sweep jobs have been dispatched.
+Latest deposited-runtime coverage is **909/1,200 inputs and 3,354,611 observations**; the bounded continuation remains active.
+[Selfishness 0.37 is complete](results/selfishness037-condition-complete-2026-10-19): all 500 original seeds and 2,452,673 observations pass audit.
+Median mean population is 1138.06–1138.24 under four stated conventions, within Figure 10's extracted ink bounds of 1132.78–1143.03.
+This supports qualified agreement for one condition; historical averaging and quantile conventions remain unresolved.
+Supplementary coverage is **507/100,000**. Full sweeps, longer horizons and historical runtime claims remain incomplete.
 Earlier sections retain dated execution history and superseded checkpoint counts.
 
 [Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)

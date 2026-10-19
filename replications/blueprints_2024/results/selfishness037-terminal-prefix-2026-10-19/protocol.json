@@ -1,0 +1,3531 @@
+{
+  "experiment": "selfishness",
+  "condition": 0.37,
+  "source_revision": "b9ca671ab7591c7b3606f2d76c33eda344d626d1",
+  "source_sha256": {
+    "gui.py": "80eff045d436fa3c62e61287adbceab5816646421617abf2625beb9251be02b5",
+    "disease.py": "56f1ea55511c497f1f8be836f6967ecba8641794d6ff56c01af989397eab607b",
+    "setup.py": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+    "ethics.py": "977ac532c7b12fdd18e5157eff2d1a3759468842a0219ebbfad992ae4651214a",
+    "sugarscape.py": "d429ebabea8ea08dfdaf25faa34a409e463f97ad754e7143a23202fdd5126e81",
+    "cell.py": "f1c64eebfdf8b170880f79211310ad1162f4dacafb5b26df93512d3c551f3dfd",
+    "agent.py": "5ffd9ac332159413ead96102167593d1f5a514554415fcfea39e7133fd4a25d9",
+    "environment.py": "3a07b8c8c08ab7fd5ecadb67e24dbe3409f574fe3a729330d35c0716e6f7fc50",
+    "logparse.py": "8c3741af52794b3d5eb6d65015a84e7758650874e0b16fb027b754925c07c37a"
+  },
+  "runtime_url": "https://downloads.python.org/pypy/pypy3.11-v7.3.20-linux64.tar.bz2",
+  "runtime_sha256": "1410db3a7ae47603e2b7cbfd7ff6390b891b2e041c9eb4f1599f333677bccb3e",
+  "original_archive_sha256": "e2016f36a9728c23cee025d7a2e63cd2feffe4c36fbd62970e3a7792cb4d19e7",
+  "remaining_worklist_sha256": "9580d0d200650d63a2ce1c245e3a272365ffa29e7b6ecf6570d9acba3cb18777",
+  "inputs": [
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "158402133555746433",
+      "entry": "0.37-benthamHalfLookaheadBinary158402133555746433.config",
+      "configuration_sha256": "304662155f2e1149444801d4a4948a7b76776e3573da3619adf66eaeb4357301"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "177137446849847291",
+      "entry": "0.37-benthamHalfLookaheadBinary177137446849847291.config",
+      "configuration_sha256": "441e2da73a933f49fc6313b41c3371dafd75e8e4f49a299b1b6b90acc9aab0b4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "209866033564004520",
+      "entry": "0.37-benthamHalfLookaheadBinary209866033564004520.config",
+      "configuration_sha256": "721e5ceb9c92ebbd3c0f2e5501728ae7f2bdaac387d0decfa68253969984b100"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "238165197779399277",
+      "entry": "0.37-benthamHalfLookaheadBinary238165197779399277.config",
+      "configuration_sha256": "6384c7d49555a4efed1ccc5da4b5dc2e42a3ccf38df2198cec058831a3214ad7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "275110934556063992",
+      "entry": "0.37-benthamHalfLookaheadBinary275110934556063992.config",
+      "configuration_sha256": "d0b134b072d4a295a16a81c7bbfe838c2838145cc47bfe08533419ad5fcc6fd5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "285703474179482122",
+      "entry": "0.37-benthamHalfLookaheadBinary285703474179482122.config",
+      "configuration_sha256": "0b903eab99e850591560cb0a5b24332959e9879f2a83ead19c3e1aba16fadefd"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "311115376827154686",
+      "entry": "0.37-benthamHalfLookaheadBinary311115376827154686.config",
+      "configuration_sha256": "6878f5ab777d2b57856e826ae74e5793d4e72167cbf36a37c970e2ceee657800"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "337899476882681052",
+      "entry": "0.37-benthamHalfLookaheadBinary337899476882681052.config",
+      "configuration_sha256": "5808f5e06d519ee938a215d706086005524fce899aed05601c4ac717007f6f84"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "340852978821900464",
+      "entry": "0.37-benthamHalfLookaheadBinary340852978821900464.config",
+      "configuration_sha256": "59a7be9c23e9436e277091abfcda5df4a2ce1e672452016bfe8f2ea4ae4410a9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "346439642185867563",
+      "entry": "0.37-benthamHalfLookaheadBinary346439642185867563.config",
+      "configuration_sha256": "89f54aef65d7dd6d50f025057854c2ba03bba0b2e69e9ae6d7d631fc65950b3c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "349619002715725941",
+      "entry": "0.37-benthamHalfLookaheadBinary349619002715725941.config",
+      "configuration_sha256": "1e150c18bcf7a21a3dac15d4b32780ba2487dc446f6494db8d1d86b2f96ff684"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "369777682750474578",
+      "entry": "0.37-benthamHalfLookaheadBinary369777682750474578.config",
+      "configuration_sha256": "1c5f2683fffd4dcffc4eda18ea0582e615c554d38ee7ccd590720c44e46f7dd6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "380955681873155081",
+      "entry": "0.37-benthamHalfLookaheadBinary380955681873155081.config",
+      "configuration_sha256": "7716f6fad514163e443a5a05b48b48ff5c85dc5bed95b0fdae43363ef3e53a9d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "382040834813186390",
+      "entry": "0.37-benthamHalfLookaheadBinary382040834813186390.config",
+      "configuration_sha256": "3a92f7a8331ce041d03e19ce81fcd6fb835c3acf205824ce492c5a9daf67a9be"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "404603357698709850",
+      "entry": "0.37-benthamHalfLookaheadBinary404603357698709850.config",
+      "configuration_sha256": "db319f42f39d9e7aececb71bbaa0aca903fb38ea695dde367d2d7fc8968c04bd"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "419262194845335739",
+      "entry": "0.37-benthamHalfLookaheadBinary419262194845335739.config",
+      "configuration_sha256": "52170d6ecc1353dc699c5af0012bc3f7f129bf190008cbbf06d5774781ffe036"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "440566039967529741",
+      "entry": "0.37-benthamHalfLookaheadBinary440566039967529741.config",
+      "configuration_sha256": "12731967fb36c1ec4041a450d4ea7350f6b07b434d4e98aa3ef077f9f610e735"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "450748597033432720",
+      "entry": "0.37-benthamHalfLookaheadBinary450748597033432720.config",
+      "configuration_sha256": "4d75fec97d50054ee3f3b39774d5c5ec5fbe00bfdab736281e2358efe703ebe3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "457361431569965817",
+      "entry": "0.37-benthamHalfLookaheadBinary457361431569965817.config",
+      "configuration_sha256": "469a267c0178e5586a12a8716269ee7bc2bac41cef05fe89b21a808efc8bcb0a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "460149852129392939",
+      "entry": "0.37-benthamHalfLookaheadBinary460149852129392939.config",
+      "configuration_sha256": "c5533e1565c0a5b29ed57eb275782fd5a2b13f58f7d9cd516900010a9a9f3bb4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "468785931549304338",
+      "entry": "0.37-benthamHalfLookaheadBinary468785931549304338.config",
+      "configuration_sha256": "7d8b7dcff3ef4da18fcc10d7768141cf49c2cb332609e2f0940444c74ab2a2ba"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "490047438642249340",
+      "entry": "0.37-benthamHalfLookaheadBinary490047438642249340.config",
+      "configuration_sha256": "1159c2c93e908e186683aa1f30a590cbd68f5b15d6b4b20f164f4460de2ed3ed"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "498783583481262546",
+      "entry": "0.37-benthamHalfLookaheadBinary498783583481262546.config",
+      "configuration_sha256": "08f81be70e00f008ce8625aeff32b73b0e2ad31a802012b399253c8d988e7c9f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "519156578215194730",
+      "entry": "0.37-benthamHalfLookaheadBinary519156578215194730.config",
+      "configuration_sha256": "bb2306c8f1f928bd7f3310b5463f028ec830e1cb59d1c5525b7d963394a1e8d1"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "530238075247992587",
+      "entry": "0.37-benthamHalfLookaheadBinary530238075247992587.config",
+      "configuration_sha256": "efac8261b59948baf2cbc577713475118e9680dc57369b984b338246e747d86c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "570853383711153723",
+      "entry": "0.37-benthamHalfLookaheadBinary570853383711153723.config",
+      "configuration_sha256": "f3865af6dd676e6c75910ac39830d1c9dc05ae6a253b51a2329b98a786b5a2da"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "584545844672932717",
+      "entry": "0.37-benthamHalfLookaheadBinary584545844672932717.config",
+      "configuration_sha256": "cbe7fa63f3d4e8d92e1612ca164da47151ae49273a6b976905f4a41af3caa8d9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "601747005843301610",
+      "entry": "0.37-benthamHalfLookaheadBinary601747005843301610.config",
+      "configuration_sha256": "4b450a4ed48b76937e97793c846bee9526dfd7e61cf85b486101d216f446ece5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "613381239513683363",
+      "entry": "0.37-benthamHalfLookaheadBinary613381239513683363.config",
+      "configuration_sha256": "7a82bb4ee0f2f61a76c26252afd95a6a0ebe49ce011c8dd84ca351fdee328197"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "624457554156745065",
+      "entry": "0.37-benthamHalfLookaheadBinary624457554156745065.config",
+      "configuration_sha256": "aa63bb9c20c0d422ea521e082db43ec93f44fffe47c3aee37278f262252c7b6d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "635676272904926704",
+      "entry": "0.37-benthamHalfLookaheadBinary635676272904926704.config",
+      "configuration_sha256": "d669e4e229be29667c721ecef2dc13660424bcf08152fabfbce10c4d765fbfde"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "655552548709813922",
+      "entry": "0.37-benthamHalfLookaheadBinary655552548709813922.config",
+      "configuration_sha256": "b8f631cb5d9262c0d995185234d7046f30a069276c74ad60156c08128ab17e68"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "663700773870722021",
+      "entry": "0.37-benthamHalfLookaheadBinary663700773870722021.config",
+      "configuration_sha256": "b495c785074cda4a02d00f691b118341f0a67d3904d62c2fd495f641b43b1fba"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "668711073846793172",
+      "entry": "0.37-benthamHalfLookaheadBinary668711073846793172.config",
+      "configuration_sha256": "1de518e3ef698771d8b84d1b6ce2ec7b93907d3f9af6019d10570baca5993d51"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "680129577361409712",
+      "entry": "0.37-benthamHalfLookaheadBinary680129577361409712.config",
+      "configuration_sha256": "d1a918c735741bc6a860b70f27a8fc312801dbba4ba13910037d2dbbed7ef5cd"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "689681424439763653",
+      "entry": "0.37-benthamHalfLookaheadBinary689681424439763653.config",
+      "configuration_sha256": "31448861538385f24a8450987a9ee4c927543b3cd61ac385dbbd7f1f719553b0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "689902557931148885",
+      "entry": "0.37-benthamHalfLookaheadBinary689902557931148885.config",
+      "configuration_sha256": "695ec62cabe95e2aa17988baea58ef22447e9f87c506b4b8ce1fc64575c67868"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "703598546753609220",
+      "entry": "0.37-benthamHalfLookaheadBinary703598546753609220.config",
+      "configuration_sha256": "b6c2a92fbb00a898dbccbaaac3349c0656e58d2a9099679b1bec6db9632a21e4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "731799750051967672",
+      "entry": "0.37-benthamHalfLookaheadBinary731799750051967672.config",
+      "configuration_sha256": "20e4546dc54f5d71e80f7e0c91bd9a33c5d5b44b51f17d87f2b23e36b351bc45"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "765101977723530109",
+      "entry": "0.37-benthamHalfLookaheadBinary765101977723530109.config",
+      "configuration_sha256": "e5510b75b715d278bcb9bf5ca877b980b0ca89d02bdae90663802ae50fce6c8a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "773420515702318362",
+      "entry": "0.37-benthamHalfLookaheadBinary773420515702318362.config",
+      "configuration_sha256": "9232ab1fd31c165d07eb8388c71e29bfecf67744445b71df604ba20e6d6b6fb4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "784673131426145754",
+      "entry": "0.37-benthamHalfLookaheadBinary784673131426145754.config",
+      "configuration_sha256": "67cf043f4b7aaba5c7c2e0b19b7608b7cd5f578a4e997979ac93272f566678e9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "785416830398779692",
+      "entry": "0.37-benthamHalfLookaheadBinary785416830398779692.config",
+      "configuration_sha256": "f9ba815f0ffdeeef6c6f84437d766cddccb7506983645f297cfeeac8740f2f0e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "835765861021016659",
+      "entry": "0.37-benthamHalfLookaheadBinary835765861021016659.config",
+      "configuration_sha256": "2836611421fc42999c7b8aab0c5159a133851e2dda70a1271bd80cb5b8fc0cad"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "846762535874553816",
+      "entry": "0.37-benthamHalfLookaheadBinary846762535874553816.config",
+      "configuration_sha256": "b4adfcd2199d0a1c7b2e456d3bac309ad04c7362e99c4feeea48ebabe8699e4b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "848508507343171767",
+      "entry": "0.37-benthamHalfLookaheadBinary848508507343171767.config",
+      "configuration_sha256": "3006b4b982e6b84e0ef869d1b6437447232d425ec087bc9b7d936c48f332e79c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "859182242037618418",
+      "entry": "0.37-benthamHalfLookaheadBinary859182242037618418.config",
+      "configuration_sha256": "17c5cb2860c4883eb80fc1f89afa8156ee3ccdfe0b921e1811594e3020db14f1"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "872461401220666624",
+      "entry": "0.37-benthamHalfLookaheadBinary872461401220666624.config",
+      "configuration_sha256": "36b343ece39ec29805d275b4116100d8f2c5e590dc6fab80e456be8476b59bac"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "901278515096465478",
+      "entry": "0.37-benthamHalfLookaheadBinary901278515096465478.config",
+      "configuration_sha256": "dfc1078db4b21ba60d97179cbc4557ed1ef13f0d0522668d71a7336497cc1316"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "902530528031319436",
+      "entry": "0.37-benthamHalfLookaheadBinary902530528031319436.config",
+      "configuration_sha256": "b720d515bd95616d83b72ee6a7e33331a557cade7cd0ae48c0175ee07e8c1574"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "920057750098825653",
+      "entry": "0.37-benthamHalfLookaheadBinary920057750098825653.config",
+      "configuration_sha256": "57c71050b03e81db599f61c6cec339fb0d9c742461ed5ccc6676347201c82c7e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "956193024206524442",
+      "entry": "0.37-benthamHalfLookaheadBinary956193024206524442.config",
+      "configuration_sha256": "05d6b8ac46164fcd7c483d2f5b760e91dd52721fc23e7715fb739168bccb6c97"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "959953450200331363",
+      "entry": "0.37-benthamHalfLookaheadBinary959953450200331363.config",
+      "configuration_sha256": "656378883de74c9c37cf1ac22b12b3b36d8b031c5e53f1e0c5570aa4de220c70"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "977868131476438614",
+      "entry": "0.37-benthamHalfLookaheadBinary977868131476438614.config",
+      "configuration_sha256": "013240b514113532e3cbb10f66a179641dd4a9db8d2a67c4c3055c8b21622e94"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "983401245759257068",
+      "entry": "0.37-benthamHalfLookaheadBinary983401245759257068.config",
+      "configuration_sha256": "7ea3fd080fecb796597d3b22553d293d836a10d0c17ee3d4443a48040f1a95b7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "986217164246675057",
+      "entry": "0.37-benthamHalfLookaheadBinary986217164246675057.config",
+      "configuration_sha256": "fda70d94bb42ba291127527c9324cb2eaf17b5d54e977e8e6373bcf56a9f6291"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1044932834802521814",
+      "entry": "0.37-benthamHalfLookaheadBinary1044932834802521814.config",
+      "configuration_sha256": "258deb7da4519ed49369ce6952d5b007cd5eae0378311157f245747745036da0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1047840195371099687",
+      "entry": "0.37-benthamHalfLookaheadBinary1047840195371099687.config",
+      "configuration_sha256": "be500f36d700e8d4f7f20934529bf1ef1a9c380fae2205236819716aea941119"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1052444976753030140",
+      "entry": "0.37-benthamHalfLookaheadBinary1052444976753030140.config",
+      "configuration_sha256": "a432ed66d8c30dab4e3eaf47a439b228be7187b69cd5a0d4c26e90a881a61752"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1053314377464247423",
+      "entry": "0.37-benthamHalfLookaheadBinary1053314377464247423.config",
+      "configuration_sha256": "733703637fe5f0048a73170141f0e9c1e92ecb8fa89516376f9bd5628298d6c6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1063579143837049677",
+      "entry": "0.37-benthamHalfLookaheadBinary1063579143837049677.config",
+      "configuration_sha256": "817d59d76f1081340f79e931ece6328a1135b3ce5e59321f00238ce8f8bf550b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1070491396471055707",
+      "entry": "0.37-benthamHalfLookaheadBinary1070491396471055707.config",
+      "configuration_sha256": "3931507cd5fac3e673eb3d2d8121dc6026932a547277845fb267128cd224bb60"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1072909028581963138",
+      "entry": "0.37-benthamHalfLookaheadBinary1072909028581963138.config",
+      "configuration_sha256": "9650a74e2b827ff8d90b408686ed0340c708afb9f9e4cb46c53290916515bdf0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1079897331949952922",
+      "entry": "0.37-benthamHalfLookaheadBinary1079897331949952922.config",
+      "configuration_sha256": "92c70b7e89a1dac0b1d0b9dc71496b2862232d5de01bff5059adf33bc7d1365c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1082393941172830200",
+      "entry": "0.37-benthamHalfLookaheadBinary1082393941172830200.config",
+      "configuration_sha256": "07993d6c9bca580dd0b1051f4ad657c4956aafaa761075cd1a558d8d965813fb"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1094233484176390113",
+      "entry": "0.37-benthamHalfLookaheadBinary1094233484176390113.config",
+      "configuration_sha256": "984f68d706e7baefaaed8a3a7de4a968742e9e6bd606117292fd090a2efc5116"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1109860648199565578",
+      "entry": "0.37-benthamHalfLookaheadBinary1109860648199565578.config",
+      "configuration_sha256": "839b70d0de76171419c17603926244004c4a977b0ae2c812b24bb0add6b61f2e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1113456709891828571",
+      "entry": "0.37-benthamHalfLookaheadBinary1113456709891828571.config",
+      "configuration_sha256": "27c9f1ed087334e0185e030a402bb68d3c45b29846cd4a2466c165ed7d54f1c5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1139514586838715191",
+      "entry": "0.37-benthamHalfLookaheadBinary1139514586838715191.config",
+      "configuration_sha256": "fe1e007de4bbc04a48a44cf53ed7a7d444def4e19f1ef94b5896a7d18c508f1c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1153924273002767570",
+      "entry": "0.37-benthamHalfLookaheadBinary1153924273002767570.config",
+      "configuration_sha256": "db320a4707efcb11e97869258a316bfc1bdfeba99f8890829508ceddc64fc7be"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1193247888052221378",
+      "entry": "0.37-benthamHalfLookaheadBinary1193247888052221378.config",
+      "configuration_sha256": "bc507c78f94206c124704cdf3c9ed301454ed47d8bd7ba47a79156048f7b209d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1233067699360264716",
+      "entry": "0.37-benthamHalfLookaheadBinary1233067699360264716.config",
+      "configuration_sha256": "40c7cb06432248d5f2435dcd56b64bf3f0ec1630e8dcdb83214eb2909357de8b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1235083787285745207",
+      "entry": "0.37-benthamHalfLookaheadBinary1235083787285745207.config",
+      "configuration_sha256": "d72ff649260c6a260bae5e4285f5e83881f18fc11295a3d8bbbda51d1492ed81"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1247849724732551819",
+      "entry": "0.37-benthamHalfLookaheadBinary1247849724732551819.config",
+      "configuration_sha256": "230f8768a6e2645056b096090f9a6226798c59ed0231657a62bf6a76d60ebb6b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1254106714873597359",
+      "entry": "0.37-benthamHalfLookaheadBinary1254106714873597359.config",
+      "configuration_sha256": "cb3b6c0097b5710cca2a2d70367a70b795c8ef1a8208cc1e45e22019f86e3096"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1270184133690992322",
+      "entry": "0.37-benthamHalfLookaheadBinary1270184133690992322.config",
+      "configuration_sha256": "924722b56310441e344e9e321fdb8d19edf076cf7baf56a57c77b04818862cec"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1280901202859883429",
+      "entry": "0.37-benthamHalfLookaheadBinary1280901202859883429.config",
+      "configuration_sha256": "a373482ac799fafe3e5a0cf22b0f5189cfaabbc10dfc1fbc9b1a1582ea77d000"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1288598867396776898",
+      "entry": "0.37-benthamHalfLookaheadBinary1288598867396776898.config",
+      "configuration_sha256": "a3fe41a61ce2753db35ff2f687c339b6777e271e1d9d99a9cc049725d496ce5f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1291904393419366296",
+      "entry": "0.37-benthamHalfLookaheadBinary1291904393419366296.config",
+      "configuration_sha256": "67803a4b980e1a9251c036b74befca3bed52744a5f1654e6a8e2e7bd9ed550d3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1297493895380503287",
+      "entry": "0.37-benthamHalfLookaheadBinary1297493895380503287.config",
+      "configuration_sha256": "9fed0731f9b536b477c5c19cb42d9245650a51f1e4567fe59aee6f2cfd31f2d2"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1298266412039602124",
+      "entry": "0.37-benthamHalfLookaheadBinary1298266412039602124.config",
+      "configuration_sha256": "a30231237af0ab43b81a5e51914091668b390be8ebe96a1d63e6d8f5c7663581"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1319252082315724448",
+      "entry": "0.37-benthamHalfLookaheadBinary1319252082315724448.config",
+      "configuration_sha256": "69ad60812e97685c347f57e86aa4fa4934b0daa1e2c714320ed5c36390502a5c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1319948328544017925",
+      "entry": "0.37-benthamHalfLookaheadBinary1319948328544017925.config",
+      "configuration_sha256": "2a64412095d8bfe92c6503df9e7aa1dffe0316f772e0d1d5d916fb692a21230c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1334731553345852678",
+      "entry": "0.37-benthamHalfLookaheadBinary1334731553345852678.config",
+      "configuration_sha256": "85a0b2951c307de3f60ce6d5a0ccb6794562d9469ec8e8d7c47ce814195638ab"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1348390354187324392",
+      "entry": "0.37-benthamHalfLookaheadBinary1348390354187324392.config",
+      "configuration_sha256": "d659328f8ffa0fcf15c6f68805f99a7ae164293fab1c75afeb26f7f33e6ca359"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1359404949007720544",
+      "entry": "0.37-benthamHalfLookaheadBinary1359404949007720544.config",
+      "configuration_sha256": "3098bc5ac9cc2f3e22b0607ea8e97269c6993e790a0dc3f7c7fc5248aa7a387e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1363447806151512002",
+      "entry": "0.37-benthamHalfLookaheadBinary1363447806151512002.config",
+      "configuration_sha256": "c7c5aee49f6c9c97634bf3e6c44ccac2fa8b7f5e4ee61b56b5ed3a9ffeb6a2c0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1380635906299364845",
+      "entry": "0.37-benthamHalfLookaheadBinary1380635906299364845.config",
+      "configuration_sha256": "3aaece314e04a9bab6d3158b24a6fde9cf24db7c1ea12100be85a32f82983a3f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1440437373991260400",
+      "entry": "0.37-benthamHalfLookaheadBinary1440437373991260400.config",
+      "configuration_sha256": "446443e3cdc734292cce619a51bc84762b670bb5814e434a70112fade42430e5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1463712356189053169",
+      "entry": "0.37-benthamHalfLookaheadBinary1463712356189053169.config",
+      "configuration_sha256": "65b90cee64963c05ad11858277911412629600b5e11617a803c347a2a5fa29b2"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1468503979880031072",
+      "entry": "0.37-benthamHalfLookaheadBinary1468503979880031072.config",
+      "configuration_sha256": "ab8aee5b80127e879bcc61df82ac233036a409e37c326cbcd4848cc9e02f2433"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1470653421161831391",
+      "entry": "0.37-benthamHalfLookaheadBinary1470653421161831391.config",
+      "configuration_sha256": "cbc01be2fcb3004459c48e697e705120b2c579328128875f7f8364e08088ccb5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1512545940192165467",
+      "entry": "0.37-benthamHalfLookaheadBinary1512545940192165467.config",
+      "configuration_sha256": "9de3a47279e8f0efd0fbea254b69f772f39d6ec8396b612f2a2b95ed368a9910"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1530994343071641336",
+      "entry": "0.37-benthamHalfLookaheadBinary1530994343071641336.config",
+      "configuration_sha256": "f587861ba135b755d1d7b54e78a3c5f9570e4177d2220df4b2a0a9869a80db1b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1536791303376280255",
+      "entry": "0.37-benthamHalfLookaheadBinary1536791303376280255.config",
+      "configuration_sha256": "d6734093fa61fece859ef49ff68590f4ceda496396794b3b003e2884f730cd31"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1555657386466497304",
+      "entry": "0.37-benthamHalfLookaheadBinary1555657386466497304.config",
+      "configuration_sha256": "fafad5f7e87f5342eb8aad098448848e2e2b354ba88fb36b2fd9c0bbea8944ca"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1592542449511139932",
+      "entry": "0.37-benthamHalfLookaheadBinary1592542449511139932.config",
+      "configuration_sha256": "b6a0242625bb1a294e3070ac4203750be57e8b5631bd81c695ac7e43ce2ccdaf"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1609969291442293190",
+      "entry": "0.37-benthamHalfLookaheadBinary1609969291442293190.config",
+      "configuration_sha256": "90d091ed87b766d561d52cc09a019272c33206dff4571a0ad29bf8ea197c3458"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1675981611313432253",
+      "entry": "0.37-benthamHalfLookaheadBinary1675981611313432253.config",
+      "configuration_sha256": "d17c64d287cf67f065d9af7742a5d03fa813b299b18f4e5bcd20cbac7549f94f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1699493264997127801",
+      "entry": "0.37-benthamHalfLookaheadBinary1699493264997127801.config",
+      "configuration_sha256": "2d6ce91d432d43fd6e289e20861db800d67d910574086476c1895b08773b111c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1709423058422636144",
+      "entry": "0.37-benthamHalfLookaheadBinary1709423058422636144.config",
+      "configuration_sha256": "e06867dd440b573dbc031283c2de1ff615e52f0199055a1996651b0089636498"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1715589679358392957",
+      "entry": "0.37-benthamHalfLookaheadBinary1715589679358392957.config",
+      "configuration_sha256": "5dca87a60a56f48e7c858ffb7805c6f8b654f1e892f613e962b01bdd0c2785c0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1729487573377343100",
+      "entry": "0.37-benthamHalfLookaheadBinary1729487573377343100.config",
+      "configuration_sha256": "0ba8015af55def00dd6a027a8b042ec5e41af0a432549d51a0f858c0586afb5e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1733922351158320141",
+      "entry": "0.37-benthamHalfLookaheadBinary1733922351158320141.config",
+      "configuration_sha256": "08058f9c2932463a60159abaee43f4691b2a1c1bdbff510bb246a9b8d6615402"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1735937440315396203",
+      "entry": "0.37-benthamHalfLookaheadBinary1735937440315396203.config",
+      "configuration_sha256": "abf1552b687e179c047bcfe69c05a97013dc698558e1b85be3220ef531ad1a6b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1758318642328596812",
+      "entry": "0.37-benthamHalfLookaheadBinary1758318642328596812.config",
+      "configuration_sha256": "bc1e9fde23ef955c19ef502b8e708225a1f9022ee39586d9035e8cc9bcbdf20c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1802411219399068431",
+      "entry": "0.37-benthamHalfLookaheadBinary1802411219399068431.config",
+      "configuration_sha256": "4437b3320c47a1ac87ec2acbc8cd8f444641e63797ff3f78645491ee6df14280"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1823687216165022946",
+      "entry": "0.37-benthamHalfLookaheadBinary1823687216165022946.config",
+      "configuration_sha256": "de05544f9425f0f12bf3401cb8748b8f58d940f1dd5ea6bdec27e68d05054352"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1824130813090282559",
+      "entry": "0.37-benthamHalfLookaheadBinary1824130813090282559.config",
+      "configuration_sha256": "2654f79b71931a0296ee2a081d993a35c69e3975cf8f16776a5d180cca15bef9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1859274993552365414",
+      "entry": "0.37-benthamHalfLookaheadBinary1859274993552365414.config",
+      "configuration_sha256": "e99429fca50b1901fe5fb86d76f01e6279a778955177aa98e059f24f2d58282e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1877734808722157172",
+      "entry": "0.37-benthamHalfLookaheadBinary1877734808722157172.config",
+      "configuration_sha256": "b46a5cca1b191b082bb345077c3b541afff1e77565f95fafb737b7a9cf4cc9a1"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1889951933564338114",
+      "entry": "0.37-benthamHalfLookaheadBinary1889951933564338114.config",
+      "configuration_sha256": "514673ee1a1df22061b7a5b2239a0147a2b908f29e47b57c6d360f6ce744a988"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1901155764328466682",
+      "entry": "0.37-benthamHalfLookaheadBinary1901155764328466682.config",
+      "configuration_sha256": "da0884dac6a398fc0e8039259da8309ad409370568fba1026ead8e8d4b9d09dd"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1939733711502684468",
+      "entry": "0.37-benthamHalfLookaheadBinary1939733711502684468.config",
+      "configuration_sha256": "00c3bc1b30427af18aeb2db5e88182be60c98b23962f479ed160c9425c6d94f6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1940916411417830863",
+      "entry": "0.37-benthamHalfLookaheadBinary1940916411417830863.config",
+      "configuration_sha256": "47ff335eeb224d1ef3a89138e8b85791016fa17b83e8d237d59bb828f21024a4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1969904073141498978",
+      "entry": "0.37-benthamHalfLookaheadBinary1969904073141498978.config",
+      "configuration_sha256": "8ec6dc8a0cfdd33bdfe39e57225474e8e8f20b80115236a305e1870ce9de42a0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "1996241008433945587",
+      "entry": "0.37-benthamHalfLookaheadBinary1996241008433945587.config",
+      "configuration_sha256": "9e13a69e661ae70059be6d0f9cc98f4b531d112d7da3f6f776967a7e83f64a32"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2009581725043069747",
+      "entry": "0.37-benthamHalfLookaheadBinary2009581725043069747.config",
+      "configuration_sha256": "a3b2e31b29f5937a74ebdf8cc28319f61e3bbb0123bd31bb8dd5e579ecb5925b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2060968127868463485",
+      "entry": "0.37-benthamHalfLookaheadBinary2060968127868463485.config",
+      "configuration_sha256": "9b09418bafdcb3d2546a8eb9fe1bd1d0d191e2e15f0a9efd946299d38ddecd39"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2077165266000589833",
+      "entry": "0.37-benthamHalfLookaheadBinary2077165266000589833.config",
+      "configuration_sha256": "d1f8d052c4f5ed800d000140972cb56053f204e2ac3597af75691881339cf0c3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2157651943410725453",
+      "entry": "0.37-benthamHalfLookaheadBinary2157651943410725453.config",
+      "configuration_sha256": "8c2e582bfb82c07a57310a6d1a3f52bfc0ae40ecead89e1530df049c4be36816"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2170005679457195708",
+      "entry": "0.37-benthamHalfLookaheadBinary2170005679457195708.config",
+      "configuration_sha256": "eb16ee12a78dcf02d1db2d3da23c3a20ab8cab0ae8e74d9fc232523a9e067a91"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2183727325420396370",
+      "entry": "0.37-benthamHalfLookaheadBinary2183727325420396370.config",
+      "configuration_sha256": "f3cf816f02b65462d1fe417006d4065b0b3933c69c1addfbac7a8599d816a1b0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2185482684782988612",
+      "entry": "0.37-benthamHalfLookaheadBinary2185482684782988612.config",
+      "configuration_sha256": "4e2dd56e6151dedec8710f4eaf4b50ba60b39dbe9c31b304fcb47ec33987ff8b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2208631987014131776",
+      "entry": "0.37-benthamHalfLookaheadBinary2208631987014131776.config",
+      "configuration_sha256": "27cc1a1c0b907c713433577d3315bb7d765bf10ea931382e6e26ac01aeb46887"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2214172059989836120",
+      "entry": "0.37-benthamHalfLookaheadBinary2214172059989836120.config",
+      "configuration_sha256": "f3f6c944db651260c8793b851536e1adea9c5cc2a36a162defc5d287819e7291"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2229221462438655705",
+      "entry": "0.37-benthamHalfLookaheadBinary2229221462438655705.config",
+      "configuration_sha256": "ef4fc09256dcfb7bc3122bfeb4459616302198656c93b7d35e9f8f25583760f6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2289603482179039710",
+      "entry": "0.37-benthamHalfLookaheadBinary2289603482179039710.config",
+      "configuration_sha256": "fd0b647f9c398db2ba0e3a0d070f7b176cc3bf2d2806efff3edb48301328efac"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2291145593174368950",
+      "entry": "0.37-benthamHalfLookaheadBinary2291145593174368950.config",
+      "configuration_sha256": "02eefb26cc2b1a7bd54c4e37b6c93bb0b5f8a8f1c7c1982854d1aba851193a9e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2361390333587256182",
+      "entry": "0.37-benthamHalfLookaheadBinary2361390333587256182.config",
+      "configuration_sha256": "f53c7cea54294c1059c3f91861b8124eb3acbfc7e5aa9d32bd07cee099838a21"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2369574832526434850",
+      "entry": "0.37-benthamHalfLookaheadBinary2369574832526434850.config",
+      "configuration_sha256": "79531fbf2795f19a54c83ed8c9cef5dc62bcadebcc116d8df91834f3c0eaaa5c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2370010444570231369",
+      "entry": "0.37-benthamHalfLookaheadBinary2370010444570231369.config",
+      "configuration_sha256": "3b89e808a3f882d0cce09cb9ba4ac9b9f28cbf9c2a550f1c3625848346ad2fec"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2381485344872413711",
+      "entry": "0.37-benthamHalfLookaheadBinary2381485344872413711.config",
+      "configuration_sha256": "a3548d69f1d91a96f7d6298da7242b0226522b6f2763b28f2499fc74eb2973e0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2387650022012358909",
+      "entry": "0.37-benthamHalfLookaheadBinary2387650022012358909.config",
+      "configuration_sha256": "f5bc820637f5a5483a2f4cae4345aef7d21ba4412bf6143515c565431ffafa29"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2388936107119140191",
+      "entry": "0.37-benthamHalfLookaheadBinary2388936107119140191.config",
+      "configuration_sha256": "a44eea875672e897f6a21dd90e3a5c8deb978b8faf1c8870c294cb74f4305eac"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2420744157521560887",
+      "entry": "0.37-benthamHalfLookaheadBinary2420744157521560887.config",
+      "configuration_sha256": "44a5e33d0e4fe28e97c5e81e899ed356c4458807e898cc34b51d80830abbed07"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2483216780622132986",
+      "entry": "0.37-benthamHalfLookaheadBinary2483216780622132986.config",
+      "configuration_sha256": "ab2b994cf095f55e94f13fbb1cc40917d5438a88dd19f97402b0c099c7548a00"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2513573707559938025",
+      "entry": "0.37-benthamHalfLookaheadBinary2513573707559938025.config",
+      "configuration_sha256": "36523915fa52f6c61fe7068dedb93efd1a863954bf81803e4c75624156fd8a14"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2577648585074031495",
+      "entry": "0.37-benthamHalfLookaheadBinary2577648585074031495.config",
+      "configuration_sha256": "de31c7de213b301c86cfbc7676434ff79e7d84e41eea54aea846c2e283dc01aa"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2619307628467993945",
+      "entry": "0.37-benthamHalfLookaheadBinary2619307628467993945.config",
+      "configuration_sha256": "d76764d97075d5bbb4c444c75faa2bb7ceafe0fa2cc81a06847789deb62b9183"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2627344384652811600",
+      "entry": "0.37-benthamHalfLookaheadBinary2627344384652811600.config",
+      "configuration_sha256": "7f9e77360bbfd6b68193c97e79db8ef841d66471f1343cc60e066ab32d402859"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2633622880550445485",
+      "entry": "0.37-benthamHalfLookaheadBinary2633622880550445485.config",
+      "configuration_sha256": "862b6b9097419dbef4aa67e38302ef65406e8ad42557f6af059386416b98bb02"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2656982685209633033",
+      "entry": "0.37-benthamHalfLookaheadBinary2656982685209633033.config",
+      "configuration_sha256": "756150b129d3e99b320534282527b2dfe968337111c1e6a65503bf222710fd4e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2664542518672722136",
+      "entry": "0.37-benthamHalfLookaheadBinary2664542518672722136.config",
+      "configuration_sha256": "095154528b654daf0ca7369fc42bfcba0799a14a009a181112e1c627cd8ae044"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2681981469776546748",
+      "entry": "0.37-benthamHalfLookaheadBinary2681981469776546748.config",
+      "configuration_sha256": "5a2a3889273b551c13b77aafecf5c4c45235970d5456492d68d82ee489e3a835"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2756918492959522804",
+      "entry": "0.37-benthamHalfLookaheadBinary2756918492959522804.config",
+      "configuration_sha256": "e78cb0375bfab150d720ec09841e45c6c83f93d2e831e1f3fc1b46a2e940e328"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2776046745237740637",
+      "entry": "0.37-benthamHalfLookaheadBinary2776046745237740637.config",
+      "configuration_sha256": "51d6b25305a1b7791991b950e33b2cece739df09beff304347776b5220b69dd0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2805327632841556872",
+      "entry": "0.37-benthamHalfLookaheadBinary2805327632841556872.config",
+      "configuration_sha256": "8103074cb1cdfeab9dd6dcdb1479c6230853003c52476a672ed9c97247e6e9e3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2847467790966455473",
+      "entry": "0.37-benthamHalfLookaheadBinary2847467790966455473.config",
+      "configuration_sha256": "512ada0d017c8731f40b4e34f7eb820bd4ab743e0ee8da574b2706071f8cc680"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2894409412357526145",
+      "entry": "0.37-benthamHalfLookaheadBinary2894409412357526145.config",
+      "configuration_sha256": "8233c1c2cad48bd73b1e485040193193abf4f6e03b822265c3424ea3d54dae4b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2928919948642262303",
+      "entry": "0.37-benthamHalfLookaheadBinary2928919948642262303.config",
+      "configuration_sha256": "ff70f571d89b41f919f18079745c1db2b33c97c23f55ab2050243d03af21188a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2950576839187693085",
+      "entry": "0.37-benthamHalfLookaheadBinary2950576839187693085.config",
+      "configuration_sha256": "58f956805cd27815b1011a8ef2ae2bc5851ebe37e4fa30bd6682e19f889e7217"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "2978767121380349240",
+      "entry": "0.37-benthamHalfLookaheadBinary2978767121380349240.config",
+      "configuration_sha256": "82236b7ff163eb7823517c9331dff5c38952154eea7a70379d9399ef70c9c306"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3029592770614318108",
+      "entry": "0.37-benthamHalfLookaheadBinary3029592770614318108.config",
+      "configuration_sha256": "a6141c6e64bf667ff7a31091c47d37ba6a3fd895b983b16c7fee3374b9b30404"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3031959061600682352",
+      "entry": "0.37-benthamHalfLookaheadBinary3031959061600682352.config",
+      "configuration_sha256": "9c2dda1b9cbdd24e4b3f6a37ad3ccca304c58b197aabe376f71aadc193a975b9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3037731887305531318",
+      "entry": "0.37-benthamHalfLookaheadBinary3037731887305531318.config",
+      "configuration_sha256": "bbb4713bd58578fc9a6dee54734110af4c1e88b98a89ad9e39b2f4769df45b2d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3080447128953811521",
+      "entry": "0.37-benthamHalfLookaheadBinary3080447128953811521.config",
+      "configuration_sha256": "ab777e1ff87f2bb40b0744b715d38f715136989ffca588591af059140426b857"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3083379455419391971",
+      "entry": "0.37-benthamHalfLookaheadBinary3083379455419391971.config",
+      "configuration_sha256": "57689b7aa9ee52954aa61d126cc0ca6875bfa7ce5590cdb06ec7d87059c1f8b7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3100771709220344633",
+      "entry": "0.37-benthamHalfLookaheadBinary3100771709220344633.config",
+      "configuration_sha256": "645aa18c23dbe18c84d8311975e918c1695e2eaca4006e65ab6f46e18ee1bf8b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3130560300212625915",
+      "entry": "0.37-benthamHalfLookaheadBinary3130560300212625915.config",
+      "configuration_sha256": "e7a72c162745304a3683b805017325a4b5895bace1674ebd35711f27b52a0d0c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3179381068919553722",
+      "entry": "0.37-benthamHalfLookaheadBinary3179381068919553722.config",
+      "configuration_sha256": "ba8c14e4120855a06d5f8b0edc07c34b5e41676e55339510d6f3370c9d52ac77"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3212903396888577867",
+      "entry": "0.37-benthamHalfLookaheadBinary3212903396888577867.config",
+      "configuration_sha256": "f04b0c69e57f9afa7760a46bc15abffd367a0b130b624fef4d45f9743b1c9655"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3241066983949209131",
+      "entry": "0.37-benthamHalfLookaheadBinary3241066983949209131.config",
+      "configuration_sha256": "bc1de7cf342e42318137e10fec453305c034e6a327b11882d802a4f5c59172ea"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3254269434043330167",
+      "entry": "0.37-benthamHalfLookaheadBinary3254269434043330167.config",
+      "configuration_sha256": "84c00de67b923eb009a9c11047264886b9b1406c583bae58df4650b6995555f7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3279236007363554868",
+      "entry": "0.37-benthamHalfLookaheadBinary3279236007363554868.config",
+      "configuration_sha256": "b03eada016b81a7aa68ce3bdcd81d7874efbced060fa21091a012db87a0d0304"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3280897779537085950",
+      "entry": "0.37-benthamHalfLookaheadBinary3280897779537085950.config",
+      "configuration_sha256": "93f8ff96ecb5d77f267512d17889007377043dd599ed6c191e428a79e8a3083e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3286628165250219210",
+      "entry": "0.37-benthamHalfLookaheadBinary3286628165250219210.config",
+      "configuration_sha256": "433f479c8025ce9e8442814c5940cbdd2e29b0da5a65d7a6a6bf5132b83ba39f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3291190799162476839",
+      "entry": "0.37-benthamHalfLookaheadBinary3291190799162476839.config",
+      "configuration_sha256": "1e34b2fef3f40b8d40a92fe00a30b20c2c3837c4ccf2e53343551626574b8991"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3313297389939560696",
+      "entry": "0.37-benthamHalfLookaheadBinary3313297389939560696.config",
+      "configuration_sha256": "7c2d96f9f64579a5fb619000097c72c0292646c61ccae7afe2c275b210b1f327"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3313592225750345245",
+      "entry": "0.37-benthamHalfLookaheadBinary3313592225750345245.config",
+      "configuration_sha256": "357920e86f88e38f71c5caf4d02e23d4caf7f1c295c9b04ff4f970119246b028"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3351642915356722722",
+      "entry": "0.37-benthamHalfLookaheadBinary3351642915356722722.config",
+      "configuration_sha256": "a31c87ca479f031e0afd97f9ca070e7716976271469d5a9b676e742e462a38ee"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3366708669395618643",
+      "entry": "0.37-benthamHalfLookaheadBinary3366708669395618643.config",
+      "configuration_sha256": "8ad854b484a3c8d0e7833253c3792f402a0f6262c4df0c62eef145812ba07386"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3408059079860468147",
+      "entry": "0.37-benthamHalfLookaheadBinary3408059079860468147.config",
+      "configuration_sha256": "0e2b7569e92d06d26a399bd5646130c1524d1e2282e3a90f403365d6009aaf14"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3440737680066606591",
+      "entry": "0.37-benthamHalfLookaheadBinary3440737680066606591.config",
+      "configuration_sha256": "2972866646fd4fb0e207ed3294d1303e6aa00ddd9c0c817e5510ac7ba3bb3de9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3458965655990623631",
+      "entry": "0.37-benthamHalfLookaheadBinary3458965655990623631.config",
+      "configuration_sha256": "54e428565b3c1f564a63849b5f39dce061d0ac7c9818326403b7b0cc469487e0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3465535345500700256",
+      "entry": "0.37-benthamHalfLookaheadBinary3465535345500700256.config",
+      "configuration_sha256": "4dd9b8decce0b1e62cf3e215da3e7a8ef7520252240aeee43f22c2cbb9fe70e8"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3488041093975898946",
+      "entry": "0.37-benthamHalfLookaheadBinary3488041093975898946.config",
+      "configuration_sha256": "25c6bd694123d662fe76ef8fff3da7357491368ae157263d0afa5f40a584a0e7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3539323447380265440",
+      "entry": "0.37-benthamHalfLookaheadBinary3539323447380265440.config",
+      "configuration_sha256": "5061577923ba7d3f369049f74393776969a8e539e2faa5a3da6c9db7deb43d30"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3565338351810780878",
+      "entry": "0.37-benthamHalfLookaheadBinary3565338351810780878.config",
+      "configuration_sha256": "1431fbaa05c957ebcba523539128754fe9057b7c0596e572b77544410879246a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3570908860894484402",
+      "entry": "0.37-benthamHalfLookaheadBinary3570908860894484402.config",
+      "configuration_sha256": "5b77173f83989c19f69c2786b3afb22a7d2a8c3a30b936055f68b887edd24c75"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3573723820242427017",
+      "entry": "0.37-benthamHalfLookaheadBinary3573723820242427017.config",
+      "configuration_sha256": "55bad52a963f7081db4dbe0ecd29cb2eabdabc0bc3733f3c26888c53b7c775c5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3573933913596124850",
+      "entry": "0.37-benthamHalfLookaheadBinary3573933913596124850.config",
+      "configuration_sha256": "1a4b5ec185eedc716be66ac22bca6420bd2e2f6d220a0d46792ec6db5eae1eb8"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3579894407993171827",
+      "entry": "0.37-benthamHalfLookaheadBinary3579894407993171827.config",
+      "configuration_sha256": "7a70a4cf7ae91536de2799f1eeece6932e05b1ebc77c4666fb519d1977c96185"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3584062345757521995",
+      "entry": "0.37-benthamHalfLookaheadBinary3584062345757521995.config",
+      "configuration_sha256": "ee8e9156d315a6f27cd53a00a46ea5715f26eb1e99cfc8ab575f6415b63913f7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3588015731084150522",
+      "entry": "0.37-benthamHalfLookaheadBinary3588015731084150522.config",
+      "configuration_sha256": "05b48bac61fd1dbb26b0d24d2a46bb38751faaca632c775b0b99535e58d1e4ca"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3592399515945518777",
+      "entry": "0.37-benthamHalfLookaheadBinary3592399515945518777.config",
+      "configuration_sha256": "4a04425e06ebb66357d2f9d33598125ecc688ebd558d6106467382a8c9acd56b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3607651362576730995",
+      "entry": "0.37-benthamHalfLookaheadBinary3607651362576730995.config",
+      "configuration_sha256": "ab9ee43eef47806a1821858c9ef8281b785154d14ddac9b71faee2e61b2b78b1"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3616167824915624028",
+      "entry": "0.37-benthamHalfLookaheadBinary3616167824915624028.config",
+      "configuration_sha256": "05fc2eb431000e5b9d31ebc2a81179998d65f4370caf2935bc53da938ba5a23f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3618253521922326876",
+      "entry": "0.37-benthamHalfLookaheadBinary3618253521922326876.config",
+      "configuration_sha256": "d3dd350e8feaa645e783d84fb07330faf4caeab3667d7c199baa8ed6b7dfb8d4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3647330525768885984",
+      "entry": "0.37-benthamHalfLookaheadBinary3647330525768885984.config",
+      "configuration_sha256": "5d8fbb009bd984198ea65ca8d463e16ed4a2077f695853c1d704a4cca71e9f54"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3648104118796151117",
+      "entry": "0.37-benthamHalfLookaheadBinary3648104118796151117.config",
+      "configuration_sha256": "dd25f7b785b135978296ed19433ca3deaea763be5b4dc24d3978ab597d851ab1"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3654058214302781386",
+      "entry": "0.37-benthamHalfLookaheadBinary3654058214302781386.config",
+      "configuration_sha256": "3686d6d1d649716d2b3c73b6e171684918e5c2f74717dfc667df984281f51b71"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3686749064656266026",
+      "entry": "0.37-benthamHalfLookaheadBinary3686749064656266026.config",
+      "configuration_sha256": "b69099c67b2d0618390b697698cca857c05d6fdc1d9d05593944eddf5022ca60"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3702722406025063529",
+      "entry": "0.37-benthamHalfLookaheadBinary3702722406025063529.config",
+      "configuration_sha256": "5d518b9cd411766d881463372810fdf4c00b1f165da7dc67a7393870b7f147de"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3714702612667776603",
+      "entry": "0.37-benthamHalfLookaheadBinary3714702612667776603.config",
+      "configuration_sha256": "8e8036aa5b2b8c31184764fd98aa61228eb5b5d43b1b8f9f5c6fc3bb18cc2bcb"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3729824025252728098",
+      "entry": "0.37-benthamHalfLookaheadBinary3729824025252728098.config",
+      "configuration_sha256": "a018081200b07dbc2329791c60661dd5cbf6a55997613a5a8d14bc3d790fba78"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3782800091293713213",
+      "entry": "0.37-benthamHalfLookaheadBinary3782800091293713213.config",
+      "configuration_sha256": "042fb48dc849a86669aa69784e504084569f07e705a4a3eec18d8965168114ee"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3824571603106069952",
+      "entry": "0.37-benthamHalfLookaheadBinary3824571603106069952.config",
+      "configuration_sha256": "b28970efaa78f2a5d5219127f9ddb7da3edaea3bfab46e32eb379ef2664222bb"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3847019377264748987",
+      "entry": "0.37-benthamHalfLookaheadBinary3847019377264748987.config",
+      "configuration_sha256": "dd3d2115c474d3da7369aaac823c32cddd1c83fa830100b22168477cccb42d85"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3870084188950811967",
+      "entry": "0.37-benthamHalfLookaheadBinary3870084188950811967.config",
+      "configuration_sha256": "994d82cd13d2a1c858609556b2cd0adf21feea138d92e5f7a7c8993ebcfe8e10"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3891569450635021708",
+      "entry": "0.37-benthamHalfLookaheadBinary3891569450635021708.config",
+      "configuration_sha256": "4bafc17241c82ba891aee2cd6eed54850216a6c762f075163d2dcb2fb5c6a9b4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3911178782231082823",
+      "entry": "0.37-benthamHalfLookaheadBinary3911178782231082823.config",
+      "configuration_sha256": "f9243a0e25fec3eb7511114f75a4735e5155f2a9a09164b43d08f7d8d3f4cffc"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3916759863802903962",
+      "entry": "0.37-benthamHalfLookaheadBinary3916759863802903962.config",
+      "configuration_sha256": "f2dec9f942cf9adfd0c4bf5173fa3fd6b034b2a02dd355ac40dd71bf355a4f31"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3932893849138539905",
+      "entry": "0.37-benthamHalfLookaheadBinary3932893849138539905.config",
+      "configuration_sha256": "9b9abc0a847f8fbf7bc2ae281ef45d5d041758feb941408848adfdda27abd895"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3936646431813069552",
+      "entry": "0.37-benthamHalfLookaheadBinary3936646431813069552.config",
+      "configuration_sha256": "24ec73c585d6767de98cf102f62176ad3b6b3e412c9e262c8f28ee5c1813d04f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3959066368858068159",
+      "entry": "0.37-benthamHalfLookaheadBinary3959066368858068159.config",
+      "configuration_sha256": "24fcc2b18c4c05278e98dd82ee01cc5cca60e31f98f6fd6fad00ae9e6aa99c64"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3979900374252519060",
+      "entry": "0.37-benthamHalfLookaheadBinary3979900374252519060.config",
+      "configuration_sha256": "b3c0c78921d16a8519d65f24a33edb236fd0c617beee927c17786f81ad7827fd"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "3980819237122592643",
+      "entry": "0.37-benthamHalfLookaheadBinary3980819237122592643.config",
+      "configuration_sha256": "15df3eccd45f75bf1ca3766176d4b77579f5c1fb9c82de6085122eb6f244ae91"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4012090281180847108",
+      "entry": "0.37-benthamHalfLookaheadBinary4012090281180847108.config",
+      "configuration_sha256": "3bece380e430a3ae7fa0b45f32a2d32d6e2c15527f6ac48d33f734f04546e8b1"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4050445856966198186",
+      "entry": "0.37-benthamHalfLookaheadBinary4050445856966198186.config",
+      "configuration_sha256": "4fb50a7bcecfd064155e2515b89563ddd9a092481daf55ab142660d97c609d04"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4073812963572136710",
+      "entry": "0.37-benthamHalfLookaheadBinary4073812963572136710.config",
+      "configuration_sha256": "e39bd063f6a2af139f261ecaf11e794c836fe05bc25aacc2261a08549f0703da"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4120068986275141671",
+      "entry": "0.37-benthamHalfLookaheadBinary4120068986275141671.config",
+      "configuration_sha256": "36091d9a92deddabd592075d46b58fa783098cac75e59e1a30dee822d4b7ae55"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4137951150182024287",
+      "entry": "0.37-benthamHalfLookaheadBinary4137951150182024287.config",
+      "configuration_sha256": "dfd31e5693932da2c223bc0a5f9fda56e96158d425e485ccfd950d17e7bacdad"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4151619118342789587",
+      "entry": "0.37-benthamHalfLookaheadBinary4151619118342789587.config",
+      "configuration_sha256": "ded311d6f38d4c2863ea9ae8163d6b1e8ea2fb7f2ed4e06bfa8e141b6f75e7c7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4156474589021464271",
+      "entry": "0.37-benthamHalfLookaheadBinary4156474589021464271.config",
+      "configuration_sha256": "a9b4f169c7fc64b08923775f28cc8f0d85cc519ce9478963ec2385635b98c074"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4191298840464005437",
+      "entry": "0.37-benthamHalfLookaheadBinary4191298840464005437.config",
+      "configuration_sha256": "e1aebb46cfe6d6c3d476fa9af82d5681c77ce98d9a755648e21556a9a0199d1f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4192925732238570134",
+      "entry": "0.37-benthamHalfLookaheadBinary4192925732238570134.config",
+      "configuration_sha256": "fb07ba53180d57c29e6d11dad859673ede521212d2be06142ea7d8daaf75c8b2"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4208064564498143183",
+      "entry": "0.37-benthamHalfLookaheadBinary4208064564498143183.config",
+      "configuration_sha256": "5ca284b20c090d30279096576f64109b1b4654c6053d57844778ccd37781d18c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4212066701122151273",
+      "entry": "0.37-benthamHalfLookaheadBinary4212066701122151273.config",
+      "configuration_sha256": "e0a24014e67629306ae306b33f5dc1cb32182cfff7b106ce2c7b0d242c33430e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4212262627839727271",
+      "entry": "0.37-benthamHalfLookaheadBinary4212262627839727271.config",
+      "configuration_sha256": "aff2485fd5090d0d0a3b42357fc69fe77a1f74d39d5d49d081513d35fdff5780"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4220987686023315387",
+      "entry": "0.37-benthamHalfLookaheadBinary4220987686023315387.config",
+      "configuration_sha256": "0f41b97f79c9c6b46bfca98874a20e561258095163cc5db9e431b792cca87698"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4260884763858895255",
+      "entry": "0.37-benthamHalfLookaheadBinary4260884763858895255.config",
+      "configuration_sha256": "8bd9db5a8de5b0b51cce3807bb5df563e712a720d777181d62e7a399e3cf6b3c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4283649128375280212",
+      "entry": "0.37-benthamHalfLookaheadBinary4283649128375280212.config",
+      "configuration_sha256": "f8d736760bcb28e0a72f30da3dfe29d1d39a4e0dbc01435229a407d94aa085d8"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4290660761210829058",
+      "entry": "0.37-benthamHalfLookaheadBinary4290660761210829058.config",
+      "configuration_sha256": "545cb14eb2ab4304592b91c5749377cf624f5ba07df1286cbc32e745ac2ce5b9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4305319044412515626",
+      "entry": "0.37-benthamHalfLookaheadBinary4305319044412515626.config",
+      "configuration_sha256": "adff67be1cbceb4b939e95321b4b5134b278d9b954376e8ef4451dae732c2ff9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4318391225590412394",
+      "entry": "0.37-benthamHalfLookaheadBinary4318391225590412394.config",
+      "configuration_sha256": "8ba82fd442da98c287458577e1108aabdce3b187b7246fca67fac1ac14883ba0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4322857474273933961",
+      "entry": "0.37-benthamHalfLookaheadBinary4322857474273933961.config",
+      "configuration_sha256": "7030a7899e059c7fcfd5d5c4ab1667bee126f4a1ac20da15a66c63a0d293b019"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4335070638830477102",
+      "entry": "0.37-benthamHalfLookaheadBinary4335070638830477102.config",
+      "configuration_sha256": "402ac4a1bc9e402be2c97d15fb16fc00e235290a78ab54d7f49369881d75daaf"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4335335063942041261",
+      "entry": "0.37-benthamHalfLookaheadBinary4335335063942041261.config",
+      "configuration_sha256": "63f378fe7d541387373bfdb191290fcb6b9a163c3e38e137d927712780c7a033"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4348769395949157104",
+      "entry": "0.37-benthamHalfLookaheadBinary4348769395949157104.config",
+      "configuration_sha256": "4e40f256cc33bf28e3b49069a72d37de587bb102836e273ff535f407baa9a387"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4349919276059682151",
+      "entry": "0.37-benthamHalfLookaheadBinary4349919276059682151.config",
+      "configuration_sha256": "44238d3ea31a243efdcb4d9fab8f77b86582136ad44c6b9b3033aadd0f0a30ba"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4358394366500297905",
+      "entry": "0.37-benthamHalfLookaheadBinary4358394366500297905.config",
+      "configuration_sha256": "14a55edc3f3d9c2b37440a5c6c136188e76da84fde043898a92a77cba525da0a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4367580375900955609",
+      "entry": "0.37-benthamHalfLookaheadBinary4367580375900955609.config",
+      "configuration_sha256": "b978feac82faa3ae5fb1057e7a9dcb6baa8b68a9049bfbeb0d954733bde622d3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4372043094673445202",
+      "entry": "0.37-benthamHalfLookaheadBinary4372043094673445202.config",
+      "configuration_sha256": "4e6e831de57b33a1f26848785b962e311e9cf65a378db8985f67ff53f5114b67"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4375818342599997359",
+      "entry": "0.37-benthamHalfLookaheadBinary4375818342599997359.config",
+      "configuration_sha256": "504aa7c52333589a4e744acb37c474bcd4a0913c870a9b9344ca2ad6ea4b6dcb"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4377311383712979620",
+      "entry": "0.37-benthamHalfLookaheadBinary4377311383712979620.config",
+      "configuration_sha256": "7cda11a4507c39f53231852938be9802d0c9f6aa0d13345172b12495a69915c6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4393139615085228943",
+      "entry": "0.37-benthamHalfLookaheadBinary4393139615085228943.config",
+      "configuration_sha256": "d7d7779b82a95cc9c7093bd337cef7ee2cb839443add34e30fbc21166e5d7523"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4405708370898770069",
+      "entry": "0.37-benthamHalfLookaheadBinary4405708370898770069.config",
+      "configuration_sha256": "779308a5c8f1bc938e7fde76305e8d8b142b2db31bf4e5a3cdd685b4dc79552d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4414529524700146287",
+      "entry": "0.37-benthamHalfLookaheadBinary4414529524700146287.config",
+      "configuration_sha256": "9426625b63c6079947791421faaf5cddab1ae852d7191296623a08310cf6ab67"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4419331102752867088",
+      "entry": "0.37-benthamHalfLookaheadBinary4419331102752867088.config",
+      "configuration_sha256": "c8d5d9612b452e828c00a2a936947186ef688ed10e5b2aa73272f0be01c02c97"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4435721289466590190",
+      "entry": "0.37-benthamHalfLookaheadBinary4435721289466590190.config",
+      "configuration_sha256": "96d13fe5f27d9b0ff2eb0d8c7f284c492d2214440026db7bd0a8eb6df8066b12"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4439543845877460037",
+      "entry": "0.37-benthamHalfLookaheadBinary4439543845877460037.config",
+      "configuration_sha256": "b40fe708c8c60801af1f1b5a15b31de1607ac3dca9a4894310353a103a2d1ddb"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4471367600967201477",
+      "entry": "0.37-benthamHalfLookaheadBinary4471367600967201477.config",
+      "configuration_sha256": "fe6e7bcca8171f4daa697b08e32574ca1a92d632626d8a063867ffd4861ed9d4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4485825966651883613",
+      "entry": "0.37-benthamHalfLookaheadBinary4485825966651883613.config",
+      "configuration_sha256": "b0849c46910de00774cc222e0f9ea1040889633d0f6d97abe68190344f9491ed"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4519066998061466887",
+      "entry": "0.37-benthamHalfLookaheadBinary4519066998061466887.config",
+      "configuration_sha256": "cf6cd6c3cf6e5b1dfc723141e8f30be71581655e9d3208139e0ee1173a6919cc"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4536837957959267379",
+      "entry": "0.37-benthamHalfLookaheadBinary4536837957959267379.config",
+      "configuration_sha256": "45d446dbd42d2b176393363789c29a88fb3c625c10c19983bf6df5682547b09b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4545923693926126457",
+      "entry": "0.37-benthamHalfLookaheadBinary4545923693926126457.config",
+      "configuration_sha256": "f5cbf0309d3dc3f59bd9173f2bdbf4850f0185928267efbe6e6f60fcc5125d4b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4553116222169214413",
+      "entry": "0.37-benthamHalfLookaheadBinary4553116222169214413.config",
+      "configuration_sha256": "8dd3e027fdade1011ab85f1acf718ed7257b281117b711f7928f8cc20fdedd31"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4585561232174947619",
+      "entry": "0.37-benthamHalfLookaheadBinary4585561232174947619.config",
+      "configuration_sha256": "0cbe8cb33f3bb46f29d6b1516334265d9e9e27c69e04cd99fdd49db404659771"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4592104806555126190",
+      "entry": "0.37-benthamHalfLookaheadBinary4592104806555126190.config",
+      "configuration_sha256": "f1bc55c9d5d8a9b6f224b683c2a03c64434823ac1668c9abeaa1798a6f47605c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4627406532021948174",
+      "entry": "0.37-benthamHalfLookaheadBinary4627406532021948174.config",
+      "configuration_sha256": "1172f3edc88f2a576e496cca7486204fa61f12f160301f5848fcc2d468dee1e4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4651346501679702951",
+      "entry": "0.37-benthamHalfLookaheadBinary4651346501679702951.config",
+      "configuration_sha256": "f907731359815a7d94617779f2ce3824a904379316c4fe8405d55018058963ec"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4668356957415451449",
+      "entry": "0.37-benthamHalfLookaheadBinary4668356957415451449.config",
+      "configuration_sha256": "dc26f9504fb2e4e2e7c5c42458c0cdb7ebc11c41613f012de9047778e1aa0c90"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4680530929482761719",
+      "entry": "0.37-benthamHalfLookaheadBinary4680530929482761719.config",
+      "configuration_sha256": "5c7f000bba84eb58595678114b902cd7417850b2581b671d6ca01831a3643f83"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4705595955654730755",
+      "entry": "0.37-benthamHalfLookaheadBinary4705595955654730755.config",
+      "configuration_sha256": "50d3d03b5c42f025e6f693204e9816ec72f8dc081576283d41229b9b6a203d36"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4709405610235404168",
+      "entry": "0.37-benthamHalfLookaheadBinary4709405610235404168.config",
+      "configuration_sha256": "d3d4d598624768fae9191562957522fdeb5f4a6bb7d17ad554bac597142ec61d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4725912836415925128",
+      "entry": "0.37-benthamHalfLookaheadBinary4725912836415925128.config",
+      "configuration_sha256": "d609c494002b32f1c7ae310e459e138dc14cd648a6196523da7c399349b9bba7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4746469224097112843",
+      "entry": "0.37-benthamHalfLookaheadBinary4746469224097112843.config",
+      "configuration_sha256": "ab92a5bf32d50ee8876dfb470c1eac15bd741a899e9f4957aa648808d67ea3e1"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4749878934219475975",
+      "entry": "0.37-benthamHalfLookaheadBinary4749878934219475975.config",
+      "configuration_sha256": "13c3d65fe95c20a0cb120f6a74f11be54df8f1e5a4b91ea62139ddf4bff4357b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4755779252370120351",
+      "entry": "0.37-benthamHalfLookaheadBinary4755779252370120351.config",
+      "configuration_sha256": "ea33868610acd307227812665a8a9023c8e37ff154f0ff0731cf442145d697b9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4773507270191285072",
+      "entry": "0.37-benthamHalfLookaheadBinary4773507270191285072.config",
+      "configuration_sha256": "4bf091fea2bc1db77634e416deb3fff45c3911b0e55cae255289118f4bbae956"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4779321687271683802",
+      "entry": "0.37-benthamHalfLookaheadBinary4779321687271683802.config",
+      "configuration_sha256": "8646803e20b38c988b0e65230e02b764fbd2def06b01ecb528a028c5880d6488"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4782127076432651114",
+      "entry": "0.37-benthamHalfLookaheadBinary4782127076432651114.config",
+      "configuration_sha256": "d3152f8d1cc024a2f4d198fcd3081c2c20f94e5148333241f201f008a14c7989"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4812550299643995444",
+      "entry": "0.37-benthamHalfLookaheadBinary4812550299643995444.config",
+      "configuration_sha256": "0e2bd65c5ee83ebd4699c5e8f5eba2c4d2e1d0d399ab6ee2125f0a662d8a3553"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4832144598789677445",
+      "entry": "0.37-benthamHalfLookaheadBinary4832144598789677445.config",
+      "configuration_sha256": "8c5faf9c441fbf3cd521db88863f8d01c0c31b88382dd6a55167bf74b4ca040b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4841724115181814440",
+      "entry": "0.37-benthamHalfLookaheadBinary4841724115181814440.config",
+      "configuration_sha256": "15ce52cc707e53a6ab8d59877a8d95cbbfd4a9c92633f3c3f1719421ed510d88"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4865385569843070049",
+      "entry": "0.37-benthamHalfLookaheadBinary4865385569843070049.config",
+      "configuration_sha256": "ae2a95fac26a5363373a2ecb20059f5fdb30fc1918e97b28fa803cc3fc259a91"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4865572446744984131",
+      "entry": "0.37-benthamHalfLookaheadBinary4865572446744984131.config",
+      "configuration_sha256": "c30c31698741cf169edf319d8fa51fbbaede87e502088400a8c103c02ac73d9f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4886005596606838496",
+      "entry": "0.37-benthamHalfLookaheadBinary4886005596606838496.config",
+      "configuration_sha256": "c89a04014bb49dfc53ba3ac461d1bc15b3e4ade23df01d29700340ba9915c164"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4893200983412371952",
+      "entry": "0.37-benthamHalfLookaheadBinary4893200983412371952.config",
+      "configuration_sha256": "7426716dbc6b46865f6ad30c0b9dce7e12bcb954840ded3d1bdf2d259922e112"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4893720129238770169",
+      "entry": "0.37-benthamHalfLookaheadBinary4893720129238770169.config",
+      "configuration_sha256": "093906208b09044e463fd8f409fd7f4d8369c55a606819d2d38b708a843b1744"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4898347074412332614",
+      "entry": "0.37-benthamHalfLookaheadBinary4898347074412332614.config",
+      "configuration_sha256": "59d84a7cdcf4dfaaa3a48c0d8f59493a770293316b38bf7e684ccef5c4db5836"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4903442537013278109",
+      "entry": "0.37-benthamHalfLookaheadBinary4903442537013278109.config",
+      "configuration_sha256": "38435a6a62dcf32c4cfa1aadd068976b1033456fee78305ed8662407ebe29bb5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4911447754346305614",
+      "entry": "0.37-benthamHalfLookaheadBinary4911447754346305614.config",
+      "configuration_sha256": "e878a4877b05e605c1a4bdd103593bfb1534dfe304d0ef3c5258eed46f3787eb"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4917277954810708288",
+      "entry": "0.37-benthamHalfLookaheadBinary4917277954810708288.config",
+      "configuration_sha256": "ae76e9b4cd360711eea348e7d35a34d024df084a5fa44911204a60e3a1318f96"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4924450696684077960",
+      "entry": "0.37-benthamHalfLookaheadBinary4924450696684077960.config",
+      "configuration_sha256": "b19a004b3cbe3daaec420fbab5fb73aee275e79e3a8a70e4b4aa233224c5062e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4939630820525923844",
+      "entry": "0.37-benthamHalfLookaheadBinary4939630820525923844.config",
+      "configuration_sha256": "4a0d0566e05dbe6a457fd8ccef6d22af235b483fa7ddb8a954e0a67321df3d2d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4949093510471888483",
+      "entry": "0.37-benthamHalfLookaheadBinary4949093510471888483.config",
+      "configuration_sha256": "eedcba80f15a8028a765350dfce774085af720d40ebab30d87f3f3190a02cf3f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "4986374456977238187",
+      "entry": "0.37-benthamHalfLookaheadBinary4986374456977238187.config",
+      "configuration_sha256": "1625d08389011974fa45b8a8d8d5bd3ae291e08dad2fa34f558442a6a4e8baba"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5008653198738249826",
+      "entry": "0.37-benthamHalfLookaheadBinary5008653198738249826.config",
+      "configuration_sha256": "f1816bd0809261e8cc9e6f4eca0357d41e5d82bf22cad9050aefd347c9a74e0f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5015081772822206471",
+      "entry": "0.37-benthamHalfLookaheadBinary5015081772822206471.config",
+      "configuration_sha256": "9721c44811286c37451dc3c83624a74e3e40b8146af0d8da1c398ee0ddb6f2bf"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5049060952899332926",
+      "entry": "0.37-benthamHalfLookaheadBinary5049060952899332926.config",
+      "configuration_sha256": "d3cbb705ada580b973029c3ad0eee3e56637c2f9aeb8bd3bcb61e0949a8e52e6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5071557610835901109",
+      "entry": "0.37-benthamHalfLookaheadBinary5071557610835901109.config",
+      "configuration_sha256": "198bf53fd2e5f896c1605299b2147648a90d6999eb95788bff04b74b85c9dcfe"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5079288152843007892",
+      "entry": "0.37-benthamHalfLookaheadBinary5079288152843007892.config",
+      "configuration_sha256": "bd7fcfe409be78329509727ef3f41899c3aefc19d4652dced666b36fca7fafc5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5169423246726545646",
+      "entry": "0.37-benthamHalfLookaheadBinary5169423246726545646.config",
+      "configuration_sha256": "f4c713bfa317bcf6dc94c7bd701f4796050235d89072aeef065b546e987d91dc"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5193952046582346415",
+      "entry": "0.37-benthamHalfLookaheadBinary5193952046582346415.config",
+      "configuration_sha256": "1ee5df28577017caeb9a8c52362a2dfcf00a352123263a01bf5161bd915796f4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5200749333348563875",
+      "entry": "0.37-benthamHalfLookaheadBinary5200749333348563875.config",
+      "configuration_sha256": "3b4fc4c39d7aefc464d4f7fcef71e64ceebd39bfa67ff868d64fc752809cc07d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5214892100153966662",
+      "entry": "0.37-benthamHalfLookaheadBinary5214892100153966662.config",
+      "configuration_sha256": "6b474394d25eb9222de58d227c1772107c4996db5d84a2c9ac4c67b2ec32f9b5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5226174062342390640",
+      "entry": "0.37-benthamHalfLookaheadBinary5226174062342390640.config",
+      "configuration_sha256": "d332962035e6bb5fe8cc7d3d128ee6a7c6cabb653cae14c8e9d3ad24b0b9fee1"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5258544719101233365",
+      "entry": "0.37-benthamHalfLookaheadBinary5258544719101233365.config",
+      "configuration_sha256": "da1cd626a4dcc7756037ca7dfdab3651f19e391a8221c79da262060b528b8466"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5262752621655686340",
+      "entry": "0.37-benthamHalfLookaheadBinary5262752621655686340.config",
+      "configuration_sha256": "cc73a1a83d11efe5222ed070d1936a6f73675c924ecda1c3aa2ff6f01352dee5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5299921647111273341",
+      "entry": "0.37-benthamHalfLookaheadBinary5299921647111273341.config",
+      "configuration_sha256": "b8d81f80db8f5c326bbdc4285e491fa5bd851ddd94059bf452f44462f66e5cf7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5306209880964937036",
+      "entry": "0.37-benthamHalfLookaheadBinary5306209880964937036.config",
+      "configuration_sha256": "c378db6dbcb3ad7f70fce526973cdc2914be8508bb116cfafa438974ed573e55"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5315768207953620733",
+      "entry": "0.37-benthamHalfLookaheadBinary5315768207953620733.config",
+      "configuration_sha256": "74a3c20bd1a82e7a33f811dc1abb1169e8abb5b22cf44a4fc39477643160ca28"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5322047387230311691",
+      "entry": "0.37-benthamHalfLookaheadBinary5322047387230311691.config",
+      "configuration_sha256": "7a900c3394239ae353d2c815fb8f688ba0eea0cf9bc0ac61a5dc1911a20e6f87"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5322088368832454314",
+      "entry": "0.37-benthamHalfLookaheadBinary5322088368832454314.config",
+      "configuration_sha256": "96a7804cc32601f803d2fad90326942b67dfb27e279555eab18b4e8b89874661"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5358781984101459954",
+      "entry": "0.37-benthamHalfLookaheadBinary5358781984101459954.config",
+      "configuration_sha256": "9b49548b3ce6b61da2ba538348026a85a24731685ac4c24d5cb0610c9ecab4cb"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5375629497885114591",
+      "entry": "0.37-benthamHalfLookaheadBinary5375629497885114591.config",
+      "configuration_sha256": "048a27ac7fb9aa87ec86c7282d907fbcd5741f082117fc5bd69d17cada92a025"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5379436640924162905",
+      "entry": "0.37-benthamHalfLookaheadBinary5379436640924162905.config",
+      "configuration_sha256": "94512648453e802d824e7f7b9ec3547bd2e644d10f9b5904953d838c8658cb5f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5454050486209463229",
+      "entry": "0.37-benthamHalfLookaheadBinary5454050486209463229.config",
+      "configuration_sha256": "ea747de17d7eca185af351ed6d2dba548e8992aa52679ee8a7d448e5975ad427"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5535352732677322983",
+      "entry": "0.37-benthamHalfLookaheadBinary5535352732677322983.config",
+      "configuration_sha256": "91053502fad93e48bd4d54039066f9f8bbe6b49b315080bcf74960d71dcc8929"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5546605841926489529",
+      "entry": "0.37-benthamHalfLookaheadBinary5546605841926489529.config",
+      "configuration_sha256": "3137c32866d25c7ae2712f4e9298794416211a76e6c936f6867acd637e831a13"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5570603644478252598",
+      "entry": "0.37-benthamHalfLookaheadBinary5570603644478252598.config",
+      "configuration_sha256": "733f613c1b95f0c655a7702f0538be7c2a3f53c22605ff3090e26c60cd6c1605"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5574324921041524767",
+      "entry": "0.37-benthamHalfLookaheadBinary5574324921041524767.config",
+      "configuration_sha256": "55357af4cfeb251f52cec8f1498821567cc00a26a8e6dc6a145ab35604762b5e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5595639686588143465",
+      "entry": "0.37-benthamHalfLookaheadBinary5595639686588143465.config",
+      "configuration_sha256": "2817e97310e945d64cc09f6a99488820c0e485ce1a3f32f28548c910309476d6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5630534955583856302",
+      "entry": "0.37-benthamHalfLookaheadBinary5630534955583856302.config",
+      "configuration_sha256": "19fa2cd4cd7163c4b07cb8d6924c5f8a44d94806cc7980e9705817d927b3a5ac"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5651411263657809755",
+      "entry": "0.37-benthamHalfLookaheadBinary5651411263657809755.config",
+      "configuration_sha256": "34c9bf5a3963dba2a6d55bd068720e93a128897d757c5cd249a412355d53693e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5652233604721026317",
+      "entry": "0.37-benthamHalfLookaheadBinary5652233604721026317.config",
+      "configuration_sha256": "0790e0dd4ae923cf069f66b0843720f18b110041c3d4bea85d3d18caebe6a547"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5656508181500331405",
+      "entry": "0.37-benthamHalfLookaheadBinary5656508181500331405.config",
+      "configuration_sha256": "db1cb29dea5d8db3f01f451e0333bca6bbdc28effcc3048fcf0394aacb56109d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5691372494368594869",
+      "entry": "0.37-benthamHalfLookaheadBinary5691372494368594869.config",
+      "configuration_sha256": "02ef27c83859d1b42dd8ad294eae8b80f030228fde16354e35ca8a294fe09ed2"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5702307015667554484",
+      "entry": "0.37-benthamHalfLookaheadBinary5702307015667554484.config",
+      "configuration_sha256": "7e837e127c560f6ce31cac129b7eb9ff67358ce94b4462dfdff276c9c75f2517"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5766482427597575012",
+      "entry": "0.37-benthamHalfLookaheadBinary5766482427597575012.config",
+      "configuration_sha256": "796e52ec992638704121a0c38ec32b67fe210a33306fa3446d84a8c3b7dbb6a7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5792095584643019201",
+      "entry": "0.37-benthamHalfLookaheadBinary5792095584643019201.config",
+      "configuration_sha256": "5dd854bb433f1a752e56e35cb40fc1d7a7cb2ba356d355d495ad00a587c49660"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5797448636817404900",
+      "entry": "0.37-benthamHalfLookaheadBinary5797448636817404900.config",
+      "configuration_sha256": "c79931e3215a268bbd4b88c1f9eecfb0fb1a559a905b45985a006aa954a54837"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5823505566249108022",
+      "entry": "0.37-benthamHalfLookaheadBinary5823505566249108022.config",
+      "configuration_sha256": "2c0aa7d2ceda63672be21b349702d15eb5950d3b9885167237d6233cfdf84545"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5844435284596351540",
+      "entry": "0.37-benthamHalfLookaheadBinary5844435284596351540.config",
+      "configuration_sha256": "cd0d7316ba8db9b371c57295d21d24656d67c8a2805819f4fa035df11d079e9f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5868518227874682112",
+      "entry": "0.37-benthamHalfLookaheadBinary5868518227874682112.config",
+      "configuration_sha256": "c7b05df1de166d4fe1f60e9705100259e46c5b75efa1ebf1b62976090673dec6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5937141646423353942",
+      "entry": "0.37-benthamHalfLookaheadBinary5937141646423353942.config",
+      "configuration_sha256": "c693af8a7af3c0766158ed186dc3a2012992015fd3680b8f19a224b6a473998f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5938522328610785098",
+      "entry": "0.37-benthamHalfLookaheadBinary5938522328610785098.config",
+      "configuration_sha256": "a2cd8c091f44adc46bd96aa6f4bd0d6331a90158deddcfd1e5c36389f0a33c1f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5959830965944758536",
+      "entry": "0.37-benthamHalfLookaheadBinary5959830965944758536.config",
+      "configuration_sha256": "212495a5cad2e22fcc1577011c7577de4c2c2036154bce6dbbb669f734cf0f07"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5992670776461100323",
+      "entry": "0.37-benthamHalfLookaheadBinary5992670776461100323.config",
+      "configuration_sha256": "5b9fb42615a3bf94c44334354aac9ad70d2d0cf6f9636a9a086cb206b4bc8c91"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "5998099875664109620",
+      "entry": "0.37-benthamHalfLookaheadBinary5998099875664109620.config",
+      "configuration_sha256": "caa6af7f15d4c5bf0558e5954f8cdc656b9708eb5b0fbc9af8c3621c027ce251"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6000259499143367293",
+      "entry": "0.37-benthamHalfLookaheadBinary6000259499143367293.config",
+      "configuration_sha256": "23658c8c49211e5edae147b923113be39cb08f06a46aaad181ba00ddbc37f0e9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6050197700377984538",
+      "entry": "0.37-benthamHalfLookaheadBinary6050197700377984538.config",
+      "configuration_sha256": "867995cda3afc4f7faba1e525dd5535ece6ab56183102ce32e40bcb204e386ae"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6091892141399416760",
+      "entry": "0.37-benthamHalfLookaheadBinary6091892141399416760.config",
+      "configuration_sha256": "43eacdd54ff91cb1dedd67b649da8cb9be76f05592c9e5a43aa32a9fd6f62401"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6093846047672736498",
+      "entry": "0.37-benthamHalfLookaheadBinary6093846047672736498.config",
+      "configuration_sha256": "e35b66ecfb526c821c0dbb0c2977086bdd6d14bdc281c2caca7a5a9cc9f1e899"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6137628971395194419",
+      "entry": "0.37-benthamHalfLookaheadBinary6137628971395194419.config",
+      "configuration_sha256": "7d3280e8954a32a9e3bacd5b5b5ff3773d0e5ff68a5ef3e8428c4d980ef73926"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6144005185935343913",
+      "entry": "0.37-benthamHalfLookaheadBinary6144005185935343913.config",
+      "configuration_sha256": "fda7a0be576760d7be42c7ca1d8807753f84e241ae45a570a9ffff20599612dc"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6148427743218987401",
+      "entry": "0.37-benthamHalfLookaheadBinary6148427743218987401.config",
+      "configuration_sha256": "531df6635a887e312a470b1de8374f7daf5f16e4d7a47f136efc1c3e95994f9f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6153852370960353609",
+      "entry": "0.37-benthamHalfLookaheadBinary6153852370960353609.config",
+      "configuration_sha256": "91ec0c5a41590590dd96120d7599df93b89e160006ed061a4b42993643d7b723"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6158128826727768255",
+      "entry": "0.37-benthamHalfLookaheadBinary6158128826727768255.config",
+      "configuration_sha256": "652e46acb03d9c5b67cd3e9cb5c12ba2f24c609aa7115bde32ac026ca01243ba"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6167067325050248690",
+      "entry": "0.37-benthamHalfLookaheadBinary6167067325050248690.config",
+      "configuration_sha256": "f6b654854ca1e227bf80b25bb65f21d60c52181633f86c81e043b7533305cfd0"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6173648424707615686",
+      "entry": "0.37-benthamHalfLookaheadBinary6173648424707615686.config",
+      "configuration_sha256": "694a57ab202a807b0354512e86d71560aeccc7ad57bf1c5cef575c76a3d73418"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6179414898995988742",
+      "entry": "0.37-benthamHalfLookaheadBinary6179414898995988742.config",
+      "configuration_sha256": "d2f93d4cd9adb447765914a0abd916bc463433bd2eb6a5c88074490ac7d20fd9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6220214936262116752",
+      "entry": "0.37-benthamHalfLookaheadBinary6220214936262116752.config",
+      "configuration_sha256": "4e8a7f88ae04192a9bb6f23410e023d5970410be9d80135dfcb1587957e03eaa"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6261077808091577057",
+      "entry": "0.37-benthamHalfLookaheadBinary6261077808091577057.config",
+      "configuration_sha256": "08c4b18904ce82bb807dae2c1cd4cd69e91611112a73326b56d1c06e12cb78cc"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6280406712694327752",
+      "entry": "0.37-benthamHalfLookaheadBinary6280406712694327752.config",
+      "configuration_sha256": "601f3756b7cbfda54462ef33d80b149b38f8305e572d22665dc92a16d9f61668"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6286188884552127069",
+      "entry": "0.37-benthamHalfLookaheadBinary6286188884552127069.config",
+      "configuration_sha256": "dace19c5aefac03e305d8a58ad3ab5e8de4b42872f96bb9a01dfc9ccaf1c3471"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6306594374393076945",
+      "entry": "0.37-benthamHalfLookaheadBinary6306594374393076945.config",
+      "configuration_sha256": "3349f4297270b1eb301eafa9245208751c29db96c009f419f0dcc43f7ba53c61"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6324878210949152277",
+      "entry": "0.37-benthamHalfLookaheadBinary6324878210949152277.config",
+      "configuration_sha256": "8642eb09e3cac42754b1fda217833c1bf17593ca51a096ab64e35fce1adb0594"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6386837576402374403",
+      "entry": "0.37-benthamHalfLookaheadBinary6386837576402374403.config",
+      "configuration_sha256": "43e3e12e267e5796a67e948cd261880b5970941e94a251af5d0cf027392dc604"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6440149902611521794",
+      "entry": "0.37-benthamHalfLookaheadBinary6440149902611521794.config",
+      "configuration_sha256": "1611f68866c9dc3f85200bc7857a898d8055f59ca31fe93127086811260f0a32"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6455409540992560137",
+      "entry": "0.37-benthamHalfLookaheadBinary6455409540992560137.config",
+      "configuration_sha256": "5fd17c2a94b2394e667203b2e69bf952f80f7c52fb36bf5ef43d0eefe9445269"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6457943928766880712",
+      "entry": "0.37-benthamHalfLookaheadBinary6457943928766880712.config",
+      "configuration_sha256": "bda840110b21ad4b3759920ab0e7bea2e0b3f7db5d859c2f084a6ad45097982e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6463423271901259552",
+      "entry": "0.37-benthamHalfLookaheadBinary6463423271901259552.config",
+      "configuration_sha256": "65f48ada8fbd481600bf091cb7c1a63ea9978277d42ea56b3d65e2e4e896d3e8"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6470221526393475915",
+      "entry": "0.37-benthamHalfLookaheadBinary6470221526393475915.config",
+      "configuration_sha256": "4db39a07dfe536bf2e86cd806443484e7a856e42b7f9e50e73833e59ba02cf74"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6472332735662369594",
+      "entry": "0.37-benthamHalfLookaheadBinary6472332735662369594.config",
+      "configuration_sha256": "0c2e91e16b659d94db3122fbc7685df8f46fd28ff4dc19ff3508f9b6a8415a9f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6508047737494326992",
+      "entry": "0.37-benthamHalfLookaheadBinary6508047737494326992.config",
+      "configuration_sha256": "e4df6c1f2feb4d8a20cf113c916392a0791061f7c75882763829ac6b18ad64e8"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6510614758213865323",
+      "entry": "0.37-benthamHalfLookaheadBinary6510614758213865323.config",
+      "configuration_sha256": "dbd372d6dc86fbfece71ab67cbce37c2e470568cf2d6228ba67e8ae3e1b38ea7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6536173931345365789",
+      "entry": "0.37-benthamHalfLookaheadBinary6536173931345365789.config",
+      "configuration_sha256": "b42f250ba79046439c5694dfe258cd85d5972560099f0e769e200db7330838e7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6541028918202606172",
+      "entry": "0.37-benthamHalfLookaheadBinary6541028918202606172.config",
+      "configuration_sha256": "8e505ed04478b5eb8e1bf22b92eb1b1636685910e0395e689627915784b88fa6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6562124879500985245",
+      "entry": "0.37-benthamHalfLookaheadBinary6562124879500985245.config",
+      "configuration_sha256": "d84b09ec1c6fbb01fe4e5719c4eb74d65fdec3bee07ebf01177471e355aeb841"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6589873606324423751",
+      "entry": "0.37-benthamHalfLookaheadBinary6589873606324423751.config",
+      "configuration_sha256": "c9eeb2f3f3e891b46de2a4c74bf18c6c34b0d575405b345de79e7d540e39a048"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6596648333047620229",
+      "entry": "0.37-benthamHalfLookaheadBinary6596648333047620229.config",
+      "configuration_sha256": "ca23a1e8fc030503159242ea4a1cdb24cfcc6b52fdbbdd51508841275f7020d4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6631427774681279428",
+      "entry": "0.37-benthamHalfLookaheadBinary6631427774681279428.config",
+      "configuration_sha256": "f35da7881e54b02cbf935bc8b24b1bb3d59f441e22dbfaa9015e4686f48f04e3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6631602690175826146",
+      "entry": "0.37-benthamHalfLookaheadBinary6631602690175826146.config",
+      "configuration_sha256": "227cba28fdaf7152f8c57b9d4a7e45b894216fd73718da0544d54819959e2dbe"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6642782534902193019",
+      "entry": "0.37-benthamHalfLookaheadBinary6642782534902193019.config",
+      "configuration_sha256": "8a1799acf1e83bbd1c73f6ffad3e93a3965bcc340e2e9c4060c4edd0f924ca15"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6665981418661599640",
+      "entry": "0.37-benthamHalfLookaheadBinary6665981418661599640.config",
+      "configuration_sha256": "c2ea9f244fbf63cfe0260380429fe7b695ba7ac1e30d0f04e53bf5b0cd89c181"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6671406243506061991",
+      "entry": "0.37-benthamHalfLookaheadBinary6671406243506061991.config",
+      "configuration_sha256": "2b0dba88c7cfbc789262987a68d97ecb4a170523f9f0dffe349a38890a6fad92"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6676516733472316028",
+      "entry": "0.37-benthamHalfLookaheadBinary6676516733472316028.config",
+      "configuration_sha256": "2ce51c930f116a2183bf9eeadcf7374fc3b1b6e6e822dc0629f200b59954ad10"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6712575527833568135",
+      "entry": "0.37-benthamHalfLookaheadBinary6712575527833568135.config",
+      "configuration_sha256": "7247b00a34e26369e41c817498e96ad4c28407a3d170718bd4cc2607c58618c4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6723191778994568217",
+      "entry": "0.37-benthamHalfLookaheadBinary6723191778994568217.config",
+      "configuration_sha256": "8252388e497294d0d94c17d2b4b25a8b8901a1001c457c89c59af4be9c3f44cf"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6730017930750525344",
+      "entry": "0.37-benthamHalfLookaheadBinary6730017930750525344.config",
+      "configuration_sha256": "8dce7d18fc29cdcedb98374457dc3aae212a31e198b223bfd12d7cb7ef51a3d7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6736589560860251274",
+      "entry": "0.37-benthamHalfLookaheadBinary6736589560860251274.config",
+      "configuration_sha256": "a2fdaff992cf9bf5d4695ac51eeaf19ebc0378662ae457394131e4a97a634aff"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6760081042280090997",
+      "entry": "0.37-benthamHalfLookaheadBinary6760081042280090997.config",
+      "configuration_sha256": "dc74c172da793d4557e29e42bbbe2f379c2ed673cf147b3962fa963ecd758054"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6766255802373522058",
+      "entry": "0.37-benthamHalfLookaheadBinary6766255802373522058.config",
+      "configuration_sha256": "e03e13e6dcbfdaa3e8cf76c5b294ad2727b11d8fd221ed722d4a747d89351296"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6814117811123736432",
+      "entry": "0.37-benthamHalfLookaheadBinary6814117811123736432.config",
+      "configuration_sha256": "db8c9a6a6c0f87537d84b78652386b905b01cbf04faaafdf0cb8c1b8253ae310"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6820616087728165556",
+      "entry": "0.37-benthamHalfLookaheadBinary6820616087728165556.config",
+      "configuration_sha256": "21cd743795b7794dc62c61af68dfa9308f5e6af6f697f00d8d22443b6949665a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6832841485660408195",
+      "entry": "0.37-benthamHalfLookaheadBinary6832841485660408195.config",
+      "configuration_sha256": "25939535922e0028af36a78826d2f1bda1d7361f229aecef1f839e4a11791796"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6857570390509942007",
+      "entry": "0.37-benthamHalfLookaheadBinary6857570390509942007.config",
+      "configuration_sha256": "296a6a618f06dcd9079af4948417f2787c370fac7b46844450b37dc3d8176698"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6891026741706763747",
+      "entry": "0.37-benthamHalfLookaheadBinary6891026741706763747.config",
+      "configuration_sha256": "a458dce7f57250d809302c2bafc61e21ad15906a22db01512b3c040179a904ba"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6911300150526407226",
+      "entry": "0.37-benthamHalfLookaheadBinary6911300150526407226.config",
+      "configuration_sha256": "d14ad7de3e44dea8817f784db908711b99f7f21cd0b3776df850284d3c7a17d3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6958041507654698457",
+      "entry": "0.37-benthamHalfLookaheadBinary6958041507654698457.config",
+      "configuration_sha256": "afa2419b0aeb0db0e318ebdd194cb2a33f775a29dd591525afe9ecc37e9e0a38"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6960814613782451654",
+      "entry": "0.37-benthamHalfLookaheadBinary6960814613782451654.config",
+      "configuration_sha256": "4dd855b4a5fe8df8e66e307b709d99752dc391232089b7584ab00abaf33bdf19"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6967018226380173105",
+      "entry": "0.37-benthamHalfLookaheadBinary6967018226380173105.config",
+      "configuration_sha256": "02de511ab7b81cb3c2a8cb4b14bb0d6f66b605d58b15904c9f653322235b246a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6976379517588623376",
+      "entry": "0.37-benthamHalfLookaheadBinary6976379517588623376.config",
+      "configuration_sha256": "25572e15fbd8a3361c240059240bd55579c56f857fee3fdaf6f4f77a76b02d6d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "6976775203994786460",
+      "entry": "0.37-benthamHalfLookaheadBinary6976775203994786460.config",
+      "configuration_sha256": "be2a01a8794a8548189b06c7a0d63573dbe849a3ee8c2c997be62175c83bfffe"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7068591249382591025",
+      "entry": "0.37-benthamHalfLookaheadBinary7068591249382591025.config",
+      "configuration_sha256": "fb6aee2905e18608bf5e694f63398c15dfe28aaa1ccb513630fa5939e1d97a29"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7071828415583913229",
+      "entry": "0.37-benthamHalfLookaheadBinary7071828415583913229.config",
+      "configuration_sha256": "c45a07db7f7588af6d77de1c1f983cc8bd233ba5c7e9d58410fe9096f01828e3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7074104263051287352",
+      "entry": "0.37-benthamHalfLookaheadBinary7074104263051287352.config",
+      "configuration_sha256": "25ecb38b796c422e763daa372ee707dc439840e1c7c0bc1bbca30346cd544498"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7076017018358237849",
+      "entry": "0.37-benthamHalfLookaheadBinary7076017018358237849.config",
+      "configuration_sha256": "d008a439e3e57ac0efba73d5bf8d59a3464e84b782ec8f677704a5414e963ea6"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7076397680518457822",
+      "entry": "0.37-benthamHalfLookaheadBinary7076397680518457822.config",
+      "configuration_sha256": "a994be1bf75ddddf898c0b4b553c67b622cf6c99a6012cfd4f50b025b66b4ce7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7098977597691133660",
+      "entry": "0.37-benthamHalfLookaheadBinary7098977597691133660.config",
+      "configuration_sha256": "bc3e2786b68dc84f7c0e14bfcc19a627041af3edaae4ace73eada5e83df8ec4f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7111011986894041215",
+      "entry": "0.37-benthamHalfLookaheadBinary7111011986894041215.config",
+      "configuration_sha256": "33080ae3b7c98b9e32266579c0a6994a3050056102a8d769fafdedcdfae28746"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7124910836039807453",
+      "entry": "0.37-benthamHalfLookaheadBinary7124910836039807453.config",
+      "configuration_sha256": "78d0b0a3bbafe9739c321bf52b88fc385d5397fa7d7ea09926fb1c12617d598a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7186796730385414917",
+      "entry": "0.37-benthamHalfLookaheadBinary7186796730385414917.config",
+      "configuration_sha256": "caf64ccf9107ea02d87043226b0776a8902e2a5d9881197eae29be09963534ff"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7205697508760572550",
+      "entry": "0.37-benthamHalfLookaheadBinary7205697508760572550.config",
+      "configuration_sha256": "98e0fb6c53beba88cbfffe87f7a667937479d2d388c46f02c7559dcfaaccce88"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7212550407938738440",
+      "entry": "0.37-benthamHalfLookaheadBinary7212550407938738440.config",
+      "configuration_sha256": "0db799e0690ce49af52d03760b49cd0c6436f344b764d3eabb06c43c1ef96703"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7220913985823835302",
+      "entry": "0.37-benthamHalfLookaheadBinary7220913985823835302.config",
+      "configuration_sha256": "4c505c30a385561a5730d5445889ad4df2895f092951cba8bfbb671a2751b712"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7238524028304106244",
+      "entry": "0.37-benthamHalfLookaheadBinary7238524028304106244.config",
+      "configuration_sha256": "610010c1d7db94b30c27dcfd06158779e1da8a183fa70f914429746af96e8dff"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7249381021204602523",
+      "entry": "0.37-benthamHalfLookaheadBinary7249381021204602523.config",
+      "configuration_sha256": "35c703f80ffb0080da2ae432963f3c9e23403550296c3ed35fce59152774db6e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7251226561263318269",
+      "entry": "0.37-benthamHalfLookaheadBinary7251226561263318269.config",
+      "configuration_sha256": "f197cdddd36d393c5f3dd9ea0d226d3f510771ac4fe23ae77e1df4b008f9dbbf"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7260110885204953945",
+      "entry": "0.37-benthamHalfLookaheadBinary7260110885204953945.config",
+      "configuration_sha256": "fb109d97dc9e41581bd82bad837fceb5c461d942b9525f4f4607b805f27a05a2"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7264863590420636840",
+      "entry": "0.37-benthamHalfLookaheadBinary7264863590420636840.config",
+      "configuration_sha256": "1bd6640eafc7903702d275fe9148143bb6c8433b97828dd2aad6724a7881c670"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7335946278858441728",
+      "entry": "0.37-benthamHalfLookaheadBinary7335946278858441728.config",
+      "configuration_sha256": "25e2929e606da2b2d3aa1e0759134fc3740264556afc03fc8cf27238e022e289"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7341244910264625673",
+      "entry": "0.37-benthamHalfLookaheadBinary7341244910264625673.config",
+      "configuration_sha256": "6b7827fdc5b9137a31d462e1925457517f8794feaf87e13623c45a7eb80636a5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7354737296530814198",
+      "entry": "0.37-benthamHalfLookaheadBinary7354737296530814198.config",
+      "configuration_sha256": "b957104938e3d3c975b32b13bab261c8716063b84844c94ef1249b387ac56b1b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7367293677457600217",
+      "entry": "0.37-benthamHalfLookaheadBinary7367293677457600217.config",
+      "configuration_sha256": "5fee7db6565e26396e0998d982b644e80082c65c5c547af1fa7ca4860372a262"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7382679039913839491",
+      "entry": "0.37-benthamHalfLookaheadBinary7382679039913839491.config",
+      "configuration_sha256": "efde560215b55cb99a782147312262098894b07c5abbe079533ddae754354102"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7382846066072756711",
+      "entry": "0.37-benthamHalfLookaheadBinary7382846066072756711.config",
+      "configuration_sha256": "d8613c584124df8e8a299e2810c0caa00f01ee6b2bcc7bf45daec2dee2543486"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7466483049178075658",
+      "entry": "0.37-benthamHalfLookaheadBinary7466483049178075658.config",
+      "configuration_sha256": "833806dcb73642cd149c4fffe4e59854a8a770ed0521108ff10a15320ac1112e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7473241030743128168",
+      "entry": "0.37-benthamHalfLookaheadBinary7473241030743128168.config",
+      "configuration_sha256": "8c744799d6a0818d076dff31807bf25cf5ead87f4bd24c781cdf56f8bd9e541e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7499017764600412633",
+      "entry": "0.37-benthamHalfLookaheadBinary7499017764600412633.config",
+      "configuration_sha256": "25b60822008724448da4a5c494a89e007e83a0bd9ab956e3f440e6f2f0e9dfe4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7509330297217916356",
+      "entry": "0.37-benthamHalfLookaheadBinary7509330297217916356.config",
+      "configuration_sha256": "ed7cfbba9c6f124466dee8bbea6d9095c3b5c110631db06b0a6e63bc01b788d3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7520745169988957885",
+      "entry": "0.37-benthamHalfLookaheadBinary7520745169988957885.config",
+      "configuration_sha256": "93ea083b0d11557a4c85c5e343ef6664ec47d739692716d1551e2695e7f21827"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7534463729209292032",
+      "entry": "0.37-benthamHalfLookaheadBinary7534463729209292032.config",
+      "configuration_sha256": "e3eb01d69d5ca799b5f7f872a6d6ccdbf56aad3a7893d9225823d226b32f8bac"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7545760728218103928",
+      "entry": "0.37-benthamHalfLookaheadBinary7545760728218103928.config",
+      "configuration_sha256": "ce95af81ae9e26949a51ea4ee2037e4175d90766105273702e8ec033dd2d86d7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7559427772210667942",
+      "entry": "0.37-benthamHalfLookaheadBinary7559427772210667942.config",
+      "configuration_sha256": "42cf6c94f275c81a676b41d4627e9b6af8c3a63da8d8cb564f4128af854df93e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7585095854682772808",
+      "entry": "0.37-benthamHalfLookaheadBinary7585095854682772808.config",
+      "configuration_sha256": "e2eb774ad682d9c27c1aba43ec73471824b94dd3a06a2e5195ce04590ff39c0a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7611145716764182231",
+      "entry": "0.37-benthamHalfLookaheadBinary7611145716764182231.config",
+      "configuration_sha256": "1c7eb201c64daa771d237881c52ea8df7d8ebd9d54dc3df9f682e75d3809b85e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7611596554808117923",
+      "entry": "0.37-benthamHalfLookaheadBinary7611596554808117923.config",
+      "configuration_sha256": "dd33997dad9dfce6ae46c53fbe8c0949f53fb45b39dfaa1a1298fdee2f14610e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7652226925133459783",
+      "entry": "0.37-benthamHalfLookaheadBinary7652226925133459783.config",
+      "configuration_sha256": "35c26e36d86df7e0b4cb49047e3beeda9c7ff9a45e51cd477f21a8e87aa59af8"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7654486604332580157",
+      "entry": "0.37-benthamHalfLookaheadBinary7654486604332580157.config",
+      "configuration_sha256": "b661d22ebe1e87b2e75541f89121537d9a441ea38c69b6130df330c29b6e939f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7657372700650035207",
+      "entry": "0.37-benthamHalfLookaheadBinary7657372700650035207.config",
+      "configuration_sha256": "34a13450f4350b50430900dc30fa1455df6d9c3e77b2c57c1f875305290ab55b"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7663797091213918951",
+      "entry": "0.37-benthamHalfLookaheadBinary7663797091213918951.config",
+      "configuration_sha256": "5293f970b269d8ed4d07f679724503712edf795fc71d2ce9067c43153704f968"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7667839213189356757",
+      "entry": "0.37-benthamHalfLookaheadBinary7667839213189356757.config",
+      "configuration_sha256": "4e3e7909f1a1a3d1068e3a199056f9a339c6426f89ece983f5fb813f59da4c8d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7705165015753540619",
+      "entry": "0.37-benthamHalfLookaheadBinary7705165015753540619.config",
+      "configuration_sha256": "5274a1ff76fe1d80a5a9b79f0c0297a2647f058b95a29ae0b8c53f3e7187121e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7730607098056285168",
+      "entry": "0.37-benthamHalfLookaheadBinary7730607098056285168.config",
+      "configuration_sha256": "4be60f19b9ea39027e4e7ca195955dff69c7fe7f6823a80bd8ddebc156a4fd15"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7771494938550934711",
+      "entry": "0.37-benthamHalfLookaheadBinary7771494938550934711.config",
+      "configuration_sha256": "119f2c72bd301c15810d77170dfec0689d8edbfb99e4bc34753c4573fa4b10de"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7774344035470231058",
+      "entry": "0.37-benthamHalfLookaheadBinary7774344035470231058.config",
+      "configuration_sha256": "c4839edaf40416e80b4f8fccecfe5940425ecf0d0a13bdfa285dcc6d02b03e29"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7839180315996281567",
+      "entry": "0.37-benthamHalfLookaheadBinary7839180315996281567.config",
+      "configuration_sha256": "7ea139e01d1ff4d830bd72b26d0578124b241ae3d3e52e05ca8d70b9d32190c4"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7853914801418268465",
+      "entry": "0.37-benthamHalfLookaheadBinary7853914801418268465.config",
+      "configuration_sha256": "fdd5993f41c745772eb247617394b5f52efc4b9e23856be89506209bf9faae63"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7868719439272011025",
+      "entry": "0.37-benthamHalfLookaheadBinary7868719439272011025.config",
+      "configuration_sha256": "2f14fd056e033ff23918b4750de6c5e5abe799ff3941e33e1eb102be6c90c98d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7872239467240732219",
+      "entry": "0.37-benthamHalfLookaheadBinary7872239467240732219.config",
+      "configuration_sha256": "b78cd696780f683b5821b314999ee81d54448b39dba965c862dd911a4c1ca9de"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7877561896058630824",
+      "entry": "0.37-benthamHalfLookaheadBinary7877561896058630824.config",
+      "configuration_sha256": "f87aa8a663bcd72de95fcbb06d86741adc66aba91d7273ed6b7abce8d8063a36"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7884981989525576001",
+      "entry": "0.37-benthamHalfLookaheadBinary7884981989525576001.config",
+      "configuration_sha256": "379a7273d3321e25d39f37a88bb0ce5b8aa4b80eece1ba68db6456bcb22f666d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7920473864506472639",
+      "entry": "0.37-benthamHalfLookaheadBinary7920473864506472639.config",
+      "configuration_sha256": "6bf2c21bcd4e2ae191af67cca04e0d7059c81b7c2325da9501d5d5771478c4b3"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7935043809970132554",
+      "entry": "0.37-benthamHalfLookaheadBinary7935043809970132554.config",
+      "configuration_sha256": "8eb76097756fea704f1d892483b32cc8e1ec5bfd971a60332eab7764b8f5e5df"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7937478540093586704",
+      "entry": "0.37-benthamHalfLookaheadBinary7937478540093586704.config",
+      "configuration_sha256": "4c84f0e0930e1ca7b983b6f4f5bbf833c5f2c9f7b0e559712b055490bf34529f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7944652168385909221",
+      "entry": "0.37-benthamHalfLookaheadBinary7944652168385909221.config",
+      "configuration_sha256": "9af86f98a1ee107089a1e78669a7ee27997201f30fa54e69f7a0535f3cc46a14"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7982415766439510532",
+      "entry": "0.37-benthamHalfLookaheadBinary7982415766439510532.config",
+      "configuration_sha256": "95b8188759e99e63b5a344e39959cee6acc2de8f5d2f0a683a8e105891393589"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7990668540495452526",
+      "entry": "0.37-benthamHalfLookaheadBinary7990668540495452526.config",
+      "configuration_sha256": "bedaefbad1980cac371bf921d6ba15917dbe003b38c1e50338d1f17183ad2f16"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7993184258000224018",
+      "entry": "0.37-benthamHalfLookaheadBinary7993184258000224018.config",
+      "configuration_sha256": "4a196bdae2063a883c31a423bd7a5848e028afcfbf2240dd1ed8452beb61be68"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "7995749961418922652",
+      "entry": "0.37-benthamHalfLookaheadBinary7995749961418922652.config",
+      "configuration_sha256": "aa32454380f4bfdd2d2e1145fd10abf347c2ad34e25a6ca9822bc4588d6c16dd"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8002654488081595615",
+      "entry": "0.37-benthamHalfLookaheadBinary8002654488081595615.config",
+      "configuration_sha256": "105bdd8e665fc99a9537aa1725e10dc84c9a15f78566360bfbb32592b9268780"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8006371235992066174",
+      "entry": "0.37-benthamHalfLookaheadBinary8006371235992066174.config",
+      "configuration_sha256": "a215aaaff1c8cfb50ca5e6ff55031f00e7978d5cdd5d126fc8f4ba965a32d8f2"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8006986510311734812",
+      "entry": "0.37-benthamHalfLookaheadBinary8006986510311734812.config",
+      "configuration_sha256": "ba515b33627c6768f9dbd9446371096c19bb3b12731e3202404048d60685803c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8013429722769035261",
+      "entry": "0.37-benthamHalfLookaheadBinary8013429722769035261.config",
+      "configuration_sha256": "1061793b2332559849e48c04345ae32232838f85cedd1b54761e8363d57cf903"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8067600475740748688",
+      "entry": "0.37-benthamHalfLookaheadBinary8067600475740748688.config",
+      "configuration_sha256": "cb459fe311bff181bc04c5a7f8a0e6c9f9ac4a4b134ef257bd9578b04f183856"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8100043345116563091",
+      "entry": "0.37-benthamHalfLookaheadBinary8100043345116563091.config",
+      "configuration_sha256": "b0119fdd7648f5f6cdac10eee047607f0eff584374c72aba36938b6131640d6d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8119859726557158697",
+      "entry": "0.37-benthamHalfLookaheadBinary8119859726557158697.config",
+      "configuration_sha256": "502c23ae4a7bd49f36615df46608e1ad564153b5edb30efaa08dfcbddf7f2d12"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8141848663143288595",
+      "entry": "0.37-benthamHalfLookaheadBinary8141848663143288595.config",
+      "configuration_sha256": "4ff612478e39e0b22272fa05a0c76087a61b97c33f22fa136b862e8fef4cf9ee"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8149629752604643258",
+      "entry": "0.37-benthamHalfLookaheadBinary8149629752604643258.config",
+      "configuration_sha256": "9f6ddcdfe9e19924a9223f917d89c1ba5d03062cc91db7d4f7420d8ed6ce458e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8172106296556986560",
+      "entry": "0.37-benthamHalfLookaheadBinary8172106296556986560.config",
+      "configuration_sha256": "600a1ea4d1f5879eabd3f05abf3c8454ef52d4d06ecdb16e6ac7020980ade701"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8183373166552857609",
+      "entry": "0.37-benthamHalfLookaheadBinary8183373166552857609.config",
+      "configuration_sha256": "c6cb894f5bf0fbdb2ec41efc2a564f9c22459422cd38fbff42218ae328e7dcf5"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8208977990247045451",
+      "entry": "0.37-benthamHalfLookaheadBinary8208977990247045451.config",
+      "configuration_sha256": "d7487065ac56913014943d2fc1e2e0c9139e634caeac4d5d889134d19d4b3040"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8211121220723923521",
+      "entry": "0.37-benthamHalfLookaheadBinary8211121220723923521.config",
+      "configuration_sha256": "f61c43eb1a6d229847f2fa46e42e30094febb1b09544c26e4cf098e65a5bd1e2"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8264002104079766253",
+      "entry": "0.37-benthamHalfLookaheadBinary8264002104079766253.config",
+      "configuration_sha256": "df4ef5f91468e19263134f1dacdec10a93f3b5ed48e2b9c39862169ea11d3495"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8266698178000332942",
+      "entry": "0.37-benthamHalfLookaheadBinary8266698178000332942.config",
+      "configuration_sha256": "677bc19aafffd35bb2924c7597b5cb4224abf277ae9160a590d76c83f54b9a80"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8303265161711135825",
+      "entry": "0.37-benthamHalfLookaheadBinary8303265161711135825.config",
+      "configuration_sha256": "af90fb22e7a788f334abf671d644ad83e9c509f0f76f986bfbaeaecb3bd523b7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8325267989456925514",
+      "entry": "0.37-benthamHalfLookaheadBinary8325267989456925514.config",
+      "configuration_sha256": "21314f0345d2687e7a172973a4c494f5da0eff8286be83d89622fe825c7b10f2"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8338163462517962044",
+      "entry": "0.37-benthamHalfLookaheadBinary8338163462517962044.config",
+      "configuration_sha256": "d427c10d0b1ac447f31fab4fd0dd74076858f53601a5360118f106a3687d09f7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8354463434896959425",
+      "entry": "0.37-benthamHalfLookaheadBinary8354463434896959425.config",
+      "configuration_sha256": "e0eac0cc4bc5587cfabf01570f38ddd8c886150372a68e987a02140c426f0158"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8366504338797883575",
+      "entry": "0.37-benthamHalfLookaheadBinary8366504338797883575.config",
+      "configuration_sha256": "e963919dcff18d2f6e34200b0eecd324f1c8d18ab6af88f5be7cabc40291dee1"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8385145430811555002",
+      "entry": "0.37-benthamHalfLookaheadBinary8385145430811555002.config",
+      "configuration_sha256": "72183c9bd8a096f8ce10a9cecc74aa7a5ae69a5c57bc6939aaf1f307ae30d429"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8443748817866679480",
+      "entry": "0.37-benthamHalfLookaheadBinary8443748817866679480.config",
+      "configuration_sha256": "5317cdb3910088cd82707c2f6319c6f300e5cdf2501e490837322d3e82493d0d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8467415830491622997",
+      "entry": "0.37-benthamHalfLookaheadBinary8467415830491622997.config",
+      "configuration_sha256": "b0e824a29fad72899eabd7eeaf3b498a6f920e1019e4a56534c2867cbc3900aa"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8523521939041977275",
+      "entry": "0.37-benthamHalfLookaheadBinary8523521939041977275.config",
+      "configuration_sha256": "829c342b6b2b73637504fc507fd21b804eeb68fda018c379f1293967e9382e30"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8525419003965527765",
+      "entry": "0.37-benthamHalfLookaheadBinary8525419003965527765.config",
+      "configuration_sha256": "0ec44da6d91192dcb1de6b2b4f55c606bec68b7f51e6bbf6cefc79974424ee38"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8539697944784643463",
+      "entry": "0.37-benthamHalfLookaheadBinary8539697944784643463.config",
+      "configuration_sha256": "6408ea2b419014ada5d936f9ba933cadad218221d9d66378a2fdd661b6f28f50"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8540077219743426761",
+      "entry": "0.37-benthamHalfLookaheadBinary8540077219743426761.config",
+      "configuration_sha256": "bc16cd21de201360f2e45348c75b4b55ed6e9564606cd12fa043b6666eb91266"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8611853178106367524",
+      "entry": "0.37-benthamHalfLookaheadBinary8611853178106367524.config",
+      "configuration_sha256": "9e1fc46b830af90812967bbeaf074e68dfc94a6c4390057a88d911b41554926e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8618954401327858930",
+      "entry": "0.37-benthamHalfLookaheadBinary8618954401327858930.config",
+      "configuration_sha256": "4ea430ba729eeb3fd940b805fac19069861162d94968ebdd23051403bdeac32c"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8628716532290168066",
+      "entry": "0.37-benthamHalfLookaheadBinary8628716532290168066.config",
+      "configuration_sha256": "7479ffdf8d2b5b050c175dc6affcf2ee3940d05627605df0a0ab44646f711d32"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8657437855355526257",
+      "entry": "0.37-benthamHalfLookaheadBinary8657437855355526257.config",
+      "configuration_sha256": "1aeab4a51a8050953db2bb0c68fec2c1576f9efeae4e8f85b7f5e9ee3db9f87a"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8663311444148041087",
+      "entry": "0.37-benthamHalfLookaheadBinary8663311444148041087.config",
+      "configuration_sha256": "31a34290389a720b7e6e54fa8130213f7d77e4804655b64c9fe435f1e98acdeb"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8665784923025720778",
+      "entry": "0.37-benthamHalfLookaheadBinary8665784923025720778.config",
+      "configuration_sha256": "778e7c09abfbe730b25601ba758de02a7496e8d95773311f85b6aeb43903de88"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8700221970125091462",
+      "entry": "0.37-benthamHalfLookaheadBinary8700221970125091462.config",
+      "configuration_sha256": "31a2a3854128ddbde3e429fc6b45ef282819179194116516f4b33ff6e7015899"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8717061493801092575",
+      "entry": "0.37-benthamHalfLookaheadBinary8717061493801092575.config",
+      "configuration_sha256": "4315abe49c1d38f1862d1f1b8efa9b4ab3428d539efeda30782cbbe716e00411"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8751114965364183489",
+      "entry": "0.37-benthamHalfLookaheadBinary8751114965364183489.config",
+      "configuration_sha256": "657a1a68185d3d4efa7cfa2957b85018ffdbeb2e2647843c7b42587ff7fc1a34"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8754360493150801493",
+      "entry": "0.37-benthamHalfLookaheadBinary8754360493150801493.config",
+      "configuration_sha256": "e283c2a003b4447f99eb0bed995e68814d8c973cb159ad1c10321e94f547b121"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8755249704926934192",
+      "entry": "0.37-benthamHalfLookaheadBinary8755249704926934192.config",
+      "configuration_sha256": "344f63c2d62dd4df05dc5bea3b141e2d6d1e0a9e32346043532652f95b4984cd"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8762603510423388675",
+      "entry": "0.37-benthamHalfLookaheadBinary8762603510423388675.config",
+      "configuration_sha256": "94c2670bdfb56ec586e6183c8454664a6b4ffbb6950f00ac88fefabfbe1174ea"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8788866356414928290",
+      "entry": "0.37-benthamHalfLookaheadBinary8788866356414928290.config",
+      "configuration_sha256": "0c2a637e8a894cf62b2aca7a2d18a0b7e21b727f015ec91100b14b2feb95f799"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8794371152358105441",
+      "entry": "0.37-benthamHalfLookaheadBinary8794371152358105441.config",
+      "configuration_sha256": "7b46d78324ee78450b51dccf802aa0c915d3629e863533a03103ab9e5a0a5fd9"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8797133113997785948",
+      "entry": "0.37-benthamHalfLookaheadBinary8797133113997785948.config",
+      "configuration_sha256": "539c35abd214a282e6ffa41de81a465be7cf4b39c08fe3f922a3d1de6731d78d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8814752676882130582",
+      "entry": "0.37-benthamHalfLookaheadBinary8814752676882130582.config",
+      "configuration_sha256": "229c8874aba691167b401c15d57d1734cf5c2fd41c0d01c02bf4c6a480067b33"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8835135395631634572",
+      "entry": "0.37-benthamHalfLookaheadBinary8835135395631634572.config",
+      "configuration_sha256": "76c8d918815a6621c46524ca57ee86669dcc708ea249e8c60c3f3c8855f8b44f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8858110728461947163",
+      "entry": "0.37-benthamHalfLookaheadBinary8858110728461947163.config",
+      "configuration_sha256": "e4593c33854d3703b55bb6f3f00ad8de99d510e83e24bbe38963321aabae0c28"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8863020487347487138",
+      "entry": "0.37-benthamHalfLookaheadBinary8863020487347487138.config",
+      "configuration_sha256": "ddd4fdeb3f98eb1487518f6e851bae7927ce8a6095bb81ccc556da4594731647"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8877038468309280736",
+      "entry": "0.37-benthamHalfLookaheadBinary8877038468309280736.config",
+      "configuration_sha256": "033975686d7378eef3b70b2f47e7835aecce966d2764848aa45131e906a53b19"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8892664387611295885",
+      "entry": "0.37-benthamHalfLookaheadBinary8892664387611295885.config",
+      "configuration_sha256": "2f2993e47226c6385cd1b84f159ce4f9207b8683127c85edd42295d1ec9c9e0d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8925916630004990709",
+      "entry": "0.37-benthamHalfLookaheadBinary8925916630004990709.config",
+      "configuration_sha256": "acdb3e9cbaa989385a1cede7c1ef426731e5f97a106295077c9a1db132f118be"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8927322354812584041",
+      "entry": "0.37-benthamHalfLookaheadBinary8927322354812584041.config",
+      "configuration_sha256": "9e471123d94a2308e58ba1690da9068e4ef5502acdaefe01367240dbdd4b0993"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8980456150572989187",
+      "entry": "0.37-benthamHalfLookaheadBinary8980456150572989187.config",
+      "configuration_sha256": "fa9db246a5b1c2bdd36efffea8d78f6a2f1eca8f121562038307db843d6cac30"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8987908268059460980",
+      "entry": "0.37-benthamHalfLookaheadBinary8987908268059460980.config",
+      "configuration_sha256": "4ad4fd6d7861a7698ad3f17301490de48c79a6d7152d8c443e7636e01c4553be"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "8990896505696034960",
+      "entry": "0.37-benthamHalfLookaheadBinary8990896505696034960.config",
+      "configuration_sha256": "62f08a8ba2b6aafe9128fcea29fee1b4d42b10c36d5b06ba4be8e4a6c7f03e0e"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9035328790603082415",
+      "entry": "0.37-benthamHalfLookaheadBinary9035328790603082415.config",
+      "configuration_sha256": "b1693a0c8bf7370cc9e85bf5503a62394537fcc543544463e880bd53de0ed83d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9037703132083266402",
+      "entry": "0.37-benthamHalfLookaheadBinary9037703132083266402.config",
+      "configuration_sha256": "580fc0a354bda5597b9fb69d69c1c6b21a02f424bbf3a3cd16e3a26acec4f916"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9058024766655513111",
+      "entry": "0.37-benthamHalfLookaheadBinary9058024766655513111.config",
+      "configuration_sha256": "45a6854e74ab9fc0f8dc0ce60048e04d3d612397a8e23264350adf24915a8e72"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9060839096101387427",
+      "entry": "0.37-benthamHalfLookaheadBinary9060839096101387427.config",
+      "configuration_sha256": "00db28368cd1efdba464bdec6187929ddb94f51ed570f3d86f65ceff757bfd0f"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9063303646255022585",
+      "entry": "0.37-benthamHalfLookaheadBinary9063303646255022585.config",
+      "configuration_sha256": "3df81398d4e15fc9a141ad4d33c5489dcc595f7144020a4ea59a3b1a5c8635b7"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9070319726214578321",
+      "entry": "0.37-benthamHalfLookaheadBinary9070319726214578321.config",
+      "configuration_sha256": "0e57db084507204a75de144f64d57f1cca0febaa8574c89cbc6e48c9d4619fab"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9077614460338874204",
+      "entry": "0.37-benthamHalfLookaheadBinary9077614460338874204.config",
+      "configuration_sha256": "108aa099c0c5fb02d0528f8c2ce0201837dccb8b6e15f3cd4be735e024d12c3d"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9086011986168642316",
+      "entry": "0.37-benthamHalfLookaheadBinary9086011986168642316.config",
+      "configuration_sha256": "5071a0675798298a341c24613734b27276620c7644cb1dfc05bf2696699dbd05"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9142261509055007660",
+      "entry": "0.37-benthamHalfLookaheadBinary9142261509055007660.config",
+      "configuration_sha256": "9e9242abb99a92d1ab5fefd658ed217c385ef44d1ebf692ee380e08c3941c8aa"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9174134269944612860",
+      "entry": "0.37-benthamHalfLookaheadBinary9174134269944612860.config",
+      "configuration_sha256": "8ea1d62c95347eaa9c0dbb52caf2d760f537ea82b1b01aa21fa27095436e6671"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9194507009404838026",
+      "entry": "0.37-benthamHalfLookaheadBinary9194507009404838026.config",
+      "configuration_sha256": "0e8fdcd2abc392f0a88a725d4690e12fc708a26546075af99785c73564725819"
+    },
+    {
+      "experiment": "selfishness",
+      "condition": "37",
+      "seed": "9194601115904245429",
+      "entry": "0.37-benthamHalfLookaheadBinary9194601115904245429.config",
+      "configuration_sha256": "2d02a9913acd288822baa804dc642888807050327bd274c5b9fbfc76b5a35f6a"
+    }
+  ],
+  "native_steps": 5000,
+  "observations": 5001,
+  "already_completed_entry": "0.37-benthamHalfLookaheadBinary175856849482260318.config",
+  "pilot_entries": [
+    "0.37-benthamHalfLookaheadBinary158402133555746433.config",
+    "0.37-benthamHalfLookaheadBinary177137446849847291.config"
+  ],
+  "pilot_gate": "Two distinct remaining original inputs must match CPython/PyPy full trajectory bytes before bulk execution. Pilot PyPy outputs count once toward this cohort.",
+  "workers": 8,
+  "global_simulation_seconds": 34200,
+  "per_run_seconds": 1800,
+  "outer_minutes": 600,
+  "estimated_maximum_compute_and_idle_usd": 8,
+  "checkpoint_every_completed_inputs": 25,
+  "scope": "499 unexecuted original inputs completing the 500-seed selfishness-0.37 cohort together with its previously audited input. No shortened runs, duplicate configuration claims, or whole-paper completion. New capacity must be task-owned, CPU-only, and bounded.",
+  "completion_rule": "Original 5000-step horizon or native extinction; never a shortened imposed horizon."
+}
