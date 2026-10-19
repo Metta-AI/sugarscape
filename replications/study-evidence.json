@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T07:25:14.362669+00:00",
+  "as_of": "2026-10-19T07:34:59.516543+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -45,14 +45,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "a6cd817723d081687cc14eccc2181dc6f090032a",
+      "checked_commit": "a6c4c7b9b8bc6333d804f7d62c8ff8aa0af3267e",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "4e4942ed2e9e82d82490ca4581b39389b312d7bf5111a4a30fb324a646b8ccee",
-      "json_evidence_files": 1712,
-      "remaining_scope": "All 2,000 homogeneous inputs and four Table 3 count rows audited. Runtime coverage reaches 916/1,200 inputs and 3,455,423 observations. Checkpoint0003 adds seven disjoint inputs and100,812 observations: two full50000-step runs and five native extinctions. Repeated full-trajectory audits are byte-identical; all66 archive members and storage receipt hashes verify. Bounded continuation cmd-6icjf remains active. Selfishness 0.37 now completes all 500 original seeds with 2,452,673 observations: ten extinctions, one endpoint below initial population, 489 at or above. Repeated full native readback is byte-identical; independent NumPy arithmetic confirms four whole-trajectory medians of 1138.059688 or 1138.2373, within Figure 10 ink bounds 1132.783573\u20131143.028745. Qualified agreement for this condition only. Terminal producer exits zero, evidence exported and verified, owned node stopped. Supplementary coverage is 507/100,000. Historical averaging, extinction and quantile conventions, full sweeps, long horizons, other figures and the distinct paper timing schedule remain unresolved. No whole-paper completion credit. Measured499-input batch projects remaining99493 inputs to about$1350 compute at current eight-CPU rate, excluding overhead. This is one-condition extrapolation only; heterogeneous runtime/fidelity qualification precedes any full-sweep allocation. Heterogeneous qualification cmd-s893e is now running on the reused owned eight-CPU node: existing1/50/99-mixture controls under both pinned runtimes, six5000-step runs,121-minute platform limit,$1.632 compute-plus-idle bound. Collector active. All audits and byte-identical pair comparisons must pass; launch adds no coverage.",
+      "readme_sha256": "a58b9619b7a0bf1e873d7ff132eee15aa545277e23faebcb04612a044e14009f",
+      "json_evidence_files": 1723,
+      "remaining_scope": "All 2,000 homogeneous inputs and four Table 3 count rows audited. Runtime coverage reaches 917/1,200 inputs and 3,505,424 observations. Checkpoint0004 adds one full50000-step input and50001 observations after seven overlapping records match exactly. Repeated full-trajectory audits are byte-identical; all archive members and30516226-byte storage receipt hashes verify. Bounded continuation cmd-6icjf remains active. Selfishness 0.37 now completes all 500 original seeds with 2,452,673 observations: ten extinctions, one endpoint below initial population, 489 at or above. Repeated full native readback is byte-identical; independent NumPy arithmetic confirms four whole-trajectory medians of 1138.059688 or 1138.2373, within Figure 10 ink bounds 1132.783573\u20131143.028745. Qualified agreement for this condition only. Terminal producer exits zero, evidence exported and verified, owned node stopped. Supplementary coverage is 507/100,000. Historical averaging, extinction and quantile conventions, full sweeps, long horizons, other figures and the distinct paper timing schedule remain unresolved. No whole-paper completion credit. Measured499-input batch projects remaining99493 inputs to about$1350 compute at current eight-CPU rate, excluding overhead. This is one-condition extrapolation only; heterogeneous runtime/fidelity qualification precedes any full-sweep allocation. Heterogeneous qualification cmd-s893e is now running on the reused owned eight-CPU node: existing1/50/99-mixture controls under both pinned runtimes, six5000-step runs,121-minute platform limit,$1.632 compute-plus-idle bound. Collector active. All audits and byte-identical pair comparisons must pass; launch adds no coverage.",
       "gzip_json_evidence_files": 38,
-      "checked_at": "2026-10-19T07:25:14.362669+00:00",
+      "checked_at": "2026-10-19T07:34:59.516543+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/blueprints_2024"
     },
     {
