@@ -1,6 +1,6 @@
 # The Need for Greed in Artificial Decisionmakers
 
-Status: partial native reproduction. This study has 164 freshly audited inputs and 815,329 observations. It does not yet reproduce the paper’s tables or figures.
+Status: partial native reproduction. This study has 164 freshly audited inputs and 815,329 observations. One population median agrees graphically with Figure 2; the full tables and figures remain incomplete.
 
 Kremer-Herman and Gupta, IEEE ISTAS 2024, pages 182–190. [Author manuscript](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf).
 The paper explicitly names [author release v2024.1](https://github.com/digital-terraria-lab/sugarscape/tree/b9ca671ab7591c7b3606f2d76c33eda344d626d1). Its source is MIT-licensed; source and dataset hashes appear in `source-audit.json`.
@@ -14,7 +14,7 @@ The deposited protocol includes 400 baseline inputs and 10,100 sweep inputs: 101
 
 Baseline and sweep configurations remain separate. Baseline selfishness endpoints are not substituted for sweep endpoints. Reused PyPy trajectories inherit the Blueprints runtime qualifications; this audit adds configuration and artifact verification, not an independent engine implementation.
 
-The 0.37 cohort’s median per-run population mean is 1,151.480303939 including the initial row, or 1,151.6606 excluding it. Zero extension after extinction leaves both medians unchanged. These are descriptive values, not agreement with a digitized paper curve.
+The 0.37 cohort’s median per-run population mean is 1,151.480303939 including the initial row, or 1,151.6606 excluding it. Zero extension after extinction leaves both medians unchanged. [Direct Figure 2 vector extraction](results/figure2-population-2026-10-19) places both medians within the plotted stroke at selfishness 0.37. All four averaging conventions agree graphically; historical averaging remains unresolved.
 
 Table IV combines levels 0.36–0.40, requiring 500 inputs. This single level does not reproduce that row. The paper classifies equality with the initial population as worse; the released plot classifies equality as better. Both remain distinguishable in retained endpoint counts.
 
