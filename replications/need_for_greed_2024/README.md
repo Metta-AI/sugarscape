@@ -38,6 +38,17 @@ The first auditor attempt compared a nested hash mapping with its enclosing docu
 
 [The original-input inventory](results/remaining-input-plan-2026-10-19) separates 164 audited inputs, six reserved controls, and 10,330 remaining inputs. Recover the remaining baseline evidence before rerunning it. The single-condition compute projection is about $134 before overhead; no new batch is launched.
 
+## Execute an original input
+
+The [qualified native runner](results/native-runner-qualified-2026-10-19) accepts either an original baseline or sweep configuration. It requires Python with Pydantic and GNU `timeout`.
+
+```sh
+python replications/need_for_greed_2024/run_native.py AUTHOR_ENGINE NEED_FOR_GREED_ZIP ORIGINAL_ENTRY NEW_OUTPUT --seconds 900
+python replications/need_for_greed_2024/verify_runner.py WORKSPACE NEW_VERIFICATION_OUTPUT
+```
+
+Both commands require the pinned author artifacts documented above. Each run preserves source, configuration, runtime, command, timeout, and trajectory evidence. A zero native exit is followed by full trajectory validation before any success result is written. Failed or timed-out runs remain evidence and receive no success result.
+
 ## Remaining work
 
 Recover and freshly verify the remaining 336 baseline trajectories; execute or reuse all 10,000 remaining sweep inputs. Reproduce Tables I–IV and Figures 2–6 with declared aggregation and denominator conventions. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
