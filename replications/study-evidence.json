@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "8558d474f697a9f9a4c536296439898eb1ffec39",
+      "checked_commit": "e07d5ea10674049afe0c909c7428fda5d63a0de2",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "951054c9f01ce7b17e508e1c46a80ce27b8105392a546477e0c21bed8910b41c",
-      "json_evidence_files": 205,
+      "readme_sha256": "d3c52225db2ea5f25f4f82600f807de02ca4a50784bd7c90b71caff2c5873589",
+      "json_evidence_files": 208,
       "gzip_json_evidence_files": 17,
-      "checked_at": "2026-10-19T19:19:35.285891+00:00",
+      "checked_at": "2026-10-19T19:22:14.492988+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "219 unique original inputs audited:89 baseline and130 sweep inputs,1013026 observations. Latest TableIV checkpoint25 inputs/115402 observations passes fresh raw audits against both original archives; two runtime pilots counted once add10002 observations. TableIV127/500 inputs:100 at0.37,26 at0.36,one at0.40;3extinct124above250. Ordered incomplete prefix is not representative; no full-bin comparison. Remaining311 baseline and9970 sweep inputs. Baseline recovery stopped admissions after egoistic seed530238075247992587 reached its native limit (exit124); already-active inputs continue. TableIV400-input batch remains bounded/running. Paginated evidence collector replaces failed first-page-only reader; live2-page reassembly and5178003-byte export pass. Prior failure preserved; no simulation restart or budget extension. Deduplicate first22 baseline recovery inputs in later checkpoints. At0.37 population per-run quartiles fit paper strokes; pooled temporal quartiles do not. Four primary medians fit. Death definition and aging-inclusive quartiles remain unresolved. TablesI\u2013IV/Figures2\u20136 incomplete; no completed-paper credit."
+      "remaining_scope": "219 unique original inputs audited:89 baseline and130 sweep inputs,1013026 observations. Latest TableIV checkpoint25 inputs/115402 observations passes fresh raw audits against both original archives; two runtime pilots counted once add10002 observations. TableIV127/500 inputs:100 at0.37,26 at0.36,one at0.40;3extinct124above250. Ordered incomplete prefix is not representative; no full-bin comparison. Remaining311 baseline and9970 sweep inputs. Baseline recovery stopped admissions after egoistic seed530238075247992587 reached its native limit (exit124); already-active inputs continue. TableIV400-input batch remains bounded/running. Paginated evidence collector replaces failed first-page-only reader; live2-page reassembly and5178003-byte export pass. Prior failure preserved; no simulation restart or budget extension. Deduplicate first22 baseline recovery inputs in later checkpoints. At0.37 population per-run quartiles fit paper strokes; pooled temporal quartiles do not. Four primary medians fit. Death definition and aging-inclusive quartiles remain unresolved. TablesI\u2013IV/Figures2\u20136 incomplete; no completed-paper credit. Timeout diagnosis:failed egoistic seed previously2095.149s,above1800s bound.6/333 retained runtimes exceed bound,max2273.909s; planning omitted available timing evidence. Failed4630527-byte prefix retained losslessly,4399finite consecutive records through4398,last population1365. No model mismatch demonstrated. Await terminal reconciliation before disjoint recovery with informed limits; no automatic extension or coverage credit."
     }
   ],
   "study_prs": 22,
