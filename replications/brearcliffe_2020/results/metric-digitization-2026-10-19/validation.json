@@ -1,0 +1,43 @@
+{
+  "records": 192,
+  "visible_endpoints": 170,
+  "unresolved_endpoints": 22,
+  "byte_identical_repeat": true,
+  "result_sha256": "bfca50a06c718168e46cd939308e15609efaa119608a78fd5ee1a5a1fb2db341",
+  "script_sha256": "f6d5165437de147b0161ccbd412872602cab4809f7428c05ddb314ac3c9b0375",
+  "figures": [
+    {
+      "figure": 4,
+      "visible": 29,
+      "unresolved": 3
+    },
+    {
+      "figure": 5,
+      "visible": 26,
+      "unresolved": 6
+    },
+    {
+      "figure": 6,
+      "visible": 28,
+      "unresolved": 4
+    },
+    {
+      "figure": 7,
+      "visible": 28,
+      "unresolved": 4
+    },
+    {
+      "figure": 8,
+      "visible": 29,
+      "unresolved": 3
+    },
+    {
+      "figure": 9,
+      "visible": 30,
+      "unresolved": 2
+    }
+  ],
+  "visual_check": "First panel of Figures4\u20139 inspected; axis-label strips are byte-identical across16 panels within each figure. Positive major-grid labels only used for calibration.",
+  "command": "python replications/brearcliffe_2020/digitize_metrics.py AUTHOR_PAPER.pdf NEW_OUTPUT",
+  "scope": "Pixel bounds only; no statistical acceptance margin or replication verdict."
+}
