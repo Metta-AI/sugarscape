@@ -1,0 +1,707 @@
+{
+  "conditions_audited": 13,
+  "conditions_required": 45,
+  "attempts_audited": 13,
+  "raw_measurements": 52,
+  "conditions_accepted": 13,
+  "complete_grid": false,
+  "max_slope_error": 1.0658141036401503e-14,
+  "max_r_squared_error": 0.0,
+  "missing_conditions": [
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 2,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:2/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:1/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 2,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:2/500"
+    },
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:1/500"
+    },
+    {
+      "table": 6,
+      "variant": "tarray",
+      "caps": 2,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-normal:2/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 8,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:8/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 7,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:7/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 3,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:3/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 5,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:5/500"
+    },
+    {
+      "table": 6,
+      "variant": "tvar",
+      "caps": 6,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-normal:6/500"
+    },
+    {
+      "table": 6,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-seq-singlecore/500"
+    },
+    {
+      "table": 6,
+      "variant": "io",
+      "caps": 8,
+      "agents": 500,
+      "benchmark": "sugarscape-io-normal:8/500"
+    },
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 2000,
+      "benchmark": "sugarscape-tvar-rebirthing:4/2000"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 1500,
+      "benchmark": "sugarscape-seq-rebirthing/1500"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 1500,
+      "benchmark": "sugarscape-io-rebirthing:4/1500"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 2500,
+      "benchmark": "sugarscape-tarray-rebirthing:4/2500"
+    },
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 1000,
+      "benchmark": "sugarscape-tvar-rebirthing:4/1000"
+    },
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 2500,
+      "benchmark": "sugarscape-tvar-rebirthing:4/2500"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 2000,
+      "benchmark": "sugarscape-seq-rebirthing/2000"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 2500,
+      "benchmark": "sugarscape-io-rebirthing:4/2500"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 1000,
+      "benchmark": "sugarscape-io-rebirthing:4/1000"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 1000,
+      "benchmark": "sugarscape-tarray-rebirthing:4/1000"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 500,
+      "benchmark": "sugarscape-tarray-rebirthing:4/500"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 1000,
+      "benchmark": "sugarscape-seq-rebirthing/1000"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 2000,
+      "benchmark": "sugarscape-io-rebirthing:4/2000"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 1500,
+      "benchmark": "sugarscape-tarray-rebirthing:4/1500"
+    },
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 1500,
+      "benchmark": "sugarscape-tvar-rebirthing:4/1500"
+    },
+    {
+      "table": 8,
+      "variant": "io",
+      "caps": 4,
+      "agents": 500,
+      "benchmark": "sugarscape-io-rebirthing:4/500"
+    },
+    {
+      "table": 8,
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 500,
+      "benchmark": "sugarscape-tvar-rebirthing:4/500"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-seq-rebirthing/500"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 2500,
+      "benchmark": "sugarscape-seq-rebirthing/2500"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 2000,
+      "benchmark": "sugarscape-tarray-rebirthing:4/2000"
+    }
+  ],
+  "scope": "Independent raw-measurement audit on different hardware; not a paper performance verdict. Source and binary hashes are recorded provenance, not independent binary reconstruction.",
+  "rows": [
+    {
+      "ordinal": 0,
+      "condition": {
+        "table": 6,
+        "variant": "tarray",
+        "caps": 7,
+        "agents": 500,
+        "benchmark": "sugarscape-tarray-normal:7/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          5.435755059123039
+        ],
+        [
+          2.0,
+          12.136465212097391
+        ],
+        [
+          3.0,
+          16.7520512631163
+        ],
+        [
+          4.0,
+          22.346268884837627
+        ]
+      ],
+      "ols_seconds": 5.534712752816265,
+      "r_squared": 0.9949629195815892,
+      "sample_standard_deviation_seconds": 0.27556404262520207,
+      "slope_error": 2.6645352591003757e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "f0b79ae1276f5fc9ddba5752ff86a66caf2970e0d98ac1af468291b46f342b90"
+    },
+    {
+      "ordinal": 1,
+      "condition": {
+        "table": 6,
+        "variant": "tarray",
+        "caps": 4,
+        "agents": 500,
+        "benchmark": "sugarscape-tarray-normal:4/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          6.317120281979442
+        ],
+        [
+          2.0,
+          14.106517896056175
+        ],
+        [
+          3.0,
+          19.123018246144056
+        ],
+        [
+          4.0,
+          26.90597381396219
+        ]
+      ],
+      "ols_seconds": 6.67830609460361,
+      "r_squared": 0.9931670131587651,
+      "sample_standard_deviation_seconds": 0.3421111472921293,
+      "slope_error": 4.440892098500626e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "aa8c68d798c56e69efe874b2f559ef4dde69f7f92e910607741acebf0db86546"
+    },
+    {
+      "ordinal": 2,
+      "condition": {
+        "table": 6,
+        "variant": "io",
+        "caps": 4,
+        "agents": 500,
+        "benchmark": "sugarscape-io-normal:4/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          6.997703484026715
+        ],
+        [
+          2.0,
+          14.120388654991984
+        ],
+        [
+          3.0,
+          21.081314999144524
+        ],
+        [
+          4.0,
+          28.135942725930363
+        ]
+      ],
+      "ols_seconds": 7.037564406986346,
+      "r_squared": 0.9999821477456163,
+      "sample_standard_deviation_seconds": 0.02568250541863927,
+      "slope_error": 5.329070518200751e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "52fa6f1de413c760a85acfaba937772dea80088056dff3b9d19baca5e45336a4"
+    },
+    {
+      "ordinal": 3,
+      "condition": {
+        "table": 6,
+        "variant": "tvar",
+        "caps": 4,
+        "agents": 500,
+        "benchmark": "sugarscape-tvar-normal:4/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          8.46015906590037
+        ],
+        [
+          2.0,
+          16.985700363991782
+        ],
+        [
+          3.0,
+          25.436076958896592
+        ],
+        [
+          4.0,
+          34.19000441906974
+        ]
+      ],
+      "ols_seconds": 8.56399126544129,
+      "r_squared": 0.9999448876912944,
+      "sample_standard_deviation_seconds": 0.03759725129269483,
+      "slope_error": 8.881784197001252e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "657f3430c9cd27ede9f82f5a2ff5c76539aab8da16f44d5f96b2d06a90605b83"
+    },
+    {
+      "ordinal": 4,
+      "condition": {
+        "table": 6,
+        "variant": "tarray",
+        "caps": 3,
+        "agents": 500,
+        "benchmark": "sugarscape-tarray-normal:3/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          7.221642483957112
+        ],
+        [
+          2.0,
+          15.120134789030999
+        ],
+        [
+          3.0,
+          22.06638887198642
+        ],
+        [
+          4.0,
+          30.553478952962905
+        ]
+      ],
+      "ols_seconds": 7.694176348997278,
+      "r_squared": 0.9986592984022987,
+      "sample_standard_deviation_seconds": 0.19020414977025984,
+      "slope_error": 6.217248937900877e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "c9c3b96cc7a1482cfa3a8b4ba4b43102df170b028670bdc193026e900e70cb64"
+    },
+    {
+      "ordinal": 5,
+      "condition": {
+        "table": 6,
+        "variant": "tarray",
+        "caps": 6,
+        "agents": 500,
+        "benchmark": "sugarscape-tarray-normal:6/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          5.8719518419820815
+        ],
+        [
+          2.0,
+          12.724286607000977
+        ],
+        [
+          3.0,
+          18.694658707128838
+        ],
+        [
+          4.0,
+          24.157206724165007
+        ]
+      ],
+      "ols_seconds": 6.082613674667662,
+      "r_squared": 0.9973588871262214,
+      "sample_standard_deviation_seconds": 0.21522229949094052,
+      "slope_error": 4.440892098500626e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "0656d8bffc735b2e8131904b0d0558fecf1be124eba91ccf626073d91a0195e3"
+    },
+    {
+      "ordinal": 6,
+      "condition": {
+        "table": 6,
+        "variant": "tarray",
+        "caps": 5,
+        "agents": 500,
+        "benchmark": "sugarscape-tarray-normal:5/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          5.739508705213666
+        ],
+        [
+          2.0,
+          12.330802773823962
+        ],
+        [
+          3.0,
+          18.87825116608292
+        ],
+        [
+          4.0,
+          24.663316343910992
+        ]
+      ],
+      "ols_seconds": 6.331887130835091,
+      "r_squared": 0.9990614806017681,
+      "sample_standard_deviation_seconds": 0.24178795324006186,
+      "slope_error": 3.552713678800501e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "d5e1edf85c19410f6b28ac4863108c82b31e812dd385eebc51cf40ffe7c38c4f"
+    },
+    {
+      "ordinal": 7,
+      "condition": {
+        "table": 6,
+        "variant": "tvar",
+        "caps": 5,
+        "agents": 500,
+        "benchmark": "sugarscape-tvar-normal:5/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          8.390160911949351
+        ],
+        [
+          2.0,
+          16.75377804483287
+        ],
+        [
+          3.0,
+          24.7672208158765
+        ],
+        [
+          4.0,
+          33.50305091007613
+        ]
+      ],
+      "ols_seconds": 8.335211276542392,
+      "r_squared": 0.9997347833929255,
+      "sample_standard_deviation_seconds": 0.0629391487460029,
+      "slope_error": 5.329070518200751e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "d9878ab1a315400b34012b001b8619e3c6452020441c82d9d20486377599b09f"
+    },
+    {
+      "ordinal": 8,
+      "condition": {
+        "table": 6,
+        "variant": "io",
+        "caps": 1,
+        "agents": 500,
+        "benchmark": "sugarscape-io-normal:1/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          12.929847965016961
+        ],
+        [
+          2.0,
+          25.24581881193444
+        ],
+        [
+          3.0,
+          38.557571151992306
+        ],
+        [
+          4.0,
+          50.33536795899272
+        ]
+      ],
+      "ols_seconds": 12.55283123219851,
+      "r_squared": 0.9995022122485825,
+      "sample_standard_deviation_seconds": 0.1698895030510566,
+      "slope_error": 8.881784197001252e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "04486d866821ac911807c83f00ccd10f12a119f9c1b6c8b82d071621a41ab00a"
+    },
+    {
+      "ordinal": 9,
+      "condition": {
+        "table": 6,
+        "variant": "tvar",
+        "caps": 3,
+        "agents": 500,
+        "benchmark": "sugarscape-tvar-normal:3/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          9.35087685403414
+        ],
+        [
+          2.0,
+          18.848590085981414
+        ],
+        [
+          3.0,
+          28.292267472017556
+        ],
+        [
+          4.0,
+          37.39707886707038
+        ]
+      ],
+      "ols_seconds": 9.358228342514485,
+      "r_squared": 0.9999026102877888,
+      "sample_standard_deviation_seconds": 0.044799544401191514,
+      "slope_error": 1.0658141036401503e-14,
+      "r_squared_error": 0.0,
+      "report_sha256": "cac78cadb99455c8500cfce54b7e5e5f7d28c4472f2bd6d81520b9509ddc293b"
+    },
+    {
+      "ordinal": 10,
+      "condition": {
+        "table": 6,
+        "variant": "io",
+        "caps": 6,
+        "agents": 500,
+        "benchmark": "sugarscape-io-normal:6/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          6.665281230118126
+        ],
+        [
+          2.0,
+          13.116669203853235
+        ],
+        [
+          3.0,
+          19.713922858936712
+        ],
+        [
+          4.0,
+          26.60971090104431
+        ]
+      ],
+      "ols_seconds": 6.643054266786201,
+      "r_squared": 0.999771010765771,
+      "sample_standard_deviation_seconds": 0.05479972621322391,
+      "slope_error": 4.440892098500626e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "5faed8abc5ff40a13113bc176068cc2c50553164a81a63eab770430acc00b2dc"
+    },
+    {
+      "ordinal": 11,
+      "condition": {
+        "table": 6,
+        "variant": "tarray",
+        "caps": 8,
+        "agents": 500,
+        "benchmark": "sugarscape-tarray-normal:8/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          5.428723267046735
+        ],
+        [
+          2.0,
+          11.180126941064373
+        ],
+        [
+          3.0,
+          16.65756876510568
+        ],
+        [
+          4.0,
+          23.16561244893819
+        ]
+      ],
+      "ols_seconds": 5.868810936971565,
+      "r_squared": 0.9986765456228112,
+      "sample_standard_deviation_seconds": 0.150528063666755,
+      "slope_error": 3.552713678800501e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "2e11dd1a536474f4074bd6df38600580bc3a6b0918fdb35cb1417f17c1a43266"
+    },
+    {
+      "ordinal": 12,
+      "condition": {
+        "table": 6,
+        "variant": "io",
+        "caps": 7,
+        "agents": 500,
+        "benchmark": "sugarscape-io-normal:7/500"
+      },
+      "attempt": 1,
+      "accepted": true,
+      "raw_samples": [
+        [
+          1.0,
+          6.581949349027127
+        ],
+        [
+          2.0,
+          13.039452397963032
+        ],
+        [
+          3.0,
+          19.490532967960462
+        ],
+        [
+          4.0,
+          26.01203478500247
+        ]
+      ],
+      "ols_seconds": 6.474133687792343,
+      "r_squared": 0.9999937052661314,
+      "sample_standard_deviation_seconds": 0.03893077963956429,
+      "slope_error": 3.552713678800501e-15,
+      "r_squared_error": 0.0,
+      "report_sha256": "46bfad053f7d5780cdaacb1e88314d6b8743926ce71a77d93ed674e18e7e7965"
+    }
+  ]
+}

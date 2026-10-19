@@ -1,0 +1,17 @@
+[
+  "sudo",
+  "systemd-run",
+  "--unit=sugarscape-criterion-retry-control-001",
+  "--property=RuntimeMaxSec=3600",
+  "--property=TimeoutStopSec=120",
+  "--property=KillMode=control-group",
+  "--property=Restart=no",
+  "--property=WorkingDirectory=/home/ubuntu/thaler-criterion-retry-control-001",
+  "--property=StandardOutput=append:/home/ubuntu/thaler-criterion-retry-control-001/workflow.stdout",
+  "--property=StandardError=append:/home/ubuntu/thaler-criterion-retry-control-001/workflow.stderr",
+  "--property=ExecStopPost=/bin/bash /home/ubuntu/thaler-criterion-retry-control-001/seal.sh",
+  "/usr/bin/python3",
+  "/home/ubuntu/thaler-criterion-retry-control-001/compare_retry_protocols.py",
+  "/home/ubuntu/sugarscape-table9-002/results/tarray-retry-binary",
+  "/home/ubuntu/thaler-criterion-retry-control-001/runs"
+]

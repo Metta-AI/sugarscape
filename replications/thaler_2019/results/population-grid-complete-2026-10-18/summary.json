@@ -1,0 +1,460 @@
+{
+  "phase": "full-native",
+  "validated_runs": 225,
+  "observations": 225000,
+  "reference_sha256": "7041966cfe7bd056e64a49174535cc4ef793d4f5022abaf6f64e77b692b98704",
+  "terminal_population_summary": [
+    {
+      "variant": "io",
+      "caps": 1,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 184,
+      "maximum": 187,
+      "mean": 185.4
+    },
+    {
+      "variant": "io",
+      "caps": 2,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 184,
+      "maximum": 188,
+      "mean": 185.6
+    },
+    {
+      "variant": "io",
+      "caps": 3,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 183,
+      "maximum": 187,
+      "mean": 184.8
+    },
+    {
+      "variant": "io",
+      "caps": 4,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 183,
+      "maximum": 186,
+      "mean": 184.4
+    },
+    {
+      "variant": "io",
+      "caps": 4,
+      "agents": 500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 497,
+      "maximum": 500,
+      "mean": 498.8
+    },
+    {
+      "variant": "io",
+      "caps": 4,
+      "agents": 1000,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 984,
+      "maximum": 991,
+      "mean": 988.0
+    },
+    {
+      "variant": "io",
+      "caps": 4,
+      "agents": 1500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 1451,
+      "maximum": 1475,
+      "mean": 1460.8
+    },
+    {
+      "variant": "io",
+      "caps": 4,
+      "agents": 2000,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 1912,
+      "maximum": 1927,
+      "mean": 1919.6
+    },
+    {
+      "variant": "io",
+      "caps": 4,
+      "agents": 2500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 2353,
+      "maximum": 2363,
+      "mean": 2358.6
+    },
+    {
+      "variant": "io",
+      "caps": 5,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 184,
+      "maximum": 186,
+      "mean": 185.2
+    },
+    {
+      "variant": "io",
+      "caps": 6,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 182,
+      "maximum": 186,
+      "mean": 184.2
+    },
+    {
+      "variant": "io",
+      "caps": 7,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 183,
+      "maximum": 187,
+      "mean": 185.0
+    },
+    {
+      "variant": "io",
+      "caps": 8,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 182,
+      "maximum": 186,
+      "mean": 183.8
+    },
+    {
+      "variant": "seq",
+      "caps": 1,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 192,
+      "maximum": 192,
+      "mean": 192.0
+    },
+    {
+      "variant": "seq",
+      "caps": 1,
+      "agents": 500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 500,
+      "maximum": 500,
+      "mean": 500.0
+    },
+    {
+      "variant": "seq",
+      "caps": 1,
+      "agents": 1000,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 997,
+      "maximum": 997,
+      "mean": 997.0
+    },
+    {
+      "variant": "seq",
+      "caps": 1,
+      "agents": 1500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 1488,
+      "maximum": 1488,
+      "mean": 1488.0
+    },
+    {
+      "variant": "seq",
+      "caps": 1,
+      "agents": 2000,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 1871,
+      "maximum": 1871,
+      "mean": 1871.0
+    },
+    {
+      "variant": "seq",
+      "caps": 1,
+      "agents": 2500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 2293,
+      "maximum": 2293,
+      "mean": 2293.0
+    },
+    {
+      "variant": "tarray",
+      "caps": 1,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 183,
+      "maximum": 187,
+      "mean": 185.2
+    },
+    {
+      "variant": "tarray",
+      "caps": 2,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 179,
+      "maximum": 185,
+      "mean": 181.8
+    },
+    {
+      "variant": "tarray",
+      "caps": 3,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 183,
+      "maximum": 186,
+      "mean": 183.8
+    },
+    {
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 179,
+      "maximum": 188,
+      "mean": 183.0
+    },
+    {
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 497,
+      "maximum": 500,
+      "mean": 498.8
+    },
+    {
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 1000,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 983,
+      "maximum": 990,
+      "mean": 987.0
+    },
+    {
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 1500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 1444,
+      "maximum": 1465,
+      "mean": 1450.2
+    },
+    {
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 2000,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 1884,
+      "maximum": 1925,
+      "mean": 1904.0
+    },
+    {
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 2500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 2320,
+      "maximum": 2320,
+      "mean": 2320.0
+    },
+    {
+      "variant": "tarray",
+      "caps": 5,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 181,
+      "maximum": 183,
+      "mean": 182.2
+    },
+    {
+      "variant": "tarray",
+      "caps": 6,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 183,
+      "maximum": 188,
+      "mean": 185.8
+    },
+    {
+      "variant": "tarray",
+      "caps": 7,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 182,
+      "maximum": 185,
+      "mean": 183.6
+    },
+    {
+      "variant": "tarray",
+      "caps": 8,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 182,
+      "maximum": 186,
+      "mean": 184.4
+    },
+    {
+      "variant": "tvar",
+      "caps": 1,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 185,
+      "maximum": 188,
+      "mean": 186.0
+    },
+    {
+      "variant": "tvar",
+      "caps": 2,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 183,
+      "maximum": 185,
+      "mean": 184.4
+    },
+    {
+      "variant": "tvar",
+      "caps": 3,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 181,
+      "maximum": 186,
+      "mean": 184.6
+    },
+    {
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 182,
+      "maximum": 189,
+      "mean": 185.4
+    },
+    {
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 497,
+      "maximum": 500,
+      "mean": 499.0
+    },
+    {
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 1000,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 989,
+      "maximum": 996,
+      "mean": 992.8
+    },
+    {
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 1500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 1452,
+      "maximum": 1468,
+      "mean": 1457.2
+    },
+    {
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 2000,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 1906,
+      "maximum": 1922,
+      "mean": 1910.8
+    },
+    {
+      "variant": "tvar",
+      "caps": 4,
+      "agents": 2500,
+      "rebirth": true,
+      "repetitions": 5,
+      "minimum": 2320,
+      "maximum": 2320,
+      "mean": 2320.0
+    },
+    {
+      "variant": "tvar",
+      "caps": 5,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 183,
+      "maximum": 188,
+      "mean": 185.6
+    },
+    {
+      "variant": "tvar",
+      "caps": 6,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 181,
+      "maximum": 187,
+      "mean": 184.6
+    },
+    {
+      "variant": "tvar",
+      "caps": 7,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 184,
+      "maximum": 188,
+      "mean": 186.4
+    },
+    {
+      "variant": "tvar",
+      "caps": 8,
+      "agents": 500,
+      "rebirth": false,
+      "repetitions": 5,
+      "minimum": 182,
+      "maximum": 187,
+      "mean": 185.4
+    }
+  ],
+  "scope": "All declared process records, original condition identities, command/exit and trajectory hashes verified. Binary and hardware metadata are recorded provenance, not independent binary reconstruction. Qualification is not full-native coverage; no statistical equivalence claim.",
+  "completed_study": false
+}

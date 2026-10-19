@@ -1,0 +1,32 @@
+{
+  "package": "criterion-1.4.1.0",
+  "package_archive_sha256": "c49306676aa7927c3ca3c1807b081d1e86771eb8da99c8391f9c4dacb24a826c",
+  "measurement_source_sha256": "c940f05f1de9632655710e351184337fd1d7f9ce28b93a188561c207b89118df",
+  "source_member": "criterion-1.4.1.0/Criterion/Measurement.hs",
+  "source_url": "https://hackage.haskell.org/package/criterion-1.4.1.0/src/Criterion/Measurement.hs",
+  "warmup_iterations": 1,
+  "executed_sample_iterations": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "reported_sample_iterations": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "minimum_executed_model_iterations_for_four_sample_report": 16,
+  "reason": "count starts0; fifth measurement executes before count>=4 gate; return uses prior accumulator, discarding current measurement. Warmup executes separately. This describes the slow-benchmark path where other time/threshold gates already pass.",
+  "paper_based_single_attempt_estimates_seconds": {
+    "16_normal": 190.4,
+    "16_rebirth": 745.6,
+    "32_normal": 204.8,
+    "32_rebirth": 1222.4,
+    "64_normal": 233.6,
+    "64_rebirth": 1585.6
+  },
+  "limitation": "Estimates multiply published rounded per-iteration slopes; they are not observed elapsed times or proof of the timeout cause."
+}

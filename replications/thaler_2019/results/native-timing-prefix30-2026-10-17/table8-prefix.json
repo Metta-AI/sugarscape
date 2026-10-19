@@ -1,0 +1,54 @@
+{
+  "table8_completed": 5,
+  "table8_required": 20,
+  "table6_overlaps_exact": 25,
+  "paper_targets_sha256": "62cf7f0151e943088d8b6f07c4e2dbf285dc184cb2aed9ad795d23a6215f1249",
+  "rows": [
+    {
+      "variant": "tvar",
+      "agents": 2000,
+      "capabilities": 4,
+      "paper_seconds": 214.0,
+      "native_seconds": 71.85492602365555,
+      "r_squared": 0.9999918029459659,
+      "report_sha256": "142734221401cad18bf56c8518ef651a9053e6e67a3ed4d36c7d677955ab7f44"
+    },
+    {
+      "variant": "seq",
+      "agents": 1500,
+      "capabilities": 1,
+      "paper_seconds": 220.0,
+      "native_seconds": 129.2987044319976,
+      "r_squared": 0.9999960513629219,
+      "report_sha256": "d922d1950fcdd86ce05ab1f2178e775a963c3334d89250351f93998f49ab25db"
+    },
+    {
+      "variant": "io",
+      "agents": 1500,
+      "capabilities": 4,
+      "paper_seconds": 183.0,
+      "native_seconds": 54.501625459175536,
+      "r_squared": 0.9999933244171344,
+      "report_sha256": "c2680b4a8dd574682be67035cc3daed45958411c8a8db9481ae4d90fb990066c"
+    },
+    {
+      "variant": "tarray",
+      "agents": 2500,
+      "capabilities": 4,
+      "paper_seconds": 55.2,
+      "native_seconds": 18.354928749799722,
+      "r_squared": 0.9998373033572138,
+      "report_sha256": "730330b489a34600327192cf8a1078bec2e8ea7d3bfa30d57a9f9a43077ca797"
+    },
+    {
+      "variant": "tvar",
+      "agents": 1000,
+      "capabilities": 4,
+      "paper_seconds": 136.0,
+      "native_seconds": 46.41187858798075,
+      "r_squared": 0.9999975650873215,
+      "report_sha256": "f5a8e9aeef6da254054c0c0a79d362e2a4fc268d076e9f5d0ae42ae3e6f3c16a"
+    }
+  ],
+  "scope": "Descriptive partial timings on different hardware. No full-grid scaling or same-hardware replication verdict. Four increasing iteration-count measurements per condition are not independent experimental repeats."
+}

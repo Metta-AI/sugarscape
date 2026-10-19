@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-thaler/replications/thaler_2019/timing/compare_complete_grid.py", line 42, in <module>
+    assert not missing, {
+           ^^^^^^^^^^^
+AssertionError: {'missing_conditions': [(8, 'seq', 500), (8, 'seq', 2500), (8, 'tarray', 2000)], 'accepted': 48, 'required': 51}

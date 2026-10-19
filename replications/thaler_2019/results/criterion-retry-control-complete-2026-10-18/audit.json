@@ -1,0 +1,551 @@
+{
+  "protocol_sha256": "e168357cca92f3f40a75d928be63af2288e7ec123289c1155c93b48d7ee14615",
+  "recovery_protocol_sha256": "3630c8597cb9cf781e502f88efaaaba169e176d6bcfcf0dce011b6579c8395ce",
+  "binary_sha256": "41574620bf9fbf82c58c7bf1e0774c4554215236b837971053d1a9244039013e",
+  "processes": [
+    {
+      "index": 0,
+      "mode": "criterion_default",
+      "repetition": 1,
+      "simulations": 16,
+      "first_ratio": 0.08612474995453719,
+      "final_ratio": 0.08723209265897325,
+      "observations": [
+        {
+          "cumulative_commits": 192465,
+          "cumulative_retries": 16576,
+          "cumulative_ratio": 0.08612474995453719,
+          "printed_ratio": "0.09",
+          "increment_commits": 192465,
+          "increment_retries": 16576,
+          "increment_ratio": 0.08612474995453719
+        },
+        {
+          "cumulative_commits": 383941,
+          "cumulative_retries": 33308,
+          "cumulative_ratio": 0.08675291255687723,
+          "printed_ratio": "0.09",
+          "increment_commits": 191476,
+          "increment_retries": 16732,
+          "increment_ratio": 0.08738431970586392
+        },
+        {
+          "cumulative_commits": 575899,
+          "cumulative_retries": 50190,
+          "cumulative_ratio": 0.08715069829952822,
+          "printed_ratio": "0.09",
+          "increment_commits": 191958,
+          "increment_retries": 16882,
+          "increment_ratio": 0.0879463215911814
+        },
+        {
+          "cumulative_commits": 766823,
+          "cumulative_retries": 66693,
+          "cumulative_ratio": 0.0869731346086385,
+          "printed_ratio": "0.09",
+          "increment_commits": 190924,
+          "increment_retries": 16503,
+          "increment_ratio": 0.08643753535438185
+        },
+        {
+          "cumulative_commits": 959757,
+          "cumulative_retries": 84015,
+          "cumulative_ratio": 0.08753778300132221,
+          "printed_ratio": "0.09",
+          "increment_commits": 192934,
+          "increment_retries": 17322,
+          "increment_ratio": 0.08978199798894959
+        },
+        {
+          "cumulative_commits": 1151700,
+          "cumulative_retries": 101504,
+          "cumulative_ratio": 0.08813406268993662,
+          "printed_ratio": "0.09",
+          "increment_commits": 191943,
+          "increment_retries": 17489,
+          "increment_ratio": 0.09111559160792528
+        },
+        {
+          "cumulative_commits": 1343232,
+          "cumulative_retries": 118680,
+          "cumulative_ratio": 0.08835405946255002,
+          "printed_ratio": "0.09",
+          "increment_commits": 191532,
+          "increment_retries": 17176,
+          "increment_ratio": 0.08967692082785123
+        },
+        {
+          "cumulative_commits": 1536448,
+          "cumulative_retries": 135315,
+          "cumulative_ratio": 0.08807001603698922,
+          "printed_ratio": "0.09",
+          "increment_commits": 193216,
+          "increment_retries": 16635,
+          "increment_ratio": 0.08609535442199404
+        },
+        {
+          "cumulative_commits": 1731139,
+          "cumulative_retries": 151954,
+          "cumulative_ratio": 0.0877768913992464,
+          "printed_ratio": "0.09",
+          "increment_commits": 194691,
+          "increment_retries": 16639,
+          "increment_ratio": 0.08546363211447884
+        },
+        {
+          "cumulative_commits": 1923065,
+          "cumulative_retries": 169295,
+          "cumulative_ratio": 0.08803394581046403,
+          "printed_ratio": "0.09",
+          "increment_commits": 191926,
+          "increment_retries": 17341,
+          "increment_ratio": 0.09035253170492794
+        },
+        {
+          "cumulative_commits": 2116046,
+          "cumulative_retries": 185703,
+          "cumulative_ratio": 0.08775943434121942,
+          "printed_ratio": "0.09",
+          "increment_commits": 192981,
+          "increment_retries": 16408,
+          "increment_ratio": 0.08502391427135314
+        },
+        {
+          "cumulative_commits": 2306786,
+          "cumulative_retries": 202596,
+          "cumulative_ratio": 0.08782609223395668,
+          "printed_ratio": "0.09",
+          "increment_commits": 190740,
+          "increment_retries": 16893,
+          "increment_ratio": 0.08856558666247248
+        },
+        {
+          "cumulative_commits": 2497792,
+          "cumulative_retries": 218847,
+          "cumulative_ratio": 0.08761618261248334,
+          "printed_ratio": "0.09",
+          "increment_commits": 191006,
+          "increment_retries": 16251,
+          "increment_ratio": 0.08508109692889229
+        },
+        {
+          "cumulative_commits": 2691074,
+          "cumulative_retries": 235488,
+          "cumulative_ratio": 0.08750706966809534,
+          "printed_ratio": "0.09",
+          "increment_commits": 193282,
+          "increment_retries": 16641,
+          "increment_ratio": 0.08609699816847921
+        },
+        {
+          "cumulative_commits": 2883009,
+          "cumulative_retries": 252165,
+          "cumulative_ratio": 0.0874659080148553,
+          "printed_ratio": "0.09",
+          "increment_commits": 191935,
+          "increment_retries": 16677,
+          "increment_ratio": 0.08688879047594238
+        },
+        {
+          "cumulative_commits": 3077090,
+          "cumulative_retries": 268421,
+          "cumulative_ratio": 0.08723209265897325,
+          "printed_ratio": "0.09",
+          "increment_commits": 194081,
+          "increment_retries": 16256,
+          "increment_ratio": 0.08375884295732194
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "mode": "criterion_default",
+      "repetition": 0,
+      "simulations": 16,
+      "first_ratio": 0.08646934897554527,
+      "final_ratio": 0.08655645350374071,
+      "observations": [
+        {
+          "cumulative_commits": 193664,
+          "cumulative_retries": 16746,
+          "cumulative_ratio": 0.08646934897554527,
+          "printed_ratio": "0.09",
+          "increment_commits": 193664,
+          "increment_retries": 16746,
+          "increment_ratio": 0.08646934897554527
+        },
+        {
+          "cumulative_commits": 383993,
+          "cumulative_retries": 33466,
+          "cumulative_ratio": 0.08715263038649142,
+          "printed_ratio": "0.09",
+          "increment_commits": 190329,
+          "increment_retries": 16720,
+          "increment_ratio": 0.08784788445271083
+        },
+        {
+          "cumulative_commits": 576257,
+          "cumulative_retries": 50126,
+          "cumulative_ratio": 0.08698549431937486,
+          "printed_ratio": "0.09",
+          "increment_commits": 192264,
+          "increment_retries": 16660,
+          "increment_ratio": 0.08665168726334624
+        },
+        {
+          "cumulative_commits": 768296,
+          "cumulative_retries": 66223,
+          "cumulative_ratio": 0.08619464373106199,
+          "printed_ratio": "0.09",
+          "increment_commits": 192039,
+          "increment_retries": 16097,
+          "increment_ratio": 0.0838215154213467
+        },
+        {
+          "cumulative_commits": 961749,
+          "cumulative_retries": 83369,
+          "cumulative_ratio": 0.08668477950068053,
+          "printed_ratio": "0.09",
+          "increment_commits": 193453,
+          "increment_retries": 17146,
+          "increment_ratio": 0.08863134714891989
+        },
+        {
+          "cumulative_commits": 1153487,
+          "cumulative_retries": 99484,
+          "cumulative_ratio": 0.08624631226879886,
+          "printed_ratio": "0.09",
+          "increment_commits": 191738,
+          "increment_retries": 16115,
+          "increment_ratio": 0.08404698077585038
+        },
+        {
+          "cumulative_commits": 1343710,
+          "cumulative_retries": 115372,
+          "cumulative_ratio": 0.08586078841416675,
+          "printed_ratio": "0.09",
+          "increment_commits": 190223,
+          "increment_retries": 15888,
+          "increment_ratio": 0.08352302297829389
+        },
+        {
+          "cumulative_commits": 1534520,
+          "cumulative_retries": 132340,
+          "cumulative_ratio": 0.0862419518807184,
+          "printed_ratio": "0.09",
+          "increment_commits": 190810,
+          "increment_retries": 16968,
+          "increment_ratio": 0.0889261569100152
+        },
+        {
+          "cumulative_commits": 1727658,
+          "cumulative_retries": 149743,
+          "cumulative_ratio": 0.08667398292949183,
+          "printed_ratio": "0.09",
+          "increment_commits": 193138,
+          "increment_retries": 17403,
+          "increment_ratio": 0.09010655593409893
+        },
+        {
+          "cumulative_commits": 1921223,
+          "cumulative_retries": 166408,
+          "cumulative_ratio": 0.08661566096179361,
+          "printed_ratio": "0.09",
+          "increment_commits": 193565,
+          "increment_retries": 16665,
+          "increment_ratio": 0.08609511016971043
+        },
+        {
+          "cumulative_commits": 2114346,
+          "cumulative_retries": 183964,
+          "cumulative_ratio": 0.08700751910992809,
+          "printed_ratio": "0.09",
+          "increment_commits": 193123,
+          "increment_retries": 17556,
+          "increment_ratio": 0.09090579578817645
+        },
+        {
+          "cumulative_commits": 2306985,
+          "cumulative_retries": 200577,
+          "cumulative_ratio": 0.08694334813620375,
+          "printed_ratio": "0.09",
+          "increment_commits": 192639,
+          "increment_retries": 16613,
+          "increment_ratio": 0.0862390274035891
+        },
+        {
+          "cumulative_commits": 2499266,
+          "cumulative_retries": 217138,
+          "cumulative_ratio": 0.08688070817592045,
+          "printed_ratio": "0.09",
+          "increment_commits": 192281,
+          "increment_retries": 16561,
+          "increment_ratio": 0.08612915472667607
+        },
+        {
+          "cumulative_commits": 2692979,
+          "cumulative_retries": 233093,
+          "cumulative_ratio": 0.08655581792505623,
+          "printed_ratio": "0.09",
+          "increment_commits": 193713,
+          "increment_retries": 15955,
+          "increment_ratio": 0.08236411598602056
+        },
+        {
+          "cumulative_commits": 2886398,
+          "cumulative_retries": 249311,
+          "cumulative_ratio": 0.08637443623505836,
+          "printed_ratio": "0.09",
+          "increment_commits": 193419,
+          "increment_retries": 16218,
+          "increment_ratio": 0.08384905309199199
+        },
+        {
+          "cumulative_commits": 3079366,
+          "cumulative_retries": 266539,
+          "cumulative_ratio": 0.08655645350374071,
+          "printed_ratio": "0.09",
+          "increment_commits": 192968,
+          "increment_retries": 17228,
+          "increment_ratio": 0.08927905144894491
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "mode": "criterion_default",
+      "repetition": 2,
+      "simulations": 16,
+      "first_ratio": 0.08723618717072107,
+      "final_ratio": 0.08764121142202362,
+      "observations": [
+        {
+          "cumulative_commits": 192466,
+          "cumulative_retries": 16790,
+          "cumulative_ratio": 0.08723618717072107,
+          "printed_ratio": "0.09",
+          "increment_commits": 192466,
+          "increment_retries": 16790,
+          "increment_ratio": 0.08723618717072107
+        },
+        {
+          "cumulative_commits": 385008,
+          "cumulative_retries": 33721,
+          "cumulative_ratio": 0.08758519303494992,
+          "printed_ratio": "0.09",
+          "increment_commits": 192542,
+          "increment_retries": 16931,
+          "increment_ratio": 0.08793406113990714
+        },
+        {
+          "cumulative_commits": 576767,
+          "cumulative_retries": 50037,
+          "cumulative_ratio": 0.08675426992182285,
+          "printed_ratio": "0.09",
+          "increment_commits": 191759,
+          "increment_retries": 16316,
+          "increment_ratio": 0.08508596728184857
+        },
+        {
+          "cumulative_commits": 769052,
+          "cumulative_retries": 67070,
+          "cumulative_ratio": 0.08721126789865964,
+          "printed_ratio": "0.09",
+          "increment_commits": 192285,
+          "increment_retries": 17033,
+          "increment_ratio": 0.0885820526822165
+        },
+        {
+          "cumulative_commits": 962071,
+          "cumulative_retries": 83991,
+          "cumulative_ratio": 0.08730228850053687,
+          "printed_ratio": "0.09",
+          "increment_commits": 193019,
+          "increment_retries": 16921,
+          "increment_ratio": 0.08766494490179723
+        },
+        {
+          "cumulative_commits": 1155663,
+          "cumulative_retries": 100149,
+          "cumulative_ratio": 0.08665934619348374,
+          "printed_ratio": "0.09",
+          "increment_commits": 193592,
+          "increment_retries": 16158,
+          "increment_ratio": 0.08346419273523699
+        },
+        {
+          "cumulative_commits": 1348118,
+          "cumulative_retries": 116967,
+          "cumulative_ratio": 0.08676317651718915,
+          "printed_ratio": "0.09",
+          "increment_commits": 192455,
+          "increment_retries": 16818,
+          "increment_ratio": 0.08738666181704814
+        },
+        {
+          "cumulative_commits": 1541315,
+          "cumulative_retries": 133828,
+          "cumulative_ratio": 0.08682715732994228,
+          "printed_ratio": "0.09",
+          "increment_commits": 193197,
+          "increment_retries": 16861,
+          "increment_ratio": 0.08727361190908761
+        },
+        {
+          "cumulative_commits": 1733570,
+          "cumulative_retries": 151377,
+          "cumulative_ratio": 0.0873209619455805,
+          "printed_ratio": "0.09",
+          "increment_commits": 192255,
+          "increment_retries": 17549,
+          "increment_ratio": 0.09127981066812306
+        },
+        {
+          "cumulative_commits": 1926212,
+          "cumulative_retries": 168191,
+          "cumulative_ratio": 0.08731697237894895,
+          "printed_ratio": "0.09",
+          "increment_commits": 192642,
+          "increment_retries": 16814,
+          "increment_ratio": 0.08728107058689175
+        },
+        {
+          "cumulative_commits": 2119246,
+          "cumulative_retries": 184745,
+          "cumulative_ratio": 0.08717487257260365,
+          "printed_ratio": "0.09",
+          "increment_commits": 193034,
+          "increment_retries": 16554,
+          "increment_ratio": 0.08575691328988676
+        },
+        {
+          "cumulative_commits": 2309990,
+          "cumulative_retries": 202090,
+          "cumulative_ratio": 0.0874852272087758,
+          "printed_ratio": "0.09",
+          "increment_commits": 190744,
+          "increment_retries": 17345,
+          "increment_ratio": 0.09093339764291407
+        },
+        {
+          "cumulative_commits": 2502846,
+          "cumulative_retries": 219135,
+          "cumulative_ratio": 0.08755432815283082,
+          "printed_ratio": "0.09",
+          "increment_commits": 192856,
+          "increment_retries": 17045,
+          "increment_ratio": 0.08838200522669765
+        },
+        {
+          "cumulative_commits": 2695013,
+          "cumulative_retries": 236443,
+          "cumulative_ratio": 0.08773352855811828,
+          "printed_ratio": "0.09",
+          "increment_commits": 192167,
+          "increment_retries": 17308,
+          "increment_ratio": 0.09006749337815546
+        },
+        {
+          "cumulative_commits": 2884796,
+          "cumulative_retries": 253352,
+          "cumulative_ratio": 0.08782319443038607,
+          "printed_ratio": "0.09",
+          "increment_commits": 189783,
+          "increment_retries": 16909,
+          "increment_ratio": 0.08909649441730819
+        },
+        {
+          "cumulative_commits": 3078894,
+          "cumulative_retries": 269838,
+          "cumulative_ratio": 0.08764121142202362,
+          "printed_ratio": "0.09",
+          "increment_commits": 194098,
+          "increment_retries": 16486,
+          "increment_ratio": 0.08493647538872116
+        }
+      ]
+    },
+    {
+      "index": 0,
+      "mode": "single",
+      "repetition": 0,
+      "simulations": 1,
+      "first_ratio": 0.08762548032913213,
+      "final_ratio": 0.08762548032913213,
+      "observations": [
+        {
+          "cumulative_commits": 193357,
+          "cumulative_retries": 16943,
+          "cumulative_ratio": 0.08762548032913213,
+          "printed_ratio": "0.09",
+          "increment_commits": 193357,
+          "increment_retries": 16943,
+          "increment_ratio": 0.08762548032913213
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "mode": "single",
+      "repetition": 2,
+      "simulations": 1,
+      "first_ratio": 0.08982868208579951,
+      "final_ratio": 0.08982868208579951,
+      "observations": [
+        {
+          "cumulative_commits": 192099,
+          "cumulative_retries": 17256,
+          "cumulative_ratio": 0.08982868208579951,
+          "printed_ratio": "0.09",
+          "increment_commits": 192099,
+          "increment_retries": 17256,
+          "increment_ratio": 0.08982868208579951
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "mode": "single",
+      "repetition": 1,
+      "simulations": 1,
+      "first_ratio": 0.09080622647096147,
+      "final_ratio": 0.09080622647096147,
+      "observations": [
+        {
+          "cumulative_commits": 189128,
+          "cumulative_retries": 17174,
+          "cumulative_ratio": 0.09080622647096147,
+          "printed_ratio": "0.09",
+          "increment_commits": 189128,
+          "increment_retries": 17174,
+          "increment_ratio": 0.09080622647096147
+        }
+      ]
+    }
+  ],
+  "comparison": [
+    {
+      "mode": "single",
+      "processes": 3,
+      "simulations": 3,
+      "mean_final_ratio": 0.08942012962863104,
+      "range_final_ratio": [
+        0.08762548032913213,
+        0.09080622647096147
+      ],
+      "published_ratio": 0.29
+    },
+    {
+      "mode": "criterion_default",
+      "processes": 3,
+      "simulations": 48,
+      "mean_final_ratio": 0.08714325252824585,
+      "range_final_ratio": [
+        0.08655645350374071,
+        0.08764121142202362
+      ],
+      "published_ratio": 0.29
+    }
+  ],
+  "scope": "Complete original-configuration protocol control. Descriptive scheduling and counter-accumulation comparison; instrumented timing is not performance evidence. Historical repetition count remains unknown."
+}

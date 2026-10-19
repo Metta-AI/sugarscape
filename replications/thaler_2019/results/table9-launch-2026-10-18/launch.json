@@ -1,0 +1,17 @@
+{
+  "instance_id": "i-059f1fc4ff524c015",
+  "instance_type": "m5ad.16xlarge",
+  "region": "us-east-1",
+  "lease_expires_utc": "2026-10-18T05:03:36+00:00",
+  "pid": 2596,
+  "native_outer_seconds": 9600,
+  "nominal_3hour_compute_usd": 9.888,
+  "ebs_gib": 40,
+  "access": "Existing metta-box-ssm profile and egress-only group; no inbound SSH or forwarded authentication.",
+  "artifact_archive": "/home/ubuntu/sugarscape-table9-evidence-001.tar.gz",
+  "collector_seconds": 11000,
+  "collector_max_bytes": 104857600,
+  "scope": "Six original Table9 timings and thirty separately instrumented retry processes; no overlap with CPU8 Tables6/8 ensemble.",
+  "provider_launch": "Existing repository metta.setup.tools.sandbox.ec2 helper; launcher role and bounded lease.",
+  "client_note": "Nix shell preparation was canceled while fetching; used the same repository launcher helper through the existing environment. No shared daemon or other job was stopped."
+}

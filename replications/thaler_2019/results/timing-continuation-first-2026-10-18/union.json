@@ -1,0 +1,42 @@
+{
+  "conditions_audited": 42,
+  "conditions_required": 45,
+  "table6": {
+    "audited": 25,
+    "required": 25
+  },
+  "table8": {
+    "audited": 17,
+    "required": 20
+  },
+  "raw_measurements": 168,
+  "missing_conditions": [
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 500,
+      "benchmark": "sugarscape-seq-rebirthing/500"
+    },
+    {
+      "table": 8,
+      "variant": "seq",
+      "caps": 1,
+      "agents": 2500,
+      "benchmark": "sugarscape-seq-rebirthing/2500"
+    },
+    {
+      "table": 8,
+      "variant": "tarray",
+      "caps": 4,
+      "agents": 2000,
+      "benchmark": "sugarscape-tarray-rebirthing:4/2000"
+    }
+  ],
+  "audit_inputs": {
+    "replications/thaler_2019/results/native-timing-terminal-2026-10-18/audit.json": "81ddfa093d114b1ddbf1d69c46b13a296854462c6aa7714aeac08d9a01c3964e",
+    "replications/thaler_2019/results/timing-continuation-first-2026-10-18/audit.json": "48028b524651d72f1e5d9bf60b8e8e08aff5fd053c158fd4e43162686ea1bea6"
+  },
+  "prior_failed_attempt": "Preserved in native-timing-terminal-2026-10-18/terminal.tar.gz; success of a fresh process does not explain the prior SIGSEGV.",
+  "completed_study": false
+}

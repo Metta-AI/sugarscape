@@ -1,0 +1,25 @@
+{
+  "phase": "qualification",
+  "observer_manifest_sha256": "599d47265cc3d0c126fc0393155eb7d1ef7c6f6f23b79f2019f3f3539079b2c3",
+  "conditions": [
+    {
+      "variant": "seq",
+      "caps": 1,
+      "agents": 500,
+      "rebirth": false
+    },
+    {
+      "variant": "tarray",
+      "caps": 1,
+      "agents": 2500,
+      "rebirth": true
+    }
+  ],
+  "repetitions": 1,
+  "schedule_seed": 20261017,
+  "seconds_per_process": 600,
+  "native_seconds": 1200,
+  "scope": "Fresh population trajectories for all45 original timing conditions; five repeats with original seed42 quantify scheduler variability. Historical visual-comparison repetition count unknown. No statistical equivalence margin invented; full trajectories, populations and differences retained. Not timing evidence.",
+  "prerequisites": "Run only after original timing and separate retry jobs terminate, on the existing eight-core task node.",
+  "status": "Local emulated full-workflow qualification; not native-grid coverage."
+}

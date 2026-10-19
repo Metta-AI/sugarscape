@@ -1,0 +1,631 @@
+{
+  "paper_sha256": "1cdff1a896e4c36e2247a726a9acb27a09ee491cecdc60cab17c4f85f9aa6916",
+  "comparison_sha256": "4d2e33dcf60e5f4d589336b177c44302ac08435483fe42193b326d5cae34746c",
+  "results": [
+    {
+      "measurement": "paper_seconds",
+      "claims": [
+        {
+          "claim": "table6_io_optimum_at_three",
+          "paper_page": 21,
+          "condition_seconds": {
+            "1": 21.0,
+            "2": 20.0,
+            "3": 21.9,
+            "4": 24.0,
+            "5": 26.7,
+            "6": 29.3,
+            "7": 30.0,
+            "8": 31.2
+          },
+          "minimum_at": 2,
+          "holds_for_point_estimates": false
+        },
+        {
+          "claim": "table6_tvar_optimum_at_three",
+          "paper_page": 21,
+          "condition_seconds": {
+            "1": 21.1,
+            "2": 22.2,
+            "3": 23.6,
+            "4": 25.2,
+            "5": 31.0,
+            "6": 35.2,
+            "7": 38.7,
+            "8": 49.0
+          },
+          "minimum_at": 1,
+          "holds_for_point_estimates": false
+        },
+        {
+          "claim": "table6_lock_faster_than_tvar_every_condition",
+          "paper_page": 20,
+          "comparisons": [
+            {
+              "index": 1,
+              "first_seconds": 21.0,
+              "second_seconds": 21.1,
+              "holds": true
+            },
+            {
+              "index": 2,
+              "first_seconds": 20.0,
+              "second_seconds": 22.2,
+              "holds": true
+            },
+            {
+              "index": 3,
+              "first_seconds": 21.9,
+              "second_seconds": 23.6,
+              "holds": true
+            },
+            {
+              "index": 4,
+              "first_seconds": 24.0,
+              "second_seconds": 25.2,
+              "holds": true
+            },
+            {
+              "index": 5,
+              "first_seconds": 26.7,
+              "second_seconds": 31.0,
+              "holds": true
+            },
+            {
+              "index": 6,
+              "first_seconds": 29.3,
+              "second_seconds": 35.2,
+              "holds": true
+            },
+            {
+              "index": 7,
+              "first_seconds": 30.0,
+              "second_seconds": 38.7,
+              "holds": true
+            },
+            {
+              "index": 8,
+              "first_seconds": 31.2,
+              "second_seconds": 49.0,
+              "holds": true
+            }
+          ],
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_lock_faster_than_tvar_every_condition",
+          "paper_page": 23,
+          "comparisons": [
+            {
+              "index": 500,
+              "first_seconds": 67.9,
+              "second_seconds": 69.1,
+              "holds": true
+            },
+            {
+              "index": 1000,
+              "first_seconds": 130.0,
+              "second_seconds": 136.0,
+              "holds": true
+            },
+            {
+              "index": 1500,
+              "first_seconds": 183.0,
+              "second_seconds": 192.0,
+              "holds": true
+            },
+            {
+              "index": 2000,
+              "first_seconds": 181.0,
+              "second_seconds": 214.0,
+              "holds": true
+            },
+            {
+              "index": 2500,
+              "first_seconds": 272.0,
+              "second_seconds": 147.0,
+              "holds": false
+            }
+          ],
+          "holds_for_point_estimates": false
+        },
+        {
+          "claim": "table6_tarray_fastest_selected_conditions",
+          "paper_page": 20,
+          "comparisons": [
+            {
+              "index": 3,
+              "seconds": {
+                "io": 21.9,
+                "seq": 25.2,
+                "tvar": 23.6,
+                "tarray": 19.7
+              },
+              "holds": true
+            },
+            {
+              "index": 4,
+              "seconds": {
+                "io": 24.0,
+                "seq": 25.2,
+                "tvar": 25.2,
+                "tarray": 18.9
+              },
+              "holds": true
+            },
+            {
+              "index": 5,
+              "seconds": {
+                "io": 26.7,
+                "seq": 25.2,
+                "tvar": 31.0,
+                "tarray": 20.3
+              },
+              "holds": true
+            },
+            {
+              "index": 6,
+              "seconds": {
+                "io": 29.3,
+                "seq": 25.2,
+                "tvar": 35.2,
+                "tarray": 21.2
+              },
+              "holds": true
+            },
+            {
+              "index": 7,
+              "seconds": {
+                "io": 30.0,
+                "seq": 25.2,
+                "tvar": 38.7,
+                "tarray": 21.0
+              },
+              "holds": true
+            },
+            {
+              "index": 8,
+              "seconds": {
+                "io": 31.2,
+                "seq": 25.2,
+                "tvar": 49.0,
+                "tarray": 21.1
+              },
+              "holds": true
+            }
+          ],
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_tarray_fastest_selected_conditions",
+          "paper_page": 23,
+          "comparisons": [
+            {
+              "index": 500,
+              "seconds": {
+                "io": 67.9,
+                "seq": 70.1,
+                "tvar": 69.1,
+                "tarray": 25.7
+              },
+              "holds": true
+            },
+            {
+              "index": 1000,
+              "seconds": {
+                "io": 130.0,
+                "seq": 145.0,
+                "tvar": 136.0,
+                "tarray": 38.8
+              },
+              "holds": true
+            },
+            {
+              "index": 1500,
+              "seconds": {
+                "io": 183.0,
+                "seq": 220.0,
+                "tvar": 192.0,
+                "tarray": 40.1
+              },
+              "holds": true
+            },
+            {
+              "index": 2000,
+              "seconds": {
+                "io": 181.0,
+                "seq": 213.0,
+                "tvar": 214.0,
+                "tarray": 49.9
+              },
+              "holds": true
+            },
+            {
+              "index": 2500,
+              "seconds": {
+                "io": 272.0,
+                "seq": 193.0,
+                "tvar": 147.0,
+                "tarray": 55.2
+              },
+              "holds": true
+            }
+          ],
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table6_tarray_slowest_at_one",
+          "paper_page": 21,
+          "seconds": {
+            "io": 21.0,
+            "seq": 25.2,
+            "tvar": 21.1,
+            "tarray": 42.0
+          },
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_seq_2500_faster_than_2000",
+          "paper_page": 23,
+          "first_seconds": 193.0,
+          "second_seconds": 213.0,
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_tvar_2500_faster_than_2000",
+          "paper_page": 23,
+          "first_seconds": 147.0,
+          "second_seconds": 214.0,
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_seq_2000_faster_than_1500",
+          "paper_page": 23,
+          "first_seconds": 213.0,
+          "second_seconds": 220.0,
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_io_2000_faster_than_1500",
+          "paper_page": 23,
+          "first_seconds": 181.0,
+          "second_seconds": 183.0,
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table9_normal_slower_with_more_capabilities",
+          "paper_page": 23,
+          "seconds_at_16_32_64": [
+            11.9,
+            12.8,
+            14.6
+          ],
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table9_rebirthing_slower_with_more_capabilities",
+          "paper_page": 23,
+          "seconds_at_16_32_64": [
+            46.6,
+            76.4,
+            99.1
+          ],
+          "holds_for_point_estimates": true
+        }
+      ]
+    },
+    {
+      "measurement": "native_seconds",
+      "claims": [
+        {
+          "claim": "table6_io_optimum_at_three",
+          "paper_page": 21,
+          "condition_seconds": {
+            "1": 12.55283123219851,
+            "2": 9.450384039059278,
+            "3": 7.980371564114467,
+            "4": 7.037564406986346,
+            "5": 6.795120774162932,
+            "6": 6.643054266786201,
+            "7": 6.474133687792343,
+            "8": 6.672962877131065
+          },
+          "minimum_at": 7,
+          "holds_for_point_estimates": false
+        },
+        {
+          "claim": "table6_tvar_optimum_at_three",
+          "paper_page": 21,
+          "condition_seconds": {
+            "1": 12.901664626062846,
+            "2": 10.291267834836612,
+            "3": 9.358228342514485,
+            "4": 8.56399126544129,
+            "5": 8.335211276542392,
+            "6": 8.30511881848797,
+            "7": 8.35413923487067,
+            "8": 8.466237925481982
+          },
+          "minimum_at": 6,
+          "holds_for_point_estimates": false
+        },
+        {
+          "claim": "table6_lock_faster_than_tvar_every_condition",
+          "paper_page": 20,
+          "comparisons": [
+            {
+              "index": 1,
+              "first_seconds": 12.55283123219851,
+              "second_seconds": 12.901664626062846,
+              "holds": true
+            },
+            {
+              "index": 2,
+              "first_seconds": 9.450384039059278,
+              "second_seconds": 10.291267834836612,
+              "holds": true
+            },
+            {
+              "index": 3,
+              "first_seconds": 7.980371564114467,
+              "second_seconds": 9.358228342514485,
+              "holds": true
+            },
+            {
+              "index": 4,
+              "first_seconds": 7.037564406986346,
+              "second_seconds": 8.56399126544129,
+              "holds": true
+            },
+            {
+              "index": 5,
+              "first_seconds": 6.795120774162932,
+              "second_seconds": 8.335211276542392,
+              "holds": true
+            },
+            {
+              "index": 6,
+              "first_seconds": 6.643054266786201,
+              "second_seconds": 8.30511881848797,
+              "holds": true
+            },
+            {
+              "index": 7,
+              "first_seconds": 6.474133687792343,
+              "second_seconds": 8.35413923487067,
+              "holds": true
+            },
+            {
+              "index": 8,
+              "first_seconds": 6.672962877131065,
+              "second_seconds": 8.466237925481982,
+              "holds": true
+            }
+          ],
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_lock_faster_than_tvar_every_condition",
+          "paper_page": 23,
+          "comparisons": [
+            {
+              "index": 500,
+              "first_seconds": 20.800449033896438,
+              "second_seconds": 24.530530268768768,
+              "holds": true
+            },
+            {
+              "index": 1000,
+              "first_seconds": 39.1749759873608,
+              "second_seconds": 46.41187858798075,
+              "holds": true
+            },
+            {
+              "index": 1500,
+              "first_seconds": 54.501625459175536,
+              "second_seconds": 64.36816849815658,
+              "holds": true
+            },
+            {
+              "index": 2000,
+              "first_seconds": 54.78865822944789,
+              "second_seconds": 71.85492602365555,
+              "holds": true
+            },
+            {
+              "index": 2500,
+              "first_seconds": 79.45258311629296,
+              "second_seconds": 50.01224419963545,
+              "holds": false
+            }
+          ],
+          "holds_for_point_estimates": false
+        },
+        {
+          "claim": "table6_tarray_fastest_selected_conditions",
+          "paper_page": 20,
+          "comparisons": [
+            {
+              "index": 3,
+              "seconds": {
+                "io": 7.980371564114467,
+                "seq": 13.944841511687258,
+                "tvar": 9.358228342514485,
+                "tarray": 7.694176348997278
+              },
+              "holds": true
+            },
+            {
+              "index": 4,
+              "seconds": {
+                "io": 7.037564406986346,
+                "seq": 13.944841511687258,
+                "tvar": 8.56399126544129,
+                "tarray": 6.67830609460361
+              },
+              "holds": true
+            },
+            {
+              "index": 5,
+              "seconds": {
+                "io": 6.795120774162932,
+                "seq": 13.944841511687258,
+                "tvar": 8.335211276542392,
+                "tarray": 6.331887130835091
+              },
+              "holds": true
+            },
+            {
+              "index": 6,
+              "seconds": {
+                "io": 6.643054266786201,
+                "seq": 13.944841511687258,
+                "tvar": 8.30511881848797,
+                "tarray": 6.082613674667662
+              },
+              "holds": true
+            },
+            {
+              "index": 7,
+              "seconds": {
+                "io": 6.474133687792343,
+                "seq": 13.944841511687258,
+                "tvar": 8.35413923487067,
+                "tarray": 5.534712752816265
+              },
+              "holds": true
+            },
+            {
+              "index": 8,
+              "seconds": {
+                "io": 6.672962877131065,
+                "seq": 13.944841511687258,
+                "tvar": 8.466237925481982,
+                "tarray": 5.868810936971565
+              },
+              "holds": true
+            }
+          ],
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_tarray_fastest_selected_conditions",
+          "paper_page": 23,
+          "comparisons": [
+            {
+              "index": 500,
+              "seconds": {
+                "io": 20.800449033896438,
+                "seq": 41.621251775766716,
+                "tvar": 24.530530268768768,
+                "tarray": 8.910837586876003
+              },
+              "holds": true
+            },
+            {
+              "index": 1000,
+              "seconds": {
+                "io": 39.1749759873608,
+                "seq": 87.68120496044864,
+                "tvar": 46.41187858798075,
+                "tarray": 12.010647929389958
+              },
+              "holds": true
+            },
+            {
+              "index": 1500,
+              "seconds": {
+                "io": 54.501625459175536,
+                "seq": 129.2987044319976,
+                "tvar": 64.36816849815658,
+                "tarray": 12.941219380381511
+              },
+              "holds": true
+            },
+            {
+              "index": 2000,
+              "seconds": {
+                "io": 54.78865822944789,
+                "seq": 129.4504558166023,
+                "tvar": 71.85492602365555,
+                "tarray": 16.035396112431766
+              },
+              "holds": true
+            },
+            {
+              "index": 2500,
+              "seconds": {
+                "io": 79.45258311629296,
+                "seq": 118.69717248631635,
+                "tvar": 50.01224419963545,
+                "tarray": 18.354928749799722
+              },
+              "holds": true
+            }
+          ],
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table6_tarray_slowest_at_one",
+          "paper_page": 21,
+          "seconds": {
+            "io": 12.55283123219851,
+            "seq": 13.944841511687258,
+            "tvar": 12.901664626062846,
+            "tarray": 19.133392838481807
+          },
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_seq_2500_faster_than_2000",
+          "paper_page": 23,
+          "first_seconds": 118.69717248631635,
+          "second_seconds": 129.4504558166023,
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_tvar_2500_faster_than_2000",
+          "paper_page": 23,
+          "first_seconds": 50.01224419963545,
+          "second_seconds": 71.85492602365555,
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table8_seq_2000_faster_than_1500",
+          "paper_page": 23,
+          "first_seconds": 129.4504558166023,
+          "second_seconds": 129.2987044319976,
+          "holds_for_point_estimates": false
+        },
+        {
+          "claim": "table8_io_2000_faster_than_1500",
+          "paper_page": 23,
+          "first_seconds": 54.78865822944789,
+          "second_seconds": 54.501625459175536,
+          "holds_for_point_estimates": false
+        },
+        {
+          "claim": "table9_normal_slower_with_more_capabilities",
+          "paper_page": 23,
+          "seconds_at_16_32_64": [
+            15.991976190099917,
+            17.786442056499975,
+            18.782563132199808
+          ],
+          "holds_for_point_estimates": true
+        },
+        {
+          "claim": "table9_rebirthing_slower_with_more_capabilities",
+          "paper_page": 23,
+          "seconds_at_16_32_64": [
+            66.01045074549994,
+            89.96230430370002,
+            106.14166537000004
+          ],
+          "holds_for_point_estimates": true
+        }
+      ]
+    }
+  ],
+  "scope": "Post-hoc descriptive proposition audit. No significance, timing equivalence, causal explanation, or completed-study verdict. Paper prose and paper tables are separate targets. Native Tables 6/8 use different hardware; Table 9 matches instance class without historical scheduling evidence."
+}

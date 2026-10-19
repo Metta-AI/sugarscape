@@ -1,0 +1,80 @@
+{
+  "reference_sha256": "7041966cfe7bd056e64a49174535cc4ef793d4f5022abaf6f64e77b692b98704",
+  "source_files_verified": 61,
+  "runs": [
+    {
+      "variant": "seq",
+      "repetition": 1,
+      "observations": 1000,
+      "first": 500,
+      "last": 192,
+      "sha256": "f37f59ce772248c4c3630311a48a3a10bc9f3ec942009e6a087ba52ba1bac925",
+      "sequential_reference_parity": true
+    },
+    {
+      "variant": "seq",
+      "repetition": 2,
+      "observations": 1000,
+      "first": 500,
+      "last": 192,
+      "sha256": "f37f59ce772248c4c3630311a48a3a10bc9f3ec942009e6a087ba52ba1bac925",
+      "sequential_reference_parity": true
+    },
+    {
+      "variant": "io",
+      "repetition": 1,
+      "observations": 1000,
+      "first": 500,
+      "last": 186,
+      "sha256": "e2086304506cf1e96a5e4b24c18ca90a6cd9b11f6cb050b3cc2040f915d25451",
+      "sequential_reference_parity": false
+    },
+    {
+      "variant": "io",
+      "repetition": 2,
+      "observations": 1000,
+      "first": 500,
+      "last": 186,
+      "sha256": "1a1cb77f9541f094e97f0e8eca655241f3d8fb1607b556fd27e85184ff1b235c",
+      "sequential_reference_parity": false
+    },
+    {
+      "variant": "tvar",
+      "repetition": 1,
+      "observations": 1000,
+      "first": 500,
+      "last": 185,
+      "sha256": "152f243f33aec2bb055b116ba17d62ac1242d8c02e9edcd7d9fbdca2e6c262d5",
+      "sequential_reference_parity": false
+    },
+    {
+      "variant": "tvar",
+      "repetition": 2,
+      "observations": 1000,
+      "first": 500,
+      "last": 186,
+      "sha256": "0b96a22cc377e8dfa84897d650bf0d55a5cc48040f8c80f648b124d7a65205fb",
+      "sequential_reference_parity": false
+    },
+    {
+      "variant": "tarray",
+      "repetition": 1,
+      "observations": 1000,
+      "first": 500,
+      "last": 187,
+      "sha256": "9e872850b80b4b22cf4cc59668d33e430e2472e93f954fbcd68eb70d7d819d36",
+      "sequential_reference_parity": false
+    },
+    {
+      "variant": "tarray",
+      "repetition": 2,
+      "observations": 1000,
+      "first": 500,
+      "last": 186,
+      "sha256": "bb09afe2b394b3a71ba5b942b1616d8e57ef0cbe008d5b6a5730be241a08f9fa",
+      "sequential_reference_parity": false
+    }
+  ],
+  "observations": 8000,
+  "scope": "Eight full1000-step runs at one capability, seed42,500agents,no rebirth. Local Linux amd64 emulation qualification only, not native-hardware timing or full concurrent-dynamics equivalence. Sequential output must equal the published unmodified-exporter reference; concurrent differences are retained without an equivalence verdict."
+}

@@ -1,0 +1,17 @@
+{
+  "variant": "tarray",
+  "benchmark": "sugarscape-tarray-normal:1/500",
+  "command": [
+    "/root/sugarscape/thaler-build-001/source/criterion/sugarscape-tarray/.stack-work/install/x86_64-linux-tinfo6/e2bc1dd9db2af146999a044500ac583ca461a99d9ab5180dac2e1426369f76ee/8.4.3/bin/sugarscape-tarray",
+    "--iters",
+    "1",
+    "--match",
+    "prefix",
+    "sugarscape-tarray-normal:1/500",
+    "+RTS",
+    "-N1",
+    "-RTS"
+  ],
+  "binary_sha256": "9d84c88dab8fa84c5ade0d8e63d3fe9eb2b11e5a8753c441b1e6e218ad1bfbe3",
+  "compiler": "8.4.3"
+}

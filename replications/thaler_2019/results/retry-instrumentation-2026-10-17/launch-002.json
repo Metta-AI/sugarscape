@@ -1,0 +1,29 @@
+{
+  "command": [
+    "docker",
+    "run",
+    "-d",
+    "--name",
+    "relh-sugarscape-thaler-retries-20261017-v2",
+    "--platform",
+    "linux/amd64",
+    "--cpus",
+    "1",
+    "--memory",
+    "2g",
+    "--pids-limit",
+    "256",
+    "-v",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home:/root",
+    "relh-sugarscape-thaler-deps:20261017-001",
+    "timeout",
+    "--kill-after=30",
+    "1830",
+    "python3",
+    "-u",
+    "/root/sugarscape/thaler-retries-002/run_recovered.py"
+  ],
+  "stdout": "22d177ff582262e45e5224265e74c13feab2b93b24a4983c46ed8b815a766dd2\n",
+  "stderr": "",
+  "exit_code": 0
+}
