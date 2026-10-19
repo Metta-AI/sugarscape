@@ -5,6 +5,8 @@ Scope: Sugarscape case study only; conclusions across all 41 models are outside 
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
 The [seventh parameter setting](results/parameter-seventh-cohort-complete-2026-10-19) passes trajectory, archive-readback, and independent R audits. Seven of ten settings now cover 896 runs and 448,896 observations. Original timeouts and bounded recoveries remain explicit; the complete 30-test analysis is pending.
 
+The [eighth parameter setting](results/parameter-eighth-cohort-complete-2026-10-19) passes trajectory, archive-readback, and independent R audits. Eight of ten settings now cover 1,024 runs and 513,024 observations. The last two settings and combined analysis remain required.
+
 **Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.
