@@ -49,6 +49,8 @@ The [first bounded dispatcher batch](results/first-batch-complete-2026-10-19) co
 
 The [remaining Rule M/Rule M cohort](results/rule-m-cohort-launch-2026-10-19) is now running: 48 disjoint inputs target the complete fifty-repeat sample alongside the two audited inputs.
 
+The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specified and rejects incomplete samples before producing means. Its successful fifty-run path and independent numerical crosscheck remain pending.
+
 ## Remaining work
 
 Qualify the remaining method pairings and estimate their runtime before the full 800-run ensemble. The measured Rule M/EC pairing projects to about 49 CPU-hours for 800 runs; this is not a measured full-sweep estimate.
