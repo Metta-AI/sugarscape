@@ -1,10 +1,10 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
-[The local cohort stopped at its disk-space guard](results/local-disk-guard-recovery-2026-10-19) with 42/50 seeds complete. Eight unfinished inputs are now recovering remotely. [Archive readback](results/local42-archive-readback-2026-10-19) verifies all 420 files from the 42 completed local seeds. Independent coverage is 43 released-code plus two paper-table inputs, totaling 900,045 observations.
+[The local cohort stopped at its disk-space guard](results/local-disk-guard-recovery-2026-10-19) with 42/50 seeds complete. Eight unfinished inputs are now recovering remotely. [Archive readback](results/local42-archive-readback-2026-10-19) verifies all 420 files from the 42 completed local seeds. Independent coverage is now 92 released-code plus two paper-table inputs, totaling 1,880,094 observations. [The complete 50-seed Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) passes independent R verification and has a descriptive comparison against all seven published figures.
 
 [Both cloud-host qualification cases now pass](results/existing-host-qualified-ensemble-launch-2026-10-19): 640,032 values and both complete trajectory byte sequences match the local references. The 749 reserved released-code inputs are running with eight workers under an 11.5-hour simulation bound and a $9.12 execution/export/idle ceiling. Launch adds no completed-study credit.
 
-[Both paper-table pilot inputs](results/second-paper-table-input-2026-10-19) pass all 20,001 observation checks and fresh archive readback. These two paper-table inputs are included in the current audited total above; no pairing is complete.
+[Both paper-table pilot inputs](results/second-paper-table-input-2026-10-19) pass all 20,001 observation checks and fresh archive readback. These two paper-table inputs are included in the current audited total above; Rule M/EC is complete; the other pairings remain incomplete.
 
 [The earlier released-code prefix](results/rule-m-prefix-2026-10-19) retains its 15-input audit snapshot; the current totals above supersede that snapshot.
 
@@ -84,4 +84,4 @@ Paper seeds and between-run uncertainty remain unavailable.
 The command records hashes of all consumed summary, mean, and digitization files.
 Run `verify_cohort.R` on the same summary before interpreting the comparison.
 Current validation covers lint, CLI parsing, and the pinned digitization's seven 572-record pairing selections.
-A successful complete-cohort execution remains pending recovery of the final eight seeds; no numerical comparison is claimed yet.
+The [complete Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) now passes the full summary, independent R, and curve-comparison workflows. Rule M/Rule M remains incomplete pending recovery.
