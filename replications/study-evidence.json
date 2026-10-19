@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T20:29:17.773367+00:00",
+  "as_of": "2026-10-19T20:32:37.246421+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -277,28 +277,28 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "a286da45f377a11e47886af4720f81ddbc722b6d",
+      "checked_commit": "464e02f860be1f3c21d648060823b256dad9161d",
       "status": "running",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "0cdb5eb77e5f9ec560e395d2ff605b1e5627eb8b79be723be4f83624c572be57",
-      "json_evidence_files": 391,
-      "gzip_json_evidence_files": 19,
-      "checked_at": "2026-10-19T20:20:31.365688+00:00",
+      "readme_sha256": "7c56e50a52c870c7cfef5f86e9594da9cca189a267ff199c9a7808182ffa3771",
+      "json_evidence_files": 404,
+      "gzip_json_evidence_files": 20,
+      "checked_at": "2026-10-19T20:32:36.888629+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "652inputs13040652observations fully audited:600released-code52paper-table. Twelve released50-seed cohorts plus first paper-tableRuleM cohort complete.49new paper inputs980049observations add without duplicate repeat00. All50paired RuleM fulltrajectories byte-identical across interpretations; independentR means/SD/endpoints/bootstrap checks pass.9/9readable endpoints overlap paper,5unresolved; descriptive only. Fresh storage readback492members,manifestb80eab98597d1e7cf9eef858b338953b2986ba2e60e6936c3e521a6a8ba75d4e links prior603. Remaining200released748paper inputs uncredited. Both bounded producers live. Released localcollector now paginated PID7610,original23:22:35UTCdeadline preserved. Historical learning parameters/seeds and fullpaper comparison unresolved."
+      "remaining_scope": "702inputs14040702observations fully audited:650released52paper-table. Thirteen released50-seed cohorts and onepaper-table cohort complete. SARSA/RuleM adds1000050obs,independentR320016means/SD14endpoints20000bootstrap checks pass;14/14endpointmean ranges overlap paper,descriptive not equivalence. Freshstorage readback502members,manifest8cd5a8c16933340b7e82a15224d9eb18def13efa036cbc6d4c9368a7702db6cc links prior652. Remaining150released748paper inputs uncredited. Both original bounded producers continue. Historical parameters/seeds and fullfigure synthesis unresolved."
     },
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "c33786a9ab5f4e258e43a6e215fbb6f49e61ca58",
+      "checked_commit": "82778b036c7e84836cb47b447b7e0be95ddfb4ec",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "e0a031deff4e0180e32f02d4b1a7cff53a17b37cc662af0b671dfc4eba5f7e41",
-      "json_evidence_files": 305,
-      "gzip_json_evidence_files": 18,
-      "checked_at": "2026-10-19T20:15:51.724099+00:00",
+      "readme_sha256": "fda5f8a225a96509dcdfc9ca723c3d7d092805865d20e8d244d801363e43051c",
+      "json_evidence_files": 342,
+      "gzip_json_evidence_files": 19,
+      "checked_at": "2026-10-19T20:32:37.246396+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "337unique original inputs/1429194observations audited:157baseline180sweep. Latest25baseline+25TableIV inputs add187267obs with nooverlap. Former1800stimeout completes2093.8178s under3600cap,matching prior fullhash and all4630527preserved partial bytes;5001observations,finalpopulation1352. TableIV177/500:3extinct174above250; execution-ordered prefix not representative. Remaining243baseline9920sweep inputs. Original bounded producers continue unchanged. Historical death aggregation and complete tables/figures remain unresolved; no completed-paper credit. Whole-table analyzer partitions10100sweep inputs/23rows; real337-input CLI report repeats exactly, duplicates rejected, incomplete-row percentages suppressed. Current180sweep inputs completezero rows. Complete-row reporting awaits real fullrow validation; no new execution credit."
+      "remaining_scope": "387uniqueinputs1616323observations audited:182baseline205sweep. Latest25baseline+25TableIV add187129obs without overlap. All100selfishness0.36 and100selfishness0.37 seeds now audited. TableIVbin202/500:3extinct199above250;orderedprefix not representative. Whole-table analyzer reportszero complete rows and suppresses incomplete percentages. Remaining218baseline9895sweep inputs. Former runtime-bound failure recovered exactly; original bounds unchanged. Historical death aggregation and fulltables/figures unresolved; no papercredit."
     }
   ],
   "study_prs": 22,
