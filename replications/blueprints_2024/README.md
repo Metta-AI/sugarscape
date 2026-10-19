@@ -1113,3 +1113,11 @@ No partial-condition aggregate or new paper-completion credit is claimed.
 Producer and local audits agree exactly, and all 435 prior inventory records remain unchanged.
 Coverage reaches **453/500** for this condition and **460/100,000** supplementary inputs overall.
 The remaining 47 seeds are required before condition aggregation; paper completion remains unchanged.
+
+## Population-median bounds before the final 47 seeds
+
+[Full native-trajectory analysis](results/selfishness037-median-bounds-2026-10-19) covers all 453 audited seeds and 2,217,626 observations.
+Allowing every missing run any mean population in [0,2500] bounds the final median to 1126.08–1143.14 when averaging observed rows.
+Excluding the initial observation gives 1126.25–1143.32; zero-extending the ten extinct runs leaves these bounds unchanged.
+All four bounds contain the extracted Figure 10 ink interval, 1132.78–1143.03, without assuming random completion order.
+This establishes compatibility only. The cohort, historical averaging conventions, and paper verdict remain incomplete.
