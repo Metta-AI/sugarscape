@@ -1,0 +1,6 @@
+{"stored": "need-for-greed-baseline-recovery-collector-recovery-20261019-1858/checkpoint-0001.tar.gz", "sha256": "5f3c206a07f3ca5a11db4fe274d1d34dd783a462b72e7ad8cfc71dfc7c014d17", "bytes": 5178003}
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/storage-handoff-20261017-001/collect_storage_api_bounded.py", line 32, in <module>
+    assert not output['truncated']
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
