@@ -341,3 +341,5 @@ Brearcliffe and Crooks’ [Creating Intelligent Agents](https://doi.org/10.1007/
 The Brearcliffe study’s [PR #23](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23) retains recorder qualifications, full-cohort comparisons, failed checks, and durable evidence receipts. It receives no completed-study credit.
 
 The [market algorithm candidate audit](source-audits/market-genetic-qualification-2026-10-19/README.md) pins the paper-linked author implementation and eleven historical drivers. Released repetitions and horizons differ from the paper; license text and the experimental snapshot remain unresolved. No runs or completion credit are added.
+
+Need for Greed now has six complete endpoint controls: all three baseline/sweep pairs are byte-identical at the preselected seed, preserving both timeout prefixes. The frozen-input reconciliation raises coverage to 170 inputs and 835,607 observations, without double counting. Full ensembles and measurement discrepancies remain unresolved; four completed studies remain.
