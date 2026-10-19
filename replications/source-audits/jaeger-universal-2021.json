@@ -3,11 +3,11 @@
   "author": "Georg Jäger",
   "year": 2021,
   "doi": "10.1080/13873954.2021.1889609",
-  "checked_at": "2026-10-19T10:39:24.986274+00:00",
+  "checked_at": "2026-10-19T10:45:39.764960+00:00",
   "paper_url": "https://www.tandfonline.com/doi/full/10.1080/13873954.2021.1889609",
   "author_url": "https://georgjaeger.github.io/",
   "status": "source-lead-only; no new completed study or paper verdict",
-  "paper_access": "Publisher PDF request returned HTTP 403. OpenAlex points to that publisher PDF; a full manuscript was not recovered in this search.",
+  "paper_access": "Publisher PDF request and ResearchGate download link failed. Author-uploaded ResearchGate full-text extraction now supplies methods and results sections; exact PDF layout and numerical figures remain unrecovered.",
   "candidate": {
     "repository": "https://github.com/piratevector/Mesa_NeuralAgents",
     "commit": "19c60fdb432344c9467b96e79fe30e75493344f1",
@@ -44,7 +44,7 @@
     "georgjaeger.github.io/Capreprint.pdf concerns elementary cellular automata, not this paper.",
     "facells/learnipy contains Sugarscape and a separate MLPClassifier utility, not an identified implementation of this paper."
   ],
-  "next_action": "Recover the full manuscript and author implementation or sufficiently specified protocol before reconstructing the model and evaluating paper claims.",
+  "next_action": "Seek author source or supplementary protocol; recover figure data. Any reconstruction must predeclare unresolved choices and sensitivity analyses across all three competition regimes and iterative learning. Do not count the third-party notebook or source audit as a replication.",
   "evidence_directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/jaeger-universal-2021-source-001",
   "evidence_sha256": {
     "author-capreprint.pdf": "44c157c0973d0a249054434eaced76b0b1ec2a35c25d8d7d82d5b25fc3a3d5cf",
@@ -77,6 +77,70 @@
     "mesa-neuralagents-tree.json": "5687aa2d3e2a2181b4b6be0b43debb292fbc969592f042c803d575f118b944c0",
     "openalex.json": "11532577722ba510de48036be151859128c7208cb360381c0f0a18f522a34e27",
     "publisher-download-receipt.json": "c31fea6e2c48f9e10d9ea5dbc9c9127baf4eb7c6fb402c639743cc4965898ab5",
-    "publisher-download.bin": "2d2a14232d91bc8b949e14225843281f45416088ce92eca8aa789763bfbd325e"
-  }
+    "publisher-download.bin": "2d2a14232d91bc8b949e14225843281f45416088ce92eca8aa789763bfbd325e",
+    "researchgate-web-extract-002.json": "109810233d80d878d979b2503923705a63d48cd857f99ff2af18fd13fedc1b58",
+    "researchgate-web-extract-001.json": "68e777e1971302406f7781c5a74ad4c865b6dc1ca2541163621c0a065f0123b6"
+  },
+  "full_text_url": "https://www.researchgate.net/publication/350008423_Using_Neural_Networks_for_a_Universal_Framework_for_Agent-based_Models",
+  "full_text_attribution": "ResearchGate identifies Georg Jäger as uploader on March 12, 2021; article declares CC BY 4.0.",
+  "recovered_protocol": {
+    "source_locations": "Sections2.1–3.3, printed pages164–174; retained web extracts001/002.",
+    "agents": 75,
+    "grid": [
+      21,
+      21
+    ],
+    "boundary": "periodic",
+    "sugar": "15 - sqrt((10-x)^2 + (10-y)^2)",
+    "actions": [
+      "stay",
+      "north",
+      "south",
+      "east",
+      "west"
+    ],
+    "sensors": "Sugar and occupancy of current patch and four adjacent patches.",
+    "score": "Sugar collected in the current turn, not accumulated wealth.",
+    "experience_steps": 5000,
+    "training": "scikit-learn multilayer perceptron; held-out observations used for validation.",
+    "application": "Reset agents, evaluate each action using P(positive)-P(negative), select maximum with random tie breaking.",
+    "baseline_competition_factor": 0.8,
+    "competition_description": "Repeated harvesting at a patch in the same turn reduces collection by the competition factor.",
+    "no_competition_factor": 1.0,
+    "threshold_variant": "First two agents sharing a patch receive full sugar; competition starts with a third agent.",
+    "advanced_experience": "Execute the network-selected action; also evaluate a random different action counterfactually, storing its experience without executing it. Retrain iteratively."
+  },
+  "claims_to_evaluate": [
+    {
+      "figure": 3,
+      "claim": "After20 application turns, agents cluster centrally without overlapping patches; last-turn sugar histogram is described as Pareto."
+    },
+    {
+      "figure": 4,
+      "claim": "Random actions instead produce dispersed positions and an approximately Gaussian sugar histogram."
+    },
+    {
+      "figure": 5,
+      "claim": "Without competition all agents reach the sugar maximum; held-out classification accuracy reaches100%."
+    },
+    {
+      "figure": 7,
+      "claim": "For competition beginning at three agents, more random experience does not fix application performance despite high training performance."
+    },
+    {
+      "figures": [
+        8,
+        9
+      ],
+      "claim": "Iterative advanced experience reaches a Nash equilibrium and average-score convergence after six iterations."
+    }
+  ],
+  "missing_fidelity_requirements": [
+    "Author source, library versions, hidden-layer architecture, activation, solver, learning parameters and feature scaling.",
+    "Training/validation split, random seeds, repeated-run counts and exact Figure7 experience-size grid.",
+    "Within-turn scheduling, pre/post-action utility evaluation and whether penalties apply once or compound for subsequent harvesters.",
+    "Interpretation of the current agent in occupancy features, neutral-label tolerance and precise reset procedure.",
+    "Advanced-experience duration, replay-data retention, model reinitialization and convergence tolerance.",
+    "Original numerical figure data and distribution-fit procedure; visual histogram labels alone are not statistical goodness-of-fit evidence."
+  ]
 }
