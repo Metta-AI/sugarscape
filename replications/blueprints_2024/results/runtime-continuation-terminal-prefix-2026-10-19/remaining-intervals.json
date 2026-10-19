@@ -1,0 +1,28 @@
+{
+  "groups": [
+    {
+      "model": "rawSugarscape",
+      "steps": 50000,
+      "start": 86,
+      "stop": 100,
+      "first_unfinished_entry": "50000-rawSugarscape8289106131243214398.config",
+      "completed_interval": [
+        66,
+        86
+      ]
+    },
+    {
+      "model": "altruisticHalfLookaheadBinary",
+      "steps": 50000,
+      "start": 22,
+      "stop": 100,
+      "first_unfinished_entry": "50000-altruisticHalfLookaheadBinary3331735877162924787.config",
+      "completed_interval": [
+        6,
+        22
+      ]
+    }
+  ],
+  "launched": false,
+  "rule": "Preserve original seed ordering and full50000-step horizon; interrupted inputs are not completed."
+}

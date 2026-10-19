@@ -1075,3 +1075,7 @@ Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishn
 ### Fourth runtime continuation audit
 
 [Three further original runtime inputs](results/runtime-continuation-fourth-prefix-2026-10-19) add 100,138 observations after eight overlapping trajectories match exactly. Coverage reaches 884/1,200 deposited inputs and 3,101,299 observations. The complete exported archive and all member hashes verify. The paper’s 500-seed timing protocol remains unresolved; no completion credit is added.
+
+### Runtime continuation reaches its bound
+
+[The terminal archive audit](results/runtime-continuation-terminal-prefix-2026-10-19) adds 25 original inputs and 253,312 observations. Coverage reaches 909/1,200 deposited inputs and 3,354,611 observations. Both groups reach their six-hour limits; interrupted inputs receive no credit. Their logs and exact remaining intervals are retained. The different 500-seed paper protocol remains unresolved.
