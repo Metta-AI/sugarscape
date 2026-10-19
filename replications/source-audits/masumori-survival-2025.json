@@ -1,0 +1,120 @@
+{
+  "checked_at": "2026-10-19T07:11:58.778451+00:00",
+  "paper": {
+    "title": "Do Large Language Model Agents Exhibit a Survival Instinct? An Empirical Study in a Sugarscape-Style Simulation",
+    "authors": [
+      "Atsushi Masumori",
+      "Takashi Ikegami"
+    ],
+    "year": 2025,
+    "url": "https://arxiv.org/html/2508.12920v1",
+    "status": "Preprint; newly qualified source lead, no replication result"
+  },
+  "retrieved_sources": [
+    {
+      "file": "paper.html",
+      "url": "https://arxiv.org/html/2508.12920v1",
+      "bytes": 268597,
+      "sha256": "d205ed86c5778661ba9d3cedc520800f5fa7c4e7a7cc9fdeb6b24b314838e0c2"
+    },
+    {
+      "file": "yukincom-README.md",
+      "url": "https://raw.githubusercontent.com/yukincom/llm-SugarScape/e81e4d291e0de78662fc06a222710a430b976eb9/README.md",
+      "bytes": 4548,
+      "sha256": "0bd14e8dc45922ff9e69e54ab8acb08ff79bab94fe2d3623071546a54b0dc013"
+    },
+    {
+      "file": "yukincom-main.py",
+      "url": "https://raw.githubusercontent.com/yukincom/llm-SugarScape/e81e4d291e0de78662fc06a222710a430b976eb9/main.py",
+      "bytes": 61138,
+      "sha256": "38e9d2eefd0c3da43e05ca5fcfcdd61f35becda136b4e8a535367805ecebefb7"
+    },
+    {
+      "file": "yukincom-paper_prompts.py",
+      "url": "https://raw.githubusercontent.com/yukincom/llm-SugarScape/e81e4d291e0de78662fc06a222710a430b976eb9/paper_prompts.py",
+      "bytes": 17354,
+      "sha256": "db83bde6e1a6d405c865e771218036d93e97b773515bcf89069c170f25d92d1e"
+    },
+    {
+      "file": "yukincom-model_identity.py",
+      "url": "https://raw.githubusercontent.com/yukincom/llm-SugarScape/e81e4d291e0de78662fc06a222710a430b976eb9/model_identity.py",
+      "bytes": 9815,
+      "sha256": "a07ca2dc7833a19ef98d5f0de807a9e93d3429315e2e0bf599be1dd5dd5a4320"
+    },
+    {
+      "file": "yukincom-llm_api.py",
+      "url": "https://raw.githubusercontent.com/yukincom/llm-SugarScape/e81e4d291e0de78662fc06a222710a430b976eb9/llm_api.py",
+      "bytes": 3981,
+      "sha256": "f8132f6c3e710bced3439a0325d3e4cb65bbe69cdf819b8fda5e7dd51cea7ab1"
+    },
+    {
+      "file": "Powellga-README.md",
+      "url": "https://raw.githubusercontent.com/Powellga/AI-Agent-Survival-Simulation/b6b195fe8ce14a0546ced137e61b2cfa1165ebf3/README.md",
+      "bytes": 4352,
+      "sha256": "7a2587d59ac4c02a40aaf63f8300b4473b0e7b23a255a4e357d21a57b2ea4a2e"
+    },
+    {
+      "file": "Powellga-index.html",
+      "url": "https://raw.githubusercontent.com/Powellga/AI-Agent-Survival-Simulation/b6b195fe8ce14a0546ced137e61b2cfa1165ebf3/index.html",
+      "bytes": 63045,
+      "sha256": "2acb88c8d621b420b5216a8fd57382e47e2670ed1480e29528faa873db3b9b04"
+    }
+  ],
+  "implementation_findings": [
+    {
+      "repository": "https://github.com/Powellga/AI-Agent-Survival-Simulation",
+      "commit": "b6b195fe8ce14a0546ced137e61b2cfa1165ebf3",
+      "classification": "Third-party rule-based demonstration",
+      "evidence": "index.html setPersonality assigns aggressive attackThreshold0.7 and cooperative0.02; choose-action logic samples Math.random against these thresholds. This does not reproduce the paper LLM experiment.",
+      "source_lines": [
+        660,
+        663,
+        669,
+        750
+      ]
+    },
+    {
+      "repository": "https://github.com/yukincom/llm-SugarScape",
+      "commit": "e81e4d291e0de78662fc06a222710a430b976eb9",
+      "classification": "Third-party application with revised scientific rules",
+      "evidence": "README explicitly disclaims strict reproduction. paper_prompts.py preserves the paper as a reference while active protocol local-neutral-rules-v3 makes actions exclusive and limits attack energy transfer to25 percent capped at12, with additional cost4.",
+      "source_files": [
+        "README.md",
+        "paper_prompts.py",
+        "main.py",
+        "llm_api.py"
+      ]
+    }
+  ],
+  "paper_protocol_recovery": {
+    "grid": [
+      30,
+      30
+    ],
+    "reported_view_shape": [
+      5,
+      5
+    ],
+    "message_shape": [
+      7,
+      7
+    ],
+    "temperature": 0.7,
+    "max_tokens": 10000,
+    "top_p": 1.0,
+    "memory_steps": 3,
+    "reported_reproduction_cost": 150,
+    "example_population_cap": 60,
+    "full_paper_scope": "Foraging input formats, movement, reproduction, social competition, scarcity and lethal task-compliance experiments across multiple proprietary LLMs."
+  },
+  "fidelity_questions": [
+    "Original author source, raw trajectories, environment seeds and complete per-condition repeat counts remain unrecovered.",
+    "Main text describes death at zero, while Appendix A1 system prompt states below zero.",
+    "Appendix user prompt includes relative offsets of magnitude3 despite the stated5x5 perception window.",
+    "Historical model identifiers and availability require verification before any inference; third-party or modern models cannot silently substitute.",
+    "Third-party demonstrations do not establish the original scheduler, resource regeneration, action parsing, or initial conditions."
+  ],
+  "next_required_evidence": "Recover author code or a complete executable protocol and raw runs; resolve model/version and mechanics discrepancies before budgeting scientific inference.",
+  "execution": "Read-only source audit; no repository code or model inference executed.",
+  "completed_study": false
+}
