@@ -1,0 +1,18 @@
+{
+  "node_name": "relh-sugarscape-brearcliffe-cpu8-20261019-v1",
+  "chip": "cpu-8",
+  "image": "eclipse-temurin:11-jdk-jammy",
+  "steps": 20000,
+  "cases": 2,
+  "sequential_workers": 1,
+  "java_heap": "1g",
+  "timeout_per_case_seconds": 1800,
+  "overall_qualification_seconds": 3600,
+  "outer_boot_seconds": 6900,
+  "platform_max_duration_minutes": 120,
+  "maximum_rate_usd_per_minute": 0.012,
+  "maximum_assumed_idle_minutes": 15,
+  "maximum_compute_and_idle_usd": 1.62,
+  "maximum_result_bytes": 52428800,
+  "scope": "Cross-host full-trajectory qualification only. No ensemble scheduling until qualification and budget checks pass."
+}

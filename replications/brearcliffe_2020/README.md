@@ -38,10 +38,12 @@ The external bounded launcher and exact command are retained in the launch recor
 
 The [all-pairing qualification](results/all-pairings-qualified-2026-10-19) now passes: all 256,256 values match native BehaviorSpace through 1,000 ticks for all sixteen pairings. The [first frozen Rule M/EC input](results/first-ensemble-input-complete-2026-10-19) completes and passes fresh archive audit; complete ensembles remain outstanding.
 
-The [full learning-method comparison](results/rl-full-qualification-launch-2026-10-19) now runs Q-Learning versus SARSA for 20,000 ticks.
+The [full learning-method comparison](results/rl-full-qualified-2026-10-19) passes: all 320,016 values match native BehaviorSpace through 20,000 ticks for Q-Learning versus SARSA.
 The [frozen ensemble preparation](results/ensemble-preparation-2026-10-19) defines 800 runs for each parameter interpretation, with matched prospective seeds. Both preparations reproduce identical bytes; one released-code input has completed and passed independent audit.
 
 The [Figure 3 digitization](results/wealth-digitization-2026-10-19) recovers 30 visible endpoint intervals and leaves two occluded endpoints unresolved. Four last-row panel labels were corrected after checking plot titles; rejected labels remain documented.
+
+A [bounded CPU host trial](results/cloud-qualification-launch-2026-10-19) is queued to verify two complete trajectories before scaling the frozen ensembles.
 
 ## Remaining work
 
