@@ -1328,3 +1328,5 @@ Only those inputs were recovered; the original timeout and partial seed54 remain
 All128 runs and64,128 observations pass audit; fresh extraction repeats the audit/comparison exactly and independent R checks pass.
 Maximum difference is0.15625, with unadjusted joint permutation p0.9489.
 Six of ten settings are audited, totaling768 runs and384,768 observations; four settings and the combined analysis remain.
+
+[Full GAM runtime qualification](results/gam-full-runtime-qualification-launch-2026-10-19) is running against all five saved folds, including the original prediction-interval procedure. Exact prediction, interval-bound, and random-state checks gate any historical-runtime extension. No new result or completion credit is claimed.
