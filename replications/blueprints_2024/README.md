@@ -1091,3 +1091,10 @@ Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishn
 ### Full-condition aggregation requires every original seed
 
 Use `summarize_supplement_condition.py ARCHIVE INVENTORY CONDITION NEW_OUTPUT`. [The real incomplete-data check](results/supplement-complete-condition-gate-2026-10-19) rejects 403/500 inputs at condition 0.37 and writes no aggregate. The complete-data path remains unvalidated until the cohort finishes. Endpoint counts alone will not establish agreement with a published figure.
+
+## Selfishness Figure 10 target
+
+[The vector-PDF extraction](results/selfishness-figure10-target-2026-10-19) records median-curve ink bounds at 99 interior selfishness factors.
+At 0.37, the printed line covers population 1132.78–1143.03; this is graphical precision, not a statistical interval.
+The paper compares medians of per-run mean population across 500 seeds, not endpoint counts.
+The original averaging and quartile conventions remain unresolved; no additional replication result is claimed.
