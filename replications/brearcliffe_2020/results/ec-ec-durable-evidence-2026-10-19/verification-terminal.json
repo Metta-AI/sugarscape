@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\n  \"exit_code\": 0,\n  \"stderr\": \"\",\n  \"stdout\": \"{\\\"manifest_sha256\\\": \\\"6c8ab28f7c0efe4002f97b5a57fd03402ce1dff7017570337bc6a718d18120bd\\\", \\\"archives\\\": [{\\\"archive\\\": \\\"pair05-50.tar.gz\\\", \\\"bytes\\\": 28710641, \\\"sha256\\\": \\\"ba2627478b9792e42f6210714617c10f511be8c2dbca167ec243b6a867a06ed6\\\", \\\"members\\\": 502, \\\"inputs\\\": 50}], \\\"archive_bytes\\\": 28710641, \\\"members_verified\\\": 502, \\\"unique_audited_inputs_preserved\\\": 50, \\\"source_audit_sha256\\\": \\\"af9e5c14a44cb175b686661759aa3487cbb9368dd8eb6f3c474c206d5e1ba4d2\\\", \\\"scope\\\": \\\"Fresh storage import and archive-member verification. Existing trajectory audits are preserved, not rerun; no new simulation or coverage credit.\\\"}\\n\",\n  \"timing_ms\": {\n    \"exec\": 622\n  },\n  \"truncated\": false\n}\n",
+  "stderr": ""
+}

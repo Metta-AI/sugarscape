@@ -24,7 +24,7 @@ Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical
 
 [A full native paper-table Rule M/Rule M control](results/paper-table-rule-m-control-2026-10-19) matches its released-code counterpart byte-for-byte across 20,001 observations. This supports the source audit’s predicted parameter insensitivity for that input; unexecuted inputs receive no credit.
 
-[Durable evidence for all 253 currently audited inputs](results/durable-evidence-2026-10-19) is uploaded and independently read back from storage: seven archives and 2,569 files match their hashes. This preserves existing results without adding coverage.
+[Durable evidence for the first 253 audited inputs](results/durable-evidence-2026-10-19) is uploaded and independently read back from storage: seven archives and 2,569 files match their hashes. This preserves existing results without adding coverage.
 
 Study status: native recorder corrected and qualified across 20,000 ticks. No reproduced-paper result yet.
 
@@ -112,3 +112,5 @@ The command records hashes of all consumed summary, mean, and digitization files
 Run `verify_cohort.R` on the same summary before interpreting the comparison.
 Current validation covers two real-PDF extractions, pre-change endpoint execution, four complete-cohort comparisons, and exact preservation of 4,576 vision/metabolism comparison records. Use `results/horizontal-calibration-correction-2026-10-19/metric-curves.json.gz` with the current comparator.
 The [complete Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) now passes the full summary, independent R, and curve-comparison workflows. The Rule M/Rule M cohort now also passes those complete workflows.
+
+[The additional 50 EC/EC inputs are durably preserved](results/ec-ec-durable-evidence-2026-10-19): a fresh storage import verifies 502 file hashes. Both disjoint backups together cover all 303 audited inputs.
