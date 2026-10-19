@@ -2,7 +2,8 @@
 
 The preselected selfishness-1 baseline reached its 600-second limit and exited 124.
 Its incomplete trajectory and command receipt are retained here, including exact compressed-byte readback.
-The paired original sweep remains running at this launch snapshot.
+The paired original sweep also exited 124 at 600 seconds; its failed bytes and the six-input terminal receipt are retained.
+The four zero/midpoint inputs exited successfully. Both level-1 inputs are selected for sequential recovery.
 
 A bounded local coordinator waits at most 600 seconds for the original six-input batch to become terminal.
 It then reruns only selfishness-1 inputs whose original exit code is 124, in fresh directories.

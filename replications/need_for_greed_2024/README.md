@@ -1,6 +1,6 @@
 # The Need for Greed in Artificial Decisionmakers
 
-[The selfishness-1 endpoint baseline reached its time limit](results/endpoint-recovery-launch-2026-10-19). A bounded recovery waits for the original batch to finish, then reruns only timed-out inputs with unchanged configurations. Failed bytes are preserved; coverage and study status are unchanged.
+[The selfishness-1 endpoint baseline reached its time limit](results/endpoint-recovery-launch-2026-10-19). Both level-1 controls timed out; the original batch is terminal. Bounded sequential recovery reruns only those two inputs with unchanged configurations. Failed bytes are preserved; coverage and study status are unchanged.
 
 Status: partial native reproduction. The shared-input inventory has 164 audited inputs and 815,329 observations; separate native controls appear below. Four reported medians agree graphically at selfishness 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
 
