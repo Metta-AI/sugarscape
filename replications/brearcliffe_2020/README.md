@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The final released-batch successes are audited](results/released-terminal-audited-2026-10-19), bringing coverage to 1,077 inputs and 21,541,077 observations. [A separate recovery](results/released-recovery-launch-2026-10-19) runs only the twenty-five unstarted SARSA/SARSA inputs, capped below $2.
+
 [The paper-table EC/EC cohort completes all fifty inputs](results/paper-ec-ec-complete-cohort-2026-10-19), with independent R checks and fresh storage verification. All trajectories match their released-code counterparts. Coverage reaches 1,052 inputs and 21,041,052 observations.
 
 [The released-code batch is terminal](results/released-batch-terminal-2026-10-19): 724 assigned inputs succeeded and 25 were never started. The final 25 successes await raw audit; recovery is not yet launched.
@@ -146,9 +148,9 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-The latest full audit covers 750/800 released-code inputs and 302/800 paper-table inputs.
-Complete and audit the remaining 50 released-code and 498 paper-table inputs. Of the fifty released-code inputs, twenty-five finished and await raw audit; twenty-five need bounded recovery.
-The released-code producer has exited; the paper-table ensemble continues. Completed producer entries receive coverage only after independent trajectory audits.
+The latest full audit covers 775/800 released-code inputs and 302/800 paper-table inputs.
+Complete and audit the remaining 25 released-code and 498 paper-table inputs. The released-code remainder is assigned to the separate bounded recovery.
+The original released-code producer has exited; its disjoint recovery and the paper-table ensemble continue. Completed producer entries receive coverage only after independent trajectory audits.
 All sixteen method pairings already passed native recorder qualification; the Rule M control also matches across both parameter interpretations for all 50 seeds.
 
 For each remaining complete 50-seed cohort, verify means, sample standard deviations and whole-run bootstrap intervals independently in R.
