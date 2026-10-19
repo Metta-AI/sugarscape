@@ -14,6 +14,7 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("rootfs", type=Path)
 parser.add_argument("artifact", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument("--build-directory", type=Path, required=True)
 args = parser.parse_args()
 root = args.output.resolve()
 root.mkdir(parents=True, exist_ok=False)
@@ -34,7 +35,8 @@ with zipfile.ZipFile(args.artifact) as archive:
     }
     archive.extractall(root / "source")
 (root / "source-sha256.json").write_text(json.dumps(hashes, indent=2) + "\n")
-inside = Path("/work/dynasoar-cuda91-native-001")
+inside = args.build_directory
+assert inside.parent == Path("/work")
 work = args.rootfs / inside.relative_to("/")
 work.mkdir(parents=True, exist_ok=False)
 shutil.copytree(root / "source", work / "source")
