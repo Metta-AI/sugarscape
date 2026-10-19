@@ -1,6 +1,8 @@
 # Carrella (2021): Sugarscape parameter estimation
 
-[Historical seeds three and four also pass full audit](results/gam-historical-seed-second-prefix-2026-10-19). Their 12,500 point predictions remain identical to seed zero, while all 25,000 interval bounds differ. Together with seeds one and two, all four additional seeds retain zero printed-score matches. Five prospective seeds remain.
+[Historical seeds five and six pass full audit](results/gam-historical-seed-third-prefix-2026-10-19). All 12,500 point predictions match seed zero; all 25,000 interval bounds differ. Neither seed matches the five printed scores. Three preselected seeds remain; no final seed range or paper-completion claim follows.
+
+[Historical seeds three and four also pass full audit](results/gam-historical-seed-second-prefix-2026-10-19). Their 12,500 point predictions remain identical to seed zero, while all 25,000 interval bounds differ. Together with seeds one and two, all four additional seeds retain zero printed-score matches. The newer prefix above extends this result; three prospective seeds remain.
 
 [The first two additional historical seeds pass full audit](results/gam-historical-seed-prefix-2026-10-19). Their 12,500 point predictions exactly match seed zero; all 25,000 interval bounds differ. Both retain zero printed-score matches. The newer prefix above extends this result; primary study status is unchanged.
 
