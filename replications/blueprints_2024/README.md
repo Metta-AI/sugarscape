@@ -11,7 +11,8 @@ Figure 6 matches all-cause deaths for all four models, while the released plotte
 This explains a released definition consistent with the paper; the exact historical plotting revision remains unidentified.
 [The Bentham released-parser check](results/bentham-parser-2026-10-18) also matches all 30,006 independently aggregated values.
 
-Latest deposited-runtime coverage is **909/1,200 inputs and 3,354,611 observations**; the bounded continuation remains active.
+Latest deposited-runtime coverage is **916/1,200 inputs and 3,455,423 observations**; the bounded continuation remains active.
+[The latest seven inputs](results/runtime-second-continuation-prefix-2026-10-19) pass repeated full-trajectory audits, including five native extinctions.
 [Selfishness 0.37 is complete](results/selfishness037-condition-complete-2026-10-19): all 500 original seeds and 2,452,673 observations pass audit.
 Median mean population is 1138.06–1138.24 under four stated conventions, within Figure 10's extracted ink bounds of 1132.78–1143.03.
 This supports qualified agreement for one condition; historical averaging and quantile conventions remain unresolved.
