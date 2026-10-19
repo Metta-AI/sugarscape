@@ -1,8 +1,10 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[EC/Q completes all 50 seeds](results/ec-q-complete-cohort-2026-10-19), with full trajectory audits and independent R arithmetic. Eight of fourteen endpoint mean ranges overlap the paper raster ranges. All six remaining endpoints have overlapping pointwise bootstrap intervals; this does not establish equivalence or resolve historical parameter settings.
+
 [EC/EC breed mapping and paired contrasts](results/ec-ec-breed-contrast-2026-10-19) find consistent A/blue and B/red labels. All seven pointwise A-minus-B intervals include zero across the 50 seeds; sampling variation remains plausible, without resolving the paper discrepancies.
 
-[EC/EC now completes all 50 seeds](results/ec-ec-complete-cohort-2026-10-19), with full-trajectory audit and independent R verification. Six of sixteen released-code pairings have complete cohorts. Total audited coverage is 300 released-code plus three paper-table inputs, totaling 6,060,303 observations. Only two of twelve visible EC/EC endpoint ranges overlap the paper raster intervals; breed mapping, sampling variation, and implementation fidelity require investigation before any negative verdict.
+[EC/EC now completes all 50 seeds](results/ec-ec-complete-cohort-2026-10-19), with full-trajectory audit and independent R verification. Seven of sixteen released-code pairings now have complete cohorts. Total audited coverage is 350 released-code plus three paper-table inputs, totaling 7,060,353 observations. Only two of twelve visible EC/EC endpoint ranges overlap the paper raster intervals; breed mapping, sampling variation, and implementation fidelity require investigation before any negative verdict.
 
 Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical to the Rule M/Rule M panel. Both curves are excluded from agreement judgments. Eleven of twelve remaining endpoint range comparisons overlap the paper raster intervals; this is not equivalence or a negative replication.
 
