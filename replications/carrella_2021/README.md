@@ -1288,3 +1288,10 @@ Three of ten settings are audited, totaling384 runs and192,384 observations; the
 Archive readback reproduces full audits and comparisons exactly; independent R checks confirm six distribution statistics and two Fisher tests.
 Maximum difference is0.15625, with unadjusted joint permutation p0.93715.
 Four of ten settings are audited, totaling512 runs and256,512 observations; six settings and the combined analysis remain.
+
+### Fifth cohort compute-limit recovery
+
+[Original row3733](results/parameter-fifth-cohort-recovery-launch-2026-10-19) hit its600-second bound after64 native and48 independent completions.
+The failed archive and interrupted seed48 are preserved.
+A separately bounded600-second recovery runs only unfinished independent seeds48–63; the original batch continues its sixth setting.
+Four settings remain fully audited while this recovery and the remaining original cohorts run.
