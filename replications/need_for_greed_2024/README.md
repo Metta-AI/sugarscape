@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The sixth baseline checkpoint](results/baseline-second-recovery-sixth-prefix-2026-10-19) and [sixth Table IV checkpoint](results/table4-sixth-prefix-2026-10-19) add 50 disjoint inputs and 177,903 observations. Coverage reaches 512 inputs and 2,019,577 observations. Table III remains exactly reproduced; Tables I, II, and IV remain incomplete.
+
 [The 9,597 unassigned sweep inputs are frozen into 19 disjoint batches](results/unassigned-sweep-preparation-2026-10-19), excluding the complete existing assignment. The proposed $175 cap covers bounded CPU execution; no additional compute is launched by this preparation.
 
 [The fifth baseline checkpoint deduplicates the five utilitarian inputs](results/baseline-second-recovery-fifth-prefix-2026-10-19); together with [the fifth Table IV checkpoint](results/table4-fifth-prefix-2026-10-19), it adds 45 unique inputs and 133,316 observations. Coverage reaches 462 inputs and 1,841,674 observations.
@@ -56,7 +58,7 @@
 
 [The selfishness-1 endpoint baseline reached its time limit](results/endpoint-recovery-launch-2026-10-19). Both level-1 controls timed out; the original batch is terminal. Bounded sequential recovery reruns only those two inputs with unchanged configurations. Failed bytes are preserved; coverage and study status are unchanged.
 
-Status: partial native reproduction. The shared-input inventory has 462 audited inputs and 1,841,674 observations, including all six native controls, 165 recovered baselines, and the first 127 Table IV batch inputs. Four reported medians agree graphically at both selfishness 0.36 and 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
+Status: partial native reproduction. The shared-input inventory has 512 audited inputs and 2,019,577 observations, including all six native controls, 190 recovered baselines, and the first 152 Table IV batch inputs. Four reported medians agree graphically at both selfishness 0.36 and 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
 
 Kremer-Herman and Gupta, IEEE ISTAS 2024, pages 182–190. [Author manuscript](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf).
 The paper explicitly names [author release v2024.1](https://github.com/digital-terraria-lab/sugarscape/tree/b9ca671ab7591c7b3606f2d76c33eda344d626d1). Its source is MIT-licensed; source and dataset hashes appear in `source-audit.json`.
@@ -65,8 +67,8 @@ The deposited protocol includes 400 baseline inputs and 10,100 sweep inputs: 101
 
 ## Audited evidence
 
-- [Baseline reuse](results/baseline-reuse-2026-10-19): 64 Bentham baseline inputs, 320,064 observations. Three endpoint controls and 165 recovered inputs extend baseline coverage to 232; 168 remain.
-- [Selfishness 0.37](results/selfishness037-reuse-2026-10-19): all 100 deposited seeds, 495,265 observations, one extinction and 99 populations above the initial 250. No final population equals the initial population. Three endpoint controls and 127 Table IV batch inputs extend sweep coverage to 230; 9,870 remain.
+- [Baseline reuse](results/baseline-reuse-2026-10-19): 64 Bentham baseline inputs, 320,064 observations. Three endpoint controls and 190 recovered inputs extend baseline coverage to 257; 143 remain.
+- [Selfishness 0.37](results/selfishness037-reuse-2026-10-19): all 100 deposited seeds, 495,265 observations, one extinction and 99 populations above the initial 250. No final population equals the initial population. Three endpoint controls and 152 Table IV batch inputs extend sweep coverage to 255; 9,845 remain.
 
 Baseline and sweep configurations remain separate. Baseline selfishness endpoints are not substituted for sweep endpoints. Reused PyPy trajectories inherit the Blueprints runtime qualifications; this audit adds configuration and artifact verification, not an independent engine implementation.
 
@@ -107,6 +109,6 @@ Both commands require the pinned author artifacts documented above. Each run pre
 
 ## Remaining work
 
-Recover and freshly verify the remaining 168 baseline trajectories; execute or reuse all 9,870 remaining sweep inputs. Reproduce Tables I–IV and Figures 2–6 with declared aggregation and denominator conventions. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
+Recover and freshly verify the remaining 143 baseline trajectories; execute or reuse all 9,845 remaining sweep inputs. Reproduce Tables I–IV and Figures 2–6 with declared aggregation and denominator conventions. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
 
 Historical boxplot aggregation remains unresolved. The paper’s printed Table IV row 0.81–0.85 sums to 100.2%; the source audit preserves it without correction. Full paper completion requires the complete declared experiment and qualified comparisons, not this subset.
