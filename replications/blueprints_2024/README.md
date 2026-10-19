@@ -1141,3 +1141,11 @@ The remaining 22 seeds are required before condition aggregation; paper completi
 ## Original 50% heterogeneous cohort launched
 
 [The remaining 499 original seeds](results/heterogeneous50-launch-2026-10-19) now run on eight PyPy workers after the full-horizon runtime qualification. Original horizons and input hashes remain unchanged. The 12-hour platform limit bounds compute plus idle to $8.82 at the recorded rate. Launch adds no validated coverage; interrupted inputs remain outstanding.
+
+### First heterogeneous50 production checkpoint
+
+[The first25 new inputs](results/heterogeneous50-first-prefix-2026-10-19) pass96,280 observation checks:19 full5,000-step runs and six native extinctions.
+Fresh extraction verifies261 archive members and reproduces all25 audits byte-exactly.
+All507 earlier input records remain identical; supplementary coverage reaches532/100,000.
+The50% heterogeneous condition reaches26/500 including its prior control.
+This completion-order prefix does not support an unbiased condition aggregate or a completed-paper claim.
