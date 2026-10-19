@@ -167,3 +167,10 @@ The next bounded control, `cmd-c66px`, uses `--control-size 128 --control-capaci
 The synchronization probe has finished: the unchanged binary times out after 90 seconds during agent creation. The sealed archive and parent-binary hash pass readback audit. Compute Sanitizer prints its banner but no error summary; this is inconclusive, not a synchronization pass. [The captured logs and audit](results/synccheck128-2026-10-18) retain that distinction.
 
 Read-only Docker registry checks returned 404 for three historical official tags: `9.1-devel-ubuntu16.04`, `9.1-cudnn7-devel-ubuntu16.04`, and `9.1-devel`. This rules out those tag names only; an official historical toolkit download remains a possible route to the original compiler environment. No allocator patch follows from these observations.
+
+
+### Original compiler environment preparation
+
+[NVIDIA’s Ubuntu16.04 package index](https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/) still publishes CUDA9.1.85 compiler, runtime, headers, CURAND and license packages with SHA-256 checksums. Eight selected packages total115,764,578 bytes. The official Ubuntu16.04 amd64 image manifest is pinned to `sha256:a3785f78ab8547ae2710c89e627783cfa7ee7824d3468cae6835c9f4eae23ff7`.
+
+[Command cmd-2kpxs](results/historical-toolkit-preparation-2026-10-19) prepares an isolated root filesystem on the existing owned node. It verifies package hashes before extraction and records actual compiler/package versions. CUDA11.8 and the host driver are retained. The preparation has a30-minute outer bound and$4 budget, with sealed-evidence collection. It has not yet built or executed the historical simulation. The H100 hardware and unresolved historical compiler patch level remain differences from the paper.
