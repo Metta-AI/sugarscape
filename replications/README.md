@@ -339,3 +339,5 @@ Blueprints supplementary checkpoint: 25 additional original selfishness-0.37 inp
 Brearcliffe and Crooks’ [Creating Intelligent Agents](https://doi.org/10.1007/978-3-030-83418-0_3) is an ongoing native reproduction study. The [source audit](source-audits/brearcliffe-2020.json) retains the original NetLogo model, map, ODD, and author manuscript. The paper requests 50 runs per pairing; the released sweep specifies five and generates unrecorded seeds. The current audited coverage appears above; historical settings remain unresolved.
 
 The Brearcliffe study’s [PR #23](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23) retains recorder qualifications, full-cohort comparisons, failed checks, and durable evidence receipts. It receives no completed-study credit.
+
+The [market algorithm candidate audit](source-audits/market-genetic-qualification-2026-10-19/README.md) pins the paper-linked author implementation and eleven historical drivers. Released repetitions and horizons differ from the paper; license text and the experimental snapshot remain unresolved. No runs or completion credit are added.

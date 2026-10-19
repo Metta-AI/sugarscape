@@ -1,0 +1,334 @@
+{
+  "checked_at": "2026-10-19",
+  "candidate": "The Market Algorithm as Distributed Genetic Algorithm",
+  "paper_url": "https://jameslcaton.com/MarketAlgorithmAsDistributedGeneticAlgorithm-Johnson%2CCaton%2CMiljkovic%2CRayamajhee.pdf",
+  "paper_sha256": "7b90c9c07686141dc073bdfdea468857d2335051e985b951fec42ee6157c3f7e",
+  "paper_bytes": 6818802,
+  "paper_settings": {
+    "repetitions_per_model": 100,
+    "basic_periods": 100000,
+    "optimizer_and_mixed_periods": 60000,
+    "initial_population": 2000
+  },
+  "current_driver_settings": {
+    "repetitions_per_model": 6,
+    "basic_periods": 10000,
+    "optimizer_and_mixed_periods": 5000,
+    "initial_population": 2000
+  },
+  "license": {
+    "repository_metadata": "MIT",
+    "root_LICENSE": 404,
+    "license_endpoint": 404,
+    "recursive_tree_truncated": false,
+    "license_named_paths": [],
+    "status": "Unresolved; metadata alone insufficient"
+  },
+  "history": {
+    "listed_commits": 16,
+    "retrieved_driver_versions": [
+      {
+        "revision": "4da6a4063ce353b33c80c86169a46fc7c113459a",
+        "date": "2023-12-21T16:39:34Z",
+        "sha256": "7d8ca2084122f6b387e398f9fe76769f4a3d029e543b9dbf205d2ad9771875b1",
+        "settings_lines": [
+          {
+            "line": 174,
+            "text": "#runs = 5"
+          },
+          {
+            "line": 175,
+            "text": "#periods = 10000"
+          },
+          {
+            "line": 187,
+            "text": "periods = 5000 if primary_breed_set in [[\"basic\", \"optimizer\"], [\"optimizer\"]] else 10000"
+          },
+          {
+            "line": 208,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 239,
+            "text": "runs = 6"
+          }
+        ]
+      },
+      {
+        "revision": "875e320b9db9f0a40e0a651f4d85222c027c8c5e",
+        "date": "2023-06-14T12:35:48Z",
+        "sha256": "3e537f3e2f5a51f8e66f50c45d66c0aa120375e8171f3a288f2b9dd5b09b8cd6",
+        "settings_lines": [
+          {
+            "line": 122,
+            "text": "# num_agents = 2000"
+          },
+          {
+            "line": 123,
+            "text": "# periods = 1000"
+          },
+          {
+            "line": 133,
+            "text": "runs = 10"
+          },
+          {
+            "line": 134,
+            "text": "periods = 50000"
+          },
+          {
+            "line": 155,
+            "text": "num_agents = 2000"
+          }
+        ]
+      },
+      {
+        "revision": "eb5549666ac69c7646fed4a5147333dafa2c27ae",
+        "date": "2023-05-12T16:45:29Z",
+        "sha256": "cb9b688eadad181accb6fd93e2353283a75da721428bd67d662fba85fb878c52",
+        "settings_lines": [
+          {
+            "line": 118,
+            "text": "# num_agents = 2000"
+          },
+          {
+            "line": 119,
+            "text": "# periods = 1000"
+          },
+          {
+            "line": 129,
+            "text": "runs = 30"
+          },
+          {
+            "line": 145,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 146,
+            "text": "periods = 5000"
+          }
+        ]
+      },
+      {
+        "revision": "da76183d6fcc3dbcb18a78bfd38bc1c2dbed2cd7",
+        "date": "2023-05-04T19:10:30Z",
+        "sha256": "4816fc6beabd3d94ab43e6e6ff9267c8b54918d857d9a05413a6d87753929229",
+        "settings_lines": [
+          {
+            "line": 118,
+            "text": "# num_agents = 2000"
+          },
+          {
+            "line": 119,
+            "text": "# periods = 1000"
+          },
+          {
+            "line": 129,
+            "text": "runs = 30"
+          },
+          {
+            "line": 145,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 146,
+            "text": "periods = 800"
+          }
+        ]
+      },
+      {
+        "revision": "c9cc40eb3245f3f85630042a79d47372f59bb63b",
+        "date": "2023-03-27T19:04:05Z",
+        "sha256": "8608bfdfb182bd37a01265951ff9e87a9d23899cd646844040dd04628294f6a4",
+        "settings_lines": [
+          {
+            "line": 112,
+            "text": "# num_agents = 2000"
+          },
+          {
+            "line": 113,
+            "text": "# periods = 1000"
+          },
+          {
+            "line": 123,
+            "text": "runs = 30"
+          },
+          {
+            "line": 138,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 139,
+            "text": "periods = 10000"
+          }
+        ]
+      },
+      {
+        "revision": "7a38d49b757d6045692ff8678170e434aca6465e",
+        "date": "2023-03-01T16:59:00Z",
+        "sha256": "2ac11c76f02c7672471fac70197cceb10004c6c877c1672c584e1b8e2a055243",
+        "settings_lines": [
+          {
+            "line": 112,
+            "text": "# num_agents = 2000"
+          },
+          {
+            "line": 113,
+            "text": "# periods = 1000"
+          },
+          {
+            "line": 123,
+            "text": "runs = 30"
+          },
+          {
+            "line": 138,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 139,
+            "text": "periods = 50000"
+          }
+        ]
+      },
+      {
+        "revision": "e9193f618e129dd62c89694ddccf03449e7cea7d",
+        "date": "2023-02-22T20:06:18Z",
+        "sha256": "3b4ae6255d4030e9683e0a2fa38bd3e34269bf00400ea2c322c12b7acbb923cc",
+        "settings_lines": [
+          {
+            "line": 112,
+            "text": "# num_agents = 2000"
+          },
+          {
+            "line": 113,
+            "text": "# periods = 1000"
+          },
+          {
+            "line": 123,
+            "text": "runs = 10"
+          },
+          {
+            "line": 138,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 139,
+            "text": "periods = 15000"
+          }
+        ]
+      },
+      {
+        "revision": "1d5067040ab73d8050d5af7cd67740b8145cb84a",
+        "date": "2023-02-20T22:08:47Z",
+        "sha256": "89efd711b84fab195d66e4a26f83c1ef88bd535186ba3721a726f8eea51953c7",
+        "settings_lines": [
+          {
+            "line": 112,
+            "text": "# num_agents = 2000"
+          },
+          {
+            "line": 113,
+            "text": "# periods = 1000"
+          },
+          {
+            "line": 123,
+            "text": "runs = 10"
+          },
+          {
+            "line": 138,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 139,
+            "text": "periods = 30000"
+          }
+        ]
+      },
+      {
+        "revision": "708452f2a1538fb839bddcfb20fe6c85f2c694ac",
+        "date": "2023-02-15T17:16:05Z",
+        "sha256": "ba2ba6f2fb11485dc984c1408a5f5df63e3f1fe509541828ed9282db6aca3ceb",
+        "settings_lines": [
+          {
+            "line": 112,
+            "text": "# num_agents = 2000"
+          },
+          {
+            "line": 113,
+            "text": "# periods = 1000"
+          },
+          {
+            "line": 123,
+            "text": "runs = 5"
+          },
+          {
+            "line": 138,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 139,
+            "text": "periods = 10000"
+          }
+        ]
+      },
+      {
+        "revision": "91e378a77453c493f85a40a7aaa29d55e815a351",
+        "date": "2023-02-07T00:39:50Z",
+        "sha256": "c88d073132d19122edc368f18ecfb5948552453904fc400016920b108cac9316",
+        "settings_lines": [
+          {
+            "line": 112,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 113,
+            "text": "periods = 100000"
+          },
+          {
+            "line": 138,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 139,
+            "text": "periods = 10000"
+          }
+        ]
+      },
+      {
+        "revision": "d4fc2188db9847ce45e2917da06d55acfcbde65f",
+        "date": "2023-02-06T18:13:40Z",
+        "sha256": "902f0e7dd41f8eb0041ba46aae942381440354ac2583c28db04e07fd940f1d4f",
+        "settings_lines": [
+          {
+            "line": 112,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 113,
+            "text": "periods = 10000"
+          },
+          {
+            "line": 138,
+            "text": "num_agents = 2000"
+          },
+          {
+            "line": 139,
+            "text": "periods = 10000"
+          }
+        ]
+      }
+    ],
+    "stopped_on": {
+      "revision": "d0ed0a1edf5fd1d80a01f7c489935cdf76a7fae0",
+      "path": "Sugarscape/GUI.py",
+      "http_status": 404
+    },
+    "scope": "11 retrieved versions only; older path history unresolved"
+  },
+  "execution": "Not launched",
+  "completion_credit": false,
+  "next_steps": [
+    "Inspect analysis notebook and historical renamed paths to identify paper snapshot and seeds.",
+    "Reconcile source reproduction-ratio lower bound 1.2 with paper extracted fraction 5/4.",
+    "Qualify bounded native control and independent measurement before any ensemble."
+  ]
+}
