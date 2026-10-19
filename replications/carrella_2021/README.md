@@ -9,6 +9,8 @@ The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10
 
 [A full-data estimator sensitivity control is running](results/sabc1d5000-seed-sensitivity-launch-2026-10-19): ten fixed seeds on 5,000 original inputs and unchanged folds, with bounded execution and exact input/prediction audits. This extends the earlier 1,250-input diagnostic and adds no completion credit at launch.
 
+[A historical abctools source check](results/abctools-source-history-2026-10-19) finds one transformation-validation change in `semiauto.abc` between 2018 and 2025. Its sampling and regression source is unchanged; dependencies and historical runtime remain unresolved.
+
 **Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.

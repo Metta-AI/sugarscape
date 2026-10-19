@@ -1,0 +1,11 @@
+--- abctools-1.1.3/semiauto.abc.R
++++ abctools-1.1.8/semiauto.abc.R
+@@ -86,7 +86,7 @@
+ 
+ 	te<-try(f(s),silent=TRUE)
+ 
+-	if(class(te)=="try-error"){
++	if(is(te,"try-error")){
+ 		stop(paste("satr function",i,"not valid!!\n"))
+ 	}
+ 	else{
