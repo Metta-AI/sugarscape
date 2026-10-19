@@ -1,6 +1,10 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
-[Q-learning/Rule M completes all 50 seeds](results/q-rule-m-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Nine of sixteen released-code pairings now have complete cohorts. Coverage is 450 released-code plus three paper-table inputs, totaling 9,060,453 observations. Thirteen of fourteen endpoint mean ranges overlap paper ink; the remaining endpoint overlaps its pointwise bootstrap interval. This does not establish equivalence.
+[Q-learning/EC completes all 50 seeds](results/q-ec-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Ten of sixteen released-code pairings now have complete cohorts. Coverage is 500 released-code plus three paper-table inputs, totaling 10,060,503 observations. Ten of fourteen endpoint mean ranges overlap paper ink; all four remaining endpoints overlap their pointwise bootstrap intervals. This does not establish equivalence.
+
+[Q-learning/Rule M completes all 50 seeds](results/q-rule-m-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Thirteen of fourteen endpoint mean ranges overlap paper ink; the remaining endpoint overlaps its pointwise bootstrap interval. This does not establish equivalence.
+
+[All 503 audited inputs now have verified durable backups](results/q-ec-durable-evidence-2026-10-19). The new Q/EC archive passes fresh storage download and all 502 member-hash checks.
 
 [EC/SARSA completes all 50 seeds](results/ec-sarsa-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Eleven of twelve readable endpoint mean ranges overlap paper ink; the remaining endpoint overlaps its pointwise bootstrap interval. Figure 6's mislabeled combat curves remain excluded.
 
