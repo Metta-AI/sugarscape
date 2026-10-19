@@ -13,6 +13,8 @@ The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10
 
 [The complete-ensemble analyzer](results/seed-summary-analyzer-validation-2026-10-19) independently recomputes estimator and training-mean baseline errors. It passes the complete 1,250-input control; its completion gate rejected the then-unfinished full-data ensemble before output.
 
+[The historical abc source check](results/abc-source-history-2026-10-19) confirms unchanged estimator and numerical-summary function bodies between versions 2.1 and 2.2.2. The changed histogram and model-choice paths are absent from the audited author wrapper; runtime and dependency uncertainty remain.
+
 **Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.
