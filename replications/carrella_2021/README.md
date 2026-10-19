@@ -1273,3 +1273,11 @@ Two of ten settings are audited; eight settings, full reconciliation and30-test 
 The failed archive and interrupted seed43 remain preserved.
 A separately bounded600-second recovery runs only unfinished independent seeds43–63 with unchanged inputs.
 The original batch continues; two settings remain fully audited while this recovery is pending.
+
+### Third parameter cohort reconciled and audited
+
+[Original input4675](results/parameter-third-cohort-complete-2026-10-19) now passes128-run/64,128-observation audits after recovering only21 unfinished inputs.
+The original timeout remains preserved; archive readback repeats all audits and comparisons exactly.
+Independent R checks confirm six distribution statistics and both Fisher tests.
+The maximum difference is0.21875, with unadjusted joint permutation p0.4305.
+Three of ten settings are audited, totaling384 runs and192,384 observations; the full30-test correction remains pending.

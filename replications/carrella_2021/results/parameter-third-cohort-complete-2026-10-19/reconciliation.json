@@ -1,0 +1,984 @@
+{
+  "scope": "Derived completion manifest: every constituent simulation has a verified zero exit receipt. This is not the original cohort launcher exit status, which remains1. Original failure, interrupted seed43 and recovery receipts are retained. No successful input is rerun or counted twice.",
+  "original_terminal": {
+    "original_row": 4675,
+    "exit_code": 1,
+    "elapsed_total_seconds": 1606.474793833011
+  },
+  "original_receipts": [
+    {
+      "name": "native",
+      "exit_code": 0,
+      "elapsed_seconds": 229.82597991699004
+    },
+    {
+      "name": "independent-0",
+      "exit_code": 0,
+      "elapsed_seconds": 8.917930124996928
+    },
+    {
+      "name": "independent-1",
+      "exit_code": 0,
+      "elapsed_seconds": 8.05580612499034
+    },
+    {
+      "name": "independent-2",
+      "exit_code": 0,
+      "elapsed_seconds": 8.581382083008066
+    },
+    {
+      "name": "independent-3",
+      "exit_code": 0,
+      "elapsed_seconds": 7.799081125005614
+    },
+    {
+      "name": "independent-4",
+      "exit_code": 0,
+      "elapsed_seconds": 6.564159000001382
+    },
+    {
+      "name": "independent-5",
+      "exit_code": 0,
+      "elapsed_seconds": 8.809240666014375
+    },
+    {
+      "name": "independent-6",
+      "exit_code": 0,
+      "elapsed_seconds": 8.476900124980602
+    },
+    {
+      "name": "independent-7",
+      "exit_code": 0,
+      "elapsed_seconds": 8.43398362500011
+    },
+    {
+      "name": "independent-8",
+      "exit_code": 0,
+      "elapsed_seconds": 9.123206457996275
+    },
+    {
+      "name": "independent-9",
+      "exit_code": 0,
+      "elapsed_seconds": 9.461681542015867
+    },
+    {
+      "name": "independent-10",
+      "exit_code": 0,
+      "elapsed_seconds": 7.184542500006501
+    },
+    {
+      "name": "independent-11",
+      "exit_code": 0,
+      "elapsed_seconds": 9.033959667023737
+    },
+    {
+      "name": "independent-12",
+      "exit_code": 0,
+      "elapsed_seconds": 9.015474332991289
+    },
+    {
+      "name": "independent-13",
+      "exit_code": 0,
+      "elapsed_seconds": 8.443035250005778
+    },
+    {
+      "name": "independent-14",
+      "exit_code": 0,
+      "elapsed_seconds": 9.01970279199304
+    },
+    {
+      "name": "independent-15",
+      "exit_code": 0,
+      "elapsed_seconds": 8.799862374988152
+    },
+    {
+      "name": "independent-16",
+      "exit_code": 0,
+      "elapsed_seconds": 9.021614208002575
+    },
+    {
+      "name": "independent-17",
+      "exit_code": 0,
+      "elapsed_seconds": 9.212278458027868
+    },
+    {
+      "name": "independent-18",
+      "exit_code": 0,
+      "elapsed_seconds": 8.331855500000529
+    },
+    {
+      "name": "independent-19",
+      "exit_code": 0,
+      "elapsed_seconds": 7.948830332985381
+    },
+    {
+      "name": "independent-20",
+      "exit_code": 0,
+      "elapsed_seconds": 9.236259333003545
+    },
+    {
+      "name": "independent-21",
+      "exit_code": 0,
+      "elapsed_seconds": 8.806255458010128
+    },
+    {
+      "name": "independent-22",
+      "exit_code": 0,
+      "elapsed_seconds": 9.316178374981973
+    },
+    {
+      "name": "independent-23",
+      "exit_code": 0,
+      "elapsed_seconds": 8.050787208019756
+    },
+    {
+      "name": "independent-24",
+      "exit_code": 0,
+      "elapsed_seconds": 6.705963791988324
+    },
+    {
+      "name": "independent-25",
+      "exit_code": 0,
+      "elapsed_seconds": 8.299231874989346
+    },
+    {
+      "name": "independent-26",
+      "exit_code": 0,
+      "elapsed_seconds": 9.313161708007101
+    },
+    {
+      "name": "independent-27",
+      "exit_code": 0,
+      "elapsed_seconds": 7.1414782499778084
+    },
+    {
+      "name": "independent-28",
+      "exit_code": 0,
+      "elapsed_seconds": 8.833981499978108
+    },
+    {
+      "name": "independent-29",
+      "exit_code": 0,
+      "elapsed_seconds": 8.59135154201067
+    },
+    {
+      "name": "independent-30",
+      "exit_code": 0,
+      "elapsed_seconds": 9.599551125022117
+    },
+    {
+      "name": "independent-31",
+      "exit_code": 0,
+      "elapsed_seconds": 8.043508292001206
+    },
+    {
+      "name": "independent-32",
+      "exit_code": 0,
+      "elapsed_seconds": 8.605995999998413
+    },
+    {
+      "name": "independent-33",
+      "exit_code": 0,
+      "elapsed_seconds": 7.3481919589976314
+    },
+    {
+      "name": "independent-34",
+      "exit_code": 0,
+      "elapsed_seconds": 8.46003512502648
+    },
+    {
+      "name": "independent-35",
+      "exit_code": 0,
+      "elapsed_seconds": 8.554563750018133
+    },
+    {
+      "name": "independent-36",
+      "exit_code": 0,
+      "elapsed_seconds": 9.015287292015273
+    },
+    {
+      "name": "independent-37",
+      "exit_code": 0,
+      "elapsed_seconds": 7.978748333000112
+    },
+    {
+      "name": "independent-38",
+      "exit_code": 0,
+      "elapsed_seconds": 9.06416354101384
+    },
+    {
+      "name": "independent-39",
+      "exit_code": 0,
+      "elapsed_seconds": 8.946222041995497
+    },
+    {
+      "name": "independent-40",
+      "exit_code": 0,
+      "elapsed_seconds": 8.276345166988904
+    },
+    {
+      "name": "independent-41",
+      "exit_code": 0,
+      "elapsed_seconds": 9.526536874996964
+    },
+    {
+      "name": "independent-42",
+      "exit_code": 0,
+      "elapsed_seconds": 7.990836749988375
+    }
+  ],
+  "recovery_receipts": [
+    {
+      "seed": 43,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/43.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-43.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.407455999986269
+    },
+    {
+      "seed": 44,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/44.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-44.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.373268833005568
+    },
+    {
+      "seed": 45,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/45.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-45.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.583883374987636
+    },
+    {
+      "seed": 46,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/46.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-46.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.929366499971366
+    },
+    {
+      "seed": 47,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/47.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-47.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.096339207986603
+    },
+    {
+      "seed": 48,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/48.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-48.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.190269332990283
+    },
+    {
+      "seed": 49,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/49.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-49.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.109538207994774
+    },
+    {
+      "seed": 50,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/50.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-50.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.94745704100933
+    },
+    {
+      "seed": 51,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/51.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-51.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.31752633297583
+    },
+    {
+      "seed": 52,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/52.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-52.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.4506957080157
+    },
+    {
+      "seed": 53,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/53.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-53.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.13906895898981
+    },
+    {
+      "seed": 54,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/54.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-54.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.320401000004495
+    },
+    {
+      "seed": 55,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/55.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-55.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.522753124998417
+    },
+    {
+      "seed": 56,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/56.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-56.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.66280699998606
+    },
+    {
+      "seed": 57,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/57.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-57.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.176073000009637
+    },
+    {
+      "seed": 58,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/58.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-58.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.765914999996312
+    },
+    {
+      "seed": 59,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/59.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-59.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.315475624985993
+    },
+    {
+      "seed": 60,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/60.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-60.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 5.92901749999146
+    },
+    {
+      "seed": 61,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/61.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-61.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.6635398750077
+    },
+    {
+      "seed": 62,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/62.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-62.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.879740458010929
+    },
+    {
+      "seed": 63,
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/63.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-63.csv"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.152083458000561
+    }
+  ],
+  "recovery_complete": {
+    "independent_runs": 21,
+    "exit_code": 0,
+    "elapsed_seconds": 180.9441579580016
+  },
+  "recovery_plan_sha256": "2da550441e3f2238c6b4061f7aa31a2f7975c97be355a2ccf7f7bddd73c0440d",
+  "interrupted_seed43_sha256": "a6be8960c23fd283a3157025b6186aa99aad9af202b9355a060027bbd7aec280",
+  "trajectories": {
+    "native/row-0.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-0.csv",
+      "sha256": "6554be81c586d9babf73bf0e46a9da4ecdf00b3d1fa125f561fedbfcdf4d965a"
+    },
+    "native/row-1.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-1.csv",
+      "sha256": "6b0821c62f496f95a2ba93290c5920d0ca385cfd25463bd31616a2f93eabcb20"
+    },
+    "native/row-2.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-2.csv",
+      "sha256": "4618ec9aeb658971409a8f3c76755984e20a3bb0a2b009540e4f783733baa4c4"
+    },
+    "native/row-3.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-3.csv",
+      "sha256": "7d9416422bf278136421b7aaebf8759f636fc4c4217926175113233dc22339da"
+    },
+    "native/row-4.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-4.csv",
+      "sha256": "c6a8fad516e5c11b5f712c99dd2b38bd1ddcbf85dd121cc52bdf8fa7876796eb"
+    },
+    "native/row-5.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-5.csv",
+      "sha256": "5cda209171a310473cb1f10a7d888871373653d51ce2004427637ef4b12ee5ba"
+    },
+    "native/row-6.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-6.csv",
+      "sha256": "2c170b4135a0973f973c5c8845a112dfe5d865018ecf62bb047f5368021a954d"
+    },
+    "native/row-7.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-7.csv",
+      "sha256": "de0ef027c137f7a0deb36d098252524deed77311219e436aa337d6e97f34675b"
+    },
+    "native/row-8.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-8.csv",
+      "sha256": "9469bcf4166a26b93ffba3aff66edd40fd9eaf8a1618c2bbee81368e045ce119"
+    },
+    "native/row-9.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-9.csv",
+      "sha256": "ae1179bf6a09dd54a0bf10fbb43f8ef17185951b78cfebb3b95d3d60051f486c"
+    },
+    "native/row-10.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-10.csv",
+      "sha256": "ea79c692f90cacdd1531ac58153582796c0b7d1563322ac17034de75ef067cfc"
+    },
+    "native/row-11.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-11.csv",
+      "sha256": "d75961be53915a04673512db58cbdda6ab25b7014d7e3a4520d061ebab2a23e8"
+    },
+    "native/row-12.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-12.csv",
+      "sha256": "5eefd409e7745a2b2fe42a4c740c8a93cdeb354b632f4b9fe5549823ffc81bc3"
+    },
+    "native/row-13.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-13.csv",
+      "sha256": "f2560d541e53695b13c17ae3966470b5c8f12aac64af114c9ea55611a1f2079c"
+    },
+    "native/row-14.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-14.csv",
+      "sha256": "00df4ba3393bbcb0f63bbe394505bf036dd93174c06011a2ac02760d2d680bcd"
+    },
+    "native/row-15.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-15.csv",
+      "sha256": "57db937c30b6c65035b6b83127b42ec6cd8cff11ff1247ddad8669915f945c61"
+    },
+    "native/row-16.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-16.csv",
+      "sha256": "b2867f46df9b123186d83f533c89cd0827d8c506868908a12e2b7a17ea5ac144"
+    },
+    "native/row-17.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-17.csv",
+      "sha256": "07256c2feedf4df804fb14494e0cd03114f306a3c69603b9b92842cff000a2d0"
+    },
+    "native/row-18.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-18.csv",
+      "sha256": "3a78b6947deff0c982dbbf5fb4a087278a56c8a4e466ec54ead59ae3c7afd2da"
+    },
+    "native/row-19.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-19.csv",
+      "sha256": "58dbfc1838ec5f812dd3ecf6ff06ad4913f8dbc37f3903ffda8a671d9bbcc7ef"
+    },
+    "native/row-20.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-20.csv",
+      "sha256": "67baf890461cf95d2d1fdfffd14b5d9da2c5d28b5f620218603ee6aa300ed6b0"
+    },
+    "native/row-21.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-21.csv",
+      "sha256": "2760c5f364919e5ce37aebaef58ef49186bf317a39a3afd5cf10786eb9db1283"
+    },
+    "native/row-22.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-22.csv",
+      "sha256": "b12f11daf5f136015b18e9781a860aea1d30b2bbcdc666c87fd0af5d96e883ca"
+    },
+    "native/row-23.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-23.csv",
+      "sha256": "ac55095414f3137b4960396b43356c69c9be5bf3b22256f6661da1d02087f965"
+    },
+    "native/row-24.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-24.csv",
+      "sha256": "17b3a90b6c51afa5d9e07f86ba42cd72f0a8d6301b09d83d503c14f71cff6b5b"
+    },
+    "native/row-25.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-25.csv",
+      "sha256": "f758f9a02adfaaecc81561687cf1df3939e6812e15df4541db159ed75328ceaa"
+    },
+    "native/row-26.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-26.csv",
+      "sha256": "249a4c6bc3aada55b84b177a4ce575f6bf4aa8d43f817fcbc80189f729209b87"
+    },
+    "native/row-27.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-27.csv",
+      "sha256": "3bd13329f26e154dd4d922db2ec9a69bbc3d7cdb7ec9a703d25a9c8d6d6e13a1"
+    },
+    "native/row-28.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-28.csv",
+      "sha256": "6dbb9e0dc57934fb78d13d2591b87ad14be17106c75a326d4efe3e311f301a07"
+    },
+    "native/row-29.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-29.csv",
+      "sha256": "8574ff747e9b383d624b3a3bd18870f4de2b429dccc8dccd35cccfa7f50a0bb6"
+    },
+    "native/row-30.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-30.csv",
+      "sha256": "ee93a183fb8ca008e2f14d64792a9dbde56d25d554282cf5be8f8834ebcd9cfe"
+    },
+    "native/row-31.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-31.csv",
+      "sha256": "a0b674472ab8966e874a69af290c20fabe776385ef3cee9a914b78e53cbe5d7f"
+    },
+    "native/row-32.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-32.csv",
+      "sha256": "c9af36036a3a103cf34711c930f2d6dc1036dad1f7be531e5b73612d02321bdc"
+    },
+    "native/row-33.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-33.csv",
+      "sha256": "84c744afcaa1e1655148dbfc692fd10faf10b51de789421ca6692db8ed6db6a2"
+    },
+    "native/row-34.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-34.csv",
+      "sha256": "57e878bd259e383a5a78e21bd9cafd4624218cf2f071c185639a7574a7913e34"
+    },
+    "native/row-35.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-35.csv",
+      "sha256": "eca95560f5901005095fee1a2d81603dc2148b9b7351011355732e3b9ba837df"
+    },
+    "native/row-36.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-36.csv",
+      "sha256": "ad45606b62ad472260e2da07da6e5b6e635fe9ec564eb51bf1934a080ccbae26"
+    },
+    "native/row-37.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-37.csv",
+      "sha256": "779e5b0b530f0368fb20d12da776bc139aeb9c104bfe0df12111b64721e9e80b"
+    },
+    "native/row-38.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-38.csv",
+      "sha256": "b653a3a354917821661a11d50fa3ebf4f1e4b945566c76e9b6d0258d9882123d"
+    },
+    "native/row-39.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-39.csv",
+      "sha256": "eaf20f12eb9d8763c050fee629a26a5ba16bb49af52c84f04dac08dc993a1ebd"
+    },
+    "native/row-40.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-40.csv",
+      "sha256": "9a9a056b3328edbb97406270d8e6f1f1315ac8275298a9fcce3004d368240b24"
+    },
+    "native/row-41.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-41.csv",
+      "sha256": "a592d9ebff91201788d76395c42cb9fe8604c4464140bb1cd91aaa185f77e04f"
+    },
+    "native/row-42.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-42.csv",
+      "sha256": "eadd7b2c662f542c85e48bade93fa2a3826a542c6d6db1ef698e506c237ff97d"
+    },
+    "native/row-43.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-43.csv",
+      "sha256": "c901003ec8590e7b63c4a7c35c32cd0f7ecf71b764181b6282bf7579dbf2d470"
+    },
+    "native/row-44.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-44.csv",
+      "sha256": "3aeafdad9f436a11387bfa1f0517caaa050958e1656024a223bb249c8efff670"
+    },
+    "native/row-45.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-45.csv",
+      "sha256": "0ce843bd2056f53c3793893131d22c3975698497b02d21b6a4033a70679b5ed0"
+    },
+    "native/row-46.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-46.csv",
+      "sha256": "55c919c3b3c3a3fa6a14bb533a7fce042e4ac5cd0da0c78847b6a4bba9b285da"
+    },
+    "native/row-47.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-47.csv",
+      "sha256": "e2174d41f2d8b832b92ffc1ec3470f5070b5a2446415f287891c023db26e5609"
+    },
+    "native/row-48.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-48.csv",
+      "sha256": "0f79c9a42f4bef615d89fef8c59ed5fa94ea089e61223ad46448cfa4071fb295"
+    },
+    "native/row-49.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-49.csv",
+      "sha256": "664cf47f017a76dd3e4ba32045be8ff1add3d2dc231d89431ad0f0bd918dff89"
+    },
+    "native/row-50.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-50.csv",
+      "sha256": "8f3cb891a17fcecd8de17c585dda3822611424a558203f7aaf132bc838fa97cb"
+    },
+    "native/row-51.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-51.csv",
+      "sha256": "8ba980242397c9a6df2347b14ac77af793e897ef579338080bd3633d85c178cc"
+    },
+    "native/row-52.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-52.csv",
+      "sha256": "48b703ce44ea2213b45a3adc02c33efdd2e4d85a13b062ba4ec491a70293a59f"
+    },
+    "native/row-53.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-53.csv",
+      "sha256": "ba66a74ff825bfabe8ad26f7986f77ece00967b68f77d6c62be8c0aa3b918cab"
+    },
+    "native/row-54.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-54.csv",
+      "sha256": "9de232479a94da562cb5e4a5078d2617187c15f2c0b4c4376be5b6f9209c6e8a"
+    },
+    "native/row-55.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-55.csv",
+      "sha256": "ff333972174f67f7bcfc4fef2ca08545f246cdaaf4c3d044f9af39d7a8f549ac"
+    },
+    "native/row-56.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-56.csv",
+      "sha256": "6602b44ae34ddf83b73cdd098f54fa43a76a0f5505465b4688f97d59eae5b8bb"
+    },
+    "native/row-57.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-57.csv",
+      "sha256": "5ce0ad9c559bde347f324fa78f1b8317763ba66b7af2a80628a98aca711831e9"
+    },
+    "native/row-58.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-58.csv",
+      "sha256": "36ef1b39fbf69b54ab20a3fbdd23c2df7c1939d42728528ec4a6e18bcf9104ca"
+    },
+    "native/row-59.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-59.csv",
+      "sha256": "0e9a62cff4bf1941566d561d6b84fc988e82437121bf1d7d764f8e0add4704ea"
+    },
+    "native/row-60.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-60.csv",
+      "sha256": "372af349fb413a7b5b4bc8554542337eeefe5239e2f50920982fc91ad9a2d81e"
+    },
+    "native/row-61.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-61.csv",
+      "sha256": "1c93d4a64caee3bcaea41edc9309790c03ee57a583748653e1737d88990f20cc"
+    },
+    "native/row-62.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-62.csv",
+      "sha256": "dfaea224193b652170a3b5335e1d89b07f1db47b4797b1d974780776690ae1d0"
+    },
+    "native/row-63.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/native/row-63.csv",
+      "sha256": "85708225ca2783e60f765d4f10b7c350fb45e3cceb958f65e1160dc89cadf3da"
+    },
+    "independent/row-0.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-0.csv",
+      "sha256": "823ba4063b82b941f137009a8999a88860a31ba3783b1d47dba66e2fd2c8f58b"
+    },
+    "independent/row-1.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-1.csv",
+      "sha256": "b1d47200c923b93a9c481df751798a5986dfec903dd28a3b0b04b8b2682c75df"
+    },
+    "independent/row-2.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-2.csv",
+      "sha256": "16a3238cac9838562ea27462b5fd92456989d19913f6964568efd1fcd8c22eff"
+    },
+    "independent/row-3.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-3.csv",
+      "sha256": "8572614fd936139ae5050796cedd515f13d28be31240d19affc30b510075debd"
+    },
+    "independent/row-4.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-4.csv",
+      "sha256": "16d117f4ba1ffbfc41b338fdb81c49850b75d90b662ad2c47fd2e623e8814c1c"
+    },
+    "independent/row-5.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-5.csv",
+      "sha256": "102aa8bf287f3c5909b28d1b1881dd00362577bf1344bd93ccf89ffaa30c613c"
+    },
+    "independent/row-6.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-6.csv",
+      "sha256": "5fa02b0b861770e1c21dc7f61daa0345b5911d1f392cbec7cd19578c55e0089d"
+    },
+    "independent/row-7.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-7.csv",
+      "sha256": "ab839d9c1a422153078b9c20dcd641a2ba36ea65fb304bb368d9b30494a1582a"
+    },
+    "independent/row-8.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-8.csv",
+      "sha256": "815f564a6223ec4173109afa1f00c71a5c5bf5a2c738f853218aa1a919a66bf4"
+    },
+    "independent/row-9.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-9.csv",
+      "sha256": "5006ae691d094e16d83390833e9f570e6757bd7a3f2034e00677d4982acf78f9"
+    },
+    "independent/row-10.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-10.csv",
+      "sha256": "b75fb76ce556e73384b6a57348a8c358dd0f6017c668fa39d782db8003e85e0a"
+    },
+    "independent/row-11.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-11.csv",
+      "sha256": "60fb56743fad422259c57fbf9a22bb1804a0304fe8c9310cb91680d0f5e41e42"
+    },
+    "independent/row-12.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-12.csv",
+      "sha256": "8038ae5a072a0c800f9883458790c54e7bd338d626d93cab838759e65e60ceb5"
+    },
+    "independent/row-13.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-13.csv",
+      "sha256": "1c1fa54abbd89a6f7cdf7e85c41867e729d5551549b8909261719453696d2d99"
+    },
+    "independent/row-14.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-14.csv",
+      "sha256": "311ff1e8c927dc8d54b488cc073e001df2513186fb4efea299e48c3fc18c9d6d"
+    },
+    "independent/row-15.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-15.csv",
+      "sha256": "2b36cfe1fa7fe888183ebd8dfd95079283bbaee78c3e5e6b20a09d18fec1e709"
+    },
+    "independent/row-16.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-16.csv",
+      "sha256": "2d441f05e05cf054778f68af8e86e4b318befb7f760aa493d5eed3a8f319a8ff"
+    },
+    "independent/row-17.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-17.csv",
+      "sha256": "2db2ef15c5a3bd7cbb05bab94c5f2f714e23a93a1398c3f9dffc325facba28a8"
+    },
+    "independent/row-18.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-18.csv",
+      "sha256": "275673897f072a821df74c085e48390f083494bd368bd37dfdbd187b9148ecef"
+    },
+    "independent/row-19.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-19.csv",
+      "sha256": "700a82c75dac1a9435ed289c8364f8c03b86aa7092d7027c59696afea851ceee"
+    },
+    "independent/row-20.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-20.csv",
+      "sha256": "ee2638b2f26d4f4c47b78ce9ffa5e07ad2fba070f4b4d926958cb45c6ea7b24d"
+    },
+    "independent/row-21.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-21.csv",
+      "sha256": "30d89e7af3e044c52a6807d1f76bb053c242920b9f214b21739d6c7fa04c383e"
+    },
+    "independent/row-22.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-22.csv",
+      "sha256": "7d0836548da5558b023ae280985a64c1f2e18ed1a70c6e1f2eb7c2183ee32217"
+    },
+    "independent/row-23.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-23.csv",
+      "sha256": "73a7c7a0e68ebf4ee4b75db9f1b04c0391ad5a836a9ccf6f4ce0eb7ec6e331a2"
+    },
+    "independent/row-24.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-24.csv",
+      "sha256": "fd0f247f1551d727ee01d892b83772cdeeb40069f712380594fd112c3190b1ec"
+    },
+    "independent/row-25.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-25.csv",
+      "sha256": "04e636977096496ca7bd91476b789106039c8955c4a4bba325591e9258e48a93"
+    },
+    "independent/row-26.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-26.csv",
+      "sha256": "ad490ea1f6f40681ae8be984c2e8f0ead22fdddaba1144af74bfc739ef17c90b"
+    },
+    "independent/row-27.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-27.csv",
+      "sha256": "cacdd5c9da342553917449ba3da14e0f95614384c5f271935fdb72605473e695"
+    },
+    "independent/row-28.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-28.csv",
+      "sha256": "f2c4211b6d0809b8853a2fe3de05b14d9aa5fce4ecc7a561ba71db4bc4e24939"
+    },
+    "independent/row-29.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-29.csv",
+      "sha256": "b8505a484d95ef440b809c92ac8059a160452a9bc406ce9f76686609381ac5da"
+    },
+    "independent/row-30.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-30.csv",
+      "sha256": "1680c8dc2e73826214a7fbfc4806f6f139edfb9db09480d34adbd352c9f8b165"
+    },
+    "independent/row-31.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-31.csv",
+      "sha256": "b63f9d663b1034f57d24bdf876d657fe9ef72ee5585642063442cbe97ecf0cda"
+    },
+    "independent/row-32.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-32.csv",
+      "sha256": "0e891e552fbbbf65d1732d41931b612e5aa6082a49cdb735ce1d1d25d73c226c"
+    },
+    "independent/row-33.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-33.csv",
+      "sha256": "767c274b3b66364c1fa932b3e13fae1a78a750ef2f0a1dcf32bf7aadcd56801e"
+    },
+    "independent/row-34.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-34.csv",
+      "sha256": "b6e49134aa29305646d5093f4085c8ba9af5a34331479795a50602e322a2c272"
+    },
+    "independent/row-35.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-35.csv",
+      "sha256": "3578013889843d121e665da8305ceb45716381c87be6f15f474e3ce2e229ac85"
+    },
+    "independent/row-36.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-36.csv",
+      "sha256": "b3ea9eba9c59e1f9542244d98c59c4ef44c67434c44331d615a2263893a106ba"
+    },
+    "independent/row-37.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-37.csv",
+      "sha256": "092174b40402e711b108afd82810cb8f3c36a2724cfce343cde13b32a80bd62e"
+    },
+    "independent/row-38.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-38.csv",
+      "sha256": "ac157058d3203c4de78eddb443e54928ad8e10bcaa3040bed68c6e007c79d9f4"
+    },
+    "independent/row-39.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-39.csv",
+      "sha256": "a11d59f01b73a7df16a0b653f8ddb4cd64a1383f9586766a5e37c2a0abc9596a"
+    },
+    "independent/row-40.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-40.csv",
+      "sha256": "b9d1fb164b7a4bffb7e2d3bffd298821eb34328e49f1b4c6b7200275f8110e68"
+    },
+    "independent/row-41.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-41.csv",
+      "sha256": "d0c2f6adc28d952638d3c8fe4d728816aaea7709028b783d73e30135cb48f7f8"
+    },
+    "independent/row-42.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-42.csv",
+      "sha256": "eb214acbe6d5529f3010a5e46a6c9ab57f10c3ced9c8850e2a95271cb42b602e"
+    },
+    "independent/row-43.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-43.csv",
+      "sha256": "8a467942c8fb97a070d67e8e48b6129e6ee378c7edd0dff978d3cb9e20cfaf8d"
+    },
+    "independent/row-44.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-44.csv",
+      "sha256": "b09fb31043020186e883eba978d2b744f7ac5d2b4ea6525888d3db8c65770374"
+    },
+    "independent/row-45.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-45.csv",
+      "sha256": "588b2df5f38bfd0d99519a12ccc7123981e2a478c480abfa915806e12c31f7b7"
+    },
+    "independent/row-46.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-46.csv",
+      "sha256": "b6fb3f695d3c1b42cdbbd08fef8bae5488087bfae18d6bd688f4be0cbe446c3c"
+    },
+    "independent/row-47.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-47.csv",
+      "sha256": "01e7880ecd55a203292f2d982fb5868a95c1cbc866f447a400352deb7ffb8593"
+    },
+    "independent/row-48.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-48.csv",
+      "sha256": "f164c645d0cf9a277f6b9e7d7df576583ee4ef31aa7b2d78c78fe229093066d6"
+    },
+    "independent/row-49.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-49.csv",
+      "sha256": "0564ca34b18fcd5c4f61394d429b300790b910aee9f5982ef4adfa7df6cd9b39"
+    },
+    "independent/row-50.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-50.csv",
+      "sha256": "f462a319016e988ab0fe9c6fe8c925ac14e2261435dad5239166b1e8c24967c3"
+    },
+    "independent/row-51.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-51.csv",
+      "sha256": "cd91c43da978d8ba8b70ef72c7e111947ad70ed2351e06745fd3534824bd941f"
+    },
+    "independent/row-52.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-52.csv",
+      "sha256": "8bc911405c9745d440fda310b256a5a714edf514090280f723104072154a9f42"
+    },
+    "independent/row-53.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-53.csv",
+      "sha256": "fb2199d792a99b547d5c6e8cf78e060688f4aa369d534a830780d72691750c90"
+    },
+    "independent/row-54.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-54.csv",
+      "sha256": "421ba47a23d0bc17e31930a34e7d157290356c2a38f535ffada616a2db301f4c"
+    },
+    "independent/row-55.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-55.csv",
+      "sha256": "ceea3885c4627eefac22297f6dcfe9636abe1926521a90b813313032676d1282"
+    },
+    "independent/row-56.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-56.csv",
+      "sha256": "231720848209e41f6c6ba10f18680ed0ef7250df8290fb4463f9a5134c3688f6"
+    },
+    "independent/row-57.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-57.csv",
+      "sha256": "058efa89b3eeefe0395df090e30b039d0510a0470558dd34156f53501a016fa7"
+    },
+    "independent/row-58.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-58.csv",
+      "sha256": "43815324cf097003dd35cf68bfa87a9bd375061be02d3dc64ce55f1c49559ae3"
+    },
+    "independent/row-59.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-59.csv",
+      "sha256": "398e47e06561124522c85480671e68af37e091e4eb64d235ee92fbedbef03db4"
+    },
+    "independent/row-60.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-60.csv",
+      "sha256": "1bcdeb5126fff87e0559016bfd42fb693f345c3568628ead8182b07580076b1a"
+    },
+    "independent/row-61.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-61.csv",
+      "sha256": "3753e1333f25b581134b16bf052e69e42a4e2c7390af6781af0e4c4926036806"
+    },
+    "independent/row-62.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-62.csv",
+      "sha256": "be29bc70fee2df5df1d6702fd3b850aebf2ab07e415189b1c8890b94b57d97ce"
+    },
+    "independent/row-63.csv": {
+      "source": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675-recovery-001/independent/row-63.csv",
+      "sha256": "bfeec0524d15e1442ac80bf23b6455d54f5a177f245ddc75521fed3ba18d5b65"
+    }
+  }
+}
