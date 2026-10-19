@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The first paper-table input](results/first-paper-table-input-2026-10-19) passes all 20,001 observation checks and fresh archive readback. Coverage is 15 released-code inputs and one paper-table input; no pairing is complete.
+
 [The released-code prefix](results/rule-m-prefix-2026-10-19) now has 15 audited inputs and 300,015 observations. RuleM/RuleM covers 14/50 seeds; no pairing is complete.
 
 [The first two paper-table Q-Learning/SARSA inputs](results/paper-table-rl-launch-2026-10-19) are running sequentially under a 2,100-second batch limit. Launch adds no completed-input credit.
