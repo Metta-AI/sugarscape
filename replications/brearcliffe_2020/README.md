@@ -26,6 +26,7 @@ Seven per-breed statistics feed Figures 3–9. The original population slider is
 The released experiment specifies only five repetitions and calls `random-seed new-seed`; it does not record historical seeds.
 The manuscript states learning rate 0.8 and discount rate 0.9; the source sets learning rate 0.9 and gamma 0.8.
 Keep the released-code interpretation separate from a prose-parameter sensitivity experiment; neither resolves historical settings by itself.
+[The pinned dependency audit](results/parameter-dependencies-2026-10-19) identifies twelve parameter-sensitive pairings and four pairings using only Rule M/EC. All 800 paired models retain identical seeds and differ only in the two literals. Coverage remains unchanged; source-level sharing is not credited as executed inputs.
 
 ## Recover source inputs
 
