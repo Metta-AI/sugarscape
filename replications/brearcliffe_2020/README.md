@@ -61,7 +61,7 @@ The [first bounded dispatcher batch](results/first-batch-complete-2026-10-19) co
 
 The [remaining Rule M/Rule M cohort](results/rule-m-cohort-launch-2026-10-19) is now running: 48 disjoint inputs target the complete fifty-repeat sample alongside the two audited inputs.
 
-The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specified and rejects incomplete samples before producing means. Its successful fifty-run path and independent numerical crosscheck remain pending.
+The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specified and rejects incomplete samples before producing means. [An independent R checker](results/cohort-verification-preparation-2026-10-19) is prepared for all means, standard deviations, and bootstrap intervals. The successful fifty-run path and numerical comparison remain pending.
 
 ## Remaining work
 

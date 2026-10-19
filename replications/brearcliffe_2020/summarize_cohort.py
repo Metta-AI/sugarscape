@@ -3,6 +3,7 @@
 import argparse
 from array import array
 import csv
+import gzip
 import hashlib
 import json
 import math
@@ -70,8 +71,10 @@ for count, row in enumerate(selected, 1):
 # Resample entire runs, keeping the fourteen endpoint metrics paired.
 rng = random.Random(20261019)
 bootstrap = [[] for _ in range(14)]
+bootstrap_indices = array('B')
 for _ in range(20000):
     indices = [rng.randrange(50) for _ in range(50)]
+    bootstrap_indices.extend(indices)
     for column in range(14):
         bootstrap[column].append(math.fsum(endpoints[i][column] for i in indices) / 50)
 intervals = []
@@ -86,6 +89,7 @@ for column, samples in enumerate(bootstrap):
                       'sample_sd': math.sqrt(m2[20000 * 16 + column + 2] / 49),
                       'pointwise_percentile_interval_95': bounds})
 args.new_output.mkdir()
+(args.new_output / 'bootstrap-indices.u8.gz').write_bytes(gzip.compress(bootstrap_indices.tobytes(), mtime=0))
 for name, values in [('means.csv', means), ('sample-sd.csv', array('d', (math.sqrt(v / 49) for v in m2)))]:
     with (args.new_output / name).open('x', newline='') as file:
         writer = csv.writer(file)
@@ -98,6 +102,8 @@ report = {'interpretation': args.interpretation, 'pair_index': args.pair_index,
           'audit_sha256': hashlib.sha256(args.audit_json.read_bytes()).hexdigest(),
           'trajectory_sha256': source_hashes, 'endpoint_statistics': intervals,
           'bootstrap': {'seed': 20261019, 'repetitions': 20000, 'unit': 'whole run',
+                        'indices_sha256': hashlib.sha256(bootstrap_indices.tobytes()).hexdigest(),
+                        'indices_format': '20000 rows of 50 zero-based uint8 run indices, row-major',
                         'quantile': 'linear interpolation, type7', 'coverage': 'pointwise, not simultaneous'},
           'scope': 'Arithmetic run means before logarithmic plotting; no published-result verdict from summary alone.'}
 (args.new_output / 'summary.json').write_text(json.dumps(report, indent=2) + '\n')
