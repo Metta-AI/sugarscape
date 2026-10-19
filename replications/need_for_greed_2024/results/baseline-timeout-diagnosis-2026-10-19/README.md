@@ -9,7 +9,7 @@ The sum of prior elapsed wall times is 29.378 hours; it is not measured CPU cons
 The failed run's retained trajectory contains 4,399 complete records through timestep 4,398, versus the required 5,000.
 Every completed record has the original seed, consecutive timestep, and finite scalar/array values. Its last population is 1,365.
 There was no stderr traceback. The native timeout receipt reports exit124 after1,800.008seconds.
-The raw4,630,527-byte file is retained losslessly in failed-trajectory.json.gz, with SHA-256 in partial-audit.json.
+The raw4,630,527-byte file is retained losslessly in failed-trajectory.partial.gz, with SHA-256 in partial-audit.json.
 Parsing only closes the unfinished array in memory; it does not alter the retained failed output or create a successful result.
 
 This identifies a timeout-planning error, not a demonstrated model mismatch or negative replication.
