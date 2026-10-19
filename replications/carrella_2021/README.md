@@ -1223,3 +1223,11 @@ Both rare-event tables contain one native occurrence and zero independent occurr
 Those thresholds were chosen after the exploratory runs and supply no confirmatory result for that cohort.
 The tool rejects pairing the new 512-seed protocol with the old 64-seed data before creating output.
 Use only the complete independently audited new cohort for its prospective analysis; its result remains pending.
+
+### Prospective 512+512 seed extension complete
+
+[All 1,024 new runs](results/seed-extension-complete-2026-10-19) pass audit for 513,024 observations, without exclusions.
+Persistent late prices occur in neither engine; final population below 50 occurs in 14/512 native versus 9/512 independent runs (Fisher p=0.399477).
+The maximum empirical-distribution difference across six metrics is 0.060546875, with joint permutation p=0.83465.
+Archive readback reproduces all audits and comparisons exactly; independent R checks reproduce distribution statistics and rare-event calculations.
+This resolves the bounded prospective diagnostic. Stochastic equivalence across parameter space and historical estimator discrepancies remain unresolved; the paper remains incomplete.
