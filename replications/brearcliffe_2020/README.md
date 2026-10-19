@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The paper-table Rule M cohort completes all 50 seeds](results/paper-rule-m-complete-cohort-2026-10-19). Every full trajectory exactly matches its paired released-code control. The 49 new inputs bring coverage to 652 inputs and 13,040,652 observations. Independent R checks pass; nine readable endpoint ranges overlap the paper and five remain unresolved.
+
 [The released-code evidence collector now handles paginated logs](results/paged-collector-recovery-2026-10-19). The original deadline and byte cap are preserved; the simulation continues unchanged.
 
 [Q-learning/SARSA completes all 50 seeds](results/q-sarsa-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Twelve of sixteen released-code cohorts are complete: 603 total audited inputs and 12,060,603 observations. All twelve readable endpoint ranges overlap the paper; two remain unresolved. These descriptive comparisons do not establish equivalence.
