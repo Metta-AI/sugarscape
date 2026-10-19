@@ -45,7 +45,9 @@ The [Figure 3 digitization](results/wealth-digitization-2026-10-19) recovers 30 
 
 A [bounded CPU host trial](results/cloud-qualification-launch-2026-10-19) is queued to verify two complete trajectories before scaling the frozen ensembles.
 
-The [first bounded dispatcher execution](results/first-batch-launch-2026-10-19) runs two new full-length inputs from the audited remaining manifest. Results and independent audits are pending.
+The [first bounded dispatcher batch](results/first-batch-complete-2026-10-19) completes both inputs and passes fresh archive audit. Released-code coverage is 3/800 inputs, including the earlier Rule M/EC input.
+
+The [remaining Rule M/Rule M cohort](results/rule-m-cohort-launch-2026-10-19) is now running: 48 disjoint inputs target the complete fifty-repeat sample alongside the two audited inputs.
 
 ## Remaining work
 
