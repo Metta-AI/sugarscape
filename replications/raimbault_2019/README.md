@@ -770,3 +770,5 @@ They do not establish a statistically reliable speedup or justify extrapolating 
 The experiment supplies exact-state qualification for these two inputs only; production retains the author implementation and existing cost estimate.
 The archive includes the experimental extension, paired source variants, launcher, outputs, failure records and independent auditor.
 Shared runtime jars remain external, with dependency provenance in the receipt.
+
+[Execution profiling](results/execution-profile-2026-10-19) preserves 20,000 Gini values and 5,570 exported world rows exactly across the two qualified inputs. Movement appears in 543/1,093 sampled stacks versus 37 for Gini update, suggesting a different optimization target. This is not a speedup or a revised full-grid cost estimate.
