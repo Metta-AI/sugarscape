@@ -1,6 +1,6 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
-Study status: native recorder discrepancy identified and corrected; full native comparison running. No reproduced-paper result yet.
+Study status: native recorder corrected and qualified across 20,000 ticks. No reproduced-paper result yet.
 
 Paper: [Creating Intelligent Agents: Combining Agent-Based Modeling with Machine Learning](https://doi.org/10.1007/978-3-030-83418-0_3).
 The [author-deposited release](https://www.comses.net/codebases/ffb52fc3-69e1-4bbd-b5d7-fa460617f74e/releases/1.0.0/) includes the NetLogo model, symmetric map, and ODD description.
@@ -24,7 +24,7 @@ The original source remains unchanged. This fixed seed is prospective, not a rec
 It records initial state and every subsequent tick, with both populations and all fourteen figure statistics.
 A complete run must contain 20,001 finite observations with consecutive tick values.
 The pilot has a 600-second wall limit, 1 GiB Java heap, and 50 MiB output cap. Partial outputs remain evidence, without completion credit.
-The first full pilot completed but failed recorder qualification. The [retained discrepancy and correction](results/recorder-qualification-2026-10-19) show exact short-run agreement after isolating measurement randomness. Corrected full-extent and native BehaviorSpace runs are active.
+The first full pilot completed but failed recorder qualification. The [retained discrepancy and correction](results/recorder-qualification-2026-10-19) show exact short-run agreement after isolating measurement randomness. The [full-horizon comparison](results/full-recorder-qualification-2026-10-19) now agrees exactly on all 320,016 values across 20,001 observations.
 
 Compile against the NetLogo application JARs, then run:
 
@@ -38,7 +38,7 @@ The external bounded launcher and exact command are retained in the launch recor
 
 ## Remaining work
 
-Validate the complete pilot and deterministic replay, then estimate the full 800-run cost.
+Qualify the remaining method pairings and estimate their runtime before the full 800-run ensemble. The measured Rule M/EC pairing projects to about 49 CPU-hours for 800 runs; this is not a measured full-sweep estimate.
 Resolve the released-code/prose parameter interpretations without silently changing the primary experiment.
 Implement the study behavior in the fork, qualify it against the native model, and compare every published figure using full repeated ensembles.
 Do not count a pilot, source audit, or five-repeat released sweep as a completed paper replication.
