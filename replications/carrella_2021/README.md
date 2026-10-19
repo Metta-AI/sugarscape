@@ -1173,3 +1173,7 @@ No simulation-source change was needed. The check does not establish stochastic 
 
 Compile `VisionProbe.java` against NetLogo6.1.1 and run `VisionProbe MODEL NEW_CSV`.
 Then run `python verify_vision.py NEW_CSV NEW_AUDIT` from this study directory.
+
+### Complete independent neural-network estimator
+
+[All five 5,000-input folds](results/independent-neuralnet5000-2026-10-19) pass audit for 25,000 predictions and 3,775,000 input cells. Independent Python arithmetic reproduces errors, coverage, widths and normalized scores. [The consolidated comparison](results/estimator-comparison-neuralnet-2026-10-19) now contains 70/75 reported-score pairs, 237,500 validated predictions and 35,862,500 input-cell checks. Only the five independent bootstrap-forest scores remain pending. Complete estimator evidence does not yet resolve historical discrepancies or establish paper completion.
