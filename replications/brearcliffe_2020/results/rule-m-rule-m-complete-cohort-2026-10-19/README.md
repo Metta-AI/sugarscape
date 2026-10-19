@@ -1,5 +1,6 @@
 # Complete Rule M / Rule M cohort
 
+The [horizontal calibration correction](../horizontal-calibration-correction-2026-10-19) supersedes this directory’s curve comparison. Simulation and arithmetic evidence remain unchanged.
 All 50 frozen seeds complete 20,000 ticks, totaling 1,000,050 observations.
 The 42 completed local inputs combine with eight remote recovery inputs; successful seeds were never rerun.
 Recovery exits zero after eight successes and no unstarted inputs, with 1,471.34 seconds of batch execution.

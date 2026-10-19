@@ -18,7 +18,7 @@ summary = json.loads(summary_path.read_text())
 assert summary['runs'] == 50 and summary['observations'] == 1000050
 assert len(summary['trajectory_sha256']) == 50
 encoded = args.curves.read_bytes()
-assert hashlib.sha256(encoded).hexdigest() == 'aa946661747421eb83134a2cf9ca91a09b0150e563729e8df09696e7320615df'
+assert hashlib.sha256(encoded).hexdigest() == '4ec231b3714289deeab9e92bae99efb3fe4c0cb2552e6ba2e7fd2565a12bc8fd'
 curves = json.loads(gzip.decompress(encoded))
 with (args.cohort / 'means.csv').open() as file:
     means = list(csv.DictReader(file))
@@ -45,7 +45,7 @@ comparisons = []
 for figure in curves['figures']:
     records = [r for r in figure['records'] if
                (r['group_A'], r['group_B']) == (summary['group_A'], summary['group_B'])]
-    assert len(records) == 572
+    assert len(records) == 2 * (figure['x_calibration']['right_column'] - figure['x_calibration']['left_column'] + 1)
     for record in records:
         field = metrics[figure['figure']][['A', 'B'].index(record['breed'])]
         item = {'figure': figure['figure'], 'metric': field, **record}
@@ -73,7 +73,7 @@ for figure in curves['figures']:
             item['signed_range_separation'] = (model_lo - paper_hi if model_lo > paper_hi else
                                                model_hi - paper_lo if model_hi < paper_lo else 0)
         comparisons.append(item)
-assert len(comparisons) == 4004
+assert len(comparisons) == 3876
 report = {'group_A': summary['group_A'], 'group_B': summary['group_B'],
           'interpretation': summary['interpretation'], 'runs': 50,
           'summary_sha256': hashlib.sha256(summary_path.read_bytes()).hexdigest(),

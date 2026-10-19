@@ -1,5 +1,6 @@
 # Complete Rule M / EC cohort
 
+The [horizontal calibration correction](../horizontal-calibration-correction-2026-10-19) supersedes this directory’s curve comparison. Simulation and arithmetic evidence remain unchanged.
 All 50 prospectively frozen seeds complete 20,000 ticks, totaling 1,000,050 observations.
 The 49 remote runs passed full-trajectory audit before snapshotting; fresh local readback verified all 490 files.
 The union with previous work contains 94 inputs and 1,880,094 observations. All 45 prior audit records are unchanged.

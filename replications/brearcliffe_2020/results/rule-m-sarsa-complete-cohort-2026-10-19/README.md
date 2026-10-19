@@ -1,5 +1,6 @@
 # Complete Rule M / SARSA cohort
 
+The [horizontal calibration correction](../horizontal-calibration-correction-2026-10-19) supersedes this directory’s curve comparison. Simulation and arithmetic evidence remain unchanged.
 All 50 frozen released-code seeds complete 20,000 ticks, totaling 1,000,050 observations.
 Remote audit and fresh local readback verify all 500 run files. The union preserves all 152 prior records exactly.
 Total audited coverage is 202 inputs and 4,040,202 observations: 200 released-code and two paper-table inputs.

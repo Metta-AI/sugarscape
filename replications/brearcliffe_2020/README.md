@@ -14,7 +14,7 @@ Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical
 
 [The first two paper-table Q-Learning/SARSA inputs](results/paper-table-rl-launch-2026-10-19) completed sequentially within the 2,100-second batch limit. Both outputs are now independently audited.
 
-[Full Figure3–9 curves](results/full-curve-digitization-2026-10-19) now include 52,808 visible raster bounds across 112 panels. All 224 previous endpoints are preserved; hidden or disconnected segments remain unresolved.
+[Corrected Figure 3–9 horizontal calibration](results/horizontal-calibration-correction-2026-10-19) uses each figure’s actual plot boundary, verified across all 112 panels. It supersedes the earlier full-curve digitization and four cohort comparisons. Shared early combat/starvation deviations disappear; the EC vision discrepancy remains. All retained vertical measurements and simulation summaries are unchanged.
 
 [Figures 4–9 endpoint targets](results/metric-digitization-2026-10-19) now retain 170 visible raster bounds and 22 unresolved endpoints across six metrics. Repeated extraction is byte-identical; these image bounds are not statistical confidence intervals.
 
@@ -94,7 +94,7 @@ Do not count a pilot, source audit, or five-repeat released sweep as a completed
 ## Complete-cohort curve comparison
 
 `compare_curves.py COHORT_DIRECTORY METRIC_CURVES_JSON_GZ NEW_OUTPUT` compares a complete 50-seed summary with the pinned Figure 3–9 digitization.
-It retains 4,004 records per pairing, including unresolved paper segments.
+It retains 3,876 records per pairing, including unresolved paper segments.
 For each visible interval, it evaluates the piecewise-linear simulation mean over the horizontal calibration interval.
 Signed separation is positive above the paper range, negative below, and zero when the ranges overlap.
 These descriptive separations are not statistical acceptance tests; adjacent raster columns are dependent.
@@ -102,5 +102,5 @@ Paper seeds and between-run uncertainty remain unavailable.
 
 The command records hashes of all consumed summary, mean, and digitization files.
 Run `verify_cohort.R` on the same summary before interpreting the comparison.
-Current validation covers lint, CLI parsing, and the pinned digitization's seven 572-record pairing selections.
+Current validation covers two real-PDF extractions, pre-change endpoint execution, four complete-cohort comparisons, and exact preservation of 4,576 vision/metabolism comparison records. Use `results/horizontal-calibration-correction-2026-10-19/metric-curves.json.gz` with the current comparator.
 The [complete Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) now passes the full summary, independent R, and curve-comparison workflows. The Rule M/Rule M cohort now also passes those complete workflows.

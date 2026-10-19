@@ -1,5 +1,6 @@
 # Complete Rule M / Q-learning cohort
 
+The [horizontal calibration correction](../horizontal-calibration-correction-2026-10-19) supersedes this directory’s curve comparison. Simulation and arithmetic evidence remain unchanged.
 All 50 frozen released-code seeds complete 20,000 ticks, totaling 1,000,050 observations.
 Remote audit and fresh local readback verify all 500 run files. The union preserves all 102 prior records exactly.
 Total audited coverage is 152 inputs and 3,040,152 observations: 150 released-code and two paper-table inputs.
