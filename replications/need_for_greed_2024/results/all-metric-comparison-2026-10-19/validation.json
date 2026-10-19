@@ -1,0 +1,56 @@
+{
+  "comparison_repeat_byte_identical": true,
+  "primary_run_values_checked": 2400,
+  "primary_max_scaled_error": 4.2533505100898695e-16,
+  "aging_inclusion_diagnostic": [
+    {
+      "convention": "death_percent/positive_rows/including_initial",
+      "median_percent": 1.6882245040460866,
+      "distance_to_path_points": 0.1390829132039336,
+      "within_nominal_stroke": true
+    },
+    {
+      "convention": "death_percent/zero_rows_set_zero/including_initial",
+      "median_percent": 1.6882245040460866,
+      "distance_to_path_points": 0.1390829132039336,
+      "within_nominal_stroke": true
+    },
+    {
+      "convention": "death_percent/zero_extended/including_initial",
+      "median_percent": 1.686308559336875,
+      "distance_to_path_points": 0.13238925028881374,
+      "within_nominal_stroke": true
+    },
+    {
+      "convention": "death_percent/ratio_of_sums/including_initial",
+      "median_percent": 1.6664995564019502,
+      "distance_to_path_points": 0.06318329267752895,
+      "within_nominal_stroke": true
+    },
+    {
+      "convention": "death_percent/positive_rows/excluding_initial",
+      "median_percent": 1.6885621489468958,
+      "distance_to_path_points": 0.14026253030885466,
+      "within_nominal_stroke": true
+    },
+    {
+      "convention": "death_percent/zero_rows_set_zero/excluding_initial",
+      "median_percent": 1.6885621489468958,
+      "distance_to_path_points": 0.14026253030885466,
+      "within_nominal_stroke": true
+    },
+    {
+      "convention": "death_percent/zero_extended/excluding_initial",
+      "median_percent": 1.6866458210487423,
+      "distance_to_path_points": 0.13356752866112914,
+      "within_nominal_stroke": true
+    },
+    {
+      "convention": "death_percent/ratio_of_sums/excluding_initial",
+      "median_percent": 1.666571436534015,
+      "distance_to_path_points": 0.06343441755184616,
+      "within_nominal_stroke": true
+    }
+  ],
+  "scope": "Including aging contradicts the written metric and remains a diagnostic, not a replacement result or historical pipeline proof."
+}

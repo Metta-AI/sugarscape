@@ -1,6 +1,6 @@
 # The Need for Greed in Artificial Decisionmakers
 
-Status: partial native reproduction. This study has 164 freshly audited inputs and 815,329 observations. One population median agrees graphically with Figure 2; the full tables and figures remain incomplete.
+Status: partial native reproduction. This study has 164 freshly audited inputs and 815,329 observations. Four reported medians agree graphically at selfishness 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
 
 Kremer-Herman and Gupta, IEEE ISTAS 2024, pages 182–190. [Author manuscript](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf).
 The paper explicitly names [author release v2024.1](https://github.com/digital-terraria-lab/sugarscape/tree/b9ca671ab7591c7b3606f2d76c33eda344d626d1). Its source is MIT-licensed; source and dataset hashes appear in `source-audit.json`.
@@ -31,6 +31,8 @@ The workspace must contain `sugarscape-blueprints` at its recorded evidence path
 The first auditor attempt compared a nested hash mapping with its enclosing document. It failed before reporting results. The corrected schema access, original script, and failure receipt are preserved; no simulation was rerun or excluded.
 
 [Native endpoint controls](results/endpoint-qualification-launch-2026-10-19) now test whether baseline configurations reproduce sweep endpoints. The selected selfishness-zero pair matches all 137 observations byte-for-byte through extinction. The 0.5 and 1.0 pairs remain pending; existing coverage totals are unchanged.
+
+[All five measurements at selfishness 0.37](results/all-metric-comparison-2026-10-19) now have raw-trajectory arithmetic checks. Four medians agree graphically. Starvation-plus-combat death rates do not; adding aging deaths gives graphical agreement but contradicts the written metric. This remains a measurement investigation, not a validated negative replication.
 
 ## Remaining work
 
