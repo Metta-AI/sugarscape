@@ -17,3 +17,5 @@ The complete recursive tree contains no license-named paths. Licensing remains u
 The first failed license lookup is retained separately.
 
 No simulations, study PR, or completion credit are claimed. Next steps are notebook/history reconciliation and a bounded native control.
+
+The released analysis notebook is now hash-verified against its Git blob. Its loader references `Sugarscape_Alt -10-25-2023`, absent from the complete pinned tree. Saved output shows 100 rows for each of three model types, but the required basic-only and optimizer-only datasets are absent. The released Parquet directories instead include two arbitrageur variants and a mixed variant. Saved notebook output is not independent reproduction; its source revision and underlying data remain unresolved. The older failed GUI lookup is confirmed as a deletion, not a recovered rename.
