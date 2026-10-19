@@ -1,5 +1,7 @@
 # Carrella (2021): Sugarscape parameter estimation
 
+[The complete replay auditor is qualified](results/gam-replay-auditor-qualified-2026-10-19) on all five modern-runtime folds. It recomputes 125 metrics, checks all 18,750 predictions/bounds, and rejects an altered exported score. Historical replay results remain pending.
+
 [Full five-fold GAM qualification passes](results/gam-full-runtime-qualified-2026-10-19): 18,750 predictions/bounds, five final random states, and all 25 aggregate metrics match the original modern-runtime workflow. [The pinned historical control is now running](results/gam-historical-full-launch-2026-10-19) under its declared bounds; no paper verdict changes.
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
