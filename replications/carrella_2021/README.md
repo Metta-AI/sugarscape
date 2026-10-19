@@ -1251,3 +1251,10 @@ All271 archive members verify; fresh extraction repeats the audit and comparison
 Independent R arithmetic confirms six distribution differences and both rare-event tests.
 The six-metric maximum difference is0.1875, with unadjusted joint permutation p0.6955.
 The remaining nine settings and declared30-test correction are still required; no equivalence or whole-paper verdict follows.
+
+### Second cohort compute-limit recovery
+
+[Original row4876](results/parameter-second-cohort-recovery-launch-2026-10-19) hit its600-second limit after64 native and44 independent completions.
+The failed archive and partial seed44 are preserved; no incomplete-cohort credit is claimed.
+A separate600-second continuation runs only unfinished independent seeds44–63 with unchanged source and parameters.
+The other original cohorts continue; full reconciliation and the declared30-test analysis remain required.
