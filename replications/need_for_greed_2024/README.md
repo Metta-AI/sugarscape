@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The tenth Table IV checkpoint](results/table4-tenth-prefix-2026-10-19) adds 25 disjoint inputs and 125,025 observations. Current coverage is 757 inputs and 2,808,539 observations; the active row covers 352/500. Tables I–III remain exact.
+
 [The first newly authorized sweep batch](results/unassigned-first-batch-pilots-2026-10-19) passes both native runtime gates. Two unique inputs add 344 observations: coverage is now 732 inputs and 2,683,514 observations. Its remaining 504 inputs run under a $10 reservation.
 
 [The ninth Table IV checkpoint](results/table4-ninth-prefix-2026-10-19) adds 25 disjoint inputs and 125,025 observations. Coverage reaches 730 inputs and 2,683,170 observations. Tables I–III remain exact; the active Table IV row covers 327/500 inputs.
