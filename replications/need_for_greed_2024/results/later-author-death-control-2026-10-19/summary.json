@@ -1,0 +1,23 @@
+{
+  "inputs": 100,
+  "observations": 495265,
+  "cohort_sha256": "1d52f6fb29eae7ece01ea244049bac6f5c4bf6a5e3b208fb4d5e3363496d7b56",
+  "source": {
+    "repository": "https://github.com/digital-terraria-lab/sugarscape",
+    "commit": "cc0408afbb09d8d124ce6f7e6b1844d202d0f8b6",
+    "path": "plots/plot.py",
+    "sha256": "dded8a707026aca8a07e55f72594b199cbfc939aabd9bdf7b4ae573997d7ae67",
+    "scope": "Later release v2024.3; not the paper-pinned v2024.1 or proven historical figure pipeline."
+  },
+  "function": "findMeans",
+  "numpy_max_absolute_error": 0.0,
+  "per_timestep_rates_checked": 5001,
+  "disease_deaths_total": 0.0,
+  "death_percent": {
+    "time_mean_including_initial": 1.6707321795762633,
+    "time_mean_excluding_initial": 1.6710663260121785,
+    "time_median_including_initial": 1.6461383852561813,
+    "time_median_excluding_initial": 1.646141720719374
+  },
+  "scope": "Unmodified v2024.3 author findMeans function on per-timestep sums from original v2024.1 trajectories. Post-extinction contributions remain zero, matching parseDataset's initialization. This includes aging and pools populations across seeds; temporal summaries are diagnostics, not the paper's stated metric or proven historical pipeline."
+}

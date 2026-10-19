@@ -34,6 +34,8 @@ The first auditor attempt compared a nested hash mapping with its enclosing docu
 
 [All five measurements at selfishness 0.37](results/all-metric-comparison-2026-10-19) now have raw-trajectory arithmetic checks. Four medians agree graphically. Starvation-plus-combat death rates do not; adding aging deaths gives graphical agreement but contradicts the written metric. This remains a measurement investigation, not a validated negative replication.
 
+[The later author plotting control](results/later-author-death-control-2026-10-19) also gives graphical agreement for death rates when aging is included. Its 5,001 rates pass independent arithmetic checks, but neither its later source version nor its pooled aggregation establishes the paper’s historical pipeline.
+
 ## Remaining work
 
 Recover and freshly verify the remaining 336 baseline trajectories; execute or reuse all 10,000 remaining sweep inputs. Reproduce Tables I–IV and Figures 2–6 with declared aggregation and denominator conventions. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.

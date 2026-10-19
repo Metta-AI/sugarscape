@@ -1,0 +1,31 @@
+{
+  "paper_centerline": 1.6484086496849086,
+  "half_width_points": 0.34172001481056213,
+  "comparisons": [
+    {
+      "convention": "time_mean_including_initial",
+      "percent": 1.6707321795762633,
+      "distance_to_path_points": 0.07797064673811502,
+      "inside_nominal_stroke": true
+    },
+    {
+      "convention": "time_mean_excluding_initial",
+      "percent": 1.6710663260121785,
+      "distance_to_path_points": 0.07913804138971446,
+      "inside_nominal_stroke": true
+    },
+    {
+      "convention": "time_median_including_initial",
+      "percent": 1.6461383852561813,
+      "distance_to_path_points": 0.007951753940377015,
+      "inside_nominal_stroke": true
+    },
+    {
+      "convention": "time_median_excluding_initial",
+      "percent": 1.646141720719374,
+      "distance_to_path_points": 0.007940100959904602,
+      "inside_nominal_stroke": true
+    }
+  ],
+  "scope": "Later author ensemble-rate temporal summaries; graphical compatibility only, not recovered historical Figure5 pipeline."
+}
