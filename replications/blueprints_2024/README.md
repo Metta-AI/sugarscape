@@ -1121,3 +1121,10 @@ Allowing every missing run any mean population in [0,2500] bounds the final medi
 Excluding the initial observation gives 1126.25–1143.32; zero-extending the ten extinct runs leaves these bounds unchanged.
 All four bounds contain the extracted Figure 10 ink interval, 1132.78–1143.03, without assuming random completion order.
 This establishes compatibility only. The cohort, historical averaging conventions, and paper verdict remain incomplete.
+
+## Selfishness 0.37 checkpoint 477
+
+[Another 25 disjoint inputs](results/selfishness037-eighth-prefix-2026-10-19) pass 125,025 observation checks; every run reaches 5,000 steps.
+Producer and local audits agree exactly, and all 460 prior inventory records remain unchanged.
+Coverage reaches **478/500** for this condition and **485/100,000** supplementary inputs overall.
+The remaining 22 seeds are required before condition aggregation; paper completion remains unchanged.
