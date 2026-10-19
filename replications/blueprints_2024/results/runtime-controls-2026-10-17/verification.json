@@ -1,0 +1,62 @@
+{
+  "controls": 6,
+  "observations": 30006,
+  "byte_exact": 6,
+  "runs": [
+    {
+      "entry": "0.0-benthamHalfLookaheadBinary158402133555746433.config",
+      "byte_exact": true,
+      "records_exact": true,
+      "observations": 5001,
+      "sha256": "dd873c5bac4e0ff7292d021a3d133d01d177503ca4033af717b9e9c8f5b63fbc",
+      "elapsed_seconds": 531.6997766341083,
+      "reference_elapsed_seconds": 1438.5923523269594
+    },
+    {
+      "entry": "0.5-benthamHalfLookaheadBinary158402133555746433.config",
+      "byte_exact": true,
+      "records_exact": true,
+      "observations": 5001,
+      "sha256": "d15f5aaf113d3d234b6a81cc20e3bd083d3b9342a3b05531742f4f007f64f355",
+      "elapsed_seconds": 99.64285957906395,
+      "reference_elapsed_seconds": 301.58439539792016
+    },
+    {
+      "entry": "1.0-benthamHalfLookaheadBinary158402133555746433.config",
+      "byte_exact": true,
+      "records_exact": true,
+      "observations": 5001,
+      "sha256": "544a5b25938d0316866ee4176b6f9ee8c77bd36f1a12dbc8f0b132fc97da0d14",
+      "elapsed_seconds": 335.21549292700365,
+      "reference_elapsed_seconds": 978.6915188329294
+    },
+    {
+      "entry": "1-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433.config",
+      "byte_exact": true,
+      "records_exact": true,
+      "observations": 5001,
+      "sha256": "0be99e8b57d11657f01a93bb60bdddbcd79d0f61c6e66735f8af6735dea48c75",
+      "elapsed_seconds": 525.6296247099526,
+      "reference_elapsed_seconds": 1408.3345003868453
+    },
+    {
+      "entry": "50-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433.config",
+      "byte_exact": true,
+      "records_exact": true,
+      "observations": 5001,
+      "sha256": "513dda7af8b05f36ad3dae2e0309b762b5e981f7f688a46d0ffc4d9b47554086",
+      "elapsed_seconds": 683.5066732070409,
+      "reference_elapsed_seconds": 1847.6826923908666
+    },
+    {
+      "entry": "99-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433.config",
+      "byte_exact": true,
+      "records_exact": true,
+      "observations": 5001,
+      "sha256": "fe7ef9a73d3ae3879b30e6735814baebdc70b4f29bfa45d01de19a65234c4b81",
+      "elapsed_seconds": 317.24505189200863,
+      "reference_elapsed_seconds": 819.6520515198354
+    }
+  ],
+  "scope": "Independent full-byte comparison to previously audited retained CPython trajectories; shared-host timings do not establish controlled speedup. One seed and six configurations do not establish universal runtime equivalence or paper completion."
+}

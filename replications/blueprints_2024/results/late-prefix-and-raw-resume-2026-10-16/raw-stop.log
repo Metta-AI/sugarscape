@@ -1,0 +1,15 @@
+observations": 204, "final_timestep": 203, "final_population": 0, "outcome": "dead", "trajectory_sha256": "8eb85ba28d87190aecd5bd9449142af8adee74768d1b0f149f19afb3baa0d698"}
+Archived rawSugarscape original seed 5322047387230311691
+{"entry": "rawSugarscape5322088368832454314.config", "seed": 5322088368832454314, "model": "rawSugarscape", "elapsed_seconds": 0.9391402499968535, "observations": 143, "final_timestep": 142, "final_population": 0, "outcome": "dead", "trajectory_sha256": "163f268582c385be6fba0406b36c5e678f7e7c873d8ec606eba0843815a3b293"}
+Archived rawSugarscape original seed 5322088368832454314
+{"entry": "rawSugarscape5358781984101459954.config", "seed": 5358781984101459954, "model": "rawSugarscape", "elapsed_seconds": 1.0004922500011162, "observations": 174, "final_timestep": 173, "final_population": 0, "outcome": "dead", "trajectory_sha256": "4b8d5dc7167793f946e913e693c402b01bf2996f93445647070c7e61af315f26"}
+Archived rawSugarscape original seed 5358781984101459954
+{"entry": "rawSugarscape5375629497885114591.config", "seed": 5375629497885114591, "model": "rawSugarscape", "elapsed_seconds": 980.1436837079964, "observations": 5001, "final_timestep": 5000, "final_population": 1195, "outcome": "better_or_equal", "trajectory_sha256": "2d4312bf1b6c45b8d1d940bdff35fe1f9d4d0a2b24f2912e9b4e413517b0df64"}
+Archived rawSugarscape original seed 5375629497885114591
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/run_batch.py", line 63, in <module>
+    main()
+  File "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/run_batch.py", line 43, in main
+    assert shutil.disk_usage(args.output).free >= 1024**3
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

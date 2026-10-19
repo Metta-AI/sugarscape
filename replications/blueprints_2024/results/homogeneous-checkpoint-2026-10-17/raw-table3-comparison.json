@@ -1,0 +1,35 @@
+{
+  "model": "rawSugarscape",
+  "runs": 500,
+  "observations": 819456,
+  "printed_table3_counts": [
+    348,
+    5,
+    147
+  ],
+  "author_plot_counts": [
+    348,
+    5,
+    147
+  ],
+  "author_plot_numeric_match": true,
+  "paper_prose_counts": [
+    348,
+    6,
+    146
+  ],
+  "equality_runs": [
+    {
+      "seed": 4208064564498143183,
+      "outcome": "better_or_equal",
+      "final_population": 250,
+      "trajectory_sha256": "5cff7e1e8f82e08ea22ff2ceb3de5dbfe0b0eb66c1ac6f120b7d1a8a4ff93d65",
+      "observations": 5001
+    }
+  ],
+  "interpretation": "Printed numerical row reproduces under released plotting semantics. Paper prose instead groups equality with worse; one retained trajectory exposes that boundary discrepancy. No full-paper verdict.",
+  "raw_terminal_exit": {
+    "exit_code": 0
+  },
+  "coverage_sha256": "c4e4ffe72a3255968a2c59fb2ca09cad227403b52beb1fb330ac4836965a7b80"
+}

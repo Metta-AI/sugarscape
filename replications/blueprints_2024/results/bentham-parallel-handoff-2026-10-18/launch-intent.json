@@ -1,0 +1,11 @@
+{
+  "instance_id": "i-01a30b896a3709d39",
+  "unix": 1792293828.243237,
+  "remaining_inputs": 348,
+  "interval": [
+    152,
+    500
+  ],
+  "workers": 32,
+  "command": "set -eu\ncd /home/ubuntu/blueprints-bentham-parallel-001\nprintf \"%s  %s\\n\" 4faa4c5b856601551c7f357ddfe149ad9d73c84c41f327c05dffc1e3cd6a1739 plan.json | sha256sum -c -\nprintf \"%s  %s\\n\" 72dfa46e4961a74bf6338ba5d5ce2867f902e9ea9b9a16a04f2d886deb94fc9e stop-receipt.json | sha256sum -c -\nprintf \"%s  %s\\n\" 3c6c1d378c0331c7130d8143e8dccc27d805f48bb55dfa6ad0d172460490feeb local-completed.jsonl | sha256sum -c -\nprintf \"%s  %s\\n\" 9cf3871499868b1761c207b91557e9065f6e0484d7870a58e25af17217557324 launch-command.template.sh | sha256sum -c -\nbash launch-command.template.sh\n"
+}

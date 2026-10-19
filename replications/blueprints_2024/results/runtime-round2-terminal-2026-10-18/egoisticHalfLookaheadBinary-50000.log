@@ -1,0 +1,23 @@
+11 50000-egoisticHalfLookaheadBinary2055514061623047894.config 978
+12 50000-egoisticHalfLookaheadBinary2228866846466310541.config 0
+13 50000-egoisticHalfLookaheadBinary2433662336288954484.config 0
+14 50000-egoisticHalfLookaheadBinary2434926124998512636.config 474
+15 50000-egoisticHalfLookaheadBinary252293489594950658.config 0
+Traceback (most recent call last):
+  File "/home/dev/sugarscape/blueprints-runtime2-source-001/run_runtime.py", line 94, in <module>
+    result = subprocess.run(command, cwd=engine, env={**os.environ, 'PYTHONHASHSEED': '0', 'PYTHONDONTWRITEBYTECODE': '1'},
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 2141, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 2045, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/home/dev/sugarscape/blueprints-runtime2-source-001/venv/bin/python', '/home/dev/sugarscape/blueprints-runtime2-source-001/engine/sugarscape.py', '--conf', '/home/dev/sugarscape/blueprints-runtime-round2-002/runs/egoisticHalfLookaheadBinary-50000/50000-egoisticHalfLookaheadBinary2732067017264549820/config.json']' timed out after 5179.917526293 seconds

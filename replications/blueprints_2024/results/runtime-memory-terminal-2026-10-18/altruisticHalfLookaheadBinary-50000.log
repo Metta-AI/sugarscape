@@ -1,0 +1,21 @@
+3 50000-altruisticHalfLookaheadBinary1626428329783443257.config 1065
+4 50000-altruisticHalfLookaheadBinary163513919832119345.config 339
+5 50000-altruisticHalfLookaheadBinary1833994657676604369.config 0
+Traceback (most recent call last):
+  File "/root/sugarscape/blueprints-runtime-memory-001/source/run_runtime.py", line 94, in <module>
+    result = subprocess.run(command, cwd=engine, env={**os.environ, 'PYTHONHASHSEED': '0', 'PYTHONDONTWRITEBYTECODE': '1'},
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 2141, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+  File "/root/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 2045, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/root/sugarscape/blueprints-runtime-memory-001/source/venv/bin/python', '/root/sugarscape/blueprints-runtime-memory-001/source/engine/sugarscape.py', '--conf', '/root/sugarscape/blueprints-runtime-memory-001/runs/altruisticHalfLookaheadBinary-50000/50000-altruisticHalfLookaheadBinary1867017187136367179/config.json']' timed out after 6452.562872639857 seconds

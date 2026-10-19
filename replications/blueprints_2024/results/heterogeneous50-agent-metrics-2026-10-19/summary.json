@@ -1,0 +1,143 @@
+{
+  "inputs": 500,
+  "observations": 1781148,
+  "population_summary_sha256": "c0dd4bad847e2f524831168084d1302db0f5b27ccab8653222badb1369f35275",
+  "metrics": {
+    "meanWealth": {
+      "conventions": {
+        "observed_including_initial": {
+          "median": 159.84485202959408,
+          "median_exact": "159876821/1000200"
+        },
+        "observed_excluding_initial": {
+          "median": 159.866867,
+          "median_exact": "159866867/1000000"
+        },
+        "zero_extended_including_initial": {
+          "median": 131.59089282143572,
+          "median_exact": "131617211/1000200"
+        },
+        "zero_extended_excluding_initial": {
+          "median": 131.607257,
+          "median_exact": "131607257/1000000"
+        }
+      },
+      "target": {
+        "figure": 18,
+        "page_one_based": 18,
+        "frame_index": 29,
+        "median_index": 30,
+        "axis_range": [
+          0,
+          350
+        ],
+        "pdf_x": 168.2845001220703,
+        "outline_intersections_pdf_y": [
+          121.97889390582274,
+          122.58096939315993
+        ],
+        "ink_interval": [
+          158.69479447075892,
+          161.10119870616043
+        ]
+      },
+      "within_paper_ink": {
+        "observed_including_initial": true,
+        "observed_excluding_initial": true,
+        "zero_extended_including_initial": false,
+        "zero_extended_excluding_initial": false
+      }
+    },
+    "agentMeanTimeToLive": {
+      "conventions": {
+        "observed_including_initial": {
+          "median": 17.85409194946725,
+          "median_exact": "200005823/11202240"
+        },
+        "observed_excluding_initial": {
+          "median": 17.869964,
+          "median_exact": "4467491/250000"
+        },
+        "zero_extended_including_initial": {
+          "median": 17.096745650869828,
+          "median_exact": "1140011/66680"
+        },
+        "zero_extended_excluding_initial": {
+          "median": 17.098715,
+          "median_exact": "3419743/200000"
+        }
+      },
+      "target": {
+        "figure": 19,
+        "page_one_based": 18,
+        "frame_index": 88,
+        "median_index": 89,
+        "axis_range": [
+          10,
+          20
+        ],
+        "pdf_x": 166.19060134887695,
+        "outline_intersections_pdf_y": [
+          368.50280529605243,
+          369.1618976902537
+        ],
+        "ink_interval": [
+          17.811923766023035,
+          17.887188383840225
+        ]
+      },
+      "within_paper_ink": {
+        "observed_including_initial": true,
+        "observed_excluding_initial": true,
+        "zero_extended_including_initial": false,
+        "zero_extended_excluding_initial": false
+      }
+    },
+    "meanAgeAtDeath": {
+      "conventions": {
+        "observed_including_initial": {
+          "median": 60.654839032193564,
+          "median_exact": "6066697/100020"
+        },
+        "observed_excluding_initial": {
+          "median": 60.66697,
+          "median_exact": "6066697/100000"
+        },
+        "zero_extended_including_initial": {
+          "median": 60.654839032193564,
+          "median_exact": "6066697/100020"
+        },
+        "zero_extended_excluding_initial": {
+          "median": 60.66697,
+          "median_exact": "6066697/100000"
+        }
+      },
+      "target": {
+        "figure": 21,
+        "page_one_based": 18,
+        "frame_index": 192,
+        "median_index": 193,
+        "axis_range": [
+          0,
+          70
+        ],
+        "pdf_x": 427.09959411621094,
+        "outline_intersections_pdf_y": [
+          349.4457686631966,
+          350.0348573603026
+        ],
+        "ink_interval": [
+          60.416107033073615,
+          60.8870011782153
+        ]
+      },
+      "within_paper_ink": {
+        "observed_including_initial": true,
+        "observed_excluding_initial": true,
+        "zero_extended_including_initial": true,
+        "zero_extended_excluding_initial": true
+      }
+    }
+  },
+  "scope": "Medians of per-run recorded agent metrics under declared averaging conventions; zero extension is a sensitivity convention, not observed post-extinction agent behavior. One condition only; historical plotting choices unresolved."
+}

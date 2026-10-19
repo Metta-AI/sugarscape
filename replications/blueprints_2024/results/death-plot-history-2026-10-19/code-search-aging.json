@@ -1,0 +1,15 @@
+{
+  "command": [
+    "gh",
+    "search",
+    "code",
+    "\"agentAgingDeaths\" \"population\"",
+    "--limit",
+    "20",
+    "--json",
+    "repository,path,url"
+  ],
+  "exit_code": 0,
+  "stdout": "[]\n",
+  "stderr": ""
+}

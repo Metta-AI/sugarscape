@@ -1,0 +1,32 @@
+{
+  "validated_runs": 1,
+  "required_interval_runs": 97,
+  "complete_interval": false,
+  "complete_group": false,
+  "model": "altruisticHalfLookaheadBinary",
+  "steps": 50000,
+  "ordinal_interval": [
+    3,
+    4
+  ],
+  "counts": {
+    "dead": 0,
+    "worse": 0,
+    "better_or_equal": 1
+  },
+  "observations": 50001,
+  "results": [
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary1626428329783443257.config",
+      "seed": 1626428329783443257,
+      "observations": 50001,
+      "final_population": 1065,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "c4b2b2ca8953e4f21b5bf991a02191ea7567722b7642e9f5ec26903cb47ffbd2"
+    }
+  ],
+  "ledger_sha256": "61820c67f3755eee822598dcdd71d67f1a096f5607da294f79a662eeaafe2f33",
+  "manifest_sha256": "fdaaa9253aadb028b1ed1ae3049a034cb937f7c2879563d3cf75d91f86c57e0b",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}

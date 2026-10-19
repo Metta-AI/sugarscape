@@ -1,0 +1,8 @@
+{
+  "initial_assertion": "NumPy floating median equals float of exact Fraction median bit-for-bit",
+  "outcome": "AssertionError for excluding-initial conventions",
+  "numpy_value": 938.3139000000001,
+  "fraction_to_float": 938.3139,
+  "difference": 1.1368683772161603e-13,
+  "resolution": "NumPy sorts to the same exact rational middle pair; conversion before averaging introduces one rounding unit. Primary exact result unchanged."
+}

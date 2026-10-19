@@ -1,0 +1,44 @@
+0 5000-benthamHalfLookaheadBinary1071049487305188627.config 1020
+1 5000-benthamHalfLookaheadBinary1134302205739354507.config 961
+2 5000-benthamHalfLookaheadBinary1312465699454735571.config 1213
+3 5000-benthamHalfLookaheadBinary1626428329783443257.config 1301
+4 5000-benthamHalfLookaheadBinary163513919832119345.config 1116
+5 5000-benthamHalfLookaheadBinary1833994657676604369.config 1327
+6 5000-benthamHalfLookaheadBinary1867017187136367179.config 1146
+7 5000-benthamHalfLookaheadBinary1911248790777082224.config 1342
+8 5000-benthamHalfLookaheadBinary1962672463621369878.config 1104
+9 5000-benthamHalfLookaheadBinary1994771685947063175.config 1341
+10 5000-benthamHalfLookaheadBinary203185877083823426.config 1119
+11 5000-benthamHalfLookaheadBinary2055514061623047894.config 1332
+12 5000-benthamHalfLookaheadBinary2228866846466310541.config 1119
+13 5000-benthamHalfLookaheadBinary2433662336288954484.config 1148
+14 5000-benthamHalfLookaheadBinary2434926124998512636.config 1290
+15 5000-benthamHalfLookaheadBinary252293489594950658.config 1103
+16 5000-benthamHalfLookaheadBinary2732067017264549820.config 1139
+17 5000-benthamHalfLookaheadBinary2803676329200740340.config 992
+18 5000-benthamHalfLookaheadBinary2812980183337209316.config 1206
+19 5000-benthamHalfLookaheadBinary2848282104444495269.config 1371
+20 5000-benthamHalfLookaheadBinary2865380092365041549.config 1382
+21 5000-benthamHalfLookaheadBinary3106238916268054039.config 1346
+22 5000-benthamHalfLookaheadBinary3331735877162924787.config 1176
+23 5000-benthamHalfLookaheadBinary3366786063798218481.config 1153
+24 5000-benthamHalfLookaheadBinary3410580859196785342.config 1136
+25 5000-benthamHalfLookaheadBinary3417618192233233395.config 1004
+Traceback (most recent call last):
+  File "/home/dev/sugarscape/blueprints-runtime2-source-001/run_runtime.py", line 94, in <module>
+    result = subprocess.run(command, cwd=engine, env={**os.environ, 'PYTHONHASHSEED': '0', 'PYTHONDONTWRITEBYTECODE': '1'},
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 2141, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dev/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 2045, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/home/dev/sugarscape/blueprints-runtime2-source-001/venv/bin/python', '/home/dev/sugarscape/blueprints-runtime2-source-001/engine/sugarscape.py', '--conf', '/home/dev/sugarscape/blueprints-long5000-002/benthamHalfLookaheadBinary/5000-benthamHalfLookaheadBinary3488193512351447750/config.json']' timed out after 214.65248269600124 seconds

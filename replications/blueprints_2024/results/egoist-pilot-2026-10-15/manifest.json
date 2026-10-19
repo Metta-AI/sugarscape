@@ -1,0 +1,30 @@
+{
+  "experiment": {
+    "seed": 0,
+    "model": "egoist",
+    "timesteps": 5000,
+    "release": "651925a5f7634fa3dd0f66c0621e7118e89807f8"
+  },
+  "status": "started",
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-dtl-release-reference/sugarscape.py",
+    "--conf",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-egoist-seed0-002/config.json"
+  ],
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "pythonhashseed": "0",
+  "engine": "/Users/relh/Code/workspace/sugarscape-dtl-release-reference",
+  "source_sha256": {
+    "agent.py": "9df67be8d2897e4a9458e2a5dc583322ef917169576531b6a117a22fca32df37",
+    "cell.py": "77045821408174a9e94828aff6066e5c4db64a7950ea33e2d9c9e272d288605d",
+    "disease.py": "0c7ff8be7a3abb60c8cab02a3c2c8d0ca7a51c7fe4b281679c58907f2ca9ac0a",
+    "environment.py": "ba746b2581d4e606e26cd353681c329fe9f5b3c2b18acd547d17cc6ec4c8c018",
+    "ethics.py": "ee035b1e5361b3b3257a564c437c41fb787e5f07863f3d91355d7ddfd47798a4",
+    "gui.py": "fa73cd93f3547cd9cc7da0baeacf3c0c3769299081cb2833644885cb1638f107",
+    "setup.py": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+    "sugarscape.py": "f223ef3dded57077c67b48ba505224ade2220b290665bc5f69bd32b78b3a406a"
+  },
+  "config_sha256": "eaf0197ffa9ff0a6f642d3eddee2e8c84decdc16cdef7639d3b9a68734315dcc",
+  "interpretation": "Historical-release candidate; the paper's exact code revision and original seeds are unreported."
+}

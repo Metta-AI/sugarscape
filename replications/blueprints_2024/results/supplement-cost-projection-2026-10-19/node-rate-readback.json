@@ -1,0 +1,75 @@
+{
+  "chip": "cpu-8",
+  "clock_lock": false,
+  "created_by": "you",
+  "custom_image": {
+    "digest": "sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956",
+    "facts": {
+      "bash": true,
+      "home": "/root",
+      "home_hides": [],
+      "home_source": "user_home",
+      "nvcc": false,
+      "python3": false,
+      "sudo": false,
+      "uid": 0
+    },
+    "home": "/root",
+    "note": "your own image, supervised by the platform: its entrypoint never runs (the platform keeps the node alive for run_command), and only the home path survives stops - everything else resets every wake"
+  },
+  "disk": "intact",
+  "durable_as_of": "2026-10-19T07:05:23.610+00:00",
+  "id": "b787247e-4d63-4f25-b72f-544d5307bbe8",
+  "image": "ubuntu:22.04",
+  "mission": "relh-sugarscape-replications",
+  "name": "relh-sugarscape-selfishness037-cpu8-20261018-v1",
+  "object": "node",
+  "profiling": false,
+  "rate": {
+    "calendar": {
+      "band": "weekday",
+      "next_cheaper": {
+        "band": "Friday",
+        "per_min": "$0.00804/min",
+        "per_min_usd_micros": 8040,
+        "percent_off": 33,
+        "starts_at": "2026-10-23T07:00:00Z"
+      },
+      "note": "Fridays 33% off, weekends 20% off (US Pacific) - applied to the minutes that run on those days, not locked at create",
+      "percent_off": 0
+    },
+    "gpu_count": 1,
+    "idle_window_minutes": 15,
+    "idle_window_usd": "$0.18",
+    "idle_window_usd_micros": 180000,
+    "minimum_minutes": 15,
+    "node_per_min": "$0.012/min",
+    "node_per_min_usd_micros": 12000,
+    "per_min": "$0.012/min",
+    "per_min_usd_micros": 12000,
+    "session_minimum_usd": "$0.18",
+    "session_minimum_usd_micros": 180000
+  },
+  "region": "us-west-2",
+  "resources": {
+    "cpu_limit": 8.0,
+    "memory_limit_bytes": 34359738368,
+    "note": "this container's cgroup budget - the CPU limit is a CFS quota, which os.cpu_count(), /proc/cpuinfo, psutil and free cannot see: they all report the HOST. Size parallelism (dataloader num_workers, multiprocessing.Pool, make -j) and memory to THESE numbers. Also inside the container: $GMN_CPU_LIMIT, $GMN_MEMORY_LIMIT_BYTES, with OMP_NUM_THREADS, RAYON_NUM_THREADS, MAX_JOBS and PYTHON_CPU_COUNT preset to the budget, so the OpenMP, Rust and torch-extension-build pools size to it. They are set on the CONTAINER, so they outrank an ENV baked into a custom image; override them in run_command's env, not a Dockerfile. GNU nproc answers the budget too (it reads OMP_NUM_THREADS) - busybox/Alpine nproc does not, so check yours on a custom image. What reports the host everywhere is os.cpu_count() (and PYTHON_CPU_COUNT only reaches it on Python 3.13+): read $GMN_CPU_LIMIT instead of os.cpu_count() anywhere you size a pool."
+  },
+  "status": "stopped (disk intact)",
+  "stopped": {
+    "at": "2026-10-19T07:05:21.993753+00:00",
+    "note": "stop_node was called - by you, another agent or member of this workspace, or an operator. list_audit_events (event node.stop) names who",
+    "ran_seconds": 34354,
+    "reason": "stop_requested"
+  },
+  "wake_estimate": {
+    "assumes_contested": true,
+    "estimate_basis": "queue from 117 recent cpu-8 wake departures over 7d; spin-up from 45 cpu-8 wake samples; no recent wake history for this shape",
+    "estimated_ready_seconds": 4051,
+    "estimated_ready_seconds_p90": 24303,
+    "note": "what a wake requested right now would be quoted, from the wake queue as it stands - a reading, not a reservation; conditions at your actual wake may differ, and a wake when the shape has capacity free is near-immediate. Wakes are served before creates. If this disk holds the only copy of files you will need soon, weigh this number before relying on a stop/wake round trip - snapshot_node or export_data keeps a durable copy a wake never has to wait for.",
+    "queued_wakes": 0
+  },
+  "yours": true
+}

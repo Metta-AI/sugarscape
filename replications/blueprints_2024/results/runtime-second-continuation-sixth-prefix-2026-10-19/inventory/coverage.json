@@ -1,0 +1,549 @@
+{
+  "unique_inputs": 935,
+  "required_inputs": 1200,
+  "observations": 3757784,
+  "new_since_published": {
+    "inputs": 8,
+    "observations": 100986
+  },
+  "groups": [
+    {
+      "model": "altruisticHalfLookaheadBinary",
+      "steps": 500,
+      "validated_runs": 100,
+      "complete_original_group": true,
+      "observations": 26212
+    },
+    {
+      "model": "altruisticHalfLookaheadBinary",
+      "steps": 5000,
+      "validated_runs": 100,
+      "complete_original_group": true,
+      "observations": 156712
+    },
+    {
+      "model": "altruisticHalfLookaheadBinary",
+      "steps": 50000,
+      "validated_runs": 34,
+      "complete_original_group": false,
+      "observations": 454237
+    },
+    {
+      "model": "benthamHalfLookaheadBinary",
+      "steps": 500,
+      "validated_runs": 100,
+      "complete_original_group": true,
+      "observations": 50100
+    },
+    {
+      "model": "benthamHalfLookaheadBinary",
+      "steps": 5000,
+      "validated_runs": 80,
+      "complete_original_group": false,
+      "observations": 400080
+    },
+    {
+      "model": "benthamHalfLookaheadBinary",
+      "steps": 50000,
+      "validated_runs": 5,
+      "complete_original_group": false,
+      "observations": 250005
+    },
+    {
+      "model": "egoisticHalfLookaheadBinary",
+      "steps": 500,
+      "validated_runs": 100,
+      "complete_original_group": true,
+      "observations": 26129
+    },
+    {
+      "model": "egoisticHalfLookaheadBinary",
+      "steps": 5000,
+      "validated_runs": 100,
+      "complete_original_group": true,
+      "observations": 165629
+    },
+    {
+      "model": "egoisticHalfLookaheadBinary",
+      "steps": 50000,
+      "validated_runs": 16,
+      "complete_original_group": false,
+      "observations": 251668
+    },
+    {
+      "model": "rawSugarscape",
+      "steps": 500,
+      "validated_runs": 100,
+      "complete_original_group": true,
+      "observations": 29004
+    },
+    {
+      "model": "rawSugarscape",
+      "steps": 5000,
+      "validated_runs": 100,
+      "complete_original_group": true,
+      "observations": 186504
+    },
+    {
+      "model": "rawSugarscape",
+      "steps": 50000,
+      "validated_runs": 100,
+      "complete_original_group": true,
+      "observations": 1761504
+    }
+  ],
+  "source_audits": [
+    {
+      "path": "replications/blueprints_2024/results/runtime-altruistic500-complete-2026-10-17/batch-audit/audit.json",
+      "sha256": "3b5d88d46d15711dba7c362f3d74513a9a540da5f48707c34f3a7975a522c551",
+      "records": 99
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-altruistic500-complete-2026-10-17/pilot-audit/audit.json",
+      "sha256": "ae4baccb36541eb6772b1d6160beeb148e93cac07a362c5e0be07a15c90a32dc",
+      "records": 1
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-batch-2026-10-17/audit.json",
+      "sha256": "3755bbcb5208d86182c58ad27e3639ad3e08096a51d6e2d6211cc85b592e1205",
+      "records": 10
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-bentham500-complete-2026-10-17/final-audit/audit.json",
+      "sha256": "95f323084b1e1327ab82c96efbcb82b6b072971a67946d7d7282adf2a0b0ba8b",
+      "records": 13
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-bentham500-complete-2026-10-17/prefix-audit/audit.json",
+      "sha256": "f8fd984e5d00a19241420381e3cbedca9eec49fd138a443ae435081f86205dda",
+      "records": 87
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-bentham500-prefix-2026-10-17/audit.json",
+      "sha256": "459904388915f64b29ee66c1489ffd8d9e5394a8044da540cc515ec3d024572c",
+      "records": 33
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-egoistic500-complete-2026-10-17/audit.json",
+      "sha256": "deadb3559c7fc4b1dc1c09ae3d2c006ecc4590847e75ceb942ffc81f467cf6e1",
+      "records": 100
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-local-recovery-complete-2026-10-17/audit.json",
+      "sha256": "5a800b8ed443e2940a30383550f64614bcd8ed58d02b6335417be5188ee1998b",
+      "records": 11
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-raw500-complete-2026-10-17/audit.json",
+      "sha256": "bbf635792db479653afec5e53fce87b3e043b77a8ffff5beffbe3e9d8fe067a3",
+      "records": 99
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-raw5000-complete-2026-10-17/audit.json",
+      "sha256": "342fefdfa3315bfca19c3e4da72c29b84cf3159dd2e6d576484648bcb25838db",
+      "records": 100
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-recovery-2026-10-17/altruistic-pilot-audit/audit.json",
+      "sha256": "b23618a6fed48b1d1821f597727425ba56209ab423eb24480eba721330b84691",
+      "records": 1
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-recovery-2026-10-17/audit-proof-run/audit.json",
+      "sha256": "45ef6e3800a5c9a011a3afa2ce467078ed7cbcebef86f277c94650669b6ba7a7",
+      "records": 5
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-recovery-2026-10-17/audit-recovered-checkpoint/audit.json",
+      "sha256": "404755e17f14847a85330a0e2ffbeec84b98221b52d6404033e47266930a3f82",
+      "records": 1
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-recovery-2026-10-17/audit-resumed-run/audit.json",
+      "sha256": "adc16fc2543876bae48fc09b66e1be0386d0ebc06a8d9c76cda9c3e8ebbfc8fc",
+      "records": 4
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-runner-2026-10-17/audit.json",
+      "sha256": "ae4baccb36541eb6772b1d6160beeb148e93cac07a362c5e0be07a15c90a32dc",
+      "records": 1
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-surviving-checkpoint-002-2026-10-17/audit-bentham/audit.json",
+      "sha256": "b18f77eda7d909dbee68e130cb6907eb5c5e886f62fd814b9d2eb320dfb408e8",
+      "records": 20
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-surviving-checkpoint-002-2026-10-17/audit-ego/audit.json",
+      "sha256": "d27382804b958462a2cf3674f960bbdaa01446e484bc474f4f0e3cf67ffa0e65",
+      "records": 85
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-surviving-checkpoint-2026-10-17/benthamHalfLookaheadBinary/audit.json",
+      "sha256": "78e80d46d199a4c230efeeaca016fa03f710b7bb02a57a4124d9fc7c70bd82f6",
+      "records": 19
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-surviving-checkpoint-2026-10-17/egoisticHalfLookaheadBinary/audit.json",
+      "sha256": "93bbf8ae4347cae6090f71fa350e91add8a7f55b94890dfc9960582806a4854c",
+      "records": 67
+    },
+    {
+      "path": "replications/blueprints_2024/results/linux-portability-2026-10-17/pilot-raw-audit.json",
+      "sha256": "fa72a6f7b2e52fc6be30ff3decaf7412792a8573de8d42ee9e0bfabf549d5557",
+      "records": 1
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-ensembles-2026-10-17/ego5000/audit.json",
+      "sha256": "4b1d2c61f6d10800c68ba1c2ea2550febca73c9f9bd9669ad699c0d463b0cf9e",
+      "records": 100
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-ensembles-2026-10-17/bentham5000/audit.json",
+      "sha256": "1bbc922b34b8c08c3ab68eadb5029d74a69b99da527fb5352e97cc7a43a134c9",
+      "records": 26
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-ensembles-2026-10-17/altru5000/audit.json",
+      "sha256": "8fc6d8c8f42b57f7e451fd76d3bab0f56bfe7eb1330cbd5d80c1e454840e061c",
+      "records": 17
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-ensembles-2026-10-17/raw50000/audit.json",
+      "sha256": "c4cb86fe53f3a099740a7206dd3df8daafafc7cbbde7036b1a5ef827b8e61306",
+      "records": 2
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-2026-10-17/round2/audit-egoisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "bcd943136b3a7b771fb5e8b8ff80fd53af4dc9d0b81ddbd1a92ea8b3b7a5538e",
+      "records": 7
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-2026-10-17/round2/audit-benthamHalfLookaheadBinary-5000/audit.json",
+      "sha256": "8d91a77523f446bd105f7199fbe8646b212bae214c3f9cffd0b0b1900a25a227",
+      "records": 2
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-2026-10-17/recovery/audit-altruisticHalfLookaheadBinary-5000/audit.json",
+      "sha256": "77e1c9ef9a9eeb3c63c75d4ca718830b4b661ebca6749be2283d7d856c036ef6",
+      "records": 29
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-2026-10-17/recovery/audit-rawSugarscape-50000/audit.json",
+      "sha256": "870af0bcc47212232078f1239ab012100851b424439e73382fa4ebd489139e21",
+      "records": 3
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-second-2026-10-17/recovery/audit-altruisticHalfLookaheadBinary-5000/audit.json",
+      "sha256": "fa19e863255ce4698165bdf6333f26d42005949d314ad286b8a37f9e9a27e0ce",
+      "records": 32
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-second-2026-10-17/recovery/audit-rawSugarscape-50000/audit.json",
+      "sha256": "73279ed41a0dc2ebb1e75026f5b58e866bfe86d7b92f3c3ecd72f0ac29e7060a",
+      "records": 9
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-second-2026-10-17/round2/audit-benthamHalfLookaheadBinary-5000/audit.json",
+      "sha256": "9311a04ed791c53693321de8ac1c2f5639639d3933800454cad34e66b9b729ac",
+      "records": 4
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-second-2026-10-17/round2/audit-egoisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "bcd943136b3a7b771fb5e8b8ff80fd53af4dc9d0b81ddbd1a92ea8b3b7a5538e",
+      "records": 7
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-third-2026-10-17/recovery/audit-altruisticHalfLookaheadBinary-5000/audit.json",
+      "sha256": "708817fd5528421921f8a5ee756f82739256c4a20bbf6ac3f7a66e3275024f3e",
+      "records": 61
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-third-2026-10-17/recovery/audit-rawSugarscape-50000/audit.json",
+      "sha256": "73279ed41a0dc2ebb1e75026f5b58e866bfe86d7b92f3c3ecd72f0ac29e7060a",
+      "records": 9
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-third-2026-10-17/round2/audit-benthamHalfLookaheadBinary-5000/audit.json",
+      "sha256": "246788f4b604925f0b4477f197b545c0f80e9fcd392ba7bda13eb6f576171f02",
+      "records": 8
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-third-2026-10-17/round2/audit-egoisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "5e916130c2e85769e34a266dcdaaf4b7dbf5d844aaed72425bb12188011be4d1",
+      "records": 9
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-fourth-2026-10-17/recovery/audit-altruisticHalfLookaheadBinary-5000/audit.json",
+      "sha256": "b39a68ece021ee5a0bc4e08e77ff4564f528d97c4d91afe30c754df0a3b2cc30",
+      "records": 66
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-fourth-2026-10-17/recovery/audit-rawSugarscape-50000/audit.json",
+      "sha256": "409f4edbc3ce9b1d96012f987ac6f04d9afb1745fa1feff4aa1351a8bf8a176e",
+      "records": 11
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-fourth-2026-10-17/round2/audit-benthamHalfLookaheadBinary-5000/audit.json",
+      "sha256": "036fc211024aeaff4b7b9a737d15784810d8c91b67254799be8c492de281f82e",
+      "records": 10
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-fourth-2026-10-17/round2/audit-egoisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "5e916130c2e85769e34a266dcdaaf4b7dbf5d844aaed72425bb12188011be4d1",
+      "records": 9
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-fifth-2026-10-17/recovery/audit-altruisticHalfLookaheadBinary-5000/audit.json",
+      "sha256": "6ab91066e7525f106f9ee1719594e3fa302b0815a03aea971a5cb2ab1be3e0b6",
+      "records": 79
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-fifth-2026-10-17/recovery/audit-rawSugarscape-50000/audit.json",
+      "sha256": "93e42c6383e63ab069a0e18673edf0abab25af50845e0d037e41e8a85c91d6cc",
+      "records": 13
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-fifth-2026-10-17/round2/audit-benthamHalfLookaheadBinary-5000/audit.json",
+      "sha256": "4167a6a91014dec0ebc83b6d2ea7f8cf29643c293120d490c5c3476260aee7c3",
+      "records": 14
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-fifth-2026-10-17/round2/audit-egoisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "9781c5712f44d43b13dc87af277275ecac5cadf757f18a368d2a714b0349e477",
+      "records": 10
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-sixth-2026-10-17/recovery/audit-altruisticHalfLookaheadBinary-5000/audit.json",
+      "sha256": "7e4adb320a27b7d20d925dfd0bd5ec3d1717d59c2aff1eb8189add8731031426",
+      "records": 83
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-sixth-2026-10-17/recovery/audit-rawSugarscape-50000/audit.json",
+      "sha256": "8c585c58bf9b6e68ec887db807decb49315c4f0774f37c5b3886eef4a34a1a53",
+      "records": 27
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-sixth-2026-10-17/round2/audit-benthamHalfLookaheadBinary-5000/audit.json",
+      "sha256": "37487db344ab86beab15074a6a20905e04105d97edb06a4d891b62330cceceec",
+      "records": 26
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-checkpoints-sixth-2026-10-17/round2/audit-egoisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "68a1b40fc2a2095e490b4743755dfb1dae5481692b78063942976027ab721ba5",
+      "records": 11
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-storage-readback-2026-10-17/audit/audit.json",
+      "sha256": "994816c173049b4f8819d6571c06930b62ad449df8d6e72442d64f3c6225aa10",
+      "records": 2
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-storage-readback-third-2026-10-17/blueprints-recovery-003/audit/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "0748fecf67dfef17e6477916945e5dab7e50993d761ace5d477335e4b31fa93b",
+      "records": 1
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-storage-readback-third-2026-10-17/blueprints-recovery-003/audit/rawSugarscape-50000/audit.json",
+      "sha256": "613cfd8b9fc2b2c18a89b7a4844f66133026facdd1d9b81314e0cb170de1487a",
+      "records": 6
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-storage-readback-third-2026-10-17/blueprints-round2-002/audit/benthamHalfLookaheadBinary-5000/audit.json",
+      "sha256": "b77a87e1455ce719bb5636dbad69972c5214296f42239f0367c8254c45b21599",
+      "records": 7
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/storage-handoff-20261017-001/blueprints-round2-002/audit-0006/audit.json",
+      "sha256": "15d562f6fd0ffeeee88eede07a2752bbde61dfc9d9fb06f26c0c737928323ff9",
+      "records": 14
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/storage-handoff-20261017-001/blueprints-recovery-003/audit-0007/rawSugarscape-50000/audit.json",
+      "sha256": "a4c0b685801d414c9257ea1817b744bac406b36cc4ed7fd7aaec9b8e86e9e42b",
+      "records": 20
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/storage-handoff-20261017-001/blueprints-recovery-003/audit-0007/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "631ec5b5f4c89126d27c89bacbae98205cce639e392f1dcd97761f8f68680e4e",
+      "records": 3
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-checkpoint10-001/audit/raw/audit.json",
+      "sha256": "40d84c9d2efc81847cb0104a27cde9c13f73bf0bd171898e4f227fae0a558cc1",
+      "records": 28
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-checkpoint10-001/audit/altruistic/audit.json",
+      "sha256": "631ec5b5f4c89126d27c89bacbae98205cce639e392f1dcd97761f8f68680e4e",
+      "records": 3
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-checkpoint10-001/audit/bentham/audit.json",
+      "sha256": "10e23e4000f43fcacbeffb017877ddce37360543bc582e967f08c2cb67f011f3",
+      "records": 23
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-checkpoint10-001/audit/egoistic/audit.json",
+      "sha256": "e561d8b9ef65abdc80c378271bf06642a6d07403c47399bcca3cf114b26ebe78",
+      "records": 5
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-round2-terminal-001/audit-benthamHalfLookaheadBinary-5000/audit.json",
+      "sha256": "5038610cf029bad50b77a5447decf32bbd33d3630df9809dcfd26ed81b8683f0",
+      "records": 28
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-round2-terminal-001/audit-egoisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "e561d8b9ef65abdc80c378271bf06642a6d07403c47399bcca3cf114b26ebe78",
+      "records": 5
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham50k-high-audit-001/audit/audit.json",
+      "sha256": "606e62a742798f183d5934f8d916f21a1226887f03c8805b2e8702e61b7f38ce",
+      "records": 2
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-001/audits/rawSugarscape-50000/audit.json",
+      "sha256": "ba8d1e0e09590e3170b8af5bc38e04c1d4e8b3a301367ac91b08d30b7cd2b2c0",
+      "records": 4
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-001/audits/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "cfe1b9e2ba5ea57e990bc1184328bc327fb14be87cd3fcb7a644a3002ceaabd0",
+      "records": 1
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham50k-low-prefix-001/audit/audit.json",
+      "sha256": "ad01eab9868499727e22e212fd9995c864ac2ab308972ae248f41f92c3b22433",
+      "records": 2
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-002/audits/rawSugarscape-50000/audit.json",
+      "sha256": "1e2bb871dbb09c7a3e2b5114166f9da541e148028a7e7877962721867514d545",
+      "records": 7
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-002/audits/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "12bbdb1b41495a7c0065f893fa0282de917d9633523709a1470460e6012dbf32",
+      "records": 3
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-003/audits/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "12bbdb1b41495a7c0065f893fa0282de917d9633523709a1470460e6012dbf32",
+      "records": 3
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-prefix-003/audits/rawSugarscape-50000/audit.json",
+      "sha256": "604fcedd07005d679a2b769dd5f08875e2db9591943b36d881bd4f5c1c01dfa9",
+      "records": 10
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-terminal-001/audits/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "12bbdb1b41495a7c0065f893fa0282de917d9633523709a1470460e6012dbf32",
+      "records": 3
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-terminal-001/audits/rawSugarscape-50000/audit.json",
+      "sha256": "1b0651b4576403470ac42bc685699bf9b830ac485926eaf9ab66bb9dba6d8f50",
+      "records": 11
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham50k-memory-terminal-002/audit/audit.json",
+      "sha256": "a36bbd68073a6931ed59a4b6d0e90ffcb33d8e25dcf6d295fcec513a6929748a",
+      "records": 3
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-continuation-audit-005/audit/audit.json",
+      "sha256": "082a71aa5e6fae8fc59dc1300ffae000881b622ac3bcc31b3068deb1774d74bb",
+      "records": 4
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-memory-003/audit-0007/audit.json",
+      "sha256": "b259e96891041609d70ee65d978b97efe05887dd47c6f20b8655c6409c8ecb11",
+      "records": 7
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-continuation-third-prefix-2026-10-18/audit/audit.json",
+      "sha256": "066d584da56704c2f9eb4d9a9807141d2000d0f886cfc69769a404df757ff5fa",
+      "records": 8
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-continuation-fourth-prefix-2026-10-19/audit/audit.json",
+      "sha256": "fddafa1f817080bb9adfab20298240ef85c70347d68c10aa1835903fa36cbf3c",
+      "records": 11
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-continuation-terminal-prefix-2026-10-19/rawSugarscape-50000/audit.json",
+      "sha256": "7a21a51ef3ad34b511d2031aa3d2f6b90f25be96c8ca2928fc4ad2dec042aac7",
+      "records": 20
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-continuation-terminal-prefix-2026-10-19/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "dab090ff8a5212b370fd0e9ab80dfd1faca8da17abb4649aeffb4c5afc4be043",
+      "records": 16
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-prefix-2026-10-19/rawSugarscape-50000/audit.json",
+      "sha256": "43d86dad309a29c1fd00fa2e7308b99b21cf13a5bf9aff2c3de140e6fc943354",
+      "records": 1
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-prefix-2026-10-19/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "09391024fa57bbbaa9fdba3a65d2e52233e1bc216126d53728cadfba16bbe135",
+      "records": 6
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-second-prefix-2026-10-19/rawSugarscape-50000/audit.json",
+      "sha256": "a3d97be1a814f5d4e3bf48cd4d66f72f32da003acdc7754fc52922c48f6ae6f4",
+      "records": 2
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-second-prefix-2026-10-19/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "09391024fa57bbbaa9fdba3a65d2e52233e1bc216126d53728cadfba16bbe135",
+      "records": 6
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-third-prefix-2026-10-19/rawSugarscape-50000/audit.json",
+      "sha256": "5c762419c06c346a9ba80d8d557dc3106742588b51f1295a4506dea8e826acc1",
+      "records": 8
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-third-prefix-2026-10-19/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "09391024fa57bbbaa9fdba3a65d2e52233e1bc216126d53728cadfba16bbe135",
+      "records": 6
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-fourth-prefix-2026-10-19/rawSugarscape-50000/audit.json",
+      "sha256": "167bf69ba7ce8e4a45b4b5a9452c83250b5c57c907ce4599f66aa66fbff3ec3a",
+      "records": 9
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-fourth-prefix-2026-10-19/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "09391024fa57bbbaa9fdba3a65d2e52233e1bc216126d53728cadfba16bbe135",
+      "records": 6
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-fifth-prefix-2026-10-19/rawSugarscape-50000/audit.json",
+      "sha256": "85d33d1d10aea8104f8a9410116e1769808c1293b4e3ea1250a4fe698d993f3d",
+      "records": 12
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-fifth-prefix-2026-10-19/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "09391024fa57bbbaa9fdba3a65d2e52233e1bc216126d53728cadfba16bbe135",
+      "records": 6
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-sixth-prefix-2026-10-19/rawSugarscape-50000/audit.json",
+      "sha256": "9732a42997188d774ae21fbd03df485dc02fb2729f2c978af37a3d613b974e95",
+      "records": 14
+    },
+    {
+      "path": "replications/blueprints_2024/results/runtime-second-continuation-sixth-prefix-2026-10-19/altruisticHalfLookaheadBinary-50000/audit.json",
+      "sha256": "f60cb37877d3594995203d58c327f1bddbd8861d1f750f900e2c219819b451bb",
+      "records": 12
+    }
+  ],
+  "deduplication": "Original archive entry identity; overlapping seed, endpoint, observation count, outcome, and raw trajectory hash must match exactly.",
+  "scope": "Deposited 100-seed runtime archive coverage, not the paper Table6 500-seed experiment."
+}

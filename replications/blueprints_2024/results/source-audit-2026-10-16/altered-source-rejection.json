@@ -1,0 +1,5 @@
+{
+  "exit": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/audit_batch.py\", line 41, in <module>\n    assert source[\"source_sha256\"] == source_pins[\"source_sha256\"], \"Recorded source differs from pinned release\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Recorded source differs from pinned release\n",
+  "output_created": false
+}

@@ -1,0 +1,1 @@
+Checkpoint0009 has a different archive hash but all130 member contents are byte-identical to audited checkpoint0008. Runtime coverage remains924/1200 with no new observations. The producer remains active.

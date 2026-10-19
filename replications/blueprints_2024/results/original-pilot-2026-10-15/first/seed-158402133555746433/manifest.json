@@ -1,0 +1,34 @@
+{
+  "release": "b9ca671ab7591c7b3606f2d76c33eda344d626d1",
+  "archive_sha256": "319c38c77cdeb9f3bd618ce6c57e14e93c35e2be282c01332d42cff58327f525",
+  "entry": "altruisticHalfLookaheadBinary158402133555746433.config",
+  "original_config_sha256": "57fdd4a0fd84767d732672b08df7a3d18704b7a8c9d1e7e31b4e2487a75ce815",
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference/sugarscape.py",
+    "--conf",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-pilot-002/seed-158402133555746433/config.json"
+  ],
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "pythonhashseed": "0",
+  "engine": "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+  "source_sha256": {
+    "agent.py": "5ffd9ac332159413ead96102167593d1f5a514554415fcfea39e7133fd4a25d9",
+    "cell.py": "f1c64eebfdf8b170880f79211310ad1162f4dacafb5b26df93512d3c551f3dfd",
+    "disease.py": "56f1ea55511c497f1f8be836f6967ecba8641794d6ff56c01af989397eab607b",
+    "environment.py": "3a07b8c8c08ab7fd5ecadb67e24dbe3409f574fe3a729330d35c0716e6f7fc50",
+    "ethics.py": "977ac532c7b12fdd18e5157eff2d1a3759468842a0219ebbfad992ae4651214a",
+    "gui.py": "80eff045d436fa3c62e61287adbceab5816646421617abf2625beb9251be02b5",
+    "logparse.py": "8c3741af52794b3d5eb6d65015a84e7758650874e0b16fb027b754925c07c37a",
+    "setup.py": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+    "sugarscape.py": "d429ebabea8ea08dfdaf25faa34a409e463f97ad754e7143a23202fdd5126e81"
+  },
+  "config_sha256": "accf67b3f6013aff8d44f2a8cec35a2597cd1286c08eae685abafba744e2e0aa",
+  "changes": {
+    "logfile": {
+      "original": "./altruisticHalfLookaheadBinary158402133555746433.json",
+      "effective": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-pilot-002/seed-158402133555746433/trajectory.json"
+    }
+  },
+  "interpretation": "Original archived input; release predates archive and matches every configuration key. Exact author code revision still unverified."
+}

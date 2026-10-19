@@ -1,0 +1,108 @@
+[
+  {
+    "commit": "25096466a986aa0fb0ed4965d510bc877c3a957b",
+    "author_date": "2026-05-29T14:34:17-07:00",
+    "committer_date": "2026-05-29T14:34:17-07:00",
+    "subject": "v2026.2 release",
+    "plot_sha256": "f4b26cf1153bb1a93e980fa0b91347cf2d2048c71e301ebaca32b230d8761998",
+    "death_lines": []
+  },
+  {
+    "commit": "6cfb058c3302e7ea9e971dbcbf24309af32c8852",
+    "author_date": "2026-04-26T16:32:42-07:00",
+    "committer_date": "2026-04-26T16:32:42-07:00",
+    "subject": "v2026.1 release",
+    "plot_sha256": "5a47987425a38302819bbc74e08ddd2762e9366b8422c8fc22533c9368f9b6b1",
+    "death_lines": []
+  },
+  {
+    "commit": "1f9005afe59fc275f469e7b3fe79c59544fe43c8",
+    "author_date": "2025-12-10T22:11:40-08:00",
+    "committer_date": "2025-12-10T22:11:40-08:00",
+    "subject": "v2025.5 release",
+    "plot_sha256": "414d343c4c934db3419c2b5a7517d99699a0881ff77c561c32813829fbab7122",
+    "death_lines": []
+  },
+  {
+    "commit": "3b87029c1f4e8c35c83d48fad79e08958f846db5",
+    "author_date": "2025-08-22T10:22:21-07:00",
+    "committer_date": "2025-08-22T10:22:21-07:00",
+    "subject": "v2025.4 release",
+    "plot_sha256": "a8a942c2cc4309d5f064e056f981db76110183517b931aa1d7b3d68be5110ee4",
+    "death_lines": []
+  },
+  {
+    "commit": "3da1c12f6679a13c33ce6ce66d5b4bf7093cf60f",
+    "author_date": "2025-06-20T22:28:04-07:00",
+    "committer_date": "2025-06-20T22:28:04-07:00",
+    "subject": "v2025.3 release",
+    "plot_sha256": "37653143398d89e5487f812c8b332e06e7a6fe3c87ae58d145fafd51523dbf97",
+    "death_lines": []
+  },
+  {
+    "commit": "4699c561acaec70a70091a1f2c05e167dfb12d9c",
+    "author_date": "2025-03-15T17:25:42-07:00",
+    "committer_date": "2025-03-15T17:25:42-07:00",
+    "subject": "v2025.1 release",
+    "plot_sha256": "2a8f96b734788f16f80946ba3f5d646c4dd3b5cabe531190ce4f93857586887a",
+    "death_lines": []
+  },
+  {
+    "commit": "651925a5f7634fa3dd0f66c0621e7118e89807f8",
+    "author_date": "2024-09-26T19:00:28-07:00",
+    "committer_date": "2024-09-26T19:00:28-07:00",
+    "subject": "v2024.4 release",
+    "plot_sha256": "7cf4b2325b8fdca9795625301d1d3518e81bdb8391af21cfd384631d623926d6",
+    "death_lines": [
+      {
+        "line": 79,
+        "text": "            deaths = dataset[model][\"metrics\"][\"agentStarvationDeaths\"][i] + dataset[model][\"metrics\"][\"agentCombatDeaths\"][i] + dataset[model][\"metrics\"][\"agentAgingDeaths\"][i]"
+      },
+      {
+        "line": 82,
+        "text": "                dataset[model][\"means\"][\"meanDeaths\"].append(0)"
+      },
+      {
+        "line": 86,
+        "text": "                dataset[model][\"means\"][\"meanDeaths\"].append((deaths / dataset[model][\"metrics\"][\"population\"][i]) * 100)"
+      }
+    ]
+  },
+  {
+    "commit": "cc0408afbb09d8d124ce6f7e6b1844d202d0f8b6",
+    "author_date": "2024-08-23T18:03:18-07:00",
+    "committer_date": "2024-08-23T18:03:18-07:00",
+    "subject": "v2024.3 release",
+    "plot_sha256": "dded8a707026aca8a07e55f72594b199cbfc939aabd9bdf7b4ae573997d7ae67",
+    "death_lines": [
+      {
+        "line": 73,
+        "text": "            deaths = dataset[model][\"metrics\"][\"agentStarvationDeaths\"][i] + dataset[model][\"metrics\"][\"agentCombatDeaths\"][i] + dataset[model][\"metrics\"][\"agentAgingDeaths\"][i]"
+      },
+      {
+        "line": 76,
+        "text": "                dataset[model][\"means\"][\"meanDeaths\"].append(0)"
+      },
+      {
+        "line": 79,
+        "text": "                dataset[model][\"means\"][\"meanDeaths\"].append((deaths / dataset[model][\"metrics\"][\"population\"][i]) * 100)"
+      }
+    ]
+  },
+  {
+    "commit": "b9ca671ab7591c7b3606f2d76c33eda344d626d1",
+    "author_date": "2024-05-28T17:45:59-07:00",
+    "committer_date": "2024-05-28T17:45:59-07:00",
+    "subject": "v2024.1 release",
+    "plot_sha256": "40db9cf6b8172e9fea0b3de532f541ebecd9d4b6e2724ea4ac6ee5ebf4c7d5e5",
+    "death_lines": []
+  },
+  {
+    "commit": "032abd2d2338aadc5ad0287dae7520539f7af57b",
+    "author_date": "2023-12-20T00:45:37-08:00",
+    "committer_date": "2023-12-20T00:45:37-08:00",
+    "subject": "Initial commit",
+    "plot_sha256": "2274a558bebd6f685f94a3723d1d52077741f5b427e176e0a3e1e6f725681400",
+    "death_lines": []
+  }
+]

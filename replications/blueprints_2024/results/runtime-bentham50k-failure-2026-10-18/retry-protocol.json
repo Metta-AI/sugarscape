@@ -1,0 +1,18 @@
+{
+  "node": "relh-sugarscape-thaler-timing-cpu8-20261017-v1",
+  "prior_command": "cmd-2ypbn",
+  "prior_exit": 1,
+  "prior_native_exit": -9,
+  "prior_completed_inputs": 0,
+  "retry_interval": [
+    0,
+    50
+  ],
+  "unchanged_model_source": true,
+  "minimum_memory_gib": 32,
+  "maximum_wall_seconds": 23400,
+  "maximum_compute_hours": 6.5,
+  "maximum_compute_usd_at_observed_rate": 3.744,
+  "reason": "Retry identical failed input interval with greater memory capacity; SIGKILL cause unproven because memory event counters are not exposed. Other active interval50:100 remains disjoint.",
+  "completed_study": false
+}

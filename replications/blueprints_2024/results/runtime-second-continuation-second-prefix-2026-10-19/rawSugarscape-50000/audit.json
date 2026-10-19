@@ -1,0 +1,41 @@
+{
+  "validated_runs": 2,
+  "required_interval_runs": 14,
+  "complete_interval": false,
+  "complete_group": false,
+  "model": "rawSugarscape",
+  "steps": 50000,
+  "ordinal_interval": [
+    86,
+    88
+  ],
+  "counts": {
+    "dead": 0,
+    "worse": 0,
+    "better_or_equal": 2
+  },
+  "observations": 100002,
+  "results": [
+    {
+      "entry": "50000-rawSugarscape8289106131243214398.config",
+      "seed": 8289106131243214398,
+      "observations": 50001,
+      "final_population": 1021,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "ccf32a325c3ee47e53910237edf4e08da4246d3282e2035d927da6a89e820632"
+    },
+    {
+      "entry": "50000-rawSugarscape8316010414417092566.config",
+      "seed": 8316010414417092566,
+      "observations": 50001,
+      "final_population": 975,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "6112b31b646df26168fe0cc15883135b928987511be80c22d31dcc5d521b7344"
+    }
+  ],
+  "ledger_sha256": "c753bc154f581250593f92748bf7b5a7552144b65a9c7f2527ea0df66417be94",
+  "manifest_sha256": "0391e57552114d56278e02d50ea13cfef136a0398e37944ed4ff496c81a12de4",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}

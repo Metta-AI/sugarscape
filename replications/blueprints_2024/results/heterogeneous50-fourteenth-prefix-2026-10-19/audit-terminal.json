@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "stderr": "",
+  "stdout": "{\"pass\": 1, \"inputs\": 25, \"members\": 261}\n{\"pass\": 2, \"inputs\": 25, \"members\": 261}\n{\"fresh_extractions\": 2, \"archive_members_verified\": 261, \"inputs_per_pass\": 25, \"producer_and_two_independent_audits_byte_identical\": true, \"archive_sha256\": \"2b983d3b2088952008eef13cb26cf6e66f3ea3257834837e239198c24769c3cc\", \"auditor_sha256\": \"21b665a59adc11ec609111151b17b41485eb8ed308746ad15e867fc46c038b13\", \"original_archive_sha256\": \"c37aa109e59ca8b96cd295b7f022d6bf56f413aabbf246ca432ff5d4360de91a\", \"python\": \"3.11.14 (main, Oct 28 2025, 12:11:26) [Clang 20.1.4 ]\", \"scope\": \"Trajectory audit only; union and overlap checks remain separate.\"}\n",
+  "timing_ms": {
+    "exec": 15131
+  },
+  "truncated": false
+}

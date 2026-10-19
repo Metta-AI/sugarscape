@@ -1,0 +1,7 @@
+{
+  "excluded_attempts": [
+    "cmd-vqvwr",
+    "cmd-wu8ni"
+  ],
+  "reason": "Wake raced cancellation. Original inner timeout group survived API command kill; overlap invalidates timing. Both scientific attempts stopped, partial files retained. New runner uses process-group cleanup and SIGTERM unwinding. Fresh run requires no remaining simulator processes."
+}

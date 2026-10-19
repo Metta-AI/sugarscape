@@ -1,0 +1,1254 @@
+{
+  "archive_sha256": "319c38c77cdeb9f3bd618ce6c57e14e93c35e2be282c01332d42cff58327f525",
+  "inputs": [
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-disk-retry-altruisticHalfLookaheadBinary-001/audit.json",
+      "sha256": "e800db4dce660f4216ce6a4572f5a855563e00b7b5b738ac11d3bdb115a650ab",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        16,
+        17
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-disk-retry-benthamHalfLookaheadBinary-001/audit.json",
+      "sha256": "a10eeb0557659a22497d3772c5caeef26e820f8a6181f6912a2df76b58bc16d6",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        5,
+        6
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-disk-retry-egoisticHalfLookaheadBinary-001/audit.json",
+      "sha256": "4b1960c53f5c16b39271095389daca29c1f2f9df27c0cd818677e3bc6813c237",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        17,
+        18
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-disk-retry-rawSugarscape-001/audit.json",
+      "sha256": "aa02ddf32b031be3e6d1f2eb7dbbd1b7ce511c1495b3b6570002485ca7b13ede",
+      "model": "rawSugarscape",
+      "interval": [
+        65,
+        66
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-original-altruisticHalfLookaheadBinary-500-001/audit.json",
+      "sha256": "9d9c6f64c6b96ba6e6815d8dddc283242d677b1eaeca7640ce6e55fa0955c7f3",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        0,
+        16
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-original-benthamHalfLookaheadBinary-500-001/audit.json",
+      "sha256": "843b6fc80233cabfa4b2e32f6ca11f3e55be4eb63bbc6764e11ea9b5f1fe2cbd",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        0,
+        4
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-original-benthamHalfLookaheadBinary-remaining496-002/audit.json",
+      "sha256": "c84c7c1daf1ba44aff2058efefe0a6c7995494b18d1cb235b76f310058da3799",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        4,
+        5
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-original-egoisticHalfLookaheadBinary-500-001/audit.json",
+      "sha256": "86d633fe0ccbc963bb0bb47dd184f47e6ca391037c8a35cc09e704705a394067",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        0,
+        17
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-original-pilot-002/audit.json",
+      "sha256": "ce312cae810fa456f31feccf8a5b0ebeb439039d10f66068dbf73050a53fd42c",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-original-pilot-repeat-002/audit.json",
+      "sha256": "17dd2371578a9c96e32e400780a0765b3e071e228e7095707e3e8d1d47d8f1a7",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        0,
+        1
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-original-rawSugarscape-500-001/audit.json",
+      "sha256": "a6491e0caf485842f8492ae3981884948ef8f5ea2e875373bd6025317de9154f",
+      "model": "rawSugarscape",
+      "interval": [
+        0,
+        65
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-resumed-altruisticHalfLookaheadBinary-003/audit.json",
+      "sha256": "c4c81f88fdd25a29680dcddb2e9e37e211bbd8268773dab6f8c530fd3b29bf6f",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        17,
+        29
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/audit.json",
+      "sha256": "304972d787abf01e30b81f404d6cad2993be594a661363d6a3f0f78cc24426c4",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        29,
+        74
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-resumed-benthamHalfLookaheadBinary-003/audit.json",
+      "sha256": "a7874ea19ba4a84fe001f4232cf9eb5aa7a91abb6675ce507001dc96b6091c7e",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        6,
+        11
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-resumed-benthamHalfLookaheadBinary-004/audit.json",
+      "sha256": "c3dc4b47c3f0d5c25a3d43ec4022aa503367183b906168d59933c950f23d66bb",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        11,
+        20
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-resumed-egoisticHalfLookaheadBinary-003/audit.json",
+      "sha256": "39524f5f831f35da1804f5b6017fcf4a1e9d390d187137cdcd56d05d949b62de",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        18,
+        28
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/audit.json",
+      "sha256": "84b091ba02e8fb544b99bce200adb67068b9490c5d87c68cd81cac68000a4cff",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        28,
+        66
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-resumed-rawSugarscape-003/audit.json",
+      "sha256": "9ab253dd43e6b9a5191fc8592bbaab4d7177294af439613d578e92908435054c",
+      "model": "rawSugarscape",
+      "interval": [
+        66,
+        143
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-resumed-rawSugarscape-004/audit.json",
+      "sha256": "8b062a7a48ddda276304e44a61b076db63e67f06eabc203b075c4020c8cc59cd",
+      "model": "rawSugarscape",
+      "interval": [
+        143,
+        263
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-source-reaudit-001/blueprints-2024-resumed-rawSugarscape-005/audit.json",
+      "sha256": "3eec20bb9094016b17230ea846cad395c63013e5ccc9d737c243ed71d3821229",
+      "model": "rawSugarscape",
+      "interval": [
+        263,
+        299
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-homogeneous-checkpoint-003/blueprints-2024-resumed-rawSugarscape-006/audit.json",
+      "sha256": "cd1870e052cce9b0563d863e852ca4dc9999bcaecbfc5066b4c6115cd417914b",
+      "model": "rawSugarscape",
+      "interval": [
+        299,
+        500
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-altruistic-complete-audit-001/audit.json",
+      "sha256": "f6d1e7f87ccec9f991c2f299153f05716f6a5cd6b9f45f0239924f4b24a5e43c",
+      "model": "altruisticHalfLookaheadBinary",
+      "interval": [
+        74,
+        500
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-homogeneous-checkpoint-20261017-2313/egoistic/audit.json",
+      "sha256": "5ae82a9eeee7829d2747d7e57e099ad14826f61385badd1adb5c4d5dbc78c49d",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        66,
+        381
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-homogeneous-checkpoint-20261017-2313/bentham/audit.json",
+      "sha256": "5fffca6ec8b6194a00e6a7a233f0813739ca6e8bc067cf8ba1f39245444fa1a6",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        20,
+        133
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-homogeneous-prefix-20261018-001/audit-benthamHalfLookaheadBinary/audit.json",
+      "sha256": "2a5e1b065824ee840b59ee24679a90893812353fd00da90d945919333a703940",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        20,
+        146
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-homogeneous-prefix-20261018-001/audit-egoisticHalfLookaheadBinary/audit.json",
+      "sha256": "755ac222a382fadec54844eaf222786ba16afcda91b2a4f1c60cdc5fb7e84b27",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        66,
+        440
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-001/local-final-audit/audit.json",
+      "sha256": "8889597fa91d243c50e57a6713253bfed5f320bb7920105fc00c287320032045",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        20,
+        152
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-152/audit.json",
+      "sha256": "d068b302337b7166652a42b1b526ffd62404ad6ecb14af09bc1f46b6d7e1ac1a",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        152,
+        153
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-153/audit.json",
+      "sha256": "24631201c6220af5c12c7dcefc7b769a8235c520c0d6cbd987b2d0fd2fadfcfd",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        153,
+        154
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-154/audit.json",
+      "sha256": "dc254836ec55db903f168998276a5e1fcf9bef5791df6ec20d85745db29104ea",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        154,
+        155
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-155/audit.json",
+      "sha256": "6f6b5c0f071699f5ebf8a3cad5d88649865ba88577ee5fcb0eaa234d8a48352c",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        155,
+        156
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-156/audit.json",
+      "sha256": "217690e5f13c1c8b83e702cd83889ba536f6d465486fa05e3b40596dc0fd1a68",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        156,
+        157
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-158/audit.json",
+      "sha256": "2cf423229a39d9afb9ee5c9fc84358d1fd65f816ff5cc5d88f4c58d2c329d2eb",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        158,
+        159
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-160/audit.json",
+      "sha256": "0fbcc26ee8d83b96a720e2338caee877b9dddf424cb97910fcbbbc53139d2131",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        160,
+        161
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-161/audit.json",
+      "sha256": "c199c184be6594279536d943e793c9651c616f5af0bc096c5336065d7c45046f",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        161,
+        162
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-162/audit.json",
+      "sha256": "027629dcbccb3ba1406152be96d280e769cc097da2fb6dc7d46f8420ea74a6b8",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        162,
+        163
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-163/audit.json",
+      "sha256": "51e43e67c0d7c8d64cd8ef0545ed9bbd798777ed4c09cbd08e126d2a7e3fc699",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        163,
+        164
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-164/audit.json",
+      "sha256": "c16270c99085ad81b16d21eb7d707d31413bdc26783423be400726f3127a78f9",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        164,
+        165
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-166/audit.json",
+      "sha256": "babc91ea3b8c9017680876f43145cdc1b9d7311bcb1af22efed212d425541a96",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        166,
+        167
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-167/audit.json",
+      "sha256": "89db8d1f9cb3b45144a519bff6996643fa2d3c0b53a57c7f1f4ab87f25d832ef",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        167,
+        168
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-168/audit.json",
+      "sha256": "ed9b23add10217bdd565791bc2da4f5a6c5f3d2f0dd916e838ef6fe0efd1f4f5",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        168,
+        169
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-169/audit.json",
+      "sha256": "b702fe1d656f334def9680198f2fd18a68d69612f104a2c42af28783d4595d22",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        169,
+        170
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-170/audit.json",
+      "sha256": "f419ad397ba7aaa4fe26a379510291a500ef39eabfc62a7aa53444e05bddf042",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        170,
+        171
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-171/audit.json",
+      "sha256": "e422eb5b92b19b90b6250f3952ec9115d7eea59ecbf02fc2750abbabd5f9beed",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        171,
+        172
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-172/audit.json",
+      "sha256": "44a96e81532daf99c6fed16fd1adf34635c13b5c1934642ef03258398dfe29fd",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        172,
+        173
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-173/audit.json",
+      "sha256": "01b12fdc1543f03bb2835d13923340b1afc403d21c70d5873c4015d0cf14b47d",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        173,
+        174
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-174/audit.json",
+      "sha256": "0d27392c13fa3981234433882f5e99e69f64cdb493479247301f4099be50aebe",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        174,
+        175
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-175/audit.json",
+      "sha256": "4786595dd58a595d2f085bac086bbf26894a77095d4f7ac797d5033f96759ac8",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        175,
+        176
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-176/audit.json",
+      "sha256": "1a1bc52416c4c3a1eef658fac4f90b8832265d4060c6ddc7d3a3ec5c1a3312ca",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        176,
+        177
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-178/audit.json",
+      "sha256": "1a0641675f8a5bbd1f2fedd35f0f50673a35c8e747516ebc7b6ee7837f0604da",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        178,
+        179
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-179/audit.json",
+      "sha256": "472e9b99dd9f750d1c8c17c61a63c113e656f5cede895933e853f99d37322e33",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        179,
+        180
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-180/audit.json",
+      "sha256": "f020c5725e51cedea14ab8898e0df4e1ffa32e9d356902a8d4bf9870f704fdfb",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        180,
+        181
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-182/audit.json",
+      "sha256": "3ac84cfa0929acc9129bcff3fc115185dbe47b9837e5c4940b2fe5e8a7061061",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        182,
+        183
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-183/audit.json",
+      "sha256": "7367bd82f5af3a9ed91877209f2b06c37b086f12424fccf16b38cf3ff35d25f9",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        183,
+        184
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-186/audit.json",
+      "sha256": "d851be599ac419d44d1f35b7d26192f887b40677acef3b4c74113636df1a9308",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        186,
+        187
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-001/audits/input-190/audit.json",
+      "sha256": "c377710c119f3b12186b54938945bb9280ddf7175738d1ee1462cac4a76e234c",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        190,
+        191
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-184/audit.json",
+      "sha256": "b3bc79dc7b3c16e0c52f1a799e2f5a7e656e13bd378b54cb10fb98c65eac457b",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        184,
+        185
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-185/audit.json",
+      "sha256": "aaf952af1db494f1651c47007706a34a9768b8d8dd982008024110d1c9d8df7a",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        185,
+        186
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-187/audit.json",
+      "sha256": "686133f10d6c37d72690c659974b3d68dca06163984023c78a8be39d7733d100",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        187,
+        188
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-188/audit.json",
+      "sha256": "1fa0780b5faeb0b6a32ff08dc0d3851381f0c75d2446ef43b9c045ccfe981931",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        188,
+        189
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-189/audit.json",
+      "sha256": "e3458eb3d008a2b6f2750151f237f3dade6cb9002da257517bd9eccdfe5427bc",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        189,
+        190
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-191/audit.json",
+      "sha256": "b7ab50531c41f4d99067abf34ee87505218973048a7f3c389ccbaf8d57249181",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        191,
+        192
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-192/audit.json",
+      "sha256": "17f3adddbc7b1da37c469efc98ac1e6bc9f273ba513ff073b0622dc7686f25e5",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        192,
+        193
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-193/audit.json",
+      "sha256": "2021637f3eba1bbb7ea6af705345ea6e58151228683e8967e8f4b04aa2058ed5",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        193,
+        194
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-194/audit.json",
+      "sha256": "0e2fcf855a808ef6ba87c128bfa42ff969bfe27d1bc012f351c36b71b21cdd7f",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        194,
+        195
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-195/audit.json",
+      "sha256": "cf6b146fbb70db298b06ed121bbe5e75de6bc79b5def86c2e64616dd0e4dbcda",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        195,
+        196
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-198/audit.json",
+      "sha256": "a5052f0d822f9f41cd73a492dcddafae75fdbed0b620a55390bef6ae070908a7",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        198,
+        199
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-199/audit.json",
+      "sha256": "f849b1a1672d1da8313efbf1053b45c62b43a6d816b85b057126ba39105c6c37",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        199,
+        200
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-200/audit.json",
+      "sha256": "913f7d44fcefeb311efce4b64802fb9c70bad5bcbc821c22b0156333ff3821ec",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        200,
+        201
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-201/audit.json",
+      "sha256": "c365485e11e9ba5aa313d291a1a18ba9f2681435fc8852214555258196f10d74",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        201,
+        202
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-202/audit.json",
+      "sha256": "dfadabc4f8a449f094de3a4b55f4a03a45f977e77179e81f2bb4c03988c0b45f",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        202,
+        203
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-204/audit.json",
+      "sha256": "aa9cc404f9e2c9cf0cbcf45605072120139f1deed38c272e3a913e584ccfe621",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        204,
+        205
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-205/audit.json",
+      "sha256": "9dc23879a51003ee3790892050a9f23f19c3a756b42479c5da6a34f9087e3921",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        205,
+        206
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-206/audit.json",
+      "sha256": "f4f9e0d75e885f2cbdb9490f840ddfcaae03af0717e440de4c8100d7f19b0336",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        206,
+        207
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-207/audit.json",
+      "sha256": "5b71601f0819e7c177945d36571ec7656128dcf0929c6123ad2df62bac7edc93",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        207,
+        208
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-208/audit.json",
+      "sha256": "35e4cc0dedb1903d0f971f0b681f31e8cbe114cca4184dcdc3e4e8afb1942c04",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        208,
+        209
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-209/audit.json",
+      "sha256": "531230c2b403e698d2fa4de5f767ed9d230ac04f2030f5d3ce9d5c045f2c4400",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        209,
+        210
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-210/audit.json",
+      "sha256": "72c57858950170b94c6dcc8ed88ace6652ebe2437fe4e7df9b77ce0468d0c606",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        210,
+        211
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-211/audit.json",
+      "sha256": "e5b81779e61ae81a0f1de789be0f28d039dc5f89a212dd3bc7036c7d3cbe87b7",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        211,
+        212
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-212/audit.json",
+      "sha256": "fe06df176bbf6cef4ac30645112f5de9993c258e29966318b5d9fbb9857ae47b",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        212,
+        213
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-213/audit.json",
+      "sha256": "e8965fd5a87873e7f0b513aeabc8b8e56760d5c814d7d12e35630a8dbe7da5cb",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        213,
+        214
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-214/audit.json",
+      "sha256": "6364d42e6e01aab2d007a6ed334be2e188a10fd44f16e262b5bf1e34a2ec8d93",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        214,
+        215
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-217/audit.json",
+      "sha256": "74eeff05f2aeb0fb71a595c2d947598d9fc69da347ec6af823925853b6d8dc40",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        217,
+        218
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-218/audit.json",
+      "sha256": "31644662b95fa8c7edb7e7a7ba6dd2244d4d2ed6ea66807b4e9691d55c9d59ed",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        218,
+        219
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-219/audit.json",
+      "sha256": "c18ee0338dda69e2baada64ba3966fcbb6d729f4447eff60b63a8bb1aeb2467f",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        219,
+        220
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-220/audit.json",
+      "sha256": "fcf3b20c3d6035aa6de2c40cf418b1fd37d37e761783261cd2c01bd59205737d",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        220,
+        221
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-225/audit.json",
+      "sha256": "c3c16ab79276838fceaa8401fb78dd1e94e1ded7654e6f2d98d62f0d2fbc4cdb",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        225,
+        226
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-bentham-parallel-prefix-002/audits/input-234/audit.json",
+      "sha256": "5278644bc56aa5139114e892173d627d51ba456dce94b54ee9115e79573d7a8b",
+      "model": "benthamHalfLookaheadBinary",
+      "interval": [
+        234,
+        235
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-egoistic-prefix-20261018-002/audit/audit.json",
+      "sha256": "b0de441b69cbdb3e305e77943128afa403028f832caeb75388dcabedf8a0a714",
+      "model": "egoisticHalfLookaheadBinary",
+      "interval": [
+        66,
+        481
+      ]
+    }
+  ],
+  "models": [
+    {
+      "model": "altruisticHalfLookaheadBinary",
+      "validated_interval": [
+        0,
+        500
+      ],
+      "validated_intervals": [
+        [
+          0,
+          500
+        ]
+      ],
+      "validated_runs": 500,
+      "missing_indices": [],
+      "required_runs": 500,
+      "observations": 840379,
+      "partial_counts": {
+        "better_or_equal": 146,
+        "dead": 344,
+        "worse": 10
+      },
+      "next_seed": []
+    },
+    {
+      "model": "benthamHalfLookaheadBinary",
+      "validated_interval": [
+        0,
+        157
+      ],
+      "validated_intervals": [
+        [
+          0,
+          157
+        ],
+        [
+          158,
+          159
+        ],
+        [
+          160,
+          165
+        ],
+        [
+          166,
+          177
+        ],
+        [
+          178,
+          181
+        ],
+        [
+          182,
+          196
+        ],
+        [
+          198,
+          203
+        ],
+        [
+          204,
+          215
+        ],
+        [
+          217,
+          221
+        ],
+        [
+          225,
+          226
+        ],
+        [
+          234,
+          235
+        ]
+      ],
+      "validated_runs": 213,
+      "missing_indices": [
+        157,
+        159,
+        165,
+        177,
+        181,
+        196,
+        197,
+        203,
+        215,
+        216,
+        221,
+        222,
+        223,
+        224,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499
+      ],
+      "required_runs": 500,
+      "observations": 1065213,
+      "partial_counts": {
+        "better_or_equal": 213
+      },
+      "next_seed": [
+        3080447128953811521
+      ]
+    },
+    {
+      "model": "egoisticHalfLookaheadBinary",
+      "validated_interval": [
+        0,
+        481
+      ],
+      "validated_intervals": [
+        [
+          0,
+          481
+        ]
+      ],
+      "validated_runs": 481,
+      "missing_indices": [
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499
+      ],
+      "required_runs": 500,
+      "observations": 856266,
+      "partial_counts": {
+        "better_or_equal": 155,
+        "dead": 321,
+        "worse": 5
+      },
+      "next_seed": [
+        8877038468309280736
+      ]
+    },
+    {
+      "model": "rawSugarscape",
+      "validated_interval": [
+        0,
+        500
+      ],
+      "validated_intervals": [
+        [
+          0,
+          500
+        ]
+      ],
+      "validated_runs": 500,
+      "missing_indices": [],
+      "required_runs": 500,
+      "observations": 819456,
+      "partial_counts": {
+        "better_or_equal": 147,
+        "dead": 348,
+        "worse": 5
+      },
+      "next_seed": []
+    }
+  ],
+  "unique_runs": 1694,
+  "excluded_duplicate_records": 930,
+  "complete_homogeneous_grid": false,
+  "scope": "Union of independently audited intervals. Partial outcome counts are not full-paper estimates. Failed, unledgered runs are excluded."
+}

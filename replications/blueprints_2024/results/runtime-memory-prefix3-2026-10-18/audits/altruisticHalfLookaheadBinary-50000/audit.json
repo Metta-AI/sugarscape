@@ -1,0 +1,50 @@
+{
+  "validated_runs": 3,
+  "required_interval_runs": 97,
+  "complete_interval": false,
+  "complete_group": false,
+  "model": "altruisticHalfLookaheadBinary",
+  "steps": 50000,
+  "ordinal_interval": [
+    3,
+    6
+  ],
+  "counts": {
+    "dead": 1,
+    "worse": 0,
+    "better_or_equal": 2
+  },
+  "observations": 100191,
+  "results": [
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary1626428329783443257.config",
+      "seed": 1626428329783443257,
+      "observations": 50001,
+      "final_population": 1065,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "c4b2b2ca8953e4f21b5bf991a02191ea7567722b7642e9f5ec26903cb47ffbd2"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary163513919832119345.config",
+      "seed": 163513919832119345,
+      "observations": 50001,
+      "final_population": 339,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "c311006eb2b2797c5def7173620b2bd7e0e216659b389b048dd7277a663089f2"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary1833994657676604369.config",
+      "seed": 1833994657676604369,
+      "observations": 189,
+      "final_population": 0,
+      "final_timestep": 188,
+      "outcome": "dead",
+      "trajectory_sha256": "ab9c60ad1a0f8d7d9347bc4543c1cd36331ef926420f45b01f4b60567417e597"
+    }
+  ],
+  "ledger_sha256": "517bfcebf3a3c07e3ec7ed9db8f727cb7e2715b7c9763b5e3a0041c10b0b4410",
+  "manifest_sha256": "fdaaa9253aadb028b1ed1ae3049a034cb937f7c2879563d3cf75d91f86c57e0b",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}

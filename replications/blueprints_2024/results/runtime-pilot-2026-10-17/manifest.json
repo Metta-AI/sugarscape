@@ -1,0 +1,35 @@
+{
+  "release": "b9ca671ab7591c7b3606f2d76c33eda344d626d1",
+  "archive_sha256": "43b1967e9af9d7aac9785258706fd5abec6257235940b85aa811519c0e6ae98a",
+  "entry": "500-rawSugarscape1071049487305188627.config",
+  "selection": "Lexicographically first archived rawSugarscape500step filename, selected before results.",
+  "source_sha256": {
+    "agent.py": "5ffd9ac332159413ead96102167593d1f5a514554415fcfea39e7133fd4a25d9",
+    "cell.py": "f1c64eebfdf8b170880f79211310ad1162f4dacafb5b26df93512d3c551f3dfd",
+    "disease.py": "56f1ea55511c497f1f8be836f6967ecba8641794d6ff56c01af989397eab607b",
+    "environment.py": "3a07b8c8c08ab7fd5ecadb67e24dbe3409f574fe3a729330d35c0716e6f7fc50",
+    "ethics.py": "977ac532c7b12fdd18e5157eff2d1a3759468842a0219ebbfad992ae4651214a",
+    "gui.py": "80eff045d436fa3c62e61287adbceab5816646421617abf2625beb9251be02b5",
+    "logparse.py": "8c3741af52794b3d5eb6d65015a84e7758650874e0b16fb027b754925c07c37a",
+    "setup.py": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+    "sugarscape.py": "d429ebabea8ea08dfdaf25faa34a409e463f97ad754e7143a23202fdd5126e81"
+  },
+  "original_config_sha256": "62fcc45a4152c41697b9a59326e694ad3374761ff8be0cdf0e53990b1070eabd",
+  "config_sha256": "d2b8b3e68a7995256ec05bd8c903681c02aed0271095b333fa8f9ecea5a12e2a",
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference/sugarscape.py",
+    "--conf",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-pilot-001/config.json"
+  ],
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "pythonhashseed": "0",
+  "timeout_seconds": 1800,
+  "changes": {
+    "logfile": {
+      "original": "./500-rawSugarscape1071049487305188627.json",
+      "effective": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-runtime-pilot-001/trajectory.json"
+    }
+  },
+  "scope": "One deposited runtime-archive input, disjoint from homogeneous seeds; not a500seed Table6 replication."
+}

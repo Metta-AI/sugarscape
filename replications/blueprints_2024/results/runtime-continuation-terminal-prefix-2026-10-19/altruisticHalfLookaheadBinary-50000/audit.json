@@ -1,0 +1,167 @@
+{
+  "validated_runs": 16,
+  "required_interval_runs": 94,
+  "complete_interval": false,
+  "complete_group": false,
+  "model": "altruisticHalfLookaheadBinary",
+  "steps": 50000,
+  "ordinal_interval": [
+    6,
+    22
+  ],
+  "counts": {
+    "dead": 12,
+    "worse": 1,
+    "better_or_equal": 3
+  },
+  "observations": 202024,
+  "results": [
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary1867017187136367179.config",
+      "seed": 1867017187136367179,
+      "observations": 50001,
+      "final_population": 1021,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "78c3f32a1c74020b7bfdbd32b94a94dc258761ab905eaab5449cea762d245bab"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary1911248790777082224.config",
+      "seed": 1911248790777082224,
+      "observations": 135,
+      "final_population": 0,
+      "final_timestep": 134,
+      "outcome": "dead",
+      "trajectory_sha256": "aafcdbd22e8b38fbafaaaa3af469d9e448ab65ac0e540add0ff511365d78eb2a"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary1962672463621369878.config",
+      "seed": 1962672463621369878,
+      "observations": 146,
+      "final_population": 0,
+      "final_timestep": 145,
+      "outcome": "dead",
+      "trajectory_sha256": "f24b82bd05e73f1173c1b7e43d1707da04354929d7b01895be9443f1400a0af6"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary1994771685947063175.config",
+      "seed": 1994771685947063175,
+      "observations": 50001,
+      "final_population": 389,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "89bd59ad82d754701757bca876b51342430ff5688077720dce81cd52a1147b78"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary203185877083823426.config",
+      "seed": 203185877083823426,
+      "observations": 168,
+      "final_population": 0,
+      "final_timestep": 167,
+      "outcome": "dead",
+      "trajectory_sha256": "cc24e5712e6599c6999765d5bc3b3de7790ef0b7f58ee78f883d6c748b95813a"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary2055514061623047894.config",
+      "seed": 2055514061623047894,
+      "observations": 50001,
+      "final_population": 496,
+      "final_timestep": 50000,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "2efb0286d8ae84572cbd0ad219db7010033b62098b18377d6a17eaf6bdb737c9"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary2228866846466310541.config",
+      "seed": 2228866846466310541,
+      "observations": 137,
+      "final_population": 0,
+      "final_timestep": 136,
+      "outcome": "dead",
+      "trajectory_sha256": "3bcc294b9cdef996e4238368b174ce48be636f6bfd9af12678af72e96d5b22a0"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary2433662336288954484.config",
+      "seed": 2433662336288954484,
+      "observations": 178,
+      "final_population": 0,
+      "final_timestep": 177,
+      "outcome": "dead",
+      "trajectory_sha256": "4302266d9d98f5af8ded1b00484c51541355e8c623f8b3e2aa8ec30357d81a6f"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary2434926124998512636.config",
+      "seed": 2434926124998512636,
+      "observations": 175,
+      "final_population": 0,
+      "final_timestep": 174,
+      "outcome": "dead",
+      "trajectory_sha256": "cbb6df85670bc02d134192f2fb9490171782b8f08275f985c0ff50bf627ce1a5"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary252293489594950658.config",
+      "seed": 252293489594950658,
+      "observations": 198,
+      "final_population": 0,
+      "final_timestep": 197,
+      "outcome": "dead",
+      "trajectory_sha256": "a0e33c751648958347f0e28e605c255b330622dfa6fff835c60a8bd046d81f21"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary2732067017264549820.config",
+      "seed": 2732067017264549820,
+      "observations": 178,
+      "final_population": 0,
+      "final_timestep": 177,
+      "outcome": "dead",
+      "trajectory_sha256": "e7ba4be3445a968a7f73e6ef9286c6d467714e73e0f2102441fb05b8f86cf284"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary2803676329200740340.config",
+      "seed": 2803676329200740340,
+      "observations": 50001,
+      "final_population": 219,
+      "final_timestep": 50000,
+      "outcome": "worse",
+      "trajectory_sha256": "0d2cb91bca56ce3aef75300a7c02231d7a3f923139461500893a2038257cb916"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary2812980183337209316.config",
+      "seed": 2812980183337209316,
+      "observations": 142,
+      "final_population": 0,
+      "final_timestep": 141,
+      "outcome": "dead",
+      "trajectory_sha256": "bb905a9239d7268790136df9daa5cebc428c41e338f22e1dedd599842b778b1f"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary2848282104444495269.config",
+      "seed": 2848282104444495269,
+      "observations": 244,
+      "final_population": 0,
+      "final_timestep": 243,
+      "outcome": "dead",
+      "trajectory_sha256": "a56cda0596f1e2ca1ec90dc1b90a3dacb8d42679b0d97237dbc1b5d4458d42b7"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary2865380092365041549.config",
+      "seed": 2865380092365041549,
+      "observations": 144,
+      "final_population": 0,
+      "final_timestep": 143,
+      "outcome": "dead",
+      "trajectory_sha256": "45e49346a7fb148c73c7510b8867b6edabdfbed5d12e15cf37b48ed9dcd4e730"
+    },
+    {
+      "entry": "50000-altruisticHalfLookaheadBinary3106238916268054039.config",
+      "seed": 3106238916268054039,
+      "observations": 175,
+      "final_population": 0,
+      "final_timestep": 174,
+      "outcome": "dead",
+      "trajectory_sha256": "f787e4f33e6abb222e4481e02d8348956fbe533e6daf62de2b10ba7828a488df"
+    }
+  ],
+  "ledger_sha256": "86706518567c165225634cf92ecd8fc41e22008fcbe4157eebbdc1ec3fa254e4",
+  "manifest_sha256": "5792283a66317218a5e89cb23cfd6f80462e1fa0fe16157aac89911bbf547e94",
+  "scope": "Declared original runtime archive interval only. Native plotting puts equality with better. No500seed Table6 verdict."
+}

@@ -1,0 +1,26 @@
+{
+  "revision": "b9ca671ab7591c7b3606f2d76c33eda344d626d1",
+  "source_sha256": "d429ebabea8ea08dfdaf25faa34a409e463f97ad754e7143a23202fdd5126e81",
+  "file": "sugarscape.py",
+  "metrics": {
+    "meanWealth": "Sum current agent.wealth divided by numAgents, rounded2decimals; zero for no agents.",
+    "agentMeanTimeToLive": "Mean agent.findTimeToLive(True), capped by age, rounded2decimals; zero for no agents.",
+    "meanAgeAtDeath": "Mean agent.age over self.deadAgents for that update, rounded2decimals; zero if none. deadAgents cleared afterward."
+  },
+  "source_lines": [
+    708,
+    709,
+    715,
+    729,
+    757,
+    770,
+    776,
+    787,
+    789,
+    800,
+    801,
+    823,
+    835
+  ],
+  "limits": "Equal time weighting of recorded per-step metrics; not event-weighted pooling of individual deaths."
+}

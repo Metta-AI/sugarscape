@@ -1,0 +1,48 @@
+{
+  "model": "altruisticHalfLookaheadBinary",
+  "paper_sha256": "56f25d6c9c3947954e29689a4fbd4c2ff0c09abd6515e631311939b747d4d51d",
+  "curve_color": [
+    1.0,
+    0.8429999947547913,
+    0.0
+  ],
+  "figures": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "curve_indices": [
+    38,
+    82,
+    128,
+    44,
+    94,
+    142
+  ],
+  "frame_indices": [
+    27,
+    71,
+    117,
+    33,
+    83,
+    131
+  ],
+  "y_maxima": [
+    1200,
+    25,
+    0.12,
+    90,
+    160000,
+    350
+  ],
+  "threshold_pdf_points": 0.005,
+  "timesteps": 5001,
+  "death_definitions": [
+    "released starvation+combat",
+    "all causes: starvation+combat+disease+aging"
+  ],
+  "scope": "Same axes, tolerance, and definitions as prior Raw audit. All-cause alternative fixed from prior Raw discrepancy before examining Altruist curve comparison; not independent of the published figure or prior study findings. Gold Altruist legends visually verified on pages13/14."
+}

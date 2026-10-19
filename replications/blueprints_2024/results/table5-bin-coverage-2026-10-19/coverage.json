@@ -1,0 +1,49 @@
+{
+  "condition50_counts": {
+    "extinct": 150,
+    "worse_positive": 4,
+    "equal_initial": 0,
+    "better": 346
+  },
+  "condition50_percentages": {
+    "extinct": 30.0,
+    "worse_positive": 0.8,
+    "equal_initial": 0.0,
+    "better": 69.2
+  },
+  "table5_target": {
+    "paper_sha256": "56f25d6c9c3947954e29689a4fbd4c2ff0c09abd6515e631311939b747d4d51d",
+    "pdf_page_one_based": 19,
+    "table": 5,
+    "row": "46-50%",
+    "percent_extinct": "30.68",
+    "percent_worse": "0.64",
+    "percent_better": "68.68",
+    "required_inputs": 2500,
+    "transcription": "Visually inspected original PDF Table5; five condition levels each with500 original deposited inputs.",
+    "implied_integer_counts": {
+      "extinct": 767,
+      "worse": 16,
+      "better": 1717
+    }
+  },
+  "required_conditions": [
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "coverage_by_condition": {
+    "46": 0,
+    "47": 0,
+    "48": 0,
+    "49": 0,
+    "50": 500
+  },
+  "completed_inputs_in_bin": 500,
+  "missing_inputs_in_bin": 2000,
+  "per_run_csv_sha256": "7bd6a4924b442c39cf540e549e5b029f11bd3b7e7652d6e361c50727951afcf8",
+  "inventory_sha256": "d3f7e851bc2f7fa1533367bd55a5df6a3a1301f9ec5610cd06d6d8bae3b96b1a",
+  "scope": "Complete50% cohort is not the46\u201350% table bin. No table agreement or disagreement verdict. Paper prose puts equality in worse; deposited plotting code puts equality in better. Equality retained separately; none observed in this cohort."
+}
