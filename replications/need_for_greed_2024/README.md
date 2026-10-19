@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The remaining-sweep runner is prepared](results/unassigned-sweep-runner-preparation-2026-10-19): all 19 real shards generate exactly, with 9,597 unique inputs and verified payload hashes. Setup and qualification now share the bounded admission clock. Linux execution remains unqualified; separate budget approval and dispatch gates still precede launch. No new simulation credit is claimed.
+
 [The sixth baseline checkpoint](results/baseline-second-recovery-sixth-prefix-2026-10-19) and [sixth Table IV checkpoint](results/table4-sixth-prefix-2026-10-19) add 50 disjoint inputs and 177,903 observations. Coverage reaches 512 inputs and 2,019,577 observations. Table III remains exactly reproduced; Tables I, II, and IV remain incomplete.
 
 [The 9,597 unassigned sweep inputs are frozen into 19 disjoint batches](results/unassigned-sweep-preparation-2026-10-19), excluding the complete existing assignment. The proposed $175 cap covers bounded CPU execution; no additional compute is launched by this preparation.
