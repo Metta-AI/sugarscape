@@ -27,6 +27,20 @@ The released experiment specifies only five repetitions and calls `random-seed n
 The manuscript states learning rate 0.8 and discount rate 0.9; the source sets learning rate 0.9 and gamma 0.8.
 Keep the released-code interpretation separate from a prose-parameter sensitivity experiment; neither resolves historical settings by itself.
 
+## Recover source inputs
+
+The [tested source-recovery CLI](results/source-recovery-2026-10-19) retrieves the exact author artifacts and verifies every archive member, including license and citation notices.
+Use new output directories; mismatched downloads fail visibly and remain available for inspection.
+
+```sh
+python replications/brearcliffe_2020/fetch_sources.py /new/source-directory
+python replications/brearcliffe_2020/prepare_ensemble.py \
+  /new/source-directory/release/code/Creating_Intelligent_Agents.nlogo /new/prepared-directory
+```
+
+The resulting 1,602 files match the frozen preparation used by this study.
+These commands prepare inputs only. Execution still requires the qualified NetLogo 6.1.1 runtime, matrix extension, and recorder described below.
+
 ## Native pilot
 
 The [launch record](results/native-pilot-launch-2026-10-19) selects Rule M versus evolutionary computing, with combat, corner starts, replacement, and growback 1.
@@ -63,7 +77,7 @@ The [first bounded dispatcher batch](results/first-batch-complete-2026-10-19) co
 
 The [original local Rule M/Rule M batch](results/rule-m-cohort-launch-2026-10-19) has ended. Its 40 successes and the two earlier controls give 42 complete seeds; the eight unfinished inputs are recovering remotely.
 
-The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specified and rejects incomplete samples before producing means. [An independent R checker](results/cohort-verification-preparation-2026-10-19) is prepared for all means, standard deviations, and bootstrap intervals. The successful fifty-run path and numerical comparison remain pending.
+The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specified and rejects incomplete samples before producing means. [An independent R checker](results/cohort-verification-preparation-2026-10-19) is prepared for all means, standard deviations, and bootstrap intervals. The complete Rule M/EC and Rule M/Rule M cohorts now pass the fifty-run summary, independent arithmetic check, and numerical comparison.
 
 ## Remaining work
 
