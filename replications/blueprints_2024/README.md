@@ -1087,3 +1087,7 @@ Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishn
 ### Remaining runtime intervals queued on the retained node
 
 [The bounded continuation](results/runtime-continuation-launch-2026-10-19) preserves original raw indices 86–99 and altruistic indices 22–99, including interrupted inputs at full 50,000-step horizons. The owned node is restoring from its snapshot; boot command `cmd-6icjf` is registered. The prior six-hour group limits remain, with a $3.90 quoted compute bound. Registration adds no validated coverage.
+
+### Full-condition aggregation requires every original seed
+
+Use `summarize_supplement_condition.py ARCHIVE INVENTORY CONDITION NEW_OUTPUT`. [The real incomplete-data check](results/supplement-complete-condition-gate-2026-10-19) rejects 403/500 inputs at condition 0.37 and writes no aggregate. The complete-data path remains unvalidated until the cohort finishes. Endpoint counts alone will not establish agreement with a published figure.
