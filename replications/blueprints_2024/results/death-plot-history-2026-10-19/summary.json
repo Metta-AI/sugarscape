@@ -1,0 +1,15 @@
+{
+  "inputs": 500,
+  "executed_source_commit": "cc0408afbb09d8d124ce6f7e6b1844d202d0f8b6",
+  "executed_function": "findMeans",
+  "method": "Unmodified function extracted with AST; actual500-run per-timestep sums, zero initialized after extinction as author parseDataset does.",
+  "source_author_formula": "100*(sum starvation+sum combat+sum aging)/sum population per timestep, zero if denominator0",
+  "death_rate_percent": {
+    "mean_including_initial": 1.5587407086675278,
+    "mean_excluding_initial": 1.5590524568092612,
+    "median_including_initial": 1.5403658748863722,
+    "median_excluding_initial": 1.540369170209357
+  },
+  "disease_deaths_total": 0.0,
+  "scope": "Later author plotting function executed on pinned2024.1 trajectories. It plots a homogeneous ensemble time series, not demonstrated historical Figure20 calculation. Temporal mean and median are diagnostic summaries, not new acceptance criteria."
+}

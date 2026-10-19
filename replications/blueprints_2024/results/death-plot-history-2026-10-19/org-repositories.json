@@ -1,0 +1,13 @@
+{
+  "command": [
+    "gh",
+    "api",
+    "orgs/digital-terraria-lab/repos",
+    "--paginate",
+    "--jq",
+    ".[].full_name"
+  ],
+  "exit_code": 0,
+  "stdout": "digital-terraria-lab/sugarscape\ndigital-terraria-lab/datasets\ndigital-terraria-lab/digital-terraria-lab.github.io\n",
+  "stderr": ""
+}

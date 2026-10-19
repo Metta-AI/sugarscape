@@ -1,0 +1,12 @@
+{
+  "command": [
+    "gh",
+    "api",
+    "repos/digital-terraria-lab/datasets/git/trees/HEAD?recursive=1",
+    "--jq",
+    ".tree[].path"
+  ],
+  "exit_code": 0,
+  "stdout": "LICENSE\nautonomous-prejudice.zip\nblueprints-heterogeneous.zip\nblueprints-homogeneous.zip\nblueprints-runtimes.zip\nblueprints-selfishness.zip\nconflict-ubi.zip\ndo-no-harm.zip\ndynamic-greed.zip\nfollow-the-leader.zip\nlaws-of-robotics.zip\nlittle-bit-ubi.zip\nmodeling-depression.zip\nneed-for-greed.zip\n",
+  "stderr": ""
+}
