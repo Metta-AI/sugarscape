@@ -30,6 +30,8 @@ The workspace must contain `sugarscape-blueprints` at its recorded evidence path
 
 The first auditor attempt compared a nested hash mapping with its enclosing document. It failed before reporting results. The corrected schema access, original script, and failure receipt are preserved; no simulation was rerun or excluded.
 
+[Native endpoint controls](results/endpoint-qualification-launch-2026-10-19) now test whether baseline configurations reproduce sweep endpoints. The selected selfishness-zero pair matches all 137 observations byte-for-byte through extinction. The 0.5 and 1.0 pairs remain pending; existing coverage totals are unchanged.
+
 ## Remaining work
 
 Recover and freshly verify the remaining 336 baseline trajectories; execute or reuse all 10,000 remaining sweep inputs. Reproduce Tables I–IV and Figures 2–6 with declared aggregation and denominator conventions. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
