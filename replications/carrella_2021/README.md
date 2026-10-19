@@ -1,5 +1,7 @@
 # Carrella (2021): Sugarscape parameter estimation
 
+[Completed qualified method reproduction](results/method-verdict-2026-10-19), under the user’s October 19 method-based criterion. All original simulation inputs and reported estimator workflows are complete. The 37 numerical discrepancies and historical provenance qualifications remain explicit; this is not a validated negative paper verdict.
+
 [The complete ten-seed historical GAM sensitivity is audited](results/gam-historical-seed-sensitivity-complete-2026-10-19). All 56,250 additional point predictions exactly match seed zero; all 112,500 interval bounds differ. None of the five printed scores is recovered by any seed. The bounded experiment is complete; historical provenance and the 37 primary discrepancies remain unresolved.
 
 [Historical seeds seven and eight pass full audit](results/gam-historical-seed-fourth-prefix-2026-10-19). Their 12,500 point predictions exactly match seed zero, while all 25,000 interval bounds differ. Neither resolves a printed-score discrepancy. The complete ten-seed result above now supersedes this prefix.
@@ -20,7 +22,7 @@
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
-Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
+Status: completed qualified method reproduction. All 5,000 fresh author-model simulations and all reported independent estimator workflows are validated. Of 75 Table 8 values, 38 match printed precision and 37 remain discrepant.
 The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10-19) validates 1,280 runs and 641,280 observations. None of the 30 predeclared comparisons rejects after Holm correction. Archive readback, repeated aggregation, and independent R checks pass. This does not establish stochastic equivalence or resolve the historical estimator discrepancies.
 
 [The updated discrepancy-control reconciliation](results/discrepancy-control-reconciliation-full-data-2026-10-19) verifies all 90 table cells and joins 18 discrepant scores to selected same-size controls. Seven of nine SABC1D discrepancies fall within observed seed ranges; spice endowment remains outside at both sizes. Primary scores and the other controls remain unchanged.
@@ -33,7 +35,7 @@ The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10
 
 [The historical abc source check](results/abc-source-history-2026-10-19) confirms unchanged estimator and numerical-summary function bodies between versions 2.1 and 2.2.2. The changed histogram and model-choice paths are absent from the audited author wrapper; runtime and dependency uncertainty remain.
 
-**Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
+**Method completion and numerical agreement are separate:** all independent estimator folds are audited. Historical estimator discrepancies and stochastic equivalence remain unresolved; the method verdict above records the qualifications.
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.
 
