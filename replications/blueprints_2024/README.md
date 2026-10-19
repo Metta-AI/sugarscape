@@ -2,6 +2,8 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
+[Runtime checkpoint 0008](results/runtime-second-continuation-fourth-prefix-2026-10-19) raises deposited-input coverage to 924/1,200 and 3,606,475 observations. Exact overlap checks and fresh archive readback pass; the distinct paper timing experiment remains unresolved.
+
 [The fourth heterogeneous checkpoint](results/heterogeneous50-fourth-prefix-2026-10-19) adds 25 audited original inputs. Supplementary coverage is 607/100,000; the 50% heterogeneous condition is 101/500. Earlier input records remain unchanged.
 
 All **2,000/2,000 original homogeneous configurations** are complete and audited, with 5,063,268 observations.
