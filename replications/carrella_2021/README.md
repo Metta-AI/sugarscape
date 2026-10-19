@@ -1,8 +1,10 @@
 # Carrella (2021): Sugarscape parameter estimation
 
-[The complete replay auditor is qualified](results/gam-replay-auditor-qualified-2026-10-19) on all five modern-runtime folds. It recomputes 125 metrics, checks all 18,750 predictions/bounds, and rejects an altered exported score. Historical replay results remain pending.
+[The full historical GAM replay is complete](results/gam-historical-full-complete-2026-10-19). All five folds and 18,750 predictions/bounds pass audit. None of five historical scores matches printed precision; two move closer and three farther from the paper. Five final random states match the modern replay. Runtime sensitivity is confirmed, but the 37 primary discrepancies remain unresolved.
 
-[Full five-fold GAM qualification passes](results/gam-full-runtime-qualified-2026-10-19): 18,750 predictions/bounds, five final random states, and all 25 aggregate metrics match the original modern-runtime workflow. [The pinned historical control is now running](results/gam-historical-full-launch-2026-10-19) under its declared bounds; no paper verdict changes.
+[The complete replay auditor is qualified](results/gam-replay-auditor-qualified-2026-10-19) on all five modern-runtime folds. It recomputes 125 metrics, checks all 18,750 predictions/bounds, and rejects an altered exported score. The historical replay has now passed the same complete audit.
+
+[Full five-fold GAM qualification passes](results/gam-full-runtime-qualified-2026-10-19): 18,750 predictions/bounds, five final random states, and all 25 aggregate metrics match the original modern-runtime workflow. [The historical control launch](results/gam-historical-full-launch-2026-10-19) retains its declared bounds; its complete result is reported above.
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
@@ -165,7 +167,7 @@ Saved-fold audits include interval coverage and widths; Sugarscape-only results 
 
 1. Assess remaining independent-model discrepancies using the completed diagnostic and existing mechanism checks. Nonsignificant tests alone do not establish equivalence.
 2. Attribute the 37 published-score discrepancies using the retained source, parser, random-stream, and runtime controls before assigning a negative verdict.
-3. Report remaining historical-environment uncertainty explicitly. The R 4.0.5 controls cover individual point-fit folds, not a complete five-fold interval workflow.
+3. Report remaining historical-environment uncertainty explicitly. The R 4.0.5 control now covers the complete five-fold interval workflow; it changes all five scores without matching their printed values.
 
 The [complete estimator comparison](results/estimator-comparison-complete-2026-10-19) and
 [complete parameter-space diagnostic](results/parameter-cohorts-complete-2026-10-19) are the current evidence checkpoints.
