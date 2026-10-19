@@ -1187,3 +1187,10 @@ Then run `python verify_vision.py NEW_CSV NEW_AUDIT` from this study directory.
 [The final bootstrap-forest ensemble](results/independent-rfboot5000-2026-10-19) passes both complete five-fold audits and independent Python metric checks. Archive readback reproduces all audit outputs exactly.
 [The complete comparison](results/estimator-comparison-complete-2026-10-19) covers **75/75 reported-score pairs**, 262,500 predictions, and 39,637,500 input-cell checks.
 No estimator folds remain pending. Historical score discrepancies and independent-model stochastic fidelity still prevent paper completion.
+
+### Fixed-data semi-automatic estimator randomness
+
+[Ten predeclared estimator seeds](results/sabc1d-seed-sensitivity-2026-10-19) retain the original 1,250 inputs and five outer folds.
+All runs pass exact input and prediction audits: 62,500 predictions and 9,437,500 input cells.
+Four published scores fall within the observed ranges. Spice endowment remains outside: published 0.423 versus 0.424633–0.443223.
+These ranges measure seed sensitivity, not confidence intervals or historical-RNG agreement. Primary comparisons and paper status remain unchanged.
