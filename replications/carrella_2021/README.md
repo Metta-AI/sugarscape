@@ -7,6 +7,8 @@ The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10
 
 [The discrepancy-control reconciliation](results/discrepancy-control-reconciliation-2026-10-19) verifies all 90 table cells and joins 13 discrepant scores to existing same-size controls. Three fall within observed seed ranges and one matches an alternative parser run; neither changes primary results or establishes historical fidelity.
 
+[A full-data estimator sensitivity control is running](results/sabc1d5000-seed-sensitivity-launch-2026-10-19): ten fixed seeds on 5,000 original inputs and unchanged folds, with bounded execution and exact input/prediction audits. This extends the earlier 1,250-input diagnostic and adds no completion credit at launch.
+
 **Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.
