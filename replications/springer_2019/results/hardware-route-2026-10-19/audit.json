@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-19T00:36:59.651261+00:00",
+  "provider_documented_gpu_shapes": [
+    "h100-1",
+    "h100-8"
+  ],
+  "provider_documented_cpu_shapes": [
+    "cpu-2",
+    "cpu-8"
+  ],
+  "manual_sha256": "1060f781eeafa90c657905d844972e8d6a5879e684ba6635417252f939d39fc2",
+  "provider_scope": "Current autor product manual and create help. No fleet inspection or failed speculative resource creation. Does not prove that other providers lack older GPUs.",
+  "owned_node_status": "stopped (disk intact)",
+  "owned_node": "relh-sugarscape-dynasoar-qualify-20261018-v1",
+  "nvidia_source": "https://docs.nvidia.com/cuda/archive/10.0/turing-compatibility-guide/index.html",
+  "documented_volta_pascal_scheduling_flags": "-arch=compute_60 -code=sm_70",
+  "finding": "A Volta compatibility-mode control is distinct from the compute61 PTX JIT run already attempted on H100. Prefer original Pascal/TitanXp hardware when available; otherwise a paired Volta native/compatibility compilation can test scheduling sensitivity. Neither route has executed. This is a hypothesis and hardware planning evidence, not proof of the H100 timeout cause.",
+  "manual_retained": "/Users/relh/Code/workspace/sugarscape-replication-evidence/dynasoar-hardware-route-001/provider-manual.txt"
+}

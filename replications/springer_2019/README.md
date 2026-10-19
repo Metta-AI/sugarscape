@@ -194,3 +194,17 @@ The first historical-source build failed before simulation: `cicc` could not loa
 [The historical-toolchain trial](results/historical-native-complete-2026-10-19) builds both debug controls successfully. The32×32 run completes all10,000 steps; the128×128 run exceeds60seconds. The gate prevents full-size runs. All511 artifact source files match the publisher ZIP, and both executed binaries match their recorded hashes. Original CUB, allocator code, model code, seed and capacity are retained.
 
 This establishes a timeout without our CUDA11.8 syntax or CUB edits. It does not identify the timeout’s phase because this original-source trial has no progress observer. The H100/PTX execution environment still differs from TitanXp native machine code. No full-state equivalence or negative paper-replication verdict follows.
+
+### Hardware route for the next source-fidelity control
+
+[The current compute-service check](results/hardware-route-2026-10-19/audit.json)
+finds only H100 GPU shapes in the provider's documented catalog; the owned diagnostic node is stopped with its disk intact.
+No replacement node was created. This does not establish availability at other providers.
+
+[NVIDIA's archived compatibility guide](https://docs.nvidia.com/cuda/archive/10.0/turing-compatibility-guide/index.html)
+documents `-arch=compute_60 -code=sm_70` for Pascal-style scheduling on Volta.
+That native Volta compilation differs from the compute61 PTX JIT execution already attempted on H100.
+Original TitanXp/Pascal hardware remains the preferred fidelity control.
+If a Volta device becomes available, compare native and Pascal-scheduling builds using the same unchanged artifact and CUDA9.1 compiler.
+Retain original capacity, seed42 and10,000 steps, with32/128 controls gating full-size execution.
+Neither this hardware control nor a scheduling diagnosis has been completed; no allocator patch follows from the documentation alone.
