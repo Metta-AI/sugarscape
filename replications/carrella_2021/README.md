@@ -1201,3 +1201,10 @@ These ranges measure seed sensitivity, not confidence intervals or historical-RN
 The largest empirical cumulative-distribution difference is 0.1875; the joint plus-one Monte Carlo p-value is 0.69325 over 19,999 shared permutations.
 This post-hoc diagnostic provides no evidence here for a broad distribution shift, but cannot establish equivalence or equal rare-event rates.
 Further stochastic validation needs additional declared seeds or mechanism-level diagnosis; no paper-completion credit is added.
+
+### Prospective disjoint seed extension launched
+
+[The bounded extension](results/seed-extension-launch-2026-10-19) fixes seeds 64–575 per engine before execution, retaining original input 675's parameters and all 501 observations.
+Persistent late prices and low final population are predeclared alongside the six continuous metrics.
+The sequential local run has a one-hour wall limit and 200 MiB output cap; its results will be analyzed separately from the exploratory cohort.
+Launch adds no completed-paper credit.
