@@ -8,8 +8,9 @@
     {
       "id": "brearcliffe-released-recovery-001",
       "maximum_usd": 2.0,
-      "state": "running",
-      "command": "cmd-pp9jf"
+      "state": "audited-exported-node-stopped-cost-reconciliation-pending",
+      "command": "cmd-pp9jf",
+      "successful_inputs": 25
     },
     {
       "id": "richmond-observed-method-controls-001",
@@ -31,7 +32,7 @@
     {
       "id": "richmond-counter-reset-controls-001",
       "maximum_usd": 8,
-      "state": "audited-exported-stop-requested-cost-reconciliation-pending",
+      "state": "audited-exported-node-stopped-cost-reconciliation-pending",
       "node": "relh-sugarscape-richmond-h100-20261017-v1",
       "command": "cmd-cpsse",
       "native_audited_variants": 4,

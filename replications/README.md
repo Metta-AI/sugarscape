@@ -16,6 +16,8 @@ The dated progress entries below retain earlier criteria and counts; `study-evid
 
 The [new $100 continuation budget](budgets/continuation-2026-10-19/README.md) reserves $28 across four bounded tasks. Need for Greed now has 757 audited original inputs; Richmond’s five declared method controls passed 3,964,000 post-step state checks; the completed first batch is retained. A separately reserved counter-reset batch passed all four native audits and resolves conflicts within each of its 100 observed steps. Neither adds a completed study.
 
+Brearcliffe now has all 800 released-code inputs audited and 352 paper-table inputs: 1,152 unique inputs and 23,041,152 observations. The remaining 448 paper-table inputs and claim synthesis are incomplete.
+
 ## Evidence required
 
 Each study gets its own directory and pull request, with follow-up commits for discrepancies.

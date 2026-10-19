@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T23:39:28.716897+00:00",
+  "as_of": "2026-10-19T23:45:48.328313+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 6,
   "wholly_positive_papers": 1,
@@ -277,15 +277,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "ce06e5cd8fab9f2a35ccba3be65553f7f6a5b354",
+      "checked_commit": "561887b56422159e07f10d4e8751d6b478300585",
       "status": "running",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "31365e492f12df80b2e39d75a7c1c894d99c2fd56cb1b87e20c904dc09c2927a",
-      "json_evidence_files": 526,
-      "gzip_json_evidence_files": 27,
-      "checked_at": "2026-10-19T23:00:29.199493+00:00",
+      "readme_sha256": "b4b19d88bdf24c9472e60782d253200ed070e65c9f9bd3341e153b39e41e1142",
+      "json_evidence_files": 547,
+      "gzip_json_evidence_files": 29,
+      "checked_at": "2026-10-19T23:45:48.328313+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "1077unique inputs21541077observations:775released302paper-table. Fifteen released and six paper cohorts complete. Final25successful releasedSARSA/SARSA inputs independently reaudited500025observations from fresh471895938B terminalarchive SHA00d77a813c9ab5d6e5a6b0e0638ed8bfec66604c33b7c86dba73cf6aebd58d1f. Prior1052records preserved; no statistics for incomplete25/50cohort. Separate recovery cmd-pp9jf started22:58:35UTC on existing idleCPU8 at$.012/min:exactrepeat25\u201349,8workers,7500admission,1800perinput,7800outer+30grace,900export,15minidle,cap$2; maxboundedexecution/export/idle$1.926. Source/runtimequalification and liveassignment/hash readbackpass; no duplicateinputs or launchcoverage. Explicitterminalfile collector session39685 bounded8730s128MiB. Paperensemble continues. Remaining25released498paper require audits and claim synthesis. Historicalseeds qualify numerical comparisons,not independent method-completion requirements."
+      "remaining_scope": "1152 unique inputs/23041152 observations: all800released plus352paper-table. Sixteen released and seven paper cohorts complete;448paper-table inputs remain. Released recovery25inputs/500025observations passes fresh archive and trajectory audits after producerexit0; vanished collector recovered by terminal-file export without simulation restart. PaperEC/Q50inputs/1000050observations reaudited; prior1077records preserved in1127union, then25recovery added disjointly. Independent R verifies both complete cohorts:320016means/SD each,14endpoints,20000bootstraps; maximum scaled error7.22e-14. PaperEC/Q11/14readable endpoint mean ranges overlap raster; three differences have pointwise intervals overlapping raster. All50paired full trajectories differ from released interpretation. ReleasedSARSA/SARSA7readable endpoint overlaps,7unreadable preserved. Full remaining paper-table ensemble and claim synthesis incomplete; no whole-study credit."
     },
     {
       "study": "need_for_greed_2024",
