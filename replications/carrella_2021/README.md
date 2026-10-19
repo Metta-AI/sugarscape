@@ -1266,3 +1266,10 @@ Only unfinished independent seeds44–63 were recovered; the original timeout an
 Fresh archive extraction reproduces all audits and comparisons exactly; independent R confirms six distribution statistics and two Fisher tests.
 The six-metric maximum difference is0.203125, with unadjusted joint permutation p0.571.
 Two of ten settings are audited; eight settings, full reconciliation and30-test adjustment remain outstanding.
+
+### Third cohort compute-limit recovery
+
+[Original row4675](results/parameter-third-cohort-recovery-launch-2026-10-19) hit its600-second limit after64 native and43 independent completions.
+The failed archive and interrupted seed43 remain preserved.
+A separately bounded600-second recovery runs only unfinished independent seeds43–63 with unchanged inputs.
+The original batch continues; two settings remain fully audited while this recovery is pending.

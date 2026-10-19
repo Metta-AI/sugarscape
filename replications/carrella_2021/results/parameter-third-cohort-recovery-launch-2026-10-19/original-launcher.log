@@ -1,0 +1,62 @@
+{"name": "native", "exit_code": 0, "elapsed_seconds": 229.82597991699004}
+{"name": "independent-0", "exit_code": 0, "elapsed_seconds": 8.917930124996928}
+{"name": "independent-1", "exit_code": 0, "elapsed_seconds": 8.05580612499034}
+{"name": "independent-2", "exit_code": 0, "elapsed_seconds": 8.581382083008066}
+{"name": "independent-3", "exit_code": 0, "elapsed_seconds": 7.799081125005614}
+{"name": "independent-4", "exit_code": 0, "elapsed_seconds": 6.564159000001382}
+{"name": "independent-5", "exit_code": 0, "elapsed_seconds": 8.809240666014375}
+{"name": "independent-6", "exit_code": 0, "elapsed_seconds": 8.476900124980602}
+{"name": "independent-7", "exit_code": 0, "elapsed_seconds": 8.43398362500011}
+{"name": "independent-8", "exit_code": 0, "elapsed_seconds": 9.123206457996275}
+{"name": "independent-9", "exit_code": 0, "elapsed_seconds": 9.461681542015867}
+{"name": "independent-10", "exit_code": 0, "elapsed_seconds": 7.184542500006501}
+{"name": "independent-11", "exit_code": 0, "elapsed_seconds": 9.033959667023737}
+{"name": "independent-12", "exit_code": 0, "elapsed_seconds": 9.015474332991289}
+{"name": "independent-13", "exit_code": 0, "elapsed_seconds": 8.443035250005778}
+{"name": "independent-14", "exit_code": 0, "elapsed_seconds": 9.01970279199304}
+{"name": "independent-15", "exit_code": 0, "elapsed_seconds": 8.799862374988152}
+{"name": "independent-16", "exit_code": 0, "elapsed_seconds": 9.021614208002575}
+{"name": "independent-17", "exit_code": 0, "elapsed_seconds": 9.212278458027868}
+{"name": "independent-18", "exit_code": 0, "elapsed_seconds": 8.331855500000529}
+{"name": "independent-19", "exit_code": 0, "elapsed_seconds": 7.948830332985381}
+{"name": "independent-20", "exit_code": 0, "elapsed_seconds": 9.236259333003545}
+{"name": "independent-21", "exit_code": 0, "elapsed_seconds": 8.806255458010128}
+{"name": "independent-22", "exit_code": 0, "elapsed_seconds": 9.316178374981973}
+{"name": "independent-23", "exit_code": 0, "elapsed_seconds": 8.050787208019756}
+{"name": "independent-24", "exit_code": 0, "elapsed_seconds": 6.705963791988324}
+{"name": "independent-25", "exit_code": 0, "elapsed_seconds": 8.299231874989346}
+{"name": "independent-26", "exit_code": 0, "elapsed_seconds": 9.313161708007101}
+{"name": "independent-27", "exit_code": 0, "elapsed_seconds": 7.1414782499778084}
+{"name": "independent-28", "exit_code": 0, "elapsed_seconds": 8.833981499978108}
+{"name": "independent-29", "exit_code": 0, "elapsed_seconds": 8.59135154201067}
+{"name": "independent-30", "exit_code": 0, "elapsed_seconds": 9.599551125022117}
+{"name": "independent-31", "exit_code": 0, "elapsed_seconds": 8.043508292001206}
+{"name": "independent-32", "exit_code": 0, "elapsed_seconds": 8.605995999998413}
+{"name": "independent-33", "exit_code": 0, "elapsed_seconds": 7.3481919589976314}
+{"name": "independent-34", "exit_code": 0, "elapsed_seconds": 8.46003512502648}
+{"name": "independent-35", "exit_code": 0, "elapsed_seconds": 8.554563750018133}
+{"name": "independent-36", "exit_code": 0, "elapsed_seconds": 9.015287292015273}
+{"name": "independent-37", "exit_code": 0, "elapsed_seconds": 7.978748333000112}
+{"name": "independent-38", "exit_code": 0, "elapsed_seconds": 9.06416354101384}
+{"name": "independent-39", "exit_code": 0, "elapsed_seconds": 8.946222041995497}
+{"name": "independent-40", "exit_code": 0, "elapsed_seconds": 8.276345166988904}
+{"name": "independent-41", "exit_code": 0, "elapsed_seconds": 9.526536874996964}
+{"name": "independent-42", "exit_code": 0, "elapsed_seconds": 7.990836749988375}
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/launch.py", line 62, in <module>
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 2141, in _communicate
+    self.wait(timeout=self._remaining_time(endtime))
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/subprocess.py", line 2045, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python', '/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/model.py', '/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent-parameters/43.json', '/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/row-4675/independent/row-43.csv']' timed out after 4.168654915963998 seconds
