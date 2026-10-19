@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[SARSA/EC completes all 50 seeds](results/sarsa-ec-complete-cohort-2026-10-19), with full trajectory audits, independent R checks, and verified durable storage. Thirteen endpoint mean ranges overlap the paper; the remaining pointwise bootstrap interval overlaps. Coverage reaches 802 inputs and 16,040,802 observations; fourteen released-code cohorts are complete. These descriptive comparisons do not establish equivalence.
+
 [The paper-table Rule M/EC cohort completes all 50 seeds](results/paper-rule-m-ec-complete-cohort-2026-10-19). All paired full trajectories match the released-code control. Independent R checks pass; twelve endpoint mean ranges overlap the paper, and both remaining bootstrap intervals overlap. Coverage reaches 752 inputs and 15,040,752 observations.
 
 [SARSA/Rule M completes all 50 seeds](results/sarsa-rule-m-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. All 14 endpoint mean ranges overlap the paper. Coverage reaches 702 inputs and 14,040,702 observations; thirteen released-code cohorts are complete. These descriptive overlaps do not establish equivalence.
@@ -124,8 +126,8 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-The latest full audit covers 650/800 released-code inputs and 102/800 paper-table inputs.
-Complete and audit the remaining 150 released-code and 698 paper-table inputs under the existing frozen assignments.
+The latest full audit covers 700/800 released-code inputs and 102/800 paper-table inputs.
+Complete and audit the remaining 100 released-code and 698 paper-table inputs under the existing frozen assignments.
 Both bounded ensembles are running; completed producer entries receive coverage only after independent trajectory audits.
 All sixteen method pairings already passed native recorder qualification; the Rule M control also matches across both parameter interpretations for all 50 seeds.
 
