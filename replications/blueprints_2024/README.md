@@ -1189,3 +1189,5 @@ Both producers continue; these completion-order prefixes do not establish whole-
 [Heterogeneous50 death-rate discrepancy](results/heterogeneous50-death-rate-2026-10-19): none of eight explicit numerator/aggregation conventions matches Figure 20’s 1.204–1.400% median ink range. R aggregation and repeat traversal pass; historical metric and plotting definitions remain unresolved. This is not a validated negative replication.
 
 [Author death-plot history](results/death-plot-history-2026-10-19) finds aging deaths added in v2024.3. Executing that unmodified helper on all 500 heterogeneous50 trajectories gives temporal mean 1.559% and median 1.540%, still outside Figure 20’s ink interval. R verifies all 5,001 rates. This later homogeneous plotting helper does not establish the historical supplementary statistic.
+
+[Extinction-row and zero-padding diagnostics](results/heterogeneous50-death-padding-2026-10-19) retain all 500 heterogeneous-50 seeds. All-cause fixed-horizon medians fall to 1.49675–1.49705%, still above Figure 20’s 1.20415–1.39985% ink interval. Independent R verifies all twelve convention medians; zero padding alone does not resolve the discrepancy.

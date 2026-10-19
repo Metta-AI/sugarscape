@@ -1,0 +1,80 @@
+{
+  "inputs": 500,
+  "native_observations": 1781148,
+  "native_extinctions": 150,
+  "future_zero_rows": 719352,
+  "terminal_zero_population_rows": 150,
+  "all_cause_deaths_at_zero_population": 152,
+  "figure20_ink_interval_percent": [
+    1.2041522765578863,
+    1.3998483120054503
+  ],
+  "definitions": {
+    "starvation_combat/include_initial/positive_population_only": {
+      "inputs": 500,
+      "median_percent": 0.2301607388846185,
+      "within_paper_ink": false
+    },
+    "starvation_combat/include_initial/observed_zero_assigned": {
+      "inputs": 500,
+      "median_percent": 0.2301607388846185,
+      "within_paper_ink": false
+    },
+    "starvation_combat/include_initial/fixed_horizon_zero_extended": {
+      "inputs": 500,
+      "median_percent": 0.1516775790182085,
+      "within_paper_ink": false
+    },
+    "starvation_combat/exclude_initial/positive_population_only": {
+      "inputs": 500,
+      "median_percent": 0.2302067710323954,
+      "within_paper_ink": false
+    },
+    "starvation_combat/exclude_initial/observed_zero_assigned": {
+      "inputs": 500,
+      "median_percent": 0.2302067710323954,
+      "within_paper_ink": false
+    },
+    "starvation_combat/exclude_initial/fixed_horizon_zero_extended": {
+      "inputs": 500,
+      "median_percent": 0.1517079145340121,
+      "within_paper_ink": false
+    },
+    "all_reported_causes/include_initial/positive_population_only": {
+      "inputs": 500,
+      "median_percent": 1.6484379563251057,
+      "within_paper_ink": false
+    },
+    "all_reported_causes/include_initial/observed_zero_assigned": {
+      "inputs": 500,
+      "median_percent": 1.6484379563251057,
+      "within_paper_ink": false
+    },
+    "all_reported_causes/include_initial/fixed_horizon_zero_extended": {
+      "inputs": 500,
+      "median_percent": 1.496748884356589,
+      "within_paper_ink": false
+    },
+    "all_reported_causes/exclude_initial/positive_population_only": {
+      "inputs": 500,
+      "median_percent": 1.6487676439163708,
+      "within_paper_ink": false
+    },
+    "all_reported_causes/exclude_initial/observed_zero_assigned": {
+      "inputs": 500,
+      "median_percent": 1.6487676439163708,
+      "within_paper_ink": false
+    },
+    "all_reported_causes/exclude_initial/fixed_horizon_zero_extended": {
+      "inputs": 500,
+      "median_percent": 1.49704823413346,
+      "within_paper_ink": false
+    }
+  },
+  "source_sha256": {
+    "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/results/heterogeneous50-death-rate-2026-10-19/per-run.json": "52b17ca6cd63632cef82f0132347c060eb9da0f3c1c3cfba75566a8935f37d21",
+    "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/results/heterogeneous50-death-rate-2026-10-19/summary.json": "159c38344894ed452cddb402ebc4cfc9f1b68cd8286f2d283118b69ffd4a8180",
+    "/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/results/death-plot-history-2026-10-19/cc0408a-plot.py": "dded8a707026aca8a07e55f72594b199cbfc939aabd9bdf7b4ae573997d7ae67"
+  },
+  "scope": "Exploratory extinction handling diagnostic using previously native-audited per-run accumulators. All500 seeds retained. The historical helper zero-fills arrays and assigns zero when population is zero, but its aggregation across runs is different; these per-run temporal means are not claimed as the Figure20 implementation. No original data or primary result changes; no new simulation or paper-completion credit."
+}
