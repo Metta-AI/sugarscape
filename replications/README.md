@@ -355,3 +355,5 @@ Need for Greed’s two Table IV pilot pairs now pass independent local artifact 
 Need for Greed’s death-rate quartiles now show why median agreement is insufficient. All tested aging-inclusive medians fit the nominal envelope, but neither quartile does; the later author pooled calculation behaves similarly. Fresh raw aggregation and 486 independent R checks pass. Historical measurement fidelity remains unresolved, with no negative-paper or completion credit.
 
 Brearcliffe Q/Q now completes all 50 seeds, bringing coverage to 553 inputs and 11,060,553 observations. Eleven released-code cohorts are complete. Independent R arithmetic and durable archive readback pass. Eight readable endpoint ranges overlap the paper, while six remain unresolved; no equivalence or whole-paper completion is claimed.
+
+The [related reinforcement-learning repository audit](source-audits/market-genetic-rlearners-2026-10-19/README.md) verifies 13 source files, four driver revisions, and eight population traces. Its 200-agent, 10,000-period protocol differs from the Market Algorithm paper; it adds no replication credit.
