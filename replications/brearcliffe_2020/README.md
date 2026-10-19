@@ -4,9 +4,9 @@
 
 [Both cloud-host qualification cases now pass](results/existing-host-qualified-ensemble-launch-2026-10-19): 640,032 values and both complete trajectory byte sequences match the local references. The 749 reserved released-code inputs are running with eight workers under an 11.5-hour simulation bound and a $9.12 execution/export/idle ceiling. Launch adds no completed-study credit.
 
-[Both paper-table pilot inputs](results/second-paper-table-input-2026-10-19) pass all 20,001 observation checks and fresh archive readback. Coverage is 15 released-code inputs and two paper-table inputs; no pairing is complete.
+[Both paper-table pilot inputs](results/second-paper-table-input-2026-10-19) pass all 20,001 observation checks and fresh archive readback. These two paper-table inputs are included in the current audited total above; no pairing is complete.
 
-[The released-code prefix](results/rule-m-prefix-2026-10-19) now has 15 audited inputs and 300,015 observations. RuleM/RuleM covers 14/50 seeds; no pairing is complete.
+[The earlier released-code prefix](results/rule-m-prefix-2026-10-19) retains its 15-input audit snapshot; the current totals above supersede that snapshot.
 
 [The first two paper-table Q-Learning/SARSA inputs](results/paper-table-rl-launch-2026-10-19) completed sequentially within the 2,100-second batch limit. Both outputs are now independently audited.
 
@@ -61,7 +61,7 @@ A [bounded CPU host trial](results/cloud-qualification-launch-2026-10-19) is que
 
 The [first bounded dispatcher batch](results/first-batch-complete-2026-10-19) completes both inputs and passes fresh archive audit. Released-code coverage is 3/800 inputs, including the earlier Rule M/EC input.
 
-The [remaining Rule M/Rule M cohort](results/rule-m-cohort-launch-2026-10-19) is now running: 48 disjoint inputs target the complete fifty-repeat sample alongside the two audited inputs.
+The [original local Rule M/Rule M batch](results/rule-m-cohort-launch-2026-10-19) has ended. Its 40 successes and the two earlier controls give 42 complete seeds; the eight unfinished inputs are recovering remotely.
 
 The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specified and rejects incomplete samples before producing means. [An independent R checker](results/cohort-verification-preparation-2026-10-19) is prepared for all means, standard deviations, and bootstrap intervals. The successful fifty-run path and numerical comparison remain pending.
 
