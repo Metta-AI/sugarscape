@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "e07d5ea10674049afe0c909c7428fda5d63a0de2",
+      "checked_commit": "afd0eb560008c8ec13c994b40062db36b951cbe1",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "d3c52225db2ea5f25f4f82600f807de02ca4a50784bd7c90b71caff2c5873589",
-      "json_evidence_files": 208,
+      "readme_sha256": "dd118190b134f4f40688990b06b07f62725e8e6a98554914d520d5035efcef3e",
+      "json_evidence_files": 214,
       "gzip_json_evidence_files": 17,
-      "checked_at": "2026-10-19T19:22:14.492988+00:00",
+      "checked_at": "2026-10-19T19:24:46.808025+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "219 unique original inputs audited:89 baseline and130 sweep inputs,1013026 observations. Latest TableIV checkpoint25 inputs/115402 observations passes fresh raw audits against both original archives; two runtime pilots counted once add10002 observations. TableIV127/500 inputs:100 at0.37,26 at0.36,one at0.40;3extinct124above250. Ordered incomplete prefix is not representative; no full-bin comparison. Remaining311 baseline and9970 sweep inputs. Baseline recovery stopped admissions after egoistic seed530238075247992587 reached its native limit (exit124); already-active inputs continue. TableIV400-input batch remains bounded/running. Paginated evidence collector replaces failed first-page-only reader; live2-page reassembly and5178003-byte export pass. Prior failure preserved; no simulation restart or budget extension. Deduplicate first22 baseline recovery inputs in later checkpoints. At0.37 population per-run quartiles fit paper strokes; pooled temporal quartiles do not. Four primary medians fit. Death definition and aging-inclusive quartiles remain unresolved. TablesI\u2013IV/Figures2\u20136 incomplete; no completed-paper credit. Timeout diagnosis:failed egoistic seed previously2095.149s,above1800s bound.6/333 retained runtimes exceed bound,max2273.909s; planning omitted available timing evidence. Failed4630527-byte prefix retained losslessly,4399finite consecutive records through4398,last population1365. No model mismatch demonstrated. Await terminal reconciliation before disjoint recovery with informed limits; no automatic extension or coverage credit."
+      "remaining_scope": "237 unique original inputs audited:107baseline130sweep,1069333observations. Baseline batch terminal exit1; all41attempts reconciled,40full trajectories match prior hashes,one timeout partial preserved.22previously counted successes deduplicated;18new/56307obs added.293unfinished original baselines frozen (1failed292unstarted),disjoint from audited inputs. Prior failed runtime2095s exceeded1800limit;6/333historical runs exceededbound,max2274s. New recovery must use informed bounds; no old-command restart. TableIV127/500 audited, execution-ordered prefix not representative; remaining9970sweep inputs and293baselines. Source/definition and historical death aggregation unresolved. All tables/figures and completed-paper verdict remain outstanding."
     }
   ],
   "study_prs": 22,
