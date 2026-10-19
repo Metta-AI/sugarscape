@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The ninth Table IV checkpoint](results/table4-ninth-prefix-2026-10-19) adds 25 disjoint inputs and 125,025 observations. Coverage reaches 730 inputs and 2,683,170 observations. Tables I–III remain exact; the active Table IV row covers 327/500 inputs.
+
 [All 400 original baselines are complete](results/baseline-complete-2026-10-19). Tables I–III match exactly, independently verified in R, without result-matching adjustments. The final 18 inputs bring coverage to 705 inputs and 2,558,145 observations. A fresh terminal-archive audit also verifies all 293 recovery inputs.
 
 [The eighth Table IV checkpoint](results/table4-eighth-prefix-2026-10-19) adds 25 disjoint inputs and 125,025 observations. All 100 selfishness-0.38 inputs are now audited; the five-level row remains incomplete at 302/500. Total coverage reaches 687 inputs and 2,501,869 observations.
@@ -74,7 +76,7 @@
 
 [The selfishness-1 endpoint baseline reached its time limit](results/endpoint-recovery-launch-2026-10-19). Both level-1 controls timed out; the original batch is terminal. Bounded sequential recovery reruns only those two inputs with unchanged configurations. Failed bytes are preserved; coverage and study status are unchanged.
 
-Status: partial native reproduction. The shared-input inventory has 705 audited inputs and 2,558,145 observations: all 400 original baselines and 305 sweep inputs. Four reported medians agree graphically at both selfishness 0.36 and 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
+Status: partial native reproduction. The shared-input inventory has 730 audited inputs and 2,683,170 observations: all 400 original baselines and 330 sweep inputs. Four reported medians agree graphically at both selfishness 0.36 and 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
 
 Kremer-Herman and Gupta, IEEE ISTAS 2024, pages 182–190. [Author manuscript](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf).
 The paper explicitly names [author release v2024.1](https://github.com/digital-terraria-lab/sugarscape/tree/b9ca671ab7591c7b3606f2d76c33eda344d626d1). Its source is MIT-licensed; source and dataset hashes appear in `source-audit.json`.
@@ -84,7 +86,7 @@ The deposited protocol includes 400 baseline inputs and 10,100 sweep inputs: 101
 ## Audited evidence
 
 - [Baseline reuse](results/baseline-reuse-2026-10-19): 64 Bentham baseline inputs, 320,064 observations. Three endpoint controls and 240 recovered inputs extend baseline coverage to 307; 93 remain.
-- [Selfishness 0.37](results/selfishness037-reuse-2026-10-19): all 100 deposited seeds, 495,265 observations, one extinction and 99 populations above the initial 250. No final population equals the initial population. Three endpoint controls and 202 Table IV batch inputs extend sweep coverage to 305; 9,795 remain.
+- [Selfishness 0.37](results/selfishness037-reuse-2026-10-19): all 100 deposited seeds, 495,265 observations, one extinction and 99 populations above the initial 250. No final population equals the initial population. Three endpoint controls and 227 Table IV batch inputs extend sweep coverage to 330; 9,770 remain.
 
 Baseline and sweep configurations remain separate. Baseline selfishness endpoints are not substituted for sweep endpoints. Reused PyPy trajectories inherit the Blueprints runtime qualifications; this audit adds configuration and artifact verification, not an independent engine implementation.
 
