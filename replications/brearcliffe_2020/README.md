@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The paper-table EC/Rule M cohort completes all 50 seeds](results/paper-ec-rule-m-complete-cohort-2026-10-19). All trajectories exactly match their released-code counterparts. Independent R and storage readback pass; thirteen endpoint mean ranges overlap the paper, and the remaining vision interval overlaps. Coverage reaches 1,002 inputs and 20,041,002 observations.
+
 [The Q-learning/SARSA wealth contrast supports the reported endpoint direction](results/q-sarsa-claim-contrasts-2026-10-19). All fifty paired differences are positive in each released-code orientation, with independent R verification. Early mean reversals prevent an all-time dominance claim; paper-table orientations remain outstanding.
 
 [The released-code SARSA/Q-learning cohort completes all 50 seeds](results/sarsa-q-complete-cohort-2026-10-19). Independent R checks and fresh storage readback pass. All thirteen readable endpoint mean ranges overlap the paper; one remains unresolved. Coverage reaches 952 inputs and 19,040,952 observations, with fifteen released-code pairings complete.
@@ -140,8 +142,8 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-The latest full audit covers 750/800 released-code inputs and 202/800 paper-table inputs.
-Complete and audit the remaining 50 released-code and 598 paper-table inputs under the existing frozen assignments.
+The latest full audit covers 750/800 released-code inputs and 252/800 paper-table inputs.
+Complete and audit the remaining 50 released-code and 548 paper-table inputs under the existing frozen assignments.
 Both bounded ensembles are running; completed producer entries receive coverage only after independent trajectory audits.
 All sixteen method pairings already passed native recorder qualification; the Rule M control also matches across both parameter interpretations for all 50 seeds.
 
