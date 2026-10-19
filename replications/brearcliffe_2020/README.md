@@ -71,3 +71,17 @@ Qualify the remaining method pairings and estimate their runtime before the full
 Resolve the released-code/prose parameter interpretations without silently changing the primary experiment.
 Implement the study behavior in the fork, qualify it against the native model, and compare every published figure using full repeated ensembles.
 Do not count a pilot, source audit, or five-repeat released sweep as a completed paper replication.
+
+## Complete-cohort curve comparison
+
+`compare_curves.py COHORT_DIRECTORY METRIC_CURVES_JSON_GZ NEW_OUTPUT` compares a complete 50-seed summary with the pinned Figure 3–9 digitization.
+It retains 4,004 records per pairing, including unresolved paper segments.
+For each visible interval, it evaluates the piecewise-linear simulation mean over the horizontal calibration interval.
+Signed separation is positive above the paper range, negative below, and zero when the ranges overlap.
+These descriptive separations are not statistical acceptance tests; adjacent raster columns are dependent.
+Paper seeds and between-run uncertainty remain unavailable.
+
+The command records hashes of all consumed summary, mean, and digitization files.
+Run `verify_cohort.R` on the same summary before interpreting the comparison.
+Current validation covers lint, CLI parsing, and the pinned digitization's seven 572-record pairing selections.
+A successful complete-cohort execution remains pending recovery of the final eight seeds; no numerical comparison is claimed yet.
