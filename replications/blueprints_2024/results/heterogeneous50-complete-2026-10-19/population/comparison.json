@@ -1,0 +1,40 @@
+{
+  "inputs": 500,
+  "observations": 1781148,
+  "native_extinctions": 150,
+  "numpy_version": "1.26.4",
+  "checks": {
+    "observed_including_initial": {
+      "numpy_median": 938.1762647470506,
+      "exact_median": "9383639/10002",
+      "absolute_rounding_difference": 0.0,
+      "float_spacing": 1.1368683772161603e-13
+    },
+    "observed_excluding_initial": {
+      "numpy_median": 938.3139000000001,
+      "exact_median": "9383139/10000",
+      "absolute_rounding_difference": 1.1368683772161603e-13,
+      "float_spacing": 1.1368683772161603e-13
+    },
+    "zero_extended_including_initial": {
+      "numpy_median": 938.1762647470506,
+      "exact_median": "9383639/10002",
+      "absolute_rounding_difference": 0.0,
+      "float_spacing": 1.1368683772161603e-13
+    },
+    "zero_extended_excluding_initial": {
+      "numpy_median": 938.3139000000001,
+      "exact_median": "9383139/10000",
+      "absolute_rounding_difference": 1.1368683772161603e-13,
+      "float_spacing": 1.1368683772161603e-13
+    }
+  },
+  "repeat_outputs_byte_identical": true,
+  "paper_target_sha256": "e6cde81c8e0a91d6048c6e40504509dd6434292e1b6150b2a08bc4ccb2df6fad",
+  "paper_ink_interval": [
+    925.3719241067415,
+    943.2436736956121
+  ],
+  "all_four_medians_within_paper_ink": true,
+  "scope": "Independent NumPy ordering selects the exact rational middle pair; floating arithmetic differs by at most one ULP. One complete condition shows graphical agreement under four conventions, not equivalence or full-paper reproduction."
+}

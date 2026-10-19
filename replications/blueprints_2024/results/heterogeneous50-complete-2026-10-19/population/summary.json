@@ -1,0 +1,52 @@
+{
+  "experiment": "heterogeneous",
+  "condition": 50,
+  "source_archive_sha256": "c37aa109e59ca8b96cd295b7f022d6bf56f413aabbf246ca432ff5d4360de91a",
+  "median_definition": "Arithmetic mean of the 250th and 251st ordered per-run means; historical quantile implementation remains unverified.",
+  "validated_inputs": 500,
+  "native_extinctions": 150,
+  "observations": 1781148,
+  "inventory_sha256": "d3f7e851bc2f7fa1533367bd55a5df6a3a1301f9ec5610cd06d6d8bae3b96b1a",
+  "native_archive_sha256": {
+    "replications/blueprints_2024/results/heterogeneous50-complete-2026-10-19/terminal-evidence.tar.gz": "4d1102ad108537198e08fbbbc148d2119b874c128be3e265740337641ff96488",
+    "replications/blueprints_2024/results/heterogeneous50-eighteenth-prefix-2026-10-19/checkpoint-0450.tar.gz": "80698883b7069f83b8a40e4fc9f1c61f8429242705546ca1ecc1e1817d273806",
+    "replications/blueprints_2024/results/heterogeneous50-eighth-prefix-2026-10-19/checkpoint-0200.tar.gz": "985dad0133cce0048fb78d7b17ebc71e550658d45b39a78adbee7bbc726071d2",
+    "replications/blueprints_2024/results/heterogeneous50-eleventh-prefix-2026-10-19/checkpoint-0275.tar.gz": "cc09f9039d569bb6365c5b9f70f6898097361947dfe169a251b2365ce3a7b9ad",
+    "replications/blueprints_2024/results/heterogeneous50-fifteenth-prefix-2026-10-19/checkpoint-0375.tar.gz": "61b8a9295bf4e034ddfaf25114b8c3ad14c6df5c97b710c51b273740999c78b6",
+    "replications/blueprints_2024/results/heterogeneous50-fifth-prefix-2026-10-19/checkpoint-0125.tar.gz": "3ae849f1a89dbb51e27a6b73eaae609d03c3fbd37d27efb76b807e093c04a6ff",
+    "replications/blueprints_2024/results/heterogeneous50-first-prefix-2026-10-19/checkpoint-0025.tar.gz": "ac0917aa4a5384c051fe53c78acbba3907dd7e5a566b5a81dd13d585c841c442",
+    "replications/blueprints_2024/results/heterogeneous50-fourteenth-prefix-2026-10-19/checkpoint-0350.tar.gz": "2b983d3b2088952008eef13cb26cf6e66f3ea3257834837e239198c24769c3cc",
+    "replications/blueprints_2024/results/heterogeneous50-fourth-prefix-2026-10-19/checkpoint-0100.tar.gz": "594b48070f801af1c81fb8eb368f61f687f22b67238a9ac2d0a7e2716aeb3d30",
+    "replications/blueprints_2024/results/heterogeneous50-nineteenth-prefix-2026-10-19/checkpoint-0475.tar.gz": "77fdda0f2e2bc121de51177c93dce945b0f934923a816b1af7fc472b76c82794",
+    "replications/blueprints_2024/results/heterogeneous50-ninth-prefix-2026-10-19/checkpoint-0225.tar.gz": "3ab23bd742f675984f78e6a78a820847cb24d07e55eea2c95dee65b9c5d0d3e6",
+    "replications/blueprints_2024/results/heterogeneous50-second-prefix-2026-10-19/checkpoint-0050.tar.gz": "74eb52a6132240f9d479a0d2ced8399d65d23af131aadea0f766cd6f841ec90c",
+    "replications/blueprints_2024/results/heterogeneous50-seventeenth-prefix-2026-10-19/checkpoint-0425.tar.gz": "b6f0cde5a8ee77fa2c98e1eb21d2ca0863a5d444a7d01696c2af3ca5d0c29e9a",
+    "replications/blueprints_2024/results/heterogeneous50-seventh-prefix-2026-10-19/checkpoint-0175.tar.gz": "c7790312f993eb42dd5fc70a738cba7c69d1fcd9413c1a29260d1a9e6884f81c",
+    "replications/blueprints_2024/results/heterogeneous50-sixteenth-prefix-2026-10-19/checkpoint-0400.tar.gz": "490f306d55b4ce4f3bcb65a55950fb5bb2d237c26dea95aaf548a5865cc25906",
+    "replications/blueprints_2024/results/heterogeneous50-sixth-prefix-2026-10-19/checkpoint-0150.tar.gz": "b051ac7bf6681ca41edf58143c83308020f4ef76634c59c8f7fc05cdac69daf3",
+    "replications/blueprints_2024/results/heterogeneous50-tenth-prefix-2026-10-19/checkpoint-0250.tar.gz": "de0ba11ed8c5ca2a069eaf5aec44c03d81a3f7ed99583e596f8f0bf113c7f491",
+    "replications/blueprints_2024/results/heterogeneous50-third-prefix-2026-10-19/checkpoint-0075.tar.gz": "e87558e076b2cb69e0b9034ba63426676e5bc168836579faf5467463e44284fe",
+    "replications/blueprints_2024/results/heterogeneous50-thirteenth-prefix-2026-10-19/checkpoint-0325.tar.gz": "7ff03eede9f28a0308acaab19a156c6b92899d6b7446501f06895eae6b26879c",
+    "replications/blueprints_2024/results/heterogeneous50-twelfth-prefix-2026-10-19/checkpoint-0300.tar.gz": "86f549c91029d84ea32968db207cd60b42d9b7d7138237d32ba7e1edbf85cd28",
+    "replications/blueprints_2024/results/supplement-controls-2026-10-17/native.tar.gz": "a47c912d3f0807229e9ce3db4dfb0b101bae5000de61e7ea308a5cd85abca5e4"
+  },
+  "conventions": {
+    "observed_including_initial": {
+      "median": 938.1762647470506,
+      "median_exact": "9383639/10002"
+    },
+    "observed_excluding_initial": {
+      "median": 938.3139,
+      "median_exact": "9383139/10000"
+    },
+    "zero_extended_including_initial": {
+      "median": 938.1762647470506,
+      "median_exact": "9383639/10002"
+    },
+    "zero_extended_excluding_initial": {
+      "median": 938.3139,
+      "median_exact": "9383139/10000"
+    }
+  },
+  "scope": "Complete 500-input population medians under four explicit averaging conventions. Historical conventions and other windows remain unresolved. No confidence intervals, equivalence, full-sweep or paper-completion claim. Zero extension assumes population remains zero after native extinction."
+}
