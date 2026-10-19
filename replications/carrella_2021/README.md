@@ -3,8 +3,6 @@
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
-The [seventh parameter setting](results/parameter-seventh-cohort-complete-2026-10-19) passes trajectory, archive-readback, and independent R audits. Seven of ten settings now cover 896 runs and 448,896 observations. Original timeouts and bounded recoveries remain explicit; the complete 30-test analysis is pending.
-
 The [eighth parameter setting](results/parameter-eighth-cohort-complete-2026-10-19) passes trajectory, archive-readback, and independent R audits. Eight of ten settings now cover 1,024 runs and 513,024 observations. The last two settings and combined analysis remain required.
 
 **Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
@@ -148,11 +146,17 @@ An intentionally corrupted reference statistic yields 1,499/1,500 matches and a 
 
 ## Replication work remaining
 
-1. Extend the Table 8 comparison to the remaining eight estimators and interval coverage.
-2. Finish and validate all 5,000 author-model simulations.
-3. Audit DTL trade, reproduction, mutation, welfare, and Gini semantics against this source.
-4. Implement and validate the required study-specific behavior in this fork.
-5. Complete both simulation ensembles and estimator comparisons, retaining failures and uncertainty.
+All 5,000 author-model simulations and the independent ensemble are audited. The complete estimator comparison covers all 75 finite Table 8 entries.
+Saved-fold audits include interval coverage and widths; Sugarscape-only results do not establish the paper's cross-model aggregate coverage claims.
+
+1. Finish the last two settings in the ten-setting parameter-space diagnostic, retain failures, and run the declared combined 30-test analysis.
+2. Assess remaining independent-model discrepancies using the completed diagnostic and existing mechanism checks. Nonsignificant tests alone do not establish equivalence.
+3. Attribute the 37 published-score discrepancies using the retained source, parser, random-stream, and runtime controls before assigning a negative verdict.
+4. Report remaining historical-environment uncertainty explicitly. The R 4.0.5 controls cover individual point-fit folds, not a complete five-fold interval workflow.
+
+The [complete estimator comparison](results/estimator-comparison-complete-2026-10-19) and
+[latest validated parameter setting](results/parameter-eighth-cohort-complete-2026-10-19) are the current evidence checkpoints.
+The [combined analysis](results/parameter-recovery-analysis-preparation-2026-10-19) requires all ten settings and preserves original timeout receipts.
 
 Do not replace the traded two-resource model with the one-resource McCulloch variant.
 Do not count analysis of the archived table alone as an independent simulation replication.
