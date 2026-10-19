@@ -776,3 +776,5 @@ Shared runtime jars remain external, with dependency provenance in the receipt.
 ## Static vision geometry qualification
 
 [The cache experiment](results/vision-cache-qualification-2026-10-19) preserves 60,000 Gini-history values, all original final world fields, and random states across eight executions. At 510 agents, the measured simulation-time ratio is 1.455; at ten agents, 1.012. The initial morphology-variable-position failure remains preserved. Broader fidelity and end-to-end throughput checks remain necessary; production and the full-grid spending estimate are unchanged.
+
+[The broader cache qualification](results/vision-cache-strata-launch-2026-10-19) verifies all 15,000 static patch/radius sets against native geometry. A bounded 44-execution comparison spans all eleven population levels and eleven landscapes; full-state and throughput results remain pending.
