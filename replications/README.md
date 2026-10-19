@@ -14,6 +14,8 @@ The table distinguishes candidates, unfinished studies, and completed replicatio
 Current completion count: **six studies**, including Carrella’s and Thaler’s qualified method reproductions.
 The dated progress entries below retain earlier criteria and counts; `study-evidence.json` is the current evidence ledger.
 
+The [new $100 continuation budget](budgets/continuation-2026-10-19/README.md) reserves $20 across three bounded tasks. Need for Greed now has 732 audited original inputs; Richmond’s declared method controls are running. Neither adds a completed study.
+
 ## Evidence required
 
 Each study gets its own directory and pull request, with follow-up commits for discrepancies.

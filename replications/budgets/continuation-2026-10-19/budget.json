@@ -1,0 +1,38 @@
+{
+  "authorized_at": "2026-10-19T23:05:21.597153+00:00",
+  "authorization": "User: you can use $100, continue",
+  "currency": "USD",
+  "cap": 100.0,
+  "interpretation": "Additional continuation budget. Conservatively reserve full costs of the just-started released recovery and Richmond qualification; older already-authorized ensembles remain under their original bounds.",
+  "allocations": [
+    {
+      "id": "brearcliffe-released-recovery-001",
+      "maximum_usd": 2.0,
+      "state": "running",
+      "command": "cmd-pp9jf"
+    },
+    {
+      "id": "richmond-observed-method-controls-001",
+      "maximum_usd": 8.0,
+      "state": "running-recovery",
+      "node": "relh-sugarscape-richmond-h100-20261017-v1",
+      "command": "cmd-6gkcv",
+      "failed_command": "cmd-kub9w"
+    },
+    {
+      "id": "need-for-greed-unassigned-launch-001",
+      "maximum_usd": 10,
+      "state": "running-qualification",
+      "node": "relh-sugarscape-unassigned00-cpu8-20261019-v1",
+      "command": "cmd-9339c"
+    }
+  ],
+  "reserved_usd": 20.0,
+  "unreserved_usd": 80.0,
+  "rules": [
+    "Reserve worst-case bounded cost before launch.",
+    "Release reservations only after terminal verification and cost reconciliation.",
+    "Do not interpret100as175approval; unassigned sweep may run only in disjoint affordable bounded batches.",
+    "Preserve existing experiments and failed evidence; no duplicate coverage."
+  ]
+}
