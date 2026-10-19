@@ -22,21 +22,20 @@ run growback synchronously after the population. Performance runs use 1,000 step
 The scaling experiment replaces dead agents and varies initial population from
 500 to 2,500 in increments of 500. Preserve the released landscape and random initialization.
 
-Required fresh experiments remain:
+Completed execution and remaining interpretation:
 
-- Figure 5a agent/environment state checks and concurrent population comparisons.
-  Figure 5b sequential population replay now passes, as documented below.
-- Sequential reference plus Lock-Based, TVar and TArray timing across 1–8 capabilities.
-- Four implementations across all five rebirthing populations, with four capabilities for concurrent variants.
-- TVar/TArray retry ratios across 1–8 capabilities, measured separately from timings.
-- TArray carrying-capacity and rebirthing performance/retries at 16, 32 and 64 capabilities.
+- Figure 5b reproduces all 50 original values. Figure 5a matches all occupied cells at exported time 83, while its caption names time 50.
+- All 51 timing cells across Tables 6, 8 and 9 pass native audit, covering 204 raw measurements.
+- The Table 7 retry ensemble and Table 9 retry runs are complete. The 32-capability normal retry discrepancy remains unexplained.
+- Concurrent population and observer checks are retained below; no rigorous statistical dynamics-equivalence result is claimed.
+- [The timing proposition audit](results/timing-proposition-audit-2026-10-19) separates three internal reporting inconsistencies from fresh performance differences.
 
 The paper's local machine was an i7-8550U laptop, Ubuntu 19.10, with GHC 8.4.3
-and Stack resolver lts-12.4. Hardware changes prevent treating identical elapsed
-seconds as an appropriate fresh-run criterion. Before confirmatory runs, freeze
-hardware topology, resource isolation, repetitions, ordering and confidence-interval
-comparisons for the paper's relative-performance claims. Do not infer physical core
-counts from Haskell capabilities. No fresh-run acceptance criteria are finalized yet.
+and Stack resolver lts-12.4. Tables 6/8 use different hardware in our runs.
+Table 9 matches instance class, but historical clock and scheduling conditions remain unknown.
+The fixed execution protocols and source checks support descriptive comparisons.
+No numerical equivalence threshold or post-hoc significance criterion is introduced.
+Historical performance interpretation and retry-discrepancy resolution still prevent whole-paper completion.
 
 ## Source fidelity
 
