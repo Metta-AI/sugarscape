@@ -1098,3 +1098,11 @@ Use `summarize_supplement_condition.py ARCHIVE INVENTORY CONDITION NEW_OUTPUT`. 
 At 0.37, the printed line covers population 1132.78–1143.03; this is graphical precision, not a statistical interval.
 The paper compares medians of per-run mean population across 500 seeds, not endpoint counts.
 The original averaging and quartile conventions remain unresolved; no additional replication result is claimed.
+
+## Selfishness 0.37 checkpoint 427
+
+[The next 25 inputs](results/selfishness037-sixth-prefix-2026-10-19) pass 120,288 observation checks and exact producer/local audit comparison.
+Twenty-four complete 5,000 steps; one reaches native extinction. All 410 prior inventory records remain unchanged.
+Coverage is now **428/500** for this condition and **435/100,000** supplementary inputs overall.
+The bounded replacement collector resumes export after the former collector stopped; the original producer continues without rerunning completed inputs.
+No partial-condition aggregate or new paper-completion credit is claimed.
