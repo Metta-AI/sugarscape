@@ -1,0 +1,30 @@
+{
+  "outer_seconds": 1200,
+  "execution_limits_seconds": [
+    60,
+    60,
+    180,
+    180
+  ],
+  "budget_usd": 4,
+  "grid_sides": [
+    32,
+    128,
+    1700,
+    1700
+  ],
+  "modes": [
+    "debug",
+    "debug",
+    "debug",
+    "release"
+  ],
+  "source_edits": 0,
+  "capacity": 16777216,
+  "iterations": 10000,
+  "seed": 42,
+  "build_environment": "Isolated official Ubuntu16.04 + checksum-verified CUDA9.1.85; GCC5.4.0",
+  "target_deviation": "compute61 PTX instead of original sm50/sm61 cubins to permit H100 execution",
+  "runner_sha256": "3978ba953bad15e6ac2ea3b4ce22cb9c8ea7fb93d50148a17b8624c3c3b284d3",
+  "scope": "Sequential gated original-source execution qualification; not historical GPU performance or full-state validation"
+}

@@ -177,3 +177,10 @@ Read-only Docker registry checks returned 404 for three historical official tags
 
 
 The first two historical-toolkit preparations stopped before image extraction because `skopeo` had no candidate in the image’s package repositories. The initial inference that `universe` was disabled was wrong: direct inspection shows it was already enabled. Both failures are preserved. The redundant task source file is retained as evidence and removed from active package sources. Command `cmd-qai56` downloads the pinned image directly, verifies every content digest, converts manifest media types to Open Container Initiative format, and uses available `umoci` for extraction. It retains the same isolated preparation and bound. No simulation has run in this environment.
+
+
+### Historical compiler environment validated
+
+[The completed preparation](results/historical-toolkit-complete-2026-10-19) verifies all eight NVIDIA package checksums and five official image blobs. The isolated environment reports CUDA9.1.85 and GCC5.4.0 (`5.4.0-6ubuntu1~16.04.12`). Its sealed archive matches the export hash and records installed package versions. This matches the paper’s compiler families, with OS/compiler patch-level and GPU differences retained explicitly.
+
+[Command cmd-ttkdy](results/historical-native-launch-2026-10-19) now compiles fresh, unchanged artifact source using its original CUB headers. It gates debug32, debug128, full-size debug and full-size release sequentially. Capacity, seed42 and10,000 steps remain original. Compute61 PTX replaces the original sm50/sm61 cubins solely to permit execution on H100. The20-minute/$4 bound and per-execution limits are recorded; pending results receive no credit.
