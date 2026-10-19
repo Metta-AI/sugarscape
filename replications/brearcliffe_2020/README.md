@@ -18,6 +18,8 @@ Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical
 
 [Figures 4–9 endpoint targets](results/metric-digitization-2026-10-19) now retain 170 visible raster bounds and 22 unresolved endpoints across six metrics. Repeated extraction is byte-identical; these image bounds are not statistical confidence intervals.
 
+[The EC vision uncertainty diagnostic](results/ec-vision-uncertainty-2026-10-19) finds all 286 paper raster intervals overlap an exploratory whole-run bootstrap band. Independent R confirms native-input interpolation and resampling arithmetic. This makes sampling uncertainty a plausible explanation, not an equivalence result.
+
 Study status: native recorder corrected and qualified across 20,000 ticks. No reproduced-paper result yet.
 
 Paper: [Creating Intelligent Agents: Combining Agent-Based Modeling with Machine Learning](https://doi.org/10.1007/978-3-030-83418-0_3).
