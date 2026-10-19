@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[Wealth, lifespan, and age-at-death quartiles now pass all 648 graphical comparisons at 0.36 and 0.37](results/two-condition-direct-quartiles-2026-10-19). Independent R verifies every quantile and distance. Four measurements now agree at median and quartile level; death rates remain unresolved.
+
 [Death-rate quartiles at selfishness 0.36 also remain unexplained by aging inclusion](results/selfishness036-death-quartiles-2026-10-19). All 72 diagnostic median comparisons fit; neither quartile does. Independent R verifies all 432 comparisons.
 
 [Population quartiles at selfishness 0.36 also distinguish aggregation order](results/selfishness036-population-quartiles-2026-10-19). All 108 per-run comparisons fit the nominal curve envelopes; none of 108 time-pooled comparisons does. Independent R checks pass.

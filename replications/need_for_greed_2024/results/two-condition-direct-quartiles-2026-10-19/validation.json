@@ -1,0 +1,45 @@
+{
+  "original_inputs": 200,
+  "observations": 985742,
+  "conditions": [
+    0.36,
+    0.37
+  ],
+  "figures": [
+    3,
+    4,
+    6
+  ],
+  "comparisons": 648,
+  "inside_nominal_envelope": 648,
+  "repeat_byte_exact": true,
+  "independent_R_comparisons": 648,
+  "max_quantile_error": 2.842170943040401e-14,
+  "max_distance_error_points": 5.683647996690411e-14,
+  "sha256": {
+    "result/0.36-agentMeanTimeToLive/comparison.json": "a78c366b4299b0c079c350ce0fedb174c2901fcae37147c1a3e4d6a99f46cce2",
+    "result/0.36-agentMeanTimeToLive/r-validation.json": "d8ad0869b984a2b978c9974942bb8dba9da9b89f3c3032e4d2799931c1ece760",
+    "result/0.36-agentMeanTimeToLive/vectors.json": "ace17e8e2e6cb07dc7030107fb6da409ba4f2517c40401c9ac0056d7377b5c5e",
+    "result/0.36-meanAgeAtDeath/comparison.json": "d41bbe06d2388796d6c1508b53efee5d8773eb5ae581fbd22782526ba3854744",
+    "result/0.36-meanAgeAtDeath/r-validation.json": "7ec31b322bc146de8c63d6c81e5c7a9a145631e9959ab07fb63b571dbc23f518",
+    "result/0.36-meanAgeAtDeath/vectors.json": "3206570049e3a79bff01c78fc0f1d92fc03c785d48c47320ad91e78572d89eae",
+    "result/0.36-meanWealth/comparison.json": "0daa8e43dc655131988ce7179c8c435918cbdb1c9987666cb1eba17717d76af5",
+    "result/0.36-meanWealth/r-validation.json": "8216e5f50fe011e40f973bccba062ef0905e8632a89925fb38d8d4bebc1c9ccf",
+    "result/0.36-meanWealth/vectors.json": "35a7304cf4a295f0c1c8b911b76a41e8ac3f0d197ec67e2811724f7815eb4eaf",
+    "result/0.37-agentMeanTimeToLive/comparison.json": "6b417fc8d00135baac6fc749a52d5e0e0a777dff9cf805b5b9d2f4d0fe2c3897",
+    "result/0.37-agentMeanTimeToLive/r-validation.json": "5e6fc7115975fc95875efae7d5cca9bfdb60a3701182ad0e8cb332fb3eb0bbab",
+    "result/0.37-agentMeanTimeToLive/vectors.json": "e6424d8ed8fddb4e37dcd8a6e303ebb5b5255ed77038be76c1a8f0c4bf932496",
+    "result/0.37-meanAgeAtDeath/comparison.json": "df73814b47cbfb98f73ca413e5d2ad4be42976af235c699340b4f64ac4c1a1af",
+    "result/0.37-meanAgeAtDeath/r-validation.json": "b0b7752e0421a57dee77001da0f37957d22c7111651afb8ecb7c8e724d5995ce",
+    "result/0.37-meanAgeAtDeath/vectors.json": "68561f6083858dd1a9511822a6615ac4fc71bf03b7af1cfd8f030f398b2dd544",
+    "result/0.37-meanWealth/comparison.json": "c691d34e73a96ee8c7d5978d44a66c7d0a307ceed7d64fb99a88a8871454e691",
+    "result/0.37-meanWealth/r-validation.json": "8216e5f50fe011e40f973bccba062ef0905e8632a89925fb38d8d4bebc1c9ccf",
+    "result/0.37-meanWealth/vectors.json": "4dbf0013bd7d8fe6d89de554198e8b8ff80e20baaf9874810a8734f1eff9fa39",
+    "result/summary.json": "2385472ac33334933706018241d0317b65ce32b0f0ba710362647b829d560117"
+  },
+  "script_sha256": {
+    "analyze.py": "42fc81b20989d7f153d79765524e2e6577d50050fd0e147261cc2ad334eb13b6",
+    "verify.R": "142fe889330be832652c127719cc0ef7ae8653bb5f9ee71dbb0fe29c9dddae12"
+  },
+  "scope": "Two previously completed cohorts, three direct metrics, four per-run conventions and nine quantile definitions. Graphical envelope agreement, not statistical equivalence. Historical pipeline and death metric unresolved; no new simulation credit."
+}
