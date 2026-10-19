@@ -97,7 +97,7 @@ Evidence-file counts are inventory checks, not scientific acceptance criteria.
 
 - Richmond: all 84 native conditions audited; 6,600 population records and 162 resolution rows match the author archive exactly. The state audit reconciles 893,017 observations and 615,829 movements given observed destinations. Figures 11A–C are replotted; native illustrations differ from the released historical images. Original compiler provenance and source-rule fidelity remain unresolved. H100 performance does not establish V100 timing equivalence.
 
-The Need for Greed remains an additional source-audited candidate outside the nineteen study PRs.
+The Need for Greed remains an additional candidate outside the 21 tracked study PRs. [The retained-audit inventory](source-audits/need-for-greed-retained-reuse-2026-10-19) identifies 400 byte-identical shared baseline configurations and 1,061,708 recorded observations. Fresh raw-trajectory verification and the separate selfishness sweep remain required.
 Run overlap never adds independent seeds. Corrected-source sensitivities remain separate from historical reproduction.
 
 
