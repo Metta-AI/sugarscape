@@ -1303,3 +1303,11 @@ The original timeout remains preserved; archive readback repeats all audits and 
 Independent R confirms six distribution statistics and both Fisher tests.
 Maximum difference is0.171875, with unadjusted joint permutation p0.84905.
 Five of ten settings are audited, totaling640 runs and320,640 observations; five settings and the combined analysis remain.
+
+### Sixth parameter cohort recovered and audited
+
+[Original input1525](results/parameter-sixth-cohort-complete-2026-10-19) hit its600-second limit with ten independent inputs unfinished.
+Only those inputs were recovered; the original timeout and partial seed54 remain preserved.
+All128 runs and64,128 observations pass audit; fresh extraction repeats the audit/comparison exactly and independent R checks pass.
+Maximum difference is0.15625, with unadjusted joint permutation p0.9489.
+Six of ten settings are audited, totaling768 runs and384,768 observations; four settings and the combined analysis remain.
