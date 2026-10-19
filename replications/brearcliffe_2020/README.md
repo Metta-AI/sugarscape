@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[Rule M claim-level contrasts](results/rule-m-claim-contrasts-2026-10-19) cover all six released-code matchups against learning methods. All 18 Rule M-minus-opponent endpoint differences in wealth, vision, and metabolism are positive; their pointwise bootstrap intervals exclude zero. Independent R checks pass. EC leads in mean wealth early before Rule M overtakes it. This adds analysis, not simulation or completed-paper credit.
+
 [The paper-table Rule M/Q-learning cohort completes all 50 seeds](results/paper-rule-m-q-complete-cohort-2026-10-19). Independent R checks and durable storage readback pass. Eleven readable endpoint mean ranges overlap the paper; the remaining bootstrap interval overlaps. All paired trajectories differ from released-code outputs, leaving historical parameter provenance unresolved. Coverage reaches 852 inputs and 17,040,852 observations.
 
 [SARSA/EC completes all 50 seeds](results/sarsa-ec-complete-cohort-2026-10-19), with full trajectory audits, independent R checks, and verified durable storage. Thirteen endpoint mean ranges overlap the paper; the remaining pointwise bootstrap interval overlaps. Coverage reaches 802 inputs and 16,040,802 observations; fourteen released-code cohorts are complete. These descriptive comparisons do not establish equivalence.
