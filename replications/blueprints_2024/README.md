@@ -4,7 +4,7 @@
 
 [Runtime checkpoint 0008](results/runtime-second-continuation-fourth-prefix-2026-10-19) raises deposited-input coverage to 924/1,200 and 3,606,475 observations. Exact overlap checks and fresh archive readback pass; the distinct paper timing experiment remains unresolved.
 
-[The sixth heterogeneous checkpoint](results/heterogeneous50-sixth-prefix-2026-10-19) adds 25 audited original inputs and 100,979 observations. Supplementary coverage is 657/100,000; the 50% heterogeneous condition is 151/500. Earlier input records remain unchanged.
+[The seventh](results/heterogeneous50-seventh-prefix-2026-10-19) and [eighth heterogeneous checkpoints](results/heterogeneous50-eighth-prefix-2026-10-19) add 50 audited original inputs and 154,016 observations. Supplementary coverage is 707/100,000; the 50% heterogeneous condition is 201/500. Fresh archive extraction reproduces all 50 audits; earlier input records remain unchanged. These completion-order prefixes do not establish an unbiased condition-level distribution.
 
 All **2,000/2,000 original homogeneous configurations** are complete and audited, with 5,063,268 observations.
 [The complete union](results/homogeneous-complete-2026-10-18) validates all 500 seeds for each model without double counting.
@@ -15,12 +15,12 @@ Figure 6 matches all-cause deaths for all four models, while the released plotte
 This explains a released definition consistent with the paper; the exact historical plotting revision remains unidentified.
 [The Bentham released-parser check](results/bentham-parser-2026-10-18) also matches all 30,006 independently aggregated values.
 
-Latest deposited-runtime coverage is **917/1,200 inputs and 3,505,424 observations**; the bounded continuation remains active.
-[The latest checkpoint](results/runtime-second-continuation-second-prefix-2026-10-19) adds one complete 50,000-step input after exact overlap reconciliation and repeated full-trajectory audits.
+Earlier deposited-runtime coverage was **917/1,200 inputs and 3,505,424 observations**; the current count appears above.
+[That checkpoint](results/runtime-second-continuation-second-prefix-2026-10-19) adds one complete 50,000-step input after exact overlap reconciliation and repeated full-trajectory audits.
 [Selfishness 0.37 is complete](results/selfishness037-condition-complete-2026-10-19): all 500 original seeds and 2,452,673 observations pass audit.
 Median mean population is 1138.06–1138.24 under four stated conventions, within Figure 10's extracted ink bounds of 1132.78–1143.03.
 This supports qualified agreement for one condition; historical averaging and quantile conventions remain unresolved.
-Supplementary coverage is **507/100,000**. Full sweeps, longer horizons and historical runtime claims remain incomplete.
+Earlier supplementary coverage was **507/100,000**; the current count appears above. Full sweeps, longer horizons and historical runtime claims remain incomplete.
 Earlier sections retain dated execution history and superseded checkpoint counts.
 
 [Published paper, author-hosted PDF](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:blueprints-for-machine-ethics.pdf)
