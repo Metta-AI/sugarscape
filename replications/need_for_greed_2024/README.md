@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The first newly authorized sweep batch](results/unassigned-first-batch-pilots-2026-10-19) passes both native runtime gates. Two unique inputs add 344 observations: coverage is now 732 inputs and 2,683,514 observations. Its remaining 504 inputs run under a $10 reservation.
+
 [The ninth Table IV checkpoint](results/table4-ninth-prefix-2026-10-19) adds 25 disjoint inputs and 125,025 observations. Coverage reaches 730 inputs and 2,683,170 observations. Tables I–III remain exact; the active Table IV row covers 327/500 inputs.
 
 [All 400 original baselines are complete](results/baseline-complete-2026-10-19). Tables I–III match exactly, independently verified in R, without result-matching adjustments. The final 18 inputs bring coverage to 705 inputs and 2,558,145 observations. A fresh terminal-archive audit also verifies all 293 recovery inputs.
