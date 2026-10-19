@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T23:53:07.900917+00:00",
+  "as_of": "2026-10-19T23:54:52.842722+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 6,
   "wholly_positive_papers": 1,
@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "c99e2cbfab6592636a30a2dba07f651bf139511e",
+      "checked_commit": "0eb2e9968c5610524df073b68fd7e95af7267534",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "51e8b99b661fe9a9f7d9df60fa6fe5322a0547f9633ef8a50c2c7a35e8430a5b",
-      "json_evidence_files": 452,
-      "gzip_json_evidence_files": 81,
-      "checked_at": "2026-10-19T23:29:44.652462+00:00",
+      "readme_sha256": "b4b6a911aaad62038f7d831997998343c22a12807773d94dd94ecb439ae6e358",
+      "json_evidence_files": 456,
+      "gzip_json_evidence_files": 83,
+      "checked_at": "2026-10-19T23:54:52.842722+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "757 unique inputs and 2,808,539 observations audited: 400 baseline and 357 sweep inputs. Tables I\u2013III remain exact; all baseline result fields unchanged except inventory provenance hash. Tenth Table IV checkpoint adds25 disjoint inputs/125025 observations while preserving both new-shard pilots. Active row352/500;9743 sweep inputs remain unaudited. Both bounded sweep producers continue. Full method/figure assessment remains incomplete; no completed-paper credit."
+      "remaining_scope": "782unique inputs/2909520observations:400baseline+382sweep. First unassigned-shard checkpoint adds25disjoint inputs/100981observations; preserves all757prior records. Both deposited configuration archives, qualified payload, raw trajectories and fresh storage download audited. Tables I\u2013III result fields unchanged and exact; only inventory hash changes. No TableIV row complete;9718sweep inputs remain. Collector recovery preserves original deadline and aggregate byte cap without restarting producer. Both NeedGreed producers remain active. No completed-paper credit; full sweep and figure-method questions remain."
     }
   ],
   "study_prs": 22,
