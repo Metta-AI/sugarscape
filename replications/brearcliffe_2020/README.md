@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The first four paired cohorts cannot distinguish the historical learning parameters by endpoint overlap](results/first-row-parameter-comparison-2026-10-19). Both interpretations give 46 overlapping, three non-overlapping, and seven unresolved endpoint targets. Learning trajectories differ despite identical endpoint categories; both interpretations remain required.
+
 [The paper-table Rule M/SARSA cohort completes all 50 seeds](results/paper-rule-m-sarsa-complete-cohort-2026-10-19). Independent R checks pass; all fourteen endpoint mean ranges overlap the plotted paper ranges. All paired trajectories differ from released-code outputs. Coverage reaches 902 inputs and 18,040,902 observations; historical parameter provenance remains unresolved.
 
 [EC claim-level contrasts](results/ec-claim-contrasts-2026-10-19) support all 14 stated endpoint directions across six released-code matchups, with independent R checks. EC has 24.9–27.3% more combat deaths than Rule M; both orientations remain consistent with the paper graphics. The prose supplies no equivalence margin. This adds analysis without simulation or completed-paper credit.
