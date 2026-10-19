@@ -1,0 +1,16 @@
+{
+  "previous_cohort_runs": 128,
+  "observations": 64128,
+  "all_three_outputs_byte_identical": true,
+  "archive_sha256": "f5067e47af97e2fcf972520a952c6dd41c9ff8dc48afe773af6ff71c9c2a15e9",
+  "audit_script_sha256": "daf4c1b9fd2ce1943340f657eea9a201a7017ab251c9e0ed9c2c47a532664de3",
+  "gate_command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "replications/carrella_2021/audit_seed_ensemble.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-row675-seed-ensemble-002",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-seed-extension-incomplete-gate-001"
+  ],
+  "gate_exit_code": 1,
+  "gate_created_output": false,
+  "limitation": "Full nonzero seed interval awaits prospective cohort completion. First regression attempt used an incomplete prior readback directory and failed on missing parameters.csv; fresh archive extraction passed. The original parameter CSV reference was restored from verified archive bytes without overwrite."
+}

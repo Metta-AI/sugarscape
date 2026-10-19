@@ -1208,3 +1208,9 @@ Further stochastic validation needs additional declared seeds or mechanism-level
 Persistent late prices and low final population are predeclared alongside the six continuous metrics.
 The sequential local run has a one-hour wall limit and 200 MiB output cap; its results will be analyzed separately from the exploratory cohort.
 Launch adds no completed-paper credit.
+
+### Seed-interval audit qualification
+
+The ensemble audit now uses the protocol's contiguous seed interval and declared run counts, with exact parameter-row alignment.
+[Fresh archived-cohort replay](results/seed-interval-audit-validation-2026-10-19) reproduces all three original audit files byte-for-byte for 128 runs and 64,128 observations.
+The real unfinished extension is rejected before creating output. Its complete nonzero-interval path remains unvalidated until the run finishes.

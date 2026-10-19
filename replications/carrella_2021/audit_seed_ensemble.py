@@ -15,13 +15,16 @@ args = parser.parse_args()
 protocol = json.loads((args.run / "protocol.json").read_text())
 complete = json.loads((args.run / "complete.json").read_text())
 seeds = protocol["fresh_seeds"]
-assert seeds == list(range(64))
+assert seeds and seeds[0] >= 0
+assert seeds == list(range(seeds[0], seeds[-1] + 1))
+assert protocol["native_runs"] == protocol["independent_runs"] == len(seeds)
 for name, expected in protocol["input_sha256"].items():
     assert hashlib.sha256(Path(name).read_bytes()).hexdigest() == expected
 with (args.run / "parameters.csv").open() as stream:
     parameters = list(csv.DictReader(stream))
-assert len(parameters) == len(seeds)
-for seed, row in zip(seeds, parameters):
+assert len(parameters) == seeds[-1] + 1
+for seed in seeds:
+    row = parameters[seed]
     assert int(row["random-seed"]) == seed
     for name, value in protocol["original_parameters"].items():
         if name != "random-seed":
@@ -37,7 +40,11 @@ for seed, row in zip(seeds, parameters):
         "reproduction": float(row["wealth-reproduction"]),
         "seed": seed,
     }
-assert complete == {"native_runs": 64, "independent_runs": 64, "exit_code": 0}
+assert complete == {
+    "native_runs": len(seeds),
+    "independent_runs": len(seeds),
+    "exit_code": 0,
+}
 receipts = [
     json.loads(line) for line in (args.run / "completed.jsonl").read_text().splitlines()
 ]
