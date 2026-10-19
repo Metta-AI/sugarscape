@@ -1295,3 +1295,11 @@ Four of ten settings are audited, totaling512 runs and256,512 observations; six 
 The failed archive and interrupted seed48 are preserved.
 A separately bounded600-second recovery runs only unfinished independent seeds48–63; the original batch continues its sixth setting.
 Four settings remain fully audited while this recovery and the remaining original cohorts run.
+
+### Fifth parameter cohort reconciled and audited
+
+[Original input3733](results/parameter-fifth-cohort-complete-2026-10-19) passes128-run/64,128-observation audits after recovering only16 unfinished inputs.
+The original timeout remains preserved; archive readback repeats all audits and comparisons exactly.
+Independent R confirms six distribution statistics and both Fisher tests.
+Maximum difference is0.171875, with unadjusted joint permutation p0.84905.
+Five of ten settings are audited, totaling640 runs and320,640 observations; five settings and the combined analysis remain.
