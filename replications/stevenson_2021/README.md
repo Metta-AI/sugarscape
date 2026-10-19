@@ -485,3 +485,10 @@ This tests the earlier author's 130,000–150,000 window as a declared sensitivi
 [All 362 markers](results/figure3-vector-targets-2026-10-19) are recovered from the original vector PDF: 50 puberty, 65 infertility and 66 birth-cost points in each panel.
 Axis calibration confirms logarithmic mean-age, wealth, and Gini scales. Repeated extraction is byte-identical, and the rendered reconstruction matches source shapes.
 Numerical parameter assignments, seeds and steady-state windows remain unknown; this closes target extraction, not the missing sensitivity experiments.
+
+### Figure 3 preceding-source concordance
+
+[All 362 marker comparisons](results/figure3-predecessor-concordance-2026-10-19) support reuse of the preceding paper's Figure 16 data.
+Independently calibrated coordinates differ by at most 0.001756% in mean age and 0.023437% in wealth/Gini values.
+The earlier paper gives several distinct sensitivity windows, including 200,000–225,000 cycles for some detail measurements; it still does not label Figure 3's full parameter grid.
+These source constraints are retained without assigning an unsupported historical protocol.

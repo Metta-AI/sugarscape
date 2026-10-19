@@ -1,0 +1,47 @@
+{
+  "predecessor_sha256": "2e375a0fb67a251b86f301920c075d7e43aaef4deb24ecf4e8df517535576053",
+  "target_markers_sha256": "ba0b01e6b1759f060d1a89c7cd23ee45115a0dd5baee4f4211cfe0525341c03f",
+  "predecessor_pdf_page": 21,
+  "markers_compared": 362,
+  "max_relative_age_difference": 1.7552071877534565e-05,
+  "max_relative_value_difference": 0.00023436176525003984,
+  "calibrations": [
+    {
+      "panel": "wealth",
+      "axis": "age",
+      "coefficients": [
+        0.02297159782638021,
+        -2.2716508124659462
+      ],
+      "max_tick_error_pdf_points": 0.0024353474189240387
+    },
+    {
+      "panel": "wealth",
+      "axis": "value",
+      "coefficients": [
+        -0.012850840027206746,
+        6.340907436706083
+      ],
+      "max_tick_error_pdf_points": 0.0011278774752838672
+    },
+    {
+      "panel": "gini",
+      "axis": "age",
+      "coefficients": [
+        0.02297793408681951,
+        -7.56764430876075
+      ],
+      "max_tick_error_pdf_points": 1.2207033080358087e-05
+    },
+    {
+      "panel": "gini",
+      "axis": "value",
+      "coefficients": [
+        -0.0019303248210525233,
+        0.07418888753206096
+      ],
+      "max_tick_error_pdf_points": 0.0027576159787940924
+    }
+  ],
+  "scope": "Graphic-coordinate comparison supports reuse of the plotted data. It does not recover raw observations, numerical parameter assignments, seeds or the target-paper averaging protocol."
+}
