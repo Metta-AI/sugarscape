@@ -20,6 +20,11 @@ Both breeds in this cell are excluded from agreement judgments: all 572 records 
 The initial unqualified comparison remains external, preserving the evidence that led to this correction.
 The comparator reproduces all 4,004 earlier Rule M / EC records unchanged.
 
+A screen of 840 within-figure image pairs finds one additional near-duplicate pair: Figure 6 EC/Q-learning and EC/SARSA.
+The EC/SARSA cell carries an “EC v Q” title and differs from the EC/Q-learning image in 40 RGB components.
+Both EC/SARSA curves are also excluded prospectively. The images and source-conflict audit are retained here.
+The image screen does not replace a complete audit of all chart titles.
+
 ## Qualified comparison
 
 The corrected comparison retains 3,168 visible and 836 unresolved records, including the 572 conflicted-panel records.

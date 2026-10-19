@@ -1,0 +1,24 @@
+{
+  "figure": 6,
+  "pdf_page_one_based": 10,
+  "panel_row": 1,
+  "panel_column": 3,
+  "outer_label": "EC / SARSA",
+  "visually_read_embedded_title": "EC v Q: Mean Combat Death",
+  "reference_panel_row": 1,
+  "reference_panel_column": 2,
+  "title_region_y_exclusive": [
+    0,
+    30
+  ],
+  "title_region_pixel_identical": true,
+  "total_rgb_components": 224532,
+  "different_rgb_components": 40,
+  "different_pixels": 15,
+  "maximum_component_difference": 21,
+  "image_sha256": {
+    "figure6-panel-6.png": "862bc14a4d5e588c546e48ccdee29e43b0a239dc937924447b2759ab61eeac12",
+    "figure6-panel-7.png": "a54979dc5956ea742fc3a3691d9a13b653620ab043d81a5cf88660a35b0679b1"
+  },
+  "conclusion": "Outer EC/SARSA label conflicts with EC v Q embedded title. No corrected SARSA curve is inferred; exclude both breeds."
+}
