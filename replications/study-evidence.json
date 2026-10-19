@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T00:11:14.173603+00:00",
+  "as_of": "2026-10-19T00:19:04.078648+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -260,15 +260,15 @@
     {
       "study": "springer_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/22",
-      "checked_commit": "3eb7e72854d163a17031e2607817523654c112ac",
+      "checked_commit": "d28a68a4a0ae38ea33c72b4bd7eb052570e82840",
       "status": "partial",
       "readme": "replications/springer_2019/README.md",
-      "readme_sha256": "023618192253d1fe21003f39f34a7960de58c553b1fce17f573f914f6c908c6d",
-      "json_evidence_files": 128,
+      "readme_sha256": "dfd507348424b9d9a7b9ddf8a2e5c0f7f269f60f9200ee5f30851dc3935644a2",
+      "json_evidence_files": 136,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-19T00:11:14.173603+00:00",
+      "checked_at": "2026-10-19T00:19:04.078648+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/springer_2019",
-      "remaining_scope": "Publisher artifact and author plotting sources verified. Original exact Figure10 timing targets recovered; baseline plots use minimum. Figure11 capacity normalization recovered but square-grid size convention remains unresolved. CUDA11.8 ports run small controls: DynaSOAr/AOS/SOA, CUDA and Bitmap; mallocMC asserts and Halloc segfaults. Full-size DynaSOAr times out during agent creation. Original capacity succeeds at32x32 but fails at128x128, where each launch thread handles one cell. Compute90 debug asserts active-mask equality; release still times out. Synccheck times out without an error summary and is inconclusive. All failures retained, not counted as negative replication. Isolated official Ubuntu16.04/CUDA9.1.85/GCC5.4.0 now prepared with verified image and package hashes. First unchanged-source build failed loading existing libnvvm; all511 source files match artifact and zero executions occurred. Loader-configured retry cmd-j4ayg is running under20min/$4 bound, gated32/128/1700 debug then1700 release, with original capacity,seed42,10000steps and archived CUB. PTX target and H100 hardware remain differences. Full-state validation, all allocator variants, full-size timing repeats, matched actual heap budgets and published claim comparisons remain incomplete. No completion credit."
+      "remaining_scope": "Publisher artifact and author plotting sources verified. Original exact Figure10 timing targets recovered; baseline plots use minimum. Figure11 capacity normalization recovered but square-grid size convention remains unresolved. CUDA11.8 ports run small controls: DynaSOAr/AOS/SOA, CUDA and Bitmap; mallocMC asserts and Halloc segfaults. Full-size DynaSOAr times out during agent creation. Original capacity succeeds at32x32 but fails at128x128, where each launch thread handles one cell. Compute90 debug asserts active-mask equality; release still times out. Synccheck times out without an error summary and is inconclusive. All failures retained, not counted as negative replication. Isolated official Ubuntu16.04/CUDA9.1.85/GCC5.4.0 now prepared with verified image and package hashes. First unchanged-source build failed loading existing libnvvm; all511 source files match artifact and zero executions occurred. Loader-configured retry cmd-j4ayg completed and its sealed archive passed independent audit. Both controls compile with unchanged publisher source: all 511 files match. Original-capacity 32x32 completes 10,000 steps; 128x128 times out after 60 seconds. Full-size executions were not started because the gate failed. Original CUB and seed42 are retained. This uninstrumented timeout has no localized execution phase; it occurs without the CUDA11.8 source edits and does not establish a paper-negative result. PTX target and H100 hardware remain differences. Full-state validation, all allocator variants, full-size timing repeats, matched actual heap budgets and published claim comparisons remain incomplete. No completion credit."
     }
   ],
   "study_prs": 19,
