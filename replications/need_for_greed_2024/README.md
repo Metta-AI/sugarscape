@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The complete selfishness-0.36 cohort now has all five median comparisons](results/selfishness036-metrics-2026-10-19). Four measurements agree graphically under every declared convention; the stated death-rate metric does not. Independent arithmetic verifies all 2,400 per-run values across 490,477 observations.
+
 [The third baseline recovery checkpoint](results/baseline-second-recovery-third-prefix-2026-10-19) and [fourth Table IV checkpoint](results/table4-fourth-prefix-2026-10-19) add 50 disjoint audited inputs and 187,129 observations. All 100 selfishness-0.36 inputs are now audited; the five-level row remains incomplete at 202/500.
 
 [The whole-table analyzer now gates comparisons on complete original input sets](results/table4-analysis-gates-2026-10-19). It reproduces the current partial counts, preserves both outcome definitions and the printed 100.2% anomaly, and emits no partial-row percentages. Complete-row reporting still awaits validation on a full audited row.
@@ -36,7 +38,7 @@
 
 [The selfishness-1 endpoint baseline reached its time limit](results/endpoint-recovery-launch-2026-10-19). Both level-1 controls timed out; the original batch is terminal. Bounded sequential recovery reruns only those two inputs with unchanged configurations. Failed bytes are preserved; coverage and study status are unchanged.
 
-Status: partial native reproduction. The shared-input inventory has 387 audited inputs and 1,616,323 observations, including all six native controls, 115 recovered baselines, and the first 102 Table IV batch inputs. Four reported medians agree graphically at selfishness 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
+Status: partial native reproduction. The shared-input inventory has 387 audited inputs and 1,616,323 observations, including all six native controls, 115 recovered baselines, and the first 102 Table IV batch inputs. Four reported medians agree graphically at both selfishness 0.36 and 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
 
 Kremer-Herman and Gupta, IEEE ISTAS 2024, pages 182–190. [Author manuscript](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf).
 The paper explicitly names [author release v2024.1](https://github.com/digital-terraria-lab/sugarscape/tree/b9ca671ab7591c7b3606f2d76c33eda344d626d1). Its source is MIT-licensed; source and dataset hashes appear in `source-audit.json`.
