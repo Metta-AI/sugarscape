@@ -1161,3 +1161,15 @@ python replications/carrella_2021/audit_seed_ensemble.py /extracted/ensemble /ne
 
 The archive retains the exact launcher, commands, parameter files, compiled native driver, source hashes, logs and all128 trajectories.
 Its protocol lists the original source paths needed for hash verification.
+
+## Movement boundary checked with separated food
+
+[The native movement check](results/vision-boundary-2026-10-19) runs complete ticks
+with vision−3,−1,0,1,2,6 and a single food patch at distance one or two.
+All12 independent ticks match84 shared fields exactly; all12 native sight-offset counts match the implemented radius rule.
+NetLogo6.1.1 generates no sight offsets for negative vision.
+This strengthens the earlier negative-vision check, whose food was under the agent and could not expose incorrect sight reach.
+No simulation-source change was needed. The check does not establish stochastic ensemble equivalence.
+
+Compile `VisionProbe.java` against NetLogo6.1.1 and run `VisionProbe MODEL NEW_CSV`.
+Then run `python verify_vision.py NEW_CSV NEW_AUDIT` from this study directory.
