@@ -24,6 +24,8 @@ parser.add_argument(
         "cardinal",
         "nonpositive_death",
         "combined_three_rules",
+        "counter_reset",
+        "combined_with_counter_reset",
     ],
     default="released",
 )
@@ -37,9 +39,21 @@ if args.variant == "released":
         hashlib.sha256(args.states.read_bytes()).hexdigest()
         == "4abcce3274d363fd0d0fb648a003cc117b03cc9a917cb095f1153743bbfdf83a"
     )
-transfer = args.variant in {"transfer", "combined_three_rules"}
-cardinal = args.variant in {"cardinal", "combined_three_rules"}
-nonpositive_death = args.variant in {"nonpositive_death", "combined_three_rules"}
+transfer = args.variant in {
+    "transfer",
+    "combined_three_rules",
+    "combined_with_counter_reset",
+}
+cardinal = args.variant in {
+    "cardinal",
+    "combined_three_rules",
+    "combined_with_counter_reset",
+}
+nonpositive_death = args.variant in {
+    "nonpositive_death",
+    "combined_three_rules",
+    "combined_with_counter_reset",
+}
 with args.initial.open() as stream:
     cells = {
         (int(r["x"]), int(r["y"])): {k: int(v) for k, v in r.items()}
