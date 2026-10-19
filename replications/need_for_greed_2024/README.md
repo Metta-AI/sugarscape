@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The baseline timeout was foreseeable from retained timings](results/baseline-timeout-diagnosis-2026-10-19): the failed input previously took 2,095 seconds against the recovery limit of 1,800. Six assigned inputs had prior runtimes above that limit. Its 4,399 complete partial records are preserved without result credit.
+
 [Baseline recovery has stopped admitting inputs after one bounded timeout](results/baseline-collector-pagination-2026-10-19). Already-started inputs continue. The evidence collector now handles paginated logs; both pages and a sealed export pass live checks. No simulation was restarted or additional coverage credited.
 
 [The first Table IV checkpoint passes full audit](results/table4-first-prefix-2026-10-19): 25 new inputs, plus two previously qualified pilots counted once, add 125,404 observations. The complete bin still needs 373 inputs; its partial outcomes are not a representative estimate.
