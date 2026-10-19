@@ -500,3 +500,11 @@ The later mean age is **1,420.67**, compared with **1,418.80** in the original w
 The paired change is +1.87 cycles (95% interval −3.12 to +6.86); this later-window choice does not explain the discrepancy.
 Independent arithmetic checks all 48 summary quantities; archived-input reanalysis reproduces every output byte.
 Historical model fidelity and other study requirements remain unresolved; the study stays incomplete.
+
+## Published equation clarification
+
+The [2022 chapter’s public Appendix B](https://link.springer.com/chapter/10.1007/978-3-030-92843-8_13) includes the growth-rate multiplier in Equation6’s delayed density term.
+[The source comparison](results/published-equation-correction-2026-10-19) verifies that arXivv2 omits this multiplier.
+The published form agrees with the recurrence form supported by our existing vector diagnostic.
+This resolves that version-specific algebraic ambiguity; it does not resolve the stated delay3 versus the exploratory zero-delay figure reconstruction.
+The publisher PDF request returned HTML. Published figure equivalence, fitting conventions and the agent-model discrepancies remain unresolved; no new completion credit is assigned.
