@@ -1,0 +1,257 @@
+{
+  "runs": 44,
+  "ticks_per_run": 10000,
+  "populations": [
+    10,
+    60,
+    110,
+    160,
+    210,
+    260,
+    310,
+    360,
+    410,
+    460,
+    510
+  ],
+  "history_values_compared_exactly": 330000,
+  "world_rows_compared_exactly": 91905,
+  "excluded_fields": [
+    "export timestamp",
+    "new fixed-vision-sets cache column"
+  ],
+  "archived_metrics_checked": 132,
+  "archived_gini_exact": true,
+  "archived_morphology_absolute_tolerance": 1e-12,
+  "random_states_exact": true,
+  "all12_final_metrics_exact": true,
+  "simulation_seconds": {
+    "baseline": [
+      [
+        2.726190375,
+        2.769914459
+      ],
+      [
+        4.140496208,
+        4.250846333
+      ],
+      [
+        5.50830775,
+        5.655691666
+      ],
+      [
+        6.91732,
+        7.165582458
+      ],
+      [
+        8.451848875,
+        8.639055709
+      ],
+      [
+        10.318507875,
+        10.325709709
+      ],
+      [
+        11.764639292,
+        11.891768166
+      ],
+      [
+        13.033960333,
+        13.164366416
+      ],
+      [
+        14.023435792,
+        14.211086084
+      ],
+      [
+        15.27513625,
+        15.547193542
+      ],
+      [
+        17.414985167,
+        17.732850583
+      ]
+    ],
+    "cached-appended": [
+      [
+        2.728952542,
+        2.735316917
+      ],
+      [
+        3.659146917,
+        3.652654584
+      ],
+      [
+        4.539839584,
+        4.532950667
+      ],
+      [
+        5.514751791,
+        5.43805025
+      ],
+      [
+        6.42915475,
+        6.328843958
+      ],
+      [
+        7.559971208,
+        7.492014709
+      ],
+      [
+        8.675742958,
+        8.56849875
+      ],
+      [
+        9.55953275,
+        9.43306625
+      ],
+      [
+        9.767741125,
+        9.648228542
+      ],
+      [
+        10.661392458,
+        10.608287709
+      ],
+      [
+        12.222034417,
+        12.133180167
+      ]
+    ]
+  },
+  "complete_process_seconds": {
+    "baseline": [
+      129.04624708398478,
+      131.23963391699363
+    ],
+    "cached-appended": [
+      103.24415266700089,
+      101.55550591700012
+    ]
+  },
+  "median_process_baseline_over_cached_ratio": 1.2709292720535423,
+  "model_source_hashes_verified": 30,
+  "frozen_selection_exact": true,
+  "only_declared_cache_source_edits": true,
+  "median_baseline_over_cached_ratios": [
+    1.0058260990309629,
+    1.147643647034504,
+    1.230492396180933,
+    1.2857807897269564,
+    1.3396226928039283,
+    1.3715278301372862,
+    1.3718438803270339,
+    1.3793966138599567,
+    1.4541906667678977,
+    1.4491205109807421,
+    1.443133897620846
+  ],
+  "file_sha256": {
+    "attempt-001/0-baseline/command.json": "5c62d1f7f8678405ddc5c371a304a3ed5d6ec869c8763524365427b6b5a03045",
+    "attempt-001/0-baseline/exit.json": "6ff17100598013b567469fe9ab3b24397ec08c81f940a0e37fe6c36009a986b3",
+    "attempt-001/0-baseline/results.csv": "0d708acf875670f97740f7bf63e707dd9ecdd64a4e5715e7986df2f97a8680a9",
+    "attempt-001/0-baseline/results.csv.0.gini": "ddca267479ff73031a97e07b761f56177754863e33153fc9e1c394266343ab03",
+    "attempt-001/0-baseline/results.csv.0.world": "98227a13f7e269a586937792192ec1fdafea0a31e464553c9604edb67985a918",
+    "attempt-001/0-baseline/results.csv.1.gini": "1c259e7aae4e4f3051ee0dac8ea9accc6dcc26195d7cee3789d08b852ba43d67",
+    "attempt-001/0-baseline/results.csv.1.world": "b946606e4f23655e27dea2f3ac3cd39c76f30c7e4554c2ff903f54ea9127f92e",
+    "attempt-001/0-baseline/results.csv.10.gini": "5da6578128329371c869b5c3a46c7d5f87cabf0a1d684b4138a183b6aeed39db",
+    "attempt-001/0-baseline/results.csv.10.world": "39bc2cf956c17a48531bfc2907dcf8a070185968abfe2d71dbc686996ec764b8",
+    "attempt-001/0-baseline/results.csv.2.gini": "c4783ac57ba1eeaf6c5b2525b6d78968ad0ffc2091c387c7af68eec683808d3d",
+    "attempt-001/0-baseline/results.csv.2.world": "3d2865a817257aa6f7a62986e1202a62656a17fc508ce1dffb460064250af0cb",
+    "attempt-001/0-baseline/results.csv.3.gini": "ca3b9464cb827ed4d153b09b568d899760af232c6f08b1a3342d8eeb39a07926",
+    "attempt-001/0-baseline/results.csv.3.world": "199ccb967a46255bfdfd3c9aec30f33681adcb9a0e022fcdafafe99751d7a76e",
+    "attempt-001/0-baseline/results.csv.4.gini": "ad56f1121a0af0e1ca75408784e476ec6839d2dba54cf2589eea55d15d25d127",
+    "attempt-001/0-baseline/results.csv.4.world": "14f9eadccd7c3f8460fa08cd051f67bc6330a135cd57f7f8bf9f622524febd75",
+    "attempt-001/0-baseline/results.csv.5.gini": "32750056493425d1ace414a83953d8ba49bcecca065b14762f5419b8eac24b7d",
+    "attempt-001/0-baseline/results.csv.5.world": "9d0abc573acde5c442f5529d432bff658e474f75443fff3711e06ddb1495623f",
+    "attempt-001/0-baseline/results.csv.6.gini": "a4a980b740440c7f33f8e6e6a633412dde4e844941072d7d203deda17fc106bb",
+    "attempt-001/0-baseline/results.csv.6.world": "6aa36d3d4b1aa8e6bf01b36c80d5d26a5583c7cee187f946da032508f7c3fe65",
+    "attempt-001/0-baseline/results.csv.7.gini": "3e32e57a2e20687e9067dd4cddcd227b06e88236bd6aa0555205757221d9d2dc",
+    "attempt-001/0-baseline/results.csv.7.world": "234e9d8e818193365bc76665fa2732f0c317ecda85261d521fc5c63cf8a1550c",
+    "attempt-001/0-baseline/results.csv.8.gini": "8a2b77426a7d830269f2423a3c7a9f7679f4c59e52422d19acc71d22b3e2e9aa",
+    "attempt-001/0-baseline/results.csv.8.world": "0e2bc5ab0176a43060bb6921912ba8a7ba4608454e1e34357ec5f7c7d858bf93",
+    "attempt-001/0-baseline/results.csv.9.gini": "a3e6cb54480b177f8ca37aca5cfe8c4f092d1019adb5c1025f9aa33f8cc16055",
+    "attempt-001/0-baseline/results.csv.9.world": "82fe86d5f9b77cf121460c1a8de970f4d15d8e971e95cc8dc0e974ce4a392e2f",
+    "attempt-001/0-baseline/run.log": "1735a638f96c83f243fb9da5bff19863f31c917e677a47b7b513e75e32457c55",
+    "attempt-001/1-cached-appended/command.json": "804de92ca2366b0cddcc8a20f5cea140295ad0821c03b240dca6bb8ae0dbaafe",
+    "attempt-001/1-cached-appended/exit.json": "80735c3c7fb06fe7ec6e7297459eca7e4cbae12043b033850a9734aa0034f504",
+    "attempt-001/1-cached-appended/results.csv": "0d708acf875670f97740f7bf63e707dd9ecdd64a4e5715e7986df2f97a8680a9",
+    "attempt-001/1-cached-appended/results.csv.0.gini": "ddca267479ff73031a97e07b761f56177754863e33153fc9e1c394266343ab03",
+    "attempt-001/1-cached-appended/results.csv.0.world": "cdfbad5f57047afc208d2fad6036cc99ca6f50570519b5f902f07ab07be816e0",
+    "attempt-001/1-cached-appended/results.csv.1.gini": "1c259e7aae4e4f3051ee0dac8ea9accc6dcc26195d7cee3789d08b852ba43d67",
+    "attempt-001/1-cached-appended/results.csv.1.world": "45c9770659a3fda5dd888c04cf66cbfb8da84e4358ac54095afb8a9ca583647d",
+    "attempt-001/1-cached-appended/results.csv.10.gini": "5da6578128329371c869b5c3a46c7d5f87cabf0a1d684b4138a183b6aeed39db",
+    "attempt-001/1-cached-appended/results.csv.10.world": "0c2fdf730526a4a4604b6f163a27fb660e059e82a8449a6585a265c3c46f20ed",
+    "attempt-001/1-cached-appended/results.csv.2.gini": "c4783ac57ba1eeaf6c5b2525b6d78968ad0ffc2091c387c7af68eec683808d3d",
+    "attempt-001/1-cached-appended/results.csv.2.world": "c9d159ca0f5e864709d528c56cd62e125c99d5631d441c65a6617c1ff555b00c",
+    "attempt-001/1-cached-appended/results.csv.3.gini": "ca3b9464cb827ed4d153b09b568d899760af232c6f08b1a3342d8eeb39a07926",
+    "attempt-001/1-cached-appended/results.csv.3.world": "1efe6202d0d7d5b5d4858d0d6083a15f42d6f820242c093d12aaf327a753fe59",
+    "attempt-001/1-cached-appended/results.csv.4.gini": "ad56f1121a0af0e1ca75408784e476ec6839d2dba54cf2589eea55d15d25d127",
+    "attempt-001/1-cached-appended/results.csv.4.world": "c1046fd57649e2b5441acd8101308710c5e8666955025c0684bc7e1b5da441bb",
+    "attempt-001/1-cached-appended/results.csv.5.gini": "32750056493425d1ace414a83953d8ba49bcecca065b14762f5419b8eac24b7d",
+    "attempt-001/1-cached-appended/results.csv.5.world": "b307c1bbf1663e3589c782daccced10a8222146c310c32d36f965eb324f88811",
+    "attempt-001/1-cached-appended/results.csv.6.gini": "a4a980b740440c7f33f8e6e6a633412dde4e844941072d7d203deda17fc106bb",
+    "attempt-001/1-cached-appended/results.csv.6.world": "1e41c440c73bec04065239575a135586370a84d9d1cdf2b04f411f5db9215847",
+    "attempt-001/1-cached-appended/results.csv.7.gini": "3e32e57a2e20687e9067dd4cddcd227b06e88236bd6aa0555205757221d9d2dc",
+    "attempt-001/1-cached-appended/results.csv.7.world": "9a02cd80371db23bae642cb0f66640b24dd275a8162ca5e648b37396b5610442",
+    "attempt-001/1-cached-appended/results.csv.8.gini": "8a2b77426a7d830269f2423a3c7a9f7679f4c59e52422d19acc71d22b3e2e9aa",
+    "attempt-001/1-cached-appended/results.csv.8.world": "d86efe91401ce4369f9276c35ff44ede40ac066f868871aa8003c5e842035d8c",
+    "attempt-001/1-cached-appended/results.csv.9.gini": "a3e6cb54480b177f8ca37aca5cfe8c4f092d1019adb5c1025f9aa33f8cc16055",
+    "attempt-001/1-cached-appended/results.csv.9.world": "753615704cae78cf832a07e61e98b5d3cd2b29d7387f724016b69d33dcec68b5",
+    "attempt-001/1-cached-appended/run.log": "6c6169e61fd253c5b7a8d7e4af57d605d73eb3d8f5edd059684cd9171758269e",
+    "attempt-001/2-cached-appended/command.json": "d8da3f44855f7d26cc5fcd08150842f868768fcb1bf8940c6b045fd43f1c5118",
+    "attempt-001/2-cached-appended/exit.json": "e86b8a993e02a595bf4b2619608694509edcd5a47931ae99956b692358d4a978",
+    "attempt-001/2-cached-appended/results.csv": "0d708acf875670f97740f7bf63e707dd9ecdd64a4e5715e7986df2f97a8680a9",
+    "attempt-001/2-cached-appended/results.csv.0.gini": "ddca267479ff73031a97e07b761f56177754863e33153fc9e1c394266343ab03",
+    "attempt-001/2-cached-appended/results.csv.0.world": "3ae0f40bddbe14bb0b9eae319a21ba4648072881079c177de5765f8f3d94ad0c",
+    "attempt-001/2-cached-appended/results.csv.1.gini": "1c259e7aae4e4f3051ee0dac8ea9accc6dcc26195d7cee3789d08b852ba43d67",
+    "attempt-001/2-cached-appended/results.csv.1.world": "2b30565527dc0c0336f6dbaf9eff95bf2c84ce9d35e0ce89c232134ebd4ea352",
+    "attempt-001/2-cached-appended/results.csv.10.gini": "5da6578128329371c869b5c3a46c7d5f87cabf0a1d684b4138a183b6aeed39db",
+    "attempt-001/2-cached-appended/results.csv.10.world": "5e1bd0f3309dfb00e4fc3bc04f74f7efac132de0ee789433585e4cd9e1ba6fd8",
+    "attempt-001/2-cached-appended/results.csv.2.gini": "c4783ac57ba1eeaf6c5b2525b6d78968ad0ffc2091c387c7af68eec683808d3d",
+    "attempt-001/2-cached-appended/results.csv.2.world": "8c72f98c7d7f40dacc9accd17e018a7ef2e5d938ba8b71c3ee9bc676f15ebd3a",
+    "attempt-001/2-cached-appended/results.csv.3.gini": "ca3b9464cb827ed4d153b09b568d899760af232c6f08b1a3342d8eeb39a07926",
+    "attempt-001/2-cached-appended/results.csv.3.world": "c54dd314fe70237ed6b96dffc8adab6353815d5253b3145a32ed5a8410adaf78",
+    "attempt-001/2-cached-appended/results.csv.4.gini": "ad56f1121a0af0e1ca75408784e476ec6839d2dba54cf2589eea55d15d25d127",
+    "attempt-001/2-cached-appended/results.csv.4.world": "a94d057e1b656a90fa38c564817be67662191f7221207f5882d35229b6f9dc9d",
+    "attempt-001/2-cached-appended/results.csv.5.gini": "32750056493425d1ace414a83953d8ba49bcecca065b14762f5419b8eac24b7d",
+    "attempt-001/2-cached-appended/results.csv.5.world": "8cdd02308875a188eb70a467fed1a4d91c5417dee6a77860a8500a833cce6565",
+    "attempt-001/2-cached-appended/results.csv.6.gini": "a4a980b740440c7f33f8e6e6a633412dde4e844941072d7d203deda17fc106bb",
+    "attempt-001/2-cached-appended/results.csv.6.world": "a79050642146c5fc11a8dc5178a2a3742957ed533ff5ff30255d6505c2a44ac9",
+    "attempt-001/2-cached-appended/results.csv.7.gini": "3e32e57a2e20687e9067dd4cddcd227b06e88236bd6aa0555205757221d9d2dc",
+    "attempt-001/2-cached-appended/results.csv.7.world": "ee918dc695c5b59119a9496d61da06df51a7d822fd271c1cf6b7eb10ede5681a",
+    "attempt-001/2-cached-appended/results.csv.8.gini": "8a2b77426a7d830269f2423a3c7a9f7679f4c59e52422d19acc71d22b3e2e9aa",
+    "attempt-001/2-cached-appended/results.csv.8.world": "416cc0ef93f8a692f1037e50a1f7366f2cc295a9ab155c902aa1d81324497878",
+    "attempt-001/2-cached-appended/results.csv.9.gini": "a3e6cb54480b177f8ca37aca5cfe8c4f092d1019adb5c1025f9aa33f8cc16055",
+    "attempt-001/2-cached-appended/results.csv.9.world": "9cdef5d3dff663bdc3f764c96379f8bb087d2f059796c999f007b75922e36553",
+    "attempt-001/2-cached-appended/run.log": "bc8d86e86f40586759e922adbe8b203162d1d7cad463c96c177de15df38aa9d2",
+    "attempt-001/3-baseline/command.json": "3a3fa9595f794588ba4edebfd443a563f829b1e42776537c4038a384b91fcba3",
+    "attempt-001/3-baseline/exit.json": "6441806bab67f2c000f891b3868af52137406cce2afca983716ee069a4884441",
+    "attempt-001/3-baseline/results.csv": "0d708acf875670f97740f7bf63e707dd9ecdd64a4e5715e7986df2f97a8680a9",
+    "attempt-001/3-baseline/results.csv.0.gini": "ddca267479ff73031a97e07b761f56177754863e33153fc9e1c394266343ab03",
+    "attempt-001/3-baseline/results.csv.0.world": "750a7723ce2c9b69a94a6993c41d79af352ef2e708c41827d42ae014aac273dd",
+    "attempt-001/3-baseline/results.csv.1.gini": "1c259e7aae4e4f3051ee0dac8ea9accc6dcc26195d7cee3789d08b852ba43d67",
+    "attempt-001/3-baseline/results.csv.1.world": "493ee4578dca2fd7909b2a83645382317e2c95a40fbba15def1fbabe7faa3c83",
+    "attempt-001/3-baseline/results.csv.10.gini": "5da6578128329371c869b5c3a46c7d5f87cabf0a1d684b4138a183b6aeed39db",
+    "attempt-001/3-baseline/results.csv.10.world": "1f30a010d28730fbb1d515fa6ff3f067ad7d5324d91babbc24bc86a64f08b9d5",
+    "attempt-001/3-baseline/results.csv.2.gini": "c4783ac57ba1eeaf6c5b2525b6d78968ad0ffc2091c387c7af68eec683808d3d",
+    "attempt-001/3-baseline/results.csv.2.world": "c07e925e01e7325f08779a2e8ade6b5c70744e12619ac48b2d9c2b0bfc59991f",
+    "attempt-001/3-baseline/results.csv.3.gini": "ca3b9464cb827ed4d153b09b568d899760af232c6f08b1a3342d8eeb39a07926",
+    "attempt-001/3-baseline/results.csv.3.world": "1798e7ce2b510f992c68bf3807b56c897c1667b1fc5f9c078fdebd5a7dba83c3",
+    "attempt-001/3-baseline/results.csv.4.gini": "ad56f1121a0af0e1ca75408784e476ec6839d2dba54cf2589eea55d15d25d127",
+    "attempt-001/3-baseline/results.csv.4.world": "b53a9e6e836d527fc049e84e8734551e44df332bc8ecc18563d67993f18246de",
+    "attempt-001/3-baseline/results.csv.5.gini": "32750056493425d1ace414a83953d8ba49bcecca065b14762f5419b8eac24b7d",
+    "attempt-001/3-baseline/results.csv.5.world": "39bc747d3a650cdf1ce2a794e7b3e6b7e4e07632f89b1793fdfbe465bcbf460f",
+    "attempt-001/3-baseline/results.csv.6.gini": "a4a980b740440c7f33f8e6e6a633412dde4e844941072d7d203deda17fc106bb",
+    "attempt-001/3-baseline/results.csv.6.world": "8a00e749f3c5af49bc5e8827bfc64055fbbaa68d67c65ad8f612ee3b0896fda8",
+    "attempt-001/3-baseline/results.csv.7.gini": "3e32e57a2e20687e9067dd4cddcd227b06e88236bd6aa0555205757221d9d2dc",
+    "attempt-001/3-baseline/results.csv.7.world": "72b58bc4f17b6687ad4b3838449f7ee09ca039e4a5573ad2bcc3273df4f2202e",
+    "attempt-001/3-baseline/results.csv.8.gini": "8a2b77426a7d830269f2423a3c7a9f7679f4c59e52422d19acc71d22b3e2e9aa",
+    "attempt-001/3-baseline/results.csv.8.world": "c649a6a36d3117d9eb842285ab952a781934ec5940097c16ed726403640db383",
+    "attempt-001/3-baseline/results.csv.9.gini": "a3e6cb54480b177f8ca37aca5cfe8c4f092d1019adb5c1025f9aa33f8cc16055",
+    "attempt-001/3-baseline/results.csv.9.world": "f4cc8f4b3ece6650580dec81652e25287f8ca4e55bc6bf0dcc76ab9dd5055bc4",
+    "attempt-001/3-baseline/run.log": "ca0df031112d647d345dd8467e30cb3191cf6b6ed306deafec23154901b55830",
+    "attempt-001/complete.json": "5ee220a964ece9e406b355b9a68aeadb015e2ad08a7e4a46560ccc90be889f9e"
+  },
+  "scope": "Eleven inputs across every population level and eleven distinct layouts, two repetitions per variant. Exact Gini histories and all original final world fields including RNG; no full-grid fidelity or runtime claim. Setup cache construction and export cost are outside simulation timings. Active scientific runs unchanged."
+}

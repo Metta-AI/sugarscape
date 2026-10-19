@@ -1,0 +1,21 @@
+{
+  "patches": 2500,
+  "radii": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "sets_checked": 15000,
+  "incorrect_sets": 0,
+  "method": "Native NetLogo direct at-points reconstruction compared with every cached set, using sorted patch membership.",
+  "file_sha256": {
+    "CacheGeometry.java": "6a69eedbb5339d9668f1ad1d92c1e385329ff6692126d58656d8452285e0e00c",
+    "geometry-setup.txt": "51f983d451779aa70d97bf3472054369894a8a868cb4cadcb4bfa25514d7b59a",
+    "geometry.csv": "730073b76a10287792cd37f21d8aeb73c6ac5be7d06e65990c96abd33985108e",
+    "geometry-terminal.json": "d2989a9f30eb7265d12570e436e1947df722205cd1ee9bf370d73fb1b709ae92"
+  },
+  "scope": "Static geometry membership for the unchanged 50x50 topology. Not an independent movement, tie-breaking, or full trajectory proof."
+}

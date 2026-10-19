@@ -1,0 +1,23 @@
+{
+  "raw_source_sha256": "1a2cdf93167571ab2943d488017ace08945e7afd3cd8ac4d1410fb214c79c8f5",
+  "prefix_confirmed_against_complete_archive": true,
+  "rows": 2,
+  "steps_each": 10000,
+  "output_metrics": 24,
+  "exact_output_metrics": 23,
+  "strict_exact_match": false,
+  "maximum_absolute_error": 1.1102230246251565e-16,
+  "nonexact_metrics": [
+    {
+      "row": 1,
+      "metric": "rsquared",
+      "actual": 0.8963279972950365,
+      "expected": 0.8963279972950364,
+      "absolute_error": 1.1102230246251565e-16
+    }
+  ],
+  "native_exit_code": 0,
+  "public_runner_matches_streaming_pilot": true,
+  "unique_ensemble_rows_counted": 0,
+  "scope": "Two generated-landscape portability/provenance probes. Full generated-landscape ensemble and spatial conclusions remain pending."
+}

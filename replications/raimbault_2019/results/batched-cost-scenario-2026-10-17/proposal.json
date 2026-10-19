@@ -1,0 +1,13 @@
+{
+  "status": "Proposal only; no additional full-ensemble capacity launched. Await explicit budget decision and successful independent audit of initial8000-input shard.",
+  "target_original_inputs": 2727994,
+  "source_compressed_sha256": "26372b8698eefb1666ce8c6176f7188e55ced62fab795ff11a03cae564554199",
+  "scope": "Original generated landscapes, seeds and10000-step horizon; exact Gini, morphology tolerance1e-12 declared before production. Full reference and generated comparisons required before a paper verdict.",
+  "proposed_additional_budget_usd": 1500,
+  "maximum_concurrent_cpu8_nodes": 8,
+  "maximum_native_hours_per_lease": 6,
+  "rate_assumption_usd_per_node_hour": 0.576,
+  "billing_gate": "Before each lease, check current price and debit its full runtime plus provider idle window against the remaining approved budget. Include setup/transfer/storage charges; do not launch a lease whose worst-case commitment exceeds remaining allowance. Queue availability and throughput are not guaranteed.",
+  "evidence_gate": "Audit first8000-input shard before scaling. Use an original-row completion ledger to exclude prior validated runs, seal outputs to task storage, download/hash-check and independently audit before counting. Never restart an observation timeout as a failed simulation.",
+  "budget_exhaustion": "Preserve completed and interrupted outputs, stop admitting new leases, report remaining original inputs. Budget approval is not permission to shrink scientific scope or claim completion."
+}

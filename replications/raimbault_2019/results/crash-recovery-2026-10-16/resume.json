@@ -1,0 +1,120 @@
+{
+  "reason": "User requested restoring this task after machine crash. Prior process inventory found no task workers. Completed prefixes audited before resume.",
+  "jobs": [
+    {
+      "name": "raimbault-shard-1",
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-1-002",
+        "--start",
+        "4445",
+        "--stop",
+        "13597"
+      ],
+      "cwd": "/Users/relh/Code/workspace/sugarscape-raimbault",
+      "environment": {},
+      "resume_interval": [
+        4445,
+        13597
+      ],
+      "preserved_audit": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-shard-1-crash-audit-001/audit.json"
+    },
+    {
+      "name": "raimbault-shard-2",
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-2-002",
+        "--start",
+        "14077",
+        "--stop",
+        "23948"
+      ],
+      "cwd": "/Users/relh/Code/workspace/sugarscape-raimbault",
+      "environment": {},
+      "resume_interval": [
+        14077,
+        23948
+      ],
+      "preserved_audit": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-shard-2-crash-audit-001/audit.json"
+    },
+    {
+      "name": "raimbault-shard-3",
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-3-002",
+        "--start",
+        "24282",
+        "--stop",
+        "34299"
+      ],
+      "cwd": "/Users/relh/Code/workspace/sugarscape-raimbault",
+      "environment": {},
+      "resume_interval": [
+        24282,
+        34299
+      ],
+      "preserved_audit": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-shard-3-crash-audit-001/audit.json"
+    },
+    {
+      "name": "raimbault-shard-4",
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-4-002",
+        "--start",
+        "34589",
+        "--stop",
+        "44650"
+      ],
+      "cwd": "/Users/relh/Code/workspace/sugarscape-raimbault",
+      "environment": {},
+      "resume_interval": [
+        34589,
+        44650
+      ],
+      "preserved_audit": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-shard-4-crash-audit-001/audit.json"
+    },
+    {
+      "name": "raimbault-shard-5",
+      "command": [
+        "python3",
+        "/Users/relh/Code/workspace/sugarscape-raimbault/replications/raimbault_2019/run_reference.py",
+        "/Users/relh/Code/workspace/sugarscape-spacematters-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64",
+        "/opt/homebrew/opt/openjdk@11",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-2019-source-001/reference.csv",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-reference-shard-5-002",
+        "--start",
+        "44874",
+        "--stop",
+        "55000"
+      ],
+      "cwd": "/Users/relh/Code/workspace/sugarscape-raimbault",
+      "environment": {},
+      "resume_interval": [
+        44874,
+        55000
+      ],
+      "preserved_audit": "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-shard-5-crash-audit-001/audit.json"
+    }
+  ]
+}

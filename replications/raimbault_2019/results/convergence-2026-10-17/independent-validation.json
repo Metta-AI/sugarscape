@@ -1,0 +1,21 @@
+{
+  "groups": 54560,
+  "independent_scalar_comparisons": 327360,
+  "count_comparisons": 54560,
+  "maximum_errors": {
+    "gini_mean": 6.661338147750939e-16,
+    "gini_sd": 5.273559366969494e-16,
+    "gini_sharpe": 7.105427357601002e-14,
+    "mwgini_mean": 6.661338147750939e-16,
+    "mwgini_sd": 6.245004513516506e-17,
+    "mwgini_sharpe": 1.2505552149377763e-12
+  },
+  "tolerance": 1e-10,
+  "r_version": "4.6.1",
+  "scope": "Both Python and R read all2727994 original raw rows independently; no simulation replay implied.",
+  "files_sha256": {
+    "groups.csv": "f2b3e98025c890c297973199349160a057d1b99079a97c1e2ce4bb2ba20245d0",
+    "r-groups.csv": "c8621b2e3ec595fe564af477d91d3cf8cbfbe7f37722ae82bd0d8dbbea7ba6ef",
+    "r-validation.log": "df7d76c09380e1d0552dac2c5e0e209843e2dc05c5e9dde0528d70db5276a1bb"
+  }
+}

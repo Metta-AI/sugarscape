@@ -1,0 +1,722 @@
+[
+  {
+    "original_row": 0,
+    "metric": "gini",
+    "linux": 0.35873730897805556,
+    "macos": 0.35873730897805556,
+    "archive": 0.35873730897805556,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 0,
+    "metric": "mwgini",
+    "linux": 0.4561122400181132,
+    "macos": 0.4561122400181132,
+    "archive": 0.4561122400181132,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 0,
+    "metric": "moran",
+    "linux": 0.08079559359944517,
+    "macos": 0.08079559359944517,
+    "archive": 0.08079559359944517,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 0,
+    "metric": "distance",
+    "linux": 0.7424947990238412,
+    "macos": 0.7424947990238412,
+    "archive": 0.7424947990238412,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 0,
+    "metric": "entropy",
+    "linux": 0.7826393021528454,
+    "macos": 0.7826393021528454,
+    "archive": 0.7826393021528454,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 0,
+    "metric": "slope",
+    "linux": -1.1594042214274503,
+    "macos": -1.1594042214274503,
+    "archive": -1.1594042214274503,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 0,
+    "metric": "rsquared",
+    "linux": 0.9120060687101984,
+    "macos": 0.9120060687101984,
+    "archive": 0.9120060687101984,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 0,
+    "metric": "moranRessource",
+    "linux": 0.10155926435535026,
+    "macos": 0.10155926435535026,
+    "archive": 0.10155926435535026,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 0,
+    "metric": "distanceRessource",
+    "linux": 0.8022808131327634,
+    "macos": 0.8022808131327634,
+    "archive": 0.8022808131327634,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 0,
+    "metric": "entropyRessource",
+    "linux": 0.8242513164365777,
+    "macos": 0.8242513164365777,
+    "archive": 0.8242513164365777,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 0,
+    "metric": "slopeRessource",
+    "linux": -1.110200464644919,
+    "macos": -1.110200464644919,
+    "archive": -1.110200464644919,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 0,
+    "metric": "rsquaredRessource",
+    "linux": 0.8953054645753701,
+    "macos": 0.8953054645753701,
+    "archive": 0.8953054645753701,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "gini",
+    "linux": 0.762828973525356,
+    "macos": 0.762828973525356,
+    "archive": 0.762828973525356,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 1000,
+    "metric": "mwgini",
+    "linux": 0.5244469206878455,
+    "macos": 0.5244469206878455,
+    "archive": 0.5244469206878455,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 1000,
+    "metric": "moran",
+    "linux": 0.07918868405303302,
+    "macos": 0.07918868405303302,
+    "archive": 0.07918868405303302,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "distance",
+    "linux": 0.45841757453656995,
+    "macos": 0.45841757453656995,
+    "archive": 0.45841757453656995,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "entropy",
+    "linux": 0.6674122725172722,
+    "macos": 0.6674122725172722,
+    "archive": 0.6674122725172722,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "slope",
+    "linux": -1.0073942632931583,
+    "macos": -1.007394263293158,
+    "archive": -1.0073942632931583,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 2.220446049250313e-16,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "rsquared",
+    "linux": 0.9410336038854286,
+    "macos": 0.9410336038854282,
+    "archive": 0.9410336038854286,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 3.3306690738754696e-16,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "moranRessource",
+    "linux": 0.10380637201538262,
+    "macos": 0.10380637201538262,
+    "archive": 0.10380637201538262,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "distanceRessource",
+    "linux": 0.7447797123456851,
+    "macos": 0.7447797123456851,
+    "archive": 0.7447797123456851,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "entropyRessource",
+    "linux": 0.8342414951292291,
+    "macos": 0.8342414951292291,
+    "archive": 0.8342414951292291,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "slopeRessource",
+    "linux": -0.911973974455427,
+    "macos": -0.911973974455427,
+    "archive": -0.911973974455427,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1000,
+    "metric": "rsquaredRessource",
+    "linux": 0.9477443151991247,
+    "macos": 0.9477443151991247,
+    "archive": 0.9477443151991247,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "gini",
+    "linux": 0.25452636937391865,
+    "macos": 0.25452636937391865,
+    "archive": 0.25452636937391865,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 990499,
+    "metric": "mwgini",
+    "linux": 0.2713704958366647,
+    "macos": 0.2713704958366647,
+    "archive": 0.2713704958366647,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 990499,
+    "metric": "moran",
+    "linux": 0.06694853855940769,
+    "macos": 0.06694853855940769,
+    "archive": 0.06694853855940769,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "distance",
+    "linux": 0.5529687878754215,
+    "macos": 0.5529687878754215,
+    "archive": 0.5529687878754215,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "entropy",
+    "linux": 0.7392087388596683,
+    "macos": 0.7392087388596683,
+    "archive": 0.7392087388596683,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "slope",
+    "linux": -1.090416204458681,
+    "macos": -1.090416204458681,
+    "archive": -1.090416204458681,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "rsquared",
+    "linux": 0.954700108291899,
+    "macos": 0.954700108291899,
+    "archive": 0.954700108291899,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "moranRessource",
+    "linux": 0.05000716159600373,
+    "macos": 0.05000716159600373,
+    "archive": 0.05000716159600373,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "distanceRessource",
+    "linux": 0.8524980869249363,
+    "macos": 0.8524980869249363,
+    "archive": 0.8524980869249363,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "entropyRessource",
+    "linux": 0.9575775285315643,
+    "macos": 0.9575775285315643,
+    "archive": 0.9575775285315643,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "slopeRessource",
+    "linux": -0.6357579353721563,
+    "macos": -0.6357579353721563,
+    "archive": -0.6357579353721563,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 990499,
+    "metric": "rsquaredRessource",
+    "linux": 0.7378666788376262,
+    "macos": 0.7378666788376264,
+    "archive": 0.7378666788376262,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 1.1102230246251565e-16,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "gini",
+    "linux": 0.24465596414357638,
+    "macos": 0.24465596414357638,
+    "archive": 0.24465596414357638,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 1028088,
+    "metric": "mwgini",
+    "linux": 0.24787920037095743,
+    "macos": 0.24787920037095743,
+    "archive": 0.24787920037095743,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 1028088,
+    "metric": "moran",
+    "linux": 0.08347478743894877,
+    "macos": 0.08347478743894877,
+    "archive": 0.08347478743894877,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "distance",
+    "linux": 0.8641554127936846,
+    "macos": 0.8641554127936846,
+    "archive": 0.8641554127936846,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "entropy",
+    "linux": 0.80934937787822,
+    "macos": 0.80934937787822,
+    "archive": 0.80934937787822,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "slope",
+    "linux": -1.1871391934022006,
+    "macos": -1.1871391934022006,
+    "archive": -1.1871391934022006,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "rsquared",
+    "linux": 0.9116411738445447,
+    "macos": 0.9116411738445447,
+    "archive": 0.9116411738445447,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "moranRessource",
+    "linux": 0.05746244740161351,
+    "macos": 0.05746244740161351,
+    "archive": 0.05746244740161351,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "distanceRessource",
+    "linux": 0.9168921603589195,
+    "macos": 0.9168921603589195,
+    "archive": 0.9168921603589195,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "entropyRessource",
+    "linux": 0.9492955854441572,
+    "macos": 0.9492955854441572,
+    "archive": 0.9492955854441572,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "slopeRessource",
+    "linux": -0.7508511762728529,
+    "macos": -0.7508511762728527,
+    "archive": -0.7508511762728529,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 2.220446049250313e-16,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1028088,
+    "metric": "rsquaredRessource",
+    "linux": 0.7070625975215675,
+    "macos": 0.7070625975215671,
+    "archive": 0.7070625975215675,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 4.440892098500626e-16,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "gini",
+    "linux": 0.23460476801500615,
+    "macos": 0.23460476801500615,
+    "archive": 0.23460476801500615,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 1366057,
+    "metric": "mwgini",
+    "linux": 0.24900997592871216,
+    "macos": 0.24900997592871216,
+    "archive": 0.24900997592871216,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 1366057,
+    "metric": "moran",
+    "linux": 0.054020180085619256,
+    "macos": 0.054020180085619256,
+    "archive": 0.054020180085619256,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "distance",
+    "linux": 0.8683283113862417,
+    "macos": 0.8683283113862417,
+    "archive": 0.8683283113862417,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "entropy",
+    "linux": 0.8797472549409019,
+    "macos": 0.8797472549409019,
+    "archive": 0.8797472549409019,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "slope",
+    "linux": -1.2783526916079029,
+    "macos": -1.2783526916079029,
+    "archive": -1.2783526916079029,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "rsquared",
+    "linux": 0.8010176212372057,
+    "macos": 0.8010176212372057,
+    "archive": 0.8010176212372057,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "moranRessource",
+    "linux": 0.044973391561016686,
+    "macos": 0.044973391561016686,
+    "archive": 0.044973391561016686,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "distanceRessource",
+    "linux": 0.8411717024459897,
+    "macos": 0.8411717024459897,
+    "archive": 0.8411717024459897,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "entropyRessource",
+    "linux": 0.9348413779949323,
+    "macos": 0.9348413779949323,
+    "archive": 0.9348413779949323,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "slopeRessource",
+    "linux": -0.7906005377919261,
+    "macos": -0.7906005377919261,
+    "archive": -0.7906005377919261,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1366057,
+    "metric": "rsquaredRessource",
+    "linux": 0.5585801231471759,
+    "macos": 0.5585801231471756,
+    "archive": 0.5585801231471759,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 2.220446049250313e-16,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "gini",
+    "linux": 0.3460395261213468,
+    "macos": 0.3460395261213468,
+    "archive": 0.3460395261213468,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 1782120,
+    "metric": "mwgini",
+    "linux": 0.3443035434798055,
+    "macos": 0.3443035434798055,
+    "archive": 0.3443035434798055,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 0
+  },
+  {
+    "original_row": 1782120,
+    "metric": "moran",
+    "linux": 0.05473427233774081,
+    "macos": 0.05473427233774081,
+    "archive": 0.05473427233774081,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "distance",
+    "linux": 0.8543018825818485,
+    "macos": 0.8543018825818485,
+    "archive": 0.8543018825818485,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "entropy",
+    "linux": 0.7698962014598133,
+    "macos": 0.7698962014598133,
+    "archive": 0.7698962014598133,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "slope",
+    "linux": -1.0999948722072745,
+    "macos": -1.0999948722072745,
+    "archive": -1.0999948722072745,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "rsquared",
+    "linux": 0.9659867493533713,
+    "macos": 0.9659867493533713,
+    "archive": 0.9659867493533713,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "moranRessource",
+    "linux": 0.02838253113947928,
+    "macos": 0.02838253113947928,
+    "archive": 0.02838253113947928,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "distanceRessource",
+    "linux": 0.8846455875067253,
+    "macos": 0.8846455875067253,
+    "archive": 0.8846455875067253,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "entropyRessource",
+    "linux": 0.9480804178766992,
+    "macos": 0.9480804178766992,
+    "archive": 0.9480804178766992,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "slopeRessource",
+    "linux": -0.5587506476365643,
+    "macos": -0.5587506476365643,
+    "archive": -0.5587506476365643,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  },
+  {
+    "original_row": 1782120,
+    "metric": "rsquaredRessource",
+    "linux": 0.7296991149986184,
+    "macos": 0.7296991149986184,
+    "archive": 0.7296991149986184,
+    "linux_archive_error": 0.0,
+    "linux_macos_error": 0.0,
+    "tolerance": 1e-12
+  }
+]

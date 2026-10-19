@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/homebrew/opt/openjdk@11/bin/java",
+    "-Djava.awt.headless=true",
+    "-Xmx768m",
+    "-cp",
+    "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/NetLogo.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/*",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-vision-cache-strata-001/CacheGeometry.java",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-vision-cache-strata-001/cached-appended/HEADLESS_Sugarscape.nlogo",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-vision-cache-strata-001/geometry-setup.txt",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/raimbault-vision-cache-strata-001/geometry.csv"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "elapsed_seconds": 2.5799847500165924
+}

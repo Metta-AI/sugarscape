@@ -1,0 +1,24 @@
+{
+  "mode": "prefix",
+  "rows": 1058,
+  "required_rows": 55000,
+  "requested_interval": [
+    3246,
+    13597
+  ],
+  "validated_interval": [
+    3246,
+    4304
+  ],
+  "complete_reference": false,
+  "compared_measurements": 2116,
+  "mismatch_count": 0,
+  "first_mismatches": [],
+  "maximum_absolute_errors": {
+    "gini": 0.0,
+    "mwgini": 0.0
+  },
+  "reference_sha256": "2fc276934c6c50994a2c24196b7da4231383ef3d13f86804b5c38cb0d1d93add",
+  "snapshot_sha256": "143f52fca6f9093473c5459fa539e6a6081f5b5d12ecf5ff84350d66ab91bf3e",
+  "scope": "Exact native Gini replay for the recorded prefix or complete fixed reference. Generated landscapes and fresh spatial-sensitivity conclusions remain separate."
+}

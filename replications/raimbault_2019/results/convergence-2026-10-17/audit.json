@@ -1,0 +1,50 @@
+{
+  "rows": 2727994,
+  "groups": 54560,
+  "columns": [
+    "minimum",
+    "first_quartile",
+    "median",
+    "mean",
+    "third_quartile",
+    "maximum"
+  ],
+  "paper_table2": [
+    2.343,
+    14.413,
+    20.993,
+    20.098,
+    26.208,
+    49.808
+  ],
+  "summaries": {
+    "gini": [
+      2.34281092586954,
+      14.412785178252017,
+      20.992606267720618,
+      20.097783876505336,
+      26.20827631129908,
+      49.807882410864785
+    ],
+    "mwgini": [
+      7.0420068812770165,
+      52.14763079224178,
+      88.67770796680202,
+      88.33008397410907,
+      122.67654806580944,
+      256.42501119709533
+    ]
+  },
+  "matches_at_published_precision": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "source_sha256": "ca8b3db5c6a4b8a4d065ef6dd82479ff4a3fb9193a526c07760d1eb67ebd254e",
+  "raw_uncompressed_sha256": "1a2cdf93167571ab2943d488017ace08945e7afd3cd8ac4d1410fb214c79c8f5",
+  "groups_sha256": "f2b3e98025c890c297973199349160a057d1b99079a97c1e2ce4bb2ba20245d0",
+  "scope": "Archived-data reanalysis, not new simulations. Terminal Gini follows author comp.R; moving-window Gini is a separately labeled diagnostic. Sample standard deviation and linear-interpolated quantiles match R defaults. No group omitted."
+}

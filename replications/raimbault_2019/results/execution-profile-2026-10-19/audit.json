@@ -1,0 +1,66 @@
+{
+  "full_horizon_runs": 2,
+  "populations": [
+    10,
+    510
+  ],
+  "ticks_each": 10000,
+  "gini_history_values_exact": 20000,
+  "exported_world_rows_exact_excluding_timestamps": 5570,
+  "random_states_exact": true,
+  "all12_metrics_exact_for_both_inputs": true,
+  "execution_samples": 1093,
+  "threads": {
+    "main": 17,
+    "JobThread": 1076
+  },
+  "inclusive_procedure_sample_counts": {
+    "turtle_move": 543,
+    "regrow_patches": 268,
+    "gini_update": 37,
+    "landscape_generation": 81
+  },
+  "top_leaf_sample_counts": {
+    "org/nlogo/nvm/Context.runExclusive": 81,
+    "scala/collection/immutable/VectorIterator.gotoNextBlockStart": 73,
+    "java/util/HashMap.putVal": 65,
+    "scala/collection/immutable/VectorIterator.initFrom": 59,
+    "scala/collection/immutable/VectorPointer$class.initFrom": 55,
+    "org/nlogo/agent/Patch.turtlesHereAgentSet": 49,
+    "org/nlogo/api/LogoList$Iterator.it": 44,
+    "org/nlogo/agent/Patch.pcolor": 41,
+    "java/util/LinkedHashMap.newNode": 35,
+    "java/lang/FdLibm$Pow.compute": 28,
+    "java/util/HashMap.resize": 24,
+    "scala/collection/immutable/Vector.initFrom": 19,
+    "org/nlogo/prim/_asm_procedurepatchgrowbackusersrelhcodeworkspacesugarscapereplicationevidenceraimbaultginiqualification001baselinepatchesnls_setpatchvariable_0.perform": 18,
+    "org/nlogo/agent/Topology.wrap": 18,
+    "java/util/AbstractCollection.toArray": 17,
+    "scala/collection/immutable/VectorIterator.stabilize": 16,
+    "org/nlogo/nvm/ExclusiveJob.run": 15,
+    "org/nlogo/api/LogoListBuilder.<init>": 14,
+    "org/nlogo/prim/etc/_withmax.report": 14,
+    "org/nlogo/util/MersenneTwisterFast.nextInt": 13
+  },
+  "file_sha256": {
+    "execution.jfr": "b7af653976541d4ab8b3aebf05873ad8ad6f6804e4ced6ee94288fca2b4068d5",
+    "protocol.json": "8936c6f42517fad60d32a533f47f30009844df5b532f5b981609a9dbb4460485",
+    "results.csv": "3ed52e854a80c0fcebdb57deed37975c97c8a7c7fc331b17cd29b8147934a3f5",
+    "results.csv.0.gini": "b8e58260796ca127dd8d478dbb3584b5f23aada24cfa7c19c28a56ef5f70c537",
+    "results.csv.0.world": "95a9a410fd9a6985765f1ea9037a76d2c03254f2dfd9f3a96a1106a1a8fe5714",
+    "results.csv.1.gini": "2ab20e42cc547647ecc298ce2bdf1d87b50179a4e095a813ad4ad2ef61dfa841",
+    "results.csv.1.world": "67429ab45cfc3723a2dd1a83aa0c9f48469880518e2d206a5f8c3ca53630284f",
+    "run.log": "a7ac50e86a54ea758626a58f88a557fe3a60b3ace71e15faed4d6b157dc187fd",
+    "run.py": "9e2e693e43629c0d09736980961495d56dfa24f3e7a3f369cadbe3e9a111cacd",
+    "samples.json": "ed7ed471d3fcbfbb8b6f9446f1c2db9261966194857698fd645b0940cc1f7390",
+    "terminal.json": "d88d9f8ded342200be58a3e34679068a7588a9680fe8c7488e5e9a96bd860ba4"
+  },
+  "reference_sha256": {
+    "results.csv": "3ed52e854a80c0fcebdb57deed37975c97c8a7c7fc331b17cd29b8147934a3f5",
+    "results.csv.0.gini": "b8e58260796ca127dd8d478dbb3584b5f23aada24cfa7c19c28a56ef5f70c537",
+    "results.csv.0.world": "6b649575a47d7c364ca9f135c51be22f03f75b37e6045640620378a088315957",
+    "results.csv.1.gini": "2ab20e42cc547647ecc298ce2bdf1d87b50179a4e095a813ad4ad2ef61dfa841",
+    "results.csv.1.world": "53f4fc1b50e2b6ca94c510c3ba7a1042c0e05f630d9104b9d5013830d9f17b6c"
+  },
+  "scope": "Single instrumented execution of two qualified inputs, including setup and reporting. Inclusive sample groups may overlap; sample counts are not independent timing measurements or full-grid performance estimates. Unmodified scientific state matches prior baseline. Movement candidate construction is a profiling lead; no optimized implementation, production change, cheaper-grid claim or paper completion."
+}

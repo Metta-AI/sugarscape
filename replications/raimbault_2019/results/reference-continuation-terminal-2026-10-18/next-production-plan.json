@@ -1,0 +1,62 @@
+{
+  "kind": "production",
+  "workers": 8,
+  "ranges": [
+    [
+      53520,
+      53554
+    ],
+    [
+      53612,
+      53654
+    ],
+    [
+      53699,
+      53754
+    ],
+    [
+      53797,
+      53854
+    ],
+    [
+      53888,
+      53954
+    ],
+    [
+      53987,
+      54054
+    ],
+    [
+      54088,
+      54154
+    ],
+    [
+      54164,
+      54264
+    ],
+    [
+      54264,
+      54364
+    ],
+    [
+      54364,
+      54464
+    ],
+    [
+      54464,
+      54564
+    ],
+    [
+      54564,
+      54600
+    ]
+  ],
+  "validated_prior_rows": 54177,
+  "remaining_rows": 823,
+  "prior_terminal_archive_sha256": "9cd047b7cfd8d167f756fc41a5089065c85ba5ad03076d79c73aecf21cba60a3",
+  "prior_audit_sha256": "a3eee1e200096a66f2c27950288d031ea7e19bfad663b8856bea207f0136cb3e",
+  "native_seconds": 7200,
+  "wait_seconds": 10800,
+  "outer_seconds": 18600,
+  "scope": "Only823 missing reference inputs; wait for generated-production-001 terminal archive on the same allocation. No completed input repeats. Native2hour cap; full55000 and generated ensemble remain required."
+}
