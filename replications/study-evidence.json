@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T07:07:56.960511+00:00",
+  "as_of": "2026-10-19T07:20:15.071652+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -45,14 +45,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "921d1a356afa621747796c489d0565f752ed8300",
+      "checked_commit": "84c991d43df5286f758d7d63d94fe56276ce9317",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
       "readme_sha256": "ef778fff32917567b072371cef7f9c3ad04e26e9199ea26ed4bfe02cfb4e88ff",
-      "json_evidence_files": 1703,
-      "remaining_scope": "All 2,000 homogeneous inputs and four Table 3 count rows audited. Runtime coverage reaches 916/1,200 inputs and 3,455,423 observations. Checkpoint0003 adds seven disjoint inputs and100,812 observations: two full50000-step runs and five native extinctions. Repeated full-trajectory audits are byte-identical; all66 archive members and storage receipt hashes verify. Bounded continuation cmd-6icjf remains active. Selfishness 0.37 now completes all 500 original seeds with 2,452,673 observations: ten extinctions, one endpoint below initial population, 489 at or above. Repeated full native readback is byte-identical; independent NumPy arithmetic confirms four whole-trajectory medians of 1138.059688 or 1138.2373, within Figure 10 ink bounds 1132.783573\u20131143.028745. Qualified agreement for this condition only. Terminal producer exits zero, evidence exported and verified, owned node stopped. Supplementary coverage is 507/100,000. Historical averaging, extinction and quantile conventions, full sweeps, long horizons, other figures and the distinct paper timing schedule remain unresolved. No whole-paper completion credit.",
+      "json_evidence_files": 1705,
+      "remaining_scope": "All 2,000 homogeneous inputs and four Table 3 count rows audited. Runtime coverage reaches 916/1,200 inputs and 3,455,423 observations. Checkpoint0003 adds seven disjoint inputs and100,812 observations: two full50000-step runs and five native extinctions. Repeated full-trajectory audits are byte-identical; all66 archive members and storage receipt hashes verify. Bounded continuation cmd-6icjf remains active. Selfishness 0.37 now completes all 500 original seeds with 2,452,673 observations: ten extinctions, one endpoint below initial population, 489 at or above. Repeated full native readback is byte-identical; independent NumPy arithmetic confirms four whole-trajectory medians of 1138.059688 or 1138.2373, within Figure 10 ink bounds 1132.783573\u20131143.028745. Qualified agreement for this condition only. Terminal producer exits zero, evidence exported and verified, owned node stopped. Supplementary coverage is 507/100,000. Historical averaging, extinction and quantile conventions, full sweeps, long horizons, other figures and the distinct paper timing schedule remain unresolved. No whole-paper completion credit. Measured499-input batch projects remaining99493 inputs to about$1350 compute at current eight-CPU rate, excluding overhead. This is one-condition extrapolation only; heterogeneous runtime/fidelity qualification precedes any full-sweep allocation. No new workload launched.",
       "gzip_json_evidence_files": 38,
-      "checked_at": "2026-10-19T07:07:56.960511+00:00",
+      "checked_at": "2026-10-19T07:20:15.071652+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/blueprints_2024"
     },
     {
