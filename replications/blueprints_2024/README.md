@@ -1129,3 +1129,7 @@ This establishes compatibility only. The cohort, historical averaging convention
 Producer and local audits agree exactly, and all 460 prior inventory records remain unchanged.
 Coverage reaches **478/500** for this condition and **485/100,000** supplementary inputs overall.
 The remaining 22 seeds are required before condition aggregation; paper completion remains unchanged.
+
+## Heterogeneous runtime qualification
+
+[Three paired original controls](results/heterogeneous-runtime-launch-2026-10-19) now run under pinned CPython and PyPy at unchanged 5,000-step horizons. The 121-minute platform limit and recorded rate bound compute plus idle to $1.632. All trajectory audits and byte-identical pair checks must pass before extending runtime qualification to heterogeneous sweeps. Launch adds no unique-input or paper-completion credit.
