@@ -22,6 +22,8 @@ Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical
 
 [A full native paper-table Rule M/Rule M control](results/paper-table-rule-m-control-2026-10-19) matches its released-code counterpart byte-for-byte across 20,001 observations. This supports the source audit’s predicted parameter insensitivity for that input; unexecuted inputs receive no credit.
 
+[Durable evidence for all 253 currently audited inputs](results/durable-evidence-2026-10-19) is uploaded and independently read back from storage: seven archives and 2,569 files match their hashes. This preserves existing results without adding coverage.
+
 Study status: native recorder corrected and qualified across 20,000 ticks. No reproduced-paper result yet.
 
 Paper: [Creating Intelligent Agents: Combining Agent-Based Modeling with Machine Learning](https://doi.org/10.1007/978-3-030-83418-0_3).
