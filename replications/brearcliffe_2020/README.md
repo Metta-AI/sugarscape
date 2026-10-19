@@ -45,6 +45,8 @@ The [Figure 3 digitization](results/wealth-digitization-2026-10-19) recovers 30 
 
 A [bounded CPU host trial](results/cloud-qualification-launch-2026-10-19) is queued to verify two complete trajectories before scaling the frozen ensembles.
 
+The [first bounded dispatcher execution](results/first-batch-launch-2026-10-19) runs two new full-length inputs from the audited remaining manifest. Results and independent audits are pending.
+
 ## Remaining work
 
 Qualify the remaining method pairings and estimate their runtime before the full 800-run ensemble. The measured Rule M/EC pairing projects to about 49 CPU-hours for 800 runs; this is not a measured full-sweep estimate.
