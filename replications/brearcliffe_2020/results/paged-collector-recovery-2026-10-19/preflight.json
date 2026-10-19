@@ -1,0 +1,50 @@
+{
+  "old_pid": 73094,
+  "old_process": "73094 01:01:07 /opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/Resources/Python.app/Contents/MacOS/Python /Users/relh/Code/workspace/sugarscape-replication-evidence/storage-handoff-20261017-001/collect_storage_api_bounded.py relh-sugarscape-runtime-memory-cpu8-20261018-v1 cmd-vxb2x brearcliffe-ensemble-collector-recovery-20261019-1858 --seconds 16000 --max-bytes 2147483648\n",
+  "producer": {
+    "command_id": "cmd-vxb2x",
+    "env": [],
+    "object": "command",
+    "started_at": "2026-10-19T11:38:33.017441+00:00",
+    "state": "running"
+  },
+  "old_first_poll": {
+    "unix": 1792436155.624979,
+    "state": {
+      "command_id": "cmd-vxb2x",
+      "env": [],
+      "object": "command",
+      "started_at": "2026-10-19T11:38:33.017441+00:00",
+      "state": "running"
+    },
+    "stored": [],
+    "total_bytes": 0
+  },
+  "old_last_poll": {
+    "unix": 1792439763.742479,
+    "state": {
+      "command_id": "cmd-vxb2x",
+      "env": [],
+      "object": "command",
+      "started_at": "2026-10-19T11:38:33.017441+00:00",
+      "state": "running"
+    },
+    "stored": [],
+    "total_bytes": 0
+  },
+  "deadline_utc": "2026-10-19T23:22:35+00:00",
+  "remaining_seconds": 12332,
+  "new_command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/storage-handoff-20261017-001/collect_storage_paged_bounded.py",
+    "relh-sugarscape-runtime-memory-cpu8-20261018-v1",
+    "cmd-vxb2x",
+    "brearcliffe-paged-collector-recovery-001",
+    "--seconds",
+    "12332",
+    "--max-bytes",
+    "2147483648"
+  ],
+  "collector_sha256": "6f2219f15ece285f12b9f486400d0c10421c4814ff6a77881357ca9474b227fc",
+  "scope": "Replace only task-owned local evidence collector; no producer changes, deadline extension, or stored-byte reset."
+}
