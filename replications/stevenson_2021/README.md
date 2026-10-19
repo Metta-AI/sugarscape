@@ -492,3 +492,11 @@ Numerical parameter assignments, seeds and steady-state windows remain unknown; 
 Independently calibrated coordinates differ by at most 0.001756% in mean age and 0.023437% in wealth/Gini values.
 The earlier paper gives several distinct sensitivity windows, including 200,000–225,000 cycles for some detail measurements; it still does not label Figure 3's full parameter grid.
 These source constraints are retained without assigning an unsupported historical protocol.
+
+## Completed later-window birth-cost check
+
+[All 100 extended runs](results/late-birth-cost-complete-2026-10-19) finish 150,000 cycles and preserve all 100,100 original prefix observations exactly.
+The later mean age is **1,420.67**, compared with **1,418.80** in the original window and **2,264** in Table 1.
+The paired change is +1.87 cycles (95% interval −3.12 to +6.86); this later-window choice does not explain the discrepancy.
+Independent arithmetic checks all 48 summary quantities; archived-input reanalysis reproduces every output byte.
+Historical model fidelity and other study requirements remain unresolved; the study stays incomplete.
