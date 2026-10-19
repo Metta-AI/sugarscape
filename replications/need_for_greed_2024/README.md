@@ -1,6 +1,6 @@
 # The Need for Greed in Artificial Decisionmakers
 
-[The selfishness-1 baseline is recovered](results/level1-baseline-recovered-2026-10-19): all 5,001 observations match the previous baseline hash, and the interrupted output is an exact prefix. The paired sweep is still running; full control reconciliation remains pending.
+[All six endpoint controls are complete and reconciled](results/endpoint-controls-complete-2026-10-19): three baseline/sweep pairs match byte-for-byte at the preselected seed. Both recovered level-1 trajectories preserve their interrupted prefixes; all three baseline hashes match prior evidence.
 
 [The four missing conditions for Table IV are staged](results/table4-missing-conditions-2026-10-19): 400 original inputs, two full-runtime qualification pairs, and a $7.02 conservative bound. After a preserved setup failure, bounded recovery `cmd-6ga7k` is running its first CPython pilot. Cumulative execution bounds are unchanged; all outcomes remain pending. No coverage credit is added.
 
@@ -8,7 +8,7 @@
 
 [The selfishness-1 endpoint baseline reached its time limit](results/endpoint-recovery-launch-2026-10-19). Both level-1 controls timed out; the original batch is terminal. Bounded sequential recovery reruns only those two inputs with unchanged configurations. Failed bytes are preserved; coverage and study status are unchanged.
 
-Status: partial native reproduction. The shared-input inventory has 164 audited inputs and 815,329 observations; separate native controls appear below. Four reported medians agree graphically at selfishness 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
+Status: partial native reproduction. The shared-input inventory has 170 audited inputs and 835,607 observations, including all six native controls. Four reported medians agree graphically at selfishness 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
 
 Kremer-Herman and Gupta, IEEE ISTAS 2024, pages 182–190. [Author manuscript](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf).
 The paper explicitly names [author release v2024.1](https://github.com/digital-terraria-lab/sugarscape/tree/b9ca671ab7591c7b3606f2d76c33eda344d626d1). Its source is MIT-licensed; source and dataset hashes appear in `source-audit.json`.
@@ -17,8 +17,8 @@ The deposited protocol includes 400 baseline inputs and 10,100 sweep inputs: 101
 
 ## Audited evidence
 
-- [Baseline reuse](results/baseline-reuse-2026-10-19): 64 Bentham baseline inputs, 320,064 observations. Another 336 baseline raw checks remain.
-- [Selfishness 0.37](results/selfishness037-reuse-2026-10-19): all 100 deposited seeds, 495,265 observations, one extinction and 99 populations above the initial 250. No final population equals the initial population. Another 10,000 sweep inputs remain unaudited here.
+- [Baseline reuse](results/baseline-reuse-2026-10-19): 64 Bentham baseline inputs, 320,064 observations. Three endpoint controls below extend baseline coverage to 67; 333 remain.
+- [Selfishness 0.37](results/selfishness037-reuse-2026-10-19): all 100 deposited seeds, 495,265 observations, one extinction and 99 populations above the initial 250. No final population equals the initial population. Three endpoint controls below extend sweep coverage to 103; 9,997 remain.
 
 Baseline and sweep configurations remain separate. Baseline selfishness endpoints are not substituted for sweep endpoints. Reused PyPy trajectories inherit the Blueprints runtime qualifications; this audit adds configuration and artifact verification, not an independent engine implementation.
 
@@ -38,7 +38,7 @@ The workspace must contain `sugarscape-blueprints` at its recorded evidence path
 
 The first auditor attempt compared a nested hash mapping with its enclosing document. It failed before reporting results. The corrected schema access, original script, and failure receipt are preserved; no simulation was rerun or excluded.
 
-[Native endpoint controls](results/endpoint-qualification-launch-2026-10-19) now test whether baseline configurations reproduce sweep endpoints. The selected selfishness-zero pair matches all 137 observations byte-for-byte through extinction. [The complete 0.5 pair](results/midpoint-control-2026-10-19) also matches byte-for-byte across 5,001 observations, and reproduces its prior baseline hash. The 1.0 pair remains pending; shared-inventory totals are unchanged until control-batch reconciliation.
+[Native endpoint controls](results/endpoint-qualification-launch-2026-10-19) now test whether baseline configurations reproduce sweep endpoints. The selected selfishness-zero pair matches all 137 observations byte-for-byte through extinction. [The complete 0.5 pair](results/midpoint-control-2026-10-19) also matches byte-for-byte across 5,001 observations, and reproduces its prior baseline hash. [The complete 1.0 pair and six-input reconciliation](results/endpoint-controls-complete-2026-10-19) now verify all 5,001 level-1 observations and add six disjoint original inputs.
 
 [All five measurements at selfishness 0.37](results/all-metric-comparison-2026-10-19) now have raw-trajectory arithmetic checks. Four medians agree graphically. Starvation-plus-combat death rates do not; adding aging deaths gives graphical agreement but contradicts the written metric. This remains a measurement investigation, not a validated negative replication.
 
@@ -59,6 +59,6 @@ Both commands require the pinned author artifacts documented above. Each run pre
 
 ## Remaining work
 
-Recover and freshly verify the remaining 336 baseline trajectories; execute or reuse all 10,000 remaining sweep inputs. Reproduce Tables I–IV and Figures 2–6 with declared aggregation and denominator conventions. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
+Recover and freshly verify the remaining 333 baseline trajectories; execute or reuse all 9,997 remaining sweep inputs. Reproduce Tables I–IV and Figures 2–6 with declared aggregation and denominator conventions. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
 
 Historical boxplot aggregation remains unresolved. The paper’s printed Table IV row 0.81–0.85 sums to 100.2%; the source audit preserves it without correction. Full paper completion requires the complete declared experiment and qualified comparisons, not this subset.
