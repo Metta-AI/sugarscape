@@ -4,6 +4,8 @@
 
 Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical to the Rule M/Rule M panel. Both curves are excluded from agreement judgments. Eleven of twelve remaining endpoint range comparisons overlap the paper raster intervals; this is not equivalence or a negative replication.
 
+[The 112-panel title and placement audit](results/figure-title-audit-2026-10-19) confirms the two known Figure 6 conflicts and finds no additional title conflict. OCR mismatches were checked against enlarged source images; all inventory rectangles match the PDF. This does not validate the underlying curve data.
+
 [Both cloud-host qualification cases now pass](results/existing-host-qualified-ensemble-launch-2026-10-19): 640,032 values and both complete trajectory byte sequences match the local references. The 749 reserved released-code inputs are running with eight workers under an 11.5-hour simulation bound and a $9.12 execution/export/idle ceiling. Launch adds no completed-study credit.
 
 [Both paper-table pilot inputs](results/second-paper-table-input-2026-10-19) pass all 20,001 observation checks and fresh archive readback. These two paper-table inputs are included in the current audited total above; Rule M/EC and Rule M/Rule M are complete; the other pairings remain incomplete.
