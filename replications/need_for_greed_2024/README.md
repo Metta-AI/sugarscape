@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The whole-table analyzer now gates comparisons on complete original input sets](results/table4-analysis-gates-2026-10-19). It reproduces the current partial counts, preserves both outcome definitions and the printed 100.2% anomaly, and emits no partial-row percentages. Complete-row reporting still awaits validation on a full audited row.
+
 [The second baseline recovery checkpoint verifies the formerly timed-out input](results/baseline-second-recovery-next-prefix-2026-10-19), including its full prior hash and every retained partial byte. Together with the [third Table IV checkpoint](results/table4-third-prefix-2026-10-19), 50 disjoint inputs add 187,267 observations.
 
 [The informed baseline recovery adds 25 audited inputs](results/baseline-second-recovery-prefix-2026-10-19), covering 47,569 observations with exact prior trajectory hashes. Baseline coverage reaches 132/400; the earlier timed-out input is not yet credited.
