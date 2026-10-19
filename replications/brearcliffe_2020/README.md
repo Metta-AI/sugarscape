@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[All four homogeneous-method breed comparisons](results/homogeneous-breed-contrasts-2026-10-19) now have paired endpoint audits across 200 existing runs. All 28 pointwise intervals include zero; this neither establishes equivalence nor the claimed EC breed advantage. Independent R verifies 2,800 raw endpoints and 252 summaries. No simulation inputs or completed-study credit were added.
+
 [All 800 released-code inputs are now audited](results/released-sarsa-sarsa-complete-cohort-2026-10-19/README.md). Together with [the complete paper-table EC/Q cohort](results/paper-ec-q-complete-cohort-2026-10-19/README.md), canonical coverage reaches 1,152 inputs and 23,041,152 observations. The remaining 448 paper-table inputs and claim synthesis stay incomplete.
 
 [The final released-batch successes are audited](results/released-terminal-audited-2026-10-19), bringing coverage to 1,077 inputs and 21,541,077 observations. [A separate recovery](results/released-recovery-launch-2026-10-19) runs only the twenty-five unstarted SARSA/SARSA inputs, capped below $2.
