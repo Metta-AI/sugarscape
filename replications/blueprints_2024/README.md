@@ -8,6 +8,8 @@
 
 [The Figure 16 target](results/heterogeneous-figure16-target-2026-10-19) places the 50% utilitarian median curve at population 925.37–943.24 within its printed line thickness. This is a graphical target for the complete 500-seed cohort, not a confidence interval or replication result.
 
+[The complete-condition population analyzer](results/population-condition-analyzer-validation-2026-10-19) reproduces the earlier 500-seed selfishness control and independently checked medians. It rejects the unfinished heterogeneous cohort before output and retains four explicit averaging conventions for the eventual full-cohort comparison.
+
 All **2,000/2,000 original homogeneous configurations** are complete and audited, with 5,063,268 observations.
 [The complete union](results/homogeneous-complete-2026-10-18) validates all 500 seeds for each model without double counting.
 All four Table 3 rows match the published counts exactly under the released plotter's classification.

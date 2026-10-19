@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "replications/blueprints_2024/summarize_population_condition.py",
+    "replications/blueprints_2024/results/heterogeneous50-fifteenth-prefix-2026-10-19/inventory/inventory.json",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-selfishness037-batch-001/original-archives/blueprints-heterogeneous.zip",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-population-incomplete-check-001/output",
+    "--experiment",
+    "heterogeneous",
+    "--condition",
+    "50"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-blueprints/replications/blueprints_2024/summarize_population_condition.py\", line 64, in <module>\n    assert {r[\"entry\"] for r in selected} == expected.keys(), {\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'validated_inputs': 376, 'required_inputs': 500}\n",
+  "output_exists": false
+}
