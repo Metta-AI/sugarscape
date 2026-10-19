@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The four missing conditions for Table IV are staged](results/table4-missing-conditions-2026-10-19): 400 original inputs, two full-runtime qualification pairs, and a $7.02 conservative bound. After a preserved setup failure, bounded recovery `cmd-6ga7k` is running its first CPython pilot. Cumulative execution bounds are unchanged; all outcomes remain pending. No coverage credit is added.
+
 [Development history traces the aging-inclusive death calculation to June 2024](results/development-death-history-2026-10-19). The unchanged function reproduces all 5,001 later-control rates exactly, with independent arithmetic checks. The paper’s median-plot pipeline and written exclusion of aging remain unresolved.
 
 [The selfishness-1 endpoint baseline reached its time limit](results/endpoint-recovery-launch-2026-10-19). Both level-1 controls timed out; the original batch is terminal. Bounded sequential recovery reruns only those two inputs with unchanged configurations. Failed bytes are preserved; coverage and study status are unchanged.
@@ -40,7 +42,7 @@ The first auditor attempt compared a nested hash mapping with its enclosing docu
 
 [The later author plotting control](results/later-author-death-control-2026-10-19) also gives graphical agreement for death rates when aging is included. Its 5,001 rates pass independent arithmetic checks, but neither its later source version nor its pooled aggregation establishes the paper’s historical pipeline.
 
-[The original-input inventory](results/remaining-input-plan-2026-10-19) separates 164 audited inputs, six reserved controls, and 10,330 remaining inputs. Recover the remaining baseline evidence before rerunning it. The single-condition compute projection is about $134 before overhead; no new batch is launched.
+[The original-input inventory](results/remaining-input-plan-2026-10-19) separates 164 audited inputs, six reserved controls, and 10,330 remaining inputs. Recover the remaining baseline evidence before rerunning it. The single-condition compute projection is about $134 before overhead; the separately bounded Table IV batch above is now submitted.
 
 ## Execute an original input
 

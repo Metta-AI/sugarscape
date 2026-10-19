@@ -1,0 +1,14 @@
+{
+  "inputs": 400,
+  "conditions": 4,
+  "seeds_per_condition": 100,
+  "native_horizon": 5000,
+  "all_configs_byte_identical_across_deposits": true,
+  "all_inputs_previously_remaining": true,
+  "pilot_entries": [
+    "0.36-benthamHalfLookaheadBinary238165197779399277.config",
+    "0.4-benthamHalfLookaheadBinary238165197779399277.config"
+  ],
+  "protocol_sha256": "0984c826d2568b8319718b57f1d8274c4ce2313bba80528a87fa397bf9e03d58",
+  "status": "Prepared, not launched; live runtime, resource, rate, disk and duplicate-work preflight required."
+}
