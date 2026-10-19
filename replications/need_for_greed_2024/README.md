@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[Death-rate quartiles reject aging inclusion as a complete explanation](results/death-quartiles-2026-10-19). All tested aging-inclusive medians fit the nominal curve envelope, but neither quartile does. The later author calculation behaves similarly. Independent R verifies all 486 comparisons; measurement fidelity remains unresolved.
+
 [Both Table IV runtime pilot pairs pass fresh local audit](results/table4-pilots-complete-2026-10-19). Original selfishness-0.36 and 0.40 inputs each produce 5,001 byte-identical observations under CPython and PyPy. The 400-input batch continues; these two assigned inputs are not counted twice or added to shared coverage yet.
 
 [Population quartiles constrain aggregation order at selfishness 0.37](results/population-quartile-order-2026-10-19). Across nine quantile definitions, all 108 per-run comparisons fit the nominal curve envelope and none of 108 pooled-time comparisons does. Independent R arithmetic passes after a preserved type-3 convention correction. This narrows one measurement; death-rate and full-paper fidelity remain unresolved.
