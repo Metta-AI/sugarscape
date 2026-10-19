@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T20:07:07.369128+00:00",
+  "as_of": "2026-10-19T20:09:02.680351+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "d31b59c398a4f47643cd3cd9b6ba651760d68c48",
+      "checked_commit": "241f4da00c91af6bafaf7b96fb1b66d6960e6319",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "d4a64ff3e5efa5004edf3c06421b3d5a7dd598c59a274ce3c2face5a8158f871",
-      "json_evidence_files": 265,
+      "readme_sha256": "284647168f4262ff789535bbf48d625589400e94f43838553c89d7834fdc2413",
+      "json_evidence_files": 303,
       "gzip_json_evidence_files": 17,
-      "checked_at": "2026-10-19T19:48:11.367460+00:00",
+      "checked_at": "2026-10-19T20:09:02.680351+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "287 unique original inputs audited:132baseline155sweep,1241927observations. Corrected baseline recovery checkpoint0001 adds25disjoint inputs/47569observations with exact fullpriorhashes; formerly timed-out input not yet credited. TableIV152/500 remains incomplete and execution-ordered prefix is not representative. Remaining268baselines9945sweep inputs. Existing bounded producers continue; baseline3600seconds/input and5.40USDceiling unchanged. Historical death aggregation unresolved; full tables/figures and paper-completion verdict outstanding."
+      "remaining_scope": "337unique original inputs/1429194observations audited:157baseline180sweep. Latest25baseline+25TableIV inputs add187267obs with nooverlap. Former1800stimeout completes2093.8178s under3600cap,matching prior fullhash and all4630527preserved partial bytes;5001observations,finalpopulation1352. TableIV177/500:3extinct174above250; execution-ordered prefix not representative. Remaining243baseline9920sweep inputs. Original bounded producers continue unchanged. Historical death aggregation and complete tables/figures remain unresolved; no completed-paper credit."
     }
   ],
   "study_prs": 22,
