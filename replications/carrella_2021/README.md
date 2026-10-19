@@ -1,5 +1,7 @@
 # Carrella (2021): Sugarscape parameter estimation
 
+[Full five-fold GAM qualification passes](results/gam-full-runtime-qualified-2026-10-19): 18,750 predictions/bounds, five final random states, and all 25 aggregate metrics match the original modern-runtime workflow. [The pinned historical control is now running](results/gam-historical-full-launch-2026-10-19) under its declared bounds; no paper verdict changes.
+
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
@@ -1329,7 +1331,7 @@ All128 runs and64,128 observations pass audit; fresh extraction repeats the audi
 Maximum difference is0.15625, with unadjusted joint permutation p0.9489.
 Six of ten settings are audited, totaling768 runs and384,768 observations; four settings and the combined analysis remain.
 
-[Full GAM runtime qualification](results/gam-full-runtime-qualification-launch-2026-10-19) is running against all five saved folds, including the original prediction-interval procedure. Exact prediction, interval-bound, and random-state checks gate any historical-runtime extension. No new result or completion credit is claimed.
+[Full GAM runtime qualification](results/gam-full-runtime-qualification-launch-2026-10-19) has completed all five saved folds, including the original prediction-interval procedure. Exact prediction, interval-bound, and random-state checks passed before the historical-runtime extension. No new result or completion credit is claimed.
 
 [The historical full-workflow bundle](results/gam-historical-full-preparation-2026-10-19) passes six-member hash readback. The first current-runtime fold verifies 3,750 exact numeric outputs and 626 RNG integers; four folds remain. Historical execution remains gated, and study status is unchanged.
 

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "autor",
+    "api",
+    "get",
+    "/nodes/relh-sugarscape-carrella-r405-cpu2-20261019-v1/imports/imp-4ekjm",
+    "--json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"bytes_transferred\": 4421269,\n  \"connection\": \"storage/relh-sugarscape-evidence-20261017\",\n  \"dest_path\": \"/root/sugarscape/carrella-gam-historical-full-001/staged-input\",\n  \"files\": 1,\n  \"files_done\": 1,\n  \"files_total\": 1,\n  \"finished_at\": \"2026-10-19T16:04:06.378743+00:00\",\n  \"import_id\": \"imp-4ekjm\",\n  \"object\": \"import\",\n  \"source\": \"s3://relh-sugarscape-evidence-20261017/carrella-gam-historical-full-input-001/\",\n  \"started_at\": \"2026-10-19T16:04:00.454966+00:00\",\n  \"status\": \"complete\",\n  \"total_bytes\": 4421269\n}\n",
+  "stderr": ""
+}
