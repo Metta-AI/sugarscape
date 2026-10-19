@@ -1,0 +1,75 @@
+{
+  "title": "Modelling the Social Contract: An agent-based Model of Hobbes\u2019 Contract Theory",
+  "authors": [
+    "Federico Pierucci",
+    "Natalia Kruk",
+    "Federico Cecconi"
+  ],
+  "year": 2023,
+  "publication_status": "Working paper/preprint; the document states evaluation and review were ongoing.",
+  "checked_at": "2026-10-19T08:20:33.499125+00:00",
+  "paper_url": "https://www.ssoar.info/ssoar/handle/document/86539",
+  "pdf_url": "https://www.ssoar.info/ssoar/bitstream/handle/document/86539/ssoar-2023-pierucci_et_al-Modelling_the_Social_Contract_An.pdf?sequence=1",
+  "pdf_pages": 16,
+  "paper_sha256": "5a4077deb4eff1c14cd72b96192481b8ac2df2add5df9b1745adf4e568293a3f",
+  "paper_bytes": 2163459,
+  "relevance": "Extends NetLogo Sugarscape 2 Constant Growback with altruism, donation, norm diffusion and redistribution.",
+  "declared_protocol": {
+    "agents": 500,
+    "grid": [
+      50,
+      50
+    ],
+    "horizon_ticks": 500,
+    "births_and_deaths": false,
+    "norm_effects": [
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4
+    ],
+    "public_goods_threshold_range": [
+      100,
+      1000
+    ],
+    "public_goods_threshold_step": 10,
+    "replication_counts": "Page9 mentions100 executions and separate20/5 repetitions; their allocation to reported figures is unresolved."
+  },
+  "missing_fidelity_requirements": [
+    "Original NetLogo source and exact runtime version.",
+    "Donation amount, exact redistribution rule, interaction/update order, initial distributions and seed schedule.",
+    "Norm is listed as0/1 but acquisition tests norm<0; unresolved source/prose mismatch.",
+    "Payoff range is printed(-1;0;-1); signed update and averaging window require original pseudocode.",
+    "Exact allocation of100 executions and20/5 repetitions to experimental cells and figures.",
+    "Original raw outputs and numerical figure targets."
+  ],
+  "source_availability": "PDF page6 explicitly directs readers to request detailed pseudocode from an author by email; no executable model link was recovered. No message sent.",
+  "github_searches": [
+    {
+      "query": "Sugarscape social contract",
+      "result_file": "github-search-0.json",
+      "repository_count": 0
+    },
+    {
+      "query": "Pierucci NetLogo",
+      "result_file": "github-search-1.json",
+      "repository_count": 0
+    },
+    {
+      "query": "Cecconi Sugarscape",
+      "result_file": "github-search-2.json",
+      "repository_count": 0
+    }
+  ],
+  "status": "source-lead-only; model/protocol unresolved; zero new studies or completed replications",
+  "next_action": "Recover author source/pseudocode and experiment definitions through public deposits or separately authorized author contact before implementation.",
+  "evidence_directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pierucci-social-contract-source-001",
+  "evidence_sha256": {
+    "paper.pdf": "5a4077deb4eff1c14cd72b96192481b8ac2df2add5df9b1745adf4e568293a3f",
+    "github-search-2.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "paper.txt": "e47a45e572ea0ce89b09478c6f0d4f8c92c72525be14e46509ba147aa55e8ac8",
+    "github-search-0.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "github-search-1.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  }
+}
