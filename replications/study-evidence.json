@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "a2d910cf1985fb30bab6737f4d351c8288d3d366",
+      "checked_commit": "bd3b6acb01584004872f0e6beba06c6e26895587",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "19a5cedce7c130b04ec492ec070020549e75d29bff83af1b14a7be81d43779a1",
-      "json_evidence_files": 168,
+      "readme_sha256": "a9f8186b2daeaf91b1aaab05e9ed2f8824514cf4dd394fcb5550968cbc45738b",
+      "json_evidence_files": 200,
       "gzip_json_evidence_files": 17,
-      "checked_at": "2026-10-19T19:00:02.368497+00:00",
+      "checked_at": "2026-10-19T19:08:45.943914+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "192 unique original inputs independently audited: 89 baseline and 103 sweep inputs, 887622 observations. Latest22 recovered baselines (52015 observations) exactly match retained hashes; raw archive storage readback exact, auditor repeats identically and rejects altered trajectory. Later checkpoints must deduplicate these22. Remaining311 baseline and9997 sweep inputs. Bounded baseline333 recovery and400-input TableIV batch remain running; two TableIV runtime pilots qualified but outside coverage. At selfishness0.37, population per-run quartiles graphically fit; pooled temporal quartiles do not. Four primary medians fit paper strokes. Death-rate stated definition and aging-inclusive diagnostic quartiles remain unresolved; matching medians alone does not establish historical pipeline fidelity. TablesI\u2013IV and Figures2\u20136 incomplete. No completed-paper credit."
+      "remaining_scope": "219 unique original inputs audited:89 baseline and130 sweep inputs,1013026 observations. Latest TableIV checkpoint25 inputs/115402 observations passes fresh raw audits against both original archives; two runtime pilots counted once add10002 observations. TableIV127/500 inputs:100 at0.37,26 at0.36,one at0.40;3extinct124above250. Ordered incomplete prefix is not representative; no full-bin comparison. Remaining311 baseline and9970 sweep inputs. Baseline333 recovery and400-input TableIV batch remain bounded/running. Deduplicate first22 baseline recovery inputs in later checkpoints. At0.37 population per-run quartiles fit paper strokes; pooled temporal quartiles do not. Four primary medians fit. Death definition and aging-inclusive quartiles remain unresolved. TablesI\u2013IV/Figures2\u20136 incomplete; no completed-paper credit."
     }
   ],
   "study_prs": 22,
