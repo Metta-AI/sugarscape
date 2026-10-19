@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The first unassigned-shard checkpoint](results/unassigned-first-checkpoint-2026-10-19) adds 25 audited inputs and 100,981 observations. Coverage reaches 782 unique inputs and 2,909,520 observations. All prior inputs and Tables I–III remain unchanged; Table IV remains incomplete. Evidence collection recovered without restarting the simulation.
+
 [The tenth Table IV checkpoint](results/table4-tenth-prefix-2026-10-19) adds 25 disjoint inputs and 125,025 observations. Current coverage is 757 inputs and 2,808,539 observations; the active row covers 352/500. Tables I–III remain exact.
 
 [The first newly authorized sweep batch](results/unassigned-first-batch-pilots-2026-10-19) passes both native runtime gates. Two unique inputs add 344 observations: coverage is now 732 inputs and 2,683,514 observations. Its remaining 504 inputs run under a $10 reservation.
