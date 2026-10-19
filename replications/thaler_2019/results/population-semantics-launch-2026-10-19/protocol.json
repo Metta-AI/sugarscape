@@ -1,0 +1,45 @@
+{
+  "variant": "tarray",
+  "source_observer_manifest_sha256": "599d47265cc3d0c126fc0393155eb7d1ef7c6f6f23b79f2019f3f3539079b2c3",
+  "prepared_sha256": {
+    "criterion/sugarscape-tarray/ChangeLog.md": "38626c9bafe023002fda567fc203c20937038b32025e6a0cb1db2a964ac8c240",
+    "criterion/sugarscape-tarray/LICENSE": "6e5b5ab7c598aea79cc0a6975df203d14cb678fd022172971082be4dfd60f0e9",
+    "criterion/sugarscape-tarray/Setup.hs": "5066653559d4d6134b022d66a634a17fdcf8db35d28b447e581fec284afa4689",
+    "criterion/sugarscape-tarray/src/Agent.hs": "e1ca3b5a88b67f150b996c207b5c824f78f45f94ec46d78cc03794048aa93c55",
+    "criterion/sugarscape-tarray/src/Common.hs": "07c78ad8b63aec88b017a31415f8fc1ef2660f9c93a11d139d150959aff757f8",
+    "criterion/sugarscape-tarray/src/Discrete.hs": "5930cd13e2e4800f3e32d5c57f1e312aebee554b782312db45b88d2a1b0ace4b",
+    "criterion/sugarscape-tarray/src/Environment.hs": "04cde0a502d30c1281d04a471390f7c3e8d92a408a282125c613585ed81ac198",
+    "criterion/sugarscape-tarray/src/GlossRunner.hs": "1553315103b1666f75aa9d80d4695199bb25080db228f2f9476c3cb60fa09d0f",
+    "criterion/sugarscape-tarray/src/Init.hs": "c09736df8f92e53a4d20f1901106a6c86b22c542c555579b40e74ae9900cbf9c",
+    "criterion/sugarscape-tarray/src/Main.hs": "e89e5cc297ebb83f2889923a7545a4d71ec92fbc320c4a67f8663a038f71d095",
+    "criterion/sugarscape-tarray/src/Model.hs": "8b7eae12bae962e02888c19167af411f6912f7da89f008b23ea0dfb6f63648ff",
+    "criterion/sugarscape-tarray/src/Random.hs": "58674ca1c01291b8c9ead31be17ebf924fa57d66d2e55057ba1fb8f288c1e470",
+    "criterion/sugarscape-tarray/src/Renderer.hs": "8d15406ac75abc9389d7d402f54d2888fdfd2687d6d5e008b2bd968f893fdb45",
+    "criterion/sugarscape-tarray/src/Simulation.hs": "7e396334956c00bb75e30478b55e7bfb1b3f5cce9e006cfcdc3ddabd76917274",
+    "criterion/sugarscape-tarray/src/Utils.hs": "c396c1a2182cf76e69935b227f4367d3bbc80902dee626cd48916c85c5a88c1c",
+    "criterion/sugarscape-tarray/stack.yaml": "3ae3e887dd6e7421542699d1bd110083ad368abe1a1acafccffefc1c50ffe11d",
+    "criterion/sugarscape-tarray/sugarscape-tarray.cabal": "408271cfb46c5fc997f69a213f246a116c336e087433a413ff488a495dfd33f0"
+  },
+  "seed": 42,
+  "steps": 1000,
+  "capabilities": 1,
+  "conditions": [
+    {
+      "agents": 500,
+      "rebirth": false
+    },
+    {
+      "agents": 2500,
+      "rebirth": true
+    }
+  ],
+  "repetitions": 2,
+  "per_run_seconds": 600,
+  "outer_seconds": 5400,
+  "cpu_limit": 1,
+  "memory_gib": 3,
+  "change": "Only post-force CSV output adds occupied-cell count. All initialization and simulation loops unchanged.",
+  "scope": "Full-model observation-semantics qualification. No timing or statistical equivalence claim.",
+  "execution": "native Linux amd64 CPU2, original GHC8.4.3",
+  "maximum_run_and_idle_cost_usd": 0.252
+}

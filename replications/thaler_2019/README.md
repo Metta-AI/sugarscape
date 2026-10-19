@@ -682,12 +682,13 @@ observations. Every trajectory contains times 0–999, valid population bounds,
 the prescribed command and a successful exit. All five normal sequential runs
 match the previously validated population reference exactly.
 
-At the final recorded time, normal concurrent runs contain 179–189 agents;
-the sequential runs contain 192. With 2,500 initial agents and rebirth,
-final populations are 2,293 sequentially, 2,353–2,363 for IO, and 2,320 for
-both TVar and TArray. These are descriptive observations, not a new equivalence
-tolerance or a whole-paper negative verdict. Recorded population follows the
-previously audited occupied-cell observer.
+At the final recorded time, normal concurrent runs emit 179–189 agent observations;
+the sequential runs emit 192. With 2,500 initial agents and rebirth,
+observable-agent counts are 2,293 sequentially, 2,353–2,363 for IO, and 2,320 for
+both TVar and TArray. These counts exclude newborn replacements that have not yet emitted observations.
+They do not establish vacant cells or lost agents. The earlier description as an occupied-cell observer was incorrect.
+[Source evidence and a bounded native validation](results/population-semantics-launch-2026-10-19) distinguish both measures.
+No statistical equivalence or whole-paper verdict is assigned.
 
 The evidence archive receipt and fresh public extraction reproduce the audit
 byte-for-byte. This completes the population ensemble. Figure 5a state fidelity

@@ -1,0 +1,61 @@
+{
+  "chip": "cpu-2",
+  "clock_lock": false,
+  "created_by": "you",
+  "custom_image": {
+    "digest": "sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956",
+    "facts": {
+      "bash": true,
+      "home": "/root",
+      "home_hides": [],
+      "home_source": "given",
+      "nvcc": false,
+      "python3": false,
+      "sudo": false,
+      "uid": 0
+    },
+    "home": "/root",
+    "note": "your own image, supervised by the platform: its entrypoint never runs (the platform keeps the node alive for run_command), and only the home path survives stops - everything else resets every wake"
+  },
+  "disk": "intact",
+  "id": "4ca8fc57-3fe7-4d76-84c4-fe44d327c348",
+  "idle_stops_at": "2026-10-19T01:10:09.454405+00:00",
+  "image": "ubuntu:22.04",
+  "mission": "relh-sugarscape-replications",
+  "name": "relh-sugarscape-thaler-observation-cpu2-20261019-v1",
+  "object": "node",
+  "profiling": false,
+  "rate": {
+    "calendar": {
+      "band": "weekend",
+      "next_cheaper": {
+        "band": "Friday",
+        "per_min": "$0.00204/min",
+        "per_min_usd_micros": 2040,
+        "percent_off": 32,
+        "starts_at": "2026-10-23T07:00:00Z"
+      },
+      "note": "Fridays 32% off, weekends 20% off (US Pacific) - applied to the minutes that run on those days, not locked at create",
+      "percent_off": 20
+    },
+    "gpu_count": 1,
+    "idle_window_minutes": 15,
+    "idle_window_usd": "$0.036",
+    "idle_window_usd_micros": 36000,
+    "minimum_minutes": 15,
+    "node_per_min": "$0.0024/min",
+    "node_per_min_usd_micros": 2400,
+    "per_min": "$0.0024/min",
+    "per_min_usd_micros": 2400,
+    "session_minimum_usd": "$0.036",
+    "session_minimum_usd_micros": 36000
+  },
+  "region": "us-west-2",
+  "resources": {
+    "cpu_limit": 2.0,
+    "memory_limit_bytes": 8589934592,
+    "note": "this container's cgroup budget - the CPU limit is a CFS quota, which os.cpu_count(), /proc/cpuinfo, psutil and free cannot see: they all report the HOST. Size parallelism (dataloader num_workers, multiprocessing.Pool, make -j) and memory to THESE numbers. Also inside the container: $GMN_CPU_LIMIT, $GMN_MEMORY_LIMIT_BYTES, with OMP_NUM_THREADS, RAYON_NUM_THREADS, MAX_JOBS and PYTHON_CPU_COUNT preset to the budget, so the OpenMP, Rust and torch-extension-build pools size to it. They are set on the CONTAINER, so they outrank an ENV baked into a custom image; override them in run_command's env, not a Dockerfile. GNU nproc answers the budget too (it reads OMP_NUM_THREADS) - busybox/Alpine nproc does not, so check yours on a custom image. What reports the host everywhere is os.cpu_count() (and PYTHON_CPU_COUNT only reaches it on Python 3.13+): read $GMN_CPU_LIMIT instead of os.cpu_count() anywhere you size a pool."
+  },
+  "status": "running (idle)",
+  "yours": true
+}
