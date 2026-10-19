@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The selfishness-1 baseline is recovered](results/level1-baseline-recovered-2026-10-19): all 5,001 observations match the previous baseline hash, and the interrupted output is an exact prefix. The paired sweep is still running; full control reconciliation remains pending.
+
 [The four missing conditions for Table IV are staged](results/table4-missing-conditions-2026-10-19): 400 original inputs, two full-runtime qualification pairs, and a $7.02 conservative bound. After a preserved setup failure, bounded recovery `cmd-6ga7k` is running its first CPython pilot. Cumulative execution bounds are unchanged; all outcomes remain pending. No coverage credit is added.
 
 [Development history traces the aging-inclusive death calculation to June 2024](results/development-death-history-2026-10-19). The unchanged function reproduces all 5,001 later-control rates exactly, with independent arithmetic checks. The paper’s median-plot pipeline and written exclusion of aging remain unresolved.
