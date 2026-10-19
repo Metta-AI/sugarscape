@@ -1,12 +1,14 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[Both Table IV runtime pilot pairs pass fresh local audit](results/table4-pilots-complete-2026-10-19). Original selfishness-0.36 and 0.40 inputs each produce 5,001 byte-identical observations under CPython and PyPy. The 400-input batch continues; these two assigned inputs are not counted twice or added to shared coverage yet.
+
 [Population quartiles constrain aggregation order at selfishness 0.37](results/population-quartile-order-2026-10-19). Across nine quantile definitions, all 108 per-run comparisons fit the nominal curve envelope and none of 108 pooled-time comparisons does. Independent R arithmetic passes after a preserved type-3 convention correction. This narrows one measurement; death-rate and full-paper fidelity remain unresolved.
 
-[Recovery of the 333 missing baseline trajectories is queued](results/baseline-recovery-launch-2026-10-19). The task-owned eight-CPU command has a six-hour limit and $5.40 conservative ceiling. Every full output must match its retained original hash; launch adds no coverage credit.
+[Recovery of the 333 missing baseline trajectories is running](results/baseline-recovery-launch-2026-10-19). The task-owned eight-CPU command has a six-hour limit and $5.40 conservative ceiling. Every full output must match its retained original hash; launch adds no coverage credit.
 
 [All six endpoint controls are complete and reconciled](results/endpoint-controls-complete-2026-10-19): three baseline/sweep pairs match byte-for-byte at the preselected seed. Both recovered level-1 trajectories preserve their interrupted prefixes; all three baseline hashes match prior evidence.
 
-[The four missing conditions for Table IV are staged](results/table4-missing-conditions-2026-10-19): 400 original inputs, two full-runtime qualification pairs, and a $7.02 conservative bound. After a preserved setup failure, bounded recovery `cmd-6ga7k` is running its first CPython pilot. Cumulative execution bounds are unchanged; all outcomes remain pending. No coverage credit is added.
+[The four missing conditions for Table IV are staged](results/table4-missing-conditions-2026-10-19): 400 original inputs, two full-runtime qualification pairs, and a $7.02 conservative bound. After a preserved setup failure, bounded recovery `cmd-6ga7k` passed both full-runtime pilot pairs and continues the assignment. Cumulative execution bounds are unchanged. No coverage credit is added before reconciliation.
 
 [Development history traces the aging-inclusive death calculation to June 2024](results/development-death-history-2026-10-19). The unchanged function reproduces all 5,001 later-control rates exactly, with independent arithmetic checks. The paper’s median-plot pipeline and written exclusion of aging remain unresolved.
 
