@@ -45,14 +45,14 @@
     {
       "study": "blueprints_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/6",
-      "checked_commit": "8f050c314efb6a4ad7e077941c14e980102c940d",
+      "checked_commit": "d17440d2bda0594b89311eaa6bbdbd5fc13db04f",
       "status": "running",
       "readme": "replications/blueprints_2024/README.md",
-      "readme_sha256": "8fa789ee207b845b74ddd119554e938d703322e179fbbd14e9c8af61bec998d6",
-      "json_evidence_files": 1623,
-      "remaining_scope": "All 2,000 homogeneous inputs and four Table 3 count rows audited. Runtime coverage is 909/1,200 deposited inputs and 3,354,611 observations. Both prior groups reached six-hour budgets; interrupted inputs receive no credit. Original raw[86,100) and altruistic[22,100) continuation is registered as cmd-6icjf, running after verified restoration, with unchanged 50,000-step horizons and $3.90 compute bound. Supplementary coverage is 460/100,000 inputs; selfishness 0.37 reaches 453/500. An earlier 275-input batch validate 1,351,453 observations, with five native extinctions. Producer remains active. Full sweeps, long horizons, nonhomogeneous figures, and the distinct paper 500-seed timing protocol remain incomplete. Figure 10 median ink bounds extracted at 99 interior factors and repeated byte-identically; historical time averaging, extinction handling and quartile conventions remain unresolved. Full-condition aggregation rejects missing original seeds. Checkpoint0452 adds 25 disjoint inputs and 125,025 observations, all reaching 5,000 steps; all prior records preserved exactly. A replacement bounded collector skips verified prior exports without restarting the producer. Native analysis of 453 trajectories (2217626 observations) bounds the eventual 500-seed median to 1126.08\u20131143.14 for observed rows; excluding initial population gives 1126.25\u20131143.32. Zero extension after ten extinctions leaves these bounds unchanged. All four intervals contain Figure 10 ink bounds, establishing compatibility only; final seeds and historical conventions remain required.",
+      "readme_sha256": "03634feb54bc263021e373ba5ebafd022f662b51c0a833826730ff1e232a4123",
+      "json_evidence_files": 1656,
+      "remaining_scope": "All 2,000 homogeneous inputs and four Table3 count rows audited. Runtime coverage is909/1200 deposited inputs and3354611 observations. Original raw[86,100) and altruistic[22,100) continuation cmd-6icjf remains live at unchanged50000-step horizons and $3.90 compute bound; checkpoint0002 counts{} adds no coverage. Supplementary coverage reaches485/100000, including478/500 selfishness0.37 seeds. Checkpoint0477 adds25 disjoint inputs/125025 observations, all5000 steps; local and producer audits match, all460 prior inventory records preserved. Original bounded producer and replacement collector remain active. Full-condition aggregation requires remaining22 seeds. Earlier453-seed median bounds contain Figure10 ink bounds under four averaging conventions, establishing compatibility only. Historical time averaging, extinction handling and quantile conventions, full sweeps, long horizons, nonhomogeneous figures, and distinct paper500-seed timing schedule remain unresolved.",
       "gzip_json_evidence_files": 38,
-      "checked_at": "2026-10-19T06:16:33.830396+00:00",
+      "checked_at": "2026-10-19T06:36:32.189100+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/blueprints_2024"
     },
     {
