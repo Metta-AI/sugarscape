@@ -1,6 +1,8 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
-[EC/SARSA completes all 50 seeds](results/ec-sarsa-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Eight of sixteen released-code pairings now have complete cohorts. Coverage is 400 released-code plus three paper-table inputs, totaling 8,060,403 observations. Eleven of twelve readable endpoint mean ranges overlap paper ink; the remaining endpoint overlaps its pointwise bootstrap interval. Figure 6's mislabeled combat curves remain excluded.
+[Q-learning/Rule M completes all 50 seeds](results/q-rule-m-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Nine of sixteen released-code pairings now have complete cohorts. Coverage is 450 released-code plus three paper-table inputs, totaling 9,060,453 observations. Thirteen of fourteen endpoint mean ranges overlap paper ink; the remaining endpoint overlaps its pointwise bootstrap interval. This does not establish equivalence.
+
+[EC/SARSA completes all 50 seeds](results/ec-sarsa-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Eleven of twelve readable endpoint mean ranges overlap paper ink; the remaining endpoint overlaps its pointwise bootstrap interval. Figure 6's mislabeled combat curves remain excluded.
 
 [EC/Q completes all 50 seeds](results/ec-q-complete-cohort-2026-10-19), with full trajectory audits and independent R arithmetic. Eight of fourteen endpoint mean ranges overlap the paper raster ranges. All six remaining endpoints have overlapping pointwise bootstrap intervals; this does not establish equivalence or resolve historical parameter settings.
 
@@ -29,6 +31,8 @@ Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical
 [A full native paper-table Rule M/Rule M control](results/paper-table-rule-m-control-2026-10-19) matches its released-code counterpart byte-for-byte across 20,001 observations. This supports the source audit’s predicted parameter insensitivity for that input; unexecuted inputs receive no credit.
 
 [Durable evidence for the first 253 audited inputs](results/durable-evidence-2026-10-19) is uploaded and independently read back from storage: seven archives and 2,569 files match their hashes. This preserves existing results without adding coverage.
+
+[Durable Q-learning/Rule M evidence](results/q-rule-m-durable-evidence-2026-10-19) passes fresh storage download verification. Five disjoint backup manifests now preserve all 453 audited inputs.
 
 Study status: native recorder corrected and qualified across 20,000 ticks. No reproduced-paper result yet.
 
