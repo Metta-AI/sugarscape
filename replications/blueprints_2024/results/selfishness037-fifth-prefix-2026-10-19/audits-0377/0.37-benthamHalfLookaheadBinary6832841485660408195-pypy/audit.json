@@ -1,0 +1,17 @@
+{
+  "validated": {
+    "entry": "0.37-benthamHalfLookaheadBinary6832841485660408195.config",
+    "seed": 6832841485660408195,
+    "experiment": "selfishness",
+    "effective_models": [
+      "benthamHalfLookaheadBinary"
+    ],
+    "observations": 5001,
+    "final_timestep": 5000,
+    "final_population": 1186,
+    "outcome": "better_or_equal",
+    "trajectory_sha256": "55f0a724a45130e2ecc94f645dc493bbad2f86d49c9769d2d0726a9448ad6589"
+  },
+  "manifest_sha256": "790fc8f498352f26659077146328491de0fc49ef4529e6bb258304a49f4c2d24",
+  "scope": "One complete original input and every native trajectory measurement validated. No aggregate sweep or model-correctness verdict."
+}

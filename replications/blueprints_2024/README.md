@@ -1079,3 +1079,7 @@ Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishn
 ### Runtime continuation reaches its bound
 
 [The terminal archive audit](results/runtime-continuation-terminal-prefix-2026-10-19) adds 25 original inputs and 253,312 observations. Coverage reaches 909/1,200 deposited inputs and 3,354,611 observations. Both groups reach their six-hour limits; interrupted inputs receive no credit. Their logs and exact remaining intervals are retained. The different 500-seed paper protocol remains unresolved.
+
+### Selfishness 0.37 reaches 403 audited inputs
+
+[Eleven further checkpoints](results/selfishness037-fifth-prefix-2026-10-19) add 275 disjoint inputs and 1,351,453 validated observations. Of these, 270 reach 5,000 steps and five end in native extinction. All local and producer audits agree. Inventory reconciliation preserves earlier evidence and reaches 403/500 inputs for condition 0.37, with 410/100,000 supplementary inputs overall. No completion-order aggregate or paper verdict is claimed.
