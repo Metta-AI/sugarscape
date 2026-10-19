@@ -1,0 +1,69 @@
+{
+  "chip": "cpu-2",
+  "clock_lock": false,
+  "created_by": "you",
+  "custom_image": {
+    "digest": "sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956",
+    "facts": {
+      "bash": true,
+      "home": "/root",
+      "home_hides": [],
+      "home_source": "given",
+      "nvcc": false,
+      "python3": false,
+      "sudo": false,
+      "uid": 0
+    },
+    "home": "/root",
+    "note": "your own image, supervised by the platform: its entrypoint never runs (the platform keeps the node alive for run_command), and only the home path survives stops - everything else resets every wake"
+  },
+  "disk": "snapshotted",
+  "durable_as_of": "2026-10-19T01:23:48.475+00:00",
+  "id": "4ca8fc57-3fe7-4d76-84c4-fe44d327c348",
+  "image": "ubuntu:22.04",
+  "mission": "relh-sugarscape-replications",
+  "name": "relh-sugarscape-thaler-observation-cpu2-20261019-v1",
+  "object": "node",
+  "profiling": false,
+  "rate": {
+    "calendar": {
+      "band": "weekend",
+      "next_cheaper": {
+        "band": "Friday",
+        "per_min": "$0.00204/min",
+        "per_min_usd_micros": 2040,
+        "percent_off": 32,
+        "starts_at": "2026-10-23T07:00:00Z"
+      },
+      "note": "Fridays 32% off, weekends 20% off (US Pacific) - applied to the minutes that run on those days, not locked at create",
+      "percent_off": 20
+    },
+    "gpu_count": 1,
+    "idle_window_minutes": 15,
+    "idle_window_usd": "$0.036",
+    "idle_window_usd_micros": 36000,
+    "minimum_minutes": 15,
+    "node_per_min": "$0.0024/min",
+    "node_per_min_usd_micros": 2400,
+    "per_min": "$0.0024/min",
+    "per_min_usd_micros": 2400,
+    "session_minimum_usd": "$0.036",
+    "session_minimum_usd_micros": 36000
+  },
+  "status": "stopped (disk snapshotted)",
+  "stopped": {
+    "at": "2026-10-19T01:22:52.038310+00:00",
+    "note": "work ended and nothing attached within the idle grace window, so the node auto-stopped and parked its disk (files survive; processes ended). run_command wakes it - and hold_node keeps it awake while you work on it across several turns, which is what to reach for if this stop landed mid-task",
+    "ran_seconds": 1662,
+    "reason": "idle_grace_expired"
+  },
+  "wake_estimate": {
+    "assumes_contested": true,
+    "estimate_basis": "queue from 29 recent cpu-2 wake departures over 7d; spin-up from 6 cpu-2 wake samples; no recent wake history for this shape",
+    "estimated_ready_seconds": 19497,
+    "estimated_ready_seconds_p90": 116946,
+    "note": "what a wake requested right now would be quoted, from the wake queue as it stands - a reading, not a reservation; conditions at your actual wake may differ, and a wake when the shape has capacity free is near-immediate. Wakes are served before creates. If this disk holds the only copy of files you will need soon, weigh this number before relying on a stop/wake round trip - snapshot_node or export_data keeps a durable copy a wake never has to wait for.",
+    "queued_wakes": 0
+  },
+  "yours": true
+}

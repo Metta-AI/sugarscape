@@ -823,3 +823,7 @@ Earlier unresolved Figure 5a sections above describe historical evidence. Retry-
 [A bounded protocol comparison](results/criterion-retry-control-launch-2026-10-18) tests the author's repeated Criterion workflow against fresh single-iteration processes at 32 capabilities.
 It reuses the audited instrumented binary on the matching instance class and preserves every cumulative and per-simulation counter.
 The [completed six-process diagnostic](results/criterion-retry-control-complete-2026-10-18) audits 51 simulations. Default Criterion gives mean retry ratio 0.0871433; fresh single processes give 0.0894201, versus published 0.29. Repetition does not explain the discrepancy in this control. The preserved harness argument-order failure required only the three missing single processes to rerun after correction. Historical scheduling equivalence remains unresolved; no instrumented timing or whole-paper verdict is claimed.
+
+### Native occupancy validation completes
+
+[Four original TArray runs](results/population-semantics-complete-2026-10-19) validate 4,000 observations. Both full-grid rebirth runs retain exactly 2,500 occupied cells throughout, despite ending with 2,320 returned agent observations. Normal runs match both counts at every step. The earlier apparent population deficit was an observable-count interpretation error. The archive and repeated audit match byte-for-byte. This closes that TArray measurement issue without resolving historical timing or retry differences.
