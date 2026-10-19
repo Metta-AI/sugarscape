@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[Fresh-host qualification is running for the paper-table remainder](results/paper-host-qualification-launch-2026-10-19). The task-owned eight-CPU worker has a $2 ceiling covering setup, export and idle time. Both full trajectories must match before the 797-input ensemble starts; no new completion credit is claimed.
+
 [The paper-table remainder is frozen](results/paper-table-remainder-prepared-2026-10-19): 797 original inputs, disjoint from the active released-code assignment. All preparation files regenerate exactly. Fresh host qualification and measured-budget checks precede any dispatch; no new execution credit is claimed.
 
 [Q-learning/Q-learning completes all 50 seeds](results/q-q-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Eleven of sixteen released-code cohorts are complete. Coverage is 553 inputs and 11,060,553 observations. All eight readable endpoint ranges overlap the paper; six endpoints remain unresolved. [Durable readback](results/q-q-durable-evidence-2026-10-19) verifies all 502 new archive members.

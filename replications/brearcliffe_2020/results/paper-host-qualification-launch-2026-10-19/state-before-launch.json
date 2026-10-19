@@ -1,0 +1,53 @@
+{
+  "chip": "cpu-8",
+  "clock_lock": false,
+  "created_by": "you",
+  "custom_image": {
+    "digest": "sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956",
+    "note": "your own image, supervised by the platform: its entrypoint never runs (the platform keeps the node alive for run_command), and only the home path survives stops - everything else resets every wake"
+  },
+  "disk": "intact",
+  "id": "8f557715-64c0-407f-b76a-0441b06a95ed",
+  "image": "ubuntu@sha256:0a9887931b0e38af2e3487ed39e29436b0535c4f3f52e57745baaf79d1898956",
+  "mission": "relh-sugarscape-replications",
+  "name": "relh-sugarscape-brearcliffe-paper-cpu8-20261019-v1",
+  "object": "node",
+  "profiling": false,
+  "provisioning": {
+    "attempt": 1,
+    "elapsed_seconds": 0,
+    "estimate_basis": "already provisioning; spin-up from 2 cpu-8 create samples",
+    "estimated_ready_seconds": 12,
+    "estimated_ready_seconds_p90": 15,
+    "note": "a start that stops progressing is bounded: the platform cancels it and returns the node to the queue (position kept) or fails it with the reason under last_failure; delete_node cancels a stuck create immediately.",
+    "since": "2026-10-19T19:12:40.747454+00:00"
+  },
+  "rate": {
+    "calendar": {
+      "band": "weekday",
+      "next_cheaper": {
+        "band": "Friday",
+        "per_min": "$0.00804/min",
+        "per_min_usd_micros": 8040,
+        "percent_off": 33,
+        "starts_at": "2026-10-23T07:00:00Z"
+      },
+      "note": "Fridays 33% off, weekends 20% off (US Pacific) - applied to the minutes that run on those days, not locked at create",
+      "percent_off": 0
+    },
+    "gpu_count": 1,
+    "idle_window_minutes": 15,
+    "idle_window_usd": "$0.18",
+    "idle_window_usd_micros": 180000,
+    "minimum_minutes": 15,
+    "node_per_min": "$0.012/min",
+    "node_per_min_usd_micros": 12000,
+    "per_min": "$0.012/min",
+    "per_min_usd_micros": 12000,
+    "session_minimum_usd": "$0.18",
+    "session_minimum_usd_micros": 180000
+  },
+  "region": "us-west-2",
+  "status": "provisioning",
+  "yours": true
+}
