@@ -2,6 +2,8 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
+[The fourth heterogeneous checkpoint](results/heterogeneous50-fourth-prefix-2026-10-19) adds 25 audited original inputs. Supplementary coverage is 607/100,000; the 50% heterogeneous condition is 101/500. Earlier input records remain unchanged.
+
 All **2,000/2,000 original homogeneous configurations** are complete and audited, with 5,063,268 observations.
 [The complete union](results/homogeneous-complete-2026-10-18) validates all 500 seeds for each model without double counting.
 All four Table 3 rows match the published counts exactly under the released plotter's classification.
