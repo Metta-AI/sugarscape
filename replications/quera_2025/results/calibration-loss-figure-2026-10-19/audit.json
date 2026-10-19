@@ -1,0 +1,70 @@
+{
+  "pdf_sha256": "9cde30faaca1862357330d0d58f3c4b5f966f4c80582dae08b5ef97caa8c9856",
+  "svg_sha256": "511a05adf76cff4733f66e031e35e8f07672f1bde41868eca25746dfbf802dbb",
+  "extractor_sha256": "7ffc2b003999793e0c37cfbefecba2651893158d44160d4264cf2fc42686e62e",
+  "pymupdf_version": "1.26.5",
+  "x_tick_values": [
+    0,
+    1000,
+    2000,
+    3000
+  ],
+  "x_tick_positions": [
+    51.01842498779297,
+    106.83702850341797,
+    162.6556396484375,
+    218.4742431640625
+  ],
+  "y_tick_values": [
+    0,
+    -100
+  ],
+  "y_tick_positions": [
+    52.1763916015625,
+    93.34159088134766
+  ],
+  "curves": [
+    {
+      "method": "pathwise",
+      "opacity": 0.5,
+      "vertices": 2154,
+      "svg_vertices": 2154,
+      "first_iteration": 0,
+      "last_iteration": 2999,
+      "maximum_cross_renderer_coordinate_error_points": 0.0027086811005022906,
+      "maximum_integer_iteration_error": 0.0001664785831962945
+    },
+    {
+      "method": "score",
+      "opacity": 0.5,
+      "vertices": 2253,
+      "svg_vertices": 2252,
+      "first_iteration": 0,
+      "last_iteration": 2999,
+      "maximum_cross_renderer_coordinate_error_points": 0.0027426475746460343,
+      "maximum_integer_iteration_error": 0.0001664785831962945
+    },
+    {
+      "method": "pathwise",
+      "opacity": 1.0,
+      "vertices": 1609,
+      "svg_vertices": 1608,
+      "first_iteration": 0,
+      "last_iteration": 2999,
+      "maximum_cross_renderer_coordinate_error_points": 0.0027161526843591855,
+      "maximum_integer_iteration_error": 0.0001664785831962945
+    },
+    {
+      "method": "score",
+      "opacity": 1.0,
+      "vertices": 1533,
+      "svg_vertices": 1532,
+      "first_iteration": 0,
+      "last_iteration": 2999,
+      "maximum_cross_renderer_coordinate_error_points": 0.0026633528277428178,
+      "maximum_integer_iteration_error": 0.0001664785831962945
+    }
+  ],
+  "vertices": 7549,
+  "scope": "Displayed simplified PDF vertices, not raw training records. Opacity distinguishes the four curves; smoothing and training/validation roles are unknown. All displayed paths span iterations0\u20132999. The appendix specifies5000 epochs; neither missing epochs nor early stopping are established by this figure."
+}

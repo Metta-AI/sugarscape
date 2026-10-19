@@ -224,3 +224,23 @@ Use `baseline` instead of `perturbed` for unperturbed cases. The auditor preserv
 The continuation exited zero in 866.5 seconds; its separate replay also exited zero. Compressed per-case audits, native manifests, passive parity records, executed Julia source, Python auditor and exact commands are retained. The 1.91 GB native trace upload exited zero. The remote checksum manifest matches local bytes; individual remote trace objects have not been independently read back.
 
 This validates the reconstructed diagnostic trajectories. It does not recover Figure 11’s historical experiment settings or the missing prior/loss/validation configuration and 5,000-epoch calibration. No whole-paper completion is claimed.
+
+## Published calibration-loss coordinates
+
+[The figure extraction](results/calibration-loss-figure-2026-10-19/audit.json) recovers
+7,549 displayed vertices from the four loss paths in Figure19(b).
+Both methods have translucent and opaque paths; their smoothing and training/validation roles remain unknown.
+All four paths span iterations0–2999, whereas the appendix specifies5,000 training epochs.
+This establishes a displayed-range discrepancy, not early stopping or a failed scientific result.
+The legend reports best losses−175.0 and−172.0; their selection procedure remains unresolved.
+
+MuPDF and Poppler/Cairo agree geometrically within0.002743 PDF points.
+Cairo omits one vertex in three paths, so exact vertex-count equality was an invalid audit assumption.
+The failed extractor is preserved in external evidence and hash-recorded in `verification.json`.
+The revised audit checks both directions against the complete polylines; a second extraction reproduces all outputs byte-for-byte.
+
+Run `pdftocairo -svg FIGURE.pdf FIGURE.svg`, then
+`python extract_calibration_loss.py FIGURE.pdf FIGURE.svg NEW_OUTPUT` with PyMuPDF installed.
+The figure is the `figures/results_calibration/calibration_sugarscape_w_0.0001_lr_0.0005_elbo.pdf`
+member of the [v2 paper source](https://arxiv.org/src/2509.03303v2); its hash is pinned in the audit.
+These simplified plot vertices are comparison targets, not recovered raw loss records or completed calibration.
