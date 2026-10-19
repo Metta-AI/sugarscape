@@ -4,7 +4,7 @@
 
 [Runtime checkpoint 0011](results/runtime-second-continuation-sixth-prefix-2026-10-19) raises deposited-input coverage to 935/1,200 and 3,757,784 observations. All 100 original raw-model inputs at 50,000 steps are now audited. Exact overlap checks and fresh archive readback pass; the distinct paper timing experiment remains unresolved. [The continuation has now ended](results/runtime-second-continuation-terminal-2026-10-19) at its six-hour bound; the final checkpoint adds only termination records. The timed-out input is uncredited.
 
-[The fifteenth heterogeneous checkpoint](results/heterogeneous50-fifteenth-prefix-2026-10-19) adds 25 audited original inputs and 81,881 observations. Supplementary coverage is 882/100,000; the 50% heterogeneous condition is 376/500. Two fresh extractions reproduce all 25 audits; all 857 earlier input records remain unchanged. This completion-order prefix does not establish an unbiased condition-level distribution.
+[The sixteenth heterogeneous checkpoint](results/heterogeneous50-sixteenth-prefix-2026-10-19) adds 25 audited original inputs and 91,502 observations. Supplementary coverage is 907/100,000; the 50% heterogeneous condition is 401/500. Two fresh extractions reproduce all 25 audits; all 882 earlier input records remain unchanged. This completion-order prefix does not establish an unbiased condition-level distribution.
 
 [The Figure 16 target](results/heterogeneous-figure16-target-2026-10-19) places the 50% utilitarian median curve at population 925.37–943.24 within its printed line thickness. This is a graphical target for the complete 500-seed cohort, not a confidence interval or replication result.
 
