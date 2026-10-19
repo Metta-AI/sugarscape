@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The paper-table Rule M/Q-learning cohort completes all 50 seeds](results/paper-rule-m-q-complete-cohort-2026-10-19). Independent R checks and durable storage readback pass. Eleven readable endpoint mean ranges overlap the paper; the remaining bootstrap interval overlaps. All paired trajectories differ from released-code outputs, leaving historical parameter provenance unresolved. Coverage reaches 852 inputs and 17,040,852 observations.
+
 [SARSA/EC completes all 50 seeds](results/sarsa-ec-complete-cohort-2026-10-19), with full trajectory audits, independent R checks, and verified durable storage. Thirteen endpoint mean ranges overlap the paper; the remaining pointwise bootstrap interval overlaps. Coverage reaches 802 inputs and 16,040,802 observations; fourteen released-code cohorts are complete. These descriptive comparisons do not establish equivalence.
 
 [The paper-table Rule M/EC cohort completes all 50 seeds](results/paper-rule-m-ec-complete-cohort-2026-10-19). All paired full trajectories match the released-code control. Independent R checks pass; twelve endpoint mean ranges overlap the paper, and both remaining bootstrap intervals overlap. Coverage reaches 752 inputs and 15,040,752 observations.
@@ -40,7 +42,7 @@ Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical
 
 [Both cloud-host qualification cases now pass](results/existing-host-qualified-ensemble-launch-2026-10-19): 640,032 values and both complete trajectory byte sequences match the local references. The 749 reserved released-code inputs are running with eight workers under an 11.5-hour simulation bound and a $9.12 execution/export/idle ceiling. Launch adds no completed-study credit.
 
-[Both paper-table pilot inputs](results/second-paper-table-input-2026-10-19) pass all 20,001 observation checks and fresh archive readback. These two paper-table inputs are included in the current audited total above; Rule M/EC and Rule M/Rule M are complete; the other pairings remain incomplete.
+[Both paper-table pilot inputs](results/second-paper-table-input-2026-10-19) pass all 20,001 observation checks and fresh archive readback. These two paper-table inputs are included in the current audited total above; Rule M/Q-learning, Rule M/EC and Rule M/Rule M are complete; the other pairings remain incomplete.
 
 [The earlier released-code prefix](results/rule-m-prefix-2026-10-19) retains its 15-input audit snapshot; the current totals above supersede that snapshot.
 
@@ -126,8 +128,8 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-The latest full audit covers 700/800 released-code inputs and 102/800 paper-table inputs.
-Complete and audit the remaining 100 released-code and 698 paper-table inputs under the existing frozen assignments.
+The latest full audit covers 700/800 released-code inputs and 152/800 paper-table inputs.
+Complete and audit the remaining 100 released-code and 648 paper-table inputs under the existing frozen assignments.
 Both bounded ensembles are running; completed producer entries receive coverage only after independent trajectory audits.
 All sixteen method pairings already passed native recorder qualification; the Rule M control also matches across both parameter interpretations for all 50 seeds.
 
