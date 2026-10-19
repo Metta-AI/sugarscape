@@ -1,0 +1,65 @@
+{
+  "real_cli_cases": [
+    {
+      "case": "baseline",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-need-for-greed/replications/need_for_greed_2024/run_native.py",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/need-for-greed.zip",
+        "altruisticHalfLookaheadBinary238165197779399277.config",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-runner-3600-qualified-001/baseline",
+        "--seconds",
+        "3600"
+      ],
+      "exit_code": 0
+    },
+    {
+      "case": "sweep",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-need-for-greed/replications/need_for_greed_2024/run_native.py",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/need-for-greed.zip",
+        "0.0-benthamHalfLookaheadBinary238165197779399277.config",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-runner-3600-qualified-001/sweep",
+        "--seconds",
+        "30"
+      ],
+      "exit_code": 0
+    },
+    {
+      "case": "timeout",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-need-for-greed/replications/need_for_greed_2024/run_native.py",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/need-for-greed.zip",
+        "benthamHalfLookaheadBinary238165197779399277.config",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-runner-3600-qualified-001/timeout",
+        "--seconds",
+        "1"
+      ],
+      "exit_code": 124
+    },
+    {
+      "case": "duplicate_output",
+      "command": [
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-need-for-greed/replications/need_for_greed_2024/run_native.py",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/papers/need-for-greed.zip",
+        "altruisticHalfLookaheadBinary238165197779399277.config",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-runner-3600-qualified-001/baseline",
+        "--seconds",
+        "30"
+      ],
+      "exit_code": 1
+    }
+  ],
+  "runner_sha256": "23145a3ce24ad97b629bf7c68cdbdef12b3e5a0bfdaffcc09e69fcdc238a2b07",
+  "baseline_sweep_and_prior_hash_equal": true,
+  "duplicate_directory_unchanged": true,
+  "timeout_preserves_receipt_without_success": true,
+  "scope": "End-to-end native process verification with real deposited full-horizon configurations. No mocks or shortened timestep settings. Does not qualify every interpreter, long-run outcome, or paper result."
+}

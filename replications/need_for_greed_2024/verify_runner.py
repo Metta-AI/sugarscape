@@ -17,7 +17,7 @@ base = [
 ]
 receipts = []
 for name, entry, seconds, expected_code in [
-    ("baseline", "altruisticHalfLookaheadBinary238165197779399277.config", 30, 0),
+    ("baseline", "altruisticHalfLookaheadBinary238165197779399277.config", 3600, 0),
     ("sweep", "0.0-benthamHalfLookaheadBinary238165197779399277.config", 30, 0),
     ("timeout", "benthamHalfLookaheadBinary238165197779399277.config", 1, 124),
 ]:

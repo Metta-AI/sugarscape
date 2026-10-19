@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The 293-input recovery is running with informed bounds](results/baseline-informed-recovery-launch-2026-10-19). Native inputs have a 3,600-second limit, covering retained runtimes with margin. The separately bounded batch has a $5.40 ceiling and excludes all audited inputs; full hashes and the earlier failed prefix remain required.
+
 [The bounded baseline batch is terminal and fully reconciled](results/baseline-terminal-reconciled-2026-10-19): 40 successful trajectories and one preserved timeout. Deduplicating the earlier prefix adds 18 inputs and 56,307 observations. Its 293 unfinished original inputs are frozen for separately bounded recovery.
 
 [The baseline timeout was foreseeable from retained timings](results/baseline-timeout-diagnosis-2026-10-19): the failed input previously took 2,095 seconds against the recovery limit of 1,800. Six assigned inputs had prior runtimes above that limit. Its 4,399 complete partial records are preserved without result credit.

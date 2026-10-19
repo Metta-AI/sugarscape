@@ -38,7 +38,7 @@ def main():
     parser.add_argument("--seconds", type=int, required=True)
     parser.add_argument("--interpreter", type=Path, default=Path(sys.executable))
     args = parser.parse_args()
-    assert 1 <= args.seconds <= 1800
+    assert 1 <= args.seconds <= 3600
     assert not args.output.exists()
     engine = args.engine.resolve()
     interpreter = args.interpreter.resolve(strict=True)
