@@ -196,3 +196,7 @@ No earlier experiment snapshot was recovered from this catalog; other historical
 [Two bounded Wayback CDX prefix queries](results/earlier-package-index-search-2026-10-19) returned HTTP200 with no capture rows for the author’s former Mac download directory or Java.net project.
 This extends the earlier exact-URL availability checks; it does not establish absence from other archives or URLs.
 The unresolved artifact is the paper-era Sugarscape model source. MASON10 itself has already been recovered and tested above.
+
+## Original bundled bytecode comparison
+
+[All nine original-binary runs](results/bundled-binary-parity-2026-10-19) match the historical source rebuild byte-for-byte, including all 3,006 population-observer states. Class-loading logs verify original model, scheduler and random-generator bytecode; only the two replay wrappers are compiled. Both reproduction cases retain 989 accounting disagreements. This rules out modern recompilation as their cause in these checks, but does not authenticate the paper-era model or historical JVM.

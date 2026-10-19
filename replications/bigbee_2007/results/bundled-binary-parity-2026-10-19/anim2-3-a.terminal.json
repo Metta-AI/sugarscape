@@ -1,0 +1,17 @@
+{
+  "configuration": "anim2-3",
+  "repeat": "a",
+  "command": [
+    "/opt/homebrew/opt/openjdk@11/bin/java",
+    "-Djava.awt.headless=true",
+    "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/anim2-3-a.classes.log",
+    "-cp",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+    "Replay",
+    "conf/anim2-3.conf",
+    "0",
+    "1000"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.34393608302343637
+}
