@@ -1,0 +1,136 @@
+{
+  "records": [
+    {
+      "pairing": "rule-m-ec",
+      "ec_combat_mean": 20706.08,
+      "rule_m_combat_mean": 16579.96,
+      "ec_minus_rule_m_mean": 4126.12,
+      "relative_difference_percent_of_rule_m": 24.88618790395152,
+      "paper_endpoint_records": [
+        {
+          "figure": 6,
+          "metric": "combat-agent-a-die",
+          "group_A": "Rule M",
+          "group_B": "EC",
+          "breed": "A",
+          "panel_sha256": "a94320a3481b6a57d5d42e3955e382a7a2a862bfe45c49513506f1e7ab5e88e4",
+          "column": 302,
+          "visible_pixel_rows": [
+            55,
+            56
+          ],
+          "status": "visible-raster-interval-not-statistical-confidence",
+          "metric_interval": [
+            15068.922239342417,
+            19090.702849231486
+          ],
+          "approximate_tick_interval": [
+            19929.824561403508,
+            20000
+          ],
+          "cohort_mean_range_over_tick_interval": [
+            16530.864210526313,
+            16579.959999999995
+          ],
+          "signed_range_separation": 0
+        },
+        {
+          "figure": 6,
+          "metric": "combat-agent-b-die",
+          "group_A": "Rule M",
+          "group_B": "EC",
+          "breed": "B",
+          "panel_sha256": "a94320a3481b6a57d5d42e3955e382a7a2a862bfe45c49513506f1e7ab5e88e4",
+          "column": 302,
+          "visible_pixel_rows": [
+            52,
+            53
+          ],
+          "status": "visible-raster-interval-not-statistical-confidence",
+          "metric_interval": [
+            19090.702849231486,
+            24185.866081790828
+          ],
+          "approximate_tick_interval": [
+            19929.824561403508,
+            20000
+          ],
+          "cohort_mean_range_over_tick_interval": [
+            20636.76561403509,
+            20706.079999999994
+          ],
+          "signed_range_separation": 0
+        }
+      ]
+    },
+    {
+      "pairing": "ec-rule-m",
+      "ec_combat_mean": 20516.18,
+      "rule_m_combat_mean": 16115.22,
+      "ec_minus_rule_m_mean": 4400.96,
+      "relative_difference_percent_of_rule_m": 27.3093386252251,
+      "paper_endpoint_records": [
+        {
+          "figure": 6,
+          "metric": "combat-agent-a-die",
+          "group_A": "EC",
+          "group_B": "Rule M",
+          "breed": "A",
+          "panel_sha256": "12fc63b5c83ab3b834d4ec0fc85a8eba9be3c9a57efd8c839ff8cedb13299012",
+          "column": 302,
+          "visible_pixel_rows": [
+            52,
+            53
+          ],
+          "status": "visible-raster-interval-not-statistical-confidence",
+          "metric_interval": [
+            19090.702849231486,
+            24185.866081790828
+          ],
+          "approximate_tick_interval": [
+            19926.19926199262,
+            20000
+          ],
+          "cohort_mean_range_over_tick_interval": [
+            20446.215276752766,
+            20516.18
+          ],
+          "signed_range_separation": 0
+        },
+        {
+          "figure": 6,
+          "metric": "combat-agent-b-die",
+          "group_A": "EC",
+          "group_B": "Rule M",
+          "breed": "B",
+          "panel_sha256": "12fc63b5c83ab3b834d4ec0fc85a8eba9be3c9a57efd8c839ff8cedb13299012",
+          "column": 302,
+          "visible_pixel_rows": [
+            55,
+            56
+          ],
+          "status": "visible-raster-interval-not-statistical-confidence",
+          "metric_interval": [
+            15068.922239342417,
+            19090.702849231486
+          ],
+          "approximate_tick_interval": [
+            19926.19926199262,
+            20000
+          ],
+          "cohort_mean_range_over_tick_interval": [
+            16066.46339483395,
+            16115.220000000005
+          ],
+          "signed_range_separation": 0
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "/Users/relh/Code/workspace/sugarscape-brearcliffe/replications/brearcliffe_2020/results/rule-m-ec-complete-cohort-2026-10-19/curve-comparison.json.gz": "0f74ded96dd2762638a2570355840b5612782a0636ae2d1012381df45a789990",
+    "/Users/relh/Code/workspace/sugarscape-brearcliffe/replications/brearcliffe_2020/results/ec-rule-m-complete-cohort-2026-10-19/curve-comparison.json.gz": "5e1602481cae7d91116bc872e8415297b127beb0e9e105efd8e42d816b65d401"
+  },
+  "contrasts_sha256": "c22c5767f2677b452c7bbaaaa8cf51753e9c8ac06ceb8ad8f3513951e2186e61",
+  "scope": "The four native endpoint ranges overlap their corresponding corrected Figure6 raster ranges. Relative size provides context for unquantified prose, not a statistical equivalence test or paper-negative verdict."
+}

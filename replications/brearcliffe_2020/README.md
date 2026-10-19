@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[EC claim-level contrasts](results/ec-claim-contrasts-2026-10-19) support all 14 stated endpoint directions across six released-code matchups, with independent R checks. EC has 24.9–27.3% more combat deaths than Rule M; both orientations remain consistent with the paper graphics. The prose supplies no equivalence margin. This adds analysis without simulation or completed-paper credit.
+
 [Rule M claim-level contrasts](results/rule-m-claim-contrasts-2026-10-19) cover all six released-code matchups against learning methods. All 18 Rule M-minus-opponent endpoint differences in wealth, vision, and metabolism are positive; their pointwise bootstrap intervals exclude zero. Independent R checks pass. EC leads in mean wealth early before Rule M overtakes it. This adds analysis, not simulation or completed-paper credit.
 
 [The paper-table Rule M/Q-learning cohort completes all 50 seeds](results/paper-rule-m-q-complete-cohort-2026-10-19). Independent R checks and durable storage readback pass. Eleven readable endpoint mean ranges overlap the paper; the remaining bootstrap interval overlaps. All paired trajectories differ from released-code outputs, leaving historical parameter provenance unresolved. Coverage reaches 852 inputs and 17,040,852 observations.
