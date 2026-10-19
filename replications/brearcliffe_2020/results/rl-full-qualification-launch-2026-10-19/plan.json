@@ -1,0 +1,22 @@
+{
+  "methods": [
+    "Rule M",
+    "EC",
+    "Q-Learning",
+    "SARSA"
+  ],
+  "pairings": [
+    [
+      "Q-Learning",
+      "SARSA"
+    ]
+  ],
+  "steps": 20000,
+  "seed": 20261019,
+  "per_run_timeout_seconds": 600,
+  "overall_timeout_seconds": 1200,
+  "heap": "1g",
+  "maximum_bytes": 104857600,
+  "minimum_free_bytes": 2147483648,
+  "scope": "Full-horizon Q-Learning/SARSA native recorder qualification and local timing; prospective seed20261019, released-code parameters. Not ensemble or paper replication."
+}

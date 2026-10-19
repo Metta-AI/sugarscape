@@ -38,6 +38,9 @@ The external bounded launcher and exact command are retained in the launch recor
 
 The [all-pairing qualification](results/all-pairings-launch-2026-10-19) is now running for 1,000 ticks per pairing with fixed bounds. Full paper ensembles have not started.
 
+The [full learning-method comparison](results/rl-full-qualification-launch-2026-10-19) now runs Q-Learning versus SARSA for 20,000 ticks.
+The [frozen ensemble preparation](results/ensemble-preparation-2026-10-19) defines 800 runs for each parameter interpretation, with matched prospective seeds. Both preparations reproduce identical bytes; execution has not started.
+
 ## Remaining work
 
 Qualify the remaining method pairings and estimate their runtime before the full 800-run ensemble. The measured Rule M/EC pairing projects to about 49 CPU-hours for 800 runs; this is not a measured full-sweep estimate.
