@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[Q-learning/Q-learning completes all 50 seeds](results/q-q-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Eleven of sixteen released-code cohorts are complete. Coverage is 553 inputs and 11,060,553 observations. All eight readable endpoint ranges overlap the paper; six endpoints remain unresolved. [Durable readback](results/q-q-durable-evidence-2026-10-19) verifies all 502 new archive members.
+
 [Q-learning/EC completes all 50 seeds](results/q-ec-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Ten of sixteen released-code pairings now have complete cohorts. Coverage is 500 released-code plus three paper-table inputs, totaling 10,060,503 observations. Ten of fourteen endpoint mean ranges overlap paper ink; all four remaining endpoints overlap their pointwise bootstrap intervals. This does not establish equivalence.
 
 [Q-learning/Rule M completes all 50 seeds](results/q-rule-m-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Thirteen of fourteen endpoint mean ranges overlap paper ink; the remaining endpoint overlaps its pointwise bootstrap interval. This does not establish equivalence.
