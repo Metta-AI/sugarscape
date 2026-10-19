@@ -473,3 +473,9 @@ This completes execution of the declared long ensembles, not the paper replicati
 Two metabolism-three parity checks preserve the original engine outputs exactly; all 101,000 new cycles pass independent resource/population checks.
 Original vectors provide 995 actual-curve comparisons, separating the visible 200-cycle axes from exported vertices through 505.
 The unknown author seed, phase and fitting procedure prevent an exact-trajectory claim; pointwise seed bands are descriptive and no paper-completion credit is assigned.
+
+## Later birth-cost sampling window
+
+[The original 100-seed ensemble is being extended to 150,000 cycles](results/late-birth-cost-launch-2026-10-19), preserving rules and verifying every existing prefix.
+The first two complete runs match 2,002 shared observations exactly. Full analysis rejects incomplete ensembles.
+This tests the earlier author's 130,000–150,000 window as a declared sensitivity; it does not identify the target paper's sampling protocol.
