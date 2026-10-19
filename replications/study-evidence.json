@@ -58,14 +58,14 @@
     {
       "study": "bigbee_2007",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/7",
-      "checked_commit": "8aaa93e67823830b6133dbbaef9d330717047a17",
+      "checked_commit": "82d9ba85dd36090593f0b4d23718ef8b54231ce9",
       "status": "partial",
       "readme": "replications/bigbee_2007/README.md",
-      "readme_sha256": "fcb81ae2525883ca916864f2183e2d1166312363c29f0e5a2ab2f1ca0236692c",
-      "json_evidence_files": 30,
-      "remaining_scope": "Original MASON10/1.1.2 reproduction fails population accounting from time13. Official GoogleCode catalog confirms recovered1.1.2 checksum and lists only1.1.2/1.1.3. Historical paper revision/protocol alignment remains unresolved; corrected17-scenario behavior is not historical replication. December2008 author-page capture corroborates release1.1.2/MASON12 pairing and displays Nov25,2007 release date. Earlier1/1.1.1 download links recovered, but exact-URL archive availability yielded no package snapshots. Paper-specific MASON10 source remains unidentified. Official archived source working copy now audited: revision24, 2011 metadata, MASON16 news. Trunk and branch core files identical; agent/reproduction match1.1.2 after newline normalization. This snapshot is not full SVN history and does not establish the historical model revision. Two additional WaybackCDX prefix searches (former Mac download directory and Java.net project) returnHTTP200 with zero capture rows. Bounded index results do not prove source absence elsewhere. Paper-era Sugarscape model source remains unresolved; MASON10 framework was already recovered and executed, not missing.",
-      "gzip_json_evidence_files": 3,
-      "checked_at": "2026-10-19T10:56:07.170043+00:00"
+      "readme_sha256": "4ff074f196077b17669bc2a00927d02993efdb04eccec4ee1893ed8d09ea086e",
+      "json_evidence_files": 44,
+      "remaining_scope": "Original MASON10/1.1.2 reproduction fails population accounting from time13. Official GoogleCode catalog confirms recovered1.1.2 checksum and lists only1.1.2/1.1.3. Historical paper revision/protocol alignment remains unresolved; corrected17-scenario behavior is not historical replication. December2008 author-page capture corroborates release1.1.2/MASON12 pairing and displays Nov25,2007 release date. Earlier1/1.1.1 download links recovered, but exact-URL archive availability yielded no package snapshots. Paper-specific MASON10 source remains unidentified. Official archived source working copy now audited: revision24, 2011 metadata, MASON16 news. Trunk and branch core files identical; agent/reproduction match1.1.2 after newline normalization. This snapshot is not full SVN history and does not establish the historical model revision. Two additional WaybackCDX prefix searches (former Mac download directory and Java.net project) returnHTTP200 with zero capture rows. Bounded index results do not prove source absence elsewhere. Paper-era Sugarscape model source remains unresolved; MASON10 framework was already recovered and executed, not missing. Original1.1.2 bundled-binary control now runs9processes across3seedzero configurations at1000scheduledtime. All native outputs and3006observer states exactly match prior source rebuild. All387originalclass hashes verified(36model), only2wrapperscompiled with empty sourcepath; JVM logs show originalmodel/scheduler/RNGorigins. Bothreproductioncasesretain989/1002accountingdisagreements; replacement0. Modernrecompilationdoesnotexplainthesechecks. SameJava11runtime, historicalJVMandpaperMASON10modelgapremain. Initialequivalent-file-URIstringassertioncorrectedbyparsedpathcomparison;failurepreserved,nooutputchanged. Repeatwholeauditbyteexact;no completed-paper credit.",
+      "gzip_json_evidence_files": 4,
+      "checked_at": "2026-10-19T18:09:30.876410+00:00"
     },
     {
       "study": "stevenson_2021",
