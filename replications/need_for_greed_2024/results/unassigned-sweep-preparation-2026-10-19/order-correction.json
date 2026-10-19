@@ -1,0 +1,5 @@
+{
+  "failure": "First byte comparison failed because three added qualification-bound keys had different JSON insertion order.",
+  "semantic_values_exact": true,
+  "correction": "Use generator key order; retain initial representation. No batch, bound, or input changed."
+}

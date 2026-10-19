@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The 9,597 unassigned sweep inputs are frozen into 19 disjoint batches](results/unassigned-sweep-preparation-2026-10-19), excluding the complete existing assignment. The proposed $175 cap covers bounded CPU execution; no additional compute is launched by this preparation.
+
 [The fifth baseline checkpoint deduplicates the five utilitarian inputs](results/baseline-second-recovery-fifth-prefix-2026-10-19); together with [the fifth Table IV checkpoint](results/table4-fifth-prefix-2026-10-19), it adds 45 unique inputs and 133,316 observations. Coverage reaches 462 inputs and 1,841,674 observations.
 
 [Table III reproduces exactly across all 100 original utilitarian inputs](results/table3-complete-2026-10-19): 0% extinct, 0% worse, and 100% better. Independent R confirms the census. Five recovered inputs bring total coverage to 417 inputs and 1,708,358 observations; the full paper remains incomplete.
