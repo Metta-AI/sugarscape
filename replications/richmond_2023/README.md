@@ -1,5 +1,7 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+[Stated-method controls are prepared](results/method-controls-prepared-2026-10-19) for state transfer, cardinal movement and nonpositive-wealth death. All five source variants reproduce byte-for-byte and pass patch reversal. They remain uncompiled and unexecuted; the historical replay is unchanged.
+
 Status: **incomplete; full native grid audited, model fidelity under investigation**.
 No completed-study credit. This study adds to the existing replication program.
 [Complete native benchmark](results/full-native-complete-2026-10-18): **84/84 conditions**; all **6,600 population records** and **162 resolution rows** match the author archive exactly.

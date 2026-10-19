@@ -1,0 +1,11 @@
+--- a/src/main.cu
++++ b/src/main.cu
+@@ -162,6 +162,8 @@
+                 float message_priority = FLAMEGPU->random.uniform<float>();
+                 if (message_priority > best_request_priority) {
+                     best_request_id = current_message.getVariable<int>("agent_id");
++                    best_request_sugar_level = current_message.getVariable<int>("sugar_level");
++                    best_request_metabolism = current_message.getVariable<int>("metabolism");
+                     best_request_priority = message_priority;
+                 }
+             }
