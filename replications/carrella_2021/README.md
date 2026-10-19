@@ -1214,3 +1214,12 @@ Launch adds no completed-paper credit.
 The ensemble audit now uses the protocol's contiguous seed interval and declared run counts, with exact parameter-row alignment.
 [Fresh archived-cohort replay](results/seed-interval-audit-validation-2026-10-19) reproduces all three original audit files byte-for-byte for 128 runs and 64,128 observations.
 The real unfinished extension is rejected before creating output. Its complete nonzero-interval path remains unvalidated until the run finishes.
+
+### Predeclared cohort analysis qualified on retained evidence
+
+`compare_seed_cohorts.py PROTOCOL RUNS_CSV NEW_OUTPUT` checks every declared seed before computing six distribution comparisons and both specified rare-event counts.
+[Qualification on the exploratory cohort](results/prospective-analysis-qualification-2026-10-19) reproduces every prior comparison metric exactly.
+Both rare-event tables contain one native occurrence and zero independent occurrences; exact two-sided Fisher calculations match R at p=1.
+Those thresholds were chosen after the exploratory runs and supply no confirmatory result for that cohort.
+The tool rejects pairing the new 512-seed protocol with the old 64-seed data before creating output.
+Use only the complete independently audited new cohort for its prospective analysis; its result remains pending.
