@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T20:32:37.246421+00:00",
+  "as_of": "2026-10-19T20:39:15.417823+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "82778b036c7e84836cb47b447b7e0be95ddfb4ec",
+      "checked_commit": "8b2b62e31cd9d06b8ac23745a3b3d5723260fdd0",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "fda5f8a225a96509dcdfc9ca723c3d7d092805865d20e8d244d801363e43051c",
-      "json_evidence_files": 342,
+      "readme_sha256": "006ebbf65d0a7d9cb9854d7a61cc9c2e58dbc56d6a094011b5eb25f4bce0e05c",
+      "json_evidence_files": 349,
       "gzip_json_evidence_files": 19,
-      "checked_at": "2026-10-19T20:32:37.246396+00:00",
+      "checked_at": "2026-10-19T20:39:15.417823+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "387uniqueinputs1616323observations audited:182baseline205sweep. Latest25baseline+25TableIV add187129obs without overlap. All100selfishness0.36 and100selfishness0.37 seeds now audited. TableIVbin202/500:3extinct199above250;orderedprefix not representative. Whole-table analyzer reportszero complete rows and suppresses incomplete percentages. Remaining218baseline9895sweep inputs. Former runtime-bound failure recovered exactly; original bounds unchanged. Historical death aggregation and fulltables/figures unresolved; no papercredit."
+      "remaining_scope": "387 unique inputs and 1,616,323 observations audited: 182 baseline, 205 sweep. Complete 0.36 cohort: 100 seeds, 490,477 observations; four median measurements agree graphically under all declared conventions, starvation-plus-combat death rate does not. Independent NumPy verifies 2,400 per-run values, maximum scaled error 3.57e-16. Same median pattern as complete 0.37; historical aggregation unresolved. Table IV bin 202/500, no full-row percentages. Remaining 218 baseline and 9,895 sweep inputs, full tables and figures; no completed-paper credit."
     }
   ],
   "study_prs": 22,
