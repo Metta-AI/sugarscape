@@ -16,15 +16,30 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("initial", type=Path)
 parser.add_argument("states", type=Path)
 parser.add_argument("output", type=Path)
+parser.add_argument(
+    "--variant",
+    choices=[
+        "released",
+        "transfer",
+        "cardinal",
+        "nonpositive_death",
+        "combined_three_rules",
+    ],
+    default="released",
+)
 args = parser.parse_args()
 assert (
     hashlib.sha256(args.initial.read_bytes()).hexdigest()
     == "360ea5866567d826e971e5eef54f6d1ed881b6d421b2664d95310114c4c6611d"
 )
-assert (
-    hashlib.sha256(args.states.read_bytes()).hexdigest()
-    == "4abcce3274d363fd0d0fb648a003cc117b03cc9a917cb095f1153743bbfdf83a"
-)
+if args.variant == "released":
+    assert (
+        hashlib.sha256(args.states.read_bytes()).hexdigest()
+        == "4abcce3274d363fd0d0fb648a003cc117b03cc9a917cb095f1153743bbfdf83a"
+    )
+transfer = args.variant in {"transfer", "combined_three_rules"}
+cardinal = args.variant in {"cardinal", "combined_three_rules"}
+nonpositive_death = args.variant in {"nonpositive_death", "combined_three_rules"}
 with args.initial.open() as stream:
     cells = {
         (int(r["x"]), int(r["y"])): {k: int(v) for k, v in r.items()}
@@ -48,15 +63,20 @@ with args.states.open() as stream:
         assert step == len(reports)
         occupied = {(r["x"], r["y"]) for r in previous.values()}
         wealth = {}
+        dead = set()
         for identifier, r in previous.items():
             pos = r["x"], r["y"]
             wealth[identifier] = r["sugar"] + max(sugar[pos], 0) - r["metabolism"]
             if sugar[pos] > 0:
                 sugar[pos] = -1
-            if wealth[identifier] == 0:
+            if (
+                wealth[identifier] <= 0
+                if nonpositive_death
+                else wealth[identifier] == 0
+            ):
+                dead.add(identifier)
                 occupied.remove(pos)
                 sugar[pos] = 0
-        dead = {i for i, w in wealth.items() if w == 0}
         assert set(current) == set(previous) - dead
         for pos in sugar:
             if pos not in occupied:
@@ -72,9 +92,13 @@ with args.states.open() as stream:
             old = previous[i]
             if i in moved:
                 dx, dy = abs(r["x"] - old["x"]), abs(r["y"] - old["y"])
-                assert max(min(dx, 256 - dx), min(dy, 256 - dy)) == 1
-                assert r["metabolism"] == -1 and r["status"] == 1
-                assert r["sugar"] == (0 if pos in sources else sugar[pos]) - 1
+                dx, dy = min(dx, 256 - dx), min(dy, 256 - dy)
+                assert (dx + dy if cardinal else max(dx, dy)) == 1
+                assert r["status"] == 1
+                assert r["metabolism"] == (old["metabolism"] if transfer else -1)
+                assert r["sugar"] == (0 if pos in sources else sugar[pos]) + (
+                    wealth[i] if transfer else -1
+                )
                 assert pos not in occupied or pos in sources
             else:
                 assert r["metabolism"] == old["metabolism"]
@@ -97,7 +121,7 @@ with args.states.open() as stream:
                     for i in moved
                 ),
                 "negative_wealth_after_metabolism_survivors": sum(
-                    w < 0 for w in wealth.values()
+                    wealth[i] < 0 for i in current
                 ),
                 "unresolved": sum(r["status"] == 3 for r in rows),
             }

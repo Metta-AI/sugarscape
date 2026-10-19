@@ -1,5 +1,8 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+The [native method controls](results/method-controls-native-launch-2026-10-19/README.md) are running under an $8 cap.
+Their auditor preserves the historical released-state report exactly; modified-state validation remains pending.
+
 [Stated-method controls are prepared](results/method-controls-prepared-2026-10-19) for state transfer, cardinal movement and nonpositive-wealth death. All five source variants reproduce byte-for-byte and pass patch reversal. They remain uncompiled and unexecuted; the historical replay is unchanged.
 
 Status: **incomplete; full native grid audited, model fidelity under investigation**.
