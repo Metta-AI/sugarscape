@@ -1,6 +1,8 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
-[Rule M/Rule M recovery is complete](results/rule-m-rule-m-complete-cohort-2026-10-19): all 50 seeds pass full-trajectory audit and independent R verification. All nine visible endpoint comparisons overlap published raster ranges; five remain occluded. Together with [Rule M/EC](results/rule-m-ec-complete-cohort-2026-10-19), two of sixteen pairings now have complete cohorts. Total audited coverage is 100 released-code plus two paper-table inputs, totaling 2,040,102 observations.
+[Rule M/Q-learning now completes all 50 seeds](results/rule-m-q-complete-cohort-2026-10-19), with full-trajectory audit and independent R verification. Together with Rule M/Rule M and Rule M/EC, three of sixteen released-code pairings have complete cohorts. Total audited coverage is 150 released-code plus two paper-table inputs, totaling 3,040,152 observations.
+
+Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical to the Rule M/Rule M panel. Both curves are excluded from agreement judgments. Eleven of twelve remaining endpoint range comparisons overlap the paper raster intervals; this is not equivalence or a negative replication.
 
 [Both cloud-host qualification cases now pass](results/existing-host-qualified-ensemble-launch-2026-10-19): 640,032 values and both complete trajectory byte sequences match the local references. The 749 reserved released-code inputs are running with eight workers under an 11.5-hour simulation bound and a $9.12 execution/export/idle ceiling. Launch adds no completed-study credit.
 

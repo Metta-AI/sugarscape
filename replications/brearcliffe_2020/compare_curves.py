@@ -33,6 +33,14 @@ metrics = {
     8: ['mean [age] of group-A', 'mean [age] of group-B'],
     9: ['max [age] of group-A', 'max [age] of group-B'],
 }
+exclusion_path = Path(__file__).with_name('paper-target-exclusions.json')
+exclusions = json.loads(exclusion_path.read_text())
+inventory = json.loads(Path(__file__).with_name('figure-panel-inventory.json').read_text())
+assert exclusions['paper_sha256'] == inventory['paper_sha256']
+for exclusion in exclusions['panels']:
+    panels = next(f['panels'] for f in inventory['figures'] if f['figure'] == exclusion['figure'])
+    assert sum(p['sha256'] == exclusion['panel_sha256'] and p['group_A'] == exclusion['group_A']
+               and p['group_B'] == exclusion['group_B'] for p in panels) == 1
 comparisons = []
 for figure in curves['figures']:
     records = [r for r in figure['records'] if
@@ -41,7 +49,14 @@ for figure in curves['figures']:
     for record in records:
         field = metrics[figure['figure']][['A', 'B'].index(record['breed'])]
         item = {'figure': figure['figure'], 'metric': field, **record}
-        if 'metric_interval' in record:
+        excluded = [e for e in exclusions['panels'] if e['figure'] == figure['figure']
+                    and e['panel_sha256'] == record['panel_sha256']]
+        assert len(excluded) <= 1
+        if excluded:
+            item['raster_status'] = item['status']
+            item['status'] = excluded[0]['status']
+            item['target_exclusion_reason'] = excluded[0]['reason']
+        elif 'metric_interval' in record:
             lo, hi = record['approximate_tick_interval']
             assert 0 <= lo <= hi <= 20000
             values = [float(means[t][field]) for t in range(math.ceil(lo), math.floor(hi) + 1)]
@@ -63,6 +78,7 @@ report = {'group_A': summary['group_A'], 'group_B': summary['group_B'],
           'interpretation': summary['interpretation'], 'runs': 50,
           'summary_sha256': hashlib.sha256(summary_path.read_bytes()).hexdigest(),
           'means_sha256': hashlib.sha256((args.cohort / 'means.csv').read_bytes()).hexdigest(),
+          'paper_target_exclusions_sha256': hashlib.sha256(exclusion_path.read_bytes()).hexdigest(),
           'curves_sha256': hashlib.sha256(encoded).hexdigest(),
           'records': comparisons,
           'limits': ['Descriptive range separation only; zero does not establish equivalence.',
