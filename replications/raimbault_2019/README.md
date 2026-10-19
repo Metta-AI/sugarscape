@@ -2,7 +2,7 @@
 
 Paper: [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html).
 Scope: Sugarscape results; Schelling experiments are excluded.
-Status: **24/24 Table 4 values reproduced from archived data; fixed-reference and generated-landscape ensembles remain unfinished**.
+Status: **24/24 Table 4 values reproduced from archived data; all55,000 fixed-reference inputs replayed; generated-landscape ensemble remains unfinished**.
 This is not yet a completed paper replication.
 
 ## Sources and exact reanalysis
@@ -744,3 +744,29 @@ The earlier dependency-launch failure remains retained separately.
 The terminal archive is exported and verified, and the dedicated node is
 confirmed stopped with its disk intact. Full generated-ensemble and spatial
 sensitivity work remain required; no completed-paper credit is added.
+
+## Gini acceleration qualification: no production change
+
+[A bounded local experiment](results/gini-acceleration-qualification-2026-10-19)
+tests replacing only the interpreted inequality loop with a strict floating-point Java extension.
+The original `[sugar] of turtles` expression still consumes random draws; sorted summation,
+arithmetic order, Lorenz points and every historical Gini value are preserved.
+The original production model is unchanged.
+
+Two frozen generated inputs, populations10 and510, ran10,000 steps each in baseline/optimized/optimized/baseline order.
+All eight executions succeeded after restoring the pinned Commons Math dependency.
+All60,000 history-value comparisons are exact, as are the exported random state and all world rows except export timestamps.
+The24 original archived measurements also pass: Gini is exact and morphology respects the previously declared1e-12 tolerance.
+Every archive member passes byte verification, and fresh extraction reproduces the audit byte-for-byte.
+Preparation, compile-classpath and missing-dependency failures remain preserved.
+
+| Population | Baseline seconds | Optimized seconds | Mean baseline / optimized |
+| --- | --- | --- | --- |
+|10|3.0982,3.0749|3.0364,3.1754|0.9938|
+|510|18.6044,18.5998|17.5411,18.3178|1.0375|
+
+These are simulation-only times from two repeats on a shared local machine.
+They do not establish a statistically reliable speedup or justify extrapolating a cheaper full grid.
+The experiment supplies exact-state qualification for these two inputs only; production retains the author implementation and existing cost estimate.
+The archive includes the experimental extension, paired source variants, launcher, outputs, failure records and independent auditor.
+Shared runtime jars remain external, with dependency provenance in the receipt.
