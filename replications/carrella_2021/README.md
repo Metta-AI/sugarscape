@@ -5,6 +5,8 @@ Scope: Sugarscape case study only; conclusions across all 41 models are outside 
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
 The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10-19) validates 1,280 runs and 641,280 observations. None of the 30 predeclared comparisons rejects after Holm correction. Archive readback, repeated aggregation, and independent R checks pass. This does not establish stochastic equivalence or resolve the historical estimator discrepancies.
 
+[The discrepancy-control reconciliation](results/discrepancy-control-reconciliation-2026-10-19) verifies all 90 table cells and joins 13 discrepant scores to existing same-size controls. Three fall within observed seed ranges and one matches an alternative parser run; neither changes primary results or establishes historical fidelity.
+
 **Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.
