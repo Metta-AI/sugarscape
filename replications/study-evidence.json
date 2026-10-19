@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T20:44:57.677796+00:00",
+  "as_of": "2026-10-19T20:49:55.404946+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -277,15 +277,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "464e02f860be1f3c21d648060823b256dad9161d",
+      "checked_commit": "5e395a0b3ceaf2d615aea126e25c485fd8f920ea",
       "status": "running",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "7c56e50a52c870c7cfef5f86e9594da9cca189a267ff199c9a7808182ffa3771",
-      "json_evidence_files": 404,
-      "gzip_json_evidence_files": 20,
-      "checked_at": "2026-10-19T20:32:36.888629+00:00",
+      "readme_sha256": "777caa73e585f1676d03db78de1226d8f203d0bc25c6c5abd9422843e0193cc0",
+      "json_evidence_files": 418,
+      "gzip_json_evidence_files": 21,
+      "checked_at": "2026-10-19T20:49:55.404946+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "702inputs14040702observations fully audited:650released52paper-table. Thirteen released50-seed cohorts and onepaper-table cohort complete. SARSA/RuleM adds1000050obs,independentR320016means/SD14endpoints20000bootstrap checks pass;14/14endpointmean ranges overlap paper,descriptive not equivalence. Freshstorage readback502members,manifest8cd5a8c16933340b7e82a15224d9eb18def13efa036cbc6d4c9368a7702db6cc links prior652. Remaining150released748paper inputs uncredited. Both original bounded producers continue. Historical parameters/seeds and fullfigure synthesis unresolved."
+      "remaining_scope": "752 inputs and 15,040,752 observations audited: 650 released-code, 102 paper-table. Thirteen released and two paper-table cohorts complete. Paper-table Rule M/EC adds 50 inputs, all full trajectories byte-identical to paired released controls. Independent R checks 320016 means/SD and 14 endpoints with 20000 bootstrap draws. Twelve endpoint mean ranges overlap paper; both remaining pointwise intervals overlap, not equivalence. Fresh durable readback verifies 502 members, manifest 8956c01195ac4f3d69285797927f0b27d4d6adf69a8175de49b165b8e5ff82eb. Remaining 150 released and 698 paper-table inputs; historical settings, full figure synthesis and whole-paper verdict unresolved."
     },
     {
       "study": "need_for_greed_2024",
