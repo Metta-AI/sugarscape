@@ -1133,3 +1133,7 @@ The remaining 22 seeds are required before condition aggregation; paper completi
 ## Heterogeneous runtime qualification
 
 [Three paired original controls](results/heterogeneous-runtime-launch-2026-10-19) now run under pinned CPython and PyPy at unchanged 5,000-step horizons. The 121-minute platform limit and recorded rate bound compute plus idle to $1.632. All trajectory audits and byte-identical pair checks must pass before extending runtime qualification to heterogeneous sweeps. Launch adds no unique-input or paper-completion credit.
+
+## Heterogeneous runtime qualification complete
+
+[All three CPython/PyPy pairs](results/heterogeneous-runtime-complete-2026-10-19) pass independent audits for 30,006 observations, with byte-identical full trajectories and exact matches to earlier controls. Fresh archive extraction reproduces all six audits. This validates the three selected runtime pairs; full sweeps and paper completion remain outstanding.

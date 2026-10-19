@@ -1,0 +1,38 @@
+{
+  "validated_runs": 6,
+  "validated_pairs": 3,
+  "observations": 30006,
+  "comparisons": [
+    {
+      "entry": "1-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433.config",
+      "byte_identical": true,
+      "trajectory_sha256": "0be99e8b57d11657f01a93bb60bdddbcd79d0f61c6e66735f8af6735dea48c75",
+      "matches_prior_control": true,
+      "observations_per_runtime": 5001,
+      "final_timestep": 5000,
+      "final_population": 1128
+    },
+    {
+      "entry": "50-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433.config",
+      "byte_identical": true,
+      "trajectory_sha256": "513dda7af8b05f36ad3dae2e0309b762b5e981f7f688a46d0ffc4d9b47554086",
+      "matches_prior_control": true,
+      "observations_per_runtime": 5001,
+      "final_timestep": 5000,
+      "final_population": 1376
+    },
+    {
+      "entry": "99-benthamHalfLookaheadBinary-egoisticHalfLookaheadBinary158402133555746433.config",
+      "byte_identical": true,
+      "trajectory_sha256": "fe7ef9a73d3ae3879b30e6735814baebdc70b4f29bfa45d01de19a65234c4b81",
+      "matches_prior_control": true,
+      "observations_per_runtime": 5001,
+      "final_timestep": 5000,
+      "final_population": 1249
+    }
+  ],
+  "all_producer_local_audits_exact": true,
+  "archive_members_verified": 67,
+  "unique_coverage_added": 0,
+  "scope": "Pinned CPython/PyPy fidelity for three full original heterogeneous controls; not all configurations, independent-engine correctness, isolated throughput or paper completion."
+}
