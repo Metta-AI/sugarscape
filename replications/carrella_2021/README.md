@@ -1231,3 +1231,15 @@ Persistent late prices occur in neither engine; final population below 50 occurs
 The maximum empirical-distribution difference across six metrics is 0.060546875, with joint permutation p=0.83465.
 Archive readback reproduces all audits and comparisons exactly; independent R checks reproduce distribution statistics and rare-event calculations.
 This resolves the bounded prospective diagnostic. Stochastic equivalence across parameter space and historical estimator discrepancies remain unresolved; the paper remains incomplete.
+
+## Parameter-space repeated-seed diagnostic
+
+[The frozen ten-setting protocol](results/parameter-cohorts-launch-2026-10-19) selects original parameter rows without consulting outcomes.
+NumPy and an independent scalar implementation agree on the midpoint-first, farthest-point selection.
+Each setting runs 64 seeds through both unchanged engines, retaining all 501 observations: 1,280 planned runs.
+The first native cohort is running; no new completed-cohort credit is claimed.
+
+Each cohort has a 600-second simulation bound; dispatch is sequential and retains failures.
+The plan specifies all six continuous measurements and two rare-event definitions before execution.
+Thirty cohort-level tests receive Holm adjustment; nonsignificance cannot establish stochastic equivalence.
+Historical estimator discrepancies and whole-paper replication remain unresolved.
