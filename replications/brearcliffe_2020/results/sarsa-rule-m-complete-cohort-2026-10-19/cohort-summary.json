@@ -1,0 +1,200 @@
+{
+  "interpretation": "released-code",
+  "pair_index": 12,
+  "group_A": "SARSA",
+  "group_B": "Rule M",
+  "runs": 50,
+  "observations": 1000050,
+  "manifest_sha256": "3633edf2ca2ec1bd59222e15241655c38c7ec0cacffd1948294ed7c69be85c37",
+  "audit_sha256": "4eff09843dcc31511e6d96a9f18b2c6470560af5cc0ff549e6171c66f96a4ca1",
+  "trajectory_sha256": {
+    "released-code-pair-12-repeat-00": "cc8e3edf5b6ee0b3bd839c28301f08a5e1c85694e6cb49780d6504b85add85ed",
+    "released-code-pair-12-repeat-01": "24c3df05181621f1459a3d429385bde3a81c3f73e703196d73734205733e5f37",
+    "released-code-pair-12-repeat-02": "a98450d74419c6f944532c30b38577235f7b5cd7903f92044eb03859d9e194d1",
+    "released-code-pair-12-repeat-03": "06724030b7dad050bd247a89dfa17c38ebead455bd83882072fcd39b4c708e5e",
+    "released-code-pair-12-repeat-04": "eb56d3a5b7a4e4669af4187dd169cd90411a3cb6067bde1254b7726f52e60ad1",
+    "released-code-pair-12-repeat-05": "8460f29608590a595ca573519cbf9c04d768df1f41f65b020c7275303be3ba65",
+    "released-code-pair-12-repeat-06": "e460ba221b2f4bc1554a0c1dc49494a3dbba2fde271bbb407054326b5e480bdd",
+    "released-code-pair-12-repeat-07": "93d312c9968f36451a678ec24be928e61fdb08487b533909f759eccc851258eb",
+    "released-code-pair-12-repeat-08": "0b38c6a926c7ff1c3e64e7c6ac21e0b83aaf61f35f997b6a27be2222ba48cbd8",
+    "released-code-pair-12-repeat-09": "5cbb150d54a24065f6e2b124eea496a6c89caac38bb3152d9b89431be7f7e464",
+    "released-code-pair-12-repeat-10": "7f4414eac454a154bdd346b7fe66b769dea727feb77c1fadc65dc264b4a69ee2",
+    "released-code-pair-12-repeat-11": "edc72c0bfae22d2c1fff78932377a07c0150b52fac949174f4153540f39c842d",
+    "released-code-pair-12-repeat-12": "e608b0f0b4190cd2aa61d0a502e06461a9dda2f786f32f55604a793e0ef05b98",
+    "released-code-pair-12-repeat-13": "2e01c1aa04cdecbf320c816b4f97b5e0adcd75ccb30989a44e0d302e81afe672",
+    "released-code-pair-12-repeat-14": "a4530bda64fc3a13f04fa3258488d08e3473f26ef6b7dd735f2b3205f9d4d589",
+    "released-code-pair-12-repeat-15": "fd5cec0da8b90170e0fc94c18b212ced9026cc6d34acc901976cef41a0a557a5",
+    "released-code-pair-12-repeat-16": "c99b50d74da758cc827629c00b13b8bc96a78160338c46e965b11c6c6e317fbe",
+    "released-code-pair-12-repeat-17": "a35e15f30dc0aadad94a80a44379205ace7898d4c57d9d601df1b63a3aa4afe5",
+    "released-code-pair-12-repeat-18": "777e1b03350321bc26bfc63ce09473acc7ffec47b8fb480fad59a2c4bfe70f70",
+    "released-code-pair-12-repeat-19": "2608c730b01336010837a78b6d56873b88ffd8144df1ec0438f9bcd63181db58",
+    "released-code-pair-12-repeat-20": "2d17996f0194c613513911d39653c9f367ac5230fa2d11907f325ff2a39612fc",
+    "released-code-pair-12-repeat-21": "9bb204cb9a0cfe448a91c70786b69d372838fc998ebb80951dbb2b4b5cd48122",
+    "released-code-pair-12-repeat-22": "5d836880ae4d3f154c768d454de5ec32a9bcad36309f20c30fbec5fdc7f7e06a",
+    "released-code-pair-12-repeat-23": "6468ca96e0db99957119b1018c3cd3db4b6d8d9eabb42f3eb6e2819cebc30dd8",
+    "released-code-pair-12-repeat-24": "b0fe2f29df1b09cb62beba27be23873688d3c33f7bb9892bf118b6753e36e96c",
+    "released-code-pair-12-repeat-25": "c0fb610726707083ab0334310b68e7d05831fdce3a7865543cb90b9b9e7fa92f",
+    "released-code-pair-12-repeat-26": "384fe6545b98373c1fb4fcbafe1cb4a831763864aac8d540b75b507dba110eb9",
+    "released-code-pair-12-repeat-27": "f2d597c8497d0ccaa6d769a5ed2bc1020a6b912131f95d3075f288d0119a4e29",
+    "released-code-pair-12-repeat-28": "43a2feff63d9518ccd65c0650fd5e91ee25cd70f0f7f78c92d2fae2de89f45a7",
+    "released-code-pair-12-repeat-29": "a6790a78945f494cdca5a342dfce67b8180566bef5b141152f44d3b1d5fc71ef",
+    "released-code-pair-12-repeat-30": "6ee32cb92afb7e8a5332450e9d50a04d113966522e1b4a990e0eb7d3f1916c72",
+    "released-code-pair-12-repeat-31": "aae371f9bcddb139088f243f89795b77ff120d57c989c9162eaa1069db700418",
+    "released-code-pair-12-repeat-32": "fa7240c20b953b9a671d79e2085cc5c0a544227838a835e9598c2780c4f2a9a0",
+    "released-code-pair-12-repeat-33": "09fd17aa8720714520e55bf04985ef8f8f620e78667c8b65e62c43e4a39a6220",
+    "released-code-pair-12-repeat-34": "93bdb6fe2287782c2f792e3b9fe7cdb1893c9c451b23e74a5edb963df23ef4aa",
+    "released-code-pair-12-repeat-35": "e961dfe3a549cdd98c0f19419eff6fd08d05c018ce6b279c973a5cb93eef4c63",
+    "released-code-pair-12-repeat-36": "4652cdf3c9dcd2177565c031d4c1290d0b6b01375c0cfdbd52b334c72020f74e",
+    "released-code-pair-12-repeat-37": "5887f881af4253099777d2b3511b6deb1ade7d1ec28832b4479ff1acb8371c9e",
+    "released-code-pair-12-repeat-38": "d4a0ceea44a7e2b89974ef085573c726100e337e687374d9bbddc7c55c0ac797",
+    "released-code-pair-12-repeat-39": "02735bf35c50746196936ea27b3cc2133c5384cee2fe608bfda14232d5fa2170",
+    "released-code-pair-12-repeat-40": "2a7e786c8bf65cc2312091f7e3a82cb824c927d1540ca3ed7b55d4cea46f94fd",
+    "released-code-pair-12-repeat-41": "6486b5bbf7f239acdd8d6be9622159eef8ce780bf5219c97bf25001b4dc79988",
+    "released-code-pair-12-repeat-42": "2f1c4be9eefe577aad33165e253162123e9e3991337a444540ce2237f51b1e43",
+    "released-code-pair-12-repeat-43": "71fb7e59768424c0509c4c858f80e482801380e618a25686930ca870fab60b14",
+    "released-code-pair-12-repeat-44": "bec3e0e00a5289a06f0072ddd20a2acc5114da123d7bcada80ec16b9e1d3933c",
+    "released-code-pair-12-repeat-45": "b4bd2fe32275b1625bc4cfcd5ba816a11910fc8ebf360715de79ee23ae09c5b2",
+    "released-code-pair-12-repeat-46": "fc31a544376aeffd42072f93ecda75e10100720be8391b6b16e260328e74fb8a",
+    "released-code-pair-12-repeat-47": "e1f9e56966eeaae00100eea64e1ca48bdd48160cf6df35533594dca76ae1160d",
+    "released-code-pair-12-repeat-48": "351c71fd78297f91593d95fc6616b4b3965b82ae697fd492235128664ed60d26",
+    "released-code-pair-12-repeat-49": "10cb089cc84f2cfcee87640b0f89ba27eb3d0387755ba64da5dfd6fc66bbd056"
+  },
+  "endpoint_statistics": [
+    {
+      "metric": "mean [sugar] of group-A",
+      "mean": 188.71489999999994,
+      "sample_sd": 8.78909972462412,
+      "pointwise_percentile_interval_95": [
+        186.27183374999998,
+        191.13308625
+      ]
+    },
+    {
+      "metric": "mean [sugar] of group-B",
+      "mean": 396.91219373433586,
+      "sample_sd": 27.566004071894092,
+      "pointwise_percentile_interval_95": [
+        389.2568712343358,
+        404.45385093671683
+      ]
+    },
+    {
+      "metric": "mean [vision] of group-A",
+      "mean": 2.7151500000000004,
+      "sample_sd": 0.08614091741478737,
+      "pointwise_percentile_interval_95": [
+        2.6916,
+        2.7388
+      ]
+    },
+    {
+      "metric": "mean [vision] of group-B",
+      "mean": 3.1497093984962405,
+      "sample_sd": 0.09021162678227641,
+      "pointwise_percentile_interval_95": [
+        3.124868796992481,
+        3.1746593984962406
+      ]
+    },
+    {
+      "metric": "mean [metabolism] of group-A",
+      "mean": 1.0810000000000002,
+      "sample_sd": 0.01827371257923717,
+      "pointwise_percentile_interval_95": [
+        1.0759,
+        1.08595
+      ]
+    },
+    {
+      "metric": "mean [metabolism] of group-B",
+      "mean": 1.3165161654135338,
+      "sample_sd": 0.026691869695248217,
+      "pointwise_percentile_interval_95": [
+        1.3093161654135337,
+        1.3239161654135339
+      ]
+    },
+    {
+      "metric": "combat-agent-a-die",
+      "mean": 11595.960000000001,
+      "sample_sd": 120.41288831960405,
+      "pointwise_percentile_interval_95": [
+        11563.119,
+        11628.9805
+      ]
+    },
+    {
+      "metric": "combat-agent-b-die",
+      "mean": 13733.339999999998,
+      "sample_sd": 107.49914285372562,
+      "pointwise_percentile_interval_95": [
+        13704.0395,
+        13763.02
+      ]
+    },
+    {
+      "metric": "starve-agent-a-die",
+      "mean": 33124.18000000001,
+      "sample_sd": 423.3718243254448,
+      "pointwise_percentile_interval_95": [
+        33010.6395,
+        33240.384999999995
+      ]
+    },
+    {
+      "metric": "starve-agent-b-die",
+      "mean": 22923.219999999998,
+      "sample_sd": 319.68659972043986,
+      "pointwise_percentile_interval_95": [
+        22836.88,
+        23011.6
+      ]
+    },
+    {
+      "metric": "mean [age] of group-A",
+      "mean": 808.2589000000002,
+      "sample_sd": 42.0260280536882,
+      "pointwise_percentile_interval_95": [
+        796.69979625,
+        819.7474625
+      ]
+    },
+    {
+      "metric": "mean [age] of group-B",
+      "mean": 520.7468057644109,
+      "sample_sd": 34.86288329148542,
+      "pointwise_percentile_interval_95": [
+        511.07689937030074,
+        530.2776402882206
+      ]
+    },
+    {
+      "metric": "max [age] of group-A",
+      "mean": 5861.4,
+      "sample_sd": 1169.2216668033693,
+      "pointwise_percentile_interval_95": [
+        5544.219,
+        6186.165999999999
+      ]
+    },
+    {
+      "metric": "max [age] of group-B",
+      "mean": 5088.46,
+      "sample_sd": 1290.2584333760267,
+      "pointwise_percentile_interval_95": [
+        4748.597500000001,
+        5455.982499999999
+      ]
+    }
+  ],
+  "bootstrap": {
+    "seed": 20261019,
+    "repetitions": 20000,
+    "unit": "whole run",
+    "indices_sha256": "736c343242081009918e93112c44bd98937b40192fe08c47ce59b409c1af46f8",
+    "indices_format": "20000 rows of 50 zero-based uint8 run indices, row-major",
+    "quantile": "linear interpolation, type7",
+    "coverage": "pointwise, not simultaneous"
+  },
+  "scope": "Arithmetic run means before logarithmic plotting; no published-result verdict from summary alone."
+}
