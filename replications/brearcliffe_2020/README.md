@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[Q-learning/SARSA completes all 50 seeds](results/q-sarsa-complete-cohort-2026-10-19), with full trajectory audits and independent R checks. Twelve of sixteen released-code cohorts are complete: 603 total audited inputs and 12,060,603 observations. All twelve readable endpoint ranges overlap the paper; two remain unresolved. These descriptive comparisons do not establish equivalence.
+
 [The 797-input paper-table ensemble is running](results/paper-table-ensemble-launch-2026-10-19). Both host-qualification trajectories match exactly across 640,032 fields. The live assignment matches the frozen remainder, with a $9.12 ceiling and no automatic extension. New completed inputs still require independent audits.
 
 [Fresh-host qualification is running for the paper-table remainder](results/paper-host-qualification-launch-2026-10-19). The task-owned eight-CPU worker has a $2 ceiling covering setup, export and idle time. Both full trajectories must match before the 797-input ensemble starts; no new completion credit is claimed.
