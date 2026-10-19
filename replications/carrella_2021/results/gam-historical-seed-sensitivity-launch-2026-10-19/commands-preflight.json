@@ -1,0 +1,11 @@
+{
+  "command": [
+    "autor",
+    "ps",
+    "relh-sugarscape-carrella-r405-cpu2-20261019-v1",
+    "--json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"items\": [\n    {\n      \"command_id\": \"cmd-5jnme\",\n      \"ended_at\": \"2026-10-19T16:45:42.517022+00:00\",\n      \"env\": [],\n      \"exit_code\": 0,\n      \"object\": \"command\",\n      \"started_at\": \"2026-10-19T16:04:28.935544+00:00\",\n      \"state\": \"exited\"\n    }\n  ],\n  \"object\": \"list\"\n}\n",
+  "stderr": ""
+}

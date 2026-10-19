@@ -1,0 +1,17 @@
+{
+  "command": [
+    "autor",
+    "run",
+    "relh-sugarscape-carrella-r405-cpu2-20261019-v1",
+    "--timeout",
+    "60",
+    "--json",
+    "--",
+    "bash",
+    "-c",
+    "cd /root/sugarscape/carrella-gam-historical-seeds-001 && echo \"6f6cfec4b99504da5058d1404036393b683569fcc432f6e9519e338dcf98d740  staged-input/payload.tar.gz\" | sha256sum -c - && tar -xzf staged-input/payload.tar.gz && bash -n run.sh"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"exit_code\": 0,\n  \"stderr\": \"\",\n  \"stdout\": \"staged-input/payload.tar.gz: OK\\n\",\n  \"timing_ms\": {\n    \"exec\": 165\n  },\n  \"truncated\": false\n}\n",
+  "stderr": ""
+}

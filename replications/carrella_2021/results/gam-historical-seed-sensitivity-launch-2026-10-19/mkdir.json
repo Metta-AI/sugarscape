@@ -1,0 +1,16 @@
+{
+  "command": [
+    "autor",
+    "run",
+    "relh-sugarscape-carrella-r405-cpu2-20261019-v1",
+    "--timeout",
+    "60",
+    "--json",
+    "--",
+    "mkdir",
+    "/root/sugarscape/carrella-gam-historical-seeds-001"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"exit_code\": 0,\n  \"stderr\": \"\",\n  \"stdout\": \"\",\n  \"timing_ms\": {\n    \"exec\": 140\n  },\n  \"truncated\": false\n}\n",
+  "stderr": ""
+}
