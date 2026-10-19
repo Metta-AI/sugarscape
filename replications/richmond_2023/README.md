@@ -1,6 +1,6 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
-[Counter-carryover controls](results/counter-reset-native-launch-2026-10-19/README.md) are running under an $8 cap. They preserve the nine-round limit and repeat both historical baselines before interpreting reset effects.
+[Counter-carryover controls passed all four native audits](results/counter-reset-native-complete-2026-10-19/README.md), covering 2,873,995 post-step records. Per-step resets eliminate unresolved agents in all 100 observed steps while preserving the nine-round cap. Both baseline trajectories repeat exactly; broader method qualifications remain.
 
 [All five method controls passed native state audits](results/method-controls-native-complete-2026-10-19/README.md), covering 3,964,000 post-step records. Combined corrections leave 4,613 active agents versus 8,792 in the release. Counter carryover remains unresolved; no whole-paper completion credit.
 
