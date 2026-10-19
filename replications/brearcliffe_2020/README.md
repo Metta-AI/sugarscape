@@ -1,6 +1,6 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
-[EC/Rule M now completes all 50 seeds](results/ec-rule-m-complete-cohort-2026-10-19), with full-trajectory audit and independent R verification. Five of sixteen released-code pairings have complete cohorts. Total audited coverage is 250 released-code plus three paper-table inputs, totaling 5,060,253 observations. Thirteen of fourteen EC/Rule M endpoint ranges overlap the paper raster intervals. The remaining EC vision comparison has a narrowly overlapping bootstrap interval; no whole-paper verdict is established.
+[EC/EC now completes all 50 seeds](results/ec-ec-complete-cohort-2026-10-19), with full-trajectory audit and independent R verification. Six of sixteen released-code pairings have complete cohorts. Total audited coverage is 300 released-code plus three paper-table inputs, totaling 6,060,303 observations. Only two of twelve visible EC/EC endpoint ranges overlap the paper raster intervals; breed mapping, sampling variation, and implementation fidelity require investigation before any negative verdict.
 
 Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical to the Rule M/Rule M panel. Both curves are excluded from agreement judgments. Eleven of twelve remaining endpoint range comparisons overlap the paper raster intervals; this is not equivalence or a negative replication.
 
