@@ -1156,3 +1156,14 @@ This completion-order prefix does not support an unbiased condition aggregate or
 Fresh archive extraction verifies261 members and repeats all25 audits exactly.
 All532 earlier input records remain unchanged; supplementary coverage reaches557/100,000 and the50% condition51/500.
 The producer continues; this completion-order prefix is not an unbiased condition-level sample or a completed-paper result.
+
+### Runtime checkpoint0007 and third heterogeneous50 checkpoint
+
+[Runtime checkpoint0007](results/runtime-second-continuation-third-prefix-2026-10-19) adds six original inputs and51,050 observations after eight overlapping records match exactly.
+Fresh extraction verifies122 members and repeats both complete group audits byte-for-byte.
+Deposited-runtime coverage reaches923/1,200 inputs and3,556,474 observations; the distinct paper timing protocol remains unresolved.
+
+[The third heterogeneous50 checkpoint](results/heterogeneous50-third-prefix-2026-10-19) adds25 inputs and81,806 observations:16 full5,000-step runs and nine native extinctions.
+All261 members verify; repeated audits are byte-identical and all557 earlier records remain unchanged.
+Supplementary coverage reaches582/100,000 and the50% condition76/500.
+Both producers continue; these completion-order prefixes do not establish whole-condition agreement or whole-paper completion.
