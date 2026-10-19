@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[Population quartiles at selfishness 0.36 also distinguish aggregation order](results/selfishness036-population-quartiles-2026-10-19). All 108 per-run comparisons fit the nominal curve envelopes; none of 108 time-pooled comparisons does. Independent R checks pass.
+
 [The complete selfishness-0.36 cohort now has all five median comparisons](results/selfishness036-metrics-2026-10-19). Four measurements agree graphically under every declared convention; the stated death-rate metric does not. Independent arithmetic verifies all 2,400 per-run values across 490,477 observations.
 
 [The third baseline recovery checkpoint](results/baseline-second-recovery-third-prefix-2026-10-19) and [fourth Table IV checkpoint](results/table4-fourth-prefix-2026-10-19) add 50 disjoint audited inputs and 187,129 observations. All 100 selfishness-0.36 inputs are now audited; the five-level row remains incomplete at 202/500.

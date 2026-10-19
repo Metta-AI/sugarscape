@@ -1,0 +1,45 @@
+{
+  "inputs": 100,
+  "observations": 490477,
+  "condition": 0.36,
+  "source_hashes": {
+    "cohort": "9e187b5c6501377655ee153bd55abae6909be812e0d432e38149cddbadaf68c2",
+    "metrics": "28271cbe9994b38b7cf7e00c03c30d126ea3b00825044019da4bd4d5ee9c0f60",
+    "curves": "3d16df6c853ac89ea73e15515491ddb128977bfc4eccf454fa221c9cc491973c"
+  },
+  "summary": {
+    "per_run/": {
+      "comparisons": 108,
+      "within_undashed_stroke_envelope": 108
+    },
+    "pooled_time/": {
+      "comparisons": 108,
+      "within_undashed_stroke_envelope": 0
+    }
+  },
+  "independent_R": {
+    "comparisons": 216,
+    "maximum_quantile_error": 2.2737367544323206e-13,
+    "maximum_distance_error_points": 1.3383113790354367e-14,
+    "quantile_types": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "scope": "Independent R quantiles and scalar segment-distance arithmetic on hash-pinned native-derived vectors; not an independent simulation."
+  },
+  "artifact_sha256": {
+    "analyze.py": "b6bade99d3295b7eab3521be70db9c7e7961b5a1fc841315a8346e4091dce4ff",
+    "verify.R": "571c344556aba6b9be14b027939027207d1dc35d4b447831f34d4f553567d41c",
+    "result/comparison.json": "c2a6fb10e66b7486394d1fbe18aeb321713f2c0a9e2d2f541a3e4c098874c7fc",
+    "result/vectors.json": "516e36e76618961cc5ec864273f6ed994d1f44141308c91d8048cc42d17059bc",
+    "r-validation.json": "699ecda6ec58b24a40f596e09b111e25d8d3f4fda855c0ece510585f6a51da82"
+  },
+  "scope": "Existing complete cohort only. No new simulation coverage or completed-paper claim. Dash gaps ignored: nominal envelope agreement is not statistical equivalence."
+}
