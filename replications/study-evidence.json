@@ -277,15 +277,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "001ee62f6ec7394a4bffd4b7ac07c3a26df1f088",
-      "status": "running",
+      "checked_commit": "2c69be0caae8c9f10a292ca24a8011cfd09359b1",
+      "status": "partial",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "4ae909dbd8302f6644bc4fe7d6a2fd3e8116b13332b929ac4fce2f23436e1d55",
-      "json_evidence_files": 13,
+      "readme_sha256": "4ffb42e0cf43e109ab52655888ae31f0f66cf6c65b651e4009084b426e987189",
+      "json_evidence_files": 15,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-19T09:47:15.026426+00:00",
+      "checked_at": "2026-10-19T09:53:18.120441+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "Author release1.0.0,NetLogo6.1.1,map,ODD,and manuscript recovered. Native full20000-tick Rule M versusEC pilot runs with only recorded seed20261019 substituted;600sec,1GiB Java heap,50MiB bounds. Java11 compilation and native startup pass; terminal/full audit pending. Paper50 repeats versus release5,unrecorded historical seeds,and swapped learning-rate/gamma require explicit separate interpretations. Source license notices retained. All800 original-extent runs,independent fork implementation,full metrics/figures remain required. No completion credit. Initial full pilot exited0 with20001 observations in205.02sec but failed recorder qualification:only470/1616 values matched native BehaviorSpace over100ticks. Agentset measurement advanced model RNG. Corrected only recorder with-local-randomness; all1616 values now match exactly. Failed full pilot archived with15 members verified. Corrected full20000-tick recorder session18688 and native BehaviorSpace session95532 running separately,each600sec/1GiB/50MiB. Fullcomparison remains pending; no scientific negative or completion credit."
+      "remaining_scope": "Author release, NetLogo6.1.1, map, ODD and manuscript recovered. Initial recorder altered model RNG; failed evidence retained. Corrected with-local-randomness recorder now matches native BehaviorSpace exactly across all320016 fields in20001 observations through20000ticks, Rule M versus EC, prospective seed20261019. Both bounded runs exited0 in220.450/222.884sec. Archive1287345bytes SHA256 fbfa784208b5c6ca4bd9d26941cd32b12a76f2fa8a32e47220a04d7f01603a70; all21 extracted files verified and fresh comparison byte-identical. One-pairing runtime projects to49 CPU-hours for800runs; other methods remain unmeasured. Paper50 repeats versus release5, missing historical seeds, and learning-rate/gamma discrepancy remain unresolved. Remaining pairings, all800 original-extent runs, independent fork implementation and full figure comparisons remain required. No scientific negative or completion credit. No active Brearcliffe run."
     }
   ],
   "study_prs": 20,
