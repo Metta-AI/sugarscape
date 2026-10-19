@@ -777,4 +777,6 @@ Shared runtime jars remain external, with dependency provenance in the receipt.
 
 [The cache experiment](results/vision-cache-qualification-2026-10-19) preserves 60,000 Gini-history values, all original final world fields, and random states across eight executions. At 510 agents, the measured simulation-time ratio is 1.455; at ten agents, 1.012. The initial morphology-variable-position failure remains preserved. Broader fidelity and end-to-end throughput checks remain necessary; production and the full-grid spending estimate are unchanged.
 
-[The broader cache qualification](results/vision-cache-strata-launch-2026-10-19) verifies all 15,000 static patch/radius sets against native geometry. A bounded 44-execution comparison spans all eleven population levels and eleven landscapes; full-state and throughput results remain pending.
+[The broader cache qualification](results/vision-cache-strata-launch-2026-10-19) verifies all 15,000 static patch/radius sets against native geometry. The bounded 44-execution comparison now completes across all eleven population levels and eleven landscapes.
+
+[The complete broader comparison](results/vision-cache-strata-complete-2026-10-19) passes all 330,000 history-value and 91,905 original world-row comparisons, including random state. Median total process time falls from 130.1 to 102.4 seconds on the frozen sample. All source edits and archive members verify; full-grid performance and paper completion remain unproven.
