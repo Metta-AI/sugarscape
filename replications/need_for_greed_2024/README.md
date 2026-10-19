@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[Population quartiles constrain aggregation order at selfishness 0.37](results/population-quartile-order-2026-10-19). Across nine quantile definitions, all 108 per-run comparisons fit the nominal curve envelope and none of 108 pooled-time comparisons does. Independent R arithmetic passes after a preserved type-3 convention correction. This narrows one measurement; death-rate and full-paper fidelity remain unresolved.
+
 [Recovery of the 333 missing baseline trajectories is queued](results/baseline-recovery-launch-2026-10-19). The task-owned eight-CPU command has a six-hour limit and $5.40 conservative ceiling. Every full output must match its retained original hash; launch adds no coverage credit.
 
 [All six endpoint controls are complete and reconciled](results/endpoint-controls-complete-2026-10-19): three baseline/sweep pairs match byte-for-byte at the preselected seed. Both recovered level-1 trajectories preserve their interrupted prefixes; all three baseline hashes match prior evidence.
