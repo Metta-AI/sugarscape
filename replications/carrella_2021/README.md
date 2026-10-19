@@ -1177,3 +1177,7 @@ Then run `python verify_vision.py NEW_CSV NEW_AUDIT` from this study directory.
 ### Complete independent neural-network estimator
 
 [All five 5,000-input folds](results/independent-neuralnet5000-2026-10-19) pass audit for 25,000 predictions and 3,775,000 input cells. Independent Python arithmetic reproduces errors, coverage, widths and normalized scores. [The consolidated comparison](results/estimator-comparison-neuralnet-2026-10-19) now contains 70/75 reported-score pairs, 237,500 validated predictions and 35,862,500 input-cell checks. Only the five independent bootstrap-forest scores remain pending. Complete estimator evidence does not yet resolve historical discrepancies or establish paper completion.
+
+### Independent bootstrap-forest folds 3 and 4 audited
+
+[Two additional saved folds](results/independent-rfboot-folds34-2026-10-19) validate 10,000 predictions and 1,510,000 input cells against the original partition. Archive readback and repeated audits reproduce exact results. Four folds now cover 20,000 predictions and 3,020,000 input-cell checks. The original final-fold process continues; no aggregate score or paper completion is inferred from partial coverage.
