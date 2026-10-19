@@ -1,0 +1,81 @@
+{
+  "runs": 8,
+  "ticks_per_run": 10000,
+  "populations": [
+    10,
+    510
+  ],
+  "history_values_compared_exactly": 60000,
+  "world_rows_compared_exactly": 16710,
+  "excluded_fields": [
+    "export timestamp",
+    "new fixed-vision-sets cache column"
+  ],
+  "archived_metrics_checked": 24,
+  "archived_gini_exact": true,
+  "archived_morphology_absolute_tolerance": 1e-12,
+  "random_states_exact": true,
+  "all12_final_metrics_exact": true,
+  "simulation_seconds": {
+    "baseline": [
+      [
+        2.6725345,
+        2.805775708
+      ],
+      [
+        16.364543417,
+        16.69164175
+      ]
+    ],
+    "cached-appended": [
+      [
+        2.690077791,
+        2.725584292
+      ],
+      [
+        11.302103792,
+        11.419481625
+      ]
+    ]
+  },
+  "median_baseline_over_cached_ratios": [
+    1.0115679531033988,
+    1.4548362079640702
+  ],
+  "file_sha256": {
+    "attempt-002/0-baseline/command.json": "4fdda553be82bfba6d53348c1c600242c0d8c7c1d84ce6f3b58d533118d1538f",
+    "attempt-002/0-baseline/exit.json": "1d2ac16e7414397477700dcf628c0c9b87fe397c1f0e9fd825f7394d51dae89e",
+    "attempt-002/0-baseline/results.csv": "3ed52e854a80c0fcebdb57deed37975c97c8a7c7fc331b17cd29b8147934a3f5",
+    "attempt-002/0-baseline/results.csv.0.gini": "b8e58260796ca127dd8d478dbb3584b5f23aada24cfa7c19c28a56ef5f70c537",
+    "attempt-002/0-baseline/results.csv.0.world": "d7ec7665948f5262507cc3e8dffbf3ae7f00bd67cfe39e8406d367f8447eaa45",
+    "attempt-002/0-baseline/results.csv.1.gini": "2ab20e42cc547647ecc298ce2bdf1d87b50179a4e095a813ad4ad2ef61dfa841",
+    "attempt-002/0-baseline/results.csv.1.world": "47adccb9f47c1f75cf6fc85ed9193bef9524495fd3b90d0ffca9225c7fbe94a8",
+    "attempt-002/0-baseline/run.log": "8e6996a638dc124b1e6927c3fd882c11d12d246195e0867b0090ad6ebabbb0e0",
+    "attempt-002/1-cached-appended/command.json": "1416ca7aa101b0dffe156fdfe0db4fc8c2ed707cee1de05d622e29f89a7fa702",
+    "attempt-002/1-cached-appended/exit.json": "65dc27d2506604adf4e0841426d5a24b33c6bc900eba04f8d6b9b9d75578a586",
+    "attempt-002/1-cached-appended/results.csv": "3ed52e854a80c0fcebdb57deed37975c97c8a7c7fc331b17cd29b8147934a3f5",
+    "attempt-002/1-cached-appended/results.csv.0.gini": "b8e58260796ca127dd8d478dbb3584b5f23aada24cfa7c19c28a56ef5f70c537",
+    "attempt-002/1-cached-appended/results.csv.0.world": "568e41493b2b02e64129b916fbddbcab64e47a6f0cb0a71a352d8a2ac6eeca3c",
+    "attempt-002/1-cached-appended/results.csv.1.gini": "2ab20e42cc547647ecc298ce2bdf1d87b50179a4e095a813ad4ad2ef61dfa841",
+    "attempt-002/1-cached-appended/results.csv.1.world": "1efd09aea8bdc5ee706bd520730b71bc2df707798e2e9835070f522109c9b99d",
+    "attempt-002/1-cached-appended/run.log": "b94786d9a844bb3a43ebadd9fe8f47963e547a6896b567fa161559ecd6256b20",
+    "attempt-002/2-cached-appended/command.json": "a38f29cae7fef9ae9039d22d4c808e29c97b2511452c22ee23e6b10db3bcab25",
+    "attempt-002/2-cached-appended/exit.json": "3d9500e2dc758b20cf11c0e60f05c9767047452d61fa92faeb8c9af16a80c703",
+    "attempt-002/2-cached-appended/results.csv": "3ed52e854a80c0fcebdb57deed37975c97c8a7c7fc331b17cd29b8147934a3f5",
+    "attempt-002/2-cached-appended/results.csv.0.gini": "b8e58260796ca127dd8d478dbb3584b5f23aada24cfa7c19c28a56ef5f70c537",
+    "attempt-002/2-cached-appended/results.csv.0.world": "517abb78b16c8faf7c076aebf0129c5d04c60b8c4804af4bfba0ffff35d5088b",
+    "attempt-002/2-cached-appended/results.csv.1.gini": "2ab20e42cc547647ecc298ce2bdf1d87b50179a4e095a813ad4ad2ef61dfa841",
+    "attempt-002/2-cached-appended/results.csv.1.world": "d9aa7a6b0316ff529194326730a2cd4feeaebb3cdf22c6a392e67e58ff4dd6e8",
+    "attempt-002/2-cached-appended/run.log": "7b5d7fa9b768485d7d1fcc988252e3b5162c6e41cff93f99da804f45097b10d8",
+    "attempt-002/3-baseline/command.json": "ec4783da8ce089ba1e6b75a27f02bdcf9af182b069e52dce16a357fef69d732e",
+    "attempt-002/3-baseline/exit.json": "6bd44ed742c3569c83685eab1f43c33de138f8205e8b3a29ae3916ac25b64d98",
+    "attempt-002/3-baseline/results.csv": "3ed52e854a80c0fcebdb57deed37975c97c8a7c7fc331b17cd29b8147934a3f5",
+    "attempt-002/3-baseline/results.csv.0.gini": "b8e58260796ca127dd8d478dbb3584b5f23aada24cfa7c19c28a56ef5f70c537",
+    "attempt-002/3-baseline/results.csv.0.world": "05bd77f6fa717d0d6d007e537305d03006cf208dbac84258f48d04c969ce950e",
+    "attempt-002/3-baseline/results.csv.1.gini": "2ab20e42cc547647ecc298ce2bdf1d87b50179a4e095a813ad4ad2ef61dfa841",
+    "attempt-002/3-baseline/results.csv.1.world": "4ae76723e200dcfe2a5744b37417baac898c5aa108a425b38bc992ab4d9bfd99",
+    "attempt-002/3-baseline/run.log": "76564070c858b12aeafc71495d9224da9ee997a1a8b7acd257b89ef46fd9620c",
+    "attempt-002/complete.json": "a9ac9d4277c0bfdbaa3eaa565fd1ee135711902c85b3670500abd6edc6a7633d"
+  },
+  "scope": "Two inputs at populations 10 and 510, two repetitions per variant. Exact Gini histories and all original final world fields including RNG; no full-grid fidelity or runtime claim. Setup cache construction and export cost are outside simulation timings. Active scientific runs unchanged."
+}

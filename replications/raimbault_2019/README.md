@@ -772,3 +772,7 @@ The archive includes the experimental extension, paired source variants, launche
 Shared runtime jars remain external, with dependency provenance in the receipt.
 
 [Execution profiling](results/execution-profile-2026-10-19) preserves 20,000 Gini values and 5,570 exported world rows exactly across the two qualified inputs. Movement appears in 543/1,093 sampled stacks versus 37 for Gini update, suggesting a different optimization target. This is not a speedup or a revised full-grid cost estimate.
+
+## Static vision geometry qualification
+
+[The cache experiment](results/vision-cache-qualification-2026-10-19) preserves 60,000 Gini-history values, all original final world fields, and random states across eight executions. At 510 agents, the measured simulation-time ratio is 1.455; at ten agents, 1.012. The initial morphology-variable-position failure remains preserved. Broader fidelity and end-to-end throughput checks remain necessary; production and the full-grid spending estimate are unchanged.
