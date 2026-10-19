@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/summarize-recovered.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-parameter-cohorts-001/premature-recovered-summary-001"
+  ],
+  "exit_code": 1,
+  "output_created": false,
+  "missing_required_input": "dispatch-complete.json",
+  "scope": "Real active batch rejected before aggregate output. This does not validate the complete-batch success path.",
+  "script_sha256": "f3782352ac32c40d2adf3b55715c35231940d95cefa9f3047877bf05699714eb"
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "autor",
+    "api",
+    "post",
+    "/nodes/relh-sugarscape-carrella-r405-cpu2-20261019-v1/imports",
+    "--data",
+    "{\"connection\": \"storage/relh-sugarscape-evidence-20261017\", \"source\": \"s3://relh-sugarscape-evidence-20261017/carrella-gam-historical-seeds-001-input/\", \"dest_path\": \"/root/sugarscape/carrella-gam-historical-seeds-001/staged-input\"}",
+    "--json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"connection\": \"storage/relh-sugarscape-evidence-20261017\",\n  \"dest_path\": \"/root/sugarscape/carrella-gam-historical-seeds-001/staged-input\",\n  \"import_id\": \"imp-4u5vv\",\n  \"object\": \"import\",\n  \"source\": \"s3://relh-sugarscape-evidence-20261017/carrella-gam-historical-seeds-001-input/\",\n  \"status\": \"running\"\n}\n",
+  "stderr": ""
+}

@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "parameter": "initial.population",
+      "author_data_performance": 0.57881157776461,
+      "independent_data_performance": 0.602138057975993,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "pmut",
+      "author_data_performance": 0.333510652224885,
+      "independent_data_performance": 0.40631626502491,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "author_data_performance": 0.474832788866809,
+      "independent_data_performance": 0.489363930534226,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "author_data_performance": 0.281420749904499,
+      "independent_data_performance": 0.491907494261503,
+      "baseline_error_difference": 0.0
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "author_data_performance": 0.730344001928697,
+      "independent_data_performance": 0.805253848715916,
+      "baseline_error_difference": 0.0
+    }
+  ],
+  "scope": "Complete five-fold local-linear ABC on independent simulation statistics. Original parameters and fold seed preserved. Descriptive comparison across different simulation random streams. Published 1250-input cell is NA.",
+  "completed_study": false
+}

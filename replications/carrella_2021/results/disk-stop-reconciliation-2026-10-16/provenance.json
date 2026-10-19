@@ -1,0 +1,35 @@
+{
+  "snapshot_sha256": "009479323f09390ce949dfd03efa521e134722957b7bc06bc2ca3cd9ebc3cc95",
+  "validated_inputs": 893,
+  "statistics_recomputed": 133950,
+  "intervals": [
+    [
+      0,
+      631
+    ],
+    [
+      2005,
+      2139
+    ],
+    [
+      3503,
+      3631
+    ]
+  ],
+  "missing_intervals": [
+    [
+      631,
+      2005
+    ],
+    [
+      2139,
+      3503
+    ],
+    [
+      3631,
+      5000
+    ]
+  ],
+  "reason": "Three producers exited at the unchanged 2 GiB disk guard. No local restart.",
+  "scope": "Partial ensemble only; no estimator or paper completion."
+}

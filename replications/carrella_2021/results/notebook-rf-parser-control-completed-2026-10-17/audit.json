@@ -1,0 +1,60 @@
+{
+  "held_out_rows": 5000,
+  "predictions_audited": 25000,
+  "folds": 5,
+  "comparison": [
+    {
+      "parameter": "initial.population",
+      "rmse": 60.562821067948654,
+      "baseline_rmse": 115.48732223159247,
+      "performance": 0.47558900927238557,
+      "published": 0.47499999999999998,
+      "matches_printed_precision": false,
+      "coverage": 0.97259999999999991,
+      "interval_width": 266.44281999999941
+    },
+    {
+      "parameter": "pmut",
+      "rmse": 0.026790792465974766,
+      "baseline_rmse": 0.057521305681513812,
+      "performance": 0.53424575209903857,
+      "published": 0.53600000000000003,
+      "matches_printed_precision": false,
+      "coverage": 0.97719999999999985,
+      "interval_width": 0.13339099456986522
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "rmse": 11.865440390732465,
+      "baseline_rmse": 21.428043584515734,
+      "performance": 0.44626580845175101,
+      "published": 0.44600000000000001,
+      "matches_printed_precision": true,
+      "coverage": 0.9798,
+      "interval_width": 53.833680000000371
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "rmse": 11.527162265555418,
+      "baseline_rmse": 21.470549073071709,
+      "performance": 0.4631174905530131,
+      "published": 0.46300000000000002,
+      "matches_printed_precision": true,
+      "coverage": 0.97799999999999998,
+      "interval_width": 52.345250000000327
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "rmse": 4.8628618869009363,
+      "baseline_rmse": 23.022774519384559,
+      "performance": 0.78878037124471956,
+      "published": 0.79000000000000004,
+      "matches_printed_precision": false,
+      "coverage": 0.99480000000000002,
+      "interval_width": 21.786775000000013
+    }
+  ],
+  "maximum_prediction_difference_from_isolated_run": 36.5,
+  "rng_state_unchanged_since_lm": false,
+  "scope": "Saved quantile random forest checkpoint; independent arithmetic uses saved predictions and reconstructed original folds. Attribution requires separate data and random-state controls."
+}

@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-19T06:21:52.564886+00:00",
+  "session_id": 98693,
+  "evidence_root": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-row675-seed-ensemble-002",
+  "source_sha256": {
+    "model.py": "23d73549848eadf237d38534a5cdae71c240c03cc9ef0fed4655cabb615ad36a",
+    "Replay.java": "9d6f88233d56378c272edd171f5f26f5996626d12486a51fc1f984843476cfe0",
+    "Replay.class": "03e313c85fc1bdf05d18d5fb3f7f929f573d76193c53321ee249705d783a6b20",
+    "protocol.json": "d459511f98ad0f87bbc7bc0682e57c709ed59bd52a5f33899ddbe5a07e1c491f",
+    "launch.py": "ef2066a007e1eb4c4f347e6300dd3006aa2293af30d36526e4bf68309f451820",
+    "parameters.csv": "82bca6e2a67048726ee6ad8bc6af39327f57b51c72e047a0200d75787a873c2b"
+  },
+  "status": "Native Replay process observed running; launch only, no completed cohort claim.",
+  "prior_seeds": [
+    0,
+    64
+  ],
+  "new_seeds": [
+    64,
+    576
+  ],
+  "scope": "Disjoint prospective extension at the same previously selected parameter setting; 501 original observations per run, no rule changes."
+}

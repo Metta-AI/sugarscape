@@ -1,0 +1,46 @@
+{
+  "predictions": 25000,
+  "tolerance": 1e-10,
+  "parameters": [
+    {
+      "parameter": "initial.population",
+      "predictions": 5000,
+      "rmse": 60.558360070897706,
+      "coverage": 0.957,
+      "interval_width": 236.47119576176115,
+      "performance": 0.47562763686340614
+    },
+    {
+      "parameter": "pmut",
+      "predictions": 5000,
+      "rmse": 0.02685047652017854,
+      "coverage": 0.962,
+      "interval_width": 0.11448788719228475,
+      "performance": 0.5332081530129844
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "predictions": 5000,
+      "rmse": 11.991698044284439,
+      "coverage": 0.957,
+      "interval_width": 48.05301792609957,
+      "performance": 0.44037363947916075
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "predictions": 5000,
+      "rmse": 11.506034614068449,
+      "coverage": 0.9592,
+      "interval_width": 46.83300477591968,
+      "performance": 0.46410151995137916
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "predictions": 5000,
+      "rmse": 4.732268579864952,
+      "coverage": 0.9622,
+      "interval_width": 19.976202820625975,
+      "performance": 0.7944527243716651
+    }
+  ]
+}

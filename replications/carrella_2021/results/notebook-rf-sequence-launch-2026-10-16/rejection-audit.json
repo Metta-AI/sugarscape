@@ -1,0 +1,60 @@
+{
+  "held_out_rows": 5000,
+  "predictions_audited": 25000,
+  "folds": 5,
+  "comparison": [
+    {
+      "parameter": "initial.population",
+      "rmse": 94.220109152304332,
+      "baseline_rmse": 115.48732223159247,
+      "performance": 0.1841519282665498,
+      "published": 0.184,
+      "matches_printed_precision": true,
+      "coverage": 0.95479999999999998,
+      "interval_width": 351.46250499999985
+    },
+    {
+      "parameter": "pmut",
+      "rmse": 0.044466585675788532,
+      "baseline_rmse": 0.057521305681513812,
+      "performance": 0.22695451452383852,
+      "published": 0.22700000000000001,
+      "matches_printed_precision": true,
+      "coverage": 0.95999999999999996,
+      "interval_width": 0.17882455109848411
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "rmse": 18.095123934667576,
+      "baseline_rmse": 21.428043584515734,
+      "performance": 0.15554008170193301,
+      "published": 0.156,
+      "matches_printed_precision": true,
+      "coverage": 0.97139999999999982,
+      "interval_width": 68.225380000000342
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "rmse": 18.22199587135761,
+      "baseline_rmse": 21.470549073071709,
+      "performance": 0.15130275386335712,
+      "published": 0.151,
+      "matches_printed_precision": true,
+      "coverage": 0.96899999999999997,
+      "interval_width": 68.436970000000343
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "rmse": 9.4491515627787024,
+      "baseline_rmse": 23.022774519384559,
+      "performance": 0.58957372601539526,
+      "published": 0.58999999999999997,
+      "matches_printed_precision": true,
+      "coverage": 0.98019999999999996,
+      "interval_width": 34.689210000000216
+    }
+  ],
+  "maximum_prediction_difference_from_isolated_run": 1.3877787807814457e-17,
+  "rng_state_unchanged_since_dataprep": true,
+  "scope": "Sequential original notebook rejection checkpoint only; later estimators remain running. Independent arithmetic uses saved predictions and reconstructed original folds."
+}

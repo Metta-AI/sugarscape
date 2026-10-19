@@ -1,0 +1,97 @@
+{
+  "protocol_sha256": "77cbbb3feaf439b546c600eb63d491547ba8119b13d9d74ff33ee3f4ef623e50",
+  "rare_events": {
+    "persistent_late_price": {
+      "counts": {
+        "native": {
+          "count": 0,
+          "rate": 0.0,
+          "seeds": []
+        },
+        "independent": {
+          "count": 0,
+          "rate": 0.0,
+          "seeds": []
+        }
+      },
+      "native_minus_independent_rate": 0.0,
+      "two_sided_fisher_p": 1.0
+    },
+    "low_final_population": {
+      "counts": {
+        "native": {
+          "count": 0,
+          "rate": 0.0,
+          "seeds": []
+        },
+        "independent": {
+          "count": 0,
+          "rate": 0.0,
+          "seeds": []
+        }
+      },
+      "native_minus_independent_rate": 0.0,
+      "two_sided_fisher_p": 1.0
+    }
+  },
+  "inputs_sha256": "e9e0a979393262d131810c239dedbbee096cbe51656044d1a039f24b2cae54b0",
+  "numpy": "1.26.4",
+  "seeds_per_engine": 64,
+  "excluded_runs": 0,
+  "permutation_seed": 20261019,
+  "permutations": 19999,
+  "metrics": [
+    {
+      "metric": "last_population",
+      "ecdf_maximum_difference": 0.140625,
+      "permutation_exceedances": 10723,
+      "monte_carlo_p_plus_one": 0.5362,
+      "native_median": 619.0,
+      "independent_median": 612.0
+    },
+    {
+      "metric": "minimum_population",
+      "ecdf_maximum_difference": 0.078125,
+      "permutation_exceedances": 18857,
+      "monte_carlo_p_plus_one": 0.9429,
+      "native_median": 37.0,
+      "independent_median": 36.0
+    },
+    {
+      "metric": "price_at475",
+      "ecdf_maximum_difference": 0.203125,
+      "permutation_exceedances": 2781,
+      "monte_carlo_p_plus_one": 0.1391,
+      "native_median": 1.0101055401160846,
+      "independent_median": 1.0191653572532988
+    },
+    {
+      "metric": "last_price",
+      "ecdf_maximum_difference": 0.140625,
+      "permutation_exceedances": 11095,
+      "monte_carlo_p_plus_one": 0.5548,
+      "native_median": 1.0174730724756995,
+      "independent_median": 1.0198711046221858
+    },
+    {
+      "metric": "maximum_price",
+      "ecdf_maximum_difference": 0.1875,
+      "permutation_exceedances": 4237,
+      "monte_carlo_p_plus_one": 0.2119,
+      "native_median": 4.631609450180785,
+      "independent_median": 4.557349240766135
+    },
+    {
+      "metric": "mean_price",
+      "ecdf_maximum_difference": 0.171875,
+      "permutation_exceedances": 6090,
+      "monte_carlo_p_plus_one": 0.30455,
+      "native_median": 1.1116266674565072,
+      "independent_median": 1.1136178200330158
+    }
+  ],
+  "joint_maximum_ecdf_difference": 0.203125,
+  "joint_exceedances": 11107,
+  "joint_monte_carlo_p_plus_one": 0.5554,
+  "scope": "Single-parameter diagnostic; setting selected after estimator failures. Rare thresholds are prospective only for the separately registered extension, exploratory for earlier seeds. No multiplicity correction across rare-event tests and continuous-metric analysis. Shared permutations preserve dependence across six metrics; ties retained. Seed labels are unpaired because engines use different random streams. Failure to detect a difference is not equivalence, historical reproduction, or a paper verdict."
+}

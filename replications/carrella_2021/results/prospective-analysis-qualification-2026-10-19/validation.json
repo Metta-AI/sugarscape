@@ -1,0 +1,19 @@
+{
+  "all_prior_comparison_metrics_exact": true,
+  "rare_event_fisher_r_crosscheck": [
+    1.0,
+    1.0
+  ],
+  "crosscheck_command": "R fisher.test(table(variant, event)) on all128 retained runs, separately for both specified events",
+  "cohort_gate_command": [
+    "/Users/relh/Code/workspace/sugarscape-replication-tools/pdf-analysis-001/bin/python",
+    "replications/carrella_2021/compare_seed_cohorts.py",
+    "replications/carrella_2021/results/seed-extension-launch-2026-10-19/protocol.json",
+    "replications/carrella_2021/results/fixed-parameter-seeds-2026-10-19/runs.csv",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-prospective-analysis-cohort-gate-001"
+  ],
+  "cohort_gate_exit_code": 1,
+  "cohort_gate_output_created": false,
+  "script_sha256": "2bcdfedd55c883845fc7a42bb0718cdd679216c0bf1804e0abcd76bc259cf4be",
+  "scope": "Qualification on the exploratory cohort only; prospective512+512 cohort still running."
+}

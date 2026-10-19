@@ -1,0 +1,8 @@
+{
+  "stage": "node-ready-observation",
+  "exit_code": 1,
+  "observed_status": "running (idle)",
+  "reason": "Initial readiness gate accepted only running; provider labels a newly ready idle node running (idle).",
+  "node_id": "0b285d30-36da-4683-9cf9-f4243d2a7341",
+  "action": "Reuse the existing owned node, recheck full qualification, and accept the two observed ready-state labels. No duplicate node or fit."
+}

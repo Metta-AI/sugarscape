@@ -1,0 +1,25 @@
+{
+  "method": "sabc_1d",
+  "size": 1250,
+  "seed": 0,
+  "reused_folds": [
+    1,
+    2,
+    3
+  ],
+  "recomputed_folds": [
+    4,
+    5
+  ],
+  "comparison": "All saved fold objects, complete aggregate RDS and metrics exactly identical to unmodified baseline, including RNG states. No live estimator restarted.",
+  "original_wrapper_sha256": "18730ad5a10ddceba429880deec169f16f2e9e326983e490c3f42bc6f5d725d7",
+  "setup_sha256": "a013440e7b209e3cd156a65a75d5136647125aa1ae6a1fb23da932ad086ec435",
+  "cached_files": {
+    "session.txt": "147f8bfe18562987e7c6dd1120cc45b8fb8085b4e1adc0113cca0282ae273a7a",
+    "fold-2.rds": "b6d609622592f6566f0c637da66275b10eb6b2a41678fb80af75f1e7a63d0593",
+    "fold-3.rds": "454a41b7f52f52f6ceaf17905122b725c51e6bc3979f2e9ee685b7e4069fe9be",
+    "fold-1.rds": "b0043b8a0ccf75eacb5ed810eabadff9fce0494c329bfae7da2ff888a23dc4b0",
+    "packages.csv": "611e0146e8ca33c8ecf333b6a3259409a0f18059bf3a98a607f5e2990f6ea4ea",
+    "arguments.txt": "41bc873deef47d554fa376f95a1d798fa9fb430346bb7cb90f2a32a6618a461f"
+  }
+}

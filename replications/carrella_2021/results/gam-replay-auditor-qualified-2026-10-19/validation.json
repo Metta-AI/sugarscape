@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "case": "first",
+      "command": [
+        "/opt/homebrew/bin/Rscript",
+        "--vanilla",
+        "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/audit_replayed_gam.R",
+        "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/gam-1250-2026-10-15",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-full-runtime-001/current",
+        "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/published_table8.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-replay-auditor-validation-001/first"
+      ],
+      "exit_code": 0
+    },
+    {
+      "case": "repeat",
+      "command": [
+        "/opt/homebrew/bin/Rscript",
+        "--vanilla",
+        "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/audit_replayed_gam.R",
+        "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/gam-1250-2026-10-15",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-full-runtime-001/current",
+        "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/published_table8.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-replay-auditor-validation-001/repeat"
+      ],
+      "exit_code": 0
+    },
+    {
+      "case": "altered exported performance rejected",
+      "command": [
+        "/opt/homebrew/bin/Rscript",
+        "--vanilla",
+        "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/audit_replayed_gam.R",
+        "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/results/gam-1250-2026-10-15",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-replay-auditor-validation-001/altered-export",
+        "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/published_table8.json",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-replay-auditor-validation-001/rejected"
+      ],
+      "exit_code": 1,
+      "output_directory_created": false
+    }
+  ],
+  "repeated_output_byte_identical": true,
+  "auditor_sha256": "1caf62bed6460ed03877ba8eeef315378a2125dd5d8ae76348abcc7e0692c85f",
+  "scope": "Complete public audit command on real five-fold replay outputs; one copied aggregate export deliberately altered. No refitting, fake predictions, or isolated unit tests."
+}

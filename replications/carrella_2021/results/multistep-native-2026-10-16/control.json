@@ -1,0 +1,6 @@
+{
+  "mutation": "Advance model ticks after extinction instead of freezing state.",
+  "rejected_before_report": true,
+  "exit_code": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-trajectories-control-001/verify_trajectories.py\", line 43, in <module>\n    assert math.isclose(expected, value, rel_tol=1e-13, abs_tol=1e-13), (index, observation, name, expected, value)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: (1, 8, 'tick', 7.0, 8)\n"
+}

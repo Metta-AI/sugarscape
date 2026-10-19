@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/bin/Rscript",
+    "--vanilla",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-historical-prefix-003/compare_seed0.R",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-historical-full-readback-001/native/run",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-historical-prefix-003/native",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-historical-prefix-003/seed0-comparison.json"
+  ],
+  "exit_code": 0,
+  "stdout": "  seed    quantity values changed\n1    5       highs   6250    6250\n2    6       highs   6250    6250\n3    5        lows   6250    6250\n4    6        lows   6250    6250\n5    5 predictions   6250       0\n6    6 predictions   6250       0\n",
+  "stderr": ""
+}

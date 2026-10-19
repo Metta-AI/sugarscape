@@ -1,0 +1,58 @@
+{
+  "method": "sabc_4d",
+  "size": 5000,
+  "seed": 0,
+  "process_exit": 1,
+  "session_id": 72656,
+  "validation_exit": 0,
+  "held_out_predictions": 25000,
+  "status": "All folds saved and 25000 held-out predictions independently validated; all five Table 8 values match printed precision. Process subsequently failed with unexpected end of input after an earlier live-script edit. Recovered evidence, not a successful invocation. Clean source-at-start rerun session20458 remains active.",
+  "comparison": [
+    {
+      "parameter": "initial.population",
+      "observed": 0.509367442984335,
+      "published": "0.509",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "pmut",
+      "observed": 0.448873524689738,
+      "published": "0.449",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "observed": 0.458225459396896,
+      "published": "0.458",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "observed": 0.475952583658523,
+      "published": "0.476",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "observed": 0.624279476080748,
+      "published": "0.624",
+      "matches_printed_precision": true
+    }
+  ],
+  "files": {
+    "arguments.txt": "4db104200ca90550a21ef6c9092071f2e7a80e2a69e25a58e77d819f1860fbac",
+    "complete.rds": "d45f39c8e8ff67e611c40ad7930ee65167efc33cd74315ce864529d38606b515",
+    "execution.log": "1627d21d2edbc8559b0fc758279145950c627619a64262427a6284db46ad608c",
+    "fold-1.rds": "99357a708b0c7f45c4616759f7727981ca2a26316c1bf93746b8c7fa4640cb1a",
+    "fold-2.rds": "a4ab2eb8c8cea82f2098c0abc9890a15a020c226827367801c33e741bd3f53e1",
+    "fold-3.rds": "e21a13e53418081663f6a99c30a620f2ea81d5cc3bd98aaefe7cf7065ca7dfe0",
+    "fold-4.rds": "38dc1a74ff4149bb573f2576c217eec06c8ddf86b631a4105b3780730fe51db3",
+    "fold-5.rds": "f9444d972921fb1641d00f824dc0bd540b131dcca42104fc73204cd8b807ff09",
+    "metrics.csv": "6ad0d5e2e91e5712951382e15611566c6b1812a0e5424d7be6caf8ece29ade52",
+    "packages.csv": "611e0146e8ca33c8ecf333b6a3259409a0f18059bf3a98a607f5e2990f6ea4ea",
+    "session.txt": "147f8bfe18562987e7c6dd1120cc45b8fb8085b4e1adc0113cca0282ae273a7a",
+    "validation/predictions.csv": "fd580a72a4fb5ebeba116f8a09c899feed50eb5d7a118d69a0995e534cec1b2b",
+    "validation/validated_metrics.csv": "711307fb9db81a6b1546e58ee83d50789062e8f7fc82750c1c7084f5a3bc5004",
+    "validation.log": "c8eda94fd4e636adf1c13d6c6fb2d0477bd741a934c61ae21106f542003efb2e"
+  }
+}

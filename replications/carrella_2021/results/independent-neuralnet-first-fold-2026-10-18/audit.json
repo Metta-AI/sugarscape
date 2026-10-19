@@ -1,0 +1,56 @@
+{
+  "fold": 1,
+  "training_rows": 4000,
+  "held_out_rows": 1000,
+  "predictions": 5000,
+  "input_cells_checked": 755000,
+  "exact_original_fold_alignment": true,
+  "statistics": [
+    {
+      "parameter": "initial.population",
+      "rmse": 47.96470512270492,
+      "baseline_rmse": 113.71240338678975,
+      "fold_performance": 0.57819284709378416,
+      "coverage": 0.72899999999999998,
+      "interval_width": 114.5520243821793,
+      "_row": "initial.population"
+    },
+    {
+      "parameter": "pmut",
+      "rmse": 0.02907775663931458,
+      "baseline_rmse": 0.057840675392674887,
+      "fold_performance": 0.49727840413500646,
+      "coverage": 0.71699999999999997,
+      "interval_width": 0.057385207116327587,
+      "_row": "pmut"
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "rmse": 10.453969864092981,
+      "baseline_rmse": 21.385156898243693,
+      "fold_performance": 0.51115767287395775,
+      "coverage": 0.67200000000000004,
+      "interval_width": 20.404152941912557,
+      "_row": "maximum.sugar.endowment"
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "rmse": 10.271678374351657,
+      "baseline_rmse": 21.829794576449878,
+      "fold_performance": 0.52946518399981612,
+      "coverage": 0.67200000000000004,
+      "interval_width": 19.622013545589567,
+      "_row": "maximum.spice.endowment"
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "rmse": 6.527289644902579,
+      "baseline_rmse": 22.361542014136685,
+      "fold_performance": 0.70810198863852469,
+      "coverage": 0.90600000000000003,
+      "interval_width": 20.019010307504203,
+      "_row": "wealth.reproduction"
+    }
+  ],
+  "scope": "One completed fold of the independent-data five-fold neural-network workflow. No aggregate Table8 score or new completed target is claimed."
+}

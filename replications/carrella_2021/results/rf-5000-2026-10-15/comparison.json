@@ -1,0 +1,53 @@
+{
+  "method": "rf",
+  "size": 5000,
+  "seed": 0,
+  "status": "Unresolved stochastic comparison; not an equivalence or negative-replication claim",
+  "comparison": [
+    {
+      "parameter": "initial.population",
+      "observed": 0.475748972672409,
+      "published": "0.475",
+      "matches_printed_precision": false
+    },
+    {
+      "parameter": "pmut",
+      "observed": 0.53749067964078,
+      "published": "0.536",
+      "matches_printed_precision": false
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "observed": 0.446203572061522,
+      "published": "0.446",
+      "matches_printed_precision": true
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "observed": 0.46230707116087,
+      "published": "0.463",
+      "matches_printed_precision": false
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "observed": 0.787705878723856,
+      "published": "0.790",
+      "matches_printed_precision": false
+    }
+  ],
+  "files": {
+    "arguments.txt": "46da6aa3fc3ec92cb91623446349c0de9b1c1e14e56da43bc4fa09ca77cebb2b",
+    "complete.rds": "e00c146a3c8b97a74316cf6664ebff560759b414a68a64318f73502dffb587a3",
+    "execution.log": "abeb7ffae9f3061bb6ca66f776edb1f20dc00669be309658e6fa54860b76359d",
+    "fold-1.rds": "b51c9942dc674d36ac78cc3794d4b3994af7734f6db8107424f5897a206047f3",
+    "fold-2.rds": "4ecaac639c0e2423567dd24e63cd248efd318845dae0a3513aaaab7da33d3d87",
+    "fold-3.rds": "815e2e8ba2962318ef510504785add4bdf22a48159e6c057d3d65f76f0866034",
+    "fold-4.rds": "e6ed05c35d0e60fea655b6be9e3fc2f4f318d8de2b71156a9b905331c3acca68",
+    "fold-5.rds": "cd19909010693cf0b77afaf2517b8ec4dbfbcebb00769a050b940551b6265ca7",
+    "metrics.csv": "b09abf746c185838376ee0877a1970fc0a277d2389da1c50afc1b9a001086d83",
+    "packages.csv": "611e0146e8ca33c8ecf333b6a3259409a0f18059bf3a98a607f5e2990f6ea4ea",
+    "session.txt": "147f8bfe18562987e7c6dd1120cc45b8fb8085b4e1adc0113cca0282ae273a7a",
+    "validation/predictions.csv": "7cfbf0eec60e46317108a2c513db3cb8663c688de53b9196f1dc09e5bf65de62",
+    "validation/validated_metrics.csv": "032320bae65cbc2a0b2016ac388dcbb03fd05cafdfd7f392694289bb0c326374"
+  }
+}

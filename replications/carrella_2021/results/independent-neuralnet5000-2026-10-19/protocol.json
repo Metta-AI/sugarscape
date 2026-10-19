@@ -1,0 +1,16 @@
+{
+  "method": "neuralnet",
+  "size": 5000,
+  "folds": 5,
+  "seed": 0,
+  "cv_seed": 0,
+  "maximum_seconds": 108000,
+  "reason": "Initial observed throughput estimated about20h for all five folds. Per-observation RNG-preserving checkpoints validated on complete degree-one workflow.",
+  "scientific_settings": "Original abc::abc neuralnet with hcorr=TRUE; full146 predictors and all5000 held-out observations.",
+  "previous_attempt": "carrella-independent-neuralnet-001; explicitly stopped before first completed fold after validated recovery change; all logs retained.",
+  "source_sha256": {
+    "run_checkpointed.R": "eafae03544c50b9aced45fc6deba871e862ba3bcf57b82b815b9883ae1e9c371",
+    "checkpoint_abc.R": "9d6cbe517835eb7f817ddcc80f28cb23bd05faaeabc08d3307e2f9785a1c08b7"
+  },
+  "completed_study": false
+}

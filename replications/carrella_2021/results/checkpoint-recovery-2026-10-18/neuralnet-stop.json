@@ -1,0 +1,7 @@
+{
+  "before": "90221 /opt/homebrew/bin/gtimeout --signal=TERM --kill-after=30 14400 /opt/homebrew/bin/Rscript -e options(warn=1); source(\"/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-neuralnet-001/run_estimator.R\") /Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-estimator-inputs-complete-001 neuralnet 5000 0 /Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-neuralnet-001/neuralnet-5000\n90222 /opt/homebrew/Cellar/r/4.6.1_1/lib/R/bin/exec/R --no-echo --no-restore -e options(warn=1);~+~source(\"/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-neuralnet-001/run_estimator.R\") --args /Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-estimator-inputs-complete-001 neuralnet 5000 0 /Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-neuralnet-001/neuralnet-5000\n",
+  "signal": "SIGTERM",
+  "target_pid": 90221,
+  "reason": "Replace non-checkpointed attempt with validated RNG-preserving per-observation recovery; no completed folds yet.",
+  "unix": 1792308378.1473548
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "autor",
+    "cp",
+    "relh-sugarscape-carrella-r405-cpu2-20261019-v1:/root/sugarscape/carrella-gam-historical-prefix-001/results.tar.gz",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-gam-historical-prefix-001/results.tar.gz",
+    "--json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"artifact_id\": \"art-37z9i\",\n  \"download\": {\n    \"expires_at\": \"2026-10-26T17:38:06.941504606+00:00\",\n    \"url\": \"https://s3.us-west-2.amazonaws.com/givemeanode-jobs/artifacts/cd16e5a2-e85f-405d-aa40-d36d50fb0414/art-37z9i?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA3WLFQ5J24VLPTSTB%2F20261019%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20261019T173806Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22results.tar.gz%22&response-content-type=application%2Fgzip&X-Amz-Signature=44cd5220335a70d86784d08b72084b63acfb70722db693c9876a68d5364b405a\"\n  },\n  \"object\": \"artifact\",\n  \"sha256\": \"09493c9cef37e3add59b9c20f62db2189035d5bf6df0bf49eedf953bae8e05f5\",\n  \"size_bytes\": 4748576,\n  \"state\": \"ready\"\n}\n",
+  "stderr": "exporting relh-sugarscape-carrella-r405-cpu2-20261019-v1:/root/sugarscape/carrella-gam-historical-prefix-001/results.tar.gz\u2026\n"
+}

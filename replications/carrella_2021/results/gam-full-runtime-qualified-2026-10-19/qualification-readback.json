@@ -1,0 +1,6 @@
+{
+  "script": "args<-commandArgs(TRUE); n<-0L\nfor(i in 1:5){a<-readRDS(file.path(args[1],paste0(\"fold-\",i,\".rds\")));b<-readRDS(file.path(args[2],paste0(\"fold-\",i,\".rds\")))\nfor(f in c(\"predictions\",\"lows\",\"highs\")){x<-as.matrix(a$result[[f]]);y<-as.matrix(b[[f]]);stopifnot(identical(dim(x),dim(y)),identical(colnames(x),colnames(y)),identical(as.numeric(x),as.numeric(y)));n<-n+length(x)}\nstopifnot(identical(a$random_state,b$random_state))};stopifnot(n==18750L);cat(\"18750 exact numeric values and five exact final RNG states\\n\")",
+  "exit_code": 0,
+  "stdout": "18750 exact numeric values and five exact final RNG states\n",
+  "stderr": ""
+}

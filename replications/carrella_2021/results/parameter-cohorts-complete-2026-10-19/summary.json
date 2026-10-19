@@ -1,0 +1,1292 @@
+{
+  "plan_sha256": "43924ba88d32b3d61b949646c93277e20534b41f18bde86d0c0623fe4e6b2c28",
+  "cohorts": [
+    {
+      "original_row": 2439,
+      "parameters": {
+        "random-seed": "84787.83679012497",
+        "initial-population": "277.0",
+        "pmut": "0.10710211822611262",
+        "maximum-sugar-endowment": "42.0",
+        "maximum-spice-endowment": "33.0",
+        "wealth-reproduction": "66.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 13648,
+          "monte_carlo_p_plus_one": 0.68245,
+          "native_median": 936.5,
+          "independent_median": 937.5
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 11257,
+          "monte_carlo_p_plus_one": 0.5629,
+          "native_median": 27.5,
+          "independent_median": 28.0
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.1875,
+          "permutation_exceedances": 4187,
+          "monte_carlo_p_plus_one": 0.2094,
+          "native_median": 1.0214173207678745,
+          "independent_median": 1.026126241066338
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.09375,
+          "permutation_exceedances": 18914,
+          "monte_carlo_p_plus_one": 0.94575,
+          "native_median": 1.0195771113721763,
+          "independent_median": 1.019041251943328
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.09375,
+          "permutation_exceedances": 18904,
+          "monte_carlo_p_plus_one": 0.94525,
+          "native_median": 2.716954142424048,
+          "independent_median": 2.63381296385752
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.15625,
+          "permutation_exceedances": 8484,
+          "monte_carlo_p_plus_one": 0.42425,
+          "native_median": 1.0699693316921555,
+          "independent_median": 1.072791071891533
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.1875,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "859625eb51ed9eba55159a4dec0c2b654295a3370322049b0682e0f659d83d7d"
+    },
+    {
+      "original_row": 4876,
+      "parameters": {
+        "random-seed": "28261.41663906065",
+        "initial-population": "161.0",
+        "pmut": "0.0015318857920222806",
+        "maximum-sugar-endowment": "80.0",
+        "maximum-spice-endowment": "80.0",
+        "wealth-reproduction": "20.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 13696,
+          "monte_carlo_p_plus_one": 0.68485,
+          "native_median": 947.5,
+          "independent_median": 958.0
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.078125,
+          "permutation_exceedances": 19469,
+          "monte_carlo_p_plus_one": 0.9735,
+          "native_median": 116.5,
+          "independent_median": 115.0
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 11049,
+          "monte_carlo_p_plus_one": 0.5525,
+          "native_median": 1.0619638734095238,
+          "independent_median": 1.0700206506048784
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.171875,
+          "permutation_exceedances": 5993,
+          "monte_carlo_p_plus_one": 0.2997,
+          "native_median": 1.0485258817550704,
+          "independent_median": 1.0735655611595947
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 11087,
+          "monte_carlo_p_plus_one": 0.5544,
+          "native_median": 2.212871307482925,
+          "independent_median": 2.0223628000984286
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.203125,
+          "permutation_exceedances": 2856,
+          "monte_carlo_p_plus_one": 0.14285,
+          "native_median": 1.0828946754400328,
+          "independent_median": 1.0779141957733989
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.203125,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "e25e16728e8d04162972fbc211ba1868a4aff4df2d01c9e8edc3f3d96d7da5dc"
+    },
+    {
+      "original_row": 4675,
+      "parameters": {
+        "random-seed": "54259.90975648967",
+        "initial-population": "498.0",
+        "pmut": "0.18231456008147576",
+        "maximum-sugar-endowment": "77.0",
+        "maximum-spice-endowment": "68.0",
+        "wealth-reproduction": "23.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.1875,
+          "permutation_exceedances": 3950,
+          "monte_carlo_p_plus_one": 0.19755,
+          "native_median": 935.0,
+          "independent_median": 923.5
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.09375,
+          "permutation_exceedances": 18313,
+          "monte_carlo_p_plus_one": 0.9157,
+          "native_median": 195.0,
+          "independent_median": 196.5
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.09375,
+          "permutation_exceedances": 18864,
+          "monte_carlo_p_plus_one": 0.94325,
+          "native_median": 1.0644272931248526,
+          "independent_median": 1.0591417743235096
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.1875,
+          "permutation_exceedances": 4205,
+          "monte_carlo_p_plus_one": 0.2103,
+          "native_median": 1.064522255976602,
+          "independent_median": 1.069889042568781
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.21875,
+          "permutation_exceedances": 1858,
+          "monte_carlo_p_plus_one": 0.09295,
+          "native_median": 1.7985859701345983,
+          "independent_median": 1.591271710176592
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.109375,
+          "permutation_exceedances": 16812,
+          "monte_carlo_p_plus_one": 0.84065,
+          "native_median": 1.0737262825760014,
+          "independent_median": 1.0768976189945305
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.21875,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "301cdb16dcf6d9abaa4204c9bc558366e00020e9e0e542706f733784eb2314e3"
+    },
+    {
+      "original_row": 348,
+      "parameters": {
+        "random-seed": "69197.50477932095",
+        "initial-population": "495.0",
+        "pmut": "0.007091725946926997",
+        "maximum-sugar-endowment": "74.0",
+        "maximum-spice-endowment": "77.0",
+        "wealth-reproduction": "89.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.109375,
+          "permutation_exceedances": 16120,
+          "monte_carlo_p_plus_one": 0.80605,
+          "native_median": 860.5,
+          "independent_median": 867.0
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 9279,
+          "monte_carlo_p_plus_one": 0.464,
+          "native_median": 94.0,
+          "independent_median": 92.0
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 11045,
+          "monte_carlo_p_plus_one": 0.5523,
+          "native_median": 1.0214436584859974,
+          "independent_median": 1.0192121398258935
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 14024,
+          "monte_carlo_p_plus_one": 0.70125,
+          "native_median": 1.0118291765962513,
+          "independent_median": 1.0150410562017502
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 11069,
+          "monte_carlo_p_plus_one": 0.5535,
+          "native_median": 2.146791313339907,
+          "independent_median": 2.13425776745952
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.15625,
+          "permutation_exceedances": 8214,
+          "monte_carlo_p_plus_one": 0.41075,
+          "native_median": 1.0687033713176177,
+          "independent_median": 1.0692118897818577
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.15625,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "22f869f4d95751d30b1ac704a794f0db5302f7889b9a216577c89114509d762e"
+    },
+    {
+      "original_row": 3733,
+      "parameters": {
+        "random-seed": "31268.742651019948",
+        "initial-population": "491.0",
+        "pmut": "0.013493653851626687",
+        "maximum-sugar-endowment": "10.0",
+        "maximum-spice-endowment": "74.0",
+        "wealth-reproduction": "44.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.171875,
+          "permutation_exceedances": 5477,
+          "monte_carlo_p_plus_one": 0.2739,
+          "native_median": 1202.5,
+          "independent_median": 1214.0
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 9624,
+          "monte_carlo_p_plus_one": 0.48125,
+          "native_median": 85.0,
+          "independent_median": 82.0
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.15625,
+          "permutation_exceedances": 8439,
+          "monte_carlo_p_plus_one": 0.422,
+          "native_median": 1.0242611778039477,
+          "independent_median": 1.0305565307795117
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.171875,
+          "permutation_exceedances": 6040,
+          "monte_carlo_p_plus_one": 0.30205,
+          "native_median": 1.0221131545991953,
+          "independent_median": 1.0265198409247613
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 11059,
+          "monte_carlo_p_plus_one": 0.553,
+          "native_median": 4.808481980196776,
+          "independent_median": 4.79645479034593
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.09375,
+          "permutation_exceedances": 18890,
+          "monte_carlo_p_plus_one": 0.94455,
+          "native_median": 1.1002414077737241,
+          "independent_median": 1.1031875547293606
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.171875,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "af670d9ffc3d30751ae5d9d105e6d60f862750dacb8a36cda319a833590b2cf3"
+    },
+    {
+      "original_row": 1525,
+      "parameters": {
+        "random-seed": "1769.1599319294978",
+        "initial-population": "471.0",
+        "pmut": "0.194273381569551",
+        "maximum-sugar-endowment": "8.0",
+        "maximum-spice-endowment": "10.0",
+        "wealth-reproduction": "28.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.109375,
+          "permutation_exceedances": 16249,
+          "monte_carlo_p_plus_one": 0.8125,
+          "native_median": 1060.5,
+          "independent_median": 1054.0
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.15625,
+          "permutation_exceedances": 5576,
+          "monte_carlo_p_plus_one": 0.27885,
+          "native_median": 36.0,
+          "independent_median": 36.5
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 14103,
+          "monte_carlo_p_plus_one": 0.7052,
+          "native_median": 1.0441585040890065,
+          "independent_median": 1.049238222290334
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 14052,
+          "monte_carlo_p_plus_one": 0.70265,
+          "native_median": 1.0397021797478514,
+          "independent_median": 1.0435255507618173
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 11034,
+          "monte_carlo_p_plus_one": 0.55175,
+          "native_median": 2.3723832400186304,
+          "independent_median": 2.4845675782588623
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.078125,
+          "permutation_exceedances": 19812,
+          "monte_carlo_p_plus_one": 0.99065,
+          "native_median": 1.076416217163564,
+          "independent_median": 1.0741189630525927
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.15625,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "d11d193b291215c1edd489ff3a7bf47ff7934b6425487c8bdae81660225db0b1"
+    },
+    {
+      "original_row": 331,
+      "parameters": {
+        "random-seed": "54981.761734179345",
+        "initial-population": "219.0",
+        "pmut": "0.19750940867918987",
+        "maximum-sugar-endowment": "13.0",
+        "maximum-spice-endowment": "79.0",
+        "wealth-reproduction": "31.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.09375,
+          "permutation_exceedances": 18475,
+          "monte_carlo_p_plus_one": 0.9238,
+          "native_median": 1099.0,
+          "independent_median": 1101.0
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 12318,
+          "monte_carlo_p_plus_one": 0.61595,
+          "native_median": 58.0,
+          "independent_median": 57.5
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.171875,
+          "permutation_exceedances": 6059,
+          "monte_carlo_p_plus_one": 0.303,
+          "native_median": 1.041641699678415,
+          "independent_median": 1.026803419152682
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 11085,
+          "monte_carlo_p_plus_one": 0.5543,
+          "native_median": 1.033314330862643,
+          "independent_median": 1.0380394112011913
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.203125,
+          "permutation_exceedances": 2880,
+          "monte_carlo_p_plus_one": 0.14405,
+          "native_median": 4.734249120640696,
+          "independent_median": 4.99505089549072
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.25,
+          "permutation_exceedances": 735,
+          "monte_carlo_p_plus_one": 0.0368,
+          "native_median": 1.1127126604568818,
+          "independent_median": 1.1121023987131886
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.25,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "791c47112865b197324459424df36693af4faea55db1609492ab0cc888b11a53"
+    },
+    {
+      "original_row": 445,
+      "parameters": {
+        "random-seed": "50005.22210856324",
+        "initial-population": "454.0",
+        "pmut": "0.17565214896630438",
+        "maximum-sugar-endowment": "10.0",
+        "maximum-spice-endowment": "69.0",
+        "wealth-reproduction": "99.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 10723,
+          "monte_carlo_p_plus_one": 0.5362,
+          "native_median": 619.0,
+          "independent_median": 612.0
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.078125,
+          "permutation_exceedances": 18857,
+          "monte_carlo_p_plus_one": 0.9429,
+          "native_median": 37.0,
+          "independent_median": 36.0
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.203125,
+          "permutation_exceedances": 2781,
+          "monte_carlo_p_plus_one": 0.1391,
+          "native_median": 1.0101055401160846,
+          "independent_median": 1.0191653572532988
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 11095,
+          "monte_carlo_p_plus_one": 0.5548,
+          "native_median": 1.0174730724756995,
+          "independent_median": 1.0198711046221858
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.1875,
+          "permutation_exceedances": 4237,
+          "monte_carlo_p_plus_one": 0.2119,
+          "native_median": 4.631609450180785,
+          "independent_median": 4.557349240766135
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.171875,
+          "permutation_exceedances": 6090,
+          "monte_carlo_p_plus_one": 0.30455,
+          "native_median": 1.1116266674565072,
+          "independent_median": 1.1136178200330158
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.203125,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "3efc0f95ae7d42f80322f1e3dc07dbbcfc0f46010249f5a06735fa7401b2ab30"
+    },
+    {
+      "original_row": 3113,
+      "parameters": {
+        "random-seed": "16946.872504183662",
+        "initial-population": "486.0",
+        "pmut": "0.012251877696298853",
+        "maximum-sugar-endowment": "78.0",
+        "maximum-spice-endowment": "8.0",
+        "wealth-reproduction": "88.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.171875,
+          "permutation_exceedances": 5692,
+          "monte_carlo_p_plus_one": 0.28465,
+          "native_median": 844.5,
+          "independent_median": 853.0
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.0625,
+          "permutation_exceedances": 19919,
+          "monte_carlo_p_plus_one": 0.996,
+          "native_median": 46.0,
+          "independent_median": 47.0
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.109375,
+          "permutation_exceedances": 16760,
+          "monte_carlo_p_plus_one": 0.83805,
+          "native_median": 1.0244002461406134,
+          "independent_median": 1.026065942507694
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.140625,
+          "permutation_exceedances": 11060,
+          "monte_carlo_p_plus_one": 0.55305,
+          "native_median": 1.0250026811290909,
+          "independent_median": 1.0263071268203239
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.171875,
+          "permutation_exceedances": 6005,
+          "monte_carlo_p_plus_one": 0.3003,
+          "native_median": 2.339035816070731,
+          "independent_median": 2.1793498982563495
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 14075,
+          "monte_carlo_p_plus_one": 0.7038,
+          "native_median": 1.0516462955243875,
+          "independent_median": 1.0516285463302295
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.171875,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "e3609760da01f23ed33ae02ba037001f38b072051ff92c408aeb816a6fe69bc0"
+    },
+    {
+      "original_row": 3432,
+      "parameters": {
+        "random-seed": "61383.89537797734",
+        "initial-population": "112.0",
+        "pmut": "0.18411732585901253",
+        "maximum-sugar-endowment": "78.0",
+        "maximum-spice-endowment": "71.0",
+        "wealth-reproduction": "40.0"
+      },
+      "metrics": [
+        {
+          "metric": "last_population",
+          "ecdf_maximum_difference": 0.15625,
+          "permutation_exceedances": 7559,
+          "monte_carlo_p_plus_one": 0.378,
+          "native_median": 1142.0,
+          "independent_median": 1134.5
+        },
+        {
+          "metric": "minimum_population",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 12105,
+          "monte_carlo_p_plus_one": 0.6053,
+          "native_median": 34.0,
+          "independent_median": 35.0
+        },
+        {
+          "metric": "price_at475",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 14084,
+          "monte_carlo_p_plus_one": 0.70425,
+          "native_median": 1.036011299185076,
+          "independent_median": 1.0408847059476742
+        },
+        {
+          "metric": "last_price",
+          "ecdf_maximum_difference": 0.265625,
+          "permutation_exceedances": 436,
+          "monte_carlo_p_plus_one": 0.02185,
+          "native_median": 1.043266205284176,
+          "independent_median": 1.0261922345215484
+        },
+        {
+          "metric": "maximum_price",
+          "ecdf_maximum_difference": 0.125,
+          "permutation_exceedances": 14100,
+          "monte_carlo_p_plus_one": 0.70505,
+          "native_median": 3.039037621435992,
+          "independent_median": 2.871286272091265
+        },
+        {
+          "metric": "mean_price",
+          "ecdf_maximum_difference": 0.1875,
+          "permutation_exceedances": 4148,
+          "monte_carlo_p_plus_one": 0.20745,
+          "native_median": 1.07830905067729,
+          "independent_median": 1.0738139958616575
+        }
+      ],
+      "joint_maximum_ecdf_difference": 0.265625,
+      "rare_events": {
+        "persistent_late_price": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        },
+        "low_final_population": {
+          "counts": {
+            "native": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            },
+            "independent": {
+              "count": 0,
+              "rate": 0.0,
+              "seeds": []
+            }
+          },
+          "native_minus_independent_rate": 0.0,
+          "two_sided_fisher_p": 1.0
+        }
+      },
+      "comparison_sha256": "7f463ea396c2e6db2f068f83ebbedf2f805fafb733a960ed47f8f5bcf8d15bec"
+    }
+  ],
+  "original_dispatch_ledger": [
+    {
+      "original_row": 2439,
+      "exit_code": 0,
+      "elapsed_total_seconds": 405.7519291249919
+    },
+    {
+      "original_row": 4876,
+      "exit_code": 1,
+      "elapsed_total_seconds": 1006.4199585419847
+    },
+    {
+      "original_row": 4675,
+      "exit_code": 1,
+      "elapsed_total_seconds": 1606.474793833011
+    },
+    {
+      "original_row": 348,
+      "exit_code": 0,
+      "elapsed_total_seconds": 2017.4440589169972
+    },
+    {
+      "original_row": 3733,
+      "exit_code": 1,
+      "elapsed_total_seconds": 2618.1771647080022
+    },
+    {
+      "original_row": 1525,
+      "exit_code": 1,
+      "elapsed_total_seconds": 3218.2825667920115
+    },
+    {
+      "original_row": 331,
+      "exit_code": 1,
+      "elapsed_total_seconds": 3818.356564832997
+    },
+    {
+      "original_row": 445,
+      "exit_code": 0,
+      "elapsed_total_seconds": 4073.078009332996
+    },
+    {
+      "original_row": 3113,
+      "exit_code": 0,
+      "elapsed_total_seconds": 4439.572216750006
+    },
+    {
+      "original_row": 3432,
+      "exit_code": 0,
+      "elapsed_total_seconds": 5023.537224
+    }
+  ],
+  "recoveries": [
+    {
+      "original_row": 4876,
+      "original_terminal": {
+        "original_row": 4876,
+        "exit_code": 1,
+        "elapsed_total_seconds": 1006.4199585419847
+      },
+      "reconciliation_sha256": "142cec0ed8c591ced4cb59baf275bb2f295a9b65773e4488ed2c2dc2b0694c80"
+    },
+    {
+      "original_row": 4675,
+      "original_terminal": {
+        "original_row": 4675,
+        "exit_code": 1,
+        "elapsed_total_seconds": 1606.474793833011
+      },
+      "reconciliation_sha256": "930e6e8890f3f3929683f7115457ef8455f3994708e3e8c9da95f4fd04359e40"
+    },
+    {
+      "original_row": 3733,
+      "original_terminal": {
+        "original_row": 3733,
+        "exit_code": 1,
+        "elapsed_total_seconds": 2618.1771647080022
+      },
+      "reconciliation_sha256": "a7c09c36eec95bb2e699dbcfaf3d1fab1376c17b1a2afba144aeee9a1fd92118"
+    },
+    {
+      "original_row": 1525,
+      "original_terminal": {
+        "original_row": 1525,
+        "exit_code": 1,
+        "elapsed_total_seconds": 3218.2825667920115
+      },
+      "reconciliation_sha256": "30ab91e4714a03f8e78854e0a886b8d95427e1a8267109cd23a6e629b3a7e107"
+    },
+    {
+      "original_row": 331,
+      "original_terminal": {
+        "original_row": 331,
+        "exit_code": 1,
+        "elapsed_total_seconds": 3818.356564832997
+      },
+      "reconciliation_sha256": "38aa396b5e626e1c41748dfb8c47701dfedc1e1e52fc8ddb6a56060dc47fa606"
+    }
+  ],
+  "tests": [
+    {
+      "original_row": 2439,
+      "test": "joint_six_metrics",
+      "raw_p": 0.6955,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 2439,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 2439,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 4876,
+      "test": "joint_six_metrics",
+      "raw_p": 0.571,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 4876,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 4876,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 4675,
+      "test": "joint_six_metrics",
+      "raw_p": 0.4305,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 4675,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 4675,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 348,
+      "test": "joint_six_metrics",
+      "raw_p": 0.93715,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 348,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 348,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 3733,
+      "test": "joint_six_metrics",
+      "raw_p": 0.84905,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 3733,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 3733,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 1525,
+      "test": "joint_six_metrics",
+      "raw_p": 0.9489,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 1525,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 1525,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 331,
+      "test": "joint_six_metrics",
+      "raw_p": 0.1847,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 331,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 331,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 445,
+      "test": "joint_six_metrics",
+      "raw_p": 0.5554,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 445,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 445,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 3113,
+      "test": "joint_six_metrics",
+      "raw_p": 0.8389,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 3113,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 3113,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 3432,
+      "test": "joint_six_metrics",
+      "raw_p": 0.10985,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 3432,
+      "test": "persistent_late_price",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    },
+    {
+      "original_row": 3432,
+      "test": "low_final_population",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1,
+      "reject_at_familywise_005": false
+    }
+  ],
+  "runs": 1280,
+  "observations": 641280,
+  "excluded_runs": 0,
+  "family_size": 30,
+  "familywise_alpha": 0.05,
+  "scope": "Outcome-blind ten-setting diagnostic. Holm adjustment covers ten joint six-metric permutation tests and twenty Fisher tests. Inherited per-cohort report prose describes an earlier single-setting experiment; selection provenance and prospective scope come from this frozen plan. No equivalence margin was specified; nonsignificance is not equivalence. These results do not establish historical estimator replication or a whole-paper verdict."
+}

@@ -1,0 +1,28 @@
+{
+  "completed_cloud_chunks": 50,
+  "validated_cloud_inputs": 1250,
+  "validated_local_inputs": 893,
+  "validated_unique_inputs": 2143,
+  "statistics_recomputed": 321450,
+  "missing_intervals": [
+    [
+      1881,
+      2005
+    ],
+    [
+      2139,
+      3503
+    ],
+    [
+      3631,
+      5000
+    ]
+  ],
+  "maximum_recomputation_absolute_error": 2.2737367544323206e-13,
+  "platform_provenance": "native-checkpoint.tar.gz:start.json",
+  "archives": {
+    "native-checkpoint.tar.gz": "24b187bb7c7d584057e38e0b679f5f784f6ca0ed1f245e2d4f088c6066cba8ec",
+    "reconciliation.tar.gz": "82fa572a37171488f04b71c000df9384febb8decb5dbfb9b0adf80755cbfb167"
+  },
+  "scope": "Intermediate prefix; completed chunks only. Live producer continues. No full5000 or paper-level result."
+}

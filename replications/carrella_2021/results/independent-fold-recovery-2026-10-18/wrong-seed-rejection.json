@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/homebrew/bin/Rscript",
+    "--vanilla",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-fold-resume-qualification-001/resume_estimator_atomic.R",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-estimator-inputs-complete-001",
+    "lm",
+    "1250",
+    "1",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-fold-resume-qualification-001/wrong-seed-output",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-fold-resume-qualification-001/lm-prefix"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Error: identical(readLines(file.path(resume_dir, \"arguments.txt\")),  .... is not TRUE\nExecution halted\n",
+  "output_created": false
+}

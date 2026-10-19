@@ -1,0 +1,46 @@
+{
+  "rows": [
+    {
+      "parameter": "initial.population",
+      "published": 0.528,
+      "author_data_performance": 0.499665248447167,
+      "independent_data_performance": 0.601618939260105,
+      "author_matches_printed_precision": false,
+      "independent_matches_printed_precision": false
+    },
+    {
+      "parameter": "pmut",
+      "published": 0.328,
+      "author_data_performance": 0.436193778519141,
+      "independent_data_performance": 0.457359450099248,
+      "author_matches_printed_precision": false,
+      "independent_matches_printed_precision": false
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "published": 0.311,
+      "author_data_performance": 0.347443748236836,
+      "independent_data_performance": 0.539754600346057,
+      "author_matches_printed_precision": false,
+      "independent_matches_printed_precision": false
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "published": 0.328,
+      "author_data_performance": 0.164329489487925,
+      "independent_data_performance": 0.548529949662307,
+      "author_matches_printed_precision": false,
+      "independent_matches_printed_precision": false
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "published": -1.329,
+      "author_data_performance": -3.00235124307186,
+      "independent_data_performance": 0.817684054687604,
+      "author_matches_printed_precision": false,
+      "independent_matches_printed_precision": false
+    }
+  ],
+  "scope": "Descriptive simulation-statistic sensitivity; paired original parameters and folds, different simulator random streams. Neither result recovers published GAM values.",
+  "completed_study": false
+}

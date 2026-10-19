@@ -1,0 +1,86 @@
+{
+  "size": 1250,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "summary": [
+    {
+      "parameter": "initial.population",
+      "published": 0.468,
+      "primary_seed_zero": 0.463495057111922,
+      "seed_count": 10,
+      "mean": 0.46784291003203193,
+      "sample_sd": 0.006807398655929467,
+      "minimum": 0.4557191380638922,
+      "maximum": 0.4784439044342943,
+      "published_within_observed_range": true
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "published": 0.423,
+      "primary_seed_zero": 0.436137524185557,
+      "seed_count": 10,
+      "mean": 0.4358825496373187,
+      "sample_sd": 0.00543687579303971,
+      "minimum": 0.42463338161323716,
+      "maximum": 0.44322334856584344,
+      "published_within_observed_range": false
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "published": 0.424,
+      "primary_seed_zero": 0.423884386703421,
+      "seed_count": 10,
+      "mean": 0.41805598770560254,
+      "sample_sd": 0.00570686811285179,
+      "minimum": 0.4074449718916616,
+      "maximum": 0.424027223005518,
+      "published_within_observed_range": true
+    },
+    {
+      "parameter": "pmut",
+      "published": 0.338,
+      "primary_seed_zero": 0.350284444190329,
+      "seed_count": 10,
+      "mean": 0.338785519315755,
+      "sample_sd": 0.008021417829805548,
+      "minimum": 0.32064189749269945,
+      "maximum": 0.3489593764537585,
+      "published_within_observed_range": true
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "published": 0.567,
+      "primary_seed_zero": 0.5635486458472,
+      "seed_count": 10,
+      "mean": 0.5675217075765273,
+      "sample_sd": 0.004586297221036355,
+      "minimum": 0.5619550532966576,
+      "maximum": 0.5779056883555056,
+      "published_within_observed_range": true
+    }
+  ],
+  "validated_predictions": 62500,
+  "verified_input_cells": 9437500,
+  "independent_arithmetic_maximum_absolute_error": 3.410605131648481e-13,
+  "arithmetic_absolute_tolerance": 1e-10,
+  "matched_primary_package_versions": {
+    "abc": "2.2.2",
+    "abctools": "1.1.8",
+    "R.utils": "2.13.0",
+    "dplyr": "1.2.1",
+    "purrr": "1.2.2",
+    "tidyr": "1.3.2",
+    "readr": "2.2.0"
+  },
+  "scope": "Fixed-data estimator sensitivity. Observed ranges are not confidence intervals. No historical RNG identification, equivalence, primary-score replacement, or paper completion."
+}

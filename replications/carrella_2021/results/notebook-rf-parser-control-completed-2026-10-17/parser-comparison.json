@@ -1,0 +1,120 @@
+{
+  "comparison": "Sequential original notebook versus fixed-sequential-RNG base-R parser control",
+  "input_differences": [
+    {
+      "column": "pmut",
+      "different_cells": 795,
+      "maximum_absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "column": "min.normalized.gini",
+      "different_cells": 13,
+      "maximum_absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "column": "sd.normalized.gini",
+      "different_cells": 1329,
+      "maximum_absolute_difference": 1.3877787807814457e-17
+    },
+    {
+      "column": "trend.count.turtles",
+      "different_cells": 14,
+      "maximum_absolute_difference": 7.8062556418956319e-18
+    },
+    {
+      "column": "trend.normalized.gini",
+      "different_cells": 4234,
+      "maximum_absolute_difference": 1.0001765041178778e-17
+    },
+    {
+      "column": "trend.sum..psugar..of.patches",
+      "different_cells": 6,
+      "maximum_absolute_difference": 8.6736173798840355e-18
+    },
+    {
+      "column": "trend.sum..pspice..of.patches",
+      "different_cells": 4,
+      "maximum_absolute_difference": 6.9388939039072284e-18
+    },
+    {
+      "column": "trend.number.of.prices",
+      "different_cells": 19,
+      "maximum_absolute_difference": 9.1072982488782372e-18
+    },
+    {
+      "column": "trend.mean.prices",
+      "different_cells": 4096,
+      "maximum_absolute_difference": 1.0408340855860843e-17
+    },
+    {
+      "column": "snap.75.normalized.gini",
+      "different_cells": 1,
+      "maximum_absolute_difference": 6.0715321659188248e-18
+    },
+    {
+      "column": "snap.100.normalized.gini",
+      "different_cells": 4,
+      "maximum_absolute_difference": 6.9388939039072284e-18
+    },
+    {
+      "column": "snap.125.normalized.gini",
+      "different_cells": 2,
+      "maximum_absolute_difference": 7.8062556418956319e-18
+    },
+    {
+      "column": "snap.125.mean.prices",
+      "different_cells": 1,
+      "maximum_absolute_difference": 3.4694469519536142e-18
+    },
+    {
+      "column": "snap.150.normalized.gini",
+      "different_cells": 2,
+      "maximum_absolute_difference": 8.6736173798840355e-18
+    },
+    {
+      "column": "snap.200.normalized.gini",
+      "different_cells": 1,
+      "maximum_absolute_difference": 6.9388939039072284e-18
+    },
+    {
+      "column": "snap.225.normalized.gini",
+      "different_cells": 1,
+      "maximum_absolute_difference": 3.4694469519536142e-18
+    }
+  ],
+  "predictions": {
+    "initial.population": {
+      "predictions": 5000,
+      "exactly_equal": 1449,
+      "maximum_absolute_difference": 36,
+      "mean_absolute_difference": 3.7726000000000877
+    },
+    "pmut": {
+      "predictions": 5000,
+      "exactly_equal": 258,
+      "maximum_absolute_difference": 0.022811458308297131,
+      "mean_absolute_difference": 0.002362432494453278
+    },
+    "maximum.sugar.endowment": {
+      "predictions": 5000,
+      "exactly_equal": 1703,
+      "maximum_absolute_difference": 9,
+      "mean_absolute_difference": 0.97810000000000019
+    },
+    "maximum.spice.endowment": {
+      "predictions": 5000,
+      "exactly_equal": 1736,
+      "maximum_absolute_difference": 6.5,
+      "mean_absolute_difference": 0.89839999999999964
+    },
+    "wealth.reproduction": {
+      "predictions": 5000,
+      "exactly_equal": 3405,
+      "maximum_absolute_difference": 7.5,
+      "mean_absolute_difference": 0.33779999999999899
+    }
+  },
+  "final_rng_identical": false,
+  "aggregate_errors_difference": [0.054672507754233379, 6.2236946057930148e-05, -0.0070054136367030395, -0.017822526634036606, -0.0089532839783350582],
+  "scope": "Both workflows use the same pre-forest random state, source, five-fold partitions and runtime. This control isolates changed parsed total_data; no paper-level negative verdict."
+}

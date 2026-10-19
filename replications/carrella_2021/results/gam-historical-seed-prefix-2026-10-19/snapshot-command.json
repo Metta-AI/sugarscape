@@ -1,0 +1,17 @@
+{
+  "command": [
+    "autor",
+    "run",
+    "relh-sugarscape-carrella-r405-cpu2-20261019-v1",
+    "--timeout",
+    "60",
+    "--json",
+    "--",
+    "bash",
+    "-c",
+    "set -eu\ncd /root/sugarscape/carrella-gam-historical-seeds-001\nfor seed in 01 02; do\n  test -f seed-$seed/run/complete.txt\n  grep -q '\"exit_code\":0' seed-$seed/terminal.json\ndone\nmkdir /root/sugarscape/carrella-gam-historical-prefix-001\ntar -czf /root/sugarscape/carrella-gam-historical-prefix-001/results.tar.gz inputs seed-01 seed-02 runtime.txt payload-check.txt SHA256SUMS run.sh\nstat -c %s /root/sugarscape/carrella-gam-historical-prefix-001/results.tar.gz\nsha256sum /root/sugarscape/carrella-gam-historical-prefix-001/results.tar.gz\n"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"exit_code\": 0,\n  \"stderr\": \"\",\n  \"stdout\": \"4748576\\n09493c9cef37e3add59b9c20f62db2189035d5bf6df0bf49eedf953bae8e05f5  /root/sugarscape/carrella-gam-historical-prefix-001/results.tar.gz\\n\",\n  \"timing_ms\": {\n    \"exec\": 470\n  },\n  \"truncated\": false\n}\n",
+  "stderr": ""
+}
