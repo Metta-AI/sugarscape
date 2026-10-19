@@ -1,9 +1,9 @@
 {
-  "as_of": "2026-10-19T22:44:01.534017+00:00",
+  "as_of": "2026-10-19T22:46:18.469642+00:00",
   "minimum_completed_papers": 10,
-  "completed_studies": 5,
+  "completed_studies": 6,
   "wholly_positive_papers": 1,
-  "interpretation": "Five completed studies under the user\u2019s method-based criterion: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural, Lima qualified author-code architecture feasibility, and Carrella qualified method reproduction. Numerical agreement is separate. Carrella retains 37 primary discrepancies and historical random-stream/runtime qualifications; no validated-negative or universal stochastic-equivalence claim. Other studies require individual method reassessment.",
+  "interpretation": "Six completed studies under the user\u2019s method-based criterion: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural, Lima qualified author-code architecture feasibility, Carrella qualified method reproduction, and Thaler qualified author-code simulation/benchmark method reproduction. Numerical agreement is separate. Carrella retains 37 primary discrepancies and historical random-stream/runtime qualifications; no validated-negative or universal stochastic-equivalence claim. Thaler retains hardware, scheduling and time83-versus-caption50 qualifications. Other studies require individual method reassessment.",
   "studies": [
     {
       "study": "mcculloch_2022",
@@ -187,14 +187,14 @@
     {
       "study": "thaler_2019",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/16",
-      "checked_commit": "f6eb3cfa2578504c439dec2929d4b3a2547d23b8",
-      "status": "partial",
+      "checked_commit": "cea904b14248371b1281a29b8f73bf5bb0f7d5bd",
+      "status": "completed-method-qualified",
       "readme": "replications/thaler_2019/README.md",
-      "readme_sha256": "89b99b5d22b91300c9ccb2eb5aa34a513c1e0db2c7115b6ebf4e41218dc9e34b",
-      "json_evidence_files": 210,
+      "readme_sha256": "0e983f6eeb2adf2cc0cf51b08613e3df9b92c75517c6ee0ede23089c84074e1e",
+      "json_evidence_files": 211,
       "gzip_json_evidence_files": 0,
-      "remaining_scope": "All 51 timing cells, 225 population processes and 90 retry processes audited. Figure 5b reproduces all 50 values; Figure 5a matches 201 occupied cells at exported time83 rather than caption50. Thirteen timing propositions distinguish three paper-prose/table inconsistencies from native differences. Four full TArray runs validate 4,000 observations: both full-grid rebirth runs keep 2,500 occupied cells throughout while final observables are2,320. This corrects our observation-count interpretation, not lost-agent behavior. The32-capability retry discrepancy persists after original Criterion repetition controls. Historical clock/scheduling equivalence and performance interpretation remain unresolved; no whole-paper verdict.",
-      "checked_at": "2026-10-19T05:31:58.427631+00:00",
+      "remaining_scope": "Completed qualified author-code method reproduction:51timing conditions204raw measurements225population processes90Table7retry processes30Table9retry processes. Fresh51condition reconciliation and raw90retry/4000observation reaudits byte-exact. Figure5b50values exact; Figure5a201occupied cells exact only at exported83 versus caption50, explicit posthoc alignment. Tables6/8differenthardware; Table9sameinstanceclass but historical clocks/isolation unknown. Retry32-cap discrepancy and3internal prose/table conflicts retained. No universal stochastic equivalence, exact historical performance or causal scheduler claim. See method-verdict-2026-10-19.",
+      "checked_at": "2026-10-19T22:46:18.469642+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/thaler_2019"
     },
     {
