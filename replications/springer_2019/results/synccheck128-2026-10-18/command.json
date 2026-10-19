@@ -1,0 +1,10 @@
+[
+  "timeout",
+  "90",
+  "compute-sanitizer",
+  "--tool",
+  "synccheck",
+  "--error-exitcode",
+  "86",
+  "./debug-128"
+]

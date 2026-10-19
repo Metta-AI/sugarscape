@@ -162,3 +162,8 @@ The next bounded control, `cmd-c66px`, uses `--control-size 128 --control-capaci
 [The audited 128×128 control](results/grid128-complete-2026-10-18) times out at agent-creation synchronization after 60 seconds. It retains native allocator capacity and changes only the grid-size compile parameter relative to the passing 32×32 control. All 511 qualified source hashes and the binary hash pass audit. Each launch thread handles at most one cell, so repeated initialization-loop iterations are not required to trigger the stall.
 
 [Command cmd-9e7tt](results/synccheck128-2026-10-18) runs NVIDIA Compute Sanitizer 2022.3.0 synchronization checking on that exact binary under a 90-second bound. No source or compile flags change. Pending or incomplete sanitizer output is not a clean synchronization verdict.
+
+
+The synchronization probe has finished: the unchanged binary times out after 90 seconds during agent creation. The sealed archive and parent-binary hash pass readback audit. Compute Sanitizer prints its banner but no error summary; this is inconclusive, not a synchronization pass. [The captured logs and audit](results/synccheck128-2026-10-18) retain that distinction.
+
+Read-only Docker registry checks returned 404 for three historical official tags: `9.1-devel-ubuntu16.04`, `9.1-cudnn7-devel-ubuntu16.04`, and `9.1-devel`. This rules out those tag names only; an official historical toolkit download remains a possible route to the original compiler environment. No allocator patch follows from these observations.
