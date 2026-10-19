@@ -1,0 +1,20 @@
+args <- commandArgs(trailingOnly=TRUE)
+stopifnot(length(args)==4L, !file.exists(args[[4]]))
+original <- unzip(args[[1]], list=TRUE)$Name
+expected <- sort(original[grepl("^benthamHalfLookaheadBinary[0-9]+\\.config$", original)])
+stopifnot(length(expected)==100L, length(unique(expected))==100L)
+inventory <- jsonlite::fromJSON(args[[2]])
+rows <- inventory$runs[inventory$runs$entry %in% expected, ]
+stopifnot(nrow(rows)==100L, identical(sort(rows$entry), expected))
+counts <- c(sum(rows$final_population==0L),sum(rows$final_population>0L & rows$final_population<=250L),sum(rows$final_population>250L))
+stopifnot(sum(counts)==100L)
+report <- jsonlite::fromJSON(args[[3]], simplifyVector=FALSE)
+target <- Filter(function(x) x$label=="table_III",report$rows)
+stopifnot(length(target)==1L)
+target <- target[[1]]
+stopifnot(isTRUE(target$complete),target$required_inputs==100L,target$audited_inputs==100L,length(target$missing_entries)==0L)
+stopifnot(all(unlist(target$complete_percentages)==counts), all(unlist(target$complete_percentage_point_differences)==counts-c(0,0,100)))
+stopifnot(target$equal_initial_population==sum(rows$final_population==250L))
+result <- list(original_inputs=100L,audited_inputs=100L,observations=sum(rows$observations),counts=counts,percentages=counts,published_percentages=c(0,0,100),percentage_point_differences=counts-c(0,0,100),equal_initial_population=sum(rows$final_population==250L),scope="Independent R census selected directly from original ZIP filenames. Verifies Table III arithmetic on audited endpoints, not an independent simulation or full-paper verdict.")
+jsonlite::write_json(result,args[[4]],auto_unbox=TRUE,pretty=TRUE,digits=17)
+print(result)

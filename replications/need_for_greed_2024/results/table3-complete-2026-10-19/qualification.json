@@ -1,0 +1,33 @@
+{
+  "table": "III",
+  "original_inputs": 100,
+  "observations": 500100,
+  "published_percentages": [
+    0,
+    0,
+    100
+  ],
+  "reproduced_percentages": [
+    0,
+    0,
+    100
+  ],
+  "independent_R_exact": true,
+  "repeat_public_cli_byte_exact": true,
+  "other_tables_incomplete_percentages_withheld": true,
+  "newly_recovered_inputs": 5,
+  "new_observations": 25005,
+  "combined_audited_inputs": 417,
+  "combined_observations": 1708358,
+  "analyzer_sha256": "e2fe2f23819fabc0aaeb725ca2721c48179611ddd05eb3d3b171e51efbaad839",
+  "evidence_sha256": {
+    "snapshot.json": "221665b820c9c42fc7a0a4e4f922a9e4af33c82ad551fc62cd1e92c23b6194f6",
+    "audit.json": "e8196dd53e61ec7a7c4327a58b0dbfe505233bc7089107184b1bde32b7b2f694",
+    "reconciliation.json": "845456ca4407fe8166ac3fe3b3848493ef405261e4633eca21f873be12ccb0fd",
+    "tables.json": "ed111780176447ef0ee130a7984b59bd68cdb06e1ec97bac402666743c3ad2c4",
+    "r-validation.json": "669c4af573f28d59cd967aa736ae6a7a5db7b9d546c85921d285b40d34899de6",
+    "storage-readback.json": "2ff33d18c0860102393742f73bf64e3600600b5ed930ca5fc81db91d5dbf7356",
+    "verify_table3.R": "2a958670c33bf5db8115ca366e437c00702252bf42f75ad263c255d44adb3a33"
+  },
+  "scope": "Complete Table III numerical reproduction using released engine and all original utilitarian baseline configurations. Other tables and full sweep unresolved; no completed-paper credit."
+}
