@@ -1,0 +1,32 @@
+{
+  "outer_seconds": 1200,
+  "execution_limits_seconds": [
+    60,
+    60,
+    180,
+    180
+  ],
+  "budget_usd": 4,
+  "grid_sides": [
+    32,
+    128,
+    1700,
+    1700
+  ],
+  "modes": [
+    "debug",
+    "debug",
+    "debug",
+    "release"
+  ],
+  "source_edits": 0,
+  "capacity": 16777216,
+  "iterations": 10000,
+  "seed": 42,
+  "build_environment": "Isolated official Ubuntu16.04 + checksum-verified CUDA9.1.85; GCC5.4.0",
+  "target_deviation": "compute61 PTX instead of original sm50/sm61 cubins to permit H100 execution",
+  "runner_sha256": "40d21b3db08074e45b5ce7f762a5cad7dd0763bacf73bdfbd0ba6ad7fc6e0afe",
+  "scope": "Sequential gated original-source execution qualification; not historical GPU performance or full-state validation",
+  "predecessor": "cmd-ttkdy: initial compile failed to load existing libnvvm.so.3; no simulation execution",
+  "change": "Add existing toolkit nvvm/lib64 directory to isolated rootfs loader configuration and refresh cache; use unique build directory."
+}

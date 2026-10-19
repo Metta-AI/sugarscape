@@ -187,3 +187,10 @@ The first two historical-toolkit preparations stopped before image extraction be
 
 
 The first historical-source build failed before simulation: `cicc` could not load the existing `libnvvm.so.3`. [The sealed failure audit](results/historical-loader-failure-2026-10-19) verifies all511 source files byte-for-byte against the publisher artifact and confirms zero executions. Retry `cmd-j4ayg` adds the extracted toolkit’s `nvvm/lib64` to the isolated loader configuration, refreshes its cache, and records the library hash. Source and compiler binaries remain unchanged. Each attempt now requires an explicit unique build directory inside `/work`.
+
+
+### Unchanged artifact executes under original compiler families
+
+[The historical-toolchain trial](results/historical-native-complete-2026-10-19) builds both debug controls successfully. The32×32 run completes all10,000 steps; the128×128 run exceeds60seconds. The gate prevents full-size runs. All511 artifact source files match the publisher ZIP, and both executed binaries match their recorded hashes. Original CUB, allocator code, model code, seed and capacity are retained.
+
+This establishes a timeout without our CUDA11.8 syntax or CUB edits. It does not identify the timeout’s phase because this original-source trial has no progress observer. The H100/PTX execution environment still differs from TitanXp native machine code. No full-state equivalence or negative paper-replication verdict follows.
