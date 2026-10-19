@@ -1,5 +1,7 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+[The landscape interpretation audit](results/landscape-interpretations-2026-10-19) quantifies capacity and boundary ambiguities on two retained host worlds. Minimum peak spacing of 20 does not prevent summed sugar exceeding four. Independent R reproduces all 786,432 cell values. These initialization diagnostics do not establish native simulation fidelity or add completed-study credit.
+
 [Counter-carryover controls passed all four native audits](results/counter-reset-native-complete-2026-10-19/README.md), covering 2,873,995 post-step records. Per-step resets eliminate unresolved agents in all 100 observed steps while preserving the nine-round cap. Both baseline trajectories repeat exactly; broader method qualifications remain.
 
 [All five method controls passed native state audits](results/method-controls-native-complete-2026-10-19/README.md), covering 3,964,000 post-step records. Combined corrections leave 4,613 active agents versus 8,792 in the release. Counter carryover remains unresolved; no whole-paper completion credit.
