@@ -479,3 +479,9 @@ The unknown author seed, phase and fitting procedure prevent an exact-trajectory
 [The original 100-seed ensemble is being extended to 150,000 cycles](results/late-birth-cost-launch-2026-10-19), preserving rules and verifying every existing prefix.
 The first two complete runs match 2,002 shared observations exactly. Full analysis rejects incomplete ensembles.
 This tests the earlier author's 130,000–150,000 window as a declared sensitivity; it does not identify the target paper's sampling protocol.
+
+## Figure 3 wealth and inequality targets
+
+[All 362 markers](results/figure3-vector-targets-2026-10-19) are recovered from the original vector PDF: 50 puberty, 65 infertility and 66 birth-cost points in each panel.
+Axis calibration confirms logarithmic mean-age, wealth, and Gini scales. Repeated extraction is byte-identical, and the rendered reconstruction matches source shapes.
+Numerical parameter assignments, seeds and steady-state windows remain unknown; this closes target extraction, not the missing sensitivity experiments.
