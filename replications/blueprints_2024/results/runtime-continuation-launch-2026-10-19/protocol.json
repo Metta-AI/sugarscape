@@ -1,0 +1,36 @@
+{
+  "node": "relh-sugarscape-runtime-memory-cpu8-20261018-v1",
+  "original_intervals": [
+    {
+      "model": "rawSugarscape",
+      "steps": 50000,
+      "start": 86,
+      "stop": 100,
+      "first_unfinished_entry": "50000-rawSugarscape8289106131243214398.config",
+      "completed_interval": [
+        66,
+        86
+      ]
+    },
+    {
+      "model": "altruisticHalfLookaheadBinary",
+      "steps": 50000,
+      "start": 22,
+      "stop": 100,
+      "first_unfinished_entry": "50000-altruisticHalfLookaheadBinary3331735877162924787.config",
+      "completed_interval": [
+        6,
+        22
+      ]
+    }
+  ],
+  "group_seconds": 21600,
+  "outer_seconds": 23400,
+  "platform_limit_minutes": 391,
+  "quoted_per_minute_usd": 0.0096,
+  "compute_plus_idle_cap_usd": 3.8976,
+  "prior_command": "cmd-y47e9",
+  "prior_terminal_exit": 1,
+  "script_sha256": "79bb1e2438af5e0c92bba4e0ae07b6bcb9a21aa178fd1b6c3b9801ab945b7369",
+  "scope": "Only unfinished original inputs; preserve full50000-step horizons and previous partial evidence. No completed-input duplication."
+}

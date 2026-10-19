@@ -1083,3 +1083,7 @@ Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishn
 ### Selfishness 0.37 reaches 403 audited inputs
 
 [Eleven further checkpoints](results/selfishness037-fifth-prefix-2026-10-19) add 275 disjoint inputs and 1,351,453 validated observations. Of these, 270 reach 5,000 steps and five end in native extinction. All local and producer audits agree. Inventory reconciliation preserves earlier evidence and reaches 403/500 inputs for condition 0.37, with 410/100,000 supplementary inputs overall. No completion-order aggregate or paper verdict is claimed.
+
+### Remaining runtime intervals queued on the retained node
+
+[The bounded continuation](results/runtime-continuation-launch-2026-10-19) preserves original raw indices 86–99 and altruistic indices 22–99, including interrupted inputs at full 50,000-step horizons. The owned node is restoring from its snapshot; boot command `cmd-6icjf` is registered. The prior six-hour group limits remain, with a $3.90 quoted compute bound. Registration adds no validated coverage.
