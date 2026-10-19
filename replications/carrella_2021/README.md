@@ -1136,3 +1136,28 @@ Rscript replications/carrella_2021/diagnose_linear_mutation.R \
   /author/gam-1250-folds /independent/lm-1250-folds \
   /author/linear/predictions.csv /independent/prediction-audit/predictions.csv /new/output
 ```
+
+## Fixed-parameter repeated-seed diagnostic
+
+[All128 runs](results/fixed-parameter-seeds-2026-10-19/audit.json) completed:64 fresh seeds per engine at original input675's parameters.
+Seeds0–63 and501 observations were fixed before execution; model rules and source inputs were unchanged.
+The two-hour,100MiB bound was not reached. All64,128 observations pass finite-value, population, resource and terminal-state checks.
+Every archive member matches its original bytes, and the extracted archive reproduces the audit exactly.
+This checks output accounting, not independent replay of every state transition.
+
+Native seed37 produces a late price spike:21.1071 at observation475 and22.7295 at500, with nine final agents.
+Its minimum population is four. The original anomalous late-price behavior therefore recurs under a fresh native seed.
+Independent runs also produce large prices (maximum13.0492), but their largest final price is1.12681.
+The engines' final-population medians are488 and486.5; their observation475 price medians are1.02252 and1.02284.
+
+These exploratory outcomes identify rare low-population trajectories as a useful next diagnostic target.
+They neither establish equal rare-event rates nor identify an implementation error from64 seeds per engine.
+The source input was selected after its estimator failures, and matching seed labels do not align random streams.
+No run is discarded and no new paper-completion credit is assigned.
+
+```sh
+python replications/carrella_2021/audit_seed_ensemble.py /extracted/ensemble /new/audit
+```
+
+The archive retains the exact launcher, commands, parameter files, compiled native driver, source hashes, logs and all128 trajectories.
+Its protocol lists the original source paths needed for hash verification.
