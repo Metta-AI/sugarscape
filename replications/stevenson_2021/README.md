@@ -508,3 +508,10 @@ The [2022 chapter’s public Appendix B](https://link.springer.com/chapter/10.10
 The published form agrees with the recurrence form supported by our existing vector diagnostic.
 This resolves that version-specific algebraic ambiguity; it does not resolve the stated delay3 versus the exploratory zero-delay figure reconstruction.
 The publisher PDF request returned HTML. Published figure equivalence, fitting conventions and the agent-model discrepancies remain unresolved; no new completion credit is assigned.
+
+## Published Figure 6 check
+
+[The publisher raster comparison](results/published-figure6-check-2026-10-19) retains the figure URL/hash and an exploratory comparison against preprint vectors.
+Of184 vertices away from axes, legend and clipping,164 lie within two pixels of dark image content; maximum distance is5.55 pixels.
+Independent scalar arithmetic reproduces all184 distances. Visual inspection finds consistent labels and curve shapes.
+This one-way proximity check cannot identify overlapping/dotted curves or prove numerical identity. The delay discrepancy remains unresolved.
