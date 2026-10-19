@@ -36,6 +36,8 @@ The first auditor attempt compared a nested hash mapping with its enclosing docu
 
 [The later author plotting control](results/later-author-death-control-2026-10-19) also gives graphical agreement for death rates when aging is included. Its 5,001 rates pass independent arithmetic checks, but neither its later source version nor its pooled aggregation establishes the paper’s historical pipeline.
 
+[The original-input inventory](results/remaining-input-plan-2026-10-19) separates 164 audited inputs, six reserved controls, and 10,330 remaining inputs. Recover the remaining baseline evidence before rerunning it. The single-condition compute projection is about $134 before overhead; no new batch is launched.
+
 ## Remaining work
 
 Recover and freshly verify the remaining 336 baseline trajectories; execute or reuse all 10,000 remaining sweep inputs. Reproduce Tables I–IV and Figures 2–6 with declared aggregation and denominator conventions. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
