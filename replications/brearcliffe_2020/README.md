@@ -1,6 +1,6 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
-[Rule M/Q-learning now completes all 50 seeds](results/rule-m-q-complete-cohort-2026-10-19), with full-trajectory audit and independent R verification. Together with Rule M/Rule M and Rule M/EC, three of sixteen released-code pairings have complete cohorts. Total audited coverage is 150 released-code plus two paper-table inputs, totaling 3,040,152 observations.
+[Rule M/SARSA now completes all 50 seeds](results/rule-m-sarsa-complete-cohort-2026-10-19), with full-trajectory audit and independent R verification. Four of sixteen released-code pairings have complete cohorts. Total audited coverage is 200 released-code plus two paper-table inputs, totaling 4,040,202 observations. All fourteen Rule M/SARSA endpoint ranges overlap the paper raster intervals; this does not establish curve equivalence or whole-paper replication.
 
 Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical to the Rule M/Rule M panel. Both curves are excluded from agreement judgments. Eleven of twelve remaining endpoint range comparisons overlap the paper raster intervals; this is not equivalence or a negative replication.
 
