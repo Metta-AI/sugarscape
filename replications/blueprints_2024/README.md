@@ -2,7 +2,7 @@
 
 **Incomplete replication. Original configurations recovered; the paper explicitly names the v2024.1 release used here.**
 
-[Runtime checkpoint 0008](results/runtime-second-continuation-fourth-prefix-2026-10-19) raises deposited-input coverage to 924/1,200 and 3,606,475 observations. Exact overlap checks and fresh archive readback pass; the distinct paper timing experiment remains unresolved.
+[Runtime checkpoint 0010](results/runtime-second-continuation-fifth-prefix-2026-10-19) raises deposited-input coverage to 927/1,200 and 3,656,798 observations. Exact overlap checks and fresh archive readback pass; the distinct paper timing experiment remains unresolved.
 
 [The seventh](results/heterogeneous50-seventh-prefix-2026-10-19) and [eighth heterogeneous checkpoints](results/heterogeneous50-eighth-prefix-2026-10-19) add 50 audited original inputs and 154,016 observations. Supplementary coverage is 707/100,000; the 50% heterogeneous condition is 201/500. Fresh archive extraction reproduces all 50 audits; earlier input records remain unchanged. These completion-order prefixes do not establish an unbiased condition-level distribution.
 
