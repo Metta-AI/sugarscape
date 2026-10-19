@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[Full Figure3–9 curves](results/full-curve-digitization-2026-10-19) now include 52,808 visible raster bounds across 112 panels. All 224 previous endpoints are preserved; hidden or disconnected segments remain unresolved.
+
 [Figures 4–9 endpoint targets](results/metric-digitization-2026-10-19) now retain 170 visible raster bounds and 22 unresolved endpoints across six metrics. Repeated extraction is byte-identical; these image bounds are not statistical confidence intervals.
 
 Study status: native recorder corrected and qualified across 20,000 ticks. No reproduced-paper result yet.
