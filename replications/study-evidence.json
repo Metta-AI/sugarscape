@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T21:37:24.875961+00:00",
+  "as_of": "2026-10-19T21:41:04.285278+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -277,15 +277,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "59e3038e7ee5253033d0b41139faa32dba9108c0",
+      "checked_commit": "7f47b86e1175502650360f2f67dec8af5c2d651d",
       "status": "running",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "5338b1959ff3b19a36ad49e32f6283b8570249804ea3eb3f9ae2e7a6972866aa",
-      "json_evidence_files": 446,
+      "readme_sha256": "3dcf6aeb11a7ed67e80d56eec66d865cb62b21e45934b6e96338da17ec52359b",
+      "json_evidence_files": 450,
       "gzip_json_evidence_files": 23,
-      "checked_at": "2026-10-19T21:35:20.008787+00:00",
+      "checked_at": "2026-10-19T21:41:04.285278+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "852 inputs and 17,040,852 observations audited: 700 released-code, 152 paper-table. Fourteen released and three paper-table cohorts complete. SARSA/EC and paper-table Rule M/Q add 100 inputs with full prior-record preservation. Independent R checks each cohort: 320016 means/SD and 14 endpoints with 20000 bootstrap draws. Endpoint mean ranges overlap 13/14 and 11/12 readable paper ranges respectively; remaining pointwise intervals overlap, not equivalence. Two mislabeled Rule M/Q combat endpoints remain excluded. All 50 Rule M/Q paired trajectories differ across parameter interpretations. Fresh durable readback verifies 1004 members across manifests 012 and 013; latest manifest d9be8701f7b0bd486d2b7e3d527771b37e125f2bd170e911982ebc1c4a50a092. Remaining 100 released and 648 paper-table inputs; historical settings, full figure synthesis and whole-paper verdict unresolved. Claim-level analysis of all six released Rule M/learning matchups reopens300 trajectories: all18 wealth/vision/metabolism endpoint differences are positive with positive pointwise intervals. Higher metabolism represents greater consumption. Independent R checks1800 raw endpoint values exactly and234 summaries within3.553e-15. EC leads wealth early, with final negative ticks1898/1964 in the two orientations; no all-time dominance or whole-paper verdict. No new simulation coverage."
+      "remaining_scope": "852 inputs and 17,040,852 observations audited: 700 released-code, 152 paper-table. Fourteen released and three paper-table cohorts complete, with independent R arithmetic and durable backup readback. Remaining 100 released and 648 paper-table inputs. Rule M claim analysis finds 18 positive wealth/vision/metabolism endpoint differences across six matchups; higher metabolism is consumption cost. EC claim analysis supports all14 directional wealth/combat/starvation endpoints across six matchups. Each analysis reopens300 existing trajectories, with independent R raw-endpoint and bootstrap checks; no added coverage. Rule M wealth advantage has an early EC transient. EC combat deaths exceed Rule M by24.9\u201327.3%, while all four endpoint ranges overlap the paper graphics; no numerical equivalence margin exists. Both claim analyses are post hoc, pointwise only. All50 paper Rule M/Q trajectories differ from released counterparts. Mislabeled Figure6 panels remain excluded. Historical settings, remaining ensembles, figure synthesis, and whole-paper verdict remain unresolved."
     },
     {
       "study": "need_for_greed_2024",
