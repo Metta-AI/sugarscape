@@ -3,7 +3,7 @@
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
-The [eighth parameter setting](results/parameter-eighth-cohort-complete-2026-10-19) passes trajectory, archive-readback, and independent R audits. Eight of ten settings now cover 1,024 runs and 513,024 observations. The last two settings and combined analysis remain required.
+The [ninth parameter setting](results/parameter-ninth-cohort-complete-2026-10-19) passes trajectory, archive-readback, and independent R audits. Nine of ten settings now cover 1,152 runs and 577,152 observations. The final setting and combined analysis remain required.
 
 **Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
 
@@ -149,13 +149,13 @@ An intentionally corrupted reference statistic yields 1,499/1,500 matches and a 
 All 5,000 author-model simulations and the independent ensemble are audited. The complete estimator comparison covers all 75 finite Table 8 entries.
 Saved-fold audits include interval coverage and widths; Sugarscape-only results do not establish the paper's cross-model aggregate coverage claims.
 
-1. Finish the last two settings in the ten-setting parameter-space diagnostic, retain failures, and run the declared combined 30-test analysis.
+1. Finish the final setting in the ten-setting parameter-space diagnostic, retain failures, and run the declared combined 30-test analysis.
 2. Assess remaining independent-model discrepancies using the completed diagnostic and existing mechanism checks. Nonsignificant tests alone do not establish equivalence.
 3. Attribute the 37 published-score discrepancies using the retained source, parser, random-stream, and runtime controls before assigning a negative verdict.
 4. Report remaining historical-environment uncertainty explicitly. The R 4.0.5 controls cover individual point-fit folds, not a complete five-fold interval workflow.
 
 The [complete estimator comparison](results/estimator-comparison-complete-2026-10-19) and
-[latest validated parameter setting](results/parameter-eighth-cohort-complete-2026-10-19) are the current evidence checkpoints.
+[latest validated parameter setting](results/parameter-ninth-cohort-complete-2026-10-19) are the current evidence checkpoints.
 The [combined analysis](results/parameter-recovery-analysis-preparation-2026-10-19) requires all ten settings and preserves original timeout receipts.
 
 Do not replace the traded two-resource model with the one-resource McCulloch variant.
