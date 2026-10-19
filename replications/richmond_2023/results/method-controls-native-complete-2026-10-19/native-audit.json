@@ -1,0 +1,147 @@
+{
+  "archive": {
+    "archive": "/root/sugarscape/richmond-observed-method-controls-001/native-evidence.tar.gz",
+    "bytes": 37844967,
+    "sha256": "15465771b82e2e49d276399bcb54511dffa78aa7946c59d1d22b6547768edacd"
+  },
+  "member_sha256": {
+    "cardinal-build.log": "17284724045ba4759e01d3f5f8e6494a773ba1461dea313aabf66633ac14447f",
+    "cardinal-native.log": "6d250b78781ae504fb4c0e559d181d3940639591451354e25a8063fcd1fb166d",
+    "combined_three_rules-build.log": "17284724045ba4759e01d3f5f8e6494a773ba1461dea313aabf66633ac14447f",
+    "combined_three_rules-native.log": "6d250b78781ae504fb4c0e559d181d3940639591451354e25a8063fcd1fb166d",
+    "commands.json": "26082c2dec2babc179b7d72ca3c4de6aaa71a86fccc7436993161ac5a45c0ef5",
+    "compiler.log": "2492f521845dd536aad96475a9c2fd8299b960a29d0821dcab0bbe0e1668717b",
+    "completed.json": "f46ca3543d1782289227ec7b7cd5e8b89bf433bdec7f56d984f0d8330026235a",
+    "configure.log": "56ce9237ed718ca57e7156923197d8857d35d438d4f543effb8be9720e660826",
+    "cuda.log": "d311dbfe8f6f9daf71b78669dc82ce000742712243f10463e40ff1490df08420",
+    "gpu.log": "40d81b3379fe36d736f85f5fa7478793e12e3eb84035906e65965e36e6fccd7a",
+    "nonpositive_death-build.log": "17284724045ba4759e01d3f5f8e6494a773ba1461dea313aabf66633ac14447f",
+    "nonpositive_death-native.log": "6d250b78781ae504fb4c0e559d181d3940639591451354e25a8063fcd1fb166d",
+    "original-source.tar": "03d75d4fc00d1452afc6d05ae757da329ce30a2142991d6a8cf71369da305fb0",
+    "protocol.json": "7ae5c4b2eff95efae7a385482dcc5c956fab4896726890b28cb67a2be062cd27",
+    "released-build.log": "322ed62e8c547aea128f30f3a89af4ac528f896f64062ae3312f91c5a8f38db2",
+    "released-native.log": "6d250b78781ae504fb4c0e559d181d3940639591451354e25a8063fcd1fb166d",
+    "run_controls.py": "d09578bf22ffa4efb89ad2611055ac12e63cf6e01b53e05c0f5ea55a42b1a99c",
+    "runs/cardinal/binary-sha256.txt": "aba28fbb25e9f401c6256d45879b6aa7ddb8a0de41aab40fa3c9928b52546f9f",
+    "runs/cardinal/performance_scaling.csv": "4d3c0107b16c2055b8ce339db2a53acfa7034a21afcac008013608d3c38b6c7b",
+    "runs/cardinal/performance_scalingperStep.csv": "a978ed2ad00a881dbd1e9fa5970066ff90f0722b16e51be00ca2bf607a9c9f69",
+    "runs/cardinal/state.csv": "e9da120de9a0a9b922a56aeaf12181a91bdf31de06571a0f50b010400e20448c",
+    "runs/combined_three_rules/binary-sha256.txt": "da7255634da8a52cbb539c0b494cabfa0115cde7570b7624d4d82787b8740376",
+    "runs/combined_three_rules/performance_scaling.csv": "bcd71ee4b5a7fe6c7610b86cda72750ddc94cee4a87b2d54916ddab513bca9ea",
+    "runs/combined_three_rules/performance_scalingperStep.csv": "d949e0ab0b00a291b21b96cd1c2feb4188206efb87bb78c30413e6267ab4e939",
+    "runs/combined_three_rules/state.csv": "2a573063df4331f40d44a2952810c4d73a3474c6ecace75d10921cfe5e7ca17f",
+    "runs/nonpositive_death/binary-sha256.txt": "f06add0d591e1456669dcf07163406d7af9898c0fa736a2e6fcba1144f2b5417",
+    "runs/nonpositive_death/performance_scaling.csv": "363b606e902b179344f2e6c6cd9f7c35c3369e2cbf023c57a936ea66f49ce580",
+    "runs/nonpositive_death/performance_scalingperStep.csv": "53a2e542129b765a1fbc0f0e7b96c968a4b3d7bc66f17f8c1b1d2a3846051fa8",
+    "runs/nonpositive_death/state.csv": "4abcce3274d363fd0d0fb648a003cc117b03cc9a917cb095f1153743bbfdf83a",
+    "runs/released/binary-sha256.txt": "6931c6345e60e618a9e8508676d4ba4b6644d28bc2f85a54375705dd78fa5120",
+    "runs/released/performance_scaling.csv": "7425b7fc7f1ec01d31ff865a2da9542311c4d1a234d0c5b46a0c99e257cf0a61",
+    "runs/released/performance_scalingperStep.csv": "31eb3fd2e2019cbdc108d7cd536edb352821a5ec2dc82a0a84d1b4f52ea9210c",
+    "runs/released/state.csv": "4abcce3274d363fd0d0fb648a003cc117b03cc9a917cb095f1153743bbfdf83a",
+    "runs/transfer/binary-sha256.txt": "38f185e8fdd87137d4c021d293d09eea14e790330306ef5440b228321d64fdfc",
+    "runs/transfer/performance_scaling.csv": "1efce4dfa35aa466a4cb6b9d5d8e4fa53b431673d34b67397824a697013fd52d",
+    "runs/transfer/performance_scalingperStep.csv": "5c10114eb262c800f5c77552b0bd8a9c08dace6db2b98cb0de31c34e9c0b0bc2",
+    "runs/transfer/state.csv": "887aa01e629d30e969ec756ae2ec3f70ac4baff6863dcaa990b0717d1c0e3886",
+    "terminal.json": "7043b3e3f38f9725ff0e49c292935a816eb7d7e7b000c92ae560f7f9dece2b86",
+    "transfer-build.log": "e1c69b40b2654ab24c9aa7293c8b037fa0314c9c2983533026a09927ed5bc57b",
+    "transfer-native.log": "6d250b78781ae504fb4c0e559d181d3940639591451354e25a8063fcd1fb166d",
+    "variants/cardinal/src/main.cu": "0fbff93a9f0743ed88b76341c3f7394a9e9b1bf119d0f9c97516f0c92f7eed76",
+    "variants/combined_three_rules/src/main.cu": "d744a9c7b843921b204ef1281951e30a4395638d78737293b3e3510a68fd3485",
+    "variants/nonpositive_death/src/main.cu": "0a01e8654ac8748b733a51dabb294b0d62767bebe9a18adcd7e2a1358a65e79a",
+    "variants/released/src/main.cu": "307bb4829ffef97b9eb004bdc59b58282aebd937c0bd4138581753bef711fba4",
+    "variants/transfer/src/main.cu": "355935783b74e00cc46218326c2d6c3106404dc717cbe3922a8592892df075e3"
+  },
+  "variants": [
+    {
+      "variant": "released",
+      "state_sha256": "4abcce3274d363fd0d0fb648a003cc117b03cc9a917cb095f1153743bbfdf83a",
+      "post_step_observations": 881753,
+      "moves": 615829,
+      "deaths": 2472,
+      "final": {
+        "step": 99,
+        "active": 8792,
+        "deaths": 0,
+        "moves": 5727,
+        "stays": 3065,
+        "diagonal_moves": 2993,
+        "negative_wealth_after_metabolism_survivors": 0,
+        "unresolved": 3065
+      },
+      "diagonal_moves": 316519
+    },
+    {
+      "variant": "transfer",
+      "state_sha256": "887aa01e629d30e969ec756ae2ec3f70ac4baff6863dcaa990b0717d1c0e3886",
+      "post_step_observations": 793541,
+      "moves": 606408,
+      "deaths": 4053,
+      "final": {
+        "step": 99,
+        "active": 7211,
+        "deaths": 6,
+        "moves": 5108,
+        "stays": 2103,
+        "diagonal_moves": 2691,
+        "negative_wealth_after_metabolism_survivors": 3258,
+        "unresolved": 2103
+      },
+      "diagonal_moves": 311069
+    },
+    {
+      "variant": "cardinal",
+      "state_sha256": "e9da120de9a0a9b922a56aeaf12181a91bdf31de06571a0f50b010400e20448c",
+      "post_step_observations": 861103,
+      "moves": 745033,
+      "deaths": 2682,
+      "final": {
+        "step": 99,
+        "active": 8582,
+        "deaths": 0,
+        "moves": 7272,
+        "stays": 1310,
+        "diagonal_moves": 0,
+        "negative_wealth_after_metabolism_survivors": 0,
+        "unresolved": 1310
+      },
+      "diagonal_moves": 0
+    },
+    {
+      "variant": "nonpositive_death",
+      "state_sha256": "4abcce3274d363fd0d0fb648a003cc117b03cc9a917cb095f1153743bbfdf83a",
+      "post_step_observations": 881753,
+      "moves": 615829,
+      "deaths": 2472,
+      "final": {
+        "step": 99,
+        "active": 8792,
+        "deaths": 0,
+        "moves": 5727,
+        "stays": 3065,
+        "diagonal_moves": 2993,
+        "negative_wealth_after_metabolism_survivors": 0,
+        "unresolved": 3065
+      },
+      "diagonal_moves": 316519
+    },
+    {
+      "variant": "combined_three_rules",
+      "state_sha256": "2a573063df4331f40d44a2952810c4d73a3474c6ecace75d10921cfe5e7ca17f",
+      "post_step_observations": 545850,
+      "moves": 499487,
+      "deaths": 6651,
+      "final": {
+        "step": 99,
+        "active": 4613,
+        "deaths": 7,
+        "moves": 4157,
+        "stays": 456,
+        "diagonal_moves": 0,
+        "negative_wealth_after_metabolism_survivors": 0,
+        "unresolved": 456
+      },
+      "diagonal_moves": 0
+    }
+  ],
+  "scope": "Declared native state accounting conditional on observed destinations; no independent random-choice/conflict-winner reconstruction and no whole-paper completion."
+}

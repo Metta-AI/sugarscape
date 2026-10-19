@@ -1,0 +1,72 @@
+[
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-control-auditor-validation-001/initial.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/native/runs/released/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/released-transitions.json",
+      "--variant",
+      "released"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 881753, \"moves\": 615829, \"deaths\": 2472, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-control-auditor-validation-001/initial.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/native/runs/transfer/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/transfer-transitions.json",
+      "--variant",
+      "transfer"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 793541, \"moves\": 606408, \"deaths\": 4053, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-control-auditor-validation-001/initial.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/native/runs/cardinal/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/cardinal-transitions.json",
+      "--variant",
+      "cardinal"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 861103, \"moves\": 745033, \"deaths\": 2682, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-control-auditor-validation-001/initial.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/native/runs/nonpositive_death/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/nonpositive_death-transitions.json",
+      "--variant",
+      "nonpositive_death"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 881753, \"moves\": 615829, \"deaths\": 2472, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-control-auditor-validation-001/initial.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/native/runs/combined_three_rules/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-observed-method-controls-001/combined_three_rules-transitions.json",
+      "--variant",
+      "combined_three_rules"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 545850, \"moves\": 499487, \"deaths\": 6651, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  }
+]
