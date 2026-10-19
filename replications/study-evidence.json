@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T20:40:58.076677+00:00",
+  "as_of": "2026-10-19T20:42:26.871098+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "bd70e1ab236f8f1cd8f72a840e3d857c80f8e2b2",
+      "checked_commit": "054b1ed24969c1236caacf77d72bc201f84d8e9d",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "0b1dbd435019264ced73d7e42f76c21e6129918e94ad5e404e35525d6f16a69c",
-      "json_evidence_files": 351,
-      "gzip_json_evidence_files": 21,
-      "checked_at": "2026-10-19T20:40:58.076677+00:00",
+      "readme_sha256": "00d86d4be6af0ad9e7172d4569cb5a27d6df998358a970fd6b5043b5939d0238",
+      "json_evidence_files": 353,
+      "gzip_json_evidence_files": 24,
+      "checked_at": "2026-10-19T20:42:26.871098+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "387 unique inputs and 1,616,323 observations audited: 182 baseline, 205 sweep. Complete 0.36 cohort: 100 seeds, 490,477 observations; four median measurements agree graphically under all declared conventions, starvation-plus-combat death rate does not. Independent NumPy verifies 2,400 per-run values, maximum scaled error 3.57e-16. Same median pattern as complete 0.37; historical aggregation unresolved. Table IV bin 202/500, no full-row percentages. Remaining 218 baseline and 9,895 sweep inputs, full tables and figures; no completed-paper credit. At 0.36, population quartiles give 108/108 per-run envelope matches versus 0/108 time-pooled; independent R verifies all 216 quantiles and distances. Historical plotting code remains unidentified."
+      "remaining_scope": "387 unique inputs and 1,616,323 observations audited: 182 baseline, 205 sweep. Complete 0.36 and 0.37 cohorts have four graphically agreeing median measurements. At 0.36, all 108 per-run population quantile comparisons fit; no time-pooled comparison does. Aging-inclusive death medians fit 72/72, but neither quartile fits; primary death quantiles all miss. Independent R checks 216 population and 432 death comparisons. No full historical plotting pipeline identified. Table IV bin 202/500 with percentages withheld. Remaining 218 baseline and 9,895 sweep inputs, full tables and figures; no completed-paper credit."
     }
   ],
   "study_prs": 22,
