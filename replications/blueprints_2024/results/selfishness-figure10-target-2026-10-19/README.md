@@ -13,7 +13,7 @@ The endpoints and dotted quartile curves are excluded.
 Reproduce from the study checkout with PyMuPDF:
 
 ```sh
-python replications/blueprints_2024/extract_selfishness_target.py /path/to/blueprints-author-2024.pdf /new/output
+python replications/blueprints_2024/extract_population_target.py /path/to/blueprints-author-2024.pdf /new/output --figure 10
 ```
 
 Two real-PDF executions produced byte-identical CSV and JSON files.

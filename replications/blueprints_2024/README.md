@@ -6,6 +6,8 @@
 
 [The fourteenth heterogeneous checkpoint](results/heterogeneous50-fourteenth-prefix-2026-10-19) adds 25 audited original inputs and 77,166 observations. Supplementary coverage is 857/100,000; the 50% heterogeneous condition is 351/500. Two fresh extractions reproduce all 25 audits; all 832 earlier input records remain unchanged. This completion-order prefix does not establish an unbiased condition-level distribution.
 
+[The Figure 16 target](results/heterogeneous-figure16-target-2026-10-19) places the 50% utilitarian median curve at population 925.37–943.24 within its printed line thickness. This is a graphical target for the complete 500-seed cohort, not a confidence interval or replication result.
+
 All **2,000/2,000 original homogeneous configurations** are complete and audited, with 5,063,268 observations.
 [The complete union](results/homogeneous-complete-2026-10-18) validates all 500 seeds for each model without double counting.
 All four Table 3 rows match the published counts exactly under the released plotter's classification.

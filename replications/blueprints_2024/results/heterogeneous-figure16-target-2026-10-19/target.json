@@ -1,0 +1,31 @@
+{
+  "paper_sha256": "56f25d6c9c3947954e29689a4fbd4c2ff0c09abd6515e631311939b747d4d51d",
+  "pdf_page_one_based": 17,
+  "figure": 16,
+  "frame_drawing_index": 29,
+  "median_drawing_index": 30,
+  "axis_centers_pdf_points": [
+    354.9900764160156,
+    74.7169517211914,
+    507.58408129882815,
+    162.285955078125
+  ],
+  "frame_half_width_pdf_points": 0.143,
+  "interior_factors": 99,
+  "selected_factor": {
+    "utilitarian_percent": 50,
+    "pdf_x": 431.2870788574219,
+    "ink_top_pdf_y": 103.28673477222684,
+    "ink_bottom_pdf_y": 104.40459998632832,
+    "population_ink_lower": 925.3719241067415,
+    "population_ink_upper": 943.2436736956121
+  },
+  "definition_from_caption": "Median of per-run mean population over 500 seeds.",
+  "limits": [
+    "Ink bounds are graphical precision bounds, not confidence or quartile intervals.",
+    "PDF coordinate rounding and frame-center approximation remain additional uncertainty.",
+    "Endpoint caps and dotted quartile curves are not extracted.",
+    "Time averaging, extinction handling and historical quantile convention remain unresolved.",
+    "No simulation comparison or replication verdict is made here."
+  ]
+}
