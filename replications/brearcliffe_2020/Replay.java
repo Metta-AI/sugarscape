@@ -29,11 +29,12 @@ public class Replay {
             workspace.command("set initial-population 400 set corner-start true set combat true "
                 + "set replace-dead true set sugar-growback-rate 1 set visualization \"no-visualization\" "
                 + "set group-A-action \"" + args[1] + "\" set group-B-action \"" + args[2] + "\" setup");
-            String record = "file-print (word ticks";
+            // Agentset reporters randomize traversal. Observation must not advance the model RNG.
+            String record = "with-local-randomness [file-print (word ticks";
             for (String reporter : reporters) {
                 record += " \",\" (" + reporter + ")";
             }
-            record += ")";
+            record += ")]";
             String escaped = output.toString().replace("\\", "\\\\").replace("\"", "\\\"");
             workspace.command("file-open \"" + escaped + "\" file-print \"tick," + String.join(",", reporters)
                 + "\" " + record + " repeat " + steps + " [go " + record + "] file-close");

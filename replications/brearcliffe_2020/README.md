@@ -1,6 +1,6 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
-Study status: source recovered; bounded native pilot running. No reproduced-paper result yet.
+Study status: native recorder discrepancy identified and corrected; full native comparison running. No reproduced-paper result yet.
 
 Paper: [Creating Intelligent Agents: Combining Agent-Based Modeling with Machine Learning](https://doi.org/10.1007/978-3-030-83418-0_3).
 The [author-deposited release](https://www.comses.net/codebases/ffb52fc3-69e1-4bbd-b5d7-fa460617f74e/releases/1.0.0/) includes the NetLogo model, symmetric map, and ODD description.
@@ -24,7 +24,7 @@ The original source remains unchanged. This fixed seed is prospective, not a rec
 It records initial state and every subsequent tick, with both populations and all fourteen figure statistics.
 A complete run must contain 20,001 finite observations with consecutive tick values.
 The pilot has a 600-second wall limit, 1 GiB Java heap, and 50 MiB output cap. Partial outputs remain evidence, without completion credit.
-The compilation passed and the real native model started; full terminal status and audit remain pending.
+The first full pilot completed but failed recorder qualification. The [retained discrepancy and correction](results/recorder-qualification-2026-10-19) show exact short-run agreement after isolating measurement randomness. Corrected full-extent and native BehaviorSpace runs are active.
 
 Compile against the NetLogo application JARs, then run:
 
