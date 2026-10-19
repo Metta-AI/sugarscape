@@ -1,5 +1,7 @@
 # Carrella (2021): Sugarscape parameter estimation
 
+[The first two additional historical seeds pass full audit](results/gam-historical-seed-prefix-2026-10-19). Their 12,500 point predictions exactly match seed zero; all 25,000 interval bounds differ. Both retain zero printed-score matches. Seven prospective seeds remain, and primary study status is unchanged.
+
 [A bounded fitting-seed sensitivity is running](results/gam-historical-seed-sensitivity-launch-2026-10-19): nine additional prospective seeds, identical saved folds, and full interval calculations. All ten seeds, including the completed seed-zero control, will be reported without selecting a best result. The $1.38 conservative node allowance remains below a $2 gate; launch adds no completion credit.
 
 [The full historical GAM replay is complete](results/gam-historical-full-complete-2026-10-19). All five folds and 18,750 predictions/bounds pass audit. None of five historical scores matches printed precision; two move closer and three farther from the paper. Five final random states match the modern replay. Runtime sensitivity is confirmed, but the 37 primary discrepancies remain unresolved.
