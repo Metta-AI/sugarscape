@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T21:24:20.733823+00:00",
+  "as_of": "2026-10-19T21:29:50.998963+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "b2e72640bfc4e20bd617c24e49b184362a2aa7b3",
+      "checked_commit": "c16e2a28b84bba5a2c9c5100115c203821327005",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "72b28257946a3b31f8de14d28cdf770aad857a061e739b76b021843997dd8854",
-      "json_evidence_files": 398,
-      "gzip_json_evidence_files": 64,
-      "checked_at": "2026-10-19T21:24:20.733823+00:00",
+      "readme_sha256": "1cff332c77caae55349caaa98b711b7f7938019998cf1e7b9d7d48a54524b5f7",
+      "json_evidence_files": 400,
+      "gzip_json_evidence_files": 66,
+      "checked_at": "2026-10-19T21:29:50.998963+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "512 original inputs and 2,019,577 observations freshly audited: 257 baseline and 255 sweep. Sixth baseline and sweep checkpoints add 50 disjoint inputs and 177,903 observations; original configurations, runtime payloads and full trajectory hashes verified. Table III remains exactly reproduced over all 100 original utilitarian inputs (0/0/100); independent R previously verified the source-entry census. Tables I and II have 53/100 and 50/100 inputs; Table IV first bin has 252/500, with no incomplete percentages reported. Remaining 143 baseline and 9845 sweep inputs. Four metric medians and quartiles fit paper graphics at selfishness .36 and .37; stated death-rate definition remains discrepant. Aging-inclusive, pooled, and initial-population-denominator diagnostics do not resolve full death quartiles. No whole-paper verdict. Existing bounded jobs continue. Frozen 9597 unassigned sweep inputs remain unlaunched pending separate $175 budget approval and qualified execution harness."
+      "remaining_scope": "512 original inputs and 2,019,577 observations freshly audited: 257 baseline and 255 sweep. Sixth baseline and sweep checkpoints add 50 disjoint inputs and 177,903 observations; original configurations, runtime payloads and full trajectory hashes verified. Table III remains exactly reproduced over all 100 original utilitarian inputs (0/0/100); independent R previously verified the source-entry census. Tables I and II have 53/100 and 50/100 inputs; Table IV first bin has 252/500, with no incomplete percentages reported. Remaining 143 baseline and 9845 sweep inputs. Four metric medians and quartiles fit paper graphics at selfishness .36 and .37; stated death-rate definition remains discrepant. Aging-inclusive, pooled, and initial-population-denominator diagnostics do not resolve full death quartiles. No whole-paper verdict. Existing bounded jobs continue. Frozen 9597 unassigned sweep inputs remain unlaunched pending separate $175 budget approval, native qualification, and budget-controlled dispatch. Preparation CLI now validates all19 real shards, 9597 distinct inputs, 9711 payload hashes, and two exact repeats. New runner includes setup in its boot-time admission deadline and hard outer timeout; Linux bootstrap and runtime gates remain unexecuted. No new simulation credit."
     }
   ],
   "study_prs": 22,
