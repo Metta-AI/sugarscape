@@ -1132,9 +1132,7 @@ The binary uses the existing two-CPU node alongside the single-core inheritance
 continuation; its shared node memory limit is 8 GiB. The node's observed rate implies
 at most $5.184 over 36 hours, excluding its final idle window.
 
-The process is running and has not reported a completed assertion. A bounded
-collector exports its terminal log, original binary, manifest, and exit receipt to
-task-owned storage. This launch resolves no property or whole-paper verdict yet.
+The process has completed with exit 1. [Terminal evidence](results/model-suite-native-terminal-2026-10-19) verifies the original binary and all 100 inheritance cases. Its expected-failure mismatch confirms the harness interpretation below; no whole-paper verdict follows.
 
 ## Original model-test coverage semantics
 
@@ -1154,10 +1152,7 @@ That outcome would describe the harness, not independently establish a false Gin
 Each case still executes ten simulations. Wealth uses `once`, so its ten simulations
 form one successful case even when its statistical checks produce a coverage warning.
 
-These are static control-flow findings, not observed terminal results. The unchanged
-native suite remains running for confirmation. Resource failures and nontermination
-remain possible. The separately audited simulation ensembles retain their own
-statistical results; neither framework status completes this replication study.
+The unchanged native suite now confirms this control-flow outcome after 105,012.96 seconds. Inheritance reports 100 passing cases where failure was expected and 0% Gini-condition coverage; wealth reports one passing case. The separate simulation ensembles retain their numerical evidence. Neither framework status completes this replication study.
 
 ## Complete inheritance and mating cohort
 

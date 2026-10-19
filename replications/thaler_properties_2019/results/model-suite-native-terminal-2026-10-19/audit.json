@@ -1,0 +1,20 @@
+{
+  "archive_sha256": "e29bb8851fa3364aae67181f46822366f4ca3b541baa9d83dd6b1e541b6549cd",
+  "binary_exactly_matches_launch": true,
+  "manifest_exactly_matches_launch": true,
+  "runner_exactly_matches_launch": true,
+  "exit_code": 1,
+  "elapsed_seconds": 105012.95510649681,
+  "inheritance_cases": 100,
+  "wealth_cases": 1,
+  "member_sha256": {
+    "sugarscape-model-test": "60860b2871ea9881bc30037ed8c873ddcb4c2cbdfa6c88fca0b452f9e9f431b4",
+    "manifest.json": "8a453c8e4336866447a3236bfd77da44bdce490348bb2234676b2cdcf54d7888",
+    "preflight.json": "c87be8bd8a1384f495ca93078601c203d25425c34759c85a239ec6ab532a9c6c",
+    "command.json": "df0d6d46e094ce7c105e55ccbb56b6e12d8e0006d686066822933ed1327f26f8",
+    "run_native.py": "98efc380515d5cedc1730ccda9bef672e8f47cae59f69b759f3106915fa3921b",
+    "model-suite.log": "da9e6e55f7bd374a7f966c04f22bf31fa1629ab538f531a5e94772c298f11669",
+    "terminal.json": "69e57e43e513f7e5454df3babc579dcfd045fdb9a90f7e2500fcd4205f65c3ed"
+  },
+  "interpretation": "Observed expected-failure mismatch agrees with prior pinned QuickCheck source audit. No falsifying case was reported; coverage warning is not a paper-level negative replication. Wealth status alone does not validate its statistical claim."
+}
