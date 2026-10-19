@@ -1,0 +1,20 @@
+{
+  "predecessor": {
+    "command_id": "cmd-3z989",
+    "ended_at": "2026-10-18T23:35:47.805899+00:00",
+    "env": [],
+    "exit_code": 1,
+    "object": "command",
+    "started_at": "2026-10-18T23:34:54.692028+00:00",
+    "state": "exited"
+  },
+  "outer_seconds": 600,
+  "per_probe_seconds": [
+    60,
+    120,
+    120
+  ],
+  "budget_usd": 2,
+  "scope": "Host-progress diagnostic, no benchmark timing or whole-paper verdict",
+  "runner_sha256": "54eb411b4cd9d6ad5d584cc7edd632ed7f3cfc7de85bc5f10d30bb3394c5466b"
+}

@@ -1,0 +1,13 @@
+{
+  "outer_seconds": 900,
+  "execution_limit_seconds": 60,
+  "budget_usd": 2,
+  "grid_side": 128,
+  "allocator_capacity": 16777216,
+  "architecture": "compute61",
+  "mode": "debug",
+  "iterations": 10000,
+  "seed": 42,
+  "scope": "Native-capacity grid128 control. Existing create_agents launch has128 blocks x128 threads:128 squared cells equals one loop iteration per launch thread. Distinguishes workload increase before repeated per-thread initialization iterations; no model changes or benchmark claim.",
+  "runner_sha256": "67e80a9d1101848f1a1418c5aadb8160553ca4ddcc5c771436d2442970260ea8"
+}

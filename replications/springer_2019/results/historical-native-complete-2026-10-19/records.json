@@ -1,0 +1,74 @@
+[
+  {
+    "kind": "build",
+    "mode": "debug",
+    "grid_side": 32,
+    "command": [
+      "/usr/local/cuda-9.1/bin/nvcc",
+      "-O3",
+      "-g",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_61,code=compute_61",
+      "-maxrregcount=64",
+      "-Iexample/configuration/dynasoar",
+      "-I.",
+      "-Ilib/cub",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/work/dynasoar-cuda91-native-002/debug-32",
+      "-DPARAM_SIZE=32"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 5.272224451999136
+  },
+  {
+    "kind": "execution",
+    "mode": "debug",
+    "grid_side": 32,
+    "returncode": 0,
+    "limit_seconds": 60,
+    "elapsed_seconds": 14.036238537000827,
+    "binary_sha256": "ac0ab6df667c6d9bd7fd6b714aa0b30d648d41a196cd1c657d8925486053cdac"
+  },
+  {
+    "kind": "build",
+    "mode": "debug",
+    "grid_side": 128,
+    "command": [
+      "/usr/local/cuda-9.1/bin/nvcc",
+      "-O3",
+      "-g",
+      "-std=c++11",
+      "-lineinfo",
+      "--expt-extended-lambda",
+      "-gencode",
+      "arch=compute_61,code=compute_61",
+      "-maxrregcount=64",
+      "-Iexample/configuration/dynasoar",
+      "-I.",
+      "-Ilib/cub",
+      "-Xcudafe",
+      "--diag_suppress=1427",
+      "example/sugarscape/dynasoar_no_cell/sugarscape.cu",
+      "-o",
+      "/work/dynasoar-cuda91-native-002/debug-128",
+      "-DPARAM_SIZE=128"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 5.2725644480015035
+  },
+  {
+    "kind": "execution",
+    "mode": "debug",
+    "grid_side": 128,
+    "returncode": 124,
+    "limit_seconds": 60,
+    "elapsed_seconds": 60.15693457499947,
+    "binary_sha256": "f61b2502acd445bb9a427c60c49f36b249617be9a4ad92779ca0cde1f9ea0c3d"
+  }
+]

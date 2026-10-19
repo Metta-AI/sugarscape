@@ -1,0 +1,45 @@
+{
+  "chip": "h100",
+  "custom_image": {
+    "digest": "sha256:be2096fa6eac084b3b040369cc59af328eaecf5eedb45a65bfda96b24245fef1",
+    "note": "your own image, supervised by the platform: its entrypoint never runs (the platform keeps the node alive for run_command), and only the home path survives stops - everything else resets every wake"
+  },
+  "id": "d25860ff-40be-4508-8a6d-bfbc5d5cc64f",
+  "image": "nvidia/cuda@sha256:be2096fa6eac084b3b040369cc59af328eaecf5eedb45a65bfda96b24245fef1",
+  "mission": {
+    "auto": true,
+    "name": "auto-2026-10-18-79e24386",
+    "url": "https://autoresearch.sfcompute.com/missions/auto-2026-10-18-79e24386"
+  },
+  "mission_hint": "this node named no mission, so it was filed under \"auto-2026-10-18-79e24386\" - this workspace's catch-all for today. A receipt is worth reading when it is named after the question: open_mission(name: \"<what you are investigating>\") once, then pass mission: \"<name>\" on create_node / run_command / submit_job / submit_jobs, and hand the human that mission's url.",
+  "name": "relh-sugarscape-dynasoar-qualify-20261018-v1",
+  "note": "coming up now; poll get_node until running, then work through run_command. provisioning.estimated_ready_seconds(_p90) count DOWN from this shape's measured spin-up window, so a repeat poll shows real progress toward ready. Once ready the node idles on its billed grace window (rate.minimum_minutes; get_node shows the deadline as idle_stops_at) - the first run_command keeps it, or it auto-stops when the window lapses. A boot command set now (run_command on_wake) still starts the moment it is ready. hold_node keeps it awake past that window while you work on it interactively. Do not delete and re-create a provisioning node: the new create waits its turn again.",
+  "object": "node",
+  "rate": {
+    "calendar": {
+      "band": "weekend",
+      "next_cheaper": {
+        "band": "Friday",
+        "per_min": "$0.05628/min",
+        "per_min_usd_micros": 56280,
+        "percent_off": 33,
+        "starts_at": "2026-10-23T07:00:00Z"
+      },
+      "note": "Fridays 33% off, weekends 20% off (US Pacific) - applied to the minutes that run on those days, not locked at create",
+      "percent_off": 20
+    },
+    "gpu_count": 1,
+    "idle_window_minutes": 15,
+    "idle_window_usd": "$1.008",
+    "idle_window_usd_micros": 1008000,
+    "minimum_minutes": 15,
+    "node_per_min": "$0.0672/min",
+    "node_per_min_usd_micros": 67200,
+    "per_min": "$0.0672/min",
+    "per_min_usd_micros": 67200,
+    "session_minimum_usd": "$1.008",
+    "session_minimum_usd_micros": 1008000
+  },
+  "status": "provisioning",
+  "warning": "This node runs YOUR image nvidia/cuda@sha256:be2096fa6eac084b3b040369cc59af328eaecf5eedb45a65bfda96b24245fef1, pinned at sha256:be2096fa6eac. The platform supplies the entrypoint, so the image's own entrypoint never runs, and keeps the node alive for run_command. The image must carry /bin/sh. Your persistent disk mounts at the home directory of the image's USER, from the image's /etc/passwd, or at /root. The disk hides what the image keeps in that directory. If your image installs code there, pass home with a path that the image does not use. Only that path survives a stop. Everything else is the image, and it resets on every wake. After the first start, get_node reports what the image carries (python3, sudo, nvcc) and the image files that the disk hides. The image is not scanned. It runs in the same hardened isolation as every node"
+}

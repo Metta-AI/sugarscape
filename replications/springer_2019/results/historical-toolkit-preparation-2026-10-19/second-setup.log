@@ -1,0 +1,28 @@
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64  InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:46 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:3
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:46 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:3
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:14 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:1
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:14 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:2
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:2
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:14 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:1
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:14 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:2
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:2
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:46 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:3
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:46 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:3
+Reading package lists...
+Building dependency tree...
+Reading state information...
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:14 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:1
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:14 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:1
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:2
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:16 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:2
+W: Target Packages (universe/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list:46 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:3
+W: Target Packages (universe/binary-all/Packages) is configured multiple times in /etc/apt/sources.list:46 and /etc/apt/sources.list.d/sugarscape-toolchain-universe.list:3
+E: Unable to locate package skopeo

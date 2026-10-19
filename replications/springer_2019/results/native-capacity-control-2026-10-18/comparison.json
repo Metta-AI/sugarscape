@@ -1,0 +1,8 @@
+{
+  "compile_argument_change": "Removed -DPARAM_MAX_OBJ=262144 only, excluding output path",
+  "grid_side": 32,
+  "native_capacity": 16777216,
+  "prior_capacity": 262144,
+  "returncode": 0,
+  "interpretation": "Original allocator capacity alone does not reproduce the full-grid initialization timeout at this small population. No full-state or performance equivalence claim."
+}

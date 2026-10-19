@@ -1,0 +1,15 @@
+{
+  "outer_seconds": 600,
+  "per_probe_seconds": [
+    60,
+    120,
+    120
+  ],
+  "budget_usd": 2,
+  "maximum_queue_wait": "3h",
+  "architecture": "compute_90 PTX",
+  "control_mode": "release",
+  "scope": "Unmodified allocator release control distinguishes debug assertion from runtime failure; assertion-free execution is not correctness evidence. No paper completion credit.",
+  "runner_sha256": "637dedf0ab85cb70d56cd49a9e37bc57c13d6e9a160e45bdc63f4965da414f85",
+  "source": "https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/"
+}

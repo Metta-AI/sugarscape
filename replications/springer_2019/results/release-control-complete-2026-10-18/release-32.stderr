@@ -1,0 +1,1422 @@
+PROGRESS -1 7969560959 before allocator_handle = new AllocatorHandle<AllocatorT>();
+PROGRESS -1 7970851288 after allocator_handle = new AllocatorHandle<AllocatorT>();
+PROGRESS -1 7970851366 before initialize_simulation();
+PROGRESS -1 7970851368 before create_cells<<<128, 128>>>();
+PROGRESS -1 7970851389 after create_cells<<<128, 128>>>();
+PROGRESS -1 7970851475 before create_agents<<<128, 128>>>();
+PROGRESS -1 7970851544 after create_agents<<<128, 128>>>();
+PROGRESS -1 7970851568 after initialize_simulation();
+PROGRESS 0 7970851570 step-start
+PROGRESS 0 7970851571 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 0 7970851590 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 0 7970851609 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 0 7970851630 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 0 7970851912 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 0 7970852136 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 0 7970852172 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 0 7970852367 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 0 7970852448 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 0 7970852534 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 0 7970852619 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 0 7970852635 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 0 7970852768 step-complete
+PROGRESS 1 7970852770 step-start
+PROGRESS 1 7970852771 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1 7970852781 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1 7970852791 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1 7970852802 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1 7970852973 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1 7970853156 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1 7970853175 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1 7970853344 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1 7970853409 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1 7970853480 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1 7970853545 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1 7970853561 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1 7970853627 step-complete
+PROGRESS 100 7970933718 step-start
+PROGRESS 100 7970933729 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 100 7970933739 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 100 7970933749 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 100 7970933759 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 100 7970933924 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 100 7970934102 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 100 7970934119 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 100 7970934285 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 100 7970934352 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 100 7970934423 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 100 7970934491 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 100 7970934506 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 100 7970934573 step-complete
+PROGRESS 200 7971016817 step-start
+PROGRESS 200 7971016822 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 200 7971016831 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 200 7971016841 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 200 7971016851 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 200 7971017017 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 200 7971017208 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 200 7971017225 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 200 7971017390 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 200 7971017459 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 200 7971017529 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 200 7971017592 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 200 7971017608 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 200 7971017672 step-complete
+PROGRESS 300 7971101329 step-start
+PROGRESS 300 7971101344 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 300 7971101354 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 300 7971101365 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 300 7971101375 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 300 7971101540 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 300 7971101717 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 300 7971101732 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 300 7971101898 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 300 7971101965 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 300 7971102033 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 300 7971102104 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 300 7971102119 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 300 7971102183 step-complete
+PROGRESS 400 7971182507 step-start
+PROGRESS 400 7971182513 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 400 7971182523 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 400 7971182532 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 400 7971182542 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 400 7971182706 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 400 7971182878 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 400 7971182892 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 400 7971183061 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 400 7971183129 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 400 7971183197 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 400 7971183260 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 400 7971183275 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 400 7971183339 step-complete
+PROGRESS 500 7971242374 step-start
+PROGRESS 500 7971242380 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 500 7971242389 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 500 7971242399 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 500 7971242409 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 500 7971242522 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 500 7971242634 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 500 7971242647 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 500 7971242760 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 500 7971242799 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 500 7971242838 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 500 7971242884 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 500 7971242897 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 500 7971242935 step-complete
+PROGRESS 600 7971301088 step-start
+PROGRESS 600 7971301100 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 600 7971301110 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 600 7971301120 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 600 7971301130 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 600 7971301253 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 600 7971301370 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 600 7971301383 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 600 7971301519 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 600 7971301567 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 600 7971301623 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 600 7971301677 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 600 7971301695 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 600 7971301741 step-complete
+PROGRESS 700 7971359119 step-start
+PROGRESS 700 7971359132 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 700 7971359142 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 700 7971359152 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 700 7971359162 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 700 7971359275 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 700 7971359388 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 700 7971359401 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 700 7971359517 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 700 7971359556 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 700 7971359594 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 700 7971359633 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 700 7971359646 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 700 7971359685 step-complete
+PROGRESS 800 7971415769 step-start
+PROGRESS 800 7971415784 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 800 7971415794 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 800 7971415804 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 800 7971415815 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 800 7971415929 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 800 7971416055 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 800 7971416069 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 800 7971416182 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 800 7971416220 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 800 7971416259 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 800 7971416298 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 800 7971416311 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 800 7971416349 step-complete
+PROGRESS 900 7971473577 step-start
+PROGRESS 900 7971473593 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 900 7971473603 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 900 7971473613 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 900 7971473623 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 900 7971473736 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 900 7971473849 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 900 7971473862 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 900 7971473980 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 900 7971474018 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 900 7971474063 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 900 7971474102 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 900 7971474115 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 900 7971474154 step-complete
+PROGRESS 1000 7971527376 step-start
+PROGRESS 1000 7971527384 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1000 7971527402 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1000 7971527412 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1000 7971527422 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1000 7971527535 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1000 7971527647 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1000 7971527661 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1000 7971527776 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1000 7971527815 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1000 7971527853 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1000 7971527892 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1000 7971527905 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1000 7971527943 step-complete
+PROGRESS 1100 7971583178 step-start
+PROGRESS 1100 7971583194 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1100 7971583204 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1100 7971583214 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1100 7971583224 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1100 7971583338 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1100 7971583451 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1100 7971583464 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1100 7971583577 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1100 7971583615 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1100 7971583654 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1100 7971583692 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1100 7971583705 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1100 7971583744 step-complete
+PROGRESS 1200 7971636760 step-start
+PROGRESS 1200 7971636766 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1200 7971636775 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1200 7971636785 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1200 7971636795 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1200 7971636907 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1200 7971637022 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1200 7971637035 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1200 7971637156 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1200 7971637195 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1200 7971637233 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1200 7971637272 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1200 7971637285 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1200 7971637324 step-complete
+PROGRESS 1300 7971690371 step-start
+PROGRESS 1300 7971690378 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1300 7971690388 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1300 7971690398 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1300 7971690408 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1300 7971690520 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1300 7971690632 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1300 7971690646 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1300 7971690758 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1300 7971690796 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1300 7971690834 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1300 7971690873 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1300 7971690896 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1300 7971690934 step-complete
+PROGRESS 1400 7971743981 step-start
+PROGRESS 1400 7971743987 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1400 7971743997 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1400 7971744016 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1400 7971744027 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1400 7971744149 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1400 7971744262 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1400 7971744275 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1400 7971744388 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1400 7971744427 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1400 7971744466 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1400 7971744504 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1400 7971744518 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1400 7971744556 step-complete
+PROGRESS 1500 7971797520 step-start
+PROGRESS 1500 7971797526 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1500 7971797536 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1500 7971797546 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1500 7971797556 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1500 7971797668 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1500 7971797781 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1500 7971797794 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1500 7971797907 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1500 7971797946 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1500 7971797985 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1500 7971798023 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1500 7971798036 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1500 7971798082 step-complete
+PROGRESS 1600 7971852734 step-start
+PROGRESS 1600 7971852741 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1600 7971852751 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1600 7971852761 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1600 7971852771 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1600 7971852884 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1600 7971853002 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1600 7971853015 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1600 7971853136 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1600 7971853175 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1600 7971853214 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1600 7971853252 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1600 7971853265 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1600 7971853304 step-complete
+PROGRESS 1700 7971906347 step-start
+PROGRESS 1700 7971906353 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1700 7971906363 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1700 7971906373 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1700 7971906383 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1700 7971906495 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1700 7971906608 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1700 7971906621 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1700 7971906734 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1700 7971906772 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1700 7971906819 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1700 7971906858 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1700 7971906871 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1700 7971906909 step-complete
+PROGRESS 1800 7971959970 step-start
+PROGRESS 1800 7971959978 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1800 7971959988 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1800 7971959997 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1800 7971960017 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1800 7971960139 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1800 7971960253 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1800 7971960266 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1800 7971960379 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1800 7971960418 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1800 7971960457 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1800 7971960495 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1800 7971960508 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1800 7971960547 step-complete
+PROGRESS 1900 7972015816 step-start
+PROGRESS 1900 7972015828 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 1900 7972015838 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1900 7972015848 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 1900 7972015858 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 1900 7972015971 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 1900 7972016100 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1900 7972016115 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 1900 7972016227 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 1900 7972016266 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 1900 7972016305 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 1900 7972016343 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 1900 7972016357 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 1900 7972016395 step-complete
+PROGRESS 2000 7972069743 step-start
+PROGRESS 2000 7972069760 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2000 7972069770 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2000 7972069780 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2000 7972069791 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2000 7972069904 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2000 7972070016 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2000 7972070029 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2000 7972070150 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2000 7972070189 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2000 7972070229 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2000 7972070267 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2000 7972070280 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2000 7972070319 step-complete
+PROGRESS 2100 7972123402 step-start
+PROGRESS 2100 7972123408 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2100 7972123418 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2100 7972123428 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2100 7972123438 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2100 7972123551 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2100 7972123664 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2100 7972123688 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2100 7972123800 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2100 7972123839 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2100 7972123878 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2100 7972123916 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2100 7972123929 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2100 7972123968 step-complete
+PROGRESS 2200 7972177138 step-start
+PROGRESS 2200 7972177152 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2200 7972177163 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2200 7972177173 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2200 7972177183 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2200 7972177297 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2200 7972177410 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2200 7972177423 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2200 7972177537 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2200 7972177576 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2200 7972177614 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2200 7972177653 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2200 7972177666 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2200 7972177705 step-complete
+PROGRESS 2300 7972230671 step-start
+PROGRESS 2300 7972230679 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2300 7972230688 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2300 7972230698 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2300 7972230708 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2300 7972230822 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2300 7972230935 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2300 7972230948 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2300 7972231065 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2300 7972231105 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2300 7972231143 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2300 7972231182 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2300 7972231195 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2300 7972231233 step-complete
+PROGRESS 2400 7972284164 step-start
+PROGRESS 2400 7972284173 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2400 7972284183 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2400 7972284193 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2400 7972284202 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2400 7972284316 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2400 7972284428 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2400 7972284442 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2400 7972284555 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2400 7972284593 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2400 7972284632 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2400 7972284670 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2400 7972284684 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2400 7972284722 step-complete
+PROGRESS 2500 7972339252 step-start
+PROGRESS 2500 7972339260 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2500 7972339269 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2500 7972339279 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2500 7972339289 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2500 7972339413 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2500 7972339526 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2500 7972339539 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2500 7972339651 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2500 7972339690 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2500 7972339733 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2500 7972339772 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2500 7972339785 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2500 7972339823 step-complete
+PROGRESS 2600 7972392782 step-start
+PROGRESS 2600 7972392789 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2600 7972392799 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2600 7972392809 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2600 7972392819 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2600 7972392933 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2600 7972393050 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2600 7972393064 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2600 7972393177 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2600 7972393216 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2600 7972393254 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2600 7972393292 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2600 7972393305 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2600 7972393344 step-complete
+PROGRESS 2700 7972446412 step-start
+PROGRESS 2700 7972446417 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2700 7972446426 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2700 7972446436 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2700 7972446446 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2700 7972446560 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2700 7972446672 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2700 7972446685 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2700 7972446798 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2700 7972446838 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2700 7972446876 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2700 7972446915 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2700 7972446928 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2700 7972446967 step-complete
+PROGRESS 2800 7972500033 step-start
+PROGRESS 2800 7972500041 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2800 7972500058 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2800 7972500069 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2800 7972500079 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2800 7972500193 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2800 7972500305 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2800 7972500318 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2800 7972500431 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2800 7972500470 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2800 7972500508 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2800 7972500546 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2800 7972500560 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2800 7972500598 step-complete
+PROGRESS 2900 7972553581 step-start
+PROGRESS 2900 7972553587 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 2900 7972553603 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2900 7972553612 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 2900 7972553622 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 2900 7972553735 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 2900 7972553848 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2900 7972553861 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 2900 7972553974 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 2900 7972554013 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 2900 7972554053 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 2900 7972554092 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 2900 7972554105 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 2900 7972554143 step-complete
+PROGRESS 3000 7972607090 step-start
+PROGRESS 3000 7972607099 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3000 7972607108 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3000 7972607118 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3000 7972607128 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3000 7972607241 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3000 7972607354 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3000 7972607367 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3000 7972607480 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3000 7972607518 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3000 7972607557 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3000 7972607596 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3000 7972607609 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3000 7972607647 step-complete
+PROGRESS 3100 7972660570 step-start
+PROGRESS 3100 7972660577 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3100 7972660587 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3100 7972660597 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3100 7972660607 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3100 7972660720 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3100 7972660832 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3100 7972660845 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3100 7972660960 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3100 7972660998 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3100 7972661037 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3100 7972661081 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3100 7972661094 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3100 7972661133 step-complete
+PROGRESS 3200 7972714103 step-start
+PROGRESS 3200 7972714107 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3200 7972714116 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3200 7972714126 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3200 7972714136 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3200 7972714249 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3200 7972714364 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3200 7972714377 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3200 7972714490 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3200 7972714529 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3200 7972714567 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3200 7972714605 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3200 7972714623 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3200 7972714661 step-complete
+PROGRESS 3300 7972767953 step-start
+PROGRESS 3300 7972767969 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3300 7972767980 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3300 7972767989 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3300 7972768009 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3300 7972768128 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3300 7972768244 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3300 7972768257 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3300 7972768370 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3300 7972768408 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3300 7972768447 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3300 7972768485 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3300 7972768498 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3300 7972768537 step-complete
+PROGRESS 3400 7972821494 step-start
+PROGRESS 3400 7972821497 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3400 7972821507 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3400 7972821517 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3400 7972821526 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3400 7972821639 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3400 7972821751 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3400 7972821764 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3400 7972821876 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3400 7972821915 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3400 7972821954 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3400 7972821995 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3400 7972822008 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3400 7972822051 step-complete
+PROGRESS 3500 7972876584 step-start
+PROGRESS 3500 7972876590 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3500 7972876600 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3500 7972876610 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3500 7972876620 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3500 7972876733 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3500 7972876845 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3500 7972876858 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3500 7972876971 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3500 7972877010 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3500 7972877052 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3500 7972877092 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3500 7972877105 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3500 7972877143 step-complete
+PROGRESS 3600 7972930117 step-start
+PROGRESS 3600 7972930121 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3600 7972930131 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3600 7972930140 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3600 7972930150 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3600 7972930263 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3600 7972930375 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3600 7972930388 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3600 7972930501 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3600 7972930539 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3600 7972930585 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3600 7972930624 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3600 7972930637 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3600 7972930675 step-complete
+PROGRESS 3700 7972983722 step-start
+PROGRESS 3700 7972983727 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3700 7972983737 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3700 7972983747 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3700 7972983757 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3700 7972983870 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3700 7972983983 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3700 7972983996 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3700 7972984119 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3700 7972984158 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3700 7972984197 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3700 7972984235 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3700 7972984248 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3700 7972984287 step-complete
+PROGRESS 3800 7973037296 step-start
+PROGRESS 3800 7973037300 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3800 7973037309 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3800 7973037319 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3800 7973037335 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3800 7973037448 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3800 7973037561 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3800 7973037574 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3800 7973037686 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3800 7973037725 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3800 7973037763 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3800 7973037802 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3800 7973037815 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3800 7973037854 step-complete
+PROGRESS 3900 7973090874 step-start
+PROGRESS 3900 7973090878 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 3900 7973090888 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3900 7973090898 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 3900 7973090908 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 3900 7973091020 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 3900 7973091136 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3900 7973091150 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 3900 7973091267 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 3900 7973091305 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 3900 7973091344 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 3900 7973091382 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 3900 7973091395 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 3900 7973091433 step-complete
+PROGRESS 4000 7973144326 step-start
+PROGRESS 4000 7973144333 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4000 7973144343 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4000 7973144352 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4000 7973144362 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4000 7973144475 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4000 7973144588 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4000 7973144611 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4000 7973144724 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4000 7973144763 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4000 7973144801 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4000 7973144840 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4000 7973144853 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4000 7973144892 step-complete
+PROGRESS 4100 7973197863 step-start
+PROGRESS 4100 7973197867 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4100 7973197877 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4100 7973197887 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4100 7973197897 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4100 7973198009 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4100 7973198127 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4100 7973198141 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4100 7973198253 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4100 7973198292 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4100 7973198330 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4100 7973198369 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4100 7973198382 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4100 7973198420 step-complete
+PROGRESS 4200 7973251464 step-start
+PROGRESS 4200 7973251470 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4200 7973251480 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4200 7973251489 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4200 7973251499 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4200 7973251613 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4200 7973251725 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4200 7973251738 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4200 7973251852 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4200 7973251890 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4200 7973251929 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4200 7973251967 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4200 7973251980 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4200 7973252030 step-complete
+PROGRESS 4300 7973304924 step-start
+PROGRESS 4300 7973304928 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4300 7973304937 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4300 7973304947 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4300 7973304957 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4300 7973305072 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4300 7973305184 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4300 7973305198 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4300 7973305310 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4300 7973305349 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4300 7973305387 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4300 7973305426 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4300 7973305439 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4300 7973305478 step-complete
+PROGRESS 4400 7973360013 step-start
+PROGRESS 4400 7973360024 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4400 7973360035 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4400 7973360051 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4400 7973360069 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4400 7973360182 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4400 7973360295 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4400 7973360308 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4400 7973360424 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4400 7973360462 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4400 7973360501 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4400 7973360539 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4400 7973360552 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4400 7973360591 step-complete
+PROGRESS 4500 7973413545 step-start
+PROGRESS 4500 7973413549 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4500 7973413559 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4500 7973413569 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4500 7973413579 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4500 7973413691 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4500 7973413803 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4500 7973413816 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4500 7973413928 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4500 7973413967 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4500 7973414005 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4500 7973414043 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4500 7973414063 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4500 7973414102 step-complete
+PROGRESS 4600 7973467074 step-start
+PROGRESS 4600 7973467081 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4600 7973467091 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4600 7973467100 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4600 7973467110 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4600 7973467223 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4600 7973467337 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4600 7973467350 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4600 7973467462 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4600 7973467501 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4600 7973467539 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4600 7973467578 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4600 7973467591 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4600 7973467630 step-complete
+PROGRESS 4700 7973520600 step-start
+PROGRESS 4700 7973520604 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4700 7973520614 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4700 7973520624 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4700 7973520634 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4700 7973520746 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4700 7973520858 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4700 7973520872 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4700 7973520984 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4700 7973521022 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4700 7973521061 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4700 7973521101 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4700 7973521114 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4700 7973521153 step-complete
+PROGRESS 4800 7973574221 step-start
+PROGRESS 4800 7973574235 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4800 7973574245 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4800 7973574254 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4800 7973574264 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4800 7973574383 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4800 7973574497 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4800 7973574510 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4800 7973574623 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4800 7973574661 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4800 7973574700 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4800 7973574738 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4800 7973574751 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4800 7973574790 step-complete
+PROGRESS 4900 7973627746 step-start
+PROGRESS 4900 7973627753 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 4900 7973627763 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4900 7973627772 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 4900 7973627782 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 4900 7973627894 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 4900 7973628018 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4900 7973628032 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 4900 7973628151 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 4900 7973628190 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 4900 7973628228 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 4900 7973628267 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 4900 7973628280 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 4900 7973628318 step-complete
+PROGRESS 5000 7973681318 step-start
+PROGRESS 5000 7973681326 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5000 7973681336 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5000 7973681346 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5000 7973681356 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5000 7973681468 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5000 7973681582 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5000 7973681594 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5000 7973681707 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5000 7973681746 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5000 7973681784 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5000 7973681823 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5000 7973681836 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5000 7973681875 step-complete
+PROGRESS 5100 7973734825 step-start
+PROGRESS 5100 7973734830 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5100 7973734839 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5100 7973734849 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5100 7973734859 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5100 7973734981 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5100 7973735100 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5100 7973735114 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5100 7973735227 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5100 7973735266 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5100 7973735305 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5100 7973735348 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5100 7973735361 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5100 7973735400 step-complete
+PROGRESS 5200 7973788382 step-start
+PROGRESS 5200 7973788388 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5200 7973788398 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5200 7973788407 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5200 7973788417 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5200 7973788530 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5200 7973788643 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5200 7973788656 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5200 7973788770 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5200 7973788809 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5200 7973788848 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5200 7973788886 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5200 7973788899 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5200 7973788938 step-complete
+PROGRESS 5300 7973841806 step-start
+PROGRESS 5300 7973841813 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5300 7973841822 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5300 7973841832 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5300 7973841842 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5300 7973841955 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5300 7973842074 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5300 7973842088 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5300 7973842201 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5300 7973842239 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5300 7973842278 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5300 7973842316 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5300 7973842329 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5300 7973842368 step-complete
+PROGRESS 5400 7973896904 step-start
+PROGRESS 5400 7973896912 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5400 7973896921 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5400 7973896931 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5400 7973896941 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5400 7973897060 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5400 7973897174 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5400 7973897187 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5400 7973897300 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5400 7973897339 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5400 7973897377 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5400 7973897416 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5400 7973897429 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5400 7973897467 step-complete
+PROGRESS 5500 7973950439 step-start
+PROGRESS 5500 7973950445 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5500 7973950455 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5500 7973950464 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5500 7973950474 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5500 7973950588 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5500 7973950701 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5500 7973950714 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5500 7973950827 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5500 7973950870 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5500 7973950909 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5500 7973950948 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5500 7973950961 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5500 7973950999 step-complete
+PROGRESS 5600 7974004019 step-start
+PROGRESS 5600 7974004027 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5600 7974004036 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5600 7974004051 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5600 7974004069 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5600 7974004187 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5600 7974004300 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5600 7974004313 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5600 7974004426 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5600 7974004465 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5600 7974004504 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5600 7974004542 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5600 7974004555 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5600 7974004594 step-complete
+PROGRESS 5700 7974057613 step-start
+PROGRESS 5700 7974057623 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5700 7974057633 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5700 7974057643 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5700 7974057653 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5700 7974057765 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5700 7974057878 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5700 7974057891 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5700 7974058006 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5700 7974058051 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5700 7974058091 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5700 7974058129 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5700 7974058142 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5700 7974058181 step-complete
+PROGRESS 5800 7974111168 step-start
+PROGRESS 5800 7974111176 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5800 7974111185 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5800 7974111195 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5800 7974111205 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5800 7974111318 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5800 7974111430 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5800 7974111443 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5800 7974111555 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5800 7974111594 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5800 7974111632 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5800 7974111671 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5800 7974111684 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5800 7974111723 step-complete
+PROGRESS 5900 7974164690 step-start
+PROGRESS 5900 7974164696 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 5900 7974164706 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5900 7974164716 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 5900 7974164726 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 5900 7974164839 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 5900 7974164959 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5900 7974164972 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 5900 7974165091 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 5900 7974165130 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 5900 7974165168 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 5900 7974165207 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 5900 7974165220 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 5900 7974165259 step-complete
+PROGRESS 6000 7974218269 step-start
+PROGRESS 6000 7974218276 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6000 7974218286 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6000 7974218295 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6000 7974218305 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6000 7974218418 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6000 7974218531 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6000 7974218544 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6000 7974218656 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6000 7974218695 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6000 7974218733 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6000 7974218771 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6000 7974218785 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6000 7974218823 step-complete
+PROGRESS 6100 7974271810 step-start
+PROGRESS 6100 7974271816 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6100 7974271825 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6100 7974271835 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6100 7974271845 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6100 7974271958 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6100 7974272083 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6100 7974272097 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6100 7974272210 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6100 7974272249 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6100 7974272288 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6100 7974272327 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6100 7974272340 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6100 7974272379 step-complete
+PROGRESS 6200 7974325358 step-start
+PROGRESS 6200 7974325365 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6200 7974325375 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6200 7974325385 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6200 7974325394 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6200 7974325507 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6200 7974325620 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6200 7974325633 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6200 7974325746 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6200 7974325784 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6200 7974325823 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6200 7974325861 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6200 7974325874 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6200 7974325913 step-complete
+PROGRESS 6300 7974378842 step-start
+PROGRESS 6300 7974378850 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6300 7974378859 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6300 7974378869 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6300 7974378884 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6300 7974378997 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6300 7974379116 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6300 7974379130 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6300 7974379243 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6300 7974379281 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6300 7974379320 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6300 7974379359 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6300 7974379372 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6300 7974379411 step-complete
+PROGRESS 6400 7974434034 step-start
+PROGRESS 6400 7974434040 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6400 7974434052 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6400 7974434063 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6400 7974434073 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6400 7974434187 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6400 7974434300 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6400 7974434313 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6400 7974434427 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6400 7974434465 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6400 7974434504 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6400 7974434543 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6400 7974434556 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6400 7974434595 step-complete
+PROGRESS 6500 7974487659 step-start
+PROGRESS 6500 7974487665 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6500 7974487674 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6500 7974487684 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6500 7974487694 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6500 7974487808 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6500 7974487920 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6500 7974487933 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6500 7974488063 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6500 7974488103 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6500 7974488141 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6500 7974488180 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6500 7974488193 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6500 7974488231 step-complete
+PROGRESS 6600 7974541251 step-start
+PROGRESS 6600 7974541258 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6600 7974541268 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6600 7974541277 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6600 7974541287 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6600 7974541400 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6600 7974541514 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6600 7974541527 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6600 7974541640 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6600 7974541679 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6600 7974541717 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6600 7974541756 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6600 7974541769 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6600 7974541807 step-complete
+PROGRESS 6700 7974594818 step-start
+PROGRESS 6700 7974594826 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6700 7974594835 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6700 7974594845 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6700 7974594855 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6700 7974594968 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6700 7974595087 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6700 7974595101 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6700 7974595214 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6700 7974595252 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6700 7974595291 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6700 7974595329 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6700 7974595342 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6700 7974595381 step-complete
+PROGRESS 6800 7974648394 step-start
+PROGRESS 6800 7974648401 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6800 7974648411 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6800 7974648421 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6800 7974648431 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6800 7974648544 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6800 7974648657 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6800 7974648670 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6800 7974648783 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6800 7974648821 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6800 7974648860 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6800 7974648899 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6800 7974648912 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6800 7974648951 step-complete
+PROGRESS 6900 7974701962 step-start
+PROGRESS 6900 7974701970 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 6900 7974701980 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6900 7974701990 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 6900 7974702000 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 6900 7974702120 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 6900 7974702233 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6900 7974702246 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 6900 7974702359 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 6900 7974702397 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 6900 7974702436 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 6900 7974702474 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 6900 7974702487 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 6900 7974702525 step-complete
+PROGRESS 7000 7974755481 step-start
+PROGRESS 7000 7974755485 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7000 7974755494 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7000 7974755504 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7000 7974755514 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7000 7974755631 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7000 7974755743 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7000 7974755756 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7000 7974755868 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7000 7974755907 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7000 7974755945 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7000 7974755989 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7000 7974756009 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7000 7974756056 step-complete
+PROGRESS 7100 7974809042 step-start
+PROGRESS 7100 7974809053 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7100 7974809063 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7100 7974809073 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7100 7974809083 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7100 7974809195 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7100 7974809308 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7100 7974809321 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7100 7974809436 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7100 7974809475 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7100 7974809513 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7100 7974809552 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7100 7974809565 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7100 7974809603 step-complete
+PROGRESS 7200 7974862517 step-start
+PROGRESS 7200 7974862523 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7200 7974862533 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7200 7974862542 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7200 7974862552 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7200 7974862665 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7200 7974862777 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7200 7974862790 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7200 7974862903 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7200 7974862942 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7200 7974862980 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7200 7974863019 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7200 7974863032 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7200 7974863073 step-complete
+PROGRESS 7300 7974917685 step-start
+PROGRESS 7300 7974917692 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7300 7974917702 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7300 7974917712 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7300 7974917721 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7300 7974917834 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7300 7974917946 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7300 7974917959 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7300 7974918076 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7300 7974918115 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7300 7974918154 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7300 7974918192 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7300 7974918205 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7300 7974918244 step-complete
+PROGRESS 7400 7974971187 step-start
+PROGRESS 7400 7974971193 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7400 7974971202 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7400 7974971212 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7400 7974971222 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7400 7974971335 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7400 7974971448 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7400 7974971461 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7400 7974971574 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7400 7974971617 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7400 7974971655 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7400 7974971694 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7400 7974971707 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7400 7974971745 step-complete
+PROGRESS 7500 7975024762 step-start
+PROGRESS 7500 7975024770 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7500 7975024780 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7500 7975024790 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7500 7975024800 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7500 7975024912 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7500 7975025024 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7500 7975025037 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7500 7975025157 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7500 7975025195 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7500 7975025234 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7500 7975025273 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7500 7975025286 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7500 7975025324 step-complete
+PROGRESS 7600 7975078288 step-start
+PROGRESS 7600 7975078296 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7600 7975078306 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7600 7975078316 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7600 7975078326 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7600 7975078439 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7600 7975078558 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7600 7975078571 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7600 7975078684 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7600 7975078723 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7600 7975078762 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7600 7975078801 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7600 7975078814 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7600 7975078852 step-complete
+PROGRESS 7700 7975131886 step-start
+PROGRESS 7700 7975131893 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7700 7975131902 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7700 7975131912 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7700 7975131922 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7700 7975132045 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7700 7975132169 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7700 7975132182 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7700 7975132295 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7700 7975132333 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7700 7975132374 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7700 7975132412 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7700 7975132425 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7700 7975132464 step-complete
+PROGRESS 7800 7975185604 step-start
+PROGRESS 7800 7975185611 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7800 7975185621 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7800 7975185630 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7800 7975185640 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7800 7975185753 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7800 7975185873 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7800 7975185887 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7800 7975186000 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7800 7975186038 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7800 7975186082 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7800 7975186121 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7800 7975186134 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7800 7975186173 step-complete
+PROGRESS 7900 7975239207 step-start
+PROGRESS 7900 7975239213 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 7900 7975239223 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7900 7975239233 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 7900 7975239243 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 7900 7975239356 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 7900 7975239468 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7900 7975239481 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 7900 7975239594 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 7900 7975239633 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 7900 7975239672 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 7900 7975239710 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 7900 7975239723 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 7900 7975239761 step-complete
+PROGRESS 8000 7975292782 step-start
+PROGRESS 8000 7975292787 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8000 7975292797 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8000 7975292807 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8000 7975292817 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8000 7975292930 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8000 7975293042 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8000 7975293055 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8000 7975293169 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8000 7975293207 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8000 7975293246 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8000 7975293285 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8000 7975293298 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8000 7975293336 step-complete
+PROGRESS 8100 7975346318 step-start
+PROGRESS 8100 7975346324 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8100 7975346334 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8100 7975346344 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8100 7975346354 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8100 7975346467 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8100 7975346580 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8100 7975346593 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8100 7975346706 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8100 7975346745 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8100 7975346784 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8100 7975346823 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8100 7975346836 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8100 7975346874 step-complete
+PROGRESS 8200 7975399734 step-start
+PROGRESS 8200 7975399741 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8200 7975399750 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8200 7975399765 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8200 7975399775 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8200 7975399888 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8200 7975400010 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8200 7975400024 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8200 7975400143 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8200 7975400182 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8200 7975400221 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8200 7975400260 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8200 7975400273 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8200 7975400312 step-complete
+PROGRESS 8300 7975454855 step-start
+PROGRESS 8300 7975454861 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8300 7975454871 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8300 7975454881 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8300 7975454891 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8300 7975455004 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8300 7975455118 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8300 7975455132 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8300 7975455244 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8300 7975455283 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8300 7975455322 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8300 7975455361 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8300 7975455378 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8300 7975455417 step-complete
+PROGRESS 8400 7975508661 step-start
+PROGRESS 8400 7975508674 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8400 7975508684 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8400 7975508694 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8400 7975508704 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8400 7975508816 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8400 7975508929 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8400 7975508942 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8400 7975509061 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8400 7975509100 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8400 7975509139 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8400 7975509177 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8400 7975509190 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8400 7975509230 step-complete
+PROGRESS 8500 7975562272 step-start
+PROGRESS 8500 7975562278 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8500 7975562288 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8500 7975562297 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8500 7975562307 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8500 7975562420 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8500 7975562532 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8500 7975562545 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8500 7975562658 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8500 7975562697 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8500 7975562736 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8500 7975562774 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8500 7975562787 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8500 7975562831 step-complete
+PROGRESS 8600 7975615841 step-start
+PROGRESS 8600 7975615847 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8600 7975615856 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8600 7975615866 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8600 7975615876 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8600 7975615989 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8600 7975616120 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8600 7975616134 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8600 7975616246 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8600 7975616284 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8600 7975616323 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8600 7975616362 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8600 7975616375 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8600 7975616414 step-complete
+PROGRESS 8700 7975669454 step-start
+PROGRESS 8700 7975669460 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8700 7975669469 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8700 7975669479 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8700 7975669489 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8700 7975669602 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8700 7975669715 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8700 7975669728 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8700 7975669841 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8700 7975669880 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8700 7975669919 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8700 7975669957 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8700 7975669971 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8700 7975670009 step-complete
+PROGRESS 8800 7975723115 step-start
+PROGRESS 8800 7975723122 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8800 7975723132 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8800 7975723141 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8800 7975723151 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8800 7975723265 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8800 7975723385 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8800 7975723399 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8800 7975723512 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8800 7975723550 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8800 7975723589 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8800 7975723633 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8800 7975723648 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8800 7975723687 step-complete
+PROGRESS 8900 7975777032 step-start
+PROGRESS 8900 7975777053 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 8900 7975777064 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8900 7975777074 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 8900 7975777084 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 8900 7975777197 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 8900 7975777310 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8900 7975777323 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 8900 7975777436 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 8900 7975777475 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 8900 7975777514 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 8900 7975777561 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 8900 7975777574 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 8900 7975777613 step-complete
+PROGRESS 9000 7975830532 step-start
+PROGRESS 9000 7975830538 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9000 7975830548 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9000 7975830557 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9000 7975830567 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9000 7975830681 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9000 7975830794 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9000 7975830807 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9000 7975830920 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9000 7975830959 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9000 7975830998 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9000 7975831037 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9000 7975831051 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9000 7975831091 step-complete
+PROGRESS 9100 7975884031 step-start
+PROGRESS 9100 7975884042 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9100 7975884052 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9100 7975884064 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9100 7975884078 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9100 7975884262 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9100 7975884376 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9100 7975884390 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9100 7975884504 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9100 7975884543 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9100 7975884581 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9100 7975884620 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9100 7975884633 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9100 7975884671 step-complete
+PROGRESS 9200 7975937654 step-start
+PROGRESS 9200 7975937661 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9200 7975937672 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9200 7975937683 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9200 7975937695 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9200 7975937844 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9200 7975937992 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9200 7975938007 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9200 7975938155 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9200 7975938206 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9200 7975938256 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9200 7975938305 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9200 7975938320 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9200 7975938371 step-complete
+PROGRESS 9300 7975992632 step-start
+PROGRESS 9300 7975992640 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9300 7975992650 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9300 7975992659 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9300 7975992669 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9300 7975992782 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9300 7975992896 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9300 7975992909 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9300 7975993028 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9300 7975993073 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9300 7975993112 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9300 7975993151 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9300 7975993164 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9300 7975993203 step-complete
+PROGRESS 9400 7976046207 step-start
+PROGRESS 9400 7976046211 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9400 7976046221 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9400 7976046230 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9400 7976046241 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9400 7976046354 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9400 7976046467 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9400 7976046480 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9400 7976046593 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9400 7976046632 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9400 7976046670 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9400 7976046709 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9400 7976046722 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9400 7976046761 step-complete
+PROGRESS 9500 7976099738 step-start
+PROGRESS 9500 7976099745 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9500 7976099755 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9500 7976099765 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9500 7976099775 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9500 7976099887 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9500 7976100010 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9500 7976100025 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9500 7976100144 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9500 7976100183 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9500 7976100221 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9500 7976100260 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9500 7976100273 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9500 7976100311 step-complete
+PROGRESS 9600 7976153298 step-start
+PROGRESS 9600 7976153303 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9600 7976153313 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9600 7976153323 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9600 7976153333 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9600 7976153446 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9600 7976153560 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9600 7976153574 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9600 7976153686 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9600 7976153725 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9600 7976153763 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9600 7976153802 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9600 7976153815 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9600 7976153854 step-complete
+PROGRESS 9700 7976206832 step-start
+PROGRESS 9700 7976206837 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9700 7976206846 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9700 7976206856 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9700 7976206866 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9700 7976206986 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9700 7976207101 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9700 7976207115 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9700 7976207229 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9700 7976207268 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9700 7976207307 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9700 7976207346 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9700 7976207359 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9700 7976207398 step-complete
+PROGRESS 9800 7976260375 step-start
+PROGRESS 9800 7976260381 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9800 7976260390 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9800 7976260400 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9800 7976260410 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9800 7976260524 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9800 7976260642 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9800 7976260655 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9800 7976260768 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9800 7976260807 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9800 7976260845 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9800 7976260884 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9800 7976260897 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9800 7976260936 step-complete
+PROGRESS 9900 7976313944 step-start
+PROGRESS 9900 7976313950 kernel_Cell_grow_sugar<<<kBlocks, kThreads>>>();
+PROGRESS 9900 7976313959 kernel_Cell_prepare_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9900 7976313969 kernel_Cell_update_diffuse<<<kBlocks, kThreads>>>();
+PROGRESS 9900 7976313979 allocator_handle->parallel_do<Agent, &Agent::age_and_metabolize>();
+PROGRESS 9900 7976314099 allocator_handle->parallel_do<Agent, &Agent::prepare_move>();
+PROGRESS 9900 7976314213 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9900 7976314226 allocator_handle->parallel_do<Agent, &Agent::update_move>();
+PROGRESS 9900 7976314338 allocator_handle->parallel_do<Male, &Male::propose>();
+PROGRESS 9900 7976314377 allocator_handle->parallel_do<Female, &Female::decide_proposal>();
+PROGRESS 9900 7976314415 allocator_handle->parallel_do<Male, &Male::propose_offspring_target>();
+PROGRESS 9900 7976314453 kernel_Cell_decide_permission<<<kBlocks, kThreads>>>();
+PROGRESS 9900 7976314466 allocator_handle->parallel_do<Male, &Male::mate>();
+PROGRESS 9900 7976314505 step-complete
