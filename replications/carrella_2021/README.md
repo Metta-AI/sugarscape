@@ -1243,3 +1243,11 @@ Each cohort has a 600-second simulation bound; dispatch is sequential and retain
 The plan specifies all six continuous measurements and two rare-event definitions before execution.
 Thirty cohort-level tests receive Holm adjustment; nonsignificance cannot establish stochastic equivalence.
 Historical estimator discrepancies and whole-paper replication remain unresolved.
+
+### First completed parameter-space cohort
+
+[Original input2439](results/parameter-first-cohort-2026-10-19) completes all128 runs and64,128 observation checks without exclusions.
+All271 archive members verify; fresh extraction repeats the audit and comparison byte-exactly.
+Independent R arithmetic confirms six distribution differences and both rare-event tests.
+The six-metric maximum difference is0.1875, with unadjusted joint permutation p0.6955.
+The remaining nine settings and declared30-test correction are still required; no equivalence or whole-paper verdict follows.
