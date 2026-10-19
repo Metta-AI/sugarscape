@@ -1330,3 +1330,5 @@ Maximum difference is0.15625, with unadjusted joint permutation p0.9489.
 Six of ten settings are audited, totaling768 runs and384,768 observations; four settings and the combined analysis remain.
 
 [Full GAM runtime qualification](results/gam-full-runtime-qualification-launch-2026-10-19) is running against all five saved folds, including the original prediction-interval procedure. Exact prediction, interval-bound, and random-state checks gate any historical-runtime extension. No new result or completion credit is claimed.
+
+[The historical full-workflow bundle](results/gam-historical-full-preparation-2026-10-19) passes six-member hash readback. The first current-runtime fold verifies 3,750 exact numeric outputs and 626 RNG integers; four folds remain. Historical execution remains gated, and study status is unchanged.
