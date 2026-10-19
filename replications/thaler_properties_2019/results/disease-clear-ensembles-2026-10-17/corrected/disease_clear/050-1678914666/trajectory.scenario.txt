@@ -1,0 +1,36 @@
+Constructor: mkParamsAnimationV_1
+Seed: 1678914666
+Scenario: 			Animation V-1
+
+Agent count: 			400
+Agent distribution: 		Scatter
+
+Vision range: 			(1,6)
+Age age range: 			Forever
+
+Sugar regrow: 			Rate 1.0
+Sugar endowment range: 		(5,25)
+Sugar metabolism range: 	(1,4)
+
+Spice enabled: 			False
+Spice regrow: 			Immediate
+Spice endowment range: 		(0,0)
+Spice metabolism range: 	(0,0)
+
+Polution formation: 		NoPolution
+Polution diffusion: 		Nothing
+
+Female gender ratio: 		0.0
+Fertility start-range female: 	(0,0)
+Fertility start-range male: 	(0,0)
+Fertility end-range female: 	(0,0)
+Fertility send-range male: 	(0,0)
+
+R rule active (replace): 	False
+S rule active (mating): 	False
+I rule active (inheritance): 	False
+K rule active (culture): 	Nothing
+C rule active (combat): 	Nothing
+T rule active (trading): 	False
+L rule active (loans): 		Nothing
+E rule active (disease): 	Just (50,10,10,4,[[True,True,True,True,True,False,True],[False,False,False,True,False,True,False,True],[False],[True,True,False],[False,True,False],[False,True,True,True,True,True],[False,True,True,True,True,True,True],[False,False,False],[True,False,True,False],[False,True,True,True,True,True,True,False,True,False]])

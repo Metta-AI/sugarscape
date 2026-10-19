@@ -1,0 +1,23 @@
+{
+  "haskell_revision": "2d7ab195942485c7a1d3281b00d8331437a7cef5",
+  "haskell_sha256": {
+    "src/SugarScape/Core/Environment.hs": "3abec50b3b44dc260cc14f055d92e65dbad1858aec77e0a5eee0a13edf71fcda",
+    "src/SugarScape/Core/Init.hs": "7949ab3004b4a7322415583c5a697ac739f39faf69e451d0c94fae15f4f44e84",
+    "src/SugarScape/Core/Discrete.hs": "5020fadf50cf84ae859922e3f22a179f4120234148f480dc9ec27556bebab81c",
+    "src/SugarScape/Agent/Move.hs": "2bc44e7a8bc50272822db1e8fa3ff0567a626486f61ed7223e84ae52220a99d0",
+    "src/SugarScape/Agent/Polution.hs": "3bf6cda87ced40e36816b7fd3eaa5b4ce55ab612e31a421cb29e830669becc48",
+    "src/SugarScape/Core/Scenario.hs": "877320c0f2d4226ad7226bfb541b58880229d17bf2ba3de4790ada2deca1e59b"
+  },
+  "candidate_sha256": "e61e2a820ea3cde7c3d2855314bf82f7a3121666345644b138be1d1d905f7645",
+  "netlogo_dictionary": "https://ccl.northwestern.edu/netlogo/4.0/docs/dictionary.html#diffuse",
+  "diffusion": {
+    "haskell": "Every tick: average self and four cardinal neighbors. Coordinate aliasing remains in original source.",
+    "candidate": "diffuse pollution diffusionRate: eight neighbors; no built-in pollution-enabled preset recovered. Diagnostic uses rate 1."
+  },
+  "pollution_offset": {
+    "haskell": "Initial 0; movement sugar/(1+pollution).",
+    "candidate": "Initial 1; movement sugar/pollution.",
+    "interpretation": "The offset alone is not a dynamics discrepancy under matched formation and a constant-preserving diffusion operator. Other source/schedule differences prevent full equivalence."
+  },
+  "historical_fidelity": "2017 candidate identity with Weaver 2009 remains unproven. Explicit pollution settings are study choices, not a recovered author preset."
+}

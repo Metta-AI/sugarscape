@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "fc811e46642001a74cfd3a2b80ad147af5c1f82daf2268f8907456a12ed8f7ea",
+  "archive_bytes": 9157869,
+  "paired_counts": {
+    "combat_culture": 24,
+    "combat_rebirth": 1
+  },
+  "audited_runs": 50,
+  "agent_observations": 1410778,
+  "full_mode_rejection": "AssertionError: combat_culture, Full 100 pairs required; output absent",
+  "scope": "Prefix only; comparisons empty. Full-ensemble success path awaits all 100 pairs in each scenario.",
+  "extracted_gzip_archive_readback": "Complete audit JSON exactly reproduced, including all 50 trajectories and frozen ledger hashes."
+}

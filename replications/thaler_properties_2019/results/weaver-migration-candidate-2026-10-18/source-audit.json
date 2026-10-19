@@ -1,0 +1,39 @@
+{
+  "guide_url": "https://courses.cs.duke.edu/spring25/compsci308/assign/02_simulation/Sugarscape_Leicester.pdf",
+  "guide_sha256": "e8a19fe36f36f59bea0032e12f89b5ab9fd1da71362a1a2874be0b50b379c48d",
+  "guide_scope": "Eight-page Leicester guide printed from March 3, 2016 Wayback capture; page 4 visually inspected. Not authenticated 2009 model bytes.",
+  "candidate_url": "https://gist.github.com/rht/65c3f0819e92ed9d8419429a12718d07",
+  "candidate_revision": "9ac24cd0e55a8ec6b78c6db4fce2cf45d3e462ed",
+  "candidate_sha256": "e61e2a820ea3cde7c3d2855314bf82f7a3121666345644b138be1d1d905f7645",
+  "migration": {
+    "candidate": {
+      "population": 400,
+      "metabolism": [
+        0,
+        4
+      ],
+      "vision": [
+        1,
+        10
+      ],
+      "corner_side": 23,
+      "regrow_amount": 1,
+      "regrow_interval": 2
+    },
+    "haskell": {
+      "population": 300,
+      "metabolism": [
+        1,
+        4
+      ],
+      "vision": [
+        1,
+        10
+      ],
+      "corner_side": 20,
+      "regrow_amount": 0.5,
+      "regrow_interval": 1
+    }
+  },
+  "interpretation": "Multiple configuration differences; no causal attribution or wave replication decision."
+}

@@ -1,0 +1,25 @@
+{
+  "positive_workflow": {
+    "audit": "continued-prefix-audit-001.json",
+    "validated_pairs": 29,
+    "ensemble_complete": false,
+    "parity_exports_verified": 10
+  },
+  "changed_seed_rejected": {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-properties/replications/thaler_properties_2019/audit_paired_observers.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-demographics-native-001/original-protocol.json",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-observer-001",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-demographics-native-001/rejected-seed-output.json",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-local-linux-001/home/sugarscape/thaler-properties-demographics-001/first",
+      "--allow-prefix",
+      "--continuation-protocol",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-demographics-native-001/invalid-seed-protocol.json",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/thaler-properties-demographics-native-001/prefix-001/remaining"
+    ],
+    "exit_code": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-properties/replications/thaler_properties_2019/audit_paired_observers.py\", line 113, in <module>\n    assert {\n           ^\nAssertionError\n",
+    "output_created": false
+  }
+}

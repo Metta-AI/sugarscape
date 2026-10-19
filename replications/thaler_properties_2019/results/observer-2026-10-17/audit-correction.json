@@ -1,0 +1,5 @@
+{
+  "superseded_report": "superseded-audit-001.json",
+  "correct_report": "audit.json",
+  "reason": "Initial independent audit assumed 50x50. Original Model.hs declares 51x51; coordToIdx is therefore 50*y+x. Unchanged native output has 2551 cells versus 2601 declared coordinates. Shared-record comparisons were unaffected."
+}

@@ -1,0 +1,14 @@
+{
+  "comparisons": 12,
+  "numeric_values": 36,
+  "maximum_absolute_error": 3.3730884752003476e-10,
+  "tolerance": 1e-09,
+  "method": "R stats::t.test versus SciPy t interval, each100 independent run-level values; paired differences use same seeds.",
+  "inputs_sha256": {
+    "paired-metrics.csv": "121ea4ccc376a3d87e0c0725aaf2e02a7e7355cae4f0e9c371d479cc48367345",
+    "r-intervals.csv": "b9c31a358e223d7316be4d110f6d8a18cf4629a917855045c49a3d9bc0f061e1",
+    "complete-paired-audit.json": "e491cdc4e864e17b751d33dea6452af17b8ea53de395d266161a601aa42276a9"
+  },
+  "original_crlf_input_sha256": "ec144982dfa08b837b45c17f0cf57b04770b61ec1c5c3f090561c50ff6b67083",
+  "format_note": "Published derived CSV uses LF; original CRLF input remains in external evidence. R rerun on LF input reproduces identical output."
+}
