@@ -3,11 +3,11 @@
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
-**Not a completed replication:** estimator discrepancies, remaining independent estimator folds, and cross-stream fidelity remain unresolved.
+**Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.
 
-The [independent 1,250-input bootstrap forest](results/independent-rfboot1250-2026-10-18) completes all five folds and 6,250 audited predictions. One of five scores matches printed precision; its 5,000-input batch remains running.
+The [independent 1,250-input bootstrap forest](results/independent-rfboot1250-2026-10-18) completes all five folds and 6,250 audited predictions. One of five scores matches printed precision; [the 5,000-input batch](results/independent-rfboot5000-2026-10-19) is now complete and audited.
 
 ## Complete simulation replay
 
@@ -1181,3 +1181,9 @@ Then run `python verify_vision.py NEW_CSV NEW_AUDIT` from this study directory.
 ### Independent bootstrap-forest folds 3 and 4 audited
 
 [Two additional saved folds](results/independent-rfboot-folds34-2026-10-19) validate 10,000 predictions and 1,510,000 input cells against the original partition. Archive readback and repeated audits reproduce exact results. Four folds now cover 20,000 predictions and 3,020,000 input-cell checks. The original final-fold process continues; no aggregate score or paper completion is inferred from partial coverage.
+
+### All reported estimator pairs complete
+
+[The final bootstrap-forest ensemble](results/independent-rfboot5000-2026-10-19) passes both complete five-fold audits and independent Python metric checks. Archive readback reproduces all audit outputs exactly.
+[The complete comparison](results/estimator-comparison-complete-2026-10-19) covers **75/75 reported-score pairs**, 262,500 predictions, and 39,637,500 input-cell checks.
+No estimator folds remain pending. Historical score discrepancies and independent-model stochastic fidelity still prevent paper completion.
