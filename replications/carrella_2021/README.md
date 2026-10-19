@@ -11,6 +11,8 @@ The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10
 
 [A historical abctools source check](results/abctools-source-history-2026-10-19) finds one transformation-validation change in `semiauto.abc` between 2018 and 2025. Its sampling and regression source is unchanged; dependencies and historical runtime remain unresolved.
 
+[The complete-ensemble analyzer](results/seed-summary-analyzer-validation-2026-10-19) independently recomputes estimator and training-mean baseline errors. It passes the complete 1,250-input control and rejects the unfinished full-data ensemble before output.
+
 **Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.
