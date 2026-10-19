@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The Q-learning/SARSA wealth contrast supports the reported endpoint direction](results/q-sarsa-claim-contrasts-2026-10-19). All fifty paired differences are positive in each released-code orientation, with independent R verification. Early mean reversals prevent an all-time dominance claim; paper-table orientations remain outstanding.
+
 [The released-code SARSA/Q-learning cohort completes all 50 seeds](results/sarsa-q-complete-cohort-2026-10-19). Independent R checks and fresh storage readback pass. All thirteen readable endpoint mean ranges overlap the paper; one remains unresolved. Coverage reaches 952 inputs and 19,040,952 observations, with fifteen released-code pairings complete.
 
 [The first four paired cohorts cannot distinguish the historical learning parameters by endpoint overlap](results/first-row-parameter-comparison-2026-10-19). Both interpretations give 46 overlapping, three non-overlapping, and seven unresolved endpoint targets. Learning trajectories differ despite identical endpoint categories; both interpretations remain required.
