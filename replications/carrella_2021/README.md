@@ -1,14 +1,16 @@
 # Carrella (2021): Sugarscape parameter estimation
 
-[Historical seeds seven and eight pass full audit](results/gam-historical-seed-fourth-prefix-2026-10-19). Their 12,500 point predictions exactly match seed zero, while all 25,000 interval bounds differ. Neither resolves a printed-score discrepancy. Seed nine remains running; no final sensitivity or paper-completion claim follows.
+[The complete ten-seed historical GAM sensitivity is audited](results/gam-historical-seed-sensitivity-complete-2026-10-19). All 56,250 additional point predictions exactly match seed zero; all 112,500 interval bounds differ. None of the five printed scores is recovered by any seed. The bounded experiment is complete; historical provenance and the 37 primary discrepancies remain unresolved.
 
-[Historical seeds five and six pass full audit](results/gam-historical-seed-third-prefix-2026-10-19). All 12,500 point predictions match seed zero; all 25,000 interval bounds differ. Neither seed matches the five printed scores. The newer prefix above extends this result; one preselected seed remains.
+[Historical seeds seven and eight pass full audit](results/gam-historical-seed-fourth-prefix-2026-10-19). Their 12,500 point predictions exactly match seed zero, while all 25,000 interval bounds differ. Neither resolves a printed-score discrepancy. The complete ten-seed result above now supersedes this prefix.
 
-[Historical seeds three and four also pass full audit](results/gam-historical-seed-second-prefix-2026-10-19). Their 12,500 point predictions remain identical to seed zero, while all 25,000 interval bounds differ. Together with seeds one and two, all four additional seeds retain zero printed-score matches. The newer prefix above extends this result; one prospective seed remains.
+[Historical seeds five and six pass full audit](results/gam-historical-seed-third-prefix-2026-10-19). All 12,500 point predictions match seed zero; all 25,000 interval bounds differ. Neither seed matches the five printed scores. The newer prefix above extends this result; the complete ten-seed result is now available above.
+
+[Historical seeds three and four also pass full audit](results/gam-historical-seed-second-prefix-2026-10-19). Their 12,500 point predictions remain identical to seed zero, while all 25,000 interval bounds differ. Together with seeds one and two, all four additional seeds retain zero printed-score matches. The newer prefix above extends this result; the complete ten-seed result is now available above.
 
 [The first two additional historical seeds pass full audit](results/gam-historical-seed-prefix-2026-10-19). Their 12,500 point predictions exactly match seed zero; all 25,000 interval bounds differ. Both retain zero printed-score matches. The newer prefix above extends this result; primary study status is unchanged.
 
-[A bounded fitting-seed sensitivity is running](results/gam-historical-seed-sensitivity-launch-2026-10-19): nine additional prospective seeds, identical saved folds, and full interval calculations. All ten seeds, including the completed seed-zero control, will be reported without selecting a best result. The $1.38 conservative node allowance remains below a $2 gate; launch adds no completion credit.
+[The bounded fitting-seed sensitivity protocol](results/gam-historical-seed-sensitivity-launch-2026-10-19): nine additional prospective seeds, identical saved folds, and full interval calculations. All ten seeds, including seed zero, are now reported without selecting a best result in the complete analysis above. The $1.38 conservative node allowance remains below a $2 gate; launch adds no completion credit.
 
 [The full historical GAM replay is complete](results/gam-historical-full-complete-2026-10-19). All five folds and 18,750 predictions/bounds pass audit. None of five historical scores matches printed precision; two move closer and three farther from the paper. Five final random states match the modern replay. Runtime sensitivity is confirmed, but the 37 primary discrepancies remain unresolved.
 

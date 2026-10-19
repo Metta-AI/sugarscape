@@ -1,0 +1,664 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "parameters": [
+    {
+      "parameter": "initial.population",
+      "published": 0.528,
+      "matching_seeds": [],
+      "ranges": {
+        "performance": {
+          "minimum": 0.54604439962602,
+          "maximum": 0.54604439962602
+        },
+        "coverage": {
+          "minimum": 0.8896,
+          "maximum": 0.8952
+        },
+        "interval_width": {
+          "minimum": 137.951678576928,
+          "maximum": 138.111455332603
+        }
+      }
+    },
+    {
+      "parameter": "maximum.spice.endowment",
+      "published": 0.328,
+      "matching_seeds": [],
+      "ranges": {
+        "performance": {
+          "minimum": 0.291857881744618,
+          "maximum": 0.291857881744618
+        },
+        "coverage": {
+          "minimum": 0.9088,
+          "maximum": 0.912
+        },
+        "interval_width": {
+          "minimum": 32.7040032508813,
+          "maximum": 32.7701134038718
+        }
+      }
+    },
+    {
+      "parameter": "maximum.sugar.endowment",
+      "published": 0.311,
+      "matching_seeds": [],
+      "ranges": {
+        "performance": {
+          "minimum": 0.369776362680896,
+          "maximum": 0.369776362680896
+        },
+        "coverage": {
+          "minimum": 0.9056,
+          "maximum": 0.9096
+        },
+        "interval_width": {
+          "minimum": 33.9334147837978,
+          "maximum": 33.9966694644038
+        }
+      }
+    },
+    {
+      "parameter": "pmut",
+      "published": 0.328,
+      "matching_seeds": [],
+      "ranges": {
+        "performance": {
+          "minimum": 0.454223024606601,
+          "maximum": 0.454223024606601
+        },
+        "coverage": {
+          "minimum": 0.884,
+          "maximum": 0.892
+        },
+        "interval_width": {
+          "minimum": 0.0814959275765986,
+          "maximum": 0.0816215973899872
+        }
+      }
+    },
+    {
+      "parameter": "wealth.reproduction",
+      "published": -1.329,
+      "matching_seeds": [],
+      "ranges": {
+        "performance": {
+          "minimum": -3.28790731115136,
+          "maximum": -3.28790731115136
+        },
+        "coverage": {
+          "minimum": 0.8632,
+          "maximum": 0.868
+        },
+        "interval_width": {
+          "minimum": 12.8837046001149,
+          "maximum": 13.081734209839
+        }
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "seed": 0,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.8936",
+      "interval_width": "138.10124616653",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 0,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.9088",
+      "interval_width": "32.7128302793919",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 0,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.9088",
+      "interval_width": "33.9534693302075",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 0,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.8848",
+      "interval_width": "0.081523127560659",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 0,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.8648",
+      "interval_width": "12.978294004619",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 1,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.892",
+      "interval_width": "137.951678576928",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 1,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.9096",
+      "interval_width": "32.7701134038718",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 1,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.9088",
+      "interval_width": "33.9502431277506",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 1,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.884",
+      "interval_width": "0.0815813645158383",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 1,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.8648",
+      "interval_width": "13.0047257743218",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 2,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.8944",
+      "interval_width": "138.027347354319",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 2,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.9104",
+      "interval_width": "32.7363441717642",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 2,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.9056",
+      "interval_width": "33.9334147837978",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 2,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.8872",
+      "interval_width": "0.0815341045567842",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 2,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.864",
+      "interval_width": "13.081734209839",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 3,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.8896",
+      "interval_width": "138.00546463318",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 3,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.9112",
+      "interval_width": "32.7410456302772",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 3,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.9064",
+      "interval_width": "33.9587459854072",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 3,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.888",
+      "interval_width": "0.0815764226415033",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 3,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.8648",
+      "interval_width": "12.8837046001149",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 4,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.8912",
+      "interval_width": "137.984484745393",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 4,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.9088",
+      "interval_width": "32.7354847599897",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 4,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.908",
+      "interval_width": "33.9966694644038",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 4,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.888",
+      "interval_width": "0.0816058188229645",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 4,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.8632",
+      "interval_width": "12.9187239963573",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 5,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.8936",
+      "interval_width": "138.044277297935",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 5,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.912",
+      "interval_width": "32.7576672431179",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 5,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.9064",
+      "interval_width": "33.9619982536945",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 5,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.888",
+      "interval_width": "0.0815156600712866",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 5,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.864",
+      "interval_width": "12.9878911503324",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 6,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.8944",
+      "interval_width": "138.111455332603",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 6,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.912",
+      "interval_width": "32.7492515206958",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 6,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.9096",
+      "interval_width": "33.9833336174205",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 6,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.8872",
+      "interval_width": "0.0814959275765986",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 6,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.8656",
+      "interval_width": "13.0224279540069",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 7,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.8904",
+      "interval_width": "138.001357987337",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 7,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.9104",
+      "interval_width": "32.7417221121894",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 7,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.9096",
+      "interval_width": "33.9731229425315",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 7,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.884",
+      "interval_width": "0.0816215973899872",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 7,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.864",
+      "interval_width": "12.9241089526541",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 8,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.8952",
+      "interval_width": "138.0364884429",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 8,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.912",
+      "interval_width": "32.7502527522339",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 8,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.9072",
+      "interval_width": "33.9780175836418",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 8,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.892",
+      "interval_width": "0.0816065440435614",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 8,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.868",
+      "interval_width": "12.9759154967337",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 9,
+      "parameter": "initial.population",
+      "rmse": "52.2892101917066",
+      "baseline_rmse": "115.185736553596",
+      "coverage": "0.8944",
+      "interval_width": "138.043321759151",
+      "performance": "0.54604439962602",
+      "published": "0.528",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 9,
+      "parameter": "maximum.spice.endowment",
+      "rmse": "15.0634773397594",
+      "baseline_rmse": "21.2718280009535",
+      "coverage": "0.9104",
+      "interval_width": "32.7040032508813",
+      "performance": "0.291857881744618",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 9,
+      "parameter": "maximum.sugar.endowment",
+      "rmse": "13.4062854505079",
+      "baseline_rmse": "21.2722669488193",
+      "coverage": "0.9072",
+      "interval_width": "33.9443523911892",
+      "performance": "0.369776362680896",
+      "published": "0.311",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 9,
+      "parameter": "pmut",
+      "rmse": "0.0314305702694196",
+      "baseline_rmse": "0.0575886702563154",
+      "coverage": "0.8896",
+      "interval_width": "0.0815462448545297",
+      "performance": "0.454223024606601",
+      "published": "0.328",
+      "matches_printed_precision": "FALSE"
+    },
+    {
+      "seed": 9,
+      "parameter": "wealth.reproduction",
+      "rmse": "99.5230995504399",
+      "baseline_rmse": "23.2101797750186",
+      "coverage": "0.8656",
+      "interval_width": "12.9659415484534",
+      "performance": "-3.28790731115136",
+      "published": "-1.329",
+      "matches_printed_precision": "FALSE"
+    }
+  ],
+  "scope": "All ten preselected fitting seeds, historical runtime and fixed folds. Observed ranges are not confidence intervals and do not identify the author environment or prove a negative replication."
+}
