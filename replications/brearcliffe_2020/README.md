@@ -122,3 +122,5 @@ The [complete Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) no
 [Full-horizon EC/EC recorder qualification](results/ec-ec-full-native-qualification-2026-10-19) matches native BehaviorSpace exactly on 320,016 values for seed 381016329. Fresh local readback passes; the paper discrepancy remains unresolved.
 
 [Durable EC/Q evidence](results/ec-q-durable-evidence-2026-10-19) passes fresh storage import and verification of 502 file hashes. The three disjoint backups now cover all 353 audited inputs.
+
+[Durable EC/SARSA evidence](results/ec-sarsa-durable-evidence-2026-10-19) verifies all 502 archive members after fresh storage download. Four disjoint backups now cover all 403 audited inputs.
