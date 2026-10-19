@@ -109,5 +109,43 @@
       }
     ],
     "search_limit": "Empty search results do not establish absence of a surviving implementation."
+  },
+  "source_followup_2026_10_19": {
+    "status": "No implementation recovered; no new simulation or completion credit.",
+    "retrievals": [
+      {
+        "url": "https://www.inb.uni-luebeck.de/fileadmin/files/publications/inb-publications/htmls/FlPoUt01",
+        "final_url": "https://www.inb.uni-luebeck.de/fileadmin/files/publications/inb-publications/htmls/FlPoUt01",
+        "status": 200,
+        "file": "paper-mirror.html",
+        "bytes": 75638,
+        "sha256": "5d035bfcaba9461d0e37160e2a586a5ea2e689307cd936334dc5ce2e6ba361ee"
+      },
+      {
+        "url": "https://www.educ.ar/recursos/113328/antropocaos-emulando-en-ciencias-sociales",
+        "final_url": "https://www.educ.ar/recursos/113328/antropocaos-emulando-en-ciencias-sociales",
+        "status": 200,
+        "file": "unrelated-zip-description.html",
+        "bytes": 64943,
+        "sha256": "3af4966b3dc1ef79cf904c06c71fa83c8cf414a894e34da172eaca87c7062749"
+      }
+    ],
+    "mirror_finding": "The Luebeck paper mirror links to the same Mainz norm-sim_eng.html project page already audited; it provides no new ZIP link.",
+    "zip_name_collision": "The Educ.ar page describes sugarscape.zip as a compressed animation by Diego Diaz Cordova based on Epstein and Axtell chapter II. It does not identify the Flentge possession-norm implementation. Archive not downloaded.",
+    "github_searches": [
+      {
+        "command": "gh search code '\"Flentge\" \"sugarscape\"' --limit 100 --json repository,path,url",
+        "results": 0
+      },
+      {
+        "command": "gh search code '\"norm-sim/source.zip\"' --limit 100 --json repository,path,url",
+        "results": 0
+      },
+      {
+        "command": "gh search repos '\"Flentge\" sugarscape' --limit 100 --json fullName,url,description",
+        "results": 0
+      }
+    ],
+    "limits": "These specific searches and page inspections do not establish that no surviving implementation exists. Original source, landscape, and scheduling remain unresolved."
   }
 }
