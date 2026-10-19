@@ -1183,3 +1183,5 @@ Both producers continue; these completion-order prefixes do not establish whole-
 [Heterogeneous50 total wealth](results/heterogeneous50-wealth-2026-10-19): all 500 trajectories yield median total wealth 131604.22–131628.06 across four averaging conventions, within Figure 17 ink bounds 130295.64–132297.43. Independent R arithmetic and repeat traversal pass; historical plotting conventions remain unresolved.
 
 [Heterogeneous50 agent outcomes](results/heterogeneous50-agent-metrics-2026-10-19): observed-duration medians match Figures 18, 19, and 21 for mean wealth, time to live, and age at death. Zero extension moves wealth and time to live outside the plotted medians. Independent R checks all 12 convention-specific medians; historical averaging choices remain unverified.
+
+[Table 5 requires the full 46–50% bin](results/table5-bin-coverage-2026-10-19). The completed 50% cohort has 150 extinct, four worse, and 346 better runs, but covers only 500/2,500 inputs required for that numeric table row. The other 2,000 original inputs are enumerated; no table verdict is assigned.
