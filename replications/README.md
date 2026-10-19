@@ -5,10 +5,14 @@ Engine upstream: [nkremerh/sugarscape](https://github.com/nkremerh/sugarscape), 
 `e6559bed1a6bda71bb07a3498dae862ea899b10f`.
 The [Coworld wrapper](https://github.com/Metta-AI/coworld-sugarscape) consumes that engine separately.
 
-Goal: reproduce the Sugarscape results of at least ten distinct papers.
+Goal: faithfully reproduce and exercise the Sugarscape methods of at least ten distinct papers.
+Exact numerical agreement is reported separately and is not a completion requirement (user clarification, October 19, 2026).
 Foundational book chapters, multiple figures from one paper, and repeated versions do not count as separate papers.
 Distinct research papers published in conference proceedings do count.
 The table distinguishes candidates, unfinished studies, and completed replications.
+
+Current completion count: **five studies**, including Carrella’s qualified method reproduction.
+The dated progress entries below retain earlier criteria and counts; `study-evidence.json` is the current evidence ledger.
 
 ## Evidence required
 
@@ -29,10 +33,16 @@ If a source claim fails, preserve the failure and investigate the mechanism.
 Treat disagreements as possible implementation or configuration errors first. Search for author and third-party implementations.
 Validate scheduling, initialization, measurement definitions, dependencies, and statistical uncertainty before assigning a negative verdict.
 A validated negative replication counts as a completed study, as explicitly authorized by the user.
-An unexplained discrepancy or failed run does not count.
+An unexplained numerical discrepancy alone does not prevent method completion once implementation fidelity is supported.
+Unresolved method choices, incomplete core workflows, and failed required runs still prevent completion.
+A numerical mismatch is not automatically a validated negative paper result.
 
-Status vocabulary: candidate → specified → running → discrepancy / partial / replicated / validated-negative.
-Use `replicated` only after all declared Sugarscape targets pass their predeclared criteria.
+Status vocabulary: candidate → specified → running → partial / completed-method-qualified / replicated / validated-negative.
+Use `completed-method-qualified` for executed, evidence-supported methods with explicit assumptions and numerical discrepancies.
+Reserve `replicated` for targets passing their declared numerical criteria; do not silently change those criteria.
+For each PR, separate the stated method, author-code behavior, our implementation choices, and result-matching diagnostics.
+If agreement requires a departure from the stated method, document the departure and report both outcomes.
+Do not require recovery of an undocumented historical seed merely to complete a faithful method reproduction.
 Explicitly exclude unrelated case studies from papers containing several models.
 
 ## Candidate papers
@@ -48,8 +58,8 @@ Explicitly exclude unrelated case studies from papers containing several models.
 | christley-2017 | Christley et al., [Optimal control of sugarscape agent-based model via a PDE approximation model](https://doi.org/10.1002/oca.2265) (2017; online 2016) | Tax revenue, survival, and PDE-derived controls | [source audit](source-audits/christley-2017.json): coauthor slides recovered; distinct nondepleting strip model; journal text, original implementation, and control solver unresolved; no runs |
 | lima-2024 | Lima and Aguiar, [Towards a Docker-based architecture for open multi-agent systems](https://doi.org/10.11591/ijai.v13.i1.pp45-56) (2024) | Two NetLogo Sugarscape models exchanging agents with JaCaMo; both container-only and host-GUI scenarios | completed qualified author-code feasibility reproduction; both full scenarios, saved state, native GUI and conservation verified; historical binary equivalence unproven; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/19) |
 | raimbault-2019 | Raimbault et al., [Space Matters: Extending Sensitivity Analysis to Initial Spatial Conditions in Geosimulation Models](https://www.jasss.org/22/4/10.html) (2019) | Sugarscape spatial sensitivity and Gini outcomes | 6/6 archived Table 2 and 24/24 Table 4 statistics reproduced; 55,000/55,000 reference simulations audited with 110,000 exact Gini matches; 8,000 generated inputs also audited with 16,000 exact Gini matches; full generated landscapes and spatial sensitivity remain incomplete; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/5) |
-| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | complete author replay: 750,000/750,000 statistics across 5,000 inputs; 38 of all 75 computed Table 8 cells match printed precision; 37 discrepancies unresolved, 15 published NA; parser/runtime sensitivity remains under investigation; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
-| brearcliffe-2020 | Brearcliffe and Crooks, [Creating Intelligent Agents: Combining Agent-Based Modeling with Machine Learning](https://doi.org/10.1007/978-3-030-83418-0_3) (2021; CSS 2020) | Figures 3–9; sixteen ordered method pairings, fifty repeats each | Nine released-code cohorts complete; 453 audited inputs and 9,060,453 observations across released-code and paper-table interpretations. Full cohorts, parameter sensitivity, and fork fidelity remain incomplete; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23) |
+| carrella-2021 | Carrella, [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html) (2021) | Sugarscape parameter recovery comparison and error tables | completed qualified method reproduction: 5,000 author and 5,000 independent simulations; all 75 finite Table 8 workflows; 38 printed matches and 37 discrepancies retained. Historical randomness/runtime and stochastic equivalence remain qualified; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4) |
+| brearcliffe-2020 | Brearcliffe and Crooks, [Creating Intelligent Agents: Combining Agent-Based Modeling with Machine Learning](https://doi.org/10.1007/978-3-030-83418-0_3) (2021; CSS 2020) | Figures 3–9; sixteen ordered method pairings, fifty repeats each | Fifteen released-code cohorts and five paper-table cohorts complete; 1,002 audited inputs and 20,041,002 observations. Method differences and paired outcomes are documented; remaining cohorts are running; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23) |
 | stevenson-2021 | Stevenson, [Dynamics of Wealth Inequality in Simple Artificial Societies](https://arxiv.org/abs/2108.11892) (2021) | Equilibrium/non-equilibrium inequality and reproduction-cost experiments | [Study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/8): both fixed and both conditional evolutionary cases complete 100 seeds at 100,000 cycles. All twenty Table 1 means have source-extracted comparisons. Evolutionary native/trait audits and 96 independent statistical checks pass; fixed-society ages, growth fits, author conventions and remaining figure/Appendix B requirements remain unresolved. No completion credit |
 | buzing-2005 | Buzing, Eiben, Schut, [Emerging Communication and Cooperation in Evolving Agent Societies](https://www.jasss.org/8/1/2.html) (2005) | Cooperation pressure versus communication and survival | three 150-run reconstruction/correction grids fully audited; historical fidelity unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/9) |
 | buzing-2003 | Buzing, Eiben, Schut, [Evolving Agent Societies with VUScape](https://www.cs.vu.nl/~gusz/papers/ECAL2003-Buzing-Eiben-Schut.pdf) (2003) | Fixed-listening communication, population variation, and cooperation | 200-run grid and actual initialization audited; all populations extinct; historical fidelity unresolved; [study PR](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/12) |

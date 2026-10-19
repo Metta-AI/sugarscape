@@ -1,9 +1,9 @@
 {
-  "as_of": "2026-10-19T22:30:36.398329+00:00",
+  "as_of": "2026-10-19T22:44:01.534017+00:00",
   "minimum_completed_papers": 10,
-  "completed_studies": 4,
+  "completed_studies": 5,
   "wholly_positive_papers": 1,
-  "interpretation": "Four completed studies: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural replication, and Lima qualified author-code architecture-feasibility reproduction. Lima does not establish independent-engine replication or exact historical binary equivalence; its supplemental score test remains failed. Other entries retain dated evidence and receive no completion credit.",
+  "interpretation": "Five completed studies under the user\u2019s method-based criterion: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural, Lima qualified author-code architecture feasibility, and Carrella qualified method reproduction. Numerical agreement is separate. Carrella retains 37 primary discrepancies and historical random-stream/runtime qualifications; no validated-negative or universal stochastic-equivalence claim. Other studies require individual method reassessment.",
   "studies": [
     {
       "study": "mcculloch_2022",
@@ -19,14 +19,14 @@
     {
       "study": "carrella_2021",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/4",
-      "checked_commit": "bc46375e91979ac419c034c4fd0107e74dda875e",
-      "status": "partial",
+      "checked_commit": "bc33bd58e92914ce1652f2c15ccd77d99dc1895b",
+      "status": "completed-method-qualified",
       "readme": "replications/carrella_2021/README.md",
-      "readme_sha256": "cd91639c6a9e8a025d658e64c41bccf23c26dda81749fdb7056a0cc643e6aa30",
-      "json_evidence_files": 607,
-      "remaining_scope": "Primary75finite Table8scores evaluated:38match37discrepant. All5000author simulations reproduce750000summaries; all75independent estimatorpairs audited262500predictions39637500inputcells. Tenparameter diagnostic1280runs641280observations:30Holm-adjusted tests nonreject,not equivalence. HistoricalR4.0.5/mgcv1.8-34 seed-sensitivity0\u20139 COMPLETE:187500predictions/bounds1250metrics audited,maxscalederror3.882e-15;56250additionalpoint predictions exactagainst0,112500bounds changed. All10seeds retain0/5printed GAMscorematches. Archive5902405bytesSHAd329b04b247766699db4c9d655b07832742e3e3152ca5ea935253520346fe97e verifies127members16frozenfiles;104priorprefixfiles exact. No seedselection or finalnegativeclaim. Authorhistoricalruntime/folds/RNG unresolved; preparedauthorissue awaits explicitpostingapproval. Study incomplete.",
+      "readme_sha256": "c92f4a06ee706ab0b7fddf90ca6fbd33f2ab67999c2b645165a153c691b121ba",
+      "json_evidence_files": 608,
+      "remaining_scope": "Completed qualified method reproduction: all 5000 author and 5000 independent simulations and all 75 finite Table8 estimator workflows. Fresh reconciliation verifies 262500 predictions and 39637500 input cells. Primary38 printed matches/37 discrepancies;15NA. All original method sizes/folds retained. Independent Python random stream and per-method seed-zero estimator stream differ from historical notebook. Historical GAM ten-seed controls complete; none selected. Historical numerical provenance and stochastic equivalence remain qualified, not completion prerequisites. See method-verdict-2026-10-19.",
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-19T20:29:17.773367+00:00",
+      "checked_at": "2026-10-19T22:44:01.534017+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/carrella_2021"
     },
     {
@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "503f604f32b6ed3525a9c8828ecca04a69223671",
+      "checked_commit": "5f1c18965046f57224686f586348a8e4d19d25c2",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "4a342b233ce5ca1374ac864335ff31b72d31ca2849afb1ecc7d9d30abae3768d",
-      "json_evidence_files": 430,
-      "gzip_json_evidence_files": 75,
-      "checked_at": "2026-10-19T22:19:13.613315+00:00",
+      "readme_sha256": "34a4564d7bfbc44c7135751445a3db5022f9040819179dedcccf4d28aa07f592",
+      "json_evidence_files": 435,
+      "gzip_json_evidence_files": 77,
+      "checked_at": "2026-10-19T22:44:01.534017+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "687 original inputs and 2,501,869 observations freshly audited: 382 baseline and 305 sweep. Eighth Table IV checkpoint adds 25 disjoint inputs and 125,025 observations; original configurations, runtime payload and full trajectory hashes verified. Table III remains exactly reproduced over all 100 original utilitarian inputs (0/0/100); independent R previously verified the source-entry census. Tables I and II have 94/100 and 92/100 inputs; Table IV first bin has 302/500, including all 100 original inputs at each of .36/.37/.38, with no incomplete percentages reported. Remaining 18 baseline and 9,795 sweep inputs. Four metric medians and quartiles fit paper graphics at selfishness .36 and .37; stated death-rate definition remains discrepant. Aging-inclusive, pooled, and initial-population-denominator diagnostics do not resolve full death quartiles. No whole-paper verdict. Existing bounded jobs continue. Frozen 9597 unassigned sweep inputs remain unlaunched pending separate $175 budget approval, native qualification, and budget-controlled dispatch. Preparation CLI now validates all19 real shards, 9597 distinct inputs, 9711 payload hashes, and two exact repeats. New runner includes setup in its boot-time admission deadline and hard outer timeout; Linux bootstrap and runtime gates remain unexecuted. No new simulation credit."
+      "remaining_scope": "705 audited inputs,2558145 observations: all400original baselines and305sweep. TablesI\u2013III exactly67/2/31,62/2/36,0/0/100; independentR originalZIP census confirms300table inputs/880499observations. Finalcheckpoint18inputs56276observations; terminalarchive293inputs623183observations reaudited exact without duplicatecredit. No baseline remains;9795sweep inputs unaudited. Method-based completion review retains unresolved death-rate definition and incomplete declared sweep coverage. Additional175budget remains pending; no new launch."
     }
   ],
   "study_prs": 22,
