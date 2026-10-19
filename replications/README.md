@@ -357,3 +357,5 @@ Need for Greed’s death-rate quartiles now show why median agreement is insuffi
 Brearcliffe Q/Q now completes all 50 seeds, bringing coverage to 553 inputs and 11,060,553 observations. Eleven released-code cohorts are complete. Independent R arithmetic and durable archive readback pass. Eight readable endpoint ranges overlap the paper, while six remain unresolved; no equivalence or whole-paper completion is claimed.
 
 The [related reinforcement-learning repository audit](source-audits/market-genetic-rlearners-2026-10-19/README.md) verifies 13 source files, four driver revisions, and eight population traces. Its 200-agent, 10,000-period protocol differs from the Market Algorithm paper; it adds no replication credit.
+
+[Hawick’s 2014 geometry study](source-audits/hawick-2014/audit.json) is an additional candidate. Public author text was located, but original Java code and complete execution settings remain unverified. The author host no longer resolves; publisher/PDF retrieval failed. Targeted GitHub repository search found no match, while code search was unavailable. No simulation or completion credit is added.
