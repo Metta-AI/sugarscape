@@ -31,9 +31,11 @@
     {
       "id": "richmond-counter-reset-controls-001",
       "maximum_usd": 8,
-      "state": "running",
+      "state": "audited-exported-stop-requested-cost-reconciliation-pending",
       "node": "relh-sugarscape-richmond-h100-20261017-v1",
-      "command": "cmd-cpsse"
+      "command": "cmd-cpsse",
+      "native_audited_variants": 4,
+      "post_step_records": 2873995
     }
   ],
   "reserved_usd": 28.0,
