@@ -3,7 +3,7 @@
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
-**Not a completed replication:** estimator discrepancies and the final independent-simulator audit remain unresolved.
+**Not a completed replication:** estimator discrepancies, remaining independent estimator folds, and cross-stream fidelity remain unresolved.
 
 The [independent 1,250-input GAM run](results/independent-loess1250-2026-10-18) now passes all five fold and 6,250 prediction audits. The [5,000-input counterpart](results/independent-loess5000-2026-10-18) also completes all five folds, validating 3,775,000 input values and 25,000 predictions. Both sizes pass independent archive readback.
 
@@ -1081,3 +1081,33 @@ No partial aggregate estimator score or new study-completion credit is claimed.
 ## Independent bootstrap-forest second completed fold
 
 [The second fold](results/independent-rfboot-fold2-2026-10-18) verifies 755,000 input cells and 5,000 held-out predictions against the original seed-zero partition. All reported errors, coverage, and interval widths reconstruct within 1e-10. Archive readback reproduces the audit and prediction CSV exactly. Two of five folds are audited; the remaining three continue under the existing bound. No aggregate score or paper completion is claimed.
+
+
+## Consolidated estimator comparison
+
+[The complete cell inventory](results/estimator-comparison-2026-10-19/comparison.csv)
+retains all90 Table8 cells:75 reported values and15 published NA entries.
+It pairs65 completed independent-model scores with the author-data reruns and published values.
+Ten independent scores remain pending: five parameters each for5,000-input neural-network and bootstrap-forest estimation.
+No partial-fold result substitutes for these missing scores.
+
+The reconciliation verifies source-result hashes, the common independent summary hash,
+13 complete input audits, and independently recalculated prediction metrics.
+Those existing audits cover212,500 predictions and32,087,500 training/testing cells.
+This is an audit reconciliation, not a new raw-fold replay or statistical equivalence test.
+A second CLI execution produces byte-identical outputs.
+
+The largest performance difference is the1,250-input GAM reproduction-wealth score:
+−3.002351 on author data versus0.817684 on independent data, with published−1.329.
+Earlier term diagnostics identify extreme extrapolation in the author-data fit.
+Linear regression for mutation probability also differs:−0.130966 versus0.412859 at1,250 inputs.
+Different simulator random streams and possible implementation differences remain under investigation;
+improved prediction does not establish reproduction of the published result.
+
+```sh
+python replications/carrella_2021/reconcile_estimator_comparisons.py \
+  replications/carrella_2021/ESTIMATOR_COMPARISON_INPUTS.json /new/comparison
+```
+
+The explicit input manifest prevents selecting partial outputs or replacing the primary author-data runs with sensitivity controls.
+Add completed estimator evidence to this manifest only after its input and prediction audits pass.
