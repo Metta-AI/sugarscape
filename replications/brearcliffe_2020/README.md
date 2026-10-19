@@ -36,6 +36,8 @@ java -Xmx1g -Djava.awt.headless=true -cp 'DRIVER_DIRECTORY:NETLOGO/app/*' \
 Place the original symmetric map and the NetLogo 6.1.1 matrix extension beside the retained model copy.
 The external bounded launcher and exact command are retained in the launch record.
 
+The [all-pairing qualification](results/all-pairings-launch-2026-10-19) is now running for 1,000 ticks per pairing with fixed bounds. Full paper ensembles have not started.
+
 ## Remaining work
 
 Qualify the remaining method pairings and estimate their runtime before the full 800-run ensemble. The measured Rule M/EC pairing projects to about 49 CPU-hours for 800 runs; this is not a measured full-sweep estimate.
