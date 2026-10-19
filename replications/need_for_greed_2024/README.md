@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[Development history traces the aging-inclusive death calculation to June 2024](results/development-death-history-2026-10-19). The unchanged function reproduces all 5,001 later-control rates exactly, with independent arithmetic checks. The paper’s median-plot pipeline and written exclusion of aging remain unresolved.
+
 [The selfishness-1 endpoint baseline reached its time limit](results/endpoint-recovery-launch-2026-10-19). Both level-1 controls timed out; the original batch is terminal. Bounded sequential recovery reruns only those two inputs with unchanged configurations. Failed bytes are preserved; coverage and study status are unchanged.
 
 Status: partial native reproduction. The shared-input inventory has 164 audited inputs and 815,329 observations; separate native controls appear below. Four reported medians agree graphically at selfishness 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
