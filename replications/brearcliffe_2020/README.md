@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The local cohort stopped at its disk-space guard](results/local-disk-guard-recovery-2026-10-19) with 42/50 seeds complete. Eight unfinished inputs are now recovering remotely. Independent coverage is 43 released-code plus two paper-table inputs, totaling 900,045 observations.
+
 [Both cloud-host qualification cases now pass](results/existing-host-qualified-ensemble-launch-2026-10-19): 640,032 values and both complete trajectory byte sequences match the local references. The 749 reserved released-code inputs are running with eight workers under an 11.5-hour simulation bound and a $9.12 execution/export/idle ceiling. Launch adds no completed-study credit.
 
 [Both paper-table pilot inputs](results/second-paper-table-input-2026-10-19) pass all 20,001 observation checks and fresh archive readback. Coverage is 15 released-code inputs and two paper-table inputs; no pairing is complete.
