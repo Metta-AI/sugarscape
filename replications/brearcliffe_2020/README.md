@@ -120,10 +120,18 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-Qualify the remaining method pairings and estimate their runtime before the full 800-run ensemble. The measured Rule M/EC pairing projects to about 49 CPU-hours for 800 runs; this is not a measured full-sweep estimate.
-Resolve the released-code/prose parameter interpretations without silently changing the primary experiment.
-Implement the study behavior in the fork, qualify it against the native model, and compare every published figure using full repeated ensembles.
-Do not count a pilot, source audit, or five-repeat released sweep as a completed paper replication.
+The latest full audit covers 600/800 released-code inputs and 52/800 paper-table inputs.
+Complete and audit the remaining 200 released-code and 748 paper-table inputs under the existing frozen assignments.
+Both bounded ensembles are running; completed producer entries receive coverage only after independent trajectory audits.
+All sixteen method pairings already passed native recorder qualification; the Rule M control also matches across both parameter interpretations for all 50 seeds.
+
+For each remaining complete 50-seed cohort, verify means, sample standard deviations and whole-run bootstrap intervals independently in R.
+Compare all Figures 3–9 using the corrected horizontal calibration and retain unreadable or mislabeled paper segments as unresolved.
+Synthesize the complete pairings before assessing the paper's conclusions; partial endpoint overlaps do not establish equivalence.
+
+Investigate discrepancies across the released-code and paper-table parameter settings without selecting whichever better matches a figure.
+Original paper seeds and between-run uncertainty remain unavailable. Preserve that limitation and distinguish source/measurement discrepancies from implementation errors.
+The study remains incomplete until the declared ensembles and figure comparisons are finished and discrepancies have been investigated.
 
 ## Complete-cohort curve comparison
 
