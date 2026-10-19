@@ -1,0 +1,13 @@
+--- released-code-pair-00-repeat-00
++++ paper-table-pair-00-repeat-00
+@@ -65,8 +65,8 @@
+   setup-patches
+   set starting 0
+   ;;hyper parameters
+-  set learning-rate 0.9
+-  set gamma 0.8
++  set learning-rate 0.8
++  set gamma 0.9
+   set learning-period 10000
+   ;;end hyper parametters
+   reset-ticks

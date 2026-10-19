@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "next_offset": 989,
+  "output": "{\"run_id\": \"paper-table-pair-00-repeat-00\", \"observations\": 20001, \"trajectory_sha256\": \"8298ba94aa95f8404dc9f926ff458b4521b1114359fd5eb6cc0c8871260affbc\", \"scope\": \"One complete frozen input; not an ensemble aggregate or paper replication.\"}\n{\"manifest_sha256\": \"3633edf2ca2ec1bd59222e15241655c38c7ec0cacffd1948294ed7c69be85c37\", \"completed_inputs\": 1, \"remaining_inputs\": 1599, \"observations\": 20001, \"scope\": \"Verified complete inputs only; no full-ensemble or published-result verdict.\"}\n{\"bytes\": 900969, \"sha256\": \"adba8bb640679c5405aee7968d00d96af35004d52f5657f5b9ce7e201c601d41\", \"comparison\": {\"run_id\": \"paper-table-pair-00-repeat-00\", \"reference_run_id\": \"released-code-pair-00-repeat-00\", \"expected_sha256\": \"8298ba94aa95f8404dc9f926ff458b4521b1114359fd5eb6cc0c8871260affbc\", \"actual_sha256\": \"8298ba94aa95f8404dc9f926ff458b4521b1114359fd5eb6cc0c8871260affbc\", \"bytes\": 2090231, \"exact_sha256_match\": true, \"scope\": \"Native parameter-interpretation control; one input only.\"}}\n",
+  "status": "exited",
+  "truncated": false
+}

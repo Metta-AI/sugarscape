@@ -1,6 +1,6 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
-[EC/Rule M now completes all 50 seeds](results/ec-rule-m-complete-cohort-2026-10-19), with full-trajectory audit and independent R verification. Five of sixteen released-code pairings have complete cohorts. Total audited coverage is 250 released-code plus two paper-table inputs, totaling 5,040,252 observations. Thirteen of fourteen EC/Rule M endpoint ranges overlap the paper raster intervals. The remaining EC vision comparison has a narrowly overlapping bootstrap interval; no whole-paper verdict is established.
+[EC/Rule M now completes all 50 seeds](results/ec-rule-m-complete-cohort-2026-10-19), with full-trajectory audit and independent R verification. Five of sixteen released-code pairings have complete cohorts. Total audited coverage is 250 released-code plus three paper-table inputs, totaling 5,060,253 observations. Thirteen of fourteen EC/Rule M endpoint ranges overlap the paper raster intervals. The remaining EC vision comparison has a narrowly overlapping bootstrap interval; no whole-paper verdict is established.
 
 Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical to the Rule M/Rule M panel. Both curves are excluded from agreement judgments. Eleven of twelve remaining endpoint range comparisons overlap the paper raster intervals; this is not equivalence or a negative replication.
 
@@ -19,6 +19,8 @@ Figure 6's Rule M/Q-learning cell contains an “M v M” chart nearly identical
 [Figures 4–9 endpoint targets](results/metric-digitization-2026-10-19) now retain 170 visible raster bounds and 22 unresolved endpoints across six metrics. Repeated extraction is byte-identical; these image bounds are not statistical confidence intervals.
 
 [The EC vision uncertainty diagnostic](results/ec-vision-uncertainty-2026-10-19) finds all 286 paper raster intervals overlap an exploratory whole-run bootstrap band. Independent R confirms native-input interpolation and resampling arithmetic. This makes sampling uncertainty a plausible explanation, not an equivalence result.
+
+[A full native paper-table Rule M/Rule M control](results/paper-table-rule-m-control-2026-10-19) matches its released-code counterpart byte-for-byte across 20,001 observations. This supports the source audit’s predicted parameter insensitivity for that input; unexecuted inputs receive no credit.
 
 Study status: native recorder corrected and qualified across 20,000 ticks. No reproduced-paper result yet.
 
