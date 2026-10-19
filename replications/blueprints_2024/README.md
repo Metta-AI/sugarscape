@@ -1137,3 +1137,7 @@ The remaining 22 seeds are required before condition aggregation; paper completi
 ## Heterogeneous runtime qualification complete
 
 [All three CPython/PyPy pairs](results/heterogeneous-runtime-complete-2026-10-19) pass independent audits for 30,006 observations, with byte-identical full trajectories and exact matches to earlier controls. Fresh archive extraction reproduces all six audits. This validates the three selected runtime pairs; full sweeps and paper completion remain outstanding.
+
+## Original 50% heterogeneous cohort launched
+
+[The remaining 499 original seeds](results/heterogeneous50-launch-2026-10-19) now run on eight PyPy workers after the full-horizon runtime qualification. Original horizons and input hashes remain unchanged. The 12-hour platform limit bounds compute plus idle to $8.82 at the recorded rate. Launch adds no validated coverage; interrupted inputs remain outstanding.
