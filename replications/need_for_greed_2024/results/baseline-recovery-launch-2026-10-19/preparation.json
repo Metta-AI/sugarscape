@@ -1,0 +1,2346 @@
+{
+  "inputs": 333,
+  "models": {
+    "rawSugarscape": 100,
+    "altruisticHalfLookaheadBinary": 99,
+    "benthamHalfLookaheadBinary": 35,
+    "egoisticHalfLookaheadBinary": 99
+  },
+  "coverage_sha256": "b06c68f44097bf7f8f23bff063f782ac1f1dfcfb2a51b03ed74682f00f97305f",
+  "plan_sha256": "f212080702d7b9d324c45519968a84a4742746cdf26cc2bfa8f30fad646cbea1",
+  "overlap_with_audited": [],
+  "raw_location_checks": [
+    {
+      "entry": "altruisticHalfLookaheadBinary1047840195371099687.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-1047840195371099687/manifest.json",
+      "manifest_sha256": "974f37fe8565f79dbdd0de1be032a35092e2144aca80be75c0b648efb56eaac7",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-1047840195371099687/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1113456709891828571.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-1113456709891828571/manifest.json",
+      "manifest_sha256": "dc3f89a75c26d49b499932e0d13c1d19d4681711d311b6ed5cd7abbe1f84639b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-1113456709891828571/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1233067699360264716.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-1233067699360264716/manifest.json",
+      "manifest_sha256": "5ff08373f2b7a7a71b040896ede2cb037e9ed3b4e81cbdf50351a6a83109e20c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-1233067699360264716/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1254106714873597359.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1254106714873597359/manifest.json",
+      "manifest_sha256": "ffb45b38094611c122e91c9cc8ccfec9e66758f6d59056b06dd4733c4e0737a8",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1254106714873597359/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1288598867396776898.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1288598867396776898/manifest.json",
+      "manifest_sha256": "c5e49aed62cfd14635355c5fb77fcb55973ed7174f33d55ef5e46d4e69d78a04",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1288598867396776898/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1334731553345852678.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1334731553345852678/manifest.json",
+      "manifest_sha256": "aca1fd3f274872c45123904e5badf3f3329e1a59bb1130d0c2d8a9bed67b6955",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1334731553345852678/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1348390354187324392.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1348390354187324392/manifest.json",
+      "manifest_sha256": "36e0ed0a7f432f67f18699affb2f3f0fef04128f55acce3a7d724519207af458",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1348390354187324392/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1359404949007720544.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1359404949007720544/manifest.json",
+      "manifest_sha256": "50ed2232e30278d3734e8c6ff638b7504bfcde56367f2f832d4b647e727c84ad",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1359404949007720544/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1440437373991260400.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1440437373991260400/manifest.json",
+      "manifest_sha256": "74a8f759028bd5610dd33fd5a607cc7221a7d4683805a8523b7fb4372f54ec04",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1440437373991260400/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1470653421161831391.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1470653421161831391/manifest.json",
+      "manifest_sha256": "f43dc4343381ce0a21264d2620b93f31f60c4a4ca52cb203ae836dbd71d61bb1",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1470653421161831391/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1555657386466497304.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1555657386466497304/manifest.json",
+      "manifest_sha256": "23bb2290177fd6385e3da7a24bfb0bb22bf6b6329e2fdea3f087166fd791958c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1555657386466497304/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1609969291442293190.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1609969291442293190/manifest.json",
+      "manifest_sha256": "7fe48aeddc5d65a95245dabc6e8b32fab897dc8302d20036481b07be5c9b7f4d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1609969291442293190/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1735937440315396203.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1735937440315396203/manifest.json",
+      "manifest_sha256": "3d1fe0c920fd554c82009bac26a8becb4ba009fdf232159805213ebbd1210de4",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1735937440315396203/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1802411219399068431.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1802411219399068431/manifest.json",
+      "manifest_sha256": "644a1f000c09223fd8a36f7df3347ca767258e50d6382b152a31848b87f84c4d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1802411219399068431/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary1823687216165022946.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1823687216165022946/manifest.json",
+      "manifest_sha256": "dac3fa679e032d63644519f09e50d5e2b1d101a31719e839ac379fd1e749ccac",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-1823687216165022946/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary2009581725043069747.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2009581725043069747/manifest.json",
+      "manifest_sha256": "94fc69799d792b36e4d079d87b59ff2752a16e9f282856672e3eb2c8fddffe77",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2009581725043069747/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary2060968127868463485.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2060968127868463485/manifest.json",
+      "manifest_sha256": "86b960316e79b8ecb785a09bbc54ac1fb5ced5401569beb094f3787ee7e4352b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2060968127868463485/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary2214172059989836120.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2214172059989836120/manifest.json",
+      "manifest_sha256": "919adacf68db93aefab92fcd944dbfea8d7f0fc758aa5430c7bf701dbc583067",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2214172059989836120/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary2483216780622132986.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2483216780622132986/manifest.json",
+      "manifest_sha256": "7fb4003a48be4af7c0863f28c727928f073b7baf939eff3f657de581e816aaac",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2483216780622132986/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary2513573707559938025.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2513573707559938025/manifest.json",
+      "manifest_sha256": "3d4a0e68b506fc0b8d3735f1a1fc62d8ae3197ad3b808cdd5d0bd9d46b83b61c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2513573707559938025/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary2633622880550445485.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2633622880550445485/manifest.json",
+      "manifest_sha256": "122a94acc75f02f48eae28aa96d65809f940a69e4dd847e228742ea679a522de",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2633622880550445485/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary275110934556063992.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-altruisticHalfLookaheadBinary-500-001/seed-275110934556063992/manifest.json",
+      "manifest_sha256": "09f93257bf013a3fa19cce303869f069d4f8084f4948dd625b7a5f8df6bcc70d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-altruisticHalfLookaheadBinary-500-001/seed-275110934556063992/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary2776046745237740637.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2776046745237740637/manifest.json",
+      "manifest_sha256": "28b22f5519bcdabc9308571ce32b4d3c9ede6ef3b282fb0b1e6c6453c472c6b8",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2776046745237740637/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary2894409412357526145.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2894409412357526145/manifest.json",
+      "manifest_sha256": "cb575f2148d427265176c7c3072bbd5de8ee814b842faf12ba023567e488e571",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-2894409412357526145/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary311115376827154686.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-altruisticHalfLookaheadBinary-500-001/seed-311115376827154686/manifest.json",
+      "manifest_sha256": "b15cd0672fcfc2e2f168d47efd86ddf5ffe759e96224a6607c5adf8426dbe809",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-altruisticHalfLookaheadBinary-500-001/seed-311115376827154686/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary3130560300212625915.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3130560300212625915/manifest.json",
+      "manifest_sha256": "f8c73199f5399723ecb94eff6d185214bc9c349694835da4b640ba2582554cb6",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3130560300212625915/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary3179381068919553722.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3179381068919553722/manifest.json",
+      "manifest_sha256": "0e435899e5ce650d42bcbbdf76a1736eff072d059edb4c923c2eacc7e42ab326",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3179381068919553722/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary3291190799162476839.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3291190799162476839/manifest.json",
+      "manifest_sha256": "acc3cc71873c95468613f462533ecbfb429c99a26aad1845836e9db4ae44516b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3291190799162476839/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary3458965655990623631.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3458965655990623631/manifest.json",
+      "manifest_sha256": "934fe5157e2a356a5d8a706b2ed4ecc514b96690810c9b31f0bf1f07bcce7835",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3458965655990623631/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary3488041093975898946.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3488041093975898946/manifest.json",
+      "manifest_sha256": "2ccfeafb5e398ad8b20884c1ba65051bea98ba2cce5e6d870d992bb4a5e42db9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3488041093975898946/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary3573723820242427017.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3573723820242427017/manifest.json",
+      "manifest_sha256": "465535e5ca5254cbe1f43d26f14f4ec307b4afe42f323ea28fd898b2ffd23296",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3573723820242427017/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary3573933913596124850.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3573933913596124850/manifest.json",
+      "manifest_sha256": "dc6cdbf8a118ae0f9ba675ac625e3d53fbce1934ec7110ca0cd363105ae67eb9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3573933913596124850/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary3647330525768885984.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3647330525768885984/manifest.json",
+      "manifest_sha256": "fe38e68ac752d4fac346bdb50fb3fd122f9c45c164e81217f84dc3d4e4f79234",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-3647330525768885984/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary404603357698709850.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-altruisticHalfLookaheadBinary-500-001/seed-404603357698709850/manifest.json",
+      "manifest_sha256": "b80fc6b682fec8eda7303cb01b959221b31d466148610bdabe1d38075629b81d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-altruisticHalfLookaheadBinary-500-001/seed-404603357698709850/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4120068986275141671.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4120068986275141671/manifest.json",
+      "manifest_sha256": "09434c8d900de7a7125a732a32522193af176ef8bb12844188e0e20340b0a37d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4120068986275141671/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4322857474273933961.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4322857474273933961/manifest.json",
+      "manifest_sha256": "b07fc7b017407988970b286ed062d55b8279b49b69b642df2ebfad2765eb1f34",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4322857474273933961/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4335070638830477102.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4335070638830477102/manifest.json",
+      "manifest_sha256": "5287b38c246335d127b17882ed6caa059a59d7d15df401945a5f08f40869383a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4335070638830477102/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4348769395949157104.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4348769395949157104/manifest.json",
+      "manifest_sha256": "75beb8f045b0246a5b3d0d23b917104ba33fcf385c2a34db579f11c006dcc41c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4348769395949157104/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4349919276059682151.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4349919276059682151/manifest.json",
+      "manifest_sha256": "10997fe42d13ad1af69d6d75f31fe9f6965664f53c0284e5758d745ec79da304",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4349919276059682151/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4375818342599997359.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4375818342599997359/manifest.json",
+      "manifest_sha256": "f148c30235692db194df699a0ef37a76d3efc5e820ea2f97e5e96faa421013b8",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4375818342599997359/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4545923693926126457.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4545923693926126457/manifest.json",
+      "manifest_sha256": "05eddf5773a550d627b13967b08c68299857f778aed14880821e1e73c299e383",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4545923693926126457/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary460149852129392939.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-003/seed-460149852129392939/manifest.json",
+      "manifest_sha256": "016f6732057fca64f20978d4ea6f0ff1d90532889ba3019da83baee1a3aab59e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-003/seed-460149852129392939/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4627406532021948174.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4627406532021948174/manifest.json",
+      "manifest_sha256": "8cf84dd7d1221fed666128fe0d21d7e61c1a0aa735c95a5c8393e6a360d74c23",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4627406532021948174/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4705595955654730755.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4705595955654730755/manifest.json",
+      "manifest_sha256": "25a575652fd20a1a54e63da1361aca47771419901bb1b87ef87d123a8b4e57e9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4705595955654730755/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4779321687271683802.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4779321687271683802/manifest.json",
+      "manifest_sha256": "2bf72666ff03b9246acdad04ebcd2890d4120d0eabfcc27d8c9da87e7afdd703",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4779321687271683802/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4865385569843070049.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4865385569843070049/manifest.json",
+      "manifest_sha256": "e2182e2900a4d8aa028e30435acd2d24d2e750ff2819e11cde1b4213e2d263f1",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4865385569843070049/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4893720129238770169.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4893720129238770169/manifest.json",
+      "manifest_sha256": "ac8bcb70aec5544c72f61f51f2df55282a6a916ea3afe75acfa0f9e71cd71de4",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4893720129238770169/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4924450696684077960.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4924450696684077960/manifest.json",
+      "manifest_sha256": "4b5be3bb2048147168acde8c8d2ba3605e506ca7a91dddb578b938ff6aa3eb78",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4924450696684077960/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary4949093510471888483.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4949093510471888483/manifest.json",
+      "manifest_sha256": "651c2043efe37135c5ec3076a03286e7a2389dbb44034a01f86a3e94d5cdbfb2",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-4949093510471888483/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary5008653198738249826.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5008653198738249826/manifest.json",
+      "manifest_sha256": "00845f4092c65e8946f1cb730796b64948361bef9037e24ac701280764cb319a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5008653198738249826/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary5200749333348563875.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5200749333348563875/manifest.json",
+      "manifest_sha256": "6054a2444ecbe718d40c393e7b74c34e16eaf245c0c2d200183cafaaf1eaa2ed",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5200749333348563875/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary5299921647111273341.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5299921647111273341/manifest.json",
+      "manifest_sha256": "8a55688bf0528a93ac01f80c73676a66666551b173ff4184dabe921694558833",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5299921647111273341/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary530238075247992587.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-003/seed-530238075247992587/manifest.json",
+      "manifest_sha256": "ad6dcb2e053c4a18a58ce1c2c2ff3d4d09db7d5a17725adbb92218fd47048cf3",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-003/seed-530238075247992587/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary5322088368832454314.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5322088368832454314/manifest.json",
+      "manifest_sha256": "0b9a205954e60f8a5e22d77002bbbd75f0dfa9155f0df6bfa3b2c887ae73ff31",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5322088368832454314/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary5546605841926489529.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5546605841926489529/manifest.json",
+      "manifest_sha256": "2549afd77ffa3aabed9dc09d912d79631260d5f94cb6b6129e869f426b748747",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-5546605841926489529/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary570853383711153723.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-003/seed-570853383711153723/manifest.json",
+      "manifest_sha256": "e29559e292f599c77bba199257d61495b5e253a780d7b27a77f0eacffb9b208c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-003/seed-570853383711153723/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary601747005843301610.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-003/seed-601747005843301610/manifest.json",
+      "manifest_sha256": "579cd1dbc1a9c51f7f50cbb7c8e70daf2e93c1f721263de1a01c290e35a3966c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-003/seed-601747005843301610/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6050197700377984538.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6050197700377984538/manifest.json",
+      "manifest_sha256": "c9ef611b8d389784fa0348c37d4ccf2b7109bb029d2dcf7aab1b432dae81aeea",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6050197700377984538/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6153852370960353609.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6153852370960353609/manifest.json",
+      "manifest_sha256": "15a58c9aadc18d0da56b4ae4b58295ae1809a7077cbd0ca4379cff7234d046f1",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6153852370960353609/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6167067325050248690.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6167067325050248690/manifest.json",
+      "manifest_sha256": "8717417e317a4936962752f3878876575c883a367afd45d78daaffa9bf716869",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6167067325050248690/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary624457554156745065.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-624457554156745065/manifest.json",
+      "manifest_sha256": "f6828f052d16128328de224ee46c5bfc9bc5e945a65d2859a298277420cb8c9b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-624457554156745065/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6457943928766880712.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6457943928766880712/manifest.json",
+      "manifest_sha256": "74f22aee671cb3926d4c08faf7526415c0e92b6f421e03c96de998beff7a11b0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6457943928766880712/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6510614758213865323.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6510614758213865323/manifest.json",
+      "manifest_sha256": "0af01df120b96034f91f8c28cb1315826eba5fab190092b79c4e360bbf650d56",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6510614758213865323/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6562124879500985245.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6562124879500985245/manifest.json",
+      "manifest_sha256": "7a9ca0eccfa568a5372bf2fb4f080fbd91eb83c14adb2704661ca02ce46c3987",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6562124879500985245/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6596648333047620229.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6596648333047620229/manifest.json",
+      "manifest_sha256": "cb0b7e4d0314cc0da79c10cf9fe76635aeeaa59a2ecb11a5d83e64d92ae7bbf4",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6596648333047620229/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6631427774681279428.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6631427774681279428/manifest.json",
+      "manifest_sha256": "9e6070acd03a520b8edd02fb71ebc2a52334c3f64ef97f2c242c5b42b8c9d379",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6631427774681279428/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6631602690175826146.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6631602690175826146/manifest.json",
+      "manifest_sha256": "f7684630067f84ea10d9da2dbafd06c62fe199ce0b83471cb1b7848f419c2764",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6631602690175826146/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary663700773870722021.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-663700773870722021/manifest.json",
+      "manifest_sha256": "30c2f04b22b94589b8922004004bdf8f2168a4c5ecb92461253b844c59bc3982",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-663700773870722021/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6676516733472316028.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6676516733472316028/manifest.json",
+      "manifest_sha256": "058cf6a86b3037164c0df67c16987b2d6469659a446cdf60291e7d75d9ca2832",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6676516733472316028/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary668711073846793172.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-668711073846793172/manifest.json",
+      "manifest_sha256": "77f2fb9662e7132da3abff908f92a95e24b4a1a169d84acc95b8f805b362d1ce",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-668711073846793172/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary6712575527833568135.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6712575527833568135/manifest.json",
+      "manifest_sha256": "605fefd55eecc706a7f1525e20fc55017e6742be1774132bb970763e4f584bf2",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-6712575527833568135/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary689681424439763653.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-689681424439763653/manifest.json",
+      "manifest_sha256": "69ca40db9eed3febcff2e2ad722dc16e0a7264374a024b5cad16c3876aa0f972",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-689681424439763653/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary703598546753609220.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-703598546753609220/manifest.json",
+      "manifest_sha256": "0fdd8f997198d9509cd6d5c17d18b1c74a7438fa1b40eaea80e95a9a213a0069",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-703598546753609220/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary7068591249382591025.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7068591249382591025/manifest.json",
+      "manifest_sha256": "c09e577b7b6ff8a5fc5ba9aef500daae3c9dc8b465b7ef372e2c2f9ed98eecf8",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7068591249382591025/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary7074104263051287352.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7074104263051287352/manifest.json",
+      "manifest_sha256": "d2e8068d5282d4c9187fd4a62befa8767b4d49805460b3b0cd49e0c76dad9adf",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7074104263051287352/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary7382846066072756711.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7382846066072756711/manifest.json",
+      "manifest_sha256": "3c64f4340055bde52507895b47670f70e7abbc54a51147162a5ce2afa5f0c7df",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7382846066072756711/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary7611596554808117923.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7611596554808117923/manifest.json",
+      "manifest_sha256": "7df589a335b91b9cb988d1f071980c2ec0d07541025eee81cbde1c434c225286",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7611596554808117923/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary7853914801418268465.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7853914801418268465/manifest.json",
+      "manifest_sha256": "20106a77cb6c5d64879fa5c8e30ac62605abfac7e7f0bd3831d2f262053f9615",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7853914801418268465/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary7920473864506472639.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7920473864506472639/manifest.json",
+      "manifest_sha256": "9b4fb7dfdb196724ebf132512a3fcf44839af82037d6d89765dfefa3011fe6bf",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7920473864506472639/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary7935043809970132554.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7935043809970132554/manifest.json",
+      "manifest_sha256": "7299499fbeafe97a60bac782e3826992bfe6c5250fab85e2e49de615045a6894",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7935043809970132554/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary7990668540495452526.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7990668540495452526/manifest.json",
+      "manifest_sha256": "691c1f39d0f9a12e75e2d75cf2dc3a71e9d37db195deba365fbe4a58be09d9a9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-7990668540495452526/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8002654488081595615.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8002654488081595615/manifest.json",
+      "manifest_sha256": "e19fbae3114c9878f77b8da3131befe311ea1f5e082d56a723abacb66a6e0cf4",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8002654488081595615/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8006986510311734812.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8006986510311734812/manifest.json",
+      "manifest_sha256": "b7c1262489b748075359fe57a1e12670dfda51aedaa3fbf850ce8997d2a0fcee",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8006986510311734812/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8149629752604643258.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8149629752604643258/manifest.json",
+      "manifest_sha256": "0a232088b5740bcbe249e3ca73e5a27f0126678d53f010dd9cee51b25174a2da",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8149629752604643258/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8266698178000332942.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8266698178000332942/manifest.json",
+      "manifest_sha256": "e7b6d11a3df8e3f9e012b076856c94ae01dcb3383888d2d605b16969347fdc5a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8266698178000332942/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8303265161711135825.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8303265161711135825/manifest.json",
+      "manifest_sha256": "d842481869beda09440f77b99235cd280c8cf4401ef93c08e6d62df5be20d33e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8303265161711135825/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8338163462517962044.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8338163462517962044/manifest.json",
+      "manifest_sha256": "22e8ee1a459311a93083e75899ff554103959e59b118474be72c358f44f41c4f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8338163462517962044/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8354463434896959425.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8354463434896959425/manifest.json",
+      "manifest_sha256": "0d9390328964b361cb868c66bee98326b272b96b6672013ad1aa8c31d6258f88",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8354463434896959425/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8443748817866679480.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8443748817866679480/manifest.json",
+      "manifest_sha256": "05ed2ec26d0f5da24f7ab7a812ad540c46c6445bb3d759173887461ec6ac98bb",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8443748817866679480/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8525419003965527765.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8525419003965527765/manifest.json",
+      "manifest_sha256": "ba5d4789f53e993ecb58b280f791151c662be85ba644fa9e8d4be6c370a86064",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8525419003965527765/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8539697944784643463.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8539697944784643463/manifest.json",
+      "manifest_sha256": "ca71ca7d1dbf0049c8a398489677c660ea4bdfdd73ff7f5056ddf4bfec08e8da",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8539697944784643463/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8611853178106367524.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8611853178106367524/manifest.json",
+      "manifest_sha256": "587ba4fa887388020bbcbeec01465e4e02974c7a230842bef5e29e5800c94d2b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8611853178106367524/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8754360493150801493.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8754360493150801493/manifest.json",
+      "manifest_sha256": "ecbdad423a80679865a6cd57e57022cadbc57336b884ca3a7ebfe5ce0cc0391d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8754360493150801493/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8927322354812584041.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8927322354812584041/manifest.json",
+      "manifest_sha256": "75fc40356e8b49408456b2b96ba7ad964402501081f25ec7baa01b44cbb9f72d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8927322354812584041/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8980456150572989187.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8980456150572989187/manifest.json",
+      "manifest_sha256": "b51809186b81bab709342a71fbddc9d1a054caf37cb51a5f03309437ddfaa1cd",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8980456150572989187/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary8987908268059460980.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8987908268059460980/manifest.json",
+      "manifest_sha256": "3c8748bbd16648bcdc639659885123e7cb8a9463e45c4be431123ea6f8c242da",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-8987908268059460980/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary9077614460338874204.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-9077614460338874204/manifest.json",
+      "manifest_sha256": "9d60f47f8396e8cc23ddf8ae7db40e9767e21cd9f103a577640f4a3942d0b9bf",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-9077614460338874204/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary9194507009404838026.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-9194507009404838026/manifest.json",
+      "manifest_sha256": "a214c6eb355791f29d773ca59e23ce60f9534cf08af2d929f63d64cf7a14de18",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-005/seed-9194507009404838026/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary977868131476438614.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-977868131476438614/manifest.json",
+      "manifest_sha256": "35a346c8d23b83346eddf3f5a4f7875bc871553708fac5936a0e30e626986607",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-altruisticHalfLookaheadBinary-004/seed-977868131476438614/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1047840195371099687.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1047840195371099687/manifest.json",
+      "manifest_sha256": "da7f4e43893830c5b651f48c3a55227d750fbe4308398c67c3c97e31d03b8e75",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1047840195371099687/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1113456709891828571.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1113456709891828571/manifest.json",
+      "manifest_sha256": "84df12c6d3ff94370fb5b34f30df00fb084a4efe9f2680a0a4a49929e2bc318f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1113456709891828571/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1233067699360264716.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1233067699360264716/manifest.json",
+      "manifest_sha256": "86a40603d5459837f652b307c253926dc6f02bedf7ae1f3b42b2fd287660068e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1233067699360264716/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1254106714873597359.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1254106714873597359/manifest.json",
+      "manifest_sha256": "c6e42f1fd02019c4481742fe7d9d507b2b51bde29655d3d5ce860fcdf3082965",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1254106714873597359/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1288598867396776898.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1288598867396776898/manifest.json",
+      "manifest_sha256": "282331b9ae6199a07366ea915420638890436513a3a0c510e4a1c6e7d3ee714d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1288598867396776898/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1334731553345852678.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1334731553345852678/manifest.json",
+      "manifest_sha256": "e58ae4e01a53b33df1af1b6acee12d4128dae364790bc4c880e8b6b767c0cdd5",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1334731553345852678/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1348390354187324392.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1348390354187324392/manifest.json",
+      "manifest_sha256": "fd6958c4024801ac78fe817d7b5c3c7418dd76f15ad778f720cad900be11532f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1348390354187324392/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1359404949007720544.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1359404949007720544/manifest.json",
+      "manifest_sha256": "f99092331a84654711e16656cbe6b335c46b3a51c2c8520778d100fa3a9fabb2",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1359404949007720544/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1440437373991260400.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1440437373991260400/manifest.json",
+      "manifest_sha256": "eb24a3f3de9cc4060dc2bf0c539925a1cad88dc0a7b442d5ea9ae9f4285e132e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1440437373991260400/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1470653421161831391.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1470653421161831391/manifest.json",
+      "manifest_sha256": "e3cbe10b3b50875502ba9bf6eed335244f75a38a20c62e270969ad08c7655fe1",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1470653421161831391/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1555657386466497304.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1555657386466497304/manifest.json",
+      "manifest_sha256": "c12e604a520362e005fc62acf8e0aa95b560e4b8f3754ed1601eb3ae482cb224",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1555657386466497304/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1609969291442293190.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1609969291442293190/manifest.json",
+      "manifest_sha256": "e6f83b9902bed97862464699ed7cf4d6433b040f82652590e93d62a1939cb765",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1609969291442293190/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1735937440315396203.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1735937440315396203/manifest.json",
+      "manifest_sha256": "0fb5017a80b778e85967017b33d8f2948a60e4a97670cd4ff67240ed26a1631c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1735937440315396203/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1802411219399068431.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1802411219399068431/manifest.json",
+      "manifest_sha256": "84c36221bcdcdac757ff619774641c2204ecfde377e67990187df139b562a464",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1802411219399068431/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary1823687216165022946.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1823687216165022946/manifest.json",
+      "manifest_sha256": "4bd1f6147532ecc898d8ea026bc6933ae4fa5bcd59508dab2654b0c7acf1a369",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-1823687216165022946/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary2009581725043069747.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2009581725043069747/manifest.json",
+      "manifest_sha256": "d4a74a91e3ae0314a248f4c9876c584db0eb81b8317331867f7623a013c6f65b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2009581725043069747/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary2060968127868463485.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2060968127868463485/manifest.json",
+      "manifest_sha256": "9bd699bdf031a7c1f508716626225b5db1870d92112d424f0aa9e73627d37d38",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2060968127868463485/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary2214172059989836120.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2214172059989836120/manifest.json",
+      "manifest_sha256": "14c9c2229deac4fef8495ab6569d75f83fe63e6e1014c3df0496e8f746263975",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2214172059989836120/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary2483216780622132986.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2483216780622132986/manifest.json",
+      "manifest_sha256": "8757a7c1b1c1d84494122786270b793b4f63f6881ac2b41bde678936a68b9671",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2483216780622132986/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary2513573707559938025.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2513573707559938025/manifest.json",
+      "manifest_sha256": "5bd7dd317fb286b21dd0de537066bd6803bce43690a980391f1fc8cf77f886b0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2513573707559938025/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary2633622880550445485.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2633622880550445485/manifest.json",
+      "manifest_sha256": "3731eafface90697cc68b6bb791a0bc376fac35b838bab395be2a940351d26af",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2633622880550445485/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary275110934556063992.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-disk-retry-benthamHalfLookaheadBinary-001/seed-275110934556063992/manifest.json",
+      "manifest_sha256": "7b7b843f6783683a12efde590d8caa8365b8d8bcca4138bd965966036160806e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-disk-retry-benthamHalfLookaheadBinary-001/seed-275110934556063992/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary2776046745237740637.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2776046745237740637/manifest.json",
+      "manifest_sha256": "04ca4cf8da1ced628c50fe25670b327f981e469bee4f43d63f8dfc6d70a5d2a7",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2776046745237740637/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary2894409412357526145.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2894409412357526145/manifest.json",
+      "manifest_sha256": "e2860cfc635900afb053a8590662ce7442f9f87d7b2ede2f2ac1972858afb8ef",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-2894409412357526145/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary311115376827154686.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-003/seed-311115376827154686/manifest.json",
+      "manifest_sha256": "96a49d8a0d271025593dc69dff64889595acb967ef6f1e49bea0140363fe2b44",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-003/seed-311115376827154686/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary404603357698709850.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-004/seed-404603357698709850/manifest.json",
+      "manifest_sha256": "835267d7d5c963df656193729605c8de77af23e52e68fa9621641a278d0d9cb4",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-004/seed-404603357698709850/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary530238075247992587.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-530238075247992587/manifest.json",
+      "manifest_sha256": "611380cad300d6f07ca1388ab4f1d47091cc85388be7cf3607b59a300595f0e2",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-530238075247992587/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary570853383711153723.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-570853383711153723/manifest.json",
+      "manifest_sha256": "b1859afccbdb30eb2ab2caa9621c04aeebe0b97779718b9d08cbb8d91f465681",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-570853383711153723/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary601747005843301610.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-601747005843301610/manifest.json",
+      "manifest_sha256": "06efe885889559fbaf212ad2d3857c7ed69d53a9f12f24b1fdf2c61adb8ebbb3",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-601747005843301610/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary624457554156745065.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-624457554156745065/manifest.json",
+      "manifest_sha256": "63aed62796817529564dc614ec11e637ad6147c4bca8cb4ab4702609aaec232f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-624457554156745065/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary663700773870722021.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-663700773870722021/manifest.json",
+      "manifest_sha256": "14a5745014ceadc074418fe91e522ca150f29c58fca4d34a7c3f93c2d54a208e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-663700773870722021/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary668711073846793172.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-668711073846793172/manifest.json",
+      "manifest_sha256": "c62dd074799ebeef0239c899fb77d9d8425d16afe09d885c4bb26528a8ac0b36",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-668711073846793172/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary689681424439763653.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-689681424439763653/manifest.json",
+      "manifest_sha256": "e5227bd8915e5291acc80dd1f1db32c141db196dfe49a097567384e35fe88112",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-689681424439763653/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary703598546753609220.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-703598546753609220/manifest.json",
+      "manifest_sha256": "8f8722b01444c456b61720b52942afb9364acd265eeda0a78a578ed53c31af79",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-703598546753609220/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary977868131476438614.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-977868131476438614/manifest.json",
+      "manifest_sha256": "074c8d721f21b941a5b86023122e482c2006caee0540a5b0280dbda71d1573f4",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-benthamHalfLookaheadBinary-005/seed-977868131476438614/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1047840195371099687.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-1047840195371099687/manifest.json",
+      "manifest_sha256": "6c877de009d2801f851f32727632fc9a72ffc0858ca9bd66eefd26dbf814ac4a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-1047840195371099687/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1113456709891828571.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1113456709891828571/manifest.json",
+      "manifest_sha256": "7f41eb4c283521c347deeeae02d49edd9312e088304cfcc237170e24424a4735",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1113456709891828571/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1233067699360264716.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1233067699360264716/manifest.json",
+      "manifest_sha256": "849b3728c3c8319d658ac34352a0657532b2705bd70daaa7ab387eff0db40a7a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1233067699360264716/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1254106714873597359.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1254106714873597359/manifest.json",
+      "manifest_sha256": "12711f5a8c598d451a3104e198eafffef3a58eeb34b10838e8e9d859a4bad25f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1254106714873597359/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1288598867396776898.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1288598867396776898/manifest.json",
+      "manifest_sha256": "757835c8b2d5318d9b5702206aa42239862be20d7884ee50190fe9d27cff53a3",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1288598867396776898/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1334731553345852678.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1334731553345852678/manifest.json",
+      "manifest_sha256": "577977da3504142c4445ddfcf4903d5f0d07fa6fcf4f12e53b9d9b5ebf296a93",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1334731553345852678/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1348390354187324392.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1348390354187324392/manifest.json",
+      "manifest_sha256": "90026dfc634d0a8ddc7c4dacb8e9135f57bc17bd1a129cdd4ba07af8013aad55",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1348390354187324392/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1359404949007720544.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1359404949007720544/manifest.json",
+      "manifest_sha256": "e5e62affc8a8103dfa707314d161fb411ab62b933eac53bb7a3bf8bf4a5db08f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1359404949007720544/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1440437373991260400.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1440437373991260400/manifest.json",
+      "manifest_sha256": "8715766d58c1e107daa730bedae212c3d7b58fae3fb9c1d157e9108c6e36efe7",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1440437373991260400/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1470653421161831391.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1470653421161831391/manifest.json",
+      "manifest_sha256": "0c4d798b07289cf1097952c65dd64b4705626e1369cad073854ebec36e7c78d1",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1470653421161831391/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1555657386466497304.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1555657386466497304/manifest.json",
+      "manifest_sha256": "90107029942353f69e34da2062f93434c57f09e12374da41bbc765c11cf63242",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1555657386466497304/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1609969291442293190.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1609969291442293190/manifest.json",
+      "manifest_sha256": "142a184b704273e5fed6a253787d41ede5c908215df9e9c45f9e3b2bd0fb6d8f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1609969291442293190/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1735937440315396203.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1735937440315396203/manifest.json",
+      "manifest_sha256": "aa4469427ab35fc8b325649136fa0033f2169b05f9c48592066833128a73ec4a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1735937440315396203/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1802411219399068431.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1802411219399068431/manifest.json",
+      "manifest_sha256": "f72a269f9ba656850750b57cdf515931174bcccff9afdb86c189c8a83a8aa0d6",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1802411219399068431/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary1823687216165022946.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1823687216165022946/manifest.json",
+      "manifest_sha256": "fac4056223c8d03f94cc6de9b4fa8393c8eb9c88bb5d9fffae7b873a72fd1538",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-1823687216165022946/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary2009581725043069747.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2009581725043069747/manifest.json",
+      "manifest_sha256": "5dc08ffc9200cbefd14d123f99287851a6b48dae0cafa18eff7d34f92931087d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2009581725043069747/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary2060968127868463485.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2060968127868463485/manifest.json",
+      "manifest_sha256": "75db003a6f2d589cf94f90c4fe2cee3a04fabefee1870f9e59676d3a3253512b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2060968127868463485/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary2214172059989836120.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2214172059989836120/manifest.json",
+      "manifest_sha256": "f0502326c5efa052038689261b09c4208ce829050aab93fe8f57e0b35b3ed565",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2214172059989836120/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary2483216780622132986.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2483216780622132986/manifest.json",
+      "manifest_sha256": "e796e0100696a744088a1625eead94cf49deb78b8638d39f6615c424dee8ba63",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2483216780622132986/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary2513573707559938025.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2513573707559938025/manifest.json",
+      "manifest_sha256": "1793ef1438dccde3f41a64bf752f62ad4c3c609908b0673d2bb667cae6ae1bfd",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2513573707559938025/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary2633622880550445485.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2633622880550445485/manifest.json",
+      "manifest_sha256": "d8c63c7d082e4fb84c59ef39b4280d8f69828b496c274e012b0906ffbf26a141",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2633622880550445485/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary275110934556063992.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-egoisticHalfLookaheadBinary-500-001/seed-275110934556063992/manifest.json",
+      "manifest_sha256": "326861e39803dd2663605cbe023fc58744834d807cc1590b645416b52daef1eb",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-egoisticHalfLookaheadBinary-500-001/seed-275110934556063992/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary2776046745237740637.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2776046745237740637/manifest.json",
+      "manifest_sha256": "1ec4e2da6bc3bbcc569843ee1383671cf3f543739c415a6390c78c7617bc4230",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2776046745237740637/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary2894409412357526145.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2894409412357526145/manifest.json",
+      "manifest_sha256": "c378d54e9142672f4aae0750942a1a359baa0052a45201c410307ffaae24c286",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-2894409412357526145/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary311115376827154686.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-egoisticHalfLookaheadBinary-500-001/seed-311115376827154686/manifest.json",
+      "manifest_sha256": "9e406ed4b6845a09ea26d2ae84263080ec97af808590480118899e98d9af60ca",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-egoisticHalfLookaheadBinary-500-001/seed-311115376827154686/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary3130560300212625915.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3130560300212625915/manifest.json",
+      "manifest_sha256": "b346eba2252ff56411982121ffc8d218790ece27b666c8d44bee61d0a3b01b89",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3130560300212625915/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary3179381068919553722.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3179381068919553722/manifest.json",
+      "manifest_sha256": "623481cfd31587adb4f326eb8ace70da6ca30e0dc9cf311ac4b84fb0b12bc7c3",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3179381068919553722/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary3291190799162476839.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3291190799162476839/manifest.json",
+      "manifest_sha256": "5fe5dacc774ebc5dd6c06fcb62afbcb4ffd3c3ebea51d952b751f4fe3c86901a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3291190799162476839/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary3458965655990623631.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3458965655990623631/manifest.json",
+      "manifest_sha256": "5929e006ad5b0a954d14faaeddb5e3ef8d50ca70a18ba0e2ac2405b51d92e2b1",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3458965655990623631/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary3488041093975898946.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3488041093975898946/manifest.json",
+      "manifest_sha256": "7c211a21603eaf871d3bdef56b40759d8e463f3100069e379b0479e012a93a12",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3488041093975898946/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary3573723820242427017.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3573723820242427017/manifest.json",
+      "manifest_sha256": "1be563155db8ee3b97382ee6f928696378b38fecc9eebf9b9549e422a62114d9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3573723820242427017/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary3573933913596124850.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3573933913596124850/manifest.json",
+      "manifest_sha256": "6678160a954a2781c6ab7e18d064e09a233011667fd0dc4da89f7041a0798b00",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3573933913596124850/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary3647330525768885984.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3647330525768885984/manifest.json",
+      "manifest_sha256": "fc7dd2d7d97a5fb60deaeb988dfc19e26e316397d45b4bf01284502763cfe13d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-3647330525768885984/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary404603357698709850.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-egoisticHalfLookaheadBinary-500-001/seed-404603357698709850/manifest.json",
+      "manifest_sha256": "67fc6f0aa779815ddc70c319d1a9d264d2e68b965d1b8b0af44744bf9d9e0c4a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-egoisticHalfLookaheadBinary-500-001/seed-404603357698709850/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4120068986275141671.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4120068986275141671/manifest.json",
+      "manifest_sha256": "6ae5734372bf8f2bdbd538287cae7986156867dea1f11b2886c8518f122a3864",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4120068986275141671/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4322857474273933961.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4322857474273933961/manifest.json",
+      "manifest_sha256": "bc7518884bee84f59aa75123cf0c97bb18f86ad310f493bb4a7eaf3eb3fa9720",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4322857474273933961/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4335070638830477102.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4335070638830477102/manifest.json",
+      "manifest_sha256": "235ec04fe4d1e7998e082fa44ad5a5163def07d8e34678f0d5f537dcafbcf3f9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4335070638830477102/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4348769395949157104.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4348769395949157104/manifest.json",
+      "manifest_sha256": "6498697c32459a55f1f97b0873b8019380ba136d394525261f10e2825f9f0447",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4348769395949157104/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4349919276059682151.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4349919276059682151/manifest.json",
+      "manifest_sha256": "73d45997b3b2b43f85d906263953e1a4fd26c3502a77b116307224418988cf96",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4349919276059682151/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4375818342599997359.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4375818342599997359/manifest.json",
+      "manifest_sha256": "1c1165e7a0ba67df361bfaa40a85b32e35b92fc65682a8107451d23c81a4c389",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4375818342599997359/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4545923693926126457.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4545923693926126457/manifest.json",
+      "manifest_sha256": "b574aa224ced49a7ded1df64bb22eacb69ef0ebbd9c43bff236970e18f06a647",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4545923693926126457/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary460149852129392939.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-003/seed-460149852129392939/manifest.json",
+      "manifest_sha256": "93699125168a2392dd36a7d6a7ee9dbd71cd17210072a2a479501a4a6a2a4e6e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-003/seed-460149852129392939/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4627406532021948174.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4627406532021948174/manifest.json",
+      "manifest_sha256": "0ed3ec0351304ac1c06337986ac586db61fddb75ae7a4b7a52606d478b7ddd8e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4627406532021948174/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4705595955654730755.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4705595955654730755/manifest.json",
+      "manifest_sha256": "0302a82a5f3a1492e81b17a560c88c063ebf3e1deb8fe43ea289803d3efb4ccc",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4705595955654730755/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4779321687271683802.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4779321687271683802/manifest.json",
+      "manifest_sha256": "5ac5f7968d0c5f8313bff2cd85d6f846e3522ee9e3b01651b0dff806262fb143",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4779321687271683802/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4865385569843070049.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4865385569843070049/manifest.json",
+      "manifest_sha256": "f4f5a0fefe104d35e733ecf0982eec5d83acfc0395a4855550ce6fee34f35c1e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4865385569843070049/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4893720129238770169.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4893720129238770169/manifest.json",
+      "manifest_sha256": "6f6579449f6aba0737dc22add7ed48afa9dd7ff06d6ae3f6132d190a5ce2b13e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4893720129238770169/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4924450696684077960.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4924450696684077960/manifest.json",
+      "manifest_sha256": "2a43b9105f5f3bffc2142487e1f862b06a371d10feea3db1b8125809285b373c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4924450696684077960/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary4949093510471888483.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4949093510471888483/manifest.json",
+      "manifest_sha256": "6936f57bda8a1c3b58a70711119530d61bc20dbd7b2ff6a4e0fdea308a1d5de0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-4949093510471888483/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary5008653198738249826.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5008653198738249826/manifest.json",
+      "manifest_sha256": "3a413622cca5e45f5ce5d8facf85eee8cd6cb3ec2c62cf876f6e72c3f91b10a6",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5008653198738249826/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary5200749333348563875.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5200749333348563875/manifest.json",
+      "manifest_sha256": "0360a927192d0c32a01c9c7d1b787e4a0d46454fe20356c0c15030c81ca03243",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5200749333348563875/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary5299921647111273341.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5299921647111273341/manifest.json",
+      "manifest_sha256": "f406fb7c4040f4628bd391a5b81f9afbbe54857f4a26a60a2ad25e051fff78dc",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5299921647111273341/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary530238075247992587.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-003/seed-530238075247992587/manifest.json",
+      "manifest_sha256": "0795ccfcb5e480682a6c35141262061ec2bd5f775a02858b1ec128e67a5b2991",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-003/seed-530238075247992587/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary5322088368832454314.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5322088368832454314/manifest.json",
+      "manifest_sha256": "8ab22b2d27b2e9425283a75b65599d4282a594f77f950f341c54d8ab04b5967f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5322088368832454314/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary5546605841926489529.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5546605841926489529/manifest.json",
+      "manifest_sha256": "58f373b4fe723642878236ae7703353592c783f6b8cd27b1d8c242852290d8a6",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-5546605841926489529/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary570853383711153723.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-003/seed-570853383711153723/manifest.json",
+      "manifest_sha256": "37277a8543082e11eea9a5a142b8940581db88969fb630de2f7220f570d4e747",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-003/seed-570853383711153723/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary601747005843301610.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-601747005843301610/manifest.json",
+      "manifest_sha256": "338836a7f44298346da82d5f8c7d0edaa67ba9dbbe2949db7cebd9688b15cddb",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-601747005843301610/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6050197700377984538.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6050197700377984538/manifest.json",
+      "manifest_sha256": "2741ee0b5896f343e3af5720a338e92460f98b1790829dfc6d43774b0f400677",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6050197700377984538/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6153852370960353609.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6153852370960353609/manifest.json",
+      "manifest_sha256": "f8c7f405ae404cfd77c02e9b14f8ac1b0502df5d0c1f70990139a02ed5bc7b9f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6153852370960353609/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6167067325050248690.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6167067325050248690/manifest.json",
+      "manifest_sha256": "dc9cf3bc3e56bc5be077f35299caa92c798b75fedeed373597bb8ea4a33c1a16",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6167067325050248690/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary624457554156745065.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-624457554156745065/manifest.json",
+      "manifest_sha256": "88ad2126b16917dca92a2e1ad99b36f8dcd92589a96dcd40fe757562094a264f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-624457554156745065/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6457943928766880712.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6457943928766880712/manifest.json",
+      "manifest_sha256": "7b049dd43101fb8337aaf4b70f21c46f7b3df3791d5ce6ad4701a8476f7711b0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6457943928766880712/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6510614758213865323.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6510614758213865323/manifest.json",
+      "manifest_sha256": "86e49558702b562e565efd906f958088cd18465be1a05cf9f273e98401fff127",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6510614758213865323/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6562124879500985245.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6562124879500985245/manifest.json",
+      "manifest_sha256": "9c17454f9781550f027a72b4fd288b3d34e6c6aee9390bf9a32a82bbb7783ce4",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6562124879500985245/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6596648333047620229.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6596648333047620229/manifest.json",
+      "manifest_sha256": "f70ed63a44b1aa32963d59ae7bf5011c6ca2b14f1210f9d0775b15af768f074f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6596648333047620229/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6631427774681279428.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6631427774681279428/manifest.json",
+      "manifest_sha256": "084f6c2217210092628faae7848d36b69012245d100f2e1b73beaea0095dd02f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6631427774681279428/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6631602690175826146.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6631602690175826146/manifest.json",
+      "manifest_sha256": "2601acafdf62abea714b35e2fb0ed658594bc5d0c5b8ab581a5a4079bd8c9dd0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6631602690175826146/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary663700773870722021.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-663700773870722021/manifest.json",
+      "manifest_sha256": "2e881a67610df267a13fa167b1c66ad4cc79afd7ae9ea42cc67682804eb62061",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-663700773870722021/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6676516733472316028.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6676516733472316028/manifest.json",
+      "manifest_sha256": "16dfc77e1de34f89c00cfeeda2811bc74b613191bb406cd5ed2a5a2995e895cd",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6676516733472316028/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary668711073846793172.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-668711073846793172/manifest.json",
+      "manifest_sha256": "ce9122929b1481cb47fd6ae0f71561f89138b078832ea8be6763d863f2c147aa",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-668711073846793172/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary6712575527833568135.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6712575527833568135/manifest.json",
+      "manifest_sha256": "a6dbc52d8a104fba4a8a518816161cfb08bc680222877830d5e6f48bcd3b6564",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-6712575527833568135/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary689681424439763653.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-689681424439763653/manifest.json",
+      "manifest_sha256": "91094c920c1d3f654203dfd445ab0fcbd47b9cef6206360256c70169a9bd698d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-689681424439763653/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary703598546753609220.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-703598546753609220/manifest.json",
+      "manifest_sha256": "411220748d2f71b1110c6dc6cec66af0ece475422576eef41e869f60e3bac1ed",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-703598546753609220/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary7068591249382591025.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7068591249382591025/manifest.json",
+      "manifest_sha256": "69dfbde760fca45bde123c6368addec4cbca139832a845bd46b92162f5e7ca94",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7068591249382591025/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary7074104263051287352.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7074104263051287352/manifest.json",
+      "manifest_sha256": "06a3f7927f7bc75d81fa188c883d66ec5ceaf669692e35163009177071b78fc1",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7074104263051287352/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary7382846066072756711.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7382846066072756711/manifest.json",
+      "manifest_sha256": "17cca72f73286c3f3c005d7368deb6d578353a1362a39027a1f03623caa2263b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7382846066072756711/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary7611596554808117923.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7611596554808117923/manifest.json",
+      "manifest_sha256": "f360c99fef42a738acedfe2bf45dd89e9993ea66853471267cb9c1e3dd8f1457",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7611596554808117923/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary7853914801418268465.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7853914801418268465/manifest.json",
+      "manifest_sha256": "5f147758157072fbda6bf793370c6d485b4d0ac6b689c1073853fe52ac9b574d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7853914801418268465/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary7920473864506472639.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7920473864506472639/manifest.json",
+      "manifest_sha256": "75604f1c1256f3ec0b80c7f0b477ad08a4856355d9aa7560ffb3acd94f9bc873",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7920473864506472639/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary7935043809970132554.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7935043809970132554/manifest.json",
+      "manifest_sha256": "d5ba28e773027595d82c69a4a5f0eb7fbdf166a508e238a543d603d93d6b0174",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7935043809970132554/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary7990668540495452526.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7990668540495452526/manifest.json",
+      "manifest_sha256": "9b54a3654ac68fef35ac1c4ef5211621af2a0326c0cc30237013d09cced3f6f5",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-7990668540495452526/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8002654488081595615.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8002654488081595615/manifest.json",
+      "manifest_sha256": "cdfeb81bf0d84a8190d043bb608ef22b477ef3573ae738af579aea6bc90af87c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8002654488081595615/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8006986510311734812.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8006986510311734812/manifest.json",
+      "manifest_sha256": "4d38630eb96adfaf182747828c3035a84ec34bfa974b978751519a349b8536ed",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8006986510311734812/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8149629752604643258.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8149629752604643258/manifest.json",
+      "manifest_sha256": "f14bd02785d6d6aaf1e51b8025b113fe17622bca09103311ac960c5529fa9e9f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8149629752604643258/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8266698178000332942.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8266698178000332942/manifest.json",
+      "manifest_sha256": "0c812859e1522e5ce20a523042ed79f4a91afc8fab552ba724bbd6e93dd5c491",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8266698178000332942/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8303265161711135825.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8303265161711135825/manifest.json",
+      "manifest_sha256": "9c04dab61ecb5c9e225c4f38872ce7fb04ab79155d6bfa6c4dd0ce62680b20dc",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8303265161711135825/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8338163462517962044.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8338163462517962044/manifest.json",
+      "manifest_sha256": "510da20aeab981926362408c2b8ed42cb327fd40f16eb47e76faa3ba286ba90c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8338163462517962044/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8354463434896959425.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8354463434896959425/manifest.json",
+      "manifest_sha256": "7aae2c5c4d205df2916e67b1dc6c7203dc1a0090c4ca134024fa572cd89376e6",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8354463434896959425/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8443748817866679480.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8443748817866679480/manifest.json",
+      "manifest_sha256": "3bef140da77623f1a2a801618a1f51bd877d2b5bc52532b0eb16ea05c5cb8986",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8443748817866679480/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8525419003965527765.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8525419003965527765/manifest.json",
+      "manifest_sha256": "20772e71dc7aeb62862a520d9b75e460f43a443f26748697db848e33b51ac48e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8525419003965527765/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8539697944784643463.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8539697944784643463/manifest.json",
+      "manifest_sha256": "cbb6d9b4d75adaae57a173fa04df59e3cabc65d647730c467e4f336d5802d9cc",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8539697944784643463/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8611853178106367524.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8611853178106367524/manifest.json",
+      "manifest_sha256": "f078c698302e0f33eccbc9aa268375100f01270b5c0c876084b92ec27924c96f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8611853178106367524/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8754360493150801493.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8754360493150801493/manifest.json",
+      "manifest_sha256": "7243c44895a648a65f4ecf396668fa324e58d306b8dae9352f91a020f7babf07",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8754360493150801493/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8927322354812584041.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8927322354812584041/manifest.json",
+      "manifest_sha256": "ce0cf03366b56ceab9c9e621f586cea9f471c24e1f2761d2032d9318fe186880",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8927322354812584041/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8980456150572989187.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8980456150572989187/manifest.json",
+      "manifest_sha256": "797fefc90d8606c5b0751a1fdf8745e5cfaec99566db8e4dfd8ba3f77cf6d7d7",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8980456150572989187/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary8987908268059460980.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8987908268059460980/manifest.json",
+      "manifest_sha256": "d38a51caa8a17cf044f88d97fc4b7d9f81c09358642cab24f142d59cb2f86371",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-005/seed-8987908268059460980/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary9077614460338874204.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-egoistic-remaining13-001/seed-9077614460338874204/manifest.json",
+      "manifest_sha256": "a6e47f639adc698c653165c4e2006d0c8bcaefb34500992c71f20c7c87c76c1f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-egoistic-remaining13-001/seed-9077614460338874204/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary9194507009404838026.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-egoistic-remaining13-001/seed-9194507009404838026/manifest.json",
+      "manifest_sha256": "edafbcf976f3fbc3c026f04854358110b092d8d9a9f60fd5eb11d4cf05c90a84",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-egoistic-remaining13-001/seed-9194507009404838026/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary977868131476438614.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-977868131476438614/manifest.json",
+      "manifest_sha256": "4945ed6681316858c7437db2ef83c703c2b4c74565848bb6b20b1104b85b7180",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-egoisticHalfLookaheadBinary-004/seed-977868131476438614/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1047840195371099687.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-1047840195371099687/manifest.json",
+      "manifest_sha256": "2f92d607261971dfec090f47e8be32a5c8e639aa4ec3d2b5c24c61eb306b52b5",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-1047840195371099687/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1113456709891828571.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1113456709891828571/manifest.json",
+      "manifest_sha256": "405dd267ab0b14c218f7689b470e8029a7a005b1bb14a6096617869e456efea0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1113456709891828571/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1233067699360264716.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1233067699360264716/manifest.json",
+      "manifest_sha256": "b050fd472acbcdbef38e0c4b207c0e301162fbb90d04ae652c4bdb98c729c8d2",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1233067699360264716/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1254106714873597359.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1254106714873597359/manifest.json",
+      "manifest_sha256": "87f7c07a2044b9ab8a3f5f9b9782ac7861e60297023b00fbc79b65f4bc5f1f90",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1254106714873597359/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1288598867396776898.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1288598867396776898/manifest.json",
+      "manifest_sha256": "1afad2ea442f27ad60386637eb4f7b24a60e8d9bfcd5b86cb149ae847b2f1b5d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1288598867396776898/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1334731553345852678.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1334731553345852678/manifest.json",
+      "manifest_sha256": "8a18b4b31ff6fe7eca97c7488b943c882e2ebc1ddca149feb0ba3f20914b4881",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1334731553345852678/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1348390354187324392.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1348390354187324392/manifest.json",
+      "manifest_sha256": "03a618325eb9f9532a40c7346113b8d8706c56fb017280f456bbb26f02f21717",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1348390354187324392/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1359404949007720544.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1359404949007720544/manifest.json",
+      "manifest_sha256": "5c4c68ad0b4d9d12542e9fb23d0a79cbf1646f24f4f5d92e30099a98fe712d93",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1359404949007720544/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1440437373991260400.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1440437373991260400/manifest.json",
+      "manifest_sha256": "db56d60844b165859424c074cdccfef1f29296a5bb8cf98643c14473f858ad89",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1440437373991260400/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1470653421161831391.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1470653421161831391/manifest.json",
+      "manifest_sha256": "9428dc72c895c93a1b86f7e4395121daac6e6cb1b20d886e2d5fdb02d7f2700b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1470653421161831391/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1555657386466497304.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1555657386466497304/manifest.json",
+      "manifest_sha256": "c1b67d0d8e72ff73073ad5751858c5de5ee37113ad328fc651ec16f7d64531f5",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1555657386466497304/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1609969291442293190.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1609969291442293190/manifest.json",
+      "manifest_sha256": "7fc268f5a91e941c17f51e2b9f812d22678e4c4e2a0c86594beedf6797ba8e0c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1609969291442293190/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1735937440315396203.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1735937440315396203/manifest.json",
+      "manifest_sha256": "b2e7753532879908afc9bdcb289fc948f55cca1aa09effb7d8ba71f305fc8c90",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1735937440315396203/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1802411219399068431.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1802411219399068431/manifest.json",
+      "manifest_sha256": "dc802bbcaa3687d0765e6017fa0bcf04becc2198b94ebe8d978ffeaa71995c35",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1802411219399068431/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape1823687216165022946.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1823687216165022946/manifest.json",
+      "manifest_sha256": "0673162a4c5af541431fa86773f49de583304c8ccbca5a537839c225616d65d4",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-1823687216165022946/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape2009581725043069747.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2009581725043069747/manifest.json",
+      "manifest_sha256": "cf79f36535c82602b93195370dafd4175f8e92d86d852c17bb1a2f88f6411f48",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2009581725043069747/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape2060968127868463485.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2060968127868463485/manifest.json",
+      "manifest_sha256": "cc9b6289789c4386ce4bc8d24faa72007a739b4d6e694c85ff3f247eb44a4060",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2060968127868463485/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape2214172059989836120.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2214172059989836120/manifest.json",
+      "manifest_sha256": "5ac4e13f5867f5d0d0cfb821de9106ab316c9fbe9a913d712b9dd70e02a39973",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2214172059989836120/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape238165197779399277.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-238165197779399277/manifest.json",
+      "manifest_sha256": "fba3d95985ef062097f36bfb0529481810f2f601dc869576e6d635f98ff689d6",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-238165197779399277/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape2483216780622132986.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2483216780622132986/manifest.json",
+      "manifest_sha256": "6ea9b52a4278643a514c57d19d9dedad0858788d74bae605e92907c61c6080e2",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2483216780622132986/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape2513573707559938025.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2513573707559938025/manifest.json",
+      "manifest_sha256": "d1369a6930255c13de16a8c38357daa01da26487863a6c828e2429c3f907dfdb",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2513573707559938025/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape2633622880550445485.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2633622880550445485/manifest.json",
+      "manifest_sha256": "378dc1bbc043091900d06b1a8c6c0fd64945ab8b4e9c7719d2d5cef2a85cbc86",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-003/seed-2633622880550445485/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape275110934556063992.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-275110934556063992/manifest.json",
+      "manifest_sha256": "3995c08004632c2db78a69da6a206eadd30093ce231f407ab2ef61702fb4c120",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-275110934556063992/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape2776046745237740637.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-2776046745237740637/manifest.json",
+      "manifest_sha256": "b1d433749d4803896f2b308151c9e30489fa17cbf9d59cf7263ddcfee913f1a4",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-2776046745237740637/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape2894409412357526145.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-2894409412357526145/manifest.json",
+      "manifest_sha256": "73d69ed1ee98a8139b1176f0f680a742a281c32c72f01f85785b9e35b04ffc90",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-2894409412357526145/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape311115376827154686.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-311115376827154686/manifest.json",
+      "manifest_sha256": "3abe70ef817a3b603b0a1051b8be71c2a0449528c60217cfb4b720803d509768",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-311115376827154686/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape3130560300212625915.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3130560300212625915/manifest.json",
+      "manifest_sha256": "1635029e7297991e209e035538008e9353fd8b6407654f5ea07d3bcabe253d9e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3130560300212625915/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape3179381068919553722.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3179381068919553722/manifest.json",
+      "manifest_sha256": "d8a0699a1616e6a86b38eb35913e7c6be2fa6cf6122712ea922ed0d91cc01562",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3179381068919553722/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape3291190799162476839.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3291190799162476839/manifest.json",
+      "manifest_sha256": "363f304e9498254c3ada34a173ea526715b700b4f77940f0f8b70996652f3bca",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3291190799162476839/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape3458965655990623631.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3458965655990623631/manifest.json",
+      "manifest_sha256": "97c6b37e9b6b48d8c08a962a53b6095fd4f21032362657c4134e18243e7ddd0c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3458965655990623631/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape3488041093975898946.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3488041093975898946/manifest.json",
+      "manifest_sha256": "d73db159dd9cc90a2c32dcb6813f572f9967471b97cde72abe5d30a10d3e250d",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3488041093975898946/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape3573723820242427017.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3573723820242427017/manifest.json",
+      "manifest_sha256": "cd0f182b0d3607a2301370cbe7c706a6bc87039a8a1e2fe711e01d316c348b80",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3573723820242427017/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape3573933913596124850.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3573933913596124850/manifest.json",
+      "manifest_sha256": "9f08fdc961e5164a0149fd9a45af81ebc01fd70f349d5144055dc6efe9ce5aa7",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3573933913596124850/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape3647330525768885984.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3647330525768885984/manifest.json",
+      "manifest_sha256": "99e7123b71b9b05bcb8b1bb6e8d850ae6b4a41f59631f0466dab1d1706a53a4f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-3647330525768885984/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape404603357698709850.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-404603357698709850/manifest.json",
+      "manifest_sha256": "82197fbdf19fd70325d8d639951bf5804a8d3101353325548a4100c58297b1c7",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-404603357698709850/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4120068986275141671.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4120068986275141671/manifest.json",
+      "manifest_sha256": "5fcc50399f3ddcbef806c8074172e47e2596d452b4f0bf811718748e63101bc9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4120068986275141671/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4322857474273933961.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4322857474273933961/manifest.json",
+      "manifest_sha256": "7fac129da360f15a21bc0bb98edff911005ddaacc4f1483a9594f9514839d344",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4322857474273933961/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4335070638830477102.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4335070638830477102/manifest.json",
+      "manifest_sha256": "8070eb4eccf3a47de6f66bf36c99890145f8947a0c31f62ce92a4e3b741c2190",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4335070638830477102/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4348769395949157104.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4348769395949157104/manifest.json",
+      "manifest_sha256": "31603bc34336b2b53a924b82e32a3cd165cdf00fc866fef9bacae5df16c05c47",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4348769395949157104/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4349919276059682151.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4349919276059682151/manifest.json",
+      "manifest_sha256": "3b8ecf7e610ad4a32bcd93a16bf9b4fe7890ea93caeaf14162ea156ea20d3e68",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4349919276059682151/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4375818342599997359.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4375818342599997359/manifest.json",
+      "manifest_sha256": "e754822d19ab1acaae0daa8e9e3c6e802819455c6adefff2ea168fe2262fd76e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4375818342599997359/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4545923693926126457.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4545923693926126457/manifest.json",
+      "manifest_sha256": "2f2341fce26a686118ec2566c0160f8948be2076eaf825c670090dd403c154b1",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4545923693926126457/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape460149852129392939.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-460149852129392939/manifest.json",
+      "manifest_sha256": "09ae4bc5765f960a88d15abe3234d10666f71f9d2aa753f06692069a2b78b9be",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-460149852129392939/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4627406532021948174.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4627406532021948174/manifest.json",
+      "manifest_sha256": "d1e98585ee2bca53e4291ac5e28577225d92cca4ac0652a40568dcde4f7549c8",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4627406532021948174/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4705595955654730755.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4705595955654730755/manifest.json",
+      "manifest_sha256": "1343d10ed190785756d912e0afea86741c8894af74b74d6b687115e8f3a8540b",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4705595955654730755/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4779321687271683802.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4779321687271683802/manifest.json",
+      "manifest_sha256": "7dacfdea2d77d581bd42306bddff2190dc1389bdc16dbda0cbb77e2f8b324cd7",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-004/seed-4779321687271683802/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4865385569843070049.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-4865385569843070049/manifest.json",
+      "manifest_sha256": "4fc59adaf15db77d8e1b8479bb679c854e86d239bc3c8f26fe92c7f2abb12773",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-4865385569843070049/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4893720129238770169.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-4893720129238770169/manifest.json",
+      "manifest_sha256": "55c88956e82e66a0d5ccc930b83cf7cf8645c9505e1b9f8f4fc68597172bd8cf",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-4893720129238770169/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4924450696684077960.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-4924450696684077960/manifest.json",
+      "manifest_sha256": "ff81a66c7ccd71bd15dee012e940ba72bfe75268c21fc9f070e9a279a428ce65",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-4924450696684077960/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape4949093510471888483.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-4949093510471888483/manifest.json",
+      "manifest_sha256": "cdd067ac1e20be272d2fdcca16b87487f47e39bf20dabe678121502d7e9b57d0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-4949093510471888483/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape5008653198738249826.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-5008653198738249826/manifest.json",
+      "manifest_sha256": "245a9bcce558ccd927b2b02de3587e59ee7d55b66e79af48efeeac7e7fc0927a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-5008653198738249826/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape5200749333348563875.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-5200749333348563875/manifest.json",
+      "manifest_sha256": "c05fbe680b2040cb57a684b40a6ad58ea70d4c3f2addb015d801370b92007653",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-5200749333348563875/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape5299921647111273341.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-5299921647111273341/manifest.json",
+      "manifest_sha256": "b6e4fdeb6f60e98372a3d1cb88b44fa79927b9835c06533e563bb65b4d2201d9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-5299921647111273341/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape530238075247992587.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-530238075247992587/manifest.json",
+      "manifest_sha256": "e9f7fbed97046ce023d9667deeb77df1984db5a22a3051baf7993e16d9f02c70",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-530238075247992587/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape5322088368832454314.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-5322088368832454314/manifest.json",
+      "manifest_sha256": "d2028f144953c82d6cf715ae544ef84d4ca488980f84deddd4039c302ddbacfd",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-005/seed-5322088368832454314/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape5546605841926489529.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-5546605841926489529/manifest.json",
+      "manifest_sha256": "945b6b1f6941d4744f79762743a6d171ff2be5f3842b6a0a834db865c80dc3a0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-5546605841926489529/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape570853383711153723.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-570853383711153723/manifest.json",
+      "manifest_sha256": "3c3a8e0c11c3fe1d302399c44b7d750e491782b08e50086d60189c2fc38d84f8",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-570853383711153723/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape601747005843301610.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-601747005843301610/manifest.json",
+      "manifest_sha256": "6709e3e7855025fef8f80f12225a610c2fdf0453b940a58fb547ba5aa360d641",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-601747005843301610/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6050197700377984538.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6050197700377984538/manifest.json",
+      "manifest_sha256": "a7ba6cbb201343f74ad4366138b7882b4c474f6dee5e0630b3dd693c3d37059f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6050197700377984538/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6153852370960353609.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6153852370960353609/manifest.json",
+      "manifest_sha256": "a3c77efcb4afd239d78569bd2fa98417bc23e4d18c7fcf2e9c91c9c7322e68e9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6153852370960353609/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6167067325050248690.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6167067325050248690/manifest.json",
+      "manifest_sha256": "8ad3b65216c1742a60e496c6561daf526bed5f16083f5e96bd27546669175a25",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6167067325050248690/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape624457554156745065.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-624457554156745065/manifest.json",
+      "manifest_sha256": "eb9bf623d134b348b865c4fceac33b27b26dbedc90529a84769dfdde4c0a6512",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-624457554156745065/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6457943928766880712.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6457943928766880712/manifest.json",
+      "manifest_sha256": "5724baf125e63d3c9e061c1d2cd04f60a09db422ad9cc28e9c06f532270878a0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6457943928766880712/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6510614758213865323.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6510614758213865323/manifest.json",
+      "manifest_sha256": "a28c512840f58a8c7e47665a8937f1b8ab6739872e8222d4379992e112305983",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6510614758213865323/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6562124879500985245.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6562124879500985245/manifest.json",
+      "manifest_sha256": "69431d1917a7038293cf0250935d05644be0c905711bfafb02b3d4e042d7463c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6562124879500985245/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6596648333047620229.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6596648333047620229/manifest.json",
+      "manifest_sha256": "63cb72afa36abe48eeb4cc1f0101a16a7fe6cfb4b9cca631f5ad9b94a25d667e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6596648333047620229/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6631427774681279428.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6631427774681279428/manifest.json",
+      "manifest_sha256": "112a72466c88f61e2527d14374116f1aff95697b0c33c15f816769c77b4a60ba",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6631427774681279428/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6631602690175826146.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6631602690175826146/manifest.json",
+      "manifest_sha256": "681c3da4118d6e7266437d7db367542c33e53bae744a4a4a3109030e1f8240b2",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6631602690175826146/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape663700773870722021.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-663700773870722021/manifest.json",
+      "manifest_sha256": "fd80f9638c997f7e7a55d6135923629baf12ca9cc3e23db6f67b97ccb2b0015f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-663700773870722021/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6676516733472316028.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6676516733472316028/manifest.json",
+      "manifest_sha256": "5cfd73e9ace19ab851aadb432277702eddc1043cb38f615ad0f64a7a98355a9e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6676516733472316028/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape668711073846793172.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-668711073846793172/manifest.json",
+      "manifest_sha256": "7885c6674e90658f0ef344b17f973c0f007942e8e549172c7cdaf48c108f1659",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-668711073846793172/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape6712575527833568135.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6712575527833568135/manifest.json",
+      "manifest_sha256": "7137b6113bb7aa311868253cdd148a021e1f77627690da81767d4fbdcd22ed74",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-6712575527833568135/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape689681424439763653.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-689681424439763653/manifest.json",
+      "manifest_sha256": "b68b18be5ad60968500c1f5dda98ab67ee126cbc06d70f72b06327e0b89fb620",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-689681424439763653/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape703598546753609220.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-703598546753609220/manifest.json",
+      "manifest_sha256": "05d2cf2701a5ac5f67dbfd460222fa75892dfa7e83ee79477dbe226e2b0a80d0",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-703598546753609220/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape7068591249382591025.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7068591249382591025/manifest.json",
+      "manifest_sha256": "4099f0aafbd05bedf2c8a18473422c728eb79c19ebe63fe71f32970822591c1a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7068591249382591025/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape7074104263051287352.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7074104263051287352/manifest.json",
+      "manifest_sha256": "ce3241b989a79057b611d1bad9dac29e5747a03cd50933b60df4aa53638493a2",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7074104263051287352/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape7382846066072756711.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7382846066072756711/manifest.json",
+      "manifest_sha256": "1a4d21ce2ca925535aa0c747a2bf3905a6d93249caece216d0ef973d7f2986f1",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7382846066072756711/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape7611596554808117923.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7611596554808117923/manifest.json",
+      "manifest_sha256": "4adcf9199da982f4c8db5f5ff6c486437286fe98b6d929c3d9130829083dc7b9",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7611596554808117923/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape7853914801418268465.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7853914801418268465/manifest.json",
+      "manifest_sha256": "147d9a3c1a0744d988ac5d497e4c5c3ff68f8983fe9fe5b5a4e5681b11cfa62f",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7853914801418268465/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape7920473864506472639.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7920473864506472639/manifest.json",
+      "manifest_sha256": "7b1729372184cceb207843f761cf91c558b92ba6ce3037d05e3ba40f6ab0bb72",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7920473864506472639/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape7935043809970132554.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7935043809970132554/manifest.json",
+      "manifest_sha256": "426314939584cdc4ea9a4afe1257d8d891307c7660fbd1bfca7f6c1cf3d0370c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7935043809970132554/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape7990668540495452526.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7990668540495452526/manifest.json",
+      "manifest_sha256": "0a54e478fb9d63c1ace6718859bebc4637c756b626a468b053105d1ca326597e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-7990668540495452526/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8002654488081595615.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8002654488081595615/manifest.json",
+      "manifest_sha256": "eabf913fa9c240e171406cb456fac9c04e2e1a075f4b990ab04062f56a507f4a",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8002654488081595615/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8006986510311734812.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8006986510311734812/manifest.json",
+      "manifest_sha256": "63d9a65f384e2a4a999715bcd4a907c7200cc25ad40a94cf89e245af663d1887",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8006986510311734812/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8149629752604643258.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8149629752604643258/manifest.json",
+      "manifest_sha256": "4ac5a130b5eb3d831d0f8235ba4d2fc7a6fa8b8f1a0b7fd2621cdffb9775f793",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8149629752604643258/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8266698178000332942.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8266698178000332942/manifest.json",
+      "manifest_sha256": "0b1417541a6b9fb61b46a2a53bd73fa20c7fbc7c64cbc45d750d55f0d1b80981",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8266698178000332942/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8303265161711135825.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8303265161711135825/manifest.json",
+      "manifest_sha256": "38733e47cde8a961ba97f1879ff6d9778593296d77e1db1a9d3ee82e78226dea",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8303265161711135825/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8338163462517962044.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8338163462517962044/manifest.json",
+      "manifest_sha256": "634d35ad7882b48e50fc0393019056a553ce57be37db2ad38540ea83f3b40d92",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8338163462517962044/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8354463434896959425.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8354463434896959425/manifest.json",
+      "manifest_sha256": "66a41950a40b3d2d23e5be84ff260e2117af27afb9b63ea3966dce81a3f764dc",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8354463434896959425/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8443748817866679480.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8443748817866679480/manifest.json",
+      "manifest_sha256": "c477dbbc22102de673d0f02db06254738ef3c2748cf9d57cc4afd4f2768fc64e",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8443748817866679480/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8525419003965527765.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8525419003965527765/manifest.json",
+      "manifest_sha256": "3297c28895c46dcbe8c57b7eb1c2624271be2bb52c7226ea5ce42a31053e8784",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8525419003965527765/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8539697944784643463.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8539697944784643463/manifest.json",
+      "manifest_sha256": "ed832da2ea906162333cb0a7e74e949d76435d21f94c32597ec2c515638c858c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8539697944784643463/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8611853178106367524.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8611853178106367524/manifest.json",
+      "manifest_sha256": "83b90182c085b33793ed3873343ca20acc081e23504cfd2513d8fdb52a90b0c5",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8611853178106367524/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8754360493150801493.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8754360493150801493/manifest.json",
+      "manifest_sha256": "b10dfd7031e511e77df250edd2a6db7d5a7ef9d75b41a3a01dec90c16111f5e2",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8754360493150801493/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8927322354812584041.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8927322354812584041/manifest.json",
+      "manifest_sha256": "3d2caab2d561dc69cba2a835b5a32439ed0da8cfa761cac516bfe6bedbb87291",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8927322354812584041/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8980456150572989187.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8980456150572989187/manifest.json",
+      "manifest_sha256": "824a4e470ea6f35041c723fcfee40d94942df091fe744c90c6db763173d3606c",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8980456150572989187/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape8987908268059460980.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8987908268059460980/manifest.json",
+      "manifest_sha256": "3875606ab525d469a2ca88e7bfd3459db14eb43d552ed6af7b521bdb9f3519d5",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-8987908268059460980/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape9077614460338874204.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-9077614460338874204/manifest.json",
+      "manifest_sha256": "88344def30135243d6e6b0701a8f05a7424a7f3ee2082d30d040673bdbd65252",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-9077614460338874204/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape9194507009404838026.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-9194507009404838026/manifest.json",
+      "manifest_sha256": "a9c5a3ee3f56a4c2adbe14ee4ad6647e7287afa47810fcd24589a3e4db106339",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-resumed-rawSugarscape-006/seed-9194507009404838026/trajectory.json",
+      "present": false
+    },
+    {
+      "entry": "rawSugarscape977868131476438614.config",
+      "manifest_path": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-977868131476438614/manifest.json",
+      "manifest_sha256": "5fd1d6902f16a7679b3f91d6e86042d0c6c6cda453d87534dcd17419d8d9ab51",
+      "recorded_trajectory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-2024-original-rawSugarscape-500-001/seed-977868131476438614/trajectory.json",
+      "present": false
+    }
+  ],
+  "scope": "All333 retained original baseline manifests/configurations/source hashes verified; recorded raw locations and adjacent gzip alternatives absent. Prior targeted archive/object-store inventory found no other raw copies. Not an exhaustive search outside task evidence. No launch or completion credit."
+}

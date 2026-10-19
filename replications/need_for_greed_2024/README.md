@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[Recovery of the 333 missing baseline trajectories is queued](results/baseline-recovery-launch-2026-10-19). The task-owned eight-CPU command has a six-hour limit and $5.40 conservative ceiling. Every full output must match its retained original hash; launch adds no coverage credit.
+
 [All six endpoint controls are complete and reconciled](results/endpoint-controls-complete-2026-10-19): three baseline/sweep pairs match byte-for-byte at the preselected seed. Both recovered level-1 trajectories preserve their interrupted prefixes; all three baseline hashes match prior evidence.
 
 [The four missing conditions for Table IV are staged](results/table4-missing-conditions-2026-10-19): 400 original inputs, two full-runtime qualification pairs, and a $7.02 conservative bound. After a preserved setup failure, bounded recovery `cmd-6ga7k` is running its first CPython pilot. Cumulative execution bounds are unchanged; all outcomes remain pending. No coverage credit is added.

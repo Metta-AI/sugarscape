@@ -1,0 +1,14 @@
+{
+  "node": "relh-sugarscape-baseline-recovery-cpu8-20261019-v1",
+  "workers": 8,
+  "rate_per_minute_usd": 0.012,
+  "outer_command_seconds": 21600,
+  "admission_seconds": 18000,
+  "per_input_seconds": 1800,
+  "wrapper_seconds": 1840,
+  "collector_seconds": 24000,
+  "conservative_ceiling_usd": 5.4,
+  "inputs": 333,
+  "payload_sha256": "091241d2718d14b012c427c01017d3afa6991d6b08b7c94956ac6e3b4ffc5306",
+  "scope": "No budget extension or automatic relaunch. Original333baseline inputs only; failures preserved and stop further admissions."
+}
