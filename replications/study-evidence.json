@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T09:08:25.210399+00:00",
+  "as_of": "2026-10-19T19:38:22.894627+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -290,15 +290,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "c71e7e9a07a2fff7c832b2ba2bdaae3a75a84d0f",
+      "checked_commit": "d06a899d0a2510d5840e6f893ec7a84a46b4709f",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "758c790453f3ccbddc5c8cc5c10ce447b8e72131e077613cf108e9ac01a3d95c",
-      "json_evidence_files": 227,
+      "readme_sha256": "efbc0de302a8ed3380fd257c430d507ecbac0aa8eb36ca5d5c732e06feb40eba",
+      "json_evidence_files": 259,
       "gzip_json_evidence_files": 17,
-      "checked_at": "2026-10-19T19:27:41.598854+00:00",
+      "checked_at": "2026-10-19T19:38:22.894627+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "237 unique original inputs audited:107baseline130sweep,1069333observations. Baseline batch terminal exit1; all41attempts reconciled,40full trajectories match prior hashes,one timeout partial preserved.22previously counted successes deduplicated;18new/56307obs added.293unfinished original baselines frozen (1failed292unstarted),disjoint from audited inputs. Prior failed runtime2095s exceeded1800limit;6/333historical runs exceededbound,max2274s. New recovery must use informed bounds; no old-command restart. TableIV127/500 audited, execution-ordered prefix not representative; remaining9970sweep inputs and293baselines. Source/definition and historical death aggregation unresolved. All tables/figures and completed-paper verdict remain outstanding. Separate293-input recovery now running cmd-ddr79 on existing CPU8node,after terminal-only preflight.3600s/input exceeds retained maximum2273.909s with25%margin;18000s admission,23400souter,5.40USDcap includingexport/idle. Original source/config/seeds unchanged; fullpriorhashes+failedprefix required. New3600-cap publicrunner passes real baseline/sweep/timeout/duplicate workflows. Paged collector PID84097,need-for-greed-baseline-recovery-002. No new coverage credit."
+      "remaining_scope": "262 unique original inputs audited: 107 baseline and 155 sweep, 1,194,358 observations. Second Table IV checkpoint adds 25 disjoint inputs and 125,025 observations after full source/configuration/trajectory audit and storage hash readback. Table IV has 152/500 inputs, with three extinctions and 149 above initial population; execution-ordered prefix is not representative. Remaining: 293 baselines and 9,945 sweep inputs. Existing bounded Table IV producer and separately bounded 293-input baseline recovery continue unchanged. Baseline recovery cmd-ddr79 uses 3,600-second input bounds, a 23,400-second outer bound, and $5.40 ceiling; prior full hashes and failed-prefix equality required. Historical death aggregation remains unresolved. Full tables/figures and completed-paper verdict remain outstanding."
     }
   ],
   "study_prs": 22,
