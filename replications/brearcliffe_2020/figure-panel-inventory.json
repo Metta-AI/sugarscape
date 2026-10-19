@@ -187,21 +187,6 @@
         },
         {
           "bbox": [
-            575.8599853515625,
-            424.8659973144531,
-            714.3900146484375,
-            516.4509887695312
-          ],
-          "width": 308,
-          "height": 243,
-          "xref": 73,
-          "sha256": "d838000e8d0f9fcf3fb44216e2f94fc205d0dd5acab477890704d2a29af58011",
-          "format": "png",
-          "group_A": "SARSA",
-          "group_B": "Rule M"
-        },
-        {
-          "bbox": [
             137.75999450683594,
             425.52001953125,
             273.8399963378906,
@@ -213,7 +198,7 @@
           "sha256": "d2a2ae2b884d58f3a0cc055896d82a3d4ef37723694059d9652ea3921075ece0",
           "format": "png",
           "group_A": "SARSA",
-          "group_B": "EC"
+          "group_B": "Rule M"
         },
         {
           "bbox": [
@@ -228,7 +213,7 @@
           "sha256": "9860b9bdb0d323542c6dc7d0bfc417071a17bfdad867154c00a5c9f11de21999",
           "format": "png",
           "group_A": "SARSA",
-          "group_B": "Q-Learning"
+          "group_B": "EC"
         },
         {
           "bbox": [
@@ -241,6 +226,21 @@
           "height": 243,
           "xref": 72,
           "sha256": "e1bb30fff5b149bee9945cabe84eb0222a90ec05f02e9510f1d6f57f1337568f",
+          "format": "png",
+          "group_A": "SARSA",
+          "group_B": "Q-Learning"
+        },
+        {
+          "bbox": [
+            575.8599853515625,
+            424.8659973144531,
+            714.3900146484375,
+            516.4509887695312
+          ],
+          "width": 308,
+          "height": 243,
+          "xref": 73,
+          "sha256": "d838000e8d0f9fcf3fb44216e2f94fc205d0dd5acab477890704d2a29af58011",
           "format": "png",
           "group_A": "SARSA",
           "group_B": "SARSA"
@@ -1724,5 +1724,6 @@
       ]
     }
   ],
-  "scope": "Embedded published panel identities and layout, not numerical digitization or reproduced results."
+  "scope": "Embedded published panel identities and layout, not numerical digitization or reproduced results.",
+  "layout_method": "Sort by vertical position into four nonoverlapping four-panel rows; sort each row left to right. Assert within-row y spread below5points, row gaps above50points and column gaps above100points."
 }

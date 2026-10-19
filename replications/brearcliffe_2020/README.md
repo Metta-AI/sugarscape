@@ -41,6 +41,8 @@ The [all-pairing qualification](results/all-pairings-launch-2026-10-19) is now r
 The [full learning-method comparison](results/rl-full-qualification-launch-2026-10-19) now runs Q-Learning versus SARSA for 20,000 ticks.
 The [frozen ensemble preparation](results/ensemble-preparation-2026-10-19) defines 800 runs for each parameter interpretation, with matched prospective seeds. Both preparations reproduce identical bytes; execution has not started.
 
+The [Figure 3 digitization](results/wealth-digitization-2026-10-19) recovers 30 visible endpoint intervals and leaves two occluded endpoints unresolved. Four last-row panel labels were corrected after checking plot titles; rejected labels remain documented.
+
 ## Remaining work
 
 Qualify the remaining method pairings and estimate their runtime before the full 800-run ensemble. The measured Rule M/EC pairing projects to about 49 CPU-hours for 800 runs; this is not a measured full-sweep estimate.
