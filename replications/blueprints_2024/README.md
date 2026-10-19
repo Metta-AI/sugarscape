@@ -1071,3 +1071,7 @@ Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishn
 ### Fourth supplementary checkpoint audit
 
 [Two further checkpoints](results/selfishness037-fourth-prefix-2026-10-19) add 50 disjoint original inputs and 240,451 audited observations. Forty-eight reach step 5,000; two end in native extinction. Local and producer audits match exactly. Reconciliation preserves all earlier inputs and reaches 135/100,000 supplementary inputs, including 128/500 at selfishness 0.37. The condition aggregate and paper remain incomplete.
+
+### Fourth runtime continuation audit
+
+[Three further original runtime inputs](results/runtime-continuation-fourth-prefix-2026-10-19) add 100,138 observations after eight overlapping trajectories match exactly. Coverage reaches 884/1,200 deposited inputs and 3,101,299 observations. The complete exported archive and all member hashes verify. The paper’s 500-seed timing protocol remains unresolved; no completion credit is added.
