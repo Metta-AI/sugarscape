@@ -36,10 +36,10 @@ java -Xmx1g -Djava.awt.headless=true -cp 'DRIVER_DIRECTORY:NETLOGO/app/*' \
 Place the original symmetric map and the NetLogo 6.1.1 matrix extension beside the retained model copy.
 The external bounded launcher and exact command are retained in the launch record.
 
-The [all-pairing qualification](results/all-pairings-launch-2026-10-19) is now running for 1,000 ticks per pairing with fixed bounds. Full paper ensembles have not started.
+The [all-pairing qualification](results/all-pairings-qualified-2026-10-19) now passes: all 256,256 values match native BehaviorSpace through 1,000 ticks for all sixteen pairings. A first frozen Rule M/EC ensemble input is running; complete ensembles remain outstanding.
 
 The [full learning-method comparison](results/rl-full-qualification-launch-2026-10-19) now runs Q-Learning versus SARSA for 20,000 ticks.
-The [frozen ensemble preparation](results/ensemble-preparation-2026-10-19) defines 800 runs for each parameter interpretation, with matched prospective seeds. Both preparations reproduce identical bytes; execution has not started.
+The [frozen ensemble preparation](results/ensemble-preparation-2026-10-19) defines 800 runs for each parameter interpretation, with matched prospective seeds. Both preparations reproduce identical bytes; the first released-code input is now running.
 
 The [Figure 3 digitization](results/wealth-digitization-2026-10-19) recovers 30 visible endpoint intervals and leaves two occluded endpoints unresolved. Four last-row panel labels were corrected after checking plot titles; rejected labels remain documented.
 

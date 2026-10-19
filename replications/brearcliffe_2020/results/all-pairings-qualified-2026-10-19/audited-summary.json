@@ -1,0 +1,184 @@
+{
+  "pairings_verified": 16,
+  "compared_fields": 256256,
+  "all_exact": true,
+  "comparisons": [
+    {
+      "pairing": [
+        "Rule M",
+        "Rule M"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "b183b95347c6f5519c328f516a32c31e89a2ff1e0dbb01602de720e2e5c1e6d5",
+      "native_table_sha256": "a6dfeb645749ca7467d0e3cb39d6f8ba613c189a035a62ab0d58eb1716e17de9"
+    },
+    {
+      "pairing": [
+        "Rule M",
+        "EC"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "dac91dfeddf607880c2ea615512c6c00a5cb226ce327f27b620858fc2449ee52",
+      "native_table_sha256": "64d087ae4474b6d29f94e1090fa69183aa46edc112638e970332b9f2f692a180"
+    },
+    {
+      "pairing": [
+        "Rule M",
+        "Q-Learning"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "083177d033d0e9921da494369946bb4d133d566d094a4388e1ed9755fb4cce99",
+      "native_table_sha256": "99f322f726508c141c9326214dec77451bd1359d042d3ea79bcf4b96a3391014"
+    },
+    {
+      "pairing": [
+        "Rule M",
+        "SARSA"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "83595cc2e502b889b877a8551790cde5aedf7597088aff77ad75c1e7919119d3",
+      "native_table_sha256": "e3ca6bf6ed4c9462e2cc928562c09d18fb8b9292a68d05959de144acf72b387b"
+    },
+    {
+      "pairing": [
+        "EC",
+        "Rule M"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "1249d74fcb6eed2bd53995699fa507ad23e83198f2ae50372daadff03a690248",
+      "native_table_sha256": "1e2fb5d50cf4754c9b1f2a757098443b3bf6c252ad91bfc17287b1b8c0cb100c"
+    },
+    {
+      "pairing": [
+        "EC",
+        "EC"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "0495d62e6bce0be42b79ba2af94df5be4d5f0c6817f5442d258ddac2caa5bed2",
+      "native_table_sha256": "f4af0f4f8d0ddb465ace12d3e767facc210d1484d68b660f01f69f9e8c397193"
+    },
+    {
+      "pairing": [
+        "EC",
+        "Q-Learning"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "ba32829dc1d9739fbc0720a78dab3be11681cde479e556a95af8827ffb7a49a7",
+      "native_table_sha256": "d17d7c6c264eb8e21dad50db3068cc61b59e19b7737acf828a8f0f00f5ed2936"
+    },
+    {
+      "pairing": [
+        "EC",
+        "SARSA"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "9ee6fdfd7dd119d957dfe7d4a9306dfed5407fb56e9a0b1e9ab2ef4d4440bd85",
+      "native_table_sha256": "533ce7154271de73f649610329bb9c804afafebdbee5dc16d2e53c4f59f4399c"
+    },
+    {
+      "pairing": [
+        "Q-Learning",
+        "Rule M"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "bf032bbee3822ec0d334ab5d156f3c9af492ce35a06479b5ca6b3251d9e6a54d",
+      "native_table_sha256": "7b922f2819a2558fbf7e1082293dcb1a3bb0850fa8c527ecb0f514ea43807103"
+    },
+    {
+      "pairing": [
+        "Q-Learning",
+        "EC"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "6636a949a9a8e08bd9d6333e8406b6c403859661ba0a00c9594629e3a7032176",
+      "native_table_sha256": "95e695a3ebe6fff28edbfd6dd0797be64da8a0e76165cd00cccd97fdbc1b84a9"
+    },
+    {
+      "pairing": [
+        "Q-Learning",
+        "Q-Learning"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "8cde6a944ae7639a0190ea098eda32aec4cc1b3b1a6c9a889e6a05e2e5a0a13e",
+      "native_table_sha256": "7bb0c914033bca31c6e76edf03e7831e19ae321e6e6034c34f3192df9a989fd2"
+    },
+    {
+      "pairing": [
+        "Q-Learning",
+        "SARSA"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "67dff590f951ffa1822f481265a64f8633e493ebfe5acd1f125156a472d7a56a",
+      "native_table_sha256": "e33f042b440a266c366afae6e5d317ced1232c343b9877f337217e2681141ba5"
+    },
+    {
+      "pairing": [
+        "SARSA",
+        "Rule M"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "444987aa5f6b2e131a5ce899c50113bec6847461204851ed08715447ed9a9743",
+      "native_table_sha256": "8ea4dc1b7bbc4b39f38cebc2d21dee0396a038288b6961a667a4c70e5184180a"
+    },
+    {
+      "pairing": [
+        "SARSA",
+        "EC"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "629741051a832a9caef854e2d3ee183c5e2b9c827ff106c184685f70fff95de4",
+      "native_table_sha256": "73592c64d00b5cdb6d020b50290d6939b687b0640874ba912ef8bb5b454433bb"
+    },
+    {
+      "pairing": [
+        "SARSA",
+        "Q-Learning"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "9998cd849c78e2c26088f6c95576cca252a0f5a0b1fe2dd20b4a5f6e194b2455",
+      "native_table_sha256": "285c7677d7e56ccacb2f2e82c16fe4aee10f7865176e87153b36b496e884c0b8"
+    },
+    {
+      "pairing": [
+        "SARSA",
+        "SARSA"
+      ],
+      "observations": 1001,
+      "compared_fields": 16016,
+      "differences": [],
+      "trajectory_sha256": "d65c8a307c31e2c87f0ffc6a6c44149cf6d9cf94f50db33d1791ede44309fab3",
+      "native_table_sha256": "e1bf42ea00cbe78d1b9762e327f82b027b507667dc08dfc762c30c362892af50"
+    }
+  ],
+  "scope": "Native recorder qualification, not independent-model or paper replication."
+}
