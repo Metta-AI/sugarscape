@@ -15,6 +15,7 @@ paths = {
     'coverage': root / 'table8-coverage-2026-10-17/coverage.json',
     'paired': root / 'estimator-comparison-complete-2026-10-19/comparison.csv',
     'seed': root / 'sabc1d-seed-sensitivity-2026-10-19/summary.json',
+    'seed5000': root / 'sabc1d5000-seed-sensitivity-complete-2026-10-19/summary.json',
     'gam': root / 'gam-parser-control-complete-2026-10-17/parser-comparison.json',
     'forest': root / 'notebook-rf-parser-control-completed-2026-10-17/audit.json',
 }
@@ -26,6 +27,7 @@ assert len(coverage) == len(paired) == 90
 controls = {}
 for kind, size, method, field in [
     ('seed', 1250, 'Semi-automatic ABC 1D', 'summary'),
+    ('seed5000', 5000, 'Semi-automatic ABC 1D', 'summary'),
     ('gam', 1250, 'GAM', 'comparison'),
     ('forest', 5000, 'Quantile Random Forest', 'comparison'),
 ]:
@@ -58,7 +60,7 @@ for cell in coverage:
         kind, control = controls[key]
         row['selected_control'] = kind
         row['control_evidence'] = str(paths[kind].relative_to(root.parent))
-        if kind == 'seed':
+        if kind in ('seed', 'seed5000'):
             assert abs(control['primary_seed_zero'] - score) < 1e-12
             row['observed_seed_range'] = [control['minimum'], control['maximum']]
             row['published_within_observed_seed_range'] = control['minimum'] <= float(cell['published']) <= control['maximum']
@@ -80,7 +82,7 @@ report = {'primary_matches': 38, 'primary_discrepancies': 37, 'unreported_cells'
           'discrepancies_by_method': family_counts,
           'discrepancies_with_selected_controls': sum('selected_control' in r for r in rows),
           'rows': rows, 'evidence_sha256': pins,
-          'limits': ['Only the three named same-size aggregate controls are joined here; other diagnostics remain in their original results.',
+          'limits': ['Only the four named same-size aggregate controls are joined here; other diagnostics remain in their original results.',
                      'A seed-range inclusion does not identify the historical RNG or establish agreement.',
                      'A secondary control match does not replace the primary score or establish causation.',
                      'Point-fit historical-runtime diagnostics are excluded from aggregate score comparisons.',

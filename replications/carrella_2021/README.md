@@ -5,13 +5,13 @@ Scope: Sugarscape case study only; conclusions across all 41 models are outside 
 Status: all 5,000 fresh author-model simulations validated. All 75 reported Table 8 values evaluated; 38 match printed precision and 37 remain discrepant. Study incomplete.
 The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10-19) validates 1,280 runs and 641,280 observations. None of the 30 predeclared comparisons rejects after Holm correction. Archive readback, repeated aggregation, and independent R checks pass. This does not establish stochastic equivalence or resolve the historical estimator discrepancies.
 
-[The discrepancy-control reconciliation](results/discrepancy-control-reconciliation-2026-10-19) verifies all 90 table cells and joins 13 discrepant scores to existing same-size controls. Three fall within observed seed ranges and one matches an alternative parser run; neither changes primary results or establishes historical fidelity.
+[The updated discrepancy-control reconciliation](results/discrepancy-control-reconciliation-full-data-2026-10-19) verifies all 90 table cells and joins 18 discrepant scores to selected same-size controls. Seven of nine SABC1D discrepancies fall within observed seed ranges; spice endowment remains outside at both sizes. Primary scores and the other controls remain unchanged.
 
-[A full-data estimator sensitivity control is running](results/sabc1d5000-seed-sensitivity-launch-2026-10-19): ten fixed seeds on 5,000 original inputs and unchanged folds, with bounded execution and exact input/prediction audits. This extends the earlier 1,250-input diagnostic and adds no completion credit at launch.
+[The full-data estimator sensitivity control is complete](results/sabc1d5000-seed-sensitivity-complete-2026-10-19): all ten seeds pass 37,750,000 input-cell and 250,000 prediction checks. Four published scores lie within observed seed ranges; spice endowment remains outside. Independent arithmetic, fresh archive analysis, and object-storage readback pass. These ranges are not confidence intervals and do not change primary scores.
 
 [A historical abctools source check](results/abctools-source-history-2026-10-19) finds one transformation-validation change in `semiauto.abc` between 2018 and 2025. Its sampling and regression source is unchanged; dependencies and historical runtime remain unresolved.
 
-[The complete-ensemble analyzer](results/seed-summary-analyzer-validation-2026-10-19) independently recomputes estimator and training-mean baseline errors. It passes the complete 1,250-input control and rejects the unfinished full-data ensemble before output.
+[The complete-ensemble analyzer](results/seed-summary-analyzer-validation-2026-10-19) independently recomputes estimator and training-mean baseline errors. It passes the complete 1,250-input control; its completion gate rejected the then-unfinished full-data ensemble before output.
 
 **Not a completed replication:** all independent estimator folds are audited; historical estimator discrepancies and cross-stream fidelity remain unresolved.
 
