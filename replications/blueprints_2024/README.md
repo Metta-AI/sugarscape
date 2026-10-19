@@ -1149,3 +1149,10 @@ Fresh extraction verifies261 archive members and reproduces all25 audits byte-ex
 All507 earlier input records remain identical; supplementary coverage reaches532/100,000.
 The50% heterogeneous condition reaches26/500 including its prior control.
 This completion-order prefix does not support an unbiased condition aggregate or a completed-paper claim.
+
+### Second heterogeneous50 production checkpoint
+
+[Another25 original inputs](results/heterogeneous50-second-prefix-2026-10-19) pass77,195 observation checks:15 full5,000-step runs and ten native extinctions.
+Fresh archive extraction verifies261 members and repeats all25 audits exactly.
+All532 earlier input records remain unchanged; supplementary coverage reaches557/100,000 and the50% condition51/500.
+The producer continues; this completion-order prefix is not an unbiased condition-level sample or a completed-paper result.
