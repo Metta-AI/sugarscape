@@ -4,7 +4,7 @@
 
 [Runtime checkpoint 0011](results/runtime-second-continuation-sixth-prefix-2026-10-19) raises deposited-input coverage to 935/1,200 and 3,757,784 observations. All 100 original raw-model inputs at 50,000 steps are now audited. Exact overlap checks and fresh archive readback pass; the distinct paper timing experiment remains unresolved. [The continuation has now ended](results/runtime-second-continuation-terminal-2026-10-19) at its six-hour bound; the final checkpoint adds only termination records. The timed-out input is uncredited.
 
-[The twelfth heterogeneous checkpoint](results/heterogeneous50-twelfth-prefix-2026-10-19) adds 25 audited original inputs and 96,200 observations. Supplementary coverage is 807/100,000; the 50% heterogeneous condition is 301/500. Two fresh extractions reproduce all 25 audits; all 782 earlier input records remain unchanged. This completion-order prefix does not establish an unbiased condition-level distribution.
+[The thirteenth heterogeneous checkpoint](results/heterogeneous50-thirteenth-prefix-2026-10-19) adds 25 audited original inputs and 86,644 observations. Supplementary coverage is 832/100,000; the 50% heterogeneous condition is 326/500. Two fresh extractions reproduce all 25 audits; all 807 earlier input records remain unchanged. This completion-order prefix does not establish an unbiased condition-level distribution.
 
 All **2,000/2,000 original homogeneous configurations** are complete and audited, with 5,063,268 observations.
 [The complete union](results/homogeneous-complete-2026-10-18) validates all 500 seeds for each model without double counting.
