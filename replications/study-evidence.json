@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-19T21:05:59.300127+00:00",
+  "as_of": "2026-10-19T21:21:46.452670+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 4,
   "wholly_positive_papers": 1,
@@ -277,15 +277,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "5e395a0b3ceaf2d615aea126e25c485fd8f920ea",
+      "checked_commit": "8dbd8d3e8fac78406dcc6c769faf44f78d488676",
       "status": "running",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "777caa73e585f1676d03db78de1226d8f203d0bc25c6c5abd9422843e0193cc0",
-      "json_evidence_files": 418,
-      "gzip_json_evidence_files": 21,
-      "checked_at": "2026-10-19T20:49:55.404946+00:00",
+      "readme_sha256": "ea34309288b9e8339892705436efea1607925b3cbde33be9e5f10b4e243a23cf",
+      "json_evidence_files": 443,
+      "gzip_json_evidence_files": 23,
+      "checked_at": "2026-10-19T21:21:46.452670+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "752 inputs and 15,040,752 observations audited: 650 released-code, 102 paper-table. Thirteen released and two paper-table cohorts complete. Paper-table Rule M/EC adds 50 inputs, all full trajectories byte-identical to paired released controls. Independent R checks 320016 means/SD and 14 endpoints with 20000 bootstrap draws. Twelve endpoint mean ranges overlap paper; both remaining pointwise intervals overlap, not equivalence. Fresh durable readback verifies 502 members, manifest 8956c01195ac4f3d69285797927f0b27d4d6adf69a8175de49b165b8e5ff82eb. Remaining 150 released and 698 paper-table inputs; historical settings, full figure synthesis and whole-paper verdict unresolved."
+      "remaining_scope": "852 inputs and 17,040,852 observations audited: 700 released-code, 152 paper-table. Fourteen released and three paper-table cohorts complete. SARSA/EC and paper-table Rule M/Q add 100 inputs with full prior-record preservation. Independent R checks each cohort: 320016 means/SD and 14 endpoints with 20000 bootstrap draws. Endpoint mean ranges overlap 13/14 and 11/12 readable paper ranges respectively; remaining pointwise intervals overlap, not equivalence. Two mislabeled Rule M/Q combat endpoints remain excluded. All 50 Rule M/Q paired trajectories differ across parameter interpretations. Fresh durable readback verifies 1004 members across manifests 012 and 013; latest manifest d9be8701f7b0bd486d2b7e3d527771b37e125f2bd170e911982ebc1c4a50a092. Remaining 100 released and 648 paper-table inputs; historical settings, full figure synthesis and whole-paper verdict unresolved."
     },
     {
       "study": "need_for_greed_2024",
