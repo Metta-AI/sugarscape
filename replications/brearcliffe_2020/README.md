@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The paper-table Rule M/SARSA cohort completes all 50 seeds](results/paper-rule-m-sarsa-complete-cohort-2026-10-19). Independent R checks pass; all fourteen endpoint mean ranges overlap the plotted paper ranges. All paired trajectories differ from released-code outputs. Coverage reaches 902 inputs and 18,040,902 observations; historical parameter provenance remains unresolved.
+
 [EC claim-level contrasts](results/ec-claim-contrasts-2026-10-19) support all 14 stated endpoint directions across six released-code matchups, with independent R checks. EC has 24.9–27.3% more combat deaths than Rule M; both orientations remain consistent with the paper graphics. The prose supplies no equivalence margin. This adds analysis without simulation or completed-paper credit.
 
 [Rule M claim-level contrasts](results/rule-m-claim-contrasts-2026-10-19) cover all six released-code matchups against learning methods. All 18 Rule M-minus-opponent endpoint differences in wealth, vision, and metabolism are positive; their pointwise bootstrap intervals exclude zero. Independent R checks pass. EC leads in mean wealth early before Rule M overtakes it. This adds analysis, not simulation or completed-paper credit.
@@ -132,8 +134,8 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-The latest full audit covers 700/800 released-code inputs and 152/800 paper-table inputs.
-Complete and audit the remaining 100 released-code and 648 paper-table inputs under the existing frozen assignments.
+The latest full audit covers 700/800 released-code inputs and 202/800 paper-table inputs.
+Complete and audit the remaining 100 released-code and 598 paper-table inputs under the existing frozen assignments.
 Both bounded ensembles are running; completed producer entries receive coverage only after independent trajectory audits.
 All sixteen method pairings already passed native recorder qualification; the Rule M control also matches across both parameter interpretations for all 50 seeds.
 
