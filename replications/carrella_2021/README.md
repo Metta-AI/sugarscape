@@ -1258,3 +1258,11 @@ The remaining nine settings and declared30-test correction are still required; n
 The failed archive and partial seed44 are preserved; no incomplete-cohort credit is claimed.
 A separate600-second continuation runs only unfinished independent seeds44–63 with unchanged source and parameters.
 The other original cohorts continue; full reconciliation and the declared30-test analysis remain required.
+
+### Second parameter cohort reconciled and audited
+
+[Original input4876](results/parameter-second-cohort-complete-2026-10-19) now has128 successful constituent runs and64,128 audited observations.
+Only unfinished independent seeds44–63 were recovered; the original timeout and interrupted trajectory remain preserved.
+Fresh archive extraction reproduces all audits and comparisons exactly; independent R confirms six distribution statistics and two Fisher tests.
+The six-metric maximum difference is0.203125, with unadjusted joint permutation p0.571.
+Two of ten settings are audited; eight settings, full reconciliation and30-test adjustment remain outstanding.
