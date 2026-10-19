@@ -1106,3 +1106,10 @@ Twenty-four complete 5,000 steps; one reaches native extinction. All 410 prior i
 Coverage is now **428/500** for this condition and **435/100,000** supplementary inputs overall.
 The bounded replacement collector resumes export after the former collector stopped; the original producer continues without rerunning completed inputs.
 No partial-condition aggregate or new paper-completion credit is claimed.
+
+## Selfishness 0.37 checkpoint 452
+
+[Another 25 disjoint inputs](results/selfishness037-seventh-prefix-2026-10-19) pass 125,025 observation checks; every run reaches 5,000 steps.
+Producer and local audits agree exactly, and all 435 prior inventory records remain unchanged.
+Coverage reaches **453/500** for this condition and **460/100,000** supplementary inputs overall.
+The remaining 47 seeds are required before condition aggregation; paper completion remains unchanged.
