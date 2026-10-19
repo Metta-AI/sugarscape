@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[All 400 original baselines are complete](results/baseline-complete-2026-10-19). Tables I–III match exactly, independently verified in R, without result-matching adjustments. The final 18 inputs bring coverage to 705 inputs and 2,558,145 observations. A fresh terminal-archive audit also verifies all 293 recovery inputs.
+
 [The eighth Table IV checkpoint](results/table4-eighth-prefix-2026-10-19) adds 25 disjoint inputs and 125,025 observations. All 100 selfishness-0.38 inputs are now audited; the five-level row remains incomplete at 302/500. Total coverage reaches 687 inputs and 2,501,869 observations.
 
 [The eleventh baseline checkpoint](results/baseline-second-recovery-eleventh-prefix-2026-10-19) adds 25 disjoint inputs and 33,217 observations. Coverage reaches 662 inputs and 2,376,844 observations. Tables I and II cover 94/100 and 92/100 original inputs; Table III remains exactly reproduced.
@@ -72,7 +74,7 @@
 
 [The selfishness-1 endpoint baseline reached its time limit](results/endpoint-recovery-launch-2026-10-19). Both level-1 controls timed out; the original batch is terminal. Bounded sequential recovery reruns only those two inputs with unchanged configurations. Failed bytes are preserved; coverage and study status are unchanged.
 
-Status: partial native reproduction. The shared-input inventory has 687 audited inputs and 2,501,869 observations, including all six native controls, 315 recovered baselines, and the first 202 Table IV batch inputs. Four reported medians agree graphically at both selfishness 0.36 and 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
+Status: partial native reproduction. The shared-input inventory has 705 audited inputs and 2,558,145 observations: all 400 original baselines and 305 sweep inputs. Four reported medians agree graphically at both selfishness 0.36 and 0.37; the death-rate definition remains unresolved. The full tables and figures remain incomplete.
 
 Kremer-Herman and Gupta, IEEE ISTAS 2024, pages 182–190. [Author manuscript](https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf).
 The paper explicitly names [author release v2024.1](https://github.com/digital-terraria-lab/sugarscape/tree/b9ca671ab7591c7b3606f2d76c33eda344d626d1). Its source is MIT-licensed; source and dataset hashes appear in `source-audit.json`.
@@ -123,6 +125,6 @@ Both commands require the pinned author artifacts documented above. Each run pre
 
 ## Remaining work
 
-Recover and freshly verify the remaining 18 baseline trajectories; execute or reuse all 9,795 remaining sweep inputs. Reproduce Tables I–IV and Figures 2–6 with declared aggregation and denominator conventions. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
+All baseline trajectories are verified. Execute or reuse the remaining sweep inputs to cover the declared method and parameter range. Complete the Table IV and Figures 2–6 comparisons with declared aggregation and denominator conventions. Numerical agreement is not required for method-reproduction completion; unresolved implementation choices still require investigation. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
 
 Historical boxplot aggregation remains unresolved. The paper’s printed Table IV row 0.81–0.85 sums to 100.2%; the source audit preserves it without correction. Full paper completion requires the complete declared experiment and qualified comparisons, not this subset.
