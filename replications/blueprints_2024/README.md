@@ -1177,3 +1177,5 @@ Supplementary coverage reaches582/100,000 and the50% condition76/500.
 Both producers continue; these completion-order prefixes do not establish whole-condition agreement or whole-paper completion.
 
 [Complete heterogeneous50 condition](results/heterogeneous50-complete-2026-10-19): all 500 original seeds are audited, with 1,781,148 observations and 150 native extinctions. Median population 938.1763–938.3139 falls within Figure 16 ink bounds 925.3719–943.2437 under all four averaging conventions. Exact rational calculation, repeat execution, and independent NumPy ordering agree. Supplementary coverage is 1,006/100,000; the full paper remains incomplete.
+
+[Heterogeneous50 quartile comparison](results/heterogeneous50-quartiles-2026-10-19): the upper quartile falls within Figure 16’s visible outline envelope under nine quantile definitions and four averaging conventions. Independent R checks all 72 quantiles. The lower target remains unresolved because the exact coordinate falls in a dash gap.
