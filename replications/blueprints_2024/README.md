@@ -1067,3 +1067,7 @@ Supplementary coverage reaches 60 unique inputs, with 99,940 remaining. Selfishn
 [The third selfishness-0.37 prefix](results/selfishness037-third-prefix-2026-10-18) adds 25 disjoint inputs and 120,190 observations. Twenty-four reach step 5,000; one ends naturally in extinction at step 165. Supplementary coverage reaches 85 original inputs; condition 0.37 reaches 78 of 500.
 
 [The third runtime prefix](results/runtime-continuation-third-prefix-2026-10-18) adds one input and 50,001 observations after matching seven overlapping trajectories exactly. Runtime coverage reaches 881 of 1,200 deposited inputs and 3,001,161 observations. The complete archive is hash-verified and retained in task object storage and local evidence. Neither prefix completes a paper result.
+
+### Fourth supplementary checkpoint audit
+
+[Two further checkpoints](results/selfishness037-fourth-prefix-2026-10-19) add 50 disjoint original inputs and 240,451 audited observations. Forty-eight reach step 5,000; two end in native extinction. Local and producer audits match exactly. Reconciliation preserves all earlier inputs and reaches 135/100,000 supplementary inputs, including 128/500 at selfishness 0.37. The condition aggregate and paper remain incomplete.
