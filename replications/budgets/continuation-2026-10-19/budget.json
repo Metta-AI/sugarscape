@@ -27,10 +27,17 @@
       "state": "running-qualification",
       "node": "relh-sugarscape-unassigned00-cpu8-20261019-v1",
       "command": "cmd-9339c"
+    },
+    {
+      "id": "richmond-counter-reset-controls-001",
+      "maximum_usd": 8,
+      "state": "running",
+      "node": "relh-sugarscape-richmond-h100-20261017-v1",
+      "command": "cmd-cpsse"
     }
   ],
-  "reserved_usd": 20.0,
-  "unreserved_usd": 80.0,
+  "reserved_usd": 28.0,
+  "unreserved_usd": 72.0,
   "rules": [
     "Reserve worst-case bounded cost before launch.",
     "Release reservations only after terminal verification and cost reconciliation.",
