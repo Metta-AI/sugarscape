@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The Tables I–III analyzer now enforces complete original baseline groups](results/baseline-analysis-gates-2026-10-19). Current coverage is 38 altruistic, 37 egoistic, and 95 utilitarian inputs. Percentages remain withheld; complete-row arithmetic awaits validation on a full audited group.
+
 [Using the fixed initial population does not explain the death-rate figure](results/initial-population-death-diagnostic-2026-10-19). Neither condition has a matching quartile/median triplet across the declared alternatives. Raw arithmetic and all 216 quantile comparisons pass independent checks; the primary definition remains unchanged.
 
 [The fourth baseline recovery checkpoint adds 25 disjoint audited inputs](results/baseline-second-recovery-fourth-prefix-2026-10-19), with 67,030 observations and exact prior trajectory hashes. Total coverage reaches 412 inputs; 193 baseline inputs remain.
