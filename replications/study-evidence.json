@@ -273,8 +273,21 @@
       "checked_at": "2026-10-19T00:48:19.796215+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/springer_2019",
       "remaining_scope": "Publisher artifact and author plotting sources verified. Original exact Figure10 timing targets recovered; baseline plots use minimum. Figure11 capacity normalization recovered but square-grid size convention remains unresolved. CUDA11.8 ports run small controls: DynaSOAr/AOS/SOA, CUDA and Bitmap; mallocMC asserts and Halloc segfaults. Full-size DynaSOAr times out during agent creation. Original capacity succeeds at32x32 but fails at128x128, where each launch thread handles one cell. Compute90 debug asserts active-mask equality; release still times out. Synccheck times out without an error summary and is inconclusive. All failures retained, not counted as negative replication. Isolated official Ubuntu16.04/CUDA9.1.85/GCC5.4.0 now prepared with verified image and package hashes. First unchanged-source build failed loading existing libnvvm; all511 source files match artifact and zero executions occurred. Loader-configured retry cmd-j4ayg completed and its sealed archive passed independent audit. Both controls compile with unchanged publisher source: all 511 files match. Original-capacity 32x32 completes 10,000 steps; 128x128 times out after 60 seconds. Full-size executions were not started because the gate failed. Original CUB and seed42 are retained. This uninstrumented timeout has no localized execution phase; it occurs without the CUDA11.8 source edits and does not establish a paper-negative result. PTX target and H100 hardware remain differences. Full-state validation, all allocator variants, full-size timing repeats, matched actual heap budgets and published claim comparisons remain incomplete. No completion credit. NVIDIA documentation identifies a distinct Volta Pascal-style scheduling route using compute_60/sm_70. No compatible historical GPU was identified or allocated. The owned H100 is stopped; this unexecuted route is not evidence of a cause or replication."
+    },
+    {
+      "study": "brearcliffe_2020",
+      "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
+      "checked_commit": "d4bb3651666cdcb25181437a628698a6b5de7876",
+      "status": "running",
+      "readme": "replications/brearcliffe_2020/README.md",
+      "readme_sha256": "b7f59e5782d4a121e16f5a0f0c6e683ff0dba30e53b3bf8b64fe3218811e5a14",
+      "json_evidence_files": 4,
+      "gzip_json_evidence_files": 0,
+      "checked_at": "2026-10-19T09:42:35.345717+00:00",
+      "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
+      "remaining_scope": "Author release1.0.0,NetLogo6.1.1,map,ODD,and manuscript recovered. Native full20000-tick Rule M versusEC pilot runs with only recorded seed20261019 substituted;600sec,1GiB Java heap,50MiB bounds. Java11 compilation and native startup pass; terminal/full audit pending. Paper50 repeats versus release5,unrecorded historical seeds,and swapped learning-rate/gamma require explicit separate interpretations. Source license notices retained. All800 original-extent runs,independent fork implementation,full metrics/figures remain required. No completion credit."
     }
   ],
-  "study_prs": 19,
+  "study_prs": 20,
   "snapshot_method": "Selected entries pin fetched remote branch commits, committed README hashes and parsed tracked JSON evidence under results, except explicitly recorded broader scan scopes. Other entries remain dated snapshots. Scientific status derives from study audits; file counts do not certify completion."
 }

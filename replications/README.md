@@ -335,3 +335,5 @@ Blueprints supplementary checkpoint: 25 additional original selfishness-0.37 inp
 [Masumori and Ikegami (2025)](source-audits/masumori-survival-2025.json) is an additional Sugarscape-style preprint candidate. Two public implementations were inspected at pinned commits. One hard-codes personality probabilities; the other explicitly changes model rules and disclaims strict reproduction. Neither supplies author-code provenance. Original mechanics, seeds, model versions and complete experiment settings remain unresolved; no inference run or completion credit is added.
 
 Brearcliffe and Crooks’ [Creating Intelligent Agents](https://doi.org/10.1007/978-3-030-83418-0_3) is an additional source-recovered candidate. The [source audit](source-audits/brearcliffe-2020.json) retains the original NetLogo model, map, ODD, and author manuscript. The paper requests 50 runs per pairing; the released sweep specifies five and generates unrecorded seeds. No simulations or completion credit are claimed.
+
+The Brearcliffe study now has [draft PR #23](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23), with a bounded native pilot running and no completed-study credit.
