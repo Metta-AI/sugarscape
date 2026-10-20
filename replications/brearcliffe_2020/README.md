@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The complete paper-table Q / SARSA cohort](results/paper-q-sarsa-complete-cohort-2026-10-20) combines 48 new inputs with two retained pilots. Coverage reaches 1,400 inputs and 28,001,400 observations; 200 paper-table inputs remain. Full trajectory, independent R, and fresh storage checks pass. All twelve readable endpoint ranges overlap the paper; two endpoints remain unresolved. These descriptive overlaps do not establish equivalence.
+
 [The complete paper-table Q / Q cohort](results/paper-q-q-complete-cohort-2026-10-20) adds 50 audited runs and 1,000,050 observations. Coverage reaches 1,352 inputs and 27,041,352 observations; 248 paper-table inputs remain. Independent R and fresh storage checks pass. Seven readable endpoint ranges overlap the paper; group A maximum age does not, and six endpoints remain unresolved.
 
 [The first ten paired cohorts](results/ten-pair-parameter-comparison-2026-10-20) now have a common-target comparison across both parameter interpretations. Of 140 endpoints, 102 overlap under both settings, eight only under paper settings, one only under released settings, 18 under neither, and 11 remain unresolved. Independent R verifies every category. These descriptive results do not identify historical settings or add simulation coverage.
@@ -162,8 +164,8 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-The latest full audit covers all 800 released-code inputs and 502/800 paper-table inputs.
-Complete and audit the remaining 298 paper-table inputs. The released-code ensemble and its bounded recovery have completed.
+The latest full audit covers all 800 released-code inputs and 600/800 paper-table inputs.
+Complete and audit the remaining 200 paper-table inputs. The released-code ensemble and its bounded recovery have completed.
 The original paper-table producer continues on its frozen assignment. Completed producer entries receive coverage only after independent trajectory audits.
 All sixteen method pairings already passed native recorder qualification; the Rule M control also matches across both parameter interpretations for all 50 seeds.
 
