@@ -206,3 +206,8 @@ The [complete Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) no
 [Durable EC/Q evidence](results/ec-q-durable-evidence-2026-10-19) passes fresh storage import and verification of 502 file hashes. The three disjoint backups now cover all 353 audited inputs.
 
 [Durable EC/SARSA evidence](results/ec-sarsa-durable-evidence-2026-10-19) verifies all 502 archive members after fresh storage download. Four disjoint backups now cover all 403 audited inputs.
+
+
+## Final parameter comparison
+
+[The reusable complete-cohort command](results/parameter-comparison-cli-2026-10-20) defaults to all sixteen pairings and rejects missing evidence without writing a partial report. Its thirteen-pair execution reproduces all existing data fields and passes independent R verification. Run `compare_parameter_interpretations.py` and `verify_parameter_interpretations.R` after the final cohorts pass native audits.
