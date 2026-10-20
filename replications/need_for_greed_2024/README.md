@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The sixth unassigned-shard checkpoint](results/unassigned-sixth-checkpoint-2026-10-20) adds 25 audited inputs and 125,025 observations. Coverage reaches 1,055 unique inputs and 4,255,721 observations; 9,445 sweep inputs remain unaudited. Tables I–III and the completed Table IV row remain unchanged.
+
 [The fifth unassigned-shard checkpoint](results/unassigned-fifth-checkpoint-2026-10-20) adds 25 audited inputs and 120,217 observations. Coverage reaches 1,030 unique inputs and 4,130,696 observations; 9,470 sweep inputs remain unaudited. Tables I–III and the completed Table IV row remain unchanged.
 
 [The first complete Table IV row](results/table4-first-complete-row-2026-10-20) reproduces all three published percentages for selfishness 0.36–0.40: 1.2% extinct, 0% worse, and 98.8% better across 500 original inputs. Independent R counts agree. The terminal archive adds 23 disjoint inputs and 115,023 observations, bringing coverage to 1,005 inputs and 4,010,479 observations. Tables I–III remain unchanged; 9,495 sweep inputs remain unaudited. This completes one Table IV row, not the paper.
