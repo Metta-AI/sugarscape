@@ -1,0 +1,18 @@
+{
+  "configuration": "anim2-3",
+  "repeat": "observer",
+  "command": [
+    "/opt/homebrew/opt/openjdk@11/bin/java",
+    "-Djava.awt.headless=true",
+    "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/anim2-3-observer.classes.log",
+    "-cp",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+    "AuditReplay",
+    "conf/anim2-3.conf",
+    "0",
+    "1000",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/anim2-3-observer-population.csv"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.3515896659810096
+}

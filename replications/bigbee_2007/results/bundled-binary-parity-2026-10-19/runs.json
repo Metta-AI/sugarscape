@@ -1,0 +1,158 @@
+[
+  {
+    "configuration": "anim2-3",
+    "repeat": "a",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/anim2-3-a.classes.log",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+      "Replay",
+      "conf/anim2-3.conf",
+      "0",
+      "1000"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.34393608302343637
+  },
+  {
+    "configuration": "anim2-3",
+    "repeat": "b",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/anim2-3-b.classes.log",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+      "Replay",
+      "conf/anim2-3.conf",
+      "0",
+      "1000"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.2894174169632606
+  },
+  {
+    "configuration": "anim2-3",
+    "repeat": "observer",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/anim2-3-observer.classes.log",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+      "AuditReplay",
+      "conf/anim2-3.conf",
+      "0",
+      "1000",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/anim2-3-observer-population.csv"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.3515896659810096
+  },
+  {
+    "configuration": "fig3-4",
+    "repeat": "a",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/fig3-4-a.classes.log",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+      "Replay",
+      "conf/fig3-4.conf",
+      "0",
+      "1000"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.45287420897511765
+  },
+  {
+    "configuration": "fig3-4",
+    "repeat": "b",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/fig3-4-b.classes.log",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+      "Replay",
+      "conf/fig3-4.conf",
+      "0",
+      "1000"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.5161742499913089
+  },
+  {
+    "configuration": "fig3-4",
+    "repeat": "observer",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/fig3-4-observer.classes.log",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+      "AuditReplay",
+      "conf/fig3-4.conf",
+      "0",
+      "1000",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/fig3-4-observer-population.csv"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.45587000000523403
+  },
+  {
+    "configuration": "fig3-5",
+    "repeat": "a",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/fig3-5-a.classes.log",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+      "Replay",
+      "conf/fig3-5.conf",
+      "0",
+      "1000"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.7905899159959517
+  },
+  {
+    "configuration": "fig3-5",
+    "repeat": "b",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/fig3-5-b.classes.log",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+      "Replay",
+      "conf/fig3-5.conf",
+      "0",
+      "1000"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.7830488340114243
+  },
+  {
+    "configuration": "fig3-5",
+    "repeat": "observer",
+    "command": [
+      "/opt/homebrew/opt/openjdk@11/bin/java",
+      "-Djava.awt.headless=true",
+      "-Xlog:class+load=info:file=/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/fig3-5-observer.classes.log",
+      "-cp",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/wrappers:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1:/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/native/mason_sugarscape_1.1/lib/*",
+      "AuditReplay",
+      "conf/fig3-5.conf",
+      "0",
+      "1000",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/bigbee-bundled-binary-001/fig3-5-observer-population.csv"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.7895583750214428
+  }
+]

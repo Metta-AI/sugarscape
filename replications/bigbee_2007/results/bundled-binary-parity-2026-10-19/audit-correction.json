@@ -1,0 +1,4 @@
+{
+  "initial_failure": "String comparison of equivalent local file URIs: Java logs file:/Users/... while pathlib emits file:///Users/...",
+  "correction": "Compare parsed file scheme, empty authority and decoded absolute path. No native simulation outputs changed."
+}

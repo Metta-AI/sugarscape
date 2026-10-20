@@ -1,0 +1,38 @@
+{
+  "scenario": "fig3-5",
+  "observations": 1002,
+  "native_output_byte_identical": true,
+  "registry_mismatch_observations": 989,
+  "grid_mismatch_observations": 982,
+  "first_mismatch": {
+    "time": "13.0",
+    "reported_population": "413",
+    "grid_alive": "405",
+    "registered": "400",
+    "registered_alive": "400"
+  },
+  "final_state": {
+    "time": "1001.0",
+    "reported_population": "689",
+    "grid_alive": "683",
+    "registered": "0",
+    "registered_alive": "0"
+  },
+  "source_findings": [
+    {
+      "file": "sim/app/sugarscape/Sugarscape.java",
+      "method": "reproduceNewAgent",
+      "finding": "Creates/schedules/grids a child and increments population but never inserts it into active_agents, unlike newAgent."
+    },
+    {
+      "file": "sim/app/sugarscape/Agent.java",
+      "method": "idFreeSpace",
+      "finding": "Treats retrieveNeighborToroidal true as free although that method returns true for occupied. Checks unpermuted direction a, then returns scan[index][a], allowing a different occupied cell to be overwritten."
+    },
+    {
+      "file": "sim/app/sugarscape/Statistics.java",
+      "finding": "Trade data append neighbor_occurrence but the header omits its column. No-trade average prices are also undefined."
+    }
+  ],
+  "scope": "Observed defects of the pinned2011release; not established as defects in the2007paper implementation. Original rules remain unchanged."
+}

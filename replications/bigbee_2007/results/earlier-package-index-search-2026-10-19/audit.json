@@ -1,0 +1,11 @@
+{
+  "queries": [
+    "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fhomepage.mac.com%2Ftony.bigbee%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&fl=timestamp%2Coriginal%2Cmimetype%2Cdigest&limit=200",
+    "https://web.archive.org/cdx/search/cdx?url=http%3A%2F%2Fmason-sugarscape.dev.java.net%2F%2A&output=json&filter=statuscode%3A200&collapse=urlkey&fl=timestamp%2Coriginal%2Cmimetype%2Cdigest&limit=200"
+  ],
+  "successful_http_responses": 2,
+  "returned_capture_rows": 0,
+  "max_rows_per_query": 200,
+  "scope": "Two Wayback CDX prefixes only, filtered to HTTP200 and collapsed by URL. Empty responses do not prove the source is absent elsewhere or under other URLs.",
+  "next_requirement": "Earlier Sugarscape model source matching the paper; MASON10 framework itself is already recovered and tested in mason10-runtime-2026-10-16."
+}
