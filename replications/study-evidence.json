@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T06:02:25.362782+00:00",
+  "as_of": "2026-10-20T06:37:45.963550+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 8,
   "wholly_positive_papers": 1,
@@ -281,15 +281,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "23600bc251d57d823e7a6c4706c00ec778ceb8e0",
+      "checked_commit": "d89906918245e3d5aed067cbc75a305959f58730",
       "status": "running",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "cb4884abaddc1bcb8c429cdbe33c6bf11ac4bd390dc550b3a326439c16348060",
-      "json_evidence_files": 654,
-      "gzip_json_evidence_files": 36,
-      "checked_at": "2026-10-20T05:48:24.327781+00:00",
+      "readme_sha256": "8009ecdb4a248dba01a29e6a4e02e1db1f75d1184663fef6b440a9f69d5c2fc8",
+      "json_evidence_files": 670,
+      "gzip_json_evidence_files": 37,
+      "checked_at": "2026-10-20T06:37:45.963550+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "1500 inputs /30001500 observations audited:800released and700paper-table;100paper inputs and final synthesis remain. SARSA/EC cohort passes native,R and fresh storage audits. All six paper-table EC matchups pass independent R:1800raw endpoints exact,270statistics;14stated endpoint directions hold under both interpretations. All six RuleM matchups also verified under both settings. Thirteen-pair parameter comparison retains both interpretations; reusable16-pair command awaits final cohorts. No equivalence or whole-study verdict. Next SARSA/Q snapshot watcher observes unchanged producer; no duplicate simulations."
+      "remaining_scope": "1550 inputs /31001550 observations audited:800released and750paper-table; final50 paper SARSA/SARSA inputs and full synthesis remain. SARSA/Q cohort passes native,R and fresh storage audits. Both paper Q/SARSA orientations pass independent R:200raw endpoints exact,30statistics; endpoint wealth advantages1068.16565 and1063.05835, positive pointwise intervals,early reversals retained. Both released-code orientations agree directionally; no numerical threshold for slight. All RuleM and EC claim matchups independently verified under both settings. Final dependent handoff observes original producer and gates homogeneous contrasts plus16-pair comparison on final complete cohort. Admission cutoff may leave unstarted inputs; no duplicate recovery before original terminal/export evidence. No equivalence or whole-study verdict."
     },
     {
       "study": "need_for_greed_2024",
