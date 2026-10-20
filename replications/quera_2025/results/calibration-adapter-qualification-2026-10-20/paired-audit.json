@@ -1,0 +1,62 @@
+{
+  "observed_states": 50,
+  "simulated_states": 100,
+  "channels": [
+    "mean_wealth",
+    "alive_fraction"
+  ],
+  "native_jacobian_values": 1200,
+  "flow_samples": 20,
+  "independent_loss": 167.72987456044373,
+  "native_loss": 167.7298745604437,
+  "ad_loss": 167.72987456044382,
+  "bandwidths": [
+    6.828962035045262,
+    0.22113344387496006
+  ],
+  "gradients": {
+    "p1": {
+      "independent": 35.126877016189866,
+      "native": 35.12687701618992,
+      "absolute_difference": 5.684341886080802e-14
+    },
+    "p6": {
+      "independent": -8.78171925404747,
+      "native": -8.781719254047482,
+      "absolute_difference": 1.2434497875801753e-14
+    },
+    "m_alpha": {
+      "independent": 248.93682799799527,
+      "native": 248.93682799799785,
+      "absolute_difference": 2.5863755581667647e-12
+    },
+    "m_beta": {
+      "independent": -79.62854799737765,
+      "native": -79.62854799737805,
+      "absolute_difference": 3.979039320256561e-13
+    },
+    "w_alpha": {
+      "independent": -29.29443515019169,
+      "native": -29.29443515019164,
+      "absolute_difference": 4.973799150320701e-14
+    },
+    "w_beta": {
+      "independent": 47.104441065403826,
+      "native": 47.1044410654038,
+      "absolute_difference": 2.842170943040401e-14
+    }
+  },
+  "prior_runtime_pins_unchanged": true,
+  "prior_seed0_agent_and_cell_csvs_byte_identical": true,
+  "sha256": {
+    "paired-qualification/flow-samples.csv": "c636e4b590d0a94d0a257638aff66931468eefa2b8ac1a9583505d4afbeb9dc8",
+    "paired-qualification/loss-and-gradient.csv": "3ae93f0e5bdbc965e6eebadfcbc2c804f0d8c2194e2d5d5e8cbc1cd3f7a2bf06",
+    "paired-qualification/native-jacobians.csv": "1e32ba37cda5f56d75f0c97536c105552aaa9425e67a615044597fd70e6c945a",
+    "paired-qualification/observation.jls": "1822d954ed08029d1979d45c27e5d8c1a0c84010b08041428f2c287b55903975",
+    "paired-qualification/scope.txt": "a65f6f7b1c869bf5ad0ab899caf951ccef46b922c59e948a864abf6606c37686",
+    "paired-qualification/seed-0-agents.csv": "b4ff22d04bb891efe23b0009a35c8528b2a2d20725f11120c43ba6922e5d5210",
+    "paired-qualification/seed-0-cells.csv": "c60f2d368bb5b509ef7ffdce1234460a330a124e3facfc6a7edcc3addced3f52",
+    "paired-qualification/wealth.csv": "4c2f6fd4feb3b91da48695a121e0bcf77fcfb977360fdfc4b618cd6361f47cc6"
+  },
+  "scope": "End-to-end native two-channel model/loss/AD chain and flow sampling only. Bandwidths are held fixed in derivatives, matching author ignore_derivatives. This is not finite-difference unbiasedness, posterior calibration or paper replication."
+}

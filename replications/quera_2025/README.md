@@ -1,5 +1,7 @@
 # Quera-Bofarull et al. (2025): Automatic Differentiation of Agent-Based Models
 
+[Coupled calibration qualification](results/calibration-adapter-qualification-2026-10-20) identifies a random-realization mismatch in the original value/Jacobian adapter. A separate corrected adapter passes independent two-channel loss and six-gradient checks; prior seed-zero trajectories remain byte-identical. The reconstructed dependency environment and correction are explicit. Full optimization and posterior comparisons remain incomplete.
+
 **Status: incomplete.** Three calibration pilots and all 256 gradient-baseline trajectories pass independent state replay. The paper’s gradient and calibration results remain unreplicated.
 
 Paper: https://arxiv.org/html/2509.03303v2
