@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The paper-table EC/SARSA cohort completes all fifty inputs](results/paper-ec-sarsa-complete-cohort-2026-10-20). Full trajectory audits, independent R checks, and fresh storage readback pass. Coverage reaches 1,202 inputs and 24,041,202 observations; 398 paper-table inputs remain. Eleven readable endpoint ranges overlap the paper; the remaining vision interval overlaps. Both parameter interpretations remain explicit.
+
 [All four homogeneous-method breed comparisons](results/homogeneous-breed-contrasts-2026-10-19) now have paired endpoint audits across 200 existing runs. All 28 pointwise intervals include zero; this neither establishes equivalence nor the claimed EC breed advantage. Independent R verifies 2,800 raw endpoints and 252 summaries. No simulation inputs or completed-study credit were added.
 
 [All 800 released-code inputs are now audited](results/released-sarsa-sarsa-complete-cohort-2026-10-19/README.md). Together with [the complete paper-table EC/Q cohort](results/paper-ec-q-complete-cohort-2026-10-19/README.md), canonical coverage reaches 1,152 inputs and 23,041,152 observations. The remaining 448 paper-table inputs and claim synthesis stay incomplete.
