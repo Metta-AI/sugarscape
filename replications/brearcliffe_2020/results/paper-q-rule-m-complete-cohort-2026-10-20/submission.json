@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\n  \"command_id\": \"cmd-z4naf\",\n  \"log_path\": \"~/.givemeanode/commands/cmd-z4naf.log\",\n  \"note\": \"running detached; poll get_command(node, command_id) for output and the exit code; the log also lives at log_path on the node (any later run_command can tail it). The process dies with the container, exactly like a tmux session: files survive, processes don't.\",\n  \"object\": \"command\"\n}\n",
+  "stderr": ""
+}

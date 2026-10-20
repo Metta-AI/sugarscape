@@ -1,0 +1,279 @@
+{
+  "pairing": "Q / Rule M (paper table)",
+  "runs": 50,
+  "observations": 1000050,
+  "visible_curve_records": 3647,
+  "unresolved_curve_records": 229,
+  "endpoint_range_overlaps": 14,
+  "endpoint_visible": 14,
+  "endpoint_unresolved": 0,
+  "endpoint_records": [
+    {
+      "metric": "mean [sugar] of group-A",
+      "mean": 186.2497,
+      "sample_sd": 8.42585181062983,
+      "pointwise_percentile_interval_95": [
+        183.91044999999997,
+        188.61580374999997
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        173.78008287493762,
+        203.50328709242828
+      ],
+      "cohort_range_over_x_interval": [
+        185.7817,
+        186.5454
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "mean [sugar] of group-B",
+      "mean": 392.65490000000005,
+      "sample_sd": 20.240664905237733,
+      "pointwise_percentile_interval_95": [
+        387.2315475,
+        398.3856349999999
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        382.69883737615504,
+        425.178630338289
+      ],
+      "cohort_range_over_x_interval": [
+        391.75575000000003,
+        393.70966390977446
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "mean [vision] of group-A",
+      "mean": 2.7370499999999995,
+      "sample_sd": 0.08793360493890275,
+      "pointwise_percentile_interval_95": [
+        2.71305,
+        2.7613
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        2.647629082314936,
+        2.7542287033381663
+      ],
+      "cohort_range_over_x_interval": [
+        2.7291,
+        2.7457
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "mean [vision] of group-B",
+      "mean": 3.15115,
+      "sample_sd": 0.08297898984141736,
+      "pointwise_percentile_interval_95": [
+        3.1282,
+        3.17430125
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        3.1004774099477896,
+        3.2253097435624904
+      ],
+      "cohort_range_over_x_interval": [
+        3.1500000000000004,
+        3.1629500000000004
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "mean [metabolism] of group-A",
+      "mean": 1.0834500000000002,
+      "sample_sd": 0.019397098983600466,
+      "pointwise_percentile_interval_95": [
+        1.0781,
+        1.0888
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        1.0540401226355516,
+        1.096478196143185
+      ],
+      "cohort_range_over_x_interval": [
+        1.0725736842105265,
+        1.0834500000000002
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "mean [metabolism] of group-B",
+      "mean": 1.3180499999999997,
+      "sample_sd": 0.02274688810293287,
+      "pointwise_percentile_interval_95": [
+        1.3116999999999999,
+        1.3242500000000001
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        1.3010252169108314,
+        1.3534074769451936
+      ],
+      "cohort_range_over_x_interval": [
+        1.3180499999999997,
+        1.329
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "combat-agent-a-die",
+      "mean": 11652.600000000002,
+      "sample_sd": 97.94917465873075,
+      "pointwise_percentile_interval_95": [
+        11624.9395,
+        11678.881
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        10992.485221306084,
+        12870.310991463355
+      ],
+      "cohort_range_over_x_interval": [
+        11609.719630996311,
+        11652.600000000002
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "combat-agent-b-die",
+      "mean": 13813.219999999998,
+      "sample_sd": 83.4315777344845,
+      "pointwise_percentile_interval_95": [
+        13789.94,
+        13835.78
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        12870.310991463355,
+        15068.922239342417
+      ],
+      "cohort_range_over_x_interval": [
+        13762.539483394832,
+        13813.219999999998
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "starve-agent-a-die",
+      "mean": 33173.72000000001,
+      "sample_sd": 458.64303134799883,
+      "pointwise_percentile_interval_95": [
+        33044.44,
+        33298.4205
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        30640.889586203426,
+        35875.21566689649
+      ],
+      "cohort_range_over_x_interval": [
+        33055.09092250922,
+        33173.72000000001
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "starve-agent-b-die",
+      "mean": 23093.199999999997,
+      "sample_sd": 260.04175488892923,
+      "pointwise_percentile_interval_95": [
+        23020.8195,
+        23163.281
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        20657.059153031834,
+        26170.270956732824
+      ],
+      "cohort_range_over_x_interval": [
+        23006.659188191887,
+        23093.199999999997
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "mean [age] of group-A",
+      "mean": 781.7865,
+      "sample_sd": 38.924460008968616,
+      "pointwise_percentile_interval_95": [
+        771.0981325000001,
+        792.56158
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        719.6856730011522,
+        876.7123872968687
+      ],
+      "cohort_range_over_x_interval": [
+        780.2269000000001,
+        783.2240999999999
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "mean [age] of group-B",
+      "mean": 513.1487000000001,
+      "sample_sd": 26.99217902713031,
+      "pointwise_percentile_interval_95": [
+        505.98114625,
+        520.7143325
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        484.9693428528196,
+        590.7837911587943
+      ],
+      "cohort_range_over_x_interval": [
+        512.17025,
+        514.5310499999999
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "max [age] of group-A",
+      "mean": 5162.819999999999,
+      "sample_sd": 663.7382287668316,
+      "pointwise_percentile_interval_95": [
+        4984.2585,
+        5352.124999999999
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        4996.088663188599,
+        6329.506686837206
+      ],
+      "cohort_range_over_x_interval": [
+        5162.58,
+        5219.819999999998
+      ],
+      "signed_range_separation": 0
+    },
+    {
+      "metric": "max [age] of group-B",
+      "mean": 5042.4,
+      "sample_sd": 1127.8963442024742,
+      "pointwise_percentile_interval_95": [
+        4745.58,
+        5366.4625
+      ],
+      "paper_status": "visible-raster-interval-not-statistical-confidence",
+      "paper_raster_interval": [
+        4617.251825187758,
+        5406.008352041014
+      ],
+      "cohort_range_over_x_interval": [
+        4984.19926199262,
+        5042.4
+      ],
+      "signed_range_separation": 0
+    }
+  ],
+  "scope": "Descriptive comparison with corrected horizontal calibration; no equivalence or whole-paper verdict."
+}

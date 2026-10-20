@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The complete paper-table Q / Rule M cohort](results/paper-q-rule-m-complete-cohort-2026-10-20) adds 50 fully audited runs and 1,000,050 observations. Coverage reaches 1,252 inputs and 25,041,252 observations; 348 paper-table inputs remain. Independent R checks pass. All 14 endpoint mean ranges overlap the readable raster bands, without establishing equivalence. All paired released-code trajectories differ.
+
 [The paper-table EC/SARSA cohort completes all fifty inputs](results/paper-ec-sarsa-complete-cohort-2026-10-20). Full trajectory audits, independent R checks, and fresh storage readback pass. Coverage reaches 1,202 inputs and 24,041,202 observations; 398 paper-table inputs remain. Eleven readable endpoint ranges overlap the paper; the remaining vision interval overlaps. Both parameter interpretations remain explicit.
 
 [All four homogeneous-method breed comparisons](results/homogeneous-breed-contrasts-2026-10-19) now have paired endpoint audits across 200 existing runs. All 28 pointwise intervals include zero; this neither establishes equivalence nor the claimed EC breed advantage. Independent R verifies 2,800 raw endpoints and 252 summaries. No simulation inputs or completed-study credit were added.
