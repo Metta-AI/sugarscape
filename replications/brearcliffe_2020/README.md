@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The complete paper-table SARSA / Rule M cohort](results/paper-sarsa-rulem-complete-cohort-2026-10-20) adds 50 audited runs and 1,000,050 observations. Coverage reaches 1,450 inputs and 29,001,450 observations; 150 paper-table inputs remain. Independent R and fresh storage checks pass. All fourteen endpoint mean ranges overlap readable paper targets; this does not establish equivalence.
+
 [The twelve-pair parameter comparison](results/twelve-pair-parameter-comparison-2026-10-20) retains both frozen interpretations against identical paper targets. Of 168 endpoints, 121 overlap under both settings, eight only under paper settings, two only under released settings, eighteen under neither, and nineteen remain unresolved. Independent R verifies every category; all earlier ten-pair results are preserved. These counts do not select historical parameters or add simulation coverage.
 
 [The complete paper-table Q / SARSA cohort](results/paper-q-sarsa-complete-cohort-2026-10-20) combines 48 new inputs with two retained pilots. Coverage reaches 1,400 inputs and 28,001,400 observations; 200 paper-table inputs remain. Full trajectory, independent R, and fresh storage checks pass. All twelve readable endpoint ranges overlap the paper; two endpoints remain unresolved. These descriptive overlaps do not establish equivalence.
