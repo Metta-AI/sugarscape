@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The paper-table SARSA / Q cohort](results/paper-sarsa-q-complete-cohort-2026-10-20) passes native, R, and fresh storage checks. Coverage reaches 1,550 inputs and 31,001,550 observations; only fifty paper-table SARSA/SARSA inputs remain. [Both paper-table Q-learning/SARSA contrasts](results/paper-q-sarsa-claims-2026-10-20) support the endpoint direction, as do both released-code orientations. Early reversals and the undefined magnitude of “slight” remain explicit; no whole-study credit is added.
+
 [The paper-table SARSA / EC cohort](results/paper-sarsa-ec-complete-cohort-2026-10-20) passes native, R, and fresh storage checks. Coverage reaches 1,500 inputs and 30,001,500 observations; one hundred inputs remain. [All paper-table EC claim contrasts](results/paper-ec-claims-2026-10-20) also pass independent verification: fourteen stated endpoint directions hold under both parameter interpretations. No whole-study credit is added.
 
 [Paper-table Rule M contrasts](results/paper-rule-m-claims-2026-10-20) complete all six matchups and eighteen wealth, vision, and metabolism comparisons. Independent R verifies all 1,800 raw endpoints and 234 statistics. Every endpoint direction and positive pointwise interval agrees across both parameter interpretations; early EC wealth advantages remain explicit. No new simulation coverage or whole-study credit is added.
@@ -174,15 +176,15 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-The latest full audit covers all 800 released-code inputs and 700/800 paper-table inputs.
-The remaining cohorts are SARSA/Q-learning and SARSA/SARSA, with fifty inputs each.
+The latest full audit covers all 800 released-code inputs and 750/800 paper-table inputs.
+The remaining cohort is paper-table SARSA/SARSA, with fifty inputs.
 Producer completion alone does not count: each cohort requires a full trajectory audit, independent R summaries, and fresh storage verification.
 The released-code ensemble and its bounded recovery have completed. Preserve failed attempts separately from successful inputs.
 
-After both remaining cohorts pass those checks:
+After the final cohort passes those checks:
 
 - Run the sixteen-pair parameter comparison and independent R verification using the corrected Figure 3–9 calibration.
-- Finish the paper-table Q-learning/SARSA and homogeneous-pair contrasts, then synthesize them with the completed Rule M and EC analyses.
+- Finish the paper-table homogeneous-pair contrasts, then synthesize them with the completed Q-learning/SARSA, Rule M, and EC analyses.
 - Review every discrepancy against native recorder qualification, parameter settings, breed mapping, and readable paper targets.
 - Publish a method-level verdict that distinguishes implementation fidelity, directional findings, and unresolved historical numerical agreement.
 

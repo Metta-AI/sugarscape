@@ -1,0 +1,24 @@
+{
+  "contrasts": 2,
+  "raw_endpoint_values_checked": 200,
+  "raw_endpoint_max_scaled_error": 0,
+  "summary_values_checked": 30,
+  "summary_max_scaled_error": 1.7764e-15,
+  "negative_tick_ranges": [
+    {
+      "pair_index": 11,
+      "metric": "sugar",
+      "negative_ticks": 20,
+      "first_negative_tick": 4,
+      "last_negative_tick": 28
+    },
+    {
+      "pair_index": 14,
+      "metric": "sugar",
+      "negative_ticks": 13,
+      "first_negative_tick": 14,
+      "last_negative_tick": 49
+    }
+  ],
+  "scope": "Independent R reopens all 100 raw trajectories to validate breed/metric mapping and endpoints, then recomputes paired bootstrap intervals and complete-curve sign counts. No simultaneous coverage or full-paper verdict."
+}
