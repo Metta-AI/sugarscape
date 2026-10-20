@@ -1,9 +1,9 @@
 {
-  "as_of": "2026-10-20T07:37:10.824554+00:00",
+  "as_of": "2026-10-20T08:12:17.883189+00:00",
   "minimum_completed_papers": 10,
-  "completed_studies": 9,
+  "completed_studies": 10,
   "wholly_positive_papers": 1,
-  "interpretation": "Eight completed studies under the user\u2019s method-based criterion: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural, Lima qualified author-code feasibility, Carrella qualified method, Thaler qualified simulation/benchmark, Richmond qualified author-code reproduction, and Oremland qualified Sugarscape method reconstruction. Numerical agreement is separate; historical identity and wholly-positive verdicts are not inferred.",
+  "interpretation": "Ten distinct research studies complete under the user\u2019s method-based criterion: McCulloch, Dogan (unpublished working paper), Izquierdo, Lima, Carrella, Thaler, Richmond, Oremland, Quera and Brearcliffe. Only Izquierdo is wholly positive under its declared structural scope. Qualified author-code methods, independent reconstructions, mixed numerical outcomes and omissions remain explicit. Numerical agreement, historical identity and completion of the twelve additional study PRs are not inferred.",
   "studies": [
     {
       "study": "mcculloch_2022",
@@ -315,15 +315,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "d89906918245e3d5aed067cbc75a305959f58730",
-      "status": "running",
+      "checked_commit": "b64684cbe24b2b17f5cb32819040db4581fe7e25",
+      "status": "completed-method-qualified-author-code",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "8009ecdb4a248dba01a29e6a4e02e1db1f75d1184663fef6b440a9f69d5c2fc8",
-      "json_evidence_files": 670,
-      "gzip_json_evidence_files": 37,
-      "checked_at": "2026-10-20T06:37:45.963550+00:00",
+      "readme_sha256": "70e38fc3f6c16e4846eba620a52471b05cf8cec49e27a1a38c16c1f7553a4b7d",
+      "json_evidence_files": 692,
+      "gzip_json_evidence_files": 38,
+      "checked_at": "2026-10-20T08:12:17.882983+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "1550 inputs /31001550 observations audited:800released and750paper-table; final50 paper SARSA/SARSA inputs and full synthesis remain. SARSA/Q cohort passes native,R and fresh storage audits. Both paper Q/SARSA orientations pass independent R:200raw endpoints exact,30statistics; endpoint wealth advantages1068.16565 and1063.05835, positive pointwise intervals,early reversals retained. Both released-code orientations agree directionally; no numerical threshold for slight. All RuleM and EC claim matchups independently verified under both settings. Final dependent handoff observes original producer and gates homogeneous contrasts plus16-pair comparison on final complete cohort. Admission cutoff may leave unstarted inputs; no duplicate recovery before original terminal/export evidence. No equivalence or whole-study verdict."
+      "remaining_scope": "Completed qualified native author-code method: all 1600 frozen runs / 32001600 observations, both parameter interpretations, 32 independent cohort checks, full claim synthesis and verified storage linkage. Mixed outcome: 166 endpoints overlap both settings, 4 released only, 8 paper only, 19 neither, 27 unresolved. Recorder randomness, prospective seeds, alpha/gamma conflict, defective paper panels, comparator lookup and decimal-parser corrections explicit. Historical numerical equivalence, activation causality and controlled runtime ratio are not established. See method-verdict-2026-10-20."
     },
     {
       "study": "need_for_greed_2024",
