@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-20T06:07:50.759593+00:00",
+  "checks": [
+    {
+      "snapshot": "resume-existing.json",
+      "snapshot_sha256": "96b378b82856bf33220b29464dac9b07309e90f91b1601be98a209631cdb1688",
+      "preserved_files": 6095,
+      "hash_size_and_modification_time_exact": true
+    },
+    {
+      "snapshot": "parallel-resume-existing.json",
+      "snapshot_sha256": "8c4118deca6c173c64c4d5eda9391474cfad397e236f9da8b9bf51f555f49cfc",
+      "preserved_files": 15535,
+      "hash_size_and_modification_time_exact": true
+    }
+  ],
+  "scope": "Cross-interruption preservation proof for earlier verified files. Fresh remote readback remains incomplete; this adds no simulated or replayed cases."
+}

@@ -227,7 +227,7 @@ Use `baseline` instead of `perturbed` for unperturbed cases. The auditor preserv
 
 [All 9,216 diagnostic cases](results/perturbed-movement-complete-2026-10-18) now pass independent replay: 256 seeds × six parameters × three finite-difference step sizes × two directions. The 36 qualification cases and 9,180 continuation cases are disjoint and exhaust this declared grid. Replay verifies **22,118,400 agent updates and 552,960,000 cell updates with zero state error**.
 
-The continuation exited zero in 866.5 seconds; its separate replay also exited zero. Compressed per-case audits, native manifests, passive parity records, executed Julia source, Python auditor and exact commands are retained. The 1.91 GB native trace upload exited zero. The remote checksum manifest matches local bytes; individual remote trace objects have not been independently read back.
+The continuation exited zero in 866.5 seconds; its separate replay also exited zero. Compressed per-case audits, native manifests, passive parity records, executed Julia source, Python auditor and exact commands are retained. The 1.91 GB native trace upload exited zero. The remote checksum manifest matches local bytes; complete individual-object readback is documented below.
 
 This validates the reconstructed diagnostic trajectories. It does not recover Figure 11’s historical experiment settings or the missing prior/loss/validation configuration and 5,000-epoch calibration. No whole-paper completion is claimed.
 
@@ -295,3 +295,12 @@ julia --startup-file=no replay_norms.jl NATIVE NATIVE/epochs.csv NEW_NORMS.csv
 python audit_training_native_norms.py NATIVE NEW_AUDIT.json NEW_NORMS.csv
 python seal_training.py NATIVE NEW_AUDIT.json NATIVE_EXIT.json 5000 NEW_ARCHIVES
 ```
+
+
+## Complete perturbed trace storage readback
+
+[Fresh remote readback](results/perturbed-storage-readback-2026-10-20) verifies all 36,724 objects, totaling 1,908,595,493 bytes, against the pinned manifest.
+The 36,720 trace files cover exactly the 9,180 continuation cases already checked by independent state replay.
+The final audit rehashes the complete downloaded set and checks exact case coverage.
+Earlier interrupted downloads remain preserved; transition audits confirm previously verified files retained their hashes, sizes, and modification times.
+This closes the remote evidence verification gap without rerunning simulations or adding study completion credit.
