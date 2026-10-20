@@ -515,3 +515,7 @@ The publisher PDF request returned HTML. Published figure equivalence, fitting c
 Of184 vertices away from axes, legend and clipping,164 lie within two pixels of dark image content; maximum distance is5.55 pixels.
 Independent scalar arithmetic reproduces all184 distances. Visual inspection finds consistent labels and curve shapes.
 This one-way proximity check cannot identify overlapping/dotted curves or prove numerical identity. The delay discrepancy remains unresolved.
+
+## Predecessor birth-cost sweep recovered
+
+[Figure 14(a) of the earlier paper](results/predecessor-birth-cost-sweep-2026-10-20) exposes 96 run-1 birth costs, 1–96, at infertility 10 and puberty 1. Its stated window is 130,000–150,000 cycles. The plotted cost-40 mean age is about 2,351.66, supporting the unresolved age discrepancy against our later-window mean 1,420.67. Separate age/Gini calibration and repeated byte-exact extraction pass. This does not recover Figure 3’s parameter grid or establish a negative replication.
