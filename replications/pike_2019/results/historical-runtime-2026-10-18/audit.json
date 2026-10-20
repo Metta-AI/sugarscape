@@ -1,0 +1,44 @@
+{
+  "scope": "Two seed-zero runtime sensitivity controls; reconstructed dependencies, not authenticated author runtime. No whole-paper verdict.",
+  "runs": [
+    {
+      "variant": "common-one",
+      "health_records": 86143,
+      "nonfinite_health_records": 58278,
+      "first_nonfinite_step": 76,
+      "final_individual_agents": 83,
+      "native_reporter": 2519,
+      "finite_positive_prices": 6656,
+      "sha256": {
+        "complete.json": "9c7adce6abbc8f4677264dbfc5aa89d410d0d7eefa56ca1a739c3769127b6aac",
+        "exit.json": "124fd50cb6d223cdd18fedc166d00af7254199b6e6dedf9be82f71db87af6d01",
+        "health.csv": "dc604a1968ad2fbb3bd3dc928cd608ffea263bbf54fbad9172e25a8546385526",
+        "initial-agents.json": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413",
+        "manifest.json": "33e6ed7d6402d1134091696b71792876bf97bcc2b60a7feaaecdc4e1f5563787",
+        "observations.json": "c04483b0b946725c93cf3699f8ec600baf4dfa18dd4961280059e81d97a5e122",
+        "population.csv": "ac4b1a5f3c4447e245d4753e1d93dedff7c7005e08aa2178b271a5e7ac8f0208",
+        "prices.json": "72c08209fbc66984c1db2f721a2b587d94350994e93a1b9932b2d8771ea6435b"
+      }
+    },
+    {
+      "variant": "common-multi",
+      "health_records": 89027,
+      "nonfinite_health_records": 61041,
+      "first_nonfinite_step": 76,
+      "final_individual_agents": 86,
+      "native_reporter": 2516,
+      "finite_positive_prices": 6364,
+      "sha256": {
+        "complete.json": "ee45979ac6182bcb3b2754d357193dac4d6f5c0b843977adfbb2a115e09d420f",
+        "exit.json": "124fd50cb6d223cdd18fedc166d00af7254199b6e6dedf9be82f71db87af6d01",
+        "health.csv": "14be7ac0ac006ba62b8f2adfa2048b663658599b39c81c3548cfacd3af27fc28",
+        "initial-agents.json": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413",
+        "manifest.json": "010a79baba80e703dbb1e3f5dabeb045228ad06052b8821428492bd189ada377",
+        "observations.json": "165ae0ba0591e3bbd0ea0888eca6d0e9a96d4c1e5ed694bc27fa82986497fb9e",
+        "population.csv": "429db18b347fbcbeeb13135d1397461488df64744043bfc66cff7762dee6cc40",
+        "prices.json": "2498f555b716f09b9d3d788c49c28445fa1536fd647e03c3c02fe07e44d97e29"
+      }
+    }
+  ],
+  "auditor_sha256": "086d5cf59675c95b97d72eb9233fcb3dda5b91710306b6775956c424d35c0eca"
+}

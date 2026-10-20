@@ -1,0 +1,42 @@
+{
+  "phases": [
+    {
+      "phase": 1,
+      "original_run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-phase1-001",
+      "completed": 194,
+      "missing_ordinal_interval": [
+        194,
+        300
+      ],
+      "original_ledger_sha256": "0270d455fbb3eaf7a1c6803ff55a50da4f269e5e4de6eda8999efe418222701b",
+      "manifest_sha256": "1df0e4ad00e2de8b7d3e78e2184a7259af9222be6a94628f9250092d70420884",
+      "remaining": 106
+    },
+    {
+      "phase": 2,
+      "original_run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-phase2-001",
+      "completed": 61,
+      "missing_ordinal_interval": [
+        61,
+        600
+      ],
+      "original_ledger_sha256": "6085c2eb63dbc34ac3708492feb88f557b38e3bcf9e93e3c3eb84029346cad57",
+      "manifest_sha256": "330902d98f8a117a0564ebbca8fac3ac7593d0eb1b77471c2f5be85c39c3232e",
+      "remaining": 539
+    },
+    {
+      "phase": 3,
+      "original_run": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-phase3-movement-001",
+      "completed": 29,
+      "missing_ordinal_interval": [
+        29,
+        1200
+      ],
+      "original_ledger_sha256": "01f5b94123a2aee11962366d3017c394ce1aea3d354bdcbf64ce83285fbf0dd7",
+      "manifest_sha256": "6f908a7f05628dc12267f06aa2e917e67df6b52ea3fec95b341d39192692b6de",
+      "remaining": 1171
+    }
+  ],
+  "remaining": 1816,
+  "cloud_production_launched": false
+}

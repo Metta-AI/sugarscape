@@ -1,0 +1,20 @@
+{
+  "variant": "standard",
+  "seed": 0,
+  "steps": 1000,
+  "exact_files": 4,
+  "sha256": {
+    "initial-agents.json": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413",
+    "prices.json": "20fb2c3a58bedf9eb9d2b3b5cb7e65eaee564719f631f0d8248390e8ecb46103",
+    "population.csv": "c51cdf4df1e9e1e16fabc9916a2bd003f567cec88b50fcb3ffe6a5ce7581f194",
+    "health.csv": "489d73964442e8a4ec21a3e9aadc91105cbfcd5d253b4b698127c42f4cac02aa"
+  },
+  "timing": {
+    "steps": 1000,
+    "full_step_wall_seconds": 11.828572207989055,
+    "full_step_cpu_seconds": 11.809239999999999,
+    "native_timed_sections_seconds": 11.805259704589844,
+    "scope": "Native model timing excludes data collection and, in PhaseI groups, reassessment. Full loop timing includes every native step operation; initialization, exports and replication observers excluded."
+  },
+  "scope": "Local Mac parity only; competing workloads invalidate performance interpretation. Cloud9controlpairs gate the900runserialbenchmark."
+}

@@ -1,0 +1,32 @@
+{
+  "python": "3.6.8",
+  "image": "python@sha256:f20a9bfddd87c238c3d2316b4179222f219090cbb25d5b6975070d4dd4b75004",
+  "platform": "linux/amd64 emulated locally",
+  "cpu_limit": 1,
+  "memory_bytes": 3221225472,
+  "variants": [
+    "common-one",
+    "common-multi"
+  ],
+  "numpy_seed": 0,
+  "policy_random_seed": 0,
+  "mesa_seed": 42,
+  "steps_per_run": 1000,
+  "source_runner_sha256": "3b7700b0f079578e103de51f2ee5fca7811be577ca3e7ca5d4229d7a61117331",
+  "adapter_sha256": "8ca30ae3af2d366e8e412be4d5a0a2cb8d23670a7c628ef7cbb7d4d8879aa742",
+  "adapter_changes": [
+    "Two subprocess text=True keyword arguments replaced by universal_newlines=True for Python3.6. Simulation and observation body unchanged.",
+    "Replace container Git revision/status reads with host-verified pinned revision, clean tracked status, and in-container SHA256 verification of every materialized tracked file; source mounts read-only. Simulation and observation body byte-identical to attempt001."
+  ],
+  "dependencies": "requirements.txt; exact reconstruction choices, not authenticated historical environment",
+  "excluded_optional_dependencies": "Jupyter and cookiecutter are not used by this headless execution path; imports must succeed without stubs.",
+  "bounds": {
+    "dependency_seconds": 600,
+    "per_simulation_seconds": 600,
+    "workflow_seconds": 1900
+  },
+  "scope": "Runtime-sensitivity diagnostic only. Check whether original shared-resource overflow persists with a Python3.6-era numerical stack. No performance or exact historical-runtime claim.",
+  "parent_attempt": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-historical-runtime-001",
+  "dependency_image": "sha256:838e9b02eef9fad2125bc479db60dbd9af89aab80f8efdb8caf4ebe8afb24aa4",
+  "source_proof_sha256": "c46f9a49b9f3975723342c6d4eb2db9aa49aa674ef674e444fd8ebe50e05b6ec"
+}

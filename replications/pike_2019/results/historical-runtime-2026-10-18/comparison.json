@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "common-one",
+    "source_hashes_equal": true,
+    "initial_agent_records_equal": true,
+    "modern_runtime": {
+      "python": "3.11.14",
+      "mesa": "0.8.5",
+      "numpy": "1.26.4",
+      "networkx": "3.6.1"
+    },
+    "modern_health_records": 85198,
+    "modern_nonfinite_records": 51085,
+    "modern_first_nonfinite_step": 78,
+    "modern_manifest_sha256": "e4b9a8b70f4bb84f143d266c97399c1cf92278a089d7f9a22d6099d38bd2b277",
+    "modern_initial_agents_sha256": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413",
+    "modern_health_sha256": "90b587a96d03637e7f37b5bb60f7a358107e4a0a7d62b68a9ea9f69d0499347f",
+    "scope": "Dependency stack and architecture differ together; not a single-variable or performance comparison."
+  },
+  {
+    "variant": "common-multi",
+    "source_hashes_equal": true,
+    "initial_agent_records_equal": true,
+    "modern_runtime": {
+      "python": "3.11.14",
+      "mesa": "0.8.5",
+      "numpy": "1.26.4",
+      "networkx": "3.6.1"
+    },
+    "modern_health_records": 89027,
+    "modern_nonfinite_records": 61041,
+    "modern_first_nonfinite_step": 76,
+    "modern_manifest_sha256": "a265c37594d17c01818de0ffdaad15fcd6299e75c9a184c8ec974bc34131d1c9",
+    "modern_initial_agents_sha256": "59f7c10a306651690a8111ce1f24e78b5b3c79ea60ea73f4c05d405c6688c413",
+    "modern_health_sha256": "14be7ac0ac006ba62b8f2adfa2048b663658599b39c81c3548cfacd3af27fc28",
+    "scope": "Dependency stack and architecture differ together; not a single-variable or performance comparison."
+  }
+]

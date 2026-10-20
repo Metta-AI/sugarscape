@@ -1,0 +1,7 @@
+{
+  "analysis_script_sha256": "aed741b600353d0bdf6530fdae639d5129833b0d60128c149674ac57bf5408d6",
+  "evidence": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-price-notebook-002",
+  "preliminary_evidence": "pike-price-notebook-001 retained; no-trade count initially missed absent keys in sparse native price dictionaries; final run accounts for all1000steps and independently reconciles all counts. Other measurements unchanged.",
+  "verification_script_sha256": "85799212eeed27b2edb3987304fcfef5e68e4e4a7400a764a0d3323b3659aab9",
+  "validation": "300 native1000-step completed runs replayed through author notebook functions; independent audited300000step CSV reconstruction; Ruff check passed. git -c core.whitespace=cr-at-eol diff HEAD^ --check passed; default whitespace check flags the standard CSV CRLF line endings."
+}

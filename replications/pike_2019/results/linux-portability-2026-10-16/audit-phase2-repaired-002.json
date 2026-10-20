@@ -1,0 +1,51 @@
+{
+  "mode": "prefix",
+  "validated_runs": 1,
+  "ordinal_interval": [
+    61,
+    62
+  ],
+  "recorded_root": "/root/sugarscape/pike-portability-001/phase2",
+  "complete_ensemble": false,
+  "health_records": 66597,
+  "price_step_records": 1000,
+  "runs": [
+    {
+      "approach": "network",
+      "threshold": 1,
+      "numpy_seed": 10,
+      "final_individual_agents": 62,
+      "extinct": false,
+      "price_steps": 755,
+      "undefined_dispersion_steps": 585,
+      "windows": {
+        "early": {
+          "trades": 2425,
+          "geometric_mean_price": {
+            "defined_steps": 79,
+            "mean_over_defined_steps": 1.0066771017487008
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 61,
+            "mean_over_defined_steps": 0.24696063922987596
+          }
+        },
+        "late": {
+          "trades": 69,
+          "geometric_mean_price": {
+            "defined_steps": 49,
+            "mean_over_defined_steps": 0.9888105598760082
+          },
+          "sample_sd_log_price": {
+            "defined_steps": 13,
+            "mean_over_defined_steps": 0.006373482739932064
+          }
+        }
+      }
+    }
+  ],
+  "manifest_sha256": "330902d98f8a117a0564ebbca8fac3ac7593d0eb1b77471c2f5be85c39c3232e",
+  "ledger_sha256": "a0d9a99f3e4261f7ce015f23f8b41796b4a367f6f229bcee0593a199ef7e749d",
+  "analyzer_sha256": "ea672e096c8f4e3932fd058dfbb2a94660f7200a94ed02bd9784e34028ce0165",
+  "scope": "Source and raw-file integrity, identities, health reconciliation and native-notebook price definitions. Undefined prices/dispersion remain missing. No aggregate equivalence or paper verdict."
+}

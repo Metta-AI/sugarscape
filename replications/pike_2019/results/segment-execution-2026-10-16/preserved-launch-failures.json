@@ -1,0 +1,44 @@
+[
+  {
+    "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase1-001",
+    "errors": {
+      "network-64.stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase1-001/run.py\", line 29, in <module>\n    assert mesa.__version__ == \"0.8.5\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    "completed_records": 0
+  },
+  {
+    "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase1-002",
+    "errors": {
+      "network-64.stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase1-002/run.py\", line 42, in <module>\n    from NetScape import NetScape\n  File \"/Users/relh/Code/workspace/sugarscape-pike-reference/Initial/NetScape_Elegant/NetScape.py\", line 27, in <module>\n    import NetAgent as N\n  File \"/Users/relh/Code/workspace/sugarscape-pike-reference/Initial/NetScape_Elegant/NetAgent.py\", line 20, in <module>\n    from scipy.stats.mstats import gmean\nModuleNotFoundError: No module named 'scipy'\n"
+    },
+    "completed_records": 0
+  },
+  {
+    "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase2-001",
+    "errors": {
+      "network-1-10.stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase2-001/run_groups.py\", line 94, in <module>\n    runpy.run_path(str(runner), run_name=\"__main__\")\n  File \"<frozen runpy>\", line 291, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase2-001/run.py\", line 38, in <module>\n    assert mesa.__version__ == \"0.8.5\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    "completed_records": 0
+  },
+  {
+    "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase2-002",
+    "errors": {
+      "network-1-10.stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase2-002/run_groups.py\", line 24, in <module>\n    import organization\n  File \"/Users/relh/Code/workspace/sugarscape-pike-reference/Policy-Network/organization.py\", line 9, in <module>\n    from scipy.stats.mstats import gmean\nModuleNotFoundError: No module named 'scipy'\n"
+    },
+    "completed_records": 0
+  },
+  {
+    "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase3-001",
+    "errors": {
+      "explicit-5-2-corrected-highest.stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase3-001/run_high_focus.py\", line 52, in <module>\n    runpy.run_path(str(runner), run_name=\"__main__\")\n  File \"<frozen runpy>\", line 291, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase3-001/run_groups.py\", line 94, in <module>\n    runpy.run_path(str(runner), run_name=\"__main__\")\n  File \"<frozen runpy>\", line 291, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase3-001/run.py\", line 38, in <module>\n    assert mesa.__version__ == \"0.8.5\"\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    "completed_records": 0
+  },
+  {
+    "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase3-002",
+    "errors": {
+      "explicit-5-2-corrected-highest.stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase3-002/run_high_focus.py\", line 23, in <module>\n    import correct_high_focus\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-segment-phase3-002/correct_high_focus.py\", line 6, in <module>\n    import organization\n  File \"/Users/relh/Code/workspace/sugarscape-pike-reference/Policy-Explicit/organization.py\", line 9, in <module>\n    from scipy.stats.mstats import gmean\nModuleNotFoundError: No module named 'scipy'\n"
+    },
+    "completed_records": 0
+  }
+]

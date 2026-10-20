@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/compare_common_thresholds.py", line 91, in <module>
+    assert [(r["numpy_seed"], r["variant"]) for r in runs[threshold]] == expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
