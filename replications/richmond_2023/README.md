@@ -1,5 +1,7 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+[Initialization controls are prepared](results/initializer-controls-prepared-2026-10-19): a released baseline plus all eight combinations of metabolism maximum, capacity cap, and distance geometry. Repeated preparation and patch round trips pass. Full initial-cell capture is included; native execution and variant-aware audits remain pending.
+
 [The landscape interpretation audit](results/landscape-interpretations-2026-10-19) quantifies capacity and boundary ambiguities on two retained host worlds. Minimum peak spacing of 20 does not prevent summed sugar exceeding four. Independent R reproduces all 786,432 cell values. These initialization diagnostics do not establish native simulation fidelity or add completed-study credit.
 
 [Counter-carryover controls passed all four native audits](results/counter-reset-native-complete-2026-10-19/README.md), covering 2,873,995 post-step records. Per-step resets eliminate unresolved agents in all 100 observed steps while preserving the nine-round cap. Both baseline trajectories repeat exactly; broader method qualifications remain.
