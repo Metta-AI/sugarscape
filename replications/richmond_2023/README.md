@@ -1,5 +1,7 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+[The native initializer controls are queued](results/initializer-native-queued-2026-10-20), with a $10 reservation and bounded startup/execution/export. No new simulation has started. Both historical baseline trajectories must match before interpreting the eight initializer combinations.
+
 [Initialization controls are prepared](results/initializer-controls-prepared-2026-10-19): a released baseline plus all eight combinations of metabolism maximum, capacity cap, and distance geometry. Repeated preparation and patch round trips pass. Full initial-cell capture is included; native execution and variant-aware audits remain pending.
 
 [The landscape interpretation audit](results/landscape-interpretations-2026-10-19) quantifies capacity and boundary ambiguities on two retained host worlds. Minimum peak spacing of 20 does not prevent summed sugar exceeding four. Independent R reproduces all 786,432 cell values. These initialization diagnostics do not establish native simulation fidelity or add completed-study credit.
