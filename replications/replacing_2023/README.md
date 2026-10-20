@@ -317,3 +317,12 @@ Seeds, model source, 10,000-step horizon, and fixed analysis windows remain unch
 The timed-out input must also reproduce its entire saved trajectory hash.
 Each worker saves its validated receipt before collector aggregation, preserving successful work if the collector fails.
 The final analysis requires all 60 inputs; this partial recovery does not complete the study.
+
+
+[The timed-out trade input now completes successfully](results/trade-timeout-recovered-2026-10-20/recovered-attempt-audit.json).
+Seed 19522 exits zero after 1,011.25 seconds under the recovery execution bounds.
+Its entire 10,001-record trajectory is byte-identical to the preserved failed attempt, and all 501 original reporting records match.
+Source hashes and effective simulation settings are unchanged; the audit also checks every numeric record.
+The recovery changes worker count and timeout only. These observations do not isolate the timeout's cause.
+The original failed attempt retains no completion credit; the successful rerun supplies this input's receipt.
+The complete 60-input audit and scientific interpretation remain pending.
