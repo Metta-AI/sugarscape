@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T06:58:17.437702+00:00",
+  "as_of": "2026-10-20T07:22:43.640037+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 8,
   "wholly_positive_papers": 1,
@@ -162,10 +162,10 @@
     {
       "study": "quera_2025",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
-      "checked_commit": "40ff299957255a94e92fd009170268330809e77d",
+      "checked_commit": "373cca2a241092b4f5224033f851940015617a89",
       "status": "partial",
       "readme": "replications/quera_2025/README.md",
-      "readme_sha256": "2929fb891a0c8e204a69d06b6d65c21fa319d22f4cfd35e91f5ecb0ad5f63bc1",
+      "readme_sha256": "9afbee7452482d4025c329f2228338b6dac94a426f26dac70791194115f70e16",
       "remaining_scope": "Full pathwise arm completed5000epochs. Exact native Float32 norms and95570000optimizer components independently replayed; original epoch4 cross-precision auditor failure preserved. Maximum optimizer error2.9903e-8, original update tolerances unchanged. All15006native files freshly read back from11 remote archives. VarGrad resumed unchanged and first3epochs match qualification byte-for-byte; full VarGrad,4000predictive trajectories, R checks, figures and final method assessment remain pending. Explicit prior, parameterization, optimizer and validation reconstructions remain documented. No completed-study or negative-replication credit.",
       "validation": {
         "states": 150,
@@ -173,9 +173,9 @@
         "cell_observations": 93750,
         "portable_trajectory_files_byte_identical": 9
       },
-      "json_evidence_files": 125,
+      "json_evidence_files": 129,
       "gzip_json_evidence_files": 3,
-      "checked_at": "2026-10-20T06:58:17.437702+00:00",
+      "checked_at": "2026-10-20T07:22:43.640037+00:00",
       "gradient_baseline_validation": {
         "seeds": 256,
         "agent_updates": 614400,
@@ -194,6 +194,14 @@
         "validation_draws": 25000,
         "remote_native_files_verified": 15006,
         "selected_epoch": 413
+      },
+      "perturbed_remote_readback": {
+        "objects": 36724,
+        "trace_files": 36720,
+        "previously_replayed_cases": 9180,
+        "total_bytes": 1908595493,
+        "all_remote_objects_match_replayed_manifest": true,
+        "new_simulations": 0
       }
     },
     {
