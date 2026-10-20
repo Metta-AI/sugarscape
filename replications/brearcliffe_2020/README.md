@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The complete paper-table Q / Q cohort](results/paper-q-q-complete-cohort-2026-10-20) adds 50 audited runs and 1,000,050 observations. Coverage reaches 1,352 inputs and 27,041,352 observations; 248 paper-table inputs remain. Independent R and fresh storage checks pass. Seven readable endpoint ranges overlap the paper; group A maximum age does not, and six endpoints remain unresolved.
+
 [The first ten paired cohorts](results/ten-pair-parameter-comparison-2026-10-20) now have a common-target comparison across both parameter interpretations. Of 140 endpoints, 102 overlap under both settings, eight only under paper settings, one only under released settings, 18 under neither, and 11 remain unresolved. Independent R verifies every category. These descriptive results do not identify historical settings or add simulation coverage.
 
 [The complete paper-table Q / EC cohort](results/paper-q-ec-complete-cohort-2026-10-20) adds 50 audited runs and 1,000,050 observations. Coverage reaches 1,302 inputs and 26,041,302 observations; 298 paper-table inputs remain. Independent R and storage checks pass. Thirteen endpoint mean ranges overlap the paper; the remaining vision bootstrap interval overlaps. All 50 paired trajectories differ from released-code outputs.
