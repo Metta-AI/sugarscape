@@ -1,5 +1,7 @@
 # Oremland and Laubenbacher (2014)
 
+[The frozen timing benchmark completes](results/cloud-timing-benchmark-2026-10-20): 18,639 native inputs pass fresh independent audit and storage verification. Median simulation batches range from 1.7288 to 2.7325 seconds. Hardware and timing-scope differences prevent historical timing equivalence claims. Transfer and final synthesis remain pending.
+
 [Cloud timing qualification passes](results/cloud-timing-qualification-2026-10-20): all 48 inputs preserve every non-timing output across hosts. The local passive watcher was stopped before admission. One bounded cloud benchmark now runs the frozen 18,639-input sequence on a pinned CPU. Hardware differences remain explicit; no timing result or study completion is claimed.
 
 [All eighteen frozen searches complete](results/searches-complete-2026-10-20): 432,000 native evaluations and exact fresh replay of every genetic decision. The 144 final policies now enter 28,800 held-out full-model evaluations. All 2,430 archived members pass fresh storage readback. Transfer, timing, and final synthesis remain pending; no global-optimality or completed-study claim is made.

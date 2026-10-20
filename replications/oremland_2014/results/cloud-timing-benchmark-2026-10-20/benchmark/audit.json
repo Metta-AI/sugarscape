@@ -1,0 +1,442 @@
+{
+  "native_runs": 18639,
+  "measured_runs": 18039,
+  "warmup_runs": 600,
+  "widths": {
+    "20": {
+      "published_simulations": 427,
+      "published_batch_seconds": 8.52,
+      "measured_simulations": 1281,
+      "warmup_simulations_excluded_from_summaries": 100,
+      "blocks": [
+        {
+          "repeat": 0,
+          "simulations": 427,
+          "setup_seconds": 1.489048911,
+          "simulation_seconds": 3.05040867,
+          "process_cpu_seconds": 4.69,
+          "elapsed_seconds": 7.14706139,
+          "setup_plus_simulation_seconds": 4.539457581
+        },
+        {
+          "repeat": 1,
+          "simulations": 427,
+          "setup_seconds": 0.94305498,
+          "simulation_seconds": 1.92679977,
+          "process_cpu_seconds": 2.58,
+          "elapsed_seconds": 4.175759112,
+          "setup_plus_simulation_seconds": 2.86985475
+        },
+        {
+          "repeat": 2,
+          "simulations": 427,
+          "setup_seconds": 0.727957989,
+          "simulation_seconds": 1.702001979,
+          "process_cpu_seconds": 2.32,
+          "elapsed_seconds": 3.3783346,
+          "setup_plus_simulation_seconds": 2.429959968
+        }
+      ],
+      "median_batch_seconds": {
+        "setup_seconds": 0.94305498,
+        "simulation_seconds": 1.92679977,
+        "process_cpu_seconds": 2.58,
+        "elapsed_seconds": 4.175759112,
+        "setup_plus_simulation_seconds": 2.86985475
+      },
+      "batch_min_max_seconds": {
+        "setup_seconds": [
+          0.727957989,
+          1.489048911
+        ],
+        "simulation_seconds": [
+          1.702001979,
+          3.05040867
+        ],
+        "process_cpu_seconds": [
+          2.32,
+          4.69
+        ],
+        "elapsed_seconds": [
+          3.3783346,
+          7.14706139
+        ],
+        "setup_plus_simulation_seconds": [
+          2.429959968,
+          4.539457581
+        ]
+      },
+      "estimated_simulations_in_full50_budget": {
+        "simulation_seconds": 404.9407773590299,
+        "setup_plus_simulation_seconds": 349.11803819095724,
+        "process_cpu_seconds": 388.9341085271318
+      }
+    },
+    "30": {
+      "published_simulations": 173,
+      "published_batch_seconds": 8.49,
+      "measured_simulations": 519,
+      "warmup_simulations_excluded_from_summaries": 100,
+      "blocks": [
+        {
+          "repeat": 0,
+          "simulations": 173,
+          "setup_seconds": 0.943941367,
+          "simulation_seconds": 2.24766731,
+          "process_cpu_seconds": 3.27,
+          "elapsed_seconds": 4.194051661,
+          "setup_plus_simulation_seconds": 3.191608677
+        },
+        {
+          "repeat": 1,
+          "simulations": 173,
+          "setup_seconds": 0.643203663,
+          "simulation_seconds": 1.871813462,
+          "process_cpu_seconds": 2.43,
+          "elapsed_seconds": 3.184826982,
+          "setup_plus_simulation_seconds": 2.515017125
+        },
+        {
+          "repeat": 2,
+          "simulations": 173,
+          "setup_seconds": 0.559420712,
+          "simulation_seconds": 1.665959509,
+          "process_cpu_seconds": 2.18,
+          "elapsed_seconds": 2.712887429,
+          "setup_plus_simulation_seconds": 2.225380221
+        }
+      ],
+      "median_batch_seconds": {
+        "setup_seconds": 0.643203663,
+        "simulation_seconds": 1.871813462,
+        "process_cpu_seconds": 2.43,
+        "elapsed_seconds": 3.184826982,
+        "setup_plus_simulation_seconds": 2.515017125
+      },
+      "batch_min_max_seconds": {
+        "setup_seconds": [
+          0.559420712,
+          0.943941367
+        ],
+        "simulation_seconds": [
+          1.665959509,
+          2.24766731
+        ],
+        "process_cpu_seconds": [
+          2.18,
+          3.27
+        ],
+        "elapsed_seconds": [
+          2.712887429,
+          4.194051661
+        ],
+        "setup_plus_simulation_seconds": [
+          2.225380221,
+          3.191608677
+        ]
+      },
+      "estimated_simulations_in_full50_budget": {
+        "simulation_seconds": 168.88215409201925,
+        "setup_plus_simulation_seconds": 161.40221358810828,
+        "process_cpu_seconds": 167.30452674897117
+      }
+    },
+    "10": {
+      "published_simulations": 1375,
+      "published_batch_seconds": 8.53,
+      "measured_simulations": 4125,
+      "warmup_simulations_excluded_from_summaries": 100,
+      "blocks": [
+        {
+          "repeat": 0,
+          "simulations": 1375,
+          "setup_seconds": 2.235042784,
+          "simulation_seconds": 2.788538696,
+          "process_cpu_seconds": 4.92,
+          "elapsed_seconds": 10.573698008,
+          "setup_plus_simulation_seconds": 5.02358148
+        },
+        {
+          "repeat": 1,
+          "simulations": 1375,
+          "setup_seconds": 1.207011939,
+          "simulation_seconds": 1.908766442,
+          "process_cpu_seconds": 2.97,
+          "elapsed_seconds": 5.681242797,
+          "setup_plus_simulation_seconds": 3.115778381
+        },
+        {
+          "repeat": 2,
+          "simulations": 1375,
+          "setup_seconds": 1.010370473,
+          "simulation_seconds": 1.807312004,
+          "process_cpu_seconds": 2.84,
+          "elapsed_seconds": 4.9671224370000004,
+          "setup_plus_simulation_seconds": 2.817682477
+        }
+      ],
+      "median_batch_seconds": {
+        "setup_seconds": 1.207011939,
+        "simulation_seconds": 1.908766442,
+        "process_cpu_seconds": 2.97,
+        "elapsed_seconds": 5.681242797,
+        "setup_plus_simulation_seconds": 3.115778381
+      },
+      "batch_min_max_seconds": {
+        "setup_seconds": [
+          1.010370473,
+          2.235042784
+        ],
+        "simulation_seconds": [
+          1.807312004,
+          2.788538696
+        ],
+        "process_cpu_seconds": [
+          2.84,
+          4.92
+        ],
+        "elapsed_seconds": [
+          4.9671224370000004,
+          10.573698008
+        ],
+        "setup_plus_simulation_seconds": [
+          2.817682477,
+          5.02358148
+        ]
+      },
+      "estimated_simulations_in_full50_budget": {
+        "simulation_seconds": 1316.2855997418044,
+        "setup_plus_simulation_seconds": 1035.47702824407,
+        "process_cpu_seconds": 1087.962962962963
+      }
+    },
+    "5": {
+      "published_simulations": 3900,
+      "published_batch_seconds": 8.48,
+      "measured_simulations": 11700,
+      "warmup_simulations_excluded_from_summaries": 100,
+      "blocks": [
+        {
+          "repeat": 0,
+          "simulations": 3900,
+          "setup_seconds": 3.301191027,
+          "simulation_seconds": 3.711770484,
+          "process_cpu_seconds": 7.16,
+          "elapsed_seconds": 15.959032616,
+          "setup_plus_simulation_seconds": 7.012961511
+        },
+        {
+          "repeat": 1,
+          "simulations": 3900,
+          "setup_seconds": 2.180047497,
+          "simulation_seconds": 2.685047237,
+          "process_cpu_seconds": 4.44,
+          "elapsed_seconds": 10.665690716,
+          "setup_plus_simulation_seconds": 4.865094734
+        },
+        {
+          "repeat": 2,
+          "simulations": 3900,
+          "setup_seconds": 1.950463533,
+          "simulation_seconds": 2.73248769,
+          "process_cpu_seconds": 4.53,
+          "elapsed_seconds": 10.450251538,
+          "setup_plus_simulation_seconds": 4.682951223
+        }
+      ],
+      "median_batch_seconds": {
+        "setup_seconds": 2.180047497,
+        "simulation_seconds": 2.73248769,
+        "process_cpu_seconds": 4.53,
+        "elapsed_seconds": 10.665690716,
+        "setup_plus_simulation_seconds": 4.865094734
+      },
+      "batch_min_max_seconds": {
+        "setup_seconds": [
+          1.950463533,
+          3.301191027
+        ],
+        "simulation_seconds": [
+          2.685047237,
+          3.711770484
+        ],
+        "process_cpu_seconds": [
+          4.44,
+          7.16
+        ],
+        "elapsed_seconds": [
+          10.450251538,
+          15.959032616
+        ],
+        "setup_plus_simulation_seconds": [
+          4.682951223,
+          7.012961511
+        ]
+      },
+      "estimated_simulations_in_full50_budget": {
+        "simulation_seconds": 2607.9941682372228,
+        "setup_plus_simulation_seconds": 1880.9516657810675,
+        "process_cpu_seconds": 2023.1788079470198
+      }
+    },
+    "50": {
+      "published_simulations": 50,
+      "published_batch_seconds": 8.51,
+      "measured_simulations": 150,
+      "warmup_simulations_excluded_from_summaries": 100,
+      "blocks": [
+        {
+          "repeat": 0,
+          "simulations": 50,
+          "setup_seconds": 0.512390024,
+          "simulation_seconds": 1.9284109,
+          "process_cpu_seconds": 2.46,
+          "elapsed_seconds": 2.763525348,
+          "setup_plus_simulation_seconds": 2.440800924
+        },
+        {
+          "repeat": 1,
+          "simulations": 50,
+          "setup_seconds": 0.519152842,
+          "simulation_seconds": 1.827259477,
+          "process_cpu_seconds": 2.35,
+          "elapsed_seconds": 2.663843625,
+          "setup_plus_simulation_seconds": 2.346412319
+        },
+        {
+          "repeat": 2,
+          "simulations": 50,
+          "setup_seconds": 0.47486911,
+          "simulation_seconds": 1.73185076,
+          "process_cpu_seconds": 2.19,
+          "elapsed_seconds": 2.437571583,
+          "setup_plus_simulation_seconds": 2.20671987
+        }
+      ],
+      "median_batch_seconds": {
+        "setup_seconds": 0.512390024,
+        "simulation_seconds": 1.827259477,
+        "process_cpu_seconds": 2.35,
+        "elapsed_seconds": 2.663843625,
+        "setup_plus_simulation_seconds": 2.346412319
+      },
+      "batch_min_max_seconds": {
+        "setup_seconds": [
+          0.47486911,
+          0.519152842
+        ],
+        "simulation_seconds": [
+          1.73185076,
+          1.9284109
+        ],
+        "process_cpu_seconds": [
+          2.19,
+          2.46
+        ],
+        "elapsed_seconds": [
+          2.437571583,
+          2.763525348
+        ],
+        "setup_plus_simulation_seconds": [
+          2.20671987,
+          2.440800924
+        ]
+      },
+      "estimated_simulations_in_full50_budget": {
+        "simulation_seconds": 50.00000000000001,
+        "setup_plus_simulation_seconds": 50.0,
+        "process_cpu_seconds": 50.0
+      }
+    },
+    "40": {
+      "published_simulations": 88,
+      "published_batch_seconds": 8.48,
+      "measured_simulations": 264,
+      "warmup_simulations_excluded_from_summaries": 100,
+      "blocks": [
+        {
+          "repeat": 0,
+          "simulations": 88,
+          "setup_seconds": 0.663289877,
+          "simulation_seconds": 2.045499554,
+          "process_cpu_seconds": 2.68,
+          "elapsed_seconds": 3.182995488,
+          "setup_plus_simulation_seconds": 2.708789431
+        },
+        {
+          "repeat": 1,
+          "simulations": 88,
+          "setup_seconds": 0.531182442,
+          "simulation_seconds": 1.72880976,
+          "process_cpu_seconds": 2.23,
+          "elapsed_seconds": 2.673399485,
+          "setup_plus_simulation_seconds": 2.259992202
+        },
+        {
+          "repeat": 2,
+          "simulations": 88,
+          "setup_seconds": 0.500419009,
+          "simulation_seconds": 1.71196221,
+          "process_cpu_seconds": 2.25,
+          "elapsed_seconds": 2.570296636,
+          "setup_plus_simulation_seconds": 2.212381219
+        }
+      ],
+      "median_batch_seconds": {
+        "setup_seconds": 0.531182442,
+        "simulation_seconds": 1.72880976,
+        "process_cpu_seconds": 2.25,
+        "elapsed_seconds": 2.673399485,
+        "setup_plus_simulation_seconds": 2.259992202
+      },
+      "batch_min_max_seconds": {
+        "setup_seconds": [
+          0.500419009,
+          0.663289877
+        ],
+        "simulation_seconds": [
+          1.71196221,
+          2.045499554
+        ],
+        "process_cpu_seconds": [
+          2.23,
+          2.68
+        ],
+        "elapsed_seconds": [
+          2.570296636,
+          3.182995488
+        ],
+        "setup_plus_simulation_seconds": [
+          2.212381219,
+          2.708789431
+        ]
+      },
+      "estimated_simulations_in_full50_budget": {
+        "simulation_seconds": 93.0112946470177,
+        "setup_plus_simulation_seconds": 91.3650427153111,
+        "process_cpu_seconds": 91.91111111111111
+      }
+    }
+  },
+  "sha256": {
+    "width-20/requests.jsonl": "d0d2fa4de65e83170a91e2437424b859b573b08068d7d3ad3326542a45676cd5",
+    "width-20/results.jsonl": "ed33ca43c4abfbbb22214e456e2940ecdab976d8b062aad22247bfd0dcfd95e2",
+    "width-20/terminal.json": "5a5b9e7ac3ff59dc282dfc1669a1cca5f91f06b55dba80db6632ff84b01568c6",
+    "width-30/requests.jsonl": "9e7e374e0958ec5bc541cefe3a649105d4159e1819963f9b48d66a581913df31",
+    "width-30/results.jsonl": "07087aaab9fb464e533987ec42eb7ae09f8e77f021df76010c7bc72089e54350",
+    "width-30/terminal.json": "a811f2116e64253e8533752b18ce225342ad6bd01ef38ee65b55eea13c20b9cc",
+    "width-10/requests.jsonl": "14101586cf96290ce32762ebd0760aa8993d955697a65c401b21cd3c0adfda8d",
+    "width-10/results.jsonl": "7c77bcf2d92992268019b954eaffeedd8044acc4a25eae49cd99b40e370203cc",
+    "width-10/terminal.json": "2e2555dae2994b5e68ceeddf963951f4c47232257b8030b28c40901969835766",
+    "width-5/requests.jsonl": "13df75e4191e5651c720628960952ea9e64dcb01e4eb43febb9c40f82809f507",
+    "width-5/results.jsonl": "f5c61ff3e86984006ff2d2180d31e7d3a4c0eccbb7ffd899ea83be443cfff171",
+    "width-5/terminal.json": "4a6b5e368a2e90534958757e454f2282eea02c685b8019eb8a2408200745cffa",
+    "width-50/requests.jsonl": "dbb5ea0511d866cdb1ebe3fbe6614aa88d5d60dbbae1d8e41d004fff8252b2e0",
+    "width-50/results.jsonl": "ff231273fc84db08c426287b4dcf7b6f6c4d9b05d8e0f9c10ec7077b9d6a2e6b",
+    "width-50/terminal.json": "d2556b4d1bf2d8e9016a7bae8cb536ebfacb3cdb66446f1150d2e546529ca6ed",
+    "width-40/requests.jsonl": "e79e6bfe0a29c0236180cb21742bca07e76e1140e2e602ffdacbbf5d31dfc871",
+    "width-40/results.jsonl": "27998c7dc868eb416f42435367658a6d36a0dd978d8d0cca186969fc2956c23d",
+    "width-40/terminal.json": "110bffae7266147cc380dfce2c767b08d4e54938c8bb991281ddbca027dfeefc"
+  },
+  "scope": "All published batch counts executed three times under declared controls on the reconstruction platform. Equivalent counts are throughput estimates, not additionally executed simulations. Setup includes native command compilation/dispatch. Step timing excludes end-state reporters and exports. No historical hardware equivalence or paper verdict is inferred."
+}
