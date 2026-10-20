@@ -22,3 +22,19 @@ Its artifact cap is 256 MiB. Downloads, all-member verification, initializer aud
 
 Local verification covers Python parsing, Ruff checks, all archived payload member hashes, repeated source preparation, and exact patch round trips.
 The GPU run itself is pending. Queueing is not a successful build, complete experiment, or completed study.
+
+## Post-run audit
+
+After terminal export and a fresh download, save the complete provider command response as `terminal-command.json` beside `native-evidence.tar.gz`.
+Run `python replications/richmond_2023/audit_initializer_controls.py EVIDENCE_DIRECTORY` with Python 3.11 and Pydantic 2.12.
+The directory must not already contain `native/` or final audit outputs.
+
+The auditor verifies the archive receipt, every member, pinned payload, nine declared completions, all command exits, and both historical state hashes.
+It then invokes the full-world initializer and complete state-transition auditors independently for every variant.
+Cross-variant checks preserve peak sequences and all agent attributes within each fixed metabolism setting.
+All 900 resolution traces are checked against the declared counter behavior; unresolved agents remain reported rather than assumed absent.
+The resulting summary includes full per-variant initialization and transition evidence.
+
+This new orchestration passes Python parsing, CLI help, and Ruff checks. Its native end-to-end execution awaits the queued experiment.
+The underlying initializer and historical transition workflows have their separately recorded complete-data validations.
+No native success is inferred from preparing this auditor.
