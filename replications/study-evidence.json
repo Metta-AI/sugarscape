@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T00:57:19.856088+00:00",
+  "as_of": "2026-10-20T01:04:38.945951+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -292,15 +292,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "e0b2f42af60af13de3cec011d7c64bac13932519",
+      "checked_commit": "8a15dc408e8d9df119769f1d453a280e7c059e46",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "291fb8d17d505c5398a62d2927a80cfe1f7f819230e03fecfffdec7142ede438",
-      "json_evidence_files": 479,
-      "gzip_json_evidence_files": 91,
-      "checked_at": "2026-10-20T00:51:23.572702+00:00",
+      "readme_sha256": "c8139708cf420b5a1610e5862b766b8529717b17618b8dce893f8b9b46db04e8",
+      "json_evidence_files": 485,
+      "gzip_json_evidence_files": 93,
+      "checked_at": "2026-10-20T01:04:38.945951+00:00",
       "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "907 unique inputs/3520381 observations audited:400baseline+507sweep,9593sweep remain. Fresh unassigned checkpoint0077 adds25 disjoint inputs/125025observations; archive/member/configuration/payload/fulltrajectory checks pass. TablesI-III all result fields unchanged. Separate active TableIV row remains427/500 (100each.36-.39;27at.40),6extinct421better0equal; no prefix percentages/fullrow credit. Existing bounded producers unchanged. Figure death metric remains qualified; no whole-study completion."
+      "remaining_scope": "932 unique inputs and 3,645,406 observations audited: 400 baseline and 532 sweep; 9,568 sweep inputs remain. Checkpoint0352 adds 25 disjoint inputs and 125,025 observations. Archive, member, configuration, execution payload and raw trajectory audits pass. Tables I\u2013III retain all result fields. Active Table IV row is 452/500: 100 each at .36\u2013.39, 52 at .40; six extinct, 446 better, zero equal. No percentages for the incomplete row. Producers unchanged; whole-study completion remains unproven."
     }
   ],
   "study_prs": 22,
