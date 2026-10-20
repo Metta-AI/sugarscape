@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T01:47:25.318542+00:00",
+  "as_of": "2026-10-20T01:50:52.089279+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -294,15 +294,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "903beb795999efdd43b267b00dd4b4e10c89cae8",
+      "checked_commit": "fadc3264f954fa098b634801b74c63aea55e320b",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "202598e90c35995c2f2f4a87e2eb0a4fcc8fb799dab4c56fe06285482d354e07",
-      "json_evidence_files": 497,
-      "gzip_json_evidence_files": 97,
-      "checked_at": "2026-10-20T01:26:33.675862+00:00",
+      "readme_sha256": "30220860f6f39c0210990de4fa88740ddffe315a89867cd278f68c7ec658dafe",
+      "json_evidence_files": 503,
+      "gzip_json_evidence_files": 99,
+      "checked_at": "2026-10-20T01:50:52.089279+00:00",
       "evidence_scan_scope": "All tracked JSON and compressed JSON under replications/need_for_greed_2024",
-      "remaining_scope": "982 unique inputs and3,895,456observations audited:400baseline+582sweep;9,518sweep remain. Checkpoint0377 adds25 disjoint inputs and125,025observations; configurations,payloads,archive members and raw trajectories verified. TablesI\u2013III unchanged. Active TableIV row477/500:100each.36\u2013.39,77at.40; six extinct471better,zero equal. No percentages for incomplete rows or whole-study completion."
+      "remaining_scope": "1,005 unique inputs and 4,010,479 observations audited: 400 baseline and 605 sweep; 9,495 sweep inputs remain. The first complete Table IV row, selfishness 0.36\u20130.40, reproduces all published percentages exactly: 6 extinct, 0 worse, 494 better across 500 original inputs (1.2%, 0%, 98.8%). Independent R counts agree. Terminal archive adds 23 disjoint inputs; configurations, payloads, archive members and all raw trajectories verified. Tables I\u2013III remain unchanged. Original producer exited zero; owned node stopped with disk intact. Remaining full sweep and figure metric/aggregation discrepancies prevent study completion; no percentages inferred for incomplete rows."
     }
   ],
   "study_prs": 22,
