@@ -278,3 +278,9 @@ Production transfer is gated on all 18 searches completing and passing audit; a 
 The [replacement timing gate](results/timing-recovery-gate-2026-10-20) additionally waits for the recovered trade ensemble.
 The original passive watcher was stopped before benchmark admission; no native timing run was interrupted or duplicated.
 Timing inputs, repetitions, warmups, and analysis remain unchanged.
+
+
+[Held-out reporting qualification](results/transfer-report-qualification-2026-10-20) independently recomputes all objectives, standard errors, and dominance decisions from 1,800 native qualification runs.
+The corrected plot is visually inspected and preserves every numeric row. These controls use only full-size models.
+A separate watcher applies the same reporting path after all eighteen production searches and transfers pass audit.
+The production transfer comparison and visual review remain pending; no completion credit is assigned.
