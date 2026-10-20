@@ -1,0 +1,5 @@
+{
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "error: on_wake registers a command to start when the node is ready, so it is always detached: add detach:true (poll get_command for its output)\n  (request-id req_7a252ddd114c430081e0ead7283efb9d - quote it when reporting a problem)\n"
+}

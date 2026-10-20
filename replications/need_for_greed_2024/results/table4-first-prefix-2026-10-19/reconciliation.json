@@ -1,0 +1,1353 @@
+{
+  "audited_inputs": 219,
+  "audited_observations": 1013026,
+  "new_inputs": 27,
+  "new_observations": 125404,
+  "partition_counts": {
+    "baseline": {
+      "audited": 89,
+      "remaining": 311
+    },
+    "sweep": {
+      "audited": 130,
+      "remaining": 9970
+    }
+  },
+  "runs": [
+    {
+      "entry": "benthamHalfLookaheadBinary460149852129392939.config",
+      "observations": 5001,
+      "trajectory_sha256": "d191dbe7daa4e1aafd807d727c1eee48288c08436c0104f822b79c0b985bbebb",
+      "final_population": 999
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4349919276059682151.config",
+      "observations": 5001,
+      "trajectory_sha256": "dfb551b2f098d37718e366fe3d4f28da7353e72cf331632007c679d04fdbf058",
+      "final_population": 1093
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4322857474273933961.config",
+      "observations": 5001,
+      "trajectory_sha256": "ee6d1b226c0a34e26b71da9b06841cc1a0eb64e77882e4154364ec6201481467",
+      "final_population": 1336
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4375818342599997359.config",
+      "observations": 5001,
+      "trajectory_sha256": "81cd3e987c7942117395150e545b1ddc09647da5da61613fdc5e10c80f922493",
+      "final_population": 1198
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4335070638830477102.config",
+      "observations": 5001,
+      "trajectory_sha256": "77715127df325bc89315db84a4dbb505fa260054769c23ad7ae4d32f0b4e476e",
+      "final_population": 1311
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4627406532021948174.config",
+      "observations": 5001,
+      "trajectory_sha256": "d5a55655ff2a9e64a87e00ce33e5b13ae2e112827927c0a05771cecad33d7366",
+      "final_population": 1288
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4545923693926126457.config",
+      "observations": 5001,
+      "trajectory_sha256": "1fb1b22d86ac76ad43329e3d8fcaee12bdd7cbf34b9f882acbbbcf17e52c7c4b",
+      "final_population": 1252
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4865385569843070049.config",
+      "observations": 5001,
+      "trajectory_sha256": "a24a62f39ca0f1dfaa49d964ea083cd7e15aad76a5f9ab5ae5285ff368ed250e",
+      "final_population": 1000
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4893720129238770169.config",
+      "observations": 5001,
+      "trajectory_sha256": "ea607b06e11bba7424c82542435c1d111badf182fa84a34e7ed750e5f09b5b8c",
+      "final_population": 989
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4779321687271683802.config",
+      "observations": 5001,
+      "trajectory_sha256": "39335024dc2a05c994370b825b7d4d791a74927dc55d2abcdc8aba0193e1f650",
+      "final_population": 1303
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4924450696684077960.config",
+      "observations": 5001,
+      "trajectory_sha256": "9ceb7cbca52b0a8e5c6ab1f4370052fe61d5311ac5d8b39c42e85dbd0d2d2f67",
+      "final_population": 1147
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary5008653198738249826.config",
+      "observations": 5001,
+      "trajectory_sha256": "8b6045ccce12056c0b73963fb802815319ca8e2f657a61f3a83b1d63f9967a97",
+      "final_population": 1295
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary5200749333348563875.config",
+      "observations": 5001,
+      "trajectory_sha256": "403e75cab20ce66bce8fa853fcb7189d1b34ea246704e65c9477c96b2d738fd2",
+      "final_population": 1157
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4949093510471888483.config",
+      "observations": 5001,
+      "trajectory_sha256": "9bfcb1b0d3d2ba7b91e2730883fb840afb51dee6b1b85f636544101a2eba358e",
+      "final_population": 1330
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary5322088368832454314.config",
+      "observations": 5001,
+      "trajectory_sha256": "959eef55cafdc6cf69ed9c99fb6d169ad40f4e89d506f7f62c8604fc4bfa4467",
+      "final_population": 1362
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary5546605841926489529.config",
+      "observations": 5001,
+      "trajectory_sha256": "957365935c62e2ecb29defe0581a640e55d22f6a4a82607cc82fe682a793b60a",
+      "final_population": 1296
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary3573933913596124850.config",
+      "observations": 5001,
+      "trajectory_sha256": "441f31f6b5df8f4b7c3f84bf91c7fea2e03331f9c14e86068122b92afb422b73",
+      "final_population": 1141
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary3179381068919553722.config",
+      "observations": 5001,
+      "trajectory_sha256": "7c946fc47e8de27541efae190a10c05f9308e08320c5a8da4e53111d4e49198d",
+      "final_population": 1132
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary3458965655990623631.config",
+      "observations": 5001,
+      "trajectory_sha256": "57f4e1c996e3dacdc7af3582c9fa82b1bbef7587a88e0ca43391ebf928dcebc7",
+      "final_population": 1170
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary3130560300212625915.config",
+      "observations": 5001,
+      "trajectory_sha256": "8a448a417aa5eb997ea2a085ab87924fe6a29a88888de3d34131948213d01463",
+      "final_population": 1334
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary3647330525768885984.config",
+      "observations": 5001,
+      "trajectory_sha256": "6c12a2a5553ceb959799c0628448de79c297eaef1ed79a727dad0f700a09acf4",
+      "final_population": 1002
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary3291190799162476839.config",
+      "observations": 5001,
+      "trajectory_sha256": "ee4eeae59ffda3ca3c57c483fdb2be0d32cd0166e869d1a9d64faecd5d53b445",
+      "final_population": 1276
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6562124879500985245.config",
+      "observations": 5001,
+      "trajectory_sha256": "95194bc62ffaffa6f811e9b4b7ed45072153e90544e027d326500ff8e321839d",
+      "final_population": 1336
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6153852370960353609.config",
+      "observations": 5001,
+      "trajectory_sha256": "5d3db31ccbc10bca87b78dcb51aedce2f1c547e99319571eda136c119b503f97",
+      "final_population": 1131
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6457943928766880712.config",
+      "observations": 5001,
+      "trajectory_sha256": "23f0b5dc229e5587962fa17521b247c918c9938dc39981fb0b21fba48622f5dd",
+      "final_population": 1263
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6631602690175826146.config",
+      "observations": 5001,
+      "trajectory_sha256": "037630a508c32b15afb198a2a33aa37d1658949d0c868439475256442d9a78ac",
+      "final_population": 982
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary3488041093975898946.config",
+      "observations": 5001,
+      "trajectory_sha256": "340d44b841699334622c2a6f803e013934fefd34e9712a21cc580cceb60f262a",
+      "final_population": 1319
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary3573723820242427017.config",
+      "observations": 5001,
+      "trajectory_sha256": "ad6420fce4cebc94c69303e5fbf3ac1fe647600931d42f492f6f77018f2c632b",
+      "final_population": 1358
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4348769395949157104.config",
+      "observations": 5001,
+      "trajectory_sha256": "331f02f370104ca77cca5cf75c8c85a0758d2288c37808b7b131ad99a28348df",
+      "final_population": 1319
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8006986510311734812.config",
+      "observations": 5001,
+      "trajectory_sha256": "89c4216370cc93602029376e26e6edd5022b0ba11ea73fd6ad007c2f79ae8097",
+      "final_population": 1189
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8303265161711135825.config",
+      "observations": 5001,
+      "trajectory_sha256": "3e2fec135e5082e143bd7cde428f1ec7f6ddc62b7aff24f0b3277a0ed98a2d7d",
+      "final_population": 994
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary7068591249382591025.config",
+      "observations": 5001,
+      "trajectory_sha256": "91c02e35ad10e2ff48f2724a34979a6718e42d7880dbf540588c41c83d5d5175",
+      "final_population": 1024
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8980456150572989187.config",
+      "observations": 5001,
+      "trajectory_sha256": "819f0316c7370570dd9261b44e9aacf91b934428830734f81bf1a64738b45051",
+      "final_population": 1298
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary7853914801418268465.config",
+      "observations": 5001,
+      "trajectory_sha256": "cc6acd0edba72aa3c35aa69a47fd973eba5a0ae306b5d38e51de2d5cff3f6085",
+      "final_population": 1130
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary7990668540495452526.config",
+      "observations": 5001,
+      "trajectory_sha256": "72006605660f35492be6114b940b12b237f115f53678cdc36f49ac907e71c5f1",
+      "final_population": 1018
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary7935043809970132554.config",
+      "observations": 5001,
+      "trajectory_sha256": "58ff79b5d9f254898ae91da1b389ba0f202cf2afea0ac0957aaa02e257320e72",
+      "final_population": 1359
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6631427774681279428.config",
+      "observations": 5001,
+      "trajectory_sha256": "d794a6d4672df37d3ac506187e4fec21d08ddaa2fc79fe3557840c8a36a4ca79",
+      "final_population": 1370
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8443748817866679480.config",
+      "observations": 5001,
+      "trajectory_sha256": "7515b2f5907ab16d274ffeeff0bae7c2f11a1ea834fb3224bad120a4eb30c83f",
+      "final_population": 1291
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary7382846066072756711.config",
+      "observations": 5001,
+      "trajectory_sha256": "a3e745d487e54e36d333029f6ed97fa0b3a0f2ab70e921b98221d0f5643f8aaf",
+      "final_population": 1239
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6167067325050248690.config",
+      "observations": 5001,
+      "trajectory_sha256": "de9faf570ca834d4a100145e4b8286320978e987ab7a3b2d3df89a721a4c59bb",
+      "final_population": 1327
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6510614758213865323.config",
+      "observations": 5001,
+      "trajectory_sha256": "1838d4d055d5c77c3e1c9adac0d883a27bc85adb8785a2c20a1476f140786035",
+      "final_population": 1339
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8927322354812584041.config",
+      "observations": 5001,
+      "trajectory_sha256": "8eececd7dd105af6dcb60ab65846e1bcd266038b7844acf7348d1ed4f7461956",
+      "final_population": 1284
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8987908268059460980.config",
+      "observations": 5001,
+      "trajectory_sha256": "906fd719f85c5b38cad753d224e8ba7fe860b9adc5ba21be095e158aae6c2eed",
+      "final_population": 1299
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8354463434896959425.config",
+      "observations": 5001,
+      "trajectory_sha256": "7b7cb7f6fd17760ada9bbc587f672c7f867cca2784bb4e380b0c1357a5c793ad",
+      "final_population": 1335
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary7611596554808117923.config",
+      "observations": 5001,
+      "trajectory_sha256": "45403ca59b042731f95389f188ca7eda5974cb99c978aeec0533897dd986f73d",
+      "final_population": 1018
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8539697944784643463.config",
+      "observations": 5001,
+      "trajectory_sha256": "000bc0e9298eaf8fd33274475bc120cfbea0f03b6f767d8bc3b256253cf6b7f2",
+      "final_population": 1336
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8338163462517962044.config",
+      "observations": 5001,
+      "trajectory_sha256": "7fb491cb84fe964b7e79d9aadc101c5b3c14467c9558cfdfaf1e22659883885a",
+      "final_population": 1345
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary9077614460338874204.config",
+      "observations": 5001,
+      "trajectory_sha256": "ca8d47af76ef960ab8e87b7f1a7b4b6112dec4e40dc827e0dfa39bc971b80c80",
+      "final_population": 996
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6676516733472316028.config",
+      "observations": 5001,
+      "trajectory_sha256": "db98ca84bd9d8e45e2b7f81682970188634ef2b35dd8e6dd3042d95f3c6e0a42",
+      "final_population": 1174
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8525419003965527765.config",
+      "observations": 5001,
+      "trajectory_sha256": "c4026c4f668c272ac967b66fd9556e2c68f29164f747dfdd81954ccbf1bf15be",
+      "final_population": 1003
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary9194507009404838026.config",
+      "observations": 5001,
+      "trajectory_sha256": "d81c08e37b705c86f02cf1a140101e78f9c16121c4da252966b240ff3660348c",
+      "final_population": 1338
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8611853178106367524.config",
+      "observations": 5001,
+      "trajectory_sha256": "ee0647db688c282fe9b29a5632d7a37cc294aad45f308496083b0cc2e1069221",
+      "final_population": 1337
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6596648333047620229.config",
+      "observations": 5001,
+      "trajectory_sha256": "34165bf423be2197ffc8a01b1bc35e601c1f975a41d37ad13ccf2b4e56f8fe4a",
+      "final_population": 1090
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8002654488081595615.config",
+      "observations": 5001,
+      "trajectory_sha256": "f7b026a945cad62dbefb4cd55d9ba6ec34ca4796cd037c92ce07e318c56ac3da",
+      "final_population": 1323
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8266698178000332942.config",
+      "observations": 5001,
+      "trajectory_sha256": "1dd2670d65203eb64e253399ba4ed2d09ec6e182233206ed143ed9b9cc990afb",
+      "final_population": 1002
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8754360493150801493.config",
+      "observations": 5001,
+      "trajectory_sha256": "41869233013ea52efa250f1d04db96edaf5ee783f8f5e91f91281884f9b0b09b",
+      "final_population": 1307
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary8149629752604643258.config",
+      "observations": 5001,
+      "trajectory_sha256": "c2d34b02ba897fc31a6f5c8de4c6546507c7011a7dc6d9d63abcf1430fe1f9ff",
+      "final_population": 1257
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary7920473864506472639.config",
+      "observations": 5001,
+      "trajectory_sha256": "b82d187679108ee796fb81f0c68377897e484805dcfa2377ada85cabd5e708d8",
+      "final_population": 1154
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6050197700377984538.config",
+      "observations": 5001,
+      "trajectory_sha256": "6c02cf010b46b976503c3e4c7b07e997c8811a75db36b44d84b2ac363d9baa01",
+      "final_population": 1335
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary7074104263051287352.config",
+      "observations": 5001,
+      "trajectory_sha256": "f3bec03088bc664a07da00a58c1c7a5098b9cf7265164a51d5d4e338096547b3",
+      "final_population": 1270
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary6712575527833568135.config",
+      "observations": 5001,
+      "trajectory_sha256": "f9bc44809b35146163b530354dc6db81f98b23577955049ca288c6b4f5d64899",
+      "final_population": 1154
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4705595955654730755.config",
+      "observations": 5001,
+      "trajectory_sha256": "4c050d21db9aa61f4d14278d04de00e629fe66487e36af33d324299dea66a0d6",
+      "final_population": 1395
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary5299921647111273341.config",
+      "observations": 5001,
+      "trajectory_sha256": "a2081df8b5647aeab8edd947e1842b808387a662cb60083637c251b38745b0b8",
+      "final_population": 1383
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary4120068986275141671.config",
+      "observations": 5001,
+      "trajectory_sha256": "2b87231d59686d4e1f6cb213980adbd6edeed61216f1f46819a5fc9cf4dbd5e5",
+      "final_population": 1302
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1047840195371099687.config",
+      "observations": 5001,
+      "trajectory_sha256": "c8c4a76775fdddc20ed98e0f6eacc23023003d9aca9e8963f12499ce2274e957",
+      "final_population": 1281
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1113456709891828571.config",
+      "observations": 166,
+      "trajectory_sha256": "8f50b3ad5d89a1bacd7ac749001424209aac0bb6d3828b8f4f50b788d8f2cc8e",
+      "final_population": 0
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1233067699360264716.config",
+      "observations": 5001,
+      "trajectory_sha256": "f89df5114bb09b15203e67fd7d795b5674a09b8ca5d298bb723446c9dc59b46e",
+      "final_population": 1253
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1254106714873597359.config",
+      "observations": 5001,
+      "trajectory_sha256": "53956b57d5dbe7004d79d2410969343614a74c6e3b448924730a2952c4f5d64c",
+      "final_population": 1323
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1288598867396776898.config",
+      "observations": 5001,
+      "trajectory_sha256": "e543aecc068ce9a7e35d3ec6cc0d4d51e0f06cb2bfbef5bd8512be7ee9903afc",
+      "final_population": 1233
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1334731553345852678.config",
+      "observations": 5001,
+      "trajectory_sha256": "0814252c1cf8f9892bd2d9b34955e4c5c05ab7a59bfa4ba9c1925b055ca1c177",
+      "final_population": 1041
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1348390354187324392.config",
+      "observations": 5001,
+      "trajectory_sha256": "8f758d0153c26509ca25f01949f890e80ed4d6f6a27bc5632176d9c72b13bb9a",
+      "final_population": 1016
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1359404949007720544.config",
+      "observations": 5001,
+      "trajectory_sha256": "51fb919bb3564938eca87747a7dd8b7b82808c94d6525be679da5fc9b825507e",
+      "final_population": 1179
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1440437373991260400.config",
+      "observations": 5001,
+      "trajectory_sha256": "b2e20116a7e3999abd755d82302f7e8212dbb871a49be6c20a7f96e180bae07c",
+      "final_population": 1296
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1470653421161831391.config",
+      "observations": 5001,
+      "trajectory_sha256": "59202ba0e8808e3ab9856724a3e97432dbb4594e716f0a533003599761518e23",
+      "final_population": 1267
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1555657386466497304.config",
+      "observations": 5001,
+      "trajectory_sha256": "d4f86587bfd4721f97eaf51580fff772f0305d7b47887ba0fd3fe90d2a04a6dd",
+      "final_population": 1291
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1609969291442293190.config",
+      "observations": 5001,
+      "trajectory_sha256": "307c4c7ac480b2f6aab9b3ad627c7a54a09bbe9a49fdf2c758a245a8790ee654",
+      "final_population": 482
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1735937440315396203.config",
+      "observations": 5001,
+      "trajectory_sha256": "dc877465fbd7d8ffef9bd72d8dd03e91c9603f309857b1253253f460310775d2",
+      "final_population": 1163
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1802411219399068431.config",
+      "observations": 5001,
+      "trajectory_sha256": "e5e903e471de273c0d7e7384a42c3dba172423f5368aeb93ef45a7b7a1217ef1",
+      "final_population": 994
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary1823687216165022946.config",
+      "observations": 5001,
+      "trajectory_sha256": "c06437e650a01e0f05b235fbf2be76a42d70926147273a93b503ea21c13832ab",
+      "final_population": 1226
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary2009581725043069747.config",
+      "observations": 5001,
+      "trajectory_sha256": "992e4358b5420b20d4eae9f39bbfa5032166ef34744136f27dfac7eb47b35c87",
+      "final_population": 1242
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary2060968127868463485.config",
+      "observations": 5001,
+      "trajectory_sha256": "48362f2c06b4e76d5d9d3b212bc61338f3dfb0675c0a802c8adff447f083f754",
+      "final_population": 966
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary2214172059989836120.config",
+      "observations": 5001,
+      "trajectory_sha256": "44977990c7c917f90637e6f7440ed75cfbc9f5b85fae60267e063dc63d2e895f",
+      "final_population": 1310
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary238165197779399277.config",
+      "observations": 5001,
+      "trajectory_sha256": "20bf221eddc9c6a4c7ac935607807f1db2528f9d25f78a5ce2084150f1239b91",
+      "final_population": 1119
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary2483216780622132986.config",
+      "observations": 5001,
+      "trajectory_sha256": "8980cc97f72b3ec22727afcb3ac6af08a933de21de2a52858d023e22938416a9",
+      "final_population": 1313
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary2513573707559938025.config",
+      "observations": 5001,
+      "trajectory_sha256": "277da4def153cddeb69201f9bc57b198ee0c7ee4a0d919aebdaa289d8bbd82dd",
+      "final_population": 1185
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary2633622880550445485.config",
+      "observations": 5001,
+      "trajectory_sha256": "9f21caddd3652a2bdb9d8affea7caaf3d7a405f1d1659ed3f57e23f34ac84406",
+      "final_population": 1300
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary275110934556063992.config",
+      "observations": 5001,
+      "trajectory_sha256": "fe0dca81d0e9fb60a9ac9becdde10d86ee6a464aa58acaebb29a19a68c4242d1",
+      "final_population": 1338
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary2776046745237740637.config",
+      "observations": 5001,
+      "trajectory_sha256": "d238c821f472f59b84c991d2d6b7803b00a5ad11ae9d4728cc66fe09e775a0e8",
+      "final_population": 1051
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary2894409412357526145.config",
+      "observations": 5001,
+      "trajectory_sha256": "db8c57b1f247ce1b0e0014f287cf3d70d5db18cf8202f9d36bd2fbfaf3dae88e",
+      "final_population": 1288
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary311115376827154686.config",
+      "observations": 5001,
+      "trajectory_sha256": "6a16e25d758025bc393dfe811b3d1e8fba2f3941eeee0c8f55ba55e7c692d37b",
+      "final_population": 1197
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary3130560300212625915.config",
+      "observations": 5001,
+      "trajectory_sha256": "e599ef89fb5e45b7858469763fb0e2f50049b0099d55913faf507af8e490251c",
+      "final_population": 1287
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary3179381068919553722.config",
+      "observations": 5001,
+      "trajectory_sha256": "320415c5fac3a9cb852d02fc3c79a73e15c86479801f75555a9bf8f2c5ee72a3",
+      "final_population": 1271
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary3291190799162476839.config",
+      "observations": 5001,
+      "trajectory_sha256": "b1234e9dd9788e7ab9f74c5420f3de4cd04ede23194faf89607e7aef945f36b7",
+      "final_population": 1195
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary3458965655990623631.config",
+      "observations": 5001,
+      "trajectory_sha256": "22ddaad4b35faadd2834cb80f8a8692a94b51f27181cfbb42aa04bd43f42a8c8",
+      "final_population": 1269
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary3488041093975898946.config",
+      "observations": 5001,
+      "trajectory_sha256": "8ed0ffc231dc5159eeb6ea312167d98d0348d0ea70d0616584bdc026e4d3c16e",
+      "final_population": 1150
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary3573723820242427017.config",
+      "observations": 5001,
+      "trajectory_sha256": "f9f344a85397692966c70b548c852bdf57c05100436b314a2fa97c982ac2fd6b",
+      "final_population": 1290
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary3573933913596124850.config",
+      "observations": 5001,
+      "trajectory_sha256": "51d0852caea8687275d7999f5d2981f4d74a934cc83a9320a792ae80301f50f2",
+      "final_population": 1152
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary3647330525768885984.config",
+      "observations": 5001,
+      "trajectory_sha256": "014ad2f29c7847c1ea351232330424744369d2d876d3d5135b59d5c1d0331bb0",
+      "final_population": 1283
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary404603357698709850.config",
+      "observations": 5001,
+      "trajectory_sha256": "74a4032f1d5e69c56adc7dc76a371565eeabfb152a372d29239e46282f5c2504",
+      "final_population": 1172
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4120068986275141671.config",
+      "observations": 5001,
+      "trajectory_sha256": "510525ff858ee1a2727c9e8619fdea842a8de18cd5490e844517f2b98a184fb7",
+      "final_population": 1157
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4322857474273933961.config",
+      "observations": 5001,
+      "trajectory_sha256": "f9fc93ea0aa8b3486a6962fb1f2b63f8faa4737dcff6cdd2c66a7404b14f4022",
+      "final_population": 1142
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4335070638830477102.config",
+      "observations": 5001,
+      "trajectory_sha256": "efd9f564eb565ddb45136ae2af0649a62da98f47fb41c0abed93efb2eb839559",
+      "final_population": 1312
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4348769395949157104.config",
+      "observations": 5001,
+      "trajectory_sha256": "be87686014a3bf819e9dd3e69ff2a961c66dd6eca4ad1dc639dbb250747b4eae",
+      "final_population": 986
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4349919276059682151.config",
+      "observations": 5001,
+      "trajectory_sha256": "59a32d982d667e8d29124f5848951dad306e5ba28127ff7a21ad20de2f40bfd8",
+      "final_population": 1235
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4375818342599997359.config",
+      "observations": 5001,
+      "trajectory_sha256": "41d3706ec8007b4da2da3f522fd3fcb410a5a719712005aa518adecfbb367995",
+      "final_population": 1286
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4545923693926126457.config",
+      "observations": 5001,
+      "trajectory_sha256": "570bf4df20b3a8dd3ec1611502f2c224dd3ea8a6da1e544a4b1289002e00a426",
+      "final_population": 1317
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary460149852129392939.config",
+      "observations": 5001,
+      "trajectory_sha256": "6ee585ab067b991e14a2300742bc143dcaf9ee8ea732bffaabf4d3f26ad08393",
+      "final_population": 1241
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4627406532021948174.config",
+      "observations": 5001,
+      "trajectory_sha256": "be1ff5b6787d2b3446073179eb26c9f3f485dfa146fdbc563244a0ecbfd894cb",
+      "final_population": 1017
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4705595955654730755.config",
+      "observations": 5001,
+      "trajectory_sha256": "7861cbff9c2ffb4bf4a410bd79a3369f254c9297d522805c99afd719dbdfea79",
+      "final_population": 1310
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4779321687271683802.config",
+      "observations": 5001,
+      "trajectory_sha256": "2e21186a3c0b2af6f975a3e078bcef00a97f6d9623dca42489108f643d0bc8d6",
+      "final_population": 1306
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4865385569843070049.config",
+      "observations": 5001,
+      "trajectory_sha256": "2fdef070bb66739fb031cf954f81ee7e57317f0e41490e6571fc3fd50adfdb9b",
+      "final_population": 1332
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4893720129238770169.config",
+      "observations": 5001,
+      "trajectory_sha256": "05db9102349f3c6ccdeca1fa5ac7da121cf0ca30c6854455d62ad649dab299ae",
+      "final_population": 1206
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4924450696684077960.config",
+      "observations": 5001,
+      "trajectory_sha256": "fc3cf00d9de4ffc60c1bfe43f7db529f023b721ab6d15baa44edec10063d6b5a",
+      "final_population": 1257
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary4949093510471888483.config",
+      "observations": 5001,
+      "trajectory_sha256": "ae89facec05163e3fdc3eb228a76ab655daf4eda4a5bdd8ae3974f12e94f6fb9",
+      "final_population": 1290
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary5008653198738249826.config",
+      "observations": 5001,
+      "trajectory_sha256": "f8dfb19ccd08053d8c1c4ea24de223389de50269e5008eb40ba604d1f4dd5ee5",
+      "final_population": 1239
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary5200749333348563875.config",
+      "observations": 5001,
+      "trajectory_sha256": "b1cebdb6dbba16a167aba2d341480a8207584fc65c66b74e30c01f6663b919dd",
+      "final_population": 994
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary5299921647111273341.config",
+      "observations": 5001,
+      "trajectory_sha256": "0c03a6e4b5f3672bbc8496224d0a17dd641e3970e3b694dc590cfec46c14c5d8",
+      "final_population": 1317
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary530238075247992587.config",
+      "observations": 5001,
+      "trajectory_sha256": "f43ee9bddbe42561e0abf6670bfc46b7cce28a26ceab7961a71ce5ff67ea6498",
+      "final_population": 1376
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary5322088368832454314.config",
+      "observations": 5001,
+      "trajectory_sha256": "b1736c419df5be84b222aa795de359787331ef8e3bd16cf3630e54c815062245",
+      "final_population": 1329
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary5546605841926489529.config",
+      "observations": 5001,
+      "trajectory_sha256": "024f90a546f42ebfa8560c042c7c57a34154391461a4add97ee5e53c38134c67",
+      "final_population": 1212
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary570853383711153723.config",
+      "observations": 5001,
+      "trajectory_sha256": "97c4c6fa93cd4d78029dd809020ca966c2bc9b53c680a74ebaa70081455fed3c",
+      "final_population": 1248
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary601747005843301610.config",
+      "observations": 5001,
+      "trajectory_sha256": "9d12499a72333386b28ffc5989d5bdf2ff17791a339334fd80e24b609801de1b",
+      "final_population": 1269
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6050197700377984538.config",
+      "observations": 5001,
+      "trajectory_sha256": "f3df69c8747abfe3ba7243b706b04ae61189d81366f2f7d2297cb396b341f6a4",
+      "final_population": 1237
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6153852370960353609.config",
+      "observations": 5001,
+      "trajectory_sha256": "d075a5257851d24811153a5b2c8a23f3f243b483ea2308b997d3d291e97b198e",
+      "final_population": 1216
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6167067325050248690.config",
+      "observations": 5001,
+      "trajectory_sha256": "b6855f0ad9e113de6c0b12434d4751b1630237ce1824ae984bd0dc1f6dba8514",
+      "final_population": 1276
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary624457554156745065.config",
+      "observations": 5001,
+      "trajectory_sha256": "117aaa0e71c7305066d5bf4e9074e0465dbbfcb4b776a3e25cf3b8cb3a46e1ca",
+      "final_population": 1305
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6457943928766880712.config",
+      "observations": 5001,
+      "trajectory_sha256": "a6f0aa5cd820e93d8d2d560cce7bc22952c8c6ec424d1b006c81d5b6659f624a",
+      "final_population": 1290
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6510614758213865323.config",
+      "observations": 5001,
+      "trajectory_sha256": "de66c5d56b0f90dac1846633f58ed9a69e1bf89e62b0881a388436628de66d8a",
+      "final_population": 1294
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6562124879500985245.config",
+      "observations": 5001,
+      "trajectory_sha256": "428735d1f8203c1c6b16d744f83e5b1d8641d9e5ec9cac6afa1dcafb609af11a",
+      "final_population": 1292
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6596648333047620229.config",
+      "observations": 5001,
+      "trajectory_sha256": "fcf2ebf827c6866ce38f8a208d83463e7787cfc81944b7244a632bbb896975d4",
+      "final_population": 1215
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6631427774681279428.config",
+      "observations": 5001,
+      "trajectory_sha256": "7fc2b863a7f6ae5e6b7aa5a0e698e1c444dbb0bd50c529b512564d3059f51a11",
+      "final_population": 1326
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6631602690175826146.config",
+      "observations": 5001,
+      "trajectory_sha256": "465e2a5731dcc1f27bedae874e1aa78f827dda2b825d4db112ace09cf6e7dc0c",
+      "final_population": 1366
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary663700773870722021.config",
+      "observations": 5001,
+      "trajectory_sha256": "124230f95eb2680a3dbf48c9352dbb46b57dc01c6a30b1361783ef7937656c5b",
+      "final_population": 1284
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6676516733472316028.config",
+      "observations": 5001,
+      "trajectory_sha256": "9fa99ea0178a303343be74dcd89c8775fe6f8084ee551ad48d55dca742bd9324",
+      "final_population": 1355
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary668711073846793172.config",
+      "observations": 5001,
+      "trajectory_sha256": "9985681901b48b78f545feeaf08957ba6a69c6758b91bdad23649a6ef522c0dd",
+      "final_population": 1311
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary6712575527833568135.config",
+      "observations": 5001,
+      "trajectory_sha256": "573ba374fd2cc5a9a4079b2a811a28b3de6a56cb099c80c1955120c675404e19",
+      "final_population": 1269
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary689681424439763653.config",
+      "observations": 5001,
+      "trajectory_sha256": "303176694c579641bb177694581988a9fad0161086704ab0efeb0098535fdc13",
+      "final_population": 1299
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary703598546753609220.config",
+      "observations": 5001,
+      "trajectory_sha256": "01ea13dabc5f3cf4cdf83c5ce1d13faa3421b2b6f6052169d1da46934422c65e",
+      "final_population": 1178
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary7068591249382591025.config",
+      "observations": 5001,
+      "trajectory_sha256": "1d6ad7520025b57bc3416e03c9675b0d8ba03a46ed6a97f36f3a0083cc812ebf",
+      "final_population": 1009
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary7074104263051287352.config",
+      "observations": 5001,
+      "trajectory_sha256": "8f25df6a1ccb6a8532f4a16c9f9cb2470b882f66fd3f54f3414c06ba8b3e1f22",
+      "final_population": 1293
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary7382846066072756711.config",
+      "observations": 5001,
+      "trajectory_sha256": "6f77a148070d0b9382755044fe0c8068417c4f71ad497ec2de84805c93601df9",
+      "final_population": 1198
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary7611596554808117923.config",
+      "observations": 5001,
+      "trajectory_sha256": "f8581d8bf46c27a4122355abe26b84155db383299099a2ec5d8600f9d3beff91",
+      "final_population": 1357
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary7853914801418268465.config",
+      "observations": 5001,
+      "trajectory_sha256": "635bd93b94a24386ff9f1b544f757dba8735022b8fb5e2c74aebdf3a3ab0c1f2",
+      "final_population": 1272
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary7920473864506472639.config",
+      "observations": 5001,
+      "trajectory_sha256": "08ae971b17142c773787a601167376c20be4c76f1e0b98813f0e361653a860b5",
+      "final_population": 1153
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary7935043809970132554.config",
+      "observations": 5001,
+      "trajectory_sha256": "28c76309fa21c5b82c55d52ced93253d5d0cf6b12f0e508b35dbfb529afc1e67",
+      "final_population": 1244
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary7990668540495452526.config",
+      "observations": 5001,
+      "trajectory_sha256": "748027bae507d08a2dd2249ec9890c75c8eef8173a492ce99b7fa100a2c85194",
+      "final_population": 1314
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8002654488081595615.config",
+      "observations": 5001,
+      "trajectory_sha256": "a557865f1939f224032803b5ce250020cd2975ac14227d4360fa8e12143ab81f",
+      "final_population": 1266
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8006986510311734812.config",
+      "observations": 5001,
+      "trajectory_sha256": "60d8e8c07ca0827989d78de1476df75ab866dd63eb19e7b4179963377229ca16",
+      "final_population": 1303
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8149629752604643258.config",
+      "observations": 5001,
+      "trajectory_sha256": "30079cdc08f8eddddc32f7979df62c4ec9b19ee95b8f06589cd84870a4149215",
+      "final_population": 1070
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8266698178000332942.config",
+      "observations": 5001,
+      "trajectory_sha256": "e1ea2634c82ecbf73386139342b5a2c903ef838c503e7b3a9685ea9a38a6a52f",
+      "final_population": 1290
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8303265161711135825.config",
+      "observations": 5001,
+      "trajectory_sha256": "08aa22153be89faafd7f12ba5c21b38c46414533bbf8c93be4143f5453c51ccd",
+      "final_population": 1288
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8338163462517962044.config",
+      "observations": 5001,
+      "trajectory_sha256": "7b0c056bb6736b0f29893fdcf4f488047fadab8c737f850f36e511790537f5ca",
+      "final_population": 1361
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8354463434896959425.config",
+      "observations": 5001,
+      "trajectory_sha256": "ee8afb3cb5e94a8fd61cadd70791be1fc956f044a73b625666c628bf2adafaef",
+      "final_population": 1295
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8443748817866679480.config",
+      "observations": 5001,
+      "trajectory_sha256": "9715b5c77208ada7fc578a9d87c7629e650a98ab8c2de41afd5876b6fe8c3528",
+      "final_population": 1280
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8525419003965527765.config",
+      "observations": 5001,
+      "trajectory_sha256": "d199dfc8d13c26590eab18d95cce7ae34bfc7d6dc8c5cf8e5ea81a31e64a4c6f",
+      "final_population": 1053
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8539697944784643463.config",
+      "observations": 5001,
+      "trajectory_sha256": "20463de71dc951a4e4f5cd0a22ee889bba8241c86f62178f139b8f3396b1294c",
+      "final_population": 1293
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8611853178106367524.config",
+      "observations": 5001,
+      "trajectory_sha256": "f3446887a1e8065e430557dd7cbeada12a5228f25dff367b28fa8ff51f11af66",
+      "final_population": 1358
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8754360493150801493.config",
+      "observations": 5001,
+      "trajectory_sha256": "220c8173ad105a42169fef845bc279206f47954513283eeaeeb2a8a0c4a31c4e",
+      "final_population": 1313
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8927322354812584041.config",
+      "observations": 5001,
+      "trajectory_sha256": "78c442c585427dc739f88df9686c554c94cd0b656858d3d4f1bbc850af17e08e",
+      "final_population": 1342
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8980456150572989187.config",
+      "observations": 5001,
+      "trajectory_sha256": "0dbe6fb5e006f2ad5b310a99b1e9db8b9959ca54a1d92816a63d01d021920852",
+      "final_population": 1292
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary8987908268059460980.config",
+      "observations": 5001,
+      "trajectory_sha256": "64dad39046518b95ec63062ed020e43c7d7c62b0b51637d187d87852a6171a0a",
+      "final_population": 1298
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary9077614460338874204.config",
+      "observations": 5001,
+      "trajectory_sha256": "d8ff200181eaa0cdf21f0b138e39f02833ed9c777c884a41b7a3483f6eeb25c4",
+      "final_population": 1199
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary9194507009404838026.config",
+      "observations": 5001,
+      "trajectory_sha256": "0a81d3be339b6eb187b4f1e8658573f5fe65c63507942f12951b947e28b7f1cb",
+      "final_population": 1328
+    },
+    {
+      "entry": "0.37-benthamHalfLookaheadBinary977868131476438614.config",
+      "observations": 5001,
+      "trajectory_sha256": "1a64918704835827c5bd120b7cf9cc8da954830efe0919c070a703174a3f87d7",
+      "final_population": 1330
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary238165197779399277.config",
+      "observations": 137,
+      "trajectory_sha256": "7ce939b1fed518570dfdc8a5351aa15cd775107a9d6ba3ebe06ff63611a6c2d5",
+      "final_population": 0
+    },
+    {
+      "entry": "0.0-benthamHalfLookaheadBinary238165197779399277.config",
+      "observations": 137,
+      "trajectory_sha256": "7ce939b1fed518570dfdc8a5351aa15cd775107a9d6ba3ebe06ff63611a6c2d5",
+      "final_population": 0
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary238165197779399277.config",
+      "observations": 5001,
+      "trajectory_sha256": "d2f922e3f14470666d6fcd648407b2f006cfddf1e021fb9d9c6d25d2e6e8516b",
+      "final_population": 978
+    },
+    {
+      "entry": "0.5-benthamHalfLookaheadBinary238165197779399277.config",
+      "observations": 5001,
+      "trajectory_sha256": "d2f922e3f14470666d6fcd648407b2f006cfddf1e021fb9d9c6d25d2e6e8516b",
+      "final_population": 978
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary238165197779399277.config",
+      "observations": 5001,
+      "trajectory_sha256": "ce9ca3be9d6bf4131bb90281671beb055dfeaf4c24d9455f45563f5d07ff2eb7",
+      "final_population": 1132
+    },
+    {
+      "entry": "1.0-benthamHalfLookaheadBinary238165197779399277.config",
+      "observations": 5001,
+      "trajectory_sha256": "ce9ca3be9d6bf4131bb90281671beb055dfeaf4c24d9455f45563f5d07ff2eb7",
+      "final_population": 1132
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary275110934556063992.config",
+      "observations": 157,
+      "trajectory_sha256": "8fbb07bef50dc4be890223fc059471bf8b2c27479dcb80a6c9c62e66023f09d1",
+      "final_population": 0
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary311115376827154686.config",
+      "observations": 146,
+      "trajectory_sha256": "2786672116b59d4915dad670280ff2eb8d16cb475b732f323f082ac702c334d5",
+      "final_population": 0
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary404603357698709850.config",
+      "observations": 5001,
+      "trajectory_sha256": "e327a915bffd9a675b4124d2bcfadb3efddd845eac620a98e75bb0123b5b5918",
+      "final_population": 975
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary460149852129392939.config",
+      "observations": 135,
+      "trajectory_sha256": "096593b9a6f3bc04f52b4d5c298e6c686551326e793ed59bbcb78faa28fd2c70",
+      "final_population": 0
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary570853383711153723.config",
+      "observations": 5001,
+      "trajectory_sha256": "836fb46206aefcccc36d815bea5e07738556aa786f489c37b27213f04fe266b7",
+      "final_population": 507
+    },
+    {
+      "entry": "altruisticHalfLookaheadBinary624457554156745065.config",
+      "observations": 143,
+      "trajectory_sha256": "c725097986378ab5cc87f9e032a01fea660de2e8877c661326782d1ebcad92f2",
+      "final_population": 0
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary275110934556063992.config",
+      "observations": 5001,
+      "trajectory_sha256": "265c7202cdd78a6b8727be76542f6793ed219d211f0fb0e8b50c377672a660e8",
+      "final_population": 1264
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary311115376827154686.config",
+      "observations": 5001,
+      "trajectory_sha256": "f2fa973e42cba8c1078f63f37c399bd76313298652d8cc029b308c1b603c17a5",
+      "final_population": 1342
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary404603357698709850.config",
+      "observations": 5001,
+      "trajectory_sha256": "8462aff0f8e34faa73e742563f029474d5b1191a0c502e742de48d0a9c1893d7",
+      "final_population": 1335
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary530238075247992587.config",
+      "observations": 5001,
+      "trajectory_sha256": "816e1d731baf539f4ce42076849da808b4bd35cd0f76686300674290ebee4e24",
+      "final_population": 1130
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary275110934556063992.config",
+      "observations": 159,
+      "trajectory_sha256": "0b1457eb401f5fec35e67ed664c574dcf59517256eaeb79675a3ba1b16ed04fa",
+      "final_population": 0
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary311115376827154686.config",
+      "observations": 190,
+      "trajectory_sha256": "9df2de9a85707ef451dcf2b7fae119e092e79a0b72d7d021686d4a97b83c9bd0",
+      "final_population": 0
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary404603357698709850.config",
+      "observations": 5001,
+      "trajectory_sha256": "8d62da1f05aa8e323bceb3d3dfc8694d633bbeae3f098b686fdf99a1cd5edc24",
+      "final_population": 408
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary460149852129392939.config",
+      "observations": 165,
+      "trajectory_sha256": "fc63b7c6a057aada86577d923cb038abbc0bd435da65f043e075a1fc27738147",
+      "final_population": 0
+    },
+    {
+      "entry": "rawSugarscape238165197779399277.config",
+      "observations": 5001,
+      "trajectory_sha256": "25eca1051d7fef8b815753ac32865ee4b50429cbfd053e7526fd27163989c19b",
+      "final_population": 1308
+    },
+    {
+      "entry": "rawSugarscape275110934556063992.config",
+      "observations": 130,
+      "trajectory_sha256": "e22c59cd8ec91eae2428c0c14734b1e41f8223acbdb3f3347e469d297ad2aa6d",
+      "final_population": 0
+    },
+    {
+      "entry": "rawSugarscape311115376827154686.config",
+      "observations": 190,
+      "trajectory_sha256": "6a881d23e4d64b6c2ddcb314e55614621c8c0fcf05f14698ceada66928c1e36b",
+      "final_population": 0
+    },
+    {
+      "entry": "rawSugarscape404603357698709850.config",
+      "observations": 5001,
+      "trajectory_sha256": "461fa1773b53bebbf391420c69481e46e4f7267e7881881d5d123e6b21ac3923",
+      "final_population": 1277
+    },
+    {
+      "entry": "rawSugarscape460149852129392939.config",
+      "observations": 140,
+      "trajectory_sha256": "84704181b749bf04d1114b4e9e63dd7c7c6aae20a80042ab262767cf8a1a418f",
+      "final_population": 0
+    },
+    {
+      "entry": "rawSugarscape530238075247992587.config",
+      "observations": 5001,
+      "trajectory_sha256": "cd35c594870a1c7b4fc13d6c5115f40458756854e1c677004b27b8ad4940694a",
+      "final_population": 460
+    },
+    {
+      "entry": "rawSugarscape570853383711153723.config",
+      "observations": 199,
+      "trajectory_sha256": "b60a0934e5aa0f543b18725ca62cae8fe8e311f0eca63016132e8bc7a674a192",
+      "final_population": 0
+    },
+    {
+      "entry": "rawSugarscape601747005843301610.config",
+      "observations": 251,
+      "trajectory_sha256": "969341762cf4d48d15b84f028bebc66bb0007b4143f57e3cce30f398458072ba",
+      "final_population": 0
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1047840195371099687.config",
+      "observations": 5001,
+      "trajectory_sha256": "a0591722621c6b4b6c52f57536a76b04b09a3cec3a822ad025b3123c422277f5",
+      "final_population": 1215
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1113456709891828571.config",
+      "observations": 5001,
+      "trajectory_sha256": "1138353f18288006e8cefe92f54310c67ec9e29994bf4d413c5ce39762b505e0",
+      "final_population": 1344
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1233067699360264716.config",
+      "observations": 5001,
+      "trajectory_sha256": "c443d9962a4be9d2af0d1f4359342f5fa1b8469f5f3b154fe9ab1f1a0aeca73b",
+      "final_population": 1307
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1254106714873597359.config",
+      "observations": 5001,
+      "trajectory_sha256": "e1f60c978a995513add795292e230496e18e4ca9d4e9865af77d84a342f84198",
+      "final_population": 1255
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1288598867396776898.config",
+      "observations": 219,
+      "trajectory_sha256": "021911191cfe1fbf4d3d3b86de5a32f5de3c80c362b35e580b03c3c9d425b078",
+      "final_population": 0
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1334731553345852678.config",
+      "observations": 5001,
+      "trajectory_sha256": "a17418d3f71814e78d4225fd5ea2b4f4f9731ed50d80c655df99be8cee9acf62",
+      "final_population": 1248
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1348390354187324392.config",
+      "observations": 5001,
+      "trajectory_sha256": "5fa0b5c6f8921635d148f2239cf6d0949c72fd19e424cfd27ea7a00b49c5795c",
+      "final_population": 1321
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1359404949007720544.config",
+      "observations": 5001,
+      "trajectory_sha256": "4fc09570a64d57dd22a1f8377a9045673275aeda98e89873602acb244c8988e6",
+      "final_population": 1267
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1440437373991260400.config",
+      "observations": 5001,
+      "trajectory_sha256": "d955dfb80f241703bb62dfb62f7bc9522d28e98e0ac377302e26570addd004c7",
+      "final_population": 1335
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1470653421161831391.config",
+      "observations": 5001,
+      "trajectory_sha256": "4e7c1cf4086dbba4b93feed75b3da0856c8e2fcf1d19e107cdc157bc33262a08",
+      "final_population": 1201
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1555657386466497304.config",
+      "observations": 5001,
+      "trajectory_sha256": "f3ba956bb41c64ad474f7f42db6446ecd4c5aae950ea222f2f320eba0010f4e6",
+      "final_population": 1192
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary1609969291442293190.config",
+      "observations": 5001,
+      "trajectory_sha256": "350ae5dd93975f6c1869dcda8dde6abeba3a75f07b766f16a7665dcd851c7087",
+      "final_population": 1279
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary275110934556063992.config",
+      "observations": 5001,
+      "trajectory_sha256": "79f9b83700c07fce2735803eca9ab1fa0d0997c2a336e33819e38f6d013dc6ae",
+      "final_population": 1243
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary311115376827154686.config",
+      "observations": 5001,
+      "trajectory_sha256": "be9ff7d4090f35a1cfb182ad1eef2dc4f6b0009abf7c7a8a951ea2cb226559c2",
+      "final_population": 1236
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary404603357698709850.config",
+      "observations": 5001,
+      "trajectory_sha256": "56fc764faa0110fe9e31c325d43403f7a923d988ab786fcbe13d143770f905ef",
+      "final_population": 1187
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary460149852129392939.config",
+      "observations": 5001,
+      "trajectory_sha256": "77212dc151541cfb2fc5b2ec58c20f67bf74e9787563a461fd7b7b64bccf6674",
+      "final_population": 1316
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary530238075247992587.config",
+      "observations": 5001,
+      "trajectory_sha256": "d76fe4f85a8f2e302e541df803ac0b734340ff6da333e0eb7dd78911ab5b1b9f",
+      "final_population": 1275
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary570853383711153723.config",
+      "observations": 5001,
+      "trajectory_sha256": "0a422a390198bbf8db838541cdb036b56f922629cf1df647f7b142e426ee9f8f",
+      "final_population": 1350
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary601747005843301610.config",
+      "observations": 5001,
+      "trajectory_sha256": "b98dbe92da9ae4ca02a6b53bad0626dd8dc2d1cf994b953366d5b5d85477a37b",
+      "final_population": 1193
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary624457554156745065.config",
+      "observations": 5001,
+      "trajectory_sha256": "c9e92eaad081c1f6f764c430b5d89b7930c399d85ad27573572fcfbb3893df19",
+      "final_population": 1268
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary663700773870722021.config",
+      "observations": 5001,
+      "trajectory_sha256": "f2fd5125b4080d5ecbbc0f2d9f9b2eb96c307f8e135f6412abd2dce4f462bda0",
+      "final_population": 1300
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary668711073846793172.config",
+      "observations": 5001,
+      "trajectory_sha256": "fe69c3e11427ae263fc4911730c6c1d69d1b1746b55fa3345c087094fb7b3126",
+      "final_population": 1302
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary689681424439763653.config",
+      "observations": 5001,
+      "trajectory_sha256": "a7d61a1719d61fd52d9b33c9399b2ca00b44f11c003edd4e3e00edeb7e6733a1",
+      "final_population": 1216
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary703598546753609220.config",
+      "observations": 160,
+      "trajectory_sha256": "69455ea7f657652a20c209e0c0c6e5eaa518a5402bbf748adf2c6c9ca93c0dda",
+      "final_population": 0
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary977868131476438614.config",
+      "observations": 5001,
+      "trajectory_sha256": "ed3050c216293dcb9d8efb56b6b169e0e6a4c96c7acba20805f0cde2401b3cda",
+      "final_population": 1230
+    },
+    {
+      "entry": "0.36-benthamHalfLookaheadBinary238165197779399277.config",
+      "observations": 5001,
+      "trajectory_sha256": "f7ce46aeb91947e2f5728aaad9432a3051fca0b6ae6724102a5bfb04a3896bf3",
+      "final_population": 1158
+    },
+    {
+      "entry": "0.4-benthamHalfLookaheadBinary238165197779399277.config",
+      "observations": 5001,
+      "trajectory_sha256": "ce2360c35a3db2acd34d4d2ec9871d4b0b5c9567900580723d79aa73b02282bb",
+      "final_population": 1312
+    }
+  ],
+  "overlap": [],
+  "source_sha256": {
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-baseline-audit-001/reconciliation.json": "9cdfba19d60c7b3c524dadf209f8bfff641a76303bc7e3b36b4e8d77d7d2df6e",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-table4-pilots-001/readback.json": "938143937e829b4d86c0d892597271f5f6ec7f93a7cabf157de43abc6dc2d711",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-table4-prefix-001/audit.json": "4b36c26ab030b15eed57445d08a68bbc269b488a58b020219bd95c2fb7905539"
+  },
+  "table4_partial": {
+    "audited_inputs": 127,
+    "required_inputs": 500,
+    "counts_by_level": {
+      "0.37": 100,
+      "0.36": 26,
+      "0.4": 1
+    },
+    "outcomes": {
+      "better": 124,
+      "extinct": 3
+    },
+    "exactly_initial_population": 0
+  },
+  "scope": "Original inputs counted once, including one runtime per pilot. Partial bin is ordered by execution, not a representative sample. No full-table comparison or completed-paper credit."
+}

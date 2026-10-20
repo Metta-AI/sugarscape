@@ -1,0 +1,46 @@
+{
+  "pages": [
+    {
+      "offset": 0,
+      "next_offset": 65536,
+      "truncated": true,
+      "characters": 65458
+    },
+    {
+      "offset": 65536,
+      "next_offset": 68910,
+      "truncated": false,
+      "characters": 3374
+    }
+  ],
+  "complete_receipts": 37,
+  "failed_receipts": [
+    {
+      "entry": "egoisticHalfLookaheadBinary530238075247992587.config",
+      "exit_code": 124,
+      "command": [
+        "/usr/bin/timeout",
+        "--kill-after=15s",
+        "1840s",
+        "/root/sugarscape/need-for-greed-baseline-recovery-001/venv/bin/python",
+        "/root/sugarscape/need-for-greed-baseline-recovery-001/run_native.py",
+        "/root/sugarscape/need-for-greed-baseline-recovery-001/engine",
+        "/root/sugarscape/need-for-greed-baseline-recovery-001/need-for-greed.zip",
+        "egoisticHalfLookaheadBinary530238075247992587.config",
+        "/root/sugarscape/need-for-greed-baseline-recovery-001/runs/egoisticHalfLookaheadBinary530238075247992587",
+        "--seconds",
+        "1800"
+      ],
+      "verified": false
+    }
+  ],
+  "snapshots": [
+    {
+      "archive": "/root/sugarscape/need-for-greed-baseline-recovery-001/checkpoint-0001.tar.gz",
+      "bytes": 5178003,
+      "sha256": "5f3c206a07f3ca5a11db4fe274d1d34dd783a462b72e7ad8cfc71dfc7c014d17"
+    }
+  ],
+  "reconstructed_log_sha256": "315ea8951aad7b3311dbb9c9afe659b37e9eaa6fd12ae4406e08839c5ee152c3",
+  "scope": "Real live command-log pagination including producer failure receipts. No simulation restart."
+}

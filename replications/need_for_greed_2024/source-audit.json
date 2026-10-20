@@ -1,0 +1,339 @@
+{
+  "title": "The Need for Greed in Artificial Decisionmakers",
+  "authors": [
+    "Nathaniel Kremer-Herman",
+    "Ankur Gupta"
+  ],
+  "publication": "IEEE ISTAS 2024, pages 182\u2013190",
+  "paper": "https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2024:need-for-greed.pdf",
+  "pdf_sha256": "d96fbf4e514207590a4fd38636cf47199781876f956b2c1c6e21381c167c921c",
+  "status": "Partial native reproduction: 67 original baseline inputs and 103 original sweep inputs freshly audited; paper comparisons remain incomplete.",
+  "author_code": {
+    "repository": "https://github.com/digital-terraria-lab/sugarscape",
+    "paper_release": "v2024.1",
+    "tag": "Glucose/v2024.1",
+    "commit": "b9ca671ab7591c7b3606f2d76c33eda344d626d1",
+    "license": "MIT",
+    "pin_evidence": "Paper Section VII explicitly requests this release for exact accuracy."
+  },
+  "archive": {
+    "url": "https://raw.githubusercontent.com/digital-terraria-lab/datasets/0b50404c2529aa0ab08ce14c7f7abfe30fab837e/need-for-greed.zip",
+    "sha256": "e41c89ed31811b2d100c0a54f9c0110f0572a980b599e2417b2653b934fbe440",
+    "git_blob_sha1": "26d1b1e9cc2c14b5236b4cecdece2f67a6649275",
+    "bytes": 11838640,
+    "configurations": 10500,
+    "sweep_configurations": 10100,
+    "baseline_configurations": 400
+  },
+  "protocol": {
+    "seeds": [
+      238165197779399277,
+      275110934556063992,
+      311115376827154686,
+      404603357698709850,
+      460149852129392939,
+      530238075247992587,
+      570853383711153723,
+      601747005843301610,
+      624457554156745065,
+      663700773870722021,
+      668711073846793172,
+      689681424439763653,
+      703598546753609220,
+      977868131476438614,
+      1047840195371099687,
+      1113456709891828571,
+      1233067699360264716,
+      1254106714873597359,
+      1288598867396776898,
+      1334731553345852678,
+      1348390354187324392,
+      1359404949007720544,
+      1440437373991260400,
+      1470653421161831391,
+      1555657386466497304,
+      1609969291442293190,
+      1735937440315396203,
+      1802411219399068431,
+      1823687216165022946,
+      2009581725043069747,
+      2060968127868463485,
+      2214172059989836120,
+      2483216780622132986,
+      2513573707559938025,
+      2633622880550445485,
+      2776046745237740637,
+      2894409412357526145,
+      3130560300212625915,
+      3179381068919553722,
+      3291190799162476839,
+      3458965655990623631,
+      3488041093975898946,
+      3573723820242427017,
+      3573933913596124850,
+      3647330525768885984,
+      4120068986275141671,
+      4322857474273933961,
+      4335070638830477102,
+      4348769395949157104,
+      4349919276059682151,
+      4375818342599997359,
+      4545923693926126457,
+      4627406532021948174,
+      4705595955654730755,
+      4779321687271683802,
+      4865385569843070049,
+      4893720129238770169,
+      4924450696684077960,
+      4949093510471888483,
+      5008653198738249826,
+      5200749333348563875,
+      5299921647111273341,
+      5322088368832454314,
+      5546605841926489529,
+      6050197700377984538,
+      6153852370960353609,
+      6167067325050248690,
+      6457943928766880712,
+      6510614758213865323,
+      6562124879500985245,
+      6596648333047620229,
+      6631427774681279428,
+      6631602690175826146,
+      6676516733472316028,
+      6712575527833568135,
+      7068591249382591025,
+      7074104263051287352,
+      7382846066072756711,
+      7611596554808117923,
+      7853914801418268465,
+      7920473864506472639,
+      7935043809970132554,
+      7990668540495452526,
+      8002654488081595615,
+      8006986510311734812,
+      8149629752604643258,
+      8266698178000332942,
+      8303265161711135825,
+      8338163462517962044,
+      8354463434896959425,
+      8443748817866679480,
+      8525419003965527765,
+      8539697944784643463,
+      8611853178106367524,
+      8754360493150801493,
+      8927322354812584041,
+      8980456150572989187,
+      8987908268059460980,
+      9077614460338874204,
+      9194507009404838026
+    ],
+    "selfishness_factors": "0.00 through 1.00 inclusive, in steps of 0.01",
+    "timesteps": 5000,
+    "initial_population": 250,
+    "required_full_sweep_runs": 10100
+  },
+  "blueprints_overlap": {
+    "blueprints-homogeneous.zip": {
+      "byte_identical_configurations": 400,
+      "archive_sha256": "319c38c77cdeb9f3bd618ce6c57e14e93c35e2be282c01332d42cff58327f525"
+    },
+    "blueprints-selfishness.zip": {
+      "byte_identical_configurations": 10100,
+      "archive_sha256": "e2016f36a9728c23cee025d7a2e63cd2feffe4c36fbd62970e3a7792cb4d19e7"
+    }
+  },
+  "targets": {
+    "table_I": "Selfishness 0: extinct 67%, worse 2%, better 31%.",
+    "table_II": "Selfishness 1: extinct 62%, worse 2%, better 36%.",
+    "table_III": "Selfishness 0.5: extinct 0%, worse 0%, better 100%.",
+    "table_IV": {
+      "verification": "Visually checked against rendered PDF page 7; printed percentages preserved without inferring integer counts.",
+      "columns": [
+        "selfishness",
+        "extinct_percent",
+        "worse_percent",
+        "better_percent"
+      ],
+      "rows": [
+        [
+          "0.00",
+          67,
+          2,
+          31
+        ],
+        [
+          "0.01-0.05",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.06-0.10",
+          1.8,
+          0,
+          98.2
+        ],
+        [
+          "0.11-0.15",
+          1.8,
+          0,
+          98.2
+        ],
+        [
+          "0.16-0.20",
+          1.8,
+          0,
+          98.2
+        ],
+        [
+          "0.21-0.25",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.26-0.30",
+          1.6,
+          0,
+          98.4
+        ],
+        [
+          "0.31-0.35",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.36-0.40",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.41-0.45",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.46-0.49",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.50",
+          0,
+          0,
+          100
+        ],
+        [
+          "0.51-0.55",
+          1.8,
+          0,
+          98.2
+        ],
+        [
+          "0.56-0.60",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.61-0.65",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.66-0.70",
+          1.2,
+          0,
+          98.8
+        ],
+        [
+          "0.71-0.75",
+          1.2,
+          0.2,
+          98.6
+        ],
+        [
+          "0.76-0.80",
+          1,
+          0,
+          99
+        ],
+        [
+          "0.81-0.85",
+          5.2,
+          0.2,
+          94.8
+        ],
+        [
+          "0.86-0.90",
+          21,
+          1.8,
+          77.2
+        ],
+        [
+          "0.91-0.95",
+          56,
+          1.6,
+          42.4
+        ],
+        [
+          "0.96-0.99",
+          66.7,
+          0.8,
+          32.5
+        ],
+        [
+          "1.00",
+          62,
+          2,
+          36
+        ]
+      ],
+      "arithmetic_observation": "Printed 0.81-0.85 row sums to 100.2%. Rechecked against the PDF image; not corrected or treated as a simulation finding."
+    },
+    "figures_2_to_6": [
+      "population",
+      "mean wealth",
+      "mean time to live",
+      "agent deaths",
+      "mean age at death"
+    ]
+  },
+  "remaining": [
+    "Resolve boxplot aggregation and denominator conventions; preserve paper and script outcome classifications separately.",
+    "Revalidate matching prior runs against identical source, runtime, configuration and raw hashes before reuse.",
+    "Complete and audit all 10,100 declared sweep runs; no pilot or subset is a completed paper.",
+    "Keep this distinct paper separate from Blueprints; overlapping configurations do not make either study complete."
+  ],
+  "configuration_dispatch": {
+    "status": "Static source audit; plural none does not disable the archived sweep.",
+    "archived_fields": {
+      "agentDecisionModels": [
+        "none"
+      ],
+      "agentDecisionModel": "benthamHalfLookaheadBinary"
+    },
+    "loader": "sugarscape.py verifyConfiguration replaces the plural field with the legacy singular field before construction.",
+    "construction": "configureAgents selects ethics.Bentham with halfLookahead and preserves nonnegative supplied selfishness.",
+    "adapter_requirement": "Preserve the archived field precedence. Current Blueprints baseline schema alone is insufficient for sweep configs."
+  },
+  "measurement_audit": {
+    "paper_outcome": "Extinct: zero final population. Worse: surviving final population less than or equal to initial. Better: greater than initial.",
+    "released_plot_outcome": "plots/plot.py uses strictly below initial for worse; equality is included in better.",
+    "requirement": "Retain both classifications and report equality counts.",
+    "plot_limit": "Pinned plot.py computes ensemble time-series means with post-extinction zero padding; wealth output is agentWealthTotal. This does not establish the paper boxplot aggregation.",
+    "figure5": "Paper describes starvation plus combat deaths as a percentage of population, excluding aging deaths. Exact temporal aggregation remains unresolved."
+  },
+  "inspected_source_sha256": {
+    "sugarscape.py": "d429ebabea8ea08dfdaf25faa34a409e463f97ad754e7143a23202fdd5126e81",
+    "agent.py": "5ffd9ac332159413ead96102167593d1f5a514554415fcfea39e7133fd4a25d9",
+    "ethics.py": "977ac532c7b12fdd18e5157eff2d1a3759468842a0219ebbfad992ae4651214a",
+    "plots/plot.py": "40db9cf6b8172e9fea0b3de532f541ebecd9d4b6e2724ea4ac6ee5ebf4c7d5e5"
+  }
+}

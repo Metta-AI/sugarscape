@@ -1,0 +1,89 @@
+{
+  "runs": [
+    {
+      "entry": "altruisticHalfLookaheadBinary238165197779399277.config",
+      "command": [
+        "/opt/homebrew/bin/timeout",
+        "--kill-after=10s",
+        "600s",
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference/sugarscape.py",
+        "--conf",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-endpoint-qualification-001/0.0-baseline/config.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.6834680829779245
+    },
+    {
+      "entry": "0.0-benthamHalfLookaheadBinary238165197779399277.config",
+      "command": [
+        "/opt/homebrew/bin/timeout",
+        "--kill-after=10s",
+        "600s",
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference/sugarscape.py",
+        "--conf",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-endpoint-qualification-001/0.0-sweep/config.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.6354665840044618
+    },
+    {
+      "entry": "benthamHalfLookaheadBinary238165197779399277.config",
+      "command": [
+        "/opt/homebrew/bin/timeout",
+        "--kill-after=10s",
+        "600s",
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference/sugarscape.py",
+        "--conf",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-endpoint-qualification-001/0.5-baseline/config.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 527.0367882080027
+    },
+    {
+      "entry": "0.5-benthamHalfLookaheadBinary238165197779399277.config",
+      "command": [
+        "/opt/homebrew/bin/timeout",
+        "--kill-after=10s",
+        "600s",
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference/sugarscape.py",
+        "--conf",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-endpoint-qualification-001/0.5-sweep/config.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 591.9635851669591
+    },
+    {
+      "entry": "egoisticHalfLookaheadBinary238165197779399277.config",
+      "command": [
+        "/opt/homebrew/bin/timeout",
+        "--kill-after=10s",
+        "600s",
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference/sugarscape.py",
+        "--conf",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-endpoint-qualification-001/1.0-baseline/config.json"
+      ],
+      "exit_code": 124,
+      "elapsed_seconds": 600.0095885419869
+    },
+    {
+      "entry": "1.0-benthamHalfLookaheadBinary238165197779399277.config",
+      "command": [
+        "/opt/homebrew/bin/timeout",
+        "--kill-after=10s",
+        "600s",
+        "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+        "/Users/relh/Code/workspace/sugarscape-dtl-blueprints-reference/sugarscape.py",
+        "--conf",
+        "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-endpoint-qualification-001/1.0-sweep/config.json"
+      ],
+      "exit_code": 124,
+      "elapsed_seconds": 600.0125466249883
+    }
+  ],
+  "all_exit_zero": false
+}

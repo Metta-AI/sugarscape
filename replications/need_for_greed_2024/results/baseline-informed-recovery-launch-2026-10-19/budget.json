@@ -1,0 +1,16 @@
+{
+  "inputs": 293,
+  "workers": 8,
+  "per_input_seconds": 3600,
+  "admission_seconds": 18000,
+  "outer_seconds": 23400,
+  "kill_grace_seconds": 30,
+  "export_seconds": 1800,
+  "idle_minutes": 15,
+  "maximum_rate_usd_per_minute": 0.012,
+  "maximum_total_usd": 5.4,
+  "calculated_conservative_usd": 5.226,
+  "largest_prior_seconds": 2273.9090852080044,
+  "prior_timing_margin_at_least": 1.25,
+  "scope": "Separate bounded recovery of1failed+292unstarted inputs. Old command terminal; no overlap with237audited inputs. Native source/config/seeds unchanged. Full prior hashes and failed prefix required; no automatic extension."
+}

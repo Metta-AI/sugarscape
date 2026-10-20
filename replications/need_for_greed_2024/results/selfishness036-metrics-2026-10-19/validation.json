@@ -1,0 +1,27 @@
+{
+  "native_inputs": 100,
+  "observations": 490477,
+  "condition": 0.36,
+  "raw_archive_count": 5,
+  "complete_original_condition": true,
+  "unique_inputs": 100,
+  "extinctions": 2,
+  "all_others_above_initial": true,
+  "primary_values_independently_checked": 2400,
+  "maximum_scaled_error": 3.563136978157332e-16,
+  "repeat_metrics_byte_exact": true,
+  "repeat_comparison_byte_exact": true,
+  "sha256": {
+    "prepare.py": "0be8fe734670b9264fa1b18a0d61ac441ccf4e2d195cd1ee356cf1dbcf5fc2ff",
+    "aggregate.py": "64487c643b651f767c3775273e0ef2460e2e93f98b3200820c20423cdbf39900",
+    "validate_numpy.py": "b5da94a4e7158a311b2751a6c52c6876e5eb7f6b719937c9fc9c02d4eab69033",
+    "compare.py": "cab45bbfb2fc7716c2fe4c262e9c7fa880b040d1a4576f80f1ff7c8ea9d2fd4b",
+    "extract.py": "08c245a0cd890864ffa914cc89535dd2ee8b47a20df75c8f87f0fed300a5bf2a",
+    "cohort.json": "9e187b5c6501377655ee153bd55abae6909be812e0d432e38149cddbadaf68c2",
+    "metrics.json": "28271cbe9994b38b7cf7e00c03c30d126ea3b00825044019da4bd4d5ee9c0f60",
+    "numpy-validation.json": "da8e27294e2c97f70f3d43e0d4f5517b959413d3c2aed62536eeec6e89852ec3",
+    "comparison.json": "b538bbe6dc8a188173b7ec7eb3f0dbc440e4e0787c1ad1774ca0578c67c7f3f6",
+    "population-comparison.json": "3d16df6c853ac89ea73e15515491ddb128977bfc4eccf454fa221c9cc491973c"
+  },
+  "scope": "Complete second condition; no new simulation coverage or complete table/paper credit. Stroke agreement is graphical, not statistical equivalence. Historical aggregation remains unresolved."
+}

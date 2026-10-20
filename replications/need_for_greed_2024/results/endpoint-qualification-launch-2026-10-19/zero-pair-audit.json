@@ -1,0 +1,27 @@
+{
+  "level": 0.0,
+  "seed": 238165197779399277,
+  "runs": [
+    {
+      "kind": "baseline",
+      "observations": 137,
+      "final_timestep": 136,
+      "final_population": 0,
+      "trajectory_sha256": "7ce939b1fed518570dfdc8a5351aa15cd775107a9d6ba3ebe06ff63611a6c2d5",
+      "original_sha256": "5fab10c69c7b3dd3181559bc617471b6b2b46eb4b98e1ab27c8cc79622cfd38b",
+      "elapsed_seconds": 0.6834680829779245
+    },
+    {
+      "kind": "sweep",
+      "observations": 137,
+      "final_timestep": 136,
+      "final_population": 0,
+      "trajectory_sha256": "7ce939b1fed518570dfdc8a5351aa15cd775107a9d6ba3ebe06ff63611a6c2d5",
+      "original_sha256": "1440e90f672d6e09b743e354d8a83ef8bfa7a28eb951010721f0ad163b636101",
+      "elapsed_seconds": 0.6354665840044618
+    }
+  ],
+  "recorded_values_per_run": 5206,
+  "trajectory_bytes_equal": true,
+  "scope": "Complete native baseline/sweep control through endogenous extinction. Only this selected seed is qualified. No whole-ensemble equivalence, parameter substitution, or paper-completion credit."
+}

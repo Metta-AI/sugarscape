@@ -1,0 +1,24 @@
+{
+  "inputs": 200,
+  "observations": 985742,
+  "independent_raw_values": 800,
+  "maximum_raw_scaled_error": 2.775141290369336e-16,
+  "independent_quantile_comparisons": 216,
+  "maximum_quantile_error": 2.220446049250313e-16,
+  "maximum_distance_error_points": 0,
+  "source_sha256": {
+    "aggregate.py": "9edbac48524391658c479131fdb7b3386c22c652cf02c9b5a030af7ca5f75164",
+    "compare.py": "d9278a2a58f028572eec4e7dcfd7f124c8a58373d18b00d40d1a2807778adcc8",
+    "metrics.json": "7c42229bdace978bdcd764cd37f79b39721e45eda12e4c8a659e6162aefa905a",
+    "protocol.json": "929700c024ee254df72bc0c6799231d2bf34da8a59503b841e617d532d5b3629",
+    "result/0.36/comparison.json": "d8e3d4ad50f35bc9dae7058e495f4f4080f6c861bfff84f86b945d18aadb85c4",
+    "result/0.36/r-validation.json": "4ab51dde2a68a1a46a18c2fb73eb28de20d998d68474fb9b5d3bc0cb1e0d5dbb",
+    "result/0.36/vectors.json": "8337bf245533571727e34755e7cae6cd892b0d6f95233c794611dd2ead2fbfec",
+    "result/0.37/comparison.json": "1819e7dd92b667f4211b43d82fee79b7ecbb04dff581d142ddb24fbb1f65d43e",
+    "result/0.37/r-validation.json": "4ab51dde2a68a1a46a18c2fb73eb28de20d998d68474fb9b5d3bc0cb1e0d5dbb",
+    "result/0.37/vectors.json": "f43b192ec88b69305c28a5ae8710e2e098524778e118f86edad19d8d61e4c025",
+    "result/summary.json": "ab0fe0f0320c6feec824d469aefc1d542bfe1b0aa3ebc19f00d2a88aefb2b03d",
+    "verify.R": "142fe889330be832652c127719cc0ef7ae8653bb5f9ee71dbb0fe29c9dddae12"
+  },
+  "scope": "Predeclared fixed-initial-population hypothesis fails to reproduce Figure5. Preserve current primary metric. No added simulation coverage or paper completion credit."
+}

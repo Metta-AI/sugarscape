@@ -1,0 +1,18 @@
+{
+  "repeat_command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-need-for-greed/replications/need_for_greed_2024/analyze_table4.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-remaining-plan-001/prepared/inputs.json.gz",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-table4-prefix-003/reconciliation.json",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-table4-analysis-001/repeat.json"
+  ],
+  "repeat_exit_code": 0,
+  "repeat_stdout": "{\"inventory_sha256\": \"22085d33312ca601c6e7ddfec7e4aaed533c5761ff1d5ba998f9246e210e2c01\", \"original_inputs_sha256\": \"368c43d13e42bcddc867dfa12acbd57ce73a47d2b333c5978599083410a85b8f\", \"source_audit_sha256\": \"e9f3c81f68fdd9f9c08c08d7d261cd8bbf3c7c0eac7d8ed6e5dfe0db4d22636a\", \"required_sweep_inputs\": 10100, \"audited_sweep_inputs\": 180, \"complete_rows\": 0, \"scope\": \"Audited inventory aggregation, not a new raw-trajectory audit. No percentages or comparisons for incomplete rows. Exact percentage-point differences are descriptive; no rounding rule, significance, or paper-completion verdict is inferred.\"}\n",
+  "duplicate_command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-need-for-greed/replications/need_for_greed_2024/analyze_table4.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-remaining-plan-001/prepared/inputs.json.gz",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-table4-analysis-001/duplicate-inventory.json",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/need-for-greed-table4-analysis-001/must-not-exist.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "report_sha256": "1602de68e9b20c922c85a0eb50a99799d01201c8a8768e7babb832b6746d5592",
+  "script_sha256": "d37db58ad549bfb5aa1dfd916c8faeb76243a6127b0bfb3f8f2bf150716962dd",
+  "repeated_report_byte_exact": true,
+  "all_23_rows_incomplete": true,
+  "partial_percentages_suppressed": true,
+  "table4_bin_matches_prior_audit": true,
+  "printed_100_2_percent_sum_preserved": true,
+  "duplicate_rejected_without_output": true,
+  "duplicate_exit_code": 1,
+  "duplicate_stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-need-for-greed/replications/need_for_greed_2024/analyze_table4.py\", line 157, in <module>\n    main()\n  File \"/Users/relh/Code/workspace/sugarscape-need-for-greed/replications/need_for_greed_2024/analyze_table4.py\", line 74, in main\n    assert len(audited) == len(runs) == inventory[\"audited_inputs\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "scope": "Real audited inventory through public CLI. Complete-row reporting awaits the first fully audited Table IV row; no synthetic success data used."
+}

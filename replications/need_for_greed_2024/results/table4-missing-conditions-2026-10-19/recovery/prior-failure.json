@@ -1,0 +1,14 @@
+{
+  "command": {
+    "command_id": "cmd-p6ykh",
+    "ended_at": "2026-10-19T17:58:02.549209+00:00",
+    "env": [],
+    "exit_code": 1,
+    "object": "command",
+    "started_at": "2026-10-19T17:57:54.899146+00:00",
+    "state": "exited"
+  },
+  "elapsed_seconds": 7.650063,
+  "cause": "git absent after disk restore; native runner failed its revision check before simulation.",
+  "budget": "Second outer bound reduced by60s; combined execution remains below32400s. No additional400-input assignment."
+}

@@ -1,0 +1,30 @@
+{
+  "node": "relh-sugarscape-selfishness037-cpu8-20261018-v1",
+  "chip": "cpu-8",
+  "rate": {
+    "calendar": {
+      "band": "weekday",
+      "next_cheaper": {
+        "band": "Friday",
+        "per_min": "$0.00804/min",
+        "per_min_usd_micros": 8040,
+        "percent_off": 33,
+        "starts_at": "2026-10-23T07:00:00Z"
+      },
+      "note": "Fridays 33% off, weekends 20% off (US Pacific) - applied to the minutes that run on those days, not locked at create",
+      "percent_off": 0
+    },
+    "gpu_count": 1,
+    "idle_window_minutes": 15,
+    "idle_window_usd": "$0.18",
+    "idle_window_usd_micros": 180000,
+    "minimum_minutes": 15,
+    "node_per_min": "$0.012/min",
+    "node_per_min_usd_micros": 12000,
+    "per_min": "$0.012/min",
+    "per_min_usd_micros": 12000,
+    "session_minimum_usd": "$0.18",
+    "session_minimum_usd_micros": 180000
+  },
+  "scope": "Current task-node rate observation, not a reservation or guarantee for a future allocation."
+}
