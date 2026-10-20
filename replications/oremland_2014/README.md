@@ -273,3 +273,8 @@ The campaign is running; no additional completed-study credit is assigned.
 [The held-out transfer evaluator](results/transfer-qualification-2026-10-20) passes 1,800 native simulations and independent statistical replay.
 A corrupted standard error is rejected. Fresh archive extraction reproduces the audit exactly.
 Production transfer is gated on all 18 searches completing and passing audit; a bounded dependent watcher performs no retries.
+
+
+The [replacement timing gate](results/timing-recovery-gate-2026-10-20) additionally waits for the recovered trade ensemble.
+The original passive watcher was stopped before benchmark admission; no native timing run was interrupted or duplicated.
+Timing inputs, repetitions, warmups, and analysis remain unchanged.
