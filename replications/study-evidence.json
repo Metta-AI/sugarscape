@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T04:08:09.707878+00:00",
+  "as_of": "2026-10-20T04:11:36.347707+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -162,20 +162,20 @@
     {
       "study": "quera_2025",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
-      "checked_commit": "c37e408c0fa590b5ffbab9014534744db5c1b6ce",
+      "checked_commit": "9e151da24a2c60f54e7dddf9cb456adb4899c896",
       "status": "partial",
       "readme": "replications/quera_2025/README.md",
-      "readme_sha256": "82e1dd2b8a7feb6ed80b8fd3bc3b9aa46720f396f53faf94a346327f7ca66890",
-      "remaining_scope": "All256 gradient-baseline and9216 perturbation trajectories retain independent state replay. Original coupled adapter random-draw mismatch verified by passive trace; separate corrected adapter passes two-channel loss/six-gradient checks. Reconstructed dependency environment explicit. Both native training estimators now qualify:3epochs each,5MC, all57342optimizer components per arm independently reconstructed, identical initial weights, validation selection verified, corrupt-update control rejected, archive re-audit exact. Full5000epoch pathwise then VarGrad campaign admitted locally with24h ceiling per arm and no retries. Explicit simplex/shape priors, learning rate, weight decay and held-out validation construction are reconstruction choices. Full optimization,1000-draw predictive distributions and final method comparisons remain incomplete. No paper-negative verdict or completed-study credit. Full-run first3epochs reproduce12immutable qualification artifacts byte-exact. Dependent4000trajectory predictive workflow now waits for both full optimizer audits; Python summary and independent R checks are implemented but unexecuted.",
+      "readme_sha256": "09a3137d624e7fc16e55da84b03e05557c39d87c3655b1fa8835ee69834b8506",
+      "remaining_scope": "All256 gradient-baseline and9216 perturbation trajectories retain independent state replay. Original coupled adapter random-draw mismatch verified by passive trace; separate corrected adapter passes two-channel loss/six-gradient checks. Reconstructed dependency environment explicit. Both native training estimators now qualify:3epochs each,5MC, all57342optimizer components per arm independently reconstructed, identical initial weights, validation selection verified, corrupt-update control rejected, archive re-audit exact. Full5000epoch pathwise then VarGrad campaign admitted locally with24h ceiling per arm and no retries. Explicit simplex/shape priors, learning rate, weight decay and held-out validation construction are reconstruction choices. Full optimization,1000-draw predictive distributions and final method comparisons remain incomplete. No paper-negative verdict or completed-study credit. Full-run first3epochs reproduce12immutable qualification artifacts byte-exact. Dependent4000trajectory predictive workflow now waits for both full optimizer audits; Python summary and independent R checks are implemented but unexecuted. Separate renderer watcher66871 gates three figure PDFs on completed predictive native/Python/R audits, retaining1000draws/distribution and5000epochs. Joint posterior scatter/empiricalCDF adds Figure20 coverage without new simulations; all rendering/visual review pending. Figure19 caption confirms raw/faint versus moving-average/solid; window and exact objective unresolved.",
       "validation": {
         "states": 150,
         "agent_observations": 15000,
         "cell_observations": 93750,
         "portable_trajectory_files_byte_identical": 9
       },
-      "json_evidence_files": 112,
+      "json_evidence_files": 115,
       "gzip_json_evidence_files": 1,
-      "checked_at": "2026-10-20T03:33:11.945346+00:00",
+      "checked_at": "2026-10-20T04:11:36.347707+00:00",
       "gradient_baseline_validation": {
         "seeds": 256,
         "agent_updates": 614400,
