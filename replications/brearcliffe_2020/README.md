@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The complete paper-table Q / EC cohort](results/paper-q-ec-complete-cohort-2026-10-20) adds 50 audited runs and 1,000,050 observations. Coverage reaches 1,302 inputs and 26,041,302 observations; 298 paper-table inputs remain. Independent R and storage checks pass. Thirteen endpoint mean ranges overlap the paper; the remaining vision bootstrap interval overlaps. All 50 paired trajectories differ from released-code outputs.
+
 [The complete paper-table Q / Rule M cohort](results/paper-q-rule-m-complete-cohort-2026-10-20) adds 50 fully audited runs and 1,000,050 observations. Coverage reaches 1,252 inputs and 25,041,252 observations; 348 paper-table inputs remain. Independent R checks pass. All 14 endpoint mean ranges overlap the readable raster bands, without establishing equivalence. All paired released-code trajectories differ.
 
 [The paper-table EC/SARSA cohort completes all fifty inputs](results/paper-ec-sarsa-complete-cohort-2026-10-20). Full trajectory audits, independent R checks, and fresh storage readback pass. Coverage reaches 1,202 inputs and 24,041,202 observations; 398 paper-table inputs remain. Eleven readable endpoint ranges overlap the paper; the remaining vision interval overlaps. Both parameter interpretations remain explicit.
@@ -156,9 +158,9 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-The latest full audit covers 775/800 released-code inputs and 302/800 paper-table inputs.
-Complete and audit the remaining 25 released-code and 498 paper-table inputs. The released-code remainder is assigned to the separate bounded recovery.
-The original released-code producer has exited; its disjoint recovery and the paper-table ensemble continue. Completed producer entries receive coverage only after independent trajectory audits.
+The latest full audit covers all 800 released-code inputs and 502/800 paper-table inputs.
+Complete and audit the remaining 298 paper-table inputs. The released-code ensemble and its bounded recovery have completed.
+The original paper-table producer continues on its frozen assignment. Completed producer entries receive coverage only after independent trajectory audits.
 All sixteen method pairings already passed native recorder qualification; the Rule M control also matches across both parameter interpretations for all 50 seeds.
 
 For each remaining complete 50-seed cohort, verify means, sample standard deviations and whole-run bootstrap intervals independently in R.
