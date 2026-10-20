@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T04:11:36.347707+00:00",
+  "as_of": "2026-10-20T04:13:21.267918+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -95,14 +95,14 @@
     {
       "study": "replacing_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/10",
-      "checked_commit": "d716d45832d9f3c32ca6e20b77f8de79bfa1d9b7",
+      "checked_commit": "95fcb8c0c7eb7c8663bc590282c43bfccddd901c",
       "status": "partial",
       "readme": "replications/replacing_2023/README.md",
-      "readme_sha256": "4f447dc094945adcacb2d62ec6306cf6bf67526ca16875255d38110d73b379ab",
-      "json_evidence_files": 530,
-      "remaining_scope": "All17 examples,20seed scenario ensembles and historical discrepancy investigations retained. Original long ensemble stopped on1800sec timeout, seed19522trade. Independent inventory audit recovers25 successful inputs/250025observations with exact501record prefixes, including3 successes omitted by collector. Complete-looking failed file has no successful exit receipt and no credit.35 disjoint inputs now running locally under PID41037,2workers,7200sec/input,86400sec admission, recovery-001. Failed input must also match entire saved trajectory hash. Per-worker validation receipts preserve successes. Full60-input fixed-window analysis remains gated. No equilibrium or whole-study verdict.",
-      "gzip_json_evidence_files": 373,
-      "checked_at": "2026-10-20T03:56:24.721002+00:00",
+      "readme_sha256": "8d29fdfe97040ba3d3bacf69647d80005ac6c1355f2ab3980bd01851beb1439b",
+      "json_evidence_files": 536,
+      "remaining_scope": "All17 examples,20seed scenario ensembles and historical discrepancy investigations retained. Original long ensemble stopped on1800sec timeout, seed19522trade. Independent inventory audit recovers25 successful inputs/250025observations with exact501record prefixes, including3 successes omitted by collector. Complete-looking failed file has no successful exit receipt and no credit.35 disjoint inputs now running locally under PID41037,2workers,7200sec/input,86400sec admission, recovery-001. Failed input must also match entire saved trajectory hash. Per-worker validation receipts preserve successes. Full60-input fixed-window analysis remains gated. No equilibrium or whole-study verdict. Timed-out seed19522trade now exits0 in1011.25sec. Independent audit verifies all10001records byte-identical to failed attempt, all501original prefix records exact, unchanged source/effective settings, finite numeric records. Native compressed outputs published. Original failure remains uncredited; successful rerun accepted. Timeout cause not isolated; full60-input audit remains pending.",
+      "gzip_json_evidence_files": 374,
+      "checked_at": "2026-10-20T04:13:21.267918+00:00",
       "evidence_scan_scope": "All tracked JSON and compressed JSON under replications/replacing_2023"
     },
     {
