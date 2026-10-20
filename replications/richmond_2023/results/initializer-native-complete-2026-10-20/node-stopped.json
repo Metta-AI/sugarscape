@@ -1,0 +1,82 @@
+{
+  "chip": "h100",
+  "clock_lock": true,
+  "created_by": "you",
+  "custom_image": {
+    "digest": "sha256:94fd755736cb58979173d491504f0b573247b1745250249415b07fefc738e41f",
+    "facts": {
+      "bash": true,
+      "home": "/root",
+      "home_hides": [],
+      "home_source": "given",
+      "nvcc": true,
+      "python3": false,
+      "sudo": false,
+      "uid": 0
+    },
+    "home": "/root",
+    "note": "your own image, supervised by the platform: its entrypoint never runs (the platform keeps the node alive for run_command), and only the home path survives stops - everything else resets every wake"
+  },
+  "disk": "intact",
+  "environment": {
+    "compute_capability": "9.0",
+    "driver_version": "595.91.07",
+    "gpu_graphics": true,
+    "gpu_graphics_enabled": false,
+    "note": "the image's toolkit and the host driver, the two facts that decide whether a CUDA extension can compile here: building one requires torch's CUDA major to equal nvcc's major. image_torch is what this IMAGE ships (null = none, so pip resolves torch from the index and its CUDA build is yours to check); cuda_major_max is the highest CUDA major this host driver runs, minor versions within it included. gpu_graphics says whether this host carries the driver's GL and Vulkan libraries, and gpu_graphics_enabled whether your organization's nodes ask for them: GPU graphics is off by default and turned on per organization on request (file_ticket; the docs section is /docs#gpu-graphics), and a node renders through Vulkan, EGL or OpenGL only when both are true. node_doctor checks the pairing for you."
+  },
+  "id": "d9dda3a4-023d-4fa6-a096-ca7c49ca9042",
+  "image": "nvidia/cuda:11.8.0-devel-ubuntu22.04",
+  "mission": "relh-sugarscape-replications",
+  "name": "relh-sugarscape-richmond-h100-20261017-v1",
+  "object": "node",
+  "profiling": false,
+  "rate": {
+    "calendar": {
+      "band": "weekday",
+      "next_cheaper": {
+        "band": "Friday",
+        "per_min": "$0.05628/min",
+        "per_min_usd_micros": 56280,
+        "percent_off": 33,
+        "starts_at": "2026-10-23T07:00:00Z"
+      },
+      "note": "Fridays 33% off, weekends 20% off (US Pacific) - applied to the minutes that run on those days, not locked at create",
+      "percent_off": 0
+    },
+    "gpu_count": 1,
+    "idle_window_minutes": 15,
+    "idle_window_usd": "$1.26",
+    "idle_window_usd_micros": 1260000,
+    "minimum_minutes": 15,
+    "node_per_min": "$0.084/min",
+    "node_per_min_usd_micros": 84000,
+    "per_min": "$0.084/min",
+    "per_min_usd_micros": 84000,
+    "session_minimum_usd": "$1.26",
+    "session_minimum_usd_micros": 1260000
+  },
+  "region": "europe-north1",
+  "resources": {
+    "cpu_limit": 28.0,
+    "memory_limit_bytes": 123589153280,
+    "note": "this container's cgroup budget - the CPU limit is a CFS quota, which os.cpu_count(), /proc/cpuinfo, psutil and free cannot see: they all report the HOST. Size parallelism (dataloader num_workers, multiprocessing.Pool, make -j) and memory to THESE numbers. Also inside the container: $GMN_CPU_LIMIT, $GMN_MEMORY_LIMIT_BYTES, with OMP_NUM_THREADS, RAYON_NUM_THREADS, MAX_JOBS and PYTHON_CPU_COUNT preset to the budget, so the OpenMP, Rust and torch-extension-build pools size to it. They are set on the CONTAINER, so they outrank an ENV baked into a custom image; override them in run_command's env, not a Dockerfile. GNU nproc answers the budget too (it reads OMP_NUM_THREADS) - busybox/Alpine nproc does not, so check yours on a custom image. What reports the host everywhere is os.cpu_count() (and PYTHON_CPU_COUNT only reaches it on Python 3.13+): read $GMN_CPU_LIMIT instead of os.cpu_count() anywhere you size a pool."
+  },
+  "status": "stopped (disk intact)",
+  "stopped": {
+    "at": "2026-10-20T00:38:52.330453+00:00",
+    "note": "stop_node was called - by you, another agent or member of this workspace, or an operator. list_audit_events (event node.stop) names who",
+    "ran_seconds": 443,
+    "reason": "stop_requested"
+  },
+  "sustained_clock_mhz": 1590,
+  "wake_estimate": {
+    "assumes_contested": true,
+    "estimate_basis": "queue from 98 recent h100 wake departures over 7d; spin-up from 16 h100 wake samples; no recent wake history for this shape; no new capacity is being added for this shape right now",
+    "estimated_ready_seconds": 6156,
+    "estimated_ready_seconds_p90": 36976,
+    "note": "what a wake requested right now would be quoted, from the wake queue as it stands - a reading, not a reservation; conditions at your actual wake may differ, and a wake when the shape has capacity free is near-immediate. Wakes are served before creates. If this disk holds the only copy of files you will need soon, weigh this number before relying on a stop/wake round trip - snapshot_node or export_data keeps a durable copy a wake never has to wait for.",
+    "queued_wakes": 0
+  },
+  "yours": true
+}

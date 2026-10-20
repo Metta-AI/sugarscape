@@ -1,0 +1,1009 @@
+{
+  "steps": 100,
+  "post_step_agent_observations": 508404,
+  "moves": 508375,
+  "deaths": 6878,
+  "scope": "Reconstruct metabolism, death, resource accounting and transfers from native states.\n\nObserved destinations are inputs: this does not independently reproduce GPU random\nchoices, conflict winners, or the order of within-step resolution rounds.\n",
+  "observations": [
+    {
+      "step": 0,
+      "active": 11244,
+      "deaths": 20,
+      "moves": 11230,
+      "stays": 14,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 1,
+      "active": 10835,
+      "deaths": 409,
+      "moves": 10831,
+      "stays": 4,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 2,
+      "active": 10211,
+      "deaths": 624,
+      "moves": 10209,
+      "stays": 2,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 3,
+      "active": 9537,
+      "deaths": 674,
+      "moves": 9537,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 4,
+      "active": 8777,
+      "deaths": 760,
+      "moves": 8776,
+      "stays": 1,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 5,
+      "active": 8089,
+      "deaths": 688,
+      "moves": 8089,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 6,
+      "active": 7617,
+      "deaths": 472,
+      "moves": 7617,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 7,
+      "active": 7184,
+      "deaths": 433,
+      "moves": 7184,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 8,
+      "active": 6810,
+      "deaths": 374,
+      "moves": 6809,
+      "stays": 1,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 9,
+      "active": 6528,
+      "deaths": 282,
+      "moves": 6527,
+      "stays": 1,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 10,
+      "active": 6250,
+      "deaths": 278,
+      "moves": 6250,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 11,
+      "active": 6011,
+      "deaths": 239,
+      "moves": 6011,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 12,
+      "active": 5849,
+      "deaths": 162,
+      "moves": 5849,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 13,
+      "active": 5725,
+      "deaths": 124,
+      "moves": 5725,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 14,
+      "active": 5606,
+      "deaths": 119,
+      "moves": 5606,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 15,
+      "active": 5511,
+      "deaths": 95,
+      "moves": 5511,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 16,
+      "active": 5410,
+      "deaths": 101,
+      "moves": 5410,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 17,
+      "active": 5319,
+      "deaths": 91,
+      "moves": 5319,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 18,
+      "active": 5251,
+      "deaths": 68,
+      "moves": 5251,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 19,
+      "active": 5180,
+      "deaths": 71,
+      "moves": 5180,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 20,
+      "active": 5112,
+      "deaths": 68,
+      "moves": 5112,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 21,
+      "active": 5040,
+      "deaths": 72,
+      "moves": 5040,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 22,
+      "active": 4988,
+      "deaths": 52,
+      "moves": 4988,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 23,
+      "active": 4938,
+      "deaths": 50,
+      "moves": 4938,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 24,
+      "active": 4891,
+      "deaths": 47,
+      "moves": 4891,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 25,
+      "active": 4869,
+      "deaths": 22,
+      "moves": 4869,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 26,
+      "active": 4845,
+      "deaths": 24,
+      "moves": 4845,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 27,
+      "active": 4826,
+      "deaths": 19,
+      "moves": 4826,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 28,
+      "active": 4797,
+      "deaths": 29,
+      "moves": 4797,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 29,
+      "active": 4788,
+      "deaths": 9,
+      "moves": 4788,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 30,
+      "active": 4771,
+      "deaths": 17,
+      "moves": 4771,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 31,
+      "active": 4751,
+      "deaths": 20,
+      "moves": 4751,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 32,
+      "active": 4740,
+      "deaths": 11,
+      "moves": 4740,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 33,
+      "active": 4724,
+      "deaths": 16,
+      "moves": 4724,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 34,
+      "active": 4708,
+      "deaths": 16,
+      "moves": 4708,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 35,
+      "active": 4694,
+      "deaths": 14,
+      "moves": 4694,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 36,
+      "active": 4686,
+      "deaths": 8,
+      "moves": 4686,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 37,
+      "active": 4680,
+      "deaths": 6,
+      "moves": 4680,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 38,
+      "active": 4673,
+      "deaths": 7,
+      "moves": 4673,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 39,
+      "active": 4659,
+      "deaths": 14,
+      "moves": 4659,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 40,
+      "active": 4649,
+      "deaths": 10,
+      "moves": 4649,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 41,
+      "active": 4640,
+      "deaths": 9,
+      "moves": 4640,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 42,
+      "active": 4634,
+      "deaths": 6,
+      "moves": 4634,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 43,
+      "active": 4629,
+      "deaths": 5,
+      "moves": 4629,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 44,
+      "active": 4614,
+      "deaths": 15,
+      "moves": 4614,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 45,
+      "active": 4610,
+      "deaths": 4,
+      "moves": 4610,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 46,
+      "active": 4600,
+      "deaths": 10,
+      "moves": 4599,
+      "stays": 1,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 47,
+      "active": 4597,
+      "deaths": 3,
+      "moves": 4596,
+      "stays": 1,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 48,
+      "active": 4590,
+      "deaths": 7,
+      "moves": 4589,
+      "stays": 1,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 49,
+      "active": 4583,
+      "deaths": 7,
+      "moves": 4582,
+      "stays": 1,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 50,
+      "active": 4579,
+      "deaths": 4,
+      "moves": 4579,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 51,
+      "active": 4574,
+      "deaths": 5,
+      "moves": 4574,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 52,
+      "active": 4567,
+      "deaths": 7,
+      "moves": 4567,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 53,
+      "active": 4558,
+      "deaths": 9,
+      "moves": 4558,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 54,
+      "active": 4551,
+      "deaths": 7,
+      "moves": 4551,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 55,
+      "active": 4544,
+      "deaths": 7,
+      "moves": 4544,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 56,
+      "active": 4541,
+      "deaths": 3,
+      "moves": 4541,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 57,
+      "active": 4537,
+      "deaths": 4,
+      "moves": 4537,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 58,
+      "active": 4533,
+      "deaths": 4,
+      "moves": 4533,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 59,
+      "active": 4527,
+      "deaths": 6,
+      "moves": 4527,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 60,
+      "active": 4524,
+      "deaths": 3,
+      "moves": 4524,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 61,
+      "active": 4521,
+      "deaths": 3,
+      "moves": 4521,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 62,
+      "active": 4517,
+      "deaths": 4,
+      "moves": 4517,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 63,
+      "active": 4511,
+      "deaths": 6,
+      "moves": 4511,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 64,
+      "active": 4502,
+      "deaths": 9,
+      "moves": 4502,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 65,
+      "active": 4497,
+      "deaths": 5,
+      "moves": 4497,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 66,
+      "active": 4489,
+      "deaths": 8,
+      "moves": 4489,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 67,
+      "active": 4486,
+      "deaths": 3,
+      "moves": 4486,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 68,
+      "active": 4477,
+      "deaths": 9,
+      "moves": 4477,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 69,
+      "active": 4473,
+      "deaths": 4,
+      "moves": 4473,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 70,
+      "active": 4471,
+      "deaths": 2,
+      "moves": 4471,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 71,
+      "active": 4463,
+      "deaths": 8,
+      "moves": 4463,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 72,
+      "active": 4460,
+      "deaths": 3,
+      "moves": 4460,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 73,
+      "active": 4455,
+      "deaths": 5,
+      "moves": 4454,
+      "stays": 1,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 74,
+      "active": 4455,
+      "deaths": 0,
+      "moves": 4454,
+      "stays": 1,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 75,
+      "active": 4452,
+      "deaths": 3,
+      "moves": 4452,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 76,
+      "active": 4447,
+      "deaths": 5,
+      "moves": 4447,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 77,
+      "active": 4446,
+      "deaths": 1,
+      "moves": 4446,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 78,
+      "active": 4440,
+      "deaths": 6,
+      "moves": 4440,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 79,
+      "active": 4439,
+      "deaths": 1,
+      "moves": 4439,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 80,
+      "active": 4433,
+      "deaths": 6,
+      "moves": 4433,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 81,
+      "active": 4425,
+      "deaths": 8,
+      "moves": 4425,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 82,
+      "active": 4422,
+      "deaths": 3,
+      "moves": 4422,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 83,
+      "active": 4416,
+      "deaths": 6,
+      "moves": 4416,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 84,
+      "active": 4413,
+      "deaths": 3,
+      "moves": 4413,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 85,
+      "active": 4412,
+      "deaths": 1,
+      "moves": 4412,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 86,
+      "active": 4408,
+      "deaths": 4,
+      "moves": 4408,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 87,
+      "active": 4407,
+      "deaths": 1,
+      "moves": 4407,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 88,
+      "active": 4405,
+      "deaths": 2,
+      "moves": 4405,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 89,
+      "active": 4405,
+      "deaths": 0,
+      "moves": 4405,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 90,
+      "active": 4402,
+      "deaths": 3,
+      "moves": 4402,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 91,
+      "active": 4399,
+      "deaths": 3,
+      "moves": 4399,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 92,
+      "active": 4398,
+      "deaths": 1,
+      "moves": 4398,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 93,
+      "active": 4397,
+      "deaths": 1,
+      "moves": 4397,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 94,
+      "active": 4396,
+      "deaths": 1,
+      "moves": 4396,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 95,
+      "active": 4396,
+      "deaths": 0,
+      "moves": 4396,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 96,
+      "active": 4396,
+      "deaths": 0,
+      "moves": 4396,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 97,
+      "active": 4393,
+      "deaths": 3,
+      "moves": 4393,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 98,
+      "active": 4389,
+      "deaths": 4,
+      "moves": 4389,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    },
+    {
+      "step": 99,
+      "active": 4386,
+      "deaths": 3,
+      "moves": 4386,
+      "stays": 0,
+      "diagonal_moves": 0,
+      "negative_wealth_after_metabolism_survivors": 0,
+      "unresolved": 0
+    }
+  ]
+}
