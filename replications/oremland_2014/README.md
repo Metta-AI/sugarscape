@@ -198,9 +198,9 @@ The ordinary ranking auditor's consecutive-seed contract does not apply to this 
 
 ## Remaining paper scope
 
-The original author implementation, original 100 controls and random streams, model-reduction conventions, and optimizer implementation remain unavailable.
-Uniform-rate controls do not establish Figure 9's convergence claim, Figure 10's policy-ranking agreement, Figure 11's Pareto-frontier transfer, or Table 2's historical timings.
-These figures and the optimization experiments remain required; no paper-completion credit is assigned.
+The original author implementation, original 100 controls and random streams, and historical reduction and optimizer settings remain unavailable.
+Completed convergence and ranking ensembles above evaluate explicit reconstruction choices; they do not establish the authors’ original controls or uncertainty bars.
+Figure 11’s optimized-policy transfer and Table 2’s historical timings remain unreproduced. No paper-completion credit is assigned.
 
 The full-size landscape is resolved. Reduced-grid conventions now have explicit, qualified sensitivity cases; their agreement with the original author implementation remains unproven.
 Under the prose death rule, negative-payment clipping leaves paired survivor states unchanged. This does not extend to the algorithm’s negative-only death rule.
@@ -242,3 +242,23 @@ Its native qualification verifies 408 states and confirms surviving zero-sugar a
 [All 37,600 paired runs now pass audit](results/death-boundary-complete-2026-10-18). Mortality changes in 37,223 pairs.
 Algorithm-rule 40x40 pooled average-rank linear mortality concordance is 0.5854/0.5511, versus 0.8686/0.8695 under the prose rule.
 The source ambiguity remains unresolved; neither sensitivity earns paper-completion or validated-negative credit.
+
+## Native optimizer qualification
+
+[The Algorithm 1 reconstruction](results/optimizer-qualification-2026-10-20) now executes policy search through the qualified native simulator.
+Three bounded workflows evaluate 3,600 native simulations, each lasting 50 steps.
+Independent replay reconstructs objectives, nondominated survivors, parent selection, crossover, mutation, and final evaluated frontiers from retained records.
+A corrupted-offspring control must fail that replay. Restored runtime outputs match all 400 earlier qualification inputs, excluding elapsed time.
+
+The paper leaves the population budget, generation budget, neighborhood definition, and some tournament semantics unspecified.
+These workflows declare 12 candidates, two generations, 50 common seeds, and normalized Hamming neighborhoods.
+They compare two dominance interpretations and exercise neighborhood selection with a separate radius sensitivity.
+Mutation selects a different rate; odd population slots keep the first child. These are reconstruction choices, not recovered historical settings.
+The final unevaluated children are retained separately from the reported evaluated frontier.
+
+This validates optimizer execution, not convergence, global optimality, or Figure 11’s reduced-to-full-model frontier transfer.
+
+```sh
+python run_optimizer.py /path/to/qualified-runtime-manifest.json /path/to/protocol.json /path/to/new-run
+python audit_optimizer.py /path/to/new-run /path/to/new-audit.json
+```
