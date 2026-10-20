@@ -1,0 +1,30 @@
+{
+  "manifest_sha256": "3633edf2ca2ec1bd59222e15241655c38c7ec0cacffd1948294ed7c69be85c37",
+  "completed_inputs": 3,
+  "remaining_inputs": 1597,
+  "observations": 60003,
+  "completed": [
+    {
+      "run_id": "released-code-pair-01-repeat-00",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-ensemble-first-input-001",
+      "trajectory_sha256": "7890ea33a81601d3681fc56be9275fa7f9ba260cd2ffd07e486827a9c5370b0a",
+      "observations": 20001,
+      "elapsed_seconds": 217.11391962500056
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-00",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-first-batch-001/runs/released-code-pair-00-repeat-00",
+      "trajectory_sha256": "8298ba94aa95f8404dc9f926ff458b4521b1114359fd5eb6cc0c8871260affbc",
+      "observations": 20001,
+      "elapsed_seconds": 247.54366954200668
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-01",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-first-batch-001/runs/released-code-pair-00-repeat-01",
+      "trajectory_sha256": "a141467f4ccececb8e5a495578483131ab89ad2ec21f81d7fb9f492e0b44df04",
+      "observations": 20001,
+      "elapsed_seconds": 246.94644608400995
+    }
+  ],
+  "scope": "Verified complete inputs only; no full-ensemble or published-result verdict."
+}

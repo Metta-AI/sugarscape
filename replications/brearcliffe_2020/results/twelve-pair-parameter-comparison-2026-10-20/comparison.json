@@ -1,0 +1,1496 @@
+{
+  "source_sha256": {
+    "horizontal-calibration-correction-2026-10-19/metric-curves.json.gz": "4ec231b3714289deeab9e92bae99efb3fe4c0cb2552e6ba2e7fd2565a12bc8fd",
+    "rule-m-rule-m-complete-cohort-2026-10-19/cohort-summary.json": "705947f7c64cf2decd4a53a4044000e96d05bc7171673b8792116962753b49d7",
+    "rule-m-rule-m-complete-cohort-2026-10-19/means.csv.gz": "39180319fefb71641a56d923089386fd4ae9422c8c283015c4664ff76bb649d7",
+    "horizontal-calibration-correction-2026-10-19/rule-m-rule-m/curve-comparison.json.gz": "1a3e64d5f1778b05480850d7b0b9fcf2a9219a68ef880d47d8d710336dce0624",
+    "paper-rule-m-complete-cohort-2026-10-19/cohort-summary.json": "f230fa713f3b22f3c3897dd8efc738b18f402e753f559e254c8f1cd11c050964",
+    "paper-rule-m-complete-cohort-2026-10-19/means.csv.gz": "39180319fefb71641a56d923089386fd4ae9422c8c283015c4664ff76bb649d7",
+    "paper-rule-m-complete-cohort-2026-10-19/curve-comparison.json.gz": "457f6e39f850993dde37eaf600a03169643e599e3781f66f34afe29decc989d5",
+    "rule-m-ec-complete-cohort-2026-10-19/cohort-summary.json": "85a6de5c7021c075bc7d4cc6edf38c403442a678c0236efce6b2e3dca12aeca7",
+    "rule-m-ec-complete-cohort-2026-10-19/means.csv.gz": "2a664348896ab9cf8c39aa3643f665cb32385aad55dc8968af6eb9b8c2a8569d",
+    "horizontal-calibration-correction-2026-10-19/rule-m-ec/curve-comparison.json.gz": "7e326ec08fa5f270bcdaec32aaa90ff52bfd1ab37fe845b60d729400fda3d94e",
+    "paper-rule-m-ec-complete-cohort-2026-10-19/cohort-summary.json": "b4ab78a79e5bed598bb1783b684e35b037f7da4b09992022572b2dfee8bc2c21",
+    "paper-rule-m-ec-complete-cohort-2026-10-19/means.csv.gz": "2a664348896ab9cf8c39aa3643f665cb32385aad55dc8968af6eb9b8c2a8569d",
+    "paper-rule-m-ec-complete-cohort-2026-10-19/curve-comparison.json.gz": "465bd6062ea6b3c0b914036ae309aabe8c49e597a51382a0555ba6ee6cd54f69",
+    "rule-m-q-complete-cohort-2026-10-19/cohort-summary.json": "ffdb3d6951aca5fc377b21db96a8713307852f0575ba8d27417b50308eb14fa2",
+    "rule-m-q-complete-cohort-2026-10-19/means.csv.gz": "6b0fa7e799fe74ef2a480da7af7122d1246dc3a50fa676f1af0366ce5142d659",
+    "horizontal-calibration-correction-2026-10-19/rule-m-q/curve-comparison.json.gz": "f215146c310620351477f4631f61373cb663275e4af61786c5bf144b7d16fd86",
+    "paper-rule-m-q-complete-cohort-2026-10-19/cohort-summary.json": "72cdfece77465fc43dfaac63502a57cfa2a0c3c9aed5b36b9c942916888dcc93",
+    "paper-rule-m-q-complete-cohort-2026-10-19/means.csv.gz": "7bdf0efd4ead146b0b242f226860b91f72369e15211aa884a4a2d3cacc21559c",
+    "paper-rule-m-q-complete-cohort-2026-10-19/curve-comparison.json.gz": "bc0d53c4182793a8e2064988d950adf7d627d6d2a715bbbbccb42be318d8f481",
+    "rule-m-sarsa-complete-cohort-2026-10-19/cohort-summary.json": "5c450103968895da34d5fc76ccfca504fa98d2f80c7efa7e730ba669c4734912",
+    "rule-m-sarsa-complete-cohort-2026-10-19/means.csv.gz": "286396b32b9d28ec42ddf4b0b058891f56054853982c99050c343899babc067a",
+    "horizontal-calibration-correction-2026-10-19/rule-m-sarsa/curve-comparison.json.gz": "729eea0e6b19072edd88d2a52f6f05b09b1e1cb8c92fb62f74ab6d7519ac69f3",
+    "paper-rule-m-sarsa-complete-cohort-2026-10-19/cohort-summary.json": "219b6e36047316dab6b9fd3836eed6fbb23aaaaa17906857ac2e8ffcd6873e8f",
+    "paper-rule-m-sarsa-complete-cohort-2026-10-19/means.csv.gz": "7cc015d926e430da7cd23ac33dc6ee5045501b11e2df7b105e55f5c57a55c67b",
+    "paper-rule-m-sarsa-complete-cohort-2026-10-19/curve-comparison.json.gz": "f35259fef394ad3a6958910d0332d7fed27e239a4fec81a1e6e056e251c43140",
+    "ec-rule-m-complete-cohort-2026-10-19/cohort-summary.json": "0afbd1f723bd7cb0f985e4fc4ff300672487ccc2449e9d5c81bd4c640f3ec9a4",
+    "ec-rule-m-complete-cohort-2026-10-19/means.csv.gz": "119830ac6f97936b1b4919b1b86ef78e737732533c33d0dde925ed924189a07b",
+    "ec-rule-m-complete-cohort-2026-10-19/curve-comparison.json.gz": "5e1602481cae7d91116bc872e8415297b127beb0e9e105efd8e42d816b65d401",
+    "paper-ec-rule-m-complete-cohort-2026-10-19/cohort-summary.json": "d1e3572f765e98dc0660b18f558b78ca7e93180bbf0def4fb44af52c40763efe",
+    "paper-ec-rule-m-complete-cohort-2026-10-19/means.csv.gz": "119830ac6f97936b1b4919b1b86ef78e737732533c33d0dde925ed924189a07b",
+    "paper-ec-rule-m-complete-cohort-2026-10-19/curve-comparison.json.gz": "380a2344419d77e31a30be274dd8ec506597b52a98fef772928ac087be6ab7ab",
+    "ec-ec-complete-cohort-2026-10-19/cohort-summary.json": "9487107e6e7e6db6f7b60f456fccfa16b1faa06a772af6e3856ebdc34480e25a",
+    "ec-ec-complete-cohort-2026-10-19/means.csv.gz": "1b07c7780c7048a91cd72d381930c9f2ffd9cb798de3626abfb54d814650e94a",
+    "ec-ec-complete-cohort-2026-10-19/curve-comparison.json.gz": "ab2bca7a25b4694e0258da78a7ed91b62af4098d95b82e0695b0d68f39a418f2",
+    "paper-ec-ec-complete-cohort-2026-10-19/cohort-summary.json": "44ad102389e4098a905e5c6fd41e29eaea5ab127cd56e20b395d24aebc33698d",
+    "paper-ec-ec-complete-cohort-2026-10-19/means.csv.gz": "2532020bcf90380e1e9317f5b75673496f41aed66ec1879a9848e9959148e272",
+    "paper-ec-ec-complete-cohort-2026-10-19/curve-comparison.json.gz": "e46cc206eb586696f8e5f639334fa3df769116e557097a52f1093dc56bbbc12b",
+    "ec-q-complete-cohort-2026-10-19/cohort-summary.json": "9593ea4b4ce9d7a3214c37516ba0ebbbdebc82919fd549070ed39a938f2f6256",
+    "ec-q-complete-cohort-2026-10-19/means.csv.gz": "58da45effbced1d77cf7e1fdeb286139ddc60943f63b1b2432166c5de20af3c2",
+    "ec-q-complete-cohort-2026-10-19/curve-comparison.json.gz": "f6ff7af52444d9680ab13a443af96c1bb9c76005b3d44fe21e85249c058f99cd",
+    "paper-ec-q-complete-cohort-2026-10-19/cohort-summary.json": "c0a7d46402f0993373f96c79795de3e2dffaa8c90b0dcbb64b01d4a89453ada6",
+    "paper-ec-q-complete-cohort-2026-10-19/means.csv.gz": "fff0e2c2496ef1256e4e485d6c6c08a583f3766bb882924369aa519ab2d1e2b6",
+    "paper-ec-q-complete-cohort-2026-10-19/curve-comparison.json.gz": "4f6c7a1664f169e77ab63f21adce10995c644a95a10b967835d8d287a88ab2b3",
+    "ec-sarsa-complete-cohort-2026-10-19/cohort-summary.json": "d029433c89f01511bab628c91ed5c6fc6ff94098b93f2270a8d755b51b2fc6e7",
+    "ec-sarsa-complete-cohort-2026-10-19/means.csv.gz": "a8445d60f5cdac3c21bac72b31e0df00dc87ce1fd069a1d0eaeb25e0475f618b",
+    "ec-sarsa-complete-cohort-2026-10-19/curve-comparison.json.gz": "e62ae6eeceb40cb59ce807751a2b8c8b100e61ddd88959c482954ff620a50e54",
+    "paper-ec-sarsa-complete-cohort-2026-10-20/cohort-summary.json": "32bee60a7d1d214df078d4ba09114b1cc921fce3dc849e9c0667d9078e894eb5",
+    "paper-ec-sarsa-complete-cohort-2026-10-20/means.csv.gz": "e181bbee17be9a5eaa434b5b2faf13252b3b673d0d9caeb5d01b5af456f87027",
+    "paper-ec-sarsa-complete-cohort-2026-10-20/curve-comparison.json.gz": "9ac97276a1b414214c85a04198cc6df359127cf10e355caf4feed8793b85c40f",
+    "q-rule-m-complete-cohort-2026-10-19/cohort-summary.json": "fef1c562814ec418876671845eee08eee619b6e5b4edb95697d86505218681f5",
+    "q-rule-m-complete-cohort-2026-10-19/means.csv.gz": "4cf074438fd5d7710b9366934897142f1d8685250d7e648302dd49c980b1ec89",
+    "q-rule-m-complete-cohort-2026-10-19/curve-comparison.json.gz": "a3db6b759a1834a56df87909c5f3425515c3ea06879c794f2ba90ae4675a1b01",
+    "paper-q-rule-m-complete-cohort-2026-10-20/cohort-summary.json": "e4c415c7e7d6e26f62f9a0de35b4e3b88c39bda5a6aa25d238547afaa67e8558",
+    "paper-q-rule-m-complete-cohort-2026-10-20/means.csv.gz": "947da9a755feb7107ceb1c926bb3b7a355693e2060ec9a9daad2bb1354140bab",
+    "paper-q-rule-m-complete-cohort-2026-10-20/curve-comparison.json.gz": "ad087f6ec349b84ab0ec9436c72af95db8a8a15b992f5d458f4fbc870694d2d2",
+    "q-ec-complete-cohort-2026-10-19/cohort-summary.json": "0c0fc7c9231a3f9dd38fad05dff835c24f1ca18a8622af7ddbf7eef6c391ba6d",
+    "q-ec-complete-cohort-2026-10-19/means.csv.gz": "14c0a91a9401cf731f6c867079ca8b68201d849a576f7ca078c99a3ebdb5a9d1",
+    "q-ec-complete-cohort-2026-10-19/curve-comparison.json.gz": "e0993f350818f6a9d8657d3f5414032721c239367704af271985663e953018fc",
+    "paper-q-ec-complete-cohort-2026-10-20/cohort-summary.json": "5e418a49289d272b5f93474d3c8d654f7c8cf158c809017827e2ab66eb5aede3",
+    "paper-q-ec-complete-cohort-2026-10-20/means.csv.gz": "8540df729622b8219058493ea5b029b6eb8c2769056953d70593f0bd8c82aa33",
+    "paper-q-ec-complete-cohort-2026-10-20/curve-comparison.json.gz": "4a9c0a04b422a5532b20f584344d7ad3f1c720fbe2d2d5caaaa84a47408d8469",
+    "q-q-complete-cohort-2026-10-19/cohort-summary.json": "f07402c824a5773fd5cef185629efec3957fb839829246df5090b9660d49325c",
+    "q-q-complete-cohort-2026-10-19/means.csv.gz": "a00051ef1fd4aa7c590835ce3d0db0fd48fa153ab2d3cfe6579bf51c70b08e13",
+    "q-q-complete-cohort-2026-10-19/curve-comparison.json.gz": "e9427c560b9c98336e24539b2e4dea0a663d235c3bf0e6186abe4a188e389805",
+    "paper-q-q-complete-cohort-2026-10-20/cohort-summary.json": "b6c37ffe7e0a9d2e50fcd57b7ac2bb754e02be5741f30616d26f473ab652d80c",
+    "paper-q-q-complete-cohort-2026-10-20/means.csv.gz": "eb65ff994b0842fac4421f71cbb4697665b35acedd960517a708a1c0526fdc77",
+    "paper-q-q-complete-cohort-2026-10-20/curve-comparison.json.gz": "6b00a043d897171d9dc6512748c7294c35c02b74b7d8477340ee64fb834d79f4",
+    "q-sarsa-complete-cohort-2026-10-19/cohort-summary.json": "bc72ad320a7a3dd4348fee173b9b6a0a60dc026c1b8c8d70b0127c5545b917ce",
+    "q-sarsa-complete-cohort-2026-10-19/means.csv.gz": "20d1b51f032c82067ada616dfd39f8e53050bae4fc21ab71a2ab2860ab803e2c",
+    "q-sarsa-complete-cohort-2026-10-19/curve-comparison.json.gz": "a5267283b63dd40cbd3ac0d76761d5979b38a9bb63149cff1873bae3988cfd6c",
+    "paper-q-sarsa-complete-cohort-2026-10-20/cohort-summary.json": "dc79d14ea951a35a5e9e198bd374ef1659d8225ca2c14fd68a624ac4d22b20eb",
+    "paper-q-sarsa-complete-cohort-2026-10-20/means.csv.gz": "7f1c5e74b9dedb2bd4b14c6c0bdff57442c86d7a318501ea83daec639cbac285",
+    "paper-q-sarsa-complete-cohort-2026-10-20/curve-comparison.json.gz": "45df80791722b2e5e904aee81d2bfaa6ba334e6121049bd541c6467eb60809d2"
+  },
+  "paired_inputs": 600,
+  "interpretation_inputs": 1200,
+  "pairings": [
+    {
+      "pair_index": 0,
+      "group_A": "Rule M",
+      "group_B": "Rule M",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 50,
+      "curve_counts": {
+        "unresolved": 1714,
+        "both_overlap": 2107,
+        "neither_overlap": 55
+      },
+      "endpoint_counts": {
+        "both_overlap": 9,
+        "unresolved": 5
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "both_overlap",
+          "released_mean": 188.37996954887223,
+          "paper_mean": 188.37996954887223,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 191.65375,
+          "paper_mean": 191.65375,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "unresolved",
+          "released_mean": 2.789688471177945,
+          "paper_mean": 2.789688471177945,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "both_overlap",
+          "released_mean": 2.7961499999999995,
+          "paper_mean": 2.7961499999999995,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "unresolved",
+          "released_mean": 1.315964912280702,
+          "paper_mean": 1.315964912280702,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.3086,
+          "paper_mean": 1.3086,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "unresolved",
+          "released_mean": 30426.159999999996,
+          "paper_mean": 30426.159999999996,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 30408.54,
+          "paper_mean": 30408.54,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "unresolved",
+          "released_mean": 54328.740000000005,
+          "paper_mean": 54328.740000000005,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 54310.299999999996,
+          "paper_mean": 54310.299999999996,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "unresolved",
+          "released_mean": 283.55959398496236,
+          "paper_mean": 283.55959398496236,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 289.71175000000005,
+          "paper_mean": 289.71175000000005,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 3125.3,
+          "paper_mean": 3125.3,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 3137.959999999999,
+          "paper_mean": 3137.959999999999,
+          "paper_minus_released_mean": 0.0
+        }
+      ]
+    },
+    {
+      "pair_index": 1,
+      "group_A": "Rule M",
+      "group_B": "EC",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 50,
+      "curve_counts": {
+        "unresolved": 73,
+        "both_overlap": 3546,
+        "neither_overlap": 257
+      },
+      "endpoint_counts": {
+        "both_overlap": 12,
+        "neither_overlap": 2
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "both_overlap",
+          "released_mean": 400.59175000000005,
+          "paper_mean": 400.59175000000005,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 225.11759999999995,
+          "paper_mean": 225.11759999999995,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "both_overlap",
+          "released_mean": 3.1500000000000004,
+          "paper_mean": 3.1500000000000004,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "neither_overlap",
+          "released_mean": 1.22,
+          "paper_mean": 1.22,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "both_overlap",
+          "released_mean": 1.3243999999999998,
+          "paper_mean": 1.3243999999999998,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.0,
+          "paper_mean": 1.0,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 16579.959999999995,
+          "paper_mean": 16579.959999999995,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 20706.079999999994,
+          "paper_mean": 20706.079999999994,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 28211.24,
+          "paper_mean": 28211.24,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 266.82000000000005,
+          "paper_mean": 266.82000000000005,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 526.27115,
+          "paper_mean": 526.27115,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 413.2123999999999,
+          "paper_mean": 413.2123999999999,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "neither_overlap",
+          "released_mean": 5203.06,
+          "paper_mean": 5203.06,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 2708.96,
+          "paper_mean": 2708.96,
+          "paper_minus_released_mean": 0.0
+        }
+      ]
+    },
+    {
+      "pair_index": 2,
+      "group_A": "Rule M",
+      "group_B": "Q-Learning",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 0,
+      "curve_counts": {
+        "both_overlap": 3105,
+        "unresolved": 713,
+        "neither_overlap": 36,
+        "released_only": 6,
+        "paper_only": 16
+      },
+      "endpoint_counts": {
+        "both_overlap": 11,
+        "unresolved": 2,
+        "neither_overlap": 1
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "both_overlap",
+          "released_mean": 387.9128500000001,
+          "paper_mean": 397.20990000000006,
+          "paper_minus_released_mean": 9.297049999999956
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 184.91399999999996,
+          "paper_mean": 183.51245,
+          "paper_minus_released_mean": -1.4015499999999577
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "both_overlap",
+          "released_mean": 3.150399999999999,
+          "paper_mean": 3.144449999999999,
+          "paper_minus_released_mean": -0.0059499999999999
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "both_overlap",
+          "released_mean": 2.7309999999999994,
+          "paper_mean": 2.7493000000000007,
+          "paper_minus_released_mean": 0.018300000000001315
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "both_overlap",
+          "released_mean": 1.3170999999999997,
+          "paper_mean": 1.3209499999999998,
+          "paper_minus_released_mean": 0.003850000000000131
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.07335,
+          "paper_mean": 1.08125,
+          "paper_minus_released_mean": 0.007900000000000018
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "unresolved",
+          "released_mean": 13801.920000000002,
+          "paper_mean": 13799.320000000002,
+          "paper_minus_released_mean": -2.600000000000364
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "unresolved",
+          "released_mean": 11637.799999999997,
+          "paper_mean": 11622.979999999996,
+          "paper_minus_released_mean": -14.820000000001528
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 23014.379999999994,
+          "paper_mean": 22961.119999999995,
+          "paper_minus_released_mean": -53.2599999999984
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 33239.3,
+          "paper_mean": 33197.02000000002,
+          "paper_minus_released_mean": -42.279999999984284
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 507.0963999999999,
+          "paper_mean": 519.4937000000003,
+          "paper_minus_released_mean": 12.397300000000428
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 778.2284999999998,
+          "paper_mean": 768.5338499999999,
+          "paper_minus_released_mean": -9.69464999999991
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "neither_overlap",
+          "released_mean": 5079.34,
+          "paper_mean": 5163.699999999998,
+          "paper_minus_released_mean": 84.35999999999785
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 5376.600000000001,
+          "paper_mean": 5441.16,
+          "paper_minus_released_mean": 64.55999999999858
+        }
+      ]
+    },
+    {
+      "pair_index": 3,
+      "group_A": "Rule M",
+      "group_B": "SARSA",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 0,
+      "curve_counts": {
+        "both_overlap": 3803,
+        "released_only": 1,
+        "unresolved": 69,
+        "neither_overlap": 1,
+        "paper_only": 2
+      },
+      "endpoint_counts": {
+        "both_overlap": 14
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "both_overlap",
+          "released_mean": 394.67994999999996,
+          "paper_mean": 395.07365000000004,
+          "paper_minus_released_mean": 0.39370000000008076
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 187.4541499999999,
+          "paper_mean": 188.24454999999995,
+          "paper_minus_released_mean": 0.7904000000000337
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "both_overlap",
+          "released_mean": 3.1362499999999995,
+          "paper_mean": 3.1593500000000008,
+          "paper_minus_released_mean": 0.02310000000000123
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "both_overlap",
+          "released_mean": 2.7337499999999992,
+          "paper_mean": 2.7436000000000003,
+          "paper_minus_released_mean": 0.009850000000001025
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "both_overlap",
+          "released_mean": 1.3208,
+          "paper_mean": 1.3267000000000002,
+          "paper_minus_released_mean": 0.005900000000000238
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.08,
+          "paper_mean": 1.08015,
+          "paper_minus_released_mean": 0.00014999999999987246
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 13757.8,
+          "paper_mean": 13733.46,
+          "paper_minus_released_mean": -24.340000000000146
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 11610.52,
+          "paper_mean": 11577.320000000002,
+          "paper_minus_released_mean": -33.19999999999891
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 22964.099999999995,
+          "paper_mean": 22894.460000000003,
+          "paper_minus_released_mean": -69.63999999999214
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 33145.96000000001,
+          "paper_mean": 32998.40000000002,
+          "paper_minus_released_mean": -147.55999999998312
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 514.7429500000002,
+          "paper_mean": 518.93285,
+          "paper_minus_released_mean": 4.189899999999852
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 801.8056,
+          "paper_mean": 806.4164,
+          "paper_minus_released_mean": 4.6107999999999265
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 5378.679999999999,
+          "paper_mean": 5189.86,
+          "paper_minus_released_mean": -188.8199999999997
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 6354.539999999998,
+          "paper_mean": 6171.159999999998,
+          "paper_minus_released_mean": -183.3800000000001
+        }
+      ]
+    },
+    {
+      "pair_index": 4,
+      "group_A": "EC",
+      "group_B": "Rule M",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 50,
+      "curve_counts": {
+        "both_overlap": 3555,
+        "unresolved": 76,
+        "neither_overlap": 245
+      },
+      "endpoint_counts": {
+        "both_overlap": 13,
+        "neither_overlap": 1
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "both_overlap",
+          "released_mean": 222.2881,
+          "paper_mean": 222.2881,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 417.5665,
+          "paper_mean": 417.5665,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "neither_overlap",
+          "released_mean": 1.0999999999999996,
+          "paper_mean": 1.0999999999999996,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "both_overlap",
+          "released_mean": 3.167150000000001,
+          "paper_mean": 3.167150000000001,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "both_overlap",
+          "released_mean": 1.0,
+          "paper_mean": 1.0,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.3282000000000005,
+          "paper_mean": 1.3282000000000005,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 20516.18,
+          "paper_mean": 20516.18,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 16115.220000000005,
+          "paper_mean": 16115.220000000005,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 264.97999999999996,
+          "paper_mean": 264.97999999999996,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 27151.40000000001,
+          "paper_mean": 27151.40000000001,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 427.2532,
+          "paper_mean": 427.2532,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 546.7856999999999,
+          "paper_mean": 546.7856999999999,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 2892.1199999999994,
+          "paper_mean": 2892.1199999999994,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 5594.039999999998,
+          "paper_mean": 5594.039999999998,
+          "paper_minus_released_mean": 0.0
+        }
+      ]
+    },
+    {
+      "pair_index": 5,
+      "group_A": "EC",
+      "group_B": "EC",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 50,
+      "curve_counts": {
+        "unresolved": 602,
+        "both_overlap": 820,
+        "neither_overlap": 2454
+      },
+      "endpoint_counts": {
+        "neither_overlap": 10,
+        "unresolved": 2,
+        "both_overlap": 2
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "neither_overlap",
+          "released_mean": 1790.5351000000005,
+          "paper_mean": 1790.5351000000005,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "neither_overlap",
+          "released_mean": 2320.7374000000004,
+          "paper_mean": 2320.7374000000004,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "neither_overlap",
+          "released_mean": 1.88015,
+          "paper_mean": 1.88015,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "neither_overlap",
+          "released_mean": 2.16945,
+          "paper_mean": 2.16945,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "unresolved",
+          "released_mean": 1.0,
+          "paper_mean": 1.0,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.0,
+          "paper_mean": 1.0,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "neither_overlap",
+          "released_mean": 12756.679999999998,
+          "paper_mean": 12756.679999999998,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "neither_overlap",
+          "released_mean": 11007.74,
+          "paper_mean": 11007.74,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "unresolved",
+          "released_mean": 262.42,
+          "paper_mean": 262.42,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 262.8800000000001,
+          "paper_mean": 262.8800000000001,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "neither_overlap",
+          "released_mean": 2098.3699500000007,
+          "paper_mean": 2098.3699500000007,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "neither_overlap",
+          "released_mean": 2668.5156500000003,
+          "paper_mean": 2668.5156500000003,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "neither_overlap",
+          "released_mean": 8553.019999999999,
+          "paper_mean": 8553.019999999999,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "neither_overlap",
+          "released_mean": 10635.800000000001,
+          "paper_mean": 10635.800000000001,
+          "paper_minus_released_mean": 0.0
+        }
+      ]
+    },
+    {
+      "pair_index": 6,
+      "group_A": "EC",
+      "group_B": "Q-Learning",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 0,
+      "curve_counts": {
+        "both_overlap": 3111,
+        "released_only": 189,
+        "paper_only": 333,
+        "neither_overlap": 148,
+        "unresolved": 95
+      },
+      "endpoint_counts": {
+        "both_overlap": 8,
+        "neither_overlap": 3,
+        "paper_only": 3
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "both_overlap",
+          "released_mean": 899.3551499999999,
+          "paper_mean": 895.6608500000001,
+          "paper_minus_released_mean": -3.694299999999771
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "neither_overlap",
+          "released_mean": 267.0460499999999,
+          "paper_mean": 277.4315401002507,
+          "paper_minus_released_mean": 10.385490100250763
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "neither_overlap",
+          "released_mean": 2.80365,
+          "paper_mean": 3.1963499999999994,
+          "paper_minus_released_mean": 0.39269999999999916
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "both_overlap",
+          "released_mean": 2.6909500000000004,
+          "paper_mean": 2.671086215538847,
+          "paper_minus_released_mean": -0.019863784461153333
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "both_overlap",
+          "released_mean": 1.0,
+          "paper_mean": 1.0,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.0539499999999997,
+          "paper_mean": 1.0636051378446116,
+          "paper_minus_released_mean": 0.009655137844611916
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 8545.539999999997,
+          "paper_mean": 8934.24,
+          "paper_minus_released_mean": 388.70000000000255
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "paper_only",
+          "released_mean": 11632.0,
+          "paper_mean": 12826.84,
+          "paper_minus_released_mean": 1194.8400000000001
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 272.62000000000006,
+          "paper_mean": 272.85999999999996,
+          "paper_minus_released_mean": 0.2399999999998954
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "paper_only",
+          "released_mean": 32810.6,
+          "paper_mean": 36004.80000000001,
+          "paper_minus_released_mean": 3194.2000000000116
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 999.8523499999999,
+          "paper_mean": 970.0982000000001,
+          "paper_minus_released_mean": -29.754149999999754
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "paper_only",
+          "released_mean": 1114.8835000000001,
+          "paper_mean": 1151.125022681704,
+          "paper_minus_released_mean": 36.24152268170383
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "neither_overlap",
+          "released_mean": 6297.140000000002,
+          "paper_mean": 6074.400000000001,
+          "paper_minus_released_mean": -222.7400000000016
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 6285.0199999999995,
+          "paper_mean": 6217.4800000000005,
+          "paper_minus_released_mean": -67.53999999999905
+        }
+      ]
+    },
+    {
+      "pair_index": 7,
+      "group_A": "EC",
+      "group_B": "SARSA",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 0,
+      "curve_counts": {
+        "both_overlap": 2787,
+        "released_only": 154,
+        "neither_overlap": 125,
+        "paper_only": 98,
+        "unresolved": 712
+      },
+      "endpoint_counts": {
+        "both_overlap": 10,
+        "released_only": 1,
+        "unresolved": 2,
+        "paper_only": 1
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "both_overlap",
+          "released_mean": 920.2174,
+          "paper_mean": 921.9899499999998,
+          "paper_minus_released_mean": 1.7725499999997965
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 282.67135,
+          "paper_mean": 272.5814499999999,
+          "paper_minus_released_mean": -10.089900000000114
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "released_only",
+          "released_mean": 3.1572999999999993,
+          "paper_mean": 3.0425000000000004,
+          "paper_minus_released_mean": -0.1147999999999989
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "both_overlap",
+          "released_mean": 2.698199999999999,
+          "paper_mean": 2.65435,
+          "paper_minus_released_mean": -0.043849999999999056
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "both_overlap",
+          "released_mean": 1.0,
+          "paper_mean": 1.0,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.06655,
+          "paper_mean": 1.0559999999999996,
+          "paper_minus_released_mean": -0.010550000000000503
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "unresolved",
+          "released_mean": 8654.280000000004,
+          "paper_mean": 8547.939999999999,
+          "paper_minus_released_mean": -106.3400000000056
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "unresolved",
+          "released_mean": 12334.799999999997,
+          "paper_mean": 12020.179999999998,
+          "paper_minus_released_mean": -314.619999999999
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 272.56,
+          "paper_mean": 272.9,
+          "paper_minus_released_mean": 0.339999999999975
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 34609.999999999985,
+          "paper_mean": 33908.18,
+          "paper_minus_released_mean": -701.8199999999852
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 1003.6219499999999,
+          "paper_mean": 996.7224500000002,
+          "paper_minus_released_mean": -6.899499999999648
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1203.6442500000005,
+          "paper_mean": 1171.3239000000003,
+          "paper_minus_released_mean": -32.32035000000019
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "paper_only",
+          "released_mean": 7117.9,
+          "paper_mean": 6446.740000000002,
+          "paper_minus_released_mean": -671.159999999998
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 6934.080000000001,
+          "paper_mean": 7298.4,
+          "paper_minus_released_mean": 364.3199999999988
+        }
+      ]
+    },
+    {
+      "pair_index": 8,
+      "group_A": "Q-Learning",
+      "group_B": "Rule M",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 0,
+      "curve_counts": {
+        "both_overlap": 3607,
+        "unresolved": 229,
+        "released_only": 10,
+        "neither_overlap": 17,
+        "paper_only": 13
+      },
+      "endpoint_counts": {
+        "both_overlap": 13,
+        "paper_only": 1
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "both_overlap",
+          "released_mean": 186.09799999999996,
+          "paper_mean": 186.2497,
+          "paper_minus_released_mean": 0.1517000000000337
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 396.014,
+          "paper_mean": 392.65490000000005,
+          "paper_minus_released_mean": -3.3590999999999553
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "both_overlap",
+          "released_mean": 2.7124,
+          "paper_mean": 2.7370499999999995,
+          "paper_minus_released_mean": 0.024649999999999395
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "both_overlap",
+          "released_mean": 3.1467499999999995,
+          "paper_mean": 3.15115,
+          "paper_minus_released_mean": 0.004400000000000404
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "both_overlap",
+          "released_mean": 1.0791000000000002,
+          "paper_mean": 1.0834500000000002,
+          "paper_minus_released_mean": 0.004350000000000076
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.3207000000000002,
+          "paper_mean": 1.3180499999999997,
+          "paper_minus_released_mean": -0.0026500000000004853
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 11664.34,
+          "paper_mean": 11652.600000000002,
+          "paper_minus_released_mean": -11.739999999997963
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 13825.66,
+          "paper_mean": 13813.219999999998,
+          "paper_minus_released_mean": -12.440000000002328
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 33293.24000000001,
+          "paper_mean": 33173.72000000001,
+          "paper_minus_released_mean": -119.52000000000407
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 23031.980000000007,
+          "paper_mean": 23093.199999999997,
+          "paper_minus_released_mean": 61.21999999999025
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 783.61395,
+          "paper_mean": 781.7865,
+          "paper_minus_released_mean": -1.827449999999999
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 517.8272000000002,
+          "paper_mean": 513.1487000000001,
+          "paper_minus_released_mean": -4.678500000000099
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 5385.0999999999985,
+          "paper_mean": 5162.819999999999,
+          "paper_minus_released_mean": -222.27999999999975
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "paper_only",
+          "released_mean": 5497.880000000001,
+          "paper_mean": 5042.4,
+          "paper_minus_released_mean": -455.4800000000014
+        }
+      ]
+    },
+    {
+      "pair_index": 9,
+      "group_A": "Q-Learning",
+      "group_B": "EC",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 0,
+      "curve_counts": {
+        "both_overlap": 3287,
+        "released_only": 174,
+        "paper_only": 188,
+        "neither_overlap": 124,
+        "unresolved": 103
+      },
+      "endpoint_counts": {
+        "paper_only": 3,
+        "both_overlap": 10,
+        "neither_overlap": 1
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "paper_only",
+          "released_mean": 266.97249999999997,
+          "paper_mean": 297.19340000000005,
+          "paper_minus_released_mean": 30.220900000000086
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 905.7804999999997,
+          "paper_mean": 887.2914500000002,
+          "paper_minus_released_mean": -18.489049999999565
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "both_overlap",
+          "released_mean": 2.7173000000000003,
+          "paper_mean": 2.6676000000000006,
+          "paper_minus_released_mean": -0.04969999999999963
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "neither_overlap",
+          "released_mean": 3.12385,
+          "paper_mean": 3.000749999999999,
+          "paper_minus_released_mean": -0.12310000000000088
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "both_overlap",
+          "released_mean": 1.05715,
+          "paper_mean": 1.0580500000000002,
+          "paper_minus_released_mean": 0.0009000000000001229
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.0,
+          "paper_mean": 1.0,
+          "paper_minus_released_mean": 0.0
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 12414.24,
+          "paper_mean": 11989.059999999998,
+          "paper_minus_released_mean": -425.1800000000021
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 8746.339999999998,
+          "paper_mean": 8689.500000000004,
+          "paper_minus_released_mean": -56.83999999999469
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 34961.41999999999,
+          "paper_mean": 33796.020000000004,
+          "paper_minus_released_mean": -1165.399999999987
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 272.66,
+          "paper_mean": 272.97999999999996,
+          "paper_minus_released_mean": 0.31999999999993634
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "paper_only",
+          "released_mean": 1111.5960499999997,
+          "paper_mean": 1223.6712500000003,
+          "paper_minus_released_mean": 112.07520000000068
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 991.3298500000001,
+          "paper_mean": 966.7309,
+          "paper_minus_released_mean": -24.59895000000006
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 6068.720000000001,
+          "paper_mean": 6361.159999999999,
+          "paper_minus_released_mean": 292.4399999999978
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "paper_only",
+          "released_mean": 6203.84,
+          "paper_mean": 6356.960000000001,
+          "paper_minus_released_mean": 153.1200000000008
+        }
+      ]
+    },
+    {
+      "pair_index": 10,
+      "group_A": "Q-Learning",
+      "group_B": "Q-Learning",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 0,
+      "curve_counts": {
+        "unresolved": 1833,
+        "released_only": 48,
+        "both_overlap": 1904,
+        "neither_overlap": 60,
+        "paper_only": 31
+      },
+      "endpoint_counts": {
+        "unresolved": 6,
+        "both_overlap": 7,
+        "released_only": 1
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "unresolved",
+          "released_mean": 1717.6860499999998,
+          "paper_mean": 1804.9012000000005,
+          "paper_minus_released_mean": 87.21515000000068
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1750.6039999999998,
+          "paper_mean": 1796.0691999999997,
+          "paper_minus_released_mean": 45.46519999999987
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "unresolved",
+          "released_mean": 3.4566500000000002,
+          "paper_mean": 3.4814,
+          "paper_minus_released_mean": 0.024749999999999606
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "both_overlap",
+          "released_mean": 3.4485,
+          "paper_mean": 3.45585,
+          "paper_minus_released_mean": 0.007349999999999746
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "unresolved",
+          "released_mean": 1.00775,
+          "paper_mean": 1.0076,
+          "paper_minus_released_mean": -0.00014999999999987246
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.0060500000000003,
+          "paper_mean": 1.00875,
+          "paper_minus_released_mean": 0.0026999999999997026
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "unresolved",
+          "released_mean": 819.5600000000002,
+          "paper_mean": 815.7399999999999,
+          "paper_minus_released_mean": -3.8200000000002774
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 813.36,
+          "paper_mean": 812.2,
+          "paper_minus_released_mean": -1.1599999999999682
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "unresolved",
+          "released_mean": 3674.1599999999994,
+          "paper_mean": 3643.2799999999997,
+          "paper_minus_released_mean": -30.879999999999654
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 3647.1600000000003,
+          "paper_mean": 3605.68,
+          "paper_minus_released_mean": -41.48000000000047
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "unresolved",
+          "released_mean": 4418.38245,
+          "paper_mean": 4488.139000000001,
+          "paper_minus_released_mean": 69.75655000000097
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 4441.728849999999,
+          "paper_mean": 4477.46785,
+          "paper_minus_released_mean": 35.7390000000014
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "released_only",
+          "released_mean": 16723.7,
+          "paper_mean": 18884.420000000006,
+          "paper_minus_released_mean": 2160.720000000005
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 16894.180000000004,
+          "paper_mean": 19117.620000000003,
+          "paper_minus_released_mean": 2223.4399999999987
+        }
+      ]
+    },
+    {
+      "pair_index": 11,
+      "group_A": "Q-Learning",
+      "group_B": "SARSA",
+      "paired_inputs": 50,
+      "identical_full_trajectories": 0,
+      "curve_counts": {
+        "unresolved": 935,
+        "both_overlap": 2848,
+        "paper_only": 3,
+        "released_only": 9,
+        "neither_overlap": 81
+      },
+      "endpoint_counts": {
+        "both_overlap": 12,
+        "unresolved": 2
+      },
+      "endpoints": [
+        {
+          "metric": "mean [sugar] of group-A",
+          "category": "both_overlap",
+          "released_mean": 2590.1212000000005,
+          "paper_mean": 2746.3324000000007,
+          "paper_minus_released_mean": 156.2112000000002
+        },
+        {
+          "metric": "mean [sugar] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1662.6470499999996,
+          "paper_mean": 1678.1667500000008,
+          "paper_minus_released_mean": 15.519700000001194
+        },
+        {
+          "metric": "mean [vision] of group-A",
+          "category": "both_overlap",
+          "released_mean": 3.5487500000000005,
+          "paper_mean": 3.5605500000000005,
+          "paper_minus_released_mean": 0.011800000000000033
+        },
+        {
+          "metric": "mean [vision] of group-B",
+          "category": "both_overlap",
+          "released_mean": 3.3977500000000003,
+          "paper_mean": 3.4265,
+          "paper_minus_released_mean": 0.02874999999999961
+        },
+        {
+          "metric": "mean [metabolism] of group-A",
+          "category": "unresolved",
+          "released_mean": 1.0059500000000001,
+          "paper_mean": 1.0052499999999998,
+          "paper_minus_released_mean": -0.000700000000000367
+        },
+        {
+          "metric": "mean [metabolism] of group-B",
+          "category": "both_overlap",
+          "released_mean": 1.0063499999999994,
+          "paper_mean": 1.0042000000000004,
+          "paper_minus_released_mean": -0.002149999999998986
+        },
+        {
+          "metric": "combat-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 663.56,
+          "paper_mean": 656.52,
+          "paper_minus_released_mean": -7.039999999999964
+        },
+        {
+          "metric": "combat-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 767.06,
+          "paper_mean": 767.58,
+          "paper_minus_released_mean": 0.5200000000000955
+        },
+        {
+          "metric": "starve-agent-a-die",
+          "category": "both_overlap",
+          "released_mean": 3193.3399999999997,
+          "paper_mean": 3153.940000000001,
+          "paper_minus_released_mean": -39.39999999999873
+        },
+        {
+          "metric": "starve-agent-b-die",
+          "category": "both_overlap",
+          "released_mean": 3491.979999999999,
+          "paper_mean": 3513.1800000000003,
+          "paper_minus_released_mean": 21.200000000001182
+        },
+        {
+          "metric": "mean [age] of group-A",
+          "category": "both_overlap",
+          "released_mean": 5403.399299999999,
+          "paper_mean": 5606.070649999999,
+          "paper_minus_released_mean": 202.67134999999962
+        },
+        {
+          "metric": "mean [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 4796.83595,
+          "paper_mean": 4807.38025,
+          "paper_minus_released_mean": 10.544300000000476
+        },
+        {
+          "metric": "max [age] of group-A",
+          "category": "unresolved",
+          "released_mean": 19997.679999999997,
+          "paper_mean": 19999.860000000004,
+          "paper_minus_released_mean": 2.180000000007567
+        },
+        {
+          "metric": "max [age] of group-B",
+          "category": "both_overlap",
+          "released_mean": 19869.219999999994,
+          "paper_mean": 19516.9,
+          "paper_minus_released_mean": -352.31999999999243
+        }
+      ]
+    }
+  ],
+  "scope": "Post hoc descriptive comparison of twelve complete paired cohorts, using identical corrected targets. Adjacent columns are dependent. No parameter selection, historical identification, equivalence test, additional simulation coverage, or whole-paper verdict."
+}

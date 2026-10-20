@@ -1,0 +1,8 @@
+{
+  "exit_code": 1,
+  "reason": "Remote bounded observer exited 1 because cohort remained incomplete after 600 seconds. Local collector asserted remote success and stopped.",
+  "simulation_producer_command": "cmd-vxb2x",
+  "simulation_producer_rechecked_state": "running",
+  "coverage_added": 0,
+  "next_action": "Wait for all 50 successful terminal records, then use a fresh snapshot directory. Do not restart simulations."
+}

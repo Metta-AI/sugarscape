@@ -1,0 +1,23 @@
+{
+  "sources": {
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-source-001/paper.pdf": "eaf0a81b781a0918df2441a02b01d13549e0651837437aea6439e06dfe42141c",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-source-001/paper.txt": "6664f52692d97543b9eab539c02cf5481d6e40346d8da8f49528b4121cee790f",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-source-001/release/code/Creating_Intelligent_Agents.nlogo": "fff5aa29aed92ee4ae04978b643e46d8316e26ca08771adb00c73ee5f2f9b28a",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-source-001/figure-panels/figure-4-pair-05.png": "4df75c32772cc7c3d8856b91e5d895caf01cd490457fb91c0760e69c27d3deed",
+    "/Users/relh/Code/workspace/sugarscape-brearcliffe/replications/brearcliffe_2020/Replay.java": "c5d65cea521caccff3f4c7bc29f3fd98e3fabe8834b001b432cffb219454e4c0",
+    "/Users/relh/Code/workspace/sugarscape-brearcliffe/replications/brearcliffe_2020/digitize_metrics.py": "be4d5c64538805e92ce31a41776a6911e01aa746f3c101722be801ccaa958476",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-ec-ec-snapshot-001/cohort/summary.json": "9487107e6e7e6db6f7b60f456fccfa16b1faa06a772af6e3856ebdc34480e25a"
+  },
+  "trajectory_pins_match_complete_cohort": 50,
+  "mapping_findings": [
+    "Paper page14 identifies A as blue and B as red and specifically discusses the EC/EC advantage for A.",
+    "Figure4 EC/EC panel title and legend visually inspected: Group A blue, Group B red.",
+    "Released model agent-A-setup sets blue; agent-B-setup sets red. Mean Vision plot reporters agree.",
+    "Replay.java uses the same reporter order for CSV headers and recorded values; digitizer assigns blue to A and red to B."
+  ],
+  "limits": [
+    "This rules out a detected label reversal in these inspected paths, not every possible implementation or historical plotting error.",
+    "No breed swapping was used to improve agreement.",
+    "Paired intervals are exploratory and pointwise; paper uncertainty remains unknown."
+  ]
+}

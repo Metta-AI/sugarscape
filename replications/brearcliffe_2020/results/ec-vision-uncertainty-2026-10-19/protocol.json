@@ -1,0 +1,16 @@
+{
+  "scope": "Exploratory diagnosis selected after observing EC vision mismatch; not a confirmatory acceptance rule.",
+  "metric": "mean [vision] of group-B",
+  "pair_index": 1,
+  "runs": 50,
+  "columns": 286,
+  "resamples": 20000,
+  "resampling_unit": "whole run, same retained draws as prior cohort analysis",
+  "band": "Mean plus/minus the 0.95 type7 quantile of the maximum absolute bootstrap deviation standardized by the original standard error over 286 column centers. Fixed standard errors, not bootstrap-t.",
+  "limits": [
+    "Approximate bootstrap band for our mean curve, not a confidence band for the historical paper.",
+    "Selected metric after inspection; no simultaneous guarantee across other metrics or cohorts.",
+    "Comparison uses column centers and vertical raster bounds; not the previous horizontal-window range statistic.",
+    "Overlap does not establish equivalence; no posthoc change to replication criteria."
+  ]
+}

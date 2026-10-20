@@ -1,0 +1,7 @@
+{
+  "exit_code": 1,
+  "failure": "claimed$category == category is not TRUE",
+  "cause": "Independent verifier treated a retained metric interval on an explicitly excluded mislabeled panel as a valid comparison. The published comparison correctly marks it unresolved.",
+  "source_example": "Figure6 Rule M/Q-Learning combat-agent-b-die has status unresolved-paper-panel-label-conflict despite retained source raster coordinates.",
+  "correction": "Use the explicit source status to decide whether intervals may be compared; retain all excluded records as unresolved."
+}

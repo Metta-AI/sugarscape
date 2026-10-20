@@ -1,0 +1,667 @@
+{
+  "manifest_sha256": "3633edf2ca2ec1bd59222e15241655c38c7ec0cacffd1948294ed7c69be85c37",
+  "completed_inputs": 94,
+  "remaining_inputs": 1506,
+  "observations": 1880094,
+  "completed": [
+    {
+      "run_id": "released-code-pair-01-repeat-00",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-ensemble-first-input-001",
+      "trajectory_sha256": "7890ea33a81601d3681fc56be9275fa7f9ba260cd2ffd07e486827a9c5370b0a",
+      "observations": 20001,
+      "elapsed_seconds": 217.11391962500056
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-00",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-first-batch-001/runs/released-code-pair-00-repeat-00",
+      "trajectory_sha256": "8298ba94aa95f8404dc9f926ff458b4521b1114359fd5eb6cc0c8871260affbc",
+      "observations": 20001,
+      "elapsed_seconds": 247.54366954200668
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-01",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-first-batch-001/runs/released-code-pair-00-repeat-01",
+      "trajectory_sha256": "a141467f4ccececb8e5a495578483131ab89ad2ec21f81d7fb9f492e0b44df04",
+      "observations": 20001,
+      "elapsed_seconds": 246.94644608400995
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-02",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-02",
+      "trajectory_sha256": "0bd3fff5cc0f256b1f1ec5db0672ff232b88cf6192a5bdc86f30aa0570b872da",
+      "observations": 20001,
+      "elapsed_seconds": 250.89881829198566
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-03",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-03",
+      "trajectory_sha256": "1217fd839ceebe96eaf7f152220e023c2050e5332074deb3c017a511ba8f9b42",
+      "observations": 20001,
+      "elapsed_seconds": 248.86820416600676
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-04",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-04",
+      "trajectory_sha256": "15aea67ee0e3a0d786636cb8cb355b27e6b348e3078cca596f803f9ba3137e89",
+      "observations": 20001,
+      "elapsed_seconds": 247.78463537499192
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-05",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-05",
+      "trajectory_sha256": "24e2b1ac4579d74f9a8ae1bb0eb3e201371def4f77f4a1af7e1eb301c0424fda",
+      "observations": 20001,
+      "elapsed_seconds": 248.88652491700486
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-06",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-06",
+      "trajectory_sha256": "4c19256e6fea8312af48c499304685820ab841e02d3e493f496c3e80d73bc905",
+      "observations": 20001,
+      "elapsed_seconds": 250.03088462501182
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-07",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-07",
+      "trajectory_sha256": "c5e4704adf70980cc5f765976056c827366b0a04892cdb7d35afe1f6c0f4c0c6",
+      "observations": 20001,
+      "elapsed_seconds": 248.27169920800952
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-08",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-08",
+      "trajectory_sha256": "54d882b6863ae7eea3a2cabfd76d115e11b1741bedba1989a737b19a712584b2",
+      "observations": 20001,
+      "elapsed_seconds": 254.07281483299448
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-09",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-09",
+      "trajectory_sha256": "1d09daf07d4438d4c123073c7187e2eef1f298f0a69adaf4b9cabc76612ad07a",
+      "observations": 20001,
+      "elapsed_seconds": 253.12549570799456
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-10",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-10",
+      "trajectory_sha256": "bf4e7d38200e89142f62f28c8e83195b205e5263f92d9123a91ce56eb7e7f2d4",
+      "observations": 20001,
+      "elapsed_seconds": 248.3227630420006
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-11",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-11",
+      "trajectory_sha256": "22637688dc843a3f86dd2666a0fe76c26b95fd2f301b53616131bc9fa418e09a",
+      "observations": 20001,
+      "elapsed_seconds": 251.286049583985
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-12",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-12",
+      "trajectory_sha256": "2e15ec4ede7e82db0dca5a17a690a3f46997c3835b8f66323efca6832cfaedd8",
+      "observations": 20001,
+      "elapsed_seconds": 247.6258377500053
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-13",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-13",
+      "trajectory_sha256": "13535e6f6233bc556691c53782d0fab75dd8f6bc8945534dde79152968527a13",
+      "observations": 20001,
+      "elapsed_seconds": 250.92719541600673
+    },
+    {
+      "run_id": "paper-table-pair-11-repeat-00",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-paper-table-rl-batch-001/runs/paper-table-pair-11-repeat-00",
+      "trajectory_sha256": "7589bea631f0d58702b27024aa14e376009b59d63071d0d8e036827feb9a7be9",
+      "observations": 20001,
+      "elapsed_seconds": 515.5735935410194
+    },
+    {
+      "run_id": "paper-table-pair-11-repeat-01",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-paper-table-rl-batch-001/runs/paper-table-pair-11-repeat-01",
+      "trajectory_sha256": "25dabd8baee6cda06912fff9939ee90dd1cedacc15e047d1fe1f400a29b7cbb6",
+      "observations": 20001,
+      "elapsed_seconds": 520.7529355410079
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-14",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-14",
+      "trajectory_sha256": "8b20b6e68933e23fc3aace60609a420024781b15d6bb10c2ab259910c322e8a6",
+      "observations": 20001,
+      "elapsed_seconds": 257.298238791991
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-15",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-15",
+      "trajectory_sha256": "17f17ad530541f55511e909127ff5e3809c8ab1a1c55a647ac5b8032a896c9b7",
+      "observations": 20001,
+      "elapsed_seconds": 258.84638887501205
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-16",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-16",
+      "trajectory_sha256": "77b62368feddafc7e10fd7c2ad1f981572678bbc9850aaadb7e245bd40fd1107",
+      "observations": 20001,
+      "elapsed_seconds": 257.28481437498704
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-17",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-17",
+      "trajectory_sha256": "2669b6b819120a621269f5e9699675235f3caf1c7c1ec959d3c2c3c60b398d00",
+      "observations": 20001,
+      "elapsed_seconds": 259.75368870800594
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-18",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-18",
+      "trajectory_sha256": "24c6b620ab732d3deadb91b89a38b9f84e946851c636bbfeb04014e15822c70d",
+      "observations": 20001,
+      "elapsed_seconds": 257.60064004099695
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-19",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-19",
+      "trajectory_sha256": "e80570d530343cfe0b1490517d6c037830ceca721af9074976c8a2004324c5df",
+      "observations": 20001,
+      "elapsed_seconds": 256.9627757910057
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-20",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-20",
+      "trajectory_sha256": "6748039c92165aab6d463156844a0cd56f43a64171bde143168dbefdef6f91cf",
+      "observations": 20001,
+      "elapsed_seconds": 260.7142217080109
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-21",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-21",
+      "trajectory_sha256": "6ae1f7668abecbfa07c93231b6727b1df8a2a64f60969538645edce8e42f1bf5",
+      "observations": 20001,
+      "elapsed_seconds": 258.9906157499936
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-22",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-22",
+      "trajectory_sha256": "b2ad75e92a4fc04bda19384181e4c92ebeaff9638bd74b3dfc7e083ca4798ddf",
+      "observations": 20001,
+      "elapsed_seconds": 250.0552377080021
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-23",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-23",
+      "trajectory_sha256": "645665b3a394d9af324ad79eb1ff842d32a3b71e916d650b058111608427a573",
+      "observations": 20001,
+      "elapsed_seconds": 246.61293237502105
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-24",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-24",
+      "trajectory_sha256": "334a69ef330938f44ea57f5daf395425213f3da80c0aea091f2b0c2dcd7c9ffc",
+      "observations": 20001,
+      "elapsed_seconds": 250.15229774999898
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-25",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-25",
+      "trajectory_sha256": "57a581d7d397422b4e6c5389ad83da9d4218909e710be2f90a1fb98471f17c6d",
+      "observations": 20001,
+      "elapsed_seconds": 248.36935516697122
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-26",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-26",
+      "trajectory_sha256": "d800a761dd8aaac3131eb7357f640d14066e9f9bb6a6878ec308c3a13c4891cf",
+      "observations": 20001,
+      "elapsed_seconds": 250.0684631660115
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-27",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-27",
+      "trajectory_sha256": "6becb6b7532443a6122e152f070fc73e5417a545633576cdb514eb8e4a143d05",
+      "observations": 20001,
+      "elapsed_seconds": 249.0200289170025
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-28",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-28",
+      "trajectory_sha256": "4ad12176f7ca59b3ff4946df0d15cc803a78ac78856b2a2dd69a9a50f7ff0974",
+      "observations": 20001,
+      "elapsed_seconds": 248.3146434579976
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-29",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-29",
+      "trajectory_sha256": "c20dc17a47aa3507aa4f91b9ca35bc188076a2a2370892be80152d0ada72b26c",
+      "observations": 20001,
+      "elapsed_seconds": 251.4110764999641
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-30",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-30",
+      "trajectory_sha256": "5e4b73f761f2dd4ee5f1df9a48cd911add969e072032bec6661ab5d7b031da07",
+      "observations": 20001,
+      "elapsed_seconds": 247.79862104199128
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-31",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-31",
+      "trajectory_sha256": "b1bca0b246520b4e9e482806b47b1ae77259bbd3303c93daad6d043685104b3c",
+      "observations": 20001,
+      "elapsed_seconds": 248.5707884579897
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-32",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-32",
+      "trajectory_sha256": "5b222422dd700fd49606a875a0aaf915002aef681477e04ea5b6e99ecb602ea7",
+      "observations": 20001,
+      "elapsed_seconds": 248.61089816701133
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-33",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-33",
+      "trajectory_sha256": "acb2f533ae4893c8a9d2b65535abe08a36b18ff090b43aa19497b9fc9b89554a",
+      "observations": 20001,
+      "elapsed_seconds": 249.8142135409871
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-34",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-34",
+      "trajectory_sha256": "7daf40a42ffe2b46946fbe91fd44382480b5c0e4df14745a5fd0209fdd009e62",
+      "observations": 20001,
+      "elapsed_seconds": 246.61809666699264
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-35",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-35",
+      "trajectory_sha256": "aae0f0d86f44a830df6fcbee8de1bc241cac25f2cb70c688141196e228c375b5",
+      "observations": 20001,
+      "elapsed_seconds": 247.62290829099948
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-36",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-36",
+      "trajectory_sha256": "6b10822da3c214af47945447df5c9df1493ba75f32d5f0e86c2170467fd63231",
+      "observations": 20001,
+      "elapsed_seconds": 248.48967320896918
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-37",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-37",
+      "trajectory_sha256": "f0d6062b9578e3da9fe00be8c64c42a52ac6e8141863c256e8c5637d6fc50da6",
+      "observations": 20001,
+      "elapsed_seconds": 249.9910247499938
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-38",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-38",
+      "trajectory_sha256": "fbfa2db06fc58b43ca742ad944d1bda6abc69e253f5fa8a1cc479624d7f8e9a5",
+      "observations": 20001,
+      "elapsed_seconds": 249.0733169580344
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-39",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-39",
+      "trajectory_sha256": "993e1ffee9c8741690e6d687ad92cf0c5b61f5cce8c092fc311d4b7192db0c7f",
+      "observations": 20001,
+      "elapsed_seconds": 246.22426933399402
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-40",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-40",
+      "trajectory_sha256": "cee33bf644829e12342e28030bca8ad3fb1dc668b688bb55c55895e7fd0ba411",
+      "observations": 20001,
+      "elapsed_seconds": 251.36272829095833
+    },
+    {
+      "run_id": "released-code-pair-00-repeat-41",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-cohort-001/runs/released-code-pair-00-repeat-41",
+      "trajectory_sha256": "41297c5f4cdc7d93d624b10e250d0cd223ef559cd3db502976b4c0647a043b39",
+      "observations": 20001,
+      "elapsed_seconds": 250.14491441601422
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-01",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-01",
+      "trajectory_sha256": "6a5438580084608857d8a00b42a918e3ed4505e20908567864e79b4270301ce8",
+      "observations": 20001,
+      "elapsed_seconds": 254.73774225800298
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-02",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-02",
+      "trajectory_sha256": "04fc5ac15cd885cf65a56fd9e162d9b78ce86b783dcd17352f0ff71f84755d95",
+      "observations": 20001,
+      "elapsed_seconds": 274.58606085996144
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-03",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-03",
+      "trajectory_sha256": "2614ee338b6131877b67286ccc302eb95b1527cb03986224510046791baa0605",
+      "observations": 20001,
+      "elapsed_seconds": 280.76379950600676
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-04",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-04",
+      "trajectory_sha256": "7126678138ce8f54d0d9bb4a5496014a1320c81bbe74f7c0c0c6460024e0fa45",
+      "observations": 20001,
+      "elapsed_seconds": 267.45390868210234
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-05",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-05",
+      "trajectory_sha256": "92823f71c34766786e37f77d4c61cfbfc4c6f50e6b9e46ff63869a0b553d3864",
+      "observations": 20001,
+      "elapsed_seconds": 271.2768865779508
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-06",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-06",
+      "trajectory_sha256": "83dd9170577a9c3fc057ea8638b4eefc6194317854df52ef8d58cdb64f1b1fa8",
+      "observations": 20001,
+      "elapsed_seconds": 255.57645847508684
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-07",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-07",
+      "trajectory_sha256": "d00536c8606bb7c341992bd457c10c23a9306ab01680ed3190fc0f6f534fb1fe",
+      "observations": 20001,
+      "elapsed_seconds": 253.48276578099467
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-08",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-08",
+      "trajectory_sha256": "6c9c6344363281dd0ee8ac93b3a340deff1b7124fe505fe2416212c4e3259f18",
+      "observations": 20001,
+      "elapsed_seconds": 252.87379024899565
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-09",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-09",
+      "trajectory_sha256": "275cb9f11c8f8f6c99e6f6e6945ce4464e8e97e6cb1e51e5f537360b355cefd7",
+      "observations": 20001,
+      "elapsed_seconds": 266.5566672459245
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-10",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-10",
+      "trajectory_sha256": "074825dd1be3de412935527bad5a4ca4656272a42505ab614612b5111e8fecf3",
+      "observations": 20001,
+      "elapsed_seconds": 257.20407365704887
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-11",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-11",
+      "trajectory_sha256": "73898735d03f7321a9617dd4bb722d7e8a303378c8bf9ee2fd1f4b483acf1e3f",
+      "observations": 20001,
+      "elapsed_seconds": 251.70827689301223
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-12",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-12",
+      "trajectory_sha256": "a14052d2543b59164198d268fcfdde3d19c0c3e3946a227cfe43792b96f9c3db",
+      "observations": 20001,
+      "elapsed_seconds": 274.5734545281157
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-13",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-13",
+      "trajectory_sha256": "4640b5f3fb28c84d9e7808e0b719ef7d0da7b399c1b06fedf69c7064ab56fb3c",
+      "observations": 20001,
+      "elapsed_seconds": 256.3457695429679
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-14",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-14",
+      "trajectory_sha256": "8c40c90b573b846ea1833181191fa807b3fd32323a15cdfb685aebec99b752a8",
+      "observations": 20001,
+      "elapsed_seconds": 256.2507063730154
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-15",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-15",
+      "trajectory_sha256": "7200beaaf299ad4a5c56bfe606e9c121e800081446ac7f5648953f987fde7457",
+      "observations": 20001,
+      "elapsed_seconds": 275.8800220398698
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-16",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-16",
+      "trajectory_sha256": "301a9a00397e185adf64aef434cf26c2c80fb53715835a583e13807c12b9ae70",
+      "observations": 20001,
+      "elapsed_seconds": 268.8411548361182
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-17",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-17",
+      "trajectory_sha256": "7d84209691c3c401c50a71428d7e19c2588d8e81a32197b74271ac08c9ed1026",
+      "observations": 20001,
+      "elapsed_seconds": 281.2445516239386
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-18",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-18",
+      "trajectory_sha256": "156debaa3fdd50ed85f425efe2a4afc2f2009e4f7df4af76182ee5ebe1b8b77f",
+      "observations": 20001,
+      "elapsed_seconds": 261.95837143505923
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-19",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-19",
+      "trajectory_sha256": "580de5b752e79989851b1f42aaef4ba212521e8e5929f831b4e8060d4cc169cb",
+      "observations": 20001,
+      "elapsed_seconds": 258.2796611310914
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-20",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-20",
+      "trajectory_sha256": "a00383eede62b66e3fd013acf74e69085849bf418253ed2ab955a8e2eefb18fc",
+      "observations": 20001,
+      "elapsed_seconds": 259.27696324908175
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-21",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-21",
+      "trajectory_sha256": "2b3dd18aab1aab7355f32f8d3bf056c643825ff621b13da6684ac2e79b7a08d5",
+      "observations": 20001,
+      "elapsed_seconds": 264.5547244499903
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-22",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-22",
+      "trajectory_sha256": "9ae126bf1e9a5490e6ad531fa3b223d3479c7b94b26b7d9dbee46a04cb2a9e1e",
+      "observations": 20001,
+      "elapsed_seconds": 257.2080864959862
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-23",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-23",
+      "trajectory_sha256": "b4d293e74715742d76f7729386d85b91af9a2270bc7c0ee859ebdb250a1b503a",
+      "observations": 20001,
+      "elapsed_seconds": 259.93403893103823
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-24",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-24",
+      "trajectory_sha256": "bd63a979a267f8414780bf3a984b857eb66182e349f405eb5c755a980c3b1195",
+      "observations": 20001,
+      "elapsed_seconds": 249.92134726978838
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-25",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-25",
+      "trajectory_sha256": "be4a58dc5ec9e16393e034f63dc5817fe296a6e32126e37cdeda82d69d22a2f8",
+      "observations": 20001,
+      "elapsed_seconds": 324.93859170982614
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-26",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-26",
+      "trajectory_sha256": "60adf4d3b7be6030a3119991d1eb881fa02a42bf30fc601615ec5a48baf17e2e",
+      "observations": 20001,
+      "elapsed_seconds": 299.02730239205994
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-27",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-27",
+      "trajectory_sha256": "d63dc3d053efe1a2d02f94060aec6e26242f8909422e7d4c6b5f453bc6325059",
+      "observations": 20001,
+      "elapsed_seconds": 303.3324946910143
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-28",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-28",
+      "trajectory_sha256": "368a09abb4297131a5a3eb59107452c24415c39ded547c7790ec46efd342681c",
+      "observations": 20001,
+      "elapsed_seconds": 307.96815081709065
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-29",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-29",
+      "trajectory_sha256": "814e3226ea50dbb81018db09b7fb4c5d8143cc3773477e75ff314e96cbf7b322",
+      "observations": 20001,
+      "elapsed_seconds": 304.2454154889565
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-30",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-30",
+      "trajectory_sha256": "1c0088385a5ec642630ea0464f4ea55b0935b1c3fb6e576db414142320ca389a",
+      "observations": 20001,
+      "elapsed_seconds": 309.6862444849685
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-31",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-31",
+      "trajectory_sha256": "89318ea8420eca0b57929bf01cec5d9bd7c15fae093019eee640c07286e061f7",
+      "observations": 20001,
+      "elapsed_seconds": 314.7136392770335
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-32",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-32",
+      "trajectory_sha256": "37c01ae51b47b1d48583fbe7e51d2b140ac24f0bf5fac48a92b46c0aa944cb99",
+      "observations": 20001,
+      "elapsed_seconds": 306.8483855170198
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-33",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-33",
+      "trajectory_sha256": "7444017a24fccfc13946b0f49cd36c14340900079ea59504f16ccfc216997ab1",
+      "observations": 20001,
+      "elapsed_seconds": 330.7618386289105
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-34",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-34",
+      "trajectory_sha256": "8378d1189f076c8eaafb4647c2716c9562260ffd7391334ff0052fcb80789c6f",
+      "observations": 20001,
+      "elapsed_seconds": 329.92911785584874
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-35",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-35",
+      "trajectory_sha256": "978a0e7194807c75eb21c5cd9ce1f7a06d9fdf1c39a5a960791daaf5e8abb88a",
+      "observations": 20001,
+      "elapsed_seconds": 333.15373050794005
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-36",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-36",
+      "trajectory_sha256": "7ac9fa02276d6c2f94667064f5a74a9d33940fa19fde3b01255a5ebaecdb0375",
+      "observations": 20001,
+      "elapsed_seconds": 319.0710703090299
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-37",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-37",
+      "trajectory_sha256": "6dfdf13f7cd0042528a83126f7c11da2f316d736150e895d5a26a083db71e3f3",
+      "observations": 20001,
+      "elapsed_seconds": 323.6121831359342
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-38",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-38",
+      "trajectory_sha256": "5c3e0d2f67577e40cc89b55dd531723856c9f208b70e364ae88b39290ba67f76",
+      "observations": 20001,
+      "elapsed_seconds": 341.75656892498955
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-39",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-39",
+      "trajectory_sha256": "4ea5011925532de8b5132138b8031f2ce0bd574765f5b62e50aa9b9e1b4ea516",
+      "observations": 20001,
+      "elapsed_seconds": 328.1583296151366
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-40",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-40",
+      "trajectory_sha256": "1b12117315b9c01590532eefa8fa303e29618fc180e29c8b3d813ec148a8373e",
+      "observations": 20001,
+      "elapsed_seconds": 328.53967987699434
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-41",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-41",
+      "trajectory_sha256": "b35c7f4b575e03aafbdb7047fc7a1c8b1b958c1db50cc050d90efcb1fc26575f",
+      "observations": 20001,
+      "elapsed_seconds": 334.7187397889793
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-42",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-42",
+      "trajectory_sha256": "ba701e112f3785c00e0f043367ba641207310a069981fc38cef99ec8fff3909b",
+      "observations": 20001,
+      "elapsed_seconds": 324.1339515929576
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-43",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-43",
+      "trajectory_sha256": "f2769b89da23a7f05974e450ef81ae99846fe03f43c4dcd02d463e64e48e14f2",
+      "observations": 20001,
+      "elapsed_seconds": 347.5720095229335
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-44",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-44",
+      "trajectory_sha256": "c73422951eb8be50191728de632b08743a672e643ae827b1c3407496f6e90fd2",
+      "observations": 20001,
+      "elapsed_seconds": 352.92514198599383
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-45",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-45",
+      "trajectory_sha256": "063b16b93aa00d4504494cda85b8a628ea99967b74dc5a6e30cf018199ac54ae",
+      "observations": 20001,
+      "elapsed_seconds": 331.11155374208465
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-46",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-46",
+      "trajectory_sha256": "b121596ad1d9597501b9186696d2bdec4c48ebd8244a12ce44a66b231cbd7766",
+      "observations": 20001,
+      "elapsed_seconds": 327.4944711609278
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-47",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-47",
+      "trajectory_sha256": "bdceca1213ca7e2a7534686dfd52bb9ae93e620d5b5258e304a2b5bc5a149b48",
+      "observations": 20001,
+      "elapsed_seconds": 330.2848861699458
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-48",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-48",
+      "trajectory_sha256": "026fa231ba388c28d4bdb6c273709aefe27a9bb5b7584ac386611e1b31c52db8",
+      "observations": 20001,
+      "elapsed_seconds": 321.9348429448437
+    },
+    {
+      "run_id": "released-code-pair-01-repeat-49",
+      "directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-rule-m-ec-snapshot-001/readback/runs/released-code-pair-01-repeat-49",
+      "trajectory_sha256": "48998afecd5cc3b922491648cf42ae8c1ab764147e60b1642926eab94d70713c",
+      "observations": 20001,
+      "elapsed_seconds": 309.9049483060371
+    }
+  ],
+  "scope": "Verified complete inputs only; no full-ensemble or published-result verdict."
+}

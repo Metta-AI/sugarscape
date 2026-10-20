@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "stderr": "",
+  "stdout": "{\"runs_per_interpretation\": 800, \"interpretations\": [\"released-code\", \"paper-table\"], \"unique_seeds\": 800, \"seed_design\": \"Same seed within interpretation pairs; distinct across pairings and repetitions.\", \"seed_derivation\": \"First four SHA256 bytes of brearcliffe-2020-ensemble-v1/pair-PP/repeat-RR, big endian, masked to 31 bits.\", \"observations_per_run\": 20001, \"total_planned_observations\": 32001600, \"author_model_sha256\": \"fff5aa29aed92ee4ae04978b643e46d8316e26ca08771adb00c73ee5f2f9b28a\", \"manifest_sha256\": \"3633edf2ca2ec1bd59222e15241655c38c7ec0cacffd1948294ed7c69be85c37\", \"execution_status\": \"Prepared only; no ensemble runs executed by this command.\"}\n{\"prepared_models_verified\": 1600, \"assigned_inputs_verified\": 749, \"manifest_sha256\": \"3633edf2ca2ec1bd59222e15241655c38c7ec0cacffd1948294ed7c69be85c37\", \"assignment_sha256\": \"5f1f3154bb548d6c359931089bdf846c4ff560657b0a2ae66dcb9b0c1dfd6853\", \"simulation_inputs_executed\": 0, \"scope\": \"Staged only. Qualification and measured-budget gates still apply.\"}\n",
+  "timing_ms": {
+    "exec": 296
+  },
+  "truncated": false
+}

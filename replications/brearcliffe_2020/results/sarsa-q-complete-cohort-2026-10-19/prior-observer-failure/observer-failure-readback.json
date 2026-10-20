@@ -1,0 +1,5 @@
+{
+  "exit_code": 0,
+  "stdout": "{\n  \"exit_code\": 0,\n  \"stderr\": \"\",\n  \"stdout\": \"Traceback (most recent call last):\\n  File \\\"/root/sugarscape/brearcliffe-sarsa-q-snapshot-001/snapshot.py\\\", line 14, in <module>\\n    assert time.monotonic() < deadline, 'Cohort remains incomplete after bounded observation'\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError: Cohort remains incomplete after bounded observation\\n\",\n  \"timing_ms\": {\n    \"exec\": 168\n  },\n  \"truncated\": false\n}\n",
+  "stderr": ""
+}

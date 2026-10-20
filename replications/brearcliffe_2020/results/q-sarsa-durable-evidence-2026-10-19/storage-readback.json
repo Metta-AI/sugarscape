@@ -1,0 +1,17 @@
+{
+  "manifest_sha256": "c5f49b4cd69c0fddb0f8873a75224538ca91caed3d73be22a3c9c2aadb4451cc",
+  "archives": [
+    {
+      "archive": "pair11-50.tar.gz",
+      "bytes": 26361268,
+      "sha256": "edabe37d6d1a6747bdb1c34e65dedc0980fa1ba7d73f16321874f3f5dfdc51f2",
+      "members": 502,
+      "inputs": 50
+    }
+  ],
+  "archive_bytes": 26361268,
+  "members_verified": 502,
+  "unique_audited_inputs_preserved": 50,
+  "source_audit_sha256": "906bec2dc18a6b4f001d122b2beda7589cc50535c1dd4e0616405b43f7343948",
+  "scope": "Fresh storage download and archive-member verification. Existing trajectory audits are preserved, not rerun; no new simulation or coverage credit."
+}

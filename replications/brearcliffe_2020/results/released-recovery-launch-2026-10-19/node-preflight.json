@@ -1,0 +1,36 @@
+{
+  "id": "a28c8061-0622-4613-b3bb-2d0a4d1cc0be",
+  "name": "relh-sugarscape-runtime-memory-cpu8-20261018-v1",
+  "status": "running (idle)",
+  "rate": {
+    "calendar": {
+      "band": "weekday",
+      "next_cheaper": {
+        "band": "Friday",
+        "per_min": "$0.00804/min",
+        "per_min_usd_micros": 8040,
+        "percent_off": 33,
+        "starts_at": "2026-10-23T07:00:00Z"
+      },
+      "note": "Fridays 33% off, weekends 20% off (US Pacific) - applied to the minutes that run on those days, not locked at create",
+      "percent_off": 0
+    },
+    "gpu_count": 1,
+    "idle_window_minutes": 15,
+    "idle_window_usd": "$0.18",
+    "idle_window_usd_micros": 180000,
+    "minimum_minutes": 15,
+    "node_per_min": "$0.012/min",
+    "node_per_min_usd_micros": 12000,
+    "per_min": "$0.012/min",
+    "per_min_usd_micros": 12000,
+    "session_minimum_usd": "$0.18",
+    "session_minimum_usd_micros": 180000
+  },
+  "resources": {
+    "cpu_limit": 8.0,
+    "memory_limit_bytes": 34359738368,
+    "note": "this container's cgroup budget - the CPU limit is a CFS quota, which os.cpu_count(), /proc/cpuinfo, psutil and free cannot see: they all report the HOST. Size parallelism (dataloader num_workers, multiprocessing.Pool, make -j) and memory to THESE numbers. Also inside the container: $GMN_CPU_LIMIT, $GMN_MEMORY_LIMIT_BYTES, with OMP_NUM_THREADS, RAYON_NUM_THREADS, MAX_JOBS and PYTHON_CPU_COUNT preset to the budget, so the OpenMP, Rust and torch-extension-build pools size to it. They are set on the CONTAINER, so they outrank an ENV baked into a custom image; override them in run_command's env, not a Dockerfile. GNU nproc answers the budget too (it reads OMP_NUM_THREADS) - busybox/Alpine nproc does not, so check yours on a custom image. What reports the host everywhere is os.cpu_count() (and PYTHON_CPU_COUNT only reaches it on Python 3.13+): read $GMN_CPU_LIMIT instead of os.cpu_count() anywhere you size a pool."
+  },
+  "yours": true
+}

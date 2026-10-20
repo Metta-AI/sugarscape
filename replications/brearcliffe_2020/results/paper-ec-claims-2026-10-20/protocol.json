@@ -1,0 +1,33 @@
+{
+  "paper_sha256": "eaf0a81b781a0918df2441a02b01d13549e0651837437aea6439e06dfe42141c",
+  "paper_page": 14,
+  "interpretation": "paper-table",
+  "pair_indices": [
+    1,
+    4,
+    6,
+    7,
+    9,
+    13
+  ],
+  "metrics": [
+    "sugar",
+    "combat",
+    "starvation"
+  ],
+  "endpoint_tick": 20000,
+  "curve_ticks": [
+    1,
+    20000
+  ],
+  "bootstrap_repetitions": 20000,
+  "bootstrap_source": "Existing frozen whole-run indices for each complete cohort",
+  "direction": "EC minus opposing method, preserving within-run pairing",
+  "scope": "All six paper-table EC matchups after complete cohort audits. Post hoc descriptive paired endpoints and full curves; no selected time window, simultaneous inference, historical setting identification, equivalence or whole-paper verdict. Figure6 mislabeled EC/SARSA panel remains excluded from image agreement.",
+  "claim_directions": {
+    "sugar_vs_RL": "positive",
+    "combat_vs_RL": "negative",
+    "starvation_vs_all_other_methods": "negative"
+  },
+  "unquantified_claim": "Near equality of EC and Rule M combat has no published equivalence margin; report raw contrasts without an equivalence verdict."
+}

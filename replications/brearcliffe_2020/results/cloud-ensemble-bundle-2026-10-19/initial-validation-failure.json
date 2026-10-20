@@ -1,0 +1,6 @@
+{
+  "stage": "Comparison after successful regeneration",
+  "error": "FileNotFoundError: prepared-readback/validation.json",
+  "cause": "Original preparation directory also contains later audit metadata, which prepare_ensemble.py does not generate.",
+  "resolution": "Compare exactly the 1600 manifest-selected models, manifest.csv, and summary.json; retain unrelated validation metadata unchanged."
+}

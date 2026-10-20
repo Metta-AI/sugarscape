@@ -1,0 +1,17 @@
+{
+  "records": 64064,
+  "figures": 7,
+  "panels": 112,
+  "columns_per_breed_panel": 286,
+  "status_counts": {
+    "unresolved-no-visible-color": 10993,
+    "unresolved-disconnected-color-segments": 263,
+    "visible-raster-interval-not-statistical-confidence": 52808
+  },
+  "previous_endpoint_pixel_and_value_records_preserved": 224,
+  "byte_identical_repeat": true,
+  "gzip_sha256": "aa946661747421eb83134a2cf9ca91a09b0150e563729e8df09696e7320615df",
+  "script_sha256": "73165a90e7b4c238dfbe2d493331c96c941e3583a624ffc1a6a9fb055cc14151",
+  "command": "python replications/brearcliffe_2020/digitize_metrics.py AUTHOR_PAPER.pdf NEW_OUTPUT --full-curves",
+  "scope": "Full raster coverage, not independent statistical observations; unresolved segments excluded without interpolation."
+}

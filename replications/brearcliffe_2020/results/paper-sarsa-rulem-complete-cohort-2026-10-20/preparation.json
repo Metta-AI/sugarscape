@@ -1,0 +1,20 @@
+{
+  "pair_index": 12,
+  "pairing": "SARSA / Rule M",
+  "required_new_inputs": 50,
+  "retained_pilots": [],
+  "producer": "cmd-cdbjg",
+  "previous_inputs": 1400,
+  "expected_union_inputs": 1450,
+  "simulation_restarted": false,
+  "requires_full_trajectory_R_and_storage_readback": true,
+  "script_sha256": {
+    "dispatch_snapshot.py": "dc3fee39a9cd01100e72a24659e3bafbb538bd14dc9631d8ea5d5b351b82ed98",
+    "verify_storage.py": "d53d067edc85af7f1d95f797b261a5f4368491e9031aecb742e3d0d964022b44",
+    "collect_analyze.py": "532dbc1db5aed65b9e0808e1c6c0f3ea8c38f0c56b5f095a6370dead2cf3ebfc",
+    "readback.py": "597f53004bba571d15583541d5a9fc2a3b063c103ea5197936f6efab046d062e",
+    "snapshot.py": "7aaf0febf46c2e0b73a93dae27bc3e95e53d9a2c7e2c2ab6a391dba041975b9f",
+    "publish.py": "23d250ef586c149faef6388e642f2786e7f0a3d4b2ab3db175848eed0f7e2a0e"
+  },
+  "status": "Prepared only; do not launch before prior cohort analysis and storage readback pass."
+}

@@ -1,0 +1,7 @@
+{
+  "exit_code": 1,
+  "stage": "union-audit",
+  "reason": "Prior input provenance files absent at recorded paths. New archive hashes passed before this failure.",
+  "log": "readback.log",
+  "resolution": "Restore retained archive bytes to missing prior paths; preserve initial failure and use fresh extraction/output paths."
+}

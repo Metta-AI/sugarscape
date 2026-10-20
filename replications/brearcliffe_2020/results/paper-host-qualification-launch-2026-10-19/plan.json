@@ -1,0 +1,14 @@
+{
+  "node": "relh-sugarscape-brearcliffe-paper-cpu8-20261019-v1",
+  "maximum_rate_usd_per_minute": 0.012,
+  "outer_seconds": 6600,
+  "kill_grace_seconds": 30,
+  "export_seconds": 1800,
+  "idle_minutes": 15,
+  "maximum_total_usd": 2.0,
+  "calculated_conservative_usd": 1.866,
+  "cases": 2,
+  "steps_per_case": 20000,
+  "maximum_result_bytes": 52428800,
+  "scope": "Fresh-host qualification only. No ensemble launch before exact full-trajectory and timing gates. Replaces provisional1.21 qualification estimate with full setup/export/idle accounting."
+}
