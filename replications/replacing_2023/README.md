@@ -298,3 +298,5 @@ The presentation therefore corroborates targets but does not resolve historical 
 ## Long-horizon trade/lending qualification
 
 [The frozen horizon-extension protocol](results/trade-long-horizon-protocol-2026-10-20) extends the same three conditions to 10,000 steps for seed 14133. It requires exact equality of every original record through step 500, then reports ten fixed 1,000-step windows and paired means over steps 5,001–10,000. The local pilot runs one condition at a time, bounded to 900 seconds each. This is a declared sensitivity to the observed transient, not a recovered paper horizon. Execution and independent audit remain pending.
+
+[The baseline extension completes all 10,000 steps but fails the exact raw-prefix gate](results/trade-long-horizon-reporting-2026-10-20). Four records differ because native array sampling depends on the horizon and the original final log adds metabolism again. All other prefix fields match. Trade and lending remain unstarted. A passive observer must reconstruct the original reporting points before the extension is accepted.

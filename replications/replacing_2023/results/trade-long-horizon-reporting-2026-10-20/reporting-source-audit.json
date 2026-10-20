@@ -1,0 +1,21 @@
+{
+  "source_sha256": "880f449b3618aa0966fdfabf2739746b520a8f7ff619530810247c15e4a90fc7",
+  "array_schedule_expression": "self.maxTimestep / 4",
+  "original_array_steps": [
+    125,
+    250,
+    375,
+    500
+  ],
+  "extended_array_steps": [
+    2500,
+    5000,
+    7500,
+    10000
+  ],
+  "closing_log_increment": 1620,
+  "final_agent_metabolism": 1620,
+  "source_excerpt_statistics": "        # Log per-agent stats every quarter of the total runtime\n        perAgentStatsInterval = self.maxTimestep / 4\n        perAgentStatsCheck = self.timestep % perAgentStatsInterval\n        wealths = []\n        timesToLive = []\n        timesToLiveAgeLimited = []\n        sugarMetabolisms = []\n        spiceMetabolisms = []\n\n",
+  "source_excerpt_end_log": "    def endLog(self):\n        if self.log == None:\n            return\n        # Update total wealth accumulation to include still living agents at simulation end\n        for agent in self.agents:\n            self.runtimeStats[\"totalMetabolismCost\"] += agent.sugarMetabolism + agent.spiceMetabolism\n        environmentWealthCreated = 0\n        environmentWealthTotal = 0\n        for i in range(self.environment.height):\n            for j in range(self.environment.width):\n                environmentWealthCreated += self.environment.grid[i][j].sugarLastProduced + self.environment.grid[i][j].spiceLastProduced\n                environmentWealthTotal += self.environment.grid[i][j].sugar + self.environment.grid[i][j].spice\n        self.runtimeStats[\"environmentWealthCreated\"] = environmentWealthCreated\n        self.runtimeStats[\"environmentWealthTotal\"] = environmentWealthTotal\n        logString = '\\t' + json.dumps(self.runtimeStats) + \"\\n]\"\n        self.log.write(logString)\n        self.log.flush()\n        self.log.close()\n\n",
+  "finding": "The exact raw-prefix requirement includes horizon-dependent reporting. These differences must be reconstructed from passive observations and native endLog semantics. No raw record is modified and no full-state equivalence is asserted."
+}
