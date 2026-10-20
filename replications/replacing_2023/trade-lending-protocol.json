@@ -1,0 +1,94 @@
+{
+  "status": "Predeclared paired diagnostic; not a recovered paper protocol",
+  "reference_revision": "032abd2d2338aadc5ad0287dae7520539f7af57b",
+  "baseline": "spice_growback",
+  "baseline_sha256": "64365e1016e6f57baaec640ac1414cad973d2f9632bb452492686527e688f0e5",
+  "treatments": [
+    {
+      "treatment": "trade_basic",
+      "configuration_sha256": "de168a7e207c8370b9f6d3ec9ec21c7593f74dc7933b96d631db9a90e3c4534e",
+      "differences": {
+        "agentTradeFactor": {
+          "baseline": [
+            0,
+            0
+          ],
+          "treatment": [
+            1,
+            1
+          ]
+        }
+      }
+    },
+    {
+      "treatment": "lending_basic",
+      "configuration_sha256": "d8ccaed3f9d2af64a015323e1b2fecf4a956c3e723e0f61a2c6cfd36d512ba77",
+      "differences": {
+        "agentBaseInterestRate": {
+          "baseline": [
+            0,
+            0
+          ],
+          "treatment": [
+            0.1,
+            0.1
+          ]
+        },
+        "agentLendingFactor": {
+          "baseline": [
+            0,
+            0
+          ],
+          "treatment": [
+            1,
+            1
+          ]
+        },
+        "agentLoanDuration": {
+          "baseline": [
+            0,
+            0
+          ],
+          "treatment": [
+            5,
+            10
+          ]
+        }
+      }
+    }
+  ],
+  "seeds": [
+    14133,
+    5172,
+    32209,
+    23128,
+    15362,
+    12881,
+    1484,
+    19522,
+    23231,
+    24022,
+    5568,
+    13461,
+    31844,
+    8885,
+    21500,
+    28307,
+    28548,
+    22744,
+    27167,
+    26341
+  ],
+  "seed_provenance": "Original Table3 seeds were published for three other scenarios; reuse here is our experimental choice, not an assertion of original trade/lending seeds.",
+  "horizon": 500,
+  "window_start_inclusive": 251,
+  "window_stop_inclusive": 500,
+  "measurements": [
+    "Full population trajectories and extinction times",
+    "Per-seed terminal and final250-step mean population",
+    "Paired absolute and relative population changes versus baseline; zero baseline denominators reported undefined",
+    "Paired differences between timestep1-250 and251-500 means to expose continuing drift"
+  ],
+  "interpretation": "A final-window mean is not proof of carrying capacity or equilibrium. Compare descriptors with the paper reported around3percent mean and5percent maximum only after historical seeds,horizon,window and configuration equivalence are resolved. Do not use these diagnostic outcomes to invent a passing tolerance.",
+  "extinction_analysis": "For population only, extend a native terminal zero through step500: all three configurations disable agent replacement, so extinction is absorbing. Preserve the unmodified native trajectory and report the extension length. Do not extend other metrics."
+}

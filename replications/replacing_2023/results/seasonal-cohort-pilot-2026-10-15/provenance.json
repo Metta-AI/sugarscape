@@ -1,0 +1,6 @@
+{
+  "observations_reference": "../pilot-2026-10-15/seasonal-observed/observations.jsonl.gz",
+  "native_parity_reference": "../pilot-2026-10-15/seasonal-observed/audit.json",
+  "analysis_sha256": "5418fb070b7766ecb3a9c2634110b3b2f0d5aa8c0aacda6d325c826f07bdf1cc",
+  "correction": "Initial exploratory endpoint-only summary (retained externally as seasonal-cohort-pilot-001) undercounted migrations by agents dying before window end. Current analysis records any crossing plus end-state partition; these are separate descriptive measures."
+}

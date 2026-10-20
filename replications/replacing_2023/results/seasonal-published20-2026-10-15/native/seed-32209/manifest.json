@@ -1,0 +1,39 @@
+{
+  "experiment": {
+    "scenario": "seasonal_migration",
+    "seed": 32209
+  },
+  "release": "032abd2d2338aadc5ad0287dae7520539f7af57b",
+  "release_selection": "First stable archive, December 20, 2023",
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-dtl-replacing-reference/sugarscape.py",
+    "--conf",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/replacing-2023-seasonal-published20-001/seed-32209/config.json"
+  ],
+  "pythonhashseed": "0",
+  "source_config_sha256": "32042d2ef5192a6f3593df8b4548e6e217395f6649bd09b43688a2c427ebd205",
+  "source_sha256": {
+    "agent.py": "d64d55861d64af023075afdbd288bc46e76c0f814ac2d436201b5693771ab39f",
+    "cell.py": "dd354ca31979e9d64f49a89e44d5ec823637af67063c1c42829fd8bbfa66ecdf",
+    "disease.py": "56f1ea55511c497f1f8be836f6967ecba8641794d6ff56c01af989397eab607b",
+    "environment.py": "3297ee346a68a8bfde68fc877f1ecc220c67b5ed428e50c41e48bcd88aa53d12",
+    "ethics.py": "408ed5fab3a335f4d70d8b8ebf86b34cafa5ecc66a6c1939323b04c1c9e61121",
+    "gui.py": "1b53490d074cfbf56bf6c91a7b803f15d4c990cafc676d19333e74bf96b9bb4f",
+    "logparse.py": "8c3741af52794b3d5eb6d65015a84e7758650874e0b16fb027b754925c07c37a",
+    "setup.py": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+    "sugarscape.py": "880f449b3618aa0966fdfabf2739746b520a8f7ff619530810247c15e4a90fc7"
+  },
+  "config_sha256": "b8b72aa6925579345495f9c213607457e38794fd8074f7dc5431c8cd21a78cbd",
+  "overrides": {
+    "seed": 32209,
+    "timesteps": 500,
+    "headlessMode": true,
+    "debugMode": [
+      "none"
+    ],
+    "logfile": "/Users/relh/Code/workspace/sugarscape-replication-evidence/replacing-2023-seasonal-published20-001/seed-32209/trajectory.json"
+  },
+  "limitation": "Neither revision is explicitly pinned as the paper's exact code. Seasonal/disease pilots use the released 500-step horizon, not a verified figure sampling schedule."
+}

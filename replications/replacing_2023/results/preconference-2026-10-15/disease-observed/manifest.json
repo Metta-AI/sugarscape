@@ -1,0 +1,18 @@
+{
+  "baseline": "/Users/relh/Code/workspace/sugarscape-replication-evidence/replacing-2023-preconference-disease-001",
+  "source_sha256": "356de138bb512f58ea4891fd25572c02d9f205f799bca839e50be14838fe7330",
+  "observer_sha256": "941cdf5a06a59b41363f08d2c1f73d58fc37a545da0f6388953256f4db3666d2",
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "agent_columns": [
+    "id",
+    "x",
+    "y",
+    "vision",
+    "sugar_metabolism",
+    "age",
+    "disease_count",
+    "season",
+    "hemisphere"
+  ],
+  "timing": "Initialization and after each native doTimestep; no sorting or random draws. Native endSimulation exits after closing its log."
+}

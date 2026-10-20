@@ -1,0 +1,30 @@
+{
+  "revision": "2d439ff1a8f2fff5e35e168fb610397dc35bfcdb",
+  "selection": "First revision with released 500-step disease example, selected by configuration history before outcomes. Not a verified paper pin.",
+  "python": "Python 3.12.4",
+  "source_archive_sha256": "5adb362c22976569866486dc543d120df1636cf911102f1ac6111a3a0e6a14ac",
+  "seeds": [
+    12345,
+    12881,
+    22744
+  ],
+  "overrides": [
+    "seed",
+    "headlessMode",
+    "logfile"
+  ],
+  "runs": [
+    {
+      "seed": 12345,
+      "exit_code": 0
+    },
+    {
+      "seed": 12881,
+      "exit_code": 0
+    },
+    {
+      "seed": 22744,
+      "exit_code": 0
+    }
+  ]
+}

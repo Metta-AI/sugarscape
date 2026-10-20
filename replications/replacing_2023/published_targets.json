@@ -1,0 +1,215 @@
+{
+  "paper": "https://digital-terraria-lab.github.io/assets/papers/kremer-herman:2023:replacing-sugarscape.pdf",
+  "pdf_sha256": "e1d5bcec1ae247660293dd73af1bdeacc964f2db9ee3968161f26237a5f8012e",
+  "baseline_seed": 12345,
+  "table3": [
+    {
+      "seed": 14133,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 5172,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 32209,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "different",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 23128,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 15362,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 12881,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "extinct"
+    },
+    {
+      "seed": 1484,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "different",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 19522,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 23231,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 24022,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 5568,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 13461,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "different",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 31844,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 8885,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "different",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 21500,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 28307,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 28548,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 22744,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "extinct"
+    },
+    {
+      "seed": 27167,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    },
+    {
+      "seed": 26341,
+      "seasonal_migration": "similar",
+      "reproduction_limited": "similar",
+      "disease_basic": "similar"
+    }
+  ],
+  "table4": [
+    {
+      "configuration": "immediate_growback.json",
+      "book_pages": "21\u201326",
+      "released_config_sha256": "06753f5f253082c469df87298ff2c6581db7b9200ea033660a3d3035d60f9bf1"
+    },
+    {
+      "configuration": "constant_growback.json",
+      "book_pages": "28\u201330",
+      "released_config_sha256": "08877613afb0757131d015c3e8d31f8bd67ce87f711827ea07bcb3d0143feb0a"
+    },
+    {
+      "configuration": "seasonal_migration.json",
+      "book_pages": "43\u201345",
+      "released_config_sha256": "32042d2ef5192a6f3593df8b4548e6e217395f6649bd09b43688a2c427ebd205"
+    },
+    {
+      "configuration": "pollution_formation.json",
+      "book_pages": "45\u201350",
+      "released_config_sha256": "2844f407a2ee841eea2e8e40a115f2a79253797f50f9b1dfee903c8611012c70"
+    },
+    {
+      "configuration": "reproduction_basic.json",
+      "book_pages": "55\u201358",
+      "released_config_sha256": "35cc9c71a4d0ca9c6a6c2201fe837a0f8d524a30042c1c943abbafbbcca66c5a"
+    },
+    {
+      "configuration": "reproduction_limited.json",
+      "book_pages": "64\u201366",
+      "released_config_sha256": "1163f7212b00d0c7545ea4a73f5af6f85c42e7bcde09d5cb86a56f0aa019881c"
+    },
+    {
+      "configuration": "reproduction_inheritance.json",
+      "book_pages": "67\u201368",
+      "released_config_sha256": "a3aedef31831d0a66fd4ec05ae380caced77237677bd1513be7d4722a20840fb"
+    },
+    {
+      "configuration": "cultural_tagging.json",
+      "book_pages": "72\u201379",
+      "released_config_sha256": "33e1843254664b2c3ad72641458674b294f37d5c7adcd6cf5ee76760e6dedb5b"
+    },
+    {
+      "configuration": "combat_unlimited.json",
+      "book_pages": "82\u201383",
+      "released_config_sha256": "587b17d102013571388aa13c2a37f7df0327fd3dfc8cda3d52a7fe5c1a7a48f9"
+    },
+    {
+      "configuration": "combat_limited.json",
+      "book_pages": "86\u201390",
+      "released_config_sha256": "db9d6cba18e5f8df00c182467697df26e5c64c022d424f16794bf7bd263337e4"
+    },
+    {
+      "configuration": "spice_growback.json",
+      "book_pages": "96\u201399",
+      "released_config_sha256": "64365e1016e6f57baaec640ac1414cad973d2f9632bb452492686527e688f0e5"
+    },
+    {
+      "configuration": "trade_basic.json",
+      "book_pages": "101\u2013107",
+      "released_config_sha256": "de168a7e207c8370b9f6d3ec9ec21c7593f74dc7933b96d631db9a90e3c4534e"
+    },
+    {
+      "configuration": "trade_replacement.json",
+      "book_pages": "120\u2013122",
+      "released_config_sha256": "d6416106e9e41a6d4974222af762c98d03d5ef524dd4b4cdc37e0a6f40c30fc5"
+    },
+    {
+      "configuration": "trade_pollution.json",
+      "book_pages": "127\u2013129",
+      "released_config_sha256": "25ee5da0603e30f4840435a68e49986ac457abca2b00f9c0b367432d2dc56e18"
+    },
+    {
+      "configuration": "foresight_basic.json",
+      "book_pages": "129\u2013130",
+      "released_config_sha256": "e153514129ed41ae0693357d2ab02703fd49ce613c5545a6dfcd0cf90f7fd013"
+    },
+    {
+      "configuration": "lending_basic.json",
+      "book_pages": "131\u2013133",
+      "released_config_sha256": "d8ccaed3f9d2af64a015323e1b2fecf4a956c3e723e0f61a2c6cfd36d512ba77"
+    },
+    {
+      "configuration": "disease_basic.json",
+      "book_pages": "141\u2013147",
+      "released_config_sha256": "d8ab531334e1118aaf2cfa03e5e0d807b78f8fa56c38354c484759da4d338248"
+    }
+  ],
+  "criteria_limitation": "The authors use qualitative similarity without numerical tolerances. No post-hoc threshold constitutes a validated match."
+}

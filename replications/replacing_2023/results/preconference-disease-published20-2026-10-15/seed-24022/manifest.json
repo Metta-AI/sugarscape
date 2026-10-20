@@ -1,0 +1,39 @@
+{
+  "experiment": {
+    "scenario": "disease_basic",
+    "seed": 24022
+  },
+  "release": "d57d39dd034fe5926ad51ed5f3f7b6837a2210ac",
+  "release_selection": "Last upstream revision before December 14\u201315, 2023 conference; not a verified paper pin",
+  "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "/Users/relh/Code/workspace/sugarscape-replacing-preconference-reference/sugarscape.py",
+    "--conf",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/replacing-2023-preconference-disease-published20-001/seed-24022/config.json"
+  ],
+  "pythonhashseed": "0",
+  "source_config_sha256": "d8ab531334e1118aaf2cfa03e5e0d807b78f8fa56c38354c484759da4d338248",
+  "source_sha256": {
+    "agent.py": "26e6b6ca9e96ef28ea50ecbed9c53be6cc5302c6161e21caeca2eebaa3ef7775",
+    "cell.py": "dd354ca31979e9d64f49a89e44d5ec823637af67063c1c42829fd8bbfa66ecdf",
+    "disease.py": "56f1ea55511c497f1f8be836f6967ecba8641794d6ff56c01af989397eab607b",
+    "environment.py": "2b78a1d2e57417df4f2ea4e37108cdd3bf7b1f113566dbfe452020600a68c553",
+    "ethics.py": "408ed5fab3a335f4d70d8b8ebf86b34cafa5ecc66a6c1939323b04c1c9e61121",
+    "gui.py": "1b53490d074cfbf56bf6c91a7b803f15d4c990cafc676d19333e74bf96b9bb4f",
+    "logparse.py": "8c3741af52794b3d5eb6d65015a84e7758650874e0b16fb027b754925c07c37a",
+    "setup.py": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+    "sugarscape.py": "356de138bb512f58ea4891fd25572c02d9f205f799bca839e50be14838fe7330"
+  },
+  "config_sha256": "7f925153c6972910f1980ef2e2769b0f66725354bf0c22d45aeeb5860feac354",
+  "overrides": {
+    "seed": 24022,
+    "timesteps": 500,
+    "headlessMode": true,
+    "debugMode": [
+      "none"
+    ],
+    "logfile": "/Users/relh/Code/workspace/sugarscape-replication-evidence/replacing-2023-preconference-disease-published20-001/seed-24022/trajectory.json"
+  },
+  "limitation": "Neither revision is explicitly pinned as the paper's exact code. Seasonal/disease pilots use the released 500-step horizon, not a verified figure sampling schedule."
+}

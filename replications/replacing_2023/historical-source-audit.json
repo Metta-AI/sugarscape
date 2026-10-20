@@ -1,0 +1,86 @@
+{
+  "conference_dates": "December 14\u201315, 2023",
+  "conference_source": "https://crossmark.crossref.org/dialog/?doi=10.1007%2F978-3-031-57523-5_7",
+  "archive_pin": "032abd2d2338aadc5ad0287dae7520539f7af57b",
+  "upstream_archive_candidate": "955860e9b6e4d509f4e8fb19439d588659df919c",
+  "preconference_pin": "d57d39dd034fe5926ad51ed5f3f7b6837a2210ac",
+  "selection_reason": "Most recent upstream commit before the conference, selected using chronology and source changes, before examining its simulation results. Exact paper revision remains unverified.",
+  "source_comparison": [
+    {
+      "file": "agent.py",
+      "archive_sha256": "d64d55861d64af023075afdbd288bc46e76c0f814ac2d436201b5693771ab39f",
+      "upstream_sha256": "d64d55861d64af023075afdbd288bc46e76c0f814ac2d436201b5693771ab39f",
+      "byte_identical": true
+    },
+    {
+      "file": "cell.py",
+      "archive_sha256": "dd354ca31979e9d64f49a89e44d5ec823637af67063c1c42829fd8bbfa66ecdf",
+      "upstream_sha256": "dd354ca31979e9d64f49a89e44d5ec823637af67063c1c42829fd8bbfa66ecdf",
+      "byte_identical": true
+    },
+    {
+      "file": "disease.py",
+      "archive_sha256": "56f1ea55511c497f1f8be836f6967ecba8641794d6ff56c01af989397eab607b",
+      "upstream_sha256": "56f1ea55511c497f1f8be836f6967ecba8641794d6ff56c01af989397eab607b",
+      "byte_identical": true
+    },
+    {
+      "file": "environment.py",
+      "archive_sha256": "3297ee346a68a8bfde68fc877f1ecc220c67b5ed428e50c41e48bcd88aa53d12",
+      "upstream_sha256": "3297ee346a68a8bfde68fc877f1ecc220c67b5ed428e50c41e48bcd88aa53d12",
+      "byte_identical": true
+    },
+    {
+      "file": "ethics.py",
+      "archive_sha256": "408ed5fab3a335f4d70d8b8ebf86b34cafa5ecc66a6c1939323b04c1c9e61121",
+      "upstream_sha256": "408ed5fab3a335f4d70d8b8ebf86b34cafa5ecc66a6c1939323b04c1c9e61121",
+      "byte_identical": true
+    },
+    {
+      "file": "gui.py",
+      "archive_sha256": "1b53490d074cfbf56bf6c91a7b803f15d4c990cafc676d19333e74bf96b9bb4f",
+      "upstream_sha256": "1b53490d074cfbf56bf6c91a7b803f15d4c990cafc676d19333e74bf96b9bb4f",
+      "byte_identical": true
+    },
+    {
+      "file": "logparse.py",
+      "archive_sha256": "8c3741af52794b3d5eb6d65015a84e7758650874e0b16fb027b754925c07c37a",
+      "upstream_sha256": "8c3741af52794b3d5eb6d65015a84e7758650874e0b16fb027b754925c07c37a",
+      "byte_identical": true
+    },
+    {
+      "file": "setup.py",
+      "archive_sha256": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+      "upstream_sha256": "2a4cf34761ccf970ee8c826d9f895aca22f9f73116d8fffe686a2ed525389a4d",
+      "byte_identical": true
+    },
+    {
+      "file": "sugarscape.py",
+      "archive_sha256": "880f449b3618aa0966fdfabf2739746b520a8f7ff619530810247c15e4a90fc7",
+      "upstream_sha256": "880f449b3618aa0966fdfabf2739746b520a8f7ff619530810247c15e4a90fc7",
+      "byte_identical": true
+    }
+  ],
+  "configuration_comparison": [
+    {
+      "scenario": "disease_basic",
+      "archive_sha256": "d8ab531334e1118aaf2cfa03e5e0d807b78f8fa56c38354c484759da4d338248",
+      "preconference_sha256": "d8ab531334e1118aaf2cfa03e5e0d807b78f8fa56c38354c484759da4d338248",
+      "byte_identical": true
+    },
+    {
+      "scenario": "reproduction_limited",
+      "archive_sha256": "1163f7212b00d0c7545ea4a73f5af6f85c42e7bcde09d5cb86a56f0aa019881c",
+      "preconference_sha256": "1163f7212b00d0c7545ea4a73f5af6f85c42e7bcde09d5cb86a56f0aa019881c",
+      "byte_identical": true
+    },
+    {
+      "scenario": "seasonal_migration",
+      "archive_sha256": "32042d2ef5192a6f3593df8b4548e6e217395f6649bd09b43688a2c427ebd205",
+      "preconference_sha256": "32042d2ef5192a6f3593df8b4548e6e217395f6649bd09b43688a2c427ebd205",
+      "byte_identical": true
+    }
+  ],
+  "diagnostic": "Run preconference disease and reproduction at identical baseline seeds/horizons. Do not infer correctness solely from a closer match. Multiple code changes separate revisions.",
+  "conclusion": "All top-level Python files in the stable archive exactly match upstream955860e. It contains the December20 disease changes, but precedes the separate movement/vision change e911a7f. All three original example configs are byte-identical to preconference d57d39d."
+}
