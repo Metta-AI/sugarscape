@@ -1,0 +1,12 @@
+{
+  "id": "oremland-cloud-timing-cpu8-001",
+  "maximum_usd": 4,
+  "state": "reserved-before-create",
+  "node": "relh-sugarscape-oremland-timing-cpu8-20261020-v1",
+  "maximum_rate_usd_per_minute": 0.012,
+  "bounded_seconds_including_boot_stage_qualification_benchmark_export_idle": 16800,
+  "computed_upper_bound_usd": 3.36,
+  "qualification_native_inputs": 48,
+  "benchmark_native_inputs": 18639,
+  "scope": "Alternative CPU8 capacity after cancelling owned CPU2 queue. Single pinned CPU native timing; no benchmark before cross-host qualification, no automatic retry."
+}

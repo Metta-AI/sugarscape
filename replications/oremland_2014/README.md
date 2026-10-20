@@ -1,5 +1,7 @@
 # Oremland and Laubenbacher (2014)
 
+[Cloud timing qualification passes](results/cloud-timing-qualification-2026-10-20): all 48 inputs preserve every non-timing output across hosts. The local passive watcher was stopped before admission. One bounded cloud benchmark now runs the frozen 18,639-input sequence on a pinned CPU. Hardware differences remain explicit; no timing result or study completion is claimed.
+
 [All eighteen frozen searches complete](results/searches-complete-2026-10-20): 432,000 native evaluations and exact fresh replay of every genetic decision. The 144 final policies now enter 28,800 held-out full-model evaluations. All 2,430 archived members pass fresh storage readback. Transfer, timing, and final synthesis remain pending; no global-optimality or completed-study claim is made.
 
 [Passive timing instrumentation qualifies](results/timing-recorder-qualification-2026-10-20) across 48 paired inputs and all six widths, with exact native outputs and survivor hashes. A separate Table 2 benchmark retains published batch counts and waits for this task’s heavy local jobs. Qualification timings are excluded from benchmark conclusions; no completed-study credit is added.
