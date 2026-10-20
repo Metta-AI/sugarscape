@@ -302,3 +302,18 @@ The presentation therefore corroborates targets but does not resolve historical 
 [The baseline extension completes all 10,000 steps but fails the exact raw-prefix gate](results/trade-long-horizon-reporting-2026-10-20). Four records differ because native array sampling depends on the horizon and the original final log adds metabolism again. All other prefix fields match. Trade and lending remain unstarted. A passive observer must reconstruct the original reporting points before the extension is accepted.
 
 [Passive reporting qualification passes](results/trade-passive-qualification-2026-10-20): all 10,001 native records are byte-identical and every field of the original 501 records reconstructs exactly. [The gated continuation](results/trade-long-ensemble-2026-10-20) now runs the remaining 59 disjoint inputs with four local workers. All trajectories and fixed windows must pass the complete-ensemble audit before interpretation; no paper-completion credit is assigned.
+
+
+## Long-horizon ensemble recovery
+
+[The recovery audit](results/trade-long-recovery-2026-10-20/inventory-audit.json) validates 25 successful inputs and 250,025 observations, including three workers omitted from the failed collector’s index.
+All native trajectories pass numeric checks, and every original 501-record prefix matches exactly.
+The original supervisor timed out after 1,800 seconds on seed 19522, trade condition.
+That attempt saved 10,001 records but lacks a successful exit receipt; it receives no completion credit.
+The original failure and outputs remain intact.
+
+The recovery runs only the 35 inputs without validated successful exits, using two workers and a 7,200-second per-input limit.
+Seeds, model source, 10,000-step horizon, and fixed analysis windows remain unchanged.
+The timed-out input must also reproduce its entire saved trajectory hash.
+Each worker saves its validated receipt before collector aggregation, preserving successful work if the collector fails.
+The final analysis requires all 60 inputs; this partial recovery does not complete the study.
