@@ -34,3 +34,10 @@ Its native model and trainer are byte-identical to the qualification files in th
 The supervisor uses this directory's `model.jl` and `train.jl` alongside the full-campaign files when reproducing elsewhere.
 The first full arm is running; no full-training, posterior, or completed-study claim is made here.
 No new cloud spending is reserved.
+
+The full pathwise run's first three epochs reproduce all twelve immutable qualification artifacts byte-for-byte.
+`pathwise-prefix-regression.json` records this check; it does not establish full-run completion.
+The dependent predictive pipeline waits for both terminal 5,000-epoch optimizer audits before running the frozen 4,000-trajectory comparison.
+Python verifies export invariants and recomputes pointwise summaries; independent R checks means, quantiles, coverage counts, and root-mean-square errors.
+The analysis code has passed Python lint and R parsing; its native predictive execution remains pending.
+Neither predictor summary checks nor R arithmetic constitute independent movement replay or historical posterior validation.

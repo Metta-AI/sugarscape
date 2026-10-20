@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-10-20T03:32:02.953178+00:00",
+  "purpose": "Implement the predictive comparison already specified in the frozen full-campaign protocol; no training changes",
+  "requires_full_optimizer_audits": true,
+  "draws_per_distribution": 1000,
+  "distributions": [
+    "prior",
+    "pathwise",
+    "vargrad",
+    "truth"
+  ],
+  "native_timeout_seconds": 7200,
+  "python_audit_timeout_seconds": 1800,
+  "r_audit_timeout_seconds": 600,
+  "source_sha256": {
+    "protocol.json": "653f481cdd902ed1b12bcb14e182aed41942f613d4af721a83c87defb0a3b26c",
+    "predict.jl": "fbb154da4c6ae172dbdaeedef4fb461cfa49f97c70c00e16a730e3c58844735e",
+    "analyze_predictive.py": "b9d1fc3ebd4a410560428a373bbbaffe7b4dde442f6d36977ea924542f6c3848",
+    "verify_predictive.R": "da3aa06d404e0f762daf57edd9b894c0fc699c82fb0f11892312751a22f309f4",
+    "after_optimization.py": "bbcba2dfab9cd39d6e518105c47c5ad215801d92bb5da9368afc2b56e2ee8031"
+  },
+  "new_cloud_reservation_usd": 0,
+  "no_retry": true
+}
