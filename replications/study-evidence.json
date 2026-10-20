@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T07:22:43.640037+00:00",
+  "as_of": "2026-10-20T07:31:19.389833+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 8,
   "wholly_positive_papers": 1,
@@ -162,20 +162,20 @@
     {
       "study": "quera_2025",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
-      "checked_commit": "373cca2a241092b4f5224033f851940015617a89",
+      "checked_commit": "9a57ba5233459d44eaa673ef19eb01803b4c5367",
       "status": "partial",
       "readme": "replications/quera_2025/README.md",
-      "readme_sha256": "9afbee7452482d4025c329f2228338b6dac94a426f26dac70791194115f70e16",
-      "remaining_scope": "Full pathwise arm completed5000epochs. Exact native Float32 norms and95570000optimizer components independently replayed; original epoch4 cross-precision auditor failure preserved. Maximum optimizer error2.9903e-8, original update tolerances unchanged. All15006native files freshly read back from11 remote archives. VarGrad resumed unchanged and first3epochs match qualification byte-for-byte; full VarGrad,4000predictive trajectories, R checks, figures and final method assessment remain pending. Explicit prior, parameterization, optimizer and validation reconstructions remain documented. No completed-study or negative-replication credit.",
+      "readme_sha256": "a8ee75c0d532531898652fa41b4a118827c5de46d807926955a35516a1ef5dd1",
+      "remaining_scope": "Both5000epoch calibration arms complete with191140000optimizer components and10000exactFloat32 norms audited. Both15006file native archives freshly read back. All4000predictive trajectories complete; independentR verifies1712summary values, raw exports freshly archived/readback. ThreePDFs rendered and visually reviewed; clipped labels corrected without data changes. Original precision and predictive terminal-schema audit failures preserved. Source/claim review and final whole-Sugarscape-method synthesis remain pending; explicit prior/validation/optimizer/environment reconstructions and one optimization seed per arm prevent historical numerical identity claims. No completed-study credit yet.",
       "validation": {
         "states": 150,
         "agent_observations": 15000,
         "cell_observations": 93750,
         "portable_trajectory_files_byte_identical": 9
       },
-      "json_evidence_files": 129,
-      "gzip_json_evidence_files": 3,
-      "checked_at": "2026-10-20T07:22:43.640037+00:00",
+      "json_evidence_files": 144,
+      "gzip_json_evidence_files": 5,
+      "checked_at": "2026-10-20T07:31:19.389833+00:00",
       "gradient_baseline_validation": {
         "seeds": 256,
         "agent_updates": 614400,
@@ -202,6 +202,22 @@
         "total_bytes": 1908595493,
         "all_remote_objects_match_replayed_manifest": true,
         "new_simulations": 0
+      },
+      "full_vargrad_validation": {
+        "epochs": 5000,
+        "optimizer_components": 95570000,
+        "native_float32_norms_exact": 5000,
+        "validation_draws": 25000,
+        "remote_native_files_verified": 15006,
+        "selected_epoch": 105
+      },
+      "full_predictive_validation": {
+        "trajectories": 4000,
+        "stored_states": 200000,
+        "independent_r_values": 1712,
+        "maximum_scaled_error": 3.7993e-16,
+        "remote_archive_verified": true,
+        "figures_reviewed": 3
       }
     },
     {
