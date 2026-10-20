@@ -275,7 +275,7 @@ Both original and fresh images are retained; visual inspection finds the same cu
 This establishes numerical plot reconstruction from fresh simulations, not pixel-exact rendering or validation of the titles' broader claims.
 The independently audited Tables 2 and 4 supply the corresponding published numerical targets.
 
-Run `run_figures.py ENGINE COMPLETE_CANONICAL NEW_OUTPUT`, then `audit_figure_series.py FIGURE_OUTPUT NEW_AUDIT`.
+Run `run_figures.py ENGINE COMPLETE_CANONICAL NEW_OUTPUT`, then `audit_figure_series.py FIGURE_OUTPUT NEW_AUDIT`. The [committed figure bundle](results/figures-2026-10-15/README.md) now also retains the complete native directory layout, so its audit runs without reconstructing missing input paths.
 
 ## Per-seed calibration audit prepared
 
