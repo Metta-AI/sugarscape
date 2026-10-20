@@ -1,17 +1,21 @@
 # Quera-Bofarull et al. (2025): Automatic Differentiation of Agent-Based Models
 
-[Native training archive qualification](results/training-archive-qualification-2026-10-20) preserves all fifteen files from the completed three-epoch pathwise run. Fresh remote readback verifies every archive member against the optimizer audit. Full 5,000-epoch archives remain pending; no new simulation coverage or completion credit is added.
+**Status: completed qualified Sugarscape method reconstruction; mixed outcomes.**
+The [requirement-by-requirement verdict](results/method-verdict-2026-10-20) covers native dynamics, gradient diagnostics, both calibration estimators, predictive outputs, and posterior assessment.
+Independent checks cover 256 gradient baselines, 9,216 perturbed cases, 191,140,000 optimizer components, and all 4,000 predictive trajectories.
+Both full training archives and the predictive evidence pass fresh remote readback; three figures were visually reviewed.
 
-[Both native calibration trainers qualify](results/native-training-qualification-2026-10-20): pathwise and VarGrad each pass three full epochs, independent AdamW replay, and validation checkpoint checks. The missing prior and validation settings are explicitly reconstructed. A sequential 5,000-epoch-per-estimator campaign is admitted locally; full calibration remains incomplete.
-
-[Coupled calibration qualification](results/calibration-adapter-qualification-2026-10-20) identifies a random-realization mismatch in the original value/Jacobian adapter. A separate corrected adapter passes independent two-channel loss and six-gradient checks; prior seed-zero trajectories remain byte-identical. The reconstructed dependency environment and correction are explicit. Full optimization and posterior comparisons remain incomplete.
-
-**Status: incomplete.** Three calibration pilots and all 256 gradient-baseline trajectories pass independent state replay. The paper’s gradient and calibration results remain unreplicated.
+Pathwise fits the declared calibration observation better than VarGrad, but neither recovers every true parameter.
+VarGrad's predictive result differs from the paper's reported outcome.
+Historical priors, seeds, validation, and environment remain unresolved; reconstruction and adapter corrections are explicit.
+This earns method-completion credit, not historical numerical identity, a wholly positive result, or a validated negative replication.
 
 Paper: https://arxiv.org/html/2509.03303v2
 Author implementation: https://github.com/arnauqb/DiffABM.jl/tree/9178eccd56dd352e3515e276239654239f8d3b41
 
-## Native execution and evidence
+The sections below retain the evidence progression. Earlier statements of incompleteness describe those milestones; the linked verdict is current.
+
+## Initial native execution and evidence
 
 We use the author’s `jmlr_submission` revision and its unchanged 348-package manifest with Julia 1.11.3. No model correction is applied. The Sugarscape implementation matches the prepublication revision inspected in the program source audit.
 
@@ -41,7 +45,7 @@ python3 replications/quera_2025/audit.py /new/output/path /new/audit/path
 
 To inspect retained evidence, extract `trajectories.tar.gz` into a new directory, copy the retained `run.jl`, `configuration.txt`, and `sha256.txt` there, then run `audit.py`. The archive hash is in `archive.json`. The audit requires a new output directory.
 
-## Remaining paper targets
+## Target definitions and historical gaps
 
 - Figure 11: automatic-differentiation and finite-difference gradients for six parameters, 100 agents, a 50×50 landscape, and vision 1/3. Recover or explicitly reconstruct the finite-difference step sizes, replicate counts, normalization, seeds, and historical source revision.
 - Figures 17, 19b, and 20b: calibration predictive behavior, loss, and posterior. Recover the exact prior and training protocol; reproduce the stated five Monte Carlo samples, 5,000 epochs, validation selection, and flow architecture.
