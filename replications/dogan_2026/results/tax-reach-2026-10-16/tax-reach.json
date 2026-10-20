@@ -1,0 +1,89 @@
+{
+  "parameters": {
+    "income_threshold": 5.0,
+    "wealth_threshold_lower": 50,
+    "wealth_threshold_upper": 194.0,
+    "redistribution_mode": "means_tested",
+    "k": 5,
+    "m": 20,
+    "seed": 0
+  },
+  "steps": 300,
+  "source_sha256": {
+    "sugarscape_ai_tax/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sugarscape_ai_tax/agents.py": "eeb906b822bf9198e3842fee40eb95f6dc3cc1da22c05f804905c2628384d3bb",
+    "sugarscape_ai_tax/model.py": "a3e264cb1640691451b2936cd85a17f21bc8b17f5a2f36977dc8ee1db698ed24",
+    "sugarscape_ai_tax/sugar-map.txt": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
+    "run_canonical_sweep.py": "b64721f78612b17a9a6c2f805aac6dbe265f1bc97fce268850fcaf73a9a03aad",
+    "requirements.txt": "5064b8cc5a6c56cf9b8d8fa33f398f127a6542d2103eb206e9bb65bbeb96fe19",
+    "sugarscape_ai_tax.pdf": "128145677ffd6ae12a5506fd61871482aff5fa767957ca0f32cf5a1befc1b02f"
+  },
+  "canonical_sha256": "fc00c8fa597adeee4f8e378de9a3d7546ce9615990ee7f168fd69647ef057c99",
+  "runs": [
+    {
+      "tax_regime": "labour",
+      "native_observed_byte_identical": true,
+      "canonical_gini_mortality_tax_match": true,
+      "per_step_tax_accounting_matches": true,
+      "tax_by_type": [
+        {
+          "agent_type": "AIAugmentedAgent",
+          "tax_calls": 14115,
+          "positive_tax_calls": 14100,
+          "total_tax": 12731.621820000002
+        },
+        {
+          "agent_type": "AutonomousAgent",
+          "tax_calls": 14910,
+          "positive_tax_calls": 0,
+          "total_tax": 0.0
+        },
+        {
+          "agent_type": "HumanAgent",
+          "tax_calls": 24975,
+          "positive_tax_calls": 24975,
+          "total_tax": 17380.507143836756
+        },
+        {
+          "agent_type": "OwnerHumanAgent",
+          "tax_calls": 14910,
+          "positive_tax_calls": 14850,
+          "total_tax": 12130.562880000001
+        }
+      ]
+    },
+    {
+      "tax_regime": "wealth",
+      "native_observed_byte_identical": true,
+      "canonical_gini_mortality_tax_match": true,
+      "per_step_tax_accounting_matches": true,
+      "tax_by_type": [
+        {
+          "agent_type": "AIAugmentedAgent",
+          "tax_calls": 14115,
+          "positive_tax_calls": 14087,
+          "total_tax": 16585.873013329023
+        },
+        {
+          "agent_type": "AutonomousAgent",
+          "tax_calls": 14910,
+          "positive_tax_calls": 14910,
+          "total_tax": 1657.7430303959732
+        },
+        {
+          "agent_type": "HumanAgent",
+          "tax_calls": 24975,
+          "positive_tax_calls": 24115,
+          "total_tax": 106273.6382556243
+        },
+        {
+          "agent_type": "OwnerHumanAgent",
+          "tax_calls": 14910,
+          "positive_tax_calls": 14910,
+          "total_tax": 35474.34853607334
+        }
+      ]
+    }
+  ],
+  "scope": "Full native fast-automation seed-zero trajectories with tax observations; establishes implemented tax reach, not causal policy effectiveness or all-seed tax shares."
+}

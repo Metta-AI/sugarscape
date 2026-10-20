@@ -1,0 +1,82 @@
+{
+  "revision": "0b6a3df470388f60535d8ffb67c34a7f9fa0059a",
+  "source_sha256": {
+    "run_canonical_sweep.py": "b64721f78612b17a9a6c2f805aac6dbe265f1bc97fce268850fcaf73a9a03aad",
+    "run_stage5_rob_starvation.py": "2bf596063cb7b7668dd74edb6682c0137578d9637c4ba6162c271f02c14c88b9",
+    "sugarscape_ai_tax/model.py": "a3e264cb1640691451b2936cd85a17f21bc8b17f5a2f36977dc8ee1db698ed24"
+  },
+  "checked_equalities": {
+    "horizon": 300,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "calibration_seed": 42,
+    "automation_speeds": [
+      {
+        "label": "slow",
+        "k": 20,
+        "m": 10
+      },
+      {
+        "label": "balanced",
+        "k": 10,
+        "m": 10
+      },
+      {
+        "label": "fast",
+        "k": 5,
+        "m": 20
+      }
+    ],
+    "policy_cells": [
+      {
+        "tax_regime": "none",
+        "redistribution_mode": "none",
+        "label": "baseline"
+      },
+      {
+        "tax_regime": "labour",
+        "redistribution_mode": "ubi",
+        "label": "labour/ubi"
+      },
+      {
+        "tax_regime": "labour",
+        "redistribution_mode": "means_tested",
+        "label": "labour/means_tested"
+      },
+      {
+        "tax_regime": "wealth",
+        "redistribution_mode": "ubi",
+        "label": "wealth/ubi"
+      },
+      {
+        "tax_regime": "wealth",
+        "redistribution_mode": "means_tested",
+        "label": "wealth/means_tested"
+      },
+      {
+        "tax_regime": "displacement_levy",
+        "redistribution_mode": "means_tested",
+        "label": "disp_levy/means_tested"
+      },
+      {
+        "tax_regime": "uhi_scenario",
+        "redistribution_mode": "none",
+        "label": "uhi_scenario"
+      }
+    ],
+    "native_default_welfare": "geometric_mean"
+  },
+  "factory_source": {
+    "run_canonical_sweep.py": "def make_model(cell, k, m, seed, welfare_mode=\"geometric_mean\"):\n    kwargs = dict(\n        tax_regime=cell[\"tax_regime\"],\n        redistribution_mode=cell[\"redistribution_mode\"],\n        k=k, m=m,\n        income_threshold=income_threshold,\n        wealth_threshold_lower=50,\n        wealth_threshold_upper=wealth_threshold_upper,\n        autonomous_welfare_mode=welfare_mode,\n        seed=seed,\n    )\n    if cell[\"tax_regime\"] == \"uhi_scenario\":\n        kwargs[\"uhi_transfer_rate\"] = uhi_transfer_rate\n    return SugarscapeAITax(**kwargs)",
+    "run_stage5_rob_starvation.py": "def make_model(cell, km_case, seed):\n    kwargs = dict(\n        tax_regime=cell[\"tax_regime\"],\n        redistribution_mode=cell[\"redistribution_mode\"],\n        k=km_case[\"k\"], m=km_case[\"m\"],\n        income_threshold=income_threshold,\n        wealth_threshold_lower=50,\n        wealth_threshold_upper=wealth_threshold_upper,\n        seed=seed,\n    )\n    if cell[\"tax_regime\"] == \"uhi_scenario\":\n        kwargs[\"uhi_transfer_rate\"] = uhi_transfer_rate\n    return SugarscapeAITax(**kwargs)"
+  },
+  "reviewed_calibration_equivalence": "Both use seed42 no-policy k=m=0 for200steps;step199medianincome and2xmedianwealth;balancedwealth/means_tested300steps derives2xmeanpositiveTransferReceived. Canonical explicitly sets geometric_mean, matching native default in legacy.",
+  "different_observation": "Legacy wealth-at-death averages positive per-step means equally. Canonical weights each per-step mean by its death count. These statistics are not interchangeable; cumulative deaths use the same sum.",
+  "scope": "Source-level protocol comparison, not a replay of the legacy report. Canonical PartB covers the same105simulation settings and cumulative-mortality experiment. No new completed paper or additional independent trials are claimed.",
+  "remaining": "Do not use legacy unweighted stock-at-death as the current manuscript statistic. Fullpaper still requires remaining robustness and final interpretation."
+}

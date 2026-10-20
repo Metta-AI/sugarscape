@@ -1,0 +1,196 @@
+{
+  "source_sha256": "83716cb7e732a22c39da5120b167f2e6ac26b07a023dd5eb689c1ab87740d08b",
+  "source": "sugarscape_ai_tax.tex at author revision 0b6a3df470388f60535d8ffb67c34a7f9fa0059a",
+  "table": "3",
+  "rows": [
+    {
+      "cell": "baseline",
+      "speed": "slow",
+      "total": "0.366",
+      "between": "0.253",
+      "within": "0.068",
+      "residual": "0.045",
+      "between_percent": "69"
+    },
+    {
+      "cell": "baseline",
+      "speed": "balanced",
+      "total": "0.379",
+      "between": "0.278",
+      "within": "0.061",
+      "residual": "0.039",
+      "between_percent": "73"
+    },
+    {
+      "cell": "baseline",
+      "speed": "fast",
+      "total": "0.384",
+      "between": "0.286",
+      "within": "0.062",
+      "residual": "0.036",
+      "between_percent": "75"
+    },
+    {
+      "cell": "labor/UBI",
+      "speed": "slow",
+      "total": "0.382",
+      "between": "0.271",
+      "within": "0.069",
+      "residual": "0.042",
+      "between_percent": "71"
+    },
+    {
+      "cell": "labor/UBI",
+      "speed": "balanced",
+      "total": "0.392",
+      "between": "0.278",
+      "within": "0.066",
+      "residual": "0.048",
+      "between_percent": "71"
+    },
+    {
+      "cell": "labor/UBI",
+      "speed": "fast",
+      "total": "0.420",
+      "between": "0.302",
+      "within": "0.067",
+      "residual": "0.051",
+      "between_percent": "72"
+    },
+    {
+      "cell": "labor/means-tested",
+      "speed": "slow",
+      "total": "0.272",
+      "between": "0.185",
+      "within": "0.044",
+      "residual": "0.044",
+      "between_percent": "68"
+    },
+    {
+      "cell": "labor/means-tested",
+      "speed": "balanced",
+      "total": "0.388",
+      "between": "0.278",
+      "within": "0.069",
+      "residual": "0.041",
+      "between_percent": "72"
+    },
+    {
+      "cell": "labor/means-tested",
+      "speed": "fast",
+      "total": "0.537",
+      "between": "0.435",
+      "within": "0.072",
+      "residual": "0.030",
+      "between_percent": "81"
+    },
+    {
+      "cell": "wealth/UBI",
+      "speed": "slow",
+      "total": "0.309",
+      "between": "0.217",
+      "within": "0.053",
+      "residual": "0.039",
+      "between_percent": "70"
+    },
+    {
+      "cell": "wealth/UBI",
+      "speed": "balanced",
+      "total": "0.323",
+      "between": "0.234",
+      "within": "0.046",
+      "residual": "0.043",
+      "between_percent": "73"
+    },
+    {
+      "cell": "wealth/UBI",
+      "speed": "fast",
+      "total": "0.376",
+      "between": "0.283",
+      "within": "0.045",
+      "residual": "0.048",
+      "between_percent": "75"
+    },
+    {
+      "cell": "wealth/means-tested",
+      "speed": "slow",
+      "total": "0.299",
+      "between": "0.235",
+      "within": "0.048",
+      "residual": "0.016",
+      "between_percent": "79"
+    },
+    {
+      "cell": "wealth/means-tested",
+      "speed": "balanced",
+      "total": "0.439",
+      "between": "0.334",
+      "within": "0.072",
+      "residual": "0.032",
+      "between_percent": "76"
+    },
+    {
+      "cell": "wealth/means-tested",
+      "speed": "fast",
+      "total": "0.571",
+      "between": "0.476",
+      "within": "0.073",
+      "residual": "0.023",
+      "between_percent": "83"
+    },
+    {
+      "cell": "disp-levy/means-tested",
+      "speed": "slow",
+      "total": "0.279",
+      "between": "0.155",
+      "within": "0.054",
+      "residual": "0.070",
+      "between_percent": "55"
+    },
+    {
+      "cell": "disp-levy/means-tested",
+      "speed": "balanced",
+      "total": "0.312",
+      "between": "0.209",
+      "within": "0.050",
+      "residual": "0.053",
+      "between_percent": "67"
+    },
+    {
+      "cell": "disp-levy/means-tested",
+      "speed": "fast",
+      "total": "0.486",
+      "between": "0.375",
+      "within": "0.069",
+      "residual": "0.041",
+      "between_percent": "77"
+    },
+    {
+      "cell": "UHI scenario",
+      "speed": "slow",
+      "total": "0.321",
+      "between": "0.239",
+      "within": "0.051",
+      "residual": "0.030",
+      "between_percent": "75"
+    },
+    {
+      "cell": "UHI scenario",
+      "speed": "balanced",
+      "total": "0.381",
+      "between": "0.313",
+      "within": "0.045",
+      "residual": "0.024",
+      "between_percent": "82"
+    },
+    {
+      "cell": "UHI scenario",
+      "speed": "fast",
+      "total": "0.451",
+      "between": "0.379",
+      "within": "0.048",
+      "residual": "0.024",
+      "between_percent": "84"
+    }
+  ]
+}

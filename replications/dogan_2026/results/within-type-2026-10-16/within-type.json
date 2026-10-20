@@ -1,0 +1,4027 @@
+{
+  "provenance": "fresh-replay",
+  "snapshot_sha256": "1d13c440c4abebf85e72a3a7a87c8740f519ce6ba727db4df0830fbcf639b836",
+  "decomposition_audit_sha256": "d0c9d788b611f59998027c31a998151d73cbd827df2d49f5eb36263eeeeaab90",
+  "method": "Direct pairwise differences; weighted contributions use the full population denominator; type Gini uses only the subgroup denominator.",
+  "runs": 105,
+  "per_run_type": [
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.028659501083577378,
+      "type_gini": 0.24977337981519723
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.001537745033945082,
+      "type_gini": 0.06678553234844625
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.012930559569241148,
+      "type_gini": 0.3402117674971925
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.01926993498368884,
+      "type_gini": 0.23868195642848505
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.02697182570910857,
+      "type_gini": 0.2530175569685379
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0019267507409757405,
+      "type_gini": 0.08379639448568399
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.011844739558817647,
+      "type_gini": 0.3382585808548386
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.022257959861445777,
+      "type_gini": 0.24988142339664163
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.025008307018083646,
+      "type_gini": 0.23098658447354115
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.001736022174943317,
+      "type_gini": 0.07766809367917402
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.010236825183252229,
+      "type_gini": 0.30531540587918693
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.021024160953923548,
+      "type_gini": 0.23421309016965927
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.023866301401051383,
+      "type_gini": 0.21976643497995071
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0019312829005994519,
+      "type_gini": 0.08683937823834197
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.01211213886545163,
+      "type_gini": 0.2984571566954485
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.021833727897740914,
+      "type_gini": 0.26066234781764974
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.024027122646053268,
+      "type_gini": 0.2264620224301535
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0019776412234069527,
+      "type_gini": 0.08998186998186998
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.01411355019905147,
+      "type_gini": 0.3576932754801632
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.02150429411789611,
+      "type_gini": 0.2478938321419733
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.023468401996287233,
+      "type_gini": 0.2688988377128072
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.001245795734295589,
+      "type_gini": 0.07519170984455958
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.014937957920147843,
+      "type_gini": 0.16228697694218508
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.01341974836326297,
+      "type_gini": 0.2172267213443526
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.0234878622935559,
+      "type_gini": 0.2672826311239145
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0013572620866155603,
+      "type_gini": 0.08187403993855606
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.009175585141095543,
+      "type_gini": 0.10037038073523961
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.015932195188311953,
+      "type_gini": 0.2575362880974022
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.020378559562198955,
+      "type_gini": 0.2441053637034554
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0011010652585823149,
+      "type_gini": 0.06473007712082263
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.010946118143883861,
+      "type_gini": 0.12149383181837306
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.015966591497241354,
+      "type_gini": 0.24313120893630577
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.02096572086727317,
+      "type_gini": 0.25515500620652054
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.001340268285708602,
+      "type_gini": 0.08085106382978724
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.009101390158292531,
+      "type_gini": 0.09554488301148689
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.016171696737572232,
+      "type_gini": 0.2577531911498706
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.019610600819264006,
+      "type_gini": 0.22962577477303256
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.001216802823285526,
+      "type_gini": 0.07647182727751449
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.015884774952451722,
+      "type_gini": 0.1560035898816752
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.013848197279956061,
+      "type_gini": 0.24895559502428843
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.018316566548645056,
+      "type_gini": 0.25386687981920353
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.001106060238465305,
+      "type_gini": 0.06617894468518991
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.03881994998391052,
+      "type_gini": 0.3154499551342283
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.013413875989101667,
+      "type_gini": 0.28791058555336474
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.027857684498169073,
+      "type_gini": 0.3427666818208768
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0013085157100468862,
+      "type_gini": 0.08311778910651998
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.024785785164851144,
+      "type_gini": 0.23024497053475934
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.012231668690041112,
+      "type_gini": 0.22698225967639554
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.01801785314979362,
+      "type_gini": 0.2830144703777009
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0010021712013293074,
+      "type_gini": 0.06195797027165556
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.04032073038441757,
+      "type_gini": 0.3232286223922571
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.01372268603095604,
+      "type_gini": 0.2649736087836425
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.018469469705762433,
+      "type_gini": 0.2561120022327571
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.001338039545922304,
+      "type_gini": 0.08823970037453184
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.030096983136444818,
+      "type_gini": 0.25732667947727356
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.012348018050117301,
+      "type_gini": 0.23188684725917863
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.020558166994221506,
+      "type_gini": 0.2862871852808928
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0012345130255632536,
+      "type_gini": 0.07957723577235773
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.03797380247818374,
+      "type_gini": 0.31742197894477264
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.012890401178767167,
+      "type_gini": 0.2532889892895443
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.029423540909655946,
+      "type_gini": 0.255951239625937
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0015123684345908057,
+      "type_gini": 0.0900896151818661
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.015177517425715686,
+      "type_gini": 0.3395217974747265
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.021261454354591394,
+      "type_gini": 0.26171435207246696
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.026341781966332,
+      "type_gini": 0.22098047331241377
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0013864348876583914,
+      "type_gini": 0.08700054436581382
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.014503097505722205,
+      "type_gini": 0.2887135991462513
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.020284299232709274,
+      "type_gini": 0.27246149421652355
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.029500981315803566,
+      "type_gini": 0.2672908410106524
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.00129495834880377,
+      "type_gini": 0.07782230424466122
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.014973291474260509,
+      "type_gini": 0.3271815482007034
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.022251073089932422,
+      "type_gini": 0.26559456095465794
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.030362734007738798,
+      "type_gini": 0.26268681809312694
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0014875502793466203,
+      "type_gini": 0.08923733333333334
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.013947747827418836,
+      "type_gini": 0.3011308208487245
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.022624163651524656,
+      "type_gini": 0.28435701587755874
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.027393514274190338,
+      "type_gini": 0.24250046626870153
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0012865447872002196,
+      "type_gini": 0.08000540979172302
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.012288611796099176,
+      "type_gini": 0.3044765264235011
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.02273078710252201,
+      "type_gini": 0.26130419485667267
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.012442734535902143,
+      "type_gini": 0.18785265115945662
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0006116472605584968,
+      "type_gini": 0.053293645433667346
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.01967684019357031,
+      "type_gini": 0.22080770665612315
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.016176147478318526,
+      "type_gini": 0.19179317064238766
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.012274810443542639,
+      "type_gini": 0.19638089537303724
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0008247801631558568,
+      "type_gini": 0.07027949282085483
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.01373407658365814,
+      "type_gini": 0.15332681071973017
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.014563250530224437,
+      "type_gini": 0.16862604631154535
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.012559555347606041,
+      "type_gini": 0.20099452766425208
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0005495872508202938,
+      "type_gini": 0.049140122486724974
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.01700160853828723,
+      "type_gini": 0.18688837481410034
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.014756705634767378,
+      "type_gini": 0.17206254118010625
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.011830831313232234,
+      "type_gini": 0.18457641473886005
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0006205149251924391,
+      "type_gini": 0.05321692891264407
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.013832702323065953,
+      "type_gini": 0.14967492141438427
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.01610428579902245,
+      "type_gini": 0.19418608607767693
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.012087586726422286,
+      "type_gini": 0.18563733437581548
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0007256782249909927,
+      "type_gini": 0.06151095940140589
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.015689626429247653,
+      "type_gini": 0.17015508239149485
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.01720016545949167,
+      "type_gini": 0.2091359750580526
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.01557680658709876,
+      "type_gini": 0.2355211141782248
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0005572907415305455,
+      "type_gini": 0.051322552363981845
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.055400154515991104,
+      "type_gini": 0.3841889806779062
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.007969411815031214,
+      "type_gini": 0.2036928045705301
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.020356137765484103,
+      "type_gini": 0.2822427614589345
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0005428973535400713,
+      "type_gini": 0.05063290728630998
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.04922108701874186,
+      "type_gini": 0.36116827049521194
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.006865251674051118,
+      "type_gini": 0.1650949797234005
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.013298778751063488,
+      "type_gini": 0.1959868037567717
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0005528972226268904,
+      "type_gini": 0.04866229740600191
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.049106091661108645,
+      "type_gini": 0.3512538691385842
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.007929719959903395,
+      "type_gini": 0.19312855744891
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.027916298459987533,
+      "type_gini": 0.34652497692234635
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0006937173091858286,
+      "type_gini": 0.0609221289954361
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.03441994534981814,
+      "type_gini": 0.26720422831626867
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.007925170895754388,
+      "type_gini": 0.1927559448724593
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.013705287965794517,
+      "type_gini": 0.19730231001301535
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0007399474840106361,
+      "type_gini": 0.060953164163609914
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.04063752101844215,
+      "type_gini": 0.30909880228624065
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.008548743704379719,
+      "type_gini": 0.18553635632652185
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.019444116436617746,
+      "type_gini": 0.16810050481874006
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.00054331263719781,
+      "type_gini": 0.04673532274661026
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.013033788827126244,
+      "type_gini": 0.19745918931846068
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.012801189981010826,
+      "type_gini": 0.18786986409761364
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.017643824372410334,
+      "type_gini": 0.14520081084911
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0007882507538888457,
+      "type_gini": 0.065382356888838
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.014681523707401858,
+      "type_gini": 0.23273536674226902
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.012961685741302598,
+      "type_gini": 0.19647441162021795
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.017432356034687044,
+      "type_gini": 0.14509504254974961
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0007685022798009549,
+      "type_gini": 0.06631906609314785
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.01293689072585421,
+      "type_gini": 0.20728936852540827
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.01241055459723232,
+      "type_gini": 0.18256789767778342
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.02132129540516082,
+      "type_gini": 0.18952557884445842
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0006936203325064309,
+      "type_gini": 0.05439840514053734
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.012079886436052506,
+      "type_gini": 0.20348100491555743
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.01201168433559231,
+      "type_gini": 0.16055640344736377
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.01958541269533503,
+      "type_gini": 0.16846923490105928
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 50,
+      "within_contribution": 0.0007788978446984821,
+      "type_gini": 0.06348254427611567
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 60,
+      "within_contribution": 0.01298409882953211,
+      "type_gini": 0.20946230570652355
+    },
+    {
+      "km_label": "balanced",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 50,
+      "within_contribution": 0.012679771467733561,
+      "type_gini": 0.18004394730113718
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.011990401600705023,
+      "type_gini": 0.23897075488918867
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.003461603252740792,
+      "type_gini": 0.07826616121308859
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.0062438592736124565,
+      "type_gini": 0.34368356222323554
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.038617379033413675,
+      "type_gini": 0.2441296449063984
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.011605616555095273,
+      "type_gini": 0.23514636247258763
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0036414453201182866,
+      "type_gini": 0.08272550801255575
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.005708483053760363,
+      "type_gini": 0.367763830573496
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.0449748116559387,
+      "type_gini": 0.27375244247477143
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.0115368779980448,
+      "type_gini": 0.2169827821446987
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.003240881849822451,
+      "type_gini": 0.07596184868527182
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.005008224134770992,
+      "type_gini": 0.3317170731688415
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.040117090204481606,
+      "type_gini": 0.24940761487406843
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.011146143513240916,
+      "type_gini": 0.2181494936560579
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.004092950269121062,
+      "type_gini": 0.09102229404939499
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.006372555065917608,
+      "type_gini": 0.3696570655634429
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.044026031367935196,
+      "type_gini": 0.2790698026066521
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.010919596738521841,
+      "type_gini": 0.21875320083627775
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0031472820104996376,
+      "type_gini": 0.07027324632952692
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.004283896670586776,
+      "type_gini": 0.31452355927273734
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.03828772553387817,
+      "type_gini": 0.23053093804320055
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.01385120581436935,
+      "type_gini": 0.36573865790278975
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.001850990188311598,
+      "type_gini": 0.06976174934725848
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.02997431690600931,
+      "type_gini": 0.4019255919317955
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.02269887313096356,
+      "type_gini": 0.24278950339831953
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.011568057957844519,
+      "type_gini": 0.3284386389723579
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.002247733965825791,
+      "type_gini": 0.08529604187111547
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.03684537567896192,
+      "type_gini": 0.4809371572462256
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.025315888338343105,
+      "type_gini": 0.2695742277521258
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.009534467876259377,
+      "type_gini": 0.2544726082706968
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.002321287541385872,
+      "type_gini": 0.086328125
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.027190409619795568,
+      "type_gini": 0.38431065016964067
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.027712234132196003,
+      "type_gini": 0.27567465528279844
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.010457904144622065,
+      "type_gini": 0.2851982083679502
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0019205050324925797,
+      "type_gini": 0.07060878243512975
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.027429567344125484,
+      "type_gini": 0.373282839689549
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.026222799248525847,
+      "type_gini": 0.2716773801442096
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.011881763423727609,
+      "type_gini": 0.32220852118187465
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.002096318193568375,
+      "type_gini": 0.08162613355317395
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.032285513811669685,
+      "type_gini": 0.4038144089400272
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.024004798606141034,
+      "type_gini": 0.2783592070851393
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.015712001585224882,
+      "type_gini": 0.46754211772397086
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0020083984235266354,
+      "type_gini": 0.08149854510184287
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.04425326181036737,
+      "type_gini": 0.5025502248617387
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.019535186321470614,
+      "type_gini": 0.25167173042657254
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.007415708213977518,
+      "type_gini": 0.28981318150262103
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0023424453771327277,
+      "type_gini": 0.09035119921683799
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.040463492614650654,
+      "type_gini": 0.4503277888604622
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.020123280428891478,
+      "type_gini": 0.23728006265559504
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.011439944747794566,
+      "type_gini": 0.3864032708534107
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0021487904193120875,
+      "type_gini": 0.08133143658254989
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.035073571301029255,
+      "type_gini": 0.41298495366238064
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.0213757225075648,
+      "type_gini": 0.24505798610366306
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.006386614437169722,
+      "type_gini": 0.26004776109269845
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.001997935308495752,
+      "type_gini": 0.07670191672174488
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.0435157552284221,
+      "type_gini": 0.47722089632784476
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.02072551197665272,
+      "type_gini": 0.2472813908798615
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.007223329479417523,
+      "type_gini": 0.2739135703832311
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.001916450691964242,
+      "type_gini": 0.06945114111218258
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.035285259118772394,
+      "type_gini": 0.39872753246555503
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.021468116289494285,
+      "type_gini": 0.2543113878997763
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.013245140737106318,
+      "type_gini": 0.21894491316087478
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0021270612274117318,
+      "type_gini": 0.07687550689375507
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.007304321533327662,
+      "type_gini": 0.318434810835461
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.04423738509348427,
+      "type_gini": 0.2924762635894214
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.014468137303866951,
+      "type_gini": 0.24469164800208093
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0023344873439288404,
+      "type_gini": 0.08501534760245562
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.007115771745118503,
+      "type_gini": 0.31275711333479667
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.044485720781570405,
+      "type_gini": 0.28928019845060887
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.014817088397144013,
+      "type_gini": 0.2673470850817701
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.002124812187662679,
+      "type_gini": 0.07451032617603671
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.00776869051516591,
+      "type_gini": 0.31963288466148215
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.0424306203045347,
+      "type_gini": 0.27312648517147514
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.01600283413638183,
+      "type_gini": 0.2601562910388467
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.002400984910563563,
+      "type_gini": 0.08657665791201576
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.007077579785901506,
+      "type_gini": 0.3079162207136065
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.041379544094779626,
+      "type_gini": 0.2765562604682696
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.013403256609105123,
+      "type_gini": 0.241946117879404
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.002157289506265931,
+      "type_gini": 0.07515055338541667
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.00664869775070916,
+      "type_gini": 0.2965433203547403
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.04384867827364675,
+      "type_gini": 0.27656291651904574
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.005564504546605953,
+      "type_gini": 0.2050870389239045
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0010105534980536647,
+      "type_gini": 0.054859831398177704
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.006840784806522876,
+      "type_gini": 0.15621259694861495
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.03240568817874398,
+      "type_gini": 0.18845470886195254
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.00472631184753938,
+      "type_gini": 0.18285416523668083
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0012180795887594778,
+      "type_gini": 0.06365484149596916
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.007250972961293964,
+      "type_gini": 0.1690309519303567
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.03072480819080933,
+      "type_gini": 0.17587338122787302
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.00561988624736398,
+      "type_gini": 0.22113275520472328
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0013323110584076599,
+      "type_gini": 0.07058264863241782
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.006663008236854168,
+      "type_gini": 0.14267380371578064
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.03719506456601663,
+      "type_gini": 0.22031534569092226
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.005390461578461984,
+      "type_gini": 0.22420762384927787
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0011261926356016811,
+      "type_gini": 0.06039200716566162
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.0085611039276676,
+      "type_gini": 0.19955384401417653
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.03017960832063228,
+      "type_gini": 0.16973445644785642
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.00532467325004591,
+      "type_gini": 0.20243813743969205
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0011723116112625101,
+      "type_gini": 0.06290997652520335
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.008075301645488461,
+      "type_gini": 0.17459107487162356
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.038581983252630826,
+      "type_gini": 0.22887524857206923
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.00588680293187183,
+      "type_gini": 0.21749625326935276
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.001356428895394263,
+      "type_gini": 0.06618560147910862
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.045735699452256424,
+      "type_gini": 0.4864938069313683
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.011591383895623406,
+      "type_gini": 0.14363812426395756
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.008853783349252358,
+      "type_gini": 0.3095005751208936
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.001322877401978846,
+      "type_gini": 0.06912548679135205
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.05361945273641576,
+      "type_gini": 0.5233806821710921
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.012235999888650376,
+      "type_gini": 0.18878351935298973
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.007124069767524378,
+      "type_gini": 0.24461087144531857
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0011105580516641692,
+      "type_gini": 0.054874005276917465
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.04734377581314221,
+      "type_gini": 0.4958461728765733
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.013989542130524972,
+      "type_gini": 0.18566557283551594
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.009427351716358492,
+      "type_gini": 0.3209335069962877
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.001044723749346216,
+      "type_gini": 0.05619616909042917
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.05895050915037893,
+      "type_gini": 0.5931891479344321
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.012244277146549843,
+      "type_gini": 0.1756685445878004
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.00894900218981787,
+      "type_gini": 0.2789276197272163
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0014186559218917405,
+      "type_gini": 0.0662620874885579
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.046222659301396386,
+      "type_gini": 0.4988750461850703
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.015284040029910143,
+      "type_gini": 0.20406567633125272
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.010366862567875643,
+      "type_gini": 0.16612988421156075
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0011285483082629046,
+      "type_gini": 0.05679965724733744
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.005764597832216609,
+      "type_gini": 0.17811491726787979
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.02872649852773009,
+      "type_gini": 0.205895576909234
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.01074107021019135,
+      "type_gini": 0.17893116664378447
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0011857274092433104,
+      "type_gini": 0.05929004912822482
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.006026356461008687,
+      "type_gini": 0.18889913162775376
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.02560467724616095,
+      "type_gini": 0.17822739141400085
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.00963427389482074,
+      "type_gini": 0.1551206398999795
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.001210398754879378,
+      "type_gini": 0.059920004216786775
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.005912019380758285,
+      "type_gini": 0.18254372062760862
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.0292780884166724,
+      "type_gini": 0.20976431938116516
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.011028964679038626,
+      "type_gini": 0.1947718150624587
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0015099966515477827,
+      "type_gini": 0.07294429205359287
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.005156377527926951,
+      "type_gini": 0.15241373542204245
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.02768404921891825,
+      "type_gini": 0.19160751105372192
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 55,
+      "within_contribution": 0.00797883111259974,
+      "type_gini": 0.12657544139677912
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 80,
+      "within_contribution": 0.0012594035195835041,
+      "type_gini": 0.06201050614623807
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 45,
+      "within_contribution": 0.006433299100769636,
+      "type_gini": 0.20814971911874133
+    },
+    {
+      "km_label": "fast",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 80,
+      "within_contribution": 0.0267552287920427,
+      "type_gini": 0.19009326934249618
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.028181532368121612,
+      "type_gini": 0.2215480261245789
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0009350002556713088,
+      "type_gini": 0.07142857142857142
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.028615444755164667,
+      "type_gini": 0.34864352723031294
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.012599409109282722,
+      "type_gini": 0.26360297935972227
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.029567029316359718,
+      "type_gini": 0.23713985115442182
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0010386375379972694,
+      "type_gini": 0.07562526494277239
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.027556265374576974,
+      "type_gini": 0.3567220862562024
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.012021352249492011,
+      "type_gini": 0.23726450754032194
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.027481826861607384,
+      "type_gini": 0.22238099251785493
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0009227367118694365,
+      "type_gini": 0.07107963126920473
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.027234488862648152,
+      "type_gini": 0.3796771039931251
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.011550714581174385,
+      "type_gini": 0.21176605052210684
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.026081895796449935,
+      "type_gini": 0.20191992237896134
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0012607412828654597,
+      "type_gini": 0.09424162589386526
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.024054386442085143,
+      "type_gini": 0.3199115185654896
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.012661790481802106,
+      "type_gini": 0.25456373142736954
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.029087339880026,
+      "type_gini": 0.21260932063978852
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0010634434232989578,
+      "type_gini": 0.0784318020040519
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.024008112644070816,
+      "type_gini": 0.3188990366230227
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "baseline",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.012895657533535035,
+      "type_gini": 0.28222049459499
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.029343902035677123,
+      "type_gini": 0.2757285950035692
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0007023689081641094,
+      "type_gini": 0.06490170380078637
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.01718601777548837,
+      "type_gini": 0.1298915982507637
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.009381807990482601,
+      "type_gini": 0.2534787688822975
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.023936521240761035,
+      "type_gini": 0.21938131919760326
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00087985157167326,
+      "type_gini": 0.07834374669067033
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.017553118177130785,
+      "type_gini": 0.14673097568303015
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.010802047938972697,
+      "type_gini": 0.2623187737743627
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.028201974546855715,
+      "type_gini": 0.24540435736139612
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0007783499309306902,
+      "type_gini": 0.07201624105139438
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.017591466214378244,
+      "type_gini": 0.14654201296576164
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.010820169604791012,
+      "type_gini": 0.2810284398790526
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.02522369180188032,
+      "type_gini": 0.22742602921389085
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0009140934359005558,
+      "type_gini": 0.08916913946587537
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.011624918261797403,
+      "type_gini": 0.09065207139443568
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.010153985923580045,
+      "type_gini": 0.27265625636999125
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.027707430927419584,
+      "type_gini": 0.2318844651071614
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0008757871596160975,
+      "type_gini": 0.08130187854958497
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.014555447723278124,
+      "type_gini": 0.13072835565783297
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "disp_levy/means_tested",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.010630407228405808,
+      "type_gini": 0.26368104037312823
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.02057346653419949,
+      "type_gini": 0.2429599637928608
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0006622280364646498,
+      "type_gini": 0.06878590578322481
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.015719777930067444,
+      "type_gini": 0.09604166409830478
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.007665083605609966,
+      "type_gini": 0.22255261528371945
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.020672843039086154,
+      "type_gini": 0.2250319279961166
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.000722848236064159,
+      "type_gini": 0.0728922495274102
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.014090882937040285,
+      "type_gini": 0.08971920185762652
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.007837574097332317,
+      "type_gini": 0.2329256934316873
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.01987727146148569,
+      "type_gini": 0.2205056838464999
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0007807779160558718,
+      "type_gini": 0.07631961259079904
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.011036876179244379,
+      "type_gini": 0.07362367312976731
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.009078530818537354,
+      "type_gini": 0.24189664186839382
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.021989835473829995,
+      "type_gini": 0.25286225236037885
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0009704163124470377,
+      "type_gini": 0.10184753567165028
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.01374442960556067,
+      "type_gini": 0.08589140688293066
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.007666731728291252,
+      "type_gini": 0.218398946717999
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.021365504463391603,
+      "type_gini": 0.24567374990544755
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0007553373038512103,
+      "type_gini": 0.07584655068327753
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.015444539130422305,
+      "type_gini": 0.09749401658336139
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/means_tested",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.008420980036973462,
+      "type_gini": 0.2377375214145073
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.03188721526123992,
+      "type_gini": 0.2215555926325625
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0007127642120447897,
+      "type_gini": 0.06758509782900028
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.022235010189114675,
+      "type_gini": 0.3023195753216435
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.012682132238416039,
+      "type_gini": 0.27593847745874495
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.03231244220440372,
+      "type_gini": 0.22043222760500117
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0008681072184614507,
+      "type_gini": 0.08018803865238966
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.02245848825570551,
+      "type_gini": 0.30149974706527866
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.011861078376849486,
+      "type_gini": 0.27012380908148786
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.035149900360395475,
+      "type_gini": 0.24357889508638794
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0007693423984905185,
+      "type_gini": 0.07150663544106169
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.02375557687902342,
+      "type_gini": 0.32504493235486437
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.012845107170327106,
+      "type_gini": 0.28062753424454784
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.030972774517206602,
+      "type_gini": 0.2345950559385571
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0009075155626927922,
+      "type_gini": 0.08448689898073536
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.025014206023984784,
+      "type_gini": 0.3269532522858292
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.013068742557087377,
+      "type_gini": 0.25964729513946566
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.03260870973475947,
+      "type_gini": 0.24285833737866452
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.000875631984308777,
+      "type_gini": 0.08213500784929358
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.02543313409935054,
+      "type_gini": 0.35994361237305594
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "labour/ubi",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.00994021285520196,
+      "type_gini": 0.19108253419580046
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.013738408621991173,
+      "type_gini": 0.1499176560030395
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00035845414668307424,
+      "type_gini": 0.04678920271656261
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.028603614872236324,
+      "type_gini": 0.21638581864926912
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.007892051701908334,
+      "type_gini": 0.16572260906129682
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.014694597658328444,
+      "type_gini": 0.17855639582301083
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0003314086815387673,
+      "type_gini": 0.0455040961988622
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.026804722725705367,
+      "type_gini": 0.1835427173670054
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.009146458552259347,
+      "type_gini": 0.19794555111309875
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.015238018215700847,
+      "type_gini": 0.1752403214858787
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00033127229792069736,
+      "type_gini": 0.045047315859505235
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.028928048958619588,
+      "type_gini": 0.20564921743034364
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.00861596172184163,
+      "type_gini": 0.18603059646879924
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.015363446961459354,
+      "type_gini": 0.1831724302685427
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0003414017671746334,
+      "type_gini": 0.046017920627619384
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.027117447808376747,
+      "type_gini": 0.19435748103775335
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.007974637418473022,
+      "type_gini": 0.16502539221459941
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.016354273347433737,
+      "type_gini": 0.18334480680919538
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00037331758072626814,
+      "type_gini": 0.04957616720763187
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.024537937884410405,
+      "type_gini": 0.1746947913566784
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "uhi_scenario",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.00883860370071055,
+      "type_gini": 0.19592611952108843
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.015768551663705554,
+      "type_gini": 0.18980123731757648
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00038524361322474953,
+      "type_gini": 0.053999458357009956
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.024469666876932847,
+      "type_gini": 0.13398411821296388
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.004684340829389492,
+      "type_gini": 0.16214966670168265
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.013319324363665105,
+      "type_gini": 0.16037038482981392
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00027230915051471445,
+      "type_gini": 0.039306824755715904
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.033618634550821674,
+      "type_gini": 0.1804874201160316
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.004916659194000271,
+      "type_gini": 0.1793608156123127
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.01849894514932602,
+      "type_gini": 0.2176521068004265
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00035064485245083534,
+      "type_gini": 0.04679598303308799
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.03199237883549378,
+      "type_gini": 0.17350708862035663
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.005970451237773961,
+      "type_gini": 0.22316122739356523
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.016346611637735743,
+      "type_gini": 0.18385130181769688
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0003519253717170162,
+      "type_gini": 0.04739952042958186
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.022189009665540563,
+      "type_gini": 0.12857025470659258
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.0048149160493668,
+      "type_gini": 0.15853481934249622
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.0170471425470203,
+      "type_gini": 0.2080047304181028
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00031388713469693806,
+      "type_gini": 0.042560554450251434
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.020378030258022792,
+      "type_gini": 0.11311017161764368
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/means_tested",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.004936242120964073,
+      "type_gini": 0.16257552141815126
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.023171655476762615,
+      "type_gini": 0.17482471155416068
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00041891117135777845,
+      "type_gini": 0.05655085468686574
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.024740812692622585,
+      "type_gini": 0.22611274893477926
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 0,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.007268520013878752,
+      "type_gini": 0.19102474902399477
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.020372013275585354,
+      "type_gini": 0.15074873579735
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0005107499952475074,
+      "type_gini": 0.06708864656545704
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.024231055580288246,
+      "type_gini": 0.24616419950722312
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 1,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.006246245492747287,
+      "type_gini": 0.1498903744478941
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.020668378634361363,
+      "type_gini": 0.14772313222673655
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0003579311235315546,
+      "type_gini": 0.045911662967344065
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.02242598139292261,
+      "type_gini": 0.2505705796483831
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 2,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.006572966678045821,
+      "type_gini": 0.1519001249822107
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.02271025538624822,
+      "type_gini": 0.16830368151584194
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.00029071681931891794,
+      "type_gini": 0.04057119938683921
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.025941643827908662,
+      "type_gini": 0.2341913054033266
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 3,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.008150824278363273,
+      "type_gini": 0.2235319324387141
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "AIAugmentedAgent",
+      "population": 70,
+      "within_contribution": 0.021281209759495375,
+      "type_gini": 0.159049481665684
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "AutonomousAgent",
+      "population": 35,
+      "within_contribution": 0.0002884290234718769,
+      "type_gini": 0.038684134989336115
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "HumanAgent",
+      "population": 75,
+      "within_contribution": 0.022757281824998497,
+      "type_gini": 0.2210511576245864
+    },
+    {
+      "km_label": "slow",
+      "cell_label": "wealth/ubi",
+      "seed": 4,
+      "agent_type": "OwnerHumanAgent",
+      "population": 35,
+      "within_contribution": 0.007975590482803949,
+      "type_gini": 0.19746448022035784
+    }
+  ],
+  "comparisons": [
+    {
+      "speed": "slow",
+      "policy": "labour/means_tested",
+      "baseline_within": 0.0677635610936198,
+      "policy_within": 0.04381518696919106,
+      "contribution_lower_than_baseline": true,
+      "largest_baseline_type": "AIAugmentedAgent",
+      "largest_policy_type": "AIAugmentedAgent",
+      "per_type": [
+        {
+          "agent_type": "AIAugmentedAgent",
+          "baseline_gini": 0.21911962256312112,
+          "policy_gini": 0.23740671558026075,
+          "baseline_contribution": 0.028079924844512928,
+          "policy_contribution": 0.020895784194398588
+        },
+        {
+          "agent_type": "AutonomousAgent",
+          "baseline_gini": 0.07816137910769314,
+          "policy_gini": 0.07913837085127237,
+          "baseline_contribution": 0.0010441118423404863,
+          "policy_contribution": 0.0007783215609765857
+        },
+        {
+          "agent_type": "HumanAgent",
+          "baseline_gini": 0.34477065453363054,
+          "policy_gini": 0.08855399251039812,
+          "baseline_contribution": 0.02629373961570915,
+          "policy_contribution": 0.014007301156467016
+        },
+        {
+          "agent_type": "OwnerHumanAgent",
+          "baseline_gini": 0.2498835526889021,
+          "policy_gini": 0.23070228374326138,
+          "baseline_contribution": 0.012345784791057251,
+          "policy_contribution": 0.00813378005734887
+        }
+      ]
+    },
+    {
+      "speed": "slow",
+      "policy": "wealth/means_tested",
+      "baseline_within": 0.0677635610936198,
+      "policy_within": 0.04812498302047264,
+      "contribution_lower_than_baseline": true,
+      "largest_baseline_type": "AIAugmentedAgent",
+      "largest_policy_type": "HumanAgent",
+      "per_type": [
+        {
+          "agent_type": "AIAugmentedAgent",
+          "baseline_gini": 0.21911962256312112,
+          "policy_gini": 0.1919359522367233,
+          "baseline_contribution": 0.028079924844512928,
+          "policy_contribution": 0.016196115072290546
+        },
+        {
+          "agent_type": "AutonomousAgent",
+          "baseline_gini": 0.07816137910769314,
+          "policy_gini": 0.04601246820512943,
+          "baseline_contribution": 0.0010441118423404863,
+          "policy_contribution": 0.0003348020245208507
+        },
+        {
+          "agent_type": "HumanAgent",
+          "baseline_gini": 0.34477065453363054,
+          "policy_gini": 0.14593181065471766,
+          "baseline_contribution": 0.02629373961570915,
+          "policy_contribution": 0.02652954403736233
+        },
+        {
+          "agent_type": "OwnerHumanAgent",
+          "baseline_gini": 0.2498835526889021,
+          "policy_gini": 0.17715641009364164,
+          "baseline_contribution": 0.012345784791057251,
+          "policy_contribution": 0.00506452188629892
+        }
+      ]
+    },
+    {
+      "speed": "balanced",
+      "policy": "labour/means_tested",
+      "baseline_within": 0.06095407822445082,
+      "policy_within": 0.06916258834094197,
+      "contribution_lower_than_baseline": false,
+      "largest_baseline_type": "AIAugmentedAgent",
+      "largest_policy_type": "HumanAgent",
+      "per_type": [
+        {
+          "agent_type": "AIAugmentedAgent",
+          "baseline_gini": 0.23600119573347608,
+          "policy_gini": 0.2844094439062862,
+          "baseline_contribution": 0.02570661157157485,
+          "policy_contribution": 0.02064394817931834
+        },
+        {
+          "agent_type": "AutonomousAgent",
+          "baseline_gini": 0.08101425374670324,
+          "policy_gini": 0.075814328042051,
+          "baseline_contribution": 0.0018218884147741087,
+          "policy_contribution": 0.0011978599442654112
+        },
+        {
+          "agent_type": "HumanAgent",
+          "baseline_gini": 0.327987237281366,
+          "policy_gini": 0.2887344412966582,
+          "baseline_contribution": 0.012247562675162825,
+          "policy_contribution": 0.034399450229561555
+        },
+        {
+          "agent_type": "OwnerHumanAgent",
+          "baseline_gini": 0.2462665299908818,
+          "policy_gini": 0.2530084581124251,
+          "baseline_contribution": 0.021178015562939037,
+          "policy_contribution": 0.012921329987796656
+        }
+      ]
+    },
+    {
+      "speed": "balanced",
+      "policy": "wealth/means_tested",
+      "baseline_within": 0.06095407822445082,
+      "policy_within": 0.07239263145070883,
+      "contribution_lower_than_baseline": false,
+      "largest_baseline_type": "AIAugmentedAgent",
+      "largest_policy_type": "HumanAgent",
+      "per_type": [
+        {
+          "agent_type": "AIAugmentedAgent",
+          "baseline_gini": 0.23600119573347608,
+          "policy_gini": 0.25151559326585854,
+          "baseline_contribution": 0.02570661157157485,
+          "policy_contribution": 0.018170661905885684
+        },
+        {
+          "agent_type": "AutonomousAgent",
+          "baseline_gini": 0.08101425374670324,
+          "policy_gini": 0.054498610043067955,
+          "baseline_contribution": 0.0018218884147741087,
+          "policy_contribution": 0.0006173500221787944
+        },
+        {
+          "agent_type": "HumanAgent",
+          "baseline_gini": 0.327987237281366,
+          "policy_gini": 0.3345828301828423,
+          "baseline_contribution": 0.012247562675162825,
+          "policy_contribution": 0.04575695991282038
+        },
+        {
+          "agent_type": "OwnerHumanAgent",
+          "baseline_gini": 0.2462665299908818,
+          "policy_gini": 0.18804172858836435,
+          "baseline_contribution": 0.021178015562939037,
+          "policy_contribution": 0.007847659609823966
+        }
+      ]
+    },
+    {
+      "speed": "fast",
+      "policy": "labour/means_tested",
+      "baseline_within": 0.06168457102044113,
+      "policy_within": 0.07208215525626627,
+      "contribution_lower_than_baseline": false,
+      "largest_baseline_type": "OwnerHumanAgent",
+      "largest_policy_type": "HumanAgent",
+      "per_type": [
+        {
+          "agent_type": "AIAugmentedAgent",
+          "baseline_gini": 0.22560051879976215,
+          "policy_gini": 0.33554398031118643,
+          "baseline_contribution": 0.01143972728112157,
+          "policy_contribution": 0.009635519692716843
+        },
+        {
+          "agent_type": "AutonomousAgent",
+          "baseline_gini": 0.07964981165796761,
+          "policy_gini": 0.07986684774703165,
+          "baseline_contribution": 0.003516832540460446,
+          "policy_contribution": 0.002082804044086289
+        },
+        {
+          "agent_type": "HumanAgent",
+          "baseline_gini": 0.3454690181603507,
+          "policy_gini": 0.44836227923559624,
+          "baseline_contribution": 0.005523403639729639,
+          "policy_contribution": 0.03971826801464835
+        },
+        {
+          "agent_type": "OwnerHumanAgent",
+          "baseline_gini": 0.2553780885810182,
+          "policy_gini": 0.24712051159309373,
+          "baseline_contribution": 0.04120460755912947,
+          "policy_contribution": 0.02064556350481478
+        }
+      ]
+    },
+    {
+      "speed": "fast",
+      "policy": "wealth/means_tested",
+      "baseline_within": 0.06168457102044113,
+      "policy_within": 0.07274231870398971,
+      "contribution_lower_than_baseline": false,
+      "largest_baseline_type": "OwnerHumanAgent",
+      "largest_policy_type": "HumanAgent",
+      "per_type": [
+        {
+          "agent_type": "AIAugmentedAgent",
+          "baseline_gini": 0.22560051879976215,
+          "policy_gini": 0.27429376531181376,
+          "baseline_contribution": 0.01143972728112157,
+          "policy_contribution": 0.008048201990964985
+        },
+        {
+          "agent_type": "AutonomousAgent",
+          "baseline_gini": 0.07964981165796761,
+          "policy_gini": 0.06252867002527304,
+          "baseline_contribution": 0.003516832540460446,
+          "policy_contribution": 0.001250648804055047
+        },
+        {
+          "agent_type": "HumanAgent",
+          "baseline_gini": 0.3454690181603507,
+          "policy_gini": 0.5195569712197072,
+          "baseline_contribution": 0.005523403639729639,
+          "policy_contribution": 0.05037441929071794
+        },
+        {
+          "agent_type": "OwnerHumanAgent",
+          "baseline_gini": 0.2553780885810182,
+          "policy_gini": 0.17956428747430325,
+          "baseline_contribution": 0.04120460755912947,
+          "policy_contribution": 0.013069048618251746
+        }
+      ]
+    }
+  ],
+  "lower_contribution_comparisons": 2,
+  "scope": "Descriptive inequality accounting, not a causal estimate of the transfer rule."
+}

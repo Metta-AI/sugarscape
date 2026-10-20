@@ -1,0 +1,217 @@
+{
+  "source_sha256": "83716cb7e732a22c39da5120b167f2e6ac26b07a023dd5eb689c1ab87740d08b",
+  "source": "sugarscape_ai_tax.tex at 0b6a3df470388f60535d8ffb67c34a7f9fa0059a",
+  "table": "C.1",
+  "rows": [
+    {
+      "cell": "baseline",
+      "speed": "slow",
+      "gini_low": "0.388",
+      "gini_base": "0.366",
+      "gini_high": "0.355",
+      "deaths_low": "396.2",
+      "deaths_base": "270.2",
+      "deaths_high": "159.6"
+    },
+    {
+      "cell": "baseline",
+      "speed": "balanced",
+      "gini_low": "0.392",
+      "gini_base": "0.379",
+      "gini_high": "0.355",
+      "deaths_low": "368.2",
+      "deaths_base": "260.4",
+      "deaths_high": "135.8"
+    },
+    {
+      "cell": "baseline",
+      "speed": "fast",
+      "gini_low": "0.385",
+      "gini_base": "0.384",
+      "gini_high": "0.364",
+      "deaths_low": "343.0",
+      "deaths_base": "248.8",
+      "deaths_high": "127.4"
+    },
+    {
+      "cell": "labor/UBI",
+      "speed": "slow",
+      "gini_low": "0.386",
+      "gini_base": "0.382",
+      "gini_high": "0.374",
+      "deaths_low": "242.0",
+      "deaths_base": "144.6",
+      "deaths_high": "64.8"
+    },
+    {
+      "cell": "labor/UBI",
+      "speed": "balanced",
+      "gini_low": "0.396",
+      "gini_base": "0.392",
+      "gini_high": "0.395",
+      "deaths_low": "206.8",
+      "deaths_base": "114.2",
+      "deaths_high": "58.6"
+    },
+    {
+      "cell": "labor/UBI",
+      "speed": "fast",
+      "gini_low": "0.417",
+      "gini_base": "0.420",
+      "gini_high": "0.433",
+      "deaths_low": "152.4",
+      "deaths_base": "80.8",
+      "deaths_high": "41.8"
+    },
+    {
+      "cell": "labor/means-tested",
+      "speed": "slow",
+      "gini_low": "0.255",
+      "gini_base": "0.272",
+      "gini_high": "0.495",
+      "deaths_low": "94.0",
+      "deaths_base": "31.8",
+      "deaths_high": "13.4"
+    },
+    {
+      "cell": "labor/means-tested",
+      "speed": "balanced",
+      "gini_low": "0.243",
+      "gini_base": "0.388",
+      "gini_high": "0.572",
+      "deaths_low": "77.2",
+      "deaths_base": "30.4",
+      "deaths_high": "11.0"
+    },
+    {
+      "cell": "labor/means-tested",
+      "speed": "fast",
+      "gini_low": "0.351",
+      "gini_base": "0.537",
+      "gini_high": "0.677",
+      "deaths_low": "61.0",
+      "deaths_base": "27.8",
+      "deaths_high": "7.0"
+    },
+    {
+      "cell": "wealth/UBI",
+      "speed": "slow",
+      "gini_low": "0.318",
+      "gini_base": "0.309",
+      "gini_high": "0.322",
+      "deaths_low": "172.6",
+      "deaths_base": "69.6",
+      "deaths_high": "34.2"
+    },
+    {
+      "cell": "wealth/UBI",
+      "speed": "balanced",
+      "gini_low": "0.324",
+      "gini_base": "0.323",
+      "gini_high": "0.346",
+      "deaths_low": "123.2",
+      "deaths_base": "58.4",
+      "deaths_high": "27.8"
+    },
+    {
+      "cell": "wealth/UBI",
+      "speed": "fast",
+      "gini_low": "0.347",
+      "gini_base": "0.376",
+      "gini_high": "0.404",
+      "deaths_low": "94.4",
+      "deaths_base": "46.8",
+      "deaths_high": "26.4"
+    },
+    {
+      "cell": "wealth/means-tested",
+      "speed": "slow",
+      "gini_low": "0.190",
+      "gini_base": "0.299",
+      "gini_high": "0.574",
+      "deaths_low": "78.8",
+      "deaths_base": "27.0",
+      "deaths_high": "10.4"
+    },
+    {
+      "cell": "wealth/means-tested",
+      "speed": "balanced",
+      "gini_low": "0.224",
+      "gini_base": "0.439",
+      "gini_high": "0.617",
+      "deaths_low": "61.4",
+      "deaths_base": "29.2",
+      "deaths_high": "9.2"
+    },
+    {
+      "cell": "wealth/means-tested",
+      "speed": "fast",
+      "gini_low": "0.387",
+      "gini_base": "0.571",
+      "gini_high": "0.611",
+      "deaths_low": "49.6",
+      "deaths_base": "25.4",
+      "deaths_high": "7.2"
+    },
+    {
+      "cell": "disp-levy/means-tested",
+      "speed": "slow",
+      "gini_low": "0.318",
+      "gini_base": "0.279",
+      "gini_high": "0.409",
+      "deaths_low": "204.8",
+      "deaths_base": "93.8",
+      "deaths_high": "48.0"
+    },
+    {
+      "cell": "disp-levy/means-tested",
+      "speed": "balanced",
+      "gini_low": "0.282",
+      "gini_base": "0.312",
+      "gini_high": "0.502",
+      "deaths_low": "156.6",
+      "deaths_base": "79.4",
+      "deaths_high": "46.4"
+    },
+    {
+      "cell": "disp-levy/means-tested",
+      "speed": "fast",
+      "gini_low": "0.317",
+      "gini_base": "0.486",
+      "gini_high": "0.631",
+      "deaths_low": "111.8",
+      "deaths_base": "67.4",
+      "deaths_high": "39.2"
+    },
+    {
+      "cell": "UHI scenario",
+      "speed": "slow",
+      "gini_low": "0.301",
+      "gini_base": "0.321",
+      "gini_high": "0.450",
+      "deaths_low": "136.0",
+      "deaths_base": "49.8",
+      "deaths_high": "20.6"
+    },
+    {
+      "cell": "UHI scenario",
+      "speed": "balanced",
+      "gini_low": "0.315",
+      "gini_base": "0.381",
+      "gini_high": "0.516",
+      "deaths_low": "111.4",
+      "deaths_base": "45.0",
+      "deaths_high": "17.6"
+    },
+    {
+      "cell": "UHI scenario",
+      "speed": "fast",
+      "gini_low": "0.370",
+      "gini_base": "0.451",
+      "gini_high": "0.569",
+      "deaths_low": "87.0",
+      "deaths_base": "39.2",
+      "deaths_high": "18.2"
+    }
+  ]
+}
