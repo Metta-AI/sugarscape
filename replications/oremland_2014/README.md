@@ -1,5 +1,7 @@
 # Oremland and Laubenbacher (2014)
 
+[Held-out frontier transfer completes](results/held-out-transfer-complete-2026-10-20): 28,800 native evaluations cover all 144 final policies. Fresh replay, independent R arithmetic, storage verification, and final figure review pass. All thirteen width-five policies are empirically dominated by same-seed full-model candidates; this is not a global-optimality or historical-frontier claim. Final method assessment remains pending.
+
 [The frozen timing benchmark completes](results/cloud-timing-benchmark-2026-10-20): 18,639 native inputs pass fresh independent audit and storage verification. Median simulation batches range from 1.7288 to 2.7325 seconds. Hardware and timing-scope differences prevent historical timing equivalence claims. Transfer and final synthesis remain pending.
 
 [Cloud timing qualification passes](results/cloud-timing-qualification-2026-10-20): all 48 inputs preserve every non-timing output across hosts. The local passive watcher was stopped before admission. One bounded cloud benchmark now runs the frozen 18,639-input sequence on a pinned CPU. Hardware differences remain explicit; no timing result or study completion is claimed.
