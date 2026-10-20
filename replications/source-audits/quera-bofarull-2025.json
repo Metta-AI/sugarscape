@@ -1,0 +1,247 @@
+{
+  "paper": "https://arxiv.org/html/2509.03303v2",
+  "scope": "Candidate source and protocol audit only; no simulation run.",
+  "repositories": [
+    {
+      "repo": "/Users/relh/Code/workspace/sugarscape-diffabm-reference",
+      "head": "8775e7133af485360a74244e08571b3057c5736a",
+      "tracked_files": [
+        ".JuliaFormatter.toml",
+        ".github/dependabot.yml",
+        ".github/workflows/CI.yml",
+        ".github/workflows/TagBot.yml",
+        ".gitignore",
+        "LICENSE",
+        "Project.toml",
+        "README.md",
+        "axtell_training.png",
+        "docs/Project.toml",
+        "docs/make.jl",
+        "docs/src/index.md",
+        "scripts/run_axtell.jl",
+        "scripts/run_sir.jl",
+        "scripts/run_sugarscape.jl",
+        "scripts/sugar-map.txt",
+        "scripts/train_axtell.jl",
+        "src/DiffABM.jl",
+        "src/SIR.jl",
+        "src/SIR_vec.jl",
+        "src/axtell_firms.jl",
+        "src/diff_utils.jl",
+        "src/discrete_randomness.jl",
+        "src/random_walk.jl",
+        "src/sir.jl",
+        "src/sir_vec.jl",
+        "src/sugar_scape.jl",
+        "src/utils.jl",
+        "sugarscape.gif",
+        "test/axtell_firms_test.jl",
+        "test/diff_utils_test.jl",
+        "test/random_walk_test.jl",
+        "test/runtests.jl",
+        "test/sir_test.jl",
+        "test/sugar-map.txt",
+        "test/sugar_scape_test.jl",
+        "test/utils.jl",
+        "test/utils_test.jl"
+      ],
+      "git_blob_sha256": {
+        ".JuliaFormatter.toml": "43215be42d7fe1afc4da82d951a1ac0a1a5ff845d3bfe0cdeee21a99f0fcb39c",
+        "LICENSE": "d7e0a36b096c8fcc2db28cadc238b42af91ed38609474deeddc81ad8eead63c4",
+        "Project.toml": "7977390155aeec5e285144447e3d0e26294d3b13903686cc868b1e69cefb7b43",
+        "README.md": "06c5e9f73987f6e3ed193c366e06e529712c0a220b0a075db37afc54380f0217",
+        "docs/Project.toml": "e443c0ffafbd9f5cbbd69bab3e0071aaade6a92d5ffc22bd5a222a182ab9a958",
+        "docs/make.jl": "57e7e32a9c1247a1ad1da4b36ffb4d877893120e449c96993895b60927863cbb",
+        "scripts/run_axtell.jl": "d6d8cd428abca4da4010bcbca31a3784ca81839136aeceecc35710942b3d6307",
+        "scripts/run_sir.jl": "c4208fa8e492e9391dc64b00648c57211f83d67be45600d60ef8f520d7329371",
+        "scripts/run_sugarscape.jl": "5854deefc2a1cb49aeb12a55f61a56512df4cfd62b8522cde431cf36419a079f",
+        "scripts/train_axtell.jl": "6c75f727d2843e11c4df00352d5e3584f80da6510754fdedaa16a0860ef8b8a6",
+        "src/DiffABM.jl": "a6699d4a6fd40b6ff43c9ebf7bb2fb5f312993b4dc24892e9b02eccc86310230",
+        "src/SIR.jl": "c80a2f5d7133ab9d95993f10107d3b65fc1589c9a8c5a83a6b8407cca7b8a865",
+        "src/SIR_vec.jl": "497af0e084f3e83762017caed0ce221629f18185ea079f297424367ef7488533",
+        "src/axtell_firms.jl": "847423bb04b5caa34239c513ca8533314607e6dd07e4263755be4f046070aea9",
+        "src/diff_utils.jl": "24e61470f4c3a6776635ccf517daa1939e136f03eb9b14f5137aecd2b7f8488a",
+        "src/discrete_randomness.jl": "63d49c1a121985d7f53604dffa78fba0458b2fb40f300e1a97b237fae9369093",
+        "src/random_walk.jl": "12222cb5a126d11719dec8769b7c82c44cfcd690176a935a70da19df212b418a",
+        "src/sir.jl": "c80a2f5d7133ab9d95993f10107d3b65fc1589c9a8c5a83a6b8407cca7b8a865",
+        "src/sir_vec.jl": "497af0e084f3e83762017caed0ce221629f18185ea079f297424367ef7488533",
+        "src/sugar_scape.jl": "d75bdd16ca51dd30851e794a490531c960a0445ccb44153b4ad624882f5b4959",
+        "src/utils.jl": "0f37a5bee8c13d8014c5891fddc68e00e2f6efe3cc3c653991496fcb7d017105",
+        "test/axtell_firms_test.jl": "449af6ab8949d179a06154c48d0c2253e2faa9f7c4415767336b0726e6c87926",
+        "test/diff_utils_test.jl": "670f2c41cb65ff42cb7cbbb1b67f72fda501b8dafcc38eb2c032357d5c9c8bd3",
+        "test/random_walk_test.jl": "492ed720d6b7eb2c1a5bf88107e1ff0f7fbf3b451d24f6462ad90c8d46e42bf4",
+        "test/runtests.jl": "a9be8cfdfab0926fb46557800e38045010fe328a2c03584ead13c7dc0c97e583",
+        "test/sir_test.jl": "faaa7829ed71c29489a306c3dd4fa4086511ed77e97f6c362277c33523e379b5",
+        "test/sugar_scape_test.jl": "66843dd745e4ada076efd5411e923f84386e93cf244c12f9e8cb62c6664af88f",
+        "test/utils.jl": "872b13d8754809c30ed829ab4b3129a2ef7dd044524ef03e82a5e5dc970be2d5",
+        "test/utils_test.jl": "9b9e06e9cb346a8d29500e3d566bd6458ffaa4ac75dd44baf77cc58407613f84"
+      },
+      "has_manifest": false
+    },
+    {
+      "repo": "/Users/relh/Code/workspace/sugarscape-blackbirds-reference",
+      "head": "cd4b1d7234d637452b8fe1b968ee264e80af1177",
+      "tracked_files": [
+        ".JuliaFormatter.toml",
+        ".github/dependabot.yml",
+        ".github/workflows/CI.yml",
+        ".github/workflows/TagBot.yml",
+        ".gitignore",
+        "LICENSE",
+        "Project.toml",
+        "README.md",
+        "docs/Project.toml",
+        "docs/make.jl",
+        "docs/src/index.md",
+        "img/elbo.png",
+        "img/flow_samples.png",
+        "scripts/calibate_random_walk.jl",
+        "src/BlackBIRDS.jl",
+        "src/abms.jl",
+        "src/abms/BrockHommes.jl",
+        "src/abms/RandomWalk.jl",
+        "src/abms/core.jl",
+        "src/diff.jl",
+        "src/flows.jl",
+        "src/hmc.jl",
+        "src/losses.jl",
+        "src/utils.jl",
+        "src/vi.jl",
+        "test/calibration_test.jl",
+        "test/losses_test.jl",
+        "test/runtests.jl"
+      ],
+      "git_blob_sha256": {
+        ".JuliaFormatter.toml": "0a53900853df69c402ba2d5e915596d16da039b11897ad16db5304fd9a0186ba",
+        "LICENSE": "d7e0a36b096c8fcc2db28cadc238b42af91ed38609474deeddc81ad8eead63c4",
+        "Project.toml": "700a933c86bae125e13dc15acadf92d90f8b4f3a8018ffe0ff851e2ad4be5f9f",
+        "README.md": "31e293c0b4526769836ab399bc38acfe519c157dffdd417635b49570d5acbd55",
+        "docs/Project.toml": "0931b3c7f1e273a4649a03b51a492d13e5a0376f3daf847e26695b591ba7a1a0",
+        "docs/make.jl": "25eacd1220c3cf432014d48979320b0458c170d5afb552e8b76a6ba7ceeca1ef",
+        "scripts/calibate_random_walk.jl": "582d3837c976f600d85b169b28c9b356fc58a40c9a29de4ab7782f6e34f1a951",
+        "src/BlackBIRDS.jl": "463438858d67e0aec117507eef13b9e06d70c5da066bdbac1e86cc25e4c899d8",
+        "src/abms.jl": "3e8dc06fb30887a90f654aefffdc1b435728e35dde04737b09cc839f549d536d",
+        "src/abms/BrockHommes.jl": "b34ec5d29c2ee7ff86b0bf24dbddce4870e9e650d8906bdf3cb8ca3a7da666e1",
+        "src/abms/RandomWalk.jl": "6210010e1ceb399c92d263fa4bb41507df1464dff35f39bffc62234fb5e08311",
+        "src/abms/core.jl": "267909432ac9b85d10cded2e5eb8831711b6490def074a594ea9ef1ba97bfd54",
+        "src/diff.jl": "7f448b60676edae97bef6914b7e0be011ab32f4c9a9f8c82896fdb229224f12f",
+        "src/flows.jl": "68334dbbb9648476455a6d1bed0e91681f31169cafa8b925e021e62743e45323",
+        "src/hmc.jl": "13ba33489eadee4a635b0cd0744442684edb040ce3f73f957eb59ab16ded58b2",
+        "src/losses.jl": "f373a54fa844ee0e9fbf9e44b7c007fc088f08803e7cdf674c7e7937ada9e809",
+        "src/utils.jl": "ebcb268c92d4ae11ada29ff7673ddbd07cc740351adb33e4949c1765148635f0",
+        "src/vi.jl": "afe9d382d7e75444d72463f51f393c3c3f4af1990084f8930f7537685f59351b",
+        "test/calibration_test.jl": "b88a5a3b5f365c70a1da2d4976bd4923caf231c1ab6418981b6bfe5e1877f60d",
+        "test/losses_test.jl": "883c6a9890ec39e27fc14919faf854452ac5f53a643bb30282e9e40d1eaad817",
+        "test/runtests.jl": "f78d2abc2ca8f621ea273f6c92e153e557ba054d3eee3dcab9bfe8d3537b2c92"
+      },
+      "has_manifest": false
+    }
+  ],
+  "case_collisions": [
+    {
+      "paths": [
+        "src/SIR.jl",
+        "src/sir.jl"
+      ],
+      "blob_bytes_equal": true,
+      "working_lower_matches_git": true
+    },
+    {
+      "paths": [
+        "src/SIR_vec.jl",
+        "src/sir_vec.jl"
+      ],
+      "blob_bytes_equal": true,
+      "working_lower_matches_git": true
+    }
+  ],
+  "protocol_findings": {
+    "paper_gradient": "Section5.2:100agents50x50grid; vision1and3",
+    "paper_calibration": "Section6.3.2:vision1and6; appendix100agents25x25grid50steps",
+    "released_demo": "100agents50x50grid100steps; vision_spacing1 with2probabilities selects1and2; probabilities.5/.5",
+    "missing_from_checked_trees": "Sugarscape calibration and paperfigure scripts; dependency lockfiles",
+    "requirements": "Historical DiffABM jmlr_submission lockfile recovered (Julia1.11.3,348packages); dependency bootstrap active with30min/8GiB guards. Main-branch missing-manifest observation remains historical. Separate gradient/calibration configs; resolve seeds/FDsamplecounts/epsilon/learningrate and absent calibration scripts. No gradients or calibration completed."
+  },
+  "historical_branch_recovery": {
+    "diffabm_commit": "9178eccd56dd352e3515e276239654239f8d3b41",
+    "branch": "jmlr_submission",
+    "julia_version": "1.11.3",
+    "packages": 348,
+    "source_sha256": {
+      "Project.toml": "9be969f00b3b28bb99985b55205413c8d13f091edc5a827f6d260e08b552ba58",
+      "Manifest.toml": "3b1cdef37a183be5822a4e3032fa3125ad3dee70ec231c387791c036bdbd2f81",
+      "src/SugarScape.jl": "d75bdd16ca51dd30851e794a490531c960a0445ccb44153b4ad624882f5b4959",
+      "scripts/run_sugarscape.jl": "5854deefc2a1cb49aeb12a55f61a56512df4cfd62b8522cde431cf36419a079f"
+    },
+    "sugarscape_matches_prepublication_commit_93c538c": true,
+    "blackbirds_jmlr_commit": "277bc7e99df581f0e73de9d7a63ad1ccc81dd833",
+    "blackbirds_manifest": false,
+    "scope": "Recovered historical dependency manifest and exact Sugarscape source agreement; no gradients or calibration yet.",
+    "diffabm_url": "https://github.com/arnauqb/DiffABM.jl/tree/9178eccd56dd352e3515e276239654239f8d3b41",
+    "blackbirds_url": "https://github.com/arnauqb/BlackBIRDS.jl/tree/277bc7e99df581f0e73de9d7a63ad1ccc81dd833",
+    "runtime": {
+      "version": "1.11.3",
+      "platform": "aarch64-apple-darwin14",
+      "url": "https://julialang-s3.julialang.org/bin/mac/aarch64/1.11/julia-1.11.3-macaarch64.tar.gz",
+      "bytes": 213835057,
+      "sha256": "554fb0ddb4d94d623c83ca5e9d309fe1a7a0924445cb18ec3b863fb3367b0ba8",
+      "verification": "Downloaded archive matches official release catalog SHA256 and length; binary reports julia version1.11.3."
+    },
+    "bootstrap": {
+      "status": "running",
+      "evidence_directory": "quera-julia-bootstrap-001",
+      "wrapper_pid": 3546,
+      "julia_pid": 3548,
+      "timeout_seconds": 1800,
+      "free_disk_guard_gib": 8,
+      "automatic_precompile_tasks": 1,
+      "scope": "Instantiate exact historical manifest and import DiffABM; no simulation or calibration yet."
+    },
+    "source_semantics_to_check": [
+      "abm_run stores initial state and iterates2:n_timesteps, producing n_timesteps stored states and n_timesteps-1 transitions.",
+      "The step computes new_wealth but calls compute_alive with the old agent; survival uses old wealth>=0. This differs from paper wording of death at post-metabolism holdings<=0. Validate on full trajectories before drawing a conclusion."
+    ]
+  },
+  "paper_source_recovery": {
+    "audit": "quera-2025-figures/source-audit.json",
+    "published_fd_points": 150,
+    "gradient_horizon_in_figure": 25,
+    "calibration_filename_learning_rate_hint": 0.0005,
+    "status": "Plotted-reference extraction and historical-version lead only; no simulation/gradient/calibration conclusion."
+  },
+  "deleted_script_recovery": {
+    "files": [
+      {
+        "repository": "sugarscape-diffabm-reference",
+        "commit": "44501753f670c37fdefd74e2d54e1cc8d9a685ef",
+        "path": "scripts/sugarscape_grads.jl",
+        "retained_filename": "sugarscape-diffabm-reference-sugarscape_grads.jl",
+        "sha256": "b3c02787ebe510f0eea98e99d3bb56776cb32b161df567e75e27c7955b8ced78"
+      },
+      {
+        "repository": "sugarscape-blackbirds-reference",
+        "commit": "6c3c9e5aadc508526cec515ecb65a53d5774a589",
+        "path": "scripts/sugarscape.jl",
+        "retained_filename": "sugarscape-blackbirds-reference-sugarscape.jl",
+        "sha256": "db577eb4094d63467ad015d6045810d735d44254cc128e783b4d4b0ba5a4a5af"
+      },
+      {
+        "repository": "sugarscape-blackbirds-reference",
+        "commit": "6c3c9e5aadc508526cec515ecb65a53d5774a589",
+        "path": "scripts/sugarscape_horizon.jl",
+        "retained_filename": "sugarscape-blackbirds-reference-sugarscape_horizon.jl",
+        "sha256": "895efc45dbd345f0cabd6a109c0e9e54b58c86ae802708b91367643d3cdc0da9"
+      },
+      {
+        "repository": "sugarscape-blackbirds-reference",
+        "commit": "6c3c9e5aadc508526cec515ecb65a53d5774a589",
+        "path": "scripts/sugarscape copy.jl",
+        "retained_filename": "sugarscape-blackbirds-reference-sugarscape copy.jl",
+        "sha256": "18010aa94850e1aab80a095a3b060caf0e8764b60ef88234f4a17298f1e6a07d"
+      }
+    ],
+    "finding": "Deleted2024scripts recovered. BlackBIRDS sugarscape_horizon divides wealth by population times time horizon. Settings differ from2025paper and historical APIs; not a verified paperexperiment script.",
+    "scope": "Source lineage evidence only; no simulations or completion credit.",
+    "remaining": "Recover exact2025figure/calibration script or explicitly reconstruct its protocol. Old2024scripts do not resolve paperFDstep/samplecount or calibrationarchitecture/settings."
+  }
+}

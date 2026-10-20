@@ -1,0 +1,126 @@
+[
+  {
+    "revision": "18d19deb5b63b7cfcac7a94b4e49a57769e73090",
+    "git_blob": "deeae7a652dd221197619593f2e68c0954d376a2",
+    "sha256": "244f806e99706b2ae02e853137b4e85544a78b5a3b7313a5e9525cb5ecd0ed08",
+    "protocol_lines": [
+      {
+        "line": 173,
+        "text": "breed_sets = [[\"rlearner\"]]"
+      },
+      {
+        "line": 176,
+        "text": "#runs = 5"
+      },
+      {
+        "line": 177,
+        "text": "#periods = 10000"
+      },
+      {
+        "line": 184,
+        "text": "periods = 10000 if primary_breed_set in [[\"basic\", \"optimizer\"], [\"optimizer\"]] else 10000"
+      },
+      {
+        "line": 200,
+        "text": "num_agents = 200"
+      },
+      {
+        "line": 230,
+        "text": "runs = 10"
+      }
+    ]
+  },
+  {
+    "revision": "8d7a1e752f3c98183c4ae2fe6efbebadbb2d4e17",
+    "git_blob": "deeae7a652dd221197619593f2e68c0954d376a2",
+    "sha256": "244f806e99706b2ae02e853137b4e85544a78b5a3b7313a5e9525cb5ecd0ed08",
+    "protocol_lines": [
+      {
+        "line": 173,
+        "text": "breed_sets = [[\"rlearner\"]]"
+      },
+      {
+        "line": 176,
+        "text": "#runs = 5"
+      },
+      {
+        "line": 177,
+        "text": "#periods = 10000"
+      },
+      {
+        "line": 184,
+        "text": "periods = 10000 if primary_breed_set in [[\"basic\", \"optimizer\"], [\"optimizer\"]] else 10000"
+      },
+      {
+        "line": 200,
+        "text": "num_agents = 200"
+      },
+      {
+        "line": 230,
+        "text": "runs = 10"
+      }
+    ]
+  },
+  {
+    "revision": "a7e3d8407134cf9fba7582e9608b8a5d3a95bf5d",
+    "git_blob": "ede13f5b63ef91352942d8281cada0873bf4dc69",
+    "sha256": "ac88cc120460a906c2d507e8dd97af33af62d27ada34bd865278af7d76aaab33",
+    "protocol_lines": [
+      {
+        "line": 189,
+        "text": "breed_sets = [[\"rlearner\"], [\"rlearner\", \"basic\"], [\"rlearner\", \"optimizer\"], [\"basic\", \"optimizer\"], [\"rlearner\", \"basic\", \"optimizer\"]]"
+      },
+      {
+        "line": 191,
+        "text": "# runs = 5"
+      },
+      {
+        "line": 192,
+        "text": "# periods = 10000"
+      },
+      {
+        "line": 200,
+        "text": "periods = 10000 if primary_breed_set in [[\"basic\", \"optimizer\"], [\"optimizer\"]] else 10000"
+      },
+      {
+        "line": 215,
+        "text": "num_agents = 200"
+      },
+      {
+        "line": 246,
+        "text": "runs = 5"
+      }
+    ]
+  },
+  {
+    "revision": "ca7e151a300cb8995cf147744d6d87623f19f6c1",
+    "git_blob": "ff5688bb8de7e0ddfbde08e74d5813168c60db03",
+    "sha256": "003b2b2bcfde0fd7767419252d4fbd456fc612bc618d818b8040b18b4504b565",
+    "protocol_lines": [
+      {
+        "line": 173,
+        "text": "breed_sets = [[\"rlearner\"]]"
+      },
+      {
+        "line": 176,
+        "text": "#runs = 5"
+      },
+      {
+        "line": 177,
+        "text": "#periods = 10000"
+      },
+      {
+        "line": 184,
+        "text": "periods = 10000 if primary_breed_set in [[\"basic\", \"optimizer\"], [\"optimizer\"]] else 10000"
+      },
+      {
+        "line": 200,
+        "text": "num_agents = 200"
+      },
+      {
+        "line": 230,
+        "text": "runs = 4"
+      }
+    ]
+  }
+]

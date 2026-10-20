@@ -1,0 +1,171 @@
+{
+  "title": "Using Neural Networks for a Universal Framework for Agent-based Models",
+  "author": "Georg J\u00e4ger",
+  "year": 2021,
+  "doi": "10.1080/13873954.2021.1889609",
+  "checked_at": "2026-10-19T11:14:59.180854+00:00",
+  "paper_url": "https://www.tandfonline.com/doi/full/10.1080/13873954.2021.1889609",
+  "author_url": "https://georgjaeger.github.io/",
+  "status": "source-lead-only; no new completed study or paper verdict",
+  "paper_access": "Publisher PDF request and ResearchGate download link failed. Author-uploaded ResearchGate full-text extraction now supplies methods and results sections; exact PDF layout and numerical figures remain unrecovered.",
+  "candidate": {
+    "repository": "https://github.com/piratevector/Mesa_NeuralAgents",
+    "commit": "19c60fdb432344c9467b96e79fe30e75493344f1",
+    "path": "Mesa_ABM_NeuralAgent_example.ipynb",
+    "attribution": "Third-party example describes itself as inspired by the paper; no author provenance established.",
+    "license": "No license in repository metadata or two-file tree. Source retained externally for inspection; not vendored or executed."
+  },
+  "static_findings": [
+    {
+      "finding": "Training outcomes collapse to positive class 2.",
+      "evidence": "perform_action adds destination sugar to wealth; all 441 sugar values are strictly positive. Labels are sign(new wealth - old wealth) + 1.",
+      "minimum_sugar": 0.857864376269049,
+      "maximum_sugar": 15.0
+    },
+    {
+      "finding": "Action selection ignores the positive class.",
+      "evidence": "Labels map negative/neutral/positive to 0/1/2, but confidence is output[1] - output[0]; output[2] is unused."
+    },
+    {
+      "finding": "Wealth is cumulative and includes the training phase.",
+      "evidence": "perform_action uses +=; constructor trains after random actions without resetting wealth or positions before application."
+    },
+    {
+      "finding": "Multiple agents may occupy the same cell.",
+      "evidence": "MultiGrid and unconditional move_agent; occupancy is an input but does not prevent movement."
+    },
+    {
+      "finding": "Experiment provenance is incomplete.",
+      "evidence": "Unpinned pip install mesa, no explicit Python or Torch versions, random seed schedule, recorded numerical targets, or multiple-run analysis."
+    }
+  ],
+  "interpretation": "These are findings about this third-party notebook, not evidence contradicting J\u00e4ger. It is not accepted as a faithful replication implementation.",
+  "other_rejected_candidates": [
+    "georgjaeger.github.io/Capreprint.pdf concerns elementary cellular automata, not this paper.",
+    "facells/learnipy contains Sugarscape and a separate MLPClassifier utility, not an identified implementation of this paper."
+  ],
+  "next_action": "Seek author source or supplementary protocol; recover figure data. Any reconstruction must predeclare unresolved choices and sensitivity analyses across all three competition regimes and iterative learning. Do not count the third-party notebook or source audit as a replication.",
+  "evidence_directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/jaeger-universal-2021-source-001",
+  "evidence_sha256": {
+    "author-capreprint.pdf": "44c157c0973d0a249054434eaced76b0b1ec2a35c25d8d7d82d5b25fc3a3d5cf",
+    "author-homepage.html": "4a3b041d35eeaa5fcf988f3b1e0504068dec4f8066dc4ace6087a8c04b459f37",
+    "author-repositories.json": "64305d081cf0c586ee3ad6e15a44442db0f82498c967ae0803640db0c61f549f",
+    "author-site-tree-response.json": "8c177a38af7c68d455e9554231def022cc2bcf62c1d3dab3626aaf5c319a5e04",
+    "author-site-tree.json": "f24b7674521d0340c8dc97f29fcb959b66ae0399bc6c3388b4f7f9643c4b932a",
+    "github-code-search-00-receipt.json": "a003f1e6a761967081b739ec60fd81994ebe28fc4e36758cbd07b7b33a6a4dbe",
+    "github-code-search-00.json": "bd5e2a2fc10502f9520b35349e69e2ef1336af565ebb97c1604d33fdd34e95c8",
+    "github-code-search-01-receipt.json": "c64596760f7698a046acbefa004ef0bb64fe6527cc258a76f63a5b2aff1bb17b",
+    "github-code-search-01.json": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+    "github-code-search-02-receipt.json": "a4e2723ac8af1211d6fa668f01758caa2ec1c98435ce2f17d718c766583bba00",
+    "github-code-search-02.json": "7259f3b9c181e5cc7ef06d6379b1896767519c7a792466ade81eaf1446831ad0",
+    "github-code-search-03.json": "ba58c6a7773a38ffb965a0f6f87256da71bdeb3641a06837c516fb1f9e13033a",
+    "github-code-search-04.json": "bae66e0a39cb2978f54fe8b8ce37acf29ee8dece435e64a87559e4d21a0cb4d0",
+    "github-code-search-05.json": "53d5c02763735aaa0616530b1f7261444ee9d9be8355f129a8c26399ab4d8668",
+    "github-search-00.json": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+    "github-search-01.json": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+    "github-search-02.json": "4af480b8ee5b87b369a76c49bd22c9a783908272ebffbe97898f8ab0f0772a5f",
+    "learnipy-README.md": "b72f8e1d313afbf785a3be4502aaaf24861be36bfd2b44423cb526e59693ec4d",
+    "learnipy-commit.json": "e72759f416fd257b4d80b5a28fc5acb6b5c1fb15a942c7a141267920388b9a45",
+    "learnipy-learnipy.py": "d96f7ce9a43b99a41083943bc4d34d84d192e2c6b39488a877b02026f7dab271",
+    "learnipy-repository.json": "dca58159c4941393dac1c85de4d59b4e3d99f894d2d290c631aa603b4bb2f716",
+    "learnipy-tree.json": "7dd978645b8d12d4eebd9fc87c54b031decc801537003dc66de4325ac6defcd2",
+    "mesa-neuralagents-Mesa_ABM_NeuralAgent_example.ipynb": "f4f98bf699e20b90a70afd7409341f192bba5738c3db80f7ab60c30c359cd396",
+    "mesa-neuralagents-README.md": "e66f28e974da937e42373a3f19295d6b29986a00302d62667247c73f4a56d764",
+    "mesa-neuralagents-commit.json": "e88f9b6f85030132d81846b3b90e017af9de1059b265049ea7368da3f0205ec2",
+    "mesa-neuralagents-notebook-source.txt": "321204fa9d44b3b8d552c2c8766b01d13dd736819a12a349706020a4c0090787",
+    "mesa-neuralagents-repository.json": "85957ab4c9833fec233a8e103e082bb1af65755fdf1efc1b15fc0ae254ee3fe6",
+    "mesa-neuralagents-tree.json": "5687aa2d3e2a2181b4b6be0b43debb292fbc969592f042c803d575f118b944c0",
+    "openalex.json": "11532577722ba510de48036be151859128c7208cb360381c0f0a18f522a34e27",
+    "publisher-download-receipt.json": "c31fea6e2c48f9e10d9ea5dbc9c9127baf4eb7c6fb402c639743cc4965898ab5",
+    "publisher-download.bin": "2d2a14232d91bc8b949e14225843281f45416088ce92eca8aa789763bfbd325e",
+    "researchgate-web-extract-002.json": "109810233d80d878d979b2503923705a63d48cd857f99ff2af18fd13fedc1b58",
+    "researchgate-web-extract-001.json": "68e777e1971302406f7781c5a74ad4c865b6dc1ca2541163621c0a065f0123b6"
+  },
+  "full_text_url": "https://www.researchgate.net/publication/350008423_Using_Neural_Networks_for_a_Universal_Framework_for_Agent-based_Models",
+  "full_text_attribution": "ResearchGate identifies Georg J\u00e4ger as uploader on March 12, 2021; article declares CC BY 4.0.",
+  "recovered_protocol": {
+    "source_locations": "Sections2.1\u20133.3, printed pages164\u2013174; retained web extracts001/002.",
+    "agents": 75,
+    "grid": [
+      21,
+      21
+    ],
+    "boundary": "periodic",
+    "sugar": "15 - sqrt((10-x)^2 + (10-y)^2)",
+    "actions": [
+      "stay",
+      "north",
+      "south",
+      "east",
+      "west"
+    ],
+    "sensors": "Sugar and occupancy of current patch and four adjacent patches.",
+    "score": "Sugar collected in the current turn, not accumulated wealth.",
+    "experience_steps": 5000,
+    "training": "scikit-learn multilayer perceptron; held-out observations used for validation.",
+    "application": "Reset agents, evaluate each action using P(positive)-P(negative), select maximum with random tie breaking.",
+    "baseline_competition_factor": 0.8,
+    "competition_description": "Repeated harvesting at a patch in the same turn reduces collection by the competition factor.",
+    "no_competition_factor": 1.0,
+    "threshold_variant": "First two agents sharing a patch receive full sugar; competition starts with a third agent.",
+    "advanced_experience": "Execute the network-selected action; also evaluate a random different action counterfactually, storing its experience without executing it. Retrain iteratively."
+  },
+  "claims_to_evaluate": [
+    {
+      "figure": 3,
+      "claim": "After20 application turns, agents cluster centrally without overlapping patches; last-turn sugar histogram is described as Pareto."
+    },
+    {
+      "figure": 4,
+      "claim": "Random actions instead produce dispersed positions and an approximately Gaussian sugar histogram."
+    },
+    {
+      "figure": 5,
+      "claim": "Without competition all agents reach the sugar maximum; held-out classification accuracy reaches100%."
+    },
+    {
+      "figure": 7,
+      "claim": "For competition beginning at three agents, more random experience does not fix application performance despite high training performance."
+    },
+    {
+      "figures": [
+        8,
+        9
+      ],
+      "claim": "Iterative advanced experience reaches a Nash equilibrium and average-score convergence after six iterations."
+    }
+  ],
+  "missing_fidelity_requirements": [
+    "Author source, library versions, hidden-layer architecture, activation, solver, learning parameters and feature scaling.",
+    "Training/validation split, random seeds, repeated-run counts and exact Figure7 experience-size grid.",
+    "Within-turn scheduling, pre/post-action utility evaluation and whether penalties apply once or compound for subsequent harvesters.",
+    "Interpretation of the current agent in occupancy features, neutral-label tolerance and precise reset procedure.",
+    "Advanced-experience duration, replay-data retention, model reinitialization and convergence tolerance.",
+    "Original numerical figure data and distribution-fit procedure; visual histogram labels alone are not statistical goodness-of-fit evidence."
+  ],
+  "source_availability_followup": {
+    "checked_at": "2026-10-19T11:14:59.180854+00:00",
+    "source": "https://www.researchgate.net/publication/350008423_Using_Neural_Networks_for_a_Universal_Framework_for_Agent-based_Models",
+    "location": "Conclusion, printed page175; ResearchGate text lines1007\u20131017",
+    "finding": "The paper describes open-source release as a future step after further testing; it does not identify a deposited implementation.",
+    "scope": "This describes the2021 paper, not proof that no later author release exists.",
+    "publisher_full_text_request": "403 from web reader",
+    "researchgate_direct_request": {
+      "url": "https://www.researchgate.net/publication/350008423_Using_Neural_Networks_for_a_Universal_Framework_for_Agent-based_Models",
+      "exit_code": 0,
+      "http_code": "403",
+      "stderr": "",
+      "bytes": 21114,
+      "sha256": "15f9be0295e63edce2f02d7618746397c5cf8e953b49e824c201cbd7199604ea"
+    },
+    "figure7_page": "https://www.researchgate.net/figure/Success-during-training-and-application-phase-for-increasing-training-data_fig5_350008423",
+    "figure7_fetch": "Web reader failed; no image or numerical targets recovered.",
+    "next_action": "Author-source or protocol recovery remains necessary; do not substitute third-party notebook results.",
+    "evidence_directory": "/Users/relh/Code/workspace/sugarscape-replication-evidence/jaeger-universal-2021-figures-001",
+    "evidence_sha256": {
+      "source-availability.json": "baac97cc5b56c2770d0ba622b8c101b98135ed11f6d09dfee666d141c9a57f4a",
+      "download.json": "fe06293081453bbc13b596aa84af250ad0c56dfe4b99bd6a3d3a50cac0a7fa80",
+      "publication.html": "15f9be0295e63edce2f02d7618746397c5cf8e953b49e824c201cbd7199604ea"
+    }
+  }
+}

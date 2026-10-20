@@ -1,0 +1,15 @@
+{
+  "runs": 10,
+  "snapshots": 1010,
+  "cell_observations": 2525000,
+  "live_agent_observations": 129306,
+  "survivor_transitions_checked": 127306,
+  "max_pairwise_gini_error": 2.7755575615628914e-16,
+  "capacity_cell_differences": 134,
+  "legacy_capacity": 3638,
+  "refactored_capacity": 3772,
+  "legacy_mean_final_population": 118.1,
+  "refactored_mean_final_population": 91.1,
+  "scope": "Full legacy executions; independent metrics, movement and harvest bounds. Different realized initial states and scheduling; not causal attribution, full transition replay or paper replication.",
+  "completed_study": false
+}

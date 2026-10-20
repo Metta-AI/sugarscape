@@ -1,0 +1,68 @@
+{
+  "paper": "https://doi.org/10.1002/oca.2265",
+  "citation": "Christley, Miller Neilan, Oremland, Salinas, Lenhart (online 2016; volume 2017), Optimal control of sugarscape agent-based model via a PDE approximation model, 38(4):473\u2013497.",
+  "status": "Additional candidate and source audit only; no implementation, simulation, or completed replication.",
+  "author_slides": "https://www.birs.ca/workshops/2017/17w5123/files/lenhart-PDE-kokum-abm-banff-revised2.pdf",
+  "artifacts_sha256": {
+    "author-slides.txt": "b8539ab351723077c5d1f029a0cdcec782e2d562dc5f9c016017e983675cbd67",
+    "page43.png": "1c55e4c67ba783dc997feea50a3bc24eb34b1f3065328dac713c389871435621",
+    "page53.png": "d43d1415c5c70e00d2afca181087c0ec2407cd839ed48f4b8834efa18432e3e9",
+    "author-slides.pdf": "55d9e84781863d5d6d1dd0e69738ded7ecc1b29c5fd5a1216e0f04a3cc64cee0"
+  },
+  "visually_verified_pdf_pages": [
+    43,
+    53
+  ],
+  "slide_specification": {
+    "landscape": "48x48; four vertical resource bands; no resource depletion; vertical wrap, closed horizontal boundaries",
+    "initial_agents": 4500,
+    "initial_wealth": [
+      0.25,
+      10
+    ],
+    "metabolism": [
+      2,
+      4
+    ],
+    "vision": [
+      1,
+      6
+    ],
+    "horizon": 20,
+    "control_mesh": {
+      "dx1": 1,
+      "dx2": 1,
+      "ds": 0.25,
+      "dt": 0.01
+    }
+  },
+  "fidelity_gaps": [
+    "Full journal article and original NetLogo/PDE source not recovered.",
+    "Slide53 labels an exponential wealth-update expression as tax collected; require original source before interpreting this formula.",
+    "Diffusion/advection calibration, numerical solver and stopping rules, randomization, repeat counts, and journal figure targets remain unverified.",
+    "This nondepleting strip model must not supply missing rules for Oremland2014\u2019s different experiment."
+  ],
+  "related_source_lead": {
+    "url": "https://dsc.duq.edu/etd/569/",
+    "title": "Garuccio (2016), A Genetic Programming Approach to Solving Optimization Problems on Agent-Based Models",
+    "download": "https://dsc.duq.edu/cgi/viewcontent.cgi?article=1585&context=etd",
+    "access_result": "Web download returned403; thesis content and source availability unverified."
+  },
+  "excluded_search_lead": {
+    "paper": "https://doi.org/10.1371/journal.pcbi.1012138",
+    "code": "https://github.com/LaboratoryForSystemsMedicine/Metamodeling-and-Control-of-Medical-Digital-Twins_2024",
+    "reason": "Sugarscape appears as background; reported empirical experiments use predator-prey and metabolic models. Not added as a Sugarscape replication study."
+  },
+  "search_date": "2026-10-17",
+  "search_limit": "Targeted title/author/code web searches did not establish a paper-specific implementation; not proof of absence.",
+  "followup_2026_10_18": {
+    "checked_sources": [
+      "https://onlinelibrary.wiley.com/doi/full/10.1002/oca.2265",
+      "https://legacy.nimbios.org/workinggroups/WG_ABMs_products",
+      "https://duq.edu/faculty-and-staff/rachael-miller-neilan.php",
+      "https://dsc.duq.edu/etd/569/"
+    ],
+    "outcome": "No full journal article or paper-specific code recovered. Working-group page identifies the same publication; thesis landing page remains accessible but its download returns403. Title/author/GitHub searches did not recover implementation.",
+    "scope": "Bounded search failure, not proof that source or full text is unavailable elsewhere. Do not repeat these same requests without a new lead."
+  }
+}

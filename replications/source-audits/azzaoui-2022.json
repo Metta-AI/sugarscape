@@ -1,0 +1,53 @@
+{
+  "title": "Exploring Income and Wealth Distributions using Agent-Based Modelling: How does Taxation Impact Economic Inequality?",
+  "authors": [
+    "Achraf Azzaoui",
+    "William Kennedy"
+  ],
+  "doi": "10.13021/jssr2022.3413",
+  "source": "https://journals.gmu.edu/index.php/jssr/article/view/3413",
+  "published": "2022-12-13",
+  "observed_material": "Journal landing page contains an abstract; no full methods, downloadable paper or implementation was exposed in the retrieved page.",
+  "reported_claims": [
+    "A wealth-tax rate around 15 percent maximizes marginal revenue.",
+    "Wealth tax and Gini index have an approximately linear association.",
+    "Lending produces four lender/borrower categories."
+  ],
+  "basis": "NetLogo Sugarscape 3 Wealth Distribution, extended with taxation, lending, trade and reproduction.",
+  "fidelity_gaps": [
+    "Tax timing, redistribution, horizons, seeds, replication counts and measurement definitions unavailable.",
+    "No paper-specific implementation recovered by targeted title/author/GitHub web searches.",
+    "Name-matched account was inspected after rate limit cleared; no paper-specific source identified in the bounded follow-up, and author identity remains unverified."
+  ],
+  "status": "Abstract-only lead; not accepted as a full paper study and no replication credit.",
+  "checked_date": "2026-10-18",
+  "account_followup": {
+    "endpoint": "https://api.github.com/users/AchrafAzzaoui/repos?per_page=100",
+    "status": 200,
+    "response_sha256": "0df804b42c3aa8bebca6e596af2a5284dde469d0d442bad3e0bf226f7473be97",
+    "repository_names": [
+      "AchrafAzzaoui",
+      "ai_open_source_prework_codepath",
+      "Algorithm-DSA-Templates",
+      "AssemblyEndgame",
+      "Cafe-Review-and-Order-Data-Analysis-using-NLP-and-Time-Series-Forecasting",
+      "Chef_Claude--React_Course_Scrimba_Project",
+      "Comp282Assignments",
+      "ERCOT_Price_Prediction_Stat_413_Final_Project",
+      "hackrice-2024",
+      "IMCProsperity2025",
+      "MLCheatsheets",
+      "Portfolio-Website",
+      "REMS-Scheduling-Optimizer-INFORMS",
+      "Rice-Datathon-",
+      "Strategy-RA-Research-Exercise",
+      "TIP_102_Tech_Fellow_Weekly_Tasks"
+    ],
+    "portfolio_tree": "47540ea6fc97d34309f50fe6bb9c8e30a1dee5f5",
+    "files_checked": [
+      "achrafs-portfolio/src/data/experiences.ts",
+      "achrafs-portfolio/src/data/projects.ts"
+    ],
+    "finding": "Prior API rate limit no longer blocks the read. Public repository names/descriptions and current portfolio experience/project data did not identify the paper implementation. Name match still does not authenticate author identity. No claim that private or historical implementation is absent."
+  }
+}

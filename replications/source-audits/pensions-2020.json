@@ -1,0 +1,118 @@
+{
+  "title": "An Agent-Based Model for Exploring Pension Law and Social Security Policies",
+  "authors": [
+    "Emilio Serrano",
+    "Ken Satoh"
+  ],
+  "publication": "JSAI-isAI 2019 revised proceedings, published September2020, pages50\u201363",
+  "paper": "https://doi.org/10.1007/978-3-030-58790-1_4",
+  "paper_access": "Publisher abstract, notes and references inspected; full text not yet recovered. Exact paper targets remain unknown.",
+  "code": "https://github.com/emilioserra/SugarscapePensions",
+  "code_pin": "0c5b2991cb46d8bd329ccce584d643ffe1f1c953",
+  "license": "CC BY-NC-SA3.0 as stated by authors; source/data retained externally, not vendored in this audit.",
+  "source_files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/emilioserra/SugarscapePensions/0c5b2991cb46d8bd329ccce584d643ffe1f1c953/README.md",
+      "sha256": "381f370dfd8d29f7acbbd15b70d46d09d8975d093d42d11c34113048cb026c72",
+      "bytes": 9663
+    },
+    {
+      "path": "Sugarscape Pension Law.nlogo",
+      "url": "https://raw.githubusercontent.com/emilioserra/SugarscapePensions/0c5b2991cb46d8bd329ccce584d643ffe1f1c953/Sugarscape%20Pension%20Law.nlogo",
+      "sha256": "3cd89b39a9bfdd30adb84b6ed6056215097a26bfd9eaa39dc524e8dedb6fc27d",
+      "bytes": 44109
+    },
+    {
+      "path": "batchExperiments/experimentsAnalysis.R",
+      "url": "https://raw.githubusercontent.com/emilioserra/SugarscapePensions/0c5b2991cb46d8bd329ccce584d643ffe1f1c953/batchExperiments/experimentsAnalysis.R",
+      "sha256": "c31d7d267f744107a525d0fc8eb2f4462369f9358ce8fba87ee7db64e0dc5874",
+      "bytes": 2287
+    },
+    {
+      "path": "batchExperiments/Sugarscape Pension Law pensionsExperiments-table.csv",
+      "url": "https://raw.githubusercontent.com/emilioserra/SugarscapePensions/0c5b2991cb46d8bd329ccce584d643ffe1f1c953/batchExperiments/Sugarscape%20Pension%20Law%20pensionsExperiments-table.csv",
+      "sha256": "627bbaa69cd0c3dffc6a7a093db6b354f45c79510cd0128c124cac1080270690",
+      "bytes": 179561
+    }
+  ],
+  "runtime": "NetLogo6.1.0 in model and deposited CSV header",
+  "archived_experiment": {
+    "name": "pensionsExperiments",
+    "runs": 1280,
+    "conditions": 128,
+    "replicates_per_condition": 10,
+    "steps_per_run": 1000,
+    "initial_population": [
+      400,
+      800
+    ],
+    "retirement_age": [
+      100,
+      65,
+      67,
+      70
+    ],
+    "pension_taxes": [
+      0,
+      4.7,
+      10,
+      28.3
+    ],
+    "fixed_fee": [
+      0,
+      0.1,
+      0.5,
+      1
+    ]
+  },
+  "analysis": {
+    "conditions": 128,
+    "replicates_per_condition": 10,
+    "metric_groups": 768,
+    "workbook_numeric_values_reconstructed_within_printed_rounding": 2304,
+    "workbook_sha256": "182ce9e8647a113f232bd4a56fdaa52661a8ddda0c326cbd0080940e260bf0fe",
+    "native_se_divisor": 11.313708498984761,
+    "replicate_se_divisor": 3.1622776601683795,
+    "native_to_replicate_se_ratio": 0.2795084971874737,
+    "finding": "Deposited workbook reproduces the script divisor based on128 conditions rather than10 replicate runs. This is an archived-analysis finding, not evidence about paper claims without the full text."
+  },
+  "scope": "Archived-data reconstruction plus complete native execution of all1280 deposited inputs. Full paper remains unrecovered; no study completion or paper-level negative finding.",
+  "remaining": [
+    "Recover full paper and enumerate exact targets and model scope. Publisher note4 excludes social-services experiments from the paper.",
+    "Verify source revision alignment and extract the full initialization, scheduling and measurement semantics.",
+    "Preserve historical standard errors and report corrected replicate-based errors separately.",
+    "Validate independent fork behavior separately from the now-complete author-code execution."
+  ],
+  "reproduce_archive_audit": "python3 replications/source-audits/audit_pensions_workbook.py DIRECTORY_WITH_DEPOSITED_CSV_AND_XLSX NEW_AUDIT_JSON",
+  "archive_audit_validation": "pensions-workbook-validation.json",
+  "access_search_2026_10_18": {
+    "author_page": "https://research.nii.ac.jp/~ksatoh/",
+    "institutional_catalog": "https://portalinvestigacion.consorciomadrono.es/authors/17816.html?page=2&pageType=article&sortBy=dateDesc",
+    "conference": "https://www.niit.ac.jp/jurisin2019/",
+    "finding": "Author page identifies2019 preliminary proceedings pages103-116 and2020 revised chapter pages50-63; these inspected pages did not provide the full paper. Institutional entry links the publisher DOI.",
+    "related_candidate": "firouzian-pensions-2025.json",
+    "distinction": "Related2024 thesis is a separate work and does not replace the missing2020 paper."
+  },
+  "native_qualification": {
+    "evidence": "pensions-native-qualification-2026-10-18",
+    "runtime": "NetLogo 6.1.0, Java 11",
+    "condition": {
+      "population": 400,
+      "retirement_age": 65,
+      "tax": 4.7,
+      "fixed_fee": 0.1
+    },
+    "seed": 20261018,
+    "steps": 1000,
+    "records_audited": 1003,
+    "repeat_and_dense_endpoints_exact": true,
+    "full_ensemble": "Complete:128 conditions x10 repetitions,1000 steps, seed20261018+run_number. All1280 runs and768 condition/metric comparisons audited; new seeds do not establish historical agreement.",
+    "failed_ensemble_launch": "pensions-native-ensemble-001: XML metric ordering rejected before simulation; preserved, not counted.",
+    "completed_ensemble_evidence": "pensions-native-complete-2026-10-18"
+  },
+  "source_chronology": {
+    "evidence": "pensions-source-chronology-2026-10-18.json",
+    "finding": "All14 currently visible commits predate the cited September2019 repository access. Executed pin is the latest visible commit, August13,2019. This supports chronological compatibility, not exact experimental-revision identification."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "python": "3.11.14",
+  "conditions": 3,
+  "steps_per_run": 100,
+  "observations": 303,
+  "final_populations": [
+    298,
+    327,
+    367
+  ],
+  "source_files_unchanged": true,
+  "scope": "Unmodified core simulation through public constructor/nextstep on modern Python. Seed0 and100 steps chosen for bounded qualification, not historical figure settings. Does not exercise Python2 DataCollect division or graphical interface; no chapter reproduction verdict."
+}

@@ -1,0 +1,47 @@
+{
+  "paper": "https://arxiv.org/abs/2609.24911v1",
+  "repository": "https://github.com/Lishi905/SocioVerse-ABM",
+  "revision": "b3b93e474cd20271bbc3ecbb908d587801e3311f",
+  "files": {
+    "tasks/market/sugarscape/config.yaml": "3f05f793966daec620c92264390cee1eb67c05dad5cf9db5c2f9d23d51e19a8f",
+    "tasks/market/sugarscape/model.py": "933911f144a22cd6ce71d6a8715f1269490474ff7caa77bf4b8b881b72ad1d89",
+    "tasks/market/sugarscape/env.py": "f9ce412ea24fca42a78ee0fbafc3d6c27ef53832e5f121f0de530123cc18a075",
+    "tasks/market/sugarscape/agents.py": "b4a76cc6c16bcd34fb3e45a51e035733f292e3997104fca6d9fbc7cea004077b",
+    "tasks/market/sugarscape/rule_f.py": "ba976551c1e586e5e364fbc1f5c8f6681248c083bef9a86670fa083e6444462c",
+    "tasks/market/sugarscape/llm_f.py": "f9d5ce6468aeae176115dcdcc06c7d9170cb8c98e9dde3a425b9a18955a161a8",
+    "tasks/market/sugarscape/evaluate.py": "06adbb983875800c30bf65b91fab3993c7a3f330d6c40e62a2cdc8958264d164",
+    "tasks/market/sugarscape/legacy/sugarscape_simple.py": "e92d81a2e0c02519e1e4237507a3ebe43fb311c96eba0bfd7a6e4aea2c23124e",
+    "tasks/market/sugarscape/legacy/sugarscape_LLM.py": "8f46b205f660bf237ffc6a6d5c74987671d5e06a94b4387f2c7ea2e4b75d6db8",
+    "socioverse_abm/eval.py": "3575f10b3041ee6497adfbaed5f8b1ebefc62501132e8def425aa0b0b07ad2a6",
+    "LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "NOTICE": "9a91bbb66979b5918908d0a116fd828efdd8250d38dcad4b12c0d06fda438ce8"
+  },
+  "paper_settings": {
+    "agents": 200,
+    "steps": 100,
+    "rule_runs": 10,
+    "llm_runs_per_model": 3,
+    "models": [
+      "GPT-4o",
+      "DeepSeek-V3",
+      "Qwen3-235B"
+    ],
+    "temperature": 0.7,
+    "max_output_tokens": 256,
+    "metric": "1 - root-mean-square relative deviation across mean wealth, survivors, and Gini against ten-rule-run means"
+  },
+  "released_refactor": {
+    "temperature": 0.2,
+    "max_output_tokens": 8,
+    "shared_evaluator": "Mean per-step strict action agreement, not the paper outcome metric"
+  },
+  "interpretation": "Refactored default temperature and evaluator differ from paper protocol. Eight-token cap is below the stated256-token upper bound; its effect is untested. Legacy Mesa scripts must be audited before any historical fidelity claim. No paid inference launched.",
+  "remaining": [
+    "Exact historical seeds and model snapshots",
+    "Legacy/refactored simulation parity",
+    "Figure10 numerical targets and uncertainty",
+    "All three full LLM conditions at paper settings",
+    "Independent agent/state and metric replay"
+  ],
+  "completed_study": false
+}

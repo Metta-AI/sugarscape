@@ -1,0 +1,176 @@
+{
+  "paper": "https://arxiv.org/abs/1908.06883",
+  "publication": "2011 proceedings, uploaded to arXiv2019",
+  "pdf_sha256": "8efaf25498dd93f996a6d5dbfb0c7159c95f6642c07f911047859d4e467f7ed2",
+  "status": "Source/target audit only; no implemented replication or simulated result",
+  "baseline": {
+    "agents": 1750,
+    "initial_cops": 100,
+    "movement": false,
+    "wealth_distribution": 0,
+    "wealth_to_create_cop": 0,
+    "tax": 0.3,
+    "observed_cycles": 200
+  },
+  "explicit_rules": {
+    "resource_levels": [
+      0,
+      4
+    ],
+    "mobile_destination_minimum_sugar": 1,
+    "cop_survival_cost": 5,
+    "cop_creation_cost": 10,
+    "poverty_threshold": 1,
+    "assistance": "Allocated assistance divided equally among people below poverty threshold",
+    "grievance": "H*(1-L)",
+    "arrest_probability": "1-exp(-k*C/A)",
+    "net_risk": "R*P",
+    "activation": "G-N>T"
+  },
+  "scenarios": [
+    {
+      "id": "baseline",
+      "overrides": {},
+      "target": "Periodic rebellion in low-resource regions over200cycles"
+    },
+    {
+      "id": "build_half",
+      "overrides": {
+        "wealth_distribution": 0,
+        "wealth_to_create_cop": 0.5
+      },
+      "target": {
+        "cops": 158,
+        "occasional_rebels": [
+          1,
+          2
+        ],
+        "jailed_range": [
+          18,
+          20
+        ]
+      }
+    },
+    {
+      "id": "build_all",
+      "overrides": {
+        "wealth_distribution": 0,
+        "wealth_to_create_cop": 1
+      },
+      "target": {
+        "cops": 90,
+        "behavior": "Persistent rebellion in poor regions"
+      }
+    },
+    {
+      "id": "assist_half",
+      "overrides": {
+        "wealth_distribution": 0.5,
+        "wealth_to_create_cop": 0
+      },
+      "target": {
+        "cops": 100,
+        "jailed_range": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "id": "mobile",
+      "overrides": {
+        "movement": true,
+        "wealth_distribution": 0,
+        "wealth_to_create_cop": 0
+      },
+      "target": "Rebellion at boundaries of rich and poor regions"
+    },
+    {
+      "id": "mobile_assist",
+      "overrides": {
+        "movement": true,
+        "wealth_distribution": 0.5,
+        "wealth_to_create_cop": 0.2
+      },
+      "target": "No rebels"
+    },
+    {
+      "id": "low_population",
+      "overrides": {
+        "agents": 250,
+        "initial_cops": 15,
+        "movement": true,
+        "wealth_distribution": 0
+      },
+      "target": "Higher rebellion fraction and frequency"
+    },
+    {
+      "id": "low_population_assist",
+      "overrides": {
+        "agents": 250,
+        "initial_cops": 15,
+        "movement": true,
+        "wealth_distribution": 0.5
+      },
+      "target": "No rebels"
+    },
+    {
+      "id": "low_population_build",
+      "overrides": {
+        "agents": 250,
+        "initial_cops": 15,
+        "movement": true,
+        "wealth_distribution": 0,
+        "wealth_to_create_cop": 0.5
+      },
+      "target": {
+        "cops": 22,
+        "behavior": "Rebels remain in poorer regions"
+      }
+    },
+    {
+      "id": "high_tax",
+      "overrides": {
+        "tax": 0.5
+      },
+      "target": "Mass rebellion in poorer regions even with assistance"
+    },
+    {
+      "id": "limited_vision",
+      "overrides": {
+        "vision": 3
+      },
+      "target": "Isolated poor regions rebel; assistance reduces rebellion"
+    },
+    {
+      "id": "low_legitimacy",
+      "overrides": {
+        "government_legitimacy": 0.35
+      },
+      "target": "Rebels outnumber quiet agents; declining police and collapse; stated effective-government boundary0.75"
+    }
+  ],
+  "unresolved": [
+    "Exact hardship mapping from sugar, wealth, taxation, and assistance",
+    "Lattice dimensions, resource matrix, boundary conditions, and growback schedule",
+    "Random seeds, replication counts, and measured time windows beyond baseline200cycles",
+    "Scheduling of harvesting, taxation, assistance, cop maintenance/creation, arrest, and release",
+    "Default legitimacy, vision, risk distribution, thresholdT, coefficientk, and jail term",
+    "Cop initial reserves, starvation/creation rounding, and allocation among officers",
+    "Exact NetLogo base-model version and modifications",
+    "Policy fields omitted from some Table1rows cannot safely be assumed independent or inherited from the preceding case"
+  ],
+  "searches": [
+    {
+      "provider": "GitHub code search",
+      "query": "\"wealth-to-create-cop\"",
+      "matches": 0
+    },
+    {
+      "provider": "GitHub code search",
+      "query": "\"rebellion on sugarscape\"",
+      "matches": 0
+    }
+  ],
+  "interpretation": "The paper specifies case targets but not enough rules to claim a faithful independent implementation without explicit assumptions or recovered author code. Empty searches are not evidence of source absence."
+}

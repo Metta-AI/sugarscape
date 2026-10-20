@@ -1,0 +1,35 @@
+{
+  "title": "Neighbourhood, Geometry and Initial Conditional Effects on Fairness and Agent Longevity in Large-Scale SugarScape Models",
+  "author": "K. A. Hawick",
+  "year": 2014,
+  "doi": "10.2316/P.2014.820-016",
+  "publication": "IASTED Modelling, Simulation, and Identification, pages 135\u2013142",
+  "checked_at": "2026-10-19T21:44:13.479119+00:00",
+  "paper_landing_url": "https://www.researchgate.net/publication/289853544_Neighbourhood_Geometry_and_Initial_Conditional_Effects_on_Fairness_and_Agent_Longevity_in_Large-Scale_SugarScape_Models",
+  "author_preprint_url": "http://digital.hull.ac.uk/reports/0006/csi-0006.html",
+  "access_observations": [
+    "Public author-uploaded preprint text is indexed; linked PDF request returned403.",
+    "DOI redirects to Acta Press paper455998; request returned403.",
+    "The author-listed digital.hull.ac.uk host does not resolve.",
+    "A separately inferred legacy Hull path returned404; it is not an author-confirmed location.",
+    "GitHub repository query sugarscape+hawick returned0 results. Unauthenticated code search returned401 and supplies no negative search evidence."
+  ],
+  "provisional_protocol_from_author_text": {
+    "implementation_language": "Java",
+    "reported_lattice": [
+      256,
+      256
+    ],
+    "initial_agent_density": 0.1,
+    "minimum_independent_runs": 10,
+    "initial_landscapes": "Sinusoidal twin peaks versus equal-total-sugar uniform landscape",
+    "neighborhoods": "Square, triangular, hexagonal, Moore and radial variants",
+    "resource_regrowth": "No regrowth in the presented depletion experiments"
+  },
+  "not_yet_established": [
+    "Executable source, revision, license and original input files.",
+    "Initial wealth, harvest semantics, boundary handling, activation order, and exact run/seed allocation.",
+    "Visual confirmation of equations and graphical targets; extraction appears to mix Gini and fairness conventions."
+  ],
+  "decision": "Candidate only. No implementation identified by these bounded searches; this does not establish that none exists. Do not run guessed mechanics or assign negative/completed-study credit. No author contact sent."
+}

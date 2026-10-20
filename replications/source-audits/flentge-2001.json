@@ -1,0 +1,151 @@
+{
+  "paper": "https://www.jasss.org/4/4/3.html",
+  "status": "Source recovery and protocol audit only; no simulation result.",
+  "archived_project_page": "https://web.archive.org/web/20060811022302id_/http://www.informatik.uni-mainz.de:80/%7Eflentge/norm-sim_eng.html",
+  "thesis_url": "https://web.archive.org/web/20040204222933id_/http://www.informatik.uni-mainz.de:80/~flentge/norm-sim/norm-sim.pdf",
+  "thesis_pages": 161,
+  "visually_inspected_pdf_pages": [
+    141,
+    142
+  ],
+  "thesis_appendix": "C: experiment overview, PDF pages 141\u2013161. Page 141 states complete logs were on an accompanying CD, not in the thesis.",
+  "sha256": {
+    "paper.txt": "ae968b84fc1a9c54fccfdd37761d38b8a45b075a4a579fe1620934075d4f0ac1",
+    "archived-page.html": "9541518cf405bc714071a5740aa449d636c324afe649211c725c79111d563469",
+    "thesis.pdf": "cafd6e4cf5b7ccd87127a427e8d47f4d140442024844cfb16703fd5aee890962",
+    "source-cdx.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "source-availability.json": "2af44a45df50a4ffe4cc1f0fae3074c2cc982f39fcb77d04d0be13e0cb4f6b7f",
+    "executable-availability.json": "1547eb72f21ea00efd0d2e6236f11bf7f7dc51cd1431a16cc476cef7d7dbaf42"
+  },
+  "specification": {
+    "replicates_per_configuration": 100,
+    "steps": 2000,
+    "initial_agents": 400,
+    "metabolism_values": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "vision_values": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "capacity_multiplier": 10,
+    "growback": 1,
+    "initial_endowment_range": [
+      50,
+      100
+    ],
+    "lifespan_range": [
+      60,
+      100
+    ],
+    "initial_age": "Uniform from zero through individual maximum age",
+    "memes": 11
+  },
+  "source_search": {
+    "source_relative_url": "norm-sim/source.zip",
+    "executable_relative_url": "norm-sim/sugarscape.zip",
+    "source_cdx_records": 0,
+    "source_availability_snapshots": {},
+    "executable_availability_snapshots": {},
+    "limitation": "These archive queries do not prove that no copy exists elsewhere."
+  },
+  "unresolved": [
+    "Original Delphi4 source and executable not recovered",
+    "Exact landscape matrix and random seeds",
+    "Validate thesis table correspondence to journal figures before treating values as paper targets",
+    "Exact scheduling and newborn updates require code confirmation; thesis Figure9 partially constrains scheduling, while zero-wealth death needs journal/thesis resolution."
+  ],
+  "implementation_followup_2026_10_17": {
+    "status": "Thesis specification evidence only; no executable recovery or replication result.",
+    "thesis_date": "1999-11-08",
+    "inspected_pdf_pages": [
+      36,
+      53,
+      54
+    ],
+    "observations": [
+      {
+        "page": 36,
+        "finding": "Movement scans four cardinal directions in randomized order after maximizing available sugar and minimizing distance. The text removes agents when wealth falls below zero."
+      },
+      {
+        "page": 53,
+        "finding": "Figure9 shuffles the agent list, captures its length, and iterates agents before growback. Death removes the current entry and decrements the captured count; survivors advance the index."
+      },
+      {
+        "page": 54,
+        "finding": "Table7 places culture transfer after movement. K+ makes the poorer agent adopt; equal wealth favors the moving agent. Sanction subtracts penalty from the violator and cost from the sanctioner."
+      }
+    ],
+    "limits": [
+      "Figure9 explicitly shows only principal operations; newborn insertion and eligibility are not established.",
+      "The 1999 thesis predates the 2001 journal; exact implementation equivalence is unverified.",
+      "Journal paragraph4.5 does not disambiguate the zero-wealth boundary as precisely as the thesis. Preserve this as a fidelity question."
+    ],
+    "renders_sha256": {
+      "page-036.png": "444ea0679b33201e5efc0351ba0678bbec92d40785fb07715c9806f5dc10608b",
+      "page-053.png": "38360e1cd5d959ae4a17af0dd1e7955df18d592ee5a76ccc77511e53e337e96b",
+      "page-054.png": "9e69f4b4366627615ae9c79810d29df49f4e714312aff3a9b6723bd33a531928"
+    },
+    "github_searches": [
+      {
+        "command": "gh search code \"norm-sim\" sugarscape",
+        "results": 0
+      },
+      {
+        "command": "gh search repos sugarscape language:Pascal",
+        "results": 0
+      },
+      {
+        "command": "gh search repos possession norms sugarscape",
+        "results": 0
+      }
+    ],
+    "search_limit": "Empty search results do not establish absence of a surviving implementation."
+  },
+  "source_followup_2026_10_19": {
+    "status": "No implementation recovered; no new simulation or completion credit.",
+    "retrievals": [
+      {
+        "url": "https://www.inb.uni-luebeck.de/fileadmin/files/publications/inb-publications/htmls/FlPoUt01",
+        "final_url": "https://www.inb.uni-luebeck.de/fileadmin/files/publications/inb-publications/htmls/FlPoUt01",
+        "status": 200,
+        "file": "paper-mirror.html",
+        "bytes": 75638,
+        "sha256": "5d035bfcaba9461d0e37160e2a586a5ea2e689307cd936334dc5ce2e6ba361ee"
+      },
+      {
+        "url": "https://www.educ.ar/recursos/113328/antropocaos-emulando-en-ciencias-sociales",
+        "final_url": "https://www.educ.ar/recursos/113328/antropocaos-emulando-en-ciencias-sociales",
+        "status": 200,
+        "file": "unrelated-zip-description.html",
+        "bytes": 64943,
+        "sha256": "3af4966b3dc1ef79cf904c06c71fa83c8cf414a894e34da172eaca87c7062749"
+      }
+    ],
+    "mirror_finding": "The Luebeck paper mirror links to the same Mainz norm-sim_eng.html project page already audited; it provides no new ZIP link.",
+    "zip_name_collision": "The Educ.ar page describes sugarscape.zip as a compressed animation by Diego Diaz Cordova based on Epstein and Axtell chapter II. It does not identify the Flentge possession-norm implementation. Archive not downloaded.",
+    "github_searches": [
+      {
+        "command": "gh search code '\"Flentge\" \"sugarscape\"' --limit 100 --json repository,path,url",
+        "results": 0
+      },
+      {
+        "command": "gh search code '\"norm-sim/source.zip\"' --limit 100 --json repository,path,url",
+        "results": 0
+      },
+      {
+        "command": "gh search repos '\"Flentge\" sugarscape' --limit 100 --json fullName,url,description",
+        "results": 0
+      }
+    ],
+    "limits": "These specific searches and page inspections do not establish that no surviving implementation exists. Original source, landscape, and scheduling remain unresolved."
+  }
+}

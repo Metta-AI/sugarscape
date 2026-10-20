@@ -1,0 +1,126 @@
+{
+  "paper_url": "https://www.jasss.org/17/2/6.html",
+  "figure_url": "https://www.jasss.org/17/2/6/Fig8-sugar-map.png",
+  "figure_sha256": "dfd4d6f3f4bad83f030360b6f59e143bcb72379a035ad6122578f8c4f08e053a",
+  "capacity_matrix_sha256": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
+  "shape": [
+    50,
+    50
+  ],
+  "pixels_per_cell": [
+    6,
+    6
+  ],
+  "non_gray_label_pixels": 40,
+  "grayscale_levels_for_capacity_0_to_4": [
+    109,
+    82,
+    57,
+    34,
+    14
+  ],
+  "minimum_winning_palette_pixels_per_cell": 10,
+  "minimum_margin_over_next_palette_color": 9,
+  "capacity_cell_counts": {
+    "0": 431,
+    "1": 522,
+    "2": 765,
+    "3": 558,
+    "4": 224
+  },
+  "comparisons": [
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/models/Sample Models/Social Science/Sugarscape/sugar-map.txt",
+      "sha256": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
+      "orientations": [
+        {
+          "quarter_turns_ccw": 0,
+          "horizontal_reflection": false,
+          "different_cells": 0
+        },
+        {
+          "quarter_turns_ccw": 0,
+          "horizontal_reflection": true,
+          "different_cells": 2178
+        },
+        {
+          "quarter_turns_ccw": 1,
+          "horizontal_reflection": false,
+          "different_cells": 2177
+        },
+        {
+          "quarter_turns_ccw": 1,
+          "horizontal_reflection": true,
+          "different_cells": 122
+        },
+        {
+          "quarter_turns_ccw": 2,
+          "horizontal_reflection": false,
+          "different_cells": 1040
+        },
+        {
+          "quarter_turns_ccw": 2,
+          "horizontal_reflection": true,
+          "different_cells": 2180
+        },
+        {
+          "quarter_turns_ccw": 3,
+          "horizontal_reflection": false,
+          "different_cells": 2177
+        },
+        {
+          "quarter_turns_ccw": 3,
+          "horizontal_reflection": true,
+          "different_cells": 1030
+        }
+      ]
+    },
+    {
+      "path": "/Users/relh/Code/workspace/sugarscape-replication-tools/NetLogo 6.1.1/app/models/Sample Models/Social Science/Economics/Sugarscape/sugar-map.txt",
+      "sha256": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
+      "orientations": [
+        {
+          "quarter_turns_ccw": 0,
+          "horizontal_reflection": false,
+          "different_cells": 0
+        },
+        {
+          "quarter_turns_ccw": 0,
+          "horizontal_reflection": true,
+          "different_cells": 2178
+        },
+        {
+          "quarter_turns_ccw": 1,
+          "horizontal_reflection": false,
+          "different_cells": 2177
+        },
+        {
+          "quarter_turns_ccw": 1,
+          "horizontal_reflection": true,
+          "different_cells": 122
+        },
+        {
+          "quarter_turns_ccw": 2,
+          "horizontal_reflection": false,
+          "different_cells": 1040
+        },
+        {
+          "quarter_turns_ccw": 2,
+          "horizontal_reflection": true,
+          "different_cells": 2180
+        },
+        {
+          "quarter_turns_ccw": 3,
+          "horizontal_reflection": false,
+          "different_cells": 2177
+        },
+        {
+          "quarter_turns_ccw": 3,
+          "horizontal_reflection": true,
+          "different_cells": 1030
+        }
+      ]
+    }
+  ],
+  "scope": "All 2,500 Figure 8 cells agree exactly with each retained NetLogo capacity matrix, in native file row order. Figure labels overlay pixels; capacities use the dominant palette color within each 6x6 cell. This resolves the published 50x50 capacity layout, not the original author file identity, resampling convention, tax implementation, or simulation results."
+}
