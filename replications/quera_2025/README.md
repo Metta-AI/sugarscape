@@ -1,5 +1,7 @@
 # Quera-Bofarull et al. (2025): Automatic Differentiation of Agent-Based Models
 
+[Both native calibration trainers qualify](results/native-training-qualification-2026-10-20): pathwise and VarGrad each pass three full epochs, independent AdamW replay, and validation checkpoint checks. The missing prior and validation settings are explicitly reconstructed. A sequential 5,000-epoch-per-estimator campaign is admitted locally; full calibration remains incomplete.
+
 [Coupled calibration qualification](results/calibration-adapter-qualification-2026-10-20) identifies a random-realization mismatch in the original value/Jacobian adapter. A separate corrected adapter passes independent two-channel loss and six-gradient checks; prior seed-zero trajectories remain byte-identical. The reconstructed dependency environment and correction are explicit. Full optimization and posterior comparisons remain incomplete.
 
 **Status: incomplete.** Three calibration pilots and all 256 gradient-baseline trajectories pass independent state replay. The paper’s gradient and calibration results remain unreplicated.

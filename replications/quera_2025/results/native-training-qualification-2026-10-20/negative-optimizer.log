@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-training-qualification-001/audit_training.py", line 44, in <module>
+    assert np.allclose(expected, updated, rtol=2e-6, atol=2e-7), error
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.0100000000298483
