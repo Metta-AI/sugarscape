@@ -1,5 +1,7 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+[Update-order evidence confirms the release follows Figure 6](results/update-order-evidence-2026-10-20), while section 4.3 describes movement first. Complete native first-step states show the ambiguity can affect access to resources before death. Both interpretations remain explicit; no layer swap or new simulation was performed.
+
 [All nine initializer controls passed native audits](results/initializer-native-complete-2026-10-20), covering 5,216,793 post-step records and 589,824 initial cells. Independent R reproduces every landscape; both historical baseline trajectories repeat exactly. Final populations differ across the declared alternatives, which remain separately labelled. Broader method qualifications remain.
 
 [A second initializer attempt is queued as a bounded boot command](results/initializer-boot-dispatch-2026-10-20): four-hour queue hold, 60-minute server runtime limit, and a separate $10 reservation. The unchanged nine-variant payload is commit-pinned and hash-verified; no native result is claimed.
