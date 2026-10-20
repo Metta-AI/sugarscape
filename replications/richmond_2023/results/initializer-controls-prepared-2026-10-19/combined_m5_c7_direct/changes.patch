@@ -17,7 +17,15 @@
  #define PROBABILITY_OF_OCCUPATION 0.17f
  
  
-@@ -654,12 +654,23 @@
+@@ -559,6 +559,7 @@
+                                 }
+                                 // add hostpot after it has passed the distance checks
+                                 sugar_hotspots.push_back(hs);
++                                std::cerr << "HOTSPOT," << hs[0] << "," << hs[1] << "\n";
+                             }
+                         }
+ 
+@@ -654,12 +655,23 @@
                          unsigned int sum_pop_count = 0;
                          double sum_step_time = 0;
                          std::ofstream state_csv("state.csv");
@@ -41,7 +49,7 @@
                                  if (status != AGENT_STATUS_UNOCCUPIED) {
                                      state_csv << step << "," << instance.getVariable<int>("agent_id") << ","
                                          << instance.getVariable<unsigned int, 2>("pos", 0) << ","
-@@ -674,6 +685,8 @@
+@@ -674,6 +686,8 @@
                              if (!state_csv) std::abort();
                          };
                          record_state(-1);

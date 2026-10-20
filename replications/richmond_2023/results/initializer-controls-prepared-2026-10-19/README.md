@@ -5,6 +5,7 @@ All eight start from the native-qualified transfer, cardinal movement, nonpositi
 A ninth variant retains the released behavioral rules for baseline replay.
 No choice is selected for closer agreement with historical images or population counts.
 
+Each variant records all generated peak coordinates without additional random draws.
 Each variant also captures every initial cell, including unoccupied cells, in `initial-cells.csv`.
 The prior active-agent `state.csv` output remains present. Initial capture performs no random draws or model updates.
 Native execution must still verify both released and combined-baseline full-state hashes before interpreting changed variants.
@@ -31,7 +32,8 @@ For fixed metabolism, geometry/capacity comparisons must preserve identities, lo
 Validate full initial landscapes independently from observed peaks before running variant-aware transition audits.
 Retain all completed variants and failures; do not substitute a successful prefix for the whole factorial.
 
-The native transition auditor currently pins the old initial world. It must be extended with independently verified initial-state provenance before these variants can be audited.
+The transition auditor accepts `--initial-audit` from `audit_initializer.py`, binding the exact full initial-state hash.
+The caller must also verify native source/run provenance; an initializer report alone cannot establish that provenance.
 The preceding launcher also requires identical initial states, so it cannot launch these variants unchanged.
 No new allocation is reserved by this preparation.
 

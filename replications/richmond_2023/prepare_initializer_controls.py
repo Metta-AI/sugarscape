@@ -46,6 +46,15 @@ for name, parent, metabolism, capacity, wrapped in conditions:
         old = "float hs_dist = static_cast<float>(sqrt(pow(hs_x - static_cast<int>(x), 2.0f) + pow(hs_y - static_cast<int>(y), 2.0f)));"
         new = "int dx = std::abs(hs_x - static_cast<int>(x));\n                                    int dy = std::abs(hs_y - static_cast<int>(y));\n                                    dx = std::min(dx, static_cast<int>(gridWidth) - dx);\n                                    dy = std::min(dy, static_cast<int>(gridWidth) - dy);\n                                    float hs_dist = static_cast<float>(sqrt(pow(dx, 2.0f) + pow(dy, 2.0f)));"
         edits.append((old, new))
+    peak_anchor = "                                sugar_hotspots.push_back(hs);"
+    edits.append(
+        (
+            peak_anchor,
+            peak_anchor
+            + "\n"
+            + '                                std::cerr << "HOTSPOT," << hs[0] << "," << hs[1] << "\\n";',
+        )
+    )
     declaration = '                        std::ofstream state_csv("state.csv");'
     edits.extend(
         [

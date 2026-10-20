@@ -1,6 +1,14 @@
 --- a/src/main.cu
 +++ b/src/main.cu
-@@ -652,12 +652,23 @@
+@@ -557,6 +557,7 @@
+                                 }
+                                 // add hostpot after it has passed the distance checks
+                                 sugar_hotspots.push_back(hs);
++                                std::cerr << "HOTSPOT," << hs[0] << "," << hs[1] << "\n";
+                             }
+                         }
+ 
+@@ -652,12 +653,23 @@
                          unsigned int sum_pop_count = 0;
                          double sum_step_time = 0;
                          std::ofstream state_csv("state.csv");
@@ -24,7 +32,7 @@
                                  if (status != AGENT_STATUS_UNOCCUPIED) {
                                      state_csv << step << "," << instance.getVariable<int>("agent_id") << ","
                                          << instance.getVariable<unsigned int, 2>("pos", 0) << ","
-@@ -672,6 +683,8 @@
+@@ -672,6 +684,8 @@
                              if (!state_csv) std::abort();
                          };
                          record_state(-1);

@@ -10,6 +10,8 @@ import gzip
 import hashlib
 import itertools
 import json
+
+from audit_initializer import InitialAudit
 from pathlib import Path
 
 parser = argparse.ArgumentParser(description=__doc__)
@@ -29,11 +31,23 @@ parser.add_argument(
     ],
     default="released",
 )
-args = parser.parse_args()
-assert (
-    hashlib.sha256(args.initial.read_bytes()).hexdigest()
-    == "360ea5866567d826e971e5eef54f6d1ed881b6d421b2664d95310114c4c6611d"
+parser.add_argument(
+    "--initial-audit",
+    type=Path,
+    help="Verified complete-world audit for an explicitly changed initializer",
 )
+args = parser.parse_args()
+if args.initial_audit:
+    initial_audit = InitialAudit.model_validate_json(args.initial_audit.read_bytes())
+    assert (
+        hashlib.sha256(args.initial.read_bytes()).hexdigest()
+        == initial_audit.initial_sha256
+    )
+else:
+    assert (
+        hashlib.sha256(args.initial.read_bytes()).hexdigest()
+        == "360ea5866567d826e971e5eef54f6d1ed881b6d421b2664d95310114c4c6611d"
+    )
 if args.variant == "released":
     assert (
         hashlib.sha256(args.states.read_bytes()).hexdigest()
