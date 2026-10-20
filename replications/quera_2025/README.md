@@ -318,3 +318,31 @@ Fresh remote readback verifies all 15,006 native files from the second arm.
 Both arms now have complete optimizer, checkpoint-selection, and storage evidence.
 These checks validate the declared reconstructed optimization; they do not establish historical numerical agreement or whole-study completion.
 The predictive comparison and final method assessment remain separate requirements.
+
+
+## Complete predictive comparison
+
+[All 4,000 predictive trajectories](results/full-predictive-comparison-2026-10-20) completed: 1,000 each from the prior, pathwise posterior, VarGrad posterior, and true-parameter control.
+Python checks all 200,000 stored states and export invariants. Independent R verifies 1,712 summary values with maximum scaled difference 3.80e-16.
+Fresh remote archive readback verifies every native export and analysis member.
+
+| Distribution | Wealth predictive-mean RMSE | Alive-fraction predictive-mean RMSE | Observed wealth states within pointwise interval | Observed alive-fraction states within pointwise interval |
+| --- | ---: | ---: | ---: | ---: |
+| Prior | 9.237640 | 0.287542 | 50/50 | 50/50 |
+| Pathwise | 0.690148 | 0.018633 | 50/50 | 50/50 |
+| VarGrad | 11.953682 | 0.343806 | 1/50 | 12/50 |
+| True-parameter control | 0.534201 | 0.015816 | 50/50 | 50/50 |
+
+Root-mean-square error (RMSE) compares predictive means with the fixed calibration observation; it is not a held-out generalization estimate.
+These results use one optimization seed per estimator and the declared reconstructed prior and validation rules.
+They support better pathwise predictive agreement in this run, not a general method ranking or historical numerical identity.
+Broad prior intervals illustrate why interval inclusion alone does not establish calibration quality.
+
+The [predictive bands](results/full-predictive-comparison-2026-10-20/predictive.pdf), [joint parameter samples](results/full-predictive-comparison-2026-10-20/posterior-pairs.pdf), and [complete training histories](results/full-predictive-comparison-2026-10-20/training.pdf) were rendered and visually inspected.
+All 1,000 samples per distribution and 5,000 epochs per estimator are retained without smoothing.
+The first posterior plot clipped parameter labels; a separate spacing-only correction preserves the original render and all data hashes.
+
+The original predictive auditor rejected the additional optimization-amendment hash in the terminal record before inspecting data.
+Its amended copy verifies the exact original fields plus that hash; all statistical checks remain unchanged.
+The failure and both auditor versions are retained. Native predictions were not rerun.
+Whole-method synthesis remains separate from these completed predictive checks.
