@@ -1,0 +1,94 @@
+{
+  "method": "VarGrad",
+  "epochs": 5000,
+  "native_files_verified": 15006,
+  "storage_objects": [
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/manifest.json",
+      "bytes": 1946627,
+      "sha256": "68e510cfbc904baeaf768aea1c0e5465e4b26d69c16f8366c4b89eeea523e939",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 1.4058104589930736
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/metadata.tar.gz",
+      "bytes": 390805,
+      "sha256": "3d71f63d8e00b8056fd6c39ea2203f77ad3d7909ccf1c288bb492918f5a49913",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 1.1330546669778414
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-0001-0500.tar.gz",
+      "bytes": 78821277,
+      "sha256": "dba410162d07e3ac1b45fc563b7e8c2da5f1b33fe4b42ae3d06ac55b568a79b6",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 12.01162204099819
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-0501-1000.tar.gz",
+      "bytes": 79282337,
+      "sha256": "a0a408b755be600337fc2d8dc2fbe6b2b4dbc624da59a056d5b910f783c42fca",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 11.71430741698714
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-1001-1500.tar.gz",
+      "bytes": 79422667,
+      "sha256": "930941634c304042281994679f9d4f327054654395002712c07aa27df1b2eec0",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 10.101936499995645
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-1501-2000.tar.gz",
+      "bytes": 79336620,
+      "sha256": "6d9d9b6cd57826642a6bf1c8dd5dea68756e1fab8062efb54cf022ba16860806",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 8.583444291027263
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-2001-2500.tar.gz",
+      "bytes": 78944717,
+      "sha256": "3eb6bbabbbffa158cc3d1872d4c4c6b20b044932e07356f5f5134e5d43f3a8c6",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 9.12705733301118
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-2501-3000.tar.gz",
+      "bytes": 78703817,
+      "sha256": "487f6dbb92add02eacc0ff13cad51833c1ca4016f5e4d2e42ac760312335c72b",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 10.495438207988627
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-3001-3500.tar.gz",
+      "bytes": 78534289,
+      "sha256": "0a07a523e67476efda6df8a3ba86339e3c1828e92b37c9ca8840b6d6832cc2e8",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 9.979106500046328
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-3501-4000.tar.gz",
+      "bytes": 78343429,
+      "sha256": "5f05757467223c3a404279622788f144ecef6894afdd55bf711f309ed9594c57",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 10.450065583048854
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-4001-4500.tar.gz",
+      "bytes": 78210906,
+      "sha256": "1ae85fabf5ad96cc3a807914672b1e6f72ad9f8ceeec5b0ec694261207e8cfdd",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 12.019958209013566
+    },
+    {
+      "object": "relh-sugarscape-evidence-20261017/quera-full-vargrad-training-20261020-001/epochs-4501-5000.tar.gz",
+      "bytes": 77625331,
+      "sha256": "9575c61cb7fba19fe4293cbad6079e1524a5c19ceb31f978f3795550301b86c9",
+      "fresh_readback_exact": true,
+      "elapsed_seconds": 11.095945790992118
+    }
+  ],
+  "all_fresh_remote_members_match_native_audit": true,
+  "manifest_sha256": "68e510cfbc904baeaf768aea1c0e5465e4b26d69c16f8366c4b89eeea523e939",
+  "scope": "Full VarGrad training archive roundtrip only; predictive comparison remains separate."
+}

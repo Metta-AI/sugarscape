@@ -304,3 +304,17 @@ The 36,720 trace files cover exactly the 9,180 continuation cases already checke
 The final audit rehashes the complete downloaded set and checks exact case coverage.
 Earlier interrupted downloads remain preserved; transition audits confirm previously verified files retained their hashes, sizes, and modification times.
 This closes the remote evidence verification gap without rerunning simulations or adding study completion credit.
+
+
+## Full VarGrad calibration
+
+[The second complete arm](results/vargrad-full-calibration-2026-10-20) finished 5,000 epochs in 2,295.48 seconds with unchanged frozen sources and seeds.
+All 5,000 native Float32 norms reproduce exactly; independent replay verifies 95,570,000 optimizer components and 25,000 validation draws.
+The maximum optimizer difference is 2.987e-8 under the unchanged acceptance tolerances.
+The fixed validation rule selects epoch 105, with loss 27.820718920231442.
+Both arms started from identical parameters; their first three epochs also preserve their respective qualification outputs exactly.
+
+Fresh remote readback verifies all 15,006 native files from the second arm.
+Both arms now have complete optimizer, checkpoint-selection, and storage evidence.
+These checks validate the declared reconstructed optimization; they do not establish historical numerical agreement or whole-study completion.
+The predictive comparison and final method assessment remain separate requirements.
