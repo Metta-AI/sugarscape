@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[Thirteen paired cohorts](results/thirteen-pair-parameter-comparison-2026-10-20) retain both parameter interpretations against identical targets. Independent R verifies 50,388 curve-pair classifications and 182 endpoints. There are 135 endpoint overlaps under both settings, eight only under paper settings, two only under released settings, eighteen under neither, and nineteen unresolved. Earlier results remain exact; no parameter selection or new simulation coverage is implied.
+
 [The complete paper-table SARSA / Rule M cohort](results/paper-sarsa-rulem-complete-cohort-2026-10-20) adds 50 audited runs and 1,000,050 observations. Coverage reaches 1,450 inputs and 29,001,450 observations; 150 paper-table inputs remain. Independent R and fresh storage checks pass. All fourteen endpoint mean ranges overlap readable paper targets; this does not establish equivalence.
 
 [The twelve-pair parameter comparison](results/twelve-pair-parameter-comparison-2026-10-20) retains both frozen interpretations against identical paper targets. Of 168 endpoints, 121 overlap under both settings, eight only under paper settings, two only under released settings, eighteen under neither, and nineteen remain unresolved. Independent R verifies every category; all earlier ten-pair results are preserved. These counts do not select historical parameters or add simulation coverage.
