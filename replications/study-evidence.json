@@ -1,9 +1,9 @@
 {
-  "as_of": "2026-10-20T00:44:27.034407+00:00",
+  "as_of": "2026-10-20T00:49:26.484382+00:00",
   "minimum_completed_papers": 10,
-  "completed_studies": 6,
+  "completed_studies": 7,
   "wholly_positive_papers": 1,
-  "interpretation": "Six completed studies under the user\u2019s method-based criterion: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural, Lima qualified author-code architecture feasibility, Carrella qualified method reproduction, and Thaler qualified author-code simulation/benchmark method reproduction. Numerical agreement is separate. Carrella retains 37 primary discrepancies and historical random-stream/runtime qualifications; no validated-negative or universal stochastic-equivalence claim. Thaler retains hardware, scheduling and time83-versus-caption50 qualifications. Other studies require individual method reassessment.",
+  "interpretation": "Seven completed studies under the user\u2019s method-based criterion: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural, Lima qualified author-code feasibility, Carrella qualified method reproduction, Thaler qualified simulation/benchmark reproduction, and Richmond qualified complete Sugarscape author-code reproduction with validated implementation discrepancies. Numerical agreement is separate. Richmond retains image provenance, hardware and conflicting prose/diagram qualifications; corrective single-condition controls are not substituted full-grid results. No independent-engine equivalence or wholly-positive verdict is inferred.",
   "studies": [
     {
       "study": "mcculloch_2022",
@@ -213,14 +213,14 @@
     {
       "study": "richmond_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/18",
-      "status": "partial",
-      "checked_commit": "36e5d0b092167be52749880c872ac46a71b54ca9",
+      "status": "completed-method-qualified",
+      "checked_commit": "e57d200c0ead5c6066b2d9c98045e3ada5f3f726",
       "readme": "replications/richmond_2023/README.md",
-      "readme_sha256": "5e54e766ba844bb67c599da8b055da22299f85990e3536d50f1173e9706391ba",
-      "json_evidence_files": 170,
+      "readme_sha256": "e497e22d7f877250eafe0e821bf5bbe5b4980bc249842a71ffeca653a5621771",
+      "json_evidence_files": 173,
       "gzip_json_evidence_files": 14,
-      "remaining_scope": "Update-order recheck: Figure6 matches released metabolism-first layers; prose section4.3 instead describes movement-first. First-step native death identities verify20-22deaths atmetabolism5,2-3with potential resource neighbors, not guaranteed rescues. No unambiguous code-only order fix or new execution. Nine predeclared native initializer alternatives complete:5216793 post-step records,589824 initial cells, all18 initializer/transition audits and independent R landscapes pass. Exact released/combined-reset baseline hashes repeat. All8 combined alternatives have zero unresolved,diagonal,negative-wealth survivor observations;3-4rounds. Final active4158-5221 differs across interpretations; none selected for fit.52,777,548-byte raw archive and82members verified; H100 verified stopped/diskintact.48reserved/52unreserved continuation budget pending actual reconciliation. Full original84-condition grid already audited. Update order,random/conflict selection fidelity,contradictory prose parameters,and corrected full-grid claims remain qualified; no whole-study completion.",
-      "checked_at": "2026-10-20T00:44:27.034407+00:00"
+      "remaining_scope": "Completed qualified author-code replication of entire declared Sugarscape case study (section4.3,Figures6/11). Eleven-requirement audit: full84 original conditions,6600 population records,162resolution rows,132aggregate means; fresh figure/image analyses identical to prior. Numerical benchmark matches; validated source defects and contradictory specifications retained. Exact historical images,absolute V100 timings,independent-engine/conflict-winner replay,and corrected full-grid alternatives are not claimed. All9 initializer controls audited; original replay never replaced. See method-verdict-2026-10-20.",
+      "checked_at": "2026-10-20T00:49:26.484382+00:00"
     },
     {
       "study": "lima_2024",

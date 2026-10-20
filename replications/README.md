@@ -1,6 +1,6 @@
 # Sugarscape replication program
 
-Richmond’s nine initializer controls now pass full native state audits and independent R landscape checks: 5,216,793 post-step records and 589,824 initial cells. Both reference trajectories repeat exactly. All declared alternatives remain documented; broader method qualifications prevent completed-study credit. The task-owned H100 is verified stopped.
+Richmond’s final requirement audit completes its qualified author-code replication. All 84 original conditions and figure analyses are verified. Numerical results reproduce; source defects, ambiguous specifications, historical images, and hardware limitations remain explicit. Corrective controls do not replace the full-grid replay.
 
 Owner: [Metta-AI/sugarscape](https://github.com/Metta-AI/sugarscape).
 Engine upstream: [nkremerh/sugarscape](https://github.com/nkremerh/sugarscape), initially pinned to
@@ -13,7 +13,7 @@ Foundational book chapters, multiple figures from one paper, and repeated versio
 Distinct research papers published in conference proceedings do count.
 The table distinguishes candidates, unfinished studies, and completed replications.
 
-Current completion count: **six studies**, including Carrella’s and Thaler’s qualified method reproductions.
+Current completion count: **seven studies**, including Richmond’s qualified author-code replication with validated implementation discrepancies.
 The dated progress entries below retain earlier criteria and counts; `study-evidence.json` is the current evidence ledger.
 
 The [new $100 continuation budget](budgets/continuation-2026-10-19/README.md) reserves $28 across four bounded tasks. Need for Greed now has 757 audited original inputs; Richmond’s five declared method controls passed 3,964,000 post-step state checks; the completed first batch is retained. A separately reserved counter-reset batch passed all four native audits and resolves conflicts within each of its 100 observed steps. Neither adds a completed study.
@@ -187,7 +187,7 @@ The following requirements remain separate from successful execution or source-o
 | Quera | Exact gradient-figure protocol, source-law discrepancy, prior/loss/validation configuration and full 5,000-epoch calibration |
 | Thaler lock-free | Table 9 retry discrepancy, historical performance interpretation, and remaining image resource/label limitations |
 | Thaler properties | Original model-suite outcome, faithful Weaver migration/pollution comparison, qualitative appendix outcomes, and remaining source/configuration discrepancies |
-| Richmond | Historical illustration/source fidelity, hardware-qualified timing comparisons, resolution histogram interpretation, and source/prose discrepancies |
+| Richmond | Completed qualified author-code reproduction; historical illustrations, hardware timings, and source/prose discrepancies remain explicit. No corrected full-grid or independent-engine claim. |
 | Lima | Completed qualified author-code feasibility reproduction; all six original protocol requirements pass. Exact historical binaries and independent-engine replication are not claimed. |
 | Kiran, Oremland, Pan, Flentge | Resolve original-model specification gaps and implement their full declared experiments |
 
