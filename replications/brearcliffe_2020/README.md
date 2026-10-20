@@ -1,5 +1,7 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[The paper-table SARSA / EC cohort](results/paper-sarsa-ec-complete-cohort-2026-10-20) passes native, R, and fresh storage checks. Coverage reaches 1,500 inputs and 30,001,500 observations; one hundred inputs remain. [All paper-table EC claim contrasts](results/paper-ec-claims-2026-10-20) also pass independent verification: fourteen stated endpoint directions hold under both parameter interpretations. No whole-study credit is added.
+
 [Paper-table Rule M contrasts](results/paper-rule-m-claims-2026-10-20) complete all six matchups and eighteen wealth, vision, and metabolism comparisons. Independent R verifies all 1,800 raw endpoints and 234 statistics. Every endpoint direction and positive pointwise interval agrees across both parameter interpretations; early EC wealth advantages remain explicit. No new simulation coverage or whole-study credit is added.
 
 [Thirteen paired cohorts](results/thirteen-pair-parameter-comparison-2026-10-20) retain both parameter interpretations against identical targets. Independent R verifies 50,388 curve-pair classifications and 182 endpoints. There are 135 endpoint overlaps under both settings, eight only under paper settings, two only under released settings, eighteen under neither, and nineteen unresolved. Earlier results remain exact; no parameter selection or new simulation coverage is implied.
