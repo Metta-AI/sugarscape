@@ -262,3 +262,8 @@ This validates optimizer execution, not convergence, global optimality, or Figur
 python run_optimizer.py /path/to/qualified-runtime-manifest.json /path/to/protocol.json /path/to/new-run
 python audit_optimizer.py /path/to/new-run /path/to/new-audit.json
 ```
+
+[The frozen transfer campaign](results/frontier-transfer-protocol-2026-10-20) now covers all six published grid widths and three optimizer seeds.
+It plans 432,000 native evaluations, followed by full-model evaluation of every final frontier on 200 held-out seeds.
+The budget, reduction conventions, comparisons, and execution bounds were fixed before inspecting results.
+The campaign is running; no additional completed-study credit is assigned.
