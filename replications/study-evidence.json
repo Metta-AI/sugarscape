@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T02:08:58.652883+00:00",
+  "as_of": "2026-10-20T02:12:05.923184+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -294,15 +294,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "a6c74346fb876bbe48116c11a90d422ecd6f7372",
+      "checked_commit": "e28824629562448fcd3e4bb4e9f35a221f60d871",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "310a4ad4af06b7d36ece2b45786f60b1b8dc601f994bbf0cc3fcf38e2f16fe71",
-      "json_evidence_files": 509,
-      "gzip_json_evidence_files": 101,
-      "checked_at": "2026-10-20T01:53:59.321714+00:00",
+      "readme_sha256": "6d42d66efb8609a37d37e5a8b587e73820cd37890002975baf27d5bd3d0b625a",
+      "json_evidence_files": 515,
+      "gzip_json_evidence_files": 103,
+      "checked_at": "2026-10-20T02:12:05.923184+00:00",
       "evidence_scan_scope": "All tracked JSON and compressed JSON under replications/need_for_greed_2024",
-      "remaining_scope": "1,030 unique inputs and 4,130,696 observations audited: 400 baseline and 630 sweep; 9,470 sweep inputs remain. Fifth unassigned checkpoint adds 25 disjoint original inputs and 120,217 observations. The first complete Table IV row, selfishness 0.36\u20130.40, remains exact: 6 extinct, 0 worse, 494 better across 500 original inputs (1.2%, 0%, 98.8%). Independent R counts agree. Tables I\u2013III remain unchanged. Original row producer exited zero and its node is stopped; unassigned producer continues under its original bound. Remaining full sweep and figure metric/aggregation discrepancies prevent study completion; no percentages inferred for incomplete rows."
+      "remaining_scope": "1,055 unique inputs and 4,255,721 observations audited: 400 baseline and 655 sweep; 9,445 sweep inputs remain. Sixth unassigned checkpoint adds 25 disjoint original inputs and 125,025 observations. The complete Table IV row, selfishness 0.36\u20130.40, remains exact: 6 extinct, 0 worse, 494 better across 500 original inputs (1.2%, 0%, 98.8%). Independent R counts agree. Tables I\u2013III remain unchanged. Completed row producer exited zero and its node is stopped; unassigned producer continues under its original bound. Full sweep and figure metric/aggregation discrepancies remain; no percentages inferred for incomplete rows or whole-study completion credit."
     }
   ],
   "study_prs": 22,
