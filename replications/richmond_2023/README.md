@@ -1,5 +1,7 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+[The later upstream source check](results/upstream-recheck-2026-10-20) confirms the publication release is the pinned `v1`. The inspected newer revision changes only the engine dependency; model source is byte-identical. Its telemetry-related timing qualification is preserved without changing the experiment.
+
 [The native initializer controls are queued](results/initializer-native-queued-2026-10-20), with a $10 reservation and bounded startup/execution/export. No new simulation has started. Both historical baseline trajectories must match before interpreting the eight initializer combinations.
 
 [Initialization controls are prepared](results/initializer-controls-prepared-2026-10-19): a released baseline plus all eight combinations of metabolism maximum, capacity cap, and distance geometry. Repeated preparation and patch round trips pass. Full initial-cell capture is included; native execution and variant-aware audits remain pending.
