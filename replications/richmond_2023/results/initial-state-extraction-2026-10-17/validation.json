@@ -1,0 +1,18 @@
+{
+  "platform": "macOS-15.5-arm64-arm-64bit",
+  "compiler": "g++-16 (Homebrew GCC 16.2.0) 16.2.0",
+  "compiler_flags": [
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra"
+  ],
+  "binary_sha256": "df0aeb9b7a0fa826d7beb2b5248234d3b444d7d95b6baa5421b2149a874d7810",
+  "states_compressed_sha256": "96aa2cf890a2a926ea7c865b7974c0ce2caacf520c5eecb4ad569395c8ebab9d",
+  "states_uncompressed_sha256": "6277c5367ea36e47234b7d9873513fa8afffa08348a4d3e3be68cdf0295f8ed1",
+  "state_byte_identical_before_and_after_hotspot_logging": true,
+  "build_warnings": "",
+  "preparation_failure": "First extractor boundary included the following Experiment struct; assertion failed before generating output. Boundary narrowed to the original distance function. Failed tool output preserved in session history.",
+  "interpretation": "Real extracted host initialization and independent whole-landscape calculation; no mocked engine, no GPU simulation, no new independent seeds. Pending parity against the original engine initial-state capture.",
+  "raw_evidence_root": "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initial-state-001"
+}

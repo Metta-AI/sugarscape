@@ -1,0 +1,12 @@
+[
+  "autor",
+  "--json",
+  "run",
+  "relh-sugarscape-richmond-h100-20261017-v1",
+  "--timeout",
+  "30",
+  "--",
+  "python3",
+  "-c",
+  "from pathlib import Path\nimport hashlib,json,tarfile\nsource=Path('/root/sugarscape/richmond-full-native-001/run')\nroot=Path('/root/sugarscape/richmond-full-scaling-prefix47-001');root.mkdir()\nfiles={}\nfor name in ['performance_scaling.csv','performance_scalingperStep.csv']:\n raw=(source/name).read_bytes(); (root/name).write_bytes(raw)\n files[name]={'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'newline_terminated':raw.endswith(b'\\n')}\n(root/'snapshot.json').write_text(json.dumps({'source':str(source),'command':'cmd-8h5jk','files':files,'scope':'Immutable live files; files read sequentially. Validate cross-file complete condition alignment before use.'},indent=2)+'\\n')\narchive=root.with_suffix('.tar.gz')\nwith tarfile.open(archive,'w:gz') as tar:tar.add(root,arcname=root.name)\nprint(json.dumps({'archive':str(archive),'bytes':archive.stat().st_size,'sha256':hashlib.sha256(archive.read_bytes()).hexdigest()}))\n"
+]

@@ -1,0 +1,122 @@
+{
+  "revisions": [
+    {
+      "label": "old",
+      "revision": "4b62c71e266836d0b8c38ea7d1d85e3784af6d21",
+      "verified_source_expressions": [
+        {
+          "path": "src/flamegpu/runtime/utility/RandomManager.cu",
+          "lines": [
+            114
+          ],
+          "expression": "curand_init(seed, offset + id, 0, &d_random_state[offset + id]);"
+        },
+        {
+          "path": "src/flamegpu/gpu/CUDASimulation.cu",
+          "lines": [
+            1435
+          ],
+          "expression": "sm.second->singletons->rng.reseed(getSimulationConfig().random_seed * i * 23);"
+        },
+        {
+          "path": "src/flamegpu/gpu/CUDASimulation.cu",
+          "lines": [
+            617,
+            866
+          ],
+          "expression": "t_rng = d_rng + totalThreads;"
+        },
+        {
+          "path": "include/flamegpu/runtime/utility/AgentRandom.cuh",
+          "lines": [
+            69
+          ],
+          "expression": "return curand_uniform(d_random_state);"
+        },
+        {
+          "path": "include/flamegpu/runtime/DeviceAPI.cuh",
+          "lines": [
+            134,
+            357
+          ],
+          "expression": "return blockIdx.x * blockDim.x + threadIdx.x;"
+        }
+      ]
+    },
+    {
+      "label": "release",
+      "revision": "19136c18629af0a52ac4355ff705596b22bedac1",
+      "verified_source_expressions": [
+        {
+          "path": "src/flamegpu/simulation/detail/RandomManager.cu",
+          "lines": [
+            112
+          ],
+          "expression": "curand_init(seed, offset + id, 0, &d_random_state[offset + id]);"
+        },
+        {
+          "path": "src/flamegpu/simulation/CUDASimulation.cu",
+          "lines": [
+            1513
+          ],
+          "expression": "sm.second->singletons->rng.reseed(getSimulationConfig().random_seed * i * 23);"
+        },
+        {
+          "path": "src/flamegpu/simulation/CUDASimulation.cu",
+          "lines": [
+            697,
+            919
+          ],
+          "expression": "t_rng = d_rng + totalThreads;"
+        },
+        {
+          "path": "include/flamegpu/runtime/random/AgentRandom.cuh",
+          "lines": [
+            72
+          ],
+          "expression": "return curand_uniform(d_random_state);"
+        },
+        {
+          "path": "include/flamegpu/runtime/DeviceAPI.cuh",
+          "lines": [
+            130,
+            337
+          ],
+          "expression": "return blockIdx.x * blockDim.x + threadIdx.x;"
+        }
+      ]
+    }
+  ],
+  "interpretation": "Both revisions initialize sequence=offset+thread, offset=0, use per-thread state pointers, and call curand_uniform for float draws. Submodel seed multiplication gives zero for seed zero in both. These source correspondences do not establish equal execution ordering, CUDA-library behavior, historical compilation, or exact image reproduction.",
+  "files_sha256": {
+    "illustration-main.cu": "0c98741d228022981f201dc4090c31e2af5276f2dcde9e732c59d781e307cbb9",
+    "old/LICENSE.md": "12aa3981b3573288954b504e3302dcd39c5d259a0264d639c0ae5bb2a5726581",
+    "old/include/flamegpu/model/AgentFunctionData.cuh": "d2ee4d99f60b90effd322a3336fe3dd0df98d6e1e933b0b15afca340af589742",
+    "old/include/flamegpu/runtime/AgentFunction.cuh": "653dea92a01a1bf58c1a753e256ec7e7e05f54e581089968028bf863ce92f136",
+    "old/include/flamegpu/runtime/AgentFunctionCondition.cuh": "498c81a36fe810261176ddf66b15d5def666928bd4d3c2c84d967d59bebdb26e",
+    "old/include/flamegpu/runtime/AgentFunctionCondition_shim.cuh": "f39f54b17d42a5d68ee7e4449afb01667056a0f7795eb22d98add1e6b9aa1a57",
+    "old/include/flamegpu/runtime/AgentFunction_shim.cuh": "bbf97c1f1121c6bd2160fdeccd221e857b3889bfb4b6d450860c114cf6b9e247",
+    "old/include/flamegpu/runtime/DeviceAPI.cuh": "275510f1a2fdce6267ea3fce31399219bd8f7674433d285989489ae36e246c73",
+    "old/include/flamegpu/runtime/utility/AgentRandom.cuh": "bbc0fdb05a2d38f18c53ace01d23455efe3229ff10aaeda978c4d372a0999e34",
+    "old/include/flamegpu/runtime/utility/HostRandom.cuh": "69f6ffddfcbd39c852c22dfedeb877b103647da37fc70b5297734874fc5e615b",
+    "old/include/flamegpu/runtime/utility/RandomManager.cuh": "3dcb6fffcb8521655265db8a8a7a10c140fdd3f52b3766de68a971cb2f1e7ef4",
+    "old/src/flamegpu/gpu/CUDASimulation.cu": "d824eed7ca2f65fec6d8a267fb9caf05a103699390e9a2cc0d45f4a4ecc733b2",
+    "old/src/flamegpu/runtime/utility/HostRandom.cu": "b776925c7b50a5f0df613ab3141208bdaa19974d25a4c5dda9fee296d8fd5448",
+    "old/src/flamegpu/runtime/utility/RandomManager.cu": "a7e7e56bfc4bd499ef3792c80035bd964c65f793eb2b135417436deadaab39bb",
+    "old-tree.json": "653d060f860cf552e7a4133d08e5f25ebe7d32507386493ac7f102e2fe9db91b",
+    "release/LICENSE.md": "12aa3981b3573288954b504e3302dcd39c5d259a0264d639c0ae5bb2a5726581",
+    "release/include/flamegpu/model/AgentFunctionData.cuh": "a2cc5e010450fe6dd90076d9fb49544364d311b723a55e56e40f4301a8f11fc2",
+    "release/include/flamegpu/runtime/AgentFunction.cuh": "8c25e5e81a6caa172e49682fa8bd8601f9de18523f1249aa2fd4dc4a909f057e",
+    "release/include/flamegpu/runtime/AgentFunctionCondition.cuh": "146077ae0636af4fd894eedab7e6920e90bc862146f2112e59a3425b13f081af",
+    "release/include/flamegpu/runtime/AgentFunctionCondition_shim.cuh": "75a728d72363f3d1794b1925abca9915670ab86d4d58a2510e6b26827a1b4abe",
+    "release/include/flamegpu/runtime/AgentFunction_shim.cuh": "d46bf3d5007d645e63684f8e0ec3eb72ecf4035869f7b1091e125a62c60a4a9b",
+    "release/include/flamegpu/runtime/DeviceAPI.cuh": "36f827adb84c56e2b493904f55e6cdc6e9a0771a71658f680eb491da4df3c921",
+    "release/include/flamegpu/runtime/random/AgentRandom.cuh": "500c48508b8fc016491e54ce6e499c02b55899e5ad240d4fa3e673b2889337fd",
+    "release/include/flamegpu/runtime/random/HostRandom.cuh": "7b09f585c378e2c29e82e3cd821763e4c4fdd106dc29880dc1cbfc17b3c9c431",
+    "release/include/flamegpu/simulation/detail/RandomManager.cuh": "909c858153903d078d1792f22259f69836798387e45fe4f15f76a3acf809baf6",
+    "release/src/flamegpu/runtime/random/HostRandom.cu": "430ebc8f02fb4f157a2726e994b21930d8e782ea25be4171349aeded6cc9fba9",
+    "release/src/flamegpu/simulation/CUDASimulation.cu": "59e0ae74af67378d7e19e42f41bef5e51ba18a4e6f5618799171df11aa9d1fa4",
+    "release/src/flamegpu/simulation/detail/RandomManager.cu": "d52fc0091e17215b4a05d6f97468dd4968ee751b357561ebc9e84e4b6cfb3cb1",
+    "release-tree.json": "b8f51e78485d66cb3e09c15cfa269b0ab18a3e33d8a7ec2befb19aba08740e79"
+  }
+}

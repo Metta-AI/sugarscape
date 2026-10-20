@@ -1,0 +1,60 @@
+--- a/src/main.cu
++++ b/src/main.cu
+@@ -14,14 +14,14 @@
+ 
+ // Growback variables
+ #define ENV_SUGAR_GROWBACK_RATE 1
+-#define ENV_SUGAR_MAX_CAPACITY 4
++#define ENV_SUGAR_MAX_CAPACITY 7
+ #define MIN_HOTSPOT_DISTANCE 20
+ 
+ #define MIN_INIT_AGENT_SUAGR_WEALTH 5
+ #define MAX_INIT_AGENT_SUAGR_WEALTH 25
+ 
+ #define MIN_INIT_METABOLISM 1
+-#define MAX_INIT_METABOLISM 4
++#define MAX_INIT_METABOLISM 5
+ #define PROBABILITY_OF_OCCUPATION 0.17f
+ 
+ 
+@@ -559,6 +559,7 @@
+                                 }
+                                 // add hostpot after it has passed the distance checks
+                                 sugar_hotspots.push_back(hs);
++                                std::cerr << "HOTSPOT," << hs[0] << "," << hs[1] << "\n";
+                             }
+                         }
+ 
+@@ -654,12 +655,23 @@
+                         unsigned int sum_pop_count = 0;
+                         double sum_step_time = 0;
+                         std::ofstream state_csv("state.csv");
++                        std::ofstream initial_csv("initial-cells.csv");
++                        initial_csv << "step,id,x,y,status,sugar,metabolism,cell_sugar,cell_capacity\n";
+                         state_csv << "step,id,x,y,status,sugar,metabolism,cell_sugar,cell_capacity\n";
+                         auto record_state = [&](int step) {
+                             flamegpu::AgentVector observed(model.Agent("agent"));
+                             cudaSimulation.getPopulationData(observed);
+                             for (auto instance : observed) {
+                                 const int status = instance.getVariable<int>("status");
++                                if (step == -1) {
++                                    initial_csv << step << "," << instance.getVariable<int>("agent_id") << ","
++                                        << instance.getVariable<unsigned int, 2>("pos", 0) << ","
++                                        << instance.getVariable<unsigned int, 2>("pos", 1) << ","
++                                        << status << "," << instance.getVariable<int>("sugar_level") << ","
++                                        << instance.getVariable<int>("metabolism") << ","
++                                        << instance.getVariable<int>("env_sugar_level") << ","
++                                        << instance.getVariable<int>("env_max_sugar_level") << "\n";
++                                }
+                                 if (status != AGENT_STATUS_UNOCCUPIED) {
+                                     state_csv << step << "," << instance.getVariable<int>("agent_id") << ","
+                                         << instance.getVariable<unsigned int, 2>("pos", 0) << ","
+@@ -674,6 +686,8 @@
+                             if (!state_csv) std::abort();
+                         };
+                         record_state(-1);
++                        initial_csv.flush();
++                        if (!initial_csv) std::abort();
+                         for (unsigned int i = 0; i < experiment.steps; i++) {
+                             occupied = 0;  // reset the counter used in the exit condition
+                             exit_condition_iterations = 0;

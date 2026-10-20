@@ -1,0 +1,11 @@
+--- a/src/main.cu
++++ b/src/main.cu
+@@ -63,7 +63,7 @@
+         sugar_level -= FLAMEGPU->getVariable<int>("metabolism");
+ 
+         // check if agent dies
+-        if (sugar_level == 0) {
++        if (sugar_level <= 0) {
+             status = AGENT_STATUS_UNOCCUPIED;
+             FLAMEGPU->setVariable<int>("agent_id", -1);
+             env_sugar_level = 0;

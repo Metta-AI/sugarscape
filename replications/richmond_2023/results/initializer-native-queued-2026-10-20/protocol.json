@@ -1,0 +1,118 @@
+{
+  "source_revision": "290702073492677f2fc9164419e9d5900d119e02",
+  "engine_revision": "19136c18629af0a52ac4355ff705596b22bedac1",
+  "condition": {
+    "seed": 0,
+    "width": 256,
+    "occupation": 0.17,
+    "steps": 100
+  },
+  "variants": [
+    {
+      "variant": "released",
+      "parent": "released",
+      "metabolism_maximum": 4,
+      "capacity_maximum": 4,
+      "wrapped_cell_distances": false,
+      "source_sha256": "a58c060845520b276ca07afaf752dbdf4393d127406311543cc6eaad3bb76a9e",
+      "patch_sha256": "70f679fb904bce99d1e296872459ad425bea3cac7b358e45d36a763d7e441382",
+      "reverse_exact": true
+    },
+    {
+      "variant": "combined_m4_c4_direct",
+      "parent": "combined_with_counter_reset",
+      "metabolism_maximum": 4,
+      "capacity_maximum": 4,
+      "wrapped_cell_distances": false,
+      "source_sha256": "a0e8885d0bd5597306a039ea092c7408831814c6ef0cc7231abef45d8c380b18",
+      "patch_sha256": "f5cc7f12e41d16f9ae607317cdc82506541fc774c67cc18cf91d95a0d8b9f100",
+      "reverse_exact": true
+    },
+    {
+      "variant": "combined_m4_c4_wrapped",
+      "parent": "combined_with_counter_reset",
+      "metabolism_maximum": 4,
+      "capacity_maximum": 4,
+      "wrapped_cell_distances": true,
+      "source_sha256": "159eab59f6394340b1109932666cdb3f7ad6304b9d11e3a21f7dc5e2cd192b0c",
+      "patch_sha256": "16988e53799d87017f00a5a5e54189ada34a9484fc8d57ea1e376c4f81948a4d",
+      "reverse_exact": true
+    },
+    {
+      "variant": "combined_m4_c7_direct",
+      "parent": "combined_with_counter_reset",
+      "metabolism_maximum": 4,
+      "capacity_maximum": 7,
+      "wrapped_cell_distances": false,
+      "source_sha256": "250024406dcd991d1a0cb7e07d7b4e09ffe23101821ee7d582a28afab689bfb3",
+      "patch_sha256": "e5deae323d55a3283ca8b8c3bb01704823da7d4777b42239f1d3538da835d7c1",
+      "reverse_exact": true
+    },
+    {
+      "variant": "combined_m4_c7_wrapped",
+      "parent": "combined_with_counter_reset",
+      "metabolism_maximum": 4,
+      "capacity_maximum": 7,
+      "wrapped_cell_distances": true,
+      "source_sha256": "e812718d0533e5888ace4c8fedb0878b3b7ee31ece2af7653132373082002043",
+      "patch_sha256": "87a0eb7f4d7a2bc56ebc3bec71802a9cb174020e8a3adb6531171853dd14c7d8",
+      "reverse_exact": true
+    },
+    {
+      "variant": "combined_m5_c4_direct",
+      "parent": "combined_with_counter_reset",
+      "metabolism_maximum": 5,
+      "capacity_maximum": 4,
+      "wrapped_cell_distances": false,
+      "source_sha256": "fadf227f343733141b52aac748e17d2592992068829e6531fe4476653c0d8ef5",
+      "patch_sha256": "59988b6a59a36199c43908c3a325e798bf11f6ad12cdc5b0f189427c1958ba57",
+      "reverse_exact": true
+    },
+    {
+      "variant": "combined_m5_c4_wrapped",
+      "parent": "combined_with_counter_reset",
+      "metabolism_maximum": 5,
+      "capacity_maximum": 4,
+      "wrapped_cell_distances": true,
+      "source_sha256": "db927422cafa2ccface64255fb27ce21b96968be1886588a99a9d645577ffe0d",
+      "patch_sha256": "eeed5e7f72755723812790583b0ad7e567502b8a12094d4866b82ffc66ecbf7e",
+      "reverse_exact": true
+    },
+    {
+      "variant": "combined_m5_c7_direct",
+      "parent": "combined_with_counter_reset",
+      "metabolism_maximum": 5,
+      "capacity_maximum": 7,
+      "wrapped_cell_distances": false,
+      "source_sha256": "a3957eeb9e4f97de62bdd193ac7ba2c9b9adf690f7e3a8cab8fc34dde5608ecc",
+      "patch_sha256": "642d2a5a1a221f2d5b690df55da1842445a5abb5571b2e666f9dbd9431b42e52",
+      "reverse_exact": true
+    },
+    {
+      "variant": "combined_m5_c7_wrapped",
+      "parent": "combined_with_counter_reset",
+      "metabolism_maximum": 5,
+      "capacity_maximum": 7,
+      "wrapped_cell_distances": true,
+      "source_sha256": "137f755a50ac7e10387c454821cd470d1f48e1fb0b5e019b3c49e45be442eb14",
+      "patch_sha256": "1c013022e83a9e0302fa6734e89f32f8b291ace3d1d5adcfe0e31a4c2036d028",
+      "reverse_exact": true
+    }
+  ],
+  "released_state_sha256": "4abcce3274d363fd0d0fb648a003cc117b03cc9a917cb095f1153743bbfdf83a",
+  "gate": "Released and combined m4/c4/direct full trajectory hashes must match. Fixed-metabolism initial agent attributes identical; peak sequences identical for all variants. Full initial-world and transition audits required after download.",
+  "wall_seconds": 3300,
+  "outer_seconds": 3600,
+  "grace_seconds": 30,
+  "export_seconds": 900,
+  "idle_seconds": 900,
+  "maximum_rate_usd_per_minute": 0.084,
+  "maximum_execution_export_idle_usd": 7.602,
+  "maximum_total_usd": 10,
+  "scope": "Released baseline plus complete 2x2x2 initializer factorial on qualified four-rule control. No changed update order or uniquely specified paper interpretation.",
+  "boot_allowance_seconds": 900,
+  "staging_allowance_seconds": 120,
+  "maximum_including_boot_staging_usd": 9.03,
+  "status": "Prepared before outcomes; no native completion credit.",
+  "combined_state_sha256": "dc7da849c4d30b40ddf40fe479640ec894f80ad4287e064db60e7078d16b178b"
+}

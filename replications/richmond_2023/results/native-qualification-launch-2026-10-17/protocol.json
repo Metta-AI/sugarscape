@@ -1,0 +1,14 @@
+{
+  "scope": "Native toolchain and bounded original-workflow qualification; not full replication",
+  "node": "relh-sugarscape-richmond-h100-20261017-v1",
+  "benchmark_revision": "290702073492677f2fc9164419e9d5900d119e02",
+  "engine_revision": "19136c18629af0a52ac4355ff705596b22bedac1",
+  "cuda": "11.8.0",
+  "architecture": 90,
+  "bootstrap_sha256": "b674a4f5f46e483c8970f1e77239ffe7b4682269c58cfc31855032a366b70803",
+  "maximum_command_minutes": 92,
+  "native_execution_limit_seconds": 600,
+  "source_modifications": [],
+  "seatbelts": false,
+  "clock_lock_requested": true
+}

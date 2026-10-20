@@ -1,0 +1,18 @@
+{
+  "states_sha256": "6277c5367ea36e47234b7d9873513fa8afffa08348a4d3e3be68cdf0295f8ed1",
+  "hotspots_sha256": "325bd1970002c7d2aa72dda2b9f148b09ee17bc378fb16bdb872887714ebde31",
+  "cells": 65536,
+  "occupied_cells": 11025,
+  "hotspots": 54,
+  "minimum_wrapped_hotspot_separation": 20.0,
+  "capacity_counts": {
+    "0": 17249,
+    "1": 12223,
+    "2": 13783,
+    "3": 13068,
+    "4": 9213
+  },
+  "independent_exact_capacity_matches": 65536,
+  "native_parity": "Pending GPU initial-state capture. This is extracted host initialization, not a full simulation or validated historical Figure11D match.",
+  "numeric_rule": "Wrapped hotspot spacing, unwrapped Euclidean cell distances, float distance/radius arithmetic, summed bands clipped at4; unchanged source behavior."
+}

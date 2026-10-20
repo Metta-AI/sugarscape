@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "replications/richmond_2023/audit_initializer.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audit-validation-001/gcc.csv",
+    "replications/richmond_2023/results/initial-state-extraction-2026-10-17/stderr-002.log",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audit-validation-001/wrong-geometry-audit.json",
+    "--metabolism",
+    "4",
+    "--capacity",
+    "4",
+    "--geometry",
+    "wrapped"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py\", line 123, in <module>\n    main()\n  File \"/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py\", line 101, in main\n    assert expected == [r.cell_capacity for r in rows]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

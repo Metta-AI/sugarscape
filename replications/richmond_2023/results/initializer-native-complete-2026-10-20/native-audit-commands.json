@@ -1,0 +1,308 @@
+[
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/released/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/released-native.log",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/released-initial-audit.json",
+      "--metabolism",
+      "4",
+      "--capacity",
+      "4",
+      "--geometry",
+      "direct"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"initial_sha256\": \"360ea5866567d826e971e5eef54f6d1ed881b6d421b2664d95310114c4c6611d\", \"peak_log_sha256\": \"6e8a9f6190bc14d5c505777357bf36a3e81a425cb60edbc0ef6278fc01a5ce0e\", \"metabolism_maximum\": 4, \"capacity_maximum\": 4, \"geometry\": \"direct\", \"cells\": 65536, \"peaks\": 54, \"occupied\": 11264, \"minimum_wrapped_peak_squared_distance\": 400, \"peak_pairs_below_stated_spacing\": 0, \"exact_capacity_matches\": 65536, \"total_initial_sugar\": 115845, \"maximum_initial_capacity\": 4, \"scope\": \"Audit a complete observed initial world under explicit landscape parameters.\\n\\nThis checks states and landscape arithmetic, not the random generator, model-source\\nidentity, or simulation transitions. Native provenance must be audited separately.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/released/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/released/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/released-transitions.json",
+      "--variant",
+      "released",
+      "--initial-audit",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/released-initial-audit.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 881753, \"moves\": 615829, \"deaths\": 2472, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c4_direct/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/combined_m4_c4_direct-native.log",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c4_direct-initial-audit.json",
+      "--metabolism",
+      "4",
+      "--capacity",
+      "4",
+      "--geometry",
+      "direct"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"initial_sha256\": \"360ea5866567d826e971e5eef54f6d1ed881b6d421b2664d95310114c4c6611d\", \"peak_log_sha256\": \"13df6e1eb0119bf7397e10c04af4fa5ca50fbdf79cedd051346a06bc1d6c94cd\", \"metabolism_maximum\": 4, \"capacity_maximum\": 4, \"geometry\": \"direct\", \"cells\": 65536, \"peaks\": 54, \"occupied\": 11264, \"minimum_wrapped_peak_squared_distance\": 400, \"peak_pairs_below_stated_spacing\": 0, \"exact_capacity_matches\": 65536, \"total_initial_sugar\": 115845, \"maximum_initial_capacity\": 4, \"scope\": \"Audit a complete observed initial world under explicit landscape parameters.\\n\\nThis checks states and landscape arithmetic, not the random generator, model-source\\nidentity, or simulation transitions. Native provenance must be audited separately.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c4_direct/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c4_direct/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c4_direct-transitions.json",
+      "--variant",
+      "combined_with_counter_reset",
+      "--initial-audit",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c4_direct-initial-audit.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 573439, \"moves\": 573391, \"deaths\": 6302, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c4_wrapped/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/combined_m4_c4_wrapped-native.log",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c4_wrapped-initial-audit.json",
+      "--metabolism",
+      "4",
+      "--capacity",
+      "4",
+      "--geometry",
+      "wrapped"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"initial_sha256\": \"3d56a98af54280bfb46e8fa48b3d08bb4b54053a4503535d7e04f7dbcef34915\", \"peak_log_sha256\": \"98ebb3a5081d34d0fe1a1d028b36a5f2589d57da82aeff85e0eab6c4918ce481\", \"metabolism_maximum\": 4, \"capacity_maximum\": 4, \"geometry\": \"wrapped\", \"cells\": 65536, \"peaks\": 54, \"occupied\": 11264, \"minimum_wrapped_peak_squared_distance\": 400, \"peak_pairs_below_stated_spacing\": 0, \"exact_capacity_matches\": 65536, \"total_initial_sugar\": 123227, \"maximum_initial_capacity\": 4, \"scope\": \"Audit a complete observed initial world under explicit landscape parameters.\\n\\nThis checks states and landscape arithmetic, not the random generator, model-source\\nidentity, or simulation transitions. Native provenance must be audited separately.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c4_wrapped/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c4_wrapped/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c4_wrapped-transitions.json",
+      "--variant",
+      "combined_with_counter_reset",
+      "--initial-audit",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c4_wrapped-initial-audit.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 598372, \"moves\": 598321, \"deaths\": 6054, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c7_direct/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/combined_m4_c7_direct-native.log",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c7_direct-initial-audit.json",
+      "--metabolism",
+      "4",
+      "--capacity",
+      "7",
+      "--geometry",
+      "direct"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"initial_sha256\": \"0035fd0719789350cf56e99e88e28a92f9c86a2f7d99e89094f0402b9cec4702\", \"peak_log_sha256\": \"07e72e35d51ec0383ad8609d6d353e5a3b05c750b51a2a7d0e293c37db738cf1\", \"metabolism_maximum\": 4, \"capacity_maximum\": 7, \"geometry\": \"direct\", \"cells\": 65536, \"peaks\": 54, \"occupied\": 11264, \"minimum_wrapped_peak_squared_distance\": 400, \"peak_pairs_below_stated_spacing\": 0, \"exact_capacity_matches\": 65536, \"total_initial_sugar\": 117523, \"maximum_initial_capacity\": 6, \"scope\": \"Audit a complete observed initial world under explicit landscape parameters.\\n\\nThis checks states and landscape arithmetic, not the random generator, model-source\\nidentity, or simulation transitions. Native provenance must be audited separately.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c7_direct/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c7_direct/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c7_direct-transitions.json",
+      "--variant",
+      "combined_with_counter_reset",
+      "--initial-audit",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c7_direct-initial-audit.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 575164, \"moves\": 575114, \"deaths\": 6306, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c7_wrapped/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/combined_m4_c7_wrapped-native.log",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c7_wrapped-initial-audit.json",
+      "--metabolism",
+      "4",
+      "--capacity",
+      "7",
+      "--geometry",
+      "wrapped"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"initial_sha256\": \"8c713e981c8a31724db84f2f567bcb9f313a9a59f99e78ffeb52a6f32aa3dbe6\", \"peak_log_sha256\": \"07e72e35d51ec0383ad8609d6d353e5a3b05c750b51a2a7d0e293c37db738cf1\", \"metabolism_maximum\": 4, \"capacity_maximum\": 7, \"geometry\": \"wrapped\", \"cells\": 65536, \"peaks\": 54, \"occupied\": 11264, \"minimum_wrapped_peak_squared_distance\": 400, \"peak_pairs_below_stated_spacing\": 0, \"exact_capacity_matches\": 65536, \"total_initial_sugar\": 125064, \"maximum_initial_capacity\": 6, \"scope\": \"Audit a complete observed initial world under explicit landscape parameters.\\n\\nThis checks states and landscape arithmetic, not the random generator, model-source\\nidentity, or simulation transitions. Native provenance must be audited separately.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c7_wrapped/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m4_c7_wrapped/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c7_wrapped-transitions.json",
+      "--variant",
+      "combined_with_counter_reset",
+      "--initial-audit",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m4_c7_wrapped-initial-audit.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 600000, \"moves\": 599948, \"deaths\": 6043, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c4_direct/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/combined_m5_c4_direct-native.log",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c4_direct-initial-audit.json",
+      "--metabolism",
+      "5",
+      "--capacity",
+      "4",
+      "--geometry",
+      "direct"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"initial_sha256\": \"beece4d0c5001499a8d1d3634c6529bfd50fe4e382ede7d720ec399bd304ec08\", \"peak_log_sha256\": \"98ebb3a5081d34d0fe1a1d028b36a5f2589d57da82aeff85e0eab6c4918ce481\", \"metabolism_maximum\": 5, \"capacity_maximum\": 4, \"geometry\": \"direct\", \"cells\": 65536, \"peaks\": 54, \"occupied\": 11264, \"minimum_wrapped_peak_squared_distance\": 400, \"peak_pairs_below_stated_spacing\": 0, \"exact_capacity_matches\": 65536, \"total_initial_sugar\": 115845, \"maximum_initial_capacity\": 4, \"scope\": \"Audit a complete observed initial world under explicit landscape parameters.\\n\\nThis checks states and landscape arithmetic, not the random generator, model-source\\nidentity, or simulation transitions. Native provenance must be audited separately.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c4_direct/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c4_direct/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c4_direct-transitions.json",
+      "--variant",
+      "combined_with_counter_reset",
+      "--initial-audit",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c4_direct-initial-audit.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 486002, \"moves\": 485975, \"deaths\": 7106, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c4_wrapped/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/combined_m5_c4_wrapped-native.log",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c4_wrapped-initial-audit.json",
+      "--metabolism",
+      "5",
+      "--capacity",
+      "4",
+      "--geometry",
+      "wrapped"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"initial_sha256\": \"3a8e891e147fd7d2ac2c2af3829d9cfc834bdd4a007efdc600c9c3fe3b78644a\", \"peak_log_sha256\": \"98ebb3a5081d34d0fe1a1d028b36a5f2589d57da82aeff85e0eab6c4918ce481\", \"metabolism_maximum\": 5, \"capacity_maximum\": 4, \"geometry\": \"wrapped\", \"cells\": 65536, \"peaks\": 54, \"occupied\": 11264, \"minimum_wrapped_peak_squared_distance\": 400, \"peak_pairs_below_stated_spacing\": 0, \"exact_capacity_matches\": 65536, \"total_initial_sugar\": 123227, \"maximum_initial_capacity\": 4, \"scope\": \"Audit a complete observed initial world under explicit landscape parameters.\\n\\nThis checks states and landscape arithmetic, not the random generator, model-source\\nidentity, or simulation transitions. Native provenance must be audited separately.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c4_wrapped/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c4_wrapped/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c4_wrapped-transitions.json",
+      "--variant",
+      "combined_with_counter_reset",
+      "--initial-audit",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c4_wrapped-initial-audit.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 505009, \"moves\": 504974, \"deaths\": 6925, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c7_direct/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/combined_m5_c7_direct-native.log",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c7_direct-initial-audit.json",
+      "--metabolism",
+      "5",
+      "--capacity",
+      "7",
+      "--geometry",
+      "direct"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"initial_sha256\": \"6e90a375d59573c20701874b9f2b0cce812814fa24a25a290251aa3e93e39ef3\", \"peak_log_sha256\": \"98ebb3a5081d34d0fe1a1d028b36a5f2589d57da82aeff85e0eab6c4918ce481\", \"metabolism_maximum\": 5, \"capacity_maximum\": 7, \"geometry\": \"direct\", \"cells\": 65536, \"peaks\": 54, \"occupied\": 11264, \"minimum_wrapped_peak_squared_distance\": 400, \"peak_pairs_below_stated_spacing\": 0, \"exact_capacity_matches\": 65536, \"total_initial_sugar\": 117523, \"maximum_initial_capacity\": 6, \"scope\": \"Audit a complete observed initial world under explicit landscape parameters.\\n\\nThis checks states and landscape arithmetic, not the random generator, model-source\\nidentity, or simulation transitions. Native provenance must be audited separately.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c7_direct/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c7_direct/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c7_direct-transitions.json",
+      "--variant",
+      "combined_with_counter_reset",
+      "--initial-audit",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c7_direct-initial-audit.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 488650, \"moves\": 488623, \"deaths\": 7082, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_initializer.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c7_wrapped/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/combined_m5_c7_wrapped-native.log",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c7_wrapped-initial-audit.json",
+      "--metabolism",
+      "5",
+      "--capacity",
+      "7",
+      "--geometry",
+      "wrapped"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"initial_sha256\": \"8c33d9190e2c32baf68c2dde5a9e2fedc1223667151fed4c56dd08fd90b51906\", \"peak_log_sha256\": \"98ebb3a5081d34d0fe1a1d028b36a5f2589d57da82aeff85e0eab6c4918ce481\", \"metabolism_maximum\": 5, \"capacity_maximum\": 7, \"geometry\": \"wrapped\", \"cells\": 65536, \"peaks\": 54, \"occupied\": 11264, \"minimum_wrapped_peak_squared_distance\": 400, \"peak_pairs_below_stated_spacing\": 0, \"exact_capacity_matches\": 65536, \"total_initial_sugar\": 125064, \"maximum_initial_capacity\": 6, \"scope\": \"Audit a complete observed initial world under explicit landscape parameters.\\n\\nThis checks states and landscape arithmetic, not the random generator, model-source\\nidentity, or simulation transitions. Native provenance must be audited separately.\\n\"}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+      "/Users/relh/Code/workspace/sugarscape-richmond/replications/richmond_2023/audit_state_transitions.py",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c7_wrapped/initial-cells.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/native/runs/combined_m5_c7_wrapped/state.csv",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c7_wrapped-transitions.json",
+      "--variant",
+      "combined_with_counter_reset",
+      "--initial-audit",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/richmond-initializer-audited-001/combined_m5_c7_wrapped-initial-audit.json"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"steps\": 100, \"post_step_agent_observations\": 508404, \"moves\": 508375, \"deaths\": 6878, \"scope\": \"Reconstruct metabolism, death, resource accounting and transfers from native states.\\n\\nObserved destinations are inputs: this does not independently reproduce GPU random\\nchoices, conflict winners, or the order of within-step resolution rounds.\\n\"}\n",
+    "stderr": ""
+  }
+]

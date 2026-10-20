@@ -1,0 +1,14 @@
+{
+  "bytes": 37633,
+  "sha256": "918e356dfb01d4395064e1f593336791180089e7650f55e8366d514b48d0ff2a",
+  "files": {
+    "variants/cardinal/src/main.cu": "0fbff93a9f0743ed88b76341c3f7394a9e9b1bf119d0f9c97516f0c92f7eed76",
+    "variants/combined_three_rules/src/main.cu": "d744a9c7b843921b204ef1281951e30a4395638d78737293b3e3510a68fd3485",
+    "variants/nonpositive_death/src/main.cu": "0a01e8654ac8748b733a51dabb294b0d62767bebe9a18adcd7e2a1358a65e79a",
+    "variants/released/src/main.cu": "307bb4829ffef97b9eb004bdc59b58282aebd937c0bd4138581753bef711fba4",
+    "variants/transfer/src/main.cu": "355935783b74e00cc46218326c2d6c3106404dc717cbe3922a8592892df075e3",
+    "protocol.json": "7ae5c4b2eff95efae7a385482dcc5c956fab4896726890b28cb67a2be062cd27",
+    "run_controls.py": "d09578bf22ffa4efb89ad2611055ac12e63cf6e01b53e05c0f5ea55a42b1a99c"
+  },
+  "scope": "Seven payload files pass full archive readback. Native compiler/execution qualification remains pending."
+}

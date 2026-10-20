@@ -1,0 +1,16 @@
+{
+  "initial_sha256": "360ea5866567d826e971e5eef54f6d1ed881b6d421b2664d95310114c4c6611d",
+  "peak_log_sha256": "13df6e1eb0119bf7397e10c04af4fa5ca50fbdf79cedd051346a06bc1d6c94cd",
+  "metabolism_maximum": 4,
+  "capacity_maximum": 4,
+  "geometry": "direct",
+  "cells": 65536,
+  "peaks": 54,
+  "occupied": 11264,
+  "minimum_wrapped_peak_squared_distance": 400,
+  "peak_pairs_below_stated_spacing": 0,
+  "exact_capacity_matches": 65536,
+  "total_initial_sugar": 115845,
+  "maximum_initial_capacity": 4,
+  "scope": "Audit a complete observed initial world under explicit landscape parameters.\n\nThis checks states and landscape arithmetic, not the random generator, model-source\nidentity, or simulation transitions. Native provenance must be audited separately.\n"
+}

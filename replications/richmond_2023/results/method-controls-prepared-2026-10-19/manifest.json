@@ -1,0 +1,58 @@
+{
+  "source_revision": "290702073492677f2fc9164419e9d5900d119e02",
+  "original_sha256": "b2daf9e6ee2b3faf4a13e30ba19f4293e1f922a993d30cb5e72fb1d4c2b8f56d",
+  "variants": [
+    {
+      "variant": "released",
+      "rules": [],
+      "source_sha256": "b2daf9e6ee2b3faf4a13e30ba19f4293e1f922a993d30cb5e72fb1d4c2b8f56d",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reverse_edits_byte_exact": true
+    },
+    {
+      "variant": "transfer",
+      "rules": [
+        "transfer"
+      ],
+      "source_sha256": "3725a6e959a55d7798ee69be5d8e65d5cca0def5ea21621df541f16756be02da",
+      "patch_sha256": "8f37979f148148942b575d8421439e791f52f49e1eebc2acd30828c9f23f7e7a",
+      "reverse_edits_byte_exact": true
+    },
+    {
+      "variant": "cardinal",
+      "rules": [
+        "cardinal"
+      ],
+      "source_sha256": "ba5975a58db39f0812abcd753bef2cb715c70af3215d5fc8d295a2a59ef50ed3",
+      "patch_sha256": "cabeaa4862257e12cf3278d3a7110013a24427a4b77b627dbf9b8951f2ee8be3",
+      "reverse_edits_byte_exact": true
+    },
+    {
+      "variant": "nonpositive_death",
+      "rules": [
+        "nonpositive_death"
+      ],
+      "source_sha256": "38db97141599639907c397230c8c8ee9a9e8022841dbf7758e3f86bf2dbbf311",
+      "patch_sha256": "0a9cae82b53d4ba2e613ad01dd71a238733aaa101f3182de7835d602cf80786c",
+      "reverse_edits_byte_exact": true
+    },
+    {
+      "variant": "combined_three_rules",
+      "rules": [
+        "transfer",
+        "cardinal",
+        "nonpositive_death"
+      ],
+      "source_sha256": "c048b6925d1fe78101084ac6a9bd26604e3562e26944eaa7a4da5293ccaa4016",
+      "patch_sha256": "05c04c63e568c342f2034fa754578b2d5bc71e98da68bacb1915cdc299ac5322",
+      "reverse_edits_byte_exact": true
+    }
+  ],
+  "scope": "Source preparation only. No compilation, native execution, or method-completion credit.",
+  "unchanged": [
+    "initialization and landscape",
+    "random generator and seed",
+    "resolution exit counter and nine-iteration cap",
+    "timing and population reporters"
+  ]
+}

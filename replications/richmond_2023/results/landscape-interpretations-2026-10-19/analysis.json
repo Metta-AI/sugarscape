@@ -1,0 +1,113 @@
+{
+  "records": [
+    {
+      "world": "macos-gcc",
+      "source_folder": "initial-state-extraction-2026-10-17",
+      "states_file": "state.csv.gz",
+      "hotspots_file": "stderr-002.log",
+      "states_sha256": "6277c5367ea36e47234b7d9873513fa8afffa08348a4d3e3be68cdf0295f8ed1",
+      "hotspots_sha256": "325bd1970002c7d2aa72dda2b9f148b09ee17bc378fb16bdb872887714ebde31",
+      "minimum_wrapped_peak_squared_distance": 400,
+      "cells": 65536,
+      "metrics": {
+        "direct_sum": {
+          "total_sugar": 117523,
+          "maximum": 6,
+          "cells_above_four": 1638,
+          "cells_different_from_released": 1638,
+          "added_sugar_vs_released": 1678
+        },
+        "direct_cap4": {
+          "total_sugar": 115845,
+          "maximum": 4,
+          "cells_above_four": 0,
+          "cells_different_from_released": 0,
+          "added_sugar_vs_released": 0
+        },
+        "direct_cap7": {
+          "total_sugar": 117523,
+          "maximum": 6,
+          "cells_above_four": 1638,
+          "cells_different_from_released": 1638,
+          "added_sugar_vs_released": 1678
+        },
+        "wrapped_sum": {
+          "total_sugar": 125064,
+          "maximum": 6,
+          "cells_above_four": 1797,
+          "cells_different_from_released": 6197,
+          "added_sugar_vs_released": 9219
+        },
+        "wrapped_cap4": {
+          "total_sugar": 123227,
+          "maximum": 4,
+          "cells_above_four": 0,
+          "cells_different_from_released": 4500,
+          "added_sugar_vs_released": 7382
+        },
+        "wrapped_cap7": {
+          "total_sugar": 125064,
+          "maximum": 6,
+          "cells_above_four": 1797,
+          "cells_different_from_released": 6197,
+          "added_sugar_vs_released": 9219
+        }
+      }
+    },
+    {
+      "world": "macos-clang",
+      "source_folder": "initial-image-comparison-2026-10-17",
+      "states_file": "state-clang.csv.gz",
+      "hotspots_file": "hotspots-clang.log",
+      "states_sha256": "8d2bbe429ab27b161cc645f2ceab9df70b4fc7e4be1c67718a4e6dba638e1158",
+      "hotspots_sha256": "5baab035daa26bde6637e27a669ec9ab3b671aa30f2ce6d63facd28db4d40353",
+      "minimum_wrapped_peak_squared_distance": 401,
+      "cells": 65536,
+      "metrics": {
+        "direct_sum": {
+          "total_sugar": 118833,
+          "maximum": 5,
+          "cells_above_four": 1128,
+          "cells_different_from_released": 1128,
+          "added_sugar_vs_released": 1128
+        },
+        "direct_cap4": {
+          "total_sugar": 117705,
+          "maximum": 4,
+          "cells_above_four": 0,
+          "cells_different_from_released": 0,
+          "added_sugar_vs_released": 0
+        },
+        "direct_cap7": {
+          "total_sugar": 118833,
+          "maximum": 5,
+          "cells_above_four": 1128,
+          "cells_different_from_released": 1128,
+          "added_sugar_vs_released": 1128
+        },
+        "wrapped_sum": {
+          "total_sugar": 125064,
+          "maximum": 5,
+          "cells_above_four": 1436,
+          "cells_different_from_released": 5166,
+          "added_sugar_vs_released": 7359
+        },
+        "wrapped_cap4": {
+          "total_sugar": 123628,
+          "maximum": 4,
+          "cells_above_four": 0,
+          "cells_different_from_released": 3913,
+          "added_sugar_vs_released": 5923
+        },
+        "wrapped_cap7": {
+          "total_sugar": 125064,
+          "maximum": 5,
+          "cells_above_four": 1436,
+          "cells_different_from_released": 5166,
+          "added_sugar_vs_released": 7359
+        }
+      }
+    }
+  ],
+  "scope": "Posthoc initial-landscape sensitivity on two previously retained macOS host worlds. Not new independent seeds, native GPU controls, historical image matches, or a uniquely specified paper implementation."
+}

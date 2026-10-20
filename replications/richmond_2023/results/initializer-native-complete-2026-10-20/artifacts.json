@@ -1,0 +1,13 @@
+{
+  "bucket": "relh-sugarscape-evidence-20261017",
+  "key": "richmond-initializer-boot-terminal-002/native-evidence.tar.gz",
+  "sha256": "7710226aa65b79f56ccf9f16eb32393ac65459a455385df78a761af4d228d205",
+  "bytes": 52777548,
+  "verified_file_members": 82,
+  "native_command": "cmd-mcadf",
+  "validation_commands": [
+    "python replications/richmond_2023/audit_initializer_controls.py EVIDENCE_DIRECTORY",
+    "Rscript verify_initializers.R EVIDENCE_DIRECTORY"
+  ],
+  "scope": "Complete archive fresh download, every member verified, nine complete initializer and observed-transition audits."
+}
