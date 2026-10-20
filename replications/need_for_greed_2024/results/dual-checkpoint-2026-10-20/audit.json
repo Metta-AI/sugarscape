@@ -1,0 +1,661 @@
+{
+  "inputs": 50,
+  "observations": 240456,
+  "runs": [
+    {
+      "entry": "0.04-benthamHalfLookaheadBinary8980456150572989187.config",
+      "seed": 8980456150572989187,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1183,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "ea61fab748e482e3e53c81ce2b004e61d4c60cf5c4ad0b3c6851c16abed5638f"
+    },
+    {
+      "entry": "0.05-benthamHalfLookaheadBinary1823687216165022946.config",
+      "seed": 1823687216165022946,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1299,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "d44833675d81619ee4ec9dbf59f36fea8cdc2877077bb2caf74a7a37ba2abf96"
+    },
+    {
+      "entry": "0.05-benthamHalfLookaheadBinary3647330525768885984.config",
+      "seed": 3647330525768885984,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1234,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "a57cb007667244d5a147e0c823faccad425404bb9644d146f7ceb224ebdb6728"
+    },
+    {
+      "entry": "0.05-benthamHalfLookaheadBinary5299921647111273341.config",
+      "seed": 5299921647111273341,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1268,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "4cacc0981c67ce9610bcd13096598a8846e5bb9df253b9f25f05a8d3f049dfb2"
+    },
+    {
+      "entry": "0.05-benthamHalfLookaheadBinary6712575527833568135.config",
+      "seed": 6712575527833568135,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1322,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "8bf2b59cff6555323aae92e025d188c8680b0cca4c46eb99d7aed74f50f5a842"
+    },
+    {
+      "entry": "0.05-benthamHalfLookaheadBinary8525419003965527765.config",
+      "seed": 8525419003965527765,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1218,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "61868a40fa5f5e2389d34efefe0b32a17fbb90dcfce7f922b35fd8d7820538ad"
+    },
+    {
+      "entry": "0.06-benthamHalfLookaheadBinary1470653421161831391.config",
+      "seed": 1470653421161831391,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 960,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "fd50281db99964f9d6768ec3c47d2ae63e45caa445604e271ca2245480ae4e92"
+    },
+    {
+      "entry": "0.06-benthamHalfLookaheadBinary3291190799162476839.config",
+      "seed": 3291190799162476839,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1449,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "18d6fdb76c986d6c5beb09f4976c72a4267c9da64041db58ed20755a83acd1d4"
+    },
+    {
+      "entry": "0.06-benthamHalfLookaheadBinary4893720129238770169.config",
+      "seed": 4893720129238770169,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1242,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "87a68ed7c4a1ced29564aa470a2e74db8aaf0e2aa5e102e8410559d12054f1b8"
+    },
+    {
+      "entry": "0.06-benthamHalfLookaheadBinary6631427774681279428.config",
+      "seed": 6631427774681279428,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1189,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "8c0d2d056642124b20ae0374e5401012b026f1f0deb2504f0b97b3b608d8b22f"
+    },
+    {
+      "entry": "0.06-benthamHalfLookaheadBinary8266698178000332942.config",
+      "seed": 8266698178000332942,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1356,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "8e99e8364840cef6ff70430787ec36203a42673c9cac0df487ec9d41de9e763c"
+    },
+    {
+      "entry": "0.07-benthamHalfLookaheadBinary1288598867396776898.config",
+      "seed": 1288598867396776898,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1293,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "6ec6baa3ed0581902149c604e348ffa944fe3c1b8dd9ecf4f9c7c5773ea84e2d"
+    },
+    {
+      "entry": "0.07-benthamHalfLookaheadBinary2776046745237740637.config",
+      "seed": 2776046745237740637,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1307,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "0aa7a4e095c8d623e82cc0556c2fd392e38ad113c4bb7c7d21a5f412e5cad0e3"
+    },
+    {
+      "entry": "0.07-benthamHalfLookaheadBinary460149852129392939.config",
+      "seed": 460149852129392939,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1342,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "bb950bf43a86ed34676cc6727c21b845856fe02570b4205eb2ad02b0ac527dd0"
+    },
+    {
+      "entry": "0.07-benthamHalfLookaheadBinary624457554156745065.config",
+      "seed": 624457554156745065,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 498,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "bb7cbadacd515a9571f74ba77958dcac15f51b6593274134264694ce200a454c"
+    },
+    {
+      "entry": "0.07-benthamHalfLookaheadBinary7935043809970132554.config",
+      "seed": 7935043809970132554,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1218,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "20d9a5f72ed16d10701aa48fe3565a491be1909e658d714b0f87a69a79078e39"
+    },
+    {
+      "entry": "0.07-benthamHalfLookaheadBinary977868131476438614.config",
+      "seed": 977868131476438614,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1227,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "f848643b3f33287ff232a0ba0a9051698e1ec4f5a73b77cb9aa43e9e67b6b2b5"
+    },
+    {
+      "entry": "0.08-benthamHalfLookaheadBinary238165197779399277.config",
+      "seed": 238165197779399277,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1337,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "b5b05c92e7b3452058b69b32bf3dd27acac6f08cd9edabf1bcfe180f7c78d3f0"
+    },
+    {
+      "entry": "0.08-benthamHalfLookaheadBinary4335070638830477102.config",
+      "seed": 4335070638830477102,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1202,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "133e0051f0bfbf5efbb7b1dd7b45a81823628db13c7d69ceacd9b35ad1d6c141"
+    },
+    {
+      "entry": "0.08-benthamHalfLookaheadBinary570853383711153723.config",
+      "seed": 570853383711153723,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1331,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "5246a76c5303cd511842c448e0bff03d98fda8156aa89260e9cf2ee2b410939f"
+    },
+    {
+      "entry": "0.08-benthamHalfLookaheadBinary7074104263051287352.config",
+      "seed": 7074104263051287352,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 227,
+      "final_timestep": 226,
+      "final_population": 0,
+      "outcome": "dead",
+      "trajectory_sha256": "462a2219dc09641cb75475c7cd3f3229afefe9b4e37514b0f527e2f849e33726"
+    },
+    {
+      "entry": "0.08-benthamHalfLookaheadBinary8927322354812584041.config",
+      "seed": 8927322354812584041,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1261,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "3c7e9682c72ae3112a96fbbf5b178c4f0283db2ba51a61d6bf9f432925d775c8"
+    },
+    {
+      "entry": "0.09-benthamHalfLookaheadBinary1802411219399068431.config",
+      "seed": 1802411219399068431,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1250,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "11c7e43d1458fcb657d4eb5716a55818e7dfb0a430901f33c58cc2dc7ec88c8f"
+    },
+    {
+      "entry": "0.09-benthamHalfLookaheadBinary3573933913596124850.config",
+      "seed": 3573933913596124850,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1267,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "a272ee313347f94449cd44b3e096cfc90ed45513fb66bb0da57af6da9b179b7f"
+    },
+    {
+      "entry": "0.09-benthamHalfLookaheadBinary5200749333348563875.config",
+      "seed": 5200749333348563875,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 181,
+      "final_timestep": 180,
+      "final_population": 0,
+      "outcome": "dead",
+      "trajectory_sha256": "8141b619a525aa2bcef0e11da13999fca044853d2b01657d99c967547211aa06"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary6712575527833568135.config",
+      "seed": 6712575527833568135,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1340,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "04445f025db57f0d05726ee69fedfd8183fa3959021a059e29b762c6f502aff7"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary7382846066072756711.config",
+      "seed": 7382846066072756711,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1170,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "7df9be13d2a609c48266d886828dea595f5a2bd734ac448a023a09d83c39b150"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary7611596554808117923.config",
+      "seed": 7611596554808117923,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1274,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "3f513d46af4885685c11e94e705691d823c65debeda9c7ab21578bb2c9e76a45"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary7853914801418268465.config",
+      "seed": 7853914801418268465,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1241,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "fe4b60a6dd3fcaec0272f4fd955fa2f48724fb80432b425c378d28efcae25a8a"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary7920473864506472639.config",
+      "seed": 7920473864506472639,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1211,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "440781b950f81770e1e2a6536552e38756c0820b066898b6cad53736278d05b5"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary7935043809970132554.config",
+      "seed": 7935043809970132554,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1315,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "a6a830d97c345f8c6504a8316e632b1b57abde0ae23373033e5cda84cd626bee"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary7990668540495452526.config",
+      "seed": 7990668540495452526,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1268,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "2e5a174b5a94bf18a0e6a527a17177b6015c5f3441b3c75e3a391005d2970023"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8002654488081595615.config",
+      "seed": 8002654488081595615,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1248,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "c4440cebfbad8e52fa3a9368cef2abe598d264b6312ccb1619060b670f38b14f"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8006986510311734812.config",
+      "seed": 8006986510311734812,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1222,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "0e34ba8824d9e79621f8acd64759c5973078e8b45ef43f28a6d277f6b7a06780"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8149629752604643258.config",
+      "seed": 8149629752604643258,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1287,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "a2cbf7654a3a83368afe01abb0ddc2156db9eae57408f5a82ef584ae5820cc74"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8266698178000332942.config",
+      "seed": 8266698178000332942,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 948,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "2867b6c78283188213073065293afa2cf76209d2fdcaf58f2d0ca92f501bf962"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8303265161711135825.config",
+      "seed": 8303265161711135825,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1251,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "fc8e10cd618fff6aa3229f378e628f690afaf62169127358fe1b3420adc2dee8"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8338163462517962044.config",
+      "seed": 8338163462517962044,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1197,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "d21ad16f16af31f1b4f38febba2ef3c5b95334afcd8c8bcc61ccd52164c29e3e"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8354463434896959425.config",
+      "seed": 8354463434896959425,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1296,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "fcbaf5bbdad29ee0e2589e099f5b532a160ed4bddc69738f495084f06addefad"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8443748817866679480.config",
+      "seed": 8443748817866679480,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1296,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "9cb16efbc1e71b9d35572832a5253a0e5abf535615a1028434f632481cdc179d"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8525419003965527765.config",
+      "seed": 8525419003965527765,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1311,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "bc536ee34c3429fd0337248e620ffd31b2801881967fd0f8ae4a398d6a4bb4d6"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8539697944784643463.config",
+      "seed": 8539697944784643463,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1303,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "6ff515ed6e6c2e0fc35f80979998a43e2fc8f1cbdbc4947316f98b521aaaf9b0"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8611853178106367524.config",
+      "seed": 8611853178106367524,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1019,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "5451cea5b83adb5c4b6806eb7f2cb8a03d9b1079f2168833c12e9a73be7df8cc"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8754360493150801493.config",
+      "seed": 8754360493150801493,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1228,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "26dd31668d4e71257dbf552dea961df40a3ff97ad671d3108834f9ef268c22ca"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8927322354812584041.config",
+      "seed": 8927322354812584041,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1347,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "141cb5c539ced1eb50c0d3ad671ca4a4a845a01b6b990a5bd1d5946c1bf0490a"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8980456150572989187.config",
+      "seed": 8980456150572989187,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1289,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "3a3b0e349adb13344b4b56b645b3831d323948826fd0ecbbc7e48dfc8a870e8c"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary8987908268059460980.config",
+      "seed": 8987908268059460980,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1267,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "7460db39fd21a8347e902ac45cad1e8cda5e5ced3cbfc0f6bd2246dce479c464"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary9077614460338874204.config",
+      "seed": 9077614460338874204,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1345,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "c4c1b5671164967f6694b40fa99f80508f26d8069c999ffa5dc7e58482b99fa8"
+    },
+    {
+      "entry": "0.39-benthamHalfLookaheadBinary9194507009404838026.config",
+      "seed": 9194507009404838026,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1224,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "dbb96538c2a02e463b4199ae89a1ef1caf8582a2ec1847d3b7250bc3c0f001a8"
+    },
+    {
+      "entry": "0.4-benthamHalfLookaheadBinary404603357698709850.config",
+      "seed": 404603357698709850,
+      "experiment": "selfishness",
+      "effective_models": [
+        "benthamHalfLookaheadBinary"
+      ],
+      "observations": 5001,
+      "final_timestep": 5000,
+      "final_population": 1276,
+      "outcome": "better_or_equal",
+      "trajectory_sha256": "97dc9d78b146d2e4ce8230068108473f7e1f830351a5fa8de4a00c942240a1f0"
+    }
+  ],
+  "source_audit_sha256": {
+    "unassigned": "f621e07424df684319bbff09f277c2b71f815ce2e035ab27a3327a54cd037241",
+    "table4": "d9ab6930999bed87266ca67eb57c99b8ebf9a5761bb6cfbf30828e2638de2e99"
+  },
+  "scope": "Union of two freshly audited sealed checkpoints; cross-checkpoint input identities disjoint. Prior-inventory reconciliation follows."
+}

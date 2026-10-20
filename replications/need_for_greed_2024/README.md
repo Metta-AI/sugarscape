@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[Two disjoint checkpoints](results/dual-checkpoint-2026-10-20) add 50 audited inputs and 240,456 observations. Coverage reaches 857 unique inputs and 3,270,331 observations. The active Table IV row reaches 402/500; Tables I–III remain unchanged. No complete-row or whole-study verdict is assigned.
+
 [The eleventh Table IV checkpoint](results/table4-eleventh-prefix-2026-10-19) adds 25 audited inputs and 120,355 observations. Coverage reaches 807 unique inputs and 3,029,875 observations. The active row reaches 377/500 inputs; no complete-row verdict is assigned. Tables I–III remain unchanged.
 
 [The first unassigned-shard checkpoint](results/unassigned-first-checkpoint-2026-10-19) adds 25 audited inputs and 100,981 observations. Coverage reaches 782 unique inputs and 2,909,520 observations. All prior inputs and Tables I–III remain unchanged; Table IV remains incomplete. Evidence collection recovered without restarting the simulation.
