@@ -1,5 +1,7 @@
 # Bigbee, Cioffi-Revilla, and Luke (2007): Replication of Sugarscape Using MASON
 
+[The published Table 2 inventory](results/published-targets-2026-10-20) now maps all seventeen outcomes to frozen configuration hashes, paraphrased criteria, rule families, and author classifications. The earlier draft inventory remains intact. Missing per-row protocols and historical implementation qualifications remain; no new replication credit is assigned.
+
 Paper: [published chapter](https://doi.org/10.1007/978-4-431-71307-4_20).
 The [published eight-page PDF](https://people.cs.gmu.edu/~sean/papers/Replication07.pdf) was recovered from the author’s current faculty domain.
 Status: historical releases and all seventeen showcase configurations executed; source and population-accounting discrepancies remain unresolved. **Not a completed replication.**
