@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T02:12:05.923184+00:00",
+  "as_of": "2026-10-20T02:26:12.786548+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -255,15 +255,15 @@
     {
       "study": "oremland_2014",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
-      "checked_commit": "9ffd5539b30794c0bc72cd23d91057b8a65a4fa1",
+      "checked_commit": "73b8287dedff65ca813fb157aef66015c574595c",
       "status": "partial",
       "readme": "replications/oremland_2014/README.md",
-      "readme_sha256": "57f461c28bab49a4e0dc0396eb696abd074a6c7fad13a188d9636f03f9b25a49",
-      "json_evidence_files": 129,
+      "readme_sha256": "8561acb2e864b89f9c2877129909e8b710bcaa673fb4ea6324f4ba4f4da67c29",
+      "json_evidence_files": 137,
       "gzip_json_evidence_files": 0,
-      "checked_at": "2026-10-18T22:19:27.437394+00:00",
-      "evidence_scan_scope": "All JSON files under replications/oremland_2014",
-      "remaining_scope": "All eleven reduced models now audit 2,538,400 runs; four small-grid recovery models add 2,110,000, with 405,245 exact retained-prefix comparisons. Independent full-size and 37,600 unique-stream diagnostics remain audited. Source conflict identified: Appendix B prose removes zero-sugar agents, while Algorithm 3 removes only negative-sugar agents. Existing results follow prose. Native 408-state probe confirms survival difference; paired 37,600-request negative-death diagnostic completed and audited. Mortality changes in 37,223 pairs; 40x40 mortality ranking concordance .5854/.5511 versus prose-rule .8686/.8695. All 768 ranking rows checked and paired summaries independently recomputed from native records. No validated negative or completion credit. Original controls, implementation, reduction/ranking conventions, uncertainty bars, optimizer and transfer remain unresolved."
+      "checked_at": "2026-10-20T02:26:12.786548+00:00",
+      "evidence_scan_scope": "All tracked JSON and gzip JSON files under replications/oremland_2014",
+      "remaining_scope": "All eleven reduced models now audit 2,538,400 runs; four small-grid recovery models add 2,110,000, with 405,245 exact retained-prefix comparisons. Independent full-size and 37,600 unique-stream diagnostics remain audited. Source conflict identified: Appendix B prose removes zero-sugar agents, while Algorithm 3 removes only negative-sugar agents. Existing results follow prose. Native 408-state probe confirms survival difference; paired 37,600-request negative-death diagnostic completed and audited. Mortality changes in 37,223 pairs; 40x40 mortality ranking concordance .5854/.5511 versus prose-rule .8686/.8695. All 768 ranking rows checked and paired summaries independently recomputed from native records. No validated negative or completion credit. Original controls, implementation, reduction/ranking conventions, uncertainty bars, optimizer and transfer remain unresolved. Native Algorithm 1 optimizer qualification: three two-generation,12-candidate,50-seed searches complete3600native runs. Independent replay verifies33matings/2085mutations; dominance and Hamming-neighbor sensitivities explicit. Corrupted offspring rejected; restored evaluator matches400prior outputs except elapsed time. All three published archives reproduce byte-identical audits. Search budget, neighborhood, dominance semantics, replacement mutation and odd slots are declared reconstruction choices. No convergence/global-optimality/Figure11 transfer claim or completion credit."
     },
     {
       "study": "springer_2019",
