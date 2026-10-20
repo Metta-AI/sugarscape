@@ -34,6 +34,11 @@ The simulator checks resource conservation and population accounting at **every 
 Its balance includes resource growth, metabolism paid by surviving agents, remaining resources consumed on starvation, and reproduction costs.
 These are model-execution invariants, not evidence that all behavioral choices match the paper.
 
+[Independent action replay](results/action-replay-2026-10-20) now checks 4,302,731 actions across three 2,000-cycle scenarios.
+`audit_actions.py NEW_OUTPUT` requires native output parity before independently reconstructing movement, occupancy, survival, reproduction, ages, wealth, and aggregate statistics.
+A deliberate double-age increment passes native parity but fails independent replay.
+This validates the declared implementation for those runs; historical rule ambiguities and the published age discrepancy remain unresolved.
+
 ```sh
 clang++ -std=c++17 -O2 -Wall -Wextra -Werror \
   replications/stevenson_2021/simulate.cpp -o /absolute/tools/stevenson-simulate

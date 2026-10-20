@@ -1,0 +1,11 @@
+--- audit_actions.py
++++ audit_actions.py
+@@ -44,6 +44,8 @@
+ for old, new in replacements:
+     assert observed.count(old) == 1
+     observed = observed.replace(old, new)
++source = source.replace('++agent.age;', 'agent.age += 2;')
++observed = observed.replace('++agent.age;', 'agent.age += 2;')
+ (root / 'baseline.cpp').write_text(source)
+ (root / 'observed.cpp').write_text(observed)
+ compiler = subprocess.check_output(['clang++', '--version'], text=True)

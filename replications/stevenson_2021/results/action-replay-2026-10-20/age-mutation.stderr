@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-action-replay-001/age-mutation/audit_actions.py", line 115, in <module>
+    assert age == old_age + 1 and alive == int(available >= 3)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
