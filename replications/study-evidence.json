@@ -1,9 +1,9 @@
 {
-  "as_of": "2026-10-20T05:02:17.813709+00:00",
+  "as_of": "2026-10-20T05:06:44.109260+00:00",
   "minimum_completed_papers": 10,
-  "completed_studies": 7,
+  "completed_studies": 8,
   "wholly_positive_papers": 1,
-  "interpretation": "Seven completed studies under the user’s method-based criterion: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural, Lima qualified author-code feasibility, Carrella qualified method reproduction, Thaler qualified simulation/benchmark reproduction, and Richmond qualified complete Sugarscape author-code reproduction with validated implementation discrepancies. Numerical agreement is separate. Richmond retains image provenance, hardware and conflicting prose/diagram qualifications; corrective single-condition controls are not substituted full-grid results. No independent-engine equivalence or wholly-positive verdict is inferred.",
+  "interpretation": "Eight completed studies under the user’s method-based criterion: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural, Lima qualified author-code feasibility, Carrella qualified method, Thaler qualified simulation/benchmark, Richmond qualified author-code reproduction, and Oremland qualified Sugarscape method reconstruction. Numerical agreement is separate; historical identity and wholly-positive verdicts are not inferred.",
   "studies": [
     {
       "study": "mcculloch_2022",
@@ -255,15 +255,15 @@
     {
       "study": "oremland_2014",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21",
-      "checked_commit": "953bf272d68864f2a0e3997ce58b0c06d1a90fdb",
-      "status": "partial",
+      "checked_commit": "c1ad995a3e8c6dc7b91686e30fd772c4876cdd18",
+      "status": "completed-method-qualified-reconstruction",
       "readme": "replications/oremland_2014/README.md",
-      "readme_sha256": "dd9dd25979852661f69970a5f4d9328ece9ce8fc0fa997c5c373199aa77f1ea0",
-      "json_evidence_files": 248,
+      "readme_sha256": "c236bba4ec14a6cf8769f9d436d0664efbd1f6fcc416456e1c7c461539e6940a",
+      "json_evidence_files": 250,
       "gzip_json_evidence_files": 36,
-      "checked_at": "2026-10-20T05:02:17.813709+00:00",
+      "checked_at": "2026-10-20T05:06:44.109260+00:00",
       "evidence_scan_scope": "All tracked JSON and gzip JSON files under replications/oremland_2014",
-      "remaining_scope": "All18 searches complete432000native evaluations; all144final policies complete28800held-out evaluations. Fresh replay byte-exact; independent R checks57600objective values and144dominance decisions; corrected production figure visually reviewed with unchanged CSV. All134transfer archive members verified from fresh storage. Timing completes18639native runs including600warmups; independent audit and28storage members verified. CPU8node stopped;54USD reserved of100, actual costs unreconciled. Historical hardware/settings remain qualified. Final requirement-by-requirement method synthesis pending; no completed-study credit."
+      "remaining_scope": "Completed qualified Sugarscape method reconstruction: model, convergence, all twelve ranking cases, eighteen optimizer searches, all144 policy held-out transfer, and native timing. Historical controls/seeds/settings, death-rule conflict, uncertainty bars and hardware remain qualified. No global-optimality, wholly-positive or validated-negative verdict. See method-scope-assessment-2026-10-20."
     },
     {
       "study": "springer_2019",
