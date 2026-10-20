@@ -1,5 +1,7 @@
 # Sugarscape replication program
 
+[The subsequent ten-study recheck](reviews/2026-10-20/README.md) passes selected native workflows and evidence audits, restores Dogan’s directly runnable figure bundle, and maps the studies into Coworld variants.
+
 **The ten-study method-replication target is met.** [The completion review](completion-2026-10-20.md) links all ten study PRs and their qualifications.
 Brearcliffe adds the tenth: 1,600 audited native runs, both parameter interpretations, independent checks and a mixed verdict.
 
