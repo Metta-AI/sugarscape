@@ -1,5 +1,7 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+Status: **completed qualified author-code replication, with mixed findings**. [The final requirement audit](results/method-verdict-2026-10-20) verifies the complete original Sugarscape protocol and all figure analyses. Numerical benchmark results reproduce; implementation discrepancies and historical visualization/hardware qualifications remain explicit. Corrective one-condition controls are not substituted for the full-grid replay.
+
 [Update-order evidence confirms the release follows Figure 6](results/update-order-evidence-2026-10-20), while section 4.3 describes movement first. Complete native first-step states show the ambiguity can affect access to resources before death. Both interpretations remain explicit; no layer swap or new simulation was performed.
 
 [All nine initializer controls passed native audits](results/initializer-native-complete-2026-10-20), covering 5,216,793 post-step records and 589,824 initial cells. Independent R reproduces every landscape; both historical baseline trajectories repeat exactly. Final populations differ across the declared alternatives, which remain separately labelled. Broader method qualifications remain.
@@ -25,8 +27,7 @@ The completed audit above supersedes its pending-validation status.
 
 [Stated-method controls are prepared](results/method-controls-prepared-2026-10-19) for state transfer, cardinal movement and nonpositive-wealth death. All five source variants reproduce byte-for-byte and pass patch reversal. They remain uncompiled and unexecuted; the historical replay is unchanged.
 
-Status: **incomplete; full native grid audited, model fidelity under investigation**.
-No completed-study credit. This study adds to the existing replication program.
+Earlier status: incomplete while model-fidelity checks were pending. The final requirement audit above supersedes that status; all discrepancies remain documented.
 [Complete native benchmark](results/full-native-complete-2026-10-18): **84/84 conditions**; all **6,600 population records** and **162 resolution rows** match the author archive exactly.
 [The complete state audit](results/state-observer-complete-2026-10-18) reconciles 893,017 observations after resolving a cross-toolchain initializer mismatch.
 It confirms lost wealth/metabolism transfers and unresolved agents omitted from reported population.

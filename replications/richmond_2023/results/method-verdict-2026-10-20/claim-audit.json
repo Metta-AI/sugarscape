@@ -1,0 +1,105 @@
+{
+  "status": "completed-qualified-author-code-replication",
+  "scope": "Complete Sugarscape case study, section4.3 and Figures6/11; separate Boids/Circles framework studies excluded as originally declared.",
+  "criterion": "Faithful execution and validation of the paper-linked released method with investigated discrepancies. Exact historical numerical agreement is not required.",
+  "claims": [
+    {
+      "id": "source_and_runtime",
+      "requirement": "Pinned released benchmark and engine, full unmodified experiment, declared replacement hardware.",
+      "evidence": "full-native-complete-2026-10-18/artifact.json",
+      "evidence_sha256": "fe94e390ad0eea7dacba83411af74bb368a9915527ca6314db73a0034c9008ed",
+      "assessment": "satisfied-qualified",
+      "finding": "H100/CUDA11.8/GCC11.4 differs from archived V100/CUDA11.0/GCC9.3; no historical absolute-time claim."
+    },
+    {
+      "id": "full_native_protocol",
+      "requirement": "All84 original conditions and complete requested step counts.",
+      "evidence": "full-native-complete-2026-10-18/audit.json",
+      "evidence_sha256": "33a5ed4e7e424af5e98e941c8a91b6b982b7bf3478d001e7a3605456e3653797",
+      "assessment": "satisfied",
+      "finding": "Fresh native audit: exit0,84conditions,6600step records,162resolution rows; no shortened substitute."
+    },
+    {
+      "id": "aggregation",
+      "requirement": "Recompute all native population and timing means.",
+      "evidence": "full-native-complete-2026-10-18/audit.json",
+      "evidence_sha256": "33a5ed4e7e424af5e98e941c8a91b6b982b7bf3478d001e7a3605456e3653797",
+      "assessment": "satisfied",
+      "finding": "All132 aggregate means checked under recorded decimal-rounding bounds."
+    },
+    {
+      "id": "figure11a",
+      "requirement": "Reconstruct population across original conditions and compare the archive.",
+      "evidence": "full-native-complete-2026-10-18/comparison.json",
+      "evidence_sha256": "b380226d1e294c1ace1549489b9f57beeda1aad9988bea542f8706df8934afd4",
+      "assessment": "satisfied-positive",
+      "finding": "All6600 population records match; same source-defined occupied-only metric, not total surviving agents."
+    },
+    {
+      "id": "figure11b",
+      "requirement": "Reconstruct stored resolution curves and retain measurement qualifications.",
+      "evidence": "native-figures-2026-10-18/audit.json",
+      "evidence_sha256": "49480a4726de889d9f497a6252184ceadb430ddc5d9180fdf4bd51593c6efefb",
+      "assessment": "satisfied-qualified",
+      "finding": "All162rows match; unused first bin, off-by-one labels, integer truncation and unobserved forced-exit round remain explicit. These curves cannot prove every agent resolved."
+    },
+    {
+      "id": "figure11c",
+      "requirement": "Reconstruct timing scaling with hardware and seed uncertainty disclosed.",
+      "evidence": "native-figures-2026-10-18/audit.json",
+      "evidence_sha256": "49480a4726de889d9f497a6252184ceadb430ddc5d9180fdf4bd51593c6efefb",
+      "assessment": "satisfied-qualified",
+      "finding": "All16widths/3seeds used; observed seed ranges, not confidence intervals. Linear fits descriptive; no cross-hardware speedup or absolute-time equivalence."
+    },
+    {
+      "id": "figure11def",
+      "requirement": "Reconstruct initial,first,fiftieth states and compare fixed-grid image classes.",
+      "evidence": "native-image-comparison-2026-10-18/audit.json",
+      "evidence_sha256": "8c7e3116f91c201a6642c68e9bc5f754abfcdc111f392844932e64b82e7a10d6",
+      "assessment": "satisfied-discrepant",
+      "finding": "All3 requested states compared; images differ. Complete native state accounting and Clang/RNG/frame controls investigate causes without selecting a match. Historical image executable remains unknown."
+    },
+    {
+      "id": "figure6",
+      "requirement": "Compare dependency graph, messages, mapping and exit behavior.",
+      "evidence": "figure6-structure-2026-10-17/audit.json",
+      "evidence_sha256": "565c7f726b9b926ff2319ab167569a87aa89959be54415205cb23c5add242ce7",
+      "assessment": "satisfied-mixed",
+      "finding": "Graph matches. Native unresolved agents contradict an unconditional all-resolved interpretation; counter reset controls isolate carryover in the observed condition."
+    },
+    {
+      "id": "state_fidelity",
+      "requirement": "Audit collisions,identities,resource accounting,transfers and resolution completion.",
+      "evidence": "state-observer-complete-2026-10-18/transitions.json",
+      "evidence_sha256": "30e389577da59439766cf998c01536915e1bf80265f1d2c080ea8ed56703916f",
+      "assessment": "satisfied-discrepant",
+      "finding": "101snapshots have unique identities/positions; independent accounting validates881753 post-step records. Released transfer omission,diagonal moves and unresolved statuses are observed, not inferred from plot mismatch."
+    },
+    {
+      "id": "discrepancy_controls",
+      "requirement": "Investigate implementation differences with declared native controls.",
+      "evidence": "initializer-native-complete-2026-10-20/native-audit.json",
+      "evidence_sha256": "3d3bd4fe34b917fec9a1b4d16bd53692528707b9e6b93d40bc0fcd6e91844585",
+      "assessment": "satisfied-qualified",
+      "finding": "Five rule controls,four counter controls,nine initializer controls retain exact repeated baselines. Nine initializer audits cover5216793records and589824cells with independent R landscapes. Alternatives are diagnostics,not substituted full-grid runs."
+    },
+    {
+      "id": "published_ambiguity",
+      "requirement": "Retain contradictory parameter and update-order interpretations.",
+      "evidence": "update-order-evidence-2026-10-20/source-comparison.json",
+      "evidence_sha256": "23a2701bfc638f8a06f048c2083776b1ca9897d5245a34899eeeeffc679efc45",
+      "assessment": "satisfied-qualified",
+      "finding": "Figure6 agrees with metabolism-first source; section4.3 describes movement-first. No single corrected interpretation or best-fitting variant is asserted."
+    }
+  ],
+  "fresh_recheck": "verification.json",
+  "interpretation": "Completed mixed replication study: full released numerical workflow reproduces; original source violates several stated model properties; historical illustrations and absolute timings remain qualified. This is not a faithful implementation of every contradictory prose specification or a corrected full-grid benchmark.",
+  "remaining_qualifications": [
+    "Historical image executable,compiler and random-stream provenance remain unknown.",
+    "Different GPU/toolchain prevents historical absolute-time equivalence.",
+    "Observed destinations condition independent state accounting; it is not an independent engine or conflict-winner replay.",
+    "Corrected-rule controls cover one seed/condition and do not establish corrected full-grid population/scaling results.",
+    "Prose,diagram and parameter descriptions do not identify a unique corrected model."
+  ],
+  "completion_reason": "All original Sugarscape protocol deliverables have execution,analysis and discrepancy evidence. Remaining uncertainties limit interpretation; requiring exact pictures or a chosen correction would replace the accepted method-reproduction criterion."
+}
