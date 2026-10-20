@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-calibration-runtime-001/audit.py", line 62, in <module>
+    assert math.isclose(loss, float(result["ad_loss"]), rel_tol=1e-10, abs_tol=1e-10)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

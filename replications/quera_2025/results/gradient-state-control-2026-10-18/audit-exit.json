@@ -1,0 +1,6 @@
+{
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "ERROR: LoadError: AssertionError: all(isfinite, current) && current[:, 3] == current[:, 4]\nStacktrace:\n [1] top-level scope\n   @ ~/Code/workspace/sugarscape-quera/replications/quera_2025/verify_gradient_states.jl:47\nin expression starting at /Users/relh/Code/workspace/sugarscape-quera/replications/quera_2025/verify_gradient_states.jl:11\n",
+  "elapsed_seconds": 2.5160709169867914
+}

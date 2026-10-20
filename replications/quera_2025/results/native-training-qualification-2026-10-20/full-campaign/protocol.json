@@ -1,0 +1,97 @@
+{
+  "frozen_at": "2026-10-20T03:16:41.856078+00:00",
+  "purpose": "Full declared reconstructed calibration for both paper estimators, not historical numerical identity",
+  "author_method": {
+    "agents": 100,
+    "grid": [
+      25,
+      25
+    ],
+    "stored_states": 50,
+    "vision": [
+      1,
+      6
+    ],
+    "regeneration": 1,
+    "channels": [
+      "mean wealth across initial agents",
+      "alive fraction"
+    ],
+    "MMD_samples": 2,
+    "Monte_Carlo_samples": 5,
+    "flow_layers": 4,
+    "flow_blocks": 2,
+    "flow_hidden_units": 32,
+    "optimizer": "AdamW",
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "gradient": "unit L2 normalization each step",
+    "full_epochs": 5000,
+    "early_stopping": false,
+    "checkpoint_selection": "lowest held-out validation loss"
+  },
+  "reconstruction": {
+    "prior": "p1 Uniform(0,1), p6=1-p1; each Beta shape independently Uniform(0.1,10)",
+    "flow_dimensions": 5,
+    "flow_dimensions_reason": "Vision probability vector has one independent degree of freedom; prior/parameterization not recovered from author artifacts",
+    "learning_rate": 0.0005,
+    "learning_rate_evidence": "figure filename hint only",
+    "weight_decay": 0.01,
+    "weight_decay_evidence": "explicit reconstruction, not filename w",
+    "adam_epsilon": 1e-08,
+    "adam_couple": true,
+    "loss_w": 0.0001,
+    "training_observation_seed": 0,
+    "validation_observation_seed": 1,
+    "training_seed": 20261022,
+    "validation_random_seed": 20261023,
+    "validation_MC_samples": 5,
+    "validation_rule": "fixed common random numbers each epoch, preserve both training RNG states; mean negative pseudo-log-likelihood on independent seed1 observation",
+    "initialization": "same Julia and torch seeds for both estimator arms; default author flow initialization",
+    "estimators": [
+      "pathwise",
+      "VarGrad"
+    ],
+    "paired_adapter": "restores same simulator RNG for value/Jacobian"
+  },
+  "full_campaign": {
+    "frozen_at": "2026-10-20T03:24:43.929292+00:00",
+    "methods": [
+      "pathwise",
+      "VarGrad"
+    ],
+    "epochs_per_method": 5000,
+    "order": "sequential pathwise then VarGrad",
+    "maximum_seconds_per_method": 86400,
+    "local_workers": 1,
+    "minimum_free_bytes": 12884901888,
+    "requires_qualification": "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-training-qualification-001/qualification.json",
+    "requires_native_pathwise_exit_zero": "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-training-qualification-001/pathwise-exit.json",
+    "optimizer_audit": "All19114 parameters for all5000updates per method, using same tolerances as qualification",
+    "posterior_plan": {
+      "draws_per_distribution": 1000,
+      "distributions": [
+        "declared prior",
+        "best pathwise posterior",
+        "best VarGrad posterior",
+        "true parameters predictive control"
+      ],
+      "torch_seed": 20261024,
+      "prior_rng_seed": 20261026,
+      "simulator_seeds": "10000..10999 shared across distributions",
+      "summaries": "two channels at all50storedstates; pointwise2.5/50/97.5percentiles and means; coverage of fixed observedseed0, RMSE of predictive mean; six physical parameter marginals with p6=1-p1",
+      "selection": "minimum fixed validation loss, not final epoch or visual agreement",
+      "claims": "Compare reconstructed methods; no selection for matching published plots"
+    },
+    "cloud_reservation_usd": 0,
+    "source_sha256": {
+      "model.jl": "e0b1a356caec332b6f85d47dd08b9bb66c3dd55a873db87ba1149a4c61c7d2ac",
+      "train.jl": "b73a7cf3a7d069aeaf64f405396d699d0816e06067c895f22c2591b652f93f1e",
+      "audit_training.py": "f0ef7a666d1f8c3592b5c308a7db9ae01839ac8b9a56979f74d63aa6738b3fa5",
+      "run_full.py": "dff6dee6a11784f349d64419588777668bf754a45da59ddf220e63e1e163309d",
+      "predict.jl": "fbb154da4c6ae172dbdaeedef4fb461cfa49f97c70c00e16a730e3c58844735e"
+    }
+  }
+}

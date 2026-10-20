@@ -1,0 +1,9 @@
+{
+  "reviewed_figures": {
+    "predictive.pdf": "ce7803984991174185ee54a5dbc73520edc38d8f4e84dd76f8fe1f0d3660347b",
+    "posterior-pairs.pdf": "c61f9784b25305ff379066de6b52359762aa32ed3a24e93d9b2754adffb0a8aa",
+    "training.pdf": "27843b8b89a963c43dc2c96eb6bfe1a08d40e57a5f5cd931d6e8ee4c99b4c719"
+  },
+  "review": "Rendered each PDF and inspected axes, labels, retained epochs, bands and parameter panels. Corrected clipped parameter labels in a separate renderer; original preserved. Predictive raster unchanged and all input hashes unchanged.",
+  "limits": "One optimizer seed per arm; reconstructed priors and validation. Pointwise intervals are not simultaneous coverage. Posterior plots do not establish parameter recovery."
+}

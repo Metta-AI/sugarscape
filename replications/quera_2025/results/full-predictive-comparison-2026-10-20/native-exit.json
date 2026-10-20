@@ -1,0 +1,13 @@
+{
+  "exit_code": 0,
+  "command": [
+    "/opt/homebrew/bin/gtimeout",
+    "--signal=TERM",
+    "--kill-after=30",
+    "7200",
+    "/Users/relh/Code/workspace/sugarscape-replication-tools/julia-1.11.3-runtime-001/julia-1.11.3/bin/julia",
+    "--startup-file=no",
+    "--project=/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-calibration-runtime-001/environment",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-full-calibration-001/predict.jl"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "replications/quera_2025/replay_movement.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-gradient-movement-001/missing-seed-control",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-gradient-ensemble-001",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-gradient-movement-001/must-not-pass",
+    "--profile",
+    "gradient-ensemble"
+  ],
+  "exit_code": 1,
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-quera/replications/quera_2025/replay_movement.py\", line 29, in <module>\n    assert hashlib.sha256((args.trace / name).read_bytes()).hexdigest() == digest\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py\", line 1050, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-gradient-movement-001/missing-seed-control/seed-258-cells.csv'\n",
+  "missing_seed_rejected": true
+}

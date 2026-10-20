@@ -1,0 +1,28 @@
+{
+  "methods": [
+    "pathwise",
+    "VarGrad"
+  ],
+  "epochs_each": 3,
+  "native_workflows_audited": true,
+  "initial_flows_byte_identical": true,
+  "corrupted_optimizer_update_rejected": true,
+  "timings": {
+    "pathwise": {
+      "first_epoch_including_compilation_seconds": 196.062185049057,
+      "later_epoch_seconds": [
+        9.893849849700928,
+        2.992913007736206
+      ]
+    },
+    "vargrad": {
+      "first_epoch_including_compilation_seconds": 79.30291390419006,
+      "later_epoch_seconds": [
+        2.1946470737457275,
+        0.8155410289764404
+      ]
+    }
+  },
+  "full_training_launched": false,
+  "scope": "Complete native optimizer qualification, not full calibration or paper replication."
+}

@@ -1,0 +1,49 @@
+{
+  "input_sha256": {
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-movement-trace-001/native/seed-0-parameters.csv": "56eadb5bfbad6e7286292a758ce9160528f27ba425dc7f703289a940a736c79b",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-movement-trace-001/native/seed-0-agents.csv": "b4ff22d04bb891efe23b0009a35c8528b2a2d20725f11120c43ba6922e5d5210",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-movement-trace-001/native/seed-1-parameters.csv": "a1197f8b51b660e061d498d299f6937a84d2c16b2a9a4888fae2967e0c5ca2a4",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-movement-trace-001/native/seed-1-agents.csv": "85505a27470643b0ca1589f25786269fef5e18e97fcc71961f0c2b42ef5b8c13",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-movement-trace-001/native/seed-2-parameters.csv": "48241eac9952d52a01d1df452e8fd5c112049f2c1c14e8b5f6f1047477e83262",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-movement-trace-001/native/seed-2-agents.csv": "a63d0e8b12228d93fae0bc71ca2107b7726a9d3ce81abf1ae8330545dd54e2b9",
+    "/Users/relh/Code/workspace/sugarscape-diffabm-jmlr/src/diff_utils.jl": "24e61470f4c3a6776635ccf517daa1939e136f03eb9b14f5137aecd2b7f8488a",
+    "/Users/relh/Code/workspace/sugarscape-diffabm-jmlr/src/SugarScape.jl": "d75bdd16ca51dd30851e794a490531c960a0445ccb44153b4ad624882f5b4959"
+  },
+  "distribution_derivation": "For U uniform(0,1), X=(1-U^(1/b))^(1/a) has F(x)=1-(1-x^a)^b and E[X^r]=b*B(1+r/a,b). This is the native formula, not the Beta(a,b) CDF.",
+  "parameters": {
+    "metabolism": {
+      "alpha": 2,
+      "beta": 5,
+      "offset": 2,
+      "scale": 2,
+      "native_unit_mean": 0.3694083694083694,
+      "beta_unit_mean": 0.2857142857142857,
+      "native_scaled_mean": 2.738816738816739,
+      "beta_scaled_mean": 2.571428571428571,
+      "native_scaled_variance": 0.1208164931108654,
+      "beta_scaled_variance": 0.10204081632653061,
+      "grid_max_cdf_difference": 0.20468434655818502,
+      "grid_max_location": 0.31607,
+      "observed_agents": 300,
+      "observed_mean": 2.754051049259745
+    },
+    "wealth": {
+      "alpha": 5,
+      "beta": 2,
+      "offset": 6,
+      "scale": 19,
+      "native_unit_mean": 0.7575757575757577,
+      "beta_unit_mean": 0.7142857142857143,
+      "native_scaled_mean": 20.393939393939398,
+      "beta_scaled_mean": 19.57142857142857,
+      "native_scaled_variance": 7.695461104551949,
+      "beta_scaled_variance": 9.209183673469388,
+      "grid_max_cdf_difference": 0.11581372855005623,
+      "grid_max_location": 0.7412700000000001,
+      "observed_agents": 300,
+      "observed_mean": 20.310633144679375
+    }
+  },
+  "cdf_grid_points": 100001,
+  "scope": "Analytic source-law comparison and descriptive initialization from three previously validated full native trajectories. Offsets/scales are held at native values to isolate distribution choice. No simulation correction, fitted posterior, statistical rejection, or paper-level replication verdict."
+}

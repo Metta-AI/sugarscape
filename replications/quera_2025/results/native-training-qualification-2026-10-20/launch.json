@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-20T03:21:02.113537+00:00",
+  "tool_session": 61291,
+  "native_pid": 76976,
+  "timeout_seconds": 1800,
+  "method": "pathwise",
+  "epochs": 3,
+  "output": "pathwise-001",
+  "environment": "../quera-calibration-runtime-001/environment",
+  "source_sha256": {
+    "model.jl": "e0b1a356caec332b6f85d47dd08b9bb66c3dd55a873db87ba1149a4c61c7d2ac",
+    "train.jl": "b73a7cf3a7d069aeaf64f405396d699d0816e06067c895f22c2591b652f93f1e",
+    "audit_training.py": "57a58bb8cd07ad3d4e605c3eb28cab6cd15bb25bc991fce04086631922fa2321",
+    "protocol.json": "34cfa3b3df49f8b14a035fe26401e93461f8f56992700e9fe39e945caf38cd96"
+  },
+  "new_cloud_reservation_usd": 0,
+  "scope": "Bounded native method qualification; no full calibration launched"
+}

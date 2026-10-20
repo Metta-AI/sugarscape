@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/quera-full-calibration-001/audit_training.py", line 34, in <module>
+    assert np.isclose(norm, float(row["gradient_norm"]), rtol=2e-6, atol=1e-8)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

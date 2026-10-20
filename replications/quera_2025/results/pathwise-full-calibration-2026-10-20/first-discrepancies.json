@@ -1,0 +1,56 @@
+{
+  "failures": [
+    {
+      "epoch": 4,
+      "float64_norm": 425.0451141838322,
+      "reported_norm": 425.0442,
+      "float32_numpy_norm": 425.0450439453125,
+      "relative_error": 2.1507924728493577e-06,
+      "finite": true,
+      "nonzero_components": 7455,
+      "max_abs_gradient": 106.78767
+    },
+    {
+      "epoch": 5,
+      "float64_norm": 661.7009537218275,
+      "reported_norm": 661.69867,
+      "float32_numpy_norm": 661.7008666992188,
+      "relative_error": 3.4512899138312375e-06,
+      "finite": true,
+      "nonzero_components": 7495,
+      "max_abs_gradient": 164.9357
+    },
+    {
+      "epoch": 6,
+      "float64_norm": 776.6058543885408,
+      "reported_norm": 776.6042,
+      "float32_numpy_norm": 776.605712890625,
+      "relative_error": 2.1302808000730333e-06,
+      "finite": true,
+      "nonzero_components": 7658,
+      "max_abs_gradient": 178.8487
+    },
+    {
+      "epoch": 7,
+      "float64_norm": 708.0010644154903,
+      "reported_norm": 707.9983,
+      "float32_numpy_norm": 708.0009765625,
+      "relative_error": 3.904535782887606e-06,
+      "finite": true,
+      "nonzero_components": 7486,
+      "max_abs_gradient": 162.53842
+    },
+    {
+      "epoch": 8,
+      "float64_norm": 1026.9213267502903,
+      "reported_norm": 1026.9172,
+      "float32_numpy_norm": 1026.921142578125,
+      "relative_error": 4.018565183816514e-06,
+      "finite": true,
+      "nonzero_components": 7848,
+      "max_abs_gradient": 218.1094
+    }
+  ],
+  "scope": "Initial diagnosis only; original validator and native output unchanged.",
+  "elapsed_seconds": 0.015786170959472656
+}
