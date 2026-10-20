@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T02:43:31.420317+00:00",
+  "as_of": "2026-10-20T03:14:19.523829+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -162,20 +162,20 @@
     {
       "study": "quera_2025",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
-      "checked_commit": "20c64c1e45e7857e5e4ac8b1de75c1246e3072ab",
+      "checked_commit": "e4a079c562e18f54b25bf181193b5556d7cca6a4",
       "status": "partial",
       "readme": "replications/quera_2025/README.md",
-      "readme_sha256": "55e18fceac73ee0438b48466f49545959980a3ea47f5d44628fd9d2e49a28c26",
-      "remaining_scope": "All 256 baseline seeds and 9,216 perturbed diagnostic cases independently replayed. Perturbed grid exhausts six parameters, three finite-difference steps and two signs: 22,118,400 agent updates and 552,960,000 cell updates, zero state error. Native passive parity and archived aggregate comparisons pass. Full 1.91GB trace upload exited zero. Remote checksum manifest read back and matched local bytes; individual remote objects have not been independently read back. 144,536 outside-mask and 8,001 occupied-destination moves retained as source behavior. Historical Figure11 protocol, prior/loss/validation configuration and full 5,000-epoch calibration remain unresolved. No completion credit. Independent PDF and SVG extraction reconciles 7,549 loss-path vertices within 0.002743 PDF points. All four plotted paths span iterations 0\u20132999, versus 5,000 epochs in the appendix. Smoothing and train/validation roles remain unknown; this is a protocol question, not evidence of early stopping. Author-contact draft awaits explicit permission.",
+      "readme_sha256": "a7cf7e2906ac1cca9340acf1d86d731bc7d8c863701beec54b8347d64de3342f",
+      "remaining_scope": "Full gradient-baseline and perturbation state replay retained. Coupled native calibration qualification identifies original value/Jacobian random-draw mismatch, verified by passive trace. Separate corrected adapter passes two-channel loss/six-gradient arithmetic checks, negative controls, and fresh archive re-audit. Prior seed-zero trajectories remain byte-identical despite explicitly reconstructed coupled dependencies. Twenty finite flow samples. No optimization yet; five-sample5000-epoch training, prior/validation reconstruction, posterior comparisons and gradient-figure interpretation remain incomplete. No negative paper verdict or completed-study credit.",
       "validation": {
         "states": 150,
         "agent_observations": 15000,
         "cell_observations": 93750,
         "portable_trajectory_files_byte_identical": 9
       },
-      "json_evidence_files": 80,
+      "json_evidence_files": 96,
       "gzip_json_evidence_files": 1,
-      "checked_at": "2026-10-19T00:48:19.796215+00:00",
+      "checked_at": "2026-10-20T03:14:19.523829+00:00",
       "gradient_baseline_validation": {
         "seeds": 256,
         "agent_updates": 614400,
@@ -281,15 +281,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "5d7119b55bde1faca7a3db074b64f1ab886820b9",
+      "checked_commit": "47b0ea197b7e1af7350340cf55a69da6740e90ee",
       "status": "running",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "9d02cbe0b0480922d9797c1530b71e0217b4810923f82a71ba355681967aec47",
-      "json_evidence_files": 590,
-      "gzip_json_evidence_files": 32,
-      "checked_at": "2026-10-20T02:08:58.652883+00:00",
+      "readme_sha256": "a8a6e210d71b65e4e6bd670aeeb70302c75096e277f18dfd2de1e32d5f5e376c",
+      "json_evidence_files": 601,
+      "gzip_json_evidence_files": 33,
+      "checked_at": "2026-10-20T03:14:19.523829+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "1,302 full inputs and 26,041,302 observations audited: all 800 released-code and 502 paper-table inputs. The complete paper-table Q/EC cohort adds 50 inputs; independent R checks and fresh storage readback pass. Thirteen endpoint mean ranges overlap readable raster bands; remaining EC vision mean range does not, but its pointwise bootstrap interval overlaps. All 50 paired trajectories differ from released-code controls. Both parameter interpretations remain explicit; no historical setting is selected by agreement. Another 298 paper-table inputs and complete claim synthesis remain. Original bounded producer continues; next Q/Q cohort observed at 2/50, collector prepared but not launched. No whole-study completion credit. Ten complete paired cohorts now have independently verified common-target comparisons: 140 endpoints, 102 overlaps under both settings, eight paper-only, one released-only, eighteen neither, eleven unresolved. All 200 non-learning paired trajectories are exact; all 300 learning trajectories differ. Initial R verifier wrongly included an excluded mislabeled panel; corrected to use source status, with failure retained and primary output unchanged. No parameter selection or added simulation coverage."
+      "remaining_scope": "Audited 1352 inputs/27041352 observations: all800 released settings and552 paper-table settings. Eleven complete paper-table cohorts;248 paper-table inputs and final claim synthesis remain. Latest Q/Q cohort50runs passes full trajectories, independent R and fresh storage readback. Seven readable endpoint raster overlaps, one maximum-age nonoverlap, six unresolved; no negative verdict. Existing ten-pair common-target synthesis remains scoped to ten pairs. Both learning-parameter interpretations retained; historical seeds/settings unresolved."
     },
     {
       "study": "need_for_greed_2024",
