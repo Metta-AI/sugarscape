@@ -174,18 +174,23 @@ The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specifi
 
 ## Remaining work
 
-The latest full audit covers all 800 released-code inputs and 600/800 paper-table inputs.
-Complete and audit the remaining 200 paper-table inputs. The released-code ensemble and its bounded recovery have completed.
-The original paper-table producer continues on its frozen assignment. Completed producer entries receive coverage only after independent trajectory audits.
-All sixteen method pairings already passed native recorder qualification; the Rule M control also matches across both parameter interpretations for all 50 seeds.
+The latest full audit covers all 800 released-code inputs and 700/800 paper-table inputs.
+The remaining cohorts are SARSA/Q-learning and SARSA/SARSA, with fifty inputs each.
+Producer completion alone does not count: each cohort requires a full trajectory audit, independent R summaries, and fresh storage verification.
+The released-code ensemble and its bounded recovery have completed. Preserve failed attempts separately from successful inputs.
 
-For each remaining complete 50-seed cohort, verify means, sample standard deviations and whole-run bootstrap intervals independently in R.
-Compare all Figures 3–9 using the corrected horizontal calibration and retain unreadable or mislabeled paper segments as unresolved.
-Synthesize the complete pairings before assessing the paper's conclusions; partial endpoint overlaps do not establish equivalence.
+After both remaining cohorts pass those checks:
 
-Investigate discrepancies across the released-code and paper-table parameter settings without selecting whichever better matches a figure.
-Original paper seeds and between-run uncertainty remain unavailable. Preserve that limitation and distinguish source/measurement discrepancies from implementation errors.
-The study remains incomplete until the declared ensembles and figure comparisons are finished and discrepancies have been investigated.
+- Run the sixteen-pair parameter comparison and independent R verification using the corrected Figure 3–9 calibration.
+- Finish the paper-table Q-learning/SARSA and homogeneous-pair contrasts, then synthesize them with the completed Rule M and EC analyses.
+- Review every discrepancy against native recorder qualification, parameter settings, breed mapping, and readable paper targets.
+- Publish a method-level verdict that distinguishes implementation fidelity, directional findings, and unresolved historical numerical agreement.
+
+Use both parameter interpretations without selecting whichever better matches a figure.
+Original paper seeds and between-run uncertainty remain unavailable. Mislabeled, duplicated, or unreadable figure segments remain unresolved.
+Pointwise bootstrap intervals and raster overlap do not establish equivalence; the paper supplies no numerical equivalence margin.
+A faithful method replication can complete despite numerical disagreement, provided discrepancies and reconstruction choices are documented.
+The study remains incomplete until the declared ensembles, independent checks, and synthesis are finished.
 
 ## Complete-cohort curve comparison
 
