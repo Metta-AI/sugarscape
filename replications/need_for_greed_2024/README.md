@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[The fourteenth Table IV checkpoint](results/table4-fourteenth-prefix-2026-10-20) adds 25 audited inputs and 125,025 observations. Coverage reaches 982 inputs and 3,895,456 observations; the active row reaches 477/500. Tables I–III remain unchanged. The full sweep still requires 9,518 inputs.
+
 [The fourth unassigned-shard checkpoint](results/unassigned-fourth-checkpoint-2026-10-20) adds 25 audited inputs and 125,025 observations. Coverage reaches 957 inputs and 3,770,431 observations; 9,543 sweep inputs remain. Tables I–III remain unchanged. The separately running Table IV row remains at 452/500.
 
 [The thirteenth Table IV checkpoint](results/table4-thirteenth-prefix-2026-10-20) adds 25 audited inputs and 125,025 observations. Coverage reaches 932 unique inputs and 3,645,406 observations; the active row reaches 452/500. Tables I–III remain unchanged. The full sweep still requires 9,568 inputs; no complete-row or whole-study verdict is assigned.
