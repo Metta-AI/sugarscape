@@ -1,5 +1,7 @@
 # Oremland and Laubenbacher (2014)
 
+[Passive timing instrumentation qualifies](results/timing-recorder-qualification-2026-10-20) across 48 paired inputs and all six widths, with exact native outputs and survivor hashes. A separate Table 2 benchmark retains published batch counts and waits for this task’s heavy local jobs. Qualification timings are excluded from benchmark conclusions; no completed-study credit is added.
+
 **Incomplete reconstruction. No published aggregate result has been replicated.**
 
 [Optimization of Agent-Based Models: Scaling Methods and Heuristic Algorithms](https://www.jasss.org/17/2/6.html), JASSS 17(2), 6, DOI 10.18564/jasss.2472.

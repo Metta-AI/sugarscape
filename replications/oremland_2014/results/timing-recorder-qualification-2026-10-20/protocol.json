@@ -1,0 +1,42 @@
+{
+  "frozen_at": "2026-10-20T03:35:59.240072+00:00",
+  "source_url": "https://www.jasss.org/17/2/6.html",
+  "target": "Table2 and section4.25",
+  "published_widths": [
+    50,
+    40,
+    30,
+    20,
+    10,
+    5
+  ],
+  "published_simulation_counts": [
+    50,
+    88,
+    173,
+    427,
+    1375,
+    3900
+  ],
+  "published_batch_seconds": [
+    8.51,
+    8.48,
+    8.49,
+    8.52,
+    8.53,
+    8.48
+  ],
+  "reconstruction_choices": {
+    "control": "all200tax rates0.25,phase0,unclipped",
+    "model": "frozen pixel-centers nearest reductions; area-scaled population; unscaled tax classes",
+    "qualification": "8inputs per width:two seeds across four constant rates; old/new native outputs must match apart from timing",
+    "benchmark": "three batches per width at published counts,100untimed-in-analysis warmup runs per JVM",
+    "timing": "setup,50 simulation ticks,processCPU and total instrumented interval separately; excludes file writes",
+    "platform": "existing local NetLogo5.3.1/Java11/macOS; historical hardware/configuration unknown",
+    "admission": "benchmark waits for this task current heavyweight jobs; other system activity remains measured uncertainty"
+  },
+  "no_historical_hardware_equivalence_claim": true,
+  "cloud_reservation_usd": 0,
+  "original_source_sha256": "c6ef0db7bb9528b2ea49b9110c3cf17c260abeb9f9af5f255d0f983033f88e1c",
+  "timing_source_sha256": "b2df9b33dd399ddaefce92cbe3871383c2d6243274cb6ba2b18e634b569eee44"
+}
