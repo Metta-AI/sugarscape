@@ -1,5 +1,7 @@
 # Multi-Level Mesa (Pike, 2019)
 
+[The common-resource history audit](results/common-source-history-2026-10-20) checks all eight ancestors of the selected pre-publication revision. Four policy/agent files are byte-identical in all 32 snapshots. Their pooling defect cannot be attributed to an edit within that history; historical installed dependencies and working-tree provenance remain unknown. Numerical validity still fails, and the study remains incomplete.
+
 Status: **incomplete study**. All declared native experiment grids and the controlled timing ensemble have completed their audits. Numerical validity, historical source fidelity, and several published interpretations remain unresolved.
 
 ## Current claim coverage

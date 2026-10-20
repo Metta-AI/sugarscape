@@ -1,0 +1,741 @@
+{
+  "selected_revision": "585e53398f4f58e89ec184c83bb20819f0e4c96a",
+  "ancestor_commits": 8,
+  "paths": [
+    {
+      "path": "Common Resource- one level/organization.py",
+      "first_available_commit": "0b43878119421944649e9b77c591da223250d18e",
+      "snapshots": 8,
+      "distinct_file_sha256": [
+        "c3ccfd1acbd13b54df72ba8fb72780978992820925eec65e493365f6c397e7ad"
+      ],
+      "all_function_asts_match_selected": true
+    },
+    {
+      "path": "Common Resource- one level/NetAgent.py",
+      "first_available_commit": "0b43878119421944649e9b77c591da223250d18e",
+      "snapshots": 8,
+      "distinct_file_sha256": [
+        "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb"
+      ],
+      "all_function_asts_match_selected": true
+    },
+    {
+      "path": "Common Resource- multi-level/organization.py",
+      "first_available_commit": "0b43878119421944649e9b77c591da223250d18e",
+      "snapshots": 8,
+      "distinct_file_sha256": [
+        "506e93c763def031a8aedc7bc7c48a2b34ba30f6b192f2713affddf58255bbe0"
+      ],
+      "all_function_asts_match_selected": true
+    },
+    {
+      "path": "Common Resource- multi-level/NetAgent.py",
+      "first_available_commit": "0b43878119421944649e9b77c591da223250d18e",
+      "snapshots": 8,
+      "distinct_file_sha256": [
+        "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb"
+      ],
+      "all_function_asts_match_selected": true
+    }
+  ],
+  "snapshots": [
+    {
+      "commit": "0b43878119421944649e9b77c591da223250d18e",
+      "author_date": "2019-01-31T14:27:33-04:00",
+      "committer_date": "2019-01-31T14:27:33-04:00",
+      "subject": "First Commit",
+      "files": [
+        {
+          "path": "Common Resource- one level/organization.py",
+          "present": true,
+          "sha256": "c3ccfd1acbd13b54df72ba8fb72780978992820925eec65e493365f6c397e7ad",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "group_trade": "d615c9700632c2d678f3fb5a1991588db79cfb460c5c6903566e337ef6226d68",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- one level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/organization.py",
+          "present": true,
+          "sha256": "506e93c763def031a8aedc7bc7c48a2b34ba30f6b192f2713affddf58255bbe0",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "make_link": "9220d36a9a2fa36c96828f913d5556d26916604bc63d8d3778b27467af4e7498",
+            "group_trade": "6892e8279ceb55605ab8a0e4cf787d7d2800a4d836c8e49ef1a37124985e7feb",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        }
+      ]
+    },
+    {
+      "commit": "ff1296950fde1426864bb9d8fdd32cc55e2ab386",
+      "author_date": "2019-01-31T14:29:10-04:00",
+      "committer_date": "2019-01-31T14:29:10-04:00",
+      "subject": "license",
+      "files": [
+        {
+          "path": "Common Resource- one level/organization.py",
+          "present": true,
+          "sha256": "c3ccfd1acbd13b54df72ba8fb72780978992820925eec65e493365f6c397e7ad",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "group_trade": "d615c9700632c2d678f3fb5a1991588db79cfb460c5c6903566e337ef6226d68",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- one level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/organization.py",
+          "present": true,
+          "sha256": "506e93c763def031a8aedc7bc7c48a2b34ba30f6b192f2713affddf58255bbe0",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "make_link": "9220d36a9a2fa36c96828f913d5556d26916604bc63d8d3778b27467af4e7498",
+            "group_trade": "6892e8279ceb55605ab8a0e4cf787d7d2800a4d836c8e49ef1a37124985e7feb",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        }
+      ]
+    },
+    {
+      "commit": "fc07600744dc9c06c5d1e74cd558693a730bdd87",
+      "author_date": "2019-01-31T14:34:04-04:00",
+      "committer_date": "2019-01-31T14:34:04-04:00",
+      "subject": "add license",
+      "files": [
+        {
+          "path": "Common Resource- one level/organization.py",
+          "present": true,
+          "sha256": "c3ccfd1acbd13b54df72ba8fb72780978992820925eec65e493365f6c397e7ad",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "group_trade": "d615c9700632c2d678f3fb5a1991588db79cfb460c5c6903566e337ef6226d68",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- one level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/organization.py",
+          "present": true,
+          "sha256": "506e93c763def031a8aedc7bc7c48a2b34ba30f6b192f2713affddf58255bbe0",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "make_link": "9220d36a9a2fa36c96828f913d5556d26916604bc63d8d3778b27467af4e7498",
+            "group_trade": "6892e8279ceb55605ab8a0e4cf787d7d2800a4d836c8e49ef1a37124985e7feb",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        }
+      ]
+    },
+    {
+      "commit": "26df7d9cbcd75bb8f87b860a593dbd626af0d25e",
+      "author_date": "2019-02-01T12:57:01-04:00",
+      "committer_date": "2019-02-01T12:57:01-04:00",
+      "subject": "fixed recorder/ draft submit",
+      "files": [
+        {
+          "path": "Common Resource- one level/organization.py",
+          "present": true,
+          "sha256": "c3ccfd1acbd13b54df72ba8fb72780978992820925eec65e493365f6c397e7ad",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "group_trade": "d615c9700632c2d678f3fb5a1991588db79cfb460c5c6903566e337ef6226d68",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- one level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/organization.py",
+          "present": true,
+          "sha256": "506e93c763def031a8aedc7bc7c48a2b34ba30f6b192f2713affddf58255bbe0",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "make_link": "9220d36a9a2fa36c96828f913d5556d26916604bc63d8d3778b27467af4e7498",
+            "group_trade": "6892e8279ceb55605ab8a0e4cf787d7d2800a4d836c8e49ef1a37124985e7feb",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        }
+      ]
+    },
+    {
+      "commit": "de1882e66f58c578fe2908fe354e209332379f02",
+      "author_date": "2019-02-01T13:11:40-04:00",
+      "committer_date": "2019-02-01T13:11:40-04:00",
+      "subject": "remove unnecessary",
+      "files": [
+        {
+          "path": "Common Resource- one level/organization.py",
+          "present": true,
+          "sha256": "c3ccfd1acbd13b54df72ba8fb72780978992820925eec65e493365f6c397e7ad",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "group_trade": "d615c9700632c2d678f3fb5a1991588db79cfb460c5c6903566e337ef6226d68",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- one level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/organization.py",
+          "present": true,
+          "sha256": "506e93c763def031a8aedc7bc7c48a2b34ba30f6b192f2713affddf58255bbe0",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "make_link": "9220d36a9a2fa36c96828f913d5556d26916604bc63d8d3778b27467af4e7498",
+            "group_trade": "6892e8279ceb55605ab8a0e4cf787d7d2800a4d836c8e49ef1a37124985e7feb",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        }
+      ]
+    },
+    {
+      "commit": "35da4d3ddd8e6ee548ca1bfa245c28e82f0a6c47",
+      "author_date": "2019-02-02T16:38:46-04:00",
+      "committer_date": "2019-02-02T16:38:46-04:00",
+      "subject": "completed reruns and analysis",
+      "files": [
+        {
+          "path": "Common Resource- one level/organization.py",
+          "present": true,
+          "sha256": "c3ccfd1acbd13b54df72ba8fb72780978992820925eec65e493365f6c397e7ad",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "group_trade": "d615c9700632c2d678f3fb5a1991588db79cfb460c5c6903566e337ef6226d68",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- one level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/organization.py",
+          "present": true,
+          "sha256": "506e93c763def031a8aedc7bc7c48a2b34ba30f6b192f2713affddf58255bbe0",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "make_link": "9220d36a9a2fa36c96828f913d5556d26916604bc63d8d3778b27467af4e7498",
+            "group_trade": "6892e8279ceb55605ab8a0e4cf787d7d2800a4d836c8e49ef1a37124985e7feb",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        }
+      ]
+    },
+    {
+      "commit": "0596a3fa088ecf9cff9fb43cfb11b9908e522942",
+      "author_date": "2019-02-08T15:33:11-04:00",
+      "committer_date": "2019-02-08T15:33:11-04:00",
+      "subject": "Update folder names",
+      "files": [
+        {
+          "path": "Common Resource- one level/organization.py",
+          "present": true,
+          "sha256": "c3ccfd1acbd13b54df72ba8fb72780978992820925eec65e493365f6c397e7ad",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "group_trade": "d615c9700632c2d678f3fb5a1991588db79cfb460c5c6903566e337ef6226d68",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- one level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/organization.py",
+          "present": true,
+          "sha256": "506e93c763def031a8aedc7bc7c48a2b34ba30f6b192f2713affddf58255bbe0",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "make_link": "9220d36a9a2fa36c96828f913d5556d26916604bc63d8d3778b27467af4e7498",
+            "group_trade": "6892e8279ceb55605ab8a0e4cf787d7d2800a4d836c8e49ef1a37124985e7feb",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        }
+      ]
+    },
+    {
+      "commit": "585e53398f4f58e89ec184c83bb20819f0e4c96a",
+      "author_date": "2019-02-11T11:23:48-04:00",
+      "committer_date": "2019-02-11T11:23:48-04:00",
+      "subject": "name update",
+      "files": [
+        {
+          "path": "Common Resource- one level/organization.py",
+          "present": true,
+          "sha256": "c3ccfd1acbd13b54df72ba8fb72780978992820925eec65e493365f6c397e7ad",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "group_trade": "d615c9700632c2d678f3fb5a1991588db79cfb460c5c6903566e337ef6226d68",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- one level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/organization.py",
+          "present": true,
+          "sha256": "506e93c763def031a8aedc7bc7c48a2b34ba30f6b192f2713affddf58255bbe0",
+          "function_ast_sha256": {
+            "__init__": "416ede6b8aad96f19f1c3486ba91fc62c6d80f533ed8cf193171f11f1f542d3f",
+            "calc_accumulations": "e5189aea93f1eed6fd1ccb4576dec6dc55bb9e82d444c166dd1f779a9d43a59b",
+            "find_trader": "b5e441d8c6c6594e2fc94c4d666706b4636b109c26a6c77f2dce34dfd67557cf",
+            "make_link": "9220d36a9a2fa36c96828f913d5556d26916604bc63d8d3778b27467af4e7498",
+            "group_trade": "6892e8279ceb55605ab8a0e4cf787d7d2800a4d836c8e49ef1a37124985e7feb",
+            "sub_step": "cafa1bf50ce3cebb3e69b4a98e8f0a826ec965045e8952eb48c5c03d8e9ae7df",
+            "sub_step2": "c3277e34cd7c1757015e9656c77dfc81e0d3e688de067faeee346bb9b0411f9b",
+            "step": "4f1950cfa9d2340f69240a80c7ec663e9ee21c2131316036c7d9018f793368a8"
+          }
+        },
+        {
+          "path": "Common Resource- multi-level/NetAgent.py",
+          "present": true,
+          "sha256": "d501f541027f37de9b1f56d7a1e382a58d51386a9e0a5c5b8b85ec73271bdffb",
+          "function_ast_sha256": {
+            "__init__": "7c2ee565d92c7cba599ad3c809f1114c8eff47c3443161d187dd7498e9332e8a",
+            "__str__": "349b593c03e62e4d761db7623942c40deb26fb1af3277aaacdf8ef85c2ad2919",
+            "calc_MRS": "2a1eed3dc67143da0aa342c6a2a095791314e98a77d82edf9002115712d66c59",
+            "calc_welfare": "29c9c211bf402f66fd577cc74b1cefce1f09122a48b82c8429caf42a5d92c7f2",
+            "get_distance": "e83f10f5b25b6d518243b5ea387701d2de3beff1cd337989d538382e39b41440",
+            "no_agent": "4fd25f2c8c120ce143e47426478edfe25b80a6d5d8bd1545cbb23270194ec4e1",
+            "find_trader": "0635bc7a8dfc699859aa767e7d7216644764632b57dcf5e7a468f4b45af1dcd2",
+            "draft_trade": "473ed8b5ead6708248758c62250558e235aa472b2a5b83679eb14a487f8fa1ba",
+            "poss_welfare": "89b1d6cb4feb72690947429ae262a02f1a2cd9bbad1c4c17595e60c9cc332ae9",
+            "assess_sustenance": "498ba420e41f00b022cac8c9ee85349416b55c8e1e12ec5b8b4393576d1011f3",
+            "make_link": "30533e7b2a8922a28360934b12e37be0a2a8f6de0546fc98b7468a603afc852f",
+            "assess_welfare": "a27a696648aa93c8f388f4cb9d58cd7a7c3817b813edee70674536d8478bfa02",
+            "move": "492349ea9a9480f8eaab9527ecaee040dca441fff7a85812ec103045914d0da1",
+            "trade": "6890254fe5b1ab4792d2224e919f95af6c39445b8e9bfebcc7e8e3bab04d88bd",
+            "collect": "93414ba06e0892c422f436ca1c9ac7ca36d1063c32418ab8dd3f02dd2e9de0e4",
+            "eat": "1f0f7f7b6843eaafe7b3b809411e086befb9824abeb05c7bdde26f47597bd262",
+            "die": "f2faf1c215f42633dc8d8b2ba7b9e75fd663f704c63c6e924334810198f5b6bd",
+            "step": "aa327fa493c25cd164c3253d8cd7d21c501937e92b8b5cecf888f8061a9c7c64"
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Complete reachable ancestry through the selected model revision for four named model files. Does not authenticate an unpublished working tree, loaded library/runtime, historical random state, or absent branches. No simulation or paper-completion verdict."
+}
