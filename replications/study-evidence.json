@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T01:13:54.283122+00:00",
+  "as_of": "2026-10-20T01:21:55.497169+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -95,13 +95,15 @@
     {
       "study": "replacing_2023",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/10",
-      "checked_commit": "c356637cccd9d0e0cdb162640b76b5fd82435127",
+      "checked_commit": "075a5477f8db52db1c947d309be2bdfd259f194b",
       "status": "partial",
       "readme": "replications/replacing_2023/README.md",
-      "readme_sha256": "fb5e9d6e641f57b09c4fb6519bba298abb4cc35fcbcbc94ed080ed872caa245b",
-      "json_evidence_files": 503,
-      "remaining_scope": "Figure 2 matches 2,452 vertices; reproduction, examples, and trade/lending diagnostics complete. Disease extinction claims remain discrepant across historical revisions. Eradication prevents renewed infection under released rules but does not establish indefinite survival. Table 3 and historical fidelity remain unresolved.",
-      "gzip_json_evidence_files": 371
+      "readme_sha256": "6d28da3b8939257f07fd8509e4adf110c07397577fbd64847d0609f1ae51f0a6",
+      "json_evidence_files": 515,
+      "remaining_scope": "All17 examples and published20-seed scenario ensembles retained; Figure2 matches2452 plotted vertices. Seasonal cause analysis and disease/version/GUI investigations complete but historical settings and disease discrepancies remain qualified. Prior trade/lending500step ensemble has a substantial transient. New unchanged baseline10000step run completes native0; exact raw-prefix gate fails at four records because arrays use horizon-quarter sampling and endLog adds metabolism. Failure and source audit published. Passive observer qualification session64039,PID65567 running locally under900seconds: original501records already reconstructed exactly; entire10000step native-log parity pending. Trade/lending extensions unstarted. No new completed-paper credit.",
+      "gzip_json_evidence_files": 372,
+      "checked_at": "2026-10-20T01:21:55.497169+00:00",
+      "evidence_scan_scope": "All tracked JSON and compressed JSON under replications/replacing_2023"
     },
     {
       "study": "dogan_2026",
@@ -292,15 +294,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "8a15dc408e8d9df119769f1d453a280e7c059e46",
+      "checked_commit": "2c2dcc92cd0a50bab662b0f8c9a2935570e7bf26",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "c8139708cf420b5a1610e5862b766b8529717b17618b8dce893f8b9b46db04e8",
-      "json_evidence_files": 485,
-      "gzip_json_evidence_files": 93,
-      "checked_at": "2026-10-20T01:04:38.945951+00:00",
-      "evidence_scan_scope": "All tracked JSON under replications/need_for_greed_2024",
-      "remaining_scope": "932 unique inputs and 3,645,406 observations audited: 400 baseline and 532 sweep; 9,568 sweep inputs remain. Checkpoint0352 adds 25 disjoint inputs and 125,025 observations. Archive, member, configuration, execution payload and raw trajectory audits pass. Tables I\u2013III retain all result fields. Active Table IV row is 452/500: 100 each at .36\u2013.39, 52 at .40; six extinct, 446 better, zero equal. No percentages for the incomplete row. Producers unchanged; whole-study completion remains unproven."
+      "readme_sha256": "3b5ff364d4b4a848a69c97b6d0d66c1b815050ac62bfe9d6418c8c1f7a150273",
+      "json_evidence_files": 491,
+      "gzip_json_evidence_files": 95,
+      "checked_at": "2026-10-20T01:21:55.497169+00:00",
+      "evidence_scan_scope": "All tracked JSON and compressed JSON under replications/need_for_greed_2024",
+      "remaining_scope": "957 unique inputs and3,770,431observations audited:400baseline+557sweep;9,543sweep remain. Checkpoint0102 adds25 disjoint inputs and125,025observations; source configurations, payloads, archive members and raw trajectories verified. TablesI\u2013III unchanged. Active TableIV row unchanged452/500,six extinct446better; no prefix percentages or whole-study completion."
     }
   ],
   "study_prs": 22,
