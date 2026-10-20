@@ -1,5 +1,7 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+[The initializer attempt reached its startup bound](results/initializer-startup-bound-2026-10-20). The H100 remained queued and is verified stopped with disk intact; no simulation command was created. Prepared controls remain unexecuted.
+
 [The later upstream source check](results/upstream-recheck-2026-10-20) confirms the publication release is the pinned `v1`. The inspected newer revision changes only the engine dependency; model source is byte-identical. Its telemetry-related timing qualification is preserved without changing the experiment.
 
 [The native initializer controls are queued](results/initializer-native-queued-2026-10-20), with a $10 reservation and bounded startup/execution/export. No new simulation has started. Both historical baseline trajectories must match before interpreting the eight initializer combinations.
