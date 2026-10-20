@@ -264,3 +264,34 @@ Training and validation objectives are shown separately, unsmoothed, across all 
 These are declared display choices, not recovery of the historical plot settings.
 
 R syntax and Python lint checks pass. Rendering and visual inspection remain pending; no calibration result or completion credit is inferred.
+
+
+## Full pathwise calibration and precision audit correction
+
+[The first complete calibration arm](results/pathwise-full-calibration-2026-10-20) finished all 5,000 epochs without changing the frozen training method.
+Independent replay checks 95,570,000 optimizer components and 25,000 validation draws.
+The maximum optimizer difference is 2.991e-8, within the original unchanged tolerances.
+The fixed validation rule selects epoch 413, with loss −128.47138168836435.
+This reconstructed validation objective is not directly comparable to the paper’s plotted best losses.
+
+The original auditor failed at epoch 4 because it compared a native Float32 gradient norm against Float64 arithmetic within two parts per million.
+All 5,000 recorded norms reproduce exactly with the pinned Julia Float32 runtime.
+Their largest Float64 difference is 6.923 parts per million.
+The corrected auditor uses those independently verified native norms and reconstructs exported Float32 values before Float64 optimizer replay.
+Optimizer acceptance tolerances remain `rtol=2e-6, atol=2e-7`.
+Separate corrupted norm and epoch-log controls both fail; original outputs, failed auditor, and failure log are retained.
+This corrects validation arithmetic; it does not modify simulation, training, checkpoint selection, or tune agreement with the paper.
+
+All 15,006 native files were sealed into 11 archives totaling 781,500,746 compressed bytes.
+Fresh remote downloads match every archive and every native member against the full audit.
+The manifest, object keys, hashes, amendment, norm replay, and audit are retained here.
+The previously unstarted VarGrad arm resumed with unchanged sources and seeds; its first three epochs match qualification byte-for-byte.
+VarGrad completion, posterior prediction, and whole-method assessment remain outstanding.
+
+Reproduce validation with the recorded Julia runtime and NumPy environment:
+
+```sh
+julia --startup-file=no replay_norms.jl NATIVE NATIVE/epochs.csv NEW_NORMS.csv
+python audit_training_native_norms.py NATIVE NEW_AUDIT.json NEW_NORMS.csv
+python seal_training.py NATIVE NEW_AUDIT.json NATIVE_EXIT.json 5000 NEW_ARCHIVES
+```

@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-10-20T06:44:55.532104+00:00",
+  "reason": "Original audit compared native Float32 BLAS norm to a Float64 norm at2ppm tolerance and failed at epoch4. All5000 native norms replay exactly; maximum precision difference6.9223ppm.",
+  "method_changes": [],
+  "native_training_source_unchanged": true,
+  "native_outputs_unchanged": true,
+  "original_validator_and_failure_retained": true,
+  "validation_change": "Reconstruct exact exported Float32 values, verify recorded norms by native Float32 replay, cross-check Float64 reference, then replay optimizer in Float64 using verified native normalization.",
+  "optimizer_update_tolerances_unchanged": {
+    "rtol": 2e-06,
+    "atol": 2e-07
+  },
+  "passed_pathwise_audit_sha256": "5c4a1a5f7554b1cac9cf939f461ceeec1c013acd13dabb254b2a71b38683dc39",
+  "native_components_checked": 95570000,
+  "maximum_optimizer_absolute_error": 2.990274439174101e-08,
+  "corrupted_recorded_and_replay_norms_rejected": true,
+  "audit_source_sha256": {
+    "replay_norms.jl": "d5edcbd3303c1a21f093fab9b8ca8327caa76f9692a0a5fd1b313c930e03e569",
+    "audit_training_native_norms.py": "ea0b66d75266ea6827d9649145e585e63a76dfb556fd5c21cd7df9659d22d540"
+  },
+  "original_protocol_sha256": "653f481cdd902ed1b12bcb14e182aed41942f613d4af721a83c87defb0a3b26c",
+  "resume_scope": "Unstarted VarGrad arm only, unchanged5000epochs/seeds/model/flow/optimizer. No pathwise rerun. Original supervisors terminal.",
+  "cloud_reservation_usd": 0
+}
