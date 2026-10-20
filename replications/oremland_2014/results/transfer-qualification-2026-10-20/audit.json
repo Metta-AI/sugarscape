@@ -1,0 +1,67 @@
+{
+  "native_runs": 1800,
+  "policies": 9,
+  "groups": [
+    {
+      "name": "run",
+      "policies": 3,
+      "dominated_policies": 1
+    },
+    {
+      "name": "nondominated-run",
+      "policies": 3,
+      "dominated_policies": 2
+    },
+    {
+      "name": "neighbor-run",
+      "policies": 3,
+      "dominated_policies": 3
+    }
+  ],
+  "source_models": [
+    {
+      "group": "run",
+      "width": 50,
+      "model_sha256": "1cc6ee9db0852ea2a071004aa31eb797a06131b434cffc82f697993057aca816"
+    },
+    {
+      "group": "nondominated-run",
+      "width": 50,
+      "model_sha256": "1cc6ee9db0852ea2a071004aa31eb797a06131b434cffc82f697993057aca816"
+    },
+    {
+      "group": "neighbor-run",
+      "width": 50,
+      "model_sha256": "1cc6ee9db0852ea2a071004aa31eb797a06131b434cffc82f697993057aca816"
+    }
+  ],
+  "repeated_inputs_identical": 200,
+  "sha256": {
+    "complete.json": "d7aab1f907ac74621f8e1c9dcadf3be9f15884a35954cd5ef2a09091b2c72b64",
+    "neighbor-run/exit.json": "e202bff892d83c1d22becb1a6165e098fc17065a8d42b6d6e141879dbb2b8bfd",
+    "neighbor-run/native.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "neighbor-run/requests.jsonl": "918ed427efb6767875e45c78c3de674150a061dbb2a66feb74e789a6d1f32017",
+    "neighbor-run/results.jsonl": "7838ac9cf21cf7642f07a048c68b57419a93d30dac15501c97bf0747ae7e7ed8",
+    "neighbor-run/search-audit.json": "ab7e92a3d47751a628f78b7fbd2fef16525b40a30439376963857bed565a2918",
+    "neighbor-run/search-complete.json": "863b6db7bf707fce80b465a45ad353b1f4c1f415e283a9fcf1350cf5f22b6603",
+    "neighbor-run/search-protocol.json": "98e3b5cdb56e4e00c45de96673dbf8098bab210c7a2a76878903f6095a2450ad",
+    "nondominated-run/exit.json": "7a2ba0e4cd7f964afe4de416cdaa81caef7e3e2961182ffb0f8b0b5f39f5ba3f",
+    "nondominated-run/native.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "nondominated-run/requests.jsonl": "a78c4e99d8dcdee2f215ddef3473e884182534c3679a53df2deb6c8e76b84efc",
+    "nondominated-run/results.jsonl": "ce3ff1261d63bcef3e393043760629d785c2002e50743fdeafa418be36cd4ad2",
+    "nondominated-run/search-audit.json": "6f37744c84d5f532c947e141a4ff79633fd790ca64afafb665424866095acce2",
+    "nondominated-run/search-complete.json": "44f8177ce6359efbf26bf78a2c5f058b6b0c5c898c6b8725cb9ee0eabb157c4b",
+    "nondominated-run/search-protocol.json": "321cddcd068c5099a29dbac2b7aabcb9d689d1ca7394fb0d90bc61e621fbec34",
+    "plan.json": "c95d142884d54d953cd0fff82ddbe344996881d266e08e1e331190050c88d831",
+    "run/exit.json": "9376b2871cba407f78c5755e9b059bde62236a4d1ae65db4a1aedeb305cc5802",
+    "run/native.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run/requests.jsonl": "713de6609b2a490b77bf1da8426d06ca93331d2a8dce5205cb5f5fb3d497b728",
+    "run/results.jsonl": "c876c847375f5ba639489484fd9462f708a9fb0aafe82dc60a39b924287bde88",
+    "run/search-audit.json": "4fb87ac20a81179a9952c8720bafb14acdf28352cf9adbf87de2cdaf31b6e902",
+    "run/search-complete.json": "540c1f38e3f9dac9d4f46f7e29504f302fbcbe6042f361c3b8f32767fcfee9de",
+    "run/search-protocol.json": "cf32ef857ebf61e0ae83614776c5ce21f03b3d7b638d9fdab144d40b58084931",
+    "run_frontier_transfer.py": "2087ed5011ce064d6336880733c2af8cf284a68231bd42d96e31988111eacdf8",
+    "runtime-manifest.json": "498e1574a3ee960bf3b13f49a8ec3b3c7c19322c8a2fe0a0aadfd349ccdbd079"
+  },
+  "scope": "Every held-out request, result, source frontier, mean, standard error and empirical dominance decision checked. Requires original pinned source models for width verification; no global-optimality claim."
+}

@@ -267,3 +267,7 @@ python audit_optimizer.py /path/to/new-run /path/to/new-audit.json
 It plans 432,000 native evaluations, followed by full-model evaluation of every final frontier on 200 held-out seeds.
 The budget, reduction conventions, comparisons, and execution bounds were fixed before inspecting results.
 The campaign is running; no additional completed-study credit is assigned.
+
+[The held-out transfer evaluator](results/transfer-qualification-2026-10-20) passes 1,800 native simulations and independent statistical replay.
+A corrupted standard error is rejected. Fresh archive extraction reproduces the audit exactly.
+Production transfer is gated on all 18 searches completing and passing audit; a bounded dependent watcher performs no retries.
