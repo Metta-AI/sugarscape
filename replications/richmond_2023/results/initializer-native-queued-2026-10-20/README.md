@@ -38,3 +38,7 @@ The resulting summary includes full per-variant initialization and transition ev
 This new orchestration passes Python parsing, CLI help, and Ruff checks. Its native end-to-end execution awaits the queued experiment.
 The underlying initializer and historical transition workflows have their separately recorded complete-data validations.
 No native success is inferred from preparing this auditor.
+
+The exact 66,444-byte prepared source payload is now retained as `input.tar.gz` for commit-pinned boot-command retrieval.
+It contains only the declared protocol, runner, and nine observed model sources; its SHA-256 and every member are recorded in `payload-readback.json`.
+Its inclusion does not itself launch a retry or change the prior stopped-at-startup result.
