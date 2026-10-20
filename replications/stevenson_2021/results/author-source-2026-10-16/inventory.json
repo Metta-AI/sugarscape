@@ -1,0 +1,37 @@
+{
+  "url": "https://arxiv.org/src/2108.11892v2",
+  "archive_sha256": "8d1af9ea75588b84a5e751f9f7ff90bc16e8ccc063a579d21eff05bdfaf37ad1",
+  "files": {
+    "evolveFandBC-eps-converted-to.pdf": "25769a97e6a71cf5720ebcccaf2aa69d44adae8b15f06b1a8f4f377a460be31d",
+    "evolveFandBC.eps": "eeb24321457ff559a07b46c5f7b0a5373852093a6d692467fc187ceb9b474a85",
+    "firstFew_SSC-eps-converted-to.pdf": "c87edebc4f6296cc37fa367502bb8e8d761ded2fc4ef3ff6b89d0ad024c7f71a",
+    "firstFew_SSC.eps": "57ad9e07372ab7486dc5f7e2b5067f3fed488bd0fbecc49746c46435ae95a5be",
+    "fit4_pop0_SSC-eps-converted-to.pdf": "d4e9c64d3792db28af5e0e7e4e2bb67206fcc81f7e94b85ba74d2b05d5aeadaf",
+    "fit4_pop0_SSC.eps": "f4adf483352e65139e1f0af1a446ade0bf52df4dce239cc50da1869c52456b29",
+    "ssc2021xNojpg.synctex": "850c8826a4e4e1e68743667d8644bd165d92e932dc9dec0030d0188da48d9872",
+    "ssc2021xNojpg.tex": "081d7e5c265dd72f3d631000cbdd8e826057e8b5c91bb366e8f988f1797f459a",
+    "svproc.cls": "ddfc1f23edfbb51f13bb6a6e427b63c41cc9a965f08a3bc65e83c81ee9ae9560",
+    "wealthAge_SSC-eps-converted-to.pdf": "794b5f8f9e26098918579fed7c3418622a078d986d5c1bc2e26597439a3f2a47",
+    "wealthAge_SSC.eps": "122cfc15244a0edad73c870074390958ea72dfd401c740e93f002a1808dbce20",
+    "wealthVmAge_giniVmAgeG_SSC-eps-converted-to.pdf": "ce02d28efdcb43356b9925fb215c27500b740adf6c97c043b47bb8d0598207fb",
+    "wealthVmAge_giniVmAgeG_SSC.eps": "e10abb18f81a799951a6da467ac4067bee2ebe19e419e527fcd34af52ecb1c51"
+  },
+  "classification": {
+    "simulation_source_files": 0,
+    "fitting_scripts": 0,
+    "latex_manuscript": 1,
+    "eps_figures": 5,
+    "converted_pdf_figures": 5,
+    "other_files": [
+      "svproc.cls",
+      "ssc2021xNojpg.synctex"
+    ]
+  },
+  "findings": [
+    "Manuscript confirms initial single agent and 100 independent runs per scenario.",
+    "Appendix B specifies continuous logistic growth but no fitting window, weighting, optimizer, or per-seed fitted values.",
+    "Evolution describes uniform initial reproductive parameters but does not specify inheritance/mutation mechanics sufficiently to identify a unique implementation.",
+    "EPS headers identify R Graphics Output; the R scripts are not in the archive.",
+    "Vector figures permit future coordinate extraction; this inventory does not establish numerical replication."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-10-18T20:02:57.059070+00:00",
+  "source": "https://arxiv.org/pdf/2101.09817v2",
+  "author_index": "https://longbeachinstitute.org/",
+  "title": "Population and Inequality Dynamics in Simple Economies",
+  "version": "v2, August 16 2021",
+  "pages": 29,
+  "pdf_sha256": "2e375a0fb67a251b86f301920c075d7e43aaef4deb24ecf4e8df517535576053",
+  "target_paper": "https://arxiv.org/abs/2108.11892v2",
+  "implementation_sha256": "17803df8b61cfded16718e4895cf574cae77aa514e57a79f99413d7173d49fbc",
+  "confirmed_conventions": [
+    {
+      "page": 3,
+      "claim": "Random agent order; nearest richest visible cell with random tie breaking; harvest and metabolize before reproduction."
+    },
+    {
+      "page": 3,
+      "claim": "Positive-puberty newborns remain inert until the next cycle; no initial resource endowment; landscape regrowth after all agents."
+    }
+  ],
+  "sampling_evidence": [
+    {
+      "page": 19,
+      "experiment": "Birth-cost sensitivity with infertility10, puberty1",
+      "window_cycles": [
+        130000,
+        150000
+      ]
+    },
+    {
+      "page": 20,
+      "experiment": "Infertility sensitivity with puberty1,birthcost0",
+      "window_cycles": [
+        40000,
+        50000
+      ]
+    }
+  ],
+  "limits": [
+    "Related preceding paper, not proof of the target experiment implementation or sampling window.",
+    "No verified author implementation in four retained GitHub repository-metadata searches; not a global code absence claim.",
+    "The new source does not specify the target evolving societies inheritance, mutation or parameter-update rules.",
+    "Existing100000-cycle ensembles do not reach the preceding paper birth-cost window. No extrapolation or changed acceptance criterion."
+  ],
+  "next_action": "Resolve target evolutionary rules and historical measurement protocol before declaring agreement; any later-window run must be a separately declared sensitivity study."
+}

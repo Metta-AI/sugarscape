@@ -1,0 +1,837 @@
+{
+  "rows": [
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "baseline",
+      "mean": 836.4960000000001,
+      "seed_level_ci95": [
+        836.2325690167058,
+        836.7594309832944
+      ],
+      "paper_mean": 837,
+      "difference_from_paper_mean": -0.5039999999999054
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-age",
+      "mean": 836.528,
+      "seed_level_ci95": [
+        836.3255496422827,
+        836.7304503577174
+      ],
+      "paper_mean": 837,
+      "difference_from_paper_mean": -0.47199999999998
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-wealth",
+      "mean": 836.5287999999998,
+      "seed_level_ci95": [
+        836.1850664287165,
+        836.8725335712832
+      ],
+      "paper_mean": 837,
+      "difference_from_paper_mean": -0.4712000000001808
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-both",
+      "mean": 836.3072,
+      "seed_level_ci95": [
+        835.9941040823144,
+        836.6202959176856
+      ],
+      "paper_mean": 837,
+      "difference_from_paper_mean": -0.6928000000000338
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "baseline",
+      "mean": 4545.69,
+      "seed_level_ci95": [
+        4528.28354242421,
+        4563.096457575789
+      ],
+      "paper_mean": 4767,
+      "difference_from_paper_mean": -221.3100000000004
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-age",
+      "mean": 4593.140799999999,
+      "seed_level_ci95": [
+        4566.538835483923,
+        4619.742764516075
+      ],
+      "paper_mean": 4767,
+      "difference_from_paper_mean": -173.85920000000078
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-wealth",
+      "mean": 5126.6024,
+      "seed_level_ci95": [
+        5098.253073641663,
+        5154.951726358337
+      ],
+      "paper_mean": 4767,
+      "difference_from_paper_mean": 359.60239999999976
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-both",
+      "mean": 5127.2716,
+      "seed_level_ci95": [
+        5085.443660204954,
+        5169.099539795046
+      ],
+      "paper_mean": 4767,
+      "difference_from_paper_mean": 360.27160000000003
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "baseline",
+      "mean": 440.8425762008825,
+      "seed_level_ci95": [
+        437.10026848843034,
+        444.58488391333464
+      ],
+      "paper_mean": 473,
+      "difference_from_paper_mean": -32.15742379911751
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-age",
+      "mean": 446.036836093563,
+      "seed_level_ci95": [
+        440.920943720863,
+        451.152728466263
+      ],
+      "paper_mean": 473,
+      "difference_from_paper_mean": -26.96316390643699
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-wealth",
+      "mean": 550.2708650572366,
+      "seed_level_ci95": [
+        539.5120506649197,
+        561.0296794495536
+      ],
+      "paper_mean": 473,
+      "difference_from_paper_mean": 77.27086505723662
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-both",
+      "mean": 549.3522603548851,
+      "seed_level_ci95": [
+        541.9134207232152,
+        556.791099986555
+      ],
+      "paper_mean": 473,
+      "difference_from_paper_mean": 76.35226035488506
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "baseline",
+      "mean": 0.5300032930088262,
+      "seed_level_ci95": [
+        0.5290317911077481,
+        0.5309747949099043
+      ],
+      "paper_mean": 0.53,
+      "difference_from_paper_mean": 3.293008826177335e-06
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-age",
+      "mean": 0.5303107824752262,
+      "seed_level_ci95": [
+        0.5285563982056332,
+        0.5320651667448193
+      ],
+      "paper_mean": 0.53,
+      "difference_from_paper_mean": 0.00031078247522620117
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-wealth",
+      "mean": 0.5279768759781304,
+      "seed_level_ci95": [
+        0.5266550565965182,
+        0.5292986953597425
+      ],
+      "paper_mean": 0.53,
+      "difference_from_paper_mean": -0.00202312402186966
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-both",
+      "mean": 0.526079599853104,
+      "seed_level_ci95": [
+        0.5252257168707081,
+        0.5269334828355
+      ],
+      "paper_mean": 0.53,
+      "difference_from_paper_mean": -0.003920400146895986
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "baseline",
+      "mean": 836.662,
+      "seed_level_ci95": [
+        836.3483714909609,
+        836.9756285090392
+      ],
+      "paper_mean": 837,
+      "difference_from_paper_mean": -0.33799999999996544
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-age",
+      "mean": 836.5036,
+      "seed_level_ci95": [
+        836.1358166855072,
+        836.8713833144928
+      ],
+      "paper_mean": 837,
+      "difference_from_paper_mean": -0.4963999999999942
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-wealth",
+      "mean": 836.3312,
+      "seed_level_ci95": [
+        835.9010927484313,
+        836.7613072515686
+      ],
+      "paper_mean": 837,
+      "difference_from_paper_mean": -0.6688000000000329
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-both",
+      "mean": 835.924,
+      "seed_level_ci95": [
+        835.668101681645,
+        836.179898318355
+      ],
+      "paper_mean": 837,
+      "difference_from_paper_mean": -1.0760000000000218
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "baseline",
+      "mean": 4551.8728,
+      "seed_level_ci95": [
+        4525.34024384453,
+        4578.40535615547
+      ],
+      "paper_mean": 4767,
+      "difference_from_paper_mean": -215.1271999999999
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-age",
+      "mean": 4590.9472000000005,
+      "seed_level_ci95": [
+        4571.987445446623,
+        4609.9069545533785
+      ],
+      "paper_mean": 4767,
+      "difference_from_paper_mean": -176.05279999999948
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-wealth",
+      "mean": 5132.8748,
+      "seed_level_ci95": [
+        5112.504764899415,
+        5153.244835100584
+      ],
+      "paper_mean": 4767,
+      "difference_from_paper_mean": 365.8747999999996
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-both",
+      "mean": 5134.1148,
+      "seed_level_ci95": [
+        5104.833672753879,
+        5163.395927246122
+      ],
+      "paper_mean": 4767,
+      "difference_from_paper_mean": 367.1148000000003
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "baseline",
+      "mean": 439.47427237728016,
+      "seed_level_ci95": [
+        436.02993237966615,
+        442.91861237489417
+      ],
+      "paper_mean": 473,
+      "difference_from_paper_mean": -33.52572762271984
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-age",
+      "mean": 447.6937686908871,
+      "seed_level_ci95": [
+        443.6171185217162,
+        451.77041886005804
+      ],
+      "paper_mean": 473,
+      "difference_from_paper_mean": -25.30623130911289
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-wealth",
+      "mean": 548.9817008196376,
+      "seed_level_ci95": [
+        542.2741282460623,
+        555.6892733932128
+      ],
+      "paper_mean": 473,
+      "difference_from_paper_mean": 75.98170081963758
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-both",
+      "mean": 545.7823214313969,
+      "seed_level_ci95": [
+        540.1831035663403,
+        551.3815392964535
+      ],
+      "paper_mean": 473,
+      "difference_from_paper_mean": 72.7823214313969
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "baseline",
+      "mean": 0.5313556895308691,
+      "seed_level_ci95": [
+        0.530070053434688,
+        0.5326413256270501
+      ],
+      "paper_mean": 0.53,
+      "difference_from_paper_mean": 0.0013556895308690642
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-age",
+      "mean": 0.5307701402757792,
+      "seed_level_ci95": [
+        0.5291726380933345,
+        0.5323676424582239
+      ],
+      "paper_mean": 0.53,
+      "difference_from_paper_mean": 0.000770140275779152
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-wealth",
+      "mean": 0.527567280657012,
+      "seed_level_ci95": [
+        0.5263778914842582,
+        0.5287566698297658
+      ],
+      "paper_mean": 0.53,
+      "difference_from_paper_mean": -0.0024327193429880545
+    },
+    {
+      "scenario": "low-fertility",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-both",
+      "mean": 0.5269335573641815,
+      "seed_level_ci95": [
+        0.5256507793827397,
+        0.5282163353456232
+      ],
+      "paper_mean": 0.53,
+      "difference_from_paper_mean": -0.003066442635818567
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "baseline",
+      "mean": 821.4072,
+      "seed_level_ci95": [
+        821.1963507716612,
+        821.6180492283388
+      ],
+      "paper_mean": 824,
+      "difference_from_paper_mean": -2.592800000000011
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-age",
+      "mean": 821.4072,
+      "seed_level_ci95": [
+        821.1963507716612,
+        821.6180492283388
+      ],
+      "paper_mean": 824,
+      "difference_from_paper_mean": -2.592800000000011
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-wealth",
+      "mean": 824.2092,
+      "seed_level_ci95": [
+        824.0186574220807,
+        824.3997425779194
+      ],
+      "paper_mean": 824,
+      "difference_from_paper_mean": 0.20920000000000982
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "population",
+      "quantity": "strict-both",
+      "mean": 824.2092,
+      "seed_level_ci95": [
+        824.0186574220807,
+        824.3997425779194
+      ],
+      "paper_mean": 824,
+      "difference_from_paper_mean": 0.20920000000000982
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "baseline",
+      "mean": 15894.6548,
+      "seed_level_ci95": [
+        15883.574881663935,
+        15905.734718336065
+      ],
+      "paper_mean": 16254,
+      "difference_from_paper_mean": -359.34519999999975
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-age",
+      "mean": 15894.6548,
+      "seed_level_ci95": [
+        15883.574881663935,
+        15905.734718336065
+      ],
+      "paper_mean": 16254,
+      "difference_from_paper_mean": -359.34519999999975
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-wealth",
+      "mean": 16242.746,
+      "seed_level_ci95": [
+        16225.613017679545,
+        16259.878982320453
+      ],
+      "paper_mean": 16254,
+      "difference_from_paper_mean": -11.254000000000815
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "wealth",
+      "quantity": "strict-both",
+      "mean": 16242.746,
+      "seed_level_ci95": [
+        16225.613017679545,
+        16259.878982320453
+      ],
+      "paper_mean": 16254,
+      "difference_from_paper_mean": -11.254000000000815
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "baseline",
+      "mean": 1419.1425625831848,
+      "seed_level_ci95": [
+        1409.4037417459242,
+        1428.8813834204454
+      ],
+      "paper_mean": 2264,
+      "difference_from_paper_mean": -844.8574374168152
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-age",
+      "mean": 1419.1425625831848,
+      "seed_level_ci95": [
+        1409.4037417459242,
+        1428.8813834204454
+      ],
+      "paper_mean": 2264,
+      "difference_from_paper_mean": -844.8574374168152
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-wealth",
+      "mean": 2352.0190066834125,
+      "seed_level_ci95": [
+        2328.0297970746115,
+        2376.0082162922135
+      ],
+      "paper_mean": 2264,
+      "difference_from_paper_mean": 88.0190066834125
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "mean_age",
+      "quantity": "strict-both",
+      "mean": 2352.0190066834125,
+      "seed_level_ci95": [
+        2328.0297970746115,
+        2376.0082162922135
+      ],
+      "paper_mean": 2264,
+      "difference_from_paper_mean": 88.0190066834125
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "baseline",
+      "mean": 0.3369966604868519,
+      "seed_level_ci95": [
+        0.33651308708401806,
+        0.33748023388968573
+      ],
+      "paper_mean": 0.33,
+      "difference_from_paper_mean": 0.00699666048685188
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-age",
+      "mean": 0.3369966604868519,
+      "seed_level_ci95": [
+        0.33651308708401806,
+        0.33748023388968573
+      ],
+      "paper_mean": 0.33,
+      "difference_from_paper_mean": 0.00699666048685188
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-wealth",
+      "mean": 0.3325760889902849,
+      "seed_level_ci95": [
+        0.3321699331465016,
+        0.3329822448340682
+      ],
+      "paper_mean": 0.33,
+      "difference_from_paper_mean": 0.002576088990284886
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "earlier",
+      "metric": "gini",
+      "quantity": "strict-both",
+      "mean": 0.3325760889902849,
+      "seed_level_ci95": [
+        0.3321699331465016,
+        0.3329822448340682
+      ],
+      "paper_mean": 0.33,
+      "difference_from_paper_mean": 0.002576088990284886
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "baseline",
+      "mean": 821.6272000000001,
+      "seed_level_ci95": [
+        821.4892051991096,
+        821.7651948008906
+      ],
+      "paper_mean": 824,
+      "difference_from_paper_mean": -2.37279999999987
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-age",
+      "mean": 821.6272000000001,
+      "seed_level_ci95": [
+        821.4892051991096,
+        821.7651948008906
+      ],
+      "paper_mean": 824,
+      "difference_from_paper_mean": -2.37279999999987
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-wealth",
+      "mean": 824.0380000000001,
+      "seed_level_ci95": [
+        823.9107227471965,
+        824.1652772528038
+      ],
+      "paper_mean": 824,
+      "difference_from_paper_mean": 0.0380000000001246
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "population",
+      "quantity": "strict-both",
+      "mean": 824.0380000000001,
+      "seed_level_ci95": [
+        823.9107227471965,
+        824.1652772528038
+      ],
+      "paper_mean": 824,
+      "difference_from_paper_mean": 0.0380000000001246
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "baseline",
+      "mean": 15900.8552,
+      "seed_level_ci95": [
+        15887.812828249747,
+        15913.897571750253
+      ],
+      "paper_mean": 16254,
+      "difference_from_paper_mean": -353.14480000000003
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-age",
+      "mean": 15900.8552,
+      "seed_level_ci95": [
+        15887.812828249747,
+        15913.897571750253
+      ],
+      "paper_mean": 16254,
+      "difference_from_paper_mean": -353.14480000000003
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-wealth",
+      "mean": 16244.1304,
+      "seed_level_ci95": [
+        16226.547433591866,
+        16261.713366408134
+      ],
+      "paper_mean": 16254,
+      "difference_from_paper_mean": -9.869599999999991
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "wealth",
+      "quantity": "strict-both",
+      "mean": 16244.1304,
+      "seed_level_ci95": [
+        16226.547433591866,
+        16261.713366408134
+      ],
+      "paper_mean": 16254,
+      "difference_from_paper_mean": -9.869599999999991
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "baseline",
+      "mean": 1423.1238107424294,
+      "seed_level_ci95": [
+        1410.6071790544015,
+        1435.6404424304574
+      ],
+      "paper_mean": 2264,
+      "difference_from_paper_mean": -840.8761892575706
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-age",
+      "mean": 1423.1238107424294,
+      "seed_level_ci95": [
+        1410.6071790544015,
+        1435.6404424304574
+      ],
+      "paper_mean": 2264,
+      "difference_from_paper_mean": -840.8761892575706
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-wealth",
+      "mean": 2346.6917870629472,
+      "seed_level_ci95": [
+        2330.117731334226,
+        2363.2658427916685
+      ],
+      "paper_mean": 2264,
+      "difference_from_paper_mean": 82.69178706294724
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "mean_age",
+      "quantity": "strict-both",
+      "mean": 2346.6917870629472,
+      "seed_level_ci95": [
+        2330.117731334226,
+        2363.2658427916685
+      ],
+      "paper_mean": 2264,
+      "difference_from_paper_mean": 82.69178706294724
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "baseline",
+      "mean": 0.33690215941611157,
+      "seed_level_ci95": [
+        0.33665771918741727,
+        0.33714659964480587
+      ],
+      "paper_mean": 0.33,
+      "difference_from_paper_mean": 0.006902159416111553
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-age",
+      "mean": 0.33690215941611157,
+      "seed_level_ci95": [
+        0.33665771918741727,
+        0.33714659964480587
+      ],
+      "paper_mean": 0.33,
+      "difference_from_paper_mean": 0.006902159416111553
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-wealth",
+      "mean": 0.3326926354678058,
+      "seed_level_ci95": [
+        0.3322810321680637,
+        0.3331042387675479
+      ],
+      "paper_mean": 0.33,
+      "difference_from_paper_mean": 0.002692635467805793
+    },
+    {
+      "scenario": "birth-cost",
+      "window": "later",
+      "metric": "gini",
+      "quantity": "strict-both",
+      "mean": 0.3326926354678058,
+      "seed_level_ci95": [
+        0.3322810321680637,
+        0.3331042387675479
+      ],
+      "paper_mean": 0.33,
+      "difference_from_paper_mean": 0.002692635467805793
+    }
+  ],
+  "limitation": "Descriptive comparison only. Paper percentage uncertainty has unspecified semantics; historical simulation rules remain unresolved. No rule selected by closeness."
+}

@@ -1,0 +1,110 @@
+--- simulate.cpp
++++ simulate_evolution.cpp
+@@ -7,6 +7,7 @@
+ #include <fstream>
+ #include <iostream>
+ #include <numeric>
++#include <map>
+ #include <random>
+ #include <stdexcept>
+ #include <vector>
+@@ -17,10 +18,12 @@
+     int age = 0;
+     bool alive = true;
+     std::uint64_t id = 0;
++    int infertility = 1;
++    int birth_cost = 0;
+ };
+ 
+ int main(int argc, char** argv) {
+-    if (argc != 7) throw std::invalid_argument("Usage: simulate seed infertility birth-cost cycles record-every observations.csv");
++    if (argc != 10) throw std::invalid_argument("Usage: simulate seed infertility birth-cost cycles record-every observations.csv initial-population heterogeneous traits.csv");
+     const auto seed = std::stoull(argv[1]);
+     const int infertility = std::stoi(argv[2]);
+     const int birth_cost = std::stoi(argv[3]);
+@@ -32,6 +35,14 @@
+     observations.exceptions(std::ios::failbit | std::ios::badbit);
+     observations.precision(17);
+     observations << "cycle,kind,agent_id,count,wealth,mean_age\n";
++    const int initial_population = std::stoi(argv[7]);
++    const int heterogeneous = std::stoi(argv[8]);
++    if (initial_population < 1 || initial_population > 2500 || (heterogeneous != 0 && heterogeneous != 1))
++        throw std::invalid_argument("Invalid evolutionary parameters");
++    if (std::filesystem::exists(argv[9])) throw std::invalid_argument("Trait output already exists");
++    std::ofstream traits(argv[9]);
++    traits.exceptions(std::ios::failbit | std::ios::badbit);
++    traits << "cycle,kind,id,parent_id,infertility,birth_cost,count\n";
+     std::mt19937_64 random(seed);
+     std::array<int, 2500> resource;
+     resource.fill(4);
+@@ -40,6 +51,24 @@
+     std::vector<Agent> agents{{initial}};
+     std::uint64_t next_id = 1;
+     occupied[initial] = true;
++    while (agents.size() < static_cast<std::size_t>(initial_population)) {
++        int cell = std::uniform_int_distribution<int>(0, 2499)(random);
++        if (occupied[cell]) continue;
++        occupied[cell] = true;
++        agents.push_back(Agent{cell, 0, 0, true, next_id++});
++    }
++    for (auto& agent : agents) {
++        agent.infertility = heterogeneous ? infertility * std::uniform_int_distribution<int>(1, 10)(random) : infertility;
++        agent.birth_cost = heterogeneous ? birth_cost * std::uniform_int_distribution<int>(0, 9)(random) : birth_cost;
++        traits << 0 << ",initial," << agent.id << ",-1," << agent.infertility << ',' << agent.birth_cost << ",1\n";
++    }
++    const auto record_traits = [&traits](int cycle, const std::vector<Agent>& population) {
++        std::map<std::pair<int, int>, int> counts;
++        for (const auto& agent : population) ++counts[{agent.infertility, agent.birth_cost}];
++        for (const auto& entry : counts)
++            traits << cycle << ",joint,-1,-1," << entry.first.first << ',' << entry.first.second << ',' << entry.second << '\n';
++    };
++    record_traits(0, agents);
+     std::array<std::array<int, 24>, 2500> visible{};
+     for (int cell = 0; cell < 2500; ++cell) {
+         int index = 0;
+@@ -59,9 +88,11 @@
+         std::iota(order.begin(), order.end(), 0);
+         std::shuffle(order.begin(), order.end(), random);
+         int births = 0, deaths = 0;
+-        std::int64_t metabolism = 0, death_loss = 0;
++        std::int64_t metabolism = 0, death_loss = 0, birth_loss = 0;
+         for (auto index : order) {
+             auto& agent = agents[index];
++            const int infertility = agent.infertility;
++            const int birth_cost = agent.birth_cost;
+             ++agent.age;
+             int maximum = resource[agent.cell];
+             int nearest = 0;
+@@ -100,7 +131,11 @@
+                     int cell = empty[std::uniform_int_distribution<std::size_t>(0, empty.size() - 1)(random)];
+                     agent.wealth -= birth_cost;
+                     occupied[cell] = true;
+-                    agents.push_back(Agent{cell, 0, 0, true, next_id++});
++                    const auto parent_id = agent.id;
++                    birth_loss += birth_cost;
++                    agents.push_back(Agent{cell, 0, 0, true, next_id++, infertility, birth_cost});
++                    const auto& child = agents.back();
++                    traits << cycle << ",birth," << child.id << ',' << parent_id << ',' << child.infertility << ',' << child.birth_cost << ",1\n";
+                     ++births;
+                 }
+             }
+@@ -112,7 +147,7 @@
+         std::int64_t wealth = 0, ages = 0;
+         std::vector<int> wealths;
+         for (const auto& agent : agents) { wealth += agent.wealth; ages += agent.age; wealths.push_back(agent.wealth); }
+-        const auto error = landscape + wealth - before - growth + metabolism + death_loss + births * birth_cost;
++        const auto error = landscape + wealth - before - growth + metabolism + death_loss + birth_loss;
+         if (error != 0) throw std::logic_error("Resource conservation failed");
+         if (agents.size() != existing + births - deaths) throw std::logic_error("Population balance failed");
+         if (cycle % record_every == 0 || cycle == 1 || cycle == cycles || agents.empty()) {
+@@ -144,8 +179,9 @@
+             std::cout.precision(17);
+             std::cout << cycle << ',' << agents.size() << ',' << wealth << ',' << (n == 0 ? 0 : ages / n)
+                       << ',' << gini << ',' << landscape << ',' << births << ',' << deaths << ',' << growth
+-                      << ',' << metabolism << ',' << death_loss << ',' << births * birth_cost << ',' << error << '\n';
++                      << ',' << metabolism << ',' << death_loss << ',' << birth_loss << ',' << error << '\n';
+         }
++        record_traits(cycle, agents);
+         if (agents.empty()) break;
+     }
+ }

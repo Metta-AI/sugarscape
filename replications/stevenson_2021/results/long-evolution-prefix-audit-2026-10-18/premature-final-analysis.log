@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-stevenson/replications/stevenson_2021/analyze_long_evolution.py", line 60, in <module>
+    assert len(records) == 200, "Complete analysis requires all 200 runs"
+           ^^^^^^^^^^^^^^^^^^^
+AssertionError: Complete analysis requires all 200 runs

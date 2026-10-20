@@ -1,0 +1,50 @@
+{
+  "protocol_commit": "06648b3",
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
+  "infertility": 10,
+  "birth_cost": 40,
+  "cycles": 100000,
+  "compile_commands": [
+    [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-2021-birth-threshold-diagnostic-001/baseline.cpp",
+      "-o",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-2021-birth-threshold-diagnostic-001/baseline"
+    ],
+    [
+      "clang++",
+      "-std=c++17",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-2021-birth-threshold-diagnostic-001/strict.cpp",
+      "-o",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-2021-birth-threshold-diagnostic-001/strict"
+    ]
+  ],
+  "compiler": "Apple clang version 17.0.0 (clang-1700.0.13.5)\nTarget: arm64-apple-darwin24.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin\n",
+  "hashes": {
+    "baseline": "a7da0cb702cd7f1cb08a4e9f5618007a674d26b842b117b49fc176da0eae2fc7",
+    "strict.cpp": "74dbf13a47f81d244c6d210fee6b0150d5ebb94f880968d5c4171500647dc3dc",
+    "baseline.cpp": "601a61636960b1e9a6a55b7ed72bb47779ed994f568e20dce83c77d3c6f809e7",
+    "strict": "849a7801c309deb06cabc0131d0506e696b5efd809a21d59e4da970b09869fd5",
+    "change.patch": "f2641a5aa4c478ff7fde9cf5071fdbaf6c961aae011339ba2cef22b2660f6cfa"
+  }
+}

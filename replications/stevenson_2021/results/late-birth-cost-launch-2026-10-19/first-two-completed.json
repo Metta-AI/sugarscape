@@ -1,0 +1,44 @@
+[
+  {
+    "seed": 1,
+    "command": [
+      "/opt/homebrew/bin/gtimeout",
+      "--signal=TERM",
+      "--kill-after=10",
+      "120",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-late-birth-cost-001/simulate",
+      "1",
+      "10",
+      "40",
+      "150000",
+      "100",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-late-birth-cost-001/seed-1-observations.csv"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 16.916394333005883,
+    "trajectory_sha256": "6bc6284db8804020cbec4075fc1d25bcc14b416ffd310ea4938c745c48fba4ab",
+    "observations_sha256": "ee7d86ea72af938a58d93ac4b9be3c8e7550e5291f7540de1df8a18d49d9d319",
+    "shared_prefix_observations": 1001
+  },
+  {
+    "seed": 2,
+    "command": [
+      "/opt/homebrew/bin/gtimeout",
+      "--signal=TERM",
+      "--kill-after=10",
+      "120",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-late-birth-cost-001/simulate",
+      "2",
+      "10",
+      "40",
+      "150000",
+      "100",
+      "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-late-birth-cost-001/seed-2-observations.csv"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 16.732120166998357,
+    "trajectory_sha256": "4b49261998129dd3aecf9febd68b2eede39970071b849e0fbedb81bad82a13ac",
+    "observations_sha256": "c2b58fe1c5954a53b21c1f2391ec4306a227ec44210d9592d308ac903c9795cc",
+    "shared_prefix_observations": 1001
+  }
+]

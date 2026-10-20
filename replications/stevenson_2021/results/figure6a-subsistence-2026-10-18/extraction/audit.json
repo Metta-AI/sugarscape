@@ -1,0 +1,51 @@
+{
+  "pdf_sha256": "d4e9c64d3792db28af5e0e7e4e2bb67206fcc81f7e94b85ba74d2b05d5aeadaf",
+  "svg_sha256": "9ed09796924fbb49f64153be473f28e7a32ee5c539aa0db18d438c6a9c74c545",
+  "curves": [
+    {
+      "file": "infertility-10-actual.csv",
+      "infertility": 10,
+      "metabolism": 4,
+      "puberty": 1,
+      "birth_cost": 0,
+      "kind": "actual",
+      "vertices": 496,
+      "visible_vertices": 191,
+      "sha256": "0f3ab45052d79dc6cd0ebb4b22893ddcce5b9f730975534c6404888548f1cace"
+    },
+    {
+      "file": "infertility-10-fitted.csv",
+      "infertility": 10,
+      "metabolism": 4,
+      "puberty": 1,
+      "birth_cost": 0,
+      "kind": "fitted",
+      "vertices": 107,
+      "visible_vertices": 106,
+      "sha256": "ad04c68079f5554f37ffc27da87c1ba74ff189a19085560c2f3b3425629d0b19"
+    },
+    {
+      "file": "infertility-5-actual.csv",
+      "infertility": 5,
+      "metabolism": 4,
+      "puberty": 1,
+      "birth_cost": 0,
+      "kind": "actual",
+      "vertices": 501,
+      "visible_vertices": 196,
+      "sha256": "0c8daf3181afb99391bf6b30d6bc841eb5c76d8782584e983ccc6f27dad98d19"
+    },
+    {
+      "file": "infertility-5-fitted.csv",
+      "infertility": 5,
+      "metabolism": 4,
+      "puberty": 1,
+      "birth_cost": 0,
+      "kind": "fitted",
+      "vertices": 61,
+      "visible_vertices": 60,
+      "sha256": "25b551af9b5de725eee74e0c0028658d77b419566140093d741d96428f7ae39f"
+    }
+  ],
+  "scope": "Vector coordinates; caption and line styles identify parameters. Rendered axis ends at200, but paths retain vertices through505. Preserve hidden vertices separately; do not interpolate omitted collinear points. Original seeds and fitting convention remain unknown."
+}

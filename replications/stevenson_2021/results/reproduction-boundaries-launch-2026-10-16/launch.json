@@ -1,0 +1,25 @@
+{
+  "pid": 40200,
+  "command": [
+    "/opt/homebrew/bin/python3",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-boundaries-launch-001/run_boundaries.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-boundaries-001"
+  ],
+  "frozen_files": {
+    "run_boundaries.py": "9bfb6f10a17fa3ba3f98eca0e599ea1e397a67e0f58c69fa4715d938589e1eb9",
+    "REPRODUCTION_BOUNDARIES.md": "8ddbbd0fe3c3a12e91f9f1f248b9a2329a75329bd4e387e52110c0f074dff92f",
+    "simulate.cpp": "17803df8b61cfded16718e4895cf574cae77aa514e57a79f99413d7173d49fbc"
+  },
+  "author_sources": [
+    {
+      "url": "https://arxiv.org/pdf/2305.17177v1",
+      "sha256": "db90d8e56849f75a140ad470b9e651b5fdec72b0856e5bc525cdece812689103",
+      "location": "Algorithm1 line17 page4 visually checked; age>puberty and surplus>birthcost"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2302.03096v2",
+      "sha256": "0a3942d14aa51f0fcd3565fdc17e90b03d91f8268ec87cb14bade20ab097348e",
+      "location": "Algorithm1 line19; age>=puberty and surplus>=birthcost"
+    }
+  ]
+}

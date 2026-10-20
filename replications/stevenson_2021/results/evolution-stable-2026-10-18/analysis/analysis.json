@@ -1,0 +1,70 @@
+{
+  "complete_runs": 100,
+  "native_cycles": 50000,
+  "audited_inheritance_events": 3194850,
+  "comparison_vertices": 1988,
+  "cycle499_summary": {
+    "population": {
+      "cycle": 499,
+      "mean": 856.38,
+      "minimum": 784.0,
+      "maximum": 944.0,
+      "p2_5": 793.275,
+      "p97_5": 919.0
+    },
+    "wealth": {
+      "cycle": 499,
+      "mean": 492.55,
+      "minimum": 389.0,
+      "maximum": 756.0,
+      "p2_5": 395.475,
+      "p97_5": 661.7749999999999
+    },
+    "gini": {
+      "cycle": 499,
+      "mean": 0.6933959189671671,
+      "minimum": 0.6049305951373416,
+      "maximum": 0.753435140732226,
+      "p2_5": 0.6327493898874081,
+      "p97_5": 0.7348827510913187
+    },
+    "infertility_10": {
+      "cycle": 499,
+      "mean": 856.38,
+      "minimum": 784.0,
+      "maximum": 944.0,
+      "p2_5": 793.275,
+      "p97_5": 919.0
+    },
+    "birth_cost_0": {
+      "cycle": 499,
+      "mean": 856.38,
+      "minimum": 784.0,
+      "maximum": 944.0,
+      "p2_5": 793.275,
+      "p97_5": 919.0
+    },
+    "joint_optimum": {
+      "cycle": 499,
+      "mean": 856.38,
+      "minimum": 784.0,
+      "maximum": 944.0,
+      "p2_5": 793.275,
+      "p97_5": 919.0
+    },
+    "mean_age": {
+      "cycle": 499,
+      "mean": 12.765191027055995,
+      "minimum": 11.381637168141593,
+      "maximum": 14.279448621553884,
+      "p2_5": 11.642475693955193,
+      "p97_5": 13.863178999822484
+    }
+  },
+  "all_optimal_at_cycle499": 100,
+  "scope": "Conditional reconstruction with declared inheritance and initialization assumptions. Pointwise central ensemble ranges are descriptive, not simultaneous confidence intervals or paper acceptance criteria. Generation equals action cycle only by assumption. No steady-state or whole-paper replication claim.",
+  "sha256": {
+    "ensemble.npz": "5983938bb173a1d332aaaaffff91b4aa437f9008a63642578bba83522f391d1e",
+    "comparison.csv": "9c0b02df8be70793332482a68288c0829f0055d6ebadca9751de9ed69781bb21"
+  }
+}
