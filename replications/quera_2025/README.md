@@ -233,7 +233,8 @@ This validates the reconstructed diagnostic trajectories. It does not recover Fi
 
 [The figure extraction](results/calibration-loss-figure-2026-10-19/audit.json) recovers
 7,549 displayed vertices from the four loss paths in Figure19(b).
-Both methods have translucent and opaque paths; their smoothing and training/validation roles remain unknown.
+The Figure19 caption identifies faint paths as raw iteration losses and solid paths as moving averages.
+The averaging width and exact training/validation objective remain unspecified.
 All four paths span iterations0–2999, whereas the appendix specifies5,000 training epochs.
 This establishes a displayed-range discrepancy, not early stopping or a failed scientific result.
 The legend reports best losses−175.0 and−172.0; their selection procedure remains unresolved.
@@ -248,3 +249,16 @@ Run `pdftocairo -svg FIGURE.pdf FIGURE.svg`, then
 The figure is the `figures/results_calibration/calibration_sugarscape_w_0.0001_lr_0.0005_elbo.pdf`
 member of the [v2 paper source](https://arxiv.org/src/2509.03303v2); its hash is pinned in the audit.
 These simplified plot vertices are comparison targets, not recovered raw loss records or completed calibration.
+
+
+## Complete calibration figure plan
+
+[The gated renderer](results/calibration-figure-plan-2026-10-20) covers posterior predictive trajectories, joint parameter samples, and complete training histories.
+It waits for both 5,000-epoch audits, all 4,000 predictive trajectories, and independent R arithmetic before consuming those outputs.
+It verifies input hashes and retains all 1,000 samples per distribution.
+Predictive bands are pointwise empirical 95% intervals, not simultaneous coverage.
+Parameter panels use empirical cumulative distributions and scatterplots without density smoothing; five independent coordinates omit the redundant probability p6=1-p1.
+Training and validation objectives are shown separately, unsmoothed, across all 5,000 epochs.
+These are declared display choices, not recovery of the historical plot settings.
+
+R syntax and Python lint checks pass. Rendering and visual inspection remain pending; no calibration result or completion credit is inferred.
