@@ -1,0 +1,32 @@
+{
+  "native_runs": 1200,
+  "evaluated_generations": 2,
+  "matings": 11,
+  "mutated_components": 695,
+  "parent_selection_reasons": {
+    "dominance": 11,
+    "neighbors": 0,
+    "random": 11
+  },
+  "final_frontier_size": 3,
+  "sha256": {
+    "choices.json": "00860b008e4bbded269893fb55fa0e1c66d092482df9e7ff58de8c5d96b146ec",
+    "complete.json": "44f8177ce6359efbf26bf78a2c5f058b6b0c5c898c6b8725cb9ee0eabb157c4b",
+    "generation-000/exit.json": "60a63c4903265f07bdd887a5635ca14d47a16d15025b0134de642f2c2be6084f",
+    "generation-000/native.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "generation-000/population.json": "0ff366b0c142526f0885b8e7ba027c415e642a8c9359bb9f98bf7f45d4e5dd59",
+    "generation-000/requests.jsonl": "6a0bffa78e0a50e1a6ad82b97c3711cd07dc0fb7da15424a2778829653b2d509",
+    "generation-000/results.jsonl": "0a941de98a4630c1f9ff4e7c0cfd55a8a795405ed67672eb4f18961806ed5a56",
+    "generation-000/selection.json": "68172279edbcfcf52fb5ff450e205500d7cbd93aa4733a70e10c35848b1e4057",
+    "generation-001/exit.json": "d661783fe65754b2fbaa51013967f79d8474a36fcec31a9c5df1d25b50977cec",
+    "generation-001/native.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "generation-001/population.json": "7d8c16852cf0aaa7112ae0a51a43c7947b659735571ab23c5bf08a464f642efb",
+    "generation-001/requests.jsonl": "bd28f4bdf800443179ea0542460c4634c2f9f33530f09452b27c3166fa77f2d0",
+    "generation-001/results.jsonl": "bfde27a65b732555b66fb55107c1cb72d3d56bbfb5fea669323872fe072aa622",
+    "generation-001/selection.json": "ff24ec5b88c9676d86404caac9dadb0cd516e751c9b83bb8218a2f2256b17385",
+    "protocol.json": "321cddcd068c5099a29dbac2b7aabcb9d689d1ca7394fb0d90bc61e621fbec34",
+    "run_optimizer.py": "d713d2e00a7ae0b80610dd7ce4ef3e6a9aadab68149d11e4c8cf5a4111cd9969",
+    "runtime-manifest.json": "498e1574a3ee960bf3b13f49a8ec3b3c7c19322c8a2fe0a0aadfd349ccdbd079"
+  },
+  "scope": "Complete native optimization workflow and genetic-decision replay under declared choices; no historical-parameter or global-optimality claim."
+}

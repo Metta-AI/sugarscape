@@ -1,0 +1,10 @@
+{
+  "native_runs": 20000,
+  "summary_rows_independently_checked": 600,
+  "mean_sd_comparisons_against_python_statistics": 2400,
+  "absolute_tolerance": 1e-10,
+  "prefix_rows_read_back": 59400,
+  "archive_files_byte_identical": 33,
+  "native_archive_sha256": "9f3c75245b5252e66f7280dc4970a48e42827941918e5afde242144caf226203",
+  "scope": "Independent arithmetic readback of native observations and lossless archive verification; not independent model validation."
+}

@@ -1,0 +1,9 @@
+model,width,phase,metric,runtime_fraction,budget_rounding,model_seeds,reference_seeds,scope,policies,ties,weighting,reference_distinct_scores,model_distinct_scores,observed_disagreement,expected_disagreement,kappa,status
+10-pixel_centers-nearest,10,0,deaths,1,floor=ceil,1375,50,pooled,100,average,linear,96,95,6.82,33.33,0.7953795379537953,defined
+10-pixel_centers-nearest,10,4,deaths,1,floor=ceil,1375,50,pooled,100,average,linear,98,98,6.98,33.33,0.7905790579057905,defined
+10-aligned_endpoints-nearest,10,0,deaths,1,floor=ceil,1375,50,pooled,100,average,linear,96,98,6.96,33.3298,0.7911778648536745,defined
+10-aligned_endpoints-nearest,10,4,deaths,1,floor=ceil,1375,50,pooled,100,average,linear,98,98,7.45,33.33,0.7764776477647765,defined
+5-pixel_centers-nearest,5,0,deaths,1,floor=ceil,3900,50,pooled,100,average,linear,96,98,10.12,33.33,0.6963696369636964,defined
+5-pixel_centers-nearest,5,4,deaths,1,floor=ceil,3900,50,pooled,100,average,linear,98,97,9.26,33.33,0.7221722172217222,defined
+5-aligned_endpoints-nearest,5,0,deaths,1,floor=ceil,3900,50,pooled,100,average,linear,96,86,10.15,33.3298,0.6954677195782752,defined
+5-aligned_endpoints-nearest,5,4,deaths,1,floor=ceil,3900,50,pooled,100,average,linear,98,77,10.7,33.3284,0.6789524849677753,defined

@@ -1,0 +1,33 @@
+{
+  "selected_models": [
+    "50-pixel_centers-nearest",
+    "40-pixel_centers-nearest",
+    "30-pixel_centers-nearest",
+    "30-aligned_endpoints-nearest",
+    "20-pixel_centers-nearest",
+    "20-pixel_centers-floor",
+    "20-aligned_endpoints-nearest",
+    "20-aligned_endpoints-floor",
+    "10-pixel_centers-nearest",
+    "10-aligned_endpoints-nearest",
+    "5-pixel_centers-nearest",
+    "5-aligned_endpoints-nearest"
+  ],
+  "seeds": [
+    1,
+    2
+  ],
+  "clock_phases": [
+    0,
+    4
+  ],
+  "clipped": [
+    false,
+    true
+  ],
+  "native_runs": 96,
+  "per_model_seconds_limit": 120,
+  "policy": "Published heterogeneous control, unchanged",
+  "started_unix": 1792357277.1501281,
+  "protocol_sha256": "737a7c67582a7e735193f98ece0a3e7d8f9a7c45db5d9926d6e87870ea23bf5c"
+}

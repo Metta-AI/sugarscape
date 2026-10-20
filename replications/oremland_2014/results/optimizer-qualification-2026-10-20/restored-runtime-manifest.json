@@ -1,0 +1,70 @@
+{
+  "compile_command": [
+    "/opt/homebrew/opt/openjdk@11/bin/javac",
+    "-cp",
+    "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/NetLogo.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/scala-library-2.9.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-all-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/picocontainer-2.13.6.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/log4j-1.2.16.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/jmf-2.1.1e.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/pegdown-1.1.0.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/parboiled-core-1.0.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/parboiled-java-1.0.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-util-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-tree-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-analysis-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/jhotdraw-6.0b1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/quaqua-9.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/swing-layout-9.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/jogl-2.3.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/gluegen-rt-2.3.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/httpclient-4.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/httpcore-4.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/commons-logging-1.1.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/commons-codec-1.6.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/httpmime-4.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/json-simple-1.1.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/junit-4.10.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/hamcrest-core-1.1.jar:/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-optimizer-qualification-001/native",
+    "-d",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-optimizer-qualification-001/native",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-optimizer-qualification-001/native/RunPolicyBatch.java"
+  ],
+  "command": [
+    "/opt/homebrew/bin/gtimeout",
+    "--signal=TERM",
+    "--kill-after=30",
+    "1800",
+    "/opt/homebrew/opt/openjdk@11/bin/java",
+    "-Xmx512m",
+    "-XX:ActiveProcessorCount=1",
+    "-Djava.awt.headless=true",
+    "-Dfile.encoding=UTF-8",
+    "-cp",
+    "/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/NetLogo.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/scala-library-2.9.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-all-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/picocontainer-2.13.6.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/log4j-1.2.16.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/jmf-2.1.1e.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/pegdown-1.1.0.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/parboiled-core-1.0.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/parboiled-java-1.0.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-util-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-tree-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/asm-analysis-3.3.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/jhotdraw-6.0b1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/quaqua-9.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/swing-layout-9.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/jogl-2.3.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/gluegen-rt-2.3.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/httpclient-4.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/httpcore-4.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/commons-logging-1.1.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/commons-codec-1.6.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/httpmime-4.2.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/json-simple-1.1.1.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/junit-4.10.jar:/Users/relh/Code/workspace/sugarscape-replication-tools/netlogo-5.3.1-64/app/hamcrest-core-1.1.jar:/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-optimizer-qualification-001/native",
+    "RunPolicyBatch",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-optimizer-qualification-001/native/oremland.nlogo",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-optimizer-qualification-001/native/requests.jsonl",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-optimizer-qualification-001/native/results.jsonl"
+  ],
+  "source_sha256": "c6ef0db7bb9528b2ea49b9110c3cf17c260abeb9f9af5f255d0f983033f88e1c",
+  "class_sha256": "0ae8ba285f1a3ec95cb6b29c23f11566fcb56d3a9a865a2d112d01b715c12891",
+  "model_sha256": "1cc6ee9db0852ea2a071004aa31eb797a06131b434cffc82f697993057aca816",
+  "requests_sha256": "86170f905187570c5c77d8818527f2fbbf43326b240aa3489f72dd430d497d74",
+  "jars": {
+    "NetLogo.jar": "bf572521ce594e71db7706dcf45f43b157494e08437db0fa51e7ba18844eddd0",
+    "scala-library-2.9.2.jar": "cbbdb1e6bdf2f67ec5688a09a72a6d878183519cd68926553b8b86e918075f36",
+    "asm-all-3.3.1.jar": "2a5cdb0223d7a8993962189100253bf3a5abd474f6b19644341c9aa7d4354ecc",
+    "picocontainer-2.13.6.jar": "8b8dca6cc8a686759b4c015d127be654522f246f1635e65b6b251de80384cc47",
+    "log4j-1.2.16.jar": "7ae3fdde7ab0cae4735a2aec04381ad9b6e25c93d24205f3ed315d9866f12fe1",
+    "jmf-2.1.1e.jar": "4ab8cf5157d6714d44e30cc848eea8949d51e4777a9412c94c94a0d64274af90",
+    "pegdown-1.1.0.jar": "2bd26b7b4dd3d103457b750c76bd1d3cfa055614276f6f4521adffd4121add33",
+    "parboiled-core-1.0.2.jar": "df23c5a4466f93baa58c33cb7bf7c68b4a994422266fa768b6801cdd9fd3a917",
+    "parboiled-java-1.0.2.jar": "ad39678a8673b72216a55c7578bc3decfcc7a650819ee8a1cf783892d47f7d83",
+    "asm-3.3.1.jar": "c2b39275f8e951bc74750080a1266cdabc39399bc5e13d642bf2d346449df7f3",
+    "asm-util-3.3.1.jar": "5171835fd4c3b74782212e976e2a7cb758a32e897fbd14fe80e6910f09e5f93c",
+    "asm-tree-3.3.1.jar": "120060fd61cfa29f1638a66cce519d13d1182ade910f7ec68f3d9f4efc64106e",
+    "asm-analysis-3.3.1.jar": "b2d516cacbf2efb41330391d12ea0feee56b1aed5f298cea5b293b157ba31895",
+    "jhotdraw-6.0b1.jar": "4e33bef93b936d0f3f2508c54bf2e943d511b8870d8af8f7d5ae1b34d5f3f9c8",
+    "quaqua-9.1.jar": "04c1725622ca16461436ef1d35d9992f82680997761fc76116e37f2347ee03d4",
+    "swing-layout-9.1.jar": "619f52de25ea9d592f551e8d0e02eeb02193e326cb441611233029b669420d65",
+    "jogl-2.3.2.jar": "e74603dc77b4183f108480279dbbf7fed3ac206069478636406c1fb45e83b31a",
+    "gluegen-rt-2.3.2.jar": "084844543b18f7ff71b4c0437852bd22f0cb68d7e44c2c611c1bbea76f8c6fdf",
+    "httpclient-4.2.jar": "7a1791f3ef17acfb75d4c6a3e124b9a96946e02e2381e3f59f5bc500a7607208",
+    "httpcore-4.2.jar": "2a33431a8a0dd1948077975f95f27bf978de45b725ce7dc9e431b533d1ea49e3",
+    "commons-logging-1.1.1.jar": "ce6f913cad1f0db3aad70186d65c5bc7ffcc9a99e3fe8e0b137312819f7c362f",
+    "commons-codec-1.6.jar": "54b34e941b8e1414bd3e40d736efd3481772dc26db3296f6aa45cec9f6203d86",
+    "httpmime-4.2.jar": "a9f76c4c56f0addc9634c94edf0ef7eb1fb0a5e0dcc0c7b7c3f3e664e65d0eee",
+    "json-simple-1.1.1.jar": "4e69696892b88b41c55d49ab2fdcc21eead92bf54acc588c0050596c3b75199c",
+    "junit-4.10.jar": "36a747ca1e0b86f6ea88055b8723bb87030d627766da6288bf077afdeeb0f75a"
+  },
+  "missing_declared_jars": [
+    "hamcrest-core-1.1.jar"
+  ],
+  "scope": "400 complete policy workflows through a batched evaluator, compared with previously audited rich-observation runs. No optimizer or new scientific result claimed.",
+  "results_sha256": "3ddcda08bc0aba449ea5daf3dd23ff723217b831676bcd288bda9c1f6b9e9e28",
+  "restoration": {
+    "original_manifest_sha256": "a2ae3743a719bbf3e5a4d52a0e241acedc774c3e972625a98f0c737f7429ac23",
+    "class_bytes_exact": true,
+    "model_bytes_exact": true,
+    "source_bytes_exact": true,
+    "changes": "Only filesystem routing; runtime jars checked by optimizer preflight."
+  }
+}

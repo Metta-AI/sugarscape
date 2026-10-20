@@ -1,0 +1,50 @@
+{
+  "model": "50-independent-reference",
+  "width": 50,
+  "initial_population": 200,
+  "policies": 100,
+  "clock_phases": [
+    0,
+    4
+  ],
+  "seeds_per_policy_phase": 50,
+  "seed_range": [
+    10150995,
+    2147068595
+  ],
+  "seed_design": "independent",
+  "request_id_range": [
+    0,
+    9999
+  ],
+  "complete_native_runs": 10000,
+  "validated_jsonl_lines": 20000,
+  "objective_array_shape": [
+    100,
+    2,
+    50,
+    3
+  ],
+  "death_boundary": "negative",
+  "objective_order": [
+    "deaths",
+    "literal_revenue",
+    "positive_payments_on_literal_path"
+  ],
+  "objectives_npz_sha256": "352c590905fb56acb402dd0d4282a89ece071eeb4ac6d904bc750488860998a6",
+  "protocol_sha256": "8e76669af9328e0efdb11221eabd929590b1ef62f67fbfcd0fddb36d3b0c1584",
+  "policies_sha256": "584c7a595c7fb8b0563fb1c5406899cca06e1df62d17ce019e673945402888b6",
+  "model_sha256": "bb46970a48ea9ae647085bf0405709be7ec290890f7e16c87307d3ea1aae9d5c",
+  "landscape_sha256": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
+  "file_hashes": {
+    "execution/50-independent-reference-shard-0.results.jsonl": "fe74c36ad48e2f756a67ee191b62594df827a81391dad741fa238227b31c240f",
+    "50-independent-reference/requests-0.jsonl.gz": "4c57289007c61feb09ed8d4babf20a857fdde23ecff38b0783ef9bc512666673",
+    "execution/50-independent-reference-shard-1.results.jsonl": "a9001f57e204256a10f84c8c0e4ac3a20d0bc45e69411167b2520da93dc706a9",
+    "50-independent-reference/requests-1.jsonl.gz": "400d37ef71542407ee8a9c415034e15eb44340215863d5c1a4b1ee97f22206b5",
+    "execution/50-independent-reference-shard-2.results.jsonl": "ac63015e1f073ac4643c667d901cebd3389220e93cb95cff1039b4ed0e2805ee",
+    "50-independent-reference/requests-2.jsonl.gz": "8dc1dff9b0c651cad35c6da193682216f7ece2f9c8aed3ffb5819d2aa15ca523",
+    "execution/50-independent-reference-shard-3.results.jsonl": "c8a191dd29f861916ba0731d40cd7dabc7e0c27d8555cb7a6b24b3fe5946c970",
+    "50-independent-reference/requests-3.jsonl.gz": "4d5165fff3bd16c919edc8824b4b5b84824cf6120d438fbdb788064940c777fb"
+  },
+  "scope": "Complete per-model execution audit. This is not a whole-experiment completion claim or a policy-ranking conclusion; other models and scientific analysis remain separate."
+}

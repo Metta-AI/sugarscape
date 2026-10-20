@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/Users/relh/Code/workspace/sugarscape-replications/.venv/bin/python",
+    "replications/oremland_2014/audit_optimizer.py",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-optimizer-qualification-001/negative-control",
+    "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-optimizer-qualification-001/negative-unexpected-pass.json"
+  ],
+  "exit_code": 1,
+  "mutation": "Change first offspring first policy component by one modulo four; complete artifact replay must reject.",
+  "rejected": true
+}
