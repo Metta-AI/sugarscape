@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T03:22:12.329052+00:00",
+  "as_of": "2026-10-20T03:28:26.943703+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -162,20 +162,20 @@
     {
       "study": "quera_2025",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
-      "checked_commit": "e4a079c562e18f54b25bf181193b5556d7cca6a4",
+      "checked_commit": "4c6e614bfb8b63c343c55bfc71f2958dab66fcf8",
       "status": "partial",
       "readme": "replications/quera_2025/README.md",
-      "readme_sha256": "a7cf7e2906ac1cca9340acf1d86d731bc7d8c863701beec54b8347d64de3342f",
-      "remaining_scope": "Full gradient-baseline and perturbation state replay retained. Coupled native calibration qualification identifies original value/Jacobian random-draw mismatch, verified by passive trace. Separate corrected adapter passes two-channel loss/six-gradient arithmetic checks, negative controls, and fresh archive re-audit. Prior seed-zero trajectories remain byte-identical despite explicitly reconstructed coupled dependencies. Twenty finite flow samples. No optimization yet; five-sample5000-epoch training, prior/validation reconstruction, posterior comparisons and gradient-figure interpretation remain incomplete. No negative paper verdict or completed-study credit.",
+      "readme_sha256": "82e1dd2b8a7feb6ed80b8fd3bc3b9aa46720f396f53faf94a346327f7ca66890",
+      "remaining_scope": "All256 gradient-baseline and9216 perturbation trajectories retain independent state replay. Original coupled adapter random-draw mismatch verified by passive trace; separate corrected adapter passes two-channel loss/six-gradient checks. Reconstructed dependency environment explicit. Both native training estimators now qualify:3epochs each,5MC, all57342optimizer components per arm independently reconstructed, identical initial weights, validation selection verified, corrupt-update control rejected, archive re-audit exact. Full5000epoch pathwise then VarGrad campaign admitted locally with24h ceiling per arm and no retries. Explicit simplex/shape priors, learning rate, weight decay and held-out validation construction are reconstruction choices. Full optimization,1000-draw predictive distributions and final method comparisons remain incomplete. No paper-negative verdict or completed-study credit.",
       "validation": {
         "states": 150,
         "agent_observations": 15000,
         "cell_observations": 93750,
         "portable_trajectory_files_byte_identical": 9
       },
-      "json_evidence_files": 96,
+      "json_evidence_files": 109,
       "gzip_json_evidence_files": 1,
-      "checked_at": "2026-10-20T03:14:19.523829+00:00",
+      "checked_at": "2026-10-20T03:28:26.943703+00:00",
       "gradient_baseline_validation": {
         "seeds": 256,
         "agent_updates": 614400,
