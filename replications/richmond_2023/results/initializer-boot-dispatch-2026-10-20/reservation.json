@@ -1,0 +1,14 @@
+{
+  "id": "richmond-initializer-boot-dispatch-002",
+  "maximum_usd": 10,
+  "state": "reserved-before-boot-registration",
+  "node": "relh-sugarscape-richmond-h100-20261017-v1",
+  "queue_hold_seconds": 14400,
+  "maximum_running_seconds": 3600,
+  "boot_allowance_seconds": 900,
+  "export_allowance_seconds": 900,
+  "idle_allowance_seconds": 900,
+  "maximum_rate_usd_per_minute": 0.084,
+  "computed_running_boot_export_idle_usd": 8.82,
+  "scope": "Second attempt; prior10reservation retained. Queue waiting is separate from paid execution. No automatic retry."
+}

@@ -1,0 +1,15 @@
+{
+  "node": "relh-sugarscape-richmond-h100-20261017-v1",
+  "status": "queued",
+  "command": {
+    "command_id": "cmd-mcadf",
+    "log_path": "~/.givemeanode/commands/cmd-mcadf.log",
+    "max_duration_minutes": 60,
+    "note": "Registered. It starts the moment relh-sugarscape-richmond-h100-20261017-v1 is ready, before the idle-grace clock matters, and is killed if it runs past 60 minutes. get_command answers for it now; it never carries over into a later wake.",
+    "object": "command",
+    "state": "pending_wake"
+  },
+  "max_wait_seconds": 14400,
+  "runtime_limit_seconds": 3600,
+  "wake_requested": true
+}

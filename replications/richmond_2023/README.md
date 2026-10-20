@@ -1,5 +1,7 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
+[A second initializer attempt is queued as a bounded boot command](results/initializer-boot-dispatch-2026-10-20): four-hour queue hold, 60-minute server runtime limit, and a separate $10 reservation. The unchanged nine-variant payload is commit-pinned and hash-verified; no native result is claimed.
+
 [The initializer attempt reached its startup bound](results/initializer-startup-bound-2026-10-20). The H100 remained queued and is verified stopped with disk intact; no simulation command was created. Prepared controls remain unexecuted.
 
 [The later upstream source check](results/upstream-recheck-2026-10-20) confirms the publication release is the pinned `v1`. The inspected newer revision changes only the engine dependency; model source is byte-identical. Its telemetry-related timing qualification is preserved without changing the experiment.
