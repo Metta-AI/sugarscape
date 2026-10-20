@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T00:51:23.572702+00:00",
+  "as_of": "2026-10-20T00:54:10.327655+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -131,12 +131,13 @@
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/13",
       "status": "partial",
       "readme": "replications/pike_2019/README.md",
-      "remaining_scope": "All declared native grids and timing cohorts audited. Five retained common-resource files and twelve deleted historical files recovered; all400 archived runs structurally audited. Two Python3.6-era controls still overflow, despite identical initial agents. Historical runtime/source fidelity, numerical validity, target definitions and published interpretations remain unresolved; no whole-paper negative verdict.",
-      "checked_commit": "136132ea03959f3b247bb4ec47dc1d6aed049958",
-      "readme_sha256": "a71011e5f90bdb1206b2399cdcb464f450bd563773693d5ce2b3ce34886508f5",
-      "json_evidence_files": 234,
+      "remaining_scope": "Common-resource history recheck: all4policy/agent files byte-identical across8ancestor commits/32snapshots through selected prepublication revision. Source edits within this ancestry cannot explain pooling defect; installed library/runtime and unpublished working tree unproven. Numerical validity still fails; no completed-study credit. All declared native grids and timing cohorts audited. Five retained common-resource files and twelve deleted historical files recovered; all400 archived runs structurally audited. Two Python3.6-era controls still overflow, despite identical initial agents. Historical runtime/source fidelity, numerical validity, target definitions and published interpretations remain unresolved; no whole-paper negative verdict.",
+      "checked_commit": "743e8625c1e2c56d004a3da193981e6822b2b05c",
+      "readme_sha256": "794a35a196e605bbaaca6340991d6f5c595100738a9501c587c9a7363ddaa1fd",
+      "json_evidence_files": 238,
       "gzip_json_evidence_files": 129,
-      "checked_at": "2026-10-18T00:56:51.004696+00:00"
+      "checked_at": "2026-10-20T00:54:10.327655+00:00",
+      "evidence_scan_scope": "All tracked JSON and gzip JSON under replications/pike_2019"
     },
     {
       "study": "izquierdo_2009",
