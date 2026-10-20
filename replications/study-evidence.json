@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T01:04:38.945951+00:00",
+  "as_of": "2026-10-20T01:13:54.283122+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -279,15 +279,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "5aae6d9544d51c3568c8f879304447404e3d75c3",
+      "checked_commit": "2994eb2cf5b81bd9c3f25e1adef14646c967e022",
       "status": "running",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "b4996c5dcffa6636448785a1536fcd298a801e077a4077bbbb7de3df1495c5d2",
-      "json_evidence_files": 562,
-      "gzip_json_evidence_files": 30,
-      "checked_at": "2026-10-20T00:34:49.320234+00:00",
+      "readme_sha256": "6ab4c54312788721dd09868f2b1d567ef69a8934a57a42a6308f8a9f85f7a21a",
+      "json_evidence_files": 574,
+      "gzip_json_evidence_files": 31,
+      "checked_at": "2026-10-20T01:13:54.283122+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "1202 unique inputs / 24041202 observations audited: all800 released-code plus402 paper-table. Eight complete paper-table cohorts;398 inputs and claim synthesis remain. New EC/SARSA50 cohort passes independent R, full raw trajectory audit and fresh durable storage readback. Eleven of12 readable endpoint ranges overlap; EC vision mean differs while its pointwise interval overlaps. Both learning-parameter interpretations retained; all50 paired trajectories differ. No equivalence or completed-study credit."
+      "remaining_scope": "1,252 inputs and 25,041,252 observations pass full union audit: 800 released and 452 paper-table; 348 remain. Complete paper-table Q/Rule M cohort adds 50 inputs. Fresh storage archive and member hashes verified; independent R checks 320,016 means/SD,14 endpoints,20,000 bootstrap resamples. All14 endpoint ranges overlap readable raster bands; no statistical equivalence claim. All50 trajectories differ from paired released parameters. Existing producer continues unchanged; full paper-table ensemble and final claim audit remain."
     },
     {
       "study": "need_for_greed_2024",
