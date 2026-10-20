@@ -1,16 +1,14 @@
 # Oremland and Laubenbacher (2014)
 
-[Held-out frontier transfer completes](results/held-out-transfer-complete-2026-10-20): 28,800 native evaluations cover all 144 final policies. Fresh replay, independent R arithmetic, storage verification, and final figure review pass. All thirteen width-five policies are empirically dominated by same-seed full-model candidates; this is not a global-optimality or historical-frontier claim. Final method assessment remains pending.
+**Completed qualified Sugarscape method reconstruction. Historical numerical agreement and a validated negative result are not established.**
 
-[The frozen timing benchmark completes](results/cloud-timing-benchmark-2026-10-20): 18,639 native inputs pass fresh independent audit and storage verification. Median simulation batches range from 1.7288 to 2.7325 seconds. Hardware and timing-scope differences prevent historical timing equivalence claims. Transfer and final synthesis remain pending.
+[The method assessment](results/method-scope-assessment-2026-10-20) maps every Sugarscape method stage to completed native evidence and records reconstruction choices. It covers convergence, reduced-model rankings, genetic optimization, held-out transfer, and timing. The separate rabbits-and-grass example is outside this study.
 
-[Cloud timing qualification passes](results/cloud-timing-qualification-2026-10-20): all 48 inputs preserve every non-timing output across hosts. The local passive watcher was stopped before admission. One bounded cloud benchmark now runs the frozen 18,639-input sequence on a pinned CPU. Hardware differences remain explicit; no timing result or study completion is claimed.
+[All eighteen searches](results/searches-complete-2026-10-20) complete 432,000 native evaluations with exact independent genetic-decision replay. [Held-out transfer](results/held-out-transfer-complete-2026-10-20) evaluates all 144 final policies across 28,800 full-model runs. Independent R arithmetic, archive verification, and figure review pass.
 
-[All eighteen frozen searches complete](results/searches-complete-2026-10-20): 432,000 native evaluations and exact fresh replay of every genetic decision. The 144 final policies now enter 28,800 held-out full-model evaluations. All 2,430 archived members pass fresh storage readback. Transfer, timing, and final synthesis remain pending; no global-optimality or completed-study claim is made.
+[The timing benchmark](results/cloud-timing-benchmark-2026-10-20) completes 18,639 native inputs. Published batch counts do not imply equal elapsed time on the new hardware. No historical timing-equivalence or global-optimality claim is made.
 
-[Passive timing instrumentation qualifies](results/timing-recorder-qualification-2026-10-20) across 48 paired inputs and all six widths, with exact native outputs and survivor hashes. A separate Table 2 benchmark retains published batch counts and waits for this task’s heavy local jobs. Qualification timings are excluded from benchmark conclusions; no completed-study credit is added.
-
-**Incomplete reconstruction. No published aggregate result has been replicated.**
+Earlier evidence directories retain their contemporaneous partial-study status. The assessment above supplies the current verdict without retroactively changing those records.
 
 [Optimization of Agent-Based Models: Scaling Methods and Heuristic Algorithms](https://www.jasss.org/17/2/6.html), JASSS 17(2), 6, DOI 10.18564/jasss.2472.
 The paper studies tax-policy ranking under model reduction and the transfer of optimized controls to the original Sugarscape model.
@@ -206,11 +204,11 @@ python prepare_independent_streams.py /path/to/qualified-reductions /path/to/com
 Use `run_rankings.py` only after the preceding batch terminates to retain the four-worker limit.
 The ordinary ranking auditor's consecutive-seed contract does not apply to this diagnostic; its unique-seed outputs require a separate audit.
 
-## Remaining paper scope
+## Historical provenance limits
 
 The original author implementation, original 100 controls and random streams, and historical reduction and optimizer settings remain unavailable.
 Completed convergence and ranking ensembles above evaluate explicit reconstruction choices; they do not establish the authors’ original controls or uncertainty bars.
-Figure 11’s optimized-policy transfer and Table 2’s historical timings remain unreproduced. No paper-completion credit is assigned.
+Figure 11’s transfer method and Table 2’s batch-count timing method are now complete. Historical frontier identity and timing agreement remain unproven.
 
 The full-size landscape is resolved. Reduced-grid conventions now have explicit, qualified sensitivity cases; their agreement with the original author implementation remains unproven.
 Under the prose death rule, negative-payment clipping leaves paired survivor states unchanged. This does not extend to the algorithm’s negative-only death rule.
@@ -266,7 +264,7 @@ They compare two dominance interpretations and exercise neighborhood selection w
 Mutation selects a different rate; odd population slots keep the first child. These are reconstruction choices, not recovered historical settings.
 The final unevaluated children are retained separately from the reported evaluated frontier.
 
-This validates optimizer execution, not convergence, global optimality, or Figure 11’s reduced-to-full-model frontier transfer.
+Qualification validates optimizer execution. The completed production campaign below adds reduced-to-full transfer; convergence to a global optimum is not established.
 
 ```sh
 python run_optimizer.py /path/to/qualified-runtime-manifest.json /path/to/protocol.json /path/to/new-run
@@ -274,9 +272,9 @@ python audit_optimizer.py /path/to/new-run /path/to/new-audit.json
 ```
 
 [The frozen transfer campaign](results/frontier-transfer-protocol-2026-10-20) now covers all six published grid widths and three optimizer seeds.
-It plans 432,000 native evaluations, followed by full-model evaluation of every final frontier on 200 held-out seeds.
+It completes 432,000 native evaluations, followed by full-model evaluation of every final frontier on 200 held-out seeds.
 The budget, reduction conventions, comparisons, and execution bounds were fixed before inspecting results.
-The campaign is running; no additional completed-study credit is assigned.
+The completed campaign is included in the qualified method assessment above.
 
 [The held-out transfer evaluator](results/transfer-qualification-2026-10-20) passes 1,800 native simulations and independent statistical replay.
 A corrupted standard error is rejected. Fresh archive extraction reproduces the audit exactly.
@@ -291,4 +289,4 @@ Timing inputs, repetitions, warmups, and analysis remain unchanged.
 [Held-out reporting qualification](results/transfer-report-qualification-2026-10-20) independently recomputes all objectives, standard errors, and dominance decisions from 1,800 native qualification runs.
 The corrected plot is visually inspected and preserves every numeric row. These controls use only full-size models.
 A separate watcher applies the same reporting path after all eighteen production searches and transfers pass audit.
-The production transfer comparison and visual review remain pending; no completion credit is assigned.
+The production transfer comparison and visual review now pass; the completed report is linked above.
