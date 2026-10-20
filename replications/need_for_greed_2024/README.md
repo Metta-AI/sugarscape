@@ -1,5 +1,7 @@
 # The Need for Greed in Artificial Decisionmakers
 
+[Two further sealed checkpoints](results/unassigned-checkpoints-eleven-twelve-2026-10-20) add fifty unique inputs and 250,050 observations after fresh storage and full raw audits. Coverage reaches 1,205 inputs and 5,005,871 observations; 9,295 sweep inputs remain. Completed table results are unchanged; no whole-study credit is added.
+
 [The tenth unassigned checkpoint](results/unassigned-tenth-checkpoint-2026-10-20) adds 25 inputs and 125,025 audited observations from fresh storage readback. Coverage reaches 1,155 inputs and 4,755,821 observations; 9,345 sweep inputs remain. Deposited configurations and qualified payloads match exactly. Completed table results are unchanged; no additional study credit is assigned.
 
 [The ninth unassigned checkpoint](results/unassigned-ninth-checkpoint-2026-10-20) passes fresh storage and full raw-trajectory audits. Coverage reaches 1,130 unique inputs and 4,630,796 observations; 9,370 sweep inputs remain. Completed baseline and Table IV row results remain unchanged.
