@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T04:06:18.187944+00:00",
+  "as_of": "2026-10-20T04:08:09.707878+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -281,15 +281,15 @@
     {
       "study": "brearcliffe_2020",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23",
-      "checked_commit": "af852738f0e079977d8a4e0bd50c2200627dd61a",
+      "checked_commit": "51a31285238cc2b84629b921ea02094cd7c53249",
       "status": "running",
       "readme": "replications/brearcliffe_2020/README.md",
-      "readme_sha256": "8ea3779fc77354f52caf9ba601d5d45cafcb219ae06ee97b912aa6342fab6006",
-      "json_evidence_files": 613,
+      "readme_sha256": "cc931b64b7ed9fa520fc1390b0b715962ecc161463557d3124e471b39cdf8ce8",
+      "json_evidence_files": 616,
       "gzip_json_evidence_files": 34,
-      "checked_at": "2026-10-20T04:06:18.187944+00:00",
+      "checked_at": "2026-10-20T04:08:09.707878+00:00",
       "evidence_scan_scope": "All tracked JSON files under replications/brearcliffe_2020",
-      "remaining_scope": "Audited1400inputs/28001400observations: all800released settings and600paper-table settings. Twelve complete paper-table cohorts;200paper-table inputs and final claim synthesis remain. LatestQ/SARSA cohort50runs combines48new with2retained pilots; full trajectory union, independent R and fresh storage readback pass. All12readable endpoint raster ranges overlap;2unresolved; descriptive only, no equivalence verdict. Existing ten-pair common-target synthesis remains scoped to ten pairs. Both learning-parameter interpretations retained; historical seeds/settings unresolved. Next SARSA/RuleM50input collector PID57265 watches existing producer cmd-cdbjg; no simulations restarted. External brearcliffe-paper-sarsa-rulem-snapshot-001."
+      "remaining_scope": "Audited1400inputs/28001400observations: all800released settings and600paper-table settings. Twelve complete paper-table cohorts;200paper-table inputs and final claim synthesis remain. LatestQ/SARSA cohort50runs combines48new with2retained pilots; full trajectory union, independent R and fresh storage readback pass. All12readable endpoint raster ranges overlap;2unresolved; descriptive only, no equivalence verdict. Twelve-pair common-target synthesis now covers600matched inputs under both interpretations. Independent R verifies46512curve-pair/168endpoint categories:121both overlap,8paper-only,2released-only,18neither,19unresolved. Earlier ten-pair records/source hashes preserved; two executions byte-identical. No parameter selection or equivalence claim; four paired cohorts and final synthesis remain. Both learning-parameter interpretations retained; historical seeds/settings unresolved. Next SARSA/RuleM50input collector PID57265 watches existing producer cmd-cdbjg; no simulations restarted. External brearcliffe-paper-sarsa-rulem-snapshot-001."
     },
     {
       "study": "need_for_greed_2024",
