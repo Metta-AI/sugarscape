@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-20T04:13:21.267918+00:00",
+  "as_of": "2026-10-20T04:15:57.254518+00:00",
   "minimum_completed_papers": 10,
   "completed_studies": 7,
   "wholly_positive_papers": 1,
@@ -294,15 +294,15 @@
     {
       "study": "need_for_greed_2024",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/24",
-      "checked_commit": "6fb30f2258d5f2388dc73c3df240c34ab64fb63e",
+      "checked_commit": "a36f2b0175685a331d2e6f493d324fad182d8435",
       "status": "partial",
       "readme": "replications/need_for_greed_2024/README.md",
-      "readme_sha256": "023250304b8486aa5efea2e00ae24ff91890c45f7ce62f731a0a2646b6bc7b4c",
-      "json_evidence_files": 533,
-      "gzip_json_evidence_files": 109,
-      "checked_at": "2026-10-20T03:47:50.713949+00:00",
+      "readme_sha256": "825d4af4fddd1fdcc4df51ab6f383b8e6a132343a948c68cfb5ead1ba416c529",
+      "json_evidence_files": 539,
+      "gzip_json_evidence_files": 111,
+      "checked_at": "2026-10-20T04:15:57.254518+00:00",
       "evidence_scan_scope": "All tracked JSON and compressed JSON under replications/need_for_greed_2024",
-      "remaining_scope": "1130 unique original inputs and4630796 observations audited: all400 baselines plus730 sweep inputs;9370 sweep inputs remain. Latest checkpoint0227 adds25 disjoint inputs/125025 observations, archive11846274bytes SHA3e5a36cf35f608bbe6a29c1cb088d1b3b840401efb9601c834f161462fd91da5. Original configurations, qualified payloads and every trajectory pass fresh readback. TablesI-III reproduce published percentages across300inputs;100baseline controls separate. Complete TableIV0.36-0.40 row has6extinct/0worse/494better, independently verified inR; no equality-boundary cases. Incomplete rows have no percentage estimates. Four selfishness0.37 medians agree graphically; starvation+combat deaths do not. Adding aging matches medians but conflicts with prose, and later author plotting code does not establish historical aggregation. Figures2-6 synthesis and full sweep remain. Completed TableIV producer terminal0 and node stopped/diskintact. Disjoint unassigned producer cmd-9339c freshly verified running; no restart or new allocation. Canonical inventory: need-for-greed-unassigned-prefix-009/reconciliation.json. No whole-paper positive/negative or completion credit."
+      "remaining_scope": "1155 unique original inputs and4755821 observations audited: all400 baselines plus755 sweep inputs;9345 sweep inputs remain. Latest checkpoint0252 adds25 disjoint inputs/125025 observations, archive11779802bytes SHA22d8b2b200af53b64cd78174e75a477e232780f80a92b13b2e1eddf6c60c5892. Original configurations, qualified payloads and every trajectory pass fresh readback. TablesI-III reproduce published percentages across300inputs;100baseline controls separate. Complete TableIV0.36-0.40 row has6extinct/0worse/494better, independently verified inR; no equality-boundary cases. Incomplete rows have no percentage estimates. Four selfishness0.37 medians agree graphically; starvation+combat deaths do not. Adding aging matches medians but conflicts with prose, and later author plotting code does not establish historical aggregation. Figures2-6 synthesis and full sweep remain. Completed TableIV producer terminal0 and node stopped/diskintact. Disjoint unassigned producer cmd-9339c freshly verified running; no restart or new allocation. Canonical inventory: need-for-greed-unassigned-prefix-010/reconciliation.json. No whole-paper positive/negative or completion credit."
     }
   ],
   "study_prs": 22,
