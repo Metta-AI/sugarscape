@@ -1,7 +1,7 @@
 {
-  "as_of": "2026-10-20T07:31:19.389833+00:00",
+  "as_of": "2026-10-20T07:37:10.824554+00:00",
   "minimum_completed_papers": 10,
-  "completed_studies": 8,
+  "completed_studies": 9,
   "wholly_positive_papers": 1,
   "interpretation": "Eight completed studies under the user\u2019s method-based criterion: McCulloch mixed, Dogan mixed unpublished working paper, Izquierdo positive structural, Lima qualified author-code feasibility, Carrella qualified method, Thaler qualified simulation/benchmark, Richmond qualified author-code reproduction, and Oremland qualified Sugarscape method reconstruction. Numerical agreement is separate; historical identity and wholly-positive verdicts are not inferred.",
   "studies": [
@@ -162,20 +162,20 @@
     {
       "study": "quera_2025",
       "pr": "https://app.graphite.dev/github/pr/Metta-AI/sugarscape/15",
-      "checked_commit": "9a57ba5233459d44eaa673ef19eb01803b4c5367",
-      "status": "partial",
+      "checked_commit": "39b0cf9e9b433fe0eaf7bd9883ece6871074b022",
+      "status": "completed-method-qualified-reconstruction",
       "readme": "replications/quera_2025/README.md",
-      "readme_sha256": "a8ee75c0d532531898652fa41b4a118827c5de46d807926955a35516a1ef5dd1",
-      "remaining_scope": "Both5000epoch calibration arms complete with191140000optimizer components and10000exactFloat32 norms audited. Both15006file native archives freshly read back. All4000predictive trajectories complete; independentR verifies1712summary values, raw exports freshly archived/readback. ThreePDFs rendered and visually reviewed; clipped labels corrected without data changes. Original precision and predictive terminal-schema audit failures preserved. Source/claim review and final whole-Sugarscape-method synthesis remain pending; explicit prior/validation/optimizer/environment reconstructions and one optimization seed per arm prevent historical numerical identity claims. No completed-study credit yet.",
+      "readme_sha256": "67b121d888703d1cd34e1487afdbbbc59c9ddfb005f90b2cb2803f4581fcebe1",
+      "remaining_scope": "Declared Sugarscape method study complete: model/state fidelity, six-parameter gradient diagnostics, both full5000epoch calibration arms, predictive/posterior comparison, independent arithmetic and durable evidence. Historical protocol/priors/environment and numerical identity remain unresolved; VarGrad mismatch and incomplete parameter recovery retained. One optimization seed per arm; no general estimator ranking, wholly-positive credit or validated-negative verdict. Axtell/SIR case studies outside this Sugarscape scope.",
       "validation": {
         "states": 150,
         "agent_observations": 15000,
         "cell_observations": 93750,
         "portable_trajectory_files_byte_identical": 9
       },
-      "json_evidence_files": 144,
+      "json_evidence_files": 146,
       "gzip_json_evidence_files": 5,
-      "checked_at": "2026-10-20T07:31:19.389833+00:00",
+      "checked_at": "2026-10-20T07:37:10.824554+00:00",
       "gradient_baseline_validation": {
         "seeds": 256,
         "agent_updates": 614400,
@@ -218,7 +218,9 @@
         "maximum_scaled_error": 3.7993e-16,
         "remote_archive_verified": true,
         "figures_reviewed": 3
-      }
+      },
+      "method_verdict": "replications/quera_2025/results/method-verdict-2026-10-20/verdict.json",
+      "method_verdict_sha256": "4f7d53f700b1da459ff5176cb1e840891bb36764eda0d1f9ef73d13d790f40fa"
     },
     {
       "study": "thaler_2019",
