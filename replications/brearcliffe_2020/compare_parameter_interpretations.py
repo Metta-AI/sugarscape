@@ -36,7 +36,7 @@ for pair, (released_name, paper_name, paper_date) in enumerate(
         ("sarsa-rule-m", "paper-sarsa-rulem", "2026-10-20"),
         ("sarsa-ec", "paper-sarsa-ec", "2026-10-20"),
         ("sarsa-q", "paper-sarsa-q", "2026-10-20"),
-        ("sarsa-sarsa", "paper-sarsa-sarsa", "2026-10-20"),
+        ("released-sarsa-sarsa", "paper-sarsa-sarsa", "2026-10-20"),
     ][:args.pairs]
 ):
     summaries = []

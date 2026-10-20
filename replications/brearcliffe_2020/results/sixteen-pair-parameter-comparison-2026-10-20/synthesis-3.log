@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/relh/Code/workspace/sugarscape-brearcliffe/replications/brearcliffe_2020/compare_parameter_interpretations.py", line 62, in <module>
+    path.read_bytes()
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1050, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_2/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/relh/Code/workspace/sugarscape-brearcliffe/replications/brearcliffe_2020/results/sarsa-sarsa-complete-cohort-2026-10-19/cohort-summary.json'

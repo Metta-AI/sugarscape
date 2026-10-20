@@ -1,0 +1,81 @@
+interpretation,pair_index,breed,method,metric,initial_mean,final_mean,final_minus_initial,increasing_steps,decreasing_steps,unchanged_steps,source_means
+released-code,5,A,EC,metabolism,2.49405,1.0,-1.49405,0,214,19786,ec-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,5,A,EC,vision,3.4904499999999996,1.88015,-1.6102999999999996,6594,10020,3386,ec-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,5,B,EC,metabolism,2.4969,1.0,-1.4969000000000001,0,221,19779,ec-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,5,B,EC,vision,3.5006500000000003,2.16945,-1.3312000000000004,6641,10491,2868,ec-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,6,A,EC,metabolism,2.49635,1.0,-1.49635,0,701,19299,ec-q-complete-cohort-2026-10-19/means.csv.gz
+released-code,6,A,EC,vision,3.4892499999999997,2.80365,-0.6855999999999995,8738,11006,256,ec-q-complete-cohort-2026-10-19/means.csv.gz
+released-code,6,B,Q-Learning,metabolism,2.508400000000001,1.0539499999999997,-1.4544500000000011,9861,10054,85,ec-q-complete-cohort-2026-10-19/means.csv.gz
+released-code,4,A,EC,metabolism,2.5026000000000006,1.0,-1.5026000000000006,0,237,19763,ec-rule-m-complete-cohort-2026-10-19/means.csv.gz
+released-code,4,A,EC,vision,3.4906500000000005,1.0999999999999996,-2.390650000000001,3013,7724,9263,ec-rule-m-complete-cohort-2026-10-19/means.csv.gz
+released-code,4,B,Rule M,metabolism,2.5159499999999997,1.3282000000000005,-1.1877499999999992,9850,10063,87,ec-rule-m-complete-cohort-2026-10-19/means.csv.gz
+released-code,7,A,EC,metabolism,2.4945500000000007,1.0,-1.4945500000000007,0,718,19282,ec-sarsa-complete-cohort-2026-10-19/means.csv.gz
+released-code,7,A,EC,vision,3.5035999999999996,3.1572999999999993,-0.3463000000000003,8570,11089,341,ec-sarsa-complete-cohort-2026-10-19/means.csv.gz
+released-code,7,B,SARSA,metabolism,2.5042999999999997,1.06655,-1.4377499999999996,9842,10063,95,ec-sarsa-complete-cohort-2026-10-19/means.csv.gz
+paper-table,5,A,EC,metabolism,2.49405,1.0,-1.49405,0,214,19786,paper-ec-ec-complete-cohort-2026-10-19/means.csv.gz
+paper-table,5,A,EC,vision,3.4904499999999996,1.88015,-1.6102999999999996,6594,10020,3386,paper-ec-ec-complete-cohort-2026-10-19/means.csv.gz
+paper-table,5,B,EC,metabolism,2.4969,1.0,-1.4969000000000001,0,221,19779,paper-ec-ec-complete-cohort-2026-10-19/means.csv.gz
+paper-table,5,B,EC,vision,3.5006500000000003,2.16945,-1.3312000000000004,6641,10491,2868,paper-ec-ec-complete-cohort-2026-10-19/means.csv.gz
+paper-table,6,A,EC,metabolism,2.49635,1.0,-1.49635,0,700,19300,paper-ec-q-complete-cohort-2026-10-19/means.csv.gz
+paper-table,6,A,EC,vision,3.4892499999999997,3.1963499999999994,-0.2929000000000004,8483,11151,366,paper-ec-q-complete-cohort-2026-10-19/means.csv.gz
+paper-table,6,B,Q-Learning,metabolism,2.508400000000001,1.0636051378446116,-1.4447948621553892,9894,10009,97,paper-ec-q-complete-cohort-2026-10-19/means.csv.gz
+paper-table,4,A,EC,metabolism,2.5026000000000006,1.0,-1.5026000000000006,0,237,19763,paper-ec-rule-m-complete-cohort-2026-10-19/means.csv.gz
+paper-table,4,A,EC,vision,3.4906500000000005,1.0999999999999996,-2.390650000000001,3013,7724,9263,paper-ec-rule-m-complete-cohort-2026-10-19/means.csv.gz
+paper-table,4,B,Rule M,metabolism,2.5159499999999997,1.3282000000000005,-1.1877499999999992,9850,10063,87,paper-ec-rule-m-complete-cohort-2026-10-19/means.csv.gz
+paper-table,7,A,EC,metabolism,2.4945500000000007,1.0,-1.4945500000000007,0,688,19312,paper-ec-sarsa-complete-cohort-2026-10-20/means.csv.gz
+paper-table,7,A,EC,vision,3.5035999999999996,3.0425000000000004,-0.4610999999999992,8573,11085,342,paper-ec-sarsa-complete-cohort-2026-10-20/means.csv.gz
+paper-table,7,B,SARSA,metabolism,2.5042999999999997,1.0559999999999996,-1.4483000000000001,9783,10121,96,paper-ec-sarsa-complete-cohort-2026-10-20/means.csv.gz
+paper-table,9,A,Q-Learning,metabolism,2.51185,1.0580500000000002,-1.4537999999999998,9859,10054,87,paper-q-ec-complete-cohort-2026-10-20/means.csv.gz
+paper-table,9,B,EC,metabolism,2.4961999999999995,1.0,-1.4961999999999995,0,691,19309,paper-q-ec-complete-cohort-2026-10-20/means.csv.gz
+paper-table,9,B,EC,vision,3.4831000000000003,3.000749999999999,-0.48235000000000117,8360,11293,347,paper-q-ec-complete-cohort-2026-10-20/means.csv.gz
+paper-table,10,A,Q-Learning,metabolism,2.5010499999999993,1.0076,-1.4934499999999993,7514,7637,4849,paper-q-q-complete-cohort-2026-10-20/means.csv.gz
+paper-table,10,B,Q-Learning,metabolism,2.5050000000000003,1.00875,-1.4962500000000003,7420,7695,4885,paper-q-q-complete-cohort-2026-10-20/means.csv.gz
+paper-table,8,A,Q-Learning,metabolism,2.49655,1.0834500000000002,-1.4130999999999998,9870,10024,106,paper-q-rule-m-complete-cohort-2026-10-20/means.csv.gz
+paper-table,8,B,Rule M,metabolism,2.4977500000000004,1.3180499999999997,-1.1797000000000006,9749,10152,99,paper-q-rule-m-complete-cohort-2026-10-20/means.csv.gz
+paper-table,11,A,Q-Learning,metabolism,2.502050000000001,1.0052499999999998,-1.4968000000000012,7247,7445,5308,paper-q-sarsa-complete-cohort-2026-10-20/means.csv.gz
+paper-table,11,B,SARSA,metabolism,2.4979499999999994,1.0042000000000004,-1.493749999999999,7232,7572,5196,paper-q-sarsa-complete-cohort-2026-10-20/means.csv.gz
+paper-table,0,A,Rule M,metabolism,2.5042999999999993,1.315964912280702,-1.1883350877192973,9858,10086,56,paper-rule-m-complete-cohort-2026-10-19/means.csv.gz
+paper-table,0,B,Rule M,metabolism,2.5054500000000006,1.3086,-1.1968500000000006,9846,10104,50,paper-rule-m-complete-cohort-2026-10-19/means.csv.gz
+paper-table,1,A,Rule M,metabolism,2.4842500000000007,1.3243999999999998,-1.159850000000001,9929,9981,90,paper-rule-m-ec-complete-cohort-2026-10-19/means.csv.gz
+paper-table,1,B,EC,metabolism,2.51005,1.0,-1.5100500000000001,0,237,19763,paper-rule-m-ec-complete-cohort-2026-10-19/means.csv.gz
+paper-table,1,B,EC,vision,3.5212999999999997,1.22,-2.3012999999999995,1891,6201,11908,paper-rule-m-ec-complete-cohort-2026-10-19/means.csv.gz
+paper-table,2,A,Rule M,metabolism,2.493,1.3209499999999998,-1.17205,9850,10053,97,paper-rule-m-q-complete-cohort-2026-10-19/means.csv.gz
+paper-table,2,B,Q-Learning,metabolism,2.50455,1.08125,-1.4233,9918,9986,96,paper-rule-m-q-complete-cohort-2026-10-19/means.csv.gz
+paper-table,3,A,Rule M,metabolism,2.5075499999999984,1.3267000000000002,-1.1808499999999982,9918,9980,102,paper-rule-m-sarsa-complete-cohort-2026-10-19/means.csv.gz
+paper-table,3,B,SARSA,metabolism,2.4973000000000005,1.08015,-1.4171500000000006,9869,10043,88,paper-rule-m-sarsa-complete-cohort-2026-10-19/means.csv.gz
+paper-table,13,A,SARSA,metabolism,2.50285,1.05325,-1.4496,9870,10042,88,paper-sarsa-ec-complete-cohort-2026-10-20/means.csv.gz
+paper-table,13,B,EC,metabolism,2.5028999999999995,1.0,-1.5028999999999995,0,720,19280,paper-sarsa-ec-complete-cohort-2026-10-20/means.csv.gz
+paper-table,13,B,EC,vision,3.478500000000001,2.943349999999999,-0.535150000000002,8377,11321,302,paper-sarsa-ec-complete-cohort-2026-10-20/means.csv.gz
+paper-table,14,A,SARSA,metabolism,2.4984,1.0059499999999995,-1.4924500000000007,7267,7481,5252,paper-sarsa-q-complete-cohort-2026-10-20/means.csv.gz
+paper-table,14,B,Q-Learning,metabolism,2.4899500000000003,1.0058999999999996,-1.4840500000000008,7225,7417,5358,paper-sarsa-q-complete-cohort-2026-10-20/means.csv.gz
+paper-table,12,A,SARSA,metabolism,2.4957000000000003,1.0773999999999995,-1.4183000000000008,9845,10061,94,paper-sarsa-rulem-complete-cohort-2026-10-20/means.csv.gz
+paper-table,12,B,Rule M,metabolism,2.489750000000001,1.3175,-1.172250000000001,9842,10070,88,paper-sarsa-rulem-complete-cohort-2026-10-20/means.csv.gz
+paper-table,15,A,SARSA,metabolism,2.501,1.0064999999999997,-1.4945000000000002,6836,7126,6038,paper-sarsa-sarsa-complete-cohort-2026-10-20/means.csv.gz
+paper-table,15,B,SARSA,metabolism,2.49295,1.0055500000000002,-1.4873999999999998,6841,7080,6079,paper-sarsa-sarsa-complete-cohort-2026-10-20/means.csv.gz
+released-code,9,A,Q-Learning,metabolism,2.51185,1.05715,-1.4546999999999999,9957,9960,83,q-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,9,B,EC,metabolism,2.4961999999999995,1.0,-1.4961999999999995,0,682,19318,q-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,9,B,EC,vision,3.4831000000000003,3.12385,-0.3592500000000003,8523,11165,312,q-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,10,A,Q-Learning,metabolism,2.5010499999999993,1.00775,-1.4932999999999994,7544,7631,4825,q-q-complete-cohort-2026-10-19/means.csv.gz
+released-code,10,B,Q-Learning,metabolism,2.5050000000000003,1.0060500000000003,-1.49895,7433,7677,4890,q-q-complete-cohort-2026-10-19/means.csv.gz
+released-code,8,A,Q-Learning,metabolism,2.49655,1.0791000000000002,-1.4174499999999999,9915,9981,104,q-rule-m-complete-cohort-2026-10-19/means.csv.gz
+released-code,8,B,Rule M,metabolism,2.4977500000000004,1.3207000000000002,-1.1770500000000002,9801,10097,102,q-rule-m-complete-cohort-2026-10-19/means.csv.gz
+released-code,11,A,Q-Learning,metabolism,2.502050000000001,1.0059500000000001,-1.4961000000000009,7227,7440,5333,q-sarsa-complete-cohort-2026-10-19/means.csv.gz
+released-code,11,B,SARSA,metabolism,2.4979499999999994,1.0063499999999994,-1.4916,7298,7437,5265,q-sarsa-complete-cohort-2026-10-19/means.csv.gz
+released-code,15,A,SARSA,metabolism,2.501,1.0041,-1.4969,6873,7106,6021,released-sarsa-sarsa-complete-cohort-2026-10-19/means.csv.gz
+released-code,15,B,SARSA,metabolism,2.49295,1.0060999999999998,-1.4868500000000002,6938,7042,6020,released-sarsa-sarsa-complete-cohort-2026-10-19/means.csv.gz
+released-code,1,A,Rule M,metabolism,2.4842500000000007,1.3243999999999998,-1.159850000000001,9929,9981,90,rule-m-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,1,B,EC,metabolism,2.51005,1.0,-1.5100500000000001,0,237,19763,rule-m-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,1,B,EC,vision,3.5212999999999997,1.22,-2.3012999999999995,1891,6201,11908,rule-m-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,2,A,Rule M,metabolism,2.493,1.3170999999999997,-1.1759000000000002,9870,10039,91,rule-m-q-complete-cohort-2026-10-19/means.csv.gz
+released-code,2,B,Q-Learning,metabolism,2.50455,1.07335,-1.4312,9942,9970,88,rule-m-q-complete-cohort-2026-10-19/means.csv.gz
+released-code,0,A,Rule M,metabolism,2.5042999999999993,1.315964912280702,-1.1883350877192973,9858,10086,56,rule-m-rule-m-complete-cohort-2026-10-19/means.csv.gz
+released-code,0,B,Rule M,metabolism,2.5054500000000006,1.3086,-1.1968500000000006,9846,10104,50,rule-m-rule-m-complete-cohort-2026-10-19/means.csv.gz
+released-code,3,A,Rule M,metabolism,2.5075499999999984,1.3208,-1.1867499999999984,9937,9967,96,rule-m-sarsa-complete-cohort-2026-10-19/means.csv.gz
+released-code,3,B,SARSA,metabolism,2.4973000000000005,1.08,-1.4173000000000004,9888,10009,103,rule-m-sarsa-complete-cohort-2026-10-19/means.csv.gz
+released-code,13,A,SARSA,metabolism,2.50285,1.0577499999999995,-1.4451000000000005,9852,10053,95,sarsa-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,13,B,EC,metabolism,2.5028999999999995,1.0,-1.5028999999999995,0,728,19272,sarsa-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,13,B,EC,vision,3.478500000000001,3.13515,-0.34335000000000093,8578,11063,359,sarsa-ec-complete-cohort-2026-10-19/means.csv.gz
+released-code,14,A,SARSA,metabolism,2.4984,1.0054000000000003,-1.4929999999999999,7281,7465,5254,sarsa-q-complete-cohort-2026-10-19/means.csv.gz
+released-code,14,B,Q-Learning,metabolism,2.4899500000000003,1.0057,-1.4842500000000003,7144,7510,5346,sarsa-q-complete-cohort-2026-10-19/means.csv.gz
+released-code,12,A,SARSA,metabolism,2.4957000000000003,1.0810000000000002,-1.4147,9918,9970,112,sarsa-rule-m-complete-cohort-2026-10-19/means.csv.gz
+released-code,12,B,Rule M,metabolism,2.489750000000001,1.3165161654135338,-1.173233834586467,9865,10026,109,sarsa-rule-m-complete-cohort-2026-10-19/means.csv.gz

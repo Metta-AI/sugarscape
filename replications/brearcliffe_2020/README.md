@@ -1,5 +1,15 @@
 # Brearcliffe and Crooks: Creating Intelligent Agents
 
+[Completed method replication: qualified author-code result](results/method-verdict-2026-10-20).
+All 1,600 frozen runs and 32,001,600 observations pass native audits, with independent checks for all thirty-two cohorts.
+Both parameter interpretations remain explicit. The outcome is mixed; no exact historical agreement or validated negative result is claimed.
+The [final comparison](results/sixteen-pair-parameter-comparison-2026-10-20) retains nineteen endpoints overlapping neither setting and twenty-seven unresolved targets.
+See the verdict for recorder corrections, reconstructed settings, all claim analyses, and remaining historical limitations.
+
+## Earlier checkpoints
+
+The entries below preserve incremental evidence. Their incomplete counts describe earlier checkpoints, superseded by the final verdict above.
+
 [The paper-table SARSA / Q cohort](results/paper-sarsa-q-complete-cohort-2026-10-20) passes native, R, and fresh storage checks. Coverage reaches 1,550 inputs and 31,001,550 observations; only fifty paper-table SARSA/SARSA inputs remain. [Both paper-table Q-learning/SARSA contrasts](results/paper-q-sarsa-claims-2026-10-20) support the endpoint direction, as do both released-code orientations. Early reversals and the undefined magnitude of “slight” remain explicit; no whole-study credit is added.
 
 [The paper-table SARSA / EC cohort](results/paper-sarsa-ec-complete-cohort-2026-10-20) passes native, R, and fresh storage checks. Coverage reaches 1,500 inputs and 30,001,500 observations; one hundred inputs remain. [All paper-table EC claim contrasts](results/paper-ec-claims-2026-10-20) also pass independent verification: fourteen stated endpoint directions hold under both parameter interpretations. No whole-study credit is added.
@@ -174,25 +184,12 @@ The [original local Rule M/Rule M batch](results/rule-m-cohort-launch-2026-10-19
 
 The [cohort analysis](results/cohort-analysis-preparation-2026-10-19) is specified and rejects incomplete samples before producing means. [An independent R checker](results/cohort-verification-preparation-2026-10-19) is prepared for all means, standard deviations, and bootstrap intervals. The complete Rule M/EC and Rule M/Rule M cohorts now pass the fifty-run summary, independent arithmetic check, and numerical comparison.
 
-## Remaining work
+## Completion scope
 
-The latest full audit covers all 800 released-code inputs and 750/800 paper-table inputs.
-The remaining cohort is paper-table SARSA/SARSA, with fifty inputs.
-Producer completion alone does not count: each cohort requires a full trajectory audit, independent R summaries, and fresh storage verification.
-The released-code ensemble and its bounded recovery have completed. Preserve failed attempts separately from successful inputs.
-
-After the final cohort passes those checks:
-
-- Run the sixteen-pair parameter comparison and independent R verification using the corrected Figure 3–9 calibration.
-- Finish the paper-table homogeneous-pair contrasts, then synthesize them with the completed Q-learning/SARSA, Rule M, and EC analyses.
-- Review every discrepancy against native recorder qualification, parameter settings, breed mapping, and readable paper targets.
-- Publish a method-level verdict that distinguishes implementation fidelity, directional findings, and unresolved historical numerical agreement.
-
-Use both parameter interpretations without selecting whichever better matches a figure.
-Original paper seeds and between-run uncertainty remain unavailable. Mislabeled, duplicated, or unreadable figure segments remain unresolved.
+All declared ensembles, independent cohort checks, storage readbacks, parameter comparisons and claim analyses are complete.
+The [final method verdict](results/method-verdict-2026-10-20) distinguishes implementation fidelity, directional findings and unresolved historical numerical agreement.
+Original paper seeds and between-run uncertainty remain unavailable. Mislabeled, duplicated and unreadable figure segments remain unresolved.
 Pointwise bootstrap intervals and raster overlap do not establish equivalence; the paper supplies no numerical equivalence margin.
-A faithful method replication can complete despite numerical disagreement, provided discrepancies and reconstruction choices are documented.
-The study remains incomplete until the declared ensembles, independent checks, and synthesis are finished.
 
 ## Complete-cohort curve comparison
 
@@ -219,4 +216,4 @@ The [complete Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) no
 
 ## Final parameter comparison
 
-[The reusable complete-cohort command](results/parameter-comparison-cli-2026-10-20) defaults to all sixteen pairings and rejects missing evidence without writing a partial report. Its thirteen-pair execution reproduces all existing data fields and passes independent R verification. Run `compare_parameter_interpretations.py` and `verify_parameter_interpretations.R` after the final cohorts pass native audits.
+[The reusable complete-cohort command](results/parameter-comparison-cli-2026-10-20) defaults to all sixteen pairings and rejects missing evidence without writing a partial report. Its thirteen-pair execution reproduces all existing data fields and passes independent R verification. The [completed sixteen-pair execution](results/sixteen-pair-parameter-comparison-2026-10-20) now passes independent R checks, with the final cohort-directory correction documented.

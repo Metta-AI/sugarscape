@@ -1,0 +1,15 @@
+{
+  "runs": 50,
+  "observations": 1000050,
+  "means_checked": 320016,
+  "sample_standard_deviations_checked": 320016,
+  "endpoint_metrics": 14,
+  "bootstrap_repetitions": 20000,
+  "mean_max_scaled_error": 1.29584015803728e-15,
+  "sample_sd_max_scaled_error": 8.95350441727859e-14,
+  "endpoint_max_scaled_error": 5.01415789832104e-16,
+  "interval_max_scaled_error": 4.60743470442306e-16,
+  "r_version": "4.6.1",
+  "summary_sha256": "d90407714eaf4f030f65211ee42841eb3c68f986ba715a02ffcb26da9ff1fe4a",
+  "scope": "Independent R arithmetic with the recorded whole-run resampling indices. This does not independently validate the random-number generator, establish simultaneous interval coverage, or judge paper agreement."
+}

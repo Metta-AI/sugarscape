@@ -1,0 +1,31 @@
+{
+  "status": "completed-method-qualified-author-code",
+  "outcome": "mixed",
+  "whole_historical_numerical_replication": false,
+  "validated_negative_replication": false,
+  "scope": "Full native Sugarscape experimental design: sixteen ordered rule/learning pairings, fifty seeds, 20000 transitions under both released-code and manuscript-table parameter interpretations. Historical timing narrative is not a controlled benchmark.",
+  "paper": "https://doi.org/10.1007/978-3-030-83418-0_3",
+  "completed_protocol": {
+    "interpretations": 2,
+    "ordered_pairings": 16,
+    "runs_per_pairing": 50,
+    "transitions_per_run": 20000,
+    "completed_inputs": 1600,
+    "observations": 32001600,
+    "independent_cohort_checks": 32,
+    "endpoint_comparisons": 224
+  },
+  "qualifications": [
+    "Released alpha0.9/gamma0.8 and paper alpha0.8/gamma0.9 both retained, without outcome-based selection.",
+    "Prospective seeds replace unavailable historical seeds; released five repetitions expanded to manuscript fifty.",
+    "Recorder measurement randomness corrected and qualified against native BehaviorSpace; original failure retained.",
+    "Figure calibration and panel-label corrections documented; unreadable and defective panels unresolved.",
+    "Historical plot sampling uncertainty and equivalence margins unavailable.",
+    "Nineteen endpoint targets overlap neither interpretation; twenty-seven unresolved.",
+    "Descriptive endpoint findings do not prove all-time dominance, equivalence, activation causality, or historical timing ratio.",
+    "Comparator path correction and exact-decimal independent verifier amendment preserve original scientific data and failures."
+  ],
+  "requirements_evidence": "evidence-review.json",
+  "evidence_review_sha256": "c11c85a269266aa56bad259f7cd9753766a70baa21b3b8044193c8af7456bb7b",
+  "verdict_readme_sha256": "532a5060bea2e6fa0d6f4728c0a0fca5adede4dbc8464e92bae4e7ee934916d0"
+}
