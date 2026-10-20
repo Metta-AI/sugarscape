@@ -1,5 +1,7 @@
 # Sugarscape replication program
 
+Richmond’s nine initializer controls now pass full native state audits and independent R landscape checks: 5,216,793 post-step records and 589,824 initial cells. Both reference trajectories repeat exactly. All declared alternatives remain documented; broader method qualifications prevent completed-study credit. The task-owned H100 is verified stopped.
+
 Owner: [Metta-AI/sugarscape](https://github.com/Metta-AI/sugarscape).
 Engine upstream: [nkremerh/sugarscape](https://github.com/nkremerh/sugarscape), initially pinned to
 `e6559bed1a6bda71bb07a3498dae862ea899b10f`.
