@@ -682,7 +682,7 @@ Reproduce with `analyze_phase3.py PHASE3_RECONCILIATION PHASE2_RECONCILIATION NE
 
 ## Price notebook definitions and selection
 
-[Native notebook replay](results/price-notebook-2026-10-17/audit.json) covers 100 standard runs and 100 released movement runs per grouping approach at threshold ten.
+[Native notebook replay](https://github.com/Metta-AI/sugarscape/blob/743e8625c1e2c56d004a3da193981e6822b2b05c/replications/pike_2019/results/price-notebook-2026-10-17/audit.json) covers 100 standard runs and 100 released movement runs per grouping approach at threshold ten.
 It executes the inspected author functions against hashed raw prices, then independently reconstructs their outputs; maximum numerical difference is 4.45e-16.
 
 The notebook histogram uses sample standard deviations of log prices, pooling steps with at least two trades across runs.
@@ -698,8 +698,8 @@ Therefore the scatter title's “SDLM” does not identify the plotted statistic
 
 The two standard-deviation definitions differ on 9,814, 71,930 and 71,045 eligible steps, respectively.
 Neither missing prices nor omitted singleton trades imply zero dispersion or equilibrium convergence.
-The [500-bin histograms](results/price-notebook-2026-10-17/histograms.csv) retain the author's separate bin ranges for each configuration.
-[Window measurements](results/price-notebook-2026-10-17/run-measurements.csv) retain defined-step counts for retrospective per-run summaries over steps 1–100 and 901–1000.
+The [500-bin histograms](https://github.com/Metta-AI/sugarscape/blob/743e8625c1e2c56d004a3da193981e6822b2b05c/replications/pike_2019/results/price-notebook-2026-10-17/histograms.csv) retain the author's separate bin ranges for each configuration.
+[Window measurements](https://github.com/Metta-AI/sugarscape/blob/743e8625c1e2c56d004a3da193981e6822b2b05c/replications/pike_2019/results/price-notebook-2026-10-17/run-measurements.csv) retain defined-step counts for retrospective per-run summaries over steps 1–100 and 901–1000.
 These summaries distinguish absolute log geometric-mean price, mean absolute log transaction price, and sample log-price dispersion.
 No timestep is treated as an independent replicate, and these descriptive windows are not confirmatory convergence criteria.
 
@@ -1047,3 +1047,7 @@ The archive includes `execute.sh`, `run.py`, `requirements.txt`, and `protocol.j
 for execution reconstruction. Install the pinned requirements in the pinned base image;
 the successful execution script reuses dependencies installed by the retained first attempt.
 Source paths and `/evidence` mounts follow the recorded protocol and script.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/743e8625c1e2c56d004a3da193981e6822b2b05c/replications/pike_2019/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 743e8625c1e2c56d004a3da193981e6822b2b05c:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
