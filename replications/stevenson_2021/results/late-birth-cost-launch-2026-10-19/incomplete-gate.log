@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/stevenson-late-birth-cost-001/analyze.py", line 11, in <module>
-    assert [r['seed'] for r in records]==list(range(1,101)), 'Require all 100 completed seeds'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: Require all 100 completed seeds

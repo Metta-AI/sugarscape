@@ -215,7 +215,7 @@ It compares each aggregate trajectory directly with the retained original 100,00
 Checks cover elite counts and resource bounds, founder identifier uniqueness, continuous observation intervals, and constant inferred birth cycles.
 When the first thirty births still comprise the whole population, independent ranking reconstructs elite summaries.
 
-[The first prefix audit](results/observation-audit-2026-10-16/audit.json) passes all 24 completed runs and explicitly marks the ensemble incomplete.
+[The first prefix audit](https://github.com/Metta-AI/sugarscape/blob/07929d72ca9c8ee4f1747714bccb7dfb170ec0b0/replications/stevenson_2021/results/observation-audit-2026-10-16/audit.json) passes all 24 completed runs and explicitly marks the ensemble incomplete.
 Complete mode rejects this unfinished ensemble and creates no completion report.
 The aggregate analyzer also rechecks all 100 archived low-fertility runs after its command reader update; its entire analysis remains unchanged.
 Historical stored command formats remain readable alongside the current mandatory observation-output argument.
@@ -256,7 +256,7 @@ The final birth-cost comparison and evolutionary scenarios remain outstanding.
 
 All 200 declared observation runs completed and passed the independent audit.
 Each aggregate trajectory matches the corresponding original 100,000-cycle ensemble prefix byte-for-byte.
-[Complete audit and comparison](results/figure1-birth-comparison-2026-10-16/audit.json) retain all 200 ledger entries and the remaining 100 observation files.
+[Complete audit and comparison](https://github.com/Metta-AI/sugarscape/blob/07929d72ca9c8ee4f1747714bccb7dfb170ec0b0/replications/stevenson_2021/results/figure1-birth-comparison-2026-10-16/audit.json) retain all 200 ledger entries and the remaining 100 observation files.
 The earlier 153-run snapshot remains historical evidence; it no longer describes current completion.
 An independent standard-library calculation also confirms all four previously reported low-fertility late means within 2.3e-13.
 
@@ -524,3 +524,7 @@ This one-way proximity check cannot identify overlapping/dotted curves or prove 
 ## Predecessor birth-cost sweep recovered
 
 [Figure 14(a) of the earlier paper](results/predecessor-birth-cost-sweep-2026-10-20) exposes 96 run-1 birth costs, 1–96, at infertility 10 and puberty 1. Its stated window is 130,000–150,000 cycles. The plotted cost-40 mean age is about 2,351.66, supporting the unresolved age discrepancy against our later-window mean 1,420.67. Separate age/Gini calibration and repeated byte-exact extraction pass. This does not recover Figure 3’s parameter grid or establish a negative replication.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/07929d72ca9c8ee4f1747714bccb7dfb170ec0b0/replications/stevenson_2021/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 07929d72ca9c8ee4f1747714bccb7dfb170ec0b0:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
