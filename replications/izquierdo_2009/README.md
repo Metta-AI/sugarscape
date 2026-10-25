@@ -86,3 +86,7 @@ Original evidence remains untouched.
 The age convention is explicit: newborn age zero, one lifetime unit consumed per movement, death at exhausted life.
 The paper does not supply age-update pseudocode; this realizes its stated maximum lifetime and remaining-life state variable.
 No empirical stationary distribution, convergence rate, or pseudorandom-generator ergodicity is claimed.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/91441ad4115b0c351a654127acc29cc16ab3ea0c/replications/izquierdo_2009/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 91441ad4115b0c351a654127acc29cc16ab3ea0c:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
