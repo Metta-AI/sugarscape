@@ -87,7 +87,7 @@ Command `cmd-7k3hf` is registered on the owned H100 with a 45-minute execution b
 
 ## Recovered author figure source
 
-[The arXiv source bundle](https://arxiv.org/src/1810.11765) supplies the original plotting scripts and baseline timing CSV. [The retained audit](results/author-figure-source-2026-10-18/audit.json) records every source member hash and reconciles the plotting values with the independently digitized publisher chart.
+[The arXiv source bundle](https://arxiv.org/src/1810.11765) supplies the original plotting scripts and baseline timing CSV. [The retained audit](https://github.com/Metta-AI/sugarscape/blob/6947bee1787c5986f2f8c6b466fb9e1204e26a44/replications/springer_2019/results/author-figure-source-2026-10-18/audit.json) records every source member hash and reconciles the plotting values with the independently digitized publisher chart.
 
 Figure 10’s source totals are 85.704 s (DynaSOAr), 128.306 s (mallocMC), 128.282 s (Halloc), 93.760 s (BitmapAlloc), 857.074 s (CUDA), 62.597 s (SOA), and 253.198 s (AOS). The CUDA comment recovers 36.435 s of enumeration time, unavailable from its clipped bar.
 
@@ -208,3 +208,7 @@ Original TitanXp/Pascal hardware remains the preferred fidelity control.
 If a Volta device becomes available, compare native and Pascal-scheduling builds using the same unchanged artifact and CUDA9.1 compiler.
 Retain original capacity, seed42 and10,000 steps, with32/128 controls gating full-size execution.
 Neither this hardware control nor a scheduling diagnosis has been completed; no allocator patch follows from the documentation alone.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/6947bee1787c5986f2f8c6b466fb9e1204e26a44/replications/springer_2019/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 6947bee1787c5986f2f8c6b466fb9e1204e26a44:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
