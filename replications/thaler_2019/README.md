@@ -207,7 +207,7 @@ All other 26 archived files remain byte-identical, and the full 1,000-step popul
 CSV exactly matches the unmodified exporter. Both states contain 206 distinct agents;
 all 2,500 cell coordinates and resource bounds pass, and occupier IDs match agents exactly.
 
-The [comparison](results/state-comparison-2026-10-17/audit.json) does not match the image:
+The [comparison](https://github.com/Metta-AI/sugarscape/blob/cea904b14248371b1281a29b8f73bf5bb0f7d5bd/replications/thaler_2019/results/state-comparison-2026-10-17/audit.json) does not match the image:
 67 occupied coordinates agree at time 49 and 57 at the primary time 50.
 The published caption does not specify the screenshot's implementation or seed.
 This is an unresolved screenshot comparison, not a negative paper verdict.
@@ -326,7 +326,7 @@ require separate download and hash verification before analysis.
 
 ### Native timing prefix: 13 of 45 conditions
 
-The sealed [checkpoint and independent audit](results/native-timing-prefix-2026-10-17/audit.json)
+The sealed [checkpoint and independent audit](https://github.com/Metta-AI/sugarscape/blob/cea904b14248371b1281a29b8f73bf5bb0f7d5bd/replications/thaler_2019/results/native-timing-prefix-2026-10-17/audit.json)
 cover 13 completed conditions and 52 raw Criterion measurements. All 13 first attempts pass the frozen
 R-squared threshold of 0.99. Independent least-squares slopes differ from reported values by at most
 1.07e-14 seconds; recomputed R-squared values agree exactly. Sample standard deviations also agree.
@@ -827,3 +827,7 @@ The [completed six-process diagnostic](results/criterion-retry-control-complete-
 ### Native occupancy validation completes
 
 [Four original TArray runs](results/population-semantics-complete-2026-10-19) validate 4,000 observations. Both full-grid rebirth runs retain exactly 2,500 occupied cells throughout, despite ending with 2,320 returned agent observations. Normal runs match both counts at every step. The earlier apparent population deficit was an observable-count interpretation error. The archive and repeated audit match byte-for-byte. This closes that TArray measurement issue without resolving historical timing or retry differences.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/cea904b14248371b1281a29b8f73bf5bb0f7d5bd/replications/thaler_2019/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show cea904b14248371b1281a29b8f73bf5bb0f7d5bd:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
