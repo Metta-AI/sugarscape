@@ -342,3 +342,7 @@ once at shutdown. The 36-file archive includes the observed window, native logs
 and auditors; both audit reports reproduce byte-for-byte after fresh extraction.
 The owned host processes and containers are stopped. Historical dependency
 equivalence remains unproven; no additional completed-study credit is assigned.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/363175bde20af32cda1530af8f95bf7809f57c43/replications/lima_2024/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 363175bde20af32cda1530af8f95bf7809f57c43:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
