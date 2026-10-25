@@ -367,3 +367,7 @@ A newly created owner's two endowments each lie in [25,50], giving wealth of at 
 At D=50 and fast automation, 300 steps permit at most 60 displacement events, making the largest nominal levy 25.
 The wealth cap therefore cannot bind in this protocol, consistent with the observed zero capped events.
 The manuscript's roughly-quarter assertion cannot be explained by another random seed under these settings.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/82cb45f731d76c985209fac842b857db305320ae/replications/dogan_2026/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 82cb45f731d76c985209fac842b857db305320ae:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.

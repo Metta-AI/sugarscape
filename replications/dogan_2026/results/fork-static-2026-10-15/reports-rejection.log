@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-dogan/replications/dogan_2026/compare_fork.py", line 19, in <module>
-    assert fork["experiment"] == "canonical", "Requires canonical simulation, not report-only output"
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: Requires canonical simulation, not report-only output
