@@ -1,1802 +1,0 @@
-Precompiling Pkg...
-    632.6 ms  ✓ MozillaCACerts_jll
-    637.3 ms  ✓ Logging
-    624.2 ms  ✓ p7zip_jll
-    592.6 ms  ✓ Zlib_jll
-    623.7 ms  ✓ Unicode
-    670.8 ms  ✓ UUIDs
-    628.0 ms  ✓ MbedTLS_jll
-    665.4 ms  ✓ nghttp2_jll
-    646.3 ms  ✓ Base64
-    753.7 ms  ✓ NetworkOptions
-    359.0 ms  ✓ Printf
-    520.4 ms  ✓ LibSSH2_jll
-   1249.6 ms  ✓ ArgTools
-    451.1 ms  ✓ LibCURL_jll
-    538.7 ms  ✓ LibGit2_jll
-    776.1 ms  ✓ Tar
-    867.0 ms  ✓ LibCURL
-   1799.1 ms  ✓ Dates
-   2132.5 ms  ✓ Markdown
-    612.0 ms  ✓ TOML
-   2063.3 ms  ✓ LibGit2
-   2073.0 ms  ✓ Downloads
-  38106.4 ms  ✓ Pkg
-  23 dependencies successfully precompiled in 43 seconds
-  Installing known registries into `~/Code/workspace/sugarscape-replication-tools/julia-flow-depot-001`
-       Added `General` registry to ~/Code/workspace/sugarscape-replication-tools/julia-flow-depot-001/registries
-   Installed RealDot ───────────────────── v0.1.0
-   Installed GPUArraysCore ─────────────── v0.2.0
-   Installed IrrationalConstants ───────── v0.2.4
-   Installed DiffRules ─────────────────── v1.15.1
-   Installed AbstractMCMC ──────────────── v5.6.0
-   Installed IRTools ───────────────────── v0.4.14
-   Installed Bijectors ─────────────────── v0.15.5
-   Installed Transducers ───────────────── v0.4.84
-   Installed Rmath ─────────────────────── v0.8.0
-   Installed Functors ──────────────────── v0.5.2
-   Installed ConsoleProgressMonitor ────── v0.1.2
-   Installed JSON ──────────────────────── v0.21.4
-   Installed Adapt ─────────────────────── v4.3.0
-   Installed ArgCheck ──────────────────── v2.4.0
-   Installed PtrArrays ─────────────────── v1.3.0
-   Installed HypergeometricFunctions ───── v0.3.28
-   Installed TableTraits ───────────────── v1.0.1
-   Installed Conda ─────────────────────── v1.10.2
-   Installed DiffResults ───────────────── v1.1.0
-   Installed StatsFuns ─────────────────── v1.3.2
-   Installed Preferences ───────────────── v1.4.3
-   Installed Accessors ─────────────────── v0.1.42
-   Installed LoggingExtras ─────────────── v1.1.0
-   Installed AbstractPPL ───────────────── v0.10.1
-   Installed ADTypes ───────────────────── v1.14.0
-   Installed PyCall ────────────────────── v1.96.4
-   Installed HashArrayMappedTries ──────── v0.2.0
-   Installed SpecialFunctions ──────────── v2.5.0
-   Installed DataAPI ───────────────────── v1.16.0
-   Installed Setfield ──────────────────── v1.1.2
-   Installed ProgressLogging ───────────── v0.1.4
-   Installed Parsers ───────────────────── v2.8.1
-   Installed PDMats ────────────────────── v0.11.32
-   Installed Tables ────────────────────── v1.12.0
-   Installed Baselet ───────────────────── v0.1.1
-   Installed StaticArrays ──────────────── v1.9.13
-   Installed Zygote ────────────────────── v0.7.4
-   Installed AbstractFFTs ──────────────── v1.5.0
-   Installed ProgressMeter ─────────────── v1.10.2
-   Installed AdvancedVI ────────────────── v0.3.1
-   Installed IteratorInterfaceExtensions ─ v1.0.0
-   Installed PrecompileTools ───────────── v1.2.1
-   Installed JLLWrappers ───────────────── v1.7.0
-   Installed DefineSingletons ──────────── v0.1.2
-   Installed MicroCollections ──────────── v0.2.0
-   Installed ConstructionBase ──────────── v1.5.8
-   Installed Optimisers ────────────────── v0.4.5
-   Installed StaticArraysCore ──────────── v1.4.3
-   Installed StructArrays ──────────────── v0.7.0
-   Installed DataValueInterfaces ───────── v1.0.0
-   Installed Roots ─────────────────────── v2.2.6
-   Installed NaNMath ───────────────────── v1.1.2
-   Installed VersionParsing ────────────── v1.3.0
-   Installed AbstractTrees ─────────────── v0.4.5
-   Installed CEnum ─────────────────────── v0.5.0
-   Installed LLVMExtra_jll ─────────────── v0.0.35+0
-   Installed OrderedCollections ────────── v1.8.0
-   Installed InitialValues ─────────────── v0.3.1
-   Installed ScopedValues ──────────────── v1.3.0
-   Installed ChainRulesCore ────────────── v1.25.1
-   Installed ForwardDiff ───────────────── v0.10.38
-   Installed GPUArrays ─────────────────── v11.2.2
-   Installed TerminalLoggers ───────────── v0.1.7
-   Installed QuadGK ────────────────────── v2.11.2
-   Installed Reexport ──────────────────── v1.2.2
-   Installed Rmath_jll ─────────────────── v0.5.1+0
-   Installed Statistics ────────────────── v1.11.1
-   Installed LogExpFunctions ───────────── v0.3.29
-   Installed Requires ──────────────────── v1.3.1
-   Installed SplittablesBase ───────────── v0.1.15
-   Installed DynamicPPL ────────────────── v0.35.0
-   Installed FillArrays ────────────────── v1.13.0
-   Installed DataStructures ────────────── v0.18.20
-   Installed CommonSubexpressions ──────── v0.3.1
-   Installed ChainRules ────────────────── v1.72.3
-   Installed Distributions ─────────────── v0.25.118
-   Installed MappedArrays ──────────────── v0.4.2
-   Installed AliasTables ───────────────── v1.1.3
-   Installed OpenSpecFun_jll ───────────── v0.5.6+0
-   Installed LeftChildRightSiblingTrees ── v0.2.0
-   Installed ZygoteRules ───────────────── v0.2.7
-   Installed StatsAPI ──────────────────── v1.7.0
-   Installed Compat ────────────────────── v4.16.0
-   Installed KernelAbstractions ────────── v0.9.34
-   Installed BangBang ──────────────────── v0.4.4
-   Installed CompositionsBase ──────────── v0.1.2
-   Installed UnsafeAtomics ─────────────── v0.3.0
-   Installed MacroTools ────────────────── v0.5.15
-   Installed InverseFunctions ──────────── v0.1.17
-   Installed SparseInverseSubset ───────── v0.1.2
-   Installed Missings ──────────────────── v1.2.0
-   Installed CommonSolve ───────────────── v0.2.4
-   Installed LogDensityProblems ────────── v2.1.2
-   Installed SortingAlgorithms ─────────── v1.2.1
-   Installed StatsBase ─────────────────── v0.34.4
-   Installed LLVM ──────────────────────── v9.2.0
-   Installed DifferentiationInterface ──── v0.6.44
-   Installed Atomix ────────────────────── v1.1.1
-   Installed DensityInterface ──────────── v0.4.0
-   Installed ChangesOfVariables ────────── v0.1.9
-   Installed DocStringExtensions ───────── v0.9.3
-    Building Conda ─→ `~/Code/workspace/sugarscape-replication-tools/julia-flow-depot-001/scratchspaces/44cfe95a-1eb2-52ea-b672-e2afdf69b78f/b19db3927f0db4151cb86d073689f2428e524576/build.log`
-    Building PyCall → `~/Code/workspace/sugarscape-replication-tools/julia-flow-depot-001/scratchspaces/44cfe95a-1eb2-52ea-b672-e2afdf69b78f/9816a3826b0ebf49ab4926e2b18842ad8b5c8f04/build.log`
-    Building Conda ─→ `~/Code/workspace/sugarscape-replication-tools/julia-flow-depot-001/scratchspaces/44cfe95a-1eb2-52ea-b672-e2afdf69b78f/b19db3927f0db4151cb86d073689f2428e524576/build.log`
-    Building PyCall → `~/Code/workspace/sugarscape-replication-tools/julia-flow-depot-001/scratchspaces/44cfe95a-1eb2-52ea-b672-e2afdf69b78f/9816a3826b0ebf49ab4926e2b18842ad8b5c8f04/build.log`
-Precompiling PyTorchNormalizingFlows...
-    387.2 ms  ✓ IteratorInterfaceExtensions
-    461.1 ms  ✓ StatsAPI
-    521.8 ms  ✓ ChangesOfVariables
-    488.1 ms  ✓ OpenLibm_jll
-    529.0 ms  ✓ Future
-    728.7 ms  ✓ Serialization
-    753.6 ms  ✓ VersionParsing
-    470.0 ms  ✓ InverseFunctions
-    849.2 ms  ✓ ADTypes
-    386.3 ms  ✓ CommonSolve
-    417.4 ms  ✓ ArgCheck
-    470.0 ms  ✓ CompilerSupportLibraries_jll
-   1007.7 ms  ✓ InitialValues
-    596.4 ms  ✓ Statistics
-    473.2 ms  ✓ SuiteSparse_jll
-    354.5 ms  ✓ DataValueInterfaces
-    340.2 ms  ✓ Reexport
-    488.8 ms  ✓ Requires
-   1394.2 ms  ✓ FillArrays
-    495.1 ms  ✓ Mmap
-    285.4 ms  ✓ DefineSingletons
-    340.8 ms  ✓ CompositionsBase
-    727.5 ms  ✓ OrderedCollections
-    631.1 ms  ✓ AbstractTrees
-    447.5 ms  ✓ PtrArrays
-    403.7 ms  ✓ DataAPI
-    512.9 ms  ✓ ConstructionBase
-    426.1 ms  ✓ MappedArrays
-    437.8 ms  ✓ StaticArraysCore
-    492.0 ms  ✓ ProgressLogging
-   1143.7 ms  ✓ IrrationalConstants
-    632.3 ms  ✓ LoggingExtras
-   2410.1 ms  ✓ UnsafeAtomics
-    478.4 ms  ✓ TableTraits
-    632.7 ms  ✓ Compat
-    729.5 ms  ✓ Preferences
-   1298.0 ms  ✓ Baselet
-    887.4 ms  ✓ DocStringExtensions
-    649.1 ms  ✓ ChangesOfVariables → ChangesOfVariablesInverseFunctionsExt
-    760.6 ms  ✓ InverseFunctions → InverseFunctionsDatesExt
-   2264.0 ms  ✓ MacroTools
-    600.0 ms  ✓ Adapt
-   1497.4 ms  ✓ InteractiveUtils
-    654.2 ms  ✓ FillArrays → FillArraysStatisticsExt
-    444.9 ms  ✓ CompositionsBase → CompositionsBaseInverseFunctionsExt
-    626.3 ms  ✓ LeftChildRightSiblingTrees
-    741.2 ms  ✓ AliasTables
-    786.6 ms  ✓ Missings
-   1322.2 ms  ✓ DifferentiationInterface
-    653.2 ms  ✓ ADTypes → ADTypesConstructionBaseExt
-    777.7 ms  ✓ ConstructionBase → ConstructionBaseLinearAlgebraExt
-    800.1 ms  ✓ Atomix
-    856.6 ms  ✓ Compat → CompatLinearAlgebraExt
-    586.6 ms  ✓ PrecompileTools
-   1125.6 ms  ✓ JLLWrappers
-   2648.5 ms  ✓ Distributed
-   1282.4 ms  ✓ LogDensityProblems
-   1814.0 ms  ✓ LogExpFunctions
-   2489.5 ms  ✓ Tables
-   2225.1 ms  ✓ TerminalLoggers
-   1395.5 ms  ✓ Functors
-   2262.1 ms  ✓ ChainRulesCore
-    823.1 ms  ✓ Rmath_jll
-   2530.8 ms  ✓ Setfield
-    782.5 ms  ✓ OpenSpecFun_jll
-    543.0 ms  ✓ LogExpFunctions → LogExpFunctionsInverseFunctionsExt
-    569.6 ms  ✓ ADTypes → ADTypesChainRulesCoreExt
-    581.3 ms  ✓ LogExpFunctions → LogExpFunctionsChangesOfVariablesExt
-   1148.3 ms  ✓ ProgressMeter
-   3571.2 ms  ✓ Test
-   2741.5 ms  ✓ DataStructures
-    578.3 ms  ✓ DifferentiationInterface → DifferentiationInterfaceChainRulesCoreExt
-   3558.9 ms  ✓ Accessors
-    683.1 ms  ✓ ConsoleProgressMonitor
-   5462.6 ms  ✓ SparseArrays
-    775.8 ms  ✓ InverseFunctions → InverseFunctionsTestExt
-   1158.5 ms  ✓ Rmath
-   1291.4 ms  ✓ LogExpFunctions → LogExpFunctionsChainRulesCoreExt
-   1193.8 ms  ✓ ChangesOfVariables → ChangesOfVariablesTestExt
-    659.8 ms  ✓ Accessors → LinearAlgebraExt
-    874.6 ms  ✓ SortingAlgorithms
-   1311.9 ms  ✓ SplittablesBase
-    737.6 ms  ✓ Accessors → TestExt
-    784.0 ms  ✓ SuiteSparse
-    773.6 ms  ✓ Statistics → SparseArraysExt
-    767.5 ms  ✓ FillArrays → FillArraysSparseArraysExt
-   1390.1 ms  ✓ QuadGK
-    639.9 ms  ✓ ChainRulesCore → ChainRulesCoreSparseArraysExt
-    752.8 ms  ✓ Adapt → AdaptSparseArraysExt
-    773.0 ms  ✓ DifferentiationInterface → DifferentiationInterfaceSparseArraysExt
-    575.1 ms  ✓ DensityInterface
-    766.3 ms  ✓ BangBang
-    878.4 ms  ✓ PDMats
-    578.4 ms  ✓ BangBang → BangBangChainRulesCoreExt
-    709.0 ms  ✓ MicroCollections
-   3548.2 ms  ✓ SpecialFunctions
-    773.9 ms  ✓ BangBang → BangBangTablesExt
-    715.1 ms  ✓ FillArrays → FillArraysPDMatsExt
-   1179.6 ms  ✓ HypergeometricFunctions
-   1378.0 ms  ✓ SpecialFunctions → SpecialFunctionsChainRulesCoreExt
-   3096.4 ms  ✓ Roots
-   2903.3 ms  ✓ StatsBase
-   7532.8 ms  ✓ StaticArrays
-    723.9 ms  ✓ Roots → RootsChainRulesCoreExt
-    748.7 ms  ✓ DifferentiationInterface → DifferentiationInterfaceStaticArraysExt
-    792.0 ms  ✓ Adapt → AdaptStaticArraysExt
-    823.8 ms  ✓ StaticArrays → StaticArraysChainRulesCoreExt
-    826.5 ms  ✓ BangBang → BangBangStaticArraysExt
-    842.6 ms  ✓ ConstructionBase → ConstructionBaseStaticArraysExt
-    874.4 ms  ✓ StaticArrays → StaticArraysStatisticsExt
-   1680.3 ms  ✓ StatsFuns
-    964.2 ms  ✓ Accessors → StaticArraysExt
-    581.1 ms  ✓ StatsFuns → StatsFunsInverseFunctionsExt
-   3762.3 ms  ✓ Transducers
-   1127.3 ms  ✓ StatsFuns → StatsFunsChainRulesCoreExt
-    906.4 ms  ✓ Transducers → TransducersAdaptExt
-   2510.2 ms  ✓ KernelAbstractions
-    841.8 ms  ✓ KernelAbstractions → LinearAlgebraExt
-   2356.5 ms  ✓ AbstractMCMC
-   1089.1 ms  ✓ KernelAbstractions → SparseArraysExt
-  13637.0 ms  ✓ Parsers
-   6320.8 ms  ✓ Distributions
-   1673.7 ms  ✓ JSON
-   1109.7 ms  ✓ Distributions → DistributionsChainRulesCoreExt
-   1207.3 ms  ✓ Distributions → DistributionsTestExt
-   1248.4 ms  ✓ Distributions → DistributionsDensityInterfaceExt
-    943.2 ms  ✓ Conda
-   1389.7 ms  ✓ AbstractPPL
-   3721.5 ms  ✓ Bijectors
-   6596.3 ms  ✓ PyCall
-   6580.2 ms  ✓ DynamicPPL
-   1380.9 ms  ✓ DynamicPPL → DynamicPPLChainRulesCoreExt
-   2309.8 ms  ✓ PyTorchNormalizingFlows
-  133 dependencies successfully precompiled in 35 seconds. 20 already precompiled.
-Precompiling Zygote...
-    625.2 ms  ✓ RealDot
-    617.7 ms  ✓ HashArrayMappedTries
-    747.8 ms  ✓ CEnum
-    773.3 ms  ✓ NaNMath
-   3923.2 ms  ✓ GPUArraysCore
-   3943.1 ms  ✓ CommonSubexpressions
-   3303.7 ms  ✓ ScopedValues
-   4064.0 ms  ✓ AbstractFFTs
-   3970.6 ms  ✓ SparseInverseSubset
-   3943.7 ms  ✓ DiffResults
-   3404.4 ms  ✓ ZygoteRules
-   3899.2 ms  ✓ StructArrays
-   3401.1 ms  ✓ LazyArtifacts
-   3875.4 ms  ✓ IRTools
-   3273.0 ms  ✓ DiffRules
-    566.1 ms  ✓ StructArrays → StructArraysAdaptExt
-    623.7 ms  ✓ StructArrays → StructArraysLinearAlgebraExt
-    726.3 ms  ✓ AbstractFFTs → AbstractFFTsChainRulesCoreExt
-    731.9 ms  ✓ StructArrays → StructArraysSparseArraysExt
-    972.5 ms  ✓ StructArrays → StructArraysStaticArraysExt
-   1210.1 ms  ✓ StructArrays → StructArraysGPUArraysCoreExt
-   1440.3 ms  ✓ LLVMExtra_jll
-   3565.2 ms  ✓ ForwardDiff
-    845.2 ms  ✓ ForwardDiff → ForwardDiffStaticArraysExt
-   5240.7 ms  ✓ ChainRules
-   5290.3 ms  ✓ LLVM
-   1339.0 ms  ✓ UnsafeAtomics → UnsafeAtomicsLLVM
-   3068.5 ms  ✓ GPUArrays
-  18865.7 ms  ✓ Zygote
-  29 dependencies successfully precompiled in 34 seconds. 74 already precompiled.
-Precompiling StructArraysExt...
-    428.9 ms  ✓ Accessors → StructArraysExt
-  1 dependency successfully precompiled in 0 seconds. 20 already precompiled.
-Precompiling BangBangStructArraysExt...
-    428.5 ms  ✓ BangBang → BangBangStructArraysExt
-  1 dependency successfully precompiled in 1 seconds. 24 already precompiled.
-Precompiling AbstractFFTsTestExt...
-    881.6 ms  ✓ AbstractFFTs → AbstractFFTsTestExt
-  1 dependency successfully precompiled in 1 seconds. 7 already precompiled.
-Precompiling RootsForwardDiffExt...
-    593.8 ms  ✓ Roots → RootsForwardDiffExt
-  1 dependency successfully precompiled in 1 seconds. 37 already precompiled.
-Precompiling BijectorsForwardDiffExt...
-    976.4 ms  ✓ Bijectors → BijectorsForwardDiffExt
-  1 dependency successfully precompiled in 1 seconds. 85 already precompiled.
-Precompiling DynamicPPLForwardDiffExt...
-    669.6 ms  ✓ DifferentiationInterface → DifferentiationInterfaceForwardDiffExt
-   1266.2 ms  ✓ DynamicPPL → DynamicPPLForwardDiffExt
-  2 dependencies successfully precompiled in 2 seconds. 150 already precompiled.
-Precompiling BijectorsZygoteExt...
-   1547.8 ms  ✓ Bijectors → BijectorsZygoteExt
-  1 dependency successfully precompiled in 2 seconds. 142 already precompiled.
-Precompiling DifferentiationInterfaceZygoteExt...
-    833.5 ms  ✓ DifferentiationInterface → DifferentiationInterfaceZygoteExt
-  1 dependency successfully precompiled in 1 seconds. 111 already precompiled.
-Precompiling AdvancedVI...
-    684.2 ms  ✓ Optimisers
-   1075.3 ms  ✓ AdvancedVI
-  2 dependencies successfully precompiled in 2 seconds. 81 already precompiled.
-Precompiling OptimisersAdaptExt...
-    289.2 ms  ✓ Optimisers → OptimisersAdaptExt
-  1 dependency successfully precompiled in 0 seconds. 15 already precompiled.
-Precompiling AdvancedVIBijectorsExt...
-    758.7 ms  ✓ AdvancedVI → AdvancedVIBijectorsExt
-  1 dependency successfully precompiled in 1 seconds. 91 already precompiled.
-Optimizing   0%|                               |  ETA: 7:05:02 (25.55  s/it)[K
-  iteration:  2[K
-  elbo:       -397.4613[K[A[A
-
-[K[A[K[AOptimizing   1%|▍                              |  ETA: 1:11:05 ( 4.32  s/it)[K
-  iteration:  12[K
-  elbo:       -285.8145[K[A[A
-
-[K[A[K[AOptimizing   2%|▌                              |  ETA: 0:53:17 ( 3.25  s/it)[K
-  iteration:  16[K
-  elbo:       -305.7673[K[A[A
-
-[K[A[K[AOptimizing   2%|▋                              |  ETA: 0:44:51 ( 2.74  s/it)[K
-  iteration:  19[K
-  elbo:       -296.7429[K[A[A
-
-[K[A[K[AOptimizing   2%|▋                              |  ETA: 0:38:45 ( 2.38  s/it)[K
-  iteration:  22[K
-  elbo:       -321.8323[K[A[A
-
-[K[A[K[AOptimizing   2%|▊                              |  ETA: 0:35:31 ( 2.18  s/it)[K
-  iteration:  24[K
-  elbo:       -363.94864[K[A[A
-
-[K[A[K[AOptimizing   3%|▉                              |  ETA: 0:31:33 ( 1.95  s/it)[K
-  iteration:  27[K
-  elbo:       -384.58133[K[A[A
-
-[K[A[K[AOptimizing   3%|▉                              |  ETA: 0:28:22 ( 1.75  s/it)[K
-  iteration:  30[K
-  elbo:       -297.20566[K[A[A
-
-[K[A[K[AOptimizing   3%|█                              |  ETA: 0:25:46 ( 1.60  s/it)[K
-  iteration:  33[K
-  elbo:       -345.5587[K[A[A
-
-[K[A[K[AOptimizing   4%|█▏                             |  ETA: 0:24:20 ( 1.51  s/it)[K
-  iteration:  35[K
-  elbo:       -315.6917[K[A[A
-
-[K[A[K[AOptimizing   4%|█▏                             |  ETA: 0:22:23 ( 1.40  s/it)[K
-  iteration:  38[K
-  elbo:       -283.2029[K[A[A
-
-[K[A[K[AOptimizing   4%|█▎                             |  ETA: 0:20:44 ( 1.30  s/it)[K
-  iteration:  41[K
-  elbo:       -295.75372[K[A[A
-
-[K[A[K[AOptimizing   4%|█▍                             |  ETA: 0:19:47 ( 1.24  s/it)[K
-  iteration:  43[K
-  elbo:       -283.62466[K[A[A
-
-[K[A[K[AOptimizing   5%|█▍                             |  ETA: 0:18:28 ( 1.16  s/it)[K
-  iteration:  46[K
-  elbo:       -287.22388[K[A[A
-
-[K[A[K[AOptimizing   5%|█▌                             |  ETA: 0:17:20 ( 1.09  s/it)[K
-  iteration:  49[K
-  elbo:       -314.89694[K[A[A
-
-[K[A[K[AOptimizing   5%|█▋                             |  ETA: 0:16:19 ( 1.03  s/it)[K
-  iteration:  52[K
-  elbo:       -349.32126[K[A[A
-
-[K[A[K[AOptimizing   5%|█▋                             |  ETA: 0:15:42 ( 1.00  s/it)[K
-  iteration:  54[K
-  elbo:       -299.20682[K[A[A
-
-[K[A[K[AOptimizing   6%|█▊                             |  ETA: 0:14:52 ( 0.95  s/it)[K
-  iteration:  57[K
-  elbo:       -285.29626[K[A[A
-
-[K[A[K[AOptimizing   6%|█▉                             |  ETA: 0:14:07 ( 0.90  s/it)[K
-  iteration:  60[K
-  elbo:       -293.91736[K[A[A
-
-[K[A[K[AOptimizing   6%|█▉                             |  ETA: 0:13:40 ( 0.87  s/it)[K
-  iteration:  62[K
-  elbo:       -297.35342[K[A[A
-
-[K[A[K[AOptimizing   6%|██                             |  ETA: 0:13:02 ( 0.84  s/it)[K
-  iteration:  65[K
-  elbo:       -290.61758[K[A[A
-
-[K[A[K[AOptimizing   7%|██▏                            |  ETA: 0:12:27 ( 0.80  s/it)[K
-  iteration:  68[K
-  elbo:       -274.22073[K[A[A
-
-[K[A[K[AOptimizing   7%|██▏                            |  ETA: 0:12:06 ( 0.78  s/it)[K
-  iteration:  70[K
-  elbo:       -276.4733[K[A[A
-
-[K[A[K[AOptimizing   7%|██▎                            |  ETA: 0:11:35 ( 0.75  s/it)[K
-  iteration:  73[K
-  elbo:       -273.7349[K[A[A
-
-[K[A[K[AOptimizing   8%|██▍                            |  ETA: 0:11:07 ( 0.72  s/it)[K
-  iteration:  76[K
-  elbo:       -272.48105[K[A[A
-
-[K[A[K[AOptimizing   8%|██▌                            |  ETA: 0:10:41 ( 0.70  s/it)[K
-  iteration:  79[K
-  elbo:       -269.6118[K[A[A
-
-[K[A[K[AOptimizing   8%|██▌                            |  ETA: 0:10:25 ( 0.68  s/it)[K
-  iteration:  81[K
-  elbo:       -280.2122[K[A[A
-
-[K[A[K[AOptimizing   8%|██▋                            |  ETA: 0:10:03 ( 0.66  s/it)[K
-  iteration:  84[K
-  elbo:       -286.113[K[A[A
-
-[K[A[K[AOptimizing   9%|██▊                            |  ETA: 0:09:41 ( 0.64  s/it)[K
-  iteration:  87[K
-  elbo:       -286.4269[K[A[A
-
-[K[A[K[AOptimizing   9%|██▊                            |  ETA: 0:09:21 ( 0.62  s/it)[K
-  iteration:  90[K
-  elbo:       -285.74667[K[A[A
-
-[K[A[K[AOptimizing   9%|██▉                            |  ETA: 0:09:09 ( 0.61  s/it)[K
-  iteration:  92[K
-  elbo:       -275.72253[K[A[A
-
-[K[A[K[AOptimizing  10%|███                            |  ETA: 0:08:52 ( 0.59  s/it)[K
-  iteration:  95[K
-  elbo:       -270.3709[K[A[A
-
-[K[A[K[AOptimizing  10%|███                            |  ETA: 0:08:41 ( 0.58  s/it)[K
-  iteration:  97[K
-  elbo:       -263.53696[K[A[A
-
-[K[A[K[AOptimizing  10%|███▏                           |  ETA: 0:08:30 ( 0.57  s/it)[K
-  iteration:  99[K
-  elbo:       -268.56802[K[A[A
-
-[K[A[K[AOptimizing  10%|███▏                           |  ETA: 0:08:14 ( 0.55  s/it)[K
-  iteration:  102[K
-  elbo:       -258.46426[K[A[A
-
-[K[A[K[AOptimizing  10%|███▎                           |  ETA: 0:08:00 ( 0.54  s/it)[K
-  iteration:  105[K
-  elbo:       -253.60643[K[A[A
-
-[K[A[K[AOptimizing  11%|███▍                           |  ETA: 0:07:46 ( 0.52  s/it)[K
-  iteration:  108[K
-  elbo:       -258.39175[K[A[A
-
-[K[A[K[AOptimizing  11%|███▌                           |  ETA: 0:07:33 ( 0.51  s/it)[K
-  iteration:  111[K
-  elbo:       -236.43634[K[A[A
-
-[K[A[K[AOptimizing  11%|███▌                           |  ETA: 0:07:21 ( 0.50  s/it)[K
-  iteration:  114[K
-  elbo:       -247.5975[K[A[A
-
-[K[A[K[AOptimizing  12%|███▋                           |  ETA: 0:07:09 ( 0.49  s/it)[K
-  iteration:  117[K
-  elbo:       -256.73416[K[A[A
-
-[K[A[K[AOptimizing  12%|███▊                           |  ETA: 0:06:58 ( 0.47  s/it)[K
-  iteration:  120[K
-  elbo:       -227.3691[K[A[A
-
-[K[A[K[AOptimizing  12%|███▉                           |  ETA: 0:06:47 ( 0.46  s/it)[K
-  iteration:  123[K
-  elbo:       -239.0156[K[A[A
-
-[K[A[K[AOptimizing  13%|███▉                           |  ETA: 0:06:37 ( 0.45  s/it)[K
-  iteration:  126[K
-  elbo:       -231.49275[K[A[A
-
-[K[A[K[AOptimizing  13%|████                           |  ETA: 0:06:27 ( 0.44  s/it)[K
-  iteration:  129[K
-  elbo:       -224.67894[K[A[A
-
-[K[A[K[AOptimizing  13%|████                           |  ETA: 0:06:21 ( 0.44  s/it)[K
-  iteration:  131[K
-  elbo:       -224.94463[K[A[A
-
-[K[A[K[AOptimizing  13%|████▏                          |  ETA: 0:06:12 ( 0.43  s/it)[K
-  iteration:  134[K
-  elbo:       -225.52936[K[A[A
-
-[K[A[K[AOptimizing  14%|████▎                          |  ETA: 0:06:03 ( 0.42  s/it)[K
-  iteration:  137[K
-  elbo:       -226.81172[K[A[A
-
-[K[A[K[AOptimizing  14%|████▍                          |  ETA: 0:05:55 ( 0.41  s/it)[K
-  iteration:  140[K
-  elbo:       -235.61671[K[A[A
-
-[K[A[K[AOptimizing  14%|████▍                          |  ETA: 0:05:47 ( 0.41  s/it)[K
-  iteration:  143[K
-  elbo:       -224.79982[K[A[A
-
-[K[A[K[AOptimizing  15%|████▌                          |  ETA: 0:05:40 ( 0.40  s/it)[K
-  iteration:  146[K
-  elbo:       -223.63403[K[A[A
-
-[K[A[K[AOptimizing  15%|████▋                          |  ETA: 0:05:33 ( 0.39  s/it)[K
-  iteration:  149[K
-  elbo:       -230.51653[K[A[A
-
-[K[A[K[AOptimizing  15%|████▊                          |  ETA: 0:05:25 ( 0.38  s/it)[K
-  iteration:  152[K
-  elbo:       -230.83276[K[A[A
-
-[K[A[K[AOptimizing  16%|████▊                          |  ETA: 0:05:19 ( 0.38  s/it)[K
-  iteration:  155[K
-  elbo:       -225.53088[K[A[A
-
-[K[A[K[AOptimizing  16%|████▉                          |  ETA: 0:05:12 ( 0.37  s/it)[K
-  iteration:  158[K
-  elbo:       -225.51381[K[A[A
-
-[K[A[K[AOptimizing  16%|█████                          |  ETA: 0:05:06 ( 0.36  s/it)[K
-  iteration:  161[K
-  elbo:       -222.75352[K[A[A
-
-[K[A[K[AOptimizing  16%|█████▏                         |  ETA: 0:05:00 ( 0.36  s/it)[K
-  iteration:  164[K
-  elbo:       -224.2033[K[A[A
-
-[K[A[K[AOptimizing  17%|█████▏                         |  ETA: 0:04:56 ( 0.36  s/it)[K
-  iteration:  166[K
-  elbo:       -226.25261[K[A[A
-
-[K[A[K[AOptimizing  17%|█████▎                         |  ETA: 0:04:51 ( 0.35  s/it)[K
-  iteration:  169[K
-  elbo:       -229.65465[K[A[A
-
-[K[A[K[AOptimizing  17%|█████▎                         |  ETA: 0:04:47 ( 0.35  s/it)[K
-  iteration:  171[K
-  elbo:       -225.87772[K[A[A
-
-[K[A[K[AOptimizing  17%|█████▍                         |  ETA: 0:04:44 ( 0.34  s/it)[K
-  iteration:  173[K
-  elbo:       -228.14542[K[A[A
-
-[K[A[K[AOptimizing  18%|█████▍                         |  ETA: 0:04:40 ( 0.34  s/it)[K
-  iteration:  175[K
-  elbo:       -228.91994[K[A[A
-
-[K[A[K[AOptimizing  18%|█████▌                         |  ETA: 0:04:39 ( 0.34  s/it)[K
-  iteration:  176[K
-  elbo:       -224.54613[K[A[A
-
-[K[A[K[AOptimizing  18%|█████▌                         |  ETA: 0:04:36 ( 0.34  s/it)[K
-  iteration:  178[K
-  elbo:       -226.17065[K[A[A
-
-[K[A[K[AOptimizing  18%|█████▋                         |  ETA: 0:04:31 ( 0.33  s/it)[K
-  iteration:  181[K
-  elbo:       -229.29793[K[A[A
-
-[K[A[K[AOptimizing  18%|█████▋                         |  ETA: 0:04:28 ( 0.33  s/it)[K
-  iteration:  183[K
-  elbo:       -229.05861[K[A[A
-
-[K[A[K[AOptimizing  19%|█████▊                         |  ETA: 0:04:23 ( 0.32  s/it)[K
-  iteration:  186[K
-  elbo:       -229.65749[K[A[A
-
-[K[A[K[AOptimizing  19%|█████▉                         |  ETA: 0:04:18 ( 0.32  s/it)[K
-  iteration:  189[K
-  elbo:       -223.45987[K[A[A
-
-[K[A[K[AOptimizing  19%|██████                         |  ETA: 0:04:14 ( 0.31  s/it)[K
-  iteration:  192[K
-  elbo:       -226.2326[K[A[A
-
-[K[A[K[AOptimizing  20%|██████                         |  ETA: 0:04:10 ( 0.31  s/it)[K
-  iteration:  195[K
-  elbo:       -224.26328[K[A[A
-
-[K[A[K[AOptimizing  20%|██████▏                        |  ETA: 0:04:06 ( 0.31  s/it)[K
-  iteration:  198[K
-  elbo:       -223.42812[K[A[A
-
-[K[A[K[AOptimizing  20%|██████▎                        |  ETA: 0:04:03 ( 0.30  s/it)[K
-  iteration:  200[K
-  elbo:       -226.25641[K[A[A
-
-[K[A[K[AOptimizing  20%|██████▎                        |  ETA: 0:03:59 ( 0.30  s/it)[K
-  iteration:  203[K
-  elbo:       -227.86105[K[A[A
-
-[K[A[K[AOptimizing  20%|██████▍                        |  ETA: 0:03:57 ( 0.30  s/it)[K
-  iteration:  205[K
-  elbo:       -228.99817[K[A[A
-
-[K[A[K[AOptimizing  21%|██████▌                        |  ETA: 0:03:53 ( 0.29  s/it)[K
-  iteration:  208[K
-  elbo:       -233.47717[K[A[A
-
-[K[A[K[AOptimizing  21%|██████▌                        |  ETA: 0:03:49 ( 0.29  s/it)[K
-  iteration:  211[K
-  elbo:       -226.65271[K[A[A
-
-[K[A[K[AOptimizing  21%|██████▋                        |  ETA: 0:03:46 ( 0.29  s/it)[K
-  iteration:  214[K
-  elbo:       -225.92851[K[A[A
-
-[K[A[K[AOptimizing  22%|██████▊                        |  ETA: 0:03:44 ( 0.29  s/it)[K
-  iteration:  216[K
-  elbo:       -225.35835[K[A[A
-
-[K[A[K[AOptimizing  22%|██████▊                        |  ETA: 0:03:40 ( 0.28  s/it)[K
-  iteration:  219[K
-  elbo:       -226.13939[K[A[A
-
-[K[A[K[AOptimizing  22%|██████▉                        |  ETA: 0:03:38 ( 0.28  s/it)[K
-  iteration:  221[K
-  elbo:       -222.8279[K[A[A
-
-[K[A[K[AOptimizing  22%|███████                        |  ETA: 0:03:35 ( 0.28  s/it)[K
-  iteration:  224[K
-  elbo:       -225.74289[K[A[A
-
-[K[A[K[AOptimizing  23%|███████                        |  ETA: 0:03:33 ( 0.27  s/it)[K
-  iteration:  226[K
-  elbo:       -226.78424[K[A[A
-
-[K[A[K[AOptimizing  23%|███████▏                       |  ETA: 0:03:30 ( 0.27  s/it)[K
-  iteration:  229[K
-  elbo:       -226.33179[K[A[A
-
-[K[A[K[AOptimizing  23%|███████▎                       |  ETA: 0:03:26 ( 0.27  s/it)[K
-  iteration:  232[K
-  elbo:       -225.22914[K[A[A
-
-[K[A[K[AOptimizing  23%|███████▎                       |  ETA: 0:03:24 ( 0.27  s/it)[K
-  iteration:  234[K
-  elbo:       -227.23845[K[A[A
-
-[K[A[K[AOptimizing  24%|███████▍                       |  ETA: 0:03:23 ( 0.27  s/it)[K
-  iteration:  236[K
-  elbo:       -224.09206[K[A[A
-
-[K[A[K[AOptimizing  24%|███████▍                       |  ETA: 0:03:20 ( 0.26  s/it)[K
-  iteration:  239[K
-  elbo:       -222.9493[K[A[A
-
-[K[A[K[AOptimizing  24%|███████▌                       |  ETA: 0:03:17 ( 0.26  s/it)[K
-  iteration:  242[K
-  elbo:       -224.89098[K[A[A
-
-[K[A[K[AOptimizing  24%|███████▋                       |  ETA: 0:03:15 ( 0.26  s/it)[K
-  iteration:  244[K
-  elbo:       -226.52577[K[A[A
-
-[K[A[K[AOptimizing  25%|███████▋                       |  ETA: 0:03:13 ( 0.26  s/it)[K
-  iteration:  246[K
-  elbo:       -228.71996[K[A[A
-
-[K[A[K[AOptimizing  25%|███████▊                       |  ETA: 0:03:12 ( 0.25  s/it)[K
-  iteration:  248[K
-  elbo:       -226.38228[K[A[A
-
-[K[A[K[AOptimizing  25%|███████▊                       |  ETA: 0:03:10 ( 0.25  s/it)[K
-  iteration:  250[K
-  elbo:       -224.31592[K[A[A
-
-[K[A[K[AOptimizing  25%|███████▊                       |  ETA: 0:03:08 ( 0.25  s/it)[K
-  iteration:  252[K
-  elbo:       -225.67328[K[A[A
-
-[K[A[K[AOptimizing  26%|███████▉                       |  ETA: 0:03:06 ( 0.25  s/it)[K
-  iteration:  255[K
-  elbo:       -225.96416[K[A[A
-
-[K[A[K[AOptimizing  26%|████████                       |  ETA: 0:03:04 ( 0.25  s/it)[K
-  iteration:  257[K
-  elbo:       -226.41637[K[A[A
-
-[K[A[K[AOptimizing  26%|████████                       |  ETA: 0:03:03 ( 0.25  s/it)[K
-  iteration:  259[K
-  elbo:       -225.2773[K[A[A
-
-[K[A[K[AOptimizing  26%|████████▏                      |  ETA: 0:03:00 ( 0.24  s/it)[K
-  iteration:  262[K
-  elbo:       -225.36417[K[A[A
-
-[K[A[K[AOptimizing  26%|████████▏                      |  ETA: 0:02:59 ( 0.24  s/it)[K
-  iteration:  264[K
-  elbo:       -227.791[K[A[A
-
-[K[A[K[AOptimizing  27%|████████▎                      |  ETA: 0:02:56 ( 0.24  s/it)[K
-  iteration:  267[K
-  elbo:       -225.89679[K[A[A
-
-[K[A[K[AOptimizing  27%|████████▎                      |  ETA: 0:02:56 ( 0.24  s/it)[K
-  iteration:  268[K
-  elbo:       -228.25136[K[A[A
-
-[K[A[K[AOptimizing  27%|████████▍                      |  ETA: 0:02:54 ( 0.24  s/it)[K
-  iteration:  270[K
-  elbo:       -224.77504[K[A[A
-
-[K[A[K[AOptimizing  27%|████████▍                      |  ETA: 0:02:53 ( 0.24  s/it)[K
-  iteration:  272[K
-  elbo:       -226.45377[K[A[A
-
-[K[A[K[AOptimizing  27%|████████▌                      |  ETA: 0:02:52 ( 0.24  s/it)[K
-  iteration:  274[K
-  elbo:       -226.4728[K[A[A
-
-[K[A[K[AOptimizing  28%|████████▋                      |  ETA: 0:02:49 ( 0.23  s/it)[K
-  iteration:  277[K
-  elbo:       -227.38956[K[A[A
-
-[K[A[K[AOptimizing  28%|████████▋                      |  ETA: 0:02:48 ( 0.23  s/it)[K
-  iteration:  279[K
-  elbo:       -226.47519[K[A[A
-
-[K[A[K[AOptimizing  28%|████████▊                      |  ETA: 0:02:47 ( 0.23  s/it)[K
-  iteration:  281[K
-  elbo:       -226.5256[K[A[A
-
-[K[A[K[AOptimizing  28%|████████▊                      |  ETA: 0:02:45 ( 0.23  s/it)[K
-  iteration:  283[K
-  elbo:       -225.58212[K[A[A
-
-[K[A[K[AOptimizing  28%|████████▉                      |  ETA: 0:02:44 ( 0.23  s/it)[K
-  iteration:  285[K
-  elbo:       -225.43192[K[A[A
-
-[K[A[K[AOptimizing  29%|████████▉                      |  ETA: 0:02:43 ( 0.23  s/it)[K
-  iteration:  287[K
-  elbo:       -225.29068[K[A[A
-
-[K[A[K[AOptimizing  29%|█████████                      |  ETA: 0:02:41 ( 0.23  s/it)[K
-  iteration:  290[K
-  elbo:       -224.48494[K[A[A
-
-[K[A[K[AOptimizing  29%|█████████▏                     |  ETA: 0:02:39 ( 0.22  s/it)[K
-  iteration:  293[K
-  elbo:       -223.0314[K[A[A
-
-[K[A[K[AOptimizing  30%|█████████▏                     |  ETA: 0:02:37 ( 0.22  s/it)[K
-  iteration:  296[K
-  elbo:       -223.97557[K[A[A
-
-[K[A[K[AOptimizing  30%|█████████▎                     |  ETA: 0:02:35 ( 0.22  s/it)[K
-  iteration:  299[K
-  elbo:       -223.74066[K[A[A
-
-[K[A[K[AOptimizing  30%|█████████▍                     |  ETA: 0:02:33 ( 0.22  s/it)[K
-  iteration:  302[K
-  elbo:       -223.98914[K[A[A
-
-[K[A[K[AOptimizing  30%|█████████▌                     |  ETA: 0:02:31 ( 0.22  s/it)[K
-  iteration:  305[K
-  elbo:       -225.06592[K[A[A
-
-[K[A[K[AOptimizing  31%|█████████▌                     |  ETA: 0:02:29 ( 0.22  s/it)[K
-  iteration:  308[K
-  elbo:       -224.35762[K[A[A
-
-[K[A[K[AOptimizing  31%|█████████▋                     |  ETA: 0:02:27 ( 0.21  s/it)[K
-  iteration:  311[K
-  elbo:       -225.91624[K[A[A
-
-[K[A[K[AOptimizing  31%|█████████▊                     |  ETA: 0:02:26 ( 0.21  s/it)[K
-  iteration:  314[K
-  elbo:       -223.77068[K[A[A
-
-[K[A[K[AOptimizing  32%|█████████▉                     |  ETA: 0:02:24 ( 0.21  s/it)[K
-  iteration:  317[K
-  elbo:       -226.19023[K[A[A
-
-[K[A[K[AOptimizing  32%|█████████▉                     |  ETA: 0:02:23 ( 0.21  s/it)[K
-  iteration:  319[K
-  elbo:       -226.6327[K[A[A
-
-[K[A[K[AOptimizing  32%|██████████                     |  ETA: 0:02:21 ( 0.21  s/it)[K
-  iteration:  322[K
-  elbo:       -225.05164[K[A[A
-
-[K[A[K[AOptimizing  32%|██████████▏                    |  ETA: 0:02:19 ( 0.21  s/it)[K
-  iteration:  325[K
-  elbo:       -223.7649[K[A[A
-
-[K[A[K[AOptimizing  33%|██████████▏                    |  ETA: 0:02:18 ( 0.20  s/it)[K
-  iteration:  328[K
-  elbo:       -223.8268[K[A[A
-
-[K[A[K[AOptimizing  33%|██████████▎                    |  ETA: 0:02:16 ( 0.20  s/it)[K
-  iteration:  331[K
-  elbo:       -225.16507[K[A[A
-
-[K[A[K[AOptimizing  33%|██████████▍                    |  ETA: 0:02:15 ( 0.20  s/it)[K
-  iteration:  334[K
-  elbo:       -225.48975[K[A[A
-
-[K[A[K[AOptimizing  34%|██████████▍                    |  ETA: 0:02:14 ( 0.20  s/it)[K
-  iteration:  336[K
-  elbo:       -224.29979[K[A[A
-
-[K[A[K[AOptimizing  34%|██████████▌                    |  ETA: 0:02:12 ( 0.20  s/it)[K
-  iteration:  339[K
-  elbo:       -229.14792[K[A[A
-
-[K[A[K[AOptimizing  34%|██████████▋                    |  ETA: 0:02:11 ( 0.20  s/it)[K
-  iteration:  342[K
-  elbo:       -223.42514[K[A[A
-
-[K[A[K[AOptimizing  34%|██████████▊                    |  ETA: 0:02:09 ( 0.20  s/it)[K
-  iteration:  345[K
-  elbo:       -223.53331[K[A[A
-
-[K[A[K[AOptimizing  35%|██████████▊                    |  ETA: 0:02:08 ( 0.20  s/it)[K
-  iteration:  348[K
-  elbo:       -224.53316[K[A[A
-
-[K[A[K[AOptimizing  35%|██████████▉                    |  ETA: 0:02:06 ( 0.19  s/it)[K
-  iteration:  351[K
-  elbo:       -224.82816[K[A[A
-
-[K[A[K[AOptimizing  35%|███████████                    |  ETA: 0:02:05 ( 0.19  s/it)[K
-  iteration:  353[K
-  elbo:       -222.90828[K[A[A
-
-[K[A[K[AOptimizing  36%|███████████                    |  ETA: 0:02:05 ( 0.19  s/it)[K
-  iteration:  355[K
-  elbo:       -225.39998[K[A[A
-
-[K[A[K[AOptimizing  36%|███████████▏                   |  ETA: 0:02:04 ( 0.19  s/it)[K
-  iteration:  357[K
-  elbo:       -224.65367[K[A[A
-
-[K[A[K[AOptimizing  36%|███████████▏                   |  ETA: 0:02:02 ( 0.19  s/it)[K
-  iteration:  360[K
-  elbo:       -225.86258[K[A[A
-
-[K[A[K[AOptimizing  36%|███████████▎                   |  ETA: 0:02:01 ( 0.19  s/it)[K
-  iteration:  363[K
-  elbo:       -223.22495[K[A[A
-
-[K[A[K[AOptimizing  37%|███████████▍                   |  ETA: 0:02:00 ( 0.19  s/it)[K
-  iteration:  366[K
-  elbo:       -226.2816[K[A[A
-
-[K[A[K[AOptimizing  37%|███████████▌                   |  ETA: 0:01:58 ( 0.19  s/it)[K
-  iteration:  369[K
-  elbo:       -225.04082[K[A[A
-
-[K[A[K[AOptimizing  37%|███████████▌                   |  ETA: 0:01:57 ( 0.19  s/it)[K
-  iteration:  372[K
-  elbo:       -224.84517[K[A[A
-
-[K[A[K[AOptimizing  38%|███████████▋                   |  ETA: 0:01:56 ( 0.19  s/it)[K
-  iteration:  375[K
-  elbo:       -224.83328[K[A[A
-
-[K[A[K[AOptimizing  38%|███████████▋                   |  ETA: 0:01:55 ( 0.18  s/it)[K
-  iteration:  377[K
-  elbo:       -227.81915[K[A[A
-
-[K[A[K[AOptimizing  38%|███████████▊                   |  ETA: 0:01:54 ( 0.18  s/it)[K
-  iteration:  380[K
-  elbo:       -225.79779[K[A[A
-
-[K[A[K[AOptimizing  38%|███████████▉                   |  ETA: 0:01:53 ( 0.18  s/it)[K
-  iteration:  383[K
-  elbo:       -225.49867[K[A[A
-
-[K[A[K[AOptimizing  39%|████████████                   |  ETA: 0:01:51 ( 0.18  s/it)[K
-  iteration:  386[K
-  elbo:       -224.704[K[A[A
-
-[K[A[K[AOptimizing  39%|████████████                   |  ETA: 0:01:51 ( 0.18  s/it)[K
-  iteration:  388[K
-  elbo:       -224.53215[K[A[A
-
-[K[A[K[AOptimizing  39%|████████████▏                  |  ETA: 0:01:49 ( 0.18  s/it)[K
-  iteration:  391[K
-  elbo:       -222.97032[K[A[A
-
-[K[A[K[AOptimizing  39%|████████████▎                  |  ETA: 0:01:48 ( 0.18  s/it)[K
-  iteration:  394[K
-  elbo:       -223.1477[K[A[A
-
-[K[A[K[AOptimizing  40%|████████████▎                  |  ETA: 0:01:47 ( 0.18  s/it)[K
-  iteration:  397[K
-  elbo:       -226.22905[K[A[A
-
-[K[A[K[AOptimizing  40%|████████████▍                  |  ETA: 0:01:46 ( 0.18  s/it)[K
-  iteration:  400[K
-  elbo:       -223.64688[K[A[A
-
-[K[A[K[AOptimizing  40%|████████████▌                  |  ETA: 0:01:45 ( 0.18  s/it)[K
-  iteration:  403[K
-  elbo:       -224.57196[K[A[A
-
-[K[A[K[AOptimizing  40%|████████████▌                  |  ETA: 0:01:44 ( 0.18  s/it)[K
-  iteration:  405[K
-  elbo:       -234.10576[K[A[A
-
-[K[A[K[AOptimizing  41%|████████████▋                  |  ETA: 0:01:44 ( 0.17  s/it)[K
-  iteration:  407[K
-  elbo:       -225.16093[K[A[A
-
-[K[A[K[AOptimizing  41%|████████████▊                  |  ETA: 0:01:42 ( 0.17  s/it)[K
-  iteration:  410[K
-  elbo:       -227.78166[K[A[A
-
-[K[A[K[AOptimizing  41%|████████████▊                  |  ETA: 0:01:41 ( 0.17  s/it)[K
-  iteration:  413[K
-  elbo:       -229.25836[K[A[A
-
-[K[A[K[AOptimizing  42%|████████████▉                  |  ETA: 0:01:40 ( 0.17  s/it)[K
-  iteration:  416[K
-  elbo:       -223.77531[K[A[A
-
-[K[A[K[AOptimizing  42%|█████████████                  |  ETA: 0:01:39 ( 0.17  s/it)[K
-  iteration:  419[K
-  elbo:       -224.51355[K[A[A
-
-[K[A[K[AOptimizing  42%|█████████████▏                 |  ETA: 0:01:38 ( 0.17  s/it)[K
-  iteration:  422[K
-  elbo:       -225.77686[K[A[A
-
-[K[A[K[AOptimizing  42%|█████████████▏                 |  ETA: 0:01:38 ( 0.17  s/it)[K
-  iteration:  424[K
-  elbo:       -224.96777[K[A[A
-
-[K[A[K[AOptimizing  43%|█████████████▎                 |  ETA: 0:01:37 ( 0.17  s/it)[K
-  iteration:  427[K
-  elbo:       -226.80334[K[A[A
-
-[K[A[K[AOptimizing  43%|█████████████▍                 |  ETA: 0:01:36 ( 0.17  s/it)[K
-  iteration:  430[K
-  elbo:       -225.15712[K[A[A
-
-[K[A[K[AOptimizing  43%|█████████████▍                 |  ETA: 0:01:35 ( 0.17  s/it)[K
-  iteration:  433[K
-  elbo:       -223.48126[K[A[A
-
-[K[A[K[AOptimizing  44%|█████████████▌                 |  ETA: 0:01:34 ( 0.17  s/it)[K
-  iteration:  436[K
-  elbo:       -225.9821[K[A[A
-
-[K[A[K[AOptimizing  44%|█████████████▋                 |  ETA: 0:01:33 ( 0.17  s/it)[K
-  iteration:  439[K
-  elbo:       -224.99521[K[A[A
-
-[K[A[K[AOptimizing  44%|█████████████▊                 |  ETA: 0:01:32 ( 0.16  s/it)[K
-  iteration:  442[K
-  elbo:       -225.72871[K[A[A
-
-[K[A[K[AOptimizing  44%|█████████████▊                 |  ETA: 0:01:31 ( 0.16  s/it)[K
-  iteration:  445[K
-  elbo:       -225.07895[K[A[A
-
-[K[A[K[AOptimizing  45%|█████████████▉                 |  ETA: 0:01:30 ( 0.16  s/it)[K
-  iteration:  448[K
-  elbo:       -226.17104[K[A[A
-
-[K[A[K[AOptimizing  45%|██████████████                 |  ETA: 0:01:29 ( 0.16  s/it)[K
-  iteration:  451[K
-  elbo:       -224.69496[K[A[A
-
-[K[A[K[AOptimizing  45%|██████████████▏                |  ETA: 0:01:28 ( 0.16  s/it)[K
-  iteration:  454[K
-  elbo:       -226.38904[K[A[A
-
-[K[A[K[AOptimizing  46%|██████████████▏                |  ETA: 0:01:27 ( 0.16  s/it)[K
-  iteration:  457[K
-  elbo:       -224.77707[K[A[A
-
-[K[A[K[AOptimizing  46%|██████████████▎                |  ETA: 0:01:26 ( 0.16  s/it)[K
-  iteration:  460[K
-  elbo:       -227.93233[K[A[A
-
-[K[A[K[AOptimizing  46%|██████████████▍                |  ETA: 0:01:25 ( 0.16  s/it)[K
-  iteration:  463[K
-  elbo:       -223.2587[K[A[A
-
-[K[A[K[AOptimizing  47%|██████████████▌                |  ETA: 0:01:25 ( 0.16  s/it)[K
-  iteration:  466[K
-  elbo:       -225.07236[K[A[A
-
-[K[A[K[AOptimizing  47%|██████████████▌                |  ETA: 0:01:24 ( 0.16  s/it)[K
-  iteration:  469[K
-  elbo:       -223.5272[K[A[A
-
-[K[A[K[AOptimizing  47%|██████████████▋                |  ETA: 0:01:23 ( 0.16  s/it)[K
-  iteration:  472[K
-  elbo:       -224.73775[K[A[A
-
-[K[A[K[AOptimizing  48%|██████████████▊                |  ETA: 0:01:22 ( 0.16  s/it)[K
-  iteration:  475[K
-  elbo:       -222.95018[K[A[A
-
-[K[A[K[AOptimizing  48%|██████████████▉                |  ETA: 0:01:21 ( 0.16  s/it)[K
-  iteration:  478[K
-  elbo:       -228.97003[K[A[A
-
-[K[A[K[AOptimizing  48%|██████████████▉                |  ETA: 0:01:20 ( 0.15  s/it)[K
-  iteration:  481[K
-  elbo:       -224.1904[K[A[A
-
-[K[A[K[AOptimizing  48%|███████████████                |  ETA: 0:01:19 ( 0.15  s/it)[K
-  iteration:  484[K
-  elbo:       -224.57913[K[A[A
-
-[K[A[K[AOptimizing  49%|███████████████▏               |  ETA: 0:01:19 ( 0.15  s/it)[K
-  iteration:  487[K
-  elbo:       -224.28625[K[A[A
-
-[K[A[K[AOptimizing  49%|███████████████▎               |  ETA: 0:01:18 ( 0.15  s/it)[K
-  iteration:  490[K
-  elbo:       -224.98506[K[A[A
-
-[K[A[K[AOptimizing  49%|███████████████▎               |  ETA: 0:01:17 ( 0.15  s/it)[K
-  iteration:  492[K
-  elbo:       -223.9879[K[A[A
-
-[K[A[K[AOptimizing  49%|███████████████▍               |  ETA: 0:01:17 ( 0.15  s/it)[K
-  iteration:  494[K
-  elbo:       -223.4283[K[A[A
-
-[K[A[K[AOptimizing  50%|███████████████▍               |  ETA: 0:01:16 ( 0.15  s/it)[K
-  iteration:  497[K
-  elbo:       -223.53287[K[A[A
-
-[K[A[K[AOptimizing  50%|███████████████▌               |  ETA: 0:01:15 ( 0.15  s/it)[K
-  iteration:  500[K
-  elbo:       -224.05281[K[A[A
-
-[K[A[K[AOptimizing  50%|███████████████▋               |  ETA: 0:01:15 ( 0.15  s/it)[K
-  iteration:  503[K
-  elbo:       -224.96405[K[A[A
-
-[K[A[K[AOptimizing  51%|███████████████▋               |  ETA: 0:01:14 ( 0.15  s/it)[K
-  iteration:  506[K
-  elbo:       -224.14406[K[A[A
-
-[K[A[K[AOptimizing  51%|███████████████▊               |  ETA: 0:01:13 ( 0.15  s/it)[K
-  iteration:  508[K
-  elbo:       -224.72153[K[A[A
-
-[K[A[K[AOptimizing  51%|███████████████▉               |  ETA: 0:01:13 ( 0.15  s/it)[K
-  iteration:  511[K
-  elbo:       -225.01025[K[A[A
-
-[K[A[K[AOptimizing  51%|███████████████▉               |  ETA: 0:01:12 ( 0.15  s/it)[K
-  iteration:  514[K
-  elbo:       -226.94829[K[A[A
-
-[K[A[K[AOptimizing  52%|████████████████               |  ETA: 0:01:11 ( 0.15  s/it)[K
-  iteration:  517[K
-  elbo:       -222.34471[K[A[A
-
-[K[A[K[AOptimizing  52%|████████████████▏              |  ETA: 0:01:10 ( 0.15  s/it)[K
-  iteration:  520[K
-  elbo:       -224.31168[K[A[A
-
-[K[A[K[AOptimizing  52%|████████████████▎              |  ETA: 0:01:10 ( 0.15  s/it)[K
-  iteration:  523[K
-  elbo:       -222.82822[K[A[A
-
-[K[A[K[AOptimizing  52%|████████████████▎              |  ETA: 0:01:09 ( 0.15  s/it)[K
-  iteration:  525[K
-  elbo:       -223.14609[K[A[A
-
-[K[A[K[AOptimizing  53%|████████████████▍              |  ETA: 0:01:08 ( 0.15  s/it)[K
-  iteration:  528[K
-  elbo:       -223.67253[K[A[A
-
-[K[A[K[AOptimizing  53%|████████████████▌              |  ETA: 0:01:08 ( 0.14  s/it)[K
-  iteration:  531[K
-  elbo:       -222.90309[K[A[A
-
-[K[A[K[AOptimizing  53%|████████████████▌              |  ETA: 0:01:07 ( 0.14  s/it)[K
-  iteration:  534[K
-  elbo:       -225.17793[K[A[A
-
-[K[A[K[AOptimizing  54%|████████████████▋              |  ETA: 0:01:06 ( 0.14  s/it)[K
-  iteration:  537[K
-  elbo:       -224.81322[K[A[A
-
-[K[A[K[AOptimizing  54%|████████████████▊              |  ETA: 0:01:06 ( 0.14  s/it)[K
-  iteration:  540[K
-  elbo:       -223.90494[K[A[A
-
-[K[A[K[AOptimizing  54%|████████████████▊              |  ETA: 0:01:05 ( 0.14  s/it)[K
-  iteration:  542[K
-  elbo:       -223.933[K[A[A
-
-[K[A[K[AOptimizing  54%|████████████████▉              |  ETA: 0:01:05 ( 0.14  s/it)[K
-  iteration:  545[K
-  elbo:       -224.08128[K[A[A
-
-[K[A[K[AOptimizing  55%|█████████████████              |  ETA: 0:01:04 ( 0.14  s/it)[K
-  iteration:  548[K
-  elbo:       -223.50137[K[A[A
-
-[K[A[K[AOptimizing  55%|█████████████████▏             |  ETA: 0:01:03 ( 0.14  s/it)[K
-  iteration:  551[K
-  elbo:       -222.68044[K[A[A
-
-[K[A[K[AOptimizing  55%|█████████████████▏             |  ETA: 0:01:03 ( 0.14  s/it)[K
-  iteration:  554[K
-  elbo:       -223.41643[K[A[A
-
-[K[A[K[AOptimizing  56%|█████████████████▎             |  ETA: 0:01:02 ( 0.14  s/it)[K
-  iteration:  556[K
-  elbo:       -223.68506[K[A[A
-
-[K[A[K[AOptimizing  56%|█████████████████▍             |  ETA: 0:01:02 ( 0.14  s/it)[K
-  iteration:  559[K
-  elbo:       -225.00525[K[A[A
-
-[K[A[K[AOptimizing  56%|█████████████████▍             |  ETA: 0:01:01 ( 0.14  s/it)[K
-  iteration:  562[K
-  elbo:       -224.11252[K[A[A
-
-[K[A[K[AOptimizing  56%|█████████████████▌             |  ETA: 0:01:00 ( 0.14  s/it)[K
-  iteration:  564[K
-  elbo:       -223.3452[K[A[A
-
-[K[A[K[AOptimizing  57%|█████████████████▋             |  ETA: 0:01:00 ( 0.14  s/it)[K
-  iteration:  567[K
-  elbo:       -222.65372[K[A[A
-
-[K[A[K[AOptimizing  57%|█████████████████▋             |  ETA: 0:00:59 ( 0.14  s/it)[K
-  iteration:  570[K
-  elbo:       -222.66058[K[A[A
-
-[K[A[K[AOptimizing  57%|█████████████████▊             |  ETA: 0:00:59 ( 0.14  s/it)[K
-  iteration:  573[K
-  elbo:       -223.6393[K[A[A
-
-[K[A[K[AOptimizing  58%|█████████████████▉             |  ETA: 0:00:58 ( 0.14  s/it)[K
-  iteration:  576[K
-  elbo:       -228.951[K[A[A
-
-[K[A[K[AOptimizing  58%|██████████████████             |  ETA: 0:00:57 ( 0.14  s/it)[K
-  iteration:  579[K
-  elbo:       -224.11021[K[A[A
-
-[K[A[K[AOptimizing  58%|██████████████████             |  ETA: 0:00:57 ( 0.14  s/it)[K
-  iteration:  581[K
-  elbo:       -224.05264[K[A[A
-
-[K[A[K[AOptimizing  58%|██████████████████▏            |  ETA: 0:00:56 ( 0.14  s/it)[K
-  iteration:  584[K
-  elbo:       -223.53468[K[A[A
-
-[K[A[K[AOptimizing  59%|██████████████████▎            |  ETA: 0:00:56 ( 0.14  s/it)[K
-  iteration:  587[K
-  elbo:       -224.46497[K[A[A
-
-[K[A[K[AOptimizing  59%|██████████████████▎            |  ETA: 0:00:55 ( 0.13  s/it)[K
-  iteration:  590[K
-  elbo:       -224.8065[K[A[A
-
-[K[A[K[AOptimizing  59%|██████████████████▍            |  ETA: 0:00:55 ( 0.13  s/it)[K
-  iteration:  593[K
-  elbo:       -222.62921[K[A[A
-
-[K[A[K[AOptimizing  60%|██████████████████▌            |  ETA: 0:00:54 ( 0.13  s/it)[K
-  iteration:  595[K
-  elbo:       -223.7652[K[A[A
-
-[K[A[K[AOptimizing  60%|██████████████████▌            |  ETA: 0:00:54 ( 0.13  s/it)[K
-  iteration:  597[K
-  elbo:       -223.00743[K[A[A
-
-[K[A[K[AOptimizing  60%|██████████████████▋            |  ETA: 0:00:53 ( 0.13  s/it)[K
-  iteration:  600[K
-  elbo:       -222.9054[K[A[A
-
-[K[A[K[AOptimizing  60%|██████████████████▊            |  ETA: 0:00:53 ( 0.13  s/it)[K
-  iteration:  603[K
-  elbo:       -225.56958[K[A[A
-
-[K[A[K[AOptimizing  61%|██████████████████▊            |  ETA: 0:00:52 ( 0.13  s/it)[K
-  iteration:  606[K
-  elbo:       -223.69917[K[A[A
-
-[K[A[K[AOptimizing  61%|██████████████████▉            |  ETA: 0:00:52 ( 0.13  s/it)[K
-  iteration:  609[K
-  elbo:       -223.53775[K[A[A
-
-[K[A[K[AOptimizing  61%|███████████████████            |  ETA: 0:00:51 ( 0.13  s/it)[K
-  iteration:  611[K
-  elbo:       -223.31999[K[A[A
-
-[K[A[K[AOptimizing  61%|███████████████████            |  ETA: 0:00:51 ( 0.13  s/it)[K
-  iteration:  614[K
-  elbo:       -223.90071[K[A[A
-
-[K[A[K[AOptimizing  62%|███████████████████▏           |  ETA: 0:00:50 ( 0.13  s/it)[K
-  iteration:  617[K
-  elbo:       -222.62831[K[A[A
-
-[K[A[K[AOptimizing  62%|███████████████████▎           |  ETA: 0:00:50 ( 0.13  s/it)[K
-  iteration:  620[K
-  elbo:       -222.7454[K[A[A
-
-[K[A[K[AOptimizing  62%|███████████████████▍           |  ETA: 0:00:49 ( 0.13  s/it)[K
-  iteration:  623[K
-  elbo:       -222.4694[K[A[A
-
-[K[A[K[AOptimizing  63%|███████████████████▍           |  ETA: 0:00:48 ( 0.13  s/it)[K
-  iteration:  626[K
-  elbo:       -223.60692[K[A[A
-
-[K[A[K[AOptimizing  63%|███████████████████▌           |  ETA: 0:00:48 ( 0.13  s/it)[K
-  iteration:  628[K
-  elbo:       -222.61299[K[A[A
-
-[K[A[K[AOptimizing  63%|███████████████████▌           |  ETA: 0:00:48 ( 0.13  s/it)[K
-  iteration:  631[K
-  elbo:       -222.50473[K[A[A
-
-[K[A[K[AOptimizing  63%|███████████████████▋           |  ETA: 0:00:47 ( 0.13  s/it)[K
-  iteration:  633[K
-  elbo:       -222.85374[K[A[A
-
-[K[A[K[AOptimizing  64%|███████████████████▊           |  ETA: 0:00:47 ( 0.13  s/it)[K
-  iteration:  636[K
-  elbo:       -222.54335[K[A[A
-
-[K[A[K[AOptimizing  64%|███████████████████▊           |  ETA: 0:00:46 ( 0.13  s/it)[K
-  iteration:  639[K
-  elbo:       -223.28236[K[A[A
-
-[K[A[K[AOptimizing  64%|███████████████████▉           |  ETA: 0:00:46 ( 0.13  s/it)[K
-  iteration:  642[K
-  elbo:       -223.82635[K[A[A
-
-[K[A[K[AOptimizing  64%|████████████████████           |  ETA: 0:00:45 ( 0.13  s/it)[K
-  iteration:  645[K
-  elbo:       -222.16884[K[A[A
-
-[K[A[K[AOptimizing  65%|████████████████████▏          |  ETA: 0:00:45 ( 0.13  s/it)[K
-  iteration:  648[K
-  elbo:       -223.6759[K[A[A
-
-[K[A[K[AOptimizing  65%|████████████████████▏          |  ETA: 0:00:44 ( 0.13  s/it)[K
-  iteration:  651[K
-  elbo:       -223.48291[K[A[A
-
-[K[A[K[AOptimizing  65%|████████████████████▎          |  ETA: 0:00:44 ( 0.13  s/it)[K
-  iteration:  654[K
-  elbo:       -223.09431[K[A[A
-
-[K[A[K[AOptimizing  66%|████████████████████▍          |  ETA: 0:00:43 ( 0.13  s/it)[K
-  iteration:  657[K
-  elbo:       -222.84703[K[A[A
-
-[K[A[K[AOptimizing  66%|████████████████████▌          |  ETA: 0:00:43 ( 0.13  s/it)[K
-  iteration:  660[K
-  elbo:       -222.8444[K[A[A
-
-[K[A[K[AOptimizing  66%|████████████████████▌          |  ETA: 0:00:42 ( 0.12  s/it)[K
-  iteration:  663[K
-  elbo:       -222.91634[K[A[A
-
-[K[A[K[AOptimizing  67%|████████████████████▋          |  ETA: 0:00:42 ( 0.12  s/it)[K
-  iteration:  666[K
-  elbo:       -222.93442[K[A[A
-
-[K[A[K[AOptimizing  67%|████████████████████▊          |  ETA: 0:00:41 ( 0.12  s/it)[K
-  iteration:  669[K
-  elbo:       -223.53284[K[A[A
-
-[K[A[K[AOptimizing  67%|████████████████████▉          |  ETA: 0:00:41 ( 0.12  s/it)[K
-  iteration:  672[K
-  elbo:       -222.84789[K[A[A
-
-[K[A[K[AOptimizing  68%|████████████████████▉          |  ETA: 0:00:40 ( 0.12  s/it)[K
-  iteration:  675[K
-  elbo:       -222.10667[K[A[A
-
-[K[A[K[AOptimizing  68%|█████████████████████          |  ETA: 0:00:40 ( 0.12  s/it)[K
-  iteration:  678[K
-  elbo:       -222.6529[K[A[A
-
-[K[A[K[AOptimizing  68%|█████████████████████▏         |  ETA: 0:00:39 ( 0.12  s/it)[K
-  iteration:  681[K
-  elbo:       -223.45683[K[A[A
-
-[K[A[K[AOptimizing  68%|█████████████████████▎         |  ETA: 0:00:39 ( 0.12  s/it)[K
-  iteration:  684[K
-  elbo:       -222.37708[K[A[A
-
-[K[A[K[AOptimizing  69%|█████████████████████▎         |  ETA: 0:00:38 ( 0.12  s/it)[K
-  iteration:  687[K
-  elbo:       -222.87288[K[A[A
-
-[K[A[K[AOptimizing  69%|█████████████████████▍         |  ETA: 0:00:38 ( 0.12  s/it)[K
-  iteration:  690[K
-  elbo:       -222.94319[K[A[A
-
-[K[A[K[AOptimizing  69%|█████████████████████▌         |  ETA: 0:00:37 ( 0.12  s/it)[K
-  iteration:  693[K
-  elbo:       -222.93254[K[A[A
-
-[K[A[K[AOptimizing  70%|█████████████████████▋         |  ETA: 0:00:37 ( 0.12  s/it)[K
-  iteration:  696[K
-  elbo:       -222.8039[K[A[A
-
-[K[A[K[AOptimizing  70%|█████████████████████▋         |  ETA: 0:00:36 ( 0.12  s/it)[K
-  iteration:  699[K
-  elbo:       -222.72348[K[A[A
-
-[K[A[K[AOptimizing  70%|█████████████████████▊         |  ETA: 0:00:36 ( 0.12  s/it)[K
-  iteration:  702[K
-  elbo:       -222.3131[K[A[A
-
-[K[A[K[AOptimizing  70%|█████████████████████▉         |  ETA: 0:00:36 ( 0.12  s/it)[K
-  iteration:  704[K
-  elbo:       -225.24265[K[A[A
-
-[K[A[K[AOptimizing  71%|█████████████████████▉         |  ETA: 0:00:35 ( 0.12  s/it)[K
-  iteration:  707[K
-  elbo:       -222.37317[K[A[A
-
-[K[A[K[AOptimizing  71%|██████████████████████         |  ETA: 0:00:35 ( 0.12  s/it)[K
-  iteration:  710[K
-  elbo:       -222.2694[K[A[A
-
-[K[A[K[AOptimizing  71%|██████████████████████▏        |  ETA: 0:00:34 ( 0.12  s/it)[K
-  iteration:  713[K
-  elbo:       -231.05524[K[A[A
-
-[K[A[K[AOptimizing  72%|██████████████████████▎        |  ETA: 0:00:34 ( 0.12  s/it)[K
-  iteration:  716[K
-  elbo:       -223.08632[K[A[A
-
-[K[A[K[AOptimizing  72%|██████████████████████▎        |  ETA: 0:00:33 ( 0.12  s/it)[K
-  iteration:  719[K
-  elbo:       -222.29286[K[A[A
-
-[K[A[K[AOptimizing  72%|██████████████████████▍        |  ETA: 0:00:33 ( 0.12  s/it)[K
-  iteration:  722[K
-  elbo:       -223.1078[K[A[A
-
-[K[A[K[AOptimizing  72%|██████████████████████▌        |  ETA: 0:00:32 ( 0.12  s/it)[K
-  iteration:  725[K
-  elbo:       -223.42294[K[A[A
-
-[K[A[K[AOptimizing  73%|██████████████████████▋        |  ETA: 0:00:32 ( 0.12  s/it)[K
-  iteration:  728[K
-  elbo:       -223.23709[K[A[A
-
-[K[A[K[AOptimizing  73%|██████████████████████▋        |  ETA: 0:00:32 ( 0.12  s/it)[K
-  iteration:  731[K
-  elbo:       -222.87665[K[A[A
-
-[K[A[K[AOptimizing  73%|██████████████████████▊        |  ETA: 0:00:31 ( 0.12  s/it)[K
-  iteration:  734[K
-  elbo:       -222.65215[K[A[A
-
-[K[A[K[AOptimizing  74%|██████████████████████▉        |  ETA: 0:00:31 ( 0.12  s/it)[K
-  iteration:  737[K
-  elbo:       -223.01714[K[A[A
-
-[K[A[K[AOptimizing  74%|███████████████████████        |  ETA: 0:00:30 ( 0.12  s/it)[K
-  iteration:  740[K
-  elbo:       -224.07286[K[A[A
-
-[K[A[K[AOptimizing  74%|███████████████████████        |  ETA: 0:00:30 ( 0.12  s/it)[K
-  iteration:  743[K
-  elbo:       -222.74413[K[A[A
-
-[K[A[K[AOptimizing  75%|███████████████████████▏       |  ETA: 0:00:29 ( 0.12  s/it)[K
-  iteration:  746[K
-  elbo:       -223.56236[K[A[A
-
-[K[A[K[AOptimizing  75%|███████████████████████▎       |  ETA: 0:00:29 ( 0.12  s/it)[K
-  iteration:  748[K
-  elbo:       -223.13788[K[A[A
-
-[K[A[K[AOptimizing  75%|███████████████████████▎       |  ETA: 0:00:29 ( 0.12  s/it)[K
-  iteration:  750[K
-  elbo:       -222.81049[K[A[A
-
-[K[A[K[AOptimizing  75%|███████████████████████▍       |  ETA: 0:00:28 ( 0.12  s/it)[K
-  iteration:  753[K
-  elbo:       -222.90817[K[A[A
-
-[K[A[K[AOptimizing  76%|███████████████████████▍       |  ETA: 0:00:28 ( 0.11  s/it)[K
-  iteration:  756[K
-  elbo:       -222.56668[K[A[A
-
-[K[A[K[AOptimizing  76%|███████████████████████▌       |  ETA: 0:00:28 ( 0.11  s/it)[K
-  iteration:  759[K
-  elbo:       -223.13907[K[A[A
-
-[K[A[K[AOptimizing  76%|███████████████████████▋       |  ETA: 0:00:27 ( 0.11  s/it)[K
-  iteration:  762[K
-  elbo:       -223.90198[K[A[A
-
-[K[A[K[AOptimizing  76%|███████████████████████▊       |  ETA: 0:00:27 ( 0.11  s/it)[K
-  iteration:  765[K
-  elbo:       -222.61978[K[A[A
-
-[K[A[K[AOptimizing  77%|███████████████████████▊       |  ETA: 0:00:26 ( 0.11  s/it)[K
-  iteration:  768[K
-  elbo:       -222.11526[K[A[A
-
-[K[A[K[AOptimizing  77%|███████████████████████▉       |  ETA: 0:00:26 ( 0.11  s/it)[K
-  iteration:  771[K
-  elbo:       -222.14725[K[A[A
-
-[K[A[K[AOptimizing  77%|████████████████████████       |  ETA: 0:00:26 ( 0.11  s/it)[K
-  iteration:  773[K
-  elbo:       -223.1115[K[A[A
-
-[K[A[K[AOptimizing  78%|████████████████████████       |  ETA: 0:00:25 ( 0.11  s/it)[K
-  iteration:  776[K
-  elbo:       -223.1754[K[A[A
-
-[K[A[K[AOptimizing  78%|████████████████████████▏      |  ETA: 0:00:25 ( 0.11  s/it)[K
-  iteration:  779[K
-  elbo:       -222.6821[K[A[A
-
-[K[A[K[AOptimizing  78%|████████████████████████▎      |  ETA: 0:00:25 ( 0.11  s/it)[K
-  iteration:  781[K
-  elbo:       -222.6915[K[A[A
-
-[K[A[K[AOptimizing  78%|████████████████████████▎      |  ETA: 0:00:24 ( 0.11  s/it)[K
-  iteration:  784[K
-  elbo:       -222.8175[K[A[A
-
-[K[A[K[AOptimizing  79%|████████████████████████▍      |  ETA: 0:00:24 ( 0.11  s/it)[K
-  iteration:  787[K
-  elbo:       -222.68423[K[A[A
-
-[K[A[K[AOptimizing  79%|████████████████████████▌      |  ETA: 0:00:24 ( 0.11  s/it)[K
-  iteration:  790[K
-  elbo:       -222.79846[K[A[A
-
-[K[A[K[AOptimizing  79%|████████████████████████▌      |  ETA: 0:00:23 ( 0.11  s/it)[K
-  iteration:  792[K
-  elbo:       -222.65807[K[A[A
-
-[K[A[K[AOptimizing  80%|████████████████████████▋      |  ETA: 0:00:23 ( 0.11  s/it)[K
-  iteration:  795[K
-  elbo:       -222.79749[K[A[A
-
-[K[A[K[AOptimizing  80%|████████████████████████▊      |  ETA: 0:00:22 ( 0.11  s/it)[K
-  iteration:  798[K
-  elbo:       -222.53844[K[A[A
-
-[K[A[K[AOptimizing  80%|████████████████████████▊      |  ETA: 0:00:22 ( 0.11  s/it)[K
-  iteration:  800[K
-  elbo:       -222.90852[K[A[A
-
-[K[A[K[AOptimizing  80%|████████████████████████▉      |  ETA: 0:00:22 ( 0.11  s/it)[K
-  iteration:  803[K
-  elbo:       -223.45576[K[A[A
-
-[K[A[K[AOptimizing  81%|█████████████████████████      |  ETA: 0:00:21 ( 0.11  s/it)[K
-  iteration:  806[K
-  elbo:       -222.94154[K[A[A
-
-[K[A[K[AOptimizing  81%|█████████████████████████▏     |  ETA: 0:00:21 ( 0.11  s/it)[K
-  iteration:  809[K
-  elbo:       -223.34131[K[A[A
-
-[K[A[K[AOptimizing  81%|█████████████████████████▏     |  ETA: 0:00:21 ( 0.11  s/it)[K
-  iteration:  812[K
-  elbo:       -222.9234[K[A[A
-
-[K[A[K[AOptimizing  82%|█████████████████████████▎     |  ETA: 0:00:20 ( 0.11  s/it)[K
-  iteration:  815[K
-  elbo:       -222.78984[K[A[A
-
-[K[A[K[AOptimizing  82%|█████████████████████████▍     |  ETA: 0:00:20 ( 0.11  s/it)[K
-  iteration:  817[K
-  elbo:       -223.12277[K[A[A
-
-[K[A[K[AOptimizing  82%|█████████████████████████▍     |  ETA: 0:00:20 ( 0.11  s/it)[K
-  iteration:  819[K
-  elbo:       -222.60155[K[A[A
-
-[K[A[K[AOptimizing  82%|█████████████████████████▌     |  ETA: 0:00:19 ( 0.11  s/it)[K
-  iteration:  822[K
-  elbo:       -222.82533[K[A[A
-
-[K[A[K[AOptimizing  82%|█████████████████████████▌     |  ETA: 0:00:19 ( 0.11  s/it)[K
-  iteration:  824[K
-  elbo:       -222.79044[K[A[A
-
-[K[A[K[AOptimizing  83%|█████████████████████████▋     |  ETA: 0:00:19 ( 0.11  s/it)[K
-  iteration:  826[K
-  elbo:       -222.37457[K[A[A
-
-[K[A[K[AOptimizing  83%|█████████████████████████▊     |  ETA: 0:00:19 ( 0.11  s/it)[K
-  iteration:  829[K
-  elbo:       -223.16208[K[A[A
-
-[K[A[K[AOptimizing  83%|█████████████████████████▊     |  ETA: 0:00:18 ( 0.11  s/it)[K
-  iteration:  832[K
-  elbo:       -223.29515[K[A[A
-
-[K[A[K[AOptimizing  83%|█████████████████████████▉     |  ETA: 0:00:18 ( 0.11  s/it)[K
-  iteration:  834[K
-  elbo:       -223.01047[K[A[A
-
-[K[A[K[AOptimizing  84%|██████████████████████████     |  ETA: 0:00:18 ( 0.11  s/it)[K
-  iteration:  837[K
-  elbo:       -222.57147[K[A[A
-
-[K[A[K[AOptimizing  84%|██████████████████████████     |  ETA: 0:00:17 ( 0.11  s/it)[K
-  iteration:  840[K
-  elbo:       -222.70885[K[A[A
-
-[K[A[K[AOptimizing  84%|██████████████████████████▏    |  ETA: 0:00:17 ( 0.11  s/it)[K
-  iteration:  842[K
-  elbo:       -222.89694[K[A[A
-
-[K[A[K[AOptimizing  84%|██████████████████████████▏    |  ETA: 0:00:17 ( 0.11  s/it)[K
-  iteration:  844[K
-  elbo:       -222.96288[K[A[A
-
-[K[A[K[AOptimizing  85%|██████████████████████████▎    |  ETA: 0:00:17 ( 0.11  s/it)[K
-  iteration:  847[K
-  elbo:       -222.42328[K[A[A
-
-[K[A[K[AOptimizing  85%|██████████████████████████▍    |  ETA: 0:00:16 ( 0.11  s/it)[K
-  iteration:  849[K
-  elbo:       -222.66896[K[A[A
-
-[K[A[K[AOptimizing  85%|██████████████████████████▍    |  ETA: 0:00:16 ( 0.11  s/it)[K
-  iteration:  851[K
-  elbo:       -222.61612[K[A[A
-
-[K[A[K[AOptimizing  85%|██████████████████████████▌    |  ETA: 0:00:16 ( 0.11  s/it)[K
-  iteration:  854[K
-  elbo:       -222.48535[K[A[A
-
-[K[A[K[AOptimizing  86%|██████████████████████████▋    |  ETA: 0:00:15 ( 0.11  s/it)[K
-  iteration:  857[K
-  elbo:       -222.65024[K[A[A
-
-[K[A[K[AOptimizing  86%|██████████████████████████▋    |  ETA: 0:00:15 ( 0.11  s/it)[K
-  iteration:  859[K
-  elbo:       -223.51956[K[A[A
-
-[K[A[K[AOptimizing  86%|██████████████████████████▊    |  ETA: 0:00:15 ( 0.11  s/it)[K
-  iteration:  861[K
-  elbo:       -223.04868[K[A[A
-
-[K[A[K[AOptimizing  86%|██████████████████████████▊    |  ETA: 0:00:15 ( 0.11  s/it)[K
-  iteration:  863[K
-  elbo:       -222.91446[K[A[A
-
-[K[A[K[AOptimizing  86%|██████████████████████████▊    |  ETA: 0:00:15 ( 0.11  s/it)[K
-  iteration:  864[K
-  elbo:       -222.69156[K[A[A
-
-[K[A[K[AOptimizing  87%|██████████████████████████▉    |  ETA: 0:00:14 ( 0.11  s/it)[K
-  iteration:  866[K
-  elbo:       -223.46024[K[A[A
-
-[K[A[K[AOptimizing  87%|██████████████████████████▉    |  ETA: 0:00:14 ( 0.11  s/it)[K
-  iteration:  868[K
-  elbo:       -222.6882[K[A[A
-
-[K[A[K[AOptimizing  87%|███████████████████████████    |  ETA: 0:00:14 ( 0.11  s/it)[K
-  iteration:  871[K
-  elbo:       -222.69565[K[A[A
-
-[K[A[K[AOptimizing  87%|███████████████████████████▏   |  ETA: 0:00:13 ( 0.11  s/it)[K
-  iteration:  874[K
-  elbo:       -222.83153[K[A[A
-
-[K[A[K[AOptimizing  88%|███████████████████████████▏   |  ETA: 0:00:13 ( 0.11  s/it)[K
-  iteration:  877[K
-  elbo:       -222.31256[K[A[A
-
-[K[A[K[AOptimizing  88%|███████████████████████████▎   |  ETA: 0:00:13 ( 0.11  s/it)[K
-  iteration:  880[K
-  elbo:       -224.0592[K[A[A
-
-[K[A[K[AOptimizing  88%|███████████████████████████▍   |  ETA: 0:00:12 ( 0.11  s/it)[K
-  iteration:  883[K
-  elbo:       -223.10527[K[A[A
-
-[K[A[K[AOptimizing  88%|███████████████████████████▍   |  ETA: 0:00:12 ( 0.11  s/it)[K
-  iteration:  885[K
-  elbo:       -223.01132[K[A[A
-
-[K[A[K[AOptimizing  89%|███████████████████████████▌   |  ETA: 0:00:12 ( 0.11  s/it)[K
-  iteration:  888[K
-  elbo:       -222.60315[K[A[A
-
-[K[A[K[AOptimizing  89%|███████████████████████████▋   |  ETA: 0:00:12 ( 0.11  s/it)[K
-  iteration:  891[K
-  elbo:       -222.18886[K[A[A
-
-[K[A[K[AOptimizing  89%|███████████████████████████▊   |  ETA: 0:00:11 ( 0.11  s/it)[K
-  iteration:  894[K
-  elbo:       -222.76103[K[A[A
-
-[K[A[K[AOptimizing  90%|███████████████████████████▊   |  ETA: 0:00:11 ( 0.11  s/it)[K
-  iteration:  897[K
-  elbo:       -222.92966[K[A[A
-
-[K[A[K[AOptimizing  90%|███████████████████████████▉   |  ETA: 0:00:11 ( 0.11  s/it)[K
-  iteration:  900[K
-  elbo:       -222.9586[K[A[A
-
-[K[A[K[AOptimizing  90%|████████████████████████████   |  ETA: 0:00:10 ( 0.11  s/it)[K
-  iteration:  902[K
-  elbo:       -222.92404[K[A[A
-
-[K[A[K[AOptimizing  90%|████████████████████████████   |  ETA: 0:00:10 ( 0.10  s/it)[K
-  iteration:  905[K
-  elbo:       -222.96774[K[A[A
-
-[K[A[K[AOptimizing  91%|████████████████████████████▏  |  ETA: 0:00:10 ( 0.10  s/it)[K
-  iteration:  908[K
-  elbo:       -222.83156[K[A[A
-
-[K[A[K[AOptimizing  91%|████████████████████████████▎  |  ETA: 0:00:09 ( 0.10  s/it)[K
-  iteration:  911[K
-  elbo:       -222.91562[K[A[A
-
-[K[A[K[AOptimizing  91%|████████████████████████████▎  |  ETA: 0:00:09 ( 0.10  s/it)[K
-  iteration:  913[K
-  elbo:       -223.19585[K[A[A
-
-[K[A[K[AOptimizing  92%|████████████████████████████▍  |  ETA: 0:00:09 ( 0.10  s/it)[K
-  iteration:  915[K
-  elbo:       -222.9123[K[A[A
-
-[K[A[K[AOptimizing  92%|████████████████████████████▌  |  ETA: 0:00:09 ( 0.10  s/it)[K
-  iteration:  918[K
-  elbo:       -222.84198[K[A[A
-
-[K[A[K[AOptimizing  92%|████████████████████████████▌  |  ETA: 0:00:08 ( 0.10  s/it)[K
-  iteration:  920[K
-  elbo:       -222.48401[K[A[A
-
-[K[A[K[AOptimizing  92%|████████████████████████████▋  |  ETA: 0:00:08 ( 0.10  s/it)[K
-  iteration:  923[K
-  elbo:       -222.84964[K[A[A
-
-[K[A[K[AOptimizing  92%|████████████████████████████▋  |  ETA: 0:00:08 ( 0.10  s/it)[K
-  iteration:  925[K
-  elbo:       -222.61958[K[A[A
-
-[K[A[K[AOptimizing  93%|████████████████████████████▊  |  ETA: 0:00:07 ( 0.10  s/it)[K
-  iteration:  928[K
-  elbo:       -222.4908[K[A[A
-
-[K[A[K[AOptimizing  93%|████████████████████████████▉  |  ETA: 0:00:07 ( 0.10  s/it)[K
-  iteration:  930[K
-  elbo:       -222.89548[K[A[A
-
-[K[A[K[AOptimizing  93%|████████████████████████████▉  |  ETA: 0:00:07 ( 0.10  s/it)[K
-  iteration:  933[K
-  elbo:       -222.89809[K[A[A
-
-[K[A[K[AOptimizing  94%|█████████████████████████████  |  ETA: 0:00:07 ( 0.10  s/it)[K
-  iteration:  936[K
-  elbo:       -222.68483[K[A[A
-
-[K[A[K[AOptimizing  94%|█████████████████████████████▏ |  ETA: 0:00:06 ( 0.10  s/it)[K
-  iteration:  938[K
-  elbo:       -222.61862[K[A[A
-
-[K[A[K[AOptimizing  94%|█████████████████████████████▏ |  ETA: 0:00:06 ( 0.10  s/it)[K
-  iteration:  941[K
-  elbo:       -222.74759[K[A[A
-
-[K[A[K[AOptimizing  94%|█████████████████████████████▎ |  ETA: 0:00:06 ( 0.10  s/it)[K
-  iteration:  943[K
-  elbo:       -222.63084[K[A[A
-
-[K[A[K[AOptimizing  95%|█████████████████████████████▍ |  ETA: 0:00:06 ( 0.10  s/it)[K
-  iteration:  946[K
-  elbo:       -222.70123[K[A[A
-
-[K[A[K[AOptimizing  95%|█████████████████████████████▍ |  ETA: 0:00:05 ( 0.10  s/it)[K
-  iteration:  949[K
-  elbo:       -222.88013[K[A[A
-
-[K[A[K[AOptimizing  95%|█████████████████████████████▌ |  ETA: 0:00:05 ( 0.10  s/it)[K
-  iteration:  952[K
-  elbo:       -222.77312[K[A[A
-
-[K[A[K[AOptimizing  95%|█████████████████████████████▋ |  ETA: 0:00:05 ( 0.10  s/it)[K
-  iteration:  954[K
-  elbo:       -222.63231[K[A[A
-
-[K[A[K[AOptimizing  96%|█████████████████████████████▋ |  ETA: 0:00:04 ( 0.10  s/it)[K
-  iteration:  957[K
-  elbo:       -222.81165[K[A[A
-
-[K[A[K[AOptimizing  96%|█████████████████████████████▊ |  ETA: 0:00:04 ( 0.10  s/it)[K
-  iteration:  960[K
-  elbo:       -222.83093[K[A[A
-
-[K[A[K[AOptimizing  96%|█████████████████████████████▉ |  ETA: 0:00:04 ( 0.10  s/it)[K
-  iteration:  962[K
-  elbo:       -222.68527[K[A[A
-
-[K[A[K[AOptimizing  96%|█████████████████████████████▉ |  ETA: 0:00:04 ( 0.10  s/it)[K
-  iteration:  964[K
-  elbo:       -222.8485[K[A[A
-
-[K[A[K[AOptimizing  97%|██████████████████████████████ |  ETA: 0:00:03 ( 0.10  s/it)[K
-  iteration:  967[K
-  elbo:       -223.21596[K[A[A
-
-[K[A[K[AOptimizing  97%|██████████████████████████████▏|  ETA: 0:00:03 ( 0.10  s/it)[K
-  iteration:  970[K
-  elbo:       -222.735[K[A[A
-
-[K[A[K[AOptimizing  97%|██████████████████████████████▏|  ETA: 0:00:03 ( 0.10  s/it)[K
-  iteration:  973[K
-  elbo:       -223.13553[K[A[A
-
-[K[A[K[AOptimizing  98%|██████████████████████████████▎|  ETA: 0:00:02 ( 0.10  s/it)[K
-  iteration:  976[K
-  elbo:       -222.76689[K[A[A
-
-[K[A[K[AOptimizing  98%|██████████████████████████████▍|  ETA: 0:00:02 ( 0.10  s/it)[K
-  iteration:  978[K
-  elbo:       -222.69565[K[A[A
-
-[K[A[K[AOptimizing  98%|██████████████████████████████▍|  ETA: 0:00:02 ( 0.10  s/it)[K
-  iteration:  981[K
-  elbo:       -222.44907[K[A[A
-
-[K[A[K[AOptimizing  98%|██████████████████████████████▌|  ETA: 0:00:02 ( 0.10  s/it)[K
-  iteration:  983[K
-  elbo:       -223.1592[K[A[A
-
-[K[A[K[AOptimizing  98%|██████████████████████████████▌|  ETA: 0:00:02 ( 0.10  s/it)[K
-  iteration:  985[K
-  elbo:       -222.75494[K[A[A
-
-[K[A[K[AOptimizing  99%|██████████████████████████████▋|  ETA: 0:00:01 ( 0.10  s/it)[K
-  iteration:  987[K
-  elbo:       -222.56071[K[A[A
-
-[K[A[K[AOptimizing  99%|██████████████████████████████▊|  ETA: 0:00:01 ( 0.10  s/it)[K
-  iteration:  990[K
-  elbo:       -222.75575[K[A[A
-
-[K[A[K[AOptimizing  99%|██████████████████████████████▊|  ETA: 0:00:01 ( 0.10  s/it)[K
-  iteration:  992[K
-  elbo:       -222.92113[K[A[A
-
-[K[A[K[AOptimizing  99%|██████████████████████████████▉|  ETA: 0:00:00 ( 0.10  s/it)[K
-  iteration:  995[K
-  elbo:       -222.58664[K[A[A
-
-[K[A[K[AOptimizing  99%|███████████████████████████████|  ETA: 0:00:00 ( 0.10  s/it)[K
-  iteration:  998[K
-  elbo:       -222.59705[K[A[A
-
-[K[A[K[AOptimizing 100%|███████████████████████████████| Time: 0:01:39 ( 0.10  s/it)[K
-  iteration:  1000[K
-  elbo:       -222.9208[K
-Test Summary:              | Pass  Total     Time
-PyTorchNormalizingFlows.jl |   18     18  1m52.5s

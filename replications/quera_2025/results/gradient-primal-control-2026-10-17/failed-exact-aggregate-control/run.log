@@ -1,9 +1,0 @@
-┌ Warning: Package cuDNN not found in current path.
-│ - Run `import Pkg; Pkg.add("cuDNN")` to install the cuDNN package, then restart julia.
-│ - If cuDNN is not installed, some Flux functionalities will not be available when running on the GPU.
-└ @ FluxCUDAExt ~/Code/workspace/sugarscape-replication-tools/julia-depot-1.11.3-001/packages/Flux/3711C/ext/FluxCUDAExt/FluxCUDAExt.jl:10
-ERROR: LoadError: AssertionError: primal == ad_primal
-Stacktrace:
- [1] top-level scope
-   @ ~/Code/workspace/sugarscape-replication-evidence/quera-gradient-primal-control-001/run.jl:32
-in expression starting at /Users/relh/Code/workspace/sugarscape-replication-evidence/quera-gradient-primal-control-001/run.jl:18

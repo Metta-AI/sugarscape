@@ -119,7 +119,7 @@ Recover or explicitly declare these choices before fitting; a convenient alterna
 
 ## Independent movement, resource, and occupancy replay
 
-[The independent replay](results/movement-replay-2026-10-17/audit.json) reconstructs 14,700 agent updates and 91,875 cell updates from the three calibration-configuration pilots.
+[The independent replay](https://github.com/Metta-AI/sugarscape/blob/39b0cf9e9b433fe0eaf7bd9883ece6871074b022/replications/quera_2025/results/movement-replay-2026-10-17/audit.json) reconstructs 14,700 agent updates and 91,875 cell updates from the three calibration-configuration pilots.
 A passive Julia trace records activation order and initial metabolic/vision parameters while retaining the native step body.
 All six agent/cell trajectory CSVs match the original uninstrumented pilots byte-for-byte.
 
@@ -350,3 +350,7 @@ The original predictive auditor rejected the additional optimization-amendment h
 Its amended copy verifies the exact original fields plus that hash; all statistical checks remain unchanged.
 The failure and both auditor versions are retained. Native predictions were not rerun.
 Whole-method synthesis remains separate from these completed predictive checks.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/39b0cf9e9b433fe0eaf7bd9883ece6871074b022/replications/quera_2025/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 39b0cf9e9b433fe0eaf7bd9883ece6871074b022:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
