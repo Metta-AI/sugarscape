@@ -123,11 +123,17 @@ The author's `(4,7)` population continues declining after step 30 in 27 of the f
 DTL differs substantially even after the import fix; the source-audit differences remain unresolved.
 That initial audit was partial. The completed calibration, variance curve, and validation are assessed in [REPORT.md](REPORT.md).
 
-Regenerate the summary and figure from committed raw trajectories:
+Raw trajectories remain in the [immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/960e703f24da4f498ca423bdaa5537c3200e5c8c/replications/mcculloch_2022/results). Summaries, figures, and source pins stay in this PR. Existing local trajectories are preserved. Restore the required input before reproducing an analysis:
+
+```sh
+git show 960e703f24da4f498ca423bdaa5537c3200e5c8c:replications/mcculloch_2022/results/audit-2026-10-15/runs.jsonl > /absolute/raw-trajectories.jsonl
+```
+
+Regenerate the summary and figure from that archived input:
 
 ```sh
 .venv/bin/python replications/mcculloch_2022/analyze.py \
-  replications/mcculloch_2022/results/audit-2026-10-15/runs.jsonl \
+  /absolute/raw-trajectories.jsonl \
   --output /absolute/new/analysis/path
 ```
 
