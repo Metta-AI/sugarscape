@@ -70,7 +70,7 @@ Numerical thresholds, ensemble sizes, and temporal sampling remain to be declare
 
 All seventeen draft configurations now run twice from a fresh compilation of the unchanged author release.
 All 34 native processes exit successfully; paired logs are byte-identical across 28,466 observations.
-[Execution audit](results/all-showcases-2026-10-15/audit.json) retains invalid measurements rather than treating successful execution as scientific validation.
+[Execution audit](https://github.com/Metta-AI/sugarscape/blob/978716243eba3cda59175816142f5a28615ef95d/replications/bigbee_2007/results/all-showcases-2026-10-15/audit.json) retains invalid measurements rather than treating successful execution as scientific validation.
 Several reproduction cases emit nonfinite Gini statistics; the trade output contains an extra column absent from its header.
 These runs use new seed zero and a common 1,000 scheduled-time horizon, not a recovered paper protocol.
 
@@ -202,3 +202,7 @@ The unresolved artifact is the paper-era Sugarscape model source. MASON10 itself
 ## Original bundled bytecode comparison
 
 [All nine original-binary runs](results/bundled-binary-parity-2026-10-19) match the historical source rebuild byte-for-byte, including all 3,006 population-observer states. Class-loading logs verify original model, scheduler and random-generator bytecode; only the two replay wrappers are compiled. Both reproduction cases retain 989 accounting disagreements. This rules out modern recompilation as their cause in these checks, but does not authenticate the paper-era model or historical JVM.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/978716243eba3cda59175816142f5a28615ef95d/replications/bigbee_2007/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 978716243eba3cda59175816142f5a28615ef95d:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
