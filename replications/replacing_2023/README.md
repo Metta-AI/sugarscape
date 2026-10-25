@@ -76,7 +76,7 @@ Descriptive windows and a [comparison plot](results/preconference-2026-10-15/rep
 
 ## Complete twenty-seed disease replay
 
-The [archived-release batch](results/disease-published20-2026-10-15/audit.json) completed all twenty original Table 3 seeds at the released 500-step horizon.
+The [archived-release batch](https://github.com/Metta-AI/sugarscape/blob/95fcb8c0c7eb7c8663bc590282c43bfccddd901c/replications/replacing_2023/results/disease-published20-2026-10-15/audit.json) completed all twenty original Table 3 seeds at the released 500-step horizon.
 Independent validation checks all 10,020 observations, native source/configuration hashes, original seed ordering, initial populations, finite metrics, and complete trajectories.
 No seed becomes extinct. The paper's reported extinction seeds, 12881 and 22744, finish with 801 and 860 agents respectively.
 Their minimum populations are 51 and 135.
@@ -93,7 +93,7 @@ Exact historical-rule/configuration alignment remains unresolved; this evidence 
 
 ## Complete pre-conference seed comparison
 
-The [pre-conference twenty-seed batch](results/preconference-disease-published20-2026-10-15/audit.json) also completed successfully and passes the independent 10,020-observation audit.
+The [pre-conference twenty-seed batch](https://github.com/Metta-AI/sugarscape/blob/95fcb8c0c7eb7c8663bc590282c43bfccddd901c/replications/replacing_2023/results/preconference-disease-published20-2026-10-15/audit.json) also completed successfully and passes the independent 10,020-observation audit.
 [All forty runs](results/preconference-disease-published20-2026-10-15/revision-comparison.json) retain their original seeds, configurations, and complete trajectories.
 Neither revision produces an extinction by the released 500-step horizon.
 Pre-conference seeds 12881 and 22744 finish at populations 801 and 984, with minima 51 and 110.
@@ -181,7 +181,7 @@ The analysis reports early-to-late drift and does not infer equilibrium or a pap
 
 ## Complete reproduction schedule and Figure 2 agreement
 
-[All twenty published seeds](results/reproduction-published20-2026-10-15/audit.json) complete the 2,500-step reproduction experiment and pass 50,020 native-observation checks, with no extinctions.
+[All twenty published seeds](https://github.com/Metta-AI/sugarscape/blob/95fcb8c0c7eb7c8663bc590282c43bfccddd901c/replications/replacing_2023/results/reproduction-published20-2026-10-15/audit.json) complete the 2,500-step reproduction experiment and pass 50,020 native-observation checks, with no extinctions.
 `analyze_reproduction.py BATCH AUDIT BASELINE NEW_OUTPUT` reports exploratory population descriptors and plots all trajectories against seed 12345.
 It uses the paper's 60–100 window and an explicitly analyst-chosen late window; it does not invent a threshold for the qualitative Table 3 labels.
 The baseline population rises from 840 to 1,071 during steps 60–100.
@@ -189,7 +189,7 @@ All twenty additional seeds also have a window minimum above their pre-step60 pe
 
 The apparent timing discrepancy is not a failure to reproduce Figure 2.
 `audit_figure2.py PDF BASELINE NEW_OUTPUT` renders page9 with `pdftocairo`, extracts its vector curve, and calibrates against the inspected axis labels and rectangle.
-[All 2,452 represented vertices](results/figure2-vector-2026-10-15/audit.json) match the baseline's integer populations exactly after coordinate rounding.
+[All 2,452 represented vertices](https://github.com/Metta-AI/sugarscape/blob/95fcb8c0c7eb7c8663bc590282c43bfccddd901c/replications/replacing_2023/results/figure2-vector-2026-10-15/audit.json) match the baseline's integer populations exactly after coordinate rounding.
 Maximum coordinate rounding distances are 0.077 timestep and 0.051 agent; the 49 unrepresented timesteps are explicitly listed, not treated as observed.
 Calibration uses the figure axes, not a fit to simulation outcomes.
 Thus the released implementation reproduces the plotted curve while the prose's stated first-dip timing disagrees with that curve.
@@ -258,7 +258,7 @@ Historical source and configuration differences remain unresolved, so the study 
 
 ## Figure 3 survivor-panel audit
 
-The [embedded-image audit](results/figure3-panel-2026-10-16/audit.json) reads the lower-left panel of Figure3 directly from PDF page10.
+The [embedded-image audit](https://github.com/Metta-AI/sugarscape/blob/95fcb8c0c7eb7c8663bc590282c43bfccddd901c/replications/replacing_2023/results/figure3-panel-2026-10-16/audit.json) reads the lower-left panel of Figure3 directly from PDF page10.
 Its 50-by-50 grid contains 18 blue agent cells and no red agent cells.
 All nine center-sampling offsets within half a pixel identify the same cells; the extracted image and coordinates are retained.
 This agrees with the prose’s roughly20 survivors, independently of the replay outputs.
@@ -326,3 +326,7 @@ Source hashes and effective simulation settings are unchanged; the audit also ch
 The recovery changes worker count and timeout only. These observations do not isolate the timeout's cause.
 The original failed attempt retains no completion credit; the successful rerun supplies this input's receipt.
 The complete 60-input audit and scientific interpretation remain pending.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/95fcb8c0c7eb7c8663bc590282c43bfccddd901c/replications/replacing_2023/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 95fcb8c0c7eb7c8663bc590282c43bfccddd901c:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
