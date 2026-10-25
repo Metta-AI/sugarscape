@@ -217,3 +217,7 @@ The [complete Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) no
 ## Final parameter comparison
 
 [The reusable complete-cohort command](results/parameter-comparison-cli-2026-10-20) defaults to all sixteen pairings and rejects missing evidence without writing a partial report. Its thirteen-pair execution reproduces all existing data fields and passes independent R verification. The [completed sixteen-pair execution](results/sixteen-pair-parameter-comparison-2026-10-20) now passes independent R checks, with the final cohort-directory correction documented.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/b64684cbe24b2b17f5cb32819040db4581fe7e25/replications/brearcliffe_2020/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show b64684cbe24b2b17f5cb32819040db4581fe7e25:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.

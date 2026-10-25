@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/brearcliffe-horizontal-calibration-001/validate.py", line 7, in <module>
-    assert (r.parent/'brearcliffe-horizontal-endpoint-regression-001/metric-endpoints.json').read_bytes()==(repo/'results/metric-digitization-2026-10-19/metric-endpoints.json').read_bytes()
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

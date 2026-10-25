@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-brearcliffe/replications/brearcliffe_2020/summarize_cohort.py", line 32, in <module>
-    assert not missing, f'Incomplete fifty-run cohort: {len(missing)} inputs missing.'
-           ^^^^^^^^^^^
-AssertionError: Incomplete fifty-run cohort: 48 inputs missing.
