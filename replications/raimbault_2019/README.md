@@ -440,7 +440,7 @@ python replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-1
 
 ### Completed batched sizing benchmark
 
-[Independent audit](results/batched-sizing-complete-2026-10-17/audit.json) verifies all
+[Independent audit](https://github.com/Metta-AI/sugarscape/blob/da3646c4b7eaa9d66b13e5e2da946a57bdaaa222/replications/raimbault_2019/results/batched-sizing-complete-2026-10-17/audit.json) verifies all
 550 frozen inputs, 6,600 exact measurements, eight disjoint intervals, successful exits,
 and 14 retained model files. The result archive pins 51 model/dependency hashes;
 dependency binaries are not included in this compact archive.
@@ -499,7 +499,7 @@ python replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-1
 ### Terminal prefix recovery and disjoint continuation
 
 The 24-hour command ended with exit 124. Its complete terminal archive was recovered
-and independently hash-verified after the node stopped. [The terminal audit](results/terminal-reference-2026-10-17/audit.json)
+and independently hash-verified after the node stopped. [The terminal audit](https://github.com/Metta-AI/sugarscape/blob/da3646c4b7eaa9d66b13e5e2da946a57bdaaa222/replications/raimbault_2019/results/terminal-reference-2026-10-17/audit.json)
 checks all 411 sealed chunks and complete rows in eight interrupted chunks. The latter
 retain their missing exit receipts and are explicitly treated as prefixes, not successful jobs.
 
@@ -560,7 +560,7 @@ resolve the missing generated parameter combinations, or complete the study.
 
 ### Morphology projection and reference-marker scaling
 
-[The independent reconstruction](results/morphology-2026-10-17/audit.json) reads all
+[The independent reconstruction](https://github.com/Metta-AI/sugarscape/blob/da3646c4b7eaa9d66b13e5e2da946a57bdaaa222/replications/raimbault_2019/results/morphology-2026-10-17/audit.json) reads all
 2,727,994 generated records and recomputes the four mean morphology indicators for
 each of 50 landscapes. Min-max normalization, the principal-component rotation,
 and all 200 projected coordinates match the released data within 3.31e-14.
@@ -780,3 +780,7 @@ Shared runtime jars remain external, with dependency provenance in the receipt.
 [The broader cache qualification](results/vision-cache-strata-launch-2026-10-19) verifies all 15,000 static patch/radius sets against native geometry. The bounded 44-execution comparison now completes across all eleven population levels and eleven landscapes.
 
 [The complete broader comparison](results/vision-cache-strata-complete-2026-10-19) passes all 330,000 history-value and 91,905 original world-row comparisons, including random state. Median total process time falls from 130.1 to 102.4 seconds on the frozen sample. All source edits and archive members verify; full-grid performance and paper completion remain unproven.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/da3646c4b7eaa9d66b13e5e2da946a57bdaaa222/replications/raimbault_2019/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show da3646c4b7eaa9d66b13e5e2da946a57bdaaa222:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
