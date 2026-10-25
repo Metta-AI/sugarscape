@@ -54,7 +54,7 @@ older driver than this data directory. Record that provenance difference explici
 
 ## Archived numerical audit
 
-[The audit](results/archive-2026-10-17/audit.json) checks every expected condition and
+[The audit](https://github.com/Metta-AI/sugarscape/blob/e57d200c0ead5c6066b2d9c98045e3ada5f3f726/replications/richmond_2023/results/archive-2026-10-17/audit.json) checks every expected condition and
 step, unique keys, finite timings, population bounds, and all native aggregate means:
 
 | Experiment | Conditions | Per-condition observations |
@@ -219,7 +219,7 @@ receipt appeared. Its population-parity and counter results remain pending.
 
 ## Counter trace confirmed with population parity
 
-[The complete native diagnostic](results/resolution-observer-complete-2026-10-17/audit.json)
+[The complete native diagnostic](https://github.com/Metta-AI/sugarscape/blob/e57d200c0ead5c6066b2d9c98045e3ada5f3f726/replications/richmond_2023/results/resolution-observer-complete-2026-10-17/audit.json)
 exited successfully. All 100 population observations exactly match the unmodified
 qualification. The counter persists without reset through all 100 steps and ends
 at 106. Starting at step 3, its value is already at least nine; each of the remaining
@@ -482,3 +482,7 @@ The full captured-frame timing diagnostic (`results/frame-timing-diagnostic-2026
 [The pinned source audit](results/rng-allocation-source-audit-2026-10-18) finds matching seed initialization, sequence-offset formulas, thread indexing, and float-draw calls.
 It supplies no evidence for another seed-offset variant. Historical execution ordering and CUDA behavior remain unresolved.
 No new GPU experiment or paper completion is claimed.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/e57d200c0ead5c6066b2d9c98045e3ada5f3f726/replications/richmond_2023/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show e57d200c0ead5c6066b2d9c98045e3ada5f3f726:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
