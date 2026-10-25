@@ -1083,7 +1083,7 @@ audit hash. No original native output was changed.
 
 ## Exploratory culture composition on individual hills
 
-[Spatial audit](results/culture-spatial-regions-2026-10-17/audit.json) reads all 200
+[Spatial audit](https://github.com/Metta-AI/sugarscape/blob/bbf554a238f7c777e3257615047cb8b1fba6a9a9/replications/thaler_properties_2019/results/culture-spatial-regions-2026-10-17/audit.json) reads all 200
 completed trajectories from the published culture archives. It verifies compressed and
 uncompressed file hashes, seed coverage, final population totals, and region geometry.
 
@@ -1321,3 +1321,7 @@ eight-neighbor diffusion. No pollution-enabled candidate preset was recovered.
 The initial pollution offset alone is not a discrepancy because movement denominators
 account for it. These configuration findings prevent treating the diagnostic as
 an authenticated reproduction of appendix A.5; the study remains incomplete.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/bbf554a238f7c777e3257615047cb8b1fba6a9a9/replications/thaler_properties_2019/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show bbf554a238f7c777e3257615047cb8b1fba6a9a9:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
