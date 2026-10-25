@@ -245,7 +245,7 @@ Overlapping runs are paired validation data, not additional independent seeds. T
 
 ## Paired pacing audit and paper comparison gate
 
-[All19completed overlapping runs](results/pacing-overlap-2026-10-16/audit.json) match exactly across all ten native output files.
+[All19completed overlapping runs](https://github.com/Metta-AI/sugarscape/blob/bcddb198efdd372fbc16f168cf3229da0836a488/replications/buzing_2005/results/pacing-overlap-2026-10-16/audit.json) match exactly across all ten native output files.
 The separately audited accelerated prefix covers18runs,252,000scalar observations, and36,000harvest-count records.
 These snapshots were taken at different instants; paired duplicates do not increase unique seed coverage.
 This historical prefix is superseded by the complete ensemble audit below.
@@ -261,7 +261,7 @@ No automatic paper verdict follows from the table because historical-source and 
 
 ## Complete reconstruction ensemble
 
-[The complete audit](results/complete-ensemble-2026-10-16/audit.json) validates all 150 runs, 2,100,000 scalar observations, and 300,000 harvest-count records.
+[The complete audit](https://github.com/Metta-AI/sugarscape/blob/bcddb198efdd372fbc16f168cf3229da0836a488/replications/buzing_2005/results/complete-ensemble-2026-10-16/audit.json) validates all 150 runs, 2,100,000 scalar observations, and 300,000 harvest-count records.
 Each run completed 2,000 cycles. The terminal ledger reports exit code zero and 150 completed runs.
 The compressed evidence archive retains every audited native output, configuration, manifest, and event log; its complete contents were verified against the audit snapshot.
 Earlier prefix snapshots remain historical evidence, not additional independent runs.
@@ -398,3 +398,7 @@ The retained provenance archive includes paced manifests, configurations, logs, 
 Native output bytes are already retained in the complete accelerated evidence archive, and their pairwise hashes are recorded here.
 Original paced files remain preserved externally. These paired controls add no independent seeds and establish no historical-source equivalence.
 Pacing therefore does not explain the observed reconstruction discrepancies for this grid. Reproduction, inheritance, and historical protocol questions remain unresolved.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/bcddb198efdd372fbc16f168cf3229da0836a488/replications/buzing_2005/results) retains raw trajectories and verbose diagnostics. Summaries, figures, source inputs, and analysis code remain tracked. Restore required analysis inputs with `git show bcddb198efdd372fbc16f168cf3229da0836a488:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path. Existing copies and Git history are preserved.
