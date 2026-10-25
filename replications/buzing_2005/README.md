@@ -245,7 +245,7 @@ Overlapping runs are paired validation data, not additional independent seeds. N
 
 ## Paired pacing audit and paper comparison gate
 
-[All19completed overlapping runs](results/pacing-overlap-2026-10-16/audit.json) match exactly across all ten native output files.
+[All19completed overlapping runs](https://github.com/Metta-AI/sugarscape/blob/e952b1a3c3cb5749cea08bafd3a63e734535e855/replications/buzing_2005/results/pacing-overlap-2026-10-16/audit.json) match exactly across all ten native output files.
 The separately audited accelerated prefix covers18runs,252,000scalar observations, and36,000harvest-count records.
 These snapshots were taken at different instants; paired duplicates do not increase unique seed coverage.
 The accelerated ensemble remains in progress.
@@ -261,7 +261,7 @@ No automatic paper verdict follows from the table because historical-source and 
 
 ## Complete reconstruction ensemble
 
-[The complete audit](results/complete-ensemble-2026-10-16/audit.json) validates all 150 runs, 2,100,000 scalar observations, and 300,000 harvest-count records.
+[The complete audit](https://github.com/Metta-AI/sugarscape/blob/e952b1a3c3cb5749cea08bafd3a63e734535e855/replications/buzing_2005/results/complete-ensemble-2026-10-16/audit.json) validates all 150 runs, 2,100,000 scalar observations, and 300,000 harvest-count records.
 Each run completed 2,000 cycles. The terminal ledger reports exit code zero and 150 completed runs.
 The compressed evidence archive retains every audited native output, configuration, manifest, and event log; its complete contents were verified against the audit snapshot.
 Earlier prefix snapshots remain historical evidence, not additional independent runs.
@@ -353,3 +353,7 @@ A frozen150-run strict-sugar ensemble is now running with the same grid as the o
 It requires exact equality to baseline source, unchanged configurations, valid raw data, and positive pre-halving sugar for every birth.
 Its first seven pairs pass196,000scalar observations and33,591births. The snapshot is explicitly incomplete.
 No rule or parameter was selected by optimizing agreement with the publication.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/e952b1a3c3cb5749cea08bafd3a63e734535e855/replications/buzing_2005/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show e952b1a3c3cb5749cea08bafd3a63e734535e855:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.

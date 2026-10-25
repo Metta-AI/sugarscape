@@ -61,7 +61,7 @@ The first grid is complete and independently audited below; scientific interpret
 
 ## Complete grid and initialization checks
 
-[The complete audit](results/complete-2026-10-16/audit.json) validates 200 runs, 700,000 scalar observations, and 182,401 births.
+[The complete audit](https://github.com/Metta-AI/sugarscape/blob/e952b1a3c3cb5749cea08bafd3a63e734535e855/replications/buzing_2003/results/complete-2026-10-16/audit.json) validates 200 runs, 700,000 scalar observations, and 182,401 births.
 All populations become extinct between cycles 58 and 337, across all four declared policies and all five thresholds.
 This fails to reproduce the reported survival pattern. It remains unresolved because historical source, reproduction, and scheduling fidelity are not established.
 Zero late population variation after extinction must not be interpreted as beneficial stabilization.
@@ -121,3 +121,7 @@ The recovered schedule executes redistribution, then cell growth, then agent act
 Consequently, seeds harvested during a cycle wait for the next cycle's redistribution when `reseedPerIteration=true`.
 This accounts for the observed bin contents; it does not establish that this newer schedule matches the historical experiment.
 No seed loss or plant-accounting discrepancy appears at the checked boundaries. Intermediate-stage behavior and the survival mismatch remain unresolved.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/e952b1a3c3cb5749cea08bafd3a63e734535e855/replications/buzing_2003/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show e952b1a3c3cb5749cea08bafd3a63e734535e855:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
