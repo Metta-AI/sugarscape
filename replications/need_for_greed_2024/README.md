@@ -164,3 +164,7 @@ Both commands require the pinned author artifacts documented above. Each run pre
 All baseline trajectories are verified. Execute or reuse the remaining sweep inputs to cover the declared method and parameter range. Complete the Table IV and Figures 2–6 comparisons with declared aggregation and denominator conventions. Numerical agreement is not required for method-reproduction completion; unresolved implementation choices still require investigation. Investigate discrepancies against the released code and original protocol before assigning a negative replication result.
 
 Historical boxplot aggregation remains unresolved. The paper’s printed Table IV row 0.81–0.85 sums to 100.2%; the source audit preserves it without correction. Full paper completion requires the complete declared experiment and qualified comparisons, not this subset.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/32d24ff439a3f5ee74e6650b880bfb2187a5ea7f/replications/need_for_greed_2024/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 32d24ff439a3f5ee74e6650b880bfb2187a5ea7f:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
