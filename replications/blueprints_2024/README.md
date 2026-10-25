@@ -338,7 +338,7 @@ The deposited 100-seed schedule differs from the claimed 500-seed paper schedule
 
 ## Complete archived egoistic 500-step group
 
-[The full-group native audit](results/runtime-egoistic500-complete-2026-10-17/audit.json) validates all 100 original egoistic inputs and 26,129 observations after the producer exits zero.
+[The full-group native audit](https://github.com/Metta-AI/sugarscape/blob/8fae88f4b1ac877cce8b4da86017bdecc742796d/replications/blueprints_2024/results/runtime-egoistic500-complete-2026-10-17/audit.json) validates all 100 original egoistic inputs and 26,129 observations after the producer exits zero.
 The generic auditor's `--require-group` success path now passes on a complete real group, superseding the earlier unexercised-success-path limitation.
 Outcomes are 69 extinctions, two surviving populations below 250, and 29 above 250; none ends at exactly 250.
 All original native files, the completion ledger and archive checksum are retained.
@@ -347,7 +347,7 @@ The Bentham group remains active. These archived 100-seed results do not establi
 
 ## Bentham runtime prefix
 
-The [sealed 33-condition prefix](results/runtime-bentham500-prefix-2026-10-17/audit.json) adds 16,533 independently checked observations from the original 500-step runtime archive.
+The [sealed 33-condition prefix](https://github.com/Metta-AI/sugarscape/blob/8fae88f4b1ac877cce8b4da86017bdecc742796d/replications/blueprints_2024/results/runtime-bentham500-prefix-2026-10-17/audit.json) adds 16,533 independently checked observations from the original 500-step runtime archive.
 Every retained run reaches step 500 with population above 250; none equals the initial population.
 The native files, frozen ledger, configurations, source hashes, and runner are retained in a portable archive.
 A second audit after extraction verifies the archived evidence against its original execution paths.
@@ -357,7 +357,7 @@ The Bentham producer remains active for the remaining conditions; this prefix do
 
 ## Complete raw 5,000-step runtime group and disjoint continuations
 
-[The full native raw-Sugarscape group](results/runtime-raw5000-complete-2026-10-17/audit.json) passes all 100 original 5,000-step conditions and 186,504 observations. Outcomes are 65 extinctions, four surviving populations below 250, and 31 above 250; none equals 250. The 31,269,889-byte archive retains complete native files, original configurations, hashes, and terminal receipts. Linux paths are preserved in the manifest and explicitly supplied to the portable audit.
+[The full native raw-Sugarscape group](https://github.com/Metta-AI/sugarscape/blob/8fae88f4b1ac877cce8b4da86017bdecc742796d/replications/blueprints_2024/results/runtime-raw5000-complete-2026-10-17/audit.json) passes all 100 original 5,000-step conditions and 186,504 observations. Outcomes are 65 extinctions, four surviving populations below 250, and 31 above 250; none equals 250. The 31,269,889-byte archive retains complete native files, original configurations, hashes, and terminal receipts. Linux paths are preserved in the manifest and explicitly supplied to the portable audit.
 
 The Bentham 500-step predecessor reached its two-hour cap with exactly 87 complete conditions and a partial condition at index 87. Its [terminal receipt, traceback, and fresh prefix audit](results/runtime-continuations-2026-10-17) are retained. All 87 completed runs reach step 500 above the initial population, covering 43,587 observations. After confirming both predecessor processes absent, a new bounded output directory continues only indices `[87,100)`. The interrupted original files are untouched.
 
@@ -599,7 +599,7 @@ Only the raw homogeneous model is covered; this does not complete the paper.
 ## Completed local runtime recovery interval
 
 The recovered altruistic 5,000-step interval `[1,12)` completed all 11 assigned inputs
-with zero exit status. The [full-interval audit](results/runtime-local-recovery-complete-2026-10-17/audit.json)
+with zero exit status. The [full-interval audit](https://github.com/Metta-AI/sugarscape/blob/8fae88f4b1ac877cce8b4da86017bdecc742796d/replications/blueprints_2024/results/runtime-local-recovery-complete-2026-10-17/audit.json)
 validates 30,869 observations: five extinct populations and six at or above initial population.
 The earlier two- and eight-input prefixes are contained exactly and receive no additional credit.
 
@@ -1191,3 +1191,7 @@ Both producers continue; these completion-order prefixes do not establish whole-
 [Author death-plot history](results/death-plot-history-2026-10-19) finds aging deaths added in v2024.3. Executing that unmodified helper on all 500 heterogeneous50 trajectories gives temporal mean 1.559% and median 1.540%, still outside Figure 20’s ink interval. R verifies all 5,001 rates. This later homogeneous plotting helper does not establish the historical supplementary statistic.
 
 [Extinction-row and zero-padding diagnostics](results/heterogeneous50-death-padding-2026-10-19) retain all 500 heterogeneous-50 seeds. All-cause fixed-horizon medians fall to 1.49675–1.49705%, still above Figure 20’s 1.20415–1.39985% ink interval. Independent R verifies all twelve convention medians; zero padding alone does not resolve the discrepancy.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/8fae88f4b1ac877cce8b4da86017bdecc742796d/replications/blueprints_2024/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 8fae88f4b1ac877cce8b4da86017bdecc742796d:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.

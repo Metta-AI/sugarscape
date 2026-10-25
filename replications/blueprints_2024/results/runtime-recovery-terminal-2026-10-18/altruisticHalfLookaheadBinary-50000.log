@@ -1,9 +1,0 @@
-0 50000-altruisticHalfLookaheadBinary1071049487305188627.config 0
-1 50000-altruisticHalfLookaheadBinary1134302205739354507.config 508
-2 50000-altruisticHalfLookaheadBinary1312465699454735571.config 0
-Traceback (most recent call last):
-  File "/root/sugarscape/blueprints-runtime-recovery-001/source/run_runtime.py", line 97, in <module>
-    result.check_returncode()
-  File "/root/.local/share/uv/python/cpython-3.11.14-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 502, in check_returncode
-    raise CalledProcessError(self.returncode, self.args, self.stdout,
-subprocess.CalledProcessError: Command '['/root/sugarscape/blueprints-runtime-recovery-001/source/venv/bin/python', '/root/sugarscape/blueprints-runtime-recovery-001/source/engine/sugarscape.py', '--conf', '/root/sugarscape/blueprints-runtime-recovery-003/runs/altruisticHalfLookaheadBinary-50000/50000-altruisticHalfLookaheadBinary1626428329783443257/config.json']' died with <Signals.SIGKILL: 9>.
