@@ -1,781 +1,0 @@
-Loading required package: abc.data
-Loading required package: nnet
-Loading required package: quantreg
-Loading required package: SparseM
-Loading required package: MASS
-Loading required package: locfit
-locfit 1.5-9.12 	 2025-03-05
-Loading required package: abind
-Loading required package: parallel
-Loading required package: plyr
-Loading required package: Hmisc
-
-Attaching package: ‘Hmisc’
-
-The following objects are masked from ‘package:plyr’:
-
-    is.discrete, summarize
-
-The following object is masked from ‘package:quantreg’:
-
-    latex
-
-The following objects are masked from ‘package:base’:
-
-    format.pval, units
-
-
- **********************************************
- abctools: A package with tools for ABC inference
-
- --- Written by Matt Nunes and Dennis Prangle---
-   Current package version:  1.1.8  ( 2025-07-25 ) 
-
- 
- **********************************************
- 
- abctools 1.1.8 loaded
-
-Loading required package: R.oo
-Loading required package: R.methodsS3
-R.methodsS3 v1.8.2 (2022-06-13 22:00:14 UTC) successfully loaded. See ?R.methodsS3 for help.
-R.oo v1.27.1 (2025-05-02 21:00:05 UTC) successfully loaded. See ?R.oo for help.
-
-Attaching package: ‘R.oo’
-
-The following object is masked from ‘package:R.methodsS3’:
-
-    throw
-
-The following objects are masked from ‘package:methods’:
-
-    getClasses, getMethods
-
-The following objects are masked from ‘package:base’:
-
-    attach, detach, load, save
-
-R.utils v2.13.0 (2025-02-24 21:20:02 UTC) successfully loaded. See ?R.utils for help.
-
-Attaching package: ‘R.utils’
-
-The following object is masked from ‘package:Hmisc’:
-
-    capitalize
-
-The following object is masked from ‘package:utils’:
-
-    timestamp
-
-The following objects are masked from ‘package:base’:
-
-    cat, commandArgs, getOption, isOpen, nullfile, parse, use, warnings
-
-Loading required package: randomForest
-randomForest 4.7-1.2
-Type rfNews() to see new features/changes/bug fixes.
-Loading required package: ggplot2
-
-Attaching package: ‘ggplot2’
-
-The following object is masked from ‘package:randomForest’:
-
-    margin
-
-Loading required package: lattice
-
-Attaching package: ‘ranger’
-
-The following object is masked from ‘package:randomForest’:
-
-    importance
-
-
-Attaching package: ‘e1071’
-
-The following object is masked from ‘package:ggplot2’:
-
-    element
-
-The following object is masked from ‘package:Hmisc’:
-
-    impute
-
-
-Attaching package: ‘rsample’
-
-The following object is masked from ‘package:e1071’:
-
-    permutations
-
-The following object is masked from ‘package:caret’:
-
-    calibration
-
-── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
-✔ dplyr     1.2.1     ✔ readr     2.2.0
-✔ forcats   1.0.1     ✔ stringr   1.6.0
-✔ lubridate 1.9.5     ✔ tibble    3.3.1
-✔ purrr     1.2.2     ✔ tidyr     1.3.2
-── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-✖ dplyr::arrange()            masks plyr::arrange()
-✖ dplyr::combine()            masks randomForest::combine()
-✖ purrr::compact()            masks plyr::compact()
-✖ dplyr::count()              masks plyr::count()
-✖ dplyr::desc()               masks plyr::desc()
-✖ e1071::element()            masks ggplot2::element()
-✖ tidyr::extract()            masks R.utils::extract()
-✖ dplyr::filter()             masks stats::filter()
-✖ dplyr::lag()                masks stats::lag()
-✖ purrr::lift()               masks caret::lift()
-✖ ggplot2::margin()           masks randomForest::margin()
-✖ dplyr::mutate()             masks plyr::mutate()
-✖ purrr::none()               masks locfit::none()
-✖ dplyr::progress_estimated() masks knitrProgressBar::progress_estimated()
-✖ dplyr::rename()             masks plyr::rename()
-✖ dplyr::select()             masks MASS::select()
-✖ dplyr::src()                masks Hmisc::src()
-✖ dplyr::summarise()          masks plyr::summarise()
-✖ dplyr::summarize()          masks Hmisc::summarize(), plyr::summarize()
-ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-|                                                      |  0% ~49 s remaining    |                                                      |  1% ~23 s remaining    |=                                                     |  2% ~22 s remaining    |=                                                     |  3% ~19 s remaining    |=                                                     |  4% ~16 s remaining    |==                                                    |  4% ~15 s remaining    |==                                                    |  5% ~14 s remaining    |===                                                   |  6% ~13 s remaining    |===                                                   |  7% ~13 s remaining    |====                                                  |  8% ~12 s remaining    |====                                                  |  8% ~12 s remaining    |====                                                  |  9% ~11 s remaining    |=====                                                 | 10% ~11 s remaining    |=====                                                 | 11% ~11 s remaining    |======                                                | 12% ~10 s remaining    |======                                                | 12% ~10 s remaining    |=======                                               | 13% ~10 s remaining    |=======                                               | 14% ~10 s remaining    |=======                                               | 15% ~10 s remaining    |========                                              | 16% ~9 s remaining     |========                                              | 16% ~9 s remaining     |=========                                             | 17% ~9 s remaining     |=========                                             | 18% ~9 s remaining     |==========                                            | 19% ~9 s remaining     |==========                                            | 20% ~9 s remaining     |===========                                           | 20% ~9 s remaining     |===========                                           | 21% ~9 s remaining     |===========                                           | 22% ~9 s remaining     |============                                          | 23% ~8 s remaining     |============                                          | 24% ~8 s remaining     |=============                                         | 24% ~8 s remaining     |=============                                         | 25% ~8 s remaining     |==============                                        | 26% ~8 s remaining     |==============                                        | 27% ~8 s remaining     |==============                                        | 28% ~8 s remaining     |===============                                       | 28% ~8 s remaining     |===============                                       | 29% ~8 s remaining     |================                                      | 30% ~8 s remaining     |================                                      | 31% ~7 s remaining     |=================                                     | 32% ~7 s remaining     |=================                                     | 32% ~7 s remaining     |=================                                     | 33% ~7 s remaining     |==================                                    | 34% ~7 s remaining     |==================                                    | 35% ~7 s remaining     |===================                                   | 36% ~7 s remaining     |===================                                   | 36% ~7 s remaining     |===================                                   | 37% ~7 s remaining     |====================                                  | 38% ~7 s remaining     |====================                                  | 38% ~6 s remaining     |=====================                                 | 39% ~6 s remaining     |=====================                                 | 40% ~6 s remaining     |=====================                                 | 40% ~6 s remaining     |======================                                | 41% ~6 s remaining     |======================                                | 42% ~6 s remaining     |=======================                               | 43% ~6 s remaining     |=======================                               | 44% ~6 s remaining     |=======================                               | 44% ~6 s remaining     |========================                              | 45% ~6 s remaining     |========================                              | 46% ~6 s remaining     |=========================                             | 47% ~6 s remaining     |=========================                             | 48% ~6 s remaining     |==========================                            | 48% ~5 s remaining     |==========================                            | 49% ~5 s remaining     |===========================                           | 50% ~5 s remaining     |===========================                           | 51% ~5 s remaining     |===========================                           | 52% ~5 s remaining     |============================                          | 52% ~5 s remaining     |============================                          | 53% ~5 s remaining     |=============================                         | 54% ~5 s remaining     |=============================                         | 55% ~5 s remaining     |==============================                        | 56% ~5 s remaining     |==============================                        | 56% ~5 s remaining     |==============================                        | 57% ~4 s remaining     |===============================                       | 58% ~4 s remaining     |===============================                       | 59% ~4 s remaining     |================================                      | 60% ~4 s remaining     |================================                      | 60% ~4 s remaining     |=================================                     | 61% ~4 s remaining     |=================================                     | 62% ~4 s remaining     |=================================                     | 63% ~4 s remaining     |==================================                    | 64% ~4 s remaining     |==================================                    | 64% ~4 s remaining     |===================================                   | 65% ~4 s remaining     |===================================                   | 66% ~4 s remaining     |===================================                   | 66% ~3 s remaining     |====================================                  | 67% ~3 s remaining     |====================================                  | 68% ~3 s remaining     |====================================                  | 68% ~3 s remaining     |=====================================                 | 69% ~3 s remaining     |=====================================                 | 70% ~3 s remaining     |=====================================                 | 70% ~3 s remaining     |======================================                | 71% ~3 s remaining     |======================================                | 72% ~3 s remaining     |=======================================               | 72% ~3 s remaining     |=======================================               | 73% ~3 s remaining     |=======================================               | 74% ~3 s remaining     |========================================              | 75% ~3 s remaining     |========================================              | 76% ~3 s remaining     |=========================================             | 76% ~2 s remaining     |=========================================             | 77% ~2 s remaining     |==========================================            | 78% ~2 s remaining     |==========================================            | 79% ~2 s remaining     |==========================================            | 80% ~2 s remaining     |===========================================           | 80% ~2 s remaining     |===========================================           | 81% ~2 s remaining     |============================================          | 82% ~2 s remaining     |============================================          | 83% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |==============================================        | 85% ~2 s remaining     |==============================================        | 86% ~1 s remaining     |==============================================        | 87% ~1 s remaining     |===============================================       | 88% ~1 s remaining     |===============================================       | 88% ~1 s remaining     |================================================      | 89% ~1 s remaining     |================================================      | 90% ~1 s remaining     |=================================================     | 91% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |==================================================    | 93% ~1 s remaining     |==================================================    | 94% ~1 s remaining     |===================================================   | 95% ~1 s remaining     |===================================================   | 95% ~0 s remaining     |===================================================   | 96% ~0 s remaining     |====================================================  | 97% ~0 s remaining     |====================================================  | 97% ~0 s remaining     |====================================================  | 98% ~0 s remaining     |====================================================  | 98% ~0 s remaining     |===================================================== | 98% ~0 s remaining     |===================================================== | 99% ~0 s remaining     |======================================================|100% ~0 s remaining     Completed fold 1 for rejection 1250 
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-|                                                      |  1% ~10 s remaining    |                                                      |  2% ~10 s remaining    |=                                                     |  2% ~10 s remaining    |=                                                     |  3% ~9 s remaining     |==                                                    |  4% ~9 s remaining     |==                                                    |  5% ~9 s remaining     |===                                                   |  6% ~9 s remaining     |===                                                   |  6% ~9 s remaining     |===                                                   |  7% ~9 s remaining     |====                                                  |  8% ~9 s remaining     |====                                                  |  8% ~10 s remaining    |====                                                  |  9% ~10 s remaining    |=====                                                 | 10% ~10 s remaining    |=====                                                 | 11% ~9 s remaining     |======                                                | 12% ~9 s remaining     |======                                                | 12% ~9 s remaining     |=======                                               | 13% ~9 s remaining     |=======                                               | 14% ~10 s remaining    |=======                                               | 14% ~10 s remaining    |=======                                               | 15% ~9 s remaining     |========                                              | 16% ~9 s remaining     |========                                              | 16% ~9 s remaining     |=========                                             | 17% ~9 s remaining     |=========                                             | 18% ~9 s remaining     |==========                                            | 19% ~9 s remaining     |==========                                            | 19% ~9 s remaining     |==========                                            | 20% ~9 s remaining     |===========                                           | 20% ~9 s remaining     |===========                                           | 21% ~9 s remaining     |===========                                           | 22% ~9 s remaining     |============                                          | 22% ~9 s remaining     |============                                          | 23% ~9 s remaining     |============                                          | 24% ~9 s remaining     |=============                                         | 25% ~8 s remaining     |=============                                         | 26% ~8 s remaining     |==============                                        | 26% ~8 s remaining     |==============                                        | 27% ~8 s remaining     |==============                                        | 28% ~8 s remaining     |===============                                       | 28% ~8 s remaining     |===============                                       | 29% ~8 s remaining     |===============                                       | 30% ~8 s remaining     |================                                      | 30% ~8 s remaining     |================                                      | 31% ~8 s remaining     |=================                                     | 32% ~8 s remaining     |=================                                     | 33% ~7 s remaining     |=================                                     | 33% ~7 s remaining     |==================                                    | 34% ~7 s remaining     |==================                                    | 34% ~7 s remaining     |==================                                    | 35% ~7 s remaining     |===================                                   | 36% ~7 s remaining     |===================                                   | 36% ~7 s remaining     |====================                                  | 37% ~7 s remaining     |====================                                  | 38% ~7 s remaining     |====================                                  | 39% ~7 s remaining     |=====================                                 | 40% ~7 s remaining     |=====================                                 | 40% ~7 s remaining     |======================                                | 41% ~6 s remaining     |======================                                | 42% ~6 s remaining     |=======================                               | 43% ~6 s remaining     |=======================                               | 44% ~6 s remaining     |=======================                               | 44% ~6 s remaining     |========================                              | 45% ~6 s remaining     |========================                              | 46% ~6 s remaining     |=========================                             | 47% ~6 s remaining     |=========================                             | 48% ~6 s remaining     |=========================                             | 48% ~6 s remaining     |==========================                            | 49% ~6 s remaining     |==========================                            | 50% ~6 s remaining     |===========================                           | 50% ~5 s remaining     |===========================                           | 51% ~5 s remaining     |============================                          | 52% ~5 s remaining     |============================                          | 53% ~5 s remaining     |============================                          | 54% ~5 s remaining     |=============================                         | 54% ~5 s remaining     |=============================                         | 55% ~5 s remaining     |==============================                        | 56% ~5 s remaining     |==============================                        | 57% ~5 s remaining     |===============================                       | 58% ~5 s remaining     |===============================                       | 58% ~4 s remaining     |===============================                       | 59% ~4 s remaining     |================================                      | 60% ~4 s remaining     |================================                      | 61% ~4 s remaining     |=================================                     | 62% ~4 s remaining     |=================================                     | 62% ~4 s remaining     |==================================                    | 63% ~4 s remaining     |==================================                    | 64% ~4 s remaining     |==================================                    | 65% ~4 s remaining     |===================================                   | 66% ~4 s remaining     |===================================                   | 66% ~4 s remaining     |====================================                  | 67% ~3 s remaining     |====================================                  | 68% ~3 s remaining     |=====================================                 | 69% ~3 s remaining     |=====================================                 | 70% ~3 s remaining     |======================================                | 70% ~3 s remaining     |======================================                | 71% ~3 s remaining     |======================================                | 72% ~3 s remaining     |=======================================               | 73% ~3 s remaining     |=======================================               | 74% ~3 s remaining     |========================================              | 74% ~3 s remaining     |========================================              | 75% ~3 s remaining     |=========================================             | 76% ~3 s remaining     |=========================================             | 77% ~2 s remaining     |=========================================             | 78% ~2 s remaining     |==========================================            | 78% ~2 s remaining     |==========================================            | 79% ~2 s remaining     |==========================================            | 80% ~2 s remaining     |===========================================           | 80% ~2 s remaining     |===========================================           | 81% ~2 s remaining     |============================================          | 82% ~2 s remaining     |============================================          | 83% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |==============================================        | 85% ~2 s remaining     |==============================================        | 86% ~1 s remaining     |==============================================        | 87% ~1 s remaining     |===============================================       | 88% ~1 s remaining     |===============================================       | 88% ~1 s remaining     |================================================      | 89% ~1 s remaining     |================================================      | 90% ~1 s remaining     |=================================================     | 91% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |==================================================    | 93% ~1 s remaining     |==================================================    | 94% ~1 s remaining     |===================================================   | 95% ~1 s remaining     |===================================================   | 96% ~0 s remaining     |====================================================  | 96% ~0 s remaining     |====================================================  | 97% ~0 s remaining     |====================================================  | 98% ~0 s remaining     |===================================================== | 99% ~0 s remaining     |===================================================== |100% ~0 s remaining     Completed fold 2 for rejection 1250 
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-|                                                      |  1% ~11 s remaining    |                                                      |  2% ~10 s remaining    |=                                                     |  2% ~10 s remaining    |=                                                     |  3% ~10 s remaining    |==                                                    |  4% ~10 s remaining    |==                                                    |  5% ~9 s remaining     |===                                                   |  6% ~9 s remaining     |===                                                   |  6% ~9 s remaining     |===                                                   |  7% ~9 s remaining     |====                                                  |  8% ~9 s remaining     |====                                                  |  9% ~9 s remaining     |=====                                                 | 10% ~9 s remaining     |=====                                                 | 10% ~9 s remaining     |======                                                | 11% ~10 s remaining    |======                                                | 12% ~9 s remaining     |======                                                | 13% ~9 s remaining     |=======                                               | 14% ~9 s remaining     |=======                                               | 14% ~9 s remaining     |========                                              | 15% ~9 s remaining     |========                                              | 16% ~9 s remaining     |=========                                             | 17% ~9 s remaining     |=========                                             | 18% ~8 s remaining     |=========                                             | 18% ~8 s remaining     |==========                                            | 19% ~8 s remaining     |==========                                            | 20% ~8 s remaining     |===========                                           | 21% ~8 s remaining     |===========                                           | 22% ~8 s remaining     |============                                          | 22% ~8 s remaining     |============                                          | 23% ~8 s remaining     |============                                          | 24% ~8 s remaining     |=============                                         | 25% ~8 s remaining     |=============                                         | 26% ~8 s remaining     |==============                                        | 26% ~7 s remaining     |==============                                        | 27% ~7 s remaining     |===============                                       | 28% ~7 s remaining     |===============                                       | 29% ~7 s remaining     |===============                                       | 30% ~7 s remaining     |================                                      | 30% ~7 s remaining     |================                                      | 31% ~7 s remaining     |=================                                     | 32% ~7 s remaining     |=================                                     | 33% ~7 s remaining     |==================                                    | 34% ~7 s remaining     |==================                                    | 34% ~7 s remaining     |===================                                   | 35% ~6 s remaining     |===================                                   | 36% ~6 s remaining     |===================                                   | 37% ~6 s remaining     |====================                                  | 38% ~6 s remaining     |====================                                  | 38% ~6 s remaining     |=====================                                 | 39% ~6 s remaining     |=====================                                 | 40% ~6 s remaining     |======================                                | 41% ~6 s remaining     |======================                                | 42% ~6 s remaining     |======================                                | 42% ~6 s remaining     |=======================                               | 43% ~6 s remaining     |=======================                               | 44% ~6 s remaining     |========================                              | 45% ~6 s remaining     |========================                              | 46% ~5 s remaining     |=========================                             | 46% ~5 s remaining     |=========================                             | 47% ~5 s remaining     |=========================                             | 48% ~5 s remaining     |==========================                            | 48% ~5 s remaining     |==========================                            | 49% ~5 s remaining     |===========================                           | 50% ~5 s remaining     |===========================                           | 51% ~5 s remaining     |===========================                           | 52% ~5 s remaining     |============================                          | 52% ~5 s remaining     |============================                          | 53% ~5 s remaining     |=============================                         | 54% ~5 s remaining     |=============================                         | 55% ~5 s remaining     |==============================                        | 56% ~4 s remaining     |==============================                        | 56% ~4 s remaining     |==============================                        | 57% ~4 s remaining     |===============================                       | 58% ~4 s remaining     |===============================                       | 58% ~4 s remaining     |===============================                       | 59% ~4 s remaining     |================================                      | 60% ~4 s remaining     |================================                      | 61% ~4 s remaining     |=================================                     | 62% ~4 s remaining     |=================================                     | 62% ~4 s remaining     |==================================                    | 63% ~4 s remaining     |==================================                    | 64% ~4 s remaining     |==================================                    | 65% ~4 s remaining     |===================================                   | 66% ~3 s remaining     |===================================                   | 66% ~3 s remaining     |====================================                  | 67% ~3 s remaining     |====================================                  | 68% ~3 s remaining     |=====================================                 | 69% ~3 s remaining     |=====================================                 | 70% ~3 s remaining     |======================================                | 70% ~3 s remaining     |======================================                | 71% ~3 s remaining     |======================================                | 72% ~3 s remaining     |=======================================               | 72% ~3 s remaining     |=======================================               | 73% ~3 s remaining     |=======================================               | 74% ~3 s remaining     |========================================              | 75% ~3 s remaining     |========================================              | 76% ~2 s remaining     |=========================================             | 76% ~2 s remaining     |=========================================             | 77% ~2 s remaining     |==========================================            | 78% ~2 s remaining     |==========================================            | 79% ~2 s remaining     |==========================================            | 80% ~2 s remaining     |===========================================           | 80% ~2 s remaining     |===========================================           | 81% ~2 s remaining     |============================================          | 82% ~2 s remaining     |============================================          | 83% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |==============================================        | 85% ~1 s remaining     |==============================================        | 86% ~1 s remaining     |==============================================        | 87% ~1 s remaining     |===============================================       | 88% ~1 s remaining     |===============================================       | 88% ~1 s remaining     |================================================      | 89% ~1 s remaining     |================================================      | 90% ~1 s remaining     |=================================================     | 91% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |==================================================    | 93% ~1 s remaining     |==================================================    | 94% ~1 s remaining     |===================================================   | 95% ~1 s remaining     |===================================================   | 96% ~0 s remaining     |====================================================  | 96% ~0 s remaining     |====================================================  | 97% ~0 s remaining     |====================================================  | 98% ~0 s remaining     |===================================================== | 99% ~0 s remaining     |===================================================== | 99% ~0 s remaining     |===================================================== |100% ~0 s remaining     Completed fold 3 for rejection 1250 
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-|                                                      |  1% ~10 s remaining    |                                                      |  2% ~10 s remaining    |=                                                     |  2% ~10 s remaining    |=                                                     |  3% ~10 s remaining    |==                                                    |  4% ~10 s remaining    |==                                                    |  5% ~10 s remaining    |==                                                    |  5% ~12 s remaining    |===                                                   |  6% ~11 s remaining    |===                                                   |  7% ~11 s remaining    |===                                                   |  7% ~14 s remaining    |====                                                  |  8% ~13 s remaining    |====                                                  |  9% ~12 s remaining    |=====                                                 | 10% ~12 s remaining    |=====                                                 | 10% ~12 s remaining    |======                                                | 11% ~11 s remaining    |======                                                | 12% ~11 s remaining    |======                                                | 13% ~11 s remaining    |=======                                               | 14% ~11 s remaining    |=======                                               | 14% ~10 s remaining    |========                                              | 15% ~10 s remaining    |========                                              | 16% ~10 s remaining    |=========                                             | 17% ~10 s remaining    |=========                                             | 18% ~10 s remaining    |=========                                             | 18% ~9 s remaining     |==========                                            | 19% ~9 s remaining     |==========                                            | 20% ~9 s remaining     |===========                                           | 21% ~9 s remaining     |===========                                           | 22% ~9 s remaining     |============                                          | 22% ~9 s remaining     |============                                          | 23% ~9 s remaining     |============                                          | 24% ~8 s remaining     |=============                                         | 25% ~8 s remaining     |=============                                         | 25% ~8 s remaining     |==============                                        | 26% ~8 s remaining     |==============                                        | 27% ~8 s remaining     |==============                                        | 28% ~8 s remaining     |===============                                       | 28% ~8 s remaining     |===============                                       | 29% ~8 s remaining     |================                                      | 30% ~8 s remaining     |================                                      | 31% ~8 s remaining     |=================                                     | 32% ~7 s remaining     |=================                                     | 32% ~7 s remaining     |=================                                     | 33% ~7 s remaining     |==================                                    | 34% ~7 s remaining     |==================                                    | 35% ~7 s remaining     |===================                                   | 36% ~7 s remaining     |===================                                   | 36% ~7 s remaining     |====================                                  | 37% ~7 s remaining     |====================                                  | 38% ~7 s remaining     |====================                                  | 39% ~7 s remaining     |=====================                                 | 40% ~7 s remaining     |=====================                                 | 40% ~6 s remaining     |======================                                | 41% ~6 s remaining     |======================                                | 42% ~6 s remaining     |=======================                               | 43% ~6 s remaining     |=======================                               | 44% ~6 s remaining     |=======================                               | 44% ~6 s remaining     |========================                              | 45% ~6 s remaining     |========================                              | 46% ~6 s remaining     |=========================                             | 47% ~6 s remaining     |=========================                             | 48% ~6 s remaining     |==========================                            | 48% ~5 s remaining     |==========================                            | 49% ~5 s remaining     |===========================                           | 50% ~5 s remaining     |===========================                           | 51% ~5 s remaining     |===========================                           | 52% ~5 s remaining     |============================                          | 52% ~5 s remaining     |============================                          | 53% ~5 s remaining     |=============================                         | 54% ~5 s remaining     |=============================                         | 55% ~5 s remaining     |==============================                        | 56% ~5 s remaining     |==============================                        | 56% ~5 s remaining     |==============================                        | 57% ~4 s remaining     |===============================                       | 58% ~4 s remaining     |===============================                       | 59% ~4 s remaining     |===============================                       | 59% ~4 s remaining     |================================                      | 60% ~4 s remaining     |================================                      | 60% ~4 s remaining     |=================================                     | 61% ~4 s remaining     |=================================                     | 62% ~4 s remaining     |=================================                     | 63% ~4 s remaining     |==================================                    | 63% ~4 s remaining     |==================================                    | 64% ~4 s remaining     |==================================                    | 64% ~4 s remaining     |===================================                   | 65% ~4 s remaining     |===================================                   | 66% ~4 s remaining     |====================================                  | 67% ~4 s remaining     |====================================                  | 68% ~4 s remaining     |====================================                  | 68% ~4 s remaining     |=====================================                 | 69% ~4 s remaining     |=====================================                 | 69% ~4 s remaining     |=====================================                 | 70% ~4 s remaining     |======================================                | 70% ~4 s remaining     |======================================                | 71% ~4 s remaining     |======================================                | 72% ~3 s remaining     |=======================================               | 73% ~3 s remaining     |=======================================               | 74% ~3 s remaining     |========================================              | 74% ~3 s remaining     |========================================              | 75% ~3 s remaining     |=========================================             | 76% ~3 s remaining     |=========================================             | 77% ~3 s remaining     |=========================================             | 78% ~3 s remaining     |==========================================            | 78% ~3 s remaining     |==========================================            | 79% ~2 s remaining     |===========================================           | 80% ~2 s remaining     |===========================================           | 81% ~2 s remaining     |============================================          | 82% ~2 s remaining     |============================================          | 82% ~2 s remaining     |============================================          | 83% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |=============================================         | 85% ~2 s remaining     |==============================================        | 86% ~2 s remaining     |==============================================        | 86% ~2 s remaining     |==============================================        | 87% ~2 s remaining     |===============================================       | 88% ~1 s remaining     |===============================================       | 88% ~1 s remaining     |================================================      | 89% ~1 s remaining     |================================================      | 90% ~1 s remaining     |================================================      | 90% ~1 s remaining     |=================================================     | 91% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |==================================================    | 93% ~1 s remaining     |==================================================    | 94% ~1 s remaining     |===================================================   | 95% ~1 s remaining     |===================================================   | 96% ~1 s remaining     |====================================================  | 96% ~0 s remaining     |====================================================  | 97% ~0 s remaining     |====================================================  | 98% ~0 s remaining     |===================================================== | 99% ~0 s remaining     |===================================================== |100% ~0 s remaining     |======================================================|100% ~0 s remaining     Completed fold 4 for rejection 1250 
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-|                                                      |  1% ~10 s remaining    |                                                      |  2% ~10 s remaining    |=                                                     |  2% ~10 s remaining    |=                                                     |  3% ~9 s remaining     |==                                                    |  4% ~9 s remaining     |==                                                    |  5% ~9 s remaining     |===                                                   |  6% ~9 s remaining     |===                                                   |  6% ~9 s remaining     |===                                                   |  7% ~9 s remaining     |====                                                  |  8% ~9 s remaining     |====                                                  |  9% ~9 s remaining     |=====                                                 | 10% ~9 s remaining     |=====                                                 | 10% ~9 s remaining     |======                                                | 11% ~10 s remaining    |======                                                | 12% ~11 s remaining    |======                                                | 12% ~11 s remaining    |======                                                | 12% ~12 s remaining    |======                                                | 13% ~12 s remaining    |=======                                               | 13% ~12 s remaining    |=======                                               | 14% ~12 s remaining    |=======                                               | 14% ~12 s remaining    |=======                                               | 14% ~13 s remaining    |=======                                               | 15% ~13 s remaining    |========                                              | 15% ~13 s remaining    |========                                              | 16% ~14 s remaining    |========                                              | 16% ~14 s remaining    |========                                              | 16% ~14 s remaining    |=========                                             | 17% ~14 s remaining    |=========                                             | 17% ~14 s remaining    |=========                                             | 18% ~14 s remaining    |=========                                             | 18% ~14 s remaining    |=========                                             | 18% ~14 s remaining    |==========                                            | 19% ~14 s remaining    |==========                                            | 19% ~15 s remaining    |==========                                            | 20% ~15 s remaining    |===========                                           | 20% ~14 s remaining    |===========                                           | 21% ~14 s remaining    |===========                                           | 21% ~14 s remaining    |===========                                           | 22% ~14 s remaining    |===========                                           | 22% ~15 s remaining    |============                                          | 22% ~15 s remaining    |============                                          | 23% ~15 s remaining    |============                                          | 23% ~15 s remaining    |============                                          | 24% ~14 s remaining    |=============                                         | 25% ~14 s remaining    |=============                                         | 26% ~14 s remaining    |==============                                        | 26% ~13 s remaining    |==============                                        | 27% ~13 s remaining    |==============                                        | 28% ~13 s remaining    |===============                                       | 28% ~13 s remaining    |===============                                       | 29% ~13 s remaining    |================                                      | 30% ~13 s remaining    |================                                      | 30% ~12 s remaining    |================                                      | 31% ~12 s remaining    |=================                                     | 32% ~12 s remaining    |=================                                     | 32% ~12 s remaining    |=================                                     | 33% ~12 s remaining    |==================                                    | 34% ~11 s remaining    |==================                                    | 34% ~11 s remaining    |===================                                   | 35% ~11 s remaining    |===================                                   | 36% ~11 s remaining    |===================                                   | 37% ~11 s remaining    |====================                                  | 38% ~10 s remaining    |====================                                  | 38% ~10 s remaining    |====================                                  | 39% ~10 s remaining    |=====================                                 | 40% ~10 s remaining    |=====================                                 | 40% ~10 s remaining    |======================                                | 41% ~9 s remaining     |======================                                | 42% ~9 s remaining     |======================                                | 42% ~9 s remaining     |=======================                               | 43% ~9 s remaining     |=======================                               | 44% ~9 s remaining     |=======================                               | 44% ~9 s remaining     |========================                              | 45% ~9 s remaining     |========================                              | 46% ~8 s remaining     |=========================                             | 47% ~8 s remaining     |=========================                             | 48% ~8 s remaining     |==========================                            | 48% ~8 s remaining     |==========================                            | 49% ~8 s remaining     |===========================                           | 50% ~8 s remaining     |===========================                           | 51% ~7 s remaining     |===========================                           | 52% ~7 s remaining     |============================                          | 52% ~7 s remaining     |============================                          | 53% ~7 s remaining     |=============================                         | 54% ~7 s remaining     |=============================                         | 55% ~7 s remaining     |==============================                        | 56% ~6 s remaining     |==============================                        | 56% ~6 s remaining     |==============================                        | 57% ~6 s remaining     |===============================                       | 58% ~6 s remaining     |===============================                       | 59% ~6 s remaining     |================================                      | 60% ~6 s remaining     |================================                      | 60% ~6 s remaining     |================================                      | 60% ~6 s remaining     |=================================                     | 61% ~5 s remaining     |=================================                     | 62% ~5 s remaining     |=================================                     | 63% ~5 s remaining     |==================================                    | 63% ~5 s remaining     |==================================                    | 64% ~5 s remaining     |==================================                    | 65% ~5 s remaining     |===================================                   | 66% ~5 s remaining     |===================================                   | 66% ~5 s remaining     |====================================                  | 67% ~5 s remaining     |====================================                  | 68% ~5 s remaining     |====================================                  | 68% ~4 s remaining     |=====================================                 | 69% ~4 s remaining     |=====================================                 | 70% ~4 s remaining     |======================================                | 71% ~4 s remaining     |======================================                | 72% ~4 s remaining     |=======================================               | 72% ~4 s remaining     |=======================================               | 73% ~4 s remaining     |=======================================               | 74% ~4 s remaining     |========================================              | 75% ~3 s remaining     |========================================              | 76% ~3 s remaining     |=========================================             | 76% ~3 s remaining     |=========================================             | 77% ~3 s remaining     |=========================================             | 78% ~3 s remaining     |==========================================            | 78% ~3 s remaining     |==========================================            | 78% ~3 s remaining     |==========================================            | 79% ~3 s remaining     |==========================================            | 80% ~3 s remaining     |===========================================           | 80% ~3 s remaining     |===========================================           | 80% ~3 s remaining     |===========================================           | 81% ~3 s remaining     |============================================          | 82% ~2 s remaining     |============================================          | 83% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |=============================================         | 84% ~2 s remaining     |=============================================         | 85% ~2 s remaining     |==============================================        | 86% ~2 s remaining     |==============================================        | 86% ~2 s remaining     |==============================================        | 87% ~2 s remaining     |===============================================       | 88% ~2 s remaining     |===============================================       | 88% ~2 s remaining     |===============================================       | 89% ~2 s remaining     |================================================      | 89% ~1 s remaining     |================================================      | 90% ~1 s remaining     |================================================      | 90% ~1 s remaining     |=================================================     | 91% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |=================================================     | 92% ~1 s remaining     |==================================================    | 93% ~1 s remaining     |==================================================    | 94% ~1 s remaining     |==================================================    | 94% ~1 s remaining     |===================================================   | 95% ~1 s remaining     |===================================================   | 95% ~1 s remaining     |===================================================   | 96% ~1 s remaining     |===================================================   | 96% ~1 s remaining     |====================================================  | 96% ~1 s remaining     |====================================================  | 97% ~0 s remaining     |====================================================  | 97% ~0 s remaining     |====================================================  | 98% ~0 s remaining     |===================================================== | 99% ~0 s remaining     |===================================================== | 99% ~0 s remaining     |===================================================== |100% ~0 s remaining     |======================================================|100% ~0 s remaining     Completed fold 5 for rejection 1250 
-Warning message:
-Using an external vector in selections was deprecated in tidyselect 1.1.0.
-ℹ Please use `all_of()` or `any_of()` instead.
-  # Was:
-  data %>% select(parameter_colnames)
-
-  # Now:
-  data %>% select(all_of(parameter_colnames))
-
-See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>. 
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-Joining with `by = join_by(initial.population, pmut, maximum.sugar.endowment,
-maximum.spice.endowment, wealth.reproduction, mean.count.turtles,
-mean.normalized.gini, mean.sum..psugar..of.patches,
-mean.sum..pspice..of.patches, mean.number.of.prices, mean.mean.prices,
-min.count.turtles, min.normalized.gini, min.sum..psugar..of.patches,
-min.sum..pspice..of.patches, last.count.turtles, last.normalized.gini,
-last.sum..psugar..of.patches, last.sum..pspice..of.patches,
-last.number.of.prices, last.mean.prices, sd.count.turtles, sd.normalized.gini,
-sd.sum..psugar..of.patches, sd.sum..pspice..of.patches, sd.number.of.prices,
-sd.mean.prices, trend.count.turtles, trend.normalized.gini,
-trend.sum..psugar..of.patches, trend.sum..pspice..of.patches,
-trend.number.of.prices, trend.mean.prices, max.count.turtles,
-max.normalized.gini, max.number.of.prices, max.mean.prices,
-snap.25.count.turtles, snap.25.normalized.gini,
-snap.25.sum..psugar..of.patches, snap.25.sum..pspice..of.patches,
-snap.25.number.of.prices, snap.25.mean.prices, snap.50.count.turtles,
-snap.50.normalized.gini, snap.50.sum..psugar..of.patches,
-snap.50.sum..pspice..of.patches, snap.50.number.of.prices, snap.50.mean.prices,
-snap.75.count.turtles, snap.75.normalized.gini,
-snap.75.sum..psugar..of.patches, snap.75.sum..pspice..of.patches,
-snap.75.number.of.prices, snap.75.mean.prices, snap.100.count.turtles,
-snap.100.normalized.gini, snap.100.sum..psugar..of.patches,
-snap.100.sum..pspice..of.patches, snap.100.number.of.prices,
-snap.100.mean.prices, snap.125.count.turtles, snap.125.normalized.gini,
-snap.125.sum..psugar..of.patches, snap.125.sum..pspice..of.patches,
-snap.125.number.of.prices, snap.125.mean.prices, snap.150.count.turtles,
-snap.150.normalized.gini, snap.150.sum..psugar..of.patches,
-snap.150.sum..pspice..of.patches, snap.150.number.of.prices,
-snap.150.mean.prices, snap.175.count.turtles, snap.175.normalized.gini,
-snap.175.sum..psugar..of.patches, snap.175.sum..pspice..of.patches,
-snap.175.number.of.prices, snap.175.mean.prices, snap.200.count.turtles,
-snap.200.normalized.gini, snap.200.sum..psugar..of.patches,
-snap.200.sum..pspice..of.patches, snap.200.number.of.prices,
-snap.200.mean.prices, snap.225.count.turtles, snap.225.normalized.gini,
-snap.225.sum..psugar..of.patches, snap.225.sum..pspice..of.patches,
-snap.225.number.of.prices, snap.225.mean.prices, snap.250.count.turtles,
-snap.250.normalized.gini, snap.250.sum..psugar..of.patches,
-snap.250.sum..pspice..of.patches, snap.250.number.of.prices,
-snap.250.mean.prices, snap.275.count.turtles, snap.275.normalized.gini,
-snap.275.sum..psugar..of.patches, snap.275.sum..pspice..of.patches,
-snap.275.number.of.prices, snap.275.mean.prices, snap.300.count.turtles,
-snap.300.normalized.gini, snap.300.sum..psugar..of.patches,
-snap.300.sum..pspice..of.patches, snap.300.number.of.prices,
-snap.300.mean.prices, snap.325.count.turtles, snap.325.normalized.gini,
-snap.325.sum..psugar..of.patches, snap.325.sum..pspice..of.patches,
-snap.325.number.of.prices, snap.325.mean.prices, snap.350.count.turtles,
-snap.350.normalized.gini, snap.350.sum..psugar..of.patches,
-snap.350.sum..pspice..of.patches, snap.350.number.of.prices,
-snap.350.mean.prices, snap.375.count.turtles, snap.375.normalized.gini,
-snap.375.sum..psugar..of.patches, snap.375.sum..pspice..of.patches,
-snap.375.number.of.prices, snap.375.mean.prices, snap.400.count.turtles,
-snap.400.normalized.gini, snap.400.sum..psugar..of.patches,
-snap.400.sum..pspice..of.patches, snap.400.number.of.prices,
-snap.400.mean.prices, snap.425.count.turtles, snap.425.normalized.gini,
-snap.425.sum..psugar..of.patches, snap.425.sum..pspice..of.patches,
-snap.425.number.of.prices, snap.425.mean.prices, snap.450.count.turtles,
-snap.450.normalized.gini, snap.450.sum..psugar..of.patches,
-snap.450.sum..pspice..of.patches, snap.450.number.of.prices,
-snap.450.mean.prices, snap.475.count.turtles, snap.475.normalized.gini,
-snap.475.sum..psugar..of.patches, snap.475.sum..pspice..of.patches,
-snap.475.number.of.prices, snap.475.mean.prices)`
-Warning message:
-`as_data_frame()` was deprecated in tibble 2.0.0.
-ℹ Please use `as_tibble()` (with slightly different semantics) to convert to a
-  tibble, or `as.data.frame()` to convert to a data frame. 
-                                      parameter    method size seed        rmse
-initial.population           initial.population rejection 1250    0 95.56666497
-pmut                                       pmut rejection 1250    0  0.04464114
-maximum.sugar.endowment maximum.sugar.endowment rejection 1250    0 17.95147571
-maximum.spice.endowment maximum.spice.endowment rejection 1250    0 18.21510323
-wealth.reproduction         wealth.reproduction rejection 1250    0  9.32312427
-                        baseline_rmse performance coverage interval_width
-initial.population       115.18573655   0.1703255   0.9456    347.6803800
-pmut                       0.05758867   0.2248277   0.9512      0.1754827
-maximum.sugar.endowment   21.27226695   0.1561089   0.9416     66.0864000
-maximum.spice.endowment   21.27182800   0.1436983   0.9496     67.3853400
-wealth.reproduction       23.21017978   0.5983174   0.9744     33.3505000

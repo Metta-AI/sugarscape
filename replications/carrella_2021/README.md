@@ -1176,7 +1176,7 @@ Rscript replications/carrella_2021/diagnose_linear_mutation.R \
 
 ## Fixed-parameter repeated-seed diagnostic
 
-[All128 runs](results/fixed-parameter-seeds-2026-10-19/audit.json) completed:64 fresh seeds per engine at original input675's parameters.
+[All128 runs](https://github.com/Metta-AI/sugarscape/blob/bc33bd58e92914ce1652f2c15ccd77d99dc1895b/replications/carrella_2021/results/fixed-parameter-seeds-2026-10-19/audit.json) completed:64 fresh seeds per engine at original input675's parameters.
 Seeds0–63 and501 observations were fixed before execution; model rules and source inputs were unchanged.
 The two-hour,100MiB bound was not reached. All64,128 observations pass finite-value, population, resource and terminal-state checks.
 Every archive member matches its original bytes, and the extracted archive reproduces the audit exactly.
@@ -1354,3 +1354,7 @@ Six of ten settings are audited, totaling768 runs and384,768 observations; four 
 [The historical full-workflow bundle](results/gam-historical-full-preparation-2026-10-19) passes six-member hash readback. The first current-runtime fold verifies 3,750 exact numeric outputs and 626 RNG integers; four folds remain. Historical execution remains gated, and study status is unchanged.
 
 [The bounded historical handoff](results/gam-historical-handoff-2026-10-19) waits for full qualification, freshly checks all saved outputs, and enforces the CPU price and runtime bounds before fitting. It is pending; no historical result is claimed.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/bc33bd58e92914ce1652f2c15ccd77d99dc1895b/replications/carrella_2021/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show bc33bd58e92914ce1652f2c15ccd77d99dc1895b:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
