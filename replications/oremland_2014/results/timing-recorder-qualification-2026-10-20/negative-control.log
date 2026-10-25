@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-replication-evidence/oremland-timing-qualification-001/audit_qualification.py", line 31, in <module>
-    assert {key: value for key, value in left.items() if key not in timing} == {
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

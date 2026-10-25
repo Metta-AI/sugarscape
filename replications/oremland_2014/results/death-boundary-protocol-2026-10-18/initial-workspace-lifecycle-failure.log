@@ -1,5 +1,0 @@
-Exception in thread "main" java.lang.IllegalStateException
-	at org.nlogo.headless.HeadlessModelOpener.openFromMap(HeadlessModelOpener.scala:28)
-	at org.nlogo.headless.HeadlessWorkspace.openString(HeadlessWorkspace.scala:531)
-	at org.nlogo.headless.HeadlessWorkspace.open(HeadlessWorkspace.scala:513)
-	at AuditDeathBoundary.main(AuditDeathBoundary.java:10)

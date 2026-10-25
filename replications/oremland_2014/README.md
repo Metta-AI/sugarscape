@@ -290,3 +290,7 @@ Timing inputs, repetitions, warmups, and analysis remain unchanged.
 The corrected plot is visually inspected and preserves every numeric row. These controls use only full-size models.
 A separate watcher applies the same reporting path after all eighteen production searches and transfers pass audit.
 The production transfer comparison and visual review now pass; the completed report is linked above.
+
+## Archived raw outputs
+
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/c1ad995a3e8c6dc7b91686e30fd772c4876cdd18/replications/oremland_2014/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show c1ad995a3e8c6dc7b91686e30fd772c4876cdd18:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
