@@ -1,5 +1,0 @@
-{
-  "exit_code": 0,
-  "stdout": "{\n  \"bytes_written\": 1533,\n  \"note\": \"files under ~ survive stop_node and wake (the tmux contract). The file was hashed on the node and matched sha256 before it landed - compare that digest with your local one to prove the transfer was clean.\",\n  \"path\": \"/root/sugarscape/brearcliffe-ec-ec-native-full-001/experiment.xml\",\n  \"sha256\": \"64fb85c8bc01c841a0a76f948212fb949d811f1a259a418c3a2b98bef47a76bb\",\n  \"sha256_verified\": true,\n  \"timing_ms\": {\n    \"exec\": 199\n  },\n  \"written\": true\n}\n",
-  "stderr": ""
-}

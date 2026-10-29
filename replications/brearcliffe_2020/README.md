@@ -10,7 +10,7 @@ See the verdict for recorder corrections, reconstructed settings, all claim anal
 
 The entries below preserve incremental evidence. Their incomplete counts describe earlier checkpoints, superseded by the final verdict above.
 
-[The paper-table SARSA / Q cohort](results/paper-sarsa-q-complete-cohort-2026-10-20) passes native, R, and fresh storage checks. Coverage reaches 1,550 inputs and 31,001,550 observations; only fifty paper-table SARSA/SARSA inputs remain. [Both paper-table Q-learning/SARSA contrasts](results/paper-q-sarsa-claims-2026-10-20) support the endpoint direction, as do both released-code orientations. Early reversals and the undefined magnitude of “slight” remain explicit; no whole-study credit is added.
+[The paper-table SARSA / Q cohort](https://github.com/Metta-AI/sugarscape/tree/7e88337b66d19ef04756679e72da74a7a05f6ec4/replications/brearcliffe_2020/results/paper-sarsa-q-complete-cohort-2026-10-20) passes native, R, and fresh storage checks. Coverage reaches 1,550 inputs and 31,001,550 observations; only fifty paper-table SARSA/SARSA inputs remain. [Both paper-table Q-learning/SARSA contrasts](results/paper-q-sarsa-claims-2026-10-20) support the endpoint direction, as do both released-code orientations. Early reversals and the undefined magnitude of “slight” remain explicit; no whole-study credit is added.
 
 [The paper-table SARSA / EC cohort](results/paper-sarsa-ec-complete-cohort-2026-10-20) passes native, R, and fresh storage checks. Coverage reaches 1,500 inputs and 30,001,500 observations; one hundred inputs remain. [All paper-table EC claim contrasts](results/paper-ec-claims-2026-10-20) also pass independent verification: fourteen stated endpoint directions hold under both parameter interpretations. No whole-study credit is added.
 
@@ -22,7 +22,7 @@ The entries below preserve incremental evidence. Their incomplete counts describ
 
 [The twelve-pair parameter comparison](results/twelve-pair-parameter-comparison-2026-10-20) retains both frozen interpretations against identical paper targets. Of 168 endpoints, 121 overlap under both settings, eight only under paper settings, two only under released settings, eighteen under neither, and nineteen remain unresolved. Independent R verifies every category; all earlier ten-pair results are preserved. These counts do not select historical parameters or add simulation coverage.
 
-[The complete paper-table Q / SARSA cohort](results/paper-q-sarsa-complete-cohort-2026-10-20) combines 48 new inputs with two retained pilots. Coverage reaches 1,400 inputs and 28,001,400 observations; 200 paper-table inputs remain. Full trajectory, independent R, and fresh storage checks pass. All twelve readable endpoint ranges overlap the paper; two endpoints remain unresolved. These descriptive overlaps do not establish equivalence.
+[The complete paper-table Q / SARSA cohort](https://github.com/Metta-AI/sugarscape/tree/7e88337b66d19ef04756679e72da74a7a05f6ec4/replications/brearcliffe_2020/results/paper-q-sarsa-complete-cohort-2026-10-20) combines 48 new inputs with two retained pilots. Coverage reaches 1,400 inputs and 28,001,400 observations; 200 paper-table inputs remain. Full trajectory, independent R, and fresh storage checks pass. All twelve readable endpoint ranges overlap the paper; two endpoints remain unresolved. These descriptive overlaps do not establish equivalence.
 
 [The complete paper-table Q / Q cohort](results/paper-q-q-complete-cohort-2026-10-20) adds 50 audited runs and 1,000,050 observations. Coverage reaches 1,352 inputs and 27,041,352 observations; 248 paper-table inputs remain. Independent R and fresh storage checks pass. Seven readable endpoint ranges overlap the paper; group A maximum age does not, and six endpoints remain unresolved.
 
@@ -148,7 +148,7 @@ These commands prepare inputs only. Execution still requires the qualified NetLo
 
 ## Native pilot
 
-The [launch record](results/native-pilot-launch-2026-10-19) selects Rule M versus evolutionary computing, with combat, corner starts, replacement, and growback 1.
+The [launch record](https://github.com/Metta-AI/sugarscape/tree/7e88337b66d19ef04756679e72da74a7a05f6ec4/replications/brearcliffe_2020/results/native-pilot-launch-2026-10-19) selects Rule M versus evolutionary computing, with combat, corner starts, replacement, and growback 1.
 This pairing does not use the disputed reinforcement-learning hyperparameters.
 A separate retained model copy replaces only `random-seed new-seed` with `random-seed 20261019`.
 The original source remains unchanged. This fixed seed is prospective, not a recovered author seed.
@@ -221,3 +221,11 @@ The [complete Rule M/EC cohort](results/rule-m-ec-complete-cohort-2026-10-19) no
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/b64684cbe24b2b17f5cb32819040db4581fe7e25/replications/brearcliffe_2020/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show b64684cbe24b2b17f5cb32819040db4581fe7e25:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/7e88337b66d19ef04756679e72da74a7a05f6ec4/replications/brearcliffe_2020) preserves the pre-cleanup files.
+To restore an input, run `git show 7e88337b66d19ef04756679e72da74a7a05f6ec4:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

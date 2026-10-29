@@ -19,7 +19,7 @@ Independent R rereads and hashes all 50 native trajectories, checks 1,000,050 ob
 Maximum absolute differences are 1.34e-14 for interpolated inputs, 3.38e-14 for bootstrap maxima, and 1.34e-15 for band endpoints.
 Both implementations find 286 overlaps. They share retained random draws and do not independently validate the random-number generator.
 
-![EC vision mean, paper raster interval, and exploratory uncertainty band](ec-vision-band.png)
+![EC vision mean, paper raster interval, and exploratory uncertainty band](https://github.com/Metta-AI/sugarscape/blob/7e88337b66d19ef04756679e72da74a7a05f6ec4/replications/brearcliffe_2020/results/ec-vision-uncertainty-2026-10-19/ec-vision-band.png)
 
-The [PDF figure](ec-vision-band.pdf), per-column bands, native-source hashes, bootstrap maxima, protocol, and both analysis scripts are retained.
+The [PDF figure](https://github.com/Metta-AI/sugarscape/blob/7e88337b66d19ef04756679e72da74a7a05f6ec4/replications/brearcliffe_2020/results/ec-vision-uncertainty-2026-10-19/ec-vision-band.pdf), per-column bands, native-source hashes, bootstrap maxima, protocol, and both analysis scripts are retained.
 No new simulation or completed-study credit is added. Full ensembles, paper-table parameter sensitivity, and independent fork implementation remain outstanding.
