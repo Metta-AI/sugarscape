@@ -48,7 +48,7 @@ Its source explicitly warns of reduced performance. It is suitable for toolchain
 validation and instrumented measurements, not the uninstrumented timing comparison.
 Latest revision `2bf138a8b5f1d020f09781932e110091802f6dcc` additionally replaces the
 sequential benchmark entry point with population CSV export.
-[Revision hashes](results/archived/revision-fidelity.json) retain these distinctions.
+[Revision hashes](https://github.com/Metta-AI/sugarscape/blob/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/archived/revision-fidelity.json) retain these distinctions.
 
 The pinned `stm-stats-0.2.0.0` library computes retries divided by commits,
 not retries divided by attempts. Its counters persist within the process;
@@ -114,7 +114,7 @@ measurement, interpolated population targets, calibration and artifact hashes.
 
 ## Scheduling and population measurement audit
 
-The [source audit](results/archived/scheduling-audit.json) checks 11 files against the
+The [source audit](https://github.com/Metta-AI/sugarscape/blob/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/archived/scheduling-audit.json) checks 11 files against the
 pinned timing revision. Sequential `Init` inserts the environment as behavior ID 0;
 `Simulation` shuffles that behavior with agents. Concurrent `Main` sets `envConc=False`,
 and `Simulation` waits for all agents before stepping the separate environment.
@@ -134,7 +134,7 @@ semantics, not a fresh simulation result or a negative replication verdict.
 All four unmodified timing-revision implementations built with GHC 8.4.3 and
 completed one full 1,000-step, 500-agent, seed-42 execution. Concurrent variants used
 one Haskell capability; the sequential executable is not threaded.
-[Retained evidence](results/native-workflow-2026-10-17/provenance.json) includes all
+[Retained evidence](https://github.com/Metta-AI/sugarscape/blob/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/native-workflow-2026-10-17/provenance.json) includes all
 four zero exit statuses, commands, binary hashes, compiler versions and output logs.
 All 61 model/build source hashes were checked again after execution.
 
@@ -172,9 +172,9 @@ model rule or tolerance changed after viewing the native output.
 Population is 500 at output time 0, 206 at time 49, and 192 at time 999.
 The paper only plots the first 50 points; later points are additional native output.
 
-The [independent audit](results/population-replay-2026-10-17/independent-audit.json)
+The [independent audit](https://github.com/Metta-AI/sugarscape/blob/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/population-replay-2026-10-17/independent-audit.json)
 rechecks both raw CSVs, all timestamps, all 50 errors, and all 27 source files.
-[The overlay](results/population-replay-2026-10-17/population-comparison.png) was visually
+[The overlay](https://github.com/Metta-AI/sugarscape/blob/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/population-replay-2026-10-17/population-comparison.png) was visually
 inspected against the extracted published curve. The complete trajectories, binary
 hash, compiler, commands' output logs and fixed target protocol are retained.
 This reproduces Figure 5b only; it does not establish Figure 5a state agreement,
@@ -260,7 +260,7 @@ and concurrent population dynamics remain separate outstanding targets.
 
 ## Timing allocation recovery
 
-[The original allocation failed before execution](timing/provisioning-retry-2026-10-17)
+[The original allocation failed before execution](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/timing/provisioning-retry-2026-10-17)
 when the provider exhausted its reserved eight-core CPU slots. The provider reports
 that nothing was created or billed. A replacement allocation uses the same node
 name, unchanged protocol and bootstrap, and a four-hour queue hold.
@@ -272,7 +272,7 @@ identifiers remain in the recovery evidence alongside the replacement identifier
 
 ## Instrumented retry counters: complete native workflow check
 
-[Four complete 1,000-step runs](results/retry-instrumentation-2026-10-17)
+[Four complete 1,000-step runs](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/retry-instrumentation-2026-10-17)
 validate the original TVar and TArray instrumentation with GHC 8.4.3 and
 `stm-stats-0.2.0.0`. Each executable runs two iterations in one process, with
 seed 42, 500 initial agents, no rebirth, and one Haskell capability.
@@ -306,7 +306,7 @@ python replications/thaler_2019/audit_retries.py EXTRACTED_ARCHIVE EXTRACTED_ARC
 
 ## Source-download failure recovered
 
-[The recovered command log](timing/source-recovery-2026-10-17/failed-command-log-002.txt)
+[The recovered command log](https://github.com/Metta-AI/sugarscape/blob/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/timing/source-recovery-2026-10-17/failed-command-log-002.txt)
 shows that command `cmd-gjm6m` exited 128 while cloning the author repository:
 GitHub hostname resolution failed. No build or simulation had started.
 The original output directory and failure log remain retained.
@@ -346,7 +346,7 @@ python replications/thaler_2019/timing/audit_native.py /path/to/checkpoint /path
 
 ### Native allocation verification
 
-[The allocation-aware audit](results/native-timing-prefix-2026-10-17/allocation-audit.json)
+[The allocation-aware audit](https://github.com/Metta-AI/sugarscape/blob/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/native-timing-prefix-2026-10-17/allocation-audit.json)
 reprocesses the same 13-condition checkpoint without adding replication coverage.
 It verifies affinity and effective CPU set both equal CPUs 88–95; `cpu.max` is
 `max 100000`, so this captured container has no additional CPU-time quota.
@@ -361,7 +361,7 @@ compares different hardware topologies. No same-hardware performance claim follo
 
 ### Complete native Table 6 comparison
 
-[All 25 conditions](results/native-table6-2026-10-17/comparison.json) now have
+[All 25 conditions](https://github.com/Metta-AI/sugarscape/blob/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/native-table6-2026-10-17/comparison.json) now have
 independently audited native results: 100 raw Criterion measurements, all first
 attempts passing the frozen R-squared threshold. The sealed checkpoint's SHA-256 is
 `abe70597f24a56d46d756930e27e73d0fe4cadde2906a4e9a5f0a7c0e440900a`.
@@ -436,7 +436,7 @@ remain required. This launch adds no completed simulation or paper coverage yet.
 
 ### Native timing checkpoint: 30 of 45 conditions
 
-[The sealed checkpoint and audit](results/native-timing-prefix30-2026-10-17)
+[The sealed checkpoint and audit](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/native-timing-prefix30-2026-10-17)
 validate 30 conditions and 120 raw Criterion measurements.
 All 30 pass the frozen R-squared threshold on their first attempt.
 Independent least-squares slopes differ from native reports by at most 1.43e-13 seconds; R-squared values match exactly.
@@ -463,7 +463,7 @@ The six timings, six retry ratios and scaling comparison remain required. This p
 
 ### Original-engine population exporter qualification
 
-[Eight full 1,000-step runs](results/population-observer-qualification-2026-10-17)
+[Eight full 1,000-step runs](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/population-observer-qualification-2026-10-17)
 qualify a population exporter for all four original implementations at seed 42, 500 agents, no rebirth and one capability.
 `prepare_population_observers.py SOURCE NEW_OUTPUT` verifies 61 source/build files at the timing revision.
 It changes only the four entry points: run the existing initializer once, force the returned states as Criterion does, then export chronological populations.
@@ -492,7 +492,7 @@ Both were exporter/launcher errors and were corrected without changing the autho
 
 ### Deferred native population comparison
 
-[The frozen launch and qualification](results/population-grid-launch-2026-10-17)
+[The frozen launch and qualification](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/population-grid-launch-2026-10-17)
 cover all 45 original timing conditions, with five fresh population-export processes each: 225 runs and 225,000 expected observations.
 The original seed 42 stays fixed; repeated concurrent processes measure scheduler variation.
 Five repeats are our declared design, not a recovered historical visual-comparison count.
@@ -515,7 +515,7 @@ The native grid remains pending; Table 9 and spatial-state requirements remain s
 
 ### Native timing checkpoint: 33 of 45 conditions
 
-[The sealed checkpoint and audit](results/native-timing-prefix33-2026-10-18)
+[The sealed checkpoint and audit](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/native-timing-prefix33-2026-10-18)
 validate 33 conditions and 132 raw Criterion measurements.
 All prior 30 published records and the separately audited 31-condition prefix match exactly.
 The three newly published conditions add twelve raw measurements:
@@ -532,7 +532,7 @@ The original process continues without restarting completed conditions.
 
 ### Figure 5a graphical-source control
 
-[A completed 1,000-step control](results/graphical-model-control-2026-10-18)
+[A completed 1,000-step control](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/graphical-model-control-2026-10-18)
 uses the original `SugarScapePure/src` model modules rather than the benchmark modules.
 The existing observational entry point preserves seed 42, 500 agents, no rebirth,
 and the same initialization and simulation-step calls. Criterion packaging supplies
@@ -564,7 +564,7 @@ and a 1,200-second outer bound. No timing evidence is inferred from it.
 
 ### Native timing checkpoint: 39 of 45 conditions
 
-[The sealed checkpoint and independent audit](results/native-timing-prefix39-2026-10-18)
+[The sealed checkpoint and independent audit](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/native-timing-prefix39-2026-10-18)
 validate 39 conditions and 156 raw Criterion measurements.
 All 33 previously published conditions and all 36 previously audited conditions match exactly.
 The six newly published conditions add 24 raw measurements, all accepted on their first attempt.
@@ -676,7 +676,7 @@ Four timing conditions and thirty retry processes remain outstanding.
 
 ### Full population ensemble complete
 
-[Native trajectories and independent audit](results/population-grid-complete-2026-10-18)
+[Native trajectories and independent audit](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/population-grid-complete-2026-10-18)
 cover all 45 declared conditions with five processes each: 225,000 population
 observations. Every trajectory contains times 0–999, valid population bounds,
 the prescribed command and a successful exit. All five normal sequential runs
@@ -696,7 +696,7 @@ and the outstanding timing work remain required for the full study.
 
 ### All six Table 9 timing conditions audited
 
-[The sealed complete timing grid](results/table9-timings-complete-2026-10-18)
+[The sealed complete timing grid](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/table9-timings-complete-2026-10-18)
 passes independent reconstruction of all 24 raw measurements. Every condition
 passes the frozen R-squared threshold on its first attempt. Source, binary and
 CPU-allocation checks pass; fresh archive extraction reproduces the audit exactly.
@@ -719,7 +719,7 @@ also prevent a whole-paper verdict.
 
 ### First successful timing continuation
 
-[The sealed continuation checkpoint](results/timing-continuation-first-2026-10-18)
+[The sealed continuation checkpoint](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/timing-continuation-first-2026-10-18)
 validates the four-capability TVar condition with 500 rebirthing agents:
 24.530530 seconds, R-squared 0.999937805373. All four raw measurements reconstruct
 the accepted fit. A fresh archive extraction reproduces the audit byte-for-byte.
@@ -739,14 +739,14 @@ before an output file is written. Native audits remain prerequisite evidence.
 The output reports descriptive runtime ratios with the existing hardware limits,
 without inventing a numerical equivalence threshold.
 
-[Execution against the current real evidence](results/complete-comparison-gate-2026-10-18)
+[Execution against the current real evidence](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/complete-comparison-gate-2026-10-18)
 correctly rejects 48/51 cells and identifies three missing Table 8 conditions:
 sequential 500, sequential 2,500 and TArray 2,000. No final comparison was created.
 The successful complete-data path remains unvalidated until those runs finish.
 
 ### Complete matching-instance Table 9 experiment
 
-[Terminal evidence](results/table9-complete-2026-10-18) passes the full audit:
+[Terminal evidence](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/table9-complete-2026-10-18) passes the full audit:
 six timing conditions, 24 raw measurements and all thirty retry processes.
 The prior timing records are unchanged. Each retry process has verified source
 instrumentation, executable hash, command, successful exit, integer counters and
@@ -771,13 +771,13 @@ prevent whole-paper completion.
 
 ### Second continuation timing and counter inspection
 
-[The next sealed checkpoint](results/timing-continuation-second-2026-10-18)
+[The next sealed checkpoint](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/timing-continuation-second-2026-10-18)
 adds sequential rebirth with 500 agents: 41.621252 seconds, R² 0.9999954294.
 Its four raw samples independently reproduce the fit; the earlier continuation
 row remains identical. Tables 6 and 8 now cover 43/45 conditions and 172 raw
 measurements. Sequential 2,500 and TArray 2,000 remain outstanding.
 
-[Counter-source inspection](results/table9-complete-2026-10-18/counter-source-inspection.json)
+[Counter-source inspection](https://github.com/Metta-AI/sugarscape/blob/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/table9-complete-2026-10-18/counter-source-inspection.json)
 confirms floating-point retries/commits and atomic count aggregation, with no
 capability-specific branch. Agent results are posted after counter updates, and
 the simulation waits for all agent results each step. This identifies no
@@ -786,7 +786,7 @@ historical runtime equivalence and the published discrepancy remain unresolved.
 
 ### All 51 native timing cells audited
 
-[The complete timing grid](results/timing-grid-complete-2026-10-18) combines
+[The complete timing grid](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/timing-grid-complete-2026-10-18) combines
 25 Table 6, 20 Table 8 and six Table 9 conditions. All 204 raw measurements
 pass their native audits. The complete-grid comparison now passes its positive
 path, having previously rejected incomplete coverage. The continuation exits
@@ -831,3 +831,11 @@ The [completed six-process diagnostic](results/criterion-retry-control-complete-
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/cea904b14248371b1281a29b8f73bf5bb0f7d5bd/replications/thaler_2019/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show cea904b14248371b1281a29b8f73bf5bb0f7d5bd:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019) preserves the pre-cleanup files.
+To restore an input, run `git show 0f0c4350672e75a47a8373c119b7291a8d0c2168:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

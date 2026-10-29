@@ -3,3 +3,8 @@ results/**/*.jsonl
 results/**/*.log
 results/**/*.csv
 results/**/audit.json
+
+# Generated experiment evidence is kept outside the review diff.
+/results/
+/timing/provisioning-retry-2026-10-17/
+/timing/source-recovery-2026-10-17/

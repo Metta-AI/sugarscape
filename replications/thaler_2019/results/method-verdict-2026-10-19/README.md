@@ -23,8 +23,8 @@ Every fresh report matches its retained counterpart. `verification.json` records
 This re-audit adds no simulations or coverage.
 
 Sources and full commands remain in the [study README](../../README.md),
-[retry ensemble](../retry-scaling-complete-2026-10-18), [timing grid](../timing-grid-complete-2026-10-18),
-[population grid](../population-grid-complete-2026-10-18), and [Table 9 evidence](../table9-complete-2026-10-18).
+[retry ensemble](../retry-scaling-complete-2026-10-18), [timing grid](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/timing-grid-complete-2026-10-18),
+[population grid](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/population-grid-complete-2026-10-18), and [Table 9 evidence](https://github.com/Metta-AI/sugarscape/tree/0f0c4350672e75a47a8373c119b7291a8d0c2168/replications/thaler_2019/results/table9-complete-2026-10-18).
 
 ## Departures, diagnostics, and result comparisons
 
