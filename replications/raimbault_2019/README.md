@@ -20,7 +20,7 @@ every exclusion is counted in the result manifest.
 
 All six summaries at each of q=1,2,3,10 match Table 4 at published precision.
 The Euclidean mean, median, minimum, and maximum are 1.29594, 1.52272, 0.08909, and 2.98273.
-[Full comparisons and coverage](results/archive-2026-10-15/results.json) preserve every grid distance and input hashes.
+[Full comparisons and coverage](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/archive-2026-10-15/results.json) preserve every grid distance and input hashes.
 
 Run with Python and NumPy 1.26.4:
 
@@ -57,7 +57,7 @@ New runs must follow the validated experiment rather than silently using a misma
 The first archived reference input completes 1,000 steps with constant population under NetLogo 5.3.1.
 Its terminal Gini is 0.3942307692 versus archived 0.2445487365.
 Its moving-window Gini is 0.2939769248 versus archived 0.3017667641.
-[Trajectory and comparison](results/replay-pilot-2026-10-15/comparison.json) retain this unresolved mismatch.
+[Trajectory and comparison](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/replay-pilot-2026-10-15/comparison.json) retain this unresolved mismatch.
 **This was a horizon mismatch, not a negative replication.** The 10,000-step replay below resolves this input.
 
 The archive filename is dated March 28, 2017; that date does not prove which revision generated its contents.
@@ -88,10 +88,10 @@ At 10,000 steps, the first archived input reproduces terminal Gini **0.244548736
 and last-1,000-step mean Gini **0.3017667640537167**, both exactly equal to the archive's recorded NetLogo outputs.
 Independent Python recomputation of the window mean differs by 2.22e-16 from NetLogo's summation.
 The first 1,000 trajectory rows are identical to the earlier pilot.
-[Raw trajectory, execution log, and comparison](results/horizon-validation-2026-10-15) preserve the successful replay.
+[Raw trajectory, execution log, and comparison](https://github.com/Metta-AI/sugarscape/tree/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/horizon-validation-2026-10-15) preserve the successful replay.
 Thus the initial mismatch is explained by the later horizon change, without changing seed, behavior, parameters, or runtime.
 Rows 1 and 54,999 also reproduce both archived NetLogo Gini outputs exactly.
-[Additional comparisons](results/horizon-validation-2026-10-15/additional-comparisons.json) include complete trajectories and independently recomputed window means.
+[Additional comparisons](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/horizon-validation-2026-10-15/additional-comparisons.json) include complete trajectories and independently recomputed window means.
 These three inputs validate the corrected replay path; they do not complete the spatial ensemble.
 
 ## Remaining work
@@ -114,7 +114,7 @@ Full per-step trajectories remain available from `Replay.java`; the ensemble ret
 The headless setup creates turtles without clearing the previous run.
 `BatchReplay.java` explicitly clears the workspace before each original seeded setup, preventing cross-run population contamination.
 It does not edit the author model or change the historical 10,000-step rule execution.
-[The three-row batch pilot](results/batch-pilot-2026-10-15/comparison.json) completes 30,000 steps and matches all six archived native Gini measurements exactly.
+[The three-row batch pilot](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/batch-pilot-2026-10-15/comparison.json) completes 30,000 steps and matches all six archived native Gini measurements exactly.
 The full 55,000-input replay is now running. Generated-grid ensembles and fresh spatial contrasts remain required afterward.
 
 ## Independent reference audit
@@ -125,19 +125,19 @@ Complete mode requires a successful native exit and every row in the requested i
 Only an interval covering all 55,000 rows sets `complete_reference` to true.
 Prefix mode saves an immutable snapshot and never represents a completed ensemble.
 
-[The first audited prefix](results/reference-prefix-2026-10-15/audit.json) contains 15 simulations and 30 exact native measurement matches.
+[The first audited prefix](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/reference-prefix-2026-10-15/audit.json) contains 15 simulations and 30 exact native measurement matches.
 A deliberately altered copy of one Gini value is rejected with exactly one reported mismatch; this negative control is labeled separately from scientific results.
 The full reference continues running. This prefix does not establish parameter-space coverage or the generated-landscape conclusions.
 
 ## Interrupted reference recovery
 
 The first full replay stopped without a recorded exit status. Its cause is unknown.
-An [independent audit](results/process-recovery-2026-10-16/recovered-audit.json) validates all 2,399 preserved rows: 4,798 exact native Gini matches.
+An [independent audit](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/process-recovery-2026-10-16/recovered-audit.json) validates all 2,399 preserved rows: 4,798 exact native Gini matches.
 The original directory and partial execution log remain intact.
 
 The runner accepts `--start ROW --stop ROW` with an exclusive stop, using the original archive row indices.
 A fresh two-row run spanning the restart boundary reproduces all four archived measurements exactly.
-[Its complete interval audit](results/process-recovery-2026-10-16/resume-proof-audit.json) explicitly reports that the full reference remains incomplete.
+[Its complete interval audit](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/process-recovery-2026-10-16/resume-proof-audit.json) explicitly reports that the full reference remains incomplete.
 The continuation starts at row 2,399 and requests the remaining 52,601 rows in a new directory.
 The two-row validation overlaps the continuation and must not count as additional ensemble coverage.
 
@@ -148,14 +148,14 @@ Together, the preserved runs cover original indices `[0,3246)` with 6,492 exact 
 The remaining inputs run in five disjoint intervals using the same adapter, seeds, model, and 10,000-step horizon.
 Their requested intervals cover `[3246,55000)` without gaps or overlaps.
 
-[Initial independent audits](results/sharded-reference-2026-10-16/coverage.json) validate another 72 rows across all five processes, with zero measurement mismatches.
+[Initial independent audits](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/sharded-reference-2026-10-16/coverage.json) validate another 72 rows across all five processes, with zero measurement mismatches.
 Total unique audited coverage is 3,318 of 55,000 inputs; gaps remain between these partial shard outputs.
 The launch manifest, preserved sequential prefix, and five immutable snapshots retain the partition boundaries and exact evidence.
 Neither partitioning nor matching partial outputs completes the paper replication.
 
 ## Later shard audit
 
-[The second shard snapshots](results/shard-progress-2026-10-16/coverage.json) validate 2,175 completed simulations across the five processes, with zero mismatches.
+[The second shard snapshots](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/shard-progress-2026-10-16/coverage.json) validate 2,175 completed simulations across the five processes, with zero mismatches.
 Together with the preserved contiguous prefix, unique audited coverage is 5,421 of 55,000 inputs: 10,842 exact native Gini measurements.
 These snapshots supersede the earlier shard snapshots for coverage counting; overlapping rows are counted once.
 The processes continue. Fixed-reference completion and generated-landscape conclusions remain pending.
@@ -167,13 +167,13 @@ The original contiguous prefix plus these preserved shard outputs cover 5,773 un
 Fresh directories resume the remaining original intervals at indices 4,445; 14,077; 24,282; 34,589; and 44,874.
 No saved completed row is rerun or dropped. Seeds, adapter, model, horizon, and memory limits are unchanged.
 
-[Initial resumed-prefix audits](results/crash-recovery-2026-10-16/coverage.json) add 13 exact matches across all five workers.
+[Initial resumed-prefix audits](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/crash-recovery-2026-10-16/coverage.json) add 13 exact matches across all five workers.
 Total unique audited coverage is 5,786 inputs and 11,572 native Gini measurements, with zero mismatches.
 Immutable saved and resumed snapshots, their checksums, and launch commands are retained. The full reference and generated-landscape studies remain incomplete.
 
 ## Resumed-prefix validation
 
-[Five fresh snapshots](results/resumed-prefix-2026-10-16/coverage.json) independently validate 193 resumed inputs, including 180 beyond the recovery snapshot.
+[Five fresh snapshots](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/resumed-prefix-2026-10-16/coverage.json) independently validate 193 resumed inputs, including 180 beyond the recovery snapshot.
 Both Gini measurements match exactly for every input.
 Replacing the earlier overlapping prefixes gives 5,966 unique validated inputs and 11,932 exact measurements.
 Compressed native snapshots, hashes, and disjoint interval accounting are retained.
@@ -181,7 +181,7 @@ All five workers remain active; the full 55,000-input reference and generated-la
 
 ## Linux portability and bounded CPU handoff
 
-[Three full-horizon portability probes](results/linux-parity-2026-10-16/comparison.json) reproduce rows 0, 1, and 54,999 on Ubuntu 22.04 with Java 11.0.32.1.
+[Three full-horizon portability probes](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/linux-parity-2026-10-16/comparison.json) reproduce rows 0, 1, and 54,999 on Ubuntu 22.04 with Java 11.0.32.1.
 All six native Gini values match the archive exactly; result CSVs are byte-identical to the macOS package proof.
 The downloaded archive was checksum-verified and compared independently against the original reference CSV.
 These repeated validation rows add **zero** unique ensemble coverage.
@@ -195,7 +195,7 @@ After parity passed, the owned local fifth shard was deliberately terminated and
 Its 142 completed rows, `[44874,45016)`, passed an independent audit with 284 exact measurements.
 Local execution resumes `[45016,54600)` in a new directory.
 Eight remote workers receive disjoint 50-row intervals covering `[54600,55000)`.
-[The handoff record](results/linux-parity-2026-10-16/handoff-confirmed.json) preserves the terminal checkpoint and commands.
+[The handoff record](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/linux-parity-2026-10-16/handoff-confirmed.json) preserves the terminal checkpoint and commands.
 The remote batch is bounded to one hour and stops its CPU node afterward; its results remain pending and uncounted here.
 The full reference, generated landscapes, and paper replication remain incomplete.
 
@@ -206,8 +206,8 @@ contains 1,180,976,826 bytes and matches Dataverse's MD5 `7b554774a9d293b2c2ce31
 Its SHA-256 is `1a2cdf93167571ab2943d488017ace08945e7afd3cd8ac4d1410fb214c79c8f5`.
 The source remains outside Git, compressed losslessly; replay verifies the decompressed hash before execution.
 
-[Full archive reconstruction](results/generated-source-2026-10-16/raw-audit.json) verifies **2,727,994 runs** across 54,560 parameter groups and 50 landscape parameter sets.
-There are 54,554 groups with 50 repeats and [six groups with 49](results/generated-source-2026-10-16/underfilled-groups.json).
+[Full archive reconstruction](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-source-2026-10-16/raw-audit.json) verifies **2,727,994 runs** across 54,560 parameter groups and 50 landscape parameter sets.
+There are 54,554 groups with 50 repeats and [six groups with 49](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-source-2026-10-16/underfilled-groups.json).
 No group repeats a seed. All rows request generated landscapes (`setup=1`).
 All 54,560 reconstructed moving-window Gini means agree with the released aggregate within 8.33e-16.
 The five averaged generator parameters agree within 1.01e-11; the audit's explicit aggregate tolerance is 1e-10.
@@ -233,7 +233,7 @@ python3 replications/raimbault_2019/run_generated.py \
 The first command reconstructs the published aggregate; `generated.csv` is the aggregate from `fetch_sources.py`.
 The second command runs the original model through the public runner; row intervals use exclusive stops.
 
-[The two-row generated-landscape pilot](results/generated-source-2026-10-16/pilot-comparison.json) completes 20,000 simulated steps with native exit zero.
+[The two-row generated-landscape pilot](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-source-2026-10-16/pilot-comparison.json) completes 20,000 simulated steps with native exit zero.
 Both Gini outputs match exactly for both rows. Across all 24 output values, 23 match exactly.
 Row 1's population-distribution R² is `0.8963279972950365`, versus archived `0.8963279972950364`: one floating-point step.
 The strict exact comparison fails on that value; its discrepancy is retained, with no relaxed pass criterion.
@@ -242,7 +242,7 @@ These validation probes add zero unique ensemble coverage. The full generated en
 
 ## Generated-landscape diversity probes
 
-[Six input-selected probes](results/generated-diversity-2026-10-16/summary.json) cover landscape parameter sets 16 and 23 at populations 10, 260, and 510.
+[Six input-selected probes](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-diversity-2026-10-16/summary.json) cover landscape parameter sets 16 and 23 at populations 10, 260, and 510.
 Selection took the first recorded input in each category without consulting output values.
 Five inputs are new probes; original row 0 is a repeated control. These probes add zero production-ensemble coverage.
 Every run preserves its archived seed, full 10,000-step horizon, native model, and terminal status.
@@ -260,13 +260,13 @@ The full generated-landscape ensemble and spatial conclusions remain incomplete.
 
 ## Remote reference validation and complete checkpoint handoff
 
-[The first remote production batch](results/remote-reference-2026-10-16/batch-400-independent-validation.json) completes original rows `[54600,55000)`.
+[The first remote production batch](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/remote-reference-2026-10-16/batch-400-independent-validation.json) completes original rows `[54600,55000)`.
 All 400 runs finish 10,000 steps, and all 800 native Gini measurements match the original archive exactly.
 Downloaded evidence verifies successful native exits, row identities, source/dependency hashes, interval completeness, and independent output comparisons.
 The node stops automatically after the batch; its files remain intact and were retrieved for the audit.
 
 After that audit, the five owned local reference workers were deliberately stopped and their terminal states verified.
-[The consolidated checkpoint](results/remote-reference-2026-10-16/handoff-confirmed.json) independently validates **7,933 unique runs and 15,866 exact Gini measurements**.
+[The consolidated checkpoint](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/remote-reference-2026-10-16/handoff-confirmed.json) independently validates **7,933 unique runs and 15,866 exact Gini measurements**.
 Original files remain intact. The retained checkpoint snapshots include all covered rows, manifests, logs, and available terminal records.
 Earlier overlapping snapshots and validation probes are excluded; the remote 400-row interval is counted once.
 
@@ -281,7 +281,7 @@ The full 55,000-row reference, generated-landscape ensemble, and paper replicati
 
 ## First running-queue checkpoint
 
-[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-002-independent-validation.json) checks 14 completed chunks covering `[5120,6520)`.
+[Independent validation](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/checkpoint-002-independent-validation.json) checks 14 completed chunks covering `[5120,6520)`.
 All 1,400 runs finish 10,000 steps; all 2,800 Gini measurements match the original reference exactly.
 The downloaded archive retains native outputs, successful exits, manifests, and per-chunk audits.
 Independent checks verify original seeds, populations, row identities, source/dependency hashes, and complete disjoint intervals.
@@ -303,14 +303,14 @@ python3 replications/raimbault_2019/audit_generated.py \
   --morphology-absolute-tolerance 1e-12
 ```
 
-[Real two-row workflow evidence](results/generated-auditor-2026-10-16/validation.json) exercises the existing public-runner pilot.
+[Real two-row workflow evidence](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-auditor-2026-10-16/validation.json) exercises the existing public-runner pilot.
 Strict zero tolerance fails on its known R-squared difference; the previously declared `1e-12` morphology tolerance passes.
 Both reports retain 23 exact comparisons out of 24, with both Gini metrics exact for each input.
 This verifies the audit workflow and adds no simulation coverage or completed-paper claim.
 
 ## Linux generated-landscape portability
 
-[Independent downloaded-artifact validation](results/generated-linux-2026-10-16/independent-validation.json) checks all six previously selected probes on the task-owned Linux CPU node.
+[Independent downloaded-artifact validation](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-linux-2026-10-16/independent-validation.json) checks all six previously selected probes on the task-owned Linux CPU node.
 All three sequential two-row native processes exit successfully, completing the original 10,000-step horizon.
 Frozen model, extension, dependency, adapter, input, and criteria hashes are verified before comparing outputs.
 
@@ -326,7 +326,7 @@ The full generated ensemble and fresh spatial comparisons remain unstarted; thes
 
 ## Stratified generated-ensemble sizing run
 
-[Input selection](results/generated-sizing-launch-2026-10-16/selection.json) fixes one original input for each of 50 landscape IDs and 11 population levels.
+[Input selection](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-sizing-launch-2026-10-16/selection.json) fixes one original input for each of 50 landscape IDs and 11 population levels.
 Reservoir sampling uses seed `20261016`, independently within each stratum, before executing the selected runs.
 A second full-archive pass verifies every selected field, all original indices, and the stratum counts summing to 2,727,994 runs.
 Original stratum sizes will weight timing estimates; an early prefix cannot substitute for the complete sample.
@@ -336,14 +336,14 @@ Each native process retains wall time, CPU time, peak memory, commands, outputs,
 Native or measurement failures stop pending work; already-running outputs remain intact.
 This benchmark leaves the existing fixed-reference queue unchanged.
 
-[Downloaded initial evidence](results/generated-sizing-launch-2026-10-16/prefix-independent-validation.json) independently verifies eight completed inputs and 96 exact archived measurements.
+[Downloaded initial evidence](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-sizing-launch-2026-10-16/prefix-independent-validation.json) independently verifies eight completed inputs and 96 exact archived measurements.
 These early inputs establish execution, not a representative cost estimate or completion of the generated ensemble.
 The initial snapshot was partial; the complete sizing audit below supersedes it. No full generated-production queue has been launched.
 
 ### Independent sizing audit and projection gate
 
 `analyze_sizing.py` validates the frozen input selection, completed native outputs, timings, and output hashes independently of the producer's audit verdicts.
-The [223-input snapshot](results/generated-sizing-audit-2026-10-16/analysis.json) matches all 2,676 archived measurements exactly.
+The [223-input snapshot](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-sizing-audit-2026-10-16/analysis.json) matches all 2,676 archived measurements exactly.
 This snapshot includes the eight initially reported inputs; the counts are not additive.
 Running `--require-complete` against this real snapshot fails before creating output, because 327 selected strata remain absent.
 
@@ -360,7 +360,7 @@ python replications/raimbault_2019/analyze_sizing.py /downloaded/sizing-run /new
 
 ### Second remote reference checkpoint
 
-The [sealed checkpoint audit](results/remote-reference-checkpoint-2026-10-16/checkpoint-003-independent-validation.json) verifies 53 completed chunks, containing 5,300 original inputs.
+The [sealed checkpoint audit](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/checkpoint-003-independent-validation.json) verifies 53 completed chunks, containing 5,300 original inputs.
 All 53 recorded source and dependency files match the frozen local runtime.
 Combining these chunks with the 7,933-row local baseline yields 13,233 unique simulations and 26,466 exact archived Gini comparisons.
 The earlier 1,400-row cloud snapshot is contained in this checkpoint and is not added again.
@@ -369,7 +369,7 @@ The 55,000-row reference ensemble remains incomplete; this checkpoint makes no g
 
 ### Third remote reference checkpoint
 
-The [71-chunk audit](results/remote-reference-checkpoint-2026-10-16/checkpoint-004-independent-validation.json) verifies7,100 remote inputs against the original reference archive.
+The [71-chunk audit](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/checkpoint-004-independent-validation.json) verifies7,100 remote inputs against the original reference archive.
 Together with7,933 frozen local inputs, coverage reaches15,033 unique simulations and30,066 exact Gini comparisons.
 All53 source/dependency hashes match the frozen runtime; every sealed chunk exits successfully and completes its declared interval.
 This adds1,800 rows beyond checkpoint003; previous cloud checkpoints are contained here and are not added again.
@@ -377,7 +377,7 @@ The55,000-row reference ensemble remains incomplete, and generated landscapes an
 
 ### Complete generated-landscape sizing sample
 
-The [complete audit](results/generated-sizing-complete-2026-10-16/analysis.json) validates all 550 selected inputs and 6,600 exact archived measurements.
+The [complete audit](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-sizing-complete-2026-10-16/analysis.json) validates all 550 selected inputs and 6,600 exact archived measurements.
 The retained native archive includes timings, outputs, commands, and frozen selection for independent replay of this audit.
 This supersedes the 223-input snapshot; their counts are not additive.
 
@@ -389,7 +389,7 @@ The full generated ensemble remains unstarted. Benchmarking repeated inputs with
 
 ### Bounded batched sizing benchmark
 
-The [frozen bootstrap package](results/batched-sizing-launch-2026-10-17/plan.json) partitions the same 550 selected inputs across eight native Java processes.
+The [frozen bootstrap package](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/batched-sizing-launch-2026-10-17/plan.json) partitions the same 550 selected inputs across eight native Java processes.
 `GeneratedReplay.java` is unchanged: each input resets the model and its original random seed within a reused workspace.
 All 6,600 outputs must match their archived measurements exactly before a successful result is reported.
 The simulation limit is one hour; bootstrap setup and execution are bounded separately.
@@ -399,7 +399,7 @@ This measures sample throughput; batch-level timing does not identify per-stratu
 
 ### Fourth remote reference checkpoint
 
-[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-005-independent-validation.json) checks 197 sealed chunks containing 19,594 remote inputs.
+[Independent validation](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/checkpoint-005-independent-validation.json) checks 197 sealed chunks containing 19,594 remote inputs.
 Combined with the retained 7,933 local inputs, coverage is **27,527/55,000 unique simulations**, with 55,054 exact Gini comparisons.
 All 53 source and dependency files match their pinned hashes.
 Earlier remote checkpoints are contained in this snapshot and are not added again.
@@ -420,7 +420,7 @@ The pinned runtime files remain in its sibling `remote-cpu-pilot-001/local-packa
 
 ### Fifth remote reference checkpoint
 
-[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-006-independent-validation.json)
+[Independent validation](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/checkpoint-006-independent-validation.json)
 checks 287 sealed chunks containing 28,556 remote inputs. Together with the retained
 7,933 local inputs, coverage is **36,489/55,000 unique simulations**, with **72,978
 exact Gini comparisons**. All 53 pinned source and runtime files match.
@@ -465,7 +465,7 @@ A second audit of the published archive reproduces the complete audit byte for b
 
 ### Sixth remote reference checkpoint
 
-[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-007-independent-validation.json)
+[Independent validation](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/checkpoint-007-independent-validation.json)
 checks 394 sealed chunks containing 39,200 remote inputs. Combined with 7,933 retained
 local inputs, coverage is **47,133/55,000 unique simulations**, with 94,266 exact Gini
 comparisons. All 53 pinned source and dependency files verify. The previous checkpoint
@@ -479,7 +479,7 @@ so this checkpoint does not complete the study.
 
 ### Seventh remote reference checkpoint
 
-[Independent validation](results/remote-reference-checkpoint-2026-10-16/checkpoint-008-independent-validation.json)
+[Independent validation](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/remote-reference-checkpoint-2026-10-16/checkpoint-008-independent-validation.json)
 now covers 48,833 distinct reference inputs and 97,666 exact Gini comparisons.
 The sealed remote archive contains 411 completed chunks with 40,900 inputs;
 the retained local baseline contributes 7,933 different inputs.
@@ -509,7 +509,7 @@ All 53 source/dependency hashes verify. Every row's index, seed, population, hor
 and both Gini values match the original reference. No interrupted row is discarded
 or counted twice; no incomplete row receives credit.
 
-The auditor derives the exact complement of validated indices. The [frozen continuation](results/terminal-reference-2026-10-17/production-plan.json)
+The auditor derives the exact complement of validated indices. The [frozen continuation](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/terminal-reference-2026-10-17/production-plan.json)
 contains only those 5,634 inputs and uses the same pinned native runner and eight workers.
 Command `cmd-tzgty` is bounded by five hours including dependency restoration; native
 execution is capped at 4.5 hours. Maximum compute at the quoted $0.0096/minute is $2.88,
@@ -523,7 +523,7 @@ python replications/raimbault_2019/audit_terminal_reference.py /path/to/remote-r
 
 ### Complete Table 2 convergence reconstruction
 
-[The convergence audit](results/convergence-2026-10-17/audit.json) reconstructs all six
+[The convergence audit](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/convergence-2026-10-17/audit.json) reconstructs all six
 Sugarscape entries in Table 2 from all 2,727,994 archived generated-landscape runs.
 Every value matches at the published three-decimal precision.
 
@@ -543,7 +543,7 @@ time-averaged Gini used for phase-diagram comparisons. The separately labeled
 moving-window diagnostic has mean ratio 88.330084 and median 88.677708.
 It is not substituted for the paper's convergence statistic.
 
-[Independent base-R validation](results/convergence-2026-10-17/independent-validation.json)
+[Independent base-R validation](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/convergence-2026-10-17/independent-validation.json)
 reads the same raw individual observations independently of Python's group outputs.
 All group counts agree; all 327,360 means, standard deviations, and ratios agree
 within 1.26e-12, below the numerical tolerance of 1e-10. This checks calculation
@@ -577,7 +577,7 @@ Applying the same generated-data feature scaling gives `(1.487007, 2.194472)`.
 The reference Moran statistic exceeds the generated-grid range, so its normalized
 value legitimately exceeds one; no clipping is applied.
 
-![Reference marker scaling diagnostic](results/morphology-2026-10-17/reference-scaling.png)
+![Reference marker scaling diagnostic](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/morphology-2026-10-17/reference-scaling.png)
 
 This diagnostic preserves the author's uncentered coordinate projection. Centering
 would translate every consistently transformed point together, and would not resolve
@@ -595,7 +595,7 @@ This completes an archived-data projection audit, not fresh generated-grid simul
 
 ## First bounded generated-ensemble production shard
 
-[The frozen production plan](results/generated-production-launch-2026-10-17) selects the first 8,000 original inputs after excluding 550 sizing inputs and seven prior probes.
+[The frozen production plan](https://github.com/Metta-AI/sugarscape/tree/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-production-launch-2026-10-17) selects the first 8,000 original inputs after excluding 550 sizing inputs and seven prior probes.
 All original columns and selection identities pass an independent source readback; original indices span 2–8,004 with excluded rows omitted.
 All selected inputs have population 10. This ordered shard is not representative of other populations or a substitute for the full 2,727,994-input ensemble.
 
@@ -624,7 +624,7 @@ Nonzero differences are retained; Gini always requires exact equality and morpho
 A discrepancy outside tolerance writes the report and exits unsuccessfully.
 Dependency binary provenance remains covered by the separate runtime preflight, rather than reconstructed by this data audit.
 
-[Validation on retained real native results](results/generated-batch-auditor-2026-10-17)
+[Validation on retained real native results](https://github.com/Metta-AI/sugarscape/tree/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-batch-auditor-2026-10-17)
 passes all 550 sizing inputs and 6,600 measurements at zero tolerance.
 This adds no simulations or unique coverage; it prepares independent validation of the queued production shard.
 
@@ -642,7 +642,7 @@ For the queued production artifact, use its recorded input archive hash, executi
 
 ## Batched full-grid cost scenario and proposed scale-up
 
-[The allocation calculation](results/batched-cost-scenario-2026-10-17/scenario.json)
+[The allocation calculation](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/batched-cost-scenario-2026-10-17/scenario.json)
 uses all 550 frozen strata and eight measured batch totals.
 For each batch, nonnegative input times summing to its observed time imply
 `min(stratum_count) * batch_time <= weighted_sample_time <= max(stratum_count) * batch_time`.
@@ -657,7 +657,7 @@ Batch startup time is included in the measured totals and allocated among sample
 The earlier separate-process estimate remains historical evidence; the new calculation is not a controlled speedup estimate.
 No new simulations are counted by this analysis.
 
-[The scale-up proposal](results/batched-cost-scenario-2026-10-17/proposal.json)
+[The scale-up proposal](https://github.com/Metta-AI/sugarscape/blob/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/batched-cost-scenario-2026-10-17/proposal.json)
 requests an additional $1,500 cap, up to eight CPU8 nodes and leases bounded to six native hours.
 It requires independent validation of the already queued 8,000-input shard before scaling.
 Each future lease must reserve its full charge against the approved remainder; no full-grid capacity has been launched by this proposal.
@@ -707,7 +707,7 @@ The command validates the new continuation; it does not reread every ancestor ar
 
 ### Complete 55,000-input reference replay
 
-[The final native archive and independent audits](results/reference-complete-2026-10-18)
+[The final native archive and independent audits](https://github.com/Metta-AI/sugarscape/tree/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/reference-complete-2026-10-18)
 add exactly 823 disjoint inputs. Command `cmd-6wygn` exited zero. All 55,000
 reference inputs now reproduce both archived Gini measurements exactly: 110,000
 comparisons after 10,000 steps per input. All 53 source/dependency hashes verify.
@@ -724,7 +724,7 @@ until its native results pass independent audit.
 
 ## First 8,000-input generated production batch audited
 
-[The completed batch](results/generated-production-complete-2026-10-18)
+[The completed batch](https://github.com/Metta-AI/sugarscape/tree/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/generated-production-complete-2026-10-18)
 passes all 8,000 inputs at the original 10,000-step horizon. The audit compares
 every selected input column directly against the original 2,727,994-row archive,
 then checks native commands, runtime pins, successful exits and all 96,000
@@ -747,7 +747,7 @@ sensitivity work remain required; no completed-paper credit is added.
 
 ## Gini acceleration qualification: no production change
 
-[A bounded local experiment](results/gini-acceleration-qualification-2026-10-19)
+[A bounded local experiment](https://github.com/Metta-AI/sugarscape/tree/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019/results/gini-acceleration-qualification-2026-10-19)
 tests replacing only the interpreted inequality loop with a strict floating-point Java extension.
 The original `[sugar] of turtles` expression still consumes random draws; sorted summation,
 arithmetic order, Lorenz points and every historical Gini value are preserved.
@@ -784,3 +784,11 @@ Shared runtime jars remain external, with dependency provenance in the receipt.
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/da3646c4b7eaa9d66b13e5e2da946a57bdaaa222/replications/raimbault_2019/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show da3646c4b7eaa9d66b13e5e2da946a57bdaaa222:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/1d5c092ec4e2b5c49312535ed7011cbe731368f9/replications/raimbault_2019) preserves the pre-cleanup files.
+To restore an input, run `git show 1d5c092ec4e2b5c49312535ed7011cbe731368f9:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.
