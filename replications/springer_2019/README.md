@@ -4,7 +4,7 @@ Status: three native implementations complete debug execution qualification afte
 
 The [ECOOP paper](https://doi.org/10.4230/LIPIcs.ECOOP.2019.17) benchmarks a Sugarscape model with movement, resource consumption, ageing, and mating. Its [official artifact](https://doi.org/10.4230/DARTS.5.2.2) contains the model, allocator implementations, dependencies, and archived reproduction instructions. The artifact is the source of truth for this study; the framework's other applications are outside its Sugarscape scope.
 
-[Source audit](results/source-2026-10-18/audit.json): archive MD5 matches the publisher's checksum; SHA-256 is `75421734305809c5999904082616996a904a19a5e43466cf076ec10660e559a1`. All archive files have recorded hashes. Four Sugarscape implementation files, configuration, build script, and benchmark driver match current GitHub revision `a4f956cd13160eb566e8a0caef6aad1e59c26da9` exactly. This comparison does not assert equality of the entire allocator library.
+[Source audit](https://github.com/Metta-AI/sugarscape/blob/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/source-2026-10-18/audit.json): archive MD5 matches the publisher's checksum; SHA-256 is `75421734305809c5999904082616996a904a19a5e43466cf076ec10660e559a1`. All archive files have recorded hashes. Four Sugarscape implementation files, configuration, build script, and benchmark driver match current GitHub revision `a4f956cd13160eb566e8a0caef6aad1e59c26da9` exactly. This comparison does not assert equality of the entire allocator library.
 
 ## Complete Sugarscape targets
 
@@ -38,13 +38,13 @@ Use `--cub artifact --source-mode archived` to preserve the initial artifact-lib
 
 ## Heap accounting before paper comparisons
 
-[The archived-source audit](results/heap-source-audit-2026-10-18/audit.json) shows that the nominal heap parameter does not mean equal allocations across implementations. BitmapAlloc allocates `3*kMallocHeapSize/4`: 6 GiB at the nominal 8 GiB default. DynaSOAr uses object capacity divided by 64, multiplied by its compiled block size; its allocator metadata is additional. The CUDA 11.8 qualification reports 6,208-byte blocks. Applying that layout to the archived default capacity implies a 1,627,389,952-byte data buffer, not 8 GiB. This is a source-derived extrapolation, not a full-capacity execution measurement.
+[The archived-source audit](https://github.com/Metta-AI/sugarscape/blob/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/heap-source-audit-2026-10-18/audit.json) shows that the nominal heap parameter does not mean equal allocations across implementations. BitmapAlloc allocates `3*kMallocHeapSize/4`: 6 GiB at the nominal 8 GiB default. DynaSOAr uses object capacity divided by 64, multiplied by its compiled block size; its allocator metadata is additional. The CUDA 11.8 qualification reports 6,208-byte blocks. Applying that layout to the archived default capacity implies a 1,627,389,952-byte data buffer, not 8 GiB. This is a source-derived extrapolation, not a full-capacity execution measurement.
 
 The artifact’s Figure 11 instructions include DynaSOAr allocator metadata in its reference budget. Their worked example uses the reported total memory usage, then passes that byte budget to mallocMC. The paper separately excludes enumeration arrays. Consequently, capacity comparisons must record heap, metadata, enumeration and static-cell allocations separately. Preserve native-default results alongside explicitly matched-budget controls; neither successful compilation nor matching nominal flags establishes equal memory budgets.
 
 ## Published capacity targets
 
-[Figure 11 targets](results/published-capacity-targets-2026-10-18/targets.json) come from the six Sugarscape vector bars on publisher PDF page 23. The retained compressed SVG preserves the source geometry; `extract_capacity_targets.py` verifies its hash and extracts each bar relative to DynaSOAr. The rendered legend and adjacent bar order were visually checked.
+[Figure 11 targets](https://github.com/Metta-AI/sugarscape/blob/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/published-capacity-targets-2026-10-18/targets.json) come from the six Sugarscape vector bars on publisher PDF page 23. The retained compressed SVG preserves the source geometry; `extract_capacity_targets.py` verifies its hash and extracts each bar relative to DynaSOAr. The rendered legend and adjacent bar order were visually checked.
 
 | Allocator | Maximum problem size relative to DynaSOAr |
 | --- | ---: |
@@ -59,7 +59,7 @@ These are digitized graphical targets, not recovered raw measurements or newly r
 
 ## Published timing targets
 
-[Figure 10 timing extraction](results/published-capacity-targets-2026-10-18/timing-targets.json) uses seven axis grid lines and the colored bars plus white enumeration caps. The CUDA bar exceeds the axis; its printed 857.1-second annotation supplies the total. Its separate enumeration time cannot be recovered from this clipped bar.
+[Figure 10 timing extraction](https://github.com/Metta-AI/sugarscape/blob/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/published-capacity-targets-2026-10-18/timing-targets.json) uses seven axis grid lines and the colored bars plus white enumeration caps. The CUDA bar exceeds the axis; its printed 857.1-second annotation supplies the total. Its separate enumeration time cannot be recovered from this clipped bar.
 
 | Implementation | Total seconds, published Titan Xp |
 | --- | ---: |
@@ -97,13 +97,13 @@ The capacity script contains unnormalized arrays and commented-out divisions for
 
 ## Full-size debug timeout
 
-[The first full-size batch](results/full-native-defaults-timeout-2026-10-18) compiled successfully but its debug process exceeded the 600-second limit. No execution completed and no release timing started. The sealed failure archive matches its export hash and preserves the executed runner, binary, log, compiler/device provenance and source manifest.
+[The first full-size batch](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/full-native-defaults-timeout-2026-10-18) compiled successfully but its debug process exceeded the 600-second limit. No execution completed and no release timing started. The sealed failure archive matches its export hash and preserves the executed runner, binary, log, compiler/device provenance and source manifest.
 
 This is incomplete execution, not a 600-second timing measurement or negative paper replication. The native program prints no per-step progress; slow execution and a stalled kernel remain unresolved. A bounded progress-observed control is needed before extending run limits or interpreting hardware performance. The remaining-allocator qualification started separately as `cmd-89573` after this failure’s evidence export.
 
 ### External allocator compiler failures
 
-[All four archived adapters](results/remaining-allocator-failures-2026-10-18) fail compilation under CUDA 11.8; no simulation starts. Diagnostics identify dependent-template calls in the shared adapter. The complete failure archive and four compiler logs are retained.
+[All four archived adapters](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/remaining-allocator-failures-2026-10-18) fail compilation under CUDA 11.8; no simulation starts. Diagnostics identify dependent-template calls in the shared adapter. The complete failure archive and four compiler logs are retained.
 
 A separate attempt inserts eight `template` keywords into existing shared-adapter calls, recording original and effective hashes. This is a local syntax correction, not an authenticated historical revision. Use `qualify_remaining_allocators.py QUALIFICATION NEW_OUTPUT --adapter-source archived` for the unchanged adapter, or `--adapter-source portable-syntax` for the declared correction. Model source and allocator algorithms remain unchanged.
 
@@ -115,16 +115,16 @@ A separate attempt inserts eight `template` keywords into existing shared-adapte
 
 ### External allocator runtime audit
 
-[All four corrected builds](results/remaining-allocator-runtime-2026-10-18) pass compilation. CUDA and BitmapAlloc each complete two debug executions. mallocMC fails twice with a `Cell_leave` occupancy assertion (exit 198); Halloc segfaults twice (signal 11). The complete native archive, source-change reconstruction, per-file hashes, binary hashes and all eight execution records are audited. These failures require implementation/toolchain investigation before any paper verdict.
+[All four corrected builds](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/remaining-allocator-runtime-2026-10-18) pass compilation. CUDA and BitmapAlloc each complete two debug executions. mallocMC fails twice with a `Cell_leave` occupancy assertion (exit 198); Halloc segfaults twice (signal 11). The complete native archive, source-change reconstruction, per-file hashes, binary hashes and all eight execution records are audited. These failures require implementation/toolchain investigation before any paper verdict.
 
 The initial progress diagnostic failed before compilation because its Python runner used syntax unsupported by Python 3.8. Its sealed failure remains retained. The runner now passes Python 3.8 grammar validation; corrected command `cmd-cyq9u` uses the same bounded protocol.
 
 
 ### Initialization and architecture diagnostics
 
-[The corrected compute-61 diagnostic](results/progress-compute61-2026-10-18) completes its 32×32 debug control through 10,000 steps. Both 1700×1700 builds time out after 120 seconds. Their final host record follows the agent-creation launch; neither returns from the subsequent existing CUDA synchronization. No simulation timestep starts. This localizes the full-size failure to initialization, without proving its underlying cause.
+[The corrected compute-61 diagnostic](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/progress-compute61-2026-10-18) completes its 32×32 debug control through 10,000 steps. Both 1700×1700 builds time out after 120 seconds. Their final host record follows the agent-creation launch; neither returns from the subsequent existing CUDA synchronization. No simulation timestep starts. This localizes the full-size failure to initialization, without proving its underlying cause.
 
-[The compute-90 comparison](results/progress-compute90-2026-10-18) changes only the target architecture in the diagnostic compilation. Its 32×32 control fails during agent creation with the allocator's `__activemask() == active` assertion. The gate prevents full-size probes. This is evidence of a target-dependent allocator failure, not proof that it explains the compute-61 timeout. Synchronization assumptions require investigation before any algorithm change or performance comparison.
+[The compute-90 comparison](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/progress-compute90-2026-10-18) changes only the target architecture in the diagnostic compilation. Its 32×32 control fails during agent creation with the allocator's `__activemask() == active` assertion. The gate prevents full-size probes. This is evidence of a target-dependent allocator failure, not proof that it explains the compute-61 timeout. Synchronization assumptions require investigation before any algorithm change or performance comparison.
 
 `audit_progress.py` verifies both sealed archives, original qualified source hashes and compiled binary hashes. Removing the declared observer restores the original statement sequence. Logs, source differences, exact compile flags and failures remain archived. The first auditor's line-diff check misclassified an unchanged synchronization statement because of diff alignment; the statement-sequence check resolves that without changing simulation code.
 
@@ -135,7 +135,7 @@ Use `diagnose_progress.py QUALIFICATION NEW_OUTPUT --architecture 61 --control-m
 
 [NVIDIA's warp-primitive documentation](https://developer.nvidia.com/blog/using-cuda-warp-level-primitives/) does not guarantee active-mask equality across instructions under independent thread scheduling. The author allocator checks that equality before synchronized shuffles. Its failure may therefore reflect a debug assumption; this remains distinct from the compute-61 initialization timeout.
 
-[The bounded release-control protocol](results/release-control-2026-10-18) uses `--architecture 90 --control-mode release --control-capacity qualified --control-size 32` without changing allocator or model code. Completing a release control would establish execution only, not correctness after assertions are disabled. The author benchmark already uses release builds. The full-size debug probe remains in the diagnostic sequence and retains its failures.
+[The bounded release-control protocol](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/release-control-2026-10-18) uses `--architecture 90 --control-mode release --control-capacity qualified --control-size 32` without changing allocator or model code. Completing a release control would establish execution only, not correctness after assertions are disabled. The author benchmark already uses release builds. The full-size debug probe remains in the diagnostic sequence and retains its failures.
 
 The first resumed attempt failed before simulation because the container reset removed system Python. Its exit-127 archive is preserved and hash-checked. Command `cmd-3ga3h` explicitly restores Python before execution, with a 20-minute outer limit including setup and a $3 budget. Its sealed-evidence collector is active; pending outputs receive no completion credit. The auditor records observed outcomes without requiring the earlier timeout to recur; both earlier archive audits reproduce byte-identically.
 
@@ -151,20 +151,20 @@ The small control reduces both grid size and allocator capacity. Those factors s
 
 `diagnose_progress.py` now requires an explicit control-capacity choice: `qualified` uses 262,144 objects, while `native` preserves the original 16,777,216-object default. `--control-only` omits already-observed full-size probes. The source transformation, random seed and 10,000-step horizon remain unchanged.
 
-Command `cmd-263ke` uses compute61, debug mode, a 32×32 grid and native capacity. It exited zero under the 60-second execution bound. [The sealed output audit](results/native-capacity-control-2026-10-18) verifies 511 qualified source files, the binary hash and completion through the final observed iteration. Compile-argument comparison confirms removal of the capacity override is the only change beyond the output path. Original capacity alone does not reproduce the initialization timeout at this small population. This control isolates capacity from the earlier small/full-grid comparison; it does not reproduce a published timing or establish full-state equivalence.
+Command `cmd-263ke` uses compute61, debug mode, a 32×32 grid and native capacity. It exited zero under the 60-second execution bound. [The sealed output audit](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/native-capacity-control-2026-10-18) verifies 511 qualified source files, the binary hash and completion through the final observed iteration. Compile-argument comparison confirms removal of the capacity override is the only change beyond the output path. Original capacity alone does not reproduce the initialization timeout at this small population. This control isolates capacity from the earlier small/full-grid comparison; it does not reproduce a published timing or establish full-state equivalence.
 
 
-The next bounded control, `cmd-c66px`, uses `--control-size 128 --control-capacity native --control-mode debug --architecture 61 --control-only`. Its 16,384 cells equal the native agent-creation launch’s 128 blocks × 128 threads, so each thread handles one cell. This separates increased population from repeated initialization-loop iterations. [The exact protocol and runner](results/grid128-control-2026-10-18) are retained; pending output earns no credit.
+The next bounded control, `cmd-c66px`, uses `--control-size 128 --control-capacity native --control-mode debug --architecture 61 --control-only`. Its 16,384 cells equal the native agent-creation launch’s 128 blocks × 128 threads, so each thread handles one cell. This separates increased population from repeated initialization-loop iterations. [The exact protocol and runner](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/grid128-control-2026-10-18) are retained; pending output earns no credit.
 
 
 ### Grid128 initialization timeout
 
-[The audited 128×128 control](results/grid128-complete-2026-10-18) times out at agent-creation synchronization after 60 seconds. It retains native allocator capacity and changes only the grid-size compile parameter relative to the passing 32×32 control. All 511 qualified source hashes and the binary hash pass audit. Each launch thread handles at most one cell, so repeated initialization-loop iterations are not required to trigger the stall.
+[The audited 128×128 control](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/grid128-complete-2026-10-18) times out at agent-creation synchronization after 60 seconds. It retains native allocator capacity and changes only the grid-size compile parameter relative to the passing 32×32 control. All 511 qualified source hashes and the binary hash pass audit. Each launch thread handles at most one cell, so repeated initialization-loop iterations are not required to trigger the stall.
 
-[Command cmd-9e7tt](results/synccheck128-2026-10-18) runs NVIDIA Compute Sanitizer 2022.3.0 synchronization checking on that exact binary under a 90-second bound. No source or compile flags change. Pending or incomplete sanitizer output is not a clean synchronization verdict.
+[Command cmd-9e7tt](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/synccheck128-2026-10-18) runs NVIDIA Compute Sanitizer 2022.3.0 synchronization checking on that exact binary under a 90-second bound. No source or compile flags change. Pending or incomplete sanitizer output is not a clean synchronization verdict.
 
 
-The synchronization probe has finished: the unchanged binary times out after 90 seconds during agent creation. The sealed archive and parent-binary hash pass readback audit. Compute Sanitizer prints its banner but no error summary; this is inconclusive, not a synchronization pass. [The captured logs and audit](results/synccheck128-2026-10-18) retain that distinction.
+The synchronization probe has finished: the unchanged binary times out after 90 seconds during agent creation. The sealed archive and parent-binary hash pass readback audit. Compute Sanitizer prints its banner but no error summary; this is inconclusive, not a synchronization pass. [The captured logs and audit](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/synccheck128-2026-10-18) retain that distinction.
 
 Read-only Docker registry checks returned 404 for three historical official tags: `9.1-devel-ubuntu16.04`, `9.1-cudnn7-devel-ubuntu16.04`, and `9.1-devel`. This rules out those tag names only; an official historical toolkit download remains a possible route to the original compiler environment. No allocator patch follows from these observations.
 
@@ -173,7 +173,7 @@ Read-only Docker registry checks returned 404 for three historical official tags
 
 [NVIDIA’s Ubuntu16.04 package index](https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/) still publishes CUDA9.1.85 compiler, runtime, headers, CURAND and license packages with SHA-256 checksums. Eight selected packages total115,764,578 bytes. The official Ubuntu16.04 amd64 image manifest is pinned to `sha256:a3785f78ab8547ae2710c89e627783cfa7ee7824d3468cae6835c9f4eae23ff7`.
 
-[Command cmd-2kpxs](results/historical-toolkit-preparation-2026-10-19) prepares an isolated root filesystem on the existing owned node. It verifies package hashes before extraction and records actual compiler/package versions. CUDA11.8 and the host driver are retained. The preparation has a30-minute outer bound and$4 budget, with sealed-evidence collection. It has not yet built or executed the historical simulation. The H100 hardware and unresolved historical compiler patch level remain differences from the paper.
+[Command cmd-2kpxs](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/historical-toolkit-preparation-2026-10-19) prepares an isolated root filesystem on the existing owned node. It verifies package hashes before extraction and records actual compiler/package versions. CUDA11.8 and the host driver are retained. The preparation has a30-minute outer bound and$4 budget, with sealed-evidence collection. It has not yet built or executed the historical simulation. The H100 hardware and unresolved historical compiler patch level remain differences from the paper.
 
 
 The first two historical-toolkit preparations stopped before image extraction because `skopeo` had no candidate in the image’s package repositories. The initial inference that `universe` was disabled was wrong: direct inspection shows it was already enabled. Both failures are preserved. The redundant task source file is retained as evidence and removed from active package sources. Command `cmd-qai56` downloads the pinned image directly, verifies every content digest, converts manifest media types to Open Container Initiative format, and uses available `umoci` for extraction. It retains the same isolated preparation and bound. No simulation has run in this environment.
@@ -181,23 +181,23 @@ The first two historical-toolkit preparations stopped before image extraction be
 
 ### Historical compiler environment validated
 
-[The completed preparation](results/historical-toolkit-complete-2026-10-19) verifies all eight NVIDIA package checksums and five official image blobs. The isolated environment reports CUDA9.1.85 and GCC5.4.0 (`5.4.0-6ubuntu1~16.04.12`). Its sealed archive matches the export hash and records installed package versions. This matches the paper’s compiler families, with OS/compiler patch-level and GPU differences retained explicitly.
+[The completed preparation](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/historical-toolkit-complete-2026-10-19) verifies all eight NVIDIA package checksums and five official image blobs. The isolated environment reports CUDA9.1.85 and GCC5.4.0 (`5.4.0-6ubuntu1~16.04.12`). Its sealed archive matches the export hash and records installed package versions. This matches the paper’s compiler families, with OS/compiler patch-level and GPU differences retained explicitly.
 
-[Command cmd-ttkdy](results/historical-native-launch-2026-10-19) now compiles fresh, unchanged artifact source using its original CUB headers. It gates debug32, debug128, full-size debug and full-size release sequentially. Capacity, seed42 and10,000 steps remain original. Compute61 PTX replaces the original sm50/sm61 cubins solely to permit execution on H100. The20-minute/$4 bound and per-execution limits are recorded; pending results receive no credit.
+[Command cmd-ttkdy](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/historical-native-launch-2026-10-19) now compiles fresh, unchanged artifact source using its original CUB headers. It gates debug32, debug128, full-size debug and full-size release sequentially. Capacity, seed42 and10,000 steps remain original. Compute61 PTX replaces the original sm50/sm61 cubins solely to permit execution on H100. The20-minute/$4 bound and per-execution limits are recorded; pending results receive no credit.
 
 
-The first historical-source build failed before simulation: `cicc` could not load the existing `libnvvm.so.3`. [The sealed failure audit](results/historical-loader-failure-2026-10-19) verifies all511 source files byte-for-byte against the publisher artifact and confirms zero executions. Retry `cmd-j4ayg` adds the extracted toolkit’s `nvvm/lib64` to the isolated loader configuration, refreshes its cache, and records the library hash. Source and compiler binaries remain unchanged. Each attempt now requires an explicit unique build directory inside `/work`.
+The first historical-source build failed before simulation: `cicc` could not load the existing `libnvvm.so.3`. [The sealed failure audit](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/historical-loader-failure-2026-10-19) verifies all511 source files byte-for-byte against the publisher artifact and confirms zero executions. Retry `cmd-j4ayg` adds the extracted toolkit’s `nvvm/lib64` to the isolated loader configuration, refreshes its cache, and records the library hash. Source and compiler binaries remain unchanged. Each attempt now requires an explicit unique build directory inside `/work`.
 
 
 ### Unchanged artifact executes under original compiler families
 
-[The historical-toolchain trial](results/historical-native-complete-2026-10-19) builds both debug controls successfully. The32×32 run completes all10,000 steps; the128×128 run exceeds60seconds. The gate prevents full-size runs. All511 artifact source files match the publisher ZIP, and both executed binaries match their recorded hashes. Original CUB, allocator code, model code, seed and capacity are retained.
+[The historical-toolchain trial](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/historical-native-complete-2026-10-19) builds both debug controls successfully. The32×32 run completes all10,000 steps; the128×128 run exceeds60seconds. The gate prevents full-size runs. All511 artifact source files match the publisher ZIP, and both executed binaries match their recorded hashes. Original CUB, allocator code, model code, seed and capacity are retained.
 
 This establishes a timeout without our CUDA11.8 syntax or CUB edits. It does not identify the timeout’s phase because this original-source trial has no progress observer. The H100/PTX execution environment still differs from TitanXp native machine code. No full-state equivalence or negative paper-replication verdict follows.
 
 ### Hardware route for the next source-fidelity control
 
-[The current compute-service check](results/hardware-route-2026-10-19/audit.json)
+[The current compute-service check](https://github.com/Metta-AI/sugarscape/blob/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019/results/hardware-route-2026-10-19/audit.json)
 finds only H100 GPU shapes in the provider's documented catalog; the owned diagnostic node is stopped with its disk intact.
 No replacement node was created. This does not establish availability at other providers.
 
@@ -212,3 +212,11 @@ Neither this hardware control nor a scheduling diagnosis has been completed; no 
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/6947bee1787c5986f2f8c6b466fb9e1204e26a44/replications/springer_2019/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 6947bee1787c5986f2f8c6b466fb9e1204e26a44:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019) preserves the pre-cleanup files.
+To restore an input, run `git show 51639f44baa9cb82343bfda4241984c197ee2207:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.
