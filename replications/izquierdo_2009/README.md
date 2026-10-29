@@ -56,7 +56,7 @@ The input is pinned by SHA-256 and available at
 [the journal's Figure 2](https://www.jasss.org/12/1/6/appendixB/EpsteinAxtell1996-2.png).
 The runner needs NumPy and Pillow; the independent verifier uses only Python's standard library.
 
-[Retained evidence](results/full-model-return-2026-10-17/report.json) contains all 18 full states across the two return paths and initial reachability path.
+[Retained evidence](https://github.com/Metta-AI/sugarscape/blob/a18abe32088f518ba30e5120ff473f7bbd4eefb3/replications/izquierdo_2009/results/full-model-return-2026-10-17/report.json) contains all 18 full states across the two return paths and initial reachability path.
 Independent arithmetic and topology checks cover 4,500 agent observations and 45,000 cell observations.
 The checker recomputes full-state hashes and verifies every wealth, lifetime, birth count, position, and landscape value.
 A complete workflow with newborn wealth increased by one fails its return assertion and creates no completion report.
@@ -75,7 +75,7 @@ python replications/izquierdo_2009/regenerate.py /new/run/capacity.csv /new/rege
 python replications/izquierdo_2009/verify_regeneration.py /new/regeneration /new/regeneration-verification
 ```
 
-[Regeneration evidence](results/regeneration-2026-10-17/report.json) starts from three reachable states, after zero, 37, and 100 warmup steps.
+[Regeneration evidence](https://github.com/Metta-AI/sugarscape/blob/a18abe32088f518ba30e5120ff473f7bbd4eefb3/replications/izquierdo_2009/results/regeneration-2026-10-17/report.json) starts from three reachable states, after zero, 37, and 100 warmup steps.
 An independent geometric replay checks 545 full states, 135,500 movement decisions, and 13,910 replacements.
 All three paths reach the same prescribed legal initial state after 135 controlled steps.
 These examples validate the implementation; the general proof establishes reachability for every state.
@@ -90,3 +90,11 @@ No empirical stationary distribution, convergence rate, or pseudorandom-generato
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/91441ad4115b0c351a654127acc29cc16ab3ea0c/replications/izquierdo_2009/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 91441ad4115b0c351a654127acc29cc16ab3ea0c:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/a18abe32088f518ba30e5120ff473f7bbd4eefb3/replications/izquierdo_2009) preserves the pre-cleanup files.
+To restore an input, run `git show a18abe32088f518ba30e5120ff473f7bbd4eefb3:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.
