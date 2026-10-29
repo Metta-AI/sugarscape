@@ -29,7 +29,7 @@ No simulation behavior changed.
 Both definitions were fixed before inspecting these Egoist comparison errors, based on prior Raw and Altruist findings.
 This does not identify the exact historical plotting revision or constitute an independent preregistered result.
 
-![Egoist reproduction and published paths](comparison.png)
+![Egoist reproduction and published paths](https://github.com/Metta-AI/sugarscape/blob/9414e7b75bd0dc444e8efe24cf2aecab529b4829/replications/blueprints_2024/results/egoistic-figures-2026-10-18/comparison.png)
 
 The six-panel comparison was visually inspected and retains both death definitions.
 This completes this model's plotted curves; the four-model ensemble and whole paper remain incomplete.

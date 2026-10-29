@@ -1,9 +1,0 @@
-{
-  "exit_code": 0,
-  "stderr": "cat: /sys/fs/cgroup/memory/memory.limit_in_bytes: No such file or directory\ncat: /sys/fs/cgroup/memory/memory.max_usage_in_bytes: No such file or directory\ncat: /sys/fs/cgroup/memory/memory.failcnt: No such file or directory\ncat: /sys/fs/cgroup/memory/memory.oom_control: No such file or directory\n",
-  "stdout": "0::/\n{\"exit_code\": -9}\n",
-  "timing_ms": {
-    "exec": 77
-  },
-  "truncated": false
-}

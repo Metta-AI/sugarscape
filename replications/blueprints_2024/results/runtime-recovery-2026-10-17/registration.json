@@ -1,8 +1,0 @@
-{
-  "command_id": "cmd-dst96",
-  "log_path": "~/.givemeanode/commands/cmd-dst96.log",
-  "max_duration_minutes": 480,
-  "note": "Registered. It starts the moment relh-sugarscape-runtime-cpu2-20261017-v2 is ready, before the idle-grace clock matters, and is killed if it runs past 480 minutes. get_command answers for it now; it never carries over into a later wake.",
-  "object": "command",
-  "state": "pending_wake"
-}

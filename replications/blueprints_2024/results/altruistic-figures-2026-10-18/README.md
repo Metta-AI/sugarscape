@@ -32,7 +32,7 @@ The all-cause comparison was specified before examining these Altruist errors,
 using the earlier Raw discrepancy. This is not independent of prior findings
 and does not identify the exact historical plotting revision.
 
-![Altruist native reproduction and published paths](comparison.png)
+![Altruist native reproduction and published paths](https://github.com/Metta-AI/sugarscape/blob/9414e7b75bd0dc444e8efe24cf2aecab529b4829/replications/blueprints_2024/results/altruistic-figures-2026-10-18/comparison.png)
 
 The comparison plot was visually inspected. Its six panels retain both death
 definitions so the released-parser mismatch remains visible.

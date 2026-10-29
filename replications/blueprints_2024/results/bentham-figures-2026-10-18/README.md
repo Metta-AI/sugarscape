@@ -16,7 +16,7 @@ All 24,229 vertices pass. Figure 6 matches all 4,987 vertices under all-cause de
 
 The all-cause definition was motivated by prior model comparisons, not selected from these Bentham errors. The historical plotting revision remains unidentified. No simulator behavior changed.
 
-![Bentham curves and published paths](comparison.png)
+![Bentham curves and published paths](https://github.com/Metta-AI/sugarscape/blob/9414e7b75bd0dc444e8efe24cf2aecab529b4829/replications/blueprints_2024/results/bentham-figures-2026-10-18/comparison.png)
 
 The six-panel comparison was visually inspected. This verifies the Bentham plotted curves against independent aggregation. [The subsequent full parser check](../bentham-parser-2026-10-18) now verifies all 30,006 values against the unchanged release. Other paper experiments remain incomplete.
 

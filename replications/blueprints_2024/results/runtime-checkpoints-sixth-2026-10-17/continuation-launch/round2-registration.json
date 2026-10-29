@@ -1,8 +1,0 @@
-{
-  "command_id": "cmd-byham",
-  "log_path": "~/.givemeanode/commands/cmd-byham.log",
-  "max_duration_minutes": 390,
-  "note": "Registered. It starts the moment relh-sugarscape-runtime2-cpu2-20261017-v1 is ready, before the idle-grace clock matters, and is killed if it runs past 390 minutes. get_command answers for it now; it never carries over into a later wake.",
-  "object": "command",
-  "state": "pending_wake"
-}

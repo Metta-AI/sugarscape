@@ -1,8 +1,0 @@
-{
-  "workload_cutoff_utc": "2026-10-18T08:34:15Z",
-  "failure": "Outer timeout terminated parent; per-input timeout process groups survived and continued writing. tar returned nonzero because trajectory files changed. Original collector failed loudly rather than accepting unstable archive.",
-  "recovery": "Recorded 120 owned descendants selected by exact output-root argument prefix; SIGTERM all, zero remaining, no forced kills. Resealed to a new archive, preserving failed partial archive on verified EBS.",
-  "required_before_reuse": "Run all experiment processes in one owned systemd service/cgroup with KillMode=control-group; validate complete process termination before sealing. Do not reuse the historical launcher unchanged.",
-  "host_shutdown_timer_utc": "2026-10-18T08:48:30Z",
-  "no_restart": true
-}

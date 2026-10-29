@@ -12,7 +12,7 @@ Deposited-runtime coverage is 935/1,200 inputs and supplementary coverage is 1,0
 
 The authors' separate [datasets repository](https://github.com/digital-terraria-lab/datasets)
 contains `blueprints-homogeneous.zip`, introduced June 12, 2024 in commit `9e78c44ca9cffefbb3593a0d490f1631da3239f2`.
-The [retained archive and audit](results/archive-audit-2026-10-15) pin repository revision
+The [retained archive and audit](https://github.com/Metta-AI/sugarscape/tree/9414e7b75bd0dc444e8efe24cf2aecab529b4829/replications/blueprints_2024/results/archive-audit-2026-10-15) pin repository revision
 `0b50404c2529aa0ab08ce14c7f7abfe30fab837e`, preserve its Unlicense, and validate:
 
 - Exactly 2,000 configurations: four decision models and 500 identical shared seeds.
@@ -22,7 +22,7 @@ The [retained archive and audit](results/archive-audit-2026-10-15) pin repositor
 
 The archive contains inputs, not result trajectories. Section IX on PDF page 20 explicitly identifies v2024.1.
 The live `Glucose/v2024.1` tag resolves to our pinned commit `b9ca671ab7591c7b3606f2d76c33eda344d626d1`.
-[Release evidence](results/release-and-runtime-audit-2026-10-17/release.json) corrects earlier notes that inferred the release solely from schema.
+[Release evidence](https://github.com/Metta-AI/sugarscape/blob/9414e7b75bd0dc444e8efe24cf2aecab529b4829/replications/blueprints_2024/results/release-and-runtime-audit-2026-10-17/release.json) corrects earlier notes that inferred the release solely from schema.
 Historical producer manifests remain unchanged; full results and runtime equivalence remain to be validated.
 
 The original decision models are `rawSugarscape`, `altruisticHalfLookaheadBinary`,
@@ -66,3 +66,11 @@ No unexplained discrepancy or operational pilot counts as a completed replicatio
 ## Preserved evidence
 
 [The full experiment record](https://github.com/Metta-AI/sugarscape/blob/69c8768600b9926b9ce2923c2d2b46040997d41b/replications/blueprints_2024/README.md) retains dated runs, budgets, failures, source hashes, figures, and detailed controls. Existing histories, outputs, and checkpoints remain unchanged. Historical launch notes do not establish current job status. Restore archived raw inputs before rerunning an analysis, as described in that record.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/9414e7b75bd0dc444e8efe24cf2aecab529b4829/replications/blueprints_2024) preserves the pre-cleanup files.
+To restore an input, run `git show 9414e7b75bd0dc444e8efe24cf2aecab529b4829:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

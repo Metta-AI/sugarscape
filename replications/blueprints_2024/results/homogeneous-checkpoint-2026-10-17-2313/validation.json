@@ -1,7 +1,0 @@
-{
-  "auditor_sha256": "825da8dd878567e08db9ab0f756802453847f349293795661108729c196de242",
-  "reconciler_sha256": "84224d745f9e0e99b168c7b6554329e6d112e9e0ea7a9d133371ebcf2df2e1e4",
-  "evidence_root": "/Users/relh/Code/workspace/sugarscape-replication-evidence/blueprints-homogeneous-checkpoint-20261017-2313",
-  "scope": "Frozen completed ledgers; read-only links to original immutable completed seed files. All trajectory data independently audited; unledgered active seed excluded. Replaced prior active-prefix audits after verifying every prior input-audit hash; retained historical intervals unchanged.",
-  "raw_data": "Retained in recorded_root directories named by the three audits; no raw trajectory copies added to Git."
-}
