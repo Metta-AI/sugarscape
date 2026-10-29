@@ -50,7 +50,7 @@ All 408 paired survivor-state hashes match, across 816 observations.
 Paired revenue differences equal recorded negative-wealth refunds, ranging from 0 to 7 sugar units.
 The survivor state includes each agent's identity, position, wealth, metabolism, and vision, plus every patch's position, current sugar, and capacity.
 
-[The 100-seed extension](results/100-seed-controls-2026-10-18) completed all 1,600 runs in 228.50 seconds under a 1,800-second bound, one active JVM processor, and 512 MiB heap.
+[The 100-seed extension](https://github.com/Metta-AI/sugarscape/tree/0cbc06af5cc0448de517591b16385130cde2ec40/replications/oremland_2014/results/100-seed-controls-2026-10-18) completed all 1,600 runs in 228.50 seconds under a 1,800-second bound, one active JVM processor, and 512 MiB heap.
 All 40,800 paired survivor-state hashes match across 81,600 observations. Revenue differences equal recorded refunds and range from 0 to 12 sugar units.
 Literal zero-rate taxation produces negative revenue in 193 of 200 runs; its range is −12 to 0. Clipped zero-rate revenue is zero throughout.
 The seed-1 trajectory is byte-identical to the earlier qualification, and compressed evidence passes lossless readback.
@@ -88,7 +88,7 @@ python run_ensemble.py /path/to/java-home /path/to/NetLogo-5.3.1/app \
 python audit_policy.py /path/to/new-policy-run 100 /path/to/new-policy-run/audit.json
 ```
 
-[The policy-indexing evidence](results/policy-indexing-2026-10-18) includes a full 1,600-run uniform regression: all 81,600 observations are byte-identical to the earlier scalar-tax implementation.
+[The policy-indexing evidence](https://github.com/Metta-AI/sugarscape/tree/0cbc06af5cc0448de517591b16385130cde2ec40/replications/oremland_2014/results/policy-indexing-2026-10-18) includes a full 1,600-run uniform regression: all 81,600 observations are byte-identical to the earlier scalar-tax implementation.
 
 One generated policy completed 400 full runs across 100 seeds, both clock phases, and both payment treatments.
 The independent audit reconstructs all 500,936 tax events from agent attributes, patch capacity, cycle, and supplied rates.
@@ -102,7 +102,7 @@ The public launcher repeats seed 1 exactly: 204 state observations and 4,846 tax
 
 ## Batch evaluation for optimization
 
-[The batch evaluator](results/batch-evaluator-2026-10-18) executes each full 50-step request without per-step observation and event exports.
+[The batch evaluator](https://github.com/Metta-AI/sugarscape/tree/0cbc06af5cc0448de517591b16385130cde2ec40/replications/oremland_2014/results/batch-evaluator-2026-10-18) executes each full 50-step request without per-step observation and event exports.
 All 400 final survivor states, populations, tax totals, and refund totals exactly match the previously audited heterogeneous workflows.
 The final implementation took 17.12 seconds; the detailed-observation run took 68.31 seconds.
 This comparison includes observation/export overhead and is not a reproduction of Table 2 timings.
@@ -281,7 +281,7 @@ A corrupted standard error is rejected. Fresh archive extraction reproduces the 
 Production transfer is gated on all 18 searches completing and passing audit; a bounded dependent watcher performs no retries.
 
 
-The [replacement timing gate](results/timing-recovery-gate-2026-10-20) additionally waits for the recovered trade ensemble.
+The [replacement timing gate](https://github.com/Metta-AI/sugarscape/tree/0cbc06af5cc0448de517591b16385130cde2ec40/replications/oremland_2014/results/timing-recovery-gate-2026-10-20) additionally waits for the recovered trade ensemble.
 The original passive watcher was stopped before benchmark admission; no native timing run was interrupted or duplicated.
 Timing inputs, repetitions, warmups, and analysis remain unchanged.
 
@@ -294,3 +294,11 @@ The production transfer comparison and visual review now pass; the completed rep
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/c1ad995a3e8c6dc7b91686e30fd772c4876cdd18/replications/oremland_2014/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show c1ad995a3e8c6dc7b91686e30fd772c4876cdd18:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/0cbc06af5cc0448de517591b16385130cde2ec40/replications/oremland_2014) preserves the pre-cleanup files.
+To restore an input, run `git show 0cbc06af5cc0448de517591b16385130cde2ec40:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

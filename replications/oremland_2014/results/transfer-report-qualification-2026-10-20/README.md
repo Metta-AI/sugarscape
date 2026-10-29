@@ -5,7 +5,7 @@ Every mean, standard error, and empirical full-search dominance decision matches
 All native inputs and output hashes are checked before reporting.
 These qualification searches all use width 50 and one optimizer seed; this is not a reduced-model transfer result.
 
-![Qualification only: held-out objectives](held-out-transfer.png)
+![Qualification only: held-out objectives](https://github.com/Metta-AI/sugarscape/blob/0cbc06af5cc0448de517591b16385130cde2ec40/replications/oremland_2014/results/transfer-report-qualification-2026-10-20/held-out-transfer.png)
 
 Each point represents one final policy. Coincident policies remain separate rows in the accompanying CSV.
 Bars show one standard error over 200 held-out simulator seeds, not simultaneous confidence intervals.
