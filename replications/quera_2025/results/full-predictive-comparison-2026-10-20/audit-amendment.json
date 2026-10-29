@@ -1,9 +1,0 @@
-{
-  "reason": "Frozen predictive auditor expected terminal record without the documented optimization audit amendment hash. Native4000trajectory run exited0; failure occurred before reading predictive data.",
-  "original_auditor_sha256": "b9d1fc3ebd4a410560428a373bbbaffe7b4dde442f6d36977ea924542f6c3848",
-  "amended_auditor_sha256": "2cf130a310431ebaf1189a318c5b9361bb82f691eb668837fde3b23a274a6262",
-  "original_failure_log_sha256": "0dbe4212f567ff011c79ba4066d24dcea3bfced37c57e0bef4cfddb9b3bdf675",
-  "optimization_amendment_sha256": "344c719312869b186e8e07d2844dfb1a56ba71c3f76981dc1b555cf8a4ea499e",
-  "native_source_or_output_changes": false,
-  "change": "Exact expected terminal includes original four fields plus independently hashed optimization amendment. All predictive data and arithmetic checks unchanged."
-}

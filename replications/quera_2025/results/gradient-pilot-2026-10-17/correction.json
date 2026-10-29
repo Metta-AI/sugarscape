@@ -1,5 +1,0 @@
-{
-  "previous_attempt": "quera-gradient-pilot-001",
-  "failure": "ForwardDiff configuration and evaluation used separate anonymous function identities",
-  "fix": "Use the same objective closure for configuration and evaluation; no model/protocol change"
-}

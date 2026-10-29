@@ -82,7 +82,7 @@ At transition 24, step 0.01 gives:
 
 Vision discrepancies persist at step 0.05. The p1 FD means in the two halves are -9.29055 and -9.11920 at that step, versus -6.51086 and -9.84205 at step 0.001. The smallest step has greater uncertainty. Continuous-parameter differences are smaller; several pointwise intervals exclude zero at step 0.05, so this is not evidence of exact equality or unbiased AD.
 
-![All reconstructed gradient estimates and pointwise intervals](results/gradient-ensemble-2026-10-17/gradients.png)
+![All reconstructed gradient estimates and pointwise intervals](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/gradient-ensemble-2026-10-17/gradients.png)
 
 This broadly agrees with the paper’s qualitative distinction between continuous and categorical gradient quality. It does not quantitatively reproduce Figure 11: historical wealth scaling, observable normalization, and exact experiment settings remain unresolved. No new completed-paper credit is assigned.
 
@@ -104,7 +104,7 @@ The pinned repository head also contains later CI-only changes; it is not claime
 Its masked autoregressive constructor creates two blocks per layer, followed by `LULinearPermute`, with a diagonal Gaussian base.
 Calling it with six dimensions, four layers, and 32 hidden units matches the paper’s stated architecture.
 The author’s ordinary-normal inference workflow completed unchanged in an isolated Julia depot; all 18 checks passed (see validation below).
-[The launch manifest](results/flow-recovery-2026-10-17/manifest.json) retains source and lockfile hashes.
+[The launch manifest](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/flow-recovery-2026-10-17/manifest.json) retains source and lockfile hashes.
 Python Torch 2.6.0 and normflows 1.7.3 are explicit reconstruction choices; the author’s CI installs these packages without version pins.
 This establishes wrapper execution, but does not establish Sugarscape calibration.
 
@@ -148,7 +148,7 @@ The original forward pilot is retained in `results/native-pilot-2026-10-17`; its
 
 ## Author flow workflow executed successfully
 
-[The recovered wrapper’s unmodified test suite](results/flow-validation-2026-10-17/validation.json) exits zero after 278.1 seconds, including dependency setup.
+[The recovered wrapper’s unmodified test suite](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/flow-validation-2026-10-17/validation.json) exits zero after 278.1 seconds, including dependency setup.
 All 18 existing author checks pass: flow sampling/densities, Zygote derivatives, and the complete normal-data inference workflow.
 The latter executes 1,000 optimization iterations and checks posterior sample means against true mean 0.5 and scale 2.0 with tolerance 0.25.
 Both posterior checks pass; the original workflow does not export its posterior samples.
@@ -166,7 +166,7 @@ The pinned `DiffBeta` implementation samples
 Its cumulative distribution is `1 - (1 - x^a)^b`, and its moments are `E[X^r] = b B(1+r/a, b)`.
 This differs from the Beta distribution named in the paper.
 
-[The initialization analysis](results/initialization-law-2026-10-17/analysis.json)
+[The initialization analysis](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/initialization-law-2026-10-17/analysis.json)
 holds the native offsets and scales fixed to isolate the distribution choice:
 
 | Parameter | Shapes | Native expected value | Beta expected value with same scaling |
@@ -175,20 +175,20 @@ holds the native offsets and scales fixed to isolate the distribution choice:
 | Initial wealth (`6 + 19X`) | 5, 2 | 20.393939 | 19.571429 |
 
 On a 100,001-point unit grid, maximum cumulative-distribution differences are 0.204684 and 0.115814 respectively.
-[Independent R integration](results/initialization-law-2026-10-17/independent-audit.json)
+[Independent R integration](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/initialization-law-2026-10-17/independent-audit.json)
 verifies moments and reference distribution values in 2,014 comparisons, with maximum error 1.09e-12.
 The analysis checks source revision, clean tracked files, trace configuration, and all six input CSV hashes.
 Observed initialization means across 300 agents from the three validated native trajectories are 2.754051 and 20.310633.
 These observations are descriptive; no statistical rejection or calibrated-posterior claim follows.
 
-![Native initialization distributions and the stated Beta distributions](results/initialization-law-2026-10-17/initialization-cdfs.png)
+![Native initialization distributions and the stated Beta distributions](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/initialization-law-2026-10-17/initialization-cdfs.png)
 
 `analyze_initialization.py SOURCE TRACE NEW_OUTPUT` reproduces the analysis from the retained movement traces.
 The native sampler remains unchanged. Its effect on the paper’s calibration comparisons still requires investigation.
 
 ## Refreshed calibration-source search
 
-[The source inventory](results/calibration-fidelity-2026-10-17/audit.json) records freshly
+[The source inventory](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/calibration-fidelity-2026-10-17/audit.json) records freshly
 fetched main/submission revisions for DiffABM and BlackBIRDS. DiffABM's author-opened
 [issue to add a Sugarscape training example](https://github.com/arnauqb/DiffABM.jl/issues/3)
 remains open, without comments. The repository has no release assets supplying an
@@ -229,7 +229,7 @@ Use `baseline` instead of `perturbed` for unperturbed cases. The auditor preserv
 
 ## Complete perturbed trajectory replay
 
-[All 9,216 diagnostic cases](results/perturbed-movement-complete-2026-10-18) now pass independent replay: 256 seeds × six parameters × three finite-difference step sizes × two directions. The 36 qualification cases and 9,180 continuation cases are disjoint and exhaust this declared grid. Replay verifies **22,118,400 agent updates and 552,960,000 cell updates with zero state error**.
+[All 9,216 diagnostic cases](https://github.com/Metta-AI/sugarscape/tree/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/perturbed-movement-complete-2026-10-18) now pass independent replay: 256 seeds × six parameters × three finite-difference step sizes × two directions. The 36 qualification cases and 9,180 continuation cases are disjoint and exhaust this declared grid. Replay verifies **22,118,400 agent updates and 552,960,000 cell updates with zero state error**.
 
 The continuation exited zero in 866.5 seconds; its separate replay also exited zero. Compressed per-case audits, native manifests, passive parity records, executed Julia source, Python auditor and exact commands are retained. The 1.91 GB native trace upload exited zero. The remote checksum manifest matches local bytes; complete individual-object readback is documented below.
 
@@ -237,7 +237,7 @@ This validates the reconstructed diagnostic trajectories. It does not recover Fi
 
 ## Published calibration-loss coordinates
 
-[The figure extraction](results/calibration-loss-figure-2026-10-19/audit.json) recovers
+[The figure extraction](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/calibration-loss-figure-2026-10-19/audit.json) recovers
 7,549 displayed vertices from the four loss paths in Figure19(b).
 The Figure19 caption identifies faint paths as raw iteration losses and solid paths as moving averages.
 The averaging width and exact training/validation objective remain unspecified.
@@ -259,7 +259,7 @@ These simplified plot vertices are comparison targets, not recovered raw loss re
 
 ## Complete calibration figure plan
 
-[The gated renderer](results/calibration-figure-plan-2026-10-20) covers posterior predictive trajectories, joint parameter samples, and complete training histories.
+[The gated renderer](https://github.com/Metta-AI/sugarscape/tree/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/calibration-figure-plan-2026-10-20) covers posterior predictive trajectories, joint parameter samples, and complete training histories.
 It waits for both 5,000-epoch audits, all 4,000 predictive trajectories, and independent R arithmetic before consuming those outputs.
 It verifies input hashes and retains all 1,000 samples per distribution.
 Predictive bands are pointwise empirical 95% intervals, not simultaneous coverage.
@@ -272,7 +272,7 @@ R syntax and Python lint checks pass. Rendering and visual inspection remain pen
 
 ## Full pathwise calibration and precision audit correction
 
-[The first complete calibration arm](results/pathwise-full-calibration-2026-10-20) finished all 5,000 epochs without changing the frozen training method.
+[The first complete calibration arm](https://github.com/Metta-AI/sugarscape/tree/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/pathwise-full-calibration-2026-10-20) finished all 5,000 epochs without changing the frozen training method.
 Independent replay checks 95,570,000 optimizer components and 25,000 validation draws.
 The maximum optimizer difference is 2.991e-8, within the original unchanged tolerances.
 The fixed validation rule selects epoch 413, with loss −128.47138168836435.
@@ -303,7 +303,7 @@ python seal_training.py NATIVE NEW_AUDIT.json NATIVE_EXIT.json 5000 NEW_ARCHIVES
 
 ## Complete perturbed trace storage readback
 
-[Fresh remote readback](results/perturbed-storage-readback-2026-10-20) verifies all 36,724 objects, totaling 1,908,595,493 bytes, against the pinned manifest.
+[Fresh remote readback](https://github.com/Metta-AI/sugarscape/tree/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/perturbed-storage-readback-2026-10-20) verifies all 36,724 objects, totaling 1,908,595,493 bytes, against the pinned manifest.
 The 36,720 trace files cover exactly the 9,180 continuation cases already checked by independent state replay.
 The final audit rehashes the complete downloaded set and checks exact case coverage.
 Earlier interrupted downloads remain preserved; transition audits confirm previously verified files retained their hashes, sizes, and modification times.
@@ -312,7 +312,7 @@ This closes the remote evidence verification gap without rerunning simulations o
 
 ## Full VarGrad calibration
 
-[The second complete arm](results/vargrad-full-calibration-2026-10-20) finished 5,000 epochs in 2,295.48 seconds with unchanged frozen sources and seeds.
+[The second complete arm](https://github.com/Metta-AI/sugarscape/tree/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/vargrad-full-calibration-2026-10-20) finished 5,000 epochs in 2,295.48 seconds with unchanged frozen sources and seeds.
 All 5,000 native Float32 norms reproduce exactly; independent replay verifies 95,570,000 optimizer components and 25,000 validation draws.
 The maximum optimizer difference is 2.987e-8 under the unchanged acceptance tolerances.
 The fixed validation rule selects epoch 105, with loss 27.820718920231442.
@@ -326,7 +326,7 @@ The predictive comparison and final method assessment remain separate requiremen
 
 ## Complete predictive comparison
 
-[All 4,000 predictive trajectories](results/full-predictive-comparison-2026-10-20) completed: 1,000 each from the prior, pathwise posterior, VarGrad posterior, and true-parameter control.
+[All 4,000 predictive trajectories](https://github.com/Metta-AI/sugarscape/tree/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/full-predictive-comparison-2026-10-20) completed: 1,000 each from the prior, pathwise posterior, VarGrad posterior, and true-parameter control.
 Python checks all 200,000 stored states and export invariants. Independent R verifies 1,712 summary values with maximum scaled difference 3.80e-16.
 Fresh remote archive readback verifies every native export and analysis member.
 
@@ -342,7 +342,7 @@ These results use one optimization seed per estimator and the declared reconstru
 They support better pathwise predictive agreement in this run, not a general method ranking or historical numerical identity.
 Broad prior intervals illustrate why interval inclusion alone does not establish calibration quality.
 
-The [predictive bands](results/full-predictive-comparison-2026-10-20/predictive.pdf), [joint parameter samples](results/full-predictive-comparison-2026-10-20/posterior-pairs.pdf), and [complete training histories](results/full-predictive-comparison-2026-10-20/training.pdf) were rendered and visually inspected.
+The [predictive bands](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/full-predictive-comparison-2026-10-20/predictive.pdf), [joint parameter samples](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/full-predictive-comparison-2026-10-20/posterior-pairs.pdf), and [complete training histories](https://github.com/Metta-AI/sugarscape/blob/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025/results/full-predictive-comparison-2026-10-20/training.pdf) were rendered and visually inspected.
 All 1,000 samples per distribution and 5,000 epochs per estimator are retained without smoothing.
 The first posterior plot clipped parameter labels; a separate spacing-only correction preserves the original render and all data hashes.
 
@@ -354,3 +354,11 @@ Whole-method synthesis remains separate from these completed predictive checks.
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/39b0cf9e9b433fe0eaf7bd9883ece6871074b022/replications/quera_2025/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 39b0cf9e9b433fe0eaf7bd9883ece6871074b022:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025) preserves the pre-cleanup files.
+To restore an input, run `git show 521fd3cea19c1c3ec60f84419fa9101ec1e62535:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.
