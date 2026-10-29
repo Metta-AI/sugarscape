@@ -4,3 +4,6 @@ results/**/*.log
 results/**/*.log.gz
 results/**/*.csv
 results/**/audit.json
+
+# Generated experiment evidence is kept outside the review diff.
+/results/

@@ -40,7 +40,7 @@ It also checks native completion, initial population 400, parental fertility, an
 
 ## Evidence
 
-[Five complete workflows](results/pilot-2026-10-16/comparison.json) validate 17,500 scalar observations.
+[Five complete workflows](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2003/results/pilot-2026-10-16/comparison.json) validate 17,500 scalar observations.
 Two response-policy runs produce identical bytes in all ten native data files.
 All four seed-zero, threshold-one policy conditions become extinct; their birth counts are 817 (response), 300 (none), 685 (read), and 625 (expiry-one).
 These pilots do not reproduce the paper's survival findings and do not justify a negative replication.
@@ -85,7 +85,7 @@ The pilot accepts `--reproduction released` to retain recovered reproduction rul
 Defaults remain specified reproduction and one subcycle. The frozen grid and its auditor cover those defaults only.
 These switches isolate candidate causes; neither setting establishes the unpublished historical schedule.
 
-[Nine bounded diagnostics](results/diagnostics-2026-10-16/comparison.json) retain 31,500 scalar observations and all native outputs.
+[Nine bounded diagnostics](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2003/results/diagnostics-2026-10-16/comparison.json) retain 31,500 scalar observations and all native outputs.
 All use seed zero and 500 cycles; they are diagnostics, not additional independent replication seeds.
 
 | Reproduction | Subcycles | Policy | Threshold | Births | Outside own fertility range | At/below sugar threshold | Final population |
@@ -112,7 +112,7 @@ It checks all cell plants and the redistribution bin at each recording boundary.
 Every seed must be unique within that inventory, with 500 seeds total, 125 of each maximum size 1–4, and growth rate three.
 Each plant's reported sugar must equal the sum of its seeds' current contents; each seed remains within its capacity.
 
-[Four conditions plus a final-runner repeat](results/resource-audit-2026-10-16/comparison.json) pass 2,500 cycle-boundary checks and all 50 native-file parity comparisons.
+[Four conditions plus a final-runner repeat](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2003/results/resource-audit-2026-10-16/comparison.json) pass 2,500 cycle-boundary checks and all 50 native-file parity comparisons.
 Conditions cover specified/released reproduction, one/two subcycles, and response/no communication, all at seed zero and threshold one.
 These are diagnostic observations, not additional independent replication seeds.
 
@@ -125,3 +125,11 @@ No seed loss or plant-accounting discrepancy appears at the checked boundaries. 
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/e952b1a3c3cb5749cea08bafd3a63e734535e855/replications/buzing_2003/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show e952b1a3c3cb5749cea08bafd3a63e734535e855:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2003) preserves the pre-cleanup files.
+To restore an input, run `git show 3a654712cb6f87b104c052b30d65d17fc4279c6c:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.
