@@ -287,7 +287,7 @@ One-thread outputs match exactly; two-thread and four-thread pairs differ in 95 
 The parallel movement loop calls a shared unsynchronized random generator.
 Address/undefined-behavior sanitizers report no violation, but their single-thread trajectory differs from the ordinary build in 97 observations.
 Source inspection also finds uninitialized world spice-metabolism bounds read during agent construction.
-[Runtime evidence](source-audits/kehoe-runtime-diagnostics/diagnosis.json) preserves both issues; neither successful execution nor a quiet sanitizer establishes fidelity.
+[Runtime evidence](https://github.com/Metta-AI/sugarscape/blob/b267f319275dbab9246ecdf1da221c2d170c1a9e/replications/source-audits/kehoe-runtime-diagnostics/diagnosis.json) preserves both issues; neither successful execution nor a quiet sanitizer establishes fidelity.
 
 A controlled storage-pattern experiment confirms the Kehoe constructor leaves both spice-metabolism bounds uninitialized.
 Zero-filled storage yields bounds 0/0; one-filled bytes yield 16,843,009/16,843,009.
@@ -311,14 +311,14 @@ The recovered JAWAS archive has no identified generator matching its formal pred
 Visual inspection also finds temporal inequalities that differ from the prose, requiring explicit interpretation before reproducing the property results.
 Exact settings, trace boundaries, and original property files remain unresolved. No simulation or completed-study credit is claimed.
 
-The archived newscast cache defect now has [native execution evidence](source-audits/jawas-newscast-native-2026/validation.json).
+The archived newscast cache defect now has [native execution evidence](https://github.com/Metta-AI/sugarscape/blob/b267f319275dbab9246ecdf1da221c2d170c1a9e/replications/source-audits/jawas-newscast-native-2026/validation.json).
 In a 100-cycle, seed-zero run using archived defaults, the selector returned the wrong message in 803,270 of 811,582 unique-oldest cases.
 Passive instrumentation preserves all ten recorded data files byte-for-byte, and the configuration is unchanged.
 Changing only the single-candidate return expression changes the final population from 90 to 148.
 This is an implementation sensitivity diagnostic, not a paper replication: the archive version, default population, horizon, and parameter grid differ from the Eiben/Schut/Vink experiment.
 The paper-level conclusion remains unresolved; these runs establish a concrete defect that must be investigated before interpreting protocol comparisons.
 
-The [original bundled bytecode](source-audits/jawas-newscast-native-2026/bytecode-audit.json) independently confirms both cache-selection expressions.
+The [original bundled bytecode](https://github.com/Metta-AI/sugarscape/blob/b267f319275dbab9246ecdf1da221c2d170c1a9e/replications/source-audits/jawas-newscast-native-2026/bytecode-audit.json) independently confirms both cache-selection expressions.
 Its unique-candidate branch returns the last enumerated key, and its tie branch passes `size - 1` to `Random.nextInt`.
 The class and source bytes were verified against the original archive members; neither expression originated in our recompilation or instrumentation.
 ZIP timestamps record June 2004 for the class and March 2004 for the source.
@@ -381,6 +381,14 @@ Brearcliffe Q/Q now completes all 50 seeds, bringing coverage to 553 inputs and 
 
 The [related reinforcement-learning repository audit](source-audits/market-genetic-rlearners-2026-10-19/README.md) verifies 13 source files, four driver revisions, and eight population traces. Its 200-agent, 10,000-period protocol differs from the Market Algorithm paper; it adds no replication credit.
 
-[Hawick’s 2014 geometry study](source-audits/hawick-2014/audit.json) is an additional candidate. Public author text was located, but original Java code and complete execution settings remain unverified. The author host no longer resolves; publisher/PDF retrieval failed. Targeted GitHub repository search found no match, while code search was unavailable. No simulation or completion credit is added.
+[Hawick’s 2014 geometry study](https://github.com/Metta-AI/sugarscape/blob/b267f319275dbab9246ecdf1da221c2d170c1a9e/replications/source-audits/hawick-2014/audit.json) is an additional candidate. Public author text was located, but original Java code and complete execution settings remain unverified. The author host no longer resolves; publisher/PDF retrieval failed. Targeted GitHub repository search found no match, while code search was unavailable. No simulation or completion credit is added.
 
 Verbose audit dumps are retained in the [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/81e4a35ecb71bbd6535ebeebe92aed8cc4d30787/replications). Existing local files are unchanged. Before running an archived-input verifier, restore its input with `git show 81e4a35ecb71bbd6535ebeebe92aed8cc4d30787:PATH > /absolute/output/path`, using the repository-relative `PATH`. Concise findings and reproduction code remain tracked.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/b267f319275dbab9246ecdf1da221c2d170c1a9e/replications) preserves the pre-cleanup files.
+To restore an input, run `git show b267f319275dbab9246ecdf1da221c2d170c1a9e:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

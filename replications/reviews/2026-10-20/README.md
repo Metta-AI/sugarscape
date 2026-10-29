@@ -18,7 +18,7 @@ It also reruns the substantive checks below. It does not rerun every ensemble, t
 | Brearcliffe | All 1,600 input hashes, thirty-two cohort checks, storage linkage and final claim evidence | Every report field matches the completed-study review |
 
 `review.json.gz` records source commits, evidence hashes and comparison details.
-[Fresh publication verification](publication-audit.json) checks all ten remote PR heads and README hashes after the Dogan fix.
+[Fresh publication verification](https://github.com/Metta-AI/sugarscape/blob/b267f319275dbab9246ecdf1da221c2d170c1a9e/replications/reviews/2026-10-20/publication-audit.json) checks all ten remote PR heads and README hashes after the Dogan fix.
 Fresh audit outputs accompany this report; the original study PRs retain native data and their complete reproduction commands.
 The compressed report's `fresh_report` paths resolve relative to this directory.
 JSON parsing and document links establish evidence integrity and usability, not model correctness; the separate native checks provide the substantive validation.

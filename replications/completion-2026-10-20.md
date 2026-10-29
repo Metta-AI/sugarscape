@@ -18,7 +18,7 @@ Dogan is an unpublished working paper; this is not a claim of ten peer-reviewed 
 | Oremland 2014 | Sugarscape convergence, reduction, ranking, optimization, held-out transfer and timing. Independent reconstruction with qualified historical settings. | [21](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/21) |
 | Brearcliffe 2020/2021 | All 1,600 native runs, both parameter interpretations and claim analyses. Mixed endpoint agreement; recorder correction and unavailable historical seeds documented. | [23](https://app.graphite.dev/github/pr/Metta-AI/sugarscape/23) |
 
-The [publication audit](completion-publication-audit-2026-10-20.json) freshly checks all ten remote PR heads against the ledger's commit and README hashes.
+The [publication audit](https://github.com/Metta-AI/sugarscape/blob/b267f319275dbab9246ecdf1da221c2d170c1a9e/replications/completion-publication-audit-2026-10-20.json) freshly checks all ten remote PR heads against the ledger's commit and README hashes.
 The [evidence ledger](study-evidence.json) records precise scopes, qualifications and source locations.
 Those checks establish publication integrity; scientific validation comes from each study's native workflows, independent checks and discrepancy reviews.
 
