@@ -44,7 +44,7 @@ The source model's loop advances while scheduled time is below the requested fin
 
 ## Pilot evidence
 
-[Retained evidence](results/pilot-2026-10-15) contains two byte-identical seed-zero runs, each reaching time 1,000.
+[Retained evidence](https://github.com/Metta-AI/sugarscape/tree/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007/results/pilot-2026-10-15) contains two byte-identical seed-zero runs, each reaching time 1,000.
 All 101 observations have finite statistics, consecutive ten-step sampling times, and population 250.
 The manifest hashes the source files, dependencies, configuration, and resulting trajectory.
 The original failed headless attempt and its stack trace are retained: chart display was enabled in the supplied configuration.
@@ -75,7 +75,7 @@ Several reproduction cases emit nonfinite Gini statistics; the trade output cont
 These runs use new seed zero and a common 1,000 scheduled-time horizon, not a recovered paper protocol.
 
 A read-only `AuditReplay.java` inspects the live population counter, grid, and agent registry without changing native output.
-Its `fig3-5` output is byte-identical to the original run, but [population accounting](results/all-showcases-2026-10-15/population-registry-audit.json) disagrees from reported time 13.
+Its `fig3-5` output is byte-identical to the original run, but [population accounting](https://github.com/Metta-AI/sugarscape/blob/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007/results/all-showcases-2026-10-15/population-registry-audit.json) disagrees from reported time 13.
 At that point the counter reports 413 agents, the grid contains 405 living agents, and the registry contains 400.
 At the end those counts are 689, 683, and zero.
 
@@ -101,7 +101,7 @@ python replications/bigbee_2007/audit_showcases.py /absolute/evidence/corrected 
 python replications/bigbee_2007/audit_populations.py /absolute/evidence/corrected /absolute/evidence/population-audit
 ```
 
-[Corrected evidence](results/corrected-showcases-2026-10-15) retains all 34 native trajectories, compilation records, manifests, and seventeen population-observer trajectories.
+[Corrected evidence](https://github.com/Metta-AI/sugarscape/tree/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007/results/corrected-showcases-2026-10-15) retains all 34 native trajectories, compilation records, manifests, and seventeen population-observer trajectories.
 All seventeen repeated pairs match byte-for-byte across 28,466 native observations.
 Core statistics are finite and every output row matches its header width.
 Average trade price remains undefined when no trades occur; no replacement value is introduced.
@@ -114,7 +114,7 @@ Original failing measurements remain alongside the corrected comparison.
 
 ## Recovered historical release and published chapter
 
-[Source comparison](results/historical-source-2026-10-16/comparison.json) verifies the archive’s SHA-1 against the Google Code download catalog and records SHA-256 provenance.
+[Source comparison](https://github.com/Metta-AI/sugarscape/blob/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007/results/historical-source-2026-10-16/comparison.json) verifies the archive’s SHA-1 against the Google Code download catalog and records SHA-256 provenance.
 The archive contains MASON 12 and Sugarscape 1.1.2; its README is dated November 25, 2007.
 It still warns that post-thesis fixes can change outcomes, so it is not an authenticated experiment snapshot.
 
@@ -137,7 +137,7 @@ Both configuration versions and their hashes remain preserved in the comparison 
 
 ## Native historical-release audit
 
-[Retained native evidence](results/historical-native-2026-10-16/audit.json) covers replacement (`anim2-3`) and reproduction (`fig3-4`, `fig3-5`).
+[Retained native evidence](https://github.com/Metta-AI/sugarscape/blob/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007/results/historical-native-2026-10-16/audit.json) covers replacement (`anim2-3`) and reproduction (`fig3-4`, `fig3-5`).
 Each uses seed zero and a 1,000 scheduled-time limit, with two native repeats and one read-only population observer.
 All nine runs exit successfully; repeats and observer output match byte-for-byte within each configuration.
 
@@ -160,7 +160,7 @@ They do not authenticate the historical experiment version or establish a negati
 ## MASON 10 framework comparison
 
 The [toolkit authors' release catalog](https://people.cs.gmu.edu/~eclab/projects/mason/) still provides `mason10.zip`.
-[Provenance and runtime comparison](results/mason10-runtime-2026-10-16/validated-runtime-comparison.json) pin the archive and loaded classes.
+[Provenance and runtime comparison](https://github.com/Metta-AI/sugarscape/blob/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007/results/mason10-runtime-2026-10-16/validated-runtime-comparison.json) pin the archive and loaded classes.
 The archive contains no Sugarscape model, so recovering it does not authenticate the missing experiment snapshot.
 
 The unchanged recovered 1.1.2 model runs with MASON 10 classes before its bundled framework on the classpath.
@@ -178,7 +178,7 @@ It does not establish that the paper used this model revision or justify a negat
 
 ## Historical download catalog recheck
 
-[The complete Google Code download catalog](results/source-catalog-2026-10-18) lists only versions 1.1.2 and 1.1.3.
+[The complete Google Code download catalog](https://github.com/Metta-AI/sugarscape/tree/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007/results/source-catalog-2026-10-18) lists only versions 1.1.2 and 1.1.3.
 The 1.1.2 checksum matches the previously recovered and executed archive.
 Its description dates the release to 2007; the catalog upload occurred in 2011.
 Those dates are not interchangeable and neither proves which revision produced the paper’s results.
@@ -195,7 +195,7 @@ No earlier experiment snapshot was recovered from this catalog; other historical
 
 ## Earlier package archive index
 
-[Two bounded Wayback CDX prefix queries](results/earlier-package-index-search-2026-10-19) returned HTTP200 with no capture rows for the author’s former Mac download directory or Java.net project.
+[Two bounded Wayback CDX prefix queries](https://github.com/Metta-AI/sugarscape/tree/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007/results/earlier-package-index-search-2026-10-19) returned HTTP200 with no capture rows for the author’s former Mac download directory or Java.net project.
 This extends the earlier exact-URL availability checks; it does not establish absence from other archives or URLs.
 The unresolved artifact is the paper-era Sugarscape model source. MASON10 itself has already been recovered and tested above.
 
@@ -206,3 +206,11 @@ The unresolved artifact is the paper-era Sugarscape model source. MASON10 itself
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/978716243eba3cda59175816142f5a28615ef95d/replications/bigbee_2007/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 978716243eba3cda59175816142f5a28615ef95d:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007) preserves the pre-cleanup files.
+To restore an input, run `git show 1b4cd0477036d28b2f117a0d1b724424d40fa9b3:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.
