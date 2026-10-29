@@ -87,13 +87,13 @@ At every step it compares agent positions and sugar, all 2,500 cells, occupancy,
 Run it with `.venv/bin/python replications/mcculloch_2022/test_equivalence.py`.
 
 An additional 660 independent runs matched **all 66,660 population observations** in the author-code ensemble exactly.
-The [comparison record](results/independent-2026-10-15/comparison.json), raw trajectories, and source provenance are retained.
+The [comparison record](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/independent-2026-10-15/comparison.json), raw trajectories, and source provenance are retained.
 These checks reduce the risk of mistaking our implementation errors for a negative replication.
 They do not resolve differences between the paper's prose and its released source, or recover unpublished original seeds.
 
 The authors do not pin a Mesa version. Both 0.8.7 and 0.8.8 predate the February 2021 archived experiments.
 Repeating the first 30 seeds at all three parameter pairs under Mesa 0.8.7 matched all 9,090 population observations
-from Mesa 0.8.8 exactly. See [dependency validation](results/mesa087-2026-10-15/dependency-validation.json).
+from Mesa 0.8.8 exactly. See [dependency validation](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/mesa087-2026-10-15/dependency-validation.json).
 This rules out that specific version difference as an explanation; it does not identify the authors' original environment.
 
 ## Calibration outcome
@@ -138,3 +138,11 @@ Regenerate the summary and figure from that archived input:
 ```
 
 Use `run.py --engine dtl` or `--engine author-mesa` to execute either stage separately.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022) preserves the pre-cleanup files.
+To restore an input, run `git show e72314ec4d198476ca2351d6cb4e6b71e4078c07:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

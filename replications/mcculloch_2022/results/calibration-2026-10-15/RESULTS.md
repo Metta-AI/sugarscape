@@ -25,7 +25,7 @@ The three-particle lead of (3,2) over (4,7) does not establish a different under
 Likewise, one different history-matching path does not refute the published ten-wave realization.
 Those outcomes must not be counted as validated negative findings by themselves.
 
-![Published, full-pipeline, and fixed-prior posterior distributions](posterior.png)
+![Published, full-pipeline, and fixed-prior posterior distributions](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/calibration-2026-10-15/posterior.png)
 
 Regenerate all checks and the plot from this committed directory:
 

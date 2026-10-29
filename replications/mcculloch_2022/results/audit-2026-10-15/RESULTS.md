@@ -17,4 +17,4 @@ These comparisons cannot validate the unimplemented history-matching and posteri
 
 Thin lines show the first 30 runs; thick lines show means over all recorded seeds.
 
-![Population trajectories and post-step-30 changes](population.png)
+![Population trajectories and post-step-30 changes](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/audit-2026-10-15/population.png)

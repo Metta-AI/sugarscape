@@ -39,9 +39,9 @@ It shows that their released model does not reproduce the all-runs exact-stabili
 ## Evidence and limits
 
 The [initial audit](results/audit-2026-10-15/RESULTS.md),
-[independent trajectories](results/independent-2026-10-15/comparison.json),
-[dependency check](results/mesa087-2026-10-15/dependency-validation.json),
-[complete variance experiment](results/variance-2026-10-15/summary.json), and
+[independent trajectories](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/independent-2026-10-15/comparison.json),
+[dependency check](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/mesa087-2026-10-15/dependency-validation.json),
+[complete variance experiment](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/variance-2026-10-15/summary.json), and
 [calibration report](results/calibration-2026-10-15/RESULTS.md) retain configurations, seeds, hashes, and results.
 See the README and committed protocols for executable commands.
 
@@ -51,7 +51,7 @@ At n=220, the new independent variances are 13.622, 15.634, and 18.487;
 the released values are 12.997, 12.047, and 18.340.
 Pointwise bootstrap intervals describe uncertainty in new samples only; they are not simultaneous two-sample equivalence tests.
 
-![Ensemble-size comparison; shaded bands describe the independent runs](results/variance-2026-10-15/variance.png)
+![Ensemble-size comparison; shaded bands describe the independent runs](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/variance-2026-10-15/variance.png)
 
 The paper and released code also differ in their uncertainty formulas.
 This study reproduces the released calibration implementation: twice the mean variance of absolute errors for history matching,
