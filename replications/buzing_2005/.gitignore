@@ -1,7 +1,9 @@
-
-results/**/*.jsonl
+results/**/*.avg
+results/**/*.sum
+results/**/*.bin
 results/**/*.log
-results/**/*.log.gz
+results/**/*.stderr
+results/**/*.jsonl
 results/**/*.csv
 results/**/audit.json
 

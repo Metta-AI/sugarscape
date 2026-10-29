@@ -83,7 +83,7 @@ The original variant remains available explicitly as `original SEED` for compari
 Manifests record every compiled source hash, exact replacement counts, seed, runtime, configuration, and output hashes.
 No source from the archive is redistributed.
 
-[Three completed workflows](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/seed-control-2026-10-15/comparison.json) validate 2,100 scalar observations.
+[Three completed workflows](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/seed-control-2026-10-15/comparison.json) validate 2,100 scalar observations.
 Two independent seed-zero processes produce identical bytes in all ten output files and final population 450.
 Seed one produces a different trajectory and final population 307.
 This establishes repeatability for the tested defaults, seed pair, runtime, and 100-cycle horizon only.
@@ -97,7 +97,7 @@ Paper-specific communication rules, subcycle equivalence, and full experimental 
 
 [configuration-map.json](configuration-map.json) records provisional parameter and communication mappings, with unresolved semantics kept explicit.
 `LandscapeAudit.java` initializes the native model and reads its cells without advancing time or drawing random numbers.
-The [seed-zero observation](https://github.com/Metta-AI/sugarscape/tree/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/landscape-table2-2026-10-15) changes only sugar richness from the release default to 1.0.
+The [seed-zero observation](https://github.com/Metta-AI/sugarscape/tree/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/landscape-table2-2026-10-15) changes only sugar richness from the release default to 1.0.
 The 2,500 cells contain exactly 2,500 sugar units but 1,015 seeds; 161 cells contain multiple seeds.
 There are 102 cells above four sugar units, with a maximum of eleven.
 Thus setting the seed-size limit to four does not bound this release's cell piles at four.
@@ -132,7 +132,7 @@ The size order is1,2,3,4 with250seeds each; native redistribution selects their 
 This declared ordering and its random-stream consumption are reconstruction choices, not recovered historical details.
 Other simulation rules and the default100-cycle pilot configuration remain unchanged.
 
-[Two complete native workflows](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/balanced-landscape-2026-10-16/audit.json) produce identical bytes across all ten output files and validate1,400scalar observations.
+[Two complete native workflows](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/balanced-landscape-2026-10-16/audit.json) produce identical bytes across all ten output files and validate1,400scalar observations.
 The initialized world has exactly250seeds of each size,1,000seeds total, and2,500sugar units.
 Its157multi-seed cells and115piles above four units are permitted by the specification.
 Harvest priority, scheduling, communication semantics, other paper parameters, and full ensembles remain unfinished.
@@ -151,7 +151,7 @@ A pile above its threshold is shared equally when multiple agents are present; a
 The threshold comparison retains the released maximum-harvest interpretation: amounts equal to the threshold are accessible.
 Native resource removal and reseeding remain in the original lifecycle.
 
-[Two full100-cycle runs](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/paper-harvest-2026-10-16/audit.json) produce identical bytes in all ten data files and validate1,400scalar observations.
+[Two full100-cycle runs](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/paper-harvest-2026-10-16/audit.json) produce identical bytes in all ten data files and validate1,400scalar observations.
 The expanded observer verifies8,233accessible-pile events and11,080shared-pile events.
 At each observed event it checks every colocated agent's exact native floating-point wealth update.
 The expanded checks preserve all trajectories from the initial observer run. Both runs end with61agents.
@@ -167,7 +167,7 @@ Our earlier inference from the caller alone was incorrect; the added deletion wa
 The remaining observer checks native receive-time removal. Exact historical source remains unavailable.
 Message expiry is disabled and removal on response is disabled for COM1.
 
-[Two complete100-cycle workflows](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/paper-com1-2026-10-16/audit.json) validate1,400scalar observations and produce identical bytes across all ten output files.
+[Two complete100-cycle workflows](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/paper-com1-2026-10-16/audit.json) validate1,400scalar observations and produce identical bytes across all ten output files.
 The native lifecycle verifies6,459received-message deletions, each followed by an absence check.
 Configuration checks cover every Table2 numeric setting, cooperation threshold1, mutation enablement, and message-removal flags.
 Both runs end with299agents. The original seed0 here is a reconstruction seed, not an identified publication seed.
@@ -181,7 +181,7 @@ All reconstructed conditions disable timed expiry and use the audited Table2 set
 The native runner completes its requested horizon after extinction; these records are preserved, not dropped.
 Its database writes zero for empty-population averages; those values must not be interpreted as surviving agents' gene preferences.
 
-[The protocol checks](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/protocol-checks-2026-10-16/audit.json) retain one seed per condition.
+[The protocol checks](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/protocol-checks-2026-10-16/audit.json) retain one seed per condition.
 COM0 and COM2 complete1,000cycles each, with final populations0 and767.
 The corrected COM1 observer completes100cycles and reproduces all ten previous data files byte-for-byte.
 This verifies14,700scalar observations without asserting paper-level agreement from single seeds.
@@ -194,7 +194,7 @@ The observer now records successful harvest events, shared harvest events, consu
 A shared event with three agents contributes one shared harvest event and three shared consumer participations.
 The native agent-flag average remains available as a separate measurement. Ratios with no harvests or consumers are undefined.
 
-[The1,000-cycle observer replay](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/metric-observer-2026-10-16/audit.json) preserves all ten native files byte-for-byte.
+[The1,000-cycle observer replay](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/metric-observer-2026-10-16/audit.json) preserves all ten native files byte-for-byte.
 It records260,828harvest events, including128,589shared events, and390,146consumer participations, including257,907shared participations.
 These are event totals, not independent samples.
 COM0 now uses an always-false comparison after the existing random draw, preventing the original `<=0` boundary from permitting communication.
@@ -213,15 +213,15 @@ Every run must contain2,000consecutive records in all scalar outputs and harvest
 The audit checks absorbing extinction, integer population, bounded preferences, and consistent harvest/participation accounting.
 It reports undefined cooperation ratios and excludes empty-population gene placeholders from descriptive alive-agent averages.
 
-[The first retained prefix](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/ensemble-prefix-2026-10-16/audit.json) contains four completed runs,56,000scalar observations, and8,000harvest-count records.
+[The first retained prefix](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/ensemble-prefix-2026-10-16/audit.json) contains four completed runs,56,000scalar observations, and8,000harvest-count records.
 The snapshot remains incomplete and must not be counted as150runs.
-[Negative controls](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/ensemble-prefix-2026-10-16/audit-controls/controls.json) verify rejection of both an incomplete ensemble in complete mode and a deliberately altered population file.
+[Negative controls](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/ensemble-prefix-2026-10-16/audit-controls/controls.json) verify rejection of both an incomplete ensemble in complete mode and a deliberately altered population file.
 These controls are explicitly separated from scientific results. Complete mode requires all150runs and a successful final native-run ledger.
 The observer validates accounting, not historical source equivalence or the paper's scientific claims.
 
 ## Reproduction fidelity audit
 
-[A read-only newborn observer](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/birth-observer-2026-10-16/audit.json) completes1,000cycles and preserves all ten native data files byte-for-byte.
+[A read-only newborn observer](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/birth-observer-2026-10-16/audit.json) completes1,000cycles and preserves all ten native data files byte-for-byte.
 It checks49,792births for parental inheritance of vision, metabolism, death age, and fertility-start age, plus newborn age and sugar endowment.
 All checks pass. Original and instrumented source hashes, the first-party observer insertion, native logs, and birth records are retained.
 
@@ -229,26 +229,26 @@ Fertility-end age differs from both parents in44,819births.
 The source resets that attribute and draws it anew from the configured sex-specific range; reproduction passes only the fertility-start age.
 The paper describes inheritance of child-bearing properties without resolving this distinction.
 This remains a historical-fidelity question, not proof of an incorrect published conclusion.
-The frozen150-run ensemble continues unchanged; no reproductive rule was selected to improve agreement.
+The frozen 150-run ensemble is complete; no reproductive rule was selected to improve agreement.
 
 ## Validated removal of wall-clock pacing
 
 The native model sleeps10milliseconds after every cycle, independently of its logical iteration clock.
 `run_pilot.py ... --unpaced` removes only that sleep in the extracted experimental source.
-[Paced/unpaced comparisons](https://github.com/Metta-AI/sugarscape/tree/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/unpaced-validation-2026-10-16) preserve all ten native output files exactly for COM0 at2,000cycles, COM1 at100cycles, and COM2 at1,000cycles.
+[Paced/unpaced comparisons](https://github.com/Metta-AI/sugarscape/tree/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/unpaced-validation-2026-10-16) preserve all ten native output files exactly for COM0 at2,000cycles, COM1 at100cycles, and COM2 at1,000cycles.
 The COM2 unpaced execution took2.84seconds. No simulation horizon, seed, rule, or logical clock was changed.
 These checks cover seed0 at threshold0 for COM0 and threshold1 for COM1/COM2; other conditions require overlap checks.
 
-A separately frozen accelerated150-run ensemble is now running. The original paced ensemble remains active and preserved.
+Both separately frozen 150-run ensembles are now complete and preserved.
 The retained launcher differs only by declaring and passing `--unpaced`; its hashes and command are recorded.
-Overlapping runs are paired validation data, not additional independent seeds. Neither ensemble is yet complete.
+Overlapping runs are paired validation data, not additional independent seeds. The complete comparison appears below.
 
 ## Paired pacing audit and paper comparison gate
 
-[All19completed overlapping runs](https://github.com/Metta-AI/sugarscape/blob/e952b1a3c3cb5749cea08bafd3a63e734535e855/replications/buzing_2005/results/pacing-overlap-2026-10-16/audit.json) match exactly across all ten native output files.
+[All19completed overlapping runs](https://github.com/Metta-AI/sugarscape/blob/bcddb198efdd372fbc16f168cf3229da0836a488/replications/buzing_2005/results/pacing-overlap-2026-10-16/audit.json) match exactly across all ten native output files.
 The separately audited accelerated prefix covers18runs,252,000scalar observations, and36,000harvest-count records.
 These snapshots were taken at different instants; paired duplicates do not increase unique seed coverage.
-The accelerated ensemble remains in progress.
+This historical prefix is superseded by the complete ensemble audit below.
 
 `compare_paper.py COMPLETE_AUDIT NEW_OUTPUT` requires all150audited runs and rehashes native data and event logs before producing grouped comparisons.
 It compares the reported survival pattern across ten seeds for each protocol/threshold pair.
@@ -256,17 +256,17 @@ Approximate population and communication levels receive numerical differences, w
 Late summaries use cycles1501–2000; extinct populations contribute zero population but no invented gene preferences.
 Both cooperation-event and consumer-participation ratios remain separate.
 An18-run prefix is rejected before any comparison output is created.
-This completion gate has been exercised; full comparison execution awaits the completed ensemble.
+The completion gate and full comparison have both been exercised; complete results appear below.
 No automatic paper verdict follows from the table because historical-source and reproductive-rule questions remain.
 
 ## Complete reconstruction ensemble
 
-[The complete audit](https://github.com/Metta-AI/sugarscape/blob/e952b1a3c3cb5749cea08bafd3a63e734535e855/replications/buzing_2005/results/complete-ensemble-2026-10-16/audit.json) validates all 150 runs, 2,100,000 scalar observations, and 300,000 harvest-count records.
+[The complete audit](https://github.com/Metta-AI/sugarscape/blob/bcddb198efdd372fbc16f168cf3229da0836a488/replications/buzing_2005/results/complete-ensemble-2026-10-16/audit.json) validates all 150 runs, 2,100,000 scalar observations, and 300,000 harvest-count records.
 Each run completed 2,000 cycles. The terminal ledger reports exit code zero and 150 completed runs.
 The compressed evidence archive retains every audited native output, configuration, manifest, and event log; its complete contents were verified against the audit snapshot.
 Earlier prefix snapshots remain historical evidence, not additional independent runs.
 
-[The survival comparison](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/complete-ensemble-2026-10-16/survival.csv) gives surviving seeds at cycle 2,000:
+[The survival comparison](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/complete-ensemble-2026-10-16/survival.csv) gives surviving seeds at cycle 2,000:
 
 | Protocol | CT=0 | CT=1 | CT=2 | CT=3 | CT=4 |
 | --- | --- | --- | --- | --- | --- |
@@ -281,7 +281,7 @@ The comparison retains approximate population and gene-level differences without
 Unknown publication seeds, the newer recovered release, scheduling reconstruction, and fertility-end inheritance remain limitations.
 **This remains an incomplete study, not a validated negative replication.**
 
-[Trajectory plots](https://github.com/Metta-AI/sugarscape/tree/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/complete-ensemble-2026-10-16/plots) show all seeds, with extinct-agent preferences and undefined harvest ratios masked.
+[Trajectory plots](https://github.com/Metta-AI/sugarscape/tree/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/complete-ensemble-2026-10-16/plots) show all seeds, with extinct-agent preferences and undefined harvest ratios masked.
 Separate panels retain native agent cooperation, shared harvest events, and shared consumer participations.
 These denominators differ materially; they cannot be interchanged when comparing the publication's prose, monitor table, and figures.
 Plot bounds include zero and one visibly. Colors identify seeds consistently, without treating paired pacing runs as additional samples.
@@ -302,7 +302,7 @@ The recovered `SugarAgent.selectPartners` compares a candidate's age with the in
 The bundled class bytecode confirms the same receiver error; this is not merely a stale source comment.
 Section 3.14 requires both parents to be within their fertile ranges.
 
-[The native observer](https://github.com/Metta-AI/sugarscape/tree/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/parent-fertility-2026-10-16) records 103,457 births in COM2, threshold1, seed0, over 2,000 cycles.
+[The native observer](https://github.com/Metta-AI/sugarscape/tree/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/parent-fertility-2026-10-16) records 103,457 births in COM2, threshold1, seed0, over 2,000 cycles.
 In 3,926 births, the partner is outside its own fertile range: 3,330 below its minimum and 596 above its maximum.
 All initiating parents are within their own ranges. All ten output files match the unobserved baseline exactly.
 This demonstrates a recovered implementation mismatch, not a defect established in the paper's unavailable historical version.
@@ -323,12 +323,12 @@ This diagnostic ensemble is not a completed paper replication or an additional d
 
 `compare_parent_fertility.py ENSEMBLE prefix|complete NEW_OUTPUT` verifies paired baseline/corrected data, configurations, source hashes, fertility records, and harvest accounting.
 It reverses only the two fertility edits and observer insertion, then requires exact equality to the baseline source.
-[The retained prefix](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/parent-comparison-2026-10-16/prefix-comparison.json) validates 82 paired runs, 2,296,000 scalar observations, and 3,527,735 corrected births.
+[The retained prefix](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/parent-comparison-2026-10-16/prefix-comparison.json) validates 82 paired runs, 2,296,000 scalar observations, and 3,527,735 corrected births.
 All corrected parents satisfy their own fertility ranges. Prefix groups report actual contributing seeds, without calling partial groups complete.
 Complete mode rejects an incomplete grid. A separate altered-population control fails at its checksum before creating comparison output.
 
 `audit_parent_fertility.py BASELINE NEW_OUTPUT observe --observe-wealth` also records sugar immediately before parental endowment is halved.
-[The complete COM2 threshold1 seed0 replay](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/parent-comparison-2026-10-16/wealth-observer/audit.json) again preserves all ten baseline files exactly.
+[The complete COM2 threshold1 seed0 replay](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/parent-comparison-2026-10-16/wealth-observer/audit.json) again preserves all ten baseline files exactly.
 Of 103,457 births, 25,655 involve a zero-sugar parent; 3,475 involve two zero-sugar parents.
 Both configured reproduction thresholds are zero. The recovered comparisons permit equality, while sections3.13–3.14 specify sugar above the threshold.
 This is another recovered implementation/specification mismatch to isolate before interpreting scientific disagreements.
@@ -342,7 +342,7 @@ It retains the own-range fertility correction and observes each parent's sugar i
 All observed parents must exceed their own threshold. Configuration, seeds, mutation, scheduling, and other model rules remain unchanged.
 This follows the paper's above-threshold requirement; it is not recovered historical code.
 
-[Three diagnostic conditions](https://github.com/Metta-AI/sugarscape/blob/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005/results/positive-sugar-2026-10-16/pilot-comparison.json) complete 2,000 cycles each.
+[Three diagnostic conditions](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/positive-sugar-2026-10-16/pilot-comparison.json) complete 2,000 cycles each.
 COM2 at threshold1 ends at648agents, compared with738for fertility-only and751for the original reconstruction.
 Its86,580births satisfy both eligibility rules. An independent repeat matches all ten files byte-for-byte.
 COM1 at threshold1 and COM2 at threshold0 both become extinct, with7,789and8,244eligible births respectively.
@@ -354,14 +354,59 @@ It requires exact equality to baseline source, unchanged configurations, valid r
 Its first seven pairs pass196,000scalar observations and33,591births. The snapshot is explicitly incomplete.
 No rule or parameter was selected by optimizing agreement with the publication.
 
+## Complete fertility-only comparison
+
+[All150paired runs](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/fertility-complete-2026-10-16/comparison.json) pass the independent source, configuration, trajectory, birth, and harvest audit.
+The audit reads4,200,000scalar observations across original and corrected conditions and11,494,812corrected births.
+No corrected birth violates either parent's own fertility range. Both complete grids retain all extinct outcomes.
+
+COM1 threshold1 survival changes from1/10to3/10. COM2 threshold3 changes from9/10to10/10.
+COM2 threshold0 stays at5/10, but four paired seeds change survival status in opposite directions.
+Other group survival counts remain unchanged. These paired differences measure implementation sensitivity, not independent additional replicates.
+The correction does not resolve all discrepancies with the publication; sugar eligibility and historical fidelity remain separate questions.
+
+Three compressed archives retain every corrected native trajectory, configuration, manifest, birth record, and event log.
+Their complete contents were verified byte-for-byte against the external run evidence. Original author sources and compiled classes are excluded.
+The original reconstruction and fertility-only evidence remain separate; the strict-sugar ensemble continues independently.
+
+## Complete combined correction
+
+[The strict-sugar audit](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/positive-sugar-complete-2026-10-16/comparison.json) validates all 150 runs and 9,161,420 births.
+Every observed birth satisfies both parents' own fertility range and strictly positive pre-halving sugar.
+The paired audit verifies 4,200,000 scalar observations across the original and combined-correction conditions.
+
+[The three-condition survival table](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/positive-sugar-complete-2026-10-16/three-condition-survival.csv) preserves the same ten seeds in every condition.
+COM1 threshold-one survival is 1/10 originally, 3/10 after fertility correction, and 1/10 with both corrections.
+COM2 threshold-zero survival is 5/10, 5/10, and 2/10 respectively; threshold-three survival is 9/10, 10/10, and 10/10.
+Other group survival counts are unchanged. These are implementation-sensitivity findings, not three independent paper replications.
+Historical scheduling and inheritance remain unresolved, and the paper-level study remains incomplete.
+
+Archives are split by protocol and threshold, with all ten seeds retained in each.
+Every archived member was verified against the executed run. Source/classes are excluded; raw trajectories, configurations, birth and wealth records, logs, and manifests are retained.
+
+## Complete pacing equivalence
+
+[The complete paired comparison](https://github.com/Metta-AI/sugarscape/blob/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005/results/pacing-complete-2026-10-16/parity.json) validates all 150 paced/unpaced run pairs.
+All 1,500 native output files match byte for byte, together with 300,000 per-cycle harvest records.
+The independent paced audit validates 2,100,000 scalar observations and terminal success for all 150 runs.
+
+`audit_pacing.py PACED_GRID UNPACED_GRID NEW_OUTPUT` checks both completion ledgers, source hashes, actual configurations, native data, and harvest logs.
+Every pair has identical sources except removal of `Thread.sleep(SLEEP_TIME)` in `Scape.java`; runtime versions and model parameters also match.
+A complete-grid input with one corrupted population value is rejected before output creation.
+
+The retained provenance archive includes paced manifests, configurations, logs, and first-party frozen runners; every archive member was checksum-verified.
+Native output bytes are already retained in the complete accelerated evidence archive, and their pairwise hashes are recorded here.
+Original paced files remain preserved externally. These paired controls add no independent seeds and establish no historical-source equivalence.
+Pacing therefore does not explain the observed reconstruction discrepancies for this grid. Reproduction, inheritance, and historical protocol questions remain unresolved.
+
 ## Archived raw outputs
 
-[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/e952b1a3c3cb5749cea08bafd3a63e734535e855/replications/buzing_2005/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show e952b1a3c3cb5749cea08bafd3a63e734535e855:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+[The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/bcddb198efdd372fbc16f168cf3229da0836a488/replications/buzing_2005/results) retains raw trajectories and verbose diagnostics. Summaries, figures, source inputs, and analysis code remain tracked. Restore required analysis inputs with `git show bcddb198efdd372fbc16f168cf3229da0836a488:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path. Existing copies and Git history are preserved.
 
 ## Experiment evidence
 
 Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
 Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/3a654712cb6f87b104c052b30d65d17fc4279c6c/replications/buzing_2005) preserves the pre-cleanup files.
-To restore an input, run `git show 3a654712cb6f87b104c052b30d65d17fc4279c6c:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005) preserves the pre-cleanup files.
+To restore an input, run `git show 937b3798c3af53ff0094c481bf47b825471fc8a8:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
 Use the documented runners to regenerate outputs; local output directories remain untracked.

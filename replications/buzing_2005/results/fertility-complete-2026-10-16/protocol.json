@@ -1,0 +1,39 @@
+{
+  "conditions": {
+    "protocol": [
+      "paper-com0",
+      "paper-com1",
+      "paper-com2"
+    ],
+    "threshold": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "seed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "cycles": 2000,
+  "runs": 150,
+  "baseline": "/Users/relh/Code/workspace/sugarscape-replication-evidence/buzing-reconstruction-unpaced-001",
+  "change": "Only two selectPartners expressions now read candidate own fertility limits; passive birth observer added. Same baseline configuration, seed, controlled RNG, scheduling, harvesting, mutation and end-age generation.",
+  "rationale": "Paper3.14 requires both parents in their own fertile ranges. Native observer found3926violations/103457births; source and bundled bytecode both use initiating parent bounds.",
+  "pilot_disclosure": "COM2ct1seed0 corrected final738 versus751baseline and repeatexact; COM1ct1seed0 still extinct. No parameter fitting.",
+  "comparison": "All15groups, ten paired seeds each. Retain all outcomes including extinction. No automatic paper verdict.",
+  "runner_sha256": {
+    "Replay.java": "36f21be8e2d5c0f27cd67d4a72dcedd5e16c2140c3af2ab4f6d967b9e4a438c1",
+    "audit_parent_fertility.py": "58be97a6fdda83592442e5392ae41d9cfd3970b268bff38b5b0fbe1d350f1f6a"
+  }
+}
