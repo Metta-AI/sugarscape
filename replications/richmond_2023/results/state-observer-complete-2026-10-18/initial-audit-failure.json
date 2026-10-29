@@ -1,7 +1,0 @@
-{
-  "audit": "audit_agent_states.py",
-  "failed_assertion": "all(row[id] in initial_by_id for row in rows)",
-  "host_reference_initial_population": 11025,
-  "native_initial_population": 11264,
-  "interpretation": "Host reference uses macOS GCC16.2; native CUDA11.8 Linux toolchain differs. Investigate initializer portability before model verdict. Original capture preserved."
-}

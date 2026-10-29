@@ -119,7 +119,7 @@ shortened runs receive no full-study credit. Existing study ensembles remain unc
 
 ## Bounded GPU qualification
 
-[The frozen launch](results/native-qualification-launch-2026-10-17) uses one H100,
+[The frozen launch](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/native-qualification-launch-2026-10-17) uses one H100,
 CUDA 11.8.0, architecture 90, and the pinned benchmark/engine sources without edits.
 The engine's own architecture configuration explicitly supports CUDA 11.8/Hopper.
 [NVIDIA's compatibility guide](https://docs.nvidia.com/cuda/archive/12.8.0/hopper-compatibility-guide/index.html)
@@ -148,7 +148,7 @@ restart. The complete manifest and verification receipt are retained with the la
 
 The pinned benchmark built and executed on the H100. An immutable snapshot covers
 seven complete scaling conditions: seed zero, widths 256–1792, and all 100 steps
-per condition. [All 700 native population observations](results/population-prefix-2026-10-17/population-local-audit.json)
+per condition. [All 700 native population observations](https://github.com/Metta-AI/sugarscape/blob/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/population-prefix-2026-10-17/population-local-audit.json)
 match the published V100 archive exactly. Timings are excluded from this comparison.
 
 The 49,143-byte snapshot archive was downloaded and SHA-256 verified. A separate
@@ -173,7 +173,7 @@ The continuation check requires the counter to remain below nine. Therefore
 condition splitting cannot assume a fresh host counter reproduces the original
 sequential experiment. No split continuation is launched on that assumption.
 
-[A separately frozen observer](results/resolution-observer-launch-2026-10-17) logs
+[A separately frozen observer](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/resolution-observer-launch-2026-10-17) logs
 the counter immediately before and after each step, then returns after the first
 complete 100-step, seed-zero, width-256 condition. It changes no model rule or
 random draw. All 100 population observations must match the unmodified prefix
@@ -193,7 +193,7 @@ passed shell syntax and Python lint checks; native parity remains to be measured
 ## Sealed qualification outcome
 
 The original native command ended with its declared timeout, exit 124, at
-21:20:23 UTC. [The complete qualification evidence](results/native-qualification-complete-2026-10-17)
+21:20:23 UTC. [The complete qualification evidence](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/native-qualification-complete-2026-10-17)
 contains ten completed scaling conditions, seed zero at widths 256–2560.
 The width-2816 condition started but produced no recorded timestep before timeout.
 It is retained as unfinished and receives no completed-condition credit.
@@ -252,7 +252,7 @@ Operational completion alone will not establish full coverage or paper replicati
 
 ## Agent-state fidelity: pinned-source findings
 
-The [source audit](results/model-rule-source-audit-2026-10-17/audit.json) identifies
+The [source audit](https://github.com/Metta-AI/sugarscape/blob/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/model-rule-source-audit-2026-10-17/audit.json) identifies
 additional rule differences in the exact paper-linked revision. The subsequent
 [complete native state audit](results/state-observer-complete-2026-10-18) validates transfer defects and diagonal movement.
 
@@ -280,7 +280,7 @@ as benchmark timings. No source correction is applied to the ongoing historical 
 
 ### Deferred passive state observer
 
-[The frozen observer launch](results/state-observer-launch-2026-10-17) records the
+[The frozen observer launch](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/state-observer-launch-2026-10-17) records the
 initial state and all 100 post-step active-agent states for seed zero, width 256.
 Command `cmd-trijm` waits for the full benchmark's terminal receipt before building
 or executing. Its post-wait limit is 30 minutes, including a five-minute native limit.
@@ -297,7 +297,7 @@ The storage collector is capped at 100 MiB.
 
 ## Figure 6 dependency-structure comparison
 
-[The pinned-source comparison](results/figure6-structure-2026-10-17/audit.json)
+[The pinned-source comparison](https://github.com/Metta-AI/sugarscape/blob/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/figure6-structure-2026-10-17/audit.json)
 checks Figure 6 on printed page 11, physical PDF page 12, by visual inspection and source extraction.
 The parent model orders metabolism/growback before the movement submodel.
 Its four submodel layers match the diagram: output cell status, request movement, respond to requests, then transact movement.
@@ -316,7 +316,7 @@ A completed 84-condition timing grid alone will not complete this study.
 
 ## Extracted host initialization for the full landscape
 
-[The standalone initialization evidence](results/initial-state-extraction-2026-10-17)
+[The standalone initialization evidence](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/initial-state-extraction-2026-10-17)
 contains all 65,536 cells for seed zero and width 256, including 11,025 occupied agents.
 `prepare_initial_state.py PINNED_MAIN_CU NEW_OUTPUT` extracts the original hotspot-spacing helper,
 constants, random draws, loop order and landscape arithmetic; engine storage writes become local integers and CSV output.
@@ -347,7 +347,7 @@ python replications/richmond_2023/audit_initial_state.py state.csv hotspots.log 
 
 ## Released initial image: compiler-sensitive reproduction
 
-[The image comparison](results/initial-image-comparison-2026-10-17/image-comparison.json)
+[The image comparison](https://github.com/Metta-AI/sugarscape/blob/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/initial-image-comparison-2026-10-17/image-comparison.json)
 matches all 65,536 initial landscape cell color classes using Apple Clang/libc++.
 The same extracted source and seed under GNU C++/libstdc++ matches 13,579 classes.
 Both host reconstructions pass the independent capacity audit; their occupied counts differ: 11,171 versus 11,025.
@@ -367,7 +367,7 @@ The original-engine observer remains necessary, and this study remains incomplet
 
 ## Full benchmark scaling prefix: 31 of 48 conditions
 
-[The sealed live snapshot](results/full-scaling-prefix31-2026-10-18)
+[The sealed live snapshot](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/full-scaling-prefix31-2026-10-18)
 contains 3,100 steps from 31 complete scaling conditions in the original full benchmark.
 These cover repetition zero at all 16 widths and repetition one at widths 256–3840.
 All 3,100 integer population observations exactly match the pinned author archive.
@@ -410,7 +410,7 @@ All 893,017 observations are validated for the stated checks; whole-study comple
 
 ## Full benchmark scaling prefix: 47 of 48 conditions
 
-[The next sealed snapshot](results/full-scaling-prefix47-2026-10-18)
+[The next sealed snapshot](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/full-scaling-prefix47-2026-10-18)
 adds sixteen complete conditions and 1,600 observations to the earlier prefix.
 It covers all widths in repetitions zero and one, and widths 256–3840 in repetition two.
 All 4,700 integer population observations exactly match the pinned author archive.
@@ -486,3 +486,11 @@ No new GPU experiment or paper completion is claimed.
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/e57d200c0ead5c6066b2d9c98045e3ada5f3f726/replications/richmond_2023/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show e57d200c0ead5c6066b2d9c98045e3ada5f3f726:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023) preserves the pre-cleanup files.
+To restore an input, run `git show fa8cd09be043fbc9b8b7f68e5746750af2e991fe:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

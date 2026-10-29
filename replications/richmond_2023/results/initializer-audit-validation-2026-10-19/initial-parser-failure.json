@@ -1,1 +1,0 @@
-{"failure":"Pydantic Literal fields do not coerce CSV strings to integers; both initial workflow invocations failed before reports","fix":"Parse CSV integer fields explicitly, then validate each typed row; original simulations unchanged"}
