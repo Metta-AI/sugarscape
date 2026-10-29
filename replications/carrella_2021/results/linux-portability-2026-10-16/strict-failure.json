@@ -1,4 +1,0 @@
-{
-  "exit_code": 1,
-  "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-cloud-handoff-001/compare_parity_strict.py\", line 37, in <module>\n    assert raw_local == raw_remote, f\"Trajectory differs: {index}\"\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Trajectory differs: 0\n"
-}

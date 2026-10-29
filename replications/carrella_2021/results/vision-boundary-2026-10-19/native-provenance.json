@@ -1,9 +1,0 @@
-{
-  "exit_code": 0,
-  "java": "/opt/homebrew/opt/openjdk@11/bin/java",
-  "netlogo": "6.1.1",
-  "model_sha256": "bccae1f824e5e21620faa3a3134da3e16c5c74ce9953a161ac90d0ecaae71e8b",
-  "driver_class_sha256": "1f92a82538eb42dd30c782321c4c3605bbd9f4cc6fdbf7f86e3249960490f96d",
-  "compile": "javac -cp NETLOGO/app/* VisionProbe.java",
-  "run": "java -Djava.awt.headless=true -cp DRIVER:NETLOGO/app/* VisionProbe MODEL NEW_CSV"
-}

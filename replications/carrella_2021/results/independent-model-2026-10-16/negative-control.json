@@ -1,6 +1,0 @@
-{
-  "mutation": "Refresh utility before reproduction, contrary to verified native cached-wealth behavior.",
-  "rejected_before_report": true,
-  "exit_code": 1,
-  "stderr": "Traceback (most recent call last):\n  File \"/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-control-001/verify_model.py\", line 51, in <module>\n    assert math.isclose(value, float(row[name]), rel_tol=1e-13, abs_tol=1e-13), (row['case'], name, value, row[name])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('cached-1', 'population', 2, '1.0')\n"
-}

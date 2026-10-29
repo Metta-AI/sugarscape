@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-carrella/replications/carrella_2021/compare_independent.py", line 24, in <module>
-    assert hashlib.sha256(reference_bytes).hexdigest() == manifest['reference_sha256']
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

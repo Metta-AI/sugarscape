@@ -23,7 +23,7 @@ The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10
 
 ## Complete simulation replay
 
-[The complete replay](results/full-author-replay-2026-10-15) reconstructs all 750,000 archived statistics from 5,000 fresh trajectories.
+[The complete replay](https://github.com/Metta-AI/sugarscape/tree/858ca67052af5df29bfd0aaadca64062a3eb1f85/replications/carrella_2021/results/full-author-replay-2026-10-15) reconstructs all 750,000 archived statistics from 5,000 fresh trajectories.
 Every statistic matches the declared `rtol=1e-10, atol=1e-10` tolerance; maximum absolute error is `3.1833e-12`.
 Each input retains all 501 observations, including repeated terminal states after extinction: 2,505,000 observations in total.
 Five lossless trajectory archives preserve every raw CSV, independently verified against per-row SHA-256 hashes.
@@ -68,7 +68,7 @@ Successful execution validates the input artifacts, not their generation or any 
 
 The first and last archived inputs (rows 0 and 4,999) each reproduce **150/150 summary statistics**
 within floating-point tolerance `rtol=1e-10, atol=1e-10`.
-Raw trajectories, comparisons, and runtime hashes are in [results/author-replay-2026-10-15](results/author-replay-2026-10-15).
+Raw trajectories, comparisons, and runtime hashes are in [results/author-replay-2026-10-15](https://github.com/Metta-AI/sugarscape/tree/858ca67052af5df29bfd0aaadca64062a3eb1f85/replications/carrella_2021/results/author-replay-2026-10-15).
 These runs validate the author model and measurement pipeline; they do not validate DTL equivalence or estimator results.
 
 The first attempt produced 126/150 matches because it used the newer connector's timing convention.
@@ -99,3 +99,11 @@ The batch runner reuses one workspace and resets the seed and model for every in
 ## Preserved evidence
 
 [The full experiment record](https://github.com/Metta-AI/sugarscape/blob/d2b4b5c81b43de87e01264e243e8ef1b57d377b5/replications/carrella_2021/README.md) retains dated runs, budgets, failures, source hashes, figures, and detailed controls. Existing histories, outputs, and checkpoints remain unchanged. Historical launch notes do not establish current job status. Restore archived raw inputs before rerunning an analysis, as described in that record.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/858ca67052af5df29bfd0aaadca64062a3eb1f85/replications/carrella_2021) preserves the pre-cleanup files.
+To restore an input, run `git show 858ca67052af5df29bfd0aaadca64062a3eb1f85:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

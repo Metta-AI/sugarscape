@@ -37,7 +37,7 @@ Even if successful, this isolates the package version under the current R runtim
 The constant-only attempt then failed on pre-C23 function definitions.
 Adding `-std=gnu17` passed those files, but current R headers introduce a `true` macro that collides with an old package variable.
 All three installation attempts failed; no historical fit ran.
-[Build evidence](results/gam-historical-build-2026-10-15) preserves the source archive hash, compiler settings, logs, and historical constant definition.
+[Build evidence](https://github.com/Metta-AI/sugarscape/tree/858ca67052af5df29bfd0aaadca64062a3eb1f85/replications/carrella_2021/results/gam-historical-build-2026-10-15) preserves the source archive hash, compiler settings, logs, and historical constant definition.
 Use an older R toolchain for the next attempt instead of changing statistical source code to fit current headers.
 
 The original full-size notebook explicitly passes `hcorr=TRUE` to local-linear and neural-network ABC.
