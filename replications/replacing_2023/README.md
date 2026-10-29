@@ -68,11 +68,11 @@ The archived-release disease batch is running. It records each complete trajecto
 The two explicitly reported extinction seeds, 12881 and 22744, provide concrete outcomes to compare once the batch completes.
 
 The pre-conference constrained-reproduction run also completes all 2,500 steps.
-[Full comparison](results/preconference-2026-10-15/reproduction-comparison/comparison.json) finds identical populations at every one of 2,501 observations.
+[Full comparison](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/preconference-2026-10-15/reproduction-comparison/comparison.json) finds identical populations at every one of 2,501 observations.
 Only `meanHappiness` differs, at 2,500 observations; every other logged field agrees.
 Thus these December changes cannot explain the reproduction-population mismatch.
 Both runs have population 840 at timestep 60 and 1,071 at timestep 100, rather than the paper's described first major decline in that interval.
-Descriptive windows and a [comparison plot](results/preconference-2026-10-15/reproduction-comparison/revision-comparison.png) are retained without treating those windows as statistical equivalence tests.
+Descriptive windows and a [comparison plot](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/preconference-2026-10-15/reproduction-comparison/revision-comparison.png) are retained without treating those windows as statistical equivalence tests.
 
 ## Complete twenty-seed disease replay
 
@@ -85,7 +85,7 @@ All raw trajectories, run manifests, logs, and outcomes are retained; no seed is
 The full twenty-seed pre-conference batch and infection-observation replays are complete; results follow below.
 The paper's exact assessment times and source revision remain unverified; this result is not yet a validated negative replication.
 
-[Infection observation replays](results/disease-extinction-seed-observations-2026-10-15/eradication-audit.json) for seeds 12881 and 22744 completed successfully.
+[Infection observation replays](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/disease-extinction-seed-observations-2026-10-15/eradication-audit.json) for seeds 12881 and 22744 completed successfully.
 All 1,002 native trajectory records match their original runs byte for byte.
 Infections reach zero at timesteps 30 and 42 respectively and never return through timestep 500.
 Both populations recover. Thus these released runs do not contain a continuing epidemic at the stopping horizon.
@@ -94,7 +94,7 @@ Exact historical-rule/configuration alignment remains unresolved; this evidence 
 ## Complete pre-conference seed comparison
 
 The [pre-conference twenty-seed batch](https://github.com/Metta-AI/sugarscape/blob/95fcb8c0c7eb7c8663bc590282c43bfccddd901c/replications/replacing_2023/results/preconference-disease-published20-2026-10-15/audit.json) also completed successfully and passes the independent 10,020-observation audit.
-[All forty runs](results/preconference-disease-published20-2026-10-15/revision-comparison.json) retain their original seeds, configurations, and complete trajectories.
+[All forty runs](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/preconference-disease-published20-2026-10-15/revision-comparison.json) retain their original seeds, configurations, and complete trajectories.
 Neither revision produces an extinction by the released 500-step horizon.
 Pre-conference seeds 12881 and 22744 finish at populations 801 and 984, with minima 51 and 110.
 The post-conference disease changes therefore do not explain the two reported extinction outcomes by themselves.
@@ -107,7 +107,7 @@ Each completed batch receives an independent full-trajectory audit.
 The seasonal batch then replays every seed with agent observations and requires byte-identical native trajectories before accepting those observations.
 The generalized batch auditor has also revalidated the completed disease batch without changing its outcomes.
 
-The [baseline seasonal cohort analysis](results/seasonal-cohort-pilot-2026-10-15/cohorts.json) verifies the actual cell-season convention at all 501 observations.
+The [baseline seasonal cohort analysis](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/seasonal-cohort-pilot-2026-10-15/cohorts.json) verifies the actual cell-season convention at all 501 observations.
 Actual seasons follow the y-coordinate halves, despite the separate x-based hemisphere label.
 The analysis tracks the original agents in the wet half immediately before each seasonal flip, excluding replacement agents from migration counts.
 After the first flip, 100 of 199 cohort agents enter the newly wet half during the next 50 steps; 93 of those migrants are absent by the window's end.
@@ -116,7 +116,7 @@ Nine transition cohorts are retained. Presence in the dry half alone is not clas
 
 ## Complete seasonal ensemble
 
-[Retained evidence](results/seasonal-published20-2026-10-15) covers all twenty Table 3 seeds, with 10,020 native observations and byte-identical observer replays.
+[Retained evidence](https://github.com/Metta-AI/sugarscape/tree/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/seasonal-published20-2026-10-15) covers all twenty Table 3 seeds, with 10,020 native observations and byte-identical observer replays.
 `analyze_seasonal_ensemble.py OBSERVED OUTPUT` requires every original seed and analyzes nine complete seasonal windows per seed.
 The executable ensemble analysis reproduces the independently assembled summary byte-for-byte.
 
@@ -138,7 +138,7 @@ The observer now copies native death records before the original statistics meth
 `audit_deaths.py BASELINE OBSERVED` first requires native trajectory parity, then reconciles disappearing identities and every native per-step cause count.
 `analyze_seasonal_deaths.py OBSERVED OUTPUT` joins those causes to original wet-half cohorts across all nine complete seasonal windows.
 
-[Seed 14133 evidence](results/seasonal-deaths-pilot-2026-10-15) preserves 501 byte-identical native observations and 4,204 individual death records.
+[Seed 14133 evidence](https://github.com/Metta-AI/sugarscape/tree/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/seasonal-deaths-pilot-2026-10-15) preserves 501 byte-identical native observations and 4,204 individual death records.
 The full run contains 2,775 starvation deaths and 1,429 aging deaths, with no combat or disease deaths.
 Cohort results separate migration, survival, starvation, and aging without counting replacement agents as survivors.
 Native cause labels identify proximate deaths; they do not establish the causal effect of seasons.
@@ -146,7 +146,7 @@ The complete twenty-seed cause-specific analysis is now available below.
 
 ## Complete seasonal death analysis
 
-[All twenty seeds](results/seasonal-deaths-published20-2026-10-15/summary/summary.json) pass native trajectory parity, identity reconciliation, and per-step death-cause count checks across 10,020 observations.
+[All twenty seeds](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/seasonal-deaths-published20-2026-10-15/summary/summary.json) pass native trajectory parity, identity reconciliation, and per-step death-cause count checks across 10,020 observations.
 The observer records the original implementation's cause labels before statistics clears the death registry.
 Each seed is analyzed with `audit_deaths.py` and `analyze_seasonal_deaths.py`; `summarize_seasonal_deaths.py OBSERVED COHORTS OUTPUT` verifies all original seeds and evidence hashes.
 
@@ -163,7 +163,7 @@ The paper's qualitative replication verdict and exact historical configuration r
 Only headless execution, debug output, and log destinations change.
 The runner retains each native exit status, complete trajectories, source/configuration hashes, extinction endpoints, and nonfinite scalar measurements.
 All seventeen examples exited successfully and passed `audit_examples.py BATCH NEW_OUTPUT` across 6,187 native observations.
-[Retained evidence](results/all-examples-2026-10-15) includes byte-preserving compressed configurations, trajectories, logs, manifests, and an independent audit.
+[Retained evidence](https://github.com/Metta-AI/sugarscape/tree/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/all-examples-2026-10-15) includes byte-preserving compressed configurations, trajectories, logs, manifests, and an independent audit.
 Operational completion does not imply agreement with the paper's qualitative targets.
 
 [The paired trade/lending protocol](trade-lending-protocol.json) audits the exact configuration differences before the diagnostic outcomes are inspected.
@@ -195,11 +195,11 @@ Calibration uses the figure axes, not a fit to simulation outcomes.
 Thus the released implementation reproduces the plotted curve while the prose's stated first-dip timing disagrees with that curve.
 The exact historical revision and Table 3's qualitative classification remain unresolved, so this finding does not complete the paper replication.
 
-![Native reproduction trajectories](results/reproduction-published20-2026-10-15/population-trajectories.png)
+![Native reproduction trajectories](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/reproduction-published20-2026-10-15/population-trajectories.png)
 
 ## Completed paired trade/lending diagnostic
 
-[All sixty native runs](results/trade-lending-paired20-2026-10-15/analysis.json) pass independent configuration, seed, trajectory, and checksum checks.
+[All sixty native runs](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/trade-lending-paired20-2026-10-15/analysis.json) pass independent configuration, seed, trajectory, and checksum checks.
 Under the declared steps251–500 window, the twenty paired relative increases average 2.421% for trade and 3.359% for lending.
 Maximum increases are 6.182% and 7.610%, respectively; each treatment has two negative pairs.
 No run becomes extinct and no relative denominator is undefined.
@@ -218,7 +218,7 @@ The preceding changes rename four disabled pollution options and extend the orig
 The resulting configuration is identical to the November pre-conference configuration.
 This revision was selected by that historical boundary before examining outcomes, not by closeness to the paper.
 
-[Three unchanged-code runs](results/first-disease-release-2026-10-16/audit.json) complete with native exit zero and 1,506 consecutive observations.
+[Three unchanged-code runs](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/first-disease-release-2026-10-16/audit.json) complete with native exit zero and 1,506 consecutive observations.
 Seed12345 reaches a minimum population of41 and ends at687.
 The reported extinction seeds12881 and22744 reach minima91 and91, ending at1,372 and909.
 Neither becomes extinct. The historical native loop executes through timestep501 for a configured500-step run; all original records remain retained.
@@ -230,7 +230,7 @@ This source boundary does not resolve the paper pin, disease discrepancy, or qua
 
 ## Matched-runtime disease comparison
 
-[Six controlled reruns](results/matched-runtime-2026-10-16/audit.json) run both historical revisions under Python3.12.4 with `PYTHONHASHSEED=0`.
+[Six controlled reruns](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/matched-runtime-2026-10-16/audit.json) run both historical revisions under Python3.12.4 with `PYTHONHASHSEED=0`.
 Each uses the original disease example, changing only seed, headless mode, and log destination.
 All six native commands exit successfully; their 3,009 records pass consecutive-time and population checks.
 All three early-release trajectories repeat exactly. All three archived-release trajectories match every field of the earlier Python3.11 runs.
@@ -246,7 +246,7 @@ The historical mismatch remains unresolved; this is not a completed negative rep
 Sections 5.3–5.4 specify complete population extinction from sickness for seeds 12881 and 22744, but provide no numerical stopping time.
 The released 500-step horizon therefore remains an unverified paper setting.
 
-[A source audit](results/disease-eradication-source-2026-10-16/source-audit.json) records all infection-related call sites and hashes every top-level Python source in the archived revision.
+[A source audit](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/disease-eradication-source-2026-10-16/source-audit.json) records all infection-related call sites and hashes every top-level Python source in the archived revision.
 Initialization seeds diseases once. Later transmission requires an infected agent; newborns initialize an empty infection list.
 Consequently zero infections is absorbing during ordinary headless execution without external intervention.
 The existing byte-identical observer replays reach that state at steps 30 and 42 and retain positive populations through step 500.
@@ -272,7 +272,7 @@ The panel has no timestep label, and the historical source/configuration remains
 
 ## Real GUI versus headless disease execution
 
-[Three graphical runs](results/gui-parity-2026-10-16/independent-audit.json) use the original Tk interface, Disease coloring menu, and Play button.
+[Three graphical runs](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/gui-parity-2026-10-16/independent-audit.json) use the original Tk interface, Disease coloring menu, and Play button.
 The driver subclasses only window setup to schedule those original widget invocations; simulation source files remain unchanged and hash-verified.
 Python3.12.4 and bundled Tcl8.6.12 run seeds12345,12881,22744 for the original500 steps.
 All1,503 native observations match the previously validated headless trajectories byte for byte.
@@ -288,7 +288,7 @@ This does not establish equivalence to the paper’s unknown historical revision
 ## Conference presentation provenance
 
 The [conference-hosted slides](https://simutools.eai-conferences.org/2023/static/uploads/sites/782/2024/01/Replacing-Sugarscape-EAI-SimuTools-2023.pdf) provide another primary source.
-The [source audit](results/conference-slides-2026-10-16/audit.json) records the16-page PDF hash, metadata, and inspected claims.
+The [source audit](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/conference-slides-2026-10-16/audit.json) records the16-page PDF hash, metadata, and inspected claims.
 Slide11 repeats the disease image without snapshot times, complete settings, or an immutable source revision.
 Slide6’s200-step seed98765 demonstration is separate from the paper’s seed12345 validation experiments; its settings are not substituted into our replays.
 Slide3’s500-step introduction demo likewise does not establish the disease experiment’s stopping time.
@@ -306,7 +306,7 @@ The presentation therefore corroborates targets but does not resolve historical 
 
 ## Long-horizon ensemble recovery
 
-[The recovery audit](results/trade-long-recovery-2026-10-20/inventory-audit.json) validates 25 successful inputs and 250,025 observations, including three workers omitted from the failed collector’s index.
+[The recovery audit](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/trade-long-recovery-2026-10-20/inventory-audit.json) validates 25 successful inputs and 250,025 observations, including three workers omitted from the failed collector’s index.
 All native trajectories pass numeric checks, and every original 501-record prefix matches exactly.
 The original supervisor timed out after 1,800 seconds on seed 19522, trade condition.
 That attempt saved 10,001 records but lacks a successful exit receipt; it receives no completion credit.
@@ -319,7 +319,7 @@ Each worker saves its validated receipt before collector aggregation, preserving
 The final analysis requires all 60 inputs; this partial recovery does not complete the study.
 
 
-[The timed-out trade input now completes successfully](results/trade-timeout-recovered-2026-10-20/recovered-attempt-audit.json).
+[The timed-out trade input now completes successfully](https://github.com/Metta-AI/sugarscape/blob/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023/results/trade-timeout-recovered-2026-10-20/recovered-attempt-audit.json).
 Seed 19522 exits zero after 1,011.25 seconds under the recovery execution bounds.
 Its entire 10,001-record trajectory is byte-identical to the preserved failed attempt, and all 501 original reporting records match.
 Source hashes and effective simulation settings are unchanged; the audit also checks every numeric record.
@@ -330,3 +330,11 @@ The complete 60-input audit and scientific interpretation remain pending.
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/95fcb8c0c7eb7c8663bc590282c43bfccddd901c/replications/replacing_2023/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 95fcb8c0c7eb7c8663bc590282c43bfccddd901c:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/991d0401db38ae041fa8ce00618e045726ea5bcf/replications/replacing_2023) preserves the pre-cleanup files.
+To restore an input, run `git show 991d0401db38ae041fa8ce00618e045726ea5bcf:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.
