@@ -1,8 +1,0 @@
-{
-  "native_runs": 4,
-  "agent_observations": 10689,
-  "unchanged_V1_controls": 2,
-  "exact_source_edit": "Two tuple-order substitutions in Init.hs; all other59files andObserve.hs unchanged relative to each baseline.",
-  "published_gzip_readback": "Complete audit JSON exactly reproduces native audit.",
-  "historical_100run_audit": "Extended interval auditor reproduces original fullreport exactly; initial missing-interval manifest assumption was caught before output and replaced with explicit CLI interval."
-}

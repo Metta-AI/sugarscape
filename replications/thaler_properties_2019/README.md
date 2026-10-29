@@ -74,7 +74,7 @@ has a six-hour limit and retains interrupted output without crediting completion
 
 ## Native exporter and independent audit
 
-The [first completed outputs](results/native-first-2026-10-17) cover all three full
+The [first completed outputs](https://github.com/Metta-AI/sugarscape/tree/70da776a9a0682e04a6cd1b30a1ac5af1864307a/replications/thaler_properties_2019/results/native-first-2026-10-17) cover all three full
 horizons: wealth 200 steps/50,000 agent observations, carrying capacity 400/87,502,
 and trading 1,000/62,102. Independent audits recheck raw hashes, commands, seeds,
 all timestamps, unique agent IDs, finite measurements, and original source pins.
@@ -106,7 +106,7 @@ samples as undefined alongside its zero-standard-deviation convention.
 
 ## Complete wealth ensemble
 
-[All 100 native outputs and the independent audit](results/wealth-ensemble-2026-10-17)
+[All 100 native outputs and the independent audit](https://github.com/Metta-AI/sugarscape/tree/70da776a9a0682e04a6cd1b30a1ac5af1864307a/replications/thaler_properties_2019/results/wealth-ensemble-2026-10-17)
 cover 20,000 steps and 5,000,000 agent observations. The frozen comparisons are:
 
 | Metric | Mean | 95% confidence interval | Target | Target inside interval |
@@ -122,7 +122,7 @@ Compressed raw exports can be restored with `gzip -dk` and passed to `audit_ense
 
 ## Complete carrying-capacity ensemble
 
-[All 100 native outputs and the independent audit](results/carrying-ensemble-2026-10-17)
+[All 100 native outputs and the independent audit](https://github.com/Metta-AI/sugarscape/tree/70da776a9a0682e04a6cd1b30a1ac5af1864307a/replications/thaler_properties_2019/results/carrying-ensemble-2026-10-17)
 cover 40,000 steps and 8,550,893 agent observations. Mean population over times
 101–400 is 205.815833, with a 95% confidence interval of [204.654564, 206.977102].
 Neither the code's target of 204 nor the appendix's target of 210 lies inside it.
@@ -130,7 +130,7 @@ This is an unresolved quantitative difference, subject to the source issues belo
 
 ## Complete trading ensemble
 
-[All 100 native outputs and the independent audit](results/trading-ensemble-2026-10-17)
+[All 100 native outputs and the independent audit](https://github.com/Metta-AI/sugarscape/tree/70da776a9a0682e04a6cd1b30a1ac5af1864307a/replications/thaler_properties_2019/results/trading-ensemble-2026-10-17)
 cover 100,000 steps and 6,083,587 agent observations. Six final snapshots have fewer
 than two prices: indices 1, 6, 11, 31, 40, and 80. Their sample standard deviations
 are undefined. The frozen audit retains all six and emits no aggregate comparison.
@@ -149,3 +149,11 @@ Later source-correction and recovered NetLogo controls remain in the full record
 ## Preserved evidence
 
 [The full experiment record](https://github.com/Metta-AI/sugarscape/blob/51f7750ba5f2a88bcb461e033002cddb222e4762/replications/thaler_properties_2019/README.md) retains dated runs, budgets, failures, source hashes, figures, and detailed controls. Existing histories, outputs, and checkpoints remain unchanged. Historical launch notes do not establish current job status. Restore archived raw inputs before rerunning an analysis, as described in that record.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/70da776a9a0682e04a6cd1b30a1ac5af1864307a/replications/thaler_properties_2019) preserves the pre-cleanup files.
+To restore an input, run `git show 70da776a9a0682e04a6cd1b30a1ac5af1864307a:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

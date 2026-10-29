@@ -33,9 +33,9 @@ Diagonal position is `(x+y)/2` after shifting the coordinate origin to zero.
 The left panels show the first 200 steps; the right panels retain all 1,000.
 These display windows are not fitted acceptance criteria.
 
-![NetLogo at every step](netlogo/profiles.png)
+![NetLogo at every step](https://github.com/Metta-AI/sugarscape/blob/70da776a9a0682e04a6cd1b30a1ac5af1864307a/replications/thaler_properties_2019/results/migration-full-resolution-2026-10-18/netlogo/profiles.png)
 
-![Corrected Haskell at every step](haskell/profiles.png)
+![Corrected Haskell at every step](https://github.com/Metta-AI/sugarscape/blob/70da776a9a0682e04a6cd1b30a1ac5af1864307a/replications/thaler_properties_2019/results/migration-full-resolution-2026-10-18/haskell/profiles.png)
 
 Visual inspection reveals diagonal travelling bands in the recovered NetLogo
 captures, particularly with vision 15. The ten-step views obscure this detail.
