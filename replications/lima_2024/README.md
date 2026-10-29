@@ -12,7 +12,7 @@ The architecture connects two NetLogo Sugarscape models and a JaCaMo Gold Miners
 
 ## Runtime recovery
 
-[Build evidence](results/runtime-build-2026-10-18) records a successful Linux/amd64
+[Build evidence](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/runtime-build-2026-10-18) records a successful Linux/amd64
 NetLogo image build and Java/Python version output. The original distribution URL
 redirects to 404; the official archive supplies the same NetLogo version.
 The replacement base is pinned by digest. Historical dependency equivalence is
@@ -25,7 +25,7 @@ Service startup alone does not validate model execution or agent transfer.
 
 ## First native transfer snapshot
 
-[The consistent database snapshot](results/native-snapshot-2026-10-18) contains
+[The consistent database snapshot](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/native-snapshot-2026-10-18) contains
 2,142 rows. Independent reconciliation matches all 665 processed router deliveries
 to destination records, including identity, data, history and ASL-path strings.
 Two return records originate from JaCaMo. Its file-watcher exception did not stop
@@ -49,7 +49,7 @@ python replications/lima_2024/audit_snapshot.py \
 
 ## Complete container scenario
 
-[Native evidence and audits](results/container-complete-2026-10-18) verify both
+[Native evidence and audits](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/container-complete-2026-10-18) verify both
 NetLogo trajectories: ticks 0–999 in order, with final-output markers. Every one
 of 799 registered agents is accounted for exactly once at shutdown: 243 model-1
 survivors, 240 model-2 survivors, 315 queued agents and one active miner.
@@ -76,7 +76,7 @@ python replications/lima_2024/audit_native.py /run /new/native-audit.json
 
 ## Host scenario and entry-state fidelity
 
-[Host preparation evidence](results/host-runtime-2026-10-18) records a successful
+[Host preparation evidence](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/host-runtime-2026-10-18) records a successful
 Java 15.0.2 / Gradle 7.4.2 compilation. Three exact source substitutions enable
 the original GUI flag and use isolated loopback API port 25001. Hash checks
 verify that these are the only changes in those source files. The separate
@@ -92,7 +92,7 @@ finding alone does not establish a failed replication.
 
 ## Complete host-native trajectories
 
-[The host-scenario evidence](results/host-native-complete-2026-10-18) verifies
+[The host-scenario evidence](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/host-native-complete-2026-10-18) verifies
 both 1,000-step NetLogo trajectories with JaCaMo running outside Docker.
 All 942 router deliveries reconcile. Every registered identity is accounted
 for once: 244 model-1 survivors, 251 model-2 survivors, 303 queued agents and
@@ -118,7 +118,7 @@ it does not establish a natural repeat visit under their original scheduling.
 
 ### First observed reload event
 
-[The retained control event](results/reload-first-event-2026-10-18) confirms
+[The retained control event](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/reload-first-event-2026-10-18) confirms
 that native JaCaMo selects `list/399.asl`, preserves the previous random belief,
 and exports all 39 saved plans again. Plan text matches after removing only the
 additional saved-file URL annotation. Both file hashes and the native log are
@@ -134,7 +134,7 @@ control trajectories and final conservation audit are still pending.
 
 ### Complete reload-control trajectories
 
-[The complete control evidence](results/reload-complete-2026-10-18) verifies
+[The complete control evidence](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/reload-complete-2026-10-18) verifies
 both 1,000-step NetLogo trajectories and 944 exact router deliveries. All 799
 identities are accounted for once: 261 model-1 survivors, 242 model-2 survivors,
 295 queued agents and one active miner. Thirteen JaCaMo creations reconstruct
@@ -152,7 +152,7 @@ to both `audit_snapshot.py` and `audit_native.py`.
 
 ## Packaged host attempt and collection failure
 
-[Retained evidence](results/packaged-host-collection-failure-2026-10-18) records
+[Retained evidence](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/packaged-host-collection-failure-2026-10-18) records
 a separate signed macOS application attempt. Both NetLogo processes exited zero,
 and the database reconciles 969 router deliveries. Visual GUI confirmation remains
 unavailable. Process exits alone do not establish complete trajectories.
@@ -222,14 +222,14 @@ the configured loopback port. It checks original source hashes before applying
 the three substitutions, records resulting hashes, and compiles the model.
 The shared runner launches host JaCaMo and stops its process group at termination.
 
-[Preparation evidence](results/portable-host-preparation-2026-10-18) verifies
+[Preparation evidence](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/portable-host-preparation-2026-10-18) verifies
 successful compilation and eight image builds. All three adaptations match the
 earlier host run exactly. Full execution is queued behind the container validation;
 compilation alone establishes neither native trajectories nor visible GUI behavior.
 
 ### Portable container workflow verified end to end
 
-[The completed fresh execution](results/portable-container-complete-2026-10-18)
+[The completed fresh execution](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/portable-container-complete-2026-10-18)
 passes preparation, nine-image build, native execution, automatic collection and
 both independent audits. Both NetLogo models complete all 1,000 ordered steps.
 All 883 router deliveries reconcile, and all 799 identities are accounted for:
@@ -245,7 +245,7 @@ confirmation remain separate; this does not complete the paper.
 
 ### Portable host execution verified
 
-[The completed host workflow](results/portable-host-complete-2026-10-18) verifies
+[The completed host workflow](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/portable-host-complete-2026-10-18) verifies
 both 1,000-step trajectories, 1,019 exact router deliveries and conservation of
 all 799 identities: 249 model-1 survivors, 235 model-2 survivors, 314 queued
 agents and one active miner. Eleven native creations match incoming attributes;
@@ -278,14 +278,14 @@ python replications/lima_2024/audit_reload.py /new/control /new/control/reload-a
 
 The runner first starts cleanup, database and API, verifies cleanup completion,
 then installs the checkpoint and seeds the database. Remaining services start
-without restarting dependencies. [Preparation evidence](results/portable-reload-preparation-2026-10-18)
+without restarting dependencies. [Preparation evidence](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/portable-reload-preparation-2026-10-18)
 checks the same source substitution and nine image builds. Re-auditing the prior
 control preserves every metric, including its failed score criterion. The fresh
 control is complete; its results follow below.
 
 ### Portable saved-agent control completed
 
-[The completed control](results/portable-reload-complete-2026-10-18) verifies
+[The completed control](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/portable-reload-complete-2026-10-18) verifies
 both 1,000-step trajectories and 953 exact router deliveries. All 799 identities
 remain accounted for: 238 model-1 survivors, 245 model-2 survivors, 315 queued
 agents and one active miner. Twelve native creations match incoming attributes;
@@ -303,7 +303,7 @@ runtime fidelity remain unresolved. This study is not counted as completed.
 
 ### Native GUI observed
 
-[Window evidence](results/host-gui-observation-2026-10-18) captures the actual
+[Window evidence](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024/results/host-gui-observation-2026-10-18) captures the actual
 JaCaMo Mining World during a fresh, isolated host scenario. Two screenshots
 show the agent at different grid positions, gold cells, the speed control and
 the collected-gold counter. The capture targets window 3082, owned by Java
@@ -346,3 +346,11 @@ equivalence remains unproven; no additional completed-study credit is assigned.
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/363175bde20af32cda1530af8f95bf7809f57c43/replications/lima_2024/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 363175bde20af32cda1530af8f95bf7809f57c43:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024) preserves the pre-cleanup files.
+To restore an input, run `git show 2c140118cb38b4c9d7f7e4809f83e5aff2bb460b:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

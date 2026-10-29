@@ -1,9 +1,0 @@
-{
-  "completed_study": false,
-  "full_trajectory_credit": false,
-  "cause": "Collector invoked docker compose start db, which also started clear_files through its dependency graph. This removed model trajectory, survivor, and exported AgentSpeak files after successful model process exits.",
-  "remaining_evidence": "Database snapshot, Docker logs, host JaCaMo logs and terminal process records remain. These cannot replace the missing native trajectory and survivor files.",
-  "gui_visual_confirmation": false,
-  "repair": "collect_completed.py backs up native files before database access, starts the exact existing database container directly, and verifies native hashes unchanged afterward.",
-  "prior_published_runs": "Previously published original-container, host-native and reload-control archives retain their native trajectory evidence; this failure concerns packaged GUI attempt002."
-}
