@@ -24,7 +24,7 @@ No historical speed comparison is justified on this Mac.
 
 ## Native execution and buffer diagnosis
 
-[Build evidence](build-evidence/build-receipt.json) preserves original failures,
+[Build evidence](https://github.com/Metta-AI/sugarscape/blob/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021/build-evidence/build-receipt.json) preserves original failures,
 the integer-printer portability patch, successful compiler build, and generated
 C compilation. The model is unchanged. Bison 3.8.2 and AppleClang 17 build the
 compiler; GCC 16 builds generated C with the released optimization/OpenMP flags.
@@ -51,7 +51,7 @@ historical results. No negative paper verdict or completion credit is assigned.
 
 ## Recheck retained evidence
 
-The [native archive](native-condition/native-and-control.tar.gz) includes the
+The [native archive](https://github.com/Metta-AI/sugarscape/blob/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021/native-condition/native-and-control.tar.gz) includes the
 observed DSL, generated sources, binaries, logs, and all snapshots. Its receipt
 records the hash; every archived member was compared with its native original.
 Extract into a fresh directory, then run:
@@ -75,7 +75,7 @@ execution audits, not isolated-function tests.
 
 ## Native MASON control
 
-[Native MASON19 evidence](mason-condition/comparison.json) uses the same225-cell
+[Native MASON19 evidence](https://github.com/Metta-AI/sugarscape/blob/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021/mason-condition/comparison.json) uses the same225-cell
 initialization as C, with both MASON state buffers explicitly initialized before
 scheduling. The original four generated stages run unchanged for400 scheduler
 steps, corresponding to100 model steps. A read-only observer captures live fields.
@@ -93,7 +93,7 @@ The jar URL/hash, generated Java, observer, logs and snapshots are retained.
 
 ## Neighbor-order control resolves this condition
 
-[The separate ordering control](mason-order-control/comparison.json) sorts each
+[The separate ordering control](https://github.com/Metta-AI/sugarscape/blob/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021/mason-order-control/comparison.json) sorts each
 of the three MASON neighbor-query results by fixed cell coordinates. That
 reproduces C array order. No stage rules, initial values, or scheduler settings
 change. The original MASON run remains preserved.
@@ -155,7 +155,7 @@ FLAME GPU benchmark code, so its behavior does not determine those timings.
 `initialize.py` reconstructs the released C generator's seeded xorshift sequence,
 integer sampling, Gaussian resource map, occupancy, and initial wealth. It matches
 all1,800 native initialization fields for the225-cell condition, consuming481
-random draws. [The audit](native-condition/initialization-audit.json) records the
+random draws. [The audit](https://github.com/Metta-AI/sugarscape/blob/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021/native-condition/initialization-audit.json) records the
 final generator state and input/source hashes.
 
 ```sh
@@ -174,7 +174,7 @@ whose power-of-two ranges all begin at zero. The reconstruction preserves it.
 
 ## Complete C buffer-copy controls and initialization precision
 
-[All seven copy-buffer controls](c-copy-grid/comparison.json) retain byte-identical native initial states and match502,648 independently replayed final fields. Only four buffer assignments differ from generated C.
+[All seven copy-buffer controls](https://github.com/Metta-AI/sugarscape/blob/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021/c-copy-grid/comparison.json) retain byte-identical native initial states and match502,648 independently replayed final fields. Only four buffer assignments differ from generated C.
 
 [The precision investigation](initialization-precision/README.md) resolves22 initializer discrepancies at128,000 cells by preserving six-significant-digit generated constants. Ten retained initial-state conditions pass after the validator correction. No scientific model or acceptance tolerance changes. MASON comparisons at the two largest sizes remain running.
 
@@ -205,3 +205,11 @@ Raw archives are retained in durable storage with checksums and export receipts.
 
 [The full GPU timing comparison](gpu-timing-comparison/README.md) retains all 13 published/native points, whole-runner timings, and engine spans.
 The largest native run is 230.14 seconds versus the digitized 256.003856 seconds; different hardware and one observation per size prevent an exact historical timing verdict.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021) preserves the pre-cleanup files.
+To restore an input, run `git show acf37262740cf14092345caac51d5a004d6f40a3:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

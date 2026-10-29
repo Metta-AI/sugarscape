@@ -26,7 +26,7 @@ The largest condition takes 230.14 seconds, versus the digitized 256.003856 seco
 No uncertainty estimate is inferred from one observation.
 Paper-coordinate sensitivity retained in `../paper-targets/figure4.json` is digitization sensitivity, not a timing confidence interval.
 
-![Different-system GPU timing comparison](comparison.png)
+![Different-system GPU timing comparison](https://github.com/Metta-AI/sugarscape/blob/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021/gpu-timing-comparison/comparison.png)
 
 The plot was visually inspected. Both whole-process timing series and their ratios are shown.
 The third curve preserves the engine-reported span, which is not isolated kernel time.
