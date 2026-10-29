@@ -59,7 +59,7 @@ The two fixed-parameter pilots do not substitute for those targets.
 
 ## Pilot evidence
 
-[Raw trajectories and manifest](results/pilot-2026-10-15) retain both 40,000-cycle runs and a byte-identical independent-process repeat of low fertility.
+[Raw trajectories and manifest](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/pilot-2026-10-15) retain both 40,000-cycle runs and a byte-identical independent-process repeat of low fertility.
 Final populations are 834 and 823; all cycle-level resource and population checks pass.
 All 401 recorded observations per run have finite metrics and valid Gini values.
 The birth-cost pilot has final mean age 1,347.74; equilibrium and agreement with the published mean age remain unestablished.
@@ -67,7 +67,7 @@ The birth-cost pilot has final mean age 1,347.74; equilibrium and agreement with
 ## Birth-cost ensemble
 
 The declared 100-seed, 100,000-cycle ensemble completed with no extinctions.
-[All trajectories and analysis](results/birth-cost-ensemble-2026-10-15) are retained; gzip decompression preserves each original CSV exactly.
+[All trajectories and analysis](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/birth-cost-ensemble-2026-10-15) are retained; gzip decompression preserves each original CSV exactly.
 Validation checked 100,100 observations, all completion hashes, both declared windows, and recorded conservation checks.
 The later-window mean age is 1,418.80 (95% interval 1,415.50–1,422.09), compared with the published 2,264.
 Population is 821.457 versus 824, wealth 15,902.67 versus 16,254, and Gini 0.336714 versus 0.33.
@@ -77,7 +77,7 @@ No interpretation of the paper's percentage uncertainties or acceptance margin i
 
 ## Low-fertility ensemble
 
-The [low-fertility ensemble](results/low-fertility-ensemble-2026-10-15) also completed all 100 seeds and 100,000 cycles without extinction.
+The [low-fertility ensemble](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/low-fertility-ensemble-2026-10-15) also completed all 100 seeds and 100,000 cycles without extinction.
 All 100,100 recorded observations, trajectory hashes, and declared windows passed validation.
 Later-window means are population 836.485 versus published 837, wealth 4,543.39 versus 4,767,
 mean age 438.06 versus 473, and Gini 0.530577 versus 0.53.
@@ -88,7 +88,7 @@ Its results will not silently replace either ensemble or establish the author's 
 
 ## Birth-threshold sensitivity result
 
-The [predeclared diagnostic](results/birth-threshold-diagnostic-2026-10-15) completed all twenty runs,
+The [predeclared diagnostic](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/birth-threshold-diagnostic-2026-10-15) completed all twenty runs,
 ten new seeds per variant, with 20,020 validated observations and no extinctions.
 Changing only `wealth >= birth_cost` to `wealth > birth_cost` substantially changes the outcome:
 
@@ -119,7 +119,7 @@ Those searches do not establish that author code is unavailable.
 ## Recording-frequency verification
 
 The simulator now requires an explicit recording interval; existing ensemble calls retain 100-cycle output.
-[System-level verification](results/recording-proof-2026-10-15/proof.json) runs both fixed scenarios for 3,000 cycles with the original binary, updated sparse output, and updated per-cycle output.
+[System-level verification](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/recording-proof-2026-10-15/proof.json) runs both fixed scenarios for 3,000 cycles with the original binary, updated sparse output, and updated per-cycle output.
 Original and updated sparse CSVs are byte-identical; all 6,000 dense observations contain exactly the same sparse samples.
 Recording frequency does not change random draws or simulation rules.
 Historical retained commands target their original binary and remain unchanged as evidence.
@@ -130,7 +130,7 @@ Renewed author/title/GitHub searches did not identify a verified implementation;
 
 ## Growth-rate diagnostic completed
 
-[All 200 dense trajectories, fit attempts, and residual plots](results/growth-2026-10-15) are retained.
+[All 200 dense trajectories, fit attempts, and residual plots](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/growth-2026-10-15) are retained.
 All 600,000 observations pass finite-value, timestamp, population-accounting, and conservation checks.
 All 6,200 observations shared with earlier same-seed ensembles match exactly.
 The full-ensemble analyzer first rejected the incomplete run, then passed after completion.
@@ -157,7 +157,7 @@ python replications/stevenson_2021/analyze_growth.py /complete/growth-run /new/a
 ## Original arXiv source recovered
 
 The [version-two source bundle](https://arxiv.org/src/2108.11892v2) contains the LaTeX manuscript, five EPS figures, and their five converted PDFs.
-[The retained inventory](results/author-source-2026-10-16/inventory.json) records the archive and every file hash.
+[The retained inventory](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/author-source-2026-10-16/inventory.json) records the archive and every file hash.
 The bundle contains neither simulator source nor plotting/fitting scripts. EPS headers identify R graphics output.
 The TeX source does not resolve the fitting window, optimizer, weighting, or evolutionary inheritance ambiguity.
 It confirms the initial single agent and 100-seed scenario protocol.
@@ -167,7 +167,7 @@ Renewed title, identifier, and author searches did not identify a verified GitHu
 ## Original Figure 1 curves recovered
 
 `extract_figure1.py ORIGINAL_FIGURE_PDF NEW_OUTPUT` pins the recovered PDF and checks its labeled-axis vector anchors.
-[Eight extracted curves and a visual reconstruction](results/figure1-vector-2026-10-16) preserve exported vertices in lossless CSVs.
+[Eight extracted curves and a visual reconstruction](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/figure1-vector-2026-10-16) preserve exported vertices in lossless CSVs.
 The reconstructed shapes match visual inspection of the source figure.
 The export drops collinear vertices and rounds coordinates, so these are approximate curves, not recovered raw per-cycle data.
 The plotted seed and aggregation remain unknown.
@@ -197,7 +197,7 @@ Elite membership uses the wealthiest ceil(population/10), with equal wealth orde
 No observation sorts live agents, consumes random numbers, or changes movement, reproduction, death, or regrowth.
 The aggregate CSV format remains unchanged. Both ensemble runners pass the required new output path.
 
-[Complete-system verification](results/observation-proof-2026-10-16/proof.json) checks both scenarios for 3,000 cycles at per-cycle resolution.
+[Complete-system verification](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/observation-proof-2026-10-16/proof.json) checks both scenarios for 3,000 cycles at per-cycle resolution.
 All 6,000 aggregate observations are byte-identical to the original binary.
 Elite counts, wealth, and age also match independent reconstruction for 598 early complete-population observations.
 Later elite results have no independent full-population oracle in this proof; that limitation is retained.
@@ -223,7 +223,7 @@ Historical stored command formats remain readable alongside the current mandator
 ## Founder-history vector targets
 
 `extract_figure2.py ORIGINAL_FIGURE_PDF NEW_OUTPUT` recovers the original founder curves using inspected axis anchors.
-[The retained extraction](results/figure2-vector-2026-10-16/extraction.json) contains 202,347 vertices across 44 traces, plus a visually checked reconstruction.
+[The retained extraction](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/figure2-vector-2026-10-16/extraction.json) contains 202,347 vertices across 44 traces, plus a visually checked reconstruction.
 Only the black curves explicitly identify founder zero. Grey path ordinals are not asserted to be agent identifiers.
 There are 31 low-fertility and 13 birth-cost paths, versus caption counts of 30 and 12; that source ambiguity is preserved.
 
@@ -235,7 +235,7 @@ The unknown author seed and coordinate rounding still prevent treating these cur
 
 ## Figure 1 low-fertility ensemble comparison
 
-[Descriptive comparison](results/figure1-low-comparison-2026-10-16/comparison.json) uses all 100 declared low-fertility seeds and 499 shared times, cycles 100–49,900.
+[Descriptive comparison](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/figure1-low-comparison-2026-10-16/comparison.json) uses all 100 declared low-fertility seeds and 499 shared times, cycles 100–49,900.
 The independent observation audit validates 153 completed runs at its snapshot; the complete 200-run ensemble is still pending.
 All low-fertility aggregate trajectories match their earlier ensemble prefixes byte-for-byte.
 Observation files, audit snapshot, comparison table, and inspected plot are retained.
@@ -269,7 +269,7 @@ Evolutionary scenarios and additional figure coverage remain required for study 
 
 ## Figure 2 labelled-founder comparison
 
-[The founder comparison](results/figure2-comparison-2026-10-16/comparison.json) covers all 200 audited observation runs.
+[The founder comparison](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/figure2-comparison-2026-10-16/comparison.json) covers all 200 audited observation runs.
 It matches only the explicitly labelled founder zero; grey path ordinals remain unidentified.
 Published wealth lies inside pointwise central 95% surviving-seed intervals at 340/346 low-fertility times and 20/21 birth-cost times.
 These descriptive intervals condition on survival; absent founders are not assigned zero wealth.
@@ -297,7 +297,7 @@ Visual inspection of page 4 confirms both operators.
 This differs from the non-strict comparisons in the previously checked Struggle for Existence algorithm.
 These later algorithms describe different models and do not identify the 2021 implementation.
 Their disagreement prevents treating either convention as settled historical evidence.
-Source URLs, hashes, frozen runner hashes, and launch command are [retained](results/reproduction-boundaries-launch-2026-10-16/launch.json).
+Source URLs, hashes, frozen runner hashes, and launch command are [retained](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/reproduction-boundaries-launch-2026-10-16/launch.json).
 
 The [predeclared reproduction-boundary diagnostic](REPRODUCTION_BOUNDARIES.md) isolates both operators in a two-by-two design across both fixed scenarios.
 It runs 80 bounded simulations using ten new seeds and preserves every outcome.
@@ -315,14 +315,14 @@ The native simulator enforces resource and population balance every cycle; spars
 Birth-cost age-only comparisons require both aggregate and observation files to match byte-for-byte.
 Ensemble estimates require all 80 runs and retain every extinction instead of dropping failed societies.
 
-[The first prefix audit](results/reproduction-boundaries-prefix-2026-10-16/analysis.json) validates three runs and preserves their lossless trajectories.
+[The first prefix audit](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/reproduction-boundaries-prefix-2026-10-16/analysis.json) validates three runs and preserves their lossless trajectories.
 It contains no ensemble estimate. Complete mode rejects the unfinished run before creating an output directory.
 A corrupted population value, with its ledger hash deliberately updated, also fails sampled accounting before output creation.
 The 80-run experiment remains in progress; its full outcome and paper-level fidelity are unestablished.
 
 ## Complete reproduction-boundary experiment
 
-[All 80 declared runs](results/reproduction-boundaries-complete-2026-10-16) completed 100,000 cycles without extinction.
+[All 80 declared runs](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/reproduction-boundaries-complete-2026-10-16) completed 100,000 cycles without extinction.
 `analyze_boundaries.py RUN complete NEW_OUTPUT` passes source-variant, command, file-hash, scalar, timestamp and sampled accounting checks.
 All 20 birth-cost age-only pairs have byte-identical aggregate and observation files.
 An independent standard-library recomputation validates all 640 seed/window metrics, with maximum absolute difference 4.55e-13.
@@ -354,7 +354,7 @@ The original baseline remains unchanged. These exploratory diagnostics do not co
 
 ## Appendix B equation and Figure 6(b) diagnostic
 
-[The retained vector extraction and audit](results/figure6-recurrence-2026-10-16) recover all 304 exported vertices for the four discrete-model curves.
+[The retained vector extraction and audit](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/figure6-recurrence-2026-10-16) recover all 304 exported vertices for the four discrete-model curves.
 `audit_figure6.py ORIGINAL_FIGURE_PDF NEW_OUTPUT` pins the original PDF, verifies axes and line styles, and preserves exported coordinates.
 Only observed vertices within labeled cycles 1–80 enter inference; omitted collinear points are not interpolated.
 Both delay candidates use identical observed transitions, requiring coordinates at cycles t−3, t and t+1.
@@ -382,7 +382,7 @@ An independent standard-library calculation reproduces all eight fitted cases wi
 
 ### Forward reconstruction of Figure 6(b)
 
-[Forward replay](results/figure6-forward-replay-2026-10-16) advances each recurrence for 80 cycles from population one at cycle one, using inferred K=833 and zero delay.
+[Forward replay](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/figure6-forward-replay-2026-10-16) advances each recurrence for 80 cycles from population one at cycle one, using inferred K=833 and zero delay.
 These inputs were chosen after the vector diagnostic; this is an exploratory reconstruction, not an independently specified replication.
 `replay_figure6.py EXTRACTION NEW_OUTPUT` retains four algebraically equivalent floating-point expressions for all four legend rates.
 It compares 262 available vertices per expression, totaling 1,048 comparisons; omitted late vertices remain unmeasured.
@@ -399,7 +399,7 @@ This advances the discrete-curve reconstruction only; panel (a), evolutionary so
 
 ## Observed growth flows
 
-[Population-band analysis](results/growth-flows-2026-10-16/analysis.json) checks all 600,000 observations from the completed growth ensembles.
+[Population-band analysis](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/growth-flows-2026-10-16/analysis.json) checks all 600,000 observations from the completed growth ensembles.
 Bands use population before each cycle and retain every visit, including returns after declines.
 An independent NumPy calculation exactly reproduced all 1,000 seed-band records.
 The retained simulator source is revision `61c885c`, whose hash matches the original run manifest.
@@ -467,7 +467,7 @@ The final analysis passes all 200 runs, using the frozen windows and explicit ex
 
 ## Complete Table 1 comparison
 
-[All twenty printed means](results/long-evolution-complete-2026-10-18/table1/comparison.csv) now have descriptive reconstruction estimates from the declared ensembles and growth fits.
+[All twenty printed means](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/long-evolution-complete-2026-10-18/table1/comparison.csv) now have descriptive reconstruction estimates from the declared ensembles and growth fits.
 The new evolutionary late-window population means are 858.774/919.125 and Gini means are 0.689854/0.728303 for stable/chaotic scenarios.
 All 200 long runs complete 100,000 cycles; 200,200 observations pass audit, and an independent calculation confirms all 96 statistical quantities.
 This completes execution of the declared long ensembles, not the paper replication. Original conventions, fixed-society age discrepancies, growth fits and remaining figure/Appendix B scope remain unresolved.
@@ -509,14 +509,14 @@ Historical model fidelity and other study requirements remain unresolved; the st
 ## Published equation clarification
 
 The [2022 chapter’s public Appendix B](https://link.springer.com/chapter/10.1007/978-3-030-92843-8_13) includes the growth-rate multiplier in Equation6’s delayed density term.
-[The source comparison](results/published-equation-correction-2026-10-19) verifies that arXivv2 omits this multiplier.
+[The source comparison](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/published-equation-correction-2026-10-19) verifies that arXivv2 omits this multiplier.
 The published form agrees with the recurrence form supported by our existing vector diagnostic.
 This resolves that version-specific algebraic ambiguity; it does not resolve the stated delay3 versus the exploratory zero-delay figure reconstruction.
 The publisher PDF request returned HTML. Published figure equivalence, fitting conventions and the agent-model discrepancies remain unresolved; no new completion credit is assigned.
 
 ## Published Figure 6 check
 
-[The publisher raster comparison](results/published-figure6-check-2026-10-19) retains the figure URL/hash and an exploratory comparison against preprint vectors.
+[The publisher raster comparison](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/published-figure6-check-2026-10-19) retains the figure URL/hash and an exploratory comparison against preprint vectors.
 Of184 vertices away from axes, legend and clipping,164 lie within two pixels of dark image content; maximum distance is5.55 pixels.
 Independent scalar arithmetic reproduces all184 distances. Visual inspection finds consistent labels and curve shapes.
 This one-way proximity check cannot identify overlapping/dotted curves or prove numerical identity. The delay discrepancy remains unresolved.
@@ -528,3 +528,11 @@ This one-way proximity check cannot identify overlapping/dotted curves or prove 
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/07929d72ca9c8ee4f1747714bccb7dfb170ec0b0/replications/stevenson_2021/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 07929d72ca9c8ee4f1747714bccb7dfb170ec0b0:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021) preserves the pre-cleanup files.
+To restore an input, run `git show 73c04a3c425b35121f16b43100a35f7b6ebbdf38:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

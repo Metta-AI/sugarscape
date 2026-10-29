@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-stevenson/replications/stevenson_2021/analyze_observations.py", line 28, in <module>
-    if args.mode=='complete': assert len(records)==200,'All 200 declared runs are required'
-                                     ^^^^^^^^^^^^^^^^^
-AssertionError: All 200 declared runs are required

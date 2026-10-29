@@ -34,4 +34,4 @@ python run_subsistence.py NEW_EXPERIMENT
 python analyze_subsistence.py COMPLETED_EXPERIMENT NEW_EXTRACTION NEW_ANALYSIS
 ```
 
-[The comparison plot](comparison.png) shows only original visible vertices against the complete ensemble. A separate Decimal calculation reproduces all 2,330 extracted coordinates within 1.43e-13. `verify_and_plot.py` retains the calculation and plotting procedure.
+[The comparison plot](https://github.com/Metta-AI/sugarscape/blob/73c04a3c425b35121f16b43100a35f7b6ebbdf38/replications/stevenson_2021/results/figure6a-subsistence-2026-10-18/comparison.png) shows only original visible vertices against the complete ensemble. A separate Decimal calculation reproduces all 2,330 extracted coordinates within 1.43e-13. `verify_and_plot.py` retains the calculation and plotting procedure.

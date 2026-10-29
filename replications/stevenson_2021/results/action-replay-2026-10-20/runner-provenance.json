@@ -1,6 +1,0 @@
-{
-  "auditor_sha256": "c17e4ea9462821490983cf9db182473219366bd51e582892d8f61875cc7cd73d",
-  "negative_control_auditor_sha256": "8eab457dc6189688974438ddabfd36bef1d4d5bfd1cb8cd88d58e1179cad97fc",
-  "negative_control_command": "python audit_actions.py NEW_OUTPUT (after applying age-mutation.patch to an isolated copy beside simulate.cpp)",
-  "production_simulator_changed": false
-}

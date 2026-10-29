@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-stevenson/replications/stevenson_2021/replay_figure6.py", line 28, in <module>
-    assert hashlib.sha256(path.read_bytes()).hexdigest() == curve["csv_sha256"]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError
