@@ -1,6 +1,0 @@
-{
-  "exit_code": 1,
-  "assertion": "manifest[source_sha256] == source_hashes",
-  "cause": "Auditor compared nested source hash mapping with enclosing release/source_sha256 document. No raw artifact mismatch inferred.",
-  "correction": "Select the documented source_sha256 mapping."
-}

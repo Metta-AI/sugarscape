@@ -1,4 +1,0 @@
-{
-  "initial_failure": "jsonlite decodes the PDF coordinate column as a list of numeric pairs, not a matrix; nrow returned NULL and allocation failed before report output.",
-  "correction": "Bind the coordinate pairs into a matrix. Numerical inputs and simulation outputs unchanged."
-}

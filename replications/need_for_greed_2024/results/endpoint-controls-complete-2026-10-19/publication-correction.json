@@ -1,4 +1,0 @@
-{
-  "initial_failure": "Attempted to copy per-input manifest.json from original qualification controls. Those controls use batch protocol.json instead. Copy failed before any trajectory compression or reporting.",
-  "correction": "Copy the original batch protocol and original control files; copy per-input manifest/result only for recovered public-runner inputs."
-}

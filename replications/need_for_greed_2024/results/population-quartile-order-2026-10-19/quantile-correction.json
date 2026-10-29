@@ -1,7 +1,0 @@
-{
-  "numpy_version": "1.26.4",
-  "initial_failure": "Independent R verification differs at two type3 medians of5001-row pooled temporal series. NumPy closest_observation returns1177.4 and1189.2929292929; R nearest-even order statistic is0.02 and0.0202020202 lower.",
-  "correction": "Compute type3 explicitly from one-based nearest-even ranks round(n*p), following R quantile documentation. Other eight types unchanged; all original data and initial reports retained.",
-  "definition_source": "https://stat.ethz.ch/R-manual/R-devel/library/stats/html/quantile.html",
-  "scope": "This corrects analysis convention labeling; it is not a simulator change or selected outcome."
-}

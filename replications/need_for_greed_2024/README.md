@@ -168,3 +168,11 @@ Historical boxplot aggregation remains unresolved. The paper’s printed Table I
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/32d24ff439a3f5ee74e6650b880bfb2187a5ea7f/replications/need_for_greed_2024/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 32d24ff439a3f5ee74e6650b880bfb2187a5ea7f:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/124fb920ce78f6a2ea6721a4db797c6dc9111b22/replications/need_for_greed_2024) preserves the pre-cleanup files.
+To restore an input, run `git show 124fb920ce78f6a2ea6721a4db797c6dc9111b22:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.
