@@ -1,8 +1,0 @@
-{
-  "reconciler_sha256": "c9ab27b1a392cb1fbcc8ea0a9c89577a054ef10fc18a6ffe26c85cddcbbff29b",
-  "auditor_sha256": "ebe2ccce6c936ea0d91f27c1a8f83832dcbed690812c72296d5c6c95a4c6f674",
-  "measurements_archive_sha256": "edb9a2647064e0592da4217b8c70606270648fe41a90b7858ddd986ab01a18d5",
-  "raw_archive_external": "/Users/relh/Code/workspace/sugarscape-replication-evidence/pike-common-ten-complete-001/native.tar.gz",
-  "scope": "Full198runrawarchive retained externally132326408bytes, SHA inexport.json; separatecloudseedzero rawarchive previouslypublished/retained. ThisPR includes all200000derivedprice-steprecords and completeaudits. Existing remote rawaudit completed before checksum-export error; receipt recovered without rerunning simulation/audit.",
-  "validation": "Nativearchive SHA checked before safeextraction. Complete198audit codehash, manifest andledgerhashes checked. Bothseedzero native files rehashed.198000unchangedCSVrecords checked;2000seedzero price-stepstats independently recomputed usingNumPy max4.45e-16. Compressed measurementmember readback exact. Ruff andgitdiffcheck passed."
-}

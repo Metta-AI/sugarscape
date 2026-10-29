@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/audit_common_resources.py", line 64, in <module>
-    assert len(records) == required, f"All {required} declared runs are required"
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: All 200 declared runs are required

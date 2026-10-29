@@ -10,11 +10,11 @@ Later complete analyses supersede the launch and prefix records retained below.
 
 | Paper target | Current evidence | Unresolved requirement |
 | --- | --- | --- |
-| Phase I survival and prices | [300 runs](results/phase1-analysis-2026-10-17/analysis.json); native notebook histograms independently reconstructed | Historical survivor means differ; original seeds and equivalence margin unavailable |
-| Phase II trade thresholds | [600 runs](results/phase2-analysis-2026-10-17/analysis.json), thresholds 1/5/10 | Similar means and intervals spanning zero do not prove the reported equivalence |
-| Movement policies | [1,200 runs](results/phase3-analysis-2026-10-17/movement/analysis.json), including separately labeled selector corrections | Released selector disagrees with the stated rule; corrections do not establish historical behavior |
-| Price-direction claims | [2,100-run analysis](results/convergence-2026-10-17/analysis.json) supports finite-horizon directions | Retrospective windows do not establish asymptotic convergence or recover the plotted historical trajectories |
-| Common-resource thresholds | [400 conditions](results/common-threshold-complete-2026-10-17/comparison.json), all seeds at thresholds 5/10 | Every condition contains nonfinite holdings; the approximately 400-higher central-peak claim lacks a precise comparison target |
+| Phase I survival and prices | [300 runs](https://github.com/Metta-AI/sugarscape/blob/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019/results/phase1-analysis-2026-10-17/analysis.json); native notebook histograms independently reconstructed | Historical survivor means differ; original seeds and equivalence margin unavailable |
+| Phase II trade thresholds | [600 runs](https://github.com/Metta-AI/sugarscape/blob/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019/results/phase2-analysis-2026-10-17/analysis.json), thresholds 1/5/10 | Similar means and intervals spanning zero do not prove the reported equivalence |
+| Movement policies | [1,200 runs](https://github.com/Metta-AI/sugarscape/blob/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019/results/phase3-analysis-2026-10-17/movement/analysis.json), including separately labeled selector corrections | Released selector disagrees with the stated rule; corrections do not establish historical behavior |
+| Price-direction claims | [2,100-run analysis](https://github.com/Metta-AI/sugarscape/blob/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019/results/convergence-2026-10-17/analysis.json) supports finite-horizon directions | Retrospective windows do not establish asymptotic convergence or recover the plotted historical trajectories |
+| Common-resource thresholds | [400 conditions](https://github.com/Metta-AI/sugarscape/blob/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019/results/common-threshold-complete-2026-10-17/comparison.json), all seeds at thresholds 5/10 | Every condition contains nonfinite holdings; the approximately 400-higher central-peak claim lacks a precise comparison target |
 | Runtime comparisons | [900 controlled runs](results/timing-complete-2026-10-17), native and full-step timers | Native timing excludes network reassessment; common-resource timings accompany invalid economic trajectories |
 
 Historical source identification remains shared across these targets. The released
@@ -74,7 +74,7 @@ The full study scope covers the paper's Sugarscape experiments:
 Native ranges also need explicit accounting: `randint(1,6)` and `randrange(25,50)` exclude their upper endpoints, whereas the paper describes inclusive-looking ranges.
 No rules or ranges are silently changed to match the prose. This PR establishes the runnable reference study inside the Metta-AI fork; independent model integration and full replication remain outstanding.
 
-[Retained pilot evidence](results/pilots-2026-10-16) now includes all three observer audits and compressed raw records.
+[Retained pilot evidence](https://github.com/Metta-AI/sugarscape/tree/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019/results/pilots-2026-10-16) now includes all three observer audits and compressed raw records.
 The network pilot has 47 individual survivors but a native reporter value of 2,544 at termination.
 All three observer replays match their native price and reporter outputs byte-for-byte, covering 3,000 steps and 154,898 health records.
 Notebook source excerpts are distributed under the [author's MIT license](AUTHOR_LICENSE).
@@ -82,3 +82,11 @@ Notebook source excerpts are distributed under the [author's MIT license](AUTHOR
 ## Preserved evidence
 
 [The full experiment record](https://github.com/Metta-AI/sugarscape/blob/2e438a8a0b928a2686d0caabd315c15c911b5498/replications/pike_2019/README.md) retains dated runs, budgets, failures, source hashes, figures, and detailed controls. Existing histories, outputs, and checkpoints remain unchanged. Historical launch notes do not establish current job status. Restore archived raw inputs before rerunning an analysis, as described in that record.
+
+## Experiment evidence
+
+Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
+Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
+The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019) preserves the pre-cleanup files.
+To restore an input, run `git show bd7858f34b6f9fb7b4abc4f8b68884eb17149f31:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
+Use the documented runners to regenerate outputs; local output directories remain untracked.

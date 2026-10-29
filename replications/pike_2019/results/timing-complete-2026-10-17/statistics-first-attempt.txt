@@ -1,1 +1,0 @@
-R audit exited1 before writing output: as.numeric(r$pointwise_ci95) cannot coerce jsonlite's list column. Fixed auditor decoding to unlist that interval; numerical inputs unchanged.

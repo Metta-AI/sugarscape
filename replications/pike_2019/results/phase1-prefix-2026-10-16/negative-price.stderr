@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/audit_phase1.py", line 104, in <module>
-    assert all(math.isfinite(p) and p > 0 for p in values)
-           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

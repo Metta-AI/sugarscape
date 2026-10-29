@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/relh/Code/workspace/sugarscape-pike/replications/pike_2019/audit_movement_policy.py", line 40, in <module>
-    assert changes == 1 and ast.dump(original) == ast.dump(corrected), (
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: Correction differs from declared operator change
