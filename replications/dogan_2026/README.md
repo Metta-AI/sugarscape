@@ -265,7 +265,7 @@ The native queue has proceeded to the original levy sweep; its later per-seed th
 
 ## Fresh figure reconstruction
 
-[Both manuscript figures](results/figures-2026-10-15) regenerate from the completed fresh main-sweep CSV using the unchanged author plotting script.
+[Both manuscript figures](https://github.com/Metta-AI/sugarscape/tree/21435a64e27678120fd395c848b1ed7814bf86de/replications/dogan_2026/results/figures-2026-10-15) regenerate from the completed fresh main-sweep CSV using the unchanged author plotting script.
 The manuscript references the two deposited PNGs directly.
 An independent observer checks all 42 plotted ordinates against five-seed means computed with Python's standard-library CSV and statistics modules.
 All values agree within 1e-12, and observing the plot calls leaves both generated PNGs byte-identical to their unobserved versions.
@@ -275,7 +275,7 @@ Both original and fresh images are retained; visual inspection finds the same cu
 This establishes numerical plot reconstruction from fresh simulations, not pixel-exact rendering or validation of the titles' broader claims.
 The independently audited Tables 2 and 4 supply the corresponding published numerical targets.
 
-Run `run_figures.py ENGINE COMPLETE_CANONICAL NEW_OUTPUT`, then `audit_figure_series.py FIGURE_OUTPUT NEW_AUDIT`. The [committed figure bundle](results/figures-2026-10-15/README.md) now also retains the complete native directory layout, so its audit runs without reconstructing missing input paths.
+Run `run_figures.py ENGINE COMPLETE_CANONICAL NEW_OUTPUT`, then `audit_figure_series.py FIGURE_OUTPUT NEW_AUDIT`. The [committed figure bundle](https://github.com/Metta-AI/sugarscape/blob/21435a64e27678120fd395c848b1ed7814bf86de/replications/dogan_2026/results/figures-2026-10-15/README.md) now also retains the complete native directory layout, so its audit runs without reconstructing missing input paths.
 
 ## Per-seed calibration audit prepared
 
@@ -372,10 +372,16 @@ The manuscript's roughly-quarter assertion cannot be explained by another random
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/82cb45f731d76c985209fac842b857db305320ae/replications/dogan_2026/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 82cb45f731d76c985209fac842b857db305320ae:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/eaf7d62d991651892e524eda24914c300c1423d7/replications/dogan_2026) preserves the pre-cleanup files.
-To restore an input, run `git show eaf7d62d991651892e524eda24914c300c1423d7:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/21435a64e27678120fd395c848b1ed7814bf86de/replications/dogan_2026).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=21435a64e27678120fd395c848b1ed7814bf86de --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/eaf7d62d991651892e524eda24914c300c1423d7/replications/dogan_2026) retains raw outputs removed in previous cleanups.
