@@ -1,6 +1,6 @@
 # Bigbee, Cioffi-Revilla, and Luke (2007): Replication of Sugarscape Using MASON
 
-[The published Table 2 inventory](results/published-targets-2026-10-20) now maps all seventeen outcomes to frozen configuration hashes, paraphrased criteria, rule families, and author classifications. The earlier draft inventory remains intact. Missing per-row protocols and historical implementation qualifications remain; no new replication credit is assigned.
+[The published Table 2 inventory](https://github.com/Metta-AI/sugarscape/tree/e24f96c88cab385772f2bf232c121b7bc5354cc9/replications/bigbee_2007/results/published-targets-2026-10-20) now maps all seventeen outcomes to frozen configuration hashes, paraphrased criteria, rule families, and author classifications. The earlier draft inventory remains intact. Missing per-row protocols and historical implementation qualifications remain; no new replication credit is assigned.
 
 Paper: [published chapter](https://doi.org/10.1007/978-4-431-71307-4_20).
 The [published eight-page PDF](https://people.cs.gmu.edu/~sean/papers/Replication07.pdf) was recovered from the author’s current faculty domain.
@@ -187,11 +187,11 @@ No earlier experiment snapshot was recovered from this catalog; other historical
 
 ## Archived author download page
 
-[The December 2008 author-page snapshot](results/author-download-page-2026-10-18) pairs release 1.1.2 with MASON 12 and displays a November 25, 2007 release date. This corroborates the framework pairing before the 2011 mirror. Links to versions 1 and 1.1.1 were recovered, but their package bytes were not. The paper’s MASON 10 experiment snapshot remains unidentified.
+[The December 2008 author-page snapshot](https://github.com/Metta-AI/sugarscape/tree/e24f96c88cab385772f2bf232c121b7bc5354cc9/replications/bigbee_2007/results/author-download-page-2026-10-18) pairs release 1.1.2 with MASON 12 and displays a November 25, 2007 release date. This corroborates the framework pairing before the 2011 mirror. Links to versions 1 and 1.1.1 were recovered, but their package bytes were not. The paper’s MASON 10 experiment snapshot remains unidentified.
 
 ## Archived source working copy
 
-[The Google Code source snapshot audit](results/source-working-copy-2026-10-18) verifies all 870 ZIP entries and retains Subversion metadata plus core sources. Revision 24 has 2011 directory-change dates and identifies bundled MASON 16. Trunk and branch core files are identical; agent and reproduction rules match release 1.1.2 after newline normalization. This working-copy snapshot does not recover the historical paper revision or provide completion credit.
+[The Google Code source snapshot audit](https://github.com/Metta-AI/sugarscape/tree/e24f96c88cab385772f2bf232c121b7bc5354cc9/replications/bigbee_2007/results/source-working-copy-2026-10-18) verifies all 870 ZIP entries and retains Subversion metadata plus core sources. Revision 24 has 2011 directory-change dates and identifies bundled MASON 16. Trunk and branch core files are identical; agent and reproduction rules match release 1.1.2 after newline normalization. This working-copy snapshot does not recover the historical paper revision or provide completion credit.
 
 ## Earlier package archive index
 
@@ -201,16 +201,22 @@ The unresolved artifact is the paper-era Sugarscape model source. MASON10 itself
 
 ## Original bundled bytecode comparison
 
-[All nine original-binary runs](results/bundled-binary-parity-2026-10-19) match the historical source rebuild byte-for-byte, including all 3,006 population-observer states. Class-loading logs verify original model, scheduler and random-generator bytecode; only the two replay wrappers are compiled. Both reproduction cases retain 989 accounting disagreements. This rules out modern recompilation as their cause in these checks, but does not authenticate the paper-era model or historical JVM.
+[All nine original-binary runs](https://github.com/Metta-AI/sugarscape/tree/e24f96c88cab385772f2bf232c121b7bc5354cc9/replications/bigbee_2007/results/bundled-binary-parity-2026-10-19) match the historical source rebuild byte-for-byte, including all 3,006 population-observer states. Class-loading logs verify original model, scheduler and random-generator bytecode; only the two replay wrappers are compiled. Both reproduction cases retain 989 accounting disagreements. This rules out modern recompilation as their cause in these checks, but does not authenticate the paper-era model or historical JVM.
 
 ## Archived raw outputs
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/978716243eba3cda59175816142f5a28615ef95d/replications/bigbee_2007/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 978716243eba3cda59175816142f5a28615ef95d:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007) preserves the pre-cleanup files.
-To restore an input, run `git show 1b4cd0477036d28b2f117a0d1b724424d40fa9b3:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/e24f96c88cab385772f2bf232c121b7bc5354cc9/replications/bigbee_2007).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=e24f96c88cab385772f2bf232c121b7bc5354cc9 --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/1b4cd0477036d28b2f117a0d1b724424d40fa9b3/replications/bigbee_2007) retains raw outputs removed in previous cleanups.
