@@ -1,6 +1,6 @@
 # Multi-Level Mesa (Pike, 2019)
 
-[The common-resource history audit](results/common-source-history-2026-10-20) checks all eight ancestors of the selected pre-publication revision. Four policy/agent files are byte-identical in all 32 snapshots. Their pooling defect cannot be attributed to an edit within that history; historical installed dependencies and working-tree provenance remain unknown. Numerical validity still fails, and the study remains incomplete.
+[The common-resource history audit](https://github.com/Metta-AI/sugarscape/tree/9dfc564280813da402cf3442222d77f581b1360f/replications/pike_2019/results/common-source-history-2026-10-20) checks all eight ancestors of the selected pre-publication revision. Four policy/agent files are byte-identical in all 32 snapshots. Their pooling defect cannot be attributed to an edit within that history; historical installed dependencies and working-tree provenance remain unknown. Numerical validity still fails, and the study remains incomplete.
 
 Status: **incomplete study**. All declared native experiment grids and the controlled timing ensemble have completed their audits. Numerical validity, historical source fidelity, and several published interpretations remain unresolved.
 
@@ -15,7 +15,7 @@ Later complete analyses supersede the launch and prefix records retained below.
 | Movement policies | [1,200 runs](https://github.com/Metta-AI/sugarscape/blob/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019/results/phase3-analysis-2026-10-17/movement/analysis.json), including separately labeled selector corrections | Released selector disagrees with the stated rule; corrections do not establish historical behavior |
 | Price-direction claims | [2,100-run analysis](https://github.com/Metta-AI/sugarscape/blob/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019/results/convergence-2026-10-17/analysis.json) supports finite-horizon directions | Retrospective windows do not establish asymptotic convergence or recover the plotted historical trajectories |
 | Common-resource thresholds | [400 conditions](https://github.com/Metta-AI/sugarscape/blob/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019/results/common-threshold-complete-2026-10-17/comparison.json), all seeds at thresholds 5/10 | Every condition contains nonfinite holdings; the approximately 400-higher central-peak claim lacks a precise comparison target |
-| Runtime comparisons | [900 controlled runs](results/timing-complete-2026-10-17), native and full-step timers | Native timing excludes network reassessment; common-resource timings accompany invalid economic trajectories |
+| Runtime comparisons | [900 controlled runs](https://github.com/Metta-AI/sugarscape/tree/9dfc564280813da402cf3442222d77f581b1360f/replications/pike_2019/results/timing-complete-2026-10-17), native and full-step timers | Native timing excludes network reassessment; common-resource timings accompany invalid economic trajectories |
 
 Historical source identification remains shared across these targets. The released
 shared-resource code double-counts stale contributions in a passive, byte-identical
@@ -83,10 +83,16 @@ Notebook source excerpts are distributed under the [author's MIT license](AUTHOR
 
 [The full experiment record](https://github.com/Metta-AI/sugarscape/blob/2e438a8a0b928a2686d0caabd315c15c911b5498/replications/pike_2019/README.md) retains dated runs, budgets, failures, source hashes, figures, and detailed controls. Existing histories, outputs, and checkpoints remain unchanged. Historical launch notes do not establish current job status. Restore archived raw inputs before rerunning an analysis, as described in that record.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019) preserves the pre-cleanup files.
-To restore an input, run `git show bd7858f34b6f9fb7b4abc4f8b68884eb17149f31:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/9dfc564280813da402cf3442222d77f581b1360f/replications/pike_2019).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=9dfc564280813da402cf3442222d77f581b1360f --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/bd7858f34b6f9fb7b4abc4f8b68884eb17149f31/replications/pike_2019) retains raw outputs removed in previous cleanups.
