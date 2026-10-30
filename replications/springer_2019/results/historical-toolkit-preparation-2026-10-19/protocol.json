@@ -1,8 +1,0 @@
-{
-  "outer_seconds": 1800,
-  "budget_usd": 4,
-  "operation": "Build isolated Ubuntu16.04 rootfs and checksum-verified CUDA9.1.85 toolkit; no driver install, no simulation yet",
-  "ubuntu_manifest": "sha256:a3785f78ab8547ae2710c89e627783cfa7ee7824d3468cae6835c9f4eae23ff7",
-  "remote_root": "/root/sugarscape/dynasoar-cuda91-001",
-  "limit": "Compiler patch level and current GPU differ from historical paper; report actual versions."
-}

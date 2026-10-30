@@ -1,8 +1,0 @@
-{
-  "parent_command": "cmd-c66px",
-  "outer_seconds": 150,
-  "sanitizer_seconds": 90,
-  "budget_usd": 2,
-  "tool": "compute-sanitizer synccheck 2022.3.0",
-  "scope": "Same compiled128x128 debug61 original-capacity binary; instrumentation only, no simulation/allocator changes."
-}

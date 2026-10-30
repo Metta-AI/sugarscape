@@ -75,7 +75,7 @@ The extracted bars qualify Section 6.1’s general statement that baseline versi
 
 ## Full-size native-default batch
 
-[The registered batch](results/full-native-defaults-2026-10-18/protocol.json) uses the original 1,700×1,700 grid, 10,000 iterations and seed 42. One DynaSOAr debug execution records allocator layout and assertions; five release executions each measure DynaSOAr, AOS and SOA. Every input source hash is checked against the successful qualification. No size or capacity macros override archived defaults.
+[The registered batch](https://github.com/Metta-AI/sugarscape/blob/176a8a3d9bc2fe0d7edf8260b753a8b85c852ffe/replications/springer_2019/results/full-native-defaults-2026-10-18/protocol.json) uses the original 1,700×1,700 grid, 10,000 iterations and seed 42. One DynaSOAr debug execution records allocator layout and assertions; five release executions each measure DynaSOAr, AOS and SOA. Every input source hash is checked against the successful qualification. No size or capacity macros override archived defaults.
 
 Command `cmd-7k3hf` is registered on the owned H100 with a 45-minute execution bound and $5 budget. It exited after the full-size debug process hit its 600-second limit, before any release run started; the failure is retained below. Four allocator variants remain outside this first batch; all seven variants, independent model validation and capacity searches remain required. New-hardware timings cannot establish historical absolute timing equivalence.
 
@@ -83,7 +83,7 @@ Command `cmd-7k3hf` is registered on the owned H100 with a 45-minute execution b
 
 `qualify_remaining_allocators.py` compiles CUDA, BitmapAlloc, mallocMC and Halloc from a separate copy of the qualified artifact source. External allocator adapters remain unchanged in this first attempt. Successful builds receive two 32×32, 10,000-iteration debug executions. Failed builds remain recorded and prevent a successful qualification verdict.
 
-[The bounded protocol](results/remaining-allocators-2026-10-18/protocol.json) waits for the full-size timing batch to exit and its sealed export to complete. It requires the owned node to remain awake. The qualification has a 20-minute outer limit and $3 budget, including the idle window. Its compiler dependencies and outputs will be retained; scheduling is not evidence of execution.
+[The bounded protocol](https://github.com/Metta-AI/sugarscape/blob/176a8a3d9bc2fe0d7edf8260b753a8b85c852ffe/replications/springer_2019/results/remaining-allocators-2026-10-18/protocol.json) waits for the full-size timing batch to exit and its sealed export to complete. It requires the owned node to remain awake. The qualification has a 20-minute outer limit and $3 budget, including the idle window. Its compiler dependencies and outputs will be retained; scheduling is not evidence of execution.
 
 ## Recovered author figure source
 
@@ -111,7 +111,7 @@ A separate attempt inserts eight `template` keywords into existing shared-adapte
 
 `diagnose_progress.py` adds host-side stderr records around initialization and simulation phases. It preserves model rules, random calls, kernel ordering, synchronization calls and the original 10,000-step horizon. Logs cover the first two iterations and every hundredth thereafter. Post-launch host records do not alone prove kernel completion; the next record after an existing synchronization supplies that boundary.
 
-[Command cmd-9vcwk](results/progress-diagnostic-2026-10-18/protocol.json) first checks the observer on the qualified 32×32 input, then probes full-size debug and release builds for 120 seconds each. It has a ten-minute outer bound and $2 budget. It is diagnostic instrumentation, not a timing benchmark or independent state-validation claim.
+[Command cmd-9vcwk](https://github.com/Metta-AI/sugarscape/blob/176a8a3d9bc2fe0d7edf8260b753a8b85c852ffe/replications/springer_2019/results/progress-diagnostic-2026-10-18/protocol.json) first checks the observer on the qualified 32×32 input, then probes full-size debug and release builds for 120 seconds each. It has a ten-minute outer bound and $2 budget. It is diagnostic instrumentation, not a timing benchmark or independent state-validation claim.
 
 ### External allocator runtime audit
 
@@ -142,7 +142,7 @@ The first resumed attempt failed before simulation because the container reset r
 
 ### Completed native release control
 
-[The complete release-control audit](results/release-control-complete-2026-10-18) confirms a successful 32×32 release run, the full-size debug active-mask assertion, and a full-size release timeout during agent creation. Disabling debug assertions in the author’s release mode does not resolve the initialization failure. All 511 qualified source hashes and three binary hashes pass.
+[The complete release-control audit](https://github.com/Metta-AI/sugarscape/tree/176a8a3d9bc2fe0d7edf8260b753a8b85c852ffe/replications/springer_2019/results/release-control-complete-2026-10-18) confirms a successful 32×32 release run, the full-size debug active-mask assertion, and a full-size release timeout during agent creation. Disabling debug assertions in the author’s release mode does not resolve the initialization failure. All 511 qualified source hashes and three binary hashes pass.
 
 The small control reduces both grid size and allocator capacity. Those factors still need separating before attributing the timeout to population, allocator size, scheduling or an implementation error. No benchmark or paper-completion claim follows from these diagnostics.
 
@@ -213,10 +213,16 @@ Neither this hardware control nor a scheduling diagnosis has been completed; no 
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/6947bee1787c5986f2f8c6b466fb9e1204e26a44/replications/springer_2019/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 6947bee1787c5986f2f8c6b466fb9e1204e26a44:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019) preserves the pre-cleanup files.
-To restore an input, run `git show 51639f44baa9cb82343bfda4241984c197ee2207:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/176a8a3d9bc2fe0d7edf8260b753a8b85c852ffe/replications/springer_2019).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=176a8a3d9bc2fe0d7edf8260b753a8b85c852ffe --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/51639f44baa9cb82343bfda4241984c197ee2207/replications/springer_2019) retains raw outputs removed in previous cleanups.
