@@ -7,3 +7,6 @@ results/**/*.csv
 
 # Generated experiment evidence is kept outside the review diff.
 /results/
+
+# Use the pinned upstream checkout instead of copying the reference model.
+/vendor/
