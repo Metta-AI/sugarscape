@@ -1,35 +1,35 @@
 # Richmond et al. (2023): FLAME GPU 2 Sugarscape
 
-Status: **completed qualified author-code replication, with mixed findings**. [The final requirement audit](results/method-verdict-2026-10-20) verifies the complete original Sugarscape protocol and all figure analyses. Numerical benchmark results reproduce; implementation discrepancies and historical visualization/hardware qualifications remain explicit. Corrective one-condition controls are not substituted for the full-grid replay.
+Status: **completed qualified author-code replication, with mixed findings**. [The final requirement audit](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/method-verdict-2026-10-20) verifies the complete original Sugarscape protocol and all figure analyses. Numerical benchmark results reproduce; implementation discrepancies and historical visualization/hardware qualifications remain explicit. Corrective one-condition controls are not substituted for the full-grid replay.
 
-[Update-order evidence confirms the release follows Figure 6](results/update-order-evidence-2026-10-20), while section 4.3 describes movement first. Complete native first-step states show the ambiguity can affect access to resources before death. Both interpretations remain explicit; no layer swap or new simulation was performed.
+[Update-order evidence confirms the release follows Figure 6](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/update-order-evidence-2026-10-20), while section 4.3 describes movement first. Complete native first-step states show the ambiguity can affect access to resources before death. Both interpretations remain explicit; no layer swap or new simulation was performed.
 
-[All nine initializer controls passed native audits](results/initializer-native-complete-2026-10-20), covering 5,216,793 post-step records and 589,824 initial cells. Independent R reproduces every landscape; both historical baseline trajectories repeat exactly. Final populations differ across the declared alternatives, which remain separately labelled. Broader method qualifications remain.
+[All nine initializer controls passed native audits](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/initializer-native-complete-2026-10-20), covering 5,216,793 post-step records and 589,824 initial cells. Independent R reproduces every landscape; both historical baseline trajectories repeat exactly. Final populations differ across the declared alternatives, which remain separately labelled. Broader method qualifications remain.
 
-[A second initializer attempt is queued as a bounded boot command](results/initializer-boot-dispatch-2026-10-20): four-hour queue hold, 60-minute server runtime limit, and a separate $10 reservation. The unchanged nine-variant payload is commit-pinned and hash-verified; no native result is claimed.
+[A second initializer attempt is queued as a bounded boot command](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/initializer-boot-dispatch-2026-10-20): four-hour queue hold, 60-minute server runtime limit, and a separate $10 reservation. The unchanged nine-variant payload is commit-pinned and hash-verified; no native result is claimed.
 
-[The initializer attempt reached its startup bound](results/initializer-startup-bound-2026-10-20). The H100 remained queued and is verified stopped with disk intact; no simulation command was created. Prepared controls remain unexecuted.
+[The initializer attempt reached its startup bound](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/initializer-startup-bound-2026-10-20). The H100 remained queued and is verified stopped with disk intact; no simulation command was created. Prepared controls remain unexecuted.
 
-[The later upstream source check](results/upstream-recheck-2026-10-20) confirms the publication release is the pinned `v1`. The inspected newer revision changes only the engine dependency; model source is byte-identical. Its telemetry-related timing qualification is preserved without changing the experiment.
+[The later upstream source check](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/upstream-recheck-2026-10-20) confirms the publication release is the pinned `v1`. The inspected newer revision changes only the engine dependency; model source is byte-identical. Its telemetry-related timing qualification is preserved without changing the experiment.
 
-[The native initializer controls are queued](results/initializer-native-queued-2026-10-20), with a $10 reservation and bounded startup/execution/export. No new simulation has started. Both historical baseline trajectories must match before interpreting the eight initializer combinations.
+[The native initializer controls are queued](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/initializer-native-queued-2026-10-20), with a $10 reservation and bounded startup/execution/export. No new simulation has started. Both historical baseline trajectories must match before interpreting the eight initializer combinations.
 
-[Initialization controls are prepared](results/initializer-controls-prepared-2026-10-19): a released baseline plus all eight combinations of metabolism maximum, capacity cap, and distance geometry. Repeated preparation and patch round trips pass. Full initial-cell capture is included; native execution and variant-aware audits remain pending.
+[Initialization controls are prepared](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/initializer-controls-prepared-2026-10-19): a released baseline plus all eight combinations of metabolism maximum, capacity cap, and distance geometry. Repeated preparation and patch round trips pass. Full initial-cell capture is included; native execution and variant-aware audits remain pending.
 
-[The landscape interpretation audit](results/landscape-interpretations-2026-10-19) quantifies capacity and boundary ambiguities on two retained host worlds. Minimum peak spacing of 20 does not prevent summed sugar exceeding four. Independent R reproduces all 786,432 cell values. These initialization diagnostics do not establish native simulation fidelity or add completed-study credit.
+[The landscape interpretation audit](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/landscape-interpretations-2026-10-19) quantifies capacity and boundary ambiguities on two retained host worlds. Minimum peak spacing of 20 does not prevent summed sugar exceeding four. Independent R reproduces all 786,432 cell values. These initialization diagnostics do not establish native simulation fidelity or add completed-study credit.
 
-[Counter-carryover controls passed all four native audits](results/counter-reset-native-complete-2026-10-19/README.md), covering 2,873,995 post-step records. Per-step resets eliminate unresolved agents in all 100 observed steps while preserving the nine-round cap. Both baseline trajectories repeat exactly; broader method qualifications remain.
+[Counter-carryover controls passed all four native audits](https://github.com/Metta-AI/sugarscape/blob/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/counter-reset-native-complete-2026-10-19/README.md), covering 2,873,995 post-step records. Per-step resets eliminate unresolved agents in all 100 observed steps while preserving the nine-round cap. Both baseline trajectories repeat exactly; broader method qualifications remain.
 
-[All five method controls passed native state audits](results/method-controls-native-complete-2026-10-19/README.md), covering 3,964,000 post-step records. Combined corrections leave 4,613 active agents versus 8,792 in the release. Counter carryover remains unresolved; no whole-paper completion credit.
+[All five method controls passed native state audits](https://github.com/Metta-AI/sugarscape/blob/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/method-controls-native-complete-2026-10-19/README.md), covering 3,964,000 post-step records. Combined corrections leave 4,613 active agents versus 8,792 in the release. Counter carryover remains unresolved; no whole-paper completion credit.
 
-The [native launch record](results/method-controls-native-launch-2026-10-19/README.md) retains the $8 cap and pre-completion status.
+The [native launch record](https://github.com/Metta-AI/sugarscape/blob/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/method-controls-native-launch-2026-10-19/README.md) retains the $8 cap and pre-completion status.
 The completed audit above supersedes its pending-validation status.
 
-[Stated-method controls are prepared](results/method-controls-prepared-2026-10-19) for state transfer, cardinal movement and nonpositive-wealth death. All five source variants reproduce byte-for-byte and pass patch reversal. They remain uncompiled and unexecuted; the historical replay is unchanged.
+[Stated-method controls are prepared](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/method-controls-prepared-2026-10-19) for state transfer, cardinal movement and nonpositive-wealth death. All five source variants reproduce byte-for-byte and pass patch reversal. They remain uncompiled and unexecuted; the historical replay is unchanged.
 
 Earlier status: incomplete while model-fidelity checks were pending. The final requirement audit above supersedes that status; all discrepancies remain documented.
-[Complete native benchmark](results/full-native-complete-2026-10-18): **84/84 conditions**; all **6,600 population records** and **162 resolution rows** match the author archive exactly.
-[The complete state audit](results/state-observer-complete-2026-10-18) reconciles 893,017 observations after resolving a cross-toolchain initializer mismatch.
+[Complete native benchmark](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/full-native-complete-2026-10-18): **84/84 conditions**; all **6,600 population records** and **162 resolution rows** match the author archive exactly.
+[The complete state audit](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/state-observer-complete-2026-10-18) reconciles 893,017 observations after resolving a cross-toolchain initializer mismatch.
 It confirms lost wealth/metabolism transfers and unresolved agents omitted from reported population.
 
 Paper: [FLAME GPU 2: A framework for flexible and performant agent based simulation on GPUs](https://doi.org/10.1002/spe.3207).
@@ -237,7 +237,7 @@ python replications/richmond_2023/audit_resolution.py EXTRACTED_OBSERVER UNMODIF
 
 ## Full unchanged native benchmark
 
-[The frozen full-run protocol](results/full-native-launch-2026-10-17/protocol.json)
+[The frozen full-run protocol](https://github.com/Metta-AI/sugarscape/blob/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/full-native-launch-2026-10-17/protocol.json)
 runs all 84 original conditions in one process, preserving the native counter
 lifecycle. It reuses the verified unmodified executable and checks its hash before
 execution. The prior qualification and observer remain separate evidence and are
@@ -254,7 +254,7 @@ Operational completion alone will not establish full coverage or paper replicati
 
 The [source audit](https://github.com/Metta-AI/sugarscape/blob/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023/results/model-rule-source-audit-2026-10-17/audit.json) identifies
 additional rule differences in the exact paper-linked revision. The subsequent
-[complete native state audit](results/state-observer-complete-2026-10-18) validates transfer defects and diagonal movement.
+[complete native state audit](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/state-observer-complete-2026-10-18) validates transfer defects and diagonal movement.
 
 The most consequential finding is in `movement_response` (lines 145–180).
 The winning request updates its ID and priority, but never copies sugar or metabolism
@@ -292,7 +292,7 @@ It records IDs, positions, statuses, sugar, metabolism, and local resource value
 A subtle measurement distinction is retained: original CSV population counts only
 status `OCCUPIED`, whereas the observer also records unresolved agents.
 Parity must compare the same status subset; total active population is a separate statistic.
-The job completed successfully; [state findings and the corrected initializer control](results/state-observer-complete-2026-10-18) are now audited.
+The job completed successfully; [state findings and the corrected initializer control](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/state-observer-complete-2026-10-18) are now audited.
 The storage collector is capped at 100 MiB.
 
 ## Figure 6 dependency-structure comparison
@@ -405,7 +405,7 @@ Duplicate IDs remain visible and are excluded from displacement pairing.
 Multiple resolution rounds can produce displacement greater than one, so that alone is not classified as a rule violation.
 Matching population counts cannot prove that instrumentation leaves every internal state unchanged.
 
-The [complete native capture and readback](results/state-observer-complete-2026-10-18) pass the audit after matching the initializer toolchain.
+The [complete native capture and readback](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/state-observer-complete-2026-10-18) pass the audit after matching the initializer toolchain.
 All 893,017 observations are validated for the stated checks; whole-study completion remains outstanding.
 
 ## Full benchmark scaling prefix: 47 of 48 conditions
@@ -428,7 +428,7 @@ or a whole-paper verdict. Original source-rule and Figure 11 provenance question
 
 ## Complete population, resolution and scaling plots
 
-[The reconstructed Figure 11 A-C data](results/native-figures-2026-10-18) use the full original benchmark.
+[The reconstructed Figure 11 A-C data](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/native-figures-2026-10-18) use the full original benchmark.
 Population and resolution curves agree exactly with the author archive.
 H100 timing scales approximately linearly across all sixteen widths: descriptive R² 0.999705,
 versus 0.999422 in the archived V100 data. Seed ranges and all fit residuals are retained.
@@ -437,7 +437,7 @@ Earlier partial-prefix sections preserve their acquisition-time status; they are
 
 ## Native initial, first and fiftieth image comparisons
 
-[The fixed-grid comparison](results/native-image-comparison-2026-10-18) reconstructs all three views
+[The fixed-grid comparison](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/native-image-comparison-2026-10-18) reconstructs all three views
 from the audited native capture. It matches 13,579, 14,295 and 16,454 of 65,536 released image classes
 at initialization, iteration one and iteration fifty respectively.
 The initial landscape differs before simulation; historical visualization provenance remains unresolved.
@@ -446,7 +446,7 @@ are explicit, and these differences do not yet constitute a completed negative p
 
 ## Paired native initialization control
 
-[The frozen control](results/clang-input-control-preparation-2026-10-18) supplies
+[The frozen control](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/clang-input-control-preparation-2026-10-18) supplies
 complete GNU and Clang initial states through the original JSON input interface.
 It requires GNU trajectory parity before interpreting the Clang comparison.
 The GPU functions are identical across the image and release commits, but engine
@@ -454,7 +454,7 @@ versions differ. Execution is bounded and pending; no result is inferred yet.
 
 ### Correct native initialization reference
 
-[The preparation correction](results/clang-input-control-correction-2026-10-18)
+[The preparation correction](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/clang-input-control-correction-2026-10-18)
 replaces a mistakenly selected macOS GNU extraction with the previously
 qualified Linux extraction. All 11,264 initial active records match the prior
 native capture exactly. The provider confirms the superseded command never ran.
@@ -463,7 +463,7 @@ pending.
 
 ### Native initialization controls complete
 
-[Both controls complete](results/clang-input-control-complete-2026-10-18). GNU
+[Both controls complete](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/clang-input-control-complete-2026-10-18). GNU
 input-file replay exactly reproduces the earlier native state file and all
 100 population values. Clang passes 888,920 post-step state-accounting records.
 It matches all 65,536 initial image classes, but only 34,820 and 41,095 at the
@@ -479,7 +479,7 @@ The full captured-frame timing diagnostic (`results/frame-timing-diagnostic-2026
 
 ## Historical random-stream allocation
 
-[The pinned source audit](results/rng-allocation-source-audit-2026-10-18) finds matching seed initialization, sequence-offset formulas, thread indexing, and float-draw calls.
+[The pinned source audit](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023/results/rng-allocation-source-audit-2026-10-18) finds matching seed initialization, sequence-offset formulas, thread indexing, and float-draw calls.
 It supplies no evidence for another seed-offset variant. Historical execution ordering and CUDA behavior remain unresolved.
 No new GPU experiment or paper completion is claimed.
 
@@ -487,10 +487,16 @@ No new GPU experiment or paper completion is claimed.
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/e57d200c0ead5c6066b2d9c98045e3ada5f3f726/replications/richmond_2023/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show e57d200c0ead5c6066b2d9c98045e3ada5f3f726:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023) preserves the pre-cleanup files.
-To restore an input, run `git show fa8cd09be043fbc9b8b7f68e5746750af2e991fe:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e/replications/richmond_2023).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=ce3e3b4f6c41f160ce52f99ecf09c22bb6feb45e --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/fa8cd09be043fbc9b8b7f68e5746750af2e991fe/replications/richmond_2023) retains raw outputs removed in previous cleanups.
