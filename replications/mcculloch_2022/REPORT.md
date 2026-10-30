@@ -38,11 +38,11 @@ It shows that their released model does not reproduce the all-runs exact-stabili
 
 ## Evidence and limits
 
-The [initial audit](results/audit-2026-10-15/RESULTS.md),
+The [initial audit](https://github.com/Metta-AI/sugarscape/blob/801e782693f42d245bc915fed78e0de8016f3d52/replications/mcculloch_2022/results/audit-2026-10-15/RESULTS.md),
 [independent trajectories](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/independent-2026-10-15/comparison.json),
 [dependency check](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/mesa087-2026-10-15/dependency-validation.json),
 [complete variance experiment](https://github.com/Metta-AI/sugarscape/blob/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022/results/variance-2026-10-15/summary.json), and
-[calibration report](results/calibration-2026-10-15/RESULTS.md) retain configurations, seeds, hashes, and results.
+[calibration report](https://github.com/Metta-AI/sugarscape/blob/801e782693f42d245bc915fed78e0de8016f3d52/replications/mcculloch_2022/results/calibration-2026-10-15/RESULTS.md) retain configurations, seeds, hashes, and results.
 See the README and committed protocols for executable commands.
 
 The Figure 4 source does not define a numerical threshold for "variance stabilized."

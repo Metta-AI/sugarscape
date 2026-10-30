@@ -99,7 +99,7 @@ This rules out that specific version difference as an explanation; it does not i
 ## Calibration outcome
 
 Both 10,000-particle experiments completed under the [predeclared protocol](CALIBRATION_PROTOCOL.md).
-See [raw trials, validation, and posterior comparison](results/calibration-2026-10-15/RESULTS.md).
+See [raw trials, validation, and posterior comparison](https://github.com/Metta-AI/sugarscape/blob/801e782693f42d245bc915fed78e0de8016f3d52/replications/mcculloch_2022/results/calibration-2026-10-15/RESULTS.md).
 The fixed-prior posterior passes the distribution criterion: total variation distance 0.0198,
 with bootstrap 95% upper bound 0.0374 below 0.05.
 The modal label differs by only three particles; this is not evidence of a substantive posterior disagreement.
@@ -108,7 +108,7 @@ That stochastic path difference alone is not a negative replication.
 
 ## Recorded outcome
 
-See [750 recorded trajectories, summary, and plot](results/audit-2026-10-15/RESULTS.md).
+See [750 recorded trajectories, summary, and plot](https://github.com/Metta-AI/sugarscape/blob/801e782693f42d245bc915fed78e0de8016f3d52/replications/mcculloch_2022/results/audit-2026-10-15/RESULTS.md).
 The author-code run finished all 660 trajectories before the DTL stage failed its completeness check.
 Investigation found that DTL swapped imported sugar/spice and emitted an uninitialized tick-zero record.
 The prerequisite engine fix also corrects rectangular-map dimensions and allocation.
@@ -139,10 +139,16 @@ Regenerate the summary and figure from that archived input:
 
 Use `run.py --engine dtl` or `--engine author-mesa` to execute either stage separately.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022) preserves the pre-cleanup files.
-To restore an input, run `git show e72314ec4d198476ca2351d6cb4e6b71e4078c07:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/801e782693f42d245bc915fed78e0de8016f3d52/replications/mcculloch_2022).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=801e782693f42d245bc915fed78e0de8016f3d52 --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/e72314ec4d198476ca2351d6cb4e6b71e4078c07/replications/mcculloch_2022) retains raw outputs removed in previous cleanups.
