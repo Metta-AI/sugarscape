@@ -2,7 +2,7 @@
 
 “Towards a Docker-based architecture for open multi-agent systems,” IAES International Journal of Artificial Intelligence 13(1), 45–56. [Paper](https://doi.org/10.11591/ijai.v13.i1.pp45-56); [author code](https://github.com/GustavoLLima/open_mas_docker_opt).
 
-Status: completed qualified author-code feasibility reproduction. [The claim-level audit](results/claim-audit-2026-10-18) verifies all six original protocol requirements. This is not an independent engine replication or proof of historical binary equivalence. Earlier sections retain their dated partial assessments.
+Status: completed qualified author-code feasibility reproduction. [The claim-level audit](https://github.com/Metta-AI/sugarscape/tree/bfff6498bc976b6a036b96918b7609624f6f22aa/replications/lima_2024/results/claim-audit-2026-10-18) verifies all six original protocol requirements. This is not an independent engine replication or proof of historical binary equivalence. Earlier sections retain their dated partial assessments.
 
 The architecture connects two NetLogo Sugarscape models and a JaCaMo Gold Miners model through registration, routing, persistence and reporting services. Both container-only and host-GUI scenarios are required. `protocol.json` freezes observations and execution bounds. The study tests feasibility and state transfer; it invents no numerical benchmark target.
 
@@ -318,7 +318,7 @@ Historical revision and dependency equivalence also remain unproven.
 
 ### Historical lifecycle cross-check
 
-[The October-2022 citation-date source audit](results/historical-lifecycle-2026-10-18)
+[The October-2022 citation-date source audit](https://github.com/Metta-AI/sugarscape/tree/bfff6498bc976b6a036b96918b7609624f6f22aa/replications/lima_2024/results/historical-lifecycle-2026-10-18)
 finds the same save-and-depart trigger in the earlier miner. The paper claims
 restored information, not a second mining score. The additional score criterion
 remains failed, but does not independently contradict that published claim.
@@ -326,7 +326,7 @@ Complete historical runtime equivalence remains unproven.
 
 ### Native NetLogo creation reconciliation
 
-[All three completed portable scenarios](results/native-creation-reconciliation-2026-10-18)
+[All three completed portable scenarios](https://github.com/Metta-AI/sugarscape/tree/bfff6498bc976b6a036b96918b7609624f6f22aa/replications/lima_2024/results/native-creation-reconciliation-2026-10-18)
 pass the strengthened auditor: 4,282 native creation records match consumed
 database identities, incoming attributes and paths. Existing trajectory and
 conservation checks also pass. The incoming sugar tuple is observed; newly
@@ -335,7 +335,7 @@ explicitly specifies that sugar adaptation.
 
 ### Complete visually observed host scenario
 
-[The fresh GUI scenario](results/host-visual-complete-2026-10-18) now completes
+[The fresh GUI scenario](https://github.com/Metta-AI/sugarscape/tree/bfff6498bc976b6a036b96918b7609624f6f22aa/replications/lima_2024/results/host-visual-complete-2026-10-18) now completes
 both 1,000-step trajectories. All 934 deliveries reconcile; native logs verify
 1,423 NetLogo creations and 11 JaCaMo creations. All 799 identities are conserved
 once at shutdown. The 36-file archive includes the observed window, native logs
@@ -347,10 +347,16 @@ equivalence remains unproven; no additional completed-study credit is assigned.
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/363175bde20af32cda1530af8f95bf7809f57c43/replications/lima_2024/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 363175bde20af32cda1530af8f95bf7809f57c43:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024) preserves the pre-cleanup files.
-To restore an input, run `git show 2c140118cb38b4c9d7f7e4809f83e5aff2bb460b:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/bfff6498bc976b6a036b96918b7609624f6f22aa/replications/lima_2024).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=bfff6498bc976b6a036b96918b7609624f6f22aa --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/2c140118cb38b4c9d7f7e4809f83e5aff2bb460b/replications/lima_2024) retains raw outputs removed in previous cleanups.
