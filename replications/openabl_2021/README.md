@@ -206,10 +206,16 @@ Raw archives are retained in durable storage with checksums and export receipts.
 [The full GPU timing comparison](gpu-timing-comparison/README.md) retains all 13 published/native points, whole-runner timings, and engine spans.
 The largest native run is 230.14 seconds versus the digitized 256.003856 seconds; different hardware and one observation per size prevent an exact historical timing verdict.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021) preserves the pre-cleanup files.
-To restore an input, run `git show acf37262740cf14092345caac51d5a004d6f40a3:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/f827d6c6eec65e38e75c489f9cea706d69322e73/replications/openabl_2021).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=f827d6c6eec65e38e75c489f9cea706d69322e73 --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/acf37262740cf14092345caac51d5a004d6f40a3/replications/openabl_2021) retains raw outputs removed in previous cleanups.
