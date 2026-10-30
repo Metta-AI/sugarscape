@@ -67,10 +67,16 @@ No unexplained discrepancy or operational pilot counts as a completed replicatio
 
 [The full experiment record](https://github.com/Metta-AI/sugarscape/blob/69c8768600b9926b9ce2923c2d2b46040997d41b/replications/blueprints_2024/README.md) retains dated runs, budgets, failures, source hashes, figures, and detailed controls. Existing histories, outputs, and checkpoints remain unchanged. Historical launch notes do not establish current job status. Restore archived raw inputs before rerunning an analysis, as described in that record.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/9414e7b75bd0dc444e8efe24cf2aecab529b4829/replications/blueprints_2024) preserves the pre-cleanup files.
-To restore an input, run `git show 9414e7b75bd0dc444e8efe24cf2aecab529b4829:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/7f0d87b4727567dc6251d5440e0a642061ed0560/replications/blueprints_2024).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=7f0d87b4727567dc6251d5440e0a642061ed0560 --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/9414e7b75bd0dc444e8efe24cf2aecab529b4829/replications/blueprints_2024) retains raw outputs removed in previous cleanups.
