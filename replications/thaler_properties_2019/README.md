@@ -150,10 +150,16 @@ Later source-correction and recovered NetLogo controls remain in the full record
 
 [The full experiment record](https://github.com/Metta-AI/sugarscape/blob/51f7750ba5f2a88bcb461e033002cddb222e4762/replications/thaler_properties_2019/README.md) retains dated runs, budgets, failures, source hashes, figures, and detailed controls. Existing histories, outputs, and checkpoints remain unchanged. Historical launch notes do not establish current job status. Restore archived raw inputs before rerunning an analysis, as described in that record.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/70da776a9a0682e04a6cd1b30a1ac5af1864307a/replications/thaler_properties_2019) preserves the pre-cleanup files.
-To restore an input, run `git show 70da776a9a0682e04a6cd1b30a1ac5af1864307a:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/36592013feae1765e6d7755fc470d095ec17d4df/replications/thaler_properties_2019).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=36592013feae1765e6d7755fc470d095ec17d4df --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/70da776a9a0682e04a6cd1b30a1ac5af1864307a/replications/thaler_properties_2019) retains raw outputs removed in previous cleanups.
