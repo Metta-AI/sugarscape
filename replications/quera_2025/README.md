@@ -1,7 +1,7 @@
 # Quera-Bofarull et al. (2025): Automatic Differentiation of Agent-Based Models
 
 **Status: completed qualified Sugarscape method reconstruction; mixed outcomes.**
-The [requirement-by-requirement verdict](results/method-verdict-2026-10-20) covers native dynamics, gradient diagnostics, both calibration estimators, predictive outputs, and posterior assessment.
+The [requirement-by-requirement verdict](https://github.com/Metta-AI/sugarscape/tree/5247844057ffb36cc340f06a930f92e0ba8dd8fc/replications/quera_2025/results/method-verdict-2026-10-20) covers native dynamics, gradient diagnostics, both calibration estimators, predictive outputs, and posterior assessment.
 Independent checks cover 256 gradient baselines, 9,216 perturbed cases, 191,140,000 optimizer components, and all 4,000 predictive trajectories.
 Both full training archives and the predictive evidence pass fresh remote readback; three figures were visually reviewed.
 
@@ -204,19 +204,19 @@ These hints do not justify labeling a reconstructed calibration as the paper's r
 
 ## Full gradient-baseline movement replay
 
-[All 256 original diagnostic seeds](results/gradient-movement-replay-2026-10-18) pass independent replay of 614,400 agent updates and 15,360,000 cell updates with zero state error. Passive tracing preserves all native state hashes and matches every retained aggregate baseline record.
+[All 256 original diagnostic seeds](https://github.com/Metta-AI/sugarscape/tree/5247844057ffb36cc340f06a930f92e0ba8dd8fc/replications/quera_2025/results/gradient-movement-replay-2026-10-18) pass independent replay of 614,400 agent updates and 15,360,000 cell updates with zero state error. Passive tracing preserves all native state hashes and matches every retained aggregate baseline record.
 
 The trace records 4,020 outside-mask moves and 223 moves to cells marked occupied; all occur at zero-score ties. Every seed contains an outside-mask move. This extends the source-behavior finding beyond the three calibration pilots. Perturbed trajectories and the paper’s missing calibration protocol remain separate requirements. The full differentiated-baseline control below extends this replay to differentiated baseline states.
 
 ## Complete differentiated-baseline state control
 
-[All 256 seeds](results/gradient-state-control-2026-10-18) produce exactly equal ordinary and differentiated states across 34,560,000 values. Independent readback also matches the earlier movement trace and all 38,400 derivatives against 115,200 archived records.
+[All 256 seeds](https://github.com/Metta-AI/sugarscape/tree/5247844057ffb36cc340f06a930f92e0ba8dd8fc/replications/quera_2025/results/gradient-state-control-2026-10-18) produce exactly equal ordinary and differentiated states across 34,560,000 values. Independent readback also matches the earlier movement trace and all 38,400 derivatives against 115,200 archived records.
 
 A failed aggregate-equality assumption exposed 4,632 differences no larger than 3.20e-14. The verifier reproduces both totals exactly using their respective reduction orders; no tolerance was fitted. This validates the diagnostic baseline, while exact published experiment settings and calibration remain unresolved.
 
 ## Perturbed gradient trajectory replay
 
-[The complete seed-3 qualification](results/perturbed-movement-qualification-2026-10-18) validates all 36 parameter/step/sign cases. Native passive-state hashes and all 900 archived plus/minus aggregate values match exactly. Independent replay checks 86,400 agent updates and 2,160,000 cell updates with zero state error. All 256 previous baseline results also reproduce exactly. The disjoint remaining seeds 4–258 have now completed; the complete audit is described below.
+[The complete seed-3 qualification](https://github.com/Metta-AI/sugarscape/tree/5247844057ffb36cc340f06a930f92e0ba8dd8fc/replications/quera_2025/results/perturbed-movement-qualification-2026-10-18) validates all 36 parameter/step/sign cases. Native passive-state hashes and all 900 archived plus/minus aggregate values match exactly. Independent replay checks 86,400 agent updates and 2,160,000 cell updates with zero state error. All 256 previous baseline results also reproduce exactly. The disjoint remaining seeds 4–258 have now completed; the complete audit is described below.
 
 The trace command now requires an explicit profile and inclusive seed bounds, and writes compressed CSVs:
 
@@ -355,10 +355,16 @@ Whole-method synthesis remains separate from these completed predictive checks.
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/39b0cf9e9b433fe0eaf7bd9883ece6871074b022/replications/quera_2025/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show 39b0cf9e9b433fe0eaf7bd9883ece6871074b022:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025) preserves the pre-cleanup files.
-To restore an input, run `git show 521fd3cea19c1c3ec60f84419fa9101ec1e62535:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/5247844057ffb36cc340f06a930f92e0ba8dd8fc/replications/quera_2025).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=5247844057ffb36cc340f06a930f92e0ba8dd8fc --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/521fd3cea19c1c3ec60f84419fa9101ec1e62535/replications/quera_2025) retains raw outputs removed in previous cleanups.
