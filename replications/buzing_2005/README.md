@@ -403,10 +403,16 @@ Pacing therefore does not explain the observed reconstruction discrepancies for 
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/bcddb198efdd372fbc16f168cf3229da0836a488/replications/buzing_2005/results) retains raw trajectories and verbose diagnostics. Summaries, figures, source inputs, and analysis code remain tracked. Restore required analysis inputs with `git show bcddb198efdd372fbc16f168cf3229da0836a488:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path. Existing copies and Git history are preserved.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005) preserves the pre-cleanup files.
-To restore an input, run `git show 937b3798c3af53ff0094c481bf47b825471fc8a8:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/7609b598ce29aef0b2e24f98cb9ff9e5a2f1e786/replications/buzing_2005).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=7609b598ce29aef0b2e24f98cb9ff9e5a2f1e786 --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/937b3798c3af53ff0094c481bf47b825471fc8a8/replications/buzing_2005) retains raw outputs removed in previous cleanups.
