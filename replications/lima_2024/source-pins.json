@@ -1,0 +1,33 @@
+{
+  "repository": "https://github.com/GustavoLLima/open_mas_docker_opt",
+  "revision": "3838dad156f62484d0e664b49ffc4e05ac077280",
+  "selection": "Last commit before acceptance, 2023-08-02; actual experiment revision unknown.",
+  "paper_doi": "10.11591/ijai.v13.i1.pp45-56",
+  "paper_sha256": "03894dfa3ceb5279428751f79cf50d511727ce2fe7a191d5dd93d08490cbb386",
+  "files": {
+    "Dockerfile_GRADLE": "f8273d2b13c8fa442924e9311ea7aa68a4a456e532d971696abcb30200730bf2",
+    "Dockerfile_GRADLE_arm64": "955097cb518594cc7a88edaa88c2f02836bc9aa6af41721167b7da5fea3df932",
+    "Dockerfile_MYSQL": "9d69dca99f62a0f2826e88fe6ce8060b93a4700d1fb1e223464fb036606bd8cc",
+    "Dockerfile_MYSQL_arm64": "3cf031ce5e89f0a220c0c147248343fd57193eff4d02d60fb952e2c7ca587bd0",
+    "Dockerfile_NETLOGO": "170ea70d3b45549e154792d07dcefef4eb08e17cbcce3acb9d3a0a53ba2a5785",
+    "Dockerfile_PHP": "f7f61add671ccffe0677efb70a9b659ea4b70c1f7671292da3840345afad0a18",
+    "Dockerfile_PHPMYADMIN": "a13e294a4ff64e6834ce804c5f08e04c282221e96ef5df45a7d300ac409cc41d",
+    "Dockerfile_PHPMYADMIN_arm64": "5709a9537a4a8ab62f9a8b725a07804e544f0a29cfc946385e1d186cadd0284d",
+    "Dockerfile_PYTHON": "3c4e04195020c32e4b3a4bdae9bc5c23d8fc1af567a6d35f73641daa428a08e7",
+    "docker-compose-hybrid-local-arm64.yaml": "fafd801da9b85221f7bda1daf13245b521c4cd46d6c51a359d542ebbfbbb989e",
+    "docker-compose-hybrid-local.yaml": "7ff9098d127ce97c73f09ca87555eb2ffe156cbd1bdcca1df79136802e536571",
+    "docker-compose-hybrid-server-arm64.yaml": "c6b724c45c46b1aedce0eaa759c65a10a26f52be27f4d27c9f7b37b9e7bf6449",
+    "docker-compose-hybrid-server.yaml": "004aaa5d0127b62ad311339213f674b267b01401157d5708a9f3f78a482357f5",
+    "docker-compose-local-arm64.yaml": "a7331e2169f530aa250aa52611b5b105002530ba492aacc1c5751def909ff9fc",
+    "docker-compose-local.yaml": "a56d3e982a4839409697543375f09e94871014756e27d220bd966a5ffcfec1c7",
+    "shared_volume/api.py": "66c8c770e2017aa6b8e4225592343c4d05b7270985783fc78bedbb70d559b649",
+    "shared_volume/register.py": "df2f5741e5ef5e28f66c787ed673ecccb41f1138c98005de5e1f47674fdda5a7",
+    "shared_volume/router.py": "cb5af8e91c487c9f898fa54a9beab4763937c804d10fb21848cc417a7de4ce8b",
+    "shared_volume/python_execute_netlogo.py": "a421878ba4cb70231657ee8ad177323abe2cb191c3cc743287ae9c63312c7ff3",
+    "shared_volume/clean_simulation_files.py": "f70b678d198665a857147f9fc6a841d911be6f2ab92bf507e1ac0685d62ea65e",
+    "shared_volume/open_sugarscape_m1.nlogo": "c7a26d91f36b3b59acf518b3adfed8ce72ad95caa3d3bee58f0c4e8cc184ff7e",
+    "shared_volume/open_sugarscape_m2.nlogo": "d0eaf28a9d2121179ad4816f49e39987f77666552b39da759f149f70b5569f54",
+    "shared_volume/sugar-map.txt": "cd9b4661c8813d3e268995676d5ba84394ee813986adb0d657dc9be4a1fab675",
+    "shared_volume/jacamo/jacamo_model/build.gradle": "dcedeb1daf34915a854c0eaa9d9ffabad3224e77e74ad53fdc8abea8eaa96951"
+  }
+}
