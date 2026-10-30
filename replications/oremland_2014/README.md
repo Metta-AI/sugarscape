@@ -2,11 +2,11 @@
 
 **Completed qualified Sugarscape method reconstruction. Historical numerical agreement and a validated negative result are not established.**
 
-[The method assessment](results/method-scope-assessment-2026-10-20) maps every Sugarscape method stage to completed native evidence and records reconstruction choices. It covers convergence, reduced-model rankings, genetic optimization, held-out transfer, and timing. The separate rabbits-and-grass example is outside this study.
+[The method assessment](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/method-scope-assessment-2026-10-20) maps every Sugarscape method stage to completed native evidence and records reconstruction choices. It covers convergence, reduced-model rankings, genetic optimization, held-out transfer, and timing. The separate rabbits-and-grass example is outside this study.
 
-[All eighteen searches](results/searches-complete-2026-10-20) complete 432,000 native evaluations with exact independent genetic-decision replay. [Held-out transfer](results/held-out-transfer-complete-2026-10-20) evaluates all 144 final policies across 28,800 full-model runs. Independent R arithmetic, archive verification, and figure review pass.
+[All eighteen searches](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/searches-complete-2026-10-20) complete 432,000 native evaluations with exact independent genetic-decision replay. [Held-out transfer](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/held-out-transfer-complete-2026-10-20) evaluates all 144 final policies across 28,800 full-model runs. Independent R arithmetic, archive verification, and figure review pass.
 
-[The timing benchmark](results/cloud-timing-benchmark-2026-10-20) completes 18,639 native inputs. Published batch counts do not imply equal elapsed time on the new hardware. No historical timing-equivalence or global-optimality claim is made.
+[The timing benchmark](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/cloud-timing-benchmark-2026-10-20) completes 18,639 native inputs. Published batch counts do not imply equal elapsed time on the new hardware. No historical timing-equivalence or global-optimality claim is made.
 
 Earlier evidence directories retain their contemporaneous partial-study status. The assessment above supplies the current verdict without retroactively changing those records.
 
@@ -112,11 +112,11 @@ Each request provides `id`, integer `seed`, `phase` (0 or 4), Boolean `clipped`,
 The retained manifest supplies the exact bounded Java command, compilation command, classpath, and source/runtime hashes.
 `audit_policy_batch.py` validates every input and output line against the rich-workflow reference.
 
-[The optimizer specification audit](results/optimizer-specification-2026-10-18) records the printed rules, missing choices, and dissertation attachment inventory.
+[The optimizer specification audit](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/optimizer-specification-2026-10-18) records the printed rules, missing choices, and dissertation attachment inventory.
 
 ## Full-size convergence reconstruction
 
-[The completed ensemble](results/convergence-2026-10-18) contains 20,000 native runs and 59,400 prefix summaries.
+[The completed ensemble](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/convergence-2026-10-18) contains 20,000 native runs and 59,400 prefix summaries.
 All 40,000 request/result lines pass the audit; 2,400 independently recomputed means and sample standard deviations agree within 1e-10.
 From 50 to 100 seeds, mean deaths change by at most 0.91 agents; death sample standard deviations change by up to 24.00% of their 100-seed values.
 These are conditional measurements, not a numerical pass/fail criterion or a validated negative replication.
@@ -144,7 +144,7 @@ No numerical pass threshold is inferred after seeing the results. Agreement rema
 
 ## Reduced-model sensitivity experiments
 
-[Native qualification](results/reduction-qualification-2026-10-18) covers all six widths and two map/vision-rounding conventions.
+[Native qualification](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/reduction-qualification-2026-10-18) covers all six widths and two map/vision-rounding conventions.
 Twenty-four parameter cases produce 12 distinct model/landscape pairs.
 All 96 complete workflows pass audits of 4,896 states, every initial patch, retained tax classes, and 30,976 tax events.
 The full-size model and its earlier seed-1/2 detailed results remain exact.
@@ -161,7 +161,7 @@ python run_ensemble.py /path/to/java-home /path/to/NetLogo-5.3.1/app \
 ```
 
 The archive includes the executed qualification launcher for all distinct models and the independent `audit_reductions.py` workflow.
-[The frozen ranking experiments](results/ranking-protocol-2026-10-18) contain 2,538,400 reduced runs and 10,000 separate full-size runs.
+[The frozen ranking experiments](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/ranking-protocol-2026-10-18) contain 2,538,400 reduced runs and 10,000 separate full-size runs.
 Their inputs reuse the declared convergence policies; full-size comparison seeds are independent of the reference.
 
 ```sh
@@ -176,7 +176,7 @@ The inputs and runtime pipeline are qualified. Completed ranking snapshots follo
 
 ## Audited ranking results and seed-design diagnostic
 
-[The first ranking snapshot](results/ranking-prefix-2026-10-18) contains four complete model cases and 172,200 native runs.
+[The first ranking snapshot](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/ranking-prefix-2026-10-18) contains four complete model cases and 172,200 native runs.
 All 344,400 input/output records pass coverage and provenance checks.
 Every declared analysis convention is retained in 1,920 ranking rows, verified with 96,000 independent rank checks and exact rational kappa calculations.
 
@@ -192,7 +192,7 @@ The auditor requires all four terminal shards for the selected model; it never s
 The analyzer retains pooled and each fixed-mean-rate stratum, average and ordinal ties, linear and quadratic weights, and both integer budget roundings.
 Raw integer objective sums determine ranks, avoiding floating-point tie artifacts from means.
 
-[A post hoc independent-stream diagnostic](results/independent-streams-protocol-2026-10-18) addresses shared-seed coupling.
+[A post hoc independent-stream diagnostic](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/independent-streams-protocol-2026-10-18) addresses shared-seed coupling.
 Its 37,600 frozen requests have unique seeds across all policies, phases, runs, and reference/comparison groups.
 It compares independent 50×50 and 40×40 samples with its own independent full-size reference, preserving the other declared choices.
 Its completed results and independent audit are reported below; no paper completion credit is claimed.
@@ -217,17 +217,17 @@ The clock-phase ambiguity can affect population and must be considered separatel
 ## Extinction failure and qualified recovery
 
 The first small-grid ranking batch failed because an inherited GUI histogram evaluates maximum wealth on an empty population.
-[The plot-free headless evaluator](results/headless-batch-evaluator-2026-10-18) removes GUI callbacks after loading the unchanged model.
+[The plot-free headless evaluator](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/headless-batch-evaluator-2026-10-18) removes GUI callbacks after loading the unchanged model.
 All 400 full-size reference results remain exact; the original failed 5x5 input now completes all 50 steps with zero survivors.
 The original evaluator reproduces the failure on that same input. Failed prefixes and logs are retained.
 
-[All four 10x10 and 5x5 ensembles have completed under the qualified adapter](results/ranking-recovery-2026-10-18), preserving their original policies, seeds, maps, and horizons.
+[All four 10x10 and 5x5 ensembles have completed under the qualified adapter](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/ranking-recovery-2026-10-18), preserving their original policies, seeds, maps, and horizons.
 This repeats retained prefixes under the corrected evaluator rather than combining different evaluator versions within an ensemble.
 The 2,110,000-run recovery has four workers, a one-hour global bound, and 30-minute shard bounds.
 Its actual compressed-input pipeline passed all 400 reference comparisons before starting scientific work.
 No failed or pending run receives completion credit.
 
-[The ranking extension](results/ranking-extension-2026-10-18) independently audits another 256,200 reduced-model runs and 10,000 full-size runs.
+[The ranking extension](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/ranking-extension-2026-10-18) independently audits another 256,200 reduced-model runs and 10,000 full-size runs.
 Together with the earlier prefix, seven reduced models cover 428,400 audited runs.
 The independent full-size comparison uses seeds 101–150 against reference seeds 1–50.
 At full budget, pooled average-rank death concordance is 0.9481/0.9520 with linear weights for phases 0/4; quadratic weights give 0.9963/0.9972.
@@ -235,7 +235,7 @@ These are conditional reconstruction results. The original policy distribution, 
 
 ## Independent random-stream diagnostic
 
-[All 37,600 diagnostic runs](results/independent-streams-2026-10-18) pass audit with globally unique seeds and a separate 50x50 reference ensemble.
+[All 37,600 diagnostic runs](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/independent-streams-2026-10-18) pass audit with globally unique seeds and a separate 50x50 reference ensemble.
 The auditor reconstructs the frozen seed assignment and validates 75,200 request/result lines.
 For pooled average ranks with linear weights, independent-seed 40x40 mortality concordance is 0.8686/0.8695 for clock phases 0/4.
 Within mean-tax-rate strata, it ranges from 0.5285 to 0.7844.
@@ -245,15 +245,15 @@ This post hoc sensitivity changes observed agreement but does not establish auth
 
 Appendix B prose specifies death at zero sugar; Algorithm 3, line 19 specifies death only below zero.
 All preceding ensembles follow the prose. Their conclusions remain conditional on that choice.
-[The paired diagnostic](results/death-boundary-protocol-2026-10-18) preserves the original 37,600 independent-stream requests and changes only the comparison.
+[The paired diagnostic](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/death-boundary-protocol-2026-10-18) preserves the original 37,600 independent-stream requests and changes only the comparison.
 Its native qualification verifies 408 states and confirms surviving zero-sugar agents under the algorithm rule.
-[All 37,600 paired runs now pass audit](results/death-boundary-complete-2026-10-18). Mortality changes in 37,223 pairs.
+[All 37,600 paired runs now pass audit](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/death-boundary-complete-2026-10-18). Mortality changes in 37,223 pairs.
 Algorithm-rule 40x40 pooled average-rank linear mortality concordance is 0.5854/0.5511, versus 0.8686/0.8695 under the prose rule.
 The source ambiguity remains unresolved; neither sensitivity earns paper-completion or validated-negative credit.
 
 ## Native optimizer qualification
 
-[The Algorithm 1 reconstruction](results/optimizer-qualification-2026-10-20) now executes policy search through the qualified native simulator.
+[The Algorithm 1 reconstruction](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/optimizer-qualification-2026-10-20) now executes policy search through the qualified native simulator.
 Three bounded workflows evaluate 3,600 native simulations, each lasting 50 steps.
 Independent replay reconstructs objectives, nondominated survivors, parent selection, crossover, mutation, and final evaluated frontiers from retained records.
 A corrupted-offspring control must fail that replay. Restored runtime outputs match all 400 earlier qualification inputs, excluding elapsed time.
@@ -271,12 +271,12 @@ python run_optimizer.py /path/to/qualified-runtime-manifest.json /path/to/protoc
 python audit_optimizer.py /path/to/new-run /path/to/new-audit.json
 ```
 
-[The frozen transfer campaign](results/frontier-transfer-protocol-2026-10-20) now covers all six published grid widths and three optimizer seeds.
+[The frozen transfer campaign](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/frontier-transfer-protocol-2026-10-20) now covers all six published grid widths and three optimizer seeds.
 It completes 432,000 native evaluations, followed by full-model evaluation of every final frontier on 200 held-out seeds.
 The budget, reduction conventions, comparisons, and execution bounds were fixed before inspecting results.
 The completed campaign is included in the qualified method assessment above.
 
-[The held-out transfer evaluator](results/transfer-qualification-2026-10-20) passes 1,800 native simulations and independent statistical replay.
+[The held-out transfer evaluator](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/transfer-qualification-2026-10-20) passes 1,800 native simulations and independent statistical replay.
 A corrupted standard error is rejected. Fresh archive extraction reproduces the audit exactly.
 Production transfer is gated on all 18 searches completing and passing audit; a bounded dependent watcher performs no retries.
 
@@ -286,7 +286,7 @@ The original passive watcher was stopped before benchmark admission; no native t
 Timing inputs, repetitions, warmups, and analysis remain unchanged.
 
 
-[Held-out reporting qualification](results/transfer-report-qualification-2026-10-20) independently recomputes all objectives, standard errors, and dominance decisions from 1,800 native qualification runs.
+[Held-out reporting qualification](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014/results/transfer-report-qualification-2026-10-20) independently recomputes all objectives, standard errors, and dominance decisions from 1,800 native qualification runs.
 The corrected plot is visually inspected and preserves every numeric row. These controls use only full-size models.
 A separate watcher applies the same reporting path after all eighteen production searches and transfers pass audit.
 The production transfer comparison and visual review now pass; the completed report is linked above.
@@ -295,10 +295,16 @@ The production transfer comparison and visual review now pass; the completed rep
 
 [The immutable experiment archive](https://github.com/Metta-AI/sugarscape/tree/c1ad995a3e8c6dc7b91686e30fd772c4876cdd18/replications/oremland_2014/results) retains raw runs and verbose diagnostics. They remain unchanged in existing local checkouts; summaries, source inputs, and analysis code stay tracked. Restore any required input with `git show c1ad995a3e8c6dc7b91686e30fd772c4876cdd18:PATH > /absolute/output/path`, replacing `PATH` with its repository-relative path.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/0cbc06af5cc0448de517591b16385130cde2ec40/replications/oremland_2014) preserves the pre-cleanup files.
-To restore an input, run `git show 0cbc06af5cc0448de517591b16385130cde2ec40:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/9025196b7df0a5eb99dc2ecf362953a921411525/replications/oremland_2014).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=9025196b7df0a5eb99dc2ecf362953a921411525 --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/0cbc06af5cc0448de517591b16385130cde2ec40/replications/oremland_2014) retains raw outputs removed in previous cleanups.
