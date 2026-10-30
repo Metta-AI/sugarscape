@@ -1,23 +1,23 @@
 # Carrella (2021): Sugarscape parameter estimation
 
-[Completed qualified method reproduction](results/method-verdict-2026-10-19), under the user’s October 19 method-based criterion. All original simulation inputs and reported estimator workflows are complete. The 37 numerical discrepancies and historical provenance qualifications remain explicit; this is not a validated negative paper verdict.
+[Completed qualified method reproduction](https://github.com/Metta-AI/sugarscape/tree/1180c98671b2ad6ff732fa3184f3e073f03e7e4e/replications/carrella_2021/results/method-verdict-2026-10-19), under the user’s October 19 method-based criterion. All original simulation inputs and reported estimator workflows are complete. The 37 numerical discrepancies and historical provenance qualifications remain explicit; this is not a validated negative paper verdict.
 
-[The complete ten-seed historical GAM sensitivity is audited](results/gam-historical-seed-sensitivity-complete-2026-10-19). All 56,250 additional point predictions exactly match seed zero; all 112,500 interval bounds differ. None of the five printed scores is recovered by any seed. The bounded experiment is complete; historical provenance and the 37 primary discrepancies remain unresolved.
+[The complete ten-seed historical GAM sensitivity is audited](https://github.com/Metta-AI/sugarscape/tree/1180c98671b2ad6ff732fa3184f3e073f03e7e4e/replications/carrella_2021/results/gam-historical-seed-sensitivity-complete-2026-10-19). All 56,250 additional point predictions exactly match seed zero; all 112,500 interval bounds differ. None of the five printed scores is recovered by any seed. The bounded experiment is complete; historical provenance and the 37 primary discrepancies remain unresolved.
 
 Paper: [No Free Lunch when Estimating Simulation Parameters](https://www.jasss.org/24/2/7.html), DOI `10.18564/jasss.4572`.
 Scope: Sugarscape case study only; conclusions across all 41 models are outside this study.
 Status: completed qualified method reproduction. All 5,000 fresh author-model simulations and all reported independent estimator workflows are validated. Of 75 Table 8 values, 38 match printed precision and 37 remain discrepant.
-The [complete ten-setting diagnostic](results/parameter-cohorts-complete-2026-10-19) validates 1,280 runs and 641,280 observations. None of the 30 predeclared comparisons rejects after Holm correction. Archive readback, repeated aggregation, and independent R checks pass. This does not establish stochastic equivalence or resolve the historical estimator discrepancies.
+The [complete ten-setting diagnostic](https://github.com/Metta-AI/sugarscape/tree/1180c98671b2ad6ff732fa3184f3e073f03e7e4e/replications/carrella_2021/results/parameter-cohorts-complete-2026-10-19) validates 1,280 runs and 641,280 observations. None of the 30 predeclared comparisons rejects after Holm correction. Archive readback, repeated aggregation, and independent R checks pass. This does not establish stochastic equivalence or resolve the historical estimator discrepancies.
 
-[The updated discrepancy-control reconciliation](results/discrepancy-control-reconciliation-full-data-2026-10-19) verifies all 90 table cells and joins 18 discrepant scores to selected same-size controls. Seven of nine SABC1D discrepancies fall within observed seed ranges; spice endowment remains outside at both sizes. Primary scores and the other controls remain unchanged.
+[The updated discrepancy-control reconciliation](https://github.com/Metta-AI/sugarscape/tree/1180c98671b2ad6ff732fa3184f3e073f03e7e4e/replications/carrella_2021/results/discrepancy-control-reconciliation-full-data-2026-10-19) verifies all 90 table cells and joins 18 discrepant scores to selected same-size controls. Seven of nine SABC1D discrepancies fall within observed seed ranges; spice endowment remains outside at both sizes. Primary scores and the other controls remain unchanged.
 
-[The full-data estimator sensitivity control is complete](results/sabc1d5000-seed-sensitivity-complete-2026-10-19): all ten seeds pass 37,750,000 input-cell and 250,000 prediction checks. Four published scores lie within observed seed ranges; spice endowment remains outside. Independent arithmetic, fresh archive analysis, and object-storage readback pass. These ranges are not confidence intervals and do not change primary scores.
+[The full-data estimator sensitivity control is complete](https://github.com/Metta-AI/sugarscape/tree/1180c98671b2ad6ff732fa3184f3e073f03e7e4e/replications/carrella_2021/results/sabc1d5000-seed-sensitivity-complete-2026-10-19): all ten seeds pass 37,750,000 input-cell and 250,000 prediction checks. Four published scores lie within observed seed ranges; spice endowment remains outside. Independent arithmetic, fresh archive analysis, and object-storage readback pass. These ranges are not confidence intervals and do not change primary scores.
 
-[A historical abctools source check](results/abctools-source-history-2026-10-19) finds one transformation-validation change in `semiauto.abc` between 2018 and 2025. Its sampling and regression source is unchanged; dependencies and historical runtime remain unresolved.
+[A historical abctools source check](https://github.com/Metta-AI/sugarscape/tree/1180c98671b2ad6ff732fa3184f3e073f03e7e4e/replications/carrella_2021/results/abctools-source-history-2026-10-19) finds one transformation-validation change in `semiauto.abc` between 2018 and 2025. Its sampling and regression source is unchanged; dependencies and historical runtime remain unresolved.
 
-[The complete-ensemble analyzer](results/seed-summary-analyzer-validation-2026-10-19) independently recomputes estimator and training-mean baseline errors. It passes the complete 1,250-input control; its completion gate rejected the then-unfinished full-data ensemble before output.
+[The complete-ensemble analyzer](https://github.com/Metta-AI/sugarscape/tree/1180c98671b2ad6ff732fa3184f3e073f03e7e4e/replications/carrella_2021/results/seed-summary-analyzer-validation-2026-10-19) independently recomputes estimator and training-mean baseline errors. It passes the complete 1,250-input control; its completion gate rejected the then-unfinished full-data ensemble before output.
 
-[The historical abc source check](results/abc-source-history-2026-10-19) confirms unchanged estimator and numerical-summary function bodies between versions 2.1 and 2.2.2. The changed histogram and model-choice paths are absent from the audited author wrapper; runtime and dependency uncertainty remain.
+[The historical abc source check](https://github.com/Metta-AI/sugarscape/tree/1180c98671b2ad6ff732fa3184f3e073f03e7e4e/replications/carrella_2021/results/abc-source-history-2026-10-19) confirms unchanged estimator and numerical-summary function bodies between versions 2.1 and 2.2.2. The changed histogram and model-choice paths are absent from the audited author wrapper; runtime and dependency uncertainty remain.
 
 **Method completion and numerical agreement are separate:** all independent estimator folds are audited. Historical estimator discrepancies and stochastic equivalence remain unresolved; the method verdict above records the qualifications.
 
@@ -100,10 +100,16 @@ The batch runner reuses one workspace and resets the seed and model for every in
 
 [The full experiment record](https://github.com/Metta-AI/sugarscape/blob/d2b4b5c81b43de87e01264e243e8ef1b57d377b5/replications/carrella_2021/README.md) retains dated runs, budgets, failures, source hashes, figures, and detailed controls. Existing histories, outputs, and checkpoints remain unchanged. Historical launch notes do not establish current job status. Restore archived raw inputs before rerunning an analysis, as described in that record.
 
-## Experiment evidence
+## Archived run records
 
-Code, fixed study inputs, protocols, and written experiment summaries remain in this branch.
-Generated run outputs, logs, checkpoints, and binary archives are excluded from the review diff.
-The [immutable evidence archive](https://github.com/Metta-AI/sugarscape/tree/858ca67052af5df29bfd0aaadca64062a3eb1f85/replications/carrella_2021) preserves the pre-cleanup files.
-To restore an input, run `git show 858ca67052af5df29bfd0aaadca64062a3eb1f85:REPOSITORY_PATH > OUTPUT_PATH` from this repository.
-Use the documented runners to regenerate outputs; local output directories remain untracked.
+Primary runners, analysis code, fixed study inputs, source provenance, and study findings remain tracked.
+Dated run directories, checkpoint notes, copied runners, and generated source readbacks are preserved in [the experiment archive](https://github.com/Metta-AI/sugarscape/tree/1180c98671b2ad6ff732fa3184f3e073f03e7e4e/replications/carrella_2021).
+Regenerated evidence belongs in the ignored output directories.
+
+Commands and provenance records may reference archived inputs or historical scripts. Restore those dependencies before running the corresponding analysis:
+
+```sh
+git restore --source=1180c98671b2ad6ff732fa3184f3e073f03e7e4e --worktree -- REPOSITORY_PATH
+```
+
+Replace `REPOSITORY_PATH` with the required archived file or directory. The restore leaves the index unchanged and the restored evidence ignored. The [original evidence archive](https://github.com/Metta-AI/sugarscape/tree/858ca67052af5df29bfd0aaadca64062a3eb1f85/replications/carrella_2021) retains raw outputs removed in previous cleanups.

@@ -1,9 +1,0 @@
-{
-  "purpose": "Verify completed-fold recovery before any continuation of the live RF bootstrap job.",
-  "lm_control": "Load two completed LM1250 folds, calculate three remaining folds through unchanged author functions, compare every result and final RNG state against original full execution.",
-  "rfboot_control": "Replay all five completed RFboot1250 folds and require exact final outputs; does not qualify fresh RFboot continuation timing.",
-  "runner_sha256": "da84e5a3661f40cf06c0df313560b070701e5725ee0a70642d0a2c724681acb4",
-  "live_rfboot5000": "Untouched; never resume until its producer is confirmed terminal.",
-  "input_provenance": "/Users/relh/Code/workspace/sugarscape-replication-evidence/carrella-independent-estimator-inputs-complete-001/provenance.json",
-  "change": "Completed folds use pending-file writes followed by same-directory atomic rename; repeat both qualification workflows."
-}

@@ -1,9 +1,0 @@
-{
-  "purpose": "Exact random-state-preserving per-observation checkpointing for original ABC estimator workflows",
-  "validation": "Full1250-input degree-one semiautomatic workflow interrupted after37 durable observations then resumed; compare every saved fold and RNG state to prior unmodified run.",
-  "source_sha256": {
-    "checkpoint_abc.R": "9d6cbe517835eb7f817ddcc80f28cb23bd05faaeabc08d3307e2f9785a1c08b7",
-    "run_checkpointed.R": "59874644bfe4b78feb286767083d6bdfc4f7393a398d33450bb73b7f3a0ebcc0"
-  },
-  "completed_study": false
-}
